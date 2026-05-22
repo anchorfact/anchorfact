@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>TCP/IP Protocol Suite — AnchorFact</title></head>
+<body><article><br>
+## TL;DR<br>
+<br>
+TCP/IP is the foundational protocol suite of the Internet, consisting of four abstraction layers that enable reliable, end-to-end communication between devices across heterogeneous networks. TCP (Transmission Control Protocol) provides reliable, ordered, error-checked delivery of byte streams, while IP (Internet Protocol) handles addressing and routing of packets across network boundaries. Standardized in 1981 by Jon Postel through RFC 791 and RFC 793, TCP/IP has scaled from ARPANET to powering over 5 billion Internet users as of 2026.<br>
+<br>
+## Core Explanation<br>
+<br>
+TCP/IP organizes network communication into four layers:<br>
+<br>
+1. **Link Layer**: Physical transmission (Ethernet, WiFi, fiber optic)<br>
+2. **Internet Layer (IP)** : Packet routing and addressing — IPv4 (32-bit) and IPv6 (128-bit)<br>
+3. **Transport Layer (TCP/UDP)** : End-to-end communication, reliability, flow control<br>
+4. **Application Layer**: Protocols consumed by applications (HTTP, DNS, SMTP, SSH)<br>
+<br>
+TCP guarantees reliable delivery through acknowledgments (ACKs), sequence numbers, retransmission of lost packets, and flow control (sliding window). UDP (User Datagram Protocol) provides bare-bones datagram delivery without reliability guarantees — trading reliability for lower latency.<br>
+<br>
+## Key Mechanisms of TCP<br>
+<br>
+- **Three-Way Handshake**: SYN → SYN-ACK → ACK establishes a connection<br>
+- **Sequence Numbers**: Each byte is numbered; receiver can reorder out-of-sequence packets<br>
+- **Sliding Window**: Dynamic flow control based on receiver's buffer capacity<br>
+- **Congestion Control**: Slow start, congestion avoidance (AIMD), fast retransmit, fast recovery<br>
+- **Four-Way Teardown**: FIN → ACK → FIN → ACK gracefully closes a connection<br>
+<br>
+## Further Reading<br>
+<br>
+- [RFC 793 — TCP](https://www.rfc-editor.org/rfc/rfc793): The protocol that powers the Internet<br>
+- [RFC 791 — IP](https://www.rfc-editor.org/rfc/rfc791): Internet Protocol specification<br>
+</article></body>
+</html>

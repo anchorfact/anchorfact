@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-gd-017",
+  "headline": "游戏数学",
+  "description": "游戏数学",
+  "dateCreated": "2026-05-22T09:02:12.581Z",
+  "dateModified": "2026-05-22T09:02:12.581Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": []
+}

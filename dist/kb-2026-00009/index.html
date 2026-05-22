@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Diffusion Models — AnchorFact</title></head>
+<body><article><br>
+## TL;DR<br>
+<br>
+Diffusion models are a class of generative models that create data (images, audio, video) by learning to reverse a gradual noising process. Starting from pure random noise, they iteratively denoise toward a coherent output. Popularized by DDPM (Ho et al., 2020, over 15,000 citations on Google Scholar as of 2026), diffusion models power major image generation systems including Stable Diffusion, DALL·E 3, Midjourney, and Imagen. They have surpassed GANs as the dominant paradigm for high-quality image generation.<br>
+<br>
+## Core Explanation<br>
+<br>
+Diffusion models work in two phases:<br>
+<br>
+1. **Forward Process (Training)** : Take a real image and gradually add Gaussian noise over T timesteps until it becomes pure noise. The model learns to predict the noise added at each step — essentially learning how data is destroyed.<br>
+<br>
+2. **Reverse Process (Generation)** : Start with pure random noise and iteratively remove predicted noise over T steps. Each step produces a slightly less noisy version, eventually converging to a coherent image.<br>
+<br>
+The key insight is that both processes are Markov chains — each step depends only on the previous one. The training objective is simple: predict the noise that was added. This simplicity, combined with stable training dynamics (unlike GANs), makes diffusion models practical for production.<br>
+<br>
+## Detailed Analysis<br>
+<br>
+### Why Diffusion Superseded GANs<br>
+<br>
+GANs require adversarial training — a generator and discriminator competing, which is notoriously unstable and prone to mode collapse. Diffusion models avoid this entirely:<br>
+- **Stable training**: Direct likelihood-based objective, no adversarial dynamics<br>
+- **Better mode coverage**: Diffusion naturally covers the full data distribution<br>
+- **Higher quality at scale**: Diffusion quality improves predictably with more compute<br>
+<br>
+### Latent Diffusion Models (Stable Diffusion)<br>
+<br>
+The original DDPM operates in pixel space, which is computationally expensive for high-resolution images. Latent Diffusion Models (Rombach et al., 2022), the architecture behind Stable Diffusion, solve this by:<br>
+<br>
+1. Using a VAE to compress images into a lower-dimensional latent space<br>
+2. Running the diffusion process in latent space (much cheaper)<br>
+3. Adding text conditioning via cross-attention with CLIP text embeddings<br>
+<br>
+This reduced the computational cost by orders of magnitude, enabling consumer-grade GPU image generation. Stable Diffusion was trained on LAION-5B, a dataset of 5 billion image-text pairs, and released as open-source in 2022.<br>
+<br>
+### Major Implementations<br>
+<br>
+| System | Developer | Key Innovation | Year |<br>
+|--------|-----------|---------------|:----:|<br>
+| DALL·E 2 | OpenAI | CLIP-guided diffusion | 2022 |<br>
+| Stable Diffusion | Stability AI / CompVis | Latent diffusion, open-source | 2022 |<br>
+| Midjourney | Midjourney Inc. | Proprietary training, aesthetic tuning | 2022 |<br>
+| Imagen | Google | Large frozen text encoders (T5) | 2022 |<br>
+| DALL·E 3 | OpenAI | Captioner-to-image pipeline | 2023 |<br>
+| Sora | OpenAI | Video diffusion (spacetime patches) | 2024 |<br>
+<br>
+### Beyond Images<br>
+<br>
+Diffusion models have expanded beyond image generation:<br>
+- **Video**: Sora (OpenAI, 2024), Runway Gen-2 — generate temporally coherent video<br>
+- **Audio**: AudioLDM, MusicGen — text-to-audio generation<br>
+- **3D**: DreamFusion, Zero123 — text-to-3D generation<br>
+- **Biology**: AlphaFold 3 uses a diffusion module for protein structure prediction<br>
+- **Motion**: Human motion generation, robot trajectory planning<br>
+<br>
+## Further Reading<br>
+<br>
+- [DDPM Paper](https://arxiv.org/abs/2006.11239): Original diffusion models paper<br>
+- [Stable Diffusion Paper](https://arxiv.org/abs/2112.10752): Latent diffusion for efficient image generation<br>
+- [Lilian Weng's Diffusion Blog](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/): Excellent technical overview<br>
+</article></body>
+</html>

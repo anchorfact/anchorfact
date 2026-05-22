@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00152",
+  "headline": "Infrastructure as Code (IaC)",
+  "description": "IaC manages infrastructure through machine-readable definition files rather than manual configuration. Tools: Terraform (HCL, multi-cloud), Pulumi (general-purpose languages), CloudFormation (AWS-native), Ansible (configuration management). Version-controlled infrastructure enables reproducibility, code review, and automated testing.",
+  "dateCreated": "2026-05-22T09:02:12.356Z",
+  "dateModified": "2026-05-22T09:02:12.356Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

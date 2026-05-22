@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>XMLHttpRequest — AnchorFact</title></head>
+<body><article><br>
+## TL;DR<br>
+<br>
+XMLHttpRequest (XHR) is an API for making HTTP requests from JavaScript, first introduced by Microsoft in 1999 for Outlook Web Access. It was the foundation of Ajax and is now largely superseded by the Fetch API, though still used in legacy systems and for upload progress tracking.<br>
+<br>
+## Core Explanation<br>
+<br>
+XHR uses event-based callbacks (`onload`, `onerror`, `onprogress`) rather than Promises. It supports synchronous requests (`xhr.open('GET', url, false)`), though these are deprecated and block the main thread. XHR remains the only standard API that provides upload progress events (`xhr.upload.onprogress`), which Fetch API does not natively support.<br>
+<br>
+## Further Reading<br>
+<br>
+- [XMLHttpRequest Living Standard](https://xhr.spec.whatwg.org/)<br>
+</article></body>
+</html>

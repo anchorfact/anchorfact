@@ -1,0 +1,34 @@
+# TCP/IP Protocol Suite
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+TCP/IP is the foundational protocol suite of the Internet, consisting of four abstraction layers that enable reliable, end-to-end communication between devices across heterogeneous networks. TCP (Transmission Control Protocol) provides reliable, ordered, error-checked delivery of byte streams, while IP (Internet Protocol) handles addressing and routing of packets across network boundaries. Standardized in 1981 by Jon Postel through RFC 791 and RFC 793, TCP/IP has scaled from ARPANET to powering over 5 billion Internet users as of 2026.
+
+## Core Explanation
+
+TCP/IP organizes network communication into four layers:
+
+1. **Link Layer**: Physical transmission (Ethernet, WiFi, fiber optic)
+2. **Internet Layer (IP)** : Packet routing and addressing — IPv4 (32-bit) and IPv6 (128-bit)
+3. **Transport Layer (TCP/UDP)** : End-to-end communication, reliability, flow control
+4. **Application Layer**: Protocols consumed by applications (HTTP, DNS, SMTP, SSH)
+
+TCP guarantees reliable delivery through acknowledgments (ACKs), sequence numbers, retransmission of lost packets, and flow control (sliding window). UDP (User Datagram Protocol) provides bare-bones datagram delivery without reliability guarantees — trading reliability for lower latency.
+
+## Key Mechanisms of TCP
+
+- **Three-Way Handshake**: SYN → SYN-ACK → ACK establishes a connection
+- **Sequence Numbers**: Each byte is numbered; receiver can reorder out-of-sequence packets
+- **Sliding Window**: Dynamic flow control based on receiver's buffer capacity
+- **Congestion Control**: Slow start, congestion avoidance (AIMD), fast retransmit, fast recovery
+- **Four-Way Teardown**: FIN → ACK → FIN → ACK gracefully closes a connection
+
+## Further Reading
+
+- [RFC 793 — TCP](https://www.rfc-editor.org/rfc/rfc793): The protocol that powers the Internet
+- [RFC 791 — IP](https://www.rfc-editor.org/rfc/rfc791): Internet Protocol specification
+

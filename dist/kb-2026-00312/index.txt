@@ -1,0 +1,18 @@
+# Jenkins
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+Jenkins (Kohsuke Kawaguchi, 2011, forked from Hudson) is the most established open-source CI/CD automation server. Jenkins Pipeline (Jenkinsfile, Groovy DSL) defines build/deploy as code. Over 1800 plugins. Jenkins is Java-based, highly extensible but complex to maintain.
+
+## Core Explanation
+
+Pipeline: `pipeline { agent any; stages { stage('Build') { steps { sh 'make' } } } }`. Declarative vs. Scripted pipeline. Jenkinsfile stored in repository (Pipeline as Code). Plugins: Git, Docker, Slack, Blue Ocean (modern UI). Master-Agent architecture for distributed builds. Modern alternatives: GitHub Actions (simpler, cloud-native), GitLab CI.
+
+## Further Reading
+
+- [Jenkins Documentation](https://www.jenkins.io/doc/)
+

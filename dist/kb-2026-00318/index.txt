@@ -1,0 +1,18 @@
+# Packer
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+Packer (HashiCorp, 2013) creates identical machine images for multiple platforms from a single configuration. Define once, build for AWS AMI, Azure VM, GCP image, Docker, VirtualBox. Immutable infrastructure: bake software into image, deploy by launching new instances.
+
+## Core Explanation
+
+HCL configuration: source block (platform), build block (configuration). Provisioners: shell, Ansible, Chef, Puppet, file. Post-processors: Vagrant, vSphere template, Docker push. `packer init`, `packer validate`, `packer build`. HCP Packer: track image metadata across cloud accounts.
+
+## Further Reading
+
+- [Packer Documentation](https://developer.hashicorp.com/packer/docs)
+

@@ -1,0 +1,18 @@
+# Kotlin
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+Kotlin (JetBrains, 2011) is a statically-typed JVM language, officially supported for Android since 2017 (Google I/O). Concise syntax, null safety (nullable types `String?`), coroutines for async, 100% Java interoperable. Used by: Google (Android), Pinterest, Uber, Trello.
+
+## Core Explanation
+
+Null safety: `var name: String? = null` — compiler prevents NPEs. Coroutines: `launch { delay(1000) }` — lightweight concurrency. Extension functions: `fun String.isEmail(): Boolean`. Data classes: `data class User(val name: String)`. Kotlin Multiplatform (KMP): share business logic across Android, iOS, Web, Desktop.
+
+## Further Reading
+
+- [Kotlin Documentation](https://kotlinlang.org/docs/)
+

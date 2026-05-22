@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00448",
+  "headline": "Personal Finance",
+  "description": "Personal finance fundamentals: spend less than you earn, invest the difference, avoid debt, build emergency fund (3-6 months expenses), diversify investments. Index fund investing (Bogle, Vanguard): low-cost, broad market exposure beats stock picking long-term. Compound interest is the most powerful force in personal finance. Start early.",
+  "dateCreated": "2026-05-22T09:02:12.192Z",
+  "dateModified": "2026-05-22T09:02:12.192Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

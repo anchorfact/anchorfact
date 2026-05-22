@@ -1,0 +1,8 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00132>
+  a schema:TechArticle ;
+  schema:headline "Dijkstra's Algorithm" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .

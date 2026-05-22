@@ -1,0 +1,8 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-gd-018>
+  a schema:TechArticle ;
+  schema:headline "概念性 CI 流水线" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .

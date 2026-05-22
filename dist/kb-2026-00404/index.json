@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00404",
+  "headline": "Civil Rights Movement",
+  "description": "The US Civil Rights Movement (1954-1968) fought to end racial segregation and discrimination. Martin Luther King Jr. led nonviolent resistance: Montgomery Bus Boycott (1955), March on Washington (1963, 'I Have a Dream'), Selma to Montgomery marches (1965). Landmark legislation: Civil Rights Act (1964), Voting Rights Act (1965).",
+  "dateCreated": "2026-05-22T09:02:12.694Z",
+  "dateModified": "2026-05-22T09:02:12.694Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

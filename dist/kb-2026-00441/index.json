@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00441",
+  "headline": "Active Listening",
+  "description": "Active listening is fully concentrating on, understanding, and responding to what someone is saying — not just waiting for your turn to speak. Techniques: paraphrase ('What I'm hearing is...'), ask open questions, reflect feelings, avoid interrupting, use non-verbal cues (nodding, eye contact).",
+  "dateCreated": "2026-05-22T09:02:12.806Z",
+  "dateModified": "2026-05-22T09:02:12.806Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

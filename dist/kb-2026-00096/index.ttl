@@ -1,0 +1,8 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00096>
+  a schema:TechArticle ;
+  schema:headline "Intersection Observer API" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .

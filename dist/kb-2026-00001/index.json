@@ -3,9 +3,9 @@
   "@type": "TechArticle",
   "@id": "https://anchorfact.org/kb/kb-2026-00001",
   "headline": "Transformer Architecture",
-  "description": "The Transformer is a neural network architecture based solely on attention mechanisms, introduced by Vaswani et al. in 2017. It replaced recurrence and convolution with self-attention, enabling parallel computation and state-of-the-art performance in NLP.",
-  "dateCreated": "2026-05-22T05:57:38.916Z",
-  "dateModified": "2026-05-22T05:57:38.916Z",
+  "description": "The Transformer is a neural network architecture based solely on attention mechanisms, introduced by Vaswani et al. from Google Brain in the 2017 NeurIPS paper \"Attention Is All You Need.\" It replaced recurrence and convolution with multi-head self-attention, enabling fully parallel computation across input sequences. The base model achieved 28.4 BLEU on WMT 2014 English-to-German translation, setting a new state-of-the-art while requiring only 3.5 days of training on 8 NVIDIA P100 GPUs — a fraction of the training time of previous approaches. As of May 2026, the paper has been cited over 140,000 times and is the foundation of virtually all modern language models (BERT, GPT, LLaMA, Claude, Gemini).",
+  "dateCreated": "2026-05-22T09:02:12.122Z",
+  "dateModified": "2026-05-22T09:02:12.122Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -16,7 +16,7 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "medium",
+  "anchorfact:confidence": "high",
   "anchorfact:generationMethod": "human_only",
   "citation": []
 }

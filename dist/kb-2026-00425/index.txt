@@ -1,0 +1,18 @@
+# Gut Microbiome
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+The gut microbiome is the ecosystem of ~39 trillion bacteria in the human digestive tract — roughly equal to human cells. It influences digestion, immunity, mental health (gut-brain axis), metabolism, and disease risk. Shaped by diet (fiber feeds beneficial bacteria), antibiotics (disrupt), birth method (vaginal vs. C-section).
+
+## Core Explanation
+
+Diversity: more diverse microbiome = generally healthier. Prebiotics: fiber that feeds beneficial bacteria (garlic, onions, bananas). Probiotics: live bacteria (yogurt, kimchi, supplements). Fecal microbiota transplant (FMT): transferring stool from healthy donor — 90%+ effective for C. difficile infections. Gut-brain axis: gut produces 95% of body's serotonin. 'You are what you eat' — your microbiome reflects your diet.
+
+## Further Reading
+
+- [I Contain Multitudes (Ed Yong)](https://www.harpercollins.com/products/i-contain-multitudes-ed-yong)
+

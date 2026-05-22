@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00227",
+  "headline": "Software Development Life Cycle (SDLC)",
+  "description": "SDLC is the structured process for planning, creating, testing, and deploying software. Phases: Planning → Requirements → Design → Implementation → Testing → Deployment → Maintenance. Models: Waterfall (sequential), Agile (iterative), DevOps (continuous). SDLC reduces risk, manages complexity, and ensures quality.",
+  "dateCreated": "2026-05-22T09:02:12.486Z",
+  "dateModified": "2026-05-22T09:02:12.486Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

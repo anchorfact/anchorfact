@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00112",
+  "headline": "SQL Injection",
+  "description": "SQL Injection is a code injection attack where malicious SQL statements are inserted into application queries through user input. It ranked #3 on the OWASP Top 10 (2021) and can lead to data theft, data loss, and complete system compromise.",
+  "dateCreated": "2026-05-22T09:02:12.490Z",
+  "dateModified": "2026-05-22T09:02:12.490Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

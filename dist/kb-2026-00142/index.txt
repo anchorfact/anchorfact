@@ -1,0 +1,18 @@
+# Factory Method Pattern
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+Defines an interface for creating objects, letting subclasses decide which class to instantiate. Defers instantiation to subclasses.
+
+## Core Explanation
+
+Creator (abstract with factory method) + ConcreteCreator + Product interface. In modern code, factory functions (plain functions returning objects) often suffice without class hierarchies. Abstract Factory creates families of related objects (e.g., GUI widgets per platform).
+
+## Further Reading
+
+- [Design Patterns (Gang of Four)](undefined)
+

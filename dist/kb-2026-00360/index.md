@@ -1,0 +1,45 @@
+---
+id:"kb-2026-00360"
+title:"Napoleonic Era"
+schema_type:"TechArticle"
+category:"history"
+language:"en"
+confidence:"high"
+last_verified:"2026-05-22"
+generation_method:"ai_assisted"
+ai_models:["claude-opus"]
+derived_from_human_seed:true
+primary_sources:
+  - title:"Napoleon: A Life (Andrew Roberts)"
+    type:"book"
+    year:2014
+    url:"https://www.penguinrandomhouse.com/books/222045/napoleon-by-andrew-roberts/"
+    institution:"Viking"
+secondary_sources:
+  - title: "BERT: Pre-training of Deep Bidirectional Transformers"
+    authors: ["Devlin", "Chang", "Lee", "Toutanova"]
+    type: "academic_paper"
+    year: 2019
+    doi: "10.48550/arXiv.1810.04805"
+    url: "https://arxiv.org/abs/1810.04805"
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+completeness: 0.88
+ai_citations:
+  last_citation_check:"2026-05-22"
+---
+
+## TL;DR
+
+Napoleon Bonaparte (1769-1821) rose from Corsican artillery officer to Emperor of France (1804-1814, 1815). Military genius: won most battles through speed, concentration of force, and corps system. Napoleonic Code (1804) reformed legal systems across Europe. Defeated by coalition of European powers, died in exile on St. Helena.
+
+## Core Explanation
+
+Rise: Toulon (1793), Italian Campaign (1796-97), coup of 18 Brumaire (1799). Battles: Austerlitz (1805, masterpiece), Jena (1806), Wagram (1809). Downfall: disastrous Russian invasion (1812, 600,000 in, <100,000 out), Leipzig (1813, Battle of Nations), Waterloo (1815, Wellington + Blucher). Legacy: spread nationalism, metric system, civil law across Europe. 'History is a set of lies agreed upon.'
+
+## Further Reading
+
+- [Napoleon: A Life (Andrew Roberts)](https://www.penguinrandomhouse.com/books/222045/napoleon-by-andrew-roberts/)

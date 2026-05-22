@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Cross-Site Request Forgery (CSRF) — AnchorFact</title></head>
+<body><article><br>
+## TL;DR<br>
+<br>
+CSRF forces authenticated users to execute unwanted actions on a web application. The attacker tricks the victim's browser into sending a request that the application treats as legitimate because it carries the user's session cookie. Prevention: anti-CSRF tokens, SameSite cookies, custom headers.<br>
+<br>
+## Core Explanation<br>
+<br>
+SameSite cookie attribute (2020+): `Strict` (never sent cross-site), `Lax` (default since Chrome 80, sent on top-level navigation GET), `None` (always sent, requires Secure). Modern frameworks (Laravel, Django, Rails) include CSRF protection by default. Double-submit cookie pattern: send token in both cookie and request header.<br>
+<br>
+## Further Reading<br>
+<br>
+- [undefined](undefined)<br>
+</article></body>
+</html>

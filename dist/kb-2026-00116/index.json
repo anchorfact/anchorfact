@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00116",
+  "headline": "Public Key Cryptography",
+  "description": "Public-key (asymmetric) cryptography uses key pairs: public key (shared freely) and private key (kept secret). It enables encryption (only private key can decrypt), digital signatures (authenticity + integrity), and key exchange (establish shared secrets). RSA (1977), ECC (1985), and Ed25519 (2011) are the dominant algorithms.",
+  "dateCreated": "2026-05-22T09:02:12.443Z",
+  "dateModified": "2026-05-22T09:02:12.443Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

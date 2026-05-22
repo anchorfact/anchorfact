@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Database Normalization — AnchorFact</title></head>
+<body><article><br>
+## TL;DR<br>
+<br>
+Database normalization reduces data redundancy and anomalies by organizing data into well-structured tables. Normal forms: 1NF (atomic values), 2NF (no partial dependencies), 3NF (no transitive dependencies), BCNF (every determinant is a candidate key). Most databases target 3NF — enough to eliminate most anomalies while remaining practical.<br>
+<br>
+## Core Explanation<br>
+<br>
+1NF: each cell holds single value, each row unique. 2NF: non-key attributes depend on the whole primary key (not part). 3NF: non-key attributes depend on nothing but the primary key. Denormalization: intentionally introduce redundancy for read performance (common in analytics/OLAP). Trade-off: normalization = write-optimized, denormalization = read-optimized.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Database Systems: The Complete Book (Garcia-Molina, Ullman, Widom)](undefined)<br>
+</article></body>
+</html>

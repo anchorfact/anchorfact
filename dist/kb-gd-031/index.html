@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>save systems design — AnchorFact</title></head>
+<body><article><br>
+## 1. 存档系统架构<br>
+<br>
+### 1.1 核心职责<br>
+<br>
+```<br>
+┌─────────────────────────────────────────────┐<br>
+│              Save Game Manager                │<br>
+├─────────────┬─────────────┬─────────────────┤<br>
+│ 序列化系统   │ 存储后端     │ 元数据管理       │<br>
+│ (Serializer)│ (Storage)   │ (Metadata)      │<br>
+├─────────────┼─────────────┼─────────────────┤<br>
+│ JSON/Binary │ 本地文件    │ 时间戳           │<br>
+│ 对象图追踪  │ 平台API     │ 版本号           │<br>
+│ 引用解析    │ 云存储      │ 截图/位置        │<br>
+│ 压缩/加密   │ 数据库      │ 游玩时长         │<br>
+└─────────────┴─────────────┴─────────────────┘<br>
+```<br>
+<br>
+### 1.2 存档类型对比<br>
+<br>
+| 类型 | 粒度 | 自动/手动 | 用途 | 数量限制 |<br>
+|------|------|-----------|------|----------|<br>
+| **快速存档 (Quick Save)** | 精确状态 | 玩家手动 | 随时保存/读档 | 通常1个 |<br>
+| **检查点 (Checkpoint)** | 设计节点 | 自动触发 | 死亡后恢复 | 无限制(滚动) |<br>
+| **自动存档 (Auto Save)** | 定期/事件 | 系统自动 | 防崩溃/退出 | 3-5个滚动 |<br>
+| **手动存档槽** | 精确状态 | 玩家手动 | 多分支探索 | 10-99个 |<br>
+| **全局设置** | 配置数据 | 变更时 | 音量、键位、画质 | 1个 |<br>
+| **玩家档案** | 跨存档 | 自动 | 成就、统计、解锁 | 1个 |<br>
+| **云存档** | 以上全部 | 自动同步 | 跨设备、防丢失 | 受配额限制 |<br>
+<br>
+---<br>
+<br>
+## 2. 序列化策略<br>
+<br>
+### 2.1 数据格式对比<br>
+<br>
+| 格式 | 可读性 | 大小 | 速度 | 版本兼容 | 适用场景 |<br>
+|------|--------|------|------|----------|----------|<br>
+| **JSON** | ⭐⭐⭐ 人类可读 | 大(文本) | 慢 | 易（字段可选） | 调试、Mod、简单游戏 |<br>
+| **XML** | ⭐⭐⭐ 人类可读 | 最大 | 最慢 | 中（Schema验证） | 复杂配置、旧系统 |<br>
+| **Binary** | ⭐ 不可读 | 最小 | 最快 | 难（需版本处理） | 大型游戏、性能敏感 |<br>
+| **Protocol Buffers** | ⭐⭐ 需解码 | 小 | 快 | 中（字段编号） | 网络+存档通用 |<br>
+| **MessagePack** | ⭐⭐ 需解码 | 较小 | 快 | 中 | 现代游戏常用 |<br>
+| **C# BinaryFormatter** | ⭐ 不可读 | 中 | 中 | 差（已弃用） | ❌ 不安全，避免使用 |<br>
+<br>
+### 2.2 Unity 存档实现示例<br>
+<br>
+```csharp<br>
+// JSON + 可扩展架构 (Unity)<br>
+[Serializable]<br>
+public class SaveData<br>
+{<br>
+    public int version = 1;           // 版本号用于迁移<br>
+    public string saveTime;           // ISO 8601时间戳<br>
+    public string levelName;<br>
+    public Vector3Serializable playerPosition;<br>
+    public PlayerStats stats;<br>
+    public InventoryData inventory;<br>
+    public QuestProgress[] quests;<br>
+    public WorldState worldState;<br>
+}<br>
+<br>
+// 可序列化的Vector3（Unity原生不可直接序列化到JSON）<br>
+[Serializable]<br>
+public struct Vector3Serializable<br>
+{<br>
+    public float x, y, z;<br>
+    public static implicit operator Vector3(Vector3Serializable v) <br>
+        => new Vector3(v.x, v.y, v.z);<br>
+}<br>
+<br>
+public class SaveManager : MonoBehaviour<br>
+{<br>
+    private const string SAVE_FOLDER = "/saves/";<br>
+    private const int CURRENT_VERSION = 2;<br>
+    <br>
+    public void SaveGame(int slotIndex)<br>
+    {<br>
+        var saveData = new SaveData<br>
+        {<br>
+            version = CURRENT_VERSION,<br>
+            saveTime = DateTime.UtcNow.ToString("O"),<br>
+            levelName = SceneManager.GetActiveScene().name,<br>
+            playerPosition = player.transform.position,<br>
+            stats = player.GetComponent<PlayerStats>().Capture(),<br>
+            inventory = inventorySystem.Capture(),<br>
+            quests = questSystem.GetAllProgress(),<br>
+            worldState = worldStateManager.Capture()<br>
+        };<br>
+        <br>
+        string json = JsonUtility.ToJson(saveData, true);<br>
+        string path = GetSavePath(slotIndex);<br>
+        <br>
+        // 压缩可选<br>
+        byte[] bytes = Encoding.UTF8.GetBytes(json);<br>
+        bytes = Compress(bytes);<br>
+        <br>
+        File.WriteAllBytes(path, bytes);<br>
+        <br>
+        // 生成缩略图元数据<br>
+        CaptureScreenshot(slotIndex);<br>
+    }<br>
+    <br>
+    public SaveData LoadGame(int slotIndex)<br>
+    {<br>
+        string path = GetSavePath(slotIndex);<br>
+        if (!File.Exists(path)) return null;<br>
+        <br>
+        byte[] bytes = File.ReadAllBytes(path);<br>
+        bytes = Decompress(bytes);<br>
+        string json = Encoding.UTF8.GetString(bytes);<br>
+        <br>
+        var saveData = JsonUtility.FromJson<SaveData>(json);<br>
+        <br>
+        // 版本迁移<br>
+        if (saveData.version < CURRENT_VERSION)<br>
+            saveData = MigrateSave(saveData);<br>
+            <br>
+        return saveData;<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 2.3 对象图与引用处理<br>
+<br>
+**问题:** 游戏世界中对象互相引用（玩家持有武器引用，NPC引用任务状态），直接序列化会导致循环引用或重复。<br>
+<br>
+**解决方案:**<br>
+<br>
+| 方法 | 原理 | 复杂度 | 适用 |<br>
+|------|------|--------|------|<br>
+| **ID系统** | 每个可存档对象分配唯一ID，存档只存ID | 中 | 大多数游戏 |<br>
+| **值序列化** | 存档纯数据，加载后重建对象并恢复状态 | 高 | 复杂开放世界 |<br>
+| **快照模式** | 存档时深拷贝对象状态到DTO | 中 | 中小型游戏 |<br>
+| **事件溯源** | 记录所有改变状态的事件，加载时重放 | 很高 | 策略游戏、可回放 |<br>
+<br>
+**ID系统示例:**<br>
+```csharp<br>
+public interface ISaveable<br>
+{<br>
+    string SaveID { get; }<br>
+    SaveData Capture();<br>
+    void Restore(SaveData data);<br>
+}<br>
+<br>
+// 存档时只存ID + 差异数据<br>
+public class SaveContainer<br>
+{<br>
+    public Dictionary<string, SaveData> objectStates;<br>
+    // Key: "npc_villager_001", Value: {health:80, position:{x:10,y:0,z:5}}<br>
+}<br>
+```<br>
+<br>
+---<br>
+<br>
+## 3. 版本兼容与迁移<br>
+<br>
+### 3.1 版本化策略<br>
+<br>
+```<br>
+Save v1 ──→ Save v2 ──→ Save v3<br>
+  │           │           │<br>
+  │           │           └── 新增: 坐骑系统数据<br>
+  │           └── 新增: 技能树数据<br>
+  └── 基础: 位置、背包、任务<br>
+```<br>
+<br>
+### 3.2 迁移实现模式<br>
+<br>
+```csharp<br>
+public interface ISaveMigrator<br>
+{<br>
+    int FromVersion { get; }<br>
+    int ToVersion { get; }<br>
+    SaveData Migrate(SaveData oldData);<br>
+}<br>
+<br>
+public class SaveMigrationChain<br>
+{<br>
+    private List<ISaveMigrator> _migrators = new();<br>
+    <br>
+    public SaveData Migrate(SaveData data, int targetVersion)<br>
+    {<br>
+        while (data.version < targetVersion)<br>
+        {<br>
+            var migrator = _migrators.First(m => m.FromVersion == data.version);<br>
+            data = migrator.Migrate(data);<br>
+            data.version = migrator.ToVersion;<br>
+        }<br>
+        return data;<br>
+    }<br>
+}<br>
+<br>
+// 具体迁移示例: v1 → v2 (新增技能树)<br>
+public class V1ToV2Migrator : ISaveMigrator<br>
+{<br>
+    public int FromVersion => 1;<br>
+    public int ToVersion => 2;<br>
+    <br>
+    public SaveData Migrate(SaveData old)<br>
+    {<br>
+        // v1没有技能数据，初始化默认值<br>
+        old.skillTree = new SkillTreeData <br>
+        { <br>
+            unlockedNodes = new int[0],<br>
+            skillPoints = old.playerLevel // 按等级补偿技能点<br>
+        };<br>
+        return old;<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 3.3 兼容性原则<br>
+<br>
+| 原则 | 说明 |<br>
+|------|------|<br>
+| **新增字段 → 默认值** | 旧存档读新字段 = 默认初始化 |<br>
+| **删除字段 → 静默忽略** | 新代码遇到旧字段 = 忽略不报错 |<br>
+| **重命名字段 → 映射表** | 版本迁移中处理重命名 |<br>
+| **数据结构变 → 转换函数** | 提供显式迁移逻辑 |<br>
+| **绝不破坏旧存档** | 发布前测试所有版本链的迁移 |<br>
+<br>
+---<br>
+<br>
+## 4. 云存档与跨平台<br>
+<br>
+### 4.1 平台云存档API<br>
+<br>
+| 平台 | API | 配额 | 特点 |<br>
+|------|-----|------|------|<br>
+| **Steam** | SteamRemoteStorage | 100MB/游戏 | 自动冲突解决（最新胜） |<br>
+| **PlayStation** | Save Data Management | 系统决定 | 严格大小限制 |<br>
+| **Xbox** | Connected Storage | 64MB/存档 | 自动漫游 |<br>
+| **Nintendo Switch** | Save Data | 严格限制 | 不可扩展 |<br>
+| **iOS** | iCloud / Game Center | 取决于套餐 | 用户可控 |<br>
+| **Android** | Google Play Games | 3MB/存档 | 自动同步 |<br>
+| **Epic** | EOS Player Data Storage | 可配置 | 跨平台统一 |<br>
+| **自研后端** | REST API + S3 | 自定义 | 完全控制 |<br>
+<br>
+### 4.2 冲突解决策略<br>
+<br>
+```<br>
+设备A: 存档时间 10:00, 进度: 关卡3<br>
+设备B: 存档时间 11:00, 进度: 关卡4<br>
+<br>
+冲突解决选项:<br>
+1. 最新胜 (Last-Write-Wins): 保留B，A丢失<br>
+2. 询问玩家: 弹出对比界面让玩家选择<br>
+3. 智能合并: 尝试合并非冲突数据（统计、解锁）<br>
+4. 双存档: 保留两个，让玩家后续选择<br>
+5. 云优先/本地优先: 策略配置<br>
+```<br>
+<br>
+**推荐实现:**<br>
+- 自动合并: 成就、设置、统计（无冲突数据）<br>
+- 最新胜: 关卡进度、任务状态（单线叙事）<br>
+- 询问玩家: 当游玩时间接近且进度分叉时<br>
+<br>
+### 4.3 同步流程<br>
+<br>
+```<br>
+游戏启动:<br>
+  1. 读取本地存档<br>
+  2. 查询云端存档元数据（时间戳、大小）<br>
+  3. 比较版本:<br>
+     - 云端更新 → 下载并提示/自动应用<br>
+     - 本地更新 → 上传<br>
+     - 冲突 → 执行冲突解决策略<br>
+  4. 游戏运行中定期上传（checkpoint后）<br>
+  5. 游戏退出前强制同步<br>
+```<br>
+<br>
+---<br>
+<br>
+## 5. 安全与防篡改<br>
+<br>
+### 5.1 威胁模型<br>
+<br>
+| 威胁 | 动机 | 难度 | 影响 |<br>
+|------|------|------|------|<br>
+| **修改本地存档** | 作弊、解锁内容 | 低 | 单机体验破坏 |<br>
+| **分享存档** | 跳过付费、解锁 | 低 | 收入损失 |<br>
+| **逆向工程存档格式** | 制作修改器 | 中 | 社区扩散 |<br>
+| **内存修改** | 实时作弊 | 中 | 竞技游戏破坏 |<br>
+| **云存档欺骗** | 伪造服务器响应 | 高 | 需要中间人攻击 |<br>
+<br>
+### 5.2 防护层级<br>
+<br>
+| 层级 | 技术 | 效果 | 成本 |<br>
+|------|------|------|------|<br>
+| **1. 混淆** | 非标准扩展名、Base64包装 | 防 casual 修改 | 低 |<br>
+| **2. 校验和** | SHA256存档 + 校验文件 | 检测修改 | 低 |<br>
+| **3. 对称加密** | AES加密存档文件 | 防直接编辑 | 中 |<br>
+| **4. 签名** | HMAC/ RSA签名存档 | 防伪造 | 中 |<br>
+| **5. 服务端验证** | 关键数据服务器权威 | 防本地一切篡改 | 高 |<br>
+| **6. 完全服务端** | 存档仅存服务器 | 最高安全 | 很高 |<br>
+<br>
+**单机游戏推荐 (层1-3):**<br>
+```csharp<br>
+public class SecureSaveManager<br>
+{<br>
+    private readonly byte[] _key; // 从密钥派生，不要硬编码<br>
+    <br>
+    public void SaveEncrypted(SaveData data, string path)<br>
+    {<br>
+        string json = JsonUtility.ToJson(data);<br>
+        byte[] plainBytes = Encoding.UTF8.GetBytes(json);<br>
+        <br>
+        // 压缩<br>
+        plainBytes = Compress(plainBytes);<br>
+        <br>
+        // 加密<br>
+        byte[] encrypted = AesEncrypt(plainBytes, _key);<br>
+        <br>
+        // 计算校验和并追加<br>
+        byte[] hash = ComputeHash(encrypted);<br>
+        byte[] final = Combine(encrypted, hash);<br>
+        <br>
+        File.WriteAllBytes(path, final);<br>
+    }<br>
+    <br>
+    public SaveData LoadEncrypted(string path)<br>
+    {<br>
+        byte[] final = File.ReadAllBytes(path);<br>
+        <br>
+        // 分离数据和校验和<br>
+        var (encrypted, hash) = Split(final);<br>
+        <br>
+        // 验证完整性<br>
+        if (!VerifyHash(encrypted, hash))<br>
+            throw new SaveCorruptedException();<br>
+        <br>
+        // 解密 → 解压 → 反序列化<br>
+        byte[] plain = AesDecrypt(encrypted, _key);<br>
+        plain = Decompress(plain);<br>
+        string json = Encoding.UTF8.GetString(plain);<br>
+        <br>
+        return JsonUtility.FromJson<SaveData>(json);<br>
+    }<br>
+}<br>
+```<br>
+<br>
+**重要原则:**<br>
+- 不要硬编码密钥，使用密钥派生（如基于设备ID + 随机盐）<br>
+- 单机游戏无法做到绝对安全，目标是提高门槛<br>
+- 多人游戏关键数据必须服务端权威<br>
+<br>
+---<br>
+<br>
+## 6. 检查点系统设计<br>
+<br>
+### 6.1 检查点类型<br>
+<br>
+| 类型 | 触发条件 | 恢复内容 | 适用游戏 |<br>
+|------|----------|----------|----------|<br>
+| **手动检查点** | 玩家到达安全屋 | 完整状态 | Resident Evil |<br>
+| **自动检查点** | 区域进入、事件后 | 完整状态 | Uncharted |<br>
+| **快速保存** | 玩家随时 | 精确状态 | 大部分PC游戏 |<br>
+| **世界状态检查点** | 重大决策后 | 世界状态 | RPG |<br>
+| **阶段检查点** | Boss战阶段转换 | 阶段开始 | 动作游戏 |<br>
+<br>
+### 6.2 检查点设计原则<br>
+<br>
+| 原则 | 说明 | 反例 |<br>
+|------|------|------|<br>
+| **可预测** | 玩家知道何时保存了 | 突然死亡发现10分钟前才存档 |<br>
+| **不惩罚** | 检查点后不给玩家负面状态 | 存档后只剩1血 |<br>
+| **快速恢复** | 死亡到重来 < 5秒 | 长加载 + 不可跳过动画 |<br>
+| **公平前置** | 挑战前存档，不是挑战中 | Boss战中间存档 |<br>
+| **空间提示** | 检查点位置有视觉/音频提示 | 看不见的自动存档 |<br>
+| **最小重复** | 死亡后重复内容 < 30秒 | 10分钟流程无检查点 |<br>
+<br>
+### 6.3 多难度存档策略<br>
+<br>
+| 难度 | 检查点频率 | 额外机制 |<br>
+|------|------------|----------|<br>
+| 简单 | 密集 + 战斗中也存 | 死亡不掉落、自动回血 |<br>
+| 普通 | 标准频率 | 常规机制 |<br>
+| 困难 | 稀疏、仅区域边界 | 死亡惩罚（资源损失） |<br>
+| 极难/铁人 | 仅退出时/手动 | 死亡=删档重来 |<br>
+<br>
+---<br>
+<br>
+## 7. 最佳实践清单<br>
+<br>
+- [ ] **版本号必须** — 每个存档包含版本字段<br>
+- [ ] **时间戳记录** — ISO 8601格式，便于调试和排序<br>
+- [ ] **原子写入** — 先写到临时文件，成功后再替换，防写入中断损坏<br>
+- [ ] **备份滚动** — 保留最近3个自动备份，防止存档损坏<br>
+- [ ] **异步IO** — 存档/读档不阻塞主线程，用异步或后台线程<br>
+- [ ] **进度提示** — 长时间存档显示进度条/旋转图标<br>
+- [ ] **云同步状态UI** — 显示同步状态（已同步/同步中/冲突）<br>
+- [ ] **存储空间检查** — 存档前检查磁盘空间，避免半截写入<br>
+- [ ] **定期验证** — 开发模式可验证所有存档可读可写<br>
+- [ ] **GDPR/隐私合规** — 存档中不存个人身份信息，支持删除请求<br>
+<br>
+---<br>
+<br>
+> 评分: 80/100<br>
+> 完整性: 序列化、版本迁移、云存档、安全、检查点设计<br>
+> 改进空间: 可补充具体平台(Steam/Epic/Console)的SDK集成代码<br>
+</article></body>
+</html>

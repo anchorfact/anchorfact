@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00307",
+  "headline": "Zig Language",
+  "description": "Zig (Andrew Kelley, 2016) is a systems programming language competing with C — manual memory management without hidden allocations, compile-time execution, and seamless C interoperability (can import C headers directly). No garbage collector, no hidden control flow. Bun JS runtime is written in Zig.",
+  "dateCreated": "2026-05-22T09:02:12.548Z",
+  "dateModified": "2026-05-22T09:02:12.548Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

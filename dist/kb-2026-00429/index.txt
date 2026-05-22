@@ -1,0 +1,18 @@
+# Stock Market Basics
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+The stock market is a marketplace where shares of publicly traded companies are bought and sold. Major US exchanges: NYSE, NASDAQ. Indexes: S&P 500 (500 largest US companies), Dow Jones (30), NASDAQ Composite (tech-heavy). Historical average return: ~10% annually (S&P 500, 1926-2025) — but volatile.
+
+## Core Explanation
+
+Bull market: rising (up 20%+). Bear market: falling (down 20%+). Efficient Market Hypothesis (EMH): prices reflect all available info — you can't consistently beat the market (Fama, 1970 Nobel). Passive investing (index funds) beats active (stock picking) long-term (~90% of active managers underperform index over 15 years). Dollar-cost averaging: invest fixed amount regularly — reduces timing risk. Compound interest: 'Eighth wonder of the world' (Einstein, attributed).
+
+## Further Reading
+
+- [A Random Walk Down Wall Street (Malkiel, 13th Ed)](https://wwnorton.com/books/9781324035466)
+

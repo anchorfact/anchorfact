@@ -1,0 +1,8 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-gd-019>
+  a schema:TechArticle ;
+  schema:headline "游戏测试方法论" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .

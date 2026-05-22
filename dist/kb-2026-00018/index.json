@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00018",
+  "headline": "AI Agents (2025-2026)",
+  "description": "2025 was widely called the \"Year of the Agent\" across the AI industry, marking a transition from passive conversational AI to autonomous systems capable of multi-step reasoning, tool use, and independent action. Key developments included the emergence of MCP as an industry-standard integration protocol (December 2025, donated to the Linux Foundation's AAIF), the rise of Computer Use agents that directly manipulate desktop/browser interfaces, and the maturation of multi-agent orchestration frameworks. By 2026, AI agents are deployed across software engineering (Devin, $10.2B valuation), general task automation (Manus, acquired by Meta), and enterprise workflow automation (n8n, Dify, Coze).",
+  "dateCreated": "2026-05-22T09:02:12.068Z",
+  "dateModified": "2026-05-22T09:02:12.069Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

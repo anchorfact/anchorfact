@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>游戏动画状态机设计 — AnchorFact</title></head>
+<body><article><br>
+# 游戏动画状态机设计<br>
+<br>
+## 概述<br>
+<br>
+动画状态机（Animation State Machine）是控制游戏角色动画播放逻辑的核心系统。它将动画组织为状态，通过转换条件连接，实现流畅、响应迅速的角色表现。<br>
+<br>
+---<br>
+<br>
+## 1. 动画状态机基础<br>
+<br>
+### 1.1 有限状态机（FSM）<br>
+<br>
+最简单的动画控制模型：<br>
+<br>
+```<br>
+        [Idle] ──→ [Walk] ──→ [Run]<br>
+          ↑         │  ↑       │<br>
+          └─────────┘  └───────┘<br>
+            <br>
+        [Jump] ←── [Fall] ←── [Any State]<br>
+          │          │<br>
+          └────→ [Land]<br>
+```<br>
+<br>
+**核心概念**：<br>
+- **State（状态）**：一个动画片段或混合树<br>
+- **Transition（转换）**：状态之间的连接<br>
+- **Condition（条件）**：触发转换的布尔/数值条件<br>
+- **Parameter（参数）**：控制状态机的外部输入<br>
+<br>
+```csharp<br>
+// Unity Animator 参数设置示例<br>
+public class AnimationController : MonoBehaviour<br>
+{<br>
+    private Animator animator;<br>
+    <br>
+    void Start()<br>
+    {<br>
+        animator = GetComponent<Animator>();<br>
+        <br>
+        // 定义参数（在 Animator 窗口中创建）<br>
+        // Speed (float) - 移动速度<br>
+        // IsGrounded (bool) - 是否着地<br>
+        // Attack (trigger) - 攻击触发<br>
+    }<br>
+    <br>
+    void Update()<br>
+    {<br>
+        float speed = Input.GetAxis("Vertical");<br>
+        bool isGrounded = CheckGrounded();<br>
+        <br>
+        // 设置参数<br>
+        animator.SetFloat("Speed", speed);<br>
+        animator.SetBool("IsGrounded", isGrounded);<br>
+        <br>
+        // 触发攻击<br>
+        if (Input.GetButtonDown("Fire1"))<br>
+        {<br>
+            animator.SetTrigger("Attack");<br>
+        }<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 1.2 层级状态机（Hierarchical State Machine）<br>
+<br>
+复杂角色需要分层组织：<br>
+<br>
+```<br>
+[Locomotion Layer]<br>
+├── [Grounded]<br>
+│   ├── [Idle]<br>
+│   ├── [Walk]<br>
+│   └── [Run]<br>
+├── [Airborne]<br>
+│   ├── [Jump]<br>
+│   ├── [Fall]<br>
+│   └── [Land]<br>
+└── [Crouch]<br>
+    ├── [CrouchIdle]<br>
+    └── [CrouchWalk]<br>
+<br>
+[Combat Layer]<br>
+├── [Unarmed]<br>
+├── [Sword]<br>
+│   ├── [SwordIdle]<br>
+│   ├── [SwordAttack1]<br>
+│   └── [SwordAttack2]<br>
+└── [Bow]<br>
+    ├── [BowAim]<br>
+    └── [BowFire]<br>
+```<br>
+<br>
+**层级优势**：<br>
+- 上层状态可以定义"通用行为"（如所有 Grounded 状态都可以跳跃）<br>
+- 减少转换数量（n² → n×m）<br>
+- 支持层间混合（Locomotion + Combat 同时播放）<br>
+<br>
+### 1.3 Blend Tree（混合树）<br>
+<br>
+Blend Tree 根据参数值混合多个动画：<br>
+<br>
+**1D Blend Tree**<br>
+```<br>
+Speed = 0    Speed = 2    Speed = 5    Speed = 8<br>
+  [Idle] ──── [Walk] ──── [Jog] ──── [Run]<br>
+```<br>
+<br>
+**2D Blend Tree（方向 + 速度）**<br>
+```<br>
+            [Walk_B]<br>
+               │<br>
+    [Walk_L] ──┼── [Walk_R]<br>
+               │<br>
+            [Walk_F]<br>
+```<br>
+<br>
+```csharp<br>
+// Unity Blend Tree 设置（代码方式）<br>
+public void SetupBlendTree()<br>
+{<br>
+    AnimatorController controller = AnimatorController.CreateAnimatorControllerAtPath("Assets/PlayerController.controller");<br>
+    AnimatorStateMachine rootStateMachine = controller.layers[0].stateMachine;<br>
+    <br>
+    // 创建 Blend Tree<br>
+    BlendTree blendTree = new BlendTree();<br>
+    blendTree.name = "Locomotion";<br>
+    blendTree.blendType = BlendTreeType.SimpleDirectional2D;<br>
+    blendTree.blendParameter = "VelX";<br>
+    blendTree.blendParameterY = "VelZ";<br>
+    <br>
+    // 添加动画剪辑<br>
+    blendTree.AddChild(Resources.Load<AnimationClip>("Idle"), new Vector2(0, 0));<br>
+    blendTree.AddChild(Resources.Load<AnimationClip>("Walk_F"), new Vector2(0, 1));<br>
+    blendTree.AddChild(Resources.Load<AnimationClip>("Walk_B"), new Vector2(0, -1));<br>
+    blendTree.AddChild(Resources.Load<AnimationClip>("Walk_L"), new Vector2(-1, 0));<br>
+    blendTree.AddChild(Resources.Load<AnimationClip>("Walk_R"), new Vector2(1, 0));<br>
+    <br>
+    // 创建状态并添加 Blend Tree<br>
+    AnimatorState state = rootStateMachine.AddState("Locomotion");<br>
+    state.motion = blendTree;<br>
+}<br>
+```<br>
+<br>
+---<br>
+<br>
+## 2. 主流引擎动画系统对比<br>
+<br>
+### 2.1 Unity Mecanim / Animator<br>
+<br>
+| 特性 | 说明 |<br>
+|------|------|<br>
+| **状态机** | 可视化 Animator 窗口，支持层级 |<br>
+| **Blend Tree** | 1D/2D/Direct Simple/Direct 类型 |<br>
+| **Avatar 系统** | 人形动画重定向（Humanoid Rig） |<br>
+| **动画事件** | 在动画时间轴上触发函数 |<br>
+| **根运动** | 从动画提取位移 |<br>
+| **IK 支持** | 内置 Foot IK、Hand IK |<br>
+| **Playables API** | 程序化控制动画混合 |<br>
+<br>
+```csharp<br>
+// Unity Playables API 示例（程序化动画控制）<br>
+public class PlayableAnimation : MonoBehaviour<br>
+{<br>
+    private PlayableGraph playableGraph;<br>
+    private AnimationMixerPlayable mixerPlayable;<br>
+    <br>
+    void Start()<br>
+    {<br>
+        // 创建 PlayableGraph<br>
+        playableGraph = PlayableGraph.Create("AnimationGraph");<br>
+        var playableOutput = AnimationPlayableOutput.Create(playableGraph, "Animation", GetComponent<Animator>());<br>
+        <br>
+        // 创建混合器<br>
+        mixerPlayable = AnimationMixerPlayable.Create(playableGraph, 2);<br>
+        playableOutput.SetSourcePlayable(mixerPlayable);<br>
+        <br>
+        // 添加动画剪辑<br>
+        var clipPlayable1 = AnimationClipPlayable.Create(playableGraph, idleClip);<br>
+        var clipPlayable2 = AnimationClipPlayable.Create(playableGraph, walkClip);<br>
+        <br>
+        playableGraph.Connect(clipPlayable1, 0, mixerPlayable, 0);<br>
+        playableGraph.Connect(clipPlayable2, 0, mixerPlayable, 1);<br>
+        <br>
+        // 设置权重<br>
+        mixerPlayable.SetInputWeight(0, 1f);<br>
+        mixerPlayable.SetInputWeight(1, 0f);<br>
+        <br>
+        playableGraph.Play();<br>
+    }<br>
+    <br>
+    void Update()<br>
+    {<br>
+        // 动态混合<br>
+        float walkWeight = Mathf.Clamp01(speed / maxSpeed);<br>
+        mixerPlayable.SetInputWeight(0, 1f - walkWeight);<br>
+        mixerPlayable.SetInputWeight(1, walkWeight);<br>
+    }<br>
+    <br>
+    void OnDestroy()<br>
+    {<br>
+        playableGraph.Destroy();<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 2.2 Unreal Animation Blueprint<br>
+<br>
+| 特性 | 说明 |<br>
+|------|------|<br>
+| **状态机** | AnimGraph 中的 State Machine 节点 |<br>
+| **Blend Space** | 1D/2D/3D 混合空间 |<br>
+| **动画蒙太奇** | 叠加动画（攻击、受击） |<br>
+| **动画通知** | 通知轨道（Notify/NotifyState） |<br>
+| **根运动** | 从动画提取并应用到角色 |<br>
+| **IK 支持** | Two Bone IK、FABRIK、Hand/Foot IK |<br>
+| **动画曲线** | 驱动材质、变形目标 |<br>
+<br>
+```cpp<br>
+// Unreal Animation Blueprint 中的事件图表逻辑<br>
+void UMyAnimInstance::NativeUpdateAnimation(float DeltaSeconds)<br>
+{<br>
+    Super::NativeUpdateAnimation(DeltaSeconds);<br>
+    <br>
+    // 获取角色引用<br>
+    if (AActor* Owner = TryGetPawnOwner())<br>
+    {<br>
+        // 更新速度<br>
+        Velocity = Owner->GetVelocity();<br>
+        Speed = Velocity.Size();<br>
+        <br>
+        // 更新是否在空中<br>
+        bIsInAir = Owner->GetMovementComponent()->IsFalling();<br>
+        <br>
+        // 更新方向（相对于角色朝向）<br>
+        Direction = CalculateDirection(Velocity, Owner->GetActorRotation());<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 2.3 Godot AnimationTree<br>
+<br>
+| 特性 | 说明 |<br>
+|------|------|<br>
+| **状态机** | AnimationNodeStateMachine |<br>
+| **Blend Tree** | AnimationNodeBlendTree（节点图） |<br>
+| **1D/2D Blend** | BlendSpace1D / BlendSpace2D |<br>
+| **动画回调** | 信号系统（animation_finished 等） |<br>
+| **根运动** | 支持，通过 RootMotionView |<br>
+| **IK** | 通过 SkeletonIK3D 节点 |<br>
+| **混合模式** | Add、Blend、Mix |<br>
+<br>
+```gdscript<br>
+# Godot AnimationTree 设置<br>
+extends CharacterBody3D<br>
+<br>
+@onready var anim_tree = $AnimationTree<br>
+@onready var playback = anim_tree.get("parameters/playback")<br>
+<br>
+func _ready():<br>
+    anim_tree.active = true<br>
+    playback.start("Idle")<br>
+<br>
+func _physics_process(delta):<br>
+    var input_dir = Input.get_vector("left", "right", "forward", "back")<br>
+    var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()<br>
+    <br>
+    if direction:<br>
+        velocity.x = direction.x * SPEED<br>
+        velocity.z = direction.z * SPEED<br>
+        <br>
+        # 设置 BlendSpace2D 参数<br>
+        anim_tree.set("parameters/BlendSpace2D/blend_position", input_dir)<br>
+        playback.travel("Run")<br>
+    else:<br>
+        velocity.x = move_toward(velocity.x, 0, SPEED)<br>
+        velocity.z = move_toward(velocity.z, 0, SPEED)<br>
+        playback.travel("Idle")<br>
+    <br>
+    move_and_slide()<br>
+```<br>
+<br>
+### 2.4 引擎对比总结<br>
+<br>
+| 维度 | Unity | Unreal | Godot |<br>
+|------|-------|--------|-------|<br>
+| **学习曲线** | 中 | 高 | 低 |<br>
+| **可视化编辑** | 优秀 | 优秀 | 良好 |<br>
+| **程序化控制** | Playables API | C++ / Blueprint | GDScript |<br>
+| **重定向** | Avatar（Humanoid） | Retargeting | 基础支持 |<br>
+| **运行时修改** | 有限 | 灵活 | 灵活 |<br>
+| **性能** | 良好 | 优秀 | 良好 |<br>
+<br>
+---<br>
+<br>
+## 3. 动画与游戏逻辑交互<br>
+<br>
+### 3.1 动画事件（Animation Events）<br>
+<br>
+在动画特定帧触发游戏逻辑：<br>
+<br>
+```csharp<br>
+// Unity 动画事件<br>
+public class AnimationEvents : MonoBehaviour<br>
+{<br>
+    // 在动画时间轴上调用<br>
+    public void OnFootstep(int footIndex)<br>
+    {<br>
+        // 播放脚步声<br>
+        AudioManager.PlayFootstep(footIndex, groundMaterial);<br>
+        <br>
+        // 产生灰尘粒子<br>
+        ParticleManager.SpawnDust(footPosition);<br>
+        <br>
+        // 屏幕轻微震动<br>
+        CameraShake.Instance.Shake(0.05f, 0.05f);<br>
+    }<br>
+    <br>
+    public void OnAttackStart()<br>
+    {<br>
+        // 启用攻击碰撞器<br>
+        attackCollider.enabled = true;<br>
+        <br>
+        // 进入"无敌帧"（如果有）<br>
+        isInvincible = true;<br>
+    }<br>
+    <br>
+    public void OnAttackEnd()<br>
+    {<br>
+        // 禁用攻击碰撞器<br>
+        attackCollider.enabled = false;<br>
+        <br>
+        // 结束无敌<br>
+        isInvincible = false;<br>
+    }<br>
+    <br>
+    public void OnReloadComplete()<br>
+    {<br>
+        // 补充弹药<br>
+        currentAmmo = maxAmmo;<br>
+        <br>
+        // 更新 UI<br>
+        UIManager.UpdateAmmo(currentAmmo);<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 3.2 根运动（Root Motion）<br>
+<br>
+从动画中提取位移，而非直接设置角色位置：<br>
+<br>
+```csharp<br>
+// Unity 根运动<br>
+public class RootMotionController : MonoBehaviour<br>
+{<br>
+    private Animator animator;<br>
+    private Vector3 rootMotionVelocity;<br>
+    <br>
+    void Start()<br>
+    {<br>
+        animator = GetComponent<Animator>();<br>
+        animator.applyRootMotion = true;<br>
+    }<br>
+    <br>
+    void OnAnimatorMove()<br>
+    {<br>
+        // 获取动画这一帧的根运动<br>
+        rootMotionVelocity = animator.deltaPosition / Time.deltaTime;<br>
+        <br>
+        // 应用根运动（可以在这里修改，如乘以速度系数）<br>
+        transform.position += animator.deltaPosition;<br>
+        transform.rotation *= animator.deltaRotation;<br>
+    }<br>
+    <br>
+    void OnAnimatorIK(int layerIndex)<br>
+    {<br>
+        // Foot IK：让脚适应地面<br>
+        if (animator.GetBool("EnableFootIK"))<br>
+        {<br>
+            // 射线检测地面<br>
+            if (Physics.Raycast(footPosition + Vector3.up, Vector3.down, out RaycastHit hit, 2f))<br>
+            {<br>
+                animator.SetIKPositionWeight(AvatarIKGoal.LeftFoot, 1f);<br>
+                animator.SetIKPosition(AvatarIKGoal.LeftFoot, hit.point);<br>
+                <br>
+                // 调整脚部旋转以适应地面法线<br>
+                animator.SetIKRotationWeight(AvatarIKGoal.LeftFoot, 1f);<br>
+                animator.SetIKRotation(AvatarIKGoal.LeftFoot, Quaternion.LookRotation(<br>
+                    transform.forward, hit.normal));<br>
+            }<br>
+        }<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 3.3 逆向运动学（IK）<br>
+<br>
+动态调整骨骼以到达目标位置：<br>
+<br>
+| IK 类型 | 用途 | 计算复杂度 |<br>
+|---------|------|------------|<br>
+| **Two Bone IK** | 手臂/腿部弯曲 | 低（解析解） |<br>
+| **FABRIK** | 多关节链（触手、尾巴） | 中（迭代） |<br>
+| **CCD IK** | 多关节链 | 中（迭代） |<br>
+| **Look At IK** | 头部/眼睛看向目标 | 低 |<br>
+<br>
+---<br>
+<br>
+## 4. 高级动画技术<br>
+<br>
+### 4.1 Motion Matching<br>
+<br>
+**原理**：从大量动画数据库中实时搜索最佳匹配帧<br>
+<br>
+```<br>
+当前状态（位置、速度、朝向）<br>
+    ↓<br>
+搜索动画数据库 → 找到最佳匹配帧<br>
+    ↓<br>
+平滑过渡到新动画<br>
+```<br>
+<br>
+**优势**：<br>
+- 自然的动画过渡<br>
+- 无需手动创建 Blend Tree<br>
+- 对不规则地形适应性强<br>
+<br>
+**劣势**：<br>
+- 需要大量动画数据<br>
+- 内存占用高<br>
+- 搜索计算量<br>
+<br>
+**应用游戏**：《荣耀战魂》、《最后生还者2》、《FIFA》<br>
+<br>
+### 4.2 Animation Warping<br>
+<br>
+动态调整动画以适应环境：<br>
+<br>
+| Warping 类型 | 说明 | 应用 |<br>
+|-------------|------|------|<br>
+| **Motion Warping** | 调整动画轨迹以到达目标 | 攀爬、跳跃到特定位置 |<br>
+| **Orientation Warping** | 调整朝向 | 角色始终面向目标 |<br>
+| **Translation Warping** | 调整位移 | 适应不同步长 |<br>
+| **Slope Warping** | 调整以适应坡度 | 上下坡行走 |<br>
+<br>
+```cpp<br>
+// Unreal Motion Warping 示例<br>
+void UMyCharacterAnimInstance::NativeUpdateAnimation(float DeltaSeconds)<br>
+{<br>
+    Super::NativeUpdateAnimation(DeltaSeconds);<br>
+    <br>
+    if (MotionWarpingComponent)<br>
+    {<br>
+        // 添加 Motion Warping 目标<br>
+        MotionWarpingComponent->AddOrUpdateWarpTargetFromTransform(<br>
+            "LedgeGrab",<br>
+            LedgeTransform<br>
+        );<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 4.3 Procedural Animation<br>
+<br>
+程序化生成动画，减少动画资产需求：<br>
+<br>
+```csharp<br>
+// 程序化尾巴摆动<br>
+public class ProceduralTail : MonoBehaviour<br>
+{<br>
+    public Transform[] tailBones;<br>
+    public float waveSpeed = 5f;<br>
+    public float waveAmplitude = 15f;<br>
+    <br>
+    void Update()<br>
+    {<br>
+        for (int i = 0; i < tailBones.Length; i++)<br>
+        {<br>
+            float phase = i * 0.5f; // 相位差<br>
+            float angle = Mathf.Sin(Time.time * waveSpeed + phase) * waveAmplitude;<br>
+            <br>
+            tailBones[i].localRotation = Quaternion.Euler(0, 0, angle);<br>
+        }<br>
+    }<br>
+}<br>
+<br>
+// 程序化呼吸<br>
+public class ProceduralBreathing : MonoBehaviour<br>
+{<br>
+    public Transform chestBone;<br>
+    public float breathSpeed = 2f;<br>
+    public float breathIntensity = 0.05f;<br>
+    <br>
+    void Update()<br>
+    {<br>
+        float breath = Mathf.Sin(Time.time * breathSpeed) * breathIntensity + 1f;<br>
+        chestBone.localScale = new Vector3(breath, breath, breath);<br>
+    }<br>
+}<br>
+```<br>
+<br>
+---<br>
+<br>
+## 5. 网络同步中的动画<br>
+<br>
+### 5.1 动画状态同步<br>
+<br>
+```csharp<br>
+// 发送动画状态（低带宽方案）<br>
+[Serializable]<br>
+public struct AnimationStatePacket<br>
+{<br>
+    public byte stateHash;      // 状态名称哈希（1字节）<br>
+    public byte normalizedTime; // 归一化时间（0-255）<br>
+    public short speed;         // 播放速度（压缩）<br>
+}<br>
+<br>
+public class AnimationNetworkSync : MonoBehaviour<br>
+{<br>
+    private Animator animator;<br>
+    private int lastSentStateHash;<br>
+    <br>
+    void Update()<br>
+    {<br>
+        var currentState = animator.GetCurrentAnimatorStateInfo(0);<br>
+        int stateHash = currentState.shortNameHash;<br>
+        <br>
+        // 只在状态变化时发送<br>
+        if (stateHash != lastSentStateHash)<br>
+        {<br>
+            var packet = new AnimationStatePacket<br>
+            {<br>
+                stateHash = (byte)(stateHash & 0xFF),<br>
+                normalizedTime = (byte)(currentState.normalizedTime * 255),<br>
+                speed = (short)(animator.speed * 100)<br>
+            };<br>
+            <br>
+            NetworkSend(packet);<br>
+            lastSentStateHash = stateHash;<br>
+        }<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 5.2 动画插值与预测<br>
+<br>
+```csharp<br>
+// 远程玩家动画插值<br>
+public class RemoteAnimationInterpolator : MonoBehaviour<br>
+{<br>
+    private Animator animator;<br>
+    private Queue<AnimationStatePacket> stateBuffer = new();<br>
+    private const float INTERPOLATION_DELAY = 0.1f; // 100ms 缓冲<br>
+    <br>
+    void ReceiveState(AnimationStatePacket packet)<br>
+    {<br>
+        stateBuffer.Enqueue(packet);<br>
+    }<br>
+    <br>
+    void Update()<br>
+    {<br>
+        // 延迟播放，确保有数据可插值<br>
+        if (stateBuffer.Count > 0)<br>
+        {<br>
+            var targetState = stateBuffer.Peek();<br>
+            <br>
+            // 平滑过渡到目标状态<br>
+            animator.CrossFade(targetState.stateHash, 0.1f, 0, <br>
+                targetState.normalizedTime / 255f);<br>
+        }<br>
+    }<br>
+}<br>
+```<br>
+<br>
+---<br>
+<br>
+## 6. 性能优化<br>
+<br>
+### 6.1 动画压缩<br>
+<br>
+| 压缩方法 | 说明 | 适用场景 |<br>
+|----------|------|----------|<br>
+| **Keyframe Reduction** | 删除冗余关键帧 | 大多数动画 |<br>
+| **Float Precision** | 降低浮点精度 | 远距离角色 |<br>
+| **Clip Length** | 截断动画长度 | 循环动画 |<br>
+| **Sampling Rate** | 降低采样率 | 低重要性动画 |<br>
+<br>
+```csharp<br>
+// Unity 动画压缩设置<br>
+public class AnimationCompression : MonoBehaviour<br>
+{<br>
+    void CompressAnimation(AnimationClip clip)<br>
+    {<br>
+        // 设置关键帧减少容差<br>
+        AnimationUtility.SetAnimationClipSettings(clip, new AnimationClipSettings<br>
+        {<br>
+            loopTime = true,<br>
+            // 压缩设置<br>
+        });<br>
+        <br>
+        // 关键帧减少<br>
+        AnimationUtility.GenerateAdditiveMotions(clip, new AnimationClip[0]);<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 6.2 LOD（Level of Detail）<br>
+<br>
+根据距离使用不同复杂度的动画：<br>
+<br>
+| 距离 | 骨骼数量 | 更新频率 | 物理 |<br>
+|------|----------|----------|------|<br>
+| < 10m | 全部 | 每帧 | 开启 |<br>
+| 10-30m | 简化骨骼 | 每2帧 | 简化 |<br>
+| 30-100m | 关键骨骼 | 每4帧 | 关闭 |<br>
+| > 100m | 仅根节点 | 每8帧 | 关闭 |<br>
+<br>
+### 6.3 Culling<br>
+<br>
+```csharp<br>
+// Unity 动画剔除<br>
+public class AnimationCulling : MonoBehaviour<br>
+{<br>
+    void Start()<br>
+    {<br>
+        Animator animator = GetComponent<Animator>();<br>
+        <br>
+        // 基于视锥的剔除<br>
+        animator.cullingMode = AnimatorCullingMode.CullUpdateTransforms;<br>
+        <br>
+        // 完全剔除（不可见时不更新）<br>
+        // animator.cullingMode = AnimatorCullingMode.CullCompletely;<br>
+        <br>
+        // 始终更新（重要角色）<br>
+        // animator.cullingMode = AnimatorCullingMode.AlwaysAnimate;<br>
+    }<br>
+}<br>
+```<br>
+<br>
+---<br>
+<br>
+## 7. 典型游戏案例分析<br>
+<br>
+### 7.1 《战神》（God of War）<br>
+<br>
+**动画系统要点**：<br>
+- 父子角色同步（Kratos + Atreus）<br>
+- 无缝过渡的战斗/探索动画<br>
+- 一镜到底的动画系统<br>
+- 复杂的 IK 系统（适应地形）<br>
+- 动画驱动的摄像机<br>
+<br>
+### 7.2 《只狼：影逝二度》（Sekiro）<br>
+<br>
+**动画系统要点**：<br>
+- 精确的格挡/弹反判定（基于动画帧）<br>
+- 架势系统（Posture）与动画深度绑定<br>
+- 忍杀动画的上下文敏感性<br>
+- 快速、响应式的动画过渡<br>
+<br>
+### 7.3 《艾尔登法环》（Elden Ring）<br>
+<br>
+**动画系统要点**：<br>
+- 大量武器类型的动画差异化<br>
+- 骑马与步行的无缝切换<br>
+- 法术/祷告的手势动画<br>
+- 大型Boss的复杂状态机<br>
+<br>
+---<br>
+<br>
+## 8. 动画系统检查清单<br>
+<br>
+### 8.1 设计阶段<br>
+<br>
+- [ ] 定义角色动画需求（移动、战斗、交互）<br>
+- [ ] 确定动画混合策略（Blend Tree vs 状态机）<br>
+- [ ] 规划 IK 需求（脚部适应、手部抓取）<br>
+- [ ] 设计动画事件系统<br>
+<br>
+### 8.2 实现阶段<br>
+<br>
+- [ ] 创建基础状态机结构<br>
+- [ ] 设置 Blend Tree 参数<br>
+- [ ] 实现动画事件回调<br>
+- [ ] 配置根运动（如需要）<br>
+- [ ] 设置 IK 约束<br>
+<br>
+### 8.3 优化阶段<br>
+<br>
+- [ ] 压缩动画剪辑<br>
+- [ ] 设置 LOD 策略<br>
+- [ ] 配置动画剔除<br>
+- [ ] 优化状态机转换条件<br>
+- [ ] 测试网络同步（多人游戏）<br>
+<br>
+---<br>
+<br>
+## 参考来源<br>
+<br>
+- Unity Animator 官方文档<br>
+- Unreal Animation Blueprint 官方文档<br>
+- Godot AnimationTree 官方文档<br>
+- 《Character Animation in Games》— GDC 演讲<br>
+- Motion Matching 论文（Ubisoft）<br>
+- 《The Last of Us Part II》动画技术分享<br>
+</article></body>
+</html>

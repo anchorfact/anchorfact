@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Singleton Pattern — AnchorFact</title></head>
+<body><article><br>
+## TL;DR<br>
+<br>
+Ensures a class has only one instance and provides global access. Used for shared resources: database connections, config, logging. Modern criticism: hidden global state, testing difficulty.<br>
+<br>
+## Core Explanation<br>
+<br>
+Implementation: private constructor, static getInstance(). Thread-safe: double-checked locking, static initializer, or enum (Java). In JavaScript: module-level variable (modules are singletons by default). Dependency injection is often preferred over Singleton today.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Design Patterns (Gang of Four)](undefined)<br>
+</article></body>
+</html>

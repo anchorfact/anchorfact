@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00365",
+  "headline": "Immune System",
+  "description": "The immune system defends against pathogens (bacteria, viruses, fungi, parasites). Two branches: innate (immediate, non-specific — macrophages, neutrophils, complement) and adaptive (delayed, specific — B cells/antibodies, T cells). Vaccination trains adaptive immunity without causing disease.",
+  "dateCreated": "2026-05-22T09:02:12.783Z",
+  "dateModified": "2026-05-22T09:02:12.783Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

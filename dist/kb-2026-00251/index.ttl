@@ -1,0 +1,8 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00251>
+  a schema:TechArticle ;
+  schema:headline "SQL Joins" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .

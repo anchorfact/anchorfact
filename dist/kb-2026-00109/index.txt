@@ -1,0 +1,18 @@
+# Navigator API
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+The Navigator API (`window.navigator` / `navigator`) provides information about the browser and device. Key properties include `userAgent`, `language`, `onLine`, `platform`, `hardwareConcurrency`, and access to various sub-APIs (`geolocation`, `clipboard`, `mediaDevices`).
+
+## Core Explanation
+
+`navigator.userAgent` (becoming less reliable due to freezing), `navigator.language` (user's preferred language), `navigator.onLine` (connectivity status), `navigator.hardwareConcurrency` (logical CPU cores), `navigator.cookieEnabled`, `navigator.platform`. Sub-APIs: `navigator.geolocation`, `navigator.clipboard`, `navigator.mediaDevices`, `navigator.serviceWorker`.
+
+## Further Reading
+
+- [HTML Standard — Navigator](https://html.spec.whatwg.org/multipage/system-state.html#the-navigator-object)
+

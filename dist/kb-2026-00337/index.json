@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00337",
+  "headline": "Cell Structure",
+  "description": "Cells are the basic unit of life. Prokaryotes (bacteria, archaea): no nucleus, simple. Eukaryotes (animals, plants, fungi): nucleus, membrane-bound organelles. Key organelles: nucleus (DNA), mitochondria (energy, ATP), endoplasmic reticulum (protein synthesis), Golgi apparatus (protein packaging), lysosomes (digestion).",
+  "dateCreated": "2026-05-22T09:02:12.756Z",
+  "dateModified": "2026-05-22T09:02:12.756Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

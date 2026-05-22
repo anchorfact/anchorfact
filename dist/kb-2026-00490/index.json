@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00490",
+  "headline": "Animal Behavior",
+  "description": "Animal behavior studies how animals interact with their environment, other organisms, and their own species. Tinbergen's 4 questions: mechanism (how?), ontogeny (development?), function (adaptive value?), phylogeny (evolutionary history?). Key behaviors: communication, mating, foraging, social organization, migration, cooperation.",
+  "dateCreated": "2026-05-22T09:02:12.750Z",
+  "dateModified": "2026-05-22T09:02:12.750Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

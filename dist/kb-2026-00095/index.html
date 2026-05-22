@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Same-Origin Policy — AnchorFact</title></head>
+<body><article><br>
+## TL;DR<br>
+<br>
+The Same-Origin Policy (SOP) is a critical web security mechanism restricting how documents and scripts from one origin interact with resources from another origin. Origin = protocol + host + port. SOP prevents malicious websites from reading sensitive data from other sites.<br>
+<br>
+## Core Explanation<br>
+<br>
+SOP restricts: DOM access (a page on origin A cannot read origin B's iframe/document content), XMLHttpRequest/Fetch to different origins (unless CORS permits), and cookie/WebStorage access. It does NOT restrict: embedding resources (`<img>`, `<script>`, `<link>`), form submissions, or redirects. SOP is fundamental to browser security and predates CORS.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Same-Origin Policy (MDN Web Docs)](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)<br>
+</article></body>
+</html>

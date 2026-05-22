@@ -1,0 +1,8 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00161>
+  a schema:TechArticle ;
+  schema:headline "Serverless Computing" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .

@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00414",
+  "headline": "Architecture History",
+  "description": "Architecture history spans from megalithic structures (Stonehenge, ~3000 BCE) to contemporary skyscrapers. Major styles: Classical (Greek/Roman columns), Gothic (pointed arches, flying buttresses), Renaissance, Baroque, Neoclassical, Modernist (Bauhaus, Le Corbusier), Postmodern, Parametric (Zaha Hadid). Form follows function vs. ornament as crime.",
+  "dateCreated": "2026-05-22T09:02:12.128Z",
+  "dateModified": "2026-05-22T09:02:12.128Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

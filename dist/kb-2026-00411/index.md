@@ -1,0 +1,39 @@
+---
+id:"kb-2026-00411"
+title:"Film Genres"
+schema_type:"TechArticle"
+category:"arts"
+language:"en"
+confidence:"high"
+last_verified:"2026-05-22"
+generation_method:"ai_assisted"
+ai_models:["claude-opus"]
+derived_from_human_seed:true
+primary_sources:
+  - title:"Film Art: An Introduction (Bordwell & Thompson, 12th Ed)"
+    type:"book"
+    year:2019
+    url:"https://www.mheducation.com/highered/product/film-art-introduction-bordwell-thompson/M9781260056082.html"
+    institution:"McGraw-Hill"
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+completeness: 0.88
+ai_citations:
+  last_citation_check:"2026-05-22"
+---
+
+## TL;DR
+
+Film genres categorize movies by narrative conventions, visual style, and emotional effect. Major genres: action, comedy, drama, horror, sci-fi, thriller, romance, documentary, animation, musical, western, noir. Genres evolve and hybridize over time — modern films often blend genres.
+
+## Core Explanation
+
+Horror: fear of the unknown, monsters, psychological terror: Psycho (1960), The Exorcist (1973), Get Out (2017). Sci-fi: future scenarios, technology, social commentary: 2001 (1968), Blade Runner (1982), The Matrix (1999). Western: American frontier mythology (declined 1970s). Noir (1940s-50s): cynical, shadowy crime films — Maltese Falcon, Double Indemnity. Animation: from hand-drawn (Disney) → CGI (Pixar) → anime (Studio Ghibli).
+
+## Further Reading
+
+- [Film Art: An Introduction (Bordwell & Thompson, 12th Ed)](https://www.mheducation.com/highered/product/film-art-introduction-bordwell-thompson/M9781260056082.html)

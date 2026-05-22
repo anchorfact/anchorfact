@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00124",
+  "headline": "Docker Security Best Practices",
+  "description": "Docker containers share the host kernel, making security critical. Best practices: run as non-root user, use minimal base images (distroless, alpine), scan images for vulnerabilities, limit capabilities, use read-only root filesystems, enable seccomp/AppArmor profiles.",
+  "dateCreated": "2026-05-22T09:02:12.289Z",
+  "dateModified": "2026-05-22T09:02:12.289Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

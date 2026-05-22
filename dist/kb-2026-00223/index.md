@@ -1,0 +1,37 @@
+---
+id:"kb-2026-00223"
+title:"Roguelike Game Design"
+schema_type:"TechArticle"
+category:"game-development"
+language:"en"
+confidence:"high"
+last_verified:"2026-05-22"
+generation_method:"ai_assisted"
+ai_models:["claude-opus"]
+derived_from_human_seed:true
+primary_sources:
+  - title:"undefined"
+    type:"undefined"
+    url:"undefined"
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+completeness: 0.88
+ai_citations:
+  last_citation_check:"2026-05-22"
+---
+
+## TL;DR
+
+Roguelike games feature procedural generation, permadeath (no reloading saves), turn-based gameplay, and high difficulty. Named after the 1980 game Rogue. Roguelites (modern variants) relax permadeath by allowing meta-progression (permanent upgrades between runs). Examples: Hades, Dead Cells, Slay the Spire, The Binding of Isaac.
+
+## Core Explanation
+
+Berlin Interpretation (2008): defines 'high-value' roguelike factors. Key mechanics: procedural level generation (seeded random, room templates, cellular automata), permadeath (+ meta-progression for roguelites), emergent gameplay (systems interact unexpectedly), replayability via randomization. Spelunky (2008) popularized the roguelite genre. Popular engines: Unity, Godot, GameMaker.
+
+## Further Reading
+
+- [undefined](undefined)

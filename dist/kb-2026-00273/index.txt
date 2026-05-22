@@ -1,0 +1,18 @@
+# Transfer Learning
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+Transfer learning applies knowledge from a source domain to improve learning in a target domain. In deep learning: pre-train on large generic dataset (ImageNet), fine-tune on specific task with small labeled dataset. This is the dominant paradigm in computer vision and NLP — training from scratch is rare.
+
+## Core Explanation
+
+Fine-tuning strategies: freeze early layers (general features), train later layers (task-specific). Full fine-tuning: update all weights. Linear probing: freeze backbone, train only classifier head. Domain adaptation: source and target domains have different distributions. Few-shot learning: learn from very few examples (5-50 per class).
+
+## Further Reading
+
+- [A Survey on Transfer Learning (Pan & Yang, 2010)](https://ieeexplore.ieee.org/document/5288526)
+

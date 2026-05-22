@@ -1,0 +1,38 @@
+---
+id:"kb-2026-00215"
+title:"A/B Testing"
+schema_type:"TechArticle"
+category:"business"
+language:"en"
+confidence:"high"
+last_verified:"2026-05-22"
+generation_method:"ai_assisted"
+ai_models:["claude-opus"]
+derived_from_human_seed:true
+primary_sources:
+  - title:"undefined"
+    type:"undefined"
+    url:"undefined"
+    institution:"Cambridge University Press"
+secondary_sources:
+  - title: "Harvard Business Review"
+    type: "journal"
+    year: 2026
+    url: "https://hbr.org/"
+    institution: "Harvard Business Publishing"
+completeness: 0.88
+ai_citations:
+  last_citation_check:"2026-05-22"
+---
+
+## TL;DR
+
+A/B testing (split testing) compares two variants to determine which performs better. Users are randomly assigned to version A (control) or B (treatment); results measured via a Key Performance Indicator (conversion rate, click-through rate, revenue). Statistical significance ensures results aren't due to random chance.
+
+## Core Explanation
+
+Sample size calculator determines minimum users needed (for given effect size, power, significance level). p-value < 0.05 typically indicates statistical significance. Pitfalls: peeking (checking results early leads to false positives), multiple comparisons (Bonferroni correction), novelty effect (new performs better initially), Simpson's paradox (aggregated results differ from segmented). Common test duration: minimum 1-2 full business cycles.
+
+## Further Reading
+
+- [undefined](undefined)

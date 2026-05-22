@@ -1,0 +1,18 @@
+# Recursion
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+Recursion is a technique where a function calls itself to solve smaller instances of the same problem. It requires a base case (termination) and recursive case (problem reduction). Recursion elegantly models tree traversal, divide-and-conquer, and backtracking.
+
+## Core Explanation
+
+Tail recursion: recursive call is the last operation — compilers can optimize to iteration (no stack growth). JavaScript engines (Safari JSC only) support TCO. Recursion depth limited by call stack (~10K in browsers). Recursion can always be converted to iteration (using explicit stack), and vice versa.
+
+## Further Reading
+
+- [Structure and Interpretation of Computer Programs (SICP)](undefined)
+

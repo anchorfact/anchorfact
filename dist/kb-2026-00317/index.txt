@@ -1,0 +1,18 @@
+# Vault (HashiCorp)
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+HashiCorp Vault (2015) is a secrets management tool — securely stores and controls access to tokens, passwords, certificates, and API keys. Secrets are encrypted at rest and in transit. Dynamic secrets (on-demand, short-lived) eliminate credential sprawl. Enterprise-grade access control via policies.
+
+## Core Explanation
+
+Secret engines: KV (key-value), AWS (dynamic IAM credentials), PKI (X.509 certificates), database (dynamic DB credentials). Authentication methods: token, Kubernetes, AWS IAM, LDAP, GitHub, OIDC. Policies (HCL): `path 'secret/*' { capabilities = ['read'] }`. Audit logging: track every access. Seal/unseal: Shamir's Secret Sharing for master key.
+
+## Further Reading
+
+- [Vault Documentation](https://developer.hashicorp.com/vault/docs)
+

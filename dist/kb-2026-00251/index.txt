@@ -1,0 +1,18 @@
+# SQL Joins
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+SQL JOINs combine rows from two or more tables based on related columns. Types: INNER JOIN (matching rows only), LEFT JOIN (all left rows + matching right), RIGHT JOIN, FULL OUTER JOIN, CROSS JOIN (Cartesian product). Self-join: join table to itself. JOINs are the most powerful and frequently misused SQL feature.
+
+## Core Explanation
+
+INNER JOIN: `SELECT * FROM orders JOIN customers ON orders.cust_id = customers.id` — only rows with matches in both. LEFT JOIN: keeps all left rows, NULL for missing right — used for 'show all customers and their orders if any'. JOIN vs. subquery: EXPLAIN ANALYZE to compare — often equivalent, sometimes one is better. JOIN ordering matters: the query optimizer reorders, but hint with proper statistics.
+
+## Further Reading
+
+- [PostgreSQL Documentation — Joins](undefined)
+

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Broadcast Channel API — AnchorFact</title></head>
+<body><article><br>
+## TL;DR<br>
+<br>
+The Broadcast Channel API enables same-origin communication between browsing contexts (tabs, iframes, workers) with a simple pub/sub model. Messages are broadcasted to all listeners on a named channel.<br>
+<br>
+## Core Explanation<br>
+<br>
+`const bc = new BroadcastChannel('channel-name')`. `bc.postMessage(data)` sends; `bc.onmessage` receives. Data is structured-cloned. Simpler than SharedWorker or postMessage with window.opener. No persistence — messages are lost if no listeners are active. Ideal for login/logout synchronization across tabs.<br>
+<br>
+## Further Reading<br>
+<br>
+- [HTML Standard — BroadcastChannel](https://html.spec.whatwg.org/multipage/web-messaging.html#broadcasting-to-other-browsing-contexts)<br>
+</article></body>
+</html>

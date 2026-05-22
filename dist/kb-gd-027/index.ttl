@@ -1,0 +1,8 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-gd-027>
+  a schema:TechArticle ;
+  schema:headline "游戏物理系统设计" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>History API — AnchorFact</title></head>
+<body><article><br>
+## TL;DR<br>
+<br>
+The History API (`window.history`) enables single-page applications to manipulate the browser session history — adding entries, replacing states, and navigating without full page reloads. It is the foundation of client-side routing in SPAs.<br>
+<br>
+## Core Explanation<br>
+<br>
+`history.pushState(state, title, url)` adds a new entry. `history.replaceState()` modifies the current entry without creating a new one. `popstate` event fires on back/forward navigation. State objects are serialized (structured clone) — up to ~640KB in practice. The URL must be same-origin. Browser history entries are not directly readable — only via `history.length` and `history.state`.<br>
+<br>
+## Further Reading<br>
+<br>
+- [HTML Standard — Session History and Navigation](https://html.spec.whatwg.org/multipage/history.html)<br>
+</article></body>
+</html>

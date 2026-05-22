@@ -1,0 +1,8 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00254>
+  a schema:TechArticle ;
+  schema:headline "Data Lake Architecture" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .

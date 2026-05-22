@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00107",
+  "headline": "Page Visibility API",
+  "description": "The Page Visibility API informs web applications whether a page is visible (active tab) or hidden (background tab). `document.visibilityState` is `'visible'` or `'hidden'`, with the `visibilitychange` event for detecting state transitions.",
+  "dateCreated": "2026-05-22T09:02:12.425Z",
+  "dateModified": "2026-05-22T09:02:12.425Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

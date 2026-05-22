@@ -1,0 +1,8 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-gd-026>
+  a schema:TechArticle ;
+  schema:headline "游戏性能优化" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .

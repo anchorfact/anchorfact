@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00417",
+  "headline": "Sleep Hygiene",
+  "description": "Sleep hygiene encompasses habits promoting consistent, quality sleep. Key practices: consistent sleep/wake times, cool dark quiet room, no screens 1hr before bed, avoid caffeine after 2pm, exercise during day, wind-down routine. Poor sleep hygiene = poor sleep = poor health. Adults: 7-9 hours.",
+  "dateCreated": "2026-05-22T09:02:12.676Z",
+  "dateModified": "2026-05-22T09:02:12.676Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

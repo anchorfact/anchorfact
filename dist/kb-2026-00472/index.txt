@@ -1,0 +1,18 @@
+# Risk Management
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+Risk management identifies, assesses, and mitigates threats to an organization's capital and earnings. Process: identify risk → analyze (probability × impact) → evaluate → treat (avoid, reduce, transfer/insure, accept). Financial risk: market, credit, liquidity, operational. Enterprise Risk Management (ERM) takes a holistic approach.
+
+## Core Explanation
+
+Value at Risk (VaR): maximum expected loss at given confidence level (e.g., '95% VaR of $1M' means 5% chance loss exceeds $1M). Risk matrix: probability (rows) × impact (columns). Black Swan (Taleb): rare, unpredictable, high-impact events — you can't predict but you can build robustness. Diversification: 'don't put all eggs in one basket' — reduces unsystematic risk. Hedging: offsetting position to reduce risk.
+
+## Further Reading
+
+- [Against the Gods: The Remarkable Story of Risk (Peter Bernstein)](https://www.wiley.com/en-us/Against+the+Gods%3A+The+Remarkable+Story+of+Risk-p-9780471295631)
+

@@ -1,0 +1,8 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00378>
+  a schema:TechArticle ;
+  schema:headline "First Aid CPR" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .

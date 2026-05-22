@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Repository Pattern — AnchorFact</title></head>
+<body><article><br>
+## TL;DR<br>
+<br>
+The Repository pattern mediates between the domain and data mapping layers, acting like an in-memory collection of domain objects. It abstracts data access, enabling swapping data sources (database, API, in-memory) without changing business logic.<br>
+<br>
+## Core Explanation<br>
+<br>
+Provides: collection-like interface (add, remove, find), query methods, separation from ORM. Often combined with Unit of Work pattern for transactional consistency. Generic repository: `Repository<T>` with common CRUD. Overuse can lead to anemic domain models — prefer rich domain models with behavior.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Patterns of Enterprise Application Architecture](undefined)<br>
+</article></body>
+</html>

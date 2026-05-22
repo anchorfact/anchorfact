@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00494",
+  "headline": "Theater History",
+  "description": "Theater originated in ancient Greece (~6th century BCE) from religious rituals honoring Dionysus. Tragedy (Aeschylus, Sophocles, Euripides) and comedy (Aristophanes) established Western dramatic forms. Key developments: Elizabethan theater (Shakespeare, Globe Theater), Restoration comedy, modern realism (Ibsen, Chekhov), musical theater, experimental/avant-garde.",
+  "dateCreated": "2026-05-22T09:02:12.163Z",
+  "dateModified": "2026-05-22T09:02:12.163Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

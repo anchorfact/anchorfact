@@ -1,0 +1,18 @@
+# Content Delivery Network (CDN)
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+A CDN is a geographically distributed network of edge servers that cache and serve content from locations closest to users, reducing latency and origin server load. Major CDNs: Cloudflare, Akamai, Fastly, Amazon CloudFront. CDNs handle ~75% of all web traffic.
+
+## Core Explanation
+
+CDN features: DDoS protection, SSL/TLS termination, WAF, image optimization, edge computing (Cloudflare Workers, AWS Lambda@Edge). Cache strategies: push (upload content) vs. pull (cache on first request). Anycast routing directs users to the nearest PoP. CDN edge locations: Cloudflare 330+ cities, CloudFront 600+ PoPs.
+
+## Further Reading
+
+- [undefined](undefined)
+

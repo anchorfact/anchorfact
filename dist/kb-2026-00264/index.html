@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Linux Kernel Modules — AnchorFact</title></head>
+<body><article><br>
+## TL;DR<br>
+<br>
+Kernel modules extend Linux functionality without recompiling the kernel. `lsmod` lists loaded modules. `modprobe module` loads with dependencies. Kernel modules enable dynamic hardware support: load USB driver when device plugged, unload when removed. Modules run in kernel space (ring 0) — no safety net.<br>
+<br>
+## Core Explanation<br>
+<br>
+Commands: `lsmod` (list), `modprobe` (load with deps), `rmmod` (remove), `modinfo` (details). Module parameters: `modprobe module param=value`. Blacklisting: `/etc/modprobe.d/blacklist.conf` prevents auto-loading. DKMS (Dynamic Kernel Module Support): auto-rebuilds modules on kernel update. Writing kernel modules requires C and understanding of kernel APIs — crashes the whole system if buggy.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Linux Kernel Module Programming Guide](undefined)<br>
+</article></body>
+</html>

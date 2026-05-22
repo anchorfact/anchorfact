@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00495",
+  "headline": "Greek Mythology",
+  "description": "Greek mythology is a vast collection of stories about gods, heroes, and the nature of the world. Olympians: Zeus (sky, king), Hera (marriage), Poseidon (sea), Hades (underworld), Athena (wisdom), Apollo (sun/arts), Artemis (hunt), Ares (war), Aphrodite (love), Hephaestus (forge), Hermes (messenger). Heroes: Heracles (12 labors), Odysseus (Odyssey), Perseus (Medusa), Theseus (Minotaur).",
+  "dateCreated": "2026-05-22T09:02:12.144Z",
+  "dateModified": "2026-05-22T09:02:12.144Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

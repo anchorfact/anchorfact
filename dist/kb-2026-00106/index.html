@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Pointer Lock API — AnchorFact</title></head>
+<body><article><br>
+## TL;DR<br>
+<br>
+The Pointer Lock API (`element.requestPointerLock()`) captures mouse movement for games and 3D applications, hiding the cursor and providing raw movement data (`movementX`, `movementY`) without screen-edge boundaries.<br>
+<br>
+## Core Explanation<br>
+<br>
+`document.pointerLockElement` returns the locked element or null. `pointerlockchange` and `pointerlockerror` events fire on state changes. Mouse movement deltas are unbounded — ideal for first-person camera controls. Escape key exits pointer lock. Typically combined with `document.addEventListener('mousemove', handler)`.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Pointer Lock (W3C Recommendation)](https://www.w3.org/TR/pointerlock/)<br>
+</article></body>
+</html>

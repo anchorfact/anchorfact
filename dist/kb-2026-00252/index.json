@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00252",
+  "headline": "Database Indexing",
+  "description": "Database indexes are data structures that speed up data retrieval — like a book's index. Common types: B-tree (default, range queries, sorting), Hash (equality only), GIN (full-text, arrays, JSONB in PostgreSQL), GiST (geometric, full-text), BRIN (block range, large append-only tables). Without index: sequential scan (read every row).",
+  "dateCreated": "2026-05-22T09:02:12.270Z",
+  "dateModified": "2026-05-22T09:02:12.270Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

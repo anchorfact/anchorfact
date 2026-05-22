@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00197",
+  "headline": "Complexity Theory",
+  "description": "Computational complexity classifies problems by the resources (time, memory) required to solve them. P: solvable in polynomial time by deterministic Turing machine. NP: verifiable in polynomial time. NP-complete: hardest problems in NP (SAT, TSP, knapsack). P vs NP: the greatest open problem in computer science.",
+  "dateCreated": "2026-05-22T09:02:12.244Z",
+  "dateModified": "2026-05-22T09:02:12.244Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00446",
+  "headline": "Decision Making",
+  "description": "Effective decision-making balances intuition with analysis. Key frameworks: pros/cons list, decision matrix (weighted criteria), cost-benefit analysis, expected value, premortem (imagine failure, then work backwards). Avoid: analysis paralysis, sunk cost fallacy, confirmation bias. 'Good decision process > good outcome' — you can do everything right and still lose.",
+  "dateCreated": "2026-05-22T09:02:12.810Z",
+  "dateModified": "2026-05-22T09:02:12.810Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

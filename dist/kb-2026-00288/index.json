@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00288",
+  "headline": "Django",
+  "description": "Django is a high-level Python web framework (2005) that follows 'batteries-included' philosophy. ORM, admin interface, authentication, form handling, and templating are built-in. Follows MVT (Model-View-Template) architecture. Used by Instagram, Pinterest, Mozilla, Disqus.",
+  "dateCreated": "2026-05-22T09:02:12.283Z",
+  "dateModified": "2026-05-22T09:02:12.283Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

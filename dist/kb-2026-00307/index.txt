@@ -1,0 +1,18 @@
+# Zig Language
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+Zig (Andrew Kelley, 2016) is a systems programming language competing with C — manual memory management without hidden allocations, compile-time execution, and seamless C interoperability (can import C headers directly). No garbage collector, no hidden control flow. Bun JS runtime is written in Zig.
+
+## Core Explanation
+
+No hidden allocations: `ArrayList(T).init(allocator)` requires explicit allocator. `comptime`: execute code at compile time — generic types, optimization. `defer` for cleanup (like Go). C interop: `@cImport(@cInclude('stdio.h'))` — direct access to C libraries. No macros or preprocessor: all metaprogramming via comptime. Error handling: `try` and `catch` without exceptions.
+
+## Further Reading
+
+- [Zig Documentation](https://ziglang.org/documentation/)
+

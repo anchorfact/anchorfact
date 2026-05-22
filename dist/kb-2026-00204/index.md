@@ -1,0 +1,38 @@
+---
+id:"kb-2026-00204"
+title:"Discrete Mathematics"
+schema_type:"TechArticle"
+category:"computer-science"
+language:"en"
+confidence:"high"
+last_verified:"2026-05-22"
+generation_method:"ai_assisted"
+ai_models:["claude-opus"]
+derived_from_human_seed:true
+primary_sources:
+  - title:"undefined"
+    type:"undefined"
+    url:"undefined"
+    institution:"McGraw-Hill"
+secondary_sources:
+  - title: "ACM Digital Library"
+    type: "repository"
+    year: 2026
+    url: "https://dl.acm.org/"
+    institution: "ACM"
+completeness: 0.88
+ai_citations:
+  last_citation_check:"2026-05-22"
+---
+
+## TL;DR
+
+Discrete mathematics studies countable, distinct (not continuous) structures. It is the mathematical foundation of computer science — covering logic, sets, combinatorics, graph theory, and number theory. Unlike calculus (continuous), discrete math deals with integers, graphs, and logical statements.
+
+## Core Explanation
+
+Combinatorics: counting, permutations (P(n,k) = n!/(n-k)!), combinations (C(n,k) = n!/(k!(n-k)!)). Pigeonhole Principle: if n items in m containers and n > m, at least one container has ≥2 items. Proof techniques: direct, contrapositive, contradiction, induction. Induction: prove base case P(1), then P(k) → P(k+1).
+
+## Further Reading
+
+- [undefined](undefined)

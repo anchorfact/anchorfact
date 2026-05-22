@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00004",
   "headline": "GPT (Generative Pre-trained Transformer) Model Family",
   "description": "The GPT (Generative Pre-trained Transformer) model family, developed by OpenAI, represents a lineage of autoregressive language models that progressively scaled from 117M to trillions of parameters. GPT-1 (2018) introduced the \"pre-train then fine-tune\" paradigm using the Transformer decoder; GPT-2 (2019) demonstrated emergent zero-shot capabilities at 1.5B parameters; GPT-3 (2020) established few-shot learning as a viable paradigm at 175B parameters and was trained on approximately 570GB of filtered text. As of 2026, the GPT family has become a cornerstone of modern AI, with GPT-5.2 reaching trillions of parameters.",
-  "dateCreated": "2026-05-22T05:57:38.910Z",
-  "dateModified": "2026-05-22T05:57:38.910Z",
+  "dateCreated": "2026-05-22T09:02:12.094Z",
+  "dateModified": "2026-05-22T09:02:12.094Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

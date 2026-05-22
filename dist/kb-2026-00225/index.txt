@@ -1,0 +1,18 @@
+# Visual Novel Design
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+Visual novels are interactive fiction games with static/anime-style artwork, text-based narrative, and branching dialogue trees. Popular in Japan (dating sims, mystery) and growing globally. Key engines: Ren'Py (Python, open-source), TyranoBuilder, Unity + Fungus. Writing quality is the primary success factor.
+
+## Core Explanation
+
+Branching: choices lead to different endings (good/bad/true). Common routes: character routes (romantic), story routes. Variables track flags/affection/choices influencing later scenes. Visual elements: sprites (characters with expressions), backgrounds, CGs (special illustrations), UI (text box, choice menu). Popular examples: Doki Doki Literature Club, Ace Attorney, Steins;Gate.
+
+## Further Reading
+
+- [undefined](undefined)
+

@@ -1,0 +1,18 @@
+# GraphQL Schema Design
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+GraphQL schema design defines types, queries, mutations, and relationships. Best practices: design around business domain (not database schema), use Relay-style pagination (edges/nodes), avoid deeply nested queries (N+1 solved by DataLoader), version via evolution (add fields, deprecate old ones — never remove).
+
+## Core Explanation
+
+Types: Object types (User, Post), Scalar types (String, Int, Float, Boolean, ID), Enum types, Input types (for mutations), Interface/Union. Connections (Relay spec): `edges { node, cursor }`, `pageInfo { hasNextPage }`. DataLoader: batching + caching — solves N+1. Nullability: non-null `String!` vs. nullable `String` — prefer non-null unless field can legitimately be null.
+
+## Further Reading
+
+- [GraphQL Best Practices](https://graphql.org/learn/best-practices/)
+

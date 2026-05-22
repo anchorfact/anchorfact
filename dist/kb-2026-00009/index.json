@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00009",
+  "headline": "Diffusion Models",
+  "description": "Diffusion models are a class of generative models that create data (images, audio, video) by learning to reverse a gradual noising process. Starting from pure random noise, they iteratively denoise toward a coherent output. Popularized by DDPM (Ho et al., 2020, over 15,000 citations on Google Scholar as of 2026), diffusion models power major image generation systems including Stable Diffusion, DALL·E 3, Midjourney, and Imagen. They have surpassed GANs as the dominant paradigm for high-quality image generation.",
+  "dateCreated": "2026-05-22T09:02:12.086Z",
+  "dateModified": "2026-05-22T09:02:12.086Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

@@ -1,0 +1,18 @@
+# Type Systems
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+Type systems assign types to program constructs, catching errors at compile time. Static typing (C, Java, Rust): types checked before execution. Dynamic typing (Python, JavaScript): types checked at runtime. Type systems prevent entire classes of bugs: null dereferences, type mismatches, memory safety violations.
+
+## Core Explanation
+
+Type safety: well-typed programs don't go wrong (no runtime type errors). Strong vs. weak: strong (Python, Rust — no implicit coercion) vs. weak (C, JavaScript — implicit conversions). Nominal typing (Java: types defined by name) vs. structural typing (TypeScript: types defined by shape). Hindley-Milner (ML/Haskell) infers types without annotations.
+
+## Further Reading
+
+- [undefined](undefined)
+

@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00203",
+  "headline": "Regular Expressions",
+  "description": "Regular expressions (regex) are patterns for matching text, powered by finite automata theory. First introduced by Stephen Kleene (1951), regex is the standard tool for text search, validation, and extraction across programming languages, text editors, and command-line tools.",
+  "dateCreated": "2026-05-22T09:02:12.458Z",
+  "dateModified": "2026-05-22T09:02:12.458Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

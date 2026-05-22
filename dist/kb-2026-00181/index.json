@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00181",
+  "headline": "DNS (Domain Name System)",
+  "description": "DNS translates human-readable domain names (anchorfact.org) to IP addresses (172.67.x.x). It's a hierarchical, distributed database — the 'phone book of the Internet'. DNS resolution: browser cache → OS cache → recursive resolver → root nameserver → TLD nameserver → authoritative nameserver.",
+  "dateCreated": "2026-05-22T09:02:12.284Z",
+  "dateModified": "2026-05-22T09:02:12.284Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

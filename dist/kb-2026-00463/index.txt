@@ -1,0 +1,18 @@
+# Sleep Disorders
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+Sleep disorders affect millions. Insomnia: difficulty falling/staying asleep (most common). Sleep apnea: breathing repeatedly stops during sleep — CPAP treatment. Narcolepsy: excessive daytime sleepiness, sudden sleep attacks. Restless Legs Syndrome (RLS): uncomfortable sensation + urge to move legs. Parasomnias: sleepwalking, night terrors.
+
+## Core Explanation
+
+Insomnia: CBT-I (cognitive behavioral therapy) is first-line treatment — more effective than sleeping pills long-term. Sleep apnea: affects 10-30% of adults, mostly undiagnosed. Narcolepsy: caused by loss of hypocretin/orexin neurons — autoimmune. Parasomnias: occur during non-REM (sleepwalking) or REM (nightmares). Circadian rhythm disorders: shift work, jet lag, delayed sleep phase.
+
+## Further Reading
+
+- [International Classification of Sleep Disorders (3rd Ed)](https://aasm.org/clinical-resources/international-classification-sleep-disorders/)
+

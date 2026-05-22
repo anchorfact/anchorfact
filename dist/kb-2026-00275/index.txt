@@ -1,0 +1,18 @@
+# Computer Vision
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+Computer Vision enables machines to extract meaning from visual data. Key tasks: image classification (what is this?), object detection (where is it? + bounding box), segmentation (pixel-level labeling), pose estimation, depth estimation, 3D reconstruction. Deep learning (CNN, ViT) dominates since 2012.
+
+## Core Explanation
+
+Object detection: R-CNN family (region proposals), YOLO (single shot, real-time), DETR (Transformer-based). Segmentation: U-Net (biomedical), Mask R-CNN, SAM (Segment Anything Model, Meta 2023). Vision Transformer (ViT, 2020): apply Transformer to image patches — competitive with CNNs. Multimodal: CLIP (OpenAI 2021) learns joint image-text embeddings.
+
+## Further Reading
+
+- [Computer Vision: Algorithms and Applications (2nd Ed, Szeliski)](https://szeliski.org/Book/)
+

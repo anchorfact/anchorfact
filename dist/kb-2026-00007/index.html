@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Reinforcement Learning from Human Feedback (RLHF) — AnchorFact</title></head>
+<body><article><br>
+## TL;DR<br>
+<br>
+RLHF (Reinforcement Learning from Human Feedback) is a technique for aligning AI models with human preferences by using human feedback as a reward signal for reinforcement learning. First demonstrated for Atari games and robotics (Christiano et al., 2017), RLHF became the standard alignment method for production LLMs with OpenAI's InstructGPT (2022), which showed that models fine-tuned with RLHF produce more helpful, harmless, and honest outputs than those trained with supervised fine-tuning alone. As of 2026, RLHF is used by virtually all major LLM providers.<br>
+<br>
+## Core Explanation<br>
+<br>
+RLHF trains a language model in three stages:<br>
+<br>
+1. **Supervised Fine-Tuning (SFT)** : Human labelers write ideal responses for a diverse set of prompts. The base model is fine-tuned on these prompt-response pairs.<br>
+<br>
+2. **Reward Model (RM) Training** : Human labelers rank multiple model-generated responses for the same prompt from best to worst. A reward model is trained to predict these human preference rankings — essentially learning "what humans consider a good response."<br>
+<br>
+3. **PPO Reinforcement Learning**: The SFT model is further optimized using Proximal Policy Optimization (PPO) against the reward model. The model generates responses, the RM scores them, and PPO updates the policy to maximize the reward while staying close to the SFT baseline.<br>
+<br>
+The result is a model that internalizes human preferences about helpfulness, harmlessness, and honesty — without requiring humans to explicitly specify every desired behavior.<br>
+<br>
+## Detailed Analysis<br>
+<br>
+### Why SFT Alone Is Not Enough<br>
+<br>
+Supervised fine-tuning teaches a model to mimic ideal responses, but has key limitations:<br>
+- Human labelers can only write a finite number of examples, leaving distribution gaps<br>
+- Models may produce plausible but subtly unhelpful outputs in new situations<br>
+- SFT does not directly optimize for safety properties like refusing harmful requests<br>
+<br>
+RLHF addresses these by training the model to optimize a learned reward signal that generalizes human preferences to unseen situations.<br>
+<br>
+### The Alignment Tax<br>
+<br>
+RLHF introduces a well-documented trade-off: aligned models perform slightly worse on academic benchmarks than their base counterparts. For example, InstructGPT showed a 1-2% regression on certain NLP benchmarks compared to GPT-3. This "alignment tax" represents the cost of making models safer and more useful at the expense of raw capability.<br>
+<br>
+Research by Anthropic (Constitutional AI, 2023) and others has worked to minimize this tax by using AI-generated feedback to supplement human labels.<br>
+<br>
+### Key Variants<br>
+<br>
+| Method | Description | Advantages |<br>
+|--------|------------|-----------|<br>
+| **Standard RLHF** (OpenAI) | Human labelers rank responses | Gold standard for quality |<br>
+| **Constitutional AI** (Anthropic) | AI critiques its own outputs against a written constitution | Scalable, reduces human labeling cost |<br>
+| **Direct Preference Optimization (DPO)** | Bypasses explicit reward model training | Simpler, competitive performance |<br>
+| **Reinforcement Learning from AI Feedback (RLAIF)** | AI ranks responses instead of humans | Scalable to more domains |<br>
+<br>
+### Production Adoption<br>
+<br>
+RLHF is the alignment backbone for most frontier LLMs:<br>
+- **ChatGPT / GPT-4 / GPT-5** (OpenAI): Standard RLHF with professional human labelers<br>
+- **Claude** (Anthropic): Constitutional AI — AI self-critique against harmlessness principles<br>
+- **Gemini** (Google DeepMind): RLHF with diverse rater populations across 100+ languages<br>
+- **LLaMA 3 / 4** (Meta): RLHF + DPO for open-weight models<br>
+- **Grok** (xAI): RLHF with real-time data from X/Twitter<br>
+<br>
+## Further Reading<br>
+<br>
+- [InstructGPT Paper](https://arxiv.org/abs/2203.02155): Training language models to follow instructions<br>
+- [Constitutional AI](https://arxiv.org/abs/2212.08073): Anthropic's self-alignment approach<br>
+- [Direct Preference Optimization](https://arxiv.org/abs/2305.18290): Simpler alternative to RLHF<br>
+</article></body>
+</html>

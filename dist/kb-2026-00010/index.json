@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00010",
+  "headline": "Mixture of Experts (MoE)",
+  "description": "Mixture of Experts (MoE) is a neural network architecture that divides a model into multiple specialized \"expert\" sub-networks, with a learned gating mechanism routing each input token to only a subset of experts. This enables models with trillions of total parameters while keeping inference cost proportional to a much smaller \"active\" parameter count. GPT-4 reportedly uses MoE with 8 experts per layer and approximately 1.76 trillion total parameters but only ~280 billion active per forward pass. MoE is the dominant architecture for frontier-scale models as of 2026.",
+  "dateCreated": "2026-05-22T09:02:12.105Z",
+  "dateModified": "2026-05-22T09:02:12.105Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

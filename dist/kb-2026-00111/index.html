@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>HTTPS/TLS — AnchorFact</title></head>
+<body><article><br>
+## TL;DR<br>
+<br>
+HTTPS (HTTP over TLS) encrypts HTTP traffic between client and server, providing confidentiality (encryption), integrity (tamper detection), and authentication (server identity via certificates). TLS 1.3 (RFC 8446, 2018) reduced the handshake from 2-RTT to 1-RTT (0-RTT on resumption) and removed obsolete algorithms.<br>
+<br>
+## Core Explanation<br>
+<br>
+TLS handshake: ClientHello → ServerHello + Certificate → Key exchange (ECDHE) → Finished. Certificates (X.509) are issued by Certificate Authorities (CAs) and contain the domain name, public key, validity period. Modern TLS 1.3 supports only AEAD ciphers (AES-GCM, ChaCha20-Poly1305). HSTS (`Strict-Transport-Security` header) forces HTTPS usage.<br>
+<br>
+## Further Reading<br>
+<br>
+- [undefined](undefined)<br>
+</article></body>
+</html>

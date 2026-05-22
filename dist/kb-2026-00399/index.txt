@@ -1,0 +1,18 @@
+# Mayan Civilization
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+The Maya civilization (2000 BCE - 1500s CE) in Central America developed the most sophisticated writing system in the pre-Columbian Americas, advanced mathematics (concept of zero!), accurate astronomical calendars, and monumental architecture (Chichen Itza, Tikal). Classic Period: 250-900 CE.
+
+## Core Explanation
+
+Achievements: concept of zero independently developed, accurate solar year (365.242 days), complex hieroglyphic writing (deciphered 1980s). Calendar: 260-day ritual + 365-day solar = 52-year Calendar Round. Long Count calendar: marked time from creation. Classic Maya collapse (~900 CE): likely multi-cause — overpopulation, drought, warfare, environmental degradation. Millions of Maya people survive today.
+
+## Further Reading
+
+- [The Maya (Michael D. Coe, 9th Ed)](https://thamesandhudson.com/the-maya-9780500291887)
+

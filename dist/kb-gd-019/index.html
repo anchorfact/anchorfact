@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>游戏测试方法论 — AnchorFact</title></head>
+<body><article><br>
+# 游戏测试方法论<br>
+<br>
+## 概述<br>
+<br>
+游戏测试是确保游戏质量、发现和修复缺陷、验证设计意图的关键环节。与传统软件测试不同，游戏测试需要关注"乐趣"、"手感"和"平衡性"等主观指标。<br>
+<br>
+---<br>
+<br>
+## 1. 游戏测试类型<br>
+<br>
+### 1.1 功能测试（Functional Testing）<br>
+<br>
+验证游戏功能是否按设计工作：<br>
+<br>
+| 测试项 | 说明 | 方法 |<br>
+|--------|------|------|<br>
+| **单元测试** | 测试单个函数/类 | 自动化 |<br>
+| **集成测试** | 测试模块间交互 | 自动化 + 手动 |<br>
+| **系统测试** | 测试完整功能链 | 手动 |<br>
+| **回归测试** | 验证修复未引入新问题 | 自动化 |<br>
+<br>
+```csharp<br>
+// Unity 功能测试示例（Unity Test Framework）<br>
+using NUnit.Framework;<br>
+using UnityEngine;<br>
+using UnityEngine.TestTools;<br>
+<br>
+public class PlayerMovementTests<br>
+{<br>
+    [Test]<br>
+    public void Player_MovesForward_WhenWKeyPressed()<br>
+    {<br>
+        // Arrange<br>
+        var player = new GameObject().AddComponent<PlayerController>();<br>
+        player.transform.position = Vector3.zero;<br>
+        <br>
+        // Act<br>
+        player.Move(Vector3.forward);<br>
+        <br>
+        // Assert<br>
+        Assert.Greater(player.transform.position.z, 0);<br>
+    }<br>
+    <br>
+    [Test]<br>
+    public void Player_TakesDamage_ReducesHealth()<br>
+    {<br>
+        // Arrange<br>
+        var player = new GameObject().AddComponent<PlayerHealth>();<br>
+        player.MaxHealth = 100;<br>
+        player.CurrentHealth = 100;<br>
+        <br>
+        // Act<br>
+        player.TakeDamage(25);<br>
+        <br>
+        // Assert<br>
+        Assert.AreEqual(75, player.CurrentHealth);<br>
+    }<br>
+    <br>
+    [UnityTest]<br>
+    public IEnumerator Player_Dies_WhenHealthReachesZero()<br>
+    {<br>
+        // Arrange<br>
+        var player = new GameObject().AddComponent<PlayerHealth>();<br>
+        player.MaxHealth = 100;<br>
+        player.CurrentHealth = 10;<br>
+        <br>
+        // Act<br>
+        player.TakeDamage(10);<br>
+        <br>
+        // Wait for frame<br>
+        yield return null;<br>
+        <br>
+        // Assert<br>
+        Assert.IsTrue(player.IsDead);<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 1.2 兼容性测试（Compatibility Testing）<br>
+<br>
+验证游戏在不同环境下的表现：<br>
+<br>
+| 维度 | 测试内容 |<br>
+|------|----------|<br>
+| **硬件** | GPU、CPU、内存、存储 |<br>
+| **操作系统** | Windows、macOS、Linux、iOS、Android |<br>
+| **分辨率** | 从 720p 到 4K+ |<br>
+| **输入设备** | 键鼠、手柄、触屏、体感 |<br>
+| **网络** | WiFi、4G/5G、弱网、断网 |<br>
+<br>
+### 1.3 性能测试（Performance Testing）<br>
+<br>
+验证游戏性能是否达标：<br>
+<br>
+| 指标 | 目标（60fps） | 目标（30fps） |<br>
+|------|--------------|---------------|<br>
+| **帧率（FPS）** | > 60 | > 30 |<br>
+| **帧时间（Frame Time）** | < 16.67ms | < 33.33ms |<br>
+| **CPU 时间** | < 10ms | < 20ms |<br>
+| **GPU 时间** | < 16ms | < 33ms |<br>
+| **内存占用** | < 预算 | < 预算 |<br>
+| **加载时间** | < 3s（关卡） | < 5s |<br>
+<br>
+### 1.4 平衡性测试（Balance Testing）<br>
+<br>
+验证游戏数值设计的合理性：<br>
+<br>
+- 武器/角色/技能的强度对比<br>
+- 经济系统是否健康（通胀/通缩）<br>
+- 难度曲线是否合理<br>
+- 不同策略的有效性<br>
+<br>
+### 1.5 可用性测试（Usability Testing）<br>
+<br>
+验证玩家能否理解和使用游戏功能：<br>
+<br>
+- 教程清晰度<br>
+- UI 直观性<br>
+- 操作响应性<br>
+- 反馈明确性<br>
+<br>
+---<br>
+<br>
+## 2. 自动化测试<br>
+<br>
+### 2.1 单元测试框架<br>
+<br>
+| 引擎 | 框架 | 特点 |<br>
+|------|------|------|<br>
+| **Unity** | Unity Test Framework (NUnit) | 集成编辑器，支持 Play Mode 测试 |<br>
+| **Unreal** | Automation Test Framework | 内置，支持功能测试和性能测试 |<br>
+| **Godot** | GUT (Godot Unit Test) | 第三方，GDScript 测试 |<br>
+| **通用** | Google Test (C++) | 跨平台，功能强大 |<br>
+<br>
+### 2.2 自动化测试策略<br>
+<br>
+```csharp<br>
+// 自动化战斗系统测试<br>
+[TestFixture]<br>
+public class CombatSystemTests<br>
+{<br>
+    [TestCase(100, 20, ExpectedResult = 80)]<br>
+    [TestCase(50, 100, ExpectedResult = 0)]<br>
+    [TestCase(0, 10, ExpectedResult = 0)]<br>
+    public int DamageCalculation_ReducesHealthCorrectly(int currentHealth, int damage)<br>
+    {<br>
+        var health = new HealthComponent(currentHealth);<br>
+        health.TakeDamage(damage);<br>
+        return health.CurrentHealth;<br>
+    }<br>
+    <br>
+    [Test]<br>
+    public void CriticalHit_DoublesDamage_WhenCritChance100()<br>
+    {<br>
+        var attacker = new CombatStats { Attack = 10, CritChance = 1.0f, CritMultiplier = 2.0f };<br>
+        var defender = new CombatStats { Defense = 0 };<br>
+        <br>
+        var damage = DamageCalculator.Calculate(attacker, defender, isCrit: true);<br>
+        <br>
+        Assert.AreEqual(20, damage); // 10 * 2 = 20<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 2.3 自动化 UI 测试<br>
+<br>
+```csharp<br>
+// Unity 自动化 UI 测试<br>
+[Test]<br>
+public void InventoryUI_Opens_WhenIPressed()<br>
+{<br>
+    // 模拟按键<br>
+    InputSystem.QueueStateEvent(keyboard, new KeyboardState(Key.I));<br>
+    InputSystem.Update();<br>
+    <br>
+    // 等待一帧<br>
+    yield return null;<br>
+    <br>
+    // 验证 UI 状态<br>
+    Assert.IsTrue(inventoryPanel.activeSelf);<br>
+}<br>
+```<br>
+<br>
+### 2.4 回归测试自动化<br>
+<br>
+```yaml<br>
+# CI/CD 中的自动化测试流程（GitHub Actions 示例）<br>
+name: Game Tests<br>
+<br>
+on: [push, pull_request]<br>
+<br>
+jobs:<br>
+  test:<br>
+    runs-on: ubuntu-latest<br>
+    steps:<br>
+      - uses: actions/checkout@v3<br>
+      <br>
+      - name: Setup Unity<br>
+        uses: game-ci/unity-test-runner@v3<br>
+        with:<br>
+          unityVersion: 2022.3.20f1<br>
+          testMode: all<br>
+          <br>
+      - name: Upload Test Results<br>
+        uses: actions/upload-artifact@v3<br>
+        with:<br>
+          name: Test Results<br>
+          path: artifacts<br>
+```<br>
+<br>
+---<br>
+<br>
+## 3. 玩家测试<br>
+<br>
+### 3.1 测试阶段<br>
+<br>
+| 阶段 | 参与者 | 目的 | 规模 |<br>
+|------|--------|------|------|<br>
+| **内部测试** | 开发团队 | 基础功能验证 | 10-50人 |<br>
+| **Alpha 测试** | 内部 + 少量外部 | 核心玩法验证 | 50-200人 |<br>
+| **Beta 测试** | 目标玩家群体 | 平衡性、稳定性 | 1000-10000人 |<br>
+| **公测** | 广大玩家 | 服务器压力、最终调优 | 无限制 |<br>
+<br>
+### 3.2 焦点小组（Focus Group）<br>
+<br>
+**组织流程**：<br>
+1. 招募目标玩家（6-10人）<br>
+2. 设计测试任务（30-60分钟）<br>
+3. 观察并记录行为<br>
+4. 访谈收集反馈<br>
+5. 分析并生成报告<br>
+<br>
+**观察重点**：<br>
+- 玩家在哪里卡住<br>
+- 玩家是否理解教程<br>
+- 玩家的情绪变化<br>
+- 意外的玩法行为<br>
+<br>
+### 3.3 A/B 测试<br>
+<br>
+```csharp<br>
+// A/B 测试实现示例<br>
+public class ABTestManager : MonoBehaviour<br>
+{<br>
+    public static string GetTestGroup(string testId)<br>
+    {<br>
+        // 基于玩家 ID 哈希分组<br>
+        string playerId = GetPlayerId();<br>
+        int hash = playerId.GetHashCode();<br>
+        return (hash % 2 == 0) ? "A" : "B";<br>
+    }<br>
+    <br>
+    public static void ApplyDifficultyTest()<br>
+    {<br>
+        string group = GetTestGroup("difficulty_v2");<br>
+        <br>
+        if (group == "A")<br>
+        {<br>
+            // 对照组：当前难度<br>
+            GameBalance.EnemyHealthMultiplier = 1.0f;<br>
+        }<br>
+        else<br>
+        {<br>
+            // 实验组：降低 10%<br>
+            GameBalance.EnemyHealthMultiplier = 0.9f;<br>
+        }<br>
+        <br>
+        // 记录分组<br>
+        Analytics.LogEvent("ab_test_group", new Dictionary<string, object><br>
+        {<br>
+            { "test_id", "difficulty_v2" },<br>
+            { "group", group }<br>
+        });<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 3.4 遥测分析（Telemetry）<br>
+<br>
+**关键指标**：<br>
+<br>
+| 指标 | 说明 | 健康值 |<br>
+|------|------|--------|<br>
+| **留存率（Retention）** | D1/D7/D30 回流比例 | D1 > 40%, D7 > 20% |<br>
+| **会话时长** | 平均每次游戏时间 | 10-30 分钟 |<br>
+| **关卡完成率** | 完成关卡的玩家比例 | > 80%（前5关） |<br>
+| **流失点** | 玩家退出游戏的节点 | 识别并优化 |<br>
+| **付费转化** | 免费→付费的玩家比例 | 2-5% |<br>
+<br>
+---<br>
+<br>
+## 4. 性能测试工具与方法<br>
+<br>
+### 4.1 Unity Profiler<br>
+<br>
+```csharp<br>
+// 自定义性能标记<br>
+public class PerformanceMarkers : MonoBehaviour<br>
+{<br>
+    private CustomSampler pathfindingSampler;<br>
+    <br>
+    void Start()<br>
+    {<br>
+        pathfindingSampler = CustomSampler.Create("Pathfinding");<br>
+    }<br>
+    <br>
+    void Update()<br>
+    {<br>
+        pathfindingSampler.Begin();<br>
+        <br>
+        // 路径寻找代码<br>
+        var path = FindPath(start, end);<br>
+        <br>
+        pathfindingSampler.End();<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 4.2 性能分析检查清单<br>
+<br>
+| 检查项 | 工具 | 目标 |<br>
+|--------|------|------|<br>
+| **CPU 热点** | Profiler | 找出耗时函数 |<br>
+| **GPU 瓶颈** | Frame Debugger | 分析 Draw Call 和着色器 |<br>
+| **内存泄漏** | Memory Profiler | 检测未释放的对象 |<br>
+| **纹理内存** | Texture Profiler | 优化纹理大小和格式 |<br>
+| **音频内存** | Audio Profiler | 优化音频加载策略 |<br>
+| **网络延迟** | Network Profiler | 优化同步频率 |<br>
+<br>
+### 4.3 帧分析流程<br>
+<br>
+```<br>
+1. 捕获一帧的 GPU 工作负载<br>
+2. 分析每个渲染通道的耗时<br>
+3. 识别瓶颈（顶点/片元/带宽）<br>
+4. 针对性优化<br>
+5. 验证优化效果<br>
+```<br>
+<br>
+---<br>
+<br>
+## 5. 平衡性测试<br>
+<br>
+### 5.1 数学模型验证<br>
+<br>
+```csharp<br>
+// 战斗平衡性模拟<br>
+public class CombatBalanceSimulator<br>
+{<br>
+    public static SimulationResult Simulate(WeaponConfig weapon, EnemyConfig enemy, int iterations = 1000)<br>
+    {<br>
+        var results = new List<float>();<br>
+        <br>
+        for (int i = 0; i < iterations; i++)<br>
+        {<br>
+            float timeToKill = SimulateCombat(weapon, enemy);<br>
+            results.Add(timeToKill);<br>
+        }<br>
+        <br>
+        return new SimulationResult<br>
+        {<br>
+            AverageTimeToKill = results.Average(),<br>
+            MinTimeToKill = results.Min(),<br>
+            MaxTimeToKill = results.Max(),<br>
+            StandardDeviation = CalculateStdDev(results)<br>
+        };<br>
+    }<br>
+    <br>
+    public static void CompareWeapons(List<WeaponConfig> weapons, EnemyConfig enemy)<br>
+    {<br>
+        Console.WriteLine("武器平衡性对比：");<br>
+        Console.WriteLine($"{'武器',-15} {'平均击杀时间',-15} {'标准差',-10} {'DPS',-10}");<br>
+        <br>
+        foreach (var weapon in weapons)<br>
+        {<br>
+            var result = Simulate(weapon, enemy);<br>
+            float dps = enemy.Health / result.AverageTimeToKill;<br>
+            <br>
+            Console.WriteLine($"{weapon.Name,-15} {result.AverageTimeToKill:F2}s{'',-10} {result.StandardDeviation:F2}{'',-5} {dps:F1}");<br>
+        }<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 5.2 经济系统模拟<br>
+<br>
+```python<br>
+# 经济系统平衡性模拟<br>
+import random<br>
+import matplotlib.pyplot as plt<br>
+<br>
+def simulate_economy(days=30, players=1000):<br>
+    """模拟游戏经济系统运行"""<br>
+    <br>
+    # 初始状态<br>
+    total_currency = 0<br>
+    daily_data = []<br>
+    <br>
+    for day in range(days):<br>
+        daily_income = 0<br>
+        daily_spending = 0<br>
+        <br>
+        for player in range(players):<br>
+            # 每日任务收入<br>
+            daily_income += random.randint(80, 120)<br>
+            <br>
+            # 副本掉落<br>
+            if random.random() < 0.7:  # 70% 参与率<br>
+                daily_income += random.randint(50, 200)<br>
+            <br>
+            # 消费（修理、传送等）<br>
+            daily_spending += random.randint(10, 30)<br>
+            <br>
+            # 交易税（5%）<br>
+            if random.random() < 0.3:  # 30% 参与交易<br>
+                trade_amount = random.randint(100, 1000)<br>
+                daily_spending += trade_amount * 0.05<br>
+        <br>
+        net_change = daily_income - daily_spending<br>
+        total_currency += net_change<br>
+        <br>
+        daily_data.append({<br>
+            'day': day,<br>
+            'income': daily_income,<br>
+            'spending': daily_spending,<br>
+            'net': net_change,<br>
+            'total': total_currency<br>
+        })<br>
+    <br>
+    return daily_data<br>
+<br>
+# 运行模拟并分析通胀<br>
+data = simulate_economy()<br>
+total_currency = [d['total'] for d in data]<br>
+<br>
+# 判断通胀<br>
+inflation_rate = (total_currency[-1] - total_currency[0]) / total_currency[0]<br>
+print(f"总货币增长率: {inflation_rate*100:.1f}%")<br>
+print(f"日均通胀率: {inflation_rate/30*100:.2f}%")<br>
+<br>
+if inflation_rate > 0.5:  # 30天增长超过50%<br>
+    print("警告：检测到严重通胀，需要增加货币回收机制")<br>
+elif inflation_rate > 0.2:<br>
+    print("注意：轻微通胀，建议监控")<br>
+else:<br>
+    print("经济系统健康")<br>
+```<br>
+<br>
+### 5.3 玩家数据驱动平衡<br>
+<br>
+```sql<br>
+-- 分析武器使用率和胜率（SQL 示例）<br>
+SELECT <br>
+    weapon_id,<br>
+    weapon_name,<br>
+    COUNT(*) as usage_count,<br>
+    AVG(CASE WHEN player_won THEN 1.0 ELSE 0.0 END) as win_rate,<br>
+    AVG(damage_dealt) as avg_damage,<br>
+    AVG(kills) as avg_kills,<br>
+    AVG(deaths) as avg_deaths,<br>
+    AVG(kills) / NULLIF(AVG(deaths), 0) as kdr<br>
+FROM match_data<br>
+WHERE match_date >= CURRENT_DATE - INTERVAL '7 days'<br>
+GROUP BY weapon_id, weapon_name<br>
+ORDER BY usage_count DESC;<br>
+```<br>
+<br>
+---<br>
+<br>
+## 6. Bug 管理流程<br>
+<br>
+### 6.1 Bug 分类<br>
+<br>
+| 严重程度 | 说明 | 示例 | 修复时限 |<br>
+|----------|------|------|----------|<br>
+| **P0 - 致命** | 导致崩溃/数据丢失 | 游戏崩溃、存档损坏 | 24小时 |<br>
+| **P1 - 严重** | 核心功能不可用 | 无法进入游戏、任务卡死 | 3天 |<br>
+| **P2 - 中等** | 功能异常但可绕过 | UI 显示错误、音效缺失 | 1周 |<br>
+| **P3 - 轻微** | 视觉/体验问题 | 文字错误、贴图闪烁 | 下个版本 |<br>
+| **P4 - 建议** | 优化建议 | 交互改进、性能优化 | 排期评估 |<br>
+<br>
+### 6.2 Bug 报告模板<br>
+<br>
+```markdown<br>
+## Bug 报告<br>
+<br>
+**标题**: [简明描述]<br>
+**严重程度**: P0/P1/P2/P3/P4<br>
+**模块**: [系统/功能]<br>
+**版本**: [游戏版本]<br>
+**平台**: [Windows/iOS/Android/Console]<br>
+<br>
+### 复现步骤<br>
+1. [步骤1]<br>
+2. [步骤2]<br>
+3. [步骤3]<br>
+<br>
+### 期望结果<br>
+[应该发生什么]<br>
+<br>
+### 实际结果<br>
+[实际发生什么]<br>
+<br>
+### 附加信息<br>
+- 截图/录像<br>
+- 日志文件<br>
+- 设备信息<br>
+```<br>
+<br>
+### 6.3 回归验证<br>
+<br>
+```csharp<br>
+// 自动化回归测试示例<br>
+[Test]<br>
+public void Bug_1234_Fixed_PlayerCanNowCompleteQuest()<br>
+{<br>
+    // 这是针对特定 Bug 的回归测试<br>
+    // 确保修复后不会再次引入<br>
+    <br>
+    // 设置 Bug 发生时的条件<br>
+    var player = CreatePlayer(level: 5);<br>
+    var quest = GetQuest("main_quest_3");<br>
+    <br>
+    // 执行导致 Bug 的操作<br>
+    player.AcceptQuest(quest);<br>
+    player.CompleteObjective(quest, "find_item");<br>
+    <br>
+    // 验证 Bug 已修复<br>
+    Assert.IsTrue(quest.CanComplete);<br>
+    Assert.DoesNotThrow(() => player.CompleteQuest(quest));<br>
+}<br>
+```<br>
+<br>
+---<br>
+<br>
+## 7. 持续集成/持续交付（CI/CD）<br>
+<br>
+### 7.1 游戏 CI/CD 流水线<br>
+<br>
+```yaml<br>
+# 游戏 CI/CD 配置示例<br>
+stages:<br>
+  - build<br>
+  - test<br>
+  - deploy<br>
+<br>
+build_windows:<br>
+  stage: build<br>
+  script:<br>
+    - unity -batchmode -nographics -buildTarget Win64 -executeMethod BuildScript.BuildWindows<br>
+  artifacts:<br>
+    paths:<br>
+      - builds/windows/<br>
+<br>
+build_android:<br>
+  stage: build<br>
+  script:<br>
+    - unity -batchmode -nographics -buildTarget Android -executeMethod BuildScript.BuildAndroid<br>
+  artifacts:<br>
+    paths:<br>
+      - builds/android/<br>
+<br>
+run_tests:<br>
+  stage: test<br>
+  script:<br>
+    - unity -batchmode -runTests -testPlatform EditMode<br>
+    - unity -batchmode -runTests -testPlatform PlayMode<br>
+  dependencies:<br>
+    - build_windows<br>
+<br>
+deploy_staging:<br>
+  stage: deploy<br>
+  script:<br>
+    - upload_to_staging builds/windows/<br>
+  only:<br>
+    - develop<br>
+<br>
+deploy_production:<br>
+  stage: deploy<br>
+  script:<br>
+    - upload_to_store builds/windows/<br>
+    - upload_to_store builds/android/<br>
+  only:<br>
+    - main<br>
+  when: manual<br>
+```<br>
+<br>
+### 7.2 自动化构建脚本<br>
+<br>
+```csharp<br>
+// Unity 自动化构建脚本<br>
+public static class BuildScript<br>
+{<br>
+    [MenuItem("Build/Build All Platforms")]<br>
+    public static void BuildAll()<br>
+    {<br>
+        BuildWindows();<br>
+        BuildAndroid();<br>
+        BuildiOS();<br>
+    }<br>
+    <br>
+    public static void BuildWindows()<br>
+    {<br>
+        BuildPlayerOptions options = new BuildPlayerOptions<br>
+        {<br>
+            scenes = GetEnabledScenes(),<br>
+            locationPathName = "Builds/Windows/Game.exe",<br>
+            target = BuildTarget.StandaloneWindows64,<br>
+            options = BuildOptions.None<br>
+        };<br>
+        <br>
+        BuildPipeline.BuildPlayer(options);<br>
+    }<br>
+    <br>
+    public static void BuildAndroid()<br>
+    {<br>
+        BuildPlayerOptions options = new BuildPlayerOptions<br>
+        {<br>
+            scenes = GetEnabledScenes(),<br>
+            locationPathName = "Builds/Android/Game.apk",<br>
+            target = BuildTarget.Android,<br>
+            options = BuildOptions.None<br>
+        };<br>
+        <br>
+        BuildPipeline.BuildPlayer(options);<br>
+    }<br>
+    <br>
+    static string[] GetEnabledScenes()<br>
+    {<br>
+        return EditorBuildSettings.scenes<br>
+            .Where(s => s.enabled)<br>
+            .Select(s => s.path)<br>
+            .ToArray();<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 7.3 版本管理<br>
+<br>
+| 版本格式 | 说明 | 示例 |<br>
+|----------|------|------|<br>
+| **Semantic Versioning** | 主版本.次版本.补丁 | 1.2.3 |<br>
+| **Build Number** | 构建计数 | 1.2.3.4567 |<br>
+| **Git Hash** | 提交哈希 | 1.2.3-a1b2c3d |<br>
+<br>
+---<br>
+<br>
+## 8. 测试团队组织<br>
+<br>
+### 8.1 团队结构<br>
+<br>
+```<br>
+QA 负责人<br>
+├── 功能测试组<br>
+│   ├── 战斗系统测试<br>
+│   ├── 经济系统测试<br>
+│   └── UI/UX 测试<br>
+├── 性能测试组<br>
+│   ├── 帧率测试<br>
+│   ├── 内存测试<br>
+│   └── 网络测试<br>
+├── 自动化测试组<br>
+│   ├── 单元测试维护<br>
+│   ├── 集成测试开发<br>
+│   └── CI/CD 维护<br>
+└── 玩家测试组<br>
+    ├── 焦点小组组织<br>
+    ├── Beta 测试管理<br>
+    └── 反馈分析<br>
+```<br>
+<br>
+### 8.2 测试计划模板<br>
+<br>
+```markdown<br>
+# [版本号] 测试计划<br>
+<br>
+## 范围<br>
+- 新增功能：[列表]<br>
+- 修改功能：[列表]<br>
+- 修复 Bug：[列表]<br>
+<br>
+## 测试策略<br>
+- 功能测试：[范围]<br>
+- 性能测试：[目标]<br>
+- 兼容性测试：[平台列表]<br>
+<br>
+## 时间表<br>
+- 测试开始：[日期]<br>
+- 测试结束：[日期]<br>
+- 修复窗口：[日期范围]<br>
+<br>
+## 通过标准<br>
+- 无 P0/P1 Bug<br>
+- 性能达标<br>
+- 所有测试用例通过<br>
+```<br>
+<br>
+---<br>
+<br>
+## 9. 测试检查清单<br>
+<br>
+### 9.1 发布前检查<br>
+<br>
+- [ ] 所有 P0/P1 Bug 已修复<br>
+- [ ] 性能测试达标（目标平台）<br>
+- [ ] 兼容性测试通过<br>
+- [ ] 平衡性验证完成<br>
+- [ ] 教程和新手流程测试<br>
+- [ ] 存档/读档功能验证<br>
+- [ ] 网络同步测试（多人游戏）<br>
+- [ ] 支付流程测试（F2P）<br>
+- [ ] 本地化检查<br>
+- [ ] 年龄分级内容检查<br>
+<br>
+### 9.2 日常测试<br>
+<br>
+- [ ] 每日构建验证<br>
+- [ ] 自动化测试运行<br>
+- [ ] 新功能测试<br>
+- [ ] 回归测试<br>
+- [ ] 性能监控<br>
+<br>
+---<br>
+<br>
+## 参考来源<br>
+<br>
+- Unity Test Framework 官方文档<br>
+- Unreal Automation Testing 官方文档<br>
+- 《Game Testing》— Charles Schultz<br>
+- GDC 演讲：《Automated Testing at Riot Games》<br>
+- GDC 演讲：《Data-Driven Balance in Overwatch》<br>
+- ISTQB 游戏测试认证教材<br>
+</article></body>
+</html>

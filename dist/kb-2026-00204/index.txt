@@ -1,0 +1,18 @@
+# Discrete Mathematics
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+Discrete mathematics studies countable, distinct (not continuous) structures. It is the mathematical foundation of computer science — covering logic, sets, combinatorics, graph theory, and number theory. Unlike calculus (continuous), discrete math deals with integers, graphs, and logical statements.
+
+## Core Explanation
+
+Combinatorics: counting, permutations (P(n,k) = n!/(n-k)!), combinations (C(n,k) = n!/(k!(n-k)!)). Pigeonhole Principle: if n items in m containers and n > m, at least one container has ≥2 items. Proof techniques: direct, contrapositive, contradiction, induction. Induction: prove base case P(1), then P(k) → P(k+1).
+
+## Further Reading
+
+- [undefined](undefined)
+

@@ -1,0 +1,18 @@
+# Test-Driven Development (TDD)
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+TDD (Kent Beck, 2002) is a development practice: write a failing test → write minimum code to pass → refactor. Red-Green-Refactor cycle. TDD ensures testability, drives design toward small, loosely coupled units, and provides a regression safety net. Not about testing — it's about design.
+
+## Core Explanation
+
+Red: write test, run, see it fail (confirms test catches failures). Green: write minimum code to pass test — no more. Refactor: clean up code while tests stay green. Benefits: 40-80% fewer bugs in production (IBM/Microsoft studies), confidence to refactor, living documentation. Outside-in TDD (mockist/Detroit school) vs. Inside-out TDD (classicist/London school).
+
+## Further Reading
+
+- [Test-Driven Development: By Example (Kent Beck)](undefined)
+

@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00420",
+  "headline": "Stretching and Flexibility",
+  "description": "Stretching improves range of motion, reduces injury risk, and relieves muscle tension. Types: static (hold stretch 15-60s), dynamic (controlled movement), PNF (contract-relax). Dynamic stretching before exercise; static stretching after. Flexibility decreases with age; regular stretching maintains it.",
+  "dateCreated": "2026-05-22T09:02:12.682Z",
+  "dateModified": "2026-05-22T09:02:12.682Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

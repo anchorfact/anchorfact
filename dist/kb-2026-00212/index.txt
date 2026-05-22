@@ -1,0 +1,18 @@
+# Dropshipping Model
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+Dropshipping is a retail fulfillment method where the store doesn't keep products in stock. Instead, when a sale occurs, the store purchases the item from a third-party supplier who ships directly to the customer. The seller never handles the product — acting as a marketing and customer service layer.
+
+## Core Explanation
+
+Advantages: low upfront investment (no inventory), location independence, easy to test products. Disadvantages: low margins (10-30%), no quality control, shipping times (often from China, 2-4 weeks), supplier reliability issues. Success factors: product research (solving problems, not just cheap), supplier vetting, excellent customer service, brand building.
+
+## Further Reading
+
+- [undefined](undefined)
+

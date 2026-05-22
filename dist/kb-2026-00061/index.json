@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00061",
+  "headline": "Unity Game Engine",
+  "description": "Unity 是 Unity Technologies 开发的跨平台游戏引擎，首次发布于 2005 年。支持 2D/3D 游戏开发，使用 C# 作为脚本语言，构建目标覆盖 25+ 平台（Windows、macOS、iOS、Android、WebGL、主机等）。截至 2026 年，Unity 是全球使用量最大的游戏引擎，超过 50% 的手游使用 Unity 开发。Unity 2022 LTS 是当前推荐的生产版本，Unity 6（2024年发布）是最新一代。",
+  "dateCreated": "2026-05-22T09:02:12.626Z",
+  "dateModified": "2026-05-22T09:02:12.626Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

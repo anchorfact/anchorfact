@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00178",
+  "headline": "Testing Pyramid",
+  "description": "The Testing Pyramid (Mike Cohn) describes the optimal distribution of test types: many fast unit tests at the base, fewer integration tests in the middle, few slow E2E tests at the top. The Anti-Pattern: inverted pyramid (ice cream cone) — many E2E tests, few unit tests.",
+  "dateCreated": "2026-05-22T09:02:12.515Z",
+  "dateModified": "2026-05-22T09:02:12.515Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

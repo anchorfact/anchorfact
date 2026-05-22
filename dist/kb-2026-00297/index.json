@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00297",
+  "headline": "Angular",
+  "description": "Angular (Google, 2016, successor to AngularJS) is a TypeScript-based SPA framework with a complete toolchain: component-based architecture, dependency injection, RxJS for reactivity, CLI, and testing utilities. Angular 17+ (2023) introduced signals, standalone components, and new control flow syntax (@if, @for).",
+  "dateCreated": "2026-05-22T09:02:12.212Z",
+  "dateModified": "2026-05-22T09:02:12.212Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

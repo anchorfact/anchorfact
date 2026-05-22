@@ -1,0 +1,24 @@
+# Go Programming Language
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+Go (Golang) is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson, first released in 2009. It combines the performance of C with the ease of Python — goroutines for concurrency, fast compilation, garbage collection, and a simple syntax. Go powers Docker, Kubernetes, Terraform, Prometheus, and Cloudflare's edge infrastructure. GitHub: 134,013 stars as of May 2026.
+
+## Key Features
+
+- **Goroutines**: Lightweight threads — millions can run concurrently
+- **Channels**: Typed communication between goroutines (`ch := make(chan int)`)
+- **Fast compilation**: Sub-second compile times even for large codebases
+- **Static binaries**: Single executable with no runtime dependencies
+- **Interfaces**: Implicit satisfaction (no `implements` keyword)
+- **Garbage Collection**: Low-latency, concurrent GC
+
+## Further Reading
+
+- [Go Docs](https://go.dev/doc/): Official documentation
+- [Go GitHub](https://github.com/golang/go): Source code (134K+ stars)
+

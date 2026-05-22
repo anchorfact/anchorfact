@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00348",
+  "headline": "European Union",
+  "description": "The European Union is a political and economic union of 27 European countries, founded by the Maastricht Treaty (1993). Successor to the European Coal and Steel Community (1951, Schuman Declaration). Single market (free movement of goods, services, capital, people), common currency (Euro, 20 countries), shared laws.",
+  "dateCreated": "2026-05-22T09:02:12.640Z",
+  "dateModified": "2026-05-22T09:02:12.640Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

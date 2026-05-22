@@ -1,0 +1,18 @@
+# Testing Pyramid
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+The Testing Pyramid (Mike Cohn) describes the optimal distribution of test types: many fast unit tests at the base, fewer integration tests in the middle, few slow E2E tests at the top. The Anti-Pattern: inverted pyramid (ice cream cone) — many E2E tests, few unit tests.
+
+## Core Explanation
+
+Unit tests: test individual functions/components in isolation, milliseconds, run on every commit. Integration tests: test multiple units together (API + DB), seconds. E2E tests: test full user flows through browser (Cypress, Playwright), minutes, run on deploy. Coverage metrics: line, branch, function — 100% coverage ≠ bug-free. Test behavior, not implementation.
+
+## Further Reading
+
+- [Succeeding with Agile (Mike Cohn)](https://www.mountaingoatsoftware.com/books/succeeding-with-agile)
+

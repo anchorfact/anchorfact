@@ -1,0 +1,18 @@
+# CSS Grid
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+CSS Grid provides two-dimensional layout (rows AND columns). `display: grid` enables grid context. `grid-template-columns/rows` define tracks. `fr` unit distributes remaining space. Grid excels at page-level layouts, dashboards, and any design needing both row and column control.
+
+## Core Explanation
+
+`grid-template-areas` enables named visual areas: `header header; sidebar main; footer footer`. `grid-column/grid-row` span items across tracks. `auto-fill/auto-fit` with `minmax()` creates responsive grids without media queries. Subgrid (Level 2) enables nested grids to align with parent grid tracks. Flexbox vs. Grid: Flexbox for components, Grid for page layout.
+
+## Further Reading
+
+- [CSS Grid Layout Module Level 2 (W3C)](https://www.w3.org/TR/css-grid-2/)
+

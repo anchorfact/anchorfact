@@ -1,0 +1,18 @@
+# Federated Learning
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+Federated Learning (FL) trains ML models across decentralized devices holding local data, without centralizing the data. Devices train locally, share only model updates (not raw data) with a central server, which aggregates updates. Used by Google (Gboard keyboard) and Apple for privacy-preserving ML.
+
+## Core Explanation
+
+Federated Averaging (FedAvg): server averages model weights from devices. Challenges: non-IID data (different users have different patterns), communication efficiency (devices on mobile networks), system heterogeneity (different hardware capabilities), privacy guarantees (differential privacy + secure aggregation). FL is a key enabler for privacy-respecting AI on sensitive data (healthcare, finance).
+
+## Further Reading
+
+- [Communication-Efficient Learning of Deep Networks from Decentralized Data (McMahan et al., 2017)](https://arxiv.org/abs/1602.05629)
+

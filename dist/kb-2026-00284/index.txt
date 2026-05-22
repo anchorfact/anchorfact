@@ -1,0 +1,18 @@
+# Attention vs. Self-Attention
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+Attention (Bahdanau 2014) computes relevance between encoder and decoder states — cross-attention. Self-Attention (Vaswani 2017) computes relevance within a single sequence — each position attends to all other positions. Self-attention enables the Transformer to capture long-range dependencies without recurrence.
+
+## Core Explanation
+
+Scaled Dot-Product Attention: Attention(Q,K,V) = softmax(QK^T/√d_k)V. Q=query, K=key, V=value. d_k scaling prevents softmax saturation. Multi-Head Attention: run attention h times in parallel, concatenate outputs — captures different relationship types. Cross-attention: Q from decoder, K,V from encoder. Self-attention: Q,K,V all from same sequence. Causal/Masked self-attention prevents attending to future tokens.
+
+## Further Reading
+
+- [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
+

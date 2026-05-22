@@ -1,0 +1,18 @@
+# SQL Injection
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+SQL Injection is a code injection attack where malicious SQL statements are inserted into application queries through user input. It ranked #3 on the OWASP Top 10 (2021) and can lead to data theft, data loss, and complete system compromise.
+
+## Core Explanation
+
+Prevention: parameterized queries (prepared statements), stored procedures, input validation, least-privilege database accounts. Never concatenate user input into SQL strings — this is the single rule that prevents SQL injection. Use placeholders: SELECT * FROM users WHERE name = ? (MySQL) or $1 (PostgreSQL). ORMs (Prisma, SQLAlchemy) provide parameterized queries by default.
+
+## Further Reading
+
+- [undefined](undefined)
+

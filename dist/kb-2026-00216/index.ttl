@@ -1,0 +1,8 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00216>
+  a schema:TechArticle ;
+  schema:headline "Unreal Engine 5" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .

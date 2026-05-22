@@ -1,0 +1,39 @@
+---
+id:"kb-2026-00417"
+title:"Sleep Hygiene"
+schema_type:"TechArticle"
+category:"health"
+language:"en"
+confidence:"high"
+last_verified:"2026-05-22"
+generation_method:"ai_assisted"
+ai_models:["claude-opus"]
+derived_from_human_seed:true
+primary_sources:
+  - title:"Why We Sleep (Matthew Walker)"
+    type:"book"
+    year:2017
+    url:"https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325"
+    institution:"Scribner"
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+completeness: 0.88
+ai_citations:
+  last_citation_check:"2026-05-22"
+---
+
+## TL;DR
+
+Sleep hygiene encompasses habits promoting consistent, quality sleep. Key practices: consistent sleep/wake times, cool dark quiet room, no screens 1hr before bed, avoid caffeine after 2pm, exercise during day, wind-down routine. Poor sleep hygiene = poor sleep = poor health. Adults: 7-9 hours.
+
+## Core Explanation
+
+Blue light: suppresses melatonin. 20-3-8 rule: no caffeine after 2pm, no alcohol within 3 hours of bed, no exercise within 8 hours. Bedroom temperature: 18-20°C (65-68°F) optimal. Consistency: same wake time daily (even weekends) — more important than same bedtime. Jet lag cure: adjust to destination time immediately, sunlight exposure.
+
+## Further Reading
+
+- [Why We Sleep (Matthew Walker)](https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325)

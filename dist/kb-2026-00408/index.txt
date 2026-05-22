@@ -1,0 +1,18 @@
+# Ancient Greek Literature
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+Homer's Iliad and Odyssey (~8th century BCE) are the foundational texts of Western literature. Iliad: final weeks of Trojan War (Achilles vs. Hector). Odyssey: Odysseus's 10-year journey home from Troy. Both were originally oral poetry, later written down. Greek tragedy (Aeschylus, Sophocles, Euripides) explored human suffering and fate.
+
+## Core Explanation
+
+Iliad themes: rage, honor, mortality. Odyssey: cleverness (polymetis = many-minded), homecoming. Sophocles: Oedipus Rex (fate vs. free will, the perfect tragedy — Aristotle). Euripides: Medea (betrayed wife's revenge). Aeschylus: Oresteia trilogy (justice evolution). Aristotle's Poetics: defined tragedy (catharsis, hamartia, peripeteia). Virgil's Aeneid: Roman response (Aeneas flees Troy, founds Rome).
+
+## Further Reading
+
+- [The Iliad (Homer, ~8th century BCE)](https://www.gutenberg.org/ebooks/2199)
+

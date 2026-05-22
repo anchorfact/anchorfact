@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Notifications API — AnchorFact</title></head>
+<body><article><br>
+## TL;DR<br>
+<br>
+The Notifications API allows web pages to display system-level desktop notifications, even when the page is in the background. Permission must be granted by the user via `Notification.requestPermission()`.<br>
+<br>
+## Core Explanation<br>
+<br>
+`new Notification('Title', { body: '...', icon: '...' })`. The `notificationclick` event handler (in service workers) enables actions when users interact with notifications. Notifications API is distinct from the Push API — notifications are local display; Push API enables server-initiated triggers.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Notifications API Living Standard](https://notifications.spec.whatwg.org/)<br>
+</article></body>
+</html>

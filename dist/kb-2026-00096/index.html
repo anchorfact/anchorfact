@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Intersection Observer API — AnchorFact</title></head>
+<body><article><br>
+## TL;DR<br>
+<br>
+The Intersection Observer API asynchronously observes changes in the visibility of target elements relative to an ancestor viewport. It enables efficient lazy loading, infinite scroll, and visibility-based analytics without polling scroll events.<br>
+<br>
+## Core Explanation<br>
+<br>
+Usage: `new IntersectionObserver(callback, { threshold: 0.1 })`. The callback receives entries with `isIntersecting` and `intersectionRatio`. Multiple thresholds enable graduated visibility detection. `rootMargin` expands/shrinks the observation area. Intersection Observer runs off the main thread and is dramatically more performant than scroll event handlers.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Intersection Observer (W3C)](https://www.w3.org/TR/intersection-observer/)<br>
+</article></body>
+</html>

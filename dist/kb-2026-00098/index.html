@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>ResizeObserver — AnchorFact</title></head>
+<body><article><br>
+## TL;DR<br>
+<br>
+ResizeObserver reports changes to the dimensions of DOM elements (content-box or border-box), replacing polling-based resize detection and `window.resize`-only approaches. It is essential for responsive components and container queries.<br>
+<br>
+## Core Explanation<br>
+<br>
+`new ResizeObserver(entries => { /* entries[0].contentRect */ })`. Different from `element.onresize` which only works on `window`. Observes actual element size changes including those caused by CSS, layout, or content changes. Runs after layout but before paint. Delivery is batched — multiple changes in the same frame are reported together.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Resize Observer (W3C)](https://www.w3.org/TR/resize-observer-1/)<br>
+</article></body>
+</html>

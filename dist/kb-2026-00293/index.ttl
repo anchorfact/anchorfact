@@ -1,0 +1,8 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00293>
+  a schema:TechArticle ;
+  schema:headline "Laravel" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .

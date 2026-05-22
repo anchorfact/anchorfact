@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00369",
+  "headline": "Continental Drift",
+  "description": "Continental drift (Wegener, 1912) proposed that continents were once joined in a supercontinent (Pangaea) and drifted apart. Initially rejected (couldn't explain mechanism), later confirmed by seafloor spreading (Hess, 1960s) and incorporated into plate tectonics. Coastline fit of South America and Africa was Wegener's first clue.",
+  "dateCreated": "2026-05-22T09:02:12.760Z",
+  "dateModified": "2026-05-22T09:02:12.760Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

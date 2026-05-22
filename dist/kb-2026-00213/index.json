@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00213",
+  "headline": "Private Label Products",
+  "description": "Private label products are manufactured by a third party but sold under the retailer's own brand. Amazon private label: source products from manufacturers (usually in China via Alibaba), customize with your branding/packaging, and sell on Amazon under your own brand. Requires trademark registration for Amazon Brand Registry.",
+  "dateCreated": "2026-05-22T09:02:12.193Z",
+  "dateModified": "2026-05-22T09:02:12.193Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

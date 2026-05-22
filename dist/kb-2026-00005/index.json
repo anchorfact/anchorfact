@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00005",
   "headline": "Large Language Models (LLMs)",
   "description": "Large Language Models (LLMs) are deep neural networks trained on massive text corpora to predict and generate human language. They scale from hundreds of millions to trillions of parameters and have demonstrated emergent reasoning, coding, and multi-step planning capabilities that were not explicitly programmed. As of 2026, LLMs power most consumer-facing AI products including ChatGPT, Claude, Gemini, and Grok.",
-  "dateCreated": "2026-05-22T05:57:38.912Z",
-  "dateModified": "2026-05-22T05:57:38.912Z",
+  "dateCreated": "2026-05-22T09:02:12.100Z",
+  "dateModified": "2026-05-22T09:02:12.100Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -1,0 +1,18 @@
+# Elixir Language
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+Elixir (José Valim, 2011) is a dynamic, functional language built on the Erlang VM (BEAM) — inheriting Erlang's fault tolerance, concurrency, and distributed computing capabilities. Used by: Discord, WhatsApp (Erlang), Bleacher Report, PepsiCo. Phoenix Framework for web, Nerves for embedded.
+
+## Core Explanation
+
+Actors: lightweight processes (not OS threads) communicate via messages. `receive` blocks match incoming messages. `Task.async/await` for concurrency. Pattern matching is fundamental: `=` is match, not assignment. Pipe operator: `|>` chains function calls. Phoenix LiveView: real-time server-rendered UI without JavaScript. OTP (Open Telecom Platform): battle-tested patterns (GenServer, Supervisor).
+
+## Further Reading
+
+- [Elixir Documentation](https://elixir-lang.org/docs.html)
+

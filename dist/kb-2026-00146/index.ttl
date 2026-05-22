@@ -1,0 +1,8 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00146>
+  a schema:TechArticle ;
+  schema:headline "Adapter Pattern" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .

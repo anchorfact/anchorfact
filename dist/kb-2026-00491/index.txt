@@ -1,0 +1,18 @@
+# Evolution of Language
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+Language is a uniquely human capacity (no other species has syntax). Origins debated: evolved gradually for communication? Or emerged suddenly as a by-product of larger brains? Chomsky: Universal Grammar — innate language faculty, hardwired. FOXP2 gene: 'language gene' — mutations cause speech disorders. Estimated origin: 50,000-200,000 years ago.
+
+## Core Explanation
+
+Universal Grammar (Chomsky): all human languages share deep structural rules — recursion (embed sentences within sentences). Pidgin → Creole: children transform simplified pidgins into full grammars in one generation — evidence for innate grammar. Nicaraguan Sign Language (1980s): deaf children created a new language spontaneously. Animal communication (bees, dolphins, primates): rich but not linguistic — no syntax, no recursion.
+
+## Further Reading
+
+- [The Language Instinct (Steven Pinker)](https://www.harpercollins.com/products/the-language-instinct-steven-pinker)
+

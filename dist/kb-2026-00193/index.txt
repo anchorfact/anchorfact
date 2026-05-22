@@ -1,0 +1,18 @@
+# Linear Algebra
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+Linear algebra is the mathematics of vectors and matrices, fundamental to computer graphics, machine learning (neural networks), physics simulation, and data science. Core concepts: vectors, matrices, linear transformations, determinants, eigenvalues/eigenvectors, linear systems.
+
+## Core Explanation
+
+Matrix multiplication: AB = C where C_ij = Σ A_ik * B_kj. Neural networks: forward pass is matrix multiplications with activation functions. Gradient descent: derivative of loss w.r.t. weights computed via backpropagation (chain rule on matrices). SVD (Singular Value Decomposition): A = UΣV^T — fundamental to PCA, recommendation systems, image compression.
+
+## Further Reading
+
+- [undefined](undefined)
+

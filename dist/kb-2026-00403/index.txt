@@ -1,0 +1,18 @@
+# Scientific Revolution
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+The Scientific Revolution (1543-1687) transformed understanding of the natural world, replacing Aristotelian/medieval frameworks with empirical observation and mathematical reasoning. Copernicus (heliocentric, 1543) → Kepler (elliptical orbits, 1609) → Galileo (telescope, mechanics, 1610) → Newton (Principia, 1687). Scientific method emerged.
+
+## Core Explanation
+
+Copernicus: earth orbits sun (De Revolutionibus, 1543) — published on his deathbed to avoid controversy. Galileo: observed Jupiter's moons, Venus phases — proved heliocentrism; tried by Inquisition (1633), recanted ('And yet it moves' — probably apocryphal). Bacon: empiricism, inductive reasoning. Descartes: deductive reasoning, 'I think, therefore I am.' Newton: unified terrestrial and celestial physics. Royal Society founded 1660.
+
+## Further Reading
+
+- [The Structure of Scientific Revolutions (Thomas Kuhn)](https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html)
+

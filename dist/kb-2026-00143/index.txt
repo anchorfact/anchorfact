@@ -1,0 +1,18 @@
+# Observer Pattern
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+One-to-many dependency — when subject changes, all observers are notified. Foundation of event-driven programming, MVC, React state updates, Redux.
+
+## Core Explanation
+
+Subject maintains observer list and notify(). Push (pass data) vs. pull (observers query). JavaScript: EventEmitter pattern, addEventListener. React: setState triggers re-render (observer pattern with virtual DOM diffing). RxJS: Observable streams with operators (map, filter, debounce).
+
+## Further Reading
+
+- [Design Patterns (Gang of Four)](undefined)
+

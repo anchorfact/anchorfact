@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>iptables / nftables — AnchorFact</title></head>
+<body><article><br>
+## TL;DR<br>
+<br>
+iptables (legacy) and nftables (modern, since kernel 3.13) are Linux firewall frameworks based on Netfilter hooks. nftables replaces iptables with unified syntax, better performance, and IPv4/IPv6 handling. Used to create packet filtering rules (allow/deny traffic).<br>
+<br>
+## Core Explanation<br>
+<br>
+nftables: `nft add table inet filter`, `nft add chain inet filter input { type filter hook input priority 0; }`, `nft add rule inet filter input tcp dport 22 accept`. Tables contain chains; chains contain rules. Hooks: prerouting, input, forward, output, postrouting. Higher-level: UFW (`ufw allow 22/tcp`), firewalld. iptables is deprecated but still widely used in older systems.<br>
+<br>
+## Further Reading<br>
+<br>
+- [nftables Documentation](undefined)<br>
+</article></body>
+</html>

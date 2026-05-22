@@ -1,0 +1,18 @@
+# Authentication vs Authorization
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+Authentication verifies identity (who you are), while authorization determines permissions (what you can do). Authentication factors: something you know (password), have (token), are (biometrics). Multi-Factor Authentication (MFA) requires two or more factors. Authorization models: RBAC (Role-Based Access Control), ABAC (Attribute-Based), ReBAC (Relationship-Based).
+
+## Core Explanation
+
+Session management: after authentication, a session token (cookie, JWT) maintains state across requests. OAuth 2.0 and OpenID Connect (OIDC) are the modern standards for delegated authentication/authorization. Key principle: never roll your own authentication — use battle-tested libraries and follow current NIST guidelines.
+
+## Further Reading
+
+- [undefined](undefined)
+

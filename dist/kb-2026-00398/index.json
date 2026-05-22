@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00398",
+  "headline": "Rise of Islam",
+  "description": "Islam emerged in 7th century Arabia with the Prophet Muhammad (570-632 CE), whom Muslims believe received revelations from God (Allah) compiled as the Quran. Within a century, Islamic rule expanded from Spain to Central Asia. The Islamic Golden Age (8th-13th centuries) preserved and advanced science, mathematics, and philosophy.",
+  "dateCreated": "2026-05-22T09:02:12.735Z",
+  "dateModified": "2026-05-22T09:02:12.735Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

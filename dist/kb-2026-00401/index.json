@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00401",
+  "headline": "Colonialism",
+  "description": "Colonialism (15th-20th centuries) saw European powers establish political, economic, and cultural control over much of Africa, Asia, and the Americas. Peak at Berlin Conference (1884-85): European powers partitioned Africa without African input. Decolonization: 1945-1975, ~80 former colonies gained independence.",
+  "dateCreated": "2026-05-22T09:02:12.697Z",
+  "dateModified": "2026-05-22T09:02:12.697Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}
