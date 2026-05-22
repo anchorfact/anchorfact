@@ -6,27 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"ESLint Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://eslint.org/docs/"
-    institution:"OpenJS Foundation"
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "ESLint Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "Effective TypeScript (2nd Ed)"
-    authors: ["Vanderkam"]
+    url: "https://eslint.org/docs/"
+    institution: "OpenJS Foundation"
+    note: "Pluggable JS/TS linter: flat config, custom rules, AST-based analysis with Espree"
+secondary_sources:
+  - title: "Effective TypeScript (2nd Edition)"
+    authors: ["Vanderkam, Dan"]
     type: "book"
     year: 2024
     url: "https://www.oreilly.com/library/view/effective-typescript-2nd/9781098155056/"
     institution: "O'Reilly"
+    note: "Covers TS static analysis patterns — @typescript-eslint extends ESLint for TypeScript type-aware linting"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
