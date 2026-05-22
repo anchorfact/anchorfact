@@ -6,21 +6,24 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Building Microservices (2nd Edition, Sam Newman)"
-    type:"book"
-    year:2021
-    url:"https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/"
-    institution:"O'Reilly"
+  - title: "Building Microservices (2nd Edition)"
+    authors: ["Newman, Sam"]
+    type: "book"
+    year: 2021
+    url: "https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/"
+    institution: "O'Reilly"
+    note: "The definitive microservices book: decomposition, communication, testing, deployment"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "Microservices (Martin Fowler)"
+    authors: ["Fowler, Martin", "Lewis, James"]
+    type: "article"
+    year: 2014
+    url: "https://martinfowler.com/articles/microservices.html"
+    institution: "ThoughtWorks"
+    note: "The article that popularized microservices — smart endpoints, dumb pipes"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
