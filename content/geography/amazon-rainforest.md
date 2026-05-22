@@ -15,7 +15,14 @@ primary_sources:
     year:2026
     url:"https://www.worldwildlife.org/places/amazon"
     institution:"World Wildlife Fund"
-completeness:0.82
+secondary_sources:
+  - title: "RESTful Web APIs"
+    authors: ["Richardson", "Amundsen"]
+    type: "book"
+    year: 2013
+    url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
+    institution: "O'Reilly"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

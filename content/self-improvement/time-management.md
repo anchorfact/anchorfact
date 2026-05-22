@@ -15,7 +15,13 @@ primary_sources:
     year:1989
     url:"https://www.simonandschuster.com/books/The-7-Habits-of-Highly-Effective-People/Stephen-R-Covey/9781982143817"
     institution:"Free Press"
-completeness:0.82
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

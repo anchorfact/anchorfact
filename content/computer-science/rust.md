@@ -24,6 +24,13 @@ primary_sources:
   - title: "Rust Official Website"
     type: "website"
     url: "https://rust-lang.org/"
+secondary_sources:
+  - title: "The Rust Programming Language (2nd Ed)"
+    authors: ["Klabnik", "Nichols"]
+    type: "book"
+    year: 2023
+    url: "https://nostarch.com/rust-programming-language-2nd-edition"
+    institution: "No Starch Press"
 completeness: 0.88
 related_entities:
   - "entity:programming-languages"

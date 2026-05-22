@@ -15,7 +15,14 @@ primary_sources:
     year:2026
     url:"https://kotlinlang.org/docs/"
     institution:"JetBrains"
-completeness:0.82
+secondary_sources:
+  - title: "Kotlin in Action (2nd Ed)"
+    authors: ["Jemerov", "Isakova"]
+    type: "book"
+    year: 2024
+    url: "https://www.manning.com/books/kotlin-in-action-second-edition"
+    institution: "Manning"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

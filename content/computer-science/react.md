@@ -20,6 +20,12 @@ primary_sources:
     type: "repository"
     url: "https://github.com/facebook/react"
     institution: "Meta"
+secondary_sources:
+  - title: "React Documentation"
+    type: "documentation"
+    year: 2026
+    url: "https://react.dev/reference/react"
+    institution: "Meta"
 completeness: 0.85
 related_entities:
   - "entity:javascript"

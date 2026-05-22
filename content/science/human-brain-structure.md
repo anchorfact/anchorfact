@@ -15,7 +15,13 @@ primary_sources:
     year:2021
     url:"https://www.mheducation.com/highered/product/principles-neural-science-kandel-koester-mack-siegelbaum/9781259642234.html"
     institution:"McGraw-Hill"
-completeness:0.82
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

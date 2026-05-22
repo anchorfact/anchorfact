@@ -20,6 +20,13 @@ primary_sources:
     type: "documentation"
     year: 2026
     url: "https://git-scm.com/docs"
+secondary_sources:
+  - title: "Pro Git (2nd Ed)"
+    authors: ["Chacon", "Straub"]
+    type: "book"
+    year: 2014
+    url: "https://git-scm.com/book/en/v2"
+    institution: "Apress"
 completeness: 0.85
 related_entities:
   - "entity:version-control"

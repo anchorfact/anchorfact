@@ -14,7 +14,13 @@ primary_sources:
     type:"undefined"
     url:"undefined"
     institution:"OWASP"
-completeness:0.82
+secondary_sources:
+  - title: "OWASP SQL Injection Prevention Cheat Sheet"
+    type: "documentation"
+    year: 2024
+    url: "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html"
+    institution: "OWASP"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

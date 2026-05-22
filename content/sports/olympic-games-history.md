@@ -15,7 +15,19 @@ primary_sources:
     year:2012
     url:"https://www.aurumpress.co.uk/books/the-complete-book-of-the-olympics/"
     institution:"Aurum Press"
-completeness:0.82
+secondary_sources:
+  - title: "BERT: Pre-training of Deep Bidirectional Transformers"
+    authors: ["Devlin", "Chang", "Lee", "Toutanova"]
+    type: "academic_paper"
+    year: 2019
+    doi: "10.48550/arXiv.1810.04805"
+    url: "https://arxiv.org/abs/1810.04805"
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

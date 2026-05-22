@@ -16,6 +16,12 @@ primary_sources:
     type: "knowledge_base"
     year: 2026
     note: "基于行业实践和标准参考文献的系统性整理"
+secondary_sources:
+  - title: "Model Context Protocol Specification"
+    type: "standard"
+    year: 2025
+    url: "https://modelcontextprotocol.io/specification/2025-06-18"
+    institution: "Linux Foundation / AAIF"
 completeness: 0.85
 related_entities:
   - "entity:game-development"

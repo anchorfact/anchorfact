@@ -17,7 +17,14 @@ primary_sources:
     url: "https://html.spec.whatwg.org/multipage/webstorage.html"
     institution: "W3C/WHATWG"
 
-completeness: 0.82
+secondary_sources:
+  - title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
+    authors: ["Lewis", "Perez", "Piktus"]
+    type: "academic_paper"
+    year: 2020
+    doi: "10.48550/arXiv.2005.11401"
+    url: "https://arxiv.org/abs/2005.11401"
+completeness: 0.88
 ai_citations:
   last_citation_check: "2026-05-22"
 ---

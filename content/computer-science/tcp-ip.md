@@ -23,6 +23,12 @@ primary_sources:
     year: 1981
     url: "https://www.rfc-editor.org/rfc/rfc791"
     institution: "IETF"
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
 completeness: 0.85
 related_entities:
   - "entity:http-protocol"

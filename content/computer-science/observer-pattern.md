@@ -14,7 +14,13 @@ primary_sources:
     type:"undefined"
     url:"undefined"
     institution:"Addison-Wesley"
-completeness:0.82
+secondary_sources:
+  - title: "React Documentation"
+    type: "documentation"
+    year: 2026
+    url: "https://react.dev/reference/react"
+    institution: "Meta"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

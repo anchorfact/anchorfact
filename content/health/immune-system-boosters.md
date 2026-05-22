@@ -15,7 +15,13 @@ primary_sources:
     year:2019
     url:"https://www.wiley.com/en-us/How+the+Immune+System+Works%2C+6th+Edition-p-9781119542124"
     institution:"Wiley-Blackwell"
-completeness:0.82
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

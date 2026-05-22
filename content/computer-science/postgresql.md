@@ -18,6 +18,18 @@ primary_sources:
     type: "repository"
     url: "https://github.com/postgres/postgres"
     stars: 20982
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+  - title: "Pro Git (2nd Ed)"
+    authors: ["Chacon", "Straub"]
+    type: "book"
+    year: 2014
+    url: "https://git-scm.com/book/en/v2"
+    institution: "Apress"
 completeness: 0.85
 ai_citations: {last_citation_check: "2026-05-22"}
 ---

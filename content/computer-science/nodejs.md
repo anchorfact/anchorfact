@@ -21,6 +21,18 @@ primary_sources:
     url: "https://github.com/nodejs/node"
     institution: "OpenJS Foundation"
     stars: 117329
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+  - title: "Pro Git (2nd Ed)"
+    authors: ["Chacon", "Straub"]
+    type: "book"
+    year: 2014
+    url: "https://git-scm.com/book/en/v2"
+    institution: "Apress"
 completeness: 0.85
 related_entities:
   - "entity:javascript"

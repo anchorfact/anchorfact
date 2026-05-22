@@ -35,6 +35,12 @@ primary_sources:
     year: 2022
     url: "https://www.rfc-editor.org/rfc/rfc9114"
     institution: "IETF"
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
 completeness: 0.90
 related_entities:
   - "entity:tcp-ip"

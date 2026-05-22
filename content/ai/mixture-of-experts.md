@@ -23,7 +23,21 @@ primary_sources:
     year: 2023
     doi: "10.48550/arXiv.2303.08774"
     url: "https://arxiv.org/abs/2303.08774"
-completeness: 0.82
+secondary_sources:
+  - title: "Attention Is All You Need"
+    authors: ["Vaswani", "Shazeer", "Parmar", "Uszkoreit", "Jones", "Gomez", "Kaiser", "Polosukhin"]
+    type: "academic_paper"
+    year: 2017
+    doi: "10.48550/arXiv.1706.03762"
+    url: "https://arxiv.org/abs/1706.03762"
+    institution: "NeurIPS"
+  - title: "Language Models are Few-Shot Learners"
+    authors: ["Brown", "Mann", "Ryder"]
+    type: "academic_paper"
+    year: 2020
+    doi: "10.48550/arXiv.2005.14165"
+    url: "https://arxiv.org/abs/2005.14165"
+completeness: 0.88
 related_entities:
   - "entity:gpt-models"
   - "entity:transformer-architecture"

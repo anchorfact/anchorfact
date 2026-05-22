@@ -15,7 +15,19 @@ primary_sources:
     year:1860
     url:"https://www.gutenberg.org/ebooks/2074"
     institution:"Project Gutenberg"
-completeness:0.82
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+  - title: "Redis in Action"
+    authors: ["Carlson"]
+    type: "book"
+    year: 2013
+    url: "https://www.manning.com/books/redis-in-action"
+    institution: "Manning"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

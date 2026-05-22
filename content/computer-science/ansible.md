@@ -15,7 +15,14 @@ primary_sources:
     year:2026
     url:"https://docs.ansible.com/"
     institution:"Red Hat"
-completeness:0.82
+secondary_sources:
+  - title: "Ansible: Up and Running (3rd Ed)"
+    authors: ["Hochstein", "Moser"]
+    type: "book"
+    year: 2022
+    url: "https://www.oreilly.com/library/view/ansible-up-and/9781098109141/"
+    institution: "O'Reilly"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

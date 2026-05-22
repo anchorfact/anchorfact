@@ -15,7 +15,19 @@ primary_sources:
     year:2026
     url:"https://bun.sh/docs/"
     institution:"Oven"
-completeness:0.82
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+  - title: "Effective TypeScript (2nd Ed)"
+    authors: ["Vanderkam"]
+    type: "book"
+    year: 2024
+    url: "https://www.oreilly.com/library/view/effective-typescript-2nd/9781098155056/"
+    institution: "O'Reilly"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

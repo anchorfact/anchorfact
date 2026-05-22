@@ -14,7 +14,20 @@ primary_sources:
     type:"undefined"
     url:"undefined"
     institution:"Cloudflare"
-completeness:0.82
+secondary_sources:
+  - title: "DNS and BIND (5th Ed)"
+    authors: ["Liu", "Albitz"]
+    type: "book"
+    year: 2006
+    url: "https://www.oreilly.com/library/view/dns-and-bind/0596100574/"
+    institution: "O'Reilly"
+  - title: "RESTful Web APIs"
+    authors: ["Richardson", "Amundsen"]
+    type: "book"
+    year: 2013
+    url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
+    institution: "O'Reilly"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

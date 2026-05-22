@@ -15,7 +15,13 @@ primary_sources:
     year:1950
     url:"https://www.phaidon.com/store/art/the-story-of-art-pocket-edition-9780714872216/"
     institution:"Phaidon Press"
-completeness:0.82
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

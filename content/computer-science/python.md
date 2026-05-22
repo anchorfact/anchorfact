@@ -19,6 +19,13 @@ primary_sources:
   - title: "TIOBE Index"
     type: "index"
     url: "https://www.tiobe.com/tiobe-index/"
+secondary_sources:
+  - title: "Fluent Python (2nd Ed)"
+    authors: ["Ramalho"]
+    type: "book"
+    year: 2021
+    url: "https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/"
+    institution: "O'Reilly"
 completeness: 0.88
 related_entities:
   - "entity:programming-languages"

@@ -21,6 +21,12 @@ primary_sources:
     type: "academic_paper"
     year: 2026
     url: "https://arxiv.org/html/2601.01743v1"
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
 completeness: 0.88
 known_gaps:
   - "Market size projections vary by analyst; specific figures not included pending Gartner/McKinsey consensus data"

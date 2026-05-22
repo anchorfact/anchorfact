@@ -17,7 +17,14 @@ primary_sources:
     type: "repository"
     url: "https://github.com/graphql/graphql-spec"
     stars: 14571
-completeness: 0.82
+secondary_sources:
+  - title: "Learning GraphQL"
+    authors: ["Porcello", "Banks"]
+    type: "book"
+    year: 2018
+    url: "https://www.oreilly.com/library/view/learning-graphql/9781492030706/"
+    institution: "O'Reilly"
+completeness: 0.88
 ai_citations: {last_citation_check: "2026-05-22"}
 ---
 

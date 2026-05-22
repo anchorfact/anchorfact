@@ -23,6 +23,18 @@ primary_sources:
     year: 2017
     doi: "10.48550/arXiv.1706.03741"
     url: "https://arxiv.org/abs/1706.03741"
+secondary_sources:
+  - title: "Language Models are Few-Shot Learners"
+    authors: ["Brown", "Mann", "Ryder"]
+    type: "academic_paper"
+    year: 2020
+    doi: "10.48550/arXiv.2005.14165"
+    url: "https://arxiv.org/abs/2005.14165"
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
 completeness: 0.85
 related_entities:
   - "entity:large-language-models"

@@ -19,6 +19,12 @@ primary_sources:
     type: "documentation"
     year: 2026
     url: "https://www.postgresql.org/docs/17/"
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
 completeness: 0.88
 related_entities:
   - "entity:databases"

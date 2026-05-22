@@ -18,7 +18,14 @@ primary_sources:
     url: "https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm"
     institution: "UC Irvine"
     note: "Chapter 5 defines REST"
-completeness: 0.82
+secondary_sources:
+  - title: "RESTful Web APIs"
+    authors: ["Richardson", "Amundsen"]
+    type: "book"
+    year: 2013
+    url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
+    institution: "O'Reilly"
+completeness: 0.88
 related_entities:
   - "entity:http-protocol"
 ai_citations:

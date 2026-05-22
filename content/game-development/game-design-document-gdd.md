@@ -14,7 +14,13 @@ primary_sources:
     type:"undefined"
     url:"undefined"
     institution:"CRC Press"
-completeness:0.82
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

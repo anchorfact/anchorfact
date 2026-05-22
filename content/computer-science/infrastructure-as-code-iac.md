@@ -15,7 +15,19 @@ primary_sources:
     year:2026
     url:"https://developer.hashicorp.com/terraform/docs"
     institution:"HashiCorp"
-completeness:0.82
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+  - title: "Ansible: Up and Running (3rd Ed)"
+    authors: ["Hochstein", "Moser"]
+    type: "book"
+    year: 2022
+    url: "https://www.oreilly.com/library/view/ansible-up-and/9781098109141/"
+    institution: "O'Reilly"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

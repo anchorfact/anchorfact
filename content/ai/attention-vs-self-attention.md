@@ -15,7 +15,14 @@ primary_sources:
     year:2017
     url:"https://arxiv.org/abs/1706.03762"
     institution:"NeurIPS"
-completeness:0.82
+secondary_sources:
+  - title: "Neural Machine Translation by Jointly Learning to Align and Translate"
+    authors: ["Bahdanau", "Cho", "Bengio"]
+    type: "academic_paper"
+    year: 2014
+    doi: "10.48550/arXiv.1409.0473"
+    url: "https://arxiv.org/abs/1409.0473"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

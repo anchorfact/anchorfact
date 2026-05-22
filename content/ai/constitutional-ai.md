@@ -25,6 +25,13 @@ primary_sources:
     doi: "10.48550/arXiv.2212.08073"
     url: "https://arxiv.org/abs/2212.08073"
     institution: "Anthropic"
+secondary_sources:
+  - title: "Constitutional AI: Harmlessness from AI Feedback"
+    authors: ["Bai", "Kadavath"]
+    type: "academic_paper"
+    year: 2022
+    doi: "10.48550/arXiv.2212.08073"
+    url: "https://arxiv.org/abs/2212.08073"
 completeness: 0.90
 related_entities:
   - "entity:rlhf"

@@ -15,7 +15,13 @@ primary_sources:
     year:2015
     url:"https://www.elsevier.com/books/grays-anatomy/standring/978-0-7020-5230-9"
     institution:"Elsevier"
-completeness:0.82
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

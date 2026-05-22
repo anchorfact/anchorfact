@@ -27,6 +27,13 @@ primary_sources:
     year: 2024
     url: "https://www.microsoft.com/en-us/research/publication/from-local-to-global-a-graph-rag-approach-to-query-focused-summarization/"
     institution: "Microsoft Research"
+secondary_sources:
+  - title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
+    authors: ["Lewis", "Perez", "Piktus"]
+    type: "academic_paper"
+    year: 2020
+    doi: "10.48550/arXiv.2005.11401"
+    url: "https://arxiv.org/abs/2005.11401"
 completeness: 0.90
 related_entities:
   - "entity:rag"

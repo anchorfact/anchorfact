@@ -15,7 +15,14 @@ primary_sources:
     year:2015
     url:"https://thamesandhudson.com/digital-art-9780500204238"
     institution:"Thames & Hudson"
-completeness:0.82
+secondary_sources:
+  - title: "Pro Git (2nd Ed)"
+    authors: ["Chacon", "Straub"]
+    type: "book"
+    year: 2014
+    url: "https://git-scm.com/book/en/v2"
+    institution: "Apress"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

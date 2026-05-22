@@ -15,7 +15,14 @@ primary_sources:
     year:2022
     url:"https://szeliski.org/Book/"
     institution:"Springer"
-completeness:0.82
+secondary_sources:
+  - title: "Computer Vision: Algorithms and Applications (2nd Ed)"
+    authors: ["Szeliski"]
+    type: "book"
+    year: 2022
+    url: "https://szeliski.org/Book/"
+    institution: "Springer"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

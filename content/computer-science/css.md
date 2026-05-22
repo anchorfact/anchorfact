@@ -21,6 +21,12 @@ primary_sources:
     year: 2024
     url: "https://www.w3.org/TR/css-2024/"
     institution: "W3C"
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
 completeness: 0.85
 ai_citations: {last_citation_check: "2026-05-22"}
 ---

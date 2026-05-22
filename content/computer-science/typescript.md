@@ -24,6 +24,13 @@ primary_sources:
     type: "survey"
     year: 2024
     url: "https://survey.stackoverflow.co/2024/"
+secondary_sources:
+  - title: "Effective TypeScript (2nd Ed)"
+    authors: ["Vanderkam"]
+    type: "book"
+    year: 2024
+    url: "https://www.oreilly.com/library/view/effective-typescript-2nd/9781098155056/"
+    institution: "O'Reilly"
 completeness: 0.85
 related_entities:
   - "entity:javascript"

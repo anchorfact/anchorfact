@@ -14,7 +14,14 @@ primary_sources:
     type:"undefined"
     url:"undefined"
     institution:"OWASP Foundation"
-completeness:0.82
+secondary_sources:
+  - title: "RFC 7519 — JSON Web Token (JWT)"
+    authors: ["Jones", "Bradley", "Sakimura"]
+    type: "standard"
+    year: 2015
+    url: "https://www.rfc-editor.org/rfc/rfc7519"
+    institution: "IETF"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

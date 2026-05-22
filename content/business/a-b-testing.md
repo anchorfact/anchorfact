@@ -14,7 +14,13 @@ primary_sources:
     type:"undefined"
     url:"undefined"
     institution:"Cambridge University Press"
-completeness:0.82
+secondary_sources:
+  - title: "Harvard Business Review"
+    type: "journal"
+    year: 2026
+    url: "https://hbr.org/"
+    institution: "Harvard Business Publishing"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

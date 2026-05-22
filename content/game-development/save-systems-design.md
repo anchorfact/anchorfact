@@ -16,6 +16,13 @@ primary_sources:
     type: "knowledge_base"
     year: 2026
     note: "基于行业实践和标准参考文献的系统性整理"
+secondary_sources:
+  - title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
+    authors: ["Lewis", "Perez", "Piktus"]
+    type: "academic_paper"
+    year: 2020
+    doi: "10.48550/arXiv.2005.11401"
+    url: "https://arxiv.org/abs/2005.11401"
 completeness: 0.85
 related_entities:
   - "entity:game-development"

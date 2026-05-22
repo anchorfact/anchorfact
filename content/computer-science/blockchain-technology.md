@@ -14,7 +14,14 @@ primary_sources:
     type:"undefined"
     url:"undefined"
     institution:"Self-published"
-completeness:0.82
+secondary_sources:
+  - title: "The Rust Programming Language (2nd Ed)"
+    authors: ["Klabnik", "Nichols"]
+    type: "book"
+    year: 2023
+    url: "https://nostarch.com/rust-programming-language-2nd-edition"
+    institution: "No Starch Press"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

@@ -15,7 +15,19 @@ primary_sources:
     year:2026
     url:"https://nginx.org/en/docs/"
     institution:"NGINX Inc."
-completeness:0.82
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+  - title: "The WebSocket Protocol (RFC 6455)"
+    authors: ["Fette", "Melnikov"]
+    type: "standard"
+    year: 2011
+    url: "https://www.rfc-editor.org/rfc/rfc6455"
+    institution: "IETF"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

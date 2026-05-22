@@ -23,6 +23,13 @@ primary_sources:
     url: "https://github.com/microsoft/LoRA"
     institution: "Microsoft"
     stars: 13547
+secondary_sources:
+  - title: "QLoRA: Efficient Finetuning of Quantized Language Models"
+    authors: ["Dettmers"]
+    type: "academic_paper"
+    year: 2023
+    doi: "10.48550/arXiv.2305.14314"
+    url: "https://arxiv.org/abs/2305.14314"
 completeness: 0.88
 related_entities:
   - "entity:large-language-models"

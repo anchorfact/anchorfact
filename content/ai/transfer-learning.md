@@ -15,7 +15,14 @@ primary_sources:
     year:2010
     url:"https://ieeexplore.ieee.org/document/5288526"
     institution:"IEEE"
-completeness:0.82
+secondary_sources:
+  - title: "A Survey on Transfer Learning"
+    authors: ["Pan", "Yang"]
+    type: "academic_paper"
+    year: 2010
+    url: "https://ieeexplore.ieee.org/document/5288526"
+    institution: "IEEE"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

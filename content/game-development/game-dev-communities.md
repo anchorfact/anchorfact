@@ -16,6 +16,12 @@ primary_sources:
     type: "knowledge_base"
     year: 2026
     note: "基于行业实践和标准参考文献的系统性整理"
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
 completeness: 0.85
 related_entities:
   - "entity:game-development"

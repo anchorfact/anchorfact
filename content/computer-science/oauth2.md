@@ -15,7 +15,14 @@ primary_sources:
     year: 2012
     url: "https://www.rfc-editor.org/rfc/rfc6749"
     institution: "IETF"
-completeness: 0.82
+secondary_sources:
+  - title: "OAuth 2 in Action"
+    authors: ["Richer", "Sanso"]
+    type: "book"
+    year: 2017
+    url: "https://www.manning.com/books/oauth-2-in-action"
+    institution: "Manning"
+completeness: 0.88
 ai_citations: {last_citation_check: "2026-05-22"}
 ---
 

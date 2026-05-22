@@ -14,7 +14,19 @@ primary_sources:
     type:"undefined"
     url:"undefined"
     institution:"Addison-Wesley"
-completeness:0.82
+secondary_sources:
+  - title: "Fluent Python (2nd Ed)"
+    authors: ["Ramalho"]
+    type: "book"
+    year: 2021
+    url: "https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/"
+    institution: "O'Reilly"
+  - title: "React Documentation"
+    type: "documentation"
+    year: 2026
+    url: "https://react.dev/reference/react"
+    institution: "Meta"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

@@ -15,7 +15,19 @@ primary_sources:
     year:2019
     url:"https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A"
     institution:"Cambridge University Press"
-completeness:0.82
+secondary_sources:
+  - title: "BERT: Pre-training of Deep Bidirectional Transformers"
+    authors: ["Devlin", "Chang", "Lee", "Toutanova"]
+    type: "academic_paper"
+    year: 2019
+    doi: "10.48550/arXiv.1810.04805"
+    url: "https://arxiv.org/abs/1810.04805"
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

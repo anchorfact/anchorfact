@@ -15,7 +15,19 @@ primary_sources:
     year:2026
     url:"https://grafana.com/docs/"
     institution:"Grafana Labs"
-completeness:0.82
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+  - title: "Elasticsearch: The Definitive Guide"
+    authors: ["Gormley", "Tong"]
+    type: "book"
+    year: 2015
+    url: "https://www.oreilly.com/library/view/elasticsearch-the-definitive/9781449358532/"
+    institution: "O'Reilly"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

@@ -15,7 +15,19 @@ primary_sources:
     year:2026
     url:"https://flask.palletsprojects.com/"
     institution:"Pallets Projects"
-completeness:0.82
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+  - title: "Fluent Python (2nd Ed)"
+    authors: ["Ramalho"]
+    type: "book"
+    year: 2021
+    url: "https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/"
+    institution: "O'Reilly"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

@@ -17,7 +17,14 @@ primary_sources:
     url: "https://websockets.spec.whatwg.org/"
     institution: "WHATWG"
 
-completeness: 0.82
+secondary_sources:
+  - title: "The WebSocket Protocol (RFC 6455)"
+    authors: ["Fette", "Melnikov"]
+    type: "standard"
+    year: 2011
+    url: "https://www.rfc-editor.org/rfc/rfc6455"
+    institution: "IETF"
+completeness: 0.88
 ai_citations:
   last_citation_check: "2026-05-22"
 ---

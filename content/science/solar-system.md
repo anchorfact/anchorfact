@@ -15,7 +15,19 @@ primary_sources:
     year:2026
     url:"https://science.nasa.gov/solar-system/"
     institution:"NASA"
-completeness:0.82
+secondary_sources:
+  - title: "QLoRA: Efficient Finetuning of Quantized Language Models"
+    authors: ["Dettmers"]
+    type: "academic_paper"
+    year: 2023
+    doi: "10.48550/arXiv.2305.14314"
+    url: "https://arxiv.org/abs/2305.14314"
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

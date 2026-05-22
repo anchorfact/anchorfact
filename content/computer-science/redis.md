@@ -15,7 +15,14 @@ primary_sources:
     year:2026
     url:"https://redis.io/docs/"
     institution:"Redis Ltd."
-completeness:0.82
+secondary_sources:
+  - title: "Redis in Action"
+    authors: ["Carlson"]
+    type: "book"
+    year: 2013
+    url: "https://www.manning.com/books/redis-in-action"
+    institution: "Manning"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

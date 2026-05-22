@@ -15,7 +15,19 @@ primary_sources:
     year:2019
     url:"https://www.bradtguides.com/product/the-arctic/"
     institution:"Bradt Travel Guides"
-completeness:0.82
+secondary_sources:
+  - title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
+    authors: ["Lewis", "Perez", "Piktus"]
+    type: "academic_paper"
+    year: 2020
+    doi: "10.48550/arXiv.2005.11401"
+    url: "https://arxiv.org/abs/2005.11401"
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

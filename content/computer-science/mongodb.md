@@ -17,7 +17,19 @@ primary_sources:
     type: "repository"
     url: "https://github.com/mongodb/mongo"
     stars: 28333
-completeness: 0.82
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+  - title: "Pro Git (2nd Ed)"
+    authors: ["Chacon", "Straub"]
+    type: "book"
+    year: 2014
+    url: "https://git-scm.com/book/en/v2"
+    institution: "Apress"
+completeness: 0.88
 ai_citations: {last_citation_check: "2026-05-22"}
 ---
 

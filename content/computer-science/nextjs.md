@@ -21,6 +21,12 @@ primary_sources:
     url: "https://github.com/vercel/next.js"
     institution: "Vercel"
     stars: 139553
+secondary_sources:
+  - title: "Next.js Documentation"
+    type: "documentation"
+    year: 2026
+    url: "https://nextjs.org/docs"
+    institution: "Vercel"
 completeness: 0.85
 related_entities:
   - "entity:react"

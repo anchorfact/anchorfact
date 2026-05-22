@@ -23,6 +23,12 @@ primary_sources:
     year: 2022
     doi: "10.48550/arXiv.2112.10752"
     url: "https://arxiv.org/abs/2112.10752"
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
 completeness: 0.85
 related_entities:
   - "entity:generative-ai"

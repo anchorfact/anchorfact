@@ -24,6 +24,17 @@ primary_sources:
     year: 2017
     doi: "10.48550/arXiv.1706.03762"
     url: "https://arxiv.org/abs/1706.03762"
+secondary_sources:
+  - title: "The Illustrated Transformer"
+    authors: ["Alammar, Jay"]
+    type: "blog_post"
+    year: 2018
+    url: "https://jalammar.github.io/illustrated-transformer/"
+  - title: "CS224n: NLP with Deep Learning — Lecture 9 (Transformers)"
+    type: "course_material"
+    year: 2024
+    url: "https://web.stanford.edu/class/cs224n/"
+    institution: "Stanford University"
 ---
 
 ## TL;DR

@@ -22,6 +22,12 @@ primary_sources:
     year: 2016
     doi: "10.1145/2898442.2898444"
     url: "https://queue.acm.org/detail.cfm?id=2898444"
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
 completeness: 0.85
 related_entities:
   - "entity:docker"

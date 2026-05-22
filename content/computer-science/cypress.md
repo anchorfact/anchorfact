@@ -15,7 +15,18 @@ primary_sources:
     year:2026
     url:"https://docs.cypress.io/"
     institution:"Cypress.io"
-completeness:0.82
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+  - title: "React Documentation"
+    type: "documentation"
+    year: 2026
+    url: "https://react.dev/reference/react"
+    institution: "Meta"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

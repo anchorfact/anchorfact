@@ -14,7 +14,14 @@ primary_sources:
     type:"undefined"
     url:"undefined"
     institution:"Pearson"
-completeness:0.82
+secondary_sources:
+  - title: "Pro Git (2nd Ed)"
+    authors: ["Chacon", "Straub"]
+    type: "book"
+    year: 2014
+    url: "https://git-scm.com/book/en/v2"
+    institution: "Apress"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

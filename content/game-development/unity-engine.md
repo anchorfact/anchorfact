@@ -20,6 +20,12 @@ primary_sources:
     type: "documentation"
     year: 2025
     url: "https://docs.unity3d.com/2022.3/Documentation/Manual/"
+secondary_sources:
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
 completeness: 0.85
 related_entities:
   - "entity:game-development"

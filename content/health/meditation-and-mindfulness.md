@@ -15,7 +15,19 @@ primary_sources:
     year:1990
     url:"https://www.penguinrandomhouse.com/books/289133/full-catastrophe-living-by-jon-kabat-zinn/"
     institution:"Delta"
-completeness:0.82
+secondary_sources:
+  - title: "Neural Machine Translation by Jointly Learning to Align and Translate"
+    authors: ["Bahdanau", "Cho", "Bengio"]
+    type: "academic_paper"
+    year: 2014
+    doi: "10.48550/arXiv.1409.0473"
+    url: "https://arxiv.org/abs/1409.0473"
+  - title: "MDN Web Docs — HTTP"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    institution: "Mozilla"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

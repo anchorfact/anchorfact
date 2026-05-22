@@ -14,7 +14,14 @@ primary_sources:
     type:"undefined"
     url:"undefined"
     institution:"Elastic"
-completeness:0.82
+secondary_sources:
+  - title: "Elasticsearch: The Definitive Guide"
+    authors: ["Gormley", "Tong"]
+    type: "book"
+    year: 2015
+    url: "https://www.oreilly.com/library/view/elasticsearch-the-definitive/9781449358532/"
+    institution: "O'Reilly"
+completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 ---
