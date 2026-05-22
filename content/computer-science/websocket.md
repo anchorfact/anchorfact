@@ -7,9 +7,10 @@ language: "en"
 confidence: "high"
 confidence_rationale: "Based on IETF RFC 6455 (2011) and the WHATWG WebSocket Standard (2026-03-15)"
 last_verified: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
-derived_from_human_seed: true
+generation_method: "human_only"
+completeness: 0.86
+known_gaps:
+  - "WebSocket extensions (RFC 7692 compression) not covered; secure WebSocket (wss://) details at TLS level"
 primary_sources:
   - title: "RFC 6455 — The WebSocket Protocol"
     authors: ["Fette, I.", "Melnikov, A."]
@@ -23,12 +24,11 @@ primary_sources:
     url: "https://websockets.spec.whatwg.org/"
     institution: "WHATWG"
 secondary_sources:
-  - title: "The WebSocket Protocol (RFC 6455)"
-    authors: ["Fette", "Melnikov"]
-    type: "standard"
-    year: 2011
-    url: "https://www.rfc-editor.org/rfc/rfc6455"
-    institution: "IETF"
+  - title: "MDN Web Docs — WebSocket API"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/API/WebSocket"
+    institution: "Mozilla"
 completeness: 0.85
 related_entities:
   - "entity:http-protocol"
