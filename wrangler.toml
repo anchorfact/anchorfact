@@ -1,0 +1,11 @@
+# Cloudflare Pages / Wrangler config
+name = "anchorfact"
+compatibility_date = "2026-05-22"
+pages_build_output_dir = "dist"
+
+# Build config for Cloudflare Pages (auto-detected)
+# Build command: node src/compile.js content dist
+# Build output: dist
+
+[env.production]
+# Custom domain will be anchorfact.org
