@@ -1,0 +1,33 @@
+---
+id:"kb-2026-00338"
+title:"Climate Change"
+schema_type:"TechArticle"
+category:"science"
+language:"en"
+confidence:"high"
+last_verified:"2026-05-22"
+generation_method:"ai_assisted"
+ai_models:["claude-opus"]
+derived_from_human_seed:true
+primary_sources:
+  - title:"IPCC Sixth Assessment Report (AR6)"
+    type:"report"
+    year:2023
+    url:"https://www.ipcc.ch/report/ar6/syr/"
+    institution:"IPCC"
+completeness:0.82
+ai_citations:
+  last_citation_check:"2026-05-22"
+---
+
+## TL;DR
+
+Climate change is the long-term shift in global temperatures and weather patterns, primarily caused by human greenhouse gas emissions (CO₂, CH₄) since the Industrial Revolution. Global average temperature has risen ~1.2°C above pre-industrial levels. Effects: sea level rise, extreme weather, biodiversity loss.
+
+## Core Explanation
+
+Greenhouse effect: CO₂ and other gases trap heat. CO₂ levels: pre-industrial 280ppm → current 420+ ppm — highest in 800,000 years. Paris Agreement (2015): limit warming to <2°C, pursue 1.5°C. Key solutions: renewable energy (solar, wind), electrification, carbon capture, reforestation. IPCC: 97%+ of climate scientists agree human activity is the primary cause.
+
+## Further Reading
+
+- [IPCC Sixth Assessment Report (AR6)](https://www.ipcc.ch/report/ar6/syr/)

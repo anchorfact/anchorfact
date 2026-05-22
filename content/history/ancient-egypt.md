@@ -1,0 +1,33 @@
+---
+id:"kb-2026-00350"
+title:"Ancient Egypt"
+schema_type:"TechArticle"
+category:"history"
+language:"en"
+confidence:"high"
+last_verified:"2026-05-22"
+generation_method:"ai_assisted"
+ai_models:["claude-opus"]
+derived_from_human_seed:true
+primary_sources:
+  - title:"The Oxford History of Ancient Egypt (Ian Shaw)"
+    type:"book"
+    year:2000
+    url:"https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587"
+    institution:"Oxford University Press"
+completeness:0.82
+ai_citations:
+  last_citation_check:"2026-05-22"
+---
+
+## TL;DR
+
+Ancient Egypt (~3100 BCE - 30 BCE) was one of the world's earliest and longest-lasting civilizations along the Nile River. Known for: pyramids (Giza, ~2500 BCE), hieroglyphic writing, mummification, pharaohs as divine rulers, and remarkable stability. The regular Nile floods enabled predictable, abundant agriculture.
+
+## Core Explanation
+
+Key periods: Old Kingdom (pyramid age, Great Pyramid of Giza built for Khufu), Middle Kingdom (expansion, literature), New Kingdom (empire, Tutankhamun, Ramesses II, Valley of the Kings). Rosetta Stone (196 BCE, Greek + Demotic + hieroglyphs) enabled decipherment by Champollion (1822). Cleopatra VII (last pharaoh, 51-30 BCE) — Egypt became Roman province after her death.
+
+## Further Reading
+
+- [The Oxford History of Ancient Egypt (Ian Shaw)](https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587)
