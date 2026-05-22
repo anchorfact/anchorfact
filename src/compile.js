@@ -307,3 +307,61 @@ const manifest = {
   compiler_version: 'poc-0.1.0'
 };
 writeFileSync(join(distDir, 'manifest.json'), JSON.stringify(manifest, null, 2));
+
+// Generate root index.html
+const articleLinks = results.map(r => {
+  const id = r['@id'].split('/').pop();
+  return `<a href="/kb/${id}/index.json">${r.headline || id}</a> (JSON-LD) · <a href="/kb/${id}/index.txt">Plain text</a> · <a href="/kb/${id}/index.ttl">Turtle</a>`;
+}).join('<br>\n    ');
+
+const rootHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AnchorFact — Anchor AI to Facts</title>
+  <meta name="description" content="AnchorFact: AI-native knowledge base for LLM citations. Structured, verified, GEO-optimized.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://anchorfact.org",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org",
+    "description": "AI-native knowledge base for LLM citations.",
+    "publisher": { "@type": "Organization", "name": "AnchorFact" }
+  }
+  </script>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 680px; margin: 80px auto; padding: 0 20px; color: #1E293B; line-height: 1.6; }
+    h1 { color: #2563EB; font-size: 2rem; margin-bottom: 0.25em; }
+    p.tagline { color: #64748B; font-size: 1.1rem; margin-bottom: 2em; }
+    .link-row { margin: 8px 0; }
+    .link-row a { color: #2563EB; text-decoration: none; }
+    code { background: #F1F5F9; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    .card { border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 20px; margin: 12px 0; }
+    .footer { color: #94A3B8; font-size: 0.85rem; margin-top: 3em; }
+  </style>
+</head>
+<body>
+  <h1>AnchorFact</h1>
+  <p class="tagline">Anchor AI to Facts.</p>
+  <p>An <strong>AI-native knowledge base</strong> for LLM citations. Every article is structured, source-verified, and GEO-optimized.</p>
+  <div class="card">
+    <strong>For AIs</strong><br>
+    <a href="/llms.txt">llms.txt</a> — site map for LLM crawlers
+  </div>
+  <div class="card">
+    <strong>Knowledge Base (${results.length} articles)</strong><br>
+    ${articleLinks}
+  </div>
+  <div class="card">
+    <strong>Project</strong><br>
+    <a href="https://github.com/anchorfact/anchorfact">GitHub</a> ·
+    <a href="https://github.com/anchorfact/anchorfact/blob/main/GOVERNANCE.md">Governance</a> ·
+    <a href="https://github.com/anchorfact/anchorfact/blob/main/CONTRIBUTING.md">Contribute</a>
+  </div>
+  <p class="footer">Content: CC-BY 4.0 · Code: MIT · Values: Truthfulness · Fairness · Openness · Impartiality</p>
+</body>
+</html>`;
+writeFileSync(join(distDir, 'index.html'), rootHtml);
+console.log('✅ Root index.html generated');
