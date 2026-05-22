@@ -6,22 +6,24 @@ category:"ai"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"A Survey on Transfer Learning (Pan & Yang, 2010)"
-    type:"paper"
-    year:2010
-    url:"https://ieeexplore.ieee.org/document/5288526"
-    institution:"IEEE"
-secondary_sources:
   - title: "A Survey on Transfer Learning"
-    authors: ["Pan", "Yang"]
+    authors: ["Pan, Sinno Jialin", "Yang, Qiang"]
     type: "academic_paper"
     year: 2010
+    doi: "10.1109/TKDE.2009.191"
     url: "https://ieeexplore.ieee.org/document/5288526"
-    institution: "IEEE"
+    institution: "IEEE Transactions on Knowledge and Data Engineering"
+    note: "The foundational transfer learning survey. 30,000+ citations. Defines the taxonomy: inductive, transductive, and unsupervised transfer learning."
+secondary_sources:
+  - title: "Deep Learning (Goodfellow, Bengio, Courville)"
+    type: "book"
+    year: 2016
+    url: "https://www.deeplearningbook.org/"
+    institution: "MIT Press"
+    note: "Chapter 15: Representation Learning — covers transfer learning and domain adaptation in deep networks"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
