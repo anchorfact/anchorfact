@@ -6,21 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Laravel Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://laravel.com/docs/"
-    institution:"Laravel"
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "Laravel Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+    url: "https://laravel.com/docs/"
+    institution: "Laravel"
+    note: "PHP web framework: Eloquent ORM, Blade, Artisan, middleware, queues"
+secondary_sources:
+  - title: "Laravel: Up & Running (3rd Edition)"
+    authors: ["Stauffer, Matt"]
+    type: "book"
+    year: 2023
+    url: "https://www.oreilly.com/library/view/laravel-up/9781098153250/"
+    institution: "O'Reilly"
+    note: "Practical Laravel guide: routing, controllers, Eloquent, testing, deployment"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
