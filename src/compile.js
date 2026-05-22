@@ -311,7 +311,7 @@ writeFileSync(join(distDir, 'manifest.json'), JSON.stringify(manifest, null, 2))
 // Generate root index.html
 const articleLinks = results.map(r => {
   const id = r['@id'].split('/').pop();
-  return `<a href="/kb/${id}/index.json">${r.headline || id}</a> (JSON-LD) · <a href="/kb/${id}/index.txt">Plain text</a> · <a href="/kb/${id}/index.ttl">Turtle</a>`;
+  return `<a href="/${id}/index.json">${r.headline || id}</a> (JSON-LD) · <a href="/${id}/index.txt">Plain text</a> · <a href="/${id}/index.ttl">Turtle</a>`;
 }).join('<br>\n    ');
 
 const rootHtml = `<!DOCTYPE html>
