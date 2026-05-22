@@ -36,9 +36,19 @@ AnchorFact 是一个开源项目，欢迎所有人参与。无论你是领域专
 
 每篇文章必须:
 - [ ] 包含完整的 Frontmatter（id / title / schema_type / confidence / primary_sources）
-- [ ] 至少 1 个可验证的原始来源
+- [ ] 至少 3 个可验证的原始来源（黄金种子要求；社区贡献至少 1 个）
 - [ ] 遵循三层结构（TL;DR → 核心解释 → 详细分析）
 - [ ] 若使用 AI 辅助，已显式标注 `generation_method`
+- [ ] 所有引用来源标注作者姓名、机构、DOI/URL、发表日期
+- [ ] 引用著名专家/大神时，必须基于其公开发表的可验证内容
+
+## 黄金种子标准（Phase 0-1）
+
+当前阶段的黄金种子文章遵循**引用模式**：
+- 基于顶级论文（NeurIPS, Nature, ACL 等）、领域大神著作（Goodfellow, Karpathy 等）、知名技术博客
+- AI 仅用于辅助阅读、提取、整合，不做主创作
+- 每篇至少 3 个独立可验证来源
+- 详见 [DESIGN.md §6.2](./DESIGN.md)
 
 ---
 
