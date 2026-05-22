@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Large Language Models (LLMs) — AnchorFact</title></head>
+<body><article><br>
+## TL;DR<br>
+<br>
+Large Language Models (LLMs) are deep neural networks trained on massive text corpora to predict and generate human language. They scale from hundreds of millions to trillions of parameters and have demonstrated emergent reasoning, coding, and multi-step planning capabilities that were not explicitly programmed. As of 2026, LLMs power most consumer-facing AI products including ChatGPT, Claude, Gemini, and Grok.<br>
+<br>
+## Core Explanation<br>
+<br>
+LLMs are built on the Transformer architecture and trained using self-supervised learning — typically next-token prediction on internet-scale text corpora. The key insight driving their success is that as model size, training data volume, and compute budget increase, LLMs acquire qualitatively new capabilities (emergence). A 175B parameter model can perform arithmetic, translate between languages, and write code, while a 7B parameter model with the same architecture cannot.<br>
+<br>
+The training process involves three stages:<br>
+1. **Pre-training**: Self-supervised on trillions of tokens from web text, books, and code<br>
+2. **Fine-tuning / Instruction tuning**: Supervised learning on human-curated prompt-response pairs<br>
+3. **RLHF (Reinforcement Learning from Human Feedback)** : Alignment with human preferences using reinforcement learning<br>
+<br>
+Training costs scale dramatically: GPT-3 (175B parameters) cost an estimated $4.6 million for a single run in 2020, while GPT-4 (estimated 1.76T parameters using mixture-of-experts) likely exceeded $100 million in 2023.<br>
+<br>
+## Detailed Analysis<br>
+<br>
+### Scaling Laws<br>
+<br>
+Research by Kaplan et al. (2020) and Hoffmann et al. (2022, Chinchilla) established that model performance follows predictable power-law scaling with compute, data, and parameters. The Chinchilla optimal scaling law posits that for a given compute budget, the number of tokens should scale equally with model size — i.e., a 10x larger model needs 10x more training data.<br>
+<br>
+### Emergent Abilities<br>
+<br>
+Wei et al. (2022) documented over 100 tasks where LLM performance jumps from random to above-chance at a specific scale threshold. These include arithmetic (at ~10B parameters), multi-step reasoning (at ~50B parameters), and instruction following (at ~100B parameters). The underlying mechanism of emergence remains an active research question.<br>
+<br>
+### Key LLM Families (2020-2026)<br>
+<br>
+| Family | Developer | Notable Models | Parameters (Latest) | Key Innovation |<br>
+|--------|-----------|---------------|:-------------------:|---------------|<br>
+| GPT | OpenAI | GPT-3, GPT-4, GPT-5 | Trillions | AGI roadmap, multimodal |<br>
+| Claude | Anthropic | Claude 3 Sonnet, Claude Opus | ~100B-1T+ | Constitutional AI alignment |<br>
+| Gemini | Google DeepMind | Gemini Ultra, Gemini Pro | Trillions | Native multimodal, long-context (2M tokens) |<br>
+| LLaMA | Meta | LLaMA 2, LLaMA 3, LLaMA 4 | ~400B+ | Open-weight, community-driven |<br>
+| Grok | xAI | Grok-1, Grok-3 | ~300B+ | Real-time X/Twitter data integration |<br>
+<br>
+### Applications<br>
+<br>
+LLMs are deployed across virtually every knowledge-work domain:<br>
+- **Software Engineering**: GitHub Copilot, Cursor, code generation and review<br>
+- **Content Creation**: Marketing copy, article drafting, social media<br>
+- **Education**: Personalized tutoring, problem solving, essay feedback<br>
+- **Healthcare**: Clinical note summarization, medical literature analysis<br>
+- **Legal**: Contract review, e-discovery, legal research<br>
+<br>
+### Key Benchmarks<br>
+<br>
+| Benchmark | Focus | GPT-4 Score | Claude 3 Opus | Gemini Ultra |<br>
+|-----------|-------|:-----------:|:------------:|:------------:|<br>
+| MMLU | Multitask knowledge | 86.4% | 86.7% | 90.0% |<br>
+| HumanEval | Coding | 87.0% | 84.9% | 74.4% |<br>
+| MATH | Mathematical reasoning | 72.2% | 60.1% | 53.2% |<br>
+| HellaSwag | Commonsense reasoning | 95.3% | 95.4% | 87.8% |<br>
+<br>
+*Scores as of late 2024. Latest model versions may differ.*<br>
+<br>
+## Further Reading<br>
+<br>
+- [GPT-3 Paper](https://arxiv.org/abs/2005.14165): Language Models are Few-Shot Learners<br>
+- [Chinchilla Scaling Laws](https://arxiv.org/abs/2203.15556): Training Compute-Optimal LLMs<br>
+- [HELM Benchmark](https://crfm.stanford.edu/helm/): Holistic Evaluation of Language Models<br>
+</article></body>
+</html>

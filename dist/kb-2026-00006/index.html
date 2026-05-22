@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Retrieval-Augmented Generation (RAG) — AnchorFact</title></head>
+<body><article><br>
+## TL;DR<br>
+<br>
+Retrieval-Augmented Generation (RAG) is an AI architecture that combines large language models with external knowledge retrieval to produce more accurate, up-to-date, and source-attributed responses. Instead of relying solely on parametric knowledge (what the model memorized during training), RAG retrieves relevant documents from a knowledge base in real-time and provides them as context to the generation model. Google Scholar (2026) reports over 5,000 citations for the original RAG paper, reflecting its foundational role in modern AI systems.<br>
+<br>
+## Core Explanation<br>
+<br>
+Traditional LLMs have a critical limitation: their knowledge is frozen at training time. RAG solves this by decoupling knowledge storage (a vector database of documents) from language generation (the LLM). When a user asks a question, the system first retrieves the most semantically relevant documents using embedding-based similarity search, then feeds them as context alongside the user's query to the LLM for answer generation.<br>
+<br>
+The architecture has two phases:<br>
+<br>
+1. **Indexing** (offline): Documents are split into chunks, embedded into vectors using an encoder model, and stored in a vector database<br>
+2. **Retrieval + Generation** (online): The user query is embedded, similar vectors are retrieved (typically top-k = 5-20), and they are fed to the LLM as additional context<br>
+<br>
+This decoupling enables RAG systems to be updated without retraining the LLM — new documents can be added to the knowledge base at any time. RAG also provides source attribution, as the retrieved documents can be cited in the response.<br>
+<br>
+## Detailed Analysis<br>
+<br>
+### RAG vs. Standard LLM Approaches<br>
+<br>
+| Aspect | Standard LLM (Parametric Only) | RAG (Parametric + Retrieval) |<br>
+|--------|:-----------------------------:|:----------------------------:|<br>
+| Knowledge freshness | Frozen at training cutoff | Updated in real-time |<br>
+| Hallucination rate | Higher on factual queries | Reduced by ~50% (empirical) |<br>
+| Source attribution | None | Retrieved documents are citable |<br>
+| Domain adaptation | Requires fine-tuning | Just swap the knowledge base |<br>
+| Inference cost | Lower | Higher (retrieval adds latency) |<br>
+| Factual precision | Lower for niche topics | Higher when knowledge base covers the domain |<br>
+<br>
+### Key Components<br>
+<br>
+**Embedding Models**: Convert text into dense vector representations where semantically similar texts are close in vector space. Popular choices include OpenAI's `text-embedding-3` (2024, 256-3072 dimensions), Cohere Embed, and open-source models like BGE and E5. The quality of the embedding model is one of the strongest determinants of RAG performance.<br>
+<br>
+**Vector Databases**: Store and index document embeddings for fast similarity search. Popular options include:<br>
+- Pinecone: Managed, serverless<br>
+- Weaviate: Open-source, hybrid search (vector + keyword)<br>
+- Qdrant: Rust-based, high-performance<br>
+- pgvector: PostgreSQL extension, simplest to adopt<br>
+- Chroma: Lightweight, developer-friendly<br>
+<br>
+**Chunking Strategies**: How documents are split significantly impacts retrieval quality. Common approaches:<br>
+- Fixed-size chunks (256-1024 tokens) with overlap: Simple but can cut sentences mid-thought<br>
+- Semantic chunking: Split at natural boundaries (paragraphs, sections)<br>
+- Recursive chunking: Build a hierarchy of chunks at different granularities<br>
+- Agentic chunking: Use an LLM to determine optimal split points<br>
+<br>
+**Re-ranking**: After initial retrieval, a cross-encoder model re-scores the top-k candidates for higher relevance. This two-stage approach (bi-encoder retrieval → cross-encoder re-rank) is standard in production RAG systems.<br>
+<br>
+### Advantages and Limitations<br>
+<br>
+**Advantages**:<br>
+- Reduces hallucination on factual queries by grounding responses in retrieved evidence<br>
+- Enables real-time knowledge updates without model retraining<br>
+- Provides verifiable source attribution for each claim<br>
+- Allows domain-specific knowledge bases without fine-tuning<br>
+- Supports access-controlled knowledge (different users see different documents)<br>
+<br>
+**Limitations**:<br>
+- Adds latency (typically 200ms-2s for retrieval phase)<br>
+- Retrieval quality is bottlenecked by embedding model and chunking strategy<br>
+- Cannot reason across documents that were retrieved in separate chunks unless explicitly combined<br>
+- Requires ongoing maintenance of the knowledge base<br>
+- Complex queries may require multi-step retrieval (agentic RAG)<br>
+<br>
+### RAG Variants<br>
+<br>
+| Variant | Description | Use Case |<br>
+|---------|------------|----------|<br>
+| **Naive RAG** | Single retrieval → single generation | Simple Q&A over documents |<br>
+| **Advanced RAG** | Adds query rewriting, re-ranking, context compression | Higher accuracy at moderate cost |<br>
+| **Agentic RAG** | Multi-step retrieval with tool use and reasoning | Complex research tasks |<br>
+| **Graph RAG** | Retrieves from knowledge graphs (not just vectors) | Entity-rich domains |<br>
+| **Multimodal RAG** | Retrieves images, tables, and text | Healthcare, legal, technical docs |<br>
+<br>
+### Applications<br>
+<br>
+RAG is the architecture underlying most production AI systems that require factual accuracy:<br>
+- **AI Search Engines**: Perplexity, Google AI Overviews, ChatGPT Search<br>
+- **Enterprise Knowledge Bases**: Internal documentation Q&A, customer support<br>
+- **Research Assistants**: Elicit, Consensus, Scite — all use RAG over academic papers<br>
+- **Legal and Compliance**: Contract analysis, regulation Q&A<br>
+- **Healthcare**: Clinical decision support, literature retrieval<br>
+<br>
+## Further Reading<br>
+<br>
+- [Original RAG Paper](https://arxiv.org/abs/2005.11401): Lewis et al., 2020<br>
+- [LangChain RAG Tutorial](https://python.langchain.com/docs/tutorials/rag/): Practical implementation guide<br>
+- [LlamaIndex](https://docs.llamaindex.ai/): RAG-focused framework<br>
+</article></body>
+</html>

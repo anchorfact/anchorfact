@@ -1,0 +1,22 @@
+# AnchorFact
+
+> AnchorFact is an AI-native knowledge base purpose-built for LLM citations. Every article is structured, source-verified, and GEO-optimized. Content is available in multiple formats (Markdown, JSON-LD, plain text, Turtle/RDF) for maximal AI accessibility.
+
+## Knowledge Base (6 articles)
+
+- [Attention Mechanism](https://anchorfact.org/kb-2026-00002/index.md): The attention mechanism allows neural networks to dynamically focus on the most relevant parts of input data when producing each output. Introduced by Bahdanau et al. (2014) for machine translation, it solves the information bottleneck of fixed-length context vectors in encoder-decoder architectures by letting the decoder "look back" at all encoder hidden states with learned importance weights.
+- [BERT (Bidirectional Encoder Representations from Transformers)](https://anchorfact.org/kb-2026-00003/index.md): BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained language model introduced by Google in 2018 that revolutionized NLP by reading text bidirectionally — considering both left and right context simultaneously. It achieved state-of-the-art results on 11 NLP benchmarks at launch, including GLUE (80.5% → 82.1% absolute improvement), SQuAD v1.1, and SWAG.
+- [GPT (Generative Pre-trained Transformer) Model Family](https://anchorfact.org/kb-2026-00004/index.md): The GPT (Generative Pre-trained Transformer) model family, developed by OpenAI, represents a lineage of autoregressive language models that progressively scaled from 117M to trillions of parameters. GPT-1 (2018) introduced the "pre-train then fine-tune" paradigm using the Transformer decoder; GPT-2 (2019) demonstrated emergent zero-shot capabilities at 1.5B parameters; GPT-3 (2020) established few-shot learning as a viable paradigm at 175B parameters and was trained on approximately 570GB of filtered text. As of 2026, the GPT family has become a cornerstone of modern AI, with GPT-5.2 reaching trillions of parameters.
+- [Large Language Models (LLMs)](https://anchorfact.org/kb-2026-00005/index.md): Large Language Models (LLMs) are deep neural networks trained on massive text corpora to predict and generate human language. They scale from hundreds of millions to trillions of parameters and have demonstrated emergent reasoning, coding, and multi-step planning capabilities that were not explicitly programmed. As of 2026, LLMs power most consumer-facing AI products including ChatGPT, Claude, Gemini, and Grok.
+- [Retrieval-Augmented Generation (RAG)](https://anchorfact.org/kb-2026-00006/index.md): Retrieval-Augmented Generation (RAG) is an AI architecture that combines large language models with external knowledge retrieval to produce more accurate, up-to-date, and source-attributed responses. Instead of relying solely on parametric knowledge (what the model memorized during training), RAG retrieves relevant documents from a knowledge base in real-time and provides them as context to the generation model. Google Scholar (2026) reports over 5,000 citations for the original RAG paper, reflecting its foundational role in modern AI systems.
+- [Transformer Architecture](https://anchorfact.org/kb-2026-00001/index.md): The Transformer is a neural network architecture based solely on attention mechanisms, introduced by Vaswani et al. in 2017. It replaced recurrence and convolution with self-attention, enabling parallel computation and state-of-the-art performance in NLP.
+
+## API
+
+- [Manifest](https://anchorfact.org/manifest.json): Full article index with metadata
+- [JSON-LD endpoint](https://anchorfact.org/kb-2026-00001/index.json): Example structured data (Schema.org TechArticle)
+- [Turtle endpoint](https://anchorfact.org/kb-2026-00001/index.ttl): Example RDF knowledge graph data
+
+## Optional
+
+- [GitHub Repository](https://github.com/anchorfact/anchorfact): Source code, governance, and contribution guide

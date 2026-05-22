@@ -365,3 +365,30 @@ const rootHtml = `<!DOCTYPE html>
 </html>`;
 writeFileSync(join(distDir, 'index.html'), rootHtml);
 console.log('✅ Root index.html generated');
+
+// Generate llms.txt (AI crawler site map)
+const llmsTxtEntries = results.map(r => {
+  const id = r['@id'].split('/').pop();
+  return `- [${r.headline || id}](https://anchorfact.org/${id}/index.md): ${r.description || ''}`;
+}).join('\n');
+
+const llmsTxt = `# AnchorFact
+
+> AnchorFact is an AI-native knowledge base purpose-built for LLM citations. Every article is structured, source-verified, and GEO-optimized. Content is available in multiple formats (Markdown, JSON-LD, plain text, Turtle/RDF) for maximal AI accessibility.
+
+## Knowledge Base (${results.length} articles)
+
+${llmsTxtEntries}
+
+## API
+
+- [Manifest](https://anchorfact.org/manifest.json): Full article index with metadata
+- [JSON-LD endpoint](https://anchorfact.org/kb-2026-00001/index.json): Example structured data (Schema.org TechArticle)
+- [Turtle endpoint](https://anchorfact.org/kb-2026-00001/index.ttl): Example RDF knowledge graph data
+
+## Optional
+
+- [GitHub Repository](https://github.com/anchorfact/anchorfact): Source code, governance, and contribution guide
+`;
+writeFileSync(join(distDir, 'llms.txt'), llmsTxt);
+console.log('✅ llms.txt generated');
