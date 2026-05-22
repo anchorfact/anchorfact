@@ -6,23 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Spring Boot Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://docs.spring.io/spring-boot/"
-    institution:"VMware"
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "Spring Boot Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "RESTful Web APIs"
-    authors: ["Richardson", "Amundsen"]
+    url: "https://docs.spring.io/spring-boot/"
+    institution: "VMware"
+    note: "Java framework: auto-configuration, starters, actuator, Spring Data, embedded servers"
+secondary_sources:
+  - title: "Cloud Native Java (2nd Edition)"
+    authors: ["Long, Josh", "Bastani, Kenny"]
+    type: "book"
+    year: 2021
+    url: "https://www.oreilly.com/library/view/cloud-native-java/9781492056284/"
+    institution: "O'Reilly"
+    note: "Spring Boot in production: 12-factor apps, cloud-native patterns, Kubernetes integration"
     type: "book"
     year: 2013
     url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
