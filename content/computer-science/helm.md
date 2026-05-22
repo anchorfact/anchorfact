@@ -6,21 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Helm Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://helm.sh/docs/"
-    institution:"CNCF"
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "Helm Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+    url: "https://helm.sh/docs/"
+    institution: "CNCF"
+    note: "Kubernetes package manager: charts, templates, values.yaml, hooks, repositories, Helm Hub"
+secondary_sources:
+  - title: "Kubernetes in Action (2nd Edition)"
+    authors: ["Luksa, Marko"]
+    type: "book"
+    year: 2023
+    url: "https://www.manning.com/books/kubernetes-in-action-second-edition"
+    institution: "Manning"
+    note: "Helm is the de facto package manager for Kubernetes — understanding K8s resource model is essential"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
