@@ -6,21 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"PHP Manual"
-    type:"documentation"
-    year:2026
-    url:"https://www.php.net/docs.php"
-    institution:"The PHP Group"
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "PHP Manual"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+    url: "https://www.php.net/docs.php"
+    institution: "The PHP Group"
+    note: "Server-side language: PHP 8.x, JIT, fibers, named arguments, match expressions"
+secondary_sources:
+  - title: "PHP & MySQL: Server-side Web Development"
+    authors: ["Duckett, Jon"]
+    type: "book"
+    year: 2022
+    url: "https://www.wiley.com/en-us/PHP+%26+MySQL%3A+Server+side+Web+Development-p-9781119149224"
+    institution: "Wiley"
+    note: "Practical PHP 8 guide covering modern web development patterns"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
