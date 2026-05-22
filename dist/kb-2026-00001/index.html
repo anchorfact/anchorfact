@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Transformer Architecture — AnchorFact</title></head>
+<body><article><br>
+## TL;DR<br>
+<br>
+The Transformer is a neural network architecture based solely on attention mechanisms, introduced by Vaswani et al. in 2017. It replaced recurrence and convolution with self-attention, enabling parallel computation and state-of-the-art performance in NLP.<br>
+<br>
+## Core Explanation<br>
+<br>
+The Transformer processes sequences in parallel through stacked encoder and decoder layers. Each layer uses multi-head self-attention to compute relationships between all positions in the input. This design achieves O(1) path length between any two positions, compared to O(n) for recurrent models. According to Google Scholar (2026), the paper has been cited over 150,000 times, making it one of the most influential papers in AI history.<br>
+<br>
+## Detailed Analysis<br>
+<br>
+### Background<br>
+<br>
+Before the Transformer, sequence modeling was dominated by RNNs (LSTM, GRU) and convolutional networks. RNNs process tokens sequentially, limiting parallelism. The Transformer solved this by computing attention between all positions simultaneously.<br>
+<br>
+### Core Mechanism: Self-Attention<br>
+<br>
+Scaled Dot-Product Attention computes:<br>
+```<br>
+Attention(Q, K, V) = softmax(QK^T / √d_k) * V<br>
+```<br>
+Where Q, K, V are learned projections of the input. Multi-head attention runs this in parallel across different learned subspaces.<br>
+<br>
+### Architecture<br>
+<br>
+The Transformer consists of:<br>
+- **Encoder**: 6 identical layers, each with multi-head self-attention + feed-forward network<br>
+- **Decoder**: 6 identical layers, each with masked self-attention + cross-attention to encoder output + feed-forward network<br>
+- **Positional Encoding**: Sine/cosine functions inject position information into the input embeddings<br>
+<br>
+### Impact<br>
+<br>
+The Transformer became the foundation for virtually all major language models: BERT, GPT, T5, LLaMA, Claude, and others. It also expanded beyond NLP to computer vision (ViT), audio (Whisper), and multimodal models.<br>
+<br>
+| Metric | Value | Source |<br>
+|--------|-------|--------|<br>
+| Original paper citations | 150,000+ | Google Scholar, 2026 |<br>
+| Derivative models on HuggingFace | 200,000+ | HuggingFace Hub, 2026 |<br>
+| Training speedup vs LSTM | 10-100x | Original paper |<br>
+<br>
+## Further Reading<br>
+<br>
+- [Attention Is All You Need](https://arxiv.org/abs/1706.03762): Original paper<br>
+- [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/): Visual walkthrough<br>
+</article></body>
+</html>

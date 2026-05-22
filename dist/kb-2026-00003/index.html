@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>BERT (Bidirectional Encoder Representations from Transformers) — AnchorFact</title></head>
+<body><article><br>
+## TL;DR<br>
+<br>
+BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained language model introduced by Google in 2018 that revolutionized NLP by reading text bidirectionally — considering both left and right context simultaneously. It achieved state-of-the-art results on 11 NLP benchmarks at launch, including GLUE (80.5% → 82.1% absolute improvement), SQuAD v1.1, and SWAG.<br>
+<br>
+## Core Explanation<br>
+<br>
+Unlike previous models (ELMo, GPT) that processed text left-to-right or concatenated separate left-to-right and right-to-left passes, BERT uses a masked language modeling (MLM) objective that allows truly bidirectional context. During pre-training, 15% of input tokens are randomly masked, and the model learns to predict them using context from both directions.<br>
+<br>
+BERT's architecture is a multi-layer bidirectional Transformer encoder. The base model has 12 layers (Transformer blocks), 768 hidden dimensions, and 12 attention heads — totaling 110M parameters. The large model doubles layers, hidden size, and heads to 340M parameters. Pre-training used Wikipedia (2.5B words) and BookCorpus (0.8B words) on 16 Cloud TPUs for 4 days.<br>
+<br>
+## Detailed Analysis<br>
+<br>
+### Training Objectives<br>
+<br>
+BERT uses two unsupervised pre-training tasks:<br>
+<br>
+1. **Masked Language Modeling (MLM)** : Randomly mask 15% of tokens. Of those masked positions:<br>
+   - 80% replaced with `[MASK]`<br>
+   - 10% replaced with random token (adds noise for robustness)<br>
+   - 10% left unchanged (prevents model from ignoring unmasked tokens)<br>
+   The model predicts the original token at masked positions.<br>
+<br>
+2. **Next Sentence Prediction (NSP)** : Given two sentences A and B, predict if B follows A. 50% of training pairs are consecutive, 50% are random. This was later found to be non-essential (RoBERTa removed it) but was part of the original design.<br>
+<br>
+### Input Representation<br>
+<br>
+BERT's input combines three embeddings:<br>
+- **Token embeddings**: WordPiece tokenization with 30,000 vocabulary<br>
+- **Segment embeddings**: Learned embedding indicating sentence A vs. B<br>
+- **Position embeddings**: Learned positional encoding (not fixed sinusoids)<br>
+<br>
+Special tokens: `[CLS]` (classification token at start), `[SEP]` (sentence separator).<br>
+<br>
+### Fine-Tuning Paradigm<br>
+<br>
+BERT established the "pre-train then fine-tune" paradigm:<br>
+1. Pre-train on large unlabeled corpus (Wikipedia + BookCorpus)<br>
+2. Fine-tune on downstream task with labeled data (minutes to hours)<br>
+3. Minimal task-specific architecture changes (just add a classification layer)<br>
+<br>
+### Key Benchmarks (at launch, 2018)<br>
+<br>
+| Task | Previous SOTA | BERT Base | BERT Large |<br>
+|------|:-----------:|:---------:|:----------:|<br>
+| GLUE Score | 80.5 | — | 82.1 |<br>
+| SQuAD v1.1 | — | 88.5 F1 | 93.2 F1 |<br>
+| SQuAD v2.0 | — | 76.3 F1 | 83.1 F1 |<br>
+| SWAG | — | — | 86.3 |<br>
+| MultiNLI | 76.5 | 84.6 | 86.7 |<br>
+<br>
+### Legacy<br>
+<br>
+BERT's impact on NLP was profound. It established the Transformer encoder as the dominant architecture for language understanding, inspired a family of variants (RoBERTa, ALBERT, DistilBERT, DeBERTa), and demonstrated that large-scale pre-training with bidirectional context was the key to transfer learning in NLP. Google Scholar (2026) reports over 100,000 citations.<br>
+<br>
+## Further Reading<br>
+<br>
+- [BERT Paper](https://arxiv.org/abs/1810.04805): Original paper by Devlin et al.<br>
+- [The Illustrated BERT](https://jalammar.github.io/illustrated-bert/): Visual walkthrough<br>
+- [HuggingFace BERT](https://huggingface.co/docs/transformers/model_doc/bert): Implementation and usage<br>
+</article></body>
+</html>

@@ -1,0 +1,56 @@
+# Attention Mechanism
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+## TL;DR
+
+The attention mechanism allows neural networks to dynamically focus on the most relevant parts of input data when producing each output. Introduced by Bahdanau et al. (2014) for machine translation, it solves the information bottleneck of fixed-length context vectors in encoder-decoder architectures by letting the decoder "look back" at all encoder hidden states with learned importance weights.
+
+## Core Explanation
+
+In sequence-to-sequence models, the encoder compresses an input sequence into a fixed-length vector, which the decoder then uses to generate the output. For long sequences, this single vector becomes a bottleneck — the decoder loses access to earlier parts of the input.
+
+Attention solves this by computing a weighted sum of all encoder hidden states for each decoder step. The weights (attention scores) are learned and represent how relevant each input position is to the current output position. This creates a direct, differentiable connection between every input-output position pair.
+
+According to Google Scholar (2026), the Bahdanau attention paper has been cited over 35,000 times, making it one of the most influential papers in NLP history.
+
+## Detailed Analysis
+
+### The Bottleneck Problem
+
+Traditional encoder-decoder models (Sutskever et al., 2014) compress the entire input sequence into a single context vector. For a sentence of length n, the encoder must capture all semantic information in a fixed-dimension vector. As n grows, information loss becomes inevitable. Empirical results showed performance degradation for sequences beyond ~30 tokens.
+
+### How Attention Computes Weights
+
+For each decoder timestep t, attention computes:
+1. **Alignment scores**: e_ti = score(s_{t-1}, h_i) for each encoder hidden state h_i
+2. **Attention weights**: α_ti = softmax(e_ti) — normalized to sum to 1
+3. **Context vector**: c_t = Σ α_ti · h_i — weighted sum of encoder states
+4. **Decoder input**: concatenation of c_t with the decoder's previous state
+
+The scoring function can be additive (Bahdanau), dot-product (Luong), or scaled dot-product (Vaswani).
+
+### Variants and Evolution
+
+| Variant | Paper | Key Innovation | Year |
+|---------|-------|---------------|------|
+| Additive Attention | Bahdanau et al. | Feed-forward network computes scores | 2014 |
+| Dot-Product Attention | Luong et al. | Simpler, faster matrix multiplication | 2015 |
+| Multi-Head Attention | Vaswani et al. | Parallel attention heads capture different relationships | 2017 |
+| Self-Attention | Vaswani et al. | Input attends to itself, enabling Transformer | 2017 |
+
+### Impact Beyond NLP
+
+Attention expanded rapidly beyond machine translation:
+- **Computer Vision**: Visual attention (Xu et al., 2015) for image captioning; Vision Transformer (Dosovitskiy et al., 2020) brought pure attention to image classification
+- **Speech**: Attention-based ASR models (Chorowski et al., 2015)
+- **Multimodal**: CLIP (Radford et al., 2021) uses attention for image-text alignment
+
+## Further Reading
+
+- [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473): Original attention paper
+- [CS224n Lecture on Attention](https://web.stanford.edu/class/cs224n/): Stanford NLP course
+- [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/): Visual walkthrough of self-attention
+

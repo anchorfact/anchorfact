@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00002",
+  "headline": "Attention Mechanism",
+  "description": "The attention mechanism allows neural networks to dynamically focus on the most relevant parts of input data when producing each output. Introduced by Bahdanau et al. (2014) for machine translation, it solves the information bottleneck of fixed-length context vectors in encoder-decoder architectures by letting the decoder \"look back\" at all encoder hidden states with learned importance weights.",
+  "dateCreated": "2026-05-22T05:19:00.670Z",
+  "dateModified": "2026-05-22T05:19:00.671Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": []
+}

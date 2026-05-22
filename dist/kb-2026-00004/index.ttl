@@ -1,0 +1,8 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00004>
+  a schema:TechArticle ;
+  schema:headline "GPT (Generative Pre-trained Transformer) Model Family" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .

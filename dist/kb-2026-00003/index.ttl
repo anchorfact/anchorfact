@@ -1,0 +1,8 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00003>
+  a schema:TechArticle ;
+  schema:headline "BERT (Bidirectional Encoder Representations from Transformers)" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
