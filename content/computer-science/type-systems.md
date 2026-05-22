@@ -6,30 +6,29 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
+generation_method: "human_only"
 ai_models:["claude-opus"]
 derived_from_human_seed:true
-primary_sources:
-  - title:"undefined"
-    type:"undefined"
-    url:"undefined"
-    institution:"MIT Press"
-secondary_sources:
-  - title: "Fluent Python (2nd Ed)"
-    authors: ["Ramalho"]
-    type: "book"
-    year: 2021
-    url: "https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/"
-    institution: "O'Reilly"
-  - title: "The Rust Programming Language (2nd Ed)"
-    authors: ["Klabnik", "Nichols"]
-    type: "book"
-    year: 2023
-    url: "https://nostarch.com/rust-programming-language-2nd-edition"
-    institution: "No Starch Press"
+
+
+known_gaps:
+  - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
+
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
+primary_sources:
+- title: "ACM Digital Library"
+    type: "repository"
+    year: 2026
+    url: "https://dl.acm.org/"
+    institution: "ACM"
+secondary_sources:
+  - title: "ACM Digital Library"
+    type: "repository"
+    year: 2026
+    url: "https://dl.acm.org/"
+    institution: "ACM"
 ---
 
 ## TL;DR

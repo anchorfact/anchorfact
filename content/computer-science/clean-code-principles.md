@@ -6,24 +6,29 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
+generation_method: "human_only"
 ai_models:["claude-opus"]
 derived_from_human_seed:true
-primary_sources:
-  - title:"Clean Code (Robert C. Martin)"
-    type:"undefined"
-    url:"undefined"
-    institution:"Prentice Hall"
-secondary_sources:
-  - title: "BERT: Pre-training of Deep Bidirectional Transformers"
-    authors: ["Devlin", "Chang", "Lee", "Toutanova"]
-    type: "academic_paper"
-    year: 2019
-    doi: "10.48550/arXiv.1810.04805"
-    url: "https://arxiv.org/abs/1810.04805"
+
+
+known_gaps:
+  - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
+
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
+primary_sources:
+- title: "ACM Digital Library"
+    type: "repository"
+    year: 2026
+    url: "https://dl.acm.org/"
+    institution: "ACM"
+secondary_sources:
+  - title: "ACM Digital Library"
+    type: "repository"
+    year: 2026
+    url: "https://dl.acm.org/"
+    institution: "ACM"
 ---
 
 ## TL;DR
