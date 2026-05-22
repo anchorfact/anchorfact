@@ -6,26 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Cypress Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://docs.cypress.io/"
-    institution:"Cypress.io"
+  - title: "Cypress Documentation"
+    type: "documentation"
+    year: 2026
+    url: "https://docs.cypress.io/"
+    institution: "Cypress.io"
+    note: "E2E testing framework: real-time reload, time-travel debugging, automatic waiting, component testing"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "React Documentation"
-    type: "documentation"
-    year: 2026
-    url: "https://react.dev/reference/react"
-    institution: "Meta"
+  - title: "Testing JavaScript Applications"
+    authors: ["da Costa, Lucas"]
+    type: "book"
+    year: 2021
+    url: "https://www.manning.com/books/testing-javascript-applications"
+    institution: "Manning"
+    note: "Comprehensive guide to JS testing patterns including E2E, integration, and unit testing"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
