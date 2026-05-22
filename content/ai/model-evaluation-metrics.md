@@ -6,21 +6,24 @@ category:"ai"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Pattern Recognition and Machine Learning (Bishop)"
-    type:"book"
-    year:2006
-    url:"https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/"
-    institution:"Springer"
+  - title: "Pattern Recognition and Machine Learning (Bishop)"
+    authors: ["Bishop, Christopher M."]
+    type: "book"
+    year: 2006
+    url: "https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/"
+    institution: "Springer"
+    note: "Chapter 1: Introduction — covers evaluation metrics, loss functions, and the bias-variance tradeoff"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "An Introduction to Statistical Learning (2nd Edition)"
+    authors: ["James, Gareth", "Witten, Daniela", "Hastie, Trevor", "Tibshirani, Robert"]
+    type: "book"
+    year: 2021
+    url: "https://www.statlearning.com/"
+    institution: "Springer"
+    note: "Chapter 2: Statistical Learning — covers training vs. test error, cross-validation, and the bias-variance decomposition"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
