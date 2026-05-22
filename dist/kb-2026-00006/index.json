@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00006",
   "headline": "Retrieval-Augmented Generation (RAG)",
   "description": "Retrieval-Augmented Generation (RAG) is an AI architecture that combines large language models with external knowledge retrieval to produce more accurate, up-to-date, and source-attributed responses. Instead of relying solely on parametric knowledge (what the model memorized during training), RAG retrieves relevant documents from a knowledge base in real-time and provides them as context to the generation model. Google Scholar (2026) reports over 5,000 citations for the original RAG paper, reflecting its foundational role in modern AI systems.",
-  "dateCreated": "2026-05-22T05:54:35.609Z",
-  "dateModified": "2026-05-22T05:54:35.609Z",
+  "dateCreated": "2026-05-22T05:57:38.914Z",
+  "dateModified": "2026-05-22T05:57:38.914Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -446,3 +446,7 @@ Sitemap: https://anchorfact.org/sitemap.xml
 `;
 writeFileSync(join(distDir, 'robots.txt'), robotsTxt);
 console.log('✅ robots.txt generated');
+
+// IndexNow key file
+writeFileSync(join(distDir, 'dc8a3c2e1f4b5a7d9e0c8b6f3a5d7e9c.txt'), 'dc8a3c2e1f4b5a7d9e0c8b6f3a5d7e9c');
+console.log('✅ IndexNow key generated');
