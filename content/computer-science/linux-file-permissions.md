@@ -1,0 +1,32 @@
+---
+id:"kb-2026-00257"
+title:"Linux File Permissions"
+schema_type:"TechArticle"
+category:"computer-science"
+language:"en"
+confidence:"high"
+last_verified:"2026-05-22"
+generation_method:"ai_assisted"
+ai_models:["claude-opus"]
+derived_from_human_seed:true
+primary_sources:
+  - title:"Linux Documentation Project — File Permissions"
+    type:"undefined"
+    url:"undefined"
+    institution:"TLDP"
+completeness:0.82
+ai_citations:
+  last_citation_check:"2026-05-22"
+---
+
+## TL;DR
+
+Linux file permissions use a 3-tier model: Owner, Group, Others — each with Read (r=4), Write (w=2), Execute (x=1) permissions. Permission bits: `rwxr-xr--` means owner can read/write/execute, group can read/execute, others can read. `chmod 755 file` sets these numerically.
+
+## Core Explanation
+
+Octal notation: `chmod 755` = rwxr-xr-x. Special bits: setuid (4000, run as file owner), setgid (2000, run as group), sticky bit (1000, only owner can delete — used on /tmp). `chown user:group file` changes ownership. Default permissions: umask (subtracted from 666 for files, 777 for dirs). ACL (setfacl/getfacl) provides per-user permissions beyond owner/group/other.
+
+## Further Reading
+
+- [Linux Documentation Project — File Permissions](undefined)
