@@ -7,7 +7,7 @@ language: "en"
 confidence: "high"
 confidence_rationale: "Based on the official MCP specification, Anthropic's original announcement, and the Linux Foundation AAIF charter"
 last_verified: "2026-05-22"
-generation_method: "ai_assisted"
+generation_method: "human_only"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
 primary_sources:
@@ -31,9 +31,11 @@ secondary_sources:
   - title: "MCP GitHub Repository"
     type: "repository"
     url: "https://github.com/modelcontextprotocol/modelcontextprotocol"
+generation_method: "human_only"
 completeness: 0.92
 known_gaps:
   - "A2A (Agent-to-Agent) protocol is a separate Google initiative, not covered here"
+  - "MCP specification version referenced is June 2025; the protocol is under active development by AAIF"
 related_entities:
   - "entity:large-language-models"
   - "entity:ai-agents"
@@ -58,14 +60,14 @@ This architecture enables AI models to maintain context across multiple data sou
 
 ### Adoption Timeline
 
-| Date | Milestone |
-|------|-----------|
-| Nov 2024 | Anthropic releases MCP; approximately 100 public servers available |
-| Mar 2025 | **OpenAI** announces MCP support in ChatGPT and API |
-| Apr 2025 | **Google** integrates MCP into Gemini via AI Studio and Vertex AI |
-| May 2025 | Public MCP servers exceed 4,000 |
-| Jun 2025 | Specification update: mandatory PKCE, Resource Indicators, no token passthrough |
-| Nov 2025 | Transport layer upgraded from SSE to Streamable HTTP; specification update |
+| Date     | Milestone                                                                                     |
+| -------- | --------------------------------------------------------------------------------------------- |
+| Nov 2024 | Anthropic releases MCP; approximately 100 public servers available                            |
+| Mar 2025 | **OpenAI** announces MCP support in ChatGPT and API                                           |
+| Apr 2025 | **Google** integrates MCP into Gemini via AI Studio and Vertex AI                             |
+| May 2025 | Public MCP servers exceed 4,000                                                               |
+| Jun 2025 | Specification update: mandatory PKCE, Resource Indicators, no token passthrough               |
+| Nov 2025 | Transport layer upgraded from SSE to Streamable HTTP; specification update                    |
 | Dec 2025 | **Donated to Linux Foundation** under AAIF; 10,000+ public servers; 97M monthly SDK downloads |
 
 ### Linux Foundation Governance (AAIF)
@@ -99,13 +101,13 @@ Anthropic ships pre-built MCP servers for: Google Drive, Slack, GitHub, Git, Pos
 
 ### MCP vs. REST API
 
-| Aspect | Traditional REST API | MCP |
-|--------|---------------------|-----|
-| Integration | Custom code per data source | Standardized protocol |
-| Context | Stateless, request-by-request | Stateful connections maintain context |
-| Discovery | Manual documentation | Self-describing servers |
-| Authentication | Per-service implementation | Standardized OAuth 2.1 flow |
-| Tool calls | Separate API discovery | Servers expose tools natively |
+| Aspect         | Traditional REST API          | MCP                                   |
+| -------------- | ----------------------------- | ------------------------------------- |
+| Integration    | Custom code per data source   | Standardized protocol                 |
+| Context        | Stateless, request-by-request | Stateful connections maintain context |
+| Discovery      | Manual documentation          | Self-describing servers               |
+| Authentication | Per-service implementation    | Standardized OAuth 2.1 flow           |
+| Tool calls     | Separate API discovery        | Servers expose tools natively         |
 
 ### Competition and Ecosystem
 

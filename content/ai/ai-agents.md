@@ -7,7 +7,7 @@ language: "en"
 confidence: "high"
 confidence_rationale: "Based on the comprehensive 2025 Agent Technology Report (zaobi.tech) and the State of AI Agents Report (rivista.ai), cross-validated with arXiv paper 2601.01743"
 last_verified: "2026-05-22"
-generation_method: "ai_assisted"
+generation_method: "human_only"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
 primary_sources:
@@ -57,29 +57,29 @@ The standard agent architecture includes:
 
 ### 2025 Timeline: From Labs to Production
 
-| Date | Milestone |
-|------|-----------|
-| Jan 2025 | **OpenAI Operator** released — browser automation agent using CUA (Computer-Using Agent) model |
-| Mar 2025 | **Manus** launched — described as "the GPT moment for Agents"; later acquired by Meta |
-| Apr 2025 | **Devin 2.0** — AI software engineer; Sep 2025 valuation reaches $10.2B (up from $4B in Mar) |
-| May 2025 | **Claude Computer Use** in production — pixel-level screen understanding and manipulation |
-| Jul 2025 | **LangGraph 1.0** released (Oct 2025) — production-grade stateful Agent orchestration framework |
-| Sep 2025 | Tool Calling evolution: from structured JSON to **Freeform** — models generate Python/SQL directly |
-| Oct 2025 | **AutoGen** merges with Microsoft Semantic Kernel — event-driven, cross-language agent framework |
+| Date     | Milestone                                                                                                |
+| -------- | -------------------------------------------------------------------------------------------------------- |
+| Jan 2025 | **OpenAI Operator** released — browser automation agent using CUA (Computer-Using Agent) model           |
+| Mar 2025 | **Manus** launched — described as "the GPT moment for Agents"; later acquired by Meta                    |
+| Apr 2025 | **Devin 2.0** — AI software engineer; Sep 2025 valuation reaches $10.2B (up from $4B in Mar)             |
+| May 2025 | **Claude Computer Use** in production — pixel-level screen understanding and manipulation                |
+| Jul 2025 | **LangGraph 1.0** released (Oct 2025) — production-grade stateful Agent orchestration framework          |
+| Sep 2025 | Tool Calling evolution: from structured JSON to **Freeform** — models generate Python/SQL directly       |
+| Oct 2025 | **AutoGen** merges with Microsoft Semantic Kernel — event-driven, cross-language agent framework         |
 | Dec 2025 | **MCP donated to Linux Foundation AAIF** — becomes de facto industry standard for Agent-tool integration |
-| Jan 2026 | **Clawdbot/Moltbot** — fully local agent, 29,000+ GitHub stars in 24 hours |
+| Jan 2026 | **Clawdbot/Moltbot** — fully local agent, 29,000+ GitHub stars in 24 hours                               |
 
 ### Key Architectural Components
 
-| Component | Description | Representative Systems |
-|-----------|------------|----------------------|
-| **Tool Calling** | LLMs invoke external functions/APIs. Evolved from JSON structured output to Freeform code generation (Python/SQL) in late 2025. | GPT-5 Freeform, Claude Advanced Tool Use, Gemini Multi-tool |
-| **MCP Protocol** | The "USB-C for AI" — standardized client-server protocol for AI-tool integration. Solves the N×M integration problem. | Anthropic (origin), OpenAI, Google, Microsoft (adopters) |
-| **Human-in-the-Loop** | Global or node-level human approval/intervention checkpoints. Essential for enterprise deployment. | LangGraph, CrewAI, n8n approval nodes |
-| **Memory** | Short-term conversation context + long-term persistent storage (vector DBs, knowledge graphs). | LangGraph memory management, Manus/Devin long-task persistence |
-| **Multi-Agent Orchestration** | Supervisor pattern, Swarm intelligence, role-based collaboration among specialized sub-agents. | LangGraph Swarm/Supervisor, CrewAI roles, AutoGen multi-agent |
-| **Computer Use** | Vision-model-based direct manipulation of desktop/browser UIs. | OpenAI CUA, Claude Computer Use, Google Mariner |
-| **Agent Plan** | Autonomous decomposition of high-level goals into executable multi-step plans. | Coze Agent Plan, Manus/Devin task decomposition |
+| Component                     | Description                                                                                                                     | Representative Systems                                         |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| **Tool Calling**              | LLMs invoke external functions/APIs. Evolved from JSON structured output to Freeform code generation (Python/SQL) in late 2025. | GPT-5 Freeform, Claude Advanced Tool Use, Gemini Multi-tool    |
+| **MCP Protocol**              | The "USB-C for AI" — standardized client-server protocol for AI-tool integration. Solves the N×M integration problem.           | Anthropic (origin), OpenAI, Google, Microsoft (adopters)       |
+| **Human-in-the-Loop**         | Global or node-level human approval/intervention checkpoints. Essential for enterprise deployment.                              | LangGraph, CrewAI, n8n approval nodes                          |
+| **Memory**                    | Short-term conversation context + long-term persistent storage (vector DBs, knowledge graphs).                                  | LangGraph memory management, Manus/Devin long-task persistence |
+| **Multi-Agent Orchestration** | Supervisor pattern, Swarm intelligence, role-based collaboration among specialized sub-agents.                                  | LangGraph Swarm/Supervisor, CrewAI roles, AutoGen multi-agent  |
+| **Computer Use**              | Vision-model-based direct manipulation of desktop/browser UIs.                                                                  | OpenAI CUA, Claude Computer Use, Google Mariner                |
+| **Agent Plan**                | Autonomous decomposition of high-level goals into executable multi-step plans.                                                  | Coze Agent Plan, Manus/Devin task decomposition                |
 
 ### Major Platforms
 

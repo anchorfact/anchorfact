@@ -7,7 +7,7 @@ language: "en"
 confidence: "high"
 confidence_rationale: "Based on Anthropic's official Constitutional AI description (May 2023) and the January 2026 constitution update"
 last_verified: "2026-05-22"
-generation_method: "ai_assisted"
+generation_method: "human_only"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
 primary_sources:
@@ -19,7 +19,20 @@ primary_sources:
     institution: "Anthropic"
     note: "Updated January 21, 2026"
   - title: "Constitutional AI: Harmlessness from AI Feedback"
-    authors: ["Bai, Yuntao", "Kadavath, Saurav", "Kundu, Sandipan", "Askell, Amanda", "Kernion, Jackson", "Jones, Andy", "Chen, Anna", "Goldie, Anna", "Mirhoseini, Azalia", "McKinnon, Cameron", et al.]
+    authors:
+      [
+        "Bai, Yuntao",
+        "Kadavath, Saurav",
+        "Kundu, Sandipan",
+        "Askell, Amanda",
+        "Kernion, Jackson",
+        "Jones, Andy",
+        "Chen, Anna",
+        "Goldie, Anna",
+        "Mirhoseini, Azalia",
+        "McKinnon, Cameron",
+        et al.,
+      ]
     type: "academic_paper"
     year: 2022
     doi: "10.48550/arXiv.2212.08073"
@@ -48,6 +61,7 @@ Constitutional AI (CAI) is Anthropic's method for training AI systems to be help
 ## Core Explanation
 
 Traditional RLHF relies on human labelers to rank model outputs, which has fundamental limitations:
+
 - **Scalability**: Human labeling is expensive and slow
 - **Consistency**: Different labelers apply different standards
 - **Harm exposure**: Humans must read toxic outputs to label them
@@ -56,9 +70,11 @@ Traditional RLHF relies on human labelers to rank model outputs, which has funda
 Constitutional AI replaces the human feedback loop with a constitution — a set of explicit principles that an AI uses to evaluate its own outputs. The training process has two stages:
 
 ### Stage 1: Supervised Learning (SL)
+
 The model is trained to **critique and revise its own responses** using randomly sampled constitutional principles. For each training example, the model generates a response, critiques it against a specific principle, and produces a revised version. A small set of human-written examples bootstraps this process; after that, the model self-supervises.
 
 ### Stage 2: Reinforcement Learning (RL)
+
 Instead of human preference labels, **AI feedback** is used. For each prompt, the model generates two responses. An AI evaluator (using the same constitution) judges which is better. This AI preference data trains a reward model, which guides PPO-based RL fine-tuning. The result: the model internalizes the constitution's values through reinforcement, without humans ever having to see harmful outputs.
 
 ## The Constitution's Six Sources
@@ -74,25 +90,27 @@ Anthropic's constitution draws from six categories of principles (updated Januar
 
 ## CAI vs. RLHF
 
-| Dimension | RLHF | Constitutional AI |
-|-----------|------|-------------------|
-| Feedback source | Human labelers | AI evaluator (guided by constitution) |
-| Values | Implicit in human preference data | Explicit in written principles |
-| Scalability | Limited by human labeling capacity | Highly scalable (AI supervises AI) |
-| Harm exposure | Humans exposed to toxic content during labeling | No human exposure to harmful outputs |
-| Helpfulness/harmlessness | Trade-off (helpfulness decreases as harmlessness increases) | Pareto improvement (both increase simultaneously) |
-| Transparency | Difficult to audit implicit preferences | Principles can be inspected, debated, and modified |
-| Behavior adjustment | Requires new human labeling campaign | Add or modify a constitutional principle |
+| Dimension                | RLHF                                                        | Constitutional AI                                  |
+| ------------------------ | ----------------------------------------------------------- | -------------------------------------------------- |
+| Feedback source          | Human labelers                                              | AI evaluator (guided by constitution)              |
+| Values                   | Implicit in human preference data                           | Explicit in written principles                     |
+| Scalability              | Limited by human labeling capacity                          | Highly scalable (AI supervises AI)                 |
+| Harm exposure            | Humans exposed to toxic content during labeling             | No human exposure to harmful outputs               |
+| Helpfulness/harmlessness | Trade-off (helpfulness decreases as harmlessness increases) | Pareto improvement (both increase simultaneously)  |
+| Transparency             | Difficult to audit implicit preferences                     | Principles can be inspected, debated, and modified |
+| Behavior adjustment      | Requires new human labeling campaign                        | Add or modify a constitutional principle           |
 
 ## Advantages and Limitations
 
 **Advantages**:
+
 - **Scalable oversight**: AI supervision replaces human supervision (Anthropic calls this "a success story for scalable oversight")
 - **Auditable values**: Anyone can read the constitution and understand what the model was trained to value
 - **Rapid correction**: If Claude exhibits unwanted behavior, Anthropic can write a new principle and retrain
 - **Proportional response**: Principles include "proportionality" language to prevent excessive moralizing
 
 **Limitations**:
+
 - **Constitution authoring is itself value-laden**: Who writes the principles? Anthropic acknowledges this and has stated goals toward more democratic constitution design
 - **Overly specific principles can reduce generalization**: Longer, more detailed principles may produce worse results than concise, general ones
 - **AI evaluator bias**: The evaluating model may have its own blind spots or biases
