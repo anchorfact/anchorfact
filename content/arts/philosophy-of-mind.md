@@ -1,0 +1,33 @@
+---
+id:"kb-2026-00499"
+title:"Philosophy of Mind"
+schema_type:"TechArticle"
+category:"arts"
+language:"en"
+confidence:"high"
+last_verified:"2026-05-22"
+generation_method:"ai_assisted"
+ai_models:["claude-opus"]
+derived_from_human_seed:true
+primary_sources:
+  - title:"Consciousness Explained (Daniel Dennett)"
+    type:"book"
+    year:1991
+    url:"https://www.hachettebookgroup.com/titles/daniel-c-dennett/consciousness-explained/9780316180658/"
+    institution:"Little, Brown"
+completeness:0.82
+ai_citations:
+  last_citation_check:"2026-05-22"
+---
+
+## TL;DR
+
+Philosophy of mind examines the nature of consciousness, mental states, and the mind-body relationship. Positions: dualism (Descartes: mind and body separate), physicalism (mind = brain), functionalism (mental states = functional roles), panpsychism (consciousness is fundamental). The 'hard problem' (Chalmers): why does physical processing produce subjective experience?
+
+## Core Explanation
+
+Mary's Room thought experiment (Jackson, 1982): Mary knows all physical facts about color but has never seen it — does she learn something new when she first sees red? Chinese Room (Searle, 1980): person following instructions manipulates Chinese symbols — understands nothing. Qualia: subjective qualities of experience (the redness of red). Integrated Information Theory (Tononi): consciousness = integrated information (Φ). 'I think, therefore I am' (Descartes, 1641).
+
+## Further Reading
+
+- [Consciousness Explained (Daniel Dennett)](https://www.hachettebookgroup.com/titles/daniel-c-dennett/consciousness-explained/9780316180658/)
