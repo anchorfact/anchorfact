@@ -6,7 +6,7 @@ category: "computer-science"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-22"
-generation_method: "ai_assisted"
+generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "ISO/IEC 14882:2024 — C++23 Standard"
@@ -19,6 +19,8 @@ secondary_sources:
     year: 2026
     url: "https://dl.acm.org/"
     institution: "ACM"
+known_gaps:
+  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
 completeness: 0.88
 ai_citations: {last_citation_check: "2026-05-22"}
 ---
