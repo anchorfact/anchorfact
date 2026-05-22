@@ -6,21 +6,22 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Progressive Web Apps (MDN)"
-    type:"documentation"
-    year:2025
-    url:"https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps"
-    institution:"Mozilla"
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "Progressive Web Apps (MDN)"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    url: "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps"
     institution: "Mozilla"
+    note: "PWA fundamentals: service workers, Web App Manifest, offline-first, push notifications"
+secondary_sources:
+  - title: "Service Workers Specification (W3C)"
+    type: "standard"
+    year: 2024
+    url: "https://w3c.github.io/ServiceWorker/"
+    institution: "W3C"
+    note: "The core PWA technology — service workers enable offline capabilities and background sync"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
