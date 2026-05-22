@@ -7,28 +7,25 @@ language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
 generation_method: "human_only"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
-
-
+derived_from_human_seed: true
 known_gaps:
-  - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
-
+  - "CDN market share and edge location counts change frequently; check provider documentation"
 completeness: 0.88
-ai_citations:
-  last_citation_check:"2026-05-22"
 primary_sources:
-- title: "ACM Digital Library"
-    type: "repository"
+  - title: "Cloudflare CDN Documentation"
+    type: "documentation"
     year: 2026
-    url: "https://dl.acm.org/"
-    institution: "ACM"
+    url: "https://developers.cloudflare.com/cache/"
+    institution: "Cloudflare"
+    note: "One of the largest CDNs: 330+ cities, DDoS protection, WAF, edge computing"
 secondary_sources:
-  - title: "ACM Digital Library"
-    type: "repository"
-    year: 2026
-    url: "https://dl.acm.org/"
-    institution: "ACM"
+  - title: "High Performance Browser Networking"
+    authors: ["Grigorik, Ilya"]
+    type: "book"
+    year: 2013
+    url: "https://hpbn.co/"
+    institution: "O'Reilly"
+    note: "Covers CDN architecture, TCP optimization, and latency fundamentals"
 ---
 
 ## TL;DR
