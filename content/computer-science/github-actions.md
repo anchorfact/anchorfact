@@ -6,22 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"GitHub Actions Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://docs.github.com/en/actions"
-    institution:"GitHub"
+  - title: "GitHub Actions Documentation"
+    type: "documentation"
+    year: 2026
+    url: "https://docs.github.com/en/actions"
+    institution: "GitHub"
+    note: "CI/CD platform: YAML workflows, marketplace actions, matrix builds, reusable workflows, OIDC secrets"
 secondary_sources:
-  - title: "Pro Git (2nd Ed)"
-    authors: ["Chacon", "Straub"]
+  - title: "Continuous Delivery (Humble & Farley)"
+    authors: ["Humble, Jez", "Farley, David"]
     type: "book"
-    year: 2014
-    url: "https://git-scm.com/book/en/v2"
-    institution: "Apress"
+    year: 2010
+    url: "https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/"
+    institution: "Addison-Wesley"
+    note: "The principles behind CI/CD pipelines that GitHub Actions implements"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
