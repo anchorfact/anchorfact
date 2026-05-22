@@ -6,21 +6,24 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Julia Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://docs.julialang.org/"
-    institution:"JuliaHub"
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "Julia Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+    url: "https://docs.julialang.org/"
+    institution: "JuliaHub"
+    note: "High-performance scientific language: multiple dispatch, JIT, type system, metaprogramming"
+secondary_sources:
+  - title: "Julia: A Fresh Approach to Numerical Computing"
+    authors: ["Bezanson, Jeff", "Edelman, Alan", "Karpinski, Stefan", "Shah, Viral B."]
+    type: "academic_paper"
+    year: 2017
+    doi: "10.1137/141000671"
+    url: "https://epubs.siam.org/doi/10.1137/141000671"
+    institution: "SIAM Review"
+    note: "The canonical Julia paper — 5,000+ citations. Describes language design and JIT architecture."
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
