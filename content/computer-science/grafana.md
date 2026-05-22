@@ -6,27 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Grafana Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://grafana.com/docs/"
-    institution:"Grafana Labs"
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "Grafana Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "Elasticsearch: The Definitive Guide"
-    authors: ["Gormley", "Tong"]
+    url: "https://grafana.com/docs/"
+    institution: "Grafana Labs"
+    note: "Open observability platform: dashboards, alerting, Loki (logs), Mimir (metrics), Tempo (traces)"
+secondary_sources:
+  - title: "Site Reliability Engineering (Google)"
+    authors: ["Beyer, Betsy", "Jones, Chris", "Petoff, Jennifer", "Murphy, Niall Richard"]
     type: "book"
-    year: 2015
-    url: "https://www.oreilly.com/library/view/elasticsearch-the-definitive/9781449358532/"
+    year: 2016
+    url: "https://sre.google/books/"
     institution: "O'Reilly"
+    note: "The four golden signals of monitoring — the foundation Grafana helps visualize"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
