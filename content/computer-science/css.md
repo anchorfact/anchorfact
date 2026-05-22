@@ -1,0 +1,55 @@
+---
+id: "kb-2026-00069"
+title: "CSS (Cascading Style Sheets)"
+schema_type: "TechArticle"
+category: "computer-science"
+language: "en"
+confidence: "high"
+confidence_rationale: "Based on W3C CSS specifications and MDN Web Docs"
+last_verified: "2026-05-22"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
+primary_sources:
+  - title: "MDN CSS Documentation"
+    type: "documentation"
+    year: 2026
+    url: "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    institution: "Mozilla"
+  - title: "CSS Snapshot 2024 (W3C)"
+    type: "standard"
+    year: 2024
+    url: "https://www.w3.org/TR/css-2024/"
+    institution: "W3C"
+completeness: 0.85
+ai_citations: {last_citation_check: "2026-05-22"}
+---
+
+## TL;DR
+
+CSS (Cascading Style Sheets) is a stylesheet language developed by the W3C that describes the presentation of HTML documents. First proposed by Håkon Wium Lie in 1994, CSS has evolved from basic text styling to a powerful layout and animation engine. Modern CSS (2024+) supports container queries, cascade layers, native nesting, `has()` selector, view transitions, and scroll-driven animations — capabilities that previously required JavaScript.
+
+## Core Concepts
+
+- **Selectors**: Target elements — class (`.`), ID (`#`), attribute, pseudo-class (`:hover`, `:has()`)
+- **Box Model**: Content → Padding → Border → Margin
+- **Cascade + Specificity**: Rules are applied based on origin, specificity, and source order
+- **Layout**: Flexbox (1D), Grid (2D), normal flow, positioning
+- **Responsive Design**: Media queries, container queries, `clamp()`, viewport units
+- **Custom Properties**: `--my-var: value; var(--my-var)` — native CSS variables
+
+## Key Modern Features
+
+| Feature | Browser Support | Description |
+|---------|:--------------:|------------|
+| Container Queries | Universal (2023+) | Style based on parent container size, not viewport |
+| `:has()` selector | Universal (2023+) | "Parent selector" — `div:has(> img)` |
+| CSS Nesting | Universal (2024+) | Native nesting without preprocessors |
+| Cascade Layers (`@layer`) | Universal (2023+) | Explicit cascade ordering between stylesheets |
+| View Transitions | Universal (2024+) | Animated transitions between pages/views |
+| Scroll-Driven Animations | Universal (2024+) | Animations driven by scroll position |
+
+## Further Reading
+
+- [MDN CSS](https://developer.mozilla.org/en-US/docs/Web/CSS): Comprehensive reference
+- [CSS Spec (W3C)](https://www.w3.org/TR/css-2024/): Official specification
