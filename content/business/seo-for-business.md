@@ -1,0 +1,33 @@
+---
+id:"kb-2026-00433"
+title:"SEO for Business"
+schema_type:"TechArticle"
+category:"business"
+language:"en"
+confidence:"high"
+last_verified:"2026-05-22"
+generation_method:"ai_assisted"
+ai_models:["claude-opus"]
+derived_from_human_seed:true
+primary_sources:
+  - title:"The Art of SEO (Enge, Spencer, Stricchiola, 4th Ed)"
+    type:"book"
+    year:2022
+    url:"https://www.oreilly.com/library/view/the-art-of/9781098102593/"
+    institution:"O'Reilly"
+completeness:0.82
+ai_citations:
+  last_citation_check:"2026-05-22"
+---
+
+## TL;DR
+
+SEO (Search Engine Optimization) increases website visibility in organic search results. Three pillars: on-page (content quality, keywords, title tags), technical (site speed, mobile-friendly, crawlable), off-page (backlinks, authority). Google's algorithm uses 200+ ranking factors. SEO is a long-term investment — results take 3-6 months.
+
+## Core Explanation
+
+Keywords: informational ('what is...'), transactional ('buy...'), navigational ('brand name'). Title tag: most important on-page element — <60 chars, include primary keyword. E-E-A-T (Google): Experience, Expertise, Authoritativeness, Trustworthiness — quality raters guidelines. Backlinks: 'votes of confidence' from other sites — quality > quantity. Content is still king — useful content ranks.
+
+## Further Reading
+
+- [The Art of SEO (Enge, Spencer, Stricchiola, 4th Ed)](https://www.oreilly.com/library/view/the-art-of/9781098102593/)

@@ -1,0 +1,33 @@
+---
+id:"kb-2026-00457"
+title:"Renewable Energy"
+schema_type:"TechArticle"
+category:"science"
+language:"en"
+confidence:"high"
+last_verified:"2026-05-22"
+generation_method:"ai_assisted"
+ai_models:["claude-opus"]
+derived_from_human_seed:true
+primary_sources:
+  - title:"Sustainable Energy — Without the Hot Air (David MacKay)"
+    type:"book"
+    year:2008
+    url:"https://www.withouthotair.com/"
+    institution:"UIT Cambridge"
+completeness:0.82
+ai_citations:
+  last_citation_check:"2026-05-22"
+---
+
+## TL;DR
+
+Renewable energy comes from naturally replenishing sources: solar (photovoltaic: sunlight→electricity), wind (turbines), hydropower (dams), geothermal (Earth's heat), biomass, tidal. Solar and wind are now cheaper than fossil fuels in most of the world (LCOE). Transition challenge: intermittency — storage (batteries, pumped hydro) and grid modernization needed.
+
+## Core Explanation
+
+Solar PV: global capacity 1.6 TW (2024), growing ~30%/year. Wind: 1 TW (2024). China leads in both manufacturing and deployment. Li-ion batteries: costs dropped 97% since 1991. Duck curve: solar midday surplus, evening deficit — solved by storage + demand response. Nuclear: low-carbon but not renewable, controversial. 'The Stone Age didn't end because we ran out of stones' — energy transitions are about better alternatives.
+
+## Further Reading
+
+- [Sustainable Energy — Without the Hot Air (David MacKay)](https://www.withouthotair.com/)
