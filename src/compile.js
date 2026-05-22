@@ -392,3 +392,57 @@ ${llmsTxtEntries}
 `;
 writeFileSync(join(distDir, 'llms.txt'), llmsTxt);
 console.log('✅ llms.txt generated');
+
+// Generate sitemap.xml and robots.txt
+const sitemapUrls = [].concat(
+  `<url><loc>https://anchorfact.org/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>`,
+  `<url><loc>https://anchorfact.org/llms.txt</loc><changefreq>daily</changefreq><priority>0.9</priority></url>`,
+  ...results.flatMap(r => {
+    const id = r['@id'].split('/').pop();
+    return [
+      `<url><loc>https://anchorfact.org/${id}/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>`,
+      `<url><loc>https://anchorfact.org/${id}/index.md</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>`,
+      `<url><loc>https://anchorfact.org/${id}/index.json</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>`,
+    ];
+  })
+);
+const sitemapXml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  ' + sitemapUrls.join('\n  ') + '\n</urlset>\n';
+writeFileSync(join(distDir, 'sitemap.xml'), sitemapXml);
+console.log('✅ sitemap.xml generated');
+
+const robotsTxt = `# robots.txt — AnchorFact (maximal AI accessibility)
+User-agent: *
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: ChatGPT-User
+Allow: /
+Crawl-delay: 0
+
+User-agent: Claude-SearchBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Claude-User
+Allow: /
+Crawl-delay: 0
+
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Google-Extended
+Allow: /
+Crawl-delay: 0
+
+Sitemap: https://anchorfact.org/sitemap.xml
+`;
+writeFileSync(join(distDir, 'robots.txt'), robotsTxt);
+console.log('✅ robots.txt generated');

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://anchorfact.org/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://anchorfact.org/llms.txt</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://anchorfact.org/kb-2026-00002/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://anchorfact.org/kb-2026-00002/index.md</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://anchorfact.org/kb-2026-00002/index.json</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://anchorfact.org/kb-2026-00003/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://anchorfact.org/kb-2026-00003/index.md</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://anchorfact.org/kb-2026-00003/index.json</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://anchorfact.org/kb-2026-00004/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://anchorfact.org/kb-2026-00004/index.md</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://anchorfact.org/kb-2026-00004/index.json</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://anchorfact.org/kb-2026-00005/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://anchorfact.org/kb-2026-00005/index.md</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://anchorfact.org/kb-2026-00005/index.json</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://anchorfact.org/kb-2026-00006/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://anchorfact.org/kb-2026-00006/index.md</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://anchorfact.org/kb-2026-00006/index.json</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://anchorfact.org/kb-2026-00001/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://anchorfact.org/kb-2026-00001/index.md</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://anchorfact.org/kb-2026-00001/index.json</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+</urlset>

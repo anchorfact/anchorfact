@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00001",
   "headline": "Transformer Architecture",
   "description": "The Transformer is a neural network architecture based solely on attention mechanisms, introduced by Vaswani et al. in 2017. It replaced recurrence and convolution with self-attention, enabling parallel computation and state-of-the-art performance in NLP.",
-  "dateCreated": "2026-05-22T05:47:42.147Z",
-  "dateModified": "2026-05-22T05:47:42.147Z",
+  "dateCreated": "2026-05-22T05:54:35.611Z",
+  "dateModified": "2026-05-22T05:54:35.611Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
