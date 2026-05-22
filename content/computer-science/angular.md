@@ -6,27 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Angular Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://angular.dev/"
-    institution:"Google"
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "Angular Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "Effective TypeScript (2nd Ed)"
-    authors: ["Vanderkam"]
+    url: "https://angular.dev/"
+    institution: "Google"
+    note: "Official Angular documentation: components, signals, dependency injection, RxJS"
+secondary_sources:
+  - title: "Effective TypeScript (2nd Edition)"
+    authors: ["Vanderkam, Dan"]
     type: "book"
     year: 2024
     url: "https://www.oreilly.com/library/view/effective-typescript-2nd/9781098155056/"
     institution: "O'Reilly"
+    note: "Angular's primary language is TypeScript — this book covers TS patterns used throughout Angular development"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
