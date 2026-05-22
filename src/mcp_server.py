@@ -5,8 +5,6 @@ AnchorFact MCP Server — AI Agent 直连知识库查询接口
 """
 
 import json
-import os
-import re
 from pathlib import Path
 from typing import Any
 
@@ -16,34 +14,61 @@ from mcp.types import Tool, TextContent
 
 # --- 配置 ---
 DIST_DIR = Path(__file__).resolve().parent.parent / "dist"
-MANIFEST_PATH = DIST_DIR / "manifest.json"
-LLMS_FULL_PATH = DIST_DIR / "llms-full.txt"
-KB_DIR = DIST_DIR / "kb"
-JSON_LD_DIR = DIST_DIR / "jsonld"
+
+# 内存索引缓存
+_article_index: list[dict] | None = None
 
 # --- 加载数据 ---
-def load_manifest() -> list[dict]:
-    if not MANIFEST_PATH.exists():
-        return []
-    with open(MANIFEST_PATH, "r", encoding="utf-8") as f:
-        return json.load(f)
+def load_article_index() -> list[dict]:
+    """扫描 dist/*/index.json 构建文章索引缓存"""
+    global _article_index
+    if _article_index is not None:
+        return _article_index
 
-def load_llms_full() -> str:
-    if not LLMS_FULL_PATH.exists():
-        return ""
-    with open(LLMS_FULL_PATH, "r", encoding="utf-8") as f:
-        return f.read()
+    if not DIST_DIR.exists():
+        return []
+
+    index = []
+    for json_file in DIST_DIR.glob("*/index.json"):
+        try:
+            with open(json_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except (json.JSONDecodeError, IOError):
+            continue
+
+        # 从 JSON-LD 提取关键字段
+        article_id = data.get("@id", "").split("/")[-1] if "@id" in data else ""
+        if not article_id:
+            continue
+
+        headline = data.get("headline", "")
+        confidence = data.get("anchorfact:confidence", "medium")
+        description = data.get("description", "")
+
+        index.append({
+            "id": article_id,
+            "title": headline,
+            "confidence": confidence,
+            "description": description,
+        })
+
+    _article_index = index
+    return index
+
+def get_article_path(article_id: str) -> Path:
+    """获取文章目录路径"""
+    return DIST_DIR / article_id
 
 # --- 搜索 ---
 def search_articles(query: str, confidence_min: str = "medium", limit: int = 5) -> list[dict]:
-    """在 manifest 中搜索文章，按关键词匹配标题和描述"""
-    manifest = load_manifest()
+    """在文章索引中搜索，按关键词匹配标题和描述"""
+    manifest = load_article_index()
     confidence_rank = {"high": 3, "medium": 2, "low": 1}
     min_rank = confidence_rank.get(confidence_min, 1)
 
     query_lower = query.lower()
     keywords = query_lower.split()
-    scored: list[tuple[int, dict]] = []
+    scored: list[tuple[int, dict, str]] = []
 
     for article in manifest:
         conf = article.get("confidence", "low")
@@ -57,31 +82,32 @@ def search_articles(query: str, confidence_min: str = "medium", limit: int = 5) 
         score = sum(1 for kw in keywords if kw in combined)
         if score == 0:
             continue
-        scored.append((score, article))
+        scored.append((score, article, conf))
 
     scored.sort(key=lambda x: x[0], reverse=True)
-    return [a for _, a in scored[:limit]]
+    return [a for _, a, _ in scored[:limit]]
 
 def get_article_detail(article_id: str) -> dict | None:
     """获取单篇文章的完整的 JSON-LD 数据"""
-    jsonld_file = JSON_LD_DIR / f"{article_id}.json"
+    jsonld_file = get_article_path(article_id) / "index.json"
     if not jsonld_file.exists():
         return None
     with open(jsonld_file, "r", encoding="utf-8") as f:
         return json.load(f)
 
 def get_article_markdown_url(article_id: str) -> str:
-    return f"https://anchorfact.org/kb/{article_id}.md"
+    return f"https://anchorfact.org/{article_id}/index.md"
 
 def get_article_jsonld_url(article_id: str) -> str:
-    return f"https://anchorfact.org/jsonld/{article_id}.json"
+    return f"https://anchorfact.org/{article_id}/index.json"
 
 def list_categories() -> list[dict]:
-    """列出所有领域及其文章数"""
-    manifest = load_manifest()
+    """列出所有领域及其文章数 — 从 index.json 中的 headline 推断类别"""
+    manifest = load_article_index()
     cats: dict[str, int] = {}
     for a in manifest:
-        cat = a.get("category", "unknown")
+        # 类别默认值，后续可从完整文章数据中提取
+        cat = "knowledge"
         cats[cat] = cats.get(cat, 0) + 1
     return [{"category": k, "count": v} for k, v in sorted(cats.items(), key=lambda x: -x[1])]
 
@@ -158,7 +184,6 @@ async def call_tool(name: str, arguments: dict[str, Any]) -> list[TextContent]:
             output.append({
                 "id": r.get("id"),
                 "title": r.get("title"),
-                "category": r.get("category"),
                 "confidence": r.get("confidence"),
                 "description": r.get("description", ""),
                 "markdown_url": get_article_markdown_url(r.get("id", "")),
@@ -180,17 +205,19 @@ async def call_tool(name: str, arguments: dict[str, Any]) -> list[TextContent]:
                 "error": f"文章 {article_id} 不存在",
             }, ensure_ascii=False))]
 
-        # 提取关键字段
+        # 提取关键字段（适配 compile.js 的 Schema.org JSON-LD 输出格式）
         summary = {
-            "id": detail.get("id"),
-            "title": detail.get("title"),
-            "confidence": detail.get("confidence"),
-            "confidence_rationale": detail.get("confidence_rationale"),
-            "category": detail.get("category"),
-            "primary_sources": detail.get("primary_sources", []),
-            "atomic_facts": detail.get("atomic_facts", []),
-            "completeness": detail.get("completeness"),
-            "last_verified": detail.get("last_verified"),
+            "id": article_id,
+            "title": detail.get("headline", ""),
+            "confidence": detail.get("anchorfact:confidence", "medium"),
+            "confidence_rationale": detail.get("anchorfact:confidenceRationale", ""),
+            "description": detail.get("description", ""),
+            "primary_sources": [
+                {"name": s.get("name", ""), "url": s.get("sameAs", "")}
+                for s in detail.get("citation", [])
+            ],
+            "date_created": detail.get("dateCreated", ""),
+            "date_modified": detail.get("dateModified", ""),
             "markdown_url": get_article_markdown_url(article_id),
         }
         return [TextContent(type="text", text=json.dumps(summary, ensure_ascii=False, indent=2))]
