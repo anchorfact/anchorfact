@@ -6,21 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Terraform Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://developer.hashicorp.com/terraform/docs"
-    institution:"HashiCorp"
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "Terraform Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+    url: "https://developer.hashicorp.com/terraform/docs"
+    institution: "HashiCorp"
+    note: "IaC: HCL, providers, resources, modules, plan/apply, OpenTofu fork"
+secondary_sources:
+  - title: "Terraform: Up & Running (3rd Edition)"
+    authors: ["Brikman, Yevgeniy"]
+    type: "book"
+    year: 2022
+    url: "https://www.oreilly.com/library/view/terraform-up/9781098116736/"
+    institution: "O'Reilly"
+    note: "Production Terraform: remote state, team workflows, Terragrunt, CI/CD"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
