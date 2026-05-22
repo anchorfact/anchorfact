@@ -1,0 +1,97 @@
+---
+id: "kb-2026-00019"
+title: "GraphRAG (Microsoft)"
+schema_type: "TechArticle"
+category: "ai"
+language: "en"
+confidence: "high"
+confidence_rationale: "Based on the official Microsoft GraphRAG project page, GitHub repository (33,157 stars), and published timeline"
+last_verified: "2026-05-22"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
+primary_sources:
+  - title: "GraphRAG — Microsoft Research Project Page"
+    type: "project_page"
+    url: "https://www.microsoft.com/en-us/research/project/graphrag/"
+    institution: "Microsoft Research"
+  - title: "GraphRAG GitHub Repository"
+    type: "repository"
+    url: "https://github.com/microsoft/graphrag"
+    institution: "Microsoft"
+    stars: 33157
+    forks: 3513
+  - title: "From Local to Global: A Graph RAG Approach to Query-Focused Summarization"
+    authors: ["Edge, Darren", "Trinh, Ha", "Cheng, Newman", "Bradley, Joshua", "Chao, Alex", "Mody, Apurva", "Truitt, Steven", "Larson, Jonathan"]
+    type: "academic_paper"
+    year: 2024
+    url: "https://www.microsoft.com/en-us/research/publication/from-local-to-global-a-graph-rag-approach-to-query-focused-summarization/"
+    institution: "Microsoft Research"
+completeness: 0.90
+related_entities:
+  - "entity:rag"
+  - "entity:knowledge-graphs"
+  - "entity:large-language-models"
+ai_citations:
+  last_citation_check: "2026-05-22"
+---
+
+## TL;DR
+
+GraphRAG is a structured, hierarchical approach to Retrieval-Augmented Generation developed by Microsoft Research, open-sourced on July 2, 2024. Unlike standard RAG which retrieves flat text chunks via vector similarity, GraphRAG constructs a knowledge graph from raw text, detects communities using graph algorithms, and generates hierarchical summaries at multiple levels. This enables both local (entity-level) and global (dataset-level) query understanding. As of May 2026, the open-source repository has 33,157 GitHub stars and is deployed in Microsoft Discovery, an Azure-based agentic platform for scientific research.
+
+## Core Explanation
+
+Standard RAG retrieves the top-k most semantically similar text chunks and feeds them to an LLM. This works well for factoid questions ("What is X?") but fails on global queries that require synthesizing information across an entire dataset ("What are the main themes in these 1,000 documents?"). GraphRAG solves this by:
+
+1. **Entity and Relationship Extraction**: LLM extracts entities and relationships from source documents
+2. **Knowledge Graph Construction**: Entities become nodes, relationships become edges
+3. **Community Detection**: Graph algorithms (Leiden community detection) identify clusters of related entities
+4. **Hierarchical Summarization**: LLM generates summaries at community, sub-community, and entity levels
+5. **Dual Search Modes**:
+   - **Local Search**: Entity-focused queries use the entity's neighborhood in the graph
+   - **Global Search**: Dataset-level queries use community summaries to answer broad thematic questions
+
+## Development Timeline
+
+| Date | Milestone |
+|------|-----------|
+| Feb 13, 2024 | First blog post: "Unlocking LLM discovery on narrative private data" |
+| Jul 2, 2024 | **Open-sourced on GitHub** |
+| Sep 9, 2024 | Auto-tuning: automatic parameter optimization for new domains |
+| Oct 31, 2024 | **DRIFT Search**: combines global and local search |
+| Nov 15, 2024 | Dynamic community selection for improved global search |
+| Nov 25, 2024 | **LazyGraphRAG**: cost-optimized variant |
+| Dec 16, 2024 | **GraphRAG 1.0** official release |
+| Mar 19, 2025 | Claimify: high-quality claim extraction |
+| Jun 5, 2025 | BenchmarkQED: automated RAG benchmarking |
+| Aug 5, 2025 | **VeriTrail**: hallucination detection and attribution |
+| May 2026 | 33,157 GitHub stars, deployed in Microsoft Discovery |
+
+## Comparison: Standard RAG vs. GraphRAG
+
+| Dimension | Standard RAG | GraphRAG |
+|-----------|-------------|----------|
+| Data structure | Flat vector chunks | Knowledge graph (entities + relations) |
+| Retrieval method | Semantic similarity (vector search) | Graph traversal + community detection + vector search |
+| Query types | Local (factoid) | **Both local and global** (dataset-level synthesis) |
+| Explainability | Retrieved chunks | Graph paths, community summaries, entity relationships |
+| Information loss | Chunk boundaries may fragment connected ideas | Entity-relationship model preserves document-level connections |
+| Cost | Lower (single retrieval + generation) | Higher (graph construction + multi-level summarization) |
+
+## Key Components
+
+- **LazyGraphRAG** (Nov 2024): Reduces indexing costs by 100x compared to full GraphRAG while maintaining quality — uses lightweight embedding-based graph construction instead of full LLM extraction
+- **DRIFT Search** (Oct 2024): Hybrid search combining global community summaries with local entity-level retrieval
+- **VeriTrail** (Aug 2025): Attribution framework that traces each generated claim back to source documents, detecting hallucinations
+- **Claimify** (Mar 2025): Extracts structured, verifiable claims from LLM outputs for downstream verification
+
+## Production Deployment
+
+Microsoft Discovery (built on Azure) integrates GraphRAG and LazyGraphRAG for scientific research — an agentic platform that helps researchers query and synthesize insights across large document corpora. A Solution Accelerator (API experience on Azure) is available for enterprise deployment, though the original accelerator has been archived in favor of the core library.
+
+## Further Reading
+
+- [GraphRAG GitHub](https://github.com/microsoft/graphrag): Open-source repository (33K+ stars)
+- [Microsoft Research Project Page](https://www.microsoft.com/en-us/research/project/graphrag/): Official overview and publications
+- [GraphRAG Paper](https://www.microsoft.com/en-us/research/publication/from-local-to-global-a-graph-rag-approach-to-query-focused-summarization/): From Local to Global — A Graph RAG Approach
