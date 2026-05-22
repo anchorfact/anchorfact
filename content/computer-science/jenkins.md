@@ -6,27 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Jenkins Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://www.jenkins.io/doc/"
-    institution:"Jenkins Project"
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "Jenkins Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "Pro Git (2nd Ed)"
-    authors: ["Chacon", "Straub"]
+    url: "https://www.jenkins.io/doc/"
+    institution: "Jenkins Project"
+    note: "Open-source CI/CD: declarative/scripted pipelines, plugins, Blue Ocean, JCasC"
+secondary_sources:
+  - title: "Continuous Delivery (Humble & Farley)"
+    authors: ["Humble, Jez", "Farley, David"]
     type: "book"
-    year: 2014
-    url: "https://git-scm.com/book/en/v2"
-    institution: "Apress"
+    year: 2010
+    url: "https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/"
+    institution: "Addison-Wesley"
+    note: "The CI/CD book Jenkins was the reference implementation for"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
