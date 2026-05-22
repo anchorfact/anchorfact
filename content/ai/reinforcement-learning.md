@@ -6,21 +6,25 @@ category:"ai"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Reinforcement Learning: An Introduction (2nd Ed, Sutton & Barto)"
-    type:"book"
-    year:2018
-    url:"http://incompleteideas.net/book/the-book-2nd.html"
-    institution:"MIT Press"
+  - title: "Reinforcement Learning: An Introduction (2nd Edition)"
+    authors: ["Sutton, Richard S.", "Barto, Andrew G."]
+    type: "book"
+    year: 2018
+    url: "http://incompleteideas.net/book/the-book-2nd.html"
+    institution: "MIT Press"
+    note: "The definitive RL textbook — covers MDPs, DP, Monte Carlo, TD learning, policy gradients, and deep RL"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "Human-level control through deep reinforcement learning (DQN)"
+    authors: ["Mnih, Volodymyr", "Kavukcuoglu, Koray", "Silver, David", "et al."]
+    type: "academic_paper"
+    year: 2015
+    doi: "10.1038/nature14236"
+    url: "https://www.nature.com/articles/nature14236"
+    institution: "Nature"
+    note: "Published in Nature 2015. DeepMind's DQN mastered Atari games from pixels. 30,000+ citations. Launched the deep RL era."
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
