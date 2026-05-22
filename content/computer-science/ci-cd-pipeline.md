@@ -6,21 +6,24 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Continuous Delivery (Jez Humble, David Farley)"
-    type:"book"
-    year:2010
-    url:"https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/"
-    institution:"Addison-Wesley"
+  - title: "Continuous Delivery (Jez Humble, David Farley)"
+    authors: ["Humble, Jez", "Farley, David"]
+    type: "book"
+    year: 2010
+    url: "https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/"
+    institution: "Addison-Wesley"
+    note: "The definitive CI/CD book. Defined the continuous delivery pipeline: build → test → deploy."
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "The DevOps Handbook (2nd Edition)"
+    authors: ["Kim, Gene", "Humble, Jez", "Debois, Patrick", "Willis, John"]
+    type: "book"
+    year: 2021
+    url: "https://itrevolution.com/product/the-devops-handbook-second-edition/"
+    institution: "IT Revolution"
+    note: "CI/CD in the broader DevOps context: flow, feedback, and continuous learning"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
