@@ -6,21 +6,22 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Express.js Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://expressjs.com/"
-    institution:"OpenJS Foundation"
+  - title: "Express.js Documentation"
+    type: "documentation"
+    year: 2026
+    url: "https://expressjs.com/"
+    institution: "OpenJS Foundation"
+    note: "Minimal Node.js web framework: routing, middleware, request/response handling"
 secondary_sources:
   - title: "MDN Web Docs — HTTP"
     type: "documentation"
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
     institution: "Mozilla"
+    note: "Express is an HTTP server framework — understanding HTTP fundamentals is essential for Express development"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
