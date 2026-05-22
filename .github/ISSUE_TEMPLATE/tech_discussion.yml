@@ -1,0 +1,23 @@
+name: 技术与功能讨论
+description: 讨论技术架构、编译管线、MCP Server、网站功能等
+title: "[技术] "
+labels: ["技术"]
+body:
+  - type: dropdown
+    attributes:
+      label: 涉及模块
+      options:
+        - compile.js（编译管线）
+        - MCP Server
+        - 网站 / Cloudflare 部署
+        - Schema / 数据模型
+        - 内容标准
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 描述
+      description: 详细描述你的想法、需求或问题
+    validations:
+      required: true

@@ -1,0 +1,31 @@
+name: 内容错误报告
+description: 报告文章中的事实错误、置信度问题或来源缺失
+title: "[勘误] "
+labels: ["勘误"]
+body:
+  - type: input
+    attributes:
+      label: 文章 ID 或链接
+      placeholder: kb-2026-00001 或 https://anchorfact.org/kb/kb-2026-00001.md
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 错误描述
+      description: 请明确指出哪句话或哪个事实有问题
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 正确信息与来源
+      description: 提供正确的信息和可验证的来源（DOI、URL、书籍页码等）
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: 影响范围
+      options:
+        - 原子事实（单个陈述）
+        - 段落
+        - 整篇文章
+        - 多篇文章
