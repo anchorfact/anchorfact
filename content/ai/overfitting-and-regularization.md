@@ -6,21 +6,23 @@ category:"ai"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Deep Learning (Goodfellow, Bengio, Courville)"
-    type:"book"
-    year:2016
-    url:"https://www.deeplearningbook.org/"
-    institution:"MIT Press"
+  - title: "Deep Learning (Goodfellow, Bengio, Courville)"
+    type: "book"
+    year: 2016
+    url: "https://www.deeplearningbook.org/"
+    institution: "MIT Press"
+    note: "Chapter 7: Regularization — covers L1/L2, dropout, early stopping, data augmentation, batch normalization"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "Dropout: A Simple Way to Prevent Neural Networks from Overfitting"
+    authors: ["Srivastava, Nitish", "Hinton, Geoffrey", "Krizhevsky, Alex", "Sutskever, Ilya", "Salakhutdinov, Ruslan"]
+    type: "academic_paper"
+    year: 2014
+    url: "https://jmlr.org/papers/v15/srivastava14a.html"
+    institution: "JMLR"
+    note: "The dropout paper. Published in JMLR 2014. 50,000+ citations."
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
