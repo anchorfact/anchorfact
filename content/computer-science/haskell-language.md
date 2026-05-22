@@ -6,27 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Haskell Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://www.haskell.org/documentation/"
-    institution:"Haskell.org"
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "Haskell Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "The Rust Programming Language (2nd Ed)"
-    authors: ["Klabnik", "Nichols"]
+    url: "https://www.haskell.org/documentation/"
+    institution: "Haskell.org"
+    note: "Pure functional language: lazy evaluation, monads, type classes, GHC, Cabal"
+secondary_sources:
+  - title: "Learn You a Haskell for Great Good!"
+    authors: ["Lipovaca, Miran"]
     type: "book"
-    year: 2023
-    url: "https://nostarch.com/rust-programming-language-2nd-edition"
+    year: 2011
+    url: "http://learnyouahaskell.com/"
     institution: "No Starch Press"
+    note: "The most popular Haskell introduction, freely available online"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
