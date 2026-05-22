@@ -6,23 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Prettier Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://prettier.io/docs/"
-    institution:"Prettier"
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "Prettier Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "Effective TypeScript (2nd Ed)"
-    authors: ["Vanderkam"]
+    url: "https://prettier.io/docs/"
+    institution: "Prettier"
+    note: "Opinionated code formatter: JS, TS, CSS, HTML, JSON, Markdown, YAML — integrates with ESLint"
+secondary_sources:
+  - title: "Effective TypeScript (2nd Edition)"
+    authors: ["Vanderkam, Dan"]
+    type: "book"
+    year: 2024
+    url: "https://www.oreilly.com/library/view/effective-typescript-2nd/9781098155056/"
+    institution: "O'Reilly"
+    note: "Prettier is commonly used with TypeScript — Effective TS covers code style patterns Prettier enforces"
     type: "book"
     year: 2024
     url: "https://www.oreilly.com/library/view/effective-typescript-2nd/9781098155056/"
