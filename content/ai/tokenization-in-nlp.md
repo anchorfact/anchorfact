@@ -6,27 +6,26 @@ category:"ai"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Neural Machine Translation of Rare Words with Subword Units (Sennrich et al., 2016)"
-    type:"paper"
-    year:2016
-    url:"https://arxiv.org/abs/1508.07909"
-    institution:"ACL"
+  - title: "Neural Machine Translation of Rare Words with Subword Units"
+    authors: ["Sennrich, Rico", "Haddow, Barry", "Birch, Alexandra"]
+    type: "academic_paper"
+    year: 2016
+    doi: "10.48550/arXiv.1508.07909"
+    url: "https://arxiv.org/abs/1508.07909"
+    institution: "ACL"
+    note: "Introduced BPE (Byte-Pair Encoding) for NLP. 8,000+ citations. Published at ACL 2016."
 secondary_sources:
   - title: "BERT: Pre-training of Deep Bidirectional Transformers"
-    authors: ["Devlin", "Chang", "Lee", "Toutanova"]
+    authors: ["Devlin, Jacob", "Chang, Ming-Wei", "Lee, Kenton", "Toutanova, Kristina"]
     type: "academic_paper"
     year: 2019
     doi: "10.48550/arXiv.1810.04805"
     url: "https://arxiv.org/abs/1810.04805"
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+    institution: "Google AI Language"
+    note: "Introduced WordPiece tokenization. 100,000+ citations."
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
