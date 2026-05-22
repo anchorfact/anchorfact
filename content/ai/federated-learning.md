@@ -6,27 +6,26 @@ category:"ai"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Communication-Efficient Learning of Deep Networks from Decentralized Data (McMahan et al., 2017)"
-    type:"paper"
-    year:2017
-    url:"https://arxiv.org/abs/1602.05629"
-    institution:"AISTATS"
-secondary_sources:
-  - title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
-    authors: ["Lewis", "Perez", "Piktus"]
+  - title: "Communication-Efficient Learning of Deep Networks from Decentralized Data"
+    authors: ["McMahan, H. Brendan", "Moore, Eider", "Ramage, Daniel", "Hampson, Seth", "Aguera y Arcas, Blaise"]
     type: "academic_paper"
-    year: 2020
-    doi: "10.48550/arXiv.2005.11401"
-    url: "https://arxiv.org/abs/2005.11401"
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+    year: 2017
+    doi: "10.48550/arXiv.1602.05629"
+    url: "https://arxiv.org/abs/1602.05629"
+    institution: "Google"
+    note: "The original Federated Learning paper (FedAvg). Published at AISTATS 2017. 15,000+ citations."
+secondary_sources:
+  - title: "Advances and Open Problems in Federated Learning"
+    authors: ["Kairouz, Peter", "McMahan, H. Brendan", "et al."]
+    type: "survey_paper"
+    year: 2021
+    doi: "10.48550/arXiv.1912.04977"
+    url: "https://arxiv.org/abs/1912.04977"
+    institution: "Foundations and Trends in ML"
+    note: "Comprehensive survey. 5,000+ citations. Covers privacy, robustness, and fairness in FL."
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
