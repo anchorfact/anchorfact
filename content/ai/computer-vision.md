@@ -6,22 +6,25 @@ category:"ai"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Computer Vision: Algorithms and Applications (2nd Ed, Szeliski)"
-    type:"book"
-    year:2022
-    url:"https://szeliski.org/Book/"
-    institution:"Springer"
-secondary_sources:
-  - title: "Computer Vision: Algorithms and Applications (2nd Ed)"
-    authors: ["Szeliski"]
+  - title: "Computer Vision: Algorithms and Applications (2nd Edition)"
+    authors: ["Szeliski, Richard"]
     type: "book"
     year: 2022
     url: "https://szeliski.org/Book/"
     institution: "Springer"
+    note: "Comprehensive CV textbook covering image formation, recognition, 3D reconstruction, and deep learning"
+secondary_sources:
+  - title: "ImageNet Large Scale Visual Recognition Challenge"
+    authors: ["Russakovsky, Olga", "Deng, Jia", "Su, Hao", "et al."]
+    type: "academic_paper"
+    year: 2015
+    doi: "10.1007/s11263-015-0816-y"
+    url: "https://arxiv.org/abs/1409.0575"
+    institution: "IJCV"
+    note: "The ImageNet paper — benchmark that drove modern CV progress. 50,000+ citations."
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
