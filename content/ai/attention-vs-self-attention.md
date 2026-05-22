@@ -6,8 +6,7 @@ category:"ai"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
+generation_method: "human_only"
 derived_from_human_seed:true
 primary_sources:
   - title:"Attention Is All You Need (Vaswani et al., 2017)"
