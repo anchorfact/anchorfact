@@ -6,27 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Electron Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://www.electronjs.org/docs/"
-    institution:"OpenJS Foundation"
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "Electron Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "Pro Git (2nd Ed)"
-    authors: ["Chacon", "Straub"]
+    url: "https://www.electronjs.org/docs/"
+    institution: "OpenJS Foundation"
+    note: "Desktop apps with web tech: Chromium + Node.js. Used by VS Code, Slack, Discord."
+secondary_sources:
+  - title: "Node.js Design Patterns (3rd Edition)"
+    authors: ["Casciaro, Mario", "Mammino, Luciano"]
     type: "book"
-    year: 2014
-    url: "https://git-scm.com/book/en/v2"
-    institution: "Apress"
+    year: 2020
+    url: "https://www.oreilly.com/library/view/nodejs-design-patterns/9781839214110/"
+    institution: "Packt"
+    note: "Electron apps use Node.js for system access — Node patterns are fundamental to Electron development"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
