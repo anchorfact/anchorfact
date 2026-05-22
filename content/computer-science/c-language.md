@@ -18,12 +18,13 @@ primary_sources:
     type: "book"
     year: 1988
 secondary_sources:
-  - title: "Fluent Python (2nd Ed)"
-    authors: ["Ramalho"]
+  - title: "The C Programming Language (2nd Edition, K&R)"
+    authors: ["Kernighan, Brian W.", "Ritchie, Dennis M."]
     type: "book"
-    year: 2021
-    url: "https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/"
-    institution: "O'Reilly"
+    year: 1988
+    url: "https://en.wikipedia.org/wiki/The_C_Programming_Language"
+    institution: "Prentice Hall"
+    note: "The definitive C reference by the language's creators"
 known_gaps:
   - "Content verified during quality audit; citations cross-referenced with authoritative sources"
 completeness: 0.88
