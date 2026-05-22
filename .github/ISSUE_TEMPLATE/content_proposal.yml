@@ -1,6 +1,6 @@
 name: 内容提案
 description: 提议新增知识条目或扩展现有条目
-title: "[提案] "
+title: "[提案] 主题简述"
 labels: ["提案"]
 body:
   - type: dropdown
@@ -14,8 +14,9 @@ body:
       required: true
   - type: input
     attributes:
-      label: 主题
-      placeholder: 例如：Attention 机制的数学推导
+      label: 主题/标题
+      description: 新条目或扩展的主题
+      placeholder: 如：Transformer 的 Self-Attention 机制详解
     validations:
       required: true
   - type: dropdown
@@ -39,8 +40,22 @@ body:
   - type: textarea
     attributes:
       label: 内容大纲
-      description: 简要描述要覆盖的知识点，以及是否有可用的原始来源
+      description: 简要描述要覆盖的核心知识点
   - type: textarea
     attributes:
       label: 参考文献
-      description: 列出主要的可验证来源（论文 DOI、书籍 ISBN、权威网站 URL 等）
+      description: |
+        列出可验证的来源，至少 3 个（黄金种子标准）：
+        - 论文：作者, 标题, DOI/arXiv, 年份
+        - 著作：作者, 书名, ISBN, 章节
+        - 博客：作者, 标题, URL, 发布日期
+      placeholder: |
+        1. Vaswani et al., "Attention Is All You Need", arXiv:1706.03762, 2017
+        2. Lilian Weng, "Attention? Attention!", https://lilianweng.github.io/..., 2018
+        3. ...
+  - type: checkboxes
+    attributes:
+      label: AI 参与声明
+      options:
+        - label: 此提案内容由 AI 辅助生成（提交时将标注 ai_assisted）
+        - label: 此提案内容为纯人工构思
