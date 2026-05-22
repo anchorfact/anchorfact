@@ -6,23 +6,22 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Svelte Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://svelte.dev/docs/"
-    institution:"Svelte"
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "Svelte Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+    url: "https://svelte.dev/docs/"
+    institution: "Svelte"
+    note: "Compiler-based UI framework: reactive declarations, stores, transitions, no virtual DOM"
+secondary_sources:
   - title: "React Documentation"
     type: "documentation"
+    year: 2026
+    url: "https://react.dev/reference/react"
+    institution: "Meta"
+    note: "Svelte's primary alternative — compiler vs runtime reconciliation, signals vs hooks comparison"
     year: 2026
     url: "https://react.dev/reference/react"
     institution: "Meta"
