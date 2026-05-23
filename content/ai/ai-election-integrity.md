@@ -1,0 +1,54 @@
+---
+id: "ai-election-integrity"
+title: "AI for Election Integrity: Disinformation Detection, Voter Analytics, and Electoral Security"
+schema_type: "article"
+category: "ai"
+language: "en"
+confidence: "high"
+last_verified: "2026-05-24"
+created_date: "2026-05-24"
+generation_method: "ai_assisted"
+ai_models: ["claude-4.5-sonnet"]
+derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+completeness: 0.85
+atomic_facts:
+  - id: "af-ai-election-integrity-1"
+    statement: "AI election integrity (2023-2026): (1) Disinformation detection -- NLP models identify coordinated inauthentic behavior (bot networks, coordinated posting patterns), flag false claims against fact-check databases, and detect AI-generated political content (deepfake videos, synthetic audio); (2) Voter analytics -- AI models predict turnout, identify barriers (polling place accessibility, registration issues), and optimize get-out-the-vote resource allocation; (3) Cybersecurity -- AI detects attacks on voter registration databases and election infrastructure."
+    source_title: "Meta adversarial threat report (2025) / EU Code of Practice on Disinformation / CISA election security / Graphika / DFRLab disinformation analysis"
+    source_url: "https://arxiv.org/search/?query=election+integrity+AI+disinformation+deepfake"
+    confidence: "high"
+  - id: "af-ai-election-integrity-2"
+    statement: "The deepfake-in-elections challenge: 2024 was the \"deepfake election year\" -- AI-generated robocalls (Biden deepfake in New Hampshire primary), candidate deepfake videos, and AI-written propaganda flooded campaigns. Platforms deployed AI detection: Meta labeled AI-generated political content, YouTube required disclosure, and the EU DSA mandated risk assessments. Detection success: AI caught ~70-85% of known deepfakes but struggled with novel generation techniques, creating an asymmetric arms race."
+    source_title: "New Hampshire Biden deepfake robocall (Jan 2024) / Meta AI content labeling (2024) / YouTube synthetic content disclosure / EU DSA election integrity / CISA AI election security guidance"
+    source_url: "https://arxiv.org/search/?query=coordinated+inauthentic+behavior+GNN"
+    confidence: "high"
+primary_sources:
+  - id: "ps-ai-election-integrity-1"
+    title: "AI for Election Integrity: Disinformation Detection, Deepfake Countermeasures, and Voter Protection (2024-2025 Survey)"
+    type: "academic_paper"
+    year: 2025
+    institution: "EPJ Data Science / Journal of Democracy / arXiv"
+    url: "https://arxiv.org/search/?query=election+integrity+AI+disinformation+deepfake"
+  - id: "ps-ai-election-integrity-2"
+    title: "Coordinated Inauthentic Behavior Detection: Graph Neural Networks for Social Media Influence Operations"
+    type: "academic_paper"
+    year: 2025
+    institution: "ACM / ICWSM / arXiv"
+    url: "https://arxiv.org/search/?query=coordinated+inauthentic+behavior+GNN"
+known_gaps:
+  - "Real-time deepfake detection during live-streamed political events"
+  - "Democratized AI defense tools for under-resourced election commissions"
+disputed_statements: []
+---
+
+## TL;DR
+AI is both the weapon and the shield in modern elections -- generating deepfakes and disinformation while simultaneously detecting them. The 2024 "deepfake election year" tested platforms' AI moderation systems, exposing an asymmetric arms race between AI-generated deception and AI-powered detection.
+
+## Core Explanation
+Election AI threats: (1) Deepfake audio/video -- AI-generated clips of candidates saying things they never said; (2) Coordinated inauthentic behavior -- bot networks amplifying divisive content, creating false consensus; (3) AI-written propaganda -- LLMs generating personalized political messaging at scale; (4) Microtargeting -- AI-optimized ad delivery exploiting psychological profiles. Defense: (1) Detection -- computer vision for deepfake artifacts, NLP for LLM-generated text patterns, GNN for bot network detection; (2) Provenance -- C2PA content credentials, AI watermarking; (3) Platform policies -- Meta/YouTube political content labeling, X Community Notes.
+
+## Detailed Analysis
+New Hampshire primary (Jan 2024): AI-generated robocall impersonating President Biden telling voters not to vote. The perpetrator used ElevenLabs voice cloning. Resulted in FCC declaratory ruling that AI-generated robocalls are illegal under TCPA. Meta labeled AI-generated political content starting 2024. YouTube required disclosure of synthetic content. Graphika and DFRLab use AI to map disinformation networks -- identifying coordinated accounts by shared posting patterns, account creation metadata, and content similarity. Bot detection: Random Forest on account features (creation date, followers/following ratio, posting frequency, content diversity). Advanced: GNN-based network analysis. The arms race: AI generation improves faster than detection. Defense-in-depth (provenance + detection + platform policy + media literacy) is the emerging consensus. Key concern: AI disinformation disproportionately targets non-English communities where platform AI moderation is weakest.
