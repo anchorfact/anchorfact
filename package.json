@@ -8,11 +8,20 @@
     "serve": "node src/serve.js",
     "deploy": "node src/compile.js content dist && wrangler pages deploy dist"
   },
-  "keywords": ["geo", "knowledge-base", "llm", "ai-citations", "open-source"],
+  "keywords": [
+    "geo",
+    "knowledge-base",
+    "llm",
+    "ai-citations",
+    "open-source"
+  ],
   "license": "MIT",
   "author": "AnchorFact Contributors",
   "repository": {
     "type": "git",
     "url": "https://github.com/anchorfact/anchorfact.git"
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.1"
   }
 }

@@ -1,0 +1,72 @@
+name: Content Quality Check
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/**/*.md'
+      - 'scripts/validate-content.cjs'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'content/**/*.md'
+      - 'scripts/validate-content.cjs'
+  schedule:
+    - cron: '0 0 * * 0'  # Weekly on Sunday
+  workflow_dispatch:
+
+jobs:
+  validate-content:
+    name: Validate Content
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate Frontmatter & Structure
+        run: node scripts/validate-content.cjs
+
+  validate-golden-seed:
+    name: Validate Golden Seeds (Strict)
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Get changed files
+        id: changed
+        uses: tj-actions/changed-files@v44
+        with:
+          files: content/**/*.md
+
+      - name: Check golden seed rules for changed files
+        if: steps.changed.outputs.any_changed == 'true'
+        run: |
+          echo "Changed files: ${{ steps.changed.outputs.all_changed_files }}"
+          # Run strict validation — but just warn (don't block merge)
+          node scripts/validate-content.cjs --strict || echo "Golden seed rules not met (warning only)"
+
+  check-urls:
+    name: Check Source URLs
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Check URL Reachability
+        run: node scripts/check-urls.cjs
+        continue-on-error: true  # Don't block on transient network issues
