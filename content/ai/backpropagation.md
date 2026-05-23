@@ -1,47 +1,52 @@
 ---
-id:"backpropagation"
-title:"Backpropagation: The Engine of Neural Network Learning"
-schema_type:"TechArticle"
-category:"ai"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-24"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "backpropagation"
+title: "Backpropagation: The Engine of Neural Network Learning"
+schema_type: "TechArticle"
+category: "ai"
+language: "en"
+confidence: "high"
+last_verified: "2026-05-24"
+created_date: "2026-05-24"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
-  - id:"af-backpropagation-1"
-    statement:"Backpropagation computes gradients of the loss function with respect to every weight in a neural network by recursively applying the chain rule of calculus from output layer to input layer."
-    source_title:"Rumelhart, Hinton & Williams, Nature (1986)"
-    confidence:"high"
-  - id:"af-backpropagation-2"
-    statement:"The vanishing gradient problem in deep networks — where gradients become exponentially small in early layers — motivated the development of ReLU activation and residual connections (ResNet, He et al., 2016)."
-    source_title:"He et al., CVPR (2016)"
-    confidence:"high"
+  - id: "af-backpropagation-1"
+    statement: "Backpropagation computes gradients of the loss function with respect to every weight in a neural network by recursively applying the chain rule of calculus from output layer to input layer."
+    source_title: "Rumelhart, Hinton & Williams, Nature (1986)"
+    confidence: "high"
+  - id: "af-backpropagation-2"
+    statement: "The vanishing gradient problem in deep networks — where gradients become exponentially small in early layers — motivated the development of ReLU activation and residual connections (ResNet, He et al., 2016)."
+    source_title: "He et al., CVPR (2016)"
+    confidence: "high"
 
-completeness:0.9
-
-primary_sources:
-  - title:"Learning Representations by Back-propagating Errors"
-    type:"academic_paper"
-    year:1986
-    url:"https://www.nature.com/articles/323533a0"
-    institution:"Nature"
-  - title:"Deep Residual Learning for Image Recognition"
-    type:"academic_paper"
-    year:2016
-    url:"https://arxiv.org/abs/1512.03385"
-    institution:"CVPR"
+completeness: 0.9
 
 known_gaps:
   - "Second-order optimization methods"
   - "Biologically plausible alternatives to backprop"
 
 disputed_statements:
-  - statement:"No major disputed statements identified"
+  - statement: "No major disputed statements identified"
+
+primary_sources:
+  - title: "Learning Representations by Back-propagating Errors"
+    type: "academic_paper"
+    year: 1986
+    url: "https://www.nature.com/articles/323533a0"
+    institution: "Nature"
+  - title: "Deep Residual Learning for Image Recognition"
+    type: "academic_paper"
+    year: 2016
+    url: "https://arxiv.org/abs/1512.03385"
+    institution: "CVPR"
 
 ---
+
 
 ## TL;DR
 Backpropagation is the fundamental algorithm for training neural networks, computing gradients of the loss with respect to every weight via repeated application of the calculus chain rule.

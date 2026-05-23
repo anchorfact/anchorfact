@@ -1,47 +1,52 @@
 ---
-id:"object-detection"
-title:"Object Detection: YOLO, R-CNN, and DETR"
-schema_type:"TechArticle"
-category:"ai"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-24"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "object-detection"
+title: "Object Detection: YOLO, R-CNN, and DETR"
+schema_type: "TechArticle"
+category: "ai"
+language: "en"
+confidence: "high"
+last_verified: "2026-05-24"
+created_date: "2026-05-24"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
-  - id:"af-object-detection-1"
-    statement:"YOLO (You Only Look Once, Redmon et al., 2016) treats object detection as a single regression problem — predicting bounding boxes and class probabilities directly from full images in one evaluation, achieving 45 FPS while matching two-stage detectors."
-    source_title:"Redmon et al., CVPR (2016)"
-    confidence:"high"
-  - id:"af-object-detection-2"
-    statement:"DETR (DEtection TRansformer, Carion et al., 2020) reformulates object detection as a direct set prediction problem using a transformer encoder-decoder with bipartite matching loss, eliminating the need for hand-crafted components like NMS and anchor boxes."
-    source_title:"Carion et al., ECCV (2020)"
-    confidence:"high"
+  - id: "af-object-detection-1"
+    statement: "YOLO (You Only Look Once, Redmon et al., 2016) treats object detection as a single regression problem — predicting bounding boxes and class probabilities directly from full images in one evaluation, achieving 45 FPS while matching two-stage detectors."
+    source_title: "Redmon et al., CVPR (2016)"
+    confidence: "high"
+  - id: "af-object-detection-2"
+    statement: "DETR (DEtection TRansformer, Carion et al., 2020) reformulates object detection as a direct set prediction problem using a transformer encoder-decoder with bipartite matching loss, eliminating the need for hand-crafted components like NMS and anchor boxes."
+    source_title: "Carion et al., ECCV (2020)"
+    confidence: "high"
 
-completeness:0.9
-
-primary_sources:
-  - title:"You Only Look Once: Unified, Real-Time Object Detection"
-    type:"academic_paper"
-    year:2016
-    url:"https://arxiv.org/abs/1506.02640"
-    institution:"CVPR"
-  - title:"End-to-End Object Detection with Transformers (DETR)"
-    type:"academic_paper"
-    year:2020
-    url:"https://arxiv.org/abs/2005.12872"
-    institution:"ECCV"
+completeness: 0.9
 
 known_gaps:
   - "Few-shot object detection"
   - "3D object detection (LiDAR, point clouds)"
 
 disputed_statements:
-  - statement:"No major disputed statements identified"
+  - statement: "No major disputed statements identified"
+
+primary_sources:
+  - title: "You Only Look Once: Unified, Real-Time Object Detection"
+    type: "academic_paper"
+    year: 2016
+    url: "https://arxiv.org/abs/1506.02640"
+    institution: "CVPR"
+  - title: "End-to-End Object Detection with Transformers (DETR)"
+    type: "academic_paper"
+    year: 2020
+    url: "https://arxiv.org/abs/2005.12872"
+    institution: "ECCV"
 
 ---
+
 
 ## TL;DR
 Object detection identifies and localizes objects within images. Two-stage detectors (R-CNN family) prioritize accuracy; single-stage detectors (YOLO, SSD) prioritize speed; transformer-based detectors (DETR) simplify the pipeline.

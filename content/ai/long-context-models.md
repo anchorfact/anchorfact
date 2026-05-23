@@ -1,47 +1,52 @@
 ---
-id:"long-context-models"
-title:"Long-Context Language Models: Beyond 1M Tokens"
-schema_type:"TechArticle"
-category:"ai"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-24"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "long-context-models"
+title: "Long-Context Language Models: Beyond 1M Tokens"
+schema_type: "TechArticle"
+category: "ai"
+language: "en"
+confidence: "high"
+last_verified: "2026-05-24"
+created_date: "2026-05-24"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
-  - id:"af-long-context-models-1"
-    statement:"Claude (Anthropic) supports 200K token context windows (approximately 150,000 words or 500 pages), enabling processing of entire books, codebases, or full legal documents in a single prompt."
-    source_title:"Anthropic: Claude Model Card (2024)"
-    confidence:"high"
-  - id:"af-long-context-models-2"
-    statement:"Gemini 1.5 Pro (Google, February 2024) demonstrated near-perfect retrieval (>99%) across 1M token context windows, proving that long-context models can reliably use information throughout the entire input."
-    source_title:"Gemini 1.5 Technical Report (2024)"
-    confidence:"high"
+  - id: "af-long-context-models-1"
+    statement: "Claude (Anthropic) supports 200K token context windows (approximately 150,000 words or 500 pages), enabling processing of entire books, codebases, or full legal documents in a single prompt."
+    source_title: "Anthropic: Claude Model Card (2024)"
+    confidence: "high"
+  - id: "af-long-context-models-2"
+    statement: "Gemini 1.5 Pro (Google, February 2024) demonstrated near-perfect retrieval (>99%) across 1M token context windows, proving that long-context models can reliably use information throughout the entire input."
+    source_title: "Gemini 1.5 Technical Report (2024)"
+    confidence: "high"
 
-completeness:0.9
-
-primary_sources:
-  - title:"Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context"
-    type:"academic_paper"
-    year:2024
-    url:"https://arxiv.org/abs/2403.05530"
-    institution:"Google DeepMind"
-  - title:"RULER: What's the Real Context Size of Your Long-Context Language Models?"
-    type:"academic_paper"
-    year:2024
-    url:"https://arxiv.org/abs/2405.07704"
-    institution:"NeurIPS"
+completeness: 0.9
 
 known_gaps:
   - "Needle-in-haystack limitations"
   - "Long-context inference cost optimization"
 
 disputed_statements:
-  - statement:"No major disputed statements identified"
+  - statement: "No major disputed statements identified"
+
+primary_sources:
+  - title: "Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context"
+    type: "academic_paper"
+    year: 2024
+    url: "https://arxiv.org/abs/2403.05530"
+    institution: "Google DeepMind"
+  - title: "RULER: What's the Real Context Size of Your Long-Context Language Models?"
+    type: "academic_paper"
+    year: 2024
+    url: "https://arxiv.org/abs/2405.07704"
+    institution: "NeurIPS"
 
 ---
+
 
 ## TL;DR
 Modern LLMs process context windows of 100K-2M tokens — entire books, codebases, or years of conversation history. Gemini 1.5 Pro demonstrated >99% retrieval accuracy across 1M tokens, proving usable long-context capability.

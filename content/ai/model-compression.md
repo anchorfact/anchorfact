@@ -1,47 +1,52 @@
 ---
-id:"model-compression"
-title:"Model Compression: Pruning, Quantization, and Distillation"
-schema_type:"TechArticle"
-category:"ai"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-24"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "model-compression"
+title: "Model Compression: Pruning, Quantization, and Distillation"
+schema_type: "TechArticle"
+category: "ai"
+language: "en"
+confidence: "high"
+last_verified: "2026-05-24"
+created_date: "2026-05-24"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
-  - id:"af-model-compression-1"
-    statement:"Quantization reduces model size by representing weights and activations with fewer bits — INT8 quantization reduces model size by 4x compared to FP32 with minimal accuracy loss (<0.5%) when using calibration and per-channel scaling."
-    source_title:"Nagel et al., JMLR (2021)"
-    confidence:"high"
-  - id:"af-model-compression-2"
-    statement:"Lottery Ticket Hypothesis (Frankle & Carbin, 2019): dense, randomly-initialized networks contain sparse subnetworks (\"winning tickets\") that, when trained in isolation, can match the full network's accuracy."
-    source_title:"Frankle & Carbin, ICLR (2019)"
-    confidence:"high"
+  - id: "af-model-compression-1"
+    statement: "Quantization reduces model size by representing weights and activations with fewer bits — INT8 quantization reduces model size by 4x compared to FP32 with minimal accuracy loss (<0.5%) when using calibration and per-channel scaling."
+    source_title: "Nagel et al., JMLR (2021)"
+    confidence: "high"
+  - id: "af-model-compression-2"
+    statement: "Lottery Ticket Hypothesis (Frankle & Carbin, 2019): dense, randomly-initialized networks contain sparse subnetworks (\"winning tickets\") that, when trained in isolation, can match the full network's accuracy."
+    source_title: "Frankle & Carbin, ICLR (2019)"
+    confidence: "high"
 
-completeness:0.9
-
-primary_sources:
-  - title:"A White Paper on Neural Network Quantization"
-    type:"academic_paper"
-    year:2021
-    url:"https://arxiv.org/abs/2106.08295"
-    institution:"JMLR"
-  - title:"The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks"
-    type:"academic_paper"
-    year:2019
-    url:"https://arxiv.org/abs/1803.03635"
-    institution:"ICLR"
+completeness: 0.9
 
 known_gaps:
   - "Dynamic sparse training"
   - "Compression for diffusion models"
 
 disputed_statements:
-  - statement:"No major disputed statements identified"
+  - statement: "No major disputed statements identified"
+
+primary_sources:
+  - title: "A White Paper on Neural Network Quantization"
+    type: "academic_paper"
+    year: 2021
+    url: "https://arxiv.org/abs/2106.08295"
+    institution: "JMLR"
+  - title: "The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks"
+    type: "academic_paper"
+    year: 2019
+    url: "https://arxiv.org/abs/1803.03635"
+    institution: "ICLR"
 
 ---
+
 
 ## TL;DR
 Model compression reduces inference cost for deployment on resource-constrained devices. The three pillars — pruning, quantization, and distillation — can be combined for 10x+ compression with minimal accuracy loss.

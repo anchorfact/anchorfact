@@ -1,47 +1,52 @@
 ---
-id:"time-series-forecasting"
-title:"Time Series Forecasting with Machine Learning"
-schema_type:"TechArticle"
-category:"ai"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-24"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "time-series-forecasting"
+title: "Time Series Forecasting with Machine Learning"
+schema_type: "TechArticle"
+category: "ai"
+language: "en"
+confidence: "high"
+last_verified: "2026-05-24"
+created_date: "2026-05-24"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
-  - id:"af-time-series-forecasting-1"
-    statement:"Transformers adapted for time series — Informer (Zhou et al., 2021), Autoformer, PatchTST — address the quadratic attention complexity for long sequences, enabling forecasting horizons of 720+ time steps."
-    source_title:"Zhou et al., AAAI (2021)"
-    confidence:"high"
-  - id:"af-time-series-forecasting-2"
-    statement:"N-BEATS (Oreshkin et al., 2020) achieves state-of-the-art univariate forecasting without any time-series-specific feature engineering, using a pure deep learning architecture with doubly residual stacking of fully connected blocks."
-    source_title:"Oreshkin et al., ICLR (2020)"
-    confidence:"high"
+  - id: "af-time-series-forecasting-1"
+    statement: "Transformers adapted for time series — Informer (Zhou et al., 2021), Autoformer, PatchTST — address the quadratic attention complexity for long sequences, enabling forecasting horizons of 720+ time steps."
+    source_title: "Zhou et al., AAAI (2021)"
+    confidence: "high"
+  - id: "af-time-series-forecasting-2"
+    statement: "N-BEATS (Oreshkin et al., 2020) achieves state-of-the-art univariate forecasting without any time-series-specific feature engineering, using a pure deep learning architecture with doubly residual stacking of fully connected blocks."
+    source_title: "Oreshkin et al., ICLR (2020)"
+    confidence: "high"
 
-completeness:0.9
-
-primary_sources:
-  - title:"N-BEATS: Neural basis expansion analysis for interpretable time series forecasting"
-    type:"academic_paper"
-    year:2020
-    url:"https://arxiv.org/abs/1905.10437"
-    institution:"ICLR"
-  - title:"Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting"
-    type:"academic_paper"
-    year:2021
-    url:"https://arxiv.org/abs/2012.07436"
-    institution:"AAAI"
+completeness: 0.9
 
 known_gaps:
   - "Probabilistic forecasting with prediction intervals"
   - "Multivariate causal discovery in time series"
 
 disputed_statements:
-  - statement:"No major disputed statements identified"
+  - statement: "No major disputed statements identified"
+
+primary_sources:
+  - title: "N-BEATS: Neural basis expansion analysis for interpretable time series forecasting"
+    type: "academic_paper"
+    year: 2020
+    url: "https://arxiv.org/abs/1905.10437"
+    institution: "ICLR"
+  - title: "Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting"
+    type: "academic_paper"
+    year: 2021
+    url: "https://arxiv.org/abs/2012.07436"
+    institution: "AAAI"
 
 ---
+
 
 ## TL;DR
 Time series forecasting predicts future values from historical sequences. Traditional statistical methods (ARIMA, ETS) compete with deep learning approaches (LSTM, Transformer variants) depending on data volume and pattern complexity.

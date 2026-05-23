@@ -1,47 +1,52 @@
 ---
-id:"speech-recognition"
-title:"Speech Recognition: From HMMs to Whisper"
-schema_type:"TechArticle"
-category:"ai"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-24"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "speech-recognition"
+title: "Speech Recognition: From HMMs to Whisper"
+schema_type: "TechArticle"
+category: "ai"
+language: "en"
+confidence: "high"
+last_verified: "2026-05-24"
+created_date: "2026-05-24"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
-  - id:"af-speech-recognition-1"
-    statement:"Whisper (OpenAI, 2023), trained on 680,000 hours of multilingual and multitask supervised data, approaches human-level robustness and accuracy in English speech recognition while supporting 99 languages."
-    source_title:"Radford et al., OpenAI (2023)"
-    confidence:"high"
-  - id:"af-speech-recognition-2"
-    statement:"Connectionist Temporal Classification (CTC, Graves et al., 2006) enables training sequence models without frame-level alignment by summing over all valid alignments between input and output sequences."
-    source_title:"Graves et al., ICML (2006)"
-    confidence:"high"
+  - id: "af-speech-recognition-1"
+    statement: "Whisper (OpenAI, 2023), trained on 680,000 hours of multilingual and multitask supervised data, approaches human-level robustness and accuracy in English speech recognition while supporting 99 languages."
+    source_title: "Radford et al., OpenAI (2023)"
+    confidence: "high"
+  - id: "af-speech-recognition-2"
+    statement: "Connectionist Temporal Classification (CTC, Graves et al., 2006) enables training sequence models without frame-level alignment by summing over all valid alignments between input and output sequences."
+    source_title: "Graves et al., ICML (2006)"
+    confidence: "high"
 
-completeness:0.9
-
-primary_sources:
-  - title:"Robust Speech Recognition via Large-Scale Weak Supervision (Whisper)"
-    type:"academic_paper"
-    year:2023
-    url:"https://arxiv.org/abs/2212.04356"
-    institution:"OpenAI"
-  - title:"Connectionist Temporal Classification"
-    type:"academic_paper"
-    year:2006
-    url:"https://www.cs.toronto.edu/~graves/icml_2006.pdf"
-    institution:"ICML"
+completeness: 0.9
 
 known_gaps:
   - "Low-resource language ASR"
   - "Speaker diarization (who spoke when)"
 
 disputed_statements:
-  - statement:"No major disputed statements identified"
+  - statement: "No major disputed statements identified"
+
+primary_sources:
+  - title: "Robust Speech Recognition via Large-Scale Weak Supervision (Whisper)"
+    type: "academic_paper"
+    year: 2023
+    url: "https://arxiv.org/abs/2212.04356"
+    institution: "OpenAI"
+  - title: "Connectionist Temporal Classification"
+    type: "academic_paper"
+    year: 2006
+    url: "https://www.cs.toronto.edu/~graves/icml_2006.pdf"
+    institution: "ICML"
 
 ---
+
 
 ## TL;DR
 Speech recognition converts audio signals to text. Modern end-to-end approaches — CTC, RNN-Transducer, Attention-based Encoder-Decoder — have replaced traditional HMM-GMM pipelines, with Whisper achieving near-human performance.

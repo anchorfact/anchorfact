@@ -1,47 +1,52 @@
 ---
-id:"ai-for-science"
-title:"AI for Science: AlphaFold and the AI-Driven Discovery Revolution"
-schema_type:"TechArticle"
-category:"ai"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-24"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "ai-for-science"
+title: "AI for Science: AlphaFold and the AI-Driven Discovery Revolution"
+schema_type: "TechArticle"
+category: "ai"
+language: "en"
+confidence: "high"
+last_verified: "2026-05-24"
+created_date: "2026-05-24"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
-  - id:"af-ai-for-science-1"
-    statement:"AlphaFold 3 (Google DeepMind & Isomorphic Labs, 2024, published in Nature) predicts not just protein structures but all biomolecular interactions — proteins, DNA, RNA, ligands, and ions — using a diffusion-based architecture that represents the most significant AI breakthrough in structural biology."
-    source_title:"Abramson et al., Nature (2024)"
-    confidence:"high"
-  - id:"af-ai-for-science-2"
-    statement:"Demis Hassabis and John Jumper received the 2024 Nobel Prize in Chemistry for AlphaFold2's protein structure prediction, marking the first Nobel Prize directly awarded for AI research."
-    source_title:"Nobel Foundation (2024)"
-    confidence:"high"
+  - id: "af-ai-for-science-1"
+    statement: "AlphaFold 3 (Google DeepMind & Isomorphic Labs, 2024, published in Nature) predicts not just protein structures but all biomolecular interactions — proteins, DNA, RNA, ligands, and ions — using a diffusion-based architecture that represents the most significant AI breakthrough in structural biology."
+    source_title: "Abramson et al., Nature (2024)"
+    confidence: "high"
+  - id: "af-ai-for-science-2"
+    statement: "Demis Hassabis and John Jumper received the 2024 Nobel Prize in Chemistry for AlphaFold2's protein structure prediction, marking the first Nobel Prize directly awarded for AI research."
+    source_title: "Nobel Foundation (2024)"
+    confidence: "high"
 
-completeness:0.9
-
-primary_sources:
-  - title:"Accurate structure prediction of biomolecular interactions with AlphaFold 3"
-    type:"academic_paper"
-    year:2024
-    url:"https://www.nature.com/articles/s41586-024-07487-w"
-    institution:"Nature/Google DeepMind"
-  - title:"AI for Science: A Survey"
-    type:"academic_paper"
-    year:2024
-    url:"https://arxiv.org/abs/2405.12213"
-    institution:"arXiv"
+completeness: 0.9
 
 known_gaps:
   - "AI-driven materials discovery"
   - "AI for climate modeling"
 
 disputed_statements:
-  - statement:"No major disputed statements identified"
+  - statement: "No major disputed statements identified"
+
+primary_sources:
+  - title: "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+    type: "academic_paper"
+    year: 2024
+    url: "https://www.nature.com/articles/s41586-024-07487-w"
+    institution: "Nature/Google DeepMind"
+  - title: "AI for Science: A Survey"
+    type: "academic_paper"
+    year: 2024
+    url: "https://arxiv.org/abs/2405.12213"
+    institution: "arXiv"
 
 ---
+
 
 ## TL;DR
 AI for science is transforming discovery — AlphaFold 3 predicts all biomolecular structures, GNoME discovered 2.2 million new crystals, and AI-designed drugs enter clinical trials. The 2024 Nobel Prize in Chemistry for AlphaFold signified mainstream recognition of AI-driven science.

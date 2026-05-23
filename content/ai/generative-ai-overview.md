@@ -1,47 +1,52 @@
 ---
-id:"generative-ai-overview"
-title:"Generative AI: Models, Capabilities, and Impact"
-schema_type:"TechArticle"
-category:"ai"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-24"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "generative-ai-overview"
+title: "Generative AI: Models, Capabilities, and Impact"
+schema_type: "TechArticle"
+category: "ai"
+language: "en"
+confidence: "high"
+last_verified: "2026-05-24"
+created_date: "2026-05-24"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
-  - id:"af-generative-ai-overview-1"
-    statement:"Generative AI encompasses models that create new content — text (GPT-4, Claude), images (DALL-E 3, Midjourney, Stable Diffusion), code (GitHub Copilot, Codex), audio (ElevenLabs), and video (Sora, Runway)."
-    source_title:"AWS: Generative AI Overview"
-    confidence:"high"
-  - id:"af-generative-ai-overview-2"
-    statement:"The generative AI market is projected to reach $1.3 trillion by 2032 (Bloomberg Intelligence), driven by enterprise adoption across customer service, content creation, drug discovery, and software development."
-    source_title:"Bloomberg Intelligence (2024)"
-    confidence:"high"
+  - id: "af-generative-ai-overview-1"
+    statement: "Generative AI encompasses models that create new content — text (GPT-4, Claude), images (DALL-E 3, Midjourney, Stable Diffusion), code (GitHub Copilot, Codex), audio (ElevenLabs), and video (Sora, Runway)."
+    source_title: "AWS: Generative AI Overview"
+    confidence: "high"
+  - id: "af-generative-ai-overview-2"
+    statement: "The generative AI market is projected to reach $1.3 trillion by 2032 (Bloomberg Intelligence), driven by enterprise adoption across customer service, content creation, drug discovery, and software development."
+    source_title: "Bloomberg Intelligence (2024)"
+    confidence: "high"
 
-completeness:0.9
-
-primary_sources:
-  - title:"Generative AI: A Creative New World"
-    type:"official_report"
-    year:2022
-    url:"https://www.sequoiacap.com/article/generative-ai-a-creative-new-world/"
-    institution:"Sequoia Capital"
-  - title:"The Economic Potential of Generative AI (McKinsey)"
-    type:"official_report"
-    year:2023
-    url:"https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai"
-    institution:"McKinsey Global Institute"
+completeness: 0.9
 
 known_gaps:
   - "Copyright and IP implications of generative AI"
   - "Energy consumption and environmental impact"
 
 disputed_statements:
-  - statement:"No major disputed statements identified"
+  - statement: "No major disputed statements identified"
+
+primary_sources:
+  - title: "Generative AI: A Creative New World"
+    type: "official_report"
+    year: 2022
+    url: "https://www.sequoiacap.com/article/generative-ai-a-creative-new-world/"
+    institution: "Sequoia Capital"
+  - title: "The Economic Potential of Generative AI (McKinsey)"
+    type: "official_report"
+    year: 2023
+    url: "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai"
+    institution: "McKinsey Global Institute"
 
 ---
+
 
 ## TL;DR
 Generative AI creates novel content — text, images, code, audio, and video — representing the most commercially significant AI breakthrough since deep learning. Foundation models powering generative AI are reshaping creative industries and enterprise workflows.
