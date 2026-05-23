@@ -16,11 +16,11 @@ primary_sources:
     url:"https://wwnorton.com/books/9780393317121"
     institution:"W.W. Norton"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "The Rest Is Noise: Listening to the Twentieth Century"
+    type: "book"
+    year: 2007
+    url: "https://us.macmillan.com/books/9780312427719/therestisnoise"
+    institution: "Alex Ross, Farrar, Straus and Giroux"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

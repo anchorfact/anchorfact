@@ -16,11 +16,16 @@ primary_sources:
     url:"https://www.garlandscience.com/product/isbn/9780815345510"
     institution:"Garland Science"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "A Brief History of Time"
+    type: "book"
+    year: 1988
+    url: "https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/"
+    institution: "Stephen Hawking, Bantam"
+  - title: "Nature (journal)"
+    type: "journal"
+    year: 2025
+    url: "https://www.nature.com/"
+    institution: "Springer Nature"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

@@ -29,6 +29,11 @@ secondary_sources:
     year: 2026
     url: "https://hbr.org/"
     institution: "Harvard Business Publishing"
+  - title: "The Goal: A Process of Ongoing Improvement"
+    type: "book"
+    year: 1984
+    url: "https://www.northriverpress.com/the-goal/"
+    institution: "Eliyahu M. Goldratt, North River Press"
 ---
 
 ## TL;DR

@@ -16,17 +16,16 @@ primary_sources:
     url:"https://www.nationalgeographic.com/books/article/atlas-of-the-world-11th-edition"
     institution:"National Geographic"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "RESTful Web APIs"
-    authors: ["Richardson", "Amundsen"]
-    type: "book"
-    year: 2013
-    url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
-    institution: "O'Reilly"
+  - title: "CIA World Factbook"
+    type: "database"
+    year: 2025
+    url: "https://www.cia.gov/the-world-factbook/"
+    institution: "Central Intelligence Agency"
+  - title: "National Geographic Atlas"
+    type: "reference"
+    year: 2019
+    url: "https://www.nationalgeographic.com/maps/atlas/"
+    institution: "National Geographic"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.penguinrandomhouse.com/books/256540/the-cold-war-by-john-lewis-gaddis/"
     institution:"Penguin Press"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "The Cold War: A New History"
+    type: "book"
+    year: 2005
+    url: "https://www.penguinrandomhouse.com/books/292237/the-cold-war-by-john-lewis-gaddis/"
+    institution: "John Lewis Gaddis, Penguin"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

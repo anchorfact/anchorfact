@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.pearson.com/en-us/subject-catalog/p/the-geography-of-sub-saharan-africa/P200000010264"
     institution:"Pearson"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "National Geographic Atlas of the World"
+    type: "reference"
+    year: 2019
+    url: "https://www.nationalgeographic.com/maps/atlas/"
+    institution: "National Geographic"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

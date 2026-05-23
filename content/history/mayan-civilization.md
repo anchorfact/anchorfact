@@ -16,11 +16,11 @@ primary_sources:
     url:"https://thamesandhudson.com/the-maya-9780500291887"
     institution:"Thames & Hudson"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "The Greeks: A Global History"
+    type: "book"
+    year: 2021
+    url: "https://www.basicbooks.com/titles/roderick-beaton/the-greeks/9781541618299/"
+    institution: "Roderick Beaton, Basic Books"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

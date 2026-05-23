@@ -16,11 +16,11 @@ primary_sources:
     url:"https://iupac.org/what-we-do/periodic-table-of-elements/"
     institution:"IUPAC"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "The Disappearing Spoon"
+    type: "book"
+    year: 2010
+    url: "https://www.hachettebookgroup.com/titles/sam-kean/the-disappearing-spoon/9780316051637/"
+    institution: "Sam Kean, Little, Brown"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

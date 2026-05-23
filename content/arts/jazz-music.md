@@ -21,15 +21,14 @@ secondary_sources:
     type: "academic_paper"
     year: 2020
     doi: "10.48550/arXiv.2005.11401"
-    url: "https://arxiv.org/abs/2005.11401"
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-completeness: 0.88
+    url: "https://arxiv.org/abs/2005.11401"completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
+  - title: "The Rest Is Noise: Listening to the Twentieth Century"
+    type: "book"
+    year: 2007
+    url: "https://us.macmillan.com/books/9780312427719/therestisnoise"
+    institution: "Alex Ross, Farrar, Straus and Giroux"
 ---
 
 ## TL;DR

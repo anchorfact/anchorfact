@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.hachettebookgroup.com/titles/daniel-c-dennett/consciousness-explained/9780316180658/"
     institution:"Little, Brown"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "The Story of Philosophy"
+    type: "book"
+    year: 1926
+    url: "https://www.simonandschuster.com/books/The-Story-of-Philosophy/Will-Durant/9780671201593"
+    institution: "Will Durant, Simon & Schuster"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

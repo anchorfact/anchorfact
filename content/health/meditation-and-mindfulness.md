@@ -21,15 +21,19 @@ secondary_sources:
     type: "academic_paper"
     year: 2014
     doi: "10.48550/arXiv.1409.0473"
-    url: "https://arxiv.org/abs/1409.0473"
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-completeness: 0.88
+    url: "https://arxiv.org/abs/1409.0473"completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
+  - title: "WHO Fact Sheets"
+    type: "report"
+    year: 2025
+    url: "https://www.who.int/news-room/fact-sheets"
+    institution: "World Health Organization"
+  - title: "CDC Health Topics"
+    type: "report"
+    year: 2025
+    url: "https://www.cdc.gov/health-topics.html"
+    institution: "Centers for Disease Control and Prevention"
 ---
 
 ## TL;DR

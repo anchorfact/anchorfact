@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck/"
     institution:"Random House"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "Mindset: The New Psychology of Success"
+    type: "book"
+    year: 2006
+    url: "https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck-phd/"
+    institution: "Carol S. Dweck, Random House"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

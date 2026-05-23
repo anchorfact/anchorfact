@@ -16,11 +16,11 @@ primary_sources:
     url:"https://uhpress.hawaii.edu/title/the-pacific-islands-environment-and-society-revised-edition/"
     institution:"University of Hawaii Press"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "NOAA Ocean Explorer"
+    type: "reference"
+    year: 2025
+    url: "https://oceanexplorer.noaa.gov/"
+    institution: "National Oceanic and Atmospheric Administration"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

@@ -16,17 +16,11 @@ primary_sources:
     url:"https://global.oup.com/academic/product/the-industrial-revolution-9780198706786"
     institution:"Oxford University Press"
 secondary_sources:
-  - title: "BERT: Pre-training of Deep Bidirectional Transformers"
-    authors: ["Devlin", "Chang", "Lee", "Toutanova"]
-    type: "academic_paper"
-    year: 2019
-    doi: "10.48550/arXiv.1810.04805"
-    url: "https://arxiv.org/abs/1810.04805"
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "The Industrial Revolution 1760-1830"
+    type: "book"
+    year: 1948
+    url: "https://global.oup.com/academic/product/the-industrial-revolution-1760-1830-9780192892890"
+    institution: "T.S. Ashton, Oxford University Press"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

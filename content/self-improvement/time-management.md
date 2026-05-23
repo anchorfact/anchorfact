@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.simonandschuster.com/books/The-7-Habits-of-Highly-Effective-People/Stephen-R-Covey/9781982143817"
     institution:"Free Press"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "Deep Work: Rules for Focused Success in a Distracted World"
+    type: "book"
+    year: 2016
+    url: "https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/"
+    institution: "Cal Newport, Grand Central"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

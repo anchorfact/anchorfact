@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.bloomsbury.com/us/silk-roads-9781408839973/"
     institution:"Bloomsbury"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "The Silk Roads: A New History of the World"
+    type: "book"
+    year: 2015
+    url: "https://www.bloomsbury.com/uk/silk-roads-9781408839973/"
+    institution: "Peter Frankopan, Bloomsbury"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.hachettebookgroup.com/titles/edith-hamilton/mythology/9780316438520/"
     institution:"Little, Brown"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "Mythology: Timeless Tales of Gods and Heroes"
+    type: "book"
+    year: 1942
+    url: "https://www.hachettebookgroup.com/titles/edith-hamilton/mythology/9780316438520/"
+    institution: "Edith Hamilton, Little, Brown"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

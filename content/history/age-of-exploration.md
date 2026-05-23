@@ -25,6 +25,16 @@ secondary_sources:
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
+  - title: "Encyclopaedia Britannica"
+    type: "reference"
+    year: 2025
+    url: "https://www.britannica.com/"
+    institution: "Encyclopaedia Britannica, Inc."
+  - title: "The Penguin History of the World"
+    type: "book"
+    year: 1976
+    url: "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
+    institution: "J.M. Roberts, Penguin"
 ---
 
 ## TL;DR

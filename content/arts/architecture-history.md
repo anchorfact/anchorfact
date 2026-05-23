@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.wiley.com/en-us/A+Global+History+of+Architecture%2C+3rd+Edition-p-9781118981337"
     institution:"Wiley"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "A Global History of Architecture"
+    type: "book"
+    year: 2017
+    url: "https://www.wiley.com/en-us/A+Global+History+of+Architecture%2C+3rd+Edition-p-9781118981337"
+    institution: "Francis D.K. Ching et al., Wiley"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

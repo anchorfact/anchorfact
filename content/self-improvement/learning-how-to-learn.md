@@ -16,17 +16,11 @@ primary_sources:
     url:"https://www.penguinrandomhouse.com/books/533681/a-mind-for-numbers-by-barbara-oakley-phd/"
     institution:"TarcherPerigee"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "RESTful Web APIs"
-    authors: ["Richardson", "Amundsen"]
+  - title: "Learning How to Learn"
     type: "book"
-    year: 2013
-    url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
-    institution: "O'Reilly"
+    year: 2018
+    url: "https://www.penguinrandomhouse.com/books/567576/learning-how-to-learn-by-barbara-oakley-phd-and-terrence-sejnowski-phd/"
+    institution: "Barbara Oakley & Terrence Sejnowski, TarcherPerigee"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

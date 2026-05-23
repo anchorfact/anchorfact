@@ -16,11 +16,11 @@ primary_sources:
     url:"https://oceanservice.noaa.gov/education/tutorial_currents/"
     institution:"NOAA"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "NOAA Ocean Explorer"
+    type: "reference"
+    year: 2025
+    url: "https://oceanexplorer.noaa.gov/"
+    institution: "National Oceanic and Atmospheric Administration"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

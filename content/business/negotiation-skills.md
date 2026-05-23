@@ -16,17 +16,11 @@ primary_sources:
     url:"https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/"
     institution:"Penguin"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "RESTful Web APIs"
-    authors: ["Richardson", "Amundsen"]
+  - title: "Getting to Yes: Negotiating Agreement Without Giving In"
     type: "book"
-    year: 2013
-    url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
-    institution: "O'Reilly"
+    year: 1981
+    url: "https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/"
+    institution: "Roger Fisher & William Ury, Penguin"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

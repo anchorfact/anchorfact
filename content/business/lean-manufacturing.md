@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.simonandschuster.com/books/The-Machine-That-Changed-the-World/James-P-Womack/9780743299794"
     institution:"Free Press"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "The Goal: A Process of Ongoing Improvement"
+    type: "book"
+    year: 1984
+    url: "https://www.northriverpress.com/the-goal/"
+    institution: "Eliyahu M. Goldratt, North River Press"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

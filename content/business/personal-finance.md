@@ -16,17 +16,11 @@ primary_sources:
     url:"https://www.jlcollinsnh.com/stock-series/"
     institution:"Self-published"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "RESTful Web APIs"
-    authors: ["Richardson", "Amundsen"]
+  - title: "The Intelligent Investor"
     type: "book"
-    year: 2013
-    url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
-    institution: "O'Reilly"
+    year: 1949
+    url: "https://www.harpercollins.com/products/the-intelligent-investor-benjamin-graham"
+    institution: "Benjamin Graham, HarperBusiness"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

@@ -16,17 +16,16 @@ primary_sources:
     url:"https://wwnorton.com/books/9780393884821"
     institution:"W.W. Norton"
 secondary_sources:
-  - title: "BERT: Pre-training of Deep Bidirectional Transformers"
-    authors: ["Devlin", "Chang", "Lee", "Toutanova"]
-    type: "academic_paper"
-    year: 2019
-    doi: "10.48550/arXiv.1810.04805"
-    url: "https://arxiv.org/abs/1810.04805"
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "A Brief History of Time"
+    type: "book"
+    year: 1988
+    url: "https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/"
+    institution: "Stephen Hawking, Bantam"
+  - title: "Nature (journal)"
+    type: "journal"
+    year: 2025
+    url: "https://www.nature.com/"
+    institution: "Springer Nature"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

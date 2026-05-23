@@ -16,11 +16,16 @@ primary_sources:
     url:"https://www.gutenberg.org/ebooks/1228"
     institution:"John Murray"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "On the Origin of Species"
+    type: "book"
+    year: 1859
+    url: "https://www.gutenberg.org/ebooks/1228"
+    institution: "Charles Darwin, John Murray"
+  - title: "The Selfish Gene"
+    type: "book"
+    year: 1976
+    url: "https://global.oup.com/academic/product/the-selfish-gene-9780198788607"
+    institution: "Richard Dawkins, Oxford University Press"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html"
     institution:"McGraw-Hill"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "Nonviolent Communication: A Language of Life"
+    type: "book"
+    year: 1999
+    url: "https://www.nonviolentcommunication.com/product/nvc-a-language-of-life/"
+    institution: "Marshall B. Rosenberg, PuddleDancer Press"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

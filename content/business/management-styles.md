@@ -16,11 +16,16 @@ primary_sources:
     url:"https://www.penguinrandomhouse.com/books/308034/drive-by-daniel-h-pink/"
     institution:"Riverhead Books"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "Good to Great"
+    type: "book"
+    year: 2001
+    url: "https://www.harpercollins.com/products/good-to-great-jim-collins"
+    institution: "Jim Collins, HarperBusiness"
+  - title: "The Effective Executive"
+    type: "book"
+    year: 1967
+    url: "https://www.harpercollins.com/products/the-effective-executive-peter-f-drucker"
+    institution: "Peter F. Drucker, HarperBusiness"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

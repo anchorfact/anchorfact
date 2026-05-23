@@ -16,11 +16,16 @@ primary_sources:
     url:"https://www.harpercollins.com/products/the-worlds-religions-huston-smith"
     institution:"HarperOne"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "CIA World Factbook"
+    type: "database"
+    year: 2025
+    url: "https://www.cia.gov/the-world-factbook/"
+    institution: "Central Intelligence Agency"
+  - title: "National Geographic Atlas"
+    type: "reference"
+    year: 2019
+    url: "https://www.nationalgeographic.com/maps/atlas/"
+    institution: "National Geographic"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

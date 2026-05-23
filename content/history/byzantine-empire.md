@@ -16,11 +16,11 @@ primary_sources:
     url:"https://press.princeton.edu/books/paperback/9780691143699/byzantium"
     institution:"Princeton University Press"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "Empire: How Britain Made the Modern World"
+    type: "book"
+    year: 2003
+    url: "https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540"
+    institution: "Niall Ferguson, Penguin"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

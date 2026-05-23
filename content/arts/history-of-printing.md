@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.cambridge.org/core/books/printing-revolution-in-early-modern-europe/"
     institution:"Cambridge University Press"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "The Story of Art"
+    type: "book"
+    year: 1950
+    url: "https://www.phaidon.com/store/art/the-story-of-art-9780714832470/"
+    institution: "E.H. Gombrich, Phaidon"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

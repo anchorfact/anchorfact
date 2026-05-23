@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325"
     institution:"Scribner"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "Why We Sleep: Unlocking the Power of Sleep and Dreams"
+    type: "book"
+    year: 2017
+    url: "https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325"
+    institution: "Matthew Walker, Scribner"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

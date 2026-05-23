@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.psychiatry.org/psychiatrists/practice/dsm"
     institution:"American Psychiatric Association"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "Mental Health Information"
+    type: "report"
+    year: 2025
+    url: "https://www.nimh.nih.gov/health"
+    institution: "National Institute of Mental Health (NIMH)"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

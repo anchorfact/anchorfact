@@ -16,11 +16,6 @@ primary_sources:
     url:"https://gettingthingsdone.com/"
     institution:"Penguin"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
   - title: "The Rust Programming Language (2nd Ed)"
     authors: ["Klabnik", "Nichols"]
     type: "book"
@@ -30,6 +25,11 @@ secondary_sources:
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
+  - title: "Deep Work: Rules for Focused Success in a Distracted World"
+    type: "book"
+    year: 2016
+    url: "https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/"
+    institution: "Cal Newport, Grand Central"
 ---
 
 ## TL;DR

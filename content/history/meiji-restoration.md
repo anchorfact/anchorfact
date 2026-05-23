@@ -16,12 +16,16 @@ primary_sources:
     url:"https://www.hup.harvard.edu/catalog.php?isbn=9780674009912"
     institution:"Harvard University Press"
 secondary_sources:
-  - title: "RESTful Web APIs"
-    authors: ["Richardson", "Amundsen"]
+  - title: "Encyclopaedia Britannica"
+    type: "reference"
+    year: 2025
+    url: "https://www.britannica.com/"
+    institution: "Encyclopaedia Britannica, Inc."
+  - title: "The Penguin History of the World"
     type: "book"
-    year: 2013
-    url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
-    institution: "O'Reilly"
+    year: 1976
+    url: "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
+    institution: "J.M. Roberts, Penguin"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

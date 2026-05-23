@@ -16,17 +16,11 @@ primary_sources:
     url:"https://www.moma.org/calendar/exhibitions/2278"
     institution:"Museum of Modern Art"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "RESTful Web APIs"
-    authors: ["Richardson", "Amundsen"]
+  - title: "The History of Photography"
     type: "book"
-    year: 2013
-    url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
-    institution: "O'Reilly"
+    year: 1982
+    url: "https://www.moma.org/calendar/exhibitions/2316"
+    institution: "Beaumont Newhall, MoMA"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

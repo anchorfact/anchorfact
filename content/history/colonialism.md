@@ -16,17 +16,11 @@ primary_sources:
     url:"https://www.harpercollins.com/products/the-scramble-for-africa-thomas-pakenham"
     institution:"HarperCollins"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "RESTful Web APIs"
-    authors: ["Richardson", "Amundsen"]
+  - title: "Empire: How Britain Made the Modern World"
     type: "book"
-    year: 2013
-    url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
-    institution: "O'Reilly"
+    year: 2003
+    url: "https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540"
+    institution: "Niall Ferguson, Penguin"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

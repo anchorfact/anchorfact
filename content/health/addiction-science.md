@@ -16,11 +16,16 @@ primary_sources:
     url:"https://drgabormate.com/book/in-the-realm-of-hungry-ghosts/"
     institution:"North Atlantic Books"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "WHO Fact Sheets"
+    type: "report"
+    year: 2025
+    url: "https://www.who.int/news-room/fact-sheets"
+    institution: "World Health Organization"
+  - title: "CDC Health Topics"
+    type: "report"
+    year: 2025
+    url: "https://www.cdc.gov/health-topics.html"
+    institution: "Centers for Disease Control and Prevention"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

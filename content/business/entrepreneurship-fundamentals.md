@@ -16,11 +16,16 @@ primary_sources:
     url:"https://www.penguinrandomhouse.com/books/120785/the-lean-startup-by-eric-ries/"
     institution:"Crown Business"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "The Lean Startup"
+    type: "book"
+    year: 2011
+    url: "https://www.penguinrandomhouse.com/books/120396/the-lean-startup-by-eric-ries/"
+    institution: "Eric Ries, Crown Business"
+  - title: "Zero to One"
+    type: "book"
+    year: 2014
+    url: "https://www.penguinrandomhouse.com/books/223124/zero-to-one-by-peter-thiel-with-blake-masters/"
+    institution: "Peter Thiel, Crown Business"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

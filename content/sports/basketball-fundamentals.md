@@ -16,11 +16,16 @@ primary_sources:
     url:"https://www.abramsbooks.com/product/basketball-and-other-things_9781419726477/"
     institution:"Abrams"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "Official Basketball Rules"
+    type: "rulebook"
+    year: 2024
+    url: "https://www.fiba.basketball/documents/official-basketball-rules"
+    institution: "FIBA (International Basketball Federation)"
+  - title: "The Book of Basketball"
+    type: "book"
+    year: 2009
+    url: "https://www.penguinrandomhouse.com/books/310253/the-book-of-basketball-by-bill-simmons/"
+    institution: "Bill Simmons, ESPN Books"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

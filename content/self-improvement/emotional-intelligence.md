@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.penguinrandomhouse.com/books/311306/emotional-intelligence-by-daniel-goleman/"
     institution:"Bantam"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "Emotional Intelligence: Why It Can Matter More Than IQ"
+    type: "book"
+    year: 1995
+    url: "https://www.penguinrandomhouse.com/books/203272/emotional-intelligence-by-daniel-goleman/"
+    institution: "Daniel Goleman, Bantam"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

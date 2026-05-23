@@ -16,12 +16,11 @@ primary_sources:
     url:"https://www.worldwildlife.org/places/amazon"
     institution:"World Wildlife Fund"
 secondary_sources:
-  - title: "RESTful Web APIs"
-    authors: ["Richardson", "Amundsen"]
-    type: "book"
-    year: 2013
-    url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
-    institution: "O'Reilly"
+  - title: "UNESCO World Heritage: Amazon"
+    type: "reference"
+    year: 2025
+    url: "https://whc.unesco.org/en/list/998/"
+    institution: "UNESCO World Heritage Centre"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

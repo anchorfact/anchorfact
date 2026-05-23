@@ -29,6 +29,11 @@ secondary_sources:
     year: 2026
     url: "https://hbr.org/"
     institution: "Harvard Business Publishing"
+  - title: "Harvard Business Review"
+    type: "journal"
+    year: 2025
+    url: "https://hbr.org/"
+    institution: "Harvard Business Publishing"
 ---
 
 ## TL;DR

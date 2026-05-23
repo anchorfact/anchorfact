@@ -16,11 +16,16 @@ primary_sources:
     url:"https://www.gutenberg.org/ebooks/731"
     institution:"Project Gutenberg"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "SPQR: A History of Ancient Rome"
+    type: "book"
+    year: 2015
+    url: "https://www.liverightbooks.com/9781631492228"
+    institution: "Mary Beard, Liveright"
+  - title: "The Decline and Fall of the Roman Empire"
+    type: "book"
+    year: 1776
+    url: "https://www.britannica.com/topic/The-History-of-the-Decline-and-Fall-of-the-Roman-Empire"
+    institution: "Edward Gibbon"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

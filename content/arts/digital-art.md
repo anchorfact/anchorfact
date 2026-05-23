@@ -16,12 +16,11 @@ primary_sources:
     url:"https://thamesandhudson.com/digital-art-9780500204238"
     institution:"Thames & Hudson"
 secondary_sources:
-  - title: "Pro Git (2nd Ed)"
-    authors: ["Chacon", "Straub"]
+  - title: "The Story of Art"
     type: "book"
-    year: 2014
-    url: "https://git-scm.com/book/en/v2"
-    institution: "Apress"
+    year: 1950
+    url: "https://www.phaidon.com/store/art/the-story-of-art-9780714832470/"
+    institution: "E.H. Gombrich, Phaidon"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

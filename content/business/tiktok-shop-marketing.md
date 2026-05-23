@@ -29,6 +29,11 @@ secondary_sources:
     year: 2026
     url: "https://hbr.org/"
     institution: "Harvard Business Publishing"
+  - title: "Marketing Management"
+    type: "book"
+    year: 2015
+    url: "https://www.pearson.com/en-us/subject-catalog/p/marketing-management/P200000009716"
+    institution: "Philip Kotler, Pearson"
 ---
 
 ## TL;DR

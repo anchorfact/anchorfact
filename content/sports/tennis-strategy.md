@@ -16,17 +16,11 @@ primary_sources:
     url:"https://www.simonandschuster.com/books/Winning-Ugly/Brad-Gilbert/9780671884000"
     institution:"Touchstone"
 secondary_sources:
-  - title: "BERT: Pre-training of Deep Bidirectional Transformers"
-    authors: ["Devlin", "Chang", "Lee", "Toutanova"]
-    type: "academic_paper"
-    year: 2019
-    doi: "10.48550/arXiv.1810.04805"
-    url: "https://arxiv.org/abs/1810.04805"
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "ITF Rules of Tennis"
+    type: "rulebook"
+    year: 2024
+    url: "https://www.itftennis.com/en/about-us/governance/rules-and-regulations/"
+    institution: "International Tennis Federation"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

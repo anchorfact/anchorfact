@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.taschen.com/en/books/art/43189/impressionism/"
     institution:"Taschen"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "History of Art"
+    type: "book"
+    year: 1962
+    url: "https://www.abramsbooks.com/product/history-of-art_9780810910942/"
+    institution: "H.W. Janson, Abrams"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

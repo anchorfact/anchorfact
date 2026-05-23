@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.humankinetics.com/products/advanced-marathoning-3rd-edition"
     institution:"Human Kinetics"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "IAAF Competition Rules"
+    type: "rulebook"
+    year: 2024
+    url: "https://worldathletics.org/about-iaaf/documents/book-of-rules"
+    institution: "World Athletics (IAAF)"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

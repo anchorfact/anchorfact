@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.humankinetics.com/products/volleyball-skills-drills"
     institution:"Human Kinetics"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "FIVB Official Volleyball Rules"
+    type: "rulebook"
+    year: 2024
+    url: "https://www.fivb.com/en/volleyball/thegame_glossary/officialrulesofthegames"
+    institution: "FIVB (International Volleyball Federation)"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

@@ -16,11 +16,16 @@ primary_sources:
     url:"https://link.springer.com/book/9780306447907"
     institution:"Springer"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "The Feynman Lectures on Physics, Vol. III"
+    type: "book"
+    year: 1965
+    url: "https://www.feynmanlectures.caltech.edu/"
+    institution: "Richard Feynman, Caltech / Addison-Wesley"
+  - title: "Introduction to Quantum Mechanics"
+    type: "book"
+    year: 2004
+    url: "https://www.cambridge.org/highereducation/books/introduction-to-quantum-mechanics/453C5C8A7D52E149A239D9AF6BEF8CB9"
+    institution: "David J. Griffiths, Cambridge University Press"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

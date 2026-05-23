@@ -21,15 +21,14 @@ secondary_sources:
     type: "academic_paper"
     year: 2023
     doi: "10.48550/arXiv.2305.14314"
-    url: "https://arxiv.org/abs/2305.14314"
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-completeness: 0.88
+    url: "https://arxiv.org/abs/2305.14314"completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
+  - title: "Cosmos"
+    type: "book"
+    year: 1980
+    url: "https://www.penguinrandomhouse.com/books/322741/cosmos-by-carl-sagan/"
+    institution: "Carl Sagan, Random House"
 ---
 
 ## TL;DR

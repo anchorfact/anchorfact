@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.mheducation.com/highered/product/art-public-speaking-lucas/M9781259924606.html"
     institution:"McGraw-Hill"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "How to Win Friends and Influence People"
+    type: "book"
+    year: 1936
+    url: "https://www.simonandschuster.com/books/How-to-Win-Friends-and-Influence-People/Dale-Carnegie/9780671027032"
+    institution: "Dale Carnegie, Simon & Schuster"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

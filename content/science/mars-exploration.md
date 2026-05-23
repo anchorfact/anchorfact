@@ -25,6 +25,16 @@ secondary_sources:
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
+  - title: "A Brief History of Time"
+    type: "book"
+    year: 1988
+    url: "https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/"
+    institution: "Stephen Hawking, Bantam"
+  - title: "Nature (journal)"
+    type: "journal"
+    year: 2025
+    url: "https://www.nature.com/"
+    institution: "Springer Nature"
 ---
 
 ## TL;DR

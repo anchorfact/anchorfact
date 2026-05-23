@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.simonandschuster.com/books/The-Double-Helix/James-D-Watson/9780743216302"
     institution:"Atheneum"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "Molecular Biology of the Gene"
+    type: "book"
+    year: 2013
+    url: "https://www.pearson.com/en-us/subject-catalog/p/molecular-biology-of-the-gene/P200000007006"
+    institution: "James D. Watson et al., Pearson"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

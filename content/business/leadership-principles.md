@@ -16,11 +16,6 @@ primary_sources:
     url:"https://www.penguinrandomhouse.com/books/223777/leaders-eat-last-by-simon-sinek/"
     institution:"Portfolio"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
   - title: "The Rust Programming Language (2nd Ed)"
     authors: ["Klabnik", "Nichols"]
     type: "book"
@@ -30,6 +25,16 @@ secondary_sources:
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
+  - title: "Good to Great"
+    type: "book"
+    year: 2001
+    url: "https://www.harpercollins.com/products/good-to-great-jim-collins"
+    institution: "Jim Collins, HarperBusiness"
+  - title: "The Effective Executive"
+    type: "book"
+    year: 1967
+    url: "https://www.harpercollins.com/products/the-effective-executive-peter-f-drucker"
+    institution: "Peter F. Drucker, HarperBusiness"
 ---
 
 ## TL;DR

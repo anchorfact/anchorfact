@@ -16,11 +16,16 @@ primary_sources:
     url:"https://www.penguinrandomhouse.com/books/56337/the-guns-of-august-by-barbara-w-tuchman/"
     institution:"Macmillan"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "The Second World War"
+    type: "book"
+    year: 2012
+    url: "https://www.antonybeevor.com/books/the-second-world-war/"
+    institution: "Antony Beevor, Weidenfeld & Nicolson"
+  - title: "The Rise and Fall of the Third Reich"
+    type: "book"
+    year: 1960
+    url: "https://www.simonandschuster.com/books/The-Rise-and-Fall-of-the-Third-Reich/William-L-Shirer/9781451651683"
+    institution: "William L. Shirer, Simon & Schuster"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

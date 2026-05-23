@@ -16,11 +16,11 @@ primary_sources:
     url:"https://wwnorton.com/books/9780393602814"
     institution:"W. W. Norton"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "The Norton Anthology of World Literature"
+    type: "book"
+    year: 2018
+    url: "https://wwnorton.com/books/9780393602814"
+    institution: "Martin Puchner et al., W.W. Norton"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

@@ -16,11 +16,6 @@ primary_sources:
     url:"https://www.gutenberg.org/ebooks/2074"
     institution:"Project Gutenberg"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
   - title: "Redis in Action"
     authors: ["Carlson"]
     type: "book"
@@ -30,6 +25,11 @@ secondary_sources:
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
+  - title: "The Civilization of the Renaissance in Italy"
+    type: "book"
+    year: 1860
+    url: "https://www.britannica.com/topic/The-Civilization-of-the-Renaissance-in-Italy"
+    institution: "Jacob Burckhardt"
 ---
 
 ## TL;DR

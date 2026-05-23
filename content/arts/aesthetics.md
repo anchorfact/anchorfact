@@ -16,17 +16,11 @@ primary_sources:
     url:"https://www.cambridge.org/core/books/kants-critique-of-the-power-of-judgment/"
     institution:"Cambridge University Press"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "RESTful Web APIs"
-    authors: ["Richardson", "Amundsen"]
+  - title: "The Story of Art"
     type: "book"
-    year: 2013
-    url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
-    institution: "O'Reilly"
+    year: 1950
+    url: "https://www.phaidon.com/store/art/the-story-of-art-9780714832470/"
+    institution: "E.H. Gombrich, Phaidon"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

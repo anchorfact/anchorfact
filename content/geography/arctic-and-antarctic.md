@@ -21,15 +21,19 @@ secondary_sources:
     type: "academic_paper"
     year: 2020
     doi: "10.48550/arXiv.2005.11401"
-    url: "https://arxiv.org/abs/2005.11401"
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-completeness: 0.88
+    url: "https://arxiv.org/abs/2005.11401"completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
+  - title: "CIA World Factbook"
+    type: "database"
+    year: 2025
+    url: "https://www.cia.gov/the-world-factbook/"
+    institution: "Central Intelligence Agency"
+  - title: "National Geographic Atlas"
+    type: "reference"
+    year: 2019
+    url: "https://www.nationalgeographic.com/maps/atlas/"
+    institution: "National Geographic"
 ---
 
 ## TL;DR

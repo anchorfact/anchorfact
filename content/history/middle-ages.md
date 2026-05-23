@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.penguinrandomhouse.com/books/56336/a-distant-mirror-by-barbara-w-tuchman/"
     institution:"Knopf"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "The Civilization of the Renaissance in Italy"
+    type: "book"
+    year: 1860
+    url: "https://www.britannica.com/topic/The-Civilization-of-the-Renaissance-in-Italy"
+    institution: "Jacob Burckhardt"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

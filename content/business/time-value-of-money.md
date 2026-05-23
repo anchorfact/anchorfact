@@ -16,17 +16,16 @@ primary_sources:
     url:"https://www.mheducation.com/highered/product/principles-corporate-finance-brealey-myers/M9781264080946.html"
     institution:"McGraw-Hill"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "RESTful Web APIs"
-    authors: ["Richardson", "Amundsen"]
-    type: "book"
-    year: 2013
-    url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
-    institution: "O'Reilly"
+  - title: "Harvard Business Review"
+    type: "journal"
+    year: 2025
+    url: "https://hbr.org/"
+    institution: "Harvard Business Publishing"
+  - title: "The Economist"
+    type: "periodical"
+    year: 2025
+    url: "https://www.economist.com/"
+    institution: "The Economist Group"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

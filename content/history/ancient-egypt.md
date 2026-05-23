@@ -16,11 +16,11 @@ primary_sources:
     url:"https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587"
     institution:"Oxford University Press"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "The Oxford History of Ancient Egypt"
+    type: "book"
+    year: 2000
+    url: "https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587"
+    institution: "Ian Shaw, Oxford University Press"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.penguinrandomhouse.com/books/71097/bobby-fischer-teaches-chess-by-bobby-fischer/"
     institution:"Bantam"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "FIDE Laws of Chess"
+    type: "rulebook"
+    year: 2023
+    url: "https://www.fide.com/FIDE/handbook/LawsOfChess.pdf"
+    institution: "FIDE (World Chess Federation)"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

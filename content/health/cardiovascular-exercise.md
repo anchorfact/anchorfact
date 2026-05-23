@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.acsm.org/read-research/books/acsms-guidelines-for-exercise-testing-and-prescription"
     institution:"Lippincott Williams & Wilkins"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "Physical Activity Guidelines for Americans"
+    type: "report"
+    year: 2018
+    url: "https://health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines"
+    institution: "U.S. Department of Health and Human Services"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

@@ -16,17 +16,11 @@ primary_sources:
     url:"https://www.rutgersuniversitypress.org/a-short-history-of-film-third-edition/9780813595139/"
     institution:"Rutgers University Press"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "Pro Git (2nd Ed)"
-    authors: ["Chacon", "Straub"]
+  - title: "Film History: An Introduction"
     type: "book"
-    year: 2014
-    url: "https://git-scm.com/book/en/v2"
-    institution: "Apress"
+    year: 2018
+    url: "https://www.mheducation.com/highered/product/film-history-introduction-thompson-bordwell/M9781259870354.html"
+    institution: "Kristin Thompson & David Bordwell, McGraw-Hill"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

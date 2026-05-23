@@ -16,11 +16,11 @@ primary_sources:
     url:"https://www.simonandschuster.com/books/The-Last-Days-of-the-Incas/Kim-MacQuarrie/9780743260503"
     institution:"Simon & Schuster"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "Empire: How Britain Made the Modern World"
+    type: "book"
+    year: 2003
+    url: "https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540"
+    institution: "Niall Ferguson, Penguin"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
