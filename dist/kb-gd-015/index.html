@@ -1,380 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>游戏引擎对比与技术选型 — AnchorFact</title></head>
-<body><article><br>
-# 游戏引擎对比与技术选型<br>
-<br>
-## 主流引擎对比（2025-2026）<br>
-<br>
-### Unity（C#）<br>
-<br>
-| 维度 | 说明 |<br>
-|------|------|<br>
-| 适用场景 | 移动游戏、跨平台、2D/3D 平衡、大型生态 |<br>
-| 渲染管线 | URP（通用渲染管线）、HDRP（高清渲染管线） |<br>
-| 优势 | 生态庞大（Asset Store）、跨平台支持最好、移动端优化极佳 |<br>
-| 劣势 | 编译/域重载慢、依赖第三方包、管线配置复杂 |<br>
-| AI 集成 | Unity 6 原生集成 AI Assistant、Sentis（运行时 ONNX 推理） |<br>
-| 收费 | 免费版 + 付费计划 |<br>
-<br>
-### Unreal Engine（C++ / Blueprints）<br>
-<br>
-| 维度 | 说明 |<br>
-|------|------|<br>
-| 适用场景 | AAA 画质、大型团队、开放世界、电影级画面 |<br>
-| 渲染特性 | Nanite（虚拟几何体）、Lumen（全局光照）、Niagara（VFX） |<br>
-| 优势 | 开箱即用的高端渲染、MetaHuman、Chaos 物理 |<br>
-| 劣势 | 学习曲线陡峭、编译/构建慢、资产管线重 |<br>
-| AI 集成 | Aura 12.0（多智能体）、AutoUE（端到端 3D 生成） |<br>
-| 收费 | 游戏收入超 $100 万后收 5% 版税 |<br>
-<br>
-### Godot（GDScript / C# / C++）<br>
-<br>
-| 维度 | 说明 |<br>
-|------|------|<br>
-| 适用场景 | 开源、2D 游戏、轻量级独立项目、自定义工具 |<br>
-| 架构 | Node-Scene 体系、信号通信 |<br>
-| 优势 | 完全开源 MIT 许可、编辑器轻量启动快、2D 渲染极优 |<br>
-| 劣势 | 3D 能力仍在追赶、生态未成熟 |<br>
-| AI 集成 | GodotIQ MCP（3D 空间理解、信号流追踪） |<br>
-| 收费 | 完全免费 |<br>
-<br>
----<br>
-<br>
-## 选型决策<br>
-<br>
-| 你的情况 | 推荐引擎 |<br>
-|----------|----------|<br>
-| AAA 大型团队、追求画质 | Unreal Engine |<br>
-| 移动/跨平台独立团队 | Unity 6 |<br>
-| 2D 游戏、预算敏感 | Godot |<br>
-| 技术导向小团队、AI 辅助 3D 编辑 | Godot + GodotIQ |<br>
-| 单人开发者、最快 3D 迭代 | Cave Engine |<br>
-<br>
----<br>
-<br>
-## 各引擎详细工作流<br>
-<br>
-### Unity 开发工作流<br>
-<br>
-#### 项目初始化<br>
-```<br>
-Unity Hub → 选择模板（URP/HDRP/2D）→ 命名项目 → 设置版本控制<br>
-```<br>
-<br>
-**关键决策点**：<br>
-- **渲染管线**：URP（跨平台通用）vs HDRP（高端PC/主机）vs Built-in（遗留项目）<br>
-- **输入系统**：新 Input System（推荐）vs 旧 Input Manager<br>
-- **物理引擎**：PhysX 内置（默认）vs 第三方（如 DOTS Physics）<br>
-<br>
-#### 日常开发循环<br>
-```<br>
-编辑 C# 脚本 → 保存 → 域重载（Domain Reload，2-10秒）→ 测试<br>
-```<br>
-<br>
-**优化迭代速度**：<br>
-- 关闭 **Enter Play Mode Options** 中的"Reload Domain"和"Reload Scene"（Unity 2019.3+）<br>
-- 使用 **Assembly Definition** 减少编译范围<br>
-- 启用 **Incremental GC** 减少卡顿<br>
-- 使用 **Hot Reload** 工具（如 Unity Hot Reload 资产）<br>
-<br>
-#### 资产管线<br>
-```<br>
-外部工具（Blender/Photoshop）→ 导入 Unity → 设置 Import Settings → Prefab 化<br>
-```<br>
-<br>
-**关键设置**：<br>
-- 模型：FBX 格式，注意 Scale Factor、Animation Compression<br>
-- 贴图：Texture Type（Sprite/Default/Cookie/etc.）、Compression 设置<br>
-- 音频：Load Type（Decompress On Load/Streaming/Compressed In Memory）<br>
-<br>
-#### 构建与发布<br>
-```<br>
-File → Build Settings → 选择平台 → Player Settings → Build<br>
-```<br>
-<br>
-**平台特定注意**：<br>
-- **iOS**：需要 Mac + Xcode，注意 Signing & Capabilities<br>
-- **Android**：Keystore 管理、API Level 选择、AAB 格式<br>
-- **WebGL**：压缩格式、内存限制、单线程限制<br>
-<br>
----<br>
-<br>
-### Unreal Engine 开发工作流<br>
-<br>
-#### 项目初始化<br>
-```<br>
-Epic Games Launcher → 选择模板（空白/第一人称/第三人称）→ 命名项目 → 启用插件<br>
-```<br>
-<br>
-**关键决策点**：<br>
-- **蓝图 vs C++**：原型用蓝图，性能关键用 C++，混合开发最常见<br>
-- **渲染特性**：是否启用 Nanite、Lumen、Virtual Shadow Maps<br>
-- **插件**：启用所需插件（如 Chaos Physics、MetaHuman、Niagara）<br>
-<br>
-#### 日常开发循环<br>
-```<br>
-编辑蓝图/C++ → 编译（C++ 需等待，蓝图即时）→ 测试<br>
-```<br>
-<br>
-**C++ 编译优化**：<br>
-- 使用 **Live Coding**（Ctrl+Alt+F11）热重载 C++ 代码<br>
-- **Unreal Build Tool (UBT)** 使用 Incredibuild 分布式编译<br>
-- 模块化代码，减少头文件依赖（前向声明）<br>
-- 使用 **PCH (Precompiled Headers)**<br>
-<br>
-#### 资产管线<br>
-```<br>
-外部工具 → 导入 Content Browser → 设置材质/蓝图 → 放入关卡<br>
-```<br>
-<br>
-**关键工作流**：<br>
-- **静态网格**：FBX 导入，注意 LOD、Collision、Lightmap UV<br>
-- **骨骼网格**：导入动画、设置 Retargeting、Blend Space<br>
-- **材质**：Master Material → Material Instance 层级<br>
-- **关卡**：Persistent Level + Sub-levels（流送优化）<br>
-<br>
-#### 蓝图-C++ 协作模式<br>
-<br>
-| 场景 | 推荐方式 | 原因 |<br>
-|------|----------|------|<br>
-| 快速原型 | 纯蓝图 | 迭代最快，可视化调试 |<br>
-| 核心系统 | C++ 基类 + 蓝图子类 | 性能 + 灵活性 |<br>
-| UI 逻辑 | UMG 蓝图 | 可视化布局 + 事件绑定 |<br>
-| 动画逻辑 | Animation Blueprint | 状态机可视化 |<br>
-| 网络同步 | C++（GameMode/PlayerState） | 精确控制复制规则 |<br>
-<br>
----<br>
-<br>
-### Godot 开发工作流<br>
-<br>
-#### 项目初始化<br>
-```<br>
-Godot 编辑器 → 新建项目 → 选择渲染器（Forward+/Mobile/Compatibility）→ 创建主场景<br>
-```<br>
-<br>
-**关键决策点**：<br>
-- **渲染器**：Forward+（现代桌面）、Mobile（移动/轻量）、Compatibility（旧设备/Web）<br>
-- **脚本语言**：GDScript（推荐，文档完善）vs C#（需 .NET 支持）vs C++（模块开发）<br>
-- **版本控制**：内置 Git 插件或外部工具<br>
-<br>
-#### 日常开发循环<br>
-```<br>
-编辑 GDScript → Ctrl+S（保存即运行）→ F6（运行当前场景）→ 调试<br>
-```<br>
-<br>
-**迭代速度优势**：<br>
-- Godot 编辑器启动 < 5 秒（Unity/Unreal 通常 30-120 秒）<br>
-- GDScript 无需编译，保存即生效<br>
-- 内置脚本编辑器支持断点、单步调试<br>
-- **Remote Scene Tree** 实时查看运行中场景状态<br>
-<br>
-#### 场景-节点工作流<br>
-```<br>
-设计场景树 → 添加节点 → 附加脚本 → 信号连接 → 实例化复用<br>
-```<br>
-<br>
-**核心概念**：<br>
-- **Scene（场景）**：可复用的节点树，既是编辑器文件也是运行时对象<br>
-- **Node（节点）**：基础构建块，每个节点有单一职责<br>
-- **Signal（信号）**：松耦合的事件系统，替代回调地狱<br>
-- **Instancing（实例化）**：场景嵌套复用，类似 Prefab<br>
-<br>
-**典型场景结构**：<br>
-```<br>
-Main.tscn<br>
-├── Player (CharacterBody2D/3D)<br>
-│   ├── Sprite/Mesh<br>
-│   ├── CollisionShape<br>
-│   └── Camera<br>
-├── Enemies (Node)<br>
-│   └── Enemy.tscn × N（实例化）<br>
-├── UI (CanvasLayer)<br>
-│   ├── HUD<br>
-│   └── PauseMenu<br>
-└── World (Node2D/Node3D)<br>
-    └── TileMap / MeshInstance<br>
-```<br>
-<br>
-#### 导出与发布<br>
-```<br>
-Project → Export → 添加预设 → 配置 → Export Project<br>
-```<br>
-<br>
-**平台注意**：<br>
-- **Web**：Godot 4 Web 导出使用 WebAssembly + WebGL2<br>
-- **移动端**：Android 需要 SDK/NDK，iOS 需要 Mac + Xcode<br>
-- **主机**：需联系平台持有者获取导出模板<br>
-<br>
----<br>
-<br>
-### 引擎工作流对比总结<br>
-<br>
-| 维度 | Unity | Unreal | Godot |<br>
-|------|-------|--------|-------|<br>
-| **编辑器启动** | 30-60 秒 | 60-180 秒 | < 5 秒 |<br>
-| **脚本迭代** | 编译 2-10 秒 | C++ 编译 10-60 秒 | 保存即生效 |<br>
-| **原型速度** | 中 | 高（蓝图） | 极高 |<br>
-| **资产导入** | 自动导入 + 设置 | 导入 + 材质设置 | 拖放即用 |<br>
-| **版本控制友好度** | 中（YAML 场景文件） | 低（二进制资产） | 高（文本场景文件） |<br>
-| **团队协作** | 中（Plastic SCM 集成） | 中（Perforce 推荐） | 高（Git 友好） |<br>
-| **调试工具** | 丰富（Profiler、Frame Debugger） | 极丰富（RenderDoc 集成） | 基础（内置 Debugger） |<br>
-| **学习曲线** | 中 | 高（C++）/ 中（蓝图） | 低 |<br>
-<br>
----<br>
-<br>
-## 开发管线<br>
-<br>
-### 预生产阶段<br>
-- 概念设计 → GDD（游戏设计文档）<br>
-- 技术选型 → 引擎 + 工具链确定<br>
-- 原型开发 → 验证核心玩法<br>
-- 垂直切片 → 端到端可玩片段<br>
-<br>
-### 生产阶段<br>
-- 资产管线：模型 → 贴图 → 动画 → 导入引擎<br>
-- 代码开发：架构 → 功能 → 集成 → 测试<br>
-- 关卡搭建：白盒 → 美术 → 光照 → 优化<br>
-- 叙事整合：脚本 → 配音 → 本地化<br>
-<br>
-### 测试与发布<br>
-- QA 测试 → 性能优化 → 平台认证 → 发布<br>
-<br>
----<br>
-<br>
-## AI Agent 辅助开发建议<br>
-<br>
-1. **使用结构化规则文件** — CLAUDE.md、AGENTS.md、ARCHITECTURE.md<br>
-2. **分步工作** — 每次只处理一个可测试的特性<br>
-3. **频繁提交 Git** — 每个工作步骤完成后提交，方便回滚<br>
-4. **使用 MCP 服务** — 让 AI 直接操作引擎（Unity MCP、GodotIQ）<br>
-5. **定期清理上下文** — 每个步骤新开对话<br>
-<br>
----<br>
-<br>
-## 参考来源<br>
-<br>
-- Uniday Studio: Unity vs Godot vs Unreal vs Cave (2026)<br>
-- Unity 6 官方文档<br>
-- Unreal Engine 5.5 官方文档<br>
-- Godot 4.4 官方文档<br>
-<br>
----<br>
-<br>
-## 更多引擎速览<br>
-<br>
-| 引擎 | 语言 | 许可 | 最佳场景 | 学习曲线 |<br>
-|------|------|------|----------|----------|<br>
-| **Cocos Creator** | TypeScript | MIT | 2D/3D 手游、H5 游戏 | 低 |<br>
-| **GameMaker** | GML | 商业 | 2D 独立游戏 | 极低 |<br>
-| **Defold** | Lua | 商业 | 2D 手游、H5 | 低 |<br>
-| **Phaser** | JavaScript | MIT | H5 2D 游戏 | 低 |<br>
-| **Bevy** | Rust | MIT | Rust 生态、ECS | 高 |<br>
-| **Raylib** | C/C++ | zlib | 学习/原型 | 低 |<br>
-| **Stride** | C# | MIT | 3D 游戏（开源替代 Unity）| 中 |<br>
-| **Ren'Py** | Python | MIT | 视觉小说 | 极低 |<br>
-| **RPG Maker** | Ruby/JS | 商业 | JRPG 原型 | 极低 |<br>
-<br>
----<br>
-<br>
-## 选型决策矩阵<br>
-<br>
-### 按团队规模<br>
-<br>
-| 团队规模 | 推荐引擎 | 原因 |<br>
-|----------|----------|------|<br>
-| **1人** | Godot / GameMaker / Phaser | 轻量、快速迭代、低学习成本 |<br>
-| **2-5人** | Unity / Godot | 生态完善、分工明确 |<br>
-| **5-20人** | Unity / Unreal | 专业工具链、资产管线 |<br>
-| **20-100人** | Unreal / Unity | 团队协作、性能优化 |<br>
-| **100+人** | 自研 / Unreal | 完全可控、深度定制 |<br>
-<br>
-### 按游戏类型<br>
-<br>
-| 类型 | 首选 | 次选 | 不推荐 |<br>
-|------|------|------|--------|<br>
-| **2D 平台** | Godot / Unity | GameMaker | Unreal |<br>
-| **2D 像素** | Godot / Unity | GameMaker | — |<br>
-| **3D 动作** | Unreal / Unity | Godot | — |<br>
-| **开放世界** | Unreal | Unity | Godot |<br>
-| **移动端** | Unity | Cocos | Unreal |<br>
-| **H5/网页** | Phaser / Cocos | Godot(Web) | Unreal |<br>
-| **视觉小说** | Ren'Py | Unity | — |<br>
-| **JRPG** | RPG Maker / Unity | Godot | — |<br>
-| **VR/AR** | Unity / Unreal | — | Godot |<br>
-<br>
-### 按技术约束<br>
-<br>
-| 约束 | 推荐 | 避免 |<br>
-|------|------|------|<br>
-| **零预算** | Godot / Phaser / Bevy | Unity Pro / Unreal（收入达标后）|<br>
-| **快速原型** | Godot / GameMaker | Unreal |<br>
-| **极致画质** | Unreal | Godot |<br>
-| **源代码可控** | Godot / Bevy | Unity / Unreal |<br>
-| **大团队 C++** | Unreal / 自研 | Unity |<br>
-| **大团队 C#** | Unity / Stride | Unreal |<br>
-<br>
----<br>
-<br>
-## 学习路径推荐<br>
-<br>
-### 入门路径（0-3 个月）<br>
-<br>
-```<br>
-选择 Godot（最友好）<br>
-├── 第 1 周：完成官方 Dodge the Creeps 教程<br>
-├── 第 2-3 周：做一个简单的平台跳跃游戏<br>
-├── 第 4 周：添加 UI、音效、菜单<br>
-└── 第 5-12 周：完成一个完整小游戏（Game Jam 规模）<br>
-```<br>
-<br>
-### 进阶路径（3-12 个月）<br>
-<br>
-```<br>
-选择 Unity 或 Unreal<br>
-├── 第 1-2 月：深入理解渲染管线、物理、动画<br>
-├── 第 3-4 月：学习资产管线、性能优化<br>
-├── 第 5-6 月：网络同步、多人游戏基础<br>
-├── 第 7-8 月：Shader 编程、VFX<br>
-├── 第 9-10 月：AI 系统、寻路、行为树<br>
-└── 第 11-12 月：完成一个中型项目<br>
-```<br>
-<br>
-### 资源推荐<br>
-<br>
-| 类型 | Unity | Unreal | Godot |<br>
-|------|-------|--------|-------|<br>
-| **官方文档** | docs.unity3d.com | docs.unrealengine.com | docs.godotengine.org |<br>
-| **视频教程** | Brackeys / Code Monkey | Unreal Sensei / DevSquad | GDQuest / HeartBeast |<br>
-| **社区论坛** | Unity Discussions | Unreal Forums | Godot Q&A / Reddit |<br>
-| **中文资源** | 哔哩哔哩、Unity中文课堂 | 虚幻引擎官方B站 |  Godot中文社区 |<br>
-<br>
----<br>
-<br>
-## 性能对比参考<br>
-<br>
-| 场景 | Unity (URP) | Unreal 5 | Godot 4 |<br>
-|------|-------------|----------|---------|<br>
-| **空场景启动** | 2-5s | 10-30s | <1s |<br>
-| **10k 对象渲染** | 60 FPS | 60 FPS | 45 FPS |<br>
-| **复杂光照烘焙** | 10-30min | 1-4h (Lumen实时) | 5-15min |<br>
-| **构建时间（中型）** | 5-15min | 20-60min | 2-5min |<br>
-| **内存占用（编辑器）** | 2-4GB | 8-16GB | 200-500MB |<br>
-| **包体大小（空）** | 15-30MB | 100-300MB | 20-40MB |<br>
-<br>
-> 注：性能数据高度依赖具体项目和优化程度，仅供参考。<br>
-<br>
----<br>
-<br>
-## 最佳实践<br>
-<br>
-- [ ] **先原型再选型** — 用最快上手的引擎验证核心玩法，再决定是否切换<br>
-- [ ] **考虑团队技能栈** — 会 C# 选 Unity，会 C++ 选 Unreal，会 Python 选 Godot<br>
-- [ ] **评估长期成本** — Unity 收入分成、Unreal 版税、自研人力成本<br>
-- [ ] **关注社区生态** — Asset Store / Marketplace / Asset Library 的资源丰富度<br>
-- [ ] **测试目标平台** — 在目标设备上 early test，不要等最后才移植<br>
-- [ ] **保持引擎更新** — 但不要追最新版，稳定版 + LTS 更安全<br>
-- [ ] **文档和培训** — 新成员 onboarding 成本是隐性成本<br>
-- [ ] **有退出策略** — 考虑数据导出、资产迁移的可能性<br>
-</article></body>
-</html>

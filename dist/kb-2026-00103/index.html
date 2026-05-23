@@ -1,17 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>Geolocation API — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-The Geolocation API (`navigator.geolocation`) provides device location (latitude, longitude, altitude, accuracy) to web applications with user consent. It uses GPS, WiFi, cell tower triangulation, or IP-based location depending on available hardware.<br>
-<br>
-## Core Explanation<br>
-<br>
-`navigator.geolocation.getCurrentPosition(success, error, options)`. `watchPosition()` for continuous tracking. Options include `enableHighAccuracy`, `timeout`, `maximumAge`. The API is asynchronous and can take seconds to resolve. HTTPS is required. Accuracy varies: GPS ~5m, WiFi ~50m, IP ~city-level.<br>
-<br>
-## Further Reading<br>
-<br>
-- [Geolocation API (W3C Recommendation)](https://www.w3.org/TR/geolocation/)<br>
-</article></body>
-</html>

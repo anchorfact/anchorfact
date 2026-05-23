@@ -1,8 +1,0 @@
-@prefix schema: <https://schema.org/> .
-@prefix af: <https://anchorfact.org/ns#> .
-
-<https://anchorfact.org/kb/kb-2026-00462>
-  a schema:TechArticle ;
-  schema:headline "Nutrition for Athletes" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .

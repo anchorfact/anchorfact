@@ -1,17 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>Performance API — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-The Performance API (`performance.now()`, `performance.getEntries()`) provides high-resolution timing data (microsecond precision) for measuring web application performance. It includes the Navigation Timing, Resource Timing, and User Timing APIs.<br>
-<br>
-## Core Explanation<br>
-<br>
-`performance.now()` returns a DOMHighResTimeStamp relative to `timeOrigin` with 5μs precision. `performance.mark('name')` and `measure()` for custom metrics. `performance.getEntriesByType('resource')` lists all loaded resources with timing breakdowns (DNS, TCP, request, response). Core Web Vitals (LCP, INP, CLS) are exposed via PerformanceObserver.<br>
-<br>
-## Further Reading<br>
-<br>
-- [Performance Timeline (W3C)](https://www.w3.org/TR/performance-timeline/)<br>
-</article></body>
-</html>

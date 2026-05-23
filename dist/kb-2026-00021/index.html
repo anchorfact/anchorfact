@@ -1,63 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>Rust Programming Language — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-Rust is a systems programming language focused on safety, concurrency, and performance. Created by Graydon Hoare at Mozilla Research in 2010 and first stabilized in 2015, Rust guarantees memory safety without garbage collection through its ownership and borrowing system. According to the JetBrains State of Rust 2025 survey (February 2026), 26% of Rust developers use it professionally, 65% use it for personal projects, and the language continues to attract new users at an accelerating rate (30% of respondents had started using Rust within the past month). The latest stable version is Rust 1.95.0 (released April 16, 2026). Rust was voted the "most admired" programming language in the Stack Overflow Developer Survey for nine consecutive years (2016-2024).<br>
-<br>
-## Core Explanation<br>
-<br>
-Rust's defining innovation is its **ownership system** — a set of compile-time rules that eliminate entire classes of bugs without runtime overhead:<br>
-<br>
-- **Ownership**: Each value has exactly one owner at a time<br>
-- **Borrowing**: References can be shared (`&T`, immutable) or exclusive (`&mut T`, mutable), but never both simultaneously<br>
-- **Lifetimes**: The compiler tracks how long references are valid, preventing use-after-free and dangling pointers<br>
-<br>
-This enables C/C++-level performance with memory safety guarantees that traditionally required garbage collection. Rust has no null pointers, no data races (enforced at compile time), and no undefined behavior in safe code.<br>
-<br>
-## Key Features<br>
-<br>
-- **Zero-cost abstractions**: High-level constructs compile to the same machine code as hand-written low-level equivalents<br>
-- **Pattern matching**: Exhaustive `match` expressions with destructuring<br>
-- **Traits**: Type-class-like polymorphism without inheritance<br>
-- **Algebraic data types**: `enum` with associated data, enabling expressive error handling via `Result<T, E>` and `Option<T>`<br>
-- **Cargo**: Integrated build system, package manager, test runner, and documentation generator<br>
-- **Fearless concurrency**: The type system prevents data races at compile time<br>
-- **`unsafe` escape hatch**: Opt-in to raw pointers and FFI when needed, with explicit scoping<br>
-<br>
-## Adoption Data (JetBrains 2025 Survey)<br>
-<br>
-| Metric | Value |<br>
-|--------|:-----:|<br>
-| Professional/work use | **26%** |<br>
-| Personal/hobby use | **65%** |<br>
-| Currently learning Rust | **52%** |<br>
-| Started in past month (new users) | **30%** |<br>
-| 3+ years of Rust experience | Growing cohort |<br>
-| Primary production OS | **Linux 75%** |<br>
-| Most common co-languages | JS/TS, Python, SQL, Shell |<br>
-<br>
-## Domain Expansion<br>
-<br>
-Rust started in systems programming and CLI tools but has expanded dramatically:<br>
-<br>
-- **Web backends**: Actix-web, Axum, Rocket — increasingly trusted for APIs and services<br>
-- **Embedded systems**: No-std support, growing microcontroller ecosystem<br>
-- **WebAssembly**: Rust is the dominant language for Wasm compilation<br>
-- **Linux kernel**: Rust for Linux project merged initial support in Linux 6.1 (2022); ongoing driver development<br>
-- **Blockchain**: Solana, Polkadot, NEAR built core protocols in Rust<br>
-- **AI/ML tooling**: HuggingFace Tokenizers, Ruff (Python linter), uv (Python package manager) — not AI modeling, but critical infrastructure<br>
-- **Cloud infrastructure**: AWS Firecracker, Cloudflare Workers runtime, Dropbox storage engine<br>
-<br>
-## Major Adopters (Production)<br>
-<br>
-Amazon (AWS), Google (Android, Fuchsia), Microsoft (Windows kernel, Azure), Meta (compiler infrastructure), Cloudflare (Workers, Pingora proxy), Dropbox (storage), Discord (real-time services), Figma (performance-critical rendering), 1Password (desktop app core)<br>
-<br>
-## Further Reading<br>
-<br>
-- [Rust Official Site](https://rust-lang.org/): Documentation, playground, and getting started<br>
-- [State of Rust 2025 (JetBrains)](https://blog.jetbrains.com/rust/2026/02/11/state-of-rust-2025/): Comprehensive ecosystem survey<br>
-- [The Rust Book](https://doc.rust-lang.org/book/): Official learning resource<br>
-</article></body>
-</html>

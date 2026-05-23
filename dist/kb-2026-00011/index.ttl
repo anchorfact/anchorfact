@@ -1,8 +1,0 @@
-@prefix schema: <https://schema.org/> .
-@prefix af: <https://anchorfact.org/ns#> .
-
-<https://anchorfact.org/kb/kb-2026-00011>
-  a schema:TechArticle ;
-  schema:headline "TCP/IP Protocol Suite" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .

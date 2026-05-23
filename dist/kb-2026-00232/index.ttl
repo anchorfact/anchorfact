@@ -1,8 +1,0 @@
-@prefix schema: <https://schema.org/> .
-@prefix af: <https://anchorfact.org/ns#> .
-
-<https://anchorfact.org/kb/kb-2026-00232>
-  a schema:TechArticle ;
-  schema:headline "Test-Driven Development (TDD)" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .

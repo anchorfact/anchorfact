@@ -1,17 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>String Matching Algorithms — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-String matching finds occurrences of a pattern in text. Naive: O(nm). KMP (Knuth-Morris-Pratt): O(n+m) using prefix function. Boyer-Moore: O(n/m) average, O(nm) worst. Rabin-Karp: O(n+m) average using rolling hash. Real-world text search uses hybrid algorithms.<br>
-<br>
-## Core Explanation<br>
-<br>
-KMP precomputes failure function (longest proper prefix that is also suffix). Boyer-Moore scans pattern right-to-left, skipping characters — fastest in practice for English text. Aho-Corasick extends KMP for multiple pattern matching (used in fgrep, intrusion detection). Suffix arrays/trees enable O(m) substring search with O(n) preprocessing.<br>
-<br>
-## Further Reading<br>
-<br>
-- [Introduction to Algorithms (CLRS)](undefined)<br>
-</article></body>
-</html>

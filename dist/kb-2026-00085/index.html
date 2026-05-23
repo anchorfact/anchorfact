@@ -1,17 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>IndexedDB — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-IndexedDB is a low-level, asynchronous transactional database API for browsers, supporting structured data storage including objects and binary data. Unlike localStorage's synchronous key-value model, IndexedDB handles large datasets (hundreds of MB) with indexed queries and transactions.<br>
-<br>
-## Core Explanation<br>
-<br>
-IndexedDB uses object stores (not tables) and indexes for efficient queries. Transactions auto-commit, and the API is event-driven (though modern ORMs like Dexie.js provide Promise wrappers). Key features: cursor-based iteration, compound indexes, version-based schema migrations. It operates within the same-origin sandbox and respects the browser's storage quota.<br>
-<br>
-## Further Reading<br>
-<br>
-- [IndexedDB API (W3C Recommendation)](https://www.w3.org/TR/IndexedDB/)<br>
-</article></body>
-</html>

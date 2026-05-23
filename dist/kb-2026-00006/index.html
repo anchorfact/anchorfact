@@ -1,108 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>Retrieval-Augmented Generation (RAG) — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-Retrieval-Augmented Generation (RAG) is an AI architecture introduced by Lewis et al. (2020) at Facebook AI Research that combines large language models with real-time external knowledge retrieval. Instead of relying solely on parametric knowledge (what the model memorized during training), RAG retrieves relevant documents from a knowledge base and provides them as context for generation. This reduces hallucination by ~50% in empirical studies, enables responses grounded in up-to-date and domain-specific information, and provides source attribution. RAG underpins AI search engines (Perplexity, Google AI Overviews, ChatGPT Search), enterprise knowledge bases, and research assistants (Elicit, Consensus) — making it the dominant architecture for production AI systems requiring factual accuracy.<br>
-<br>
-## Core Explanation<br>
-<br>
-Traditional LLMs have a fundamental limitation: their knowledge is frozen at training time. A model trained in early 2025 cannot answer questions about events after that date; a general-purpose model lacks domain-specific knowledge about a company's internal documentation. RAG solves both problems by **decoupling knowledge storage from language generation**:<br>
-<br>
-### Two-Phase Architecture<br>
-<br>
-**Phase 1 — Indexing (offline)**:<br>
-1. Documents are split into overlapping chunks (typically 256-1024 tokens)<br>
-2. Each chunk is embedded into a dense vector (768-3072 dimensions) using an encoder model<br>
-3. Vectors are stored in a vector database (Pinecone, Weaviate, pgvector, Qdrant)<br>
-4. Often indexed with Approximate Nearest Neighbor (ANN) algorithms like HNSW<br>
-<br>
-**Phase 2 — Retrieval + Generation (online)**:<br>
-1. User query is embedded into the same vector space<br>
-2. Top-k most similar document chunks are retrieved (typically k=5–20) by cosine similarity or dot product<br>
-3. Retrieved context is concatenated with the query and fed to the LLM: `"Answer based on: [Document 1] ... [Document k]. Question: [user query]"`<br>
-4. LLM generates a response grounded in the provided context<br>
-<br>
-This architecture enables the knowledge base to be updated in real-time without any model retraining. New documents can be added, stale documents removed, and access can be controlled per user — all without touching the LLM.<br>
-<br>
-## Detailed Analysis<br>
-<br>
-### RAG vs. Standard LLM Approaches<br>
-<br>
-| Aspect | Standard LLM (Parametric Only) | RAG (Parametric + Retrieval) |<br>
-|--------|:-----------------------------:|:----------------------------:|<br>
-| Knowledge freshness | Frozen at training cutoff | Updated in real-time |<br>
-| Hallucination rate | Higher on factual/specific queries | Reduced by ~50% (empirical, domain-dependent) |<br>
-| Source attribution | None (model's "memory") | Retrieved documents are citable |<br>
-| Domain adaptation | Requires fine-tuning | Swap or augment the knowledge base |<br>
-| Inference cost | Lower (single forward pass) | Higher (retrieval adds 200ms–2s latency) |<br>
-| Factual precision on niche topics | Lower | Higher when knowledge base covers the domain |<br>
-| Deployment complexity | Simple | Moderate (maintain vector DB + embedding pipeline) |<br>
-<br>
-### Chunking Strategies<br>
-<br>
-How documents are split significantly impacts retrieval quality:<br>
-<br>
-| Strategy | Method | Best For |<br>
-|----------|--------|----------|<br>
-| **Fixed-size** | 256-1024 token chunks with 10-20% overlap | General purpose, simple to implement |<br>
-| **Semantic** | Split at natural boundaries (paragraphs, sections) | Narrative documents, articles |<br>
-| **Recursive** | Hierarchical chunks (parent → child) at different granularities | Long documents requiring multi-level context |<br>
-| **Sentence-based** | One or few sentences per chunk | Factoid QA, precise retrieval |<br>
-| **Agentic** | LLM determines optimal split points | Complex, heterogeneous documents |<br>
-<br>
-A common pattern: use smaller chunks for precise retrieval (~256 tokens), but expand to surrounding context (parent document, adjacent chunks) for generation — this combines retrieval precision with generation context richness.<br>
-<br>
-### Embedding Models<br>
-<br>
-The quality of the embedding model is one of the strongest determinants of RAG performance. Key models as of 2025-2026:<br>
-<br>
-| Model | Dimensions | Context Length | Developer | Open? |<br>
-|-------|:---------:|:-------------:|-----------|:-----:|<br>
-| text-embedding-3-large | 256-3072 (variable) | 8,191 | OpenAI | ❌ |<br>
-| text-embedding-3-small | 512-1536 | 8,191 | OpenAI | ❌ |<br>
-| Cohere Embed v3 | 1024 | 512 | Cohere | ❌ |<br>
-| BGE-M3 | 1024 | 8,192 | BAAI | ✅ |<br>
-| E5-mistral-7b-instruct | 4096 | 32,768 | Microsoft | ✅ |<br>
-<br>
-*The ability to tune embedding dimensions trades accuracy for storage/performance — text-embedding-3 at 256 dimensions retains ~98% of the MTEB score while using 1/12th the storage.*<br>
-<br>
-### Retrieval Enhancement: Re-ranking<br>
-<br>
-After initial retrieval (fast but approximate), a cross-encoder model re-scores the top-k candidates (slow but precise). This two-stage pipeline is standard in production RAG systems:<br>
-<br>
-1. **Stage 1**: Bi-encoder (embedding model) retrieves top-50 or top-100 candidates<br>
-2. **Stage 2**: Cross-encoder scores query-document pairs jointly, re-ranking to top-5 or top-10<br>
-<br>
-Cross-encoders are significantly more accurate but also much slower (they process query + document together, rather than pre-computing document embeddings). The two-stage approach balances speed and quality.<br>
-<br>
-### RAG Variants<br>
-<br>
-| Variant | Description | Use Case |<br>
-|---------|------------|----------|<br>
-| **Naive RAG** | Single retrieval → single generation, no enhancement | Simple Q&A over small document sets |<br>
-| **Advanced RAG** | Query rewriting + re-ranking + context compression | Production enterprise systems |<br>
-| **Agentic RAG** | Multi-step retrieval with tool use (search→filter→verify→generate) | Complex research, multi-hop questions |<br>
-| **Graph RAG** | Retrieves from knowledge graphs (entities + relationships, not just vectors) | Entity-rich domains, relationship queries |<br>
-| **Multimodal RAG** | Retrieves and reasons over images, tables, and text | Healthcare, legal, technical docs |<br>
-<br>
-### Applications<br>
-<br>
-RAG is the underlying architecture for most production AI systems requiring factual accuracy:<br>
-<br>
-| Application | Examples | How RAG Is Used |<br>
-|------------|----------|----------------|<br>
-| AI Search Engines | Perplexity, Google AI Overviews, ChatGPT Search | Retrieve web pages, cite sources per claim |<br>
-| Enterprise KB | Internal docs Q&A, customer support | Index company documentation, restrict by access |<br>
-| Research | Elicit, Consensus, Scite | Retrieve academic papers, synthesize findings with citations |<br>
-| Legal | Contract analysis, regulatory compliance | Index laws and precedents, ground analysis in documents |<br>
-| Healthcare | Clinical decision support | Retrieve medical literature, ground recommendations in evidence |<br>
-<br>
-## Further Reading<br>
-<br>
-- [RAG Paper (Lewis et al., 2020)](https://arxiv.org/abs/2005.11401): The foundational RAG paper (5K+ citations)<br>
-- [DPR Paper (Karpukhin et al., 2020)](https://arxiv.org/abs/2004.04906): Dense passage retrieval<br>
-- [LangChain RAG Tutorial](https://python.langchain.com/docs/tutorials/rag/): Practical implementation<br>
-</article></body>
-</html>

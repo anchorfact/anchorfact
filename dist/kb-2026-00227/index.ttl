@@ -1,8 +1,0 @@
-@prefix schema: <https://schema.org/> .
-@prefix af: <https://anchorfact.org/ns#> .
-
-<https://anchorfact.org/kb/kb-2026-00227>
-  a schema:TechArticle ;
-  schema:headline "Software Development Life Cycle (SDLC)" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .

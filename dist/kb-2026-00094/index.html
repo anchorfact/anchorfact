@@ -1,17 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>Cross-Origin Resource Sharing (CORS) — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-CORS is a browser-enforced security mechanism that controls cross-origin HTTP requests. By default, browsers block cross-origin requests for security (same-origin policy). Servers opt-in via response headers: `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods`, `Access-Control-Allow-Headers`.<br>
-<br>
-## Core Explanation<br>
-<br>
-Preflight requests (OPTIONS) check permission before actual request for non-simple requests. Simple requests (GET/POST with standard headers) skip preflight. Credentials (cookies, HTTP auth) require `Access-Control-Allow-Credentials: true` and cannot use wildcard origins. CORS is enforced by the browser, not the server — server-side requests are not restricted.<br>
-<br>
-## Further Reading<br>
-<br>
-- [Fetch Standard — CORS Protocol](https://fetch.spec.whatwg.org/#http-cors-protocol)<br>
-</article></body>
-</html>

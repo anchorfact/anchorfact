@@ -1,8 +1,0 @@
-@prefix schema: <https://schema.org/> .
-@prefix af: <https://anchorfact.org/ns#> .
-
-<https://anchorfact.org/kb/kb-2026-00301>
-  a schema:TechArticle ;
-  schema:headline "Tauri" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .

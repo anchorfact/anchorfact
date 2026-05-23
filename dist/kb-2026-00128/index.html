@@ -1,17 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>Hash Table — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-A hash table maps keys to values with average O(1) operations. Powers JavaScript Objects, Python dicts, database indexes. Collision resolution: chaining (linked lists) or open addressing (probing). Rehashing triggers at ~75% load factor.<br>
-<br>
-## Core Explanation<br>
-<br>
-Hash function: maps key to integer index. Good hash functions minimize collisions and are fast (non-cryptographic: MurmurHash, xxHash). Cryptographic hashes (SHA) are unnecessary and slow for hash tables. Separate chaining is simpler but uses more memory; open addressing is cache-friendly but degrades at high load.<br>
-<br>
-## Further Reading<br>
-<br>
-- [Introduction to Algorithms (CLRS)](undefined)<br>
-</article></body>
-</html>

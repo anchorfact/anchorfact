@@ -1,17 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>WebSocket API — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-The WebSocket API is the browser-side interface to the WebSocket protocol (RFC 6455), providing full-duplex, bidirectional communication between browser and server over a single TCP connection.<br>
-<br>
-## Core Explanation<br>
-<br>
-Usage: `const ws = new WebSocket('wss://example.com')`. Events: `onopen`, `onmessage`, `onerror`, `onclose`. Methods: `send()`, `close()`. The `readyState` property tracks connection state (CONNECTING=0, OPEN=1, CLOSING=2, CLOSED=3). Binary data can be sent as Blob or ArrayBuffer. WebSocket connections start as HTTP (upgrade) and are not HTTP after the handshake.<br>
-<br>
-## Further Reading<br>
-<br>
-- [The WebSocket API (W3C)](https://websockets.spec.whatwg.org/)<br>
-</article></body>
-</html>

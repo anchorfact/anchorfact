@@ -1,17 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>Concurrency Models — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-Concurrency models handle multiple simultaneous computations. Threads (shared memory, mutexes), CSP/Actors (message passing, no shared state), async/await (cooperative multitasking), SIMD/GPU (data-parallel). Key challenges: race conditions, deadlocks, livelocks, starvation. Amdahl's Law limits parallel speedup.<br>
-<br>
-## Core Explanation<br>
-<br>
-Mutex (mutual exclusion): only one thread in critical section. Semaphore: counting mutex. Deadlock: A waits for B, B waits for A — four conditions (mutual exclusion, hold-and-wait, no preemption, circular wait). Actor model (Erlang, Akka): independent actors communicate via messages, no shared state — eliminates data races. Go goroutines + channels implement CSP.<br>
-<br>
-## Further Reading<br>
-<br>
-- [undefined](undefined)<br>
-</article></body>
-</html>

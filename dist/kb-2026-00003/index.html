@@ -1,129 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>BERT (Bidirectional Encoder Representations from Transformers) — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained language model introduced by Google AI Language in October 2018 (arXiv) and published at NAACL 2019. Its key innovation is **bidirectional context**: unlike previous models (ELMo concatenated independent left-to-right and right-to-left passes; GPT used only left-to-right), BERT reads text in both directions simultaneously through a Masked Language Modeling objective. At launch, BERT achieved state-of-the-art results on 11 NLP benchmarks, including GLUE (80.5 → 82.1), SQuAD v1.1 (93.2 F1), and MultiNLI (86.7). BERT established the "pre-train then fine-tune" paradigm that dominated NLP until the rise of generative models. As of May 2026, it has been cited over 100,000 times.<br>
-<br>
-## Core Explanation<br>
-<br>
-BERT uses a multi-layer bidirectional Transformer encoder (no decoder — it is encoder-only). Unlike GPT's autoregressive left-to-right generation, BERT's bidirectionality makes it ideal for **understanding** tasks (classification, QA, NER) rather than text generation.<br>
-<br>
-### Architecture Specifications<br>
-<br>
-| Component | BERT-Base | BERT-Large |<br>
-|-----------|:---------:|:----------:|<br>
-| Transformer layers | 12 | 24 |<br>
-| Hidden size | 768 | 1024 |<br>
-| Self-attention heads | 12 | 16 |<br>
-| Feed-forward size | 3072 | 4096 |<br>
-| Total parameters | 110M | 340M |<br>
-| Training hardware | 4 Cloud TPUs | 16 Cloud TPUs |<br>
-| Training time | 4 days | 4 days |<br>
-<br>
-For comparison: GPT-1 (Radford et al., June 2018) had 117M parameters using a 12-layer **decoder-only** Transformer. BERT's encoder-only architecture with 110M parameters produced dramatically better results on understanding benchmarks, demonstrating that the Transformer encoder was the right architecture for language comprehension.<br>
-<br>
-### Training Data<br>
-<br>
-BERT was pre-trained on BooksCorpus (800M words, from unpublished books) and English Wikipedia (2,500M words, text-only). Combined corpus: 3.3 billion words. This is relatively small by modern standards — GPT-3 would later use approximately 500 billion tokens (~400× larger).<br>
-<br>
-## Detailed Analysis<br>
-<br>
-### Training Objectives<br>
-<br>
-BERT uses two unsupervised pre-training tasks:<br>
-<br>
-**1. Masked Language Modeling (MLM)**<br>
-<br>
-15% of input tokens are randomly selected for prediction. Of those selected positions:<br>
-- **80%** replaced with the `[MASK]` token<br>
-- **10%** replaced with a random token (adding noise forces the model to not just look for [MASK] tokens)<br>
-- **10%** left unchanged (prevents the model from learning to ignore non-masked tokens entirely)<br>
-<br>
-The model predicts the original token at each masked position using bidirectional context. This solves a subtle problem: if ALL selected tokens were replaced with `[MASK]`, the model would face a distribution mismatch at fine-tuning time (where no `[MASK]` tokens appear). The 80-10-10 split ensures the model learns both to predict masked tokens AND to be robust when `[MASK]` isn't present.<br>
-<br>
-**2. Next Sentence Prediction (NSP)**<br>
-<br>
-Given sentence A and sentence B, predict whether B is the actual next sentence after A in the original corpus:<br>
-- 50% of training examples: B is the real next sentence (label: IsNext)<br>
-- 50%: B is a random sentence from the corpus (label: NotNext)<br>
-<br>
-NSP was designed to help tasks requiring sentence-level relationship understanding (Question Answering, Natural Language Inference). However, RoBERTa (Liu et al., July 2019) later found that removing NSP and simply training with longer sequences improved performance, suggesting NSP was not as beneficial as initially believed.<br>
-<br>
-### Input Representation<br>
-<br>
-Each input token's representation is the sum of three embeddings:<br>
-<br>
-```<br>
-Input(token) = TokenEmbedding(token) + SegmentEmbedding(A/B) + PositionEmbedding(position)<br>
-```<br>
-<br>
-| Embedding | Description | Vocabulary/Size |<br>
-|-----------|------------|:---------------:|<br>
-| **Token** | WordPiece subword tokenization | 30,522 tokens |<br>
-| **Segment** | Learned; indicates sentence A (0) or sentence B (1) | 2 segments |<br>
-| **Position** | Learned (not fixed sinusoids like the original Transformer) | Up to 512 positions |<br>
-<br>
-**Special tokens**: `[CLS]` (inserted at the start of every sequence; its final hidden state is used as the aggregate sequence representation for classification tasks), `[SEP]` (separates sentences A and B), and `[MASK]` (used during pre-training).<br>
-<br>
-### Fine-Tuning Paradigm<br>
-<br>
-BERT's key methodological contribution was demonstrating that a single pre-trained model could be fine-tuned for diverse downstream tasks with minimal task-specific architecture:<br>
-<br>
-| Task Type | Examples | Architecture Change |<br>
-|-----------|----------|-------------------|<br>
-| Single sentence classification | Sentiment analysis, CoLA (acceptability) | Feed `[CLS]` output to classifier |<br>
-| Sentence pair classification | MNLI, QQP, STS-B | Feed `[CLS]` output to classifier |<br>
-| Single sentence tagging | NER, POS tagging | Feed each token's output to classifier |<br>
-| Question answering | SQuAD v1.1, v2.0 | Predict answer span start/end from token outputs |<br>
-<br>
-The entire fine-tuning process takes minutes to hours on a single GPU, compared to the 4 days of pre-training on 4-16 TPUs.<br>
-<br>
-### Key Benchmarks (at launch, late 2018)<br>
-<br>
-| Benchmark | Task Type | Prior SOTA | BERT-Base | BERT-Large |<br>
-|-----------|-----------|:----------:|:---------:|:----------:|<br>
-| **GLUE** | Multi-task NLU | 80.5 | — | **82.1** |<br>
-| **MultiNLI** | NLI (matched/mismatched) | 76.5 | 84.6/83.4 | 86.7/85.9 |<br>
-| **SQuAD v1.1** | Extractive QA | 88.5 F1 | **88.5** F1 | **93.2** F1 |<br>
-| **SQuAD v2.0** | QA with unanswerable | 66.3 F1 | 76.3 F1 | **83.1** F1 |<br>
-| **SWAG** | Commonsense reasoning | — | — | **86.3** |<br>
-| **CoLA** | Linguistic acceptability | 35.0 | 52.1 | **60.5** |<br>
-| **STS-B** | Semantic similarity | 81.0 | 85.8 | **86.5** |<br>
-| **RACE** | Reading comprehension | 59.0 | 72.0 | **81.5** |<br>
-<br>
-*BERT-Large surpassed human performance on several benchmarks at the time of publication.*<br>
-<br>
-### The BERT Family Tree<br>
-<br>
-BERT inspired an extensive family of improved variants:<br>
-<br>
-| Variant | Year | Key Innovation | Relative to BERT |<br>
-|---------|:----:|---------------|:----------------:|<br>
-| **RoBERTa** | 2019 | Removed NSP, 10× more data, dynamic masking, larger batches | +2-5% across benchmarks |<br>
-| **ALBERT** | 2019 | Parameter sharing across layers, factorized embeddings — 18× fewer params | Competitive with much smaller model |<br>
-| **DistilBERT** | 2019 | Knowledge distillation — 40% smaller, 60% faster | 97% of BERT's performance |<br>
-| **DeBERTa** | 2021 | Disentangled attention (content + position), enhanced mask decoder | New SOTA on SuperGLUE |<br>
-| **ELECTRA** | 2020 | Replaced MLM with replaced token detection (GAN-like discriminator) | More sample-efficient |<br>
-<br>
-### BERT vs. GPT-1: The 2018 Duality<br>
-<br>
-| Dimension | BERT (Google, Oct 2018) | GPT-1 (OpenAI, Jun 2018) |<br>
-|-----------|:-----------:|:-----------:|<br>
-| Architecture | Transformer Encoder-only | Transformer Decoder-only |<br>
-| Direction | Bidirectional | Left-to-right (autoregressive) |<br>
-| Parameters | 110M (base), 340M (large) | 117M |<br>
-| Pre-training objective | MLM + NSP | Next-token prediction |<br>
-| Primary strength | **Understanding** (QA, classification) | **Generation** (text completion) |<br>
-| Training data | BooksCorpus + Wikipedia (3.3B words) | BooksCorpus (0.8B words) |<br>
-<br>
-This split — BERT for understanding, GPT for generation — defined NLP for several years until GPT-3 (2020) and subsequent models demonstrated that large enough autoregressive models could match or exceed BERT-style models on understanding tasks as well.<br>
-<br>
-## Further Reading<br>
-<br>
-- [BERT Paper](https://arxiv.org/abs/1810.04805): Original paper by Devlin et al. (100K+ citations)<br>
-- [RoBERTa Paper](https://arxiv.org/abs/1907.11692): A Robustly Optimized BERT (Liu et al., 2019)<br>
-- [The Illustrated BERT](https://jalammar.github.io/illustrated-bert/): Visual walkthrough by Jay Alammar<br>
-</article></body>
-</html>

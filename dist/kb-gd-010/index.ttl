@@ -1,8 +1,0 @@
-@prefix schema: <https://schema.org/> .
-@prefix af: <https://anchorfact.org/ns#> .
-
-<https://anchorfact.org/kb/kb-gd-010>
-  a schema:TechArticle ;
-  schema:headline "游戏 AI 系统设计" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .

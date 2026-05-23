@@ -1,17 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>WebRTC — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-WebRTC (Web Real-Time Communication) is a W3C standard enabling peer-to-peer audio, video, and data communication between browsers without plugins. It uses DTLS-SRTP for encryption and ICE/STUN/TURN for NAT traversal.<br>
-<br>
-## Core Explanation<br>
-<br>
-Core APIs: `RTCPeerConnection` (media/data transport), `getUserMedia()` (camera/microphone access), `RTCDataChannel` (arbitrary binary data). Signaling (connection negotiation) is not specified — applications must implement their own signaling channel (usually via WebSocket). WebRTC uses UDP by default but can fall back to TCP.<br>
-<br>
-## Further Reading<br>
-<br>
-- [WebRTC 1.0 (W3C Recommendation)](https://www.w3.org/TR/webrtc/)<br>
-</article></body>
-</html>

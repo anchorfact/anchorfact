@@ -1,17 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>Infrastructure as Code (IaC) — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-IaC manages infrastructure through machine-readable definition files rather than manual configuration. Tools: Terraform (HCL, multi-cloud), Pulumi (general-purpose languages), CloudFormation (AWS-native), Ansible (configuration management). Version-controlled infrastructure enables reproducibility, code review, and automated testing.<br>
-<br>
-## Core Explanation<br>
-<br>
-Declarative (Terraform: define desired state) vs. imperative (Ansible: define steps). Terraform state file tracks real-world resources — must be stored securely (S3 + DynamoDB locking). Modules enable reusable infrastructure components. Plan phase shows changes before apply. State drift: when real infrastructure differs from state file.<br>
-<br>
-## Further Reading<br>
-<br>
-- [Terraform Documentation](https://developer.hashicorp.com/terraform/docs)<br>
-</article></body>
-</html>

@@ -1,17 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>MutationObserver — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-MutationObserver is an API that asynchronously monitors DOM changes — additions, removals, attribute changes, and text content modifications. It replaces the deprecated DOM Mutation Events with a batched, more performant observer pattern.<br>
-<br>
-## Core Explanation<br>
-<br>
-`new MutationObserver(callback).observe(element, { childList: true, attributes: true, subtree: true })`. The callback receives an array of MutationRecord objects. Each record specifies the type of mutation, affected nodes, and relevant data. Chrome DevTools can add breakpoints on specific DOM mutations for debugging.<br>
-<br>
-## Further Reading<br>
-<br>
-- [DOM Standard — MutationObserver](https://dom.spec.whatwg.org/#interface-mutationobserver)<br>
-</article></body>
-</html>

@@ -1,17 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>Hashing Algorithms — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-Cryptographic hash functions map arbitrary data to fixed-size digests (fingerprints). Key properties: preimage resistance (cannot reverse), second preimage resistance (cannot find different input with same hash), collision resistance (cannot find any two inputs with same hash). SHA-256 (32 bytes) is the current standard; SHA-3 (Keccak) is the next generation.<br>
-<br>
-## Core Explanation<br>
-<br>
-SHA-1 (broken, 2017 collision demonstrated). MD5 (completely broken). SHA-2 family: SHA-224, SHA-256, SHA-384, SHA-512 (all considered secure). SHA-3 is not a replacement but an alternative with different internal structure (sponge construction). Password hashing uses specialized functions: bcrypt (adaptive cost), scrypt (memory-hard), Argon2 (winner of PHC, 2015 — memory-hard + side-channel resistant).<br>
-<br>
-## Further Reading<br>
-<br>
-- [undefined](undefined)<br>
-</article></body>
-</html>

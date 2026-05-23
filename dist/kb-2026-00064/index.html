@@ -1,31 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>REST API — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-REST (Representational State Transfer) is an architectural style for designing networked applications, defined by Roy Fielding in his 2000 doctoral dissertation at UC Irvine. A REST API uses HTTP methods (GET, POST, PUT, DELETE) to perform CRUD operations on resources identified by URLs, with stateless communication and standardized response formats (typically JSON). REST is the dominant API architecture on the web, used by virtually all major platforms including Google, Amazon, Twitter, and GitHub.<br>
-<br>
-## Core Constraints<br>
-<br>
-- **Client-Server**: Separation of UI and data storage concerns<br>
-- **Stateless**: Each request contains all information needed; no server-side session state<br>
-- **Cacheable**: Responses explicitly marked as cacheable or non-cacheable<br>
-- **Uniform Interface**: Resources identified by URLs, manipulated via representations<br>
-- **Layered System**: Intermediaries (proxies, gateways) are transparent to client/server<br>
-- **Code on Demand** (optional): Server can extend client functionality by sending executable code<br>
-<br>
-## Richardson Maturity Model<br>
-<br>
-| Level | Description |<br>
-|:-----:|------------|<br>
-| 0 | Single endpoint, single method (RPC over HTTP) |<br>
-| 1 | Resources with individual URLs |<br>
-| 2 | HTTP verbs used properly (GET/POST/PUT/DELETE + status codes) |<br>
-| 3 | HATEOAS — hypermedia controls in responses |<br>
-<br>
-## Further Reading<br>
-<br>
-- [Fielding's Dissertation](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm): Chapter 5 defines REST<br>
-</article></body>
-</html>

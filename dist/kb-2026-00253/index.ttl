@@ -1,8 +1,0 @@
-@prefix schema: <https://schema.org/> .
-@prefix af: <https://anchorfact.org/ns#> .
-
-<https://anchorfact.org/kb/kb-2026-00253>
-  a schema:TechArticle ;
-  schema:headline "Event Sourcing" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .

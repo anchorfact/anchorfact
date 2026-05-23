@@ -28,54 +28,8 @@ const { execSync } = require('child_process');
 const CONTENT_DIR = path.join(__dirname, '..', 'content');
 const NOW = new Date();
 
-// ─── Source Tier Weights ────────────────────────────────────────
-const SOURCE_TIER_SCORE = {
-  'academic_paper':         10,  // S: peer-reviewed
-  'peer_reviewed':          10,
-  'journal':                 9,  // Journal publication (near-academic)
-  'conference':              9,  // Conference proceedings
-  'survey_paper':           10,  // Literature survey / review
-  'textbook':                8,  // A: authoritative textbook
-  'reference':               7,  // Reference work
-  'literature':              7,  // Classic literature (primary source)
-  'knowledge_base':          5,  // Curated knowledge base
-  'official_report':         7,  // B: government/org report
-  'technical_report':        7,
-  'report':                  6,  // Generic report
-  'standard':                8,  // Industry standard (IETF, ISO, etc.)
-  'rulebook':                7,  // Official rules / regulations
-  'course_material':         6,  // University course
-  'official_documentation':  7,
-  'documentation':           6,
-  'repository':              5,  // Code repository / data source
-  'database':                5,  // Structured database
-  'data_source':             5,
-  'technical_book':          8,
-  'book':                    6,
-  'paper':                  10,  // Alias for academic_paper (phase3-7 fix scripts handle this)
-  'preprint':               10,  // arXiv / preprint servers
-  'thesis':                 10,  // PhD/Master thesis
-  'dissertation':           10,  // Doctoral dissertation
-  'patent':                  8,  // Granted patent
-  'whitepaper':              7,  // Industry whitepaper
-  'book_chapter':            6,  // Chapter in edited volume
-  'specification':           8,  // Technical specification
-  'manual':                  6,  // User/technical manual
-  'benchmark':               6,  // Benchmark dataset/paper
-  'framework':               5,  // Software framework
-  'blog_post':               4,  // C: personal/company blog
-  'tutorial':                4,
-  'news_article':            4,
-  'announcement':            4,  // Official announcement
-  'article':                 4,  // Generic article
-  'comparison':              4,  // Comparison article
-  'tracker':                 4,  // Issue tracker
-  'periodical':              5,  // Periodical publication
-  'encyclopedia':            3,  // D: tertiary source
-  'website':                 3,
-  'wiki':                    1,  // E: wiki (Wikipedia)
-  'other':                   3,
-};
+// ─── Source Tier Weights (single source of truth) ────────────
+const { SOURCE_TIER_SCORE } = require('./lib/tier-config.cjs');
 
 // ─── Helpers ────────────────────────────────────────────────────
 

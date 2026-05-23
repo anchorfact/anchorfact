@@ -1,8 +1,0 @@
-@prefix schema: <https://schema.org/> .
-@prefix af: <https://anchorfact.org/ns#> .
-
-<https://anchorfact.org/kb/kb-2026-00316>
-  a schema:TechArticle ;
-  schema:headline "Grafana" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .

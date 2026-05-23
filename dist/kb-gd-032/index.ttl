@@ -1,8 +1,0 @@
-@prefix schema: <https://schema.org/> .
-@prefix af: <https://anchorfact.org/ns#> .
-
-<https://anchorfact.org/kb/kb-gd-032>
-  a schema:TechArticle ;
-  schema:headline "着色器与视觉特效（VFX）" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .

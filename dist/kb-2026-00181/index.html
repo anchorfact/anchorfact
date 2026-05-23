@@ -1,88 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>DNS (Domain Name System) — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-The Domain Name System (DNS) is a hierarchical, distributed database that translates human-readable domain names (e.g., `anchorfact.org`) into machine-readable IP addresses (e.g., `172.67.x.x`). Designed by Paul Mockapetris in 1983 (RFCs 882/883, superseded by RFCs 1034/1035 in 1987), DNS is one of the oldest Internet protocols still in active use and is a critical dependency for virtually every Internet application. A typical DNS resolution traverses: browser cache → OS cache (stub resolver) → recursive resolver (ISP/public) → root nameserver → TLD nameserver → authoritative nameserver, completing in typically 20-120 milliseconds. DNSSEC (RFCs 4033-4035, 2005) adds cryptographic signatures to prevent spoofing; DoH/DoT (RFCs 8484/7858, 2018) encrypt queries to prevent eavesdropping.<br>
-<br>
-## Core Explanation<br>
-<br>
-DNS operates as a tree of nameservers, each responsible for a zone of the namespace:<br>
-<br>
-```<br>
-                         . (root)<br>
-              ┌───────────┼───────────┐<br>
-             org          com         net<br>
-          ┌───┴───┐      ...<br>
-    anchorfact   wikipedia<br>
-```<br>
-<br>
-### Resolution Process<br>
-<br>
-When a user types `anchorfact.org` into a browser:<br>
-<br>
-1. **Browser cache**: Check if the IP is cached locally (typically 1-5 minutes for most domains)<br>
-2. **OS stub resolver** (`/etc/resolv.conf` or systemd-resolved): Checks OS-level cache<br>
-3. **Recursive resolver** (ISP or public: `8.8.8.8`, `1.1.1.1`): If not cached, begins full resolution:<br>
-   - Queries a **root nameserver**: "Who handles `.org`?"<br>
-   - Root responds with the `.org` TLD nameserver addresses<br>
-   - Queries the `.org` **TLD nameserver**: "Who handles `anchorfact.org`?"<br>
-   - TLD responds with Cloudflare's authoritative nameservers<br>
-   - Queries the **authoritative nameserver**: "What's the IP for `anchorfact.org`?"<br>
-   - Gets the A/AAAA record and returns it to the client<br>
-4. Browser connects to the IP address<br>
-<br>
-Recursive resolvers cache aggressively: the root and TLD nameservers see only a fraction of queries because their responses are cached at the resolver layer. The root nameservers handle approximately 2% of global DNS traffic — the rest is answered from cache.<br>
-<br>
-## Detailed Analysis<br>
-<br>
-### DNS Resource Record Types<br>
-<br>
-| Type | Name | Purpose | Example Value |<br>
-|------|------|---------|---------------|<br>
-| **A** | Address | Maps hostname to IPv4 address | `203.0.113.1` |<br>
-| **AAAA** | IPv6 Address | Maps hostname to IPv6 address | `2001:db8::1` |<br>
-| **CNAME** | Canonical Name | Alias: one domain to another | `www.example.com → example.com` |<br>
-| **MX** | Mail Exchange | Email server for domain | `10 mail.example.com` (priority 10) |<br>
-| **NS** | Nameserver | Authoritative nameserver for domain | `ns1.example.com` |<br>
-| **TXT** | Text | Arbitrary text (SPF, DKIM, DMARC, verification) | `v=spf1 include:_spf.google.com ~all` |<br>
-| **SOA** | Start of Authority | Administrative information for zone | Serial number, refresh interval, retry, expiry |<br>
-<br>
-**TTL** (Time To Live): Each record has a TTL (in seconds) that tells resolvers how long to cache it. Low TTL (60-300s) enables rapid DNS changes (useful for failover); high TTL (3600-86400s) reduces query load and improves performance. The SOA record's `minimum` field acts as the default TTL for negative responses (NXDOMAIN caching).<br>
-<br>
-### DNS Security Extensions<br>
-<br>
-**DNSSEC** (RFCs 4033-4035, 2005): Adds cryptographic signatures to DNS responses, allowing resolvers to verify that:<br>
-1. The response came from the legitimate authoritative nameserver (origin authentication)<br>
-2. The response was not modified in transit (data integrity)<br>
-<br>
-It does NOT encrypt the query or response — it only signs them. DNSSEC uses a chain of trust: root zone signed → TLD zone signed by root → domain zone signed by TLD. Each parent zone publishes a DS (Delegation Signer) record for its child zones.<br>
-<br>
-**Encrypted DNS: DoT and DoH:**<br>
-<br>
-| Protocol | Transport | Port | Standard |<br>
-|----------|-----------|:----:|----------|<br>
-| **DoT** (DNS over TLS) | TCP + TLS | 853 | RFC 7858 (2016) |<br>
-| **DoH** (DNS over HTTPS) | TCP + HTTPS (HTTP/2) | 443 | RFC 8484 (2018) |<br>
-| **DoQ** (DNS over QUIC) | UDP + QUIC | 853 | RFC 9250 (2022) |<br>
-<br>
-DoH is indistinguishable from regular HTTPS traffic (port 443), making it harder to block and easier to deploy (works through most firewalls). DoT uses a dedicated port, making it easier for network administrators to manage. Public encrypted DNS providers include Cloudflare (`1.1.1.1`), Google (`8.8.8.8`), and Quad9 (`9.9.9.9`).<br>
-<br>
-### DNS in Practice<br>
-<br>
-| Property | Typical Value |<br>
-|----------|:------------:|<br>
-| Maximum UDP packet size | 512 bytes (standard), up to 4096 with EDNS0 |<br>
-| Timeout for recursive query | 2-5 seconds (multiple attempts) |<br>
-| Root nameservers | 13 logical (letters A-M), ~1,700 physical instances (anycast) |<br>
-| TLDs | ~1,500 (2026, includes new gTLDs) |<br>
-| DNSSEC adoption | ~30% of domains (varies by TLD; .gov, .se near 100%) |<br>
-<br>
-## Further Reading<br>
-<br>
-- [RFC 1035 — DNS Specification](https://www.rfc-editor.org/rfc/rfc1035): The core DNS protocol (Mockapetris, 1987)<br>
-- [DNSSEC (RFCs 4033-4035)](https://www.rfc-editor.org/rfc/rfc4033): Cryptographic DNS security<br>
-- [DNS and BIND (O'Reilly)](https://www.oreilly.com/library/view/dns-and-bind/0596100574/): The canonical DNS reference<br>
-</article></body>
-</html>

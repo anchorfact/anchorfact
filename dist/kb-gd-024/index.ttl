@@ -1,8 +1,0 @@
-@prefix schema: <https://schema.org/> .
-@prefix af: <https://anchorfact.org/ns#> .
-
-<https://anchorfact.org/kb/kb-gd-024>
-  a schema:TechArticle ;
-  schema:headline "多人游戏设计（Multiplayer Game Design）" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .

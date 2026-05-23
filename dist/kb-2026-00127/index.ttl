@@ -1,8 +1,0 @@
-@prefix schema: <https://schema.org/> .
-@prefix af: <https://anchorfact.org/ns#> .
-
-<https://anchorfact.org/kb/kb-2026-00127>
-  a schema:TechArticle ;
-  schema:headline "Linked List" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .

@@ -1,17 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>Web Storage API — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-The Web Storage API provides mechanisms for browsers to store key-value pairs persistently (localStorage, ~5-10MB per origin) or per-session (sessionStorage). Introduced as part of HTML5, it offers a simpler alternative to cookies for client-side data storage without sending data on every HTTP request.<br>
-<br>
-## Core Explanation<br>
-<br>
-localStorage persists indefinitely until explicitly cleared. sessionStorage is cleared when the tab/browser session ends. Both operate synchronously (blocking the main thread for large operations) and store only strings. For larger or structured data, IndexedDB is preferred. The Storage Event fires when storage changes from another document of the same origin, enabling cross-tab communication.<br>
-<br>
-## Further Reading<br>
-<br>
-- [Web Storage (W3C Recommendation)](https://html.spec.whatwg.org/multipage/webstorage.html)<br>
-</article></body>
-</html>

@@ -1,510 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>游戏数学 — AnchorFact</title></head>
-<body><article><br>
-# 游戏数学<br>
-<br>
-> **游戏开发中 90% 的"感觉不对"问题，根源是数学没调好。** 随机太假、移动太僵、碰撞不准、概率失衡——都是数学。<br>
-<br>
----<br>
-<br>
-## 目录<br>
-<br>
-1. [随机数与概率](#随机数与概率)<br>
-2. [向量与几何](#向量与几何)<br>
-3. [插值与缓动](#插值与缓动)<br>
-4. [空间算法](#空间算法)<br>
-5. [噪声函数](#噪声函数)<br>
-6. [游戏平衡数学](#游戏平衡数学)<br>
-7. [常用数学模式](#常用数学模式)<br>
-<br>
----<br>
-<br>
-## 随机数与概率<br>
-<br>
-### 伪随机数生成器（PRNG）<br>
-<br>
-| 算法 | 周期 | 速度 | 质量 | 适用场景 |<br>
-|------|------|------|------|----------|<br>
-| **System.Random** | 2^31 | 快 | 低 | 非关键随机（如粒子偏移） |<br>
-| **xorshift** | 2^128 | 极快 | 中 | 高频调用（如每帧噪声） |<br>
-| **PCG** | 2^64 | 快 | 高 | 通用游戏随机，推荐 |<br>
-| **Mersenne Twister** | 2^19937 | 中 | 极高 | 需要统计级质量的场景 |<br>
-<br>
-**种子（Seed）的重要性**：<br>
-```<br>
-使用确定性的种子可以让随机序列可复现：<br>
-- 程序化生成：相同种子 = 相同世界<br>
-- 调试：可以复现玩家报告的 bug<br>
-- 回放系统：记录种子而非所有随机结果<br>
-```<br>
-<br>
-### 游戏常用概率分布<br>
-<br>
-```<br>
-1. 均匀分布（Uniform）<br>
-   └── random(min, max)<br>
-   └── 适用：骰子、随机方向<br>
-<br>
-2. 加权随机（Weighted Random）<br>
-   └── 按权重概率选择<br>
-   └── 适用：掉落表、稀有度<br>
-<br>
-3. 正态分布（Normal/Gaussian）<br>
-   └── 中心值附近概率高<br>
-   └── 适用：属性生成、伤害浮动<br>
-<br>
-4. 泊松分布（Poisson）<br>
-   └── 单位时间内事件发生次数<br>
-   └── 适用：敌人刷新、事件触发<br>
-<br>
-5. 幂律分布（Power Law）<br>
-   └── 少数高值，多数低值<br>
-   └── 适用：经济系统、玩家财富分布<br>
-```<br>
-<br>
-### 加权随机实现<br>
-<br>
-```python<br>
-# 加权随机选择<br>
-def weighted_random(items, weights):<br>
-    total = sum(weights)<br>
-    r = random() * total<br>
-    cumulative = 0<br>
-    for item, weight in zip(items, weights):<br>
-        cumulative += weight<br>
-        if r <= cumulative:<br>
-            return item<br>
-<br>
-# 掉落表示例<br>
-loot_table = {<br>
-    'common_sword': 50,    # 50% 权重<br>
-    'rare_axe': 30,        # 30% 权重<br>
-    'epic_staff': 15,      # 15% 权重<br>
-    'legendary_ring': 5,   # 5% 权重<br>
-}<br>
-<br>
-# 验证：1000次抽取结果应接近理论分布<br>
-```<br>
-<br>
-### 感知随机性<br>
-<br>
-| 问题 | 现象 | 解决方案 |<br>
-|------|------|----------|<br>
-| **伪随机感** | 连续出同样结果 | 洗牌算法（Deck Shuffling） |<br>
-| **连败挫败** | 10次未命中 | 保底机制（Pity System） |<br>
-| **伪随机分布** | 结果太均匀 | 真正随机反而感觉不随机 |<br>
-| **预测性** | 玩家发现规律 | 多源随机混合 |<br>
-<br>
-**保底机制（Pity System）**：<br>
-```python<br>
-# 抽卡保底实现<br>
-def draw_with_pity(pity_counter, base_rate=0.01, pity_threshold=90):<br>
-    """<br>
-    基础概率 1%，90抽保底<br>
-    随着抽数增加，概率线性提升<br>
-    """<br>
-    if pity_counter >= pity_threshold:<br>
-        return True, 0  # 强制命中，重置计数<br>
-    <br>
-    # 动态概率：越接近保底，概率越高<br>
-    dynamic_rate = base_rate + (pity_counter / pity_threshold) * 0.5<br>
-    <br>
-    if random() < dynamic_rate:<br>
-        return True, 0  # 命中，重置<br>
-    else:<br>
-        return False, pity_counter + 1  # 未命中，计数+1<br>
-```<br>
-<br>
----<br>
-<br>
-## 向量与几何<br>
-<br>
-### 游戏开发核心向量运算<br>
-<br>
-| 运算 | 公式 | 用途 |<br>
-|------|------|------|<br>
-| **点积** | a·b = \|a\|\|b\|cosθ | 判断方向（面向/背向）、投影 |<br>
-| **叉积** | a×b = \|a\|\|b\|sinθ n | 计算法线、判断左右、面积 |<br>
-| **长度** | \|v\| = √(x²+y²+z²) | 距离计算 |<br>
-| **归一化** | v̂ = v / \|v\| | 方向向量 |<br>
-| **线性插值** | lerp(a,b,t) = a + (b-a)*t | 平滑过渡 |<br>
-| **反射** | r = d - 2(d·n)n | 弹道反弹、镜面反射 |<br>
-<br>
-### 常用几何判断<br>
-<br>
-```python<br>
-# 点是否在圆内<br>
-def point_in_circle(px, py, cx, cy, r):<br>
-    return (px-cx)**2 + (py-cy)**2 <= r**2<br>
-<br>
-# 点是否在矩形内<br>
-def point_in_rect(px, py, rx, ry, rw, rh):<br>
-    return rx <= px <= rx+rw and ry <= py <= ry+rh<br>
-<br>
-# 点到线段的最近距离<br>
-def dist_point_to_segment(px, py, x1, y1, x2, y2):<br>
-    # 投影参数 t<br>
-    dx, dy = x2-x1, y2-y1<br>
-    if dx == 0 and dy == 0:<br>
-        return sqrt((px-x1)**2 + (py-y1)**2)<br>
-    t = max(0, min(1, ((px-x1)*dx + (py-y1)*dy) / (dx*dx + dy*dy)))<br>
-    proj_x = x1 + t * dx<br>
-    proj_y = y1 + t * dy<br>
-    return sqrt((px-proj_x)**2 + (py-proj_y)**2)<br>
-<br>
-# 两个圆是否相交<br>
-def circles_intersect(c1x, c1y, r1, c2x, c2y, r2):<br>
-    dist_sq = (c1x-c2x)**2 + (c1y-c2y)**2<br>
-    return dist_sq <= (r1+r2)**2<br>
-```<br>
-<br>
-### 坐标系与变换<br>
-<br>
-```<br>
-游戏常用坐标系：<br>
-<br>
-2D 游戏：<br>
-├── 屏幕坐标（左上角原点，Y向下）<br>
-├── 世界坐标（自定义原点，Y向上/下）<br>
-└── 等距坐标（斜向网格）<br>
-<br>
-3D 游戏：<br>
-├── 局部坐标（模型自身）<br>
-├── 世界坐标（游戏世界）<br>
-├── 观察坐标（相机视角）<br>
-├── 裁剪坐标（投影后）<br>
-└── 屏幕坐标（像素位置）<br>
-<br>
-变换矩阵顺序（重要）：<br>
-  最终 = 投影 × 视图 × 模型<br>
-  （从右向左应用）<br>
-```<br>
-<br>
----<br>
-<br>
-## 插值与缓动<br>
-<br>
-### 基本插值函数<br>
-<br>
-| 函数 | 公式 | 特点 |<br>
-|------|------|------|<br>
-| **Linear** | t | 匀速，最基础 |<br>
-| **Ease-In** | t² | 慢开始，快结束 |<br>
-| **Ease-Out** | 1-(1-t)² | 快开始，慢结束 |<br>
-| **Ease-In-Out** | t<0.5 ? 2t² : 1-2(1-t)² | 慢-快-慢 |<br>
-| **Smoothstep** | 3t²-2t³ | 更平滑的 ease-in-out |<br>
-| **Smootherstep** | 6t⁵-15t⁴+10t³ | 极平滑 |<br>
-<br>
-### 常用缓动曲线<br>
-<br>
-```python<br>
-# Unity 风格缓动函数（简化版）<br>
-def ease_in_quad(t): return t * t<br>
-def ease_out_quad(t): return 1 - (1-t) * (1-t)<br>
-def ease_in_out_quad(t):<br>
-    return 2*t*t if t < 0.5 else 1 - (-2*t+2)**2 / 2<br>
-<br>
-def ease_in_cubic(t): return t * t * t<br>
-def ease_out_bounce(t):<br>
-    # 弹跳效果<br>
-    if t < 1/2.75:<br>
-        return 7.5625*t*t<br>
-    elif t < 2/2.75:<br>
-        t -= 1.5/2.75<br>
-        return 7.5625*t*t + 0.75<br>
-    elif t < 2.5/2.75:<br>
-        t -= 2.25/2.75<br>
-        return 7.5625*t*t + 0.9375<br>
-    else:<br>
-        t -= 2.625/2.75<br>
-        return 7.5625*t*t + 0.984375<br>
-<br>
-def ease_out_elastic(t):<br>
-    # 弹性效果<br>
-    c4 = (2 * pi) / 3<br>
-    if t == 0: return 0<br>
-    if t == 1: return 1<br>
-    return 2**(-10*t) * sin((t*10-0.75)*c4) + 1<br>
-```<br>
-<br>
-### 弹簧/阻尼插值<br>
-<br>
-```python<br>
-# 弹簧物理插值（比 ease 更自然）<br>
-def spring_lerp(current, target, velocity, stiffness=0.1, damping=0.8, dt=1/60):<br>
-    """<br>
-    current: 当前值<br>
-    target: 目标值<br>
-    velocity: 当前速度（需要保存状态）<br>
-    stiffness: 刚度（0-1，越大越紧）<br>
-    damping: 阻尼（0-1，越小越弹）<br>
-    """<br>
-    force = (target - current) * stiffness<br>
-    velocity = (velocity + force) * damping<br>
-    current = current + velocity * dt<br>
-    return current, velocity<br>
-<br>
-# 使用示例：相机跟随<br>
-# camera_pos, camera_vel = spring_lerp(camera_pos, player_pos, camera_vel)<br>
-```<br>
-<br>
----<br>
-<br>
-## 空间算法<br>
-<br>
-### 四叉树 / 八叉树<br>
-<br>
-```<br>
-用途：加速空间查询（碰撞检测、邻居查找）<br>
-<br>
-构建：<br>
-1. 根节点覆盖整个游戏世界<br>
-2. 每个节点最多包含 N 个对象<br>
-3. 超过 N 个时，分裂为 4（2D）或 8（3D）个子节点<br>
-4. 对象存储在完全包含它的最小节点中<br>
-<br>
-查询：<br>
-- 查找某点/区域附近的对象：只需遍历相关节点<br>
-- 复杂度：O(log n) 平均，O(n) 最坏<br>
-<br>
-适用：<br>
-- 大量动态对象的碰撞检测<br>
-- 大范围邻居查找<br>
-- 视锥剔除加速<br>
-```<br>
-<br>
-### 网格空间哈希<br>
-<br>
-```python<br>
-# 空间哈希（适合均匀分布的对象）<br>
-CELL_SIZE = 100<br>
-<br>
-def hash_position(x, y):<br>
-    return (int(x // CELL_SIZE), int(y // CELL_SIZE))<br>
-<br>
-def get_nearby_objects(obj_x, obj_y, grid):<br>
-    """获取相邻网格中的所有对象"""<br>
-    cell_x, cell_y = hash_position(obj_x, obj_y)<br>
-    nearby = []<br>
-    for dx in [-1, 0, 1]:<br>
-        for dy in [-1, 0, 1]:<br>
-            key = (cell_x + dx, cell_y + dy)<br>
-            if key in grid:<br>
-                nearby.extend(grid[key])<br>
-    return nearby<br>
-<br>
-# 比四叉树更简单，适合对象均匀分布的场景<br>
-```<br>
-<br>
-### 视锥剔除（Frustum Culling）<br>
-<br>
-```python<br>
-# 简化版视锥剔除（2D）<br>
-def rect_in_frustum(rect, frustum_rect):<br>
-    """判断矩形是否在视锥范围内"""<br>
-    return not (<br>
-        rect.right < frustum_rect.left or<br>
-        rect.left > frustum_rect.right or<br>
-        rect.bottom < frustum_rect.top or<br>
-        rect.top > frustum_rect.bottom<br>
-    )<br>
-<br>
-# 3D 视锥：用6个平面定义视锥体<br>
-# 判断包围盒（AABB）与6个平面的关系<br>
-# 完全在外部 → 剔除<br>
-# 相交或完全内部 → 保留<br>
-```<br>
-<br>
----<br>
-<br>
-## 噪声函数<br>
-<br>
-### 常用噪声对比<br>
-<br>
-| 噪声 | 特性 | 适用场景 | 代码复杂度 |<br>
-|------|------|----------|-----------|<br>
-| **Value Noise** | 块状，简单 | 低要求场景 | 低 |<br>
-| **Perlin Noise** | 平滑连续，有方向性 | 地形、云、水 | 中 |<br>
-| **Simplex Noise** | Perlin改进，低维度高效 | 3D地形、动画 | 中 |<br>
-| **Worley Noise** | 细胞状，边缘清晰 | 石块、裂纹 | 中 |<br>
-| **FBM** | 多频段叠加 | 真实自然地形 | 中 |<br>
-<br>
-### FBM（分形布朗运动）<br>
-<br>
-```python<br>
-def fbm(x, y, octaves=4, persistence=0.5, lacunarity=2.0):<br>
-    """<br>
-    分形布朗运动：叠加多层噪声<br>
-    - octaves: 层数（细节层次）<br>
-    - persistence: 每层振幅衰减<br>
-    - lacunarity: 每层频率倍增<br>
-    """<br>
-    total = 0<br>
-    amplitude = 1<br>
-    frequency = 1<br>
-    max_value = 0<br>
-    <br>
-    for i in range(octaves):<br>
-        total += noise(x * frequency, y * frequency) * amplitude<br>
-        max_value += amplitude<br>
-        amplitude *= persistence<br>
-        frequency *= lacunarity<br>
-    <br>
-    return total / max_value  # 归一化到 0-1<br>
-<br>
-# 典型参数<br>
-terrain = fbm(x, y, octaves=6, persistence=0.5, lacunarity=2.0)<br>
-clouds = fbm(x, y, octaves=4, persistence=0.6, lacunarity=2.2)<br>
-```<br>
-<br>
----<br>
-<br>
-## 游戏平衡数学<br>
-<br>
-### 伤害公式对比<br>
-<br>
-| 公式类型 | 公式 | 特点 | 适用 |<br>
-|----------|------|------|------|<br>
-| **线性** | 伤害 = 攻击 - 防御 | 简单直观 | 简单RPG |<br>
-| **乘法** | 伤害 = 攻击 × (1 - 减伤率) | 避免防御过高无敌 | MOBA |<br>
-| **除法** | 伤害 = 攻击² / (攻击 + 防御) | 防御收益递减 | RPG |<br>
-| **穿透** | 伤害 = max(攻击 - 防御, 攻击×0.1) | 保底伤害 | 动作游戏 |<br>
-<br>
-### 经验曲线设计<br>
-<br>
-```python<br>
-# 常见经验曲线公式<br>
-<br>
-def exp_linear(level):<br>
-    """线性：每级所需经验相同"""<br>
-    return level * 1000<br>
-<br>
-def exp_exponential(level, base=1.5):<br>
-    """指数：后期升级极慢"""<br>
-    return int(1000 * (base ** level))<br>
-<br>
-def exp_polynomial(level, power=2.5):<br>
-    """多项式：平滑递增（推荐）"""<br>
-    return int(1000 * (level ** power))<br>
-<br>
-def exp_custom(level):<br>
-    """《魔兽世界》风格：每级经验 = 当前等级 × 基础值 × 系数"""<br>
-    base = 100<br>
-    if level <= 10:<br>
-        return level * base<br>
-    elif level <= 20:<br>
-        return level * base * 1.2<br>
-    else:<br>
-        return int(level * base * 1.5 * (1.1 ** (level - 20)))<br>
-<br>
-# 设计要点：<br>
-# - 前10级快速，建立成就感<br>
-# - 中期稳定，保持进度感<br>
-# - 后期缓慢，延长游戏寿命<br>
-```<br>
-<br>
-### 经济系统基础公式<br>
-<br>
-```<br>
-经济健康度检查：<br>
-<br>
-1. 货币流通速度 = 总交易金额 / 货币总量<br>
-   └── 健康范围：5-20（过低=囤积，过高=通胀）<br>
-<br>
-2. 贫富差距系数（Gini）<br>
-   └── 0 = 完全平等，1 = 一人拥有全部<br>
-   └── 游戏建议：0.3-0.6（需要有贫富差距但不过度）<br>
-<br>
-3. 物品稀缺度 = 需求 / 供给<br>
-   └── > 1.5：价格上涨压力<br>
-   └── < 0.5：价格下跌压力<br>
-```<br>
-<br>
----<br>
-<br>
-## 常用数学模式<br>
-<br>
-### 扇形/锥形检测<br>
-<br>
-```python<br>
-def point_in_sector(px, py, cx, cy, direction, angle_width, radius):<br>
-    """判断点是否在扇形内（用于技能范围、视野检测）"""<br>
-    dx, dy = px - cx, py - cy<br>
-    dist_sq = dx*dx + dy*dy<br>
-    if dist_sq > radius * radius:<br>
-        return False<br>
-    <br>
-    # 计算点相对于中心的角度<br>
-    point_angle = atan2(dy, dx)<br>
-    angle_diff = abs(normalize_angle(point_angle - direction))<br>
-    return angle_diff <= angle_width / 2<br>
-<br>
-def normalize_angle(angle):<br>
-    """将角度归一化到 [-pi, pi]"""<br>
-    while angle > pi: angle -= 2*pi<br>
-    while angle < -pi: angle += 2*pi<br>
-    return angle<br>
-```<br>
-<br>
-### 贝塞尔曲线<br>
-<br>
-```python<br>
-def bezier_quadratic(p0, p1, p2, t):<br>
-    """二次贝塞尔曲线：p0(起点), p1(控制点), p2(终点)"""<br>
-    return (1-t)**2 * p0 + 2*(1-t)*t * p1 + t**2 * p2<br>
-<br>
-def bezier_cubic(p0, p1, p2, p3, t):<br>
-    """三次贝塞尔曲线：更平滑的曲线控制"""<br>
-    return (1-t)**3 * p0 + 3*(1-t)**2*t * p1 + 3*(1-t)*t**2 * p2 + t**3 * p3<br>
-<br>
-# 用途：<br>
-# - UI 动画路径<br>
-# - 子弹/弹道曲线<br>
-# - 相机移动轨迹<br>
-# - 粒子运动路径<br>
-```<br>
-<br>
-### 距离衰减公式<br>
-<br>
-```python<br>
-def linear_falloff(distance, max_dist):<br>
-    """线性衰减：声音、光照"""<br>
-    return max(0, 1 - distance / max_dist)<br>
-<br>
-def inverse_square_falloff(distance, max_dist):<br>
-    """平方反比衰减：真实物理（光照、引力）"""<br>
-    if distance >= max_dist:<br>
-        return 0<br>
-    return 1 / (1 + distance * distance)<br>
-<br>
-def exponential_falloff(distance, max_dist, exponent=2):<br>
-    """指数衰减：可控的衰减曲线"""<br>
-    if distance >= max_dist:<br>
-        return 0<br>
-    return (1 - distance / max_dist) ** exponent<br>
-```<br>
-<br>
----<br>
-<br>
-## 最佳实践<br>
-<br>
-- [ ] **不要自己写随机数算法** — 使用经过验证的库（PCG、Mersenne Twister）<br>
-- [ ] **种子必须可配置** — 调试和可复现性<br>
-- [ ] **浮点数比较用 epsilon** — `abs(a-b) < 0.0001` 而非 `a == b`<br>
-- [ ] **预计算三角函数** — 高频调用时查表替代 `sin`/`cos`<br>
-- [ ] **缓动比线性好** — 几乎所有动画都应该有缓动<br>
-- [ ] **空间分区必须做** — 100+ 动态对象时碰撞检测从 O(n²) 降到 O(n log n)<br>
-- [ ] **伤害公式先纸上验证** — Excel 模拟 1000 次战斗再进代码<br>
-- [ ] **经验曲线画出来看** — 对数坐标检查是否平滑<br>
-<br>
----<br>
-<br>
-## 相关页面<br>
-<br>
-- [核心机制设计](core-mechanics.md) — 数学与机制的结合<br>
-- [程序化内容生成](procedural-content-generation.md) — 噪声与随机<br>
-- [游戏AI系统](game-ai-systems.md) — 向量运算与空间算法<br>
-- [物理系统](physics-systems.md) — 刚体动力学数学<br>
-</article></body>
-</html>

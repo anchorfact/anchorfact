@@ -1,731 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>AI Agent 游戏开发工具 — AnchorFact</title></head>
-<body><article><br>
-# AI Agent 游戏开发工具<br>
-<br>
-## 概览<br>
-<br>
-2025-2026 年，AI 编码 Agent（Claude Code、Cursor、Codex 等）已经成为游戏开发的重要辅助工具。以下是在各阶段有用的工具和模板。<br>
-<br>
----<br>
-<br>
-## 完整的 AI 游戏开发框架<br>
-<br>
-### Claude Code Game Studios — 49 智能体虚拟游戏工作室<br>
-<br>
-一个模板系统，把单个 Claude Code 会话变成完整的游戏开发工作室：<br>
-<br>
-- **49 个专门化 Agent** — 分 3 层（总监用 Opus、部门主管用 Sonnet、专家用 Sonnet/Haiku）<br>
-- **72 个 Skill 命令** — /start、/design-system、/dev-story 等<br>
-- **支持引擎** — Godot 4、Unity、Unreal Engine 5<br>
-- **7 阶段管线** — 概念 → 系统设计 → 技术准备 → 预生产 → 生产 → 打磨 → 发布<br>
-<br>
-**GitHub**: [Donchitos/Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios)<br>
-<br>
-### Everything Game Dev Code — 42 Agent 开源脚手架<br>
-<br>
-- **42 个 Agent、51 个命令、86 个 Skill、92 条规则、10 个阶段上下文**<br>
-- 引擎隔离 — Unity、Unreal、Godot 的规则互不污染<br>
-- Unity 专用命令：/unity-setup、/unity-build-fix、/unity-review<br>
-<br>
-**Unity 论坛**: [Everything Game Dev Code](https://discussions.unity.com/t/everything-game-dev-code-open-source-ai-scaffold-with-dedicated-unity-support/1716140)<br>
-<br>
-### WebGameTemplateForAgents — 浏览器游戏模板<br>
-<br>
-制作浏览器游戏的即用模板：<br>
-- 兼容 Cursor Agent、Codex、Claude Code<br>
-- 4 阶段工作流：设计 → 规划 → 实现 → 测试<br>
-- 结构化入口文件（FIRST_PROMPT.md、NEXT_ITERATION_PROMPT.md）<br>
-<br>
-**GitHub**: [ludenio/WebGameTemplateForAgents](https://github.com/ludenio/WebGameTemplateForAgents)<br>
-<br>
----<br>
-<br>
-## 引擎 MCP 集成<br>
-<br>
-MCP（Model Context Protocol）是让 AI Agent 直接操作引擎的标准方式：<br>
-<br>
-| 工具 | 引擎 | 功能 |<br>
-|------|------|------|<br>
-| **Unity MCP** | Unity | 开源 MCP 服务端，AI 直接操作 Unity Editor（7k+ ⭐） |<br>
-| **Coplay MCP** | Unity | 86 个工具，支持脚本、场景、资产生成 |<br>
-| **GodotIQ** | Godot | 3D 空间理解、信号流追踪、场景编辑 |<br>
-| **Agentic AI** | Roblox | 规划模式 + AI 游戏测试 + 程序化 3D 模型 |<br>
-<br>
----<br>
-<br>
-## AI 辅助开发工作流推荐<br>
-<br>
-### 核心原则<br>
-<br>
-1. **结构化规则先行** — 建立 CLAUDE.md、AGENTS.md、ARCHITECTURE.md<br>
-2. **规划优于编码** — 不要让 AI 自主规划，你规划 AI 执行<br>
-3. **模块化设计** — 每次只做一个可测试的特性<br>
-4. **频繁提交** — 每步工作后提交 Git，方便回滚<br>
-5. **清理上下文** — 每步新开对话，避免上下文污染<br>
-<br>
-### 推荐工作流<br>
-<br>
-```<br>
-GDD → 技术选型 → CLAUDE.md 规则 → 实现计划<br>
-→ 内存银行（Memory Bank）→ 分步开发 → 测试 → 审查<br>
-```<br>
-<br>
-### Verb 编码方法（2026）<br>
-<br>
-1. 使用 Claude Opus 4.6 在 Claude Code 中（推荐优于 Cursor）<br>
-2. 每个步骤从全新上下文开始<br>
-3. 要求 AI 先输出计划，批准后再实现<br>
-4. 使用 TDD 确保质量<br>
-<br>
----<br>
-<br>
-## Skill 套装推荐<br>
-<br>
-| 项目 | ⭐ | 用途 |<br>
-|------|-----|------|<br>
-| **addyosmani/agent-skills** | 16.6k | 20 个全流程工程技能 |<br>
-| **forrestchang/andrej-karpathy-skills** | 62k | 4 条行为准则 |<br>
-| **Bollwerkio/werkstatt** | — | 严格的 TDD 工作流 |<br>
-| **Astro-Han/karpathy-llm-wiki** | — | 个人游戏开发知识库 |<br>
-<br>
----<br>
-<br>
-## 开发建议<br>
-<br>
-### Web 游戏开发<br>
-- HTML5 Canvas / Phaser 框架<br>
-- 无服务器架构（确定性回放）<br>
-- AI Agent 生成完整小游戏效率极高<br>
-<br>
-### Unity 开发<br>
-- Unity MCP 让 AI 直接操作编辑器<br>
-- Everything Game Dev Code 脚手架<br>
-- 注意 C# 编译导致的迭代延迟<br>
-<br>
-### Godot 开发<br>
-- GodotIQ MCP 提供空间理解<br>
-- GDScript 解析成本低，适合 AI 生成<br>
-- 编辑器轻量，迭代快<br>
-<br>
-### Unreal 开发<br>
-- 蓝图可视化 + C++ 混合<br>
-- Aura 12.0 提供多 Agent 协作<br>
-- 适合 AAA 品质但需要更多算力<br>
-<br>
----<br>
-<br>
-## 在项目中使用 AI 辅助设计<br>
-<br>
-AI Agent 不仅能辅助写代码，也能辅助**游戏设计本身**。以下是经过验证的实战案例：<br>
-<br>
-### 实战案例 1：基于 MDA 框架的机制生成<br>
-<br>
-**场景**：需要为一个 Roguelike 游戏设计 20 个独特的武器机制。<br>
-<br>
-**Prompt 模板**：<br>
-```markdown<br>
-你是一位游戏机制设计师。基于 MDA 框架，为 [Roguelike 游戏] 设计 20 个武器机制。<br>
-<br>
-要求：<br>
-- 每个机制明确 Mechanics（规则）、Dynamics（玩家互动产生的动态）、Aesthetics（情感体验）<br>
-- 机制之间要有协同效应（组合产生新策略）<br>
-- 包含 5 个简单机制、10 个中等复杂度、5 个高复杂度<br>
-- 每个机制标注设计意图和潜在平衡风险<br>
-<br>
-输出格式：<br>
-| 编号 | 机制名称 | Mechanics | Dynamics | Aesthetics | 复杂度 | 协同武器 |<br>
-```<br>
-<br>
-**实际效果**：<br>
-- 生成 20 个机制中，约 60% 可直接使用，30% 需要调整，10% 启发新方向<br>
-- MDA 框架强制要求思考玩家体验，避免"为机制而机制"<br>
-- 协同矩阵帮助发现意外的组合乐趣<br>
-<br>
-参见：[[wiki/concepts/game-design-principles.md#MDA-框架]]<br>
-<br>
----<br>
-<br>
-### 实战案例 2：AI 玩家角色扮演测试<br>
-<br>
-**场景**：测试 F2P 游戏的经济系统对不同玩家类型的友好度。<br>
-<br>
-**方法**：让 AI 扮演 4 种玩家原型，各进行 100 次模拟游玩：<br>
-<br>
-| 玩家类型 | 行为特征 | 测试重点 |<br>
-|----------|----------|----------|<br>
-| 鲸鱼玩家 | 高付费意愿，追求顶级排名 | 付费天花板是否足够高 |<br>
-| 海豚玩家 | 适度付费，追求性价比 | Battle Pass 价值感知 |<br>
-| 小鱼玩家 | 零付费或首充 | 免费体验是否完整 |<br>
-| 硬核玩家 | 技术优先，时间充裕 | 技能是否能弥补付费差距 |<br>
-<br>
-**Prompt 模板**：<br>
-```markdown<br>
-你是一位 [鲸鱼/海豚/小鱼/硬核] 类型的玩家。<br>
-<br>
-游戏信息：<br>
-- 类型：[游戏类型]<br>
-- 经济系统：[简述货币、获取、消耗]<br>
-- 当前进度：[天数/等级]<br>
-<br>
-请模拟你接下来 7 天的游戏行为：<br>
-1. 每天的游戏时长分配<br>
-2. 消费决策（是否付费、付费金额）<br>
-3. 情绪变化曲线<br>
-4. 流失风险评估（1-10）<br>
-<br>
-输出格式：按天记录，包含决策理由。<br>
-```<br>
-<br>
-**实际效果**：<br>
-- 提前发现"小鱼玩家在第 3 天感到付费压力"的问题<br>
-- 验证 Battle Pass 对海豚玩家的吸引力<br>
-- 发现硬核玩家在第 7 天达到"付费墙"的挫败感<br>
-<br>
-参见：[[wiki/concepts/player-psychology.md#玩家细分模型]]<br>
-参见：[[wiki/concepts/monetization-strategy.md]]<br>
-<br>
----<br>
-<br>
-### 实战案例 3：叙事一致性检查<br>
-<br>
-**场景**：分支剧情游戏有 500+ 个叙事变量，需要检查逻辑矛盾。<br>
-<br>
-**方法**：将变量状态和剧情脚本输入 LLM，自动检测冲突。<br>
-<br>
-**Prompt 模板**：<br>
-```markdown<br>
-你是一位叙事逻辑检查员。请检查以下剧情分支是否存在逻辑矛盾。<br>
-<br>
-已知条件：<br>
-- 玩家在任务 A 中杀死了 NPC X（变量：NPC_X_ALIVE = false）<br>
-- 任务 B 的前提条件是 NPC X 存活（条件：NPC_X_ALIVE == true）<br>
-- 任务 B 在任务 A 之后触发<br>
-<br>
-请检查：<br>
-1. 是否存在"死NPC出现在后续剧情"的矛盾<br>
-2. 条件判断是否正确处理所有变量组合<br>
-3. 是否存在未定义的变量引用<br>
-4. 给出修复建议<br>
-<br>
-剧情脚本：<br>
-[粘贴脚本内容]<br>
-```<br>
-<br>
-**实际效果**：<br>
-- 发现 12 处逻辑矛盾（如"已死亡的NPC出现在对话中"）<br>
-- 发现 3 处未处理的分支条件（变量存在但未在条件中使用）<br>
-- 生成修复建议，节省 80% 的人工检查时间<br>
-<br>
-参见：[[wiki/concepts/story-architecture.md#变量管理与状态追踪]]<br>
-参见：[[wiki/concepts/story-architecture-code.md]]<br>
-<br>
----<br>
-<br>
-### 实战案例 4：经济系统模拟分析<br>
-<br>
-**场景**：设计一个 MMORPG 的经济系统，需要预测通胀/通缩。<br>
-<br>
-**方法**：用 AI 建立简化经济模型，模拟 30 天玩家行为。<br>
-<br>
-**Prompt 模板**：<br>
-```markdown<br>
-你是一位游戏经济分析师。请模拟以下 MMORPG 经济系统的 30 天运行。<br>
-<br>
-经济参数：<br>
-- 货币产出：每日任务 100G、副本掉落 50-200G、交易税 5%<br>
-- 货币消耗：修理 10G/天、传送 5G/次、拍卖行手续费 5%<br>
-- 物品产出：装备掉落率 5%、材料采集 20/小时<br>
-- 玩家行为：每日在线 2 小时、50% 参与交易<br>
-<br>
-请输出：<br>
-1. 每日货币总量变化曲线<br>
-2. 物品价格变化预测（前 5 种热门物品）<br>
-3. 通胀/通缩风险评估<br>
-4. 建议的货币回收机制<br>
-```<br>
-<br>
-**实际效果**：<br>
-- 预测第 15 天开始出现轻微通胀（货币总量增长 > 物品增长）<br>
-- 建议增加"奢侈品消耗"和"限时活动货币回收"<br>
-- 验证拍卖行 5% 手续费不足以控制通胀<br>
-<br>
-参见：[[wiki/concepts/game-data-analytics.md#数据驱动平衡工作流]]<br>
-参见：[[wiki/concepts/core-mechanics.md#经济系统]]<br>
-<br>
----<br>
-<br>
-### 实战案例 5：关卡节奏 AI 评估<br>
-<br>
-**场景**：设计一个 10 分钟的关卡，需要验证节奏是否合理。<br>
-<br>
-**方法**：向 AI 描述关卡布局，获取节奏分析和改进建议。<br>
-<br>
-**Prompt 模板**：<br>
-```markdown<br>
-你是一位关卡设计专家。请评估以下关卡的节奏设计。<br>
-<br>
-关卡描述：<br>
-[描述关卡结构：区域划分、敌人配置、谜题位置、叙事节点]<br>
-<br>
-玩家数据（如有）：<br>
-- 平均通关时间<br>
-- 死亡热点<br>
-- 停顿/困惑区域<br>
-<br>
-请分析：<br>
-1. 节奏曲线（紧张度 0-10 随时间变化）<br>
-2. 是否存在节奏疲劳（连续高压超过 3 分钟）<br>
-3. 引导是否清晰（玩家是否知道该做什么）<br>
-4. 高潮位置是否合适<br>
-5. 改进建议（具体调整方案）<br>
-```<br>
-<br>
-**实际效果**：<br>
-- 发现"第 4-6 分钟连续战斗无休息"的节奏问题<br>
-- 建议在 5 分钟处添加安全区/叙事节点<br>
-- 验证 Boss 战前的"资源补给站"位置合理<br>
-<br>
-参见：[[wiki/concepts/level-design.md#节奏设计]]<br>
-<br>
----<br>
-<br>
-### AI 辅助设计最佳实践<br>
-<br>
-| 设计任务 | 推荐 AI 工具 | 验证方法 |<br>
-|----------|-------------|----------|<br>
-| 机制创意发散 | Claude/GPT-4 | 原型测试 + 玩家反馈 |<br>
-| 玩家体验模拟 | Claude（角色扮演） | 真实玩家测试对比 |<br>
-| 叙事逻辑检查 | Claude（逻辑分析） | 人工抽查 + 自动化测试 |<br>
-| 经济模拟 | Claude（数值模拟） | 小规模封闭测试 |<br>
-| 关卡评估 | Claude（节奏分析） | 热力图 + 玩家录像 |<br>
-<br>
-**关键原则**：<br>
-1. AI 是"发散工具"不是"决策工具"——用它生成选项，你来做选择<br>
-2. 所有 AI 输出必须经过**玩家验证**——AI 模拟不等于真实玩家行为<br>
-3. 保留"人类直觉"——AI 可能错过文化语境和情感细微差别<br>
-4. 迭代循环：AI 生成 → 快速原型 → 玩家测试 → AI 分析数据 → 优化<br>
-<br>
-参见：[[wiki/concepts/game-design-principles.md]]<br>
-参见：[[wiki/concepts/player-psychology.md]]<br>
-参见：[[wiki/concepts/game-data-analytics.md]]<br>
-<br>
----<br>
-<br>
-## 参考来源<br>
-<br>
-- Claude Code Game Studios: GitHub<br>
-- WebGameTemplateForAgents: GitHub<br>
-- Everything Game Dev Code: Unity Discussions<br>
-- Unity MCP: GitHub<br>
-- Roblox Agentic AI Update (April 2026)<br>
-<br>
----<br>
-<br>
-## AI 工具快速选型表<br>
-<br>
-| 需求 | 推荐工具 | 替代方案 |<br>
-|------|----------|----------|<br>
-| **快速原型** | Claude Code + Godot | Cursor + Unity |<br>
-| **代码生成** | Claude Code / Cursor | GitHub Copilot |<br>
-| **美术生成** | Midjourney / DALL-E 3 | Stable Diffusion (本地) |<br>
-| **3D 模型** | Meshy / Rodin | Tripo3D / 手动建模 |<br>
-| **音乐/音效** | Suno / Udio | AIVA / 人工作曲 |<br>
-| **对话/叙事** | ChatGPT / Claude | 专用叙事工具 |<br>
-| **视频/预告片** | Runway / Pika | 手动剪辑 |<br>
-| **Bug 检测** | Claude (代码审查) | 静态分析工具 |<br>
-| **测试自动化** | AI 玩家模拟 | 传统脚本测试 |<br>
-<br>
----<br>
-<br>
-## MCP 协议详解<br>
-<br>
-MCP（Model Context Protocol）是 Anthropic 于 2024 年 11 月推出的开放标准，让 AI 模型能够安全地连接外部工具和数据源。<br>
-<br>
-### 核心架构<br>
-<br>
-```<br>
-┌─────────────┐      MCP Protocol      ┌──────────────┐<br>
-│   AI Host   │  ←──────────────────→  │  MCP Server  │<br>
-│ (Claude/Cursor│  JSON-RPC 2.0 over    │ (Tool Provider)│<br>
-│  /Copilot)  │   stdio / SSE / HTTP   │              │<br>
-└─────────────┘                        └──────────────┘<br>
-                                              │<br>
-                              ┌───────────────┼───────────────┐<br>
-                              ↓               ↓               ↓<br>
-                         [Resources]    [Tools]        [Prompts]<br>
-                         只读数据       可执行操作      可复用模板<br>
-```<br>
-<br>
-### 三大原语<br>
-<br>
-| 原语 | 功能 | 方向 | 示例 |<br>
-|------|------|------|------|<br>
-| **Resources** | 暴露可读数据给AI | Server → Host | 文件内容、数据库记录、游戏场景树 |<br>
-| **Tools** | 暴露可执行功能 | Host → Server → Host | 创建文件、编译项目、运行测试 |<br>
-| **Prompts** | 预定义可复用模板 | Server → Host | "生成敌人AI行为树"、"代码审查清单" |<br>
-<br>
-### MCP 传输方式<br>
-<br>
-| 方式 | 适用场景 | 特点 |<br>
-|------|----------|------|<br>
-| **stdio** | 本地进程 | 最常见、简单、安全 |<br>
-| **SSE (Server-Sent Events)** | 远程/浏览器 | 单向流、需HTTP |<br>
-| **HTTP** | 云服务 | 双向、可跨网络 |<br>
-<br>
-### MCP vs 传统 Function Calling<br>
-<br>
-| 特性 | Function Calling | MCP |<br>
-|------|-----------------|-----|<br>
-| 注册方式 | 代码内硬编码 | 动态发现 |<br>
-| 工具来源 | 单应用 | 多服务器生态 |<br>
-| 标准化 | 各厂商不同 | 统一协议 |<br>
-| 可扩展性 | 需修改代码 | 即插即用 |<br>
-| 状态管理 | 无标准 | 会话隔离 |<br>
-<br>
-### MCP 游戏开发服务器生态<br>
-<br>
-| 服务器 | 功能 | 安装 |<br>
-|--------|------|------|<br>
-| **Unity MCP** | 操作Unity编辑器、场景、资产 | npm / GitHub |<br>
-| **GodotIQ** | Godot场景理解、代码生成 | Godot AssetLib |<br>
-| **Blender MCP** | 3D建模、脚本执行 | pip install |<br>
-| **Git MCP** | 代码仓库操作 | npm install |<br>
-| **FileSystem MCP** | 文件读写 | 内置 |<br>
-| **Playwright MCP** | 浏览器自动化测试 | npm install |<br>
-| **Obsidian MCP** | 知识库操作 | npm install |<br>
-| **SQLite MCP** | 数据库查询 | pip install |<br>
-<br>
-### MCP 配置示例 (Claude Code)<br>
-<br>
-```json<br>
-// ~/.mcp/config.json<br>
-{<br>
-  "servers": {<br>
-    "unity": {<br>
-      "command": "node",<br>
-      "args": ["/path/to/unity-mcp/dist/index.js"],<br>
-      "env": { "UNITY_PROJECT_PATH": "/path/to/project" }<br>
-    },<br>
-    "filesystem": {<br>
-      "command": "npx",<br>
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/path/to/project"]<br>
-    },<br>
-    "git": {<br>
-      "command": "npx",<br>
-      "args": ["-y", "@modelcontextprotocol/server-git"]<br>
-    }<br>
-  }<br>
-}<br>
-```<br>
-<br>
----<br>
-<br>
-## A2A 协议 (Agent-to-Agent)<br>
-<br>
-### 概述<br>
-<br>
-A2A 是 Google 于 2025 年 4 月推出的开放协议，让不同框架构建的 AI Agent 能够互相发现并协作完成任务。与 MCP 互补（MCP 连接工具，A2A 连接 Agent）。<br>
-<br>
-### A2A 核心概念<br>
-<br>
-| 概念 | 说明 |<br>
-|------|------|<br>
-| **Agent Card** | JSON-LD 格式的Agent能力描述（技能、端点、认证） |<br>
-| **Task** | 协作的基本单元，包含输入、输出、状态 |<br>
-| **Message** | Agent间通信载体，支持文本、文件、结构化数据 |<br>
-| **Skill** | Agent可执行的能力声明 |<br>
-<br>
-### A2A 与 MCP 对比<br>
-<br>
-| 维度 | MCP | A2A |<br>
-|------|-----|-----|<br>
-| **连接对象** | AI ↔ 工具/数据 | AI Agent ↔ AI Agent |<br>
-| **发起方** | AI Host | 任何Agent |<br>
-| **交互模式** | 请求-响应 | 异步任务流 |<br>
-| **发现机制** | 配置文件 | Agent Card目录 |<br>
-| **典型场景** | 操作编辑器、查数据库 | 多Agent协作开发 |<br>
-| **推出方** | Anthropic | Google |<br>
-<br>
-### 游戏开发多Agent协作场景<br>
-<br>
-```<br>
-主控Agent (Producer)<br>
-    ├── 设计Agent → 输出GDD、机制文档<br>
-    ├── 程序Agent → 输出代码、系统实现<br>
-    ├── 美术Agent → 输出资产需求、风格指南<br>
-    ├── QA Agent → 输出测试计划、Bug报告<br>
-    └── 音频Agent → 输出音效需求、音乐 brief<br>
-<br>
-通过 A2A 协议:<br>
-- Producer Agent 创建Task"实现战斗系统"<br>
-- 自动分配给程序Agent，同时通知设计Agent提供规格<br>
-- 程序Agent完成后通知QA Agent生成测试用例<br>
-- 所有状态通过A2A Task流跟踪<br>
-```<br>
-<br>
----<br>
-<br>
-## 主要 Agent 框架与协议<br>
-<br>
-| 框架/协议 | 推出方 | 核心特点 | 游戏开发适用性 |<br>
-|-----------|--------|----------|----------------|<br>
-| **MCP** | Anthropic | 工具连接标准 | ⭐⭐⭐⭐⭐ 引擎操作、资产管�� |<br>
-| **A2A** | Google | Agent协作标准 | ⭐⭐⭐⭐ 多Agent工作室 |<br>
-| **LangChain** | LangChain Inc | 编排框架、链式调用 | ⭐⭐⭐⭐ 工作流编排 |<br>
-| **AutoGen** | Microsoft | 多Agent对话、代码生成 | ⭐⭐⭐⭐ 代码协作 |<br>
-| **CrewAI** | CrewAI Inc | 角色化Agent团队 | ⭐⭐⭐ 任务分配 |<br>
-| **LlamaIndex** | LlamaIndex | RAG、数据检索 | ⭐⭐⭐ 知识库查询 |<br>
-| **Semantic Kernel** | Microsoft | 微软生态集成 | ⭐⭐⭐ Azure用户 |<br>
-| **AG2 (原AutoGen)** | AG2 Team | 下一代AutoGen | ⭐⭐⭐⭐ 代码生成 |<br>
-<br>
----<br>
-<br>
-## 核心 API 文档索引<br>
-<br>
-### 大语言模型 API<br>
-<br>
-| 服务 | 文档链接 | 特点 | 定价 |<br>
-|------|----------|------|------|<br>
-| **Anthropic Claude API** | https://docs.anthropic.com | 长上下文(200K)、代码强 | [待验证] |<br>
-| **OpenAI GPT-4o/4.5** | https://platform.openai.com/docs | 多模态、函数调用成熟 | [待验证] |<br>
-| **Google Gemini 2.5** | https://ai.google.dev/gemini-api | 超大上下文(1M+)、免费 tier | [待验证] |<br>
-| **DeepSeek V3/R1** | https://api-docs.deepseek.com | 高性价比、推理强 | [待验证] |<br>
-| **Moonshot Kimi** | https://platform.moonshot.cn | 中文优化、长上下文 | [待验证] |<br>
-| **Alibaba Qwen** | https://help.aliyun.com/qwen | 中文强、开源模型 | [待验证] |<br>
-<br>
-### 图像生成 API<br>
-<br>
-| 服务 | 文档链接 | 特点 |<br>
-|------|----------|------|<br>
-| **Midjourney API** | https://docs.midjourney.com | ⚠️ 无官方公开API，仅Discord/第三方封装 |<br>
-| **OpenAI DALL-E 3** | https://platform.openai.com/docs/guides/images | 指令遵循强。定价：1024×1024 $0.04/张，1792×1024 $0.08/张 |<br>
-| **Stability AI** | https://platform.stability.ai/docs | SDXL/SD3、可微调 [待验证] |<br>
-| **Replicate (FLUX)** | https://replicate.com/docs | 开源模型托管 [待验证] |<br>
-| **Leonardo.ai API** | https://docs.leonardo.ai | 游戏专用模型 [待验证] |<br>
-<br>
-### 3D 生成 API<br>
-<br>
-| 服务 | 文档链接 | 特点 |<br>
-|------|----------|------|<br>
-| **Meshy API** | https://docs.meshy.ai | 文本/图像→3D、PBR |<br>
-| **Tripo3D API** | https://platform.tripo3d.ai/docs | 图像→3D、高质量 |<br>
-| **CSM API** | https://docs.csm.ai | 快速3D生成 |<br>
-| **Rodin API** | https://docs.rodin.genius.xyz | 高质量角色3D |<br>
-<br>
-### 音频生成 API<br>
-<br>
-| 服务 | 文档链接 | 特点 |<br>
-|------|----------|------|<br>
-| **ElevenLabs API** | https://elevenlabs.io/docs | 语音/SFX。模型：v3(70+语言)、multilingual_v2(29语言)、flash/turbo v2.5(32语言) |<br>
-| **Suno API** | https://github.com/gcui-art/suno-api | ⚠️ 官方无公开API，现有均为社区开源封装 |<br>
-| **Udio API** | https://www.udio.com/api | 音乐生成 [待验证] |<br>
-| **OpenAI TTS** | https://platform.openai.com/docs/guides/text-to-speech | 简单语音 [待验证] |<br>
-<br>
-### 视频生成 API<br>
-<br>
-| 服务 | 文档链接 | 特点 |<br>
-|------|----------|------|<br>
-| **Runway API** | https://docs.runwayml.com | Gen-3视频生成 |<br>
-| **Pika API** | https://pika.art/docs | 视频生成、特效 |<br>
-<br>
-### 游戏引擎相关 API<br>
-<br>
-| 服务 | 文档链接 | 用途 |<br>
-|------|----------|------|<br>
-| **Unity MCP** | https://github.com/justinpbarnett/unity-mcp | AI操作编辑器 |<br>
-| **Unity Sentis** | https://docs.unity3d.com/Packages/com.unity.sentis@2.0 | 运行时ML推理 |<br>
-| **Unreal ML Deformer** | https://docs.unrealengine.com/5.4/ml-deformer | 顶点变形 |<br>
-| **GodotIQ** | https://github.com/coppolaemilio/godoiq | Godot AI助手 |<br>
-| **Roblox API** | https://create.roblox.com/docs | 平台API |<br>
-| **Steamworks API** | https://partner.steamgames.com/doc/api | Steam集成 |<br>
-<br>
----<br>
-<br>
-## API 调用示例<br>
-<br>
-### Anthropic Claude (带工具调用)<br>
-<br>
-```python<br>
-from anthropic import Anthropic<br>
-<br>
-client = Anthropic(api_key="YOUR_API_KEY")<br>
-<br>
-response = client.messages.create(<br>
-    model="claude-3-7-sonnet-20250219",<br>
-    max_tokens=4096,<br>
-    tools=[<br>
-        {<br>
-            "name": "create_game_object",<br>
-            "description": "在Unity场景中创建游戏对象",<br>
-            "input_schema": {<br>
-                "type": "object",<br>
-                "properties": {<br>
-                    "name": {"type": "string"},<br>
-                    "position": {"type": "array", "items": {"type": "number"}},<br>
-                    "prefab": {"type": "string"}<br>
-                },<br>
-                "required": ["name", "position"]<br>
-            }<br>
-        }<br>
-    ],<br>
-    messages=[<br>
-        {"role": "user", "content": "在(0,5,0)位置创建一个名为Player的物体"}<br>
-    ]<br>
-)<br>
-<br>
-# 处理工具调用<br>
-for block in response.content:<br>
-    if block.type == "tool_use":<br>
-        result = execute_tool(block.name, block.input)<br>
-        # 将结果返回给Claude继续对话<br>
-```<br>
-<br>
-### OpenAI GPT-4o (图像生成 + 代码)<br>
-<br>
-```python<br>
-from openai import OpenAI<br>
-<br>
-client = OpenAI(api_key="YOUR_API_KEY")<br>
-<br>
-# 图像生成<br>
-image = client.images.generate(<br>
-    model="dall-e-3",<br>
-    prompt="A fantasy RPG character, warrior in glowing armor, <br>
-            concept art style, transparent background",<br>
-    size="1024x1024",<br>
-    quality="hd"<br>
-)<br>
-<br>
-# 代码生成 + 函数调用<br>
-response = client.chat.completions.create(<br>
-    model="gpt-4o",<br>
-    messages=[<br>
-        {"role": "system", "content": "你是一位Unity游戏开发专家"},<br>
-        {"role": "user", "content": "写一个第三人称相机控制器"}<br>
-    ],<br>
-    functions=[<br>
-        {<br>
-            "name": "search_documentation",<br>
-            "description": "搜索Unity文档",<br>
-            "parameters": {<br>
-                "type": "object",<br>
-                "properties": {<br>
-                    "query": {"type": "string"}<br>
-                }<br>
-            }<br>
-        }<br>
-    ]<br>
-)<br>
-```<br>
-<br>
-### ElevenLabs 语音生成<br>
-<br>
-```python<br>
-from elevenlabs import generate, save<br>
-<br>
-audio = generate(<br>
-    text="Welcome, adventurer. The dungeon awaits.",<br>
-    voice="Bella",  # 或自定义克隆声音<br>
-    model="eleven_multilingual_v2",<br>
-    api_key="YOUR_API_KEY"<br>
-)<br>
-<br>
-save(audio, "welcome.mp3")<br>
-```<br>
-<br>
-### Meshy 3D 生成<br>
-<br>
-```python<br>
-import requests<br>
-<br>
-# 文本生成3D<br>
-response = requests.post(<br>
-    "https://api.meshy.ai/openapi/v2/text-to-3d",<br>
-    headers={"Authorization": f"Bearer {MESHY_API_KEY}"},<br>
-    json={<br>
-        "mode": "preview",<br>
-        "prompt": "A low-poly treasure chest, wooden, metal bands, <br>
-                   game asset, stylized",<br>
-        "art_style": "low-poly",<br>
-        "negative_prompt": "high poly, realistic, human"<br>
-    }<br>
-)<br>
-<br>
-task_id = response.json()["result"]<br>
-<br>
-# 轮询获取结果<br>
-result = poll_task(task_id)<br>
-download_url = result["model_urls"]["glb"]<br>
-```<br>
-<br>
----<br>
-<br>
-## MCP 集成实战步骤<br>
-<br>
-### Unity MCP 集成<br>
-<br>
-```bash<br>
-# 1. 安装 Unity MCP<br>
-# GitHub: https://github.com/justinpbarnett/unity-mcp<br>
-<br>
-# 2. Unity Package Manager 导入<br>
-# Window → Package Manager → Add from Git URL<br>
-# https://github.com/justinpbarnett/unity-mcp.git<br>
-<br>
-# 3. 启动 MCP 服务器<br>
-# Tools → Unity MCP → Start Server<br>
-<br>
-# 4. Claude Code 中配置<br>
-# 在 Claude Code 的 MCP 设置中添加 Unity MCP 的 SSE 端点<br>
-```<br>
-<br>
-### GodotIQ MCP 集成<br>
-<br>
-```bash<br>
-# 1. 从 Godot Asset Library 安装 GodotIQ<br>
-# https://godotengine.org/asset-library/asset/4097<br>
-<br>
-# 2. 启用插件<br>
-# Project → Project Settings → Plugins → GodotIQ → Enable<br>
-<br>
-# 3. 配置 MCP 连接<br>
-# 在 GodotIQ 面板中设置 Claude / OpenAI API Key<br>
-<br>
-# 4. 可用功能<br>
-# - 3D 场景理解（描述当前场景内容）<br>
-# - 信号流追踪（分析节点信号连接）<br>
-# - 代码生成（根据自然语言生成 GDScript）<br>
-# - 场景编辑（AI 辅助添加/修改节点）<br>
-```<br>
-<br>
----<br>
-<br>
-## AI 辅助开发趋势（2025-2026）<br>
-<br>
-| 趋势 | 描述 | 影响 |<br>
-|------|------|------|<br>
-| **Agent 协作** | 多个 AI Agent 分工协作开发 | 单人开发效率接近小团队 |<br>
-| **MCP 标准化** | 模型上下文协议成为行业标准 | AI 可直接操作任何工具 |<br>
-| **A2A 协作** | Agent 间开放协议实现跨框架协作 | 多Agent工作室成为可能 |<br>
-| **实时生成** | 运行时 AI 生成内容 | 无限内容、个性化体验 |<br>
-| **AI 测试玩家** | AI 模拟玩家行为测试 | 自动化平衡性测试 |<br>
-| **语音驱动开发** | 语音指令生成代码/资产 | 更低门槛 |<br>
-| **多模态 AI** | 文本+图像+音频统一生成 | 跨领域一致性 |<br>
-| **开源模型崛起** | DeepSeek、Qwen、FLUX 缩小与闭源差距 | 成本大幅降低 |<br>
-<br>
----<br>
-<br>
-## 最佳实践<br>
-<br>
-- [ ] **规则文件第一** — 先写 CLAUDE.md / AGENTS.md，再让 AI 写代码<br>
-- [ ] **小步快跑** — 每次只做一个可测试的特性，避免大规模重构<br>
-- [ ] **人类把关** — AI 生成的是草稿，最终决策权在人类<br>
-- [ ] **版本控制一切** — 每步工作后 Git 提交，方便 AI 犯错时回滚<br>
-- [ ] **清理上下文** — 复杂任务分多个会话，避免上下文污染<br>
-- [ ] **测试驱动** — 让 AI 先写测试，再写实现<br>
-- [ ] **代码审查** — 把 AI 当作初级程序员，所有代码需要审查<br>
-- [ ] **文档同步** — 要求 AI 同步更新文档和注释<br>
-</article></body>
-</html>

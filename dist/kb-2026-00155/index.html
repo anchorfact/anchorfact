@@ -1,17 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>Monitoring and Observability — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-Monitoring tells you what's wrong; observability lets you ask why. Three pillars: metrics (numeric time-series, counters/gauges), logs (timestamped event records), traces (end-to-end request flow across services). The 'Golden Signals': latency, traffic, errors, saturation.<br>
-<br>
-## Core Explanation<br>
-<br>
-Tools: Prometheus (metrics, pull-based), Grafana (dashboards), ELK/OpenSearch (logs), Jaeger/Zipkin (traces), OpenTelemetry (vendor-neutral instrumentation). SLOs (Service Level Objectives) define acceptable reliability: e.g., 99.9% availability with <100ms p99 latency. Alerting: alert on symptoms (user-facing impact), not causes. RED method: Rate, Errors, Duration per service.<br>
-<br>
-## Further Reading<br>
-<br>
-- [Google SRE Book](https://sre.google/books/)<br>
-</article></body>
-</html>

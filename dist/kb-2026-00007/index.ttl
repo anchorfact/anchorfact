@@ -1,8 +1,0 @@
-@prefix schema: <https://schema.org/> .
-@prefix af: <https://anchorfact.org/ns#> .
-
-<https://anchorfact.org/kb/kb-2026-00007>
-  a schema:TechArticle ;
-  schema:headline "Reinforcement Learning from Human Feedback (RLHF)" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .

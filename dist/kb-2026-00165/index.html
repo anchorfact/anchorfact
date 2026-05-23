@@ -1,17 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><title>Prometheus — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-Prometheus is the de facto open-source monitoring and alerting system, graduated from CNCF. It scrapes metrics from instrumented targets via HTTP, stores time-series data locally, and provides a powerful query language (PromQL). Paired with Grafana for visualization and Alertmanager for notifications.<br>
-<br>
-## Core Explanation<br>
-<br>
-Pull-based model: Prometheus server scrapes targets at intervals (15s default). Instrumentation: client libraries expose /metrics endpoint. PromQL: `rate(http_requests_total[5m])`, `histogram_quantile(0.99, ...)`. Service discovery auto-detects targets (Kubernetes, Consul, EC2). Limitations: single-node, not suitable for long-term storage (use Thanos/Cortex for that).<br>
-<br>
-## Further Reading<br>
-<br>
-- [Prometheus Documentation](https://prometheus.io/docs/)<br>
-</article></body>
-</html>

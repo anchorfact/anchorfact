@@ -1,8 +1,0 @@
-@prefix schema: <https://schema.org/> .
-@prefix af: <https://anchorfact.org/ns#> .
-
-<https://anchorfact.org/kb/kb-2026-00088>
-  a schema:TechArticle ;
-  schema:headline "WebSocket API" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
