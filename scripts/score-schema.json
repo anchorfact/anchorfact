@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://anchorfact.dev/schemas/quality-report.json",
+  "title": "AnchorFact Quality Report",
+  "description": "Output of `node scripts/quality-score.cjs --json`",
+  "type": "object",
+  "required": ["timestamp", "total_articles", "average_score", "articles"],
+  "properties": {
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO-8601 timestamp of report generation"
+    },
+    "total_articles": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Total number of articles scored"
+    },
+    "average_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Average quality score across all articles"
+    },
+    "grade_distribution": {
+      "type": "object",
+      "description": "Count per letter grade",
+      "additionalProperties": { "type": "integer", "minimum": 0 }
+    },
+    "domain_averages": {
+      "type": "object",
+      "description": "Per-domain average scores",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["count", "average"],
+        "properties": {
+          "count": { "type": "integer", "minimum": 0 },
+          "average": { "type": "number", "minimum": 0, "maximum": 100 }
+        }
+      }
+    },
+    "dimension_averages": {
+      "type": "object",
+      "description": "Average across all articles per dimension",
+      "properties": {
+        "D1_technical": { "type": "number", "minimum": 0, "maximum": 30 },
+        "D2_quality": { "type": "number", "minimum": 0, "maximum": 30 },
+        "D3_authority": { "type": "number", "minimum": 0, "maximum": 25 },
+        "D4_readiness": { "type": "number", "minimum": 0, "maximum": 15 }
+      }
+    },
+    "top_10": {
+      "type": "array",
+      "maxItems": 10,
+      "items": { "$ref": "#/$defs/articleScore" }
+    },
+    "bottom_10": {
+      "type": "array",
+      "maxItems": 10,
+      "items": { "$ref": "#/$defs/articleScore" }
+    },
+    "articles": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/articleScore" }
+    }
+  },
+  "$defs": {
+    "articleScore": {
+      "type": "object",
+      "required": ["file", "domain", "total", "grade", "dimensions"],
+      "properties": {
+        "file": { "type": "string", "description": "Relative path from content/ dir" },
+        "id": { "type": "string", "description": "Article frontmatter id" },
+        "domain": { "type": "string", "description": "Top-level content directory name" },
+        "total": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "grade": { "type": "string", "enum": ["A", "B", "C", "D", "F"] },
+        "error": { "type": "string", "description": "Parse error message (only present on failure)" },
+        "dimensions": {
+          "type": "object",
+          "required": ["D1_technical", "D2_quality", "D3_authority", "D4_readiness"],
+          "properties": {
+            "D1_technical": { "type": "integer", "minimum": 0, "maximum": 30 },
+            "D2_quality": { "type": "integer", "minimum": 0, "maximum": 30 },
+            "D3_authority": { "type": "integer", "minimum": 0, "maximum": 25 },
+            "D4_readiness": { "type": "integer", "minimum": 0, "maximum": 15 }
+          }
+        },
+        "breakdown": {
+          "type": "object",
+          "description": "Per-sub-dimension breakdown (16 fields)",
+          "properties": {
+            "d1_1_structure": { "type": "integer", "minimum": 0, "maximum": 8 },
+            "d1_2_source_count": { "type": "integer", "minimum": 0, "maximum": 8 },
+            "d1_3_verifiability": { "type": "integer", "minimum": 0, "maximum": 6 },
+            "d1_4_confidence": { "type": "integer", "minimum": 0, "maximum": 4 },
+            "d1_5_ai_transparency": { "type": "integer", "minimum": 0, "maximum": 4 },
+            "d2_1_freshness": { "type": "integer", "minimum": 0, "maximum": 10 },
+            "d2_2_completeness": { "type": "integer", "minimum": 0, "maximum": 5 },
+            "d2_3_accuracy": { "type": "integer", "minimum": 0, "maximum": 5 },
+            "d2_4_classification": { "type": "integer", "minimum": 0, "maximum": 5 },
+            "d2_5_no_wikipedia": { "type": "integer", "minimum": 0, "maximum": 5 },
+            "d3_1_source_tier": { "type": "integer", "minimum": 0, "maximum": 10 },
+            "d3_2_secondary_relevance": { "type": "integer", "minimum": 0, "maximum": 5 },
+            "d3_3_source_recency": { "type": "integer", "minimum": 0, "maximum": 5 },
+            "d3_4_institution_diversity": { "type": "integer", "minimum": 0, "maximum": 5 },
+            "d4_1_atomic_facts": { "type": "integer", "minimum": 0, "maximum": 5 },
+            "d4_2_known_gaps": { "type": "integer", "minimum": 0, "maximum": 5 },
+            "d4_3_disputed": { "type": "integer", "minimum": 0, "maximum": 5 }
+          }
+        }
+      }
+    }
+  }
+}

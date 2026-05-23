@@ -22,6 +22,11 @@ atomic_facts:
     statement: "Standardized by ISO (C23 is the latest, 2024), C remains essential for systems programming, operating systems, and performance-critical applications where direct memory access and minimal runtime overhead are required."
     source_url: "https://www.iso.org/standard/82075.html"
     confidence: "high"
+  - id: "af-kb-2026-00077-extra"
+    statement: "Dennis Ritchie developed C at Bell Labs between 1969 and 1973, evolving from the B programming language to add types and structure for implementing the UNIX operating system."
+    source_title: "The Development of the C Language"
+    source_url: "https://dl.acm.org/doi/10.1145/154766.155363"
+    confidence: "high"
 
 completeness: 0.92
 
@@ -32,12 +37,19 @@ primary_sources:
     url: "https://www.iso.org/standard/82075.html"
     institution: "ISO"
   - title: "The C Programming Language (2nd Edition)"
-    type: "book"
+    type: "textbook"
     year: 1988
     url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
     institution: "Pearson"
+  - title: "The Development of the C Language"
+    type: "academic_paper"
+    year: 1993
+    url: "https://dl.acm.org/doi/10.1145/154766.155363"
+    institution: "ACM"
 
 ---
+
+
 
 
 

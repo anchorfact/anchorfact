@@ -105,7 +105,9 @@ function scoreConfidence(fm) {
 }
 
 /**
- * D1.5 AI transparency (max 4 points)
+ * D1.5 AI transparency — check generation_method in frontmatter (max 4 points).
+ * @param {object} fm - Parsed frontmatter
+ * @returns {number} 4 (human_only/ai_assisted/ai_generated_reviewed), 2 (unknown), 0 (ai_generated/blocked)
  */
 function scoreAiTransparency(fm) {
   const valid = ['human_only', 'ai_assisted', 'ai_generated_reviewed'];
@@ -115,7 +117,9 @@ function scoreAiTransparency(fm) {
 }
 
 /**
- * D2.1 Freshness — last_verified age (max 10 points)
+ * D2.1 Freshness — last_verified age in months (max 10 points).
+ * @param {object} fm - Parsed frontmatter
+ * @returns {number} 10 (≤3mo), 7 (≤6mo), 4 (≤12mo), 1 (≤24mo), 0 (older/missing)
  */
 function scoreFreshness(fm) {
   const lv = fm.last_verified;
@@ -131,7 +135,9 @@ function scoreFreshness(fm) {
 }
 
 /**
- * D2.2 Completeness score (max 5 points)
+ * D2.2 Completeness score — completeness field value (max 5 points).
+ * @param {object} fm - Parsed frontmatter
+ * @returns {number} 5 (≥0.9), 3 (≥0.8), 1 (≥0.6), 0 (missing/below)
  */
 function scoreCompleteness(fm) {
   const c = fm.completeness;
@@ -143,7 +149,9 @@ function scoreCompleteness(fm) {
 }
 
 /**
- * D2.3 Accuracy indicators — atomic_facts with source references (max 5 points)
+ * D2.3 Accuracy — number of atomic_facts with source_doi or source_url (max 5 points).
+ * @param {object} fm - Parsed frontmatter
+ * @returns {number} 5 (≥3 cited facts), 3 (≥1), 0 (none)
  */
 function scoreAccuracy(fm) {
   const facts = Array.isArray(fm.atomic_facts) ? fm.atomic_facts : [];
@@ -157,7 +165,10 @@ function scoreAccuracy(fm) {
 }
 
 /**
- * D2.4 Classification correctness (max 5 points)
+ * D2.4 Classification — category matches directory (max 5 points).
+ * @param {object} fm - Parsed frontmatter
+ * @param {string} filepath - Absolute file path
+ * @returns {number} 5 (matches or valid alias), 0 (mismatch/missing)
  */
 function scoreClassification(fm, filepath) {
   const dirName = path.relative(CONTENT_DIR, filepath).split(path.sep)[0].toLowerCase();
@@ -178,7 +189,9 @@ function scoreClassification(fm, filepath) {
 }
 
 /**
- * D2.5 No banned sources / Wikipedia check (max 5 points)
+ * D2.5 Banned sources — check all sources for wikipedia URLs/titles (max 5 points).
+ * @param {object} fm - Parsed frontmatter
+ * @returns {number} 5 (clean), 0 (found wikipedia source)
  */
 function scoreNoWikipedia(fm) {
   const all = getAllSources(fm);
@@ -192,7 +205,10 @@ function scoreNoWikipedia(fm) {
 }
 
 /**
- * D3.1 Primary source tier average (max 10 points)
+ * D3.1 Primary source tier average (max 10 points).
+ * Maps source type through SOURCE_TIER_SCORE lookup table.
+ * @param {object} fm - Parsed frontmatter
+ * @returns {number} 0-10, average tier of primary_sources mapped to output scale
  */
 function scoreSourceTier(fm) {
   const primary = getSourcesOfType(fm, 'primary').filter(s => typeof s === 'object');
@@ -211,7 +227,9 @@ function scoreSourceTier(fm) {
 }
 
 /**
- * D3.2 Secondary source relevance (max 5 points)
+ * D3.2 Secondary source relevance — institution or author presence (max 5 points).
+ * @param {object} fm - Parsed frontmatter
+ * @returns {number} 5 (≥80% qualified), 3 (≥50%), 1 (some), 0 (none)
  */
 function scoreSecondaryRelevance(fm) {
   const ss = getSourcesOfType(fm, 'secondary').filter(s => typeof s === 'object');
@@ -230,7 +248,9 @@ function scoreSecondaryRelevance(fm) {
 }
 
 /**
- * D3.3 Source recency — average year within 5 years (max 5 points)
+ * D3.3 Source recency — average publication year vs current year (max 5 points).
+ * @param {object} fm - Parsed frontmatter
+ * @returns {number} 5 (avg ≤5yr), 3 (≤10yr), 1 (≤20yr), 0 (older/none)
  */
 function scoreSourceRecency(fm) {
   const all = getAllSources(fm).filter(s => typeof s === 'object' && s.year);
@@ -252,7 +272,9 @@ function scoreSourceRecency(fm) {
 }
 
 /**
- * D3.4 Source institution diversity (max 5 points)
+ * D3.4 Institution diversity — unique institution count across all sources (max 5 points).
+ * @param {object} fm - Parsed frontmatter
+ * @returns {number} 5 (≥3 unique institutions), 2 (2), 1 (1), 0 (none)
  */
 function scoreInstitutionDiversity(fm) {
   const all = getAllSources(fm).filter(s => typeof s === 'object');
@@ -267,7 +289,9 @@ function scoreInstitutionDiversity(fm) {
 }
 
 /**
- * D4.1 Atomic facts with independent IDs & source refs (max 5 points)
+ * D4.1 Atomic facts — count of facts with id + source ref + statement (max 5 points).
+ * @param {object} fm - Parsed frontmatter
+ * @returns {number} 5 (≥3 detailed facts), 3 (≥1), 0 (none or missing fields)
  */
 function scoreAtomicFactsDetail(fm) {
   const facts = Array.isArray(fm.atomic_facts) ? fm.atomic_facts : [];
@@ -281,7 +305,9 @@ function scoreAtomicFactsDetail(fm) {
 }
 
 /**
- * D4.2 Known gaps documented (max 5 points)
+ * D4.2 Known gaps — non-empty known_gaps array present (max 5 points).
+ * @param {object} fm - Parsed frontmatter
+ * @returns {number} 5 (has non-empty gaps), 0 (missing/empty)
  */
 function scoreKnownGaps(fm) {
   const gaps = fm.known_gaps;
@@ -291,7 +317,9 @@ function scoreKnownGaps(fm) {
 }
 
 /**
- * D4.3 Disputed statements handled (max 5 points)
+ * D4.3 Disputed statements — non-empty disputed_statements array (max 5 points).
+ * @param {object} fm - Parsed frontmatter
+ * @returns {number} 5 (has disputed entries), 0 (missing/empty)
  */
 function scoreDisputedHandling(fm) {
   if (!fm.disputed_statements) return 0;
@@ -299,8 +327,22 @@ function scoreDisputedHandling(fm) {
   return 0;
 }
 
-// ─── Main Scoring Engine ────────────────────────────────────────
-
+/**
+ * Score a single article across all 4 dimensions.
+ *
+ * @param {string} filepath - Absolute path to the markdown file
+ * @param {string} content  - Raw file content (utf-8)
+ * @returns {{
+ *   file: string,
+ *   id: string,
+ *   domain: string,
+ *   total: number,
+ *   grade: 'A'|'B'|'C'|'D'|'F',
+ *   error?: string,
+ *   dimensions: { D1_technical: number, D2_quality: number, D3_authority: number, D4_readiness: number },
+ *   breakdown: Record<string, number>
+ * }} Scored article object
+ */
 function scoreArticle(filepath, content) {
   const rel = path.relative(CONTENT_DIR, filepath);
   const [fm, parseErr] = parseFrontmatter(content);

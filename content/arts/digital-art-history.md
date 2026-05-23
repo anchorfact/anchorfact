@@ -1,0 +1,74 @@
+---
+id: "digital-art-history"
+title: "Digital Art and New Media Art History"
+schema_type: "Article"
+category: "arts"
+language: "en"
+confidence: "high"
+last_verified: "2026-05-24"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
+
+atomic_facts:
+  - id: "af-digital-art-history-1"
+    statement: "The first digital art exhibition, \"Cybernetic Serendipity,\" was held at the ICA London in 1968, featuring computer-generated visual art, music, and poetry."
+    source_title: "Digital Art History"
+    confidence: "high"
+  - id: "af-digital-art-history-2"
+    statement: "NFT (Non-Fungible Token) art market exploded in 2021 with Beeple's \"Everydays\" selling for $69.3 million at Christie's, bringing digital art into the traditional auction world."
+    source_title: "Christie's Auction Records"
+    confidence: "high"
+  - id: "af-digital-art-history-extra"
+    statement: "The term \"New Media Art\" was established as an academic discipline in the 1990s, encompassing digital, internet, and interactive art practices that explore the cultural implications of emerging technologies."
+    source_title: "New Media Art: Practice and Context"
+    source_url: "https://mitpress.mit.edu/9780262543187/"
+    confidence: "high"
+
+completeness: 0.9
+
+primary_sources:
+  - title: "Digital Art (World of Art), 3rd Edition"
+    type: "textbook"
+    year: 2015
+    url: "https://thamesandhudson.com/digital-art-9780500204238"
+    institution: "Thames & Hudson"
+  - title: "A Philosophy of Computer Art"
+    type: "textbook"
+    year: 2010
+    url: "https://www.routledge.com/A-Philosophy-of-Computer-Art/Lopes/p/book/9780415547628"
+    institution: "Routledge"
+  - title: "New Media Art: Practice and Context"
+    type: "textbook"
+    year: 2022
+    url: "https://mitpress.mit.edu/9780262543187/"
+    institution: "MIT Press"
+
+known_gaps:
+  - "AI art generation ethics and copyright implications"
+  - "Virtual reality as artistic medium"
+
+disputed_statements:
+  - statement: "Whether AI-generated art constitutes authorship"
+
+---
+
+
+## TL;DR
+Digital art spans six decades of creative practice using computers as a medium — from early algorithmic drawings to contemporary AI-generated works and NFT marketplaces. It challenges traditional definitions of authorship, authenticity, and artistic value.
+
+## Early Pioneers (1960s-1970s)
+Frieder Nake, Georg Nees, and Manfred Mohr created some of the first algorithmic drawings using plotters and early computers. Their work asked fundamental questions: Can a machine create art? Is the programmer or the program the artist?
+
+## Net Art and Software Art (1990s-2000s)
+The internet spawned net.art — browser-based works by collectives like JODI that deconstructed web conventions. Software art treated code itself as artistic material, with works like Casey Reas's Process series generating infinite visual variations from simple rules.
+
+## Contemporary Practices
+- **Generative Art**: Artworks created by autonomous systems (Processing, p5.js)
+- **Data Visualization as Art**: Information transformation into aesthetic experience
+- **Interactive Installations**: Sensor-driven environments responding to viewers
+- **AI Art**: GANs, diffusion models (DALL-E, Midjourney) as co-creators
+- **Blockchain Art**: NFTs establishing provenance and scarcity for digital works
+
+## Critical Debates
+Digital art confronts traditional art world assumptions: infinite reproducibility challenges scarcity-based value; AI authorship questions human creative agency; immateriality complicates preservation and conservation practices.
