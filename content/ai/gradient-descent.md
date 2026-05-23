@@ -27,6 +27,32 @@ secondary_sources:
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
+  - title: "An overview of gradient descent optimization algorithms"
+    authors: ["Ruder, Sebastian"]
+    type: "blog_post"
+    year: 2017
+    url: "https://ruder.io/optimizing-gradient-descent/"
+    note: "Comprehensive survey with clear visualizations"
+  - title: "Why Momentum Really Works"
+    authors: ["Goh, Gabriel"]
+    type: "blog_post"
+    year: 2017
+    url: "https://distill.pub/2017/momentum/"
+    institution: "Distill.pub"
+    note: "Interactive visual explanation"
+  - title: "Why Momentum Really Works"
+    authors: ["Goh, Gabriel"]
+    type: "blog_post"
+    year: 2017
+    url: "https://distill.pub/2017/momentum/"
+    institution: "Distill.pub"
+    note: "Interactive visual explanation"
+  - title: "An overview of gradient descent optimization algorithms"
+    authors: ["Ruder, Sebastian"]
+    type: "blog_post"
+    year: 2017
+    url: "https://ruder.io/optimizing-gradient-descent/"
+    note: "Comprehensive survey with clear visualizations"
 ---
 
 ## TL;DR

@@ -32,6 +32,16 @@ secondary_sources:
     institution: "Apress"
 completeness: 0.85
 ai_citations: {last_citation_check: "2026-05-22"}
+  - title: "PostgreSQL 16 Documentation"
+    type: "documentation"
+    year: 2024
+    url: "https://www.postgresql.org/docs/16/"
+    institution: "PostgreSQL Global Development Group"
+  - title: "PostgreSQL 16 Documentation"
+    type: "documentation"
+    year: 2024
+    url: "https://www.postgresql.org/docs/16/"
+    institution: "PostgreSQL Global Development Group"
 ---
 
 ## TL;DR

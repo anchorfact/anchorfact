@@ -49,6 +49,28 @@ secondary_sources:
     institution: "Stanford University"
 ai_citations:
   last_citation_check: "2026-05-22"
+  - title: "Attention? Attention!"
+    authors: ["Weng, Lilian"]
+    type: "blog_post"
+    year: 2018
+    url: "https://lilianweng.github.io/posts/2018-06-24-attention/"
+    institution: "OpenAI"
+  - title: "The Illustrated Transformer"
+    authors: ["Alammar, Jay"]
+    type: "blog_post"
+    year: 2018
+    url: "https://jalammar.github.io/illustrated-transformer/"
+  - title: "The Illustrated Transformer"
+    authors: ["Alammar, Jay"]
+    type: "blog_post"
+    year: 2018
+    url: "https://jalammar.github.io/illustrated-transformer/"
+  - title: "Attention? Attention!"
+    authors: ["Weng, Lilian"]
+    type: "blog_post"
+    year: 2018
+    url: "https://lilianweng.github.io/posts/2018-06-24-attention/"
+    institution: "OpenAI"
 ---
 
 ## TL;DR

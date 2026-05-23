@@ -36,6 +36,18 @@ related_entities:
   - "entity:operating-systems"
 ai_citations:
   last_citation_check: "2026-05-22"
+  - title: "The Linux Programming Interface"
+    authors: ["Kerrisk, Michael"]
+    type: "textbook"
+    year: 2010
+    isbn: "978-1593272203"
+    institution: "No Starch Press"
+  - title: "The Linux Programming Interface"
+    authors: ["Kerrisk, Michael"]
+    type: "textbook"
+    year: 2010
+    isbn: "978-1593272203"
+    institution: "No Starch Press"
 ---
 
 ## TL;DR

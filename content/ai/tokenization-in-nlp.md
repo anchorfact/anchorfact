@@ -29,6 +29,18 @@ secondary_sources:
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
+  - title: "Let's build the GPT Tokenizer"
+    authors: ["Karpathy, Andrej"]
+    type: "video_tutorial"
+    year: 2024
+    url: "https://www.youtube.com/watch?v=zduSFxRajkE"
+    note: "Andrej Karpathy's detailed walkthrough of BPE tokenization"
+  - title: "Let's build the GPT Tokenizer"
+    authors: ["Karpathy, Andrej"]
+    type: "video_tutorial"
+    year: 2024
+    url: "https://www.youtube.com/watch?v=zduSFxRajkE"
+    note: "Andrej Karpathy's detailed walkthrough of BPE tokenization"
 ---
 
 ## TL;DR

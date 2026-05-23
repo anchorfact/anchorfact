@@ -33,6 +33,18 @@ related_entities:
   - "entity:linux"
 ai_citations:
   last_citation_check: "2026-05-22"
+  - title: "Pro Git (2nd ed.)"
+    authors: ["Chacon, Scott", "Straub, Ben"]
+    type: "textbook"
+    year: 2014
+    url: "https://git-scm.com/book/en/v2"
+    isbn: "978-1484200773"
+  - title: "Pro Git (2nd ed.)"
+    authors: ["Chacon, Scott", "Straub, Ben"]
+    type: "textbook"
+    year: 2014
+    url: "https://git-scm.com/book/en/v2"
+    isbn: "978-1484200773"
 ---
 
 ## TL;DR

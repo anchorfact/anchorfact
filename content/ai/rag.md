@@ -45,6 +45,28 @@ secondary_sources:
     url: "https://docs.llamaindex.ai/"
 ai_citations:
   last_citation_check: "2026-05-22"
+  - title: "GraphRAG: Unlocking LLM Discovery on Narrative Private Data"
+    authors: ["Microsoft Research"]
+    type: "blog_post"
+    year: 2024
+    url: "https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/"
+    institution: "Microsoft Research"
+  - title: "Building RAG-based LLM Applications for Production"
+    authors: ["Garg, Anyscale"]
+    type: "blog_post"
+    year: 2023
+    url: "https://www.anyscale.com/blog/a-comprehensive-guide-for-building-rag-based-llm-applications-part-1"
+  - title: "Building RAG-based LLM Applications for Production"
+    authors: ["Garg, Anyscale"]
+    type: "blog_post"
+    year: 2023
+    url: "https://www.anyscale.com/blog/a-comprehensive-guide-for-building-rag-based-llm-applications-part-1"
+  - title: "GraphRAG: Unlocking LLM Discovery on Narrative Private Data"
+    authors: ["Microsoft Research"]
+    type: "blog_post"
+    year: 2024
+    url: "https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/"
+    institution: "Microsoft Research"
 ---
 
 ## TL;DR

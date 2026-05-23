@@ -48,6 +48,30 @@ secondary_sources:
     institution: "OpenAI"
 ai_citations:
   last_citation_check: "2026-05-22"
+  - title: "What are Diffusion Models?"
+    authors: ["Weng, Lilian"]
+    type: "blog_post"
+    year: 2021
+    url: "https://lilianweng.github.io/posts/2021-07-11-diffusion-models/"
+    institution: "OpenAI"
+  - title: "The Annotated Diffusion Model"
+    authors: ["Rogozhnikov, Alex"]
+    type: "blog_post"
+    year: 2022
+    url: "https://huggingface.co/blog/annotated-diffusion"
+    institution: "Hugging Face"
+  - title: "The Annotated Diffusion Model"
+    authors: ["Rogozhnikov, Alex"]
+    type: "blog_post"
+    year: 2022
+    url: "https://huggingface.co/blog/annotated-diffusion"
+    institution: "Hugging Face"
+  - title: "What are Diffusion Models?"
+    authors: ["Weng, Lilian"]
+    type: "blog_post"
+    year: 2021
+    url: "https://lilianweng.github.io/posts/2021-07-11-diffusion-models/"
+    institution: "OpenAI"
 ---
 
 ## TL;DR

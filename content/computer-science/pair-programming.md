@@ -18,7 +18,7 @@ completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 primary_sources:
-- title: "ACM Digital Library"
+  - title: "ACM Digital Library"
     type: "repository"
     year: 2026
     url: "https://dl.acm.org/"

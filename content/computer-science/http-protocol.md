@@ -57,6 +57,26 @@ secondary_sources:
     note: "Comprehensive technical guide by the creator of curl"
 ai_citations:
   last_citation_check: "2026-05-22"
+  - title: "HTTP/2 (RFC 9113)"
+    type: "standard"
+    year: 2022
+    url: "https://www.rfc-editor.org/rfc/rfc9113"
+    institution: "IETF"
+  - title: "HTTP/3 (RFC 9114)"
+    type: "standard"
+    year: 2022
+    url: "https://www.rfc-editor.org/rfc/rfc9114"
+    institution: "IETF"
+  - title: "HTTP/3 (RFC 9114)"
+    type: "standard"
+    year: 2022
+    url: "https://www.rfc-editor.org/rfc/rfc9114"
+    institution: "IETF"
+  - title: "HTTP/2 (RFC 9113)"
+    type: "standard"
+    year: 2022
+    url: "https://www.rfc-editor.org/rfc/rfc9113"
+    institution: "IETF"
 ---
 
 ## TL;DR

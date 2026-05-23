@@ -28,6 +28,32 @@ secondary_sources:
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
+  - title: "Deep Residual Learning for Image Recognition (ResNet)"
+    authors: ["He, Kaiming", "Zhang, Xiangyu", "Ren, Shaoqing", "Sun, Jian"]
+    type: "academic_paper"
+    year: 2016
+    doi: "10.48550/arXiv.1512.03385"
+    url: "https://arxiv.org/abs/1512.03385"
+    institution: "Microsoft Research"
+  - title: "You Only Look Once: Unified, Real-Time Object Detection (YOLO)"
+    authors: ["Redmon, Joseph", "Divvala, Santosh", "Girshick, Ross", "Farhadi, Ali"]
+    type: "academic_paper"
+    year: 2016
+    doi: "10.48550/arXiv.1506.02640"
+    url: "https://arxiv.org/abs/1506.02640"
+  - title: "You Only Look Once: Unified, Real-Time Object Detection (YOLO)"
+    authors: ["Redmon, Joseph", "Divvala, Santosh", "Girshick, Ross", "Farhadi, Ali"]
+    type: "academic_paper"
+    year: 2016
+    doi: "10.48550/arXiv.1506.02640"
+    url: "https://arxiv.org/abs/1506.02640"
+  - title: "Deep Residual Learning for Image Recognition (ResNet)"
+    authors: ["He, Kaiming", "Zhang, Xiangyu", "Ren, Shaoqing", "Sun, Jian"]
+    type: "academic_paper"
+    year: 2016
+    doi: "10.48550/arXiv.1512.03385"
+    url: "https://arxiv.org/abs/1512.03385"
+    institution: "Microsoft Research"
 ---
 
 ## TL;DR

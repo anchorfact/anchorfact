@@ -18,7 +18,7 @@ completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 primary_sources:
-- title: "ACM Digital Library"
+  - title: "ACM Digital Library"
     type: "repository"
     year: 2026
     url: "https://dl.acm.org/"
@@ -29,6 +29,18 @@ secondary_sources:
     year: 2026
     url: "https://dl.acm.org/"
     institution: "ACM"
+  - title: "Mastering Regular Expressions (3rd ed.)"
+    authors: ["Friedl, Jeffrey E.F."]
+    type: "textbook"
+    year: 2006
+    isbn: "978-0596528126"
+    institution: "O'Reilly Media"
+  - title: "Mastering Regular Expressions (3rd ed.)"
+    authors: ["Friedl, Jeffrey E.F."]
+    type: "textbook"
+    year: 2006
+    isbn: "978-0596528126"
+    institution: "O'Reilly Media"
 ---
 
 ## TL;DR

@@ -58,6 +58,32 @@ secondary_sources:
     note: "The original scaling laws paper that established the power-law relationship between loss, compute, and model size"
 ai_citations:
   last_citation_check: "2026-05-22"
+  - title: "How to Train Really Large Models on Many GPUs?"
+    authors: ["Weng, Lilian"]
+    type: "blog_post"
+    year: 2021
+    url: "https://lilianweng.github.io/posts/2021-09-25-train-large/"
+    institution: "OpenAI"
+  - title: "LLaMA: Open and Efficient Foundation Language Models"
+    authors: ["Touvron, Hugo", "Lavril, Thibaut", "Izacard, Gautier", "Martinet, Xavier", "Lachaux, Marie-Anne", "Lacroix, Timothée", "Rozière, Baptiste", "Goyal, Naman", "Hambro, Eric", "Azhar, Faisal", "Rodriguez, Aurelien", "Joulin, Armand", "Grave, Edouard", "Lample, Guillaume"]
+    type: "academic_paper"
+    year: 2023
+    doi: "10.48550/arXiv.2302.13971"
+    url: "https://arxiv.org/abs/2302.13971"
+    institution: "Meta AI"
+  - title: "LLaMA: Open and Efficient Foundation Language Models"
+    authors: ["Touvron, Hugo", "Lavril, Thibaut", "Izacard, Gautier", "Martinet, Xavier", "Lachaux, Marie-Anne", "Lacroix, Timothée", "Rozière, Baptiste", "Goyal, Naman", "Hambro, Eric", "Azhar, Faisal", "Rodriguez, Aurelien", "Joulin, Armand", "Grave, Edouard", "Lample, Guillaume"]
+    type: "academic_paper"
+    year: 2023
+    doi: "10.48550/arXiv.2302.13971"
+    url: "https://arxiv.org/abs/2302.13971"
+    institution: "Meta AI"
+  - title: "How to Train Really Large Models on Many GPUs?"
+    authors: ["Weng, Lilian"]
+    type: "blog_post"
+    year: 2021
+    url: "https://lilianweng.github.io/posts/2021-09-25-train-large/"
+    institution: "OpenAI"
 ---
 
 ## TL;DR

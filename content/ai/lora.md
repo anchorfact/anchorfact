@@ -46,6 +46,28 @@ related_entities:
   - "entity:fine-tuning"
 ai_citations:
   last_citation_check: "2026-05-22"
+  - title: "Practical Tips for Finetuning LLMs Using LoRA"
+    authors: ["Raschka, Sebastian"]
+    type: "blog_post"
+    year: 2023
+    url: "https://magazine.sebastianraschka.com/p/practical-tips-for-finetuning-llms"
+    note: "Practical guide by the author of \"Build a Large Language Model\""
+  - title: "LoRA: A Python Library for LoRA (Hugging Face PEFT)"
+    type: "documentation"
+    year: 2025
+    url: "https://huggingface.co/docs/peft/en/developer_guides/lora"
+    institution: "Hugging Face"
+  - title: "LoRA: A Python Library for LoRA (Hugging Face PEFT)"
+    type: "documentation"
+    year: 2025
+    url: "https://huggingface.co/docs/peft/en/developer_guides/lora"
+    institution: "Hugging Face"
+  - title: "Practical Tips for Finetuning LLMs Using LoRA"
+    authors: ["Raschka, Sebastian"]
+    type: "blog_post"
+    year: 2023
+    url: "https://magazine.sebastianraschka.com/p/practical-tips-for-finetuning-llms"
+    note: "Practical guide by the author of \"Build a Large Language Model\""
 ---
 
 ## TL;DR

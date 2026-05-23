@@ -18,7 +18,7 @@ completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 primary_sources:
-- title: "GDC Vault"
+  - title: "GDC Vault"
     type: "conference"
     year: 2026
     url: "https://www.gdconf.com/"

@@ -27,6 +27,20 @@ secondary_sources:
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
+  - title: "The Mythos of Model Interpretability"
+    authors: ["Lipton, Zachary C."]
+    type: "academic_paper"
+    year: 2018
+    doi: "10.48550/arXiv.1606.03490"
+    url: "https://arxiv.org/abs/1606.03490"
+    institution: "Carnegie Mellon University"
+  - title: "The Mythos of Model Interpretability"
+    authors: ["Lipton, Zachary C."]
+    type: "academic_paper"
+    year: 2018
+    doi: "10.48550/arXiv.1606.03490"
+    url: "https://arxiv.org/abs/1606.03490"
+    institution: "Carnegie Mellon University"
 ---
 
 ## TL;DR

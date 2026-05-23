@@ -28,6 +28,32 @@ secondary_sources:
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
+  - title: "Reinforcement Learning: An Introduction (2nd ed.)"
+    authors: ["Sutton, Richard S.", "Barto, Andrew G."]
+    type: "textbook"
+    year: 2018
+    url: "http://incompleteideas.net/book/the-book-2nd.html"
+    isbn: "978-0262039246"
+    institution: "MIT Press"
+  - title: "Spinning Up in Deep RL"
+    authors: ["Achiam, Joshua"]
+    type: "educational_resource"
+    year: 2018
+    url: "https://spinningup.openai.com/"
+    institution: "OpenAI"
+  - title: "Spinning Up in Deep RL"
+    authors: ["Achiam, Joshua"]
+    type: "educational_resource"
+    year: 2018
+    url: "https://spinningup.openai.com/"
+    institution: "OpenAI"
+  - title: "Reinforcement Learning: An Introduction (2nd ed.)"
+    authors: ["Sutton, Richard S.", "Barto, Andrew G."]
+    type: "textbook"
+    year: 2018
+    url: "http://incompleteideas.net/book/the-book-2nd.html"
+    isbn: "978-0262039246"
+    institution: "MIT Press"
 ---
 
 ## TL;DR

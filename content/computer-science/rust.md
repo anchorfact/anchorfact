@@ -22,7 +22,7 @@ related_entities:
 ai_citations:
   last_citation_check: "2026-05-22"
 primary_sources:
-- title: "ACM Digital Library"
+  - title: "ACM Digital Library"
     type: "repository"
     year: 2026
     url: "https://dl.acm.org/"
@@ -33,6 +33,18 @@ secondary_sources:
     year: 2026
     url: "https://dl.acm.org/"
     institution: "ACM"
+  - title: "The Rust Programming Language"
+    authors: ["Klabnik, Steve", "Nichols, Carol"]
+    type: "textbook"
+    year: 2023
+    url: "https://doc.rust-lang.org/book/"
+    institution: "Rust Foundation"
+  - title: "The Rust Programming Language"
+    authors: ["Klabnik, Steve", "Nichols, Carol"]
+    type: "textbook"
+    year: 2023
+    url: "https://doc.rust-lang.org/book/"
+    institution: "Rust Foundation"
 ---
 
 ## TL;DR

@@ -18,7 +18,7 @@ completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
 primary_sources:
-- title: "ACM Digital Library"
+  - title: "ACM Digital Library"
     type: "repository"
     year: 2026
     url: "https://dl.acm.org/"
@@ -29,6 +29,20 @@ secondary_sources:
     year: 2026
     url: "https://dl.acm.org/"
     institution: "ACM"
+  - title: "Structure and Interpretation of Computer Programs (2nd ed.)"
+    authors: ["Abelson, Harold", "Sussman, Gerald Jay"]
+    type: "textbook"
+    year: 1996
+    url: "https://mitpress.mit.edu/sicp/"
+    isbn: "978-0262510875"
+    institution: "MIT Press"
+  - title: "Structure and Interpretation of Computer Programs (2nd ed.)"
+    authors: ["Abelson, Harold", "Sussman, Gerald Jay"]
+    type: "textbook"
+    year: 1996
+    url: "https://mitpress.mit.edu/sicp/"
+    isbn: "978-0262510875"
+    institution: "MIT Press"
 ---
 
 ## TL;DR

@@ -25,6 +25,20 @@ secondary_sources:
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
+  - title: "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift"
+    authors: ["Ioffe, Sergey", "Szegedy, Christian"]
+    type: "academic_paper"
+    year: 2015
+    doi: "10.48550/arXiv.1502.03167"
+    url: "https://arxiv.org/abs/1502.03167"
+    institution: "Google"
+  - title: "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift"
+    authors: ["Ioffe, Sergey", "Szegedy, Christian"]
+    type: "academic_paper"
+    year: 2015
+    doi: "10.48550/arXiv.1502.03167"
+    url: "https://arxiv.org/abs/1502.03167"
+    institution: "Google"
 ---
 
 ## TL;DR

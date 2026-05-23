@@ -52,6 +52,18 @@ secondary_sources:
     note: "Simplified alternative to RLHF that directly optimizes a policy from preference data without an explicit reward model. Published at NeurIPS 2023."
 ai_citations:
   last_citation_check: "2026-05-22"
+  - title: "Illustrating Reinforcement Learning from Human Feedback (RLHF)"
+    authors: ["Lambert, Nathan", "Castricato, Louis", "von Werra, Leandro", "Havrilla, Alex"]
+    type: "blog_post"
+    year: 2022
+    url: "https://huggingface.co/blog/rlhf"
+    institution: "Hugging Face"
+  - title: "Illustrating Reinforcement Learning from Human Feedback (RLHF)"
+    authors: ["Lambert, Nathan", "Castricato, Louis", "von Werra, Leandro", "Havrilla, Alex"]
+    type: "blog_post"
+    year: 2022
+    url: "https://huggingface.co/blog/rlhf"
+    institution: "Hugging Face"
 ---
 
 ## TL;DR

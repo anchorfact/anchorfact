@@ -27,6 +27,18 @@ secondary_sources:
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
+  - title: "GAN Lab: An Interactive Visualization of GANs"
+    authors: ["Kahng, M.", "Andrews, N.", "Kalro, A.", "Chau, D.H."]
+    type: "interactive"
+    year: 2018
+    url: "https://poloclub.github.io/ganlab/"
+    institution: "Georgia Tech"
+  - title: "GAN Lab: An Interactive Visualization of GANs"
+    authors: ["Kahng, M.", "Andrews, N.", "Kalro, A.", "Chau, D.H."]
+    type: "interactive"
+    year: 2018
+    url: "https://poloclub.github.io/ganlab/"
+    institution: "Georgia Tech"
 ---
 
 ## TL;DR

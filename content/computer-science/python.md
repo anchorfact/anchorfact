@@ -33,6 +33,28 @@ related_entities:
   - "entity:programming-languages"
 ai_citations:
   last_citation_check: "2026-05-22"
+  - title: "Python 3 Documentation"
+    type: "documentation"
+    year: 2025
+    url: "https://docs.python.org/3/"
+    institution: "Python Software Foundation"
+  - title: "Fluent Python (2nd ed.)"
+    authors: ["Ramalho, Luciano"]
+    type: "textbook"
+    year: 2022
+    isbn: "978-1492056355"
+    institution: "O'Reilly Media"
+  - title: "Fluent Python (2nd ed.)"
+    authors: ["Ramalho, Luciano"]
+    type: "textbook"
+    year: 2022
+    isbn: "978-1492056355"
+    institution: "O'Reilly Media"
+  - title: "Python 3 Documentation"
+    type: "documentation"
+    year: 2025
+    url: "https://docs.python.org/3/"
+    institution: "Python Software Foundation"
 ---
 
 ## TL;DR

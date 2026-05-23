@@ -27,6 +27,20 @@ secondary_sources:
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
+  - title: "How transferable are features in deep neural networks?"
+    authors: ["Yosinski, Jason", "Clune, Jeff", "Bengio, Yoshua", "Lipson, Hod"]
+    type: "academic_paper"
+    year: 2014
+    doi: "10.48550/arXiv.1411.1792"
+    url: "https://arxiv.org/abs/1411.1792"
+    institution: "Cornell University"
+  - title: "How transferable are features in deep neural networks?"
+    authors: ["Yosinski, Jason", "Clune, Jeff", "Bengio, Yoshua", "Lipson, Hod"]
+    type: "academic_paper"
+    year: 2014
+    doi: "10.48550/arXiv.1411.1792"
+    url: "https://arxiv.org/abs/1411.1792"
+    institution: "Cornell University"
 ---
 
 ## TL;DR
