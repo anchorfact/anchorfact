@@ -70,3 +70,34 @@ jobs:
       - name: Check URL Reachability
         run: node scripts/check-urls.cjs
         continue-on-error: true  # Don't block on transient network issues
+
+  quality-score:
+    name: Quality Scoring (0-100)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install js-yaml
+        run: npm install --no-save js-yaml
+
+      - name: Compute quality scores
+        run: node scripts/quality-score.cjs --json > quality-report.json
+
+      - name: Upload quality report
+        uses: actions/upload-artifact@v4
+        with:
+          name: quality-report
+          path: quality-report.json
+
+      - name: Quality gate (avg ≥ 60)
+        run: |
+          AVG=$(node -e "const r=require('./quality-report.json');console.log(Math.round(r.average_score))")
+          echo "Average quality score: $AVG/100"
+          if [ "$AVG" -lt 60 ]; then
+            echo "::warning::Quality score below threshold ($AVG/100 < 60)"
+          fi

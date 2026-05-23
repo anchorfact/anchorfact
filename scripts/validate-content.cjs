@@ -22,7 +22,25 @@ const REQUIRED_FIELDS = [
 ];
 
 const VALID_CONFIDENCE = ['high', 'medium', 'low', 'disputed'];
-const ID_PATTERN = /^kb-\d{4}-\d{5}$/;
+const ID_PATTERN = /^kb-\w{2,6}-\d{3,5}$/;
+
+// ── New: Classification aliases for cross-domain verification ──
+const CLASSIFICATION_ALIASES = {
+  'computer-science': ['cs', 'computer_science', 'compsci'],
+  'game-development': ['gamedev', 'game_dev', 'game'],
+  'self-improvement': ['self_improvement', 'selfhelp', 'productivity'],
+};
+
+// Banned source patterns (Wikipedia, non-original sources)
+const BANNED_SOURCE_PATTERNS = [
+  { field: 'url',   pattern: /wikipedia\.org/i, label: 'Wikipedia' },
+  { field: 'title', pattern: /wikipedia/i,      label: 'Wikipedia' },
+  { field: 'type',  pattern: /^wiki$/i,          label: 'Wiki type' },
+];
+
+// Freshness thresholds (months)
+const STALE_WARN_MONTHS = 6;
+const STALE_ERROR_MONTHS = 12;
 
 const REQUIRED_SECTIONS = [
   { heading: /^##\s*TL[;]?DR/i, name: 'TL;DR' },
@@ -117,7 +135,7 @@ function validate(filepath) {
 
   // ── Value validation ──
   if (fm.id && !ID_PATTERN.test(fm.id)) {
-    add('errors', rel, `Invalid id: "${fm.id}" (expected kb-YYYY-XXXXX)`);
+    add('errors', rel, `Invalid id: "${fm.id}" (expected kb-YYYY-XXXXX or kb-XX-XXX)`);
   }
   if (fm.confidence && !VALID_CONFIDENCE.includes(fm.confidence)) {
     add('errors', rel, `Invalid confidence: "${fm.confidence}"`);
@@ -151,6 +169,56 @@ function validate(filepath) {
   // ── Generation method check ──
   if (fm.generation_method === 'ai_generated') {
     add('errors', rel, 'ai_generated content is NOT allowed for publication');
+  }
+  if (!fm.generation_method) {
+    add('errors', rel, 'generation_method must be explicitly labeled (human_only / ai_assisted / ai_generated_reviewed)');
+  }
+
+  // ── NEW: Classification correctness ──
+  if (fm.category) {
+    const dirName = rel.split(path.sep)[0].toLowerCase();
+    const fmCat = fm.category.toLowerCase();
+    const aliases = CLASSIFICATION_ALIASES[dirName] || [];
+    const isMatch = fmCat === dirName || fmCat.startsWith(dirName + '/') || fmCat.startsWith(dirName + '-') || aliases.includes(fmCat);
+    if (!isMatch) {
+      add('warnings', rel, `Classification mismatch: category="${fm.category}" but file is under "${dirName}/"`);
+    }
+  }
+
+  // ── NEW: Banned source detection (Wikipedia) ──
+  const allSourcesToCheck = [
+    ...(Array.isArray(fm.primary_sources) ? fm.primary_sources : []),
+    ...(Array.isArray(fm.secondary_sources) ? fm.secondary_sources : []),
+  ];
+  for (const src of allSourcesToCheck) {
+    if (typeof src !== 'object') continue;
+    for (const { field, pattern, label } of BANNED_SOURCE_PATTERNS) {
+      const val = src[field];
+      if (typeof val === 'string' && pattern.test(val)) {
+        add('errors', rel, `Banned source (${label}): "${val.substring(0, 80)}" — use original/primary sources instead`);
+      }
+    }
+  }
+
+  // ── NEW: Freshness check ──
+  if (fm.last_verified) {
+    const verifiedDate = new Date(fm.last_verified);
+    if (!isNaN(verifiedDate.getTime())) {
+      const monthsOld = (Date.now() - verifiedDate.getTime()) / (1000 * 60 * 60 * 24 * 30.4375);
+      if (monthsOld > STALE_ERROR_MONTHS) {
+        add('errors', rel, `Content stale: last_verified is ${monthsOld.toFixed(0)} months ago (threshold: ${STALE_ERROR_MONTHS} months)`);
+      } else if (monthsOld > STALE_WARN_MONTHS) {
+        add('warnings', rel, `Content aging: last_verified is ${monthsOld.toFixed(0)} months ago (consider reviewing)`);
+      }
+    }
+  }
+
+  // ── NEW: Source verifiability (URL/DOI coverage) ──
+  const primaryWithUrl = sources.filter(s => typeof s === 'object' && (s.url || s.doi)).length;
+  if (sources.length > 0 && primaryWithUrl === 0) {
+    add('errors', rel, 'No primary sources have URL or DOI — source unverifiable');
+  } else if (sources.length > 0 && primaryWithUrl < sources.length) {
+    add('warnings', rel, `Only ${primaryWithUrl}/${sources.length} primary sources have URL/DOI`);
   }
 
   results.articles.push({
