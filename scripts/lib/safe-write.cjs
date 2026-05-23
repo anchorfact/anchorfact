@@ -35,10 +35,12 @@ function writeFileAtomic(filepath, content, opts = {}) {
   try {
     // Write to temp
     fs.writeFileSync(tmp, content, encoding);
-    // Ensure it's flushed to disk
-    const fd = fs.openSync(tmp, 'r');
-    fs.fsyncSync(fd);
-    fs.closeSync(fd);
+    // Ensure it's flushed to disk (skip fsync on Windows — not supported on read-only fds)
+    if (process.platform !== 'win32') {
+      const fd = fs.openSync(tmp, 'r');
+      fs.fsyncSync(fd);
+      fs.closeSync(fd);
+    }
     // Atomic rename (same filesystem = instant)
     fs.renameSync(tmp, filepath);
     return true;
