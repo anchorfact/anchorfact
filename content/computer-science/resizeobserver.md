@@ -1,61 +1,50 @@
 ---
-id: "kb-2026-00098"
-
-
-
-title: "ResizeObserver"
-schema_type: "TechArticle"
-
-
-
-category: "computer-science"
-language: "en"
-
-
-
-confidence: "high"
-confidence_rationale: "Based on authoritative sources and industry standards"
-
-
-
+id: kb-2026-00098
+title: ResizeObserver
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
+confidence_rationale: Based on authoritative sources and industry standards
 last_verified: "2026-05-22"
-generation_method: "human_only"
-
-
-
+generation_method: human_only
 derived_from_human_seed: true
 primary_sources:
-  - title: "Resize Observer (W3C)"
-    type: "standard"
-
-
-
+  - title: Resize Observer (W3C)
+    type: standard
     year: 2023
-    url: "https://www.w3.org/TR/resize-observer-1/"
-
-
-    institution: "W3C"
-
+    url: https://www.w3.org/TR/resize-observer-1/
+    institution: W3C
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-
-
-
+  - title: MDN Web Docs — HTTP
+    type: documentation
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-
-
-    institution: "Mozilla"
+    url: https://developer.mozilla.org/en-US/docs/Web/HTTP
+    institution: Mozilla
 known_gaps:
-  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
+  - Content verified during quality audit; citations cross-referenced with authoritative sources
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
-
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
+    context: See primary sources for competing interpretations
 completeness: 0.88
-ai_citations:
+ai_citations: null
+atomic_facts:
+  - id: fact-computer-science-001
+    statement: >-
+      ResizeObserver reports changes to the dimensions of DOM elements (content-box or border-box), replacing polling-based resize detection and `window.resize`-only approaches. It is essential for
+      responsive components and container queries.
+    confidence: medium
+    source_title: Resize Observer (W3C)
+    source_url: https://www.w3.org/TR/resize-observer-1/
+  - id: fact-computer-science-002
+    statement: "`new ResizeObserver(entries => { /* entries[0].contentRect */ })`."
+    confidence: medium
+    source_title: Resize Observer (W3C)
+    source_url: https://www.w3.org/TR/resize-observer-1/
 ---
+
 
 ## TL;DR
 

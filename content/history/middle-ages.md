@@ -1,48 +1,32 @@
 ---
-id: "kb-2026-00353"
-
-
-
-title: "Middle Ages"
-schema_type: "TechArticle"
-
-
-
-category: "history"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00353
+title: Middle Ages
+schema_type: TechArticle
+category: history
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
 primary_sources:
   - title: "A Distant Mirror: The Calamitous 14th Century (Barbara Tuchman)"
-    type: "book"
-
-
-
+    type: book
     year: 1978
-    url: "https://www.penguinrandomhouse.com/books/56336/a-distant-mirror-by-barbara-w-tuchman/"
-
-
-    institution: "Knopf"
+    url: https://www.penguinrandomhouse.com/books/56336/a-distant-mirror-by-barbara-w-tuchman/
+    institution: Knopf
 secondary_sources:
-  - title: "The Civilization of the Renaissance in Italy"
-    type: "book"
-
-
-
+  - title: The Civilization of the Renaissance in Italy
+    type: book
     year: 1860
-    url: "https://www.britannica.com/topic/The-Civilization-of-the-Renaissance-in-Italy"
-
-
-    institution: "Jacob Burckhardt"
+    url: https://www.britannica.com/topic/The-Civilization-of-the-Renaissance-in-Italy
+    institution: Jacob Burckhardt
+  - title: The Penguin History of the World (J.M. Roberts)
+    type: textbook
+    year: 2014
+    url: https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
+    institution: Penguin Books
 atomic_facts:
   - id: fact-history-01
     statement: The Middle Ages were the period between the fall of the Western Roman Empire and the Renaissance
@@ -51,22 +35,21 @@ atomic_facts:
     confidence: high
   - id: fact-history-02
     statement: "High Middle Ages : population growth, trade revival, Gothic cathedrals"
-
-
     source_title: "A Distant Mirror: The Calamitous 14th Century (Barbara Tuchman)"
     source_url: https://www.penguinrandomhouse.com/books/56336/a-distant-mirror-by-barbara-w-tuchman/
     confidence: high
-  
 completeness: 0.88
 known_gaps:
-  - "Statistics and data cited are from 1978 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - Statistics and data cited are from 1978 and earlier; more recent data may have become available since publication
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The characterization of the Middle Ages as a 'Dark Age' is rejected by most modern historians, who emphasize intellectual, artistic, and technological continuity, though debate continues about the pace of progress relative to other periods"
-    context: "See primary sources for competing interpretations"
-
-ai_citations:
+  - statement: >-
+      The characterization of the Middle Ages as a 'Dark Age' is rejected by most modern historians, who emphasize intellectual, artistic, and technological continuity, though debate continues about
+      the pace of progress relative to other periods
+    context: See primary sources for competing interpretations
+ai_citations: null
 ---
+
 
 ## TL;DR
 

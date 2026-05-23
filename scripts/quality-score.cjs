@@ -36,8 +36,9 @@ const SOURCE_TIER_SCORE = {
   'conference':              9,  // Conference proceedings
   'survey_paper':           10,  // Literature survey / review
   'textbook':                8,  // A: authoritative textbook
-  'textbook':                8,
   'reference':               7,  // Reference work
+  'literature':              7,  // Classic literature (primary source)
+  'knowledge_base':          5,  // Curated knowledge base
   'official_report':         7,  // B: government/org report
   'technical_report':        7,
   'report':                  6,  // Generic report

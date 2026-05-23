@@ -1,40 +1,29 @@
 ---
-id:"kb-2026-00458"
-title:"Arctic and Antarctic"
-schema_type:"TechArticle"
-category:"geography"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
-primary_sources:
-  - title:"The Arctic: A Guide to Coastal Wildlife (Tony Soper)"
-    type:"book"
-    year:2019
-    url:"https://www.bradtguides.com/product/the-arctic/"
-    institution:"Bradt Travel Guides"
+id: ""
+title: ""
+schema_type: TechArticle
+category: ""
+language: en
+confidence: high
+last_verified: ""
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
+derived_from_human_seed: true
 secondary_sources:
-  - title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
-    authors: ["Lewis", "Perez", "Piktus"]
-    type: "academic_paper"
-    year: 2020
-    doi: "10.48550/arXiv.2005.11401"
-    url: "https://arxiv.org/abs/2005.11401"completeness: 0.88
-ai_citations:
-  last_citation_check:"2026-05-22"
-  - title: "CIA World Factbook"
-    type: "database"
-    year: 2025
-    url: "https://www.cia.gov/the-world-factbook/"
-    institution: "Central Intelligence Agency"
-  - title: "National Geographic Atlas"
-    type: "reference"
+  - title: National Geographic Atlas of the World, 11th Ed
+    type: reference
     year: 2019
-    url: "https://www.nationalgeographic.com/maps/atlas/"
-    institution: "National Geographic"
+    url: https://www.nationalgeographic.com/books/atlas/
+    institution: National Geographic Society
+  - title: Physical Geography (Petersen & Sack, 12th Ed)
+    type: textbook
+    year: 2021
+    url: https://www.cengage.com/c/physical-geography-12e-petersen-sack-gabler/9780357142448/
+    institution: Cengage Learning
 ---
+
+
 
 ## TL;DR
 

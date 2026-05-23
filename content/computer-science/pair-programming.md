@@ -1,62 +1,49 @@
 ---
-id: "kb-2026-00238"
-
-
-
-title: "Pair Programming"
-schema_type: "TechArticle"
-
-
-
-category: "computer-science"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00238
+title: Pair Programming
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "human_only"
-ai_models: ["claude-opus"]
+generation_method: human_only
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-
-
 disputed_statements:
-  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
-    confidence: "medium"
-
-
+  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
+    confidence: medium
 known_gaps:
-  - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
-
+  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
 completeness: 0.88
-ai_citations:
-
+ai_citations: null
 primary_sources:
-  - title: "ACM Digital Library"
-    type: "repository"
-
-
-
+  - title: ACM Digital Library
+    type: repository
     year: 2026
-    url: "https://dl.acm.org/"
-
-
-    institution: "ACM"
+    url: https://dl.acm.org/
+    institution: ACM
 secondary_sources:
-  - title: "ACM Digital Library"
-    type: "repository"
-
-
-
+  - title: ACM Digital Library
+    type: repository
     year: 2026
-    url: "https://dl.acm.org/"
-
-
-    institution: "ACM"
+    url: https://dl.acm.org/
+    institution: ACM
+atomic_facts:
+  - id: fact-computer-science-001
+    statement: >-
+      Pair programming (part of XP, Kent Beck) is two developers working at one computer: Driver (writes code) + Navigator (reviews each line, thinks strategically). Roles switch frequently. Studies
+      show 15% more effort but 15% fewer defects — net quality improvement. Extremely effective for complex problems and knowledge transfer.
+    confidence: medium
+    source_title: ACM Digital Library
+    source_url: https://dl.acm.org/
+  - id: fact-computer-science-002
+    statement: "Not effective for: simple/mechanical tasks, when developers can't get along."
+    confidence: medium
+    source_title: ACM Digital Library
+    source_url: https://dl.acm.org/
 ---
+
 
 ## TL;DR
 

@@ -1,66 +1,55 @@
 ---
-id: "kb-2026-00299"
-
-
-
-title: "Deno"
-schema_type: "TechArticle"
-
-
-
-category: "computer-science"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00299
+title: Deno
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
 primary_sources:
-  - title: "Deno Documentation"
-    type: "documentation"
-
-
-
+  - title: Deno Documentation
+    type: documentation
     year: 2026
-    url: "https://docs.deno.com/"
-
-
-    institution: "Deno Land"
-    note: "Secure JS/TS runtime by Node.js creator Ryan Dahl. Built in Rust on V8."
-
-
-
+    url: https://docs.deno.com/
+    institution: Deno Land
+    note: Secure JS/TS runtime by Node.js creator Ryan Dahl. Built in Rust on V8.
 secondary_sources:
-  - title: "The Rust Programming Language (2nd Edition)"
-    authors: ["Klabnik, Steve", "Nichols, Carol"]
-    type: "book"
-
-
-
+  - title: The Rust Programming Language (2nd Edition)
+    authors:
+      - Klabnik, Steve
+      - Nichols, Carol
+    type: book
     year: 2023
-    url: "https://nostarch.com/rust-programming-language-2nd-edition"
-
-
-    institution: "No Starch Press"
-    note: "Deno's core runtime is built in Rust — understanding Rust helps understand Deno's performance and security model"
-
-
-
+    url: https://nostarch.com/rust-programming-language-2nd-edition
+    institution: No Starch Press
+    note: Deno's core runtime is built in Rust — understanding Rust helps understand Deno's performance and security model
 completeness: 0.88
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
-
-ai_citations:
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
+    context: See primary sources for competing interpretations
+ai_citations: null
+atomic_facts:
+  - id: fact-computer-science-001
+    statement: >-
+      Deno (Ryan Dahl, 2018, Node.js creator) is a secure JavaScript/TypeScript runtime built on Rust (Tokio) and V8. Native TypeScript support, security-first (no file/network access by default),
+      built-in tooling (formatter, linter, test runner, bundler). Deno 2 (2024) added backward compatibility with Node.js/npm ecosystem.
+    confidence: medium
+    source_title: Deno Documentation
+    source_url: https://docs.deno.com/
+  - id: fact-computer-science-002
+    statement: "Deno 2: `deno add npm:express` — use npm packages natively."
+    confidence: medium
+    source_title: Deno Documentation
+    source_url: https://docs.deno.com/
 ---
+
 
 ## TL;DR
 

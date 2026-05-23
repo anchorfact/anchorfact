@@ -1,41 +1,70 @@
 ---
-id:"kb-2026-00348"
-title:"European Union"
-schema_type:"TechArticle"
-category:"geography"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: kb-2026-00348
+title: European Union
+schema_type: TechArticle
+category: geography
+language: en
+confidence: high
+last_verified: "2026-05-22"
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
+derived_from_human_seed: true
 primary_sources:
-  - title:"European Union Official Website"
-    type:"documentation"
-    year:2026
-    url:"https://european-union.europa.eu/"
-    institution:"EU"
+  - title: European Union Official Website
+    type: documentation
+    year: 2026
+    url: https://european-union.europa.eu/
+    institution: EU
 secondary_sources:
-  - title: "CIA World Factbook"
-    type: "database"
+  - title: CIA World Factbook
+    type: database
     year: 2025
-    url: "https://www.cia.gov/the-world-factbook/"
-    institution: "Central Intelligence Agency"
-  - title: "National Geographic Atlas"
-    type: "reference"
+    url: https://www.cia.gov/the-world-factbook/
+    institution: Central Intelligence Agency
+  - title: National Geographic Atlas
+    type: reference
     year: 2019
-    url: "https://www.nationalgeographic.com/maps/atlas/"
-    institution: "National Geographic"
+    url: https://www.nationalgeographic.com/maps/atlas/
+    institution: National Geographic
 completeness: 0.88
 known_gaps:
-  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
-  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
+  - Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed
+  - Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
+    context: See primary sources for competing interpretations
 ai_citations:
-  last_citation_check:"2026-05-22"
+  last_citation_check: "2026-05-22"
+atomic_facts:
+  - id: fact-geography-001
+    statement: >-
+      The European Union is a political and economic union of 27 European countries, founded by the Maastricht Treaty (1993). Successor to the European Coal and Steel Community (1951, Schuman
+      Declaration). Single market (free movement of goods, services, capital, people), common currency (Euro, 20 countries), shared laws.
+    confidence: medium
+    source_title: European Union Official Website
+    source_url: https://european-union.europa.eu/
+  - id: fact-geography-002
+    statement: >-
+      Key institutions: European Commission (executive, proposes laws), European Parliament (elected, co-legislator), Council of the EU (member states, co-legislator), European Central Bank (monetary
+      policy), European Court of Justice.
+    confidence: medium
+    source_title: European Union Official Website
+    source_url: https://european-union.europa.eu/
+  - id: fact-geography-003
+    statement: "Schengen Area: passport-free travel (25 countries)."
+    confidence: medium
+    source_title: European Union Official Website
+    source_url: https://european-union.europa.eu/
+  - id: fact-geography-004
+    statement: "Brexit: UK left EU (Jan 31, 2020) — first member to leave."
+    confidence: medium
+    source_title: European Union Official Website
+    source_url: https://european-union.europa.eu/
 ---
+
 
 ## TL;DR
 

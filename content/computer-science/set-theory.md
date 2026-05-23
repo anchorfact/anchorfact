@@ -1,61 +1,61 @@
 ---
-id: "kb-2026-00192"
-
-
-
-title: "Set Theory"
-schema_type: "TechArticle"
-
-
-
-category: "computer-science"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00192
+title: Set Theory
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "human_only"
-ai_models: ["claude-opus"]
+generation_method: human_only
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-
-
 known_gaps:
-  - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
-
+  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
-
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
+    context: See primary sources for competing interpretations
 completeness: 0.88
-ai_citations:
-
+ai_citations: null
 primary_sources:
-  - title: "ACM Digital Library"
-    type: "repository"
-
-
-
+  - title: ACM Digital Library
+    type: repository
     year: 2026
-    url: "https://dl.acm.org/"
-
-
-    institution: "ACM"
+    url: https://dl.acm.org/
+    institution: ACM
 secondary_sources:
-  - title: "ACM Digital Library"
-    type: "repository"
-
-
-
+  - title: ACM Digital Library
+    type: repository
     year: 2026
-    url: "https://dl.acm.org/"
-
-
-    institution: "ACM"
+    url: https://dl.acm.org/
+    institution: ACM
+atomic_facts:
+  - id: fact-computer-science-001
+    statement: >-
+      Set theory (Georg Cantor, 1874) is the language of mathematics — almost all mathematical objects can be defined as sets. A set is a collection of distinct objects. Operations: union (∪),
+      intersection (∩), difference (−), complement. Used in: databases (SQL JOINs), type theory, probability.
+    confidence: medium
+    source_title: ACM Digital Library
+    source_url: https://dl.acm.org/
+  - id: fact-computer-science-002
+    statement: "Power set P(A): all subsets of A — 2^n subsets for n elements."
+    confidence: medium
+    source_title: ACM Digital Library
+    source_url: https://dl.acm.org/
+  - id: fact-computer-science-003
+    statement: "Russell's Paradox (1901): the set of all sets that don't contain themselves — exposed flaws in naive set theory."
+    confidence: medium
+    source_title: ACM Digital Library
+    source_url: https://dl.acm.org/
+  - id: fact-computer-science-004
+    statement: ZFC (Zermelo-Fraenkel with Choice) is the modern axiomatic foundation.
+    confidence: medium
+    source_title: ACM Digital Library
+    source_url: https://dl.acm.org/
 ---
+
 
 ## TL;DR
 

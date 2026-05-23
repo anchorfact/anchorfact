@@ -1,55 +1,52 @@
 ---
-id: "kb-gd-031"
-
-
-
-title: "save systems design"
-schema_type: "TechArticle"
-
-
-
-category: "game-development"
-language: "zh"
-
-
-
-confidence: "high"
-confidence_rationale: "游戏开发领域系统性知识，基于行业标准和实践经验"
-
-
-
+id: kb-gd-031
+title: save systems design
+schema_type: TechArticle
+category: game-development
+language: zh
+confidence: high
+confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
 last_verified: "2026-04-28"
-generation_method: "human_only"
-
-
-
+generation_method: human_only
 derived_from_human_seed: true
-tags: [save-system, serialization, cloud-save, security, checkpoint, data]
+tags:
+  - save-system
+  - serialization
+  - cloud-save
+  - security
+  - checkpoint
+  - data
 summary: ""
 primary_sources:
-  - title: "游戏开发Wiki（个人知识库）"
-    type: "knowledge_base"
-
-
-
+  - title: 游戏开发Wiki（个人知识库）
+    type: knowledge_base
     year: 2026
-    note: "基于行业实践和标准参考文献的系统性整理"
-
-
-
+    note: 基于行业实践和标准参考文献的系统性整理
 secondary_sources:
+  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
+    type: textbook
+    year: 2018
+    url: https://www.gameenginebook.com/
+    institution: CRC Press
+  - title: Game Programming Patterns (Robert Nystrom)
+    type: book
+    year: 2014
+    url: https://gameprogrammingpatterns.com/
+    institution: Genever Benning
 completeness: 0.85
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "Narrative-versus-systems-driven game design is a fundamental debate: story-focused games emphasize authored emotional arcs, while systems-driven games prioritize emergent player-driven experiences"
-    context: "See primary sources for competing interpretations"
-
+  - statement: >-
+      Narrative-versus-systems-driven game design is a fundamental debate: story-focused games emphasize authored emotional arcs, while systems-driven games prioritize emergent player-driven
+      experiences
+    context: See primary sources for competing interpretations
 related_entities:
-  - "entity:game-development"
-ai_citations:
+  - entity:game-development
+ai_citations: null
 ---
+
 
 ## 1. 存档系统架构
 

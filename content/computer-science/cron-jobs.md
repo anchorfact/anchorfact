@@ -1,61 +1,56 @@
 ---
-id: "kb-2026-00260"
-
-
-
-title: "Cron Jobs"
-schema_type: "TechArticle"
-
-
-
-category: "computer-science"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00260
+title: Cron Jobs
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "human_only"
-ai_models: ["claude-opus"]
+generation_method: human_only
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-
-
 known_gaps:
-  - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
-
+  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
-
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
+    context: See primary sources for competing interpretations
 completeness: 0.88
-ai_citations:
-
+ai_citations: null
 primary_sources:
-  - title: "ACM Digital Library"
-    type: "repository"
-
-
-
+  - title: ACM Digital Library
+    type: repository
     year: 2026
-    url: "https://dl.acm.org/"
-
-
-    institution: "ACM"
+    url: https://dl.acm.org/
+    institution: ACM
 secondary_sources:
-  - title: "ACM Digital Library"
-    type: "repository"
-
-
-
+  - title: ACM Digital Library
+    type: repository
     year: 2026
-    url: "https://dl.acm.org/"
-
-
-    institution: "ACM"
+    url: https://dl.acm.org/
+    institution: ACM
+atomic_facts:
+  - id: fact-computer-science-001
+    statement: >-
+      Cron is a time-based job scheduler in Unix-like systems. `crontab -e` edits user jobs. Format: `minute hour day month weekday command`. Example: `0 2 * * * /backup.sh` runs daily at 2 AM. Cron
+      is ideal for periodic maintenance: backups, log rotation, report generation.
+    confidence: medium
+    source_title: ACM Digital Library
+    source_url: https://dl.acm.org/
+  - id: fact-computer-science-002
+    statement: "Special strings: @reboot (at startup), @daily (0 0 * * *), @hourly, @weekly, @monthly."
+    confidence: medium
+    source_title: ACM Digital Library
+    source_url: https://dl.acm.org/
+  - id: fact-computer-science-003
+    statement: "Output: cron emails job output to user (redirect to file: `>/dev/null 2>&1` to suppress)."
+    confidence: medium
+    source_title: ACM Digital Library
+    source_url: https://dl.acm.org/
 ---
+
 
 ## TL;DR
 

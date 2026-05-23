@@ -20,6 +20,7 @@ const POLLUTED = [
   'computer-science/web-storage-api.md',
   'computer-science/webgl.md',
   'game-development/save-systems-design.md',
+  'self-improvement/productivity-systems.md',
 ];
 
 let cleaned = 0;

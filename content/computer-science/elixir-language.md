@@ -1,66 +1,64 @@
 ---
-id: "kb-2026-00311"
-
-
-
-title: "Elixir Language"
-schema_type: "TechArticle"
-
-
-
-category: "computer-science"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00311
+title: Elixir Language
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
 primary_sources:
-  - title: "Elixir Documentation"
-    type: "documentation"
-
-
-
+  - title: Elixir Documentation
+    type: documentation
     year: 2026
-    url: "https://elixir-lang.org/docs.html"
-
-
-    institution: "José Valim (Elixir creator)"
+    url: https://elixir-lang.org/docs.html
+    institution: José Valim (Elixir creator)
     note: "Functional language on Erlang VM: actors, pattern matching, Phoenix, OTP"
-
-
-
 secondary_sources:
-  - title: "Programming Elixir ≥ 1.6"
-    authors: ["Thomas, Dave"]
-    type: "book"
-
-
-
+  - title: Programming Elixir ≥ 1.6
+    authors:
+      - Thomas, Dave
+    type: book
     year: 2018
-    url: "https://pragprog.com/titles/elixir16/programming-elixir-1-6/"
-
-
-    institution: "Pragmatic Bookshelf"
-    note: "Practical Elixir guide covering functional programming, OTP, and concurrency on the BEAM"
-
-
-
+    url: https://pragprog.com/titles/elixir16/programming-elixir-1-6/
+    institution: Pragmatic Bookshelf
+    note: Practical Elixir guide covering functional programming, OTP, and concurrency on the BEAM
 completeness: 0.88
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
-
-ai_citations:
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
+    context: See primary sources for competing interpretations
+ai_citations: null
+atomic_facts:
+  - id: fact-computer-science-001
+    statement: >-
+      Elixir (José Valim, 2011) is a dynamic, functional language built on the Erlang VM (BEAM) — inheriting Erlang's fault tolerance, concurrency, and distributed computing capabilities. Used by:
+      Discord, WhatsApp (Erlang), Bleacher Report, PepsiCo. Phoenix Framework for web, Nerves for embedded.
+    confidence: medium
+    source_title: Elixir Documentation
+    source_url: https://elixir-lang.org/docs.html
+  - id: fact-computer-science-002
+    statement: "Pattern matching is fundamental: `=` is match, not assignment."
+    confidence: medium
+    source_title: Elixir Documentation
+    source_url: https://elixir-lang.org/docs.html
+  - id: fact-computer-science-003
+    statement: "Phoenix LiveView: real-time server-rendered UI without JavaScript."
+    confidence: medium
+    source_title: Elixir Documentation
+    source_url: https://elixir-lang.org/docs.html
+  - id: fact-computer-science-004
+    statement: "OTP (Open Telecom Platform): battle-tested patterns (GenServer, Supervisor)."
+    confidence: medium
+    source_title: Elixir Documentation
+    source_url: https://elixir-lang.org/docs.html
 ---
+
 
 ## TL;DR
 

@@ -1,61 +1,51 @@
 ---
-id: "kb-2026-00229"
-
-
-
-title: "Object-Oriented Programming (OOP)"
-schema_type: "TechArticle"
-
-
-
-category: "computer-science"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00229
+title: Object-Oriented Programming (OOP)
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "human_only"
-ai_models: ["claude-opus"]
+generation_method: human_only
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-
-
 known_gaps:
-  - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
-
+  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
 disputed_statements:
-  - statement: "The relative merits of functional versus object-oriented programming paradigms are debated: FP proponents emphasize immutability and composability, while OOP proponents value encapsulation and intuitive domain modeling"
-    context: "See primary sources for competing interpretations"
-
+  - statement: >-
+      The relative merits of functional versus object-oriented programming paradigms are debated: FP proponents emphasize immutability and composability, while OOP proponents value encapsulation and
+      intuitive domain modeling
+    context: See primary sources for competing interpretations
 completeness: 0.88
-ai_citations:
-
+ai_citations: null
 primary_sources:
-  - title: "ACM Digital Library"
-    type: "repository"
-
-
-
+  - title: ACM Digital Library
+    type: repository
     year: 2026
-    url: "https://dl.acm.org/"
-
-
-    institution: "ACM"
+    url: https://dl.acm.org/
+    institution: ACM
 secondary_sources:
-  - title: "ACM Digital Library"
-    type: "repository"
-
-
-
+  - title: ACM Digital Library
+    type: repository
     year: 2026
-    url: "https://dl.acm.org/"
-
-
-    institution: "ACM"
+    url: https://dl.acm.org/
+    institution: ACM
+atomic_facts:
+  - id: fact-computer-science-001
+    statement: >-
+      OOP organizes code around objects (data + behavior) rather than functions. Four pillars: Encapsulation (hide internals), Inheritance (reuse through hierarchy), Polymorphism (same interface,
+      different behavior), Abstraction (simplify complex reality). Languages: Java, C++, Python, C#, Ruby.
+    confidence: medium
+    source_title: ACM Digital Library
+    source_url: https://dl.acm.org/
+  - id: fact-computer-science-002
+    statement: "Inheritance: `class Dog extends Animal` — code reuse but can create fragile hierarchies."
+    confidence: medium
+    source_title: ACM Digital Library
+    source_url: https://dl.acm.org/
 ---
+
 
 ## TL;DR
 

@@ -1,73 +1,59 @@
 ---
-id: "kb-2026-00310"
-
-
-
-title: "Haskell Language"
-schema_type: "TechArticle"
-
-
-
-category: "computer-science"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00310
+title: Haskell Language
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
 primary_sources:
-  - title: "Haskell Documentation"
-    type: "documentation"
-
-
-
+  - title: Haskell Documentation
+    type: documentation
     year: 2026
-    url: "https://www.haskell.org/documentation/"
-
-
-    institution: "Haskell.org"
+    url: https://www.haskell.org/documentation/
+    institution: Haskell.org
     note: "Pure functional language: lazy evaluation, monads, type classes, GHC, Cabal"
-
-
-
 secondary_sources:
-  - title: "Learn You a Haskell for Great Good!"
-    authors: ["Lipovaca, Miran"]
-    type: "book"
-
-
-
+  - title: Learn You a Haskell for Great Good!
+    authors:
+      - Lipovaca, Miran
+    type: book
     year: 2011
-    url: "http://learnyouahaskell.com/"
-
-
-    institution: "No Starch Press"
-    note: "The most popular Haskell introduction, freely available online"
-
-
-
+    url: http://learnyouahaskell.com/
+    institution: No Starch Press
+    note: The most popular Haskell introduction, freely available online
 atomic_facts:
   - id: fact-computer-science-01
     statement: GHC is the primary implementation
     source_title: Haskell Documentation
     source_url: https://www.haskell.org/documentation/
     confidence: medium
-  
+  - id: fact-computer-science-001
+    statement: >-
+      Haskell (1990, named after Haskell Curry) is a purely functional, lazily evaluated programming language with a powerful static type system. All functions are pure (no side effects by default),
+      and IO is explicitly handled through monads. Used in: finance (Standard Chartered, Barclays), compiler development (GHC).
+    confidence: medium
+    source_title: Haskell Documentation
+    source_url: https://www.haskell.org/documentation/
+  - id: fact-computer-science-002
+    statement: GHC (Glasgow Haskell Compiler) is the primary implementation.
+    confidence: medium
+    source_title: Haskell Documentation
+    source_url: https://www.haskell.org/documentation/
 completeness: 0.88
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
-
-ai_citations:
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
+    context: See primary sources for competing interpretations
+ai_citations: null
 ---
+
 
 ## TL;DR
 

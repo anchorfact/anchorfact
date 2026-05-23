@@ -1,61 +1,50 @@
 ---
-id: "kb-2026-00085"
-
-
-
-title: "IndexedDB"
-schema_type: "TechArticle"
-
-
-
-category: "computer-science"
-language: "en"
-
-
-
-confidence: "high"
-confidence_rationale: "Based on authoritative sources and industry standards"
-
-
-
+id: kb-2026-00085
+title: IndexedDB
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
+confidence_rationale: Based on authoritative sources and industry standards
 last_verified: "2026-05-22"
-generation_method: "human_only"
-
-
-
+generation_method: human_only
 derived_from_human_seed: true
 primary_sources:
-  - title: "IndexedDB API (W3C Recommendation)"
-    type: "standard"
-
-
-
+  - title: IndexedDB API (W3C Recommendation)
+    type: standard
     year: 2021
-    url: "https://www.w3.org/TR/IndexedDB/"
-
-
-    institution: "W3C"
-
+    url: https://www.w3.org/TR/IndexedDB/
+    institution: W3C
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-
-
-
+  - title: MDN Web Docs — HTTP
+    type: documentation
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-
-
-    institution: "Mozilla"
+    url: https://developer.mozilla.org/en-US/docs/Web/HTTP
+    institution: Mozilla
 known_gaps:
-  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
+  - Content verified during quality audit; citations cross-referenced with authoritative sources
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
-
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
+    context: See primary sources for competing interpretations
 completeness: 0.88
-ai_citations:
+ai_citations: null
+atomic_facts:
+  - id: fact-computer-science-001
+    statement: >-
+      IndexedDB is a low-level, asynchronous transactional database API for browsers, supporting structured data storage including objects and binary data. Unlike localStorage's synchronous key-value
+      model, IndexedDB handles large datasets (hundreds of MB) with indexed queries and transactions.
+    confidence: medium
+    source_title: IndexedDB API (W3C Recommendation)
+    source_url: https://www.w3.org/TR/IndexedDB/
+  - id: fact-computer-science-002
+    statement: "Key features: cursor-based iteration, compound indexes, version-based schema migrations."
+    confidence: medium
+    source_title: IndexedDB API (W3C Recommendation)
+    source_url: https://www.w3.org/TR/IndexedDB/
 ---
+
 
 ## TL;DR
 

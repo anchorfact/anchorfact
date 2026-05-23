@@ -1,41 +1,63 @@
 ---
-id:"kb-2026-00381"
-title:"Basketball Fundamentals"
-schema_type:"TechArticle"
-category:"sports"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: kb-2026-00381
+title: Basketball Fundamentals
+schema_type: TechArticle
+category: sports
+language: en
+confidence: high
+last_verified: "2026-05-22"
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
+derived_from_human_seed: true
 primary_sources:
-  - title:"Basketball (And Other Things) (Shea Serrano)"
-    type:"book"
-    year:2017
-    url:"https://www.abramsbooks.com/product/basketball-and-other-things_9781419726477/"
-    institution:"Abrams"
+  - title: Basketball (And Other Things) (Shea Serrano)
+    type: book
+    year: 2017
+    url: https://www.abramsbooks.com/product/basketball-and-other-things_9781419726477/
+    institution: Abrams
 secondary_sources:
-  - title: "Official Basketball Rules"
-    type: "rulebook"
+  - title: Official Basketball Rules
+    type: rulebook
     year: 2024
-    url: "https://www.fiba.basketball/documents/official-basketball-rules"
-    institution: "FIBA (International Basketball Federation)"
-  - title: "The Book of Basketball"
-    type: "book"
+    url: https://www.fiba.basketball/documents/official-basketball-rules
+    institution: FIBA (International Basketball Federation)
+  - title: The Book of Basketball
+    type: book
     year: 2009
-    url: "https://www.penguinrandomhouse.com/books/310253/the-book-of-basketball-by-bill-simmons/"
-    institution: "Bill Simmons, ESPN Books"
+    url: https://www.penguinrandomhouse.com/books/310253/the-book-of-basketball-by-bill-simmons/
+    institution: Bill Simmons, ESPN Books
 completeness: 0.88
 known_gaps:
-  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
-  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
+  - Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed
+  - Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
+    context: See primary sources for competing interpretations
 ai_citations:
-  last_citation_check:"2026-05-22"
+  last_citation_check: "2026-05-22"
+atomic_facts:
+  - id: fact-sports-001
+    statement: >-
+      Basketball (James Naismith, 1891, Springfield, MA) is played 5v5 on a court with hoops at each end. NBA (1946) is the premier professional league. Scoring: 2pts (inside arc), 3pts (beyond arc),
+      1pt (free throw). Positions: point guard, shooting guard, small forward, power forward, center.
+    confidence: medium
+    source_title: Basketball (And Other Things) (Shea Serrano)
+    source_url: https://www.abramsbooks.com/product/basketball-and-other-things_9781419726477/
+  - id: fact-sports-002
+    statement: "Key rules: shot clock (24s NBA, 14s reset), 3-second violation (offensive player in paint), traveling (excess steps without dribbling)."
+    confidence: medium
+    source_title: Official Basketball Rules
+    source_url: https://www.fiba.basketball/documents/official-basketball-rules
+  - id: fact-sports-003
+    statement: "Legendary players: Michael Jordan, LeBron James, Kareem Abdul-Jabbar, Kobe Bryant, Stephen Curry (revolutionized 3-point shooting)."
+    confidence: medium
+    source_title: Basketball (And Other Things) (Shea Serrano)
+    source_url: https://www.abramsbooks.com/product/basketball-and-other-things_9781419726477/
 ---
+
 
 ## TL;DR
 

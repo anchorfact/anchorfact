@@ -1,58 +1,57 @@
 ---
-id: "kb-2026-00473"
-
-
-
-title: "Philosophy of Science"
-schema_type: "TechArticle"
-
-
-
-category: "arts"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00473
+title: Philosophy of Science
+schema_type: TechArticle
+category: arts
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
 primary_sources:
-  - title: "The Structure of Scientific Revolutions (Thomas Kuhn)"
-    type: "book"
-
-
-
+  - title: The Structure of Scientific Revolutions (Thomas Kuhn)
+    type: book
     year: 1962
-    url: "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html"
-
-
-    institution: "University of Chicago Press"
+    url: https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html
+    institution: University of Chicago Press
 secondary_sources:
-  - title: "The Story of Philosophy"
-    type: "book"
-
-
-
+  - title: The Story of Philosophy
+    type: book
     year: 1926
-    url: "https://www.simonandschuster.com/books/The-Story-of-Philosophy/Will-Durant/9780671201593"
-
-
-    institution: "Will Durant, Simon & Schuster"
+    url: https://www.simonandschuster.com/books/The-Story-of-Philosophy/Will-Durant/9780671201593
+    institution: Will Durant, Simon & Schuster
+  - title: The Story of Art (E.H. Gombrich)
+    type: textbook
+    year: 1995
+    url: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
+    institution: Phaidon Press
 completeness: 0.88
 known_gaps:
-  - "Statistics and data cited are from 1962 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - Statistics and data cited are from 1962 and earlier; more recent data may have become available since publication
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist and expressionist accounts"
-    context: "See primary sources for competing interpretations"
-
-ai_citations:
+  - statement: >-
+      The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist
+      and expressionist accounts
+    context: See primary sources for competing interpretations
+ai_citations: null
+atomic_facts:
+  - id: fact-arts-001
+    statement: >-
+      Philosophy of science examines how science works. Kuhn (1962) challenged the view of science as steady accumulation: instead, 'paradigm shifts' disrupt 'normal science.' Popper: falsifiability
+      demarcates science from non-science — a theory must be testable and refutable. Scientific realism vs. instrumentalism: do theories describe reality or just p
+    confidence: medium
+    source_title: The Structure of Scientific Revolutions (Thomas Kuhn)
+    source_url: https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html
+  - id: fact-arts-002
+    statement: "Reproducibility crisis (2010s): many published findings fail to replicate — methodology reform ongoing."
+    confidence: medium
+    source_title: The Structure of Scientific Revolutions (Thomas Kuhn)
+    source_url: https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html
 ---
+
 
 ## TL;DR
 

@@ -1,66 +1,55 @@
 ---
-id: "kb-2026-00152"
-
-
-
-title: "Infrastructure as Code (IaC)"
-schema_type: "TechArticle"
-
-
-
-category: "computer-science"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00152
+title: Infrastructure as Code (IaC)
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
 primary_sources:
-  - title: "Terraform Documentation"
-    type: "documentation"
-
-
-
+  - title: Terraform Documentation
+    type: documentation
     year: 2026
-    url: "https://developer.hashicorp.com/terraform/docs"
-
-
-    institution: "HashiCorp"
+    url: https://developer.hashicorp.com/terraform/docs
+    institution: HashiCorp
     note: "Declarative IaC: HCL language, state management, providers, modules, plan/apply workflow"
-
-
-
 secondary_sources:
   - title: "Ansible: Up and Running (3rd Edition)"
-    authors: ["Hochstein, Lorin", "Moser, Rene"]
-    type: "book"
-
-
-
+    authors:
+      - Hochstein, Lorin
+      - Moser, Rene
+    type: book
     year: 2022
-    url: "https://www.oreilly.com/library/view/ansible-up-and/9781098109141/"
-
-
-    institution: "O'Reilly"
+    url: https://www.oreilly.com/library/view/ansible-up-and/9781098109141/
+    institution: O'Reilly
     note: "Procedural IaC with Ansible: playbooks, roles, inventory — covers both configuration management and orchestration"
-
-
-
 completeness: 0.88
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
-
-ai_citations:
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
+    context: See primary sources for competing interpretations
+ai_citations: null
+atomic_facts:
+  - id: fact-computer-science-001
+    statement: >-
+      IaC manages infrastructure through machine-readable definition files rather than manual configuration. Tools: Terraform (HCL, multi-cloud), Pulumi (general-purpose languages), CloudFormation
+      (AWS-native), Ansible (configuration management). Version-controlled infrastructure enables reproducibility, code review, and automated testing.
+    confidence: medium
+    source_title: Terraform Documentation
+    source_url: https://developer.hashicorp.com/terraform/docs
+  - id: fact-computer-science-002
+    statement: Terraform state file tracks real-world resources — must be stored securely (S3 + DynamoDB locking).
+    confidence: medium
+    source_title: Terraform Documentation
+    source_url: https://developer.hashicorp.com/terraform/docs
 ---
+
 
 ## TL;DR
 

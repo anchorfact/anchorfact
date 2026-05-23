@@ -1,58 +1,72 @@
 ---
-id: "kb-2026-00477"
-
-
-
-title: "Digital Art"
-schema_type: "TechArticle"
-
-
-
-category: "arts"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00477
+title: Digital Art
+schema_type: TechArticle
+category: arts
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
 primary_sources:
-  - title: "Digital Art (Christiane Paul, 3rd Ed)"
-    type: "book"
-
-
-
+  - title: Digital Art (Christiane Paul, 3rd Ed)
+    type: book
     year: 2015
-    url: "https://thamesandhudson.com/digital-art-9780500204238"
-
-
-    institution: "Thames & Hudson"
+    url: https://thamesandhudson.com/digital-art-9780500204238
+    institution: Thames & Hudson
 secondary_sources:
-  - title: "The Story of Art"
-    type: "book"
-
-
-
+  - title: The Story of Art
+    type: book
     year: 1950
-    url: "https://www.phaidon.com/store/art/the-story-of-art-9780714832470/"
-
-
-    institution: "E.H. Gombrich, Phaidon"
+    url: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
+    institution: E.H. Gombrich, Phaidon
+  - title: The Story of Art (E.H. Gombrich)
+    type: textbook
+    year: 1995
+    url: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
+    institution: Phaidon Press
 completeness: 0.88
 known_gaps:
-  - "Statistics and data cited are from 2015 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - Statistics and data cited are from 2015 and earlier; more recent data may have become available since publication
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist and expressionist accounts"
-    context: "See primary sources for competing interpretations"
-
-ai_citations:
+  - statement: >-
+      The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist
+      and expressionist accounts
+    context: See primary sources for competing interpretations
+ai_citations: null
+atomic_facts:
+  - id: fact-arts-001
+    statement: >-
+      Digital art uses digital technology as part of the creation or presentation process. Forms: digital painting (Photoshop, Procreate), 3D modeling (Blender, Maya), pixel art, generative art
+      (algorithms create art), AI art (DALL-E, Midjourney, Stable Diffusion), NFT art, interactive installations. Digital art democratized creation — tools accessible t
+    confidence: medium
+    source_title: Digital Art (Christiane Paul, 3rd Ed)
+    source_url: https://thamesandhudson.com/digital-art-9780500204238
+  - id: fact-arts-002
+    statement: "Generative art: artist defines rules/algorithms, computer executes (Manfred Mohr, Vera Molnár)."
+    confidence: medium
+    source_title: Digital Art (Christiane Paul, 3rd Ed)
+    source_url: https://thamesandhudson.com/digital-art-9780500204238
+  - id: fact-arts-003
+    statement: "AI art: text-to-image (2022+), controversial — copyright, artist consent, training data debates."
+    confidence: medium
+    source_title: Digital Art (Christiane Paul, 3rd Ed)
+    source_url: https://thamesandhudson.com/digital-art-9780500204238
+  - id: fact-arts-004
+    statement: "NFT (Non-Fungible Token, 2021): blockchain certificate of ownership — Beeple's 'Everydays' sold for $69M."
+    confidence: medium
+    source_title: Digital Art (Christiane Paul, 3rd Ed)
+    source_url: https://thamesandhudson.com/digital-art-9780500204238
+  - id: fact-arts-005
+    statement: "Blender: free open-source 3D suite — modeling, sculpting, animation, rendering."
+    confidence: medium
+    source_title: Digital Art (Christiane Paul, 3rd Ed)
+    source_url: https://thamesandhudson.com/digital-art-9780500204238
 ---
+
 
 ## TL;DR
 

@@ -1,70 +1,62 @@
 ---
-id: "kb-2026-00282"
-
-
-
-title: "Model Evaluation Metrics"
-schema_type: "TechArticle"
-
-
-
-category: "ai"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00282
+title: Model Evaluation Metrics
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
 primary_sources:
-  - title: "Pattern Recognition and Machine Learning (Bishop)"
-    authors: ["Bishop, Christopher M."]
-    type: "book"
-
-
-
+  - title: Pattern Recognition and Machine Learning (Bishop)
+    authors:
+      - Bishop, Christopher M.
+    type: book
     year: 2006
-    url: "https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/"
-
-
-    institution: "Springer"
+    url: https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/
+    institution: Springer
     note: "Chapter 1: Introduction — covers evaluation metrics, loss functions, and the bias-variance tradeoff"
-
-
-
 secondary_sources:
-  - title: "An Introduction to Statistical Learning (2nd Edition)"
-    authors: ["James, Gareth", "Witten, Daniela", "Hastie, Trevor", "Tibshirani, Robert"]
-    type: "book"
-
-
-
+  - title: An Introduction to Statistical Learning (2nd Edition)
+    authors:
+      - James, Gareth
+      - Witten, Daniela
+      - Hastie, Trevor
+      - Tibshirani, Robert
+    type: book
     year: 2021
-    url: "https://www.statlearning.com/"
-
-
-    institution: "Springer"
+    url: https://www.statlearning.com/
+    institution: Springer
     note: "Chapter 2: Statistical Learning — covers training vs. test error, cross-validation, and the bias-variance decomposition"
-
-
-
 completeness: 0.88
 disputed_statements:
-  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
-    confidence: "medium"
-
-
+  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
+    confidence: medium
 known_gaps:
-  - "Statistics and data cited are from 2021 and earlier; more recent data may have become available since publication"
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-  - "Recent developments from 2025-2026 may not be reflected"
-ai_citations:
+  - Statistics and data cited are from 2021 and earlier; more recent data may have become available since publication
+  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
+  - Recent developments from 2025-2026 may not be reflected
+ai_citations: null
+atomic_facts:
+  - id: fact-ai-001
+    statement: >-
+      Model evaluation metrics quantify performance. Classification: accuracy, precision, recall, F1-score, ROC-AUC. Regression: MSE, MAE, R². Confusion matrix: TP/FP/FN/TN. Choose metrics aligned
+      with business goals: medical diagnosis needs high recall (miss fewer positives), spam detection needs high precision (fewer false alarms).
+    confidence: medium
+    source_title: Pattern Recognition and Machine Learning (Bishop)
+    source_url: https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/
+  - id: fact-ai-001
+    statement: >-
+      Model evaluation metrics quantify performance. Classification: accuracy, precision, recall, F1-score, ROC-AUC. Regression: MSE, MAE, R². Confusion matrix: TP/FP/FN/TN. Choose metrics aligned
+      with business goals: medical diagnosis needs high recall (miss fewer positives), spam detection needs high precision (fewer false alarms).
+    confidence: medium
+    source_title: Pattern Recognition and Machine Learning (Bishop)
+    source_url: https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/
 ---
+
+
 
 ## TL;DR
 

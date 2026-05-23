@@ -1,69 +1,65 @@
 ---
-id: "kb-2026-00327"
-
-
-
-title: "French Revolution"
-schema_type: "TechArticle"
-
-
-
-category: "history"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00327
+title: French Revolution
+schema_type: TechArticle
+category: history
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
 primary_sources:
   - title: "Citizens: A Chronicle of the French Revolution (Simon Schama)"
-    type: "book"
-
-
-
+    type: book
     year: 1989
-    url: "https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/"
-
-
-    institution: "Penguin"
+    url: https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/
+    institution: Penguin
 secondary_sources:
-  - title: "The Oxford History of the French Revolution"
-    type: "book"
-
-
-
+  - title: The Oxford History of the French Revolution
+    type: book
     year: 1989
-    url: "https://global.oup.com/academic/product/the-oxford-history-of-the-french-revolution-9780199252985"
-
-
-    institution: "William Doyle, Oxford University Press"
+    url: https://global.oup.com/academic/product/the-oxford-history-of-the-french-revolution-9780199252985
+    institution: William Doyle, Oxford University Press
+  - title: The Penguin History of the World (J.M. Roberts)
+    type: textbook
+    year: 2014
+    url: https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
+    institution: Penguin Books
 atomic_facts:
   - id: fact-history-01
-    statement: >-
-      The French Revolution overthrew the monarchy, established a republic, and fundamentally transformed French society
-      and European politics
+    statement: The French Revolution overthrew the monarchy, established a republic, and fundamentally transformed French society and European politics
     source_title: "Citizens: A Chronicle of the French Revolution (Simon Schama)"
-
-
     source_url: https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/
     confidence: high
-  
+  - id: fact-history-001
+    statement: >-
+      The French Revolution (1789-1799) overthrew the monarchy, established a republic, and fundamentally transformed French society and European politics. Ideals: Liberty, Equality, Fraternity.
+      Marked the rise of modern nationalism, secularism, and the concept of universal human rights.
+    confidence: medium
+    source_title: "Citizens: A Chronicle of the French Revolution (Simon Schama)"
+    source_url: https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/
+  - id: fact-history-002
+    statement: "Events: Storming of the Bastille (July 14, 1789), Declaration of the Rights of Man, Reign of Terror (1793-94, Robespierre, guillotine), Napoleon's coup (1799)."
+    confidence: medium
+    source_title: "Citizens: A Chronicle of the French Revolution (Simon Schama)"
+    source_url: https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/
+  - id: fact-history-003
+    statement: "Legacy: metric system, Napoleonic Code (basis of European law), abolished feudalism, inspired revolutions worldwide."
+    confidence: medium
+    source_title: "Citizens: A Chronicle of the French Revolution (Simon Schama)"
+    source_url: https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/
 completeness: 0.88
 known_gaps:
-  - "Statistics and data cited are from 1989 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - Statistics and data cited are from 1989 and earlier; more recent data may have become available since publication
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The role of Enlightenment ideas versus material conditions (fiscal crisis, food shortages) as primary drivers of the French Revolution is an enduring historiographical debate"
-    context: "See primary sources for competing interpretations"
-
-ai_citations:
+  - statement: The role of Enlightenment ideas versus material conditions (fiscal crisis, food shortages) as primary drivers of the French Revolution is an enduring historiographical debate
+    context: See primary sources for competing interpretations
+ai_citations: null
 ---
+
 
 ## TL;DR
 

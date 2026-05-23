@@ -1,65 +1,55 @@
 ---
-id: "kb-2026-00166"
-
-
-
-title: "CSS Flexbox"
-schema_type: "TechArticle"
-
-
-
-category: "computer-science"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00166
+title: CSS Flexbox
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
 primary_sources:
-  - title: "CSS Flexible Box Layout Module Level 1 (W3C Candidate Recommendation)"
-    type: "standard"
-
-
-
+  - title: CSS Flexible Box Layout Module Level 1 (W3C Candidate Recommendation)
+    type: standard
     year: 2018
-    url: "https://www.w3.org/TR/css-flexbox-1/"
-
-
-    institution: "W3C"
+    url: https://www.w3.org/TR/css-flexbox-1/
+    institution: W3C
     note: "The definitive Flexbox specification: main/cross axis, justify-content, align-items, flex-wrap, flex-grow/shrink/basis"
-
-
-
 secondary_sources:
-  - title: "MDN Web Docs — CSS Flexible Box Layout"
-    type: "documentation"
-
-
-
+  - title: MDN Web Docs — CSS Flexible Box Layout
+    type: documentation
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout"
-
-
-    institution: "Mozilla"
-    note: "Practical developer guide to Flexbox with interactive examples and browser compatibility tables"
-
-
-
+    url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout
+    institution: Mozilla
+    note: Practical developer guide to Flexbox with interactive examples and browser compatibility tables
 completeness: 0.88
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
-
-ai_citations:
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
+    context: See primary sources for competing interpretations
+ai_citations: null
+atomic_facts:
+  - id: fact-computer-science-001
+    statement: >-
+      Flexbox provides one-dimensional layout (row or column), distributing space and aligning items within a container. `display: flex` on parent enables flex context. Key properties:
+      `justify-content` (main axis alignment), `align-items` (cross axis), `flex-grow/shrink/basis` (item sizing).
+    confidence: medium
+    source_title: CSS Flexible Box Layout Module Level 1 (W3C Candidate Recommendation)
+    source_url: https://www.w3.org/TR/css-flexbox-1/
+  - id: fact-computer-science-001
+    statement: >-
+      Flexbox provides one-dimensional layout (row or column), distributing space and aligning items within a container. `display: flex` on parent enables flex context. Key properties:
+      `justify-content` (main axis alignment), `align-items` (cross axis), `flex-grow/shrink/basis` (item sizing).
+    confidence: medium
+    source_title: CSS Flexible Box Layout Module Level 1 (W3C Candidate Recommendation)
+    source_url: https://www.w3.org/TR/css-flexbox-1/
 ---
+
+
 
 ## TL;DR
 

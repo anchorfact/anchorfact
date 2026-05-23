@@ -1,36 +1,29 @@
 ---
-id:"kb-2026-00382"
-title:"Productivity Systems"
-schema_type:"TechArticle"
-category:"self-improvement"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
-primary_sources:
-  - title:"Getting Things Done (David Allen)"
-    type:"book"
-    year:2001
-    url:"https://gettingthingsdone.com/"
-    institution:"Penguin"
+id: ""
+title: ""
+schema_type: TechArticle
+category: ""
+language: en
+confidence: high
+last_verified: ""
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
+derived_from_human_seed: true
 secondary_sources:
-  - title: "The Rust Programming Language (2nd Ed)"
-    authors: ["Klabnik", "Nichols"]
-    type: "book"
-    year: 2023
-    url: "https://nostarch.com/rust-programming-language-2nd-edition"
-    institution: "No Starch Press"
-completeness: 0.88
-ai_citations:
-  last_citation_check:"2026-05-22"
-  - title: "Deep Work: Rules for Focused Success in a Distracted World"
-    type: "book"
-    year: 2016
-    url: "https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/"
-    institution: "Cal Newport, Grand Central"
+  - title: Atomic Habits (James Clear)
+    type: book
+    year: 2018
+    url: https://jamesclear.com/atomic-habits
+    institution: Avery, Penguin Random House
+  - title: Thinking, Fast and Slow (Daniel Kahneman)
+    type: book
+    year: 2011
+    url: https://us.macmillan.com/books/9780374533557/thinkingfastandslow
+    institution: Farrar, Straus & Giroux
 ---
+
+
 
 ## TL;DR
 

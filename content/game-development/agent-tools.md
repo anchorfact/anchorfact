@@ -1,69 +1,51 @@
 ---
-id: "kb-gd-002"
-
-
-
-title: "AI Agent 游戏开发工具"
-schema_type: "TechArticle"
-
-
-
-category: "game-development"
-language: "zh"
-
-
-
-confidence: "high"
-confidence_rationale: "游戏开发领域系统性知识，基于行业标准和实践经验"
-
-
-
+id: kb-gd-002
+title: AI Agent 游戏开发工具
+schema_type: TechArticle
+category: game-development
+language: zh
+confidence: high
+confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
 last_verified: "2026-04-28"
-generation_method: "human_only"
-
-
-
+generation_method: human_only
 derived_from_human_seed: true
-tags: ["ai", "tools", "agent", "mcp", "a2a", "api", "workflow"]
-summary: "AI Agent 游戏开发工具汇总：MCP/A2A协议、框架对比、API文档索引与实战代码"
-
-
-
+tags:
+  - ai
+  - tools
+  - agent
+  - mcp
+  - a2a
+  - api
+  - workflow
+summary: AI Agent 游戏开发工具汇总：MCP/A2A协议、框架对比、API文档索引与实战代码
 primary_sources:
-  - title: "游戏开发Wiki（个人知识库）"
-    type: "knowledge_base"
-
-
-
+  - title: 游戏开发Wiki（个人知识库）
+    type: knowledge_base
     year: 2026
-    note: "基于行业实践和标准参考文献的系统性整理"
-
-
-
+    note: 基于行业实践和标准参考文献的系统性整理
 secondary_sources:
-  - title: "Model Context Protocol Specification"
-    type: "standard"
-
-
-
+  - title: Model Context Protocol Specification
+    type: standard
     year: 2025
-    url: "https://modelcontextprotocol.io/specification/2025-06-18"
-
-
-    institution: "Linux Foundation / AAIF"
+    url: https://modelcontextprotocol.io/specification/2025-06-18
+    institution: Linux Foundation / AAIF
+  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
+    type: textbook
+    year: 2018
+    url: https://www.gameenginebook.com/
+    institution: CRC Press
 completeness: 0.85
 disputed_statements:
-  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
-    confidence: "medium"
-
-
+  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
+    confidence: medium
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 related_entities:
-  - "entity:game-development"
-ai_citations:
+  - entity:game-development
+ai_citations: null
 ---
+
 
 # AI Agent 游戏开发工具
 

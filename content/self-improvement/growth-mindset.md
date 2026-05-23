@@ -1,36 +1,61 @@
 ---
-id:"kb-2026-00444"
-title:"Growth Mindset"
-schema_type:"TechArticle"
-category:"self-improvement"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: kb-2026-00444
+title: Growth Mindset
+schema_type: TechArticle
+category: self-improvement
+language: en
+confidence: high
+last_verified: "2026-05-22"
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
+derived_from_human_seed: true
 primary_sources:
-  - title:"Mindset: The New Psychology of Success (Carol Dweck)"
-    type:"book"
-    year:2006
-    url:"https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck/"
-    institution:"Random House"
+  - title: "Mindset: The New Psychology of Success (Carol Dweck)"
+    type: book
+    year: 2006
+    url: https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck/
+    institution: Random House
 secondary_sources:
   - title: "Mindset: The New Psychology of Success"
-    type: "book"
+    type: book
     year: 2006
-    url: "https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck-phd/"
-    institution: "Carol S. Dweck, Random House"
+    url: https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck-phd/
+    institution: Carol S. Dweck, Random House
+  - title: Atomic Habits (James Clear)
+    type: book
+    year: 2018
+    url: https://jamesclear.com/atomic-habits
+    institution: Avery, Penguin Random House
 completeness: 0.88
 known_gaps:
-  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
-  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
+  - Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed
+  - Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
+    context: See primary sources for competing interpretations
 ai_citations:
-  last_citation_check:"2026-05-22"
+  last_citation_check: "2026-05-22"
+atomic_facts:
+  - id: fact-self-improvement-001
+    statement: >-
+      Growth mindset (Carol Dweck, 2006) is the belief that abilities can be developed through effort, learning, and persistence. Fixed mindset: believe abilities are innate and unchangeable. Growth
+      mindset people embrace challenges, learn from criticism, and see effort as the path to mastery. The belief itself becomes a self-fulfilling prophecy.
+    confidence: medium
+    source_title: "Mindset: The New Psychology of Success (Carol Dweck)"
+    source_url: https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck/
+  - id: fact-self-improvement-001
+    statement: >-
+      Growth mindset (Carol Dweck, 2006) is the belief that abilities can be developed through effort, learning, and persistence. Fixed mindset: believe abilities are innate and unchangeable. Growth
+      mindset people embrace challenges, learn from criticism, and see effort as the path to mastery. The belief itself becomes a self-fulfilling prophecy.
+    confidence: medium
+    source_title: "Mindset: The New Psychology of Success (Carol Dweck)"
+    source_url: https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck/
 ---
+
+
 
 ## TL;DR
 

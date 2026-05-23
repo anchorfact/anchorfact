@@ -1,67 +1,56 @@
 ---
-id: "kb-2026-00489"
-
-
-
-title: "Human Memory"
-schema_type: "TechArticle"
-
-
-
-category: "science"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00489
+title: Human Memory
+schema_type: TechArticle
+category: science
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
 primary_sources:
-  - title: "The Seven Sins of Memory (Daniel Schacter)"
-    type: "book"
-
-
-
+  - title: The Seven Sins of Memory (Daniel Schacter)
+    type: book
     year: 2001
-    url: "https://www.harpercollins.com/products/the-seven-sins-of-memory-daniel-l-schacter"
-
-
-    institution: "Houghton Mifflin"
+    url: https://www.harpercollins.com/products/the-seven-sins-of-memory-daniel-l-schacter
+    institution: Houghton Mifflin
 secondary_sources:
-  - title: "A Brief History of Time"
-    type: "book"
-
-
-
+  - title: A Brief History of Time
+    type: book
     year: 1988
-    url: "https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/"
-
-
-    institution: "Stephen Hawking, Bantam"
-  - title: "Nature (journal)"
-    type: "journal"
-
-
-
+    url: https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/
+    institution: Stephen Hawking, Bantam
+  - title: Nature (journal)
+    type: journal
     year: 2025
-    url: "https://www.nature.com/"
-
-
-    institution: "Springer Nature"
+    url: https://www.nature.com/
+    institution: Springer Nature
 completeness: 0.88
 known_gaps:
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
-
-ai_citations:
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
+    context: See primary sources for competing interpretations
+ai_citations: null
+atomic_facts:
+  - id: fact-science-001
+    statement: >-
+      Human memory is not a recording device — it's reconstructive and fallible. Types: sensory (milliseconds), short-term/working (seconds, 7±2 items — Miller, 1956), long-term (unlimited capacity).
+      Long-term: explicit (declarative: episodic + semantic) and implicit (procedural skills, conditioning). Consolidation: moving memories from hippocampus to co
+    confidence: medium
+    source_title: The Seven Sins of Memory (Daniel Schacter)
+    source_url: https://www.harpercollins.com/products/the-seven-sins-of-memory-daniel-l-schacter
+  - id: fact-science-002
+    statement: "Working memory: 4±1 chunks (Cowan, 2001 — updated from Miller)."
+    confidence: medium
+    source_title: The Seven Sins of Memory (Daniel Schacter)
+    source_url: https://www.harpercollins.com/products/the-seven-sins-of-memory-daniel-l-schacter
 ---
+
 
 ## TL;DR
 

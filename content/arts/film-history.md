@@ -1,48 +1,32 @@
 ---
-id: "kb-2026-00344"
-
-
-
-title: "Film History"
-schema_type: "TechArticle"
-
-
-
-category: "arts"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00344
+title: Film History
+schema_type: TechArticle
+category: arts
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
 primary_sources:
-  - title: "A Short History of Film (Dixon & Foster)"
-    type: "book"
-
-
-
+  - title: A Short History of Film (Dixon & Foster)
+    type: book
     year: 2018
-    url: "https://www.rutgersuniversitypress.org/a-short-history-of-film-third-edition/9780813595139/"
-
-
-    institution: "Rutgers University Press"
+    url: https://www.rutgersuniversitypress.org/a-short-history-of-film-third-edition/9780813595139/
+    institution: Rutgers University Press
 secondary_sources:
   - title: "Film History: An Introduction"
-    type: "book"
-
-
-
+    type: book
     year: 2018
-    url: "https://www.mheducation.com/highered/product/film-history-introduction-thompson-bordwell/M9781259870354.html"
-
-
-    institution: "Kristin Thompson & David Bordwell, McGraw-Hill"
+    url: https://www.mheducation.com/highered/product/film-history-introduction-thompson-bordwell/M9781259870354.html
+    institution: Kristin Thompson & David Bordwell, McGraw-Hill
+  - title: The Story of Art (E.H. Gombrich)
+    type: textbook
+    year: 1995
+    url: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
+    institution: Phaidon Press
 atomic_facts:
   - id: fact-arts-01
     statement: Lumière brothers' first public screening is considered cinema's birth
@@ -51,8 +35,6 @@ atomic_facts:
     confidence: high
   - id: fact-arts-02
     statement: "Sound: The Jazz Singer first feature with synchronized dialogue"
-
-
     source_title: A Short History of Film (Dixon & Foster)
     source_url: https://www.rutgersuniversitypress.org/a-short-history-of-film-third-edition/9780813595139/
     confidence: high
@@ -61,17 +43,18 @@ atomic_facts:
     source_title: A Short History of Film (Dixon & Foster)
     source_url: https://www.rutgersuniversitypress.org/a-short-history-of-film-third-edition/9780813595139/
     confidence: high
-  
 completeness: 0.88
 known_gaps:
-  - "Statistics and data cited are from 2018 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - Statistics and data cited are from 2018 and earlier; more recent data may have become available since publication
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist and expressionist accounts"
-    context: "See primary sources for competing interpretations"
-
-ai_citations:
+  - statement: >-
+      The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist
+      and expressionist accounts
+    context: See primary sources for competing interpretations
+ai_citations: null
 ---
+
 
 ## TL;DR
 

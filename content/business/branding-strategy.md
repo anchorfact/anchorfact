@@ -1,48 +1,32 @@
 ---
-id: "kb-2026-00432"
-
-
-
-title: "Branding Strategy"
-schema_type: "TechArticle"
-
-
-
-category: "business"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00432
+title: Branding Strategy
+schema_type: TechArticle
+category: business
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
 primary_sources:
-  - title: "Building Strong Brands (David Aaker)"
-    type: "book"
-
-
-
+  - title: Building Strong Brands (David Aaker)
+    type: book
     year: 1995
-    url: "https://www.simonandschuster.com/books/Building-Strong-Brands/David-A-Aaker/9780029001516"
-
-
-    institution: "Free Press"
+    url: https://www.simonandschuster.com/books/Building-Strong-Brands/David-A-Aaker/9780029001516
+    institution: Free Press
 secondary_sources:
-  - title: "Marketing Management"
-    type: "book"
-
-
-
+  - title: Marketing Management
+    type: book
     year: 2015
-    url: "https://www.pearson.com/en-us/subject-catalog/p/marketing-management/P200000009716"
-
-
-    institution: "Philip Kotler, Pearson"
+    url: https://www.pearson.com/en-us/subject-catalog/p/marketing-management/P200000009716
+    institution: Philip Kotler, Pearson
+  - title: Principles of Economics (N. Gregory Mankiw)
+    type: textbook
+    year: 2020
+    url: https://www.cengage.com/c/principles-of-economics-9e-mankiw/9780357038314/
+    institution: Cengage Learning
 atomic_facts:
   - id: fact-business-01
     statement: A brand is more than a logo — it's the sum of perceptions, emotions, and associations customers have
@@ -54,17 +38,18 @@ atomic_facts:
     source_title: Building Strong Brands (David Aaker)
     source_url: https://www.simonandschuster.com/books/Building-Strong-Brands/David-A-Aaker/9780029001516
     confidence: high
-  
 completeness: 0.88
 known_gaps:
-  - "Statistics and data cited are from 2015 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - Statistics and data cited are from 2015 and earlier; more recent data may have become available since publication
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The ROI of brand-building versus performance marketing is a longstanding industry debate: brand advocates emphasize long-term value, while performance marketers prioritize measurable short-term returns"
-    context: "See primary sources for competing interpretations"
-
-ai_citations:
+  - statement: >-
+      The ROI of brand-building versus performance marketing is a longstanding industry debate: brand advocates emphasize long-term value, while performance marketers prioritize measurable short-term
+      returns
+    context: See primary sources for competing interpretations
+ai_citations: null
 ---
+
 
 ## TL;DR
 

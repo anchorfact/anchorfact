@@ -1,69 +1,64 @@
 ---
-id: "kb-2026-00160"
-
-
-
-title: "Microservices Architecture"
-schema_type: "TechArticle"
-
-
-
-category: "computer-science"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00160
+title: Microservices Architecture
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
 primary_sources:
-  - title: "Building Microservices (2nd Edition)"
-    authors: ["Newman, Sam"]
-    type: "book"
-
-
-
+  - title: Building Microservices (2nd Edition)
+    authors:
+      - Newman, Sam
+    type: book
     year: 2021
-    url: "https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/"
-
-
-    institution: "O'Reilly"
+    url: https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/
+    institution: O'Reilly
     note: "The definitive microservices book: decomposition, communication, testing, deployment"
-
-
-
 secondary_sources:
-  - title: "Microservices (Martin Fowler)"
-    authors: ["Fowler, Martin", "Lewis, James"]
-    type: "article"
-
-
-
+  - title: Microservices (Martin Fowler)
+    authors:
+      - Fowler, Martin
+      - Lewis, James
+    type: article
     year: 2014
-    url: "https://martinfowler.com/articles/microservices.html"
-
-
-    institution: "ThoughtWorks"
-    note: "The article that popularized microservices — smart endpoints, dumb pipes"
-
-
-
+    url: https://martinfowler.com/articles/microservices.html
+    institution: ThoughtWorks
+    note: The article that popularized microservices — smart endpoints, dumb pipes
 completeness: 0.88
 known_gaps:
-  - "Statistics and data cited are from 2021 and earlier; more recent data may have become available since publication"
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-  - "Recent developments from 2025-2026 may not be reflected"
+  - Statistics and data cited are from 2021 and earlier; more recent data may have become available since publication
+  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
+  - Recent developments from 2025-2026 may not be reflected
 disputed_statements:
-  - statement: "The microservices versus monolith debate remains active: while microservices offer independent deployability, critics note increased operational complexity and that many successful companies have migrated back to modular monoliths"
-    context: "See primary sources for competing interpretations"
-
-ai_citations:
+  - statement: >-
+      The microservices versus monolith debate remains active: while microservices offer independent deployability, critics note increased operational complexity and that many successful companies
+      have migrated back to modular monoliths
+    context: See primary sources for competing interpretations
+ai_citations: null
+atomic_facts:
+  - id: fact-computer-science-001
+    statement: >-
+      Microservices architectural style structures an application as a collection of loosely coupled, independently deployable services. Each service owns its data, communicates via APIs, and can be
+      developed/deployed/scaled independently. Contrasts with monolithic architecture (all-in-one).
+    confidence: medium
+    source_title: Building Microservices (2nd Edition)
+    source_url: https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/
+  - id: fact-computer-science-002
+    statement: "Key principles: decentralized data management (each service has its own database), smart endpoints/dumb pipes, design for failure (circuit breakers, retries, bulkheads)."
+    confidence: medium
+    source_title: Building Microservices (2nd Edition)
+    source_url: https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/
+  - id: fact-computer-science-003
+    statement: "Challenges: distributed complexity, network latency, data consistency (eventual consistency), service discovery."
+    confidence: medium
+    source_title: Building Microservices (2nd Edition)
+    source_url: https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/
 ---
+
 
 ## TL;DR
 

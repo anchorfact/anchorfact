@@ -1,70 +1,51 @@
 ---
-id: "kb-2026-00113"
-
-
-
-title: "Cross-Site Scripting (XSS)"
-schema_type: "TechArticle"
-
-
-
-category: "computer-science"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00113
+title: Cross-Site Scripting (XSS)
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "human_only"
-ai_models: ["claude-opus"]
+generation_method: human_only
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-
-
 known_gaps:
-  - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
-
+  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
-
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
+    context: See primary sources for competing interpretations
 atomic_facts:
   - id: fact-computer-science-01
     statement: "Prevention: output encoding, Content Security Policy , input validation"
-
-
     source_title: ACM Digital Library
     source_url: https://dl.acm.org/
     confidence: medium
-  
+  - id: fact-computer-science-001
+    statement: >-
+      XSS is an injection attack where malicious scripts are injected into trusted websites, executing in victims' browsers. Three types: Stored (persistent, in database), Reflected (in URL
+      parameters), DOM-based (client-side JavaScript vulnerability). Prevention: output encoding, Content Security Policy (CSP), input validation.
+    confidence: medium
+    source_title: ACM Digital Library
+    source_url: https://dl.acm.org/
 completeness: 0.88
-ai_citations:
-
+ai_citations: null
 primary_sources:
-  - title: "ACM Digital Library"
-    type: "repository"
-
-
-
+  - title: ACM Digital Library
+    type: repository
     year: 2026
-    url: "https://dl.acm.org/"
-
-
-    institution: "ACM"
+    url: https://dl.acm.org/
+    institution: ACM
 secondary_sources:
-  - title: "ACM Digital Library"
-    type: "repository"
-
-
-
+  - title: ACM Digital Library
+    type: repository
     year: 2026
-    url: "https://dl.acm.org/"
-
-
-    institution: "ACM"
+    url: https://dl.acm.org/
+    institution: ACM
 ---
+
 
 ## TL;DR
 

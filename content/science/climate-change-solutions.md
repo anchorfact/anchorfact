@@ -1,75 +1,53 @@
 ---
-id: "kb-2026-00453"
-
-
-
-title: "Climate Change Solutions"
-schema_type: "TechArticle"
-
-
-
-category: "science"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00453
+title: Climate Change Solutions
+schema_type: TechArticle
+category: science
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
 primary_sources:
   - title: "Drawdown: The Most Comprehensive Plan Ever Proposed to Reverse Global Warming (Paul Hawken)"
-    type: "book"
-
-
-
+    type: book
     year: 2017
-    url: "https://drawdown.org/"
-
-
-    institution: "Penguin"
+    url: https://drawdown.org/
+    institution: Penguin
 secondary_sources:
-  - title: "IPCC Sixth Assessment Report"
-    type: "report"
-
-
-
+  - title: IPCC Sixth Assessment Report
+    type: report
     year: 2023
-    url: "https://www.ipcc.ch/report/ar6/syr/"
-
-
-    institution: "IPCC / United Nations"
+    url: https://www.ipcc.ch/report/ar6/syr/
+    institution: IPCC / United Nations
+  - title: Biology (Campbell, 12th Edition)
+    type: textbook
+    year: 2020
+    url: https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058
+    institution: Pearson Education
 atomic_facts:
   - id: fact-science-01
     statement: "Solar: costs dropped 90% since 2010"
-
-
     source_title: "Drawdown: The Most Comprehensive Plan Ever Proposed to Reverse Global Warming (Paul Hawken)"
     source_url: https://drawdown.org/
     confidence: high
   - id: fact-science-02
     statement: "Electric vehicles: reach price parity with ICE by 2027"
-
-
     source_title: "Drawdown: The Most Comprehensive Plan Ever Proposed to Reverse Global Warming (Paul Hawken)"
     source_url: https://drawdown.org/
     confidence: high
-  
 completeness: 0.88
 disputed_statements:
-  - statement: "The precise magnitude of climate sensitivity (ECS) ranges from 2°C to 4.5°C across CMIP6 models; exact projections remain a subject of active research"
-    confidence: "medium"
-
-
+  - statement: The precise magnitude of climate sensitivity (ECS) ranges from 2°C to 4.5°C across CMIP6 models; exact projections remain a subject of active research
+    confidence: medium
 known_gaps:
-  - "Statistics and data cited are from 2023 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-ai_citations:
+  - Statistics and data cited are from 2023 and earlier; more recent data may have become available since publication
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
+ai_citations: null
 ---
+
 
 ## TL;DR
 

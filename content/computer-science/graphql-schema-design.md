@@ -1,59 +1,57 @@
 ---
-id: "kb-2026-00295"
-
-
-
-title: "GraphQL Schema Design"
-schema_type: "TechArticle"
-
-
-
-category: "computer-science"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00295
+title: GraphQL Schema Design
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
 primary_sources:
-  - title: "GraphQL Best Practices"
-    type: "guide"
-
-
-
+  - title: GraphQL Best Practices
+    type: guide
     year: 2024
-    url: "https://graphql.org/learn/best-practices/"
-
-
-    institution: "GraphQL Foundation"
+    url: https://graphql.org/learn/best-practices/
+    institution: GraphQL Foundation
 secondary_sources:
-  - title: "Learning GraphQL"
-    authors: ["Porcello", "Banks"]
-    type: "book"
-
-
-
+  - title: Learning GraphQL
+    authors:
+      - Porcello
+      - Banks
+    type: book
     year: 2018
-    url: "https://www.oreilly.com/library/view/learning-graphql/9781492030706/"
-
-
-    institution: "O'Reilly"
+    url: https://www.oreilly.com/library/view/learning-graphql/9781492030706/
+    institution: O'Reilly
 completeness: 0.88
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-  - "Recent developments from 2025-2026 may not be reflected"
+  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
+  - Recent developments from 2025-2026 may not be reflected
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
-
-ai_citations:
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
+    context: See primary sources for competing interpretations
+ai_citations: null
+atomic_facts:
+  - id: fact-computer-science-001
+    statement: >-
+      GraphQL schema design defines types, queries, mutations, and relationships. Best practices: design around business domain (not database schema), use Relay-style pagination (edges/nodes), avoid
+      deeply nested queries (N+1 solved by DataLoader), version via evolution (add fields, deprecate old ones — never remove).
+    confidence: medium
+    source_title: GraphQL Best Practices
+    source_url: https://graphql.org/learn/best-practices/
+  - id: fact-computer-science-001
+    statement: >-
+      GraphQL schema design defines types, queries, mutations, and relationships. Best practices: design around business domain (not database schema), use Relay-style pagination (edges/nodes), avoid
+      deeply nested queries (N+1 solved by DataLoader), version via evolution (add fields, deprecate old ones — never remove).
+    confidence: medium
+    source_title: GraphQL Best Practices
+    source_url: https://graphql.org/learn/best-practices/
 ---
+
+
 
 ## TL;DR
 

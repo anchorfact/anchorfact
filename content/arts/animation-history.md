@@ -1,58 +1,67 @@
 ---
-id: "kb-2026-00478"
-
-
-
-title: "Animation History"
-schema_type: "TechArticle"
-
-
-
-category: "arts"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00478
+title: Animation History
+schema_type: TechArticle
+category: arts
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
 primary_sources:
   - title: "The Illusion of Life: Disney Animation (Thomas & Johnston)"
-    type: "book"
-
-
-
+    type: book
     year: 1981
-    url: "https://www.disneybooks.com/book/the-illusion-of-life/"
-
-
-    institution: "Disney Editions"
+    url: https://www.disneybooks.com/book/the-illusion-of-life/
+    institution: Disney Editions
 secondary_sources:
   - title: "Film History: An Introduction"
-    type: "book"
-
-
-
+    type: book
     year: 2018
-    url: "https://www.mheducation.com/highered/product/film-history-introduction-thompson-bordwell/M9781259870354.html"
-
-
-    institution: "Kristin Thompson & David Bordwell, McGraw-Hill"
+    url: https://www.mheducation.com/highered/product/film-history-introduction-thompson-bordwell/M9781259870354.html
+    institution: Kristin Thompson & David Bordwell, McGraw-Hill
+  - title: The Story of Art (E.H. Gombrich)
+    type: textbook
+    year: 1995
+    url: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
+    institution: Phaidon Press
 completeness: 0.88
 known_gaps:
-  - "Statistics and data cited are from 2018 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - Statistics and data cited are from 2018 and earlier; more recent data may have become available since publication
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist and expressionist accounts"
-    context: "See primary sources for competing interpretations"
-
-ai_citations:
+  - statement: >-
+      The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist
+      and expressionist accounts
+    context: See primary sources for competing interpretations
+ai_citations: null
+atomic_facts:
+  - id: fact-arts-001
+    statement: >-
+      Animation creates the illusion of motion through sequential images. History: flip books → traditional hand-drawn (Disney, 1920s+) → stop-motion (clay, puppets) → CGI (Pixar's Toy Story, 1995,
+      first fully CGI feature) → modern hybrid. Disney's 12 principles of animation (Thomas & Johnston, 1981) remain foundational.
+    confidence: medium
+    source_title: "The Illusion of Life: Disney Animation (Thomas & Johnston)"
+    source_url: https://www.disneybooks.com/book/the-illusion-of-life/
+  - id: fact-arts-002
+    statement: "12 principles: squash and stretch, anticipation, staging, straight ahead vs."
+    confidence: medium
+    source_title: "The Illusion of Life: Disney Animation (Thomas & Johnston)"
+    source_url: https://www.disneybooks.com/book/the-illusion-of-life/
+  - id: fact-arts-003
+    statement: "Anime: Japanese distinctive style (Studio Ghibli — Miyazaki)."
+    confidence: medium
+    source_title: "The Illusion of Life: Disney Animation (Thomas & Johnston)"
+    source_url: https://www.disneybooks.com/book/the-illusion-of-life/
+  - id: fact-arts-004
+    statement: "Motion capture: record real movement → animate character (Andy Serkis — Gollum)."
+    confidence: medium
+    source_title: "The Illusion of Life: Disney Animation (Thomas & Johnston)"
+    source_url: https://www.disneybooks.com/book/the-illusion-of-life/
 ---
+
 
 ## TL;DR
 

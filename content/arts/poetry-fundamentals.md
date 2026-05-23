@@ -1,74 +1,55 @@
 ---
-id: "kb-2026-00493"
-
-
-
-title: "Poetry Fundamentals"
-schema_type: "TechArticle"
-
-
-
-category: "arts"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00493
+title: Poetry Fundamentals
+schema_type: TechArticle
+category: arts
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
 primary_sources:
-  - title: "The Poetry Handbook (Mary Oliver)"
-    type: "book"
-
-
-
+  - title: The Poetry Handbook (Mary Oliver)
+    type: book
     year: 1994
-    url: "https://www.harpercollins.com/products/a-poetry-handbook-mary-oliver?variant=32208032890914"
-
-
-    institution: "Harper Perennial"
+    url: https://www.harpercollins.com/products/a-poetry-handbook-mary-oliver?variant=32208032890914
+    institution: Harper Perennial
 secondary_sources:
-  - title: "The Norton Anthology of World Literature"
-    type: "book"
-
-
-
+  - title: The Norton Anthology of World Literature
+    type: book
     year: 2018
-    url: "https://wwnorton.com/books/9780393602814"
-
-
-    institution: "Martin Puchner et al., W.W. Norton"
+    url: https://wwnorton.com/books/9780393602814
+    institution: Martin Puchner et al., W.W. Norton
+  - title: The Story of Art (E.H. Gombrich)
+    type: textbook
+    year: 1995
+    url: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
+    institution: Phaidon Press
 atomic_facts:
   - id: fact-arts-01
     statement: "'Poetry is language at its most distilled and most powerful'"
-
-
     source_title: The Poetry Handbook (Mary Oliver)
     source_url: https://www.harpercollins.com/products/a-poetry-handbook-mary-oliver?variant=32208032890914
     confidence: high
   - id: fact-arts-02
     statement: "Silence again.' Free verse: dominant modern form — rhythm from natural speech, not meter"
-
-
     source_title: The Poetry Handbook (Mary Oliver)
     source_url: https://www.harpercollins.com/products/a-poetry-handbook-mary-oliver?variant=32208032890914
     confidence: high
-  
 completeness: 0.88
 known_gaps:
-  - "Statistics and data cited are from 2018 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - Statistics and data cited are from 2018 and earlier; more recent data may have become available since publication
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist and expressionist accounts"
-    context: "See primary sources for competing interpretations"
-
-ai_citations:
+  - statement: >-
+      The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist
+      and expressionist accounts
+    context: See primary sources for competing interpretations
+ai_citations: null
 ---
+
 
 ## TL;DR
 

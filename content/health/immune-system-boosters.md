@@ -1,58 +1,60 @@
 ---
-id: "kb-2026-00423"
-
-
-
-title: "Immune System Boosters"
-schema_type: "TechArticle"
-
-
-
-category: "health"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00423
+title: Immune System Boosters
+schema_type: TechArticle
+category: health
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
 primary_sources:
-  - title: "How the Immune System Works (Sompayrac, 6th Ed)"
-    type: "book"
-
-
-
+  - title: How the Immune System Works (Sompayrac, 6th Ed)
+    type: book
     year: 2019
-    url: "https://www.wiley.com/en-us/How+the+Immune+System+Works%2C+6th+Edition-p-9781119542124"
-
-
-    institution: "Wiley-Blackwell"
+    url: https://www.wiley.com/en-us/How+the+Immune+System+Works%2C+6th+Edition-p-9781119542124
+    institution: Wiley-Blackwell
 secondary_sources:
-  - title: "CDC Vaccines & Immunizations"
-    type: "report"
-
-
-
+  - title: CDC Vaccines & Immunizations
+    type: report
     year: 2025
-    url: "https://www.cdc.gov/vaccines/index.html"
-
-
-    institution: "Centers for Disease Control and Prevention"
+    url: https://www.cdc.gov/vaccines/index.html
+    institution: Centers for Disease Control and Prevention
+  - title: WHO Guidelines on Health and Well-Being
+    type: official_report
+    year: 2024
+    url: https://www.who.int/publications/
+    institution: World Health Organization
 completeness: 0.88
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
-
-ai_citations:
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
+    context: See primary sources for competing interpretations
+ai_citations: null
+atomic_facts:
+  - id: fact-health-001
+    statement: >-
+      Immune system 'boosters' are largely lifestyle factors, not supplements. Evidence-based: adequate sleep, regular moderate exercise, stress management, balanced diet (zinc, vitamin C, D), not
+      smoking, moderate alcohol. 'Boosting' the immune system is a marketing myth — you want balanced, not overactive (allergies, autoimmunity).
+    confidence: medium
+    source_title: How the Immune System Works (Sompayrac, 6th Ed)
+    source_url: https://www.wiley.com/en-us/How+the+Immune+System+Works%2C+6th+Edition-p-9781119542124
+  - id: fact-health-001
+    statement: >-
+      Immune system 'boosters' are largely lifestyle factors, not supplements. Evidence-based: adequate sleep, regular moderate exercise, stress management, balanced diet (zinc, vitamin C, D), not
+      smoking, moderate alcohol. 'Boosting' the immune system is a marketing myth — you want balanced, not overactive (allergies, autoimmunity).
+    confidence: medium
+    source_title: How the Immune System Works (Sompayrac, 6th Ed)
+    source_url: https://www.wiley.com/en-us/How+the+Immune+System+Works%2C+6th+Edition-p-9781119542124
 ---
+
+
 
 ## TL;DR
 

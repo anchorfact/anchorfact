@@ -1,65 +1,55 @@
 ---
-id: "kb-2026-00168"
-
-
-
-title: "HTML5 Semantic Elements"
-schema_type: "TechArticle"
-
-
-
-category: "computer-science"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00168
+title: HTML5 Semantic Elements
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
 primary_sources:
-  - title: "HTML Living Standard"
-    type: "standard"
-
-
-
+  - title: HTML Living Standard
+    type: standard
     year: 2026
-    url: "https://html.spec.whatwg.org/"
-
-
-    institution: "WHATWG"
+    url: https://html.spec.whatwg.org/
+    institution: WHATWG
     note: "Living standard: section, article, nav, header, footer, main, aside, figure elements"
-
-
-
 secondary_sources:
-  - title: "MDN Web Docs — HTML elements reference"
-    type: "documentation"
-
-
-
+  - title: MDN Web Docs — HTML elements reference
+    type: documentation
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
-
-
-    institution: "Mozilla"
-    note: "Comprehensive HTML element reference with browser compatibility and accessibility notes"
-
-
-
+    url: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+    institution: Mozilla
+    note: Comprehensive HTML element reference with browser compatibility and accessibility notes
 completeness: 0.88
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
-
-ai_citations:
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
+    context: See primary sources for competing interpretations
+ai_citations: null
+atomic_facts:
+  - id: fact-computer-science-001
+    statement: >-
+      HTML5 (2014) introduced semantic elements that describe their meaning to both browser and developer: `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, `<footer>`, `<figure>`,
+      `<time>`. They improve accessibility (screen readers), SEO, and code readability.
+    confidence: medium
+    source_title: MDN Web Docs — HTML elements reference
+    source_url: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+  - id: fact-computer-science-001
+    statement: >-
+      HTML5 (2014) introduced semantic elements that describe their meaning to both browser and developer: `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, `<footer>`, `<figure>`,
+      `<time>`. They improve accessibility (screen readers), SEO, and code readability.
+    confidence: medium
+    source_title: MDN Web Docs — HTML elements reference
+    source_url: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 ---
+
+
 
 ## TL;DR
 

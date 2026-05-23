@@ -1,38 +1,32 @@
 ---
-id: "kb-2026-00338"
-
-
-
-title: "Climate Change"
-schema_type: "TechArticle"
-
-
-
-category: "science"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00338
+title: Climate Change
+schema_type: TechArticle
+category: science
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
 primary_sources:
-  - title: "IPCC Sixth Assessment Report (AR6)"
-    type: "report"
-
-
-
+  - title: IPCC Sixth Assessment Report (AR6)
+    type: report
     year: 2023
-    url: "https://www.ipcc.ch/report/ar6/syr/"
-
-
-    institution: "IPCC"
+    url: https://www.ipcc.ch/report/ar6/syr/
+    institution: IPCC
 secondary_sources:
+  - title: Biology (Campbell, 12th Edition)
+    type: textbook
+    year: 2020
+    url: https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058
+    institution: Pearson Education
+  - title: "National Geographic: Science & Exploration"
+    type: reference
+    year: 2024
+    url: https://www.nationalgeographic.com/science
+    institution: National Geographic Society
 atomic_facts:
   - id: fact-science-01
     statement: Global average temperature has risen 1.2°C above pre-industrial levels
@@ -41,39 +35,28 @@ atomic_facts:
     confidence: medium
   - id: fact-science-02
     statement: "CO₂ levels: pre-industrial 280ppm → current 420+ ppm — highest in 800,000 years"
-
-
     source_title: IPCC Sixth Assessment Report (AR6)
     source_url: https://www.ipcc.ch/report/ar6/syr/
     confidence: medium
   - id: fact-science-03
     statement: "IPCC: 97%+ of climate scientists agree human activity is the primary cause"
-
-
     source_title: IPCC Sixth Assessment Report (AR6)
     source_url: https://www.ipcc.ch/report/ar6/syr/
     confidence: medium
-  
 disputed_statements:
-  - statement: "The precise magnitude of climate sensitivity (ECS) ranges from 2°C to 4.5°C across CMIP6 models; exact projections remain a subject of active research"
-    confidence: "medium"
-
-
+  - statement: The precise magnitude of climate sensitivity (ECS) ranges from 2°C to 4.5°C across CMIP6 models; exact projections remain a subject of active research
+    confidence: medium
 known_gaps:
-  - "Statistics and data cited are from 2023 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - Statistics and data cited are from 2023 and earlier; more recent data may have become available since publication
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 ai_citations:
-  - title: "IPCC Sixth Assessment Report"
-    type: "report"
-
-
-
+  - title: IPCC Sixth Assessment Report
+    type: report
     year: 2023
-    url: "https://www.ipcc.ch/report/ar6/syr/"
-
-
-    institution: "IPCC / United Nations"
+    url: https://www.ipcc.ch/report/ar6/syr/
+    institution: IPCC / United Nations
 ---
+
 
 ## TL;DR
 

@@ -1,48 +1,32 @@
 ---
-id: "kb-2026-00361"
-
-
-
-title: "Mughal Empire"
-schema_type: "TechArticle"
-
-
-
-category: "history"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00361
+title: Mughal Empire
+schema_type: TechArticle
+category: history
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
 primary_sources:
-  - title: "The Mughal Empire (John F. Richards)"
-    type: "book"
-
-
-
+  - title: The Mughal Empire (John F. Richards)
+    type: book
     year: 1993
-    url: "https://www.cambridge.org/core/books/mughal-empire/"
-
-
-    institution: "Cambridge University Press"
+    url: https://www.cambridge.org/core/books/mughal-empire/
+    institution: Cambridge University Press
 secondary_sources:
   - title: "Empire: How Britain Made the Modern World"
-    type: "book"
-
-
-
+    type: book
     year: 2003
-    url: "https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540"
-
-
-    institution: "Niall Ferguson, Penguin"
+    url: https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540
+    institution: Niall Ferguson, Penguin
+  - title: The Penguin History of the World (J.M. Roberts)
+    type: textbook
+    year: 2014
+    url: https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
+    institution: Penguin Books
 atomic_facts:
   - id: fact-history-01
     statement: The Mughal Empire was a Muslim dynasty ruling most of the Indian subcontinent
@@ -56,22 +40,21 @@ atomic_facts:
     confidence: high
   - id: fact-history-03
     statement: "Decline: succession wars, Maratha uprisings, British East India Company expansion"
-
-
     source_title: The Mughal Empire (John F. Richards)
     source_url: https://www.cambridge.org/core/books/mughal-empire/
     confidence: high
-  
 completeness: 0.88
 known_gaps:
-  - "Statistics and data cited are from 2003 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - Statistics and data cited are from 2003 and earlier; more recent data may have become available since publication
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The economic impact of colonialism on colonized regions is deeply contested: some economic historians detect developmental benefits, while dependency theorists emphasize systematic extraction and structural underdevelopment"
-    context: "See primary sources for competing interpretations"
-
-ai_citations:
+  - statement: >-
+      The economic impact of colonialism on colonized regions is deeply contested: some economic historians detect developmental benefits, while dependency theorists emphasize systematic extraction
+      and structural underdevelopment
+    context: See primary sources for competing interpretations
+ai_citations: null
 ---
+
 
 ## TL;DR
 
