@@ -51,6 +51,7 @@ const REQUIRED_SECTIONS = [
 
 // ─── Helpers ───────────────────────────────────────────────────
 const { parseFrontmatter } = require('./lib/yaml-utils.cjs');
+const { SUPPORTED_LANGUAGES, isValidLanguage } = require('./lib/i18n-config.cjs');
 
 function getSources(fm) {
   const sources = fm.primary_sources;
