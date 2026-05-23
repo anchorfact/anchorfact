@@ -68,4 +68,4 @@ SameSite cookie attribute (2020+): `Strict` (never sent cross-site), `Lax` (defa
 
 ## Further Reading
 
-- [undefined](undefined)
+- 

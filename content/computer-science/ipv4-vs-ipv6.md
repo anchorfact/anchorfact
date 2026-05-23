@@ -70,5 +70,4 @@ IPv4: `192.168.1.1`, NAT needed due to address shortage. IPv6: `2001:db8::1`, no
 
 ## Further Reading
 
-- [undefined](undefined)
-- [undefined](undefined)
+- - 

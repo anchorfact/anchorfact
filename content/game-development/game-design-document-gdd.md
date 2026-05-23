@@ -69,4 +69,4 @@ GDD sections: Executive Summary (one-page pitch), Gameplay (core loop, mechanics
 
 ## Further Reading
 
-- [undefined](undefined)
+- 

@@ -78,4 +78,4 @@ SHA-1 (broken, 2017 collision demonstrated). MD5 (completely broken). SHA-2 fami
 
 ## Further Reading
 
-- [undefined](undefined)
+- 

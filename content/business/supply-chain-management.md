@@ -80,4 +80,4 @@ Bullwhip effect: small demand fluctuations amplify upstream, causing inventory i
 
 ## Further Reading
 
-- [undefined](undefined)
+- 

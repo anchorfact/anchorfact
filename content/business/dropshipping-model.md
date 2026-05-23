@@ -67,4 +67,4 @@ Advantages: low upfront investment (no inventory), location independence, easy t
 
 ## Further Reading
 
-- [undefined](undefined)
+- 

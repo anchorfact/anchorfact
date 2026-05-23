@@ -78,4 +78,4 @@ Set A = {1, 2, 3}. Subset: A ⊆ B means every element of A is in B. Power set P
 
 ## Further Reading
 
-- [undefined](undefined)
+- 

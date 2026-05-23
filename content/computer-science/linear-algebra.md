@@ -68,4 +68,4 @@ Matrix multiplication: AB = C where C_ij = Σ A_ik * B_kj. Neural networks: forw
 
 ## Further Reading
 
-- [undefined](undefined)
+- 

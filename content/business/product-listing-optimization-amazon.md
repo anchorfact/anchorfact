@@ -82,4 +82,4 @@ Title formula: Brand + Model + Key Feature + Product Type + Size/Color. Bullet p
 
 ## Further Reading
 
-- [undefined](undefined)
+- 

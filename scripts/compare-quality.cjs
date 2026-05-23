@@ -56,12 +56,17 @@ function getScoresAtRef(ref) {
     console.log(`Note: quality-score.cjs didn't exist at ref ${ref}. Using current scorer on old content.`);
   }
 
+  // Validate ref against git reference format (prevent command injection)
+  if (!/^[a-zA-Z0-9][a-zA-Z0-9._/-]*$/.test(ref) || ref.includes('..')) {
+    console.error(`Invalid ref: "${ref}". Must match [a-zA-Z0-9._/-]+ without ".." sequences.`);
+    return null;
+  }
+
   // Get the content directory at that ref
-  const tempDir = path.join(REPO_DIR, '.temp-compare');
   try {
     // Save current content
     execSync(`git stash push -- content/ 2>/dev/null || true`, { cwd: REPO_DIR, stdio: 'ignore' });
-    // Checkout content from ref
+    // Checkout content from ref (ref is now validated)
     execSync(`git checkout ${ref} -- content/ 2>/dev/null`, { cwd: REPO_DIR, stdio: 'ignore' });
     // Score
     const scores = getCurrentScores();

@@ -73,4 +73,4 @@ Session management: after authentication, a session token (cookie, JWT) maintain
 
 ## Further Reading
 
-- [undefined](undefined)
+- 

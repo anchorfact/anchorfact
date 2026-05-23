@@ -62,4 +62,4 @@ A*: f(n) = g(n) + h(n). g = cost from start, h = heuristic (estimated cost to go
 
 ## Further Reading
 
-- [undefined](undefined)
+- 

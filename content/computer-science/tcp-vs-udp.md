@@ -73,5 +73,4 @@ TCP features: three-way handshake (SYN→SYN-ACK→ACK), sequence numbers, ackno
 
 ## Further Reading
 
-- [undefined](undefined)
-- [undefined](undefined)
+- - 

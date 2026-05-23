@@ -52,6 +52,15 @@ const SOURCE_TIER_SCORE = {
   'data_source':             5,
   'technical_book':          8,
   'book':                    6,
+  'paper':                  10,  // Alias for academic_paper (phase3-7 fix scripts handle this)
+  'preprint':               10,  // arXiv / preprint servers
+  'thesis':                 10,  // PhD/Master thesis
+  'dissertation':           10,  // Doctoral dissertation
+  'patent':                  8,  // Granted patent
+  'whitepaper':              7,  // Industry whitepaper
+  'book_chapter':            6,  // Chapter in edited volume
+  'specification':           8,  // Technical specification
+  'manual':                  6,  // User/technical manual
   'benchmark':               6,  // Benchmark dataset/paper
   'framework':               5,  // Software framework
   'blog_post':               4,  // C: personal/company blog

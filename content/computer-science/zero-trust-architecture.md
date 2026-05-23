@@ -83,4 +83,4 @@ Key components: microsegmentation (network isolation), identity-aware proxies, c
 
 ## Further Reading
 
-- [undefined](undefined)
+- 

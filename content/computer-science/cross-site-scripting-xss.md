@@ -68,4 +68,4 @@ Reflected XSS: attacker crafts URL with script in query parameter, victim clicks
 
 ## Further Reading
 
-- [undefined](undefined)
+- 

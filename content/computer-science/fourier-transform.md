@@ -65,4 +65,4 @@ Continuous FT: F(ω) = ∫ f(t)e^(-iωt) dt. Discrete FT: X_k = Σ x_n e^(-i2πk
 
 ## Further Reading
 
-- [undefined](undefined)
+- 

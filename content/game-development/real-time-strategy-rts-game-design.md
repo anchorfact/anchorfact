@@ -62,4 +62,4 @@ Fog of war: unexplored (black), explored but not visible (dim), currently visibl
 
 ## Further Reading
 
-- [undefined](undefined)
+- 

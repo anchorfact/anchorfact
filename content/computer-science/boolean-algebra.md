@@ -73,4 +73,4 @@ Truth tables enumerate all input combinations. Boolean algebra underlies: CPU lo
 
 ## Further Reading
 
-- [undefined](undefined)
+- 

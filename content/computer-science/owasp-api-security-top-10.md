@@ -70,4 +70,4 @@ API1: 2023 Broken Object Level Authorization (BOLA) — user accesses other user
 
 ## Further Reading
 
-- [undefined](undefined)
+- 
