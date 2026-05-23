@@ -10,7 +10,32 @@ generation_method: ai_assisted
 ai_models:
   - claude-opus
 derived_from_human_seed: true
-atomic_facts: []
+atomic_facts:
+  - id: fact-self-improvement-001
+    statement: "GTD (Getting Things Done, David Allen): capture everything → clarify → organize → review → engage."
+    confidence: medium
+    source_url: https://gettingthingsdone.com/
+    source_title: Getting Things Done (David Allen)
+  - id: fact-self-improvement-002
+    statement: "Pomodoro Technique (Cirillo): 25-min focused work + 5-min break."
+    confidence: medium
+    source_url: https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/
+    source_title: "Deep Work: Rules for Focused Success in a Distracted World (Cal Newport)"
+  - id: fact-self-improvement-003
+    statement: "Eisenhower Matrix: urgent/important quadrants."
+    confidence: medium
+    source_url: https://gettingthingsdone.com/
+    source_title: Getting Things Done (David Allen)
+  - id: fact-self-improvement-004
+    statement: "Time blocking: schedule specific tasks in calendar."
+    confidence: medium
+    source_url: https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/
+    source_title: "Deep Work: Rules for Focused Success in a Distracted World (Cal Newport)"
+  - id: fact-self-improvement-005
+    statement: "Two-minute rule: if task takes <2 minutes, do it now."
+    confidence: medium
+    source_url: https://gettingthingsdone.com/
+    source_title: Getting Things Done (David Allen)
 primary_sources:
   - title: Getting Things Done (David Allen)
     type: book
@@ -36,6 +61,7 @@ disputed_statements:
     context: See primary sources for competing approaches
 completeness: 0.85
 ---
+
 
 
 

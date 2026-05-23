@@ -24,6 +24,16 @@ secondary_sources:
     url: https://www.wiley.com/en-us/PHP+%26+MySQL%3A+Server+side+Web+Development-p-9781119149224
     institution: Wiley
     note: Practical PHP 8 guide covering modern web development patterns
+  - title: The C Programming Language (K&R, 2nd Ed)
+    type: textbook
+    year: 1988
+    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
+    institution: Prentice Hall
+  - title: Structure and Interpretation of Computer Programs (SICP)
+    type: textbook
+    year: 1996
+    url: https://mitpress.mit.edu/sites/default/files/sicp/
+    institution: MIT Press
 completeness: 0.88
 known_gaps:
   - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
@@ -63,6 +73,7 @@ atomic_facts:
     source_title: PHP Manual
     source_url: https://www.php.net/docs.php
 ---
+
 
 
 ## TL;DR

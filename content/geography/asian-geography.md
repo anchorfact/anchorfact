@@ -10,7 +10,32 @@ generation_method: ai_assisted
 ai_models:
   - claude-opus
 derived_from_human_seed: true
-atomic_facts: []
+atomic_facts:
+  - id: fact-geography-001
+    statement: 6 million km²) is the largest continent — 30% of Earth's land.
+    confidence: medium
+    source_url: https://www.nationalgeographic.com/books/atlas/
+    source_title: National Geographic Atlas of the World, 11th Ed
+  - id: fact-geography-002
+    statement: "Features: Himalayas (highest range), Gobi Desert, Yangtze River (longest in Asia, 6,300 km), Siberian taiga (largest forest), Dead Sea (lowest point on land, -430m)."
+    confidence: medium
+    source_url: https://www.nationalgeographic.com/books/atlas/
+    source_title: National Geographic Atlas of the World, 11th Ed
+  - id: fact-geography-003
+    statement: Monsoons define seasonal climate for billions.
+    confidence: medium
+    source_url: https://www.nationalgeographic.com/books/atlas/
+    source_title: National Geographic Atlas of the World, 11th Ed
+  - id: fact-geography-004
+    statement: "Tibet: 'roof of the world,' average 4,500m elevation."
+    confidence: medium
+    source_url: https://www.nationalgeographic.com/books/atlas/
+    source_title: National Geographic Atlas of the World, 11th Ed
+  - id: fact-geography-005
+    statement: "Southeast Asia: archipelago (Indonesia: 17,000+ islands), rice paddies, tropical monsoon."
+    confidence: medium
+    source_url: https://www.nationalgeographic.com/books/atlas/
+    source_title: National Geographic Atlas of the World, 11th Ed
 primary_sources:
   - title: National Geographic Atlas of the World, 11th Ed
     type: reference
@@ -36,6 +61,7 @@ disputed_statements:
     context: See National Geographic and CIA World Factbook
 completeness: 0.85
 ---
+
 
 
 

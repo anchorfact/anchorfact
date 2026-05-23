@@ -18,6 +18,26 @@ atomic_facts:
     confidence: high
     source_url: http://incompleteideas.net/book/the-book-2nd.html
     source_title: "Reinforcement Learning: An Introduction (2nd Ed, Sutton & Barto)"
+  - id: fact-ai-002
+    statement: "Key concepts: Agent, Environment, State, Action, Reward, Policy."
+    confidence: high
+    source_url: https://arxiv.org/abs/1707.06347
+    source_title: Proximal Policy Optimization Algorithms
+  - id: fact-ai-003
+    statement: "Famous successes: AlphaGo, Dota 2 (OpenAI Five), robotics."
+    confidence: high
+    source_url: https://www.nature.com/articles/nature16961
+    source_title: Mastering the Game of Go with Deep Neural Networks and Tree Search (AlphaGo)
+  - id: fact-ai-004
+    statement: "Value functions: V(s) expected return from state, Q(s,a) from state-action pair."
+    confidence: high
+    source_url: http://incompleteideas.net/book/the-book-2nd.html
+    source_title: "Reinforcement Learning: An Introduction (2nd Ed, Sutton & Barto)"
+  - id: fact-ai-005
+    statement: "Bellman equation: recursive relationship of value functions."
+    confidence: high
+    source_url: https://www.nature.com/articles/nature16961
+    source_title: Mastering the Game of Go with Deep Neural Networks and Tree Search (AlphaGo)
 primary_sources:
   - title: "Reinforcement Learning: An Introduction (2nd Ed, Sutton & Barto)"
     type: textbook
@@ -56,6 +76,7 @@ disputed_statements:
     context: See Sutton & Barto, Chapter 8-9
 completeness: 0.85
 ---
+
 ## TL;DR
 
 Reinforcement Learning (RL) trains agents to make sequential decisions by maximizing cumulative reward through trial-and-error interaction with an environment. Key concepts: Agent, Environment, State, Action, Reward, Policy. Famous successes: AlphaGo, Dota 2 (OpenAI Five), robotics.

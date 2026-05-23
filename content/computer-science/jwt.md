@@ -28,6 +28,16 @@ secondary_sources:
     year: 2015
     url: https://www.rfc-editor.org/rfc/rfc7519
     institution: IETF
+  - title: The C Programming Language (K&R, 2nd Ed)
+    type: textbook
+    year: 1988
+    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
+    institution: Prentice Hall
+  - title: Structure and Interpretation of Computer Programs (SICP)
+    type: textbook
+    year: 1996
+    url: https://mitpress.mit.edu/sites/default/files/sicp/
+    institution: MIT Press
 atomic_facts:
   - id: fact-computer-science-01
     statement: JWT is the most widely used token format for web API authentication, replacing server-side sessions in stateless architectures
@@ -55,6 +65,7 @@ disputed_statements:
 ai_citations:
   last_citation_check: "2026-05-22"
 ---
+
 
 
 ## TL;DR

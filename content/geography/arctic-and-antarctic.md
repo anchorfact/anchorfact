@@ -10,7 +10,32 @@ generation_method: ai_assisted
 ai_models:
   - claude-opus
 derived_from_human_seed: true
-atomic_facts: []
+atomic_facts:
+  - id: fact-geography-001
+    statement: "Arctic: ocean surrounded by continents, floating sea ice, indigenous peoples, polar bears."
+    confidence: medium
+    source_url: https://www.bradtguides.com/product/the-arctic/
+    source_title: "The Arctic: A Guide to Coastal Wildlife (Tony Soper)"
+  - id: fact-geography-002
+    statement: "Antarctic: continent surrounded by ocean, ice sheet (70% of Earth's freshwater), no permanent residents, penguins."
+    confidence: medium
+    source_url: https://www.nationalgeographic.com/books/atlas/
+    source_title: National Geographic Atlas of the World, 11th Ed
+  - id: fact-geography-003
+    statement: "Antarctic Treaty (1959): continent dedicated to peace and science."
+    confidence: medium
+    source_url: https://www.bradtguides.com/product/the-arctic/
+    source_title: "The Arctic: A Guide to Coastal Wildlife (Tony Soper)"
+  - id: fact-geography-004
+    statement: "Permafrost: frozen soil storing 1,500 Gt carbon — thaw releases CO₂/CH₄."
+    confidence: medium
+    source_url: https://www.bradtguides.com/product/the-arctic/
+    source_title: "The Arctic: A Guide to Coastal Wildlife (Tony Soper)"
+  - id: fact-geography-005
+    statement: "Antarctic ice sheet: 58m sea level equivalent if fully melted."
+    confidence: medium
+    source_url: https://www.bradtguides.com/product/the-arctic/
+    source_title: "The Arctic: A Guide to Coastal Wildlife (Tony Soper)"
 primary_sources:
   - title: "The Arctic: A Guide to Coastal Wildlife (Tony Soper)"
     type: book
@@ -36,6 +61,7 @@ disputed_statements:
     context: See IPCC AR6 and NOAA Arctic Report Card
 completeness: 0.85
 ---
+
 
 
 

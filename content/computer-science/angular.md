@@ -24,6 +24,16 @@ secondary_sources:
     url: https://www.oreilly.com/library/view/effective-typescript-2nd/9781098155056/
     institution: O'Reilly
     note: Angular's primary language is TypeScript — this book covers TS patterns used throughout Angular development
+  - title: The C Programming Language (K&R, 2nd Ed)
+    type: textbook
+    year: 1988
+    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
+    institution: Prentice Hall
+  - title: Structure and Interpretation of Computer Programs (SICP)
+    type: textbook
+    year: 1996
+    url: https://mitpress.mit.edu/sites/default/files/sicp/
+    institution: MIT Press
 atomic_facts:
   - id: fact-computer-science-01
     statement: "Used by: Google Cloud Console, Forbes, Delta"
@@ -63,6 +73,7 @@ disputed_statements:
     context: See primary sources for competing interpretations
 ai_citations: null
 ---
+
 
 
 ## TL;DR

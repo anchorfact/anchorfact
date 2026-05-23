@@ -22,6 +22,16 @@ secondary_sources:
     url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout
     institution: Mozilla
     note: Practical developer guide to Flexbox with interactive examples and browser compatibility tables
+  - title: The C Programming Language (K&R, 2nd Ed)
+    type: textbook
+    year: 1988
+    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
+    institution: Prentice Hall
+  - title: Structure and Interpretation of Computer Programs (SICP)
+    type: textbook
+    year: 1996
+    url: https://mitpress.mit.edu/sites/default/files/sicp/
+    institution: MIT Press
 completeness: 0.88
 known_gaps:
   - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
@@ -48,6 +58,7 @@ atomic_facts:
     source_title: CSS Flexible Box Layout Module Level 1 (W3C Candidate Recommendation)
     source_url: https://www.w3.org/TR/css-flexbox-1/
 ---
+
 
 
 

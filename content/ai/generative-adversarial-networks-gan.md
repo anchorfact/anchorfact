@@ -32,6 +32,24 @@ secondary_sources:
     url: https://www.deeplearningbook.org/
     institution: MIT Press
     note: "Chapter 20: Deep Generative Models — covers GANs, VAEs, and other generative approaches"
+  - title: Unsupervised Representation Learning with DCGAN
+    type: academic_paper
+    year: 2016
+    url: https://arxiv.org/abs/1511.06434
+    institution: ICLR
+    authors:
+      - Radford
+      - Metz
+      - Chintala
+  - title: Wasserstein GAN (WGAN)
+    type: academic_paper
+    year: 2017
+    url: https://arxiv.org/abs/1701.07875
+    institution: ICML / NYU
+    authors:
+      - Arjovsky
+      - Chintala
+      - Bottou
 completeness: 0.88
 disputed_statements:
   - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
@@ -83,6 +101,7 @@ atomic_facts:
     source_url: https://arxiv.org/abs/1406.2661
     source_doi: 10.48550/arXiv.1406.2661
 ---
+
 
 
 ## TL;DR

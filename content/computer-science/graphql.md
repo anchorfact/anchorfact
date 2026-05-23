@@ -1,74 +1,68 @@
 ---
-id: "kb-2026-00074"
-
-
-
-title: "GraphQL"
-schema_type: "TechArticle"
-
-
-
-category: "computer-science"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00074
+title: GraphQL
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
 primary_sources:
-  - title: "GraphQL Specification (October 2021)"
-    type: "standard"
-
-
-
-    url: "https://spec.graphql.org/"
-    institution: "GraphQL Foundation"
-  - title: "GraphQL Specification GitHub"
-    type: "repository"
-
-
-
-    url: "https://github.com/graphql/graphql-spec"
-    institution: "GitHub"
-
-
+  - title: GraphQL Specification (October 2021)
+    type: standard
+    url: https://spec.graphql.org/
+    institution: GraphQL Foundation
+  - title: GraphQL Specification GitHub
+    type: repository
+    url: https://github.com/graphql/graphql-spec
+    institution: GitHub
     stars: 14571
 secondary_sources:
-  - title: "Learning GraphQL"
-    authors: ["Porcello", "Banks"]
-    type: "book"
-
-
-
+  - title: Learning GraphQL
+    authors:
+      - Porcello
+      - Banks
+    type: book
     year: 2018
-    url: "https://www.oreilly.com/library/view/learning-graphql/9781492030706/"
-
-
-    institution: "O'Reilly"
+    url: https://www.oreilly.com/library/view/learning-graphql/9781492030706/
+    institution: O'Reilly
 atomic_facts:
   - id: fact-computer-science-01
     statement: GraphQL is a query language and runtime for APIs developed by Facebook in 2012 and open-sourced in 2015
     source_title: GraphQL Specification (October 2021)
     source_url: https://spec.graphql.org/
     confidence: medium
-  
+  - id: fact-computer-science-002
+    statement: Unlike REST where the server defines fixed endpoints, GraphQL lets clients request exactly the data they need in a single request — no over-fetching or under-fetching.
+    confidence: medium
+    source_url: https://spec.graphql.org/
+    source_title: GraphQL Specification (October 2021)
+  - id: fact-computer-science-003
+    statement: The specification is maintained by the GraphQL Foundation (part of the Linux Foundation).
+    confidence: medium
+    source_url: https://spec.graphql.org/
+    source_title: GraphQL Specification (October 2021)
+  - id: fact-computer-science-004
+    statement: Key adopters include GitHub, Shopify, Airbnb, and PayPal.
+    confidence: medium
+    source_url: https://github.com/graphql/graphql-spec
+    source_title: GraphQL Specification GitHub
 completeness: 0.88
 known_gaps:
-  - "Statistics and data cited are from 2018 and earlier; more recent data may have become available since publication"
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-  - "Recent developments from 2025-2026 may not be reflected"
+  - Statistics and data cited are from 2018 and earlier; more recent data may have become available since publication
+  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
+  - Recent developments from 2025-2026 may not be reflected
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
-
-ai_citations: {last_citation_check: "2026-05-22"}
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
+    context: See primary sources for competing interpretations
+ai_citations:
+  last_citation_check: "2026-05-22"
 ---
+
 
 ## TL;DR
 

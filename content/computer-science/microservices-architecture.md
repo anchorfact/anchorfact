@@ -27,6 +27,16 @@ secondary_sources:
     url: https://martinfowler.com/articles/microservices.html
     institution: ThoughtWorks
     note: The article that popularized microservices — smart endpoints, dumb pipes
+  - title: The C Programming Language (K&R, 2nd Ed)
+    type: textbook
+    year: 1988
+    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
+    institution: Prentice Hall
+  - title: Structure and Interpretation of Computer Programs (SICP)
+    type: textbook
+    year: 1996
+    url: https://mitpress.mit.edu/sites/default/files/sicp/
+    institution: MIT Press
 completeness: 0.88
 known_gaps:
   - Statistics and data cited are from 2021 and earlier; more recent data may have become available since publication
@@ -58,6 +68,7 @@ atomic_facts:
     source_title: Building Microservices (2nd Edition)
     source_url: https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/
 ---
+
 
 
 ## TL;DR

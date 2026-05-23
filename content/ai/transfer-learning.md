@@ -26,6 +26,27 @@ secondary_sources:
     url: https://www.deeplearningbook.org/
     institution: MIT Press
     note: "Chapter 15: Representation Learning — covers transfer learning and domain adaptation in deep networks"
+  - title: How transferable are features in deep neural networks?
+    type: academic_paper
+    year: 2014
+    url: https://arxiv.org/abs/1411.1792
+    institution: NIPS / Cornell
+    authors:
+      - Yosinski
+      - Clune
+      - Bengio
+      - Lipson
+  - title: A Closer Look at Few-shot Classification
+    type: academic_paper
+    year: 2019
+    url: https://arxiv.org/abs/1904.04232
+    institution: ICLR
+    authors:
+      - Chen
+      - Liu
+      - Kira
+      - Wang
+      - Huang
 completeness: 0.88
 disputed_statements:
   - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
@@ -74,6 +95,7 @@ atomic_facts:
     source_url: https://ieeexplore.ieee.org/document/5288526
     source_doi: 10.1109/TKDE.2009.191
 ---
+
 
 
 ## TL;DR

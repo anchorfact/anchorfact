@@ -27,6 +27,25 @@ secondary_sources:
     url: https://www.deeplearningbook.org/
     institution: MIT Press
     note: "Chapter 9: Convolutional Networks — comprehensive technical reference"
+  - title: Deep Residual Learning for Image Recognition (ResNet)
+    type: academic_paper
+    year: 2016
+    url: https://arxiv.org/abs/1512.03385
+    institution: Microsoft Research
+    authors:
+      - He
+      - Zhang
+      - Ren
+      - Sun
+  - title: Network In Network (1x1 Convolutions)
+    type: academic_paper
+    year: 2014
+    url: https://arxiv.org/abs/1312.4400
+    institution: ICLR
+    authors:
+      - Lin
+      - Chen
+      - Yan
 completeness: 0.88
 disputed_statements:
   - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
@@ -89,6 +108,7 @@ atomic_facts:
     source_url: https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks
     source_doi: 10.1145/3065386
 ---
+
 
 
 ## TL;DR

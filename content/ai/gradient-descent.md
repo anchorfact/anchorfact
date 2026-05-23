@@ -52,6 +52,7 @@ secondary_sources:
 ---
 
 
+
 ## TL;DR
 
 Gradient descent is the fundamental optimization algorithm for training machine learning models. It iteratively adjusts parameters in the direction of steepest descent of the loss function. Variants: Batch GD (full dataset), Stochastic GD (single example), Mini-batch GD (small batches — standard).

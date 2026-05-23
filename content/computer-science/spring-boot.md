@@ -25,6 +25,16 @@ secondary_sources:
     url: https://www.oreilly.com/library/view/cloud-native-java/9781492056284/
     institution: O'Reilly
     note: "Spring Boot in production: 12-factor apps, cloud-native patterns, Kubernetes integration"
+  - title: The C Programming Language (K&R, 2nd Ed)
+    type: textbook
+    year: 1988
+    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
+    institution: Prentice Hall
+  - title: Structure and Interpretation of Computer Programs (SICP)
+    type: textbook
+    year: 1996
+    url: https://mitpress.mit.edu/sites/default/files/sicp/
+    institution: MIT Press
 atomic_facts:
   - id: fact-computer-science-01
     statement: Built on the Spring Framework , it is the dominant Java backend framework
@@ -49,6 +59,7 @@ disputed_statements:
     context: See primary sources for competing interpretations
 ai_citations: null
 ---
+
 
 
 ## TL;DR

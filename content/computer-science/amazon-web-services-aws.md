@@ -1,55 +1,37 @@
 ---
-id: "kb-2026-00151"
-
-
-
-title: "Amazon Web Services (AWS)"
-schema_type: "TechArticle"
-
-
-
-category: "computer-science"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00151
+title: Amazon Web Services (AWS)
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
 primary_sources:
-  - title: "AWS Documentation"
-    type: "documentation"
-
-
-
+  - title: AWS Documentation
+    type: documentation
     year: 2026
-    url: "https://docs.aws.amazon.com/"
-
-
-    institution: "Amazon"
+    url: https://docs.aws.amazon.com/
+    institution: Amazon
     note: "Official AWS documentation covering 200+ services: EC2, S3, Lambda, DynamoDB, RDS, IAM"
-
-
-
 secondary_sources:
-  - title: "AWS Well-Architected Framework"
-    type: "framework"
-
-
-
+  - title: AWS Well-Architected Framework
+    type: framework
     year: 2024
-    url: "https://aws.amazon.com/architecture/well-architected/"
-
-
-    institution: "Amazon"
+    url: https://aws.amazon.com/architecture/well-architected/
+    institution: Amazon
     note: "AWS's recommended architectural best practices: operational excellence, security, reliability, performance efficiency, cost optimization, sustainability"
-
-
-
+  - title: The C Programming Language (K&R, 2nd Ed)
+    type: textbook
+    year: 1988
+    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
+    institution: Prentice Hall
+  - title: Structure and Interpretation of Computer Programs (SICP)
+    type: textbook
+    year: 1996
+    url: https://mitpress.mit.edu/sites/default/files/sicp/
+    institution: MIT Press
 atomic_facts:
   - id: fact-computer-science-01
     statement: AWS is the world's largest cloud provider, launched in 2006 with S3 and EC2
@@ -61,17 +43,18 @@ atomic_facts:
     source_title: AWS Documentation
     source_url: https://docs.aws.amazon.com/
     confidence: medium
-  
 completeness: 0.88
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
-
-ai_citations:
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
+    context: See primary sources for competing interpretations
+ai_citations: null
 ---
+
 
 ## TL;DR
 

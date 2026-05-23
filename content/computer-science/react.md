@@ -1,84 +1,73 @@
 ---
-id: "kb-2026-00023"
-
-
-
-title: "React"
-schema_type: "TechArticle"
-
-
-
-category: "computer-science"
-language: "en"
-
-
-
-confidence: "high"
-confidence_rationale: "Based on React official documentation and NPM download statistics"
-
-
-
+id: kb-2026-00023
+title: React
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
+confidence_rationale: Based on React official documentation and NPM download statistics
 last_verified: "2026-05-22"
-generation_method: "human_only"
-
-
-
-ai_models: ["claude-opus"]
+generation_method: human_only
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
 primary_sources:
-  - title: "React Documentation"
-    type: "documentation"
-
-
-
+  - title: React Documentation
+    type: documentation
     year: 2026
-    url: "https://react.dev/"
-
-
-    institution: "Meta"
-  - title: "React GitHub Repository"
-    type: "repository"
-
-
-
-    url: "https://github.com/facebook/react"
-    institution: "Meta"
-
-
-
+    url: https://react.dev/
+    institution: Meta
+  - title: React GitHub Repository
+    type: repository
+    url: https://github.com/facebook/react
+    institution: Meta
 secondary_sources:
-  - title: "React Documentation"
-    type: "documentation"
-
-
-
+  - title: React Documentation
+    type: documentation
     year: 2026
-    url: "https://react.dev/reference/react"
-
-
-    institution: "Meta"
+    url: https://react.dev/reference/react
+    institution: Meta
 atomic_facts:
   - id: fact-computer-science-01
-    statement: >-
-      Created by Jordan Walke in 2011 and open-sourced in May 2013, React introduced a component-based architecture and a
-      virtual DOM for efficient UI updates
+    statement: Created by Jordan Walke in 2011 and open-sourced in May 2013, React introduced a component-based architecture and a virtual DOM for efficient UI updates
     source_title: React Documentation
     source_url: https://react.dev/
     confidence: medium
-  
+  - id: fact-computer-science-002
+    statement: Created by Jordan Walke in 2011 and open-sourced in May 2013, React introduced a component-based architecture and a virtual DOM for efficient UI updates.
+    confidence: medium
+    source_url: https://react.dev/
+    source_title: React Documentation
+  - id: fact-computer-science-003
+    statement: As of 2026, React is the most widely used frontend library globally, with over 200,000 GitHub stars and billions of weekly NPM downloads.
+    confidence: medium
+    source_url: https://github.com/facebook/react
+    source_title: React GitHub Repository
+  - id: fact-computer-science-004
+    statement: React 19 (released December 2024) introduced Server Components as a stable feature, fundamentally changing the React rendering model.
+    confidence: medium
+    source_url: https://react.dev/
+    source_title: React Documentation
+  - id: fact-computer-science-005
+    statement: "</div> }`)\r - **JSX**: HTML-like syntax embedded in JavaScript\r - **Virtual DOM**: In-memory representation of the UI; React computes minimal DOM mutations\r - **Hooks** (React 16."
+    confidence: medium
+    source_url: https://react.dev/
+    source_title: React Documentation
 completeness: 0.85
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
-
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
+    context: See primary sources for competing interpretations
 related_entities:
-  - "entity:javascript"
-  - "entity:typescript"
-ai_citations:
+  - entity:javascript
+  - entity:typescript
+ai_citations: null
 ---
+
 
 ## TL;DR
 

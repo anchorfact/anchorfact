@@ -31,6 +31,16 @@ secondary_sources:
     url: https://www.oreilly.com/library/view/observability-engineering/9781492076438/
     institution: O'Reilly
     note: Metrics, logs, traces — structured events, OpenTelemetry, high-cardinality dimensions
+  - title: The C Programming Language (K&R, 2nd Ed)
+    type: textbook
+    year: 1988
+    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
+    institution: Prentice Hall
+  - title: Structure and Interpretation of Computer Programs (SICP)
+    type: textbook
+    year: 1996
+    url: https://mitpress.mit.edu/sites/default/files/sicp/
+    institution: MIT Press
 completeness: 0.88
 known_gaps:
   - Statistics and data cited are from 2022 and earlier; more recent data may have become available since publication
@@ -57,6 +67,7 @@ atomic_facts:
     source_title: Site Reliability Engineering (Google)
     source_url: https://sre.google/books/
 ---
+
 
 
 ## TL;DR

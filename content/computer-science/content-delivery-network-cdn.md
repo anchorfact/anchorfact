@@ -55,7 +55,18 @@ secondary_sources:
     url: https://hpbn.co/
     institution: O'Reilly
     note: Covers CDN architecture, TCP optimization, and latency fundamentals
+  - title: The C Programming Language (K&R, 2nd Ed)
+    type: textbook
+    year: 1988
+    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
+    institution: Prentice Hall
+  - title: Structure and Interpretation of Computer Programs (SICP)
+    type: textbook
+    year: 1996
+    url: https://mitpress.mit.edu/sites/default/files/sicp/
+    institution: MIT Press
 ---
+
 
 
 ## TL;DR

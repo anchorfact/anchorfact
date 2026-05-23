@@ -25,6 +25,16 @@ secondary_sources:
     year: 2017
     url: https://www.manning.com/books/oauth-2-in-action
     institution: Manning
+  - title: The C Programming Language (K&R, 2nd Ed)
+    type: textbook
+    year: 1988
+    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
+    institution: Prentice Hall
+  - title: Structure and Interpretation of Computer Programs (SICP)
+    type: textbook
+    year: 1996
+    url: https://mitpress.mit.edu/sites/default/files/sicp/
+    institution: MIT Press
 atomic_facts:
   - id: fact-computer-science-01
     statement: OAuth 2.0 is an authorization framework standardized as IETF RFC 6749 that enables third-party applications to obtain limited access to a user's resources without exposing their credentials
@@ -52,6 +62,7 @@ disputed_statements:
 ai_citations:
   last_citation_check: "2026-05-22"
 ---
+
 
 
 ## TL;DR

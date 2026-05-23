@@ -24,6 +24,16 @@ secondary_sources:
     url: https://www.manning.com/books/kubernetes-in-action-second-edition
     institution: Manning
     note: "Comprehensive guide: Pod lifecycle, Service types (ClusterIP, NodePort, LoadBalancer), ingress"
+  - title: The C Programming Language (K&R, 2nd Ed)
+    type: textbook
+    year: 1988
+    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
+    institution: Prentice Hall
+  - title: Structure and Interpretation of Computer Programs (SICP)
+    type: textbook
+    year: 1996
+    url: https://mitpress.mit.edu/sites/default/files/sicp/
+    institution: MIT Press
 atomic_facts:
   - id: fact-computer-science-01
     statement: A Pod is the smallest deployable unit in Kubernetes — one or more containers sharing network namespace, IPC, and storage volumes
@@ -48,6 +58,7 @@ disputed_statements:
     context: See primary sources for competing interpretations
 ai_citations: null
 ---
+
 
 
 ## TL;DR

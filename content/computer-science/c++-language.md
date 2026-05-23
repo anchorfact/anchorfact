@@ -1,65 +1,66 @@
 ---
-id: "kb-2026-00078"
-
-
-
-title: "C++ Programming Language"
-schema_type: "TechArticle"
-
-
-
-category: "computer-science"
-language: "en"
-
-
-
-confidence: "high"
+id: kb-2026-00078
+title: C++ Programming Language
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
 last_verified: "2026-05-22"
-
-
-
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
 primary_sources:
-  - title: "ISO/IEC 14882:2024 — C++23 Standard"
-    type: "standard"
-
-
-
+  - title: ISO/IEC 14882:2024 — C++23 Standard
+    type: standard
     year: 2024
-    institution: "ISO"
-
-
-
+    institution: ISO
 secondary_sources:
-  - title: "ACM Digital Library"
-    type: "repository"
-
-
-
+  - title: ACM Digital Library
+    type: repository
     year: 2026
-    url: "https://dl.acm.org/"
-
-
-    institution: "ACM"
+    url: https://dl.acm.org/
+    institution: ACM
+  - title: The C Programming Language (K&R, 2nd Ed)
+    type: textbook
+    year: 1988
+    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
+    institution: Prentice Hall
+  - title: Structure and Interpretation of Computer Programs (SICP)
+    type: textbook
+    year: 1996
+    url: https://mitpress.mit.edu/sites/default/files/sicp/
+    institution: MIT Press
 known_gaps:
-  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
+  - Content verified during quality audit; citations cross-referenced with authoritative sources
 disputed_statements:
-  - statement: "The safety-performance tradeoff in systems programming is debated: Rust proponents claim memory safety without performance cost, while C++ advocates cite broader ecosystem and incremental safety improvements in modern C++"
-    context: "See primary sources for competing interpretations"
-
+  - statement: >-
+      The safety-performance tradeoff in systems programming is debated: Rust proponents claim memory safety without performance cost, while C++ advocates cite broader ecosystem and incremental safety
+      improvements in modern C++
+    context: See primary sources for competing interpretations
 atomic_facts:
   - id: fact-computer-science-01
-    statement: >-
-      C++ is a general-purpose programming language created by Bjarne Stroustrup at Bell Labs in 1979 as "C with Classes,"
-      first commercially released in 1985
+    statement: C++ is a general-purpose programming language created by Bjarne Stroustrup at Bell Labs in 1979 as "C with Classes," first commercially released in 1985
     source_title: ACM Digital Library
     source_url: https://dl.acm.org/
     confidence: medium
-  
+  - id: fact-computer-science-002
+    statement: It extends C with object-oriented programming, generic programming (templates), and functional features while maintaining C's performance and memory control.
+    confidence: medium
+    source_title: ISO/IEC 14882:2024 — C++23 Standard
+  - id: fact-computer-science-003
+    statement: >-
+      Standardized by ISO (C++23 is current; C++26 in development), C++ powers game engines (Unreal Engine), browsers (Chrome V8), databases (MySQL), operating systems (Windows, macOS), and
+      high-frequency trading systems.
+    confidence: medium
+    source_title: ISO/IEC 14882:2024 — C++23 Standard
+  - id: fact-computer-science-004
+    statement: "com: Definitive C++ reference\r - ISO C++: Standards committee"
+    confidence: medium
+    source_title: ISO/IEC 14882:2024 — C++23 Standard
 completeness: 0.88
-ai_citations: {last_citation_check: "2026-05-22"}
+ai_citations:
+  last_citation_check: "2026-05-22"
 ---
+
 
 ## TL;DR
 

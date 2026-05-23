@@ -10,7 +10,34 @@ generation_method: ai_assisted
 ai_models:
   - claude-opus
 derived_from_human_seed: true
-atomic_facts: []
+atomic_facts:
+  - id: fact-ai-001
+    statement: First published in December 2022 (arXiv:2212.
+    confidence: high
+    source_url: https://arxiv.org/abs/2212.08073
+    source_title: "Constitutional AI: Harmlessness from AI Feedback"
+  - id: fact-ai-002
+    statement: >-
+      08073) and detailed in May 2023, CAI trains models to self-critique and self-correct based on constitutional principles, then uses AI-generated feedback instead of human feedback for
+      reinforcement learning.
+    confidence: high
+    source_url: https://arxiv.org/abs/2204.05862
+    source_title: Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback
+  - id: fact-ai-003
+    statement: This achieves both higher helpfulness and higher harmlessness simultaneously (a Pareto improvement), unlike traditional RLHF which typically trades one for the other.
+    confidence: high
+    source_url: https://arxiv.org/abs/2212.08073
+    source_title: "Constitutional AI: Harmlessness from AI Feedback"
+  - id: fact-ai-004
+    statement: Claude is the first model trained entirely with CAI.
+    confidence: high
+    source_url: https://arxiv.org/abs/2204.05862
+    source_title: Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback
+  - id: fact-ai-005
+    statement: "The training process has two stages:\r \r ### Stage 1: Supervised Learning (SL)\r \r The model is trained to **critique and revise its own responses** using randomly sampled constitutional principles."
+    confidence: high
+    source_url: https://arxiv.org/abs/2204.05862
+    source_title: Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback
 primary_sources:
   - title: "Constitutional AI: Harmlessness from AI Feedback"
     type: academic_paper
@@ -51,6 +78,7 @@ disputed_statements:
     context: See CAI paper discussion on constitutional design
 completeness: 0.85
 ---
+
 ## TL;DR
 
 Constitutional AI (CAI) is Anthropic's method for training AI systems to be helpful and harmless using explicit written principles — a "constitution" — rather than implicit human preferences. First published in December 2022 (arXiv:2212.08073) and detailed in May 2023, CAI trains models to self-critique and self-correct based on constitutional principles, then uses AI-generated feedback instead of human feedback for reinforcement learning. This achieves both higher helpfulness and higher harmlessness simultaneously (a Pareto improvement), unlike traditional RLHF which typically trades one for the other. Claude is the first model trained entirely with CAI.

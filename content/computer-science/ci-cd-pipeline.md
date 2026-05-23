@@ -30,6 +30,16 @@ secondary_sources:
     url: https://itrevolution.com/product/the-devops-handbook-second-edition/
     institution: IT Revolution
     note: "CI/CD in the broader DevOps context: flow, feedback, and continuous learning"
+  - title: The C Programming Language (K&R, 2nd Ed)
+    type: textbook
+    year: 1988
+    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
+    institution: Prentice Hall
+  - title: Structure and Interpretation of Computer Programs (SICP)
+    type: textbook
+    year: 1996
+    url: https://mitpress.mit.edu/sites/default/files/sicp/
+    institution: MIT Press
 completeness: 0.88
 known_gaps:
   - Statistics and data cited are from 2021 and earlier; more recent data may have become available since publication
@@ -56,6 +66,7 @@ atomic_facts:
     source_title: Continuous Delivery (Jez Humble, David Farley)
     source_url: https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/
 ---
+
 
 
 ## TL;DR

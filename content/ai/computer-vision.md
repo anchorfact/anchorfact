@@ -18,6 +18,26 @@ atomic_facts:
     confidence: high
     source_url: https://szeliski.org/Book/
     source_title: "Computer Vision: Algorithms and Applications (2nd Ed)"
+  - id: fact-ai-002
+    statement: "Key tasks: image classification (what is this?"
+    confidence: high
+    source_url: https://arxiv.org/abs/2010.11929
+    source_title: "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (ViT)"
+  - id: fact-ai-003
+    statement: + bounding box), segmentation (pixel-level labeling), pose estimation, depth estimation, 3D reconstruction.
+    confidence: high
+    source_url: https://szeliski.org/Book/
+    source_title: "Computer Vision: Algorithms and Applications (2nd Ed)"
+  - id: fact-ai-004
+    statement: Deep learning (CNN, ViT) dominates since 2012.
+    confidence: high
+    source_url: https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html
+    source_title: ImageNet Classification with Deep Convolutional Neural Networks (AlexNet)
+  - id: fact-ai-005
+    statement: "Segmentation: U-Net (biomedical), Mask R-CNN, SAM (Segment Anything Model, Meta 2023)."
+    confidence: high
+    source_url: https://szeliski.org/Book/
+    source_title: "Computer Vision: Algorithms and Applications (2nd Ed)"
 primary_sources:
   - title: "Computer Vision: Algorithms and Applications (2nd Ed)"
     type: textbook
@@ -56,6 +76,7 @@ disputed_statements:
     context: See ViT paper and ConvNeXt comparison
 completeness: 0.85
 ---
+
 ## TL;DR
 
 Computer Vision enables machines to extract meaning from visual data. Key tasks: image classification (what is this?), object detection (where is it? + bounding box), segmentation (pixel-level labeling), pose estimation, depth estimation, 3D reconstruction. Deep learning (CNN, ViT) dominates since 2012.

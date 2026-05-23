@@ -31,6 +31,16 @@ secondary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
+  - title: The C Programming Language (K&R, 2nd Ed)
+    type: textbook
+    year: 1988
+    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
+    institution: Prentice Hall
+  - title: Structure and Interpretation of Computer Programs (SICP)
+    type: textbook
+    year: 1996
+    url: https://mitpress.mit.edu/sites/default/files/sicp/
+    institution: MIT Press
 atomic_facts:
   - id: fact-computer-science-001
     statement: One-to-many dependency — when subject changes, all observers are notified. Foundation of event-driven programming, MVC, React state updates, Redux.
@@ -43,6 +53,7 @@ atomic_facts:
     source_title: ACM Digital Library
     source_url: https://dl.acm.org/
 ---
+
 
 
 

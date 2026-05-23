@@ -10,7 +10,7 @@ generation_method: human_only
 derived_from_human_seed: true
 primary_sources:
   - title: Attention Is All You Need (Vaswani et al., 2017)
-    type: paper
+    type: academic_paper
     year: 2017
     url: https://arxiv.org/abs/1706.03762
     institution: NeurIPS
@@ -54,6 +54,7 @@ atomic_facts:
     source_title: Attention Is All You Need (Vaswani et al., 2017)
     source_url: https://arxiv.org/abs/1706.03762
 ---
+
 
 
 ## TL;DR

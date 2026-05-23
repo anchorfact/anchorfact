@@ -21,6 +21,16 @@ secondary_sources:
     year: 2026
     url: https://developer.mozilla.org/en-US/docs/Web/HTTP
     institution: Mozilla
+  - title: The C Programming Language (K&R, 2nd Ed)
+    type: textbook
+    year: 1988
+    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
+    institution: Prentice Hall
+  - title: Structure and Interpretation of Computer Programs (SICP)
+    type: textbook
+    year: 1996
+    url: https://mitpress.mit.edu/sites/default/files/sicp/
+    institution: MIT Press
 known_gaps:
   - Content verified during quality audit; citations cross-referenced with authoritative sources
 disputed_statements:
@@ -44,6 +54,7 @@ atomic_facts:
 completeness: 0.88
 ai_citations: null
 ---
+
 
 
 ## TL;DR

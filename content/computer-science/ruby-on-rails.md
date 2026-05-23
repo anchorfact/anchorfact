@@ -25,6 +25,16 @@ secondary_sources:
     url: https://www.oreilly.com/library/view/restful-web-apis/9781449359713/
     institution: O'Reilly
     note: Rails pioneered RESTful API design in web frameworks — DHH's convention-over-configuration REST approach
+  - title: The C Programming Language (K&R, 2nd Ed)
+    type: textbook
+    year: 1988
+    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
+    institution: Prentice Hall
+  - title: Structure and Interpretation of Computer Programs (SICP)
+    type: textbook
+    year: 1996
+    url: https://mitpress.mit.edu/sites/default/files/sicp/
+    institution: MIT Press
 atomic_facts:
   - id: fact-computer-science-01
     statement: "Turbo: replaces Rails UJS — faster page updates without full reload"
@@ -52,6 +62,7 @@ known_gaps:
   - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 ai_citations: null
 ---
+
 
 
 ## TL;DR

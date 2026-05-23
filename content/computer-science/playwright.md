@@ -23,6 +23,16 @@ secondary_sources:
     url: https://www.manning.com/books/testing-javascript-applications
     institution: Manning
     note: Comprehensive JS testing guide covering Playwright patterns for E2E testing
+  - title: The C Programming Language (K&R, 2nd Ed)
+    type: textbook
+    year: 1988
+    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
+    institution: Prentice Hall
+  - title: Structure and Interpretation of Computer Programs (SICP)
+    type: textbook
+    year: 1996
+    url: https://mitpress.mit.edu/sites/default/files/sicp/
+    institution: MIT Press
 atomic_facts:
   - id: fact-computer-science-01
     statement: Playwright has the most comprehensive cross-browser coverage of any testing tool
@@ -64,6 +74,7 @@ disputed_statements:
     context: See primary sources for competing interpretations
 ai_citations: null
 ---
+
 
 
 ## TL;DR

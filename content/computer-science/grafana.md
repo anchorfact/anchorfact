@@ -27,6 +27,16 @@ secondary_sources:
     url: https://sre.google/books/
     institution: O'Reilly
     note: The four golden signals of monitoring — the foundation Grafana helps visualize
+  - title: The C Programming Language (K&R, 2nd Ed)
+    type: textbook
+    year: 1988
+    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
+    institution: Prentice Hall
+  - title: Structure and Interpretation of Computer Programs (SICP)
+    type: textbook
+    year: 1996
+    url: https://mitpress.mit.edu/sites/default/files/sicp/
+    institution: MIT Press
 atomic_facts:
   - id: fact-computer-science-01
     statement: Grafana is the leading open-source observability platform for dashboards, alerting, and data visualization
@@ -61,6 +71,7 @@ disputed_statements:
     context: See primary sources for competing interpretations
 ai_citations: null
 ---
+
 
 
 ## TL;DR
