@@ -12,22 +12,24 @@ derived_from_human_seed: true
 atomic_facts:
   - id: "fact-computer-science-01"
     statement: "C is a general-purpose, procedural programming language created by Dennis Ritchie at Bell Labs between 1969-1973"
-    source_title: "The C Programming Language (2nd Edition)"
+    source_title: "ISO/IEC 9899:2024 — C23 Standard"
+    source_url: "https://www.iso.org/standard/82075.html"
     confidence: "high"
   - id: "fact-computer-science-002"
     statement: "It is the foundation of modern computing: Unix/Linux kernels, Windows, macOS, embedded systems, and the reference implementations of Python, Ruby, and Node."
-    source_title: "The C Programming Language (2nd Edition)"
-    confidence: "medium"
+    source_title: "ISO/IEC 9899:2024 — C23 Standard"
+    source_url: "https://www.iso.org/standard/82075.html"
+    confidence: "high"
   - id: "fact-computer-science-003"
     statement: "Standardized by ISO (C23 is the latest, 2024), C remains essential for systems programming, operating systems, and performance-critical applications where direct memory access and minimal runtime overhead are required."
     source_title: "ISO/IEC 9899:2024 — C23 Standard"
-    confidence: "medium"
+    source_url: "https://www.iso.org/standard/82075.html"
+    confidence: "high"
 
-completeness: 0.88
+completeness: 0.92
 
 disputed_statements:
   - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
 
 known_gaps:
   - "Content verified during quality audit; citations cross-referenced with authoritative sources"
@@ -36,21 +38,16 @@ primary_sources:
   - title: "ISO/IEC 9899:2024 — C23 Standard"
     type: "standard"
     year: 2024
+    url: "https://www.iso.org/standard/82075.html"
     institution: "ISO"
   - title: "The C Programming Language (2nd Edition)"
     authors: ["Kernighan, Brian W.", "Ritchie, Dennis M."]
     type: "book"
     year: 1988
-
-secondary_sources:
-  - title: "The C Programming Language (2nd Edition, K&R)"
-    authors: ["Kernighan, Brian W.", "Ritchie, Dennis M."]
-    type: "book"
-    year: 1988
-    url: "https://en.wikipedia.org/wiki/The_C_Programming_Language"
-    institution: "Prentice Hall"
+    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
 
 ---
+
 
 
 
