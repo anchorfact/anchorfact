@@ -6,9 +6,13 @@ category: "arts"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-political-philosophy-1"
@@ -22,6 +26,13 @@ atomic_facts:
 
 completeness: 0.9
 
+known_gaps:
+  - "Non-Western political philosophy traditions"
+  - "Digital governance and platform democracy"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
+
 primary_sources:
   - title: "A Theory of Justice"
     type: "textbook"
@@ -34,14 +45,8 @@ primary_sources:
     url: "https://www.cambridge.org/9780521567978"
     institution: "Cambridge University Press"
 
-known_gaps:
-  - "Non-Western political philosophy traditions"
-  - "Digital governance and platform democracy"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 ## TL;DR
 Political philosophy addresses fundamental questions of governance: What is justice? What justifies state authority? The social contract tradition — Hobbes through Locke and Rousseau to Rawls — provides the dominant Western framework.

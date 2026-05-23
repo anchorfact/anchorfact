@@ -6,21 +6,31 @@ category: "self-improvement"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "fact-si-022"
     statement: "Habit stacking (BJ Fogg, 'Tiny Habits'): anchor new habits to existing behaviors using formula 'After [current habit], I will [new habit].' Example: After brushing teeth, I will floss one tooth"
-    source_url: "https://www.hmhco.com/shop/books/tiny-habits/9780358362777"
     source_title: "Tiny Habits (BJ Fogg)"
+    source_url: "https://www.hmhco.com/shop/books/tiny-habits/9780358362777"
     confidence: "high"
   - id: "fact-si-023"
     statement: "James Clear's 4 Laws of Behavior Change (Atomic Habits, 2018): 1) Make it Obvious (cue), 2) Make it Attractive (craving), 3) Make it Easy (response), 4) Make it Satisfying (reward). Inversion for breaking bad habits: make invisible, unattractive, difficult, unsatisfying"
-    source_url: "https://jamesclear.com/atomic-habits"
     source_title: "Atomic Habits (James Clear)"
+    source_url: "https://jamesclear.com/atomic-habits"
     confidence: "high"
+
+completeness: 0.88
+
+known_gaps:
+  - "Habit change is highly individual; frameworks presented are evidence-based but effectiveness varies"
+  - "Deep-seated behavioral patterns may require therapeutic intervention beyond self-directed behavior design"
 
 primary_sources:
   - title: "Atomic Habits (James Clear)"
@@ -41,13 +51,8 @@ secondary_sources:
     url: "https://www.penguinrandomhouse.com/books/202917/the-power-of-habit-by-charles-duhigg/"
     institution: "Random House"
 
-known_gaps:
-  - "Habit change is highly individual; frameworks presented are evidence-based but effectiveness varies"
-  - "Deep-seated behavioral patterns may require therapeutic intervention beyond self-directed behavior design"
-
-completeness: 0.88
-
 ---
+
 
 ## TL;DR
 

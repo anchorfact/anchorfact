@@ -6,9 +6,13 @@ category: "ai"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-22"
+created_date: "2026-05-22"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "fact-ai-001"
@@ -39,13 +43,12 @@ atomic_facts:
 
 completeness: 0.85
 
-disputed_statements:
-  - statement: "The choice between SGD with momentum and adaptive optimizers (Adam, AdamW) remains contested; Adam converges faster but may generalize worse on some tasks"
-    context: "See Keskar et al. (2017) and Wilson et al. (2017)"
-
 known_gaps:
   - "Statistics and data cited are from 2024 and earlier; more recent developments may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The choice between SGD with momentum and adaptive optimizers (Adam, AdamW) remains contested; Adam converges faster but may generalize worse on some tasks"
 
 primary_sources:
   - title: "Deep Learning (Goodfellow, Bengio, Courville)"
@@ -70,6 +73,7 @@ secondary_sources:
     institution: "arXiv"
 
 ---
+
 
 
 

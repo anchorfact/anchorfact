@@ -6,9 +6,13 @@ category: "history"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-22"
+created_date: "2026-05-22"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "fact-history-01"
@@ -45,19 +49,8 @@ secondary_sources:
     url: "https://www.worldhistory.org/"
     institution: "World History Foundation"
 
-ai_citations:
-  - title: "Encyclopaedia Britannica"
-    type: "reference"
-    year: 2025
-    url: "https://www.britannica.com/"
-    institution: "Encyclopaedia Britannica, Inc."
-  - title: "The Penguin History of the World"
-    type: "book"
-    year: 1976
-    url: "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
-    institution: "J.M. Roberts, Penguin"
-
 ---
+
 
 
 

@@ -1,79 +1,75 @@
 ---
-id: kb-gd-031
-title: save systems design
-schema_type: TechArticle
-category: game-development
-language: zh
-confidence: high
-confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
+id: "kb-gd-031"
+title: "save systems design"
+schema_type: "TechArticle"
+category: "game-development"
+language: "zh"
+confidence: "high"
 last_verified: "2026-04-28"
-generation_method: human_only
+created_date: "2026-04-28"
+generation_method: "human_only"
 derived_from_human_seed: true
-tags:
-  - save-system
-  - serialization
-  - cloud-save
-  - security
-  - checkpoint
-  - data
-summary: ""
-primary_sources:
-  - title: 游戏开发Wiki（个人知识库）
-    type: knowledge_base
-    year: 2026
-    note: 基于行业实践和标准参考文献的系统性整理
-    url: https://www.gdconf.com/
-    institution: Game Developers Conference
-secondary_sources:
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
-    year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
-  - title: Game Programming Patterns (Robert Nystrom)
-    type: book
-    year: 2014
-    url: https://gameprogrammingpatterns.com/
-    institution: Genever Benning
-completeness: 0.85
-known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      Narrative-versus-systems-driven game design is a fundamental debate: story-focused games emphasize authored emotional arcs, while systems-driven games prioritize emergent player-driven
-      experiences
-    context: See primary sources for competing interpretations
-related_entities:
-  - entity:game-development
-ai_citations: null
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-gd-001
-    statement: "z);\r }\r \r public class SaveManager : MonoBehaviour\r {\r     private const string SAVE_FOLDER = \"/saves/\";\r     private const int CURRENT_VERSION = 2;\r     \r     public void SaveGame(int slotIndex)\r     {\r         var saveData = new SaveData\r         {\r             version = CURRENT_VERSION,\r             saveTime = DateTime."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-002
-    statement: "ToString(\"O\"),\r             levelName = SceneManager."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-003
-    statement: "name,\r             playerPosition = player."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-004
-    statement: "Capture(),\r             inventory = inventorySystem."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-005
-    statement: "Capture(),\r             quests = questSystem."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
+  - id: "fact-gd-001"
+    statement: "z); }  public class SaveManager : MonoBehaviour {     private const string SAVE_FOLDER = \"/saves/\";     private const int CURRENT_VERSION = 2;          public void SaveGame(int slotIndex)     {         var saveData = new SaveData         {             version = CURRENT_VERSION,             saveTime = DateTime."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-002"
+    statement: "ToString(\"O\"),             levelName = SceneManager."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-003"
+    statement: "name,             playerPosition = player."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-004"
+    statement: "Capture(),             inventory = inventorySystem."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-005"
+    statement: "Capture(),             quests = questSystem."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
+completeness: 0.85
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "Narrative-versus-systems-driven game design is a fundamental debate: story-focused games emphasize authored emotional arcs, while systems-driven games prioritize emergent player-driven experiences"
+
+primary_sources:
+  - title: "游戏开发Wiki（个人知识库）"
+    type: "knowledge_base"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "Game Developers Conference"
+
+secondary_sources:
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
+    year: 2018
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+  - title: "Game Programming Patterns (Robert Nystrom)"
+    type: "book"
+    year: 2014
+    url: "https://gameprogrammingpatterns.com/"
+    institution: "Genever Benning"
+
 ---
+
 
 
 

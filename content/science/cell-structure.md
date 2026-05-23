@@ -1,55 +1,60 @@
 ---
-id: kb-2026-00337
-title: Cell Structure
-schema_type: TechArticle
-category: science
-language: en
-confidence: high
+id: "kb-2026-00337"
+title: "Cell Structure"
+schema_type: "TechArticle"
+category: "science"
+language: "en"
+confidence: "high"
 last_verified: "2026-05-22"
-generation_method: ai_assisted
-ai_models:
-  - claude-opus
+created_date: "2026-05-22"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
 derived_from_human_seed: true
-primary_sources:
-  - title: Molecular Biology of the Cell (Alberts et al.)
-    type: book
-    year: 2022
-    url: https://wwnorton.com/books/9780393884821
-    institution: W.W. Norton
-secondary_sources:
-  - title: A Brief History of Time
-    type: book
-    year: 1988
-    url: https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/
-    institution: Stephen Hawking, Bantam
-  - title: Nature (journal)
-    type: journal
-    year: 2025
-    url: https://www.nature.com/
-    institution: Springer Nature
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-science-01
+  - id: "fact-science-01"
     statement: "Human body: 37 trillion cells"
-    source_title: Molecular Biology of the Cell (Alberts et al.)
-    source_url: https://wwnorton.com/books/9780393884821
-    confidence: high
-  - id: fact-science-001
-    statement: >-
-      Cells are the basic unit of life. Prokaryotes (bacteria, archaea): no nucleus, simple. Eukaryotes (animals, plants, fungi): nucleus, membrane-bound organelles. Key organelles: nucleus (DNA),
-      mitochondria (energy, ATP), endoplasmic reticulum (protein synthesis), Golgi apparatus (protein packaging), lysosomes (digestion).
-    confidence: medium
-    source_title: Molecular Biology of the Cell (Alberts et al.)
-    source_url: https://wwnorton.com/books/9780393884821
+    source_title: "Molecular Biology of the Cell (Alberts et al.)"
+    source_url: "https://wwnorton.com/books/9780393884821"
+    confidence: "high"
+  - id: "fact-science-001"
+    statement: "Cells are the basic unit of life. Prokaryotes (bacteria, archaea): no nucleus, simple. Eukaryotes (animals, plants, fungi): nucleus, membrane-bound organelles. Key organelles: nucleus (DNA), mitochondria (energy, ATP), endoplasmic reticulum (protein synthesis), Golgi apparatus (protein packaging), lysosomes (digestion)."
+    source_title: "Molecular Biology of the Cell (Alberts et al.)"
+    source_url: "https://wwnorton.com/books/9780393884821"
+    confidence: "medium"
+
 completeness: 0.88
+
 known_gaps:
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
 disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-ai_citations: null
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "Molecular Biology of the Cell (Alberts et al.)"
+    type: "book"
+    year: 2022
+    url: "https://wwnorton.com/books/9780393884821"
+    institution: "W.W. Norton"
+
+secondary_sources:
+  - title: "A Brief History of Time"
+    type: "book"
+    year: 1988
+    url: "https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/"
+    institution: "Stephen Hawking, Bantam"
+  - title: "Nature (journal)"
+    type: "journal"
+    year: 2025
+    url: "https://www.nature.com/"
+    institution: "Springer Nature"
+
 ---
+
 
 
 ## TL;DR

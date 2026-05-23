@@ -6,9 +6,13 @@ category: "sports"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-sports-nutrition-1"
@@ -22,6 +26,13 @@ atomic_facts:
 
 completeness: 0.9
 
+known_gaps:
+  - "Personalized nutrition based on genetic profiles"
+  - "Microbiome manipulation for performance"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
+
 primary_sources:
   - title: "Advanced Sports Nutrition, 3rd Edition"
     type: "textbook"
@@ -34,14 +45,8 @@ primary_sources:
     url: "https://jissn.biomedcentral.com/"
     institution: "ISSN"
 
-known_gaps:
-  - "Personalized nutrition based on genetic profiles"
-  - "Microbiome manipulation for performance"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 ## TL;DR
 Sports nutrition optimizes timing, quantity, and composition of nutrient intake to maximize training adaptations, competition performance, and recovery.

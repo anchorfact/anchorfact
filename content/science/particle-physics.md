@@ -6,9 +6,13 @@ category: "science"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-particle-physics-1"
@@ -22,6 +26,14 @@ atomic_facts:
 
 completeness: 0.9
 
+known_gaps:
+  - "Dark matter candidate particles"
+  - "Quantum gravity approaches"
+  - "Neutrino mass mechanism"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
+
 primary_sources:
   - title: "Introduction to Elementary Particles, 2nd Edition"
     type: "textbook"
@@ -34,15 +46,8 @@ primary_sources:
     url: "https://home.cern/science/physics/standard-model"
     institution: "CERN"
 
-known_gaps:
-  - "Dark matter candidate particles"
-  - "Quantum gravity approaches"
-  - "Neutrino mass mechanism"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 ## TL;DR
 The Standard Model is physics' most successful theory, describing all known fundamental particles and three of four fundamental forces. Discovered particles were predicted decades in advance — the Higgs boson took 48 years from theory to experimental confirmation.

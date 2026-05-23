@@ -6,9 +6,13 @@ category: "sports"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-sports-exercise-physiology-1"
@@ -22,6 +26,13 @@ atomic_facts:
 
 completeness: 0.9
 
+known_gaps:
+  - "Molecular mechanisms of muscle hypertrophy"
+  - "Sex differences in training response"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
+
 primary_sources:
   - title: "Exercise Physiology: Nutrition, Energy, and Human Performance, 9th Ed"
     type: "textbook"
@@ -34,14 +45,8 @@ primary_sources:
     url: "https://www.acsm.org/"
     institution: "American College of Sports Medicine"
 
-known_gaps:
-  - "Molecular mechanisms of muscle hypertrophy"
-  - "Sex differences in training response"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 ## TL;DR
 Exercise physiology explains how cardiovascular, respiratory, muscular, and endocrine systems adapt to training stress. These adaptations are the biological basis for improved athletic performance and health.

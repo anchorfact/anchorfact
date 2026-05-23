@@ -1,66 +1,76 @@
 ---
 id: ""
-title: Productivity Systems
-schema_type: TechArticle
-category: self-improvement
-language: en
-confidence: high
+title: "Productivity Systems"
+schema_type: "TechArticle"
+category: "self-improvement"
+language: "en"
+confidence: "high"
 last_verified: "2026-05-22"
-generation_method: ai_assisted
-ai_models:
-  - claude-opus
+created_date: "2026-05-22"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-self-improvement-001
+  - id: "fact-self-improvement-001"
     statement: "GTD (Getting Things Done, David Allen): capture everything → clarify → organize → review → engage."
-    confidence: medium
-    source_url: https://gettingthingsdone.com/
-    source_title: Getting Things Done (David Allen)
-  - id: fact-self-improvement-002
+    source_title: "Getting Things Done (David Allen)"
+    source_url: "https://gettingthingsdone.com/"
+    confidence: "medium"
+  - id: "fact-self-improvement-002"
     statement: "Pomodoro Technique (Cirillo): 25-min focused work + 5-min break."
-    confidence: medium
-    source_url: https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/
     source_title: "Deep Work: Rules for Focused Success in a Distracted World (Cal Newport)"
-  - id: fact-self-improvement-003
+    source_url: "https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/"
+    confidence: "medium"
+  - id: "fact-self-improvement-003"
     statement: "Eisenhower Matrix: urgent/important quadrants."
-    confidence: medium
-    source_url: https://gettingthingsdone.com/
-    source_title: Getting Things Done (David Allen)
-  - id: fact-self-improvement-004
+    source_title: "Getting Things Done (David Allen)"
+    source_url: "https://gettingthingsdone.com/"
+    confidence: "medium"
+  - id: "fact-self-improvement-004"
     statement: "Time blocking: schedule specific tasks in calendar."
-    confidence: medium
-    source_url: https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/
     source_title: "Deep Work: Rules for Focused Success in a Distracted World (Cal Newport)"
-  - id: fact-self-improvement-005
+    source_url: "https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/"
+    confidence: "medium"
+  - id: "fact-self-improvement-005"
     statement: "Two-minute rule: if task takes <2 minutes, do it now."
-    confidence: medium
-    source_url: https://gettingthingsdone.com/
-    source_title: Getting Things Done (David Allen)
-primary_sources:
-  - title: Getting Things Done (David Allen)
-    type: book
-    year: 2001
-    url: https://gettingthingsdone.com/
-    institution: Penguin
-  - title: "Deep Work: Rules for Focused Success in a Distracted World (Cal Newport)"
-    type: book
-    year: 2016
-    url: https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/
-    institution: Grand Central Publishing
-secondary_sources:
-  - title: Atomic Habits (James Clear)
-    type: book
-    year: 2018
-    url: https://jamesclear.com/atomic-habits
-    institution: Avery, Penguin Random House
-known_gaps:
-  - Statistics and data cited are from 2024 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: The effectiveness of time management and productivity techniques varies significantly by individual and context; no single system is universally optimal
-    context: See primary sources for competing approaches
+    source_title: "Getting Things Done (David Allen)"
+    source_url: "https://gettingthingsdone.com/"
+    confidence: "medium"
+
 completeness: 0.85
+
+known_gaps:
+  - "Statistics and data cited are from 2024 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The effectiveness of time management and productivity techniques varies significantly by individual and context; no single system is universally optimal"
+
+primary_sources:
+  - title: "Getting Things Done (David Allen)"
+    type: "book"
+    year: 2001
+    url: "https://gettingthingsdone.com/"
+    institution: "Penguin"
+  - title: "Deep Work: Rules for Focused Success in a Distracted World (Cal Newport)"
+    type: "book"
+    year: 2016
+    url: "https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/"
+    institution: "Grand Central Publishing"
+
+secondary_sources:
+  - title: "Atomic Habits (James Clear)"
+    type: "book"
+    year: 2018
+    url: "https://jamesclear.com/atomic-habits"
+    institution: "Avery, Penguin Random House"
+
 ---
+
 
 
 

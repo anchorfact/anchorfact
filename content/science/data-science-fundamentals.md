@@ -6,9 +6,13 @@ category: "science"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-data-science-fundamentals-1"
@@ -22,6 +26,13 @@ atomic_facts:
 
 completeness: 0.9
 
+known_gaps:
+  - "Responsible AI and fairness in data science"
+  - "Real-time data pipeline architectures"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
+
 primary_sources:
   - title: "Python for Data Analysis, 3rd Edition"
     type: "textbook"
@@ -34,14 +45,8 @@ primary_sources:
     url: "https://link.springer.com/book/10.1007/978-0-387-84858-7"
     institution: "Springer"
 
-known_gaps:
-  - "Responsible AI and fairness in data science"
-  - "Real-time data pipeline architectures"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 ## TL;DR
 Data science combines statistics, computer science, and domain expertise to extract insights from data. The modern workflow — from data wrangling through machine learning to deployment — is supported by Python's ecosystem and cloud infrastructure.

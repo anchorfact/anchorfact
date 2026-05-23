@@ -1,62 +1,67 @@
 ---
-id: kb-2026-00366
-title: Genetics and Heredity
-schema_type: TechArticle
-category: science
-language: en
-confidence: high
+id: "kb-2026-00366"
+title: "Genetics and Heredity"
+schema_type: "TechArticle"
+category: "science"
+language: "en"
+confidence: "high"
 last_verified: "2026-05-22"
-generation_method: ai_assisted
-ai_models:
-  - claude-opus
+created_date: "2026-05-22"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
+atomic_facts:
+  - id: "fact-science-01"
+    statement: "Human Genome Project sequenced all 3 billion base pairs"
+    source_title: "The Gene: An Intimate History (Siddhartha Mukherjee)"
+    source_url: "https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524"
+    confidence: "high"
+  - id: "fact-science-001"
+    statement: "Genetics studies heredity — how traits pass from parents to offspring. Mendel's laws (1866): segregation (alleles separate) and independent assortment. DNA structure (Watson/Crick, 1953). Human Genome Project (completed 2003) sequenced all ~3 billion base pairs. CRISPR-Cas9 (2012) enables precise gene editing."
+    source_title: "The Gene: An Intimate History (Siddhartha Mukherjee)"
+    source_url: "https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524"
+    confidence: "medium"
+  - id: "fact-science-002"
+    statement: "CRISPR: bacterial immune system repurposed for gene editing — Cas9 protein cuts DNA at guide RNA target."
+    source_title: "The Gene: An Intimate History (Siddhartha Mukherjee)"
+    source_url: "https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524"
+    confidence: "medium"
+
+completeness: 0.88
+
+known_gaps:
+  - "Statistics and data cited are from 2016 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - "Climate and environmental data may have been updated by more recent IPCC or scientific assessments"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
 primary_sources:
   - title: "The Gene: An Intimate History (Siddhartha Mukherjee)"
-    type: book
+    type: "book"
     year: 2016
-    url: https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524
-    institution: Scribner
+    url: "https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524"
+    institution: "Scribner"
+
 secondary_sources:
-  - title: Molecular Biology of the Gene
-    type: book
+  - title: "Molecular Biology of the Gene"
+    type: "book"
     year: 2013
-    url: https://www.pearson.com/en-us/subject-catalog/p/molecular-biology-of-the-gene/P200000007006
-    institution: James D. Watson et al., Pearson
-  - title: Biology (Campbell, 12th Edition)
-    type: textbook
+    url: "https://www.pearson.com/en-us/subject-catalog/p/molecular-biology-of-the-gene/P200000007006"
+    institution: "James D. Watson et al., Pearson"
+  - title: "Biology (Campbell, 12th Edition)"
+    type: "textbook"
     year: 2020
-    url: https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058
-    institution: Pearson Education
-atomic_facts:
-  - id: fact-science-01
-    statement: Human Genome Project sequenced all 3 billion base pairs
-    source_title: "The Gene: An Intimate History (Siddhartha Mukherjee)"
-    source_url: https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524
-    confidence: high
-  - id: fact-science-001
-    statement: >-
-      Genetics studies heredity — how traits pass from parents to offspring. Mendel's laws (1866): segregation (alleles separate) and independent assortment. DNA structure (Watson/Crick, 1953). Human
-      Genome Project (completed 2003) sequenced all ~3 billion base pairs. CRISPR-Cas9 (2012) enables precise gene editing.
-    confidence: medium
-    source_title: "The Gene: An Intimate History (Siddhartha Mukherjee)"
-    source_url: https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524
-  - id: fact-science-002
-    statement: "CRISPR: bacterial immune system repurposed for gene editing — Cas9 protein cuts DNA at guide RNA target."
-    confidence: medium
-    source_title: "The Gene: An Intimate History (Siddhartha Mukherjee)"
-    source_url: https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524
-completeness: 0.88
-known_gaps:
-  - Statistics and data cited are from 2016 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-  - Climate and environmental data may have been updated by more recent IPCC or scientific assessments
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-ai_citations: null
+    url: "https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058"
+    institution: "Pearson Education"
+
 ---
+
 
 
 ## TL;DR

@@ -18,7 +18,7 @@ const STRICT = process.argv.includes('--strict');
 
 const REQUIRED_FIELDS = [
   'id', 'title', 'schema_type', 'category', 'language',
-  'confidence', 'last_verified', 'generation_method', 'primary_sources'
+  'confidence', 'last_verified', 'created_date', 'generation_method', 'primary_sources'
 ];
 
 const VALID_CONFIDENCE = ['high', 'medium', 'low', 'disputed'];

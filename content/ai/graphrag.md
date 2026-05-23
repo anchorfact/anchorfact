@@ -1,73 +1,71 @@
 ---
-id: kb-2026-00019
-title: GraphRAG
-schema_type: TechArticle
-category: ai
-language: en
-confidence: high
+id: "kb-2026-00019"
+title: "GraphRAG"
+schema_type: "TechArticle"
+category: "ai"
+language: "en"
+confidence: "high"
 last_verified: "2026-05-22"
-generation_method: ai_assisted
-ai_models:
-  - claude-opus
+created_date: "2026-05-22"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-ai-001
-    statement: >-
-      Unlike standard RAG which retrieves flat text chunks via vector similarity, GraphRAG constructs a knowledge graph from raw text, detects communities using graph algorithms, and generates
-      hierarchical summaries at multiple levels.
-    confidence: high
-    source_url: https://arxiv.org/abs/2404.16130
+  - id: "fact-ai-001"
+    statement: "Unlike standard RAG which retrieves flat text chunks via vector similarity, GraphRAG constructs a knowledge graph from raw text, detects communities using graph algorithms, and generates hierarchical summaries at multiple levels."
     source_title: "From Local to Global: A Graph RAG Approach to Query-Focused Summarization"
-  - id: fact-ai-002
-    statement: This enables both local (entity-level) and global (dataset-level) query understanding.
-    confidence: high
-    source_url: https://arxiv.org/abs/2404.16130
+    source_url: "https://arxiv.org/abs/2404.16130"
+    confidence: "high"
+  - id: "fact-ai-002"
+    statement: "This enables both local (entity-level) and global (dataset-level) query understanding."
     source_title: "From Local to Global: A Graph RAG Approach to Query-Focused Summarization"
-  - id: fact-ai-003
-    statement: As of May 2026, the open-source repository has 33,157 GitHub stars and is deployed in Microsoft Discovery, an Azure-based agentic platform for scientific research.
-    confidence: high
-    source_url: https://arxiv.org/abs/2005.11401
-    source_title: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
-  - id: fact-ai-004
-    statement: This works well for factoid questions ("What is X?
-    confidence: high
-    source_url: https://arxiv.org/abs/2005.11401
-    source_title: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
-  - id: fact-ai-005
+    source_url: "https://arxiv.org/abs/2404.16130"
+    confidence: "high"
+  - id: "fact-ai-003"
+    statement: "As of May 2026, the open-source repository has 33,157 GitHub stars and is deployed in Microsoft Discovery, an Azure-based agentic platform for scientific research."
+    source_title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
+    source_url: "https://arxiv.org/abs/2005.11401"
+    confidence: "high"
+  - id: "fact-ai-004"
+    statement: "This works well for factoid questions (\"What is X?"
+    source_title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
+    source_url: "https://arxiv.org/abs/2005.11401"
+    confidence: "high"
+  - id: "fact-ai-005"
     statement: "\") but fails on global queries that require synthesizing information across an entire dataset (\"What are the main themes in these 1,000 documents?"
-    confidence: high
-    source_url: https://arxiv.org/abs/2404.16130
     source_title: "From Local to Global: A Graph RAG Approach to Query-Focused Summarization"
+    source_url: "https://arxiv.org/abs/2404.16130"
+    confidence: "high"
+
+completeness: 0.85
+
+known_gaps:
+  - "Statistics and data cited are from 2024 and earlier; more recent developments may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "Graph-based RAG approaches trade computational cost for improved multi-hop reasoning; the cost-benefit ratio varies significantly by domain and task complexity"
+
 primary_sources:
   - title: "From Local to Global: A Graph RAG Approach to Query-Focused Summarization"
-    type: academic_paper
+    authors: ["Edge", "Trinh", "Cheng", "et al."]
+    type: "academic_paper"
     year: 2024
-    url: https://arxiv.org/abs/2404.16130
-    institution: Microsoft Research
-    authors:
-      - Edge
-      - Trinh
-      - Cheng
-      - et al.
-  - title: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
-    type: academic_paper
+    url: "https://arxiv.org/abs/2404.16130"
+    institution: "Microsoft Research"
+  - title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
+    authors: ["Lewis", "Perez", "Piktus", "et al."]
+    type: "academic_paper"
     year: 2020
-    url: https://arxiv.org/abs/2005.11401
-    institution: Facebook AI Research
-    authors:
-      - Lewis
-      - Perez
-      - Piktus
-      - et al.
-secondary_sources: []
-known_gaps:
-  - Statistics and data cited are from 2024 and earlier; more recent developments may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: Graph-based RAG approaches trade computational cost for improved multi-hop reasoning; the cost-benefit ratio varies significantly by domain and task complexity
-    context: See GraphRAG paper and community benchmarks
-completeness: 0.85
+    url: "https://arxiv.org/abs/2005.11401"
+    institution: "Facebook AI Research"
+
 ---
+
 
 ## TL;DR
 

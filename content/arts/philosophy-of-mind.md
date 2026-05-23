@@ -6,9 +6,13 @@ category: "arts"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-22"
+created_date: "2026-05-22"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "fact-arts-01"
@@ -53,6 +57,7 @@ secondary_sources:
     institution: "Stanford University"
 
 ---
+
 
 
 

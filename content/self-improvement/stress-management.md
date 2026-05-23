@@ -6,26 +6,36 @@ category: "self-improvement"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "fact-si-014"
     statement: "Stress response (General Adaptation Syndrome, Hans Selye 1936): alarm (fight-or-flight via sympathetic nervous system), resistance (cortisol-mediated adaptation), exhaustion (resource depletion). Chronic stress linked to cardiovascular disease, immune suppression, mental health disorders"
-    source_url: "https://www.who.int/publications/"
     source_title: "WHO Stress Management Guidelines"
+    source_url: "https://www.who.int/publications/"
     confidence: "high"
   - id: "fact-si-015"
     statement: "MBSR (Mindfulness-Based Stress Reduction, Kabat-Zinn 1979): 8-week program combining meditation, body scan, yoga. Evidence: meta-analyses show moderate-to-large effect sizes for reducing anxiety (d=0.89-0.97) and stress"
-    source_url: "https://www.penguinrandomhouse.com/books/736/full-catastrophe-living-by-jon-kabat-zinn/"
     source_title: "Full Catastrophe Living (Kabat-Zinn)"
+    source_url: "https://www.penguinrandomhouse.com/books/736/full-catastrophe-living-by-jon-kabat-zinn/"
     confidence: "high"
   - id: "fact-si-016"
     statement: "Cognitive Behavioral Therapy (CBT) techniques for stress: cognitive restructuring (identify and challenge distorted thoughts), behavioral activation (increase rewarding activities), problem-solving therapy"
-    source_url: "https://www.penguinrandomhouse.com/"
     source_title: "Feeling Good (David Burns)"
+    source_url: "https://www.penguinrandomhouse.com/"
     confidence: "high"
+
+completeness: 0.85
+
+known_gaps:
+  - "Effect sizes cited are from meta-analytic averages; individual results vary significantly"
+  - "This article covers general stress management; clinical anxiety/depression may require professional treatment"
 
 primary_sources:
   - title: "Full Catastrophe Living (Jon Kabat-Zinn, Revised Ed)"
@@ -46,13 +56,8 @@ secondary_sources:
     url: "https://www.who.int/publications/"
     institution: "World Health Organization"
 
-known_gaps:
-  - "Effect sizes cited are from meta-analytic averages; individual results vary significantly"
-  - "This article covers general stress management; clinical anxiety/depression may require professional treatment"
-
-completeness: 0.85
-
 ---
+
 
 ## TL;DR
 

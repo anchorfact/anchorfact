@@ -1,85 +1,59 @@
 ---
 id: "kb-2026-00015"
-
-
-
 title: "SQL (Structured Query Language)"
 schema_type: "TechArticle"
-
-
-
 category: "computer-science"
 language: "en"
-
-
-
 confidence: "high"
-confidence_rationale: "Based on ISO/IEC 9075 standard and PostgreSQL/MySQL documentation"
-
-
-
 last_verified: "2026-05-22"
+created_date: "2026-05-22"
 generation_method: "human_only"
-
-
-
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
+atomic_facts:
+  - id: "fact-computer-science-01"
+    statement: "Boyce at IBM in 1974 and standardized by ANSI in 1986 and ISO in 1987, SQL remains — over 50 years later — the dominant database query language, used by virtually every application that stores structured data"
+    source_title: "ISO/IEC 9075:2023 — SQL Standard"
+    confidence: "medium"
+  - id: "fact-computer-science-02"
+    statement: "Designed by Donald D"
+    source_title: "PostgreSQL 17 Documentation"
+    source_url: "https://www.postgresql.org/docs/17/"
+    confidence: "medium"
+
+completeness: 0.88
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The NoSQL vs. SQL debate has evolved: while NoSQL offered horizontal scalability benefits, modern NewSQL systems (CockroachDB, Spanner) have narrowed the gap, and PostgreSQL's JSON support blurs the distinction"
+
 primary_sources:
   - title: "ISO/IEC 9075:2023 — SQL Standard"
     type: "standard"
-
-
-
     year: 2023
     institution: "ISO"
   - title: "PostgreSQL 17 Documentation"
     type: "documentation"
-
-
-
     year: 2026
     url: "https://www.postgresql.org/docs/17/"
-
-
     institution: "PostgreSQL Global Development Group"
 
 secondary_sources:
   - title: "MDN Web Docs — HTTP"
     type: "documentation"
-
-
-
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-
-
     institution: "Mozilla"
-atomic_facts:
-  - id: fact-computer-science-01
-    statement: >-
-      Boyce at IBM in 1974 and standardized by ANSI in 1986 and ISO in 1987, SQL remains — over 50 years later — the
-      dominant database query language, used by virtually every application that stores structured data
-    source_title: ISO/IEC 9075:2023 — SQL Standard
-    confidence: medium
-  - id: fact-computer-science-02
-    statement: Designed by Donald D
-    source_title: PostgreSQL 17 Documentation
-    source_url: https://www.postgresql.org/docs/17/
-    confidence: medium
-  
-completeness: 0.88
-known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-disputed_statements:
-  - statement: "The NoSQL vs. SQL debate has evolved: while NoSQL offered horizontal scalability benefits, modern NewSQL systems (CockroachDB, Spanner) have narrowed the gap, and PostgreSQL's JSON support blurs the distinction"
-    context: "See primary sources for competing interpretations"
 
-related_entities:
-  - "entity:databases"
-ai_citations:
 ---
+
 
 ## TL;DR
 

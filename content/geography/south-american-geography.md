@@ -6,9 +6,13 @@ category: "geography"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-south-american-geography-1"
@@ -22,6 +26,13 @@ atomic_facts:
 
 completeness: 0.9
 
+known_gaps:
+  - "Patagonia glacial systems"
+  - "Andean cultural geography"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
+
 primary_sources:
   - title: "Physical Geography of South America"
     type: "textbook"
@@ -34,14 +45,8 @@ primary_sources:
     url: "https://www.worldwildlife.org/places/amazon"
     institution: "World Wildlife Fund"
 
-known_gaps:
-  - "Patagonia glacial systems"
-  - "Andean cultural geography"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 ## TL;DR
 South America contains Earth's largest rainforest, longest mountain range, and most biodiverse ecosystems. The Amazon basin alone hosts 10% of all known species.

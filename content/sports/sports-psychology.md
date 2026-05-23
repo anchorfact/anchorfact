@@ -6,21 +6,31 @@ category: "sports"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "fact-sports-013"
     statement: "Sports psychology emerged as a formal discipline in the 1920s (Coleman Griffith, 'father of American sport psychology'). Key techniques: goal setting, visualization/imagery, self-talk, arousal regulation, concentration training"
-    source_url: "https://www.apadivisions.org/division-47"
     source_title: "APA Division 47: Society for Sport, Exercise and Performance Psychology"
+    source_url: "https://www.apadivisions.org/division-47"
     confidence: "high"
   - id: "fact-sports-014"
     statement: "Inverted-U hypothesis (Yerkes-Dodson Law): performance increases with arousal to an optimal point, then declines. Individual Zones of Optimal Functioning (IZOF, Hanin 1980): each athlete has unique optimal arousal level"
-    source_url: "https://www.apadivisions.org/division-47"
     source_title: "APA Sport Psychology Research"
+    source_url: "https://www.apadivisions.org/division-47"
     confidence: "high"
+
+completeness: 0.85
+
+known_gaps:
+  - "Sports psychology is a broad field; this article covers foundational concepts, not specialized interventions"
+  - "Research is ongoing; newer studies may provide updated evidence for specific techniques"
 
 primary_sources:
   - title: "Foundations of Sport and Exercise Psychology (Weinberg & Gould, 7th Ed)"
@@ -41,13 +51,8 @@ secondary_sources:
     url: "https://www.humankinetics.com/"
     institution: "Human Kinetics"
 
-known_gaps:
-  - "Sports psychology is a broad field; this article covers foundational concepts, not specialized interventions"
-  - "Research is ongoing; newer studies may provide updated evidence for specific techniques"
-
-completeness: 0.85
-
 ---
+
 
 ## TL;DR
 

@@ -6,8 +6,12 @@ category: "ai"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-22"
+created_date: "2026-05-22"
 generation_method: "human_only"
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "fact-ai-01"
@@ -33,14 +37,14 @@ atomic_facts:
 
 completeness: 0.88
 
-disputed_statements:
-  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
-
 known_gaps:
   - "Statistics and data cited are from 2023 and earlier; more recent data may have become available since publication"
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
   - "Recent developments from 2025-2026 may not be reflected"
+
+disputed_statements:
+  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
 
 primary_sources:
   - title: "Interpretable Machine Learning"
@@ -64,23 +68,8 @@ secondary_sources:
     url: "https://arxiv.org/abs/1602.04938"
     institution: "KDD / University of Washington"
 
-ai_citations:
-  - title: "The Mythos of Model Interpretability"
-    authors: ["Lipton, Zachary C."]
-    type: "academic_paper"
-    year: 2018
-    doi: "10.48550/arXiv.1606.03490"
-    url: "https://arxiv.org/abs/1606.03490"
-    institution: "Carnegie Mellon University"
-  - title: "The Mythos of Model Interpretability"
-    authors: ["Lipton, Zachary C."]
-    type: "academic_paper"
-    year: 2018
-    doi: "10.48550/arXiv.1606.03490"
-    url: "https://arxiv.org/abs/1606.03490"
-    institution: "Carnegie Mellon University"
-
 ---
+
 
 
 

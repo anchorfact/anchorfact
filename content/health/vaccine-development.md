@@ -6,9 +6,13 @@ category: "health"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-vaccine-development-1"
@@ -21,6 +25,13 @@ atomic_facts:
     confidence: "high"
 
 completeness: 0.9
+
+known_gaps:
+  - "Therapeutic cancer vaccines"
+  - "Vaccine cold chain logistics in developing nations"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
 
 primary_sources:
   - title: "Plotkin's Vaccines, 8th Edition"
@@ -40,14 +51,8 @@ secondary_sources:
     url: "https://immunizationdata.who.int/"
     institution: "WHO"
 
-known_gaps:
-  - "Therapeutic cancer vaccines"
-  - "Vaccine cold chain logistics in developing nations"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 ## TL;DR
 Vaccines train the immune system to recognize pathogens without causing disease. Modern platforms — mRNA, viral vector, protein subunit — enable rapid development, as demonstrated by COVID-19 vaccines reaching deployment in under 12 months.

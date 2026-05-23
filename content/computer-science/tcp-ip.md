@@ -1,88 +1,82 @@
 ---
-id: kb-2026-00011
-title: TCP/IP Protocol Suite
-schema_type: TechArticle
-category: computer-science
-language: en
-confidence: high
-confidence_rationale: Based on IETF RFCs 791, 793, 768, 792, 826, and RFC 8200 (IPv6) — the definitive Internet standards, all developed through the IETF's open consensus process
+id: "kb-2026-00011"
+title: "TCP/IP Protocol Suite"
+schema_type: "TechArticle"
+category: "computer-science"
+language: "en"
+confidence: "high"
 last_verified: "2026-05-22"
-generation_method: human_only
+created_date: "2026-05-22"
+generation_method: "human_only"
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-computer-science-01
-    statement: Standardized by Jon Postel at the IETF in 1980-1981, TCP/IP has scaled from ARPANET's 4 nodes to powering over 5.5 billion Internet users as of 2026
-    source_title: RFC 791 — Internet Protocol (IPv4)
-    source_url: https://www.rfc-editor.org/rfc/rfc791
-    confidence: medium
-  - id: fact-computer-science-002
-    statement: TCP (RFC 793, 1981) provides reliable, ordered, error-checked byte-stream delivery using acknowledgments, retransmission, and congestion control.
-    confidence: medium
-    source_url: https://www.rfc-editor.org/rfc/rfc793
-    source_title: RFC 793 — Transmission Control Protocol (TCP)
-  - id: fact-computer-science-003
-    statement: IP (RFC 791, 1981) handles addressing and routing — delivering individual packets (datagrams) from source to destination across an internetwork of networks.
-    confidence: medium
-    source_url: https://www.rfc-editor.org/rfc/rfc791
-    source_title: RFC 791 — Internet Protocol (IPv4)
-  - id: fact-computer-science-004
-    statement: Standardized by Jon Postel at the IETF in 1980-1981, TCP/IP has scaled from ARPANET's 4 nodes to powering over 5.
-    confidence: medium
-    source_url: https://www.rfc-editor.org/rfc/rfc793
-    source_title: RFC 793 — Transmission Control Protocol (TCP)
-  - id: fact-computer-science-005
-    statement: ")\r ```\r \r TCP segments are carried inside IP packets; IP packets are carried inside link-layer frames (Ethernet, WiFi)."
-    confidence: medium
-    source_url: https://www.rfc-editor.org/rfc/rfc793
-    source_title: RFC 793 — Transmission Control Protocol (TCP)
+  - id: "fact-computer-science-01"
+    statement: "Standardized by Jon Postel at the IETF in 1980-1981, TCP/IP has scaled from ARPANET's 4 nodes to powering over 5.5 billion Internet users as of 2026"
+    source_title: "RFC 791 — Internet Protocol (IPv4)"
+    source_url: "https://www.rfc-editor.org/rfc/rfc791"
+    confidence: "medium"
+  - id: "fact-computer-science-002"
+    statement: "TCP (RFC 793, 1981) provides reliable, ordered, error-checked byte-stream delivery using acknowledgments, retransmission, and congestion control."
+    source_title: "RFC 793 — Transmission Control Protocol (TCP)"
+    source_url: "https://www.rfc-editor.org/rfc/rfc793"
+    confidence: "medium"
+  - id: "fact-computer-science-003"
+    statement: "IP (RFC 791, 1981) handles addressing and routing — delivering individual packets (datagrams) from source to destination across an internetwork of networks."
+    source_title: "RFC 791 — Internet Protocol (IPv4)"
+    source_url: "https://www.rfc-editor.org/rfc/rfc791"
+    confidence: "medium"
+  - id: "fact-computer-science-004"
+    statement: "Standardized by Jon Postel at the IETF in 1980-1981, TCP/IP has scaled from ARPANET's 4 nodes to powering over 5."
+    source_title: "RFC 793 — Transmission Control Protocol (TCP)"
+    source_url: "https://www.rfc-editor.org/rfc/rfc793"
+    confidence: "medium"
+  - id: "fact-computer-science-005"
+    statement: ") ```  TCP segments are carried inside IP packets; IP packets are carried inside link-layer frames (Ethernet, WiFi)."
+    source_title: "RFC 793 — Transmission Control Protocol (TCP)"
+    source_url: "https://www.rfc-editor.org/rfc/rfc793"
+    confidence: "medium"
+
 completeness: 0.9
+
 known_gaps:
-  - Multipath TCP (MPTCP, RFC 8684) and QUIC-level transport innovations are separate topics
+  - "Multipath TCP (MPTCP, RFC 8684) and QUIC-level transport innovations are separate topics"
+
 disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-related_entities:
-  - entity:http-protocol
-  - entity:internet
-  - entity:dns
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
 primary_sources:
-  - title: RFC 791 — Internet Protocol (IPv4)
-    authors:
-      - Postel, J.
-    type: standard
+  - title: "RFC 791 — Internet Protocol (IPv4)"
+    authors: ["Postel, J."]
+    type: "standard"
     year: 1981
-    url: https://www.rfc-editor.org/rfc/rfc791
-    institution: IETF
-    note: The foundational IP specification. Defines IPv4 addressing, fragmentation, and the packet header format.
-  - title: RFC 793 — Transmission Control Protocol (TCP)
-    authors:
-      - Postel, J.
-    type: standard
+    url: "https://www.rfc-editor.org/rfc/rfc791"
+    institution: "IETF"
+  - title: "RFC 793 — Transmission Control Protocol (TCP)"
+    authors: ["Postel, J."]
+    type: "standard"
     year: 1981
-    url: https://www.rfc-editor.org/rfc/rfc793
-    institution: IETF
-    note: The original TCP specification. Defines reliable, connection-oriented byte-stream delivery.
-  - title: RFC 768 — User Datagram Protocol (UDP)
-    authors:
-      - Postel, J.
-    type: standard
+    url: "https://www.rfc-editor.org/rfc/rfc793"
+    institution: "IETF"
+  - title: "RFC 768 — User Datagram Protocol (UDP)"
+    authors: ["Postel, J."]
+    type: "standard"
     year: 1980
-    url: https://www.rfc-editor.org/rfc/rfc768
-    institution: IETF
-    note: Minimal transport protocol. Connectionless, no reliability guarantees. 8-byte header.
+    url: "https://www.rfc-editor.org/rfc/rfc768"
+    institution: "IETF"
+
 secondary_sources:
   - title: "Computer Networking: A Top-Down Approach (8th Edition)"
-    authors:
-      - Kurose, James
-      - Ross, Keith
-    type: book
+    authors: ["Kurose, James", "Ross, Keith"]
+    type: "book"
     year: 2020
-    url: https://www.pearson.com/en-us/subject-catalog/p/computer-networking/P200000003430
-    institution: Pearson
-    note: The standard networking textbook, used at universities worldwide
-ai_citations: null
+    url: "https://www.pearson.com/en-us/subject-catalog/p/computer-networking/P200000003430"
+    institution: "Pearson"
+
 ---
+
 
 
 ## TL;DR

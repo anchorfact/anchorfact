@@ -1,79 +1,75 @@
 ---
-id: kb-gd-029
-title: 程序化内容生成（PCG）
-schema_type: TechArticle
-category: game-development
-language: zh
-confidence: high
-confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
+id: "kb-gd-029"
+title: "程序化内容生成（PCG）"
+schema_type: "TechArticle"
+category: "game-development"
+language: "zh"
+confidence: "high"
 last_verified: "2026-04-28"
-generation_method: human_only
+created_date: "2026-04-28"
+generation_method: "human_only"
 derived_from_human_seed: true
-tags:
-  - procedural-generation
-  - pcg
-  - roguelike
-  - level-design
-  - terrain
-  - systems
-summary: ""
-primary_sources:
-  - title: 游戏开发Wiki（个人知识库）
-    type: knowledge_base
-    year: 2026
-    note: 基于行业实践和标准参考文献的系统性整理
-    url: https://www.gdconf.com/
-    institution: Game Developers Conference
-secondary_sources:
-  - title: GDC Vault
-    type: conference
-    year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
-    year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
-completeness: 0.85
-known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-related_entities:
-  - entity:game-development
-ai_citations: null
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-gd-001
+  - id: "fact-gd-001"
     statement: "# 程序化内容生成（PCG） > 从《Rogue》到《我的世界》，PCG 让无限内容成为可能。但真正的挑战不在于生成，而在于**生成有趣的内容**。 --- "
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-002
-    statement: "经典案例分析\r \r ---\r \r ## PCG 核心概念\r \r ### 什么是 PCG\r \r 程序化内容生成（Procedural Content Generation）指通过算法而非人工手动创建游戏内容。"
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-003
-    statement: "房间-走廊地牢（Room-and-Corridor）\r \r ```\r 算法：随机房间放置 + 最小生成树连接\r \r 步骤：\r 1."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-004
-    statement: "放置入口、出口、钥匙-门谜题\r ```\r \r **参数调优表：**\r \r | 参数 | 小型地牢 | 中型地牢 | 大型地牢 |\r |------|----------|----------|----------|\r | 房间数量 | 5-8 | 10-20 | 25-40 |\r | 最小房间尺寸 | 3x3 | 4x4 | 5x5 |\r | 最大房间尺寸 | 6x6 | 8x8 | 12x12 |\r | 房间间距 | 2 | 2-3 | 3-5 |\r | 循环边比例 | 15% | 20% | 25% |\r \r #### 2."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-005
-    statement: "细胞自动机洞穴（Cellular Automata）\r \r ```\r 初始化：随机填充 45-50% 的墙\r 迭代规则（4-5 次）：\r - 邻居墙 < 4 → 变为地板（平滑）\r - 邻居墙 ≥ 5 → 变为墙\r - 处理边界：始终为墙\r \r 后处理：\r - 连通性检测（Flood Fill）\r - 移除过小区域\r - 识别并标记房间\r ```\r \r #### 3."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-002"
+    statement: "经典案例分析  ---  ## PCG 核心概念  ### 什么是 PCG  程序化内容生成（Procedural Content Generation）指通过算法而非人工手动创建游戏内容。"
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-003"
+    statement: "房间-走廊地牢（Room-and-Corridor）  ``` 算法：随机房间放置 + 最小生成树连接  步骤： 1."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-004"
+    statement: "放置入口、出口、钥匙-门谜题 ```  **参数调优表：**  | 参数 | 小型地牢 | 中型地牢 | 大型地牢 | |------|----------|----------|----------| | 房间数量 | 5-8 | 10-20 | 25-40 | | 最小房间尺寸 | 3x3 | 4x4 | 5x5 | | 最大房间尺寸 | 6x6 | 8x8 | 12x12 | | 房间间距 | 2 | 2-3 | 3-5 | | 循环边比例 | 15% | 20% | 25% |  #### 2."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-005"
+    statement: "细胞自动机洞穴（Cellular Automata）  ``` 初始化：随机填充 45-50% 的墙 迭代规则（4-5 次）： - 邻居墙 < 4 → 变为地板（平滑） - 邻居墙 ≥ 5 → 变为墙 - 处理边界：始终为墙  后处理： - 连通性检测（Flood Fill） - 移除过小区域 - 识别并标记房间 ```  #### 3."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
+completeness: 0.85
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "游戏开发Wiki（个人知识库）"
+    type: "knowledge_base"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "Game Developers Conference"
+
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
+    year: 2018
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
 ---
+
 
 
 

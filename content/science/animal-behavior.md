@@ -1,80 +1,74 @@
 ---
-id: kb-2026-00490
-title: Animal Behavior
-schema_type: TechArticle
-category: science
-language: en
-confidence: high
+id: "kb-2026-00490"
+title: "Animal Behavior"
+schema_type: "TechArticle"
+category: "science"
+language: "en"
+confidence: "high"
 last_verified: "2026-05-22"
-generation_method: ai_assisted
-ai_models:
-  - claude-opus
+created_date: "2026-05-22"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
 derived_from_human_seed: true
-primary_sources:
-  - title: Animal Behavior (John Alcock, 11th Ed)
-    type: book
-    year: 2023
-    url: https://www.oxfordlearninglink.com/s-alcock-animal-behavior-11e
-    institution: Oxford University Press
-secondary_sources:
-  - title: Biology (Campbell, 12th Edition)
-    type: textbook
-    year: 2020
-    url: https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058
-    institution: Pearson Education
-  - title: "National Geographic: Science & Exploration"
-    type: reference
-    year: 2024
-    url: https://www.nationalgeographic.com/science
-    institution: National Geographic Society
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-science-01
+  - id: "fact-science-01"
     statement: "Imprinting : ducklings follow first moving object"
-    source_title: Animal Behavior (John Alcock, 11th Ed)
-    source_url: https://www.oxfordlearninglink.com/s-alcock-animal-behavior-11e
-    confidence: high
-  - id: fact-science-001
-    statement: >-
-      Animal behavior studies how animals interact with their environment, other organisms, and their own species. Tinbergen's 4 questions: mechanism (how?), ontogeny (development?), function
-      (adaptive value?), phylogeny (evolutionary history?). Key behaviors: communication, mating, foraging, social organization, migration, cooperation.
-    confidence: medium
-    source_title: Animal Behavior (John Alcock, 11th Ed)
-    source_url: https://www.oxfordlearninglink.com/s-alcock-animal-behavior-11e
-  - id: fact-science-002
+    source_title: "Animal Behavior (John Alcock, 11th Ed)"
+    source_url: "https://www.oxfordlearninglink.com/s-alcock-animal-behavior-11e"
+    confidence: "high"
+  - id: "fact-science-001"
+    statement: "Animal behavior studies how animals interact with their environment, other organisms, and their own species. Tinbergen's 4 questions: mechanism (how?), ontogeny (development?), function (adaptive value?), phylogeny (evolutionary history?). Key behaviors: communication, mating, foraging, social organization, migration, cooperation."
+    source_title: "Animal Behavior (John Alcock, 11th Ed)"
+    source_url: "https://www.oxfordlearninglink.com/s-alcock-animal-behavior-11e"
+    confidence: "medium"
+  - id: "fact-science-002"
     statement: "Bees' waggle dance (von Frisch, Nobel 1973): communicates food distance and direction."
-    confidence: medium
-    source_title: Animal Behavior (John Alcock, 11th Ed)
-    source_url: https://www.oxfordlearninglink.com/s-alcock-animal-behavior-11e
-  - id: fact-science-003
+    source_title: "Animal Behavior (John Alcock, 11th Ed)"
+    source_url: "https://www.oxfordlearninglink.com/s-alcock-animal-behavior-11e"
+    confidence: "medium"
+  - id: "fact-science-003"
     statement: "Imprinting (Lorenz): ducklings follow first moving object."
-    confidence: medium
-    source_title: Animal Behavior (John Alcock, 11th Ed)
-    source_url: https://www.oxfordlearninglink.com/s-alcock-animal-behavior-11e
-  - id: fact-science-004
+    source_title: "Animal Behavior (John Alcock, 11th Ed)"
+    source_url: "https://www.oxfordlearninglink.com/s-alcock-animal-behavior-11e"
+    confidence: "medium"
+  - id: "fact-science-004"
     statement: "Altruism paradox (Hamilton, 1964): kin selection — helping relatives helps shared genes."
-    confidence: medium
-    source_title: Animal Behavior (John Alcock, 11th Ed)
-    source_url: https://www.oxfordlearninglink.com/s-alcock-animal-behavior-11e
+    source_title: "Animal Behavior (John Alcock, 11th Ed)"
+    source_url: "https://www.oxfordlearninglink.com/s-alcock-animal-behavior-11e"
+    confidence: "medium"
+
 known_gaps:
-  - Statistics and data cited are from 2023 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
+  - "Statistics and data cited are from 2023 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
 disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-ai_citations:
-  - title: A Brief History of Time
-    type: book
-    year: 1988
-    url: https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/
-    institution: Stephen Hawking, Bantam
-  - title: Nature (journal)
-    type: journal
-    year: 2025
-    url: https://www.nature.com/
-    institution: Springer Nature
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "Animal Behavior (John Alcock, 11th Ed)"
+    type: "book"
+    year: 2023
+    url: "https://www.oxfordlearninglink.com/s-alcock-animal-behavior-11e"
+    institution: "Oxford University Press"
+
+secondary_sources:
+  - title: "Biology (Campbell, 12th Edition)"
+    type: "textbook"
+    year: 2020
+    url: "https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058"
+    institution: "Pearson Education"
+  - title: "National Geographic: Science & Exploration"
+    type: "reference"
+    year: 2024
+    url: "https://www.nationalgeographic.com/science"
+    institution: "National Geographic Society"
+
 ---
+
 
 
 ## TL;DR

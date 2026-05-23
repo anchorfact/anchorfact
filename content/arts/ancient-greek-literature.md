@@ -6,9 +6,13 @@ category: "arts"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-22"
+created_date: "2026-05-22"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "fact-arts-001"
@@ -27,13 +31,12 @@ atomic_facts:
     source_url: "https://www.gutenberg.org/ebooks/2199"
     confidence: "medium"
 
-disputed_statements:
-  - statement: "The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist and expressionist accounts"
-    context: "See primary sources for competing interpretations"
-
 known_gaps:
   - "Statistics and data cited are from 2020 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist and expressionist accounts"
 
 primary_sources:
   - title: "The Iliad (Homer, ~8th century BCE)"
@@ -59,14 +62,8 @@ secondary_sources:
     url: "https://wwnorton.com/books/9780393602814"
     institution: "W.W. Norton"
 
-ai_citations:
-  - title: "The Norton Anthology of World Literature"
-    type: "book"
-    year: 2018
-    url: "https://wwnorton.com/books/9780393602814"
-    institution: "Martin Puchner et al., W.W. Norton"
-
 ---
+
 
 
 

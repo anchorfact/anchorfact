@@ -1,80 +1,75 @@
 ---
-id: kb-gd-021
-title: input systems accessibility
-schema_type: TechArticle
-category: game-development
-language: zh
-confidence: high
-confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
+id: "kb-gd-021"
+title: "input systems accessibility"
+schema_type: "TechArticle"
+category: "game-development"
+language: "zh"
+confidence: "high"
 last_verified: "2026-04-28"
-generation_method: human_only
+created_date: "2026-04-28"
+generation_method: "human_only"
 derived_from_human_seed: true
-tags:
-  - input
-  - controls
-  - accessibility
-  - gamepad
-  - haptics
-  - remapping
-  - ui
-summary: ""
-primary_sources:
-  - title: 游戏开发Wiki（个人知识库）
-    type: knowledge_base
-    year: 2026
-    note: 基于行业实践和标准参考文献的系统性整理
-    url: https://www.gdconf.com/
-    institution: Game Developers Conference
-secondary_sources:
-  - title: GDC Vault
-    type: conference
-    year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
-    year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
-completeness: 0.85
-known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-related_entities:
-  - entity:game-development
-ai_citations: null
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-gd-001
-    statement: "2 动作映射系统\r \r ```csharp\r // 概念性动作映射配置\r public class InputActionMap\r {\r     public List<InputAction> actions = new()\r     {\r         new InputAction(\"Jump\")\r         {\r             bindings = new()\r             {\r                 new KeyBinding(KeyCode."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-002
-    statement: "Space),\r                 new KeyBinding(KeyCode."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-003
-    statement: "DoubleTap),\r                 new GamepadButtonBinding(GamepadButton."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-004
-    statement: "A),\r                 new GamepadButtonBinding(GamepadButton."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-005
-    statement: "8f)\r             },\r             interactions = new()\r             {\r                 new TapInteraction(tapTime: 0."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
+  - id: "fact-gd-001"
+    statement: "2 动作映射系统  ```csharp // 概念性动作映射配置 public class InputActionMap {     public List<InputAction> actions = new()     {         new InputAction(\"Jump\")         {             bindings = new()             {                 new KeyBinding(KeyCode."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-002"
+    statement: "Space),                 new KeyBinding(KeyCode."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-003"
+    statement: "DoubleTap),                 new GamepadButtonBinding(GamepadButton."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-004"
+    statement: "A),                 new GamepadButtonBinding(GamepadButton."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-005"
+    statement: "8f)             },             interactions = new()             {                 new TapInteraction(tapTime: 0."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
+completeness: 0.85
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "游戏开发Wiki（个人知识库）"
+    type: "knowledge_base"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "Game Developers Conference"
+
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
+    year: 2018
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
 ---
+
 
 
 

@@ -1,81 +1,75 @@
 ---
-id: kb-gd-026
-title: 游戏性能优化
-schema_type: TechArticle
-category: game-development
-language: zh
-confidence: high
-confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
+id: "kb-gd-026"
+title: "游戏性能优化"
+schema_type: "TechArticle"
+category: "game-development"
+language: "zh"
+confidence: "high"
 last_verified: "2026-04-28"
-generation_method: human_only
+created_date: "2026-04-28"
+generation_method: "human_only"
 derived_from_human_seed: true
-tags:
-  - performance
-  - optimization
-  - profiling
-  - memory
-  - cpu
-  - gpu
-  - loading
-  - mobile
-summary: ""
-primary_sources:
-  - title: 游戏开发Wiki（个人知识库）
-    type: knowledge_base
-    year: 2026
-    note: 基于行业实践和标准参考文献的系统性整理
-    url: https://www.gdconf.com/
-    institution: Game Developers Conference
-secondary_sources:
-  - title: GDC Vault
-    type: conference
-    year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
-    year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
-completeness: 0.85
-known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-related_entities:
-  - entity:game-development
-ai_citations: null
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-gd-001
+  - id: "fact-gd-001"
     statement: "# 游戏性能优化 > **过早优化是万恶之源** —— 但过晚优化是项目杀手。优化不是最后一步，而是贯穿开发始终的纪律。 --- "
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-002
-    statement: "平台特定优化\r \r ---\r \r ## 性能优化方法论\r \r ### 优化流程\r \r ```\r 正确优化顺序：\r \r 1."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-003
-    statement: "测量（Measure）\r    └── 确定瓶颈：CPU / GPU / 内存 / IO / 网络\r    └── 工具：Profiler、帧时间分析、内存快照\r \r 2."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-004
-    statement: "分析（Analyze）\r    └── 找到热点函数、资源消耗大户\r    └── 问：为什么慢？必要吗？有更快的方式吗？\r \r 3."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-005
-    statement: "优化（Optimize）\r    └── 针对瓶颈做最小必要改动\r    └── 一次只改一个变量，便于验证\r \r 4."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-002"
+    statement: "平台特定优化  ---  ## 性能优化方法论  ### 优化流程  ``` 正确优化顺序：  1."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-003"
+    statement: "测量（Measure）    └── 确定瓶颈：CPU / GPU / 内存 / IO / 网络    └── 工具：Profiler、帧时间分析、内存快照  2."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-004"
+    statement: "分析（Analyze）    └── 找到热点函数、资源消耗大户    └── 问：为什么慢？必要吗？有更快的方式吗？  3."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-005"
+    statement: "优化（Optimize）    └── 针对瓶颈做最小必要改动    └── 一次只改一个变量，便于验证  4."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
+completeness: 0.85
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "游戏开发Wiki（个人知识库）"
+    type: "knowledge_base"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "Game Developers Conference"
+
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
+    year: 2018
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
 ---
+
 
 
 

@@ -1,59 +1,61 @@
 ---
-id: kb-2026-00383
-title: Critical Thinking
-schema_type: TechArticle
-category: self-improvement
-language: en
-confidence: high
+id: "kb-2026-00383"
+title: "Critical Thinking"
+schema_type: "TechArticle"
+category: "self-improvement"
+language: "en"
+confidence: "high"
 last_verified: "2026-05-22"
-generation_method: ai_assisted
-ai_models:
-  - claude-opus
+created_date: "2026-05-22"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
 derived_from_human_seed: true
-primary_sources:
-  - title: Thinking, Fast and Slow (Daniel Kahneman)
-    type: book
-    year: 2011
-    url: https://us.macmillan.com/books/9780374533557/thinkingfastandslow
-    institution: Farrar, Straus and Giroux
-secondary_sources:
-  - title: Thinking, Fast and Slow
-    type: book
-    year: 2011
-    url: https://us.macmillan.com/books/9780374533557/thinkingfastandslow
-    institution: Daniel Kahneman, Farrar, Straus and Giroux
-  - title: Atomic Habits (James Clear)
-    type: book
-    year: 2018
-    url: https://jamesclear.com/atomic-habits
-    institution: Avery, Penguin Random House
-completeness: 0.88
-known_gaps:
-  - Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed
-  - Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-ai_citations:
-  last_citation_check: "2026-05-22"
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-self-improvement-001
-    statement: >-
-      Critical thinking is the objective analysis and evaluation of claims to form a judgment. Skills: identify assumptions, evaluate evidence, recognize logical fallacies, consider alternative
-      perspectives. System 1 (fast, intuitive) vs. System 2 (slow, deliberate) — Kahneman. Cognitive biases (confirmation bias, anchoring, availability heuristic) disto
-    confidence: medium
-    source_title: Thinking, Fast and Slow (Daniel Kahneman)
-    source_url: https://us.macmillan.com/books/9780374533557/thinkingfastandslow
-  - id: fact-self-improvement-001
-    statement: >-
-      Critical thinking is the objective analysis and evaluation of claims to form a judgment. Skills: identify assumptions, evaluate evidence, recognize logical fallacies, consider alternative
-      perspectives. System 1 (fast, intuitive) vs. System 2 (slow, deliberate) — Kahneman. Cognitive biases (confirmation bias, anchoring, availability heuristic) disto
-    confidence: medium
-    source_title: Thinking, Fast and Slow (Daniel Kahneman)
-    source_url: https://us.macmillan.com/books/9780374533557/thinkingfastandslow
+  - id: "fact-self-improvement-001"
+    statement: "Critical thinking is the objective analysis and evaluation of claims to form a judgment. Skills: identify assumptions, evaluate evidence, recognize logical fallacies, consider alternative perspectives. System 1 (fast, intuitive) vs. System 2 (slow, deliberate) — Kahneman. Cognitive biases (confirmation bias, anchoring, availability heuristic) disto"
+    source_title: "Thinking, Fast and Slow (Daniel Kahneman)"
+    source_url: "https://us.macmillan.com/books/9780374533557/thinkingfastandslow"
+    confidence: "medium"
+  - id: "fact-self-improvement-001"
+    statement: "Critical thinking is the objective analysis and evaluation of claims to form a judgment. Skills: identify assumptions, evaluate evidence, recognize logical fallacies, consider alternative perspectives. System 1 (fast, intuitive) vs. System 2 (slow, deliberate) — Kahneman. Cognitive biases (confirmation bias, anchoring, availability heuristic) disto"
+    source_title: "Thinking, Fast and Slow (Daniel Kahneman)"
+    source_url: "https://us.macmillan.com/books/9780374533557/thinkingfastandslow"
+    confidence: "medium"
+
+completeness: 0.88
+
+known_gaps:
+  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
+  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "Thinking, Fast and Slow (Daniel Kahneman)"
+    type: "book"
+    year: 2011
+    url: "https://us.macmillan.com/books/9780374533557/thinkingfastandslow"
+    institution: "Farrar, Straus and Giroux"
+
+secondary_sources:
+  - title: "Thinking, Fast and Slow"
+    type: "book"
+    year: 2011
+    url: "https://us.macmillan.com/books/9780374533557/thinkingfastandslow"
+    institution: "Daniel Kahneman, Farrar, Straus and Giroux"
+  - title: "Atomic Habits (James Clear)"
+    type: "book"
+    year: 2018
+    url: "https://jamesclear.com/atomic-habits"
+    institution: "Avery, Penguin Random House"
+
 ---
+
 
 
 

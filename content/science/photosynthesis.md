@@ -1,70 +1,65 @@
 ---
-id: kb-2026-00335
-title: Photosynthesis
-schema_type: TechArticle
-category: science
-language: en
-confidence: high
+id: "kb-2026-00335"
+title: "Photosynthesis"
+schema_type: "TechArticle"
+category: "science"
+language: "en"
+confidence: "high"
 last_verified: "2026-05-22"
-generation_method: ai_assisted
-ai_models:
-  - claude-opus
+created_date: "2026-05-22"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
 derived_from_human_seed: true
-primary_sources:
-  - title: Molecular Mechanisms of Photosynthesis (Blankenship)
-    type: book
-    year: 2021
-    url: https://www.wiley.com/en-us/Molecular+Mechanisms+of+Photosynthesis%2C+3rd+Edition-p-9781119800019
-    institution: Wiley
-secondary_sources:
-  - title: React Documentation
-    type: documentation
-    year: 2026
-    url: https://react.dev/reference/react
-    institution: Meta
-  - title: Biology (Campbell, 12th Edition)
-    type: textbook
-    year: 2020
-    url: https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058
-    institution: Pearson Education
-completeness: 0.88
-known_gaps:
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-ai_citations:
-  - title: A Brief History of Time
-    type: book
-    year: 1988
-    url: https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/
-    institution: Stephen Hawking, Bantam
-  - title: Nature (journal)
-    type: journal
-    year: 2025
-    url: https://www.nature.com/
-    institution: Springer Nature
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-science-001
-    statement: >-
-      Photosynthesis converts light energy to chemical energy (glucose) using CO₂ and H₂O, releasing O₂. Two stages: light-dependent reactions (thylakoid membrane, produce ATP + NADPH) and Calvin
-      cycle (stroma, fix CO₂ into sugar). C₃ plants (most), C₄ plants (corn, tropical), CAM plants (succulents) differ in carbon fixation.
-    confidence: medium
-    source_title: Molecular Mechanisms of Photosynthesis (Blankenship)
-    source_url: https://www.wiley.com/en-us/Molecular+Mechanisms+of+Photosynthesis%2C+3rd+Edition-p-9781119800019
-  - id: fact-science-002
+  - id: "fact-science-001"
+    statement: "Photosynthesis converts light energy to chemical energy (glucose) using CO₂ and H₂O, releasing O₂. Two stages: light-dependent reactions (thylakoid membrane, produce ATP + NADPH) and Calvin cycle (stroma, fix CO₂ into sugar). C₃ plants (most), C₄ plants (corn, tropical), CAM plants (succulents) differ in carbon fixation."
+    source_title: "Molecular Mechanisms of Photosynthesis (Blankenship)"
+    source_url: "https://www.wiley.com/en-us/Molecular+Mechanisms+of+Photosynthesis%2C+3rd+Edition-p-9781119800019"
+    confidence: "medium"
+  - id: "fact-science-002"
     statement: "Calvin cycle: RuBisCO enzyme fixes CO₂ (most abundant enzyme on Earth)."
-    confidence: medium
-    source_title: Molecular Mechanisms of Photosynthesis (Blankenship)
-    source_url: https://www.wiley.com/en-us/Molecular+Mechanisms+of+Photosynthesis%2C+3rd+Edition-p-9781119800019
-  - id: fact-science-003
-    statement: Photosynthesis produces essentially all atmospheric oxygen.
-    confidence: medium
-    source_title: Molecular Mechanisms of Photosynthesis (Blankenship)
-    source_url: https://www.wiley.com/en-us/Molecular+Mechanisms+of+Photosynthesis%2C+3rd+Edition-p-9781119800019
+    source_title: "Molecular Mechanisms of Photosynthesis (Blankenship)"
+    source_url: "https://www.wiley.com/en-us/Molecular+Mechanisms+of+Photosynthesis%2C+3rd+Edition-p-9781119800019"
+    confidence: "medium"
+  - id: "fact-science-003"
+    statement: "Photosynthesis produces essentially all atmospheric oxygen."
+    source_title: "Molecular Mechanisms of Photosynthesis (Blankenship)"
+    source_url: "https://www.wiley.com/en-us/Molecular+Mechanisms+of+Photosynthesis%2C+3rd+Edition-p-9781119800019"
+    confidence: "medium"
+
+completeness: 0.88
+
+known_gaps:
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "Molecular Mechanisms of Photosynthesis (Blankenship)"
+    type: "book"
+    year: 2021
+    url: "https://www.wiley.com/en-us/Molecular+Mechanisms+of+Photosynthesis%2C+3rd+Edition-p-9781119800019"
+    institution: "Wiley"
+
+secondary_sources:
+  - title: "React Documentation"
+    type: "documentation"
+    year: 2026
+    url: "https://react.dev/reference/react"
+    institution: "Meta"
+  - title: "Biology (Campbell, 12th Edition)"
+    type: "textbook"
+    year: 2020
+    url: "https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058"
+    institution: "Pearson Education"
+
 ---
+
 
 
 ## TL;DR

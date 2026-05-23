@@ -6,9 +6,13 @@ category: "business"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-strategic-management-theory-1"
@@ -22,6 +26,13 @@ atomic_facts:
 
 completeness: 0.9
 
+known_gaps:
+  - "Agile strategy in fast-changing digital markets"
+  - "Platform business model strategy"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
+
 primary_sources:
   - title: "Competitive Strategy: Techniques for Analyzing Industries and Competitors"
     type: "textbook"
@@ -34,14 +45,8 @@ primary_sources:
     url: "https://www.harpercollins.com/"
     institution: "Harper & Row"
 
-known_gaps:
-  - "Agile strategy in fast-changing digital markets"
-  - "Platform business model strategy"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 ## TL;DR
 Strategic management defines how organizations create and sustain competitive advantage through analytical frameworks and disciplined execution.

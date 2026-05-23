@@ -1,77 +1,75 @@
 ---
-id: kb-gd-023
-title: 游戏商业化策略（Monetization Strategy）
-schema_type: TechArticle
-category: game-development
-language: zh
-confidence: high
-confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
+id: "kb-gd-023"
+title: "游戏商业化策略（Monetization Strategy）"
+schema_type: "TechArticle"
+category: "game-development"
+language: "zh"
+confidence: "high"
 last_verified: "2026-04-28"
-generation_method: human_only
+created_date: "2026-04-28"
+generation_method: "human_only"
 derived_from_human_seed: true
-tags:
-  - monetization
-  - f2p
-  - business
-  - game-design
-summary: 游戏商业化策略：F2P模式、Battle Pass、订阅制、广告变现、付费深度设计
-primary_sources:
-  - title: 游戏开发Wiki（个人知识库）
-    type: knowledge_base
-    year: 2026
-    note: 基于行业实践和标准参考文献的系统性整理
-    url: https://www.gdconf.com/
-    institution: Game Developers Conference
-secondary_sources:
-  - title: GDC Vault
-    type: conference
-    year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
-    year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
-completeness: 0.85
-known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The ethics of free-to-play monetization and loot boxes are contested: critics compare mechanics to gambling, while industry defenders argue they enable wider access to games without upfront
-      costs
-    context: See primary sources for competing interpretations
-related_entities:
-  - entity:game-development
-ai_citations: null
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-gd-001
+  - id: "fact-gd-001"
     statement: "# 游戏商业化策略（Monetization Strategy） 游戏商业化策略决定了产品如何将玩家参与度转化为可持续收入。优秀的商业化设计不仅能带来收入，还能增强玩家体验；而糟糕的设计则会破坏游戏经济、损害玩家信任。 --- "
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-002
-    statement: 优秀的商业化设计不仅能带来收入，还能增强玩家体验；而糟糕的设计则会破坏游戏经济、损害玩家信任。
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-003
-    statement: "1 买断制（Premium / Buy-to-Play）\r \r 玩家一次性付费购买游戏完整内容，后续无强制消费。"
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-004
-    statement: "| 维度 | 说明 |\r |------|------|\r | **收入公式** | 销量 × 单价 |\r | **优点** | 开发预期稳定、无付费墙、玩家口碑好、适合叙事/单机体验 |\r | **缺点** | 收入天花板低、无持续现金流、盗版风险 |\r | **代表产品** | 《艾尔登法环》《塞尔达传说》《Hades》 |\r | **定价策略** | 3A级 $59."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-005
-    statement: "99（移动端） |\r \r **变体模式：**\r - **扩展包/DLC**：通过新增内容延续收入（如《文明6》资料片）\r - **季票（Season Pass）**：预购未来内容包，降低单次购买决策门槛\r \r ---\r \r ### 1."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-002"
+    statement: "优秀的商业化设计不仅能带来收入，还能增强玩家体验；而糟糕的设计则会破坏游戏经济、损害玩家信任。"
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-003"
+    statement: "1 买断制（Premium / Buy-to-Play）  玩家一次性付费购买游戏完整内容，后续无强制消费。"
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-004"
+    statement: "| 维度 | 说明 | |------|------| | **收入公式** | 销量 × 单价 | | **优点** | 开发预期稳定、无付费墙、玩家口碑好、适合叙事/单机体验 | | **缺点** | 收入天花板低、无持续现金流、盗版风险 | | **代表产品** | 《艾尔登法环》《塞尔达传说》《Hades》 | | **定价策略** | 3A级 $59."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-005"
+    statement: "99（移动端） |  **变体模式：** - **扩展包/DLC**：通过新增内容延续收入（如《文明6》资料片） - **季票（Season Pass）**：预购未来内容包，降低单次购买决策门槛  ---  ### 1."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
+completeness: 0.85
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The ethics of free-to-play monetization and loot boxes are contested: critics compare mechanics to gambling, while industry defenders argue they enable wider access to games without upfront costs"
+
+primary_sources:
+  - title: "游戏开发Wiki（个人知识库）"
+    type: "knowledge_base"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "Game Developers Conference"
+
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
+    year: 2018
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
 ---
+
 
 
 

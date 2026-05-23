@@ -6,9 +6,13 @@ category: "science"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-22"
+created_date: "2026-05-22"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "fact-science-01"
@@ -38,8 +42,8 @@ secondary_sources:
     authors: ["Dettmers"]
     type: "academic_paper"
     year: 2023
-    doi: "10.48550/arXiv.2305.14314"
     url: "https://arxiv.org/abs/2305.14314"
+    doi: "10.48550/arXiv.2305.14314"
     institution: "arXiv"
   - title: "Biology (Campbell, 12th Edition)"
     type: "textbook"
@@ -47,19 +51,8 @@ secondary_sources:
     url: "https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058"
     institution: "Pearson Education"
 
-ai_citations:
-  - title: "A Brief History of Time"
-    type: "book"
-    year: 1988
-    url: "https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/"
-    institution: "Stephen Hawking, Bantam"
-  - title: "Nature (journal)"
-    type: "journal"
-    year: 2025
-    url: "https://www.nature.com/"
-    institution: "Springer Nature"
-
 ---
+
 
 
 

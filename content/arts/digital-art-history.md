@@ -6,9 +6,13 @@ category: "arts"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-digital-art-history-1"
@@ -27,6 +31,13 @@ atomic_facts:
 
 completeness: 0.9
 
+known_gaps:
+  - "AI art generation ethics and copyright implications"
+  - "Virtual reality as artistic medium"
+
+disputed_statements:
+  - statement: "Whether AI-generated art constitutes authorship"
+
 primary_sources:
   - title: "Digital Art (World of Art), 3rd Edition"
     type: "textbook"
@@ -44,14 +55,8 @@ primary_sources:
     url: "https://mitpress.mit.edu/9780262543187/"
     institution: "MIT Press"
 
-known_gaps:
-  - "AI art generation ethics and copyright implications"
-  - "Virtual reality as artistic medium"
-
-disputed_statements:
-  - statement: "Whether AI-generated art constitutes authorship"
-
 ---
+
 
 
 ## TL;DR

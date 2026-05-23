@@ -1,54 +1,61 @@
 ---
-id: kb-2026-00401
-title: Colonialism
-schema_type: TechArticle
-category: history
-language: en
-confidence: high
+id: "kb-2026-00401"
+title: "Colonialism"
+schema_type: "TechArticle"
+category: "history"
+language: "en"
+confidence: "high"
 last_verified: "2026-05-22"
-generation_method: ai_assisted
-ai_models:
-  - claude-opus
+created_date: "2026-05-22"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
+atomic_facts:
+  - id: "fact-history-01"
+    statement: "Decolonization: 1945-1975, 80 former colonies gained independence"
+    source_title: "The Scramble for Africa (Thomas Pakenham)"
+    source_url: "https://www.harpercollins.com/products/the-scramble-for-africa-thomas-pakenham"
+    confidence: "high"
+  - id: "fact-history-02"
+    statement: "Berlin Conference: 'Scramble for Africa' — by 1914, only Ethiopia and Liberia remained independent"
+    source_title: "The Scramble for Africa (Thomas Pakenham)"
+    source_url: "https://www.harpercollins.com/products/the-scramble-for-africa-thomas-pakenham"
+    confidence: "high"
+
+completeness: 0.88
+
+known_gaps:
+  - "Statistics and data cited are from 2003 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The economic impact of colonialism on colonized regions is contested among economic historians; views range from extractive exploitation models to more nuanced assessments of institutional legacy"
+
 primary_sources:
-  - title: The Scramble for Africa (Thomas Pakenham)
-    type: book
+  - title: "The Scramble for Africa (Thomas Pakenham)"
+    type: "book"
     year: 1991
-    url: https://www.harpercollins.com/products/the-scramble-for-africa-thomas-pakenham
-    institution: HarperCollins
+    url: "https://www.harpercollins.com/products/the-scramble-for-africa-thomas-pakenham"
+    institution: "HarperCollins"
+
 secondary_sources:
   - title: "Empire: How Britain Made the Modern World"
-    type: book
+    type: "book"
     year: 2003
-    url: https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540
-    institution: Niall Ferguson, Penguin
-  - title: The Penguin History of the World (J.M. Roberts)
-    type: textbook
+    url: "https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540"
+    institution: "Niall Ferguson, Penguin"
+  - title: "The Penguin History of the World (J.M. Roberts)"
+    type: "textbook"
     year: 2014
-    url: https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    institution: Penguin Books
-atomic_facts:
-  - id: fact-history-01
-    statement: "Decolonization: 1945-1975, 80 former colonies gained independence"
-    source_title: The Scramble for Africa (Thomas Pakenham)
-    source_url: https://www.harpercollins.com/products/the-scramble-for-africa-thomas-pakenham
-    confidence: high
-  - id: fact-history-02
-    statement: "Berlin Conference: 'Scramble for Africa' — by 1914, only Ethiopia and Liberia remained independent"
-    source_title: The Scramble for Africa (Thomas Pakenham)
-    source_url: https://www.harpercollins.com/products/the-scramble-for-africa-thomas-pakenham
-    confidence: high
-completeness: 0.88
-disputed_statements:
-  - statement: >-
-      The economic impact of colonialism on colonized regions is contested among economic historians; views range from extractive exploitation models to more nuanced assessments of institutional
-      legacy
-    confidence: medium
-known_gaps:
-  - Statistics and data cited are from 2003 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-ai_citations: null
+    url: "https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
+    institution: "Penguin Books"
+
 ---
+
 
 
 ## TL;DR

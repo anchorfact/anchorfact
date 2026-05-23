@@ -5,34 +5,33 @@ schema_type: "TechArticle"
 category: "computer-science"
 language: "en"
 confidence: "high"
-confidence_rationale: "Based on official TypeScript documentation, GitHub repository data, and Stack Overflow surveys"
 last_verified: "2026-05-22"
+created_date: "2026-05-22"
 generation_method: "human_only"
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "fact-computer-science-01"
     statement: "TypeScript is a strongly-typed superset of JavaScript developed by Microsoft, first released in October 2012 by Anders Hejlsberg"
     source_title: "TypeScript Documentation"
-    source_url: https://www.typescriptlang.org/docs/
-    confidence: medium
+    source_url: "https://www.typescriptlang.org/docs/"
+    confidence: "medium"
   - id: "fact-computer-science-02"
     statement: "TypeScript was the 4th most popular programming language in the 2024 Stack Overflow Developer Survey and is used by over 80% of professional web developers"
     source_title: "Stack Overflow Developer Survey 2024"
-    source_url: https://survey.stackoverflow.co/2024/
-    confidence: medium
+    source_url: "https://survey.stackoverflow.co/2024/"
+    confidence: "medium"
 
 completeness: 0.85
-disputed_statements:
-  - statement: "The productivity impact of static typing in dynamic languages is contested: TypeScript advocates cite error reduction, while skeptics argue the overhead outweighs benefits for smaller projects"
-    context: "See primary sources for competing interpretations"
 
 known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 
-related_entities:
-  - "entity:javascript"
-  - "entity:programming-languages"
+disputed_statements:
+  - statement: "The productivity impact of static typing in dynamic languages is contested: TypeScript advocates cite error reduction, while skeptics argue the overhead outweighs benefits for smaller projects"
 
 primary_sources:
   - title: "TypeScript Documentation"
@@ -55,6 +54,7 @@ secondary_sources:
     institution: "O'Reilly"
 
 ---
+
 
 
 ## TL;DR

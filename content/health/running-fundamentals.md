@@ -1,89 +1,66 @@
 ---
 id: "kb-2026-00426"
-
-
-
 title: "Running Fundamentals"
 schema_type: "TechArticle"
-
-
-
 category: "health"
 language: "en"
-
-
-
 confidence: "high"
 last_verified: "2026-05-22"
-
-
-
+created_date: "2026-05-22"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
-primary_sources:
-  - title: "Daniels' Running Formula (Jack Daniels, 4th Ed)"
-    type: "book"
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
-
-
-    year: 2021
-    url: "https://www.humankinetics.com/products/daniels-running-formula-4th-edition"
-
-
-    institution: "Human Kinetics"
-secondary_sources:
-  - title: "WHO Fact Sheets"
-    type: "report"
-
-
-
-    year: 2025
-    url: "https://www.who.int/news-room/fact-sheets"
-
-
-    institution: "World Health Organization"
-  - title: "CDC Health Topics"
-    type: "report"
-
-
-
-    year: 2025
-    url: "https://www.cdc.gov/health-topics.html"
-
-
-    institution: "Centers for Disease Control and Prevention"
 atomic_facts:
-  - id: fact-health-01
-    statement: Running is one of the most accessible and effective forms of cardiovascular exercise
-    source_title: Daniels' Running Formula (Jack Daniels, 4th Ed)
-    source_url: https://www.humankinetics.com/products/daniels-running-formula-4th-edition
-    confidence: high
-  - id: fact-health-02
+  - id: "fact-health-01"
+    statement: "Running is one of the most accessible and effective forms of cardiovascular exercise"
+    source_title: "Daniels' Running Formula (Jack Daniels, 4th Ed)"
+    source_url: "https://www.humankinetics.com/products/daniels-running-formula-4th-edition"
+    confidence: "high"
+  - id: "fact-health-02"
     statement: "Injuries: shin splints, runner's knee, plantar fasciitis — most from too much, too soon"
-
-
-    source_title: Daniels' Running Formula (Jack Daniels, 4th Ed)
-    source_url: https://www.humankinetics.com/products/daniels-running-formula-4th-edition
-    confidence: high
-  - id: fact-health-03
+    source_title: "Daniels' Running Formula (Jack Daniels, 4th Ed)"
+    source_url: "https://www.humankinetics.com/products/daniels-running-formula-4th-edition"
+    confidence: "high"
+  - id: "fact-health-03"
     statement: "Shoes: replace every 500-800km"
+    source_title: "Daniels' Running Formula (Jack Daniels, 4th Ed)"
+    source_url: "https://www.humankinetics.com/products/daniels-running-formula-4th-edition"
+    confidence: "high"
 
-
-    source_title: Daniels' Running Formula (Jack Daniels, 4th Ed)
-    source_url: https://www.humankinetics.com/products/daniels-running-formula-4th-edition
-    confidence: high
-  
 completeness: 0.88
+
 known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
 disputed_statements:
   - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
 
-ai_citations:
+primary_sources:
+  - title: "Daniels' Running Formula (Jack Daniels, 4th Ed)"
+    type: "book"
+    year: 2021
+    url: "https://www.humankinetics.com/products/daniels-running-formula-4th-edition"
+    institution: "Human Kinetics"
+
+secondary_sources:
+  - title: "WHO Fact Sheets"
+    type: "report"
+    year: 2025
+    url: "https://www.who.int/news-room/fact-sheets"
+    institution: "World Health Organization"
+  - title: "CDC Health Topics"
+    type: "report"
+    year: 2025
+    url: "https://www.cdc.gov/health-topics.html"
+    institution: "Centers for Disease Control and Prevention"
+
 ---
+
 
 ## TL;DR
 

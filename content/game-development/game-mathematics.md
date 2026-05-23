@@ -1,80 +1,75 @@
 ---
-id: kb-gd-017
-title: 游戏数学
-schema_type: TechArticle
-category: game-development
-language: zh
-confidence: high
-confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
+id: "kb-gd-017"
+title: "游戏数学"
+schema_type: "TechArticle"
+category: "game-development"
+language: "zh"
+confidence: "high"
 last_verified: "2026-04-28"
-generation_method: human_only
+created_date: "2026-04-28"
+generation_method: "human_only"
 derived_from_human_seed: true
-tags:
-  - math
-  - probability
-  - random
-  - vectors
-  - interpolation
-  - algorithms
-  - game-dev
-summary: ""
-primary_sources:
-  - title: 游戏开发Wiki（个人知识库）
-    type: knowledge_base
-    year: 2026
-    note: 基于行业实践和标准参考文献的系统性整理
-    url: https://www.gdconf.com/
-    institution: Game Developers Conference
-secondary_sources:
-  - title: GDC Vault
-    type: conference
-    year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
-    year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
-completeness: 0.85
-known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-related_entities:
-  - entity:game-development
-ai_citations: null
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-gd-001
+  - id: "fact-gd-001"
     statement: "# 游戏数学 > **游戏开发中 90% 的\"感觉不对\"问题，根源是数学没调好。** 随机太假、移动太僵、碰撞不准、概率失衡——都是数学。 --- "
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-002
-    statement: "常用数学模式\r \r ---\r \r ## 随机数与概率\r \r ### 伪随机数生成器（PRNG）\r \r | 算法 | 周期 | 速度 | 质量 | 适用场景 |\r |------|------|------|------|----------|\r | **System."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-003
-    statement: "Random** | 2^31 | 快 | 低 | 非关键随机（如粒子偏移） |\r | **xorshift** | 2^128 | 极快 | 中 | 高频调用（如每帧噪声） |\r | **PCG** | 2^64 | 快 | 高 | 通用游戏随机，推荐 |\r | **Mersenne Twister** | 2^19937 | 中 | 极高 | 需要统计级质量的场景 |\r \r **种子（Seed）的重要性**：\r ```\r 使用确定性的种子可以让随机序列可复现：\r - 程序化生成：相同种子 = 相同世界\r - 调试：可以复现玩家报告的 bug\r - 回放系统：记录种子而非所有随机结果\r ```\r \r ### 游戏常用概率分布\r \r ```\r 1."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-004
-    statement: "均匀分布（Uniform）\r    └── random(min, max)\r    └── 适用：骰子、随机方向\r \r 2."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-005
-    statement: "加权随机（Weighted Random）\r    └── 按权重概率选择\r    └── 适用：掉落表、稀有度\r \r 3."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-002"
+    statement: "常用数学模式  ---  ## 随机数与概率  ### 伪随机数生成器（PRNG）  | 算法 | 周期 | 速度 | 质量 | 适用场景 | |------|------|------|------|----------| | **System."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-003"
+    statement: "Random** | 2^31 | 快 | 低 | 非关键随机（如粒子偏移） | | **xorshift** | 2^128 | 极快 | 中 | 高频调用（如每帧噪声） | | **PCG** | 2^64 | 快 | 高 | 通用游戏随机，推荐 | | **Mersenne Twister** | 2^19937 | 中 | 极高 | 需要统计级质量的场景 |  **种子（Seed）的重要性**： ``` 使用确定性的种子可以让随机序列可复现： - 程序化生成：相同种子 = 相同世界 - 调试：可以复现玩家报告的 bug - 回放系统：记录种子而非所有随机结果 ```  ### 游戏常用概率分布  ``` 1."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-004"
+    statement: "均匀分布（Uniform）    └── random(min, max)    └── 适用：骰子、随机方向  2."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-005"
+    statement: "加权随机（Weighted Random）    └── 按权重概率选择    └── 适用：掉落表、稀有度  3."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
+completeness: 0.85
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "游戏开发Wiki（个人知识库）"
+    type: "knowledge_base"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "Game Developers Conference"
+
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
+    year: 2018
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
 ---
+
 
 
 

@@ -6,7 +6,11 @@ category: "computer-science"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-22"
+created_date: "2026-05-22"
 generation_method: "human_only"
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "fact-computer-science-001"
@@ -20,12 +24,11 @@ atomic_facts:
 
 completeness: 0.88
 
-disputed_statements:
-  - statement: "The relative merits of functional versus object-oriented programming paradigms are debated: FP proponents emphasize immutability and composability, while OOP proponents value encapsulation and intuitive domain modeling"
-    context: "See primary sources for competing interpretations"
-
 known_gaps:
   - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
+
+disputed_statements:
+  - statement: "The relative merits of functional versus object-oriented programming paradigms are debated: FP proponents emphasize immutability and composability, while OOP proponents value encapsulation and intuitive domain modeling"
 
 primary_sources:
   - title: "ACM Digital Library"
@@ -45,6 +48,7 @@ secondary_sources:
     institution: "MIT Press"
 
 ---
+
 
 
 

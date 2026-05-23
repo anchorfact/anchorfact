@@ -6,9 +6,13 @@ category: "ai"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-22"
+created_date: "2026-05-22"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "fact-ai-001"
@@ -39,13 +43,12 @@ atomic_facts:
 
 completeness: 0.85
 
-disputed_statements:
-  - statement: "The choice between BPE, WordPiece, Unigram, and SentencePiece tokenization affects downstream model performance; no single method is universally optimal across all languages"
-    context: "See tokenization survey literature"
-
 known_gaps:
   - "Statistics and data cited are from 2024 and earlier; more recent developments may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The choice between BPE, WordPiece, Unigram, and SentencePiece tokenization affects downstream model performance; no single method is universally optimal across all languages"
 
 primary_sources:
   - title: "Neural Machine Translation of Rare Words with Subword Units (BPE)"
@@ -70,6 +73,7 @@ secondary_sources:
     institution: "NIPS / Google"
 
 ---
+
 
 
 

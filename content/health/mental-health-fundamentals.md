@@ -6,9 +6,13 @@ category: "health"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-mental-health-fundamentals-1"
@@ -22,6 +26,13 @@ atomic_facts:
 
 completeness: 0.9
 
+known_gaps:
+  - "Microbiome-gut-brain axis in psychiatric disorders"
+  - "Psychedelic-assisted psychotherapy evidence"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
+
 primary_sources:
   - title: "DSM-5-TR"
     type: "standard"
@@ -34,14 +45,8 @@ primary_sources:
     url: "https://www.who.int/publications/i/item/9789240049338"
     institution: "WHO"
 
-known_gaps:
-  - "Microbiome-gut-brain axis in psychiatric disorders"
-  - "Psychedelic-assisted psychotherapy evidence"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 ## TL;DR
 Mental health encompasses emotional, psychological, and social well-being. The biopsychosocial model recognizes mental disorders arise from genetic vulnerability, neurobiological dysfunction, psychological factors, and social determinants.

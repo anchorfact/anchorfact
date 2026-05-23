@@ -1,72 +1,76 @@
 ---
-id: kb-2026-00016
-title: Model Context Protocol (MCP)
-schema_type: TechArticle
-category: ai
-language: en
-confidence: high
-confidence_rationale: Based on the official MCP specification, Anthropic's original announcement, and the Linux Foundation AAIF charter
+id: "kb-2026-00016"
+title: "Model Context Protocol (MCP)"
+schema_type: "TechArticle"
+category: "ai"
+language: "en"
+confidence: "high"
 last_verified: "2026-05-22"
-ai_models:
-  - claude-opus
+created_date: "2026-05-22"
+generation_method: "human_only"
+ai_models: ["claude-opus"]
 derived_from_human_seed: true
-primary_sources:
-  - title: Introducing the Model Context Protocol
-    authors:
-      - Anthropic
-    type: announcement
-    year: 2024
-    url: https://www.anthropic.com/news/model-context-protocol
-    institution: Anthropic
-  - title: Model Context Protocol Specification (2025-06-18)
-    type: standard
-    year: 2025
-    url: https://modelcontextprotocol.io/specification/2025-06-18
-    institution: Linux Foundation / AAIF
-  - title: MCP Standardization and Agent Protocol (2026-03-18 analysis)
-    type: analysis
-    year: 2026
-    url: https://oct-rick-brick.com/zh/articles/2026-03-18-mcp-standardization-agent-protocol/
-    institution: Oct Rick Brick
-secondary_sources:
-  - title: MCP GitHub Repository
-    type: repository
-    url: https://github.com/modelcontextprotocol/modelcontextprotocol
-    institution: GitHub
-generation_method: human_only
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-ai-01
-    statement: The Model Context Protocol is an open standard for connecting AI models to external data sources and tools, introduced by Anthropic on November 25, 2024
-    source_title: Introducing the Model Context Protocol
-    source_url: https://www.anthropic.com/news/model-context-protocol
-    confidence: medium
-  - id: fact-ai-001
-    statement: A single MCP server can give AI access to Google Drive, GitHub, or a company's internal knowledge base.
-    confidence: medium
-    source_title: MCP GitHub Repository
-    source_url: https://github.com/modelcontextprotocol/modelcontextprotocol
-  - id: fact-ai-002
+  - id: "fact-ai-01"
+    statement: "The Model Context Protocol is an open standard for connecting AI models to external data sources and tools, introduced by Anthropic on November 25, 2024"
+    source_title: "Introducing the Model Context Protocol"
+    source_url: "https://www.anthropic.com/news/model-context-protocol"
+    confidence: "medium"
+  - id: "fact-ai-001"
+    statement: "A single MCP server can give AI access to Google Drive, GitHub, or a company's internal knowledge base."
+    source_title: "MCP GitHub Repository"
+    source_url: "https://github.com/modelcontextprotocol/modelcontextprotocol"
+    confidence: "medium"
+  - id: "fact-ai-002"
     statement: "- **MCP Clients**: AI applications (Claude Desktop, ChatGPT, VS Code, custom apps) that connect to MCP servers to retrieve context."
-    confidence: medium
-    source_title: Introducing the Model Context Protocol
-    source_url: https://www.anthropic.com/news/model-context-protocol
-  - id: fact-ai-003
-    statement: This architecture enables AI models to maintain context across multiple data sources without losing state—a critical capability for complex, multi-step agentic workflows.
-    confidence: medium
-    source_title: Introducing the Model Context Protocol
-    source_url: https://www.anthropic.com/news/model-context-protocol
+    source_title: "Introducing the Model Context Protocol"
+    source_url: "https://www.anthropic.com/news/model-context-protocol"
+    confidence: "medium"
+  - id: "fact-ai-003"
+    statement: "This architecture enables AI models to maintain context across multiple data sources without losing state—a critical capability for complex, multi-step agentic workflows."
+    source_title: "Introducing the Model Context Protocol"
+    source_url: "https://www.anthropic.com/news/model-context-protocol"
+    confidence: "medium"
+
 completeness: 0.92
-disputed_statements:
-  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
-    confidence: medium
+
 known_gaps:
-  - A2A (Agent-to-Agent) protocol is a separate Google initiative, not covered here
-  - MCP specification version referenced is June 2025; the protocol is under active development by AAIF
-related_entities:
-  - entity:large-language-models
-  - entity:ai-agents
-ai_citations: null
+  - "A2A (Agent-to-Agent) protocol is a separate Google initiative, not covered here"
+  - "MCP specification version referenced is June 2025; the protocol is under active development by AAIF"
+
+disputed_statements:
+  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
+
+primary_sources:
+  - title: "Introducing the Model Context Protocol"
+    authors: ["Anthropic"]
+    type: "announcement"
+    year: 2024
+    url: "https://www.anthropic.com/news/model-context-protocol"
+    institution: "Anthropic"
+  - title: "Model Context Protocol Specification (2025-06-18)"
+    type: "standard"
+    year: 2025
+    url: "https://modelcontextprotocol.io/specification/2025-06-18"
+    institution: "Linux Foundation / AAIF"
+  - title: "MCP Standardization and Agent Protocol (2026-03-18 analysis)"
+    type: "analysis"
+    year: 2026
+    url: "https://oct-rick-brick.com/zh/articles/2026-03-18-mcp-standardization-agent-protocol/"
+    institution: "Oct Rick Brick"
+
+secondary_sources:
+  - title: "MCP GitHub Repository"
+    type: "repository"
+    url: "https://github.com/modelcontextprotocol/modelcontextprotocol"
+    institution: "GitHub"
+
 ---
+
 
 
 ## TL;DR

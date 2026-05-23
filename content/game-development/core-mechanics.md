@@ -1,78 +1,75 @@
 ---
-id: kb-gd-009
-title: 游戏机制与系统设计
-schema_type: TechArticle
-category: game-development
-language: zh
-confidence: high
-confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
+id: "kb-gd-009"
+title: "游戏机制与系统设计"
+schema_type: "TechArticle"
+category: "game-development"
+language: "zh"
+confidence: "high"
 last_verified: "2026-04-28"
-generation_method: human_only
+created_date: "2026-04-28"
+generation_method: "human_only"
 derived_from_human_seed: true
-tags:
-  - mechanics
-  - combat
-  - economy
-  - balance
-  - game-design
-summary: 游戏核心机制设计：战斗系统、经济系统、技能树与平衡方法
-primary_sources:
-  - title: 游戏开发Wiki（个人知识库）
-    type: knowledge_base
-    year: 2026
-    note: 基于行业实践和标准参考文献的系统性整理
-    url: https://www.gdconf.com/
-    institution: Game Developers Conference
-secondary_sources:
-  - title: GDC Vault
-    type: conference
-    year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
-    year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
-completeness: 0.85
-known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-related_entities:
-  - entity:game-development
-ai_citations: null
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-gd-001
-    statement: "**有意义的选择** — 玩家面临的选择应有真实后果\r \r ### 机制类型\r \r - **核心机制** — 游戏最基础的交互（跳跃、射击、建造）\r - **进阶机制** — 随着游戏进程解锁的新能力\r - **元机制** — 外层系统（科技树、声望系统）\r \r ---\r \r ## 战斗系统设计\r \r ### 现代战斗系统趋势（2025-2026）\r \r **从冷却CD到资源型系统：**\r \r 传统\"技能CD好了就用\"的模式正在被资源型战斗系统取代：\r \r - **决心点数系统（Determination Points）** — 技能消耗 DP，DP 每回合恢复，强技能消耗更多。"
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-002
-    statement: "消除\"最强技能CD一好就放\"的机械操作\r - **骰子转行动点引擎** — 掷骰分配到属性槽（力量/敏捷/智力）产生行动点。"
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-003
-    statement: "**工具建模：** 用 Machinations 或 Excel 建立经济模型\r 3."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-004
-    statement: "**回归测试：** 调整后重新模拟，确保没有新问题\r \r 参见：[templates/economy-balance-template."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-005
-    statement: "md#数据驱动平衡工作流] — 数据分析方法\r \r ---\r \r ## 技能树与成长系统\r \r ### 技能树设计模式\r \r 1."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
+  - id: "fact-gd-001"
+    statement: "**有意义的选择** — 玩家面临的选择应有真实后果  ### 机制类型  - **核心机制** — 游戏最基础的交互（跳跃、射击、建造） - **进阶机制** — 随着游戏进程解锁的新能力 - **元机制** — 外层系统（科技树、声望系统）  ---  ## 战斗系统设计  ### 现代战斗系统趋势（2025-2026）  **从冷却CD到资源型系统：**  传统\"技能CD好了就用\"的模式正在被资源型战斗系统取代：  - **决心点数系统（Determination Points）** — 技能消耗 DP，DP 每回合恢复，强技能消耗更多。"
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-002"
+    statement: "消除\"最强技能CD一好就放\"的机械操作 - **骰子转行动点引擎** — 掷骰分配到属性槽（力量/敏捷/智力）产生行动点。"
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-003"
+    statement: "**工具建模：** 用 Machinations 或 Excel 建立经济模型 3."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-004"
+    statement: "**回归测试：** 调整后重新模拟，确保没有新问题  参见：[templates/economy-balance-template."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-005"
+    statement: "md#数据驱动平衡工作流] — 数据分析方法  ---  ## 技能树与成长系统  ### 技能树设计模式  1."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
+completeness: 0.85
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "游戏开发Wiki（个人知识库）"
+    type: "knowledge_base"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "Game Developers Conference"
+
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
+    year: 2018
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
 ---
+
 
 
 

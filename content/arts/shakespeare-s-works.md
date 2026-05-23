@@ -6,9 +6,13 @@ category: "arts"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-22"
+created_date: "2026-05-22"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "fact-arts-01"
@@ -22,13 +26,12 @@ atomic_facts:
     source_url: "https://www.penguinrandomhouse.com/books/75451/shakespeare-by-harold-bloom/"
     confidence: "high"
 
-disputed_statements:
-  - statement: "The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist and expressionist accounts"
-    context: "See primary sources for competing interpretations"
-
 known_gaps:
   - "Statistics and data cited are from 2020 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist and expressionist accounts"
 
 primary_sources:
   - title: "Shakespeare: The Invention of the Human (Harold Bloom)"
@@ -54,14 +57,8 @@ secondary_sources:
     url: "https://global.oup.com/academic/product/the-oxford-shakespeare-9780199267170"
     institution: "Oxford University Press"
 
-ai_citations:
-  - title: "Shakespeare: The Invention of the Human"
-    type: "book"
-    year: 1998
-    url: "https://www.penguinrandomhouse.com/books/93003/shakespeare-by-harold-bloom/"
-    institution: "Harold Bloom, Riverhead Books"
-
 ---
+
 
 
 

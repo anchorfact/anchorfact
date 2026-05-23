@@ -32,15 +32,30 @@ const CHECKS = {
     // Check if disputed_statements exist (proxy for acknowledging opinions)
     return (a.breakdown?.d4_3_disputed || 0) >= 3 ? 'PASS' : 'WARN';
   },
-  '2.2-conflict-of-interest': (a) => 'NOT_COVERED',
+  '2.2-conflict-of-interest': (a) => {
+    const raw = fs.readFileSync(p.join(CONTENT, a.file), 'utf8');
+    const fm = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+    if (!fm) return 'FAIL';
+    return fm[1].includes('conflict_of_interest') ? 'PASS' : 'FAIL';
+  },
   '2.3-dispute-presentation': (a) => {
     return (a.breakdown?.d4_3_disputed || 0) >= 5 ? 'PASS' : 'WARN';
   },
   '3.1-time-stamping': (a) => {
+    const raw = fs.readFileSync(p.join(CONTENT, a.file), 'utf8');
+    const fm = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+    const hasCreated = fm && fm[1].includes('created_date');
     const d21 = a.breakdown?.d2_1_freshness;
-    return d21 >= 7 ? 'PASS' : d21 >= 4 ? 'WARN' : 'FAIL';
+    if (hasCreated && d21 >= 7) return 'PASS';
+    if (hasCreated && d21 >= 4) return 'WARN';
+    return d21 >= 4 ? 'WARN' : 'FAIL';
   },
-  '3.2-dynamic-fact-handling': (a) => 'NOT_COVERED',
+  '3.2-dynamic-fact-handling': (a) => {
+    const raw = fs.readFileSync(p.join(CONTENT, a.file), 'utf8');
+    const fm = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+    if (!fm) return 'FAIL';
+    return (fm[1].includes('is_live_document') && fm[1].includes('data_period')) ? 'PASS' : 'FAIL';
+  },
   '4.1-core-elements': (a) => {
     const d11 = a.breakdown?.d1_1_structure;
     return d11 >= 6 ? 'PASS' : d11 >= 4 ? 'WARN' : 'FAIL';

@@ -1,62 +1,66 @@
 ---
-id: kb-2026-00280
-title: Feature Engineering
-schema_type: TechArticle
-category: ai
-language: en
-confidence: high
+id: "kb-2026-00280"
+title: "Feature Engineering"
+schema_type: "TechArticle"
+category: "ai"
+language: "en"
+confidence: "high"
 last_verified: "2026-05-22"
-generation_method: human_only
+created_date: "2026-05-22"
+generation_method: "human_only"
 derived_from_human_seed: true
-primary_sources:
-  - title: Feature Engineering for Machine Learning (Zheng & Casari)
-    authors:
-      - Zheng, Alice
-      - Casari, Amanda
-    type: book
-    year: 2018
-    url: https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/
-    institution: O'Reilly
-    note: "Practical guide to feature engineering: encoding, binning, scaling, interaction features"
-secondary_sources:
-  - title: Scikit-learn Preprocessing Documentation
-    type: documentation
-    year: 2026
-    url: https://scikit-learn.org/stable/modules/preprocessing.html
-    institution: Inria
-    note: "Industry-standard feature preprocessing library: StandardScaler, OneHotEncoder, PolynomialFeatures"
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-ai-01
-    statement: It's often the most impactful step in ML pipelines — good features beat complex models
-    source_title: Feature Engineering for Machine Learning (Zheng & Casari)
-    source_url: https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/
-    confidence: high
-  - id: fact-ai-001
-    statement: >-
-      Feature engineering transforms raw data into informative representations that improve model performance. It's often the most impactful step in ML pipelines — good features beat complex models.
-      Deep learning reduces but doesn't eliminate the need for feature engineering. Techniques: scaling, encoding, binning, interaction features, domain-specific t
-    confidence: medium
-    source_title: Feature Engineering for Machine Learning (Zheng & Casari)
-    source_url: https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/
-  - id: fact-ai-002
+  - id: "fact-ai-01"
+    statement: "It's often the most impactful step in ML pipelines — good features beat complex models"
+    source_title: "Feature Engineering for Machine Learning (Zheng & Casari)"
+    source_url: "https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/"
+    confidence: "high"
+  - id: "fact-ai-001"
+    statement: "Feature engineering transforms raw data into informative representations that improve model performance. It's often the most impactful step in ML pipelines — good features beat complex models. Deep learning reduces but doesn't eliminate the need for feature engineering. Techniques: scaling, encoding, binning, interaction features, domain-specific t"
+    source_title: "Feature Engineering for Machine Learning (Zheng & Casari)"
+    source_url: "https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/"
+    confidence: "medium"
+  - id: "fact-ai-002"
     statement: "Scaling: StandardScaler (mean=0, std=1), MinMaxScaler (0 to 1)."
-    confidence: medium
-    source_title: Feature Engineering for Machine Learning (Zheng & Casari)
-    source_url: https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/
-  - id: fact-ai-003
+    source_title: "Feature Engineering for Machine Learning (Zheng & Casari)"
+    source_url: "https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/"
+    confidence: "medium"
+  - id: "fact-ai-003"
     statement: "Feature selection: filter (correlation), wrapper (greedy search), embedded (L1 regularization, tree importance)."
-    confidence: medium
-    source_title: Feature Engineering for Machine Learning (Zheng & Casari)
-    source_url: https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/
+    source_title: "Feature Engineering for Machine Learning (Zheng & Casari)"
+    source_url: "https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/"
+    confidence: "medium"
+
 completeness: 0.88
-disputed_statements:
-  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
-    confidence: medium
+
 known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-ai_citations: null
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
+
+primary_sources:
+  - title: "Feature Engineering for Machine Learning (Zheng & Casari)"
+    authors: ["Zheng, Alice", "Casari, Amanda"]
+    type: "book"
+    year: 2018
+    url: "https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/"
+    institution: "O'Reilly"
+
+secondary_sources:
+  - title: "Scikit-learn Preprocessing Documentation"
+    type: "documentation"
+    year: 2026
+    url: "https://scikit-learn.org/stable/modules/preprocessing.html"
+    institution: "Inria"
+
 ---
+
 
 
 ## TL;DR

@@ -6,9 +6,13 @@ category: "science"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-thermodynamics-fundamentals-1"
@@ -22,6 +26,13 @@ atomic_facts:
 
 completeness: 0.9
 
+known_gaps:
+  - "Non-equilibrium thermodynamics"
+  - "Quantum thermodynamics"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
+
 primary_sources:
   - title: "Atkins' Physical Chemistry, 12th Edition"
     type: "textbook"
@@ -34,14 +45,8 @@ primary_sources:
     url: "https://www.mheducation.com/highered/product/thermodynamics-engineering-approach-cengel-boles/M9781266152115.html"
     institution: "McGraw-Hill"
 
-known_gaps:
-  - "Non-equilibrium thermodynamics"
-  - "Quantum thermodynamics"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 ## TL;DR
 Thermodynamics governs energy transformation — from steam engines to living cells. Its four laws are universal, applying equally to black holes and biochemical reactions, making it the most broadly applicable framework in physics.

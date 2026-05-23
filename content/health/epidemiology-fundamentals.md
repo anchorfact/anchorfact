@@ -6,9 +6,13 @@ category: "health"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-epidemiology-fundamentals-1"
@@ -21,6 +25,13 @@ atomic_facts:
     confidence: "high"
 
 completeness: 0.9
+
+known_gaps:
+  - "Molecular epidemiology advances"
+  - "Digital surveillance ethics and privacy"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
 
 primary_sources:
   - title: "Principles of Epidemiology in Public Health Practice, 3rd Ed"
@@ -40,14 +51,8 @@ secondary_sources:
     url: "https://www.cdc.gov/field-epi-manual/"
     institution: "CDC"
 
-known_gaps:
-  - "Molecular epidemiology advances"
-  - "Digital surveillance ethics and privacy"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 ## TL;DR
 Epidemiology is the cornerstone of public health — the systematic study of disease distribution, determinants, and control in populations.

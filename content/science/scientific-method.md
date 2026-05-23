@@ -6,9 +6,13 @@ category: "science"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-scientific-method-1"
@@ -22,6 +26,13 @@ atomic_facts:
 
 completeness: 0.9
 
+known_gaps:
+  - "Bayesian vs frequentist philosophy of science"
+  - "Citizen science methodology validation"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
+
 primary_sources:
   - title: "The Logic of Scientific Discovery"
     type: "textbook"
@@ -34,14 +45,8 @@ primary_sources:
     url: "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html"
     institution: "University of Chicago Press"
 
-known_gaps:
-  - "Bayesian vs frequentist philosophy of science"
-  - "Citizen science methodology validation"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 ## TL;DR
 The scientific method — observation→question→hypothesis→experiment→analysis→conclusion — is humanity's most reliable path to knowledge. Its power lies not in proving theories true, but in systematically eliminating false ones.

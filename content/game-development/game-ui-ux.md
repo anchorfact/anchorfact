@@ -1,73 +1,75 @@
 ---
-id: kb-gd-020
-title: game ui ux
-schema_type: TechArticle
-category: game-development
-language: zh
-confidence: high
-confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
+id: "kb-gd-020"
+title: "game ui ux"
+schema_type: "TechArticle"
+category: "game-development"
+language: "zh"
+confidence: "high"
 last_verified: "2026-04-28"
-generation_method: human_only
+created_date: "2026-04-28"
+generation_method: "human_only"
 derived_from_human_seed: true
-tags: []
-summary: ""
-primary_sources:
-  - title: 游戏开发Wiki（个人知识库）
-    type: knowledge_base
-    year: 2026
-    note: 基于行业实践和标准参考文献的系统性整理
-    url: https://www.gdconf.com/
-    institution: Game Developers Conference
-secondary_sources:
-  - title: GDC Vault
-    type: conference
-    year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
-    year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
-completeness: 0.85
-known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-related_entities:
-  - entity:game-development
-ai_citations: null
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-gd-001
-    statement: "1 信息优先级金字塔\r \r ```\r        紧急/重要\r        ┌────────┐\r        │ 生命值 │  ← 随时可见、大尺寸、颜色突出\r        ├────────┤\r        │ 任务目标│  ← 需要时可见\r        ├────────┤\r        │ 资源计数│  ← 玩家查阅时可见\r        ├────────┤\r        │ 社交信息│  ← 后台显示\r        └────────┘\r ```\r \r ### 2."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-002
-    statement: "2 视觉编码\r \r 用视觉属性传递信息层级：\r \r | 属性 | 用法 | 示例 |\r |------|------|------|\r | **尺寸** | 越大越重要 | 生命值 > 队友列表 |\r | **颜色** | 红色=危险，绿色=安全，金色=稀有 | 低血量变红闪烁 |\r | **位置** | 越靠近中央越重要 | HUD 四角 vs 屏幕中央提示 |\r | **动画** | 动态吸引注意力 | 新任务闪烁、受伤时屏幕边缘泛红 |\r | **透明度** | 越透明越次要 | 非战斗时隐藏 HUD |\r \r ### 2."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-003
-    statement: "3 格式塔原则在游戏 UI 中的应用\r \r | 原则 | 游戏 UI 应用 |\r |------|-------------|\r | **相近** | 相关功能按钮分在一组 |\r | **相似** | 同类型道具用相同图标风格 |\r | **闭合** | 血条用分段方式让人一目了然满血状态 |\r | **连续** | 技能树用连线引导阅读方向 |\r | **图底** | 弹窗用半透明背景突出前景内容 |\r \r ---\r \r ## 3."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-004
-    statement: "2 游戏 UX 自检清单\r \r - [ ] 玩家在 3 秒内能找到关键信息（生命、弹药、目标）\r - [ ] 所有可交互元素在 5 秒内可识别\r - [ ] 反馈延迟 < 100ms（即时感）\r - [ ] 没有让玩家困惑的图标（无文字说明也能理解）\r - [ ] 错误操作有清晰提示\r - [ ] 长按/双击等高级操作有教程\r - [ ] 所有 UI 在目标分辨率下完整显示\r - [ ] 控制器/键盘/触屏三种输入方式都可用\r \r ---\r \r ## 4."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-005
-    statement: "2 触摸设计规范\r \r | 规范 | 数值 | 说明 |\r |------|------|------|\r | **最小触摸目标** | 44x44 DIP（推荐 48x48） | iOS HIG 标准 |\r | **触摸目标间距** | ≥ 8px | 防止误触 |\r | **操作反馈时间** | < 100ms | 触感/视觉/音效即时响应 |\r | **手势一致性** | 全屏统一 | 滑动=视角/翻页，点按=确认 |\r \r ### 4."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
+  - id: "fact-gd-001"
+    statement: "1 信息优先级金字塔  ```        紧急/重要        ┌────────┐        │ 生命值 │  ← 随时可见、大尺寸、颜色突出        ├────────┤        │ 任务目标│  ← 需要时可见        ├────────┤        │ 资源计数│  ← 玩家查阅时可见        ├────────┤        │ 社交信息│  ← 后台显示        └────────┘ ```  ### 2."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-002"
+    statement: "2 视觉编码  用视觉属性传递信息层级：  | 属性 | 用法 | 示例 | |------|------|------| | **尺寸** | 越大越重要 | 生命值 > 队友列表 | | **颜色** | 红色=危险，绿色=安全，金色=稀有 | 低血量变红闪烁 | | **位置** | 越靠近中央越重要 | HUD 四角 vs 屏幕中央提示 | | **动画** | 动态吸引注意力 | 新任务闪烁、受伤时屏幕边缘泛红 | | **透明度** | 越透明越次要 | 非战斗时隐藏 HUD |  ### 2."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-003"
+    statement: "3 格式塔原则在游戏 UI 中的应用  | 原则 | 游戏 UI 应用 | |------|-------------| | **相近** | 相关功能按钮分在一组 | | **相似** | 同类型道具用相同图标风格 | | **闭合** | 血条用分段方式让人一目了然满血状态 | | **连续** | 技能树用连线引导阅读方向 | | **图底** | 弹窗用半透明背景突出前景内容 |  ---  ## 3."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-004"
+    statement: "2 游戏 UX 自检清单  - [ ] 玩家在 3 秒内能找到关键信息（生命、弹药、目标） - [ ] 所有可交互元素在 5 秒内可识别 - [ ] 反馈延迟 < 100ms（即时感） - [ ] 没有让玩家困惑的图标（无文字说明也能理解） - [ ] 错误操作有清晰提示 - [ ] 长按/双击等高级操作有教程 - [ ] 所有 UI 在目标分辨率下完整显示 - [ ] 控制器/键盘/触屏三种输入方式都可用  ---  ## 4."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-005"
+    statement: "2 触摸设计规范  | 规范 | 数值 | 说明 | |------|------|------| | **最小触摸目标** | 44x44 DIP（推荐 48x48） | iOS HIG 标准 | | **触摸目标间距** | ≥ 8px | 防止误触 | | **操作反馈时间** | < 100ms | 触感/视觉/音效即时响应 | | **手势一致性** | 全屏统一 | 滑动=视角/翻页，点按=确认 |  ### 4."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
+completeness: 0.85
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "游戏开发Wiki（个人知识库）"
+    type: "knowledge_base"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "Game Developers Conference"
+
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
+    year: 2018
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
 ---
+
 
 
 

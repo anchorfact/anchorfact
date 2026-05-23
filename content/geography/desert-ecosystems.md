@@ -6,9 +6,13 @@ category: "geography"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-desert-ecosystems-1"
@@ -22,6 +26,13 @@ atomic_facts:
 
 completeness: 0.9
 
+known_gaps:
+  - "Antarctic dry valleys as cold deserts"
+  - "Desert microbial crust ecology"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
+
 primary_sources:
   - title: "Desert Ecology: Life in Extreme Environments"
     type: "textbook"
@@ -34,14 +45,8 @@ primary_sources:
     url: "https://www.unep.org/resources/report/global-deserts-outlook"
     institution: "UN Environment Programme"
 
-known_gaps:
-  - "Antarctic dry valleys as cold deserts"
-  - "Desert microbial crust ecology"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 ## TL;DR
 Deserts are not lifeless — they are ecosystems shaped by organisms with extraordinary adaptations for water conservation, temperature regulation, and resource efficiency. Covering a third of Earth's land, deserts are biodiversity hotspots threatened by climate change.

@@ -1,78 +1,81 @@
 ---
-id: kb-2026-00297
-title: Angular
-schema_type: TechArticle
-category: computer-science
-language: en
-confidence: high
+id: "kb-2026-00297"
+title: "Angular"
+schema_type: "TechArticle"
+category: "computer-science"
+language: "en"
+confidence: "high"
 last_verified: "2026-05-22"
-generation_method: human_only
+created_date: "2026-05-22"
+generation_method: "human_only"
 derived_from_human_seed: true
-primary_sources:
-  - title: Angular Documentation
-    type: documentation
-    year: 2026
-    url: https://angular.dev/
-    institution: Google
-    note: "Official Angular documentation: components, signals, dependency injection, RxJS"
-secondary_sources:
-  - title: Effective TypeScript (2nd Edition)
-    authors:
-      - Vanderkam, Dan
-    type: book
-    year: 2024
-    url: https://www.oreilly.com/library/view/effective-typescript-2nd/9781098155056/
-    institution: O'Reilly
-    note: Angular's primary language is TypeScript — this book covers TS patterns used throughout Angular development
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-computer-science-01
+  - id: "fact-computer-science-01"
     statement: "Used by: Google Cloud Console, Forbes, Delta"
-    source_title: Angular Documentation
-    source_url: https://angular.dev/
-    confidence: medium
-  - id: fact-computer-science-001
-    statement: >-
-      Angular (Google, 2016, successor to AngularJS) is a TypeScript-based SPA framework with a complete toolchain: component-based architecture, dependency injection, RxJS for reactivity, CLI, and
-      testing utilities. Angular 17+ (2023) introduced signals, standalone components, and new control flow syntax (@if, @for).
-    confidence: medium
-    source_title: Angular Documentation
-    source_url: https://angular.dev/
-  - id: fact-computer-science-002
-    statement: Modules (NgModules) → standalone components (v14+).
-    confidence: medium
-    source_title: Angular Documentation
-    source_url: https://angular.dev/
-  - id: fact-computer-science-003
+    source_title: "Angular Documentation"
+    source_url: "https://angular.dev/"
+    confidence: "medium"
+  - id: "fact-computer-science-001"
+    statement: "Angular (Google, 2016, successor to AngularJS) is a TypeScript-based SPA framework with a complete toolchain: component-based architecture, dependency injection, RxJS for reactivity, CLI, and testing utilities. Angular 17+ (2023) introduced signals, standalone components, and new control flow syntax (@if, @for)."
+    source_title: "Angular Documentation"
+    source_url: "https://angular.dev/"
+    confidence: "medium"
+  - id: "fact-computer-science-002"
+    statement: "Modules (NgModules) → standalone components (v14+)."
+    source_title: "Angular Documentation"
+    source_url: "https://angular.dev/"
+    confidence: "medium"
+  - id: "fact-computer-science-003"
     statement: "Signals (v16+): `signal()`, `computed()`, `effect()` — fine-grained reactivity without Zone.js."
-    confidence: medium
-    source_title: Angular Documentation
-    source_url: https://angular.dev/
-  - id: fact-computer-science-004
+    source_title: "Angular Documentation"
+    source_url: "https://angular.dev/"
+    confidence: "medium"
+  - id: "fact-computer-science-004"
     statement: "Angular 19 (2024): incremental hydration, partial rendering."
-    confidence: medium
-    source_title: Angular Documentation
-    source_url: https://angular.dev/
+    source_title: "Angular Documentation"
+    source_url: "https://angular.dev/"
+    confidence: "medium"
+
 completeness: 0.88
+
 known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
 disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-ai_citations: null
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "Angular Documentation"
+    type: "documentation"
+    year: 2026
+    url: "https://angular.dev/"
+    institution: "Google"
+
+secondary_sources:
+  - title: "Effective TypeScript (2nd Edition)"
+    authors: ["Vanderkam, Dan"]
+    type: "book"
+    year: 2024
+    url: "https://www.oreilly.com/library/view/effective-typescript-2nd/9781098155056/"
+    institution: "O'Reilly"
+  - title: "The C Programming Language (K&R, 2nd Ed)"
+    type: "textbook"
+    year: 1988
+    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
+    institution: "Prentice Hall"
+  - title: "Structure and Interpretation of Computer Programs (SICP)"
+    type: "textbook"
+    year: 1996
+    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
+    institution: "MIT Press"
+
 ---
+
 
 
 

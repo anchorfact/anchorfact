@@ -1,77 +1,75 @@
 ---
-id: kb-gd-034
-title: 剧情架构
-schema_type: TechArticle
-category: game-development
-language: zh
-confidence: high
-confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
+id: "kb-gd-034"
+title: "剧情架构"
+schema_type: "TechArticle"
+category: "game-development"
+language: "zh"
+confidence: "high"
 last_verified: "2026-04-28"
-generation_method: human_only
+created_date: "2026-04-28"
+generation_method: "human_only"
 derived_from_human_seed: true
-tags:
-  - narrative
-  - architecture
-  - branching
-  - variables
-summary: 游戏剧情架构：分支管理、变量追踪、叙事工具与Etudes系统
-primary_sources:
-  - title: 游戏开发Wiki（个人知识库）
-    type: knowledge_base
-    year: 2026
-    note: 基于行业实践和标准参考文献的系统性整理
-    url: https://www.gdconf.com/
-    institution: Game Developers Conference
-secondary_sources:
-  - title: GDC Vault
-    type: conference
-    year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
-    year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
-completeness: 0.85
-known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-related_entities:
-  - entity:game-development
-ai_citations: null
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-gd-001
-    statement: "**伪装分支** — 看似不同但汇入同一点的剧情（节省成本）\r \r ### 分支管理策略\r \r | 策略 | 说明 | 成本 |\r |------|------|------|\r | 完全分支 | 不同选择走向完全不同的剧情 | 极高 |\r | 分支合并 | 分支最终汇合到主线 | 中 |\r | 伪装分支 | 多个选择导向相似结果，但中间过程不同 | 低 |\r | 延迟反馈 | 选择的影响在后期才显现 | 中 |\r | 调色板 | 不同选择只影响对话风格而非剧情走向 | 极低 |\r \r ---\r \r ## 角色设计\r \r ### 游戏角色的特殊性\r - 玩家化身（Avatar）—— 玩家的游戏内代表\r - 旁观者角色 —— 玩家通过其眼睛观察\r - NPC 角色 —— 推动剧情或提供功能\r "
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-002
-    statement: "**救赎弧线** — 角色从坏变好\r \r ### 游戏角色设计技巧\r - 通过玩法展现性格（不只是对话）\r - 角色能力与背景故事一致\r - 同伴系统：NPC 在战斗中展现性格\r - 角色关系网：角色之间的动态关系\r \r ---\r \r ## 场景与任务设计\r \r ### 叙事场景构成\r - 设置（时间、地点、情境）\r - 冲突目标\r - 互动玩法\r - 剧情推进点\r - 奖励与后果\r \r ### 任务叙事结构\r 1."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-003
-    statement: "5) = 100 × 4 = 400 分钟\r \r 推荐参数：\r ├── 小型游戏：深度 1-2，宽度 2-3\r ├── 中型 RPG：深度 2-3，宽度 2-4\r └── 大型叙事：深度 3+，宽度 3-5（需大量资源）\r ```\r \r ### 分支热图分析\r \r ```\r 用数据优化分支设计：\r \r 1."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-004
-    statement: "追踪每个分支的选择率\r    ├── 如果某选项 < 5% 选择率 → 考虑删除或改进\r    ├── 如果某选项 > 90% 选择率 → 另一个选项可能有问题\r    └── 理想分布：40-60%（两个选项都吸引人）\r \r 2."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-005
-    statement: "追踪分支完成率\r    ├── 某分支 50%+ 玩家中途退出 → 内容质量问题\r    └── 某分支完成时间远超预期 → 可能太冗长\r \r 3."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
+  - id: "fact-gd-001"
+    statement: "**伪装分支** — 看似不同但汇入同一点的剧情（节省成本）  ### 分支管理策略  | 策略 | 说明 | 成本 | |------|------|------| | 完全分支 | 不同选择走向完全不同的剧情 | 极高 | | 分支合并 | 分支最终汇合到主线 | 中 | | 伪装分支 | 多个选择导向相似结果，但中间过程不同 | 低 | | 延迟反馈 | 选择的影响在后期才显现 | 中 | | 调色板 | 不同选择只影响对话风格而非剧情走向 | 极低 |  ---  ## 角色设计  ### 游戏角色的特殊性 - 玩家化身（Avatar）—— 玩家的游戏内代表 - 旁观者角色 —— 玩家通过其眼睛观察 - NPC 角色 —— 推动剧情或提供功能 "
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-002"
+    statement: "**救赎弧线** — 角色从坏变好  ### 游戏角色设计技巧 - 通过玩法展现性格（不只是对话） - 角色能力与背景故事一致 - 同伴系统：NPC 在战斗中展现性格 - 角色关系网：角色之间的动态关系  ---  ## 场景与任务设计  ### 叙事场景构成 - 设置（时间、地点、情境） - 冲突目标 - 互动玩法 - 剧情推进点 - 奖励与后果  ### 任务叙事结构 1."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-003"
+    statement: "5) = 100 × 4 = 400 分钟  推荐参数： ├── 小型游戏：深度 1-2，宽度 2-3 ├── 中型 RPG：深度 2-3，宽度 2-4 └── 大型叙事：深度 3+，宽度 3-5（需大量资源） ```  ### 分支热图分析  ``` 用数据优化分支设计：  1."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-004"
+    statement: "追踪每个分支的选择率    ├── 如果某选项 < 5% 选择率 → 考虑删除或改进    ├── 如果某选项 > 90% 选择率 → 另一个选项可能有问题    └── 理想分布：40-60%（两个选项都吸引人）  2."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-005"
+    statement: "追踪分支完成率    ├── 某分支 50%+ 玩家中途退出 → 内容质量问题    └── 某分支完成时间远超预期 → 可能太冗长  3."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
+completeness: 0.85
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "游戏开发Wiki（个人知识库）"
+    type: "knowledge_base"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "Game Developers Conference"
+
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
+    year: 2018
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
 ---
+
 
 
 

@@ -1,168 +1,78 @@
 ---
 id: "kb-2026-00008"
-
-
-
 title: "Hypertext Transfer Protocol (HTTP)"
 schema_type: "TechArticle"
-
-
-
 category: "computer-science"
 language: "en"
-
-
-
 confidence: "high"
-confidence_rationale: "Based on IETF RFCs 9110-9114 (2022), which replaced RFCs 7230-7235. These are the definitive, community-reviewed Internet standards."
-
-
-
 last_verified: "2026-05-22"
+created_date: "2026-05-22"
 generation_method: "human_only"
-
-
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
-  - id: fact-computer-science-01
-    statement: >-
-      Originally designed by Tim Berners-Lee at CERN in 1989, it defines how clients request resources from servers and
-      how servers respond
-    source_title: RFC 9110 — HTTP Semantics
-    source_url: https://www.rfc-editor.org/rfc/rfc9110
-    confidence: medium
-  - id: fact-computer-science-02
-    statement: HTTP is the foundational application-layer protocol of the World Wide Web, standardized by the IETF
-    source_title: MDN Web Docs — HTTP
-    source_url: https://developer.mozilla.org/en-US/docs/Web/HTTP
-    confidence: medium
-  
-completeness: 0.90
+  - id: "fact-computer-science-01"
+    statement: "Originally designed by Tim Berners-Lee at CERN in 1989, it defines how clients request resources from servers and how servers respond"
+    source_title: "RFC 9110 — HTTP Semantics"
+    source_url: "https://www.rfc-editor.org/rfc/rfc9110"
+    confidence: "medium"
+  - id: "fact-computer-science-02"
+    statement: "HTTP is the foundational application-layer protocol of the World Wide Web, standardized by the IETF"
+    source_title: "MDN Web Docs — HTTP"
+    source_url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    confidence: "medium"
+
+completeness: 0.9
+
 known_gaps:
   - "HTTP adoption percentages are Web Almanac estimates (2024-2025); exact numbers vary by measurement methodology"
+
 disputed_statements:
   - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
 
-related_entities:
-  - "entity:tcp-ip"
-  - "entity:world-wide-web"
-  - "entity:websocket"
-  - "entity:rest-api"
 primary_sources:
   - title: "RFC 9110 — HTTP Semantics"
     authors: ["Fielding, R.", "Nottingham, M.", "Reschke, J."]
     type: "standard"
-
-
-
     year: 2022
     url: "https://www.rfc-editor.org/rfc/rfc9110"
-
-
     institution: "IETF"
   - title: "RFC 9112 — HTTP/1.1"
     authors: ["Fielding, R.", "Nottingham, M.", "Reschke, J."]
     type: "standard"
-
-
-
     year: 2022
     url: "https://www.rfc-editor.org/rfc/rfc9112"
-
-
     institution: "IETF"
   - title: "RFC 9113 — HTTP/2"
     authors: ["Thomson, M.", "Benfield, C."]
     type: "standard"
-
-
-
     year: 2022
     url: "https://www.rfc-editor.org/rfc/rfc9113"
-
-
     institution: "IETF"
   - title: "RFC 9114 — HTTP/3"
     authors: ["Bishop, M."]
     type: "standard"
-
-
-
     year: 2022
     url: "https://www.rfc-editor.org/rfc/rfc9114"
-
-
     institution: "IETF"
+
 secondary_sources:
   - title: "MDN Web Docs — HTTP"
     type: "documentation"
-
-
-
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-
-
     institution: "Mozilla"
-    note: "Practical developer reference maintained by Mozilla"
   - title: "HTTP/3 Explained"
     authors: ["Stenberg, Daniel"]
     type: "book"
-
-
-
     year: 2024
     url: "https://http3-explained.haxx.se/"
-
-
     institution: "Self-published (curl author)"
-    note: "Comprehensive technical guide by the creator of curl"
 
-
-
-ai_citations:
-  - title: "HTTP/2 (RFC 9113)"
-    type: "standard"
-
-
-
-    year: 2022
-    url: "https://www.rfc-editor.org/rfc/rfc9113"
-
-
-    institution: "IETF"
-  - title: "HTTP/3 (RFC 9114)"
-    type: "standard"
-
-
-
-    year: 2022
-    url: "https://www.rfc-editor.org/rfc/rfc9114"
-
-
-    institution: "IETF"
-  - title: "HTTP/3 (RFC 9114)"
-    type: "standard"
-
-
-
-    year: 2022
-    url: "https://www.rfc-editor.org/rfc/rfc9114"
-
-
-    institution: "IETF"
-  - title: "HTTP/2 (RFC 9113)"
-    type: "standard"
-
-
-
-    year: 2022
-    url: "https://www.rfc-editor.org/rfc/rfc9113"
-
-
-    institution: "IETF"
 ---
+
 
 ## TL;DR
 

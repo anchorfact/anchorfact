@@ -1,83 +1,79 @@
 ---
-id: kb-2026-00020
-title: Constitutional AI
-schema_type: TechArticle
-category: ai
-language: en
-confidence: high
+id: "kb-2026-00020"
+title: "Constitutional AI"
+schema_type: "TechArticle"
+category: "ai"
+language: "en"
+confidence: "high"
 last_verified: "2026-05-22"
-generation_method: ai_assisted
-ai_models:
-  - claude-opus
+created_date: "2026-05-22"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-ai-001
-    statement: First published in December 2022 (arXiv:2212.
-    confidence: high
-    source_url: https://arxiv.org/abs/2212.08073
+  - id: "fact-ai-001"
+    statement: "First published in December 2022 (arXiv:2212."
     source_title: "Constitutional AI: Harmlessness from AI Feedback"
-  - id: fact-ai-002
-    statement: >-
-      08073) and detailed in May 2023, CAI trains models to self-critique and self-correct based on constitutional principles, then uses AI-generated feedback instead of human feedback for
-      reinforcement learning.
-    confidence: high
-    source_url: https://arxiv.org/abs/2204.05862
-    source_title: Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback
-  - id: fact-ai-003
-    statement: This achieves both higher helpfulness and higher harmlessness simultaneously (a Pareto improvement), unlike traditional RLHF which typically trades one for the other.
-    confidence: high
-    source_url: https://arxiv.org/abs/2212.08073
+    source_url: "https://arxiv.org/abs/2212.08073"
+    confidence: "high"
+  - id: "fact-ai-002"
+    statement: "08073) and detailed in May 2023, CAI trains models to self-critique and self-correct based on constitutional principles, then uses AI-generated feedback instead of human feedback for reinforcement learning."
+    source_title: "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback"
+    source_url: "https://arxiv.org/abs/2204.05862"
+    confidence: "high"
+  - id: "fact-ai-003"
+    statement: "This achieves both higher helpfulness and higher harmlessness simultaneously (a Pareto improvement), unlike traditional RLHF which typically trades one for the other."
     source_title: "Constitutional AI: Harmlessness from AI Feedback"
-  - id: fact-ai-004
-    statement: Claude is the first model trained entirely with CAI.
-    confidence: high
-    source_url: https://arxiv.org/abs/2204.05862
-    source_title: Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback
-  - id: fact-ai-005
-    statement: "The training process has two stages:\r \r ### Stage 1: Supervised Learning (SL)\r \r The model is trained to **critique and revise its own responses** using randomly sampled constitutional principles."
-    confidence: high
-    source_url: https://arxiv.org/abs/2204.05862
-    source_title: Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback
+    source_url: "https://arxiv.org/abs/2212.08073"
+    confidence: "high"
+  - id: "fact-ai-004"
+    statement: "Claude is the first model trained entirely with CAI."
+    source_title: "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback"
+    source_url: "https://arxiv.org/abs/2204.05862"
+    confidence: "high"
+  - id: "fact-ai-005"
+    statement: "The training process has two stages:  ### Stage 1: Supervised Learning (SL)  The model is trained to **critique and revise its own responses** using randomly sampled constitutional principles."
+    source_title: "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback"
+    source_url: "https://arxiv.org/abs/2204.05862"
+    confidence: "high"
+
+completeness: 0.85
+
+known_gaps:
+  - "Statistics and data cited are from 2024 and earlier; more recent developments may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "Whether constitutional principles can adequately capture all ethical considerations without introducing unintended biases remains an open research question"
+
 primary_sources:
   - title: "Constitutional AI: Harmlessness from AI Feedback"
-    type: academic_paper
+    authors: ["Bai", "Kadavath", "Kundu", "et al."]
+    type: "academic_paper"
     year: 2022
-    url: https://arxiv.org/abs/2212.08073
-    institution: Anthropic
-    authors:
-      - Bai
-      - Kadavath
-      - Kundu
-      - et al.
-  - title: Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback
-    type: academic_paper
+    url: "https://arxiv.org/abs/2212.08073"
+    institution: "Anthropic"
+  - title: "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback"
+    authors: ["Bai", "Jones", "Kamalu", "et al."]
+    type: "academic_paper"
     year: 2022
-    url: https://arxiv.org/abs/2204.05862
-    institution: Anthropic
-    authors:
-      - Bai
-      - Jones
-      - Kamalu
-      - et al.
+    url: "https://arxiv.org/abs/2204.05862"
+    institution: "Anthropic"
+
 secondary_sources:
-  - title: Deep Reinforcement Learning from Human Preferences (RLHF foundation)
-    type: academic_paper
+  - title: "Deep Reinforcement Learning from Human Preferences (RLHF foundation)"
+    authors: ["Christiano", "Leike", "Brown", "et al."]
+    type: "academic_paper"
     year: 2017
-    url: https://arxiv.org/abs/1706.03741
-    institution: OpenAI / DeepMind
-    authors:
-      - Christiano
-      - Leike
-      - Brown
-      - et al.
-known_gaps:
-  - Statistics and data cited are from 2024 and earlier; more recent developments may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: Whether constitutional principles can adequately capture all ethical considerations without introducing unintended biases remains an open research question
-    context: See CAI paper discussion on constitutional design
-completeness: 0.85
+    url: "https://arxiv.org/abs/1706.03741"
+    institution: "OpenAI / DeepMind"
+
 ---
+
 
 ## TL;DR
 

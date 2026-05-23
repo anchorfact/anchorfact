@@ -1,78 +1,75 @@
 ---
-id: kb-gd-002
-title: AI Agent 游戏开发工具
-schema_type: TechArticle
-category: game-development
-language: zh
-confidence: high
-confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
+id: "kb-gd-002"
+title: "AI Agent 游戏开发工具"
+schema_type: "TechArticle"
+category: "game-development"
+language: "zh"
+confidence: "high"
 last_verified: "2026-04-28"
-generation_method: human_only
+created_date: "2026-04-28"
+generation_method: "human_only"
 derived_from_human_seed: true
-tags:
-  - ai
-  - tools
-  - agent
-  - mcp
-  - a2a
-  - api
-  - workflow
-summary: AI Agent 游戏开发工具汇总：MCP/A2A协议、框架对比、API文档索引与实战代码
-primary_sources:
-  - title: 游戏开发Wiki（个人知识库）
-    type: knowledge_base
-    year: 2026
-    note: 基于行业实践和标准参考文献的系统性整理
-    url: https://www.gdconf.com/
-    institution: Game Developers Conference
-secondary_sources:
-  - title: Model Context Protocol Specification
-    type: standard
-    year: 2025
-    url: https://modelcontextprotocol.io/specification/2025-06-18
-    institution: Linux Foundation / AAIF
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
-    year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
-completeness: 0.85
-disputed_statements:
-  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
-    confidence: medium
-known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-related_entities:
-  - entity:game-development
-ai_citations: null
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-gd-001
-    statement: "**清理上下文** — 每步新开对话，避免上下文污染\r \r ### 推荐工作流\r \r ```\r GDD → 技术选型 → CLAUDE."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-002
-    statement: "md 规则 → 实现计划\r → 内存银行（Memory Bank）→ 分步开发 → 测试 → 审查\r ```\r \r ### Verb 编码方法（2026）\r \r 1."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-003
-    statement: "使用 TDD 确保质量\r \r ---\r \r ## Skill 套装推荐\r \r | 项目 | ⭐ | 用途 |\r |------|-----|------|\r | **addyosmani/agent-skills** | 16."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-004
-    statement: "0 提供多 Agent 协作\r - 适合 AAA 品质但需要更多算力\r \r ---\r \r ## 在项目中使用 AI 辅助设计\r \r AI Agent 不仅能辅助写代码，也能辅助**游戏设计本身**。"
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-005
-    statement: "以下是经过验证的实战案例：\r \r ### 实战案例 1：基于 MDA 框架的机制生成\r \r **场景**：需要为一个 Roguelike 游戏设计 20 个独特的武器机制。"
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
+  - id: "fact-gd-001"
+    statement: "**清理上下文** — 每步新开对话，避免上下文污染  ### 推荐工作流  ``` GDD → 技术选型 → CLAUDE."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-002"
+    statement: "md 规则 → 实现计划 → 内存银行（Memory Bank）→ 分步开发 → 测试 → 审查 ```  ### Verb 编码方法（2026）  1."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-003"
+    statement: "使用 TDD 确保质量  ---  ## Skill 套装推荐  | 项目 | ⭐ | 用途 | |------|-----|------| | **addyosmani/agent-skills** | 16."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-004"
+    statement: "0 提供多 Agent 协作 - 适合 AAA 品质但需要更多算力  ---  ## 在项目中使用 AI 辅助设计  AI Agent 不仅能辅助写代码，也能辅助**游戏设计本身**。"
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-005"
+    statement: "以下是经过验证的实战案例：  ### 实战案例 1：基于 MDA 框架的机制生成  **场景**：需要为一个 Roguelike 游戏设计 20 个独特的武器机制。"
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
+completeness: 0.85
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
+
+primary_sources:
+  - title: "游戏开发Wiki（个人知识库）"
+    type: "knowledge_base"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "Game Developers Conference"
+
+secondary_sources:
+  - title: "Model Context Protocol Specification"
+    type: "standard"
+    year: 2025
+    url: "https://modelcontextprotocol.io/specification/2025-06-18"
+    institution: "Linux Foundation / AAIF"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
+    year: 2018
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
 ---
+
 
 
 

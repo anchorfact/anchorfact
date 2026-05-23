@@ -6,9 +6,13 @@ category: "arts"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-contemporary-art-trends-1"
@@ -22,6 +26,13 @@ atomic_facts:
 
 completeness: 0.9
 
+known_gaps:
+  - "Virtual reality as artistic medium"
+  - "Art market decentralization via blockchain"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
+
 primary_sources:
   - title: "Art in the Age of Machine Learning"
     type: "textbook"
@@ -34,14 +45,8 @@ primary_sources:
     url: "https://www.christies.com/about-us/press-archive/details"
     institution: "Christie's"
 
-known_gaps:
-  - "Virtual reality as artistic medium"
-  - "Art market decentralization via blockchain"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 ## TL;DR
 Contemporary art is defined by technological entanglement: NFTs transformed digital ownership, AI challenges human authorship, and social media reshapes curation.

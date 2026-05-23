@@ -1,82 +1,81 @@
 ---
-id: kb-2026-00111
-title: HTTPS / TLS (Transport Layer Security)
-schema_type: TechArticle
-category: computer-science
-language: en
-confidence: high
-confidence_rationale: Based on IETF RFC 8446 (TLS 1.3), RFC 5246 (TLS 1.2), and industry deployment data from Let's Encrypt and Google Transparency Report
+id: "kb-2026-00111"
+title: "HTTPS / TLS (Transport Layer Security)"
+schema_type: "TechArticle"
+category: "computer-science"
+language: "en"
+confidence: "high"
 last_verified: "2026-05-22"
-generation_method: human_only
+created_date: "2026-05-22"
+generation_method: "human_only"
 derived_from_human_seed: true
-known_gaps:
-  - Certificate Transparency (RFC 6962), ACME (RFC 8555), and post-quantum TLS are important extensions not covered here
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-completeness: 0.9
-primary_sources:
-  - title: RFC 8446 — The Transport Layer Security (TLS) Protocol Version 1.3
-    authors:
-      - Rescorla, E.
-    type: standard
-    year: 2018
-    url: https://www.rfc-editor.org/rfc/rfc8446
-    institution: IETF
-    note: Current TLS standard. Reduced handshake from 2-RTT to 1-RTT, removed obsolete algorithms, mandated forward secrecy.
-  - title: RFC 5246 — The Transport Layer Security (TLS) Protocol Version 1.2
-    authors:
-      - Dierks, T.
-      - Rescorla, E.
-    type: standard
-    year: 2008
-    url: https://www.rfc-editor.org/rfc/rfc5246
-    institution: IETF
-    note: Widely deployed TLS version. Supports diverse cipher suites including non-AEAD ciphers (deprecated in TLS 1.3).
-secondary_sources:
-  - title: Let's Encrypt Stats
-    type: data_source
-    year: 2026
-    url: https://letsencrypt.org/stats/
-    institution: Internet Security Research Group (ISRG)
-    note: Let's Encrypt has issued over 400 million certificates since 2016, driving HTTPS adoption from ~40% to ~90%
-  - title: Google Transparency Report — HTTPS encryption on the web
-    type: data_source
-    year: 2026
-    url: https://transparencyreport.google.com/https/overview
-    institution: Google
-ai_citations: null
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-computer-science-001
-    statement: >-
-      3 (RFC 8446, 2018) is the current standard — it reduced the handshake from 2 to 1 round trip (0-RTT on resumption), removed all obsolete algorithms (RSA key exchange, CBC-mode ciphers, SHA-1,
-      MD5), and mandates forward secrecy (all key exchanges use ECDHE).
-    confidence: medium
-    source_url: https://www.rfc-editor.org/rfc/rfc8446
-    source_title: RFC 8446 — The Transport Layer Security (TLS) Protocol Version 1.3
-  - id: fact-computer-science-002
-    statement: As of 2026, over 90% of pages loaded in Chrome use HTTPS (Google Transparency Report), and Let's Encrypt has issued more than 400 million free certificates.
-    confidence: medium
-    source_url: https://transparencyreport.google.com/https/overview
-    source_title: Google Transparency Report — HTTPS encryption on the web
-  - id: fact-computer-science-003
-    statement: "The lifecycle of a TLS connection:\r \r ### TLS 1."
-    confidence: medium
-    source_url: https://www.rfc-editor.org/rfc/rfc8446
-    source_title: RFC 8446 — The Transport Layer Security (TLS) Protocol Version 1.3
-  - id: fact-computer-science-004
+  - id: "fact-computer-science-001"
+    statement: "3 (RFC 8446, 2018) is the current standard — it reduced the handshake from 2 to 1 round trip (0-RTT on resumption), removed all obsolete algorithms (RSA key exchange, CBC-mode ciphers, SHA-1, MD5), and mandates forward secrecy (all key exchanges use ECDHE)."
+    source_title: "RFC 8446 — The Transport Layer Security (TLS) Protocol Version 1.3"
+    source_url: "https://www.rfc-editor.org/rfc/rfc8446"
+    confidence: "medium"
+  - id: "fact-computer-science-002"
+    statement: "As of 2026, over 90% of pages loaded in Chrome use HTTPS (Google Transparency Report), and Let's Encrypt has issued more than 400 million free certificates."
+    source_title: "Google Transparency Report — HTTPS encryption on the web"
+    source_url: "https://transparencyreport.google.com/https/overview"
+    confidence: "medium"
+  - id: "fact-computer-science-003"
+    statement: "The lifecycle of a TLS connection:  ### TLS 1."
+    source_title: "RFC 8446 — The Transport Layer Security (TLS) Protocol Version 1.3"
+    source_url: "https://www.rfc-editor.org/rfc/rfc8446"
+    confidence: "medium"
+  - id: "fact-computer-science-004"
     statement: "Total: ClientHello + data → Server response."
-    confidence: medium
-    source_url: https://www.rfc-editor.org/rfc/rfc8446
-    source_title: RFC 8446 — The Transport Layer Security (TLS) Protocol Version 1.3
-  - id: fact-computer-science-005
-    statement: This eliminates the round-trip entirely but provides weaker forward secrecy for 0-RTT data (replay protection relies on server-side anti-replay mechanisms).
-    confidence: medium
-    source_url: https://transparencyreport.google.com/https/overview
-    source_title: Google Transparency Report — HTTPS encryption on the web
+    source_title: "RFC 8446 — The Transport Layer Security (TLS) Protocol Version 1.3"
+    source_url: "https://www.rfc-editor.org/rfc/rfc8446"
+    confidence: "medium"
+  - id: "fact-computer-science-005"
+    statement: "This eliminates the round-trip entirely but provides weaker forward secrecy for 0-RTT data (replay protection relies on server-side anti-replay mechanisms)."
+    source_title: "Google Transparency Report — HTTPS encryption on the web"
+    source_url: "https://transparencyreport.google.com/https/overview"
+    confidence: "medium"
+
+completeness: 0.9
+
+known_gaps:
+  - "Certificate Transparency (RFC 6962), ACME (RFC 8555), and post-quantum TLS are important extensions not covered here"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "RFC 8446 — The Transport Layer Security (TLS) Protocol Version 1.3"
+    authors: ["Rescorla, E."]
+    type: "standard"
+    year: 2018
+    url: "https://www.rfc-editor.org/rfc/rfc8446"
+    institution: "IETF"
+  - title: "RFC 5246 — The Transport Layer Security (TLS) Protocol Version 1.2"
+    authors: ["Dierks, T.", "Rescorla, E."]
+    type: "standard"
+    year: 2008
+    url: "https://www.rfc-editor.org/rfc/rfc5246"
+    institution: "IETF"
+
+secondary_sources:
+  - title: "Let's Encrypt Stats"
+    type: "data_source"
+    year: 2026
+    url: "https://letsencrypt.org/stats/"
+    institution: "Internet Security Research Group (ISRG)"
+  - title: "Google Transparency Report — HTTPS encryption on the web"
+    type: "data_source"
+    year: 2026
+    url: "https://transparencyreport.google.com/https/overview"
+    institution: "Google"
+
 ---
+
 
 
 ## TL;DR

@@ -1,79 +1,75 @@
 ---
-id: kb-gd-014
-title: 游戏开发者社区资源指南
-schema_type: TechArticle
-category: game-development
-language: zh
-confidence: high
-confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
+id: "kb-gd-014"
+title: "游戏开发者社区资源指南"
+schema_type: "TechArticle"
+category: "game-development"
+language: "zh"
+confidence: "high"
 last_verified: "2026-04-28"
-generation_method: human_only
+created_date: "2026-04-28"
+generation_method: "human_only"
 derived_from_human_seed: true
-tags:
-  - community
-  - resources
-  - indie
-  - gamedev
-  - networking
-  - platforms
-summary: ""
-primary_sources:
-  - title: 游戏开发Wiki（个人知识库）
-    type: knowledge_base
-    year: 2026
-    note: 基于行业实践和标准参考文献的系统性整理
-    url: https://www.gdconf.com/
-    institution: Game Developers Conference
-secondary_sources:
-  - title: GDC Vault
-    type: conference
-    year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
-    year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
-completeness: 0.85
-known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-related_entities:
-  - entity:game-development
-ai_citations: null
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-gd-001
+  - id: "fact-gd-001"
     statement: "# 游戏开发者社区资源指南 > **社区是游戏开发者的氧气。** 无论你在哪个阶段、哪个领域，找到对的社区能让你少走弯路、获得反馈、找到队友。 --- "
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-002
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-002"
     statement: "** 无论你在哪个阶段、哪个领域，找到对的社区能让你少走弯路、获得反馈、找到队友。"
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-003
-    statement: "快速参考表\r \r ---\r \r ## 社区选择框架\r \r ### 按开发阶段选择\r \r | 阶段 | 需求 | 推荐社区类型 |\r |------|------|-------------|\r | **学习入门** | 教程、问答、氛围友好 | 引擎官方社区、豆瓣小组、GDevelop |\r | **原型开发** | 快速反馈、技术问题 | 引擎社区、Discord 频道 |\r | **团队组建** | 找队友、找外包 | GameDevHub、Indie Gaming Studios |\r | **发布营销** | 曝光、评测、玩家反馈 | itch."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-004
-    statement: "io、IndieDB |\r | **职业发展** | 行业动态、海外机会 | igdshare、CGSociety、引擎世界 |\r \r ### 按职能选择\r \r | 职能 | 核心需求 | 推荐社区 |\r |------|----------|----------|\r | **程序员** | 引擎技术、算法、性能 | 引擎官方论坛、GitHub Discussions |\r | **美术/TA** | Shader、VFX、技术美术 | CGSociety、引擎世界、知乎 TA 话题 |\r | **策划** | 设计理论、数据分析 | GDC 分享、igdshare、独立游戏小组 |\r | **独立开发者** | 全栈、发布、商业 | itch."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: GDC Vault
-  - id: fact-gd-005
-    statement: "io、IndieDB、GameDevHub |\r | **AI 开发者** | AI NPC、ML、工具链 | Player2、AI GameDev Lab |\r \r ---\r \r ## 综合性社区\r \r ### IndieDB\r \r | 项目 | 详情 |\r |------|------|\r | **网址** | indiedb."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-003"
+    statement: "快速参考表  ---  ## 社区选择框架  ### 按开发阶段选择  | 阶段 | 需求 | 推荐社区类型 | |------|------|-------------| | **学习入门** | 教程、问答、氛围友好 | 引擎官方社区、豆瓣小组、GDevelop | | **原型开发** | 快速反馈、技术问题 | 引擎社区、Discord 频道 | | **团队组建** | 找队友、找外包 | GameDevHub、Indie Gaming Studios | | **发布营销** | 曝光、评测、玩家反馈 | itch."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-004"
+    statement: "io、IndieDB | | **职业发展** | 行业动态、海外机会 | igdshare、CGSociety、引擎世界 |  ### 按职能选择  | 职能 | 核心需求 | 推荐社区 | |------|----------|----------| | **程序员** | 引擎技术、算法、性能 | 引擎官方论坛、GitHub Discussions | | **美术/TA** | Shader、VFX、技术美术 | CGSociety、引擎世界、知乎 TA 话题 | | **策划** | 设计理论、数据分析 | GDC 分享、igdshare、独立游戏小组 | | **独立开发者** | 全栈、发布、商业 | itch."
+    source_title: "GDC Vault"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-005"
+    statement: "io、IndieDB、GameDevHub | | **AI 开发者** | AI NPC、ML、工具链 | Player2、AI GameDev Lab |  ---  ## 综合性社区  ### IndieDB  | 项目 | 详情 | |------|------| | **网址** | indiedb."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
+completeness: 0.85
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "游戏开发Wiki（个人知识库）"
+    type: "knowledge_base"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "Game Developers Conference"
+
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
+    year: 2018
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
 ---
+
 
 
 

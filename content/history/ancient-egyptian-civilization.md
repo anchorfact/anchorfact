@@ -6,9 +6,13 @@ category: "history"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-ancient-egyptian-civilization-1"
@@ -22,6 +26,13 @@ atomic_facts:
 
 completeness: 0.9
 
+known_gaps:
+  - "Pyramid construction engineering methods debate"
+  - "Daily life of non-elite Egyptians"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
+
 primary_sources:
   - title: "The Oxford History of Ancient Egypt"
     type: "textbook"
@@ -34,14 +45,8 @@ primary_sources:
     url: "https://thamesandhudson.com/the-complete-gods-and-goddesses-of-ancient-egypt-9780500284247"
     institution: "Thames & Hudson"
 
-known_gaps:
-  - "Pyramid construction engineering methods debate"
-  - "Daily life of non-elite Egyptians"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 ## TL;DR
 Ancient Egypt's 3,000-year civilization produced monumental architecture, sophisticated medicine, advanced mathematics, and a complex religious system centered on the afterlife.

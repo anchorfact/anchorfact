@@ -5,57 +5,55 @@ schema_type: "TechArticle"
 category: "ai"
 language: "en"
 confidence: "high"
-confidence_rationale: "Based on Shazeer et al. (2017, ICLR), Switch Transformers (Fedus et al., 2022, JMLR), and the GPT-4 technical report (OpenAI, 2023)"
 last_verified: "2026-05-22"
+created_date: "2026-05-22"
 generation_method: "human_only"
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "fact-ai-01"
     statement: "at Google Brain, MoE is the dominant architecture for frontier-scale models as of 2026: GPT-4 reportedly uses MoE with approximately 1.76T total parameters but only 280B active per forward pass"
     source_title: "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity"
-    source_url: https://arxiv.org/abs/2101.03961
-    source_doi: 10.48550/arXiv.2101.03961
-    confidence: high
+    source_url: "https://arxiv.org/abs/2101.03961"
+    source_doi: "10.48550/arXiv.2101.03961"
+    confidence: "high"
   - id: "fact-ai-02"
     statement: "Mixture of Experts is a neural network architecture that divides a model into multiple specialized \"expert\" sub-networks, with a learned gating mechanism routing each input token to only a subset of experts"
     source_title: "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer"
-    source_url: https://arxiv.org/abs/1701.06538
-    source_doi: 10.48550/arXiv.1701.06538
-    confidence: high
+    source_url: "https://arxiv.org/abs/1701.06538"
+    source_doi: "10.48550/arXiv.1701.06538"
+    confidence: "high"
   - id: "fact-ai-03"
     statement: "First made practical for deep learning by Shazeer et al"
     source_title: "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer"
-    source_url: https://arxiv.org/abs/1701.06538
-    source_doi: 10.48550/arXiv.1701.06538
+    source_url: "https://arxiv.org/abs/1701.06538"
+    source_doi: "10.48550/arXiv.1701.06538"
 
 completeness: 0.88
-disputed_statements:
-  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
-    confidence: "medium"
 
 known_gaps:
   - "GPT-4 MoE configuration is based on external analysis (SemiAnalysis, press reports), not official OpenAI documentation"
   - "MoE training dynamics (load balancing, expert specialization) remain active research areas"
 
-related_entities:
-  - "entity:gpt-models"
-  - "entity:transformer-architecture"
-  - "entity:llms"
+disputed_statements:
+  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
 
 primary_sources:
   - title: "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer"
     authors: ["Shazeer, Noam", "Mirhoseini, Azalia", "Maziarz, Krzysztof", "Davis, Andy", "Le, Quoc", "Hinton, Geoffrey", "Dean, Jeff"]
     type: "academic_paper"
     year: 2017
-    doi: "10.48550/arXiv.1701.06538"
     url: "https://arxiv.org/abs/1701.06538"
+    doi: "10.48550/arXiv.1701.06538"
     institution: "Google Brain"
   - title: "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity"
     authors: ["Fedus, William", "Zoph, Barret", "Shazeer, Noam"]
     type: "academic_paper"
     year: 2022
-    doi: "10.48550/arXiv.2101.03961"
     url: "https://arxiv.org/abs/2101.03961"
+    doi: "10.48550/arXiv.2101.03961"
     institution: "arXiv / Cornell University"
   - title: "GPT-4 Technical Report"
 
@@ -64,11 +62,12 @@ secondary_sources:
     authors: ["Jiang, Albert Q.", "Sablayrolles, Alexandre", "Roux, Antoine", "Mensch, Arthur", "Savary, Blanche", "Bamford, Chris", "Chaplot, Devendra Singh", "de las Casas, Diego", "Hanna, Emma Bou", "Bressand, Florian", "et al."]
     type: "academic_paper"
     year: 2024
-    doi: "10.48550/arXiv.2401.04088"
     url: "https://arxiv.org/abs/2401.04088"
+    doi: "10.48550/arXiv.2401.04088"
     institution: "Mistral AI"
 
 ---
+
 
 
 ## TL;DR

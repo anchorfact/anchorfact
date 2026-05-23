@@ -6,9 +6,13 @@ category: "science"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-geological-time-1"
@@ -22,6 +26,13 @@ atomic_facts:
 
 completeness: 0.9
 
+known_gaps:
+  - "Hadean Eon (4.54-4.0 Ga) no rock record"
+  - "Anthropocene formal designation debate"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
+
 primary_sources:
   - title: "Geologic Time Scale 2024"
     type: "reference"
@@ -34,14 +45,8 @@ primary_sources:
     url: "https://www.macmillanlearning.com/college/us/product/Earth-System-History/p/1319154022"
     institution: "W.H. Freeman"
 
-known_gaps:
-  - "Hadean Eon (4.54-4.0 Ga) no rock record"
-  - "Anthropocene formal designation debate"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 ## TL;DR
 Earth's 4.54-billion-year history is recorded in rocks, fossils, and isotopes. The geological time scale organizes this history into eons, eras, periods, and epochs — each defined by major geological or biological events.

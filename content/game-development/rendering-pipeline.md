@@ -1,78 +1,75 @@
 ---
-id: kb-gd-030
-title: 游戏渲染管线与着色器
-schema_type: TechArticle
-category: game-development
-language: zh
-confidence: high
-confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
+id: "kb-gd-030"
+title: "游戏渲染管线与着色器"
+schema_type: "TechArticle"
+category: "game-development"
+language: "zh"
+confidence: "high"
 last_verified: "2026-04-28"
-generation_method: human_only
+created_date: "2026-04-28"
+generation_method: "human_only"
 derived_from_human_seed: true
-tags:
-  - concept
-  - rendering
-  - shader
-  - graphics
-  - performance
-summary: 游戏渲染管线与着色器：Forward/Deferred、PBR、后处理、性能优化与跨平台
-primary_sources:
-  - title: 游戏开发Wiki（个人知识库）
-    type: knowledge_base
-    year: 2026
-    note: 基于行业实践和标准参考文献的系统性整理
-    url: https://www.gdconf.com/
-    institution: Game Developers Conference
-secondary_sources:
-  - title: GDC Vault
-    type: conference
-    year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
-    year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
-completeness: 0.85
-known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-related_entities:
-  - entity:game-development
-ai_citations: null
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-gd-001
-    statement: "1 Forward Rendering（前向渲染）\r \r **原理**：对每个物体，遍历所有光源计算光照\r \r ```\r 对于每个物体：\r     对于每个像素：\r         对于每个光源：\r             计算光照贡献\r         累加所有光照\r ```\r \r **优点**：\r - 简单直观\r - 支持透明物体\r - 内存占用低\r \r **缺点**：\r - 光源数量增加时性能急剧下降（O(n×m)）\r - 重复计算（多个物体在同一像素）\r \r **适用场景**：\r - 移动游戏\r - 光源少的场景\r - 需要大量透明物体的游戏\r \r ### 1."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-002
-    statement: "2 Deferred Rendering（延迟渲染）\r \r **原理**：先渲染几何信息到G-Buffer，再统一计算光照\r \r ```\r Pass 1 - 几何 Pass：\r     渲染所有物体到 G-Buffer\r     G-Buffer 包含：位置、法线、颜色、材质属性\r \r Pass 2 - 光照 Pass：\r     对每个光源：\r         在光源影响范围内计算光照\r         读取 G-Buffer 数据\r ```\r \r **优点**：\r - 光源数量对性能影响小\r - 每个像素只计算一次几何\r - 适合大量光源场景\r \r **缺点**：\r - 内存占用高（G-Buffer）\r - 不支持 MSAA（多重采样抗锯齿）\r - 透明物体需要单独处理\r \r **适用场"
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-003
-    statement: "3 Forward+ / Tiled Forward Rendering\r \r **原理**：结合 Forward 和 Deferred 的优点\r \r ```\r 1."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-004
-    statement: "前向渲染，但每个像素只计算相关光源\r ```\r \r **优点**：\r - 支持大量光源（比 Forward 多）\r - 支持 MSAA\r - 支持透明物体\r - 内存占用适中\r \r **适用场景**：\r - 现代游戏的主流选择\r - Unity URP、Unreal 默认管线\r \r ### 1."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-005
-    statement: "4 Clustered Rendering\r \r **原理**：在 Tile 的基础上增加深度维度\r \r ```\r 1."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
+  - id: "fact-gd-001"
+    statement: "1 Forward Rendering（前向渲染）  **原理**：对每个物体，遍历所有光源计算光照  ``` 对于每个物体：     对于每个像素：         对于每个光源：             计算光照贡献         累加所有光照 ```  **优点**： - 简单直观 - 支持透明物体 - 内存占用低  **缺点**： - 光源数量增加时性能急剧下降（O(n×m)） - 重复计算（多个物体在同一像素）  **适用场景**： - 移动游戏 - 光源少的场景 - 需要大量透明物体的游戏  ### 1."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-002"
+    statement: "2 Deferred Rendering（延迟渲染）  **原理**：先渲染几何信息到G-Buffer，再统一计算光照  ``` Pass 1 - 几何 Pass：     渲染所有物体到 G-Buffer     G-Buffer 包含：位置、法线、颜色、材质属性  Pass 2 - 光照 Pass：     对每个光源：         在光源影响范围内计算光照         读取 G-Buffer 数据 ```  **优点**： - 光源数量对性能影响小 - 每个像素只计算一次几何 - 适合大量光源场景  **缺点**： - 内存占用高（G-Buffer） - 不支持 MSAA（多重采样抗锯齿） - 透明物体需要单独处理  **适用场"
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-003"
+    statement: "3 Forward+ / Tiled Forward Rendering  **原理**：结合 Forward 和 Deferred 的优点  ``` 1."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-004"
+    statement: "前向渲染，但每个像素只计算相关光源 ```  **优点**： - 支持大量光源（比 Forward 多） - 支持 MSAA - 支持透明物体 - 内存占用适中  **适用场景**： - 现代游戏的主流选择 - Unity URP、Unreal 默认管线  ### 1."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-005"
+    statement: "4 Clustered Rendering  **原理**：在 Tile 的基础上增加深度维度  ``` 1."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
+completeness: 0.85
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "游戏开发Wiki（个人知识库）"
+    type: "knowledge_base"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "Game Developers Conference"
+
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
+    year: 2018
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
 ---
+
 
 
 

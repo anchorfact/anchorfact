@@ -6,9 +6,13 @@ category: "game-development"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-game-ui-ux-design-1"
@@ -21,6 +25,13 @@ atomic_facts:
     confidence: "high"
 
 completeness: 0.9
+
+known_gaps:
+  - "VR/AR UI paradigms"
+  - "Cross-platform UI scaling strategies"
+
+disputed_statements:
+  - statement: "Minimalism vs information density debate in HUD design"
 
 primary_sources:
   - title: "The Art of Game Design"
@@ -40,14 +51,8 @@ secondary_sources:
     url: "https://www.gameuidatabase.com/"
     institution: "Game UI Database"
 
-known_gaps:
-  - "VR/AR UI paradigms"
-  - "Cross-platform UI scaling strategies"
-
-disputed_statements:
-  - statement: "Minimalism vs information density debate in HUD design"
-
 ---
+
 
 ## TL;DR
 Game UI bridges player intent and game mechanics. Good UI design communicates game state without breaking immersion, using principles from human-computer interaction adapted to real-time, controller-driven contexts.

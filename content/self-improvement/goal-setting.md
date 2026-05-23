@@ -6,26 +6,39 @@ category: "self-improvement"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "fact-si-011"
     statement: "SMART goals framework (Doran 1981, Management Review): Specific, Measurable, Achievable, Relevant, Time-bound. Widely adopted in business, education, sports, and personal development"
-    source_url: "https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher/"
     source_title: "Management Review (Doran, 1981)"
+    source_url: "https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher/"
     confidence: "high"
   - id: "fact-si-012"
     statement: "Locke & Latham's Goal Setting Theory (1990): specific, challenging goals lead to higher performance than vague or easy goals. Key moderators: commitment, feedback, task complexity, situational constraints"
-    source_url: "https://www.penguinrandomhouse.com/"
     source_title: "A Theory of Goal Setting and Task Performance (Locke & Latham)"
+    source_url: "https://www.penguinrandomhouse.com/"
     confidence: "high"
   - id: "fact-si-013"
     statement: "OKRs (Objectives and Key Results) popularized by Intel (Andy Grove) and Google (John Doerr). Objective: qualitative, inspirational goal. Key Results: 3-5 measurable outcomes scored 0-1.0. Grading: 0.7 (70%) considered success — too high means objectives weren't ambitious enough"
-    source_url: "https://www.whatmatters.com/"
     source_title: "Measure What Matters (John Doerr)"
+    source_url: "https://www.whatmatters.com/"
     confidence: "high"
+
+completeness: 0.88
+
+known_gaps:
+  - "Goal-setting effectiveness varies by individual and context; no framework works universally"
+  - "Research cited is primarily from organizational and sports psychology; personal development applications may differ"
+
+disputed_statements:
+  - statement: "The optimal difficulty level for goals (stretch vs achievable) is debated; Locke & Latham advocate challenging goals while others warn against demotivating stretch targets"
 
 primary_sources:
   - title: "Measure What Matters (John Doerr)"
@@ -46,17 +59,8 @@ secondary_sources:
     url: "https://us.macmillan.com/books/9780374533557/thinkingfastandslow"
     institution: "Farrar, Straus & Giroux"
 
-known_gaps:
-  - "Goal-setting effectiveness varies by individual and context; no framework works universally"
-  - "Research cited is primarily from organizational and sports psychology; personal development applications may differ"
-
-disputed_statements:
-  - statement: "The optimal difficulty level for goals (stretch vs achievable) is debated; Locke & Latham advocate challenging goals while others warn against demotivating stretch targets"
-    context: "See primary sources for evidence from both perspectives"
-
-completeness: 0.88
-
 ---
+
 
 ## TL;DR
 

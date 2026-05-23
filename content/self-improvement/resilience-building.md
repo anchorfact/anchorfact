@@ -6,21 +6,31 @@ category: "self-improvement"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "fact-si-017"
     statement: "Resilience is the ability to adapt positively to adversity, trauma, or significant stress. Not a fixed trait — can be developed through practice. Key components: emotional regulation, optimism, cognitive flexibility, social support, sense of purpose"
-    source_url: "https://www.apa.org/topics/resilience"
     source_title: "APA Resilience Guide"
+    source_url: "https://www.apa.org/topics/resilience"
     confidence: "high"
   - id: "fact-si-018"
     statement: "Growth mindset (Carol Dweck, 2006): belief that abilities can be developed through effort. Fixed mindset: belief abilities are innate. Students taught growth mindset show improved academic performance (Blackwell et al., 2007, effect size d=0.27-0.53)"
-    source_url: "https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck-phd/"
     source_title: "Mindset (Carol Dweck)"
+    source_url: "https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck-phd/"
     confidence: "high"
+
+completeness: 0.85
+
+known_gaps:
+  - "Resilience research spans multiple disciplines; this article synthesizes psychological approaches, not biological or sociological"
+  - "Trauma recovery may require professional intervention beyond self-directed resilience practices"
 
 primary_sources:
   - title: "Mindset: The New Psychology of Success (Carol Dweck)"
@@ -41,13 +51,8 @@ secondary_sources:
     url: "https://jamesclear.com/atomic-habits"
     institution: "Avery, Penguin Random House"
 
-known_gaps:
-  - "Resilience research spans multiple disciplines; this article synthesizes psychological approaches, not biological or sociological"
-  - "Trauma recovery may require professional intervention beyond self-directed resilience practices"
-
-completeness: 0.85
-
 ---
+
 
 ## TL;DR
 

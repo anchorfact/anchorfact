@@ -6,9 +6,13 @@ category: "game-development"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-procedural-generation-1"
@@ -21,6 +25,13 @@ atomic_facts:
     confidence: "high"
 
 completeness: 0.9
+
+known_gaps:
+  - "Wave Function Collapse algorithm not covered"
+  - "Runtime performance optimization for mobile"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
 
 primary_sources:
   - title: "Procedural Content Generation in Games"
@@ -40,14 +51,8 @@ secondary_sources:
     url: "https://minecraft.wiki/w/World_generation"
     institution: "Mojang"
 
-known_gaps:
-  - "Wave Function Collapse algorithm not covered"
-  - "Runtime performance optimization for mobile"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 ## TL;DR
 Procedural content generation (PCG) uses algorithms to automatically create game content — terrain, levels, items, quests — replacing manual design with computational generation. It is fundamental to modern open-world and roguelike games.

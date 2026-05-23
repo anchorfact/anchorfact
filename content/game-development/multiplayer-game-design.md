@@ -1,76 +1,75 @@
 ---
-id: kb-gd-024
-title: 多人游戏设计（Multiplayer Game Design）
-schema_type: TechArticle
-category: game-development
-language: zh
-confidence: high
-confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
+id: "kb-gd-024"
+title: "多人游戏设计（Multiplayer Game Design）"
+schema_type: "TechArticle"
+category: "game-development"
+language: "zh"
+confidence: "high"
 last_verified: "2026-04-28"
-generation_method: human_only
+created_date: "2026-04-28"
+generation_method: "human_only"
 derived_from_human_seed: true
-tags:
-  - multiplayer
-  - networking
-  - game-design
-summary: 多人游戏设计核心知识：网络同步、匹配系统、反作弊、社交系统
-primary_sources:
-  - title: 游戏开发Wiki（个人知识库）
-    type: knowledge_base
-    year: 2026
-    note: 基于行业实践和标准参考文献的系统性整理
-    url: https://www.gdconf.com/
-    institution: Game Developers Conference
-secondary_sources:
-  - title: GDC Vault
-    type: conference
-    year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
-    year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
-completeness: 0.85
-known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      Narrative-versus-systems-driven game design is a fundamental debate: story-focused games emphasize authored emotional arcs, while systems-driven games prioritize emergent player-driven
-      experiences
-    context: See primary sources for competing interpretations
-related_entities:
-  - entity:game-development
-ai_citations: null
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-gd-001
+  - id: "fact-gd-001"
     statement: "# 多人游戏设计（Multiplayer Game Design） 多人游戏设计是现代游戏开发中最复杂的领域之一，涉及网络工程、心理学、社会学和系统设计的交叉。本文档涵盖从底层网络同步到上层社交系统的完整知识体系。 --- "
-    confidence: medium
-    source_url: https://www.gameenginebook.com/
-    source_title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-  - id: fact-gd-002
-    statement: "time - lastStateTime) / sendInterval;\r     transform."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-003
-    statement: "Lerp(prevPosition, targetPosition, t);\r }\r ```\r \r #### 帧同步的关键实现\r \r ```cpp\r // 确定性浮点运算（避免不同CPU/编译器结果不一致）\r class FixedPoint {\r     int64_t raw;  // 定点数存储，例如 1 = 1000\r public:\r     static const int64_t SCALE = 1000;\r     FixedPoint operator+(const FixedPoint& other) const {\r         return FixedPoint(raw + other."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-004
-    statement: "raw);\r     }\r     // 所有运算避免浮点，确保跨平台一致\r };\r \r // 输入同步帧结构\r struct InputFrame {\r     uint32_t frameNumber;\r     uint32_t playerId;\r     uint32_t inputMask;  // 位掩码：上/下/左/右/攻击/技能\r     uint16_t aimAngle;   // 定点数角度\r };\r ```\r \r **案例分析**：\r - **《王者荣耀》**：采用帧同步 + 乐观预测。"
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-005
-    statement: "2 延迟补偿（Lag Compensation）\r \r 延迟补偿是 FPS 竞技游戏的核心技术，用于解决\"我看到打中了但服务器说没打中\"的问题。"
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
+    source_title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    source_url: "https://www.gameenginebook.com/"
+    confidence: "medium"
+  - id: "fact-gd-002"
+    statement: "time - lastStateTime) / sendInterval;     transform."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-003"
+    statement: "Lerp(prevPosition, targetPosition, t); } ```  #### 帧同步的关键实现  ```cpp // 确定性浮点运算（避免不同CPU/编译器结果不一致） class FixedPoint {     int64_t raw;  // 定点数存储，例如 1 = 1000 public:     static const int64_t SCALE = 1000;     FixedPoint operator+(const FixedPoint& other) const {         return FixedPoint(raw + other."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-004"
+    statement: "raw);     }     // 所有运算避免浮点，确保跨平台一致 };  // 输入同步帧结构 struct InputFrame {     uint32_t frameNumber;     uint32_t playerId;     uint32_t inputMask;  // 位掩码：上/下/左/右/攻击/技能     uint16_t aimAngle;   // 定点数角度 }; ```  **案例分析**： - **《王者荣耀》**：采用帧同步 + 乐观预测。"
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-005"
+    statement: "2 延迟补偿（Lag Compensation）  延迟补偿是 FPS 竞技游戏的核心技术，用于解决\"我看到打中了但服务器说没打中\"的问题。"
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
+completeness: 0.85
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "Narrative-versus-systems-driven game design is a fundamental debate: story-focused games emphasize authored emotional arcs, while systems-driven games prioritize emergent player-driven experiences"
+
+primary_sources:
+  - title: "游戏开发Wiki（个人知识库）"
+    type: "knowledge_base"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "Game Developers Conference"
+
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
+    year: 2018
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
 ---
+
 
 
 

@@ -6,9 +6,13 @@ category: "self-improvement"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-cognitive-biases-handbook-1"
@@ -22,6 +26,13 @@ atomic_facts:
 
 completeness: 0.9
 
+known_gaps:
+  - "Cultural variation in bias expression"
+  - "AI-assisted debiasing tools"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
+
 primary_sources:
   - title: "The Art of Thinking Clearly"
     type: "textbook"
@@ -34,14 +45,8 @@ primary_sources:
     url: "https://yalebooks.yale.edu/book/9780300122237/nudge/"
     institution: "Yale University Press"
 
-known_gaps:
-  - "Cultural variation in bias expression"
-  - "AI-assisted debiasing tools"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 ## TL;DR
 Cognitive biases are systematic errors in thinking affecting judgment and decision making. Over 180 documented biases influence everything from medical diagnoses to investment choices.

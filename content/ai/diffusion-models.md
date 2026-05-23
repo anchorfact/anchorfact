@@ -1,165 +1,71 @@
 ---
 id: "kb-2026-00009"
-
-
-
 title: "Diffusion Models"
 schema_type: "TechArticle"
-
-
-
 category: "ai"
 language: "en"
-
-
-
 confidence: "high"
-confidence_rationale: "Based on DDPM (Ho et al., 2020, 15,000+ citations), Stable Diffusion/LDM (Rombach et al., 2022), and Score-Based SDE (Song et al., 2021), all published at top ML venues (NeurIPS, CVPR)"
-
-
-
 last_verified: "2026-05-22"
+created_date: "2026-05-22"
 generation_method: "human_only"
-
-
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
-  - id: fact-ai-01
-    statement: >-
-      Popularized by DDPM and made practical by Stable Diffusion / Latent Diffusion Models , diffusion has surpassed GANs
-      as the dominant paradigm for high-quality image generation and has expanded to video , audio , 3D , and biology
-    source_title: High-Resolution Image Synthesis with Latent Diffusion Models (Stable Diffusion)
-    source_url: https://arxiv.org/abs/2112.10752
-    source_doi: 10.48550/arXiv.2112.10752
-    confidence: high
-  - id: fact-ai-02
-    statement: Diffusion models are generative models that create data by learning to reverse a gradual noise-adding process
-    source_title: Denoising Diffusion Probabilistic Models (DDPM)
-    source_url: https://arxiv.org/abs/2006.11239
-    source_doi: 10.48550/arXiv.2006.11239
-    confidence: high
-  
-completeness: 0.90
-disputed_statements:
-  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
-    confidence: "medium"
+  - id: "fact-ai-01"
+    statement: "Popularized by DDPM and made practical by Stable Diffusion / Latent Diffusion Models , diffusion has surpassed GANs as the dominant paradigm for high-quality image generation and has expanded to video , audio , 3D , and biology"
+    source_title: "High-Resolution Image Synthesis with Latent Diffusion Models (Stable Diffusion)"
+    source_url: "https://arxiv.org/abs/2112.10752"
+    source_doi: "10.48550/arXiv.2112.10752"
+    confidence: "high"
+  - id: "fact-ai-02"
+    statement: "Diffusion models are generative models that create data by learning to reverse a gradual noise-adding process"
+    source_title: "Denoising Diffusion Probabilistic Models (DDPM)"
+    source_url: "https://arxiv.org/abs/2006.11239"
+    source_doi: "10.48550/arXiv.2006.11239"
+    confidence: "high"
 
+completeness: 0.9
 
 known_gaps:
   - "DDIM, Consistency Models, and other sampling acceleration techniques deserve separate treatment"
-related_entities:
-  - "entity:generative-ai"
-  - "entity:computer-vision"
-  - "entity:gan"
+
+disputed_statements:
+  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
+
 primary_sources:
   - title: "Denoising Diffusion Probabilistic Models (DDPM)"
     authors: ["Ho, Jonathan", "Jain, Ajay", "Abbeel, Pieter"]
     type: "academic_paper"
-
-
-
     year: 2020
-    doi: "10.48550/arXiv.2006.11239"
-
-
-
     url: "https://arxiv.org/abs/2006.11239"
+    doi: "10.48550/arXiv.2006.11239"
     institution: "UC Berkeley"
-
-
-
-    note: "Published at NeurIPS 2020. As of May 2026: 15,000+ citations. The foundational paper that made diffusion models practical for image generation."
   - title: "High-Resolution Image Synthesis with Latent Diffusion Models (Stable Diffusion)"
     authors: ["Rombach, Robin", "Blattmann, Andreas", "Lorenz, Dominik", "Esser, Patrick", "Ommer, Björn"]
     type: "academic_paper"
-
-
-
     year: 2022
-    doi: "10.48550/arXiv.2112.10752"
-
-
-
     url: "https://arxiv.org/abs/2112.10752"
+    doi: "10.48550/arXiv.2112.10752"
     institution: "LMU Munich / RunwayML"
-
-
-
-    note: "Published at CVPR 2022. Made high-resolution diffusion practical by operating in compressed latent space. Foundation of Stable Diffusion."
   - title: "Score-Based Generative Modeling through Stochastic Differential Equations"
     authors: ["Song, Yang", "Sohl-Dickstein, Jascha", "Kingma, Diederik P.", "Kumar, Abhishek", "Ermon, Stefano", "Poole, Ben"]
     type: "academic_paper"
-
-
-
     year: 2021
-    doi: "10.48550/arXiv.2011.13456"
-
-
-
     url: "https://arxiv.org/abs/2011.13456"
+    doi: "10.48550/arXiv.2011.13456"
     institution: "Stanford University / Google Brain"
 
-
-
-    note: "Published at ICLR 2021. Unified DDPM and score-based models under the SDE framework, enabling faster sampling and likelihood computation."
 secondary_sources:
   - title: "Sora Technical Report"
     type: "technical_report"
-
-
-
     year: 2024
     url: "https://openai.com/index/sora/"
-
-
     institution: "OpenAI"
-ai_citations:
-  - title: "What are Diffusion Models?"
-    authors: ["Weng, Lilian"]
-    type: "blog_post"
 
-
-
-    year: 2021
-    url: "https://lilianweng.github.io/posts/2021-07-11-diffusion-models/"
-
-
-    institution: "OpenAI"
-  - title: "The Annotated Diffusion Model"
-    authors: ["Rogozhnikov, Alex"]
-    type: "blog_post"
-
-
-
-    year: 2022
-    url: "https://huggingface.co/blog/annotated-diffusion"
-
-
-    institution: "Hugging Face"
-  - title: "The Annotated Diffusion Model"
-    authors: ["Rogozhnikov, Alex"]
-    type: "blog_post"
-
-
-
-    year: 2022
-    url: "https://huggingface.co/blog/annotated-diffusion"
-
-
-    institution: "Hugging Face"
-  - title: "What are Diffusion Models?"
-    authors: ["Weng, Lilian"]
-    type: "blog_post"
-
-
-
-    year: 2021
-    url: "https://lilianweng.github.io/posts/2021-07-11-diffusion-models/"
-
-
-    institution: "OpenAI"
 ---
+
 
 ## TL;DR
 

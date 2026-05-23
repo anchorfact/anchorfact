@@ -1,62 +1,67 @@
 ---
-id: kb-2026-00333
-title: Theory of Relativity
-schema_type: TechArticle
-category: science
-language: en
-confidence: high
+id: "kb-2026-00333"
+title: "Theory of Relativity"
+schema_type: "TechArticle"
+category: "science"
+language: "en"
+confidence: "high"
 last_verified: "2026-05-22"
-generation_method: ai_assisted
-ai_models:
-  - claude-opus
+created_date: "2026-05-22"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
+atomic_facts:
+  - id: "fact-science-001"
+    statement: "Einstein's relativity (1905 Special, 1915 General) redefined space, time, and gravity. Special relativity: laws of physics same for all non-accelerating observers; speed of light is constant → time dilation, length contraction, E=mc². General relativity: gravity is curvature of spacetime by mass/energy."
+    source_title: "Relativity: The Special and General Theory (Einstein, 1916)"
+    source_url: "https://www.gutenberg.org/ebooks/5001"
+    confidence: "medium"
+  - id: "fact-science-002"
+    statement: "General relativity: predicted black holes, gravitational waves (detected 2015 by LIGO), expansion of universe."
+    source_title: "Relativity: The Special and General Theory (Einstein, 1916)"
+    source_url: "https://www.gutenberg.org/ebooks/5001"
+    confidence: "medium"
+  - id: "fact-science-003"
+    statement: "Einstein's happiest thought (1907): free-falling person doesn't feel own weight — equivalence principle."
+    source_title: "Relativity: The Special and General Theory (Einstein, 1916)"
+    source_url: "https://www.gutenberg.org/ebooks/5001"
+    confidence: "medium"
+
+completeness: 0.88
+
+known_gaps:
+  - "Statistics and data cited are from 1916 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - "Climate and environmental data may have been updated by more recent IPCC or scientific assessments"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
 primary_sources:
   - title: "Relativity: The Special and General Theory (Einstein, 1916)"
-    type: book
+    type: "book"
     year: 1916
-    url: https://www.gutenberg.org/ebooks/5001
-    institution: Project Gutenberg
+    url: "https://www.gutenberg.org/ebooks/5001"
+    institution: "Project Gutenberg"
+
 secondary_sources:
   - title: "Relativity: The Special and General Theory"
-    type: book
+    type: "book"
     year: 1916
-    url: https://www.gutenberg.org/ebooks/5001
-    institution: Albert Einstein, Methuen & Co.
-  - title: Biology (Campbell, 12th Edition)
-    type: textbook
+    url: "https://www.gutenberg.org/ebooks/5001"
+    institution: "Albert Einstein, Methuen & Co."
+  - title: "Biology (Campbell, 12th Edition)"
+    type: "textbook"
     year: 2020
-    url: https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058
-    institution: Pearson Education
-completeness: 0.88
-known_gaps:
-  - Statistics and data cited are from 1916 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-  - Climate and environmental data may have been updated by more recent IPCC or scientific assessments
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-ai_citations: null
-atomic_facts:
-  - id: fact-science-001
-    statement: >-
-      Einstein's relativity (1905 Special, 1915 General) redefined space, time, and gravity. Special relativity: laws of physics same for all non-accelerating observers; speed of light is constant →
-      time dilation, length contraction, E=mc². General relativity: gravity is curvature of spacetime by mass/energy.
-    confidence: medium
-    source_title: "Relativity: The Special and General Theory (Einstein, 1916)"
-    source_url: https://www.gutenberg.org/ebooks/5001
-  - id: fact-science-002
-    statement: "General relativity: predicted black holes, gravitational waves (detected 2015 by LIGO), expansion of universe."
-    confidence: medium
-    source_title: "Relativity: The Special and General Theory (Einstein, 1916)"
-    source_url: https://www.gutenberg.org/ebooks/5001
-  - id: fact-science-003
-    statement: "Einstein's happiest thought (1907): free-falling person doesn't feel own weight — equivalence principle."
-    confidence: medium
-    source_title: "Relativity: The Special and General Theory (Einstein, 1916)"
-    source_url: https://www.gutenberg.org/ebooks/5001
+    url: "https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058"
+    institution: "Pearson Education"
+
 ---
+
 
 
 ## TL;DR

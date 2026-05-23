@@ -6,26 +6,36 @@ category: "self-improvement"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "fact-si-019"
     statement: "Deep work (Cal Newport, 2016): professional activities performed in a state of distraction-free concentration that push cognitive capabilities to their limit. These efforts create new value, improve skills, and are hard to replicate"
-    source_url: "https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/"
     source_title: "Deep Work (Cal Newport)"
+    source_url: "https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/"
     confidence: "high"
   - id: "fact-si-020"
     statement: "Pomodoro Technique (Francesco Cirillo, 1980s): 25-minute focused work sessions separated by 5-minute breaks. After 4 pomodoros, take 15-30 minute break. Based on principle that frequent breaks improve mental agility and sustained attention"
-    source_url: "https://francescocirillo.com/products/the-pomodoro-technique"
     source_title: "The Pomodoro Technique (Cirillo)"
+    source_url: "https://francescocirillo.com/products/the-pomodoro-technique"
     confidence: "high"
   - id: "fact-si-021"
     statement: "Flow state (Csikszentmihalyi, 1990): optimal experience of complete absorption in an activity. Conditions: clear goals, immediate feedback, balance between challenge and skill. Characterized by loss of self-consciousness, distorted time perception, intrinsic reward"
-    source_url: "https://www.harpercollins.com/products/flow-mihaly-csikszentmihalyi"
     source_title: "Flow (Csikszentmihalyi)"
+    source_url: "https://www.harpercollins.com/products/flow-mihaly-csikszentmihalyi"
     confidence: "high"
+
+completeness: 0.88
+
+known_gaps:
+  - "Attention research is rapidly evolving; this article covers established techniques, not cutting-edge neuroscience"
+  - "ADHD and other attention disorders may require different approaches beyond general techniques"
 
 primary_sources:
   - title: "Deep Work: Rules for Focused Success in a Distracted World (Cal Newport)"
@@ -46,13 +56,8 @@ secondary_sources:
     url: "https://jamesclear.com/atomic-habits"
     institution: "Avery, Penguin Random House"
 
-known_gaps:
-  - "Attention research is rapidly evolving; this article covers established techniques, not cutting-edge neuroscience"
-  - "ADHD and other attention disorders may require different approaches beyond general techniques"
-
-completeness: 0.88
-
 ---
+
 
 ## TL;DR
 

@@ -1,77 +1,57 @@
 ---
 id: "kb-2026-00436"
-
-
-
 title: "Time Value of Money"
 schema_type: "TechArticle"
-
-
-
 category: "business"
 language: "en"
-
-
-
 confidence: "high"
 last_verified: "2026-05-22"
-
-
-
+created_date: "2026-05-22"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
+atomic_facts:
+  - id: "fact-business-01"
+    statement: "The Time Value of Money is the core principle of finance: a dollar today is worth more than a dollar tomorrow because it can be invested and earn returns"
+    source_title: "Principles of Corporate Finance (Brealey, Myers, Allen, 14th Ed)"
+    source_url: "https://www.mheducation.com/highered/product/principles-corporate-finance-brealey-myers/M9781264080946.html"
+    confidence: "high"
+  - id: "fact-business-02"
+    statement: "At 7% return, money doubles every 10 years"
+    source_title: "Principles of Corporate Finance (Brealey, Myers, Allen, 14th Ed)"
+    source_url: "https://www.mheducation.com/highered/product/principles-corporate-finance-brealey-myers/M9781264080946.html"
+    confidence: "high"
+
+completeness: 0.88
+
+known_gaps:
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
 primary_sources:
   - title: "Principles of Corporate Finance (Brealey, Myers, Allen, 14th Ed)"
     type: "book"
-
-
-
     year: 2022
     url: "https://www.mheducation.com/highered/product/principles-corporate-finance-brealey-myers/M9781264080946.html"
-
-
     institution: "McGraw-Hill"
+
 secondary_sources:
   - title: "Harvard Business Review"
     type: "journal"
-
-
-
     year: 2025
     url: "https://hbr.org/"
-
-
     institution: "Harvard Business Publishing"
   - title: "The Economist"
     type: "periodical"
-
-
-
     year: 2025
     url: "https://www.economist.com/"
-
-
     institution: "The Economist Group"
-atomic_facts:
-  - id: fact-business-01
-    statement: >-
-      The Time Value of Money is the core principle of finance: a dollar today is worth more than a dollar tomorrow
-      because it can be invested and earn returns
-    source_title: Principles of Corporate Finance (Brealey, Myers, Allen, 14th Ed)
-    source_url: https://www.mheducation.com/highered/product/principles-corporate-finance-brealey-myers/M9781264080946.html
-    confidence: high
-  - id: fact-business-02
-    statement: At 7% return, money doubles every 10 years
-    source_title: Principles of Corporate Finance (Brealey, Myers, Allen, 14th Ed)
-    source_url: https://www.mheducation.com/highered/product/principles-corporate-finance-brealey-myers/M9781264080946.html
-    confidence: high
-  
-completeness: 0.88
-known_gaps:
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-ai_citations:
+
 ---
+
 
 ## TL;DR
 

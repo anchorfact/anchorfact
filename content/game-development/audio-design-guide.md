@@ -1,77 +1,75 @@
 ---
-id: kb-gd-006
-title: 游戏音效设计完全指南
-schema_type: TechArticle
-category: game-development
-language: zh
-confidence: high
-confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
+id: "kb-gd-006"
+title: "游戏音效设计完全指南"
+schema_type: "TechArticle"
+category: "game-development"
+language: "zh"
+confidence: "high"
 last_verified: "2026-04-28"
-generation_method: human_only
+created_date: "2026-04-28"
+generation_method: "human_only"
 derived_from_human_seed: true
-tags:
-  - audio
-  - sound-design
-  - music
-  - technical
-summary: 游戏音效设计：音频引擎、空间音频、动态音乐、音频反馈、技术实现
-primary_sources:
-  - title: 游戏开发Wiki（个人知识库）
-    type: knowledge_base
-    year: 2026
-    note: 基于行业实践和标准参考文献的系统性整理
-    url: https://www.gdconf.com/
-    institution: Game Developers Conference
-secondary_sources:
-  - title: GDC Vault
-    type: conference
-    year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
-    year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
-completeness: 0.85
-known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-related_entities:
-  - entity:game-development
-ai_citations: null
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-gd-001
-    statement: "2 Wwise（Audiokinetic）\r \r Wwise 是业界最专业、功能最全面的音频中间件，被超过500款3A游戏采用。"
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-002
-    statement: "**核心特性：**\r - **对象导向设计**：声音作为独立对象存在，支持复杂的事件系统\r - **实时参数控制（RTPC）**：将游戏参数实时映射到音频属性\r - **互动音乐系统**：支持垂直/水平混音、Stems系统\r - **高级空间音频**：内置对象音频、HRTF、几何声学\r - ** profiling 工具**：完整的性能分析和调试套件\r \r **代码示例（Unity + Wwise）：**\r ```csharp\r // 触发 Wwise 事件\r AkSoundEngine."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-003
-    statement: "PostEvent(\"Play_Footstep\", gameObject);\r \r // 设置 RTPC 参数（如玩家血量影响音频滤波）\r AkSoundEngine."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-004
-    statement: "SetRTPCValue(\"PlayerHealth\", currentHealth, gameObject);\r \r // 设置 3D 定位\r AkSoundEngine."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-005
-    statement: "SetObjectPosition(gameObject, transform);\r \r // 切换 State（如进入战斗状态）\r AkSoundEngine."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
+  - id: "fact-gd-001"
+    statement: "2 Wwise（Audiokinetic）  Wwise 是业界最专业、功能最全面的音频中间件，被超过500款3A游戏采用。"
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-002"
+    statement: "**核心特性：** - **对象导向设计**：声音作为独立对象存在，支持复杂的事件系统 - **实时参数控制（RTPC）**：将游戏参数实时映射到音频属性 - **互动音乐系统**：支持垂直/水平混音、Stems系统 - **高级空间音频**：内置对象音频、HRTF、几何声学 - ** profiling 工具**：完整的性能分析和调试套件  **代码示例（Unity + Wwise）：** ```csharp // 触发 Wwise 事件 AkSoundEngine."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-003"
+    statement: "PostEvent(\"Play_Footstep\", gameObject);  // 设置 RTPC 参数（如玩家血量影响音频滤波） AkSoundEngine."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-004"
+    statement: "SetRTPCValue(\"PlayerHealth\", currentHealth, gameObject);  // 设置 3D 定位 AkSoundEngine."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-005"
+    statement: "SetObjectPosition(gameObject, transform);  // 切换 State（如进入战斗状态） AkSoundEngine."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
+completeness: 0.85
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "游戏开发Wiki（个人知识库）"
+    type: "knowledge_base"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "Game Developers Conference"
+
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
+    year: 2018
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
 ---
+
 
 
 

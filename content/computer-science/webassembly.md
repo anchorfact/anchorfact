@@ -1,91 +1,60 @@
 ---
 id: "kb-2026-00017"
-
-
-
 title: "WebAssembly (Wasm) 3.0"
 schema_type: "TechArticle"
-
-
-
 category: "computer-science"
 language: "en"
-
-
-
 confidence: "high"
-confidence_rationale: "Based on the official WebAssembly 3.0 release announcement (September 17, 2025) and the WASI Preview 2 specification"
-
-
-
 last_verified: "2026-05-22"
+created_date: "2026-05-22"
 generation_method: "human_only"
-
-
-
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
+atomic_facts:
+  - id: "fact-computer-science-01"
+    statement: "Wasm 3.0, completed on September 17, 2025 , represents the culmination of 6-8 years of specification work, adding 10 major features including 64-bit addressing, garbage collection, exception handling, tail calls, and multiple memories"
+    source_title: "Wasm 3.0 Completed"
+    source_url: "https://webassembly.org/news/2025-09-17-wasm-3.0/"
+    confidence: "medium"
+  - id: "fact-computer-science-02"
+    statement: "WebAssembly is a portable binary instruction format for stack-based virtual machines, designed as a compilation target for programming languages"
+    source_title: "Wasm 3.0 Completed"
+    source_url: "https://webassembly.org/news/2025-09-17-wasm-3.0/"
+    confidence: "medium"
+
+completeness: 0.9
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
 primary_sources:
   - title: "Wasm 3.0 Completed"
     authors: ["Rossberg, Andreas"]
     type: "announcement"
-
-
-
     year: 2025
     url: "https://webassembly.org/news/2025-09-17-wasm-3.0/"
-
-
     institution: "WebAssembly Community Group (W3C)"
   - title: "WASI Preview 2 — WebAssembly System Interface"
     type: "standard"
-
-
-
     year: 2024
     url: "https://github.com/WebAssembly/WASI"
-
-
     institution: "WebAssembly CG"
+
 secondary_sources:
   - title: "WebAssembly Feature Status"
     type: "tracker"
-
-
-
     url: "https://webassembly.org/features/"
     institution: "Webassembly"
 
-
-atomic_facts:
-  - id: fact-computer-science-01
-    statement: >-
-      Wasm 3.0, completed on September 17, 2025 , represents the culmination of 6-8 years of specification work, adding 10
-      major features including 64-bit addressing, garbage collection, exception handling, tail calls, and multiple
-      memories
-    source_title: Wasm 3.0 Completed
-    source_url: https://webassembly.org/news/2025-09-17-wasm-3.0/
-    confidence: medium
-  - id: fact-computer-science-02
-    statement: >-
-      WebAssembly is a portable binary instruction format for stack-based virtual machines, designed as a compilation
-      target for programming languages
-    source_title: Wasm 3.0 Completed
-    source_url: https://webassembly.org/news/2025-09-17-wasm-3.0/
-    confidence: medium
-  
-completeness: 0.90
-known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
-
-related_entities:
-  - "entity:javascript"
-  - "entity:browser-engines"
-ai_citations:
 ---
+
 
 ## TL;DR
 

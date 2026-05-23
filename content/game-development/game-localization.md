@@ -1,79 +1,75 @@
 ---
-id: kb-gd-016
-title: 游戏本地化（Localization / L10n）
-schema_type: TechArticle
-category: game-development
-language: zh
-confidence: high
-confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
+id: "kb-gd-016"
+title: "游戏本地化（Localization / L10n）"
+schema_type: "TechArticle"
+category: "game-development"
+language: "zh"
+confidence: "high"
 last_verified: "2026-04-28"
-generation_method: human_only
+created_date: "2026-04-28"
+generation_method: "human_only"
 derived_from_human_seed: true
-tags:
-  - localization
-  - l10n
-  - i18n
-  - translation
-  - culturalization
-  - global
-summary: ""
-primary_sources:
-  - title: 游戏开发Wiki（个人知识库）
-    type: knowledge_base
-    year: 2026
-    note: 基于行业实践和标准参考文献的系统性整理
-    url: https://www.gdconf.com/
-    institution: Game Developers Conference
-secondary_sources:
-  - title: GDC Vault
-    type: conference
-    year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
-    year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
-completeness: 0.85
-known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-related_entities:
-  - entity:game-development
-ai_citations: null
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-gd-001
+  - id: "fact-gd-001"
     statement: "# 游戏本地化（Localization / L10n） > **本地化不是翻译。** 翻译是把文字从 A 语言变成 B 语言；本地化是让游戏在 B 文化中**感觉像是为当地人设计的**。 --- "
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-002
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-002"
     statement: "** 翻译是把文字从 A 语言变成 B 语言；本地化是让游戏在 B 文化中**感觉像是为当地人设计的**。"
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-003
-    statement: "000,50（德）\r    └── 货币：符号位置（$100 vs 100$）\r \r ✅ 语音/音频分离\r    └── 语音文件按语言分包\r    └── 音效（非语言）共用\r ```\r \r ---\r \r ## 多语言技术实现\r \r ### 文本系统架构\r \r ```\r 本地化系统架构：\r \r Key-Value 存储（运行时）\r ├── 主键： gameplay."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-004
-    statement: "welcome\r ├── 英文： \"Welcome, {player_name}!"
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-005
-    statement: "\"\r ├── 中文： \"欢迎回来，{player_name}！\"\r ├── 日文： \"お帰りなさい、{player_name}さん！\"\r └── 占位符：{player_name} → 运行时替换\r \r 存储格式对比：\r ├── CSV — 简单，Excel 友好，但不支持嵌套\r ├── JSON — 灵活，支持嵌套，解析开销小\r ├── XLIFF — 行业标准，支持翻译记忆、状态追踪\r └── GetText (."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-003"
+    statement: "000,50（德）    └── 货币：符号位置（$100 vs 100$）  ✅ 语音/音频分离    └── 语音文件按语言分包    └── 音效（非语言）共用 ```  ---  ## 多语言技术实现  ### 文本系统架构  ``` 本地化系统架构：  Key-Value 存储（运行时） ├── 主键： gameplay."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-004"
+    statement: "welcome ├── 英文： \"Welcome, {player_name}!"
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-005"
+    statement: "\" ├── 中文： \"欢迎回来，{player_name}！\" ├── 日文： \"お帰りなさい、{player_name}さん！\" └── 占位符：{player_name} → 运行时替换  存储格式对比： ├── CSV — 简单，Excel 友好，但不支持嵌套 ├── JSON — 灵活，支持嵌套，解析开销小 ├── XLIFF — 行业标准，支持翻译记忆、状态追踪 └── GetText (."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
+completeness: 0.85
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "游戏开发Wiki（个人知识库）"
+    type: "knowledge_base"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "Game Developers Conference"
+
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
+    year: 2018
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
 ---
+
 
 
 

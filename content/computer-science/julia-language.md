@@ -1,68 +1,68 @@
 ---
-id: kb-2026-00309
-title: Julia Language
-schema_type: TechArticle
-category: computer-science
-language: en
-confidence: high
+id: "kb-2026-00309"
+title: "Julia Language"
+schema_type: "TechArticle"
+category: "computer-science"
+language: "en"
+confidence: "high"
 last_verified: "2026-05-22"
-generation_method: human_only
+created_date: "2026-05-22"
+generation_method: "human_only"
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
+atomic_facts:
+  - id: "fact-computer-science-001"
+    statement: "Julia (Jeff Bezanson, Stefan Karpinski, Viral Shah, Alan Edelman, 2012, MIT) solves the 'two-language problem' — high-level syntax with C-like speed. Just-in-time (JIT) compilation via LLVM. Used for scientific computing, ML, finance, and HPC. Key packages: DifferentialEquations.jl, Flux.jl (ML)."
+    source_title: "Julia: A Fresh Approach to Numerical Computing"
+    source_url: "https://epubs.siam.org/doi/10.1137/141000671"
+    source_doi: "10.1137/141000671"
+    confidence: "high"
+  - id: "fact-computer-science-002"
+    statement: "Multiple dispatch: functions defined by combination of ALL argument types — core paradigm."
+    source_title: "Julia Documentation"
+    source_url: "https://docs.julialang.org/"
+    confidence: "medium"
+
+completeness: 0.88
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
 primary_sources:
-  - title: Julia Documentation
-    type: documentation
+  - title: "Julia Documentation"
+    type: "documentation"
     year: 2026
-    url: https://docs.julialang.org/
-    institution: JuliaHub
-    note: "High-performance scientific language: multiple dispatch, JIT, type system, metaprogramming"
+    url: "https://docs.julialang.org/"
+    institution: "JuliaHub"
+
 secondary_sources:
   - title: "Julia: A Fresh Approach to Numerical Computing"
-    authors:
-      - Bezanson, Jeff
-      - Edelman, Alan
-      - Karpinski, Stefan
-      - Shah, Viral B.
-    type: academic_paper
+    authors: ["Bezanson, Jeff", "Edelman, Alan", "Karpinski, Stefan", "Shah, Viral B."]
+    type: "academic_paper"
     year: 2017
-    doi: 10.1137/141000671
-    url: https://epubs.siam.org/doi/10.1137/141000671
-    institution: SIAM Review
-    note: The canonical Julia paper — 5,000+ citations. Describes language design and JIT architecture.
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
+    url: "https://epubs.siam.org/doi/10.1137/141000671"
+    doi: "10.1137/141000671"
+    institution: "SIAM Review"
+  - title: "The C Programming Language (K&R, 2nd Ed)"
+    type: "textbook"
     year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
+    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
+    institution: "Prentice Hall"
+  - title: "Structure and Interpretation of Computer Programs (SICP)"
+    type: "textbook"
     year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
-completeness: 0.88
-known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-ai_citations: null
-atomic_facts:
-  - id: fact-computer-science-001
-    statement: >-
-      Julia (Jeff Bezanson, Stefan Karpinski, Viral Shah, Alan Edelman, 2012, MIT) solves the 'two-language problem' — high-level syntax with C-like speed. Just-in-time (JIT) compilation via LLVM.
-      Used for scientific computing, ML, finance, and HPC. Key packages: DifferentialEquations.jl, Flux.jl (ML).
-    confidence: high
-    source_title: "Julia: A Fresh Approach to Numerical Computing"
-    source_url: https://epubs.siam.org/doi/10.1137/141000671
-    source_doi: 10.1137/141000671
-  - id: fact-computer-science-002
-    statement: "Multiple dispatch: functions defined by combination of ALL argument types — core paradigm."
-    confidence: medium
-    source_title: Julia Documentation
-    source_url: https://docs.julialang.org/
+    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
+    institution: "MIT Press"
+
 ---
+
 
 
 

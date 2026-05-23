@@ -1,67 +1,65 @@
 ---
-id: kb-2026-00457
-title: Renewable Energy
-schema_type: TechArticle
-category: science
-language: en
-confidence: high
+id: "kb-2026-00457"
+title: "Renewable Energy"
+schema_type: "TechArticle"
+category: "science"
+language: "en"
+confidence: "high"
 last_verified: "2026-05-22"
-generation_method: ai_assisted
-ai_models:
-  - claude-opus
+created_date: "2026-05-22"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
 derived_from_human_seed: true
-primary_sources:
-  - title: Sustainable Energy — Without the Hot Air (David MacKay)
-    type: book
-    year: 2008
-    url: https://www.withouthotair.com/
-    institution: UIT Cambridge
-secondary_sources:
-  - title: Biology (Campbell, 12th Edition)
-    type: textbook
-    year: 2020
-    url: https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058
-    institution: Pearson Education
-  - title: "National Geographic: Science & Exploration"
-    type: reference
-    year: 2024
-    url: https://www.nationalgeographic.com/science
-    institution: National Geographic Society
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-science-01
-    statement: Solar and wind are now cheaper than fossil fuels in most of the world
-    source_title: Sustainable Energy — Without the Hot Air (David MacKay)
-    source_url: https://www.withouthotair.com/
-    confidence: high
-  - id: fact-science-02
+  - id: "fact-science-01"
+    statement: "Solar and wind are now cheaper than fossil fuels in most of the world"
+    source_title: "Sustainable Energy — Without the Hot Air (David MacKay)"
+    source_url: "https://www.withouthotair.com/"
+    confidence: "high"
+  - id: "fact-science-02"
     statement: "Li-ion batteries: costs dropped 97% since 1991"
-    source_title: Sustainable Energy — Without the Hot Air (David MacKay)
-    source_url: https://www.withouthotair.com/
-    confidence: high
-  - id: fact-science-03
+    source_title: "Sustainable Energy — Without the Hot Air (David MacKay)"
+    source_url: "https://www.withouthotair.com/"
+    confidence: "high"
+  - id: "fact-science-03"
     statement: "'The Stone Age didn't end because we ran out of stones' — energy transitions are about better alternatives"
-    source_title: Sustainable Energy — Without the Hot Air (David MacKay)
-    source_url: https://www.withouthotair.com/
-    confidence: high
+    source_title: "Sustainable Energy — Without the Hot Air (David MacKay)"
+    source_url: "https://www.withouthotair.com/"
+    confidence: "high"
+
+known_gaps:
+  - "Statistics and data cited are from 2020 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - "Climate and environmental data may have been updated by more recent IPCC or scientific assessments"
+
 disputed_statements:
   - statement: "The role of nuclear energy in decarbonization is contested: proponents cite low-carbon baseload power, while critics highlight waste storage, proliferation risks, and cost overruns"
-    confidence: medium
-known_gaps:
-  - Statistics and data cited are from 2020 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-  - Climate and environmental data may have been updated by more recent IPCC or scientific assessments
-ai_citations:
-  - title: A Brief History of Time
-    type: book
-    year: 1988
-    url: https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/
-    institution: Stephen Hawking, Bantam
-  - title: Nature (journal)
-    type: journal
-    year: 2025
-    url: https://www.nature.com/
-    institution: Springer Nature
+
+primary_sources:
+  - title: "Sustainable Energy — Without the Hot Air (David MacKay)"
+    type: "book"
+    year: 2008
+    url: "https://www.withouthotair.com/"
+    institution: "UIT Cambridge"
+
+secondary_sources:
+  - title: "Biology (Campbell, 12th Edition)"
+    type: "textbook"
+    year: 2020
+    url: "https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058"
+    institution: "Pearson Education"
+  - title: "National Geographic: Science & Exploration"
+    type: "reference"
+    year: 2024
+    url: "https://www.nationalgeographic.com/science"
+    institution: "National Geographic Society"
+
 ---
+
 
 
 ## TL;DR

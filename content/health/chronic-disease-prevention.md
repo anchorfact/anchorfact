@@ -6,9 +6,13 @@ category: "health"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-chronic-disease-prevention-1"
@@ -22,6 +26,13 @@ atomic_facts:
 
 completeness: 0.9
 
+known_gaps:
+  - "Genomic risk scoring integration into prevention"
+  - "Health disparities in prevention access"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
+
 primary_sources:
   - title: "Preventive Medicine and Public Health"
     type: "textbook"
@@ -34,14 +45,8 @@ primary_sources:
     url: "https://www.who.int/publications/i/item/9789240061798"
     institution: "WHO"
 
-known_gaps:
-  - "Genomic risk scoring integration into prevention"
-  - "Health disparities in prevention access"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 ## TL;DR
 Chronic diseases — cardiovascular disease, diabetes, cancer, respiratory disease — cause 74% of global deaths. The WHO estimates 80% are preventable through modifiable risk factors: diet, physical activity, tobacco, and alcohol.

@@ -1,81 +1,75 @@
 ---
-id: kb-gd-007
-title: cloud xr development
-schema_type: TechArticle
-category: game-development
-language: zh
-confidence: high
-confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
+id: "kb-gd-007"
+title: "cloud xr development"
+schema_type: "TechArticle"
+category: "game-development"
+language: "zh"
+confidence: "high"
 last_verified: "2026-04-28"
-generation_method: human_only
+created_date: "2026-04-28"
+generation_method: "human_only"
 derived_from_human_seed: true
-tags:
-  - cloud-gaming
-  - streaming
-  - vr
-  - ar
-  - mr
-  - xr
-  - latency
-  - immersion
-summary: ""
-primary_sources:
-  - title: 游戏开发Wiki（个人知识库）
-    type: knowledge_base
-    year: 2026
-    note: 基于行业实践和标准参考文献的系统性整理
-    url: https://www.gdconf.com/
-    institution: Game Developers Conference
-secondary_sources:
-  - title: GDC Vault
-    type: conference
-    year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
-    year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
-completeness: 0.85
-known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-related_entities:
-  - entity:game-development
-ai_citations: null
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-gd-001
-    statement: "1 云游戏架构\r \r ```\r 玩家端 (Thin Client)\r   ├── 视频解码 (H."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-002
-    statement: "265/AV1)\r   ├── 输入采集 (键鼠/手柄/触屏)\r   ├── 网络栈 (UDP/RTC)\r   └── 本地音频播放\r         ↓ 上行: 输入 + 控制信令\r         ↑ 下行: 视频流 + 音频流\r 云端服务器 (Game Server)\r   ├── 游戏实例 (VM/容器)\r   ├── GPU渲染 (帧抓取)\r   ├── 视频编码 (硬件编码器)\r   └── 网络分发 (边缘节点)\r ```\r \r ### 1."
-    confidence: medium
-    source_url: https://www.gameenginebook.com/
-    source_title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-  - id: fact-gd-003
-    statement: "4 视频编码参数\r \r | 参数 | 竞技游戏 | 单机RPG | 说明 |\r |------|----------|---------|------|\r | **分辨率** | 1080p | 4K | 高分辨率增加编码延迟 |\r | **帧率** | 60fps | 30-60fps | 高帧率=低延迟但高码率 |\r | **码率** | 15-25Mbps | 25-50Mbps | 取决于画面复杂度 |\r | **编码器** | H."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-004
-    statement: "265/AV1 | 新编码器效率更高但延迟稍高 |\r | **关键帧间隔** | 1-2s | 2-5s | 短间隔=恢复快但码率低效 |\r | **缓冲模式** | 零缓冲 | 极低缓冲 | 任何缓冲都增加延迟 |\r \r ---\r \r ## 2."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-005
-    statement: "1 VR 核心设计原则\r \r | 原则 | 说明 | 违反后果 |\r |------|------|----------|\r | **帧率至上** | 必须恒定72/90/120fps，绝不掉帧 | 眩晕、恶心 |\r | **舒适移动** | 避免加速度、提供传送选项 | 晕动症 |\r | **人体工学** | 交互在手臂自然活动范围内 | 疲劳、不适 |\r | **尺度真实** | 虚拟物体按真实比例 | 认知失调 |\r | **环境安全** | Guardian边界、Passthrough提醒 | 物理碰撞受伤 |\r | **音频空间化** | 3D音频增强临场感 | 沉浸感缺失 |\r \r ### 3."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
+  - id: "fact-gd-001"
+    statement: "1 云游戏架构  ``` 玩家端 (Thin Client)   ├── 视频解码 (H."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-002"
+    statement: "265/AV1)   ├── 输入采集 (键鼠/手柄/触屏)   ├── 网络栈 (UDP/RTC)   └── 本地音频播放         ↓ 上行: 输入 + 控制信令         ↑ 下行: 视频流 + 音频流 云端服务器 (Game Server)   ├── 游戏实例 (VM/容器)   ├── GPU渲染 (帧抓取)   ├── 视频编码 (硬件编码器)   └── 网络分发 (边缘节点) ```  ### 1."
+    source_title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    source_url: "https://www.gameenginebook.com/"
+    confidence: "medium"
+  - id: "fact-gd-003"
+    statement: "4 视频编码参数  | 参数 | 竞技游戏 | 单机RPG | 说明 | |------|----------|---------|------| | **分辨率** | 1080p | 4K | 高分辨率增加编码延迟 | | **帧率** | 60fps | 30-60fps | 高帧率=低延迟但高码率 | | **码率** | 15-25Mbps | 25-50Mbps | 取决于画面复杂度 | | **编码器** | H."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-004"
+    statement: "265/AV1 | 新编码器效率更高但延迟稍高 | | **关键帧间隔** | 1-2s | 2-5s | 短间隔=恢复快但码率低效 | | **缓冲模式** | 零缓冲 | 极低缓冲 | 任何缓冲都增加延迟 |  ---  ## 2."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-005"
+    statement: "1 VR 核心设计原则  | 原则 | 说明 | 违反后果 | |------|------|----------| | **帧率至上** | 必须恒定72/90/120fps，绝不掉帧 | 眩晕、恶心 | | **舒适移动** | 避免加速度、提供传送选项 | 晕动症 | | **人体工学** | 交互在手臂自然活动范围内 | 疲劳、不适 | | **尺度真实** | 虚拟物体按真实比例 | 认知失调 | | **环境安全** | Guardian边界、Passthrough提醒 | 物理碰撞受伤 | | **音频空间化** | 3D音频增强临场感 | 沉浸感缺失 |  ### 3."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
+completeness: 0.85
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "游戏开发Wiki（个人知识库）"
+    type: "knowledge_base"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "Game Developers Conference"
+
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
+    year: 2018
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
 ---
+
 
 
 

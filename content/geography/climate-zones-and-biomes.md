@@ -6,9 +6,13 @@ category: "geography"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-climate-zones-and-biomes-1"
@@ -22,6 +26,13 @@ atomic_facts:
 
 completeness: 0.9
 
+known_gaps:
+  - "Climate change biome shift predictions"
+  - "Microclimate classification refinement"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
+
 primary_sources:
   - title: "Biogeography: Introduction to Space, Time, and Life"
     type: "textbook"
@@ -34,14 +45,8 @@ primary_sources:
     url: "https://www.climate.gov/koppen-climate-classification"
     institution: "NOAA"
 
-known_gaps:
-  - "Climate change biome shift predictions"
-  - "Microclimate classification refinement"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 ## TL;DR
 Earth's surface is divided into distinct climate zones and biomes with characteristic temperature, precipitation, and vegetation patterns. These zones are shifting poleward at unprecedented rates due to anthropogenic climate change.

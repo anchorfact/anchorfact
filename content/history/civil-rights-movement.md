@@ -1,92 +1,65 @@
 ---
 id: "kb-2026-00404"
-
-
-
 title: "Civil Rights Movement"
 schema_type: "TechArticle"
-
-
-
 category: "history"
 language: "en"
-
-
-
 confidence: "high"
 last_verified: "2026-05-22"
-
-
-
+created_date: "2026-05-22"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
+atomic_facts:
+  - id: "fact-history-01"
+    statement: "The US Civil Rights Movement fought to end racial segregation and discrimination"
+    source_title: "Parting the Waters: America in the King Years (Taylor Branch)"
+    source_url: "https://www.simonandschuster.com/books/Parting-the-Waters/Taylor-Branch/9780671687427"
+    confidence: "high"
+  - id: "fact-history-02"
+    statement: "led nonviolent resistance: Montgomery Bus Boycott , March on Washington , Selma to Montgomery marches"
+    source_title: "Parting the Waters: America in the King Years (Taylor Branch)"
+    source_url: "https://www.simonandschuster.com/books/Parting-the-Waters/Taylor-Branch/9780671687427"
+    confidence: "high"
+  - id: "fact-history-03"
+    statement: "Malcolm X: alternative approach — black nationalism, 'by any means necessary.' MLK assassinated April 4, 1968, Memphis"
+    source_title: "Parting the Waters: America in the King Years (Taylor Branch)"
+    source_url: "https://www.simonandschuster.com/books/Parting-the-Waters/Taylor-Branch/9780671687427"
+    confidence: "high"
+
+completeness: 0.88
+
+known_gaps:
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
 primary_sources:
   - title: "Parting the Waters: America in the King Years (Taylor Branch)"
     type: "book"
-
-
-
     year: 1988
     url: "https://www.simonandschuster.com/books/Parting-the-Waters/Taylor-Branch/9780671687427"
-
-
     institution: "Simon & Schuster"
+
 secondary_sources:
   - title: "Encyclopaedia Britannica"
     type: "reference"
-
-
-
     year: 2025
     url: "https://www.britannica.com/"
-
-
     institution: "Encyclopaedia Britannica, Inc."
   - title: "The Penguin History of the World"
     type: "book"
-
-
-
     year: 1976
     url: "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
-
-
     institution: "J.M. Roberts, Penguin"
-atomic_facts:
-  - id: fact-history-01
-    statement: The US Civil Rights Movement fought to end racial segregation and discrimination
-    source_title: "Parting the Waters: America in the King Years (Taylor Branch)"
 
-
-    source_url: https://www.simonandschuster.com/books/Parting-the-Waters/Taylor-Branch/9780671687427
-    confidence: high
-  - id: fact-history-02
-    statement: "led nonviolent resistance: Montgomery Bus Boycott , March on Washington , Selma to Montgomery marches"
-
-
-    source_title: "Parting the Waters: America in the King Years (Taylor Branch)"
-    source_url: https://www.simonandschuster.com/books/Parting-the-Waters/Taylor-Branch/9780671687427
-    confidence: high
-  - id: fact-history-03
-    statement: >-
-      Malcolm X: alternative approach — black nationalism, 'by any means necessary.' MLK assassinated April 4, 1968,
-      Memphis
-    source_title: "Parting the Waters: America in the King Years (Taylor Branch)"
-
-
-    source_url: https://www.simonandschuster.com/books/Parting-the-Waters/Taylor-Branch/9780671687427
-    confidence: high
-  
-completeness: 0.88
-known_gaps:
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
-
-ai_citations:
 ---
+
 
 ## TL;DR
 

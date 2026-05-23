@@ -1,77 +1,75 @@
 ---
-id: kb-gd-025
-title: 叙事设计
-schema_type: TechArticle
-category: game-development
-language: zh
-confidence: high
-confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
+id: "kb-gd-025"
+title: "叙事设计"
+schema_type: "TechArticle"
+category: "game-development"
+language: "zh"
+confidence: "high"
 last_verified: "2026-04-28"
-generation_method: human_only
+created_date: "2026-04-28"
+generation_method: "human_only"
 derived_from_human_seed: true
-tags:
-  - narrative
-  - storytelling
-  - dialogue
-  - world-building
-summary: 游戏叙事设计：交互叙事、对话系统、世界构建与LLM应用
-primary_sources:
-  - title: 游戏开发Wiki（个人知识库）
-    type: knowledge_base
-    year: 2026
-    note: 基于行业实践和标准参考文献的系统性整理
-    url: https://www.gdconf.com/
-    institution: Game Developers Conference
-secondary_sources:
-  - title: GDC Vault
-    type: conference
-    year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
-    year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
-completeness: 0.85
-known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-related_entities:
-  - entity:game-development
-ai_citations: null
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-gd-001
-    statement: "奖赏 → 回归之路 → 复活 → 带着宝物归来\r \r 注意：这是\"英雄故事\"的模板，不适用于所有游戏类型。"
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-002
-    statement: "5x | 高 | 叙事驱动游戏 |\r | **开放叙事** | 2x+ | 2x+ | 极高 | 开放世界 |\r | **涌现叙事** | 0."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-003
-    statement: "3x | 中 | 模拟/沙盒 |\r \r ---\r \r ### 实用结构模式\r \r **珍珠项链** — 线性主线，中间有开放探索的\"枢纽\"区域\r \r **分支与合并** — 分支剧情最终回归主线，控制制作成本\r \r **电视剧结构** — 章节式剧情，每集有独立弧光同时推进主线\r \r ---\r \r ## 对话系统设计\r \r ### 对话树\r 传统分支对话，玩家从预设选项中选择。"
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-004
-    statement: "**AI 驱动对话** — LLM 实时生成 NPC 回应，突破预设对话树的限制\r 3."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-005
-    statement: "**情感适配** — NPC 根据玩家行为和关系状态改变语气\r \r ### 实施要点\r - 关键对话有作者撰写，日常对话可用 AI 生成\r - 设定 AI 护栏（角色不越界、保持叙事一致性）\r - 持久记忆系统跟踪玩家的长期决策链\r \r ### 对话树设计模式\r \r ```\r 对话树基本结构：\r \r NPC: \"你为什么要来这里？\"\r ├── 选项 A: \"我来寻找真相。"
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
+  - id: "fact-gd-001"
+    statement: "奖赏 → 回归之路 → 复活 → 带着宝物归来  注意：这是\"英雄故事\"的模板，不适用于所有游戏类型。"
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-002"
+    statement: "5x | 高 | 叙事驱动游戏 | | **开放叙事** | 2x+ | 2x+ | 极高 | 开放世界 | | **涌现叙事** | 0."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-003"
+    statement: "3x | 中 | 模拟/沙盒 |  ---  ### 实用结构模式  **珍珠项链** — 线性主线，中间有开放探索的\"枢纽\"区域  **分支与合并** — 分支剧情最终回归主线，控制制作成本  **电视剧结构** — 章节式剧情，每集有独立弧光同时推进主线  ---  ## 对话系统设计  ### 对话树 传统分支对话，玩家从预设选项中选择。"
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-004"
+    statement: "**AI 驱动对话** — LLM 实时生成 NPC 回应，突破预设对话树的限制 3."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-005"
+    statement: "**情感适配** — NPC 根据玩家行为和关系状态改变语气  ### 实施要点 - 关键对话有作者撰写，日常对话可用 AI 生成 - 设定 AI 护栏（角色不越界、保持叙事一致性） - 持久记忆系统跟踪玩家的长期决策链  ### 对话树设计模式  ``` 对话树基本结构：  NPC: \"你为什么要来这里？\" ├── 选项 A: \"我来寻找真相。"
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
+completeness: 0.85
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "游戏开发Wiki（个人知识库）"
+    type: "knowledge_base"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "Game Developers Conference"
+
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
+    year: 2018
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
 ---
+
 
 
 

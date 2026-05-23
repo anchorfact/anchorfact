@@ -1,73 +1,75 @@
 ---
-id: kb-gd-012
-title: game data analytics
-schema_type: TechArticle
-category: game-development
-language: zh
-confidence: high
-confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
+id: "kb-gd-012"
+title: "game data analytics"
+schema_type: "TechArticle"
+category: "game-development"
+language: "zh"
+confidence: "high"
 last_verified: "2026-04-28"
-generation_method: human_only
+created_date: "2026-04-28"
+generation_method: "human_only"
 derived_from_human_seed: true
-tags: []
-summary: ""
-primary_sources:
-  - title: 游戏开发Wiki（个人知识库）
-    type: knowledge_base
-    year: 2026
-    note: 基于行业实践和标准参考文献的系统性整理
-    url: https://www.gdconf.com/
-    institution: Game Developers Conference
-secondary_sources:
-  - title: GDC Vault
-    type: conference
-    year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
-    year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
-completeness: 0.85
-known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-related_entities:
-  - entity:game-development
-ai_citations: null
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-gd-001
-    statement: "1 DAU / MAU / Stickiness\r \r ```\r DAU = 每日活跃用户数\r MAU = 每月活跃用户数\r Stickiness = DAU / MAU × 100%\r ```\r \r - **Stickiness 目标：** > 20% 为优秀，> 15% 为良好\r - Stickiness 反映了游戏对玩家的\"粘性\"\r \r ### 2."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-002
-    statement: "2 留存率计算\r \r ```\r D1 留存 = 第 1 天回访用户 / 第 0 天新增用户 × 100%\r D7 留存 = 第 7 天回访用户 / 第 0 天新增用户 × 100%\r D30 留存 = 第 30 天回访用户 / 第 0 天新增用户 × 100%\r ```\r \r **注意：** 留存率一定是按**新增 Cohort** 计算的，不是按整体活跃用户。"
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-003
-    statement: "3 LTV 计算\r \r ```\r LTV = ARPU × 平均用户生命周期\r \r 常见估算方式:\r LTV = D1 留存 × D7 留存贡献 + D7 留存 × D30 留存贡献 + ."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-004
-    statement: "4 关键平衡指标\r \r | 指标 | 说明 | 预警阈值 |\r |------|------|----------|\r | 货币通胀率 | 玩家持有的货币增速 | > 15%/周 |\r | 付费深度 | 最大可消费金额 | 与用户群匹配 |\r | Gini 系数 | 付费公平性 | < 0."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-005
-    statement: "4 为健康 |\r | 消费集中度 | top 10% 玩家占总消费比 | < 70% 为健康 |\r \r ---\r \r ## 3."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
+  - id: "fact-gd-001"
+    statement: "1 DAU / MAU / Stickiness  ``` DAU = 每日活跃用户数 MAU = 每月活跃用户数 Stickiness = DAU / MAU × 100% ```  - **Stickiness 目标：** > 20% 为优秀，> 15% 为良好 - Stickiness 反映了游戏对玩家的\"粘性\"  ### 2."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-002"
+    statement: "2 留存率计算  ``` D1 留存 = 第 1 天回访用户 / 第 0 天新增用户 × 100% D7 留存 = 第 7 天回访用户 / 第 0 天新增用户 × 100% D30 留存 = 第 30 天回访用户 / 第 0 天新增用户 × 100% ```  **注意：** 留存率一定是按**新增 Cohort** 计算的，不是按整体活跃用户。"
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-003"
+    statement: "3 LTV 计算  ``` LTV = ARPU × 平均用户生命周期  常见估算方式: LTV = D1 留存 × D7 留存贡献 + D7 留存 × D30 留存贡献 + ."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-004"
+    statement: "4 关键平衡指标  | 指标 | 说明 | 预警阈值 | |------|------|----------| | 货币通胀率 | 玩家持有的货币增速 | > 15%/周 | | 付费深度 | 最大可消费金额 | 与用户群匹配 | | Gini 系数 | 付费公平性 | < 0."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-005"
+    statement: "4 为健康 | | 消费集中度 | top 10% 玩家占总消费比 | < 70% 为健康 |  ---  ## 3."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
+completeness: 0.85
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "游戏开发Wiki（个人知识库）"
+    type: "knowledge_base"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "Game Developers Conference"
+
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
+    year: 2018
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
 ---
+
 
 
 

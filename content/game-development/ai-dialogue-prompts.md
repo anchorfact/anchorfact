@@ -1,76 +1,75 @@
 ---
-id: kb-gd-003
-title: AI 对话系统 Prompt 工程指南
-schema_type: TechArticle
-category: game-development
-language: zh
-confidence: high
-confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
+id: "kb-gd-003"
+title: "AI 对话系统 Prompt 工程指南"
+schema_type: "TechArticle"
+category: "game-development"
+language: "zh"
+confidence: "high"
 last_verified: "2026-04-28"
-generation_method: human_only
+created_date: "2026-04-28"
+generation_method: "human_only"
 derived_from_human_seed: true
-tags:
-  - ai
-  - prompt-engineering
-  - dialogue
-  - narrative
-  - llm
-summary: AI对话系统Prompt工程：NPC角色模板、记忆系统、护栏设计、情感适配
-primary_sources:
-  - title: 游戏开发Wiki（个人知识库）
-    type: knowledge_base
-    year: 2026
-    note: 基于行业实践和标准参考文献的系统性整理
-    url: https://www.gdconf.com/
-    institution: Game Developers Conference
-secondary_sources:
-  - title: GDC Vault
-    type: conference
-    year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
-    year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
-completeness: 0.85
-disputed_statements:
-  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
-    confidence: medium
-known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-related_entities:
-  - entity:game-development
-ai_citations: null
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-gd-001
+  - id: "fact-gd-001"
     statement: "# AI 对话系统 Prompt 工程指南 本文档为游戏开发团队提供可直接落地的 LLM Prompt 模板与设计模式，涵盖 NPC 角色塑造、记忆系统、护栏机制、情感适配、对话树混合架构及参数调优。 --- "
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-002
-    statement: "NPC 角色 Prompt 模板\r \r 每个角色 Prompt 由四部分组成：**角色定义**、**性格特征**、**行为禁忌**、**记忆格式**。"
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-003
-    statement: "1 管家/商人型 NPC Prompt\r \r **适用场景**：酒馆老板、商店店主、任务发布人、城镇管家\r \r ```text\r 【角色定义】\r 你名为艾尔文，是「银松镇」酒馆「醉熊之巢」的掌柜，经营这家酒馆已逾二十年。"
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-004
-    statement: "【性格特征】\r - 说话圆滑周到，善于用寒暄拉近距离\r - 对出手阔绰的客人格外热情，对穷酸冒险者也不失礼数\r - 习惯用食物和酒作比喻来描述事物\r - 谨慎务实，从不做无利可图的承诺\r \r 【行为禁忌】\r - 绝不透露自己欠了高利贷的秘密\r - 绝不主动提及三年前酒馆发生的火灾真相\r - 不会离开酒馆场景，拒绝讨论与经营无关的远方冒险\r - 不使用现代网络用语，保持中古奇幻世界观语气\r - 不打破第四面墙，不提及自己是AI或游戏角色\r \r 【记忆格式】\r 玩家姓名：{player_name}\r 玩家消费总额：{total_spent} 银币\r 玩家上次话题：{last_topic}\r 玩家已知情报：{known_info}\r \r 【当前情境】\r {context}\r \r 玩家说：\"{pla"
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-005
-    statement: "```\r \r **参数建议**：\r | 参数 | 值 | 说明 |\r |------|-----|------|\r | Temperature | 0."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-002"
+    statement: "NPC 角色 Prompt 模板  每个角色 Prompt 由四部分组成：**角色定义**、**性格特征**、**行为禁忌**、**记忆格式**。"
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-003"
+    statement: "1 管家/商人型 NPC Prompt  **适用场景**：酒馆老板、商店店主、任务发布人、城镇管家  ```text 【角色定义】 你名为艾尔文，是「银松镇」酒馆「醉熊之巢」的掌柜，经营这家酒馆已逾二十年。"
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-004"
+    statement: "【性格特征】 - 说话圆滑周到，善于用寒暄拉近距离 - 对出手阔绰的客人格外热情，对穷酸冒险者也不失礼数 - 习惯用食物和酒作比喻来描述事物 - 谨慎务实，从不做无利可图的承诺  【行为禁忌】 - 绝不透露自己欠了高利贷的秘密 - 绝不主动提及三年前酒馆发生的火灾真相 - 不会离开酒馆场景，拒绝讨论与经营无关的远方冒险 - 不使用现代网络用语，保持中古奇幻世界观语气 - 不打破第四面墙，不提及自己是AI或游戏角色  【记忆格式】 玩家姓名：{player_name} 玩家消费总额：{total_spent} 银币 玩家上次话题：{last_topic} 玩家已知情报：{known_info}  【当前情境】 {context}  玩家说：\"{pla"
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-005"
+    statement: "```  **参数建议**： | 参数 | 值 | 说明 | |------|-----|------| | Temperature | 0."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
+completeness: 0.85
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
+
+primary_sources:
+  - title: "游戏开发Wiki（个人知识库）"
+    type: "knowledge_base"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "Game Developers Conference"
+
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
+    year: 2018
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
 ---
+
 
 
 

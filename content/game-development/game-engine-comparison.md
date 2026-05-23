@@ -1,74 +1,70 @@
 ---
-id: kb-gd-015
-title: 游戏引擎对比与技术选型
-schema_type: TechArticle
-category: game-development
-language: zh
-confidence: high
-confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
+id: "kb-gd-015"
+title: "游戏引擎对比与技术选型"
+schema_type: "TechArticle"
+category: "game-development"
+language: "zh"
+confidence: "high"
 last_verified: "2026-04-28"
-generation_method: human_only
+created_date: "2026-04-28"
+generation_method: "human_only"
 derived_from_human_seed: true
-tags:
-  - engine
-  - unity
-  - unreal
-  - godot
-  - comparison
-  - workflow
-summary: Unity、Unreal Engine、Godot 技术选型与开发工作流对比
-primary_sources:
-  - title: 游戏开发Wiki（个人知识库）
-    type: knowledge_base
-    year: 2026
-    note: 基于行业实践和标准参考文献的系统性整理
-    url: https://www.gdconf.com/
-    institution: Game Developers Conference
-secondary_sources:
-  - title: GDC Vault
-    type: conference
-    year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
-    year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
-completeness: 0.85
-known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
-    context: See primary sources for competing interpretations
-related_entities:
-  - entity:game-development
-ai_citations: null
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-gd-001
-    statement: "3+）\r - 使用 **Assembly Definition** 减少编译范围\r - 启用 **Incremental GC** 减少卡顿\r - 使用 **Hot Reload** 工具（如 Unity Hot Reload 资产）\r \r #### 资产管线\r ```\r 外部工具（Blender/Photoshop）→ 导入 Unity → 设置 Import Settings → Prefab 化\r ```\r \r **关键设置**：\r - 模型：FBX 格式，注意 Scale Factor、Animation Compression\r - 贴图：Texture Type（Sprite/Default/Cookie/etc."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-002
-    statement: "tscn\r ├── Player (CharacterBody2D/3D)\r │   ├── Sprite/Mesh\r │   ├── CollisionShape\r │   └── Camera\r ├── Enemies (Node)\r │   └── Enemy."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-003
-    statement: "**使用 MCP 服务** — 让 AI 直接操作引擎（Unity MCP、GodotIQ）\r 5."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-004
-    statement: "**定期清理上下文** — 每个步骤新开对话\r \r ---\r \r ## 参考来源\r \r - Uniday Studio: Unity vs Godot vs Unreal vs Cave (2026)\r - Unity 6 官方文档\r - Unreal Engine 5."
-    confidence: medium
-    source_url: https://www.gameenginebook.com/
-    source_title: Game Engine Architecture (Jason Gregory, 3rd Ed)
+  - id: "fact-gd-001"
+    statement: "3+） - 使用 **Assembly Definition** 减少编译范围 - 启用 **Incremental GC** 减少卡顿 - 使用 **Hot Reload** 工具（如 Unity Hot Reload 资产）  #### 资产管线 ``` 外部工具（Blender/Photoshop）→ 导入 Unity → 设置 Import Settings → Prefab 化 ```  **关键设置**： - 模型：FBX 格式，注意 Scale Factor、Animation Compression - 贴图：Texture Type（Sprite/Default/Cookie/etc."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-002"
+    statement: "tscn ├── Player (CharacterBody2D/3D) │   ├── Sprite/Mesh │   ├── CollisionShape │   └── Camera ├── Enemies (Node) │   └── Enemy."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-003"
+    statement: "**使用 MCP 服务** — 让 AI 直接操作引擎（Unity MCP、GodotIQ） 5."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-004"
+    statement: "**定期清理上下文** — 每个步骤新开对话  ---  ## 参考来源  - Uniday Studio: Unity vs Godot vs Unreal vs Cave (2026) - Unity 6 官方文档 - Unreal Engine 5."
+    source_title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    source_url: "https://www.gameenginebook.com/"
+    confidence: "medium"
+
+completeness: 0.85
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "游戏开发Wiki（个人知识库）"
+    type: "knowledge_base"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "Game Developers Conference"
+
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
+    year: 2018
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
 ---
+
 
 
 

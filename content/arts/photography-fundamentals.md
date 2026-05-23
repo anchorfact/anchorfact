@@ -6,9 +6,13 @@ category: "arts"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-photography-fundamentals-1"
@@ -27,6 +31,13 @@ atomic_facts:
 
 completeness: 0.9
 
+known_gaps:
+  - "Computational photography (smartphone algorithms)"
+  - "Aerial/drone photography regulations"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
+
 primary_sources:
   - title: "Understanding Exposure, 4th Edition"
     type: "textbook"
@@ -44,14 +55,8 @@ primary_sources:
     url: "https://www.moma.org/calendar/exhibitions/2425"
     institution: "Museum of Modern Art"
 
-known_gaps:
-  - "Computational photography (smartphone algorithms)"
-  - "Aerial/drone photography regulations"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 
 ## TL;DR

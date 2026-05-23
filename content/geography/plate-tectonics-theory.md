@@ -6,9 +6,13 @@ category: "geography"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-plate-tectonics-theory-1"
@@ -22,6 +26,13 @@ atomic_facts:
 
 completeness: 0.9
 
+known_gaps:
+  - "Mantle convection drivers"
+  - "Plate tectonics on other planets"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
+
 primary_sources:
   - title: "This Dynamic Earth: The Story of Plate Tectonics"
     type: "official_report"
@@ -34,14 +45,8 @@ primary_sources:
     url: "https://cup.columbia.edu/book/plate-tectonics/9780231111655"
     institution: "Columbia University Press"
 
-known_gaps:
-  - "Mantle convection drivers"
-  - "Plate tectonics on other planets"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 ## TL;DR
 Plate tectonics is the unifying theory of geology, explaining earthquakes, volcanoes, mountain building, and fossil distribution. Earth is unique in the solar system in having active plate tectonics.

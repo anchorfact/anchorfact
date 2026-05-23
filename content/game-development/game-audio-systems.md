@@ -6,9 +6,13 @@ category: "game-development"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-24"
+created_date: "2026-05-24"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "af-game-audio-systems-1"
@@ -21,6 +25,13 @@ atomic_facts:
     confidence: "high"
 
 completeness: 0.9
+
+known_gaps:
+  - "Procedural audio synthesis"
+  - "Accessibility audio design for visually impaired players"
+
+disputed_statements:
+  - statement: "No major disputed statements identified"
 
 primary_sources:
   - title: "Game Audio Implementation"
@@ -40,14 +51,8 @@ secondary_sources:
     url: "https://www.fmod.com/docs/"
     institution: "Firelight Technologies"
 
-known_gaps:
-  - "Procedural audio synthesis"
-  - "Accessibility audio design for visually impaired players"
-
-disputed_statements:
-  - statement: "No major disputed statements identified"
-
 ---
+
 
 ## TL;DR
 Modern game audio goes far beyond playing sound files. Dynamic mixing, 3D spatialization, adaptive music, and procedural audio create immersive soundscapes that respond to gameplay in real time.

@@ -1,81 +1,75 @@
 ---
-id: kb-gd-004
-title: 注意：Suno官方未提供公开API，以下为社区开源封装项目调用方式
-schema_type: TechArticle
-category: game-development
-language: zh
-confidence: high
-confidence_rationale: 游戏开发领域系统性知识，基于行业标准和实践经验
+id: "kb-gd-004"
+title: "注意：Suno官方未提供公开API，以下为社区开源封装项目调用方式"
+schema_type: "TechArticle"
+category: "game-development"
+language: "zh"
+confidence: "high"
 last_verified: "2026-04-28"
-generation_method: human_only
+created_date: "2026-04-28"
+generation_method: "human_only"
 derived_from_human_seed: true
-tags:
-  - ai
-  - assets
-  - generation
-  - 2d
-  - 3d
-  - texture
-  - animation
-  - audio
-  - pipeline
-  - copyright
-summary: ""
-primary_sources:
-  - title: 游戏开发Wiki（个人知识库）
-    type: knowledge_base
-    year: 2026
-    note: 基于行业实践和标准参考文献的系统性整理
-    url: https://www.gdconf.com/
-    institution: Game Developers Conference
-secondary_sources:
-  - title: GDC Vault
-    type: conference
-    year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
-    year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
-completeness: 0.85
-disputed_statements:
-  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
-    confidence: medium
-known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-related_entities:
-  - entity:game-development
-ai_citations: null
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
 atomic_facts:
-  - id: fact-gd-001
-    statement: "gg\r   图像→无缝纹理: Stable Diffusion Tile, TextureLab\r   材质描述→Shader: ShaderGPT, Material Maker AI\r \r 动画:\r   视频→动画: Rokoko Video, Move."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-002
-    statement: "0, Kling, OpenAI Sora\r   图像→视频: Runway Image2Video, Pika Effects\r ```\r \r ### 1."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-003
-    statement: "ai, Rokoko |\r | **动画（面部）** | ⭐⭐⭐⭐ | ✅ 直接使用 | 低 | Audio2Face |\r | **音乐/BGM** | ⭐⭐⭐⭐ | ✅ 直接使用 | 低 | Suno, Udio |\r | **音效/SFX** | ⭐⭐⭐⭐ | ✅ 直接使用 | 低 | ElevenLabs SFX |\r | **语音/对话** | ⭐⭐⭐⭐⭐ | ✅ 直接使用 | 低 | ElevenLabs |\r | **关卡原型** | ⭐⭐⭐ | ⚠️ 需人工调整 | 中 | LUDO, PCG+AI |\r | **视频/过场** | ⭐⭐⭐ | ⚠️ 需剪辑 | 中 | Runway, Kling |\r \r ---\r \r ## 2."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-004
-    statement: "1 主流工具对比\r \r | 工具 | 模式 | 优势 | 局限 | 价格 |\r |------|------|------|------|------|\r | **Midjourney v7** | Discord/网页 | 美学质量最高、风格一致 | 无官方公开API，仅Discord/第三方封装 | [待验证] |\r | **DALL-E 3** | ChatGPT/API | 指令遵循强、多语言 | 风格单一、审核严 | 1024×1024 $0."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
-  - id: fact-gd-005
-    statement: "08/张 |\r | **Stable Diffusion XL** | 本地/API | 完全可控、开源、可微调 | 需GPU、学习曲线 | 免费(自托管) |\r | **FLUX."
-    confidence: medium
-    source_url: https://www.gdconf.com/
-    source_title: 游戏开发Wiki（个人知识库）
+  - id: "fact-gd-001"
+    statement: "gg   图像→无缝纹理: Stable Diffusion Tile, TextureLab   材质描述→Shader: ShaderGPT, Material Maker AI  动画:   视频→动画: Rokoko Video, Move."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-002"
+    statement: "0, Kling, OpenAI Sora   图像→视频: Runway Image2Video, Pika Effects ```  ### 1."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-003"
+    statement: "ai, Rokoko | | **动画（面部）** | ⭐⭐⭐⭐ | ✅ 直接使用 | 低 | Audio2Face | | **音乐/BGM** | ⭐⭐⭐⭐ | ✅ 直接使用 | 低 | Suno, Udio | | **音效/SFX** | ⭐⭐⭐⭐ | ✅ 直接使用 | 低 | ElevenLabs SFX | | **语音/对话** | ⭐⭐⭐⭐⭐ | ✅ 直接使用 | 低 | ElevenLabs | | **关卡原型** | ⭐⭐⭐ | ⚠️ 需人工调整 | 中 | LUDO, PCG+AI | | **视频/过场** | ⭐⭐⭐ | ⚠️ 需剪辑 | 中 | Runway, Kling |  ---  ## 2."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-004"
+    statement: "1 主流工具对比  | 工具 | 模式 | 优势 | 局限 | 价格 | |------|------|------|------|------| | **Midjourney v7** | Discord/网页 | 美学质量最高、风格一致 | 无官方公开API，仅Discord/第三方封装 | [待验证] | | **DALL-E 3** | ChatGPT/API | 指令遵循强、多语言 | 风格单一、审核严 | 1024×1024 $0."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-005"
+    statement: "08/张 | | **Stable Diffusion XL** | 本地/API | 完全可控、开源、可微调 | 需GPU、学习曲线 | 免费(自托管) | | **FLUX."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
+completeness: 0.85
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
+
+primary_sources:
+  - title: "游戏开发Wiki（个人知识库）"
+    type: "knowledge_base"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "Game Developers Conference"
+
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
+    year: 2018
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
 ---
+
 
 
 

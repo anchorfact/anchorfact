@@ -6,9 +6,13 @@ category: "health"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-22"
+created_date: "2026-05-22"
 generation_method: "ai_assisted"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
   - id: "fact-health-001"
@@ -24,14 +28,13 @@ atomic_facts:
 
 completeness: 0.88
 
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-    context: "See primary sources for competing interpretations"
-
 known_gaps:
   - "Statistics and data cited are from 2014 and earlier; more recent data may have become available since publication"
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
 
 primary_sources:
   - title: "Full Catastrophe Living (Jon Kabat-Zinn)"
@@ -45,8 +48,8 @@ secondary_sources:
     authors: ["Bahdanau", "Cho", "Bengio"]
     type: "academic_paper"
     year: 2014
-    doi: "10.48550/arXiv.1409.0473"
     url: "https://arxiv.org/abs/1409.0473"
+    doi: "10.48550/arXiv.1409.0473"
     institution: "arXiv"
   - title: "WHO Guidelines on Health and Well-Being"
     type: "official_report"
@@ -54,19 +57,8 @@ secondary_sources:
     url: "https://www.who.int/publications/"
     institution: "World Health Organization"
 
-ai_citations:
-  - title: "WHO Fact Sheets"
-    type: "report"
-    year: 2025
-    url: "https://www.who.int/news-room/fact-sheets"
-    institution: "World Health Organization"
-  - title: "CDC Health Topics"
-    type: "report"
-    year: 2025
-    url: "https://www.cdc.gov/health-topics.html"
-    institution: "Centers for Disease Control and Prevention"
-
 ---
+
 
 
 
