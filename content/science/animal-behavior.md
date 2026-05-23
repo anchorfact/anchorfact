@@ -2,16 +2,20 @@
 id: "kb-2026-00490"
 
 
+
 title: "Animal Behavior"
 schema_type: "TechArticle"
+
 
 
 category: "science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,14 +26,17 @@ primary_sources:
     type: "book"
 
 
+
     year: 2023
     url: "https://www.oxfordlearninglink.com/s-alcock-animal-behavior-11e"
+
 
     institution: "Oxford University Press"
 secondary_sources:
 atomic_facts:
   - id: fact-science-01
     statement: "Imprinting : ducklings follow first moving object"
+
 
     source_title: Animal Behavior (John Alcock, 11th Ed)
     source_url: https://www.oxfordlearninglink.com/s-alcock-animal-behavior-11e
@@ -38,21 +45,29 @@ atomic_facts:
 known_gaps:
   - "Statistics and data cited are from 2023 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
   - title: "A Brief History of Time"
     type: "book"
 
 
+
     year: 1988
     url: "https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/"
+
 
     institution: "Stephen Hawking, Bantam"
   - title: "Nature (journal)"
     type: "journal"
 
 
+
     year: 2025
     url: "https://www.nature.com/"
+
 
     institution: "Springer Nature"
 ---

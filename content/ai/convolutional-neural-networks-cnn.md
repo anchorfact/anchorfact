@@ -2,16 +2,20 @@
 id: "kb-2026-00269"
 
 
+
 title: "Convolutional Neural Networks (CNN)"
 schema_type: "TechArticle"
+
 
 
 category: "ai"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -22,12 +26,15 @@ primary_sources:
     type: "academic_paper"
 
 
+
     year: 2012
     doi: "10.1145/3065386"
 
 
+
     url: "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks"
     institution: "NeurIPS"
+
 
 
     note: "The paper that launched the deep learning revolution. 140,000+ citations."
@@ -36,17 +43,21 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2016
     url: "https://www.deeplearningbook.org/"
 
+
     institution: "MIT Press"
     note: "Chapter 9: Convolutional Networks — comprehensive technical reference"
+
 
 
 completeness: 0.88
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "Statistics and data cited are from 2016 and earlier; more recent data may have become available since publication"
@@ -59,12 +70,15 @@ ai_citations:
     type: "academic_paper"
 
 
+
     year: 2012
     doi: "10.1145/3065386"
 
 
+
     url: "https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html"
     institution: "University of Toronto"
+
 
 
     note: "The paper that ignited the deep learning revolution in computer vision. Published at NeurIPS 2012."
@@ -73,8 +87,10 @@ ai_citations:
     type: "course_material"
 
 
+
     year: 2016
     url: "https://cs231n.github.io/convolutional-networks/"
+
 
     institution: "Stanford University"
   - title: "CS231n: CNN Course Notes"
@@ -82,8 +98,10 @@ ai_citations:
     type: "course_material"
 
 
+
     year: 2016
     url: "https://cs231n.github.io/convolutional-networks/"
+
 
     institution: "Stanford University"
   - title: "ImageNet Classification with Deep Convolutional Neural Networks (AlexNet)"
@@ -91,12 +109,15 @@ ai_citations:
     type: "academic_paper"
 
 
+
     year: 2012
     doi: "10.1145/3065386"
 
 
+
     url: "https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html"
     institution: "University of Toronto"
+
 
 
     note: "The paper that ignited the deep learning revolution in computer vision. Published at NeurIPS 2012."

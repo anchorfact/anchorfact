@@ -22,6 +22,12 @@ secondary_sources:
     url: "https://www.penguinrandomhouse.com/books/567576/learning-how-to-learn-by-barbara-oakley-phd-and-terrence-sejnowski-phd/"
     institution: "Barbara Oakley & Terrence Sejnowski, TarcherPerigee"
 completeness: 0.88
+known_gaps:
+  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
+  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
 ai_citations:
   last_citation_check:"2026-05-22"
 ---
@@ -37,3 +43,10 @@ Spaced repetition: day 1 → day 2 → day 4 → day 7 → day 14 — memory cur
 ## Further Reading
 
 - [A Mind for Numbers (Barbara Oakley)](https://www.penguinrandomhouse.com/books/533681/a-mind-for-numbers-by-barbara-oakley-phd/)
+atomic_facts:
+  - id: "fact-self-improvement-001"
+    statement: "Learning how to learn is a meta-skill that improves all other skills"
+    confidence: "medium"
+  - id: "fact-self-improvement-002"
+    statement: "Forgetting curve (Ebbinghaus, 1885): we forget 50% within an hour if not reinforced"
+    confidence: "medium"

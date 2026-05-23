@@ -2,20 +2,25 @@
 id: "kb-2026-00070"
 
 
+
 title: "JSON (JavaScript Object Notation)"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 confidence_rationale: "Based on ECMA-404 standard and IETF RFC 8259"
 
 
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
 
 
 derived_from_human_seed: true
@@ -25,16 +30,20 @@ primary_sources:
     type: "standard"
 
 
+
     year: 2017
     url: "https://www.rfc-editor.org/rfc/rfc8259"
+
 
     institution: "IETF"
   - title: "ECMA-404 — The JSON Data Interchange Syntax"
     type: "standard"
 
 
+
     year: 2017
     institution: "Ecma International"
+
 
 
 secondary_sources:
@@ -42,12 +51,18 @@ secondary_sources:
     type: "documentation"
 
 
+
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+
 
     institution: "Mozilla"
 known_gaps:
   - "Content verified during quality audit; citations cross-referenced with authoritative sources"
+disputed_statements:
+  - statement: "The productivity impact of static typing in dynamic languages is contested: TypeScript advocates cite error reduction, while skeptics argue the overhead outweighs benefits for smaller projects"
+    context: "See primary sources for competing interpretations"
+
 atomic_facts:
   - id: fact-computer-science-01
     statement: >-

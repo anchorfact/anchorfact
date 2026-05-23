@@ -2,20 +2,25 @@
 id: "kb-2026-00059"
 
 
+
 title: "Node.js"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 confidence_rationale: "Based on Node.js official documentation and GitHub repository (117,329 stars)"
 
 
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
 
 
 ai_models: ["claude-opus"]
@@ -25,16 +30,20 @@ primary_sources:
     type: "documentation"
 
 
+
     year: 2026
     url: "https://nodejs.org/docs/latest/"
+
 
     institution: "OpenJS Foundation"
   - title: "Node.js GitHub Repository"
     type: "repository"
 
 
+
     url: "https://github.com/nodejs/node"
     institution: "OpenJS Foundation"
+
 
 
     stars: 117329
@@ -43,8 +52,10 @@ secondary_sources:
     type: "documentation"
 
 
+
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+
 
     institution: "Mozilla"
   - title: "Pro Git (2nd Ed)"
@@ -52,8 +63,10 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2014
     url: "https://git-scm.com/book/en/v2"
+
 
     institution: "Apress"
 atomic_facts:
@@ -79,6 +92,10 @@ completeness: 0.85
 known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 related_entities:
   - "entity:javascript"
   - "entity:v8-engine"

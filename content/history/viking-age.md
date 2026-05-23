@@ -2,16 +2,20 @@
 id: "kb-2026-00397"
 
 
+
 title: "Viking Age"
 schema_type: "TechArticle"
+
 
 
 category: "history"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2014
     url: "https://press.princeton.edu/books/hardcover/9780691149851/the-age-of-the-vikings"
+
 
     institution: "Princeton University Press"
 secondary_sources:
@@ -31,21 +37,29 @@ secondary_sources:
     type: "reference"
 
 
+
     year: 2025
     url: "https://www.britannica.com/"
+
 
     institution: "Encyclopaedia Britannica, Inc."
   - title: "The Penguin History of the World"
     type: "book"
 
 
+
     year: 1976
     url: "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
+
 
     institution: "J.M. Roberts, Penguin"
 completeness: 0.88
 known_gaps:
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

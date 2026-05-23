@@ -2,16 +2,20 @@
 id: "kb-2026-00352"
 
 
+
 title: "Roman Empire"
 schema_type: "TechArticle"
+
 
 
 category: "history"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 1776
     url: "https://www.gutenberg.org/ebooks/731"
+
 
     institution: "Project Gutenberg"
 secondary_sources:
@@ -31,16 +37,20 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2015
     url: "https://www.liverightbooks.com/9781631492228"
+
 
     institution: "Mary Beard, Liveright"
   - title: "The Decline and Fall of the Roman Empire"
     type: "book"
 
 
+
     year: 1776
     url: "https://www.britannica.com/topic/The-History-of-the-Decline-and-Fall-of-the-Roman-Empire"
+
 
     institution: "Edward Gibbon"
 atomic_facts:
@@ -64,6 +74,10 @@ completeness: 0.88
 known_gaps:
   - "Statistics and data cited are from 2015 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The causes of the Roman Empire's fall remain contested: monocausal explanations (barbarian invasions, economic decline, lead poisoning) have largely been replaced by multi-factor analyses, but the relative weight of each factor is disputed"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

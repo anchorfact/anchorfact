@@ -2,16 +2,20 @@
 id: "kb-2026-00268"
 
 
+
 title: "Gradient Descent"
 schema_type: "TechArticle"
+
 
 
 category: "ai"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -21,11 +25,14 @@ primary_sources:
     type: "book"
 
 
+
     year: 2016
     url: "https://www.deeplearningbook.org/"
 
+
     institution: "MIT Press"
     note: "Chapter 8: Optimization for Training Deep Models — covers SGD, momentum, Adam, and advanced optimizers"
+
 
 
 secondary_sources:
@@ -34,12 +41,15 @@ secondary_sources:
     type: "academic_paper"
 
 
+
     year: 2014
     doi: "10.48550/arXiv.1412.6980"
 
 
+
     url: "https://arxiv.org/abs/1412.6980"
     institution: "ICLR 2015"
+
 
 
     note: "The Adam optimizer paper — 160,000+ citations. The de facto standard optimizer for deep learning."
@@ -47,6 +57,7 @@ completeness: 0.88
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "Statistics and data cited are from 2016 and earlier; more recent data may have become available since publication"
@@ -59,8 +70,10 @@ ai_citations:
     type: "blog_post"
 
 
+
     year: 2017
     url: "https://ruder.io/optimizing-gradient-descent/"
+
 
     institution: "Ruder"
     note: "Comprehensive survey with clear visualizations"
@@ -69,8 +82,10 @@ ai_citations:
     type: "blog_post"
 
 
+
     year: 2017
     url: "https://distill.pub/2017/momentum/"
+
 
     institution: "Distill.pub"
     note: "Interactive visual explanation"
@@ -79,8 +94,10 @@ ai_citations:
     type: "blog_post"
 
 
+
     year: 2017
     url: "https://distill.pub/2017/momentum/"
+
 
     institution: "Distill.pub"
     note: "Interactive visual explanation"
@@ -89,8 +106,10 @@ ai_citations:
     type: "blog_post"
 
 
+
     year: 2017
     url: "https://ruder.io/optimizing-gradient-descent/"
+
 
     institution: "Ruder"
     note: "Comprehensive survey with clear visualizations"

@@ -2,20 +2,25 @@
 id: "kb-2026-00181"
 
 
+
 title: "DNS (Domain Name System)"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 confidence_rationale: "Based on IETF RFCs 1034, 1035 (Mockapetris, 1987), and subsequent security extensions (RFC 4033-4035 DNSSEC, RFC 7858 DoT, RFC 8484 DoH)"
 
 
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
 
 
 atomic_facts:
@@ -39,6 +44,7 @@ disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
 
+
 known_gaps:
   - "DNS-over-QUIC (RFC 9250, 2022) is an emerging standard not yet widely deployed; not covered in depth"
 related_entities:
@@ -50,8 +56,10 @@ primary_sources:
     type: "standard"
 
 
+
     year: 1987
     url: "https://www.rfc-editor.org/rfc/rfc1035"
+
 
     institution: "IETF"
     note: "The core DNS specification. Defines the protocol, message formats, and resource record types."
@@ -60,11 +68,14 @@ primary_sources:
     type: "standard"
 
 
+
     year: 2005
     url: "https://www.rfc-editor.org/rfc/rfc4033"
 
+
     institution: "IETF"
     note: "Part of the DNSSEC suite (RFCs 4033-4035). Adds cryptographic origin authentication and data integrity to DNS."
+
 
 
 secondary_sources:
@@ -73,8 +84,10 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2006
     url: "https://www.oreilly.com/library/view/dns-and-bind/0596100574/"
+
 
     institution: "O'Reilly"
     note: "The canonical DNS reference book, covering BIND implementation and DNS administration"
@@ -83,11 +96,14 @@ secondary_sources:
     type: "standard"
 
 
+
     year: 2018
     url: "https://www.rfc-editor.org/rfc/rfc8484"
 
+
     institution: "IETF"
     note: "Encrypts DNS queries using HTTPS, preventing eavesdropping and manipulation"
+
 
 
 ai_citations:

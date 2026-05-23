@@ -2,16 +2,20 @@
 id: "kb-2026-00207"
 
 
+
 title: "Amazon FBA (Fulfillment by Amazon)"
 schema_type: "TechArticle"
+
 
 
 category: "business"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -22,6 +26,7 @@ derived_from_human_seed: true
 disputed_statements:
   - statement: "The scaling laws hypothesis (that larger models consistently improve) is debated; some researchers argue for diminishing returns beyond certain scales, while others point to emergent abilities at scale"
     confidence: "medium"
+
 
 known_gaps:
   - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
@@ -41,8 +46,10 @@ primary_sources:
     type: "journal"
 
 
+
     year: 2026
     url: "https://hbr.org/"
+
 
     institution: "Harvard Business Publishing"
 secondary_sources:
@@ -50,16 +57,20 @@ secondary_sources:
     type: "journal"
 
 
+
     year: 2026
     url: "https://hbr.org/"
+
 
     institution: "Harvard Business Publishing"
   - title: "Harvard Business Review"
     type: "journal"
 
 
+
     year: 2025
     url: "https://hbr.org/"
+
 
     institution: "Harvard Business Publishing"
 ---

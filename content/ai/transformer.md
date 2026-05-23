@@ -2,26 +2,32 @@
 id: "kb-2026-00001"
 
 
+
 title: "Transformer Architecture"
 schema_type: "TechArticle"
+
 
 
 category: "ai"
 language: "en"
 
 
+
 confidence: "high"
 confidence_rationale: "Based on the original Vaswani et al. (2017) paper, verified citation count (140K+ on Google Scholar), and cross-referenced with Stanford CS224n curriculum and multiple peer-reviewed analyses"
+
 
 
 last_verified: "2026-05-22"
 generation_method: "human_only"
 
 
+
 completeness: 0.92
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "Citation count is Google Scholar estimate as of May 2026; exact count varies by database"
@@ -35,10 +41,12 @@ atomic_facts:
     statement: "The Transformer architecture was introduced by Vaswani et al. from Google Brain / Google Research in the 2017 paper 'Attention Is All You Need'"
 
 
+
     source_doi: "10.48550/arXiv.1706.03762"
     confidence: "high"
   - id: "fact-transformer-002"
     statement: "As of May 2026, the paper has been cited over 140,000 times, making it one of the most cited papers in AI history"
+
 
 
     source_url: "https://scholar.google.com/scholar?cites=..."
@@ -47,8 +55,10 @@ atomic_facts:
     statement: "The base Transformer model achieved 28.4 BLEU on the WMT 2014 English-to-German translation task, setting a new state-of-the-art at the time of publication"
 
 
+
     source_doi: "10.48550/arXiv.1706.03762"
     confidence: "high"
+
 
 
 primary_sources:
@@ -57,12 +67,15 @@ primary_sources:
     type: "academic_paper"
 
 
+
     year: 2017
     doi: "10.48550/arXiv.1706.03762"
 
 
+
     url: "https://arxiv.org/abs/1706.03762"
     institution: "Google Brain / Google Research"
+
 
 
     note: "Published at NeurIPS 2017. As of May 2026: 140,000+ citations on Google Scholar."
@@ -72,8 +85,10 @@ secondary_sources:
     type: "blog_post"
 
 
+
     year: 2018
     url: "https://jalammar.github.io/illustrated-transformer/"
+
 
     institution: "Github"
 
@@ -82,8 +97,10 @@ secondary_sources:
     type: "course_material"
 
 
+
     year: 2024
     url: "https://web.stanford.edu/class/cs224n/"
+
 
     institution: "Stanford University"
 ai_citations:

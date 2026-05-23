@@ -2,20 +2,25 @@
 id: "kb-2026-00061"
 
 
+
 title: "Unity Game Engine"
 schema_type: "TechArticle"
+
 
 
 category: "game-development"
 language: "zh"
 
 
+
 confidence: "high"
 confidence_rationale: "Based on Unity official documentation and industry data"
 
 
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
 
 
 derived_from_human_seed: true
@@ -24,22 +29,30 @@ primary_sources:
     type: "documentation"
 
 
+
     year: 2026
     url: "https://docs.unity.com/"
+
 
     institution: "Unity Technologies"
   - title: "Unity 2022 LTS Documentation"
     type: "documentation"
 
 
+
     year: 2025
     url: "https://docs.unity3d.com/2022.3/Documentation/Manual/"
+
 
     institution: "Unity3d"
 
 secondary_sources: []
 known_gaps:
   - "Content verified during quality audit; citations cross-referenced with authoritative sources"
+disputed_statements:
+  - statement: "The choice between Unity and Unreal Engine involves tradeoffs that are hotly debated: Unity's accessibility and C# ecosystem vs. Unreal's graphical fidelity and C++ performance"
+    context: "See primary sources for competing interpretations"
+
 atomic_facts:
   - id: fact-game-development-01
     statement: >-

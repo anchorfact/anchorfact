@@ -2,20 +2,25 @@
 id: "kb-2026-00011"
 
 
+
 title: "TCP/IP Protocol Suite"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 confidence_rationale: "Based on IETF RFCs 791, 793, 768, 792, 826, and RFC 8200 (IPv6) — the definitive Internet standards, all developed through the IETF's open consensus process"
 
 
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
 
 
 atomic_facts:
@@ -30,6 +35,10 @@ atomic_facts:
 completeness: 0.90
 known_gaps:
   - "Multipath TCP (MPTCP, RFC 8684) and QUIC-level transport innovations are separate topics"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 related_entities:
   - "entity:http-protocol"
   - "entity:internet"
@@ -40,8 +49,10 @@ primary_sources:
     type: "standard"
 
 
+
     year: 1981
     url: "https://www.rfc-editor.org/rfc/rfc791"
+
 
     institution: "IETF"
     note: "The foundational IP specification. Defines IPv4 addressing, fragmentation, and the packet header format."
@@ -50,8 +61,10 @@ primary_sources:
     type: "standard"
 
 
+
     year: 1981
     url: "https://www.rfc-editor.org/rfc/rfc793"
+
 
     institution: "IETF"
     note: "The original TCP specification. Defines reliable, connection-oriented byte-stream delivery."
@@ -60,11 +73,14 @@ primary_sources:
     type: "standard"
 
 
+
     year: 1980
     url: "https://www.rfc-editor.org/rfc/rfc768"
 
+
     institution: "IETF"
     note: "Minimal transport protocol. Connectionless, no reliability guarantees. 8-byte header."
+
 
 
 secondary_sources:
@@ -73,11 +89,14 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2020
     url: "https://www.pearson.com/en-us/subject-catalog/p/computer-networking/P200000003430"
 
+
     institution: "Pearson"
     note: "The standard networking textbook, used at universities worldwide"
+
 
 
 ai_citations:

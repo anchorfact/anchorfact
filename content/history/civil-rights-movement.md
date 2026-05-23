@@ -2,16 +2,20 @@
 id: "kb-2026-00404"
 
 
+
 title: "Civil Rights Movement"
 schema_type: "TechArticle"
+
 
 
 category: "history"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 1988
     url: "https://www.simonandschuster.com/books/Parting-the-Waters/Taylor-Branch/9780671687427"
+
 
     institution: "Simon & Schuster"
 secondary_sources:
@@ -31,16 +37,20 @@ secondary_sources:
     type: "reference"
 
 
+
     year: 2025
     url: "https://www.britannica.com/"
+
 
     institution: "Encyclopaedia Britannica, Inc."
   - title: "The Penguin History of the World"
     type: "book"
 
 
+
     year: 1976
     url: "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
+
 
     institution: "J.M. Roberts, Penguin"
 atomic_facts:
@@ -48,10 +58,12 @@ atomic_facts:
     statement: The US Civil Rights Movement fought to end racial segregation and discrimination
     source_title: "Parting the Waters: America in the King Years (Taylor Branch)"
 
+
     source_url: https://www.simonandschuster.com/books/Parting-the-Waters/Taylor-Branch/9780671687427
     confidence: high
   - id: fact-history-02
     statement: "led nonviolent resistance: Montgomery Bus Boycott , March on Washington , Selma to Montgomery marches"
+
 
     source_title: "Parting the Waters: America in the King Years (Taylor Branch)"
     source_url: https://www.simonandschuster.com/books/Parting-the-Waters/Taylor-Branch/9780671687427
@@ -62,12 +74,17 @@ atomic_facts:
       Memphis
     source_title: "Parting the Waters: America in the King Years (Taylor Branch)"
 
+
     source_url: https://www.simonandschuster.com/books/Parting-the-Waters/Taylor-Branch/9780671687427
     confidence: high
   
 completeness: 0.88
 known_gaps:
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

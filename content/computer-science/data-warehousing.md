@@ -2,16 +2,20 @@
 id: "kb-2026-00249"
 
 
+
 title: "Data Warehousing"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -23,12 +27,14 @@ disputed_statements:
   - statement: "Historians disagree on whether the Cold War was primarily an ideological struggle, a geopolitical power contest, or both; interpretations vary across revisionist, post-revisionist, and orthodox schools"
     confidence: "medium"
 
+
 known_gaps:
   - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
 
 atomic_facts:
   - id: fact-computer-science-01
     statement: "Slowly Changing Dimensions : how to handle historical changes"
+
 
     source_title: ACM Digital Library
     source_url: https://dl.acm.org/
@@ -42,8 +48,10 @@ primary_sources:
     type: "repository"
 
 
+
     year: 2026
     url: "https://dl.acm.org/"
+
 
     institution: "ACM"
 secondary_sources:
@@ -51,8 +59,10 @@ secondary_sources:
     type: "repository"
 
 
+
     year: 2026
     url: "https://dl.acm.org/"
+
 
     institution: "ACM"
 ---

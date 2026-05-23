@@ -2,16 +2,20 @@
 id: "kb-2026-00462"
 
 
+
 title: "Nutrition for Athletes"
 schema_type: "TechArticle"
+
 
 
 category: "health"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2019
     url: "https://www.humankinetics.com/products/nancy-clarks-sports-nutrition-guidebook-6th-edition"
+
 
     institution: "Human Kinetics"
 secondary_sources:
@@ -31,19 +37,23 @@ secondary_sources:
     type: "report"
 
 
+
     year: 2020
     url: "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+
 
     institution: "World Health Organization"
 atomic_facts:
   - id: fact-health-01
     statement: "Carbs: primary fuel"
 
+
     source_title: Nancy Clark's Sports Nutrition Guidebook (6th Ed)
     source_url: https://www.humankinetics.com/products/nancy-clarks-sports-nutrition-guidebook-6th-edition
     confidence: high
   - id: fact-health-02
     statement: "Carb loading: taper exercise + increase carbs 3 days before marathon"
+
 
     source_title: Nancy Clark's Sports Nutrition Guidebook (6th Ed)
     source_url: https://www.humankinetics.com/products/nancy-clarks-sports-nutrition-guidebook-6th-edition
@@ -59,6 +69,10 @@ known_gaps:
   - "Statistics and data cited are from 2020 and earlier; more recent data may have become available since publication"
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

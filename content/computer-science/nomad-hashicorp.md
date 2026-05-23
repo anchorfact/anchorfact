@@ -2,16 +2,20 @@
 id: "kb-2026-00321"
 
 
+
 title: "Nomad (HashiCorp)"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -21,11 +25,14 @@ primary_sources:
     type: "documentation"
 
 
+
     year: 2026
     url: "https://developer.hashicorp.com/nomad/docs"
 
+
     institution: "HashiCorp"
     note: "Flexible orchestrator: batch, service, system jobs; multi-cloud; single binary"
+
 
 
 secondary_sources:
@@ -33,16 +40,20 @@ secondary_sources:
     type: "comparison"
 
 
+
     year: 2024
     url: "https://developer.hashicorp.com/nomad/docs/nomad-vs-kubernetes"
+
 
     institution: "HashiCorp"
     note: "Official comparison: simpler architecture, no dedicated scheduler"
 
 
+
 atomic_facts:
   - id: fact-computer-science-01
     statement: "Comparison to K8s: simpler, more versatile, smaller community"
+
 
     source_title: Nomad Documentation
     source_url: https://developer.hashicorp.com/nomad/docs
@@ -52,6 +63,10 @@ completeness: 0.88
 known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

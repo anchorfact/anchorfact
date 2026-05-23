@@ -2,16 +2,20 @@
 id: "kb-2026-00447"
 
 
+
 title: "Networking Skills"
 schema_type: "TechArticle"
+
 
 
 category: "business"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2005
     url: "https://www.penguinrandomhouse.com/books/316664/never-eat-alone-expanded-and-updated-by-keith-ferrazzi-with-tahl-raz/"
+
 
     institution: "Currency"
 secondary_sources:
@@ -31,21 +37,29 @@ secondary_sources:
     type: "journal"
 
 
+
     year: 2025
     url: "https://hbr.org/"
+
 
     institution: "Harvard Business Publishing"
   - title: "The Economist"
     type: "periodical"
 
 
+
     year: 2025
     url: "https://www.economist.com/"
+
 
     institution: "The Economist Group"
 completeness: 0.88
 known_gaps:
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

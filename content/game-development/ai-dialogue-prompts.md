@@ -2,20 +2,25 @@
 id: "kb-gd-003"
 
 
+
 title: "AI 对话系统 Prompt 工程指南"
 schema_type: "TechArticle"
+
 
 
 category: "game-development"
 language: "zh"
 
 
+
 confidence: "high"
 confidence_rationale: "游戏开发领域系统性知识，基于行业标准和实践经验"
 
 
+
 last_verified: "2026-04-28"
 generation_method: "human_only"
+
 
 
 derived_from_human_seed: true
@@ -23,13 +28,16 @@ tags: ["ai", "prompt-engineering", "dialogue", "narrative", "llm"]
 summary: "AI对话系统Prompt工程：NPC角色模板、记忆系统、护栏设计、情感适配"
 
 
+
 primary_sources:
   - title: "游戏开发Wiki（个人知识库）"
     type: "knowledge_base"
 
 
+
     year: 2026
     note: "基于行业实践和标准参考文献的系统性整理"
+
 
 
 secondary_sources:
@@ -37,14 +45,17 @@ secondary_sources:
     type: "conference"
 
 
+
     year: 2026
     url: "https://www.gdconf.com/"
+
 
     institution: "GDC"
 completeness: 0.85
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"

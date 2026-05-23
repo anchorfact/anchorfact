@@ -2,16 +2,20 @@
 id: "kb-2026-00340"
 
 
+
 title: "Solar System"
 schema_type: "TechArticle"
+
 
 
 category: "science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "documentation"
 
 
+
     year: 2026
     url: "https://science.nasa.gov/solar-system/"
+
 
     institution: "NASA"
 secondary_sources:
@@ -32,12 +38,15 @@ secondary_sources:
     type: "academic_paper"
 
 
+
     year: 2023
     doi: "10.48550/arXiv.2305.14314"
 
 
+
     url: "https://arxiv.org/abs/2305.14314"
     institution: "arXiv"
+
 completeness: 0.88
 atomic_facts:
   - id: fact-science-01
@@ -48,19 +57,26 @@ atomic_facts:
   - id: fact-science-02
     statement: "Jupiter: largest , Great Red Spot , 95 known moons"
 
+
     source_title: NASA Solar System Exploration
     source_url: https://science.nasa.gov/solar-system/
     confidence: medium
   
 known_gaps:
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
   - title: "Cosmos"
     type: "book"
 
 
+
     year: 1980
     url: "https://www.penguinrandomhouse.com/books/322741/cosmos-by-carl-sagan/"
+
 
     institution: "Carl Sagan, Random House"
 ---

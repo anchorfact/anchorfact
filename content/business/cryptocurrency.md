@@ -2,16 +2,20 @@
 id: "kb-2026-00434"
 
 
+
 title: "Cryptocurrency"
 schema_type: "TechArticle"
+
 
 
 category: "business"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2018
     url: "https://www.wiley.com/en-us/The+Bitcoin+Standard%3A+The+Decentralized+Alternative+to+Central+Banking-p-9781119473862"
+
 
     institution: "Wiley"
 secondary_sources:
@@ -31,8 +37,10 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2018
     url: "https://www.wiley.com/en-us/The+Bitcoin+Standard%3A+The+Decentralized+Alternative+to+Central+Banking-p-9781119473862"
+
 
     institution: "Saifedean Ammous, Wiley"
 atomic_facts:
@@ -46,6 +54,7 @@ completeness: 0.88
 disputed_statements:
   - statement: "The long-term viability and valuation of cryptocurrencies remain highly contested; opinions range from 'digital gold' narratives to predictions of zero intrinsic value"
     confidence: "medium"
+
 
 known_gaps:
   - "Statistics and data cited are from 2018 and earlier; more recent data may have become available since publication"

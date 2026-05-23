@@ -2,16 +2,20 @@
 id: "kb-2026-00171"
 
 
+
 title: "Progressive Web Apps (PWA)"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -21,11 +25,14 @@ primary_sources:
     type: "documentation"
 
 
+
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps"
 
+
     institution: "Mozilla"
     note: "PWA fundamentals: service workers, Web App Manifest, offline-first, push notifications"
+
 
 
 secondary_sources:
@@ -33,11 +40,14 @@ secondary_sources:
     type: "standard"
 
 
+
     year: 2024
     url: "https://w3c.github.io/ServiceWorker/"
 
+
     institution: "W3C"
     note: "The core PWA technology — service workers enable offline capabilities and background sync"
+
 
 
 atomic_facts:
@@ -50,6 +60,7 @@ atomic_facts:
     confidence: medium
   - id: fact-computer-science-02
     statement: "Requirements: HTTPS, Web App Manifest , registered Service Worker with fetch handler"
+
 
     source_title: Progressive Web Apps (MDN)
     source_url: https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps

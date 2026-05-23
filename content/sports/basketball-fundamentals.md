@@ -27,6 +27,12 @@ secondary_sources:
     url: "https://www.penguinrandomhouse.com/books/310253/the-book-of-basketball-by-bill-simmons/"
     institution: "Bill Simmons, ESPN Books"
 completeness: 0.88
+known_gaps:
+  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
+  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
 ai_citations:
   last_citation_check:"2026-05-22"
 ---
@@ -42,3 +48,10 @@ Key rules: shot clock (24s NBA, 14s reset), 3-second violation (offensive player
 ## Further Reading
 
 - [Basketball (And Other Things) (Shea Serrano)](https://www.abramsbooks.com/product/basketball-and-other-things_9781419726477/)
+atomic_facts:
+  - id: "fact-sports-001"
+    statement: "Basketball (James Naismith, 1891, Springfield, MA) is played 5v5 on a court with hoops at each end"
+    confidence: "medium"
+  - id: "fact-sports-002"
+    statement: "NBA (1946) is the premier professional league"
+    confidence: "medium"

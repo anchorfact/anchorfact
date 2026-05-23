@@ -27,6 +27,12 @@ secondary_sources:
     url: "https://www.nationalgeographic.com/maps/atlas/"
     institution: "National Geographic"
 completeness: 0.88
+known_gaps:
+  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
+  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
 ai_citations:
   last_citation_check:"2026-05-22"
 ---
@@ -42,3 +48,13 @@ Climate: extreme temperatures (day 50°C+, night near freezing). Rain: <25mm/yea
 ## Further Reading
 
 - [Sahara: A Natural History (de Villiers & Hirtle)](https://www.bloomsbury.com/us/sahara-9780802713568/)
+atomic_facts:
+  - id: "fact-geography-001"
+    statement: "The Sahara Desert (9.2 million km²) is the world's largest hot desert, spanning 11 North African countries"
+    confidence: "medium"
+  - id: "fact-geography-002"
+    statement: "Contrary to perception, only ~25% is sand — most is rock/gravel plateaus (hamada)"
+    confidence: "medium"
+  - id: "fact-geography-003"
+    statement: "Dust: Sahara is Earth's largest dust source — fertilizes Amazon rainforest across Atlantic"
+    confidence: "medium"

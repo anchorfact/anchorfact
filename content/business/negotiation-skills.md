@@ -2,16 +2,20 @@
 id: "kb-2026-00435"
 
 
+
 title: "Negotiation Skills"
 schema_type: "TechArticle"
+
 
 
 category: "business"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 1981
     url: "https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/"
+
 
     institution: "Penguin"
 secondary_sources:
@@ -31,8 +37,10 @@ secondary_sources:
     type: "book"
 
 
+
     year: 1981
     url: "https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/"
+
 
     institution: "Roger Fisher & William Ury, Penguin"
 atomic_facts:
@@ -45,6 +53,7 @@ atomic_facts:
     confidence: high
   - id: fact-business-02
     statement: "Anchoring: first number thrown out heavily influences outcome"
+
 
     source_title: Getting to Yes (Fisher, Ury, Patton)
     source_url: https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/

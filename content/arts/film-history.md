@@ -2,16 +2,20 @@
 id: "kb-2026-00344"
 
 
+
 title: "Film History"
 schema_type: "TechArticle"
+
 
 
 category: "arts"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2018
     url: "https://www.rutgersuniversitypress.org/a-short-history-of-film-third-edition/9780813595139/"
+
 
     institution: "Rutgers University Press"
 secondary_sources:
@@ -31,8 +37,10 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2018
     url: "https://www.mheducation.com/highered/product/film-history-introduction-thompson-bordwell/M9781259870354.html"
+
 
     institution: "Kristin Thompson & David Bordwell, McGraw-Hill"
 atomic_facts:
@@ -43,6 +51,7 @@ atomic_facts:
     confidence: high
   - id: fact-arts-02
     statement: "Sound: The Jazz Singer first feature with synchronized dialogue"
+
 
     source_title: A Short History of Film (Dixon & Foster)
     source_url: https://www.rutgersuniversitypress.org/a-short-history-of-film-third-edition/9780813595139/
@@ -57,6 +66,10 @@ completeness: 0.88
 known_gaps:
   - "Statistics and data cited are from 2018 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist and expressionist accounts"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

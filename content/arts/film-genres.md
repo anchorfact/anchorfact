@@ -2,16 +2,20 @@
 id: "kb-2026-00411"
 
 
+
 title: "Film Genres"
 schema_type: "TechArticle"
+
 
 
 category: "arts"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2019
     url: "https://www.mheducation.com/highered/product/film-art-introduction-bordwell-thompson/M9781260056082.html"
+
 
     institution: "McGraw-Hill"
 secondary_sources:
@@ -31,13 +37,16 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2018
     url: "https://www.mheducation.com/highered/product/film-history-introduction-thompson-bordwell/M9781259870354.html"
+
 
     institution: "Kristin Thompson & David Bordwell, McGraw-Hill"
 atomic_facts:
   - id: fact-arts-01
     statement: "Sci-fi: future scenarios, technology, social commentary: 2001 , Blade Runner , The Matrix"
+
 
     source_title: "Film Art: An Introduction (Bordwell & Thompson, 12th Ed)"
     source_url: https://www.mheducation.com/highered/product/film-art-introduction-bordwell-thompson/M9781260056082.html
@@ -47,6 +56,10 @@ completeness: 0.88
 known_gaps:
   - "Statistics and data cited are from 2019 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist and expressionist accounts"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

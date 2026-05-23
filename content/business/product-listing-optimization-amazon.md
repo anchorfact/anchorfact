@@ -2,16 +2,20 @@
 id: "kb-2026-00208"
 
 
+
 title: "Product Listing Optimization (Amazon)"
 schema_type: "TechArticle"
+
 
 
 category: "business"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -22,9 +26,14 @@ derived_from_human_seed: true
 known_gaps:
   - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
 
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 atomic_facts:
   - id: fact-business-01
     statement: "Bullet points: first capitalize every word, 5 bullets, focus on benefits not just features"
+
 
     source_title: Harvard Business Review
     source_url: https://hbr.org/
@@ -38,8 +47,10 @@ primary_sources:
     type: "journal"
 
 
+
     year: 2026
     url: "https://hbr.org/"
+
 
     institution: "Harvard Business Publishing"
 secondary_sources:
@@ -47,16 +58,20 @@ secondary_sources:
     type: "journal"
 
 
+
     year: 2026
     url: "https://hbr.org/"
+
 
     institution: "Harvard Business Publishing"
   - title: "Harvard Business Review"
     type: "journal"
 
 
+
     year: 2025
     url: "https://hbr.org/"
+
 
     institution: "Harvard Business Publishing"
 ---

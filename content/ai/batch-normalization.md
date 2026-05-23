@@ -2,16 +2,20 @@
 id: "kb-2026-00283"
 
 
+
 title: "Batch Normalization"
 schema_type: "TechArticle"
+
 
 
 category: "ai"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -21,11 +25,14 @@ primary_sources:
     type: "paper"
 
 
+
     year: 2015
     url: "https://arxiv.org/abs/1502.03167"
 
+
     institution: "ICML"
     note: "The original Batch Normalization paper, 40,000+ citations on Google Scholar"
+
 
 
 secondary_sources:
@@ -33,16 +40,20 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2016
     url: "https://www.deeplearningbook.org/"
+
 
     institution: "MIT Press"
     note: "Chapter 8: Optimization for Training Deep Models — covers Batch Normalization in context"
 
 
+
 atomic_facts:
   - id: fact-ai-01
     statement: "Benefits: faster training , reduces sensitivity to initialization, acts as regularizer"
+
 
     source_title: "Batch Normalization: Accelerating Deep Network Training (Ioffe & Szegedy, 2015)"
     source_url: https://arxiv.org/abs/1502.03167
@@ -51,10 +62,12 @@ atomic_facts:
     statement: BN is standard in most CNN architectures
     source_title: "Batch Normalization: Accelerating Deep Network Training (Ioffe & Szegedy, 2015)"
 
+
     source_url: https://arxiv.org/abs/1502.03167
     confidence: high
   - id: fact-ai-03
     statement: "Internal Covariate Shift: the phenomenon BN was designed to address"
+
 
     source_title: "Batch Normalization: Accelerating Deep Network Training (Ioffe & Szegedy, 2015)"
     source_url: https://arxiv.org/abs/1502.03167
@@ -64,6 +77,7 @@ completeness: 0.88
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "Statistics and data cited are from 2016 and earlier; more recent data may have become available since publication"
@@ -76,8 +90,10 @@ ai_citations:
     type: "academic_paper"
 
 
+
     year: 2015
     doi: "10.48550/arXiv.1502.03167"
+
 
 
     url: "https://arxiv.org/abs/1502.03167"
@@ -87,8 +103,10 @@ ai_citations:
     type: "academic_paper"
 
 
+
     year: 2015
     doi: "10.48550/arXiv.1502.03167"
+
 
 
     url: "https://arxiv.org/abs/1502.03167"

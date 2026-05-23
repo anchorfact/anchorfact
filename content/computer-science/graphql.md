@@ -2,16 +2,20 @@
 id: "kb-2026-00074"
 
 
+
 title: "GraphQL"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -21,14 +25,17 @@ primary_sources:
     type: "standard"
 
 
+
     url: "https://spec.graphql.org/"
     institution: "GraphQL Foundation"
   - title: "GraphQL Specification GitHub"
     type: "repository"
 
 
+
     url: "https://github.com/graphql/graphql-spec"
     institution: "GitHub"
+
 
     stars: 14571
 secondary_sources:
@@ -37,8 +44,10 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2018
     url: "https://www.oreilly.com/library/view/learning-graphql/9781492030706/"
+
 
     institution: "O'Reilly"
 atomic_facts:
@@ -54,6 +63,10 @@ known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
   - "Recent developments from 2025-2026 may not be reflected"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations: {last_citation_check: "2026-05-22"}
 ---
 

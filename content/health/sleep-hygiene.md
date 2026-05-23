@@ -2,16 +2,20 @@
 id: "kb-2026-00417"
 
 
+
 title: "Sleep Hygiene"
 schema_type: "TechArticle"
+
 
 
 category: "health"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2017
     url: "https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325"
+
 
     institution: "Scribner"
 secondary_sources:
@@ -31,13 +37,16 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2017
     url: "https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325"
+
 
     institution: "Matthew Walker, Scribner"
 atomic_facts:
   - id: fact-health-01
     statement: "Bedroom temperature: 18-20°C optimal"
+
 
     source_title: Why We Sleep (Matthew Walker)
     source_url: https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325
@@ -48,6 +57,10 @@ known_gaps:
   - "Statistics and data cited are from 2017 and earlier; more recent data may have become available since publication"
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The existence and significance of 'social jetlag' versus genetic chronotype determination is debated in sleep science, with implications for school and work start times"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

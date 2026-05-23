@@ -1,78 +1,53 @@
 ---
 id: "kb-2026-00203"
-
-
 title: "Regular Expressions"
 schema_type: "TechArticle"
-
-
 category: "computer-science"
 language: "en"
-
-
 confidence: "high"
 last_verified: "2026-05-22"
-
-
 generation_method: "human_only"
-ai_models: ["claude-opus"]
-derived_from_human_seed: true
 
+atomic_facts:
+  - id: "fact-computer-science-01"
+    statement: "First introduced by Stephen Kleene , regex is the standard tool for text search, validation, and extraction across programming languages, text editors, and command-line tools"
+    source_title: "ACM Digital Library"
+    source_url: https://dl.acm.org/
+    confidence: medium
+
+completeness: 0.88
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
 
 known_gaps:
   - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
 
-atomic_facts:
-  - id: fact-computer-science-01
-    statement: >-
-      First introduced by Stephen Kleene , regex is the standard tool for text search, validation, and extraction across
-      programming languages, text editors, and command-line tools
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
-    confidence: medium
-  
-completeness: 0.88
-ai_citations:
-
 primary_sources:
   - title: "ACM Digital Library"
-    type: "repository"
-
-
-    year: 2026
+    type: "academic_paper"
     url: "https://dl.acm.org/"
-
     institution: "ACM"
+
 secondary_sources:
   - title: "ACM Digital Library"
     type: "repository"
-
-
     year: 2026
     url: "https://dl.acm.org/"
-
     institution: "ACM"
   - title: "Mastering Regular Expressions (3rd ed.)"
     authors: ["Friedl, Jeffrey E.F."]
     type: "textbook"
-
-
     year: 2006
-    isbn: "978-0596528126"
-
-
     institution: "O'Reilly Media"
   - title: "Mastering Regular Expressions (3rd ed.)"
     authors: ["Friedl, Jeffrey E.F."]
     type: "textbook"
-
-
     year: 2006
-    isbn: "978-0596528126"
-
-
     institution: "O'Reilly Media"
+
 ---
+
 
 ## TL;DR
 

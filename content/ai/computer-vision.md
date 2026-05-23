@@ -2,16 +2,20 @@
 id: "kb-2026-00275"
 
 
+
 title: "Computer Vision"
 schema_type: "TechArticle"
+
 
 
 category: "ai"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -22,11 +26,14 @@ primary_sources:
     type: "book"
 
 
+
     year: 2022
     url: "https://szeliski.org/Book/"
 
+
     institution: "Springer"
     note: "Comprehensive CV textbook covering image formation, recognition, 3D reconstruction, and deep learning"
+
 
 
 secondary_sources:
@@ -35,12 +42,15 @@ secondary_sources:
     type: "academic_paper"
 
 
+
     year: 2015
     doi: "10.1007/s11263-015-0816-y"
 
 
+
     url: "https://arxiv.org/abs/1409.0575"
     institution: "IJCV"
+
 
 
     note: "The ImageNet paper — benchmark that drove modern CV progress. 50,000+ citations."
@@ -49,6 +59,7 @@ atomic_facts:
     statement: Deep learning dominates since 2012
     source_title: "Computer Vision: Algorithms and Applications (2nd Edition)"
 
+
     source_url: https://szeliski.org/Book/
     confidence: high
   
@@ -56,6 +67,7 @@ completeness: 0.88
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "Statistics and data cited are from 2022 and earlier; more recent data may have become available since publication"
@@ -66,15 +78,19 @@ ai_citations:
   - title: "Deep Residual Learning for Image Recognition (ResNet)"
     authors: ["He, Kaiming", "Zhang, Xiangyu", "Ren, Shaoqing", "Sun, Jian"]
     type: "academic_paper"
+
     year: 2016
     doi: "10.48550/arXiv.1512.03385"
+
     url: "https://arxiv.org/abs/1512.03385"
     institution: "Microsoft Research"
   - title: "You Only Look Once: Unified, Real-Time Object Detection (YOLO)"
     authors: ["Redmon, Joseph", "Divvala, Santosh", "Girshick, Ross", "Farhadi, Ali"]
     type: "academic_paper"
+
     year: 2016
     doi: "10.48550/arXiv.1506.02640"
+
     url: "https://arxiv.org/abs/1506.02640"
     institution: "arXiv"
 ---

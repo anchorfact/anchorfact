@@ -2,16 +2,20 @@
 id: "kb-2026-00409"
 
 
+
 title: "Existentialism"
 schema_type: "TechArticle"
+
 
 
 category: "arts"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 1946
     url: "https://yalebooks.yale.edu/book/9780300115468/existentialism-is-a-humanism/"
+
 
     institution: "Yale University Press"
 secondary_sources:
@@ -31,14 +37,20 @@ secondary_sources:
     type: "book"
 
 
+
     year: 1926
     url: "https://www.simonandschuster.com/books/The-Story-of-Philosophy/Will-Durant/9780671201593"
+
 
     institution: "Will Durant, Simon & Schuster"
 completeness: 0.88
 known_gaps:
   - "Statistics and data cited are from 1946 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist and expressionist accounts"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

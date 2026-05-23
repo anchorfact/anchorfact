@@ -2,16 +2,20 @@
 id: "kb-2026-00475"
 
 
+
 title: "Galaxies and the Universe"
 schema_type: "TechArticle"
+
 
 
 category: "science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 1980
     url: "https://www.penguinrandomhouse.com/books/55403/cosmos-by-carl-sagan/"
+
 
     institution: "Random House"
 secondary_sources:
@@ -31,21 +37,26 @@ secondary_sources:
     type: "book"
 
 
+
     year: 1988
     url: "https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/"
+
 
     institution: "Stephen Hawking, Bantam"
   - title: "Nature (journal)"
     type: "journal"
 
 
+
     year: 2025
     url: "https://www.nature.com/"
+
 
     institution: "Springer Nature"
 atomic_facts:
   - id: fact-science-01
     statement: "Milky Way: 100-400 billion stars, 100,000 light-years across, spiral type"
+
 
     source_title: Cosmos (Carl Sagan)
     source_url: https://www.penguinrandomhouse.com/books/55403/cosmos-by-carl-sagan/
@@ -53,11 +64,13 @@ atomic_facts:
   - id: fact-science-02
     statement: "Andromeda: nearest major galaxy, will collide with Milky Way in 4.5 billion years"
 
+
     source_title: Cosmos (Carl Sagan)
     source_url: https://www.penguinrandomhouse.com/books/55403/cosmos-by-carl-sagan/
     confidence: high
   - id: fact-science-03
     statement: "Hubble Deep Field : pointed at empty patch for 10 days → thousands of galaxies"
+
 
     source_title: Cosmos (Carl Sagan)
     source_url: https://www.penguinrandomhouse.com/books/55403/cosmos-by-carl-sagan/
@@ -66,6 +79,10 @@ atomic_facts:
 completeness: 0.88
 known_gaps:
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

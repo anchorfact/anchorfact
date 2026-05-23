@@ -2,16 +2,20 @@
 id: "kb-2026-00479"
 
 
+
 title: "History of Printing"
 schema_type: "TechArticle"
+
 
 
 category: "arts"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2005
     url: "https://www.cambridge.org/core/books/printing-revolution-in-early-modern-europe/"
+
 
     institution: "Cambridge University Press"
 secondary_sources:
@@ -31,13 +37,16 @@ secondary_sources:
     type: "book"
 
 
+
     year: 1950
     url: "https://www.phaidon.com/store/art/the-story-of-art-9780714832470/"
+
 
     institution: "E.H. Gombrich, Phaidon"
 atomic_facts:
   - id: fact-arts-01
     statement: "Gutenberg Bible : first major book printed with movable type"
+
 
     source_title: The Printing Revolution in Early Modern Europe (Elizabeth Eisenstein, 2nd Ed)
     source_url: https://www.cambridge.org/core/books/printing-revolution-in-early-modern-europe/
@@ -47,6 +56,10 @@ completeness: 0.88
 known_gaps:
   - "Statistics and data cited are from 2005 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist and expressionist accounts"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

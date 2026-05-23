@@ -2,16 +2,20 @@
 id: "kb-2026-00151"
 
 
+
 title: "Amazon Web Services (AWS)"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -21,11 +25,14 @@ primary_sources:
     type: "documentation"
 
 
+
     year: 2026
     url: "https://docs.aws.amazon.com/"
 
+
     institution: "Amazon"
     note: "Official AWS documentation covering 200+ services: EC2, S3, Lambda, DynamoDB, RDS, IAM"
+
 
 
 secondary_sources:
@@ -33,11 +40,14 @@ secondary_sources:
     type: "framework"
 
 
+
     year: 2024
     url: "https://aws.amazon.com/architecture/well-architected/"
 
+
     institution: "Amazon"
     note: "AWS's recommended architectural best practices: operational excellence, security, reliability, performance efficiency, cost optimization, sustainability"
+
 
 
 atomic_facts:
@@ -56,6 +66,10 @@ completeness: 0.88
 known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

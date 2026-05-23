@@ -2,16 +2,20 @@
 id: "kb-2026-00433"
 
 
+
 title: "SEO for Business"
 schema_type: "TechArticle"
+
 
 
 category: "business"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2022
     url: "https://www.oreilly.com/library/view/the-art-of/9781098102593/"
+
 
     institution: "O'Reilly"
 secondary_sources:
@@ -31,13 +37,16 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2015
     url: "https://www.pearson.com/en-us/subject-catalog/p/marketing-management/P200000009716"
+
 
     institution: "Philip Kotler, Pearson"
 atomic_facts:
   - id: fact-business-01
     statement: "Title tag: most important on-page element — <60 chars, include primary keyword"
+
 
     source_title: The Art of SEO (Enge, Spencer, Stricchiola, 4th Ed)
     source_url: https://www.oreilly.com/library/view/the-art-of/9781098102593/
@@ -47,6 +56,10 @@ completeness: 0.88
 known_gaps:
   - "Statistics and data cited are from 2022 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

@@ -2,16 +2,20 @@
 id: "kb-2026-00460"
 
 
+
 title: "Pyramids of Giza"
 schema_type: "TechArticle"
+
 
 
 category: "history"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 1997
     url: "https://thamesandhudson.com/the-complete-pyramids-9780500285473"
+
 
     institution: "Thames & Hudson"
 secondary_sources:
@@ -38,6 +44,7 @@ atomic_facts:
   - id: fact-history-02
     statement: "Khafre pyramid: slightly smaller, retains some casing stones at top"
 
+
     source_title: The Complete Pyramids (Mark Lehner)
     source_url: https://thamesandhudson.com/the-complete-pyramids-9780500285473
     confidence: high
@@ -50,16 +57,20 @@ ai_citations:
     type: "reference"
 
 
+
     year: 2025
     url: "https://www.britannica.com/"
+
 
     institution: "Encyclopaedia Britannica, Inc."
   - title: "The Penguin History of the World"
     type: "book"
 
 
+
     year: 1976
     url: "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
+
 
     institution: "J.M. Roberts, Penguin"
 ---

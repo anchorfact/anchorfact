@@ -2,16 +2,20 @@
 id: "kb-2026-00209"
 
 
+
 title: "Supply Chain Management"
 schema_type: "TechArticle"
+
 
 
 category: "business"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -22,6 +26,7 @@ derived_from_human_seed: true
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
@@ -41,8 +46,10 @@ primary_sources:
     type: "journal"
 
 
+
     year: 2026
     url: "https://hbr.org/"
+
 
     institution: "Harvard Business Publishing"
 secondary_sources:
@@ -50,16 +57,20 @@ secondary_sources:
     type: "journal"
 
 
+
     year: 2026
     url: "https://hbr.org/"
+
 
     institution: "Harvard Business Publishing"
   - title: "The Goal: A Process of Ongoing Improvement"
     type: "book"
 
 
+
     year: 1984
     url: "https://www.northriverpress.com/the-goal/"
+
 
     institution: "Eliyahu M. Goldratt, North River Press"
 ---

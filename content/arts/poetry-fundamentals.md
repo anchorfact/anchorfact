@@ -2,16 +2,20 @@
 id: "kb-2026-00493"
 
 
+
 title: "Poetry Fundamentals"
 schema_type: "TechArticle"
+
 
 
 category: "arts"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 1994
     url: "https://www.harpercollins.com/products/a-poetry-handbook-mary-oliver?variant=32208032890914"
+
 
     institution: "Harper Perennial"
 secondary_sources:
@@ -31,19 +37,23 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2018
     url: "https://wwnorton.com/books/9780393602814"
+
 
     institution: "Martin Puchner et al., W.W. Norton"
 atomic_facts:
   - id: fact-arts-01
     statement: "'Poetry is language at its most distilled and most powerful'"
 
+
     source_title: The Poetry Handbook (Mary Oliver)
     source_url: https://www.harpercollins.com/products/a-poetry-handbook-mary-oliver?variant=32208032890914
     confidence: high
   - id: fact-arts-02
     statement: "Silence again.' Free verse: dominant modern form — rhythm from natural speech, not meter"
+
 
     source_title: The Poetry Handbook (Mary Oliver)
     source_url: https://www.harpercollins.com/products/a-poetry-handbook-mary-oliver?variant=32208032890914
@@ -53,6 +63,10 @@ completeness: 0.88
 known_gaps:
   - "Statistics and data cited are from 2018 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist and expressionist accounts"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

@@ -22,6 +22,12 @@ secondary_sources:
     url: "https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck-phd/"
     institution: "Carol S. Dweck, Random House"
 completeness: 0.88
+known_gaps:
+  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
+  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
 ai_citations:
   last_citation_check:"2026-05-22"
 ---
@@ -37,3 +43,13 @@ Praise process, not intelligence: 'You worked so hard on that' vs. 'You're so sm
 ## Further Reading
 
 - [Mindset: The New Psychology of Success (Carol Dweck)](https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck/)
+atomic_facts:
+  - id: "fact-self-improvement-001"
+    statement: "Growth mindset (Carol Dweck, 2006) is the belief that abilities can be developed through effort, learning, and persistence"
+    confidence: "medium"
+  - id: "fact-self-improvement-002"
+    statement: "Fixed mindset: believe abilities are innate and unchangeable"
+    confidence: "medium"
+  - id: "fact-self-improvement-003"
+    statement: "'You're so smart.' Effort is positive: in a growth mindset, effort means you're learning"
+    confidence: "medium"

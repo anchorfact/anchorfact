@@ -2,20 +2,25 @@
 id: "kb-2026-00018"
 
 
+
 title: "AI Agents (2025-2026)"
 schema_type: "TechArticle"
+
 
 
 category: "ai"
 language: "en"
 
 
+
 confidence: "high"
 confidence_rationale: "Based on the comprehensive 2025 Agent Technology Report (zaobi.tech) and the State of AI Agents Report (rivista.ai), cross-validated with arXiv paper 2601.01743"
 
 
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
 
 
 ai_models: ["claude-opus"]
@@ -25,8 +30,10 @@ primary_sources:
     type: "report"
 
 
+
     year: 2026
     url: "https://zaobi.tech/pages/ai-tech/agent-tech-report-2025/index.html"
+
 
     institution: "Zaobi Tech"
   - title: "AI Agent Systems: Architectures, Applications, and Evaluation (arXiv 2601.01743)"
@@ -34,8 +41,10 @@ primary_sources:
     type: "academic_paper"
 
 
+
     year: 2026
     url: "https://arxiv.org/html/2601.01743v1"
+
 
     institution: "arXiv"
 
@@ -44,8 +53,10 @@ secondary_sources:
     type: "documentation"
 
 
+
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+
 
     institution: "Mozilla"
 atomic_facts:
@@ -54,6 +65,7 @@ atomic_facts:
       2025 was widely called the "Year of the Agent" across the AI industry, marking a transition from passive
       conversational AI to autonomous systems capable of multi-step reasoning, tool use, and independent action
     source_title: "AI Agent Systems: Architectures, Applications, and Evaluation (arXiv 2601.01743)"
+
 
     source_url: https://arxiv.org/html/2601.01743v1
     confidence: high
@@ -70,6 +82,7 @@ atomic_facts:
       capabilities to accomplish goals without continuous human supervision
     source_title: "AI Agent Systems: Architectures, Applications, and Evaluation (arXiv 2601.01743)"
 
+
     source_url: https://arxiv.org/html/2601.01743v1
     confidence: high
   
@@ -77,6 +90,7 @@ completeness: 0.88
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "Market size projections vary by analyst; specific figures not included pending Gartner/McKinsey consensus data"

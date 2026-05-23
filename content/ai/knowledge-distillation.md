@@ -2,16 +2,20 @@
 id: "kb-2026-00286"
 
 
+
 title: "Knowledge Distillation"
 schema_type: "TechArticle"
+
 
 
 category: "ai"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -22,12 +26,15 @@ primary_sources:
     type: "academic_paper"
 
 
+
     year: 2015
     doi: "10.48550/arXiv.1503.02531"
 
 
+
     url: "https://arxiv.org/abs/1503.02531"
     institution: "NeurIPS Workshop"
+
 
 
     note: "The original knowledge distillation paper by Turing Award winner Geoffrey Hinton. 15,000+ citations."
@@ -36,11 +43,14 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2016
     url: "https://www.deeplearningbook.org/"
 
+
     institution: "MIT Press"
     note: "Covers model compression and knowledge transfer in the context of deep learning"
+
 
 
 atomic_facts:
@@ -55,6 +65,7 @@ completeness: 0.88
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "Statistics and data cited are from 2016 and earlier; more recent data may have become available since publication"

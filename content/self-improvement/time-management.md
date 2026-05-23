@@ -22,6 +22,12 @@ secondary_sources:
     url: "https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/"
     institution: "Cal Newport, Grand Central"
 completeness: 0.88
+known_gaps:
+  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
+  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
+disputed_statements:
+  - statement: "The effectiveness of popular productivity methods (GTD, Pomodoro, time-blocking) varies widely by individual; controlled studies are limited, and most evidence is anecdotal or correlational"
+    context: "See primary sources for competing interpretations"
 ai_citations:
   last_citation_check:"2026-05-22"
 ---
@@ -37,3 +43,10 @@ Covey's 7 Habits: Be proactive, Begin with end in mind, First things first, Thin
 ## Further Reading
 
 - [The 7 Habits of Highly Effective People (Stephen Covey)](https://www.simonandschuster.com/books/The-7-Habits-of-Highly-Effective-People/Stephen-R-Covey/9781982143817)
+atomic_facts:
+  - id: "fact-self-improvement-001"
+    statement: "Pareto Principle: 80% of results from 20% of effort"
+    confidence: "medium"
+  - id: "fact-self-improvement-002"
+    statement: "Urgent: quadrant II (important not urgent) is where long-term success lives (planning, learning, relationships)"
+    confidence: "medium"

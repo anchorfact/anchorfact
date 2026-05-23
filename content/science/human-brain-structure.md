@@ -2,16 +2,20 @@
 id: "kb-2026-00370"
 
 
+
 title: "Human Brain Structure"
 schema_type: "TechArticle"
+
 
 
 category: "science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2021
     url: "https://www.mheducation.com/highered/product/principles-neural-science-kandel-koester-mack-siegelbaum/9781259642234.html"
+
 
     institution: "McGraw-Hill"
 secondary_sources:
@@ -31,8 +37,10 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2012
     url: "https://www.mhprofessional.com/9780071390118-usa-principles-of-neural-science-fifth-edition"
+
 
     institution: "Eric Kandel et al., McGraw-Hill"
 atomic_facts:
@@ -47,6 +55,7 @@ completeness: 0.88
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "Statistics and data cited are from 2021 and earlier; more recent data may have become available since publication"

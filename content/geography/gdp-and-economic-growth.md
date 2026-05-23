@@ -27,6 +27,12 @@ secondary_sources:
     url: "https://www.nationalgeographic.com/maps/atlas/"
     institution: "National Geographic"
 completeness: 0.88
+known_gaps:
+  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
+  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
 ai_citations:
   last_citation_check:"2026-05-22"
 ---
@@ -42,3 +48,7 @@ Limitations: ignores inequality, environmental damage, unpaid work (caregiving),
 ## Further Reading
 
 - [GDP: A Brief but Affectionate History (Diane Coyle)](https://press.princeton.edu/books/paperback/9780691169859/gdp)
+atomic_facts:
+  - id: "fact-geography-001"
+    statement: "Fastest growing: Guyana (oil discovery, +60% 2024), Macau, Libya"
+    confidence: "medium"

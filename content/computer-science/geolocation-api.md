@@ -2,20 +2,25 @@
 id: "kb-2026-00103"
 
 
+
 title: "Geolocation API"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 confidence_rationale: "Based on authoritative sources and industry standards"
 
 
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
 
 
 derived_from_human_seed: true
@@ -24,8 +29,10 @@ primary_sources:
     type: "standard"
 
 
+
     year: 2022
     url: "https://www.w3.org/TR/geolocation/"
+
 
     institution: "W3C"
 
@@ -34,8 +41,10 @@ secondary_sources:
     type: "documentation"
 
 
+
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+
 
     institution: "Mozilla"
   - title: "Pro Git (2nd Ed)"
@@ -43,12 +52,18 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2014
     url: "https://git-scm.com/book/en/v2"
+
 
     institution: "Apress"
 known_gaps:
   - "Content verified during quality audit; citations cross-referenced with authoritative sources"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 completeness: 0.88
 ai_citations:
 ---

@@ -2,16 +2,20 @@
 id: "kb-2026-00356"
 
 
+
 title: "Ottoman Empire"
 schema_type: "TechArticle"
+
 
 
 category: "history"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2005
     url: "https://www.basicbooks.com/titles/caroline-finkel/osmans-dream/9780465023974/"
+
 
     institution: "Basic Books"
 secondary_sources:
@@ -31,8 +37,10 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2003
     url: "https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540"
+
 
     institution: "Niall Ferguson, Penguin"
 atomic_facts:
@@ -42,11 +50,13 @@ atomic_facts:
       Africa
     source_title: "Osman's Dream: The History of the Ottoman Empire (Caroline Finkel)"
 
+
     source_url: https://www.basicbooks.com/titles/caroline-finkel/osmans-dream/9780465023974/
     confidence: high
   - id: fact-history-02
     statement: Founded by Osman I, peaked under Suleiman the Magnificent
     source_title: "Osman's Dream: The History of the Ottoman Empire (Caroline Finkel)"
+
 
     source_url: https://www.basicbooks.com/titles/caroline-finkel/osmans-dream/9780465023974/
     confidence: high
@@ -55,6 +65,10 @@ completeness: 0.88
 known_gaps:
   - "Statistics and data cited are from 2005 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The economic impact of colonialism on colonized regions is deeply contested: some economic historians detect developmental benefits, while dependency theorists emphasize systematic extraction and structural underdevelopment"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

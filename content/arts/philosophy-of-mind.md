@@ -2,16 +2,20 @@
 id: "kb-2026-00499"
 
 
+
 title: "Philosophy of Mind"
 schema_type: "TechArticle"
+
 
 
 category: "arts"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 1991
     url: "https://www.hachettebookgroup.com/titles/daniel-c-dennett/consciousness-explained/9780316180658/"
+
 
     institution: "Little, Brown"
 secondary_sources:
@@ -31,8 +37,10 @@ secondary_sources:
     type: "book"
 
 
+
     year: 1926
     url: "https://www.simonandschuster.com/books/The-Story-of-Philosophy/Will-Durant/9780671201593"
+
 
     institution: "Will Durant, Simon & Schuster"
 atomic_facts:
@@ -45,6 +53,7 @@ atomic_facts:
     confidence: high
   - id: fact-arts-02
     statement: "Integrated Information Theory : consciousness = integrated information"
+
 
     source_title: Consciousness Explained (Daniel Dennett)
     source_url: https://www.hachettebookgroup.com/titles/daniel-c-dennett/consciousness-explained/9780316180658/

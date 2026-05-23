@@ -2,16 +2,20 @@
 id: "kb-2026-00448"
 
 
+
 title: "Personal Finance"
 schema_type: "TechArticle"
+
 
 
 category: "business"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2016
     url: "https://www.jlcollinsnh.com/stock-series/"
+
 
     institution: "Self-published"
 secondary_sources:
@@ -31,8 +37,10 @@ secondary_sources:
     type: "book"
 
 
+
     year: 1949
     url: "https://www.harpercollins.com/products/the-intelligent-investor-benjamin-graham"
+
 
     institution: "Benjamin Graham, HarperBusiness"
 atomic_facts:
@@ -50,6 +58,7 @@ atomic_facts:
     confidence: high
   - id: fact-business-03
     statement: "'The best time to plant a tree was 20 years ago"
+
 
     source_title: The Simple Path to Wealth (JL Collins)
     source_url: https://www.jlcollinsnh.com/stock-series/

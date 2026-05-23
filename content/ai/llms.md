@@ -2,20 +2,25 @@
 id: "kb-2026-00005"
 
 
+
 title: "Large Language Models (LLMs)"
 schema_type: "TechArticle"
+
 
 
 category: "ai"
 language: "en"
 
 
+
 confidence: "high"
 confidence_rationale: "Based on GPT-3 (Brown et al., 2020), Chinchilla (Hoffmann et al., 2022), Emergent Abilities (Wei et al., 2022), and verified benchmarks from HELM and public leaderboards"
 
 
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
 
 
 atomic_facts:
@@ -50,6 +55,7 @@ disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
 
+
 known_gaps:
   - "Benchmark scores are from public leaderboards as of late 2024; newer models may exceed these by the time of reading"
   - "Model parameter counts for frontier models (GPT-4, Gemini, Claude) are estimates from external analysis, not official documentation"
@@ -65,8 +71,10 @@ primary_sources:
     type: "academic_paper"
 
 
+
     year: 2020
     doi: "10.48550/arXiv.2005.14165"
+
 
 
     url: "https://arxiv.org/abs/2005.14165"
@@ -76,12 +84,15 @@ primary_sources:
     type: "academic_paper"
 
 
+
     year: 2022
     doi: "10.48550/arXiv.2203.15556"
 
 
+
     url: "https://arxiv.org/abs/2203.15556"
     institution: "DeepMind"
+
 
 
     note: "Established the Chinchilla scaling laws: optimal training requires ~20 tokens per parameter"
@@ -90,12 +101,15 @@ primary_sources:
     type: "academic_paper"
 
 
+
     year: 2022
     doi: "10.48550/arXiv.2206.07682"
 
 
+
     url: "https://arxiv.org/abs/2206.07682"
     institution: "Google Research"
+
 
 
     note: "Documented 100+ tasks where LLM capabilities emerge suddenly at specific scale thresholds"
@@ -104,8 +118,10 @@ secondary_sources:
     type: "benchmark"
 
 
+
     year: 2025
     url: "https://crfm.stanford.edu/helm/"
+
 
     institution: "Stanford University"
   - title: "Scaling Laws for Neural Language Models"
@@ -113,12 +129,15 @@ secondary_sources:
     type: "academic_paper"
 
 
+
     year: 2020
     doi: "10.48550/arXiv.2001.08361"
 
 
+
     url: "https://arxiv.org/abs/2001.08361"
     institution: "OpenAI"
+
 
 
     note: "The original scaling laws paper that established the power-law relationship between loss, compute, and model size"
@@ -128,8 +147,10 @@ ai_citations:
     type: "blog_post"
 
 
+
     year: 2021
     url: "https://lilianweng.github.io/posts/2021-09-25-train-large/"
+
 
     institution: "OpenAI"
   - title: "LLaMA: Open and Efficient Foundation Language Models"
@@ -137,8 +158,10 @@ ai_citations:
     type: "academic_paper"
 
 
+
     year: 2023
     doi: "10.48550/arXiv.2302.13971"
+
 
 
     url: "https://arxiv.org/abs/2302.13971"
@@ -148,8 +171,10 @@ ai_citations:
     type: "academic_paper"
 
 
+
     year: 2023
     doi: "10.48550/arXiv.2302.13971"
+
 
 
     url: "https://arxiv.org/abs/2302.13971"
@@ -159,8 +184,10 @@ ai_citations:
     type: "blog_post"
 
 
+
     year: 2021
     url: "https://lilianweng.github.io/posts/2021-09-25-train-large/"
+
 
     institution: "OpenAI"
 ---

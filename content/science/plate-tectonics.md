@@ -2,16 +2,20 @@
 id: "kb-2026-00339"
 
 
+
 title: "Plate Tectonics"
 schema_type: "TechArticle"
+
 
 
 category: "science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2001
     url: "https://www.hachettebookgroup.com/titles/naomi-oreskes/plate-tectonics/9780813341323/"
+
 
     institution: "Westview Press"
 secondary_sources:
@@ -31,16 +37,20 @@ secondary_sources:
     type: "book"
 
 
+
     year: 1988
     url: "https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/"
+
 
     institution: "Stephen Hawking, Bantam"
   - title: "Nature (journal)"
     type: "journal"
 
 
+
     year: 2025
     url: "https://www.nature.com/"
+
 
     institution: "Springer Nature"
 atomic_facts:
@@ -48,12 +58,17 @@ atomic_facts:
     statement: India-Eurasia collision created the Himalayas
     source_title: "Plate Tectonics: An Insider's History (Naomi Oreskes)"
 
+
     source_url: https://www.hachettebookgroup.com/titles/naomi-oreskes/plate-tectonics/9780813341323/
     confidence: high
   
 completeness: 0.88
 known_gaps:
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

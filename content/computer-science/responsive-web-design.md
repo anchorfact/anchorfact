@@ -2,16 +2,20 @@
 id: "kb-2026-00172"
 
 
+
 title: "Responsive Web Design"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -22,11 +26,14 @@ primary_sources:
     type: "article"
 
 
+
     year: 2010
     url: "https://alistapart.com/article/responsive-web-design/"
 
+
     institution: "A List Apart"
     note: "The article that coined RWD: fluid grids, flexible images, media queries"
+
 
 
 secondary_sources:
@@ -34,11 +41,14 @@ secondary_sources:
     type: "documentation"
 
 
+
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design"
 
+
     institution: "Mozilla"
     note: "Modern responsive design: mobile-first, viewport, CSS Grid/Flexbox for responsive layouts"
+
 
 
 atomic_facts:
@@ -52,6 +62,7 @@ atomic_facts:
   - id: fact-computer-science-02
     statement: "Mobile-first: design for smallest screen first, progressively enhance for larger"
 
+
     source_title: Responsive Web Design
     source_url: https://alistapart.com/article/responsive-web-design/
     confidence: medium
@@ -60,6 +71,10 @@ completeness: 0.88
 known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

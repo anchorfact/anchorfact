@@ -2,20 +2,25 @@
 id: "kb-2026-00002"
 
 
+
 title: "Attention Mechanism"
 schema_type: "TechArticle"
+
 
 
 category: "ai"
 language: "en"
 
 
+
 confidence: "high"
 confidence_rationale: "Based on the seminal Bahdanau (2014) attention paper, Luong et al. (2015) dot-product attention, and the Sutskever et al. (2014) encoder-decoder paper — all peer-reviewed at top NLP venues"
 
 
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
 
 
 atomic_facts:
@@ -47,6 +52,7 @@ disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
 
+
 known_gaps:
   - "Exact citation count for Bahdanau (2014) varies across databases (Semantic Scholar vs. Google Scholar); approximate ranges used"
 related_entities:
@@ -60,12 +66,15 @@ primary_sources:
     type: "academic_paper"
 
 
+
     year: 2014
     doi: "10.48550/arXiv.1409.0473"
 
 
+
     url: "https://arxiv.org/abs/1409.0473"
     institution: "Université de Montréal / Jacobs University"
+
 
 
     note: "Published at ICLR 2015. First paper to introduce the attention mechanism for neural machine translation."
@@ -74,12 +83,15 @@ primary_sources:
     type: "academic_paper"
 
 
+
     year: 2015
     doi: "10.48550/arXiv.1508.04025"
 
 
+
     url: "https://arxiv.org/abs/1508.04025"
     institution: "Stanford University"
+
 
 
     note: "Introduced dot-product attention and the general scoring function. Published at EMNLP 2015."
@@ -89,12 +101,15 @@ secondary_sources:
     type: "academic_paper"
 
 
+
     year: 2014
     doi: "10.48550/arXiv.1409.3215"
 
 
+
     url: "https://arxiv.org/abs/1409.3215"
     institution: "Google"
+
 
 
     note: "The encoder-decoder architecture that attention was designed to improve upon"
@@ -102,8 +117,10 @@ secondary_sources:
     type: "course_material"
 
 
+
     year: 2024
     url: "https://web.stanford.edu/class/cs224n/"
+
 
     institution: "Stanford University"
 ai_citations:
@@ -112,8 +129,10 @@ ai_citations:
     type: "blog_post"
 
 
+
     year: 2018
     url: "https://lilianweng.github.io/posts/2018-06-24-attention/"
+
 
     institution: "OpenAI"
   - title: "The Illustrated Transformer"
@@ -121,8 +140,10 @@ ai_citations:
     type: "blog_post"
 
 
+
     year: 2018
     url: "https://jalammar.github.io/illustrated-transformer/"
+
 
     institution: "Github"
   - title: "The Illustrated Transformer"
@@ -130,8 +151,10 @@ ai_citations:
     type: "blog_post"
 
 
+
     year: 2018
     url: "https://jalammar.github.io/illustrated-transformer/"
+
 
     institution: "Github"
   - title: "Attention? Attention!"
@@ -139,8 +162,10 @@ ai_citations:
     type: "blog_post"
 
 
+
     year: 2018
     url: "https://lilianweng.github.io/posts/2018-06-24-attention/"
+
 
     institution: "OpenAI"
 ---

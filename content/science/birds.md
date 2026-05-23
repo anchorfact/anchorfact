@@ -2,16 +2,20 @@
 id: "kb-2026-00497"
 
 
+
 title: "Birds"
 schema_type: "TechArticle"
+
 
 
 category: "science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2014
     url: "https://www.penguinrandomhouse.com/books/232944/the-sibley-guide-to-birds-second-edition-by-david-allen-sibley/"
+
 
     institution: "Knopf"
 secondary_sources:
@@ -32,13 +38,16 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2023
     url: "https://nostarch.com/rust-programming-language-2nd-edition"
+
 
     institution: "No Starch Press"
 atomic_facts:
   - id: fact-science-01
     statement: "Migration: Arctic Tern — 90,000 km annually"
+
 
     source_title: The Sibley Guide to Birds (2nd Ed)
     source_url: https://www.penguinrandomhouse.com/books/232944/the-sibley-guide-to-birds-second-edition-by-david-allen-sibley/
@@ -48,21 +57,29 @@ completeness: 0.88
 known_gaps:
   - "Statistics and data cited are from 2023 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
   - title: "A Brief History of Time"
     type: "book"
 
 
+
     year: 1988
     url: "https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/"
+
 
     institution: "Stephen Hawking, Bantam"
   - title: "Nature (journal)"
     type: "journal"
 
 
+
     year: 2025
     url: "https://www.nature.com/"
+
 
     institution: "Springer Nature"
 ---

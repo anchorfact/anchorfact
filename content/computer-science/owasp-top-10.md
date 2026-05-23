@@ -2,16 +2,20 @@
 id: "kb-2026-00120"
 
 
+
 title: "OWASP Top 10"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -52,8 +56,10 @@ primary_sources:
     type: "repository"
 
 
+
     year: 2026
     url: "https://dl.acm.org/"
+
 
     institution: "ACM"
 secondary_sources:
@@ -61,8 +67,10 @@ secondary_sources:
     type: "repository"
 
 
+
     year: 2026
     url: "https://dl.acm.org/"
+
 
     institution: "ACM"
 ---

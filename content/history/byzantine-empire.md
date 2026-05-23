@@ -2,16 +2,20 @@
 id: "kb-2026-00354"
 
 
+
 title: "Byzantine Empire"
 schema_type: "TechArticle"
+
 
 
 category: "history"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2007
     url: "https://press.princeton.edu/books/paperback/9780691143699/byzantium"
+
 
     institution: "Princeton University Press"
 secondary_sources:
@@ -31,14 +37,17 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2003
     url: "https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540"
+
 
     institution: "Niall Ferguson, Penguin"
 atomic_facts:
   - id: fact-history-01
     statement: The Byzantine Empire preserved Greco-Roman knowledge through the Middle Ages
     source_title: "Byzantium: The Surprising Life of a Medieval Empire (Judith Herrin)"
+
 
     source_url: https://press.princeton.edu/books/paperback/9780691143699/byzantium
     confidence: high
@@ -47,6 +56,10 @@ completeness: 0.88
 known_gaps:
   - "Statistics and data cited are from 2007 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The economic impact of colonialism on colonized regions is deeply contested: some economic historians detect developmental benefits, while dependency theorists emphasize systematic extraction and structural underdevelopment"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

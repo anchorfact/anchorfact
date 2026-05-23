@@ -2,16 +2,20 @@
 id: "kb-2026-00323"
 
 
+
 title: "Cold War"
 schema_type: "TechArticle"
+
 
 
 category: "history"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2005
     url: "https://www.penguinrandomhouse.com/books/256540/the-cold-war-by-john-lewis-gaddis/"
+
 
     institution: "Penguin Press"
 secondary_sources:
@@ -31,8 +37,10 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2005
     url: "https://www.penguinrandomhouse.com/books/292237/the-cold-war-by-john-lewis-gaddis/"
+
 
     institution: "John Lewis Gaddis, Penguin"
 atomic_facts:
@@ -42,11 +50,13 @@ atomic_facts:
       race, proxy wars, space race
     source_title: "The Cold War: A New History (John Lewis Gaddis)"
 
+
     source_url: https://www.penguinrandomhouse.com/books/256540/the-cold-war-by-john-lewis-gaddis/
     confidence: high
   - id: fact-history-02
     statement: Ended with the dissolution of the USSR in December 1991
     source_title: "The Cold War: A New History (John Lewis Gaddis)"
+
 
     source_url: https://www.penguinrandomhouse.com/books/256540/the-cold-war-by-john-lewis-gaddis/
     confidence: high
@@ -56,6 +66,7 @@ atomic_facts:
       falls , USSR dissolution
     source_title: "The Cold War: A New History (John Lewis Gaddis)"
 
+
     source_url: https://www.penguinrandomhouse.com/books/256540/the-cold-war-by-john-lewis-gaddis/
     confidence: high
   
@@ -63,6 +74,7 @@ completeness: 0.88
 disputed_statements:
   - statement: "Historians disagree on whether the Cold War was primarily an ideological struggle, a geopolitical power contest, or both; interpretations vary across revisionist, post-revisionist, and orthodox schools"
     confidence: "medium"
+
 
 known_gaps:
   - "Statistics and data cited are from 2005 and earlier; more recent data may have become available since publication"

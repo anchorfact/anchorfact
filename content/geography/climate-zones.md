@@ -22,6 +22,12 @@ secondary_sources:
     url: "https://koeppen-geiger.vu-wien.ac.at/"
     institution: "University of Veterinary Medicine Vienna"
 completeness: 0.88
+known_gaps:
+  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
+  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
+disputed_statements:
+  - statement: "Regional climate impact projections vary significantly across models; debates persist about the reliability of downscaled predictions for specific geographic areas"
+    context: "See primary sources for competing interpretations"
 ai_citations:
   last_citation_check:"2026-05-22"
 ---

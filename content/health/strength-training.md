@@ -2,16 +2,20 @@
 id: "kb-2026-00375"
 
 
+
 title: "Strength Training"
 schema_type: "TechArticle"
+
 
 
 category: "health"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2011
     url: "https://aasgaardco.com/store/books-posters-dvd/starting-strength-basic-barbell-training/"
+
 
     institution: "The Aasgaard Company"
 secondary_sources:
@@ -31,21 +37,26 @@ secondary_sources:
     type: "report"
 
 
+
     year: 2025
     url: "https://www.who.int/news-room/fact-sheets"
+
 
     institution: "World Health Organization"
   - title: "CDC Health Topics"
     type: "report"
 
 
+
     year: 2025
     url: "https://www.cdc.gov/health-topics.html"
+
 
     institution: "Centers for Disease Control and Prevention"
 atomic_facts:
   - id: fact-health-01
     statement: "Compound exercises : squat, deadlift, bench press, overhead press, pull-up — most efficient"
+
 
     source_title: Starting Strength (3rd Ed, Mark Rippetoe)
     source_url: https://aasgaardco.com/store/books-posters-dvd/starting-strength-basic-barbell-training/
@@ -55,6 +66,7 @@ completeness: 0.88
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"

@@ -2,20 +2,25 @@
 id: "kb-gd-031"
 
 
+
 title: "save systems design"
 schema_type: "TechArticle"
+
 
 
 category: "game-development"
 language: "zh"
 
 
+
 confidence: "high"
 confidence_rationale: "游戏开发领域系统性知识，基于行业标准和实践经验"
 
 
+
 last_verified: "2026-04-28"
 generation_method: "human_only"
+
 
 
 derived_from_human_seed: true
@@ -26,8 +31,10 @@ primary_sources:
     type: "knowledge_base"
 
 
+
     year: 2026
     note: "基于行业实践和标准参考文献的系统性整理"
+
 
 
 secondary_sources:
@@ -35,6 +42,10 @@ completeness: 0.85
 known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "Narrative-versus-systems-driven game design is a fundamental debate: story-focused games emphasize authored emotional arcs, while systems-driven games prioritize emergent player-driven experiences"
+    context: "See primary sources for competing interpretations"
+
 related_entities:
   - "entity:game-development"
 ai_citations:

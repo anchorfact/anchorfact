@@ -1,34 +1,21 @@
 ---
 id: "kb-2026-00004"
-
-
 title: "GPT (Generative Pre-trained Transformer) Model Family"
 schema_type: "TechArticle"
-
-
 category: "ai"
 language: "en"
-
-
 confidence: "high"
 confidence_rationale: "Based on the original GPT-1 (Radford et al., 2018), GPT-2 (Radford et al., 2019), and GPT-3 (Brown et al., 2020) papers, complemented by OpenAI's GPT-4 Technical Report. Architecture details cross-referenced with public analyses."
-
-
 last_verified: "2026-05-22"
 generation_method: "human_only"
 
-
 atomic_facts:
-  - id: fact-ai-01
-    statement: >-
-      The GPT model family, developed by OpenAI starting in 2018, represents the lineage of autoregressive language models
-      that scaled from 117M to trillions of parameters, establishing text generation as the primary paradigm for
-      general-purpose AI
-    source_title: Language Models are Unsupervised Multitask Learners (GPT-2)
+  - id: "fact-ai-01"
+    statement: "The GPT model family, developed by OpenAI starting in 2018, represents the lineage of autoregressive language models that scaled from 117M to trillions of parameters, establishing text generation as the primary paradigm for general-purpose AI"
+    source_title: "Language Models are Unsupervised Multitask Learners (GPT-2)"
     source_url: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
-    confidence: high
-  
-completeness: 0.90
+
+completeness: 0.9
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
@@ -37,78 +24,47 @@ known_gaps:
   - "GPT-4 architecture details (layer count, hidden dimensions) are not publicly disclosed by OpenAI; MoE estimate (~1.76T total, ~280B active) is based on media and analyst reports, not official documentation"
   - "GPT-5 and GPT-5.2 specifications are based on public announcements and press coverage; technical details are not published"
   - "Training cost estimates are ballpark figures from external analysis, not official OpenAI disclosure"
+
 related_entities:
   - "entity:transformer-architecture"
   - "entity:bert"
   - "entity:llms"
   - "entity:attention-mechanism"
   - "entity:mixture-of-experts"
+
 primary_sources:
   - title: "Improving Language Understanding by Generative Pre-Training (GPT-1)"
     authors: ["Radford, Alec", "Narasimhan, Karthik", "Salimans, Tim", "Sutskever, Ilya"]
     type: "academic_paper"
-
-
     year: 2018
     url: "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
-
     institution: "OpenAI"
-    note: "Preprint, June 2018. First demonstration of the generative pre-training + fine-tuning paradigm using a Transformer decoder."
   - title: "Language Models are Unsupervised Multitask Learners (GPT-2)"
     authors: ["Radford, Alec", "Wu, Jeffrey", "Child, Rewon", "Luan, David", "Amodei, Dario", "Sutskever, Ilya"]
     type: "academic_paper"
-
-
     year: 2019
     url: "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf"
-
     institution: "OpenAI"
-    note: "February 2019. Demonstrated zero-shot transfer at scale. Initial release was staggered due to safety concerns."
   - title: "Language Models are Few-Shot Learners (GPT-3)"
     authors: ["Brown, Tom B.", "Mann, Benjamin", "Ryder, Nick", "Subbiah, Melanie", "Kaplan, Jared", "Dhariwal, Prafulla", "Neelakantan, Arvind", "Shyam, Pranav", "Sastry, Girish", "Askell, Amanda", "Agarwal, Sandhini", "Herbert-Voss, Ariel", "Krueger, Gretchen", "Henighan, Tom", "Child, Rewon", "Ramesh, Aditya", "Ziegler, Daniel M.", "Wu, Jeffrey", "Winter, Clemens", "Hesse, Christopher", "Chen, Mark", "Sigler, Eric", "Litwin, Mateusz", "Gray, Scott", "Chess, Benjamin", "Clark, Jack", "Berner, Christopher", "McCandlish, Sam", "Radford, Alec", "Sutskever, Ilya", "Amodei, Dario"]
     type: "academic_paper"
-
-
     year: 2020
     doi: "10.48550/arXiv.2005.14165"
-
-
     url: "https://arxiv.org/abs/2005.14165"
-    institution: "OpenAI"
-
-
-    note: "Published at NeurIPS 2020. 31 authors. 175B parameter model. As of May 2026: 30,000+ citations."
+    institution: "arXiv / Cornell University"
   - title: "GPT-4 Technical Report"
-    authors: ["OpenAI"]
-    type: "technical_report"
 
-
-    year: 2023
-    doi: "10.48550/arXiv.2303.08774"
-
-
-    url: "https://arxiv.org/abs/2303.08774"
-    institution: "OpenAI"
-
-
-    note: "Published March 2023. Intentionally omits architecture details for competitive and safety reasons."
 secondary_sources:
   - title: "Training language models to follow instructions with human feedback (InstructGPT)"
-    authors: ["Ouyang, Long", "Wu, Jeffrey", "Jiang, Xu", et al.]
+    authors: ["Ouyang, Long", "Wu, Jeffrey", "Jiang, Xu", "et al."]
     type: "academic_paper"
-
-
     year: 2022
     doi: "10.48550/arXiv.2203.02155"
-
-
     url: "https://arxiv.org/abs/2203.02155"
-    institution: "OpenAI"
+    institution: "Cornell University"
 
-
-    note: "The RLHF paper that made GPT-3.5/ChatGPT possible — the model that actually shipped to users"
-ai_citations:
 ---
+
 
 ## TL;DR
 

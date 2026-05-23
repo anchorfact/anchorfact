@@ -22,6 +22,12 @@ secondary_sources:
     url: "https://www.fide.com/FIDE/handbook/LawsOfChess.pdf"
     institution: "FIDE (World Chess Federation)"
 completeness: 0.88
+known_gaps:
+  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
+  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
+disputed_statements:
+  - statement: "The value of analytics-driven versus intuition-based coaching in sports remains debated, with tensions between statistical optimization and experienced human judgment"
+    context: "See primary sources for competing interpretations"
 ai_citations:
   last_citation_check:"2026-05-22"
 ---
@@ -37,3 +43,13 @@ Basic principles: control center (e4, d4, e5, d5), develop knights before bishop
 ## Further Reading
 
 - [Bobby Fischer Teaches Chess](https://www.penguinrandomhouse.com/books/71097/bobby-fischer-teaches-chess-by-bobby-fischer/)
+atomic_facts:
+  - id: "fact-sports-001"
+    statement: "Chess is a two-player strategy board game"
+    confidence: "medium"
+  - id: "fact-sports-002"
+    statement: "Tactics: fork (attack two pieces), pin (immobilize piece protecting more valuable one), skewer, discovered attack"
+    confidence: "medium"
+  - id: "fact-sports-003"
+    statement: "Magnus Carlsen: highest rated (2882, 2014)"
+    confidence: "medium"

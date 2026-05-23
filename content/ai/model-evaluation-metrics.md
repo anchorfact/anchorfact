@@ -2,16 +2,20 @@
 id: "kb-2026-00282"
 
 
+
 title: "Model Evaluation Metrics"
 schema_type: "TechArticle"
+
 
 
 category: "ai"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -22,11 +26,14 @@ primary_sources:
     type: "book"
 
 
+
     year: 2006
     url: "https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/"
 
+
     institution: "Springer"
     note: "Chapter 1: Introduction — covers evaluation metrics, loss functions, and the bias-variance tradeoff"
+
 
 
 secondary_sources:
@@ -35,17 +42,21 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2021
     url: "https://www.statlearning.com/"
 
+
     institution: "Springer"
     note: "Chapter 2: Statistical Learning — covers training vs. test error, cross-validation, and the bias-variance decomposition"
+
 
 
 completeness: 0.88
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "Statistics and data cited are from 2021 and earlier; more recent data may have become available since publication"

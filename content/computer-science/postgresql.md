@@ -2,16 +2,20 @@
 id: "kb-2026-00067"
 
 
+
 title: "PostgreSQL"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -22,16 +26,20 @@ primary_sources:
     type: "documentation"
 
 
+
     year: 2026
     url: "https://www.postgresql.org/docs/17/"
+
 
     institution: "PostgreSQL Global Development Group"
   - title: "PostgreSQL GitHub"
     type: "repository"
 
 
+
     url: "https://github.com/postgres/postgres"
     institution: "GitHub"
+
 
     stars: 20982
 secondary_sources:
@@ -39,8 +47,10 @@ secondary_sources:
     type: "documentation"
 
 
+
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+
 
     institution: "Mozilla"
   - title: "Pro Git (2nd Ed)"
@@ -48,8 +58,10 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2014
     url: "https://git-scm.com/book/en/v2"
+
 
     institution: "Apress"
 atomic_facts:
@@ -70,21 +82,29 @@ completeness: 0.85
 known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The NoSQL vs. SQL debate has evolved: while NoSQL offered horizontal scalability benefits, modern NewSQL systems (CockroachDB, Spanner) have narrowed the gap, and PostgreSQL's JSON support blurs the distinction"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
   - title: "PostgreSQL 16 Documentation"
     type: "documentation"
 
 
+
     year: 2024
     url: "https://www.postgresql.org/docs/16/"
+
 
     institution: "PostgreSQL Global Development Group"
   - title: "PostgreSQL 16 Documentation"
     type: "documentation"
 
 
+
     year: 2024
     url: "https://www.postgresql.org/docs/16/"
+
 
     institution: "PostgreSQL Global Development Group"
 ---

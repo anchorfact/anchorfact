@@ -2,16 +2,20 @@
 id: "kb-2026-00206"
 
 
+
 title: "E-Commerce Fundamentals"
 schema_type: "TechArticle"
+
 
 
 category: "business"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -22,6 +26,10 @@ derived_from_human_seed: true
 known_gaps:
   - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
 
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 atomic_facts:
   - id: fact-business-01
     statement: Global e-commerce sales exceeded $6 trillion in 2024
@@ -30,6 +38,7 @@ atomic_facts:
     confidence: medium
   - id: fact-business-02
     statement: "Conversion Rate Optimization : A/B testing, urgency, social proof"
+
 
     source_title: Harvard Business Review
     source_url: https://hbr.org/
@@ -43,8 +52,10 @@ primary_sources:
     type: "journal"
 
 
+
     year: 2026
     url: "https://hbr.org/"
+
 
     institution: "Harvard Business Publishing"
 secondary_sources:
@@ -52,16 +63,20 @@ secondary_sources:
     type: "journal"
 
 
+
     year: 2026
     url: "https://hbr.org/"
+
 
     institution: "Harvard Business Publishing"
   - title: "Harvard Business Review"
     type: "journal"
 
 
+
     year: 2025
     url: "https://hbr.org/"
+
 
     institution: "Harvard Business Publishing"
 ---

@@ -2,16 +2,20 @@
 id: "kb-2026-00332"
 
 
+
 title: "Quantum Mechanics"
 schema_type: "TechArticle"
+
 
 
 category: "science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 1994
     url: "https://link.springer.com/book/9780306447907"
+
 
     institution: "Springer"
 secondary_sources:
@@ -31,22 +37,27 @@ secondary_sources:
     type: "book"
 
 
+
     year: 1965
     url: "https://www.feynmanlectures.caltech.edu/"
+
 
     institution: "Richard Feynman, Caltech / Addison-Wesley"
   - title: "Introduction to Quantum Mechanics"
     type: "book"
 
 
+
     year: 2004
     url: "https://www.cambridge.org/highereducation/books/introduction-to-quantum-mechanics/453C5C8A7D52E149A239D9AF6BEF8CB9"
+
 
     institution: "David J. Griffiths, Cambridge University Press"
 completeness: 0.88
 disputed_statements:
   - statement: "The timeline for practical, fault-tolerant quantum computers remains uncertain; estimates range from 5 to 20+ years depending on qubit coherence and error correction breakthroughs"
     confidence: "medium"
+
 
 known_gaps:
   - "Statistics and data cited are from 2004 and earlier; more recent data may have become available since publication"

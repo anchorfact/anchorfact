@@ -2,16 +2,20 @@
 id: "kb-2026-00079"
 
 
+
 title: "YAML (YAML Ain't Markup Language)"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -21,8 +25,10 @@ primary_sources:
     type: "standard"
 
 
+
     year: 2021
     url: "https://yaml.org/spec/1.2.2/"
+
 
     institution: "Yaml"
 
@@ -31,8 +37,10 @@ secondary_sources:
     type: "documentation"
 
 
+
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+
 
     institution: "Mozilla"
   - title: "Pro Git (2nd Ed)"
@@ -40,8 +48,10 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2014
     url: "https://git-scm.com/book/en/v2"
+
 
     institution: "Apress"
 atomic_facts:
@@ -60,6 +70,7 @@ completeness: 0.80
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"

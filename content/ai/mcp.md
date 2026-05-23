@@ -2,16 +2,20 @@
 id: "kb-2026-00016"
 
 
+
 title: "Model Context Protocol (MCP)"
 schema_type: "TechArticle"
+
 
 
 category: "ai"
 language: "en"
 
 
+
 confidence: "high"
 confidence_rationale: "Based on the official MCP specification, Anthropic's original announcement, and the Linux Foundation AAIF charter"
+
 
 
 last_verified: "2026-05-22"
@@ -23,24 +27,30 @@ primary_sources:
     type: "announcement"
 
 
+
     year: 2024
     url: "https://www.anthropic.com/news/model-context-protocol"
+
 
     institution: "Anthropic"
   - title: "Model Context Protocol Specification (2025-06-18)"
     type: "standard"
 
 
+
     year: 2025
     url: "https://modelcontextprotocol.io/specification/2025-06-18"
+
 
     institution: "Linux Foundation / AAIF"
   - title: "MCP Standardization and Agent Protocol (2026-03-18 analysis)"
     type: "analysis"
 
 
+
     year: 2026
     url: "https://oct-rick-brick.com/zh/articles/2026-03-18-mcp-standardization-agent-protocol/"
+
 
     institution: "Oct Rick Brick"
 secondary_sources:
@@ -48,8 +58,10 @@ secondary_sources:
     type: "repository"
 
 
+
     url: "https://github.com/modelcontextprotocol/modelcontextprotocol"
     institution: "GitHub"
+
 
 generation_method: "human_only"
 
@@ -66,6 +78,7 @@ completeness: 0.92
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "A2A (Agent-to-Agent) protocol is a separate Google initiative, not covered here"

@@ -27,6 +27,12 @@ secondary_sources:
     url: "https://www.nationalgeographic.com/maps/atlas/"
     institution: "National Geographic"
 completeness: 0.88
+known_gaps:
+  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
+  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
 ai_citations:
   last_citation_check:"2026-05-22"
 ---
@@ -42,3 +48,10 @@ Andes: formed by subduction of Nazca Plate under South American Plate — still 
 ## Further Reading
 
 - [The Physical Geography of South America (Veblen, Young, Orme)](https://global.oup.com/academic/product/the-physical-geography-of-south-america-9780195313413)
+atomic_facts:
+  - id: "fact-geography-001"
+    statement: "South America (17.84 million km²) is the 4th largest continent"
+    confidence: "medium"
+  - id: "fact-geography-002"
+    statement: "12 countries, ~430 million people"
+    confidence: "medium"

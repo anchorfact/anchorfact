@@ -2,16 +2,20 @@
 id: "kb-2026-00359"
 
 
+
 title: "American Revolution"
 schema_type: "TechArticle"
+
 
 
 category: "history"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2005
     url: "https://www.simonandschuster.com/books/1776/David-McCullough/9780743226721"
+
 
     institution: "Simon & Schuster"
 secondary_sources:
@@ -31,16 +37,20 @@ secondary_sources:
     type: "reference"
 
 
+
     year: 2025
     url: "https://www.britannica.com/"
+
 
     institution: "Encyclopaedia Britannica, Inc."
   - title: "The Penguin History of the World"
     type: "book"
 
 
+
     year: 1976
     url: "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
+
 
     institution: "J.M. Roberts, Penguin"
 atomic_facts:
@@ -52,11 +62,13 @@ atomic_facts:
   - id: fact-history-02
     statement: "Result: United States of America founded on republican principles"
 
+
     source_title: 1776 (David McCullough)
     source_url: https://www.simonandschuster.com/books/1776/David-McCullough/9780743226721
     confidence: high
   - id: fact-history-03
     statement: "Causes: 'No taxation without representation,' Boston Tea Party"
+
 
     source_title: 1776 (David McCullough)
     source_url: https://www.simonandschuster.com/books/1776/David-McCullough/9780743226721
@@ -65,6 +77,10 @@ atomic_facts:
 completeness: 0.88
 known_gaps:
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

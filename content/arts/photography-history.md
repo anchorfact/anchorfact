@@ -2,16 +2,20 @@
 id: "kb-2026-00412"
 
 
+
 title: "Photography History"
 schema_type: "TechArticle"
+
 
 
 category: "arts"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 1982
     url: "https://www.moma.org/calendar/exhibitions/2278"
+
 
     institution: "Museum of Modern Art"
 secondary_sources:
@@ -31,13 +37,16 @@ secondary_sources:
     type: "book"
 
 
+
     year: 1982
     url: "https://www.moma.org/calendar/exhibitions/2316"
+
 
     institution: "Beaumont Newhall, MoMA"
 atomic_facts:
   - id: fact-arts-01
     statement: "First camera phone: Sharp J-SH04"
+
 
     source_title: The History of Photography (Beaumont Newhall)
     source_url: https://www.moma.org/calendar/exhibitions/2278
@@ -52,6 +61,10 @@ completeness: 0.88
 known_gaps:
   - "Statistics and data cited are from 1982 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist and expressionist accounts"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

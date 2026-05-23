@@ -2,16 +2,20 @@
 id: "kb-2026-00284"
 
 
+
 title: "Attention vs. Self-Attention"
 schema_type: "TechArticle"
+
 
 
 category: "ai"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -21,8 +25,10 @@ primary_sources:
     type: "paper"
 
 
+
     year: 2017
     url: "https://arxiv.org/abs/1706.03762"
+
 
     institution: "NeurIPS"
 secondary_sources:
@@ -31,17 +37,21 @@ secondary_sources:
     type: "academic_paper"
 
 
+
     year: 2014
     doi: "10.48550/arXiv.1409.0473"
+
 
 
     url: "https://arxiv.org/abs/1409.0473"
     institution: "arXiv"
 
+
 completeness: 0.88
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "Statistics and data cited are from 2017 and earlier; more recent data may have become available since publication"

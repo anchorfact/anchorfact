@@ -27,6 +27,12 @@ secondary_sources:
     url: "https://www.nationalgeographic.com/maps/atlas/"
     institution: "National Geographic"
 completeness: 0.88
+known_gaps:
+  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
+  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
 ai_citations:
   last_citation_check:"2026-05-22"
 ---
@@ -42,3 +48,13 @@ Population: ~8.2 billion (2025). Largest countries by area: Russia (17.1M km²),
 ## Further Reading
 
 - [National Geographic Atlas of the World (11th Ed)](https://www.nationalgeographic.com/books/article/atlas-of-the-world-11th-edition)
+atomic_facts:
+  - id: "fact-geography-001"
+    statement: "Earth's surface: 71% water, 29% land"
+    confidence: "medium"
+  - id: "fact-geography-002"
+    statement: "Population: ~8.2 billion (2025)"
+    confidence: "medium"
+  - id: "fact-geography-003"
+    statement: "Largest by population: India (1.45B, surpassed China 2023), China (1.42B)"
+    confidence: "medium"

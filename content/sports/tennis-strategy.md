@@ -22,6 +22,12 @@ secondary_sources:
     url: "https://www.itftennis.com/en/about-us/governance/rules-and-regulations/"
     institution: "International Tennis Federation"
 completeness: 0.88
+known_gaps:
+  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
+  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
+disputed_statements:
+  - statement: "The value of analytics-driven versus intuition-based coaching in sports remains debated, with tensions between statistical optimization and experienced human judgment"
+    context: "See primary sources for competing interpretations"
 ai_citations:
   last_citation_check:"2026-05-22"
 ---
@@ -37,3 +43,10 @@ Singles court: baseline (back), service boxes, net. Serve: flat (speed), slice (
 ## Further Reading
 
 - [Winning Ugly (Brad Gilbert)](https://www.simonandschuster.com/books/Winning-Ugly/Brad-Gilbert/9780671884000)
+atomic_facts:
+  - id: "fact-sports-001"
+    statement: "Tennis combines physical skill with strategic thinking"
+    confidence: "medium"
+  - id: "fact-sports-002"
+    statement: "Mental game is as important as physical — managing emotions and momentum"
+    confidence: "medium"

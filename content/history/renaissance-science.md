@@ -2,16 +2,20 @@
 id: "kb-2026-00465"
 
 
+
 title: "Renaissance Science"
 schema_type: "TechArticle"
+
 
 
 category: "history"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2002
     url: "https://www.penguinrandomhouse.com/books/292021/the-scientists-by-john-gribbin/"
+
 
     institution: "Random House"
 secondary_sources:
@@ -31,8 +37,10 @@ secondary_sources:
     type: "book"
 
 
+
     year: 1860
     url: "https://www.britannica.com/topic/The-Civilization-of-the-Renaissance-in-Italy"
+
 
     institution: "Jacob Burckhardt"
 atomic_facts:
@@ -46,6 +54,7 @@ completeness: 0.88
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "Statistics and data cited are from 2002 and earlier; more recent data may have become available since publication"

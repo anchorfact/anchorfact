@@ -2,20 +2,25 @@
 id: "kb-2026-00019"
 
 
+
 title: "GraphRAG (Microsoft)"
 schema_type: "TechArticle"
+
 
 
 category: "ai"
 language: "en"
 
 
+
 confidence: "high"
 confidence_rationale: "Based on the official Microsoft GraphRAG project page, GitHub repository (33,157 stars), and published timeline"
 
 
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
 
 
 ai_models: ["claude-opus"]
@@ -25,14 +30,17 @@ primary_sources:
     type: "project_page"
 
 
+
     url: "https://www.microsoft.com/en-us/research/project/graphrag/"
     institution: "Microsoft Research"
   - title: "GraphRAG GitHub Repository"
     type: "repository"
 
 
+
     url: "https://github.com/microsoft/graphrag"
     institution: "Microsoft"
+
 
 
     stars: 33157
@@ -52,8 +60,10 @@ primary_sources:
     type: "academic_paper"
 
 
+
     year: 2024
     url: "https://www.microsoft.com/en-us/research/publication/from-local-to-global-a-graph-rag-approach-to-query-focused-summarization/"
+
 
     institution: "Microsoft Research"
 secondary_sources:
@@ -62,12 +72,15 @@ secondary_sources:
     type: "academic_paper"
 
 
+
     year: 2020
     doi: "10.48550/arXiv.2005.11401"
 
 
+
     url: "https://arxiv.org/abs/2005.11401"
     institution: "arXiv"
+
 
 atomic_facts:
   - id: fact-ai-01
@@ -85,6 +98,7 @@ atomic_facts:
   - id: fact-ai-03
     statement: "Knowledge Graph Construction: Entities become nodes, relationships become edges 3"
 
+
     source_title: GraphRAG — Microsoft Research Project Page
     source_url: https://www.microsoft.com/en-us/research/project/graphrag/
     confidence: medium
@@ -93,6 +107,7 @@ completeness: 0.90
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"

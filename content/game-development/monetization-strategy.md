@@ -2,20 +2,25 @@
 id: "kb-gd-023"
 
 
+
 title: "游戏商业化策略（Monetization Strategy）"
 schema_type: "TechArticle"
+
 
 
 category: "game-development"
 language: "zh"
 
 
+
 confidence: "high"
 confidence_rationale: "游戏开发领域系统性知识，基于行业标准和实践经验"
 
 
+
 last_verified: "2026-04-28"
 generation_method: "human_only"
+
 
 
 derived_from_human_seed: true
@@ -23,13 +28,16 @@ tags: ["monetization", "f2p", "business", "game-design"]
 summary: "游戏商业化策略：F2P模式、Battle Pass、订阅制、广告变现、付费深度设计"
 
 
+
 primary_sources:
   - title: "游戏开发Wiki（个人知识库）"
     type: "knowledge_base"
 
 
+
     year: 2026
     note: "基于行业实践和标准参考文献的系统性整理"
+
 
 
 secondary_sources:
@@ -37,14 +45,20 @@ secondary_sources:
     type: "conference"
 
 
+
     year: 2026
     url: "https://www.gdconf.com/"
+
 
     institution: "GDC"
 completeness: 0.85
 known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The ethics of free-to-play monetization and loot boxes are contested: critics compare mechanics to gambling, while industry defenders argue they enable wider access to games without upfront costs"
+    context: "See primary sources for competing interpretations"
+
 related_entities:
   - "entity:game-development"
 ai_citations:

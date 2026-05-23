@@ -2,16 +2,20 @@
 id: "kb-2026-00437"
 
 
+
 title: "Lean Manufacturing"
 schema_type: "TechArticle"
+
 
 
 category: "business"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 1990
     url: "https://www.simonandschuster.com/books/The-Machine-That-Changed-the-World/James-P-Womack/9780743299794"
+
 
     institution: "Free Press"
 secondary_sources:
@@ -31,14 +37,20 @@ secondary_sources:
     type: "book"
 
 
+
     year: 1984
     url: "https://www.northriverpress.com/the-goal/"
+
 
     institution: "Eliyahu M. Goldratt, North River Press"
 completeness: 0.88
 known_gaps:
   - "Statistics and data cited are from 1990 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

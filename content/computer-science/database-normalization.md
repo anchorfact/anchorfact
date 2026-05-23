@@ -2,16 +2,20 @@
 id: "kb-2026-00243"
 
 
+
 title: "Database Normalization"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -22,6 +26,10 @@ derived_from_human_seed: true
 known_gaps:
   - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
 
+disputed_statements:
+  - statement: "The NoSQL vs. SQL debate has evolved: while NoSQL offered horizontal scalability benefits, modern NewSQL systems (CockroachDB, Spanner) have narrowed the gap, and PostgreSQL's JSON support blurs the distinction"
+    context: "See primary sources for competing interpretations"
+
 atomic_facts:
   - id: fact-computer-science-01
     statement: Most databases target 3NF — enough to eliminate most anomalies while remaining practical
@@ -30,6 +38,7 @@ atomic_facts:
     confidence: medium
   - id: fact-computer-science-02
     statement: "2NF: non-key attributes depend on the whole primary key"
+
 
     source_title: ACM Digital Library
     source_url: https://dl.acm.org/
@@ -43,8 +52,10 @@ primary_sources:
     type: "repository"
 
 
+
     year: 2026
     url: "https://dl.acm.org/"
+
 
     institution: "ACM"
 secondary_sources:
@@ -52,8 +63,10 @@ secondary_sources:
     type: "repository"
 
 
+
     year: 2026
     url: "https://dl.acm.org/"
+
 
     institution: "ACM"
 ---

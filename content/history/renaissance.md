@@ -2,16 +2,20 @@
 id: "kb-2026-00325"
 
 
+
 title: "Renaissance"
 schema_type: "TechArticle"
+
 
 
 category: "history"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 1860
     url: "https://www.gutenberg.org/ebooks/2074"
+
 
     institution: "Project Gutenberg"
 secondary_sources:
@@ -32,14 +38,17 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2013
     url: "https://www.manning.com/books/redis-in-action"
+
 
     institution: "Manning"
 completeness: 0.88
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "Statistics and data cited are from 2013 and earlier; more recent data may have become available since publication"
@@ -49,8 +58,10 @@ ai_citations:
     type: "book"
 
 
+
     year: 1860
     url: "https://www.britannica.com/topic/The-Civilization-of-the-Renaissance-in-Italy"
+
 
     institution: "Jacob Burckhardt"
 ---

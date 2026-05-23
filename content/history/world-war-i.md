@@ -2,16 +2,20 @@
 id: "kb-2026-00358"
 
 
+
 title: "World War I"
 schema_type: "TechArticle"
+
 
 
 category: "history"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 1962
     url: "https://www.penguinrandomhouse.com/books/56337/the-guns-of-august-by-barbara-w-tuchman/"
+
 
     institution: "Macmillan"
 secondary_sources:
@@ -31,16 +37,20 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2012
     url: "https://www.antonybeevor.com/books/the-second-world-war/"
+
 
     institution: "Antony Beevor, Weidenfeld & Nicolson"
   - title: "The Rise and Fall of the Third Reich"
     type: "book"
 
 
+
     year: 1960
     url: "https://www.simonandschuster.com/books/The-Rise-and-Fall-of-the-Third-Reich/William-L-Shirer/9781451651683"
+
 
     institution: "William L. Shirer, Simon & Schuster"
 atomic_facts:
@@ -51,6 +61,7 @@ atomic_facts:
     confidence: high
   - id: fact-history-02
     statement: "Trigger: assassination of Archduke Franz Ferdinand"
+
 
     source_title: The Guns of August (Barbara Tuchman)
     source_url: https://www.penguinrandomhouse.com/books/56337/the-guns-of-august-by-barbara-w-tuchman/
@@ -65,6 +76,7 @@ completeness: 0.88
 disputed_statements:
   - statement: "Historians disagree on whether the Cold War was primarily an ideological struggle, a geopolitical power contest, or both; interpretations vary across revisionist, post-revisionist, and orthodox schools"
     confidence: "medium"
+
 
 known_gaps:
   - "Statistics and data cited are from 2012 and earlier; more recent data may have become available since publication"

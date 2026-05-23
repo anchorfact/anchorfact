@@ -2,16 +2,20 @@
 id: "kb-2026-00278"
 
 
+
 title: "Federated Learning"
 schema_type: "TechArticle"
+
 
 
 category: "ai"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -22,12 +26,15 @@ primary_sources:
     type: "academic_paper"
 
 
+
     year: 2017
     doi: "10.48550/arXiv.1602.05629"
 
 
+
     url: "https://arxiv.org/abs/1602.05629"
     institution: "Google"
+
 
 
     note: "The original Federated Learning paper (FedAvg). Published at AISTATS 2017. 15,000+ citations."
@@ -37,12 +44,15 @@ secondary_sources:
     type: "survey_paper"
 
 
+
     year: 2021
     doi: "10.48550/arXiv.1912.04977"
 
 
+
     url: "https://arxiv.org/abs/1912.04977"
     institution: "Foundations and Trends in ML"
+
 
 
     note: "Comprehensive survey. 5,000+ citations. Covers privacy, robustness, and fairness in FL."
@@ -50,6 +60,7 @@ completeness: 0.88
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "Statistics and data cited are from 2021 and earlier; more recent data may have become available since publication"

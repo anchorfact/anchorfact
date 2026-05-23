@@ -2,16 +2,20 @@
 id: "kb-2026-00436"
 
 
+
 title: "Time Value of Money"
 schema_type: "TechArticle"
+
 
 
 category: "business"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2022
     url: "https://www.mheducation.com/highered/product/principles-corporate-finance-brealey-myers/M9781264080946.html"
+
 
     institution: "McGraw-Hill"
 secondary_sources:
@@ -31,16 +37,20 @@ secondary_sources:
     type: "journal"
 
 
+
     year: 2025
     url: "https://hbr.org/"
+
 
     institution: "Harvard Business Publishing"
   - title: "The Economist"
     type: "periodical"
 
 
+
     year: 2025
     url: "https://www.economist.com/"
+
 
     institution: "The Economist Group"
 atomic_facts:

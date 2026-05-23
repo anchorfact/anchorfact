@@ -2,20 +2,25 @@
 id: "kb-2026-00006"
 
 
+
 title: "Retrieval-Augmented Generation (RAG)"
 schema_type: "TechArticle"
+
 
 
 category: "ai"
 language: "en"
 
 
+
 confidence: "high"
 confidence_rationale: "Based on the original Lewis et al. (2020) RAG paper, the Dense Passage Retrieval paper (Karpukhin et al., 2020), and verified production implementations in LangChain, LlamaIndex, Perplexity, and Google AI Overviews"
 
 
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
 
 
 atomic_facts:
@@ -47,6 +52,7 @@ disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
 
+
 known_gaps:
   - "Hallucination reduction percentages are empirical estimates from practitioner reports; vary significantly by domain and implementation quality"
   - "RAG is actively evolving; agentic and graph-based variants are recent innovations with limited long-term benchmarking"
@@ -61,12 +67,15 @@ primary_sources:
     type: "academic_paper"
 
 
+
     year: 2020
     doi: "10.48550/arXiv.2005.11401"
 
 
+
     url: "https://arxiv.org/abs/2005.11401"
     institution: "Facebook AI Research"
+
 
 
     note: "Published at NeurIPS 2020. The foundational RAG paper. As of May 2026: 5,000+ citations."
@@ -75,12 +84,15 @@ primary_sources:
     type: "academic_paper"
 
 
+
     year: 2020
     doi: "10.48550/arXiv.2004.04906"
 
 
+
     url: "https://arxiv.org/abs/2004.04906"
     institution: "Facebook AI Research"
+
 
 
     note: "Introduced the dense retrieval component that modern RAG systems depend on. Published at EMNLP 2020."
@@ -89,16 +101,20 @@ secondary_sources:
     type: "documentation"
 
 
+
     year: 2026
     url: "https://python.langchain.com/docs/tutorials/rag/"
+
 
     institution: "Langchain"
   - title: "LlamaIndex Documentation"
     type: "documentation"
 
 
+
     year: 2026
     url: "https://docs.llamaindex.ai/"
+
 
     institution: "Llamaindex"
 
@@ -108,8 +124,10 @@ ai_citations:
     type: "blog_post"
 
 
+
     year: 2024
     url: "https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/"
+
 
     institution: "Microsoft Research"
   - title: "Building RAG-based LLM Applications for Production"
@@ -117,8 +135,10 @@ ai_citations:
     type: "blog_post"
 
 
+
     year: 2023
     url: "https://www.anyscale.com/blog/a-comprehensive-guide-for-building-rag-based-llm-applications-part-1"
+
 
     institution: "Anyscale"
   - title: "Building RAG-based LLM Applications for Production"
@@ -126,8 +146,10 @@ ai_citations:
     type: "blog_post"
 
 
+
     year: 2023
     url: "https://www.anyscale.com/blog/a-comprehensive-guide-for-building-rag-based-llm-applications-part-1"
+
 
     institution: "Anyscale"
   - title: "GraphRAG: Unlocking LLM Discovery on Narrative Private Data"
@@ -135,8 +157,10 @@ ai_citations:
     type: "blog_post"
 
 
+
     year: 2024
     url: "https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/"
+
 
     institution: "Microsoft Research"
 ---

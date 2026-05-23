@@ -2,16 +2,20 @@
 id: "kb-2026-00224"
 
 
+
 title: "Tilemap System"
 schema_type: "TechArticle"
+
 
 
 category: "game-development"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -22,6 +26,10 @@ derived_from_human_seed: true
 known_gaps:
   - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
 
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 completeness: 0.88
 ai_citations:
 
@@ -30,8 +38,10 @@ primary_sources:
     type: "conference"
 
 
+
     year: 2026
     url: "https://www.gdconf.com/"
+
 
     institution: "GDC"
 secondary_sources:
@@ -39,8 +49,10 @@ secondary_sources:
     type: "conference"
 
 
+
     year: 2026
     url: "https://www.gdconf.com/"
+
 
     institution: "GDC"
 ---

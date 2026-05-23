@@ -2,20 +2,25 @@
 id: "kb-2026-00009"
 
 
+
 title: "Diffusion Models"
 schema_type: "TechArticle"
+
 
 
 category: "ai"
 language: "en"
 
 
+
 confidence: "high"
 confidence_rationale: "Based on DDPM (Ho et al., 2020, 15,000+ citations), Stable Diffusion/LDM (Rombach et al., 2022), and Score-Based SDE (Song et al., 2021), all published at top ML venues (NeurIPS, CVPR)"
 
 
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
 
 
 atomic_facts:
@@ -39,6 +44,7 @@ disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
 
+
 known_gaps:
   - "DDIM, Consistency Models, and other sampling acceleration techniques deserve separate treatment"
 related_entities:
@@ -51,12 +57,15 @@ primary_sources:
     type: "academic_paper"
 
 
+
     year: 2020
     doi: "10.48550/arXiv.2006.11239"
 
 
+
     url: "https://arxiv.org/abs/2006.11239"
     institution: "UC Berkeley"
+
 
 
     note: "Published at NeurIPS 2020. As of May 2026: 15,000+ citations. The foundational paper that made diffusion models practical for image generation."
@@ -65,12 +74,15 @@ primary_sources:
     type: "academic_paper"
 
 
+
     year: 2022
     doi: "10.48550/arXiv.2112.10752"
 
 
+
     url: "https://arxiv.org/abs/2112.10752"
     institution: "LMU Munich / RunwayML"
+
 
 
     note: "Published at CVPR 2022. Made high-resolution diffusion practical by operating in compressed latent space. Foundation of Stable Diffusion."
@@ -79,12 +91,15 @@ primary_sources:
     type: "academic_paper"
 
 
+
     year: 2021
     doi: "10.48550/arXiv.2011.13456"
 
 
+
     url: "https://arxiv.org/abs/2011.13456"
     institution: "Stanford University / Google Brain"
+
 
 
     note: "Published at ICLR 2021. Unified DDPM and score-based models under the SDE framework, enabling faster sampling and likelihood computation."
@@ -93,8 +108,10 @@ secondary_sources:
     type: "technical_report"
 
 
+
     year: 2024
     url: "https://openai.com/index/sora/"
+
 
     institution: "OpenAI"
 ai_citations:
@@ -103,8 +120,10 @@ ai_citations:
     type: "blog_post"
 
 
+
     year: 2021
     url: "https://lilianweng.github.io/posts/2021-07-11-diffusion-models/"
+
 
     institution: "OpenAI"
   - title: "The Annotated Diffusion Model"
@@ -112,8 +131,10 @@ ai_citations:
     type: "blog_post"
 
 
+
     year: 2022
     url: "https://huggingface.co/blog/annotated-diffusion"
+
 
     institution: "Hugging Face"
   - title: "The Annotated Diffusion Model"
@@ -121,8 +142,10 @@ ai_citations:
     type: "blog_post"
 
 
+
     year: 2022
     url: "https://huggingface.co/blog/annotated-diffusion"
+
 
     institution: "Hugging Face"
   - title: "What are Diffusion Models?"
@@ -130,8 +153,10 @@ ai_citations:
     type: "blog_post"
 
 
+
     year: 2021
     url: "https://lilianweng.github.io/posts/2021-07-11-diffusion-models/"
+
 
     institution: "OpenAI"
 ---

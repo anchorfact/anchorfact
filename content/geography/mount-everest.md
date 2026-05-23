@@ -27,6 +27,12 @@ secondary_sources:
     url: "https://www.nationalgeographic.com/maps/atlas/"
     institution: "National Geographic"
 completeness: 0.88
+known_gaps:
+  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
+  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
 ai_citations:
   last_citation_check:"2026-05-22"
 ---
@@ -42,3 +48,13 @@ Death zone: above 8,000m, oxygen insufficient for human survival — even with s
 ## Further Reading
 
 - [Into Thin Air (Jon Krakauer)](https://www.penguinrandomhouse.com/books/306270/into-thin-air-by-jon-krakauer/)
+atomic_facts:
+  - id: "fact-geography-001"
+    statement: "Mount Everest (8,848.86m / 29,031.7ft) is Earth's highest mountain above sea level, on the Nepal-Tibet (China) border"
+    confidence: "medium"
+  - id: "fact-geography-002"
+    statement: "First ascent: Edmund Hillary and Tenzing Norgay (May 29, 1953)"
+    confidence: "medium"
+  - id: "fact-geography-003"
+    statement: "Traffic jams: 2019 photo of climbers queueing near summit sparked regulation debate"
+    confidence: "medium"

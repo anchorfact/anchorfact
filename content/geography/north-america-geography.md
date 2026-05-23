@@ -27,6 +27,12 @@ secondary_sources:
     url: "https://www.nationalgeographic.com/maps/atlas/"
     institution: "National Geographic"
 completeness: 0.88
+known_gaps:
+  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
+  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
 ai_citations:
   last_citation_check:"2026-05-22"
 ---
@@ -42,3 +48,13 @@ Rocky Mountains: 4,800 km from Canada to New Mexico. Mississippi-Missouri River:
 ## Further Reading
 
 - [North America: A Geography (Birdsall, Florin, Palka)](https://www.pearson.com/en-us/subject-catalog/p/north-america/P200000009517)
+atomic_facts:
+  - id: "fact-geography-001"
+    statement: "North America (24.7 million km²) is the 3rd largest continent"
+    confidence: "medium"
+  - id: "fact-geography-002"
+    statement: "23 countries, ~600 million people"
+    confidence: "medium"
+  - id: "fact-geography-003"
+    statement: "Great Lakes: Superior, Michigan, Huron, Erie, Ontario — 21% of world's surface fresh water"
+    confidence: "medium"

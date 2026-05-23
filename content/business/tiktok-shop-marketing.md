@@ -2,16 +2,20 @@
 id: "kb-2026-00211"
 
 
+
 title: "TikTok Shop Marketing"
 schema_type: "TechArticle"
+
 
 
 category: "business"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -21,6 +25,10 @@ derived_from_human_seed: true
 
 known_gaps:
   - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
+
+disputed_statements:
+  - statement: "The Efficient Market Hypothesis remains debated: behavioral economists cite persistent market anomalies, while proponents argue that anomalies either disappear after publication or reflect hidden risk factors"
+    context: "See primary sources for competing interpretations"
 
 atomic_facts:
   - id: fact-business-01
@@ -42,8 +50,10 @@ primary_sources:
     type: "journal"
 
 
+
     year: 2026
     url: "https://hbr.org/"
+
 
     institution: "Harvard Business Publishing"
 secondary_sources:
@@ -51,16 +61,20 @@ secondary_sources:
     type: "journal"
 
 
+
     year: 2026
     url: "https://hbr.org/"
+
 
     institution: "Harvard Business Publishing"
   - title: "Marketing Management"
     type: "book"
 
 
+
     year: 2015
     url: "https://www.pearson.com/en-us/subject-catalog/p/marketing-management/P200000009716"
+
 
     institution: "Philip Kotler, Pearson"
 ---

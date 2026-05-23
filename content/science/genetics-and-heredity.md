@@ -2,16 +2,20 @@
 id: "kb-2026-00366"
 
 
+
 title: "Genetics and Heredity"
 schema_type: "TechArticle"
+
 
 
 category: "science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2016
     url: "https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524"
+
 
     institution: "Scribner"
 secondary_sources:
@@ -31,14 +37,17 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2013
     url: "https://www.pearson.com/en-us/subject-catalog/p/molecular-biology-of-the-gene/P200000007006"
+
 
     institution: "James D. Watson et al., Pearson"
 atomic_facts:
   - id: fact-science-01
     statement: Human Genome Project sequenced all 3 billion base pairs
     source_title: "The Gene: An Intimate History (Siddhartha Mukherjee)"
+
 
     source_url: https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524
     confidence: high
@@ -48,6 +57,10 @@ known_gaps:
   - "Statistics and data cited are from 2016 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
   - "Climate and environmental data may have been updated by more recent IPCC or scientific assessments"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

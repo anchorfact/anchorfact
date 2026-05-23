@@ -2,16 +2,20 @@
 id: "kb-2026-00279"
 
 
+
 title: "Autoencoders"
 schema_type: "TechArticle"
+
 
 
 category: "ai"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -21,11 +25,14 @@ primary_sources:
     type: "book"
 
 
+
     year: 2016
     url: "https://www.deeplearningbook.org/"
 
+
     institution: "MIT Press"
     note: "Chapter 14: Autoencoders — the canonical reference"
+
 
 
 secondary_sources:
@@ -34,12 +41,15 @@ secondary_sources:
     type: "academic_paper"
 
 
+
     year: 2013
     doi: "10.48550/arXiv.1312.6114"
 
 
+
     url: "https://arxiv.org/abs/1312.6114"
     institution: "University of Amsterdam"
+
 
 
     note: "Introduced Variational Autoencoders — 30,000+ citations. Published at ICLR 2014."
@@ -61,6 +71,7 @@ completeness: 0.88
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "Statistics and data cited are from 2016 and earlier; more recent data may have become available since publication"

@@ -2,16 +2,20 @@
 id: "kb-2026-00280"
 
 
+
 title: "Feature Engineering"
 schema_type: "TechArticle"
+
 
 
 category: "ai"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -22,11 +26,14 @@ primary_sources:
     type: "book"
 
 
+
     year: 2018
     url: "https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/"
 
+
     institution: "O'Reilly"
     note: "Practical guide to feature engineering: encoding, binning, scaling, interaction features"
+
 
 
 secondary_sources:
@@ -34,11 +41,14 @@ secondary_sources:
     type: "documentation"
 
 
+
     year: 2026
     url: "https://scikit-learn.org/stable/modules/preprocessing.html"
 
+
     institution: "Inria"
     note: "Industry-standard feature preprocessing library: StandardScaler, OneHotEncoder, PolynomialFeatures"
+
 
 
 atomic_facts:
@@ -52,6 +62,7 @@ completeness: 0.88
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"

@@ -2,16 +2,20 @@
 id: "kb-2026-00357"
 
 
+
 title: "Mongol Empire"
 schema_type: "TechArticle"
+
 
 
 category: "history"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2004
     url: "https://www.penguinrandomhouse.com/books/164748/genghis-khan-and-the-making-of-the-modern-world-by-jack-weatherford/"
+
 
     institution: "Crown"
 secondary_sources:
@@ -31,14 +37,17 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2003
     url: "https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540"
+
 
     institution: "Niall Ferguson, Penguin"
 atomic_facts:
   - id: fact-history-01
     statement: The Mongol Empire was the largest contiguous land empire in history
     source_title: "Empire: How Britain Made the Modern World"
+
 
     source_url: https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540
     confidence: high
@@ -52,6 +61,10 @@ completeness: 0.88
 known_gaps:
   - "Statistics and data cited are from 2004 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The economic impact of colonialism on colonized regions is deeply contested: some economic historians detect developmental benefits, while dependency theorists emphasize systematic extraction and structural underdevelopment"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

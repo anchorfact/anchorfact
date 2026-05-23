@@ -2,16 +2,20 @@
 id: "kb-2026-00401"
 
 
+
 title: "Colonialism"
 schema_type: "TechArticle"
+
 
 
 category: "history"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 1991
     url: "https://www.harpercollins.com/products/the-scramble-for-africa-thomas-pakenham"
+
 
     institution: "HarperCollins"
 secondary_sources:
@@ -31,19 +37,23 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2003
     url: "https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540"
+
 
     institution: "Niall Ferguson, Penguin"
 atomic_facts:
   - id: fact-history-01
     statement: "Decolonization: 1945-1975, 80 former colonies gained independence"
 
+
     source_title: The Scramble for Africa (Thomas Pakenham)
     source_url: https://www.harpercollins.com/products/the-scramble-for-africa-thomas-pakenham
     confidence: high
   - id: fact-history-02
     statement: "Berlin Conference: 'Scramble for Africa' — by 1914, only Ethiopia and Liberia remained independent"
+
 
     source_title: The Scramble for Africa (Thomas Pakenham)
     source_url: https://www.harpercollins.com/products/the-scramble-for-africa-thomas-pakenham
@@ -53,6 +63,7 @@ completeness: 0.88
 disputed_statements:
   - statement: "The economic impact of colonialism on colonized regions is contested among economic historians; views range from extractive exploitation models to more nuanced assessments of institutional legacy"
     confidence: "medium"
+
 
 known_gaps:
   - "Statistics and data cited are from 2003 and earlier; more recent data may have become available since publication"

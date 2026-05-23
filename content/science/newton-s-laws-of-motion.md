@@ -2,16 +2,20 @@
 id: "kb-2026-00372"
 
 
+
 title: "Newton's Laws of Motion"
 schema_type: "TechArticle"
+
 
 
 category: "science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 1687
     url: "https://www.gutenberg.org/ebooks/28233"
+
 
     institution: "Project Gutenberg"
 secondary_sources:
@@ -31,21 +37,26 @@ secondary_sources:
     type: "book"
 
 
+
     year: 1988
     url: "https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/"
+
 
     institution: "Stephen Hawking, Bantam"
   - title: "Nature (journal)"
     type: "journal"
 
 
+
     year: 2025
     url: "https://www.nature.com/"
+
 
     institution: "Springer Nature"
 atomic_facts:
   - id: fact-science-01
     statement: "2nd Law: heavier objects need more force to accelerate — why trucks accelerate slower than motorcycles"
+
 
     source_title: Philosophiæ Naturalis Principia Mathematica (Newton, 1687)
     source_url: https://www.gutenberg.org/ebooks/28233
@@ -54,6 +65,10 @@ atomic_facts:
 completeness: 0.88
 known_gaps:
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

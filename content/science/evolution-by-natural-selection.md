@@ -2,16 +2,20 @@
 id: "kb-2026-00331"
 
 
+
 title: "Evolution by Natural Selection"
 schema_type: "TechArticle"
+
 
 
 category: "science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 1859
     url: "https://www.gutenberg.org/ebooks/1228"
+
 
     institution: "John Murray"
 secondary_sources:
@@ -31,16 +37,20 @@ secondary_sources:
     type: "book"
 
 
+
     year: 1859
     url: "https://www.gutenberg.org/ebooks/1228"
+
 
     institution: "Charles Darwin, John Murray"
   - title: "The Selfish Gene"
     type: "book"
 
 
+
     year: 1976
     url: "https://global.oup.com/academic/product/the-selfish-gene-9780198788607"
+
 
     institution: "Richard Dawkins, Oxford University Press"
 atomic_facts:
@@ -55,6 +65,10 @@ known_gaps:
   - "Statistics and data cited are from 1976 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
   - "Climate and environmental data may have been updated by more recent IPCC or scientific assessments"
+disputed_statements:
+  - statement: "The relative importance of natural selection versus genetic drift in driving evolutionary change is debated within the Modern Evolutionary Synthesis, with neutral theory proponents emphasizing stochastic processes"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

@@ -22,6 +22,12 @@ secondary_sources:
     url: "https://www.simonandschuster.com/books/How-to-Win-Friends-and-Influence-People/Dale-Carnegie/9780671027032"
     institution: "Dale Carnegie, Simon & Schuster"
 completeness: 0.88
+known_gaps:
+  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
+  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
 ai_citations:
   last_citation_check:"2026-05-22"
 ---
@@ -37,3 +43,13 @@ Effective communication is the #1 skill for career and relationship success. Key
 ## Further Reading
 
 - [Crucial Conversations (Patterson et al.)](https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html)
+atomic_facts:
+  - id: "fact-self-improvement-001"
+    statement: "Effective communication is the 1 skill for career and relationship success"
+    confidence: "medium"
+  - id: "fact-self-improvement-002"
+    statement: "Key elements: clarity (be specific), active listening (hear before responding), non-verbal awareness (body language is 55% of communication — Mehrabian), empathy, and adapting to audience"
+    confidence: "medium"
+  - id: "fact-self-improvement-003"
+    statement: "'I' statements: 'I feel X when Y because 7-38-55 rule (Mehrabian): words 7%, tone 38%, body language 55% — but only for emotional/attitudinal communication"
+    confidence: "medium"

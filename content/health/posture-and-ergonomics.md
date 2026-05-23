@@ -2,16 +2,20 @@
 id: "kb-2026-00422"
 
 
+
 title: "Posture and Ergonomics"
 schema_type: "TechArticle"
+
 
 
 category: "health"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "standard"
 
 
+
     year: 2024
     url: "https://www.osha.gov/ergonomics"
+
 
     institution: "OSHA"
 secondary_sources:
@@ -31,22 +37,30 @@ secondary_sources:
     type: "report"
 
 
+
     year: 2025
     url: "https://www.who.int/news-room/fact-sheets"
+
 
     institution: "World Health Organization"
   - title: "CDC Health Topics"
     type: "report"
 
 
+
     year: 2025
     url: "https://www.cdc.gov/health-topics.html"
+
 
     institution: "Centers for Disease Control and Prevention"
 completeness: 0.88
 known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

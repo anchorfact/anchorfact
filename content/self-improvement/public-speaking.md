@@ -22,6 +22,12 @@ secondary_sources:
     url: "https://www.simonandschuster.com/books/How-to-Win-Friends-and-Influence-People/Dale-Carnegie/9780671027032"
     institution: "Dale Carnegie, Simon & Schuster"
 completeness: 0.88
+known_gaps:
+  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
+  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
 ai_citations:
   last_citation_check:"2026-05-22"
 ---
@@ -37,3 +43,7 @@ Structure: tell them what you'll say (intro), say it (body), tell them what you 
 ## Further Reading
 
 - [The Art of Public Speaking (Stephen Lucas, 13th Ed)](https://www.mheducation.com/highered/product/art-public-speaking-lucas/M9781259924606.html)
+atomic_facts:
+  - id: "fact-self-improvement-001"
+    statement: "Public speaking is one of the most common fears (glossophobia) — yet also one of the most valuable skills"
+    confidence: "medium"

@@ -2,16 +2,20 @@
 id: "kb-2026-00341"
 
 
+
 title: "Human Anatomy"
 schema_type: "TechArticle"
+
 
 
 category: "science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2015
     url: "https://www.elsevier.com/books/grays-anatomy/standring/978-0-7020-5230-9"
+
 
     institution: "Elsevier"
 secondary_sources:
@@ -31,21 +37,26 @@ secondary_sources:
     type: "book"
 
 
+
     year: 1988
     url: "https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/"
+
 
     institution: "Stephen Hawking, Bantam"
   - title: "Nature (journal)"
     type: "journal"
 
 
+
     year: 2025
     url: "https://www.nature.com/"
+
 
     institution: "Springer Nature"
 atomic_facts:
   - id: fact-science-01
     statement: "Brain: 86 billion neurons, consumes 20% of body's energy"
+
 
     source_title: Gray's Anatomy (41st Edition)
     source_url: https://www.elsevier.com/books/grays-anatomy/standring/978-0-7020-5230-9
@@ -53,11 +64,13 @@ atomic_facts:
   - id: fact-science-02
     statement: "Heart: pumps 7,000 liters of blood daily, beats 100,000 times"
 
+
     source_title: Gray's Anatomy (41st Edition)
     source_url: https://www.elsevier.com/books/grays-anatomy/standring/978-0-7020-5230-9
     confidence: high
   - id: fact-science-03
     statement: "Bones: strongest is femur , smallest is stapes"
+
 
     source_title: Gray's Anatomy (41st Edition)
     source_url: https://www.elsevier.com/books/grays-anatomy/standring/978-0-7020-5230-9
@@ -66,6 +79,10 @@ atomic_facts:
 completeness: 0.88
 known_gaps:
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

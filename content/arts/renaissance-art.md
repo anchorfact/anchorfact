@@ -2,16 +2,20 @@
 id: "kb-2026-00342"
 
 
+
 title: "Renaissance Art"
 schema_type: "TechArticle"
+
 
 
 category: "arts"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 1950
     url: "https://www.phaidon.com/store/art/the-story-of-art-pocket-edition-9780714872216/"
+
 
     institution: "Phaidon Press"
 secondary_sources:
@@ -31,14 +37,17 @@ secondary_sources:
     type: "book"
 
 
+
     year: 1950
     url: "https://www.phaidon.com/store/art/the-story-of-art-9780714832470/"
+
 
     institution: "E.H. Gombrich, Phaidon"
 completeness: 0.88
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "Statistics and data cited are from 1950 and earlier; more recent data may have become available since publication"

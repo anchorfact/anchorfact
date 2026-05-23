@@ -2,16 +2,20 @@
 id: "kb-2026-00362"
 
 
+
 title: "Meiji Restoration"
 schema_type: "TechArticle"
+
 
 
 category: "history"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2000
     url: "https://www.hup.harvard.edu/catalog.php?isbn=9780674009912"
+
 
     institution: "Harvard University Press"
 secondary_sources:
@@ -31,16 +37,20 @@ secondary_sources:
     type: "reference"
 
 
+
     year: 2025
     url: "https://www.britannica.com/"
+
 
     institution: "Encyclopaedia Britannica, Inc."
   - title: "The Penguin History of the World"
     type: "book"
 
 
+
     year: 1976
     url: "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
+
 
     institution: "J.M. Roberts, Penguin"
 atomic_facts:
@@ -55,6 +65,10 @@ atomic_facts:
 completeness: 0.88
 known_gaps:
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

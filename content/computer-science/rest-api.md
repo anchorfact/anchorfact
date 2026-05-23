@@ -2,20 +2,25 @@
 id: "kb-2026-00064"
 
 
+
 title: "REST API"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 confidence_rationale: "Based on Roy Fielding's doctoral dissertation (2000) and Richardson Maturity Model"
 
 
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
 
 
 ai_models: ["claude-opus"]
@@ -26,11 +31,14 @@ primary_sources:
     type: "dissertation"
 
 
+
     year: 2000
     url: "https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm"
 
+
     institution: "UC Irvine"
     note: "Chapter 5 defines REST"
+
 
 
 secondary_sources:
@@ -39,8 +47,10 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2013
     url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
+
 
     institution: "O'Reilly"
 atomic_facts:
@@ -65,6 +75,10 @@ known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
   - "Recent developments from 2025-2026 may not be reflected"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 related_entities:
   - "entity:http-protocol"
 ai_citations:

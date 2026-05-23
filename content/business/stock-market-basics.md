@@ -2,16 +2,20 @@
 id: "kb-2026-00429"
 
 
+
 title: "Stock Market Basics"
 schema_type: "TechArticle"
+
 
 
 category: "business"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,14 +26,17 @@ primary_sources:
     type: "book"
 
 
+
     year: 2023
     url: "https://wwnorton.com/books/9781324035466"
+
 
     institution: "W. W. Norton"
 secondary_sources:
 atomic_facts:
   - id: fact-business-01
     statement: "Efficient Market Hypothesis : prices reflect all available info — you can't consistently beat the market"
+
 
     source_title: A Random Walk Down Wall Street (Malkiel, 13th Ed)
     source_url: https://wwnorton.com/books/9781324035466
@@ -38,13 +45,19 @@ atomic_facts:
 known_gaps:
   - "Statistics and data cited are from 2023 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The Efficient Market Hypothesis remains debated: behavioral economists cite persistent market anomalies, while proponents argue that anomalies either disappear after publication or reflect hidden risk factors"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
   - title: "The Intelligent Investor"
     type: "book"
 
 
+
     year: 1949
     url: "https://www.harpercollins.com/products/the-intelligent-investor-benjamin-graham"
+
 
     institution: "Benjamin Graham, HarperBusiness"
 ---

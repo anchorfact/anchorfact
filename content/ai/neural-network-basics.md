@@ -2,16 +2,20 @@
 id: "kb-2026-00267"
 
 
+
 title: "Neural Network Basics"
 schema_type: "TechArticle"
+
 
 
 category: "ai"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -21,11 +25,14 @@ primary_sources:
     type: "book"
 
 
+
     year: 2016
     url: "https://www.deeplearningbook.org/"
 
+
     institution: "MIT Press"
     note: "Chapter 6: Deep Feedforward Networks — the canonical introduction to neural networks"
+
 
 
 secondary_sources:
@@ -34,16 +41,20 @@ secondary_sources:
     type: "academic_paper"
 
 
+
     year: 2012
     url: "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks"
+
 
     institution: "NeurIPS"
     note: "The paper that demonstrated neural networks at scale. 140,000+ citations."
 
 
+
 atomic_facts:
   - id: fact-ai-01
     statement: "Universal Approximation Theorem: a single hidden layer can approximate any continuous function"
+
 
     source_title: Deep Learning (Goodfellow, Bengio, Courville)
     source_url: https://www.deeplearningbook.org/
@@ -53,6 +64,7 @@ completeness: 0.88
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "Statistics and data cited are from 2016 and earlier; more recent data may have become available since publication"

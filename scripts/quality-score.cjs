@@ -32,18 +32,35 @@ const NOW = new Date();
 const SOURCE_TIER_SCORE = {
   'academic_paper':         10,  // S: peer-reviewed
   'peer_reviewed':          10,
+  'journal':                 9,  // Journal publication (near-academic)
+  'conference':              9,  // Conference proceedings
+  'survey_paper':           10,  // Literature survey / review
   'textbook':                8,  // A: authoritative textbook
+  'textbook':                8,
+  'reference':               7,  // Reference work
   'official_report':         7,  // B: government/org report
   'technical_report':        7,
+  'report':                  6,  // Generic report
   'standard':                8,  // Industry standard (IETF, ISO, etc.)
+  'rulebook':                7,  // Official rules / regulations
   'course_material':         6,  // University course
   'official_documentation':  7,
   'documentation':           6,
+  'repository':              5,  // Code repository / data source
+  'database':                5,  // Structured database
+  'data_source':             5,
   'technical_book':          8,
   'book':                    6,
+  'benchmark':               6,  // Benchmark dataset/paper
+  'framework':               5,  // Software framework
   'blog_post':               4,  // C: personal/company blog
   'tutorial':                4,
   'news_article':            4,
+  'announcement':            4,  // Official announcement
+  'article':                 4,  // Generic article
+  'comparison':              4,  // Comparison article
+  'tracker':                 4,  // Issue tracker
+  'periodical':              5,  // Periodical publication
   'encyclopedia':            3,  // D: tertiary source
   'website':                 3,
   'wiki':                    1,  // E: wiki (Wikipedia)
@@ -58,17 +75,35 @@ function parseFrontmatter(content) {
   let yamlStr = match[1]
     .replace(/^(\s*[\w_-]+):(\S)/gm, '$1: $2')
     .replace(/^(\s*-\s+\w[^:]*):(\S)/gm, '$1: $2');
-  // Deduplicate keys
+  // Deduplicate keys (skip list item interior — each `  - ` entry is independent)
   const seenKeys = new Set();
+  let inListEntry = false;
+  let listEntryKeys = new Set();
   const lines = yamlStr.split('\n');
   const deduped = [];
   for (let i = lines.length - 1; i >= 0; i--) {
     const line = lines[i];
+    // Track list item boundaries: reset listEntryKeys on each new `  - `
+    if (/^\s{2}- /.test(line)) {
+      listEntryKeys = new Set();
+      inListEntry = true;
+      deduped.unshift(line);
+      continue;
+    }
     const keyMatch = line.match(/^(\s*)([\w_-]+):/);
     if (keyMatch) {
-      const key = `${keyMatch[1].length}:${keyMatch[2]}`;
-      if (seenKeys.has(key)) continue;
-      seenKeys.add(key);
+      const indent = keyMatch[1].length;
+      const key = `${indent}:${keyMatch[2]}`;
+      if (inListEntry && indent >= 4) {
+        // Inside a list entry — dedup within this entry only
+        if (listEntryKeys.has(key)) continue;
+        listEntryKeys.add(key);
+      } else {
+        // Top-level or section-level — global dedup
+        if (indent <= 2) inListEntry = false;
+        if (seenKeys.has(key)) continue;
+        seenKeys.add(key);
+      }
     }
     deduped.unshift(line);
   }

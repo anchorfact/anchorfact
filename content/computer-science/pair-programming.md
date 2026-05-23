@@ -2,16 +2,20 @@
 id: "kb-2026-00238"
 
 
+
 title: "Pair Programming"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -22,6 +26,7 @@ derived_from_human_seed: true
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
@@ -34,8 +39,10 @@ primary_sources:
     type: "repository"
 
 
+
     year: 2026
     url: "https://dl.acm.org/"
+
 
     institution: "ACM"
 secondary_sources:
@@ -43,8 +50,10 @@ secondary_sources:
     type: "repository"
 
 
+
     year: 2026
     url: "https://dl.acm.org/"
+
 
     institution: "ACM"
 ---

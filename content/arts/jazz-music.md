@@ -2,16 +2,20 @@
 id: "kb-2026-00345"
 
 
+
 title: "Jazz Music"
 schema_type: "TechArticle"
+
 
 
 category: "arts"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,21 +26,29 @@ primary_sources:
     type: "book"
 
 
+
     year: 2009
     url: "https://wwnorton.com/books/9780393978803"
+
 
     institution: "W.W. Norton"
 secondary_sources:
 known_gaps:
   - "Statistics and data cited are from 2020 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist and expressionist accounts"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
   - title: "The Rest Is Noise: Listening to the Twentieth Century"
     type: "book"
 
 
+
     year: 2007
     url: "https://us.macmillan.com/books/9780312427719/therestisnoise"
+
 
     institution: "Alex Ross, Farrar, Straus and Giroux"
 ---

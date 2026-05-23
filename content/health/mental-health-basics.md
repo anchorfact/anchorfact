@@ -2,16 +2,20 @@
 id: "kb-2026-00377"
 
 
+
 title: "Mental Health Basics"
 schema_type: "TechArticle"
+
 
 
 category: "health"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "standard"
 
 
+
     year: 2022
     url: "https://www.psychiatry.org/psychiatrists/practice/dsm"
+
 
     institution: "American Psychiatric Association"
 secondary_sources:
@@ -31,19 +37,23 @@ secondary_sources:
     type: "report"
 
 
+
     year: 2025
     url: "https://www.nimh.nih.gov/health"
+
 
     institution: "National Institute of Mental Health (NIMH)"
 atomic_facts:
   - id: fact-health-01
     statement: "Depression: persistent sadness, loss of interest, fatigue — leading cause of disability worldwide"
 
+
     source_title: Diagnostic and Statistical Manual of Mental Disorders (DSM-5-TR)
     source_url: https://www.psychiatry.org/psychiatrists/practice/dsm
     confidence: medium
   - id: fact-health-02
     statement: "SSRIs: most prescribed antidepressants"
+
 
     source_title: Diagnostic and Statistical Manual of Mental Disorders (DSM-5-TR)
     source_url: https://www.psychiatry.org/psychiatrists/practice/dsm
@@ -53,6 +63,10 @@ completeness: 0.88
 known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The biomedical model of mental illness versus biopsychosocial and social-constructivist approaches represents a fundamental debate in psychiatry with significant treatment implications"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

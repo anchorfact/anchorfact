@@ -2,16 +2,20 @@
 id: "kb-2026-00281"
 
 
+
 title: "Data Preprocessing"
 schema_type: "TechArticle"
+
 
 
 category: "ai"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -21,11 +25,14 @@ primary_sources:
     type: "book"
 
 
+
     year: 2022
     url: "https://jakevdp.github.io/PythonDataScienceHandbook/"
 
+
     institution: "O'Reilly"
     note: "Comprehensive guide to data preprocessing with pandas, NumPy, and scikit-learn"
+
 
 
 secondary_sources:
@@ -33,17 +40,21 @@ secondary_sources:
     type: "documentation"
 
 
+
     year: 2026
     url: "https://scikit-learn.org/stable/modules/preprocessing.html"
 
+
     institution: "Inria"
     note: "Industry-standard preprocessing library documentation"
+
 
 
 completeness: 0.88
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"

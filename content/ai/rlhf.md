@@ -2,20 +2,25 @@
 id: "kb-2026-00007"
 
 
+
 title: "Reinforcement Learning from Human Feedback (RLHF)"
 schema_type: "TechArticle"
+
 
 
 category: "ai"
 language: "en"
 
 
+
 confidence: "high"
 confidence_rationale: "Based on the original Christiano et al. (2017) preference learning paper, the InstructGPT paper (Ouyang et al., 2022, NeurIPS), and the Anthropic alignment research that extended RLHF to production models"
 
 
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
 
 
 atomic_facts:
@@ -34,6 +39,7 @@ disputed_statements:
   - statement: "The effectiveness and scalability of RLHF as an alignment technique is debated, with alternatives like DPO (Direct Preference Optimization) and Constitutional AI showing competitive results"
     confidence: "medium"
 
+
 known_gaps:
   - "RLHF is under active development; DPO and related alternatives may significantly change the alignment landscape in coming years"
   - "The 'alignment tax' — performance regression on academic benchmarks — varies by implementation and model family"
@@ -47,12 +53,15 @@ primary_sources:
     type: "academic_paper"
 
 
+
     year: 2017
     doi: "10.48550/arXiv.1706.03741"
 
 
+
     url: "https://arxiv.org/abs/1706.03741"
     institution: "OpenAI / DeepMind"
+
 
 
     note: "Published at NeurIPS 2017. The foundational paper on learning reward functions from human pairwise comparisons. Applied to simulated robotics and Atari games."
@@ -61,12 +70,15 @@ primary_sources:
     type: "academic_paper"
 
 
+
     year: 2022
     doi: "10.48550/arXiv.2203.02155"
 
 
+
     url: "https://arxiv.org/abs/2203.02155"
     institution: "OpenAI"
+
 
 
     note: "Published at NeurIPS 2022. The paper that made RLHF the industry standard. Demonstrated that 1.3B InstructGPT was preferred over 175B GPT-3 by human raters."
@@ -76,12 +88,15 @@ secondary_sources:
     type: "academic_paper"
 
 
+
     year: 2022
     doi: "10.48550/arXiv.2212.08073"
 
 
+
     url: "https://arxiv.org/abs/2212.08073"
     institution: "Anthropic"
+
 
 
     note: "Extended RLHF by replacing human feedback with AI-generated feedback guided by explicit constitutional principles. Published 2022."
@@ -90,12 +105,15 @@ secondary_sources:
     type: "academic_paper"
 
 
+
     year: 2023
     doi: "10.48550/arXiv.2305.18290"
 
 
+
     url: "https://arxiv.org/abs/2305.18290"
     institution: "Stanford University"
+
 
 
     note: "Simplified alternative to RLHF that directly optimizes a policy from preference data without an explicit reward model. Published at NeurIPS 2023."
@@ -105,8 +123,10 @@ ai_citations:
     type: "blog_post"
 
 
+
     year: 2022
     url: "https://huggingface.co/blog/rlhf"
+
 
     institution: "Hugging Face"
   - title: "Illustrating Reinforcement Learning from Human Feedback (RLHF)"
@@ -114,8 +134,10 @@ ai_citations:
     type: "blog_post"
 
 
+
     year: 2022
     url: "https://huggingface.co/blog/rlhf"
+
 
     institution: "Hugging Face"
 ---

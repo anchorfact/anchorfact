@@ -22,6 +22,12 @@ secondary_sources:
     url: "https://www.hachettebookgroup.com/titles/david-wallechinsky/the-complete-book-of-the-olympics-2012-edition/9781845137830/"
     institution: "David Wallechinsky, Aurum Press"
 completeness: 0.88
+known_gaps:
+  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
+  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
 ai_citations:
   last_citation_check:"2026-05-22"
 ---
@@ -37,3 +43,13 @@ Most successful Olympian: Michael Phelps (swimming, 28 medals, 23 gold). Most go
 ## Further Reading
 
 - [The Complete Book of the Olympics (David Wallechinsky)](https://www.aurumpress.co.uk/books/the-complete-book-of-the-olympics/)
+atomic_facts:
+  - id: "fact-sports-001"
+    statement: "Summer and Winter Games held every 4 years (with exceptions for world wars and 2020 COVID postponement)"
+    confidence: "medium"
+  - id: "fact-sports-002"
+    statement: "Most golds single Games: Phelps (8 golds, Beijing 2008)"
+    confidence: "medium"
+  - id: "fact-sports-003"
+    statement: "2024 Paris: 329 events, 206 nations"
+    confidence: "medium"

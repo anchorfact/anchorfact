@@ -2,16 +2,20 @@
 id: "kb-2026-00161"
 
 
+
 title: "Serverless Computing"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -21,11 +25,14 @@ primary_sources:
     type: "documentation"
 
 
+
     year: 2026
     url: "https://docs.aws.amazon.com/lambda/"
 
+
     institution: "Amazon"
     note: "The service that launched serverless: event-driven, auto-scaling, pay-per-invocation, 15-min timeout"
+
 
 
 secondary_sources:
@@ -34,22 +41,27 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2017
     url: "https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/"
 
+
     institution: "O'Reilly"
     note: "Covers distributed systems patterns underlying serverless: statelessness, idempotency, eventual consistency"
+
 
 
 atomic_facts:
   - id: fact-computer-science-01
     statement: "AWS Lambda pioneered the model; others: Azure Functions, Google Cloud Functions, Cloudflare Workers"
 
+
     source_title: AWS Lambda Documentation
     source_url: https://docs.aws.amazon.com/lambda/
     confidence: medium
   - id: fact-computer-science-02
     statement: "Cold start: first invocation after idle period has latency penalty"
+
 
     source_title: AWS Lambda Documentation
     source_url: https://docs.aws.amazon.com/lambda/
@@ -59,6 +71,7 @@ completeness: 0.88
 disputed_statements:
   - statement: "The timeline for practical, fault-tolerant quantum computers remains uncertain; estimates range from 5 to 20+ years depending on qubit coherence and error correction breakthroughs"
     confidence: "medium"
+
 
 known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"

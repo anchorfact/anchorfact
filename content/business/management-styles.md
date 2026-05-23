@@ -2,16 +2,20 @@
 id: "kb-2026-00438"
 
 
+
 title: "Management Styles"
 schema_type: "TechArticle"
+
 
 
 category: "business"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2009
     url: "https://www.penguinrandomhouse.com/books/308034/drive-by-daniel-h-pink/"
+
 
     institution: "Riverhead Books"
 secondary_sources:
@@ -31,22 +37,30 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2001
     url: "https://www.harpercollins.com/products/good-to-great-jim-collins"
+
 
     institution: "Jim Collins, HarperBusiness"
   - title: "The Effective Executive"
     type: "book"
 
 
+
     year: 1967
     url: "https://www.harpercollins.com/products/the-effective-executive-peter-f-drucker"
+
 
     institution: "Peter F. Drucker, HarperBusiness"
 completeness: 0.88
 known_gaps:
   - "Statistics and data cited are from 2009 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

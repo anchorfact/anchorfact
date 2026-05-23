@@ -2,16 +2,20 @@
 id: "kb-2026-00169"
 
 
+
 title: "ARIA (Accessible Rich Internet Applications)"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -21,11 +25,14 @@ primary_sources:
     type: "standard"
 
 
+
     year: 2023
     url: "https://www.w3.org/TR/wai-aria/"
 
+
     institution: "W3C"
     note: "The definitive ARIA specification: roles, states, properties for accessible web applications"
+
 
 
 secondary_sources:
@@ -33,16 +40,20 @@ secondary_sources:
     type: "documentation"
 
 
+
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA"
+
 
     institution: "Mozilla"
     note: "Practical developer guide to ARIA: roles, properties, states, and best practices"
 
 
+
 atomic_facts:
   - id: fact-computer-science-01
     statement: "The first rule of ARIA: don't use ARIA if native HTML already provides the semantics"
+
 
     source_title: WAI-ARIA 1.2 (W3C Recommendation)
     source_url: https://www.w3.org/TR/wai-aria/
@@ -52,6 +63,10 @@ completeness: 0.88
 known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

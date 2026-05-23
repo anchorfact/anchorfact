@@ -22,6 +22,12 @@ secondary_sources:
     url: "https://oceanexplorer.noaa.gov/"
     institution: "National Oceanic and Atmospheric Administration"
 completeness: 0.88
+known_gaps:
+  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
+  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
 ai_citations:
   last_citation_check:"2026-05-22"
 ---
@@ -37,3 +43,10 @@ Major currents: Gulf Stream (warm, North Atlantic, moderates Europe's climate), 
 ## Further Reading
 
 - [NOAA Ocean Currents](https://oceanservice.noaa.gov/education/tutorial_currents/)
+atomic_facts:
+  - id: "fact-geography-001"
+    statement: "Ocean currents are continuous, directed movements of seawater driven by wind, temperature, salinity differences, and Earth's rotation (Coriolis effect)"
+    confidence: "medium"
+  - id: "fact-geography-002"
+    statement: "Deep ocean circulation (thermohaline) spans the globe — the 'global conveyor belt.' Major currents: Gulf Stream (warm, North Atlantic, moderates Europe's climate), Kuroshio (Pacific), Antarctic Circumpolar (largest, 130 million m³/s)"
+    confidence: "medium"

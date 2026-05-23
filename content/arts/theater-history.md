@@ -2,16 +2,20 @@
 id: "kb-2026-00494"
 
 
+
 title: "Theater History"
 schema_type: "TechArticle"
+
 
 
 category: "arts"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2016
     url: "https://www.cengage.com/c/the-essential-theatre-11e-brockett-ball/9781305411074/"
+
 
     institution: "Cengage"
 secondary_sources:
@@ -31,13 +37,19 @@ completeness: 0.88
 known_gaps:
   - "Statistics and data cited are from 2020 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist and expressionist accounts"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
   - title: "Shakespeare: The Invention of the Human"
     type: "book"
 
 
+
     year: 1998
     url: "https://www.penguinrandomhouse.com/books/93003/shakespeare-by-harold-bloom/"
+
 
     institution: "Harold Bloom, Riverhead Books"
 ---

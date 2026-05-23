@@ -2,20 +2,25 @@
 id: "kb-2026-00014"
 
 
+
 title: "Kubernetes (K8s)"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 confidence_rationale: "Based on Kubernetes documentation and Google's Borg paper"
 
 
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
 
 
 ai_models: ["claude-opus"]
@@ -25,8 +30,10 @@ primary_sources:
     type: "documentation"
 
 
+
     year: 2026
     url: "https://kubernetes.io/docs/"
+
 
     institution: "CNCF"
   - title: "Borg, Omega, and Kubernetes"
@@ -34,20 +41,25 @@ primary_sources:
     type: "academic_paper"
 
 
+
     year: 2016
     doi: "10.1145/2898442.2898444"
 
 
+
     url: "https://queue.acm.org/detail.cfm?id=2898444"
     institution: "ACM"
+
 
 secondary_sources:
   - title: "MDN Web Docs — HTTP"
     type: "documentation"
 
 
+
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+
 
     institution: "Mozilla"
 atomic_facts:
@@ -71,6 +83,10 @@ completeness: 0.85
 known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 related_entities:
   - "entity:docker"
   - "entity:cloud-computing"

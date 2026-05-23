@@ -2,16 +2,20 @@
 id: "kb-2026-00480"
 
 
+
 title: "Fashion History"
 schema_type: "TechArticle"
+
 
 
 category: "arts"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2012
     url: "https://www.dk.com/us/book/9780756698355-fashion/"
+
 
     institution: "DK Publishing"
 secondary_sources:
@@ -31,13 +37,16 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2012
     url: "https://www.dk.com/us/book/9780756698355-fashion/"
+
 
     institution: "DK / Smithsonian"
 atomic_facts:
   - id: fact-arts-01
     statement: "1947: Dior's 'New Look'"
+
 
     source_title: "Fashion: The Definitive History of Costume and Style (DK)"
     source_url: https://www.dk.com/us/book/9780756698355-fashion/
@@ -47,6 +56,10 @@ completeness: 0.88
 known_gaps:
   - "Statistics and data cited are from 2012 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist and expressionist accounts"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

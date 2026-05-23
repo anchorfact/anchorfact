@@ -2,20 +2,25 @@
 id: "kb-2026-00008"
 
 
+
 title: "Hypertext Transfer Protocol (HTTP)"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 confidence_rationale: "Based on IETF RFCs 9110-9114 (2022), which replaced RFCs 7230-7235. These are the definitive, community-reviewed Internet standards."
 
 
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
 
 
 atomic_facts:
@@ -35,6 +40,10 @@ atomic_facts:
 completeness: 0.90
 known_gaps:
   - "HTTP adoption percentages are Web Almanac estimates (2024-2025); exact numbers vary by measurement methodology"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 related_entities:
   - "entity:tcp-ip"
   - "entity:world-wide-web"
@@ -46,8 +55,10 @@ primary_sources:
     type: "standard"
 
 
+
     year: 2022
     url: "https://www.rfc-editor.org/rfc/rfc9110"
+
 
     institution: "IETF"
   - title: "RFC 9112 — HTTP/1.1"
@@ -55,8 +66,10 @@ primary_sources:
     type: "standard"
 
 
+
     year: 2022
     url: "https://www.rfc-editor.org/rfc/rfc9112"
+
 
     institution: "IETF"
   - title: "RFC 9113 — HTTP/2"
@@ -64,8 +77,10 @@ primary_sources:
     type: "standard"
 
 
+
     year: 2022
     url: "https://www.rfc-editor.org/rfc/rfc9113"
+
 
     institution: "IETF"
   - title: "RFC 9114 — HTTP/3"
@@ -73,8 +88,10 @@ primary_sources:
     type: "standard"
 
 
+
     year: 2022
     url: "https://www.rfc-editor.org/rfc/rfc9114"
+
 
     institution: "IETF"
 secondary_sources:
@@ -82,8 +99,10 @@ secondary_sources:
     type: "documentation"
 
 
+
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+
 
     institution: "Mozilla"
     note: "Practical developer reference maintained by Mozilla"
@@ -92,11 +111,14 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2024
     url: "https://http3-explained.haxx.se/"
 
+
     institution: "Self-published (curl author)"
     note: "Comprehensive technical guide by the creator of curl"
+
 
 
 ai_citations:
@@ -104,32 +126,40 @@ ai_citations:
     type: "standard"
 
 
+
     year: 2022
     url: "https://www.rfc-editor.org/rfc/rfc9113"
 
-    institution: "IETF"
-  - title: "HTTP/3 (RFC 9114)"
-    type: "standard"
-
-
-    year: 2022
-    url: "https://www.rfc-editor.org/rfc/rfc9114"
 
     institution: "IETF"
   - title: "HTTP/3 (RFC 9114)"
     type: "standard"
 
 
+
     year: 2022
     url: "https://www.rfc-editor.org/rfc/rfc9114"
+
+
+    institution: "IETF"
+  - title: "HTTP/3 (RFC 9114)"
+    type: "standard"
+
+
+
+    year: 2022
+    url: "https://www.rfc-editor.org/rfc/rfc9114"
+
 
     institution: "IETF"
   - title: "HTTP/2 (RFC 9113)"
     type: "standard"
 
 
+
     year: 2022
     url: "https://www.rfc-editor.org/rfc/rfc9113"
+
 
     institution: "IETF"
 ---

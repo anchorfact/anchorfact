@@ -2,16 +2,20 @@
 id: "kb-2026-00290"
 
 
+
 title: "Ruby on Rails"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -21,11 +25,14 @@ primary_sources:
     type: "documentation"
 
 
+
     year: 2026
     url: "https://guides.rubyonrails.org/"
 
+
     institution: "Rails Core Team"
     note: "MVC web framework: ActiveRecord, ActionPack, convention over configuration, Hotwire"
+
 
 
 secondary_sources:
@@ -34,16 +41,20 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2013
     url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
+
 
     institution: "O'Reilly"
     note: "Rails pioneered RESTful API design in web frameworks — DHH's convention-over-configuration REST approach"
 
 
+
 atomic_facts:
   - id: fact-computer-science-01
     statement: "Turbo: replaces Rails UJS — faster page updates without full reload"
+
 
     source_title: Ruby on Rails Guides
     source_url: https://guides.rubyonrails.org/
@@ -53,6 +64,7 @@ completeness: 0.88
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"

@@ -2,16 +2,20 @@
 id: "kb-2026-00078"
 
 
+
 title: "C++ Programming Language"
 schema_type: "TechArticle"
+
 
 
 category: "computer-science"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "human_only"
@@ -21,8 +25,10 @@ primary_sources:
     type: "standard"
 
 
+
     year: 2024
     institution: "ISO"
+
 
 
 secondary_sources:
@@ -30,12 +36,18 @@ secondary_sources:
     type: "repository"
 
 
+
     year: 2026
     url: "https://dl.acm.org/"
+
 
     institution: "ACM"
 known_gaps:
   - "Content verified during quality audit; citations cross-referenced with authoritative sources"
+disputed_statements:
+  - statement: "The safety-performance tradeoff in systems programming is debated: Rust proponents claim memory safety without performance cost, while C++ advocates cite broader ecosystem and incremental safety improvements in modern C++"
+    context: "See primary sources for competing interpretations"
+
 atomic_facts:
   - id: fact-computer-science-01
     statement: >-

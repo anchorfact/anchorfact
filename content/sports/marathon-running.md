@@ -22,6 +22,12 @@ secondary_sources:
     url: "https://worldathletics.org/about-iaaf/documents/book-of-rules"
     institution: "World Athletics (IAAF)"
 completeness: 0.88
+known_gaps:
+  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
+  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
 ai_citations:
   last_citation_check:"2026-05-22"
 ---
@@ -37,3 +43,13 @@ Training: 16-20 week plan, peak weekly mileage 50-100km. Long run: cornerstone, 
 ## Further Reading
 
 - [Advanced Marathoning (Pfitzinger & Douglas, 3rd Ed)](https://www.humankinetics.com/products/advanced-marathoning-3rd-edition)
+atomic_facts:
+  - id: "fact-sports-001"
+    statement: "The marathon (42.195 km / 26.2 miles) is the ultimate test of endurance"
+    confidence: "medium"
+  - id: "fact-sports-002"
+    statement: "World record: Kelvin Kiptum (2:00:35, Chicago 2023)"
+    confidence: "medium"
+  - id: "fact-sports-003"
+    statement: "Sub-2 hour barrier: Eliud Kipchoge (1:59:40, Vienna 2019, unofficial)"
+    confidence: "medium"

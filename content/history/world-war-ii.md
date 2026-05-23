@@ -2,16 +2,20 @@
 id: "kb-2026-00322"
 
 
+
 title: "World War II"
 schema_type: "TechArticle"
+
 
 
 category: "history"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "book"
 
 
+
     year: 2012
     url: "https://www.antonybeevor.com/books/the-second-world-war/"
+
 
     institution: "Weidenfeld & Nicolson"
 secondary_sources:
@@ -31,16 +37,20 @@ secondary_sources:
     type: "book"
 
 
+
     year: 2012
     url: "https://www.antonybeevor.com/books/the-second-world-war/"
+
 
     institution: "Antony Beevor, Weidenfeld & Nicolson"
   - title: "The Rise and Fall of the Third Reich"
     type: "book"
 
 
+
     year: 1960
     url: "https://www.simonandschuster.com/books/The-Rise-and-Fall-of-the-Third-Reich/William-L-Shirer/9781451651683"
+
 
     institution: "William L. Shirer, Simon & Schuster"
 atomic_facts:
@@ -59,6 +69,7 @@ atomic_facts:
   - id: fact-history-03
     statement: "Holocaust: systematic genocide of 6 million Jews"
 
+
     source_title: The Second World War (Antony Beevor)
     source_url: https://www.antonybeevor.com/books/the-second-world-war/
     confidence: high
@@ -67,6 +78,7 @@ completeness: 0.88
 disputed_statements:
   - statement: "Historians disagree on whether the Cold War was primarily an ideological struggle, a geopolitical power contest, or both; interpretations vary across revisionist, post-revisionist, and orthodox schools"
     confidence: "medium"
+
 
 known_gaps:
   - "Statistics and data cited are from 2012 and earlier; more recent data may have become available since publication"

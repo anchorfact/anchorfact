@@ -2,16 +2,20 @@
 id: "kb-2026-00419"
 
 
+
 title: "Hydration and Health"
 schema_type: "TechArticle"
+
 
 
 category: "health"
 language: "en"
 
 
+
 confidence: "high"
 last_verified: "2026-05-22"
+
 
 
 generation_method: "ai_assisted"
@@ -22,8 +26,10 @@ primary_sources:
     type: "standard"
 
 
+
     year: 2004
     url: "https://www.nap.edu/catalog/10925/dietary-reference-intakes-for-water-potassium-sodium-chloride-and-sulfate"
+
 
     institution: "National Academies Press"
 secondary_sources:
@@ -31,21 +37,26 @@ secondary_sources:
     type: "report"
 
 
+
     year: 2025
     url: "https://www.who.int/news-room/fact-sheets"
+
 
     institution: "World Health Organization"
   - title: "CDC Health Topics"
     type: "report"
 
 
+
     year: 2025
     url: "https://www.cdc.gov/health-topics.html"
+
 
     institution: "Centers for Disease Control and Prevention"
 atomic_facts:
   - id: fact-health-01
     statement: "bottled: no health difference in most developed countries"
+
 
     source_title: Dietary Reference Intakes for Water (IOM, 2004)
     source_url: https://www.nap.edu/catalog/10925/dietary-reference-intakes-for-water-potassium-sodium-chloride-and-sulfate
@@ -55,6 +66,10 @@ completeness: 0.88
 known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+    context: "See primary sources for competing interpretations"
+
 ai_citations:
 ---
 

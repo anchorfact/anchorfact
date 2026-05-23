@@ -2,26 +2,32 @@
 id: "kb-2026-00003"
 
 
+
 title: "BERT (Bidirectional Encoder Representations from Transformers)"
 schema_type: "TechArticle"
+
 
 
 category: "ai"
 language: "en"
 
 
+
 confidence: "high"
 confidence_rationale: "Based on the original Devlin et al. (2019) paper published at NAACL 2019, deposited on arXiv October 2018, with benchmark results verified against the official paper and the GLUE/SQuAD leaderboards"
+
 
 
 last_verified: "2026-05-22"
 generation_method: "human_only"
 
 
+
 atomic_facts:
   - id: fact-ai-01
     statement: BERT is a pre-trained language model introduced by Google AI Language in October 2018 and published at NAACL 2019
     source_title: "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+
 
     source_url: https://arxiv.org/abs/1810.04805
     source_doi: 10.48550/arXiv.1810.04805
@@ -32,12 +38,14 @@ atomic_facts:
       simultaneously through a Masked Language Modeling objective
     source_title: "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
 
+
     source_url: https://arxiv.org/abs/1810.04805
     source_doi: 10.48550/arXiv.1810.04805
     confidence: high
   - id: fact-ai-03
     statement: BERT established the "pre-train then fine-tune" paradigm that dominated NLP until the rise of generative models
     source_title: "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+
 
     source_url: https://arxiv.org/abs/1810.04805
     source_doi: 10.48550/arXiv.1810.04805
@@ -47,6 +55,7 @@ completeness: 0.92
 disputed_statements:
   - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
     confidence: "medium"
+
 
 known_gaps:
   - "BERT citation count (~100K+) is approximate; exact count varies across databases"
@@ -62,12 +71,15 @@ primary_sources:
     type: "academic_paper"
 
 
+
     year: 2019
     doi: "10.48550/arXiv.1810.04805"
 
 
+
     url: "https://arxiv.org/abs/1810.04805"
     institution: "Google AI Language"
+
 
 
     note: "Deposited on arXiv October 11, 2018; published at NAACL-HLT 2019. As of May 2026: 100,000+ citations on Google Scholar."
@@ -76,9 +88,11 @@ secondary_sources:
     type: "blog_post"
 
 
+
     author: "Alammar, Jay"
     year: 2018
     url: "https://jalammar.github.io/illustrated-bert/"
+
 
     institution: "Github"
 
@@ -88,12 +102,15 @@ secondary_sources:
     type: "academic_paper"
 
 
+
     year: 2019
     doi: "10.48550/arXiv.1907.11692"
 
 
+
     url: "https://arxiv.org/abs/1907.11692"
     institution: "Facebook AI / University of Washington"
+
 
 
     note: "Key follow-up paper that removed NSP, increased training data 10×, and achieved new SOTA"
