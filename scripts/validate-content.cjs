@@ -50,44 +50,7 @@ const REQUIRED_SECTIONS = [
 ];
 
 // ─── Helpers ───────────────────────────────────────────────────
-
-function parseFrontmatter(content) {
-  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
-  if (!match) return [null, 'No frontmatter found (expecting --- ... ---)'];
-  
-  // Normalize: fix "key:value" → "key: value" (common YAML formatting issue)
-  // Also handles list items: "- key:value" → "- key: value"
-  let yamlStr = match[1]
-    .replace(/^(\s*[\w_-]+):(\S)/gm, '$1: $2')        // top-level keys
-    .replace(/^(\s*-\s+\w[^:]*):(\S)/gm, '$1: $2');   // list item keys
-  
-  // Deduplicate keys: keep last occurrence (happens in batch-generated files)
-  const seenKeys = new Set();
-  const lines = yamlStr.split('\n');
-  const deduped = [];
-  for (let i = lines.length - 1; i >= 0; i--) {
-    const line = lines[i];
-    const keyMatch = line.match(/^(\s*)([\w_-]+):/);
-    if (keyMatch) {
-      const indent = keyMatch[1].length;
-      const key = `${indent}:${keyMatch[2]}`;
-      if (seenKeys.has(key)) continue; // skip duplicate
-      seenKeys.add(key);
-    }
-    deduped.unshift(line);
-  }
-  yamlStr = deduped.join('\n');
-
-  try {
-    const fm = yaml.load(yamlStr);
-    if (fm === null || typeof fm !== 'object') {
-      return [null, 'Frontmatter is empty or not a YAML object'];
-    }
-    return [fm, null];
-  } catch (e) {
-    return [null, `YAML parse error: ${e.message}`];
-  }
-}
+const { parseFrontmatter } = require('./lib/yaml-utils.cjs');
 
 function getSources(fm) {
   const sources = fm.primary_sources;

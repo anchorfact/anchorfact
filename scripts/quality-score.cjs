@@ -32,58 +32,7 @@ const NOW = new Date();
 const { SOURCE_TIER_SCORE } = require('./lib/tier-config.cjs');
 
 // ─── Helpers ────────────────────────────────────────────────────
-
-function parseFrontmatter(content) {
-  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
-  if (!match) return [null, 'No frontmatter'];
-  let yamlStr = match[1]
-    .replace(/^(\s*[\w_-]+):(\S)/gm, '$1: $2')
-    .replace(/^(\s*-\s+\w[^:]*):(\S)/gm, '$1: $2');
-  // Deduplicate keys (skip list item interior — each `  - ` entry is independent)
-  // Global dedup only for top-level keys (indent <= 2).
-  // List-item keys (indent >= 4) are deduped per-entry via listEntryKeys.
-  // This prevents cross-section pollution (e.g. secondary_sources fields
-  // blocking primary_sources fields with the same indent:key).
-  const seenTopKeys = new Set();
-  const lines = yamlStr.split('\n');
-  const deduped = [];
-  let inSection = false;   // true when inside source list (primary_sources, secondary_sources)
-  let entryKeys = new Set(); // per-entry dedup within current source section
-
-  for (let i = lines.length - 1; i >= 0; i--) {
-    const line = lines[i];
-    // Source list item marker: reset per-entry dedup
-    if (/^\s{2}- /.test(line)) {
-      entryKeys = new Set();
-      inSection = true;
-      deduped.unshift(line);
-      continue;
-    }
-    const keyMatch = line.match(/^(\s*)([\w_-]+):/);
-    if (keyMatch) {
-      const indent = keyMatch[1].length;
-      const key = `${indent}:${keyMatch[2]}`;
-      if (indent <= 2) {
-        // Top-level or section header — global dedup + exit section
-        inSection = false;
-        if (seenTopKeys.has(key)) continue;
-        seenTopKeys.add(key);
-      } else if (inSection) {
-        // Inside a source list entry — dedup within this entry only
-        if (entryKeys.has(key)) continue;
-        entryKeys.add(key);
-      }
-      // else: indent>=4 but NOT inSection — always keep (never globally dedup)
-    }
-    deduped.unshift(line);
-  }
-  try {
-    const fm = require('js-yaml').load(deduped.join('\n'));
-    return [fm && typeof fm === 'object' ? fm : null, null];
-  } catch (e) {
-    return [null, `YAML parse error: ${e.message}`];
-  }
-}
+const { parseFrontmatter } = require('./lib/yaml-utils.cjs');
 
 function getAllSources(fm) {
   const ps = Array.isArray(fm.primary_sources) ? fm.primary_sources : [];
