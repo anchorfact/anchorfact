@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00126",
   "headline": "Array Data Structure",
   "description": "An array is a contiguous block of memory storing elements of the same type, accessible by index in O(1) time. It is the most fundamental data structure. Dynamic arrays (JavaScript Array, C++ vector) use geometric expansion for amortized O(1) append.",
-  "dateCreated": "2026-05-22T09:02:12.217Z",
-  "dateModified": "2026-05-22T09:02:12.217Z",
+  "dateCreated": "2026-05-22T14:18:54.449Z",
+  "dateModified": "2026-05-22T14:18:54.449Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

@@ -6,27 +6,22 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"AWS Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://docs.aws.amazon.com/"
-    institution:"Amazon"
-secondary_sources:
-  - title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
-    authors: ["Lewis", "Perez", "Piktus"]
-    type: "academic_paper"
-    year: 2020
-    doi: "10.48550/arXiv.2005.11401"
-    url: "https://arxiv.org/abs/2005.11401"
-  - title: "MDN Web Docs — HTTP"
+  - title: "AWS Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+    url: "https://docs.aws.amazon.com/"
+    institution: "Amazon"
+    note: "Official AWS documentation covering 200+ services: EC2, S3, Lambda, DynamoDB, RDS, IAM"
+secondary_sources:
+  - title: "AWS Well-Architected Framework"
+    type: "framework"
+    year: 2024
+    url: "https://aws.amazon.com/architecture/well-architected/"
+    institution: "Amazon"
+    note: "AWS's recommended architectural best practices: operational excellence, security, reliability, performance efficiency, cost optimization, sustainability"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

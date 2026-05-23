@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00303",
   "headline": "PHP Language",
   "description": "PHP (Rasmus Lerdorf, 1994, originally Personal Home Page Tools) is a server-side scripting language powering 75%+ of websites with known server-side languages (WordPress, Wikipedia, Facebook). PHP 8.x (2020+) brought JIT compilation, union types, match expressions, named arguments, and fibers.",
-  "dateCreated": "2026-05-22T09:02:12.430Z",
-  "dateModified": "2026-05-22T09:02:12.430Z",
+  "dateCreated": "2026-05-22T14:18:54.685Z",
+  "dateModified": "2026-05-22T14:18:54.685Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

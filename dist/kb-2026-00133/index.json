@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00133",
   "headline": "QuickSort & MergeSort",
   "description": "QuickSort: average O(n log n), worst O(n²), in-place, not stable. Picks pivot, partitions, recurses. MergeSort: always O(n log n), stable, O(n) auxiliary space. Most practical sorts are hybrid (Timsort=merge+insertion).",
-  "dateCreated": "2026-05-22T09:02:12.448Z",
-  "dateModified": "2026-05-22T09:02:12.448Z",
+  "dateCreated": "2026-05-22T14:18:54.703Z",
+  "dateModified": "2026-05-22T14:18:54.703Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

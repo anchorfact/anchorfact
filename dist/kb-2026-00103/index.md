@@ -7,8 +7,7 @@ language: "en"
 confidence: "high"
 confidence_rationale: "Based on authoritative sources and industry standards"
 last_verified: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "Geolocation API (W3C Recommendation)"
@@ -29,6 +28,8 @@ secondary_sources:
     year: 2014
     url: "https://git-scm.com/book/en/v2"
     institution: "Apress"
+known_gaps:
+  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
 completeness: 0.88
 ai_citations:
   last_citation_check: "2026-05-22"

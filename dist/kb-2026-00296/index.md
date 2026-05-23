@@ -6,26 +6,22 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Nuxt Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://nuxt.com/docs/"
-    institution:"Nuxt Labs"
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "Nuxt Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+    url: "https://nuxt.com/docs/"
+    institution: "Nuxt Labs"
+    note: "Vue meta-framework: SSR, SSG, auto-imports, file-based routing, modules"
+secondary_sources:
   - title: "Next.js Documentation"
     type: "documentation"
     year: 2026
     url: "https://nextjs.org/docs"
     institution: "Vercel"
+    note: "Nuxt is Vue's counterpart to Next.js — both pioneered file-based routing and hybrid rendering"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

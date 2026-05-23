@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00276",
   "headline": "Overfitting and Regularization",
   "description": "Overfitting occurs when a model learns noise and patterns specific to training data, failing to generalize to unseen data. Signs: low training error, high validation error. Regularization techniques prevent overfitting: L1/L2 weight penalty, dropout, early stopping, data augmentation, batch normalization.",
-  "dateCreated": "2026-05-22T09:02:12.111Z",
-  "dateModified": "2026-05-22T09:02:12.111Z",
+  "dateCreated": "2026-05-22T14:18:54.334Z",
+  "dateModified": "2026-05-22T14:18:54.334Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00298",
   "headline": "Bun Runtime",
   "description": "Bun (Jarred Sumner, 2022) is an all-in-one JavaScript runtime, bundler, test runner, and package manager written in Zig. It aims to replace Node.js with dramatically faster performance (4x+ faster than Node in benchmarks). Uses JavaScriptCore (Safari's engine) instead of V8.",
-  "dateCreated": "2026-05-22T09:02:12.229Z",
-  "dateModified": "2026-05-22T09:02:12.229Z",
+  "dateCreated": "2026-05-22T14:18:54.463Z",
+  "dateModified": "2026-05-22T14:18:54.463Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

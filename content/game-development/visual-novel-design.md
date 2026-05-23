@@ -1,53 +1,48 @@
 ---
-id: kb-2026-00225
-title: Visual Novel Design
-schema_type: TechArticle
-category: game-development
-language: en
-confidence: high
+id: "kb-2026-00225"
+title: "Visual Novel Design"
+schema_type: "TechArticle"
+category: "game-development"
+language: "en"
+confidence: "high"
 last_verified: "2026-05-22"
-generation_method: human_only
-ai_models:
-  - claude-opus
+generation_method: "human_only"
+ai_models: ["claude-opus"]
 derived_from_human_seed: true
-known_gaps:
-  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
-disputed_statements:
-  - statement: >-
-      Narrative-versus-systems-driven game design is a fundamental debate: story-focused games emphasize authored emotional arcs, while systems-driven games prioritize emergent player-driven
-      experiences
-    context: See primary sources for competing interpretations
+
 atomic_facts:
-  - id: fact-game-development-01
-    statement: Writing quality is the primary success factor
-    source_title: GDC Vault
-    source_url: https://www.gdconf.com/
-    confidence: medium
-  - id: fact-game-development-02
+  - id: "fact-game-development-01"
+    statement: "Writing quality is the primary success factor"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-game-development-02"
     statement: "Popular examples: Doki Doki Literature Club, Ace Attorney, Steins;Gate"
-    source_title: GDC Vault
-    source_url: https://www.gdconf.com/
-    confidence: medium
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
 completeness: 0.88
-ai_citations: null
+
 primary_sources:
-  - title: GDC Vault
-    type: conference
+  - title: "GDC Vault"
+    type: "conference"
     year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
+    url: "https://www.gdcvault.com/"
+    institution: "GDC"
+
 secondary_sources:
-  - title: GDC Vault
-    type: conference
+  - title: "GDC Vault"
+    type: "conference"
     year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
     year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
 ---
+
 
 
 ## TL;DR

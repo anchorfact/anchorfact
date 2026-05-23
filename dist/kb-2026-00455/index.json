@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00455",
   "headline": "Earthquakes",
   "description": "Earthquakes occur when tectonic plates suddenly slip along faults, releasing accumulated stress as seismic waves. Measured by seismographs. Magnitude scales: Richter (local, historical), Moment Magnitude (Mw, modern — logarithmic: each 1.0 increase = 32x more energy). Largest recorded: 1960 Chile (Mw 9.5).",
-  "dateCreated": "2026-05-22T09:02:12.764Z",
-  "dateModified": "2026-05-22T09:02:12.764Z",
+  "dateCreated": "2026-05-22T14:18:55.072Z",
+  "dateModified": "2026-05-22T14:18:55.072Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -6,27 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"R Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://www.r-project.org/"
-    institution:"R Foundation"
-secondary_sources:
-  - title: "BERT: Pre-training of Deep Bidirectional Transformers"
-    authors: ["Devlin", "Chang", "Lee", "Toutanova"]
-    type: "academic_paper"
-    year: 2019
-    doi: "10.48550/arXiv.1810.04805"
-    url: "https://arxiv.org/abs/1810.04805"
-  - title: "MDN Web Docs — HTTP"
+  - title: "R Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+    url: "https://www.r-project.org/"
+    institution: "R Foundation"
+    note: "Statistical computing: CRAN, tidyverse, ggplot2, Shiny, R Markdown"
+secondary_sources:
+  - title: "R for Data Science (2nd Edition)"
+    authors: ["Wickham, Hadley", "Cetinkaya-Rundel, Mine", "Grolemund, Garrett"]
+    type: "book"
+    year: 2023
+    url: "https://r4ds.hadley.nz/"
+    institution: "O'Reilly"
+    note: "By ggplot2/tidyverse creator — the practical R guide"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

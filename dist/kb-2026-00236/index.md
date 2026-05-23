@@ -6,23 +6,29 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
+generation_method: "human_only"
 ai_models:["claude-opus"]
 derived_from_human_seed:true
-primary_sources:
-  - title:"Managing Technical Debt (Ward Cunningham, 1992)"
-    type:"undefined"
-    url:"undefined"
-secondary_sources:
-  - title: "RESTful Web APIs"
-    authors: ["Richardson", "Amundsen"]
-    type: "book"
-    year: 2013
-    url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
-    institution: "O'Reilly"
+
+
+known_gaps:
+  - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
+
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"
+primary_sources:
+- title: "ACM Digital Library"
+    type: "repository"
+    year: 2026
+    url: "https://dl.acm.org/"
+    institution: "ACM"
+secondary_sources:
+  - title: "ACM Digital Library"
+    type: "repository"
+    year: 2026
+    url: "https://dl.acm.org/"
+    institution: "ACM"
 ---
 
 ## TL;DR

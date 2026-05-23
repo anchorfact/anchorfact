@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00059",
   "headline": "Node.js",
   "description": "Node.js is an open-source, cross-platform JavaScript runtime built on Google's V8 engine, created by Ryan Dahl in 2009. It enables JavaScript to run outside the browser — on servers, desktops, and embedded devices — with an event-driven, non-blocking I/O model. As of May 2026, Node.js has 117,329 GitHub stars and powers the backend of millions of applications including Netflix, PayPal, LinkedIn, and Uber. The current LTS version is Node 24.x (Active LTS since April 2026).",
-  "dateCreated": "2026-05-22T09:02:12.405Z",
-  "dateModified": "2026-05-22T09:02:12.405Z",
+  "dateCreated": "2026-05-22T14:18:54.657Z",
+  "dateModified": "2026-05-22T14:18:54.657Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

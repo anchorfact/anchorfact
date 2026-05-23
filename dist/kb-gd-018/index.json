@@ -3,9 +3,9 @@
   "@type": "TechArticle",
   "@id": "https://anchorfact.org/kb/kb-gd-018",
   "headline": "概念性 CI 流水线",
-  "description": "1. 游戏开发生命周期",
-  "dateCreated": "2026-05-22T09:02:12.585Z",
-  "dateModified": "2026-05-22T09:02:12.585Z",
+  "description": "1. 游戏开发生命周期\r",
+  "dateCreated": "2026-05-22T14:18:54.872Z",
+  "dateModified": "2026-05-22T14:18:54.872Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

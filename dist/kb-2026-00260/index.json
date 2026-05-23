@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00260",
   "headline": "Cron Jobs",
   "description": "Cron is a time-based job scheduler in Unix-like systems. `crontab -e` edits user jobs. Format: `minute hour day month weekday command`. Example: `0 2 * * * /backup.sh` runs daily at 2 AM. Cron is ideal for periodic maintenance: backups, log rotation, report generation.",
-  "dateCreated": "2026-05-22T09:02:12.253Z",
-  "dateModified": "2026-05-22T09:02:12.253Z",
+  "dateCreated": "2026-05-22T14:18:54.489Z",
+  "dateModified": "2026-05-22T14:18:54.489Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

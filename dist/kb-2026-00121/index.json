@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00121",
   "headline": "Firewall",
   "description": "A firewall is a network security system that monitors and controls incoming/outgoing traffic based on predetermined rules. Types: packet filtering (stateless, layer 3/4), stateful inspection (tracks connection state), application-layer (WAF, layer 7), next-generation (NGFW, combines all).",
-  "dateCreated": "2026-05-22T09:02:12.311Z",
-  "dateModified": "2026-05-22T09:02:12.311Z",
+  "dateCreated": "2026-05-22T14:18:54.554Z",
+  "dateModified": "2026-05-22T14:18:54.554Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

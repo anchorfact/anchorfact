@@ -6,21 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"NGINX Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://nginx.org/en/docs/"
-    institution:"NGINX Inc."
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "NGINX Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+    url: "https://nginx.org/en/docs/"
+    institution: "NGINX Inc."
+    note: "Reverse proxy and load balancer: round-robin, least-connections, IP hash, health checks, TLS termination"
+secondary_sources:
+  - title: "Designing Data-Intensive Applications"
+    authors: ["Kleppmann, Martin"]
+    type: "book"
+    year: 2017
+    url: "https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/"
+    institution: "O'Reilly"
+    note: "Chapter on replication and partitioning — covers load distribution strategies in distributed systems"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

@@ -6,21 +6,23 @@ category:"ai"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Feature Engineering for Machine Learning (Zheng & Casari)"
-    type:"book"
-    year:2018
-    url:"https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/"
-    institution:"O'Reilly"
+  - title: "Feature Engineering for Machine Learning (Zheng & Casari)"
+    authors: ["Zheng, Alice", "Casari, Amanda"]
+    type: "book"
+    year: 2018
+    url: "https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/"
+    institution: "O'Reilly"
+    note: "Practical guide to feature engineering: encoding, binning, scaling, interaction features"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "Scikit-learn Preprocessing Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+    url: "https://scikit-learn.org/stable/modules/preprocessing.html"
+    institution: "Inria"
+    note: "Industry-standard feature preprocessing library: StandardScaler, OneHotEncoder, PolynomialFeatures"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

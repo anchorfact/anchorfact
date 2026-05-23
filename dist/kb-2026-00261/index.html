@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>Systemd — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-systemd is the init system and service manager for most Linux distributions (since ~2015). It manages services, sockets, timers, mounts, and devices via unit files. `systemctl start/stop/enable/disable service`. systemd unified Linux service management across distributions, replacing SysV init and Upstart.<br>
-<br>
-## Core Explanation<br>
-<br>
-Unit types: service (.service), socket (.socket), timer (.timer, replaces cron), mount, target (group). `systemctl status service` shows state, logs. `journalctl -u service` views logs. Service unit example: `[Service] ExecStart=/usr/bin/app` with `Restart=always`. systemd starts services in parallel (not sequentially like SysV) — faster boot. Controversy: monolithic design, PID 1 complexity.<br>
-<br>
-## Further Reading<br>
-<br>
-- [systemd Documentation](undefined)<br>
+<body><article><br>
+## TL;DR<br>
+<br>
+systemd is the init system and service manager for most Linux distributions (since ~2015). It manages services, sockets, timers, mounts, and devices via unit files. `systemctl start/stop/enable/disable service`. systemd unified Linux service management across distributions, replacing SysV init and Upstart.<br>
+<br>
+## Core Explanation<br>
+<br>
+Unit types: service (.service), socket (.socket), timer (.timer, replaces cron), mount, target (group). `systemctl status service` shows state, logs. `journalctl -u service` views logs. Service unit example: `[Service] ExecStart=/usr/bin/app` with `Restart=always`. systemd starts services in parallel (not sequentially like SysV) — faster boot. Controversy: monolithic design, PID 1 complexity.<br>
+<br>
+## Further Reading<br>
+<br>
+- [systemd Documentation](undefined)<br>
 </article></body>
 </html>

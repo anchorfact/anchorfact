@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00216",
   "headline": "Unreal Engine 5",
   "description": "Unreal Engine 5 (UE5, Epic Games, 2022) is a AAA game engine featuring Nanite (virtualized micropolygon geometry — billions of polygons without LODs), Lumen (fully dynamic global illumination), World Partition (automatic world streaming), and MetaHuman (realistic human characters). Free for indies (5% royalty after $1M revenue).",
-  "dateCreated": "2026-05-22T09:02:12.627Z",
-  "dateModified": "2026-05-22T09:02:12.627Z",
+  "dateCreated": "2026-05-22T14:18:54.923Z",
+  "dateModified": "2026-05-22T14:18:54.923Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

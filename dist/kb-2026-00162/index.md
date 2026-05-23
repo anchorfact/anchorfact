@@ -6,27 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Kubernetes Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://kubernetes.io/docs/"
-    institution:"CNCF"
-secondary_sources:
-  - title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
-    authors: ["Lewis", "Perez", "Piktus"]
-    type: "academic_paper"
-    year: 2020
-    doi: "10.48550/arXiv.2005.11401"
-    url: "https://arxiv.org/abs/2005.11401"
-  - title: "MDN Web Docs — HTTP"
+  - title: "Kubernetes Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+    url: "https://kubernetes.io/docs/"
+    institution: "CNCF"
+    note: "Core K8s: Pods (smallest deployable unit), Services (stable networking), labels/selectors"
+secondary_sources:
+  - title: "Kubernetes in Action (2nd Edition)"
+    authors: ["Luksa, Marko"]
+    type: "book"
+    year: 2023
+    url: "https://www.manning.com/books/kubernetes-in-action-second-edition"
+    institution: "Manning"
+    note: "Comprehensive guide: Pod lifecycle, Service types (ClusterIP, NodePort, LoadBalancer), ingress"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

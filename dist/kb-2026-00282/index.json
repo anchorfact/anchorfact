@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00282",
   "headline": "Model Evaluation Metrics",
   "description": "Model evaluation metrics quantify performance. Classification: accuracy, precision, recall, F1-score, ROC-AUC. Regression: MSE, MAE, R². Confusion matrix: TP/FP/FN/TN. Choose metrics aligned with business goals: medical diagnosis needs high recall (miss fewer positives), spam detection needs high precision (fewer false alarms).",
-  "dateCreated": "2026-05-22T09:02:12.107Z",
-  "dateModified": "2026-05-22T09:02:12.107Z",
+  "dateCreated": "2026-05-22T14:18:54.329Z",
+  "dateModified": "2026-05-22T14:18:54.329Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

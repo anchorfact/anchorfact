@@ -11,3 +11,7 @@ __pycache__/
 *.swo
 .env
 .env.local
+# Quality snapshots and temp data
+qs_*.json
+qs_*.txt
+.quality-baseline.json

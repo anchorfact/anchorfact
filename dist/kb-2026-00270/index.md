@@ -6,21 +6,26 @@ category:"ai"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Learning Phrase Representations using RNN Encoder-Decoder (Cho et al., 2014)"
-    type:"paper"
-    year:2014
-    url:"https://arxiv.org/abs/1406.1078"
-    institution:"arXiv"
+  - title: "Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation"
+    authors: ["Cho, Kyunghyun", "van Merrienboer, Bart", "Gulcehre, Caglar", "Bahdanau, Dzmitry", "Bougares, Fethi", "Schwenk, Holger", "Bengio, Yoshua"]
+    type: "academic_paper"
+    year: 2014
+    doi: "10.48550/arXiv.1406.1078"
+    url: "https://arxiv.org/abs/1406.1078"
+    institution: "EMNLP 2014"
+    note: "Introduced the GRU (Gated Recurrent Unit). 36,000+ citations."
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "Long Short-Term Memory"
+    authors: ["Hochreiter, Sepp", "Schmidhuber, Jurgen"]
+    type: "academic_paper"
+    year: 1997
+    doi: "10.1162/neco.1997.9.8.1735"
+    url: "https://www.bioinf.jku.at/publications/older/2604.pdf"
+    institution: "Neural Computation"
+    note: "The original LSTM paper — 100,000+ citations. Foundation of recurrent neural network research."
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

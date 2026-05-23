@@ -7,7 +7,7 @@ language: "en"
 confidence: "high"
 confidence_rationale: "Based on the official Microsoft GraphRAG project page, GitHub repository (33,157 stars), and published timeline"
 last_verified: "2026-05-22"
-generation_method: "ai_assisted"
+generation_method: "human_only"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
 primary_sources:
@@ -22,7 +22,17 @@ primary_sources:
     stars: 33157
     forks: 3513
   - title: "From Local to Global: A Graph RAG Approach to Query-Focused Summarization"
-    authors: ["Edge, Darren", "Trinh, Ha", "Cheng, Newman", "Bradley, Joshua", "Chao, Alex", "Mody, Apurva", "Truitt, Steven", "Larson, Jonathan"]
+    authors:
+      [
+        "Edge, Darren",
+        "Trinh, Ha",
+        "Cheng, Newman",
+        "Bradley, Joshua",
+        "Chao, Alex",
+        "Mody, Apurva",
+        "Truitt, Steven",
+        "Larson, Jonathan",
+      ]
     type: "academic_paper"
     year: 2024
     url: "https://www.microsoft.com/en-us/research/publication/from-local-to-global-a-graph-rag-approach-to-query-focused-summarization/"
@@ -61,30 +71,30 @@ Standard RAG retrieves the top-k most semantically similar text chunks and feeds
 
 ## Development Timeline
 
-| Date | Milestone |
-|------|-----------|
+| Date         | Milestone                                                            |
+| ------------ | -------------------------------------------------------------------- |
 | Feb 13, 2024 | First blog post: "Unlocking LLM discovery on narrative private data" |
-| Jul 2, 2024 | **Open-sourced on GitHub** |
-| Sep 9, 2024 | Auto-tuning: automatic parameter optimization for new domains |
-| Oct 31, 2024 | **DRIFT Search**: combines global and local search |
-| Nov 15, 2024 | Dynamic community selection for improved global search |
-| Nov 25, 2024 | **LazyGraphRAG**: cost-optimized variant |
-| Dec 16, 2024 | **GraphRAG 1.0** official release |
-| Mar 19, 2025 | Claimify: high-quality claim extraction |
-| Jun 5, 2025 | BenchmarkQED: automated RAG benchmarking |
-| Aug 5, 2025 | **VeriTrail**: hallucination detection and attribution |
-| May 2026 | 33,157 GitHub stars, deployed in Microsoft Discovery |
+| Jul 2, 2024  | **Open-sourced on GitHub**                                           |
+| Sep 9, 2024  | Auto-tuning: automatic parameter optimization for new domains        |
+| Oct 31, 2024 | **DRIFT Search**: combines global and local search                   |
+| Nov 15, 2024 | Dynamic community selection for improved global search               |
+| Nov 25, 2024 | **LazyGraphRAG**: cost-optimized variant                             |
+| Dec 16, 2024 | **GraphRAG 1.0** official release                                    |
+| Mar 19, 2025 | Claimify: high-quality claim extraction                              |
+| Jun 5, 2025  | BenchmarkQED: automated RAG benchmarking                             |
+| Aug 5, 2025  | **VeriTrail**: hallucination detection and attribution               |
+| May 2026     | 33,157 GitHub stars, deployed in Microsoft Discovery                 |
 
 ## Comparison: Standard RAG vs. GraphRAG
 
-| Dimension | Standard RAG | GraphRAG |
-|-----------|-------------|----------|
-| Data structure | Flat vector chunks | Knowledge graph (entities + relations) |
-| Retrieval method | Semantic similarity (vector search) | Graph traversal + community detection + vector search |
-| Query types | Local (factoid) | **Both local and global** (dataset-level synthesis) |
-| Explainability | Retrieved chunks | Graph paths, community summaries, entity relationships |
+| Dimension        | Standard RAG                                  | GraphRAG                                                       |
+| ---------------- | --------------------------------------------- | -------------------------------------------------------------- |
+| Data structure   | Flat vector chunks                            | Knowledge graph (entities + relations)                         |
+| Retrieval method | Semantic similarity (vector search)           | Graph traversal + community detection + vector search          |
+| Query types      | Local (factoid)                               | **Both local and global** (dataset-level synthesis)            |
+| Explainability   | Retrieved chunks                              | Graph paths, community summaries, entity relationships         |
 | Information loss | Chunk boundaries may fragment connected ideas | Entity-relationship model preserves document-level connections |
-| Cost | Lower (single retrieval + generation) | Higher (graph construction + multi-level summarization) |
+| Cost             | Lower (single retrieval + generation)         | Higher (graph construction + multi-level summarization)        |
 
 ## Key Components
 

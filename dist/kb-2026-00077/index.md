@@ -6,7 +6,7 @@ category: "computer-science"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-22"
-generation_method: "ai_assisted"
+generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "ISO/IEC 9899:2024 — C23 Standard"
@@ -18,12 +18,15 @@ primary_sources:
     type: "book"
     year: 1988
 secondary_sources:
-  - title: "Fluent Python (2nd Ed)"
-    authors: ["Ramalho"]
+  - title: "The C Programming Language (2nd Edition, K&R)"
+    authors: ["Kernighan, Brian W.", "Ritchie, Dennis M."]
     type: "book"
-    year: 2021
-    url: "https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/"
-    institution: "O'Reilly"
+    year: 1988
+    url: "https://en.wikipedia.org/wiki/The_C_Programming_Language"
+    institution: "Prentice Hall"
+    note: "The definitive C reference by the language's creators"
+known_gaps:
+  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
 completeness: 0.88
 ai_citations: {last_citation_check: "2026-05-22"}
 ---

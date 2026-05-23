@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00231",
   "headline": "Scrum Framework",
   "description": "Scrum is the most popular Agile framework, defined by the Scrum Guide (Ken Schwaber and Jeff Sutherland, latest 2020). It prescribes three roles, five events, and three artifacts within fixed-length Sprints. Scrum is lightweight but hard to master — it requires cultural shift, not just process adoption.",
-  "dateCreated": "2026-05-22T09:02:12.474Z",
-  "dateModified": "2026-05-22T09:02:12.474Z",
+  "dateCreated": "2026-05-22T14:18:54.733Z",
+  "dateModified": "2026-05-22T14:18:54.733Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

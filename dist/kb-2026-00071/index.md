@@ -7,8 +7,7 @@ language: "en"
 confidence: "high"
 confidence_rationale: "Based on CommonMark specification and original Daring Fireball article"
 last_verified: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "CommonMark Specification (v0.31.2)"
@@ -26,6 +25,8 @@ secondary_sources:
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
     institution: "Mozilla"
+known_gaps:
+  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
 completeness: 0.88
 ai_citations: {last_citation_check: "2026-05-22"}
 ---

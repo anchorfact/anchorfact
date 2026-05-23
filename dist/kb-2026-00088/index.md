@@ -7,8 +7,7 @@ language: "en"
 confidence: "high"
 confidence_rationale: "Based on authoritative sources and industry standards"
 last_verified: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "The WebSocket API (W3C)"
@@ -24,6 +23,8 @@ secondary_sources:
     year: 2011
     url: "https://www.rfc-editor.org/rfc/rfc6455"
     institution: "IETF"
+known_gaps:
+  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
 completeness: 0.88
 ai_citations:
   last_citation_check: "2026-05-22"

@@ -6,21 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Prometheus Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://prometheus.io/docs/"
-    institution:"CNCF"
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "Prometheus Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+    url: "https://prometheus.io/docs/"
+    institution: "CNCF"
+    note: "CNCF-graduated monitoring: PromQL, Alertmanager, time-series TSDB, pull model, exporters"
+secondary_sources:
+  - title: "Site Reliability Engineering (Google)"
+    authors: ["Beyer, Betsy", "Jones, Chris", "Petoff, Jennifer", "Murphy, Niall Richard"]
+    type: "book"
+    year: 2016
+    url: "https://sre.google/books/"
+    institution: "O'Reilly"
+    note: "Prometheus was inspired by Google's Borgmon — the SRE book covers the monitoring philosophy behind it"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

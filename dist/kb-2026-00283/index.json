@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00283",
   "headline": "Batch Normalization",
   "description": "Batch Normalization (BN) normalizes layer inputs to zero mean and unit variance within each mini-batch, then scales and shifts with learnable parameters. Benefits: faster training (higher learning rates), reduces sensitivity to initialization, acts as regularizer (reduces need for dropout). BN is standard in most CNN architectures.",
-  "dateCreated": "2026-05-22T09:02:12.076Z",
-  "dateModified": "2026-05-22T09:02:12.076Z",
+  "dateCreated": "2026-05-22T14:18:54.294Z",
+  "dateModified": "2026-05-22T14:18:54.294Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

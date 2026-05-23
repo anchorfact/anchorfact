@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>Data Warehousing — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-A data warehouse is a centralized repository optimized for analytical queries (OLAP) rather than transactional operations (OLTP). Kimball methodology: star schema (fact tables + dimension tables). ETL (Extract-Transform-Load) pipelines populate the warehouse from operational systems. Columnar storage (Parquet, ORC) optimizes for analytics.<br>
-<br>
-## Core Explanation<br>
-<br>
-Star schema: central fact table (sales transactions) surrounded by dimension tables (date, product, customer). Slowly Changing Dimensions (SCD): how to handle historical changes (Type 1: overwrite, Type 2: add new row). Modern stack: Snowflake, BigQuery, Redshift (cloud-native). Data Lake: store raw data first (S3), transform later (ELT) — Databricks + Delta Lake.<br>
-<br>
-## Further Reading<br>
-<br>
-- [The Data Warehouse Toolkit (3rd Ed, Kimball & Ross)](undefined)<br>
+<body><article><br>
+## TL;DR<br>
+<br>
+A data warehouse is a centralized repository optimized for analytical queries (OLAP) rather than transactional operations (OLTP). Kimball methodology: star schema (fact tables + dimension tables). ETL (Extract-Transform-Load) pipelines populate the warehouse from operational systems. Columnar storage (Parquet, ORC) optimizes for analytics.<br>
+<br>
+## Core Explanation<br>
+<br>
+Star schema: central fact table (sales transactions) surrounded by dimension tables (date, product, customer). Slowly Changing Dimensions (SCD): how to handle historical changes (Type 1: overwrite, Type 2: add new row). Modern stack: Snowflake, BigQuery, Redshift (cloud-native). Data Lake: store raw data first (S3), transform later (ELT) — Databricks + Delta Lake.<br>
+<br>
+## Further Reading<br>
+<br>
+- [The Data Warehouse Toolkit (3rd Ed, Kimball & Ross)](undefined)<br>
 </article></body>
 </html>

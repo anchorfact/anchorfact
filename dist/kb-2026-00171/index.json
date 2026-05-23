@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00171",
   "headline": "Progressive Web Apps (PWA)",
   "description": "PWAs are web applications that use modern APIs to deliver app-like experiences: installable (manifest.json), offline-capable (Service Workers), push notifications, and background sync. PWAs work across platforms from a single codebase.",
-  "dateCreated": "2026-05-22T09:02:12.440Z",
-  "dateModified": "2026-05-22T09:02:12.440Z",
+  "dateCreated": "2026-05-22T14:18:54.695Z",
+  "dateModified": "2026-05-22T14:18:54.695Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

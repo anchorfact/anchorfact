@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00134",
   "headline": "Dynamic Programming",
   "description": "DP solves problems by breaking them into overlapping subproblems, solving each once (memoization/tabulation). Converts exponential to polynomial time. Requires optimal substructure. Classic: Fibonacci, knapsack, LCS, edit distance.",
-  "dateCreated": "2026-05-22T09:02:12.293Z",
-  "dateModified": "2026-05-22T09:02:12.293Z",
+  "dateCreated": "2026-05-22T14:18:54.534Z",
+  "dateModified": "2026-05-22T14:18:54.534Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>Web Workers — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-Web Workers enable JavaScript to run in background threads, parallelizing CPU-intensive tasks without blocking the main UI thread. They communicate with the main thread via message passing (`postMessage`), not shared memory (by default).<br>
-<br>
-## Core Explanation<br>
-<br>
-Types: Dedicated Workers (single tab), Shared Workers (multiple tabs/windows), and Service Workers (specialized proxy). Workers have no DOM access but can use `fetch`, WebSocket, IndexedDB, and most browser APIs. Communication uses structured cloning (copy) or Transferable objects (zero-copy with ownership transfer).<br>
-<br>
-## Further Reading<br>
-<br>
-- [Web Workers (WHATWG)](https://html.spec.whatwg.org/multipage/workers.html)<br>
+<body><article><br>
+## TL;DR<br>
+<br>
+Web Workers enable JavaScript to run in background threads, parallelizing CPU-intensive tasks without blocking the main UI thread. They communicate with the main thread via message passing (`postMessage`), not shared memory (by default).<br>
+<br>
+## Core Explanation<br>
+<br>
+Types: Dedicated Workers (single tab), Shared Workers (multiple tabs/windows), and Service Workers (specialized proxy). Workers have no DOM access but can use `fetch`, WebSocket, IndexedDB, and most browser APIs. Communication uses structured cloning (copy) or Transferable objects (zero-copy with ownership transfer).<br>
+<br>
+## Further Reading<br>
+<br>
+- [Web Workers (WHATWG)](https://html.spec.whatwg.org/multipage/workers.html)<br>
 </article></body>
 </html>

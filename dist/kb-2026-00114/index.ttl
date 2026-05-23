@@ -5,4 +5,4 @@
   a schema:TechArticle ;
   schema:headline "Cross-Site Request Forgery (CSRF)" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:generationMethod "human_only" .

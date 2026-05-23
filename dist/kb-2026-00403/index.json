@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00403",
   "headline": "Scientific Revolution",
   "description": "The Scientific Revolution (1543-1687) transformed understanding of the natural world, replacing Aristotelian/medieval frameworks with empirical observation and mathematical reasoning. Copernicus (heliocentric, 1543) → Kepler (elliptical orbits, 1609) → Galileo (telescope, mechanics, 1610) → Newton (Principia, 1687). Scientific method emerged.",
-  "dateCreated": "2026-05-22T09:02:12.798Z",
-  "dateModified": "2026-05-22T09:02:12.798Z",
+  "dateCreated": "2026-05-22T14:18:55.107Z",
+  "dateModified": "2026-05-22T14:18:55.107Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

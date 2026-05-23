@@ -6,8 +6,7 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
+generation_method: "human_only"
 derived_from_human_seed:true
 primary_sources:
   - title:"Playwright Documentation"
@@ -16,11 +15,13 @@ primary_sources:
     url:"https://playwright.dev/"
     institution:"Microsoft"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "Testing JavaScript Applications"
+    authors: ["da Costa, Lucas"]
+    type: "book"
+    year: 2021
+    url: "https://www.manning.com/books/testing-javascript-applications"
+    institution: "Manning"
+    note: "Comprehensive JS testing guide covering Playwright patterns for E2E testing"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

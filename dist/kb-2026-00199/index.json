@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00199",
   "headline": "Type Systems",
   "description": "Type systems assign types to program constructs, catching errors at compile time. Static typing (C, Java, Rust): types checked before execution. Dynamic typing (Python, JavaScript): types checked at runtime. Type systems prevent entire classes of bugs: null dereferences, type mismatches, memory safety violations.",
-  "dateCreated": "2026-05-22T09:02:12.519Z",
-  "dateModified": "2026-05-22T09:02:12.519Z",
+  "dateCreated": "2026-05-22T14:18:54.783Z",
+  "dateModified": "2026-05-22T14:18:54.783Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

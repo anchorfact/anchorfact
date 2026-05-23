@@ -1,628 +1,628 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>游戏渲染管线与着色器 — AnchorFact</title></head>
-<body><article><br>
-# 游戏渲染管线与着色器<br>
-<br>
-## 概述<br>
-<br>
-渲染管线（Rendering Pipeline）是将3D场景转换为2D图像的一系列处理步骤。理解渲染管线对于优化性能、实现视觉效果和跨平台开发至关重要。<br>
-<br>
----<br>
-<br>
-## 1. 渲染管线基础<br>
-<br>
-### 1.1 Forward Rendering（前向渲染）<br>
-<br>
-**原理**：对每个物体，遍历所有光源计算光照<br>
-<br>
-```<br>
-对于每个物体：<br>
-    对于每个像素：<br>
-        对于每个光源：<br>
-            计算光照贡献<br>
-        累加所有光照<br>
-```<br>
-<br>
-**优点**：<br>
-- 简单直观<br>
-- 支持透明物体<br>
-- 内存占用低<br>
-<br>
-**缺点**：<br>
-- 光源数量增加时性能急剧下降（O(n×m)）<br>
-- 重复计算（多个物体在同一像素）<br>
-<br>
-**适用场景**：<br>
-- 移动游戏<br>
-- 光源少的场景<br>
-- 需要大量透明物体的游戏<br>
-<br>
-### 1.2 Deferred Rendering（延迟渲染）<br>
-<br>
-**原理**：先渲染几何信息到G-Buffer，再统一计算光照<br>
-<br>
-```<br>
-Pass 1 - 几何 Pass：<br>
-    渲染所有物体到 G-Buffer<br>
-    G-Buffer 包含：位置、法线、颜色、材质属性<br>
-<br>
-Pass 2 - 光照 Pass：<br>
-    对每个光源：<br>
-        在光源影响范围内计算光照<br>
-        读取 G-Buffer 数据<br>
-```<br>
-<br>
-**优点**：<br>
-- 光源数量对性能影响小<br>
-- 每个像素只计算一次几何<br>
-- 适合大量光源场景<br>
-<br>
-**缺点**：<br>
-- 内存占用高（G-Buffer）<br>
-- 不支持 MSAA（多重采样抗锯齿）<br>
-- 透明物体需要单独处理<br>
-<br>
-**适用场景**：<br>
-- 开放世界游戏<br>
-- 室内场景（多光源）<br>
-- PC/主机游戏<br>
-<br>
-### 1.3 Forward+ / Tiled Forward Rendering<br>
-<br>
-**原理**：结合 Forward 和 Deferred 的优点<br>
-<br>
-```<br>
-1. 将屏幕划分为 Tile（通常 16x16 像素）<br>
-2. 对每个 Tile，计算影响它的光源列表<br>
-3. 前向渲染，但每个像素只计算相关光源<br>
-```<br>
-<br>
-**优点**：<br>
-- 支持大量光源（比 Forward 多）<br>
-- 支持 MSAA<br>
-- 支持透明物体<br>
-- 内存占用适中<br>
-<br>
-**适用场景**：<br>
-- 现代游戏的主流选择<br>
-- Unity URP、Unreal 默认管线<br>
-<br>
-### 1.4 Clustered Rendering<br>
-<br>
-**原理**：在 Tile 的基础上增加深度维度<br>
-<br>
-```<br>
-1. 将视锥体划分为 3D 簇（Cluster）<br>
-2. 每个 Cluster 存储影响它的光源列表<br>
-3. 渲染时根据像素深度确定 Cluster，只计算相关光源<br>
-```<br>
-<br>
-**优点**：<br>
-- 支持极大量光源<br>
-- 更好的深度剔除<br>
-- 适合复杂室内场景<br>
-<br>
-**适用场景**：<br>
-- 高端 PC/主机<br>
-- Unity HDRP、Unreal 5<br>
-<br>
-### 1.5 管线对比<br>
-<br>
-| 特性 | Forward | Deferred | Forward+ | Clustered |<br>
-|------|---------|----------|----------|-----------|<br>
-| **光源数量** | < 10 | 100+ | 100+ | 1000+ |<br>
-| **透明物体** | 原生支持 | 需额外处理 | 原生支持 | 原生支持 |<br>
-| **MSAA** | 支持 | 不支持 | 支持 | 支持 |<br>
-| **内存占用** | 低 | 高 | 中 | 中 |<br>
-| **带宽** | 低 | 高 | 中 | 中 |<br>
-| **复杂度** | 低 | 中 | 中 | 高 |<br>
-<br>
----<br>
-<br>
-## 2. 着色器编程<br>
-<br>
-### 2.1 着色器类型<br>
-<br>
-| 类型 | 阶段 | 用途 |<br>
-|------|------|------|<br>
-| **Vertex Shader** | 顶点处理 | 变换、变形、骨骼动画 |<br>
-| **Fragment/Pixel Shader** | 片元处理 | 光照、纹理采样、颜色计算 |<br>
-| **Geometry Shader** | 图元处理 | 生成额外几何（粒子、毛发） |<br>
-| **Compute Shader** | 通用计算 | 后处理、物理、AI |<br>
-| **Tessellation Shader** | 细分处理 | 动态 LOD、曲面细分 |<br>
-<br>
-### 2.2 HLSL 示例（Unity/Unreal）<br>
-<br>
-```hlsl<br>
-// 基础 PBR 片元着色器（HLSL）<br>
-struct VertexInput<br>
-{<br>
-    float4 position : POSITION;<br>
-    float3 normal : NORMAL;<br>
-    float2 uv : TEXCOORD0;<br>
-};<br>
-<br>
-struct VertexOutput<br>
-{<br>
-    float4 position : SV_POSITION;<br>
-    float3 worldNormal : NORMAL;<br>
-    float2 uv : TEXCOORD0;<br>
-    float3 worldPosition : TEXCOORD1;<br>
-};<br>
-<br>
-// 顶点着色器<br>
-VertexOutput VertexShader(VertexInput input)<br>
-{<br>
-    VertexOutput output;<br>
-    output.position = mul(UNITY_MATRIX_MVP, input.position);<br>
-    output.worldNormal = mul((float3x3)unity_ObjectToWorld, input.normal);<br>
-    output.uv = input.uv;<br>
-    output.worldPosition = mul(unity_ObjectToWorld, input.position).xyz;<br>
-    return output;<br>
-}<br>
-<br>
-// 片元着色器<br>
-float4 FragmentShader(VertexOutput input) : SV_TARGET<br>
-{<br>
-    // 采样纹理<br>
-    float4 albedo = tex2D(_MainTex, input.uv);<br>
-    float3 normal = normalize(input.worldNormal);<br>
-    <br>
-    // 基础光照计算（Lambert）<br>
-    float3 lightDir = normalize(_WorldSpaceLightPos0.xyz);<br>
-    float NdotL = max(dot(normal, lightDir), 0);<br>
-    <br>
-    // 最终颜色<br>
-    float3 diffuse = albedo.rgb * NdotL * _LightColor0.rgb;<br>
-    float3 ambient = albedo.rgb * UNITY_LIGHTMODEL_AMBIENT.rgb;<br>
-    <br>
-    return float4(diffuse + ambient, albedo.a);<br>
-}<br>
-```<br>
-<br>
-### 2.3 GLSL 示例（OpenGL/WebGL）<br>
-<br>
-```glsl<br>
-// 顶点着色器（GLSL）<br>
-#version 300 es<br>
-<br>
-in vec3 a_position;<br>
-in vec3 a_normal;<br>
-in vec2 a_uv;<br>
-<br>
-uniform mat4 u_modelMatrix;<br>
-uniform mat4 u_viewMatrix;<br>
-uniform mat4 u_projectionMatrix;<br>
-<br>
-out vec3 v_worldNormal;<br>
-out vec2 v_uv;<br>
-out vec3 v_worldPosition;<br>
-<br>
-void main()<br>
-{<br>
-    vec4 worldPosition = u_modelMatrix * vec4(a_position, 1.0);<br>
-    gl_Position = u_projectionMatrix * u_viewMatrix * worldPosition;<br>
-    <br>
-    v_worldNormal = mat3(u_modelMatrix) * a_normal;<br>
-    v_uv = a_uv;<br>
-    v_worldPosition = worldPosition.xyz;<br>
-}<br>
-<br>
-// 片元着色器（GLSL）<br>
-#version 300 es<br>
-precision highp float;<br>
-<br>
-in vec3 v_worldNormal;<br>
-in vec2 v_uv;<br>
-in vec3 v_worldPosition;<br>
-<br>
-uniform sampler2D u_mainTex;<br>
-uniform vec3 u_lightDir;<br>
-uniform vec3 u_lightColor;<br>
-<br>
-out vec4 fragColor;<br>
-<br>
-void main()<br>
-{<br>
-    vec4 albedo = texture(u_mainTex, v_uv);<br>
-    vec3 normal = normalize(v_worldNormal);<br>
-    <br>
-    float NdotL = max(dot(normal, -u_lightDir), 0.0);<br>
-    vec3 diffuse = albedo.rgb * NdotL * u_lightColor;<br>
-    <br>
-    fragColor = vec4(diffuse, albedo.a);<br>
-}<br>
-```<br>
-<br>
-### 2.4 Shader Graph / 可视化着色器<br>
-<br>
-| 工具 | 引擎 | 特点 |<br>
-|------|------|------|<br>
-| **Shader Graph** | Unity | 节点图，支持 URP/HDRP |<br>
-| **Material Editor** | Unreal | 节点图，功能强大 |<br>
-| **VisualShader** | Godot | 节点图，轻量 |<br>
-<br>
----<br>
-<br>
-## 3. 光照模型<br>
-<br>
-### 3.1 PBR（基于物理的渲染）<br>
-<br>
-PBR 是现代游戏的标准光照模型，基于物理原理而非经验公式。<br>
-<br>
-**核心概念**：<br>
-- **Albedo（反照率）**：基础颜色，无光照信息<br>
-- **Metallic（金属度）**：0 = 非金属，1 = 金属<br>
-- **Roughness（粗糙度）**：0 = 镜面，1 = 漫反射<br>
-- **Normal（法线）**：表面微观几何<br>
-- **AO（环境光遮蔽）**：自遮挡阴影<br>
-<br>
-**工作流程**：<br>
-<br>
-| 工作流 | Albedo | Specular | 特点 |<br>
-|--------|--------|----------|------|<br>
-| **Metallic-Roughness** | 包含金属色 | 自动生成 | 更常见，更直观 |<br>
-| **Specular-Glossiness** | 纯漫反射 | 单独贴图 | 更灵活，但易出错 |<br>
-<br>
-```hlsl<br>
-// 简化的 PBR 漫反射计算<br>
-float3 Diffuse_Lambert(float3 albedo)<br>
-{<br>
-    return albedo / PI;<br>
-}<br>
-<br>
-// 简化的 PBR 镜面反射（Blinn-Phong 近似）<br>
-float3 Specular_BlinnPhong(float3 specularColor, float roughness, float3 normal, float3 viewDir, float3 lightDir)<br>
-{<br>
-    float3 halfDir = normalize(lightDir + viewDir);<br>
-    float NdotH = max(dot(normal, halfDir), 0);<br>
-    float specPower = exp2(10 * (1 - roughness) + 1);<br>
-    return specularColor * pow(NdotH, specPower);<br>
-}<br>
-```<br>
-<br>
-### 3.2 IBL（基于图像的光照）<br>
-<br>
-使用环境贴图模拟间接光照：<br>
-<br>
-```<br>
-环境 HDR 贴图<br>
-    ↓<br>
-预计算漫反射辐照度（Irradiance Map）<br>
-预计算镜面反射（Prefiltered Mipmaps）<br>
-    ↓<br>
-运行时采样<br>
-```<br>
-<br>
-### 3.3 Ray Tracing（光线追踪）<br>
-<br>
-实时光线追踪是现代 GPU 的重要特性：<br>
-<br>
-| 效果 | 说明 | 性能影响 |<br>
-|------|------|----------|<br>
-| **Ray Traced Reflections** | 精确反射 | 高 |<br>
-| **Ray Traced Shadows** | 柔和阴影 | 中 |<br>
-| **Ray Traced GI** | 全局光照 | 极高 |<br>
-| **Ray Traced Ambient Occlusion** | 环境光遮蔽 | 中 |<br>
-<br>
-**硬件支持**：<br>
-- NVIDIA RTX（Turing+）<br>
-- AMD RDNA2+<br>
-- Intel Arc<br>
-<br>
-### 3.4 Global Illumination（全局光照）<br>
-<br>
-| 技术 | 原理 | 质量 | 性能 |<br>
-|------|------|------|------|<br>
-| **Lightmap** | 预计算静态光照 | 高 | 运行时零开销 |<br>
-| **Light Probe** | 预计算动态物体采样点 | 中 | 低 |<br>
-| **Realtime GI** | 实时计算间接光 | 中 | 高 |<br>
-| **Lumen**（Unreal 5） | 软件光线追踪 | 高 | 中高 |<br>
-| **DDGI** | 动态漫反射全局光照 | 高 | 中 |<br>
-<br>
----<br>
-<br>
-## 4. 后处理技术<br>
-<br>
-### 4.1 常见后处理效果<br>
-<br>
-| 效果 | 说明 | 性能 |<br>
-|------|------|------|<br>
-| **Bloom** | 高亮区域泛光 | 中 |<br>
-| **SSAO** | 屏幕空间环境光遮蔽 | 中 |<br>
-| **TAA** | 时域抗锯齿 | 中 |<br>
-| **Motion Blur** | 运动模糊 | 中 |<br>
-| **Depth of Field** | 景深 | 高 |<br>
-| **Chromatic Aberration** | 色差 | 低 |<br>
-| **Vignette** | 暗角 | 低 |<br>
-| **Color Grading** | 调色 | 低 |<br>
-<br>
-### 4.2 抗锯齿技术<br>
-<br>
-| 技术 | 原理 | 质量 | 性能 | 模糊 |<br>
-|------|------|------|------|------|<br>
-| **MSAA** | 多重采样 | 高 | 高 | 无 |<br>
-| **FXAA** | 快速近似 | 低 | 极低 | 有 |<br>
-| **SMAA** | 形态学抗锯齿 | 中 | 低 | 轻微 |<br>
-| **TAA** | 时域累积 | 高 | 中 | 轻微 |<br>
-| **DLSS/FSR/XeSS** | AI/算法超采样 | 极高 | 负（提升性能） | 无 |<br>
-<br>
-### 4.3 超采样技术<br>
-<br>
-| 技术 | 厂商 | 原理 | 性能提升 |<br>
-|------|------|------|----------|<br>
-| **DLSS** | NVIDIA | AI 重建高分辨率 | 2-3x |<br>
-| **FSR** | AMD | 算法 upscale | 2x |<br>
-| **XeSS** | Intel | AI/算法混合 | 2x |<br>
-| **TSR** | Unreal | 时域超分辨率 | 2x |<br>
-<br>
----<br>
-<br>
-## 5. 性能优化<br>
-<br>
-### 5.1 Draw Call 优化<br>
-<br>
-| 技术 | 原理 | 效果 |<br>
-|------|------|------|<br>
-| **Static Batching** | 合并静态物体 | 减少 Draw Call |<br>
-| **Dynamic Batching** | 运行时合并小物体 | 减少 Draw Call |<br>
-| **GPU Instancing** | 一次绘制多个相同物体 | 大幅减少 Draw Call |<br>
-| **SRP Batcher** | 持续绑定材质数据 | 减少 CPU 开销 |<br>
-| **GPU Driven Rendering** | GPU 直接处理剔除 | 极大量物体 |<br>
-<br>
-```csharp<br>
-// Unity GPU Instancing 示例<br>
-public class GPUInstancing : MonoBehaviour<br>
-{<br>
-    public Mesh mesh;<br>
-    public Material material;<br>
-    public int instanceCount = 1000;<br>
-    <br>
-    private Matrix4x4[] matrices;<br>
-    <br>
-    void Start()<br>
-    {<br>
-        matrices = new Matrix4x4[instanceCount];<br>
-        <br>
-        for (int i = 0; i < instanceCount; i++)<br>
-        {<br>
-            Vector3 position = Random.insideUnitSphere * 50f;<br>
-            Quaternion rotation = Random.rotation;<br>
-            Vector3 scale = Vector3.one * Random.Range(0.5f, 2f);<br>
-            <br>
-            matrices[i] = Matrix4x4.TRS(position, rotation, scale);<br>
-        }<br>
-        <br>
-        // 启用 GPU Instancing<br>
-        material.enableInstancing = true;<br>
-    }<br>
-    <br>
-    void Update()<br>
-    {<br>
-        // 批量绘制<br>
-        Graphics.DrawMeshInstanced(mesh, 0, material, matrices);<br>
-    }<br>
-}<br>
-```<br>
-<br>
-### 5.2 遮挡剔除（Occlusion Culling）<br>
-<br>
-```csharp<br>
-// Unity 遮挡剔除设置<br>
-public class OcclusionCullingSetup : MonoBehaviour<br>
-{<br>
-    void Start()<br>
-    {<br>
-        // 标记为静态遮挡物<br>
-        gameObject.isStatic = true;<br>
-        <br>
-        // 烘焙遮挡剔除数据<br>
-        // Window -> Rendering -> Occlusion Culling -> Bake<br>
-    }<br>
-}<br>
-```<br>
-<br>
-### 5.3 LOD（Level of Detail）<br>
-<br>
-```csharp<br>
-// Unity LOD Group 设置<br>
-public class LODSetup : MonoBehaviour<br>
-{<br>
-    void Start()<br>
-    {<br>
-        LODGroup lodGroup = gameObject.AddComponent<LODGroup>();<br>
-        <br>
-        LOD[] lods = new LOD[3];<br>
-        <br>
-        // LOD 0：0-50% 距离，高质量模型<br>
-        lods[0] = new LOD(0.5f, new Renderer[] { highQualityMesh });<br>
-        <br>
-        // LOD 1：50-20% 距离，中质量模型<br>
-        lods[1] = new LOD(0.2f, new Renderer[] { mediumQualityMesh });<br>
-        <br>
-        // LOD 2：20% 以下距离，低质量模型/ Billboard<br>
-        lods[2] = new LOD(0.05f, new Renderer[] { lowQualityMesh });<br>
-        <br>
-        lodGroup.SetLODs(lods);<br>
-        lodGroup.RecalculateBounds();<br>
-    }<br>
-}<br>
-```<br>
-<br>
-### 5.4 性能预算检查清单<br>
-<br>
-| 指标 | 移动端 | PC | 主机 |<br>
-|------|--------|-----|------|<br>
-| Draw Calls | < 100 | < 2000 | < 5000 |<br>
-| 三角面数 | < 100K | < 5M | < 10M |<br>
-| 纹理内存 | < 200MB | < 2GB | < 4GB |<br>
-| Shader 复杂度 | 简单 | 复杂 | 复杂 |<br>
-| 后处理 | 少量 | 完整 | 完整 |<br>
-<br>
----<br>
-<br>
-## 6. 跨平台渲染<br>
-<br>
-### 6.1 图形 API 对比<br>
-<br>
-| API | 平台 | 特点 |<br>
-|-----|------|------|<br>
-| **DirectX 12** | Windows/Xbox | 低开销，多线程 |<br>
-| **Vulkan** | 跨平台 | 低开销，显式控制 |<br>
-| **Metal** | Apple | 低开销，Apple 优化 |<br>
-| **OpenGL ES** | 移动端 | 广泛支持，逐渐淘汰 |<br>
-| **WebGPU** | Web | 现代 Web 图形 |<br>
-<br>
-### 6.2 跨平台着色器<br>
-<br>
-```hlsl<br>
-// Unity ShaderLab - 跨平台着色器<br>
-Shader "Custom/CrossPlatform"<br>
-{<br>
-    Properties<br>
-    {<br>
-        _MainTex ("Texture", 2D) = "white" {}<br>
-        _Color ("Color", Color) = (1,1,1,1)<br>
-    }<br>
-    <br>
-    SubShader<br>
-    {<br>
-        Tags { "RenderType"="Opaque" }<br>
-        LOD 100<br>
-        <br>
-        Pass<br>
-        {<br>
-            HLSLPROGRAM<br>
-            #pragma vertex vert<br>
-            #pragma fragment frag<br>
-            <br>
-            // Unity 自动处理平台差异<br>
-            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"<br>
-            <br>
-            struct Attributes<br>
-            {<br>
-                float4 positionOS : POSITION;<br>
-                float2 uv : TEXCOORD0;<br>
-            };<br>
-            <br>
-            struct Varyings<br>
-            {<br>
-                float4 positionCS : SV_POSITION;<br>
-                float2 uv : TEXCOORD0;<br>
-            };<br>
-            <br>
-            TEXTURE2D(_MainTex);<br>
-            SAMPLER(sampler_MainTex);<br>
-            float4 _Color;<br>
-            <br>
-            Varyings vert(Attributes input)<br>
-            {<br>
-                Varyings output;<br>
-                output.positionCS = TransformObjectToHClip(input.positionOS.xyz);<br>
-                output.uv = input.uv;<br>
-                return output;<br>
-            }<br>
-            <br>
-            half4 frag(Varyings input) : SV_TARGET<br>
-            {<br>
-                half4 col = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, input.uv);<br>
-                return col * _Color;<br>
-            }<br>
-            ENDHLSL<br>
-        }<br>
-    }<br>
-}<br>
-```<br>
-<br>
----<br>
-<br>
-## 7. 典型游戏渲染案例分析<br>
-<br>
-### 7.1 《赛博朋克 2077》<br>
-<br>
-**渲染技术**：<br>
-- 光线追踪反射/阴影/全局光照<br>
-- DLSS 2.0/3.0<br>
-- 复杂的材质系统<br>
-- 大规模开放世界流送<br>
-<br>
-### 7.2 《艾尔登法环》<br>
-<br>
-**渲染技术**：<br>
-- 自定义引擎（FromSoftware）<br>
-- 大气散射<br>
-- 动态天气<br>
-- 大规模地形渲染<br>
-<br>
-### 7.3 《原神》<br>
-<br>
-**渲染技术**：<br>
-- Unity 自定义渲染管线<br>
-- 卡通渲染（Toon Shading）<br>
-- 跨平台优化（移动/PC/主机）<br>
-- 动态分辨率<br>
-<br>
-**卡通渲染关键**：<br>
-```hlsl<br>
-// 卡通着色器核心<br>
-half4 ToonShading(float3 normal, float3 lightDir, half4 albedo)<br>
-{<br>
-    half NdotL = dot(normal, lightDir);<br>
-    <br>
-    // 硬边光影（而非平滑过渡）<br>
-    half toonRamp = smoothstep(0.0, 0.1, NdotL);<br>
-    <br>
-    // 多级阴影<br>
-    if (NdotL < 0.3) toonRamp = 0.3; // 暗部<br>
-    else if (NdotL < 0.6) toonRamp = 0.6; // 中间调<br>
-    else toonRamp = 1.0; // 亮部<br>
-    <br>
-    // 边缘光（Rim Light）<br>
-    half rim = 1.0 - saturate(dot(viewDir, normal));<br>
-    half3 rimColor = pow(rim, 3) * _RimColor;<br>
-    <br>
-    return half4(albedo.rgb * toonRamp + rimColor, albedo.a);<br>
-}<br>
-```<br>
-<br>
----<br>
-<br>
-## 8. 渲染系统检查清单<br>
-<br>
-### 8.1 设计阶段<br>
-<br>
-- [ ] 确定目标平台和性能预算<br>
-- [ ] 选择渲染管线（Forward/Deferred/Forward+）<br>
-- [ ] 定义视觉风格（写实/卡通/像素）<br>
-- [ ] 规划光照策略（实时光/烘焙/混合）<br>
-<br>
-### 8.2 实现阶段<br>
-<br>
-- [ ] 设置渲染管线<br>
-- [ ] 创建主着色器<br>
-- [ ] 配置光照系统<br>
-- [ ] 实施后处理效果<br>
-- [ ] 设置 LOD 系统<br>
-<br>
-### 8.3 优化阶段<br>
-<br>
-- [ ] 分析 Draw Call<br>
-- [ ] 优化材质和着色器<br>
-- [ ] 配置遮挡剔除<br>
-- [ ] 压缩纹理<br>
-- [ ] 测试目标平台性能<br>
-<br>
----<br>
-<br>
-## 参考来源<br>
-<br>
-- Unity Scriptable Render Pipeline 官方文档<br>
-- Unreal Rendering 官方文档<br>
-- Godot Rendering 官方文档<br>
-- 《Real-Time Rendering》— Tomas Akenine-Möller<br>
-- 《Physically Based Rendering》— Matt Pharr<br>
-- GDC 演讲：《The Rendering of The Last of Us Part II》<br>
-- SIGGRAPH 论文：各种渲染技术<br>
+<body><article><br>
+# 游戏渲染管线与着色器<br>
+<br>
+## 概述<br>
+<br>
+渲染管线（Rendering Pipeline）是将3D场景转换为2D图像的一系列处理步骤。理解渲染管线对于优化性能、实现视觉效果和跨平台开发至关重要。<br>
+<br>
+---<br>
+<br>
+## 1. 渲染管线基础<br>
+<br>
+### 1.1 Forward Rendering（前向渲染）<br>
+<br>
+**原理**：对每个物体，遍历所有光源计算光照<br>
+<br>
+```<br>
+对于每个物体：<br>
+    对于每个像素：<br>
+        对于每个光源：<br>
+            计算光照贡献<br>
+        累加所有光照<br>
+```<br>
+<br>
+**优点**：<br>
+- 简单直观<br>
+- 支持透明物体<br>
+- 内存占用低<br>
+<br>
+**缺点**：<br>
+- 光源数量增加时性能急剧下降（O(n×m)）<br>
+- 重复计算（多个物体在同一像素）<br>
+<br>
+**适用场景**：<br>
+- 移动游戏<br>
+- 光源少的场景<br>
+- 需要大量透明物体的游戏<br>
+<br>
+### 1.2 Deferred Rendering（延迟渲染）<br>
+<br>
+**原理**：先渲染几何信息到G-Buffer，再统一计算光照<br>
+<br>
+```<br>
+Pass 1 - 几何 Pass：<br>
+    渲染所有物体到 G-Buffer<br>
+    G-Buffer 包含：位置、法线、颜色、材质属性<br>
+<br>
+Pass 2 - 光照 Pass：<br>
+    对每个光源：<br>
+        在光源影响范围内计算光照<br>
+        读取 G-Buffer 数据<br>
+```<br>
+<br>
+**优点**：<br>
+- 光源数量对性能影响小<br>
+- 每个像素只计算一次几何<br>
+- 适合大量光源场景<br>
+<br>
+**缺点**：<br>
+- 内存占用高（G-Buffer）<br>
+- 不支持 MSAA（多重采样抗锯齿）<br>
+- 透明物体需要单独处理<br>
+<br>
+**适用场景**：<br>
+- 开放世界游戏<br>
+- 室内场景（多光源）<br>
+- PC/主机游戏<br>
+<br>
+### 1.3 Forward+ / Tiled Forward Rendering<br>
+<br>
+**原理**：结合 Forward 和 Deferred 的优点<br>
+<br>
+```<br>
+1. 将屏幕划分为 Tile（通常 16x16 像素）<br>
+2. 对每个 Tile，计算影响它的光源列表<br>
+3. 前向渲染，但每个像素只计算相关光源<br>
+```<br>
+<br>
+**优点**：<br>
+- 支持大量光源（比 Forward 多）<br>
+- 支持 MSAA<br>
+- 支持透明物体<br>
+- 内存占用适中<br>
+<br>
+**适用场景**：<br>
+- 现代游戏的主流选择<br>
+- Unity URP、Unreal 默认管线<br>
+<br>
+### 1.4 Clustered Rendering<br>
+<br>
+**原理**：在 Tile 的基础上增加深度维度<br>
+<br>
+```<br>
+1. 将视锥体划分为 3D 簇（Cluster）<br>
+2. 每个 Cluster 存储影响它的光源列表<br>
+3. 渲染时根据像素深度确定 Cluster，只计算相关光源<br>
+```<br>
+<br>
+**优点**：<br>
+- 支持极大量光源<br>
+- 更好的深度剔除<br>
+- 适合复杂室内场景<br>
+<br>
+**适用场景**：<br>
+- 高端 PC/主机<br>
+- Unity HDRP、Unreal 5<br>
+<br>
+### 1.5 管线对比<br>
+<br>
+| 特性 | Forward | Deferred | Forward+ | Clustered |<br>
+|------|---------|----------|----------|-----------|<br>
+| **光源数量** | < 10 | 100+ | 100+ | 1000+ |<br>
+| **透明物体** | 原生支持 | 需额外处理 | 原生支持 | 原生支持 |<br>
+| **MSAA** | 支持 | 不支持 | 支持 | 支持 |<br>
+| **内存占用** | 低 | 高 | 中 | 中 |<br>
+| **带宽** | 低 | 高 | 中 | 中 |<br>
+| **复杂度** | 低 | 中 | 中 | 高 |<br>
+<br>
+---<br>
+<br>
+## 2. 着色器编程<br>
+<br>
+### 2.1 着色器类型<br>
+<br>
+| 类型 | 阶段 | 用途 |<br>
+|------|------|------|<br>
+| **Vertex Shader** | 顶点处理 | 变换、变形、骨骼动画 |<br>
+| **Fragment/Pixel Shader** | 片元处理 | 光照、纹理采样、颜色计算 |<br>
+| **Geometry Shader** | 图元处理 | 生成额外几何（粒子、毛发） |<br>
+| **Compute Shader** | 通用计算 | 后处理、物理、AI |<br>
+| **Tessellation Shader** | 细分处理 | 动态 LOD、曲面细分 |<br>
+<br>
+### 2.2 HLSL 示例（Unity/Unreal）<br>
+<br>
+```hlsl<br>
+// 基础 PBR 片元着色器（HLSL）<br>
+struct VertexInput<br>
+{<br>
+    float4 position : POSITION;<br>
+    float3 normal : NORMAL;<br>
+    float2 uv : TEXCOORD0;<br>
+};<br>
+<br>
+struct VertexOutput<br>
+{<br>
+    float4 position : SV_POSITION;<br>
+    float3 worldNormal : NORMAL;<br>
+    float2 uv : TEXCOORD0;<br>
+    float3 worldPosition : TEXCOORD1;<br>
+};<br>
+<br>
+// 顶点着色器<br>
+VertexOutput VertexShader(VertexInput input)<br>
+{<br>
+    VertexOutput output;<br>
+    output.position = mul(UNITY_MATRIX_MVP, input.position);<br>
+    output.worldNormal = mul((float3x3)unity_ObjectToWorld, input.normal);<br>
+    output.uv = input.uv;<br>
+    output.worldPosition = mul(unity_ObjectToWorld, input.position).xyz;<br>
+    return output;<br>
+}<br>
+<br>
+// 片元着色器<br>
+float4 FragmentShader(VertexOutput input) : SV_TARGET<br>
+{<br>
+    // 采样纹理<br>
+    float4 albedo = tex2D(_MainTex, input.uv);<br>
+    float3 normal = normalize(input.worldNormal);<br>
+    <br>
+    // 基础光照计算（Lambert）<br>
+    float3 lightDir = normalize(_WorldSpaceLightPos0.xyz);<br>
+    float NdotL = max(dot(normal, lightDir), 0);<br>
+    <br>
+    // 最终颜色<br>
+    float3 diffuse = albedo.rgb * NdotL * _LightColor0.rgb;<br>
+    float3 ambient = albedo.rgb * UNITY_LIGHTMODEL_AMBIENT.rgb;<br>
+    <br>
+    return float4(diffuse + ambient, albedo.a);<br>
+}<br>
+```<br>
+<br>
+### 2.3 GLSL 示例（OpenGL/WebGL）<br>
+<br>
+```glsl<br>
+// 顶点着色器（GLSL）<br>
+#version 300 es<br>
+<br>
+in vec3 a_position;<br>
+in vec3 a_normal;<br>
+in vec2 a_uv;<br>
+<br>
+uniform mat4 u_modelMatrix;<br>
+uniform mat4 u_viewMatrix;<br>
+uniform mat4 u_projectionMatrix;<br>
+<br>
+out vec3 v_worldNormal;<br>
+out vec2 v_uv;<br>
+out vec3 v_worldPosition;<br>
+<br>
+void main()<br>
+{<br>
+    vec4 worldPosition = u_modelMatrix * vec4(a_position, 1.0);<br>
+    gl_Position = u_projectionMatrix * u_viewMatrix * worldPosition;<br>
+    <br>
+    v_worldNormal = mat3(u_modelMatrix) * a_normal;<br>
+    v_uv = a_uv;<br>
+    v_worldPosition = worldPosition.xyz;<br>
+}<br>
+<br>
+// 片元着色器（GLSL）<br>
+#version 300 es<br>
+precision highp float;<br>
+<br>
+in vec3 v_worldNormal;<br>
+in vec2 v_uv;<br>
+in vec3 v_worldPosition;<br>
+<br>
+uniform sampler2D u_mainTex;<br>
+uniform vec3 u_lightDir;<br>
+uniform vec3 u_lightColor;<br>
+<br>
+out vec4 fragColor;<br>
+<br>
+void main()<br>
+{<br>
+    vec4 albedo = texture(u_mainTex, v_uv);<br>
+    vec3 normal = normalize(v_worldNormal);<br>
+    <br>
+    float NdotL = max(dot(normal, -u_lightDir), 0.0);<br>
+    vec3 diffuse = albedo.rgb * NdotL * u_lightColor;<br>
+    <br>
+    fragColor = vec4(diffuse, albedo.a);<br>
+}<br>
+```<br>
+<br>
+### 2.4 Shader Graph / 可视化着色器<br>
+<br>
+| 工具 | 引擎 | 特点 |<br>
+|------|------|------|<br>
+| **Shader Graph** | Unity | 节点图，支持 URP/HDRP |<br>
+| **Material Editor** | Unreal | 节点图，功能强大 |<br>
+| **VisualShader** | Godot | 节点图，轻量 |<br>
+<br>
+---<br>
+<br>
+## 3. 光照模型<br>
+<br>
+### 3.1 PBR（基于物理的渲染）<br>
+<br>
+PBR 是现代游戏的标准光照模型，基于物理原理而非经验公式。<br>
+<br>
+**核心概念**：<br>
+- **Albedo（反照率）**：基础颜色，无光照信息<br>
+- **Metallic（金属度）**：0 = 非金属，1 = 金属<br>
+- **Roughness（粗糙度）**：0 = 镜面，1 = 漫反射<br>
+- **Normal（法线）**：表面微观几何<br>
+- **AO（环境光遮蔽）**：自遮挡阴影<br>
+<br>
+**工作流程**：<br>
+<br>
+| 工作流 | Albedo | Specular | 特点 |<br>
+|--------|--------|----------|------|<br>
+| **Metallic-Roughness** | 包含金属色 | 自动生成 | 更常见，更直观 |<br>
+| **Specular-Glossiness** | 纯漫反射 | 单独贴图 | 更灵活，但易出错 |<br>
+<br>
+```hlsl<br>
+// 简化的 PBR 漫反射计算<br>
+float3 Diffuse_Lambert(float3 albedo)<br>
+{<br>
+    return albedo / PI;<br>
+}<br>
+<br>
+// 简化的 PBR 镜面反射（Blinn-Phong 近似）<br>
+float3 Specular_BlinnPhong(float3 specularColor, float roughness, float3 normal, float3 viewDir, float3 lightDir)<br>
+{<br>
+    float3 halfDir = normalize(lightDir + viewDir);<br>
+    float NdotH = max(dot(normal, halfDir), 0);<br>
+    float specPower = exp2(10 * (1 - roughness) + 1);<br>
+    return specularColor * pow(NdotH, specPower);<br>
+}<br>
+```<br>
+<br>
+### 3.2 IBL（基于图像的光照）<br>
+<br>
+使用环境贴图模拟间接光照：<br>
+<br>
+```<br>
+环境 HDR 贴图<br>
+    ↓<br>
+预计算漫反射辐照度（Irradiance Map）<br>
+预计算镜面反射（Prefiltered Mipmaps）<br>
+    ↓<br>
+运行时采样<br>
+```<br>
+<br>
+### 3.3 Ray Tracing（光线追踪）<br>
+<br>
+实时光线追踪是现代 GPU 的重要特性：<br>
+<br>
+| 效果 | 说明 | 性能影响 |<br>
+|------|------|----------|<br>
+| **Ray Traced Reflections** | 精确反射 | 高 |<br>
+| **Ray Traced Shadows** | 柔和阴影 | 中 |<br>
+| **Ray Traced GI** | 全局光照 | 极高 |<br>
+| **Ray Traced Ambient Occlusion** | 环境光遮蔽 | 中 |<br>
+<br>
+**硬件支持**：<br>
+- NVIDIA RTX（Turing+）<br>
+- AMD RDNA2+<br>
+- Intel Arc<br>
+<br>
+### 3.4 Global Illumination（全局光照）<br>
+<br>
+| 技术 | 原理 | 质量 | 性能 |<br>
+|------|------|------|------|<br>
+| **Lightmap** | 预计算静态光照 | 高 | 运行时零开销 |<br>
+| **Light Probe** | 预计算动态物体采样点 | 中 | 低 |<br>
+| **Realtime GI** | 实时计算间接光 | 中 | 高 |<br>
+| **Lumen**（Unreal 5） | 软件光线追踪 | 高 | 中高 |<br>
+| **DDGI** | 动态漫反射全局光照 | 高 | 中 |<br>
+<br>
+---<br>
+<br>
+## 4. 后处理技术<br>
+<br>
+### 4.1 常见后处理效果<br>
+<br>
+| 效果 | 说明 | 性能 |<br>
+|------|------|------|<br>
+| **Bloom** | 高亮区域泛光 | 中 |<br>
+| **SSAO** | 屏幕空间环境光遮蔽 | 中 |<br>
+| **TAA** | 时域抗锯齿 | 中 |<br>
+| **Motion Blur** | 运动模糊 | 中 |<br>
+| **Depth of Field** | 景深 | 高 |<br>
+| **Chromatic Aberration** | 色差 | 低 |<br>
+| **Vignette** | 暗角 | 低 |<br>
+| **Color Grading** | 调色 | 低 |<br>
+<br>
+### 4.2 抗锯齿技术<br>
+<br>
+| 技术 | 原理 | 质量 | 性能 | 模糊 |<br>
+|------|------|------|------|------|<br>
+| **MSAA** | 多重采样 | 高 | 高 | 无 |<br>
+| **FXAA** | 快速近似 | 低 | 极低 | 有 |<br>
+| **SMAA** | 形态学抗锯齿 | 中 | 低 | 轻微 |<br>
+| **TAA** | 时域累积 | 高 | 中 | 轻微 |<br>
+| **DLSS/FSR/XeSS** | AI/算法超采样 | 极高 | 负（提升性能） | 无 |<br>
+<br>
+### 4.3 超采样技术<br>
+<br>
+| 技术 | 厂商 | 原理 | 性能提升 |<br>
+|------|------|------|----------|<br>
+| **DLSS** | NVIDIA | AI 重建高分辨率 | 2-3x |<br>
+| **FSR** | AMD | 算法 upscale | 2x |<br>
+| **XeSS** | Intel | AI/算法混合 | 2x |<br>
+| **TSR** | Unreal | 时域超分辨率 | 2x |<br>
+<br>
+---<br>
+<br>
+## 5. 性能优化<br>
+<br>
+### 5.1 Draw Call 优化<br>
+<br>
+| 技术 | 原理 | 效果 |<br>
+|------|------|------|<br>
+| **Static Batching** | 合并静态物体 | 减少 Draw Call |<br>
+| **Dynamic Batching** | 运行时合并小物体 | 减少 Draw Call |<br>
+| **GPU Instancing** | 一次绘制多个相同物体 | 大幅减少 Draw Call |<br>
+| **SRP Batcher** | 持续绑定材质数据 | 减少 CPU 开销 |<br>
+| **GPU Driven Rendering** | GPU 直接处理剔除 | 极大量物体 |<br>
+<br>
+```csharp<br>
+// Unity GPU Instancing 示例<br>
+public class GPUInstancing : MonoBehaviour<br>
+{<br>
+    public Mesh mesh;<br>
+    public Material material;<br>
+    public int instanceCount = 1000;<br>
+    <br>
+    private Matrix4x4[] matrices;<br>
+    <br>
+    void Start()<br>
+    {<br>
+        matrices = new Matrix4x4[instanceCount];<br>
+        <br>
+        for (int i = 0; i < instanceCount; i++)<br>
+        {<br>
+            Vector3 position = Random.insideUnitSphere * 50f;<br>
+            Quaternion rotation = Random.rotation;<br>
+            Vector3 scale = Vector3.one * Random.Range(0.5f, 2f);<br>
+            <br>
+            matrices[i] = Matrix4x4.TRS(position, rotation, scale);<br>
+        }<br>
+        <br>
+        // 启用 GPU Instancing<br>
+        material.enableInstancing = true;<br>
+    }<br>
+    <br>
+    void Update()<br>
+    {<br>
+        // 批量绘制<br>
+        Graphics.DrawMeshInstanced(mesh, 0, material, matrices);<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 5.2 遮挡剔除（Occlusion Culling）<br>
+<br>
+```csharp<br>
+// Unity 遮挡剔除设置<br>
+public class OcclusionCullingSetup : MonoBehaviour<br>
+{<br>
+    void Start()<br>
+    {<br>
+        // 标记为静态遮挡物<br>
+        gameObject.isStatic = true;<br>
+        <br>
+        // 烘焙遮挡剔除数据<br>
+        // Window -> Rendering -> Occlusion Culling -> Bake<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 5.3 LOD（Level of Detail）<br>
+<br>
+```csharp<br>
+// Unity LOD Group 设置<br>
+public class LODSetup : MonoBehaviour<br>
+{<br>
+    void Start()<br>
+    {<br>
+        LODGroup lodGroup = gameObject.AddComponent<LODGroup>();<br>
+        <br>
+        LOD[] lods = new LOD[3];<br>
+        <br>
+        // LOD 0：0-50% 距离，高质量模型<br>
+        lods[0] = new LOD(0.5f, new Renderer[] { highQualityMesh });<br>
+        <br>
+        // LOD 1：50-20% 距离，中质量模型<br>
+        lods[1] = new LOD(0.2f, new Renderer[] { mediumQualityMesh });<br>
+        <br>
+        // LOD 2：20% 以下距离，低质量模型/ Billboard<br>
+        lods[2] = new LOD(0.05f, new Renderer[] { lowQualityMesh });<br>
+        <br>
+        lodGroup.SetLODs(lods);<br>
+        lodGroup.RecalculateBounds();<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 5.4 性能预算检查清单<br>
+<br>
+| 指标 | 移动端 | PC | 主机 |<br>
+|------|--------|-----|------|<br>
+| Draw Calls | < 100 | < 2000 | < 5000 |<br>
+| 三角面数 | < 100K | < 5M | < 10M |<br>
+| 纹理内存 | < 200MB | < 2GB | < 4GB |<br>
+| Shader 复杂度 | 简单 | 复杂 | 复杂 |<br>
+| 后处理 | 少量 | 完整 | 完整 |<br>
+<br>
+---<br>
+<br>
+## 6. 跨平台渲染<br>
+<br>
+### 6.1 图形 API 对比<br>
+<br>
+| API | 平台 | 特点 |<br>
+|-----|------|------|<br>
+| **DirectX 12** | Windows/Xbox | 低开销，多线程 |<br>
+| **Vulkan** | 跨平台 | 低开销，显式控制 |<br>
+| **Metal** | Apple | 低开销，Apple 优化 |<br>
+| **OpenGL ES** | 移动端 | 广泛支持，逐渐淘汰 |<br>
+| **WebGPU** | Web | 现代 Web 图形 |<br>
+<br>
+### 6.2 跨平台着色器<br>
+<br>
+```hlsl<br>
+// Unity ShaderLab - 跨平台着色器<br>
+Shader "Custom/CrossPlatform"<br>
+{<br>
+    Properties<br>
+    {<br>
+        _MainTex ("Texture", 2D) = "white" {}<br>
+        _Color ("Color", Color) = (1,1,1,1)<br>
+    }<br>
+    <br>
+    SubShader<br>
+    {<br>
+        Tags { "RenderType"="Opaque" }<br>
+        LOD 100<br>
+        <br>
+        Pass<br>
+        {<br>
+            HLSLPROGRAM<br>
+            #pragma vertex vert<br>
+            #pragma fragment frag<br>
+            <br>
+            // Unity 自动处理平台差异<br>
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"<br>
+            <br>
+            struct Attributes<br>
+            {<br>
+                float4 positionOS : POSITION;<br>
+                float2 uv : TEXCOORD0;<br>
+            };<br>
+            <br>
+            struct Varyings<br>
+            {<br>
+                float4 positionCS : SV_POSITION;<br>
+                float2 uv : TEXCOORD0;<br>
+            };<br>
+            <br>
+            TEXTURE2D(_MainTex);<br>
+            SAMPLER(sampler_MainTex);<br>
+            float4 _Color;<br>
+            <br>
+            Varyings vert(Attributes input)<br>
+            {<br>
+                Varyings output;<br>
+                output.positionCS = TransformObjectToHClip(input.positionOS.xyz);<br>
+                output.uv = input.uv;<br>
+                return output;<br>
+            }<br>
+            <br>
+            half4 frag(Varyings input) : SV_TARGET<br>
+            {<br>
+                half4 col = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, input.uv);<br>
+                return col * _Color;<br>
+            }<br>
+            ENDHLSL<br>
+        }<br>
+    }<br>
+}<br>
+```<br>
+<br>
+---<br>
+<br>
+## 7. 典型游戏渲染案例分析<br>
+<br>
+### 7.1 《赛博朋克 2077》<br>
+<br>
+**渲染技术**：<br>
+- 光线追踪反射/阴影/全局光照<br>
+- DLSS 2.0/3.0<br>
+- 复杂的材质系统<br>
+- 大规模开放世界流送<br>
+<br>
+### 7.2 《艾尔登法环》<br>
+<br>
+**渲染技术**：<br>
+- 自定义引擎（FromSoftware）<br>
+- 大气散射<br>
+- 动态天气<br>
+- 大规模地形渲染<br>
+<br>
+### 7.3 《原神》<br>
+<br>
+**渲染技术**：<br>
+- Unity 自定义渲染管线<br>
+- 卡通渲染（Toon Shading）<br>
+- 跨平台优化（移动/PC/主机）<br>
+- 动态分辨率<br>
+<br>
+**卡通渲染关键**：<br>
+```hlsl<br>
+// 卡通着色器核心<br>
+half4 ToonShading(float3 normal, float3 lightDir, half4 albedo)<br>
+{<br>
+    half NdotL = dot(normal, lightDir);<br>
+    <br>
+    // 硬边光影（而非平滑过渡）<br>
+    half toonRamp = smoothstep(0.0, 0.1, NdotL);<br>
+    <br>
+    // 多级阴影<br>
+    if (NdotL < 0.3) toonRamp = 0.3; // 暗部<br>
+    else if (NdotL < 0.6) toonRamp = 0.6; // 中间调<br>
+    else toonRamp = 1.0; // 亮部<br>
+    <br>
+    // 边缘光（Rim Light）<br>
+    half rim = 1.0 - saturate(dot(viewDir, normal));<br>
+    half3 rimColor = pow(rim, 3) * _RimColor;<br>
+    <br>
+    return half4(albedo.rgb * toonRamp + rimColor, albedo.a);<br>
+}<br>
+```<br>
+<br>
+---<br>
+<br>
+## 8. 渲染系统检查清单<br>
+<br>
+### 8.1 设计阶段<br>
+<br>
+- [ ] 确定目标平台和性能预算<br>
+- [ ] 选择渲染管线（Forward/Deferred/Forward+）<br>
+- [ ] 定义视觉风格（写实/卡通/像素）<br>
+- [ ] 规划光照策略（实时光/烘焙/混合）<br>
+<br>
+### 8.2 实现阶段<br>
+<br>
+- [ ] 设置渲染管线<br>
+- [ ] 创建主着色器<br>
+- [ ] 配置光照系统<br>
+- [ ] 实施后处理效果<br>
+- [ ] 设置 LOD 系统<br>
+<br>
+### 8.3 优化阶段<br>
+<br>
+- [ ] 分析 Draw Call<br>
+- [ ] 优化材质和着色器<br>
+- [ ] 配置遮挡剔除<br>
+- [ ] 压缩纹理<br>
+- [ ] 测试目标平台性能<br>
+<br>
+---<br>
+<br>
+## 参考来源<br>
+<br>
+- Unity Scriptable Render Pipeline 官方文档<br>
+- Unreal Rendering 官方文档<br>
+- Godot Rendering 官方文档<br>
+- 《Real-Time Rendering》— Tomas Akenine-Möller<br>
+- 《Physically Based Rendering》— Matt Pharr<br>
+- GDC 演讲：《The Rendering of The Last of Us Part II》<br>
+- SIGGRAPH 论文：各种渲染技术<br>
 </article></body>
 </html>

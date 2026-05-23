@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>Linux Process Management — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-Process management in Linux: `ps aux` (list processes), `top/htop` (interactive monitor), `kill PID` (send signal), `nice/renice` (adjust priority). Each process has PID, PPID (parent), state (Running/Sleeping/Zombie), priority (nice value: -20 highest, 19 lowest). Background: `command &`, `bg/fg` to manage.<br>
-<br>
-## Core Explanation<br>
-<br>
-Signals: SIGTERM (15, graceful), SIGKILL (9, cannot be caught), SIGSTOP (19, suspend), SIGINT (2, Ctrl+C). Process states: R (running), S (sleeping interruptible), D (uninterruptible sleep, I/O), Z (zombie, terminated but not reaped). /proc filesystem: `ls /proc/PID/` shows process info. `strace` traces system calls. `lsof` lists open files.<br>
-<br>
-## Further Reading<br>
-<br>
-- [Linux Manual Pages — ps, top, kill, nice](undefined)<br>
+<body><article><br>
+## TL;DR<br>
+<br>
+Process management in Linux: `ps aux` (list processes), `top/htop` (interactive monitor), `kill PID` (send signal), `nice/renice` (adjust priority). Each process has PID, PPID (parent), state (Running/Sleeping/Zombie), priority (nice value: -20 highest, 19 lowest). Background: `command &`, `bg/fg` to manage.<br>
+<br>
+## Core Explanation<br>
+<br>
+Signals: SIGTERM (15, graceful), SIGKILL (9, cannot be caught), SIGSTOP (19, suspend), SIGINT (2, Ctrl+C). Process states: R (running), S (sleeping interruptible), D (uninterruptible sleep, I/O), Z (zombie, terminated but not reaped). /proc filesystem: `ls /proc/PID/` shows process info. `strace` traces system calls. `lsof` lists open files.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Linux Manual Pages — ps, top, kill, nice](undefined)<br>
 </article></body>
 </html>

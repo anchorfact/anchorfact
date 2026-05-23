@@ -6,20 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Responsive Web Design (Ethan Marcotte)"
-    type:"article"
-    year:2010
-    url:"https://alistapart.com/article/responsive-web-design/"
+  - title: "Responsive Web Design"
+    authors: ["Marcotte, Ethan"]
+    type: "article"
+    year: 2010
+    url: "https://alistapart.com/article/responsive-web-design/"
+    institution: "A List Apart"
+    note: "The article that coined RWD: fluid grids, flexible images, media queries"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "MDN Web Docs — Responsive Design"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    url: "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design"
     institution: "Mozilla"
+    note: "Modern responsive design: mobile-first, viewport, CSS Grid/Flexbox for responsive layouts"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

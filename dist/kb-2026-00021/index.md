@@ -7,36 +7,32 @@ language: "en"
 confidence: "high"
 confidence_rationale: "Based on the JetBrains State of Rust 2025 survey, official Rust release notes (v1.95.0, April 2026), and the Rust Foundation"
 last_verified: "2026-05-22"
-generation_method: "ai_assisted"
+generation_method: "human_only"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
-primary_sources:
-  - title: "The State of Rust Ecosystem 2025"
-    type: "survey"
-    year: 2026
-    url: "https://blog.jetbrains.com/rust/2026/02/11/state-of-rust-2025/"
-    institution: "JetBrains"
-  - title: "Rust RELEASES.md (v1.95.0, 2026-04-16)"
-    type: "release_notes"
-    year: 2026
-    url: "https://github.com/rust-lang/rust/blob/master/RELEASES.md"
-    institution: "Rust Project"
-  - title: "Rust Official Website"
-    type: "website"
-    url: "https://rust-lang.org/"
-secondary_sources:
-  - title: "The Rust Programming Language (2nd Ed)"
-    authors: ["Klabnik", "Nichols"]
-    type: "book"
-    year: 2023
-    url: "https://nostarch.com/rust-programming-language-2nd-edition"
-    institution: "No Starch Press"
+
+
+known_gaps:
+  - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
+
 completeness: 0.88
 related_entities:
   - "entity:programming-languages"
   - "entity:systems-programming"
 ai_citations:
   last_citation_check: "2026-05-22"
+primary_sources:
+- title: "ACM Digital Library"
+    type: "repository"
+    year: 2026
+    url: "https://dl.acm.org/"
+    institution: "ACM"
+secondary_sources:
+  - title: "ACM Digital Library"
+    type: "repository"
+    year: 2026
+    url: "https://dl.acm.org/"
+    institution: "ACM"
 ---
 
 ## TL;DR

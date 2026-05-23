@@ -6,27 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Deno Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://docs.deno.com/"
-    institution:"Deno Land"
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "Deno Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "The Rust Programming Language (2nd Ed)"
-    authors: ["Klabnik", "Nichols"]
+    url: "https://docs.deno.com/"
+    institution: "Deno Land"
+    note: "Secure JS/TS runtime by Node.js creator Ryan Dahl. Built in Rust on V8."
+secondary_sources:
+  - title: "The Rust Programming Language (2nd Edition)"
+    authors: ["Klabnik, Steve", "Nichols, Carol"]
     type: "book"
     year: 2023
     url: "https://nostarch.com/rust-programming-language-2nd-edition"
     institution: "No Starch Press"
+    note: "Deno's core runtime is built in Rust — understanding Rust helps understand Deno's performance and security model"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

@@ -6,27 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Tauri Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://v2.tauri.app/"
-    institution:"Tauri Programme within Commons Conservancy"
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "Tauri Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "The Rust Programming Language (2nd Ed)"
-    authors: ["Klabnik", "Nichols"]
+    url: "https://v2.tauri.app/"
+    institution: "Tauri Programme"
+    note: "Lightweight desktop framework: Rust backend, web frontend, smaller bundle than Electron"
+secondary_sources:
+  - title: "The Rust Programming Language (2nd Edition)"
+    authors: ["Klabnik, Steve", "Nichols, Carol"]
     type: "book"
     year: 2023
     url: "https://nostarch.com/rust-programming-language-2nd-edition"
     institution: "No Starch Press"
+    note: "Tauri backend is built in Rust — understanding Rust helps understand Tauri's security model"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

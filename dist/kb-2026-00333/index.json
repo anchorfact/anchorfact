@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00333",
   "headline": "Theory of Relativity",
   "description": "Einstein's relativity (1905 Special, 1915 General) redefined space, time, and gravity. Special relativity: laws of physics same for all non-accelerating observers; speed of light is constant → time dilation, length contraction, E=mc². General relativity: gravity is curvature of spacetime by mass/energy.",
-  "dateCreated": "2026-05-22T09:02:12.801Z",
-  "dateModified": "2026-05-22T09:02:12.801Z",
+  "dateCreated": "2026-05-22T14:18:55.110Z",
+  "dateModified": "2026-05-22T14:18:55.110Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

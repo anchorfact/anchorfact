@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00153",
   "headline": "CI/CD Pipeline",
   "description": "CI/CD automates software delivery: Continuous Integration (merge frequently, auto-test), Continuous Delivery (auto-deploy to staging), Continuous Deployment (auto-deploy to production). Core principle: every commit triggers pipeline → build → test → deploy. Reduces integration pain and speeds feedback loops.",
-  "dateCreated": "2026-05-22T09:02:12.237Z",
-  "dateModified": "2026-05-22T09:02:12.237Z",
+  "dateCreated": "2026-05-22T14:18:54.471Z",
+  "dateModified": "2026-05-22T14:18:54.471Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

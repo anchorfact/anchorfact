@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00019",
   "headline": "GraphRAG (Microsoft)",
   "description": "GraphRAG is a structured, hierarchical approach to Retrieval-Augmented Generation developed by Microsoft Research, open-sourced on July 2, 2024. Unlike standard RAG which retrieves flat text chunks via vector similarity, GraphRAG constructs a knowledge graph from raw text, detects communities using graph algorithms, and generates hierarchical summaries at multiple levels. This enables both local (entity-level) and global (dataset-level) query understanding. As of May 2026, the open-source repository has 33,157 GitHub stars and is deployed in Microsoft Discovery, an Azure-based agentic platform for scientific research.",
-  "dateCreated": "2026-05-22T09:02:12.097Z",
-  "dateModified": "2026-05-22T09:02:12.097Z",
+  "dateCreated": "2026-05-22T14:18:54.318Z",
+  "dateModified": "2026-05-22T14:18:54.318Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

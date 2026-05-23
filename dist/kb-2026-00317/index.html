@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>Vault (HashiCorp) — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-HashiCorp Vault (2015) is a secrets management tool — securely stores and controls access to tokens, passwords, certificates, and API keys. Secrets are encrypted at rest and in transit. Dynamic secrets (on-demand, short-lived) eliminate credential sprawl. Enterprise-grade access control via policies.<br>
-<br>
-## Core Explanation<br>
-<br>
-Secret engines: KV (key-value), AWS (dynamic IAM credentials), PKI (X.509 certificates), database (dynamic DB credentials). Authentication methods: token, Kubernetes, AWS IAM, LDAP, GitHub, OIDC. Policies (HCL): `path 'secret/*' { capabilities = ['read'] }`. Audit logging: track every access. Seal/unseal: Shamir's Secret Sharing for master key.<br>
-<br>
-## Further Reading<br>
-<br>
-- [Vault Documentation](https://developer.hashicorp.com/vault/docs)<br>
+<body><article><br>
+## TL;DR<br>
+<br>
+HashiCorp Vault (2015) is a secrets management tool — securely stores and controls access to tokens, passwords, certificates, and API keys. Secrets are encrypted at rest and in transit. Dynamic secrets (on-demand, short-lived) eliminate credential sprawl. Enterprise-grade access control via policies.<br>
+<br>
+## Core Explanation<br>
+<br>
+Secret engines: KV (key-value), AWS (dynamic IAM credentials), PKI (X.509 certificates), database (dynamic DB credentials). Authentication methods: token, Kubernetes, AWS IAM, LDAP, GitHub, OIDC. Policies (HCL): `path 'secret/*' { capabilities = ['read'] }`. Audit logging: track every access. Seal/unseal: Shamir's Secret Sharing for master key.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Vault Documentation](https://developer.hashicorp.com/vault/docs)<br>
 </article></body>
 </html>

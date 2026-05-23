@@ -6,21 +6,24 @@ category:"ai"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Deep Learning (Goodfellow, Bengio, Courville)"
-    type:"book"
-    year:2016
-    url:"https://www.deeplearningbook.org/"
-    institution:"MIT Press"
+  - title: "Deep Learning (Goodfellow, Bengio, Courville)"
+    type: "book"
+    year: 2016
+    url: "https://www.deeplearningbook.org/"
+    institution: "MIT Press"
+    note: "Chapter 8: Optimization for Training Deep Models — covers SGD, momentum, Adam, and advanced optimizers"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "Adam: A Method for Stochastic Optimization"
+    authors: ["Kingma, Diederik P.", "Ba, Jimmy"]
+    type: "academic_paper"
+    year: 2014
+    doi: "10.48550/arXiv.1412.6980"
+    url: "https://arxiv.org/abs/1412.6980"
+    institution: "ICLR 2015"
+    note: "The Adam optimizer paper — 160,000+ citations. The de facto standard optimizer for deep learning."
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

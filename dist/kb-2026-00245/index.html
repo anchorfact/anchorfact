@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>Redis Data Types — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-Redis supports rich data types beyond simple key-value: String, List, Set, Sorted Set, Hash, Bitmap, HyperLogLog, Geospatial, Stream. Each type has specialized atomic operations — Redis is often called a 'data structure server'. Streams (Redis 5.0, 2018) enable message queue and event sourcing patterns.<br>
-<br>
-## Core Explanation<br>
-<br>
-Strings: `SET key val`, `INCR` (atomic counter). Lists: `LPUSH/RPUSH`, `LPOP/RPOP` — queue/stack. Sets: `SADD`, `SINTER` (intersection). Sorted Sets: `ZADD key score member`, `ZRANGE` — leaderboards. Hashes: `HSET user:1 name Alice` — object storage. Streams: `XADD mystream * field value`, consumer groups for reliable message processing.<br>
-<br>
-## Further Reading<br>
-<br>
-- [Redis Data Types Documentation](undefined)<br>
+<body><article><br>
+## TL;DR<br>
+<br>
+Redis supports rich data types beyond simple key-value: String, List, Set, Sorted Set, Hash, Bitmap, HyperLogLog, Geospatial, Stream. Each type has specialized atomic operations — Redis is often called a 'data structure server'. Streams (Redis 5.0, 2018) enable message queue and event sourcing patterns.<br>
+<br>
+## Core Explanation<br>
+<br>
+Strings: `SET key val`, `INCR` (atomic counter). Lists: `LPUSH/RPUSH`, `LPOP/RPOP` — queue/stack. Sets: `SADD`, `SINTER` (intersection). Sorted Sets: `ZADD key score member`, `ZRANGE` — leaderboards. Hashes: `HSET user:1 name Alice` — object storage. Streams: `XADD mystream * field value`, consumer groups for reliable message processing.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Redis Data Types Documentation](undefined)<br>
 </article></body>
 </html>

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>Docker Security Best Practices — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-Docker containers share the host kernel, making security critical. Best practices: run as non-root user, use minimal base images (distroless, alpine), scan images for vulnerabilities, limit capabilities, use read-only root filesystems, enable seccomp/AppArmor profiles.<br>
-<br>
-## Core Explanation<br>
-<br>
-`USER 1000` in Dockerfile (never run as root). `docker scan` or Trivy for vulnerability scanning. `--read-only` flag makes rootfs immutable. `--cap-drop=ALL --cap-add=NET_BIND_SERVICE` limits Linux capabilities. Docker Bench Security checks against CIS Benchmark. Podman (daemonless, rootless by default) and gVisor (user-space kernel) provide stronger isolation.<br>
-<br>
-## Further Reading<br>
-<br>
-- [undefined](undefined)<br>
+<body><article><br>
+## TL;DR<br>
+<br>
+Docker containers share the host kernel, making security critical. Best practices: run as non-root user, use minimal base images (distroless, alpine), scan images for vulnerabilities, limit capabilities, use read-only root filesystems, enable seccomp/AppArmor profiles.<br>
+<br>
+## Core Explanation<br>
+<br>
+`USER 1000` in Dockerfile (never run as root). `docker scan` or Trivy for vulnerability scanning. `--read-only` flag makes rootfs immutable. `--cap-drop=ALL --cap-add=NET_BIND_SERVICE` limits Linux capabilities. Docker Bench Security checks against CIS Benchmark. Podman (daemonless, rootless by default) and gVisor (user-space kernel) provide stronger isolation.<br>
+<br>
+## Further Reading<br>
+<br>
+- [undefined](undefined)<br>
 </article></body>
 </html>

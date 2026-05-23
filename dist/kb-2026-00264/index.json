@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00264",
   "headline": "Linux Kernel Modules",
   "description": "Kernel modules extend Linux functionality without recompiling the kernel. `lsmod` lists loaded modules. `modprobe module` loads with dependencies. Kernel modules enable dynamic hardware support: load USB driver when device plugged, unload when removed. Modules run in kernel space (ring 0) — no safety net.",
-  "dateCreated": "2026-05-22T09:02:12.379Z",
-  "dateModified": "2026-05-22T09:02:12.379Z",
+  "dateCreated": "2026-05-22T14:18:54.632Z",
+  "dateModified": "2026-05-22T14:18:54.632Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

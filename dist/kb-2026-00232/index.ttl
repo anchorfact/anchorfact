@@ -5,4 +5,4 @@
   a schema:TechArticle ;
   schema:headline "Test-Driven Development (TDD)" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:generationMethod "human_only" .

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>Serverless Computing — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-Serverless computing abstracts away server management — developers write and deploy functions; the cloud provider handles provisioning, scaling, and maintenance. Pay-per-request model (no idle cost). AWS Lambda (2014) pioneered the model; others: Azure Functions, Google Cloud Functions, Cloudflare Workers.<br>
-<br>
-## Core Explanation<br>
-<br>
-FaaS (Functions as a Service) is the core of serverless. Cold start: first invocation after idle period has latency penalty (provisioned concurrency mitigates). Stateless by design — state must be externalized (DynamoDB, S3). Event-driven: triggered by HTTP, S3 uploads, queue messages, cron schedules. Serverless is NOT 'no servers' — it's 'no servers YOU manage'.<br>
-<br>
-## Further Reading<br>
-<br>
-- [AWS Lambda Documentation](https://docs.aws.amazon.com/lambda/)<br>
+<body><article><br>
+## TL;DR<br>
+<br>
+Serverless computing abstracts away server management — developers write and deploy functions; the cloud provider handles provisioning, scaling, and maintenance. Pay-per-request model (no idle cost). AWS Lambda (2014) pioneered the model; others: Azure Functions, Google Cloud Functions, Cloudflare Workers.<br>
+<br>
+## Core Explanation<br>
+<br>
+FaaS (Functions as a Service) is the core of serverless. Cold start: first invocation after idle period has latency penalty (provisioned concurrency mitigates). Stateless by design — state must be externalized (DynamoDB, S3). Event-driven: triggered by HTTP, S3 uploads, queue messages, cron schedules. Serverless is NOT 'no servers' — it's 'no servers YOU manage'.<br>
+<br>
+## Further Reading<br>
+<br>
+- [AWS Lambda Documentation](https://docs.aws.amazon.com/lambda/)<br>
 </article></body>
 </html>

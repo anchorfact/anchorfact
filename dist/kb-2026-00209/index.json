@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00209",
   "headline": "Supply Chain Management",
   "description": "Supply Chain Management (SCM) coordinates the flow of goods from raw materials to end customer. Key activities: procurement, manufacturing, warehousing, transportation, demand forecasting. Modern SCM is data-driven with real-time visibility and AI optimization.",
-  "dateCreated": "2026-05-22T09:02:12.201Z",
-  "dateModified": "2026-05-22T09:02:12.201Z",
+  "dateCreated": "2026-05-22T14:18:54.431Z",
+  "dateModified": "2026-05-22T14:18:54.431Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

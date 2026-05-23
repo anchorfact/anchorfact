@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>Database Indexing — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-Database indexes are data structures that speed up data retrieval — like a book's index. Common types: B-tree (default, range queries, sorting), Hash (equality only), GIN (full-text, arrays, JSONB in PostgreSQL), GiST (geometric, full-text), BRIN (block range, large append-only tables). Without index: sequential scan (read every row).<br>
-<br>
-## Core Explanation<br>
-<br>
-B-tree: O(log n) lookups, supports =, <, >, BETWEEN, ORDER BY. Multi-column index: order matters — (a, b) supports a=1 AND b=2, a=1 only, but NOT b=2 only. Partial index: index subset of rows — WHERE active = true. Covering index: includes all columns needed by query — index-only scan (fastest). Index maintenance cost: writes slow down because indexes must update. Monitor unused indexes and remove them.<br>
-<br>
-## Further Reading<br>
-<br>
-- [SQL Performance Explained (Markus Winand)](undefined)<br>
+<body><article><br>
+## TL;DR<br>
+<br>
+Database indexes are data structures that speed up data retrieval — like a book's index. Common types: B-tree (default, range queries, sorting), Hash (equality only), GIN (full-text, arrays, JSONB in PostgreSQL), GiST (geometric, full-text), BRIN (block range, large append-only tables). Without index: sequential scan (read every row).<br>
+<br>
+## Core Explanation<br>
+<br>
+B-tree: O(log n) lookups, supports =, <, >, BETWEEN, ORDER BY. Multi-column index: order matters — (a, b) supports a=1 AND b=2, a=1 only, but NOT b=2 only. Partial index: index subset of rows — WHERE active = true. Covering index: includes all columns needed by query — index-only scan (fastest). Index maintenance cost: writes slow down because indexes must update. Monitor unused indexes and remove them.<br>
+<br>
+## Further Reading<br>
+<br>
+- [SQL Performance Explained (Markus Winand)](undefined)<br>
 </article></body>
 </html>

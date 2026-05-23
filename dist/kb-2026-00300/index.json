@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00300",
   "headline": "Electron",
   "description": "Electron (GitHub, 2013, formerly Atom Shell) is a framework for building desktop applications with web technologies (HTML, CSS, JavaScript) using Chromium and Node.js. Each app bundles both runtimes. Used by VS Code, Slack, Discord, Figma, Notion, 1Password.",
-  "dateCreated": "2026-05-22T09:02:12.296Z",
-  "dateModified": "2026-05-22T09:02:12.296Z",
+  "dateCreated": "2026-05-22T14:18:54.538Z",
+  "dateModified": "2026-05-22T14:18:54.538Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

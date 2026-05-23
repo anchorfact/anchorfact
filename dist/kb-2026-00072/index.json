@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00072",
   "headline": "MongoDB",
   "description": "MongoDB is a document-oriented NoSQL database first released in 2009 by MongoDB Inc. (formerly 10gen). Instead of tables and rows, it stores data as JSON-like BSON documents in collections, with a flexible schema. As of May 2026, MongoDB has 28,333 GitHub stars and is one of the most popular NoSQL databases, used by companies including Uber, eBay, and Bosch. MongoDB 8.0 (2024) is the current major release.",
-  "dateCreated": "2026-05-22T09:02:12.395Z",
-  "dateModified": "2026-05-22T09:02:12.395Z",
+  "dateCreated": "2026-05-22T14:18:54.645Z",
+  "dateModified": "2026-05-22T14:18:54.645Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

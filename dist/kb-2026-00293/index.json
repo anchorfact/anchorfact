@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00293",
   "headline": "Laravel",
   "description": "Laravel (Taylor Otwell, 2011) is the most popular PHP web framework, known for elegant syntax and comprehensive ecosystem. Features: Eloquent ORM, Blade templating, Artisan CLI, migrations, queues, broadcasting. Laravel ecosystem includes Forge (server management), Vapor (serverless), Nova (admin panel).",
-  "dateCreated": "2026-05-22T09:02:12.374Z",
-  "dateModified": "2026-05-22T09:02:12.374Z",
+  "dateCreated": "2026-05-22T14:18:54.625Z",
+  "dateModified": "2026-05-22T14:18:54.625Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

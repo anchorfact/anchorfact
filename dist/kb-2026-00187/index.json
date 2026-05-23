@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00187",
   "headline": "SMTP Protocol",
   "description": "SMTP (Simple Mail Transfer Protocol) is the standard for sending email across the Internet. It uses TCP port 25 (or 587 for submission). Email clients submit mail; MTAs relay it between servers. SMTP is text-based and uses `MAIL FROM`, `RCPT TO`, `DATA` commands.",
-  "dateCreated": "2026-05-22T09:02:12.484Z",
-  "dateModified": "2026-05-22T09:02:12.484Z",
+  "dateCreated": "2026-05-22T14:18:54.745Z",
+  "dateModified": "2026-05-22T14:18:54.745Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00182",
   "headline": "TCP vs UDP",
   "description": "TCP (Transmission Control Protocol) provides reliable, ordered, error-checked delivery — the 'guaranteed delivery' protocol. UDP (User Datagram Protocol) provides bare-bones, best-effort delivery — the 'fire and forget' protocol. TCP is for web pages, email, file transfers; UDP is for real-time (VoIP, gaming, streaming).",
-  "dateCreated": "2026-05-22T09:02:12.507Z",
-  "dateModified": "2026-05-22T09:02:12.507Z",
+  "dateCreated": "2026-05-22T14:18:54.770Z",
+  "dateModified": "2026-05-22T14:18:54.770Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

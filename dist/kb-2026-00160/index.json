@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00160",
   "headline": "Microservices Architecture",
   "description": "Microservices architectural style structures an application as a collection of loosely coupled, independently deployable services. Each service owns its data, communicates via APIs, and can be developed/deployed/scaled independently. Contrasts with monolithic architecture (all-in-one).",
-  "dateCreated": "2026-05-22T09:02:12.391Z",
-  "dateModified": "2026-05-22T09:02:12.391Z",
+  "dateCreated": "2026-05-22T14:18:54.642Z",
+  "dateModified": "2026-05-22T14:18:54.642Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

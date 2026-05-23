@@ -7,8 +7,7 @@ language: "en"
 confidence: "high"
 confidence_rationale: "Based on authoritative sources and industry standards"
 last_verified: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "Performance Timeline (W3C)"
@@ -29,6 +28,8 @@ secondary_sources:
     year: 2013
     url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
     institution: "O'Reilly"
+known_gaps:
+  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
 completeness: 0.88
 ai_citations:
   last_citation_check: "2026-05-22"

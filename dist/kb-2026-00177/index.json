@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00177",
   "headline": "Prettier",
   "description": "Prettier is an opinionated code formatter supporting JavaScript, TypeScript, CSS, HTML, JSON, Markdown, YAML, and more. It enforces consistent formatting by parsing code and re-printing it with its own rules. Minimizes bike-shedding in code reviews.",
-  "dateCreated": "2026-05-22T09:02:12.437Z",
-  "dateModified": "2026-05-22T09:02:12.437Z",
+  "dateCreated": "2026-05-22T14:18:54.692Z",
+  "dateModified": "2026-05-22T14:18:54.692Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

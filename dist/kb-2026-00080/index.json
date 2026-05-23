@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00080",
   "headline": "Swift Programming Language",
   "description": "Swift is a general-purpose, compiled programming language developed by Apple, first announced at WWDC 2014 and open-sourced in December 2015. Designed as a modern replacement for Objective-C, Swift combines safety (optionals, strong typing, automatic memory management via ARC) with performance (LLVM-based compilation). It is the primary language for iOS, macOS, watchOS, and visionOS app development, and is increasingly used for server-side development via the Vapor framework.",
-  "dateCreated": "2026-05-22T09:02:12.500Z",
-  "dateModified": "2026-05-22T09:02:12.500Z",
+  "dateCreated": "2026-05-22T14:18:54.762Z",
+  "dateModified": "2026-05-22T14:18:54.762Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

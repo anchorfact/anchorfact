@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00092",
   "headline": "WebGPU",
   "description": "WebGPU is the next-generation graphics and compute API for the web, succeeding WebGL. Based on modern GPU APIs (Vulkan, Metal, Direct3D 12), it provides lower-level access for better performance, compute shaders, and explicit resource management.",
-  "dateCreated": "2026-05-22T09:02:12.537Z",
-  "dateModified": "2026-05-22T09:02:12.537Z",
+  "dateCreated": "2026-05-22T14:18:54.802Z",
+  "dateModified": "2026-05-22T14:18:54.802Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

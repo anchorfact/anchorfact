@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00310",
   "headline": "Haskell Language",
   "description": "Haskell (1990, named after Haskell Curry) is a purely functional, lazily evaluated programming language with a powerful static type system. All functions are pure (no side effects by default), and IO is explicitly handled through monads. Used in: finance (Standard Chartered, Barclays), compiler development (GHC).",
-  "dateCreated": "2026-05-22T09:02:12.341Z",
-  "dateModified": "2026-05-22T09:02:12.341Z",
+  "dateCreated": "2026-05-22T14:18:54.588Z",
+  "dateModified": "2026-05-22T14:18:54.588Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

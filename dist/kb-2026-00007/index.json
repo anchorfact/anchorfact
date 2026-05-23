@@ -3,9 +3,9 @@
   "@type": "TechArticle",
   "@id": "https://anchorfact.org/kb/kb-2026-00007",
   "headline": "Reinforcement Learning from Human Feedback (RLHF)",
-  "description": "RLHF (Reinforcement Learning from Human Feedback) is a technique for aligning AI models with human preferences by using human feedback as a reward signal for reinforcement learning. First demonstrated for Atari games and robotics (Christiano et al., 2017), RLHF became the standard alignment method for production LLMs with OpenAI's InstructGPT (2022), which showed that models fine-tuned with RLHF produce more helpful, harmless, and honest outputs than those trained with supervised fine-tuning alone. As of 2026, RLHF is used by virtually all major LLM providers.",
-  "dateCreated": "2026-05-22T09:02:12.117Z",
-  "dateModified": "2026-05-22T09:02:12.117Z",
+  "description": "RLHF (Reinforcement Learning from Human Feedback) is a three-stage technique for aligning AI models with human preferences. First demonstrated on Atari games and simulated robotics (Christiano et al., 2017), it became the industry standard with OpenAI's InstructGPT (Ouyang et al., 2022, NeurIPS), which showed that a 1.3B parameter model fine-tuned with RLHF was preferred by human raters over the 175B GPT-3 base model. RLHF has since been adopted by all major LLM providers and is the alignment method behind ChatGPT, Claude, Gemini, and Grok. As of May 2026, the InstructGPT paper has been cited over 3,000 times.",
+  "dateCreated": "2026-05-22T14:18:54.341Z",
+  "dateModified": "2026-05-22T14:18:54.341Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

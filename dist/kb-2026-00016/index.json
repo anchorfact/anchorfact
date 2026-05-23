@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00016",
   "headline": "Model Context Protocol (MCP)",
   "description": "The Model Context Protocol (MCP) is an open standard for connecting AI models to external data sources and tools, introduced by Anthropic on November 25, 2024. It replaces the fragmented pattern of custom integrations with a unified client-server protocol. As of December 2025, MCP has been adopted by OpenAI, Google, and Microsoft; hosts over 10,000 public servers; sees 97 million SDK downloads per month; and has been donated to the Linux Foundation under the new Agentic AI Foundation (AAIF).",
-  "dateCreated": "2026-05-22T09:02:12.104Z",
-  "dateModified": "2026-05-22T09:02:12.104Z",
+  "dateCreated": "2026-05-22T14:18:54.325Z",
+  "dateModified": "2026-05-22T14:18:54.325Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

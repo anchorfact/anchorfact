@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00208",
   "headline": "Product Listing Optimization (Amazon)",
   "description": "Amazon product listing optimization improves search visibility (Amazon SEO / A9 algorithm) and conversion. Key elements: product title (most keywords in first 80 chars), bullet points (features + benefits), product description (A+ Content), backend search terms, high-quality images, and competitive pricing.",
-  "dateCreated": "2026-05-22T09:02:12.195Z",
-  "dateModified": "2026-05-22T09:02:12.195Z",
+  "dateCreated": "2026-05-22T14:18:54.424Z",
+  "dateModified": "2026-05-22T14:18:54.424Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

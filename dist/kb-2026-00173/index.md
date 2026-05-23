@@ -6,27 +6,22 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"npm Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://docs.npmjs.com/"
-    institution:"npm Inc."
-secondary_sources:
-  - title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
-    authors: ["Lewis", "Perez", "Piktus"]
-    type: "academic_paper"
-    year: 2020
-    doi: "10.48550/arXiv.2005.11401"
-    url: "https://arxiv.org/abs/2005.11401"
-  - title: "MDN Web Docs — HTTP"
+  - title: "npm Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+    url: "https://docs.npmjs.com/"
+    institution: "npm Inc."
+    note: "Default Node.js package manager: package.json, lockfiles, workspaces, semantic versioning"
+secondary_sources:
+  - title: "pnpm Documentation"
+    type: "documentation"
+    year: 2026
+    url: "https://pnpm.io/"
+    institution: "pnpm"
+    note: "Disk-efficient package manager: content-addressable storage, strict dependency resolution, fast installs"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

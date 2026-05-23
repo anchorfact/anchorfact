@@ -3,9 +3,9 @@
   "@type": "TechArticle",
   "@id": "https://anchorfact.org/kb/kb-gd-033",
   "headline": "叙事架构代码实现指南",
-  "description": "叙事架构代码实现指南",
-  "dateCreated": "2026-05-22T09:02:12.618Z",
-  "dateModified": "2026-05-22T09:02:12.618Z",
+  "description": "叙事架构代码实现指南\r",
+  "dateCreated": "2026-05-22T14:18:54.914Z",
+  "dateModified": "2026-05-22T14:18:54.914Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

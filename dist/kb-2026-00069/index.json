@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00069",
   "headline": "CSS (Cascading Style Sheets)",
   "description": "CSS (Cascading Style Sheets) is a stylesheet language developed by the W3C that describes the presentation of HTML documents. First proposed by Håkon Wium Lie in 1994, CSS has evolved from basic text styling to a powerful layout and animation engine. Modern CSS (2024+) supports container queries, cascade layers, native nesting, `has()` selector, view transitions, and scroll-driven animations — capabilities that previously required JavaScript.",
-  "dateCreated": "2026-05-22T09:02:12.262Z",
-  "dateModified": "2026-05-22T09:02:12.262Z",
+  "dateCreated": "2026-05-22T14:18:54.499Z",
+  "dateModified": "2026-05-22T14:18:54.499Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

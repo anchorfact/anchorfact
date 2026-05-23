@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00268",
   "headline": "Gradient Descent",
   "description": "Gradient descent is the fundamental optimization algorithm for training machine learning models. It iteratively adjusts parameters in the direction of steepest descent of the loss function. Variants: Batch GD (full dataset), Stochastic GD (single example), Mini-batch GD (small batches — standard).",
-  "dateCreated": "2026-05-22T09:02:12.096Z",
-  "dateModified": "2026-05-22T09:02:12.096Z",
+  "dateCreated": "2026-05-22T14:18:54.316Z",
+  "dateModified": "2026-05-22T14:18:54.316Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

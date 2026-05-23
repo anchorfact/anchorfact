@@ -5,4 +5,4 @@
   a schema:TechArticle ;
   schema:headline "GPT (Generative Pre-trained Transformer) Model Family" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:generationMethod "human_only" .

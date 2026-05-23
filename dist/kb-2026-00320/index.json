@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00320",
   "headline": "Consul (HashiCorp)",
   "description": "HashiCorp Consul (2014) is a service mesh and service discovery tool. It provides: service registration + health checking, key-value store, secure service-to-service communication (mTLS + authorization), and multi-datacenter support. Service mesh: sidecar proxy (Envoy) routes and secures traffic.",
-  "dateCreated": "2026-05-22T09:02:12.247Z",
-  "dateModified": "2026-05-22T09:02:12.247Z",
+  "dateCreated": "2026-05-22T14:18:54.482Z",
+  "dateModified": "2026-05-22T14:18:54.482Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

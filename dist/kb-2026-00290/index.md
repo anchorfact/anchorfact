@@ -6,23 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Ruby on Rails Guides"
-    type:"documentation"
-    year:2026
-    url:"https://guides.rubyonrails.org/"
-    institution:"Rails Core Team"
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "Ruby on Rails Guides"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+    url: "https://guides.rubyonrails.org/"
+    institution: "Rails Core Team"
+    note: "MVC web framework: ActiveRecord, ActionPack, convention over configuration, Hotwire"
+secondary_sources:
   - title: "RESTful Web APIs"
-    authors: ["Richardson", "Amundsen"]
+    authors: ["Richardson, Leonard", "Amundsen, Mike"]
+    type: "book"
+    year: 2013
+    url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
+    institution: "O'Reilly"
+    note: "Rails pioneered RESTful API design in web frameworks — DHH's convention-over-configuration REST approach"
     type: "book"
     year: 2013
     url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"

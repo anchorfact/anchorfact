@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>Message Queues — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-Message queues enable asynchronous, decoupled communication between services. Producer sends message to queue; consumer picks it up — no direct connection needed. Benefits: load leveling, fault tolerance, temporal decoupling. Popular MQs: RabbitMQ (AMQP), Apache Kafka (log-based), Amazon SQS (managed), Redis Streams.<br>
-<br>
-## Core Explanation<br>
-<br>
-Patterns: Point-to-Point (one consumer), Publish-Subscribe (many consumers), Competing Consumers (load balancing). Kafka: append-only distributed log, partitions for parallelism, consumer groups track offsets, replayable. RabbitMQ: exchanges route messages to queues (direct, topic, fanout, headers). Dead Letter Queue (DLQ): messages that fail processing go here for inspection.<br>
-<br>
-## Further Reading<br>
-<br>
-- [Enterprise Integration Patterns (Hohpe & Woolf)](undefined)<br>
+<body><article><br>
+## TL;DR<br>
+<br>
+Message queues enable asynchronous, decoupled communication between services. Producer sends message to queue; consumer picks it up — no direct connection needed. Benefits: load leveling, fault tolerance, temporal decoupling. Popular MQs: RabbitMQ (AMQP), Apache Kafka (log-based), Amazon SQS (managed), Redis Streams.<br>
+<br>
+## Core Explanation<br>
+<br>
+Patterns: Point-to-Point (one consumer), Publish-Subscribe (many consumers), Competing Consumers (load balancing). Kafka: append-only distributed log, partitions for parallelism, consumer groups track offsets, replayable. RabbitMQ: exchanges route messages to queues (direct, topic, fanout, headers). Dead Letter Queue (DLQ): messages that fail processing go here for inspection.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Enterprise Integration Patterns (Hohpe & Woolf)](undefined)<br>
 </article></body>
 </html>

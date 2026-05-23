@@ -1,370 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>input systems accessibility — AnchorFact</title></head>
-<body><article><br>
-## 1. 输入系统架构<br>
-<br>
-### 1.1 分层架构<br>
-<br>
-```<br>
-┌─────────────────────────────────────────────┐<br>
-│            游戏逻辑层 (Game Actions)          │<br>
-│   Jump | Attack | Interact | Pause | Menu    │<br>
-├─────────────────────────────────────────────┤<br>
-│            输入抽象层 (Input Abstraction)     │<br>
-│   动作映射 → 组合输入 → 模式切换 → 上下文     │<br>
-├─────────────────────────────────────────────┤<br>
-│            设备层 (Device Abstraction)        │<br>
-│  键盘 | 鼠标 | 手柄 | 触屏 | 陀螺仪 | 语音   │<br>
-├─────────────────────────────────────────────┤<br>
-│            平台API层 (Platform Raw Input)     │<br>
-│  DirectInput | XInput | RawInput | HID | SDL │<br>
-└─────────────────────────────────────────────┘<br>
-```<br>
-<br>
-**核心原则:** 游戏逻辑只依赖"动作"(Jump)，不依赖"设备"(空格键/A键)。<br>
-<br>
-### 1.2 动作映射系统<br>
-<br>
-```csharp<br>
-// 概念性动作映射配置<br>
-public class InputActionMap<br>
-{<br>
-    public List<InputAction> actions = new()<br>
-    {<br>
-        new InputAction("Jump")<br>
-        {<br>
-            bindings = new()<br>
-            {<br>
-                new KeyBinding(KeyCode.Space),<br>
-                new KeyBinding(KeyCode.W, modifiers: KeyModifier.DoubleTap),<br>
-                new GamepadButtonBinding(GamepadButton.A),<br>
-                new GamepadButtonBinding(GamepadButton.LeftStickUp, threshold: 0.8f)<br>
-            },<br>
-            interactions = new()<br>
-            {<br>
-                new TapInteraction(tapTime: 0.2f),<br>
-                new HoldInteraction(holdTime: 0.5f) // 长跳<br>
-            }<br>
-        },<br>
-        new InputAction("Attack")<br>
-        {<br>
-            bindings = new()<br>
-            {<br>
-                new MouseBinding(MouseButton.Left),<br>
-                new GamepadButtonBinding(GamepadButton.X),<br>
-                new GamepadTriggerBinding(GamepadTrigger.RT, threshold: 0.3f)<br>
-            }<br>
-        },<br>
-        new InputAction("Move")<br>
-        {<br>
-            bindings = new()<br>
-            {<br>
-                new CompositeBinding("2DVector")<br>
-                {<br>
-                    up = new KeyBinding(KeyCode.W),<br>
-                    down = new KeyBinding(KeyCode.S),<br>
-                    left = new KeyBinding(KeyCode.A),<br>
-                    right = new KeyBinding(KeyCode.D)<br>
-                },<br>
-                new GamepadStickBinding(GamepadStick.Left)<br>
-            },<br>
-            behavior = InputBehavior.Value // 持续值而非事件<br>
-        }<br>
-    };<br>
-}<br>
-```<br>
-<br>
-### 1.3 主流输入系统对比<br>
-<br>
-| 系统 | 引擎 | 跨平台 | 重映射 | 触屏 | 学习曲线 | 推荐 |<br>
-|------|------|--------|--------|------|----------|------|<br>
-| **Unity Input System (新)** | Unity | ⭐⭐⭐ | ⭐⭐⭐ 完整 | ⭐⭐⭐ | 陡峭 | ⭐⭐⭐⭐⭐ 新项目 |<br>
-| **Unity Legacy Input** | Unity | ⭐⭐ | ⭐ 需自建 | ⭐ | 简单 | ⭐⭐ 遗留项目 |<br>
-| **Unreal Enhanced Input** | Unreal | ⭐⭐⭐ | ⭐⭐⭐ 完整 | ⭐⭐ | 中等 | ⭐⭐⭐⭐⭐ UE项目 |<br>
-| **Unreal Legacy Input** | Unreal | ⭐⭐ | ⭐⭐ 部分 | ⭐ | 简单 | ⭐⭐ 遗留项目 |<br>
-| **Godot InputMap** | Godot | ⭐⭐⭐ | ⭐⭐ 内置 | ⭐⭐ | 简单 | ⭐⭐⭐⭐ Godot项目 |<br>
-| **SDL2/3** | 自研 | ⭐⭐⭐ | ⭐⭐ 需自建 | ⭐⭐ | 中等 | ⭐⭐⭐⭐ 自研引擎 |<br>
-| **Rewired (Asset)** | Unity | ⭐⭐⭐ | ⭐⭐⭐ 完整 | ⭐⭐ | 中等 | ⭐⭐⭐⭐ 复杂项目 |<br>
-| **InControl** | Unity | ⭐⭐⭐ | ⭐⭐ 部分 | ⭐ | 简单 | ⭐⭐⭐ 中小项目 |<br>
-<br>
----<br>
-<br>
-## 2. 跨设备适配<br>
-<br>
-### 2.1 输入模式分类<br>
-<br>
-| 模式 | 核心输入 | 适用平台 | 设计重点 |<br>
-|------|----------|----------|----------|<br>
-| **键鼠 (KBM)** | 精确指向 + 多键组合 | PC/Mac | 快捷键、鼠标灵敏度、滚轮 |<br>
-| **手柄 (Gamepad)** | 模拟摇杆 + 肩键 + 震动 | 主机/PC | 瞄准辅助、死区、扳机阈值 |<br>
-| **触屏 (Touch)** | 点按/滑动/捏合 | 移动端 | UI大小、手势、虚拟摇杆 |<br>
-| **体感 (Motion)** | 加速度/陀螺仪 | Switch/PS/VR | 校准、疲劳度、精确度 |<br>
-| **语音 (Voice)** | 语音识别 | 全平台(辅助) | 准确率、噪音过滤、备选 |<br>
-| **眼动 (Eye Tracking)** | 注视点 | PC(高端)/VR | 校准、误触过滤、 dwell |<br>
-| **自适应 (Adaptive)** | 自定义开关/按钮 | 无障碍控制器 | 可编程、单手、低力度 |<br>
-<br>
-### 2.2 手柄死区与灵敏度<br>
-<br>
-```csharp<br>
-// 死区处理算法<br>
-public float ApplyDeadzone(float rawValue, float deadzone, DeadzoneType type)<br>
-{<br>
-    float absValue = Mathf.Abs(rawValue);<br>
-    <br>
-    switch (type)<br>
-    {<br>
-        case DeadzoneType.Axial: // 轴向死区<br>
-            return absValue < deadzone ? 0 : rawValue;<br>
-            <br>
-        case DeadzoneType.Radial: // 径向死区（推荐）<br>
-            if (absValue < deadzone) return 0;<br>
-            // 重新映射到0-1范围<br>
-            return rawValue * (absValue - deadzone) / (1 - deadzone) / absValue;<br>
-            <br>
-        case DeadzoneType.ScaledRadial: // 缩放径向<br>
-            if (absValue < deadzone) return 0;<br>
-            return rawValue * (absValue - deadzone) / (1 - deadzone) / absValue;<br>
-    }<br>
-    return rawValue;<br>
-}<br>
-<br>
-// 推荐默认值<br>
-| 摇杆类型 | 死区 | 灵敏度曲线 |<br>
-|----------|------|------------|<br>
-| 移动 (左摇杆) | 10-15% | 线性 |<br>
-| 瞄准 (右摇杆) | 5-10% | 轻微指数 (1.2-1.5) |<br>
-| 扳机 (LT/RT) | 2-5% | 线性 |<br>
-```<br>
-<br>
-### 2.3 平台按键图标映射<br>
-<br>
-| 动作 | PC键鼠 | Xbox | PlayStation | Nintendo Switch |<br>
-|------|--------|------|-------------|-----------------|<br>
-| 确认/跳跃 | Space/Enter | A | ✕ | B |<br>
-| 取消/后退 | Esc/Backspace | B | ○ | A |<br>
-| 交互 | E | X | □ | Y |<br>
-| 攻击 | 鼠标左键 | RT | R2 | ZR |<br>
-| 瞄准 | 鼠标右键 | LT | L2 | ZL |<br>
-| 菜单 | Tab | Menu | Options | + |<br>
-| 地图 | M | View | TouchPad | - |<br>
-<br>
-**注意事项:**<br>
-- Nintendo 的 A/B 确认取消与 Xbox/PS 相反（西方 vs 日本传统）<br>
-- PC 必须支持键鼠提示和手柄提示动态切换<br>
-- 检测到设备切换时，UI 图标应实时更新<br>
-<br>
----<br>
-<br>
-## 3. 输入重映射系统<br>
-<br>
-### 3.1 重映射层级<br>
-<br>
-| 层级 | 粒度 | 用户可见 | 示例 |<br>
-|------|------|----------|------|<br>
-| **预设方案** | 整套映射 | 是 | "默认"、"左撇子"、"FPS专业" |<br>
-| **动作重映射** | 单动作 | 是 | 将跳跃从Space改为鼠标侧键 |<br>
-| **灵敏度调节** | 数值 | 是 | 摇杆灵敏度 1-10 |<br>
-| **死区调节** | 数值 | 是 | 摇杆死区 0-30% |<br>
-| **辅助功能选项** | 开关 | 是 | 切换瞄准辅助、自动奔跑 |<br>
-| **按键重复** | 数值 | 是 | 按住重复间隔、初始延迟 |<br>
-<br>
-### 3.2 冲突检测<br>
-<br>
-```csharp<br>
-public class RemappingValidator<br>
-{<br>
-    public ValidationResult ValidateRebinding(InputAction action, InputBinding newBinding)<br>
-    {<br>
-        var conflicts = new List<Conflict>();<br>
-        <br>
-        foreach (var otherAction in allActions)<br>
-        {<br>
-            if (otherAction == action) continue;<br>
-            <br>
-            foreach (var existingBinding in otherAction.bindings)<br>
-            {<br>
-                if (newBinding.Overlaps(existingBinding))<br>
-                {<br>
-                    // 检查上下文是否冲突<br>
-                    if (action.contextMask.Overlaps(otherAction.contextMask))<br>
-                    {<br>
-                        conflicts.Add(new Conflict(otherAction, existingBinding));<br>
-                    }<br>
-                }<br>
-            }<br>
-        }<br>
-        <br>
-        return new ValidationResult <br>
-        { <br>
-            isValid = conflicts.Count == 0,<br>
-            conflicts = conflicts <br>
-        };<br>
-    }<br>
-}<br>
-```<br>
-<br>
-**冲突解决策略:**<br>
-1. **禁止冲突** — 不允许设置冲突按键（最严格）<br>
-2. **警告但允许** — 提示冲突但仍可设置（灵活）<br>
-3. **自动解绑** — 新绑定自动解除旧动作的绑定（推荐）<br>
-4. **上下文隔离** — 同一按键在不同模式下可绑定不同动作（菜单 vs 战斗）<br>
-<br>
----<br>
-<br>
-## 4. 辅助功能输入设计<br>
-<br>
-### 4.1 Xbox Accessibility Guidelines (XAG) 输入要求<br>
-<br>
-| 要求 | 说明 | 实现 |<br>
-|------|------|------|<br>
-| **XAG 101** | 输入不受时间限制 | 可暂停QTE、延长时间窗口 |<br>
-| **XAG 102** | 单输入操作 | 避免需要同时按多个键 |<br>
-| **XAG 103** | 输入复杂度可调 | 简化连招、自动连招选项 |<br>
-| **XAG 104** | 输入重复可调 | 长按重复速率可调、关闭重复 |<br>
-| **XAG 105** | 输入保持替代 | 切换模式替代长按（按住Shift奔跑 → 按一次切换奔跑） |<br>
-| **XAG 106** | 视觉提示输入 | 按键提示高对比、大字体 |<br>
-| **XAG 107** | 触觉/音频反馈 | 操作确认有震动或音效 |<br>
-| **XAG 108** | 输入自定义 | 完整重映射支持 |<br>
-<br>
-### 4.2 辅助功能选项清单<br>
-<br>
-**运动辅助:**<br>
-- [ ] 自动奔跑（切换而非按住）<br>
-- [ ] 自动跳过障碍（靠近自动跳跃）<br>
-- [ ] 吸附/辅助瞄准（强度可调0-100%）<br>
-- [ ] 减速模式（全局时间缩放50-80%）<br>
-- [ ] 一键连招（复杂操作简化为单键）<br>
-- [ ] 输入缓冲窗口延长（从0.1s到0.5s）<br>
-- [ ] 忽略误触（摇杆抖动过滤增强）<br>
-<br>
-**认知辅助:**<br>
-- [ ] 操作提示持久显示（不自动消失）<br>
-- [ ] 简化UI模式（减少HUD元素）<br>
-- [ ] 高对比度焦点指示器<br>
-- [ ] 音频化UI导航（朗读选中项）<br>
-<br>
-**设备适配:**<br>
-- [ ] 支持Xbox Adaptive Controller<br>
-- [ ] 支持单手操作模式<br>
-- [ ] 支持眼动追踪替代鼠标<br>
-- [ ] 支持切换开关（Switch Access）<br>
-- [ ] 支持自定义USB HID设备<br>
-<br>
-### 4.3 瞄准辅助设计<br>
-<br>
-```csharp<br>
-public class AimAssistSystem<br>
-{<br>
-    [Range(0, 1)] public float assistStrength = 0.3f;<br>
-    <br>
-    public Vector3 ApplyAimAssist(Vector3 rawAimInput, Vector3 playerPos, List<Target> enemies)<br>
-    {<br>
-        // 1. 寻找准星附近的有效目标<br>
-        var nearbyTargets = enemies<br>
-            .Where(e => IsInAssistCone(e.position, playerPos, rawAimInput))<br>
-            .Where(e => HasLineOfSight(e))<br>
-            .OrderBy(e => AngleToAim(e.position, playerPos, rawAimInput))<br>
-            .ToList();<br>
-        <br>
-        if (nearbyTargets.Count == 0) return rawAimInput;<br>
-        <br>
-        var bestTarget = nearbyTargets[0];<br>
-        float angle = AngleToAim(bestTarget.position, playerPos, rawAimInput);<br>
-        <br>
-        // 2. 根据距离和角度计算辅助强度<br>
-        float distanceFactor = 1 - Mathf.Clamp01(bestTarget.distance / maxAssistDistance);<br>
-        float angleFactor = 1 - Mathf.Clamp01(angle / maxAssistAngle);<br>
-        float finalStrength = assistStrength * distanceFactor * angleFactor;<br>
-        <br>
-        // 3. 向目标方向插值<br>
-        Vector3 targetDirection = (bestTarget.position - playerPos).normalized;<br>
-        return Vector3.Slerp(rawAimInput, targetDirection, finalStrength).normalized;<br>
-    }<br>
-}<br>
-```<br>
-<br>
-**辅助强度分级:**<br>
-<br>
-| 级别 | 效果 | 适用 |<br>
-|------|------|------|<br>
-| **关闭** | 无辅助 | 竞技玩家、PC键鼠 |<br>
-| **弱** | 仅摩擦减速（进入目标区域 slightly 减速）| 熟练手柄玩家 |<br>
-| **中** | 轻微磁吸（准星缓慢向目标中心移动）| 一般玩家 |<br>
-| **强** | 明显磁吸 + 追踪（较大区域内锁定）| 新手、运动障碍 |<br>
-| **吸附** | 准星自动跳到最近目标 | 严重运动障碍 |<br>
-<br>
----<br>
-<br>
-## 5. 触觉反馈 (Haptics)<br>
-<br>
-### 5.1 触觉设计原则<br>
-<br>
-| 原则 | 说明 | 反例 |<br>
-|------|------|------|<br>
-| **语义化** | 不同事件有不同震动模式 | 所有事件同一种震动 |<br>
-| **层次化** | 轻/中/重事件对应轻/中/重震动 | 轻微UI操作也重震 |<br>
-| **可关闭** | 提供完全关闭选项 | 强制震动无法关闭 |<br>
-| **不依赖** | 重要信息不单靠震动传递 | 敌人偷袭只有震动无音效 |<br>
-| **节能** | 避免持续高频震动 | 长时间开车持续震动 |<br>
-<br>
-### 5.2 常见触觉事件映射<br>
-<br>
-| 事件 | 模式 | 强度 | 时长 |<br>
-|------|------|------|------|<br>
-| 武器射击 | 短促冲击 | 中-高 | 50ms |<br>
-| 受到伤害 | 双脉冲 | 中 | 100ms |<br>
-| 爆炸 | 强冲击+衰减 | 高 | 300ms |<br>
-| 拾取物品 | 轻触 | 低 | 30ms |<br>
-| 错误/不可操作 | 快速双脉冲 | 低-中 | 80ms |<br>
-| 脚步声 | 极轻脉冲 | 极低 | 20ms |<br>
-| 车辆引擎 | 低频持续 | 低 | 持续 |<br>
-| 心跳(低血量) | 规律脉冲 | 中 | 随节奏 |<br>
-<br>
----<br>
-<br>
-## 6. 平台特定考量<br>
-<br>
-### 6.1 主机认证输入要求<br>
-<br>
-| 平台 | 输入要求 | 常见问题 |<br>
-|------|----------|----------|<br>
-| **Xbox** | 必须支持Xbox控制器、必须处理手柄断开 | 手柄断开暂停游戏 |<br>
-| **PlayStation** | 支持DS特性（触摸板、陀螺仪、扬声器） | 触摸板作为额外输入 |<br>
-| **Nintendo** | 支持单Joy-Con模式、必须支持TV/便携切换 | 单Joy-Con键位不足 |<br>
-| **SteamDeck** | 支持多种输入模式、触控板映射 | 触控板作为摇杆/鼠标 |<br>
-<br>
-### 6.2 移动端输入模式<br>
-<br>
-| 模式 | 适用游戏 | 实现要点 |<br>
-|------|----------|----------|<br>
-| **虚拟摇杆** | 动作、RPG | 可拖拽起始位置、透明度可调、大小可调 |<br>
-| **点击移动** | RPG、策略 | 点击地面移动、自动寻路、长按奔跑 |<br>
-| **滑动控制** | 跑酷、赛车 | 滑动手势识别、灵敏度可调 |<br>
-| **陀螺仪瞄准** | 射击 | 灵敏度、Y轴反转、与触屏混合 |<br>
-| **一键操作** | 休闲、超休闲 | 整个屏幕一个按钮、点击/长按/松开 |<br>
-<br>
----<br>
-<br>
-## 7. 最佳实践清单<br>
-<br>
-- [ ] **动作抽象** — 游戏逻辑只绑定抽象动作，不绑定具体按键<br>
-- [ ] **动态检测** — 运行时检测输入设备切换，自动更新提示图标<br>
-- [ ] **完整重映射** — 允许玩家重映射所有动作（除系统级如Home键）<br>
-- [ ] **上下文感知** — 菜单/战斗/驾驶使用不同的映射集<br>
-- [ ] **冲突解决** — 重映射时自动检测并解决冲突<br>
-- [ ] **配置持久化** — 输入设置保存到玩家档案，跨会话保持<br>
-- [ ] **云同步** — 输入配置随存档云同步<br>
-- [ ] **辅助功能预设** — 提供"单手模式"、"低运动模式"等预设<br>
-- [ ] **输入可视化** — 教程和操作提示实时显示当前绑定<br>
-- [ ] **手柄热插拔** — 支持游戏中插拔手柄，不崩溃、自动识别<br>
-- [ ] **震动可配置** — 震动强度0-100%可调，可完全关闭<br>
-- [ ] **输入延迟最小化** — 渲染线程与输入线程分离，避免帧率影响响应<br>
-<br>
----<br>
-<br>
-> 评分: 80/100<br>
-> 完整性: 输入架构、设备适配、重映射、辅助功能、触觉、平台要求<br>
-> 改进空间: 可补充Unity Input System和Unreal Enhanced Input的具体配置截图<br>
+<body><article><br>
+## 1. 输入系统架构<br>
+<br>
+### 1.1 分层架构<br>
+<br>
+```<br>
+┌─────────────────────────────────────────────┐<br>
+│            游戏逻辑层 (Game Actions)          │<br>
+│   Jump | Attack | Interact | Pause | Menu    │<br>
+├─────────────────────────────────────────────┤<br>
+│            输入抽象层 (Input Abstraction)     │<br>
+│   动作映射 → 组合输入 → 模式切换 → 上下文     │<br>
+├─────────────────────────────────────────────┤<br>
+│            设备层 (Device Abstraction)        │<br>
+│  键盘 | 鼠标 | 手柄 | 触屏 | 陀螺仪 | 语音   │<br>
+├─────────────────────────────────────────────┤<br>
+│            平台API层 (Platform Raw Input)     │<br>
+│  DirectInput | XInput | RawInput | HID | SDL │<br>
+└─────────────────────────────────────────────┘<br>
+```<br>
+<br>
+**核心原则:** 游戏逻辑只依赖"动作"(Jump)，不依赖"设备"(空格键/A键)。<br>
+<br>
+### 1.2 动作映射系统<br>
+<br>
+```csharp<br>
+// 概念性动作映射配置<br>
+public class InputActionMap<br>
+{<br>
+    public List<InputAction> actions = new()<br>
+    {<br>
+        new InputAction("Jump")<br>
+        {<br>
+            bindings = new()<br>
+            {<br>
+                new KeyBinding(KeyCode.Space),<br>
+                new KeyBinding(KeyCode.W, modifiers: KeyModifier.DoubleTap),<br>
+                new GamepadButtonBinding(GamepadButton.A),<br>
+                new GamepadButtonBinding(GamepadButton.LeftStickUp, threshold: 0.8f)<br>
+            },<br>
+            interactions = new()<br>
+            {<br>
+                new TapInteraction(tapTime: 0.2f),<br>
+                new HoldInteraction(holdTime: 0.5f) // 长跳<br>
+            }<br>
+        },<br>
+        new InputAction("Attack")<br>
+        {<br>
+            bindings = new()<br>
+            {<br>
+                new MouseBinding(MouseButton.Left),<br>
+                new GamepadButtonBinding(GamepadButton.X),<br>
+                new GamepadTriggerBinding(GamepadTrigger.RT, threshold: 0.3f)<br>
+            }<br>
+        },<br>
+        new InputAction("Move")<br>
+        {<br>
+            bindings = new()<br>
+            {<br>
+                new CompositeBinding("2DVector")<br>
+                {<br>
+                    up = new KeyBinding(KeyCode.W),<br>
+                    down = new KeyBinding(KeyCode.S),<br>
+                    left = new KeyBinding(KeyCode.A),<br>
+                    right = new KeyBinding(KeyCode.D)<br>
+                },<br>
+                new GamepadStickBinding(GamepadStick.Left)<br>
+            },<br>
+            behavior = InputBehavior.Value // 持续值而非事件<br>
+        }<br>
+    };<br>
+}<br>
+```<br>
+<br>
+### 1.3 主流输入系统对比<br>
+<br>
+| 系统 | 引擎 | 跨平台 | 重映射 | 触屏 | 学习曲线 | 推荐 |<br>
+|------|------|--------|--------|------|----------|------|<br>
+| **Unity Input System (新)** | Unity | ⭐⭐⭐ | ⭐⭐⭐ 完整 | ⭐⭐⭐ | 陡峭 | ⭐⭐⭐⭐⭐ 新项目 |<br>
+| **Unity Legacy Input** | Unity | ⭐⭐ | ⭐ 需自建 | ⭐ | 简单 | ⭐⭐ 遗留项目 |<br>
+| **Unreal Enhanced Input** | Unreal | ⭐⭐⭐ | ⭐⭐⭐ 完整 | ⭐⭐ | 中等 | ⭐⭐⭐⭐⭐ UE项目 |<br>
+| **Unreal Legacy Input** | Unreal | ⭐⭐ | ⭐⭐ 部分 | ⭐ | 简单 | ⭐⭐ 遗留项目 |<br>
+| **Godot InputMap** | Godot | ⭐⭐⭐ | ⭐⭐ 内置 | ⭐⭐ | 简单 | ⭐⭐⭐⭐ Godot项目 |<br>
+| **SDL2/3** | 自研 | ⭐⭐⭐ | ⭐⭐ 需自建 | ⭐⭐ | 中等 | ⭐⭐⭐⭐ 自研引擎 |<br>
+| **Rewired (Asset)** | Unity | ⭐⭐⭐ | ⭐⭐⭐ 完整 | ⭐⭐ | 中等 | ⭐⭐⭐⭐ 复杂项目 |<br>
+| **InControl** | Unity | ⭐⭐⭐ | ⭐⭐ 部分 | ⭐ | 简单 | ⭐⭐⭐ 中小项目 |<br>
+<br>
+---<br>
+<br>
+## 2. 跨设备适配<br>
+<br>
+### 2.1 输入模式分类<br>
+<br>
+| 模式 | 核心输入 | 适用平台 | 设计重点 |<br>
+|------|----------|----------|----------|<br>
+| **键鼠 (KBM)** | 精确指向 + 多键组合 | PC/Mac | 快捷键、鼠标灵敏度、滚轮 |<br>
+| **手柄 (Gamepad)** | 模拟摇杆 + 肩键 + 震动 | 主机/PC | 瞄准辅助、死区、扳机阈值 |<br>
+| **触屏 (Touch)** | 点按/滑动/捏合 | 移动端 | UI大小、手势、虚拟摇杆 |<br>
+| **体感 (Motion)** | 加速度/陀螺仪 | Switch/PS/VR | 校准、疲劳度、精确度 |<br>
+| **语音 (Voice)** | 语音识别 | 全平台(辅助) | 准确率、噪音过滤、备选 |<br>
+| **眼动 (Eye Tracking)** | 注视点 | PC(高端)/VR | 校准、误触过滤、 dwell |<br>
+| **自适应 (Adaptive)** | 自定义开关/按钮 | 无障碍控制器 | 可编程、单手、低力度 |<br>
+<br>
+### 2.2 手柄死区与灵敏度<br>
+<br>
+```csharp<br>
+// 死区处理算法<br>
+public float ApplyDeadzone(float rawValue, float deadzone, DeadzoneType type)<br>
+{<br>
+    float absValue = Mathf.Abs(rawValue);<br>
+    <br>
+    switch (type)<br>
+    {<br>
+        case DeadzoneType.Axial: // 轴向死区<br>
+            return absValue < deadzone ? 0 : rawValue;<br>
+            <br>
+        case DeadzoneType.Radial: // 径向死区（推荐）<br>
+            if (absValue < deadzone) return 0;<br>
+            // 重新映射到0-1范围<br>
+            return rawValue * (absValue - deadzone) / (1 - deadzone) / absValue;<br>
+            <br>
+        case DeadzoneType.ScaledRadial: // 缩放径向<br>
+            if (absValue < deadzone) return 0;<br>
+            return rawValue * (absValue - deadzone) / (1 - deadzone) / absValue;<br>
+    }<br>
+    return rawValue;<br>
+}<br>
+<br>
+// 推荐默认值<br>
+| 摇杆类型 | 死区 | 灵敏度曲线 |<br>
+|----------|------|------------|<br>
+| 移动 (左摇杆) | 10-15% | 线性 |<br>
+| 瞄准 (右摇杆) | 5-10% | 轻微指数 (1.2-1.5) |<br>
+| 扳机 (LT/RT) | 2-5% | 线性 |<br>
+```<br>
+<br>
+### 2.3 平台按键图标映射<br>
+<br>
+| 动作 | PC键鼠 | Xbox | PlayStation | Nintendo Switch |<br>
+|------|--------|------|-------------|-----------------|<br>
+| 确认/跳跃 | Space/Enter | A | ✕ | B |<br>
+| 取消/后退 | Esc/Backspace | B | ○ | A |<br>
+| 交互 | E | X | □ | Y |<br>
+| 攻击 | 鼠标左键 | RT | R2 | ZR |<br>
+| 瞄准 | 鼠标右键 | LT | L2 | ZL |<br>
+| 菜单 | Tab | Menu | Options | + |<br>
+| 地图 | M | View | TouchPad | - |<br>
+<br>
+**注意事项:**<br>
+- Nintendo 的 A/B 确认取消与 Xbox/PS 相反（西方 vs 日本传统）<br>
+- PC 必须支持键鼠提示和手柄提示动态切换<br>
+- 检测到设备切换时，UI 图标应实时更新<br>
+<br>
+---<br>
+<br>
+## 3. 输入重映射系统<br>
+<br>
+### 3.1 重映射层级<br>
+<br>
+| 层级 | 粒度 | 用户可见 | 示例 |<br>
+|------|------|----------|------|<br>
+| **预设方案** | 整套映射 | 是 | "默认"、"左撇子"、"FPS专业" |<br>
+| **动作重映射** | 单动作 | 是 | 将跳跃从Space改为鼠标侧键 |<br>
+| **灵敏度调节** | 数值 | 是 | 摇杆灵敏度 1-10 |<br>
+| **死区调节** | 数值 | 是 | 摇杆死区 0-30% |<br>
+| **辅助功能选项** | 开关 | 是 | 切换瞄准辅助、自动奔跑 |<br>
+| **按键重复** | 数值 | 是 | 按住重复间隔、初始延迟 |<br>
+<br>
+### 3.2 冲突检测<br>
+<br>
+```csharp<br>
+public class RemappingValidator<br>
+{<br>
+    public ValidationResult ValidateRebinding(InputAction action, InputBinding newBinding)<br>
+    {<br>
+        var conflicts = new List<Conflict>();<br>
+        <br>
+        foreach (var otherAction in allActions)<br>
+        {<br>
+            if (otherAction == action) continue;<br>
+            <br>
+            foreach (var existingBinding in otherAction.bindings)<br>
+            {<br>
+                if (newBinding.Overlaps(existingBinding))<br>
+                {<br>
+                    // 检查上下文是否冲突<br>
+                    if (action.contextMask.Overlaps(otherAction.contextMask))<br>
+                    {<br>
+                        conflicts.Add(new Conflict(otherAction, existingBinding));<br>
+                    }<br>
+                }<br>
+            }<br>
+        }<br>
+        <br>
+        return new ValidationResult <br>
+        { <br>
+            isValid = conflicts.Count == 0,<br>
+            conflicts = conflicts <br>
+        };<br>
+    }<br>
+}<br>
+```<br>
+<br>
+**冲突解决策略:**<br>
+1. **禁止冲突** — 不允许设置冲突按键（最严格）<br>
+2. **警告但允许** — 提示冲突但仍可设置（灵活）<br>
+3. **自动解绑** — 新绑定自动解除旧动作的绑定（推荐）<br>
+4. **上下文隔离** — 同一按键在不同模式下可绑定不同动作（菜单 vs 战斗）<br>
+<br>
+---<br>
+<br>
+## 4. 辅助功能输入设计<br>
+<br>
+### 4.1 Xbox Accessibility Guidelines (XAG) 输入要求<br>
+<br>
+| 要求 | 说明 | 实现 |<br>
+|------|------|------|<br>
+| **XAG 101** | 输入不受时间限制 | 可暂停QTE、延长时间窗口 |<br>
+| **XAG 102** | 单输入操作 | 避免需要同时按多个键 |<br>
+| **XAG 103** | 输入复杂度可调 | 简化连招、自动连招选项 |<br>
+| **XAG 104** | 输入重复可调 | 长按重复速率可调、关闭重复 |<br>
+| **XAG 105** | 输入保持替代 | 切换模式替代长按（按住Shift奔跑 → 按一次切换奔跑） |<br>
+| **XAG 106** | 视觉提示输入 | 按键提示高对比、大字体 |<br>
+| **XAG 107** | 触觉/音频反馈 | 操作确认有震动或音效 |<br>
+| **XAG 108** | 输入自定义 | 完整重映射支持 |<br>
+<br>
+### 4.2 辅助功能选项清单<br>
+<br>
+**运动辅助:**<br>
+- [ ] 自动奔跑（切换而非按住）<br>
+- [ ] 自动跳过障碍（靠近自动跳跃）<br>
+- [ ] 吸附/辅助瞄准（强度可调0-100%）<br>
+- [ ] 减速模式（全局时间缩放50-80%）<br>
+- [ ] 一键连招（复杂操作简化为单键）<br>
+- [ ] 输入缓冲窗口延长（从0.1s到0.5s）<br>
+- [ ] 忽略误触（摇杆抖动过滤增强）<br>
+<br>
+**认知辅助:**<br>
+- [ ] 操作提示持久显示（不自动消失）<br>
+- [ ] 简化UI模式（减少HUD元素）<br>
+- [ ] 高对比度焦点指示器<br>
+- [ ] 音频化UI导航（朗读选中项）<br>
+<br>
+**设备适配:**<br>
+- [ ] 支持Xbox Adaptive Controller<br>
+- [ ] 支持单手操作模式<br>
+- [ ] 支持眼动追踪替代鼠标<br>
+- [ ] 支持切换开关（Switch Access）<br>
+- [ ] 支持自定义USB HID设备<br>
+<br>
+### 4.3 瞄准辅助设计<br>
+<br>
+```csharp<br>
+public class AimAssistSystem<br>
+{<br>
+    [Range(0, 1)] public float assistStrength = 0.3f;<br>
+    <br>
+    public Vector3 ApplyAimAssist(Vector3 rawAimInput, Vector3 playerPos, List<Target> enemies)<br>
+    {<br>
+        // 1. 寻找准星附近的有效目标<br>
+        var nearbyTargets = enemies<br>
+            .Where(e => IsInAssistCone(e.position, playerPos, rawAimInput))<br>
+            .Where(e => HasLineOfSight(e))<br>
+            .OrderBy(e => AngleToAim(e.position, playerPos, rawAimInput))<br>
+            .ToList();<br>
+        <br>
+        if (nearbyTargets.Count == 0) return rawAimInput;<br>
+        <br>
+        var bestTarget = nearbyTargets[0];<br>
+        float angle = AngleToAim(bestTarget.position, playerPos, rawAimInput);<br>
+        <br>
+        // 2. 根据距离和角度计算辅助强度<br>
+        float distanceFactor = 1 - Mathf.Clamp01(bestTarget.distance / maxAssistDistance);<br>
+        float angleFactor = 1 - Mathf.Clamp01(angle / maxAssistAngle);<br>
+        float finalStrength = assistStrength * distanceFactor * angleFactor;<br>
+        <br>
+        // 3. 向目标方向插值<br>
+        Vector3 targetDirection = (bestTarget.position - playerPos).normalized;<br>
+        return Vector3.Slerp(rawAimInput, targetDirection, finalStrength).normalized;<br>
+    }<br>
+}<br>
+```<br>
+<br>
+**辅助强度分级:**<br>
+<br>
+| 级别 | 效果 | 适用 |<br>
+|------|------|------|<br>
+| **关闭** | 无辅助 | 竞技玩家、PC键鼠 |<br>
+| **弱** | 仅摩擦减速（进入目标区域 slightly 减速）| 熟练手柄玩家 |<br>
+| **中** | 轻微磁吸（准星缓慢向目标中心移动）| 一般玩家 |<br>
+| **强** | 明显磁吸 + 追踪（较大区域内锁定）| 新手、运动障碍 |<br>
+| **吸附** | 准星自动跳到最近目标 | 严重运动障碍 |<br>
+<br>
+---<br>
+<br>
+## 5. 触觉反馈 (Haptics)<br>
+<br>
+### 5.1 触觉设计原则<br>
+<br>
+| 原则 | 说明 | 反例 |<br>
+|------|------|------|<br>
+| **语义化** | 不同事件有不同震动模式 | 所有事件同一种震动 |<br>
+| **层次化** | 轻/中/重事件对应轻/中/重震动 | 轻微UI操作也重震 |<br>
+| **可关闭** | 提供完全关闭选项 | 强制震动无法关闭 |<br>
+| **不依赖** | 重要信息不单靠震动传递 | 敌人偷袭只有震动无音效 |<br>
+| **节能** | 避免持续高频震动 | 长时间开车持续震动 |<br>
+<br>
+### 5.2 常见触觉事件映射<br>
+<br>
+| 事件 | 模式 | 强度 | 时长 |<br>
+|------|------|------|------|<br>
+| 武器射击 | 短促冲击 | 中-高 | 50ms |<br>
+| 受到伤害 | 双脉冲 | 中 | 100ms |<br>
+| 爆炸 | 强冲击+衰减 | 高 | 300ms |<br>
+| 拾取物品 | 轻触 | 低 | 30ms |<br>
+| 错误/不可操作 | 快速双脉冲 | 低-中 | 80ms |<br>
+| 脚步声 | 极轻脉冲 | 极低 | 20ms |<br>
+| 车辆引擎 | 低频持续 | 低 | 持续 |<br>
+| 心跳(低血量) | 规律脉冲 | 中 | 随节奏 |<br>
+<br>
+---<br>
+<br>
+## 6. 平台特定考量<br>
+<br>
+### 6.1 主机认证输入要求<br>
+<br>
+| 平台 | 输入要求 | 常见问题 |<br>
+|------|----------|----------|<br>
+| **Xbox** | 必须支持Xbox控制器、必须处理手柄断开 | 手柄断开暂停游戏 |<br>
+| **PlayStation** | 支持DS特性（触摸板、陀螺仪、扬声器） | 触摸板作为额外输入 |<br>
+| **Nintendo** | 支持单Joy-Con模式、必须支持TV/便携切换 | 单Joy-Con键位不足 |<br>
+| **SteamDeck** | 支持多种输入模式、触控板映射 | 触控板作为摇杆/鼠标 |<br>
+<br>
+### 6.2 移动端输入模式<br>
+<br>
+| 模式 | 适用游戏 | 实现要点 |<br>
+|------|----------|----------|<br>
+| **虚拟摇杆** | 动作、RPG | 可拖拽起始位置、透明度可调、大小可调 |<br>
+| **点击移动** | RPG、策略 | 点击地面移动、自动寻路、长按奔跑 |<br>
+| **滑动控制** | 跑酷、赛车 | 滑动手势识别、灵敏度可调 |<br>
+| **陀螺仪瞄准** | 射击 | 灵敏度、Y轴反转、与触屏混合 |<br>
+| **一键操作** | 休闲、超休闲 | 整个屏幕一个按钮、点击/长按/松开 |<br>
+<br>
+---<br>
+<br>
+## 7. 最佳实践清单<br>
+<br>
+- [ ] **动作抽象** — 游戏逻辑只绑定抽象动作，不绑定具体按键<br>
+- [ ] **动态检测** — 运行时检测输入设备切换，自动更新提示图标<br>
+- [ ] **完整重映射** — 允许玩家重映射所有动作（除系统级如Home键）<br>
+- [ ] **上下文感知** — 菜单/战斗/驾驶使用不同的映射集<br>
+- [ ] **冲突解决** — 重映射时自动检测并解决冲突<br>
+- [ ] **配置持久化** — 输入设置保存到玩家档案，跨会话保持<br>
+- [ ] **云同步** — 输入配置随存档云同步<br>
+- [ ] **辅助功能预设** — 提供"单手模式"、"低运动模式"等预设<br>
+- [ ] **输入可视化** — 教程和操作提示实时显示当前绑定<br>
+- [ ] **手柄热插拔** — 支持游戏中插拔手柄，不崩溃、自动识别<br>
+- [ ] **震动可配置** — 震动强度0-100%可调，可完全关闭<br>
+- [ ] **输入延迟最小化** — 渲染线程与输入线程分离，避免帧率影响响应<br>
+<br>
+---<br>
+<br>
+> 评分: 80/100<br>
+> 完整性: 输入架构、设备适配、重映射、辅助功能、触觉、平台要求<br>
+> 改进空间: 可补充Unity Input System和Unreal Enhanced Input的具体配置截图<br>
 </article></body>
 </html>

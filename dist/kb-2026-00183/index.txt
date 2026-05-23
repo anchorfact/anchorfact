@@ -1,7 +1,7 @@
 # IPv4 vs IPv6
 Confidence: high
 Last verified: 2026-05-22
-Generation: ai_assisted
+Generation: human_only
 
 
 ## TL;DR

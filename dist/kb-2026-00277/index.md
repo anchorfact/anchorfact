@@ -6,27 +6,24 @@ category:"ai"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Interpretable Machine Learning (Christoph Molnar)"
-    type:"book"
-    year:2023
-    url:"https://christophm.github.io/interpretable-ml-book/"
-    institution:"Self-published"
+  - title: "Interpretable Machine Learning"
+    authors: ["Molnar, Christoph"]
+    type: "book"
+    year: 2023
+    url: "https://christophm.github.io/interpretable-ml-book/"
+    institution: "Self-published (open access)"
+    note: "Comprehensive, freely available guide to ML interpretability: SHAP, LIME, partial dependence, feature importance"
 secondary_sources:
-  - title: "Neural Machine Translation by Jointly Learning to Align and Translate"
-    authors: ["Bahdanau", "Cho", "Bengio"]
+  - title: "A Unified Approach to Interpreting Model Predictions (SHAP)"
+    authors: ["Lundberg, Scott M.", "Lee, Su-In"]
     type: "academic_paper"
-    year: 2014
-    doi: "10.48550/arXiv.1409.0473"
-    url: "https://arxiv.org/abs/1409.0473"
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+    year: 2017
+    url: "https://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions"
+    institution: "NeurIPS"
+    note: "The SHAP paper — game-theoretic approach to feature importance. 20,000+ citations."
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

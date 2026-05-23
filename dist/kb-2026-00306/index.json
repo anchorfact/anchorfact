@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00306",
   "headline": "Dart Language",
   "description": "Dart (Google, 2011) is an object-oriented language optimized for client development — primarily Flutter apps. Dart 3 (2023) introduced 100% sound null safety, records, patterns, and class modifiers. Compiles to native ARM/x86 (AOT) for mobile, and JavaScript for web.",
-  "dateCreated": "2026-05-22T09:02:12.265Z",
-  "dateModified": "2026-05-22T09:02:12.265Z",
+  "dateCreated": "2026-05-22T14:18:54.502Z",
+  "dateModified": "2026-05-22T14:18:54.502Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

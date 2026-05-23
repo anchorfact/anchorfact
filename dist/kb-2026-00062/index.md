@@ -7,12 +7,22 @@ language: "en"
 confidence: "high"
 confidence_rationale: "Based on the original Hu et al. (2021) paper with 19,123 citations, Microsoft LoRA GitHub (13,547 stars)"
 last_verified: "2026-05-22"
-generation_method: "ai_assisted"
+generation_method: "human_only"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
 primary_sources:
   - title: "LoRA: Low-Rank Adaptation of Large Language Models"
-    authors: ["Hu, Edward J.", "Shen, Yelong", "Wallis, Phillip", "Allen-Zhu, Zeyuan", "Li, Yuanzhi", "Wang, Shean", "Wang, Lu", "Chen, Weizhu"]
+    authors:
+      [
+        "Hu, Edward J.",
+        "Shen, Yelong",
+        "Wallis, Phillip",
+        "Allen-Zhu, Zeyuan",
+        "Li, Yuanzhi",
+        "Wang, Shean",
+        "Wang, Lu",
+        "Chen, Weizhu",
+      ]
     type: "academic_paper"
     year: 2021
     doi: "10.48550/arXiv.2106.09685"
@@ -65,11 +75,11 @@ For a typical LoRA configuration (r=8 or r=16 on attention projection matrices),
 
 ## Variants
 
-| Variant | Innovation |
-|---------|-----------|
+| Variant                           | Innovation                                                                     |
+| --------------------------------- | ------------------------------------------------------------------------------ |
 | **QLoRA** (Dettmers et al., 2023) | Adds 4-bit quantization to LoRA, enabling 65B fine-tuning on a single 48GB GPU |
-| **DoRA** (Liu et al., 2024) | Decomposes weight updates into magnitude + direction for better alignment |
-| **LoRA+** | Different learning rates for A and B matrices improve convergence |
+| **DoRA** (Liu et al., 2024)       | Decomposes weight updates into magnitude + direction for better alignment      |
+| **LoRA+**                         | Different learning rates for A and B matrices improve convergence              |
 
 ## Further Reading
 

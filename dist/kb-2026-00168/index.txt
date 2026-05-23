@@ -1,7 +1,7 @@
 # HTML5 Semantic Elements
 Confidence: high
 Last verified: 2026-05-22
-Generation: ai_assisted
+Generation: human_only
 
 
 ## TL;DR

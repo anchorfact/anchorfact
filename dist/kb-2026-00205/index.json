@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00205",
   "headline": "Fourier Transform",
   "description": "The Fourier Transform (Joseph Fourier, 1807) decomposes a signal into its constituent frequencies. It is fundamental to signal processing, image compression (JPEG), audio processing (MP3), and MRI reconstruction. FFT (Fast Fourier Transform, Cooley-Tukey 1965) reduces complexity from O(n²) to O(n log n).",
-  "dateCreated": "2026-05-22T09:02:12.314Z",
-  "dateModified": "2026-05-22T09:02:12.314Z",
+  "dateCreated": "2026-05-22T14:18:54.558Z",
+  "dateModified": "2026-05-22T14:18:54.558Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

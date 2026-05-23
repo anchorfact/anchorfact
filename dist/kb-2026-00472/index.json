@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00472",
   "headline": "Risk Management",
   "description": "Risk management identifies, assesses, and mitigates threats to an organization's capital and earnings. Process: identify risk → analyze (probability × impact) → evaluate → treat (avoid, reduce, transfer/insure, accept). Financial risk: market, credit, liquidity, operational. Enterprise Risk Management (ERM) takes a holistic approach.",
-  "dateCreated": "2026-05-22T09:02:12.196Z",
-  "dateModified": "2026-05-22T09:02:12.196Z",
+  "dateCreated": "2026-05-22T14:18:54.426Z",
+  "dateModified": "2026-05-22T14:18:54.426Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

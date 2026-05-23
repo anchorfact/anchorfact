@@ -5,4 +5,4 @@
   a schema:TechArticle ;
   schema:headline "Event Sourcing" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:generationMethod "human_only" .

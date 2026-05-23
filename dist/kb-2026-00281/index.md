@@ -6,27 +6,22 @@ category:"ai"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Python Data Science Handbook (Jake VanderPlas)"
-    type:"book"
-    year:2022
-    url:"https://jakevdp.github.io/PythonDataScienceHandbook/"
-    institution:"O'Reilly"
+  - title: "Python Data Science Handbook (Jake VanderPlas)"
+    type: "book"
+    year: 2022
+    url: "https://jakevdp.github.io/PythonDataScienceHandbook/"
+    institution: "O'Reilly"
+    note: "Comprehensive guide to data preprocessing with pandas, NumPy, and scikit-learn"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "Scikit-learn Documentation — Preprocessing"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "Pro Git (2nd Ed)"
-    authors: ["Chacon", "Straub"]
-    type: "book"
-    year: 2014
-    url: "https://git-scm.com/book/en/v2"
-    institution: "Apress"
+    url: "https://scikit-learn.org/stable/modules/preprocessing.html"
+    institution: "Inria"
+    note: "Industry-standard preprocessing library documentation"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

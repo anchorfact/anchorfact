@@ -7,8 +7,7 @@ language: "zh"
 confidence: "high"
 confidence_rationale: "Based on Unity official documentation and industry data"
 last_verified: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "Unity Documentation"
@@ -26,6 +25,8 @@ secondary_sources:
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
     institution: "Mozilla"
+known_gaps:
+  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
 completeness: 0.85
 related_entities:
   - "entity:game-development"

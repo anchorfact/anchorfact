@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00340",
   "headline": "Solar System",
   "description": "The Solar System formed ~4.6 billion years ago from a molecular cloud. Sun (99.86% of mass) powers the system via nuclear fusion (H → He). Eight planets: Mercury, Venus, Earth, Mars (rocky inner), Jupiter, Saturn, Uranus, Neptune (gas/ice giants). Asteroid belt (Mars-Jupiter), Kuiper belt (beyond Neptune).",
-  "dateCreated": "2026-05-22T09:02:12.800Z",
-  "dateModified": "2026-05-22T09:02:12.800Z",
+  "dateCreated": "2026-05-22T14:18:55.108Z",
+  "dateModified": "2026-05-22T14:18:55.108Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

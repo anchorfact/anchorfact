@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00476",
   "headline": "Audio Engineering",
   "description": "Audio engineering encompasses recording, mixing, and mastering sound. Key concepts: frequency (pitch, Hz), amplitude (loudness, dB), waveform (timbre). Recording chain: source → microphone → preamp → ADC → DAW. Mixing: balance levels, pan (stereo placement), EQ (adjust frequency balance), compression (control dynamics), reverb/delay (space).",
-  "dateCreated": "2026-05-22T09:02:12.130Z",
-  "dateModified": "2026-05-22T09:02:12.130Z",
+  "dateCreated": "2026-05-22T14:18:54.355Z",
+  "dateModified": "2026-05-22T14:18:54.355Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00194",
   "headline": "Probability Theory",
   "description": "Probability theory quantifies uncertainty — fundamental to machine learning, statistics, cryptography, and randomized algorithms. Key concepts: random variables, probability distributions (Bernoulli, binomial, normal, Poisson), expectation, variance, Bayes' theorem, law of large numbers.",
-  "dateCreated": "2026-05-22T09:02:12.438Z",
-  "dateModified": "2026-05-22T09:02:12.438Z",
+  "dateCreated": "2026-05-22T14:18:54.694Z",
+  "dateModified": "2026-05-22T14:18:54.694Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

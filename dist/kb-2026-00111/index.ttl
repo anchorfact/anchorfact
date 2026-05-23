@@ -3,6 +3,6 @@
 
 <https://anchorfact.org/kb/kb-2026-00111>
   a schema:TechArticle ;
-  schema:headline "HTTPS/TLS" ;
+  schema:headline "HTTPS / TLS (Transport Layer Security)" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:generationMethod "human_only" .

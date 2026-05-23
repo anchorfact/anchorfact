@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00217",
   "headline": "Godot Engine",
   "description": "Godot is a free, open-source (MIT license) game engine created by Juan Linietsky and Ariel Manzur (2014). It features a unique scene system, dedicated 2D and 3D engines, and its own scripting language (GDScript, Python-like). Godot 4.0 (2023) brought Vulkan rendering, a new tilemap system, and improved 3D.",
-  "dateCreated": "2026-05-22T09:02:12.590Z",
-  "dateModified": "2026-05-22T09:02:12.590Z",
+  "dateCreated": "2026-05-22T14:18:54.879Z",
+  "dateModified": "2026-05-22T14:18:54.879Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00314",
   "headline": "Helm",
   "description": "Helm (Deis, 2015, graduated CNCF) is the Kubernetes package manager — 'apt/yum for K8s'. Charts package Kubernetes resources (Deployments, Services, ConfigMaps) with templating (Go templates) and values. Helm 3 (2019) removed Tiller (server component) for improved security.",
-  "dateCreated": "2026-05-22T09:02:12.344Z",
-  "dateModified": "2026-05-22T09:02:12.344Z",
+  "dateCreated": "2026-05-22T14:18:54.591Z",
+  "dateModified": "2026-05-22T14:18:54.591Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

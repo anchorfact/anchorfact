@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00434",
   "headline": "Cryptocurrency",
   "description": "Cryptocurrency is digital money secured by cryptography, operating on decentralized networks (blockchains). Bitcoin (2009, Satoshi Nakamoto) was the first and remains the largest. Key concepts: decentralization, limited supply (Bitcoin capped at 21 million), mining/PoS consensus, wallets (public key = address, private key = access).",
-  "dateCreated": "2026-05-22T09:02:12.172Z",
-  "dateModified": "2026-05-22T09:02:12.172Z",
+  "dateCreated": "2026-05-22T14:18:54.399Z",
+  "dateModified": "2026-05-22T14:18:54.399Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

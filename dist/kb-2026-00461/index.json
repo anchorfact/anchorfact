@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00461",
   "headline": "Chess Strategy",
   "description": "Chess is a two-player strategy board game. 64 squares, 32 pieces per side. Goal: checkmate (king under attack with no escape). Pieces: pawn (1pt), knight/bishop (3), rook (5), queen (9). Three phases: opening (develop pieces, control center), middlegame (attack/defend), endgame (few pieces, promote pawns).",
-  "dateCreated": "2026-05-22T09:02:12.821Z",
-  "dateModified": "2026-05-22T09:02:12.821Z",
+  "dateCreated": "2026-05-22T14:18:55.132Z",
+  "dateModified": "2026-05-22T14:18:55.132Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00237",
   "headline": "Clean Code Principles",
   "description": "Clean Code principles (Robert C. Martin) guide writing readable, maintainable code. Key rules: meaningful names (reveal intent), small functions (do one thing), minimal arguments (0-2 ideal), no side effects, DRY (Don't Repeat Yourself), comments explain WHY not WHAT. Code is read 10x more than written.",
-  "dateCreated": "2026-05-22T09:02:12.238Z",
-  "dateModified": "2026-05-22T09:02:12.238Z",
+  "dateCreated": "2026-05-22T14:18:54.472Z",
+  "dateModified": "2026-05-22T14:18:54.472Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00339",
   "headline": "Plate Tectonics",
   "description": "Plate tectonics (theory accepted 1960s) explains Earth's surface dynamics: the lithosphere is broken into tectonic plates that move on the semi-fluid asthenosphere. Boundaries: divergent (pull apart, mid-ocean ridges), convergent (collide, mountains/trenches), transform (slide past, San Andreas Fault). Drives earthquakes, volcanoes, mountain formation.",
-  "dateCreated": "2026-05-22T09:02:12.794Z",
-  "dateModified": "2026-05-22T09:02:12.794Z",
+  "dateCreated": "2026-05-22T14:18:55.102Z",
+  "dateModified": "2026-05-22T14:18:55.102Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00316",
   "headline": "Grafana",
   "description": "Grafana (2014, Torkel Odegaard) is the leading open-source observability platform for dashboards, alerting, and data visualization. It queries 30+ data sources (Prometheus, Elasticsearch, InfluxDB, PostgreSQL). Grafana 10 (2023) introduced Scenes (dashboard as code) and Correlations.",
-  "dateCreated": "2026-05-22T09:02:12.327Z",
-  "dateModified": "2026-05-22T09:02:12.327Z",
+  "dateCreated": "2026-05-22T14:18:54.573Z",
+  "dateModified": "2026-05-22T14:18:54.573Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

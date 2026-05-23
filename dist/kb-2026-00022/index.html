@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>TypeScript — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-TypeScript is a strongly-typed superset of JavaScript developed by Microsoft, first released in October 2012 by Anders Hejlsberg (creator of C# and Turbo Pascal). It adds optional static type checking to JavaScript while compiling to plain JavaScript. TypeScript was the 4th most popular programming language in the 2024 Stack Overflow Developer Survey and is used by over 80% of professional web developers. Its type system enables IDE autocompletion, refactoring, and early error detection — making large-scale JavaScript codebases maintainable.<br>
-<br>
-## Core Explanation<br>
-<br>
-TypeScript's type system is structural (not nominal), meaning types are compatible based on their shape rather than their name. Key type features include:<br>
-<br>
-- **Interfaces and Type Aliases**: Define the shape of objects and functions<br>
-- **Generics**: Parameterized types enabling reusable, type-safe abstractions<br>
-- **Union and Intersection Types**: Combine types (`A | B`, `A & B`)<br>
-- **Literal Types**: Specific string/number values as types (`"GET" | "POST"`)<br>
-- **Conditional Types**: Types that depend on other types (`T extends U ? X : Y`)<br>
-- **Template Literal Types**: String manipulation at the type level<br>
-- **Mapped Types**: Transform existing types (`Partial<T>`, `Readonly<T>`, `Pick<T, K>`)<br>
-- **Type Narrowing**: Control flow analysis that refines types based on runtime checks<br>
-- **`satisfies` Operator** (TS 4.9+): Validate type without widening<br>
-<br>
-TypeScript compiles to any JavaScript target (ES3 through ESNext) through the `tsc` compiler, or is stripped at build time by tools like esbuild and swc for faster development workflows.<br>
-<br>
-## Key Milestones<br>
-<br>
-| Version | Date | Key Feature |<br>
-|---------|------|------------|<br>
-| 0.8 | Oct 2012 | Initial public release by Anders Hejlsberg |<br>
-| 2.0 | Sep 2016 | Non-nullable types, control flow analysis |<br>
-| 2.8 | Mar 2018 | Conditional types |<br>
-| 3.0 | Jul 2018 | Project references, unknown type |<br>
-| 4.0 | Aug 2020 | Variadic tuple types, labeled tuples |<br>
-| 4.1 | Nov 2020 | Template literal types, recursive conditional types |<br>
-| 5.0 | Mar 2023 | Decorators (standardized), const type parameters |<br>
-| 5.5 | Jun 2024 | Inferred type predicates, isolated declarations |<br>
-| 5.7 | Nov 2024 | `--rewriteImportExtensions`, never-narrowing improvements |<br>
-<br>
-## Further Reading<br>
-<br>
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/): Official documentation<br>
-- [TypeScript GitHub](https://github.com/microsoft/TypeScript): Source code and issues<br>
+<body><article><br>
+## TL;DR<br>
+<br>
+TypeScript is a strongly-typed superset of JavaScript developed by Microsoft, first released in October 2012 by Anders Hejlsberg (creator of C# and Turbo Pascal). It adds optional static type checking to JavaScript while compiling to plain JavaScript. TypeScript was the 4th most popular programming language in the 2024 Stack Overflow Developer Survey and is used by over 80% of professional web developers. Its type system enables IDE autocompletion, refactoring, and early error detection — making large-scale JavaScript codebases maintainable.<br>
+<br>
+## Core Explanation<br>
+<br>
+TypeScript's type system is structural (not nominal), meaning types are compatible based on their shape rather than their name. Key type features include:<br>
+<br>
+- **Interfaces and Type Aliases**: Define the shape of objects and functions<br>
+- **Generics**: Parameterized types enabling reusable, type-safe abstractions<br>
+- **Union and Intersection Types**: Combine types (`A | B`, `A & B`)<br>
+- **Literal Types**: Specific string/number values as types (`"GET" | "POST"`)<br>
+- **Conditional Types**: Types that depend on other types (`T extends U ? X : Y`)<br>
+- **Template Literal Types**: String manipulation at the type level<br>
+- **Mapped Types**: Transform existing types (`Partial<T>`, `Readonly<T>`, `Pick<T, K>`)<br>
+- **Type Narrowing**: Control flow analysis that refines types based on runtime checks<br>
+- **`satisfies` Operator** (TS 4.9+): Validate type without widening<br>
+<br>
+TypeScript compiles to any JavaScript target (ES3 through ESNext) through the `tsc` compiler, or is stripped at build time by tools like esbuild and swc for faster development workflows.<br>
+<br>
+## Key Milestones<br>
+<br>
+| Version | Date | Key Feature |<br>
+|---------|------|------------|<br>
+| 0.8 | Oct 2012 | Initial public release by Anders Hejlsberg |<br>
+| 2.0 | Sep 2016 | Non-nullable types, control flow analysis |<br>
+| 2.8 | Mar 2018 | Conditional types |<br>
+| 3.0 | Jul 2018 | Project references, unknown type |<br>
+| 4.0 | Aug 2020 | Variadic tuple types, labeled tuples |<br>
+| 4.1 | Nov 2020 | Template literal types, recursive conditional types |<br>
+| 5.0 | Mar 2023 | Decorators (standardized), const type parameters |<br>
+| 5.5 | Jun 2024 | Inferred type predicates, isolated declarations |<br>
+| 5.7 | Nov 2024 | `--rewriteImportExtensions`, never-narrowing improvements |<br>
+<br>
+## Further Reading<br>
+<br>
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/): Official documentation<br>
+- [TypeScript GitHub](https://github.com/microsoft/TypeScript): Source code and issues<br>
 </article></body>
 </html>

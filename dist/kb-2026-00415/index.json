@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00415",
   "headline": "Music Theory Basics",
   "description": "Music theory describes how music works. Fundamentals: pitch (frequency), rhythm (time), melody (pitch sequence), harmony (simultaneous pitches), timbre (tone quality). Western 12-tone equal temperament divides octave into 12 semitones. Scales: major (happy), minor (sad), pentatonic, chromatic. Chords: triads (3 notes), seventh chords (4 notes).",
-  "dateCreated": "2026-05-22T09:02:12.153Z",
-  "dateModified": "2026-05-22T09:02:12.153Z",
+  "dateCreated": "2026-05-22T14:18:54.379Z",
+  "dateModified": "2026-05-22T14:18:54.379Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

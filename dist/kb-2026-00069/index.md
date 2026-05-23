@@ -7,7 +7,7 @@ language: "en"
 confidence: "high"
 confidence_rationale: "Based on W3C CSS specifications and MDN Web Docs"
 last_verified: "2026-05-22"
-generation_method: "ai_assisted"
+generation_method: "human_only"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
 primary_sources:

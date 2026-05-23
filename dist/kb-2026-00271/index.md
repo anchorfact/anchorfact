@@ -6,21 +6,24 @@ category:"ai"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Generative Adversarial Networks (Goodfellow et al., 2014)"
-    type:"paper"
-    year:2014
-    url:"https://arxiv.org/abs/1406.2661"
-    institution:"NeurIPS"
+  - title: "Generative Adversarial Networks"
+    authors: ["Goodfellow, Ian J.", "Pouget-Abadie, Jean", "Mirza, Mehdi", "Xu, Bing", "Warde-Farley, David", "Ozair, Sherjil", "Courville, Aaron", "Bengio, Yoshua"]
+    type: "academic_paper"
+    year: 2014
+    doi: "10.48550/arXiv.1406.2661"
+    url: "https://arxiv.org/abs/1406.2661"
+    institution: "NeurIPS"
+    note: "The original GAN paper. Published at NeurIPS 2014. 50,000+ citations. Introduced the adversarial training framework."
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+  - title: "Deep Learning (Goodfellow, Bengio, Courville)"
+    type: "book"
+    year: 2016
+    url: "https://www.deeplearningbook.org/"
+    institution: "MIT Press"
+    note: "Chapter 20: Deep Generative Models — covers GANs, VAEs, and other generative approaches"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

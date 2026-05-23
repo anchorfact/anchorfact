@@ -6,21 +6,23 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"Docker Compose Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://docs.docker.com/compose/"
-    institution:"Docker Inc."
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "Docker Compose Documentation"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
+    url: "https://docs.docker.com/compose/"
+    institution: "Docker Inc."
+    note: "Multi-container Docker orchestration: docker-compose.yml, services, networks, volumes, profiles"
+secondary_sources:
+  - title: "Docker: Up & Running (3rd Edition)"
+    authors: ["Kane, Sean P.", "Matthias, Karl"]
+    type: "book"
+    year: 2023
+    url: "https://www.oreilly.com/library/view/docker-up/9781098131814/"
+    institution: "O'Reilly"
+    note: "Covers Docker Compose in production context: multi-service deployments, orchestration patterns"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

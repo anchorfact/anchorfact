@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>systemd Timers — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-systemd timers are the modern replacement for cron, providing calendar and monotonic event scheduling with better logging, randomization, and dependency management. Timer unit triggers a matching service unit. `systemctl list-timers` shows all active timers.<br>
-<br>
-## Core Explanation<br>
-<br>
-Timer types: OnCalendar (specific times, like cron: `*-*-* 02:00:00` = daily 2AM), OnBootSec (after boot), OnUnitActiveSec (after service last ran). `RandomizedDelaySec` spreads load (avoid thundering herd). Persistent: `Persistent=true` catches up missed runs (like anacron). Accuracy: `AccuracySec` trades precision for power saving (default 1min).<br>
-<br>
-## Further Reading<br>
-<br>
-- [systemd.timer Documentation](undefined)<br>
+<body><article><br>
+## TL;DR<br>
+<br>
+systemd timers are the modern replacement for cron, providing calendar and monotonic event scheduling with better logging, randomization, and dependency management. Timer unit triggers a matching service unit. `systemctl list-timers` shows all active timers.<br>
+<br>
+## Core Explanation<br>
+<br>
+Timer types: OnCalendar (specific times, like cron: `*-*-* 02:00:00` = daily 2AM), OnBootSec (after boot), OnUnitActiveSec (after service last ran). `RandomizedDelaySec` spreads load (avoid thundering herd). Persistent: `Persistent=true` catches up missed runs (like anacron). Accuracy: `AccuracySec` trades precision for power saving (default 1min).<br>
+<br>
+## Further Reading<br>
+<br>
+- [systemd.timer Documentation](undefined)<br>
 </article></body>
 </html>

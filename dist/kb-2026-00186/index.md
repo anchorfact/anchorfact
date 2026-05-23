@@ -6,30 +6,26 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
+known_gaps:
+  - "CDN market share and edge location counts change frequently; check provider documentation"
+completeness: 0.88
 primary_sources:
-  - title:"undefined"
-    type:"undefined"
-    url:"undefined"
-    institution:"Cloudflare"
+  - title: "Cloudflare CDN Documentation"
+    type: "documentation"
+    year: 2026
+    url: "https://developers.cloudflare.com/cache/"
+    institution: "Cloudflare"
+    note: "One of the largest CDNs: 330+ cities, DDoS protection, WAF, edge computing"
 secondary_sources:
-  - title: "DNS and BIND (5th Ed)"
-    authors: ["Liu", "Albitz"]
-    type: "book"
-    year: 2006
-    url: "https://www.oreilly.com/library/view/dns-and-bind/0596100574/"
-    institution: "O'Reilly"
-  - title: "RESTful Web APIs"
-    authors: ["Richardson", "Amundsen"]
+  - title: "High Performance Browser Networking"
+    authors: ["Grigorik, Ilya"]
     type: "book"
     year: 2013
-    url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
+    url: "https://hpbn.co/"
     institution: "O'Reilly"
-completeness: 0.88
-ai_citations:
-  last_citation_check:"2026-05-22"
+    note: "Covers CDN architecture, TCP optimization, and latency fundamentals"
 ---
 
 ## TL;DR

@@ -1,68 +1,60 @@
 ---
-id: kb-2026-00216
-title: Unreal Engine 5
-schema_type: TechArticle
-category: game-development
-language: en
-confidence: high
+id: "kb-2026-00216"
+title: "Unreal Engine 5"
+schema_type: "TechArticle"
+category: "game-development"
+language: "en"
+confidence: "high"
 last_verified: "2026-05-22"
-generation_method: human_only
-ai_models:
-  - claude-opus
+generation_method: "human_only"
+ai_models: ["claude-opus"]
 derived_from_human_seed: true
-known_gaps:
-  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
-disputed_statements:
-  - statement: "The choice between Unity and Unreal Engine involves tradeoffs that are hotly debated: Unity's accessibility and C# ecosystem vs. Unreal's graphical fidelity and C++ performance"
-    context: See primary sources for competing interpretations
+
 atomic_facts:
-  - id: fact-game-development-01
+  - id: "fact-game-development-01"
     statement: "Features: Niagara VFX , Chaos Physics, Control Rig , Movie Render Queue"
-    source_title: GDC Vault
-    source_url: https://www.gdconf.com/
-    confidence: medium
-  - id: fact-game-development-001
-    statement: >-
-      Unreal Engine 5 (UE5, Epic Games, 2022) is a AAA game engine featuring Nanite (virtualized micropolygon geometry — billions of polygons without LODs), Lumen (fully dynamic global illumination),
-      World Partition (automatic world streaming), and MetaHuman (realistic human characters). Free for indies (5% royalty after $1M revenue).
-    confidence: medium
-    source_title: GDC Vault
-    source_url: https://www.gdconf.com/
-  - id: fact-game-development-002
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-game-development-001"
+    statement: "Unreal Engine 5 (UE5, Epic Games, 2022) is a AAA game engine featuring Nanite (virtualized micropolygon geometry — billions of polygons without LODs), Lumen (fully dynamic global illumination), World Partition (automatic world streaming), and MetaHuman (realistic human characters). Free for indies (5% royalty after $1M revenue)."
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-game-development-002"
     statement: "Features: Niagara VFX (next-gen particles), Chaos Physics, Control Rig (animation), Movie Render Queue (cinematics)."
-    confidence: medium
-    source_title: GDC Vault
-    source_url: https://www.gdconf.com/
-  - id: fact-game-development-003
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-game-development-003"
     statement: "UE5 powers Fortnite, Hellblade II, Black Myth: Wukong."
-    confidence: medium
-    source_title: GDC Vault
-    source_url: https://www.gdconf.com/
-  - id: fact-game-development-004
-    statement: UE5.5 (2025) added MegaLights (dynamic area lights) and improved Nanite for skeletal meshes.
-    confidence: medium
-    source_title: GDC Vault
-    source_url: https://www.gdconf.com/
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-game-development-004"
+    statement: "UE5.5 (2025) added MegaLights (dynamic area lights) and improved Nanite for skeletal meshes."
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
 completeness: 0.88
-ai_citations: null
+
 primary_sources:
-  - title: GDC Vault
-    type: conference
+  - title: "GDC Vault"
+    type: "conference"
     year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
+    url: "https://www.gdcvault.com/"
+    institution: "GDC"
+
 secondary_sources:
-  - title: GDC Vault
-    type: conference
+  - title: "GDC Vault"
+    type: "conference"
     year: 2026
-    url: https://www.gdconf.com/
-    institution: GDC
-  - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
-    type: textbook
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
     year: 2018
-    url: https://www.gameenginebook.com/
-    institution: CRC Press
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
 ---
+
 
 
 ## TL;DR

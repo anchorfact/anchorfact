@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00108",
   "headline": "Broadcast Channel API",
   "description": "The Broadcast Channel API enables same-origin communication between browsing contexts (tabs, iframes, workers) with a simple pub/sub model. Messages are broadcasted to all listeners on a named channel.",
-  "dateCreated": "2026-05-22T09:02:12.228Z",
-  "dateModified": "2026-05-22T09:02:12.228Z",
+  "dateCreated": "2026-05-22T14:18:54.461Z",
+  "dateModified": "2026-05-22T14:18:54.461Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

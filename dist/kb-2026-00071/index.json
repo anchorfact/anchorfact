@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00071",
   "headline": "Markdown",
   "description": "Markdown is a lightweight markup language for creating formatted text using a plain-text editor, created by John Gruber in 2004 with significant contributions from Aaron Swartz. Its design goal is readability — Markdown source is intended to be as readable as plain text, unlike HTML's angle brackets. Markdown is the dominant format for documentation (README files, GitHub wikis), static site generators (Jekyll, Hugo, Astro), note-taking apps (Obsidian, Notion), and LLM-optimized content (llms.txt). The CommonMark specification (v0.31.2, 2024) provides a rigorous, unambiguous standard.",
-  "dateCreated": "2026-05-22T09:02:12.387Z",
-  "dateModified": "2026-05-22T09:02:12.387Z",
+  "dateCreated": "2026-05-22T14:18:54.638Z",
+  "dateModified": "2026-05-22T14:18:54.638Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

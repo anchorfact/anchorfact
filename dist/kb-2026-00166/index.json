@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00166",
   "headline": "CSS Flexbox",
   "description": "Flexbox provides one-dimensional layout (row or column), distributing space and aligning items within a container. `display: flex` on parent enables flex context. Key properties: `justify-content` (main axis alignment), `align-items` (cross axis), `flex-grow/shrink/basis` (item sizing).",
-  "dateCreated": "2026-05-22T09:02:12.259Z",
-  "dateModified": "2026-05-22T09:02:12.259Z",
+  "dateCreated": "2026-05-22T14:18:54.495Z",
+  "dateModified": "2026-05-22T14:18:54.495Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

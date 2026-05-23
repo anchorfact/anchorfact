@@ -3,9 +3,9 @@
   "@type": "TechArticle",
   "@id": "https://anchorfact.org/kb/kb-gd-029",
   "headline": "程序化内容生成（PCG）",
-  "description": "程序化内容生成（PCG）",
-  "dateCreated": "2026-05-22T09:02:12.607Z",
-  "dateModified": "2026-05-22T09:02:12.607Z",
+  "description": "程序化内容生成（PCG）\r",
+  "dateCreated": "2026-05-22T14:18:54.902Z",
+  "dateModified": "2026-05-22T14:18:54.902Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

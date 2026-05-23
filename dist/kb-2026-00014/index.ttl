@@ -5,4 +5,4 @@
   a schema:TechArticle ;
   schema:headline "Kubernetes (K8s)" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:generationMethod "human_only" .

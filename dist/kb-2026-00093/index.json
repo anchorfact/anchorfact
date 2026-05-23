@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00093",
   "headline": "Content Security Policy (CSP)",
   "description": "Content Security Policy (CSP) is a security standard that helps prevent XSS, clickjacking, and code injection attacks by controlling which resources a web page is allowed to load. It is delivered via HTTP headers (`Content-Security-Policy`) or `<meta>` tags.",
-  "dateCreated": "2026-05-22T09:02:12.250Z",
-  "dateModified": "2026-05-22T09:02:12.250Z",
+  "dateCreated": "2026-05-22T14:18:54.486Z",
+  "dateModified": "2026-05-22T14:18:54.486Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

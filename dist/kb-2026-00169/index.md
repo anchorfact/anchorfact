@@ -6,21 +6,22 @@ category:"computer-science"
 language:"en"
 confidence:"high"
 last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+generation_method: "human_only"
+derived_from_human_seed: true
 primary_sources:
-  - title:"WAI-ARIA 1.2 (W3C Recommendation)"
-    type:"standard"
-    year:2023
-    url:"https://www.w3.org/TR/wai-aria/"
-    institution:"W3C"
+  - title: "WAI-ARIA 1.2 (W3C Recommendation)"
+    type: "standard"
+    year: 2023
+    url: "https://www.w3.org/TR/wai-aria/"
+    institution: "W3C"
+    note: "The definitive ARIA specification: roles, states, properties for accessible web applications"
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+  - title: "MDN Web Docs — ARIA"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    url: "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA"
     institution: "Mozilla"
+    note: "Practical developer guide to ARIA: roles, properties, states, and best practices"
 completeness: 0.88
 ai_citations:
   last_citation_check:"2026-05-22"

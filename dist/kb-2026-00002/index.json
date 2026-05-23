@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00002",
   "headline": "Attention Mechanism",
   "description": "The attention mechanism allows neural networks to dynamically focus on the most relevant parts of input data when producing each output. Introduced by Bahdanau et al. (2014) from Université de Montréal and refined by Luong et al. (2015) from Stanford, attention solved the information bottleneck of fixed-length context vectors in encoder-decoder architectures. The Bahdanau paper has been cited over 40,000 times on Google Scholar (May 2026), making it one of the most influential papers in NLP. Attention is the foundational concept enabling Transformers and all modern language models.",
-  "dateCreated": "2026-05-22T09:02:12.071Z",
-  "dateModified": "2026-05-22T09:02:12.071Z",
+  "dateCreated": "2026-05-22T14:18:54.288Z",
+  "dateModified": "2026-05-22T14:18:54.288Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

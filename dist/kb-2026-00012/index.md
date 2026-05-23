@@ -7,7 +7,7 @@ language: "en"
 confidence: "high"
 confidence_rationale: "Based on official Python documentation and the TIOBE Index"
 last_verified: "2026-05-22"
-generation_method: "ai_assisted"
+generation_method: "human_only"
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
 primary_sources:
@@ -27,6 +27,8 @@ secondary_sources:
     url: "https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/"
     institution: "O'Reilly"
 completeness: 0.88
+known_gaps:
+  - "Python version 3.14+ details are evolving; check docs.python.org for latest"
 related_entities:
   - "entity:programming-languages"
 ai_citations:

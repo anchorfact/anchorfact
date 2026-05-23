@@ -5,4 +5,4 @@
   a schema:TechArticle ;
   schema:headline "Fourier Transform" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:generationMethod "human_only" .

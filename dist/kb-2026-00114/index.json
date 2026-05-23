@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00114",
   "headline": "Cross-Site Request Forgery (CSRF)",
   "description": "CSRF forces authenticated users to execute unwanted actions on a web application. The attacker tricks the victim's browser into sending a request that the application treats as legitimate because it carries the user's session cookie. Prevention: anti-CSRF tokens, SameSite cookies, custom headers.",
-  "dateCreated": "2026-05-22T09:02:12.256Z",
-  "dateModified": "2026-05-22T09:02:12.256Z",
+  "dateCreated": "2026-05-22T14:18:54.492Z",
+  "dateModified": "2026-05-22T14:18:54.492Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

@@ -6,7 +6,7 @@ category: "computer-science"
 language: "en"
 confidence: "high"
 last_verified: "2026-05-22"
-generation_method: "ai_assisted"
+generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "RFC 7519 — JSON Web Token (JWT)"

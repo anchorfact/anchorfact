@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta charset="utf-8"><title>Zig Language — AnchorFact</title></head>
-<body><article><br>
-## TL;DR<br>
-<br>
-Zig (Andrew Kelley, 2016) is a systems programming language competing with C — manual memory management without hidden allocations, compile-time execution, and seamless C interoperability (can import C headers directly). No garbage collector, no hidden control flow. Bun JS runtime is written in Zig.<br>
-<br>
-## Core Explanation<br>
-<br>
-No hidden allocations: `ArrayList(T).init(allocator)` requires explicit allocator. `comptime`: execute code at compile time — generic types, optimization. `defer` for cleanup (like Go). C interop: `@cImport(@cInclude('stdio.h'))` — direct access to C libraries. No macros or preprocessor: all metaprogramming via comptime. Error handling: `try` and `catch` without exceptions.<br>
-<br>
-## Further Reading<br>
-<br>
-- [Zig Documentation](https://ziglang.org/documentation/)<br>
+<body><article><br>
+## TL;DR<br>
+<br>
+Zig (Andrew Kelley, 2016) is a systems programming language competing with C — manual memory management without hidden allocations, compile-time execution, and seamless C interoperability (can import C headers directly). No garbage collector, no hidden control flow. Bun JS runtime is written in Zig.<br>
+<br>
+## Core Explanation<br>
+<br>
+No hidden allocations: `ArrayList(T).init(allocator)` requires explicit allocator. `comptime`: execute code at compile time — generic types, optimization. `defer` for cleanup (like Go). C interop: `@cImport(@cInclude('stdio.h'))` — direct access to C libraries. No macros or preprocessor: all metaprogramming via comptime. Error handling: `try` and `catch` without exceptions.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Zig Documentation](https://ziglang.org/documentation/)<br>
 </article></body>
 </html>

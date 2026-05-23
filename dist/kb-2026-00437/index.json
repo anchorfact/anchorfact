@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00437",
   "headline": "Lean Manufacturing",
   "description": "Lean manufacturing (Toyota Production System, 1950s) maximizes value while minimizing waste. 5 principles: define value, map value stream, create flow, establish pull, pursue perfection. 7 wastes (muda): overproduction, waiting, transport, over-processing, inventory, motion, defects. Applicable beyond manufacturing.",
-  "dateCreated": "2026-05-22T09:02:12.184Z",
-  "dateModified": "2026-05-22T09:02:12.184Z",
+  "dateCreated": "2026-05-22T14:18:54.412Z",
+  "dateModified": "2026-05-22T14:18:54.412Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

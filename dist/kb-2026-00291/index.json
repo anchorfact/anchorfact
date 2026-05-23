@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00291",
   "headline": "Spring Boot",
   "description": "Spring Boot (Pivotal/VMware, 2014) simplifies Java enterprise development with auto-configuration, embedded servers (Tomcat, Jetty), and starter dependencies. Built on the Spring Framework (2002), it is the dominant Java backend framework. Spring Boot 3.x requires Java 17+ and Jakarta EE.",
-  "dateCreated": "2026-05-22T09:02:12.489Z",
-  "dateModified": "2026-05-22T09:02:12.489Z",
+  "dateCreated": "2026-05-22T14:18:54.749Z",
+  "dateModified": "2026-05-22T14:18:54.749Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -17,6 +17,6 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:generationMethod": "human_only",
   "citation": []
 }

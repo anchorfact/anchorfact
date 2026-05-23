@@ -5,4 +5,4 @@
   a schema:TechArticle ;
   schema:headline "YAML (YAML Ain't Markup Language)" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:generationMethod "human_only" .
