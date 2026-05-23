@@ -65,6 +65,7 @@ ai_citations:
 
 
 
+
 ## TL;DR
 
 William Shakespeare (1564-1616) is the most influential writer in the English language. 39 plays, 154 sonnets, 2 narrative poems. Genres: tragedies (Hamlet, King Lear, Macbeth, Othello), comedies (A Midsummer Night's Dream), histories (Henry V), romances (The Tempest). Invented ~1700 words still used today.

@@ -1,58 +1,64 @@
 ---
-id: kb-2026-00460
-title: Pyramids of Giza
-schema_type: TechArticle
-category: history
-language: en
-confidence: high
+id: "kb-2026-00460"
+title: "Pyramids of Giza"
+schema_type: "TechArticle"
+category: "history"
+language: "en"
+confidence: "high"
 last_verified: "2026-05-22"
-generation_method: ai_assisted
-ai_models:
-  - claude-opus
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
 derived_from_human_seed: true
-primary_sources:
-  - title: The Complete Pyramids (Mark Lehner)
-    type: book
-    year: 1997
-    url: https://thamesandhudson.com/the-complete-pyramids-9780500285473
-    institution: Thames & Hudson
-secondary_sources:
-  - title: The Penguin History of the World (J.M. Roberts)
-    type: textbook
-    year: 2014
-    url: https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    institution: Penguin Books
-  - title: World History Encyclopedia
-    type: encyclopedia
-    year: 2024
-    url: https://www.worldhistory.org/
-    institution: World History Foundation
+
 atomic_facts:
-  - id: fact-history-01
+  - id: "fact-history-01"
     statement: "Great Pyramid of Khufu: 146m originally , 2.3 million stone blocks averaging 2.5 tons each, aligned to true north within 0.05 degrees — a precision modern engineers admire"
-    source_title: The Complete Pyramids (Mark Lehner)
-    source_url: https://thamesandhudson.com/the-complete-pyramids-9780500285473
-    confidence: high
-  - id: fact-history-02
+    source_title: "The Complete Pyramids (Mark Lehner)"
+    source_url: "https://thamesandhudson.com/the-complete-pyramids-9780500285473"
+    confidence: "high"
+  - id: "fact-history-02"
     statement: "Khafre pyramid: slightly smaller, retains some casing stones at top"
-    source_title: The Complete Pyramids (Mark Lehner)
-    source_url: https://thamesandhudson.com/the-complete-pyramids-9780500285473
-    confidence: high
+    source_title: "The Complete Pyramids (Mark Lehner)"
+    source_url: "https://thamesandhudson.com/the-complete-pyramids-9780500285473"
+    confidence: "high"
+
 known_gaps:
-  - Statistics and data cited are from 2020 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
+  - "Statistics and data cited are from 2020 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+primary_sources:
+  - title: "The Complete Pyramids (Mark Lehner)"
+    type: "book"
+    year: 1997
+    url: "https://thamesandhudson.com/the-complete-pyramids-9780500285473"
+    institution: "Thames & Hudson"
+
+secondary_sources:
+  - title: "The Penguin History of the World (J.M. Roberts)"
+    type: "textbook"
+    year: 2014
+    url: "https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
+    institution: "Penguin Books"
+  - title: "World History Encyclopedia"
+    type: "encyclopedia"
+    year: 2024
+    url: "https://www.worldhistory.org/"
+    institution: "World History Foundation"
+
 ai_citations:
-  - title: Encyclopaedia Britannica
-    type: reference
+  - title: "Encyclopaedia Britannica"
+    type: "reference"
     year: 2025
-    url: https://www.britannica.com/
-    institution: Encyclopaedia Britannica, Inc.
-  - title: The Penguin History of the World
-    type: book
+    url: "https://www.britannica.com/"
+    institution: "Encyclopaedia Britannica, Inc."
+  - title: "The Penguin History of the World"
+    type: "book"
     year: 1976
-    url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    institution: J.M. Roberts, Penguin
+    url: "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
+    institution: "J.M. Roberts, Penguin"
+
 ---
+
 
 
 ## TL;DR

@@ -56,6 +56,7 @@ secondary_sources:
 
 
 
+
 ## TL;DR
 
 Philosophy of mind examines the nature of consciousness, mental states, and the mind-body relationship. Positions: dualism (Descartes: mind and body separate), physicalism (mind = brain), functionalism (mental states = functional roles), panpsychism (consciousness is fundamental). The 'hard problem' (Chalmers): why does physical processing produce subjective experience?
