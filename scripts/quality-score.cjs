@@ -77,17 +77,22 @@ function parseFrontmatter(content) {
     .replace(/^(\s*[\w_-]+):(\S)/gm, '$1: $2')
     .replace(/^(\s*-\s+\w[^:]*):(\S)/gm, '$1: $2');
   // Deduplicate keys (skip list item interior — each `  - ` entry is independent)
-  const seenKeys = new Set();
-  let inListEntry = false;
-  let listEntryKeys = new Set();
+  // Global dedup only for top-level keys (indent <= 2).
+  // List-item keys (indent >= 4) are deduped per-entry via listEntryKeys.
+  // This prevents cross-section pollution (e.g. secondary_sources fields
+  // blocking primary_sources fields with the same indent:key).
+  const seenTopKeys = new Set();
   const lines = yamlStr.split('\n');
   const deduped = [];
+  let inSection = false;   // true when inside source list (primary_sources, secondary_sources)
+  let entryKeys = new Set(); // per-entry dedup within current source section
+
   for (let i = lines.length - 1; i >= 0; i--) {
     const line = lines[i];
-    // Track list item boundaries: reset listEntryKeys on each new `  - `
+    // Source list item marker: reset per-entry dedup
     if (/^\s{2}- /.test(line)) {
-      listEntryKeys = new Set();
-      inListEntry = true;
+      entryKeys = new Set();
+      inSection = true;
       deduped.unshift(line);
       continue;
     }
@@ -95,16 +100,17 @@ function parseFrontmatter(content) {
     if (keyMatch) {
       const indent = keyMatch[1].length;
       const key = `${indent}:${keyMatch[2]}`;
-      if (inListEntry && indent >= 4) {
-        // Inside a list entry — dedup within this entry only
-        if (listEntryKeys.has(key)) continue;
-        listEntryKeys.add(key);
-      } else {
-        // Top-level or section-level — global dedup
-        if (indent <= 2) inListEntry = false;
-        if (seenKeys.has(key)) continue;
-        seenKeys.add(key);
+      if (indent <= 2) {
+        // Top-level or section header — global dedup + exit section
+        inSection = false;
+        if (seenTopKeys.has(key)) continue;
+        seenTopKeys.add(key);
+      } else if (inSection) {
+        // Inside a source list entry — dedup within this entry only
+        if (entryKeys.has(key)) continue;
+        entryKeys.add(key);
       }
+      // else: indent>=4 but NOT inSection — always keep (never globally dedup)
     }
     deduped.unshift(line);
   }
