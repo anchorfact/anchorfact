@@ -26,6 +26,11 @@ secondary_sources:
     year: 2018
     url: https://www.gameenginebook.com/
     institution: CRC Press
+  - title: Game Programming Patterns (Robert Nystrom)
+    type: book
+    year: 2014
+    url: https://gameprogrammingpatterns.com/
+    institution: Genever Benning
 known_gaps:
   - Content verified during quality audit; citations cross-referenced with authoritative sources
 disputed_statements:
@@ -52,6 +57,7 @@ related_entities:
   - entity:csharp
 ai_citations: null
 ---
+
 
 
 ## TL;DR

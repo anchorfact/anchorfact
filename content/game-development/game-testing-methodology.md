@@ -21,6 +21,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -44,7 +46,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "1 功能测试（Functional Testing）\r \r 验证游戏功能是否按设计工作：\r \r | 测试项 | 说明 | 方法 |\r |--------|------|------|\r | **单元测试** | 测试单个函数/类 | 自动化 |\r | **集成测试** | 测试模块间交互 | 自动化 + 手动 |\r | **系统测试** | 测试完整功能链 | 手动 |\r | **回归测试** | 验证修复未引入新问题 | 自动化 |\r \r ```csharp\r // Unity 功能测试示例（Unity Test Framework）\r using NUnit."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "Framework;\r using UnityEngine;\r using UnityEngine."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "TestTools;\r \r public class PlayerMovementTests\r {\r     [Test]\r     public void Player_MovesForward_WhenWKeyPressed()\r     {\r         // Arrange\r         var player = new GameObject()."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "AddComponent<PlayerController>();\r         player."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "zero;\r         \r         // Act\r         player."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 # 游戏测试方法论

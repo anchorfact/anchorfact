@@ -26,6 +26,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -47,7 +49,35 @@ known_gaps:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "gg\r   图像→无缝纹理: Stable Diffusion Tile, TextureLab\r   材质描述→Shader: ShaderGPT, Material Maker AI\r \r 动画:\r   视频→动画: Rokoko Video, Move."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "0, Kling, OpenAI Sora\r   图像→视频: Runway Image2Video, Pika Effects\r ```\r \r ### 1."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "ai, Rokoko |\r | **动画（面部）** | ⭐⭐⭐⭐ | ✅ 直接使用 | 低 | Audio2Face |\r | **音乐/BGM** | ⭐⭐⭐⭐ | ✅ 直接使用 | 低 | Suno, Udio |\r | **音效/SFX** | ⭐⭐⭐⭐ | ✅ 直接使用 | 低 | ElevenLabs SFX |\r | **语音/对话** | ⭐⭐⭐⭐⭐ | ✅ 直接使用 | 低 | ElevenLabs |\r | **关卡原型** | ⭐⭐⭐ | ⚠️ 需人工调整 | 中 | LUDO, PCG+AI |\r | **视频/过场** | ⭐⭐⭐ | ⚠️ 需剪辑 | 中 | Runway, Kling |\r \r ---\r \r ## 2."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "1 主流工具对比\r \r | 工具 | 模式 | 优势 | 局限 | 价格 |\r |------|------|------|------|------|\r | **Midjourney v7** | Discord/网页 | 美学质量最高、风格一致 | 无官方公开API，仅Discord/第三方封装 | [待验证] |\r | **DALL-E 3** | ChatGPT/API | 指令遵循强、多语言 | 风格单一、审核严 | 1024×1024 $0."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "08/张 |\r | **Stable Diffusion XL** | 本地/API | 完全可控、开源、可微调 | 需GPU、学习曲线 | 免费(自托管) |\r | **FLUX."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 ## 1. 概览与分类

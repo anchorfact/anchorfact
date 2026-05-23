@@ -5,74 +5,52 @@ schema_type: TechArticle
 category: ai
 language: en
 confidence: high
-confidence_rationale: Based on Anthropic's official Constitutional AI description (May 2023) and the January 2026 constitution update
 last_verified: "2026-05-22"
-generation_method: human_only
+generation_method: ai_assisted
 ai_models:
   - claude-opus
 derived_from_human_seed: true
+atomic_facts: []
 primary_sources:
-  - title: Claude's Constitution
-    authors:
-      - Anthropic
-    type: announcement
-    year: 2023
-    url: https://www.anthropic.com/news/claudes-constitution
-    institution: Anthropic
-    note: Updated January 21, 2026
   - title: "Constitutional AI: Harmlessness from AI Feedback"
-    authors:
-      - Bai, Yuntao
-      - Kadavath, Saurav
-      - Kundu, Sandipan
-      - Askell, Amanda
-      - Kernion, Jackson
-      - Jones, Andy
-      - Chen, Anna
-      - Goldie, Anna
-      - Mirhoseini, Azalia
-      - McKinnon, Cameron
-      - et al.
     type: academic_paper
     year: 2022
-    doi: 10.48550/arXiv.2212.08073
     url: https://arxiv.org/abs/2212.08073
     institution: Anthropic
-secondary_sources:
-  - title: "Constitutional AI: Harmlessness from AI Feedback"
     authors:
       - Bai
       - Kadavath
+      - Kundu
+      - et al.
+  - title: Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback
     type: academic_paper
     year: 2022
-    doi: 10.48550/arXiv.2212.08073
-    url: https://arxiv.org/abs/2212.08073
-    institution: arXiv
-atomic_facts:
-  - id: fact-ai-01
-    statement: >-
-      First published in December 2022 and detailed in May 2023, CAI trains models to self-critique and self-correct based on constitutional principles, then uses AI-generated feedback instead of
-      human feedback for reinforcement learning
-    source_title: "Constitutional AI: Harmlessness from AI Feedback"
-    source_url: https://arxiv.org/abs/2212.08073
-    source_doi: 10.48550/arXiv.2212.08073
-    confidence: high
-completeness: 0.9
-disputed_statements:
-  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
-    confidence: medium
+    url: https://arxiv.org/abs/2204.05862
+    institution: Anthropic
+    authors:
+      - Bai
+      - Jones
+      - Kamalu
+      - et al.
+secondary_sources:
+  - title: Deep Reinforcement Learning from Human Preferences (RLHF foundation)
+    type: academic_paper
+    year: 2017
+    url: https://arxiv.org/abs/1706.03741
+    institution: OpenAI / DeepMind
+    authors:
+      - Christiano
+      - Leike
+      - Brown
+      - et al.
 known_gaps:
-  - Statistics and data cited are from 2023 and earlier; more recent data may have become available since publication
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Recent developments from 2025-2026 may not be reflected
-related_entities:
-  - entity:rlhf
-  - entity:claude
-  - entity:ai-safety
-ai_citations: null
+  - Statistics and data cited are from 2024 and earlier; more recent developments may have become available since publication
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
+disputed_statements:
+  - statement: Whether constitutional principles can adequately capture all ethical considerations without introducing unintended biases remains an open research question
+    context: See CAI paper discussion on constitutional design
+completeness: 0.85
 ---
-
-
 ## TL;DR
 
 Constitutional AI (CAI) is Anthropic's method for training AI systems to be helpful and harmless using explicit written principles — a "constitution" — rather than implicit human preferences. First published in December 2022 (arXiv:2212.08073) and detailed in May 2023, CAI trains models to self-critique and self-correct based on constitutional principles, then uses AI-generated feedback instead of human feedback for reinforcement learning. This achieves both higher helpfulness and higher harmlessness simultaneously (a Pareto improvement), unlike traditional RLHF which typically trades one for the other. Claude is the first model trained entirely with CAI.

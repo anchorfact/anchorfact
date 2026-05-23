@@ -19,6 +19,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -42,7 +44,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "# 多人游戏设计（Multiplayer Game Design） 多人游戏设计是现代游戏开发中最复杂的领域之一，涉及网络工程、心理学、社会学和系统设计的交叉。本文档涵盖从底层网络同步到上层社交系统的完整知识体系。 --- "
+    confidence: medium
+    source_url: https://www.gameenginebook.com/
+    source_title: Game Engine Architecture (Jason Gregory, 3rd Ed)
+  - id: fact-gd-002
+    statement: "time - lastStateTime) / sendInterval;\r     transform."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "Lerp(prevPosition, targetPosition, t);\r }\r ```\r \r #### 帧同步的关键实现\r \r ```cpp\r // 确定性浮点运算（避免不同CPU/编译器结果不一致）\r class FixedPoint {\r     int64_t raw;  // 定点数存储，例如 1 = 1000\r public:\r     static const int64_t SCALE = 1000;\r     FixedPoint operator+(const FixedPoint& other) const {\r         return FixedPoint(raw + other."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "raw);\r     }\r     // 所有运算避免浮点，确保跨平台一致\r };\r \r // 输入同步帧结构\r struct InputFrame {\r     uint32_t frameNumber;\r     uint32_t playerId;\r     uint32_t inputMask;  // 位掩码：上/下/左/右/攻击/技能\r     uint16_t aimAngle;   // 定点数角度\r };\r ```\r \r **案例分析**：\r - **《王者荣耀》**：采用帧同步 + 乐观预测。"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "2 延迟补偿（Lag Compensation）\r \r 延迟补偿是 FPS 竞技游戏的核心技术，用于解决\"我看到打中了但服务器说没打中\"的问题。"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 # 多人游戏设计（Multiplayer Game Design）

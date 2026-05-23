@@ -16,6 +16,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -39,7 +41,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "1 信息优先级金字塔\r \r ```\r        紧急/重要\r        ┌────────┐\r        │ 生命值 │  ← 随时可见、大尺寸、颜色突出\r        ├────────┤\r        │ 任务目标│  ← 需要时可见\r        ├────────┤\r        │ 资源计数│  ← 玩家查阅时可见\r        ├────────┤\r        │ 社交信息│  ← 后台显示\r        └────────┘\r ```\r \r ### 2."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "2 视觉编码\r \r 用视觉属性传递信息层级：\r \r | 属性 | 用法 | 示例 |\r |------|------|------|\r | **尺寸** | 越大越重要 | 生命值 > 队友列表 |\r | **颜色** | 红色=危险，绿色=安全，金色=稀有 | 低血量变红闪烁 |\r | **位置** | 越靠近中央越重要 | HUD 四角 vs 屏幕中央提示 |\r | **动画** | 动态吸引注意力 | 新任务闪烁、受伤时屏幕边缘泛红 |\r | **透明度** | 越透明越次要 | 非战斗时隐藏 HUD |\r \r ### 2."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "3 格式塔原则在游戏 UI 中的应用\r \r | 原则 | 游戏 UI 应用 |\r |------|-------------|\r | **相近** | 相关功能按钮分在一组 |\r | **相似** | 同类型道具用相同图标风格 |\r | **闭合** | 血条用分段方式让人一目了然满血状态 |\r | **连续** | 技能树用连线引导阅读方向 |\r | **图底** | 弹窗用半透明背景突出前景内容 |\r \r ---\r \r ## 3."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "2 游戏 UX 自检清单\r \r - [ ] 玩家在 3 秒内能找到关键信息（生命、弹药、目标）\r - [ ] 所有可交互元素在 5 秒内可识别\r - [ ] 反馈延迟 < 100ms（即时感）\r - [ ] 没有让玩家困惑的图标（无文字说明也能理解）\r - [ ] 错误操作有清晰提示\r - [ ] 长按/双击等高级操作有教程\r - [ ] 所有 UI 在目标分辨率下完整显示\r - [ ] 控制器/键盘/触屏三种输入方式都可用\r \r ---\r \r ## 4."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "2 触摸设计规范\r \r | 规范 | 数值 | 说明 |\r |------|------|------|\r | **最小触摸目标** | 44x44 DIP（推荐 48x48） | iOS HIG 标准 |\r | **触摸目标间距** | ≥ 8px | 防止误触 |\r | **操作反馈时间** | < 100ms | 触感/视觉/音效即时响应 |\r | **手势一致性** | 全屏统一 | 滑动=视角/翻页，点按=确认 |\r \r ### 4."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 ## 2. 信息设计原则

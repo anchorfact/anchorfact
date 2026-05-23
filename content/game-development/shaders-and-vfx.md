@@ -22,6 +22,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -45,7 +47,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "# 着色器与视觉特效（VFX） > **视觉特效是游戏的语法** —— 它告诉玩家发生了什么、什么重要、以及该如何感受。 --- "
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "消融效果（Dissolve）\r \r ```hlsl\r // HLSL 伪代码\r float dissolveEdge = 0."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "r;\r float mask = noise - _DissolveAmount;\r \r // 主体\r clip(mask);\r \r // 边缘发光\r float edge = smoothstep(0, dissolveEdge, mask);\r float3 finalColor = lerp(_EdgeColor, baseColor, edge);\r ```\r \r #### 2."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "全息投影（Hologram）\r \r ```hlsl\r // 扫描线 + 故障 + 透明度\r float scanline = frac(uv."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "y);\r scanline = step(_ScanlineThreshold, scanline);\r \r float glitch = frac(sin(dot(uv, float2(12."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 # 着色器与视觉特效（VFX）

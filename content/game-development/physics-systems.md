@@ -20,6 +20,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -43,7 +45,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "IgnoreLayerCollision(8, 9, false);\r         // 玩家层(8) 与 玩家层(8) 不碰撞\r         Physics."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "IgnoreLayerCollision(8, 8, true);\r     }\r }\r ```\r \r ### 1."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "Force);\r         \r         // 施加速度变化（质量不敏感）\r         rb."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "Impulse);\r         \r         // 直接设置速度（慎用，可能破坏物理一致性）\r         // rb."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "velocity = new Vector3(0, jumpForce, 0);\r     }\r }\r ```\r \r ### 1."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 # 游戏物理系统设计

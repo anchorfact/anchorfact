@@ -22,6 +22,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -45,7 +47,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "# UGC 与 Mod 系统 > **最好的内容来自玩家。** 从《我的世界》到《上古卷轴》，UGC 不仅延长了游戏寿命，有时甚至比官方内容更受欢迎。 --- "
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "** 从《我的世界》到《上古卷轴》，UGC 不仅延长了游戏寿命，有时甚至比官方内容更受欢迎。"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "文件冲突：两个 Mod 修改同一文件\r         file_map = {}\r         for mod in mod_list:\r             for file in mod."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "modified_files:\r                 if file in file_map:\r                     conflicts."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "append({\r                         'type': 'file',\r                         'file': file,\r                         'mods': [file_map[file], mod]\r                     })\r                 else:\r                     file_map[file] = mod\r         \r         # 2."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 # UGC 与 Mod 系统

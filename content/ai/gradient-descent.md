@@ -1,17 +1,55 @@
 ---
-id: ""
-title: ""
-schema_type: TechArticle
-category: ""
-language: en
-confidence: high
-last_verified: ""
-generation_method: ai_assisted
-ai_models:
-  - claude-opus
+id: "kb-2026-0999"
+title: "Gradient Descent and Optimization"
+schema_type: "TechArticle"
+category: "ai"
+language: "en"
+confidence: "high"
+last_verified: "2026-05-22"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
 derived_from_human_seed: true
----
 
+atomic_facts:
+  - id: "fact-ai-001"
+    statement: "Gradient descent is the fundamental optimization algorithm for training machine learning models. It iteratively adjusts parameters in the direction of steepest descent of the loss function. Variants: Batch GD (full dataset), Stochastic GD (single example), Mini-batch GD (small batches — standard)."
+    source_title: "An Overview of Gradient Descent Optimization Algorithms"
+    source_url: "https://arxiv.org/abs/1609.04747"
+    confidence: "high"
+
+completeness: 0.85
+
+disputed_statements:
+  - statement: "The choice between SGD with momentum and adaptive optimizers (Adam, AdamW) remains contested; Adam converges faster but may generalize worse on some tasks"
+    context: "See Keskar et al. (2017) and Wilson et al. (2017)"
+
+known_gaps:
+  - "Statistics and data cited are from 2024 and earlier; more recent developments may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+primary_sources:
+  - title: "Deep Learning (Goodfellow, Bengio, Courville)"
+    authors: ["Goodfellow", "Bengio", "Courville"]
+    type: "textbook"
+    year: 2016
+    url: "https://www.deeplearningbook.org/"
+    institution: "MIT Press"
+  - title: "Adam: A Method for Stochastic Optimization"
+    authors: ["Kingma", "Ba"]
+    type: "academic_paper"
+    year: 2014
+    url: "https://arxiv.org/abs/1412.6980"
+    institution: "ICLR / Google"
+
+secondary_sources:
+  - title: "An Overview of Gradient Descent Optimization Algorithms"
+    authors: ["Ruder, Sebastian"]
+    type: "academic_paper"
+    year: 2017
+    url: "https://arxiv.org/abs/1609.04747"
+    institution: "arXiv"
+
+---
 
 
 ## TL;DR

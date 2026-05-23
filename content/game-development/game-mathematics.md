@@ -23,6 +23,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -46,7 +48,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "# 游戏数学 > **游戏开发中 90% 的\"感觉不对\"问题，根源是数学没调好。** 随机太假、移动太僵、碰撞不准、概率失衡——都是数学。 --- "
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "常用数学模式\r \r ---\r \r ## 随机数与概率\r \r ### 伪随机数生成器（PRNG）\r \r | 算法 | 周期 | 速度 | 质量 | 适用场景 |\r |------|------|------|------|----------|\r | **System."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "Random** | 2^31 | 快 | 低 | 非关键随机（如粒子偏移） |\r | **xorshift** | 2^128 | 极快 | 中 | 高频调用（如每帧噪声） |\r | **PCG** | 2^64 | 快 | 高 | 通用游戏随机，推荐 |\r | **Mersenne Twister** | 2^19937 | 中 | 极高 | 需要统计级质量的场景 |\r \r **种子（Seed）的重要性**：\r ```\r 使用确定性的种子可以让随机序列可复现：\r - 程序化生成：相同种子 = 相同世界\r - 调试：可以复现玩家报告的 bug\r - 回放系统：记录种子而非所有随机结果\r ```\r \r ### 游戏常用概率分布\r \r ```\r 1."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "均匀分布（Uniform）\r    └── random(min, max)\r    └── 适用：骰子、随机方向\r \r 2."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "加权随机（Weighted Random）\r    └── 按权重概率选择\r    └── 适用：掉落表、稀有度\r \r 3."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 # 游戏数学

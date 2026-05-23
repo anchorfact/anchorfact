@@ -20,6 +20,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -43,7 +45,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "奖赏 → 回归之路 → 复活 → 带着宝物归来\r \r 注意：这是\"英雄故事\"的模板，不适用于所有游戏类型。"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "5x | 高 | 叙事驱动游戏 |\r | **开放叙事** | 2x+ | 2x+ | 极高 | 开放世界 |\r | **涌现叙事** | 0."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "3x | 中 | 模拟/沙盒 |\r \r ---\r \r ### 实用结构模式\r \r **珍珠项链** — 线性主线，中间有开放探索的\"枢纽\"区域\r \r **分支与合并** — 分支剧情最终回归主线，控制制作成本\r \r **电视剧结构** — 章节式剧情，每集有独立弧光同时推进主线\r \r ---\r \r ## 对话系统设计\r \r ### 对话树\r 传统分支对话，玩家从预设选项中选择。"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "**AI 驱动对话** — LLM 实时生成 NPC 回应，突破预设对话树的限制\r 3."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "**情感适配** — NPC 根据玩家行为和关系状态改变语气\r \r ### 实施要点\r - 关键对话有作者撰写，日常对话可用 AI 生成\r - 设定 AI 护栏（角色不越界、保持叙事一致性）\r - 持久记忆系统跟踪玩家的长期决策链\r \r ### 对话树设计模式\r \r ```\r 对话树基本结构：\r \r NPC: \"你为什么要来这里？\"\r ├── 选项 A: \"我来寻找真相。"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 # 叙事设计

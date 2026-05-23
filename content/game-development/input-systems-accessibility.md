@@ -23,6 +23,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -46,7 +48,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "2 动作映射系统\r \r ```csharp\r // 概念性动作映射配置\r public class InputActionMap\r {\r     public List<InputAction> actions = new()\r     {\r         new InputAction(\"Jump\")\r         {\r             bindings = new()\r             {\r                 new KeyBinding(KeyCode."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "Space),\r                 new KeyBinding(KeyCode."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "DoubleTap),\r                 new GamepadButtonBinding(GamepadButton."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "A),\r                 new GamepadButtonBinding(GamepadButton."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "8f)\r             },\r             interactions = new()\r             {\r                 new TapInteraction(tapTime: 0."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 ## 1. 输入系统架构

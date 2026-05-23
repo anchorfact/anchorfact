@@ -22,6 +22,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -45,7 +47,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "# 游戏开发者社区资源指南 > **社区是游戏开发者的氧气。** 无论你在哪个阶段、哪个领域，找到对的社区能让你少走弯路、获得反馈、找到队友。 --- "
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "** 无论你在哪个阶段、哪个领域，找到对的社区能让你少走弯路、获得反馈、找到队友。"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "快速参考表\r \r ---\r \r ## 社区选择框架\r \r ### 按开发阶段选择\r \r | 阶段 | 需求 | 推荐社区类型 |\r |------|------|-------------|\r | **学习入门** | 教程、问答、氛围友好 | 引擎官方社区、豆瓣小组、GDevelop |\r | **原型开发** | 快速反馈、技术问题 | 引擎社区、Discord 频道 |\r | **团队组建** | 找队友、找外包 | GameDevHub、Indie Gaming Studios |\r | **发布营销** | 曝光、评测、玩家反馈 | itch."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "io、IndieDB |\r | **职业发展** | 行业动态、海外机会 | igdshare、CGSociety、引擎世界 |\r \r ### 按职能选择\r \r | 职能 | 核心需求 | 推荐社区 |\r |------|----------|----------|\r | **程序员** | 引擎技术、算法、性能 | 引擎官方论坛、GitHub Discussions |\r | **美术/TA** | Shader、VFX、技术美术 | CGSociety、引擎世界、知乎 TA 话题 |\r | **策划** | 设计理论、数据分析 | GDC 分享、igdshare、独立游戏小组 |\r | **独立开发者** | 全栈、发布、商业 | itch."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: GDC Vault
+  - id: fact-gd-005
+    statement: "io、IndieDB、GameDevHub |\r | **AI 开发者** | AI NPC、ML、工具链 | Player2、AI GameDev Lab |\r \r ---\r \r ## 综合性社区\r \r ### IndieDB\r \r | 项目 | 详情 |\r |------|------|\r | **网址** | indiedb."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 # 游戏开发者社区资源指南

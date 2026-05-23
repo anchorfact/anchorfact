@@ -20,6 +20,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -43,7 +45,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "---\r \r ## MDA 框架\r \r MDA 是游戏设计领域最基础的分析框架，由 Hunicke、LeBlanc 和 Zubek 提出：\r \r - **Mechanics（机制）** — 游戏的规则、算法和数据结构（玩家能做什么）\r - **Dynamics（动态）** — 机制与玩家互动后产生的涌现行为（玩家实际做了什么）\r - **Aesthetics（美学）** — 玩家体验到的情感反应（挑战、发现、社交等）\r \r ### 核心理念\r \r 设计师视角：机制 → 动态 → 美学（自上而下构建）\r 玩家视角：美学 → 动态 → 机制（自下而上体验）\r \r 设计时应从玩家期望的美学体验倒推，再设计能产生相应动态的机制。"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "**Submission（沉浸）** — 放松消遣\r \r ### MDA 自下而上分析案例\r \r 以《黑暗之魂》的\"弹反\"机制为例：\r \r | 层面 | 分析 |\r |------|------|\r | **美学** | Challenge（挑战）+ Sensation（紧张→释放的高峰感） |\r | **动态** | 玩家观察敌人攻击模式 → 在攻击瞬间按下格挡 → 成功则敌人硬直 → 处决攻击 |\r | **机制** | 格挡键有启动帧(5帧)→ 格挡判定(10帧) → 后摇(5帧)。"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "弹反窗口期间受到攻击则触发敌人硬直动画，按攻击键执行处决 |\r \r **设计启示：** 从美学（挑战感）出发倒推，决定弹反必须\"高风险高回报\"→ 短窗口（高风险）+ 处决（高回报）→ 玩家学习攻击模式（动态）才能成功。"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "md#战斗系统设计] — 战斗系统的机制实现\r \r ---\r \r ## 核心游戏循环\r \r 核心循环是玩家在游戏中重复执行的行为链条。"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "md] — 核心循环文档模板\r 参见：[templates/gdd-template."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 # 游戏设计核心原则

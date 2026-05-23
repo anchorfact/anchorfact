@@ -21,6 +21,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -44,7 +46,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "2 迭代式开发 vs 瀑布式\r \r ```\r 瀑布式: 设计 → 实现 → 测试 → 发布（一次完成，难以回头）\r 迭代式: [设计→原型→测试→学习] × N （螺旋上升，持续验证）\r ```\r \r **游戏开发必须使用迭代式原因：**\r - 核心乐趣无法提前验证，必须通过原型测试\r - 创意产业不确定性高，需求会随开发演变\r - 玩家反馈在开发后期才可获得\r - 技术约束常在实现中才暴露\r \r ---\r \r ## 2."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "2 垂直切片 (Vertical Slice) 详解\r \r **定义:** 一个时间短、质量高、代表最终产品的可玩片段。"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "**核心作用:**\r - 团队对齐：所有人看到最终目标\r - 决策依据：发行商/管理层判断是否投资\r - 管线验证：确认从概念到运行的完整管线畅通\r - 成本估算：基于实际数据而非推测\r \r **制作建议:**\r - 选择最有代表性的关卡/场景（通常是核心体验最集中的部分）\r - 美术、音效、UI 必须达到最终质量\r - 不应超过总工时的 10-15%\r - 完成后团队扩编进入全面生产\r \r ---\r \r ## 3."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "1 游戏开发的 Scrum 适配\r \r | 标准 Scrum | 游戏行业适配 | 原因 |\r |------------|--------------|------|\r | 2周 Sprint | 2-4周 Sprint | 资产制作周期长，2周难以交付可演示增量 |\r | 跨职能团队 | 专业组 + 特性组混合 | 美术/程序专业化强，完全跨职能效率低 |\r | PO 定义需求 | 创意总监 + 制作人共同决策 | 游戏创意需要艺术直觉 + 商业判断 |\r | 每日站会 15min | 每日站会 + 每周深入同步 | 资产依赖多，需要更频繁的跨组对齐 |\r | Sprint 结束即发布 | Sprint 结束即 Demo，发布按里程碑 | 游戏不适合每两周发布玩家版本 |\r \r ### "
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "2 常见团队结构\r \r ```\r 小型独立团队 (5-15人):\r   制作人/设计 + 程序(2-3) + 美术(2-3) + 音效(1) + QA(1)\r   \r 中型团队 (30-80人):\r   - 设计组: 系统/关卡/叙事/数值\r   - 程序组: 引擎/游戏玩法/UI/网络/工具\r   - 美术组: 概念/3D/动画/VFX/UI/技术美术\r   - 音频组: 音乐/SFX/语音/集成\r   - QA组: 功能/兼容性/性能/自动化\r   \r 大型3A团队 (200+人):\r   - 多个Feature Team（关卡/战斗/系统）\r   - 中央技术组（引擎/平台/工具）\r   - 中央美术组（角色/环境/动画）\r   - 运营/数据分析组\r ```\r \r ### 3."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 ## 1. 游戏开发生命周期

@@ -21,6 +21,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -44,7 +46,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "**有意义的选择** — 玩家面临的选择应有真实后果\r \r ### 机制类型\r \r - **核心机制** — 游戏最基础的交互（跳跃、射击、建造）\r - **进阶机制** — 随着游戏进程解锁的新能力\r - **元机制** — 外层系统（科技树、声望系统）\r \r ---\r \r ## 战斗系统设计\r \r ### 现代战斗系统趋势（2025-2026）\r \r **从冷却CD到资源型系统：**\r \r 传统\"技能CD好了就用\"的模式正在被资源型战斗系统取代：\r \r - **决心点数系统（Determination Points）** — 技能消耗 DP，DP 每回合恢复，强技能消耗更多。"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "消除\"最强技能CD一好就放\"的机械操作\r - **骰子转行动点引擎** — 掷骰分配到属性槽（力量/敏捷/智力）产生行动点。"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "**工具建模：** 用 Machinations 或 Excel 建立经济模型\r 3."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "**回归测试：** 调整后重新模拟，确保没有新问题\r \r 参见：[templates/economy-balance-template."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "md#数据驱动平衡工作流] — 数据分析方法\r \r ---\r \r ## 技能树与成长系统\r \r ### 技能树设计模式\r \r 1."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 # 游戏机制与系统设计

@@ -22,6 +22,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -45,7 +47,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "# 游戏社区运营 > **游戏上线只是开始，社区才是游戏的生命线。** 没有活跃社区的游戏，就像没有观众的剧场。 --- "
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "目标设定\r    └── 本次活动的核心 KPI 是什么？（DAU？付费？回流？）\r \r 2."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "玩家动机匹配\r    └── 社交型 → 组队活动\r    └── 成就型 → 排行榜\r    └── 探索型 → 新剧情/彩蛋\r    └── 竞技型 → PvP 赛事\r \r 3."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "奖励设计\r    └── 参与奖：确保人人有收获\r    └── 排名奖：刺激竞争\r    └── 里程碑奖：鼓励持续参与\r    └── 稀有度控制：避免通胀\r \r 4."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "节奏设计\r    └── 活动周期：不要太长（疲劳）也不要太短（来不及参与）\r    └── 高潮节点：活动中期的大奖励\r    └── 倒计时机制：制造紧迫感\r \r 5."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 # 游戏社区运营

@@ -20,6 +20,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -43,7 +45,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "2 Wwise（Audiokinetic）\r \r Wwise 是业界最专业、功能最全面的音频中间件，被超过500款3A游戏采用。"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "**核心特性：**\r - **对象导向设计**：声音作为独立对象存在，支持复杂的事件系统\r - **实时参数控制（RTPC）**：将游戏参数实时映射到音频属性\r - **互动音乐系统**：支持垂直/水平混音、Stems系统\r - **高级空间音频**：内置对象音频、HRTF、几何声学\r - ** profiling 工具**：完整的性能分析和调试套件\r \r **代码示例（Unity + Wwise）：**\r ```csharp\r // 触发 Wwise 事件\r AkSoundEngine."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "PostEvent(\"Play_Footstep\", gameObject);\r \r // 设置 RTPC 参数（如玩家血量影响音频滤波）\r AkSoundEngine."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "SetRTPCValue(\"PlayerHealth\", currentHealth, gameObject);\r \r // 设置 3D 定位\r AkSoundEngine."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "SetObjectPosition(gameObject, transform);\r \r // 切换 State（如进入战斗状态）\r AkSoundEngine."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 # 游戏音效设计完全指南

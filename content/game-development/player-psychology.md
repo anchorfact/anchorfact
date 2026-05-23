@@ -16,6 +16,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -39,7 +41,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "1 心流通道图\r \r ```\r        高\r        ↑\r   焦虑 │    挑战 > 技能\r   区   │        ↑\r        │    ┌────┐\r 挑战    │    │心流│\r 难度   │    │区域│\r        │    └────┘\r        │        ↓\r   无聊 │    挑战 < 技能\r   区   │\r        └────────────────────→\r                 技能水平            高\r ```\r \r ### 2."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "2 三个区域\r \r - **焦虑区** — 挑战远高于玩家技能 → 压力、挫败感、流失\r - **心流区** — 挑战与技能匹配 → 最佳体验、沉浸、愉悦\r - **无聊区** — 挑战低于玩家技能 → 乏味、分心、流失\r \r ### 2."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "3 动态难度调整（DDA）\r \r 保持玩家在心流区的具体方法：\r \r | 方法 | 说明 | 示例 |\r |------|------|------|\r | **隐性调整** | 根据表现微调数值 | 《Left 4 Dead》AI 导演系统 |\r | **自适应难度** | 失败时降低难度 | 《Mario Kart》橡皮筋 AI |\r | **可选难度** | 玩家自主选择 | 普通/困难模式切换 |\r | **辅助功能** | 降低操作门槛 | 自动瞄准、慢动作模式 |\r \r ### 2."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "4 难度曲线设计检查表\r \r - [ ] 前 5 分钟：新手引导，挑战极低\r - [ ] 1 小时内：逐步引入核心机制\r - [ ] 前 10 小时：难度稳步上升\r - [ ] 每个新机制后有\"练习期\"\r - [ ] 高潮（Boss 战）后有\"喘息区\"\r - [ ] 夜间/疲劳时段适当降低要求\r \r ---\r \r ## 3."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "**游戏应用：**\r - 每日奖励连续签到（断签的损失感）\r - 装备强化可能失败（损失厌恶促使买保险）\r - 限时活动错过就没了（FOMO）\r \r ### 3."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 ## 2. 心流理论

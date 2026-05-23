@@ -1,27 +1,42 @@
 ---
 id: ""
-title: ""
+title: Asian Geography
 schema_type: TechArticle
-category: ""
+category: geography
 language: en
 confidence: high
-last_verified: ""
+last_verified: "2026-05-22"
 generation_method: ai_assisted
 ai_models:
   - claude-opus
 derived_from_human_seed: true
-secondary_sources:
+atomic_facts: []
+primary_sources:
   - title: National Geographic Atlas of the World, 11th Ed
     type: reference
     year: 2019
     url: https://www.nationalgeographic.com/books/atlas/
     institution: National Geographic Society
+  - title: CIA World Factbook
+    type: database
+    year: 2025
+    url: https://www.cia.gov/the-world-factbook/
+    institution: Central Intelligence Agency
+secondary_sources:
   - title: Physical Geography (Petersen & Sack, 12th Ed)
     type: textbook
     year: 2021
     url: https://www.cengage.com/c/physical-geography-12e-petersen-sack-gabler/9780357142448/
     institution: Cengage Learning
+known_gaps:
+  - Statistics and data cited are from 2024 and earlier; more recent data may have become available since publication
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
+disputed_statements:
+  - statement: Definitions of Asian regional boundaries vary across cultural, political, and geographical framings; the Ural Mountains boundary between Europe and Asia is a convention, not a physical necessity
+    context: See National Geographic and CIA World Factbook
+completeness: 0.85
 ---
+
 
 
 

@@ -22,6 +22,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -45,7 +47,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "# 游戏本地化（Localization / L10n） > **本地化不是翻译。** 翻译是把文字从 A 语言变成 B 语言；本地化是让游戏在 B 文化中**感觉像是为当地人设计的**。 --- "
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "** 翻译是把文字从 A 语言变成 B 语言；本地化是让游戏在 B 文化中**感觉像是为当地人设计的**。"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "000,50（德）\r    └── 货币：符号位置（$100 vs 100$）\r \r ✅ 语音/音频分离\r    └── 语音文件按语言分包\r    └── 音效（非语言）共用\r ```\r \r ---\r \r ## 多语言技术实现\r \r ### 文本系统架构\r \r ```\r 本地化系统架构：\r \r Key-Value 存储（运行时）\r ├── 主键： gameplay."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "welcome\r ├── 英文： \"Welcome, {player_name}!"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "\"\r ├── 中文： \"欢迎回来，{player_name}！\"\r ├── 日文： \"お帰りなさい、{player_name}さん！\"\r └── 占位符：{player_name} → 运行时替换\r \r 存储格式对比：\r ├── CSV — 简单，Excel 友好，但不支持嵌套\r ├── JSON — 灵活，支持嵌套，解析开销小\r ├── XLIFF — 行业标准，支持翻译记忆、状态追踪\r └── GetText (."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 # 游戏本地化（Localization / L10n）

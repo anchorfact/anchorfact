@@ -24,6 +24,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -47,7 +49,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "1 完整流程图\r \r ```\r 概念设计 → 高模雕刻 → 拓扑低模 → UV拆分 → 纹理烘焙 → 材质制作 → 引擎集成 → LOD/优化\r    ↑________________________________________________________________________________↓\r    \r 附加管线:\r 动画: 绑定 → 蒙皮 → 动画制作 → 动画树 → 引擎\r VFX: 概念 → 模拟 → 贴图序列 → 粒子系统 → 引擎\r UI: 交互稿 → 视觉稿 → 切图/九宫格 → UI系统 → 引擎\r ```\r \r ### 1."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "2 各阶段交付物与工时估算\r \r | 阶段 | 交付物 | 工时(角色) | 工时(场景) | 关键质量门 |\r |------|--------|------------|------------|------------|\r | 概念设计 | 原画/三视图/Mood Board | 2-5天 | 3-7天 | 风格一致性、可制作性 |\r | 高模雕刻 | ZBrush/Mudbox高模 | 3-7天 | 5-10天 | 解剖准确、细节层次 |\r | 拓扑低模 | 游戏可用网格 | 1-3天 | 2-5天 | 面数预算、变形友好 |\r | UV拆分 | 展开UV、布局 | 0."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "5-2天 | 1-3天 | 利用率>75%、无拉伸 |\r | 纹理烘焙 | 法线/AO/曲率贴图 | 0."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "5-1天 | 1-2天 | 无接缝、精度足够 |\r | 材质制作 | PBR贴图集 | 1-3天 | 2-5天 | 物理正确、风格统一 |\r | 引擎集成 | Prefab/Blueprint | 0."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "5-1天 | 1-2天 | 材质球正确、LOD设置 |\r | LOD制作 | 多级简化模型 | 0."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 ## 1. 美术管线概览

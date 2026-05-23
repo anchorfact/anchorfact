@@ -1,27 +1,42 @@
 ---
 id: ""
-title: ""
+title: Productivity Systems
 schema_type: TechArticle
-category: ""
+category: self-improvement
 language: en
 confidence: high
-last_verified: ""
+last_verified: "2026-05-22"
 generation_method: ai_assisted
 ai_models:
   - claude-opus
 derived_from_human_seed: true
+atomic_facts: []
+primary_sources:
+  - title: Getting Things Done (David Allen)
+    type: book
+    year: 2001
+    url: https://gettingthingsdone.com/
+    institution: Penguin
+  - title: "Deep Work: Rules for Focused Success in a Distracted World (Cal Newport)"
+    type: book
+    year: 2016
+    url: https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/
+    institution: Grand Central Publishing
 secondary_sources:
   - title: Atomic Habits (James Clear)
     type: book
     year: 2018
     url: https://jamesclear.com/atomic-habits
     institution: Avery, Penguin Random House
-  - title: Thinking, Fast and Slow (Daniel Kahneman)
-    type: book
-    year: 2011
-    url: https://us.macmillan.com/books/9780374533557/thinkingfastandslow
-    institution: Farrar, Straus & Giroux
+known_gaps:
+  - Statistics and data cited are from 2024 and earlier; more recent data may have become available since publication
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
+disputed_statements:
+  - statement: The effectiveness of time management and productivity techniques varies significantly by individual and context; no single system is universally optimal
+    context: See primary sources for competing approaches
+completeness: 0.85
 ---
+
 
 
 

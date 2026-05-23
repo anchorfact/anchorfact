@@ -22,6 +22,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: Game Engine Architecture (Jason Gregory, 3rd Ed)
     type: textbook
@@ -45,7 +47,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "z);\r }\r \r public class SaveManager : MonoBehaviour\r {\r     private const string SAVE_FOLDER = \"/saves/\";\r     private const int CURRENT_VERSION = 2;\r     \r     public void SaveGame(int slotIndex)\r     {\r         var saveData = new SaveData\r         {\r             version = CURRENT_VERSION,\r             saveTime = DateTime."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "ToString(\"O\"),\r             levelName = SceneManager."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "name,\r             playerPosition = player."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "Capture(),\r             inventory = inventorySystem."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "Capture(),\r             quests = questSystem."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 ## 1. 存档系统架构

@@ -20,6 +20,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -43,7 +45,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "# 游戏商业化策略（Monetization Strategy） 游戏商业化策略决定了产品如何将玩家参与度转化为可持续收入。优秀的商业化设计不仅能带来收入，还能增强玩家体验；而糟糕的设计则会破坏游戏经济、损害玩家信任。 --- "
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: 优秀的商业化设计不仅能带来收入，还能增强玩家体验；而糟糕的设计则会破坏游戏经济、损害玩家信任。
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "1 买断制（Premium / Buy-to-Play）\r \r 玩家一次性付费购买游戏完整内容，后续无强制消费。"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "| 维度 | 说明 |\r |------|------|\r | **收入公式** | 销量 × 单价 |\r | **优点** | 开发预期稳定、无付费墙、玩家口碑好、适合叙事/单机体验 |\r | **缺点** | 收入天花板低、无持续现金流、盗版风险 |\r | **代表产品** | 《艾尔登法环》《塞尔达传说》《Hades》 |\r | **定价策略** | 3A级 $59."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "99（移动端） |\r \r **变体模式：**\r - **扩展包/DLC**：通过新增内容延续收入（如《文明6》资料片）\r - **季票（Season Pass）**：预购未来内容包，降低单次购买决策门槛\r \r ---\r \r ### 1."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 # 游戏商业化策略（Monetization Strategy）

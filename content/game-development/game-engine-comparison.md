@@ -22,6 +22,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -45,7 +47,30 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "3+）\r - 使用 **Assembly Definition** 减少编译范围\r - 启用 **Incremental GC** 减少卡顿\r - 使用 **Hot Reload** 工具（如 Unity Hot Reload 资产）\r \r #### 资产管线\r ```\r 外部工具（Blender/Photoshop）→ 导入 Unity → 设置 Import Settings → Prefab 化\r ```\r \r **关键设置**：\r - 模型：FBX 格式，注意 Scale Factor、Animation Compression\r - 贴图：Texture Type（Sprite/Default/Cookie/etc."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "tscn\r ├── Player (CharacterBody2D/3D)\r │   ├── Sprite/Mesh\r │   ├── CollisionShape\r │   └── Camera\r ├── Enemies (Node)\r │   └── Enemy."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "**使用 MCP 服务** — 让 AI 直接操作引擎（Unity MCP、GodotIQ）\r 5."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "**定期清理上下文** — 每个步骤新开对话\r \r ---\r \r ## 参考来源\r \r - Uniday Studio: Unity vs Godot vs Unreal vs Cave (2026)\r - Unity 6 官方文档\r - Unreal Engine 5."
+    confidence: medium
+    source_url: https://www.gameenginebook.com/
+    source_title: Game Engine Architecture (Jason Gregory, 3rd Ed)
 ---
+
+
 
 
 # 游戏引擎对比与技术选型

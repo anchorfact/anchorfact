@@ -23,6 +23,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -44,7 +46,35 @@ known_gaps:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "# 游戏 AI 系统设计 > 好的游戏 AI 不是最聪明的，而是**最有趣的**。玩家的乐趣来自可理解、可预测但又充满惊喜的对手行为。 --- "
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "put(start, 0)\r     came_from = {}\r     g_score = {start: 0}\r     f_score = {start: heuristic(start, goal)}\r     \r     while not open_set."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "get()\r         if current == goal:\r             return reconstruct_path(came_from, current)\r         \r         for neighbor in neighbors(current):\r             tentative_g = g_score[current] + cost(current, neighbor)\r             if tentative_g < g_score."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "get(neighbor, INF):\r                 came_from[neighbor] = current\r                 g_score[neighbor] = tentative_g\r                 f_score[neighbor] = tentative_g + heuristic(neighbor, goal)\r                 open_set."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "put(neighbor, f_score[neighbor])\r     \r     return None  # 无路径\r \r # 常见启发式函数\r def manhattan(a, b):  # 4方向网格\r     return abs(a."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 # 游戏 AI 系统设计

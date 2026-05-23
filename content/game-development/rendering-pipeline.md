@@ -21,6 +21,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -44,7 +46,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "1 Forward Rendering（前向渲染）\r \r **原理**：对每个物体，遍历所有光源计算光照\r \r ```\r 对于每个物体：\r     对于每个像素：\r         对于每个光源：\r             计算光照贡献\r         累加所有光照\r ```\r \r **优点**：\r - 简单直观\r - 支持透明物体\r - 内存占用低\r \r **缺点**：\r - 光源数量增加时性能急剧下降（O(n×m)）\r - 重复计算（多个物体在同一像素）\r \r **适用场景**：\r - 移动游戏\r - 光源少的场景\r - 需要大量透明物体的游戏\r \r ### 1."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "2 Deferred Rendering（延迟渲染）\r \r **原理**：先渲染几何信息到G-Buffer，再统一计算光照\r \r ```\r Pass 1 - 几何 Pass：\r     渲染所有物体到 G-Buffer\r     G-Buffer 包含：位置、法线、颜色、材质属性\r \r Pass 2 - 光照 Pass：\r     对每个光源：\r         在光源影响范围内计算光照\r         读取 G-Buffer 数据\r ```\r \r **优点**：\r - 光源数量对性能影响小\r - 每个像素只计算一次几何\r - 适合大量光源场景\r \r **缺点**：\r - 内存占用高（G-Buffer）\r - 不支持 MSAA（多重采样抗锯齿）\r - 透明物体需要单独处理\r \r **适用场"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "3 Forward+ / Tiled Forward Rendering\r \r **原理**：结合 Forward 和 Deferred 的优点\r \r ```\r 1."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "前向渲染，但每个像素只计算相关光源\r ```\r \r **优点**：\r - 支持大量光源（比 Forward 多）\r - 支持 MSAA\r - 支持透明物体\r - 内存占用适中\r \r **适用场景**：\r - 现代游戏的主流选择\r - Unity URP、Unreal 默认管线\r \r ### 1."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "4 Clustered Rendering\r \r **原理**：在 Tile 的基础上增加深度维度\r \r ```\r 1."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 # 游戏渲染管线与着色器

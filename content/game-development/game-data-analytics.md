@@ -16,6 +16,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -39,7 +41,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "1 DAU / MAU / Stickiness\r \r ```\r DAU = 每日活跃用户数\r MAU = 每月活跃用户数\r Stickiness = DAU / MAU × 100%\r ```\r \r - **Stickiness 目标：** > 20% 为优秀，> 15% 为良好\r - Stickiness 反映了游戏对玩家的\"粘性\"\r \r ### 2."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "2 留存率计算\r \r ```\r D1 留存 = 第 1 天回访用户 / 第 0 天新增用户 × 100%\r D7 留存 = 第 7 天回访用户 / 第 0 天新增用户 × 100%\r D30 留存 = 第 30 天回访用户 / 第 0 天新增用户 × 100%\r ```\r \r **注意：** 留存率一定是按**新增 Cohort** 计算的，不是按整体活跃用户。"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "3 LTV 计算\r \r ```\r LTV = ARPU × 平均用户生命周期\r \r 常见估算方式:\r LTV = D1 留存 × D7 留存贡献 + D7 留存 × D30 留存贡献 + ."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "4 关键平衡指标\r \r | 指标 | 说明 | 预警阈值 |\r |------|------|----------|\r | 货币通胀率 | 玩家持有的货币增速 | > 15%/周 |\r | 付费深度 | 最大可消费金额 | 与用户群匹配 |\r | Gini 系数 | 付费公平性 | < 0."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "4 为健康 |\r | 消费集中度 | top 10% 玩家占总消费比 | < 70% 为健康 |\r \r ---\r \r ## 3."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 ## 2. 核心指标定义与计算

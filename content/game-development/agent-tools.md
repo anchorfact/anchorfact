@@ -23,6 +23,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: Model Context Protocol Specification
     type: standard
@@ -44,7 +46,35 @@ known_gaps:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "**清理上下文** — 每步新开对话，避免上下文污染\r \r ### 推荐工作流\r \r ```\r GDD → 技术选型 → CLAUDE."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "md 规则 → 实现计划\r → 内存银行（Memory Bank）→ 分步开发 → 测试 → 审查\r ```\r \r ### Verb 编码方法（2026）\r \r 1."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "使用 TDD 确保质量\r \r ---\r \r ## Skill 套装推荐\r \r | 项目 | ⭐ | 用途 |\r |------|-----|------|\r | **addyosmani/agent-skills** | 16."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "0 提供多 Agent 协作\r - 适合 AAA 品质但需要更多算力\r \r ---\r \r ## 在项目中使用 AI 辅助设计\r \r AI Agent 不仅能辅助写代码，也能辅助**游戏设计本身**。"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "以下是经过验证的实战案例：\r \r ### 实战案例 1：基于 MDA 框架的机制生成\r \r **场景**：需要为一个 Roguelike 游戏设计 20 个独特的武器机制。"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 # AI Agent 游戏开发工具

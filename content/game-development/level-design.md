@@ -16,6 +16,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -39,7 +41,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "- **优点：** 叙事节奏可控，制作成本低\r - **适用：** 剧情驱动游戏\r - **示例：** 《半条命》、《神秘海域》\r \r ### 2."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "- **优点：** 玩家有选择权，方便回访\r - **适用：** 3D 平台跳跃、RPG\r - **示例：** 《超级马里奥 64》、《质量效应》\r \r ### 2."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "- **优点：** 沉浸感强，玩家自主性高\r - **缺点：** 制作成本极高，节奏难控制\r - **示例：** 《荒野之息》、《上古卷轴》\r \r ### 2."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "- **优点：** 重复可玩性高，聚焦核心玩法\r - **适用：** 动作游戏、射击游戏\r - **示例：** 《战争机器》的部落模式\r \r ### 2."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "- 示例：线性关卡中穿插竞技场战斗\r - 示例：开放世界中的地下城副本\r \r ---\r \r ## 3."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 ## 2. 关卡架构类型

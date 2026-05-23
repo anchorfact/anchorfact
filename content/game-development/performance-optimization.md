@@ -24,6 +24,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -47,7 +49,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "# 游戏性能优化 > **过早优化是万恶之源** —— 但过晚优化是项目杀手。优化不是最后一步，而是贯穿开发始终的纪律。 --- "
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "平台特定优化\r \r ---\r \r ## 性能优化方法论\r \r ### 优化流程\r \r ```\r 正确优化顺序：\r \r 1."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "测量（Measure）\r    └── 确定瓶颈：CPU / GPU / 内存 / IO / 网络\r    └── 工具：Profiler、帧时间分析、内存快照\r \r 2."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "分析（Analyze）\r    └── 找到热点函数、资源消耗大户\r    └── 问：为什么慢？必要吗？有更快的方式吗？\r \r 3."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "优化（Optimize）\r    └── 针对瓶颈做最小必要改动\r    └── 一次只改一个变量，便于验证\r \r 4."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 # 游戏性能优化

@@ -20,6 +20,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -43,7 +45,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "# 游戏可访问性设计指南 > 可访问性（Accessibility）是让尽可能多的玩家能够享受游戏的设计实践。全球约有 13 亿残障人士（占世界人口的 16%），良好的可访问性设计不仅服务于残障玩家，也能提升所有玩家的游戏体验。 --- "
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: 全球约有 13 亿残障人士（占世界人口的 16%），良好的可访问性设计不仅服务于残障玩家，也能提升所有玩家的游戏体验。
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "1 色盲友好设计\r \r #### 色盲类型与占比\r \r | 色盲类型 | 占比（男性） | 占比（女性） | 影响颜色 |\r |---------|------------|------------|---------|\r | 红色盲（Protanopia） | 1."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "02% | 红-绿区分困难 |\r | 绿色盲（Deuteranopia） | 1."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "001% | 蓝-黄区分困难 |\r | 全色盲（Achromatopsia） | <0."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 # 游戏可访问性设计指南

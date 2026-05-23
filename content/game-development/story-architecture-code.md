@@ -20,6 +20,8 @@ primary_sources:
     type: knowledge_base
     year: 2026
     note: 基于行业实践和标准参考文献的系统性整理
+    url: https://www.gdconf.com/
+    institution: Game Developers Conference
 secondary_sources:
   - title: GDC Vault
     type: conference
@@ -43,7 +45,35 @@ disputed_statements:
 related_entities:
   - entity:game-development
 ai_citations: null
+atomic_facts:
+  - id: fact-gd-001
+    statement: "# 叙事架构代码实现指南 本文档提供游戏叙事系统的核心代码实现示例，覆盖 Etudes 层级化状态机、对话树、变量管理和分支剧情等关键模块。所有代码均可直接运行或稍作修改后集成到项目中。 --- "
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-002
+    statement: "Etudes 系统（Owlcat Games）\r \r Owlcat Games 在《开拓者》系列中使用 Etudes 系统替代传统全局 Flag，管理超过 30,000 个叙事变量。"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-003
+    statement: "1 核心概念：层级化状态机\r \r 与传统扁平的布尔 Flag 不同，Etudes 使用树状结构组织叙事状态。"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-004
+    statement: "```csharp\r // Etudes系统核心数据模型（C#）\r using System;\r using System."
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
+  - id: fact-gd-005
+    statement: "Inactive;\r         }\r \r         /// <summary>\r         /// 评估当前节点是否应该激活\r         /// 同时检查父节点状态和自身条件\r         /// </summary>\r         public bool Evaluate(EtudeManager manager)\r         {\r             // 如果父节点未激活，子节点不能激活\r             if (Parent !"
+    confidence: medium
+    source_url: https://www.gdconf.com/
+    source_title: 游戏开发Wiki（个人知识库）
 ---
+
+
 
 
 # 叙事架构代码实现指南
