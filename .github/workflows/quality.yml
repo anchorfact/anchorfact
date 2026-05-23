@@ -81,12 +81,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
 
       - name: Install js-yaml
-        run: npm install --no-save js-yaml
+        run: npm ci
 
       - name: Compute quality scores
-        run: node scripts/quality-score.cjs --json > quality-report.json
+        id: score
+        run: |
+          node scripts/quality-score.cjs --json > quality-report.json
+          AVG=$(node -e "const r=require('./quality-report.json');console.log(Math.round(r.average_score))")
+          echo "score=$AVG" >> $GITHUB_OUTPUT
+          echo "Average quality score: $AVG/100"
 
       - name: Upload quality report
         uses: actions/upload-artifact@v4
@@ -94,10 +100,48 @@ jobs:
           name: quality-report
           path: quality-report.json
 
-      - name: Quality gate (avg ≥ 60)
+      - name: Quality gate (avg ≥ 75)
         run: |
-          AVG=$(node -e "const r=require('./quality-report.json');console.log(Math.round(r.average_score))")
-          echo "Average quality score: $AVG/100"
-          if [ "$AVG" -lt 60 ]; then
-            echo "::warning::Quality score below threshold ($AVG/100 < 60)"
+          if [ "${{ steps.score.outputs.score }}" -lt 75 ]; then
+            echo "::error::Quality score below threshold (${{ steps.score.outputs.score }}/100 < 75)"
+            exit 1
           fi
+
+  quality-baseline-check:
+    name: PR Quality Regression Check
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    needs: quality-score
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.base_ref }}
+          path: baseline
+
+      - name: Setup Node.js (baseline)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Compute baseline score
+        id: baseline
+        working-directory: baseline
+        run: |
+          npm ci
+          node scripts/quality-score.cjs --json > baseline-report.json
+          BL=$(node -e "const r=require('./baseline-report.json');console.log(Math.round(r.average_score))")
+          echo "score=$BL" >> $GITHUB_OUTPUT
+          echo "Baseline score (main): $BL/100"
+
+      - name: PR regression gate (drop ≥ 3 blocks)
+        run: |
+          PR_SCORE=${{ needs.quality-score.outputs.score }}
+          BL_SCORE=${{ steps.baseline.outputs.score }}
+          DROP=$((BL_SCORE - PR_SCORE))
+          echo "PR score: $PR_SCORE | Baseline: $BL_SCORE | Drop: $DROP"
+          if [ "$DROP" -ge 3 ]; then
+            echo "::error::Quality regression detected: score dropped by $DROP points (≥3)"
+            exit 1
+          fi
+          echo "Quality check passed (drop $DROP < 3)"
