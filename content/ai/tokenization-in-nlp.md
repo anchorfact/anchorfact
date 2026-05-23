@@ -16,6 +16,26 @@ atomic_facts:
     source_title: "Neural Machine Translation of Rare Words with Subword Units (BPE)"
     source_url: "https://arxiv.org/abs/1508.07909"
     confidence: "high"
+  - id: "fact-ai-002"
+    statement: "Methods: word-level (large vocabulary, OOV problem), character-level (tiny vocabulary, long sequences), subword (balanced: BPE, WordPiece, SentencePiece — standard for modern LLMs)."
+    source_title: "Neural Machine Translation of Rare Words with Subword Units (BPE)"
+    source_url: "https://arxiv.org/abs/1508.07909"
+    confidence: "high"
+  - id: "fact-ai-003"
+    statement: "Subword tokenization handles rare and unseen words by decomposing into known subword units."
+    source_title: "Neural Machine Translation of Rare Words with Subword Units (BPE)"
+    source_url: "https://arxiv.org/abs/1508.07909"
+    confidence: "high"
+  - id: "fact-ai-004"
+    statement: "WordPiece (BERT): merges tokens that maximize likelihood — difference: BPE merges by frequency, WordPiece by language model probability."
+    source_title: "Neural Machine Translation of Rare Words with Subword Units (BPE)"
+    source_url: "https://arxiv.org/abs/1508.07909"
+    confidence: "high"
+  - id: "fact-ai-005"
+    statement: "SentencePiece (T5, LLaMA): treats input as raw text, language-agnostic (no pre-tokenization)."
+    source_title: "SentencePiece: A Simple and Language Independent Subword Tokenizer and Detokenizer"
+    source_url: "https://arxiv.org/abs/1808.06226"
+    confidence: "high"
 
 completeness: 0.85
 
@@ -50,6 +70,7 @@ secondary_sources:
     institution: "NIPS / Google"
 
 ---
+
 
 
 

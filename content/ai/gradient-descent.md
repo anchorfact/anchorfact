@@ -16,6 +16,26 @@ atomic_facts:
     source_title: "An Overview of Gradient Descent Optimization Algorithms"
     source_url: "https://arxiv.org/abs/1609.04747"
     confidence: "high"
+  - id: "fact-ai-002"
+    statement: "It iteratively adjusts parameters in the direction of steepest descent of the loss function."
+    source_title: "An Overview of Gradient Descent Optimization Algorithms"
+    source_url: "https://arxiv.org/abs/1609.04747"
+    confidence: "high"
+  - id: "fact-ai-003"
+    statement: "Variants: Batch GD (full dataset), Stochastic GD (single example), Mini-batch GD (small batches — standard)."
+    source_title: "Adam: A Method for Stochastic Optimization"
+    source_url: "https://arxiv.org/abs/1412.6980"
+    confidence: "high"
+  - id: "fact-ai-004"
+    statement: "Momentum: accumulates past gradients for smoother steps."
+    source_title: "Adam: A Method for Stochastic Optimization"
+    source_url: "https://arxiv.org/abs/1412.6980"
+    confidence: "high"
+  - id: "fact-ai-005"
+    statement: "Adam optimizer: adaptive learning rates per parameter (combines momentum + RMSprop) — de facto standard (Kingma & Ba, 2014)."
+    source_title: "Deep Learning (Goodfellow, Bengio, Courville)"
+    source_url: "https://www.deeplearningbook.org/"
+    confidence: "high"
 
 completeness: 0.85
 
@@ -50,6 +70,7 @@ secondary_sources:
     institution: "arXiv"
 
 ---
+
 
 
 

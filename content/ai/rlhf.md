@@ -16,6 +16,30 @@ atomic_facts:
     source_url: "https://arxiv.org/abs/2203.02155"
     source_doi: "10.48550/arXiv.2203.02155"
     confidence: "high"
+  - id: "fact-ai-002"
+    statement: "First demonstrated on Atari games and simulated robotics (Christiano et al."
+    source_title: "Deep Reinforcement Learning from Human Preferences"
+    source_url: "https://arxiv.org/abs/1706.03741"
+    source_doi: "10.48550/arXiv.1706.03741"
+    confidence: "high"
+  - id: "fact-ai-003"
+    statement: ", 2017), it became the industry standard with OpenAI's InstructGPT (Ouyang et al."
+    source_title: "Training Language Models to Follow Instructions with Human Feedback (InstructGPT)"
+    source_url: "https://arxiv.org/abs/2203.02155"
+    source_doi: "10.48550/arXiv.2203.02155"
+    confidence: "high"
+  - id: "fact-ai-004"
+    statement: "3B parameter model fine-tuned with RLHF was preferred by human raters over the 175B GPT-3 base model."
+    source_title: "Training Language Models to Follow Instructions with Human Feedback (InstructGPT)"
+    source_url: "https://arxiv.org/abs/2203.02155"
+    source_doi: "10.48550/arXiv.2203.02155"
+    confidence: "high"
+  - id: "fact-ai-005"
+    statement: "RLHF has since been adopted by all major LLM providers and is the alignment method behind ChatGPT, Claude, Gemini, and Grok."
+    source_title: "Direct Preference Optimization: Your Language Model is Secretly a Reward Model"
+    source_url: "https://arxiv.org/abs/2305.18290"
+    source_doi: "10.48550/arXiv.2305.18290"
+    confidence: "high"
 
 completeness: 0.92
 
@@ -73,6 +97,7 @@ ai_citations:
     institution: "Hugging Face"
 
 ---
+
 
 
 ## TL;DR
