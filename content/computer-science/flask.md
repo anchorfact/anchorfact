@@ -1,31 +1,51 @@
 ---
-id:"kb-2026-00289"
-title:"Flask"
-schema_type:"TechArticle"
-category:"computer-science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
+id: "kb-2026-00289"
+
+
+title: "Flask"
+schema_type: "TechArticle"
+
+
+category: "computer-science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "Flask Documentation"
     type: "documentation"
+
+
     year: 2026
     url: "https://flask.palletsprojects.com/"
+
     institution: "Pallets Projects"
     note: "Lightweight Python web framework: routing, Jinja2 templates, Werkzeug WSGI"
+
+
 secondary_sources:
   - title: "Fluent Python (2nd Edition)"
     authors: ["Ramalho, Luciano"]
     type: "book"
+
+
     year: 2021
     url: "https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/"
+
     institution: "O'Reilly"
     note: "Flask is built on Python — Fluent Python covers the language features Flask developers rely on"
+
+
 completeness: 0.88
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

@@ -1,14 +1,22 @@
 ---
-id:"kb-2026-00212"
-title:"Dropshipping Model"
-schema_type:"TechArticle"
-category:"business"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
+id: "kb-2026-00212"
+
+
+title: "Dropshipping Model"
+schema_type: "TechArticle"
+
+
+category: "business"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 
 
 known_gaps:
@@ -16,23 +24,32 @@ known_gaps:
 
 completeness: 0.88
 ai_citations:
-  last_citation_check:"2026-05-22"
+
 primary_sources:
   - title: "Harvard Business Review"
     type: "journal"
+
+
     year: 2026
     url: "https://hbr.org/"
+
     institution: "Harvard Business Publishing"
 secondary_sources:
   - title: "Harvard Business Review"
     type: "journal"
+
+
     year: 2026
     url: "https://hbr.org/"
+
     institution: "Harvard Business Publishing"
   - title: "Harvard Business Review"
     type: "journal"
+
+
     year: 2025
     url: "https://hbr.org/"
+
     institution: "Harvard Business Publishing"
 ---
 

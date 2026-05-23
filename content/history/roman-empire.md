@@ -1,34 +1,70 @@
 ---
-id:"kb-2026-00352"
-title:"Roman Empire"
-schema_type:"TechArticle"
-category:"history"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00352"
+
+
+title: "Roman Empire"
+schema_type: "TechArticle"
+
+
+category: "history"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"The History of the Decline and Fall of the Roman Empire (Edward Gibbon)"
-    type:"book"
-    year:1776
-    url:"https://www.gutenberg.org/ebooks/731"
-    institution:"Project Gutenberg"
+  - title: "The History of the Decline and Fall of the Roman Empire (Edward Gibbon)"
+    type: "book"
+
+
+    year: 1776
+    url: "https://www.gutenberg.org/ebooks/731"
+
+    institution: "Project Gutenberg"
 secondary_sources:
   - title: "SPQR: A History of Ancient Rome"
     type: "book"
+
+
     year: 2015
     url: "https://www.liverightbooks.com/9781631492228"
+
     institution: "Mary Beard, Liveright"
   - title: "The Decline and Fall of the Roman Empire"
     type: "book"
+
+
     year: 1776
     url: "https://www.britannica.com/topic/The-History-of-the-Decline-and-Fall-of-the-Roman-Empire"
+
     institution: "Edward Gibbon"
+atomic_facts:
+  - id: fact-history-01
+    statement: The Roman Empire was the post-Republican period of ancient Rome
+    source_title: The History of the Decline and Fall of the Roman Empire (Edward Gibbon)
+    source_url: https://www.gutenberg.org/ebooks/731
+    confidence: high
+  - id: fact-history-02
+    statement: At its peak , it spanned 5 million km² across Europe, North Africa, and the Middle East
+    source_title: The History of the Decline and Fall of the Roman Empire (Edward Gibbon)
+    source_url: https://www.gutenberg.org/ebooks/731
+    confidence: high
+  - id: fact-history-03
+    statement: The Roman Empire's legal, linguistic, architectural, and political legacy shaped Western civilization
+    source_title: The History of the Decline and Fall of the Roman Empire (Edward Gibbon)
+    source_url: https://www.gutenberg.org/ebooks/731
+    confidence: high
+  
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 2015 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

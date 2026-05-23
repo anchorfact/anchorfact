@@ -1,29 +1,45 @@
 ---
-id:"kb-2026-00410"
-title:"Modern Art Movements"
-schema_type:"TechArticle"
-category:"arts"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00410"
+
+
+title: "Modern Art Movements"
+schema_type: "TechArticle"
+
+
+category: "arts"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"The Story of Modern Art (Norbert Lynton)"
-    type:"book"
-    year:1980
-    url:"https://www.phaidon.com/store/art/the-story-of-modern-art-9780714831398/"
-    institution:"Phaidon"
+  - title: "The Story of Modern Art (Norbert Lynton)"
+    type: "book"
+
+
+    year: 1980
+    url: "https://www.phaidon.com/store/art/the-story-of-modern-art-9780714831398/"
+
+    institution: "Phaidon"
 secondary_sources:
   - title: "History of Art"
     type: "book"
+
+
     year: 1962
     url: "https://www.abramsbooks.com/product/history-of-art_9780810910942/"
+
     institution: "H.W. Janson, Abrams"
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 1980 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

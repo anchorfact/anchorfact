@@ -1,34 +1,52 @@
 ---
-id:"kb-2026-00397"
-title:"Viking Age"
-schema_type:"TechArticle"
-category:"history"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00397"
+
+
+title: "Viking Age"
+schema_type: "TechArticle"
+
+
+category: "history"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"The Age of the Vikings (Anders Winroth)"
-    type:"book"
-    year:2014
-    url:"https://press.princeton.edu/books/hardcover/9780691149851/the-age-of-the-vikings"
-    institution:"Princeton University Press"
+  - title: "The Age of the Vikings (Anders Winroth)"
+    type: "book"
+
+
+    year: 2014
+    url: "https://press.princeton.edu/books/hardcover/9780691149851/the-age-of-the-vikings"
+
+    institution: "Princeton University Press"
 secondary_sources:
   - title: "Encyclopaedia Britannica"
     type: "reference"
+
+
     year: 2025
     url: "https://www.britannica.com/"
+
     institution: "Encyclopaedia Britannica, Inc."
   - title: "The Penguin History of the World"
     type: "book"
+
+
     year: 1976
     url: "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
+
     institution: "J.M. Roberts, Penguin"
 completeness: 0.88
+known_gaps:
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

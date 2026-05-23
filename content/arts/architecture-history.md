@@ -1,29 +1,53 @@
 ---
-id:"kb-2026-00414"
-title:"Architecture History"
-schema_type:"TechArticle"
-category:"arts"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00414"
+
+
+title: "Architecture History"
+schema_type: "TechArticle"
+
+
+category: "arts"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"A Global History of Architecture (Ching, Jarzombek, Prakash)"
-    type:"book"
-    year:2017
-    url:"https://www.wiley.com/en-us/A+Global+History+of+Architecture%2C+3rd+Edition-p-9781118981337"
-    institution:"Wiley"
+  - title: "A Global History of Architecture (Ching, Jarzombek, Prakash)"
+    type: "book"
+
+
+    year: 2017
+    url: "https://www.wiley.com/en-us/A+Global+History+of+Architecture%2C+3rd+Edition-p-9781118981337"
+
+    institution: "Wiley"
 secondary_sources:
   - title: "A Global History of Architecture"
     type: "book"
+
+
     year: 2017
     url: "https://www.wiley.com/en-us/A+Global+History+of+Architecture%2C+3rd+Edition-p-9781118981337"
+
     institution: "Francis D.K. Ching et al., Wiley"
+atomic_facts:
+  - id: fact-arts-01
+    statement: "Frank Lloyd Wright: Fallingwater"
+
+    source_title: A Global History of Architecture (Ching, Jarzombek, Prakash)
+    source_url: https://www.wiley.com/en-us/A+Global+History+of+Architecture%2C+3rd+Edition-p-9781118981337
+    confidence: high
+  
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 2017 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

@@ -1,29 +1,53 @@
 ---
-id:"kb-2026-00479"
-title:"History of Printing"
-schema_type:"TechArticle"
-category:"arts"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00479"
+
+
+title: "History of Printing"
+schema_type: "TechArticle"
+
+
+category: "arts"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"The Printing Revolution in Early Modern Europe (Elizabeth Eisenstein, 2nd Ed)"
-    type:"book"
-    year:2005
-    url:"https://www.cambridge.org/core/books/printing-revolution-in-early-modern-europe/"
-    institution:"Cambridge University Press"
+  - title: "The Printing Revolution in Early Modern Europe (Elizabeth Eisenstein, 2nd Ed)"
+    type: "book"
+
+
+    year: 2005
+    url: "https://www.cambridge.org/core/books/printing-revolution-in-early-modern-europe/"
+
+    institution: "Cambridge University Press"
 secondary_sources:
   - title: "The Story of Art"
     type: "book"
+
+
     year: 1950
     url: "https://www.phaidon.com/store/art/the-story-of-art-9780714832470/"
+
     institution: "E.H. Gombrich, Phaidon"
+atomic_facts:
+  - id: fact-arts-01
+    statement: "Gutenberg Bible : first major book printed with movable type"
+
+    source_title: The Printing Revolution in Early Modern Europe (Elizabeth Eisenstein, 2nd Ed)
+    source_url: https://www.cambridge.org/core/books/printing-revolution-in-early-modern-europe/
+    confidence: high
+  
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 2005 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

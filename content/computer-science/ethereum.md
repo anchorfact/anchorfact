@@ -1,39 +1,81 @@
 ---
 id: "kb-2026-00068"
+
+
 title: "Ethereum"
 schema_type: "TechArticle"
+
+
 category: "computer-science"
 language: "en"
+
+
 confidence: "high"
 confidence_rationale: "Based on Ethereum Foundation documentation and go-ethereum repository (51,052 stars)"
+
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
+
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
 primary_sources:
   - title: "Ethereum Documentation"
     type: "documentation"
+
+
     year: 2026
     url: "https://ethereum.org/developers/docs/"
+
     institution: "Ethereum Foundation"
   - title: "go-ethereum GitHub"
     type: "repository"
+
+
     url: "https://github.com/ethereum/go-ethereum"
     institution: "Ethereum Foundation"
+
+
     stars: 51052
 secondary_sources:
   - title: "MDN Web Docs — HTTP"
     type: "documentation"
+
+
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+
     institution: "Mozilla"
   - title: "Pro Git (2nd Ed)"
     authors: ["Chacon", "Straub"]
     type: "book"
+
+
     year: 2014
     url: "https://git-scm.com/book/en/v2"
+
     institution: "Apress"
+atomic_facts:
+  - id: fact-computer-science-01
+    statement: >-
+      Ethereum is a decentralized, open-source blockchain platform with smart contract functionality, proposed by Vitalik
+      Buterin in 2013 and launched in July 2015
+    source_title: Ethereum Documentation
+    source_url: https://ethereum.org/developers/docs/
+    confidence: medium
+  - id: fact-computer-science-02
+    statement: >-
+      Ethereum completed the transition from Proof-of-Work to Proof-of-Stake in September 2022, reducing energy
+      consumption by approximately 99.95%
+    source_title: Ethereum Documentation
+    source_url: https://ethereum.org/developers/docs/
+    confidence: medium
+  
 completeness: 0.85
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations: {last_citation_check: "2026-05-22"}
 ---
 

@@ -1,34 +1,52 @@
 ---
-id:"kb-2026-00447"
-title:"Networking Skills"
-schema_type:"TechArticle"
-category:"business"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00447"
+
+
+title: "Networking Skills"
+schema_type: "TechArticle"
+
+
+category: "business"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"Never Eat Alone (Keith Ferrazzi)"
-    type:"book"
-    year:2005
-    url:"https://www.penguinrandomhouse.com/books/316664/never-eat-alone-expanded-and-updated-by-keith-ferrazzi-with-tahl-raz/"
-    institution:"Currency"
+  - title: "Never Eat Alone (Keith Ferrazzi)"
+    type: "book"
+
+
+    year: 2005
+    url: "https://www.penguinrandomhouse.com/books/316664/never-eat-alone-expanded-and-updated-by-keith-ferrazzi-with-tahl-raz/"
+
+    institution: "Currency"
 secondary_sources:
   - title: "Harvard Business Review"
     type: "journal"
+
+
     year: 2025
     url: "https://hbr.org/"
+
     institution: "Harvard Business Publishing"
   - title: "The Economist"
     type: "periodical"
+
+
     year: 2025
     url: "https://www.economist.com/"
+
     institution: "The Economist Group"
 completeness: 0.88
+known_gaps:
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

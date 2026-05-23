@@ -1,29 +1,45 @@
 ---
-id:"kb-2026-00473"
-title:"Philosophy of Science"
-schema_type:"TechArticle"
-category:"arts"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00473"
+
+
+title: "Philosophy of Science"
+schema_type: "TechArticle"
+
+
+category: "arts"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"The Structure of Scientific Revolutions (Thomas Kuhn)"
-    type:"book"
-    year:1962
-    url:"https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html"
-    institution:"University of Chicago Press"
+  - title: "The Structure of Scientific Revolutions (Thomas Kuhn)"
+    type: "book"
+
+
+    year: 1962
+    url: "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html"
+
+    institution: "University of Chicago Press"
 secondary_sources:
   - title: "The Story of Philosophy"
     type: "book"
+
+
     year: 1926
     url: "https://www.simonandschuster.com/books/The-Story-of-Philosophy/Will-Durant/9780671201593"
+
     institution: "Will Durant, Simon & Schuster"
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 1962 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

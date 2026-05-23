@@ -1,29 +1,59 @@
 ---
-id:"kb-2026-00493"
-title:"Poetry Fundamentals"
-schema_type:"TechArticle"
-category:"arts"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00493"
+
+
+title: "Poetry Fundamentals"
+schema_type: "TechArticle"
+
+
+category: "arts"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"The Poetry Handbook (Mary Oliver)"
-    type:"book"
-    year:1994
-    url:"https://www.harpercollins.com/products/a-poetry-handbook-mary-oliver?variant=32208032890914"
-    institution:"Harper Perennial"
+  - title: "The Poetry Handbook (Mary Oliver)"
+    type: "book"
+
+
+    year: 1994
+    url: "https://www.harpercollins.com/products/a-poetry-handbook-mary-oliver?variant=32208032890914"
+
+    institution: "Harper Perennial"
 secondary_sources:
   - title: "The Norton Anthology of World Literature"
     type: "book"
+
+
     year: 2018
     url: "https://wwnorton.com/books/9780393602814"
+
     institution: "Martin Puchner et al., W.W. Norton"
+atomic_facts:
+  - id: fact-arts-01
+    statement: "'Poetry is language at its most distilled and most powerful'"
+
+    source_title: The Poetry Handbook (Mary Oliver)
+    source_url: https://www.harpercollins.com/products/a-poetry-handbook-mary-oliver?variant=32208032890914
+    confidence: high
+  - id: fact-arts-02
+    statement: "Silence again.' Free verse: dominant modern form — rhythm from natural speech, not meter"
+
+    source_title: The Poetry Handbook (Mary Oliver)
+    source_url: https://www.harpercollins.com/products/a-poetry-handbook-mary-oliver?variant=32208032890914
+    confidence: high
+  
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 2018 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

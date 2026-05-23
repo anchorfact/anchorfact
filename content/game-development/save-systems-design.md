@@ -1,33 +1,43 @@
 ---
 id: "kb-gd-031"
+
+
 title: "save systems design"
 schema_type: "TechArticle"
+
+
 category: "game-development"
 language: "zh"
+
+
 confidence: "high"
 confidence_rationale: "游戏开发领域系统性知识，基于行业标准和实践经验"
+
+
 last_verified: "2026-04-28"
 generation_method: "human_only"
+
+
 derived_from_human_seed: true
 tags: [save-system, serialization, cloud-save, security, checkpoint, data]
 summary: ""
 primary_sources:
   - title: "游戏开发Wiki（个人知识库）"
     type: "knowledge_base"
+
+
     year: 2026
     note: "基于行业实践和标准参考文献的系统性整理"
+
+
 secondary_sources:
-  - title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
-    authors: ["Lewis", "Perez", "Piktus"]
-    type: "academic_paper"
-    year: 2020
-    doi: "10.48550/arXiv.2005.11401"
-    url: "https://arxiv.org/abs/2005.11401"
 completeness: 0.85
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 related_entities:
   - "entity:game-development"
 ai_citations:
-  last_citation_check: "2026-05-22"
 ---
 
 ## 1. 存档系统架构

@@ -1,21 +1,34 @@
 ---
 id: "kb-2026-00020"
+
+
 title: "Constitutional AI"
 schema_type: "TechArticle"
+
+
 category: "ai"
 language: "en"
+
+
 confidence: "high"
 confidence_rationale: "Based on Anthropic's official Constitutional AI description (May 2023) and the January 2026 constitution update"
+
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
+
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
 primary_sources:
   - title: "Claude's Constitution"
     authors: ["Anthropic"]
     type: "announcement"
+
+
     year: 2023
     url: "https://www.anthropic.com/news/claudes-constitution"
+
     institution: "Anthropic"
     note: "Updated January 21, 2026"
   - title: "Constitutional AI: Harmlessness from AI Feedback"
@@ -34,24 +47,54 @@ primary_sources:
         et al.,
       ]
     type: "academic_paper"
+
+
     year: 2022
     doi: "10.48550/arXiv.2212.08073"
+
+
     url: "https://arxiv.org/abs/2212.08073"
     institution: "Anthropic"
+
+
 secondary_sources:
   - title: "Constitutional AI: Harmlessness from AI Feedback"
     authors: ["Bai", "Kadavath"]
     type: "academic_paper"
+
+
     year: 2022
     doi: "10.48550/arXiv.2212.08073"
+
+
     url: "https://arxiv.org/abs/2212.08073"
+    institution: "arXiv"
+
+atomic_facts:
+  - id: fact-ai-01
+    statement: >-
+      First published in December 2022 and detailed in May 2023, CAI trains models to self-critique and self-correct based
+      on constitutional principles, then uses AI-generated feedback instead of human feedback for reinforcement learning
+    source_title: "Constitutional AI: Harmlessness from AI Feedback"
+
+    source_url: https://arxiv.org/abs/2212.08073
+    source_doi: 10.48550/arXiv.2212.08073
+    confidence: high
+  
 completeness: 0.90
+disputed_statements:
+  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
+    confidence: "medium"
+
+known_gaps:
+  - "Statistics and data cited are from 2023 and earlier; more recent data may have become available since publication"
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Recent developments from 2025-2026 may not be reflected"
 related_entities:
   - "entity:rlhf"
   - "entity:claude"
   - "entity:ai-safety"
 ai_citations:
-  last_citation_check: "2026-05-22"
 ---
 
 ## TL;DR

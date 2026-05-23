@@ -1,29 +1,54 @@
 ---
-id:"kb-2026-00186"
-title:"Content Delivery Network (CDN)"
-schema_type:"TechArticle"
-category:"computer-science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
+id: "kb-2026-00186"
+
+
+title: "Content Delivery Network (CDN)"
+schema_type: "TechArticle"
+
+
+category: "computer-science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
 derived_from_human_seed: true
 known_gaps:
   - "CDN market share and edge location counts change frequently; check provider documentation"
+atomic_facts:
+  - id: fact-computer-science-01
+    statement: >-
+      A CDN is a geographically distributed network of edge servers that cache and serve content from locations closest to
+      users, reducing latency and origin server load
+    source_title: Cloudflare CDN Documentation
+    source_url: https://developers.cloudflare.com/cache/
+    confidence: medium
+  
 completeness: 0.88
 primary_sources:
   - title: "Cloudflare CDN Documentation"
     type: "documentation"
+
+
     year: 2026
     url: "https://developers.cloudflare.com/cache/"
+
     institution: "Cloudflare"
     note: "One of the largest CDNs: 330+ cities, DDoS protection, WAF, edge computing"
+
+
 secondary_sources:
   - title: "High Performance Browser Networking"
     authors: ["Grigorik, Ilya"]
     type: "book"
+
+
     year: 2013
     url: "https://hpbn.co/"
+
     institution: "O'Reilly"
     note: "Covers CDN architecture, TCP optimization, and latency fundamentals"
 ---

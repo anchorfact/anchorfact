@@ -1,31 +1,58 @@
 ---
-id:"kb-2026-00293"
-title:"Laravel"
-schema_type:"TechArticle"
-category:"computer-science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
+id: "kb-2026-00293"
+
+
+title: "Laravel"
+schema_type: "TechArticle"
+
+
+category: "computer-science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "Laravel Documentation"
     type: "documentation"
+
+
     year: 2026
     url: "https://laravel.com/docs/"
+
     institution: "Laravel"
     note: "PHP web framework: Eloquent ORM, Blade, Artisan, middleware, queues"
+
+
 secondary_sources:
   - title: "Laravel: Up & Running (3rd Edition)"
     authors: ["Stauffer, Matt"]
     type: "book"
+
+
     year: 2023
     url: "https://www.oreilly.com/library/view/laravel-up/9781098153250/"
+
     institution: "O'Reilly"
     note: "Practical Laravel guide: routing, controllers, Eloquent, testing, deployment"
+
+
+atomic_facts:
+  - id: fact-computer-science-01
+    statement: Laravel is the most popular PHP web framework, known for elegant syntax and comprehensive ecosystem
+    source_title: Laravel Documentation
+    source_url: https://laravel.com/docs/
+    confidence: medium
+  
 completeness: 0.88
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

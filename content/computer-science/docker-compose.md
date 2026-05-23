@@ -1,31 +1,51 @@
 ---
-id:"kb-2026-00154"
-title:"Docker Compose"
-schema_type:"TechArticle"
-category:"computer-science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
+id: "kb-2026-00154"
+
+
+title: "Docker Compose"
+schema_type: "TechArticle"
+
+
+category: "computer-science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "Docker Compose Documentation"
     type: "documentation"
+
+
     year: 2026
     url: "https://docs.docker.com/compose/"
+
     institution: "Docker Inc."
     note: "Multi-container Docker orchestration: docker-compose.yml, services, networks, volumes, profiles"
+
+
 secondary_sources:
   - title: "Docker: Up & Running (3rd Edition)"
     authors: ["Kane, Sean P.", "Matthias, Karl"]
     type: "book"
+
+
     year: 2023
     url: "https://www.oreilly.com/library/view/docker-up/9781098131814/"
+
     institution: "O'Reilly"
     note: "Covers Docker Compose in production context: multi-service deployments, orchestration patterns"
+
+
 completeness: 0.88
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

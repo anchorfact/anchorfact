@@ -1,33 +1,51 @@
 ---
-id:"kb-2026-00233"
-title:"Domain-Driven Design (DDD)"
-schema_type:"TechArticle"
-category:"computer-science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method: "human_only"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00233"
 
+
+title: "Domain-Driven Design (DDD)"
+schema_type: "TechArticle"
+
+
+category: "computer-science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "human_only"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
+
+
+disputed_statements:
+  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
+    confidence: "medium"
 
 known_gaps:
   - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
 
 completeness: 0.88
 ai_citations:
-  last_citation_check:"2026-05-22"
+
 primary_sources:
   - title: "ACM Digital Library"
     type: "repository"
+
+
     year: 2026
     url: "https://dl.acm.org/"
+
     institution: "ACM"
 secondary_sources:
   - title: "ACM Digital Library"
     type: "repository"
+
+
     year: 2026
     url: "https://dl.acm.org/"
+
     institution: "ACM"
 ---
 

@@ -1,31 +1,51 @@
 ---
-id:"kb-2026-00292"
-title:"FastAPI"
-schema_type:"TechArticle"
-category:"computer-science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
+id: "kb-2026-00292"
+
+
+title: "FastAPI"
+schema_type: "TechArticle"
+
+
+category: "computer-science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "FastAPI Documentation"
     type: "documentation"
+
+
     year: 2026
     url: "https://fastapi.tiangolo.com/"
+
     institution: "Tiangolo"
     note: "Modern Python API framework: automatic OpenAPI docs, Pydantic validation, async support"
+
+
 secondary_sources:
   - title: "Fluent Python (2nd Edition)"
     authors: ["Ramalho, Luciano"]
     type: "book"
+
+
     year: 2021
     url: "https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/"
+
     institution: "O'Reilly"
     note: "FastAPI deeply leverages Python type hints and async — Fluent Python covers both in depth"
+
+
 completeness: 0.88
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

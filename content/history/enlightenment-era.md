@@ -1,34 +1,52 @@
 ---
-id:"kb-2026-00466"
-title:"Enlightenment Era"
-schema_type:"TechArticle"
-category:"history"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00466"
+
+
+title: "Enlightenment Era"
+schema_type: "TechArticle"
+
+
+category: "history"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"The Enlightenment (Dorinda Outram, 4th Ed)"
-    type:"book"
-    year:2019
-    url:"https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A"
-    institution:"Cambridge University Press"
+  - title: "The Enlightenment (Dorinda Outram, 4th Ed)"
+    type: "book"
+
+
+    year: 2019
+    url: "https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A"
+
+    institution: "Cambridge University Press"
 secondary_sources:
   - title: "Encyclopaedia Britannica"
     type: "reference"
+
+
     year: 2025
     url: "https://www.britannica.com/"
+
     institution: "Encyclopaedia Britannica, Inc."
   - title: "The Penguin History of the World"
     type: "book"
+
+
     year: 1976
     url: "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
+
     institution: "J.M. Roberts, Penguin"
 completeness: 0.88
+known_gaps:
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

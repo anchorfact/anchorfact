@@ -1,29 +1,45 @@
 ---
-id:"kb-2026-00423"
-title:"Immune System Boosters"
-schema_type:"TechArticle"
-category:"health"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00423"
+
+
+title: "Immune System Boosters"
+schema_type: "TechArticle"
+
+
+category: "health"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"How the Immune System Works (Sompayrac, 6th Ed)"
-    type:"book"
-    year:2019
-    url:"https://www.wiley.com/en-us/How+the+Immune+System+Works%2C+6th+Edition-p-9781119542124"
-    institution:"Wiley-Blackwell"
+  - title: "How the Immune System Works (Sompayrac, 6th Ed)"
+    type: "book"
+
+
+    year: 2019
+    url: "https://www.wiley.com/en-us/How+the+Immune+System+Works%2C+6th+Edition-p-9781119542124"
+
+    institution: "Wiley-Blackwell"
 secondary_sources:
   - title: "CDC Vaccines & Immunizations"
     type: "report"
+
+
     year: 2025
     url: "https://www.cdc.gov/vaccines/index.html"
+
     institution: "Centers for Disease Control and Prevention"
 completeness: 0.88
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

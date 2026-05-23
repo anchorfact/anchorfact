@@ -1,29 +1,53 @@
 ---
-id:"kb-2026-00480"
-title:"Fashion History"
-schema_type:"TechArticle"
-category:"arts"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00480"
+
+
+title: "Fashion History"
+schema_type: "TechArticle"
+
+
+category: "arts"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"Fashion: The Definitive History of Costume and Style (DK)"
-    type:"book"
-    year:2012
-    url:"https://www.dk.com/us/book/9780756698355-fashion/"
-    institution:"DK Publishing"
+  - title: "Fashion: The Definitive History of Costume and Style (DK)"
+    type: "book"
+
+
+    year: 2012
+    url: "https://www.dk.com/us/book/9780756698355-fashion/"
+
+    institution: "DK Publishing"
 secondary_sources:
   - title: "Fashion: The Definitive History of Costume and Style"
     type: "book"
+
+
     year: 2012
     url: "https://www.dk.com/us/book/9780756698355-fashion/"
+
     institution: "DK / Smithsonian"
+atomic_facts:
+  - id: fact-arts-01
+    statement: "1947: Dior's 'New Look'"
+
+    source_title: "Fashion: The Definitive History of Costume and Style (DK)"
+    source_url: https://www.dk.com/us/book/9780756698355-fashion/
+    confidence: high
+  
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 2012 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

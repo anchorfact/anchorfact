@@ -1,32 +1,56 @@
 ---
 id: "kb-2026-00110"
+
+
 title: "Device Orientation API"
 schema_type: "TechArticle"
+
+
 category: "computer-science"
 language: "en"
+
+
 confidence: "high"
 confidence_rationale: "Based on authoritative sources and industry standards"
+
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
+
 derived_from_human_seed: true
 primary_sources:
   - title: "DeviceOrientation Event Specification (W3C)"
     type: "standard"
+
+
     year: 2023
     url: "https://www.w3.org/TR/orientation-event/"
+
     institution: "W3C"
 
 secondary_sources:
   - title: "MDN Web Docs — HTTP"
     type: "documentation"
+
+
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+
     institution: "Mozilla"
 known_gaps:
   - "Content verified during quality audit; citations cross-referenced with authoritative sources"
+atomic_facts:
+  - id: fact-computer-science-01
+    statement: >-
+      The Device Orientation API provides accelerometer, gyroscope, and magnetometer data from mobile devices via DOM
+      events: deviceorientation and devicemotion
+    source_title: DeviceOrientation Event Specification (W3C)
+    source_url: https://www.w3.org/TR/orientation-event/
+    confidence: medium
+  
 completeness: 0.88
 ai_citations:
-  last_citation_check: "2026-05-22"
 ---
 
 ## TL;DR

@@ -1,34 +1,60 @@
 ---
-id:"kb-2026-00406"
-title:"Computer History"
-schema_type:"TechArticle"
-category:"history"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00406"
+
+
+title: "Computer History"
+schema_type: "TechArticle"
+
+
+category: "history"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"The Innovators (Walter Isaacson)"
-    type:"book"
-    year:2014
-    url:"https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706"
-    institution:"Simon & Schuster"
+  - title: "The Innovators (Walter Isaacson)"
+    type: "book"
+
+
+    year: 2014
+    url: "https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706"
+
+    institution: "Simon & Schuster"
 secondary_sources:
   - title: "Encyclopaedia Britannica"
     type: "reference"
+
+
     year: 2025
     url: "https://www.britannica.com/"
+
     institution: "Encyclopaedia Britannica, Inc."
   - title: "The Penguin History of the World"
     type: "book"
+
+
     year: 1976
     url: "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
+
     institution: "J.M. Roberts, Penguin"
+atomic_facts:
+  - id: fact-history-01
+    statement: "Moore's Law : transistors per chip double 2 years — held for 50 years"
+
+    source_title: The Innovators (Walter Isaacson)
+    source_url: https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706
+    confidence: high
+  
 completeness: 0.88
+known_gaps:
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

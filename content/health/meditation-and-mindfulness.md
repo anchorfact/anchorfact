@@ -1,38 +1,64 @@
 ---
-id:"kb-2026-00424"
-title:"Meditation and Mindfulness"
-schema_type:"TechArticle"
-category:"health"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00424"
+
+
+title: "Meditation and Mindfulness"
+schema_type: "TechArticle"
+
+
+category: "health"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"Full Catastrophe Living (Jon Kabat-Zinn)"
-    type:"book"
-    year:1990
-    url:"https://www.penguinrandomhouse.com/books/289133/full-catastrophe-living-by-jon-kabat-zinn/"
-    institution:"Delta"
+  - title: "Full Catastrophe Living (Jon Kabat-Zinn)"
+    type: "book"
+
+
+    year: 1990
+    url: "https://www.penguinrandomhouse.com/books/289133/full-catastrophe-living-by-jon-kabat-zinn/"
+
+    institution: "Delta"
 secondary_sources:
   - title: "Neural Machine Translation by Jointly Learning to Align and Translate"
     authors: ["Bahdanau", "Cho", "Bengio"]
     type: "academic_paper"
+
+
     year: 2014
     doi: "10.48550/arXiv.1409.0473"
-    url: "https://arxiv.org/abs/1409.0473"completeness: 0.88
+
+
+    url: "https://arxiv.org/abs/1409.0473"
+    institution: "arXiv"
+completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 2014 and earlier; more recent data may have become available since publication"
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
   - title: "WHO Fact Sheets"
     type: "report"
+
+
     year: 2025
     url: "https://www.who.int/news-room/fact-sheets"
+
     institution: "World Health Organization"
   - title: "CDC Health Topics"
     type: "report"
+
+
     year: 2025
     url: "https://www.cdc.gov/health-topics.html"
+
     institution: "Centers for Disease Control and Prevention"
 ---
 

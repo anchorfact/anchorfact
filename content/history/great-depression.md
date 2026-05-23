@@ -1,34 +1,60 @@
 ---
-id:"kb-2026-00363"
-title:"Great Depression"
-schema_type:"TechArticle"
-category:"history"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00363"
+
+
+title: "Great Depression"
+schema_type: "TechArticle"
+
+
+category: "history"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"The Great Depression: A Diary (Benjamin Roth)"
-    type:"book"
-    year:2009
-    url:"https://www.publicaffairsbooks.com/titles/benjamin-roth/the-great-depression/9781586489014/"
-    institution:"PublicAffairs"
+  - title: "The Great Depression: A Diary (Benjamin Roth)"
+    type: "book"
+
+
+    year: 2009
+    url: "https://www.publicaffairsbooks.com/titles/benjamin-roth/the-great-depression/9781586489014/"
+
+    institution: "PublicAffairs"
 secondary_sources:
   - title: "Encyclopaedia Britannica"
     type: "reference"
+
+
     year: 2025
     url: "https://www.britannica.com/"
+
     institution: "Encyclopaedia Britannica, Inc."
   - title: "The Penguin History of the World"
     type: "book"
+
+
     year: 1976
     url: "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
+
     institution: "J.M. Roberts, Penguin"
+atomic_facts:
+  - id: fact-history-01
+    statement: The Great Depression was the worst economic downturn in modern history
+    source_title: "The Great Depression: A Diary (Benjamin Roth)"
+
+    source_url: https://www.publicaffairsbooks.com/titles/benjamin-roth/the-great-depression/9781586489014/
+    confidence: high
+  
 completeness: 0.88
+known_gaps:
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

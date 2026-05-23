@@ -1,35 +1,58 @@
 ---
-id:"kb-2026-00291"
-title:"Spring Boot"
-schema_type:"TechArticle"
-category:"computer-science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
+id: "kb-2026-00291"
+
+
+title: "Spring Boot"
+schema_type: "TechArticle"
+
+
+category: "computer-science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "Spring Boot Documentation"
     type: "documentation"
+
+
     year: 2026
     url: "https://docs.spring.io/spring-boot/"
+
     institution: "VMware"
     note: "Java framework: auto-configuration, starters, actuator, Spring Data, embedded servers"
+
+
 secondary_sources:
   - title: "Cloud Native Java (2nd Edition)"
     authors: ["Long, Josh", "Bastani, Kenny"]
     type: "book"
+
+
     year: 2021
     url: "https://www.oreilly.com/library/view/cloud-native-java/9781492056284/"
+
     institution: "O'Reilly"
     note: "Spring Boot in production: 12-factor apps, cloud-native patterns, Kubernetes integration"
-    type: "book"
-    year: 2013
-    url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
-    institution: "O'Reilly"
+
+
+atomic_facts:
+  - id: fact-computer-science-01
+    statement: Built on the Spring Framework , it is the dominant Java backend framework
+    source_title: Spring Boot Documentation
+    source_url: https://docs.spring.io/spring-boot/
+    confidence: medium
+  
 completeness: 0.88
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

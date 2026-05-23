@@ -1,14 +1,22 @@
 ---
-id:"kb-2026-00230"
-title:"Functional Programming"
-schema_type:"TechArticle"
-category:"computer-science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
+id: "kb-2026-00230"
+
+
+title: "Functional Programming"
+schema_type: "TechArticle"
+
+
+category: "computer-science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 
 
 known_gaps:
@@ -16,31 +24,43 @@ known_gaps:
 
 completeness: 0.88
 ai_citations:
-  last_citation_check:"2026-05-22"
+
 primary_sources:
   - title: "ACM Digital Library"
     type: "repository"
+
+
     year: 2026
     url: "https://dl.acm.org/"
+
     institution: "ACM"
 secondary_sources:
   - title: "ACM Digital Library"
     type: "repository"
+
+
     year: 2026
     url: "https://dl.acm.org/"
+
     institution: "ACM"
   - title: "Structure and Interpretation of Computer Programs (2nd ed.)"
     authors: ["Abelson, Harold", "Sussman, Gerald Jay"]
     type: "textbook"
+
+
     year: 1996
     url: "https://mitpress.mit.edu/sicp/"
+
     isbn: "978-0262510875"
     institution: "MIT Press"
   - title: "Structure and Interpretation of Computer Programs (2nd ed.)"
     authors: ["Abelson, Harold", "Sussman, Gerald Jay"]
     type: "textbook"
+
+
     year: 1996
     url: "https://mitpress.mit.edu/sicp/"
+
     isbn: "978-0262510875"
     institution: "MIT Press"
 ---

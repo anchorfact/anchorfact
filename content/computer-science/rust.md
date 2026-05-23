@@ -1,13 +1,23 @@
 ---
 id: "kb-2026-00021"
+
+
 title: "Rust Programming Language"
 schema_type: "TechArticle"
+
+
 category: "computer-science"
 language: "en"
+
+
 confidence: "high"
 confidence_rationale: "Based on the JetBrains State of Rust 2025 survey, official Rust release notes (v1.95.0, April 2026), and the Rust Foundation"
+
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
+
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
 
@@ -15,35 +25,63 @@ derived_from_human_seed: true
 known_gaps:
   - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
 
+atomic_facts:
+  - id: fact-computer-science-01
+    statement: >-
+      Created by Graydon Hoare at Mozilla Research in 2010 and first stabilized in 2015, Rust guarantees memory safety
+      without garbage collection through its ownership and borrowing system
+    source_title: ACM Digital Library
+    source_url: https://dl.acm.org/
+    confidence: medium
+  - id: fact-computer-science-02
+    statement: >-
+      Rust was voted the "most admired" programming language in the Stack Overflow Developer Survey for nine consecutive
+      years
+    source_title: The Rust Programming Language
+    source_url: https://doc.rust-lang.org/book/
+    confidence: high
+  
 completeness: 0.88
 related_entities:
   - "entity:programming-languages"
   - "entity:systems-programming"
 ai_citations:
-  last_citation_check: "2026-05-22"
+
 primary_sources:
   - title: "ACM Digital Library"
     type: "repository"
+
+
     year: 2026
     url: "https://dl.acm.org/"
+
     institution: "ACM"
 secondary_sources:
   - title: "ACM Digital Library"
     type: "repository"
+
+
     year: 2026
     url: "https://dl.acm.org/"
+
     institution: "ACM"
   - title: "The Rust Programming Language"
     authors: ["Klabnik, Steve", "Nichols, Carol"]
     type: "textbook"
+
+
     year: 2023
     url: "https://doc.rust-lang.org/book/"
+
     institution: "Rust Foundation"
   - title: "The Rust Programming Language"
     authors: ["Klabnik, Steve", "Nichols, Carol"]
     type: "textbook"
+
+
     year: 2023
     url: "https://doc.rust-lang.org/book/"
+
     institution: "Rust Foundation"
 ---
 

@@ -1,13 +1,23 @@
 ---
 id: "kb-2026-00111"
+
+
 title: "HTTPS / TLS (Transport Layer Security)"
 schema_type: "TechArticle"
+
+
 category: "computer-science"
 language: "en"
+
+
 confidence: "high"
 confidence_rationale: "Based on IETF RFC 8446 (TLS 1.3), RFC 5246 (TLS 1.2), and industry deployment data from Let's Encrypt and Google Transparency Report"
+
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
+
 derived_from_human_seed: true
 known_gaps:
   - "Certificate Transparency (RFC 6962), ACME (RFC 8555), and post-quantum TLS are important extensions not covered here"
@@ -16,31 +26,44 @@ primary_sources:
   - title: "RFC 8446 — The Transport Layer Security (TLS) Protocol Version 1.3"
     authors: ["Rescorla, E."]
     type: "standard"
+
+
     year: 2018
     url: "https://www.rfc-editor.org/rfc/rfc8446"
+
     institution: "IETF"
     note: "Current TLS standard. Reduced handshake from 2-RTT to 1-RTT, removed obsolete algorithms, mandated forward secrecy."
   - title: "RFC 5246 — The Transport Layer Security (TLS) Protocol Version 1.2"
     authors: ["Dierks, T.", "Rescorla, E."]
     type: "standard"
+
+
     year: 2008
     url: "https://www.rfc-editor.org/rfc/rfc5246"
+
     institution: "IETF"
     note: "Widely deployed TLS version. Supports diverse cipher suites including non-AEAD ciphers (deprecated in TLS 1.3)."
+
+
 secondary_sources:
   - title: "Let's Encrypt Stats"
     type: "data_source"
+
+
     year: 2026
     url: "https://letsencrypt.org/stats/"
+
     institution: "Internet Security Research Group (ISRG)"
     note: "Let's Encrypt has issued over 400 million certificates since 2016, driving HTTPS adoption from ~40% to ~90%"
   - title: "Google Transparency Report — HTTPS encryption on the web"
     type: "data_source"
+
+
     year: 2026
     url: "https://transparencyreport.google.com/https/overview"
+
     institution: "Google"
 ai_citations:
-  last_citation_check: "2026-05-22"
 ---
 
 ## TL;DR

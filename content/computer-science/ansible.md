@@ -1,29 +1,45 @@
 ---
-id:"kb-2026-00313"
-title:"Ansible"
-schema_type:"TechArticle"
-category:"computer-science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
+id: "kb-2026-00313"
+
+
+title: "Ansible"
+schema_type: "TechArticle"
+
+
+category: "computer-science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
-derived_from_human_seed:true
+derived_from_human_seed: true
 primary_sources:
-  - title:"Ansible Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://docs.ansible.com/"
-    institution:"Red Hat"
+  - title: "Ansible Documentation"
+    type: "documentation"
+
+
+    year: 2026
+    url: "https://docs.ansible.com/"
+
+    institution: "Red Hat"
 secondary_sources:
   - title: "Ansible: Up and Running (3rd Ed)"
     authors: ["Hochstein", "Moser"]
     type: "book"
+
+
     year: 2022
     url: "https://www.oreilly.com/library/view/ansible-up-and/9781098109141/"
+
     institution: "O'Reilly"
 completeness: 0.88
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

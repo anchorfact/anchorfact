@@ -1,29 +1,46 @@
 ---
-id:"kb-2026-00364"
-title:"Neuroscience of Sleep"
-schema_type:"TechArticle"
-category:"science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00364"
+
+
+title: "Neuroscience of Sleep"
+schema_type: "TechArticle"
+
+
+category: "science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"Why We Sleep (Matthew Walker)"
-    type:"book"
-    year:2017
-    url:"https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325"
-    institution:"Scribner"
+  - title: "Why We Sleep (Matthew Walker)"
+    type: "book"
+
+
+    year: 2017
+    url: "https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325"
+
+    institution: "Scribner"
 secondary_sources:
   - title: "Principles of Neural Science"
     type: "book"
+
+
     year: 2012
     url: "https://www.mhprofessional.com/9780071390118-usa-principles-of-neural-science-fifth-edition"
+
     institution: "Eric Kandel et al., McGraw-Hill"
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 2017 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - "Climate and environmental data may have been updated by more recent IPCC or scientific assessments"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

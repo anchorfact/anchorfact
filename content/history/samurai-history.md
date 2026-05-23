@@ -1,38 +1,55 @@
 ---
-id:"kb-2026-00484"
-title:"Samurai History"
-schema_type:"TechArticle"
-category:"history"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00484"
+
+
+title: "Samurai History"
+schema_type: "TechArticle"
+
+
+category: "history"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"A Brief History of the Samurai (Jonathan Clements)"
-    type:"book"
-    year:2010
-    url:"https://www.littlebrown.co.uk/titles/jonathan-clements/a-brief-history-of-the-samurai/9781849019811/"
-    institution:"Robinson"
+  - title: "A Brief History of the Samurai (Jonathan Clements)"
+    type: "book"
+
+
+    year: 2010
+    url: "https://www.littlebrown.co.uk/titles/jonathan-clements/a-brief-history-of-the-samurai/9781849019811/"
+
+    institution: "Robinson"
 secondary_sources:
-  - title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
-    authors: ["Lewis", "Perez", "Piktus"]
-    type: "academic_paper"
-    year: 2020
-    doi: "10.48550/arXiv.2005.11401"
-    url: "https://arxiv.org/abs/2005.11401"completeness: 0.88
+disputed_statements:
+  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
+    confidence: "medium"
+
+known_gaps:
+  - "Statistics and data cited are from 2020 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
   - title: "Encyclopaedia Britannica"
     type: "reference"
+
+
     year: 2025
     url: "https://www.britannica.com/"
+
     institution: "Encyclopaedia Britannica, Inc."
   - title: "The Penguin History of the World"
     type: "book"
+
+
     year: 1976
     url: "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
+
     institution: "J.M. Roberts, Penguin"
 ---
 

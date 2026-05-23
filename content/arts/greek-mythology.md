@@ -1,29 +1,45 @@
 ---
-id:"kb-2026-00495"
-title:"Greek Mythology"
-schema_type:"TechArticle"
-category:"arts"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00495"
+
+
+title: "Greek Mythology"
+schema_type: "TechArticle"
+
+
+category: "arts"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"Mythology (Edith Hamilton)"
-    type:"book"
-    year:1942
-    url:"https://www.hachettebookgroup.com/titles/edith-hamilton/mythology/9780316438520/"
-    institution:"Little, Brown"
+  - title: "Mythology (Edith Hamilton)"
+    type: "book"
+
+
+    year: 1942
+    url: "https://www.hachettebookgroup.com/titles/edith-hamilton/mythology/9780316438520/"
+
+    institution: "Little, Brown"
 secondary_sources:
   - title: "Mythology: Timeless Tales of Gods and Heroes"
     type: "book"
+
+
     year: 1942
     url: "https://www.hachettebookgroup.com/titles/edith-hamilton/mythology/9780316438520/"
+
     institution: "Edith Hamilton, Little, Brown"
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 1942 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

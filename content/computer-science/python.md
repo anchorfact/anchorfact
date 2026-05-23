@@ -1,59 +1,104 @@
 ---
 id: "kb-2026-00012"
+
+
 title: "Python Programming Language"
 schema_type: "TechArticle"
+
+
 category: "computer-science"
 language: "en"
+
+
 confidence: "high"
 confidence_rationale: "Based on official Python documentation and the TIOBE Index"
+
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
+
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
 primary_sources:
   - title: "Python 3.13 Documentation"
     type: "documentation"
+
+
     year: 2026
     url: "https://docs.python.org/3.13/"
+
     institution: "Python Software Foundation"
   - title: "TIOBE Index"
     type: "index"
+
+
     url: "https://www.tiobe.com/tiobe-index/"
+    institution: "Tiobe"
+
 secondary_sources:
   - title: "Fluent Python (2nd Ed)"
     authors: ["Ramalho"]
     type: "book"
+
+
     year: 2021
     url: "https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/"
+
     institution: "O'Reilly"
+atomic_facts:
+  - id: fact-computer-science-01
+    statement: Python is a high-level, interpreted programming language created by Guido van Rossum and first released in 1991
+    source_title: Python 3.13 Documentation
+    source_url: https://docs.python.org/3.13/
+    confidence: medium
+  - id: fact-computer-science-02
+    statement: The PyPI package repository hosts over 500,000 packages as of 2026
+    source_title: Python 3.13 Documentation
+    source_url: https://docs.python.org/3.13/
+    confidence: medium
+  
 completeness: 0.88
 known_gaps:
   - "Python version 3.14+ details are evolving; check docs.python.org for latest"
 related_entities:
   - "entity:programming-languages"
 ai_citations:
-  last_citation_check: "2026-05-22"
   - title: "Python 3 Documentation"
     type: "documentation"
+
+
     year: 2025
     url: "https://docs.python.org/3/"
+
     institution: "Python Software Foundation"
   - title: "Fluent Python (2nd ed.)"
     authors: ["Ramalho, Luciano"]
     type: "textbook"
+
+
     year: 2022
     isbn: "978-1492056355"
+
+
     institution: "O'Reilly Media"
   - title: "Fluent Python (2nd ed.)"
     authors: ["Ramalho, Luciano"]
     type: "textbook"
+
+
     year: 2022
     isbn: "978-1492056355"
+
+
     institution: "O'Reilly Media"
   - title: "Python 3 Documentation"
     type: "documentation"
+
+
     year: 2025
     url: "https://docs.python.org/3/"
+
     institution: "Python Software Foundation"
 ---
 

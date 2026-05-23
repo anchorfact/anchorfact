@@ -1,38 +1,66 @@
 ---
-id:"kb-2026-00209"
-title:"Supply Chain Management"
-schema_type:"TechArticle"
-category:"business"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method: "human_only"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00209"
 
+
+title: "Supply Chain Management"
+schema_type: "TechArticle"
+
+
+category: "business"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "human_only"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
+
+
+disputed_statements:
+  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
+    confidence: "medium"
 
 known_gaps:
   - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
 
+atomic_facts:
+  - id: fact-business-01
+    statement: Supply Chain Management coordinates the flow of goods from raw materials to end customer
+    source_title: Harvard Business Review
+    source_url: https://hbr.org/
+    confidence: medium
+  
 completeness: 0.88
 ai_citations:
-  last_citation_check:"2026-05-22"
+
 primary_sources:
   - title: "Harvard Business Review"
     type: "journal"
+
+
     year: 2026
     url: "https://hbr.org/"
+
     institution: "Harvard Business Publishing"
 secondary_sources:
   - title: "Harvard Business Review"
     type: "journal"
+
+
     year: 2026
     url: "https://hbr.org/"
+
     institution: "Harvard Business Publishing"
   - title: "The Goal: A Process of Ongoing Improvement"
     type: "book"
+
+
     year: 1984
     url: "https://www.northriverpress.com/the-goal/"
+
     institution: "Eliyahu M. Goldratt, North River Press"
 ---
 

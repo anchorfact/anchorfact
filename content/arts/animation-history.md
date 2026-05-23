@@ -1,29 +1,45 @@
 ---
-id:"kb-2026-00478"
-title:"Animation History"
-schema_type:"TechArticle"
-category:"arts"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00478"
+
+
+title: "Animation History"
+schema_type: "TechArticle"
+
+
+category: "arts"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"The Illusion of Life: Disney Animation (Thomas & Johnston)"
-    type:"book"
-    year:1981
-    url:"https://www.disneybooks.com/book/the-illusion-of-life/"
-    institution:"Disney Editions"
+  - title: "The Illusion of Life: Disney Animation (Thomas & Johnston)"
+    type: "book"
+
+
+    year: 1981
+    url: "https://www.disneybooks.com/book/the-illusion-of-life/"
+
+    institution: "Disney Editions"
 secondary_sources:
   - title: "Film History: An Introduction"
     type: "book"
+
+
     year: 2018
     url: "https://www.mheducation.com/highered/product/film-history-introduction-thompson-bordwell/M9781259870354.html"
+
     institution: "Kristin Thompson & David Bordwell, McGraw-Hill"
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 2018 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

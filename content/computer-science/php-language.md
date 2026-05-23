@@ -1,31 +1,51 @@
 ---
-id:"kb-2026-00303"
-title:"PHP Language"
-schema_type:"TechArticle"
-category:"computer-science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
+id: "kb-2026-00303"
+
+
+title: "PHP Language"
+schema_type: "TechArticle"
+
+
+category: "computer-science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "PHP Manual"
     type: "documentation"
+
+
     year: 2026
     url: "https://www.php.net/docs.php"
+
     institution: "The PHP Group"
     note: "Server-side language: PHP 8.x, JIT, fibers, named arguments, match expressions"
+
+
 secondary_sources:
   - title: "PHP & MySQL: Server-side Web Development"
     authors: ["Duckett, Jon"]
     type: "book"
+
+
     year: 2022
     url: "https://www.wiley.com/en-us/PHP+%26+MySQL%3A+Server+side+Web+Development-p-9781119149224"
+
     institution: "Wiley"
     note: "Practical PHP 8 guide covering modern web development patterns"
+
+
 completeness: 0.88
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

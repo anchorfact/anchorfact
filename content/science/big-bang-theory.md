@@ -1,34 +1,70 @@
 ---
-id:"kb-2026-00368"
-title:"Big Bang Theory"
-schema_type:"TechArticle"
-category:"science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00368"
+
+
+title: "Big Bang Theory"
+schema_type: "TechArticle"
+
+
+category: "science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"The First Three Minutes (Steven Weinberg)"
-    type:"book"
-    year:1977
-    url:"https://www.basicbooks.com/titles/steven-weinberg/the-first-three-minutes/9780465024377/"
-    institution:"Basic Books"
+  - title: "The First Three Minutes (Steven Weinberg)"
+    type: "book"
+
+
+    year: 1977
+    url: "https://www.basicbooks.com/titles/steven-weinberg/the-first-three-minutes/9780465024377/"
+
+    institution: "Basic Books"
 secondary_sources:
   - title: "A Brief History of Time"
     type: "book"
+
+
     year: 1988
     url: "https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/"
+
     institution: "Stephen Hawking, Bantam"
   - title: "Nature (journal)"
     type: "journal"
+
+
     year: 2025
     url: "https://www.nature.com/"
+
     institution: "Springer Nature"
+atomic_facts:
+  - id: fact-science-01
+    statement: The Big Bang theory describes the universe's origin 13.8 billion years ago from an infinitely hot, dense singularity
+    source_title: The First Three Minutes (Steven Weinberg)
+    source_url: https://www.basicbooks.com/titles/steven-weinberg/the-first-three-minutes/9780465024377/
+    confidence: high
+  - id: fact-science-02
+    statement: "Timeline: Planck epoch , inflation , particle formation, nucleosynthesis , 380,000 years: atoms form, CMB released"
+
+    source_title: The First Three Minutes (Steven Weinberg)
+    source_url: https://www.basicbooks.com/titles/steven-weinberg/the-first-three-minutes/9780465024377/
+    confidence: high
+  - id: fact-science-03
+    statement: Dark ages → first stars → galaxies → present
+    source_title: The First Three Minutes (Steven Weinberg)
+    source_url: https://www.basicbooks.com/titles/steven-weinberg/the-first-three-minutes/9780465024377/
+    confidence: high
+  
 completeness: 0.88
+known_gaps:
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

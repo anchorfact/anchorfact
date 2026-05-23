@@ -1,31 +1,59 @@
 ---
-id:"kb-2026-00297"
-title:"Angular"
-schema_type:"TechArticle"
-category:"computer-science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
+id: "kb-2026-00297"
+
+
+title: "Angular"
+schema_type: "TechArticle"
+
+
+category: "computer-science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "Angular Documentation"
     type: "documentation"
+
+
     year: 2026
     url: "https://angular.dev/"
+
     institution: "Google"
     note: "Official Angular documentation: components, signals, dependency injection, RxJS"
+
+
 secondary_sources:
   - title: "Effective TypeScript (2nd Edition)"
     authors: ["Vanderkam, Dan"]
     type: "book"
+
+
     year: 2024
     url: "https://www.oreilly.com/library/view/effective-typescript-2nd/9781098155056/"
+
     institution: "O'Reilly"
     note: "Angular's primary language is TypeScript — this book covers TS patterns used throughout Angular development"
+
+
+atomic_facts:
+  - id: fact-computer-science-01
+    statement: "Used by: Google Cloud Console, Forbes, Delta"
+
+    source_title: Angular Documentation
+    source_url: https://angular.dev/
+    confidence: medium
+  
 completeness: 0.88
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

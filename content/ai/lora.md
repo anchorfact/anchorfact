@@ -1,13 +1,23 @@
 ---
 id: "kb-2026-00062"
+
+
 title: "LoRA (Low-Rank Adaptation)"
 schema_type: "TechArticle"
+
+
 category: "ai"
 language: "en"
+
+
 confidence: "high"
 confidence_rationale: "Based on the original Hu et al. (2021) paper with 19,123 citations, Microsoft LoRA GitHub (13,547 stars)"
+
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
+
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
 primary_sources:
@@ -24,49 +34,109 @@ primary_sources:
         "Chen, Weizhu",
       ]
     type: "academic_paper"
+
+
     year: 2021
     doi: "10.48550/arXiv.2106.09685"
+
+
     url: "https://arxiv.org/abs/2106.09685"
     citations: 19123
+    institution: "arXiv"
   - title: "LoRA GitHub Repository"
     type: "repository"
+
+
     url: "https://github.com/microsoft/LoRA"
     institution: "Microsoft"
+
+
     stars: 13547
 secondary_sources:
   - title: "QLoRA: Efficient Finetuning of Quantized Language Models"
     authors: ["Dettmers"]
     type: "academic_paper"
+
+
     year: 2023
     doi: "10.48550/arXiv.2305.14314"
+
+
     url: "https://arxiv.org/abs/2305.14314"
+    institution: "arXiv"
+
+atomic_facts:
+  - id: fact-ai-01
+    statement: LoRA is a parameter-efficient fine-tuning method for large language models, introduced by Hu et al
+    source_title: "LoRA: Low-Rank Adaptation of Large Language Models"
+
+    source_url: https://arxiv.org/abs/2106.09685
+    source_doi: 10.48550/arXiv.2106.09685
+    confidence: high
+  - id: fact-ai-02
+    statement: from Microsoft in 2021
+    source_title: "LoRA: Low-Rank Adaptation of Large Language Models"
+
+    source_url: https://arxiv.org/abs/2106.09685
+    source_doi: 10.48550/arXiv.2106.09685
+    confidence: high
+  - id: fact-ai-03
+    statement: The method has become the dominant fine-tuning approach in the open-source LLM community, with 13,547 GitHub stars
+    source_title: "LoRA: Low-Rank Adaptation of Large Language Models"
+
+    source_url: https://arxiv.org/abs/2106.09685
+    source_doi: 10.48550/arXiv.2106.09685
+    confidence: high
+  
 completeness: 0.88
+disputed_statements:
+  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
+    confidence: "medium"
+
+known_gaps:
+  - "Statistics and data cited are from 2023 and earlier; more recent data may have become available since publication"
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - "Recent developments from 2025-2026 may not be reflected"
 related_entities:
   - "entity:large-language-models"
   - "entity:fine-tuning"
 ai_citations:
-  last_citation_check: "2026-05-22"
   - title: "Practical Tips for Finetuning LLMs Using LoRA"
     authors: ["Raschka, Sebastian"]
     type: "blog_post"
+
+
     year: 2023
     url: "https://magazine.sebastianraschka.com/p/practical-tips-for-finetuning-llms"
+
+    institution: "Sebastianraschka"
     note: "Practical guide by the author of \"Build a Large Language Model\""
   - title: "LoRA: A Python Library for LoRA (Hugging Face PEFT)"
     type: "documentation"
+
+
     year: 2025
     url: "https://huggingface.co/docs/peft/en/developer_guides/lora"
+
     institution: "Hugging Face"
   - title: "LoRA: A Python Library for LoRA (Hugging Face PEFT)"
     type: "documentation"
+
+
     year: 2025
     url: "https://huggingface.co/docs/peft/en/developer_guides/lora"
+
     institution: "Hugging Face"
   - title: "Practical Tips for Finetuning LLMs Using LoRA"
     authors: ["Raschka, Sebastian"]
     type: "blog_post"
+
+
     year: 2023
     url: "https://magazine.sebastianraschka.com/p/practical-tips-for-finetuning-llms"
+
+    institution: "Sebastianraschka"
     note: "Practical guide by the author of \"Build a Large Language Model\""
 ---
 

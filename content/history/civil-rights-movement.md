@@ -1,34 +1,74 @@
 ---
-id:"kb-2026-00404"
-title:"Civil Rights Movement"
-schema_type:"TechArticle"
-category:"history"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00404"
+
+
+title: "Civil Rights Movement"
+schema_type: "TechArticle"
+
+
+category: "history"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"Parting the Waters: America in the King Years (Taylor Branch)"
-    type:"book"
-    year:1988
-    url:"https://www.simonandschuster.com/books/Parting-the-Waters/Taylor-Branch/9780671687427"
-    institution:"Simon & Schuster"
+  - title: "Parting the Waters: America in the King Years (Taylor Branch)"
+    type: "book"
+
+
+    year: 1988
+    url: "https://www.simonandschuster.com/books/Parting-the-Waters/Taylor-Branch/9780671687427"
+
+    institution: "Simon & Schuster"
 secondary_sources:
   - title: "Encyclopaedia Britannica"
     type: "reference"
+
+
     year: 2025
     url: "https://www.britannica.com/"
+
     institution: "Encyclopaedia Britannica, Inc."
   - title: "The Penguin History of the World"
     type: "book"
+
+
     year: 1976
     url: "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
+
     institution: "J.M. Roberts, Penguin"
+atomic_facts:
+  - id: fact-history-01
+    statement: The US Civil Rights Movement fought to end racial segregation and discrimination
+    source_title: "Parting the Waters: America in the King Years (Taylor Branch)"
+
+    source_url: https://www.simonandschuster.com/books/Parting-the-Waters/Taylor-Branch/9780671687427
+    confidence: high
+  - id: fact-history-02
+    statement: "led nonviolent resistance: Montgomery Bus Boycott , March on Washington , Selma to Montgomery marches"
+
+    source_title: "Parting the Waters: America in the King Years (Taylor Branch)"
+    source_url: https://www.simonandschuster.com/books/Parting-the-Waters/Taylor-Branch/9780671687427
+    confidence: high
+  - id: fact-history-03
+    statement: >-
+      Malcolm X: alternative approach — black nationalism, 'by any means necessary.' MLK assassinated April 4, 1968,
+      Memphis
+    source_title: "Parting the Waters: America in the King Years (Taylor Branch)"
+
+    source_url: https://www.simonandschuster.com/books/Parting-the-Waters/Taylor-Branch/9780671687427
+    confidence: high
+  
 completeness: 0.88
+known_gaps:
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

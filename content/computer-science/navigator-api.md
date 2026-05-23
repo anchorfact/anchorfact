@@ -1,38 +1,47 @@
 ---
 id: "kb-2026-00109"
+
+
 title: "Navigator API"
 schema_type: "TechArticle"
+
+
 category: "computer-science"
 language: "en"
+
+
 confidence: "high"
 confidence_rationale: "Based on authoritative sources and industry standards"
+
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
+
 derived_from_human_seed: true
 primary_sources:
   - title: "HTML Standard — Navigator"
     type: "standard"
+
+
     year: 2026
     url: "https://html.spec.whatwg.org/multipage/system-state.html#the-navigator-object"
+
     institution: "WHATWG"
 
 secondary_sources:
-  - title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
-    authors: ["Lewis", "Perez", "Piktus"]
-    type: "academic_paper"
-    year: 2020
-    doi: "10.48550/arXiv.2005.11401"
-    url: "https://arxiv.org/abs/2005.11401"
   - title: "MDN Web Docs — HTTP"
     type: "documentation"
+
+
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+
     institution: "Mozilla"
 known_gaps:
   - "Content verified during quality audit; citations cross-referenced with authoritative sources"
 completeness: 0.88
 ai_citations:
-  last_citation_check: "2026-05-22"
 ---
 
 ## TL;DR

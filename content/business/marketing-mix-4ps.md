@@ -1,29 +1,53 @@
 ---
-id:"kb-2026-00431"
-title:"Marketing Mix (4Ps)"
-schema_type:"TechArticle"
-category:"business"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00431"
+
+
+title: "Marketing Mix (4Ps)"
+schema_type: "TechArticle"
+
+
+category: "business"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"Principles of Marketing (Kotler & Armstrong, 18th Ed)"
-    type:"book"
-    year:2020
-    url:"https://www.pearson.com/en-us/subject-catalog/p/principles-of-marketing/P200000009556"
-    institution:"Pearson"
+  - title: "Principles of Marketing (Kotler & Armstrong, 18th Ed)"
+    type: "book"
+
+
+    year: 2020
+    url: "https://www.pearson.com/en-us/subject-catalog/p/principles-of-marketing/P200000009556"
+
+    institution: "Pearson"
 secondary_sources:
   - title: "Marketing Management"
     type: "book"
+
+
     year: 2015
     url: "https://www.pearson.com/en-us/subject-catalog/p/marketing-management/P200000009716"
+
     institution: "Philip Kotler, Pearson"
+atomic_facts:
+  - id: fact-business-01
+    statement: "The Marketing Mix is the set of controllable marketing tools: Product , Price , Place , Promotion"
+
+    source_title: Principles of Marketing (Kotler & Armstrong, 18th Ed)
+    source_url: https://www.pearson.com/en-us/subject-catalog/p/principles-of-marketing/P200000009556
+    confidence: high
+  
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 2020 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

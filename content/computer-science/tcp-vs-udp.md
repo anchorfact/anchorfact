@@ -1,14 +1,22 @@
 ---
-id:"kb-2026-00182"
-title:"TCP vs UDP"
-schema_type:"TechArticle"
-category:"computer-science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
+id: "kb-2026-00182"
+
+
+title: "TCP vs UDP"
+schema_type: "TechArticle"
+
+
+category: "computer-science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 
 
 known_gaps:
@@ -16,18 +24,24 @@ known_gaps:
 
 completeness: 0.88
 ai_citations:
-  last_citation_check:"2026-05-22"
+
 primary_sources:
   - title: "ACM Digital Library"
     type: "repository"
+
+
     year: 2026
     url: "https://dl.acm.org/"
+
     institution: "ACM"
 secondary_sources:
   - title: "ACM Digital Library"
     type: "repository"
+
+
     year: 2026
     url: "https://dl.acm.org/"
+
     institution: "ACM"
 ---
 

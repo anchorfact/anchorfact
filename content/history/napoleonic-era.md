@@ -1,29 +1,53 @@
 ---
-id:"kb-2026-00360"
-title:"Napoleonic Era"
-schema_type:"TechArticle"
-category:"history"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00360"
+
+
+title: "Napoleonic Era"
+schema_type: "TechArticle"
+
+
+category: "history"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"Napoleon: A Life (Andrew Roberts)"
-    type:"book"
-    year:2014
-    url:"https://www.penguinrandomhouse.com/books/222045/napoleon-by-andrew-roberts/"
-    institution:"Viking"
+  - title: "Napoleon: A Life (Andrew Roberts)"
+    type: "book"
+
+
+    year: 2014
+    url: "https://www.penguinrandomhouse.com/books/222045/napoleon-by-andrew-roberts/"
+
+    institution: "Viking"
 secondary_sources:
   - title: "The Oxford History of the French Revolution"
     type: "book"
+
+
     year: 1989
     url: "https://global.oup.com/academic/product/the-oxford-history-of-the-french-revolution-9780199252985"
+
     institution: "William Doyle, Oxford University Press"
+atomic_facts:
+  - id: fact-history-01
+    statement: "Military genius: won most battles through speed, concentration of force, and corps system"
+
+    source_title: "Napoleon: A Life (Andrew Roberts)"
+    source_url: https://www.penguinrandomhouse.com/books/222045/napoleon-by-andrew-roberts/
+    confidence: high
+  
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 2014 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

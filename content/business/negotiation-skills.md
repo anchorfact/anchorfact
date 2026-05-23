@@ -1,29 +1,60 @@
 ---
-id:"kb-2026-00435"
-title:"Negotiation Skills"
-schema_type:"TechArticle"
-category:"business"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00435"
+
+
+title: "Negotiation Skills"
+schema_type: "TechArticle"
+
+
+category: "business"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"Getting to Yes (Fisher, Ury, Patton)"
-    type:"book"
-    year:1981
-    url:"https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/"
-    institution:"Penguin"
+  - title: "Getting to Yes (Fisher, Ury, Patton)"
+    type: "book"
+
+
+    year: 1981
+    url: "https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/"
+
+    institution: "Penguin"
 secondary_sources:
   - title: "Getting to Yes: Negotiating Agreement Without Giving In"
     type: "book"
+
+
     year: 1981
     url: "https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/"
+
     institution: "Roger Fisher & William Ury, Penguin"
+atomic_facts:
+  - id: fact-business-01
+    statement: >-
+      Harvard Negotiation Project : separate people from the problem, focus on interests , invent options for mutual gain,
+      insist on objective criteria
+    source_title: Getting to Yes (Fisher, Ury, Patton)
+    source_url: https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/
+    confidence: high
+  - id: fact-business-02
+    statement: "Anchoring: first number thrown out heavily influences outcome"
+
+    source_title: Getting to Yes (Fisher, Ury, Patton)
+    source_url: https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/
+    confidence: high
+  
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 1981 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

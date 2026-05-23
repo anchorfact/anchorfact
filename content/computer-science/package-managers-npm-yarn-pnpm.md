@@ -1,30 +1,50 @@
 ---
-id:"kb-2026-00173"
-title:"Package Managers (npm, yarn, pnpm)"
-schema_type:"TechArticle"
-category:"computer-science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
+id: "kb-2026-00173"
+
+
+title: "Package Managers (npm, yarn, pnpm)"
+schema_type: "TechArticle"
+
+
+category: "computer-science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "npm Documentation"
     type: "documentation"
+
+
     year: 2026
     url: "https://docs.npmjs.com/"
+
     institution: "npm Inc."
     note: "Default Node.js package manager: package.json, lockfiles, workspaces, semantic versioning"
+
+
 secondary_sources:
   - title: "pnpm Documentation"
     type: "documentation"
+
+
     year: 2026
     url: "https://pnpm.io/"
+
     institution: "pnpm"
     note: "Disk-efficient package manager: content-addressable storage, strict dependency resolution, fast installs"
+
+
 completeness: 0.88
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

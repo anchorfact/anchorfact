@@ -1,35 +1,65 @@
 ---
 id: "kb-2026-00072"
+
+
 title: "MongoDB"
 schema_type: "TechArticle"
+
+
 category: "computer-science"
 language: "en"
+
+
 confidence: "high"
 last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "MongoDB Documentation"
     type: "documentation"
+
+
     url: "https://www.mongodb.com/docs/"
     institution: "MongoDB, Inc."
   - title: "MongoDB GitHub"
     type: "repository"
+
+
     url: "https://github.com/mongodb/mongo"
+    institution: "GitHub"
+
     stars: 28333
 secondary_sources:
   - title: "MDN Web Docs — HTTP"
     type: "documentation"
+
+
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+
     institution: "Mozilla"
   - title: "Pro Git (2nd Ed)"
     authors: ["Chacon", "Straub"]
     type: "book"
+
+
     year: 2014
     url: "https://git-scm.com/book/en/v2"
+
     institution: "Apress"
+atomic_facts:
+  - id: fact-computer-science-01
+    statement: MongoDB is a document-oriented NoSQL database first released in 2009 by MongoDB Inc
+    source_title: MongoDB Documentation
+    source_url: https://www.mongodb.com/docs/
+    confidence: medium
+  
 completeness: 0.88
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations: {last_citation_check: "2026-05-22"}
 ---
 

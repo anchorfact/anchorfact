@@ -1,29 +1,64 @@
 ---
-id:"kb-2026-00481"
-title:"Coffee Culture"
-schema_type:"TechArticle"
-category:"arts"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00481"
+
+
+title: "Coffee Culture"
+schema_type: "TechArticle"
+
+
+category: "arts"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"The World Atlas of Coffee (James Hoffmann, 2nd Ed)"
-    type:"book"
-    year:2018
-    url:"https://www.octopusbooks.co.uk/titles/james-hoffmann/the-world-atlas-of-coffee/9781784725716/"
-    institution:"Mitchell Beazley"
+  - title: "The World Atlas of Coffee (James Hoffmann, 2nd Ed)"
+    type: "book"
+
+
+    year: 2018
+    url: "https://www.octopusbooks.co.uk/titles/james-hoffmann/the-world-atlas-of-coffee/9781784725716/"
+
+    institution: "Mitchell Beazley"
 secondary_sources:
   - title: "The Story of Art"
     type: "book"
+
+
     year: 1950
     url: "https://www.phaidon.com/store/art/the-story-of-art-9780714832470/"
+
     institution: "E.H. Gombrich, Phaidon"
+atomic_facts:
+  - id: fact-arts-01
+    statement: Second most traded commodity after oil
+    source_title: The World Atlas of Coffee (James Hoffmann, 2nd Ed)
+    source_url: https://www.octopusbooks.co.uk/titles/james-hoffmann/the-world-atlas-of-coffee/9781784725716/
+    confidence: high
+  - id: fact-arts-02
+    statement: "Third Wave Coffee : treat coffee as artisanal product — single origin, direct trade, lighter roasts"
+
+    source_title: The World Atlas of Coffee (James Hoffmann, 2nd Ed)
+    source_url: https://www.octopusbooks.co.uk/titles/james-hoffmann/the-world-atlas-of-coffee/9781784725716/
+    confidence: high
+  - id: fact-arts-03
+    statement: "Caffeine: most consumed psychoactive substance — blocks adenosine"
+
+    source_title: The World Atlas of Coffee (James Hoffmann, 2nd Ed)
+    source_url: https://www.octopusbooks.co.uk/titles/james-hoffmann/the-world-atlas-of-coffee/9781784725716/
+    confidence: high
+  
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 2018 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

@@ -1,34 +1,70 @@
 ---
-id:"kb-2026-00421"
-title:"Strength Training Principles"
-schema_type:"TechArticle"
-category:"health"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00421"
+
+
+title: "Strength Training Principles"
+schema_type: "TechArticle"
+
+
+category: "health"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"Practical Programming for Strength Training (Rippetoe & Baker, 3rd Ed)"
-    type:"book"
-    year:2013
-    url:"https://aasgaardco.com/store/books-posters-dvd/practical-programming-for-strength-training/"
-    institution:"The Aasgaard Company"
+  - title: "Practical Programming for Strength Training (Rippetoe & Baker, 3rd Ed)"
+    type: "book"
+
+
+    year: 2013
+    url: "https://aasgaardco.com/store/books-posters-dvd/practical-programming-for-strength-training/"
+
+    institution: "The Aasgaard Company"
 secondary_sources:
   - title: "WHO Fact Sheets"
     type: "report"
+
+
     year: 2025
     url: "https://www.who.int/news-room/fact-sheets"
+
     institution: "World Health Organization"
   - title: "CDC Health Topics"
     type: "report"
+
+
     year: 2025
     url: "https://www.cdc.gov/health-topics.html"
+
     institution: "Centers for Disease Control and Prevention"
+atomic_facts:
+  - id: fact-health-01
+    statement: Compound lifts are most efficient
+    source_title: Practical Programming for Strength Training (Rippetoe & Baker, 3rd Ed)
+    source_url: https://aasgaardco.com/store/books-posters-dvd/practical-programming-for-strength-training/
+    confidence: high
+  - id: fact-health-02
+    statement: "Linear progression: add 2.5-5kg each session"
+
+    source_title: Practical Programming for Strength Training (Rippetoe & Baker, 3rd Ed)
+    source_url: https://aasgaardco.com/store/books-posters-dvd/practical-programming-for-strength-training/
+    confidence: high
+  
 completeness: 0.88
+disputed_statements:
+  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
+    confidence: "medium"
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

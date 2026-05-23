@@ -1,42 +1,83 @@
 ---
 id: "kb-2026-00022"
+
+
 title: "TypeScript"
 schema_type: "TechArticle"
+
+
 category: "computer-science"
 language: "en"
+
+
 confidence: "high"
 confidence_rationale: "Based on official TypeScript documentation, GitHub repository data, and Stack Overflow surveys"
+
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
+
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
 primary_sources:
   - title: "TypeScript Documentation"
     type: "documentation"
+
+
     year: 2026
     url: "https://www.typescriptlang.org/docs/"
+
     institution: "Microsoft"
   - title: "TypeScript GitHub Repository"
     type: "repository"
+
+
     url: "https://github.com/microsoft/TypeScript"
     institution: "Microsoft"
   - title: "Stack Overflow Developer Survey 2024"
     type: "survey"
+
+
     year: 2024
     url: "https://survey.stackoverflow.co/2024/"
+
+    institution: "Stackoverflow"
+
 secondary_sources:
   - title: "Effective TypeScript (2nd Ed)"
     authors: ["Vanderkam"]
     type: "book"
+
+
     year: 2024
     url: "https://www.oreilly.com/library/view/effective-typescript-2nd/9781098155056/"
+
     institution: "O'Reilly"
+atomic_facts:
+  - id: fact-computer-science-01
+    statement: >-
+      TypeScript is a strongly-typed superset of JavaScript developed by Microsoft, first released in October 2012 by
+      Anders Hejlsberg
+    source_title: TypeScript Documentation
+    source_url: https://www.typescriptlang.org/docs/
+    confidence: medium
+  - id: fact-computer-science-02
+    statement: >-
+      TypeScript was the 4th most popular programming language in the 2024 Stack Overflow Developer Survey and is used by
+      over 80% of professional web developers
+    source_title: Stack Overflow Developer Survey 2024
+    source_url: https://survey.stackoverflow.co/2024/
+    confidence: medium
+  
 completeness: 0.85
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 related_entities:
   - "entity:javascript"
   - "entity:programming-languages"
 ai_citations:
-  last_citation_check: "2026-05-22"
 ---
 
 ## TL;DR

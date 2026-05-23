@@ -1,29 +1,53 @@
 ---
-id:"kb-2026-00413"
-title:"World Literature"
-schema_type:"TechArticle"
-category:"arts"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00413"
+
+
+title: "World Literature"
+schema_type: "TechArticle"
+
+
+category: "arts"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"The Norton Anthology of World Literature"
-    type:"book"
-    year:2018
-    url:"https://wwnorton.com/books/9780393602814"
-    institution:"W. W. Norton"
+  - title: "The Norton Anthology of World Literature"
+    type: "book"
+
+
+    year: 2018
+    url: "https://wwnorton.com/books/9780393602814"
+
+    institution: "W. W. Norton"
 secondary_sources:
   - title: "The Norton Anthology of World Literature"
     type: "book"
+
+
     year: 2018
     url: "https://wwnorton.com/books/9780393602814"
+
     institution: "Martin Puchner et al., W.W. Norton"
+atomic_facts:
+  - id: fact-arts-01
+    statement: "Things Fall Apart : African perspective on colonialism"
+
+    source_title: The Norton Anthology of World Literature
+    source_url: https://wwnorton.com/books/9780393602814
+    confidence: high
+  
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 2018 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

@@ -1,34 +1,53 @@
 ---
-id:"kb-2026-00464"
-title:"Yoga Practice"
-schema_type:"TechArticle"
-category:"health"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00464"
+
+
+title: "Yoga Practice"
+schema_type: "TechArticle"
+
+
+category: "health"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"Light on Yoga (B.K.S. Iyengar)"
-    type:"book"
-    year:1966
-    url:"https://www.harpercollins.com/products/light-on-yoga-bks-iyengar?variant=32117613527074"
-    institution:"HarperCollins"
+  - title: "Light on Yoga (B.K.S. Iyengar)"
+    type: "book"
+
+
+    year: 1966
+    url: "https://www.harpercollins.com/products/light-on-yoga-bks-iyengar?variant=32117613527074"
+
+    institution: "HarperCollins"
 secondary_sources:
   - title: "WHO Fact Sheets"
     type: "report"
+
+
     year: 2025
     url: "https://www.who.int/news-room/fact-sheets"
+
     institution: "World Health Organization"
   - title: "CDC Health Topics"
     type: "report"
+
+
     year: 2025
     url: "https://www.cdc.gov/health-topics.html"
+
     institution: "Centers for Disease Control and Prevention"
 completeness: 0.88
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

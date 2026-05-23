@@ -1,32 +1,54 @@
 ---
-id:"kb-2026-00155"
-title:"Monitoring and Observability"
-schema_type:"TechArticle"
-category:"computer-science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
+id: "kb-2026-00155"
+
+
+title: "Monitoring and Observability"
+schema_type: "TechArticle"
+
+
+category: "computer-science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "Site Reliability Engineering (Google)"
     authors: ["Beyer, Betsy", "Jones, Chris", "Petoff, Jennifer", "Murphy, Niall Richard"]
     type: "book"
+
+
     year: 2016
     url: "https://sre.google/books/"
+
     institution: "Google"
     note: "Four golden signals: latency, traffic, errors, saturation"
+
+
 secondary_sources:
   - title: "Observability Engineering"
     authors: ["Majors, Charity", "Fong-Jones, Liz", "Miranda, George"]
     type: "book"
+
+
     year: 2022
     url: "https://www.oreilly.com/library/view/observability-engineering/9781492076438/"
+
     institution: "O'Reilly"
     note: "Metrics, logs, traces — structured events, OpenTelemetry, high-cardinality dimensions"
+
+
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 2022 and earlier; more recent data may have become available since publication"
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+  - "Recent developments from 2025-2026 may not be reflected"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

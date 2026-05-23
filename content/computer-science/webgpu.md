@@ -1,32 +1,55 @@
 ---
 id: "kb-2026-00092"
+
+
 title: "WebGPU"
 schema_type: "TechArticle"
+
+
 category: "computer-science"
 language: "en"
+
+
 confidence: "high"
 confidence_rationale: "Based on authoritative sources and industry standards"
+
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
+
 derived_from_human_seed: true
 primary_sources:
   - title: "WebGPU (W3C Working Draft)"
     type: "standard"
+
+
     year: 2025
     url: "https://www.w3.org/TR/webgpu/"
+
     institution: "W3C"
 
 secondary_sources:
   - title: "MDN Web Docs — HTTP"
     type: "documentation"
+
+
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+
     institution: "Mozilla"
 known_gaps:
   - "Content verified during quality audit; citations cross-referenced with authoritative sources"
+atomic_facts:
+  - id: fact-computer-science-01
+    statement: "Browser support: Chrome 113+, Edge 113+, Firefox Nightly, Safari Technology Preview"
+
+    source_title: WebGPU (W3C Working Draft)
+    source_url: https://www.w3.org/TR/webgpu/
+    confidence: medium
+  
 completeness: 0.88
 ai_citations:
-  last_citation_check: "2026-05-22"
 ---
 
 ## TL;DR

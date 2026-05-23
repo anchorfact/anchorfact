@@ -1,29 +1,54 @@
 ---
-id:"kb-2026-00399"
-title:"Mayan Civilization"
-schema_type:"TechArticle"
-category:"history"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00399"
+
+
+title: "Mayan Civilization"
+schema_type: "TechArticle"
+
+
+category: "history"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"The Maya (Michael D. Coe, 9th Ed)"
-    type:"book"
-    year:2015
-    url:"https://thamesandhudson.com/the-maya-9780500291887"
-    institution:"Thames & Hudson"
+  - title: "The Maya (Michael D. Coe, 9th Ed)"
+    type: "book"
+
+
+    year: 2015
+    url: "https://thamesandhudson.com/the-maya-9780500291887"
+
+    institution: "Thames & Hudson"
 secondary_sources:
   - title: "The Greeks: A Global History"
     type: "book"
+
+
     year: 2021
     url: "https://www.basicbooks.com/titles/roderick-beaton/the-greeks/9781541618299/"
+
     institution: "Roderick Beaton, Basic Books"
+atomic_facts:
+  - id: fact-history-01
+    statement: >-
+      The Maya civilization in Central America developed the most sophisticated writing system in the pre-Columbian
+      Americas, advanced mathematics , accurate astronomical calendars, and monumental architecture
+    source_title: The Maya (Michael D. Coe, 9th Ed)
+    source_url: https://thamesandhudson.com/the-maya-9780500291887
+    confidence: high
+  
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 2021 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

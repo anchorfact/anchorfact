@@ -1,29 +1,58 @@
 ---
-id:"kb-2026-00353"
-title:"Middle Ages"
-schema_type:"TechArticle"
-category:"history"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00353"
+
+
+title: "Middle Ages"
+schema_type: "TechArticle"
+
+
+category: "history"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"A Distant Mirror: The Calamitous 14th Century (Barbara Tuchman)"
-    type:"book"
-    year:1978
-    url:"https://www.penguinrandomhouse.com/books/56336/a-distant-mirror-by-barbara-w-tuchman/"
-    institution:"Knopf"
+  - title: "A Distant Mirror: The Calamitous 14th Century (Barbara Tuchman)"
+    type: "book"
+
+
+    year: 1978
+    url: "https://www.penguinrandomhouse.com/books/56336/a-distant-mirror-by-barbara-w-tuchman/"
+
+    institution: "Knopf"
 secondary_sources:
   - title: "The Civilization of the Renaissance in Italy"
     type: "book"
+
+
     year: 1860
     url: "https://www.britannica.com/topic/The-Civilization-of-the-Renaissance-in-Italy"
+
     institution: "Jacob Burckhardt"
+atomic_facts:
+  - id: fact-history-01
+    statement: The Middle Ages were the period between the fall of the Western Roman Empire and the Renaissance
+    source_title: The Civilization of the Renaissance in Italy
+    source_url: https://www.britannica.com/topic/The-Civilization-of-the-Renaissance-in-Italy
+    confidence: high
+  - id: fact-history-02
+    statement: "High Middle Ages : population growth, trade revival, Gothic cathedrals"
+
+    source_title: "A Distant Mirror: The Calamitous 14th Century (Barbara Tuchman)"
+    source_url: https://www.penguinrandomhouse.com/books/56336/a-distant-mirror-by-barbara-w-tuchman/
+    confidence: high
+  
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 1978 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

@@ -1,33 +1,60 @@
 ---
-id:"kb-2026-00217"
-title:"Godot Engine"
-schema_type:"TechArticle"
-category:"game-development"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
+id: "kb-2026-00217"
+
+
+title: "Godot Engine"
+schema_type: "TechArticle"
+
+
+category: "game-development"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 
 
 known_gaps:
   - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
 
+atomic_facts:
+  - id: fact-game-development-01
+    statement: Godot is a free, open-source game engine created by Juan Linietsky and Ariel Manzur
+    source_title: GDC Vault
+    source_url: https://www.gdconf.com/
+    confidence: medium
+  - id: fact-game-development-02
+    statement: "Godot's scene system: everything is a scene that can be nested"
+
+    source_title: GDC Vault
+    source_url: https://www.gdconf.com/
+    confidence: medium
+  
 completeness: 0.88
 ai_citations:
-  last_citation_check:"2026-05-22"
+
 primary_sources:
   - title: "GDC Vault"
     type: "conference"
+
+
     year: 2026
     url: "https://www.gdconf.com/"
+
     institution: "GDC"
 secondary_sources:
   - title: "GDC Vault"
     type: "conference"
+
+
     year: 2026
     url: "https://www.gdconf.com/"
+
     institution: "GDC"
 ---
 

@@ -1,35 +1,50 @@
 ---
-id:"kb-2026-00175"
-title:"Vite"
-schema_type:"TechArticle"
-category:"computer-science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00175"
+
+
+title: "Vite"
+schema_type: "TechArticle"
+
+
+category: "computer-science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"Vite Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://vitejs.dev/"
-    institution:"VoidZero Inc."
+  - title: "Vite Documentation"
+    type: "documentation"
+
+
+    year: 2026
+    url: "https://vitejs.dev/"
+
+    institution: "VoidZero Inc."
 secondary_sources:
-  - title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
-    authors: ["Lewis", "Perez", "Piktus"]
-    type: "academic_paper"
-    year: 2020
-    doi: "10.48550/arXiv.2005.11401"
-    url: "https://arxiv.org/abs/2005.11401"
   - title: "MDN Web Docs — HTTP"
     type: "documentation"
+
+
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+
     institution: "Mozilla"
+atomic_facts:
+  - id: fact-computer-science-01
+    statement: >-
+      Vite is a next-generation frontend build tool that leverages native ES modules for instant dev server startup and
+      HMR
 completeness: 0.88
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

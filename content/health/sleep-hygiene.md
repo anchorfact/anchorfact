@@ -1,29 +1,54 @@
 ---
-id:"kb-2026-00417"
-title:"Sleep Hygiene"
-schema_type:"TechArticle"
-category:"health"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00417"
+
+
+title: "Sleep Hygiene"
+schema_type: "TechArticle"
+
+
+category: "health"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"Why We Sleep (Matthew Walker)"
-    type:"book"
-    year:2017
-    url:"https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325"
-    institution:"Scribner"
+  - title: "Why We Sleep (Matthew Walker)"
+    type: "book"
+
+
+    year: 2017
+    url: "https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325"
+
+    institution: "Scribner"
 secondary_sources:
   - title: "Why We Sleep: Unlocking the Power of Sleep and Dreams"
     type: "book"
+
+
     year: 2017
     url: "https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325"
+
     institution: "Matthew Walker, Scribner"
+atomic_facts:
+  - id: fact-health-01
+    statement: "Bedroom temperature: 18-20°C optimal"
+
+    source_title: Why We Sleep (Matthew Walker)
+    source_url: https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325
+    confidence: high
+  
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 2017 and earlier; more recent data may have become available since publication"
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

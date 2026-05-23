@@ -1,29 +1,45 @@
 ---
-id:"kb-2026-00307"
-title:"Zig Language"
-schema_type:"TechArticle"
-category:"computer-science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00307"
+
+
+title: "Zig Language"
+schema_type: "TechArticle"
+
+
+category: "computer-science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"Zig Documentation"
-    type:"documentation"
-    year:2026
-    url:"https://ziglang.org/documentation/"
-    institution:"Zig Software Foundation"
+  - title: "Zig Documentation"
+    type: "documentation"
+
+
+    year: 2026
+    url: "https://ziglang.org/documentation/"
+
+    institution: "Zig Software Foundation"
 secondary_sources:
   - title: "MDN Web Docs — HTTP"
     type: "documentation"
+
+
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+
     institution: "Mozilla"
 completeness: 0.88
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

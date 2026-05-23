@@ -1,29 +1,45 @@
 ---
-id:"kb-2026-00476"
-title:"Audio Engineering"
-schema_type:"TechArticle"
-category:"arts"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00476"
+
+
+title: "Audio Engineering"
+schema_type: "TechArticle"
+
+
+category: "arts"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"Mastering Audio (Bob Katz, 3rd Ed)"
-    type:"book"
-    year:2015
-    url:"https://www.routledge.com/Mastering-Audio-The-Art-and-the-Science/Katz/p/book/9780240818962"
-    institution:"Focal Press"
+  - title: "Mastering Audio (Bob Katz, 3rd Ed)"
+    type: "book"
+
+
+    year: 2015
+    url: "https://www.routledge.com/Mastering-Audio-The-Art-and-the-Science/Katz/p/book/9780240818962"
+
+    institution: "Focal Press"
 secondary_sources:
   - title: "The Story of Art"
     type: "book"
+
+
     year: 1950
     url: "https://www.phaidon.com/store/art/the-story-of-art-9780714832470/"
+
     institution: "E.H. Gombrich, Phaidon"
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 2015 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

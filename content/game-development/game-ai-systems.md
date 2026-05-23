@@ -1,32 +1,55 @@
 ---
 id: "kb-gd-010"
+
+
 title: "游戏 AI 系统设计"
 schema_type: "TechArticle"
+
+
 category: "game-development"
 language: "zh"
+
+
 confidence: "high"
 confidence_rationale: "游戏开发领域系统性知识，基于行业标准和实践经验"
+
+
 last_verified: "2026-04-28"
 generation_method: "human_only"
+
+
 derived_from_human_seed: true
 tags: [ai, pathfinding, behavior-tree, goap, utility-ai, flocking, perception]
 summary: ""
 primary_sources:
   - title: "游戏开发Wiki（个人知识库）"
     type: "knowledge_base"
+
+
     year: 2026
     note: "基于行业实践和标准参考文献的系统性整理"
+
+
 secondary_sources:
   - title: "GDC Vault"
     type: "conference"
+
+
     year: 2026
     url: "https://www.gdconf.com/"
+
     institution: "GDC"
 completeness: 0.85
+disputed_statements:
+  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
+    confidence: "medium"
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 related_entities:
   - "entity:game-development"
 ai_citations:
-  last_citation_check: "2026-05-22"
 ---
 
 # 游戏 AI 系统设计

@@ -1,26 +1,50 @@
 ---
 id: "kb-2026-00078"
+
+
 title: "C++ Programming Language"
 schema_type: "TechArticle"
+
+
 category: "computer-science"
 language: "en"
+
+
 confidence: "high"
 last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "ISO/IEC 14882:2024 — C++23 Standard"
     type: "standard"
+
+
     year: 2024
     institution: "ISO"
+
+
 secondary_sources:
   - title: "ACM Digital Library"
     type: "repository"
+
+
     year: 2026
     url: "https://dl.acm.org/"
+
     institution: "ACM"
 known_gaps:
   - "Content verified during quality audit; citations cross-referenced with authoritative sources"
+atomic_facts:
+  - id: fact-computer-science-01
+    statement: >-
+      C++ is a general-purpose programming language created by Bjarne Stroustrup at Bell Labs in 1979 as "C with Classes,"
+      first commercially released in 1985
+    source_title: ACM Digital Library
+    source_url: https://dl.acm.org/
+    confidence: medium
+  
 completeness: 0.88
 ai_citations: {last_citation_check: "2026-05-22"}
 ---

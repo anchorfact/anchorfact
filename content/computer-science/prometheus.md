@@ -1,31 +1,51 @@
 ---
-id:"kb-2026-00165"
-title:"Prometheus"
-schema_type:"TechArticle"
-category:"computer-science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
+id: "kb-2026-00165"
+
+
+title: "Prometheus"
+schema_type: "TechArticle"
+
+
+category: "computer-science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "Prometheus Documentation"
     type: "documentation"
+
+
     year: 2026
     url: "https://prometheus.io/docs/"
+
     institution: "CNCF"
     note: "CNCF-graduated monitoring: PromQL, Alertmanager, time-series TSDB, pull model, exporters"
+
+
 secondary_sources:
   - title: "Site Reliability Engineering (Google)"
     authors: ["Beyer, Betsy", "Jones, Chris", "Petoff, Jennifer", "Murphy, Niall Richard"]
     type: "book"
+
+
     year: 2016
     url: "https://sre.google/books/"
+
     institution: "O'Reilly"
     note: "Prometheus was inspired by Google's Borgmon — the SRE book covers the monitoring philosophy behind it"
+
+
 completeness: 0.88
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

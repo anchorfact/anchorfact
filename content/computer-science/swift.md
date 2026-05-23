@@ -1,30 +1,64 @@
 ---
 id: "kb-2026-00080"
+
+
 title: "Swift Programming Language"
 schema_type: "TechArticle"
+
+
 category: "computer-science"
 language: "en"
+
+
 confidence: "high"
 last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "Swift.org Documentation"
     type: "documentation"
+
+
     year: 2026
     url: "https://swift.org/documentation/"
+
     institution: "Apple Inc."
   - title: "Swift GitHub Repository"
     type: "repository"
+
+
     url: "https://github.com/swiftlang/swift"
+    institution: "GitHub"
+
 secondary_sources:
   - title: "The Swift Programming Language (Swift 5.10)"
     type: "documentation"
+
+
     year: 2024
     url: "https://docs.swift.org/swift-book/"
+
     institution: "Apple"
 known_gaps:
   - "Content verified during quality audit; citations cross-referenced with authoritative sources"
+atomic_facts:
+  - id: fact-computer-science-01
+    statement: >-
+      Swift is a general-purpose, compiled programming language developed by Apple, first announced at WWDC 2014 and
+      open-sourced in December 2015
+    source_title: The Swift Programming Language (Swift 5.10)
+    source_url: https://docs.swift.org/swift-book/
+    confidence: medium
+  - id: fact-computer-science-02
+    statement: >-
+      It is the primary language for iOS, macOS, watchOS, and visionOS app development, and is increasingly used for
+      server-side development via the Vapor framework
+    source_title: The Swift Programming Language (Swift 5.10)
+    source_url: https://docs.swift.org/swift-book/
+    confidence: medium
+  
 completeness: 0.88
 ai_citations: {last_citation_check: "2026-05-22"}
 ---

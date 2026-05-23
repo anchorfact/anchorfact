@@ -1,14 +1,55 @@
 ---
 id: "kb-2026-00010"
+
+
 title: "Mixture of Experts (MoE)"
 schema_type: "TechArticle"
+
+
 category: "ai"
 language: "en"
+
+
 confidence: "high"
 confidence_rationale: "Based on Shazeer et al. (2017, ICLR), Switch Transformers (Fedus et al., 2022, JMLR), and the GPT-4 technical report (OpenAI, 2023)"
+
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
+
+atomic_facts:
+  - id: fact-ai-01
+    statement: >-
+      at Google Brain, MoE is the dominant architecture for frontier-scale models as of 2026: GPT-4 reportedly uses MoE
+      with approximately 1.76T total parameters but only 280B active per forward pass
+    source_title: "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity"
+
+    source_url: https://arxiv.org/abs/2101.03961
+    source_doi: 10.48550/arXiv.2101.03961
+    confidence: high
+  - id: fact-ai-02
+    statement: >-
+      Mixture of Experts is a neural network architecture that divides a model into multiple specialized "expert"
+      sub-networks, with a learned gating mechanism routing each input token to only a subset of experts
+    source_title: "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer"
+
+    source_url: https://arxiv.org/abs/1701.06538
+    source_doi: 10.48550/arXiv.1701.06538
+    confidence: high
+  - id: fact-ai-03
+    statement: First made practical for deep learning by Shazeer et al
+    source_title: "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer"
+
+    source_url: https://arxiv.org/abs/1701.06538
+    source_doi: 10.48550/arXiv.1701.06538
+    confidence: high
+  
 completeness: 0.88
+disputed_statements:
+  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
+    confidence: "medium"
+
 known_gaps:
   - "GPT-4 MoE configuration is based on external analysis (SemiAnalysis, press reports), not official OpenAI documentation"
   - "MoE training dynamics (load balancing, expert specialization) remain active research areas"
@@ -20,37 +61,60 @@ primary_sources:
   - title: "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer"
     authors: ["Shazeer, Noam", "Mirhoseini, Azalia", "Maziarz, Krzysztof", "Davis, Andy", "Le, Quoc", "Hinton, Geoffrey", "Dean, Jeff"]
     type: "academic_paper"
+
+
     year: 2017
     doi: "10.48550/arXiv.1701.06538"
+
+
     url: "https://arxiv.org/abs/1701.06538"
     institution: "Google Brain"
+
+
     note: "Published at ICLR 2017. The paper that made MoE practical for deep learning. Introduced sparsely-gated MoE and load-balancing loss."
   - title: "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity"
     authors: ["Fedus, William", "Zoph, Barret", "Shazeer, Noam"]
     type: "academic_paper"
+
+
     year: 2022
     doi: "10.48550/arXiv.2101.03961"
+
+
     url: "https://arxiv.org/abs/2101.03961"
     institution: "Google Brain"
+
+
     note: "Published at JMLR 2022. Simplified MoE to top-1 routing (Switch layer), enabling trillion-parameter models. Introduced expert capacity and token dropping."
   - title: "GPT-4 Technical Report"
     authors: ["OpenAI"]
     type: "technical_report"
+
+
     year: 2023
     doi: "10.48550/arXiv.2303.08774"
+
+
     url: "https://arxiv.org/abs/2303.08774"
     institution: "OpenAI"
+
+
 secondary_sources:
   - title: "Mixtral of Experts"
     authors: ["Jiang, Albert Q.", "Sablayrolles, Alexandre", "Roux, Antoine", "Mensch, Arthur", "Savary, Blanche", "Bamford, Chris", "Chaplot, Devendra Singh", "de las Casas, Diego", "Hanna, Emma Bou", "Bressand, Florian", et al.]
     type: "academic_paper"
+
+
     year: 2024
     doi: "10.48550/arXiv.2401.04088"
+
+
     url: "https://arxiv.org/abs/2401.04088"
     institution: "Mistral AI"
+
+
     note: "Open-source MoE model (8 experts × 7B total, top-2 routing). Demonstrated MoE efficiency for publicly available models."
 ai_citations:
-  last_citation_check: "2026-05-22"
 ---
 
 ## TL;DR

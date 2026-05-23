@@ -1,29 +1,58 @@
 ---
-id:"kb-2026-00357"
-title:"Mongol Empire"
-schema_type:"TechArticle"
-category:"history"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00357"
+
+
+title: "Mongol Empire"
+schema_type: "TechArticle"
+
+
+category: "history"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"Genghis Khan and the Making of the Modern World (Jack Weatherford)"
-    type:"book"
-    year:2004
-    url:"https://www.penguinrandomhouse.com/books/164748/genghis-khan-and-the-making-of-the-modern-world-by-jack-weatherford/"
-    institution:"Crown"
+  - title: "Genghis Khan and the Making of the Modern World (Jack Weatherford)"
+    type: "book"
+
+
+    year: 2004
+    url: "https://www.penguinrandomhouse.com/books/164748/genghis-khan-and-the-making-of-the-modern-world-by-jack-weatherford/"
+
+    institution: "Crown"
 secondary_sources:
   - title: "Empire: How Britain Made the Modern World"
     type: "book"
+
+
     year: 2003
     url: "https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540"
+
     institution: "Niall Ferguson, Penguin"
+atomic_facts:
+  - id: fact-history-01
+    statement: The Mongol Empire was the largest contiguous land empire in history
+    source_title: "Empire: How Britain Made the Modern World"
+
+    source_url: https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540
+    confidence: high
+  - id: fact-history-02
+    statement: Founded by Genghis Khan who united Mongol tribes
+    source_title: Genghis Khan and the Making of the Modern World (Jack Weatherford)
+    source_url: https://www.penguinrandomhouse.com/books/164748/genghis-khan-and-the-making-of-the-modern-world-by-jack-weatherford/
+    confidence: high
+  
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 2004 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

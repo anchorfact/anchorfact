@@ -1,33 +1,55 @@
 ---
-id:"kb-2026-00216"
-title:"Unreal Engine 5"
-schema_type:"TechArticle"
-category:"game-development"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
+id: "kb-2026-00216"
+
+
+title: "Unreal Engine 5"
+schema_type: "TechArticle"
+
+
+category: "game-development"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 
 
 known_gaps:
   - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
 
+atomic_facts:
+  - id: fact-game-development-01
+    statement: "Features: Niagara VFX , Chaos Physics, Control Rig , Movie Render Queue"
+
+    source_title: GDC Vault
+    source_url: https://www.gdconf.com/
+    confidence: medium
+  
 completeness: 0.88
 ai_citations:
-  last_citation_check:"2026-05-22"
+
 primary_sources:
   - title: "GDC Vault"
     type: "conference"
+
+
     year: 2026
     url: "https://www.gdconf.com/"
+
     institution: "GDC"
 secondary_sources:
   - title: "GDC Vault"
     type: "conference"
+
+
     year: 2026
     url: "https://www.gdconf.com/"
+
     institution: "GDC"
 ---
 

@@ -1,38 +1,66 @@
 ---
-id:"kb-2026-00460"
-title:"Pyramids of Giza"
-schema_type:"TechArticle"
-category:"history"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00460"
+
+
+title: "Pyramids of Giza"
+schema_type: "TechArticle"
+
+
+category: "history"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"The Complete Pyramids (Mark Lehner)"
-    type:"book"
-    year:1997
-    url:"https://thamesandhudson.com/the-complete-pyramids-9780500285473"
-    institution:"Thames & Hudson"
+  - title: "The Complete Pyramids (Mark Lehner)"
+    type: "book"
+
+
+    year: 1997
+    url: "https://thamesandhudson.com/the-complete-pyramids-9780500285473"
+
+    institution: "Thames & Hudson"
 secondary_sources:
-  - title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
-    authors: ["Lewis", "Perez", "Piktus"]
-    type: "academic_paper"
-    year: 2020
-    doi: "10.48550/arXiv.2005.11401"
-    url: "https://arxiv.org/abs/2005.11401"completeness: 0.88
+atomic_facts:
+  - id: fact-history-01
+    statement: >-
+      Great Pyramid of Khufu: 146m originally , 2.3 million stone blocks averaging 2.5 tons each, aligned to true north
+      within 0.05 degrees — a precision modern engineers admire
+    source_title: The Complete Pyramids (Mark Lehner)
+    source_url: https://thamesandhudson.com/the-complete-pyramids-9780500285473
+    confidence: high
+  - id: fact-history-02
+    statement: "Khafre pyramid: slightly smaller, retains some casing stones at top"
+
+    source_title: The Complete Pyramids (Mark Lehner)
+    source_url: https://thamesandhudson.com/the-complete-pyramids-9780500285473
+    confidence: high
+  
+known_gaps:
+  - "Statistics and data cited are from 2020 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
   - title: "Encyclopaedia Britannica"
     type: "reference"
+
+
     year: 2025
     url: "https://www.britannica.com/"
+
     institution: "Encyclopaedia Britannica, Inc."
   - title: "The Penguin History of the World"
     type: "book"
+
+
     year: 1976
     url: "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
+
     institution: "J.M. Roberts, Penguin"
 ---
 

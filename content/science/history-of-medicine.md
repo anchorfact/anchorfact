@@ -1,34 +1,60 @@
 ---
-id:"kb-2026-00482"
-title:"History of Medicine"
-schema_type:"TechArticle"
-category:"science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00482"
+
+
+title: "History of Medicine"
+schema_type: "TechArticle"
+
+
+category: "science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"The Emperor of All Maladies (Siddhartha Mukherjee)"
-    type:"book"
-    year:2010
-    url:"https://www.simonandschuster.com/books/The-Emperor-of-All-Maladies/Siddhartha-Mukherjee/9781439170915"
-    institution:"Scribner"
+  - title: "The Emperor of All Maladies (Siddhartha Mukherjee)"
+    type: "book"
+
+
+    year: 2010
+    url: "https://www.simonandschuster.com/books/The-Emperor-of-All-Maladies/Siddhartha-Mukherjee/9781439170915"
+
+    institution: "Scribner"
 secondary_sources:
   - title: "A Brief History of Time"
     type: "book"
+
+
     year: 1988
     url: "https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/"
+
     institution: "Stephen Hawking, Bantam"
   - title: "Nature (journal)"
     type: "journal"
+
+
     year: 2025
     url: "https://www.nature.com/"
+
     institution: "Springer Nature"
+atomic_facts:
+  - id: fact-science-01
+    statement: "Germ theory : microorganisms cause disease — single most important medical breakthrough"
+
+    source_title: The Emperor of All Maladies (Siddhartha Mukherjee)
+    source_url: https://www.simonandschuster.com/books/The-Emperor-of-All-Maladies/Siddhartha-Mukherjee/9781439170915
+    confidence: high
+  
 completeness: 0.88
+known_gaps:
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

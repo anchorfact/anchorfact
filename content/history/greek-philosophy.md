@@ -1,29 +1,45 @@
 ---
-id:"kb-2026-00351"
-title:"Greek Philosophy"
-schema_type:"TechArticle"
-category:"history"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00351"
+
+
+title: "Greek Philosophy"
+schema_type: "TechArticle"
+
+
+category: "history"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"A History of Western Philosophy (Bertrand Russell)"
-    type:"book"
-    year:1945
-    url:"https://www.simonandschuster.com/books/A-History-of-Western-Philosophy/Bertrand-Russell/9780671201586"
-    institution:"Simon & Schuster"
+  - title: "A History of Western Philosophy (Bertrand Russell)"
+    type: "book"
+
+
+    year: 1945
+    url: "https://www.simonandschuster.com/books/A-History-of-Western-Philosophy/Bertrand-Russell/9780671201586"
+
+    institution: "Simon & Schuster"
 secondary_sources:
   - title: "The Greeks: A Global History"
     type: "book"
+
+
     year: 2021
     url: "https://www.basicbooks.com/titles/roderick-beaton/the-greeks/9781541618299/"
+
     institution: "Roderick Beaton, Basic Books"
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 2021 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

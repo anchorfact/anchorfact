@@ -1,29 +1,44 @@
 ---
-id:"kb-2026-00334"
-title:"Periodic Table"
-schema_type:"TechArticle"
-category:"science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00334"
+
+
+title: "Periodic Table"
+schema_type: "TechArticle"
+
+
+category: "science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"Periodic Table (IUPAC)"
-    type:"standard"
-    year:2026
-    url:"https://iupac.org/what-we-do/periodic-table-of-elements/"
-    institution:"IUPAC"
+  - title: "Periodic Table (IUPAC)"
+    type: "standard"
+
+
+    year: 2026
+    url: "https://iupac.org/what-we-do/periodic-table-of-elements/"
+
+    institution: "IUPAC"
 secondary_sources:
   - title: "The Disappearing Spoon"
     type: "book"
+
+
     year: 2010
     url: "https://www.hachettebookgroup.com/titles/sam-kean/the-disappearing-spoon/9780316051637/"
+
     institution: "Sam Kean, Little, Brown"
 completeness: 0.88
+known_gaps:
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

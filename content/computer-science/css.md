@@ -1,33 +1,69 @@
 ---
 id: "kb-2026-00069"
+
+
 title: "CSS (Cascading Style Sheets)"
 schema_type: "TechArticle"
+
+
 category: "computer-science"
 language: "en"
+
+
 confidence: "high"
 confidence_rationale: "Based on W3C CSS specifications and MDN Web Docs"
+
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
+
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
 primary_sources:
   - title: "MDN CSS Documentation"
     type: "documentation"
+
+
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/CSS"
+
     institution: "Mozilla"
   - title: "CSS Snapshot 2024 (W3C)"
     type: "standard"
+
+
     year: 2024
     url: "https://www.w3.org/TR/css-2024/"
+
     institution: "W3C"
 secondary_sources:
   - title: "MDN Web Docs — HTTP"
     type: "documentation"
+
+
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+
     institution: "Mozilla"
+atomic_facts:
+  - id: fact-computer-science-01
+    statement: >-
+      First proposed by Håkon Wium Lie in 1994, CSS has evolved from basic text styling to a powerful layout and animation
+      engine
+    source_title: MDN CSS Documentation
+    source_url: https://developer.mozilla.org/en-US/docs/Web/CSS
+    confidence: medium
+  - id: fact-computer-science-02
+    statement: CSS is a stylesheet language developed by the W3C that describes the presentation of HTML documents
+    source_title: CSS Snapshot 2024 (W3C)
+    source_url: https://www.w3.org/TR/css-2024/
+    confidence: medium
+  
 completeness: 0.85
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations: {last_citation_check: "2026-05-22"}
 ---
 

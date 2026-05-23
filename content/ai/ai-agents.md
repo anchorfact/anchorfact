@@ -1,40 +1,89 @@
 ---
 id: "kb-2026-00018"
+
+
 title: "AI Agents (2025-2026)"
 schema_type: "TechArticle"
+
+
 category: "ai"
 language: "en"
+
+
 confidence: "high"
 confidence_rationale: "Based on the comprehensive 2025 Agent Technology Report (zaobi.tech) and the State of AI Agents Report (rivista.ai), cross-validated with arXiv paper 2601.01743"
+
+
 last_verified: "2026-05-22"
 generation_method: "human_only"
+
+
 ai_models: ["claude-opus"]
 derived_from_human_seed: true
 primary_sources:
   - title: "2025-2026 Agent Technology Progress Report"
     type: "report"
+
+
     year: 2026
     url: "https://zaobi.tech/pages/ai-tech/agent-tech-report-2025/index.html"
+
     institution: "Zaobi Tech"
   - title: "AI Agent Systems: Architectures, Applications, and Evaluation (arXiv 2601.01743)"
     authors: ["Multiple"]
     type: "academic_paper"
+
+
     year: 2026
     url: "https://arxiv.org/html/2601.01743v1"
+
+    institution: "arXiv"
+
 secondary_sources:
   - title: "MDN Web Docs — HTTP"
     type: "documentation"
+
+
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+
     institution: "Mozilla"
+atomic_facts:
+  - id: fact-ai-01
+    statement: >-
+      2025 was widely called the "Year of the Agent" across the AI industry, marking a transition from passive
+      conversational AI to autonomous systems capable of multi-step reasoning, tool use, and independent action
+    source_title: "AI Agent Systems: Architectures, Applications, and Evaluation (arXiv 2601.01743)"
+
+    source_url: https://arxiv.org/html/2601.01743v1
+    confidence: high
+  - id: fact-ai-02
+    statement: >-
+      By 2026, AI agents are deployed across software engineering , general task automation , and enterprise workflow
+      automation
+    source_title: 2025-2026 Agent Technology Progress Report
+    source_url: https://zaobi.tech/pages/ai-tech/agent-tech-report-2025/index.html
+    confidence: medium
+  - id: fact-ai-03
+    statement: >-
+      An AI agent is an autonomous system that combines a foundation model with reasoning, planning, memory, and tool-use
+      capabilities to accomplish goals without continuous human supervision
+    source_title: "AI Agent Systems: Architectures, Applications, and Evaluation (arXiv 2601.01743)"
+
+    source_url: https://arxiv.org/html/2601.01743v1
+    confidence: high
+  
 completeness: 0.88
+disputed_statements:
+  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
+    confidence: "medium"
+
 known_gaps:
   - "Market size projections vary by analyst; specific figures not included pending Gartner/McKinsey consensus data"
 related_entities:
   - "entity:large-language-models"
   - "entity:model-context-protocol"
 ai_citations:
-  last_citation_check: "2026-05-22"
 ---
 
 ## TL;DR

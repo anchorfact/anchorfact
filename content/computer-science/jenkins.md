@@ -1,31 +1,58 @@
 ---
-id:"kb-2026-00312"
-title:"Jenkins"
-schema_type:"TechArticle"
-category:"computer-science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
+id: "kb-2026-00312"
+
+
+title: "Jenkins"
+schema_type: "TechArticle"
+
+
+category: "computer-science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "Jenkins Documentation"
     type: "documentation"
+
+
     year: 2026
     url: "https://www.jenkins.io/doc/"
+
     institution: "Jenkins Project"
     note: "Open-source CI/CD: declarative/scripted pipelines, plugins, Blue Ocean, JCasC"
+
+
 secondary_sources:
   - title: "Continuous Delivery (Humble & Farley)"
     authors: ["Humble, Jez", "Farley, David"]
     type: "book"
+
+
     year: 2010
     url: "https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/"
+
     institution: "Addison-Wesley"
     note: "The CI/CD book Jenkins was the reference implementation for"
+
+
+atomic_facts:
+  - id: fact-computer-science-01
+    statement: Jenkins is the most established open-source CI/CD automation server
+    source_title: Jenkins Documentation
+    source_url: https://www.jenkins.io/doc/
+    confidence: medium
+  
 completeness: 0.88
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

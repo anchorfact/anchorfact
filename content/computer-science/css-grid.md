@@ -1,30 +1,50 @@
 ---
-id:"kb-2026-00167"
-title:"CSS Grid"
-schema_type:"TechArticle"
-category:"computer-science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
+id: "kb-2026-00167"
+
+
+title: "CSS Grid"
+schema_type: "TechArticle"
+
+
+category: "computer-science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
 derived_from_human_seed: true
 primary_sources:
   - title: "CSS Grid Layout Module Level 2 (W3C Candidate Recommendation)"
     type: "standard"
+
+
     year: 2024
     url: "https://www.w3.org/TR/css-grid-2/"
+
     institution: "W3C"
     note: "CSS Grid specification: grid-template, grid-auto-flow, subgrid, named grid lines, gap property"
+
+
 secondary_sources:
   - title: "MDN Web Docs — CSS Grid Layout"
     type: "documentation"
+
+
     year: 2026
     url: "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout"
+
     institution: "Mozilla"
     note: "Practical developer guide with interactive examples, common patterns (Holy Grail layout, etc.)"
+
+
 completeness: 0.88
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

@@ -1,29 +1,58 @@
 ---
-id:"kb-2026-00412"
-title:"Photography History"
-schema_type:"TechArticle"
-category:"arts"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00412"
+
+
+title: "Photography History"
+schema_type: "TechArticle"
+
+
+category: "arts"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"The History of Photography (Beaumont Newhall)"
-    type:"book"
-    year:1982
-    url:"https://www.moma.org/calendar/exhibitions/2278"
-    institution:"Museum of Modern Art"
+  - title: "The History of Photography (Beaumont Newhall)"
+    type: "book"
+
+
+    year: 1982
+    url: "https://www.moma.org/calendar/exhibitions/2278"
+
+    institution: "Museum of Modern Art"
 secondary_sources:
   - title: "The History of Photography"
     type: "book"
+
+
     year: 1982
     url: "https://www.moma.org/calendar/exhibitions/2316"
+
     institution: "Beaumont Newhall, MoMA"
+atomic_facts:
+  - id: fact-arts-01
+    statement: "First camera phone: Sharp J-SH04"
+
+    source_title: The History of Photography (Beaumont Newhall)
+    source_url: https://www.moma.org/calendar/exhibitions/2278
+    confidence: high
+  - id: fact-arts-02
+    statement: Smartphones dedicated cameras for most users
+    source_title: The History of Photography (Beaumont Newhall)
+    source_url: https://www.moma.org/calendar/exhibitions/2278
+    confidence: high
+  
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 1982 and earlier; more recent data may have become available since publication"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

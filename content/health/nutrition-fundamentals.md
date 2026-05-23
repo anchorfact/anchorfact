@@ -1,29 +1,46 @@
 ---
-id:"kb-2026-00376"
-title:"Nutrition Fundamentals"
-schema_type:"TechArticle"
-category:"health"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00376"
+
+
+title: "Nutrition Fundamentals"
+schema_type: "TechArticle"
+
+
+category: "health"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"Dietary Guidelines for Americans 2020-2025"
-    type:"standard"
-    year:2020
-    url:"https://www.dietaryguidelines.gov/"
-    institution:"USDA/HHS"
+  - title: "Dietary Guidelines for Americans 2020-2025"
+    type: "standard"
+
+
+    year: 2020
+    url: "https://www.dietaryguidelines.gov/"
+
+    institution: "USDA/HHS"
 secondary_sources:
   - title: "WHO Healthy Diet Fact Sheet"
     type: "report"
+
+
     year: 2020
     url: "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+
     institution: "World Health Organization"
 completeness: 0.88
+known_gaps:
+  - "Statistics and data cited are from 2020 and earlier; more recent data may have become available since publication"
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR

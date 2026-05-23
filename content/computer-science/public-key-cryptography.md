@@ -1,33 +1,65 @@
 ---
-id:"kb-2026-00116"
-title:"Public Key Cryptography"
-schema_type:"TechArticle"
-category:"computer-science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
+id: "kb-2026-00116"
+
+
+title: "Public Key Cryptography"
+schema_type: "TechArticle"
+
+
+category: "computer-science"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
 generation_method: "human_only"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 
 
 known_gaps:
   - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
 
+atomic_facts:
+  - id: fact-computer-science-01
+    statement: RSA , ECC , and Ed25519 are the dominant algorithms
+    source_title: ACM Digital Library
+    source_url: https://dl.acm.org/
+    confidence: medium
+  - id: fact-computer-science-02
+    statement: "ECC: smaller keys for equivalent security — 256-bit ECC ≈ 3072-bit RSA"
+
+    source_title: ACM Digital Library
+    source_url: https://dl.acm.org/
+    confidence: medium
+  - id: fact-computer-science-03
+    statement: Elliptic Curve Diffie-Hellman is the standard key exchange
+    source_title: ACM Digital Library
+    source_url: https://dl.acm.org/
+    confidence: medium
+  
 completeness: 0.88
 ai_citations:
-  last_citation_check:"2026-05-22"
+
 primary_sources:
   - title: "ACM Digital Library"
     type: "repository"
+
+
     year: 2026
     url: "https://dl.acm.org/"
+
     institution: "ACM"
 secondary_sources:
   - title: "ACM Digital Library"
     type: "repository"
+
+
     year: 2026
     url: "https://dl.acm.org/"
+
     institution: "ACM"
 ---
 

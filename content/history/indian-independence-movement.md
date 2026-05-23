@@ -1,34 +1,71 @@
 ---
-id:"kb-2026-00392"
-title:"Indian Independence Movement"
-schema_type:"TechArticle"
-category:"history"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-22"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
+id: "kb-2026-00392"
+
+
+title: "Indian Independence Movement"
+schema_type: "TechArticle"
+
+
+category: "history"
+language: "en"
+
+
+confidence: "high"
+last_verified: "2026-05-22"
+
+
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
 primary_sources:
-  - title:"India's Struggle for Independence (Bipan Chandra)"
-    type:"book"
-    year:1989
-    url:"https://www.penguin.co.in/book/indias-struggle-for-independence/"
-    institution:"Penguin India"
+  - title: "India's Struggle for Independence (Bipan Chandra)"
+    type: "book"
+
+
+    year: 1989
+    url: "https://www.penguin.co.in/book/indias-struggle-for-independence/"
+
+    institution: "Penguin India"
 secondary_sources:
   - title: "Encyclopaedia Britannica"
     type: "reference"
+
+
     year: 2025
     url: "https://www.britannica.com/"
+
     institution: "Encyclopaedia Britannica, Inc."
   - title: "The Penguin History of the World"
     type: "book"
+
+
     year: 1976
     url: "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
+
     institution: "J.M. Roberts, Penguin"
+atomic_facts:
+  - id: fact-history-01
+    statement: "Key events: Salt March , Quit India Movement , Partition"
+
+    source_title: India's Struggle for Independence (Bipan Chandra)
+    source_url: https://www.penguin.co.in/book/indias-struggle-for-independence/
+    confidence: high
+  - id: fact-history-02
+    statement: "1857 Sepoy Mutiny: first major uprising"
+
+    source_title: India's Struggle for Independence (Bipan Chandra)
+    source_url: https://www.penguin.co.in/book/indias-struggle-for-independence/
+    confidence: high
+  - id: fact-history-03
+    statement: Indian National Congress founded 1885
+    source_title: India's Struggle for Independence (Bipan Chandra)
+    source_url: https://www.penguin.co.in/book/indias-struggle-for-independence/
+    confidence: high
+  
 completeness: 0.88
+known_gaps:
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 ai_citations:
-  last_citation_check:"2026-05-22"
 ---
 
 ## TL;DR
