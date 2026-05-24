@@ -1,66 +1,72 @@
 ---
-id: "kb-2026-00338"
-title: "Climate Change"
-schema_type: "TechArticle"
-category: "science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00338
+title: Climate Change
+schema_type: TechArticle
+category: science
+language: en
+confidence: high
+last_verified: "2026-05-24"
 created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-science-01"
-    statement: "Global average temperature has risen 1.2°C above pre-industrial levels"
-    source_title: "IPCC Sixth Assessment Report (AR6)"
-    source_url: "https://www.ipcc.ch/report/ar6/syr/"
-    confidence: "medium"
-  - id: "fact-science-02"
+  - id: fact-science-01
+    statement: Global average temperature has risen 1.2°C above pre-industrial levels
+    source_title: IPCC Sixth Assessment Report (AR6)
+    source_url: https://www.ipcc.ch/report/ar6/syr/
+    confidence: medium
+  - id: fact-science-02
     statement: "CO₂ levels: pre-industrial 280ppm → current 420+ ppm — highest in 800,000 years"
-    source_title: "IPCC Sixth Assessment Report (AR6)"
-    source_url: "https://www.ipcc.ch/report/ar6/syr/"
-    confidence: "medium"
-  - id: "fact-science-03"
+    source_title: IPCC Sixth Assessment Report (AR6)
+    source_url: https://www.ipcc.ch/report/ar6/syr/
+    confidence: medium
+  - id: fact-science-03
     statement: "IPCC: 97%+ of climate scientists agree human activity is the primary cause"
-    source_title: "IPCC Sixth Assessment Report (AR6)"
-    source_url: "https://www.ipcc.ch/report/ar6/syr/"
-    confidence: "medium"
-
+    source_title: IPCC Sixth Assessment Report (AR6)
+    source_url: https://www.ipcc.ch/report/ar6/syr/
+    confidence: medium
 known_gaps:
-  - "Statistics and data cited are from 2023 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
+  - Statistics and data cited are from 2023 and earlier; more recent data may have become available since publication
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The precise magnitude of climate sensitivity (ECS) ranges from 2°C to 4.5°C across CMIP6 models; exact projections remain a subject of active research"
-
+  - statement: The precise magnitude of climate sensitivity (ECS) ranges from 2°C to 4.5°C across CMIP6 models; exact projections remain a subject of active research
 primary_sources:
-  - title: "IPCC Sixth Assessment Report (AR6)"
-    type: "report"
+  - title: IPCC Sixth Assessment Report (AR6)
+    type: report
     year: 2023
-    url: "https://www.ipcc.ch/report/ar6/syr/"
-    institution: "IPCC"
-
+    url: https://www.ipcc.ch/report/ar6/syr/
+    institution: IPCC
+  - title: "Climate Change: A Very Short Introduction (2025 5th Edition)"
+    type: book
+    year: 2025
+    authors:
+      - Maslin M.
+    institution: Oxford University Press
+    url: https://global.oup.com/vsi-climate/
+  - title: The Climate Book (2025 Updated)
+    type: book
+    year: 2025
+    authors:
+      - Thunberg G.
+    institution: Penguin
+    url: https://www.penguinrandomhouse.com/climate-book/
 secondary_sources:
-  - title: "Biology (Campbell, 12th Edition)"
-    type: "textbook"
+  - title: Biology (Campbell, 12th Edition)
+    type: textbook
     year: 2020
-    url: "https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058"
-    institution: "Pearson Education"
+    url: https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058
+    institution: Pearson Education
   - title: "National Geographic: Science & Exploration"
-    type: "reference"
+    type: reference
     year: 2024
-    url: "https://www.nationalgeographic.com/science"
-    institution: "National Geographic Society"
-
+    url: https://www.nationalgeographic.com/science
+    institution: National Geographic Society
 ---
-
-
-
 ## TL;DR
 
 Climate change is the long-term shift in global temperatures and weather patterns, primarily caused by human greenhouse gas emissions (CO₂, CH₄) since the Industrial Revolution. Global average temperature has risen ~1.2°C above pre-industrial levels. Effects: sea level rise, extreme weather, biodiversity loss.

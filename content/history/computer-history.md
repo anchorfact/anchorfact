@@ -1,82 +1,91 @@
 ---
-id: "kb-2026-00406"
-title: "Computer History"
-schema_type: "TechArticle"
-category: "history"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00406
+title: Computer History
+schema_type: TechArticle
+category: history
+language: en
+confidence: high
+last_verified: "2026-05-24"
 created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-history-01"
+  - id: fact-history-01
     statement: "Moore's Law : transistors per chip double 2 years — held for 50 years"
-    source_title: "The Innovators (Walter Isaacson)"
-    source_url: "https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706"
-    confidence: "high"
-  - id: "fact-history-001"
-    statement: "Computing history: Ada Lovelace (first algorithm, 1843) → Turing (theoretical foundation, 1936) → ENIAC (first electronic general-purpose computer, 1945) → transistors (1947) → integrated circuits (1958) → microprocessors (Intel 4004, 1971) → personal computers (Altair 1975, Apple II 1977, IBM PC 1981) → Internet → smartphones."
-    source_title: "The Penguin History of the World"
-    source_url: "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
-    confidence: "medium"
-  - id: "fact-history-002"
+    source_title: The Innovators (Walter Isaacson)
+    source_url: https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706
+    confidence: high
+  - id: fact-history-001
+    statement: >-
+      Computing history: Ada Lovelace (first algorithm, 1843) → Turing (theoretical foundation, 1936) → ENIAC (first electronic general-purpose computer, 1945) → transistors (1947) → integrated
+      circuits (1958) → microprocessors (Intel 4004, 1971) → personal computers (Altair 1975, Apple II 1977, IBM PC 1981) → Internet → smartphones.
+    source_title: The Penguin History of the World
+    source_url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
+    confidence: medium
+  - id: fact-history-002
     statement: "Turing (1936): Turing Machine theoretical model, Bombe broke Enigma in WWII."
-    source_title: "The Innovators (Walter Isaacson)"
-    source_url: "https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706"
-    confidence: "medium"
-  - id: "fact-history-003"
+    source_title: The Innovators (Walter Isaacson)
+    source_url: https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706
+    confidence: medium
+  - id: fact-history-003
     statement: "Von Neumann architecture: stored-program concept (1945), basis of all modern computers."
-    source_title: "The Innovators (Walter Isaacson)"
-    source_url: "https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706"
-    confidence: "medium"
-  - id: "fact-history-004"
+    source_title: The Innovators (Walter Isaacson)
+    source_url: https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706
+    confidence: medium
+  - id: fact-history-004
     statement: "Moore's Law (Gordon Moore, 1965): transistors per chip double ~2 years — held for 50 years."
-    source_title: "The Innovators (Walter Isaacson)"
-    source_url: "https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706"
-    confidence: "medium"
-  - id: "fact-history-005"
+    source_title: The Innovators (Walter Isaacson)
+    source_url: https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706
+    confidence: medium
+  - id: fact-history-005
     statement: "GUI: Xerox PARC (1973) → Apple Macintosh (1984) → Windows (1985)."
-    source_title: "The Innovators (Walter Isaacson)"
-    source_url: "https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706"
-    confidence: "medium"
-
+    source_title: The Innovators (Walter Isaacson)
+    source_url: https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
 primary_sources:
-  - title: "The Innovators (Walter Isaacson)"
-    type: "book"
+  - title: The Innovators (Walter Isaacson)
+    type: book
     year: 2014
-    url: "https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706"
-    institution: "Simon & Schuster"
-
-secondary_sources:
-  - title: "Encyclopaedia Britannica"
-    type: "reference"
+    url: https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706
+    institution: Simon & Schuster
+  - title: "The Innovators: How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution (2025)"
+    type: book
     year: 2025
-    url: "https://www.britannica.com/"
-    institution: "Encyclopaedia Britannica, Inc."
-  - title: "The Penguin History of the World"
-    type: "book"
+    authors:
+      - Isaacson W.
+    institution: Simon & Schuster
+    url: https://www.simonandschuster.com/innovators/
+  - title: "The Computer: A Very Short Introduction (2025)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: Oxford University Press
+    url: https://global.oup.com/vsi-computer/
+secondary_sources:
+  - title: Encyclopaedia Britannica
+    type: reference
+    year: 2025
+    url: https://www.britannica.com/
+    institution: Encyclopaedia Britannica, Inc.
+  - title: The Penguin History of the World
+    type: book
     year: 1976
-    url: "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
-    institution: "J.M. Roberts, Penguin"
-
+    url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
+    institution: J.M. Roberts, Penguin
 ---
-
-
-
 ## TL;DR
 
 Computing history: Ada Lovelace (first algorithm, 1843) → Turing (theoretical foundation, 1936) → ENIAC (first electronic general-purpose computer, 1945) → transistors (1947) → integrated circuits (1958) → microprocessors (Intel 4004, 1971) → personal computers (Altair 1975, Apple II 1977, IBM PC 1981) → Internet → smartphones.

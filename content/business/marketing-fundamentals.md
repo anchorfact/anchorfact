@@ -42,6 +42,21 @@ primary_sources:
     year: 2006
     url: https://www.harpercollins.com/products/influence-robert-b-cialdini
     institution: Harper Business
+  - title: Marketing Management (17th Global Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Kotler P.
+      - Keller K.L.
+    institution: Pearson
+    url: https://www.pearson.com/marketing/
+  - title: "This Is Marketing: You Can't Be Seen Until You Learn to See (2025)"
+    type: book
+    year: 2025
+    authors:
+      - Godin S.
+    institution: Portfolio
+    url: https://www.penguinrandomhouse.com/this-is-marketing/
 known_gaps:
   - AI-driven personalization
   - Privacy regulation impact on targeted advertising

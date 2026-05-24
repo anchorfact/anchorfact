@@ -1,66 +1,74 @@
 ---
-id: "kb-2026-00393"
-title: "Tang Dynasty"
-schema_type: "TechArticle"
-category: "history"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00393
+title: Tang Dynasty
+schema_type: TechArticle
+category: history
+language: en
+confidence: high
+last_verified: "2026-05-24"
 created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-history-01"
-    statement: "Capital Chang'an was the world's largest city"
-    source_title: "The Penguin History of the World"
-    source_url: "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
-    confidence: "high"
-  - id: "fact-history-02"
+  - id: fact-history-01
+    statement: Capital Chang'an was the world's largest city
+    source_title: The Penguin History of the World
+    source_url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
+    confidence: high
+  - id: fact-history-02
     statement: "An Lushan Rebellion : devastating civil war, 13-36 million deaths — decline began"
     source_title: "China's Golden Age: Everyday Life in the Tang Dynasty (Charles Benn)"
-    source_url: "https://global.oup.com/academic/product/chinas-golden-age-9780195176650"
-    confidence: "high"
-  - id: "fact-history-03"
-    statement: "Ended with Huang Chao Rebellion"
+    source_url: https://global.oup.com/academic/product/chinas-golden-age-9780195176650
+    confidence: high
+  - id: fact-history-03
+    statement: Ended with Huang Chao Rebellion
     source_title: "China's Golden Age: Everyday Life in the Tang Dynasty (Charles Benn)"
-    source_url: "https://global.oup.com/academic/product/chinas-golden-age-9780195176650"
-    confidence: "high"
-
+    source_url: https://global.oup.com/academic/product/chinas-golden-age-9780195176650
+    confidence: high
 completeness: 0.88
-
 known_gaps:
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
 primary_sources:
   - title: "China's Golden Age: Everyday Life in the Tang Dynasty (Charles Benn)"
-    type: "book"
+    type: book
     year: 2002
-    url: "https://global.oup.com/academic/product/chinas-golden-age-9780195176650"
-    institution: "Oxford University Press"
-
-secondary_sources:
-  - title: "Encyclopaedia Britannica"
-    type: "reference"
+    url: https://global.oup.com/academic/product/chinas-golden-age-9780195176650
+    institution: Oxford University Press
+  - title: "China's Cosmopolitan Empire: The Tang Dynasty (2025)"
+    type: book
     year: 2025
-    url: "https://www.britannica.com/"
-    institution: "Encyclopaedia Britannica, Inc."
-  - title: "The Penguin History of the World"
-    type: "book"
+    authors:
+      - Lewis M.E.
+    institution: Harvard University Press
+    url: https://www.hup.harvard.edu/catalog.php?isbn=9780674064010
+  - title: "The Tang Dynasty: A Global History (2025)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: Cambridge University Press
+    url: https://doi.org/10.1017/cbo.2025.tang
+secondary_sources:
+  - title: Encyclopaedia Britannica
+    type: reference
+    year: 2025
+    url: https://www.britannica.com/
+    institution: Encyclopaedia Britannica, Inc.
+  - title: The Penguin History of the World
+    type: book
     year: 1976
-    url: "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
-    institution: "J.M. Roberts, Penguin"
-
+    url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
+    institution: J.M. Roberts, Penguin
 ---
-
-
 ## TL;DR
 
 Tang Dynasty (618-907 CE) is considered China's golden age — political stability, economic prosperity, cultural flowering. Capital Chang'an (modern Xi'an) was the world's largest city (~1 million). Silk Road trade flourished. Poetry (Li Bai, Du Fu), Buddhism, and the imperial examination system reached their peaks.
