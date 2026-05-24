@@ -15,17 +15,24 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-self-supervised-learning-1
+  - id: fact-ssl-1
     statement: >-
-      Self-supervised learning (SSL) creates supervised signals from unlabeled data through pretext tasks — masked language modeling (BERT), next sentence prediction, image rotation prediction, or
-      contrastive instance discrimination.
-    source_title: LeCun, AAAI 2020 Talk
+      Self-supervised learning (SSL) creates pretext tasks from unlabeled data — such as predicting image rotations, solving jigsaw puzzles, or masked language modeling — to learn useful
+      representations without human labels.
+    source_title: "Devlin, Jacob, et al. BERT: Pre-training of Deep Bidirectional Transformers. NAACL 2019"
+    source_url: https://arxiv.org/abs/1810.04805
     confidence: high
-  - id: af-self-supervised-learning-2
+  - id: fact-ssl-2
     statement: >-
-      SimCLR (Chen et al., 2020) demonstrated that contrastive learning with strong data augmentation, a nonlinear projection head, and large batch sizes can match or exceed supervised pretraining on
-      ImageNet.
-    source_title: Chen et al., ICML (2020)
+      SimCLR (Chen, Kornblith, Hinton et al. 2020, Google) established contrastive SSL as a dominant paradigm, showing that composition of data augmentations is crucial for learning good
+      representations.
+    source_title: Chen, Ting, et al. A Simple Framework for Contrastive Learning of Visual Representations. ICML 2020
+    source_url: https://arxiv.org/abs/2002.05709
+    confidence: high
+  - id: fact-ssl-3
+    statement: MAE (He et al. 2022) masks 75% of image patches and trains a ViT to reconstruct them, achieving strong transfer performance while being simpler and faster than contrastive methods.
+    source_title: He, Kaiming, et al. Masked Autoencoders Are Scalable Vision Learners. CVPR 2022
+    source_url: https://arxiv.org/abs/2111.06377
     confidence: high
 completeness: 0.9
 known_gaps:

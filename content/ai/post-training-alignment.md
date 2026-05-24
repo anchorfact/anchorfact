@@ -15,17 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-post-training-alignment-1
+  - id: f1
     statement: >-
-      Direct Preference Optimization (DPO, Rafailov et al., Stanford, 2023) eliminates the need for a separate reward model by directly optimizing the policy from preference data, reducing RLHF
-      complexity from 4 models to 2 while achieving comparable or superior alignment.
-    source_title: Rafailov et al., NeurIPS (2023)
+      RLHF (Ouyang et al. 2022, OpenAI) fine-tunes LLMs using human preference feedback to align outputs with human values, training a reward model from comparisons and optimizing the policy via PPO.
+      This is how InstructGPT/ChatGPT were built.
+    source_title: Ouyang, Long, et al. Training Language Models to Follow Instructions with Human Feedback. NeurIPS 2022
+    source_url: https://arxiv.org/abs/2203.02155
     confidence: high
-  - id: af-post-training-alignment-2
+  - id: f2
     statement: >-
-      Group Relative Policy Optimization (GRPO, DeepSeek, 2025) replaces the critic model with group-based advantage estimation, enabling stable RL training for reasoning models without requiring a
-      separate value network — key to DeepSeek-R1's success.
-    source_title: DeepSeekMath & DeepSeek-R1 Technical Reports (2025)
+      DPO (Rafailov et al. 2023, Stanford) simplifies alignment by directly optimizing a preference-based objective without training a separate reward model, achieving comparable results to RLHF with
+      greater stability.
+    source_title: "Rafailov, Rafael, et al. Direct Preference Optimization: Your Language Model is Secretly a Reward Model. NeurIPS 2023"
+    source_url: https://arxiv.org/abs/2305.18290
+    confidence: high
+  - id: f3
+    statement: >-
+      Constitutional AI (Anthropic 2022) enables self-alignment by having the model critique and revise its own outputs based on predefined principles, reducing human annotation cost while improving
+      harmlessness.
+    source_title: "Bai, Yuntao, et al. Constitutional AI: Harmlessness from AI Feedback. Anthropic 2022"
+    source_url: https://arxiv.org/abs/2212.08073
     confidence: high
 completeness: 0.9
 known_gaps:

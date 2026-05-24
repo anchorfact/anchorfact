@@ -15,18 +15,27 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-ai-regulation-landscape-1
+  - id: f1
     statement: >-
-      The EU AI Act (effective August 2024) establishes the first comprehensive regulatory framework, classifying AI systems into four risk tiers — unacceptable (banned: social scoring, real-time
-      biometric surveillance), high (strict regulation), limited (transparency), minimal.
-    source_title: "European Commission: AI Act (2024)"
+      Global AI regulation follows four models: EU comprehensive risk-based (AI Act), US sector-specific voluntary (Executive Order + NIST framework), China prescriptive (Generative AI Measures), UK
+      pro-innovation (non-statutory principles).
+    source_title: "IAPP. Global AI Legislation Tracker: EU, US, UK, China, Canada, Brazil, Japan, Korea. 2024-2025"
+    source_url: https://iapp.org/resources/article/global-ai-legislation-tracker
     confidence: high
-  - id: af-ai-regulation-landscape-2
+  - id: f2
     statement: >-
-      The US Executive Order on AI (October 2023) invoked the Defense Production Act to require safety testing disclosures for models trained with >10^26 FLOPS, covering GPT-4 and beyond — the most
-      significant US federal AI policy action to date.
-    source_title: White House Executive Order 14110 (2023)
+      China's Generative AI Measures (2023) require safety assessments, algorithm filings, and content moderation for publicly deployed GenAI services. The measures balance AI development with state
+      content control.
+    source_title: Cyberspace Administration of China. Interim Measures for the Management of Generative AI Services. 2023
+    source_url: https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm
     confidence: high
+  - id: f3
+    statement: >-
+      As of 2025, over 60 countries have proposed or enacted AI-related legislation, with the G7 Hiroshima Process and UN AI Advisory Body establishing multilateral governance frameworks for frontier
+      AI.
+    source_title: "ComplianceHub. Global AI Law Snapshot: EU, China, USA, UK, Japan, Korea, Brazil. 2025"
+    source_url: https://compliancehub.wiki/global-ai-law-snapshot/
+    confidence: medium
 completeness: 0.9
 known_gaps:
   - International AI governance coordination

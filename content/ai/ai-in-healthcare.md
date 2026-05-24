@@ -15,17 +15,22 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-ai-in-healthcare-1
+  - id: f1
     statement: >-
-      AI medical imaging systems achieve radiologist-level or superior performance in detecting lung cancer (Ardila et al., Nature Medicine 2019), diabetic retinopathy (Gulshan et al., JAMA 2016), and
-      breast cancer in mammograms (McKinney et al., Nature 2020).
-    source_title: Nature Medicine/JAMA/Nature (2016-2020)
+      CheXNet (Rajpurkar et al. 2017, Stanford) demonstrated that a 121-layer DenseNet could detect pneumonia from chest X-rays at a level exceeding practicing radiologists, catalyzing AI adoption in
+      medical imaging.
+    source_title: "Rajpurkar, Pranav, et al. CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rays. NeurIPS 2017"
+    source_url: https://arxiv.org/abs/1711.05225
     confidence: high
-  - id: af-ai-in-healthcare-2
-    statement: >-
-      AlphaFold 3 (Google DeepMind, 2024) predicts structures for all biomolecular interactions — proteins, DNA, RNA, and small molecules — using a diffusion-based architecture, accelerating drug
-      target identification.
-    source_title: Abramson et al., Nature (2024)
+  - id: f2
+    statement: DeepMind's AI system for breast cancer screening (McKinney et al. 2020, Nature) reduced false positives by 5.7% and false negatives by 9.4% compared to human radiologists in UK and US datasets.
+    source_title: McKinney, Scott Mayer, et al. International evaluation of an AI system for breast cancer screening. Nature 577:89-94, 2020
+    source_url: https://www.nature.com/articles/s41586-019-1799-6
+    confidence: high
+  - id: f3
+    statement: The FDA has cleared over 770 AI medical devices primarily for radiology as of 2025, with deep learning-based imaging tools representing the largest category of AI-enabled healthcare products.
+    source_title: Mongan, John, Linda Moy, and Charles E. Kahn. Navigating the AI Landscape in Medical Imaging. Radiology 2025
+    source_url: https://pubs.rsna.org/doi/10.1148/radiol.240982
     confidence: high
 completeness: 0.9
 primary_sources:

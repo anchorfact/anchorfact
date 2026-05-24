@@ -15,17 +15,24 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-ai-search-engines-1
+  - id: f1
     statement: >-
-      Perplexity AI (founded 2022, valued at $20B by 2025) pioneered the "answer engine" paradigm: AI synthesizes answers from real-time web searches with inline citations — challenging Google's
-      20-year "10 blue links" model.
-    source_title: Perplexity AI / Aravind Srinivas (2025)
+      LLMs are transforming search from keyword matching to conversational information retrieval. Perplexity AI, ChatGPT Search, and Google AI Overviews represent the shift toward AI-native search
+      experiences.
+    source_title: "Zhu, Yutao, et al. Large Language Models for Information Retrieval: A Survey. ICLR 2024"
+    source_url: https://arxiv.org/abs/2308.07107
     confidence: high
-  - id: af-ai-search-engines-2
+  - id: f2
+    statement: The original Google PageRank algorithm (Brin & Page 1998, Stanford) used link analysis to rank web pages, catalyzing the modern web search industry before the deep learning era.
+    source_title: Brin, Sergey, and Lawrence Page. The Anatomy of a Large-Scale Hypertextual Web Search Engine. Computer Networks 30:107-117, 1998
+    source_url: https://doi.org/10.1016/S0169-7552(98)00110-X
+    confidence: high
+  - id: f3
     statement: >-
-      Google AI Overviews (formerly SGE, Search Generative Experience, launched May 2024) integrates Gemini-generated summaries at the top of search results for complex queries. By mid-2025, AI
-      Overviews appeared on approximately 15-20% of all Google searches.
-    source_title: Google AI Overviews (2024-2025)
+      Retrieval-Augmented Generation (RAG, Lewis et al. 2020, Meta AI) combines information retrieval with LLM generation, enabling grounded answers from external knowledge bases while reducing
+      hallucination.
+    source_title: Lewis, Patrick, et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. NeurIPS 2020
+    source_url: https://arxiv.org/abs/2005.11401
     confidence: high
 completeness: 0.9
 primary_sources:

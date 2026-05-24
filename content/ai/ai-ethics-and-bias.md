@@ -15,13 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-ai-ethics-and-bias-1
-    statement: ProPublica's 2016 investigation of COMPAS recidivism algorithm found that Black defendants were 2x more likely to be incorrectly classified as high-risk than white defendants, while white defendants were 2x more likely to be incorrectly classified as low-risk.
-    source_title: Angwin et al., ProPublica (2016)
+  - id: fact-eth-1
+    statement: >-
+      Gender Shades (Buolamwini & Gebru 2018, MIT Media Lab) demonstrated that commercial facial analysis systems had significantly higher error rates for darker-skinned women, catalyzing algorithmic
+      fairness research.
+    source_title: "Buolamwini, Joy, and Timnit Gebru. Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification. FAT* 2018"
+    source_url: https://proceedings.mlr.press/v81/buolamwini18a.html
     confidence: high
-  - id: af-ai-ethics-and-bias-2
-    statement: The EU AI Act (2024) classifies AI systems into four risk tiers — unacceptable (banned), high (strict regulation), limited (transparency), minimal (no regulation) — establishing the world's first comprehensive AI regulatory framework.
-    source_title: "European Commission: AI Act (2024)"
+  - id: fact-eth-2
+    statement: >-
+      Fairness definitions include demographic parity (equal positive rates), equalized odds (equal TPR & FPR), and individual fairness (similar individuals treated similarly). No single definition
+      works for all contexts.
+    source_title: Mehrabi, Ninareh, et al. A Survey on Bias and Fairness in Machine Learning. ACM Computing Surveys 54(6):1-35, 2021
+    source_url: https://dl.acm.org/doi/10.1145/3457607
+    confidence: high
+  - id: fact-eth-3
+    statement: >-
+      The EU AI Act (2024/1689) classifies AI systems by risk level — unacceptable (banned), high-risk (strict compliance), limited risk (transparency), minimal risk (no regulation) — creating the
+      first comprehensive AI regulatory framework.
+    source_title: "European Commission. Regulation (EU) 2024/1689: The Artificial Intelligence Act. 2024"
+    source_url: https://artificialintelligenceact.eu/
     confidence: high
 completeness: 0.9
 known_gaps:
@@ -81,9 +94,8 @@ secondary_sources:
       - et al. (100+ experts)
     institution: International AI Safety (30+ nations)
     url: https://internationalaisafetyreport.org/
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 AI systems can amplify societal biases present in training data. Fairness is not a single metric — it requires choosing between competing mathematical definitions that may be mutually exclusive.
 

@@ -15,13 +15,22 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-backpropagation-1
-    statement: Backpropagation computes gradients of the loss function with respect to every weight in a neural network by recursively applying the chain rule of calculus from output layer to input layer.
-    source_title: Rumelhart, Hinton & Williams, Nature (1986)
+  - id: fact-bp-1
+    statement: Backpropagation efficiently computes gradients of a loss function with respect to all weights in a neural network by applying the chain rule recursively from output to input layers.
+    source_title: Rumelhart, David E., Geoffrey E. Hinton, and Ronald J. Williams. Learning Representations by Back-Propagating Errors. Nature 323:533-536, 1986
+    source_url: https://doi.org/10.1038/323533a0
     confidence: high
-  - id: af-backpropagation-2
-    statement: The vanishing gradient problem in deep networks — where gradients become exponentially small in early layers — motivated the development of ReLU activation and residual connections (ResNet, He et al., 2016).
-    source_title: He et al., CVPR (2016)
+  - id: fact-bp-2
+    statement: Modern deep learning frameworks (PyTorch, TensorFlow, JAX) implement automatic differentiation (autograd) which generalizes backpropagation to arbitrary computational graphs.
+    source_title: "Baydin, Atılım Güneş, Barak A. Pearlmutter, et al. Automatic Differentiation in Machine Learning: A Survey. JMLR 18(153):1-43, 2018"
+    source_url: https://jmlr.org/papers/v18/17-468.html
+    confidence: high
+  - id: fact-bp-3
+    statement: >-
+      The vanishing gradient problem occurs when gradients become exponentially small in early layers of deep networks, making training difficult. ReLU and residual connections (He et al. 2016)
+      mitigate this issue.
+    source_title: LeCun, Yann, Yoshua Bengio, and Geoffrey Hinton. Deep Learning. Nature 521:436-444, 2015
+    source_url: https://www.nature.com/articles/nature14539
     confidence: high
 completeness: 0.9
 known_gaps:
@@ -74,9 +83,8 @@ secondary_sources:
       - multiple
     institution: Knowledge and Information Systems (Springer)
     url: https://doi.org/10.1007/s10115-025-02370-0
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 Backpropagation is the fundamental algorithm for training neural networks, computing gradients of the loss with respect to every weight via repeated application of the calculus chain rule.
 

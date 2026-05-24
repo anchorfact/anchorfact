@@ -16,20 +16,26 @@ is_live_document: false
 data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: af-neural-architecture-search-1
+  - id: f1
     statement: >-
-      Nature's 2025 Neural Architecture Search collection documented the maturation of NAS from a niche AutoML subfield to a practical tool — with modern NAS methods (DARTS, once-for-all networks,
-      Generative NAS) reducing the search cost from thousands of GPU-hours (early RL-based NAS, Zoph 2017) to single-digit GPU-hours through weight-sharing supernets and differentiable architecture
-      search, while discovering architectures that outperform hand-designed ResNets and EfficientNets by 1-3% accuracy at equivalent latency.
-    source_title: Nature (2025) — Neural Architecture Search collection / Springer NAS collections 2025
-    source_url: https://www.nature.com/collections/adjaeijhja
+      NAS with Reinforcement Learning (Zoph & Le 2017, Google Brain) pioneered automated architecture search, using an RNN controller to generate network architectures trained and evaluated on a proxy
+      task.
+    source_title: Zoph, Barret, and Quoc V. Le. Neural Architecture Search with Reinforcement Learning. ICLR 2017
+    source_url: https://arxiv.org/abs/1611.01578
     confidence: high
-  - id: af-neural-architecture-search-2
+  - id: f2
     statement: >-
-      Generative NAS (GNAS, Neurocomputing 2025) proposed a novel search strategy treating architecture generation as a conditional generation problem — training a generative model on high-performing
-      architectures to propose novel candidates — achieving Pareto-optimal accuracy-latency trade-offs on ImageNet classification while requiring 8x fewer GPU-hours than evolutionary NAS baselines.
-    source_title: GNAS, Neurocomputing (2025) — Generative Neural Architecture Search
-    source_url: https://www.sciencedirect.com/science/article/pii/S092523122501032X
+      DARTS (Liu et al. 2019, CMU/DeepMind) introduced differentiable architecture search, reducing search cost from thousands of GPU-days to a few GPU-days by relaxing the discrete architecture space
+      to continuous optimization.
+    source_title: "Liu, Hanxiao, Karen Simonyan, and Yiming Yang. DARTS: Differentiable Architecture Search. ICLR 2019"
+    source_url: https://arxiv.org/abs/1806.09055
+    confidence: high
+  - id: f3
+    statement: >-
+      EfficientNet (Tan & Le 2019, Google) used NAS to discover a family of models that achieved state-of-the-art accuracy while being 5-10× smaller than previous models, through compound scaling of
+      depth, width, and resolution.
+    source_title: "Tan, Mingxing, and Quoc V. Le. EfficientNet: Rethinking Model Scaling for CNNs. ICML 2019"
+    source_url: https://arxiv.org/abs/1905.11946
     confidence: high
 primary_sources:
   - id: ps-neural-architecture-search-1

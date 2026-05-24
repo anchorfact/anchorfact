@@ -15,17 +15,29 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-transformer-architecture-variants-1
+  - id: fact-tv-1
     statement: >-
-      The original Transformer (Vaswani et al., 2017) used encoder-decoder architecture. BERT (2018) popularized encoder-only for understanding; GPT (2018) established decoder-only for generation —
-      the dominant design for modern LLMs.
-    source_title: Vaswani et al. (2017) / Devlin et al. (2019) / Radford et al. (2018)
+      The original Transformer (Vaswani et al. 2017) introduced the encoder-decoder architecture with multi-head self-attention, replacing recurrence entirely and enabling parallel computation across
+      all positions.
+    source_title: Vaswani, Ashish, et al. Attention Is All You Need. NeurIPS 2017
+    source_url: https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
     confidence: high
-  - id: af-transformer-architecture-variants-2
+  - id: fact-tv-2
     statement: >-
-      Mamba (Gu & Dao, 2023) introduced selective state space models as an alternative to attention — achieving linear time complexity while matching Transformer performance on language modeling,
-      potentially enabling 10x longer context windows at the same compute cost.
-    source_title: Gu & Dao, Mamba (2023)
+      Vision Transformer (ViT, Dosovitskiy et al. 2021, Google) applies a pure Transformer to sequences of image patches, achieving state-of-the-art on image classification when pre-trained on large
+      datasets.
+    source_title: Dosovitskiy, Alexey, et al. An Image is Worth 16x16 Words. ICLR 2021
+    source_url: https://arxiv.org/abs/2010.11929
+    confidence: high
+  - id: fact-tv-3
+    statement: Swin Transformer (Liu et al. 2021, Microsoft, ICCV Best Paper) introduced hierarchical shifted windows for efficient vision Transformers, enabling linear complexity relative to image size.
+    source_title: "Liu, Ze, et al. Swin Transformer: Hierarchical Vision Transformer using Shifted Windows. ICCV 2021"
+    source_url: https://arxiv.org/abs/2103.14030
+    confidence: high
+  - id: fact-tv-4
+    statement: Efficient Transformers (Tay et al. 2022, Google) survey categorizes linear, sparse, and recurrent attention variants that reduce the O(N²) complexity barrier for long sequences.
+    source_title: "Tay, Yi, et al. Efficient Transformers: A Survey. ACM Computing Surveys 2022"
+    source_url: https://doi.org/10.1145/3530811
     confidence: high
 completeness: 0.9
 primary_sources:

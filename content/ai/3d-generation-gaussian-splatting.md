@@ -16,19 +16,24 @@ is_live_document: false
 data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: af-3d-generation-gaussian-splatting-1
+  - id: f1
     statement: >-
-      3D Gaussian Splatting (Kerbl et al., SIGGRAPH 2023) represents a scene as millions of anisotropic 3D Gaussians, achieving real-time novel view synthesis at 30+ FPS — a 100x speedup over NeRF —
-      while maintaining equal or better quality (PSNR 29.5+ on standard benchmarks).
-    source_title: Kerbl et al., SIGGRAPH (2023)
-    source_url: https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/
+      3D Gaussian Splatting (Kerbl et al. 2023, Inria, SIGGRAPH Best Paper) represents 3D scenes as collections of anisotropic 3D Gaussians optimized via gradient descent, achieving state-of-the-art
+      quality at real-time rendering speeds.
+    source_title: Kerbl, Bernhard, et al. 3D Gaussian Splatting for Real-Time Radiance Field Rendering. SIGGRAPH 2023
+    source_url: https://arxiv.org/abs/2308.04079
     confidence: high
-  - id: af-3d-generation-gaussian-splatting-2
+  - id: f2
+    statement: DreamFusion (Poole et al. 2022, Google) pioneered text-to-3D generation by distilling a pretrained 2D diffusion model (Imagen) into a NeRF, known as Score Distillation Sampling (SDS).
+    source_title: "Poole, Ben, et al. DreamFusion: Text-to-3D using 2D Diffusion. ICLR 2023"
+    source_url: https://arxiv.org/abs/2209.14988
+    confidence: high
+  - id: f3
     statement: >-
-      Neural Radiance Fields (NeRF, Mildenhall et al., ECCV 2020) learn a continuous 5D scene representation (3D position + 2D viewing direction) parameterized by an MLP, enabling photorealistic novel
-      view synthesis from 2D images via volumetric rendering.
-    source_title: Mildenhall et al., ECCV (2020) Best Paper
-    source_url: https://arxiv.org/abs/2003.08934
+      The transition from NeRF to 3D Gaussian Splatting represents a paradigm shift in neural rendering — from implicit MLP-based representations to explicit, rasterizable primitives optimized for
+      real-time performance.
+    source_title: "Multiple authors. A Survey of 3D Reconstruction: From Multi-View Geometry to NeRF and 3DGS. Sensors (MDPI) 2025"
+    source_url: https://doi.org/10.3390/s25185748
     confidence: high
 primary_sources:
   - id: ps-3d-generation-gaussian-splatting-1

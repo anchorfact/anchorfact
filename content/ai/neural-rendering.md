@@ -16,21 +16,24 @@ is_live_document: false
 data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: af-neural-rendering-1
+  - id: f1
     statement: >-
-      NeRF (Neural Radiance Fields, Mildenhall et al., ECCV 2020) represented a scene as a continuous 5D function mapping 3D coordinates and 2D viewing direction to emitted color and volume density,
-      trained from sparse input views. A 2020-2025 comprehensive survey (arxiv/Waterloo) documents the field's evolution to real-time rendering (Instant-NGP reducing training from hours to seconds via
-      hash-grid encoding) and large-scale scenes (Block-NeRF rendering city blocks).
-    source_title: NeRF, Mildenhall et al., ECCV 2020 / arxiv 2210.00379 (2025 update) -- NeRF 2020-2025 survey (Waterloo) / Instant-NGP (Muller et al., SIGGRAPH 2022)
+      NeRF (Mildenhall et al. 2020, Google/UC Berkeley) represents scenes as continuous volumetric radiance fields parameterized by MLPs, enabling photorealistic novel view synthesis from sparse 2D
+      images.
+    source_title: "Mildenhall, Ben, et al. NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis. ECCV 2020"
     source_url: https://arxiv.org/abs/2003.08934
     confidence: high
-  - id: af-neural-rendering-2
+  - id: f2
     statement: >-
-      3D Gaussian Splatting (Kerbl et al., SIGGRAPH 2023 Best Paper) disrupted NeRF -- representing scenes as millions of 3D Gaussians with learnable position, covariance, color, and opacity --
-      enabling real-time differentiable rendering at 30+ FPS with quality matching NeRF. MDPI (2025) comparative assessment found 3DGS achieves 100-1000x faster rendering than NeRF, making it the
-      dominant approach for production applications.
-    source_title: 3D Gaussian Splatting (Kerbl et al., SIGGRAPH 2023 Best Paper) / MDPI Sensors (2025) -- Comparative Assessment of NeRF and 3DGS
+      3D Gaussian Splatting (Kerbl et al. 2023, Inria) achieved real-time radiance field rendering by representing scenes as 3D Gaussians with differentiable rasterization, winning SIGGRAPH 2023 Best
+      Paper.
+    source_title: Kerbl, Bernhard, et al. 3D Gaussian Splatting for Real-Time Radiance Field Rendering. SIGGRAPH 2023
     source_url: https://arxiv.org/abs/2308.04079
+    confidence: high
+  - id: f3
+    statement: Instant NGP (Müller et al. 2022, NVIDIA) introduced multi-resolution hash encoding that accelerates NeRF training from hours to seconds, enabling real-time neural graphics applications.
+    source_title: Müller, Thomas, et al. Instant Neural Graphics Primitives with a Multiresolution Hash Encoding. SIGGRAPH 2022
+    source_url: https://doi.org/10.1145/3528223.3530127
     confidence: high
 primary_sources:
   - id: ps-neural-rendering-1

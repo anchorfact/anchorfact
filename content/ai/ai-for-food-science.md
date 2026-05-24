@@ -16,20 +16,25 @@ is_live_document: false
 data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: af-ai-for-food-science-1
+  - id: f1
     statement: >-
-      Nature Food (May 2025) identified seven grand challenges where AI can accelerate food development: ingredient property prediction, formulation optimization, flavor and aroma modeling, texture
-      engineering, nutritional profiling, shelf-life prediction, and consumer preference modeling.
-    source_title: "Nature Food (May 2025) -- AI for food: accelerating discovery and development -- doi:10.1038/s41538-025-00441-8"
-    source_url: https://www.nature.com/articles/s41538-025-00441-8
+      Computer vision and deep learning for food recognition (food classification, calorie estimation, quality inspection) have achieved >90% accuracy on benchmark datasets, enabling AI-powered
+      dietary tracking and food safety monitoring.
+    source_title: "Multiple authors. Deep Learning for Food Recognition: A Comprehensive Survey. IEEE Access 2024"
+    source_url: https://doi.org/10.1109/ACCESS.2024.3415265
     confidence: high
-  - id: af-ai-for-food-science-2
+  - id: f2
+    statement: FAO reports that AI can optimize food supply chains through predictive analytics, reducing post-harvest losses by 20-30% and improving food security for vulnerable populations.
+    source_title: FAO. Artificial Intelligence for Food and Agriculture — Innovation to Transform Food Systems. 2024
+    source_url: https://www.fao.org/technology/en/
+    confidence: high
+  - id: f3
     statement: >-
-      AI-driven food quality control using computer vision and deep learning has achieved >98% accuracy for defect detection in fruits, vegetables, and processed foods in industrial settings.
-      Hyperspectral imaging combined with CNNs can detect internal quality defects invisible to the human eye.
-    source_title: MDPI Foods (October 2025) -- ML for Quality Control in the Food Industry / Journal of Food Protection (2025)
-    source_url: https://ift.onlinelibrary.wiley.com/doi/10.1111/1541-4337.70068
-    confidence: high
+      NotCo (Chilean food-tech unicorn, $1.5B valuation) uses the "Giuseppe" AI platform to discover plant-based alternatives to animal products by analyzing molecular structures of foods and matching
+      them with plant ingredients.
+    source_title: "NotCo. Giuseppe AI Platform: Molecular-Level Food Discovery. 2023-2024"
+    source_url: https://notco.com/
+    confidence: medium
 primary_sources:
   - id: ps-ai-for-food-science-1
     title: "AI for food: accelerating and democratizing discovery and development"

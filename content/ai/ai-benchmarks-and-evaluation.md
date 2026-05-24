@@ -15,17 +15,24 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-ai-benchmarks-and-evaluation-1
-    statement: >-
-      MMLU (Massive Multitask Language Understanding, Hendrycks et al., 2021) tests models on 57 subjects from law to physics. GPT-4 scored 86.4% (2023); Claude 4 Opus reached ~92% (2025); estimated
-      human expert performance is ~89.8%.
-    source_title: Hendrycks et al., ICLR (2021)
+  - id: f1
+    statement: HELM (Holistic Evaluation of Language Models, Liang et al. 2023, Stanford CRFM) provides a standardized framework for evaluating LLMs across 42 scenarios covering 7 metric categories.
+    source_title: Liang, Percy, et al. Holistic Evaluation of Language Models. NeurIPS 2023
+    source_url: https://arxiv.org/abs/2211.09110
     confidence: high
-  - id: af-ai-benchmarks-and-evaluation-2
+  - id: f2
     statement: >-
-      SWE-bench Verified (2024) tests real-world software engineering: given a GitHub issue, produce a patch that passes all tests. Claude Code (Anthropic, 2025) achieved 77.2% — resolving the
-      majority of real open-source bugs autonomously.
-    source_title: "SWE-bench: Can Language Models Resolve Real-World GitHub Issues? (2024)"
+      BIG-bench (Srivastava et al. 2023, 450+ authors, Google) is a collaborative benchmark with 204 tasks testing LLM capabilities beyond standard NLP, including reasoning, creativity, and social
+      intelligence.
+    source_title: "Srivastava, Aarohi, et al. Beyond the Imitation Game: Quantifying LLM Capabilities. NeurIPS 2023"
+    source_url: https://arxiv.org/abs/2206.04615
+    confidence: high
+  - id: f3
+    statement: >-
+      MMLU (Hendrycks et al. 2021, UC Berkeley) measures massive multitask language understanding across 57 subjects from STEM to humanities, becoming the standard benchmark for LLM knowledge
+      evaluation.
+    source_title: Hendrycks, Dan, et al. Measuring Massive Multitask Language Understanding. ICLR 2021
+    source_url: https://arxiv.org/abs/2009.03300
     confidence: high
 completeness: 0.9
 primary_sources:

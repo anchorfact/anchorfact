@@ -16,20 +16,24 @@ is_live_document: false
 data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: af-state-space-models-1
-    statement: >-
-      Mamba (Gu & Dao, arxiv 2312.00752, 2023) introduced selective state space models (SSMs) where SSM parameters become functions of the input — enabling content-aware reasoning while maintaining
-      linear O(N) complexity versus Transformers' quadratic O(N²) — achieving state-of-the-art performance on language modeling, audio, and genomics benchmarks across modalities.
-    source_title: "Gu & Dao, arxiv 2312.00752 (2023) — Mamba: Linear-Time Sequence Modeling with Selective State Spaces"
+  - id: f1
+    statement: Mamba (Gu & Dao 2023, CMU/Princeton) introduces a selective state space model with input-dependent parameters, achieving Transformer-quality language modeling with linear time complexity.
+    source_title: "Gu, Albert, and Tri Dao. Mamba: Linear-Time Sequence Modeling with Selective State Spaces. ICML 2024"
     source_url: https://arxiv.org/abs/2312.00752
     confidence: high
-  - id: af-state-space-models-2
+  - id: f2
     statement: >-
-      The SSM architecture family evolved through Mamba-2 (2024, introducing structured state-space duality connecting SSMs to linear attention) and Mamba-3 (2026, hybrid architectures combining
-      selective SSM layers with sparse attention for long-context tasks), with benchmarks showing that hybrid Mamba-Transformer models achieve 95-98% of Transformer quality at 3-5x faster inference
-      for sequences beyond 128K tokens.
-    source_title: Mamba-2 arxiv 2405.21060 (2024) / Mamba-3 evolution (2026) qubittool.com analysis
-    source_url: https://arxiv.org/abs/2405.21060
+      Structured State Space Sequence Models (S4, Gu et al. 2022, Stanford) proposed a mathematical framework for modeling long-range dependencies efficiently using state space representations from
+      control theory.
+    source_title: Gu, Albert, Karan Goel, and Christopher Ré. Efficiently Modeling Long Sequences with Structured State Spaces. ICLR 2022
+    source_url: https://arxiv.org/abs/2111.00396
+    confidence: high
+  - id: f3
+    statement: >-
+      SSMs (Mamba, S4, H3) are emerging as a promising alternative to Transformers for long-sequence tasks, offering O(N) complexity while maintaining competitive quality on language and genomics
+      benchmarks.
+    source_title: "Dao, Tri, et al. Hungry Hungry Hippos: Towards Language Modeling with State Space Models. ICLR 2023"
+    source_url: https://arxiv.org/abs/2212.14052
     confidence: high
 primary_sources:
   - id: ps-state-space-models-1

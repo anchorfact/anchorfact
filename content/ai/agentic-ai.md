@@ -16,21 +16,22 @@ is_live_document: false
 data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: af-agentic-ai-1
+  - id: f1
     statement: >-
-      A comprehensive Springer AI Review survey (2025, doi:10.1007/s10462-025-11422-4) defines Agentic AI as systems with autonomous goal-directed behavior across four core capabilities: perception
-      (environment sensing), reasoning (planning chains), action (tool use and API calls), and memory (persistent context) — distinguishing agentic systems from passive LLM responders through their
-      ability to initiate and complete multi-step tasks without human micromanagement.
-    source_title: "Bendre & Kumar, Springer AI Review (2025) — Agentic AI: A Comprehensive Survey — doi:10.1007/s10462-025-11422-4"
-    source_url: https://link.springer.com/article/10.1007/s10462-025-11422-4
+      Agentic AI refers to LLM-powered systems that autonomously plan, execute multi-step tasks, use tools, and verify outputs. Key architectures include ReAct, AutoGPT, and multi-agent frameworks
+      like CrewAI.
+    source_title: Wang, Lei, et al. A Survey on LLM-Based Autonomous Agents. arXiv 2024
+    source_url: https://arxiv.org/abs/2308.08435
     confidence: high
-  - id: af-agentic-ai-2
-    statement: >-
-      MIT's 2025 AI Agent Index — documenting 70+ production AI agents from major labs — and a Nature Communications study (2025, doi:10.1038/s41467-025-63804-5) presenting a brain-inspired agentic
-      architecture (MAP) demonstrated that structured planning with memory-augmented policy improves autonomous task completion by 40-60% over reactive agents on graph traversal, Tower of Hanoi, and
-      web navigation benchmarks.
-    source_title: MIT AI Agent Index (2025) / Nature Communications (2025) — brain-inspired agentic architecture — doi:10.1038/s41467-025-63804-5
-    source_url: https://www.nature.com/articles/s41467-025-63804-5
+  - id: f2
+    statement: Chain-of-Thought prompting (Wei et al. 2022, Google) elicits step-by-step reasoning from LLMs, significantly improving performance on arithmetic, commonsense, and symbolic reasoning tasks.
+    source_title: Wei, Jason, et al. Chain-of-Thought Prompting Elicits Reasoning in Large Language Models. NeurIPS 2022
+    source_url: https://arxiv.org/abs/2201.11903
+    confidence: high
+  - id: f3
+    statement: Tree of Thoughts (Yao et al. 2023, Princeton/DeepMind) extends CoT by exploring multiple reasoning paths simultaneously, using BFS/DFS search with self-evaluation for deliberate problem-solving.
+    source_title: "Yao, Shunyu, et al. Tree of Thoughts: Deliberate Problem Solving with Large Language Models. NeurIPS 2023"
+    source_url: https://arxiv.org/abs/2305.10601
     confidence: high
 primary_sources:
   - id: ps-agentic-ai-1

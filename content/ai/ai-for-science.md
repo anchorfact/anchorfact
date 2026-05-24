@@ -15,15 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-ai-for-science-1
+  - id: f1
     statement: >-
-      AlphaFold 3 (Google DeepMind & Isomorphic Labs, 2024, published in Nature) predicts not just protein structures but all biomolecular interactions — proteins, DNA, RNA, ligands, and ions — using
-      a diffusion-based architecture that represents the most significant AI breakthrough in structural biology.
-    source_title: Abramson et al., Nature (2024)
+      AlphaFold 2 (Jumper et al. 2021, DeepMind, Nature) solved the 50-year protein folding problem, predicting 3D protein structures with atomic accuracy and leading to the 2024 Nobel Prize in
+      Chemistry awarded to Hassabis, Jumper, and Baker.
+    source_title: Jumper, John, et al. Highly Accurate Protein Structure Prediction with AlphaFold. Nature 596:583-589, 2021
+    source_url: https://www.nature.com/articles/s41586-021-03819-2
     confidence: high
-  - id: af-ai-for-science-2
-    statement: Demis Hassabis and John Jumper received the 2024 Nobel Prize in Chemistry for AlphaFold2's protein structure prediction, marking the first Nobel Prize directly awarded for AI research.
-    source_title: Nobel Foundation (2024)
+  - id: f2
+    statement: >-
+      GNoME (Merchant et al. 2023, DeepMind, Nature) used graph neural networks to discover 2.2 million new stable crystal structures — equivalent to nearly 800 years of experimental knowledge —
+      advancing materials science.
+    source_title: Merchant, Amil, et al. Scaling Deep Learning for Materials Discovery. Nature 624:80-89, 2023
+    source_url: https://www.nature.com/articles/s41586-023-06735-9
+    confidence: high
+  - id: f3
+    statement: >-
+      GraphCast (Lam et al. 2023, DeepMind, Science) demonstrated that graph neural networks can outperform the world's best operational weather forecasting system on 90% of test variables in under
+      one minute.
+    source_title: Lam, Remi, et al. Learning Skillful Medium-Range Global Weather Forecasting. Science 2023
+    source_url: https://doi.org/10.1126/science.adi2336
     confidence: high
 completeness: 0.9
 known_gaps:

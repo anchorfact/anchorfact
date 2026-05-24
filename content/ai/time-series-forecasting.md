@@ -15,17 +15,24 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-time-series-forecasting-1
-    statement: >-
-      Transformers adapted for time series — Informer (Zhou et al., 2021), Autoformer, PatchTST — address the quadratic attention complexity for long sequences, enabling forecasting horizons of 720+
-      time steps.
-    source_title: Zhou et al., AAAI (2021)
+  - id: fact-ts-1
+    statement: Informer (Zhou et al. 2021, AAAI Best Paper) introduced ProbSparse self-attention and a generative-style decoder, achieving O(L log L) complexity for long sequence time-series forecasting.
+    source_title: "Zhou, Haoyi, et al. Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting. AAAI 2021"
+    source_url: https://arxiv.org/abs/2012.07436
     confidence: high
-  - id: af-time-series-forecasting-2
+  - id: fact-ts-2
     statement: >-
-      N-BEATS (Oreshkin et al., 2020) achieves state-of-the-art univariate forecasting without any time-series-specific feature engineering, using a pure deep learning architecture with doubly
-      residual stacking of fully connected blocks.
-    source_title: Oreshkin et al., ICLR (2020)
+      TimesNet (Wu et al. 2023, Tsinghua) transforms 1D time series into 2D tensors by capturing intra-period and inter-period variations, then applies inception blocks for multi-scale temporal
+      modeling.
+    source_title: "Wu, Haixu, et al. TimesNet: Temporal 2D-Variation Modeling for General Time Series Analysis. ICLR 2023"
+    source_url: https://arxiv.org/abs/2210.02186
+    confidence: high
+  - id: fact-ts-3
+    statement: >-
+      GraphCast (Lam et al. 2023, Google DeepMind) applies graph neural networks to global weather forecasting, outperforming ECMWF's operational system on 90% of test variables while running in under
+      1 minute.
+    source_title: Lam, Remi, et al. Learning Skillful Medium-Range Global Weather Forecasting. Science 2023
+    source_url: https://doi.org/10.1126/science.adi2336
     confidence: high
 completeness: 0.9
 known_gaps:

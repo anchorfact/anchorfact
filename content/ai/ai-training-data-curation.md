@@ -15,17 +15,24 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-ai-training-data-curation-1
+  - id: f1
     statement: >-
-      Common Crawl — the largest public web dataset at 400B+ tokens — requires extensive filtering: URL blocklisting, language detection, quality scoring (perplexity-based), deduplication (exact +
-      fuzzy via MinHash), and safety filtering before becoming usable for LLM training.
-    source_title: Common Crawl / FineWeb (HuggingFace, 2024)
+      Data-centric AI (as championed by Andrew Ng) posits that systematically improving data quality yields greater performance gains than iterating on model architecture for many practical
+      applications.
+    source_title: "Mazumder, Mark, et al. DataPerf: Benchmarks for Data-Centric AI Development. NeurIPS 2023"
+    source_url: https://arxiv.org/abs/2207.10062
     confidence: high
-  - id: af-ai-training-data-curation-2
+  - id: f2
+    statement: Dolma (Soldaini et al. 2024, Allen Institute for AI) is an open corpus of 3 trillion tokens for language model pretraining research, providing unprecedented transparency into training data.
+    source_title: "Soldaini, Luca, et al. Dolma: an Open Corpus of Three Trillion Tokens. AI2 2024"
+    source_url: https://arxiv.org/abs/2402.00159
+    confidence: high
+  - id: f3
     statement: >-
-      NVIDIA NeMo Curator processes 8+ trillion tokens for the Nemotron-4 dataset, using GPU-accelerated pipelines for deduplication, heuristic filtering, and classifier-based quality scoring. Data
-      curation is now recognized as equally important as model architecture.
-    source_title: NVIDIA NeMo Curator (2024)
+      Data quality dimensions for ML include accuracy, completeness, consistency, timeliness, and representativeness. The METRIC framework (Nature Digital Medicine 2024) provides a systematic approach
+      to assessing data quality for trustworthy AI.
+    source_title: Multiple authors. The METRIC-framework for assessing data quality for trustworthy AI. npj Digital Medicine 2024
+    source_url: https://doi.org/10.1038/s41746-024-01196-4
     confidence: high
 completeness: 0.9
 primary_sources:

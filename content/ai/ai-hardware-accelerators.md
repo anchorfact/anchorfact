@@ -15,17 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-ai-hardware-accelerators-1
+  - id: f1
     statement: >-
-      NVIDIA H100 (Hopper, 2022) delivers 1,979 TFLOPS (FP8) with 80GB HBM3. The B200 (Blackwell, 2024) doubles this to 4,500 TFLOPS (FP4) with 192GB HBM3e — providing 4x the training throughput of
-      H100 for large language models.
-    source_title: NVIDIA H100/B200 Whitepapers (2022-2024)
+      Google's TPU (Jouppi et al. 2017, ISCA) was the first domain-specific accelerator for neural network inference, using systolic arrays for matrix multiplication and achieving 15-30× better
+      performance/Watt than contemporary GPUs.
+    source_title: Jouppi, Norman P., et al. In-Datacenter Performance Analysis of a Tensor Processing Unit. ISCA 2017
+    source_url: https://doi.org/10.1145/3079856.3080246
     confidence: high
-  - id: af-ai-hardware-accelerators-2
+  - id: f2
     statement: >-
-      Cerebras WSE-3 (2024) is the largest chip ever built — 4 trillion transistors on a single wafer-scale chip with 900,000 AI cores and 44GB on-chip SRAM — designed to train models with trillions
-      of parameters without distributed computing complexity.
-    source_title: Cerebras WSE-3 Technical Brief (2024)
+      NVIDIA introduced Tensor Cores in Volta (2017) providing mixed-precision matrix multiply-accumulate, and has since evolved through Turing, Ampere, Hopper (H100), and Blackwell (B200)
+      architectures for DL acceleration.
+    source_title: "NVIDIA. Tensor Core Architecture: From Volta to Blackwell. 2017-2024"
+    source_url: https://www.nvidia.com/en-us/data-center/tensorcore/
+    confidence: high
+  - id: f3
+    statement: >-
+      Emerging memories (memristors, phase-change memory, STT-MRAM) promise in-memory computing for AI, potentially overcoming the von Neumann bottleneck. A 2024 Nature Review surveyed progress across
+      resistive RAM, PCM, and spintronic technologies.
+    source_title: Multiple authors. High-Speed Emerging Memories for AI Hardware Accelerators. Nature Reviews Electrical Engineering 2024
+    source_url: https://doi.org/10.1038/s44287-023-00002-9
     confidence: high
 completeness: 0.9
 primary_sources:

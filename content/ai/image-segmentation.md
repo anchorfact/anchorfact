@@ -15,17 +15,22 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-image-segmentation-1
+  - id: f1
     statement: >-
-      U-Net (Ronneberger et al., 2015), with its symmetric encoder-decoder and skip connections, became the dominant architecture for biomedical image segmentation, winning the ISBI cell tracking
-      challenge by a large margin.
-    source_title: Ronneberger et al., MICCAI (2015)
+      U-Net (Ronneberger et al. 2015) introduced a symmetric encoder-decoder with skip connections, becoming the de facto standard for biomedical image segmentation and winning multiple ISBI
+      challenges.
+    source_title: "Ronneberger, Olaf, Philipp Fischer, and Thomas Brox. U-Net: Convolutional Networks for Biomedical Image Segmentation. MICCAI 2015"
+    source_url: https://arxiv.org/abs/1505.04597
     confidence: high
-  - id: af-image-segmentation-2
-    statement: >-
-      Segment Anything Model (SAM, Kirillov et al., Meta AI, 2023) introduced promptable segmentation — a single model that can segment any object in any image given a point, box, or mask prompt.
-      Trained on the SA-1B dataset of 1.1 billion masks across 11 million images.
-    source_title: Kirillov et al., ICCV (2023)
+  - id: f2
+    statement: Segment Anything (SAM, Kirillov et al. 2023, Meta AI) introduced a promptable foundation model for segmentation that can segment any object in any image given a point, box, or mask prompt.
+    source_title: Kirillov, Alexander, et al. Segment Anything. ICCV 2023
+    source_url: https://arxiv.org/abs/2304.02643
+    confidence: high
+  - id: f3
+    statement: Mask R-CNN (He et al. 2017, Facebook AI) extended Faster R-CNN by adding a parallel mask prediction branch, enabling instance segmentation with minimal overhead and winning the COCO challenge.
+    source_title: He, Kaiming, et al. Mask R-CNN. ICCV 2017
+    source_url: https://arxiv.org/abs/1703.06870
     confidence: high
 completeness: 0.9
 known_gaps:

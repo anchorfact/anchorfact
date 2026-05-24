@@ -15,17 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-vision-transformers-1
+  - id: f1
     statement: >-
-      Vision Transformer (ViT, Dosovitskiy et al., Google, 2021) demonstrated that a pure Transformer applied directly to image patches can match or exceed CNN performance when trained on sufficient
-      data (ImageNet-21k or JFT-300M).
-    source_title: Dosovitskiy et al., ICLR (2021)
+      ViT (Dosovitskiy et al. 2021, Google) showed that a pure Transformer applied directly to sequences of image patches can outperform CNNs on image classification when pretrained on sufficient data
+      (JFT-300M).
+    source_title: "Dosovitskiy, Alexey, et al. An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale. ICLR 2021"
+    source_url: https://arxiv.org/abs/2010.11929
     confidence: high
-  - id: af-vision-transformers-2
+  - id: f2
     statement: >-
-      DINOv2 (Meta AI, 2023) trains self-supervised ViTs on 142M curated images, producing visual features that work across image classification, depth estimation, and semantic segmentation without
-      fine-tuning — matching task-specific models.
-    source_title: Oquab et al., DINOv2 (2023)
+      Swin Transformer (Liu et al. 2021, Microsoft, ICCV 2021 Best Paper) uses shifted window attention to build hierarchical feature maps with linear complexity, enabling ViTs as general-purpose
+      vision backbones.
+    source_title: "Liu, Ze, et al. Swin Transformer: Hierarchical Vision Transformer using Shifted Windows. ICCV 2021"
+    source_url: https://arxiv.org/abs/2103.14030
+    confidence: high
+  - id: f3
+    statement: >-
+      DINOv2 (Oquab et al. 2023, Meta AI) produces high-quality visual features through self-supervised pretraining, achieving strong performance across image classification, segmentation, and depth
+      estimation without fine-tuning.
+    source_title: "Oquab, Maxime, et al. DINOv2: Learning Robust Visual Features without Supervision. NeurIPS 2023"
+    source_url: https://arxiv.org/abs/2304.07193
     confidence: high
 completeness: 0.9
 primary_sources:

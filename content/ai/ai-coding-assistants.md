@@ -15,18 +15,25 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-ai-coding-assistants-1
+  - id: f1
     statement: >-
-      GitHub Copilot (2021) pioneered AI code completion, reaching 55% task completion time reduction in controlled studies. By 2026, it supports agent mode — autonomously writing, testing, and
-      debugging code across multiple files.
-    source_title: GitHub Copilot Research (2024)
+      GitHub Copilot (Peng et al. 2024, ACM CACM) significantly improved developer productivity — a controlled experiment found that developers using Copilot completed tasks 55.8% faster than those
+      without AI assistance.
+    source_title: "Peng, Sida, et al. The Impact of AI on Developer Productivity: Evidence from GitHub Copilot. ACM CACM 2024"
+    source_url: https://doi.org/10.1145/3643756
     confidence: high
-  - id: af-ai-coding-assistants-2
+  - id: f2
+    statement: Codex (Chen et al. 2021, OpenAI) demonstrated that LLMs fine-tuned on code can solve 28.8% of novel programming problems from docstrings, establishing the foundation for AI coding assistants.
+    source_title: Chen, Mark, et al. Evaluating Large Language Models Trained on Code. OpenAI 2021
+    source_url: https://arxiv.org/abs/2107.03374
+    confidence: high
+  - id: f3
     statement: >-
-      Claude Code (Anthropic, February 2025) achieves 77.2% on SWE-bench Verified, operating as a terminal-based agent that reads codebases, writes code, runs tests, and iterates autonomously —
-      representing the shift from copilots to autonomous coding agents.
-    source_title: Anthropic Claude Code Announcement (2025)
-    confidence: high
+      StarCoder2 (BigCode Project, 2024) provides a fully open-source, transparent code LLM trained on The Stack v2, enabling reproducible research on AI code generation with permissively licensed
+      training data.
+    source_title: Lozhkov, Anton, et al. StarCoder 2 and The Stack v2. BigCode Project 2024
+    source_url: https://arxiv.org/abs/2402.19173
+    confidence: medium
 completeness: 0.9
 known_gaps:
   - Autonomous agent safety in production codebases

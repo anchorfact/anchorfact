@@ -1,64 +1,63 @@
 ---
-id: "kb-2026-00001"
-title: "Transformer Architecture"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
+id: kb-2026-00001
+title: Transformer Architecture
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-22"
 created_date: "2026-05-22"
-generation_method: "human_only"
-conflict_of_interest: "none_declared"
+generation_method: human_only
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-transformer-001"
-    statement: "The Transformer architecture was introduced by Vaswani et al. from Google Brain / Google Research in the 2017 paper 'Attention Is All You Need'"
-    source_doi: "10.48550/arXiv.1706.03762"
-    confidence: "high"
-  - id: "fact-transformer-002"
-    statement: "As of May 2026, the paper has been cited over 140,000 times, making it one of the most cited papers in AI history"
-    source_url: "https://scholar.google.com/scholar?cites=..."
-    confidence: "high"
-  - id: "fact-transformer-003"
-    statement: "The base Transformer model achieved 28.4 BLEU on the WMT 2014 English-to-German translation task, setting a new state-of-the-art at the time of publication"
-    source_doi: "10.48550/arXiv.1706.03762"
-    confidence: "high"
-
+  - id: fact-transformer-001
+    statement: The Transformer architecture was introduced by Vaswani et al. from Google Brain / Google Research in the 2017 paper 'Attention Is All You Need'
+    confidence: high
+  - id: fact-transformer-002
+    statement: As of May 2026, the paper has been cited over 140,000 times, making it one of the most cited papers in AI history
+    source_url: https://scholar.google.com/scholar?cites=...
+    confidence: high
+  - id: fact-transformer-003
+    statement: The base Transformer model achieved 28.4 BLEU on the WMT 2014 English-to-German translation task, setting a new state-of-the-art at the time of publication
+    confidence: high
 completeness: 0.92
-
 known_gaps:
-  - "Citation count is Google Scholar estimate as of May 2026; exact count varies by database"
-
+  - Citation count is Google Scholar estimate as of May 2026; exact count varies by database
 disputed_statements:
-  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
-
+  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
 primary_sources:
-  - title: "Attention Is All You Need"
-    authors: ["Vaswani, Ashish", "Shazeer, Noam", "Parmar, Niki", "Uszkoreit, Jakob", "Jones, Llion", "Gomez, Aidan N.", "Kaiser, Lukasz", "Polosukhin, Illia"]
-    type: "academic_paper"
+  - title: Attention Is All You Need
+    authors:
+      - Vaswani, Ashish
+      - Shazeer, Noam
+      - Parmar, Niki
+      - Uszkoreit, Jakob
+      - Jones, Llion
+      - Gomez, Aidan N.
+      - Kaiser, Lukasz
+      - Polosukhin, Illia
+    type: academic_paper
     year: 2017
-    url: "https://arxiv.org/abs/1706.03762"
-    doi: "10.48550/arXiv.1706.03762"
-    institution: "Google Brain / Google Research"
-
+    url: https://arxiv.org/abs/1706.03762
+    doi: 10.48550/arXiv.1706.03762
+    institution: Google Brain / Google Research
 secondary_sources:
-  - title: "The Illustrated Transformer"
-    authors: ["Alammar, Jay"]
-    type: "blog_post"
+  - title: The Illustrated Transformer
+    authors:
+      - Alammar, Jay
+    type: blog_post
     year: 2018
-    url: "https://jalammar.github.io/illustrated-transformer/"
-    institution: "Github"
+    url: https://jalammar.github.io/illustrated-transformer/
+    institution: Github
   - title: "CS224n: NLP with Deep Learning — Lecture 9 (Transformers)"
-    type: "course_material"
+    type: course_material
     year: 2024
-    url: "https://web.stanford.edu/class/cs224n/"
-    institution: "Stanford University"
-
+    url: https://web.stanford.edu/class/cs224n/
+    institution: Stanford University
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 
 The Transformer is a neural network architecture based solely on attention mechanisms, introduced by Vaswani et al. from Google Brain in the 2017 NeurIPS paper "Attention Is All You Need." It replaced recurrence and convolution with multi-head self-attention, enabling fully parallel computation across input sequences. The base model achieved 28.4 BLEU on WMT 2014 English-to-German translation, setting a new state-of-the-art while requiring only 3.5 days of training on 8 NVIDIA P100 GPUs — a fraction of the training time of previous approaches. As of May 2026, the paper has been cited over 140,000 times and is the foundation of virtually all modern language models (BERT, GPT, LLaMA, Claude, Gemini).

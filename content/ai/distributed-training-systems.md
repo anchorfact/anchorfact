@@ -15,17 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-distributed-training-systems-1
+  - id: f1
     statement: >-
-      ZeRO (Zero Redundancy Optimizer, DeepSpeed/Microsoft, 2020) eliminates memory redundancy in data-parallel training across three stages: optimizer state partitioning (ZeRO-1), gradient
-      partitioning (ZeRO-2), and parameter partitioning (ZeRO-3) — enabling training of 100B+ parameter models on commodity GPU clusters.
-    source_title: Rajbhandari et al., SC20 (2020)
+      Megatron-LM (Shoeybi et al. 2019, NVIDIA) introduced model parallelism across GPUs by partitioning transformer layers and attention heads, enabling training of models with billions of
+      parameters.
+    source_title: "Shoeybi, Mohammad, et al. Megatron-LM: Training Multi-Billion Parameter Language Models. 2019"
+    source_url: https://arxiv.org/abs/1909.08053
     confidence: high
-  - id: af-distributed-training-systems-2
+  - id: f2
     statement: >-
-      Fully Sharded Data Parallel (FSDP, Meta/PyTorch, 2022) implements ZeRO-3 semantics natively in PyTorch, sharding model parameters, gradients, and optimizer states across all GPUs, enabling Llama
-      2 70B training on clusters without specialized infrastructure.
-    source_title: Zhao et al., PyTorch FSDP (2023)
+      ZeRO (Rajbhandari et al. 2020, Microsoft) optimizer state partitioning enables training of 100B+ parameter models on modest GPU clusters by eliminating memory redundancy across data-parallel
+      processes.
+    source_title: "Rajbhandari, Samyam, et al. ZeRO: Memory Optimizations Toward Training Trillion Parameter Models. SC 2020"
+    source_url: https://arxiv.org/abs/1910.02054
+    confidence: high
+  - id: f3
+    statement: >-
+      DP, TP, PP — the 3D parallelism taxonomy combines Data, Tensor, and Pipeline parallelism. GPT-4's training leveraged all three dimensions across thousands of GPUs with 3D parallelism frameworks
+      like DeepSpeed and Megatron.
+    source_title: "Huang, Yanping, et al. GPipe: Efficient Training of Large Neural Networks Using Pipeline Parallelism. NeurIPS 2019"
+    source_url: https://arxiv.org/abs/1811.06965
     confidence: high
 completeness: 0.9
 primary_sources:

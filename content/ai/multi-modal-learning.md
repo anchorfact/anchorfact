@@ -15,15 +15,24 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-multi-modal-learning-1
-    statement: Multi-modal learning integrates information from multiple sensory modalities — vision, language, audio, sensor data — exploiting complementary signals that no single modality provides alone.
-    source_title: Baltrušaitis et al., TPAMI (2019)
-    confidence: high
-  - id: af-multi-modal-learning-2
+  - id: f1
     statement: >-
-      Vision-language models (VLMs) like GPT-4V, Gemini, and LLaVA combine visual encoders with language models, enabling tasks like image captioning, visual question answering, and multimodal
-      reasoning from pixel inputs.
-    source_title: Liu et al., LLaVA (2023) / OpenAI GPT-4V (2023)
+      CLIP (Radford et al. 2021, OpenAI) learns joint image-text representations via contrastive pretraining on 400M web-crawled pairs, demonstrating zero-shot transfer to 30+ vision tasks without
+      task-specific training.
+    source_title: Radford, Alec, et al. Learning Transferable Visual Models From Natural Language Supervision. ICML 2021
+    source_url: https://arxiv.org/abs/2103.00020
+    confidence: high
+  - id: f2
+    statement: GPT-4V(ision) (OpenAI 2023) is a multimodal model that accepts image and text inputs, producing text outputs with visual understanding capabilities competitive with task-specific vision models.
+    source_title: OpenAI. GPT-4V(ision) System Card. 2023
+    source_url: https://openai.com/research/gpt-4v-system-card
+    confidence: high
+  - id: f3
+    statement: >-
+      Flamingo (Alayrac et al. 2022, DeepMind) demonstrated few-shot visual understanding by interleaving pretrained vision and language models with perceiver resamplers, achieving state-of-the-art on
+      16 multi-modal benchmarks.
+    source_title: "Alayrac, Jean-Baptiste, et al. Flamingo: a Visual Language Model for Few-Shot Learning. NeurIPS 2022"
+    source_url: https://arxiv.org/abs/2204.14198
     confidence: high
 completeness: 0.9
 known_gaps:

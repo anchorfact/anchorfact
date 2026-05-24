@@ -15,14 +15,32 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-activation-functions-1
-    statement: ReLU (Rectified Linear Unit, f(x)=max(0,x)), proposed by Nair and Hinton (2010), is the default activation for hidden layers in modern neural networks because its constant gradient (1 for x>0) avoids vanishing gradients.
-    source_title: Nair & Hinton, ICML (2010)
+  - id: fact-af-1
+    statement: >-
+      ReLU (Rectified Linear Unit) is the most widely used activation function in deep learning, addressing the vanishing gradient problem by outputting max(0,x). Introduced by Nair & Hinton (2010)
+      and popularized by Krizhevsky et al. (2012) in AlexNet.
+    source_title: Nair, Vinod, and Geoffrey E. Hinton. Rectified Linear Units Improve Restricted Boltzmann Machines. ICML 2010
+    source_url: https://www.cs.toronto.edu/~hinton/absps/reluICML.pdf
     confidence: high
-  - id: af-activation-functions-2
-    statement: GELU (Gaussian Error Linear Unit), used in GPT and BERT, weights inputs by their cumulative Gaussian probability rather than thresholding at zero, providing smoother gradients than ReLU.
-    source_title: Hendrycks & Gimpel, arXiv (2016)
+  - id: fact-af-2
+    statement: >-
+      GELU (Gaussian Error Linear Unit), introduced by Hendrycks & Gimpel (2016/2020), is the default activation in BERT and GPT models. It weights inputs by their value rather than gating them by
+      sign like ReLU.
+    source_title: Hendrycks, Dan, and Kevin Gimpel. Gaussian Error Linear Units (GELUs). arXiv 2016
+    source_url: https://arxiv.org/abs/1606.08415
     confidence: high
+  - id: fact-af-3
+    statement: Swish activation (x·σ(x)), discovered by automated search at Google Brain (Ramachandran et al. 2017), consistently outperforms ReLU on deep networks including ImageNet classification.
+    source_title: Ramachandran, Prajit, Barret Zoph, and Quoc V. Le. Searching for Activation Functions. ICLR 2018
+    source_url: https://arxiv.org/abs/1710.05941
+    confidence: high
+  - id: fact-af-4
+    statement: >-
+      Softmax is the standard output activation for multi-class classification, converting logits to probabilities. It is a core component of the attention mechanism in Transformers (Vaswani et al.
+      2017).
+    source_title: Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. Deep Learning (Chapter 6.2). MIT Press 2016
+    source_url: https://www.deeplearningbook.org/contents/mlp.html
+    confidence: medium
 completeness: 0.9
 known_gaps:
   - Learnable activation functions (PReLU, Swish)
@@ -76,9 +94,8 @@ secondary_sources:
       - Courville, Aaron
     institution: MIT Press
     url: https://www.deeplearningbook.org/
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 Activation functions introduce non-linearity into neural networks, enabling them to approximate any function. ReLU dominates hidden layers; softmax is standard for classification outputs.
 

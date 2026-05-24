@@ -15,17 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-model-compression-1
+  - id: f1
     statement: >-
-      Quantization reduces model size by representing weights and activations with fewer bits — INT8 quantization reduces model size by 4x compared to FP32 with minimal accuracy loss (<0.5%) when
-      using calibration and per-channel scaling.
-    source_title: Nagel et al., JMLR (2021)
+      Knowledge Distillation (Hinton, Vinyals, Dean 2015, Google) transfers knowledge from a large teacher model to a smaller student by training on soft targets (probability distributions) rather
+      than hard labels.
+    source_title: Hinton, Geoffrey, Oriol Vinyals, and Jeff Dean. Distilling the Knowledge in a Neural Network. NeurIPS Workshop 2015
+    source_url: https://arxiv.org/abs/1503.02531
     confidence: high
-  - id: af-model-compression-2
+  - id: f2
     statement: >-
-      Lottery Ticket Hypothesis (Frankle & Carbin, 2019): dense, randomly-initialized networks contain sparse subnetworks ("winning tickets") that, when trained in isolation, can match the full
+      The Lottery Ticket Hypothesis (Frankle & Carbin 2019, MIT) showed that dense, randomly-initialized networks contain sparse subnetworks that can be trained in isolation to match the full
       network's accuracy.
-    source_title: Frankle & Carbin, ICLR (2019)
+    source_title: Frankle, Jonathan, and Michael Carbin. The Lottery Ticket Hypothesis. ICLR 2019 Best Paper
+    source_url: https://arxiv.org/abs/1803.03635
+    confidence: high
+  - id: f3
+    statement: >-
+      Deep Compression (Han et al. 2016, Stanford/NVIDIA) combined pruning, trained quantization, and Huffman coding to reduce model size by 35-49× without accuracy loss, establishing the compression
+      pipeline used in TinyML.
+    source_title: Han, Song, Huizi Mao, and William J. Dally. Deep Compression. ICLR 2016
+    source_url: https://arxiv.org/abs/1510.00149
     confidence: high
 completeness: 0.9
 known_gaps:

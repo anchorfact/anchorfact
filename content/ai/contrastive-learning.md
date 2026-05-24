@@ -15,17 +15,24 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-contrastive-learning-1
+  - id: fact-cl-1
     statement: >-
-      CLIP (Radford et al., OpenAI, 2021) trains on 400 million image-text pairs to learn joint visual-linguistic representations, achieving zero-shot classification that matches supervised ResNet-50
-      on ImageNet without any ImageNet training data.
-    source_title: Radford et al., ICML (2021)
+      SimCLR (Chen et al. 2020) demonstrated that a simple framework combining data augmentation, a learnable nonlinear projection head, and contrastive loss can achieve state-of-the-art
+      self-supervised visual representations.
+    source_title: Chen, Ting, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton. A Simple Framework for Contrastive Learning of Visual Representations. ICML 2020
+    source_url: https://arxiv.org/abs/2002.05709
     confidence: high
-  - id: af-contrastive-learning-2
+  - id: fact-cl-2
+    statement: MoCo (He et al. 2020) maintains a dynamic dictionary with a queue and a moving-averaged encoder, enabling contrastive learning with large and consistent negative sample sets.
+    source_title: He, Kaiming, Haoqi Fan, Yuxin Wu, Saining Xie, and Ross Girshick. Momentum Contrast for Unsupervised Visual Representation Learning. CVPR 2020
+    source_url: https://arxiv.org/abs/1911.05722
+    confidence: high
+  - id: fact-cl-3
     statement: >-
-      MoCo (Momentum Contrast, He et al., 2020) maintains a dynamic dictionary as a queue of encoded representations, decoupling dictionary size from batch size — enabling contrastive learning on
-      commodity hardware.
-    source_title: He et al., CVPR (2020)
+      BYOL (Grill et al. 2020, DeepMind) showed that contrastive learning can work without negative pairs, using a target network updated via exponential moving average to avoid representational
+      collapse.
+    source_title: Grill, Jean-Bastien, et al. Bootstrap Your Own Latent. NeurIPS 2020
+    source_url: https://arxiv.org/abs/2006.07733
     confidence: high
 completeness: 0.9
 known_gaps:

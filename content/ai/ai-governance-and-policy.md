@@ -15,17 +15,22 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-ai-governance-and-policy-1
+  - id: f1
     statement: >-
-      The NIST AI Risk Management Framework (AI RMF 1.0, 2023) provides a voluntary taxonomy for managing AI risks across four functions: Govern, Map, Measure, Manage. It has been adopted by the US
-      government and referenced in the White House Executive Order on AI.
-    source_title: NIST AI RMF 1.0 (2023)
+      The EU AI Act (Regulation 2024/1689) is the world's first comprehensive AI regulatory framework, using a risk-based approach: unacceptable risk (banned), high-risk (strict compliance), limited
+      risk (transparency), minimal risk (no regulation).
+    source_title: "European Union. Regulation (EU) 2024/1689: The Artificial Intelligence Act. 2024"
+    source_url: https://artificialintelligenceact.eu/
     confidence: high
-  - id: af-ai-governance-and-policy-2
-    statement: >-
-      The Bletchley Declaration (November 2023), signed by 28 countries including US, China, and EU, established the first international consensus on frontier AI safety — agreeing to collaborate on
-      risk assessment and convening regular AI Safety Summits (Seoul 2024, Paris 2025).
-    source_title: UK Government, Bletchley Declaration (2023)
+  - id: f2
+    statement: The US Executive Order on AI (October 2023) required developers of powerful AI systems to share safety test results with the government, while NIST developed the AI Risk Management Framework.
+    source_title: NIST. AI Risk Management Framework 1.0. 2023-2024
+    source_url: https://www.nist.gov/itl/ai-risk-management-framework
+    confidence: high
+  - id: f3
+    statement: The Bletchley Declaration (2023, UK AI Safety Summit) was the first international agreement on frontier AI safety, signed by 28 countries including the US, UK, EU, and China.
+    source_title: UK Government. The Bletchley Declaration on Frontier AI Safety. 2023
+    source_url: https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration
     confidence: high
 completeness: 0.9
 primary_sources:

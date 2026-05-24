@@ -15,17 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-ai-video-generation-1
+  - id: f1
     statement: >-
-      OpenAI Sora (February 2024) demonstrated text-to-video generation with up to 60-second coherent clips using a diffusion transformer architecture, sparking the 2024-2025 wave of AI video
-      generation tools.
-    source_title: OpenAI Sora Technical Report (2024)
+      Sora (OpenAI 2024) generates up to 1-minute videos from text prompts using a diffusion transformer architecture, demonstrating emergent 3D consistency, object permanence, and world simulation
+      capabilities.
+    source_title: OpenAI. Video Generation Models as World Simulators (Sora). 2024
+    source_url: https://openai.com/research/video-generation-models-as-world-simulators
     confidence: high
-  - id: af-ai-video-generation-2
+  - id: f2
     statement: >-
-      Google Veo 3 (2025) and Runway Gen-3 Alpha established commercial AI video generation, with Veo 3 supporting 1080p 60fps real-time rendering and Runway Gen-4 achieving professional film-quality
-      outputs.
-    source_title: Google DeepMind Veo / Runway Research (2025)
+      Runway Gen-3 Alpha (2024) and Kling (Kuaishou 2024) represent the commercial frontier of text-to-video generation, producing cinematic-quality video with fine-grained control over motion,
+      lighting, and camera angles.
+    source_title: "Runway Research. Gen-3 Alpha: High-Fidelity Controllable Video Generation. 2024"
+    source_url: https://runwayml.com/research/
+    confidence: high
+  - id: f3
+    statement: >-
+      Video diffusion models (Ho et al. 2022, Google) extend image diffusion to the temporal dimension with 3D U-Net architectures, enabling both unconditional and text-conditioned video generation
+      from noise.
+    source_title: "Ho, Jonathan, et al. Imagen Video: High Definition Video Generation with Diffusion Models. Google 2022"
+    source_url: https://arxiv.org/abs/2204.03458
     confidence: high
 completeness: 0.9
 known_gaps:

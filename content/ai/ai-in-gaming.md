@@ -15,18 +15,23 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-ai-in-gaming-1
-    statement: >-
-      DeepMind's AlphaStar achieved Grandmaster level in StarCraft II (2019), defeating 99.8% of human players. It combined supervised imitation learning from human replays with multi-agent
-      reinforcement learning where copies of the agent competed in a league.
-    source_title: Vinyals et al., Nature (2019)
+  - id: f1
+    statement: AlphaGo (Silver et al. 2016, DeepMind, Nature) defeated world champion Lee Sedol by combining deep neural networks with Monte Carlo tree search, marking a landmark achievement in AI.
+    source_title: Silver, David, et al. Mastering the Game of Go with Deep Neural Networks and Tree Search. Nature 529:484-489, 2016
+    source_url: https://www.nature.com/articles/nature16961
     confidence: high
-  - id: af-ai-in-gaming-2
+  - id: f2
     statement: >-
-      AI-driven NPCs using reinforcement learning can produce emergent, non-scripted behavior — enemies that learn to flank, teammates that adapt to player strategies — creating more engaging and
-      replayable game experiences than traditional finite-state machines.
-    source_title: Unity ML-Agents / Game AI Research (2024)
+      AlphaZero (Silver et al. 2018, DeepMind, Science) achieved superhuman performance in Chess, Shogi, and Go using only self-play reinforcement learning — learning from scratch without human game
+      data.
+    source_title: Silver, David, et al. A General Reinforcement Learning Algorithm that Masters Chess, Shogi, and Go through Self-Play. Science 362:1140-1144, 2018
+    source_url: https://doi.org/10.1126/science.aar6404
     confidence: high
+  - id: f3
+    statement: NVIDIA ACE (Avatar Cloud Engine) introduces AI-powered non-player characters (NPCs) with real-time dialogue, emotion, and animation generation, transforming interactive storytelling in games.
+    source_title: "NVIDIA Corporation. NVIDIA ACE: AI-Powered Digital Humans for Gaming. 2024"
+    source_url: https://developer.nvidia.com/ace
+    confidence: medium
 completeness: 0.9
 primary_sources:
   - title: Grandmaster level in StarCraft II using multi-agent reinforcement learning (AlphaStar)

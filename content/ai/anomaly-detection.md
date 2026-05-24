@@ -15,16 +15,25 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-anomaly-detection-1
+  - id: fact-ad-1
     statement: >-
-      Isolation Forest (Liu et al., 2008) detects anomalies by randomly partitioning data — anomalies require fewer splits to isolate than normal points, achieving linear time complexity O(n) unlike
-      distance-based methods.
-    source_title: Liu et al., ICDM (2008)
+      Anomaly detection identifies data points that deviate significantly from the majority. Deep learning methods include autoencoder-based reconstruction error, GAN-based novelty detection, and
+      one-class classification.
+    source_title: "Pang, Guansong, et al. Deep Learning for Anomaly Detection: A Comprehensive Review. ACM Computing Surveys 54(2):1-38, 2021"
+    source_url: https://doi.org/10.1145/3439950
     confidence: high
-  - id: af-anomaly-detection-2
-    statement: "Autoencoder-based anomaly detection uses reconstruction error as the anomaly score: normal patterns are reconstructed well (low error); anomalies deviate from learned manifold (high error)."
-    source_title: An & Cho, SDM (2015)
+  - id: fact-ad-2
+    statement: >-
+      Isolation Forest (Liu et al. 2008) isolates anomalies using random recursive partitioning — anomalies require fewer splits to isolate, making it efficient for high-dimensional data without
+      density estimation.
+    source_title: Liu, Fei Tony, Kai Ming Ting, and Zhi-Hua Zhou. Isolation Forest. ICDM 2008
+    source_url: https://doi.org/10.1109/ICDM.2008.17
     confidence: high
+  - id: fact-ad-3
+    statement: Self-supervised anomaly detection uses pretext tasks (rotation prediction, jigsaw puzzles, contrastive learning) to learn normal representations; anomalies deviate in the learned feature space.
+    source_title: "Tack, Jihoon, et al. CSI: Novelty Detection via Contrastive Learning on Distributionally Shifted Instances. NeurIPS 2020"
+    source_url: https://arxiv.org/abs/2007.08176
+    confidence: medium
 completeness: 0.9
 known_gaps:
   - Online anomaly detection in streaming data

@@ -1,15 +1,22 @@
 ---
 atomic_facts:
-  - confidence: high
-    id: fact-ai-01
-    source_title: Deep Learning (Goodfellow, Bengio, Courville)
-    source_url: https://www.deeplearningbook.org/
-    statement: "Autoencoders are unsupervised neural networks that learn compressed representations by reconstructing input: Encoder → compressed latent space → Decoder → reconstruction"
-  - confidence: high
-    id: fact-ai-02
-    source_title: Deep Learning (Goodfellow, Bengio, Courville)
-    source_url: https://www.deeplearningbook.org/
-    statement: They learn the most salient features by forcing data through a bottleneck
+  - id: f1
+    statement: >-
+      Variational Autoencoders (Kingma & Welling 2014) learn a probabilistic latent space by maximizing the Evidence Lower Bound (ELBO), enabling both reconstruction and generation from continuous
+      latent representations.
+    source_title: Kingma, Diederik P., and Max Welling. Auto-Encoding Variational Bayes. ICLR 2014
+    source_url: https://arxiv.org/abs/1312.6114
+    confidence: high
+  - id: f2
+    statement: Hinton & Salakhutdinov (2006, Science) demonstrated that deep autoencoders could learn low-dimensional representations by pretraining layer by layer, sparking the deep learning renaissance.
+    source_title: Hinton, Geoffrey E., and Ruslan R. Salakhutdinov. Reducing the Dimensionality of Data with Neural Networks. Science 313(5786):504-507, 2006
+    source_url: https://doi.org/10.1126/science.1127647
+    confidence: high
+  - id: f3
+    statement: Denoising autoencoders (Vincent et al. 2008) learn robust representations by reconstructing clean inputs from corrupted versions, forcing the model to capture the underlying data manifold.
+    source_title: Vincent, Pascal, et al. Extracting and Composing Robust Features with Denoising Autoencoders. ICML 2008
+    source_url: https://doi.org/10.1145/1390156.1390294
+    confidence: high
 category: ai
 completeness: 0.88
 confidence: high

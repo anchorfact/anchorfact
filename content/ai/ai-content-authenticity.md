@@ -15,17 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-ai-content-authenticity-1
+  - id: f1
     statement: >-
-      Statistical watermarking for LLMs (Kirchenbauer et al., 2023) biases token selection toward a "green list" determined by a hash of previous tokens — detectable with high confidence while
-      maintaining text quality. Google DeepMind's SynthID-text (Nature, 2024) scaled this to production, tested via 20 million real chatbot interactions.
-    source_title: Kirchenbauer et al., ICML (2023) / SynthID-text, Nature (2024)
+      C2PA (Coalition for Content Provenance and Authenticity, founded by Adobe/Microsoft/Intel/BBC) provides an open technical standard for cryptographically binding provenance metadata to digital
+      content.
+    source_title: "C2PA. Content Credentials: Technical Specification v1.4. Adobe, Microsoft, Intel, BBC, Arm. 2024"
+    source_url: https://c2pa.org/specifications/
     confidence: high
-  - id: af-ai-content-authenticity-2
+  - id: f2
     statement: >-
-      The C2PA (Coalition for Content Provenance and Authenticity) standard — backed by Adobe, Microsoft, Intel, and the BBC — cryptographically signs content metadata (camera model, editing history)
-      to establish provenance chains from capture to publication.
-    source_title: C2PA Specification v2.1 (2024)
+      SynthID (Google DeepMind 2024) embeds imperceptible digital watermarks into AI-generated images, audio, and text that persist through editing and compression, enabling reliable AI content
+      identification.
+    source_title: "Google DeepMind. SynthID: Identifying AI-Generated Content. 2024"
+    source_url: https://deepmind.google/technologies/synthid/
+    confidence: high
+  - id: f3
+    statement: >-
+      Deepfake detection has evolved from handcrafted features to deep learning-based detectors, but remains a cat-and-mouse game as generation techniques (GANs, diffusion models) improve. The field
+      increasingly focuses on provenance rather than detection alone.
+    source_title: "Pei, Gan, et al. Deepfake Generation and Detection: A Comprehensive Benchmark and Survey. 2024"
+    source_url: https://arxiv.org/abs/2403.17881
     confidence: high
 completeness: 0.9
 primary_sources:

@@ -15,17 +15,27 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-attention-mechanisms-deep-dive-1
-    statement: >-
-      Scaled dot-product attention computes Attention(Q,K,V) = softmax(QK^T/√d_k)V, where the scaling factor √d_k prevents dot products from growing too large, maintaining stable softmax gradients
-      (Vaswani et al., 2017).
-    source_title: Vaswani et al., NeurIPS (2017)
+  - id: fact-attn-1
+    statement: Scaled Dot-Product Attention computes Attention(Q,K,V) = softmax(QK^T/√d_k)V, where the scaling factor √d_k prevents the dot products from growing too large in magnitude.
+    source_title: Vaswani, Ashish, et al. Attention Is All You Need. NeurIPS 2017
+    source_url: https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
     confidence: high
-  - id: af-attention-mechanisms-deep-dive-2
+  - id: fact-attn-2
+    statement: Multi-Head Attention runs multiple attention operations in parallel, allowing the model to jointly attend to information from different representation subspaces at different positions.
+    source_title: Vaswani, Ashish, et al. Attention Is All You Need. NeurIPS 2017
+    source_url: https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
+    confidence: high
+  - id: fact-attn-3
+    statement: FlashAttention (Dao et al. 2022) reduces the memory footprint of attention from O(N²) to O(N) through IO-aware tiling and recomputation, enabling training on longer sequences.
+    source_title: "Dao, Tri, et al. FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness. NeurIPS 2022"
+    source_url: https://arxiv.org/abs/2205.14135
+    confidence: high
+  - id: fact-attn-4
     statement: >-
-      FlashAttention-3 (2024) achieves up to 740 TFLOPS on H100 GPUs by leveraging asynchronous processing, warp-group matrix multiply-accumulate, and interleaved block-wise computation — a 75%
-      speedup over optimized standard attention.
-    source_title: Shah et al., FlashAttention-3 (2024)
+      Self-attention computes attention where Q, K, V all come from the same sequence (encoder). Cross-attention computes attention where Q comes from one sequence and K, V from another
+      (decoder-encoder).
+    source_title: Bahdanau, Dzmitry, Kyunghyun Cho, and Yoshua Bengio. Neural Machine Translation by Jointly Learning to Align and Translate. ICLR 2015
+    source_url: https://arxiv.org/abs/1409.0473
     confidence: high
 completeness: 0.9
 primary_sources:

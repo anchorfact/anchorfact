@@ -15,17 +15,24 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-ai-art-and-creativity-1
-    statement: >-
-      GANs (Generative Adversarial Networks, Goodfellow et al., 2014) pit a generator against a discriminator in a minimax game. StyleGAN (Karras et al., 2019) enabled fine-grained control over
-      generated image attributes — widely used in AI art creation.
-    source_title: Goodfellow et al., NeurIPS (2014) / Karras et al., CVPR (2019)
+  - id: f1
+    statement: Neural Style Transfer (Gatys et al. 2016) demonstrated that CNNs can separate and recombine the content and style of images, enabling artistic creation through AI.
+    source_title: Gatys, Leon A., Alexander S. Ecker, and Matthias Bethge. A Neural Algorithm of Artistic Style. CVPR 2016
+    source_url: https://arxiv.org/abs/1508.06576
     confidence: high
-  - id: af-ai-art-and-creativity-2
+  - id: f2
     statement: >-
-      The US Copyright Office (2023) ruled that AI-generated images without sufficient human creative input cannot be copyrighted. However, works combining human creativity with AI assistance (e.g.,
-      detailed prompts, post-processing, curation) may qualify for protection.
-    source_title: US Copyright Office Policy Statement (2023)
+      DALL-E 2/3 (Ramesh et al. 2022, OpenAI) demonstrated that diffusion models can generate highly realistic and creative images from natural language descriptions, democratizing visual content
+      creation.
+    source_title: Ramesh, Aditya, et al. Hierarchical Text-Conditional Image Generation with CLIP Latents. NeurIPS 2022
+    source_url: https://arxiv.org/abs/2204.06125
+    confidence: high
+  - id: f3
+    statement: >-
+      StyleGAN (Karras et al. 2019, NVIDIA) introduced a generator architecture that enables scale-specific control of image synthesis, producing photorealistic faces and enabling fine-grained style
+      mixing.
+    source_title: Karras, Tero, Samuli Laine, and Timo Aila. A Style-Based Generator Architecture for GANs. CVPR 2019
+    source_url: https://arxiv.org/abs/1812.04948
     confidence: high
 completeness: 0.9
 primary_sources:

@@ -15,13 +15,24 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-dropout-and-regularization-1
-    statement: Dropout (Srivastava et al., 2014) randomly drops neurons with probability p during training, forcing the network to learn redundant representations. At test time, all neurons are used with scaled weights, effectively averaging an ensemble of thinned networks.
-    source_title: Srivastava et al., JMLR (2014)
+  - id: fact-do-1
+    statement: >-
+      Dropout (Srivastava et al. 2014, Hinton group) randomly drops neurons during training, preventing co-adaptation and acting as an ensemble of exponentially many subnetworks. It remains a standard
+      regularizer in most architectures.
+    source_title: "Srivastava, Nitish, Geoffrey Hinton, et al. Dropout: A Simple Way to Prevent Neural Networks from Overfitting. JMLR 15:1929-1958, 2014"
+    source_url: https://jmlr.org/papers/v15/srivastava14a.html
     confidence: high
-  - id: af-dropout-and-regularization-2
-    statement: L1 regularization (Lasso) adds |w| penalty, driving weights to exactly zero for automatic feature selection. L2 regularization (Ridge) adds w² penalty, shrinking all weights toward zero but rarely to exactly zero.
-    source_title: Tibshirani, JRSS (1996) / Hoerl & Kennard (1970)
+  - id: fact-do-2
+    statement: L1 regularization adds |w| to the loss, encouraging sparse weights. L2 adds w², encouraging small weights. Elastic Net (Zou & Hastie 2005) combines both for correlated feature selection.
+    source_title: Zou, Hui, and Trevor Hastie. Regularization and Variable Selection via the Elastic Net. JRSS-B 67:301-320, 2005
+    source_url: https://doi.org/10.1111/j.1467-9868.2005.00503.x
+    confidence: high
+  - id: fact-do-3
+    statement: >-
+      Batch Normalization (Ioffe & Szegedy 2015, Google) normalizes layer inputs, enabling higher learning rates, reducing sensitivity to initialization, and itself providing a mild regularizing
+      effect.
+    source_title: "Ioffe, Sergey, and Christian Szegedy. Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift. ICML 2015"
+    source_url: https://arxiv.org/abs/1502.03167
     confidence: high
 completeness: 0.9
 known_gaps:
@@ -77,9 +88,8 @@ secondary_sources:
       - Cremers, Daniel
     institution: Technical University of Munich
     url: https://arxiv.org/abs/1710.10686
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 Regularization prevents neural networks from memorizing training data instead of learning generalizable patterns. Dropout, weight decay, data augmentation, and early stopping are the primary techniques.
 

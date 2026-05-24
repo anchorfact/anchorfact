@@ -15,17 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-edge-ai-and-tinyml-1
+  - id: fact-tml-1
     statement: >-
-      TinyML — machine learning on microcontrollers using <1mW power — enables always-on inference on devices like Arduino and Cortex-M processors. TensorFlow Lite Micro and Edge Impulse are the
-      leading frameworks.
-    source_title: Warden & Situnayake, TinyML (2019)
+      TinyML enables on-device ML inference on microcontrollers with <1mW power, using model compression techniques like quantization, pruning, and knowledge distillation to fit models in KB of
+      memory.
+    source_title: "Warden, Pete, and Daniel Situnayake. TinyML: Machine Learning with TensorFlow Lite. O'Reilly Media 2020"
+    source_url: https://www.oreilly.com/library/view/tinyml/9781492052036/
     confidence: high
-  - id: af-edge-ai-and-tinyml-2
+  - id: fact-tml-2
     statement: >-
-      MobileNet (Howard et al., 2017) uses depthwise separable convolutions — splitting standard convolution into depthwise (spatial filtering per channel) and pointwise (1x1 cross-channel
-      combination) — reducing computation by 8-9x for mobile vision tasks.
-    source_title: Howard et al., arXiv (2017)
+      MobileNets (Howard et al. 2017, Google) introduced depthwise separable convolutions, achieving comparable accuracy to standard CNNs with 8-9× fewer parameters, enabling vision AI on mobile
+      devices.
+    source_title: "Howard, Andrew G., et al. MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications. 2017"
+    source_url: https://arxiv.org/abs/1704.04861
+    confidence: high
+  - id: fact-tml-3
+    statement: >-
+      Federated Learning (McMahan et al. 2017, Google) trains models across decentralized edge devices without centralizing raw data, addressing both privacy and bandwidth constraints in edge AI
+      deployments.
+    source_title: McMahan, Brendan, et al. Communication-Efficient Learning of Deep Networks from Decentralized Data. AISTATS 2017
+    source_url: https://arxiv.org/abs/1602.05629
     confidence: high
 completeness: 0.9
 known_gaps:

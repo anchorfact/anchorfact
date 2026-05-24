@@ -15,17 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-synthetic-data-training-1
+  - id: f1
     statement: >-
-      Synthetic data — artificially generated training examples from AI models — has become a mainstream training technique, with models like Phi-4 (Microsoft, 2024) trained primarily on synthetic
-      data achieving competitive benchmark scores against models trained on 10x more web data.
-    source_title: Microsoft Phi-4 Technical Report (2024)
+      Phi-1 (Gunasekar et al. 2023, Microsoft, "Textbooks Are All You Need") showed that a 1.3B parameter model trained on high-quality synthetic textbook data can achieve coding performance
+      competitive with models 10× larger.
+    source_title: Gunasekar, Suriya, et al. Textbooks Are All You Need. NeurIPS 2023
+    source_url: https://arxiv.org/abs/2306.11644
     confidence: high
-  - id: af-synthetic-data-training-2
+  - id: f2
     statement: >-
-      The "model collapse" problem (Shumailov et al., Nature, 2024) demonstrates that recursively training on AI-generated data causes models to lose diversity and amplify errors over generations,
-      requiring careful synthetic data curation strategies.
-    source_title: Shumailov et al., Nature (2024)
+      Phi-3 (Abdin et al. 2024, Microsoft) is a 3.8B model that achieves GPT-3.5-level performance by training on heavily filtered and synthetic data, demonstrating that data quality trumps data
+      quantity.
+    source_title: "Abdin, Marah, et al. Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone. Microsoft 2024"
+    source_url: https://arxiv.org/abs/2404.14219
+    confidence: high
+  - id: f3
+    statement: >-
+      Synthetic data privacy risks include memorization and unintended leakage. Best practices (DeepMind 2024) recommend differential privacy guarantees, careful prompt engineering, and thorough
+      decontamination against evaluation sets.
+    source_title: Google DeepMind. Best Practices and Lessons Learned on Synthetic Data for Language Models. 2024
+    source_url: https://arxiv.org/abs/2404.07503
     confidence: high
 completeness: 0.9
 known_gaps:

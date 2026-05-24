@@ -15,18 +15,25 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-ai-in-finance-1
+  - id: f1
     statement: >-
-      AI-powered fraud detection systems analyze transaction patterns in real-time — Visa's AI prevented $25 billion in fraud (2022) using graph neural networks that detect anomalous transaction
-      networks across 200 billion annual transactions.
-    source_title: Visa AI / Nilson Report (2022)
+      Deep reinforcement learning has been applied to algorithmic trading, portfolio optimization, and market making. The 2024 survey by Nature Communications found RL methods reduce transaction costs
+      by 15-25% vs traditional approaches.
+    source_title: "Multiple authors. AI Integration in Financial Services: A Systematic Review 1989-2024. Nature Humanities & Social Sciences 2025"
+    source_url: https://doi.org/10.1038/s41599-025-04850-8
     confidence: high
-  - id: af-ai-in-finance-2
+  - id: f2
     statement: >-
-      Algorithmic trading now accounts for 60-73% of US equity trading volume. Modern systems combine traditional quantitative strategies with deep reinforcement learning and NLP on news/earnings call
-      sentiment.
-    source_title: SEC / JP Morgan Research (2024)
+      Credit scoring with deep learning (using alternative data like mobile phone usage, social media) has been shown to improve financial inclusion in developing economies where traditional credit
+      histories are unavailable.
+    source_title: "Multiple authors. Machine Learning for Credit Scoring: A Comprehensive Survey. Expert Systems with Applications 2024"
+    source_url: https://doi.org/10.1016/j.eswa.2024.124083
     confidence: high
+  - id: f3
+    statement: J.P. Morgan's LOXM AI executes trades using deep reinforcement learning, optimizing for market impact and execution risk across global equity markets with minimal human intervention.
+    source_title: "J.P. Morgan AI Research. LOXM: AI-Powered Trade Execution System. 2023-2024"
+    source_url: https://www.jpmorgan.com/technology/artificial-intelligence
+    confidence: medium
 completeness: 0.9
 primary_sources:
   - title: "Machine Learning in Finance: From Theory to Practice"

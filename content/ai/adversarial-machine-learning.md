@@ -16,15 +16,24 @@ is_live_document: false
 data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: af-adversarial-machine-learning-1
-    statement: NIST AI 100-2e3 (April 2025) published the authoritative taxonomy of adversarial ML — classifying attacks into evasion (inference-time, e.g., adversarial patches on stop signs), poisoning (training-time data corruption), and privacy (model inversion, membership inference), with detailed defense matrices for each category.
-    source_title: NIST AI 100-2e3 (April 2025) — Adversarial Machine Learning Taxonomy
-    source_url: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2025.pdf
+  - id: fact-aml-1
+    statement: FGSM (Goodfellow et al. 2015) generates adversarial examples by adding ε·sign(∇_x L(x,y)) to input, demonstrating that imperceptible perturbations can cause high-confidence misclassification.
+    source_title: Goodfellow, Ian J., Jonathon Shlens, and Christian Szegedy. Explaining and Harnessing Adversarial Examples. ICLR 2015
+    source_url: https://arxiv.org/abs/1412.6572
     confidence: high
-  - id: af-adversarial-machine-learning-2
-    statement: A 2025 systematic review of 150+ peer-reviewed papers found that adversarial training (injecting adversarial examples into training data) remains the most effective general defense — improving robustness by 30-60% against white-box attacks — but at the cost of 5-10% degradation on clean data accuracy (the robustness-accuracy trade-off).
-    source_title: AML Survey, Neurocomputing (March 2026) / AML Methods & Tools (2025)
-    source_url: https://www.sciencedirect.com/science/article/pii/S0925231226000676
+  - id: fact-aml-2
+    statement: >-
+      PGD (Madry et al. 2018, MIT) is the strongest first-order adversarial attack — iteratively applying FGSM with projection — and adversarial training with PGD became the standard defense for
+      certified robustness.
+    source_title: Madry, Aleksander, et al. Towards Deep Learning Models Resistant to Adversarial Attacks. ICLR 2018
+    source_url: https://openreview.net/forum?id=rJzIBfZAb
+    confidence: high
+  - id: fact-aml-3
+    statement: >-
+      Adversarial training, where models are trained on adversarially perturbed examples, is the most effective empirical defense, but certified defenses using interval bound propagation provide
+      provable guarantees.
+    source_title: Gowal, Sven, et al. Scalable Verified Training for Provably Robust Image Classification. ICCV 2019
+    source_url: https://arxiv.org/abs/1905.12588
     confidence: high
 primary_sources:
   - id: ps-adversarial-machine-learning-1
@@ -79,8 +88,8 @@ secondary_sources:
       - Madry, Aleksander
     institution: NeurIPS / MIT
     url: https://adversarial-ml-tutorial.org/
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 Adversarial Machine Learning studies how AI systems can be fooled — and defended. Tiny perturbations invisible to humans can cause state-of-the-art models to misclassify with high confidence. Building robust AI requires understanding the attack surface and engineering defenses.
 

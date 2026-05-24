@@ -15,17 +15,24 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-representation-learning-1
+  - id: fact-rl-1
     statement: >-
-      Variational Autoencoders (VAE, Kingma & Welling, 2014) learn a probabilistic latent space where each point maps to a distribution — enabling controlled generation via sampling and smooth
-      interpolation in latent space.
-    source_title: Kingma & Welling, ICLR (2014)
+      Representation learning aims to automatically discover the features needed for detection or classification from raw data. Bengio, Courville & Vincent (2013) established it as a core goal of deep
+      learning.
+    source_title: "Bengio, Yoshua, Aaron Courville, and Pascal Vincent. Representation Learning: A Review and New Perspectives. IEEE TPAMI 35(8):1798-1828, 2013"
+    source_url: https://doi.org/10.1109/TPAMI.2013.50
     confidence: high
-  - id: af-representation-learning-2
+  - id: fact-rl-2
     statement: >-
-      Masked Autoencoders (MAE, He et al., 2022) mask 75% of image patches and train an asymmetric encoder-decoder to reconstruct only the masked regions — achieving state-of-the-art self-supervised
-      visual representation learning.
-    source_title: He et al., CVPR (2022)
+      Word2Vec (Mikolov et al. 2013, Google) demonstrated that continuous word embeddings capture semantic relationships (e.g., king - man + woman ≈ queen), revolutionizing NLP representation
+      learning.
+    source_title: Mikolov, Tomas, et al. Efficient Estimation of Word Representations in Vector Space. ICLR 2013
+    source_url: https://arxiv.org/abs/1301.3781
+    confidence: high
+  - id: fact-rl-3
+    statement: CLIP (Radford et al. 2021, OpenAI) learns joint image-text representations by contrastive pretraining on 400M web image-text pairs, enabling zero-shot transfer to downstream vision tasks.
+    source_title: Radford, Alec, et al. Learning Transferable Visual Models From Natural Language Supervision. ICML 2021
+    source_url: https://arxiv.org/abs/2103.00020
     confidence: high
 completeness: 0.9
 primary_sources:

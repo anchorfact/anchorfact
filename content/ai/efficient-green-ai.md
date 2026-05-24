@@ -16,19 +16,24 @@ is_live_document: false
 data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: af-efficient-green-ai-1
-    statement: >-
-      Training GPT-3 emits an estimated 552 metric tons of CO₂ equivalent (Strubell et al., 2019, updated). AI energy consumption doubles roughly every 3.4 months for frontier models — making
-      efficiency research not just an optimization but an environmental necessity.
-    source_title: Strubell et al., ACL (2019) / Patterson et al., arXiv (2022)
-    source_url: https://dl.acm.org/doi/10.1145/3381831
+  - id: f1
+    statement: Green AI (Schwartz et al. 2020, ACM) advocates for making efficiency an explicit evaluation criterion alongside accuracy, reporting computational cost (FLOPS, CO₂) in ML research.
+    source_title: Schwartz, Roy, et al. Green AI. Communications of the ACM 63(12):54-63, 2020
+    source_url: https://doi.org/10.1145/3381831
     confidence: high
-  - id: af-efficient-green-ai-2
+  - id: f2
     statement: >-
-      The Green AI movement (Schwartz et al., CACM 2020) advocates reporting computational cost alongside accuracy in ML papers — shifting the field from "Red AI" (accuracy at any cost) to "Green AI"
-      (accuracy with efficiency awareness).
-    source_title: Schwartz et al., CACM (2020)
+      Training GPT-3 (175B params) was estimated to emit 552 metric tons of CO₂e (Patterson et al. 2021), equivalent to ~120 passenger vehicle years. Model efficiency and carbon-aware scheduling are
+      critical mitigation strategies.
+    source_title: Patterson, David, et al. Carbon Emissions and Large Neural Network Training. arXiv 2021
     source_url: https://arxiv.org/abs/2104.10350
+    confidence: high
+  - id: f3
+    statement: >-
+      Model distillation (Hinton et al. 2015), quantization (Dettmers et al. 2022 LLM.int8()), and pruning are the three pillars of efficient ML, reducing model size and energy consumption by 4-10×
+      with minimal accuracy loss.
+    source_title: Hinton, Geoffrey, Oriol Vinyals, and Jeff Dean. Distilling the Knowledge in a Neural Network. NeurIPS Workshop 2015
+    source_url: https://arxiv.org/abs/1503.02531
     confidence: high
 primary_sources:
   - id: ps-efficient-green-ai-1

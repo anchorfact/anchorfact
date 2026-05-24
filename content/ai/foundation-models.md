@@ -15,17 +15,29 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-foundation-models-1
-    statement: >-
-      Foundation models — large models pretrained on broad data that can be adapted to many downstream tasks — were named and defined by the Stanford Center for Research on Foundation Models
-      (Bommasani et al., 2021), encompassing GPT-3, BERT, CLIP, DALL-E, and Codex.
-    source_title: Bommasani et al., Stanford CRFM (2021)
+  - id: f1
+    statement: Foundation models (Bommasani et al. 2021, Stanford CRFM) are large-scale models trained on broad data that can be adapted to a wide range of downstream tasks via fine-tuning or prompting.
+    source_title: Bommasani, Rishi, et al. On the Opportunities and Risks of Foundation Models. Stanford CRFM 2021
+    source_url: https://arxiv.org/abs/2108.07258
     confidence: high
-  - id: af-foundation-models-2
+  - id: f2
     statement: >-
-      Scaling laws (Kaplan et al., OpenAI, 2020) empirically demonstrate that language model loss decreases predictably with model size, dataset size, and compute — each following a power-law
-      relationship that has held across eight orders of magnitude.
-    source_title: Kaplan et al., NeurIPS (2020)
+      Chinchilla scaling laws (Hoffmann et al. 2022, DeepMind) showed that for compute-optimal training, model size and training tokens should scale equally — many LLMs were undertrained relative to
+      their parameter count.
+    source_title: Hoffmann, Jordan, et al. Training Compute-Optimal Large Language Models. NeurIPS 2022
+    source_url: https://arxiv.org/abs/2203.15556
+    confidence: high
+  - id: f3
+    statement: BERT (Devlin et al. 2019) pioneered the pretrain-then-finetune paradigm with masked language modeling, establishing the foundation model approach that led to GPT, T5, and modern LLMs.
+    source_title: "Devlin, Jacob, et al. BERT: Pre-training of Deep Bidirectional Transformers. NAACL 2019"
+    source_url: https://arxiv.org/abs/1810.04805
+    confidence: high
+  - id: f4
+    statement: >-
+      GPT-4 (OpenAI 2023) demonstrated that scaling foundation models yields multimodal capabilities, advanced reasoning, and human-level performance on professional benchmarks like the bar exam (90th
+      percentile).
+    source_title: OpenAI. GPT-4 Technical Report. 2023
+    source_url: https://arxiv.org/abs/2303.08774
     confidence: high
 completeness: 0.9
 known_gaps:

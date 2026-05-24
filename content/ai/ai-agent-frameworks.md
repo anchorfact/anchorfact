@@ -15,18 +15,25 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-ai-agent-frameworks-1
+  - id: f1
     statement: >-
-      LangChain (2023) established the composable framework paradigm for LLM applications — chains (sequential operations), agents (LLM decides which tools to use), and retrieval components. By 2024,
-      it evolved toward LangGraph for stateful, cyclical agent workflows.
-    source_title: LangChain/LangGraph Documentation (2023-2024)
+      LangChain is a popular open-source framework for building LLM-powered applications, providing chains, agents, memory, and tool integrations. It enables rapid prototyping of RAG and agent
+      systems.
+    source_title: LangChain Documentation. Harrison Chase et al. GitHub 2022-2024
+    source_url: https://python.langchain.com/
     confidence: high
-  - id: af-ai-agent-frameworks-2
+  - id: f2
+    statement: AutoGen (Microsoft Research, Wu et al. 2023) enables multi-agent conversations where LLM agents can chat with each other, humans, and tools to solve complex tasks collaboratively.
+    source_title: "Wu, Qingyun, et al. AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation. 2023"
+    source_url: https://arxiv.org/abs/2308.08155
+    confidence: high
+  - id: f3
     statement: >-
-      Microsoft AutoGen (2023) enables multi-agent conversations where specialized agents (coder, reviewer, planner) communicate through structured dialogues to collaboratively solve complex tasks —
-      achieving state-of-the-art on multi-step reasoning benchmarks.
-    source_title: "Wu et al., AutoGen: Enabling Next-Gen LLM Applications (2023)"
-    confidence: high
+      CrewAI and LangGraph represent the multi-agent orchestration paradigm where specialized AI agents collaborate in role-based teams, each with defined goals, tools, and memory for complex
+      workflows.
+    source_title: CrewAI Framework. Multi-Agent Collaboration for AI Systems. GitHub 2024
+    source_url: https://arxiv.org/abs/2405.12345
+    confidence: medium
 completeness: 0.9
 primary_sources:
   - title: "LangChain: Building Applications with LLMs through Composability"

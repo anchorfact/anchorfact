@@ -15,17 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-ai-red-teaming-and-safety-1
+  - id: f1
     statement: >-
-      AI red teaming systematically probes models for harmful outputs through adversarial testing — jailbreaks (bypassing safety filters), prompt injection (hijacking system instructions), and data
-      poisoning (contaminating training data). Microsoft's AI Red Team published lessons from testing 100+ generative AI products (January 2025).
-    source_title: Microsoft AI Red Team White Paper (2025)
+      AI red teaming (adapted from cybersecurity) involves systematic adversarial testing of AI systems to uncover harmful behaviors. Anthropic, OpenAI, Google DeepMind, and Microsoft have established
+      dedicated red teaming practices.
+    source_title: "Multiple authors. Recent Advancements in LLM Red-Teaming: Techniques and Defenses. 2024"
+    source_url: https://arxiv.org/abs/2410.09097
     confidence: high
-  - id: af-ai-red-teaming-and-safety-2
+  - id: f2
     statement: >-
-      OWASP Top 10 for LLM Applications (2025) identifies the most critical vulnerabilities: prompt injection (LLM01), insecure output handling (LLM02), training data poisoning (LLM03), model denial
-      of service (LLM04), and supply chain vulnerabilities (LLM05).
-    source_title: OWASP Top 10 for LLM Applications (2025)
+      Constitutional AI (Bai et al. 2022, Anthropic) trains models using a curated set of principles (a "constitution") for self-critique and revision, reducing reliance on human feedback for
+      alignment.
+    source_title: "Bai, Yuntao, et al. Constitutional AI: Harmlessness from AI Feedback. Anthropic 2022"
+    source_url: https://arxiv.org/abs/2212.08073
+    confidence: high
+  - id: f3
+    statement: >-
+      Jailbreaking attacks (prompt injection, DAN, role-playing) exploit LLM vulnerabilities to bypass safety guardrails. Defenses include input/output filtering, RLHF, and adversarial training, but
+      no defense is foolproof.
+    source_title: Multiple authors. Comprehensive Survey of LLM Red-Teaming. ACM Computing Surveys 2025
+    source_url: https://dl.acm.org/doi/10.1145/3729215
     confidence: high
 completeness: 0.9
 primary_sources:

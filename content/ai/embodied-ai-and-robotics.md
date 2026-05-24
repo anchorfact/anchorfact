@@ -15,17 +15,24 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-embodied-ai-and-robotics-1
+  - id: f1
     statement: >-
-      Embodied AI integrates perception, reasoning, and action in physical systems — requiring models that understand 3D space, physics, object affordances, and human intent. The field bridges
-      robotics, computer vision, and language models.
-    source_title: Survey on Embodied AI (2024)
+      RT-2 (Brohan et al. 2023, Google DeepMind) is a vision-language-action model that transfers web-scale knowledge to robotic control, enabling generalization to novel objects and instructions
+      without task-specific training.
+    source_title: "Brohan, Anthony, et al. RT-2: Vision-Language-Action Models. Google DeepMind 2023"
+    source_url: https://arxiv.org/abs/2307.15818
     confidence: high
-  - id: af-embodied-ai-and-robotics-2
+  - id: f2
     statement: >-
-      RT-2 (Robotic Transformer 2, Google DeepMind, 2023) demonstrated that vision-language models fine-tuned on robot data can directly output robot actions — marking the convergence of LLM/VLM
-      technology with physical robotics control.
-    source_title: Google DeepMind, RT-2 Paper (2023)
+      SayCan (Ahn et al. 2022, Google Robotics) grounds language model reasoning in robotic affordances by scoring actions based on both LLM probability and real-world feasibility, enabling natural
+      language robot control.
+    source_title: "Ahn, Michael, et al. Do As I Can, Not As I Say: Grounding Language in Robotic Affordances. CoRL 2022"
+    source_url: https://arxiv.org/abs/2204.01691
+    confidence: high
+  - id: f3
+    statement: Habitat (Savva et al. 2019, Meta AI) provides a high-performance simulation platform for embodied AI research, enabling training of agents in photorealistic 3D environments at over 10,000 FPS.
+    source_title: "Savva, Manolis, et al. Habitat: A Platform for Embodied AI Research. ICCV 2019"
+    source_url: https://arxiv.org/abs/1904.01201
     confidence: high
 completeness: 0.9
 primary_sources:

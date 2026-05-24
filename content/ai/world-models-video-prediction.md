@@ -16,19 +16,26 @@ is_live_document: false
 data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: af-world-models-video-prediction-1
+  - id: f1
     statement: >-
-      Sora (OpenAI, 2024) generates 1-minute coherent videos from text prompts by treating video patches as tokens in a diffusion transformer — demonstrating emergent understanding of 3D geometry,
-      object permanence, and basic physics from pure video data, described as a "world simulator" by OpenAI researchers.
-    source_title: OpenAI Sora Technical Report (2024)
-    source_url: https://openai.com/index/video-generation-models-as-world-simulators/
+      DreamerV3 (Hafner et al. 2023, DeepMind) demonstrated that a single world model algorithm can master diverse domains — from Atari games to Minecraft diamond collection — without task-specific
+      tuning.
+    source_title: Hafner, Danijar, et al. Mastering Diverse Domains through World Models. DeepMind 2023
+    source_url: https://arxiv.org/abs/2301.04104
     confidence: high
-  - id: af-world-models-video-prediction-2
+  - id: f2
     statement: >-
-      UniSim (UC Berkeley, 2024) trains a single world model on diverse internet video (driving, robotics, human activities) using next-token prediction, achieving zero-shot transfer to robot
-      manipulation tasks — the model learns physics by watching videos.
-    source_title: Yang et al., UniSim (UC Berkeley, ICML 2024)
-    source_url: https://arxiv.org/abs/2312.06114
+      World models learn compressed spatial and temporal representations of environments from high-dimensional observations, enabling agents to plan and learn policies efficiently in the learned
+      latent space.
+    source_title: Ha, David, and Jürgen Schmidhuber. World Models. NeurIPS 2018
+    source_url: https://arxiv.org/abs/1803.10122
+    confidence: high
+  - id: f3
+    statement: >-
+      Video prediction as world models: models like Sora (OpenAI 2024) and Genie (DeepMind 2024) demonstrate that large-scale video generation models learn implicit physics and world dynamics,
+      functioning as general-purpose simulators.
+    source_title: OpenAI. Video Generation Models as World Simulators (Sora). 2024
+    source_url: https://openai.com/research/video-generation-models-as-world-simulators
     confidence: high
 primary_sources:
   - id: ps-world-models-video-prediction-1

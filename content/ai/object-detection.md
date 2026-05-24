@@ -15,17 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-object-detection-1
+  - id: f1
     statement: >-
-      YOLO (You Only Look Once, Redmon et al., 2016) treats object detection as a single regression problem — predicting bounding boxes and class probabilities directly from full images in one
-      evaluation, achieving 45 FPS while matching two-stage detectors.
-    source_title: Redmon et al., CVPR (2016)
+      Faster R-CNN (Ren et al. 2015, Microsoft) introduced the Region Proposal Network (RPN), enabling end-to-end training of object detection by sharing convolutional features between proposal
+      generation and detection.
+    source_title: "Ren, Shaoqing, et al. Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks. NeurIPS 2015"
+    source_url: https://arxiv.org/abs/1506.01497
     confidence: high
-  - id: af-object-detection-2
+  - id: f2
     statement: >-
-      DETR (DEtection TRansformer, Carion et al., 2020) reformulates object detection as a direct set prediction problem using a transformer encoder-decoder with bipartite matching loss, eliminating
-      the need for hand-crafted components like NMS and anchor boxes.
-    source_title: Carion et al., ECCV (2020)
+      YOLO (Redmon et al. 2016) reframed object detection as a single regression problem, predicting bounding boxes and class probabilities directly from full images in one evaluation — enabling
+      real-time detection.
+    source_title: "Redmon, Joseph, et al. You Only Look Once: Unified, Real-Time Object Detection. CVPR 2016"
+    source_url: https://arxiv.org/abs/1506.02640
+    confidence: high
+  - id: f3
+    statement: >-
+      DETR (Carion et al. 2020, Meta AI) introduced a Transformer-based end-to-end object detector using bipartite matching loss, eliminating the need for hand-crafted components like NMS and anchor
+      boxes.
+    source_title: Carion, Nicolas, et al. End-to-End Object Detection with Transformers. ECCV 2020
+    source_url: https://arxiv.org/abs/2005.12872
     confidence: high
 completeness: 0.9
 known_gaps:

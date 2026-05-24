@@ -16,19 +16,26 @@ is_live_document: false
 data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: af-neurosymbolic-ai-1
+  - id: f1
     statement: >-
-      Neuro-symbolic AI combines neural networks (learning from data) with symbolic reasoning (logical rules, knowledge graphs) — neural components provide perception and pattern recognition while
-      symbolic components ensure interpretability, systematic generalization, and compositional reasoning.
-    source_title: "Garcez et al., AAAI (2020) / \"Neurosymbolic AI: The 3rd Wave\""
-    source_url: https://arxiv.org/abs/2005.05818
-    confidence: high
-  - id: af-neurosymbolic-ai-2
-    statement: >-
-      AlphaGeometry (DeepMind, Nature 2024) — a neuro-symbolic system that solved 25 out of 30 IMO geometry problems (matching gold medalist performance) — uses a neural language model to generate
-      auxiliary constructions and a symbolic deduction engine to verify them.
-    source_title: Trinh et al., Nature (2024)
+      AlphaGeometry (Trinh et al. 2024, DeepMind, Nature) combines a neural language model with a symbolic deduction engine to solve Olympiad-level geometry problems, demonstrating the power of
+      neurosymbolic approaches.
+    source_title: Trinh, Trieu H., et al. Solving Olympiad Geometry Without Human Demonstrations. Nature 2024
     source_url: https://www.nature.com/articles/s41586-023-06747-5
+    confidence: high
+  - id: f2
+    statement: >-
+      Neurosymbolic AI integrates neural learning with symbolic reasoning, combining the pattern recognition strengths of deep learning with the interpretability and systematic generalization of
+      symbolic AI.
+    source_title: Serafini, Luciano, and Artur d'Avila Garcez. Logic Tensor Networks. Artificial Intelligence 2020
+    source_url: https://doi.org/10.1016/j.artint.2020.103372
+    confidence: high
+  - id: f3
+    statement: >-
+      DeepMind's AlphaProof combined AlphaZero with formal mathematics to achieve silver-medal level at the 2024 International Mathematical Olympiad, solving 4/6 problems including the hardest
+      geometry and number theory problems.
+    source_title: Google DeepMind. AI Achieves Silver-Medal Standard Solving IMO Problems. 2024
+    source_url: https://deepmind.google/discover/blog/ai-solves-imo-problems/
     confidence: high
 primary_sources:
   - id: ps-neurosymbolic-ai-1

@@ -15,17 +15,31 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-generative-ai-overview-1
+  - id: fact-gai-1
     statement: >-
-      Generative AI encompasses models that create new content — text (GPT-4, Claude), images (DALL-E 3, Midjourney, Stable Diffusion), code (GitHub Copilot, Codex), audio (ElevenLabs), and video
-      (Sora, Runway).
-    source_title: "AWS: Generative AI Overview"
+      Generative AI encompasses models that learn data distributions and generate new samples. The three dominant paradigms are GANs (Goodfellow et al. 2014), VAEs (Kingma & Welling 2014), and
+      diffusion models (Ho et al. 2020).
+    source_title: Goodfellow, Ian, et al. Generative Adversarial Networks. NeurIPS 2014
+    source_url: https://papers.nips.cc/paper/2014/hash/5ca3e9b122f61f8f06494c97b1afccf3-Abstract.html
     confidence: high
-  - id: af-generative-ai-overview-2
+  - id: fact-gai-2
+    statement: Diffusion models (Sohl-Dickstein et al. 2015; Ho et al. 2020) have emerged as the state-of-the-art for image generation, powering DALL-E 2/3, Stable Diffusion, Midjourney, and Imagen.
+    source_title: Ho, Jonathan, Ajay Jain, and Pieter Abbeel. Denoising Diffusion Probabilistic Models. NeurIPS 2020
+    source_url: https://arxiv.org/abs/2006.11239
+    confidence: high
+  - id: fact-gai-3
     statement: >-
-      The generative AI market is projected to reach $1.3 trillion by 2032 (Bloomberg Intelligence), driven by enterprise adoption across customer service, content creation, drug discovery, and
-      software development.
-    source_title: Bloomberg Intelligence (2024)
+      Large Language Models (LLMs) like GPT-4 are generative models trained on vast text corpora using autoregressive next-token prediction, demonstrating emergent reasoning and few-shot learning
+      capabilities.
+    source_title: Brown, Tom B., et al. Language Models are Few-Shot Learners (GPT-3). NeurIPS 2020
+    source_url: https://arxiv.org/abs/2005.14165
+    confidence: high
+  - id: fact-gai-4
+    statement: >-
+      Stable Diffusion (Rombach et al. 2022) popularized latent diffusion models by performing the diffusion process in a compressed latent space, making high-resolution image generation
+      computationally accessible.
+    source_title: Rombach, Robin, et al. High-Resolution Image Synthesis with Latent Diffusion Models. CVPR 2022
+    source_url: https://arxiv.org/abs/2112.10752
     confidence: high
 completeness: 0.9
 known_gaps:
