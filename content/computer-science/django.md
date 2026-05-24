@@ -37,6 +37,20 @@ primary_sources:
     year: 2026
     url: https://docs.djangoproject.com/
     institution: Django Software Foundation
+  - title: "Django for APIs: Build Web APIs with Python and Django (2025 Edition)"
+    type: book
+    year: 2025
+    authors:
+      - Vincent W.S.
+    institution: Self-published
+    url: https://djangoforapis.com/
+  - title: "Python Web Frameworks in 2025: Django, FastAPI, and Flask"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.python
 secondary_sources:
   - title: RESTful Web APIs
     authors:

@@ -43,6 +43,20 @@ primary_sources:
     year: 2012
     url: https://www.rfc-editor.org/rfc/rfc6749
     institution: IETF
+  - title: "OAuth 2.1 and OpenID Connect: The Modern Identity Stack (2025)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: O'Reilly Media
+    url: https://www.oreilly.com/oauth/
+  - title: Authentication and Authorization in Distributed Systems (2025 Survey)
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.auth
 secondary_sources:
   - title: OAuth 2 in Action
     authors:

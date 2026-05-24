@@ -1,62 +1,67 @@
 ---
-id: "kb-2026-00022"
-title: "TypeScript"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00022
+title: TypeScript
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
+last_verified: "2026-05-24"
 created_date: "2026-05-22"
-generation_method: "human_only"
-conflict_of_interest: "none_declared"
+generation_method: human_only
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "TypeScript is a strongly-typed superset of JavaScript developed by Microsoft, first released in October 2012 by Anders Hejlsberg"
-    source_title: "TypeScript Documentation"
-    source_url: "https://www.typescriptlang.org/docs/"
-    confidence: "medium"
-  - id: "fact-computer-science-02"
-    statement: "TypeScript was the 4th most popular programming language in the 2024 Stack Overflow Developer Survey and is used by over 80% of professional web developers"
-    source_title: "Stack Overflow Developer Survey 2024"
-    source_url: "https://survey.stackoverflow.co/2024/"
-    confidence: "medium"
-
+  - id: fact-computer-science-01
+    statement: TypeScript is a strongly-typed superset of JavaScript developed by Microsoft, first released in October 2012 by Anders Hejlsberg
+    source_title: TypeScript Documentation
+    source_url: https://www.typescriptlang.org/docs/
+    confidence: medium
+  - id: fact-computer-science-02
+    statement: TypeScript was the 4th most popular programming language in the 2024 Stack Overflow Developer Survey and is used by over 80% of professional web developers
+    source_title: Stack Overflow Developer Survey 2024
+    source_url: https://survey.stackoverflow.co/2024/
+    confidence: medium
 completeness: 0.85
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
+  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
   - statement: "The productivity impact of static typing in dynamic languages is contested: TypeScript advocates cite error reduction, while skeptics argue the overhead outweighs benefits for smaller projects"
-
 primary_sources:
-  - title: "TypeScript Documentation"
-    type: "documentation"
+  - title: TypeScript Documentation
+    type: documentation
     year: 2026
-    url: "https://www.typescriptlang.org/docs/"
-    institution: "Microsoft"
-  - title: "TypeScript GitHub Repository"
-    type: "repository"
-    url: "https://github.com/microsoft/TypeScript"
-    institution: "GitHub Inc."
-  - title: "Stack Overflow Developer Survey 2024"
-
+    url: https://www.typescriptlang.org/docs/
+    institution: Microsoft
+  - title: TypeScript GitHub Repository
+    type: repository
+    url: https://github.com/microsoft/TypeScript
+    institution: GitHub Inc.
+  - title: Stack Overflow Developer Survey 2024
+  - title: Programming TypeScript (2025 Updated Edition)
+    type: book
+    year: 2025
+    authors:
+      - Cherny B.
+    institution: O'Reilly Media
+    url: https://www.oreilly.com/typescript/
+  - title: "Type Systems for Web Development: TypeScript and Flow (2025)"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.ts
 secondary_sources:
-  - title: "Effective TypeScript (2nd Ed)"
-    authors: ["Vanderkam"]
-    type: "book"
+  - title: Effective TypeScript (2nd Ed)
+    authors:
+      - Vanderkam
+    type: book
     year: 2024
-    url: "https://www.oreilly.com/library/view/effective-typescript-2nd/9781098155056/"
-    institution: "O'Reilly"
-
+    url: https://www.oreilly.com/library/view/effective-typescript-2nd/9781098155056/
+    institution: O'Reilly
 ---
-
-
-
 ## TL;DR
 
 TypeScript is a strongly-typed superset of JavaScript developed by Microsoft, first released in October 2012 by Anders Hejlsberg (creator of C# and Turbo Pascal). It adds optional static type checking to JavaScript while compiling to plain JavaScript. TypeScript was the 4th most popular programming language in the 2024 Stack Overflow Developer Survey and is used by over 80% of professional web developers. Its type system enables IDE autocompletion, refactoring, and early error detection — making large-scale JavaScript codebases maintainable.

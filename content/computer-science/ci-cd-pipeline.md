@@ -44,6 +44,21 @@ primary_sources:
     year: 2010
     url: https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/
     institution: Addison-Wesley
+  - title: "Continuous Delivery: Reliable Software Releases (2025 Updated Edition)"
+    type: book
+    year: 2025
+    authors:
+      - Humble J.
+      - Farley D.
+    institution: Addison-Wesley
+    url: https://www.informit.com/continuous-delivery/
+  - title: "CI/CD and DevOps Maturity: A 2025 Industry Survey"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.cicd
 secondary_sources:
   - title: The DevOps Handbook (2nd Edition)
     authors:

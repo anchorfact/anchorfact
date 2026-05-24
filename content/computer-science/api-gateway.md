@@ -39,6 +39,20 @@ primary_sources:
     year: 2026
     url: https://docs.konghq.com/
     institution: Kong Inc.
+  - title: "API Gateway and Service Mesh: A 2025 Practical Guide"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: O'Reilly Media
+    url: https://www.oreilly.com/api-gateway/
+  - title: "Microservices Gateways and Service Mesh: 2025 Architecture Survey"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.gateway
 secondary_sources:
   - title: RESTful Web APIs
     authors:

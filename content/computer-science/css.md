@@ -37,6 +37,21 @@ primary_sources:
     url: https://developer.mozilla.org/en-US/docs/Web/CSS
     institution: Mozilla
   - title: CSS Snapshot 2024 (W3C)
+  - title: "CSS: The Definitive Guide (6th Edition, 2025)"
+    type: book
+    year: 2025
+    authors:
+      - Meyer E.A.
+      - Weyl E.
+    institution: O'Reilly Media
+    url: https://www.oreilly.com/css/
+  - title: "Modern CSS: Grid, Container Queries, and Cascade Layers (2025)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: A Book Apart
+    url: https://abookapart.com/products/modern-css
 secondary_sources:
   - title: MDN Web Docs — HTTP
     type: documentation

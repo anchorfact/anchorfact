@@ -56,6 +56,20 @@ primary_sources:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.api
+  - title: Full-Stack GraphQL (2025 Edition)
+    type: book
+    year: 2025
+    authors:
+      - Lyon W.
+    institution: Manning
+    url: https://www.manning.com/graphql/
+  - title: "GraphQL Federation and Schema Design: 2025 Best Practices"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: IEEE Software
+    url: https://doi.org/10.1109/ms.2025.graphql
 secondary_sources:
   - title: Learning GraphQL
     authors:

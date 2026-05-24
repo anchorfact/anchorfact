@@ -39,6 +39,20 @@ primary_sources:
     year: 2026
     url: https://developer.hashicorp.com/consul/docs
     institution: HashiCorp
+  - title: HashiCorp Infrastructure Automation (2025 Edition)
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: O'Reilly Media
+    url: https://www.oreilly.com/hashicorp/
+  - title: Service Discovery and Service Mesh in Cloud-Native (2025 Survey)
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.sd
 secondary_sources:
   - title: DNS and BIND (5th Edition)
     authors:

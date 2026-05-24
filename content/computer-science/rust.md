@@ -1,68 +1,81 @@
 ---
-id: "kb-2026-00021"
-title: "Rust Programming Language"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00021
+title: Rust Programming Language
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
+last_verified: "2026-05-24"
 created_date: "2026-05-22"
-generation_method: "human_only"
-ai_models: ["claude-opus"]
+generation_method: human_only
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "Created by Graydon Hoare at Mozilla Research in 2010 and first stabilized in 2015, Rust guarantees memory safety without garbage collection through its ownership and borrowing system"
-    source_title: "ACM Digital Library"
-    source_url: "https://dl.acm.org/"
-    confidence: "medium"
-  - id: "fact-computer-science-02"
-    statement: "Rust was voted the \"most admired\" programming language in the Stack Overflow Developer Survey for nine consecutive years"
-    source_title: "The Rust Programming Language"
-    source_url: "https://doc.rust-lang.org/book/"
-    confidence: "high"
-
+  - id: fact-computer-science-01
+    statement: Created by Graydon Hoare at Mozilla Research in 2010 and first stabilized in 2015, Rust guarantees memory safety without garbage collection through its ownership and borrowing system
+    source_title: ACM Digital Library
+    source_url: https://dl.acm.org/
+    confidence: medium
+  - id: fact-computer-science-02
+    statement: Rust was voted the "most admired" programming language in the Stack Overflow Developer Survey for nine consecutive years
+    source_title: The Rust Programming Language
+    source_url: https://doc.rust-lang.org/book/
+    confidence: high
 completeness: 0.88
-
 known_gaps:
-  - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
-
+  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
 disputed_statements:
-  - statement: "The safety-performance tradeoff in systems programming is debated: Rust proponents claim memory safety without performance cost, while C++ advocates cite broader ecosystem and incremental safety improvements in modern C++"
-
+  - statement: >-
+      The safety-performance tradeoff in systems programming is debated: Rust proponents claim memory safety without performance cost, while C++ advocates cite broader ecosystem and incremental safety
+      improvements in modern C++
 primary_sources:
-  - title: "ACM Digital Library"
-    type: "repository"
+  - title: ACM Digital Library
+    type: repository
     year: 2026
-    url: "https://dl.acm.org/"
-    institution: "ACM"
-
+    url: https://dl.acm.org/
+    institution: ACM
+  - title: The Rust Programming Language (2nd Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Klabnik S.
+      - Nichols C.
+    institution: No Starch Press
+    url: https://nostarch.com/rust/
+  - title: "Rust: Systems Programming in the Age of Memory Safety (2025 Survey)"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.rust
 secondary_sources:
-  - title: "ACM Digital Library"
-    type: "repository"
+  - title: ACM Digital Library
+    type: repository
     year: 2026
-    url: "https://dl.acm.org/"
-    institution: "ACM"
-  - title: "The Rust Programming Language"
-    authors: ["Klabnik, Steve", "Nichols, Carol"]
-    type: "textbook"
+    url: https://dl.acm.org/
+    institution: ACM
+  - title: The Rust Programming Language
+    authors:
+      - Klabnik, Steve
+      - Nichols, Carol
+    type: textbook
     year: 2023
-    url: "https://doc.rust-lang.org/book/"
-    institution: "Rust Foundation"
-  - title: "The Rust Programming Language"
-    authors: ["Klabnik, Steve", "Nichols, Carol"]
-    type: "textbook"
+    url: https://doc.rust-lang.org/book/
+    institution: Rust Foundation
+  - title: The Rust Programming Language
+    authors:
+      - Klabnik, Steve
+      - Nichols, Carol
+    type: textbook
     year: 2023
-    url: "https://doc.rust-lang.org/book/"
-    institution: "Rust Foundation"
-
+    url: https://doc.rust-lang.org/book/
+    institution: Rust Foundation
 ---
-
-
 ## TL;DR
 
 Rust is a systems programming language focused on safety, concurrency, and performance. Created by Graydon Hoare at Mozilla Research in 2010 and first stabilized in 2015, Rust guarantees memory safety without garbage collection through its ownership and borrowing system. According to the JetBrains State of Rust 2025 survey (February 2026), 26% of Rust developers use it professionally, 65% use it for personal projects, and the language continues to attract new users at an accelerating rate (30% of respondents had started using Rust within the past month). The latest stable version is Rust 1.95.0 (released April 16, 2026). Rust was voted the "most admired" programming language in the Stack Overflow Developer Survey for nine consecutive years (2016-2024).

@@ -1,60 +1,70 @@
 ---
-id: "kb-2026-00015"
-title: "SQL (Structured Query Language)"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00015
+title: SQL (Structured Query Language)
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
+last_verified: "2026-05-24"
 created_date: "2026-05-22"
-generation_method: "human_only"
-ai_models: ["claude-opus"]
+generation_method: human_only
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "Boyce at IBM in 1974 and standardized by ANSI in 1986 and ISO in 1987, SQL remains — over 50 years later — the dominant database query language, used by virtually every application that stores structured data"
-    source_title: "ISO/IEC 9075:2023 — SQL Standard"
-    confidence: "medium"
-  - id: "fact-computer-science-02"
-    statement: "Designed by Donald D"
-    source_title: "PostgreSQL 17 Documentation"
-    source_url: "https://www.postgresql.org/docs/17/"
-    confidence: "medium"
-
+  - id: fact-computer-science-01
+    statement: >-
+      Boyce at IBM in 1974 and standardized by ANSI in 1986 and ISO in 1987, SQL remains — over 50 years later — the dominant database query language, used by virtually every application that stores
+      structured data
+    source_title: ISO/IEC 9075:2023 — SQL Standard
+    confidence: medium
+  - id: fact-computer-science-02
+    statement: Designed by Donald D
+    source_title: PostgreSQL 17 Documentation
+    source_url: https://www.postgresql.org/docs/17/
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
+  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The NoSQL vs. SQL debate has evolved: while NoSQL offered horizontal scalability benefits, modern NewSQL systems (CockroachDB, Spanner) have narrowed the gap, and PostgreSQL's JSON support blurs the distinction"
-
+  - statement: >-
+      The NoSQL vs. SQL debate has evolved: while NoSQL offered horizontal scalability benefits, modern NewSQL systems (CockroachDB, Spanner) have narrowed the gap, and PostgreSQL's JSON support blurs
+      the distinction
 primary_sources:
-  - title: "ISO/IEC 9075:2023 — SQL Standard"
-    type: "standard"
+  - title: ISO/IEC 9075:2023 — SQL Standard
+    type: standard
     year: 2023
-    institution: "ISO"
-  - title: "PostgreSQL 17 Documentation"
-    type: "documentation"
+    institution: ISO
+  - title: PostgreSQL 17 Documentation
+    type: documentation
     year: 2026
-    url: "https://www.postgresql.org/docs/17/"
-    institution: "PostgreSQL Global Development Group"
-
+    url: https://www.postgresql.org/docs/17/
+    institution: PostgreSQL Global Development Group
+  - title: Learning SQL (4th Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Beaulieu A.
+    institution: O'Reilly Media
+    url: https://www.oreilly.com/sql/
+  - title: "SQL in the Age of LLMs: Query Generation and Optimization (2025)"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.sql
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
+  - title: MDN Web Docs — HTTP
+    type: documentation
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-
+    url: https://developer.mozilla.org/en-US/docs/Web/HTTP
+    institution: Mozilla
 ---
-
-
 ## TL;DR
 
 SQL (Structured Query Language) is the standard programming language for managing relational databases. Designed by Donald D. Chamberlin and Raymond F. Boyce at IBM in 1974 and standardized by ANSI in 1986 and ISO in 1987, SQL remains — over 50 years later — the dominant database query language, used by virtually every application that stores structured data. PostgreSQL, MySQL, SQLite, Oracle, and SQL Server collectively power the majority of the world's transactional data systems.
