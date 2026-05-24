@@ -1,52 +1,80 @@
 ---
-id: "ai-red-teaming-and-safety"
+id: ai-red-teaming-and-safety
 title: "AI Red Teaming: Security Testing for Language Models"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-ai-red-teaming-and-safety-1"
-    statement: "AI red teaming systematically probes models for harmful outputs through adversarial testing — jailbreaks (bypassing safety filters), prompt injection (hijacking system instructions), and data poisoning (contaminating training data). Microsoft's AI Red Team published lessons from testing 100+ generative AI products (January 2025)."
-    source_title: "Microsoft AI Red Team White Paper (2025)"
-    confidence: "high"
-  - id: "af-ai-red-teaming-and-safety-2"
-    statement: "OWASP Top 10 for LLM Applications (2025) identifies the most critical vulnerabilities: prompt injection (LLM01), insecure output handling (LLM02), training data poisoning (LLM03), model denial of service (LLM04), and supply chain vulnerabilities (LLM05)."
-    source_title: "OWASP Top 10 for LLM Applications (2025)"
-    confidence: "high"
-
+  - id: af-ai-red-teaming-and-safety-1
+    statement: >-
+      AI red teaming systematically probes models for harmful outputs through adversarial testing — jailbreaks (bypassing safety filters), prompt injection (hijacking system instructions), and data
+      poisoning (contaminating training data). Microsoft's AI Red Team published lessons from testing 100+ generative AI products (January 2025).
+    source_title: Microsoft AI Red Team White Paper (2025)
+    confidence: high
+  - id: af-ai-red-teaming-and-safety-2
+    statement: >-
+      OWASP Top 10 for LLM Applications (2025) identifies the most critical vulnerabilities: prompt injection (LLM01), insecure output handling (LLM02), training data poisoning (LLM03), model denial
+      of service (LLM04), and supply chain vulnerabilities (LLM05).
+    source_title: OWASP Top 10 for LLM Applications (2025)
+    confidence: high
 completeness: 0.9
-
 primary_sources:
-  - title: "Lessons from Red Teaming 100 Generative AI Products"
-    type: "official_report"
+  - title: Lessons from Red Teaming 100 Generative AI Products
+    type: official_report
     year: 2025
-    url: "https://learn.microsoft.com/en-us/azure/foundry/concepts/ai-red-teaming-agent"
-    institution: "Microsoft"
-  - title: "OWASP Top 10 for LLM Applications"
-    type: "standard"
+    url: https://learn.microsoft.com/en-us/azure/foundry/concepts/ai-red-teaming-agent
+    institution: Microsoft
+  - title: OWASP Top 10 for LLM Applications
+    type: standard
     year: 2025
-    url: "https://owasp.org/www-project-top-10-for-large-language-model-applications/"
-    institution: "OWASP"
-
+    url: https://owasp.org/www-project-top-10-for-large-language-model-applications/
+    institution: OWASP
 known_gaps:
-  - "Automated red teaming at scale"
-  - "Defense-in-depth for multi-modal models"
-
+  - Automated red teaming at scale
+  - Defense-in-depth for multi-modal models
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
+secondary_sources:
+  - title: "Securing LLM Agents: From Prompt Sanitization to Autonomous Red Teaming — The First Comprehensive Survey"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Computers & Security (Elsevier)
+    url: https://doi.org/10.1016/j.cose.2025.104268
+  - title: "Recent Advancements in LLM Red-Teaming: Techniques, Benchmarks, and Defenses"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: arXiv
+    url: https://arxiv.org/abs/2410.09097
+  - title: "Evaluating Alignment in Large Language Models: Human Feedback, Adversarial Testing, and Scalable Oversight"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: AI and Ethics (Springer)
+    url: https://doi.org/10.1007/s43681-024-00637-w
+  - title: "OpenAI's Approach to External Red Teaming for AI Systems: Design Considerations and Lessons Learned"
+    type: report
+    year: 2024
+    authors:
+      - OpenAI
+    institution: OpenAI
+    url: https://openai.com/research/external-red-teaming
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI red teaming applies adversarial testing methodologies to AI systems — probing for jailbreaks, prompt injection, bias exploitation, and data leakage. Microsoft, Anthropic, and OWASP have established red teaming as a standard practice for responsible AI deployment.
 

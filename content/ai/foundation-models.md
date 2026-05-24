@@ -1,53 +1,92 @@
 ---
-id: "foundation-models"
+id: foundation-models
 title: "Foundation Models: Paradigm Shift in AI"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-foundation-models-1"
-    statement: "Foundation models — large models pretrained on broad data that can be adapted to many downstream tasks — were named and defined by the Stanford Center for Research on Foundation Models (Bommasani et al., 2021), encompassing GPT-3, BERT, CLIP, DALL-E, and Codex."
-    source_title: "Bommasani et al., Stanford CRFM (2021)"
-    confidence: "high"
-  - id: "af-foundation-models-2"
-    statement: "Scaling laws (Kaplan et al., OpenAI, 2020) empirically demonstrate that language model loss decreases predictably with model size, dataset size, and compute — each following a power-law relationship that has held across eight orders of magnitude."
-    source_title: "Kaplan et al., NeurIPS (2020)"
-    confidence: "high"
-
+  - id: af-foundation-models-1
+    statement: >-
+      Foundation models — large models pretrained on broad data that can be adapted to many downstream tasks — were named and defined by the Stanford Center for Research on Foundation Models
+      (Bommasani et al., 2021), encompassing GPT-3, BERT, CLIP, DALL-E, and Codex.
+    source_title: Bommasani et al., Stanford CRFM (2021)
+    confidence: high
+  - id: af-foundation-models-2
+    statement: >-
+      Scaling laws (Kaplan et al., OpenAI, 2020) empirically demonstrate that language model loss decreases predictably with model size, dataset size, and compute — each following a power-law
+      relationship that has held across eight orders of magnitude.
+    source_title: Kaplan et al., NeurIPS (2020)
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "Multilingual foundation model equity"
-  - "Foundation models for scientific discovery"
-
+  - Multilingual foundation model equity
+  - Foundation models for scientific discovery
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
 primary_sources:
-  - title: "On the Opportunities and Risks of Foundation Models"
-    type: "academic_paper"
+  - title: On the Opportunities and Risks of Foundation Models
+    type: academic_paper
     year: 2021
-    url: "https://arxiv.org/abs/2108.07258"
-    institution: "Stanford CRFM"
-  - title: "Scaling Laws for Neural Language Models"
-    type: "academic_paper"
+    url: https://arxiv.org/abs/2108.07258
+    institution: Stanford CRFM
+  - title: Scaling Laws for Neural Language Models
+    type: academic_paper
     year: 2020
-    url: "https://arxiv.org/abs/2001.08361"
-    institution: "NeurIPS"
-
+    url: https://arxiv.org/abs/2001.08361
+    institution: NeurIPS
+secondary_sources:
+  - title: "A Comprehensive Survey on Pretrained Foundation Models: A History from BERT to ChatGPT to GPT-4"
+    type: survey_paper
+    year: 2024
+    authors:
+      - Zhou, Ce
+      - Li, Qian
+      - Li, Chen
+      - et al.
+    institution: International Journal of Machine Learning & Cybernetics (Springer)
+    url: https://doi.org/10.1007/s13042-024-02443-6
+  - title: On the Opportunities and Risks of Foundation Models (Stanford CRFM)
+    type: report
+    year: 2021
+    authors:
+      - Bommasani, Rishi
+      - Hudson, Drew A.
+      - Adeli, Ehsan
+      - et al. (100+ authors)
+    institution: Stanford Center for Research on Foundation Models
+    url: https://arxiv.org/abs/2108.07258
+  - title: Training Compute-Optimal Large Language Models (Chinchilla Scaling Laws)
+    type: conference_paper
+    year: 2022
+    authors:
+      - Hoffmann, Jordan
+      - Borgeaud, Sebastian
+      - Mensch, Arthur
+      - et al.
+    institution: DeepMind / NeurIPS
+    url: https://arxiv.org/abs/2203.15556
+  - title: Scaling Laws for Neural Language Models (Kaplan et al.)
+    type: conference_paper
+    year: 2020
+    authors:
+      - Kaplan, Jared
+      - McCandlish, Sam
+      - Henighan, Tom
+      - et al.
+    institution: OpenAI
+    url: https://arxiv.org/abs/2001.08361
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 Foundation models represent a paradigm shift — pretrain once on massive data, then adapt to thousands of downstream tasks via fine-tuning, prompting, or in-context learning.
 

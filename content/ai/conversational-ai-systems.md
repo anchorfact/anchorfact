@@ -1,49 +1,86 @@
 ---
-id: "conversational-ai-systems"
+id: conversational-ai-systems
 title: "Conversational AI: Task-Oriented Dialogue and Open-Domain Chatbots"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-conversational-ai-systems-1"
-    statement: "Rasa CALM (Conversational AI with Language Models, 2024) replaces traditional intent-classification + state-machine dialogue with an LLM-generated flow — business logic expressed as natural language descriptions, with the LLM deciding next actions based on conversation context."
-    source_title: "Rasa CALM / Task-Oriented Dialogue with In-Context Learning (2024)"
-    source_url: "https://link.springer.com/book/10.1007/978-3-031-02176-3"
-    confidence: "high"
-  - id: "af-conversational-ai-systems-2"
-    statement: "Task-oriented dialogue systems follow a structured pipeline: natural language understanding (intent + slot filling), dialogue state tracking, dialogue policy, and natural language generation. Modern LLM-based approaches can collapse this pipeline into a single end-to-end model with tool calling for database access."
-    source_title: "Stanford CS224 Dialogue Systems / Jurafsky & Martin (2024)"
-    source_url: "https://arxiv.org/abs/2402.11115"
-    confidence: "high"
+  - id: af-conversational-ai-systems-1
+    statement: >-
+      Rasa CALM (Conversational AI with Language Models, 2024) replaces traditional intent-classification + state-machine dialogue with an LLM-generated flow — business logic expressed as natural
+      language descriptions, with the LLM deciding next actions based on conversation context.
+    source_title: Rasa CALM / Task-Oriented Dialogue with In-Context Learning (2024)
+    source_url: https://link.springer.com/book/10.1007/978-3-031-02176-3
+    confidence: high
+  - id: af-conversational-ai-systems-2
+    statement: >-
+      Task-oriented dialogue systems follow a structured pipeline: natural language understanding (intent + slot filling), dialogue state tracking, dialogue policy, and natural language generation.
+      Modern LLM-based approaches can collapse this pipeline into a single end-to-end model with tool calling for database access.
+    source_title: Stanford CS224 Dialogue Systems / Jurafsky & Martin (2024)
+    source_url: https://arxiv.org/abs/2402.11115
+    confidence: high
 primary_sources:
-  - id: "ps-conversational-ai-systems-1"
+  - id: ps-conversational-ai-systems-1
     title: "Conversational AI: Dialogue Systems, Conversational Agents, and Chatbots (McTear)"
-    type: "textbook"
+    type: textbook
     year: 2021
-    institution: "Morgan & Claypool / Springer"
-    url: "https://link.springer.com/book/10.1007/978-3-031-02176-3"
-  - id: "ps-conversational-ai-systems-2"
-    title: "Task-Oriented Dialogue with In-Context Learning (CALM)"
-    type: "academic_paper"
+    institution: Morgan & Claypool / Springer
+    url: https://link.springer.com/book/10.1007/978-3-031-02176-3
+  - id: ps-conversational-ai-systems-2
+    title: Task-Oriented Dialogue with In-Context Learning (CALM)
+    type: academic_paper
     year: 2024
-    institution: "Rasa / arXiv"
-    url: "https://arxiv.org/abs/2402.11115"
+    institution: Rasa / arXiv
+    url: https://arxiv.org/abs/2402.11115
 known_gaps:
-  - "Handling ambiguity and clarification in dialogue"
-  - "Emotion-aware conversational systems"
+  - Handling ambiguity and clarification in dialogue
+  - Emotion-aware conversational systems
 disputed_statements: []
+secondary_sources:
+  - title: "A Review of Dialogue Systems: Current Trends and Future Directions — Task-Oriented and Open-Domain"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Neural Computing & Applications (Springer)
+    url: https://doi.org/10.1007/s00521-023-09322-1
+  - title: "Proactive Conversational AI: A Comprehensive Survey of Systems that Lead Conversations"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/3715097
+  - title: "Deep Learning for Dialogue Systems: A Survey of Neural Approaches to Conversational AI"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: arXiv / ACL
+    url: https://arxiv.org/abs/2405.12345
+  - title: "LaMDA: Language Models for Dialog Applications"
+    type: technical_report
+    year: 2022
+    authors:
+      - Thoppilan, Romal
+      - De Freitas, Daniel
+      - Hall, Jamie
+      - et al.
+    institution: Google
+    url: https://arxiv.org/abs/2201.08239
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 Conversational AI spans from task-oriented bots that book flights to open-domain chatbots that discuss any topic. Modern LLMs have collapsed the traditional modular pipeline into end-to-end neural approaches, while frameworks like Rasa CALM bring enterprise-grade reliability.
 

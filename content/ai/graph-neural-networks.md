@@ -1,52 +1,81 @@
 ---
-id: "graph-neural-networks"
+id: graph-neural-networks
 title: "Graph Neural Networks: Message Passing and Applications"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-graph-neural-networks-1"
-    statement: "Graph Neural Networks (GNNs) learn representations of nodes, edges, or entire graphs through iterative message passing: each node aggregates features from its neighbors, transforms them via a neural network, and updates its own representation."
-    source_title: "Kipf & Welling, ICLR (2017) / Hamilton et al., NeurIPS (2017)"
-    confidence: "high"
-  - id: "af-graph-neural-networks-2"
-    statement: "GNNs achieve state-of-the-art on molecular property prediction (QM9, OGB benchmarks), recommendation systems (Pinterest PinSage, deployed at billion-node scale), and knowledge graph reasoning — domains where data is inherently graph-structured."
-    source_title: "OGB (Open Graph Benchmark) / PinSage Paper (2018)"
-    confidence: "high"
-
+  - id: af-graph-neural-networks-1
+    statement: >-
+      Graph Neural Networks (GNNs) learn representations of nodes, edges, or entire graphs through iterative message passing: each node aggregates features from its neighbors, transforms them via a
+      neural network, and updates its own representation.
+    source_title: Kipf & Welling, ICLR (2017) / Hamilton et al., NeurIPS (2017)
+    confidence: high
+  - id: af-graph-neural-networks-2
+    statement: >-
+      GNNs achieve state-of-the-art on molecular property prediction (QM9, OGB benchmarks), recommendation systems (Pinterest PinSage, deployed at billion-node scale), and knowledge graph reasoning —
+      domains where data is inherently graph-structured.
+    source_title: OGB (Open Graph Benchmark) / PinSage Paper (2018)
+    confidence: high
 completeness: 0.9
-
 primary_sources:
-  - title: "Semi-Supervised Classification with Graph Convolutional Networks (GCN)"
-    type: "academic_paper"
+  - title: Semi-Supervised Classification with Graph Convolutional Networks (GCN)
+    type: academic_paper
     year: 2017
-    url: "https://arxiv.org/abs/1609.02907"
-    institution: "ICLR"
-  - title: "Graph Representation Learning (Hamilton)"
-    type: "textbook"
+    url: https://arxiv.org/abs/1609.02907
+    institution: ICLR
+  - title: Graph Representation Learning (Hamilton)
+    type: textbook
     year: 2020
-    url: "https://www.cs.mcgill.ca/~wlh/grl_book/"
-    institution: "Morgan & Claypool"
-
+    url: https://www.cs.mcgill.ca/~wlh/grl_book/
+    institution: Morgan & Claypool
 known_gaps:
-  - "Scalability to billion-node graphs"
-  - "Dynamic/temporal graph learning"
-
+  - Scalability to billion-node graphs
+  - Dynamic/temporal graph learning
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
+secondary_sources:
+  - title: "Graph Neural Networks: A Comprehensive Review of Methods and Applications"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Nature Reviews Methods Primers
+    url: https://doi.org/10.1038/s43586-024-00294-7
+  - title: "A Comprehensive Survey of Dynamic Graph Neural Networks: Models, Benchmarks, and Frameworks (81+ models)"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Frontiers of Computer Science (Springer)
+    url: https://doi.org/10.1007/s11704-024-3853-2
+  - title: A Survey of Graph Neural Networks and Their Industrial Applications
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Neurocomputing (Elsevier)
+    url: https://doi.org/10.1016/j.neucom.2024.128761
+  - title: Semi-Supervised Classification with Graph Convolutional Networks (GCN — Seminal)
+    type: conference_paper
+    year: 2017
+    authors:
+      - Kipf, Thomas N.
+      - Welling, Max
+    institution: University of Amsterdam / ICLR
+    url: https://arxiv.org/abs/1609.02907
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 Graph Neural Networks extend deep learning to graph-structured data — molecules, social networks, knowledge graphs. Message passing enables nodes to learn from their local neighborhood, creating representations that capture both structure and features.
 

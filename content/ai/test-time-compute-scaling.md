@@ -1,49 +1,92 @@
 ---
-id: "test-time-compute-scaling"
+id: test-time-compute-scaling
 title: "Test-Time Compute Scaling: Inference-Time Reasoning Paradigms from o1/o3 to Forest-of-Thought"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-test-time-compute-scaling-1"
-    statement: "OpenAI o1 (September 2024) and o3 (December 2024) introduced the test-time compute scaling paradigm — allocating additional computation during inference (not training) to generate and evaluate multiple reasoning chains — achieving PhD-level performance on GPQA Diamond (87.7% o3 vs. 65% human experts) and ELO 2727 on Codeforces, demonstrating that inference-time computation can substitute for model size scaling."
-    source_title: "OpenAI o1 System Card (2024) / OpenAI o3 Announcement (2024) — Test-Time Compute Scaling Paradigm"
-    source_url: "https://openai.com/index/learning-to-reason-with-llms/"
-    confidence: "high"
-  - id: "af-test-time-compute-scaling-2"
-    statement: "Forest-of-Thought (Li et al., arxiv 2412.09078, 2024) proposed a tree-structured reasoning framework that scales test-time compute by building a forest of reasoning paths and dynamically pruning branches via confidence-based and consistency-based criteria — achieving 15-20% improvement over chain-of-thought baselines on MATH and GSM8K benchmarks with equivalent compute budget."
+  - id: af-test-time-compute-scaling-1
+    statement: >-
+      OpenAI o1 (September 2024) and o3 (December 2024) introduced the test-time compute scaling paradigm — allocating additional computation during inference (not training) to generate and evaluate
+      multiple reasoning chains — achieving PhD-level performance on GPQA Diamond (87.7% o3 vs. 65% human experts) and ELO 2727 on Codeforces, demonstrating that inference-time computation can
+      substitute for model size scaling.
+    source_title: OpenAI o1 System Card (2024) / OpenAI o3 Announcement (2024) — Test-Time Compute Scaling Paradigm
+    source_url: https://openai.com/index/learning-to-reason-with-llms/
+    confidence: high
+  - id: af-test-time-compute-scaling-2
+    statement: >-
+      Forest-of-Thought (Li et al., arxiv 2412.09078, 2024) proposed a tree-structured reasoning framework that scales test-time compute by building a forest of reasoning paths and dynamically pruning
+      branches via confidence-based and consistency-based criteria — achieving 15-20% improvement over chain-of-thought baselines on MATH and GSM8K benchmarks with equivalent compute budget.
     source_title: "Li et al., arxiv 2412.09078 (2024) — Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning"
-    source_url: "https://arxiv.org/abs/2412.09078"
-    confidence: "high"
+    source_url: https://arxiv.org/abs/2412.09078
+    confidence: high
 primary_sources:
-  - id: "ps-test-time-compute-scaling-1"
+  - id: ps-test-time-compute-scaling-1
     title: "OpenAI o1 System Card: Learning to Reason with Large Language Models"
-    type: "industry_report"
+    type: industry_report
     year: 2024
-    institution: "OpenAI"
-    url: "https://openai.com/index/learning-to-reason-with-llms/"
-  - id: "ps-test-time-compute-scaling-2"
+    institution: OpenAI
+    url: https://openai.com/index/learning-to-reason-with-llms/
+  - id: ps-test-time-compute-scaling-2
     title: "Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning"
-    type: "academic_paper"
+    type: academic_paper
     year: 2024
-    institution: "arXiv"
-    url: "https://arxiv.org/abs/2412.09078"
+    institution: arXiv
+    url: https://arxiv.org/abs/2412.09078
 known_gaps:
-  - "Optimal compute allocation between training-time and test-time budgets"
-  - "Test-time compute strategies for non-reasoning tasks (creative writing, dialogue)"
+  - Optimal compute allocation between training-time and test-time budgets
+  - Test-time compute strategies for non-reasoning tasks (creative writing, dialogue)
 disputed_statements: []
+secondary_sources:
+  - title: Scaling LLM Test-Time Compute Optimally Can Be More Effective Than Scaling Model Parameters (DeepMind)
+    type: conference_paper
+    year: 2024
+    authors:
+      - Snell, Charlie
+      - Lee, Jaehoon
+      - Xu, Kelvin
+      - Kumar, Aviral
+    institution: Google DeepMind / ICLR 2025
+    url: https://arxiv.org/abs/2408.03314
+  - title: "OpenAI o1 System Card: Learning to Reason with Large Language Models"
+    type: technical_report
+    year: 2024
+    authors:
+      - OpenAI
+    institution: OpenAI
+    url: https://openai.com/research/learning-to-reason-with-llms
+  - title: Let's Verify Step by Step (Process Reward Models for Reasoning)
+    type: conference_paper
+    year: 2024
+    authors:
+      - Lightman, Hunter
+      - Kosaraju, Vineet
+      - Burda, Yuri
+      - et al.
+    institution: OpenAI / ICLR
+    url: https://arxiv.org/abs/2305.20050
+  - title: "Large Language Monkeys: Scaling Inference Compute with Repeated Sampling"
+    type: conference_paper
+    year: 2024
+    authors:
+      - Brown, Bradley
+      - Jurafsky, Dan
+      - Hashimoto, Tatsunori
+    institution: Stanford / NeurIPS
+    url: https://arxiv.org/abs/2407.21787
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 Test-Time Compute Scaling represents a paradigm shift: instead of making models bigger during training, allocate more computation during inference for deeper reasoning. OpenAI o1/o3 demonstrated that "thinking longer" enables PhD-level scientific reasoning and competitive programming — reshaping the scaling landscape from pre-training to inference.
 

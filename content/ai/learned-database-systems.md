@@ -1,50 +1,89 @@
 ---
-id: "learned-database-systems"
+id: learned-database-systems
 title: "Learned Database Systems: AI-Driven Query Optimization, Learned Indexes, and Cardinality Estimation"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-learned-database-systems-1"
-    statement: "Springer Frontiers of Computer Science (June 2025) published a comprehensive survey of learned database optimization techniques -- reviewing 150+ papers across learned cardinality estimation (MSCN, NeuroCard, BayesCard), learned cost models, learned join order selection (ReJOIN, Balsa, Neo), learned index structures (RMI, PGM-Index, CDFShop), and learned query optimizers (Bao, Neo) -- documenting that learned cardinality estimation with multi-set convolutional networks (MSCN) reduces Q-error (ratio of estimated to actual row count) from 100-1000x in traditional DBMS to 1.5-3x, transforming query plan quality."
+  - id: af-learned-database-systems-1
+    statement: >-
+      Springer Frontiers of Computer Science (June 2025) published a comprehensive survey of learned database optimization techniques -- reviewing 150+ papers across learned cardinality estimation
+      (MSCN, NeuroCard, BayesCard), learned cost models, learned join order selection (ReJOIN, Balsa, Neo), learned index structures (RMI, PGM-Index, CDFShop), and learned query optimizers (Bao, Neo)
+      -- documenting that learned cardinality estimation with multi-set convolutional networks (MSCN) reduces Q-error (ratio of estimated to actual row count) from 100-1000x in traditional DBMS to
+      1.5-3x, transforming query plan quality.
     source_title: "Springer FCS (2025) -- Learning database optimization techniques: state-of-the-art review -- doi:10.1007/s11704-025-41116-7"
-    source_url: "https://link.springer.com/article/10.1007/s11704-025-41116-7"
-    confidence: "high"
-  - id: "af-learned-database-systems-2"
-    statement: "The Recursive Model Index (RMI, Kraska et al., 2018) demonstrated that learned index structures -- replacing B-trees with a hierarchy of simple neural models predicting data positions -- achieve 3x faster lookup while using 100x less memory for read-only workloads, spawning the field of learned data structures (learned Bloom filters, learned hash functions, PGM-index) and challenging the assumption that general-purpose data structures are always optimal."
-    source_title: "Kraska et al., SIGMOD 2018 -- The Case for Learned Index Structures / PGM-Index (VLDB 2020) -- optimal learned index with error bounds"
-    source_url: "https://arxiv.org/abs/1712.01208"
-    confidence: "high"
+    source_url: https://link.springer.com/article/10.1007/s11704-025-41116-7
+    confidence: high
+  - id: af-learned-database-systems-2
+    statement: >-
+      The Recursive Model Index (RMI, Kraska et al., 2018) demonstrated that learned index structures -- replacing B-trees with a hierarchy of simple neural models predicting data positions -- achieve
+      3x faster lookup while using 100x less memory for read-only workloads, spawning the field of learned data structures (learned Bloom filters, learned hash functions, PGM-index) and challenging
+      the assumption that general-purpose data structures are always optimal.
+    source_title: Kraska et al., SIGMOD 2018 -- The Case for Learned Index Structures / PGM-Index (VLDB 2020) -- optimal learned index with error bounds
+    source_url: https://arxiv.org/abs/1712.01208
+    confidence: high
 primary_sources:
-  - id: "ps-learned-database-systems-1"
+  - id: ps-learned-database-systems-1
     title: "Learning database optimization techniques: the state-of-the-art and future directions"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "Springer Frontiers of Computer Science"
-    doi: "10.1007/s11704-025-41116-7"
-    url: "https://link.springer.com/article/10.1007/s11704-025-41116-7"
-  - id: "ps-learned-database-systems-2"
-    title: "The Case for Learned Index Structures"
-    type: "academic_paper"
+    institution: Springer Frontiers of Computer Science
+    doi: 10.1007/s11704-025-41116-7
+    url: https://link.springer.com/article/10.1007/s11704-025-41116-7
+  - id: ps-learned-database-systems-2
+    title: The Case for Learned Index Structures
+    type: academic_paper
     year: 2018
-    institution: "SIGMOD / Google / MIT"
-    url: "https://arxiv.org/abs/1712.01208"
+    institution: SIGMOD / Google / MIT
+    url: https://arxiv.org/abs/1712.01208
 known_gaps:
-  - "Learned database components under updates -- maintaining learned models as data changes"
-  - "Integration of learned components into production DBMS (PostgreSQL, MySQL) without breaking ACID guarantees"
+  - Learned database components under updates -- maintaining learned models as data changes
+  - Integration of learned components into production DBMS (PostgreSQL, MySQL) without breaking ACID guarantees
 disputed_statements: []
+secondary_sources:
+  - title: "AI Meets Database: AI4DB and DB4AI — A Comprehensive Tutorial (SIGMOD)"
+    type: survey_paper
+    year: 2021
+    authors:
+      - Li, Guoliang
+      - Zhou, Xuanhe
+      - Cao, Lei
+    institution: Tsinghua University / SIGMOD
+    url: https://dbgroup.cs.tsinghua.edu.cn/ligl/papers/sigmod21-tutorial-paper.pdf
+  - title: "Learning Database Optimization Techniques: The State-of-the-Art and Future Directions"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Frontiers of Computer Science (Springer)
+    url: https://doi.org/10.1007/s11704-025-41116-7
+  - title: "Learned Query Optimizers: A Comprehensive Survey"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Foundations & Trends in Databases (ACM)
+    url: https://doi.org/10.1561/1900000082
+  - title: A Survey of Learned Indexes for the Multi-Dimensional Space
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: arXiv
+    url: https://arxiv.org/abs/2403.06456
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 Learned database systems replace decades of hand-tuned heuristics in databases with machine learning models. From learned indexes that replace B-trees with tiny neural networks to learned query optimizers that beat expert-designed cost models, AI is challenging the assumption that classical data structures and algorithms are always optimal for specific data distributions.
 

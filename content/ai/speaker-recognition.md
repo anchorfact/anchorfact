@@ -1,50 +1,92 @@
 ---
-id: "speaker-recognition"
+id: speaker-recognition
 title: "Speaker Recognition: Voice Biometrics, Diarization, and Deep Learning for Speaker Verification"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-speaker-recognition-1"
-    statement: "ScienceDirect (December 2025) published a comprehensive review of speaker verification -- documenting that ECAPA-TDNN (Emphasized Channel Attention, Propagation and Aggregation TDNN) with Additive Angular Margin loss achieves 0.69% EER (Equal Error Rate) on VoxCeleb1, representing the dominant architecture family, while self-supervised pretraining (WavLM, HuBERT) further reduces EER to 0.31-0.45%, approaching human-level performance on clean speech."
+  - id: af-speaker-recognition-1
+    statement: >-
+      ScienceDirect (December 2025) published a comprehensive review of speaker verification -- documenting that ECAPA-TDNN (Emphasized Channel Attention, Propagation and Aggregation TDNN) with
+      Additive Angular Margin loss achieves 0.69% EER (Equal Error Rate) on VoxCeleb1, representing the dominant architecture family, while self-supervised pretraining (WavLM, HuBERT) further reduces
+      EER to 0.31-0.45%, approaching human-level performance on clean speech.
     source_title: "ScienceDirect EAAI (2025) -- A review of speaker verification: Methods, architectures, and future directions"
-    source_url: "https://www.sciencedirect.com/science/article/pii/S0952197625023590"
-    confidence: "high"
-  - id: "af-speaker-recognition-2"
-    statement: "Nature Scientific Reports (July 2025) demonstrated an enhanced deep learning framework for speaker diarization -- the Neuro-TM Diarizer integrating ECAPA-TDNN embeddings, TitaNet, and MarbleNet -- achieving 3.2% DER (Diarization Error Rate) on AMI meeting corpus, a 25% improvement over the previous SOTA (Pyannote), and demonstrating robust performance across noisy meeting scenarios with 4-8 overlapping speakers."
-    source_title: "Nature Scientific Reports (2025) -- Enhanced DL for speaker diarization -- doi:10.1038/s41598-025-09385-1"
-    source_url: "https://www.nature.com/articles/s41598-025-09385-1"
-    confidence: "high"
+    source_url: https://www.sciencedirect.com/science/article/pii/S0952197625023590
+    confidence: high
+  - id: af-speaker-recognition-2
+    statement: >-
+      Nature Scientific Reports (July 2025) demonstrated an enhanced deep learning framework for speaker diarization -- the Neuro-TM Diarizer integrating ECAPA-TDNN embeddings, TitaNet, and MarbleNet
+      -- achieving 3.2% DER (Diarization Error Rate) on AMI meeting corpus, a 25% improvement over the previous SOTA (Pyannote), and demonstrating robust performance across noisy meeting scenarios
+      with 4-8 overlapping speakers.
+    source_title: Nature Scientific Reports (2025) -- Enhanced DL for speaker diarization -- doi:10.1038/s41598-025-09385-1
+    source_url: https://www.nature.com/articles/s41598-025-09385-1
+    confidence: high
 primary_sources:
-  - id: "ps-speaker-recognition-1"
+  - id: ps-speaker-recognition-1
     title: "A review of speaker verification: Methods, network architectures, and future directions"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "Engineering Applications of Artificial Intelligence / Elsevier"
-    url: "https://www.sciencedirect.com/science/article/pii/S0952197625023590"
-  - id: "ps-speaker-recognition-2"
-    title: "An enhanced deep learning approach for speaker diarization using neural network architectures"
-    type: "academic_paper"
+    institution: Engineering Applications of Artificial Intelligence / Elsevier
+    url: https://www.sciencedirect.com/science/article/pii/S0952197625023590
+  - id: ps-speaker-recognition-2
+    title: An enhanced deep learning approach for speaker diarization using neural network architectures
+    type: academic_paper
     year: 2025
-    institution: "Nature Scientific Reports"
-    doi: "10.1038/s41598-025-09385-1"
-    url: "https://www.nature.com/articles/s41598-025-09385-1"
+    institution: Nature Scientific Reports
+    doi: 10.1038/s41598-025-09385-1
+    url: https://www.nature.com/articles/s41598-025-09385-1
 known_gaps:
-  - "Cross-lingual and cross-channel speaker recognition robustness"
-  - "Voice anonymization protecting speaker privacy while preserving linguistic content"
+  - Cross-lingual and cross-channel speaker recognition robustness
+  - Voice anonymization protecting speaker privacy while preserving linguistic content
 disputed_statements: []
+secondary_sources:
+  - title: "Deep Speaker Embeddings for Speaker Verification: A Comprehensive Review and Experimental Comparison"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Engineering Applications of AI (Elsevier)
+    url: https://doi.org/10.1016/j.engappai.2023.107416
+  - title: "Comparison of Modern Deep Learning Models for Speaker Verification: WavLM, TitaNet, ECAPA-TDNN, x-vectors"
+    type: journal_article
+    year: 2024
+    authors:
+      - multiple
+    institution: Applied Sciences (MDPI)
+    url: https://doi.org/10.3390/app14041329
+  - title: "X-Vectors: Robust DNN Embeddings for Speaker Recognition"
+    type: conference_paper
+    year: 2018
+    authors:
+      - Snyder, David
+      - Garcia-Romero, Daniel
+      - Sell, Gregory
+      - Povey, Daniel
+      - Khudanpur, Sanjeev
+    institution: JHU / ICASSP
+    url: https://doi.org/10.1109/ICASSP.2018.8461375
+  - title: "ECAPA-TDNN: Emphasized Channel Attention, Propagation and Aggregation in TDNN Based Speaker Verification"
+    type: conference_paper
+    year: 2020
+    authors:
+      - Desplanques, Brecht
+      - Thienpondt, Jenthe
+      - Demuynck, Kris
+    institution: Ghent University / Interspeech
+    url: https://arxiv.org/abs/2005.07143
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 Speaker recognition identifies who is speaking from their voice -- like a fingerprint for audio. From biometric authentication ("Is this really the account owner?") to meeting transcription ("Who said what?"), deep learning has transformed speaker verification and diarization from niche DSP problems to commercially deployed AI systems with near-human accuracy.
 

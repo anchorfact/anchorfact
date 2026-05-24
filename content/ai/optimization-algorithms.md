@@ -1,53 +1,85 @@
 ---
-id: "optimization-algorithms"
-title: "Optimization Algorithms for Deep Learning"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
+id: optimization-algorithms
+title: Optimization Algorithms for Deep Learning
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-optimization-algorithms-1"
-    statement: "Adam (Adaptive Moment Estimation), introduced by Kingma and Ba (2015), combines momentum (moving average of past gradients) with RMSProp (moving average of squared gradients), making it the default optimizer for most deep learning applications."
-    source_title: "Kingma & Ba, ICLR (2015)"
-    confidence: "high"
-  - id: "af-optimization-algorithms-2"
-    statement: "Learning rate scheduling — including step decay, cosine annealing (Loshchilov & Hutter, 2017), and warmup — is often more impactful than the choice of optimizer itself for final model performance."
-    source_title: "Loshchilov & Hutter, ICLR (2017)"
-    confidence: "high"
-
+  - id: af-optimization-algorithms-1
+    statement: >-
+      Adam (Adaptive Moment Estimation), introduced by Kingma and Ba (2015), combines momentum (moving average of past gradients) with RMSProp (moving average of squared gradients), making it the
+      default optimizer for most deep learning applications.
+    source_title: Kingma & Ba, ICLR (2015)
+    confidence: high
+  - id: af-optimization-algorithms-2
+    statement: >-
+      Learning rate scheduling — including step decay, cosine annealing (Loshchilov & Hutter, 2017), and warmup — is often more impactful than the choice of optimizer itself for final model
+      performance.
+    source_title: Loshchilov & Hutter, ICLR (2017)
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "Second-order methods (KFAC, Shampoo)"
-  - "Optimizer selection for specific architectures"
-
+  - Second-order methods (KFAC, Shampoo)
+  - Optimizer selection for specific architectures
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
 primary_sources:
   - title: "Adam: A Method for Stochastic Optimization"
-    type: "academic_paper"
+    type: academic_paper
     year: 2015
-    url: "https://arxiv.org/abs/1412.6980"
-    institution: "ICLR"
+    url: https://arxiv.org/abs/1412.6980
+    institution: ICLR
   - title: "SGDR: Stochastic Gradient Descent with Warm Restarts"
-    type: "academic_paper"
+    type: academic_paper
     year: 2017
-    url: "https://arxiv.org/abs/1608.03983"
-    institution: "ICLR"
-
+    url: https://arxiv.org/abs/1608.03983
+    institution: ICLR
+secondary_sources:
+  - title: "Gradient Descent Algorithm Survey: From SGD to Adam to Lion — A Practical Configuration Guide for Deep Learning"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: arXiv
+    url: https://arxiv.org/abs/2511.20725
+  - title: "A Refined Lion Optimizer for Deep Learning: Faster Training with Lower Memory"
+    type: journal_article
+    year: 2025
+    authors:
+      - Chen, Xiangning
+      - Liang, Chen
+      - Huang, Da
+      - et al.
+    institution: Google / Nature Scientific Reports
+    url: https://doi.org/10.1038/s41598-025-07112-4
+  - title: "Adam: A Method for Stochastic Optimization (Seminal)"
+    type: conference_paper
+    year: 2015
+    authors:
+      - Kingma, Diederik P.
+      - Ba, Jimmy
+    institution: ICLR / Google / University of Toronto
+    url: https://arxiv.org/abs/1412.6980
+  - title: Decoupled Weight Decay Regularization (AdamW)
+    type: conference_paper
+    year: 2019
+    authors:
+      - Loshchilov, Ilya
+      - Hutter, Frank
+    institution: ICLR / University of Freiburg
+    url: https://arxiv.org/abs/1711.05101
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 Optimization algorithms update neural network weights to minimize the loss function. Adam dominates practice, but SGD with momentum remains competitive when well-tuned.
 

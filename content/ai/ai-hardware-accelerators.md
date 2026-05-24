@@ -1,52 +1,80 @@
 ---
-id: "ai-hardware-accelerators"
+id: ai-hardware-accelerators
 title: "AI Hardware: NVIDIA H100/B200, TPUs, and Cerebras"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-ai-hardware-accelerators-1"
-    statement: "NVIDIA H100 (Hopper, 2022) delivers 1,979 TFLOPS (FP8) with 80GB HBM3. The B200 (Blackwell, 2024) doubles this to 4,500 TFLOPS (FP4) with 192GB HBM3e — providing 4x the training throughput of H100 for large language models."
-    source_title: "NVIDIA H100/B200 Whitepapers (2022-2024)"
-    confidence: "high"
-  - id: "af-ai-hardware-accelerators-2"
-    statement: "Cerebras WSE-3 (2024) is the largest chip ever built — 4 trillion transistors on a single wafer-scale chip with 900,000 AI cores and 44GB on-chip SRAM — designed to train models with trillions of parameters without distributed computing complexity."
-    source_title: "Cerebras WSE-3 Technical Brief (2024)"
-    confidence: "high"
-
+  - id: af-ai-hardware-accelerators-1
+    statement: >-
+      NVIDIA H100 (Hopper, 2022) delivers 1,979 TFLOPS (FP8) with 80GB HBM3. The B200 (Blackwell, 2024) doubles this to 4,500 TFLOPS (FP4) with 192GB HBM3e — providing 4x the training throughput of
+      H100 for large language models.
+    source_title: NVIDIA H100/B200 Whitepapers (2022-2024)
+    confidence: high
+  - id: af-ai-hardware-accelerators-2
+    statement: >-
+      Cerebras WSE-3 (2024) is the largest chip ever built — 4 trillion transistors on a single wafer-scale chip with 900,000 AI cores and 44GB on-chip SRAM — designed to train models with trillions
+      of parameters without distributed computing complexity.
+    source_title: Cerebras WSE-3 Technical Brief (2024)
+    confidence: high
 completeness: 0.9
-
 primary_sources:
-  - title: "NVIDIA H100 Tensor Core GPU Architecture"
-    type: "official_documentation"
+  - title: NVIDIA H100 Tensor Core GPU Architecture
+    type: official_documentation
     year: 2022
-    url: "https://resources.nvidia.com/en-us-tensor-core"
-    institution: "NVIDIA"
+    url: https://resources.nvidia.com/en-us-tensor-core
+    institution: NVIDIA
   - title: "Cerebras WSE-3: The Fastest AI Chip in the World"
-    type: "official_report"
+    type: official_report
     year: 2024
-    url: "https://www.cerebras.net/product-chip/"
-    institution: "Cerebras Systems"
-
+    url: https://www.cerebras.net/product-chip/
+    institution: Cerebras Systems
 known_gaps:
-  - "Memory bandwidth wall in AI training"
-  - "Optical interconnect for scale-up networking"
-
+  - Memory bandwidth wall in AI training
+  - Optical interconnect for scale-up networking
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
+secondary_sources:
+  - title: A Survey on Deep Learning Hardware Accelerators for Heterogeneous HPC and Edge Computing
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/3729215
+  - title: "High-Speed Emerging Memories for AI Hardware Accelerators: A Comprehensive Review"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Nature Reviews Electrical Engineering
+    url: https://doi.org/10.1038/s44287-023-00002-9
+  - title: "Hardware for Deep Learning Acceleration: From GPUs to Neuromorphic Chips"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Advanced Intelligent Systems (Wiley)
+    url: https://doi.org/10.1002/aisy.202300762
+  - title: "Performance and Efficiency Gains of NPU-Based AI Inference: A Systematic GPU vs. NPU Comparison"
+    type: journal_article
+    year: 2025
+    authors:
+      - multiple
+    institution: Systems (MDPI)
+    url: https://doi.org/10.3390/systems13090797
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI hardware has become the primary bottleneck and enabler of AI progress. NVIDIA dominates the GPU market (H100→B200 pipeline); Google TPUs and Cerebras wafer-scale chips offer alternative architectures for specialized workloads.
 
