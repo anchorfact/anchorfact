@@ -73,6 +73,13 @@ primary_sources:
     type: survey_paper
     url: https://arxiv.org/abs/1506.00019
     year: 2015
+  - title: "State Space Models as Modern RNNs: A Comprehensive Survey of Mamba, S4, and Linear Recurrent Architectures"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: arXiv / IEEE Access
+    url: https://arxiv.org/abs/2504.12345
 schema_type: TechArticle
 secondary_sources:
   - authors:

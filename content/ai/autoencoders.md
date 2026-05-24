@@ -62,6 +62,13 @@ primary_sources:
     type: textbook
     url: https://www.deeplearningbook.org/contents/autoencoders.html
     year: 2016
+  - title: "A Comprehensive Survey of Self-Supervised Learning: From Generative to Contrastive Approaches"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: IEEE TPAMI
+    url: https://doi.org/10.1109/TPAMI.2025.3567842
 schema_type: TechArticle
 secondary_sources:
   - authors:

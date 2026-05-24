@@ -79,6 +79,13 @@ primary_sources:
     type: conference_paper
     url: https://arxiv.org/abs/1611.03530
     year: 2017
+  - title: A Comprehensive Survey of Modern Regularization Techniques for Deep Neural Networks in 2025
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Neurocomputing (Elsevier)
+    url: https://doi.org/10.1016/j.neucom.2025.128639
 schema_type: TechArticle
 secondary_sources:
   - authors:

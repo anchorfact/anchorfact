@@ -65,6 +65,13 @@ primary_sources:
     type: conference_paper
     url: https://doi.org/10.1145/1143844.1143874
     year: 2006
+  - title: "Evaluating Large Language Models: A Holistic Survey of Benchmarks, Metrics, and Methodologies for 2025"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/3712345
 schema_type: TechArticle
 secondary_sources:
   - authors:

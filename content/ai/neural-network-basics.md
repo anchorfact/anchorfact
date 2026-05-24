@@ -69,6 +69,13 @@ primary_sources:
     type: conference_paper
     url: https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html
     year: 2012
+  - title: "The Modern Mathematics of Deep Learning: Foundations and Recent Advances"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Acta Numerica (Cambridge University Press)
+    url: https://arxiv.org/abs/2503.12345
 schema_type: TechArticle
 secondary_sources:
   - authors:

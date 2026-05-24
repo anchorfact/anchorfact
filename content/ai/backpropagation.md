@@ -49,6 +49,13 @@ primary_sources:
     year: 2016
     url: https://arxiv.org/abs/1512.03385
     institution: CVPR
+  - title: "A Comprehensive Survey of Optimization Methods in Deep Learning: From SGD to Schedule-Free Optimizers"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: IEEE Access
+    url: https://doi.org/10.1109/ACCESS.2025.3567842
 secondary_sources:
   - title: Deep Learning (Nature Review)
     type: review
