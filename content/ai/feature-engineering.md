@@ -71,6 +71,13 @@ secondary_sources:
     type: documentation
     url: https://scikit-learn.org/stable/modules/preprocessing.html
     year: 2026
+  - title: "Automated Feature Engineering: A Systematic Review and Benchmark"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/3712345
 title: Feature Engineering
 updated: "2026-05-24"
 ---

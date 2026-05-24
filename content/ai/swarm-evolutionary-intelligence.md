@@ -17,12 +17,16 @@ data_period: static
 completeness: 0.85
 atomic_facts:
   - id: af-swarm-evolutionary-intelligence-1
-    statement: NEAT (NeuroEvolution of Augmenting Topologies, Stanley & Miikkulainen, 2002) evolves both weights and network architecture simultaneously — starting from minimal networks and complexifying through speciation, achieving competitive results on reinforcement learning benchmarks without backpropagation.
+    statement: >-
+      NEAT (NeuroEvolution of Augmenting Topologies, Stanley & Miikkulainen, 2002) evolves both weights and network architecture simultaneously — starting from minimal networks and complexifying
+      through speciation, achieving competitive results on reinforcement learning benchmarks without backpropagation.
     source_title: Stanley & Miikkulainen, Evolutionary Computation (2002)
     source_url: https://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf
     confidence: high
   - id: af-swarm-evolutionary-intelligence-2
-    statement: Particle Swarm Optimization (Kennedy & Eberhart, 1995) is inspired by bird flocking and fish schooling — particles adjust their position based on personal best and swarm best, with few hyperparameters and strong global search capability for non-differentiable optimization.
+    statement: >-
+      Particle Swarm Optimization (Kennedy & Eberhart, 1995) is inspired by bird flocking and fish schooling — particles adjust their position based on personal best and swarm best, with few
+      hyperparameters and strong global search capability for non-differentiable optimization.
     source_title: Kennedy & Eberhart, IEEE ICNN (1995)
     source_url: https://ieeexplore.ieee.org/document/10243027
     confidence: high
@@ -73,8 +77,15 @@ secondary_sources:
       - Eberhart, Russell
     institution: IEEE ICNN
     url: https://doi.org/10.1109/ICNN.1995.488968
+  - title: "Swarm Intelligence and Deep Learning: A Comprehensive Survey of Recent Advances"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Swarm and Evolutionary Computation (Elsevier)
+    url: https://doi.org/10.1016/j.swevo.2025.101789
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 Evolutionary computation draws inspiration from biological evolution — mutation, crossover, selection — to optimize without gradients. NEAT evolves neural architectures; PSO mimics swarm behavior; genetic algorithms solve combinatorial problems.
 

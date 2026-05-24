@@ -88,6 +88,13 @@ secondary_sources:
       - Cremers, Daniel
     institution: Technical University of Munich
     url: https://arxiv.org/abs/1710.10686
+  - title: A Comprehensive Survey of Regularization Techniques in Deep Learning
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Neurocomputing (Elsevier)
+    url: https://doi.org/10.1016/j.neucom.2025.128639
 updated: "2026-05-24"
 ---
 ## TL;DR

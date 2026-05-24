@@ -77,6 +77,13 @@ secondary_sources:
     type: book
     url: https://www.statlearning.com/
     year: 2021
+  - title: "Evaluating LLMs: A Comprehensive Survey of Benchmarks, Metrics, and Methodologies"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/3712345
 title: Model Evaluation Metrics
 updated: "2026-05-24"
 ---

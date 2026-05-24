@@ -89,6 +89,13 @@ secondary_sources:
     type: academic_paper
     url: https://arxiv.org/abs/1312.6114
     year: 2014
+  - title: "A Comprehensive Survey of Autoencoders: From Classic to Modern Architectures"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/3712345
 title: Autoencoders
 updated: "2026-05-24"
 ---

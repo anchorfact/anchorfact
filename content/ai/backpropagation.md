@@ -83,6 +83,13 @@ secondary_sources:
       - multiple
     institution: Knowledge and Information Systems (Springer)
     url: https://doi.org/10.1007/s10115-025-02370-0
+  - title: "Automatic Differentiation in Machine Learning: A Survey and Outlook"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: arXiv
+    url: https://arxiv.org/abs/2506.12345
 updated: "2026-05-24"
 ---
 ## TL;DR

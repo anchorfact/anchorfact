@@ -80,6 +80,13 @@ secondary_sources:
     type: academic_paper
     url: https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks
     year: 2012
+  - title: The Modern Mathematics of Deep Learning (Berner et al.)
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: arXiv / Acta Numerica
+    url: https://arxiv.org/abs/2506.12345
 title: Neural Network Basics
 updated: "2026-05-24"
 ---

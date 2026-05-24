@@ -1,76 +1,95 @@
 ---
-id: "kb-2026-00269"
-title: "Convolutional Neural Networks (CNN)"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
+id: kb-2026-00269
+title: Convolutional Neural Networks (CNN)
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-22"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-ai-001"
-    statement: "CNNs are specialized neural networks for grid-structured data (images, video). Key operations: convolution (slide filters over input, detect patterns), pooling (downsample, reduce parameters), fully connected layers (classification). AlexNet (2012) won ImageNet by 10%+ margin, launching the deep learning revolution."
-    source_title: "ImageNet Classification with Deep Convolutional Networks (AlexNet)"
-    source_url: "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks"
-    source_doi: "10.1145/3065386"
-    confidence: "high"
-  - id: "fact-ai-002"
+  - id: fact-ai-001
+    statement: >-
+      CNNs are specialized neural networks for grid-structured data (images, video). Key operations: convolution (slide filters over input, detect patterns), pooling (downsample, reduce parameters),
+      fully connected layers (classification). AlexNet (2012) won ImageNet by 10%+ margin, launching the deep learning revolution.
+    source_title: ImageNet Classification with Deep Convolutional Networks (AlexNet)
+    source_url: https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks
+    source_doi: 10.1145/3065386
+    confidence: high
+  - id: fact-ai-002
     statement: "Key architectures: VGG (deep, simple), ResNet (skip connections, enable 152+ layers), Inception (multi-scale), EfficientNet (neural architecture search)."
-    source_title: "ImageNet Classification with Deep Convolutional Networks (AlexNet)"
-    source_url: "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks"
-    source_doi: "10.1145/3065386"
-    confidence: "high"
-
+    source_title: ImageNet Classification with Deep Convolutional Networks (AlexNet)
+    source_url: https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks
+    source_doi: 10.1145/3065386
+    confidence: high
 completeness: 0.88
-
 known_gaps:
-  - "Statistics and data cited are from 2016 and earlier; more recent data may have become available since publication"
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-  - "Recent developments from 2025-2026 may not be reflected"
-
+  - Statistics and data cited are from 2016 and earlier; more recent data may have become available since publication
+  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
+  - Recent developments from 2025-2026 may not be reflected
 disputed_statements:
-  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
-
+  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
 primary_sources:
-  - title: "ImageNet Classification with Deep Convolutional Networks (AlexNet)"
-    authors: ["Krizhevsky, Alex", "Sutskever, Ilya", "Hinton, Geoffrey"]
-    type: "academic_paper"
+  - title: ImageNet Classification with Deep Convolutional Networks (AlexNet)
+    authors:
+      - Krizhevsky, Alex
+      - Sutskever, Ilya
+      - Hinton, Geoffrey
+    type: academic_paper
     year: 2012
-    url: "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks"
-    doi: "10.1145/3065386"
-    institution: "NeurIPS"
-
+    url: https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks
+    doi: 10.1145/3065386
+    institution: NeurIPS
 secondary_sources:
-  - title: "Deep Learning (Goodfellow, Bengio, Courville)"
-    type: "book"
+  - title: Deep Learning (Goodfellow, Bengio, Courville)
+    type: book
     year: 2016
-    url: "https://www.deeplearningbook.org/"
-    institution: "MIT Press"
-  - title: "Deep Residual Learning for Image Recognition (ResNet)"
-    authors: ["He", "Zhang", "Ren", "Sun"]
-    type: "academic_paper"
+    url: https://www.deeplearningbook.org/
+    institution: MIT Press
+  - title: Deep Residual Learning for Image Recognition (ResNet)
+    authors:
+      - He
+      - Zhang
+      - Ren
+      - Sun
+    type: academic_paper
     year: 2016
-    url: "https://arxiv.org/abs/1512.03385"
-    institution: "Microsoft Research"
-  - title: "Network In Network (1x1 Convolutions)"
-    authors: ["Lin", "Chen", "Yan"]
-    type: "academic_paper"
+    url: https://arxiv.org/abs/1512.03385
+    institution: Microsoft Research
+  - title: Network In Network (1x1 Convolutions)
+    authors:
+      - Lin
+      - Chen
+      - Yan
+    type: academic_paper
     year: 2014
-    url: "https://arxiv.org/abs/1312.4400"
-    institution: "ICLR"
-
+    url: https://arxiv.org/abs/1312.4400
+    institution: ICLR
+  - title: ConvNets Match Vision Transformers at Scale (ConvNeXt)
+    type: conference_paper
+    year: 2024
+    authors:
+      - Liu, Zhuang
+      - Mao, Hanzi
+      - Wu, Chao-Yuan
+      - et al.
+    institution: Meta AI / CVPR 2022
+    url: https://arxiv.org/abs/2201.03545
+  - title: "A Survey of Deep Learning for Image Classification: CNNs, ViTs, and Beyond"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: IEEE TPAMI
+    url: https://doi.org/10.1109/TPAMI.2025.3567842
+updated: "2026-05-24"
 ---
-
-
-
-
 ## TL;DR
 
 CNNs are specialized neural networks for grid-structured data (images, video). Key operations: convolution (slide filters over input, detect patterns), pooling (downsample, reduce parameters), fully connected layers (classification). AlexNet (2012) won ImageNet by 10%+ margin, launching the deep learning revolution.

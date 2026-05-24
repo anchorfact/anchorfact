@@ -101,6 +101,13 @@ secondary_sources:
     type: survey_paper
     url: https://doi.org/10.1016/j.websem.2024.100821
     year: 2024
+  - title: "From Linked Data to Knowledge Graphs: A Decade Survey and Vision for the Semantic Web"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Semantic Web Journal
+    url: https://doi.org/10.3233/SW-250123
 title: "Semantic Web and Ontologies: Knowledge Representation, OWL Reasoning, and Linked Data"
 updated: "2026-05-24"
 ---

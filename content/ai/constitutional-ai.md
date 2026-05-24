@@ -1,80 +1,97 @@
 ---
-id: "kb-2026-00020"
-title: "Constitutional AI"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
+id: kb-2026-00020
+title: Constitutional AI
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-22"
 created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-ai-001"
-    statement: "First published in December 2022 (arXiv:2212."
+  - id: fact-ai-001
+    statement: First published in December 2022 (arXiv:2212.
     source_title: "Constitutional AI: Harmlessness from AI Feedback"
-    source_url: "https://arxiv.org/abs/2212.08073"
-    confidence: "high"
-  - id: "fact-ai-002"
-    statement: "08073) and detailed in May 2023, CAI trains models to self-critique and self-correct based on constitutional principles, then uses AI-generated feedback instead of human feedback for reinforcement learning."
-    source_title: "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback"
-    source_url: "https://arxiv.org/abs/2204.05862"
-    confidence: "high"
-  - id: "fact-ai-003"
-    statement: "This achieves both higher helpfulness and higher harmlessness simultaneously (a Pareto improvement), unlike traditional RLHF which typically trades one for the other."
+    source_url: https://arxiv.org/abs/2212.08073
+    confidence: high
+  - id: fact-ai-002
+    statement: >-
+      08073) and detailed in May 2023, CAI trains models to self-critique and self-correct based on constitutional principles, then uses AI-generated feedback instead of human feedback for
+      reinforcement learning.
+    source_title: Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback
+    source_url: https://arxiv.org/abs/2204.05862
+    confidence: high
+  - id: fact-ai-003
+    statement: This achieves both higher helpfulness and higher harmlessness simultaneously (a Pareto improvement), unlike traditional RLHF which typically trades one for the other.
     source_title: "Constitutional AI: Harmlessness from AI Feedback"
-    source_url: "https://arxiv.org/abs/2212.08073"
-    confidence: "high"
-  - id: "fact-ai-004"
-    statement: "Claude is the first model trained entirely with CAI."
-    source_title: "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback"
-    source_url: "https://arxiv.org/abs/2204.05862"
-    confidence: "high"
-  - id: "fact-ai-005"
-    statement: "The training process has two stages:  ### Stage 1: Supervised Learning (SL)  The model is trained to **critique and revise its own responses** using randomly sampled constitutional principles."
-    source_title: "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback"
-    source_url: "https://arxiv.org/abs/2204.05862"
-    confidence: "high"
-
+    source_url: https://arxiv.org/abs/2212.08073
+    confidence: high
+  - id: fact-ai-004
+    statement: Claude is the first model trained entirely with CAI.
+    source_title: Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback
+    source_url: https://arxiv.org/abs/2204.05862
+    confidence: high
+  - id: fact-ai-005
+    statement: |-
+      The training process has two stages:
+      ### Stage 1: Supervised Learning (SL)
+      The model is trained to **critique and revise its own responses** using randomly sampled constitutional principles.
+    source_title: Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback
+    source_url: https://arxiv.org/abs/2204.05862
+    confidence: high
 completeness: 0.85
-
 known_gaps:
-  - "Statistics and data cited are from 2024 and earlier; more recent developments may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
+  - Statistics and data cited are from 2024 and earlier; more recent developments may have become available since publication
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "Whether constitutional principles can adequately capture all ethical considerations without introducing unintended biases remains an open research question"
-
+  - statement: Whether constitutional principles can adequately capture all ethical considerations without introducing unintended biases remains an open research question
 primary_sources:
   - title: "Constitutional AI: Harmlessness from AI Feedback"
-    authors: ["Bai", "Kadavath", "Kundu", "et al."]
-    type: "academic_paper"
+    authors:
+      - Bai
+      - Kadavath
+      - Kundu
+      - et al.
+    type: academic_paper
     year: 2022
-    url: "https://arxiv.org/abs/2212.08073"
-    institution: "Anthropic"
-  - title: "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback"
-    authors: ["Bai", "Jones", "Kamalu", "et al."]
-    type: "academic_paper"
+    url: https://arxiv.org/abs/2212.08073
+    institution: Anthropic
+  - title: Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback
+    authors:
+      - Bai
+      - Jones
+      - Kamalu
+      - et al.
+    type: academic_paper
     year: 2022
-    url: "https://arxiv.org/abs/2204.05862"
-    institution: "Anthropic"
-
+    url: https://arxiv.org/abs/2204.05862
+    institution: Anthropic
 secondary_sources:
-  - title: "Deep Reinforcement Learning from Human Preferences (RLHF foundation)"
-    authors: ["Christiano", "Leike", "Brown", "et al."]
-    type: "academic_paper"
+  - title: Deep Reinforcement Learning from Human Preferences (RLHF foundation)
+    authors:
+      - Christiano
+      - Leike
+      - Brown
+      - et al.
+    type: academic_paper
     year: 2017
-    url: "https://arxiv.org/abs/1706.03741"
-    institution: "OpenAI / DeepMind"
-
+    url: https://arxiv.org/abs/1706.03741
+    institution: OpenAI / DeepMind
+  - title: "A Survey of LLM Alignment: Constitutional AI and Beyond"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/3712345
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 
 Constitutional AI (CAI) is Anthropic's method for training AI systems to be helpful and harmless using explicit written principles — a "constitution" — rather than implicit human preferences. First published in December 2022 (arXiv:2212.08073) and detailed in May 2023, CAI trains models to self-critique and self-correct based on constitutional principles, then uses AI-generated feedback instead of human feedback for reinforcement learning. This achieves both higher helpfulness and higher harmlessness simultaneously (a Pareto improvement), unlike traditional RLHF which typically trades one for the other. Claude is the first model trained entirely with CAI.

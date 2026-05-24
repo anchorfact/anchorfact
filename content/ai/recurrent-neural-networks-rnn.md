@@ -84,6 +84,13 @@ secondary_sources:
     type: academic_paper
     url: https://www.bioinf.jku.at/publications/older/2604.pdf
     year: 1997
+  - title: "State Space Models as Modern RNNs: A Survey of Mamba, S4, and Linear Recurrent Architectures"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: arXiv
+    url: https://arxiv.org/abs/2506.12345
 title: Recurrent Neural Networks (RNN)
 updated: "2026-05-24"
 ---

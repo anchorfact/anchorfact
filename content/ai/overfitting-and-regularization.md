@@ -92,6 +92,13 @@ secondary_sources:
     type: academic_paper
     url: https://jmlr.org/papers/v15/srivastava14a.html
     year: 2014
+  - title: A Comprehensive Survey of Regularization Techniques in Deep Learning
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Neurocomputing (Elsevier)
+    url: https://doi.org/10.1016/j.neucom.2025.128639
 title: Overfitting and Regularization
 updated: "2026-05-24"
 ---
