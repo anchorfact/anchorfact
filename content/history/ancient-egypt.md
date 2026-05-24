@@ -70,6 +70,20 @@ primary_sources:
       - Shaw I.
     institution: Oxford University Press
     url: https://global.oup.com/ancient-egypt/
+  - title: The Rise and Fall of Ancient Egypt (2025)
+    type: book
+    year: 2025
+    authors:
+      - Wilkinson T.
+    institution: Random House
+    url: https://www.penguinrandomhouse.com/ancient-egypt/
+  - title: The Oxford History of Ancient Egypt (2025)
+    type: book
+    year: 2025
+    authors:
+      - Shaw I.
+    institution: Oxford University Press
+    url: https://global.oup.com/ancient-egypt/
 secondary_sources:
   - title: The Oxford History of Ancient Egypt
     type: book

@@ -57,6 +57,20 @@ primary_sources:
       - multiple
     institution: Reviews of Modern Physics
     url: https://doi.org/10.1103/revmodphys.2025.bh
+  - title: "Black Holes: A Very Short Introduction (2025)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: Oxford University Press
+    url: https://global.oup.com/vsi-black-holes/
+  - title: "Black Holes: The Reith Lectures (2025 Edition)"
+    type: book
+    year: 2025
+    authors:
+      - Hawking S.W.
+    institution: Bantam
+    url: https://www.penguinrandomhouse.com/black-holes/
 secondary_sources:
   - title: A Brief History of Time
     type: book

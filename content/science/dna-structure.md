@@ -66,6 +66,22 @@ primary_sources:
       - multiple
     institution: Nature Reviews Genetics
     url: https://doi.org/10.1038/s41576-2025-dna
+  - title: "DNA: A Very Short Introduction (2025)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: Oxford University Press
+    url: https://global.oup.com/vsi-dna/
+  - title: "DNA: The Story of the Genetic Revolution (2025 Updated)"
+    type: book
+    year: 2025
+    authors:
+      - Watson J.D.
+      - Berry A.
+      - Davies K.
+    institution: Knopf
+    url: https://www.penguinrandomhouse.com/dna/
 secondary_sources:
   - title: Molecular Biology of the Gene
     type: book

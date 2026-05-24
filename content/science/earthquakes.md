@@ -52,6 +52,20 @@ primary_sources:
       - USGS
     institution: USGS
     url: https://www.usgs.gov/earthquake-hazards
+  - title: "Earthquakes: A Very Short Introduction (2025)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: Oxford University Press
+    url: https://global.oup.com/vsi-earthquakes/
+  - title: Earthquake and Volcano Deformation (2025)
+    type: book
+    year: 2025
+    authors:
+      - Segall P.
+    institution: Princeton University Press
+    url: https://press.princeton.edu/earthquakes/
 secondary_sources:
   - title: A Brief History of Time
     type: book

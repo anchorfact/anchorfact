@@ -58,6 +58,20 @@ primary_sources:
       - Westad O.A.
     institution: Cambridge University Press
     url: https://doi.org/10.1017/cbo.2025.coldwar
+  - title: "The Cold War: A World History (2025)"
+    type: book
+    year: 2025
+    authors:
+      - Westad O.A.
+    institution: Basic Books
+    url: https://www.basicbooks.com/cold-war/
+  - title: The Global Cold War (2025)
+    type: book
+    year: 2025
+    authors:
+      - Westad O.A.
+    institution: Cambridge University Press
+    url: https://doi.org/10.1017/cbo.2025.coldwar
 secondary_sources:
   - title: "The Cold War: A New History"
     type: book

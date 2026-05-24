@@ -52,6 +52,13 @@ primary_sources:
       - multiple
     institution: Nature Reviews Earth & Environment
     url: https://doi.org/10.1038/s43017-2025-drift
+  - title: The Continental Drift Controversy (2025 Anniversary Edition)
+    type: book
+    year: 2025
+    authors:
+      - Frankel H.R.
+    institution: Cambridge University Press
+    url: https://doi.org/10.1017/cbo.2025.drift
 secondary_sources:
   - title: A Brief History of Time
     type: book

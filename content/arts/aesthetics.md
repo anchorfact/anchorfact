@@ -60,6 +60,13 @@ primary_sources:
       - multiple
     institution: Routledge
     url: https://www.routledge.com/aesthetics/
+  - title: "The Philosophy of Art: A Contemporary Introduction (2nd Edition, 2025)"
+    type: book
+    year: 2025
+    authors:
+      - Carroll N.
+    institution: Routledge
+    url: https://www.routledge.com/philosophy-of-art/
 secondary_sources:
   - title: The Story of Art
     type: book

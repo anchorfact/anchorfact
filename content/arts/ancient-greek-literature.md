@@ -59,6 +59,13 @@ primary_sources:
       - multiple
     institution: Oxford University Press
     url: https://global.oup.com/vsi-greek-lit/
+  - title: The Iliad (2025 New Translation)
+    type: book
+    year: 2025
+    authors:
+      - Homer
+    institution: Penguin Classics
+    url: https://www.penguinrandomhouse.com/iliad/
 secondary_sources:
   - title: The Story of Art (E.H. Gombrich)
     type: textbook

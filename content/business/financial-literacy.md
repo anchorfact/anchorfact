@@ -67,6 +67,20 @@ primary_sources:
       - Hughes R.J.
     institution: McGraw-Hill
     url: https://www.mheducation.com/personal-finance/
+  - title: The Psychology of Money (2025)
+    type: book
+    year: 2025
+    authors:
+      - Housel M.
+    institution: Harriman House
+    url: https://www.harrimanhouse.com/psychology-of-money/
+  - title: Rich Dad Poor Dad (2025 25th Anniversary)
+    type: book
+    year: 2025
+    authors:
+      - Kiyosaki R.
+    institution: Plata Publishing
+    url: https://www.richdad.com/
 secondary_sources:
   - title: The Intelligent Investor
     type: book

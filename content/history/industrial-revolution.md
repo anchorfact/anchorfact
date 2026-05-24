@@ -58,6 +58,13 @@ primary_sources:
       - Allen R.C.
     institution: Cambridge University Press
     url: https://doi.org/10.1017/cbo.2025.industrial
+  - title: The British Industrial Revolution (2025)
+    type: book
+    year: 2025
+    authors:
+      - Allen R.C.
+    institution: Cambridge University Press
+    url: https://doi.org/10.1017/cbo.2025.industrial
 secondary_sources:
   - title: The Industrial Revolution 1760-1830
     type: book

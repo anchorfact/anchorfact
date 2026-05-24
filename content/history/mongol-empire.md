@@ -53,6 +53,20 @@ primary_sources:
       - multiple
     institution: Cambridge University Press
     url: https://doi.org/10.1017/cbo.2025.mongol
+  - title: The Mongol Empire (2025 Edition)
+    type: book
+    year: 2025
+    authors:
+      - Weatherford J.
+    institution: Crown
+    url: https://www.crownpublishing.com/mongol/
+  - title: Genghis Khan and the Making of the Modern World (2025)
+    type: book
+    year: 2025
+    authors:
+      - Weatherford J.
+    institution: Broadway Books
+    url: https://www.penguinrandomhouse.com/genghis-khan/
 secondary_sources:
   - title: "Empire: How Britain Made the Modern World"
     type: book

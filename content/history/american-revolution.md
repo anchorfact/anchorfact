@@ -57,6 +57,13 @@ primary_sources:
       - McCullough D.
     institution: Simon & Schuster
     url: https://www.simonandschuster.com/1776/
+  - title: The Glorious Cause (2025 Edition)
+    type: book
+    year: 2025
+    authors:
+      - Middlekauff R.
+    institution: Oxford University Press
+    url: https://global.oup.com/american-revolution/
 secondary_sources:
   - title: Encyclopaedia Britannica
     type: reference

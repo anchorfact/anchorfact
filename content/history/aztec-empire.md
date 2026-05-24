@@ -53,6 +53,20 @@ primary_sources:
       - Carrasco D.
     institution: Oxford University Press
     url: https://global.oup.com/vsi-aztecs/
+  - title: "Fifth Sun: A New History of the Aztecs (2025)"
+    type: book
+    year: 2025
+    authors:
+      - Townsend C.
+    institution: Oxford University Press
+    url: https://global.oup.com/aztecs/
+  - title: The Aztecs (3rd Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Smith M.E.
+    institution: Wiley-Blackwell
+    url: https://www.wiley.com/aztecs/
 secondary_sources:
   - title: "Empire: How Britain Made the Modern World"
     type: book

@@ -42,6 +42,24 @@ primary_sources:
     year: 1958
     url: https://www.jstor.org/stable/1809766
     institution: American Economic Review
+  - title: Principles of Corporate Finance (15th Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Brealey R.A.
+      - Myers S.C.
+      - Allen F.
+    institution: McGraw-Hill
+    url: https://www.mheducation.com/corporate-finance/
+  - title: "Valuation: Measuring and Managing the Value of Companies (2025)"
+    type: book
+    year: 2025
+    authors:
+      - Koller T.
+      - Goedhart M.
+      - Wessels D.
+    institution: Wiley
+    url: https://www.wiley.com/valuation/
 known_gaps:
   - Behavioral corporate finance
   - ESG integration in valuation

@@ -53,6 +53,20 @@ primary_sources:
       - multiple
     institution: Oxford University Press
     url: https://global.oup.com/roman-world/
+  - title: "SPQR: A History of Ancient Rome (2025)"
+    type: book
+    year: 2025
+    authors:
+      - Beard M.
+    institution: W.W. Norton
+    url: https://wwnorton.com/SPQR/
+  - title: The Fall of the Roman Empire (2025)
+    type: book
+    year: 2025
+    authors:
+      - Heather P.
+    institution: Oxford University Press
+    url: https://global.oup.com/roman-fall/
 secondary_sources:
   - title: "SPQR: A History of Ancient Rome"
     type: book

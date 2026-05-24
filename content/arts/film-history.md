@@ -59,6 +59,13 @@ primary_sources:
       - Bordwell D.
     institution: McGraw-Hill
     url: https://www.mheducation.com/film-history/
+  - title: The Story of Film (2025 Updated)
+    type: book
+    year: 2025
+    authors:
+      - Cousins M.
+    institution: Pavilion Books
+    url: https://www.pavilionbooks.com/film/
 secondary_sources:
   - title: "Film History: An Introduction"
     type: book

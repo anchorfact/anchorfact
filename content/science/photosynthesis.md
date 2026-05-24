@@ -59,6 +59,13 @@ primary_sources:
       - multiple
     institution: Nature Plants
     url: https://doi.org/10.1038/s41477-2025-photo
+  - title: "Photosynthesis: A 2025 Review"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Nature Plants
+    url: https://doi.org/10.1038/s41477-2025-photo
 secondary_sources:
   - title: React Documentation
     type: documentation

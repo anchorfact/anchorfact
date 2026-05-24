@@ -74,6 +74,13 @@ primary_sources:
       - multiple
     institution: Nature Reviews Earth & Environment
     url: https://doi.org/10.1038/s43017-2025-plate
+  - title: "The Solid Earth: An Introduction to Global Geophysics (2025)"
+    type: book
+    year: 2025
+    authors:
+      - Fowler C.M.R.
+    institution: Cambridge University Press
+    url: https://doi.org/10.1017/cbo.2025.geophysics
 secondary_sources:
   - title: A Brief History of Time
     type: book

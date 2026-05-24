@@ -47,6 +47,20 @@ primary_sources:
     year: 2024
     url: https://www.worldwildlife.org/places/amazon
     institution: World Wildlife Fund
+  - title: "The Andes: A Geographical Portrait (2025)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: Springer
+    url: https://doi.org/10.1007/andes.2025
+  - title: "South America: A Very Short Introduction (2025)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: Oxford University Press
+    url: https://global.oup.com/vsi-south-america/
 secondary_sources:
   - title: "Latin America and the Caribbean: A Regional Geography (Gwynne & Kay)"
     type: textbook

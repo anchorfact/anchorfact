@@ -70,6 +70,20 @@ primary_sources:
       - Ross A.
     institution: Picador
     url: https://us.macmillan.com/rest-is-noise/
+  - title: The Classical Music Book (2025 Edition)
+    type: book
+    year: 2025
+    authors:
+      - DK
+    institution: DK Publishing
+    url: https://www.dk.com/classical-music/
+  - title: "The Rest Is Noise: Listening to the Twentieth Century (2025 Updated)"
+    type: book
+    year: 2025
+    authors:
+      - Ross A.
+    institution: Picador
+    url: https://us.macmillan.com/rest-is-noise/
 secondary_sources:
   - title: "The Rest Is Noise: Listening to the Twentieth Century"
     type: book

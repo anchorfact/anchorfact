@@ -57,6 +57,13 @@ primary_sources:
       - multiple
     institution: Oxford University Press
     url: https://global.oup.com/vsi-civil-rights/
+  - title: "Parting the Waters: America in the King Years (2025)"
+    type: book
+    year: 2025
+    authors:
+      - Branch T.
+    institution: Simon & Schuster
+    url: https://www.simonandschuster.com/civil-rights/
 secondary_sources:
   - title: Encyclopaedia Britannica
     type: reference

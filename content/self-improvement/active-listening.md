@@ -58,6 +58,21 @@ primary_sources:
       - Switzler A.
     institution: McGraw-Hill
     url: https://www.mheducation.com/crucial-conversations/
+  - title: You're Not Listening (2025)
+    type: book
+    year: 2025
+    authors:
+      - Murphy K.
+    institution: Celadon Books
+    url: https://us.macmillan.com/youre-not-listening/
+  - title: Crucial Conversations (3rd Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Grenny J.
+      - Patterson K.
+    institution: McGraw-Hill
+    url: https://www.mheducation.com/crucial-conversations/
 secondary_sources:
   - title: "Nonviolent Communication: A Language of Life"
     type: book

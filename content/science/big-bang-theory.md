@@ -57,6 +57,20 @@ primary_sources:
       - multiple
     institution: Nature Reviews Physics
     url: https://doi.org/10.1038/s42254-2025-cosmo
+  - title: "Cosmology: A Very Short Introduction (2025)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: Oxford University Press
+    url: https://global.oup.com/vsi-cosmology/
+  - title: The First Three Minutes (2025 Updated)
+    type: book
+    year: 2025
+    authors:
+      - Weinberg S.
+    institution: Basic Books
+    url: https://www.basicbooks.com/big-bang/
 secondary_sources:
   - title: A Brief History of Time
     type: book

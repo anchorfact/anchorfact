@@ -60,6 +60,13 @@ primary_sources:
       - multiple
     institution: Nature Reviews Molecular Cell Biology
     url: https://doi.org/10.1038/s41580-2025-cell
+  - title: "Cell Structure and Function: A 2025 Review"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Nature Reviews Molecular Cell Biology
+    url: https://doi.org/10.1038/s41580-2025-cell
 secondary_sources:
   - title: A Brief History of Time
     type: book

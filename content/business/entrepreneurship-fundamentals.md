@@ -53,6 +53,21 @@ primary_sources:
       - Kuratko D.F.
     institution: Cengage
     url: https://www.cengage.com/entrepreneurship/
+  - title: The Lean Startup (15th Anniversary, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Ries E.
+    institution: Crown Business
+    url: https://theleanstartup.com/
+  - title: Zero to One (2025 Updated)
+    type: book
+    year: 2025
+    authors:
+      - Thiel P.
+      - Masters B.
+    institution: Crown Business
+    url: https://www.crownpublishing.com/zero-to-one/
 secondary_sources:
   - title: The Lean Startup
     type: book

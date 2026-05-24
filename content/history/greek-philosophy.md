@@ -62,6 +62,13 @@ primary_sources:
       - multiple
     institution: Cambridge University Press
     url: https://doi.org/10.1017/cbo.2025.greek
+  - title: The Cambridge Companion to Ancient Greek Philosophy (2025)
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: Cambridge University Press
+    url: https://doi.org/10.1017/cbo.2025.greek
 secondary_sources:
   - title: "The Greeks: A Global History"
     type: book

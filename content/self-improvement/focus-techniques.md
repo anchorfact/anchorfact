@@ -65,6 +65,20 @@ primary_sources:
       - Eyal N.
     institution: BenBella Books
     url: https://www.benbellabooks.com/indistractable/
+  - title: Deep Work (2025)
+    type: book
+    year: 2025
+    authors:
+      - Newport C.
+    institution: Grand Central
+    url: https://www.hachettebookgroup.com/deep-work/
+  - title: Indistractable (2025 Updated)
+    type: book
+    year: 2025
+    authors:
+      - Eyal N.
+    institution: BenBella Books
+    url: https://www.benbellabooks.com/indistractable/
 secondary_sources:
   - title: Atomic Habits (James Clear)
     type: book

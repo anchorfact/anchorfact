@@ -67,6 +67,13 @@ primary_sources:
       - Denvir B.
     institution: Thames & Hudson
     url: https://thamesandhudson.com/impressionists/
+  - title: Impressionism (Art & Ideas) (2025)
+    type: book
+    year: 2025
+    authors:
+      - Rubin J.H.
+    institution: Phaidon
+    url: https://www.phaidon.com/impressionism/
 secondary_sources:
   - title: History of Art
     type: book

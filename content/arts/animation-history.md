@@ -65,6 +65,13 @@ primary_sources:
       - Bendazzi G.
     institution: CRC Press
     url: https://www.routledge.com/animation-history/
+  - title: The Animator's Survival Kit (Expanded Edition 2025)
+    type: book
+    year: 2025
+    authors:
+      - Williams R.
+    institution: Faber & Faber
+    url: https://www.faber.co.uk/animation/
 secondary_sources:
   - title: "Film History: An Introduction"
     type: book

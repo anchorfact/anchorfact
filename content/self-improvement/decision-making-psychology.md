@@ -64,6 +64,21 @@ primary_sources:
       - Sunstein C.R.
     institution: Little, Brown Spark
     url: https://www.littlebrown.com/noise/
+  - title: Decisive (2025)
+    type: book
+    year: 2025
+    authors:
+      - Heath C.
+      - Heath D.
+    institution: Crown Currency
+    url: https://www.crownpublishing.com/decisive/
+  - title: Thinking, Fast and Slow (2025)
+    type: book
+    year: 2025
+    authors:
+      - Kahneman D.
+    institution: FSG
+    url: https://us.macmillan.com/thinking-fast-and-slow/
 secondary_sources:
   - title: Thinking, Fast and Slow (Kahneman)
     type: textbook

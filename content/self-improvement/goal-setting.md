@@ -65,6 +65,20 @@ primary_sources:
       - Covey S.R.
     institution: Simon & Schuster
     url: https://www.simonandschuster.com/7-habits/
+  - title: Atomic Habits (2025)
+    type: book
+    year: 2025
+    authors:
+      - Clear J.
+    institution: Avery
+    url: https://www.penguinrandomhouse.com/atomic-habits/
+  - title: The 7 Habits of Highly Effective People (35th Anniversary, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Covey S.R.
+    institution: Simon & Schuster
+    url: https://www.simonandschuster.com/7-habits/
 secondary_sources:
   - title: Thinking, Fast and Slow (Daniel Kahneman)
     type: book

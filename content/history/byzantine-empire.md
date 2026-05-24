@@ -75,6 +75,20 @@ primary_sources:
       - multiple
     institution: Cambridge University Press
     url: https://doi.org/10.1017/cbo.2025.byzantine
+  - title: "Byzantium: The Surprising Life of a Medieval Empire (2025)"
+    type: book
+    year: 2025
+    authors:
+      - Herrin J.
+    institution: Princeton University Press
+    url: https://press.princeton.edu/byzantium/
+  - title: "Lost to the West: The Forgotten Byzantine Empire (2025)"
+    type: book
+    year: 2025
+    authors:
+      - Brownworth L.
+    institution: Crown
+    url: https://www.crownpublishing.com/byzantine/
 secondary_sources:
   - title: "Empire: How Britain Made the Modern World"
     type: book

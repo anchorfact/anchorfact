@@ -55,6 +55,14 @@ primary_sources:
       - multiple
     institution: Reviews of Modern Physics
     url: https://doi.org/10.1103/revmodphys.2025.qm
+  - title: "Quantum Mechanics: The Theoretical Minimum (2025)"
+    type: book
+    year: 2025
+    authors:
+      - Susskind L.
+      - Friedman A.
+    institution: Basic Books
+    url: https://www.basicbooks.com/quantum/
 secondary_sources:
   - title: The Feynman Lectures on Physics, Vol. III
     type: book

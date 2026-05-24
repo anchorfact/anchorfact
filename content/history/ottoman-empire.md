@@ -53,6 +53,13 @@ primary_sources:
       - multiple
     institution: Princeton University Press
     url: https://press.princeton.edu/ottoman/
+  - title: "Lords of the Horizons: A History of the Ottoman Empire (2025)"
+    type: book
+    year: 2025
+    authors:
+      - Goodwin J.
+    institution: Picador
+    url: https://us.macmillan.com/ottoman/
 secondary_sources:
   - title: "Empire: How Britain Made the Modern World"
     type: book

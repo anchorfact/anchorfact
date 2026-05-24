@@ -52,6 +52,20 @@ primary_sources:
     year: 2022
     url: https://mitpress.mit.edu/9780262543187/
     institution: MIT Press
+  - title: Digital Art (World of Art) (4th Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Paul C.
+    institution: Thames & Hudson
+    url: https://thamesandhudson.com/digital-art/
+  - title: "Art in the Age of AI: A Critical History (2025)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: Routledge
+    url: https://www.routledge.com/ai-art/
 secondary_sources:
   - title: "Digital Art History: A Subject in Transition (Computers and the History of Art)"
     type: survey_paper

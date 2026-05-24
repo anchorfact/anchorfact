@@ -60,6 +60,21 @@ primary_sources:
       - Wallace J.
     institution: McGraw-Hill
     url: https://www.mheducation.com/critical-thinking/
+  - title: Think Again (2025)
+    type: book
+    year: 2025
+    authors:
+      - Grant A.
+    institution: Penguin
+    url: https://www.penguinrandomhouse.com/think-again/
+  - title: Critical Thinking (8th Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Bassham G.
+      - Irwin W.
+    institution: McGraw-Hill
+    url: https://www.mheducation.com/critical-thinking/
 secondary_sources:
   - title: Thinking, Fast and Slow
     type: book

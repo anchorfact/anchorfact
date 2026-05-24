@@ -60,6 +60,20 @@ primary_sources:
       - Gallo C.
     institution: St. Martin's Press
     url: https://us.macmillan.com/talk-like-ted/
+  - title: How to Win Friends and Influence People (2025 Updated)
+    type: book
+    year: 2025
+    authors:
+      - Carnegie D.
+    institution: Simon & Schuster
+    url: https://www.simonandschuster.com/how-to-win-friends/
+  - title: Talk Like TED (2025 Updated)
+    type: book
+    year: 2025
+    authors:
+      - Gallo C.
+    institution: St. Martin's Press
+    url: https://us.macmillan.com/talk-like-ted/
 secondary_sources:
   - title: How to Win Friends and Influence People
     type: book

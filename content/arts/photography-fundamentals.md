@@ -52,6 +52,20 @@ primary_sources:
     year: 1958
     url: https://www.moma.org/calendar/exhibitions/2425
     institution: Museum of Modern Art
+  - title: The Photographer's Eye (2025 Edition)
+    type: book
+    year: 2025
+    authors:
+      - Freeman M.
+    institution: Ilex Press
+    url: https://www.ilexinstant.com/photographers-eye/
+  - title: "Photography: A Critical Introduction (6th Edition, 2025)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: Routledge
+    url: https://www.routledge.com/photography-critical/
 secondary_sources:
   - title: The Photograph as Contemporary Art (Cotton, 4th Edition)
     type: textbook

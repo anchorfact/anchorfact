@@ -57,6 +57,21 @@ primary_sources:
       - Godin S.
     institution: Portfolio
     url: https://www.penguinrandomhouse.com/this-is-marketing/
+  - title: Marketing Management (17th Global, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Kotler P.
+      - Keller K.L.
+    institution: Pearson
+    url: https://www.pearson.com/marketing/
+  - title: This Is Marketing (2025)
+    type: book
+    year: 2025
+    authors:
+      - Godin S.
+    institution: Portfolio
+    url: https://www.penguinrandomhouse.com/this-is-marketing/
 known_gaps:
   - AI-driven personalization
   - Privacy regulation impact on targeted advertising

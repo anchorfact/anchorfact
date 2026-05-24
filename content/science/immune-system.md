@@ -63,6 +63,13 @@ primary_sources:
       - multiple
     institution: Nature Reviews Immunology
     url: https://doi.org/10.1038/s41577-2025-immuno
+  - title: "Immune: A Journey into the Mysterious System (2025)"
+    type: book
+    year: 2025
+    authors:
+      - Dettmer P.
+    institution: Random House
+    url: https://www.penguinrandomhouse.com/immune/
 secondary_sources:
   - title: A Brief History of Time
     type: book

@@ -70,6 +70,20 @@ primary_sources:
       - multiple
     institution: Cambridge University Press
     url: https://doi.org/10.1017/cbo.2025.exploration
+  - title: A History of the World in Twelve Maps (2025)
+    type: book
+    year: 2025
+    authors:
+      - Brotton J.
+    institution: Penguin
+    url: https://www.penguinrandomhouse.com/exploration/
+  - title: The Age of Exploration (2025)
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: Cambridge University Press
+    url: https://doi.org/10.1017/cbo.2025.exploration
 secondary_sources:
   - title: "QLoRA: Efficient Finetuning of Quantized Language Models"
     authors:

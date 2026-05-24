@@ -67,6 +67,13 @@ primary_sources:
       - Frampton K.
     institution: Thames & Hudson
     url: https://thamesandhudson.com/modern-architecture/
+  - title: "Modern Architecture: A Critical History (5th Edition, 2025)"
+    type: book
+    year: 2025
+    authors:
+      - Frampton K.
+    institution: Thames & Hudson
+    url: https://thamesandhudson.com/modern-architecture/
 secondary_sources:
   - title: A Global History of Architecture
     type: book

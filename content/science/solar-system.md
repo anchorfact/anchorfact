@@ -52,6 +52,20 @@ primary_sources:
       - multiple
     institution: Nature Astronomy
     url: https://doi.org/10.1038/s41550-2025-solar
+  - title: "The Solar System: A Very Short Introduction (2025)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: Oxford University Press
+    url: https://global.oup.com/vsi-solar/
+  - title: The New Solar System (2025 Updated)
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: Cambridge University Press
+    url: https://doi.org/10.1017/cbo.2025.solar
 secondary_sources:
   - title: "QLoRA: Efficient Finetuning of Quantized Language Models"
     authors:

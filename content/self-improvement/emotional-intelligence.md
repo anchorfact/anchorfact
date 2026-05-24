@@ -61,6 +61,13 @@ primary_sources:
       - Greaves J.
     institution: TalentSmart
     url: https://www.talentsmarteq.com/
+  - title: Emotional Intelligence (30th Anniversary, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Goleman D.
+    institution: Bantam
+    url: https://www.danielgoleman.info/
 secondary_sources:
   - title: "Emotional Intelligence: Why It Can Matter More Than IQ"
     type: book

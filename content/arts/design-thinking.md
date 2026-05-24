@@ -65,6 +65,20 @@ primary_sources:
       - multiple
     institution: Routledge
     url: https://www.routledge.com/design-thinking/
+  - title: "Change by Design: Revised and Updated (2025)"
+    type: book
+    year: 2025
+    authors:
+      - Brown T.
+    institution: Harper Business
+    url: https://www.harpercollins.com/change-by-design/
+  - title: "Design Thinking: Understanding How Designers Think (2025)"
+    type: book
+    year: 2025
+    authors:
+      - Cross N.
+    institution: Bloomsbury
+    url: https://www.bloomsbury.com/design-thinking/
 secondary_sources:
   - title: The Story of Art
     type: book
