@@ -1,52 +1,80 @@
 ---
-id: "ai-in-finance"
+id: ai-in-finance
 title: "AI in Finance: Trading, Risk, and Fraud Detection"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-ai-in-finance-1"
-    statement: "AI-powered fraud detection systems analyze transaction patterns in real-time — Visa's AI prevented $25 billion in fraud (2022) using graph neural networks that detect anomalous transaction networks across 200 billion annual transactions."
-    source_title: "Visa AI / Nilson Report (2022)"
-    confidence: "high"
-  - id: "af-ai-in-finance-2"
-    statement: "Algorithmic trading now accounts for 60-73% of US equity trading volume. Modern systems combine traditional quantitative strategies with deep reinforcement learning and NLP on news/earnings call sentiment."
-    source_title: "SEC / JP Morgan Research (2024)"
-    confidence: "high"
-
+  - id: af-ai-in-finance-1
+    statement: >-
+      AI-powered fraud detection systems analyze transaction patterns in real-time — Visa's AI prevented $25 billion in fraud (2022) using graph neural networks that detect anomalous transaction
+      networks across 200 billion annual transactions.
+    source_title: Visa AI / Nilson Report (2022)
+    confidence: high
+  - id: af-ai-in-finance-2
+    statement: >-
+      Algorithmic trading now accounts for 60-73% of US equity trading volume. Modern systems combine traditional quantitative strategies with deep reinforcement learning and NLP on news/earnings call
+      sentiment.
+    source_title: SEC / JP Morgan Research (2024)
+    confidence: high
 completeness: 0.9
-
 primary_sources:
   - title: "Machine Learning in Finance: From Theory to Practice"
-    type: "textbook"
+    type: textbook
     year: 2020
-    url: "https://link.springer.com/book/10.1007/978-3-030-41068-1"
-    institution: "Springer"
-  - title: "Advances in Financial Machine Learning (Lopez de Prado)"
-    type: "textbook"
+    url: https://link.springer.com/book/10.1007/978-3-030-41068-1
+    institution: Springer
+  - title: Advances in Financial Machine Learning (Lopez de Prado)
+    type: textbook
     year: 2018
-    url: "https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086"
-    institution: "Wiley"
-
+    url: https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086
+    institution: Wiley
 known_gaps:
-  - "Explainable AI in credit decisions"
-  - "Market manipulation by autonomous agents"
-
+  - Explainable AI in credit decisions
+  - Market manipulation by autonomous agents
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
+secondary_sources:
+  - title: "A Survey of Deep Learning for Financial Applications: Risk Management, Credit Scoring, and Algorithmic Trading"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE Access
+    url: https://doi.org/10.1109/ACCESS.2024.3415265
+  - title: "AI in Finance: A Comprehensive Survey of Machine Learning, Deep Learning, and NLP Applications (1989-2024)"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Nature Humanities & Social Sciences Communications
+    url: https://doi.org/10.1038/s41599-025-04850-8
+  - title: "Global AI in Banking Survey 2025: Adoption Trends, Use Cases, and ROI (McKinsey)"
+    type: report
+    year: 2025
+    authors:
+      - McKinsey & Company
+    institution: McKinsey Global Institute
+    url: https://www.mckinsey.com/industries/financial-services/our-insights/global-banking-annual-review
+  - title: "A Review of Reinforcement Learning in Financial Applications: Trading, Portfolio Optimization, and Risk Management"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: arXiv
+    url: https://arxiv.org/abs/2411.12746
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI is transforming finance — algorithmic trading dominates equity markets, fraud detection saves billions, and LLMs are entering investment analysis. The industry's data-rich, quantitative nature makes it an ideal AI application domain.
 
