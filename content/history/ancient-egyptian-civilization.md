@@ -1,53 +1,83 @@
 ---
-id: "ancient-egyptian-civilization"
+id: ancient-egyptian-civilization
 title: "Ancient Egyptian Civilization: Pharaohs, Pyramids, and Afterlife"
-schema_type: "Article"
-category: "history"
-language: "en"
-confidence: "high"
+schema_type: Article
+category: history
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-ancient-egyptian-civilization-1"
-    statement: "Ancient Egyptian civilization spanned over 3,000 years (c.3100-30 BCE) across 31 dynasties. The Great Pyramid of Giza (c.2560 BCE) remained the tallest human-made structure for over 3,800 years at 146.6 meters."
+  - id: af-ancient-egyptian-civilization-1
+    statement: >-
+      Ancient Egyptian civilization spanned over 3,000 years (c.3100-30 BCE) across 31 dynasties. The Great Pyramid of Giza (c.2560 BCE) remained the tallest human-made structure for over 3,800 years
+      at 146.6 meters.
     source_title: "British Museum: Ancient Egypt"
-    confidence: "high"
-  - id: "af-ancient-egyptian-civilization-2"
-    statement: "The Rosetta Stone (196 BCE), deciphered by Jean-Francois Champollion in 1822, contained the same decree in three scripts — unlocking the ability to read Egyptian hieroglyphs after 1,500 years of obscurity."
+    confidence: high
+  - id: af-ancient-egyptian-civilization-2
+    statement: >-
+      The Rosetta Stone (196 BCE), deciphered by Jean-Francois Champollion in 1822, contained the same decree in three scripts — unlocking the ability to read Egyptian hieroglyphs after 1,500 years of
+      obscurity.
     source_title: "British Museum: Rosetta Stone"
-    confidence: "high"
-
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "Pyramid construction engineering methods debate"
-  - "Daily life of non-elite Egyptians"
-
+  - Pyramid construction engineering methods debate
+  - Daily life of non-elite Egyptians
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
 primary_sources:
-  - title: "The Oxford History of Ancient Egypt"
-    type: "textbook"
+  - title: The Oxford History of Ancient Egypt
+    type: textbook
     year: 2020
-    url: "https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587"
-    institution: "Oxford University Press"
-  - title: "The Complete Gods and Goddesses of Ancient Egypt"
-    type: "reference"
+    url: https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587
+    institution: Oxford University Press
+  - title: The Complete Gods and Goddesses of Ancient Egypt
+    type: reference
     year: 2017
-    url: "https://thamesandhudson.com/the-complete-gods-and-goddesses-of-ancient-egypt-9780500284247"
-    institution: "Thames & Hudson"
-
+    url: https://thamesandhudson.com/the-complete-gods-and-goddesses-of-ancient-egypt-9780500284247
+    institution: Thames & Hudson
+secondary_sources:
+  - title: The Oxford History of Ancient Egypt (Shaw, ed.)
+    type: textbook
+    year: 2003
+    authors:
+      - Shaw, Ian (ed.)
+    institution: Oxford University Press
+    url: https://doi.org/10.1093/oso/9780192804587.001.0001
+  - title: The Rise and Fall of Ancient Egypt (Wilkinson)
+    type: textbook
+    year: 2010
+    authors:
+      - Wilkinson, Toby
+    institution: Random House
+    url: https://www.penguinrandomhouse.com/books/200545/the-rise-and-fall-of-ancient-egypt-by-toby-wilkinson/
+  - title: "UNESCO: The Nubian Monuments from Abu Simbel to Philae — World Heritage Site Documentation"
+    type: report
+    year: 2024
+    authors:
+      - UNESCO
+    institution: UNESCO
+    url: https://whc.unesco.org/en/list/88/
+  - title: "Scanning the Pyramids: The Use of Muon Radiography to Discover Hidden Chambers (Nature)"
+    type: journal_article
+    year: 2017
+    authors:
+      - Morishima, Kunihiro
+      - Kuno, Mitsuaki
+      - Nishio, Akira
+      - et al.
+    institution: Nature / ScanPyramids Project
+    url: https://doi.org/10.1038/nature24647
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 Ancient Egypt's 3,000-year civilization produced monumental architecture, sophisticated medicine, advanced mathematics, and a complex religious system centered on the afterlife.
 

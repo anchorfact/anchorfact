@@ -1,64 +1,88 @@
 ---
-id: "photography-fundamentals"
-title: "Photography Fundamentals and Composition"
-schema_type: "Article"
-category: "arts"
-language: "en"
-confidence: "high"
+id: photography-fundamentals
+title: Photography Fundamentals and Composition
+schema_type: Article
+category: arts
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-photography-fundamentals-1"
+  - id: af-photography-fundamentals-1
     statement: "The exposure triangle consists of three parameters: aperture (f-stop, controls depth of field), shutter speed (motion blur), and ISO (sensor sensitivity to light)."
-    source_title: "Understanding Exposure"
-    confidence: "high"
-  - id: "af-photography-fundamentals-2"
-    statement: "The rule of thirds divides an image into a 3×3 grid; placing subjects at intersection points is the most widely taught compositional guideline in photography."
-    source_title: "The Photographer's Eye"
-    confidence: "high"
-  - id: "af-photography-fundamentals-extra"
-    statement: "Robert Frank's \"The Americans\" (1958) revolutionized documentary photography by rejecting conventional composition rules in favor of raw, spontaneous imagery that captured the complexity of American life."
-    source_title: "The Americans"
-    source_url: "https://www.moma.org/calendar/exhibitions/2425"
-    confidence: "high"
-
+    source_title: Understanding Exposure
+    confidence: high
+  - id: af-photography-fundamentals-2
+    statement: The rule of thirds divides an image into a 3×3 grid; placing subjects at intersection points is the most widely taught compositional guideline in photography.
+    source_title: The Photographer's Eye
+    confidence: high
+  - id: af-photography-fundamentals-extra
+    statement: >-
+      Robert Frank's "The Americans" (1958) revolutionized documentary photography by rejecting conventional composition rules in favor of raw, spontaneous imagery that captured the complexity of
+      American life.
+    source_title: The Americans
+    source_url: https://www.moma.org/calendar/exhibitions/2425
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "Computational photography (smartphone algorithms)"
-  - "Aerial/drone photography regulations"
-
+  - Computational photography (smartphone algorithms)
+  - Aerial/drone photography regulations
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
 primary_sources:
-  - title: "Understanding Exposure, 4th Edition"
-    type: "textbook"
+  - title: Understanding Exposure, 4th Edition
+    type: textbook
     year: 2016
-    url: "https://www.penguinrandomhouse.com/books/224957/understanding-exposure-4th-edition-by-bryan-peterson/"
-    institution: "Amphoto Books"
-  - title: "The Photographer's Eye"
-    type: "textbook"
+    url: https://www.penguinrandomhouse.com/books/224957/understanding-exposure-4th-edition-by-bryan-peterson/
+    institution: Amphoto Books
+  - title: The Photographer's Eye
+    type: textbook
     year: 2007
-    url: "https://www.moma.org/calendar/exhibitions/62"
-    institution: "Museum of Modern Art"
-  - title: "The Americans"
-    type: "literature"
+    url: https://www.moma.org/calendar/exhibitions/62
+    institution: Museum of Modern Art
+  - title: The Americans
+    type: literature
     year: 1958
-    url: "https://www.moma.org/calendar/exhibitions/2425"
-    institution: "Museum of Modern Art"
-
+    url: https://www.moma.org/calendar/exhibitions/2425
+    institution: Museum of Modern Art
+secondary_sources:
+  - title: The Photograph as Contemporary Art (Cotton, 4th Edition)
+    type: textbook
+    year: 2020
+    authors:
+      - Cotton, Charlotte
+    institution: Thames & Hudson
+    url: https://thamesandhudson.com/the-photograph-as-contemporary-art-9780500204481
+  - title: On Photography (Sontag)
+    type: textbook
+    year: 1977
+    authors:
+      - Sontag, Susan
+    institution: Farrar, Straus and Giroux
+    url: https://us.macmillan.com/books/9780374525309/onphotography
+  - title: Camera Lucida (Barthes)
+    type: textbook
+    year: 1981
+    authors:
+      - Barthes, Roland
+    institution: Hill and Wang
+    url: https://us.macmillan.com/books/9780374532338/cameralucida
+  - title: "Computational Photography: A Comprehensive Survey of Deep Learning Methods"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE TPAMI
+    url: https://doi.org/10.1109/TPAMI.2024.3385267
+updated: "2026-05-24"
 ---
-
-
-
 ## TL;DR
 Photography combines technical control of light with artistic composition. Mastery of exposure, focus, and framing enables photographers to capture images that communicate beyond what the eye naturally sees.
 

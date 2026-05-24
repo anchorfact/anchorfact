@@ -1,53 +1,85 @@
 ---
-id: "climate-zones-and-biomes"
-title: "Global Climate Zones and Terrestrial Biomes"
-schema_type: "Article"
-category: "geography"
-language: "en"
-confidence: "high"
+id: climate-zones-and-biomes
+title: Global Climate Zones and Terrestrial Biomes
+schema_type: Article
+category: geography
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-climate-zones-and-biomes-1"
-    statement: "The Koppen climate classification system categorizes world climates into five main groups: Tropical (A), Dry (B), Temperate (C), Continental (D), and Polar (E), based on temperature and precipitation patterns."
-    source_title: "NOAA Climate.gov"
-    confidence: "high"
-  - id: "af-climate-zones-and-biomes-2"
-    statement: "Terrestrial biomes — tundra, taiga/boreal forest, temperate forest, grassland, desert, tropical rainforest — are defined by climate and characterized by distinct plant communities that determine the entire ecosystem structure."
-    source_title: "NASA Earth Observatory"
-    confidence: "high"
-
+  - id: af-climate-zones-and-biomes-1
+    statement: >-
+      The Koppen climate classification system categorizes world climates into five main groups: Tropical (A), Dry (B), Temperate (C), Continental (D), and Polar (E), based on temperature and
+      precipitation patterns.
+    source_title: NOAA Climate.gov
+    confidence: high
+  - id: af-climate-zones-and-biomes-2
+    statement: >-
+      Terrestrial biomes — tundra, taiga/boreal forest, temperate forest, grassland, desert, tropical rainforest — are defined by climate and characterized by distinct plant communities that determine
+      the entire ecosystem structure.
+    source_title: NASA Earth Observatory
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "Climate change biome shift predictions"
-  - "Microclimate classification refinement"
-
+  - Climate change biome shift predictions
+  - Microclimate classification refinement
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
 primary_sources:
   - title: "Biogeography: Introduction to Space, Time, and Life"
-    type: "textbook"
+    type: textbook
     year: 2022
-    url: "https://www.wiley.com/en-us/Biogeography-p-9781119464730"
-    institution: "Wiley"
-  - title: "Koppen Climate Classification"
-    type: "reference"
+    url: https://www.wiley.com/en-us/Biogeography-p-9781119464730
+    institution: Wiley
+  - title: Koppen Climate Classification
+    type: reference
     year: 2024
-    url: "https://www.climate.gov/koppen-climate-classification"
-    institution: "NOAA"
-
+    url: https://www.climate.gov/koppen-climate-classification
+    institution: NOAA
+secondary_sources:
+  - title: Fundamentals of the Physical Environment (Smithson, Addison, Atkinson, 4th Edition)
+    type: textbook
+    year: 2008
+    authors:
+      - Smithson, Peter
+      - Addison, Ken
+      - Atkinson, Ken
+    institution: Routledge
+    url: https://doi.org/10.4324/9780203934029
+  - title: "The Global Climate System: Patterns, Processes, and Teleconnections (Bridgman & Oliver)"
+    type: textbook
+    year: 2006
+    authors:
+      - Bridgman, Howard A.
+      - Oliver, John E.
+    institution: Cambridge University Press
+    url: https://doi.org/10.1017/CBO9780511817984
+  - title: "Köppen Climate Classification: Updated World Map of the Köppen-Geiger Climate Classification (Peel et al.)"
+    type: journal_article
+    year: 2007
+    authors:
+      - Peel, Murray C.
+      - Finlayson, Brian L.
+      - McMahon, Thomas A.
+    institution: Hydrology & Earth System Sciences
+    url: https://doi.org/10.5194/hess-11-1633-2007
+  - title: "IPCC Special Report: Climate Change and Land (SRCCL)"
+    type: report
+    year: 2019
+    authors:
+      - IPCC
+    institution: Intergovernmental Panel on Climate Change
+    url: https://www.ipcc.ch/srccl/
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 Earth's surface is divided into distinct climate zones and biomes with characteristic temperature, precipitation, and vegetation patterns. These zones are shifting poleward at unprecedented rates due to anthropogenic climate change.
 

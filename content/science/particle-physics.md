@@ -1,54 +1,80 @@
 ---
-id: "particle-physics"
-title: "Particle Physics and the Standard Model"
-schema_type: "Article"
-category: "science"
-language: "en"
-confidence: "high"
+id: particle-physics
+title: Particle Physics and the Standard Model
+schema_type: Article
+category: science
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-particle-physics-1"
+  - id: af-particle-physics-1
     statement: "The Standard Model describes 17 fundamental particles: 6 quarks, 6 leptons, 4 force-carrying bosons, and the Higgs boson. It successfully predicts phenomena with precision better than 0.1%."
-    source_title: "CERN Standard Model Overview"
-    confidence: "high"
-  - id: "af-particle-physics-2"
-    statement: "The Higgs boson was discovered at CERN's Large Hadron Collider in 2012, confirming the mechanism that gives particles mass. Peter Higgs and François Englert received the 2013 Nobel Prize in Physics."
-    source_title: "Physical Review Letters"
-    confidence: "high"
-
+    source_title: CERN Standard Model Overview
+    confidence: high
+  - id: af-particle-physics-2
+    statement: >-
+      The Higgs boson was discovered at CERN's Large Hadron Collider in 2012, confirming the mechanism that gives particles mass. Peter Higgs and François Englert received the 2013 Nobel Prize in
+      Physics.
+    source_title: Physical Review Letters
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "Dark matter candidate particles"
-  - "Quantum gravity approaches"
-  - "Neutrino mass mechanism"
-
+  - Dark matter candidate particles
+  - Quantum gravity approaches
+  - Neutrino mass mechanism
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
 primary_sources:
-  - title: "Introduction to Elementary Particles, 2nd Edition"
-    type: "textbook"
+  - title: Introduction to Elementary Particles, 2nd Edition
+    type: textbook
     year: 2020
-    url: "https://www.wiley.com/en-us/Introduction+to+Elementary+Particles%2C+2nd+Edition-p-9783527406015"
-    institution: "Wiley-VCH"
+    url: https://www.wiley.com/en-us/Introduction+to+Elementary+Particles%2C+2nd+Edition-p-9783527406015
+    institution: Wiley-VCH
   - title: "CERN: The Standard Model"
-    type: "official_documentation"
+    type: official_documentation
     year: 2024
-    url: "https://home.cern/science/physics/standard-model"
-    institution: "CERN"
-
+    url: https://home.cern/science/physics/standard-model
+    institution: CERN
+secondary_sources:
+  - title: Introduction to Elementary Particles (Griffiths, 2nd Edition)
+    type: textbook
+    year: 2008
+    authors:
+      - Griffiths, David
+    institution: Wiley-VCH
+    url: https://doi.org/10.1002/9783527618460
+  - title: "The Standard Model: A Primer (Burgess & Moore)"
+    type: textbook
+    year: 2007
+    authors:
+      - Burgess, Cliff P.
+      - Moore, Guy D.
+    institution: Cambridge University Press
+    url: https://doi.org/10.1017/CBO9780511610196
+  - title: Observation of a New Particle in the Search for the Standard Model Higgs Boson (ATLAS/CMS 2012)
+    type: journal_article
+    year: 2012
+    authors:
+      - ATLAS Collaboration
+    institution: CERN / Physics Letters B
+    url: https://doi.org/10.1016/j.physletb.2012.08.020
+  - title: "CERN Yellow Report: Physics at the HL-LHC and Beyond (High-Luminosity LHC Prospects)"
+    type: report
+    year: 2024
+    authors:
+      - CERN
+    institution: CERN
+    url: https://doi.org/10.5170/CERN-2024-002
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 The Standard Model is physics' most successful theory, describing all known fundamental particles and three of four fundamental forces. Discovered particles were predicted decades in advance — the Higgs boson took 48 years from theory to experimental confirmation.
 

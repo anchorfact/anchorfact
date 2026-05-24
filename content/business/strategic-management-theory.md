@@ -1,53 +1,79 @@
 ---
-id: "strategic-management-theory"
+id: strategic-management-theory
 title: "Strategic Management: Frameworks and Practice"
-schema_type: "Article"
-category: "business"
-language: "en"
-confidence: "high"
+schema_type: Article
+category: business
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-strategic-management-theory-1"
+  - id: af-strategic-management-theory-1
     statement: "Michael Porter's Five Forces framework (1979) analyzes industry competitiveness through: threat of new entrants, supplier power, buyer power, substitute threat, and competitive rivalry."
-    source_title: "Porter, Harvard Business Review (1979)"
-    confidence: "high"
-  - id: "af-strategic-management-theory-2"
-    statement: "Peter Drucker's Management by Objectives (MBO), introduced in The Practice of Management (1954), proposed employees perform better when participating in setting their own goals — a precursor to modern OKRs used by Google and Intel."
-    source_title: "Drucker, The Practice of Management (1954)"
-    confidence: "high"
-
+    source_title: Porter, Harvard Business Review (1979)
+    confidence: high
+  - id: af-strategic-management-theory-2
+    statement: >-
+      Peter Drucker's Management by Objectives (MBO), introduced in The Practice of Management (1954), proposed employees perform better when participating in setting their own goals — a precursor to
+      modern OKRs used by Google and Intel.
+    source_title: Drucker, The Practice of Management (1954)
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "Agile strategy in fast-changing digital markets"
-  - "Platform business model strategy"
-
+  - Agile strategy in fast-changing digital markets
+  - Platform business model strategy
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
 primary_sources:
   - title: "Competitive Strategy: Techniques for Analyzing Industries and Competitors"
-    type: "textbook"
+    type: textbook
     year: 1980
-    url: "https://www.simonandschuster.com/books/Competitive-Strategy/Michael-E-Porter/9780684005278"
-    institution: "Free Press"
-  - title: "The Practice of Management"
-    type: "textbook"
+    url: https://www.simonandschuster.com/books/Competitive-Strategy/Michael-E-Porter/9780684005278
+    institution: Free Press
+  - title: The Practice of Management
+    type: textbook
     year: 1954
-    url: "https://www.harpercollins.com/"
-    institution: "Harper & Row"
-
+    url: https://www.harpercollins.com/
+    institution: Harper & Row
+secondary_sources:
+  - title: Competitive Strategy (Porter)
+    type: textbook
+    year: 1980
+    authors:
+      - Porter, Michael E.
+    institution: Free Press
+    url: https://www.simonandschuster.com/books/Competitive-Strategy/Michael-E-Porter/9780684005867
+  - title: Good Strategy Bad Strategy (Rumelt)
+    type: textbook
+    year: 2011
+    authors:
+      - Rumelt, Richard P.
+    institution: Crown Business
+    url: https://www.penguinrandomhouse.com/books/202175/good-strategy-bad-strategy-by-richard-p-rumelt/
+  - title: "Playing to Win: How Strategy Really Works (Lafley & Martin)"
+    type: textbook
+    year: 2013
+    authors:
+      - Lafley, A. G.
+      - Martin, Roger L.
+    institution: Harvard Business Review Press
+    url: https://hbr.org/product/playing-to-win-how-strategy-really-works/11957-HBK-ENG
+  - title: "McKinsey Global Institute: The State of AI in Business Strategy 2025"
+    type: report
+    year: 2025
+    authors:
+      - McKinsey & Company
+    institution: McKinsey Global Institute
+    url: https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-state-of-ai
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 Strategic management defines how organizations create and sustain competitive advantage through analytical frameworks and disciplined execution.
 

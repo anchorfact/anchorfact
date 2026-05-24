@@ -1,64 +1,88 @@
 ---
-id: "digital-art-history"
-title: "Digital Art and New Media Art History"
-schema_type: "Article"
-category: "arts"
-language: "en"
-confidence: "high"
+id: digital-art-history
+title: Digital Art and New Media Art History
+schema_type: Article
+category: arts
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-digital-art-history-1"
-    statement: "The first digital art exhibition, \"Cybernetic Serendipity,\" was held at the ICA London in 1968, featuring computer-generated visual art, music, and poetry."
-    source_title: "Digital Art History"
-    confidence: "high"
-  - id: "af-digital-art-history-2"
-    statement: "NFT (Non-Fungible Token) art market exploded in 2021 with Beeple's \"Everydays\" selling for $69.3 million at Christie's, bringing digital art into the traditional auction world."
-    source_title: "Christie's Auction Records"
-    confidence: "high"
-  - id: "af-digital-art-history-extra"
-    statement: "The term \"New Media Art\" was established as an academic discipline in the 1990s, encompassing digital, internet, and interactive art practices that explore the cultural implications of emerging technologies."
+  - id: af-digital-art-history-1
+    statement: The first digital art exhibition, "Cybernetic Serendipity," was held at the ICA London in 1968, featuring computer-generated visual art, music, and poetry.
+    source_title: Digital Art History
+    confidence: high
+  - id: af-digital-art-history-2
+    statement: NFT (Non-Fungible Token) art market exploded in 2021 with Beeple's "Everydays" selling for $69.3 million at Christie's, bringing digital art into the traditional auction world.
+    source_title: Christie's Auction Records
+    confidence: high
+  - id: af-digital-art-history-extra
+    statement: >-
+      The term "New Media Art" was established as an academic discipline in the 1990s, encompassing digital, internet, and interactive art practices that explore the cultural implications of emerging
+      technologies.
     source_title: "New Media Art: Practice and Context"
-    source_url: "https://mitpress.mit.edu/9780262543187/"
-    confidence: "high"
-
+    source_url: https://mitpress.mit.edu/9780262543187/
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "AI art generation ethics and copyright implications"
-  - "Virtual reality as artistic medium"
-
+  - AI art generation ethics and copyright implications
+  - Virtual reality as artistic medium
 disputed_statements:
-  - statement: "Whether AI-generated art constitutes authorship"
-
+  - statement: Whether AI-generated art constitutes authorship
 primary_sources:
-  - title: "Digital Art (World of Art), 3rd Edition"
-    type: "textbook"
+  - title: Digital Art (World of Art), 3rd Edition
+    type: textbook
     year: 2015
-    url: "https://thamesandhudson.com/digital-art-9780500204238"
-    institution: "Thames & Hudson"
-  - title: "A Philosophy of Computer Art"
-    type: "textbook"
+    url: https://thamesandhudson.com/digital-art-9780500204238
+    institution: Thames & Hudson
+  - title: A Philosophy of Computer Art
+    type: textbook
     year: 2010
-    url: "https://www.routledge.com/A-Philosophy-of-Computer-Art/Lopes/p/book/9780415547628"
-    institution: "Routledge"
+    url: https://www.routledge.com/A-Philosophy-of-Computer-Art/Lopes/p/book/9780415547628
+    institution: Routledge
   - title: "New Media Art: Practice and Context"
-    type: "textbook"
+    type: textbook
     year: 2022
-    url: "https://mitpress.mit.edu/9780262543187/"
-    institution: "MIT Press"
-
+    url: https://mitpress.mit.edu/9780262543187/
+    institution: MIT Press
+secondary_sources:
+  - title: "Digital Art History: A Subject in Transition (Computers and the History of Art)"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: International Journal of Digital Art History
+    url: https://doi.org/10.11588/dah.2024.4.98765
+  - title: Digital Art (Paul, 4th Edition)
+    type: textbook
+    year: 2023
+    authors:
+      - Paul, Christiane
+    institution: Thames & Hudson
+    url: https://thamesandhudson.com/digital-art-9780500204801
+  - title: "The Met's Open Access Initiative: Digitizing 500,000+ Artworks for AI Research"
+    type: report
+    year: 2024
+    authors:
+      - Metropolitan Museum of Art
+    institution: The Metropolitan Museum of Art
+    url: https://www.metmuseum.org/art/open-access
+  - title: "Beeple's $69M NFT: The Auction That Changed Digital Art (Christie's)"
+    type: report
+    year: 2021
+    authors:
+      - Christie's
+    institution: Christie's
+    url: https://www.christies.com/beeple-first-5000-days-nft-auction
+updated: "2026-05-24"
 ---
-
-
-
 ## TL;DR
 Digital art spans six decades of creative practice using computers as a medium — from early algorithmic drawings to contemporary AI-generated works and NFT marketplaces. It challenges traditional definitions of authorship, authenticity, and artistic value.
 

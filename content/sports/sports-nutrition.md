@@ -1,53 +1,84 @@
 ---
-id: "sports-nutrition"
+id: sports-nutrition
 title: "Sports Nutrition: Fueling Performance and Recovery"
-schema_type: "Article"
-category: "sports"
-language: "en"
-confidence: "high"
+schema_type: Article
+category: sports
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-sports-nutrition-1"
-    statement: "Carbohydrate loading — consuming 8-12 g/kg body weight of carbs in the 24-48 hours before competition — can increase muscle glycogen stores by 50-100% and improve endurance performance by 2-4% in events lasting over 90 minutes."
-    source_title: "International Society of Sports Nutrition"
-    confidence: "high"
-  - id: "af-sports-nutrition-2"
-    statement: "Protein timing around exercise (20-40g within 2 hours post-exercise) maximizes muscle protein synthesis. Leucine, at a threshold of ~2-3g per meal, is the key amino acid triggering the mTOR signaling pathway."
-    source_title: "JISSN"
-    confidence: "high"
-
+  - id: af-sports-nutrition-1
+    statement: >-
+      Carbohydrate loading — consuming 8-12 g/kg body weight of carbs in the 24-48 hours before competition — can increase muscle glycogen stores by 50-100% and improve endurance performance by 2-4%
+      in events lasting over 90 minutes.
+    source_title: International Society of Sports Nutrition
+    confidence: high
+  - id: af-sports-nutrition-2
+    statement: >-
+      Protein timing around exercise (20-40g within 2 hours post-exercise) maximizes muscle protein synthesis. Leucine, at a threshold of ~2-3g per meal, is the key amino acid triggering the mTOR
+      signaling pathway.
+    source_title: JISSN
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "Personalized nutrition based on genetic profiles"
-  - "Microbiome manipulation for performance"
-
+  - Personalized nutrition based on genetic profiles
+  - Microbiome manipulation for performance
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
 primary_sources:
-  - title: "Advanced Sports Nutrition, 3rd Edition"
-    type: "textbook"
+  - title: Advanced Sports Nutrition, 3rd Edition
+    type: textbook
     year: 2020
-    url: "https://www.humankinetics.com/advanced-sports-nutrition/"
-    institution: "Human Kinetics"
+    url: https://www.humankinetics.com/advanced-sports-nutrition/
+    institution: Human Kinetics
   - title: "ISSN Position Stand: Nutrient Timing"
-    type: "standard"
+    type: standard
     year: 2023
-    url: "https://jissn.biomedcentral.com/"
-    institution: "ISSN"
-
+    url: https://jissn.biomedcentral.com/
+    institution: ISSN
+secondary_sources:
+  - title: Advanced Sports Nutrition (Benardot, 3rd Edition)
+    type: textbook
+    year: 2021
+    authors:
+      - Benardot, Dan
+    institution: Human Kinetics
+    url: https://us.humankinetics.com/products/advanced-sports-nutrition-3rd-edition
+  - title: Nutrition and Athletic Performance (ACSM/AND/DC Joint Position Statement)
+    type: journal_article
+    year: 2016
+    authors:
+      - Thomas, D. Travis
+      - Erdman, Kelly Anne
+      - Burke, Louise M.
+    institution: Medicine & Science in Sports & Exercise
+    url: https://doi.org/10.1249/MSS.0000000000000852
+  - title: "IOC Consensus Statement: Sports Nutrition (International Olympic Committee)"
+    type: journal_article
+    year: 2024
+    authors:
+      - IOC Expert Panel
+    institution: International Journal of Sport Nutrition & Exercise Metabolism
+    url: https://doi.org/10.1123/ijsnem.2024-0062
+  - title: The Science of Nutrition (Thompson, Manore, Vaughan, 5th Edition)
+    type: textbook
+    year: 2022
+    authors:
+      - Thompson, Janice J.
+      - Manore, Melinda
+      - Vaughan, Linda
+    institution: Pearson
+    url: https://www.pearson.com/en-us/subject-catalog/p/science-of-nutrition/P20000000K1Z
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 Sports nutrition optimizes timing, quantity, and composition of nutrient intake to maximize training adaptations, competition performance, and recovery.
 

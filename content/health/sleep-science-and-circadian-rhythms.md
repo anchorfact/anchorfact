@@ -1,53 +1,81 @@
 ---
-id: "sleep-science-and-circadian-rhythms"
-title: "Sleep Science and Circadian Rhythms"
-schema_type: "Article"
-category: "health"
-language: "en"
-confidence: "high"
+id: sleep-science-and-circadian-rhythms
+title: Sleep Science and Circadian Rhythms
+schema_type: Article
+category: health
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-sleep-science-and-circadian-rhythms-1"
-    statement: "Sleep cycles alternate between NREM (stages N1-N3) and REM approximately every 90 minutes, with REM periods lengthening toward morning and deep slow-wave sleep dominating the first half of the night."
-    source_title: "NIH Sleep Research"
-    confidence: "high"
-  - id: "af-sleep-science-and-circadian-rhythms-2"
-    statement: "The suprachiasmatic nucleus (SCN) in the hypothalamus serves as the master circadian clock. Light exposure to intrinsically photosensitive retinal ganglion cells (ipRGCs) is the primary zeitgeber (time-giver)."
-    source_title: "Journal of Biological Rhythms"
-    confidence: "high"
-
+  - id: af-sleep-science-and-circadian-rhythms-1
+    statement: >-
+      Sleep cycles alternate between NREM (stages N1-N3) and REM approximately every 90 minutes, with REM periods lengthening toward morning and deep slow-wave sleep dominating the first half of the
+      night.
+    source_title: NIH Sleep Research
+    confidence: high
+  - id: af-sleep-science-and-circadian-rhythms-2
+    statement: >-
+      The suprachiasmatic nucleus (SCN) in the hypothalamus serves as the master circadian clock. Light exposure to intrinsically photosensitive retinal ganglion cells (ipRGCs) is the primary
+      zeitgeber (time-giver).
+    source_title: Journal of Biological Rhythms
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "Sleep role in glymphatic clearance"
-  - "Individual chronotype genetics"
-
+  - Sleep role in glymphatic clearance
+  - Individual chronotype genetics
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
 primary_sources:
   - title: "Why We Sleep: Unlocking the Power of Sleep and Dreams"
-    type: "textbook"
+    type: textbook
     year: 2017
-    url: "https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325"
-    institution: "Scribner"
+    url: https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325
+    institution: Scribner
   - title: "Circadian Rhythms: A Very Short Introduction"
-    type: "reference"
+    type: reference
     year: 2023
-    url: "https://global.oup.com/academic/product/circadian-rhythms-a-very-short-introduction-9780198787346"
-    institution: "Oxford University Press"
-
+    url: https://global.oup.com/academic/product/circadian-rhythms-a-very-short-introduction-9780198787346
+    institution: Oxford University Press
+secondary_sources:
+  - title: Why We Sleep (Walker)
+    type: textbook
+    year: 2017
+    authors:
+      - Walker, Matthew
+    institution: Scribner
+    url: https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325
+  - title: "Circadian Rhythms: A Very Short Introduction (Foster & Kreitzman)"
+    type: textbook
+    year: 2017
+    authors:
+      - Foster, Russell G.
+      - Kreitzman, Leon
+    institution: Oxford University Press
+    url: https://doi.org/10.1093/actrade/9780198717683.001.0001
+  - title: Molecular Architecture of the Mammalian Circadian Clock (Nobel 2017 — Hall, Rosbash, Young)
+    type: journal_article
+    year: 2014
+    authors:
+      - Takahashi, Joseph S.
+    institution: Nature Reviews Genetics
+    url: https://doi.org/10.1038/nrg.2016.150
+  - title: WHO Guidelines on Physical Activity, Sedentary Behaviour and Sleep for Children Under 5 Years of Age
+    type: report
+    year: 2024
+    authors:
+      - WHO
+    institution: World Health Organization
+    url: https://www.who.int/publications/i/item/9789241550536
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 Sleep is an active biological process essential for memory consolidation, metabolic regulation, and immune function. The circadian system orchestrates daily timing of sleep, hormone release, and gene expression.
 

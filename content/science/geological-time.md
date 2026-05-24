@@ -1,53 +1,79 @@
 ---
-id: "geological-time"
-title: "Geological Time Scale and Earth History"
-schema_type: "Article"
-category: "science"
-language: "en"
-confidence: "high"
+id: geological-time
+title: Geological Time Scale and Earth History
+schema_type: Article
+category: science
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-geological-time-1"
-    statement: "Earth is approximately 4.54 billion years old, as determined by radiometric dating of meteorites (Canyon Diablo) and the oldest terrestrial rocks (Acasta Gneiss, 4.03 Ga)."
-    source_title: "USGS Geologic Time Scale"
-    confidence: "high"
-  - id: "af-geological-time-2"
+  - id: af-geological-time-1
+    statement: Earth is approximately 4.54 billion years old, as determined by radiometric dating of meteorites (Canyon Diablo) and the oldest terrestrial rocks (Acasta Gneiss, 4.03 Ga).
+    source_title: USGS Geologic Time Scale
+    confidence: high
+  - id: af-geological-time-2
     statement: "The Phanerozoic Eon (541 Ma to present) encompasses complex multicellular life, divided into three eras: Paleozoic, Mesozoic, and Cenozoic, each bounded by mass extinction events."
-    source_title: "International Commission on Stratigraphy"
-    confidence: "high"
-
+    source_title: International Commission on Stratigraphy
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "Hadean Eon (4.54-4.0 Ga) no rock record"
-  - "Anthropocene formal designation debate"
-
+  - Hadean Eon (4.54-4.0 Ga) no rock record
+  - Anthropocene formal designation debate
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
 primary_sources:
-  - title: "Geologic Time Scale 2024"
-    type: "reference"
+  - title: Geologic Time Scale 2024
+    type: reference
     year: 2024
-    url: "https://stratigraphy.org/timescale/"
-    institution: "International Commission on Stratigraphy"
-  - title: "Earth System History, 4th Edition"
-    type: "textbook"
+    url: https://stratigraphy.org/timescale/
+    institution: International Commission on Stratigraphy
+  - title: Earth System History, 4th Edition
+    type: textbook
     year: 2020
-    url: "https://www.macmillanlearning.com/college/us/product/Earth-System-History/p/1319154022"
-    institution: "W.H. Freeman"
-
+    url: https://www.macmillanlearning.com/college/us/product/Earth-System-History/p/1319154022
+    institution: W.H. Freeman
+secondary_sources:
+  - title: A Geologic Time Scale 2020 (Gradstein, Ogg, Schmitz, Ogg — Elsevier)
+    type: textbook
+    year: 2020
+    authors:
+      - Gradstein, Felix M.
+      - Ogg, James G.
+      - Schmitz, Mark D.
+      - Ogg, Gabi
+    institution: Elsevier
+    url: https://doi.org/10.1016/C2020-0-03823-2
+  - title: The Geologic Time Spiral — A Path to the Past (USGS)
+    type: reference
+    year: 2024
+    authors:
+      - USGS
+    institution: United States Geological Survey
+    url: https://pubs.usgs.gov/gip/geotime/
+  - title: International Chronostratigraphic Chart (ICS/IUGS 2024)
+    type: reference
+    year: 2024
+    authors:
+      - International Commission on Stratigraphy
+    institution: IUGS
+    url: https://stratigraphy.org/chart
+  - title: "Deep Time: An Illustrated History of Earth (Hazen)"
+    type: textbook
+    year: 2024
+    authors:
+      - Hazen, Robert M.
+    institution: W. W. Norton
+    url: https://wwnorton.com/books/9780393608403
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 Earth's 4.54-billion-year history is recorded in rocks, fossils, and isotopes. The geological time scale organizes this history into eons, eras, periods, and epochs — each defined by major geological or biological events.
 

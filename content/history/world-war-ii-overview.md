@@ -1,53 +1,80 @@
 ---
-id: "world-war-ii-overview"
+id: world-war-ii-overview
 title: "World War II: Global Conflict and Its Aftermath"
-schema_type: "Article"
-category: "history"
-language: "en"
-confidence: "high"
+schema_type: Article
+category: history
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-world-war-ii-overview-1"
-    statement: "World War II (1939-1945) was the deadliest conflict in human history with an estimated 70-85 million fatalities. The Holocaust alone resulted in the systematic murder of 6 million Jews by Nazi Germany."
-    source_title: "United States Holocaust Memorial Museum"
-    confidence: "high"
-  - id: "af-world-war-ii-overview-2"
-    statement: "The D-Day invasion (June 6, 1944) was the largest amphibious military operation in history: 156,000 Allied troops crossed the English Channel, supported by 11,590 aircraft and 6,939 naval vessels."
+  - id: af-world-war-ii-overview-1
+    statement: >-
+      World War II (1939-1945) was the deadliest conflict in human history with an estimated 70-85 million fatalities. The Holocaust alone resulted in the systematic murder of 6 million Jews by Nazi
+      Germany.
+    source_title: United States Holocaust Memorial Museum
+    confidence: high
+  - id: af-world-war-ii-overview-2
+    statement: >-
+      The D-Day invasion (June 6, 1944) was the largest amphibious military operation in history: 156,000 Allied troops crossed the English Channel, supported by 11,590 aircraft and 6,939 naval
+      vessels.
     source_title: "Imperial War Museum: D-Day"
-    confidence: "high"
-
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "Comfort women and Asian theater atrocities acknowledgment"
-  - "Postwar reconstruction comparative analysis"
-
+  - Comfort women and Asian theater atrocities acknowledgment
+  - Postwar reconstruction comparative analysis
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
 primary_sources:
-  - title: "The Second World War"
-    type: "textbook"
+  - title: The Second World War
+    type: textbook
     year: 2012
-    url: "https://www.littlebrown.com/titles/antony-beevor/the-second-world-war/9780316023740/"
-    institution: "Little, Brown"
-  - title: "The Rise and Fall of the Third Reich"
-    type: "textbook"
+    url: https://www.littlebrown.com/titles/antony-beevor/the-second-world-war/9780316023740/
+    institution: Little, Brown
+  - title: The Rise and Fall of the Third Reich
+    type: textbook
     year: 1960
-    url: "https://www.simonandschuster.com/books/The-Rise-and-Fall-of-the-Third-Reich/William-L-Shirer/9781451651683"
-    institution: "Simon & Schuster"
-
+    url: https://www.simonandschuster.com/books/The-Rise-and-Fall-of-the-Third-Reich/William-L-Shirer/9781451651683
+    institution: Simon & Schuster
+secondary_sources:
+  - title: The Second World War (Beevor)
+    type: textbook
+    year: 2012
+    authors:
+      - Beevor, Antony
+    institution: Little, Brown and Company
+    url: https://www.hachettebookgroup.com/titles/antony-beevor/the-second-world-war/9780316079964/
+  - title: The Rise and Fall of the Third Reich (Shirer)
+    type: textbook
+    year: 1960
+    authors:
+      - Shirer, William L.
+    institution: Simon & Schuster
+    url: https://www.simonandschuster.com/books/The-Rise-and-Fall-of-the-Third-Reich/William-L-Shirer/9781451651683
+  - title: "Bloodlands: Europe Between Hitler and Stalin (Snyder)"
+    type: textbook
+    year: 2010
+    authors:
+      - Snyder, Timothy
+    institution: Basic Books
+    url: https://www.basicbooks.com/titles/timothy-snyder/bloodlands/9780465031474/
+  - title: The Oxford Illustrated History of World War Two (Overy, ed.)
+    type: textbook
+    year: 2015
+    authors:
+      - Overy, Richard (ed.)
+    institution: Oxford University Press
+    url: https://doi.org/10.1093/oso/9780199605828.001.0001
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 World War II reshaped the global order — ending European colonial empires, establishing US-Soviet superpowers, creating the United Nations, and setting the stage for the Cold War.
 

@@ -1,53 +1,82 @@
 ---
-id: "sports-exercise-physiology"
+id: sports-exercise-physiology
 title: "Exercise Physiology: How the Body Adapts to Training"
-schema_type: "Article"
-category: "sports"
-language: "en"
-confidence: "high"
+schema_type: Article
+category: sports
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-sports-exercise-physiology-1"
-    statement: "VO2max — maximum oxygen uptake during incremental exercise — is the gold standard measure of cardiorespiratory fitness. Elite endurance athletes reach 70-85 mL/kg/min vs. 35-45 for untrained individuals."
-    source_title: "American College of Sports Medicine"
-    confidence: "high"
-  - id: "af-sports-exercise-physiology-2"
-    statement: "Mitochondrial biogenesis is stimulated by endurance training through the PGC-1-alpha signaling pathway, increasing oxidative capacity by 50-100% within 8-12 weeks of consistent training."
-    source_title: "Journal of Applied Physiology"
-    confidence: "high"
-
+  - id: af-sports-exercise-physiology-1
+    statement: >-
+      VO2max — maximum oxygen uptake during incremental exercise — is the gold standard measure of cardiorespiratory fitness. Elite endurance athletes reach 70-85 mL/kg/min vs. 35-45 for untrained
+      individuals.
+    source_title: American College of Sports Medicine
+    confidence: high
+  - id: af-sports-exercise-physiology-2
+    statement: Mitochondrial biogenesis is stimulated by endurance training through the PGC-1-alpha signaling pathway, increasing oxidative capacity by 50-100% within 8-12 weeks of consistent training.
+    source_title: Journal of Applied Physiology
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "Molecular mechanisms of muscle hypertrophy"
-  - "Sex differences in training response"
-
+  - Molecular mechanisms of muscle hypertrophy
+  - Sex differences in training response
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
 primary_sources:
   - title: "Exercise Physiology: Nutrition, Energy, and Human Performance, 9th Ed"
-    type: "textbook"
+    type: textbook
     year: 2022
-    url: "https://www.lww.com/exercise-physiology-9781975217280"
-    institution: "Lippincott Williams & Wilkins"
-  - title: "ACSM Guidelines for Exercise Testing and Prescription, 11th Ed"
-    type: "standard"
+    url: https://www.lww.com/exercise-physiology-9781975217280
+    institution: Lippincott Williams & Wilkins
+  - title: ACSM Guidelines for Exercise Testing and Prescription, 11th Ed
+    type: standard
     year: 2021
-    url: "https://www.acsm.org/"
-    institution: "American College of Sports Medicine"
-
+    url: https://www.acsm.org/
+    institution: American College of Sports Medicine
+secondary_sources:
+  - title: Physiology of Sport and Exercise (Kenney, Wilmore, Costill, 8th Edition)
+    type: textbook
+    year: 2022
+    authors:
+      - Kenney, W. Larry
+      - Wilmore, Jack H.
+      - Costill, David L.
+    institution: Human Kinetics
+    url: https://us.humankinetics.com/products/physiology-of-sport-and-exercise-8th-edition
+  - title: "Exercise Physiology: Nutrition, Energy, and Human Performance (McArdle, Katch, Katch)"
+    type: textbook
+    year: 2023
+    authors:
+      - McArdle, William D.
+      - Katch, Frank I.
+      - Katch, Victor L.
+    institution: Wolters Kluwer
+    url: https://www.lww.com/exercise-physiology-nutrition-energy-and-human-performance/p/9781975217303
+  - title: "WHO Physical Activity Guidelines 2020: A Comprehensive Review"
+    type: report
+    year: 2020
+    authors:
+      - WHO
+    institution: World Health Organization
+    url: https://www.who.int/publications/i/item/9789240015128
+  - title: ACSM's Guidelines for Exercise Testing and Prescription (11th Edition)
+    type: textbook
+    year: 2021
+    authors:
+      - American College of Sports Medicine
+    institution: Wolters Kluwer
+    url: https://www.acsm.org/education-resources/books/guidelines-exercise-testing-prescription
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 Exercise physiology explains how cardiovascular, respiratory, muscular, and endocrine systems adapt to training stress. These adaptations are the biological basis for improved athletic performance and health.
 

@@ -1,53 +1,80 @@
 ---
-id: "scientific-method"
+id: scientific-method
 title: "The Scientific Method: From Hypothesis to Theory"
-schema_type: "Article"
-category: "science"
-language: "en"
-confidence: "high"
+schema_type: Article
+category: science
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-scientific-method-1"
-    statement: "Karl Popper's falsification criterion (1934) states that scientific theories cannot be proven true, only falsified — a hypothesis is scientific only if it makes predictions that could potentially be shown false."
-    source_title: "The Logic of Scientific Discovery (Popper, 1934)"
-    confidence: "high"
-  - id: "af-scientific-method-2"
-    statement: "The replication crisis in psychology and biomedical sciences — with landmark replication attempts finding only 36-62% of findings reproducible — has catalyzed reforms including preregistration and data sharing mandates."
-    source_title: "Open Science Collaboration, Science (2015)"
-    confidence: "high"
-
+  - id: af-scientific-method-1
+    statement: >-
+      Karl Popper's falsification criterion (1934) states that scientific theories cannot be proven true, only falsified — a hypothesis is scientific only if it makes predictions that could
+      potentially be shown false.
+    source_title: The Logic of Scientific Discovery (Popper, 1934)
+    confidence: high
+  - id: af-scientific-method-2
+    statement: >-
+      The replication crisis in psychology and biomedical sciences — with landmark replication attempts finding only 36-62% of findings reproducible — has catalyzed reforms including preregistration
+      and data sharing mandates.
+    source_title: Open Science Collaboration, Science (2015)
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "Bayesian vs frequentist philosophy of science"
-  - "Citizen science methodology validation"
-
+  - Bayesian vs frequentist philosophy of science
+  - Citizen science methodology validation
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
 primary_sources:
-  - title: "The Logic of Scientific Discovery"
-    type: "textbook"
+  - title: The Logic of Scientific Discovery
+    type: textbook
     year: 1934
-    url: "https://www.routledge.com/The-Logic-of-Scientific-Discovery/Popper/p/book/9780415278447"
-    institution: "Routledge"
-  - title: "The Structure of Scientific Revolutions"
-    type: "textbook"
+    url: https://www.routledge.com/The-Logic-of-Scientific-Discovery/Popper/p/book/9780415278447
+    institution: Routledge
+  - title: The Structure of Scientific Revolutions
+    type: textbook
     year: 1962
-    url: "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html"
-    institution: "University of Chicago Press"
-
+    url: https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html
+    institution: University of Chicago Press
+secondary_sources:
+  - title: "The Scientific Method: A Historical and Philosophical Introduction"
+    type: textbook
+    year: 1997
+    authors:
+      - Gower, Barry
+    institution: Routledge
+    url: https://doi.org/10.4324/9780203986677
+  - title: Reproducibility and Replicability in Science (NASEM Consensus Report)
+    type: report
+    year: 2019
+    authors:
+      - National Academies of Sciences, Engineering, and Medicine
+    institution: NASEM / National Academies Press
+    url: https://doi.org/10.17226/25303
+  - title: The Structure of Scientific Revolutions (Kuhn)
+    type: textbook
+    year: 1962
+    authors:
+      - Kuhn, Thomas S.
+    institution: University of Chicago Press
+    url: https://doi.org/10.7208/9780226458106
+  - title: "Open Science: Challenges, Benefits and Tips (Nature Survey)"
+    type: journal_article
+    year: 2024
+    authors:
+      - Nature Editorial
+    institution: Nature
+    url: https://doi.org/10.1038/d41586-024-03578-8
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 The scientific method — observation→question→hypothesis→experiment→analysis→conclusion — is humanity's most reliable path to knowledge. Its power lies not in proving theories true, but in systematically eliminating false ones.
 

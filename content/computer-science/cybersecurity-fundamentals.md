@@ -1,52 +1,81 @@
 ---
-id: "cybersecurity-fundamentals"
+id: cybersecurity-fundamentals
 title: "Cybersecurity: Threats, Cryptography, and Defense"
-schema_type: "Article"
-category: "computer-science"
-language: "en"
-confidence: "high"
+schema_type: Article
+category: computer-science
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-cybersecurity-fundamentals-1"
-    statement: "RSA encryption (Rivest-Shamir-Adleman, 1977) uses the difficulty of factoring large semiprimes — a 2048-bit RSA key requires factoring a 617-digit number. Shor's quantum algorithm would break RSA, motivating post-quantum cryptography standards (NIST, 2024)."
-    source_title: "Rivest, Shamir, Adleman (1977) / NIST PQC (2024)"
-    confidence: "high"
-  - id: "af-cybersecurity-fundamentals-2"
-    statement: "Zero Trust architecture — \"never trust, always verify\" — replaces perimeter-based security with continuous authentication of every access request. NIST SP 800-207 (2020) defines the Zero Trust framework adopted by the US federal government."
-    source_title: "NIST SP 800-207 (2020)"
-    confidence: "high"
-
+  - id: af-cybersecurity-fundamentals-1
+    statement: >-
+      RSA encryption (Rivest-Shamir-Adleman, 1977) uses the difficulty of factoring large semiprimes — a 2048-bit RSA key requires factoring a 617-digit number. Shor's quantum algorithm would break
+      RSA, motivating post-quantum cryptography standards (NIST, 2024).
+    source_title: Rivest, Shamir, Adleman (1977) / NIST PQC (2024)
+    confidence: high
+  - id: af-cybersecurity-fundamentals-2
+    statement: >-
+      Zero Trust architecture — "never trust, always verify" — replaces perimeter-based security with continuous authentication of every access request. NIST SP 800-207 (2020) defines the Zero Trust
+      framework adopted by the US federal government.
+    source_title: NIST SP 800-207 (2020)
+    confidence: high
 completeness: 0.9
-
 primary_sources:
   - title: "Cryptography and Network Security: Principles and Practice, 8th Edition"
-    type: "textbook"
+    type: textbook
     year: 2020
-    url: "https://www.pearson.com/en-us/subject-catalog/p/cryptography-and-network-security/P200000003372"
-    institution: "Pearson"
+    url: https://www.pearson.com/en-us/subject-catalog/p/cryptography-and-network-security/P200000003372
+    institution: Pearson
   - title: "NIST SP 800-207: Zero Trust Architecture"
-    type: "standard"
+    type: standard
     year: 2020
-    url: "https://csrc.nist.gov/publications/detail/sp/800-207/final"
-    institution: "NIST"
-
+    url: https://csrc.nist.gov/publications/detail/sp/800-207/final
+    institution: NIST
 known_gaps:
-  - "Post-quantum cryptographic algorithms"
-  - "Supply chain attacks (SolarWinds-type)"
-
+  - Post-quantum cryptographic algorithms
+  - Supply chain attacks (SolarWinds-type)
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
+secondary_sources:
+  - title: "Computer Security: Principles and Practice (Stallings & Brown, 4th Edition)"
+    type: textbook
+    year: 2018
+    authors:
+      - Stallings, William
+      - Brown, Lawrie
+    institution: Pearson
+    url: https://www.pearson.com/en-us/subject-catalog/p/computer-security-principles-and-practice/P200000003327
+  - title: Security Engineering (Anderson, 3rd Edition)
+    type: textbook
+    year: 2020
+    authors:
+      - Anderson, Ross
+    institution: Wiley
+    url: https://doi.org/10.1002/9781119642787
+  - title: NIST Cybersecurity Framework 2.0 (2024)
+    type: report
+    year: 2024
+    authors:
+      - NIST
+    institution: National Institute of Standards and Technology
+    url: https://www.nist.gov/cyberframework
+  - title: "ENISA Threat Landscape 2024: Annual Cybersecurity Threats Report"
+    type: report
+    year: 2024
+    authors:
+      - ENISA
+    institution: European Union Agency for Cybersecurity
+    url: https://www.enisa.europa.eu/topics/cyber-threats/etl
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 Cybersecurity protects digital systems through layered defense: cryptography secures data; network security blocks attacks; Zero Trust eliminates implicit trust. The threat landscape evolves as fast as the technology it defends.
 
