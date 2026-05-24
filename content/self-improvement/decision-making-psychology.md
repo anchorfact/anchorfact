@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-decision-making-psychology-1
-    statement: >-
-      Daniel Kahneman and Amos Tversky's prospect theory (1979) demonstrated loss aversion — losses feel ~2x more painful than equivalent gains feel pleasurable — one of the most replicated findings
-      in behavioral economics.
-    source_title: Science (1979)
+  - id: fact-si-dm-001
+    statement: "Bounded rationality (Simon, Nobel 1978): decisions constrained by information, cognition, time."
+    source_title: Simon, H.A. Behavioral Model of Rational Choice (QJE 1955)
+    source_url: https://doi.org/10.2307/1884852
     confidence: high
-  - id: af-decision-making-psychology-2
-    statement: >-
-      The dual-process theory distinguishes System 1 (fast, automatic, intuitive) from System 2 (slow, deliberate, analytical). System 1 makes ~95% of daily decisions, using efficient but
-      systematically biased heuristics.
-    source_title: Thinking, Fast and Slow (Kahneman, 2011)
+  - id: fact-si-dm-002
+    statement: "Nudge theory (Thaler & Sunstein 2008, Nobel 2017): choice architecture guides better decisions."
+    source_title: Thaler & Sunstein, Nudge Updated Ed. (Yale 2021)
+    source_url: https://yalebooks.yale.edu/book/9780300262285/nudge/
+    confidence: high
+  - id: fact-si-dm-003
+    statement: "Paradox of Choice (Schwartz 2004): too many options lead to decision paralysis."
+    source_title: Schwartz, B. The Paradox of Choice (HarperCollins 2004)
+    source_url: https://www.harpercollins.com/products/the-paradox-of-choice-barry-schwartz
     confidence: high
 completeness: 0.9
 known_gaps:

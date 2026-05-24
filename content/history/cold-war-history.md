@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-cold-war-history-1
-    statement: >-
-      The Cold War (1947-1991) was a geopolitical struggle between the United States and Soviet Union — never direct military conflict but fought through proxy wars (Korea, Vietnam, Afghanistan),
-      nuclear arms race, space race, and ideological competition.
-    source_title: "Gaddis, The Cold War: A New History (2005)"
+  - id: fact-hist-cw-001
+    statement: "Cold War (1947-91): US-led NATO vs. Soviet-led Warsaw Pact ideological conflict, no direct combat."
+    source_title: "Gaddis, J.L. The Cold War: A New History (Penguin 2005)"
+    source_url: https://www.penguinrandomhouse.com/books/292198/the-cold-war-by-john-lewis-gaddis/
     confidence: high
-  - id: af-cold-war-history-2
-    statement: >-
-      The Cuban Missile Crisis (October 1962) was the closest the world came to nuclear war. Soviet missiles in Cuba prompted a US naval blockade, with JFK and Khrushchev reaching a secret agreement:
-      Soviet missiles removed from Cuba, US missiles removed from Turkey.
-    source_title: "NSA/National Archives: Cuban Missile Crisis"
+  - id: fact-hist-cw-002
+    statement: "Cuban Missile Crisis (Oct 1962): closest to nuclear war, resolved via US-Turkey/USSR-Cuba missile swap."
+    source_title: Dobbs, M. One Minute to Midnight (Knopf 2008)
+    source_url: https://www.penguinrandomhouse.com/books/123425/one-minute-to-midnight-by-michael-dobbs/
+    confidence: high
+  - id: fact-hist-cw-003
+    statement: Berlin Wall fell Nov 9, 1989 symbolizing Cold War end; German reunification Oct 1990.
+    source_title: Sarotte, M.E. The Collapse (Basic Books 2014)
+    source_url: https://www.basicbooks.com/titles/mary-elise-sarotte/the-collapse/9780465064946/
     confidence: high
 completeness: 0.9
 primary_sources:

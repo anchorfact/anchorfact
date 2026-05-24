@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-astronomy-and-cosmology-1
-    statement: >-
-      The James Webb Space Telescope (JWST, launched December 2021) observes in infrared with a 6.5m mirror — 100x more sensitive than Hubble — revealing the earliest galaxies formed 300-400 million
-      years after the Big Bang at redshifts z>13.
-    source_title: NASA JWST / Nature (2022-2024)
+  - id: fact-sci-astro-001
+    statement: The Cosmic Microwave Background radiation, discovered by Penzias and Wilson in 1965, provides the strongest evidence for the Big Bang theory.
+    source_title: "Planck 2018 results: Cosmological parameters (A&A 2020)"
+    source_url: https://doi.org/10.1051/0004-6361/201833910
     confidence: high
-  - id: af-astronomy-and-cosmology-2
-    statement: >-
-      The Big Bang model (Hubble, 1929; COBE, WMAP, Planck satellites) describes a universe that began 13.8 billion years ago from a hot, dense state. Cosmic microwave background radiation, discovered
-      by Penzias and Wilson (1965), is the afterglow at 2.725 K.
-    source_title: Planck Collaboration (2018) / Penzias & Wilson, ApJ (1965)
+  - id: fact-sci-astro-002
+    statement: Dark energy constitutes ~68% of the total energy density of the universe (Planck Collaboration).
+    source_title: Planck Collaboration, Astronomy & Astrophysics 2020
+    source_url: https://doi.org/10.1051/0004-6361/201833910
+    confidence: high
+  - id: fact-sci-astro-003
+    statement: The EHT captured the first direct image of a black hole (M87*) in 2019, confirming general relativity predictions.
+    source_title: EHT Collaboration, The Astrophysical Journal Letters 2019
+    source_url: https://doi.org/10.3847/2041-8213/ab0ec7
     confidence: high
 completeness: 0.9
 primary_sources:

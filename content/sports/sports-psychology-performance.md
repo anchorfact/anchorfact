@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-sports-psychology-performance-1
-    statement: >-
-      Self-talk — internal dialogue during performance — affects motor skill execution: instructional self-talk (technique cues) improves precision tasks; motivational self-talk enhances strength and
-      endurance.
-    source_title: Journal of Sport & Exercise Psychology
+  - id: fact-sp-spy-001
+    statement: "Flow state (Csikszentmihalyi 1975): complete absorption, clear goals, effortless action at peak performance."
+    source_title: Csikszentmihalyi, M. Flow (Harper Perennial 2008)
+    source_url: https://www.harpercollins.com/products/flow-mihaly-csikszentmihalyi
     confidence: high
-  - id: af-sports-psychology-performance-2
-    statement: >-
-      The inverted-U hypothesis (Yerkes-Dodson Law) proposes that performance increases with arousal to an optimal point, then declines — elite athletes learn to regulate arousal through breathing,
-      visualization, and pre-performance routines.
-    source_title: Yerkes & Dodson (1908) / Journal of Comparative Neurology
+  - id: fact-sp-spy-002
+    statement: "Inverted-U/Yerkes-Dodson Law (1908): optimal performance at moderate arousal levels."
+    source_title: Weinberg & Gould, Foundations of Sport & Exercise Psych 8th ed. (Human Kinetics 2023)
+    source_url: https://us.humankinetics.com/products/foundations-of-sport-and-exercise-psychology-8th-edition
+    confidence: high
+  - id: fact-sp-spy-003
+    statement: "Imagery/visualization: combined with physical practice shows 25-30% performance improvement."
+    source_title: Cumming & Williams, Imagery in performance (Oxford Handbook of Sport Psych 2012)
+    source_url: https://doi.org/10.1093/oxfordhb/9780199731763.013.0011
     confidence: high
 completeness: 0.9
 primary_sources:

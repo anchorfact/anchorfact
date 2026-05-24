@@ -15,13 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-desert-ecosystems-1
-    statement: Deserts cover approximately 33% of Earth's land surface, with the Sahara alone spanning 9.2 million km² across 11 countries.
-    source_title: UNEP Desert Report
+  - id: fact-geo-de-001
+    statement: "Deserts: ~33% of land surface, defined by aridity (<250mm/year), not temperature."
+    source_title: UNEP World Atlas of Desertification 3rd ed. (2018)
+    source_url: https://wad.jrc.ec.europa.eu/
     confidence: high
-  - id: af-desert-ecosystems-2
-    statement: "Desert organisms exhibit convergent evolution: the fog-basking beetle (Namib), barrel cactus (Sonoran), and thorny devil (Australian) independently evolved water collection mechanisms."
-    source_title: Nature Ecology & Evolution
+  - id: fact-geo-de-002
+    statement: "UNCCD: 12M hectares productive land lost annually to desertification, affecting 1.5B people."
+    source_title: UNCCD Global Land Outlook 2nd ed. (2022)
+    source_url: https://www.unccd.int/resources/global-land-outlook/glo2
+    confidence: high
+  - id: fact-geo-de-003
+    statement: "CAM photosynthesis: cacti open stomata at night to conserve water (Nobel, Plant Physiology 5th ed. 2020)."
+    source_title: Nobel, P.S. Physicochemical & Environmental Plant Physiology 5th ed. (Academic Press 2020)
+    source_url: https://www.elsevier.com/books/physicochemical-and-environmental-plant-physiology/nobel/978-0-12-819146-0
     confidence: high
 completeness: 0.9
 known_gaps:

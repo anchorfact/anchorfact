@@ -15,15 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-neuroscience-brain-plasticity-1
-    statement: >-
-      Neuroplasticity — the brain's ability to reorganize synaptic connections — persists throughout life. London taxi drivers showed enlarged posterior hippocampi proportional to years of navigation
-      experience (Maguire et al., PNAS, 2000).
-    source_title: Maguire et al., PNAS (2000)
+  - id: fact-sci-ns-001
+    statement: Kandel's Aplysia work showed learning produces lasting synaptic changes (Nobel 2000).
+    source_title: Kandel, E.R. et al. Principles of Neural Science, 6th ed. (McGraw-Hill 2021)
+    source_url: https://neurology.mhmedical.com/book.aspx?bookid=3024
     confidence: high
-  - id: af-neuroscience-brain-plasticity-2
-    statement: Long-term potentiation (LTP), discovered by Bliss and Lomo in 1973, is the persistent strengthening of synapses — widely considered the primary cellular mechanism underlying learning and memory.
-    source_title: Bliss & Lomo, Journal of Physiology (1973)
+  - id: fact-sci-ns-002
+    statement: "Hebbian plasticity: \"cells that fire together wire together\" (Hebb 1949)."
+    source_title: Hebb, D.O. The Organization of Behavior (Wiley 1949)
+    source_url: https://doi.org/10.1002/sce.37303405110
+    confidence: high
+  - id: fact-sci-ns-003
+    statement: Adult hippocampal neurogenesis confirmed by Eriksson et al. (Nature Medicine 1998).
+    source_title: Eriksson et al. Neurogenesis in adult human hippocampus (Nature Medicine 1998)
+    source_url: https://doi.org/10.1038/3305
     confidence: high
 completeness: 0.9
 known_gaps:

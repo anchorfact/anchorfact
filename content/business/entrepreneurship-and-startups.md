@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-entrepreneurship-and-startups-1
-    statement: >-
-      The Lean Startup methodology (Eric Ries, 2011) advocates Build-Measure-Learn cycles: build a minimum viable product (MVP), measure customer response, and pivot or persevere — minimizing wasted
-      effort on unvalidated ideas.
-    source_title: Ries, The Lean Startup (2011)
+  - id: fact-biz-ent-001
+    statement: "Lean Startup (Ries 2011): Build-Measure-Learn loop, MVP, validated learning."
+    source_title: Ries, E. The Lean Startup (Crown Business 2011)
+    source_url: https://theleanstartup.com/book
     confidence: high
-  - id: af-entrepreneurship-and-startups-2
-    statement: >-
-      Venture capital funded 15,000+ US startups with $170 billion in 2023. The VC model operates on power-law returns: ~65% of investments lose money, but 1-2 "home runs" per fund generate 10-100x
-      returns that compensate for all losses.
-    source_title: PitchBook-NVCA Venture Monitor (2024)
+  - id: fact-biz-ent-002
+    statement: GEM 2024 tracks entrepreneurship across 50+ economies; highest TEA in Latin America.
+    source_title: GEM 2023/2024 Global Report
+    source_url: https://www.gemconsortium.org/report/2023-2024-global-report
+    confidence: high
+  - id: fact-biz-ent-003
+    statement: US VC reached $170.6B in 2024 (PitchBook-NVCA); AI/ML was top sector.
+    source_title: PitchBook-NVCA Venture Monitor Q4 2024
+    source_url: https://pitchbook.com/news/reports/q4-2024-pitchbook-nvca-venture-monitor
     confidence: high
 completeness: 0.9
 primary_sources:

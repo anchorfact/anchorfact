@@ -15,15 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-cognitive-biases-handbook-1
-    statement: >-
-      The Dunning-Kruger effect (1999) demonstrates that individuals with low competence in a domain overestimate their ability while experts underestimate theirs. Students in the 12th percentile
-      estimated their performance at the 62nd percentile.
-    source_title: Journal of Personality and Social Psychology (1999)
+  - id: fact-si-cb-001
+    statement: "Kahneman (2011): System 1 (fast/intuitive) vs. System 2 (slow/deliberate) dual-process theory."
+    source_title: Kahneman, D. Thinking, Fast and Slow (FSG 2011)
+    source_url: https://us.macmillan.com/books/9780374533557/thinking-fast-and-slow
     confidence: high
-  - id: af-cognitive-biases-handbook-2
-    statement: The mere exposure effect — repeated unreinforced exposure increases positive affect — underlies advertising effectiveness, musical taste formation, and interpersonal attraction.
-    source_title: Zajonc, JPSP (1968)
+  - id: fact-si-cb-002
+    statement: "Confirmation bias: seeking confirmatory evidence (Wason 1960s; Nickerson, RGPS 1998)."
+    source_title: Nickerson, R.S. Confirmation Bias (Review of General Psychology 1998)
+    source_url: https://doi.org/10.1037/1089-2680.2.2.175
+    confidence: high
+  - id: fact-si-cb-003
+    statement: "Loss aversion (Kahneman & Tversky 1979): losses hurt ~2x more than equivalent gains feel good."
+    source_title: Kahneman & Tversky, Prospect Theory (Econometrica 1979)
+    source_url: https://doi.org/10.2307/1914185
     confidence: high
 completeness: 0.9
 known_gaps:

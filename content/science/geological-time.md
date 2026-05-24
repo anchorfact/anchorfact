@@ -15,13 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-geological-time-1
-    statement: Earth is approximately 4.54 billion years old, as determined by radiometric dating of meteorites (Canyon Diablo) and the oldest terrestrial rocks (Acasta Gneiss, 4.03 Ga).
-    source_title: USGS Geologic Time Scale
+  - id: fact-sci-geo-001
+    statement: The Geological Time Scale divides Earth's 4.6B-year history into eons/eras/periods/epochs.
+    source_title: International Commission on Stratigraphy, Chronostratigraphic Chart 2023
+    source_url: https://stratigraphy.org/chart
     confidence: high
-  - id: af-geological-time-2
-    statement: "The Phanerozoic Eon (541 Ma to present) encompasses complex multicellular life, divided into three eras: Paleozoic, Mesozoic, and Cenozoic, each bounded by mass extinction events."
-    source_title: International Commission on Stratigraphy
+  - id: fact-sci-geo-002
+    statement: Radiometric dating (Patterson 1956) established Earth age at 4.54±0.05 billion years.
+    source_title: Patterson, C. Age of meteorites and the Earth (Geochimica 1956)
+    source_url: https://doi.org/10.1016/0016-7037(56)90036-9
+    confidence: high
+  - id: fact-sci-geo-003
+    statement: The Cambrian Explosion (~541 mya) saw rapid emergence of most animal phyla in ~20-25 million years.
+    source_title: Erwin & Valentine, The Cambrian Explosion (Roberts & Co. 2013)
+    source_url: https://www.roberts-publishers.com/the-cambrian-explosion.html
     confidence: high
 completeness: 0.9
 known_gaps:

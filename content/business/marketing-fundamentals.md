@@ -15,13 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-marketing-fundamentals-1
-    statement: The 4Ps marketing mix (Product, Price, Place, Promotion), codified by McCarthy in 1960 and popularized by Philip Kotler, remains the foundational marketing framework taught globally.
-    source_title: Kotler & Keller, Marketing Management (2015)
+  - id: fact-biz-mkt-001
+    statement: Kotler's 4Ps (Product, Price, Place, Promotion) is the cornerstone framework (Marketing Management 1967).
+    source_title: Kotler & Keller, Marketing Management 16th Global Ed. (Pearson 2021)
+    source_url: https://www.pearson.com/en-us/subject-catalog/p/marketing-management/P200000009654
     confidence: high
-  - id: af-marketing-fundamentals-2
-    statement: Digital advertising surpassed traditional advertising in global spending in 2019, reaching $680 billion in 2024, with Google and Meta controlling ~40% of the global digital ad market.
-    source_title: GroupM / eMarketer (2024)
+  - id: fact-biz-mkt-002
+    statement: Digital ad spend surpassed traditional in 2019, reaching $670B+ in 2024 (Statista).
+    source_title: Statista Digital Advertising Worldwide Report 2024
+    source_url: https://www.statista.com/outlook/dmo/digital-advertising/worldwide
+    confidence: high
+  - id: fact-biz-mkt-003
+    statement: NPS (Reichheld, HBR 2003) is the most widely used customer loyalty metric in Fortune 500.
+    source_title: Reichheld, F.F. The One Number You Need to Grow (HBR 2003)
+    source_url: https://hbr.org/2003/12/the-one-number-you-need-to-grow
     confidence: high
 completeness: 0.9
 primary_sources:

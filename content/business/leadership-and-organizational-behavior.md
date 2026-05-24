@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-leadership-and-organizational-behavior-1
-    statement: >-
-      Transformational leadership, articulated by Burns (1978) and Bass (1985), engages followers through idealized influence, inspirational motivation, intellectual stimulation, and individualized
-      consideration — the most effective style per meta-analysis of 626 studies.
-    source_title: Bass & Riggio, Transformational Leadership (2006)
+  - id: fact-biz-ldr-001
+    statement: "Transformational leadership (Burns 1978, Bass 1985): 4 I's - idealized influence, inspiration, intellectual stimulation, individual consideration."
+    source_title: Bass & Riggio, Transformational Leadership 2nd ed. (Psych Press 2006)
+    source_url: https://doi.org/10.4324/9781410617095
     confidence: high
-  - id: af-leadership-and-organizational-behavior-2
-    statement: >-
-      Google's Project Oxygen found technical expertise ranked LAST among eight key management behaviors. Coaching, empowerment, and creating inclusive environments were top predictors of team
-      effectiveness.
-    source_title: Google re:Work (Garvin, 2013)
+  - id: fact-biz-ldr-002
+    statement: "Google Project Aristotle (2012): psychological safety was #1 predictor of team performance."
+    source_title: Duhigg, C. What Google Learned About Teams (NYT 2016)
+    source_url: https://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html
+    confidence: high
+  - id: fact-biz-ldr-003
+    statement: "Goleman (1995): EQ is a stronger leadership predictor than IQ."
+    source_title: Goleman, D. Emotional Intelligence (Bantam 1995)
+    source_url: https://www.danielgoleman.info/books/emotional-intelligence/
     confidence: high
 completeness: 0.9
 known_gaps:

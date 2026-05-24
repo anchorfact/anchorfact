@@ -15,13 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-south-american-geography-1
-    statement: The Amazon rainforest spans approximately 5.5 million square kilometers across nine South American countries, producing 20% of the world's oxygen.
-    source_title: WWF Amazon Report
+  - id: fact-geo-sa-001
+    statement: "Amazon: 5.5M km² largest tropical rainforest, ~10% Earth species (WWF 2024)."
+    source_title: WWF Amazon Biome Overview (2024)
+    source_url: https://www.worldwildlife.org/places/amazon
     confidence: high
-  - id: af-south-american-geography-2
-    statement: The Andes mountain range is the longest continental mountain range in the world at 7,000 km, running through seven countries from Venezuela to Argentina.
-    source_title: USGS Geographic Survey
+  - id: fact-geo-sa-002
+    statement: "Andes: longest continental mountain range (7,000 km) through 7 countries."
+    source_title: Oncken et al. (eds.) The Andes (Springer 2006)
+    source_url: https://doi.org/10.1007/978-3-540-48684-8
+    confidence: high
+  - id: fact-geo-sa-003
+    statement: "Atacama Desert (Chile): driest non-polar desert; some stations never recorded rainfall (NASA)."
+    source_title: NASA Earth Observatory Atacama Desert (2024)
+    source_url: https://earthobservatory.nasa.gov/biome/biodesert.php
     confidence: high
 completeness: 0.9
 known_gaps:

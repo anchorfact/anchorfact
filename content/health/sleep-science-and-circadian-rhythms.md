@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-sleep-science-and-circadian-rhythms-1
-    statement: >-
-      Sleep cycles alternate between NREM (stages N1-N3) and REM approximately every 90 minutes, with REM periods lengthening toward morning and deep slow-wave sleep dominating the first half of the
-      night.
-    source_title: NIH Sleep Research
+  - id: fact-hlth-slp-001
+    statement: Nobel Prize 2017 (Hall, Rosbash, Young) for molecular mechanisms of circadian rhythms.
+    source_title: Nobel Prize in Physiology or Medicine 2017 Press Release
+    source_url: https://www.nobelprize.org/prizes/medicine/2017/press-release/
     confidence: high
-  - id: af-sleep-science-and-circadian-rhythms-2
-    statement: >-
-      The suprachiasmatic nucleus (SCN) in the hypothalamus serves as the master circadian clock. Light exposure to intrinsically photosensitive retinal ganglion cells (ipRGCs) is the primary
-      zeitgeber (time-giver).
-    source_title: Journal of Biological Rhythms
+  - id: fact-hlth-slp-002
+    statement: Adults 18-60 need 7+ hours sleep/night (AASM consensus 2015).
+    source_title: Watson et al. Recommended Sleep Amount (Sleep 2015)
+    source_url: https://doi.org/10.5665/sleep.4716
+    confidence: high
+  - id: fact-hlth-slp-003
+    statement: Glymphatic system (Nedergaard, Science 2013) clears brain waste during deep sleep.
+    source_title: Xie et al. Sleep Drives Metabolite Clearance (Science 2013)
+    source_url: https://doi.org/10.1126/science.1241224
     confidence: high
 completeness: 0.9
 known_gaps:

@@ -15,15 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-organic-chemistry-1
-    statement: >-
-      Carbon's ability to form four covalent bonds and catenate (bond to itself in chains and rings) enables millions of organic compounds. Functional groups (alcohol -OH, carbonyl C=O, amine -NH₂)
-      determine chemical behavior.
-    source_title: Clayden, Organic Chemistry (2012)
+  - id: fact-sci-oc-001
+    statement: Woodward (Nobel 1965) pioneered total synthesis of chlorophyll, strychnine, vitamin B12.
+    source_title: Woodward, R.B. Total Synthesis of Vitamin B12 (Pure Appl Chem 1973)
+    source_url: https://doi.org/10.1351/pac197333010145
     confidence: high
-  - id: af-organic-chemistry-2
-    statement: "SN1 and SN2 substitution mechanisms: SN2 involves backside attack and inversion of configuration in one step; SN1 proceeds through a carbocation intermediate with racemization."
-    source_title: Ingold, Structure and Mechanism in Organic Chemistry (1953)
+  - id: fact-sci-oc-002
+    statement: Woodward-Hoffmann rules (1965, Nobel 1981) explain pericyclic reaction stereochemistry via orbital symmetry.
+    source_title: Woodward & Hoffmann, Conservation of Orbital Symmetry (1970)
+    source_url: https://doi.org/10.1002/anie.197007811
+    confidence: high
+  - id: fact-sci-oc-003
+    statement: IUPAC nomenclature (1919) provides the international standard for naming organic compounds.
+    source_title: "IUPAC Blue Book: Nomenclature of Organic Chemistry (2013)"
+    source_url: https://iupac.org/what-we-do/books/bluebook/
     confidence: high
 completeness: 0.9
 primary_sources:

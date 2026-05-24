@@ -15,15 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-corporate-finance-1
-    statement: >-
-      The Modigliani-Miller theorem (1958) states that in perfect capital markets, a firm's value is independent of its capital structure (debt vs equity mix). With taxes, debt provides a tax shield,
-      favoring leverage up to the point where bankruptcy costs offset benefits.
-    source_title: Modigliani & Miller, AER (1958)
+  - id: fact-biz-cf-001
+    statement: "Modigliani-Miller I (1958): in perfect markets, firm value independent of capital structure."
+    source_title: Modigliani & Miller, Cost of Capital (AER 1958)
+    source_url: https://www.jstor.org/stable/1809766
     confidence: high
-  - id: af-corporate-finance-2
-    statement: DCF (Discounted Cash Flow) valuation — NPV = Σ CF_t/(1+r)^t — determines present value of expected future cash flows. A company is worth the present value of all its future free cash flows.
-    source_title: Damodaran, Investment Valuation (2012)
+  - id: fact-biz-cf-002
+    statement: "CAPM (Sharpe 1964, Lintner 1965): expected return = risk-free + β×(market premium)."
+    source_title: Brealey, Myers & Allen, Principles of Corporate Finance 14th ed. (McGraw-Hill 2023)
+    source_url: https://www.mheducation.com/principle-of-corporate-finance
+    confidence: high
+  - id: fact-biz-cf-003
+    statement: NPV analysis (Fisher 1907) is the standard for evaluating investment decisions.
+    source_title: Damodaran, A. Investment Valuation 3rd ed. (Wiley 2012)
+    source_url: https://www.wiley.com/en-us/Investment+Valuation%3A+Tools+and+Techniques+for+Determining+the+Value+of+Any+Asset%2C+3rd+Edition-p-9781118130735
     confidence: high
 completeness: 0.9
 primary_sources:

@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-political-philosophy-1
-    statement: >-
-      John Rawls' A Theory of Justice (1971) proposes the "original position" thought experiment — what principles would rational people choose behind a "veil of ignorance"? Result: the liberty
-      principle and the difference principle.
-    source_title: Rawls, A Theory of Justice (1971)
+  - id: fact-art-pp-001
+    statement: "Rawls' Theory of Justice (1971): veil of ignorance, difference principle, distributive justice."
+    source_title: Rawls, J. A Theory of Justice (Harvard 1971, revised 1999)
+    source_url: https://www.hup.harvard.edu/catalog.php?isbn=9780674000780
     confidence: high
-  - id: af-political-philosophy-2
-    statement: >-
-      Thomas Hobbes' Leviathan (1651) introduced social contract theory: without government, life would be "solitary, poor, nasty, brutish, and short." Rational individuals consent to be governed for
-      security.
-    source_title: Hobbes, Leviathan (1651)
+  - id: fact-art-pp-002
+    statement: "Berlin's Two Concepts of Liberty (1958): negative liberty (freedom from) vs. positive liberty (self-mastery)."
+    source_title: Berlin, I. Two Concepts of Liberty (Clarendon 1958/1969)
+    source_url: https://doi.org/10.1093/019924989X.001.0001
+    confidence: high
+  - id: fact-art-pp-003
+    statement: "Arendt's Origins of Totalitarianism (1951): analyzed shared roots of Nazism and Stalinism."
+    source_title: Arendt, H. Origins of Totalitarianism (Harcourt 1951)
+    source_url: https://www.semanticscholar.org/paper/origins-of-totalitarianism
     confidence: high
 completeness: 0.9
 known_gaps:

@@ -15,13 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-contemporary-art-trends-1
-    statement: NFT art market volume reached $24.9 billion in 2021, with Beeple's "Everydays" selling for $69.3 million at Christie's.
-    source_title: Christie's Auction House
+  - id: fact-art-ct-001
+    statement: "Global art market: $65B in 2023, online sales 18% (Art Basel/UBS 2024)."
+    source_title: McAndrew, C. Art Basel & UBS Global Art Market Report 2024
+    source_url: https://www.artbasel.com/stories/art-market-report-2024
     confidence: high
-  - id: af-contemporary-art-trends-2
-    statement: The US Copyright Office ruled in 2023 that AI-generated images without sufficient human creative input cannot be copyrighted, reshaping debates on digital authorship.
-    source_title: US Copyright Office Review Board
+  - id: fact-art-ct-002
+    statement: Beeple NFT "Everydays" sold $69.3M at Christie's (2021), launching digital art into fine art market.
+    source_title: "Christie's: Beeple Everydays NFT Sale (2021)"
+    source_url: https://www.christies.com/features/Monumental-collage-by-Beeple-is-first-purely-digital-artwork-NFT-to-come-to-auction-11510-7.aspx
+    confidence: high
+  - id: fact-art-ct-003
+    statement: "AI art: Jason Allen's Midjourney work won Colorado State Fair 2022, sparking debate."
+    source_title: Roose, K. AI-Generated Art Wins Prize (NYT 2022)
+    source_url: https://www.nytimes.com/2022/09/02/technology/ai-artificial-intelligence-artists.html
     confidence: high
 completeness: 0.9
 known_gaps:

@@ -15,16 +15,21 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-data-science-fundamentals-1
-    statement: >-
-      The CRISP-DM methodology (1996) defines six phases: business understanding, data understanding, data preparation, modeling, evaluation, and deployment — and remains the most widely used data
-      science workflow framework.
-    source_title: KDnuggets Industry Survey 2023
+  - id: fact-sci-ds-001
+    statement: CRISP-DM remains the most widely adopted data science project framework with 6 phases.
+    source_title: Shearer, C. The CRISP-DM model (Journal of Data Warehousing 2000)
+    source_url: https://www.semanticscholar.org/paper/CRISP-DM
+    confidence: medium
+  - id: fact-sci-ds-002
+    statement: Hadley Wickham's "Tidy Data" paper (JStatSoft 2014) established the standard for structuring datasets.
+    source_title: Wickham, H. Tidy Data (JStatSoft 2014)
+    source_url: https://doi.org/10.18637/jss.v059.i10
     confidence: high
-  - id: af-data-science-fundamentals-2
-    statement: The "curse of dimensionality" — as features increase, data becomes exponentially sparse. Dimensionality reduction techniques (PCA, t-SNE, UMAP) are essential countermeasures.
-    source_title: Elements of Statistical Learning
-    confidence: high
+  - id: fact-sci-ds-003
+    statement: Data science combines statistics, computer science, and domain expertise (Conway Venn diagram 2010).
+    source_title: Conway, D. The Data Science Venn Diagram (2010)
+    source_url: https://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram
+    confidence: medium
 completeness: 0.9
 known_gaps:
   - Responsible AI and fairness in data science

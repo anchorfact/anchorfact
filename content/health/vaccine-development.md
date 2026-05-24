@@ -1,59 +1,58 @@
 ---
-id: "vaccine-development"
-title: "Vaccine Development and Immunology"
-schema_type: "Article"
-category: "health"
-language: "en"
-confidence: "high"
+id: vaccine-development
+title: Vaccine Development and Immunology
+schema_type: Article
+category: health
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-vaccine-development-1"
-    statement: "mRNA vaccines work by delivering genetic instructions for cells to produce a harmless viral protein, triggering an immune response without exposure to the actual pathogen."
-    source_title: "Nature Reviews Immunology"
-    confidence: "high"
-  - id: "af-vaccine-development-2"
-    statement: "The first vaccine (smallpox) was developed by Edward Jenner in 1796 using cowpox virus. Smallpox remains the only human disease eradicated through vaccination (WHO certified in 1980)."
-    source_title: "WHO Smallpox Eradication"
-    confidence: "high"
-
+  - id: fact-hlth-vac-001
+    statement: Jenner's smallpox vaccine (1796) led to eradication (WHO 1980), the only eradicated human disease.
+    source_title: Riedel, S. Edward Jenner and Smallpox (Baylor Proc 2005)
+    source_url: https://doi.org/10.1080/08998280.2005.11928028
+    confidence: high
+  - id: fact-hlth-vac-002
+    statement: mRNA vaccines (Nobel 2023, Karikó & Weissman) enabled COVID-19 vaccine in <12 months.
+    source_title: Dolgin, E. Tangled History of mRNA Vaccines (Nature 2021)
+    source_url: https://doi.org/10.1038/d41586-021-02483-w
+    confidence: high
+  - id: fact-hlth-vac-003
+    statement: WHO EPI (1974) prevented ~154M deaths over 50 years (Lancet 2024).
+    source_title: Shattock et al. Vaccination contribution to survival (Lancet 2024)
+    source_url: https://doi.org/10.1016/S0140-6736(24)00850-X
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "Therapeutic cancer vaccines"
-  - "Vaccine cold chain logistics in developing nations"
-
+  - Therapeutic cancer vaccines
+  - Vaccine cold chain logistics in developing nations
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
 primary_sources:
-  - title: "Plotkin's Vaccines, 8th Edition"
-    type: "textbook"
+  - title: Plotkin's Vaccines, 8th Edition
+    type: textbook
     year: 2023
-    url: "https://www.elsevier.com/books/plotkins-vaccines/plotkin/978-0-323-79058-1"
-    institution: "Elsevier"
+    url: https://www.elsevier.com/books/plotkins-vaccines/plotkin/978-0-323-79058-1
+    institution: Elsevier
   - title: "mRNA Vaccines: A New Era in Vaccinology"
-    type: "academic_paper"
+    type: academic_paper
     year: 2021
-    url: "https://www.nature.com/articles/s41577-021-00544-x"
-    institution: "Nature Reviews Immunology"
-
+    url: https://www.nature.com/articles/s41577-021-00544-x
+    institution: Nature Reviews Immunology
 secondary_sources:
-  - title: "WHO Immunization Dashboard"
-    type: "database"
-    url: "https://immunizationdata.who.int/"
-    institution: "WHO"
-
+  - title: WHO Immunization Dashboard
+    type: database
+    url: https://immunizationdata.who.int/
+    institution: WHO
 ---
-
-
 ## TL;DR
 Vaccines train the immune system to recognize pathogens without causing disease. Modern platforms — mRNA, viral vector, protein subunit — enable rapid development, as demonstrated by COVID-19 vaccines reaching deployment in under 12 months.
 

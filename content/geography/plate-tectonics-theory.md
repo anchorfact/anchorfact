@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-plate-tectonics-theory-1
-    statement: >-
-      Earth's lithosphere is divided into approximately 15 major tectonic plates moving at 2-10 cm/year — about the speed fingernails grow. The theory was accepted in the 1960s after seafloor
-      spreading evidence confirmed Wegener's continental drift hypothesis.
-    source_title: USGS This Dynamic Earth
+  - id: fact-geo-pt-001
+    statement: "Plate tectonics (1960s): unified Hess's seafloor spreading (1962) with Wegener's continental drift (1912)."
+    source_title: "Oreskes, N. (ed.) Plate Tectonics: An Insider's History (Westview 2001)"
+    source_url: https://www.routledge.com/Plate-Tectonics-An-Insiders-History-Of-The-Modern-Theory-Of-The-Earth/Oreskes/p/book/9780813341323
     confidence: high
-  - id: af-plate-tectonics-theory-2
-    statement: >-
-      Alfred Wegener proposed continental drift in 1912 based on matching coastlines, fossil distributions, and geological formations. His theory was rejected for 50 years until seafloor magnetic
-      striping provided mechanism evidence.
-    source_title: "Britannica: Plate Tectonics"
+  - id: fact-geo-pt-002
+    statement: "Pacific Ring of Fire: ~75% active volcanoes, ~90% earthquakes, driven by subduction."
+    source_title: USGS This Dynamic Planet (2006, updated online)
+    source_url: https://pubs.usgs.gov/imap/2800/
+    confidence: high
+  - id: fact-geo-pt-003
+    statement: Himalayas formed ~50 mya from India-Eurasia collision, rising ~1 cm/year (Tapponnier, Science 2001).
+    source_title: Tapponnier et al. Rise of Tibet Plateau (Science 2001)
+    source_url: https://doi.org/10.1126/science.105978
     confidence: high
 completeness: 0.9
 known_gaps:

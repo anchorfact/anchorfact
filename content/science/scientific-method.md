@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-scientific-method-1
-    statement: >-
-      Karl Popper's falsification criterion (1934) states that scientific theories cannot be proven true, only falsified — a hypothesis is scientific only if it makes predictions that could
-      potentially be shown false.
-    source_title: The Logic of Scientific Discovery (Popper, 1934)
+  - id: fact-sci-sm-001
+    statement: Popper's falsifiability criterion (1934/1959) demarcates science from non-science.
+    source_title: Popper, K. The Logic of Scientific Discovery (Routledge 1959)
+    source_url: https://www.routledge.com/The-Logic-of-Scientific-Discovery/Popper/p/book/9780415278447
     confidence: high
-  - id: af-scientific-method-2
-    statement: >-
-      The replication crisis in psychology and biomedical sciences — with landmark replication attempts finding only 36-62% of findings reproducible — has catalyzed reforms including preregistration
-      and data sharing mandates.
-    source_title: Open Science Collaboration, Science (2015)
+  - id: fact-sci-sm-002
+    statement: "Kuhn's paradigm shift model (1962): normal science→crisis→revolution→new paradigm."
+    source_title: Kuhn, T.S. Structure of Scientific Revolutions 50th Anniv. Ed. (Chicago 2012)
+    source_url: https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html
+    confidence: high
+  - id: fact-sci-sm-003
+    statement: The p<0.05 threshold popularized by Fisher; ASA 2016 warned against P-value misuse.
+    source_title: Wasserstein & Lazar, ASA Statement on p-Values (Am Stat 2016)
+    source_url: https://doi.org/10.1080/00031305.2016.1154108
     confidence: high
 completeness: 0.9
 known_gaps:

@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-chemical-bonding-1
-    statement: >-
-      Covalent bonds form when atoms share electron pairs — described by valence bond theory (overlapping atomic orbitals) and molecular orbital theory (delocalized electrons across the molecule).
-      Bond order and bond length are inversely correlated.
-    source_title: Pauling, The Nature of the Chemical Bond (1939)
+  - id: fact-sci-cb-001
+    statement: Linus Pauling's 1939 "The Nature of the Chemical Bond" introduced valence bond theory and electronegativity concepts.
+    source_title: Pauling, L. The Nature of the Chemical Bond (Cornell 1960)
+    source_url: https://doi.org/10.1021/ja01355a027
     confidence: high
-  - id: af-chemical-bonding-2
-    statement: >-
-      The periodic table organizes 118 confirmed elements by atomic number, with horizontal periods reflecting electron shell filling and vertical groups sharing valence electron configurations —
-      Mendeleev correctly predicted gallium, scandium, and germanium before discovery.
-    source_title: IUPAC Periodic Table (2024)
+  - id: fact-sci-cb-002
+    statement: Molecular orbital theory (Mulliken & Hund) describes bonding through delocalized wavefunctions.
+    source_title: "Mulliken, R.S. Nobel Lecture 1966: Spectroscopy and Molecular Orbitals"
+    source_url: https://www.nobelprize.org/prizes/chemistry/1966/mulliken/lecture/
+    confidence: high
+  - id: fact-sci-cb-003
+    statement: Hydrogen bonding is responsible for water anomalous properties and DNA base pairing.
+    source_title: Jeffrey, G.A. An Introduction to Hydrogen Bonding (Oxford 1997)
+    source_url: https://global.oup.com/academic/product/an-introduction-to-hydrogen-bonding-9780195095494
     confidence: high
 completeness: 0.9
 primary_sources:

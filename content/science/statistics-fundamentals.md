@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-statistics-fundamentals-1
-    statement: >-
-      The p-value (Fisher, 1925) represents the probability of observing data at least as extreme as the actual data, assuming the null hypothesis is true. The conventional significance threshold
-      α=0.05 has been criticized in the replication crisis, leading to calls for α=0.005.
-    source_title: Fisher, Statistical Methods for Research Workers (1925)
+  - id: fact-sci-stat-001
+    statement: "Central Limit Theorem: sampling distribution approaches normality as N increases."
+    source_title: Casella & Berger, Statistical Inference 2nd ed. (Duxbury 2002)
+    source_url: https://www.cengage.com/c/statistical-inference-2e-casella/9780534243128/
     confidence: high
-  - id: af-statistics-fundamentals-2
-    statement: >-
-      Bayes' theorem updates prior beliefs with observed evidence: P(H|E) = P(E|H)·P(H)/P(E). Bayesian inference directly quantifies uncertainty in parameters rather than relying on long-run frequency
-      interpretations.
-    source_title: Gelman et al., Bayesian Data Analysis (2013)
+  - id: fact-sci-stat-002
+    statement: "Bayes' theorem (1763): posterior ∝ likelihood × prior; foundation of Bayesian statistics."
+    source_title: Gelman et al., Bayesian Data Analysis 3rd ed. (CRC 2013)
+    source_url: https://doi.org/10.1201/b16018
+    confidence: high
+  - id: fact-sci-stat-003
+    statement: Pearson's r (1895) remains the standard linear correlation measure.
+    source_title: Rodgers & Nicewander, Thirteen Ways to Look at Correlation (Am Stat 1988)
+    source_url: https://doi.org/10.2307/2685263
     confidence: high
 completeness: 0.9
 primary_sources:

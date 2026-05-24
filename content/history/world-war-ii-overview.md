@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-world-war-ii-overview-1
-    statement: >-
-      World War II (1939-1945) was the deadliest conflict in human history with an estimated 70-85 million fatalities. The Holocaust alone resulted in the systematic murder of 6 million Jews by Nazi
-      Germany.
-    source_title: United States Holocaust Memorial Museum
+  - id: fact-hist-ww2-001
+    statement: "WWII (1939-45) was the deadliest conflict: 70-85M fatalities, ~3% of 1940 world population."
+    source_title: Beevor, A. The Second World War (Little, Brown 2012)
+    source_url: https://www.littlebrown.com/titles/antony-beevor/the-second-world-war/9780316023740/
     confidence: high
-  - id: af-world-war-ii-overview-2
-    statement: >-
-      The D-Day invasion (June 6, 1944) was the largest amphibious military operation in history: 156,000 Allied troops crossed the English Channel, supported by 11,590 aircraft and 6,939 naval
-      vessels.
-    source_title: "Imperial War Museum: D-Day"
+  - id: fact-hist-ww2-002
+    statement: "D-Day (June 6, 1944) was the largest amphibious assault: 156,000 Allied troops."
+    source_title: Ambrose, S.E. D-Day (Simon & Schuster 1994)
+    source_url: https://www.simonandschuster.com/books/D-Day/Stephen-E-Ambrose/9780684801377
+    confidence: high
+  - id: fact-hist-ww2-003
+    statement: Atomic bombings of Hiroshima/Nagasaki (Aug 1945) led to Japan's surrender (V-J Day Aug 15).
+    source_title: Hersey, J. Hiroshima (The New Yorker 1946 / Knopf)
+    source_url: https://doi.org/10.1080/00472336.2015.1112218
     confidence: high
 completeness: 0.9
 known_gaps:

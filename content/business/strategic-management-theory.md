@@ -15,15 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-strategic-management-theory-1
-    statement: "Michael Porter's Five Forces framework (1979) analyzes industry competitiveness through: threat of new entrants, supplier power, buyer power, substitute threat, and competitive rivalry."
-    source_title: Porter, Harvard Business Review (1979)
+  - id: fact-biz-sm-001
+    statement: "Porter's Five Forces (1980) reshaped competitive analysis: rivalry, entry, substitutes, supplier power, buyer power."
+    source_title: Porter, M.E. Competitive Strategy (Free Press 1980)
+    source_url: https://www.hbs.edu/faculty/Pages/item.aspx?num=195
     confidence: high
-  - id: af-strategic-management-theory-2
-    statement: >-
-      Peter Drucker's Management by Objectives (MBO), introduced in The Practice of Management (1954), proposed employees perform better when participating in setting their own goals — a precursor to
-      modern OKRs used by Google and Intel.
-    source_title: Drucker, The Practice of Management (1954)
+  - id: fact-biz-sm-002
+    statement: "RBV (Barney 1991): sustained advantage from VRIN resources (Valuable, Rare, Inimitable, Non-substitutable)."
+    source_title: Barney, J. Firm Resources and Sustained Advantage (JOM 1991)
+    source_url: https://doi.org/10.1177/014920639101700108
+    confidence: high
+  - id: fact-biz-sm-003
+    statement: "Blue Ocean Strategy (Kim & Mauborgne 2005): create uncontested market space vs. competing in red oceans."
+    source_title: Kim & Mauborgne, Blue Ocean Strategy Expanded Ed. (HBR 2015)
+    source_url: https://www.blueoceanstrategy.com/book/
     confidence: high
 completeness: 0.9
 known_gaps:

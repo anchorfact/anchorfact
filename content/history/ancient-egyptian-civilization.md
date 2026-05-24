@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-ancient-egyptian-civilization-1
-    statement: >-
-      Ancient Egyptian civilization spanned over 3,000 years (c.3100-30 BCE) across 31 dynasties. The Great Pyramid of Giza (c.2560 BCE) remained the tallest human-made structure for over 3,800 years
-      at 146.6 meters.
-    source_title: "British Museum: Ancient Egypt"
+  - id: fact-hist-ae-001
+    statement: Ancient Egypt flourished along Nile for 3,000+ years (c.3100 BCE-30 BCE).
+    source_title: Shaw, I. (ed.) Oxford History of Ancient Egypt (OUP 2000)
+    source_url: https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587
     confidence: high
-  - id: af-ancient-egyptian-civilization-2
-    statement: >-
-      The Rosetta Stone (196 BCE), deciphered by Jean-Francois Champollion in 1822, contained the same decree in three scripts — unlocking the ability to read Egyptian hieroglyphs after 1,500 years of
-      obscurity.
-    source_title: "British Museum: Rosetta Stone"
+  - id: fact-hist-ae-002
+    statement: Rosetta Stone (196 BCE, discovered 1799) keyed hieroglyph decipherment (Greek/Demotic/Hieroglyphic).
+    source_title: Parkinson, R. The Rosetta Stone (British Museum 2005)
+    source_url: https://www.britishmuseum.org/collection/object/Y_EA24
+    confidence: high
+  - id: fact-hist-ae-003
+    statement: "Great Pyramid of Giza (~2560 BCE): tallest structure for 3,800+ years; last surviving Wonder."
+    source_title: Lehner & Hawass, Giza and the Pyramids (Thames & Hudson 2017)
+    source_url: https://thamesandhudson.com/giza-and-the-pyramids-9780500051894
     confidence: high
 completeness: 0.9
 known_gaps:

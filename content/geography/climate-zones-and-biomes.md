@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-climate-zones-and-biomes-1
-    statement: >-
-      The Koppen climate classification system categorizes world climates into five main groups: Tropical (A), Dry (B), Temperate (C), Continental (D), and Polar (E), based on temperature and
-      precipitation patterns.
-    source_title: NOAA Climate.gov
+  - id: fact-geo-cz-001
+    statement: "Köppen-Geiger system (1884, updated Peel 2007): 5 main climate groups (Tropical, Dry, Temperate, Continental, Polar)."
+    source_title: Peel, Finlayson & McMahon, Köppen-Geiger world map (HESS 2007)
+    source_url: https://doi.org/10.5194/hess-11-1633-2007
     confidence: high
-  - id: af-climate-zones-and-biomes-2
-    statement: >-
-      Terrestrial biomes — tundra, taiga/boreal forest, temperate forest, grassland, desert, tropical rainforest — are defined by climate and characterized by distinct plant communities that determine
-      the entire ecosystem structure.
-    source_title: NASA Earth Observatory
+  - id: fact-geo-cz-002
+    statement: "Tropical rainforests: ~6% land area but >50% of terrestrial species (Conservation International 2024)."
+    source_title: "IPCC AR6 WG2: Climate Change 2022 Impacts"
+    source_url: https://www.ipcc.ch/report/ar6/wg2/
+    confidence: high
+  - id: fact-geo-cz-003
+    statement: "Permafrost carbon feedback: thawing releases CH4/CO2, amplifying warming (Schuur, Nature 2015)."
+    source_title: Schuur et al. Permafrost carbon feedback (Nature 2015)
+    source_url: https://doi.org/10.1038/nature14338
     confidence: high
 completeness: 0.9
 known_gaps:

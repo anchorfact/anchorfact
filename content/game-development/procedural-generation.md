@@ -1,59 +1,58 @@
 ---
-id: "procedural-generation"
-title: "Procedural Content Generation in Games"
-schema_type: "TechArticle"
-category: "game-development"
-language: "en"
-confidence: "high"
+id: procedural-generation
+title: Procedural Content Generation in Games
+schema_type: TechArticle
+category: game-development
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-procedural-generation-1"
-    statement: "Procedural generation uses algorithms to create game content automatically rather than manually, including terrain, levels, items, and quests."
-    source_title: "PCG in Games"
-    confidence: "high"
-  - id: "af-procedural-generation-2"
-    statement: "Perlin noise, invented by Ken Perlin in 1983, is the most widely used algorithm for procedural terrain generation in games like Minecraft."
-    source_title: "ACM SIGGRAPH"
-    confidence: "high"
-
+  - id: fact-gd-pg-001
+    statement: Perlin noise (Perlin 1983, SIGGRAPH 1985) is foundational for procedural terrain generation (e.g., Minecraft).
+    source_title: Perlin, K. An Image Synthesizer (SIGGRAPH 1985)
+    source_url: https://doi.org/10.1145/325334.325247
+    confidence: high
+  - id: fact-gd-pg-002
+    statement: No Man's Sky (Hello Games 2016) generates 18 quintillion unique planets via deterministic procedural generation.
+    source_title: Murray, S. Building No Man's Sky Universe (GDC 2017)
+    source_url: https://www.gdcvault.com/play/1024265/Building-No-Man-s
+    confidence: high
+  - id: fact-gd-pg-003
+    statement: "Wave Function Collapse (Gumin 2016): constraint-based procedural generation for tile/city generation."
+    source_title: Gumin, M. Wave Function Collapse (GitHub 2016)
+    source_url: https://github.com/mxgmn/WaveFunctionCollapse
+    confidence: medium
 completeness: 0.9
-
 known_gaps:
-  - "Wave Function Collapse algorithm not covered"
-  - "Runtime performance optimization for mobile"
-
+  - Wave Function Collapse algorithm not covered
+  - Runtime performance optimization for mobile
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
 primary_sources:
-  - title: "Procedural Content Generation in Games"
-    type: "textbook"
+  - title: Procedural Content Generation in Games
+    type: textbook
     year: 2016
-    url: "https://link.springer.com/book/10.1007/978-3-319-42716-4"
-    institution: "Springer"
-  - title: "An Image Synthesizer"
-    type: "academic_paper"
+    url: https://link.springer.com/book/10.1007/978-3-319-42716-4
+    institution: Springer
+  - title: An Image Synthesizer
+    type: academic_paper
     year: 1985
-    url: "https://dl.acm.org/doi/10.1145/325165.325247"
-    institution: "ACM SIGGRAPH"
-
+    url: https://dl.acm.org/doi/10.1145/325165.325247
+    institution: ACM SIGGRAPH
 secondary_sources:
-  - title: "Minecraft Wiki — World Generation"
-    type: "reference"
-    url: "https://minecraft.wiki/w/World_generation"
-    institution: "Mojang"
-
+  - title: Minecraft Wiki — World Generation
+    type: reference
+    url: https://minecraft.wiki/w/World_generation
+    institution: Mojang
 ---
-
-
 ## TL;DR
 Procedural content generation (PCG) uses algorithms to automatically create game content — terrain, levels, items, quests — replacing manual design with computational generation. It is fundamental to modern open-world and roguelike games.
 

@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-scientific-revolution-1
-    statement: >-
-      Nicolaus Copernicus's De Revolutionibus (1543) proposed a heliocentric model — Earth and planets orbit the Sun — directly challenging the geocentric Ptolemaic system that had dominated for 1,400
-      years. The Church placed it on the Index of Forbidden Books in 1616.
-    source_title: Copernicus, De Revolutionibus Orbium Coelestium (1543)
+  - id: fact-hist-sr-001
+    statement: "Kuhn (1962): science progresses through paradigm shifts, not linear accumulation."
+    source_title: Kuhn, T.S. Structure of Scientific Revolutions 50th Anniv. Ed. (Chicago 2012)
+    source_url: https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html
     confidence: high
-  - id: af-scientific-revolution-2
-    statement: >-
-      Isaac Newton's Principia Mathematica (1687) unified terrestrial and celestial mechanics through three laws of motion and universal gravitation (F = Gm₁m₂/r²), providing a mathematical framework
-      that explained everything from falling apples to planetary orbits.
-    source_title: Newton, Philosophiae Naturalis Principia Mathematica (1687)
+  - id: fact-hist-sr-002
+    statement: "Copernican Revolution (1543): displaced Earth from center, initiating 16th-17th c. Scientific Revolution."
+    source_title: Copernicus, De Revolutionibus (1543) - UNESCO Memory of World
+    source_url: https://www.unesco.org/en/memory-world/copernicus-De-revolutionibus
+    confidence: high
+  - id: fact-hist-sr-003
+    statement: Newton's Principia (1687) unified celestial/terrestrial mechanics, founding classical physics.
+    source_title: Newton, Principia (1687) trans. Cohen & Whitman (UC Press 1999)
+    source_url: https://www.ucpress.edu/book/9780520290884/the-principia
     confidence: high
 completeness: 0.9
 primary_sources:

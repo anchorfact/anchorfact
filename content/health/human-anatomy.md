@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-human-anatomy-1
-    statement: >-
-      The adult human skeleton contains 206 bones, which provide structure, protect organs, produce blood cells (bone marrow), store minerals (calcium, phosphorus), and enable movement through muscle
-      attachments at joints.
-    source_title: Gray's Anatomy (41st Edition, 2020)
+  - id: fact-hlth-ana-001
+    statement: Gray's Anatomy (1858, 42nd ed. 2020) is the most authoritative anatomical reference.
+    source_title: Standring, S. (ed.) Gray's Anatomy 42nd Ed. (Elsevier 2020)
+    source_url: https://www.elsevier.com/books/grays-anatomy/standring/978-0-7020-7705-0
     confidence: high
-  - id: af-human-anatomy-2
-    statement: >-
-      The circulatory system pumps approximately 7,500 liters of blood daily through 100,000 km of blood vessels. The heart beats approximately 100,000 times per day, pumping 70 mL of blood per beat
-      at rest.
-    source_title: Guyton & Hall, Textbook of Medical Physiology (2020)
+  - id: fact-hlth-ana-002
+    statement: "Adult human: ~206 bones, 600+ muscles, heart pumps ~7,500L blood daily."
+    source_title: Marieb & Hoehn, Human Anatomy & Physiology 11th ed. (Pearson 2019)
+    source_url: https://www.pearson.com/en-us/subject-catalog/p/human-anatomy-physiology/P200000006820
+    confidence: high
+  - id: fact-hlth-ana-003
+    statement: "Brain: ~86B neurons; cerebral cortex ~16B (Azevedo et al. JCompNeurol 2009)."
+    source_title: Azevedo et al. Neuronal/nonneuronal cell numbers (JCN 2009)
+    source_url: https://doi.org/10.1002/cne.21974
     confidence: high
 completeness: 0.9
 primary_sources:

@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-cybersecurity-fundamentals-1
-    statement: >-
-      RSA encryption (Rivest-Shamir-Adleman, 1977) uses the difficulty of factoring large semiprimes — a 2048-bit RSA key requires factoring a 617-digit number. Shor's quantum algorithm would break
-      RSA, motivating post-quantum cryptography standards (NIST, 2024).
-    source_title: Rivest, Shamir, Adleman (1977) / NIST PQC (2024)
+  - id: fact-cs-cyb-001
+    statement: CIA Triad (Confidentiality, Integrity, Availability) is foundational security model (NIST SP 800-12).
+    source_title: "NIST SP 800-12 Rev. 1: Introduction to Information Security (2017)"
+    source_url: https://doi.org/10.6028/NIST.SP.800-12r1
     confidence: high
-  - id: af-cybersecurity-fundamentals-2
-    statement: >-
-      Zero Trust architecture — "never trust, always verify" — replaces perimeter-based security with continuous authentication of every access request. NIST SP 800-207 (2020) defines the Zero Trust
-      framework adopted by the US federal government.
-    source_title: NIST SP 800-207 (2020)
+  - id: fact-cs-cyb-002
+    statement: Morris Worm (1988) first major internet worm, led to CERT/CC creation.
+    source_title: Spafford, E.H. Internet Worm Analysis (ACM CCR 1989)
+    source_url: https://doi.org/10.1145/66093.66095
+    confidence: high
+  - id: fact-cs-cyb-003
+    statement: "Zero Trust Architecture (NIST SP 800-207, 2020): \"never trust, always verify\" paradigm."
+    source_title: "NIST SP 800-207: Zero Trust Architecture (2020)"
+    source_url: https://doi.org/10.6028/NIST.SP.800-207
     confidence: high
 completeness: 0.9
 primary_sources:

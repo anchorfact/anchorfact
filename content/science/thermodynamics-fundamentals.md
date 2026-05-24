@@ -15,13 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-thermodynamics-fundamentals-1
-    statement: The Second Law of Thermodynamics states that the total entropy of an isolated system never decreases over time — heat flows spontaneously from hot to cold, not the reverse.
-    source_title: Physical Chemistry (Atkins)
+  - id: fact-sci-therm-001
+    statement: "First Law: energy conservation (Mayer, Joule, Helmholtz 1840s)."
+    source_title: Callen, H.B. Thermodynamics 2nd ed. (Wiley 1985)
+    source_url: https://www.wiley.com/en-us/Thermodynamics+and+an+Introduction+to+Thermostatistics%2C+2nd+Edition-p-9780471862567
     confidence: high
-  - id: af-thermodynamics-fundamentals-2
-    statement: The Carnot efficiency, η = 1 − Tc/Th, represents the theoretical maximum efficiency of any heat engine operating between two temperatures, derived by Sadi Carnot in 1824.
-    source_title: Annals of Physics
+  - id: fact-sci-therm-002
+    statement: "Second Law (Clausius 1850): entropy in an isolated system never decreases."
+    source_title: Fermi, E. Thermodynamics (Dover 1956)
+    source_url: https://store.doverpublications.com/048660361x.html
+    confidence: high
+  - id: fact-sci-therm-003
+    statement: "Shannon entropy (1948): H=-Σp·log(p) links thermodynamics and information theory."
+    source_title: Shannon, C.E. A Mathematical Theory of Communication (BSTJ 1948)
+    source_url: https://doi.org/10.1002/j.1538-7305.1948.tb01338.x
     confidence: high
 completeness: 0.9
 known_gaps:

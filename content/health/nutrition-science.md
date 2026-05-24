@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-nutrition-science-1
-    statement: >-
-      The three macronutrients provide energy: carbohydrates (4 kcal/g, primary fuel), proteins (4 kcal/g, tissue building), and fats (9 kcal/g, energy storage, hormone production). The Acceptable
-      Macronutrient Distribution Range (AMDR) recommends 45-65% carbs, 10-35% protein, 20-35% fat.
-    source_title: "NEJM: Guidance on Energy and Macronutrients (2024)"
-    confidence: high
-  - id: af-nutrition-science-2
-    statement: >-
-      The WHO recommends limiting free sugars to under 10% of total energy (ideally under 5%), sodium to under 2g/day, and trans fats to under 1% of energy — these three dietary factors are linked to
-      the highest burden of non-communicable disease globally.
+  - id: fact-hlth-nut-001
+    statement: "WHO: <5g salt/day, <10% energy from free sugars, 400g+ fruits/veg daily."
     source_title: WHO Healthy Diet Fact Sheet (2024)
+    source_url: https://www.who.int/news-room/fact-sheets/detail/healthy-diet
+    confidence: high
+  - id: fact-hlth-nut-002
+    statement: "Mediterranean diet: 25-30% CVD event reduction (PREDIMED trial, NEJM 2013/2018)."
+    source_title: Estruch et al. Mediterranean Diet for CVD Prevention (NEJM 2018)
+    source_url: https://doi.org/10.1056/NEJMoa1800389
+    confidence: high
+  - id: fact-hlth-nut-003
+    statement: EAT-Lancet Commission (2019) proposed planetary health diet for 10B people by 2050.
+    source_title: "Willett et al. Food in the Anthropocene: EAT-Lancet (Lancet 2019)"
+    source_url: https://doi.org/10.1016/S0140-6736(18)31788-4
     confidence: high
 completeness: 0.9
 primary_sources:

@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-economics-fundamentals-1
-    statement: >-
-      The law of demand states that as price increases, quantity demanded decreases (ceteris paribus). The law of supply states that as price increases, quantity supplied increases. Market equilibrium
-      occurs where supply equals demand.
-    source_title: Mankiw, Principles of Economics (2020)
+  - id: fact-biz-ec-001
+    statement: "Adam Smith's Wealth of Nations (1776) founded classical economics: division of labor, invisible hand."
+    source_title: Smith, A. The Wealth of Nations (1776, Liberty Fund ed.)
+    source_url: https://www.econlib.org/library/Smith/smWN.html
     confidence: high
-  - id: af-economics-fundamentals-2
-    statement: >-
-      GDP (Gross Domestic Product) measures total economic output. The US GDP reached $27.4 trillion in 2023, while China's reached $17.8 trillion — together representing ~43% of the global $105
-      trillion economy.
-    source_title: World Bank / IMF World Economic Outlook (2024)
+  - id: fact-biz-ec-002
+    statement: "Keynes' General Theory (1936): aggregate demand drives employment and output."
+    source_title: Keynes, J.M. The General Theory (Macmillan 1936)
+    source_url: https://www.cambridge.org/core/books/general-theory-of-employment-interest-and-money/
+    confidence: high
+  - id: fact-biz-ec-003
+    statement: Samuelson's Economics (1948, 20th ed.) is the best-selling economics textbook.
+    source_title: Samuelson & Nordhaus, Economics 20th ed. (McGraw-Hill 2019)
+    source_url: https://www.mheducation.com/highered/product/economics-samuelson-nordhaus/M9780078021756.html
     confidence: high
 completeness: 0.9
 primary_sources:

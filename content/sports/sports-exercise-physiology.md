@@ -15,15 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-sports-exercise-physiology-1
-    statement: >-
-      VO2max — maximum oxygen uptake during incremental exercise — is the gold standard measure of cardiorespiratory fitness. Elite endurance athletes reach 70-85 mL/kg/min vs. 35-45 for untrained
-      individuals.
-    source_title: American College of Sports Medicine
+  - id: fact-sp-ep-001
+    statement: "VO2max: gold standard CRF measure; elite endurance athletes reach 70-85+ ml/kg/min (ACSM 2021)."
+    source_title: ACSM Guidelines for Exercise Testing & Prescription 11th ed. (2021)
+    source_url: https://www.acsm.org/read-research/books/acsms-guidelines-for-exercise-testing-and-prescription
     confidence: high
-  - id: af-sports-exercise-physiology-2
-    statement: Mitochondrial biogenesis is stimulated by endurance training through the PGC-1-alpha signaling pathway, increasing oxidative capacity by 50-100% within 8-12 weeks of consistent training.
-    source_title: Journal of Applied Physiology
+  - id: fact-sp-ep-002
+    statement: Lactate threshold training improves endurance more effectively than VO2max-only (Joyner & Coyle, JPhysiol 2008).
+    source_title: Joyner & Coyle, Endurance exercise physiology of champions (JPhysiol 2008)
+    source_url: https://doi.org/10.1113/jphysiol.2007.143834
+    confidence: high
+  - id: fact-sp-ep-003
+    statement: "ACSM: 150 min/week moderate or 75 min/week vigorous aerobic + 2 days strength training."
+    source_title: Piercy et al. Physical Activity Guidelines (JAMA 2018)
+    source_url: https://doi.org/10.1001/jama.2018.14854
     confidence: high
 completeness: 0.9
 known_gaps:

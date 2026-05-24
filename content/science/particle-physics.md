@@ -15,15 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-particle-physics-1
-    statement: "The Standard Model describes 17 fundamental particles: 6 quarks, 6 leptons, 4 force-carrying bosons, and the Higgs boson. It successfully predicts phenomena with precision better than 0.1%."
-    source_title: CERN Standard Model Overview
+  - id: fact-sci-pp-001
+    statement: "The Standard Model describes 17 fundamental particles: 6 quarks, 6 leptons, 5 gauge bosons."
+    source_title: CERN. The Standard Model (2024)
+    source_url: https://home.cern/science/physics/standard-model
     confidence: high
-  - id: af-particle-physics-2
-    statement: >-
-      The Higgs boson was discovered at CERN's Large Hadron Collider in 2012, confirming the mechanism that gives particles mass. Peter Higgs and François Englert received the 2013 Nobel Prize in
-      Physics.
-    source_title: Physical Review Letters
+  - id: fact-sci-pp-002
+    statement: Higgs boson discovered at CERN LHC in 2012 (ATLAS & CMS), confirming EW symmetry breaking.
+    source_title: ATLAS & CMS. Observation of a new particle (Phys Lett B 2012)
+    source_url: https://doi.org/10.1016/j.physletb.2012.08.020
+    confidence: high
+  - id: fact-sci-pp-003
+    statement: Dark matter ~27% of universe energy density, inferred from rotation curves (Rubin 1970s).
+    source_title: Rubin & Ford, Rotation of Andromeda (ApJ 1970)
+    source_url: https://doi.org/10.1086/150317
     confidence: high
 completeness: 0.9
 known_gaps:

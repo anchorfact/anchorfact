@@ -15,15 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-environmental-science-1
-    statement: >-
-      The IPCC Sixth Assessment Report (2021-2023) concludes that human activities have unequivocally warmed the atmosphere, ocean, and land, with global surface temperature reaching 1.1°C above
-      1850-1900 levels.
-    source_title: IPCC AR6 Synthesis Report (2023)
+  - id: fact-sci-env-001
+    statement: CO2 atmospheric concentration reached 421 ppm in 2023, the highest in at least 2 million years.
+    source_title: IPCC Sixth Assessment Report (AR6) 2023 Synthesis Report
+    source_url: https://www.ipcc.ch/report/ar6/syr/
     confidence: high
-  - id: af-environmental-science-2
-    statement: Biodiversity loss is occurring at 100-1000x the natural background extinction rate, with approximately 1 million species threatened with extinction according to the 2019 IPBES Global Assessment.
-    source_title: IPBES Global Assessment Report (2019)
+  - id: fact-sci-env-002
+    statement: The planetary boundaries framework (Rockström et al., Nature 2009, updated Science Advances 2023) identifies 9 critical thresholds.
+    source_title: Richardson, K. et al. Earth beyond six of nine planetary boundaries (Science Advances 2023)
+    source_url: https://doi.org/10.1126/sciadv.adh2458
+    confidence: high
+  - id: fact-sci-env-003
+    statement: Biodiversity loss is 100-1000x background rate, with 1M species at risk (IPBES 2019).
+    source_title: IPBES Global Assessment Report on Biodiversity (2019)
+    source_url: https://doi.org/10.5281/zenodo.3831673
     confidence: high
 completeness: 0.9
 primary_sources:

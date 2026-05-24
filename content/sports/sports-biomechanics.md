@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-sports-biomechanics-1
-    statement: >-
-      Ground reaction forces during running reach 2.5-3x body weight per step, with elite sprinters generating peak forces of over 4,000N in under 0.1 seconds — transmitted through the skeletal system
-      from foot to spine.
-    source_title: Journal of Biomechanics
+  - id: fact-sp-bm-001
+    statement: "Running GRF: 2-3x body weight moderate pace, up to 4x at sprint (McGinnis, Human Kinetics 2020)."
+    source_title: McGinnis, P.M. Biomechanics of Sport and Exercise 4th ed. (Human Kinetics 2020)
+    source_url: https://us.humankinetics.com/products/biomechanics-of-sport-and-exercise-4th-edition
     confidence: high
-  - id: af-sports-biomechanics-2
-    statement: >-
-      The Magnus effect in ball sports explains why spinning balls curve: a spinning ball creates a pressure differential (Bernoulli's principle), causing deviation. This explains curveballs in
-      baseball (up to 18 inches horizontal movement) and bending free kicks in soccer.
-    source_title: Adair, The Physics of Baseball (1990)
+  - id: fact-sp-bm-002
+    statement: "Stretch-shortening cycle: elastic energy storage increases power 20-30% (Komi, MSSE 2000)."
+    source_title: Komi, P.V. Stretch-shortening cycle (Journal of Biomechanics 2000)
+    source_url: https://doi.org/10.1016/S0021-9290(00)00064-6
+    confidence: high
+  - id: fact-sp-bm-003
+    statement: FINA banned polyurethane suits (2010) after tech-suit era records; many stood for a decade.
+    source_title: World Aquatics Swimming Rules (2010, updated 2024)
+    source_url: https://www.worldaquatics.com/swimming/rules
     confidence: high
 completeness: 0.9
 primary_sources:

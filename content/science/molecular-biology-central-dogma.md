@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-molecular-biology-central-dogma-1
-    statement: >-
-      The Central Dogma of molecular biology (Crick, 1958/1970) describes information flow: DNA → RNA → protein. DNA replication copies the genome; transcription produces mRNA; translation synthesizes
-      proteins at ribosomes via the genetic code.
-    source_title: Crick, Nature (1970)
+  - id: fact-sci-bio-001
+    statement: "Francis Crick's Central Dogma (1958): genetic information flows DNA→RNA→protein."
+    source_title: Crick, F. On protein synthesis (Symp Soc Exp Biol 1958)
+    source_url: https://doi.org/10.1038/227561a0
     confidence: high
-  - id: af-molecular-biology-central-dogma-2
-    statement: >-
-      CRISPR-Cas9 (Jinek et al., 2012; Nobel Prize in Chemistry 2020 to Charpentier and Doudna) enables programmable genome editing by using a guide RNA to direct Cas9 nuclease to specific DNA
-      sequences for targeted cleavage.
-    source_title: Jinek et al., Science (2012)
+  - id: fact-sci-bio-002
+    statement: Watson & Crick's 1953 Nature paper described DNA double helix, based on Franklin's X-ray data.
+    source_title: Watson & Crick, Molecular Structure of Nucleic Acids (Nature 1953)
+    source_url: https://doi.org/10.1038/171737a0
+    confidence: high
+  - id: fact-sci-bio-003
+    statement: The genetic code is universal, deciphered by Nirenberg & Khorana (Nobel 1968).
+    source_title: Nirenberg, M. et al. The RNA code (Cold Spring Harbor Symposia 1966)
+    source_url: https://doi.org/10.1101/SQB.1966.031.01.008
     confidence: high
 completeness: 0.9
 primary_sources:

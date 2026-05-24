@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-software-engineering-principles-1
-    statement: >-
-      SOLID principles (Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion), formalized by Robert C. Martin (2000), provide a framework for designing
-      maintainable object-oriented software.
-    source_title: Martin, Agile Software Development (2002)
+  - id: fact-cs-se-001
+    statement: "Brooks's Law (1975): adding manpower to a late project makes it later."
+    source_title: Brooks, F.P. The Mythical Man-Month Anniv. Ed. (Addison-Wesley 1995)
+    source_url: https://www.informit.com/store/mythical-man-month-essays-on-software-engineering-9780201835953
     confidence: high
-  - id: af-software-engineering-principles-2
-    statement: >-
-      Git, created by Linus Torvalds in 2005, is the dominant version control system used by over 90% of developers. Its distributed model — every clone is a full repository — enables decentralized
-      collaboration with branching and merging as first-class operations.
-    source_title: Chacon & Straub, Pro Git (2014)
+  - id: fact-cs-se-002
+    statement: "Agile Manifesto (2001): individuals/interactions, working software, collaboration, change response."
+    source_title: Beck et al. Manifesto for Agile Software Development (2001)
+    source_url: https://agilemanifesto.org/
+    confidence: high
+  - id: fact-cs-se-003
+    statement: "SOLID principles (Martin): Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion."
+    source_title: Martin, R.C. Clean Architecture (Prentice Hall 2017)
+    source_url: https://www.informit.com/store/clean-architecture-a-craftsmans-guide-to-software-structure-9780134494166
     confidence: high
 completeness: 0.9
 primary_sources:

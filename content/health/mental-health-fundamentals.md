@@ -15,15 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-mental-health-fundamentals-1
-    statement: The WHO estimates 1 in 8 people globally (approximately 970 million) lived with a mental disorder in 2019, with anxiety disorders and depression being the most prevalent.
+  - id: fact-hlth-mh-001
+    statement: 1 in 8 people (970M) had a mental disorder in 2019; anxiety & depression most common (WHO 2022).
     source_title: WHO World Mental Health Report 2022
+    source_url: https://www.who.int/publications/i/item/9789240049338
     confidence: high
-  - id: af-mental-health-fundamentals-2
-    statement: >-
-      SSRIs — including fluoxetine (Prozac), sertraline (Zoloft), and escitalopram (Lexapro) — are first-line treatments for depression, acting by blocking serotonin transporter (SERT) reuptake to
-      increase synaptic serotonin availability.
-    source_title: Nature Reviews Drug Discovery
+  - id: fact-hlth-mh-002
+    statement: DSM-5-TR (APA 2022) is the standard global classification of mental disorders.
+    source_title: APA. DSM-5-TR (2022)
+    source_url: https://doi.org/10.1176/appi.books.9780890425787
+    confidence: high
+  - id: fact-hlth-mh-003
+    statement: CBT (Beck 1960s) is the most evidence-based psychotherapy for depression/anxiety.
+    source_title: Beck, A.T. Cognitive Therapy (1976)
+    source_url: https://doi.org/10.1016/S0005-7894(79)80093-3
     confidence: high
 completeness: 0.9
 known_gaps:

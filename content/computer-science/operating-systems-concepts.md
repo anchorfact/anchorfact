@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-operating-systems-concepts-1
-    statement: >-
-      A process is a program in execution with its own address space, consisting of text (code), data (global variables), heap (dynamic allocation), and stack (function calls). The OS schedules
-      processes using algorithms like Round Robin, CFS (Completely Fair Scheduler), and multilevel feedback queues.
-    source_title: Silberschatz, Operating System Concepts (2018)
+  - id: fact-cs-os-001
+    statement: Tanenbaum's MINIX (1987) inspired Linus Torvalds' creation of Linux (1991).
+    source_title: Tanenbaum & Bos, Modern Operating Systems 5th ed. (Pearson 2022)
+    source_url: https://www.pearson.com/en-us/subject-catalog/p/modern-operating-systems/P200000003285
     confidence: high
-  - id: af-operating-systems-concepts-2
-    statement: >-
-      Virtual memory gives each process the illusion of a large contiguous address space by mapping virtual addresses to physical pages via page tables. When RAM is full, least-recently-used pages are
-      swapped to disk — a page fault occurs when accessing swapped-out memory.
-    source_title: Tanenbaum, Modern Operating Systems (2014)
+  - id: fact-cs-os-002
+    statement: "Unix (Bell Labs, Thompson & Ritchie 1969-71): hierarchical FS, pipes, shell scripting."
+    source_title: Ritchie & Thompson, UNIX Time-Sharing System (CACM 1974)
+    source_url: https://doi.org/10.1145/361011.361061
+    confidence: high
+  - id: fact-cs-os-003
+    statement: "Process scheduling: FCFS, SJF, Round Robin, Priority, Multilevel Queue algorithms."
+    source_title: Silberschatz, Galvin & Gagne, OS Concepts 10th ed. (Wiley 2018)
+    source_url: https://www.wiley.com/en-us/Operating+System+Concepts%2C+10th+Edition-p-9781119800361
     confidence: high
 completeness: 0.9
 primary_sources:

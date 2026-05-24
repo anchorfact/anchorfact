@@ -15,15 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-chronic-disease-prevention-1
-    statement: "The WHO estimates 80% of premature heart disease, stroke, and type 2 diabetes cases are preventable through lifestyle modifications: diet, exercise, and tobacco cessation."
-    source_title: WHO Global Status Report on NCDs
+  - id: fact-hlth-chr-001
+    statement: NCDs account for 74% of global deaths; CVD is leading cause per WHO 2023.
+    source_title: WHO Global Status Report on NCDs 2023
+    source_url: https://www.who.int/publications/i/item/9789240057104
     confidence: high
-  - id: af-chronic-disease-prevention-2
-    statement: >-
-      The Mediterranean diet — characterized by high olive oil, vegetables, legumes, and moderate fish consumption — is associated with a 25-30% reduction in cardiovascular events in primary
-      prevention trials (PREDIMED study, NEJM 2018).
-    source_title: New England Journal of Medicine
+  - id: fact-hlth-chr-002
+    statement: Tobacco, unhealthy diet, inactivity, and alcohol are 4 major modifiable NCD risk factors.
+    source_title: "WHO Fact Sheet: Noncommunicable Diseases (2023)"
+    source_url: https://www.who.int/news-room/fact-sheets/detail/noncommunicable-diseases
+    confidence: high
+  - id: fact-hlth-chr-003
+    statement: Framingham Heart Study (1948-) identified smoking, BP, cholesterol as CVD risk factors.
+    source_title: Dawber et al. Framingham Study (AJPH 1951)
+    source_url: https://doi.org/10.2105/AJPH.41.3.279
     confidence: high
 completeness: 0.9
 known_gaps:

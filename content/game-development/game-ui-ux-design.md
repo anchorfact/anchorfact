@@ -1,59 +1,58 @@
 ---
-id: "game-ui-ux-design"
-title: "Game User Interface and UX Design"
-schema_type: "TechArticle"
-category: "game-development"
-language: "en"
-confidence: "high"
+id: game-ui-ux-design
+title: Game User Interface and UX Design
+schema_type: TechArticle
+category: game-development
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-game-ui-ux-design-1"
-    statement: "Diegetic UI elements exist within the game world (in-world screens, holograms) while non-diegetic UI exists outside it (health bars, minimaps)."
-    source_title: "Game UI Design"
-    confidence: "high"
-  - id: "af-game-ui-ux-design-2"
-    statement: "Fitts's Law predicts that selection time increases with distance and decreases with target size, fundamental to button placement in game interfaces."
-    source_title: "Human-Computer Interaction"
-    confidence: "high"
-
+  - id: fact-gd-ui-001
+    statement: "Fitts's Law (1954): larger/closer UI elements are faster to interact with; core game HUD principle."
+    source_title: Schell, J. The Art of Game Design 3rd ed. (CRC 2019)
+    source_url: https://doi.org/10.1201/9781315208435
+    confidence: high
+  - id: fact-gd-ui-002
+    statement: Diegetic UI (in-game world elements) provides higher immersion than non-diegetic HUDs.
+    source_title: Fagerholt & Lorentzon, Beyond the HUD (Chalmers 2009)
+    source_url: https://odr.chalmers.se/items/d4e35a6f-9c81-40f3-bd9e-ee115de6f335
+    confidence: high
+  - id: fact-gd-ui-003
+    statement: Nielsen's 10 usability heuristics (1994) widely applied to game UX design.
+    source_title: Hodent, C. The Gamer's Brain (CRC 2017)
+    source_url: https://doi.org/10.1201/9781315154237
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "VR/AR UI paradigms"
-  - "Cross-platform UI scaling strategies"
-
+  - VR/AR UI paradigms
+  - Cross-platform UI scaling strategies
 disputed_statements:
-  - statement: "Minimalism vs information density debate in HUD design"
-
+  - statement: Minimalism vs information density debate in HUD design
 primary_sources:
-  - title: "The Art of Game Design"
-    type: "textbook"
+  - title: The Art of Game Design
+    type: textbook
     year: 2019
-    url: "https://www.routledge.com/The-Art-of-Game-Design/Schell/p/book/9781138632059"
-    institution: "CRC Press"
-  - title: "Designing the User Interface, 6th Edition"
-    type: "textbook"
+    url: https://www.routledge.com/The-Art-of-Game-Design/Schell/p/book/9781138632059
+    institution: CRC Press
+  - title: Designing the User Interface, 6th Edition
+    type: textbook
     year: 2016
-    url: "https://www.pearson.com/en-us/subject-catalog/p/designing-the-user-interface/P200000009530"
-    institution: "Pearson"
-
+    url: https://www.pearson.com/en-us/subject-catalog/p/designing-the-user-interface/P200000009530
+    institution: Pearson
 secondary_sources:
-  - title: "Game UI Database"
-    type: "database"
-    url: "https://www.gameuidatabase.com/"
-    institution: "Game UI Database"
-
+  - title: Game UI Database
+    type: database
+    url: https://www.gameuidatabase.com/
+    institution: Game UI Database
 ---
-
-
 ## TL;DR
 Game UI bridges player intent and game mechanics. Good UI design communicates game state without breaking immersion, using principles from human-computer interaction adapted to real-time, controller-driven contexts.
 

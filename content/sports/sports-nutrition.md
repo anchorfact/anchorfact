@@ -15,17 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-sports-nutrition-1
-    statement: >-
-      Carbohydrate loading — consuming 8-12 g/kg body weight of carbs in the 24-48 hours before competition — can increase muscle glycogen stores by 50-100% and improve endurance performance by 2-4%
-      in events lasting over 90 minutes.
-    source_title: International Society of Sports Nutrition
+  - id: fact-sp-sn-001
+    statement: "IOC (2024): 1.2-2.0g protein/kg/day for athletes, distributed across meals."
+    source_title: "Thomas et al. AND/ACSM Position: Nutrition and Athletic Performance (MSSE 2016)"
+    source_url: https://doi.org/10.1016/j.jand.2015.12.006
     confidence: high
-  - id: af-sports-nutrition-2
-    statement: >-
-      Protein timing around exercise (20-40g within 2 hours post-exercise) maximizes muscle protein synthesis. Leucine, at a threshold of ~2-3g per meal, is the key amino acid triggering the mTOR
-      signaling pathway.
-    source_title: JISSN
+  - id: fact-sp-sn-002
+    statement: Carb loading (10-12g/kg/day, 36-48h pre-event) ↑ glycogen 50-100%, extends endurance ~20% (Bergström 1967).
+    source_title: Jeukendrup & Gleeson, Sport Nutrition 4th ed. (Human Kinetics 2024)
+    source_url: https://us.humankinetics.com/products/sport-nutrition-4th-edition
+    confidence: high
+  - id: fact-sp-sn-003
+    statement: "Creatine: most researched supplement, strong safety, ↑ high-intensity capacity 10-20% (ISSN 2017)."
+    source_title: Kreider et al. ISSN creatine position stand (JISSN 2017)
+    source_url: https://doi.org/10.1186/s12970-017-0173-z
     confidence: high
 completeness: 0.9
 known_gaps:

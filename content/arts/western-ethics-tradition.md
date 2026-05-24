@@ -15,13 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-western-ethics-tradition-1
-    statement: Aristotle's virtue ethics (Nicomachean Ethics, c.350 BCE) defines the good life (eudaimonia) as activity of the soul in accordance with virtue, achieved through the Doctrine of the Mean.
-    source_title: "Stanford Encyclopedia of Philosophy: Aristotle's Ethics"
+  - id: fact-art-eth-001
+    statement: "Aristotle's Nicomachean Ethics (~350 BCE): virtue ethics, one of 3 major normative frameworks."
+    source_title: Aristotle. Nicomachean Ethics (trans. Irwin, Hackett 3rd ed. 2019)
+    source_url: https://hackettpublishing.com/nicomachean-ethics
     confidence: high
-  - id: af-western-ethics-tradition-2
-    statement: "Kant's categorical imperative (1785) provides a universal test: \"Act only according to that maxim whereby you can at the same time will that it should become a universal law.\""
-    source_title: "Stanford Encyclopedia of Philosophy: Kant's Moral Philosophy"
+  - id: fact-art-eth-002
+    statement: "Kant's Categorical Imperative (1785): act only on maxims that can be universalized."
+    source_title: Kant, I. Groundwork (Cambridge 2012 trans. Gregor/Timmermann)
+    source_url: https://doi.org/10.1017/CBO9780511973741
+    confidence: high
+  - id: fact-art-eth-003
+    statement: "Mill's Utilitarianism (1863): Greatest Happiness Principle; actions right if they promote happiness."
+    source_title: Mill, J.S. Utilitarianism (1863, Oxford World Classics 1998)
+    source_url: https://global.oup.com/academic/product/utilitarianism-9780198751632
     confidence: high
 completeness: 0.9
 known_gaps:

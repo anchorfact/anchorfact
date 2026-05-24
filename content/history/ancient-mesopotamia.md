@@ -15,15 +15,20 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-ancient-mesopotamia-1
-    statement: Mesopotamia — the land between the Tigris and Euphrates in modern Iraq — saw the world's first cities (Uruk, ~4000 BCE), first writing system (cuneiform, ~3200 BCE), and first legal codes.
-    source_title: "British Museum: Mesopotamia"
+  - id: fact-hist-am-001
+    statement: "Sumer (c.4500-2000 BCE): first writing (cuneiform), wheel, city-states."
+    source_title: Kramer, S.N. History Begins at Sumer (Penn Press 1956)
+    source_url: https://www.pennpress.org/9780812212761/history-begins-at-sumer/
     confidence: high
-  - id: af-ancient-mesopotamia-2
-    statement: >-
-      The Code of Hammurabi (~1754 BCE), inscribed on a 2.25m basalt stele, contains 282 laws following the principle of lex talionis and provides the most complete surviving legal code from the
-      ancient Near East.
-    source_title: "Louvre Museum: Code of Hammurabi"
+  - id: fact-hist-am-002
+    statement: "Code of Hammurabi (~1754 BCE): one of earliest complete legal codes, 282 laws on diorite stele."
+    source_title: Roth, M.T. Law Collections from Mesopotamia 2nd ed. (Scholars 1997)
+    source_url: https://www.sbl-site.org/publications/Books_WAW.aspx
+    confidence: high
+  - id: fact-hist-am-003
+    statement: "Epic of Gilgamesh (~2100 BCE): oldest surviving literature, discovered at Nineveh."
+    source_title: George, A.R. The Epic of Gilgamesh (Penguin Classics 2003)
+    source_url: https://www.penguinrandomhouse.com/books/31919/the-epic-of-gilgamesh-by-anonymous-translated-by-andrew-george/
     confidence: high
 completeness: 0.9
 known_gaps:
