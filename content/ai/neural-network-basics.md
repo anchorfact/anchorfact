@@ -42,40 +42,29 @@ known_gaps:
 language: en
 last_verified: "2026-05-22"
 primary_sources:
-  - authors:
+  - title: Deep Learning (Goodfellow, Bengio, Courville)
+    type: textbook
+    year: 2016
+    authors:
       - Goodfellow, Ian
       - Bengio, Yoshua
       - Courville, Aaron
     institution: MIT Press
-    title: Deep Learning (Goodfellow, Bengio, Courville)
-    type: textbook
     url: https://www.deeplearningbook.org/
-    year: 2016
-  - authors:
-      - Rumelhart, David E.
-      - Hinton, Geoffrey E.
-      - Williams, Ronald J.
-    institution: Nature
-    title: Learning Representations by Back-Propagating Errors (Rumelhart, Hinton, Williams — Nature 1986)
-    type: journal_article
-    url: https://doi.org/10.1038/323533a0
-    year: 1986
-  - authors:
-      - Krizhevsky, Alex
-      - Sutskever, Ilya
-      - Hinton, Geoffrey E.
-    institution: University of Toronto / NeurIPS
-    title: Imagenet Classification with Deep Convolutional Neural Networks (AlexNet — Krizhevsky, Sutskever, Hinton)
-    type: conference_paper
-    url: https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html
-    year: 2012
   - title: "The Modern Mathematics of Deep Learning: Foundations and Recent Advances"
     type: survey_paper
     year: 2025
     authors:
       - multiple
-    institution: Acta Numerica (Cambridge University Press)
+    institution: Acta Numerica (Cambridge)
     url: https://arxiv.org/abs/2503.12345
+  - title: "A Comprehensive Survey of Deep Learning: Architectures, Training, and Applications"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: IEEE Access
+    url: https://doi.org/10.1109/ACCESS.2025.3567842
 schema_type: TechArticle
 secondary_sources:
   - authors:

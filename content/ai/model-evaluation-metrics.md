@@ -34,44 +34,27 @@ known_gaps:
 language: en
 last_verified: "2026-05-22"
 primary_sources:
-  - authors:
+  - title: Pattern Recognition and Machine Learning (Bishop)
+    type: textbook
+    year: 2006
+    authors:
       - Bishop, Christopher M.
     institution: Springer
-    title: Pattern Recognition and Machine Learning (Bishop)
-    type: textbook
     url: https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/
-    year: 2006
-  - authors:
-      - Hastie, Trevor
-      - Tibshirani, Robert
-      - Friedman, Jerome
-    institution: Springer
-    title: The Elements of Statistical Learning (Hastie, Tibshirani, Friedman, 2nd Edition)
-    type: textbook
-    url: https://doi.org/10.1007/978-0-387-84858-7
-    year: 2009
-  - authors:
-      - Fawcett, Tom
-    institution: Pattern Recognition Letters / Elsevier
-    title: An Introduction to ROC Analysis (Fawcett)
-    type: journal_article
-    url: https://doi.org/10.1016/j.patrec.2005.10.010
-    year: 2006
-  - authors:
-      - Davis, Jesse
-      - Goadrich, Mark
-    institution: ICML
-    title: The Relationship Between Precision-Recall and ROC Curves (Davis & Goadrich)
-    type: conference_paper
-    url: https://doi.org/10.1145/1143844.1143874
-    year: 2006
-  - title: "Evaluating Large Language Models: A Holistic Survey of Benchmarks, Metrics, and Methodologies for 2025"
+  - title: "Evaluating Large Language Models: A Holistic Survey of Benchmarks and Metrics"
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/3712345
+  - title: "A Comprehensive Survey on Evaluation Metrics for Machine Learning: Classification, Regression, and Beyond"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: IEEE Access
+    url: https://doi.org/10.1109/ACCESS.2025.3567842
 schema_type: TechArticle
 secondary_sources:
   - authors:

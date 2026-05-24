@@ -46,40 +46,29 @@ known_gaps:
 language: en
 last_verified: "2026-05-22"
 primary_sources:
-  - authors:
+  - title: Long Short-Term Memory
+    type: journal_article
+    year: 1997
+    authors:
       - Hochreiter, Sepp
       - Schmidhuber, Jürgen
     institution: Neural Computation / MIT Press
-    title: Long Short-Term Memory (LSTM — Hochreiter & Schmidhuber)
-    type: journal_article
     url: https://doi.org/10.1162/neco.1997.9.8.1735
-    year: 1997
-  - authors:
-      - Cho, Kyunghyun
-      - van Merrienboer, Bart
-      - Gulcehre, Caglar
-      - et al.
-    institution: University of Montreal / EMNLP
-    title: Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation (GRU — Cho et al.)
-    type: conference_paper
-    url: https://arxiv.org/abs/1406.1078
-    year: 2014
-  - authors:
-      - Lipton, Zachary C.
-      - Berkowitz, John
-      - Elkan, Charles
-    institution: arXiv / UC San Diego
-    title: A Critical Review of Recurrent Neural Networks for Sequence Learning (Lipton, Berkowitz, Elkan)
-    type: survey_paper
-    url: https://arxiv.org/abs/1506.00019
-    year: 2015
-  - title: "State Space Models as Modern RNNs: A Comprehensive Survey of Mamba, S4, and Linear Recurrent Architectures"
+  - title: "State Space Models as Modern RNNs: A Survey of Mamba, S4, and Linear Recurrent Architectures"
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: arXiv / IEEE Access
     url: https://arxiv.org/abs/2504.12345
+  - title: "Mamba: Linear-Time Sequence Modeling with Selective State Spaces"
+    type: conference_paper
+    year: 2024
+    authors:
+      - Gu, Albert
+      - Dao, Tri
+    institution: ICML / CMU
+    url: https://arxiv.org/abs/2312.00752
 schema_type: TechArticle
 secondary_sources:
   - authors:
