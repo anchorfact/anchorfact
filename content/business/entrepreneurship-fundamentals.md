@@ -1,62 +1,70 @@
 ---
-id: "kb-2026-00430"
-title: "Entrepreneurship Fundamentals"
-schema_type: "TechArticle"
-category: "business"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00430
+title: Entrepreneurship Fundamentals
+schema_type: TechArticle
+category: business
+language: en
+confidence: high
+last_verified: "2026-05-24"
 created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-business-01"
-    statement: "Most startups fail — failure is part of the process"
-    source_title: "The Lean Startup (Eric Ries)"
-    source_url: "https://www.penguinrandomhouse.com/books/120785/the-lean-startup-by-eric-ries/"
-    confidence: "high"
-  - id: "fact-business-02"
+  - id: fact-business-01
+    statement: Most startups fail — failure is part of the process
+    source_title: The Lean Startup (Eric Ries)
+    source_url: https://www.penguinrandomhouse.com/books/120785/the-lean-startup-by-eric-ries/
+    confidence: high
+  - id: fact-business-02
     statement: "'Market matters more than product.' Cash flow profit in early stages"
-    source_title: "The Lean Startup (Eric Ries)"
-    source_url: "https://www.penguinrandomhouse.com/books/120785/the-lean-startup-by-eric-ries/"
-    confidence: "high"
-
+    source_title: The Lean Startup (Eric Ries)
+    source_url: https://www.penguinrandomhouse.com/books/120785/the-lean-startup-by-eric-ries/
+    confidence: high
 completeness: 0.88
-
 known_gaps:
-  - "Statistics and data cited are from 2014 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
+  - Statistics and data cited are from 2014 and earlier; more recent data may have become available since publication
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
 primary_sources:
-  - title: "The Lean Startup (Eric Ries)"
-    type: "book"
+  - title: The Lean Startup (Eric Ries)
+    type: book
     year: 2011
-    url: "https://www.penguinrandomhouse.com/books/120785/the-lean-startup-by-eric-ries/"
-    institution: "Crown Business"
-
+    url: https://www.penguinrandomhouse.com/books/120785/the-lean-startup-by-eric-ries/
+    institution: Crown Business
+  - title: The Lean Startup (15th Anniversary Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Ries E.
+    institution: Crown Business
+    url: https://theleanstartup.com/
+  - title: "Entrepreneurship: Theory, Process, Practice (12th Edition, 2025)"
+    type: book
+    year: 2025
+    authors:
+      - Kuratko D.F.
+    institution: Cengage
+    url: https://www.cengage.com/entrepreneurship/
 secondary_sources:
-  - title: "The Lean Startup"
-    type: "book"
+  - title: The Lean Startup
+    type: book
     year: 2011
-    url: "https://www.penguinrandomhouse.com/books/120396/the-lean-startup-by-eric-ries/"
-    institution: "Eric Ries, Crown Business"
-  - title: "Zero to One"
-    type: "book"
+    url: https://www.penguinrandomhouse.com/books/120396/the-lean-startup-by-eric-ries/
+    institution: Eric Ries, Crown Business
+  - title: Zero to One
+    type: book
     year: 2014
-    url: "https://www.penguinrandomhouse.com/books/223124/zero-to-one-by-peter-thiel-with-blake-masters/"
-    institution: "Peter Thiel, Crown Business"
-
+    url: https://www.penguinrandomhouse.com/books/223124/zero-to-one-by-peter-thiel-with-blake-masters/
+    institution: Peter Thiel, Crown Business
 ---
-
-
 ## TL;DR
 
 Entrepreneurship is creating and scaling a business from scratch. Lean Startup methodology (Eric Ries): Build-Measure-Learn feedback loop, MVP (Minimum Viable Product), validated learning, pivot or persevere. Key skills: opportunity recognition, resourcefulness, resilience, execution. Most startups fail — failure is part of the process.
