@@ -1,50 +1,82 @@
 ---
-id: "dropout-and-regularization"
-title: "Dropout and Regularization Techniques"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
+id: dropout-and-regularization
+title: Dropout and Regularization Techniques
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-dropout-and-regularization-1"
-    statement: "Dropout (Srivastava et al., 2014) randomly drops neurons with probability p during training, forcing the network to learn redundant representations. At test time, all neurons are used with scaled weights, effectively averaging an ensemble of thinned networks."
-    source_title: "Srivastava et al., JMLR (2014)"
-    confidence: "high"
-  - id: "af-dropout-and-regularization-2"
-    statement: "L1 regularization (Lasso) adds |w| penalty, driving weights to exactly zero for automatic feature selection. L2 regularization (Ridge) adds w² penalty, shrinking all weights toward zero but rarely to exactly zero."
-    source_title: "Tibshirani, JRSS (1996) / Hoerl & Kennard (1970)"
-    confidence: "high"
-
+  - id: af-dropout-and-regularization-1
+    statement: Dropout (Srivastava et al., 2014) randomly drops neurons with probability p during training, forcing the network to learn redundant representations. At test time, all neurons are used with scaled weights, effectively averaging an ensemble of thinned networks.
+    source_title: Srivastava et al., JMLR (2014)
+    confidence: high
+  - id: af-dropout-and-regularization-2
+    statement: L1 regularization (Lasso) adds |w| penalty, driving weights to exactly zero for automatic feature selection. L2 regularization (Ridge) adds w² penalty, shrinking all weights toward zero but rarely to exactly zero.
+    source_title: Tibshirani, JRSS (1996) / Hoerl & Kennard (1970)
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "Spectral normalization for GAN stability"
-  - "Sharpness-aware minimization"
-
+  - Spectral normalization for GAN stability
+  - Sharpness-aware minimization
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
 primary_sources:
   - title: "Dropout: A Simple Way to Prevent Neural Networks from Overfitting"
-    type: "academic_paper"
+    type: academic_paper
     year: 2014
-    url: "https://jmlr.org/papers/v15/srivastava14a.html"
-    institution: "JMLR"
-  - title: "The Elements of Statistical Learning, Ch.7"
-    type: "textbook"
+    url: https://jmlr.org/papers/v15/srivastava14a.html
+    institution: JMLR
+  - title: The Elements of Statistical Learning, Ch.7
+    type: textbook
     year: 2009
-    url: "https://link.springer.com/book/10.1007/978-0-387-84858-7"
-    institution: "Springer"
-
+    url: https://link.springer.com/book/10.1007/978-0-387-84858-7
+    institution: Springer
+secondary_sources:
+  - title: "Dropout: A Simple Way to Prevent Neural Networks from Overfitting"
+    type: journal_article
+    year: 2014
+    authors:
+      - Srivastava, Nitish
+      - Hinton, Geoffrey
+      - Krizhevsky, Alex
+      - Sutskever, Ilya
+      - Salakhutdinov, Ruslan
+    institution: JMLR
+    url: https://jmlr.org/papers/v15/srivastava14a.html
+  - title: A Review on Dropout Regularization Approaches for Deep Neural Networks
+    type: survey_paper
+    year: 2023
+    authors:
+      - multiple
+    institution: Electronics (MDPI)
+    url: https://www.mdpi.com/2079-9292/12/14/3106
+  - title: "Deep Learning (Textbook) — Chapter 7.12: Dropout & Bayesian Approximation"
+    type: textbook
+    year: 2016
+    authors:
+      - Goodfellow, Ian
+      - Bengio, Yoshua
+      - Courville, Aaron
+    institution: MIT Press
+    url: https://www.deeplearningbook.org/
+  - title: "Regularization for Deep Learning: A Taxonomy"
+    type: survey_paper
+    year: 2017
+    authors:
+      - Kukačka, Jan
+      - Golkov, Vladimir
+      - Cremers, Daniel
+    institution: Technical University of Munich
+    url: https://arxiv.org/abs/1710.10686
 ---
 
 

@@ -1,48 +1,84 @@
 ---
-id: "computational-neuroscience"
+id: computational-neuroscience
 title: "Computational Neuroscience: AI Models of Brain Circuits, Connectomics, and Neural Computation"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-computational-neuroscience-1"
-    statement: "The Human Connectome Project and the Allen Institute's MICrONS program (completed 2024-2025) produced the first cubic-millimeter-scale connectomic reconstructions of mammalian brain tissue — mapping 200,000+ neurons and 500 million synapses from electron microscopy volumes using deep learning for automatic neuron segmentation (Flood-Filling Networks) and synapse detection — providing ground-truth circuit diagrams for AI models of cortical computation."
-    source_title: "MICrONS (Allen Institute, 2024-2025) — Cortical Connectomics / Google Connectomics Team — flood-filling networks for EM segmentation"
-    source_url: "https://www.microns-explorer.org/"
-    confidence: "high"
-  - id: "af-computational-neuroscience-2"
-    statement: "Predictive coding theory (Rao & Ballard, 1999) and modern deep learning instantiations (PredNet, Rao 2024) demonstrate that hierarchical predictive processing — where each cortical layer predicts the activity of the layer below and updates based on prediction errors — provides a unified framework explaining visual perception, motor control, and attention from first principles, while outperforming discriminative CNNs on few-shot learning and anomaly detection."
-    source_title: "Rao & Ballard Nature Neuroscience (1999) foundational paper / Rao (2024) — Predictive Coding 2.0 / Neural Computation"
-    source_url: "https://www.nature.com/articles/nn0199_79"
-    confidence: "high"
+  - id: af-computational-neuroscience-1
+    statement: The Human Connectome Project and the Allen Institute's MICrONS program (completed 2024-2025) produced the first cubic-millimeter-scale connectomic reconstructions of mammalian brain tissue — mapping 200,000+ neurons and 500 million synapses from electron microscopy volumes using deep learning for automatic neuron segmentation (Flood-Filling Networks) and synapse detection — providing ground-truth circuit diagrams for AI models of cortical computation.
+    source_title: MICrONS (Allen Institute, 2024-2025) — Cortical Connectomics / Google Connectomics Team — flood-filling networks for EM segmentation
+    source_url: https://www.microns-explorer.org/
+    confidence: high
+  - id: af-computational-neuroscience-2
+    statement: Predictive coding theory (Rao & Ballard, 1999) and modern deep learning instantiations (PredNet, Rao 2024) demonstrate that hierarchical predictive processing — where each cortical layer predicts the activity of the layer below and updates based on prediction errors — provides a unified framework explaining visual perception, motor control, and attention from first principles, while outperforming discriminative CNNs on few-shot learning and anomaly detection.
+    source_title: Rao & Ballard Nature Neuroscience (1999) foundational paper / Rao (2024) — Predictive Coding 2.0 / Neural Computation
+    source_url: https://www.nature.com/articles/nn0199_79
+    confidence: high
 primary_sources:
-  - id: "ps-computational-neuroscience-1"
+  - id: ps-computational-neuroscience-1
     title: "MICrONS: Functional connectomics spanning multiple areas of mouse visual cortex"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "Allen Institute for Brain Science / bioRxiv / Nature"
-    url: "https://www.microns-explorer.org/"
-  - id: "ps-computational-neuroscience-2"
+    institution: Allen Institute for Brain Science / bioRxiv / Nature
+    url: https://www.microns-explorer.org/
+  - id: ps-computational-neuroscience-2
     title: "Predictive coding in the visual cortex: a functional interpretation of some extra-classical receptive-field effects"
-    type: "academic_paper"
+    type: academic_paper
     year: 1999
-    institution: "Nature Neuroscience"
-    doi: "10.1038/4580"
-    url: "https://www.nature.com/articles/nn0199_79"
+    institution: Nature Neuroscience
+    doi: 10.1038/4580
+    url: https://www.nature.com/articles/nn0199_79
 known_gaps:
-  - "Scaling connectomic reconstruction to whole-brain (mouse/human) level"
-  - "Bridging neural circuit models to behavioral and cognitive phenomena"
+  - Scaling connectomic reconstruction to whole-brain (mouse/human) level
+  - Bridging neural circuit models to behavioral and cognitive phenomena
 disputed_statements: []
+secondary_sources:
+  - title: "Brain-Inspired Artificial Intelligence: A Comprehensive Review"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: arXiv
+    url: https://arxiv.org/abs/2408.14811
+  - title: "Brain and Cognitive Science Inspired Deep Learning: A Comprehensive Survey"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: IEEE TKDE
+    url: https://doi.org/10.1109/TKDE.2025.3527551
+  - title: If Deep Learning Is the Answer, What Is the Question?
+    type: review
+    year: 2021
+    authors:
+      - Saxe, Andrew
+      - Nelli, Stephanie
+      - Summerfield, Christopher
+    institution: Nature Reviews Neuroscience
+    url: https://www.nature.com/articles/s41583-020-00395-8
+  - title: Backpropagation and the Brain
+    type: review
+    year: 2020
+    authors:
+      - Lillicrap, Timothy P.
+      - Santoro, Adam
+      - Marris, Luke
+      - Akerman, Colin J.
+      - Hinton, Geoffrey
+    institution: Nature Reviews Neuroscience
+    url: https://www.nature.com/articles/s41583-020-0277-3
 ---
 
 ## TL;DR

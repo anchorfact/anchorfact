@@ -1,47 +1,84 @@
 ---
-id: "adversarial-machine-learning"
+id: adversarial-machine-learning
 title: "Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-adversarial-machine-learning-1"
-    statement: "NIST AI 100-2e3 (April 2025) published the authoritative taxonomy of adversarial ML — classifying attacks into evasion (inference-time, e.g., adversarial patches on stop signs), poisoning (training-time data corruption), and privacy (model inversion, membership inference), with detailed defense matrices for each category."
-    source_title: "NIST AI 100-2e3 (April 2025) — Adversarial Machine Learning Taxonomy"
-    source_url: "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2025.pdf"
-    confidence: "high"
-  - id: "af-adversarial-machine-learning-2"
-    statement: "A 2025 systematic review of 150+ peer-reviewed papers found that adversarial training (injecting adversarial examples into training data) remains the most effective general defense — improving robustness by 30-60% against white-box attacks — but at the cost of 5-10% degradation on clean data accuracy (the robustness-accuracy trade-off)."
-    source_title: "AML Survey, Neurocomputing (March 2026) / AML Methods & Tools (2025)"
-    source_url: "https://www.sciencedirect.com/science/article/pii/S0925231226000676"
-    confidence: "high"
+  - id: af-adversarial-machine-learning-1
+    statement: NIST AI 100-2e3 (April 2025) published the authoritative taxonomy of adversarial ML — classifying attacks into evasion (inference-time, e.g., adversarial patches on stop signs), poisoning (training-time data corruption), and privacy (model inversion, membership inference), with detailed defense matrices for each category.
+    source_title: NIST AI 100-2e3 (April 2025) — Adversarial Machine Learning Taxonomy
+    source_url: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2025.pdf
+    confidence: high
+  - id: af-adversarial-machine-learning-2
+    statement: A 2025 systematic review of 150+ peer-reviewed papers found that adversarial training (injecting adversarial examples into training data) remains the most effective general defense — improving robustness by 30-60% against white-box attacks — but at the cost of 5-10% degradation on clean data accuracy (the robustness-accuracy trade-off).
+    source_title: AML Survey, Neurocomputing (March 2026) / AML Methods & Tools (2025)
+    source_url: https://www.sciencedirect.com/science/article/pii/S0925231226000676
+    confidence: high
 primary_sources:
-  - id: "ps-adversarial-machine-learning-1"
+  - id: ps-adversarial-machine-learning-1
     title: "Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations (NIST AI 100-2e3)"
-    type: "government_report"
+    type: government_report
     year: 2025
-    institution: "NIST (National Institute of Standards and Technology)"
-    url: "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2025.pdf"
-  - id: "ps-adversarial-machine-learning-2"
+    institution: NIST (National Institute of Standards and Technology)
+    url: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2025.pdf
+  - id: ps-adversarial-machine-learning-2
     title: "A survey on adversarial machine learning: Attacks, defenses, real-world applications, and algorithmic framework"
-    type: "academic_paper"
+    type: academic_paper
     year: 2026
-    institution: "Neurocomputing / Elsevier"
-    url: "https://www.sciencedirect.com/science/article/pii/S0925231226000676"
+    institution: Neurocomputing / Elsevier
+    url: https://www.sciencedirect.com/science/article/pii/S0925231226000676
 known_gaps:
-  - "Certified robustness guarantees for deep networks"
-  - "Real-time adversarial detection in production ML pipelines"
+  - Certified robustness guarantees for deep networks
+  - Real-time adversarial detection in production ML pipelines
 disputed_statements: []
+secondary_sources:
+  - title: Explaining and Harnessing Adversarial Examples (FGSM)
+    type: conference_paper
+    year: 2015
+    authors:
+      - Goodfellow, Ian J.
+      - Shlens, Jonathon
+      - Szegedy, Christian
+    institution: Google Brain / ICLR
+    url: https://arxiv.org/abs/1412.6572
+  - title: Towards Deep Learning Models Resistant to Adversarial Attacks (PGD)
+    type: conference_paper
+    year: 2018
+    authors:
+      - Madry, Aleksander
+      - Makelov, Aleksandar
+      - Schmidt, Ludwig
+      - Tsipras, Dimitris
+      - Vladu, Adrian
+    institution: MIT / ICLR
+    url: https://openreview.net/forum?id=rJzIBfZAb
+  - title: "Adversarial Machine Learning: A Review of Methods, Tools, and Defenses"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Artificial Intelligence Review (Springer)
+    url: https://doi.org/10.1007/s10462-025-11147-4
+  - title: Adversarial Robustness — Theory and Practice (NeurIPS Tutorial)
+    type: tutorial
+    year: 2019
+    authors:
+      - Kolter, Zico
+      - Madry, Aleksander
+    institution: NeurIPS / MIT
+    url: https://adversarial-ml-tutorial.org/
 ---
 
 ## TL;DR
