@@ -1,50 +1,89 @@
 ---
-id: "ai-for-urban-planning"
+id: ai-for-urban-planning
 title: "AI for Urban Planning: Generative Spatial AI, Digital Twins, and Computational Urban Science"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-ai-for-urban-planning-1"
-    statement: "ScienceDirect (March 2025) proposed the concept of \"Generative Spatial AI\" for sustainable smart cities — integrating generative AI, foundation models, and geospatial digital twins to autonomously generate urban designs, simulate population dynamics, and optimize land use — demonstrating that diffusion models trained on zoning codes and urban form data can generate diverse, code-compliant master plans in minutes, compared to months for human planners."
-    source_title: "ScienceDirect (2025) — Generative spatial artificial intelligence for sustainable smart cities — doi:10.1016/j.nbsj.2025.100004"
-    source_url: "https://www.sciencedirect.com/science/article/pii/S2666498425000043"
-    confidence: "high"
-  - id: "af-ai-for-urban-planning-2"
-    statement: "MDPI Smart Cities (October 2025) published a systematic literature review examining the integration of IoT, AI, and digital twins in smart cities — analyzing 200+ papers — finding that AI-driven urban digital twins reduce infrastructure maintenance costs by 20-30% through predictive analytics, enable 15-25% energy savings via AI-optimized building management, and improve emergency response times by 12-18% through real-time situational awareness."
+  - id: af-ai-for-urban-planning-1
+    statement: >-
+      ScienceDirect (March 2025) proposed the concept of "Generative Spatial AI" for sustainable smart cities — integrating generative AI, foundation models, and geospatial digital twins to
+      autonomously generate urban designs, simulate population dynamics, and optimize land use — demonstrating that diffusion models trained on zoning codes and urban form data can generate diverse,
+      code-compliant master plans in minutes, compared to months for human planners.
+    source_title: ScienceDirect (2025) — Generative spatial artificial intelligence for sustainable smart cities — doi:10.1016/j.nbsj.2025.100004
+    source_url: https://www.sciencedirect.com/science/article/pii/S2666498425000043
+    confidence: high
+  - id: af-ai-for-urban-planning-2
+    statement: >-
+      MDPI Smart Cities (October 2025) published a systematic literature review examining the integration of IoT, AI, and digital twins in smart cities — analyzing 200+ papers — finding that AI-driven
+      urban digital twins reduce infrastructure maintenance costs by 20-30% through predictive analytics, enable 15-25% energy savings via AI-optimized building management, and improve emergency
+      response times by 12-18% through real-time situational awareness.
     source_title: "MDPI Smart Cities (2025) — IoT, AI, and Digital Twins: A Systematic Literature Review"
-    source_url: "https://www.mdpi.com/2624-6511/8/5/175"
-    confidence: "high"
+    source_url: https://www.mdpi.com/2624-6511/8/5/175
+    confidence: high
 primary_sources:
-  - id: "ps-ai-for-urban-planning-1"
+  - id: ps-ai-for-urban-planning-1
     title: "Generative spatial artificial intelligence for sustainable smart cities: opportunities, challenges, and future directions"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "Nature-Based Solutions / Elsevier"
-    doi: "10.1016/j.nbsj.2025.100004"
-    url: "https://www.sciencedirect.com/science/article/pii/S2666498425000043"
-  - id: "ps-ai-for-urban-planning-2"
+    institution: Nature-Based Solutions / Elsevier
+    doi: 10.1016/j.nbsj.2025.100004
+    url: https://www.sciencedirect.com/science/article/pii/S2666498425000043
+  - id: ps-ai-for-urban-planning-2
     title: "IoT, AI, and Digital Twins in Smart Cities: A Systematic Literature Review"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "MDPI Smart Cities"
-    url: "https://www.mdpi.com/2624-6511/8/5/175"
+    institution: MDPI Smart Cities
+    url: https://www.mdpi.com/2624-6511/8/5/175
 known_gaps:
-  - "Equity-aware AI planning — preventing gentrification and displacement"
-  - "Long-term validation of AI-generated urban designs against real-world outcomes"
+  - Equity-aware AI planning — preventing gentrification and displacement
+  - Long-term validation of AI-generated urban designs against real-world outcomes
 disputed_statements: []
+secondary_sources:
+  - title: "AI in Urban Planning: A Comprehensive Survey of Smart City Applications from Geospatial Analysis to Digital Twins"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE Access
+    url: https://doi.org/10.1109/ACCESS.2024.3415265
+  - title: "Urban Computing: Concepts, Methodologies, and Applications (Zheng et al.)"
+    type: journal_article
+    year: 2014
+    authors:
+      - Zheng, Yu
+      - Capra, Licia
+      - Wolfson, Ouri
+      - Yang, Hai
+    institution: ACM TIST / Microsoft Research
+    url: https://doi.org/10.1145/2629592
+  - title: "Deep Learning for Urban Computing: A Comprehensive Survey of Traffic, Environment, and Energy Applications"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/3635100
+  - title: "UN-Habitat: AI and Digital Technologies for Sustainable Urban Development"
+    type: report
+    year: 2024
+    authors:
+      - UN-Habitat
+    institution: UN-Habitat
+    url: https://unhabitat.org/topic/digital-technologies
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI is becoming the architect and operator of future cities — generating urban master plans from zoning codes, simulating millions of "what-if" scenarios in digital twins, and optimizing energy, water, and transportation in real-time. Generative spatial AI represents a paradigm shift from reactive urban management to proactive computational design.
 

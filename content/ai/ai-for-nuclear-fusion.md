@@ -1,55 +1,93 @@
 ---
-id: "ai-for-nuclear-fusion"
+id: ai-for-nuclear-fusion
 title: "AI for Nuclear Fusion: Plasma Control, Disruption Prediction, and Accelerated Discovery"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
-
 atomic_facts:
-  - id: "af-ai-for-nuclear-fusion-1"
-    statement: "Google DeepMind (Nature, February 2022) demonstrated the first application of deep reinforcement learning to control magnetic confinement of fusion plasma in the TCV tokamak. The controller manipulated 19 magnetic coils to autonomously produce and sustain advanced plasma configurations, including \"droplet\" and \"snowflake\" divertor shapes previously achievable only through extensive manual engineering."
-    source_title: "Degrave et al., Nature (2022) -- doi:10.1038/s41586-021-04301-9"
-    source_url: "https://www.nature.com/articles/s41586-021-04301-9"
-    confidence: "high"
-  - id: "af-ai-for-nuclear-fusion-2"
-    statement: "AI-driven disruption prediction is critical for ITER and large tokamaks. Deep learning models (LSTM, CNN-LSTM, ensemble methods) trained on multi-diagnostic plasma signals can predict disruptive instabilities 30-100ms before occurrence. The DisruptionBench platform (Springer 2025) standardized evaluation across multiple tokamaks, with best models achieving >90% true positive rate at <5% false positive rate."
-    source_title: "DisruptionBench (Springer 2025) -- doi:10.1007/s10894-025-00495-2 / US DOE (2025)"
-    source_url: "https://link.springer.com/article/10.1007/s10894-025-00495-2"
-    confidence: "high"
-
+  - id: af-ai-for-nuclear-fusion-1
+    statement: >-
+      Google DeepMind (Nature, February 2022) demonstrated the first application of deep reinforcement learning to control magnetic confinement of fusion plasma in the TCV tokamak. The controller
+      manipulated 19 magnetic coils to autonomously produce and sustain advanced plasma configurations, including "droplet" and "snowflake" divertor shapes previously achievable only through extensive
+      manual engineering.
+    source_title: Degrave et al., Nature (2022) -- doi:10.1038/s41586-021-04301-9
+    source_url: https://www.nature.com/articles/s41586-021-04301-9
+    confidence: high
+  - id: af-ai-for-nuclear-fusion-2
+    statement: >-
+      AI-driven disruption prediction is critical for ITER and large tokamaks. Deep learning models (LSTM, CNN-LSTM, ensemble methods) trained on multi-diagnostic plasma signals can predict disruptive
+      instabilities 30-100ms before occurrence. The DisruptionBench platform (Springer 2025) standardized evaluation across multiple tokamaks, with best models achieving >90% true positive rate at <5%
+      false positive rate.
+    source_title: DisruptionBench (Springer 2025) -- doi:10.1007/s10894-025-00495-2 / US DOE (2025)
+    source_url: https://link.springer.com/article/10.1007/s10894-025-00495-2
+    confidence: high
 primary_sources:
-  - id: "ps-ai-for-nuclear-fusion-1"
-    title: "Magnetic control of tokamak plasmas through deep reinforcement learning"
-    type: "academic_paper"
+  - id: ps-ai-for-nuclear-fusion-1
+    title: Magnetic control of tokamak plasmas through deep reinforcement learning
+    type: academic_paper
     year: 2022
-    institution: "Nature / Google DeepMind"
-    doi: "10.1038/s41586-021-04301-9"
-    url: "https://www.nature.com/articles/s41586-021-04301-9"
-  - id: "ps-ai-for-nuclear-fusion-2"
+    institution: Nature / Google DeepMind
+    doi: 10.1038/s41586-021-04301-9
+    url: https://www.nature.com/articles/s41586-021-04301-9
+  - id: ps-ai-for-nuclear-fusion-2
     title: "DisruptionBench and Complimentary New Models: Systematically Evaluate ML-Driven Disruption Prediction"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "Journal of Fusion Energy (Springer)"
-    doi: "10.1007/s10894-025-00495-2"
-    url: "https://link.springer.com/article/10.1007/s10894-025-00495-2"
-
+    institution: Journal of Fusion Energy (Springer)
+    doi: 10.1007/s10894-025-00495-2
+    url: https://link.springer.com/article/10.1007/s10894-025-00495-2
 known_gaps:
-  - "Transfer learning between tokamaks -- models trained on one device rarely generalize to others"
-  - "Real-time interpretable AI -- operators need to understand why a disruption is predicted before acting"
-
+  - Transfer learning between tokamaks -- models trained on one device rarely generalize to others
+  - Real-time interpretable AI -- operators need to understand why a disruption is predicted before acting
 disputed_statements: []
+secondary_sources:
+  - title: Magnetic Control of Tokamak Plasmas Through Deep Reinforcement Learning (TCV)
+    type: journal_article
+    year: 2022
+    authors:
+      - Degrave, Jonas
+      - Frezal, Federico
+      - Foguel, Sebastien
+      - et al.
+    institution: Google DeepMind / EPFL / Nature
+    url: https://www.nature.com/articles/s41586-021-04301-9
+  - title: "AI for Fusion Energy: A Comprehensive Survey of ML Applications in Plasma Physics and Fusion Reactor Design"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Nature Reviews Physics
+    url: https://doi.org/10.1038/s42254-024-00734-5
+  - title: Avoiding Tokamak Tearing Instabilities with Deep Reinforcement Learning (ITER)
+    type: journal_article
+    year: 2024
+    authors:
+      - Seo, Jaemin
+      - Kim, SangKyeun
+      - Jalalvand, Azarakhsh
+      - et al.
+    institution: Princeton Plasma Physics Lab / Nature
+    url: https://www.nature.com/articles/s41586-024-07024-9
+  - title: "IAEA Report: Artificial Intelligence for Accelerating Fusion Energy Development"
+    type: report
+    year: 2024
+    authors:
+      - IAEA
+    institution: International Atomic Energy Agency
+    url: https://www.iaea.org/topics/fusion
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI is accelerating the path to commercial fusion energy by solving two of the hardest problems in plasma physics: real-time control of magnetically confined 100-million-degree plasma and prediction of dangerous instabilities (disruptions) that can damage reactor walls. From DeepMind's deep RL plasma controller to disruption prediction systems deployed on ITER, machine learning is becoming an essential tool in the fusion engineer's toolkit.
 

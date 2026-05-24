@@ -1,50 +1,86 @@
 ---
-id: "ai-for-fraud-detection"
+id: ai-for-fraud-detection
 title: "AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-ai-for-fraud-detection-1"
-    statement: "Nature Scientific Reports (December 2025) introduced RL-GNN — a framework combining reinforcement learning with graph neural networks for fraud detection on imbalanced financial transaction data — achieving 15-20% improvement in F1-score over supervised GNN baselines by framing fraud detection as a sequential decision process where the agent learns to investigate suspicious subgraphs adaptively, addressing the extreme class imbalance (<0.1% fraudulent transactions) that plagues financial data."
-    source_title: "Nature Scientific Reports (2025) — RL-GNN for fraud detection — doi:10.1038/s41598-025-25200-3"
-    source_url: "https://www.nature.com/articles/s41598-025-25200-3"
-    confidence: "high"
-  - id: "af-ai-for-fraud-detection-2"
-    statement: "MDPI Applied Sciences (February 2026) published a comprehensive systematic review of AI for financial fraud detection — surveying 120+ papers across transaction fraud (credit card, online payment), anti-money laundering (AML network analysis), insurance fraud, and securities fraud — finding that GNN-based anomaly detection reduces false positive rates by 30-50% compared to rule-based systems while detecting 40% more previously unknown fraud patterns."
-    source_title: "MDPI Applied Sciences (2026) — Review of AI for financial fraud detection"
-    source_url: "https://www.mdpi.com/2076-3417/16/4/1931"
-    confidence: "high"
+  - id: af-ai-for-fraud-detection-1
+    statement: >-
+      Nature Scientific Reports (December 2025) introduced RL-GNN — a framework combining reinforcement learning with graph neural networks for fraud detection on imbalanced financial transaction data
+      — achieving 15-20% improvement in F1-score over supervised GNN baselines by framing fraud detection as a sequential decision process where the agent learns to investigate suspicious subgraphs
+      adaptively, addressing the extreme class imbalance (<0.1% fraudulent transactions) that plagues financial data.
+    source_title: Nature Scientific Reports (2025) — RL-GNN for fraud detection — doi:10.1038/s41598-025-25200-3
+    source_url: https://www.nature.com/articles/s41598-025-25200-3
+    confidence: high
+  - id: af-ai-for-fraud-detection-2
+    statement: >-
+      MDPI Applied Sciences (February 2026) published a comprehensive systematic review of AI for financial fraud detection — surveying 120+ papers across transaction fraud (credit card, online
+      payment), anti-money laundering (AML network analysis), insurance fraud, and securities fraud — finding that GNN-based anomaly detection reduces false positive rates by 30-50% compared to
+      rule-based systems while detecting 40% more previously unknown fraud patterns.
+    source_title: MDPI Applied Sciences (2026) — Review of AI for financial fraud detection
+    source_url: https://www.mdpi.com/2076-3417/16/4/1931
+    confidence: high
 primary_sources:
-  - id: "ps-ai-for-fraud-detection-1"
-    title: "Reinforcement learning with graph neural network (RL-GNN) for fraud detection in imbalanced financial data"
-    type: "academic_paper"
+  - id: ps-ai-for-fraud-detection-1
+    title: Reinforcement learning with graph neural network (RL-GNN) for fraud detection in imbalanced financial data
+    type: academic_paper
     year: 2025
-    institution: "Nature Scientific Reports"
-    doi: "10.1038/s41598-025-25200-3"
-    url: "https://www.nature.com/articles/s41598-025-25200-3"
-  - id: "ps-ai-for-fraud-detection-2"
+    institution: Nature Scientific Reports
+    doi: 10.1038/s41598-025-25200-3
+    url: https://www.nature.com/articles/s41598-025-25200-3
+  - id: ps-ai-for-fraud-detection-2
     title: "A Review of Artificial Intelligence for Financial Fraud Detection: Methods, Challenges, and Future Directions"
-    type: "academic_paper"
+    type: academic_paper
     year: 2026
-    institution: "MDPI Applied Sciences"
-    url: "https://www.mdpi.com/2076-3417/16/4/1931"
+    institution: MDPI Applied Sciences
+    url: https://www.mdpi.com/2076-3417/16/4/1931
 known_gaps:
-  - "Adversarial robustness — fraudsters adapt to AI detection models"
-  - "Cross-institutional fraud detection without sharing sensitive transaction data"
+  - Adversarial robustness — fraudsters adapt to AI detection models
+  - Cross-institutional fraud detection without sharing sensitive transaction data
 disputed_statements: []
+secondary_sources:
+  - title: "Deep Learning in Financial Fraud Detection: Innovations, Challenges, and Future Directions (2019-2024)"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Journal of Information Security & Applications (Elsevier)
+    url: https://doi.org/10.1016/j.jisa.2025.103915
+  - title: "Financial Fraud Detection Through Machine Learning: A PRISMA Systematic Review of 104 Studies"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Nature Humanities & Social Sciences Communications
+    url: https://doi.org/10.1038/s41599-024-03606-0
+  - title: "AI-Driven Fraud Detection Models in Financial Networks: A Comprehensive Survey"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: IEEE Access
+    url: https://doi.org/10.1109/ACCESS.2025.3567842
+  - title: 2024 AI Fraud Financial Crime Survey (BioCatch)
+    type: report
+    year: 2024
+    authors:
+      - BioCatch Research
+    institution: BioCatch
+    url: https://www.biocatch.com/ai-fraud-financial-crime-survey
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 Financial fraud costs the global economy an estimated $5 trillion annually. AI — particularly graph neural networks — is transforming fraud detection from reactive rules to proactive pattern discovery, catching complex money laundering networks and transaction fraud that rule-based systems miss while reducing false alarms that waste investigator time.
 

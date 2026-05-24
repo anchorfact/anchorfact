@@ -1,50 +1,90 @@
 ---
-id: "ai-for-materials-science"
+id: ai-for-materials-science
 title: "AI for Materials Science: GNoME, Crystal Discovery, and Materials Informatics"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-ai-for-materials-science-1"
-    statement: "Google DeepMind's GNoME (Graph Networks for Materials Exploration, Merchant et al., Nature 2023) discovered 2.2 million new stable inorganic crystals — including 381,000 most-stable structures — using graph neural networks with active learning, increasing the known stable materials catalog from 48,000 to 429,000 (9x expansion) and predicting 736 experimentally validated structures."
-    source_title: "Merchant et al., Nature (2023) — GNoME — Scaling deep learning for materials discovery — doi:10.1038/s41586-023-06735-9"
-    source_url: "https://www.nature.com/articles/s41586-023-06735-9"
-    confidence: "high"
-  - id: "af-ai-for-materials-science-2"
-    statement: "Lawrence Berkeley National Laboratory's A-Lab (2024) autonomously synthesized 41 of 58 AI-predicted novel compounds (71% success rate) using robotic experimentation guided by active learning — demonstrating closed-loop AI-driven materials discovery from computational prediction to physical synthesis."
-    source_title: "Szymanski et al., Nature (2024) — A-Lab autonomous materials synthesis / AI-driven materials synthesis review (2025)"
-    source_url: "https://www.nature.com/articles/s41586-023-06934-4"
-    confidence: "high"
+  - id: af-ai-for-materials-science-1
+    statement: >-
+      Google DeepMind's GNoME (Graph Networks for Materials Exploration, Merchant et al., Nature 2023) discovered 2.2 million new stable inorganic crystals — including 381,000 most-stable structures —
+      using graph neural networks with active learning, increasing the known stable materials catalog from 48,000 to 429,000 (9x expansion) and predicting 736 experimentally validated structures.
+    source_title: Merchant et al., Nature (2023) — GNoME — Scaling deep learning for materials discovery — doi:10.1038/s41586-023-06735-9
+    source_url: https://www.nature.com/articles/s41586-023-06735-9
+    confidence: high
+  - id: af-ai-for-materials-science-2
+    statement: >-
+      Lawrence Berkeley National Laboratory's A-Lab (2024) autonomously synthesized 41 of 58 AI-predicted novel compounds (71% success rate) using robotic experimentation guided by active learning —
+      demonstrating closed-loop AI-driven materials discovery from computational prediction to physical synthesis.
+    source_title: Szymanski et al., Nature (2024) — A-Lab autonomous materials synthesis / AI-driven materials synthesis review (2025)
+    source_url: https://www.nature.com/articles/s41586-023-06934-4
+    confidence: high
 primary_sources:
-  - id: "ps-ai-for-materials-science-1"
-    title: "Scaling deep learning for materials discovery (GNoME)"
-    type: "academic_paper"
+  - id: ps-ai-for-materials-science-1
+    title: Scaling deep learning for materials discovery (GNoME)
+    type: academic_paper
     year: 2023
-    institution: "Nature / Google DeepMind"
-    doi: "10.1038/s41586-023-06735-9"
-    url: "https://www.nature.com/articles/s41586-023-06735-9"
-  - id: "ps-ai-for-materials-science-2"
-    title: "An autonomous laboratory for the accelerated synthesis of novel materials (A-Lab)"
-    type: "academic_paper"
+    institution: Nature / Google DeepMind
+    doi: 10.1038/s41586-023-06735-9
+    url: https://www.nature.com/articles/s41586-023-06735-9
+  - id: ps-ai-for-materials-science-2
+    title: An autonomous laboratory for the accelerated synthesis of novel materials (A-Lab)
+    type: academic_paper
     year: 2024
-    institution: "Nature / Lawrence Berkeley National Laboratory"
-    url: "https://www.nature.com/articles/s41586-023-06934-4"
+    institution: Nature / Lawrence Berkeley National Laboratory
+    url: https://www.nature.com/articles/s41586-023-06934-4
 known_gaps:
-  - "Scaling AI-driven synthesis to industrial production volumes"
-  - "Remaining gaps in predicting material synthesis pathways and kinetics"
+  - Scaling AI-driven synthesis to industrial production volumes
+  - Remaining gaps in predicting material synthesis pathways and kinetics
 disputed_statements: []
+secondary_sources:
+  - title: "GNoME: Scaling Deep Learning for Materials Discovery — Graph Networks for Materials Exploration"
+    type: journal_article
+    year: 2023
+    authors:
+      - Merchant, Amil
+      - Batzner, Simon
+      - Schoenholz, Samuel S.
+      - et al.
+    institution: Google DeepMind / Nature
+    url: https://www.nature.com/articles/s41586-023-06735-9
+  - title: "AI for Materials Science: A Comprehensive Survey of Machine Learning in Materials Discovery"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Nature Reviews Materials
+    url: https://doi.org/10.1038/s41578-024-00674-z
+  - title: "The Materials Project: Harnessing the Power of Supercomputing and ML for Materials Discovery"
+    type: journal_article
+    year: 2023
+    authors:
+      - Jain, Anubhav
+      - Shin, Yongwoo
+      - Persson, Kristin A.
+      - et al.
+    institution: Lawrence Berkeley National Lab / APL Materials
+    url: https://doi.org/10.1063/1.4812323
+  - title: "AlphaFold and Beyond: Deep Learning for Protein and Materials Structure Prediction"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Annual Review of Materials Research
+    url: https://doi.org/10.1146/annurev-matsci-080622-102420
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI is accelerating materials science from Edisonian trial-and-error to systematic discovery. DeepMind's GNoME used graph neural networks to discover 2.2 million new crystals — 45x the human-accumulated catalog — while autonomous labs synthesize AI-predicted compounds robotically.
 

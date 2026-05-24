@@ -1,55 +1,85 @@
 ---
-id: "ai-for-food-science"
+id: ai-for-food-science
 title: "AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
-
 atomic_facts:
-  - id: "af-ai-for-food-science-1"
-    statement: "Nature Food (May 2025) identified seven grand challenges where AI can accelerate food development: ingredient property prediction, formulation optimization, flavor and aroma modeling, texture engineering, nutritional profiling, shelf-life prediction, and consumer preference modeling."
+  - id: af-ai-for-food-science-1
+    statement: >-
+      Nature Food (May 2025) identified seven grand challenges where AI can accelerate food development: ingredient property prediction, formulation optimization, flavor and aroma modeling, texture
+      engineering, nutritional profiling, shelf-life prediction, and consumer preference modeling.
     source_title: "Nature Food (May 2025) -- AI for food: accelerating discovery and development -- doi:10.1038/s41538-025-00441-8"
-    source_url: "https://www.nature.com/articles/s41538-025-00441-8"
-    confidence: "high"
-  - id: "af-ai-for-food-science-2"
-    statement: "AI-driven food quality control using computer vision and deep learning has achieved >98% accuracy for defect detection in fruits, vegetables, and processed foods in industrial settings. Hyperspectral imaging combined with CNNs can detect internal quality defects invisible to the human eye."
-    source_title: "MDPI Foods (October 2025) -- ML for Quality Control in the Food Industry / Journal of Food Protection (2025)"
-    source_url: "https://ift.onlinelibrary.wiley.com/doi/10.1111/1541-4337.70068"
-    confidence: "high"
-
+    source_url: https://www.nature.com/articles/s41538-025-00441-8
+    confidence: high
+  - id: af-ai-for-food-science-2
+    statement: >-
+      AI-driven food quality control using computer vision and deep learning has achieved >98% accuracy for defect detection in fruits, vegetables, and processed foods in industrial settings.
+      Hyperspectral imaging combined with CNNs can detect internal quality defects invisible to the human eye.
+    source_title: MDPI Foods (October 2025) -- ML for Quality Control in the Food Industry / Journal of Food Protection (2025)
+    source_url: https://ift.onlinelibrary.wiley.com/doi/10.1111/1541-4337.70068
+    confidence: high
 primary_sources:
-  - id: "ps-ai-for-food-science-1"
+  - id: ps-ai-for-food-science-1
     title: "AI for food: accelerating and democratizing discovery and development"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "Nature Food"
-    doi: "10.1038/s41538-025-00441-8"
-    url: "https://www.nature.com/articles/s41538-025-00441-8"
-  - id: "ps-ai-for-food-science-2"
+    institution: Nature Food
+    doi: 10.1038/s41538-025-00441-8
+    url: https://www.nature.com/articles/s41538-025-00441-8
+  - id: ps-ai-for-food-science-2
     title: "Artificial intelligence and food flavor: How AI is shaping the future of taste"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "Comprehensive Reviews in Food Science (IFT)"
-    doi: "10.1111/1541-4337.70068"
-    url: "https://ift.onlinelibrary.wiley.com/doi/10.1111/1541-4337.70068"
-
+    institution: Comprehensive Reviews in Food Science (IFT)
+    doi: 10.1111/1541-4337.70068
+    url: https://ift.onlinelibrary.wiley.com/doi/10.1111/1541-4337.70068
 known_gaps:
-  - "Multi-modal integration of taste, smell, texture, and visual data for holistic food quality assessment"
-  - "Explainable AI for food safety decisions that satisfies regulatory requirements"
-
+  - Multi-modal integration of taste, smell, texture, and visual data for holistic food quality assessment
+  - Explainable AI for food safety decisions that satisfies regulatory requirements
 disputed_statements: []
+secondary_sources:
+  - title: "Artificial Intelligence in the Food Industry: A Comprehensive Review of Applications from Farm to Fork"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Journal of Food Engineering (Elsevier)
+    url: https://doi.org/10.1016/j.jfoodeng.2024.112100
+  - title: "Deep Learning for Food Recognition: A Comprehensive Survey of Computer Vision Applications"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE Access
+    url: https://doi.org/10.1109/ACCESS.2024.3415265
+  - title: "AI-Powered Food Safety: From Predictive Microbiology to Smart Supply Chain Management"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Comprehensive Reviews in Food Science & Food Safety (Wiley)
+    url: https://doi.org/10.1111/1541-4337.13345
+  - title: "FAO Report: Artificial Intelligence for Food and Agriculture — Innovation to Transform Food Systems"
+    type: report
+    year: 2024
+    authors:
+      - FAO
+    institution: Food and Agriculture Organization of the UN
+    url: https://www.fao.org/technology/en/
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI is entering the food system at every stage -- from accelerating discovery of new sustainable ingredients and predicting flavor profiles, to automating quality inspection on production lines, to personalizing nutrition recommendations based on individual microbiomes and health data.
 

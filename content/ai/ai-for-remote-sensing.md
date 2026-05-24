@@ -1,50 +1,91 @@
 ---
-id: "ai-for-remote-sensing"
+id: ai-for-remote-sensing
 title: "AI for Remote Sensing: Foundation Models, Satellite Image Analysis, and Earth Observation"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-ai-for-remote-sensing-1"
-    statement: "Nature Machine Intelligence (August 2025) presented a multi-modal remote sensing foundation model — integrating optical, SAR (Synthetic Aperture Radar), and multispectral satellite imagery through progressive pretraining (unimodal → cross-modal alignment → joint fine-tuning) — demonstrating that the unified model outperforms single-modal baselines by 8-12% on land cover classification, change detection, and disaster mapping across global benchmarks, with strong zero-shot transfer to novel geographic regions."
-    source_title: "Nature Machine Intelligence (2025) — Multi-modal remote sensing foundation model — doi:10.1038/s44287-025-00208-z"
-    source_url: "https://www.nature.com/articles/s44287-025-00208-z"
-    confidence: "high"
-  - id: "af-ai-for-remote-sensing-2"
-    statement: "NASA and IBM (2023, with 2025 expansions) released the first open-source geospatial AI foundation model (Prithvi) — a ViT-based model pretrained on Harmonized Landsat Sentinel-2 (HLS) data covering the entire Earth at 30m resolution — enabling researchers to fine-tune for tasks including flood mapping, crop type classification, and wildfire burn scar delineation with just 100-500 labeled examples, democratizing access to state-of-the-art remote sensing AI."
-    source_title: "NASA / IBM (2023-2025) — Prithvi geospatial AI foundation model / IEEE 2025 RS foundation model survey"
-    source_url: "https://ieeexplore.ieee.org/document/11097335"
-    confidence: "high"
+  - id: af-ai-for-remote-sensing-1
+    statement: >-
+      Nature Machine Intelligence (August 2025) presented a multi-modal remote sensing foundation model — integrating optical, SAR (Synthetic Aperture Radar), and multispectral satellite imagery
+      through progressive pretraining (unimodal → cross-modal alignment → joint fine-tuning) — demonstrating that the unified model outperforms single-modal baselines by 8-12% on land cover
+      classification, change detection, and disaster mapping across global benchmarks, with strong zero-shot transfer to novel geographic regions.
+    source_title: Nature Machine Intelligence (2025) — Multi-modal remote sensing foundation model — doi:10.1038/s44287-025-00208-z
+    source_url: https://www.nature.com/articles/s44287-025-00208-z
+    confidence: high
+  - id: af-ai-for-remote-sensing-2
+    statement: >-
+      NASA and IBM (2023, with 2025 expansions) released the first open-source geospatial AI foundation model (Prithvi) — a ViT-based model pretrained on Harmonized Landsat Sentinel-2 (HLS) data
+      covering the entire Earth at 30m resolution — enabling researchers to fine-tune for tasks including flood mapping, crop type classification, and wildfire burn scar delineation with just 100-500
+      labeled examples, democratizing access to state-of-the-art remote sensing AI.
+    source_title: NASA / IBM (2023-2025) — Prithvi geospatial AI foundation model / IEEE 2025 RS foundation model survey
+    source_url: https://ieeexplore.ieee.org/document/11097335
+    confidence: high
 primary_sources:
-  - id: "ps-ai-for-remote-sensing-1"
-    title: "Advancing Earth observation with a multi-modal remote sensing foundation model"
-    type: "academic_paper"
+  - id: ps-ai-for-remote-sensing-1
+    title: Advancing Earth observation with a multi-modal remote sensing foundation model
+    type: academic_paper
     year: 2025
-    institution: "Nature Machine Intelligence"
-    doi: "10.1038/s44287-025-00208-z"
-    url: "https://www.nature.com/articles/s44287-025-00208-z"
-  - id: "ps-ai-for-remote-sensing-2"
+    institution: Nature Machine Intelligence
+    doi: 10.1038/s44287-025-00208-z
+    url: https://www.nature.com/articles/s44287-025-00208-z
+  - id: ps-ai-for-remote-sensing-2
     title: "Foundation Models for Remote Sensing and Earth Observation: A Systematic Survey"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "IEEE Transactions on Geoscience and Remote Sensing"
-    url: "https://ieeexplore.ieee.org/document/11097335"
+    institution: IEEE Transactions on Geoscience and Remote Sensing
+    url: https://ieeexplore.ieee.org/document/11097335
 known_gaps:
-  - "Temporal consistency — AI predictions should remain stable across sequential satellite revisits"
-  - "Fusion of heterogeneous sensors (optical + SAR + LiDAR + hyperspectral) into unified representations"
+  - Temporal consistency — AI predictions should remain stable across sequential satellite revisits
+  - Fusion of heterogeneous sensors (optical + SAR + LiDAR + hyperspectral) into unified representations
 disputed_statements: []
+secondary_sources:
+  - title: "AI in Remote Sensing and Satellite Image Processing: A Comprehensive Review"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Environmental Earth Sciences (Springer)
+    url: https://doi.org/10.1007/s12665-025-12798-w
+  - title: "Advancing Earth Observation: A Survey on AI-Powered Satellite Image Processing"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: European Journal of Remote Sensing (Taylor & Francis)
+    url: https://doi.org/10.1080/22797254.2025.2567921
+  - title: "Deep Learning for Remote Sensing: A Comprehensive Survey of Methods and Applications"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE Geoscience & Remote Sensing Magazine
+    url: https://doi.org/10.1109/MGRS.2024.3385267
+  - title: "Google Earth Engine: Planetary-Scale Geospatial Analysis for Everyone"
+    type: journal_article
+    year: 2017
+    authors:
+      - Gorelick, Noel
+      - Hancher, Matt
+      - Dixon, Mike
+      - Ilyushchenko, Simon
+      - Thau, David
+      - Moore, Rebecca
+    institution: Google
+    url: https://doi.org/10.1016/j.rse.2017.06.031
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 Remote sensing AI transforms satellite pixels into actionable Earth intelligence — monitoring deforestation in real-time, mapping flood extent within hours of disaster, and classifying crops across continents. Foundation models pretrained on petabytes of Earth observation data are democratizing planetary-scale AI, enabling few-shot deployment for any location on Earth.
 

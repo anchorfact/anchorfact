@@ -1,54 +1,85 @@
 ---
-id: "ai-for-humanitarian-aid"
+id: ai-for-humanitarian-aid
 title: "AI for Humanitarian Aid: Crisis Mapping, Damage Assessment, and Disaster Response Optimization"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
-
 atomic_facts:
-  - id: "af-ai-for-humanitarian-aid-1"
-    statement: "Elsevier International Journal of Disaster Risk Reduction (March 2026) published a comprehensive review mapping the AI technology landscape across all four phases of the disaster management cycle -- mitigation, preparedness, response, and recovery. Deep learning for satellite imagery damage assessment and NLP for social media crisis mapping were identified as the most mature AI applications."
-    source_title: "International Journal of Disaster Risk Reduction (Elsevier, 2026) -- doi:10.1016/j.ijdrr.2026.105801"
-    source_url: "https://www.sciencedirect.com/science/article/pii/S0166497225002470"
-    confidence: "high"
-  - id: "af-ai-for-humanitarian-aid-2"
-    statement: "The UN Global Pulse PulseSatellite project with Google Research deployed AI-powered satellite imagery analysis for humanitarian disaster assessment, reducing damage assessment time from weeks to hours. Google's open-source Skai framework for post-disaster building damage assessment achieved 85-92% accuracy across multiple disaster types."
-    source_title: "UN Global Pulse PulseSatellite (2024) / Google Research Skai framework / ReliefWeb"
-    source_url: "https://ieeexplore.ieee.org/document/11297255"
-    confidence: "high"
-
+  - id: af-ai-for-humanitarian-aid-1
+    statement: >-
+      Elsevier International Journal of Disaster Risk Reduction (March 2026) published a comprehensive review mapping the AI technology landscape across all four phases of the disaster management
+      cycle -- mitigation, preparedness, response, and recovery. Deep learning for satellite imagery damage assessment and NLP for social media crisis mapping were identified as the most mature AI
+      applications.
+    source_title: International Journal of Disaster Risk Reduction (Elsevier, 2026) -- doi:10.1016/j.ijdrr.2026.105801
+    source_url: https://www.sciencedirect.com/science/article/pii/S0166497225002470
+    confidence: high
+  - id: af-ai-for-humanitarian-aid-2
+    statement: >-
+      The UN Global Pulse PulseSatellite project with Google Research deployed AI-powered satellite imagery analysis for humanitarian disaster assessment, reducing damage assessment time from weeks to
+      hours. Google's open-source Skai framework for post-disaster building damage assessment achieved 85-92% accuracy across multiple disaster types.
+    source_title: UN Global Pulse PulseSatellite (2024) / Google Research Skai framework / ReliefWeb
+    source_url: https://ieeexplore.ieee.org/document/11297255
+    confidence: high
 primary_sources:
-  - id: "ps-ai-for-humanitarian-aid-1"
+  - id: ps-ai-for-humanitarian-aid-1
     title: "Artificial intelligence in humanitarian aid: A review and future directions"
-    type: "academic_paper"
+    type: academic_paper
     year: 2026
-    institution: "International Journal of Disaster Risk Reduction (Elsevier)"
-    doi: "10.1016/j.ijdrr.2026.105801"
-    url: "https://www.sciencedirect.com/science/article/pii/S0166497225002470"
-  - id: "ps-ai-for-humanitarian-aid-2"
-    title: "AI-Driven Multi-Satellite Data Fusion for Real-Time Disaster Assessment"
-    type: "academic_paper"
+    institution: International Journal of Disaster Risk Reduction (Elsevier)
+    doi: 10.1016/j.ijdrr.2026.105801
+    url: https://www.sciencedirect.com/science/article/pii/S0166497225002470
+  - id: ps-ai-for-humanitarian-aid-2
+    title: AI-Driven Multi-Satellite Data Fusion for Real-Time Disaster Assessment
+    type: academic_paper
     year: 2025
-    institution: "IEEE"
-    url: "https://ieeexplore.ieee.org/document/11297255"
-
+    institution: IEEE
+    url: https://ieeexplore.ieee.org/document/11297255
 known_gaps:
-  - "Anticipatory action -- triggering humanitarian funding before a forecasted disaster strikes based on AI predictions"
-  - "Equitable AI -- ensuring AI-driven aid allocation does not systematically disadvantage marginalized groups"
-
+  - Anticipatory action -- triggering humanitarian funding before a forecasted disaster strikes based on AI predictions
+  - Equitable AI -- ensuring AI-driven aid allocation does not systematically disadvantage marginalized groups
 disputed_statements: []
+secondary_sources:
+  - title: "AI for Humanitarian Action: A Systematic Survey of Disaster Response, Refugee Support, and Food Security"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE Access
+    url: https://doi.org/10.1109/ACCESS.2024.3415265
+  - title: "UN OCHA: Artificial Intelligence in Humanitarian Action — From Predictive Analytics to Response Optimization"
+    type: report
+    year: 2024
+    authors:
+      - UN OCHA
+    institution: United Nations Office for the Coordination of Humanitarian Affairs
+    url: https://centre.humdata.org/ai/
+  - title: Deep Learning for Satellite-Based Damage Assessment in Disaster Response
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Remote Sensing (MDPI)
+    url: https://doi.org/10.3390/rs16112200
+  - title: "World Food Programme: AI-Powered Food Security Analysis and Early Warning Systems"
+    type: report
+    year: 2024
+    authors:
+      - WFP
+    institution: World Food Programme / UN
+    url: https://www.wfp.org/ai
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 When disaster strikes, AI helps humanitarian organizations see the impact, coordinate the response, and deliver aid more efficiently. Satellite imagery AI detects damaged buildings within hours of an earthquake. NLP models scan social media for real-time crisis maps. Reinforcement learning optimizes routing of relief trucks through damaged infrastructure. As climate change intensifies disasters, AI is becoming a critical capability for the humanitarian sector.
 

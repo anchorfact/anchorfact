@@ -1,50 +1,88 @@
 ---
-id: "ai-for-drug-discovery"
+id: ai-for-drug-discovery
 title: "AI for Drug Discovery: AlphaFold, Molecular Generation, and Generative Chemistry"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-ai-for-drug-discovery-1"
-    statement: "AlphaFold3 (Google DeepMind & Isomorphic Labs, Nature 2024, doi:10.1038/s41586-024-07487-w) introduced a substantially updated diffusion-based architecture capable of jointly predicting structures of complexes including proteins, nucleic acids, small molecules, ions, and modified residues — extending structural prediction beyond single proteins to biomolecular interactions critical for drug design."
-    source_title: "Abramson et al., Nature (2024) — AlphaFold3 — doi:10.1038/s41586-024-07487-w"
-    source_url: "https://www.nature.com/articles/s41586-024-07487-w"
-    confidence: "high"
-  - id: "af-ai-for-drug-discovery-2"
-    statement: "A comprehensive 2025 assessment evaluated AlphaFold3 across diverse pharmaceutical applications — including protein-ligand docking, antibody-antigen interface prediction, and covalent inhibitor design — finding that AF3 achieves binding pose accuracy within 2.0Å RMSD for 65% of targets, competitive with specialized docking tools, while operating orders of magnitude faster."
-    source_title: "AF3 Drug Discovery Assessment (2025) / Journal of Chemical Information and Modeling (2025)"
-    source_url: "https://pubs.acs.org/doi/10.1021/acs.jcim.5c00120"
-    confidence: "high"
+  - id: af-ai-for-drug-discovery-1
+    statement: >-
+      AlphaFold3 (Google DeepMind & Isomorphic Labs, Nature 2024, doi:10.1038/s41586-024-07487-w) introduced a substantially updated diffusion-based architecture capable of jointly predicting
+      structures of complexes including proteins, nucleic acids, small molecules, ions, and modified residues — extending structural prediction beyond single proteins to biomolecular interactions
+      critical for drug design.
+    source_title: Abramson et al., Nature (2024) — AlphaFold3 — doi:10.1038/s41586-024-07487-w
+    source_url: https://www.nature.com/articles/s41586-024-07487-w
+    confidence: high
+  - id: af-ai-for-drug-discovery-2
+    statement: >-
+      A comprehensive 2025 assessment evaluated AlphaFold3 across diverse pharmaceutical applications — including protein-ligand docking, antibody-antigen interface prediction, and covalent inhibitor
+      design — finding that AF3 achieves binding pose accuracy within 2.0Å RMSD for 65% of targets, competitive with specialized docking tools, while operating orders of magnitude faster.
+    source_title: AF3 Drug Discovery Assessment (2025) / Journal of Chemical Information and Modeling (2025)
+    source_url: https://pubs.acs.org/doi/10.1021/acs.jcim.5c00120
+    confidence: high
 primary_sources:
-  - id: "ps-ai-for-drug-discovery-1"
-    title: "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
-    type: "academic_paper"
+  - id: ps-ai-for-drug-discovery-1
+    title: Accurate structure prediction of biomolecular interactions with AlphaFold 3
+    type: academic_paper
     year: 2024
-    institution: "Nature / Google DeepMind & Isomorphic Labs"
-    doi: "10.1038/s41586-024-07487-w"
-    url: "https://www.nature.com/articles/s41586-024-07487-w"
-  - id: "ps-ai-for-drug-discovery-2"
+    institution: Nature / Google DeepMind & Isomorphic Labs
+    doi: 10.1038/s41586-024-07487-w
+    url: https://www.nature.com/articles/s41586-024-07487-w
+  - id: ps-ai-for-drug-discovery-2
     title: "AlphaFold3 in Drug Discovery: A Comprehensive Assessment of its Impact on Structure-Based Drug Design"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "Journal of Chemical Information and Modeling / ACS"
-    url: "https://pubs.acs.org/doi/10.1021/acs.jcim.5c00120"
+    institution: Journal of Chemical Information and Modeling / ACS
+    url: https://pubs.acs.org/doi/10.1021/acs.jcim.5c00120
 known_gaps:
-  - "De novo generation of synthesizable drug-like molecules"
-  - "Predicting in vivo efficacy from in silico models"
+  - De novo generation of synthesizable drug-like molecules
+  - Predicting in vivo efficacy from in silico models
 disputed_statements: []
+secondary_sources:
+  - title: "AlphaFold 3: Accurate Structure Prediction of Biomolecular Interactions"
+    type: journal_article
+    year: 2024
+    authors:
+      - Abramson, Josh
+      - Adler, Jonas
+      - Dunger, Jack
+      - et al.
+    institution: Google DeepMind / Nature
+    url: https://www.nature.com/articles/s41586-024-07487-w
+  - title: "AI-Enabled Drug and Molecular Discovery: From Computational Methods to Clinical Translation"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Nature Reviews Chemistry (Springer)
+    url: https://doi.org/10.1007/s44345-025-00037-5
+  - title: "Artificial Intelligence in Drug Design and Discovery: A Comprehensive Review"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: AI Chemistry (Elsevier)
+    url: https://doi.org/10.1016/j.aichem.2025.100048
+  - title: "Machine Learning in Drug Discovery: A Comprehensive Review and a Way Forward"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: WIREs Computational Molecular Science
+    url: https://doi.org/10.1002/wcms.1603
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI is transforming drug discovery — AlphaFold3 (2024) predicts biomolecular complex structures with atomic accuracy, while generative chemistry creates novel drug candidates de novo. The convergence of structural biology AI, molecular dynamics simulations, and generative models is compressing the 10-15 year drug development timeline toward faster, cheaper, and more targeted therapeutics.
 

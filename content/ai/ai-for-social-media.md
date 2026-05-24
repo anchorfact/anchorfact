@@ -1,51 +1,87 @@
 ---
-id: "ai-for-social-media"
+id: ai-for-social-media
 title: "AI for Social Media: Misinformation Detection, Hate Speech Moderation, and Content Safety"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-ai-for-social-media-1"
-    statement: "ACM Computing Surveys (February 2025) published a survey on explainable AI for detecting hate speech and misinformation — analyzing 150+ papers — revealing that while transformer-based models (BERT, RoBERTa, GPT-based) achieve 90-94% F1 on benchmark hate speech datasets, they exhibit systematic biases (higher false positive rates for African American English and minority dialects), and explainable AI techniques (SHAP, LIME, integrated gradients) are essential for auditing and correcting these biases."
+  - id: af-ai-for-social-media-1
+    statement: >-
+      ACM Computing Surveys (February 2025) published a survey on explainable AI for detecting hate speech and misinformation — analyzing 150+ papers — revealing that while transformer-based models
+      (BERT, RoBERTa, GPT-based) achieve 90-94% F1 on benchmark hate speech datasets, they exhibit systematic biases (higher false positive rates for African American English and minority dialects),
+      and explainable AI techniques (SHAP, LIME, integrated gradients) are essential for auditing and correcting these biases.
     source_title: "ACM Computing Surveys (2025) — Decoding Fake News and Hate Speech: A Survey of Explainable AI Techniques — doi:10.1145/3711123"
-    source_url: "https://dl.acm.org/doi/full/10.1145/3711123"
-    confidence: "high"
-  - id: "af-ai-for-social-media-2"
-    statement: "Nature Human Behaviour (December 2025) demonstrated that automated content moderation systems — used by Facebook, YouTube, TikTok to flag prohibited content at billion-post scale — struggle to account for context: sarcasm, reclaimed slurs, counter-speech, and cultural context reduce moderation accuracy by 15-30% compared to laboratory benchmarks, leading the study to call for hybrid human-AI moderation pipelines that leverage AI for triage and humans for contextual judgment."
-    source_title: "Nature Human Behaviour (2025) — Measuring context sensitivity in AI content moderation — doi:10.1038/s41562-025-02363-7"
-    source_url: "https://www.nature.com/articles/s41562-025-02363-7"
-    confidence: "high"
+    source_url: https://dl.acm.org/doi/full/10.1145/3711123
+    confidence: high
+  - id: af-ai-for-social-media-2
+    statement: >-
+      Nature Human Behaviour (December 2025) demonstrated that automated content moderation systems — used by Facebook, YouTube, TikTok to flag prohibited content at billion-post scale — struggle to
+      account for context: sarcasm, reclaimed slurs, counter-speech, and cultural context reduce moderation accuracy by 15-30% compared to laboratory benchmarks, leading the study to call for hybrid
+      human-AI moderation pipelines that leverage AI for triage and humans for contextual judgment.
+    source_title: Nature Human Behaviour (2025) — Measuring context sensitivity in AI content moderation — doi:10.1038/s41562-025-02363-7
+    source_url: https://www.nature.com/articles/s41562-025-02363-7
+    confidence: high
 primary_sources:
-  - id: "ps-ai-for-social-media-1"
+  - id: ps-ai-for-social-media-1
     title: "Decoding Fake News and Hate Speech: A Survey of Explainable AI Techniques for Social Media Moderation"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "ACM Computing Surveys"
-    doi: "10.1145/3711123"
-    url: "https://dl.acm.org/doi/full/10.1145/3711123"
-  - id: "ps-ai-for-social-media-2"
-    title: "Measuring context sensitivity in artificial intelligence-based content moderation systems"
-    type: "academic_paper"
+    institution: ACM Computing Surveys
+    doi: 10.1145/3711123
+    url: https://dl.acm.org/doi/full/10.1145/3711123
+  - id: ps-ai-for-social-media-2
+    title: Measuring context sensitivity in artificial intelligence-based content moderation systems
+    type: academic_paper
     year: 2025
-    institution: "Nature Human Behaviour"
-    doi: "10.1038/s41562-025-02363-7"
-    url: "https://www.nature.com/articles/s41562-025-02363-7"
+    institution: Nature Human Behaviour
+    doi: 10.1038/s41562-025-02363-7
+    url: https://www.nature.com/articles/s41562-025-02363-7
 known_gaps:
-  - "Multimodal misinformation detection across text, image, and video"
-  - "Balancing free expression with content safety across diverse cultural norms"
+  - Multimodal misinformation detection across text, image, and video
+  - Balancing free expression with content safety across diverse cultural norms
 disputed_statements: []
+secondary_sources:
+  - title: "AI in Social Media: A Comprehensive Survey of Content Recommendation, Moderation, and Analytics"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/3635100
+  - title: "Deep Learning for Social Media Analytics: A Systematic Review of NLP and Network Mining Approaches"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE Access
+    url: https://doi.org/10.1109/ACCESS.2024.3415265
+  - title: "Meta AI: How Artificial Intelligence Powers Facebook, Instagram, and WhatsApp — Recommendation, Translation, Moderation"
+    type: report
+    year: 2024
+    authors:
+      - Meta AI
+    institution: Meta
+    url: https://ai.meta.com/
+  - title: A Survey of Influence Maximization and Information Diffusion in Social Networks Using AI
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Social Network Analysis & Mining (Springer)
+    url: https://doi.org/10.1007/s13278-024-01345-2
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 Social media platforms process billions of posts daily — more than any human moderation team could review. AI detects hate speech, misinformation, harassment, and harmful content at scale, but faces fundamental challenges: context understanding, cultural nuance, and bias. The frontier is explainable, fair, and context-aware moderation that protects users without over-censoring legitimate speech.
 

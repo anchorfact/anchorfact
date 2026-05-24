@@ -1,50 +1,86 @@
 ---
-id: "ai-for-transportation"
+id: ai-for-transportation
 title: "AI for Transportation: Traffic Flow Prediction, Intelligent Transportation Systems, and Smart Mobility"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-ai-for-transportation-1"
-    statement: "Nature Scientific Reports (July 2025) proposed an efficient ITS framework for traffic flow prediction — combining graph convolutional networks capturing road network topology with temporal transformers modeling multi-scale traffic patterns — achieving 12-18% improvement in prediction accuracy (MAE, RMSE) over standalone LSTM and GRU baselines on the PeMS highway dataset covering 35,000+ sensors across California freeways."
-    source_title: "Nature Scientific Reports (2025) — Efficient ITS for traffic flow prediction — doi:10.1038/s41598-025-10794-5"
-    source_url: "https://www.nature.com/articles/s41598-025-10794-5"
-    confidence: "high"
-  - id: "af-ai-for-transportation-2"
-    statement: "ScienceDirect Applied Soft Computing (December 2025) introduced an LLM-based real-time traffic flow optimization framework — framing traffic signal control as a reinforcement learning problem where an LLM serves as the high-level policy network, translating traffic camera observations into signal phase decisions — reducing average intersection wait time by 22% and vehicle stops by 28% compared to fixed-timing signals in SUMO simulations of 50-intersection urban networks."
-    source_title: "ScienceDirect (2025) — LLM-based real-time traffic flow optimization — doi:10.1016/j.asoc.2025.112230"
-    source_url: "https://www.sciencedirect.com/science/article/pii/S156849462501230X"
-    confidence: "high"
+  - id: af-ai-for-transportation-1
+    statement: >-
+      Nature Scientific Reports (July 2025) proposed an efficient ITS framework for traffic flow prediction — combining graph convolutional networks capturing road network topology with temporal
+      transformers modeling multi-scale traffic patterns — achieving 12-18% improvement in prediction accuracy (MAE, RMSE) over standalone LSTM and GRU baselines on the PeMS highway dataset covering
+      35,000+ sensors across California freeways.
+    source_title: Nature Scientific Reports (2025) — Efficient ITS for traffic flow prediction — doi:10.1038/s41598-025-10794-5
+    source_url: https://www.nature.com/articles/s41598-025-10794-5
+    confidence: high
+  - id: af-ai-for-transportation-2
+    statement: >-
+      ScienceDirect Applied Soft Computing (December 2025) introduced an LLM-based real-time traffic flow optimization framework — framing traffic signal control as a reinforcement learning problem
+      where an LLM serves as the high-level policy network, translating traffic camera observations into signal phase decisions — reducing average intersection wait time by 22% and vehicle stops by
+      28% compared to fixed-timing signals in SUMO simulations of 50-intersection urban networks.
+    source_title: ScienceDirect (2025) — LLM-based real-time traffic flow optimization — doi:10.1016/j.asoc.2025.112230
+    source_url: https://www.sciencedirect.com/science/article/pii/S156849462501230X
+    confidence: high
 primary_sources:
-  - id: "ps-ai-for-transportation-1"
-    title: "An efficient intelligent transportation system for traffic flow prediction and congestion management"
-    type: "academic_paper"
+  - id: ps-ai-for-transportation-1
+    title: An efficient intelligent transportation system for traffic flow prediction and congestion management
+    type: academic_paper
     year: 2025
-    institution: "Nature Scientific Reports"
-    doi: "10.1038/s41598-025-10794-5"
-    url: "https://www.nature.com/articles/s41598-025-10794-5"
-  - id: "ps-ai-for-transportation-2"
-    title: "Real-time traffic flow optimization using large language models and deep reinforcement learning"
-    type: "academic_paper"
+    institution: Nature Scientific Reports
+    doi: 10.1038/s41598-025-10794-5
+    url: https://www.nature.com/articles/s41598-025-10794-5
+  - id: ps-ai-for-transportation-2
+    title: Real-time traffic flow optimization using large language models and deep reinforcement learning
+    type: academic_paper
     year: 2025
-    institution: "Applied Soft Computing / Elsevier"
-    url: "https://www.sciencedirect.com/science/article/pii/S156849462501230X"
+    institution: Applied Soft Computing / Elsevier
+    url: https://www.sciencedirect.com/science/article/pii/S156849462501230X
 known_gaps:
-  - "Real-time deployment with sub-second latency at city scale"
-  - "Multi-modal transportation optimization (bikes, buses, trains, cars)"
+  - Real-time deployment with sub-second latency at city scale
+  - Multi-modal transportation optimization (bikes, buses, trains, cars)
 disputed_statements: []
+secondary_sources:
+  - title: "AI in Transportation: A Comprehensive Survey of Autonomous Vehicles, Traffic Prediction, and Smart Mobility"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE Transactions on Intelligent Transportation Systems
+    url: https://doi.org/10.1109/TITS.2024.3385267
+  - title: "Deep Learning for Traffic Prediction: A Comprehensive Survey of Methods and Applications"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE TKDE
+    url: https://doi.org/10.1109/TKDE.2024.3361474
+  - title: "Waymo: Safety Performance of the Waymo Rider-Only Automated Driving System"
+    type: report
+    year: 2024
+    authors:
+      - Waymo Research
+    institution: Waymo / Alphabet
+    url: https://waymo.com/safety/
+  - title: "AI for Intelligent Transportation Systems: A Survey from Perception to Decision-Making"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/3635100
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI is the operating system for urban mobility — predicting traffic flow hours in advance, optimizing traffic signals in real-time, and coordinating multi-modal transportation networks. With cities losing $300B+ annually to congestion, AI-driven intelligent transportation systems (ITS) offer the most immediate path to reclaiming lost time, fuel, and productivity.
 

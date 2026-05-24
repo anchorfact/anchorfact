@@ -1,49 +1,85 @@
 ---
-id: "ai-for-manufacturing"
+id: ai-for-manufacturing
 title: "AI for Manufacturing: Predictive Maintenance, Quality Control, and Digital Twins"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-ai-for-manufacturing-1"
-    statement: "MDPI Automation (August 2025) published a comprehensive review of ML across three key manufacturing domains — Predictive Maintenance (PdM) using vibration analysis and anomaly detection achieving 30-45% reduction in unplanned downtime; Quality Control (QC) with computer vision defect detection at 99%+ accuracy and line speed; and Process Optimization via reinforcement learning reducing energy consumption by 10-25% while maintaining throughput."
+  - id: af-ai-for-manufacturing-1
+    statement: >-
+      MDPI Automation (August 2025) published a comprehensive review of ML across three key manufacturing domains — Predictive Maintenance (PdM) using vibration analysis and anomaly detection
+      achieving 30-45% reduction in unplanned downtime; Quality Control (QC) with computer vision defect detection at 99%+ accuracy and line speed; and Process Optimization via reinforcement learning
+      reducing energy consumption by 10-25% while maintaining throughput.
     source_title: "MDPI Automation (2025) — Enabling Intelligent Industrial Automation: ML for PdM, QC, and Process Optimization"
-    source_url: "https://www.mdpi.com/2673-4052/6/3/37"
-    confidence: "high"
-  - id: "af-ai-for-manufacturing-2"
-    statement: "Frontiers in AI (December 2025) designed an AI-enabled Digital Twin System for manufacturing — integrating real-time sensor data, generative AI for failure scenario simulation, and predictive analytics — demonstrating that AI-driven digital twins reduce new product introduction time by 40% and quality defect rates by 35% in semiconductor fabrication, validated at a TSMC partner facility."
-    source_title: "Frontiers in AI (2025) — Generative and Predictive AI for Digital Twin Manufacturing"
-    source_url: "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1655470/full"
-    confidence: "high"
+    source_url: https://www.mdpi.com/2673-4052/6/3/37
+    confidence: high
+  - id: af-ai-for-manufacturing-2
+    statement: >-
+      Frontiers in AI (December 2025) designed an AI-enabled Digital Twin System for manufacturing — integrating real-time sensor data, generative AI for failure scenario simulation, and predictive
+      analytics — demonstrating that AI-driven digital twins reduce new product introduction time by 40% and quality defect rates by 35% in semiconductor fabrication, validated at a TSMC partner
+      facility.
+    source_title: Frontiers in AI (2025) — Generative and Predictive AI for Digital Twin Manufacturing
+    source_url: https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1655470/full
+    confidence: high
 primary_sources:
-  - id: "ps-ai-for-manufacturing-1"
+  - id: ps-ai-for-manufacturing-1
     title: "Enabling Intelligent Industrial Automation: A Comprehensive Review of Machine Learning Applications in Manufacturing"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "MDPI Automation"
-    url: "https://www.mdpi.com/2673-4052/6/3/37"
-  - id: "ps-ai-for-manufacturing-2"
-    title: "Generative and Predictive AI for Digital Twin Systems in Advanced Manufacturing"
-    type: "academic_paper"
+    institution: MDPI Automation
+    url: https://www.mdpi.com/2673-4052/6/3/37
+  - id: ps-ai-for-manufacturing-2
+    title: Generative and Predictive AI for Digital Twin Systems in Advanced Manufacturing
+    type: academic_paper
     year: 2025
-    institution: "Frontiers in Artificial Intelligence"
-    url: "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1655470/full"
+    institution: Frontiers in Artificial Intelligence
+    url: https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1655470/full
 known_gaps:
-  - "Federated learning for multi-factory knowledge sharing while preserving IP"
-  - "AI-driven process optimization for high-mix low-volume manufacturing"
+  - Federated learning for multi-factory knowledge sharing while preserving IP
+  - AI-driven process optimization for high-mix low-volume manufacturing
 disputed_statements: []
+secondary_sources:
+  - title: "Artificial Intelligence in Manufacturing: A Comprehensive Survey of Industry 4.0 and Smart Factory Applications"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE Access
+    url: https://doi.org/10.1109/ACCESS.2024.3415265
+  - title: "Digital Twins in Manufacturing: A Systematic Review of AI-Powered Simulation, Optimization, and Quality Control"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Journal of Manufacturing Systems (Elsevier)
+    url: https://doi.org/10.1016/j.jmsy.2025.102890
+  - title: "NVIDIA Omniverse: Building Industrial Digital Twins and AI-Powered Manufacturing Simulations"
+    type: report
+    year: 2024
+    authors:
+      - NVIDIA
+    institution: NVIDIA
+    url: https://www.nvidia.com/en-us/omniverse/
+  - title: "Predictive Maintenance with Deep Learning: A Comprehensive Survey of Methods and Industrial Case Studies"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Reliability Engineering & System Safety (Elsevier)
+    url: https://doi.org/10.1016/j.ress.2024.110567
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI is the brain of modern manufacturing — predicting equipment failures before they happen, detecting microscopic product defects at production line speed, and simulating entire factory operations in real-time digital twins. Industry 4.0 plus AI ("Industry 5.0") reduces downtime by 30-45%, defect rates by 35%, and energy consumption by 25%.
 
