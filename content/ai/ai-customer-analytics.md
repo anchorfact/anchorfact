@@ -1,49 +1,85 @@
 ---
-id: "ai-customer-analytics"
+id: ai-customer-analytics
 title: "AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-ai-customer-analytics-1"
-    statement: "AI customer analytics (2023-2026): (1) Segmentation -- deep clustering (VAE + k-means, GMM, deep embedded clustering) discovers behavioral segments from transaction, browsing, and engagement data, replacing manual RFM segmentation; (2) Churn prediction -- XGBoost/neural networks with 85-92% AUC predict customers likely to leave in the next 30-60 days. Features: recency/frequency/monetary (RFM), support tickets, product usage, NPS; (3) LTV -- deep survival models predict customer lifetime value and duration."
-    source_title: "Amplitude / Mixpanel / Heap product analytics / Pendo AI / Google Analytics 4 AI / Optimove customer AI"
-    source_url: "https://arxiv.org/search/?query=customer+analytics+churn+prediction+CLV"
-    confidence: "high"
-  - id: "af-ai-customer-analytics-2"
-    statement: "Causal customer analytics (2024-2026): uplift modeling estimates the incremental effect of interventions (discount, email, feature change) on individual customers -- only targeting customers who would respond positively. AI-driven next-best-action: contextual bandits and RL recommend the optimal marketing action per customer in real-time, improving campaign ROI by 20-40% over batch A/B tested campaigns. Customer journey analytics: Markov models + sequence mining analyze multi-touch conversion paths."
-    source_title: "CausalML (Uber/Microsoft, 2024) / Uplift Modeling / Contextual Bandits for Marketing / Optimove CRM Journey AI / Amplitude behavioral analytics"
-    source_url: "https://arxiv.org/search/?query=uplift+modeling+next+best+action"
-    confidence: "high"
+  - id: af-ai-customer-analytics-1
+    statement: >-
+      AI customer analytics (2023-2026): (1) Segmentation -- deep clustering (VAE + k-means, GMM, deep embedded clustering) discovers behavioral segments from transaction, browsing, and engagement
+      data, replacing manual RFM segmentation; (2) Churn prediction -- XGBoost/neural networks with 85-92% AUC predict customers likely to leave in the next 30-60 days. Features:
+      recency/frequency/monetary (RFM), support tickets, product usage, NPS; (3) LTV -- deep survival models predict customer lifetime value and duration.
+    source_title: Amplitude / Mixpanel / Heap product analytics / Pendo AI / Google Analytics 4 AI / Optimove customer AI
+    source_url: https://arxiv.org/search/?query=customer+analytics+churn+prediction+CLV
+    confidence: high
+  - id: af-ai-customer-analytics-2
+    statement: >-
+      Causal customer analytics (2024-2026): uplift modeling estimates the incremental effect of interventions (discount, email, feature change) on individual customers -- only targeting customers who
+      would respond positively. AI-driven next-best-action: contextual bandits and RL recommend the optimal marketing action per customer in real-time, improving campaign ROI by 20-40% over batch A/B
+      tested campaigns. Customer journey analytics: Markov models + sequence mining analyze multi-touch conversion paths.
+    source_title: CausalML (Uber/Microsoft, 2024) / Uplift Modeling / Contextual Bandits for Marketing / Optimove CRM Journey AI / Amplitude behavioral analytics
+    source_url: https://arxiv.org/search/?query=uplift+modeling+next+best+action
+    confidence: high
 primary_sources:
-  - id: "ps-ai-customer-analytics-1"
+  - id: ps-ai-customer-analytics-1
     title: "Machine Learning for Customer Analytics: Churn Prediction, CLV Modeling, and Behavioral Segmentation (2024-2025 Survey)"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "Journal of Marketing Research / KDD / arXiv"
-    url: "https://arxiv.org/search/?query=customer+analytics+churn+prediction+CLV"
-  - id: "ps-ai-customer-analytics-2"
+    institution: Journal of Marketing Research / KDD / arXiv
+    url: https://arxiv.org/search/?query=customer+analytics+churn+prediction+CLV
+  - id: ps-ai-customer-analytics-2
     title: "Causal Inference and Uplift Modeling for Customer Interventions: Next-Best-Action and Incrementality Testing"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "ACM RecSys / NeurIPS / arXiv"
-    url: "https://arxiv.org/search/?query=uplift+modeling+next+best+action"
+    institution: ACM RecSys / NeurIPS / arXiv
+    url: https://arxiv.org/search/?query=uplift+modeling+next+best+action
 known_gaps:
-  - "Real-time customer 360 unifying data across all touchpoints"
-  - "Causal attribution of revenue across marketing channels and touchpoints"
+  - Real-time customer 360 unifying data across all touchpoints
+  - Causal attribution of revenue across marketing channels and touchpoints
 disputed_statements: []
+secondary_sources:
+  - title: "AI and Consumer Behavior: From Predictive to Generative AI — A Comprehensive Analysis"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Journal of Business Research (Elsevier)
+    url: https://doi.org/10.1016/j.jbusres.2024.114624
+  - title: "Machine-Learning Models for Customer-Behavior Analytics: A Comprehensive Review"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: WSP Publishing / Computational Intelligence
+    url: https://doi.org/10.47297/taposatWSP2633-456905.20250606
+  - title: "AI-Driven Customer Segmentation: A Systematic Literature Review"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: GAP Interdisciplinarities
+    url: https://doi.org/10.5281/zenodo.12665387
+  - title: Customer Profiling, Segmentation, and Sales Prediction Using AI in CRM
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Neural Computing & Applications (Springer)
+    url: https://doi.org/10.1007/s00521-023-09339-6
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI customer analytics predicts who will churn, segments by behavior, and calculates lifetime value -- all in real-time. From Amplitude to Optimove, AI transforms raw event streams into actionable customer intelligence that drives retention, upsell, and personalization.
 

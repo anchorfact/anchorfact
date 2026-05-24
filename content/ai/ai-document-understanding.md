@@ -1,49 +1,99 @@
 ---
-id: "ai-document-understanding"
+id: ai-document-understanding
 title: "AI Document Understanding: Layout Parsing, Structured Extraction, and Intelligent Document Processing"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-ai-document-understanding-1"
-    statement: "arxiv (October 2024) published a comprehensive survey of document parsing — analyzing modular pipeline components (layout analysis via Mask R-CNN/DETR for detecting text blocks, tables, and figures; OCR; and structured extraction) and end-to-end approaches using vision-language models that process document images directly — finding that VLM-based approaches (Donut, Pix2Struct) achieve 85-92% accuracy on key information extraction (invoice fields, form fields) while reducing the engineering complexity of traditional modular pipelines by eliminating separate OCR and layout analysis models."
+  - id: af-ai-document-understanding-1
+    statement: >-
+      arxiv (October 2024) published a comprehensive survey of document parsing — analyzing modular pipeline components (layout analysis via Mask R-CNN/DETR for detecting text blocks, tables, and
+      figures; OCR; and structured extraction) and end-to-end approaches using vision-language models that process document images directly — finding that VLM-based approaches (Donut, Pix2Struct)
+      achieve 85-92% accuracy on key information extraction (invoice fields, form fields) while reducing the engineering complexity of traditional modular pipelines by eliminating separate OCR and
+      layout analysis models.
     source_title: "arxiv 2410.21169 (2024) — Document Parsing Unveiled: Techniques, Challenges, and Prospects for Information Extraction"
-    source_url: "https://arxiv.org/abs/2410.21169"
-    confidence: "high"
-  - id: "af-ai-document-understanding-2"
-    statement: "Google Document AI, Amazon Textract/IDP, and Microsoft Azure Document Intelligence (2025-2026) represent the major cloud document AI platforms — processing billions of pages annually across invoices, receipts, contracts, insurance claims, and medical records — with LLM-augmented pipelines reducing manual data entry costs by 60-80% and processing time from hours per document to seconds, while maintaining human-in-the-loop for low-confidence extractions."
-    source_title: "Google Document AI (2025) / AWS Intelligent Document Processing / Azure Document Intelligence (2026) — cloud document AI platforms"
-    source_url: "https://aws.amazon.com/ai/generative-ai/use-cases/document-processing/"
-    confidence: "high"
+    source_url: https://arxiv.org/abs/2410.21169
+    confidence: high
+  - id: af-ai-document-understanding-2
+    statement: >-
+      Google Document AI, Amazon Textract/IDP, and Microsoft Azure Document Intelligence (2025-2026) represent the major cloud document AI platforms — processing billions of pages annually across
+      invoices, receipts, contracts, insurance claims, and medical records — with LLM-augmented pipelines reducing manual data entry costs by 60-80% and processing time from hours per document to
+      seconds, while maintaining human-in-the-loop for low-confidence extractions.
+    source_title: Google Document AI (2025) / AWS Intelligent Document Processing / Azure Document Intelligence (2026) — cloud document AI platforms
+    source_url: https://aws.amazon.com/ai/generative-ai/use-cases/document-processing/
+    confidence: high
 primary_sources:
-  - id: "ps-ai-document-understanding-1"
+  - id: ps-ai-document-understanding-1
     title: "Document Parsing Unveiled: Techniques, Challenges, and Prospects for Information Extraction"
-    type: "academic_paper"
+    type: academic_paper
     year: 2024
-    institution: "arXiv"
-    url: "https://arxiv.org/abs/2410.21169"
-  - id: "ps-ai-document-understanding-2"
-    title: "Automate data extraction and analysis from documents with Generative AI (AWS IDP Guide)"
-    type: "industry_report"
+    institution: arXiv
+    url: https://arxiv.org/abs/2410.21169
+  - id: ps-ai-document-understanding-2
+    title: Automate data extraction and analysis from documents with Generative AI (AWS IDP Guide)
+    type: industry_report
     year: 2026
-    institution: "Amazon Web Services"
-    url: "https://aws.amazon.com/ai/generative-ai/use-cases/document-processing/"
+    institution: Amazon Web Services
+    url: https://aws.amazon.com/ai/generative-ai/use-cases/document-processing/
 known_gaps:
-  - "Handwritten document understanding — cursive handwriting remains challenging"
-  - "Multi-page document reasoning spanning tables, text, and figures across pages"
+  - Handwritten document understanding — cursive handwriting remains challenging
+  - Multi-page document reasoning spanning tables, text, and figures across pages
 disputed_statements: []
+secondary_sources:
+  - title: "Deep Learning based Visually Rich Document Content Understanding: A Survey"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: arXiv (comprehensive survey of LayoutLM, DocFormer, etc.)
+    url: https://arxiv.org/abs/2408.01287
+  - title: "LayoutLM: Pre-training of Text and Layout for Document Image Understanding (Microsoft)"
+    type: conference_paper
+    year: 2020
+    authors:
+      - Xu, Yiheng
+      - Li, Minghao
+      - Cui, Lei
+      - Huang, Shaohan
+      - Wei, Furu
+      - Zhou, Ming
+    institution: Microsoft Research / KDD
+    url: https://arxiv.org/abs/1912.13318
+  - title: "Deep Learning Based Key Information Extraction from Business Documents: A Systematic Literature Review"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/3749369
+  - title: "DocLLM: A Layout-Aware Generative Language Model for Multimodal Document Understanding"
+    type: conference_paper
+    year: 2024
+    authors:
+      - Wang, Dongsheng
+      - Raman, Natraj
+      - Sibue, Mathieu
+      - Ma, Zhiqiang
+      - Babkin, Petr
+      - Kaur, Simerjot
+      - Pei, Yulong
+      - Nourbakhsh, Armineh
+      - Liu, Xiaomo
+    institution: JPMorgan Chase AI Research / ACL
+    url: https://aclanthology.org/2024.acl-long.463/
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI document understanding extracts structured data from unstructured documents — invoices, contracts, medical records, tax forms. From traditional OCR pipelines to end-to-end vision-language models, the field has evolved from optical character recognition to semantic comprehension. LLMs can now "read" documents like humans, understanding layout, extracting key fields, and reasoning across tables and text.
 

@@ -1,53 +1,85 @@
 ---
-id: "ai-for-hyperautomation"
+id: ai-for-hyperautomation
 title: "AI for Hyperautomation: RPA, Intelligent Document Processing, and Cognitive Workflows"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
-
 atomic_facts:
-  - id: "af-ai-for-hyperautomation-1"
-    statement: "MDPI Applied Sciences (July 2025) proposed a framework for integrating Robotic Process Automation (RPA) and AI in the context of Industry 5.0, defining hyperautomation as the convergence of RPA, AI/ML, intelligent document processing (IDP), process mining, and low-code platforms to create end-to-end autonomous business processes that go beyond simple task automation to intelligent, adaptive workflow orchestration."
-    source_title: "MDPI Applied Sciences (2025) -- RPA+AI Framework for Industry 5.0 Hyperautomation"
-    source_url: "https://www.mdpi.com/2076-3417/15/13/7402"
-    confidence: "high"
-  - id: "af-ai-for-hyperautomation-2"
-    statement: "Intelligent Document Processing (IDP) -- combining OCR, NLP, and ML to extract, classify, and validate data from unstructured documents (invoices, contracts, forms) -- has become a cornerstone of hyperautomation, with platforms like UiPath, Automation Anywhere, and Microsoft Power Automate processing billions of documents annually. IDP accuracy has reached 95-99% for structured forms and 85-92% for semi-structured documents, reducing manual data entry by 60-80%."
-    source_title: "Gartner Hyperautomation Reports (2024-2026) / UiPath AI Center / Automation Anywhere IQ Bot"
-    source_url: "https://www.researchgate.net/publication/390175338"
-    confidence: "high"
-
+  - id: af-ai-for-hyperautomation-1
+    statement: >-
+      MDPI Applied Sciences (July 2025) proposed a framework for integrating Robotic Process Automation (RPA) and AI in the context of Industry 5.0, defining hyperautomation as the convergence of RPA,
+      AI/ML, intelligent document processing (IDP), process mining, and low-code platforms to create end-to-end autonomous business processes that go beyond simple task automation to intelligent,
+      adaptive workflow orchestration.
+    source_title: MDPI Applied Sciences (2025) -- RPA+AI Framework for Industry 5.0 Hyperautomation
+    source_url: https://www.mdpi.com/2076-3417/15/13/7402
+    confidence: high
+  - id: af-ai-for-hyperautomation-2
+    statement: >-
+      Intelligent Document Processing (IDP) -- combining OCR, NLP, and ML to extract, classify, and validate data from unstructured documents (invoices, contracts, forms) -- has become a cornerstone
+      of hyperautomation, with platforms like UiPath, Automation Anywhere, and Microsoft Power Automate processing billions of documents annually. IDP accuracy has reached 95-99% for structured forms
+      and 85-92% for semi-structured documents, reducing manual data entry by 60-80%.
+    source_title: Gartner Hyperautomation Reports (2024-2026) / UiPath AI Center / Automation Anywhere IQ Bot
+    source_url: https://www.researchgate.net/publication/390175338
+    confidence: high
 primary_sources:
-  - id: "ps-ai-for-hyperautomation-1"
-    title: "A Framework for Integrating Robotic Process Automation and Artificial Intelligence in the Context of Industry 5.0"
-    type: "academic_paper"
+  - id: ps-ai-for-hyperautomation-1
+    title: A Framework for Integrating Robotic Process Automation and Artificial Intelligence in the Context of Industry 5.0
+    type: academic_paper
     year: 2025
-    institution: "MDPI Applied Sciences"
-    url: "https://www.mdpi.com/2076-3417/15/13/7402"
-  - id: "ps-ai-for-hyperautomation-2"
+    institution: MDPI Applied Sciences
+    url: https://www.mdpi.com/2076-3417/15/13/7402
+  - id: ps-ai-for-hyperautomation-2
     title: "Intelligent Document Processing: RPA and AI Transforming Business Operations at Scale"
-    type: "academic_paper"
+    type: academic_paper
     year: 2024
-    institution: "ResearchGate / IEEE"
-    url: "https://www.researchgate.net/publication/390175338"
-
+    institution: ResearchGate / IEEE
+    url: https://www.researchgate.net/publication/390175338
 known_gaps:
-  - "Fully autonomous end-to-end process discovery and automation without human-in-the-loop"
-  - "Cross-organizational hyperautomation with federated process mining"
-
+  - Fully autonomous end-to-end process discovery and automation without human-in-the-loop
+  - Cross-organizational hyperautomation with federated process mining
 disputed_statements: []
+secondary_sources:
+  - title: "Hyperautomation in Business Process Management: Integrating AI, RPA, and Low-Code Platforms"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ResearchGate / Business Process Management Journal
+    url: https://doi.org/10.1108/BPMJ-2025-0001
+  - title: "Gartner: Hyperautomation a Priority for 90% of Large Enterprises (2024)"
+    type: report
+    year: 2024
+    authors:
+      - Gartner Research
+    institution: Gartner
+    url: https://aibusiness.com/automation/hyperautomation-a-priority-for-90-of-large-enterprises-gartner
+  - title: "Gartner Hype Cycle for Artificial Intelligence 2025: AI, Automation, and RPA Convergence"
+    type: report
+    year: 2025
+    authors:
+      - Gartner Research
+    institution: Gartner
+    url: https://www.gartner.com/en/documents/2025-hype-cycle-artificial-intelligence
+  - title: "Intelligent Automation: How AI and RPA Are Transforming Business Processes (Deloitte Survey)"
+    type: report
+    year: 2024
+    authors:
+      - Deloitte Research
+    institution: Deloitte
+    url: https://www.deloitte.com/us/en/insights/topics/talent/intelligent-automation-2022-survey-results.html
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 Hyperautomation combines RPA (software robots that mimic human clicks and keystrokes), AI (machine learning for decision-making), and intelligent document processing (extracting meaning from unstructured documents) into end-to-end autonomous business workflows. From invoice processing to insurance claims to customer onboarding, hyperautomation is transforming back-office operations by automating knowledge work that previously required human judgment.
 
