@@ -1,49 +1,49 @@
 ---
-id:"marketing-fundamentals"
-title:"Marketing: Strategy, Consumer Behavior, and Digital Channels"
-schema_type:"Article"
-category:"business"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-24"
-created_date:"2026-05-24"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
-conflict_of_interest:"none_declared"
-is_live_document:false
-data_period:"static"
+id: "marketing-fundamentals"
+title: "Marketing: Strategy, Consumer Behavior, and Digital Channels"
+schema_type: "Article"
+category: "business"
+language: "en"
+confidence: "high"
+last_verified: "2026-05-24"
+created_date: "2026-05-24"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
-  - id:"af-marketing-fundamentals-1"
-    statement:"The 4Ps marketing mix (Product, Price, Place, Promotion), codified by McCarthy in 1960 and popularized by Philip Kotler, remains the foundational marketing framework taught globally."
-    source_title:"Kotler & Keller, Marketing Management (2015)"
-    confidence:"high"
-  - id:"af-marketing-fundamentals-2"
-    statement:"Digital advertising surpassed traditional advertising in global spending in 2019, reaching $680 billion in 2024, with Google and Meta controlling ~40% of the global digital ad market."
-    source_title:"GroupM / eMarketer (2024)"
-    confidence:"high"
+  - id: "af-marketing-fundamentals-1"
+    statement: "The 4Ps marketing mix (Product, Price, Place, Promotion), codified by McCarthy in 1960 and popularized by Philip Kotler, remains the foundational marketing framework taught globally."
+    source_title: "Kotler & Keller, Marketing Management (2015)"
+    confidence: "high"
+  - id: "af-marketing-fundamentals-2"
+    statement: "Digital advertising surpassed traditional advertising in global spending in 2019, reaching $680 billion in 2024, with Google and Meta controlling ~40% of the global digital ad market."
+    source_title: "GroupM / eMarketer (2024)"
+    confidence: "high"
 
-completeness:0.9
+completeness: 0.9
 
 primary_sources:
-  - title:"Marketing Management, 15th Global Edition"
-    type:"textbook"
-    year:2015
-    url:"https://www.pearson.com/en-us/subject-catalog/p/marketing-management/P200000005852"
-    institution:"Pearson"
-  - title:"Influence: The Psychology of Persuasion (Cialdini)"
-    type:"textbook"
-    year:2006
-    url:"https://www.harpercollins.com/products/influence-robert-b-cialdini"
-    institution:"Harper Business"
+  - title: "Marketing Management, 15th Global Edition"
+    type: "textbook"
+    year: 2015
+    url: "https://www.pearson.com/en-us/subject-catalog/p/marketing-management/P200000005852"
+    institution: "Pearson"
+  - title: "Influence: The Psychology of Persuasion (Cialdini)"
+    type: "textbook"
+    year: 2006
+    url: "https://www.harpercollins.com/products/influence-robert-b-cialdini"
+    institution: "Harper Business"
 
 known_gaps:
   - "AI-driven personalization"
   - "Privacy regulation impact on targeted advertising"
 
 disputed_statements:
-  - statement:"No major disputed statements identified"
+  - statement: "No major disputed statements identified"
 
 ---
 

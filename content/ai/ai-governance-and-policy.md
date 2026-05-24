@@ -1,49 +1,49 @@
 ---
-id:"ai-governance-and-policy"
-title:"AI Governance: Risk Frameworks, Audits, and International Cooperation"
-schema_type:"TechArticle"
-category:"ai"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-24"
-created_date:"2026-05-24"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
-conflict_of_interest:"none_declared"
-is_live_document:false
-data_period:"static"
+id: "ai-governance-and-policy"
+title: "AI Governance: Risk Frameworks, Audits, and International Cooperation"
+schema_type: "TechArticle"
+category: "ai"
+language: "en"
+confidence: "high"
+last_verified: "2026-05-24"
+created_date: "2026-05-24"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
-  - id:"af-ai-governance-and-policy-1"
-    statement:"The NIST AI Risk Management Framework (AI RMF 1.0, 2023) provides a voluntary taxonomy for managing AI risks across four functions: Govern, Map, Measure, Manage. It has been adopted by the US government and referenced in the White House Executive Order on AI."
-    source_title:"NIST AI RMF 1.0 (2023)"
-    confidence:"high"
-  - id:"af-ai-governance-and-policy-2"
-    statement:"The Bletchley Declaration (November 2023), signed by 28 countries including US, China, and EU, established the first international consensus on frontier AI safety — agreeing to collaborate on risk assessment and convening regular AI Safety Summits (Seoul 2024, Paris 2025)."
-    source_title:"UK Government, Bletchley Declaration (2023)"
-    confidence:"high"
+  - id: "af-ai-governance-and-policy-1"
+    statement: "The NIST AI Risk Management Framework (AI RMF 1.0, 2023) provides a voluntary taxonomy for managing AI risks across four functions: Govern, Map, Measure, Manage. It has been adopted by the US government and referenced in the White House Executive Order on AI."
+    source_title: "NIST AI RMF 1.0 (2023)"
+    confidence: "high"
+  - id: "af-ai-governance-and-policy-2"
+    statement: "The Bletchley Declaration (November 2023), signed by 28 countries including US, China, and EU, established the first international consensus on frontier AI safety — agreeing to collaborate on risk assessment and convening regular AI Safety Summits (Seoul 2024, Paris 2025)."
+    source_title: "UK Government, Bletchley Declaration (2023)"
+    confidence: "high"
 
-completeness:0.9
+completeness: 0.9
 
 primary_sources:
-  - title:"NIST AI Risk Management Framework 1.0"
-    type:"standard"
-    year:2023
-    url:"https://www.nist.gov/itl/ai-risk-management-framework"
-    institution:"NIST"
-  - title:"The Bletchley Declaration by Countries Attending the AI Safety Summit"
-    type:"official_report"
-    year:2023
-    url:"https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration"
-    institution:"UK Government"
+  - title: "NIST AI Risk Management Framework 1.0"
+    type: "standard"
+    year: 2023
+    url: "https://www.nist.gov/itl/ai-risk-management-framework"
+    institution: "NIST"
+  - title: "The Bletchley Declaration by Countries Attending the AI Safety Summit"
+    type: "official_report"
+    year: 2023
+    url: "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration"
+    institution: "UK Government"
 
 known_gaps:
   - "Liability frameworks for autonomous AI decisions"
   - "AI safety research funding mechanisms"
 
 disputed_statements:
-  - statement:"No major disputed statements identified"
+  - statement: "No major disputed statements identified"
 
 ---
 

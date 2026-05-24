@@ -3539,5 +3539,5 @@ if __name__ == "__main__":
 - Owlcat Games: GDC 2026 — Managing 30,000+ Narrative Variables
 - Inkle Studios: ink 脚本语言官方文档 (https://github.com/inkle/ink)
 - Yarn Spinner: 官方文档 (https://docs.yarnspinner.dev/)
-- articy:draft X: 官方开发者文档
+- articy: draft X: 官方开发者文档
 - Twine: Harlowe / SugarCube 格式规范

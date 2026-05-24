@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 /**
  * AnchorFact Markdown → JSON-LD Compiler (POC)
- * Zero dependencies. Reads Markdown with YAML frontmatter, outputs 6 formats.
+ * Reads Markdown with YAML frontmatter, outputs 6 formats.
  */
 
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, statSync, existsSync } from 'fs';
 import { join, dirname, basename, extname } from 'path';
+import { load } from 'js-yaml';
 
-// ---- YAML Frontmatter Parser (zero-dep) ----
+// ---- YAML Frontmatter Parser ----
 
 function splitFrontmatter(mdContent) {
   const lines = mdContent.split('\n');
@@ -19,102 +20,13 @@ function splitFrontmatter(mdContent) {
   const yamlBlock = lines.slice(1, endIndex + 1).join('\n');
   const body = lines.slice(endIndex + 2).join('\n');
 
-  return { frontmatter: parseYamlSubset(yamlBlock), body };
-}
-
-function parseYamlSubset(yaml) {
-  const result = {};
-  const lines = yaml.split('\n');
-  let currentKey = null;
-  let currentArray = null;
-  let currentNested = null;
-  let indentLevel = 0;
-
-  for (const line of lines) {
-    if (line.trim() === '' || line.trim().startsWith('#')) continue;
-
-    const stripped = line.trimStart();
-    const indent = line.length - stripped.length;
-
-    // Nested object under current key
-    if (indent > indentLevel && currentKey) {
-      const nestedMatch = stripped.match(/^(\w[\w_]*):\s*(.*)/);
-      if (nestedMatch) {
-        if (!currentNested) {
-          currentNested = {};
-          if (currentArray) {
-            currentArray[currentArray.length - 1] = currentNested;
-          } else {
-            result[currentKey] = currentNested;
-          }
-        }
-        const v = parseValue(nestedMatch[2]);
-        if (v !== '' || nestedMatch[2].trim() === '') {
-          currentNested[nestedMatch[1]] = v;
-        } else {
-          // Start of a list in nested
-          currentNested[nestedMatch[1]] = [];
-          currentArray = currentNested[nestedMatch[1]];
-          currentKey = nestedMatch[1];
-          currentNested = null;
-        }
-        continue;
-      }
-      // List item in nested
-      if (currentArray && stripped.startsWith('- ')) {
-        currentArray.push(parseValue(stripped.slice(2)));
-        continue;
-      }
-    }
-
-    // Reset nesting context
-    if (indent === 0 || indent <= indentLevel) {
-      currentNested = null;
-      currentArray = null;
-      currentKey = null;
-      indentLevel = indent;
-    }
-
-    // Top-level key: value
-    const kvMatch = stripped.match(/^(\w[\w_]*):\s*(.*)/);
-    if (kvMatch) {
-      currentKey = kvMatch[1];
-      const val = parseValue(kvMatch[2]);
-      if (val !== '' || kvMatch[2].trim() === '') {
-        result[currentKey] = val;
-        currentKey = null;
-      } else {
-        // This key starts a list
-        result[currentKey] = [];
-        currentArray = result[currentKey];
-      }
-      continue;
-    }
-
-    // Top-level list item
-    const listMatch = stripped.match(/^-\s+(.*)/);
-    if (listMatch && currentArray) {
-      currentArray.push(parseValue(listMatch[1]));
-      continue;
-    }
+  try {
+    const fm = load(yamlBlock) || {};
+    return { frontmatter: fm, body };
+  } catch (e) {
+    console.warn(`⚠ YAML parse error: ${e.message}`);
+    return { frontmatter: {}, body: mdContent };
   }
-
-  return result;
-}
-
-function parseValue(raw) {
-  raw = raw.trim();
-  if (raw === 'true') return true;
-  if (raw === 'false') return false;
-  if (raw === '[]') return [];
-  if (raw === '{}') return {};
-  if (/^\d+$/.test(raw)) return parseInt(raw);
-  if (/^\d+\.\d+$/.test(raw)) return parseFloat(raw);
-  // Remove quotes
-  if ((raw.startsWith('"') && raw.endsWith('"')) || (raw.startsWith("'") && raw.endsWith("'"))) {
-    return raw.slice(1, -1);
-  }
-  return raw || '';
 }
 
 // ---- Compilers ----

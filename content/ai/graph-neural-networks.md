@@ -1,49 +1,49 @@
 ---
-id:"graph-neural-networks"
-title:"Graph Neural Networks: Message Passing and Applications"
-schema_type:"TechArticle"
-category:"ai"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-24"
-created_date:"2026-05-24"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
-conflict_of_interest:"none_declared"
-is_live_document:false
-data_period:"static"
+id: "graph-neural-networks"
+title: "Graph Neural Networks: Message Passing and Applications"
+schema_type: "TechArticle"
+category: "ai"
+language: "en"
+confidence: "high"
+last_verified: "2026-05-24"
+created_date: "2026-05-24"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
-  - id:"af-graph-neural-networks-1"
-    statement:"Graph Neural Networks (GNNs) learn representations of nodes, edges, or entire graphs through iterative message passing: each node aggregates features from its neighbors, transforms them via a neural network, and updates its own representation."
-    source_title:"Kipf & Welling, ICLR (2017) / Hamilton et al., NeurIPS (2017)"
-    confidence:"high"
-  - id:"af-graph-neural-networks-2"
-    statement:"GNNs achieve state-of-the-art on molecular property prediction (QM9, OGB benchmarks), recommendation systems (Pinterest PinSage, deployed at billion-node scale), and knowledge graph reasoning — domains where data is inherently graph-structured."
-    source_title:"OGB (Open Graph Benchmark) / PinSage Paper (2018)"
-    confidence:"high"
+  - id: "af-graph-neural-networks-1"
+    statement: "Graph Neural Networks (GNNs) learn representations of nodes, edges, or entire graphs through iterative message passing: each node aggregates features from its neighbors, transforms them via a neural network, and updates its own representation."
+    source_title: "Kipf & Welling, ICLR (2017) / Hamilton et al., NeurIPS (2017)"
+    confidence: "high"
+  - id: "af-graph-neural-networks-2"
+    statement: "GNNs achieve state-of-the-art on molecular property prediction (QM9, OGB benchmarks), recommendation systems (Pinterest PinSage, deployed at billion-node scale), and knowledge graph reasoning — domains where data is inherently graph-structured."
+    source_title: "OGB (Open Graph Benchmark) / PinSage Paper (2018)"
+    confidence: "high"
 
-completeness:0.9
+completeness: 0.9
 
 primary_sources:
-  - title:"Semi-Supervised Classification with Graph Convolutional Networks (GCN)"
-    type:"academic_paper"
-    year:2017
-    url:"https://arxiv.org/abs/1609.02907"
-    institution:"ICLR"
-  - title:"Graph Representation Learning (Hamilton)"
-    type:"textbook"
-    year:2020
-    url:"https://www.cs.mcgill.ca/~wlh/grl_book/"
-    institution:"Morgan & Claypool"
+  - title: "Semi-Supervised Classification with Graph Convolutional Networks (GCN)"
+    type: "academic_paper"
+    year: 2017
+    url: "https://arxiv.org/abs/1609.02907"
+    institution: "ICLR"
+  - title: "Graph Representation Learning (Hamilton)"
+    type: "textbook"
+    year: 2020
+    url: "https://www.cs.mcgill.ca/~wlh/grl_book/"
+    institution: "Morgan & Claypool"
 
 known_gaps:
   - "Scalability to billion-node graphs"
   - "Dynamic/temporal graph learning"
 
 disputed_statements:
-  - statement:"No major disputed statements identified"
+  - statement: "No major disputed statements identified"
 
 ---
 

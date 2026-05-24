@@ -1,49 +1,49 @@
 ---
-id:"cybersecurity-fundamentals"
-title:"Cybersecurity: Threats, Cryptography, and Defense"
-schema_type:"Article"
-category:"computer-science"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-24"
-created_date:"2026-05-24"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
-conflict_of_interest:"none_declared"
-is_live_document:false
-data_period:"static"
+id: "cybersecurity-fundamentals"
+title: "Cybersecurity: Threats, Cryptography, and Defense"
+schema_type: "Article"
+category: "computer-science"
+language: "en"
+confidence: "high"
+last_verified: "2026-05-24"
+created_date: "2026-05-24"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
-  - id:"af-cybersecurity-fundamentals-1"
-    statement:"RSA encryption (Rivest-Shamir-Adleman, 1977) uses the difficulty of factoring large semiprimes — a 2048-bit RSA key requires factoring a 617-digit number. Shor's quantum algorithm would break RSA, motivating post-quantum cryptography standards (NIST, 2024)."
-    source_title:"Rivest, Shamir, Adleman (1977) / NIST PQC (2024)"
-    confidence:"high"
-  - id:"af-cybersecurity-fundamentals-2"
-    statement:"Zero Trust architecture — \"never trust, always verify\" — replaces perimeter-based security with continuous authentication of every access request. NIST SP 800-207 (2020) defines the Zero Trust framework adopted by the US federal government."
-    source_title:"NIST SP 800-207 (2020)"
-    confidence:"high"
+  - id: "af-cybersecurity-fundamentals-1"
+    statement: "RSA encryption (Rivest-Shamir-Adleman, 1977) uses the difficulty of factoring large semiprimes — a 2048-bit RSA key requires factoring a 617-digit number. Shor's quantum algorithm would break RSA, motivating post-quantum cryptography standards (NIST, 2024)."
+    source_title: "Rivest, Shamir, Adleman (1977) / NIST PQC (2024)"
+    confidence: "high"
+  - id: "af-cybersecurity-fundamentals-2"
+    statement: "Zero Trust architecture — \"never trust, always verify\" — replaces perimeter-based security with continuous authentication of every access request. NIST SP 800-207 (2020) defines the Zero Trust framework adopted by the US federal government."
+    source_title: "NIST SP 800-207 (2020)"
+    confidence: "high"
 
-completeness:0.9
+completeness: 0.9
 
 primary_sources:
-  - title:"Cryptography and Network Security: Principles and Practice, 8th Edition"
-    type:"textbook"
-    year:2020
-    url:"https://www.pearson.com/en-us/subject-catalog/p/cryptography-and-network-security/P200000003372"
-    institution:"Pearson"
-  - title:"NIST SP 800-207: Zero Trust Architecture"
-    type:"standard"
-    year:2020
-    url:"https://csrc.nist.gov/publications/detail/sp/800-207/final"
-    institution:"NIST"
+  - title: "Cryptography and Network Security: Principles and Practice, 8th Edition"
+    type: "textbook"
+    year: 2020
+    url: "https://www.pearson.com/en-us/subject-catalog/p/cryptography-and-network-security/P200000003372"
+    institution: "Pearson"
+  - title: "NIST SP 800-207: Zero Trust Architecture"
+    type: "standard"
+    year: 2020
+    url: "https://csrc.nist.gov/publications/detail/sp/800-207/final"
+    institution: "NIST"
 
 known_gaps:
   - "Post-quantum cryptographic algorithms"
   - "Supply chain attacks (SolarWinds-type)"
 
 disputed_statements:
-  - statement:"No major disputed statements identified"
+  - statement: "No major disputed statements identified"
 
 ---
 

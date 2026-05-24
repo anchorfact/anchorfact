@@ -275,7 +275,7 @@ Tables:
 
 - Owlcat Games: GDC 2026 — Managing 30,000+ Narrative Variables
 - StoryFlow Editor (Steam, 2026)
-- articy:draft X 官方文档
+- articy: draft X 官方文档
 - 传统叙事设计理论：三幕结构、英雄之旅、角色弧线
 
 ---

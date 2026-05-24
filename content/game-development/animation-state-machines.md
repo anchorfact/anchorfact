@@ -294,9 +294,9 @@ public class PlayableAnimation : MonoBehaviour
 
 ```cpp
 // Unreal Animation Blueprint 中的事件图表逻辑
-void UMyAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
+void UMyAnimInstance: :NativeUpdateAnimation(float DeltaSeconds)
 {
-    Super::NativeUpdateAnimation(DeltaSeconds);
+    Super: :NativeUpdateAnimation(DeltaSeconds);
     
     // 获取角色引用
     if (AActor* Owner = TryGetPawnOwner())
@@ -521,9 +521,9 @@ public class RootMotionController : MonoBehaviour
 
 ```cpp
 // Unreal Motion Warping 示例
-void UMyCharacterAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
+void UMyCharacterAnimInstance: :NativeUpdateAnimation(float DeltaSeconds)
 {
-    Super::NativeUpdateAnimation(DeltaSeconds);
+    Super: :NativeUpdateAnimation(DeltaSeconds);
     
     if (MotionWarpingComponent)
     {

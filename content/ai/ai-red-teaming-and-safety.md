@@ -1,49 +1,49 @@
 ---
-id:"ai-red-teaming-and-safety"
-title:"AI Red Teaming: Security Testing for Language Models"
-schema_type:"TechArticle"
-category:"ai"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-24"
-created_date:"2026-05-24"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
-conflict_of_interest:"none_declared"
-is_live_document:false
-data_period:"static"
+id: "ai-red-teaming-and-safety"
+title: "AI Red Teaming: Security Testing for Language Models"
+schema_type: "TechArticle"
+category: "ai"
+language: "en"
+confidence: "high"
+last_verified: "2026-05-24"
+created_date: "2026-05-24"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
-  - id:"af-ai-red-teaming-and-safety-1"
-    statement:"AI red teaming systematically probes models for harmful outputs through adversarial testing — jailbreaks (bypassing safety filters), prompt injection (hijacking system instructions), and data poisoning (contaminating training data). Microsoft's AI Red Team published lessons from testing 100+ generative AI products (January 2025)."
-    source_title:"Microsoft AI Red Team White Paper (2025)"
-    confidence:"high"
-  - id:"af-ai-red-teaming-and-safety-2"
-    statement:"OWASP Top 10 for LLM Applications (2025) identifies the most critical vulnerabilities: prompt injection (LLM01), insecure output handling (LLM02), training data poisoning (LLM03), model denial of service (LLM04), and supply chain vulnerabilities (LLM05)."
-    source_title:"OWASP Top 10 for LLM Applications (2025)"
-    confidence:"high"
+  - id: "af-ai-red-teaming-and-safety-1"
+    statement: "AI red teaming systematically probes models for harmful outputs through adversarial testing — jailbreaks (bypassing safety filters), prompt injection (hijacking system instructions), and data poisoning (contaminating training data). Microsoft's AI Red Team published lessons from testing 100+ generative AI products (January 2025)."
+    source_title: "Microsoft AI Red Team White Paper (2025)"
+    confidence: "high"
+  - id: "af-ai-red-teaming-and-safety-2"
+    statement: "OWASP Top 10 for LLM Applications (2025) identifies the most critical vulnerabilities: prompt injection (LLM01), insecure output handling (LLM02), training data poisoning (LLM03), model denial of service (LLM04), and supply chain vulnerabilities (LLM05)."
+    source_title: "OWASP Top 10 for LLM Applications (2025)"
+    confidence: "high"
 
-completeness:0.9
+completeness: 0.9
 
 primary_sources:
-  - title:"Lessons from Red Teaming 100 Generative AI Products"
-    type:"official_report"
-    year:2025
-    url:"https://learn.microsoft.com/en-us/azure/foundry/concepts/ai-red-teaming-agent"
-    institution:"Microsoft"
-  - title:"OWASP Top 10 for LLM Applications"
-    type:"standard"
-    year:2025
-    url:"https://owasp.org/www-project-top-10-for-large-language-model-applications/"
-    institution:"OWASP"
+  - title: "Lessons from Red Teaming 100 Generative AI Products"
+    type: "official_report"
+    year: 2025
+    url: "https://learn.microsoft.com/en-us/azure/foundry/concepts/ai-red-teaming-agent"
+    institution: "Microsoft"
+  - title: "OWASP Top 10 for LLM Applications"
+    type: "standard"
+    year: 2025
+    url: "https://owasp.org/www-project-top-10-for-large-language-model-applications/"
+    institution: "OWASP"
 
 known_gaps:
   - "Automated red teaming at scale"
   - "Defense-in-depth for multi-modal models"
 
 disputed_statements:
-  - statement:"No major disputed statements identified"
+  - statement: "No major disputed statements identified"
 
 ---
 

@@ -1,49 +1,49 @@
 ---
-id:"economics-fundamentals"
-title:"Economics: Supply, Demand, and Market Equilibrium"
-schema_type:"Article"
-category:"business"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-24"
-created_date:"2026-05-24"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
-conflict_of_interest:"none_declared"
-is_live_document:false
-data_period:"static"
+id: "economics-fundamentals"
+title: "Economics: Supply, Demand, and Market Equilibrium"
+schema_type: "Article"
+category: "business"
+language: "en"
+confidence: "high"
+last_verified: "2026-05-24"
+created_date: "2026-05-24"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
-  - id:"af-economics-fundamentals-1"
-    statement:"The law of demand states that as price increases, quantity demanded decreases (ceteris paribus). The law of supply states that as price increases, quantity supplied increases. Market equilibrium occurs where supply equals demand."
-    source_title:"Mankiw, Principles of Economics (2020)"
-    confidence:"high"
-  - id:"af-economics-fundamentals-2"
-    statement:"GDP (Gross Domestic Product) measures total economic output. The US GDP reached $27.4 trillion in 2023, while China's reached $17.8 trillion — together representing ~43% of the global $105 trillion economy."
-    source_title:"World Bank / IMF World Economic Outlook (2024)"
-    confidence:"high"
+  - id: "af-economics-fundamentals-1"
+    statement: "The law of demand states that as price increases, quantity demanded decreases (ceteris paribus). The law of supply states that as price increases, quantity supplied increases. Market equilibrium occurs where supply equals demand."
+    source_title: "Mankiw, Principles of Economics (2020)"
+    confidence: "high"
+  - id: "af-economics-fundamentals-2"
+    statement: "GDP (Gross Domestic Product) measures total economic output. The US GDP reached $27.4 trillion in 2023, while China's reached $17.8 trillion — together representing ~43% of the global $105 trillion economy."
+    source_title: "World Bank / IMF World Economic Outlook (2024)"
+    confidence: "high"
 
-completeness:0.9
+completeness: 0.9
 
 primary_sources:
-  - title:"Principles of Economics, 9th Edition (Mankiw)"
-    type:"textbook"
-    year:2020
-    url:"https://www.cengage.com/c/principles-of-economics-9e-mankiw/9780357038314/"
-    institution:"Cengage"
-  - title:"MIT 14.01: Principles of Microeconomics"
-    type:"course_material"
-    year:2023
-    url:"https://ocw.mit.edu/courses/14-01-principles-of-microeconomics-fall-2023/"
-    institution:"MIT OpenCourseWare"
+  - title: "Principles of Economics, 9th Edition (Mankiw)"
+    type: "textbook"
+    year: 2020
+    url: "https://www.cengage.com/c/principles-of-economics-9e-mankiw/9780357038314/"
+    institution: "Cengage"
+  - title: "MIT 14.01: Principles of Microeconomics"
+    type: "course_material"
+    year: 2023
+    url: "https://ocw.mit.edu/courses/14-01-principles-of-microeconomics-fall-2023/"
+    institution: "MIT OpenCourseWare"
 
 known_gaps:
   - "Behavioral economics and bounded rationality"
   - "International trade theory"
 
 disputed_statements:
-  - statement:"No major disputed statements identified"
+  - statement: "No major disputed statements identified"
 
 ---
 

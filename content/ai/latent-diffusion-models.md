@@ -1,49 +1,49 @@
 ---
-id:"latent-diffusion-models"
-title:"Diffusion Models in Depth: From DDPM to Stable Diffusion"
-schema_type:"TechArticle"
-category:"ai"
-language:"en"
-confidence:"high"
-last_verified:"2026-05-24"
-created_date:"2026-05-24"
-generation_method:"ai_assisted"
-ai_models:["claude-opus"]
-derived_from_human_seed:true
-conflict_of_interest:"none_declared"
-is_live_document:false
-data_period:"static"
+id: "latent-diffusion-models"
+title: "Diffusion Models in Depth: From DDPM to Stable Diffusion"
+schema_type: "TechArticle"
+category: "ai"
+language: "en"
+confidence: "high"
+last_verified: "2026-05-24"
+created_date: "2026-05-24"
+generation_method: "ai_assisted"
+ai_models: ["claude-opus"]
+derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
 
 atomic_facts:
-  - id:"af-latent-diffusion-models-1"
-    statement:"Denoising Diffusion Probabilistic Models (DDPM, Ho et al., 2020) formulate generation as iterative denoising: start from pure noise, then predict and remove noise over T=1000 steps, guided by a U-Net trained to predict the noise added at each timestep."
-    source_title:"Ho et al., NeurIPS (2020)"
-    confidence:"high"
-  - id:"af-latent-diffusion-models-2"
-    statement:"Latent Diffusion Models (Rombach et al., 2022) shift diffusion to a compressed latent space (autoencoder bottleneck), reducing computation by 10-100x. Stable Diffusion applies this to text-to-image generation, combining a CLIP text encoder with a latent-space U-Net denoiser."
-    source_title:"Rombach et al., CVPR (2022)"
-    confidence:"high"
+  - id: "af-latent-diffusion-models-1"
+    statement: "Denoising Diffusion Probabilistic Models (DDPM, Ho et al., 2020) formulate generation as iterative denoising: start from pure noise, then predict and remove noise over T=1000 steps, guided by a U-Net trained to predict the noise added at each timestep."
+    source_title: "Ho et al., NeurIPS (2020)"
+    confidence: "high"
+  - id: "af-latent-diffusion-models-2"
+    statement: "Latent Diffusion Models (Rombach et al., 2022) shift diffusion to a compressed latent space (autoencoder bottleneck), reducing computation by 10-100x. Stable Diffusion applies this to text-to-image generation, combining a CLIP text encoder with a latent-space U-Net denoiser."
+    source_title: "Rombach et al., CVPR (2022)"
+    confidence: "high"
 
-completeness:0.9
+completeness: 0.9
 
 primary_sources:
-  - title:"Denoising Diffusion Probabilistic Models (DDPM)"
-    type:"academic_paper"
-    year:2020
-    url:"https://arxiv.org/abs/2006.11239"
-    institution:"NeurIPS"
-  - title:"High-Resolution Image Synthesis with Latent Diffusion Models (Stable Diffusion)"
-    type:"academic_paper"
-    year:2022
-    url:"https://arxiv.org/abs/2112.10752"
-    institution:"CVPR"
+  - title: "Denoising Diffusion Probabilistic Models (DDPM)"
+    type: "academic_paper"
+    year: 2020
+    url: "https://arxiv.org/abs/2006.11239"
+    institution: "NeurIPS"
+  - title: "High-Resolution Image Synthesis with Latent Diffusion Models (Stable Diffusion)"
+    type: "academic_paper"
+    year: 2022
+    url: "https://arxiv.org/abs/2112.10752"
+    institution: "CVPR"
 
 known_gaps:
   - "Diffusion for discrete data (text)"
   - "One-step diffusion distillation for real-time generation"
 
 disputed_statements:
-  - statement:"No major disputed statements identified"
+  - statement: "No major disputed statements identified"
 
 ---
 

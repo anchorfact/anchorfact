@@ -21,7 +21,8 @@
     "type": "git",
     "url": "https://github.com/anchorfact/anchorfact.git"
   },
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
     "js-yaml": "^4.1.1"
   }
 }
