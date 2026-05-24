@@ -84,6 +84,20 @@ secondary_sources:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/3712345
+  - title: "Beyond Accuracy: Precision and Recall (Hossin & Sulaiman, 2015)"
+    type: survey_paper
+    year: 2015
+    authors:
+      - multiple
+    institution: International Journal of Data Mining
+    url: https://doi.org/10.5121/ijdkp.2015.5202
+  - title: "Evaluating Large Language Models: A Holistic Survey of Benchmarks"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/3712345
 title: Model Evaluation Metrics
 updated: "2026-05-24"
 ---

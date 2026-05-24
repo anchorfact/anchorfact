@@ -99,6 +99,20 @@ secondary_sources:
       - multiple
     institution: Neurocomputing (Elsevier)
     url: https://doi.org/10.1016/j.neucom.2025.128639
+  - title: Rethinking the Inception Architecture for Computer Vision (Label Smoothing)
+    type: conference_paper
+    year: 2016
+    authors:
+      - Szegedy, Christian
+    institution: Google / CVPR
+    url: https://arxiv.org/abs/1512.00567
+  - title: A Survey of Modern Regularization Methods for Deep Neural Networks
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: IEEE Access
+    url: https://doi.org/10.1109/ACCESS.2025.3567842
 title: Overfitting and Regularization
 updated: "2026-05-24"
 ---

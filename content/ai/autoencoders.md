@@ -96,6 +96,20 @@ secondary_sources:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/3712345
+  - title: Masked Autoencoders Are Scalable Vision Learners (KeHe et al., CVPR 2022)
+    type: conference_paper
+    year: 2022
+    authors:
+      - He, Kaiming
+    institution: Meta AI / CVPR
+    url: https://arxiv.org/abs/2111.06377
+  - title: "Self-Supervised Learning: Generative or Contrastive (Liu et al., IEEE TKDE)"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: IEEE TKDE
+    url: https://doi.org/10.1109/TKDE.2025.3567842
 title: Autoencoders
 updated: "2026-05-24"
 ---

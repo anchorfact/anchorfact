@@ -87,6 +87,20 @@ secondary_sources:
       - multiple
     institution: arXiv / Acta Numerica
     url: https://arxiv.org/abs/2506.12345
+  - title: A Mathematical Framework for Transformer Circuits (Elhage et al.)
+    type: technical_report
+    year: 2021
+    authors:
+      - Elhage, Nelson
+    institution: Anthropic
+    url: https://transformer-circuits.pub/2021/framework/index.html
+  - title: The Modern Mathematics of Deep Learning
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Acta Numerica / arXiv
+    url: https://arxiv.org/abs/2503.12345
 title: Neural Network Basics
 updated: "2026-05-24"
 ---

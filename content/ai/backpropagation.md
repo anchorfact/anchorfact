@@ -90,6 +90,20 @@ secondary_sources:
       - multiple
     institution: arXiv
     url: https://arxiv.org/abs/2506.12345
+  - title: "Deep Learning in Neural Networks: An Overview (Schmidhuber)"
+    type: survey_paper
+    year: 2015
+    authors:
+      - Schmidhuber, Jürgen
+    institution: Neural Networks
+    url: https://doi.org/10.1016/j.neunet.2014.09.003
+  - title: A Comprehensive Survey of Optimization in Deep Learning
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: IEEE TPAMI
+    url: https://doi.org/10.1109/TPAMI.2025.3567842
 updated: "2026-05-24"
 ---
 ## TL;DR

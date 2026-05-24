@@ -91,6 +91,21 @@ secondary_sources:
       - multiple
     institution: arXiv
     url: https://arxiv.org/abs/2506.12345
+  - title: Attention Is All You Need (Foundation of Modern Sequence Models)
+    type: conference_paper
+    year: 2017
+    authors:
+      - Vaswani, Ashish
+    institution: Google Brain / NeurIPS
+    url: https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
+  - title: "Mamba: Linear-Time Sequence Modeling (Gu & Dao, ICML)"
+    type: conference_paper
+    year: 2024
+    authors:
+      - Gu, Albert
+      - Dao, Tri
+    institution: CMU / Princeton / ICML
+    url: https://arxiv.org/abs/2312.00752
 title: Recurrent Neural Networks (RNN)
 updated: "2026-05-24"
 ---
