@@ -46,14 +46,6 @@ primary_sources:
     url: https://arxiv.org/abs/1312.6114
     year: 2014
   - authors:
-      - Hinton, Geoffrey E.
-      - Salakhutdinov, Ruslan R.
-    institution: University of Toronto / Science
-    title: Reducing the Dimensionality of Data with Neural Networks (Hinton & Salakhutdinov — Autoencoder Breakthrough)
-    type: journal_article
-    url: https://doi.org/10.1126/science.1127647
-    year: 2006
-  - authors:
       - Goodfellow, Ian
       - Bengio, Yoshua
       - Courville, Aaron
@@ -63,6 +55,13 @@ primary_sources:
     url: https://www.deeplearningbook.org/contents/autoencoders.html
     year: 2016
   - title: "A Comprehensive Survey of Self-Supervised Learning: From Generative to Contrastive Approaches"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: IEEE TPAMI
+    url: https://doi.org/10.1109/TPAMI.2025.3567842
+  - title: A Comprehensive Survey of Autoencoders and Self-Supervised Learning
     type: survey_paper
     year: 2025
     authors:
