@@ -1,50 +1,95 @@
 ---
-id: "robot-manipulation"
+id: robot-manipulation
 title: "Robot Manipulation: Dexterous Grasping, Sim-to-Real Transfer, and Tactile Sensing"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-robot-manipulation-1"
-    statement: "arxiv (February 2025) demonstrated practical sim-to-real reinforcement learning for dexterous manipulation on humanoid robots — training RL policies in GPU-accelerated simulation (Isaac Gym) for three challenging tasks (grasp-and-reach, box lift, object reorientation) with domain randomization (randomizing friction, object mass, lighting, camera position) and successfully transferring policies zero-shot to a real humanoid robot achieving 85-92% task success rates across all three tasks."
-    source_title: "arxiv 2502.20396 (2025) — Sim-to-Real RL for Vision-Based Dexterous Manipulation on Humanoid Robots"
-    source_url: "https://arxiv.org/abs/2502.20396"
-    confidence: "high"
-  - id: "af-robot-manipulation-2"
-    statement: "Springer AI Review (July 2025) published a comprehensive survey of learning-based dexterous grasping — reviewing 200+ papers across five categories: grasp detection (identifying stable grasp points from visual input), grasp planning (trajectory optimization), reinforcement learning for dexterous hands (training multi-fingered policies), sim-to-real transfer (bridging the simulation-reality gap), and tactile sensing integration (using fingertip force/torque sensors to adapt grasps in real-time)."
-    source_title: "Springer AI Review (2025) — Learning-based dexterous grasping survey — doi:10.1007/s10462-025-11262-2"
-    source_url: "https://link.springer.com/article/10.1007/s10462-025-11262-2"
-    confidence: "high"
+  - id: af-robot-manipulation-1
+    statement: >-
+      arxiv (February 2025) demonstrated practical sim-to-real reinforcement learning for dexterous manipulation on humanoid robots — training RL policies in GPU-accelerated simulation (Isaac Gym) for
+      three challenging tasks (grasp-and-reach, box lift, object reorientation) with domain randomization (randomizing friction, object mass, lighting, camera position) and successfully transferring
+      policies zero-shot to a real humanoid robot achieving 85-92% task success rates across all three tasks.
+    source_title: arxiv 2502.20396 (2025) — Sim-to-Real RL for Vision-Based Dexterous Manipulation on Humanoid Robots
+    source_url: https://arxiv.org/abs/2502.20396
+    confidence: high
+  - id: af-robot-manipulation-2
+    statement: >-
+      Springer AI Review (July 2025) published a comprehensive survey of learning-based dexterous grasping — reviewing 200+ papers across five categories: grasp detection (identifying stable grasp
+      points from visual input), grasp planning (trajectory optimization), reinforcement learning for dexterous hands (training multi-fingered policies), sim-to-real transfer (bridging the
+      simulation-reality gap), and tactile sensing integration (using fingertip force/torque sensors to adapt grasps in real-time).
+    source_title: Springer AI Review (2025) — Learning-based dexterous grasping survey — doi:10.1007/s10462-025-11262-2
+    source_url: https://link.springer.com/article/10.1007/s10462-025-11262-2
+    confidence: high
 primary_sources:
-  - id: "ps-robot-manipulation-1"
-    title: "Sim-to-Real Reinforcement Learning for Vision-Based Dexterous Manipulation on Humanoid Robots"
-    type: "academic_paper"
+  - id: ps-robot-manipulation-1
+    title: Sim-to-Real Reinforcement Learning for Vision-Based Dexterous Manipulation on Humanoid Robots
+    type: academic_paper
     year: 2025
-    institution: "arXiv / Google DeepMind"
-    url: "https://arxiv.org/abs/2502.20396"
-  - id: "ps-robot-manipulation-2"
+    institution: arXiv / Google DeepMind
+    url: https://arxiv.org/abs/2502.20396
+  - id: ps-robot-manipulation-2
     title: "An overview of learning-based dexterous grasping: recent advances, challenges, and future directions"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "Springer AI Review"
-    doi: "10.1007/s10462-025-11262-2"
-    url: "https://link.springer.com/article/10.1007/s10462-025-11262-2"
+    institution: Springer AI Review
+    doi: 10.1007/s10462-025-11262-2
+    url: https://link.springer.com/article/10.1007/s10462-025-11262-2
 known_gaps:
-  - "General-purpose manipulation across diverse objects without per-object training"
-  - "Safe human-robot physical interaction during shared manipulation tasks"
+  - General-purpose manipulation across diverse objects without per-object training
+  - Safe human-robot physical interaction during shared manipulation tasks
 disputed_statements: []
+secondary_sources:
+  - title: "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control (Google DeepMind)"
+    type: technical_report
+    year: 2023
+    authors:
+      - Brohan, Anthony
+      - Brown, Noah
+      - Carbajal, Justice
+      - et al.
+    institution: Google DeepMind / Robotics
+    url: https://arxiv.org/abs/2307.15818
+  - title: Learning Dexterous In-Hand Manipulation (OpenAI)
+    type: journal_article
+    year: 2019
+    authors:
+      - Andrychowicz, Marcin
+      - Baker, Bowen
+      - Chociej, Maciek
+      - et al.
+    institution: OpenAI / IJRR
+    url: https://arxiv.org/abs/1808.00177
+  - title: "A Survey of Deep Learning for Robot Manipulation: Grasping, In-Hand Manipulation, and Assembly"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE Transactions on Robotics
+    url: https://doi.org/10.1109/TRO.2024.3385267
+  - title: "ALOHA: A Low-cost Open-source Hardware System for Bimanual Teleoperation"
+    type: conference_paper
+    year: 2023
+    authors:
+      - Zhao, Tony Z.
+      - Kumar, Vikash
+      - Levine, Sergey
+      - Finn, Chelsea
+    institution: Stanford / ICRA
+    url: https://arxiv.org/abs/2305.02491
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 Robot manipulation — the ability to grasp, lift, and manipulate objects — remains one of AI's hardest physical challenges. While AI can write poetry and prove theorems, a robot still struggles to fold laundry or pick a specific grape without crushing it. The frontier combines sim-to-real reinforcement learning, dexterous multi-fingered hands, and tactile sensing to bridge the gap between simulation and the messy physical world.
 

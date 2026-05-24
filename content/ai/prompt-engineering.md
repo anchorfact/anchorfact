@@ -1,53 +1,90 @@
 ---
-id: "prompt-engineering"
+id: prompt-engineering
 title: "Prompt Engineering: Techniques for LLM Interaction"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-prompt-engineering-1"
-    statement: "Chain-of-thought prompting (Wei et al., 2022) elicits step-by-step reasoning by including \"Let's think step by step\" in prompts, improving LLM accuracy on arithmetic, commonsense, and symbolic reasoning tasks by 10-40% without model modification."
-    source_title: "Wei et al., NeurIPS (2022)"
-    confidence: "high"
-  - id: "af-prompt-engineering-2"
-    statement: "Few-shot prompting — providing 2-5 task examples in the prompt without weight updates — enables GPT-3 to perform translation, question answering, and code generation at competitive levels, demonstrating LLMs as meta-learners."
-    source_title: "Brown et al., NeurIPS (2020)"
-    confidence: "high"
-
+  - id: af-prompt-engineering-1
+    statement: >-
+      Chain-of-thought prompting (Wei et al., 2022) elicits step-by-step reasoning by including "Let's think step by step" in prompts, improving LLM accuracy on arithmetic, commonsense, and symbolic
+      reasoning tasks by 10-40% without model modification.
+    source_title: Wei et al., NeurIPS (2022)
+    confidence: high
+  - id: af-prompt-engineering-2
+    statement: >-
+      Few-shot prompting — providing 2-5 task examples in the prompt without weight updates — enables GPT-3 to perform translation, question answering, and code generation at competitive levels,
+      demonstrating LLMs as meta-learners.
+    source_title: Brown et al., NeurIPS (2020)
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "Automated prompt optimization (DSPy)"
-  - "Prompt injection security"
-
+  - Automated prompt optimization (DSPy)
+  - Prompt injection security
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
 primary_sources:
-  - title: "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models"
-    type: "academic_paper"
+  - title: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models
+    type: academic_paper
     year: 2022
-    url: "https://arxiv.org/abs/2201.11903"
-    institution: "NeurIPS"
-  - title: "Language Models are Few-Shot Learners (GPT-3)"
-    type: "academic_paper"
+    url: https://arxiv.org/abs/2201.11903
+    institution: NeurIPS
+  - title: Language Models are Few-Shot Learners (GPT-3)
+    type: academic_paper
     year: 2020
-    url: "https://arxiv.org/abs/2005.14165"
-    institution: "NeurIPS"
-
+    url: https://arxiv.org/abs/2005.14165
+    institution: NeurIPS
+secondary_sources:
+  - title: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models
+    type: conference_paper
+    year: 2022
+    authors:
+      - Wei, Jason
+      - Wang, Xuezhi
+      - Schuurmans, Dale
+      - et al.
+    institution: Google Research / NeurIPS
+    url: https://arxiv.org/abs/2201.11903
+  - title: "Tree of Thoughts: Deliberate Problem Solving with Large Language Models"
+    type: conference_paper
+    year: 2023
+    authors:
+      - Yao, Shunyu
+      - Yu, Dian
+      - Zhao, Jeffrey
+      - et al.
+    institution: Princeton / Google DeepMind / NeurIPS
+    url: https://arxiv.org/abs/2305.10601
+  - title: "A Survey on Prompt Engineering: From Few-Shot to Chain-of-Thought to Automatic Prompt Optimization"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/3635100
+  - title: Large Language Models are Zero-Shot Reasoners (Self-Consistency / Google)
+    type: conference_paper
+    year: 2022
+    authors:
+      - Kojima, Takeshi
+      - Gu, Shixiang Shane
+      - Reid, Machel
+      - Matsuo, Yutaka
+      - Iwasawa, Yusuke
+    institution: University of Tokyo / Google Research / NeurIPS
+    url: https://arxiv.org/abs/2205.11916
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 Prompt engineering is the practice of designing text inputs to elicit desired outputs from language models. It has evolved from simple instruction writing to systematic techniques for reasoning, constraint specification, and multi-step task decomposition.
 

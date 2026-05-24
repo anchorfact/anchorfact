@@ -1,52 +1,91 @@
 ---
-id: "advanced-rag-techniques"
+id: advanced-rag-techniques
 title: "Advanced RAG: From Naive Retrieval to Agentic RAG"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-advanced-rag-techniques-1"
-    statement: "Naive RAG retrieves chunks → generates answer. Advanced RAG adds: HyDE (hypothetical document embeddings — generate a hypothetical answer first, then retrieve similar documents), multi-hop retrieval (decompose complex queries into sub-queries), and re-ranking (cross-encoder re-scores retrieved documents for precision)."
+  - id: af-advanced-rag-techniques-1
+    statement: >-
+      Naive RAG retrieves chunks → generates answer. Advanced RAG adds: HyDE (hypothetical document embeddings — generate a hypothetical answer first, then retrieve similar documents), multi-hop
+      retrieval (decompose complex queries into sub-queries), and re-ranking (cross-encoder re-scores retrieved documents for precision).
     source_title: "Gao et al., Retrieval-Augmented Generation for Large Language Models: A Survey (2023)"
-    confidence: "high"
-  - id: "af-advanced-rag-techniques-2"
-    statement: "Agentic RAG (2024-2025) treats retrieval as an agent loop: the LLM plans which tools to call (vector DB, web search, SQL, API), executes retrieval, evaluates results, and iterates — achieving up to 2x accuracy improvement over naive RAG on multi-step reasoning tasks."
-    source_title: "Microsoft / LangChain Agentic RAG (2024)"
-    confidence: "high"
-
+    confidence: high
+  - id: af-advanced-rag-techniques-2
+    statement: >-
+      Agentic RAG (2024-2025) treats retrieval as an agent loop: the LLM plans which tools to call (vector DB, web search, SQL, API), executes retrieval, evaluates results, and iterates — achieving up
+      to 2x accuracy improvement over naive RAG on multi-step reasoning tasks.
+    source_title: Microsoft / LangChain Agentic RAG (2024)
+    confidence: high
 completeness: 0.9
-
 primary_sources:
   - title: "Retrieval-Augmented Generation for Large Language Models: A Survey"
-    type: "academic_paper"
+    type: academic_paper
     year: 2023
-    url: "https://arxiv.org/abs/2312.10997"
-    institution: "arXiv"
+    url: https://arxiv.org/abs/2312.10997
+    institution: arXiv
   - title: "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection"
-    type: "academic_paper"
+    type: academic_paper
     year: 2024
-    url: "https://arxiv.org/abs/2310.11511"
-    institution: "ICLR"
-
+    url: https://arxiv.org/abs/2310.11511
+    institution: ICLR
 known_gaps:
-  - "RAG hallucination quantification"
-  - "Real-time RAG over streaming data"
-
+  - RAG hallucination quantification
+  - Real-time RAG over streaming data
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
+secondary_sources:
+  - title: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (RAG — Meta AI)
+    type: conference_paper
+    year: 2020
+    authors:
+      - Lewis, Patrick
+      - Perez, Ethan
+      - Piktus, Aleksandra
+      - et al.
+    institution: Meta AI Research / NeurIPS
+    url: https://arxiv.org/abs/2005.11401
+  - title: "A Survey of Retrieval-Augmented Generation: From Basic to Advanced Techniques"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/3635100
+  - title: "REALM: Retrieval-Augmented Language Model Pre-Training"
+    type: conference_paper
+    year: 2020
+    authors:
+      - Guu, Kelvin
+      - Lee, Kenton
+      - Tung, Zora
+      - Pasupat, Panupong
+      - Chang, Ming-Wei
+    institution: Google Research / ICML
+    url: https://arxiv.org/abs/2002.08909
+  - title: "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection"
+    type: conference_paper
+    year: 2023
+    authors:
+      - Asai, Akari
+      - Wu, Zeqiu
+      - Wang, Yizhong
+      - Sil, Avirup
+      - Hajishirzi, Hannaneh
+    institution: University of Washington / ICLR
+    url: https://arxiv.org/abs/2310.11511
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 RAG (Retrieval-Augmented Generation) has evolved from simple chunk retrieval to sophisticated agentic architectures. Advanced techniques — HyDE, multi-hop, re-ranking, Self-RAG, Agentic RAG — have transformed it from a simple technique into a production-grade knowledge infrastructure.
 

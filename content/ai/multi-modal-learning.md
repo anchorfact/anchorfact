@@ -1,53 +1,84 @@
 ---
-id: "multi-modal-learning"
-title: "Multi-Modal Machine Learning"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
+id: multi-modal-learning
+title: Multi-Modal Machine Learning
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-multi-modal-learning-1"
-    statement: "Multi-modal learning integrates information from multiple sensory modalities — vision, language, audio, sensor data — exploiting complementary signals that no single modality provides alone."
-    source_title: "Baltrušaitis et al., TPAMI (2019)"
-    confidence: "high"
-  - id: "af-multi-modal-learning-2"
-    statement: "Vision-language models (VLMs) like GPT-4V, Gemini, and LLaVA combine visual encoders with language models, enabling tasks like image captioning, visual question answering, and multimodal reasoning from pixel inputs."
-    source_title: "Liu et al., LLaVA (2023) / OpenAI GPT-4V (2023)"
-    confidence: "high"
-
+  - id: af-multi-modal-learning-1
+    statement: Multi-modal learning integrates information from multiple sensory modalities — vision, language, audio, sensor data — exploiting complementary signals that no single modality provides alone.
+    source_title: Baltrušaitis et al., TPAMI (2019)
+    confidence: high
+  - id: af-multi-modal-learning-2
+    statement: >-
+      Vision-language models (VLMs) like GPT-4V, Gemini, and LLaVA combine visual encoders with language models, enabling tasks like image captioning, visual question answering, and multimodal
+      reasoning from pixel inputs.
+    source_title: Liu et al., LLaVA (2023) / OpenAI GPT-4V (2023)
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "Cross-modal alignment theory"
-  - "Multi-modal hallucination"
-
+  - Cross-modal alignment theory
+  - Multi-modal hallucination
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
 primary_sources:
   - title: "Multimodal Machine Learning: A Survey and Taxonomy"
-    type: "academic_paper"
+    type: academic_paper
     year: 2019
-    url: "https://arxiv.org/abs/1705.09406"
-    institution: "IEEE TPAMI"
-  - title: "Visual Instruction Tuning (LLaVA)"
-    type: "academic_paper"
+    url: https://arxiv.org/abs/1705.09406
+    institution: IEEE TPAMI
+  - title: Visual Instruction Tuning (LLaVA)
+    type: academic_paper
     year: 2023
-    url: "https://arxiv.org/abs/2304.08485"
-    institution: "NeurIPS"
-
+    url: https://arxiv.org/abs/2304.08485
+    institution: NeurIPS
+secondary_sources:
+  - title: "A Comprehensive Survey of Multimodal Learning: Methods, Applications, and Future Directions"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE TPAMI
+    url: https://doi.org/10.1109/TPAMI.2024.3385267
+  - title: "CLIP: Learning Transferable Visual Models From Natural Language Supervision"
+    type: conference_paper
+    year: 2021
+    authors:
+      - Radford, Alec
+      - Kim, Jong Wook
+      - Hallacy, Chris
+      - et al.
+    institution: OpenAI / ICML
+    url: https://arxiv.org/abs/2103.00020
+  - title: "Multimodal Foundation Models: From Specialists to General-Purpose Assistants"
+    type: survey_paper
+    year: 2024
+    authors:
+      - Li, Chunyuan
+      - Gan, Zhe
+      - Yang, Zhengyuan
+      - et al.
+    institution: Microsoft / CMU / arXiv
+    url: https://arxiv.org/abs/2309.10020
+  - title: GPT-4V(ision) System Card (OpenAI)
+    type: technical_report
+    year: 2023
+    authors:
+      - OpenAI
+    institution: OpenAI
+    url: https://openai.com/research/gpt-4v-system-card
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 Multi-modal learning combines vision, language, audio, and other data modalities to achieve understanding beyond single-modality systems. GPT-4V and Gemini represent the frontier of integrated vision-language reasoning.
 

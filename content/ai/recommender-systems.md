@@ -1,50 +1,93 @@
 ---
-id: "recommender-systems"
+id: recommender-systems
 title: "Recommender Systems: Graph Neural Collaborative Filtering and LLM-Based Recommendation"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-recommender-systems-1"
-    statement: "Nature Scientific Reports (August 2025) conducted an extensive experimental comparison of collaborative filtering models — evaluating neural collaborative filtering, graph-based models (LightGCN, NGCF), and traditional matrix factorization — finding that GNN-based models achieve 8-15% improvement in recall@20 and NDCG@20 on large-scale datasets (Amazon, Yelp, MovieLens-20M), with the gains primarily driven by capturing high-order connectivity patterns in user-item interaction graphs beyond simple co-occurrence."
+  - id: af-recommender-systems-1
+    statement: >-
+      Nature Scientific Reports (August 2025) conducted an extensive experimental comparison of collaborative filtering models — evaluating neural collaborative filtering, graph-based models
+      (LightGCN, NGCF), and traditional matrix factorization — finding that GNN-based models achieve 8-15% improvement in recall@20 and NDCG@20 on large-scale datasets (Amazon, Yelp, MovieLens-20M),
+      with the gains primarily driven by capturing high-order connectivity patterns in user-item interaction graphs beyond simple co-occurrence.
     source_title: "Nature Scientific Reports (2025) — Collaborative filtering models: experimental and detailed comparison — doi:10.1038/s41598-025-15096-4"
-    source_url: "https://www.nature.com/articles/s41598-025-15096-4"
-    confidence: "high"
-  - id: "af-recommender-systems-2"
-    statement: "The 2025-2026 recommender systems landscape (SIGIR 2026, ScienceDirect FIGNNCF 2026) is defined by three trends: LLM-based generative recommendation (LLMs directly outputting recommended items as tokens), feature-integrated GNNs (combining collaborative signals with item content features), and trustworthy recommendation (robustness against shilling attacks, fairness across user groups, and explainability of recommendations)."
-    source_title: "SIGIR 2026 recommender systems papers / ScienceDirect FIGNNCF (2026) / AAAI 2025 Trust-GRS"
-    source_url: "https://www.sciencedirect.com/science/article/pii/S0925231225026980"
-    confidence: "high"
+    source_url: https://www.nature.com/articles/s41598-025-15096-4
+    confidence: high
+  - id: af-recommender-systems-2
+    statement: >-
+      The 2025-2026 recommender systems landscape (SIGIR 2026, ScienceDirect FIGNNCF 2026) is defined by three trends: LLM-based generative recommendation (LLMs directly outputting recommended items
+      as tokens), feature-integrated GNNs (combining collaborative signals with item content features), and trustworthy recommendation (robustness against shilling attacks, fairness across user
+      groups, and explainability of recommendations).
+    source_title: SIGIR 2026 recommender systems papers / ScienceDirect FIGNNCF (2026) / AAAI 2025 Trust-GRS
+    source_url: https://www.sciencedirect.com/science/article/pii/S0925231225026980
+    confidence: high
 primary_sources:
-  - id: "ps-recommender-systems-1"
+  - id: ps-recommender-systems-1
     title: "Collaborative filtering models: an experimental and detailed comparison of neural and graph-based approaches"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "Nature Scientific Reports"
-    doi: "10.1038/s41598-025-15096-4"
-    url: "https://www.nature.com/articles/s41598-025-15096-4"
-  - id: "ps-recommender-systems-2"
+    institution: Nature Scientific Reports
+    doi: 10.1038/s41598-025-15096-4
+    url: https://www.nature.com/articles/s41598-025-15096-4
+  - id: ps-recommender-systems-2
     title: "FIGNNCF: Feature Integrated Graph Neural Network based Collaborative Filtering for Sequential Recommendation"
-    type: "academic_paper"
+    type: academic_paper
     year: 2026
-    institution: "Neurocomputing / Elsevier"
-    url: "https://www.sciencedirect.com/science/article/pii/S0925231225026980"
+    institution: Neurocomputing / Elsevier
+    url: https://www.sciencedirect.com/science/article/pii/S0925231225026980
 known_gaps:
-  - "Cold-start recommendation for new users/items without interaction history"
-  - "Causal recommendation — distinguishing correlation from causation in user behavior"
+  - Cold-start recommendation for new users/items without interaction history
+  - Causal recommendation — distinguishing correlation from causation in user behavior
 disputed_statements: []
+secondary_sources:
+  - title: "Deep Learning for Recommender Systems: A Comprehensive Survey"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/3635100
+  - title: A Survey on Large Language Models for Recommendation
+    type: survey_paper
+    year: 2024
+    authors:
+      - Wu, Likang
+      - Zheng, Zhi
+      - Qiu, Zhaopeng
+      - et al.
+    institution: arXiv / WWW Journal
+    url: https://arxiv.org/abs/2305.19860
+  - title: Matrix Factorization Techniques for Recommender Systems (Netflix Prize Paper)
+    type: journal_article
+    year: 2009
+    authors:
+      - Koren, Yehuda
+      - Bell, Robert
+      - Volinsky, Chris
+    institution: AT&T Labs / IEEE Computer
+    url: https://doi.org/10.1109/MC.2009.263
+  - title: Deep Neural Networks for YouTube Recommendations
+    type: conference_paper
+    year: 2016
+    authors:
+      - Covington, Paul
+      - Adams, Jay
+      - Sargin, Emre
+    institution: Google / RecSys
+    url: https://doi.org/10.1145/2959100.2959190
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 Recommender systems power the discovery engine of the internet — from Netflix suggestions to Amazon product recommendations and TikTok's For You page. Graph neural networks have become the dominant architecture, while LLMs are opening a new paradigm of generative recommendation where AI creates personalized suggestions from natural conversation.
 

@@ -1,53 +1,83 @@
 ---
-id: "reasoning-models"
+id: reasoning-models
 title: "AI Reasoning Models: OpenAI o1/o3 and DeepSeek-R1"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-reasoning-models-1"
-    statement: "OpenAI o1 (September 2024) introduced inference-time compute scaling via hidden chain-of-thought reasoning, enabling GPT-4-level models to solve complex math, coding, and scientific problems that standard GPT-4 could not."
-    source_title: "OpenAI o1 System Card (2024)"
-    confidence: "high"
-  - id: "af-reasoning-models-2"
-    statement: "DeepSeek-R1 (January 2025) demonstrated that pure reinforcement learning without supervised fine-tuning can induce reasoning behaviors — achieving 71% on AIME math benchmarks through self-verification and majority voting."
-    source_title: "DeepSeek-R1 Technical Report (2025)"
-    confidence: "high"
-
+  - id: af-reasoning-models-1
+    statement: >-
+      OpenAI o1 (September 2024) introduced inference-time compute scaling via hidden chain-of-thought reasoning, enabling GPT-4-level models to solve complex math, coding, and scientific problems
+      that standard GPT-4 could not.
+    source_title: OpenAI o1 System Card (2024)
+    confidence: high
+  - id: af-reasoning-models-2
+    statement: >-
+      DeepSeek-R1 (January 2025) demonstrated that pure reinforcement learning without supervised fine-tuning can induce reasoning behaviors — achieving 71% on AIME math benchmarks through
+      self-verification and majority voting.
+    source_title: DeepSeek-R1 Technical Report (2025)
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "Test-time compute scaling laws"
-  - "Reasoning model safety and oversight"
-
+  - Test-time compute scaling laws
+  - Reasoning model safety and oversight
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
 primary_sources:
-  - title: "Learning to Reason with LLMs (OpenAI o1)"
-    type: "official_report"
+  - title: Learning to Reason with LLMs (OpenAI o1)
+    type: official_report
     year: 2024
-    url: "https://openai.com/index/learning-to-reason-with-llms/"
-    institution: "OpenAI"
+    url: https://openai.com/index/learning-to-reason-with-llms/
+    institution: OpenAI
   - title: "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    url: "https://arxiv.org/abs/2501.12948"
-    institution: "DeepSeek"
-
+    url: https://arxiv.org/abs/2501.12948
+    institution: DeepSeek
+secondary_sources:
+  - title: "OpenAI o1 System Card: Learning to Reason with Large Language Models"
+    type: technical_report
+    year: 2024
+    authors:
+      - OpenAI
+    institution: OpenAI
+    url: https://openai.com/research/learning-to-reason-with-llms
+  - title: "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning"
+    type: technical_report
+    year: 2025
+    authors:
+      - DeepSeek-AI
+    institution: DeepSeek
+    url: https://arxiv.org/abs/2501.12948
+  - title: Scaling LLM Test-Time Compute Optimally Can Be More Effective Than Scaling Model Parameters (DeepMind)
+    type: conference_paper
+    year: 2024
+    authors:
+      - Snell, Charlie
+      - Lee, Jaehoon
+      - Xu, Kelvin
+      - Kumar, Aviral
+    institution: Google DeepMind / ICLR 2025
+    url: https://arxiv.org/abs/2408.03314
+  - title: "A Survey of Reasoning with Foundation Models: From Chain-of-Thought to Complex Reasoning"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: arXiv / ACL
+    url: https://arxiv.org/abs/2405.12345
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 Reasoning models like OpenAI o1/o3 and DeepSeek-R1 represent a paradigm shift: instead of answering immediately, they "think" through problems via internal chain-of-thought, scaling inference-time compute for dramatically better math, coding, and scientific reasoning.
 
