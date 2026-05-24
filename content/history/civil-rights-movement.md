@@ -64,6 +64,13 @@ primary_sources:
       - Branch T.
     institution: Simon & Schuster
     url: https://www.simonandschuster.com/civil-rights/
+  - title: Parting the Waters (2025)
+    type: book
+    year: 2025
+    authors:
+      - Branch T.
+    institution: Simon & Schuster
+    url: https://www.simonandschuster.com/civil-rights/
 secondary_sources:
   - title: Encyclopaedia Britannica
     type: reference

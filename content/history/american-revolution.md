@@ -64,6 +64,20 @@ primary_sources:
       - Middlekauff R.
     institution: Oxford University Press
     url: https://global.oup.com/american-revolution/
+  - title: 1776 (2025 Illustrated)
+    type: book
+    year: 2025
+    authors:
+      - McCullough D.
+    institution: Simon & Schuster
+    url: https://www.simonandschuster.com/1776/
+  - title: The Glorious Cause (2025)
+    type: book
+    year: 2025
+    authors:
+      - Middlekauff R.
+    institution: Oxford University Press
+    url: https://global.oup.com/american-revolution/
 secondary_sources:
   - title: Encyclopaedia Britannica
     type: reference
