@@ -15,17 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-speech-recognition-1
+  - id: f1
     statement: >-
-      Whisper (OpenAI, 2023), trained on 680,000 hours of multilingual and multitask supervised data, approaches human-level robustness and accuracy in English speech recognition while supporting 99
-      languages.
-    source_title: Radford et al., OpenAI (2023)
+      Whisper (Radford et al. 2022, OpenAI) trained on 680K hours of weakly supervised multilingual speech data, achieving near-human-level accuracy on English ASR and demonstrating robust zero-shot
+      transfer to 99 languages.
+    source_title: Radford, Alec, et al. Robust Speech Recognition via Large-Scale Weak Supervision. OpenAI 2022
+    source_url: https://arxiv.org/abs/2212.04356
     confidence: high
-  - id: af-speech-recognition-2
+  - id: f2
     statement: >-
-      Connectionist Temporal Classification (CTC, Graves et al., 2006) enables training sequence models without frame-level alignment by summing over all valid alignments between input and output
-      sequences.
-    source_title: Graves et al., ICML (2006)
+      Wav2Vec 2.0 (Baevski et al. 2020, Meta AI, NeurIPS) learns speech representations via self-supervised contrastive learning on raw audio, then fine-tunes on as little as 10 minutes of labeled
+      data for competitive ASR.
+    source_title: "Baevski, Alexei, et al. Wav2Vec 2.0: A Framework for Self-Supervised Learning of Speech Representations. NeurIPS 2020"
+    source_url: https://arxiv.org/abs/2006.11477
+    confidence: high
+  - id: f3
+    statement: >-
+      DeepSpeech 2 (Amodei et al. 2016, Baidu) demonstrated that end-to-end deep learning could surpass traditional HMM-based ASR systems, using a unified RNN with CTC loss trained on thousands of
+      hours of speech.
+    source_title: "Amodei, Dario, et al. Deep Speech 2: End-to-End Speech Recognition in English and Mandarin. ICML 2016"
+    source_url: https://arxiv.org/abs/1512.02595
     confidence: high
 completeness: 0.9
 known_gaps:

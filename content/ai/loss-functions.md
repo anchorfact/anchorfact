@@ -15,13 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-loss-functions-1
-    statement: Cross-entropy loss measures the difference between true probability distribution and predicted distribution, and is the standard loss for classification tasks. Binary cross-entropy handles two classes; categorical cross-entropy handles multi-class with softmax.
-    source_title: Bishop, Pattern Recognition and Machine Learning (2006)
+  - id: f1
+    statement: >-
+      Cross-entropy loss is the standard objective for classification, minimizing the negative log-likelihood of the true class. It provides strong gradient signals and is theoretically connected to
+      maximum likelihood estimation.
+    source_title: Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. Deep Learning (Chapter 6.2). MIT Press 2016
+    source_url: https://www.deeplearningbook.org/contents/mlp.html
     confidence: high
-  - id: af-loss-functions-2
-    statement: Focal loss (Lin et al., 2017) adds a modulating factor (1 - p_t)^γ to cross-entropy, down-weighting easy examples and focusing training on hard, misclassified samples — crucial for class-imbalanced datasets like object detection.
-    source_title: Lin et al., ICCV (2017)
+  - id: f2
+    statement: >-
+      Focal Loss (Lin et al. 2017, ICCV) down-weights easy examples and focuses training on hard negatives, addressing extreme class imbalance in object detection. It was key to RetinaNet achieving
+      state-of-the-art results.
+    source_title: Lin, Tsung-Yi, et al. Focal Loss for Dense Object Detection. ICCV 2017
+    source_url: https://arxiv.org/abs/1708.02002
+    confidence: high
+  - id: f3
+    statement: >-
+      Contrastive loss (InfoNCE, Oord et al. 2018, DeepMind) maximizes mutual information between positive pairs while pushing away negatives. It is the foundation of SimCLR, CLIP, and most
+      self-supervised learning methods.
+    source_title: van den Oord, Aaron, et al. Representation Learning with Contrastive Predictive Coding. 2018
+    source_url: https://arxiv.org/abs/1807.03748
     confidence: high
 completeness: 0.9
 known_gaps:
@@ -78,9 +91,8 @@ secondary_sources:
       - Hinton, Geoffrey
     institution: Google Research / ICML
     url: https://arxiv.org/abs/2002.05709
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 Loss functions quantify the difference between model predictions and ground truth, guiding optimization. Cross-entropy dominates classification; MSE dominates regression; specialized losses handle imbalanced, structured, or adversarial tasks.
 

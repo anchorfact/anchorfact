@@ -15,17 +15,24 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-nlp-advanced-techniques-1
-    statement: >-
-      Byte-Pair Encoding (BPE, Sennrich et al., 2016) iteratively merges the most frequent byte pairs to build a subword vocabulary — the dominant tokenization strategy used by GPT, BERT, and Llama
-      models to handle open vocabulary.
-    source_title: Sennrich et al., ACL (2016)
+  - id: f1
+    statement: BERT (Devlin et al. 2019, Google) introduced bidirectional pretraining with masked language modeling, achieving SOTA on 11 NLP benchmarks and establishing the pretrain-finetune paradigm.
+    source_title: "Devlin, Jacob, et al. BERT: Pre-training of Deep Bidirectional Transformers. NAACL 2019"
+    source_url: https://arxiv.org/abs/1810.04805
     confidence: high
-  - id: af-nlp-advanced-techniques-2
+  - id: f2
     statement: >-
-      Top-p (nucleus) sampling (Holtzman et al., 2020) truncates the vocabulary to the smallest set whose cumulative probability exceeds threshold p, adaptively controlling diversity — the default
-      decoding strategy for most modern LLMs.
-    source_title: Holtzman et al., ICLR (2020)
+      GPT-3 (Brown et al. 2020, OpenAI) demonstrated that scaling language models to 175B parameters enables strong few-shot learning without gradient updates — simply providing a few examples in the
+      prompt.
+    source_title: Brown, Tom B., et al. Language Models are Few-Shot Learners. NeurIPS 2020
+    source_url: https://arxiv.org/abs/2005.14165
+    confidence: high
+  - id: f3
+    statement: >-
+      T5 (Raffel et al. 2020, Google) unified all NLP tasks into a text-to-text format, enabling a single model to perform translation, summarization, QA, and classification through the same
+      encoder-decoder Transformer.
+    source_title: Raffel, Colin, et al. Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer. JMLR 2020
+    source_url: https://jmlr.org/papers/v21/20-074.html
     confidence: high
 completeness: 0.9
 primary_sources:

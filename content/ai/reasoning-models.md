@@ -15,17 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-reasoning-models-1
+  - id: f1
     statement: >-
-      OpenAI o1 (September 2024) introduced inference-time compute scaling via hidden chain-of-thought reasoning, enabling GPT-4-level models to solve complex math, coding, and scientific problems
-      that standard GPT-4 could not.
-    source_title: OpenAI o1 System Card (2024)
+      OpenAI o1 (2024) represents a paradigm shift to reasoning-time compute scaling: the model "thinks" through problems using hidden chain-of-thought, dramatically improving math, coding, and
+      scientific reasoning capabilities.
+    source_title: OpenAI. Learning to Reason with Large Language Models (o1 System Card). 2024
+    source_url: https://openai.com/research/learning-to-reason-with-llms
     confidence: high
-  - id: af-reasoning-models-2
+  - id: f2
     statement: >-
-      DeepSeek-R1 (January 2025) demonstrated that pure reinforcement learning without supervised fine-tuning can induce reasoning behaviors — achieving 71% on AIME math benchmarks through
-      self-verification and majority voting.
-    source_title: DeepSeek-R1 Technical Report (2025)
+      DeepSeek-R1 (2025) achieved o1-level reasoning using pure reinforcement learning without supervised fine-tuning on reasoning data, demonstrating that reasoning emerges from RL with simple reward
+      functions.
+    source_title: "DeepSeek-AI. DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via RL. 2025"
+    source_url: https://arxiv.org/abs/2501.12948
+    confidence: high
+  - id: f3
+    statement: >-
+      Scaling test-time compute (Snell et al. 2024, DeepMind, ICLR 2025) proved that increasing inference computation (e.g., best-of-N, beam search) can be more effective than scaling model parameters
+      for improving LLM performance.
+    source_title: Snell, Charlie, et al. Scaling LLM Test-Time Compute Optimally. ICLR 2025
+    source_url: https://arxiv.org/abs/2408.03314
     confidence: high
 completeness: 0.9
 known_gaps:

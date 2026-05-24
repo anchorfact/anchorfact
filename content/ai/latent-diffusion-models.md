@@ -15,17 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-latent-diffusion-models-1
+  - id: f1
     statement: >-
-      Denoising Diffusion Probabilistic Models (DDPM, Ho et al., 2020) formulate generation as iterative denoising: start from pure noise, then predict and remove noise over T=1000 steps, guided by a
-      U-Net trained to predict the noise added at each timestep.
-    source_title: Ho et al., NeurIPS (2020)
+      Latent Diffusion Models (Rombach et al. 2022, CVPR) perform the diffusion process in a compressed latent space learned by a VAE, dramatically reducing computational cost while enabling
+      high-resolution image generation (Stable Diffusion).
+    source_title: Rombach, Robin, et al. High-Resolution Image Synthesis with Latent Diffusion Models. CVPR 2022
+    source_url: https://arxiv.org/abs/2112.10752
     confidence: high
-  - id: af-latent-diffusion-models-2
+  - id: f2
     statement: >-
-      Latent Diffusion Models (Rombach et al., 2022) shift diffusion to a compressed latent space (autoencoder bottleneck), reducing computation by 10-100x. Stable Diffusion applies this to
-      text-to-image generation, combining a CLIP text encoder with a latent-space U-Net denoiser.
-    source_title: Rombach et al., CVPR (2022)
+      Denoising Diffusion Probabilistic Models (DDPM, Ho et al. 2020, NeurIPS) established the modern diffusion framework: a forward process gradually adds noise, and a learned reverse process
+      denoises to generate samples.
+    source_title: Ho, Jonathan, Ajay Jain, and Pieter Abbeel. Denoising Diffusion Probabilistic Models. NeurIPS 2020
+    source_url: https://arxiv.org/abs/2006.11239
+    confidence: high
+  - id: f3
+    statement: >-
+      Score-based generative modeling (Song et al. 2021, ICLR) unifies diffusion models and score matching via stochastic differential equations, enabling flexible sampling schedules and controllable
+      generation.
+    source_title: Song, Yang, et al. Score-Based Generative Modeling through Stochastic Differential Equations. ICLR 2021
+    source_url: https://arxiv.org/abs/2011.13456
     confidence: high
 completeness: 0.9
 primary_sources:

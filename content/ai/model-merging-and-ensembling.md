@@ -15,18 +15,27 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-model-merging-and-ensembling-1
+  - id: f1
     statement: >-
-      Mixture of Experts (MoE) — used by Mixtral (Mistral, 2023), GPT-4, DeepSeek-V3 — activates only a subset of parameters per token via learned routing. DeepSeek-V3's 671B total parameters use only
-      37B per token, achieving dense-model quality at sparse-model inference cost.
-    source_title: DeepSeek-V3 Technical Report (2024)
+      Model Soups (Wortsman et al. 2022, ICML) showed that averaging the weights of multiple fine-tuned models can improve accuracy without any additional inference cost, challenging the "single best
+      model" paradigm.
+    source_title: "Wortsman, Mitchell, et al. Model Soups: Averaging Weights of Multiple Fine-Tuned Models. ICML 2022"
+    source_url: https://arxiv.org/abs/2203.05482
     confidence: high
-  - id: af-model-merging-and-ensembling-2
+  - id: f2
     statement: >-
-      Model merging (Wortsman et al., 2022) demonstrates that averaging weights of multiple fine-tuned models — without additional training — can create models that outperform any individual source.
-      Techniques include linear interpolation (LERP), SLERP, and task arithmetic.
-    source_title: Wortsman et al., Model Soups (2022) / Ilharco et al., Editing Models with Task Arithmetic (2023)
+      TIES-Merging (Ilharco et al. 2023, ICLR) resolves interference between models by trimming redundant parameters, resolving sign conflicts, and merging only the parameters that agree — enabling
+      effective model merging.
+    source_title: Ilharco, Gabriel, et al. Editing Models with Task Arithmetic. ICLR 2023
+    source_url: https://arxiv.org/abs/2212.04089
     confidence: high
+  - id: f3
+    statement: >-
+      MergeKit and HuggingFace's model merging ecosystem enables community-driven combination of open-source LLMs, producing merged models that outperform individual base models on multiple
+      benchmarks.
+    source_title: "HuggingFace. MergeKit: Tools for Merging Pretrained Large Language Models. 2024"
+    source_url: https://huggingface.co/blog/mlabonne/merge-models
+    confidence: medium
 completeness: 0.9
 primary_sources:
   - title: "Model Soups: Averaging Weights of Multiple Fine-Tuned Models Improves Accuracy"

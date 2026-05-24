@@ -15,17 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-advanced-rag-techniques-1
+  - id: f1
     statement: >-
-      Naive RAG retrieves chunks → generates answer. Advanced RAG adds: HyDE (hypothetical document embeddings — generate a hypothetical answer first, then retrieve similar documents), multi-hop
-      retrieval (decompose complex queries into sub-queries), and re-ranking (cross-encoder re-scores retrieved documents for precision).
-    source_title: "Gao et al., Retrieval-Augmented Generation for Large Language Models: A Survey (2023)"
+      Retrieval-Augmented Generation (RAG) (Lewis et al. 2020, Meta AI) combines pre-trained language models with non-parametric memory via dense retrieval, significantly reducing hallucination in
+      knowledge-intensive tasks.
+    source_title: Lewis, Patrick, et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. NeurIPS 2020
+    source_url: https://arxiv.org/abs/2005.11401
     confidence: high
-  - id: af-advanced-rag-techniques-2
+  - id: f2
     statement: >-
-      Agentic RAG (2024-2025) treats retrieval as an agent loop: the LLM plans which tools to call (vector DB, web search, SQL, API), executes retrieval, evaluates results, and iterates — achieving up
-      to 2x accuracy improvement over naive RAG on multi-step reasoning tasks.
-    source_title: Microsoft / LangChain Agentic RAG (2024)
+      Self-RAG (Asai et al. 2023, UW/Allen AI) introduces self-reflection tokens that enable the model to decide when to retrieve, critique its own generations, and select the best output during
+      inference.
+    source_title: "Asai, Akari, et al. Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection. ICLR 2024"
+    source_url: https://arxiv.org/abs/2310.11511
+    confidence: high
+  - id: f3
+    statement: >-
+      REALM (Guu et al. 2020, Google) pioneered retrieval-augmented language model pre-training, jointly optimizing the retriever and language model to improve knowledge-intensive benchmarks like
+      OpenQA.
+    source_title: "Guu, Kelvin, et al. REALM: Retrieval-Augmented Language Model Pre-Training. ICML 2020"
+    source_url: https://arxiv.org/abs/2002.08909
     confidence: high
 completeness: 0.9
 primary_sources:

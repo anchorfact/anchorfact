@@ -15,17 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-parameter-efficient-fine-tuning-1
+  - id: f1
     statement: >-
-      LoRA (Low-Rank Adaptation, Hu et al., 2021) freezes pre-trained weights and injects trainable low-rank matrices into attention layers — reducing trainable parameters by 10,000x while matching
-      full fine-tuning performance. A 7B model can be fine-tuned on a single consumer GPU.
-    source_title: Hu et al., ICLR (2022)
+      LoRA (Hu et al. 2022, Microsoft, ICLR) decomposes weight updates into low-rank matrices, reducing trainable parameters by 10,000× while maintaining full fine-tuning quality — enabling adaptation
+      of 175B models on a single GPU.
+    source_title: "Hu, Edward J., et al. LoRA: Low-Rank Adaptation of Large Language Models. ICLR 2022"
+    source_url: https://arxiv.org/abs/2106.09685
     confidence: high
-  - id: af-parameter-efficient-fine-tuning-2
+  - id: f2
     statement: >-
-      QLoRA (Dettmers et al., 2023) combines 4-bit NormalFloat quantization with LoRA, enabling fine-tuning of 65B parameter models on a single 48GB GPU — democratizing access to LLM customization
-      that previously required multiple A100s.
-    source_title: Dettmers et al., NeurIPS (2023)
+      QLoRA (Dettmers et al. 2023, NeurIPS) combines 4-bit quantization with LoRA, enabling fine-tuning of a 65B parameter model on a single 48GB GPU while preserving 99.3% of 16-bit fine-tuning
+      performance.
+    source_title: "Dettmers, Tim, et al. QLoRA: Efficient Finetuning of Quantized LLMs. NeurIPS 2023"
+    source_url: https://arxiv.org/abs/2305.14314
+    confidence: high
+  - id: f3
+    statement: >-
+      Prefix-Tuning (Li & Liang 2021, Stanford, ACL) prepends learnable continuous vectors to the input, achieving GPT-3-comparable performance while only training 0.1% of parameters — demonstrating
+      that prompting can be optimized via gradient descent.
+    source_title: "Li, Xiang Lisa, and Percy Liang. Prefix-Tuning: Optimizing Continuous Prompts for Generation. ACL 2021"
+    source_url: https://arxiv.org/abs/2101.00190
     confidence: high
 completeness: 0.9
 primary_sources:

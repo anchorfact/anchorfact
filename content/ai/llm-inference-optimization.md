@@ -15,17 +15,24 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-llm-inference-optimization-1
+  - id: f1
     statement: >-
-      FlashAttention (Dao et al., Stanford, 2022) reduces attention computation from O(n²) memory to O(n) by tiling and recomputing attention in SRAM, enabling training of models with 8x longer
-      sequences without approximation.
-    source_title: Dao et al., NeurIPS (2022)
+      vLLM (Kwon et al. 2023, UC Berkeley, SOSP) introduces PagedAttention — a virtual memory-inspired attention algorithm that reduces memory waste from KV-cache fragmentation by 80%, achieving 24×
+      higher throughput than HuggingFace Transformers.
+    source_title: Kwon, Woosuk, et al. Efficient Memory Management for Large Language Model Serving with PagedAttention. SOSP 2023
+    source_url: https://arxiv.org/abs/2309.06180
     confidence: high
-  - id: af-llm-inference-optimization-2
+  - id: f2
     statement: >-
-      Speculative decoding (Leviathan et al., 2023) uses a small draft model to propose multiple tokens, then a large model verifies them in parallel — achieving 2-3x inference speedup with no quality
-      loss.
-    source_title: Leviathan et al., ICML (2023)
+      FlashAttention (Dao et al. 2022, NeurIPS) reduces attention memory from O(N²) to O(N) via IO-aware tiling, and FlashAttention-2 (2023) further optimizes parallelism, achieving 2-4× speedup with
+      no approximation.
+    source_title: "Dao, Tri, et al. FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness. NeurIPS 2022"
+    source_url: https://arxiv.org/abs/2205.14135
+    confidence: high
+  - id: f3
+    statement: LLM.int8() (Dettmers et al. 2022, NeurIPS) enables 8-bit matrix multiplication for transformers with zero performance degradation by handling outlier features in FP16 and the rest in INT8.
+    source_title: "Dettmers, Tim, et al. LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale. NeurIPS 2022"
+    source_url: https://arxiv.org/abs/2208.07339
     confidence: high
 completeness: 0.9
 known_gaps:

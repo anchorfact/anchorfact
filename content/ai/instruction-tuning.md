@@ -15,17 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-instruction-tuning-1
+  - id: f1
     statement: >-
-      Instruction tuning — fine-tuning LLMs on (instruction, response) pairs — was popularized by FLAN (Wei et al., 2022), which demonstrated that training on 1,800+ tasks formatted as instructions
-      dramatically improved zero-shot performance on unseen tasks.
-    source_title: Wei et al., ICLR (2022)
+      FLAN (Wei et al. 2022, Google, ICLR) showed that fine-tuning language models on a diverse set of NLP tasks phrased as instructions enables zero-shot generalization to unseen tasks — inaugurating
+      instruction tuning.
+    source_title: Wei, Jason, et al. Finetuned Language Models Are Zero-Shot Learners. ICLR 2022
+    source_url: https://arxiv.org/abs/2109.01652
     confidence: high
-  - id: af-instruction-tuning-2
+  - id: f2
     statement: >-
-      Self-Instruct (Wang et al., 2023) generates instruction-following training data from the model itself using few-shot prompting, bootstrapping high-quality instruction datasets without human
-      annotation. Alpaca (Stanford, 2023) used this to fine-tune LLaMA 7B into an instruction-following model for under $600.
-    source_title: Wang et al., ACL (2023) / Taori et al., Alpaca (2023)
+      Scaling instruction tuning (Chung et al. 2022, Google, JMLR) with FLAN-T5 and FLAN-PaLM demonstrated that increasing the diversity and number of instruction-following tasks significantly
+      improves generalization.
+    source_title: Chung, Hyung Won, et al. Scaling Instruction-Finetuned Language Models. JMLR 2023
+    source_url: https://arxiv.org/abs/2210.11416
+    confidence: high
+  - id: f3
+    statement: >-
+      Instruction tuning is distinct from RLHF — it teaches models to follow natural language instructions via supervised learning on (instruction, response) pairs, forming the foundation of
+      ChatGPT-style conversational abilities.
+    source_title: Ouyang, Long, et al. Training Language Models to Follow Instructions with Human Feedback. NeurIPS 2022
+    source_url: https://arxiv.org/abs/2203.02155
     confidence: high
 completeness: 0.9
 primary_sources:

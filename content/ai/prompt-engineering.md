@@ -15,17 +15,24 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-prompt-engineering-1
+  - id: f1
     statement: >-
-      Chain-of-thought prompting (Wei et al., 2022) elicits step-by-step reasoning by including "Let's think step by step" in prompts, improving LLM accuracy on arithmetic, commonsense, and symbolic
-      reasoning tasks by 10-40% without model modification.
-    source_title: Wei et al., NeurIPS (2022)
+      Chain-of-Thought prompting (Wei et al. 2022, Google, NeurIPS) elicits step-by-step reasoning by adding "Let's think step by step" to prompts, dramatically improving performance on multi-step
+      reasoning tasks like math and commonsense QA.
+    source_title: Wei, Jason, et al. Chain-of-Thought Prompting Elicits Reasoning in Large Language Models. NeurIPS 2022
+    source_url: https://arxiv.org/abs/2201.11903
     confidence: high
-  - id: af-prompt-engineering-2
+  - id: f2
+    statement: Tree of Thoughts (Yao et al. 2023, NeurIPS) extends CoT by exploring multiple reasoning paths via BFS/DFS with self-evaluation, achieving 74% on Game of 24 vs 4% with standard prompting.
+    source_title: "Yao, Shunyu, et al. Tree of Thoughts: Deliberate Problem Solving with Large Language Models. NeurIPS 2023"
+    source_url: https://arxiv.org/abs/2305.10601
+    confidence: high
+  - id: f3
     statement: >-
-      Few-shot prompting — providing 2-5 task examples in the prompt without weight updates — enables GPT-3 to perform translation, question answering, and code generation at competitive levels,
-      demonstrating LLMs as meta-learners.
-    source_title: Brown et al., NeurIPS (2020)
+      Few-shot prompting (Brown et al. 2020, GPT-3) showed that providing 1-64 input-output examples in the prompt enables LLMs to perform new tasks without any gradient updates, establishing
+      in-context learning as a fundamental capability.
+    source_title: Brown, Tom B., et al. Language Models are Few-Shot Learners. NeurIPS 2020
+    source_url: https://arxiv.org/abs/2005.14165
     confidence: high
 completeness: 0.9
 known_gaps:

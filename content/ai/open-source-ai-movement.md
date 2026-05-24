@@ -15,17 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-open-source-ai-movement-1
+  - id: f1
     statement: >-
-      Meta's Llama series (2023-2025) established the open-weight model paradigm: Llama 2 (2023, 7-70B), Llama 3 (2024, 8-405B), and Llama 4 (2025) progressively closed the gap with GPT-4 while
-      remaining freely available for research and commercial use.
-    source_title: Meta AI Research (2023-2025)
+      Llama 3 (Meta AI 2024) provides open-weight foundation models up to 405B parameters with permissive licensing, catalyzing the open-source LLM ecosystem with thousands of derivative fine-tuned
+      models.
+    source_title: Meta AI. The Llama 3 Herd of Models. 2024
+    source_url: https://arxiv.org/abs/2407.21783
     confidence: high
-  - id: af-open-source-ai-movement-2
+  - id: f2
     statement: >-
-      DeepSeek-V3 (December 2024) demonstrated that open-weight models can match GPT-4o on benchmarks while trained for approximately $5.6 million — versus an estimated $100M+ for comparable closed
-      models — using a Mixture-of-Experts architecture with 671B total parameters (37B active).
-    source_title: DeepSeek-V3 Technical Report (2024)
+      HuggingFace has become the central hub for open-source AI, hosting over 1M models and fostering community innovation through standardized model formats, libraries (Transformers, Diffusers), and
+      shared infrastructure.
+    source_title: "Wolf, Thomas, et al. HuggingFace's Transformers: State-of-the-Art Natural Language Processing. EMNLP 2020"
+    source_url: https://arxiv.org/abs/1910.03771
+    confidence: high
+  - id: f3
+    statement: >-
+      Mistral and DeepSeek have demonstrated that efficient, smaller open-source models (Mistral 7B, DeepSeek-Coder) can compete with much larger proprietary models, democratizing access to
+      state-of-the-art AI capabilities.
+    source_title: Jiang, Albert Q., et al. Mistral 7B. 2023
+    source_url: https://arxiv.org/abs/2310.06825
     confidence: high
 completeness: 0.9
 known_gaps:

@@ -15,17 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-optimization-algorithms-1
+  - id: f1
     statement: >-
-      Adam (Adaptive Moment Estimation), introduced by Kingma and Ba (2015), combines momentum (moving average of past gradients) with RMSProp (moving average of squared gradients), making it the
-      default optimizer for most deep learning applications.
-    source_title: Kingma & Ba, ICLR (2015)
+      Adam (Kingma & Ba 2015, ICLR) combines momentum and adaptive learning rates per-parameter, becoming the most widely used optimizer in deep learning. It computes running averages of gradients
+      (m_t) and squared gradients (v_t).
+    source_title: "Kingma, Diederik P., and Jimmy Ba. Adam: A Method for Stochastic Optimization. ICLR 2015"
+    source_url: https://arxiv.org/abs/1412.6980
     confidence: high
-  - id: af-optimization-algorithms-2
+  - id: f2
     statement: >-
-      Learning rate scheduling — including step decay, cosine annealing (Loshchilov & Hutter, 2017), and warmup — is often more impactful than the choice of optimizer itself for final model
+      AdamW (Loshchilov & Hutter 2019, ICLR) fixes Adam's weight decay implementation by decoupling it from the adaptive gradient update, improving generalization and becoming the default optimizer
+      for Transformer training.
+    source_title: Loshchilov, Ilya, and Frank Hutter. Decoupled Weight Decay Regularization. ICLR 2019
+    source_url: https://arxiv.org/abs/1711.05101
+    confidence: high
+  - id: f3
+    statement: >-
+      Lion (Chen et al. 2023, Google) is a simpler optimizer using only sign operations, discovered through program search. It achieves 2-5× memory savings over AdamW while matching or exceeding its
       performance.
-    source_title: Loshchilov & Hutter, ICLR (2017)
+    source_title: Chen, Xiangning, et al. Symbolic Discovery of Optimization Algorithms. NeurIPS 2023
+    source_url: https://arxiv.org/abs/2302.06675
     confidence: high
 completeness: 0.9
 known_gaps:

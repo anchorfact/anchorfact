@@ -15,15 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-text-to-speech-1
-    statement: Tacotron 2 (Google, 2018) combines a sequence-to-sequence model with modified WaveNet vocoder, achieving MOS (Mean Opinion Score) of 4.53 — comparable to professional human recordings (4.58).
-    source_title: Shen et al., ICASSP (2018)
-    confidence: high
-  - id: af-text-to-speech-2
+  - id: f1
     statement: >-
-      ElevenLabs (2023) introduced voice cloning from 1-minute audio samples, generating emotionally expressive speech with natural prosody and intonation patterns that can whisper, laugh, and convey
-      10+ distinct emotions.
-    source_title: ElevenLabs Research Blog (2023)
+      WaveNet (van den Oord et al. 2016, DeepMind) was the first generative model to produce raw audio waveforms directly, using dilated causal convolutions to achieve natural-sounding speech
+      synthesis that halved the gap to human speech.
+    source_title: "van den Oord, Aaron, et al. WaveNet: A Generative Model for Raw Audio. DeepMind 2016"
+    source_url: https://arxiv.org/abs/1609.03499
+    confidence: high
+  - id: f2
+    statement: >-
+      Tacotron 2 (Shen et al. 2018, Google) generates mel spectrograms from text using a sequence-to-sequence model with attention, then synthesizes audio via a modified WaveNet vocoder, approaching
+      human parity on MOS scores.
+    source_title: Shen, Jonathan, et al. Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions. 2018
+    source_url: https://arxiv.org/abs/1712.05884
+    confidence: high
+  - id: f3
+    statement: >-
+      VALL-E (Wang et al. 2023, Microsoft) treats TTS as a conditional language modeling task using discrete audio codec tokens, enabling zero-shot voice cloning from just 3 seconds of reference
+      audio.
+    source_title: Wang, Chengyi, et al. Neural Codec Language Models are Zero-Shot Text to Speech Synthesizers. 2023
+    source_url: https://arxiv.org/abs/2301.02111
     confidence: high
 completeness: 0.9
 known_gaps:

@@ -15,15 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-long-context-models-1
-    statement: Claude (Anthropic) supports 200K token context windows (approximately 150,000 words or 500 pages), enabling processing of entire books, codebases, or full legal documents in a single prompt.
-    source_title: "Anthropic: Claude Model Card (2024)"
-    confidence: high
-  - id: af-long-context-models-2
+  - id: f1
     statement: >-
-      Gemini 1.5 Pro (Google, February 2024) demonstrated near-perfect retrieval (>99%) across 1M token context windows, proving that long-context models can reliably use information throughout the
-      entire input.
-    source_title: Gemini 1.5 Technical Report (2024)
+      Structured State Space Models (S4, Gu et al. 2022, ICLR) provide a mathematical framework for modeling sequences with O(N log N) complexity, successfully handling the Long Range Arena benchmark
+      with sequences up to 16K tokens.
+    source_title: Gu, Albert, Karan Goel, and Christopher Ré. Efficiently Modeling Long Sequences with Structured State Spaces. ICLR 2022
+    source_url: https://arxiv.org/abs/2111.00396
+    confidence: high
+  - id: f2
+    statement: >-
+      Mamba (Gu & Dao 2023, ICML 2024) introduces a selective SSM that achieves Transformer-quality language modeling with linear time complexity, processing sequences 5× faster than Transformers of
+      equivalent size.
+    source_title: "Gu, Albert, and Tri Dao. Mamba: Linear-Time Sequence Modeling with Selective State Spaces. ICML 2024"
+    source_url: https://arxiv.org/abs/2312.00752
+    confidence: high
+  - id: f3
+    statement: >-
+      Gemini 1.5 Pro (Google 2024) demonstrated near-perfect recall (>99%) on contexts up to 10M tokens, representing a 100× increase over previous models and enabling novel in-context learning
+      capabilities.
+    source_title: "Google DeepMind. Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context. 2024"
+    source_url: https://arxiv.org/abs/2403.05530
     confidence: high
 completeness: 0.9
 known_gaps:

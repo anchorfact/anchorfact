@@ -15,17 +15,26 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: af-graph-neural-networks-1
+  - id: f1
     statement: >-
-      Graph Neural Networks (GNNs) learn representations of nodes, edges, or entire graphs through iterative message passing: each node aggregates features from its neighbors, transforms them via a
-      neural network, and updates its own representation.
-    source_title: Kipf & Welling, ICLR (2017) / Hamilton et al., NeurIPS (2017)
+      Graph Neural Networks (GNNs) operate on graph-structured data by message passing between nodes. The Graph Convolutional Network (GCN, Kipf & Welling 2017, ICLR) uses a first-order approximation
+      of spectral graph convolutions.
+    source_title: Kipf, Thomas N., and Max Welling. Semi-Supervised Classification with Graph Convolutional Networks. ICLR 2017
+    source_url: https://arxiv.org/abs/1609.02907
     confidence: high
-  - id: af-graph-neural-networks-2
+  - id: f2
     statement: >-
-      GNNs achieve state-of-the-art on molecular property prediction (QM9, OGB benchmarks), recommendation systems (Pinterest PinSage, deployed at billion-node scale), and knowledge graph reasoning —
-      domains where data is inherently graph-structured.
-    source_title: OGB (Open Graph Benchmark) / PinSage Paper (2018)
+      Graph Attention Networks (GAT, Veličković et al. 2018, ICLR) introduce attention mechanisms to GNNs, enabling nodes to assign different importance weights to different neighbors during message
+      aggregation.
+    source_title: Veličković, Petar, et al. Graph Attention Networks. ICLR 2018
+    source_url: https://arxiv.org/abs/1710.10903
+    confidence: high
+  - id: f3
+    statement: >-
+      GNNs power major scientific discoveries: Google DeepMind's GNoME (Nature 2023) used GNNs to discover 2.2M stable crystals, and AlphaFold uses GNN-like architectures for protein structure
+      prediction.
+    source_title: Merchant, Amil, et al. Scaling Deep Learning for Materials Discovery. Nature 2023
+    source_url: https://www.nature.com/articles/s41586-023-06735-9
     confidence: high
 completeness: 0.9
 primary_sources:
