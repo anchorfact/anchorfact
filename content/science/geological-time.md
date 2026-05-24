@@ -47,6 +47,21 @@ primary_sources:
     year: 2020
     url: https://www.macmillanlearning.com/college/us/product/Earth-System-History/p/1319154022
     institution: W.H. Freeman
+  - title: Earth System History (5th Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Stanley S.M.
+      - Luczaj J.A.
+    institution: W.H. Freeman
+    url: https://www.macmillanlearning.com/earth-history/
+  - title: "The Geologic Time Scale 2025: Updated International Chronostratigraphic Chart"
+    type: report
+    year: 2025
+    authors:
+      - ICS
+    institution: International Commission on Stratigraphy
+    url: https://stratigraphy.org/chart
 secondary_sources:
   - title: A Geologic Time Scale 2020 (Gradstein, Ogg, Schmitz, Ogg — Elsevier)
     type: textbook

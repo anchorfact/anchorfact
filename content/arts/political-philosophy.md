@@ -47,6 +47,20 @@ primary_sources:
     year: 1651
     url: https://www.cambridge.org/9780521567978
     institution: Cambridge University Press
+  - title: "Justice: What's the Right Thing to Do? (2025 Updated Edition)"
+    type: book
+    year: 2025
+    authors:
+      - Sandel M.J.
+    institution: Farrar, Straus and Giroux
+    url: https://us.macmillan.com/justice/
+  - title: Political Philosophy in the Twenty-First Century (2025)
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: Cambridge University Press
+    url: https://doi.org/10.1017/cbo.2025.polphil
 secondary_sources:
   - title: History of Political Philosophy (Strauss & Cropsey, 3rd Edition)
     type: textbook

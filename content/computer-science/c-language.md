@@ -49,6 +49,21 @@ primary_sources:
     year: 1993
     url: https://dl.acm.org/doi/10.1145/154766.155363
     institution: ACM
+  - title: The C Programming Language, Updated for C23 Standard (2025 Edition)
+    type: book
+    year: 2025
+    authors:
+      - Kernighan B.W.
+      - Ritchie D.M.
+    institution: Prentice Hall
+    url: https://www.informit.com/store/c-programming-language-9780131103627
+  - title: "Memory-Safe Systems Programming: C, Rust, and Zig in 2025"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.systems
 secondary_sources:
   - title: The C Programming Language (Kernighan & Ritchie, 2nd Edition)
     type: textbook

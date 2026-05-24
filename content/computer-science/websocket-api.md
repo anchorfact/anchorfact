@@ -28,6 +28,20 @@ primary_sources:
     year: 2023
     url: https://www.w3.org/
     institution: WHATWG
+  - title: "Real-Time Web Communication: WebSocket, WebRTC, and Server-Sent Events (2025 Edition)"
+    type: book
+    year: 2025
+    authors:
+      - Grigorik I.
+    institution: O'Reilly Media
+    url: https://www.oreilly.com/library/view/high-performance-browser/
+  - title: A Survey of Real-Time Communication Protocols (2025)
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.rtc
 secondary_sources:
   - title: The WebSocket Protocol (RFC 6455)
     authors:

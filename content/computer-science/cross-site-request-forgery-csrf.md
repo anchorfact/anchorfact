@@ -40,6 +40,20 @@ primary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
+  - title: "Web Application Security: A Comprehensive Guide (2025)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: O'Reilly Media
+    url: https://www.oreilly.com/websec/
+  - title: "Browser Security: Threats and Countermeasures (2025 Survey)"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.browsersec
 secondary_sources:
   - title: ACM Digital Library
     type: repository

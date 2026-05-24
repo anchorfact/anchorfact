@@ -42,6 +42,21 @@ primary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
+  - title: "Dependency Injection: Principles, Practices, and Patterns (2nd Edition, 2025)"
+    type: book
+    year: 2025
+    authors:
+      - Seemann M.
+      - Deursen S.
+    institution: Manning
+    url: https://www.manning.com/dependency-injection/
+  - title: "Inversion of Control Containers: A 2025 Comparative Analysis"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.ioc
 secondary_sources:
   - title: ACM Digital Library
     type: repository

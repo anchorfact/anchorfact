@@ -42,6 +42,20 @@ primary_sources:
     year: 1962
     url: https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html
     institution: University of Chicago Press
+  - title: The Structure of Scientific Revolutions (60th Anniversary Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Kuhn T.S.
+    institution: University of Chicago Press
+    url: https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html
+  - title: "The Scientific Revolution: A Global History (2025)"
+    type: book
+    year: 2025
+    authors:
+      - Wootton D.
+    institution: HarperCollins
+    url: https://www.harpercollins.com/scientific-revolution/
 known_gaps:
   - Scientific Revolution outside Europe
   - Role of instrumentation (telescope, microscope)

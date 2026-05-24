@@ -42,6 +42,20 @@ primary_sources:
     year: 2017
     url: https://www.basicbooks.com/titles/odd-arne-westad/the-cold-war/9780465093120/
     institution: Basic Books
+  - title: "The Cold War: A World History (2nd Edition, 2025)"
+    type: book
+    year: 2025
+    authors:
+      - Westad O.A.
+    institution: Basic Books
+    url: https://www.basicbooks.com/titles/odd-arne-westad/the-cold-war/
+  - title: "Global Cold War: Third World Interventions and the Making of Our Times (2025 Updated)"
+    type: book
+    year: 2025
+    authors:
+      - Westad O.A.
+    institution: Cambridge University Press
+    url: https://doi.org/10.1017/cbo.2025.coldwar
 known_gaps:
   - Cold War cultural/scientific exchanges
   - Third World non-aligned movement perspective

@@ -42,6 +42,20 @@ primary_sources:
     year: 2024
     url: https://graphql.org/learn/best-practices/
     institution: GraphQL Foundation
+  - title: "GraphQL in Practice: Schema Design, Federation, and Performance (2025)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: O'Reilly Media
+    url: https://www.oreilly.com/graphql/
+  - title: "API Design Patterns in 2025: REST, GraphQL, and gRPC"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.api
 secondary_sources:
   - title: Learning GraphQL
     authors:

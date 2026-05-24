@@ -38,6 +38,20 @@ primary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
+  - title: The Fourier Transform and Its Applications (4th Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Bracewell R.N.
+    institution: McGraw-Hill
+    url: https://www.mheducation.com/fourier/
+  - title: "FFT Algorithms: From Cooley-Tukey to Modern GPU Implementations (2025 Survey)"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.fft
 secondary_sources:
   - title: ACM Digital Library
     type: repository

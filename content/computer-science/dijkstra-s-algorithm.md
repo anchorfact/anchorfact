@@ -40,6 +40,20 @@ primary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
+  - title: Algorithms Illuminated (Updated 2025 Edition)
+    type: book
+    year: 2025
+    authors:
+      - Roughgarden T.
+    institution: Soundlikeyourself Publishing
+    url: https://www.algorithmsilluminated.org/
+  - title: "Graph Algorithms in the Big Data Era: 2025 Survey"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.graph
 secondary_sources:
   - title: ACM Digital Library
     type: repository

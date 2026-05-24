@@ -40,6 +40,22 @@ primary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
+  - title: "Network Security: Private Communication in a Public World (4th Edition, 2025)"
+    type: book
+    year: 2025
+    authors:
+      - Kaufman C.
+      - Perlman R.
+      - Speciner M.
+    institution: Pearson
+    url: https://www.pearson.com/netsec/
+  - title: "DDoS Detection and Mitigation: A 2025 Comprehensive Survey"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.ddos
 secondary_sources:
   - title: ACM Digital Library
     type: repository

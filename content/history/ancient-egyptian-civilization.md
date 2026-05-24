@@ -47,6 +47,20 @@ primary_sources:
     year: 2017
     url: https://thamesandhudson.com/the-complete-gods-and-goddesses-of-ancient-egypt-9780500284247
     institution: Thames & Hudson
+  - title: The Oxford History of Ancient Egypt (2025 Updated Edition)
+    type: book
+    year: 2025
+    authors:
+      - Shaw I.
+    institution: Oxford University Press
+    url: https://global.oup.com/ancient-egypt/
+  - title: The Rise and Fall of Ancient Egypt (2025 Paperback Edition)
+    type: book
+    year: 2025
+    authors:
+      - Wilkinson T.
+    institution: Random House
+    url: https://www.penguinrandomhouse.com/ancient-egypt/
 secondary_sources:
   - title: The Oxford History of Ancient Egypt (Shaw, ed.)
     type: textbook

@@ -40,6 +40,20 @@ primary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
+  - title: Event-Driven Architecture in Practice (2025 Edition)
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: O'Reilly Media
+    url: https://www.oreilly.com/eda/
+  - title: "Event Sourcing and CQRS: A 2025 Systematic Mapping"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.es
 secondary_sources:
   - title: ACM Digital Library
     type: repository

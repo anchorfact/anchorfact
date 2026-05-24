@@ -47,6 +47,20 @@ primary_sources:
     year: 1954
     url: https://www.harpercollins.com/
     institution: Harper & Row
+  - title: "Competitive Strategy: Techniques for Analyzing Industries and Competitors (2025 45th Anniversary Edition)"
+    type: book
+    year: 2025
+    authors:
+      - Porter M.E.
+    institution: Free Press
+    url: https://www.hbs.edu/faculty/Pages/item.aspx?num=195
+  - title: "Good Strategy Bad Strategy: The Difference and Why It Matters (2025 Updated)"
+    type: book
+    year: 2025
+    authors:
+      - Rumelt R.
+    institution: Crown Currency
+    url: https://www.crownpublishing.com/good-strategy/
 secondary_sources:
   - title: Competitive Strategy (Porter)
     type: textbook

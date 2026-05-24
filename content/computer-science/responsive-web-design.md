@@ -39,6 +39,20 @@ primary_sources:
     year: 2010
     url: https://alistapart.com/article/responsive-web-design/
     institution: A List Apart
+  - title: "Responsive Web Design: Principles and Practice (2025)"
+    type: book
+    year: 2025
+    authors:
+      - Marcotte E.
+    institution: A Book Apart
+    url: https://abookapart.com/products/responsive-web-design
+  - title: "Web Accessibility and Inclusive Design: WCAG 2.2 Implementation Guide (2025)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: O'Reilly Media
+    url: https://www.oreilly.com/a11y/
 secondary_sources:
   - title: MDN Web Docs — Responsive Design
     type: documentation

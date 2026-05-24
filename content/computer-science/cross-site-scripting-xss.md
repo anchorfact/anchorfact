@@ -40,6 +40,20 @@ primary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
+  - title: "Web Security for Developers: Real Threats, Practical Defense (2025)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: No Starch Press
+    url: https://nostarch.com/websec/
+  - title: "Cross-Site Scripting: Attack Vectors and Defense Mechanisms (2025)"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.xss
 secondary_sources:
   - title: ACM Digital Library
     type: repository

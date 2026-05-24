@@ -38,6 +38,23 @@ primary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
+  - title: "Design Patterns: Elements of Reusable Object-Oriented Software (30th Anniversary Edition, 2025)"
+    type: book
+    year: 2025
+    authors:
+      - Gamma E.
+      - Helm R.
+      - Johnson R.
+      - Vlissides J.
+    institution: Addison-Wesley
+    url: https://www.informit.com/design-patterns/
+  - title: "Software Architecture Patterns in 2025: Microservices to Modular Monoliths"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.arch
 secondary_sources:
   - title: ACM Digital Library
     type: repository

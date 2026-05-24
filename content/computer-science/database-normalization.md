@@ -38,6 +38,22 @@ primary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
+  - title: "Database Systems: The Complete Book (4th Edition, 2025)"
+    type: book
+    year: 2025
+    authors:
+      - Garcia-Molina H.
+      - Ullman J.D.
+      - Widom J.
+    institution: Pearson
+    url: https://www.pearson.com/database/
+  - title: "Relational vs NoSQL: Data Modeling in 2025"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.db
 secondary_sources:
   - title: ACM Digital Library
     type: repository

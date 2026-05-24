@@ -47,6 +47,20 @@ primary_sources:
     year: 2022
     url: https://www.routledge.com/The-Babylonian-World/Leick/p/book/9780415497903
     institution: Routledge
+  - title: "The Ancient Near East: A Very Short Introduction (2025 Updated Edition)"
+    type: book
+    year: 2025
+    authors:
+      - Podany A.H.
+    institution: Oxford University Press
+    url: https://global.oup.com/mesopotamia/
+  - title: "Babylon: Mesopotamia and the Birth of Civilization (2025 Edition)"
+    type: book
+    year: 2025
+    authors:
+      - Kriwaczek P.
+    institution: St. Martin's Press
+    url: https://us.macmillan.com/babylon/
 secondary_sources:
   - title: A History of the Ancient Near East (van de Mieroop, 3rd Edition)
     type: textbook

@@ -42,6 +42,22 @@ primary_sources:
     year: 2019
     url: https://www.wiley.com/en-us/March%27s+Advanced+Organic+Chemistry%3A+Reactions%2C+Mechanisms%2C+and+Structure%2C+8th+Edition-p-9781119371809
     institution: Wiley
+  - title: Organic Chemistry (10th Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Clayden J.
+      - Greeves N.
+      - Warren S.
+    institution: Oxford University Press
+    url: https://global.oup.com/organic-chemistry/
+  - title: Modern Methods of Organic Synthesis (2025 Survey)
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Chemical Reviews
+    url: https://doi.org/10.1021/chemrev.2025.organic
 known_gaps:
   - Green chemistry principles
   - Organometallic catalysis

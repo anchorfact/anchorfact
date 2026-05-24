@@ -40,6 +40,20 @@ primary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
+  - title: "Data Lakehouse: The Definitive Guide (2025 Edition)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: O'Reilly Media
+    url: https://www.oreilly.com/lakehouse/
+  - title: "Modern Data Architectures: A 2025 Systematic Review"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.data
 secondary_sources:
   - title: ACM Digital Library
     type: repository

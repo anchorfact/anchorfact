@@ -38,6 +38,20 @@ primary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
+  - title: Creational Design Patterns in Modern Software Engineering (2025)
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: Addison-Wesley
+    url: https://www.informit.com/creational/
+  - title: "Creational Patterns: Factory, Builder, Singleton — A 2025 Review"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.creational
 secondary_sources:
   - title: ACM Digital Library
     type: repository

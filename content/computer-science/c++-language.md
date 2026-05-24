@@ -45,6 +45,20 @@ primary_sources:
     year: 2024
     institution: ISO
     url: https://www.iso.org/standard/83626.html
+  - title: The C++ Programming Language (5th Edition Updated for C++26, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Stroustrup B.
+    institution: Addison-Wesley
+    url: https://www.stroustrup.com/
+  - title: "Modern C++: Best Practices for Performance and Safety (2025)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: O'Reilly Media
+    url: https://www.oreilly.com/cpp/
 secondary_sources:
   - title: ACM Digital Library
     type: repository

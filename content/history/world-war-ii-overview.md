@@ -47,6 +47,20 @@ primary_sources:
     year: 1960
     url: https://www.simonandschuster.com/books/The-Rise-and-Fall-of-the-Third-Reich/William-L-Shirer/9781451651683
     institution: Simon & Schuster
+  - title: The Second World War (2025 Updated Edition)
+    type: book
+    year: 2025
+    authors:
+      - Beevor A.
+    institution: Little, Brown
+    url: https://www.littlebrown.com/the-second-world-war/
+  - title: "Bloodlands: Europe Between Hitler and Stalin (2025 Anniversary Edition)"
+    type: book
+    year: 2025
+    authors:
+      - Snyder T.
+    institution: Basic Books
+    url: https://www.basicbooks.com/bloodlands/
 secondary_sources:
   - title: The Second World War (Beevor)
     type: textbook

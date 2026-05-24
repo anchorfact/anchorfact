@@ -47,6 +47,24 @@ primary_sources:
     year: 2021
     url: https://www.christies.com/about-us/press-archive/details
     institution: Christie's
+  - title: "Art Since 1900: Modernism, Antimodernism, Postmodernism (4th Edition, 2025)"
+    type: book
+    year: 2025
+    authors:
+      - Foster H.
+      - Krauss R.
+      - Bois Y-A.
+      - Buchloh B.
+      - Joselit D.
+    institution: Thames & Hudson
+    url: https://thamesandhudson.com/art-since-1900/
+  - title: The Art Museum in the Age of Digital Reproduction (2025)
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: Tate Publishing
+    url: https://www.tate.org.uk/publishing/
 secondary_sources:
   - title: "Art Since 1900: Modernism, Antimodernism, Postmodernism (Foster et al., 3rd Edition)"
     type: textbook

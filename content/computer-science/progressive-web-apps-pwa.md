@@ -33,6 +33,20 @@ primary_sources:
     year: 2026
     url: https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps
     institution: Mozilla
+  - title: "Progressive Web Apps: Architecture, Performance, and Best Practices (2025)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: O'Reilly Media
+    url: https://www.oreilly.com/pwa/
+  - title: "Cross-Platform Mobile Development in 2025: PWA, React Native, and Flutter"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.mobile
 secondary_sources:
   - title: Service Workers Specification (W3C)
     type: standard

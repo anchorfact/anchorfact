@@ -41,6 +41,20 @@ primary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
+  - title: "Web Application Security: OWASP Top 10 and Beyond (2025 Edition)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: O'Reilly Media
+    url: https://www.oreilly.com/websec/
+  - title: "Application Security: A Comprehensive Survey (2025)"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.appsec
 secondary_sources:
   - title: ACM Digital Library
     type: repository

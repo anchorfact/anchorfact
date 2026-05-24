@@ -42,6 +42,23 @@ primary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
+  - title: Introduction to Algorithms (5th Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Cormen T.H.
+      - Leiserson C.E.
+      - Rivest R.L.
+      - Stein C.
+    institution: MIT Press
+    url: https://mitpress.mit.edu/books/introduction-algorithms-5th-edition
+  - title: "Greedy Algorithms: Design, Analysis, and Modern Applications (2025)"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.greedy
 secondary_sources:
   - title: ACM Digital Library
     type: repository

@@ -47,6 +47,21 @@ primary_sources:
     year: 2018
     url: https://www.pearson.com/en-us/subject-catalog/p/organizational-behavior/P200000005179
     institution: Pearson
+  - title: Organizational Behavior (20th Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Robbins S.P.
+      - Judge T.A.
+    institution: Pearson
+    url: https://www.pearson.com/ob/
+  - title: "Leadership: Theory and Practice (10th Edition, 2025)"
+    type: book
+    year: 2025
+    authors:
+      - Northouse P.G.
+    institution: SAGE
+    url: https://us.sagepub.com/leadership/
 secondary_sources:
   - title: Organizational Behavior (Robbins & Judge, 19th Edition)
     type: textbook

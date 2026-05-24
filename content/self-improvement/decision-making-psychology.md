@@ -47,6 +47,23 @@ primary_sources:
     year: 1979
     url: https://www.jstor.org/stable/1914185
     institution: Econometrica
+  - title: "Decisive: How to Make Better Choices in Life and Work (2025 Updated)"
+    type: book
+    year: 2025
+    authors:
+      - Heath C.
+      - Heath D.
+    institution: Crown Currency
+    url: https://www.crownpublishing.com/decisive/
+  - title: "Noise: A Flaw in Human Judgment (2025 Updated Edition)"
+    type: book
+    year: 2025
+    authors:
+      - Kahneman D.
+      - Sibony O.
+      - Sunstein C.R.
+    institution: Little, Brown Spark
+    url: https://www.littlebrown.com/noise/
 secondary_sources:
   - title: Thinking, Fast and Slow (Kahneman)
     type: textbook

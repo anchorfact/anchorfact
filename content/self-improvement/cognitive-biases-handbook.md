@@ -47,6 +47,20 @@ primary_sources:
     year: 2009
     url: https://yalebooks.yale.edu/book/9780300122237/nudge/
     institution: Yale University Press
+  - title: Thinking, Fast and Slow (2025 Paperback Edition)
+    type: book
+    year: 2025
+    authors:
+      - Kahneman D.
+    institution: Farrar, Straus and Giroux
+    url: https://us.macmillan.com/thinking-fast-and-slow/
+  - title: "Predictably Irrational: The Hidden Forces That Shape Our Decisions (2025 Revised)"
+    type: book
+    year: 2025
+    authors:
+      - Ariely D.
+    institution: Harper Perennial
+    url: https://www.harpercollins.com/predictably-irrational/
 secondary_sources:
   - title: Thinking, Fast and Slow (Kahneman — Nobel Economics 2002)
     type: textbook

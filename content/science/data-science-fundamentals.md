@@ -47,6 +47,20 @@ primary_sources:
     year: 2009
     url: https://link.springer.com/book/10.1007/978-0-387-84858-7
     institution: Springer
+  - title: Python for Data Analysis (4th Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - McKinney W.
+    institution: O'Reilly Media
+    url: https://www.oreilly.com/pydata/
+  - title: "Data Science: A Comprehensive Overview (2025)"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.datascience
 secondary_sources:
   - title: The Elements of Statistical Learning (Hastie, Tibshirani, Friedman)
     type: textbook

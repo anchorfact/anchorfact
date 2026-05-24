@@ -42,6 +42,21 @@ primary_sources:
     year: 2010
     url: https://www.strategyzer.com/books/business-model-generation
     institution: Wiley
+  - title: "The Lean Startup: How Constant Innovation Creates Radically Successful Businesses (2025 15th Anniversary Edition)"
+    type: book
+    year: 2025
+    authors:
+      - Ries E.
+    institution: Crown Business
+    url: https://theleanstartup.com/
+  - title: "Zero to One: Notes on Startups (2025 Updated Edition)"
+    type: book
+    year: 2025
+    authors:
+      - Thiel P.
+      - Masters B.
+    institution: Crown Business
+    url: https://www.crownpublishing.com/zero-to-one/
 known_gaps:
   - Deep tech venture building
   - International startup ecosystem comparison

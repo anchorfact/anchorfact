@@ -45,6 +45,20 @@ primary_sources:
     year: 2015
     url: https://www.rfc-editor.org/rfc/rfc7519
     institution: IETF
+  - title: API Security in Action (2025 Edition)
+    type: book
+    year: 2025
+    authors:
+      - Madden N.
+    institution: Manning
+    url: https://www.manning.com/api-security/
+  - title: "OAuth 2.1 and JWT: The Modern Authentication Stack (2025)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: O'Reilly Media
+    url: https://www.oreilly.com/oauth/
 secondary_sources:
   - title: RFC 7519 — JSON Web Token (JWT)
     authors:

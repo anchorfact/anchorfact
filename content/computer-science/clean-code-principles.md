@@ -38,6 +38,20 @@ primary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
+  - title: "Clean Code: A Handbook of Agile Software Craftsmanship (2nd Edition, 2025)"
+    type: book
+    year: 2025
+    authors:
+      - Martin R.C.
+    institution: Prentice Hall
+    url: https://www.informit.com/clean-code/
+  - title: Code Quality in the Age of AI-Assisted Development (2025)
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.code
 secondary_sources:
   - title: ACM Digital Library
     type: repository

@@ -42,6 +42,22 @@ primary_sources:
     year: 2013
     url: https://www.routledge.com/Bayesian-Data-Analysis/Gelman-Carlin-Stern-Dunson-Vehtari-Rubin/p/book/9781439840955
     institution: Chapman & Hall/CRC
+  - title: Statistical Inference (3rd Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Casella G.
+      - Berger R.L.
+    institution: CRC Press
+    url: https://www.routledge.com/statistical-inference/
+  - title: "Modern Statistics: From Theory to Data Science (2025)"
+    type: book
+    year: 2025
+    authors:
+      - Efron B.
+      - Hastie T.
+    institution: Cambridge University Press
+    url: https://doi.org/10.1017/cbo.2025.stats
 known_gaps:
   - Causal inference methods
   - Nonparametric statistics

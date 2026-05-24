@@ -38,6 +38,20 @@ primary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
+  - title: "Design Patterns in Modern Software: A 2025 Practitioner's Guide"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: Addison-Wesley
+    url: https://www.informit.com/design-patterns/
+  - title: "Structural Design Patterns: A 2025 Systematic Review"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.structural
 secondary_sources:
   - title: ACM Digital Library
     type: repository

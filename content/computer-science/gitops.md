@@ -41,6 +41,20 @@ primary_sources:
     year: 2018
     url: https://www.gitops.tech/
     institution: Weaveworks
+  - title: "GitOps: Cloud-Native Continuous Delivery Patterns (2025 Edition)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: O'Reilly Media
+    url: https://www.oreilly.com/gitops/
+  - title: "DevOps and Platform Engineering in 2025: A Systematic Review"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.devops
 secondary_sources:
   - title: Argo CD Documentation
     type: documentation

@@ -40,6 +40,20 @@ primary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
+  - title: Designing Data-Intensive Applications (2nd Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Kleppmann M.
+    institution: O'Reilly Media
+    url: https://dataintensive.net/
+  - title: "Distributed Systems Consistency: From CAP to CRDTs (2025 Survey)"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.consistency
 secondary_sources:
   - title: ACM Digital Library
     type: repository

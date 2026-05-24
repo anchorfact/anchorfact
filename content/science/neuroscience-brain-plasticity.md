@@ -47,6 +47,23 @@ primary_sources:
     year: 2007
     url: https://www.penguinrandomhouse.com/books/27972/the-brain-that-changes-itself-by-norman-doidge/
     institution: Penguin
+  - title: Principles of Neural Science (7th Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Kandel E.R.
+      - Koester J.D.
+      - Mack S.H.
+      - Siegelbaum S.A.
+    institution: McGraw-Hill
+    url: https://neurology.mhmedical.com/book.aspx?bookid=3024
+  - title: "Neuroplasticity: From Synaptic to Systems Level (2025 Review)"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Nature Reviews Neuroscience
+    url: https://doi.org/10.1038/s41583-2025-plasticity
 secondary_sources:
   - title: Principles of Neural Science (Kandel et al., 6th Edition)
     type: textbook

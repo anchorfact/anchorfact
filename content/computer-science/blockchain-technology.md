@@ -38,6 +38,20 @@ primary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
+  - title: "Blockchain and Web3: A Developer's Guide (2025 Edition)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: O'Reilly Media
+    url: https://www.oreilly.com/blockchain/
+  - title: "Blockchain Consensus and Applications: A 2025 Systematic Survey"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.blockchain
 secondary_sources:
   - title: ACM Digital Library
     type: repository

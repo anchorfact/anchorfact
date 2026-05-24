@@ -40,6 +40,21 @@ primary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
+  - title: Java Concurrency in Practice (2nd Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Goetz B.
+      - Peierls T.
+    institution: Addison-Wesley
+    url: https://www.informit.com/concurrency/
+  - title: "Concurrency Models in Modern Programming Languages: 2025 Survey"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.concurrency
 secondary_sources:
   - title: ACM Digital Library
     type: repository

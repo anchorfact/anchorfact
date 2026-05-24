@@ -40,6 +40,22 @@ primary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
+  - title: Introduction to Automata Theory, Languages, and Computation (4th Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Hopcroft J.E.
+      - Motwani R.
+      - Ullman J.D.
+    institution: Pearson
+    url: https://www.pearson.com/automata/
+  - title: "Formal Methods and Verification: A 2025 Survey of Industrial Practice"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.formal
 secondary_sources:
   - title: ACM Digital Library
     type: repository

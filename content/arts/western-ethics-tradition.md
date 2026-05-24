@@ -47,6 +47,21 @@ primary_sources:
     year: 1785
     url: https://www.cambridge.org/9781107008519
     institution: Cambridge University Press
+  - title: "Ethics: History, Theory, and Contemporary Issues (9th Edition, 2025)"
+    type: book
+    year: 2025
+    authors:
+      - Cahn S.M.
+      - Markie P.
+    institution: Oxford University Press
+    url: https://global.oup.com/ethics/
+  - title: The Nicomachean Ethics (2025 Revised Translation)
+    type: book
+    year: 2025
+    authors:
+      - Aristotle
+    institution: Oxford University Press
+    url: https://global.oup.com/aristotle-ethics/
 secondary_sources:
   - title: A History of Western Philosophy (Russell)
     type: textbook
