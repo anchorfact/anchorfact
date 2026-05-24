@@ -51,6 +51,21 @@ primary_sources:
       - Voss C.
     institution: Harper Business
     url: https://www.harpercollins.com/never-split-the-difference/
+  - title: Getting to Yes (2025 Updated)
+    type: book
+    year: 2025
+    authors:
+      - Fisher R.
+      - Ury W.
+    institution: Penguin
+    url: https://www.penguinrandomhouse.com/getting-to-yes/
+  - title: Never Split the Difference (2025)
+    type: book
+    year: 2025
+    authors:
+      - Voss C.
+    institution: Harper Business
+    url: https://www.harpercollins.com/never-split/
 secondary_sources:
   - title: "Getting to Yes: Negotiating Agreement Without Giving In"
     type: book

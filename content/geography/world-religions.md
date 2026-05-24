@@ -65,6 +65,13 @@ primary_sources:
       - Prothero S.
     institution: HarperOne
     url: https://www.harpercollins.com/world-religions/
+  - title: God Is Not One (2025 Updated)
+    type: book
+    year: 2025
+    authors:
+      - Prothero S.
+    institution: HarperOne
+    url: https://www.harpercollins.com/world-religions/
 secondary_sources:
   - title: CIA World Factbook
     type: database

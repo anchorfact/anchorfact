@@ -62,6 +62,13 @@ primary_sources:
       - ICS
     institution: International Commission on Stratigraphy
     url: https://stratigraphy.org/chart
+  - title: The Geologic Time Scale 2025
+    type: report
+    year: 2025
+    authors:
+      - ICS
+    institution: International Commission on Stratigraphy
+    url: https://stratigraphy.org/chart
 secondary_sources:
   - title: A Geologic Time Scale 2020 (Gradstein, Ogg, Schmitz, Ogg — Elsevier)
     type: textbook

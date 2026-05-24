@@ -61,6 +61,13 @@ primary_sources:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.datascience
+  - title: Data Science from Scratch (2025 Edition)
+    type: book
+    year: 2025
+    authors:
+      - Grus J.
+    institution: O'Reilly Media
+    url: https://www.oreilly.com/data-science/
 secondary_sources:
   - title: The Elements of Statistical Learning (Hastie, Tibshirani, Friedman)
     type: textbook

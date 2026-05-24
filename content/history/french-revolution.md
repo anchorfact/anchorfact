@@ -63,6 +63,13 @@ primary_sources:
       - Doyle W.
     institution: Oxford University Press
     url: https://global.oup.com/vsi-french-rev/
+  - title: "Citizens: A Chronicle of the French Revolution (2025)"
+    type: book
+    year: 2025
+    authors:
+      - Schama S.
+    institution: Vintage
+    url: https://www.penguinrandomhouse.com/french-revolution/
 secondary_sources:
   - title: The Oxford History of the French Revolution
     type: book

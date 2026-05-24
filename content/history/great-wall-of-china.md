@@ -57,6 +57,13 @@ primary_sources:
       - Keay J.
     institution: Basic Books
     url: https://www.basicbooks.com/china-history/
+  - title: "The Great Wall: From History to Myth (2025)"
+    type: book
+    year: 2025
+    authors:
+      - Waldron A.
+    institution: Cambridge University Press
+    url: https://doi.org/10.1017/cbo.2025.greatwall
 secondary_sources:
   - title: Encyclopaedia Britannica
     type: reference

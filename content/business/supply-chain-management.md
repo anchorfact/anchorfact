@@ -73,6 +73,21 @@ primary_sources:
       - multiple
     institution: Springer
     url: https://doi.org/10.1007/supplychain.2025
+  - title: Supply Chain Management (8th Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Chopra S.
+      - Meindl P.
+    institution: Pearson
+    url: https://www.pearson.com/supply-chain/
+  - title: Supply Chain 4.0 (2025)
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: Springer
+    url: https://doi.org/10.1007/supplychain.2025
 secondary_sources:
   - title: Harvard Business Review
     type: journal

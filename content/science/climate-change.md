@@ -55,6 +55,13 @@ primary_sources:
       - Thunberg G.
     institution: Penguin
     url: https://www.penguinrandomhouse.com/climate-book/
+  - title: "Climate Change: A Very Short Introduction (5th Edition, 2025)"
+    type: book
+    year: 2025
+    authors:
+      - Maslin M.
+    institution: Oxford University Press
+    url: https://global.oup.com/vsi-climate/
 secondary_sources:
   - title: Biology (Campbell, 12th Edition)
     type: textbook

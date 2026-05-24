@@ -56,6 +56,13 @@ primary_sources:
       - Williams M.
     institution: Guilford Press
     url: https://www.guilford.com/mindfulness/
+  - title: Wherever You Go (30th Anniversary, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Kabat-Zinn J.
+    institution: Hachette
+    url: https://www.hachettebookgroup.com/mindfulness/
 secondary_sources:
   - title: Neural Machine Translation by Jointly Learning to Align and Translate
     authors:

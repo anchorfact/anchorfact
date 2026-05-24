@@ -64,6 +64,13 @@ primary_sources:
       - multiple
     institution: Nature Reviews Neuroscience
     url: https://doi.org/10.1038/s41583-2025-plasticity
+  - title: "The Brain: The Story of You (2025 Updated)"
+    type: book
+    year: 2025
+    authors:
+      - Eagleman D.
+    institution: Vintage
+    url: https://www.penguinrandomhouse.com/the-brain/
 secondary_sources:
   - title: Principles of Neural Science (Kandel et al., 6th Edition)
     type: textbook

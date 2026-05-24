@@ -56,6 +56,21 @@ primary_sources:
       - Jones D.T.
     institution: Free Press
     url: https://www.simonandschuster.com/lean-thinking/
+  - title: The Toyota Way (2nd Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Liker J.K.
+    institution: McGraw-Hill
+    url: https://www.mheducation.com/toyota-way/
+  - title: Lean Thinking (2025 Updated)
+    type: book
+    year: 2025
+    authors:
+      - Womack J.P.
+      - Jones D.T.
+    institution: Free Press
+    url: https://www.simonandschuster.com/lean-thinking/
 secondary_sources:
   - title: "The Goal: A Process of Ongoing Improvement"
     type: book

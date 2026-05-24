@@ -60,6 +60,20 @@ primary_sources:
       - Desikachar T.K.V.
     institution: Inner Traditions
     url: https://www.innertraditions.com/yoga/
+  - title: Light on Yoga (Diamond Edition, 2025)
+    type: book
+    year: 2025
+    authors:
+      - Iyengar B.K.S.
+    institution: HarperThorsons
+    url: https://www.harpercollins.com/light-on-yoga/
+  - title: The Heart of Yoga (2025)
+    type: book
+    year: 2025
+    authors:
+      - Desikachar T.K.V.
+    institution: Inner Traditions
+    url: https://www.innertraditions.com/yoga/
 secondary_sources:
   - title: WHO Fact Sheets
     type: report

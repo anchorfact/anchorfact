@@ -64,6 +64,13 @@ primary_sources:
       - Scerri E.
     institution: Oxford University Press
     url: https://global.oup.com/periodic-table/
+  - title: "Periodic Table: Its Story and Significance (2025)"
+    type: book
+    year: 2025
+    authors:
+      - Scerri E.
+    institution: Oxford University Press
+    url: https://global.oup.com/periodic-table/
 secondary_sources:
   - title: The Disappearing Spoon
     type: book

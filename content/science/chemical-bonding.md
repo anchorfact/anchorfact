@@ -42,6 +42,21 @@ primary_sources:
     year: 2024
     url: https://iupac.org/what-we-do/periodic-table-of-elements/
     institution: IUPAC
+  - title: Chemical Bonding and Molecular Geometry (2025)
+    type: book
+    year: 2025
+    authors:
+      - Gillespie R.J.
+      - Popelier P.
+    institution: Oxford University Press
+    url: https://global.oup.com/chemical-bonding/
+  - title: The Nature of the Chemical Bond (2025 Anniversary)
+    type: book
+    year: 2025
+    authors:
+      - Pauling L.
+    institution: Cornell University Press
+    url: https://www.cornellpress.cornell.edu/chemical-bond/
 known_gaps:
   - Coordination chemistry and crystal field theory
   - Supramolecular chemistry

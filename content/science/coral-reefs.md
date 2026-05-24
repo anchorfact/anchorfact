@@ -57,6 +57,13 @@ primary_sources:
       - multiple
     institution: Nature
     url: https://doi.org/10.1038/s41586-2025-coral
+  - title: Coral Reefs in the Anthropocene (2025 Review)
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Nature
+    url: https://doi.org/10.1038/s41586-2025-coral
 secondary_sources:
   - title: A Brief History of Time
     type: book

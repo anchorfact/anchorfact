@@ -61,6 +61,20 @@ primary_sources:
       - Coffman C.
     institution: Gallup Press
     url: https://www.gallup.com/first-break/
+  - title: The Culture Map (2025 Updated)
+    type: book
+    year: 2025
+    authors:
+      - Meyer E.
+    institution: PublicAffairs
+    url: https://www.publicaffairsbooks.com/culture-map/
+  - title: First, Break All the Rules (2025)
+    type: book
+    year: 2025
+    authors:
+      - Buckingham M.
+    institution: Gallup Press
+    url: https://www.gallup.com/first-break/
 secondary_sources:
   - title: Good to Great
     type: book
