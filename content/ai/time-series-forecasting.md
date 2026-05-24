@@ -1,53 +1,89 @@
 ---
-id: "time-series-forecasting"
-title: "Time Series Forecasting with Machine Learning"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
+id: time-series-forecasting
+title: Time Series Forecasting with Machine Learning
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-time-series-forecasting-1"
-    statement: "Transformers adapted for time series — Informer (Zhou et al., 2021), Autoformer, PatchTST — address the quadratic attention complexity for long sequences, enabling forecasting horizons of 720+ time steps."
-    source_title: "Zhou et al., AAAI (2021)"
-    confidence: "high"
-  - id: "af-time-series-forecasting-2"
-    statement: "N-BEATS (Oreshkin et al., 2020) achieves state-of-the-art univariate forecasting without any time-series-specific feature engineering, using a pure deep learning architecture with doubly residual stacking of fully connected blocks."
-    source_title: "Oreshkin et al., ICLR (2020)"
-    confidence: "high"
-
+  - id: af-time-series-forecasting-1
+    statement: >-
+      Transformers adapted for time series — Informer (Zhou et al., 2021), Autoformer, PatchTST — address the quadratic attention complexity for long sequences, enabling forecasting horizons of 720+
+      time steps.
+    source_title: Zhou et al., AAAI (2021)
+    confidence: high
+  - id: af-time-series-forecasting-2
+    statement: >-
+      N-BEATS (Oreshkin et al., 2020) achieves state-of-the-art univariate forecasting without any time-series-specific feature engineering, using a pure deep learning architecture with doubly
+      residual stacking of fully connected blocks.
+    source_title: Oreshkin et al., ICLR (2020)
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "Probabilistic forecasting with prediction intervals"
-  - "Multivariate causal discovery in time series"
-
+  - Probabilistic forecasting with prediction intervals
+  - Multivariate causal discovery in time series
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
 primary_sources:
   - title: "N-BEATS: Neural basis expansion analysis for interpretable time series forecasting"
-    type: "academic_paper"
+    type: academic_paper
     year: 2020
-    url: "https://arxiv.org/abs/1905.10437"
-    institution: "ICLR"
+    url: https://arxiv.org/abs/1905.10437
+    institution: ICLR
   - title: "Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting"
-    type: "academic_paper"
+    type: academic_paper
     year: 2021
-    url: "https://arxiv.org/abs/2012.07436"
-    institution: "AAAI"
-
+    url: https://arxiv.org/abs/2012.07436
+    institution: AAAI
+secondary_sources:
+  - title: A Comprehensive Survey of Deep Learning for Time Series Forecasting
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE TKDE
+    url: https://doi.org/10.1109/TKDE.2024.3361474
+  - title: "Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting"
+    type: conference_paper
+    year: 2021
+    authors:
+      - Zhou, Haoyi
+      - Zhang, Shanghang
+      - Peng, Jieqi
+      - et al.
+    institution: AAAI Best Paper
+    url: https://arxiv.org/abs/2012.07436
+  - title: "TimesNet: Temporal 2D-Variation Modeling for General Time Series Analysis"
+    type: conference_paper
+    year: 2023
+    authors:
+      - Wu, Haixu
+      - Hu, Tengge
+      - Liu, Yong
+      - et al.
+    institution: Tsinghua University / ICLR
+    url: https://arxiv.org/abs/2210.02186
+  - title: Are Transformers Effective for Time Series Forecasting? (PatchTST)
+    type: conference_paper
+    year: 2023
+    authors:
+      - Nie, Yuqi
+      - Nguyen, Nam H.
+      - Sinthong, Phanwadee
+      - Kalagnanam, Jayant
+    institution: IBM Research / AAAI
+    url: https://arxiv.org/abs/2211.14730
+updated: "2026-05-24"
 ---
-
-
 ## TL;DR
 Time series forecasting predicts future values from historical sequences. Traditional statistical methods (ARIMA, ETS) compete with deep learning approaches (LSTM, Transformer variants) depending on data volume and pattern complexity.
 

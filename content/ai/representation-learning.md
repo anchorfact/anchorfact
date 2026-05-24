@@ -1,52 +1,88 @@
 ---
-id: "representation-learning"
+id: representation-learning
 title: "Representation Learning: Autoencoders, VAEs, and MAEs"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-representation-learning-1"
-    statement: "Variational Autoencoders (VAE, Kingma & Welling, 2014) learn a probabilistic latent space where each point maps to a distribution — enabling controlled generation via sampling and smooth interpolation in latent space."
-    source_title: "Kingma & Welling, ICLR (2014)"
-    confidence: "high"
-  - id: "af-representation-learning-2"
-    statement: "Masked Autoencoders (MAE, He et al., 2022) mask 75% of image patches and train an asymmetric encoder-decoder to reconstruct only the masked regions — achieving state-of-the-art self-supervised visual representation learning."
-    source_title: "He et al., CVPR (2022)"
-    confidence: "high"
-
+  - id: af-representation-learning-1
+    statement: >-
+      Variational Autoencoders (VAE, Kingma & Welling, 2014) learn a probabilistic latent space where each point maps to a distribution — enabling controlled generation via sampling and smooth
+      interpolation in latent space.
+    source_title: Kingma & Welling, ICLR (2014)
+    confidence: high
+  - id: af-representation-learning-2
+    statement: >-
+      Masked Autoencoders (MAE, He et al., 2022) mask 75% of image patches and train an asymmetric encoder-decoder to reconstruct only the masked regions — achieving state-of-the-art self-supervised
+      visual representation learning.
+    source_title: He et al., CVPR (2022)
+    confidence: high
 completeness: 0.9
-
 primary_sources:
-  - title: "Auto-Encoding Variational Bayes (VAE)"
-    type: "academic_paper"
+  - title: Auto-Encoding Variational Bayes (VAE)
+    type: academic_paper
     year: 2014
-    url: "https://arxiv.org/abs/1312.6114"
-    institution: "ICLR"
-  - title: "Masked Autoencoders Are Scalable Vision Learners (MAE)"
-    type: "academic_paper"
+    url: https://arxiv.org/abs/1312.6114
+    institution: ICLR
+  - title: Masked Autoencoders Are Scalable Vision Learners (MAE)
+    type: academic_paper
     year: 2022
-    url: "https://arxiv.org/abs/2111.06377"
-    institution: "CVPR"
-
+    url: https://arxiv.org/abs/2111.06377
+    institution: CVPR
 known_gaps:
-  - "Disentangled representation learning"
-  - "Information bottleneck theory in deep learning"
-
+  - Disentangled representation learning
+  - Information bottleneck theory in deep learning
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
+secondary_sources:
+  - title: "Representation Learning: A Review and New Perspectives"
+    type: survey_paper
+    year: 2013
+    authors:
+      - Bengio, Yoshua
+      - Courville, Aaron
+      - Vincent, Pascal
+    institution: IEEE TPAMI / University of Montreal
+    url: https://doi.org/10.1109/TPAMI.2013.50
+  - title: Learning Deep Representations by Mutual Information Estimation and Maximization (Deep InfoMax)
+    type: conference_paper
+    year: 2019
+    authors:
+      - Hjelm, R. Devon
+      - Fedorov, Alex
+      - Lavoie-Marchildon, Samuel
+      - et al.
+    institution: Microsoft Research / ICLR
+    url: https://arxiv.org/abs/1808.06670
+  - title: "Bootstrap Your Own Latent: A New Approach to Self-Supervised Learning (BYOL)"
+    type: conference_paper
+    year: 2020
+    authors:
+      - Grill, Jean-Bastien
+      - Strub, Florian
+      - Altché, Florent
+      - et al.
+    institution: DeepMind / NeurIPS
+    url: https://arxiv.org/abs/2006.07733
+  - title: "A Survey on Self-Supervised Learning: From Images to Graphs"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE TKDE
+    url: https://doi.org/10.1109/TKDE.2024.3361474
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 Representation learning transforms raw data (pixels, text) into meaningful vector spaces where similarity corresponds to semantic relatedness. Autoencoders compress and reconstruct; VAEs add probabilistic generation; MAEs learn by masking.
 

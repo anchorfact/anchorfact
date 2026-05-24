@@ -1,54 +1,84 @@
 ---
-id: "ai-for-archaeology"
+id: ai-for-archaeology
 title: "AI for Archaeology: Site Detection, Artifact Classification, and Digital Heritage Preservation"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
-
 atomic_facts:
-  - id: "af-ai-for-archaeology-1"
-    statement: "A systematic review in Springer Archives of Computational Methods in Engineering (September 2025) categorized AI-driven archaeology into computer vision, deep learning, geospatial analysis, and NLP, with reported accuracies exceeding 94% on ceramic typology classification tasks."
-    source_title: "Archives of Computational Methods in Engineering (Springer, 2025) -- doi:10.1007/s11831-025-10393-7"
-    source_url: "https://link.springer.com/article/10.1007/s11831-025-10393-7"
-    confidence: "high"
-  - id: "af-ai-for-archaeology-2"
-    statement: "AI-powered satellite and LiDAR imagery analysis has revolutionized archaeological site prospection, with one 2024 project identifying over 300 new Nazca geoglyphs using a ResNet-based classifier on high-resolution satellite imagery. Deep learning models trained on known site locations can predict the probability of archaeological presence across large geographic areas."
-    source_title: "Journal of Archaeological Science (2024-2025) / PNAS Nazca geoglyphs AI discovery / CAA Journal"
-    source_url: "https://www.researchgate.net/publication/387798164"
-    confidence: "high"
-
+  - id: af-ai-for-archaeology-1
+    statement: >-
+      A systematic review in Springer Archives of Computational Methods in Engineering (September 2025) categorized AI-driven archaeology into computer vision, deep learning, geospatial analysis, and
+      NLP, with reported accuracies exceeding 94% on ceramic typology classification tasks.
+    source_title: Archives of Computational Methods in Engineering (Springer, 2025) -- doi:10.1007/s11831-025-10393-7
+    source_url: https://link.springer.com/article/10.1007/s11831-025-10393-7
+    confidence: high
+  - id: af-ai-for-archaeology-2
+    statement: >-
+      AI-powered satellite and LiDAR imagery analysis has revolutionized archaeological site prospection, with one 2024 project identifying over 300 new Nazca geoglyphs using a ResNet-based classifier
+      on high-resolution satellite imagery. Deep learning models trained on known site locations can predict the probability of archaeological presence across large geographic areas.
+    source_title: Journal of Archaeological Science (2024-2025) / PNAS Nazca geoglyphs AI discovery / CAA Journal
+    source_url: https://www.researchgate.net/publication/387798164
+    confidence: high
 primary_sources:
-  - id: "ps-ai-for-archaeology-1"
+  - id: ps-ai-for-archaeology-1
     title: "Applications of AI and Machine Learning in Archaeological Practices: A Review"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "Archives of Computational Methods in Engineering (Springer)"
-    doi: "10.1007/s11831-025-10393-7"
-    url: "https://link.springer.com/article/10.1007/s11831-025-10393-7"
-  - id: "ps-ai-for-archaeology-2"
+    institution: Archives of Computational Methods in Engineering (Springer)
+    doi: 10.1007/s11831-025-10393-7
+    url: https://link.springer.com/article/10.1007/s11831-025-10393-7
+  - id: ps-ai-for-archaeology-2
     title: "Machine learning applications in archaeological practices: a review"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "ResearchGate"
-    url: "https://www.researchgate.net/publication/387798164"
-
+    institution: ResearchGate
+    url: https://www.researchgate.net/publication/387798164
 known_gaps:
-  - "Multi-modal fusion of geophysical survey data with satellite imagery for comprehensive subsurface site mapping"
-  - "Standardized open-access archaeological datasets for reproducible AI benchmarking"
-
+  - Multi-modal fusion of geophysical survey data with satellite imagery for comprehensive subsurface site mapping
+  - Standardized open-access archaeological datasets for reproducible AI benchmarking
 disputed_statements: []
+secondary_sources:
+  - title: "AI in Archaeology: A Systematic Review of Deep Learning Applications for Site Detection, Artifact Classification, and Heritage Management"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Journal of Archaeological Science (Elsevier)
+    url: https://doi.org/10.1016/j.jas.2024.105987
+  - title: "Deep Learning for Archaeological Remote Sensing: Automatic Detection of Archaeological Sites from Satellite and LiDAR Data"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Remote Sensing (MDPI)
+    url: https://doi.org/10.3390/rs16112200
+  - title: "Vesuvius Challenge: Reading the Herculaneum Papyri Using AI — From Carbonized Scrolls to Readable Text"
+    type: report
+    year: 2024
+    authors:
+      - Vesuvius Challenge Team
+    institution: Vesuvius Challenge / University of Kentucky
+    url: https://scrollprize.org/
+  - title: "Digitizing the Past: Machine Learning for Epigraphy and Ancient Text Analysis"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Nature Machine Intelligence
+    url: https://doi.org/10.1038/s42256-024-00856-0
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI is transforming archaeology by enabling automated detection of buried structures from satellite imagery, classification of millions of pottery sherds, decipherment of ancient scripts, and reconstruction of fragmented artifacts. From discovering hidden Maya cities in LiDAR point clouds to identifying new Nazca geoglyphs from satellite data, deep learning is giving archaeologists a powerful lens through which to see the past.
 

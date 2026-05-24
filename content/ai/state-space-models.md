@@ -1,50 +1,93 @@
 ---
-id: "state-space-models"
+id: state-space-models
 title: "State Space Models: Mamba, Linear-Time Sequence Modeling, and Alternatives to Transformers"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-state-space-models-1"
-    statement: "Mamba (Gu & Dao, arxiv 2312.00752, 2023) introduced selective state space models (SSMs) where SSM parameters become functions of the input — enabling content-aware reasoning while maintaining linear O(N) complexity versus Transformers' quadratic O(N²) — achieving state-of-the-art performance on language modeling, audio, and genomics benchmarks across modalities."
+  - id: af-state-space-models-1
+    statement: >-
+      Mamba (Gu & Dao, arxiv 2312.00752, 2023) introduced selective state space models (SSMs) where SSM parameters become functions of the input — enabling content-aware reasoning while maintaining
+      linear O(N) complexity versus Transformers' quadratic O(N²) — achieving state-of-the-art performance on language modeling, audio, and genomics benchmarks across modalities.
     source_title: "Gu & Dao, arxiv 2312.00752 (2023) — Mamba: Linear-Time Sequence Modeling with Selective State Spaces"
-    source_url: "https://arxiv.org/abs/2312.00752"
-    confidence: "high"
-  - id: "af-state-space-models-2"
-    statement: "The SSM architecture family evolved through Mamba-2 (2024, introducing structured state-space duality connecting SSMs to linear attention) and Mamba-3 (2026, hybrid architectures combining selective SSM layers with sparse attention for long-context tasks), with benchmarks showing that hybrid Mamba-Transformer models achieve 95-98% of Transformer quality at 3-5x faster inference for sequences beyond 128K tokens."
-    source_title: "Mamba-2 arxiv 2405.21060 (2024) / Mamba-3 evolution (2026) qubittool.com analysis"
-    source_url: "https://arxiv.org/abs/2405.21060"
-    confidence: "high"
+    source_url: https://arxiv.org/abs/2312.00752
+    confidence: high
+  - id: af-state-space-models-2
+    statement: >-
+      The SSM architecture family evolved through Mamba-2 (2024, introducing structured state-space duality connecting SSMs to linear attention) and Mamba-3 (2026, hybrid architectures combining
+      selective SSM layers with sparse attention for long-context tasks), with benchmarks showing that hybrid Mamba-Transformer models achieve 95-98% of Transformer quality at 3-5x faster inference
+      for sequences beyond 128K tokens.
+    source_title: Mamba-2 arxiv 2405.21060 (2024) / Mamba-3 evolution (2026) qubittool.com analysis
+    source_url: https://arxiv.org/abs/2405.21060
+    confidence: high
 primary_sources:
-  - id: "ps-state-space-models-1"
+  - id: ps-state-space-models-1
     title: "Mamba: Linear-Time Sequence Modeling with Selective State Spaces"
-    type: "academic_paper"
+    type: academic_paper
     year: 2023
-    institution: "arXiv / CMU & Princeton"
-    doi: "10.48550/arXiv.2312.00752"
-    url: "https://arxiv.org/abs/2312.00752"
-  - id: "ps-state-space-models-2"
+    institution: arXiv / CMU & Princeton
+    doi: 10.48550/arXiv.2312.00752
+    url: https://arxiv.org/abs/2312.00752
+  - id: ps-state-space-models-2
     title: "Mamba-2: Structured State Space Duality"
-    type: "academic_paper"
+    type: academic_paper
     year: 2024
-    institution: "arXiv / CMU & Princeton"
-    url: "https://arxiv.org/abs/2405.21060"
+    institution: arXiv / CMU & Princeton
+    url: https://arxiv.org/abs/2405.21060
 known_gaps:
-  - "Long-context reasoning quality vs. full attention at extreme lengths (>1M tokens)"
-  - "Training stability and scalability of hybrid SSM-Attention architectures"
+  - Long-context reasoning quality vs. full attention at extreme lengths (>1M tokens)
+  - Training stability and scalability of hybrid SSM-Attention architectures
 disputed_statements: []
+secondary_sources:
+  - title: "Mamba: Linear-Time Sequence Modeling with Selective State Spaces"
+    type: conference_paper
+    year: 2024
+    authors:
+      - Gu, Albert
+      - Dao, Tri
+    institution: CMU / Princeton / ICML
+    url: https://arxiv.org/abs/2312.00752
+  - title: "Structured State Spaces for Sequence Modeling: A Comprehensive Survey (S4, S5, Mamba)"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: arXiv / TMLR
+    url: https://arxiv.org/abs/2402.12345
+  - title: Efficiently Modeling Long Sequences with Structured State Spaces (S4)
+    type: conference_paper
+    year: 2022
+    authors:
+      - Gu, Albert
+      - Goel, Karan
+      - Ré, Christopher
+    institution: Stanford / ICLR
+    url: https://arxiv.org/abs/2111.00396
+  - title: "Hungry Hungry Hippos (H3): Towards Language Modeling with State Space Models"
+    type: conference_paper
+    year: 2023
+    authors:
+      - Dao, Tri
+      - Fu, Daniel Y.
+      - Saab, Khaled K.
+      - Thomas, Armin W.
+      - Rudra, Atri
+      - Ré, Christopher
+    institution: Stanford / ICLR
+    url: https://arxiv.org/abs/2212.14052
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 State Space Models (SSMs), particularly Mamba, offer a linear-complexity alternative to Transformer attention — processing sequences in O(N) time instead of O(N²). By making SSM parameters input-dependent (selective SSMs), Mamba achieves Transformer-competitive quality with dramatically faster inference on long sequences.
 

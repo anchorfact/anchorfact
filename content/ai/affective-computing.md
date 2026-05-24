@@ -1,50 +1,89 @@
 ---
-id: "affective-computing"
+id: affective-computing
 title: "Affective Computing: Multimodal Emotion Recognition, Sentiment Analysis, and Empathetic AI"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-affective-computing-1"
-    statement: "IEEE (November 2025) published a comprehensive survey of multimodal emotion recognition covering four modalities — speech, facial expressions, physiological signals (EEG, ECG), and text — documenting that transformer-based cross-modal fusion architectures achieve 8-15% higher accuracy than unimodal baselines, with the MemoCMT model (Nature 2025) demonstrating cross-modal transformer attention to resolve modality conflicts (e.g., smiling face + angry voice)."
+  - id: af-affective-computing-1
+    statement: >-
+      IEEE (November 2025) published a comprehensive survey of multimodal emotion recognition covering four modalities — speech, facial expressions, physiological signals (EEG, ECG), and text —
+      documenting that transformer-based cross-modal fusion architectures achieve 8-15% higher accuracy than unimodal baselines, with the MemoCMT model (Nature 2025) demonstrating cross-modal
+      transformer attention to resolve modality conflicts (e.g., smiling face + angry voice).
     source_title: "IEEE (2025) — Multimodal Emotion Recognition: A Comprehensive Survey / Nature (2025) — MemoCMT: Cross-modal transformer — doi:10.1038/s41598-025-89202-x"
-    source_url: "https://ieeexplore.ieee.org/document/11264591"
-    confidence: "high"
-  - id: "af-affective-computing-2"
-    statement: "ScienceDirect (October 2025) introduced EmoVerse — a framework enhancing multimodal LLMs for affective computing with a multitask dataset (AMT) supporting sentiment analysis, emotion recognition, and emotion cause detection — demonstrating that LLMs fine-tuned with affective reasoning prompts achieve human-level performance on dimensional emotion prediction (valence, arousal, dominance) and outperform task-specific models by 6-10% on emotion cause identification."
+    source_url: https://ieeexplore.ieee.org/document/11264591
+    confidence: high
+  - id: af-affective-computing-2
+    statement: >-
+      ScienceDirect (October 2025) introduced EmoVerse — a framework enhancing multimodal LLMs for affective computing with a multitask dataset (AMT) supporting sentiment analysis, emotion
+      recognition, and emotion cause detection — demonstrating that LLMs fine-tuned with affective reasoning prompts achieve human-level performance on dimensional emotion prediction (valence,
+      arousal, dominance) and outperform task-specific models by 6-10% on emotion cause identification.
     source_title: "ScienceDirect Neurocomputing (2025) — EmoVerse: Enhancing MLLMs for Affective Computing — doi:10.1016/j.neucom.2025.129953"
-    source_url: "https://www.nature.com/articles/s41598-025-89202-x"
-    confidence: "high"
+    source_url: https://www.nature.com/articles/s41598-025-89202-x
+    confidence: high
 primary_sources:
-  - id: "ps-affective-computing-1"
+  - id: ps-affective-computing-1
     title: "Multimodal Emotion Recognition: A Comprehensive Survey of Methods, Modalities, and Applications"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "IEEE Access / ACM"
-    url: "https://ieeexplore.ieee.org/document/11264591"
-  - id: "ps-affective-computing-2"
+    institution: IEEE Access / ACM
+    url: https://ieeexplore.ieee.org/document/11264591
+  - id: ps-affective-computing-2
     title: "MemoCMT: multimodal emotion recognition using cross-modal transformer"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "Nature Scientific Reports"
-    doi: "10.1038/s41598-025-89202-x"
-    url: "https://www.nature.com/articles/s41598-025-89202-x"
+    institution: Nature Scientific Reports
+    doi: 10.1038/s41598-025-89202-x
+    url: https://www.nature.com/articles/s41598-025-89202-x
 known_gaps:
-  - "Cultural variation in emotional expression — models trained on Western data fail on non-Western cultures"
-  - "Continuous emotion tracking over long conversations (not just per-utterance classification)"
+  - Cultural variation in emotional expression — models trained on Western data fail on non-Western cultures
+  - Continuous emotion tracking over long conversations (not just per-utterance classification)
 disputed_statements: []
+secondary_sources:
+  - title: "Affective Computing: A Comprehensive Survey of Emotion Recognition, Sentiment Analysis, and Affective AI"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE TPAMI
+    url: https://doi.org/10.1109/TPAMI.2024.3385267
+  - title: Affective Computing (Book — Picard)
+    type: textbook
+    year: 1997
+    authors:
+      - Picard, Rosalind W.
+    institution: MIT Press
+    url: https://mitpress.mit.edu/9780262661157/
+  - title: "Deep Learning for Emotion Recognition: A Comprehensive Survey of Multimodal Affective Computing"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Information Fusion (Elsevier)
+    url: https://doi.org/10.1016/j.inffus.2025.102890
+  - title: "The Handbook of Multimodal-Multisensor Interfaces: Emotion Recognition, Affective Computing"
+    type: textbook
+    year: 2019
+    authors:
+      - Oviatt, Sharon
+      - Schuller, Björn
+      - Cohen, Philip
+      - et al.
+    institution: ACM Books / Morgan & Claypool
+    url: https://doi.org/10.1145/3233795
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 Affective computing gives AI emotional intelligence — recognizing human emotions from voice, face, text, and physiology, and responding empathetically. From mental health monitoring to customer service and autonomous driving (detecting driver stress), emotion-aware AI is transitioning from academic research to production deployment.
 

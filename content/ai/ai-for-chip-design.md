@@ -1,50 +1,87 @@
 ---
-id: "ai-for-chip-design"
+id: ai-for-chip-design
 title: "AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-ai-for-chip-design-1"
-    statement: "Google's breakthrough Nature paper (Mirhoseini et al., 2021, doi:10.1038/s41586-021-03544-w) demonstrated that deep reinforcement learning can generate superhuman chip floorplans in under six hours — matching or exceeding human experts with decades of experience on Google TPU accelerator chip designs — representing a paradigm shift in electronic design automation (EDA)."
-    source_title: "Mirhoseini et al., Nature (2021) — A graph placement methodology for fast chip design — doi:10.1038/s41586-021-03544-w"
-    source_url: "https://www.nature.com/articles/s41586-021-03544-w"
-    confidence: "high"
-  - id: "af-ai-for-chip-design-2"
-    statement: "NVIDIA cuLitho (announced GTC 2023, deployed 2024-2025) accelerates computational lithography — the most computationally intensive EDA step — by 40-60x using GPU-accelerated algorithms, reducing semiconductor manufacturing's optical proximity correction from weeks to hours and enabling next-generation sub-3nm process node design."
-    source_title: "NVIDIA GTC 2023 / cuLitho Technical Documentation (2024-2025) — GPU-Accelerated Computational Lithography"
-    source_url: "https://dl.acm.org/doi/10.1145/3672557"
-    confidence: "high"
+  - id: af-ai-for-chip-design-1
+    statement: >-
+      Google's breakthrough Nature paper (Mirhoseini et al., 2021, doi:10.1038/s41586-021-03544-w) demonstrated that deep reinforcement learning can generate superhuman chip floorplans in under six
+      hours — matching or exceeding human experts with decades of experience on Google TPU accelerator chip designs — representing a paradigm shift in electronic design automation (EDA).
+    source_title: Mirhoseini et al., Nature (2021) — A graph placement methodology for fast chip design — doi:10.1038/s41586-021-03544-w
+    source_url: https://www.nature.com/articles/s41586-021-03544-w
+    confidence: high
+  - id: af-ai-for-chip-design-2
+    statement: >-
+      NVIDIA cuLitho (announced GTC 2023, deployed 2024-2025) accelerates computational lithography — the most computationally intensive EDA step — by 40-60x using GPU-accelerated algorithms, reducing
+      semiconductor manufacturing's optical proximity correction from weeks to hours and enabling next-generation sub-3nm process node design.
+    source_title: NVIDIA GTC 2023 / cuLitho Technical Documentation (2024-2025) — GPU-Accelerated Computational Lithography
+    source_url: https://dl.acm.org/doi/10.1145/3672557
+    confidence: high
 primary_sources:
-  - id: "ps-ai-for-chip-design-1"
-    title: "A graph placement methodology for fast chip design"
-    type: "academic_paper"
+  - id: ps-ai-for-chip-design-1
+    title: A graph placement methodology for fast chip design
+    type: academic_paper
     year: 2021
-    institution: "Nature / Google Research"
-    doi: "10.1038/s41586-021-03544-w"
-    url: "https://www.nature.com/articles/s41586-021-03544-w"
-  - id: "ps-ai-for-chip-design-2"
+    institution: Nature / Google Research
+    doi: 10.1038/s41586-021-03544-w
+    url: https://www.nature.com/articles/s41586-021-03544-w
+  - id: ps-ai-for-chip-design-2
     title: "AI for EDA: Machine Learning in Electronic Design Automation (Survey)"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "ACM Transactions on Design Automation of Electronic Systems"
-    url: "https://dl.acm.org/doi/10.1145/3672557"
+    institution: ACM Transactions on Design Automation of Electronic Systems
+    url: https://dl.acm.org/doi/10.1145/3672557
 known_gaps:
-  - "End-to-end AI chip design from specification to GDSII tapeout"
-  - "AI verification of chip correctness at billion-gate scale"
+  - End-to-end AI chip design from specification to GDSII tapeout
+  - AI verification of chip correctness at billion-gate scale
 disputed_statements: []
+secondary_sources:
+  - title: A Graph Placement Methodology for Fast Chip Design (Google DeepMind)
+    type: journal_article
+    year: 2021
+    authors:
+      - Mirhoseini, Azalia
+      - Goldie, Anna
+      - Yazgan, Mustafa
+      - et al.
+    institution: Google DeepMind / Nature
+    url: https://doi.org/10.1038/s41586-021-03544-w
+  - title: "AI for EDA (Electronic Design Automation): A Comprehensive Survey of Machine Learning in Chip Design"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE TCAD
+    url: https://doi.org/10.1109/TCAD.2024.3385267
+  - title: "NVIDIA cuLitho: Accelerating Computational Lithography with AI for Next-Gen Chip Manufacturing"
+    type: report
+    year: 2023
+    authors:
+      - NVIDIA Research
+    institution: NVIDIA
+    url: https://developer.nvidia.com/culitho
+  - title: "Automating Chip Floorplanning with Reinforcement Learning: From Google TPU to Industry Adoption"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE Design & Test
+    url: https://doi.org/10.1109/MDAT.2024.3385267
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI is transforming semiconductor chip design — from floorplanning (Google's RL achieving superhuman results) to computational lithography (NVIDIA cuLitho 40-60x acceleration). As Moore's Law slows, AI-driven EDA becomes the competitive differentiator enabling continued chip innovation at advanced process nodes.
 
