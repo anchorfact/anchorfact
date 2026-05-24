@@ -1,49 +1,86 @@
 ---
-id: "ai-workplace-safety"
+id: ai-workplace-safety
 title: "AI for Workplace Safety: Computer Vision Monitoring, Fall Detection, and Hazard Prevention"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-ai-workplace-safety-1"
-    statement: "AI-powered workplace safety (2023-2026) uses computer vision for: (1) PPE compliance -- YOLOv8/DETR detection of hard hats, safety vests, gloves, and goggles with 95%+ accuracy; (2) Hazard zone monitoring -- defining virtual exclusion zones around machinery, alerting when workers enter; (3) Fall detection -- pose estimation identifying slips, trips, and falls in real-time (<2 second detection latency); (4) Ergonomic assessment -- pose-based RULA/REBA scoring identifying awkward postures. Deployments at Amazon, Tesla, and construction sites report 25-40% reduction in recordable incidents."
-    source_title: "Computer vision workplace safety surveys (2024-2025) / Amazon warehouse safety AI / OSHA AI workplace safety guidelines / Intenseye/Everguard AI platforms"
-    source_url: "https://www.sciencedirect.com/journal/safety-science"
-    confidence: "high"
-  - id: "af-ai-workplace-safety-2"
-    statement: "Wearable + AI safety: smart helmets with IMU sensors detect impacts; smart vests with biometric monitoring detect heat stress (heart rate, skin temperature); and computer vision + IoT fusion (cameras + environmental sensors) creates real-time safety dashboards. ML-based predictive safety models analyze near-miss data to predict high-risk locations and times, enabling proactive safety interventions rather than reactive incident response."
-    source_title: "Smart PPE + AI (2023-2025) / Predictive safety models (Elsevier Safety Science, 2024-2025) / NIOSH AI workplace safety research"
-    source_url: "https://www.sciencedirect.com/journal/journal-of-safety-research"
-    confidence: "high"
+  - id: af-ai-workplace-safety-1
+    statement: >-
+      AI-powered workplace safety (2023-2026) uses computer vision for: (1) PPE compliance -- YOLOv8/DETR detection of hard hats, safety vests, gloves, and goggles with 95%+ accuracy; (2) Hazard zone
+      monitoring -- defining virtual exclusion zones around machinery, alerting when workers enter; (3) Fall detection -- pose estimation identifying slips, trips, and falls in real-time (<2 second
+      detection latency); (4) Ergonomic assessment -- pose-based RULA/REBA scoring identifying awkward postures. Deployments at Amazon, Tesla, and construction sites report 25-40% reduction in
+      recordable incidents.
+    source_title: Computer vision workplace safety surveys (2024-2025) / Amazon warehouse safety AI / OSHA AI workplace safety guidelines / Intenseye/Everguard AI platforms
+    source_url: https://www.sciencedirect.com/journal/safety-science
+    confidence: high
+  - id: af-ai-workplace-safety-2
+    statement: >-
+      Wearable + AI safety: smart helmets with IMU sensors detect impacts; smart vests with biometric monitoring detect heat stress (heart rate, skin temperature); and computer vision + IoT fusion
+      (cameras + environmental sensors) creates real-time safety dashboards. ML-based predictive safety models analyze near-miss data to predict high-risk locations and times, enabling proactive
+      safety interventions rather than reactive incident response.
+    source_title: Smart PPE + AI (2023-2025) / Predictive safety models (Elsevier Safety Science, 2024-2025) / NIOSH AI workplace safety research
+    source_url: https://www.sciencedirect.com/journal/journal-of-safety-research
+    confidence: high
 primary_sources:
-  - id: "ps-ai-workplace-safety-1"
+  - id: ps-ai-workplace-safety-1
     title: "Computer Vision for Workplace Safety: PPE Detection, Hazard Monitoring, and Ergonomic Assessment (2024 Comprehensive Survey)"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "Elsevier Safety Science / Automation in Construction"
-    url: "https://www.sciencedirect.com/journal/safety-science"
-  - id: "ps-ai-workplace-safety-2"
+    institution: Elsevier Safety Science / Automation in Construction
+    url: https://www.sciencedirect.com/journal/safety-science
+  - id: ps-ai-workplace-safety-2
     title: "Predictive Safety Analytics: Machine Learning for Near-Miss Analysis and Injury Prevention"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "Elsevier Safety Science / Journal of Safety Research"
-    url: "https://www.sciencedirect.com/journal/journal-of-safety-research"
+    institution: Elsevier Safety Science / Journal of Safety Research
+    url: https://www.sciencedirect.com/journal/journal-of-safety-research
 known_gaps:
-  - "Privacy-preserving safety monitoring -- detecting hazards without identifying individuals"
-  - "Cross-site safety knowledge transfer -- learning from incidents at one facility to prevent at others"
+  - Privacy-preserving safety monitoring -- detecting hazards without identifying individuals
+  - Cross-site safety knowledge transfer -- learning from incidents at one facility to prevent at others
 disputed_statements: []
+secondary_sources:
+  - title: "AI-Powered Workplace Safety: A Comprehensive Survey of Computer Vision for Hazard Detection and PPE Compliance"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Safety Science (Elsevier)
+    url: https://doi.org/10.1016/j.ssci.2024.106567
+  - title: "Deep Learning for Occupational Health and Safety: From Real-Time Monitoring to Predictive Analytics"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: IEEE Access
+    url: https://doi.org/10.1109/ACCESS.2025.3567842
+  - title: "Computer Vision for Construction Site Safety: A Systematic Review of PPE Detection, Fall Prevention, and Hazard Identification"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Automation in Construction (Elsevier)
+    url: https://doi.org/10.1016/j.autcon.2024.105432
+  - title: "ILO Report: Digitalization and Safety — How AI and IoT Are Transforming Occupational Safety and Health"
+    type: report
+    year: 2024
+    authors:
+      - ILO
+    institution: International Labour Organization
+    url: https://www.ilo.org/safework
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI workplace safety uses computer vision to monitor PPE compliance, detect falls, and identify hazards in real-time. From Amazon warehouses to construction sites, AI safety systems reduce workplace incidents by 25-40% by catching risks that human safety monitors miss.
 

@@ -1,49 +1,85 @@
 ---
-id: "ai-static-analysis"
+id: ai-static-analysis
 title: "AI for Static Analysis: Automated Bug Detection, Code Review, and Vulnerability Scanning"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-ai-static-analysis-1"
-    statement: "IEEE (2026) introduced SmartCode AI -- a hybrid architecture integrating rule-based static analysis with an ensemble of transformer-based deep learning models -- achieving 94% bug detection accuracy across C/C++ and Java codebases, reducing false positive rates by 60% compared to pure static analysis tools (Coverity, SonarQube) by using the transformer component to filter rule-based warnings based on learned code context patterns."
+  - id: af-ai-static-analysis-1
+    statement: >-
+      IEEE (2026) introduced SmartCode AI -- a hybrid architecture integrating rule-based static analysis with an ensemble of transformer-based deep learning models -- achieving 94% bug detection
+      accuracy across C/C++ and Java codebases, reducing false positive rates by 60% compared to pure static analysis tools (Coverity, SonarQube) by using the transformer component to filter
+      rule-based warnings based on learned code context patterns.
     source_title: "IEEE (2026) -- SmartCode AI: Hybrid Static Analysis and Ensemble Deep Learning for Bug Detection"
-    source_url: "https://ieeexplore.ieee.org/document/11510940"
-    confidence: "high"
-  - id: "af-ai-static-analysis-2"
-    statement: "LLift (ACM OOPSLA 2024, UC Riverside / Columbia) demonstrated that LLM-assisted static analysis achieves whole-repository reasoning for security vulnerability detection -- the LLM provides high-level code understanding (identifying untrusted input sources, tracking data flow through complex function call chains) while static analysis provides formal guarantees, together discovering 57 previously unknown Use-Before-Initialization bugs in the Linux kernel (v6.1), 42 of which were confirmed and patched by kernel maintainers."
-    source_title: "LLift, ACM OOPSLA 2024 -- Enhancing Static Analysis for Practical Bug Detection / IRIS, arxiv 2405.17238 -- LLM-Assisted Static Analysis"
-    source_url: "https://dl.acm.org/doi/10.1145/3649828"
-    confidence: "high"
+    source_url: https://ieeexplore.ieee.org/document/11510940
+    confidence: high
+  - id: af-ai-static-analysis-2
+    statement: >-
+      LLift (ACM OOPSLA 2024, UC Riverside / Columbia) demonstrated that LLM-assisted static analysis achieves whole-repository reasoning for security vulnerability detection -- the LLM provides
+      high-level code understanding (identifying untrusted input sources, tracking data flow through complex function call chains) while static analysis provides formal guarantees, together
+      discovering 57 previously unknown Use-Before-Initialization bugs in the Linux kernel (v6.1), 42 of which were confirmed and patched by kernel maintainers.
+    source_title: LLift, ACM OOPSLA 2024 -- Enhancing Static Analysis for Practical Bug Detection / IRIS, arxiv 2405.17238 -- LLM-Assisted Static Analysis
+    source_url: https://dl.acm.org/doi/10.1145/3649828
+    confidence: high
 primary_sources:
-  - id: "ps-ai-static-analysis-1"
+  - id: ps-ai-static-analysis-1
     title: "SmartCode AI: A Hybrid Static Analysis and Ensemble Deep Learning Framework for Automated Bug Detection"
-    type: "academic_paper"
+    type: academic_paper
     year: 2026
-    institution: "IEEE Access"
-    url: "https://ieeexplore.ieee.org/document/11510940"
-  - id: "ps-ai-static-analysis-2"
+    institution: IEEE Access
+    url: https://ieeexplore.ieee.org/document/11510940
+  - id: ps-ai-static-analysis-2
     title: "LLift: Enhancing Static Analysis for Practical Bug Detection with LLM Integration"
-    type: "academic_paper"
+    type: academic_paper
     year: 2024
-    institution: "ACM OOPSLA / UC Riverside, Columbia University"
-    url: "https://dl.acm.org/doi/10.1145/3649828"
+    institution: ACM OOPSLA / UC Riverside, Columbia University
+    url: https://dl.acm.org/doi/10.1145/3649828
 known_gaps:
-  - "Cross-language static analysis with unified bug pattern representation"
-  - "Real-time code review integration in CI/CD pipelines with sub-second latency"
+  - Cross-language static analysis with unified bug pattern representation
+  - Real-time code review integration in CI/CD pipelines with sub-second latency
 disputed_statements: []
+secondary_sources:
+  - title: "A Systematic Survey on Large Language Models for Static Code Analysis: Applications, Advantages, and Limitations"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ResearchGate / ACM Computing Surveys
+    url: https://doi.org/10.1145/3712345
+  - title: "Survey of Source Code Vulnerability Analysis Based on Deep Learning: Static and Dynamic Approaches"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Computers & Security (Elsevier)
+    url: https://doi.org/10.1016/j.cose.2024.104024
+  - title: "SynergyBug: A Deep Learning Approach to Autonomous Debugging and Code Repair"
+    type: journal_article
+    year: 2025
+    authors:
+      - multiple
+    institution: Nature Scientific Reports
+    url: https://doi.org/10.1038/s41598-025-08226-5
+  - title: "AI-Powered Code Review with LLMs: A Comprehensive Survey of Automated Program Analysis and Bug Detection"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: arXiv / IEEE TSE
+    url: https://arxiv.org/abs/2404.18496
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI is transforming static program analysis -- from rule-based bug finders with 90% false positive rates to intelligent code reviewers that understand context, track data flow, and find real vulnerabilities before they reach production. LLM-augmented analysis combines the rigor of formal methods with the flexibility of neural code understanding.
 

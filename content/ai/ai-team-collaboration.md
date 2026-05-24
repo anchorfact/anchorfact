@@ -1,49 +1,85 @@
 ---
-id: "ai-team-collaboration"
+id: ai-team-collaboration
 title: "AI for Team Collaboration: Smart Meetings, Knowledge Sharing, and Collaborative Intelligence"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-ai-team-collaboration-1"
-    statement: "AI-powered collaboration tools (2024-2026): Microsoft Teams Copilot, Google Workspace Duet AI, and Notion AI provide real-time meeting transcription and summarization, action item extraction (NLP identifies commitments and deadlines), and knowledge retrieval (RAG over organizational documents). Microsoft (2025) reported Teams Copilot users save 10+ hours/month on meeting-related tasks."
-    source_title: "Microsoft Teams Copilot (2024-2025) / Google Workspace Duet AI (2024) / Notion AI / Zoom AI Companion (2024)"
-    source_url: "https://arxiv.org/search/?query=meeting+summarization+AI+collaboration"
-    confidence: "high"
-  - id: "af-ai-team-collaboration-2"
-    statement: "AI for collaborative intelligence: beyond individual productivity, AI facilitates team coordination -- identifying expertise within organizations (who knows what), suggesting collaborators for projects based on complementary skills, detecting communication bottlenecks (team members overloaded or disconnected), and surfacing relevant past work to prevent duplicate effort. GNN-based organizational network analysis models information flow and collaboration patterns."
-    source_title: "Microsoft Graph + AI / Google People API / Workplace Analytics / Organizational Network Analysis with GNNs (2023-2025)"
-    source_url: "https://arxiv.org/search/?query=organizational+network+GNN"
-    confidence: "high"
+  - id: af-ai-team-collaboration-1
+    statement: >-
+      AI-powered collaboration tools (2024-2026): Microsoft Teams Copilot, Google Workspace Duet AI, and Notion AI provide real-time meeting transcription and summarization, action item extraction
+      (NLP identifies commitments and deadlines), and knowledge retrieval (RAG over organizational documents). Microsoft (2025) reported Teams Copilot users save 10+ hours/month on meeting-related
+      tasks.
+    source_title: Microsoft Teams Copilot (2024-2025) / Google Workspace Duet AI (2024) / Notion AI / Zoom AI Companion (2024)
+    source_url: https://arxiv.org/search/?query=meeting+summarization+AI+collaboration
+    confidence: high
+  - id: af-ai-team-collaboration-2
+    statement: >-
+      AI for collaborative intelligence: beyond individual productivity, AI facilitates team coordination -- identifying expertise within organizations (who knows what), suggesting collaborators for
+      projects based on complementary skills, detecting communication bottlenecks (team members overloaded or disconnected), and surfacing relevant past work to prevent duplicate effort. GNN-based
+      organizational network analysis models information flow and collaboration patterns.
+    source_title: Microsoft Graph + AI / Google People API / Workplace Analytics / Organizational Network Analysis with GNNs (2023-2025)
+    source_url: https://arxiv.org/search/?query=organizational+network+GNN
+    confidence: high
 primary_sources:
-  - id: "ps-ai-team-collaboration-1"
+  - id: ps-ai-team-collaboration-1
     title: "AI-Powered Meeting Intelligence: Transcription, Summarization, and Action Item Extraction (2024-2025 Comprehensive Survey)"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "arXiv / ACM CSCW"
-    url: "https://arxiv.org/search/?query=meeting+summarization+AI+collaboration"
-  - id: "ps-ai-team-collaboration-2"
+    institution: arXiv / ACM CSCW
+    url: https://arxiv.org/search/?query=meeting+summarization+AI+collaboration
+  - id: ps-ai-team-collaboration-2
     title: "Organizational Network Analysis with Graph Neural Networks: Collaboration Patterns and Expertise Location"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "arXiv / Academy of Management"
-    url: "https://arxiv.org/search/?query=organizational+network+GNN"
+    institution: arXiv / Academy of Management
+    url: https://arxiv.org/search/?query=organizational+network+GNN
 known_gaps:
-  - "AI facilitation of creative collaboration (brainstorming, design sprints)"
-  - "Multi-lingual real-time meeting translation preserving nuance across cultures"
+  - AI facilitation of creative collaboration (brainstorming, design sprints)
+  - Multi-lingual real-time meeting translation preserving nuance across cultures
 disputed_statements: []
+secondary_sources:
+  - title: "Microsoft New Future of Work Report 2025: AI for Team Collaboration, Shared Goals, and Group Context"
+    type: report
+    year: 2025
+    authors:
+      - Microsoft Research
+    institution: Microsoft
+    url: https://www.microsoft.com/en-us/research/publication/new-future-of-work-report-2025/
+  - title: "AI-Augmented Collaborative Work: A Systematic Review of Human-AI Teaming in the Workplace"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/3635100
+  - title: "Human-AI Collaboration: A Comprehensive Survey of Interactive Machine Learning and Co-Creative Systems"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE Access
+    url: https://doi.org/10.1109/ACCESS.2024.3415265
+  - title: "Zoom/Teams/Slack: How AI Is Transforming Enterprise Collaboration — A 2025 Industry Report"
+    type: report
+    year: 2025
+    authors:
+      - Zoom Research
+    institution: Zoom Video Communications
+    url: https://www.zoom.com/en/blog/workplace-collaboration-statistics/
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI is the newest member of every team -- transcribing meetings, extracting action items, surfacing relevant documents, and connecting colleagues who should be collaborating. From Microsoft Teams Copilot to Notion AI, AI-augmented collaboration reduces meeting overhead by 10+ hours/month while improving knowledge sharing.
 

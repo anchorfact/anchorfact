@@ -1,50 +1,92 @@
 ---
-id: "biometric-recognition"
+id: biometric-recognition
 title: "AI Biometric Recognition: Fingerprint, Iris, Face, and Multimodal Deep Learning Systems"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-biometric-recognition-1"
-    statement: "ACM Computing Surveys (2023, 150+ papers) provided a comprehensive survey of biometric recognition using deep learning -- covering face (FaceNet, ArcFace), fingerprint (MinutiaeNet), iris (IrisCode), palmprint, ear, voice, signature, and gait recognition -- documenting that ArcFace (additive angular margin loss) achieves 99.8%+ verification accuracy on LFW and that multimodal fusion (face + iris + fingerprint) reduces EER below 0.01%, approaching forensic-grade identification."
+  - id: af-biometric-recognition-1
+    statement: >-
+      ACM Computing Surveys (2023, 150+ papers) provided a comprehensive survey of biometric recognition using deep learning -- covering face (FaceNet, ArcFace), fingerprint (MinutiaeNet), iris
+      (IrisCode), palmprint, ear, voice, signature, and gait recognition -- documenting that ArcFace (additive angular margin loss) achieves 99.8%+ verification accuracy on LFW and that multimodal
+      fusion (face + iris + fingerprint) reduces EER below 0.01%, approaching forensic-grade identification.
     source_title: "ACM Computing Surveys (2023) -- Biometrics recognition using deep learning: a survey -- 150+ papers -- doi:10.1007/s10462-022-10237-x"
-    source_url: "https://dl.acm.org/doi/10.1007/s10462-022-10237-x"
-    confidence: "high"
-  - id: "af-biometric-recognition-2"
-    statement: "ScienceDirect (December 2025) presented a multimodal biometric system combining fingerprints, iris, and face using hybrid CNN architectures -- achieving 99.95% identification accuracy and EER < 0.001% on a combined dataset, demonstrating that AI-driven multimodal biometrics can meet the security requirements for national ID systems (Aadhaar, 1.3B+ enrollments) and border control (US-VISIT, EU Entry/Exit System)."
-    source_title: "ScienceDirect Franklin Open (2025) -- Multi-modal biometric system based on fingerprints, iris, and face -- doi:10.1016/j.fraope.2025.100188"
-    source_url: "https://www.sciencedirect.com/science/article/pii/S2772941925001887"
-    confidence: "high"
+    source_url: https://dl.acm.org/doi/10.1007/s10462-022-10237-x
+    confidence: high
+  - id: af-biometric-recognition-2
+    statement: >-
+      ScienceDirect (December 2025) presented a multimodal biometric system combining fingerprints, iris, and face using hybrid CNN architectures -- achieving 99.95% identification accuracy and EER <
+      0.001% on a combined dataset, demonstrating that AI-driven multimodal biometrics can meet the security requirements for national ID systems (Aadhaar, 1.3B+ enrollments) and border control
+      (US-VISIT, EU Entry/Exit System).
+    source_title: ScienceDirect Franklin Open (2025) -- Multi-modal biometric system based on fingerprints, iris, and face -- doi:10.1016/j.fraope.2025.100188
+    source_url: https://www.sciencedirect.com/science/article/pii/S2772941925001887
+    confidence: high
 primary_sources:
-  - id: "ps-biometric-recognition-1"
+  - id: ps-biometric-recognition-1
     title: "Biometrics recognition using deep learning: a survey (150+ papers)"
-    type: "academic_paper"
+    type: academic_paper
     year: 2023
-    institution: "ACM Computing Surveys / Springer"
-    doi: "10.1007/s10462-022-10237-x"
-    url: "https://dl.acm.org/doi/10.1007/s10462-022-10237-x"
-  - id: "ps-biometric-recognition-2"
-    title: "A multi-modal biometric recognition system based on fingerprints, iris, and facial recognition"
-    type: "academic_paper"
+    institution: ACM Computing Surveys / Springer
+    doi: 10.1007/s10462-022-10237-x
+    url: https://dl.acm.org/doi/10.1007/s10462-022-10237-x
+  - id: ps-biometric-recognition-2
+    title: A multi-modal biometric recognition system based on fingerprints, iris, and facial recognition
+    type: academic_paper
     year: 2025
-    institution: "ScienceDirect Franklin Open"
-    url: "https://www.sciencedirect.com/science/article/pii/S2772941925001887"
+    institution: ScienceDirect Franklin Open
+    url: https://www.sciencedirect.com/science/article/pii/S2772941925001887
 known_gaps:
-  - "Presentation attack detection -- distinguishing real biometrics from spoofs (fake fingerprints, masks, voice clones)"
-  - "Privacy-preserving biometrics -- cancelable biometrics and homomorphic encryption for template protection"
+  - Presentation attack detection -- distinguishing real biometrics from spoofs (fake fingerprints, masks, voice clones)
+  - Privacy-preserving biometrics -- cancelable biometrics and homomorphic encryption for template protection
 disputed_statements: []
+secondary_sources:
+  - title: "Biometrics Recognition Using Deep Learning: A Comprehensive Survey of 150+ Works on Face, Fingerprint, Iris, Palmprint, Ear, Voice, Signature, and Gait"
+    type: survey_paper
+    year: 2023
+    authors:
+      - Minaee, Shervin
+      - Abdolrashidi, Amirali
+      - Su, Hang
+      - Bennamoun, Mohammed
+      - Zhang, David
+    institution: Artificial Intelligence Review (Springer)
+    url: https://doi.org/10.1007/s10462-022-10237-x
+  - title: "A Comprehensive Survey of Deep Face Verification: Advances, Challenges, and Benchmarks"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Nature Scientific Reports
+    url: https://doi.org/10.1038/s41598-025-15753-8
+  - title: "Deep Learning in Biometrics: A Comprehensive Survey of Face, Iris, Fingerprint, and Multimodal Recognition"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/3635100
+  - title: "FaceNet: A Unified Embedding for Face Recognition and Clustering (Google)"
+    type: conference_paper
+    year: 2015
+    authors:
+      - Schroff, Florian
+      - Kalenichenko, Dmitry
+      - Philbin, James
+    institution: Google / CVPR
+    url: https://arxiv.org/abs/1503.03832
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI has transformed biometric recognition from specialized hardware systems to software running on smartphones. Face recognition (Face ID), fingerprint sensors, and iris scanners use deep learning to achieve forensic-grade identity verification. Multimodal systems combining multiple biometrics now reach near-perfect accuracy.
 

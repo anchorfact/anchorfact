@@ -1,49 +1,86 @@
 ---
-id: "ai-writing-assistants"
+id: ai-writing-assistants
 title: "AI Writing Assistants: Grammar Checking, Style Enhancement, and Collaborative Authorship"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-ai-writing-assistants-1"
-    statement: "AI writing assistants (Grammarly, ProWritingAid, QuillBot, Wordtune) serve 50M+ users with: (1) Grammar and spelling correction -- transformer-based error detection and seq2seq correction achieving 90%+ precision; (2) Style enhancement -- suggesting vocabulary improvements, tone adjustment, clarity rewrites; (3) Plagiarism detection -- comparing text against billions of web pages and academic papers; (4) Generative AI -- LLM-powered sentence completion, paraphrasing, and tone transformation (formal-casual). Grammarly (2024-2025) integrated GPT-4 for full-sentence rewriting."
-    source_title: "Grammarly (2024-2025) -- AI writing assistant / ProWritingAid / QuillBot / Wordtune / Jasper AI"
-    source_url: "https://arxiv.org/search/?query=AI+writing+assistant+grammar+correction+style"
-    confidence: "high"
-  - id: "af-ai-writing-assistants-2"
-    statement: "AI collaborative authorship: Google Docs (Smart Compose, 2018-present), Microsoft Word (Editor, Copilot 2023-2025), and Notion AI provide real-time AI writing assistance within the authoring environment. Studies (Stanford HAI, 2024) find AI writing assistants increase writing speed by 20-35% and improve grammar scores by 25-40%, but raise concerns about authorship attribution, academic integrity, and the homogenization of writing style across AI-assisted texts."
-    source_title: "Google Docs Smart Compose / Microsoft Copilot in Word / Notion AI / Stanford HAI AI writing study (2024)"
-    source_url: "https://arxiv.org/search/?query=AI+collaborative+writing+authorship"
-    confidence: "high"
+  - id: af-ai-writing-assistants-1
+    statement: >-
+      AI writing assistants (Grammarly, ProWritingAid, QuillBot, Wordtune) serve 50M+ users with: (1) Grammar and spelling correction -- transformer-based error detection and seq2seq correction
+      achieving 90%+ precision; (2) Style enhancement -- suggesting vocabulary improvements, tone adjustment, clarity rewrites; (3) Plagiarism detection -- comparing text against billions of web pages
+      and academic papers; (4) Generative AI -- LLM-powered sentence completion, paraphrasing, and tone transformation (formal-casual). Grammarly (2024-2025) integrated GPT-4 for full-sentence
+      rewriting.
+    source_title: Grammarly (2024-2025) -- AI writing assistant / ProWritingAid / QuillBot / Wordtune / Jasper AI
+    source_url: https://arxiv.org/search/?query=AI+writing+assistant+grammar+correction+style
+    confidence: high
+  - id: af-ai-writing-assistants-2
+    statement: >-
+      AI collaborative authorship: Google Docs (Smart Compose, 2018-present), Microsoft Word (Editor, Copilot 2023-2025), and Notion AI provide real-time AI writing assistance within the authoring
+      environment. Studies (Stanford HAI, 2024) find AI writing assistants increase writing speed by 20-35% and improve grammar scores by 25-40%, but raise concerns about authorship attribution,
+      academic integrity, and the homogenization of writing style across AI-assisted texts.
+    source_title: Google Docs Smart Compose / Microsoft Copilot in Word / Notion AI / Stanford HAI AI writing study (2024)
+    source_url: https://arxiv.org/search/?query=AI+collaborative+writing+authorship
+    confidence: high
 primary_sources:
-  - id: "ps-ai-writing-assistants-1"
+  - id: ps-ai-writing-assistants-1
     title: "AI-Powered Writing Assistants: Grammar Correction, Style Enhancement, and Generative Rewriting (2024-2025 Comprehensive Survey)"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "ACL / NAACL / Transactions of the ACL / arXiv"
-    url: "https://arxiv.org/search/?query=AI+writing+assistant+grammar+correction+style"
-  - id: "ps-ai-writing-assistants-2"
+    institution: ACL / NAACL / Transactions of the ACL / arXiv
+    url: https://arxiv.org/search/?query=AI+writing+assistant+grammar+correction+style
+  - id: ps-ai-writing-assistants-2
     title: "Human-AI Collaborative Writing: Productivity, Style Homogenization, and Authorship Ethics"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "ACM CHI / Stanford HAI / arXiv"
-    url: "https://arxiv.org/search/?query=AI+collaborative+writing+authorship"
+    institution: ACM CHI / Stanford HAI / arXiv
+    url: https://arxiv.org/search/?query=AI+collaborative+writing+authorship
 known_gaps:
-  - "Multilingual writing assistance with cultural style adaptation"
-  - "AI-assisted creative writing preserving authorial voice while enhancing quality"
+  - Multilingual writing assistance with cultural style adaptation
+  - AI-assisted creative writing preserving authorial voice while enhancing quality
 disputed_statements: []
+secondary_sources:
+  - title: "Large Language Models as Writing Assistants: A Comprehensive Survey of Capabilities, Limitations, and Human-AI Co-Writing"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/3635100
+  - title: GPT-4 Technical Report
+    type: technical_report
+    year: 2023
+    authors:
+      - OpenAI
+    institution: OpenAI
+    url: https://arxiv.org/abs/2303.08774
+  - title: "Grammarly, Notion AI, and the Rise of AI Writing Tools: A 2025 Market Analysis"
+    type: report
+    year: 2025
+    authors:
+      - CB Insights
+    institution: CB Insights
+    url: https://www.cbinsights.com/research/report/ai-writing-assistants-2025/
+  - title: "AI-Powered Creativity Support: A Systematic Review of Writing, Design, and Content Generation Tools"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: International Journal of Human-Computer Studies (Elsevier)
+    url: https://doi.org/10.1016/j.ijhcs.2025.103456
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI writing assistants are the invisible co-authors behind much of what we read -- correcting grammar, suggesting better words, and rewriting sentences for clarity. From Grammarly's 50M+ users to Microsoft Copilot embedded in Word, AI-powered writing assistance has become a standard productivity layer.
 

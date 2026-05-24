@@ -1,49 +1,85 @@
 ---
-id: "ai-surveillance-systems"
+id: ai-surveillance-systems
 title: "AI for Surveillance Systems: Object Tracking, Anomaly Detection, and Intelligent Monitoring"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-ai-surveillance-systems-1"
-    statement: "AI video surveillance (2023-2026): deep learning models (YOLOv8/ReID for multi-object tracking, I3D/VideoMAE for action recognition) analyze CCTV feeds in real-time. Applications: anomaly detection (fighting, loitering, abandoned objects), people counting (retail footfall), vehicle analytics (license plate recognition, parking occupancy), and forensic search (\"find person in red shirt between 2-4 PM across 100 cameras\")."
-    source_title: "BriefCam / Avigilon AI / Axis Communications / Hikvision AI / Milestone XProtect AI analytics"
-    source_url: "https://arxiv.org/search/?query=video+surveillance+deep+learning+tracking+anomaly"
-    confidence: "high"
-  - id: "af-ai-surveillance-systems-2"
-    statement: "AI surveillance ethics and regulation: the EU AI Act (2026 enforcement) bans real-time biometric surveillance in public spaces (with exceptions for serious crime). China extensively deploys AI surveillance (Skynet, 600M+ cameras). US cities (San Francisco, Boston) have banned government use of facial recognition. The AI surveillance debate centers on: public safety benefit vs. privacy and civil liberties, bias in facial recognition, and the chilling effect of mass surveillance."
-    source_title: "EU AI Act (2026) -- biometric surveillance ban / ACLU facial recognition reports / NIST FRVT bias / China Skynet surveillance / San Francisco facial recognition ban"
-    source_url: "https://arxiv.org/search/?query=AI+surveillance+ethics+facial+recognition+regulation"
-    confidence: "high"
+  - id: af-ai-surveillance-systems-1
+    statement: >-
+      AI video surveillance (2023-2026): deep learning models (YOLOv8/ReID for multi-object tracking, I3D/VideoMAE for action recognition) analyze CCTV feeds in real-time. Applications: anomaly
+      detection (fighting, loitering, abandoned objects), people counting (retail footfall), vehicle analytics (license plate recognition, parking occupancy), and forensic search ("find person in red
+      shirt between 2-4 PM across 100 cameras").
+    source_title: BriefCam / Avigilon AI / Axis Communications / Hikvision AI / Milestone XProtect AI analytics
+    source_url: https://arxiv.org/search/?query=video+surveillance+deep+learning+tracking+anomaly
+    confidence: high
+  - id: af-ai-surveillance-systems-2
+    statement: >-
+      AI surveillance ethics and regulation: the EU AI Act (2026 enforcement) bans real-time biometric surveillance in public spaces (with exceptions for serious crime). China extensively deploys AI
+      surveillance (Skynet, 600M+ cameras). US cities (San Francisco, Boston) have banned government use of facial recognition. The AI surveillance debate centers on: public safety benefit vs. privacy
+      and civil liberties, bias in facial recognition, and the chilling effect of mass surveillance.
+    source_title: EU AI Act (2026) -- biometric surveillance ban / ACLU facial recognition reports / NIST FRVT bias / China Skynet surveillance / San Francisco facial recognition ban
+    source_url: https://arxiv.org/search/?query=AI+surveillance+ethics+facial+recognition+regulation
+    confidence: high
 primary_sources:
-  - id: "ps-ai-surveillance-systems-1"
+  - id: ps-ai-surveillance-systems-1
     title: "Deep Learning for Intelligent Video Surveillance: Object Tracking, Action Recognition, and Anomaly Detection (2024-2025 Comprehensive Survey)"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "IEEE TIFS / CVIU / arXiv"
-    url: "https://arxiv.org/search/?query=video+surveillance+deep+learning+tracking+anomaly"
-  - id: "ps-ai-surveillance-systems-2"
+    institution: IEEE TIFS / CVIU / arXiv
+    url: https://arxiv.org/search/?query=video+surveillance+deep+learning+tracking+anomaly
+  - id: ps-ai-surveillance-systems-2
     title: "AI Surveillance Ethics: Facial Recognition Regulation, Bias, and the Right to Privacy in Public Spaces"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "ACM FAccT / Nature Machine Intelligence / Harvard Law Review"
-    url: "https://arxiv.org/search/?query=AI+surveillance+ethics+facial+recognition+regulation"
+    institution: ACM FAccT / Nature Machine Intelligence / Harvard Law Review
+    url: https://arxiv.org/search/?query=AI+surveillance+ethics+facial+recognition+regulation
 known_gaps:
-  - "Privacy-preserving surveillance -- detecting anomalies without identifying individuals"
-  - "Edge AI surveillance -- real-time on-camera processing without cloud dependence"
+  - Privacy-preserving surveillance -- detecting anomalies without identifying individuals
+  - Edge AI surveillance -- real-time on-camera processing without cloud dependence
 disputed_statements: []
+secondary_sources:
+  - title: "AI-Powered Surveillance for Smart Cities: Foundations, Computer Vision, and Ethics"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Springer (Book Chapter)
+    url: https://doi.org/10.1007/978-3-031-72959-1_11
+  - title: "Computer-Vision Research Powers Surveillance Technology: An Empirical Account of the Surveillance AI Pipeline"
+    type: journal_article
+    year: 2025
+    authors:
+      - multiple
+    institution: Nature
+    url: https://doi.org/10.1038/s41586-025-08972-6
+  - title: "AI-Powered Surveillance Systems: Enhancing Public Safety Through Machine Learning-Driven CCTV"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ResearchGate / IEEE Access
+    url: https://doi.org/10.1109/ACCESS.2025.3567842
+  - title: "Surveillance and Predictive Policing Through AI: Ethical Frameworks and Policy Recommendations (Deloitte)"
+    type: report
+    year: 2024
+    authors:
+      - Deloitte Research
+    institution: Deloitte
+    url: https://www.deloitte.com/global/en/Industries/government-public/perspectives/urban-future-with-a-purpose/surveillance-and-predictive-policing-through-ai.html
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI surveillance sees everything, everywhere, all at once -- tracking objects across hundreds of cameras, detecting anomalies in real-time, and enabling forensic search through weeks of footage in seconds. The technology raises fundamental questions about privacy, bias, and the balance between security and civil liberties.
 
