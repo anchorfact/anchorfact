@@ -1,50 +1,89 @@
 ---
-id: "mlops-llmops"
+id: mlops-llmops
 title: "MLOps and LLMOps: Production AI Engineering, Observability, and Platform Architecture"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-mlops-llmops-1"
-    statement: "Springer AI Review (March 2025) published a comprehensive landscape analysis of MLOps platforms — examining 16 widely-used tools including MLflow, Kubeflow, Weights & Biases, and Vertex AI — across the ML lifecycle: data versioning, experiment tracking, model registry, deployment serving, and monitoring. The study found that 68% of organizations have not fully automated their ML pipeline, with model monitoring and retraining as the primary bottlenecks."
+  - id: af-mlops-llmops-1
+    statement: >-
+      Springer AI Review (March 2025) published a comprehensive landscape analysis of MLOps platforms — examining 16 widely-used tools including MLflow, Kubeflow, Weights & Biases, and Vertex AI —
+      across the ML lifecycle: data versioning, experiment tracking, model registry, deployment serving, and monitoring. The study found that 68% of organizations have not fully automated their ML
+      pipeline, with model monitoring and retraining as the primary bottlenecks.
     source_title: "Springer AI Review (2025) — MLOps landscape: platforms and tools — doi:10.1007/s10462-025-11164-3"
-    source_url: "https://link.springer.com/article/10.1007/s10462-025-11164-3"
-    confidence: "high"
-  - id: "af-mlops-llmops-2"
-    statement: "An arxiv contribution (April 2026) proposed a five-layer AI observability taxonomy for LLM systems — spanning (1) infrastructure metrics (GPU/latency), (2) prompt engineering analytics, (3) generation quality evaluation, (4) safety and alignment monitoring, and (5) business impact metrics — synthesizing best practices from 100+ production LLM deployments at enterprises including Google, Microsoft, and Anthropic."
+    source_url: https://link.springer.com/article/10.1007/s10462-025-11164-3
+    confidence: high
+  - id: af-mlops-llmops-2
+    statement: >-
+      An arxiv contribution (April 2026) proposed a five-layer AI observability taxonomy for LLM systems — spanning (1) infrastructure metrics (GPU/latency), (2) prompt engineering analytics, (3)
+      generation quality evaluation, (4) safety and alignment monitoring, and (5) business impact metrics — synthesizing best practices from 100+ production LLM deployments at enterprises including
+      Google, Microsoft, and Anthropic.
     source_title: "arxiv (2026) — AI Observability for Large Language Model Systems: A Multi-Layer Taxonomy"
-    source_url: "https://arxiv.org/abs/2604.26152"
-    confidence: "high"
+    source_url: https://arxiv.org/abs/2604.26152
+    confidence: high
 primary_sources:
-  - id: "ps-mlops-llmops-1"
+  - id: ps-mlops-llmops-1
     title: "Machine learning operations landscape: platforms and tools"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "Springer AI Review"
-    doi: "10.1007/s10462-025-11164-3"
-    url: "https://link.springer.com/article/10.1007/s10462-025-11164-3"
-  - id: "ps-mlops-llmops-2"
+    institution: Springer AI Review
+    doi: 10.1007/s10462-025-11164-3
+    url: https://link.springer.com/article/10.1007/s10462-025-11164-3
+  - id: ps-mlops-llmops-2
     title: "AI Observability for Large Language Model Systems: A Multi-Layer Taxonomy"
-    type: "academic_paper"
+    type: academic_paper
     year: 2026
-    institution: "arXiv"
-    url: "https://arxiv.org/abs/2604.26152"
+    institution: arXiv
+    url: https://arxiv.org/abs/2604.26152
 known_gaps:
-  - "Standardized cost accounting for LLM API calls across multi-model pipelines"
-  - "Automated root-cause analysis for production AI failures"
+  - Standardized cost accounting for LLM API calls across multi-model pipelines
+  - Automated root-cause analysis for production AI failures
 disputed_statements: []
+secondary_sources:
+  - title: "MLOps: A Comprehensive Survey of Machine Learning Operations — From Development to Production"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/3635100
+  - title: Hidden Technical Debt in Machine Learning Systems (Sculley et al. — Google)
+    type: conference_paper
+    year: 2015
+    authors:
+      - Sculley, D.
+      - Holt, Gary
+      - Golovin, Daniel
+      - et al.
+    institution: Google / NeurIPS
+    url: https://papers.nips.cc/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html
+  - title: "LLMOps: Operationalizing Large Language Models — A Survey of Deployment, Monitoring, and Maintenance"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE Access
+    url: https://doi.org/10.1109/ACCESS.2024.3415265
+  - title: "Google Vertex AI MLOps: Best Practices for Production ML Pipelines"
+    type: report
+    year: 2024
+    authors:
+      - Google Cloud
+    institution: Google Cloud
+    url: https://cloud.google.com/vertex-ai/docs/mlops
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 MLOps and LLMOps are the engineering disciplines that bridge the gap between a research notebook and a reliable, monitored, cost-effective production AI system. As enterprises deploy LLMs at scale, LLMOps extends traditional MLOps with prompt versioning, guardrail monitoring, hallucination detection, and cost-per-call optimization — making AI operations a $10B+ market by 2026.
 

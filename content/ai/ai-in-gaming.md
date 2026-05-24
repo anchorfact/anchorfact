@@ -1,52 +1,86 @@
 ---
-id: "ai-in-gaming"
+id: ai-in-gaming
 title: "AI in Gaming: NPCs, Procedural Content, and AlphaStar"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-ai-in-gaming-1"
-    statement: "DeepMind's AlphaStar achieved Grandmaster level in StarCraft II (2019), defeating 99.8% of human players. It combined supervised imitation learning from human replays with multi-agent reinforcement learning where copies of the agent competed in a league."
-    source_title: "Vinyals et al., Nature (2019)"
-    confidence: "high"
-  - id: "af-ai-in-gaming-2"
-    statement: "AI-driven NPCs using reinforcement learning can produce emergent, non-scripted behavior — enemies that learn to flank, teammates that adapt to player strategies — creating more engaging and replayable game experiences than traditional finite-state machines."
-    source_title: "Unity ML-Agents / Game AI Research (2024)"
-    confidence: "high"
-
+  - id: af-ai-in-gaming-1
+    statement: >-
+      DeepMind's AlphaStar achieved Grandmaster level in StarCraft II (2019), defeating 99.8% of human players. It combined supervised imitation learning from human replays with multi-agent
+      reinforcement learning where copies of the agent competed in a league.
+    source_title: Vinyals et al., Nature (2019)
+    confidence: high
+  - id: af-ai-in-gaming-2
+    statement: >-
+      AI-driven NPCs using reinforcement learning can produce emergent, non-scripted behavior — enemies that learn to flank, teammates that adapt to player strategies — creating more engaging and
+      replayable game experiences than traditional finite-state machines.
+    source_title: Unity ML-Agents / Game AI Research (2024)
+    confidence: high
 completeness: 0.9
-
 primary_sources:
-  - title: "Grandmaster level in StarCraft II using multi-agent reinforcement learning (AlphaStar)"
-    type: "academic_paper"
+  - title: Grandmaster level in StarCraft II using multi-agent reinforcement learning (AlphaStar)
+    type: academic_paper
     year: 2019
-    url: "https://www.nature.com/articles/s41586-019-1724-z"
-    institution: "Nature/DeepMind"
+    url: https://www.nature.com/articles/s41586-019-1724-z
+    institution: Nature/DeepMind
   - title: "SIMA: A Generalist AI Agent for 3D Virtual Environments"
-    type: "official_report"
+    type: official_report
     year: 2024
-    url: "https://deepmind.google/blog/sima-generalist-ai-agent-for-3d-virtual-environments/"
-    institution: "Google DeepMind"
-
+    url: https://deepmind.google/blog/sima-generalist-ai-agent-for-3d-virtual-environments/
+    institution: Google DeepMind
 known_gaps:
-  - "Emotion-driven NPC AI"
-  - "Real-time AI generation in open-world games"
-
+  - Emotion-driven NPC AI
+  - Real-time AI generation in open-world games
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
+secondary_sources:
+  - title: Mastering the Game of Go with Deep Neural Networks and Tree Search (AlphaGo)
+    type: journal_article
+    year: 2016
+    authors:
+      - Silver, David
+      - Huang, Aja
+      - Maddison, Chris J.
+      - et al.
+    institution: Google DeepMind / Nature
+    url: https://www.nature.com/articles/nature16961
+  - title: Mastering Stratego, the Classic Game of Imperfect Information (DeepNash)
+    type: journal_article
+    year: 2022
+    authors:
+      - Perolat, Julien
+      - De Vylder, Bart
+      - Hennes, Daniel
+      - et al.
+    institution: Google DeepMind / Science
+    url: https://doi.org/10.1126/science.add4679
+  - title: "AI in Video Games: A Comprehensive Survey of NPC Behavior, Procedural Content Generation, and Player Modeling"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE Access
+    url: https://doi.org/10.1109/ACCESS.2024.3415265
+  - title: "NVIDIA ACE: AI-Powered Digital Humans and NPCs for Gaming"
+    type: report
+    year: 2024
+    authors:
+      - NVIDIA
+    institution: NVIDIA
+    url: https://developer.nvidia.com/ace
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI in gaming spans from NPC behavior control to procedural world generation and competitive gameplay. AlphaStar mastered StarCraft II; SIMA learns to follow instructions across multiple 3D games without game-specific engineering.
 

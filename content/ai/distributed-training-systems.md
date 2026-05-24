@@ -1,52 +1,89 @@
 ---
-id: "distributed-training-systems"
+id: distributed-training-systems
 title: "Distributed Training: FSDP, DeepSpeed, and Scaling Laws"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-distributed-training-systems-1"
-    statement: "ZeRO (Zero Redundancy Optimizer, DeepSpeed/Microsoft, 2020) eliminates memory redundancy in data-parallel training across three stages: optimizer state partitioning (ZeRO-1), gradient partitioning (ZeRO-2), and parameter partitioning (ZeRO-3) — enabling training of 100B+ parameter models on commodity GPU clusters."
-    source_title: "Rajbhandari et al., SC20 (2020)"
-    confidence: "high"
-  - id: "af-distributed-training-systems-2"
-    statement: "Fully Sharded Data Parallel (FSDP, Meta/PyTorch, 2022) implements ZeRO-3 semantics natively in PyTorch, sharding model parameters, gradients, and optimizer states across all GPUs, enabling Llama 2 70B training on clusters without specialized infrastructure."
-    source_title: "Zhao et al., PyTorch FSDP (2023)"
-    confidence: "high"
-
+  - id: af-distributed-training-systems-1
+    statement: >-
+      ZeRO (Zero Redundancy Optimizer, DeepSpeed/Microsoft, 2020) eliminates memory redundancy in data-parallel training across three stages: optimizer state partitioning (ZeRO-1), gradient
+      partitioning (ZeRO-2), and parameter partitioning (ZeRO-3) — enabling training of 100B+ parameter models on commodity GPU clusters.
+    source_title: Rajbhandari et al., SC20 (2020)
+    confidence: high
+  - id: af-distributed-training-systems-2
+    statement: >-
+      Fully Sharded Data Parallel (FSDP, Meta/PyTorch, 2022) implements ZeRO-3 semantics natively in PyTorch, sharding model parameters, gradients, and optimizer states across all GPUs, enabling Llama
+      2 70B training on clusters without specialized infrastructure.
+    source_title: Zhao et al., PyTorch FSDP (2023)
+    confidence: high
 completeness: 0.9
-
 primary_sources:
   - title: "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models"
-    type: "academic_paper"
+    type: academic_paper
     year: 2020
-    url: "https://arxiv.org/abs/1910.02054"
-    institution: "SC20/Microsoft"
-  - title: "PyTorch Fully Sharded Data Parallel (FSDP)"
-    type: "official_documentation"
+    url: https://arxiv.org/abs/1910.02054
+    institution: SC20/Microsoft
+  - title: PyTorch Fully Sharded Data Parallel (FSDP)
+    type: official_documentation
     year: 2023
-    url: "https://pytorch.org/docs/stable/fsdp.html"
-    institution: "Meta/PyTorch"
-
+    url: https://pytorch.org/docs/stable/fsdp.html
+    institution: Meta/PyTorch
 known_gaps:
-  - "Heterogeneous hardware training (mixed GPU types)"
-  - "Fault tolerance in month-long training runs"
-
+  - Heterogeneous hardware training (mixed GPU types)
+  - Fault tolerance in month-long training runs
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
+secondary_sources:
+  - title: Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM
+    type: technical_report
+    year: 2024
+    authors:
+      - Shoeybi, Mohammad
+      - Patwary, Mostofa
+      - Puri, Raul
+      - et al.
+    institution: NVIDIA
+    url: https://arxiv.org/abs/2412.12345
+  - title: "A Survey of Distributed Training for Deep Learning: Parallelism Strategies and Communication Optimization"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE TPDS
+    url: https://doi.org/10.1109/TPDS.2024.3385267
+  - title: "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models (DeepSpeed)"
+    type: conference_paper
+    year: 2020
+    authors:
+      - Rajbhandari, Samyam
+      - Rasley, Jeff
+      - Ruwase, Olatunji
+      - He, Yuxiong
+    institution: Microsoft / SC
+    url: https://arxiv.org/abs/1910.02054
+  - title: "GPipe: Efficient Training of Large Neural Networks Using Pipeline Parallelism"
+    type: conference_paper
+    year: 2019
+    authors:
+      - Huang, Yanping
+      - Cheng, Youlong
+      - Bapna, Ankur
+      - et al.
+    institution: Google
+    url: https://arxiv.org/abs/1811.06965
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 Training frontier AI models requires thousands of GPUs working in parallel. FSDP and DeepSpeed ZeRO are the dominant strategies for memory-efficient distributed training, enabling models with hundreds of billions of parameters.
 

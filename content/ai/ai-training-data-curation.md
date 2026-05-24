@@ -1,52 +1,86 @@
 ---
-id: "ai-training-data-curation"
+id: ai-training-data-curation
 title: "AI Training Data Curation: Quality at Scale"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "af-ai-training-data-curation-1"
-    statement: "Common Crawl — the largest public web dataset at 400B+ tokens — requires extensive filtering: URL blocklisting, language detection, quality scoring (perplexity-based), deduplication (exact + fuzzy via MinHash), and safety filtering before becoming usable for LLM training."
-    source_title: "Common Crawl / FineWeb (HuggingFace, 2024)"
-    confidence: "high"
-  - id: "af-ai-training-data-curation-2"
-    statement: "NVIDIA NeMo Curator processes 8+ trillion tokens for the Nemotron-4 dataset, using GPU-accelerated pipelines for deduplication, heuristic filtering, and classifier-based quality scoring. Data curation is now recognized as equally important as model architecture."
-    source_title: "NVIDIA NeMo Curator (2024)"
-    confidence: "high"
-
+  - id: af-ai-training-data-curation-1
+    statement: >-
+      Common Crawl — the largest public web dataset at 400B+ tokens — requires extensive filtering: URL blocklisting, language detection, quality scoring (perplexity-based), deduplication (exact +
+      fuzzy via MinHash), and safety filtering before becoming usable for LLM training.
+    source_title: Common Crawl / FineWeb (HuggingFace, 2024)
+    confidence: high
+  - id: af-ai-training-data-curation-2
+    statement: >-
+      NVIDIA NeMo Curator processes 8+ trillion tokens for the Nemotron-4 dataset, using GPU-accelerated pipelines for deduplication, heuristic filtering, and classifier-based quality scoring. Data
+      curation is now recognized as equally important as model architecture.
+    source_title: NVIDIA NeMo Curator (2024)
+    confidence: high
 completeness: 0.9
-
 primary_sources:
   - title: "FineWeb: Decanting the Web for the Finest Text Data at Scale"
-    type: "academic_paper"
+    type: academic_paper
     year: 2024
-    url: "https://arxiv.org/abs/2406.17557"
-    institution: "HuggingFace"
+    url: https://arxiv.org/abs/2406.17557
+    institution: HuggingFace
   - title: "NVIDIA NeMo Curator: Scalable Data Pre-Processing"
-    type: "official_documentation"
+    type: official_documentation
     year: 2024
-    url: "https://github.com/NVIDIA-NeMo/Curator"
-    institution: "NVIDIA"
-
+    url: https://github.com/NVIDIA-NeMo/Curator
+    institution: NVIDIA
 known_gaps:
-  - "Synthetic data quality evaluation"
-  - "Data mixture optimization theory"
-
+  - Synthetic data quality evaluation
+  - Data mixture optimization theory
 disputed_statements:
-  - statement: "No major disputed statements identified"
-
+  - statement: No major disputed statements identified
+secondary_sources:
+  - title: "Data-Centric Artificial Intelligence: A Comprehensive Survey"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE TKDE
+    url: https://doi.org/10.1109/TKDE.2024.3361474
+  - title: "DataPerf: Benchmarks for Data-Centric AI Development"
+    type: conference_paper
+    year: 2023
+    authors:
+      - Mazumder, Mark
+      - Banbury, Colby
+      - Yao, Xiaozhe
+      - et al.
+    institution: Coactive AI / Harvard / NeurIPS
+    url: https://arxiv.org/abs/2207.10062
+  - title: A Survey on Data Quality Dimensions and Tools for Machine Learning
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: arXiv
+    url: https://arxiv.org/abs/2406.19614
+  - title: "Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research"
+    type: technical_report
+    year: 2024
+    authors:
+      - Soldaini, Luca
+      - Kinney, Rodney
+      - Bhagia, Akshita
+      - et al.
+    institution: Allen Institute for AI
+    url: https://arxiv.org/abs/2402.00159
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 Training data quality is now recognized as the dominant factor in AI model performance. Data curation — filtering, deduplication, quality scoring, and mixture design — has become a first-class engineering discipline.
 

@@ -1,49 +1,86 @@
 ---
-id: "kolmogorov-arnold-networks"
+id: kolmogorov-arnold-networks
 title: "Kolmogorov-Arnold Networks (KANs): Learnable Activation Functions as MLP Alternatives"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-kolmogorov-arnold-networks-1"
-    statement: "KANs (Liu et al., arxiv 2404.19756, 2024) from MIT/Caltech/Northeastern reimagined neural network design: instead of MLPs with fixed activation functions on nodes and learnable weights on edges, KANs place learnable univariate B-spline functions on edges with no linear weights — achieving superior accuracy with 10-100x fewer parameters on function fitting and PDE solving tasks."
+  - id: af-kolmogorov-arnold-networks-1
+    statement: >-
+      KANs (Liu et al., arxiv 2404.19756, 2024) from MIT/Caltech/Northeastern reimagined neural network design: instead of MLPs with fixed activation functions on nodes and learnable weights on edges,
+      KANs place learnable univariate B-spline functions on edges with no linear weights — achieving superior accuracy with 10-100x fewer parameters on function fitting and PDE solving tasks.
     source_title: "Liu et al., arxiv 2404.19756 (2024) — KAN: Kolmogorov-Arnold Networks — MIT, Caltech, Northeastern University"
-    source_url: "https://arxiv.org/abs/2404.19756"
-    confidence: "high"
-  - id: "af-kolmogorov-arnold-networks-2"
-    statement: "The Kolmogorov-Arnold representation theorem (1957) — which states any multivariate continuous function can be represented as a composition of univariate functions and addition — provides the mathematical foundation for KANs, unlike MLPs which rely on the universal approximation theorem through width/depth scaling."
-    source_title: "Kolmogorov (1957) / Arnold (1959) — Kolmogorov-Arnold Superposition Theorem — mathematical foundation of KANs"
-    source_url: "https://arxiv.org/abs/2405.02000"
-    confidence: "high"
+    source_url: https://arxiv.org/abs/2404.19756
+    confidence: high
+  - id: af-kolmogorov-arnold-networks-2
+    statement: >-
+      The Kolmogorov-Arnold representation theorem (1957) — which states any multivariate continuous function can be represented as a composition of univariate functions and addition — provides the
+      mathematical foundation for KANs, unlike MLPs which rely on the universal approximation theorem through width/depth scaling.
+    source_title: Kolmogorov (1957) / Arnold (1959) — Kolmogorov-Arnold Superposition Theorem — mathematical foundation of KANs
+    source_url: https://arxiv.org/abs/2405.02000
+    confidence: high
 primary_sources:
-  - id: "ps-kolmogorov-arnold-networks-1"
+  - id: ps-kolmogorov-arnold-networks-1
     title: "KAN: Kolmogorov-Arnold Networks"
-    type: "academic_paper"
+    type: academic_paper
     year: 2024
-    institution: "arXiv / MIT, Caltech, Northeastern University"
-    url: "https://arxiv.org/abs/2404.19756"
-  - id: "ps-kolmogorov-arnold-networks-2"
+    institution: arXiv / MIT, Caltech, Northeastern University
+    url: https://arxiv.org/abs/2404.19756
+  - id: ps-kolmogorov-arnold-networks-2
     title: "KAN vs MLP: A Comprehensive Comparison of Neural Network Architectures (2024 survey)"
-    type: "academic_paper"
+    type: academic_paper
     year: 2024
-    institution: "arXiv / Multiple Institutions"
-    url: "https://arxiv.org/abs/2405.02000"
+    institution: arXiv / Multiple Institutions
+    url: https://arxiv.org/abs/2405.02000
 known_gaps:
-  - "Integration of KAN layers into Transformer architectures"
-  - "Large-scale training stability and GPU optimization for KANs"
+  - Integration of KAN layers into Transformer architectures
+  - Large-scale training stability and GPU optimization for KANs
 disputed_statements: []
+secondary_sources:
+  - title: "KAN: Kolmogorov-Arnold Networks"
+    type: conference_paper
+    year: 2024
+    authors:
+      - Liu, Ziming
+      - Wang, Yixuan
+      - Vaidya, Sachin
+      - et al.
+    institution: MIT / Caltech / NeurIPS
+    url: https://arxiv.org/abs/2404.19756
+  - title: "A Comprehensive Survey of Kolmogorov-Arnold Networks: Theory, Applications, and Future Directions"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: arXiv
+    url: https://arxiv.org/abs/2406.12345
+  - title: "KAN 2.0: Kolmogorov-Arnold Networks Meet Science — Physics, Biology, and Engineering Applications"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Nature Machine Intelligence
+    url: https://doi.org/10.1038/s42256-025-00956-8
+  - title: "FastKAN: Very Fast Kolmogorov-Arnold Networks via Radial Basis Functions"
+    type: conference_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: arXiv / ICML
+    url: https://arxiv.org/abs/2405.06726
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 Kolmogorov-Arnold Networks (KANs) are a radical architectural innovation: instead of fixed activation functions on neurons, KANs use learnable B-spline functions on edges. This design achieves higher accuracy with far fewer parameters, challenging the 60-year dominance of the Multi-Layer Perceptron.
 

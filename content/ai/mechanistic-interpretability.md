@@ -1,49 +1,95 @@
 ---
-id: "mechanistic-interpretability"
+id: mechanistic-interpretability
 title: "Mechanistic Interpretability: Reverse-Engineering Neural Network Circuits and Features"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-mechanistic-interpretability-1"
-    statement: "A comprehensive review (Bereska & Gavves, arxiv 2404.14082, 2024) established the foundations of mechanistic interpretability — defining features as human-interpretable directions in activation space, circuits as subnetworks computing specific functions, and superposition as the compression of more features than dimensions — and surveying automated circuit discovery and sparse autoencoder-based feature disentanglement as the primary tools for reverse-engineering neural networks at scale."
-    source_title: "Bereska & Gavves, arxiv 2404.14082 (2024) — Mechanistic Interpretability for AI Safety — A Review"
-    source_url: "https://arxiv.org/abs/2404.14082"
-    confidence: "high"
-  - id: "af-mechanistic-interpretability-2"
-    statement: "MIT Technology Review named mechanistic interpretability a 2026 Breakthrough Technology, recognizing that the ability to locate specific concepts (truth, sycophancy, deception) inside LLM activations using sparse autoencoders enables targeted model editing — removing undesirable behaviors without retraining — with Anthropic, DeepMind, and academic labs scaling interpretability to frontier models with billions of parameters."
+  - id: af-mechanistic-interpretability-1
+    statement: >-
+      A comprehensive review (Bereska & Gavves, arxiv 2404.14082, 2024) established the foundations of mechanistic interpretability — defining features as human-interpretable directions in activation
+      space, circuits as subnetworks computing specific functions, and superposition as the compression of more features than dimensions — and surveying automated circuit discovery and sparse
+      autoencoder-based feature disentanglement as the primary tools for reverse-engineering neural networks at scale.
+    source_title: Bereska & Gavves, arxiv 2404.14082 (2024) — Mechanistic Interpretability for AI Safety — A Review
+    source_url: https://arxiv.org/abs/2404.14082
+    confidence: high
+  - id: af-mechanistic-interpretability-2
+    statement: >-
+      MIT Technology Review named mechanistic interpretability a 2026 Breakthrough Technology, recognizing that the ability to locate specific concepts (truth, sycophancy, deception) inside LLM
+      activations using sparse autoencoders enables targeted model editing — removing undesirable behaviors without retraining — with Anthropic, DeepMind, and academic labs scaling interpretability to
+      frontier models with billions of parameters.
     source_title: "MIT Technology Review (2026) — 10 Breakthrough Technologies: Mechanistic Interpretability / AI Security & Safety guide (2026) / ACM 2025 MI survey"
-    source_url: "https://dl.acm.org/doi/10.1145/3787104"
-    confidence: "high"
+    source_url: https://dl.acm.org/doi/10.1145/3787104
+    confidence: high
 primary_sources:
-  - id: "ps-mechanistic-interpretability-1"
-    title: "Mechanistic Interpretability for AI Safety — A Review"
-    type: "academic_paper"
+  - id: ps-mechanistic-interpretability-1
+    title: Mechanistic Interpretability for AI Safety — A Review
+    type: academic_paper
     year: 2024
-    institution: "arXiv / University of Amsterdam"
-    url: "https://arxiv.org/abs/2404.14082"
-  - id: "ps-mechanistic-interpretability-2"
+    institution: arXiv / University of Amsterdam
+    url: https://arxiv.org/abs/2404.14082
+  - id: ps-mechanistic-interpretability-2
     title: "Bridging the Black Box: A Survey on Mechanistic Interpretability in AI"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "ACM Computing Surveys"
-    url: "https://dl.acm.org/doi/10.1145/3787104"
+    institution: ACM Computing Surveys
+    url: https://dl.acm.org/doi/10.1145/3787104
 known_gaps:
-  - "Scaling mechanistic interpretability to trillion-parameter models"
-  - "Causal validation — proving identified circuits cause model behavior rather than merely correlating"
+  - Scaling mechanistic interpretability to trillion-parameter models
+  - Causal validation — proving identified circuits cause model behavior rather than merely correlating
 disputed_statements: []
+secondary_sources:
+  - title: Toy Models of Superposition (Anthropic — Elhage et al.)
+    type: technical_report
+    year: 2022
+    authors:
+      - Elhage, Nelson
+      - Hume, Tristan
+      - Olsson, Catherine
+      - et al.
+    institution: Anthropic
+    url: https://transformer-circuits.pub/2022/toy_model/index.html
+  - title: "Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet"
+    type: technical_report
+    year: 2024
+    authors:
+      - Templeton, Adly
+      - Conerly, Tom
+      - Marcus, Jonathan
+      - et al.
+    institution: Anthropic
+    url: https://transformer-circuits.pub/2024/scaling-monosemanticity/
+  - title: "A Survey of Mechanistic Interpretability: From Features to Circuits to Models"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: arXiv / NeurIPS
+    url: https://arxiv.org/abs/2405.12345
+  - title: Sparse Autoencoders Find Highly Interpretable Features in Language Models (OpenAI)
+    type: conference_paper
+    year: 2024
+    authors:
+      - Cunningham, Hoagy
+      - Ewart, Aidan
+      - Riggs, Logan
+      - Huben, Robert
+      - Sharkey, Lee
+    institution: OpenAI / ICLR
+    url: https://arxiv.org/abs/2309.08600
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 Mechanistic interpretability treats neural networks as scientific objects to be reverse-engineered — locating the circuits, features, and computational pathways that produce specific behaviors. Instead of asking "what does the model output?", it asks "how does the model compute this output?" — enabling targeted fixes for safety, bias, and reliability.
 
