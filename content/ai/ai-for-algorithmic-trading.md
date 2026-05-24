@@ -1,53 +1,86 @@
 ---
-id: "ai-for-algorithmic-trading"
+id: ai-for-algorithmic-trading
 title: "AI for Algorithmic Trading: Reinforcement Learning, Market Prediction, and Quantitative Finance"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
-
 atomic_facts:
-  - id: "af-ai-for-algorithmic-trading-1"
-    statement: "AI-driven algorithmic trading has grown from simple statistical arbitrage to sophisticated deep reinforcement learning agents that learn optimal trading policies (when to buy, sell, hold) directly from market data. Deep Q-Networks (DQN), Proximal Policy Optimization (PPO), and Soft Actor-Critic (SAC) applied to order execution and portfolio management have demonstrated improved risk-adjusted returns (Sharpe ratio improvements of 0.2-0.5 over baseline strategies) in backtesting environments, with models learning to exploit market microstructure patterns invisible to human traders."
-    source_title: "JPMorgan AI Research (2023-2025) / Two Sigma machine learning in finance / NeurIPS FinRL competition / Deep Reinforcement Learning for Trading surveys (2024-2025)"
-    source_url: "https://arxiv.org/abs/2503.00000"
-    confidence: "high"
-  - id: "af-ai-for-algorithmic-trading-2"
-    statement: "Alternative data -- satellite imagery (retail parking lot fullness, oil tank levels, crop yields), credit card transactions, social media sentiment, shipping data, and web scraping -- is processed by NLP and computer vision AI models to generate predictive signals for trading. Hedge funds (Renaissance Technologies, Two Sigma, Citadel) and investment banks collectively spend $2-3B annually on alternative data, with AI being the essential processing engine."
-    source_title: "AlternativeData.org reports (2023-2025) / JPMorgan \"Big Data and AI Strategies\" / QuantConnect / Bloomberg Alternative Data"
-    source_url: "https://jfds.pm-research.com/"
-    confidence: "high"
-
+  - id: af-ai-for-algorithmic-trading-1
+    statement: >-
+      AI-driven algorithmic trading has grown from simple statistical arbitrage to sophisticated deep reinforcement learning agents that learn optimal trading policies (when to buy, sell, hold)
+      directly from market data. Deep Q-Networks (DQN), Proximal Policy Optimization (PPO), and Soft Actor-Critic (SAC) applied to order execution and portfolio management have demonstrated improved
+      risk-adjusted returns (Sharpe ratio improvements of 0.2-0.5 over baseline strategies) in backtesting environments, with models learning to exploit market microstructure patterns invisible to
+      human traders.
+    source_title: JPMorgan AI Research (2023-2025) / Two Sigma machine learning in finance / NeurIPS FinRL competition / Deep Reinforcement Learning for Trading surveys (2024-2025)
+    source_url: https://arxiv.org/abs/2503.00000
+    confidence: high
+  - id: af-ai-for-algorithmic-trading-2
+    statement: >-
+      Alternative data -- satellite imagery (retail parking lot fullness, oil tank levels, crop yields), credit card transactions, social media sentiment, shipping data, and web scraping -- is
+      processed by NLP and computer vision AI models to generate predictive signals for trading. Hedge funds (Renaissance Technologies, Two Sigma, Citadel) and investment banks collectively spend
+      $2-3B annually on alternative data, with AI being the essential processing engine.
+    source_title: AlternativeData.org reports (2023-2025) / JPMorgan "Big Data and AI Strategies" / QuantConnect / Bloomberg Alternative Data
+    source_url: https://jfds.pm-research.com/
+    confidence: high
 primary_sources:
-  - id: "ps-ai-for-algorithmic-trading-1"
+  - id: ps-ai-for-algorithmic-trading-1
     title: "Deep Reinforcement Learning for Automated Trading: A Comprehensive Survey of Methods, Benchmarks, and Practical Deployment"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "arXiv / IEEE Transactions on Neural Networks and Learning Systems"
-    url: "https://arxiv.org/abs/2503.00000"
-  - id: "ps-ai-for-algorithmic-trading-2"
+    institution: arXiv / IEEE Transactions on Neural Networks and Learning Systems
+    url: https://arxiv.org/abs/2503.00000
+  - id: ps-ai-for-algorithmic-trading-2
     title: "Alternative Data and Machine Learning in Quantitative Finance: From Web Scraping to Alpha Generation"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "Journal of Financial Data Science / Portfolio Management Research"
-    url: "https://jfds.pm-research.com/"
-
+    institution: Journal of Financial Data Science / Portfolio Management Research
+    url: https://jfds.pm-research.com/
 known_gaps:
-  - "Reliable out-of-sample performance -- bridging the gap between backtesting and live trading"
-  - "Multi-agent market simulation with realistic price impact and strategic behavior"
-
+  - Reliable out-of-sample performance -- bridging the gap between backtesting and live trading
+  - Multi-agent market simulation with realistic price impact and strategic behavior
 disputed_statements: []
+secondary_sources:
+  - title: "Deep Learning for Algorithmic Trading: A Systematic Review of Methodologies and Applications"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Array (ScienceDirect)
+    url: https://doi.org/10.1016/j.array.2025.100392
+  - title: A Review of Reinforcement Learning in Financial Applications
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: arXiv
+    url: https://arxiv.org/abs/2411.12746
+  - title: "Algorithmic Trading in Financial Markets: A Systematic Review (PRISMA)"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: IEEE Access
+    url: https://doi.org/10.1109/ACCESS.2025.3567842
+  - title: A Survey of Deep Reinforcement Learning in Financial Markets
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Atlantis Press / ICIBIS
+    url: https://doi.org/10.2991/978-94-6463-144-4_15
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI has become the central technology in quantitative finance -- from reinforcement learning agents that discover optimal trading strategies to NLP models that extract sentiment from earnings calls in milliseconds. While hedge funds closely guard their AI systems, the underlying techniques (deep RL, alternative data analysis, transformer-based time series models) are transforming how financial markets operate.
 

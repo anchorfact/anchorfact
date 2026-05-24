@@ -1,49 +1,90 @@
 ---
-id: "neural-rendering"
+id: neural-rendering
 title: "Neural Rendering: NeRF, View Synthesis, and Implicit Scene Representations"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-neural-rendering-1"
-    statement: "NeRF (Neural Radiance Fields, Mildenhall et al., ECCV 2020) represented a scene as a continuous 5D function mapping 3D coordinates and 2D viewing direction to emitted color and volume density, trained from sparse input views. A 2020-2025 comprehensive survey (arxiv/Waterloo) documents the field's evolution to real-time rendering (Instant-NGP reducing training from hours to seconds via hash-grid encoding) and large-scale scenes (Block-NeRF rendering city blocks)."
-    source_title: "NeRF, Mildenhall et al., ECCV 2020 / arxiv 2210.00379 (2025 update) -- NeRF 2020-2025 survey (Waterloo) / Instant-NGP (Muller et al., SIGGRAPH 2022)"
-    source_url: "https://arxiv.org/abs/2003.08934"
-    confidence: "high"
-  - id: "af-neural-rendering-2"
-    statement: "3D Gaussian Splatting (Kerbl et al., SIGGRAPH 2023 Best Paper) disrupted NeRF -- representing scenes as millions of 3D Gaussians with learnable position, covariance, color, and opacity -- enabling real-time differentiable rendering at 30+ FPS with quality matching NeRF. MDPI (2025) comparative assessment found 3DGS achieves 100-1000x faster rendering than NeRF, making it the dominant approach for production applications."
-    source_title: "3D Gaussian Splatting (Kerbl et al., SIGGRAPH 2023 Best Paper) / MDPI Sensors (2025) -- Comparative Assessment of NeRF and 3DGS"
-    source_url: "https://arxiv.org/abs/2308.04079"
-    confidence: "high"
+  - id: af-neural-rendering-1
+    statement: >-
+      NeRF (Neural Radiance Fields, Mildenhall et al., ECCV 2020) represented a scene as a continuous 5D function mapping 3D coordinates and 2D viewing direction to emitted color and volume density,
+      trained from sparse input views. A 2020-2025 comprehensive survey (arxiv/Waterloo) documents the field's evolution to real-time rendering (Instant-NGP reducing training from hours to seconds via
+      hash-grid encoding) and large-scale scenes (Block-NeRF rendering city blocks).
+    source_title: NeRF, Mildenhall et al., ECCV 2020 / arxiv 2210.00379 (2025 update) -- NeRF 2020-2025 survey (Waterloo) / Instant-NGP (Muller et al., SIGGRAPH 2022)
+    source_url: https://arxiv.org/abs/2003.08934
+    confidence: high
+  - id: af-neural-rendering-2
+    statement: >-
+      3D Gaussian Splatting (Kerbl et al., SIGGRAPH 2023 Best Paper) disrupted NeRF -- representing scenes as millions of 3D Gaussians with learnable position, covariance, color, and opacity --
+      enabling real-time differentiable rendering at 30+ FPS with quality matching NeRF. MDPI (2025) comparative assessment found 3DGS achieves 100-1000x faster rendering than NeRF, making it the
+      dominant approach for production applications.
+    source_title: 3D Gaussian Splatting (Kerbl et al., SIGGRAPH 2023 Best Paper) / MDPI Sensors (2025) -- Comparative Assessment of NeRF and 3DGS
+    source_url: https://arxiv.org/abs/2308.04079
+    confidence: high
 primary_sources:
-  - id: "ps-neural-rendering-1"
+  - id: ps-neural-rendering-1
     title: "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis"
-    type: "academic_paper"
+    type: academic_paper
     year: 2020
-    institution: "ECCV / UC Berkeley, Google Research"
-    url: "https://arxiv.org/abs/2003.08934"
-  - id: "ps-neural-rendering-2"
-    title: "3D Gaussian Splatting for Real-Time Radiance Field Rendering"
-    type: "academic_paper"
+    institution: ECCV / UC Berkeley, Google Research
+    url: https://arxiv.org/abs/2003.08934
+  - id: ps-neural-rendering-2
+    title: 3D Gaussian Splatting for Real-Time Radiance Field Rendering
+    type: academic_paper
     year: 2023
-    institution: "ACM SIGGRAPH / INRIA, Max Planck"
-    url: "https://arxiv.org/abs/2308.04079"
+    institution: ACM SIGGRAPH / INRIA, Max Planck
+    url: https://arxiv.org/abs/2308.04079
 known_gaps:
-  - "Dynamic scene rendering -- handling moving objects and changing lighting"
-  - "Large-scale outdoor neural rendering with unbounded scenes"
+  - Dynamic scene rendering -- handling moving objects and changing lighting
+  - Large-scale outdoor neural rendering with unbounded scenes
 disputed_statements: []
+secondary_sources:
+  - title: "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis"
+    type: conference_paper
+    year: 2020
+    authors:
+      - Mildenhall, Ben
+      - Srinivasan, Pratul P.
+      - Tancik, Matthew
+      - Barron, Jonathan T.
+      - Ramamoorthi, Ravi
+      - Ng, Ren
+    institution: Google Research / UC Berkeley / ECCV
+    url: https://arxiv.org/abs/2003.08934
+  - title: "NeRF: Neural Radiance Field in 3D Vision — A Comprehensive Review"
+    type: survey_paper
+    year: 2022
+    authors:
+      - multiple
+    institution: arXiv
+    url: https://arxiv.org/abs/2210.00379
+  - title: "NeRF-based Multi-View Synthesis Techniques: A Survey"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE Access
+    url: https://doi.org/10.1109/ACCESS.2024.3406987
+  - title: "A Survey of 3D Reconstruction: From Multi-View Geometry to NeRF and 3D Gaussian Splatting"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Sensors (MDPI)
+    url: https://doi.org/10.3390/s25185748
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 Neural rendering creates photorealistic 3D scenes from photographs -- capturing a place or object and rendering it from any viewpoint. From NeRF (Neural Radiance Fields) to 3D Gaussian Splatting, these techniques are transforming computer graphics, VR, and digital heritage preservation.
 

@@ -1,49 +1,92 @@
 ---
-id: "ai-code-translation"
+id: ai-code-translation
 title: "AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-ai-code-translation-1"
-    statement: "AI code translation (2023-2026): LLMs translate code between programming languages (COBOL to Java, Python to Rust, JavaScript to TypeScript). IBM watsonx Code Assistant for Z (2023-2025) uses generative AI to modernize mainframe COBOL applications to Java -- a $50B+ market given that 220B+ lines of COBOL still run 70% of global financial transactions. Amazon Code Transformation (2024) translates Java 8/11 to Java 17."
-    source_title: "IBM watsonx Code Assistant for Z / Amazon Q Developer Code Transformation / GitHub Copilot code translation / Meta CodeCompose"
-    source_url: "https://arxiv.org/search/?query=code+translation+LLM+legacy+modernization"
-    confidence: "high"
-  - id: "af-ai-code-translation-2"
-    statement: "AI-assisted legacy modernization: beyond line-by-line translation, AI restructures monolithic architectures into microservices, converts outdated frameworks to modern equivalents, and generates tests for migrated code. Google (2024), Meta (2023-2025), and Microsoft (2024) deploy internal AI tools for large-scale codebase modernization -- Meta's CodeCompose and Sapienz systems have modernized millions of lines of code, reducing migration timelines from years to months."
-    source_title: "Meta CodeCompose / Google Codey / Microsoft GitHub Copilot / Airbnb React Native migration AI / Salesforce AI code translation"
-    source_url: "https://arxiv.org/search/?query=LLM+program+translation+transpilation"
-    confidence: "high"
+  - id: af-ai-code-translation-1
+    statement: >-
+      AI code translation (2023-2026): LLMs translate code between programming languages (COBOL to Java, Python to Rust, JavaScript to TypeScript). IBM watsonx Code Assistant for Z (2023-2025) uses
+      generative AI to modernize mainframe COBOL applications to Java -- a $50B+ market given that 220B+ lines of COBOL still run 70% of global financial transactions. Amazon Code Transformation
+      (2024) translates Java 8/11 to Java 17.
+    source_title: IBM watsonx Code Assistant for Z / Amazon Q Developer Code Transformation / GitHub Copilot code translation / Meta CodeCompose
+    source_url: https://arxiv.org/search/?query=code+translation+LLM+legacy+modernization
+    confidence: high
+  - id: af-ai-code-translation-2
+    statement: >-
+      AI-assisted legacy modernization: beyond line-by-line translation, AI restructures monolithic architectures into microservices, converts outdated frameworks to modern equivalents, and generates
+      tests for migrated code. Google (2024), Meta (2023-2025), and Microsoft (2024) deploy internal AI tools for large-scale codebase modernization -- Meta's CodeCompose and Sapienz systems have
+      modernized millions of lines of code, reducing migration timelines from years to months.
+    source_title: Meta CodeCompose / Google Codey / Microsoft GitHub Copilot / Airbnb React Native migration AI / Salesforce AI code translation
+    source_url: https://arxiv.org/search/?query=LLM+program+translation+transpilation
+    confidence: high
 primary_sources:
-  - id: "ps-ai-code-translation-1"
+  - id: ps-ai-code-translation-1
     title: "AI-Powered Code Translation and Legacy Modernization: LLM-Based Transpilation (2024-2025 Survey)"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "ICSE / FSE / arXiv"
-    url: "https://arxiv.org/search/?query=code+translation+LLM+legacy+modernization"
-  - id: "ps-ai-code-translation-2"
+    institution: ICSE / FSE / arXiv
+    url: https://arxiv.org/search/?query=code+translation+LLM+legacy+modernization
+  - id: ps-ai-code-translation-2
     title: "Large Language Models for Program Translation: COBOL-to-Java, Python-to-C++, and Multi-Language Transpilation"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "NeurIPS / OOPSLA / arXiv"
-    url: "https://arxiv.org/search/?query=LLM+program+translation+transpilation"
+    institution: NeurIPS / OOPSLA / arXiv
+    url: https://arxiv.org/search/?query=LLM+program+translation+transpilation
 known_gaps:
-  - "Verification of equivalence -- proving translated code behaves identically to original"
-  - "AI-driven architectural decisions during migration (monolith decomposition strategy)"
+  - Verification of equivalence -- proving translated code behaves identically to original
+  - AI-driven architectural decisions during migration (monolith decomposition strategy)
 disputed_statements: []
+secondary_sources:
+  - title: A Systematic Literature Review on Neural Code Translation
+    type: survey_paper
+    year: 2025
+    authors:
+      - Chen, Xingyu
+      - Xue, Yinxing
+      - et al.
+    institution: arXiv (57 primary studies, 2020-2025)
+    url: https://arxiv.org/abs/2505.07425
+  - title: "Generative AI for Code Translation: A Systematic Mapping Study"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Engineering Proceedings (MDPI)
+    url: https://doi.org/10.3390/engproc2025112033
+  - title: Verified Code Transpilation with LLMs
+    type: conference_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: NeurIPS
+    url: https://papers.nips.cc/paper_files/paper/2024/hash/48bb60a0c0aebb4142bf314bd1a5c6a0-Abstract-Conference.html
+  - title: Scaling Neural Machine Translation to 200 Languages
+    type: journal_article
+    year: 2024
+    authors:
+      - NLLB Team
+      - Costa-jussà, Marta R.
+      - Cross, James
+      - Çelebi, Onur
+      - Elbayad, Maha
+      - et al.
+    institution: Meta AI / Nature
+    url: https://www.nature.com/articles/s41586-024-07335-x
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI translates code between languages -- from modernizing billion-line COBOL banking systems to converting Python to Rust. LLM-based code translation attacks the $50B+ legacy modernization market, compressing migration timelines from years to months while maintaining functional equivalence.
 

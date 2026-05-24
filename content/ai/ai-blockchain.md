@@ -1,49 +1,87 @@
 ---
-id: "ai-blockchain"
+id: ai-blockchain
 title: "AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-ai-blockchain-1"
-    statement: "The convergence of AI and blockchain (2024-2026) spans three domains: (1) AI on blockchain -- running ML inference via smart contracts (e.g., Oraichain, Fetch.ai) for trustless AI services; (2) Blockchain for AI -- decentralized compute networks (Gensyn, Akash) using crypto-economic incentives to aggregate global GPU resources for ML training/inference at 40-70% lower cost than centralized cloud; (3) AI for blockchain -- ML-based fraud detection in DeFi (detecting rug pulls, wash trading) and GNN-based money laundering detection (Nature 2025 RL-GNN fraud)."
-    source_title: "MDPI Information (2025) -- Decentralized AI systematic review / Nature (2025) -- RL-GNN fraud detection / Gensyn/Akash decentralized compute whitepapers"
-    source_url: "https://arxiv.org/abs/2402.02885"
-    confidence: "high"
-  - id: "af-ai-blockchain-2"
-    statement: "Gensyn (2024-2025) and similar DePIN (Decentralized Physical Infrastructure Networks) protocols use zero-knowledge proofs and redundant computation verification to ensure trustless ML training -- model training jobs are split into sub-tasks, distributed to network participants who earn tokens proportional to verified compute contribution, and verified via ZK-SNARK proofs or honest-majority consensus across redundant compute nodes."
-    source_title: "Gensyn Protocol Whitepaper (2024-2025) -- Decentralized ML Compute / Akash Network -- GPU Marketplace / DePIN ecosystem analysis (2025)"
-    source_url: "https://gensyn.ai/"
-    confidence: "high"
+  - id: af-ai-blockchain-1
+    statement: >-
+      The convergence of AI and blockchain (2024-2026) spans three domains: (1) AI on blockchain -- running ML inference via smart contracts (e.g., Oraichain, Fetch.ai) for trustless AI services; (2)
+      Blockchain for AI -- decentralized compute networks (Gensyn, Akash) using crypto-economic incentives to aggregate global GPU resources for ML training/inference at 40-70% lower cost than
+      centralized cloud; (3) AI for blockchain -- ML-based fraud detection in DeFi (detecting rug pulls, wash trading) and GNN-based money laundering detection (Nature 2025 RL-GNN fraud).
+    source_title: MDPI Information (2025) -- Decentralized AI systematic review / Nature (2025) -- RL-GNN fraud detection / Gensyn/Akash decentralized compute whitepapers
+    source_url: https://arxiv.org/abs/2402.02885
+    confidence: high
+  - id: af-ai-blockchain-2
+    statement: >-
+      Gensyn (2024-2025) and similar DePIN (Decentralized Physical Infrastructure Networks) protocols use zero-knowledge proofs and redundant computation verification to ensure trustless ML training
+      -- model training jobs are split into sub-tasks, distributed to network participants who earn tokens proportional to verified compute contribution, and verified via ZK-SNARK proofs or
+      honest-majority consensus across redundant compute nodes.
+    source_title: Gensyn Protocol Whitepaper (2024-2025) -- Decentralized ML Compute / Akash Network -- GPU Marketplace / DePIN ecosystem analysis (2025)
+    source_url: https://gensyn.ai/
+    confidence: high
 primary_sources:
-  - id: "ps-ai-blockchain-1"
-    title: "A Review on Building Blocks of Decentralized Artificial Intelligence (71 studies SLR)"
-    type: "academic_paper"
+  - id: ps-ai-blockchain-1
+    title: A Review on Building Blocks of Decentralized Artificial Intelligence (71 studies SLR)
+    type: academic_paper
     year: 2024
-    institution: "arXiv"
-    url: "https://arxiv.org/abs/2402.02885"
-  - id: "ps-ai-blockchain-2"
+    institution: arXiv
+    url: https://arxiv.org/abs/2402.02885
+  - id: ps-ai-blockchain-2
     title: "Gensyn: Decentralized Deep Learning Compute Protocol"
-    type: "industry_report"
+    type: industry_report
     year: 2025
-    institution: "Gensyn / DePIN Ecosystem"
-    url: "https://gensyn.ai/"
+    institution: Gensyn / DePIN Ecosystem
+    url: https://gensyn.ai/
 known_gaps:
-  - "ZK-proof efficiency -- proving ML inference correctness with <1% overhead"
-  - "Trustless AI oracles -- verifiably bringing off-chain data onto blockchain for smart contracts"
+  - ZK-proof efficiency -- proving ML inference correctness with <1% overhead
+  - Trustless AI oracles -- verifiably bringing off-chain data onto blockchain for smart contracts
 disputed_statements: []
+secondary_sources:
+  - title: "Blockchain Meets Federated Learning: A Comprehensive Survey of Architectures, Applications, and Future Directions"
+    type: survey_paper
+    year: 2024
+    authors:
+      - Cai, Hongmin
+      - Chen, Xinyi
+      - et al.
+    institution: IEEE Access
+    url: https://doi.org/10.1109/ACCESS.2024.3512349
+  - title: "Blockchain-Based Federated Learning: A Survey and New Perspectives"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Applied Sciences (MDPI)
+    url: https://doi.org/10.3390/app14209459
+  - title: A Systematic Review of Secure Federated Learning with Blockchain and Multi-party Computation
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Peer-to-Peer Networking & Applications (Springer)
+    url: https://doi.org/10.1007/s12083-025-02167-6
+  - title: "Bitcoin: A Peer-to-Peer Electronic Cash System (Blockchain Genesis)"
+    type: white_paper
+    year: 2008
+    authors:
+      - Nakamoto, Satoshi
+    institution: bitcoin.org
+    url: https://bitcoin.org/bitcoin.pdf
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI and blockchain converge at three frontiers: running AI services via smart contracts, using crypto-economic incentives to build decentralized compute networks that rival cloud providers in cost, and applying AI to detect fraud in blockchain systems. Together they form the infrastructure for trustless, decentralized intelligence.
 

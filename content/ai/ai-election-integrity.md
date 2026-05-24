@@ -1,49 +1,85 @@
 ---
-id: "ai-election-integrity"
+id: ai-election-integrity
 title: "AI for Election Integrity: Disinformation Detection, Voter Analytics, and Electoral Security"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-ai-election-integrity-1"
-    statement: "AI election integrity (2023-2026): (1) Disinformation detection -- NLP models identify coordinated inauthentic behavior (bot networks, coordinated posting patterns), flag false claims against fact-check databases, and detect AI-generated political content (deepfake videos, synthetic audio); (2) Voter analytics -- AI models predict turnout, identify barriers (polling place accessibility, registration issues), and optimize get-out-the-vote resource allocation; (3) Cybersecurity -- AI detects attacks on voter registration databases and election infrastructure."
-    source_title: "Meta adversarial threat report (2025) / EU Code of Practice on Disinformation / CISA election security / Graphika / DFRLab disinformation analysis"
-    source_url: "https://arxiv.org/search/?query=election+integrity+AI+disinformation+deepfake"
-    confidence: "high"
-  - id: "af-ai-election-integrity-2"
-    statement: "The deepfake-in-elections challenge: 2024 was the \"deepfake election year\" -- AI-generated robocalls (Biden deepfake in New Hampshire primary), candidate deepfake videos, and AI-written propaganda flooded campaigns. Platforms deployed AI detection: Meta labeled AI-generated political content, YouTube required disclosure, and the EU DSA mandated risk assessments. Detection success: AI caught ~70-85% of known deepfakes but struggled with novel generation techniques, creating an asymmetric arms race."
-    source_title: "New Hampshire Biden deepfake robocall (Jan 2024) / Meta AI content labeling (2024) / YouTube synthetic content disclosure / EU DSA election integrity / CISA AI election security guidance"
-    source_url: "https://arxiv.org/search/?query=coordinated+inauthentic+behavior+GNN"
-    confidence: "high"
+  - id: af-ai-election-integrity-1
+    statement: >-
+      AI election integrity (2023-2026): (1) Disinformation detection -- NLP models identify coordinated inauthentic behavior (bot networks, coordinated posting patterns), flag false claims against
+      fact-check databases, and detect AI-generated political content (deepfake videos, synthetic audio); (2) Voter analytics -- AI models predict turnout, identify barriers (polling place
+      accessibility, registration issues), and optimize get-out-the-vote resource allocation; (3) Cybersecurity -- AI detects attacks on voter registration databases and election infrastructure.
+    source_title: Meta adversarial threat report (2025) / EU Code of Practice on Disinformation / CISA election security / Graphika / DFRLab disinformation analysis
+    source_url: https://arxiv.org/search/?query=election+integrity+AI+disinformation+deepfake
+    confidence: high
+  - id: af-ai-election-integrity-2
+    statement: >-
+      The deepfake-in-elections challenge: 2024 was the "deepfake election year" -- AI-generated robocalls (Biden deepfake in New Hampshire primary), candidate deepfake videos, and AI-written
+      propaganda flooded campaigns. Platforms deployed AI detection: Meta labeled AI-generated political content, YouTube required disclosure, and the EU DSA mandated risk assessments. Detection
+      success: AI caught ~70-85% of known deepfakes but struggled with novel generation techniques, creating an asymmetric arms race.
+    source_title: New Hampshire Biden deepfake robocall (Jan 2024) / Meta AI content labeling (2024) / YouTube synthetic content disclosure / EU DSA election integrity / CISA AI election security guidance
+    source_url: https://arxiv.org/search/?query=coordinated+inauthentic+behavior+GNN
+    confidence: high
 primary_sources:
-  - id: "ps-ai-election-integrity-1"
+  - id: ps-ai-election-integrity-1
     title: "AI for Election Integrity: Disinformation Detection, Deepfake Countermeasures, and Voter Protection (2024-2025 Survey)"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "EPJ Data Science / Journal of Democracy / arXiv"
-    url: "https://arxiv.org/search/?query=election+integrity+AI+disinformation+deepfake"
-  - id: "ps-ai-election-integrity-2"
+    institution: EPJ Data Science / Journal of Democracy / arXiv
+    url: https://arxiv.org/search/?query=election+integrity+AI+disinformation+deepfake
+  - id: ps-ai-election-integrity-2
     title: "Coordinated Inauthentic Behavior Detection: Graph Neural Networks for Social Media Influence Operations"
-    type: "academic_paper"
+    type: academic_paper
     year: 2025
-    institution: "ACM / ICWSM / arXiv"
-    url: "https://arxiv.org/search/?query=coordinated+inauthentic+behavior+GNN"
+    institution: ACM / ICWSM / arXiv
+    url: https://arxiv.org/search/?query=coordinated+inauthentic+behavior+GNN
 known_gaps:
-  - "Real-time deepfake detection during live-streamed political events"
-  - "Democratized AI defense tools for under-resourced election commissions"
+  - Real-time deepfake detection during live-streamed political events
+  - Democratized AI defense tools for under-resourced election commissions
 disputed_statements: []
+secondary_sources:
+  - title: "AI Threats to Politics, Elections, and Democracy: A Blockchain-Based Deepfake Detection Perspective"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Blockchains (MDPI)
+    url: https://doi.org/10.3390/blockchains2040020
+  - title: "AI-Enabled Influence Operations: Safeguarding Future Elections (CETaS)"
+    type: report
+    year: 2024
+    authors:
+      - CETaS Research Team
+    institution: Alan Turing Institute / CETaS
+    url: https://cetas.turing.ac.uk/publications/ai-enabled-influence-operations-safeguarding-future-elections
+  - title: "AI-Generated Misinformation in the Election Year: Challenges and Responses"
+    type: journal_article
+    year: 2024
+    authors:
+      - multiple
+    institution: Frontiers in Political Science
+    url: https://doi.org/10.3389/fpos.2024.1451601
+  - title: "The Impact of Disinformation Generated by AI on Democracy: US Presidential Elections 2016-2024"
+    type: journal_article
+    year: 2025
+    authors:
+      - multiple
+    institution: Review of Economics and Political Science (Emerald)
+    url: https://doi.org/10.1108/REPS-12-2024-0104
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 AI is both the weapon and the shield in modern elections -- generating deepfakes and disinformation while simultaneously detecting them. The 2024 "deepfake election year" tested platforms' AI moderation systems, exposing an asymmetric arms race between AI-generated deception and AI-powered detection.
 

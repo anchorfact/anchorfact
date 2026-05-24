@@ -1,49 +1,89 @@
 ---
-id: "3d-human-modeling"
+id: 3d-human-modeling
 title: "3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-3d-human-modeling-1"
-    statement: "SMPL (Loper et al., 2015, Max Planck / SIGGRAPH Asia) introduced a learned parametric body model representing the human body as a function of pose parameters (72 values) and shape parameters (10 values) -- enabling compact, animatable 3D human representations. SMPL-X (2019) extends to full body including hands and face (119 parameters). These models are the foundation for modern 3D human pose, shape estimation, and motion capture."
-    source_title: "SMPL (Loper et al., 2015, Max Planck / SIGGRAPH Asia) / SMPL-X (Pavlakos et al., 2019, CVPR) -- full-body parametric model"
-    source_url: "https://smpl.is.tue.mpg.de/"
-    confidence: "high"
-  - id: "af-3d-human-modeling-2"
-    statement: "Human mesh recovery from single images: HMR (2018) first demonstrated 3D body reconstruction from monocular images. Subsequent advances -- SPIN (2019), PARE (2021, occlusion-robust), CLIFF (2022, camera-aware), and TokenHMR (2024, transformer-based) -- reduced MPJPE from 80mm to 50mm on Human3.6M, enabling virtual try-on, fitness tracking, and AR avatar creation from single photos."
-    source_title: "HMR (2018) / SPIN (2019) / PARE (2021) / CLIFF (2022) / TokenHMR (2024) -- human mesh recovery from images"
-    source_url: "https://arxiv.org/abs/1712.06584"
-    confidence: "high"
+  - id: af-3d-human-modeling-1
+    statement: >-
+      SMPL (Loper et al., 2015, Max Planck / SIGGRAPH Asia) introduced a learned parametric body model representing the human body as a function of pose parameters (72 values) and shape parameters (10
+      values) -- enabling compact, animatable 3D human representations. SMPL-X (2019) extends to full body including hands and face (119 parameters). These models are the foundation for modern 3D
+      human pose, shape estimation, and motion capture.
+    source_title: SMPL (Loper et al., 2015, Max Planck / SIGGRAPH Asia) / SMPL-X (Pavlakos et al., 2019, CVPR) -- full-body parametric model
+    source_url: https://smpl.is.tue.mpg.de/
+    confidence: high
+  - id: af-3d-human-modeling-2
+    statement: >-
+      Human mesh recovery from single images: HMR (2018) first demonstrated 3D body reconstruction from monocular images. Subsequent advances -- SPIN (2019), PARE (2021, occlusion-robust), CLIFF
+      (2022, camera-aware), and TokenHMR (2024, transformer-based) -- reduced MPJPE from 80mm to 50mm on Human3.6M, enabling virtual try-on, fitness tracking, and AR avatar creation from single
+      photos.
+    source_title: HMR (2018) / SPIN (2019) / PARE (2021) / CLIFF (2022) / TokenHMR (2024) -- human mesh recovery from images
+    source_url: https://arxiv.org/abs/1712.06584
+    confidence: high
 primary_sources:
-  - id: "ps-3d-human-modeling-1"
+  - id: ps-3d-human-modeling-1
     title: "SMPL: A Skinned Multi-Person Linear Model"
-    type: "academic_paper"
+    type: academic_paper
     year: 2015
-    institution: "ACM SIGGRAPH Asia / Max Planck Institute"
-    url: "https://smpl.is.tue.mpg.de/"
-  - id: "ps-3d-human-modeling-2"
-    title: "End-to-End Recovery of Human Shape and Pose (HMR)"
-    type: "academic_paper"
+    institution: ACM SIGGRAPH Asia / Max Planck Institute
+    url: https://smpl.is.tue.mpg.de/
+  - id: ps-3d-human-modeling-2
+    title: End-to-End Recovery of Human Shape and Pose (HMR)
+    type: academic_paper
     year: 2018
-    institution: "CVPR / UC Berkeley"
-    url: "https://arxiv.org/abs/1712.06584"
+    institution: CVPR / UC Berkeley
+    url: https://arxiv.org/abs/1712.06584
 known_gaps:
-  - "Realistic clothing simulation and garment reconstruction from images"
-  - "Full-body capture from monocular video in unconstrained environments"
+  - Realistic clothing simulation and garment reconstruction from images
+  - Full-body capture from monocular video in unconstrained environments
 disputed_statements: []
+secondary_sources:
+  - title: "Deep Learning for 3D Human Pose Estimation and Mesh Recovery: A Survey"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: Neurocomputing (Elsevier)
+    url: https://doi.org/10.1016/j.neucom.2024.128049
+  - title: "SMPL: A Skinned Multi-Person Linear Model"
+    type: journal_article
+    year: 2015
+    authors:
+      - Loper, Matthew
+      - Mahmood, Naureen
+      - Romero, Javier
+      - Pons-Moll, Gerard
+      - Black, Michael J.
+    institution: MPI-IS / ACM TOG (SIGGRAPH Asia)
+    url: https://doi.org/10.1145/2816795.2818013
+  - title: "A Survey of Deep Learning-Based Human Pose Estimation: Foundations, Architectures, Benchmarks, and Frontiers"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: IEEE Access
+    url: https://doi.org/10.1109/ACCESS.2025.3567250
+  - title: A Survey on Deep Learning for 2D and 3D Human Pose Estimation
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Artificial Intelligence Review (Springer)
+    url: https://doi.org/10.1007/s10462-025-11430-4
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 3D human modeling reconstructs the human body in three dimensions from images and video -- enabling virtual try-on, motion capture without markers, and realistic digital avatars. Parametric body models (SMPL) and deep learning-based mesh recovery have evolved from laboratory multi-camera setups to working from a single smartphone photo.
 

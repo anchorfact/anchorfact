@@ -1,49 +1,83 @@
 ---
-id: "ai-for-online-advertising"
+id: ai-for-online-advertising
 title: "AI for Online Advertising: Real-Time Bidding, CTR Prediction, and Programmatic Ads"
-schema_type: "article"
-category: "ai"
-language: "en"
-confidence: "high"
+schema_type: article
+category: ai
+language: en
+confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-4.5-sonnet"]
+generation_method: ai_assisted
+ai_models:
+  - claude-4.5-sonnet
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
+data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: "af-ai-for-online-advertising-1"
-    statement: "Real-time bidding (RTB) processes 10+ million ad auctions per second globally -- each auction deciding in <100ms which ad to show. Deep learning models (DeepFM, DCN-V2, DLRM) process sparse categorical features (user ID, ad ID, context) and dense features via embedding layers and feature interaction networks, predicting CTR (click-through rate) with log loss ~0.12-0.15."
-    source_title: "DeepFM (2017, Huawei) / DCN-V2 (2020, Google) / DLRM (2019, Meta) -- CTR prediction architectures / Google Ad Manager RTB specifications"
-    source_url: "https://arxiv.org/abs/1906.00091"
-    confidence: "high"
-  - id: "af-ai-for-online-advertising-2"
-    statement: "Google, Meta, and Amazon collectively capture ~60% of the $600B+ global digital advertising market (2025) -- with Meta's ad system processing trillions of predictions daily using GNN-based and transformer-based recommendation models that jointly optimize user engagement, advertiser ROI, and platform revenue through multi-objective reinforcement learning."
-    source_title: "Meta Ads Engineering Blog (2023-2025) / Google Ads AI / Amazon Advertising -- ML systems at trillion-scale / IAB Digital Advertising Revenue Report 2025"
-    source_url: "https://arxiv.org/abs/2008.13535"
-    confidence: "high"
+  - id: af-ai-for-online-advertising-1
+    statement: >-
+      Real-time bidding (RTB) processes 10+ million ad auctions per second globally -- each auction deciding in <100ms which ad to show. Deep learning models (DeepFM, DCN-V2, DLRM) process sparse
+      categorical features (user ID, ad ID, context) and dense features via embedding layers and feature interaction networks, predicting CTR (click-through rate) with log loss ~0.12-0.15.
+    source_title: DeepFM (2017, Huawei) / DCN-V2 (2020, Google) / DLRM (2019, Meta) -- CTR prediction architectures / Google Ad Manager RTB specifications
+    source_url: https://arxiv.org/abs/1906.00091
+    confidence: high
+  - id: af-ai-for-online-advertising-2
+    statement: >-
+      Google, Meta, and Amazon collectively capture ~60% of the $600B+ global digital advertising market (2025) -- with Meta's ad system processing trillions of predictions daily using GNN-based and
+      transformer-based recommendation models that jointly optimize user engagement, advertiser ROI, and platform revenue through multi-objective reinforcement learning.
+    source_title: Meta Ads Engineering Blog (2023-2025) / Google Ads AI / Amazon Advertising -- ML systems at trillion-scale / IAB Digital Advertising Revenue Report 2025
+    source_url: https://arxiv.org/abs/2008.13535
+    confidence: high
 primary_sources:
-  - id: "ps-ai-for-online-advertising-1"
+  - id: ps-ai-for-online-advertising-1
     title: "DLRM: Deep Learning Recommendation Model for Personalization and Recommendation Systems"
-    type: "academic_paper"
+    type: academic_paper
     year: 2019
-    institution: "arXiv / Meta AI"
-    url: "https://arxiv.org/abs/1906.00091"
-  - id: "ps-ai-for-online-advertising-2"
+    institution: arXiv / Meta AI
+    url: https://arxiv.org/abs/1906.00091
+  - id: ps-ai-for-online-advertising-2
     title: "DCN-V2: Improved Deep and Cross Network for Web-Scale Learning to Rank Systems"
-    type: "academic_paper"
+    type: academic_paper
     year: 2020
-    institution: "Google Research / KDD"
-    url: "https://arxiv.org/abs/2008.13535"
+    institution: Google Research / KDD
+    url: https://arxiv.org/abs/2008.13535
 known_gaps:
-  - "Privacy-preserving advertising after third-party cookie deprecation"
-  - "Causal estimation of ad effectiveness -- did the ad actually cause the conversion?"
+  - Privacy-preserving advertising after third-party cookie deprecation
+  - Causal estimation of ad effectiveness -- did the ad actually cause the conversion?
 disputed_statements: []
+secondary_sources:
+  - title: A Systematic Review and Research Perspective on Recommender Systems
+    type: survey_paper
+    year: 2022
+    authors:
+      - multiple
+    institution: Journal of Big Data (Springer)
+    url: https://doi.org/10.1186/s40537-022-00592-5
+  - title: "A Systematic Literature Review on AI-Based Recommendation Systems: Technologies, Applications, and Challenges"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: IEEE Access
+    url: https://doi.org/10.1109/ACCESS.2024.3451218
+  - title: "Artificial Intelligence in Advertising: Advancements, Challenges, and Ethical Considerations in Targeting, Personalization, Content Creation, and Ad Optimization"
+    type: survey_paper
+    year: 2023
+    authors:
+      - multiple
+    institution: SAGE Open
+    url: https://doi.org/10.1177/21582440231210759
+  - title: "Review-based Recommender Systems: A Survey of Approaches, Challenges, and Future Directions"
+    type: survey_paper
+    year: 2024
+    authors:
+      - multiple
+    institution: arXiv
+    url: https://arxiv.org/abs/2405.05562
+updated: "2026-05-24"
 ---
-
 ## TL;DR
 Online advertising is the financial engine of the internet -- and AI is its brain. Real-time bidding systems make millions of decisions per second about which ad to show, using deep learning to predict click probability, conversion likelihood, and user value. From Google Search Ads to TikTok's feed, AI-powered advertising generates over $600B annually.
 
