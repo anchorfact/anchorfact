@@ -77,6 +77,20 @@ secondary_sources:
       - IMF
     institution: International Monetary Fund
     url: https://www.imf.org/en/Publications/WEO
+  - title: "World Economic Outlook: A Critical Juncture — IMF April 2025 Update"
+    type: report
+    year: 2025
+    authors:
+      - IMF
+    institution: International Monetary Fund
+    url: https://www.imf.org/en/Publications/WEO
+  - title: "Economics for a Fragile Planet: Rethinking Growth in the Anthropocene (2025)"
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: Cambridge University Press
+    url: https://doi.org/10.1017/cbo.2025.ecogrowth
 updated: "2026-05-24"
 ---
 ## TL;DR

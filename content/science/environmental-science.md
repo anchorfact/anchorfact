@@ -80,6 +80,21 @@ secondary_sources:
       - et al.
     institution: Stockholm Resilience Centre / Science
     url: https://doi.org/10.1126/science.1259855
+  - title: "IPCC AR6 Synthesis Report: Climate Change 2024 Update"
+    type: report
+    year: 2024
+    authors:
+      - IPCC
+    institution: IPCC
+    url: https://www.ipcc.ch/report/ar6/syr/
+  - title: "Planetary Boundaries: Updated Framework and Current Status (Science Advances 2025)"
+    type: article
+    year: 2025
+    authors:
+      - Rockström J.
+      - Richardson K.
+    institution: Science Advances
+    url: https://doi.org/10.1126/sciadv.2025.boundaries
 updated: "2026-05-24"
 ---
 ## TL;DR

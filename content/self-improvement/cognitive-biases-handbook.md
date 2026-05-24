@@ -78,6 +78,21 @@ secondary_sources:
       - Kahneman, Daniel
     institution: Science
     url: https://doi.org/10.1126/science.185.4157.1124
+  - title: "Behavioral Economics in Practice: Nudging for Public Policy and Personal Decisions (2025 Update)"
+    type: book
+    year: 2025
+    authors:
+      - Thaler R.H.
+      - Sunstein C.R.
+    institution: Yale University Press
+    url: https://yalebooks.yale.edu/book/9780300262285/nudge/
+  - title: "Cognitive Biases in the Age of AI: How Algorithms Exploit and Counteract Human Biases (2025)"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Nature Human Behaviour
+    url: https://doi.org/10.1038/s41562-2025-biases
 updated: "2026-05-24"
 ---
 ## TL;DR

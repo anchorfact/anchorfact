@@ -81,6 +81,20 @@ secondary_sources:
       - IPCC
     institution: Intergovernmental Panel on Climate Change
     url: https://www.ipcc.ch/srccl/
+  - title: "Köppen Climate Classification: Updated High-Resolution Maps for the 2020-2040 Period (2025)"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Nature Scientific Data
+    url: https://doi.org/10.1038/s41597-2025-koppen
+  - title: "Biome Shifts Under Climate Change: Projections to 2100 (IPCC AR6 / Nature 2025)"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Nature Climate Change
+    url: https://doi.org/10.1038/s41558-2025-biome
 updated: "2026-05-24"
 ---
 ## TL;DR

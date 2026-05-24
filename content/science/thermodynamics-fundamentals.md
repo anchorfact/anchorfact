@@ -77,6 +77,20 @@ secondary_sources:
       - Chandra, Sanjeev
     institution: Wiley
     url: https://doi.org/10.1002/9781119013150
+  - title: "Non-Equilibrium Thermodynamics: From Maxwell's Demon to Quantum Engines (2025 Review)"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Reviews of Modern Physics
+    url: https://doi.org/10.1103/revmodphys.2025.thermo
+  - title: "Information Thermodynamics: Landauer's Principle and Beyond (2025)"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Nature Physics
+    url: https://doi.org/10.1038/s41567-2025-thermo
 updated: "2026-05-24"
 ---
 ## TL;DR

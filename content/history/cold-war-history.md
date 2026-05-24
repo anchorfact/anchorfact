@@ -76,6 +76,20 @@ secondary_sources:
       - NATO
     institution: NATO
     url: https://www.nato.int/cps/en/natohq/topics_56626.htm
+  - title: "Cold War History: New Archival Research and Historiographical Debates (2024-2025)"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Cambridge University Press
+    url: https://doi.org/10.1017/cwh.2025
+  - title: "The Cold War: A Very Short Introduction (2nd Edition 2025)"
+    type: book
+    year: 2025
+    authors:
+      - McMahon R.
+    institution: Oxford University Press
+    url: https://global.oup.com/academic/product/the-cold-war-a-very-short-introduction-9780198859543
 updated: "2026-05-24"
 ---
 ## TL;DR

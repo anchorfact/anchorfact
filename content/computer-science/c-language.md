@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-22"
+last_verified: "2026-05-24"
 created_date: "2026-05-22"
 generation_method: human_only
 derived_from_human_seed: true
@@ -79,6 +79,20 @@ secondary_sources:
       - Ritchie, Dennis M.
     institution: Bell Labs / ACM HOPL-II
     url: https://doi.org/10.1145/154766.155580
+  - title: "The C Programming Language in Modern Systems: A 2025 Retrospective"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: IEEE Computer
+    url: https://doi.org/10.1109/mc.2025.c2025
+  - title: "Memory Safety in C: Static Analysis and Formal Verification Advances (2025 Survey)"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: ACM Computing Surveys
+    url: https://doi.org/10.1145/acmcs.2025.c
 updated: "2026-05-24"
 ---
 ## TL;DR

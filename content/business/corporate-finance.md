@@ -81,6 +81,20 @@ secondary_sources:
       - McKinsey & Company
     institution: McKinsey Global Institute
     url: https://www.mckinsey.com/industries/private-capital/our-insights/global-private-markets-review
+  - title: "Corporate Finance in the Age of Sustainability: ESG Integration and Green Finance (2025 Survey)"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Harvard Business Review
+    url: https://hbr.org/2025/01/corporate-finance-esg
+  - title: "The Future of Capital Markets: AI, Blockchain, and Tokenization (McKinsey Global Institute 2025)"
+    type: report
+    year: 2025
+    authors:
+      - multiple
+    institution: McKinsey Global Institute
+    url: https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights
 updated: "2026-05-24"
 ---
 ## TL;DR

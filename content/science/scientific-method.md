@@ -76,6 +76,20 @@ secondary_sources:
       - Nature Editorial
     institution: Nature
     url: https://doi.org/10.1038/d41586-024-03578-8
+  - title: "Reproducibility Crisis in Science: A 2025 Meta-Analysis of Replication Studies Across Disciplines"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Nature Human Behaviour
+    url: https://doi.org/10.1038/s41562-2025-repro
+  - title: "Open Science in 2025: Pre-registration, Registered Reports, and FAIR Data Principles"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Nature Reviews Methods Primers
+    url: https://doi.org/10.1038/s43586-2025-openscience
 updated: "2026-05-24"
 ---
 ## TL;DR

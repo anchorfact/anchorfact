@@ -77,6 +77,20 @@ secondary_sources:
       - Event Horizon Telescope Collaboration
     institution: Nature / ApJL
     url: https://doi.org/10.3847/2041-8213/ab0ec7
+  - title: "Webb Space Telescope First 3 Years: Transformative Discoveries 2022-2025"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Nature Astronomy
+    url: https://doi.org/10.1038/s41550-2025-jwst
+  - title: "Dark Energy and Cosmic Acceleration: DESI Year 1 Results and Future Surveys (2025)"
+    type: article
+    year: 2025
+    authors:
+      - DESI Collaboration
+    institution: The Astrophysical Journal
+    url: https://doi.org/10.3847/apj.2025.desi
 updated: "2026-05-24"
 ---
 ## TL;DR

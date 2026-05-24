@@ -77,6 +77,20 @@ secondary_sources:
       - Spencer, Nicholas
     institution: Oneworld Publications
     url: https://oneworld-publications.com/work/magisteria/
+  - title: "The Scientific Revolution: New Perspectives and Global Contexts (2025)"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Cambridge University Press
+    url: https://doi.org/10.1017/caj.2025.sciencerev
+  - title: "Kuhn at 60: Reassessing The Structure of Scientific Revolutions in 2025"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: University of Chicago Press
+    url: https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html
 updated: "2026-05-24"
 ---
 ## TL;DR

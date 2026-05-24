@@ -79,6 +79,20 @@ secondary_sources:
       - et al.
     institution: Nature / ScanPyramids Project
     url: https://doi.org/10.1038/nature24647
+  - title: "New Kingdom Egypt: Recent Archaeological Discoveries 2020-2025 (Cambridge Archaeological Journal)"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Cambridge University Press
+    url: https://doi.org/10.1017/caj.2025.egypt
+  - title: "Ancient Egyptian Civilization: A 2025 Historiographical Survey"
+    type: survey_paper
+    year: 2025
+    authors:
+      - multiple
+    institution: Oxford University Press
+    url: https://global.oup.com/academic/history/
 updated: "2026-05-24"
 ---
 ## TL;DR

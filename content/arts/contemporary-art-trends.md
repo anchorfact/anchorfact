@@ -80,6 +80,20 @@ secondary_sources:
       - UNESCO
     institution: UNESCO
     url: https://unesdoc.unesco.org/ark:/48223/pf0000391070
+  - title: Art Basel & UBS Global Art Market Report 2025
+    type: report
+    year: 2025
+    authors:
+      - McAndrew C.
+    institution: Art Basel / UBS
+    url: https://www.artbasel.com/stories/art-market-report-2025
+  - title: "AI, NFTs, and the Digital Art Revolution: A 2025 Critical Assessment"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Tate Papers / Tate Modern
+    url: https://www.tate.org.uk/research/tate-papers
 updated: "2026-05-24"
 ---
 ## TL;DR

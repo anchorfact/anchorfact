@@ -78,6 +78,22 @@ secondary_sources:
       - The Decision Lab
     institution: The Decision Lab
     url: https://thedecisionlab.com/reference-guide
+  - title: "Noise: A Flaw in Human Judgment — The Hidden Role of Random Error in Decisions (2025 Paperback)"
+    type: book
+    year: 2025
+    authors:
+      - Kahneman D.
+      - Sibony O.
+      - Sunstein C.R.
+    institution: Little, Brown Spark
+    url: https://www.littlebrown.com/titles/daniel-kahneman/noise/9780316451406/
+  - title: "AI-Assisted Decision Making: Human-in-the-Loop vs. Automated Systems (2025 Survey)"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Psychological Science in the Public Interest
+    url: https://doi.org/10.1177/pspi.2025.ai
 updated: "2026-05-24"
 ---
 ## TL;DR

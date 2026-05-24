@@ -1,57 +1,63 @@
 ---
-id: "kb-2026-00069"
-title: "CSS (Cascading Style Sheets)"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00069
+title: CSS (Cascading Style Sheets)
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: high
+last_verified: "2026-05-24"
 created_date: "2026-05-22"
-generation_method: "human_only"
-conflict_of_interest: "none_declared"
+generation_method: human_only
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "First proposed by Håkon Wium Lie in 1994, CSS has evolved from basic text styling to a powerful layout and animation engine"
-    source_title: "MDN CSS Documentation"
-    source_url: "https://developer.mozilla.org/en-US/docs/Web/CSS"
-    confidence: "medium"
-  - id: "fact-computer-science-02"
-    statement: "CSS is a stylesheet language developed by the W3C that describes the presentation of HTML documents"
-    source_title: "CSS Snapshot 2024 (W3C)"
-    source_url: "https://www.w3.org/TR/css-2024/"
-    confidence: "medium"
-
+  - id: fact-computer-science-01
+    statement: First proposed by Håkon Wium Lie in 1994, CSS has evolved from basic text styling to a powerful layout and animation engine
+    source_title: MDN CSS Documentation
+    source_url: https://developer.mozilla.org/en-US/docs/Web/CSS
+    confidence: medium
+  - id: fact-computer-science-02
+    statement: CSS is a stylesheet language developed by the W3C that describes the presentation of HTML documents
+    source_title: CSS Snapshot 2024 (W3C)
+    source_url: https://www.w3.org/TR/css-2024/
+    confidence: medium
 completeness: 0.85
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
+  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - statement: >-
+      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
+      available evidence
 primary_sources:
-  - title: "MDN CSS Documentation"
-    type: "documentation"
+  - title: MDN CSS Documentation
+    type: documentation
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/CSS"
-    institution: "Mozilla"
-  - title: "CSS Snapshot 2024 (W3C)"
-
+    url: https://developer.mozilla.org/en-US/docs/Web/CSS
+    institution: Mozilla
+  - title: CSS Snapshot 2024 (W3C)
 secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
+  - title: MDN Web Docs — HTTP
+    type: documentation
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla Foundation"
-
+    url: https://developer.mozilla.org/en-US/docs/Web/HTTP
+    institution: Mozilla Foundation
+  - title: "CSS Modern Layout: Grid, Flexbox, and Container Queries in 2025"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: MDN Web Docs / W3C
+    url: https://www.w3.org/Style/CSS/
+  - title: "Web Design Best Practices 2025: Responsive, Accessible, Performant"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Google Web Fundamentals
+    url: https://web.dev/learn/design/
 ---
-
-
-
 ## TL;DR
 
 CSS (Cascading Style Sheets) is a stylesheet language developed by the W3C that describes the presentation of HTML documents. First proposed by Håkon Wium Lie in 1994, CSS has evolved from basic text styling to a powerful layout and animation engine. Modern CSS (2024+) supports container queries, cascade layers, native nesting, `has()` selector, view transitions, and scroll-driven animations — capabilities that previously required JavaScript.

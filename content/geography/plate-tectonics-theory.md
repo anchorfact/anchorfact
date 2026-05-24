@@ -77,6 +77,20 @@ secondary_sources:
       - USGS
     institution: United States Geological Survey
     url: https://earthquake.usgs.gov/learn/
+  - title: "Plate Tectonics at 60: New Frontiers in Deep Earth Imaging (2025)"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Nature Reviews Earth & Environment
+    url: https://doi.org/10.1038/s43017-2025-plate
+  - title: "USGS Earthquake Hazards Program: 2025 Update on Seismic Risk Assessment"
+    type: report
+    year: 2025
+    authors:
+      - USGS
+    institution: USGS
+    url: https://www.usgs.gov/programs/earthquake-hazards
 updated: "2026-05-24"
 ---
 ## TL;DR

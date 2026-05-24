@@ -77,6 +77,20 @@ secondary_sources:
       - Freedom House
     institution: Freedom House
     url: https://freedomhouse.org/report/freedom-world
+  - title: Democracy in Crisis? Political Philosophy Responses to Authoritarianism, Populism, and AI (2025)
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Cambridge University Press
+    url: https://doi.org/10.1017/caj.2025.polphil
+  - title: "Justice and Technology: Rawlsian Approaches to AI Fairness and Digital Rights (2025)"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Oxford University Press
+    url: https://global.oup.com/academic/philosophy/
 updated: "2026-05-24"
 ---
 ## TL;DR

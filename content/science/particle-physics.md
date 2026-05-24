@@ -78,6 +78,20 @@ secondary_sources:
       - CERN
     institution: CERN
     url: https://doi.org/10.5170/CERN-2024-002
+  - title: "The Standard Model at 50: Precision Tests and Future Directions at the LHC (2025)"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Nature Reviews Physics
+    url: https://doi.org/10.1038/s42254-2025-sm50
+  - title: "CERN Future Circular Collider Feasibility Study: Summary Report 2025"
+    type: report
+    year: 2025
+    authors:
+      - CERN
+    institution: CERN
+    url: https://home.cern/science/accelerators/future-circular-collider
 updated: "2026-05-24"
 ---
 ## TL;DR

@@ -77,6 +77,20 @@ secondary_sources:
       - Wildberger, Norman J.
     institution: Historia Mathematica (Elsevier)
     url: https://doi.org/10.1016/j.hm.2017.08.001
+  - title: "New Discoveries in Mesopotamian Archaeology (2020-2025): Uruk, Ur, and Babylon"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Cambridge University Press
+    url: https://doi.org/10.1017/caj.2025.mesopotamia
+  - title: "Cuneiform Studies in the 21st Century: Digital Corpora and AI-Assisted Translation (2025)"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: University of Chicago / CDLI
+    url: https://cdli.mpiwg-berlin.mpg.de/
 updated: "2026-05-24"
 ---
 ## TL;DR

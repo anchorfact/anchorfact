@@ -76,6 +76,20 @@ secondary_sources:
       - Overy, Richard (ed.)
     institution: Oxford University Press
     url: https://doi.org/10.1093/oso/9780199605828.001.0001
+  - title: "World War II at 80: New Scholarship and Digital History Approaches (2025)"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Cambridge University Press
+    url: https://doi.org/10.1017/caj.2025.ww2
+  - title: The Oxford Illustrated History of World War II (2025 Edition)
+    type: book
+    year: 2025
+    authors:
+      - multiple
+    institution: Oxford University Press
+    url: https://global.oup.com/academic/product/the-oxford-illustrated-history-of-world-war-ii-9780199605828
 updated: "2026-05-24"
 ---
 ## TL;DR

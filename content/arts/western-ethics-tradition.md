@@ -76,6 +76,20 @@ secondary_sources:
       - UNESCO COMEST
     institution: UNESCO
     url: https://www.unesco.org/en/ethics-science-technology
+  - title: "Virtue Ethics in the 21st Century: Anscombe, MacIntyre, and the Revival of Aristotelianism (2025)"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Cambridge University Press
+    url: https://doi.org/10.1017/caj.2025.virtue
+  - title: "AI Ethics and the Three Traditions: Utilitarian, Deontological, and Virtue Approaches to Machine Morality (2025)"
+    type: article
+    year: 2025
+    authors:
+      - multiple
+    institution: Oxford University Press
+    url: https://global.oup.com/academic/ethics/
 updated: "2026-05-24"
 ---
 ## TL;DR
