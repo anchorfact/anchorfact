@@ -28,7 +28,8 @@ atomic_facts:
     source_title: "ISO/IEC 14882:2024 — C++23 Standard"
     confidence: "medium"
   - id: "fact-computer-science-004"
-    statement: "com: Definitive C++ reference - ISO C++: Standards committee"
+    statement: "com: Definitive C++ reference
+ - ISO C++: Standards committee"
     source_title: "ISO/IEC 14882:2024 — C++23 Standard"
     confidence: "medium"
 
@@ -45,6 +46,7 @@ primary_sources:
     type: "standard"
     year: 2024
     institution: "ISO"
+    url: "https://www.iso.org/standard/83626.html"
 
 secondary_sources:
   - title: "ACM Digital Library"

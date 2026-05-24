@@ -22,7 +22,7 @@ const REQUIRED_FIELDS = [
 ];
 
 const VALID_CONFIDENCE = ['high', 'medium', 'low', 'disputed'];
-const ID_PATTERN = /^kb-\w{2,6}-\d{3,5}$/;
+const ID_PATTERN = /^[\w][\w-]+$/;
 
 // ── New: Classification aliases for cross-domain verification ──
 const CLASSIFICATION_ALIASES = {
@@ -99,7 +99,7 @@ function validate(filepath) {
 
   // ── Value validation ──
   if (fm.id && !ID_PATTERN.test(fm.id)) {
-    add('errors', rel, `Invalid id: "${fm.id}" (expected kb-YYYY-XXXXX or kb-XX-XXX)`);
+    add('errors', rel, `Invalid id: "${fm.id}" (expected lowercase slug: [a-z][\\w-]+)`);
   }
   if (fm.confidence && !VALID_CONFIDENCE.includes(fm.confidence)) {
     add('errors', rel, `Invalid confidence: "${fm.confidence}"`);
