@@ -600,3 +600,33 @@ console.log('✅ robots.txt generated');
 // IndexNow key file
 writeFileSync(join(distDir, 'dc8a3c2e1f4b5a7d9e0c8b6f3a5d7e9c.txt'), 'dc8a3c2e1f4b5a7d9e0c8b6f3a5d7e9c');
 console.log('✅ IndexNow key generated');
+
+// _headers for AI-optimized HTTP headers (Cloudflare Pages)
+const headersFile = `# _headers — AnchorFact AI-optimized headers
+/*/index.json
+  Access-Control-Allow-Origin: *
+  Content-Type: application/ld+json; charset=utf-8
+  Cache-Control: public, max-age=86400
+/*/index.ttl
+  Access-Control-Allow-Origin: *
+  Content-Type: text/turtle; charset=utf-8
+  Cache-Control: public, max-age=86400
+/*/index.md
+  Cache-Control: public, max-age=604800
+/*/index.txt
+  Cache-Control: public, max-age=604800
+/llms.txt
+  Cache-Control: public, max-age=3600
+/manifest.json
+  Access-Control-Allow-Origin: *
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: public, max-age=3600
+/sitemap.xml
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=86400
+/robots.txt
+  Cache-Control: public, max-age=86400
+`;
+writeFileSync(join(distDir, '_headers'), headersFile);
+console.log('✅ _headers generated');
+
