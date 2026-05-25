@@ -54,6 +54,16 @@ primary_sources:
     year: 2017
     doi: 10.1109/TCCN.2017.2758370
     institution: IEEE TCCN
+  - title: 'Deep Learning for Wireless Communications: An Emerging Interdisciplinary Paradigm'
+    authors:
+      - Qin, Z.
+      - Ye, H.
+      - Li, G.Y.
+      - Juang, B.F.
+    type: academic_paper
+    year: 2019
+    doi: 10.1109/MWC.2019.1800430
+    institution: IEEE Wireless Communications
 known_gaps:
   - Real-time AI signal processing on ultra-low-power hardware (<1mW)
   - Explainable signal processing -- clinicians understanding why AI flagged an ECG segment
@@ -91,6 +101,7 @@ secondary_sources:
     url: https://doi.org/10.1145/3708516
 updated: '2026-05-24'
 ---
+
 
 ## TL;DR
 AI is transforming signal processing -- from wireless receivers that learn to decode signals better than mathematically-designed algorithms, to ECG analysis matching cardiologist accuracy, to radar systems that detect and classify objects via deep learning. The convergence of deep learning and signal processing is creating adaptive systems that outperform decades of handcrafted DSP theory.

@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -23,7 +23,7 @@ atomic_facts:
     source_url: https://iupac.org/what-we-do/periodic-table-of-elements/
     confidence: medium
   - id: fact-science-002
-    statement: "Blocks: s-block (groups 1-2), p-block (13-18), d-block (3-12, transition metals), f-block (lanthanides + actinides)."
+    statement: 'Blocks: s-block (groups 1-2), p-block (13-18), d-block (3-12, transition metals), f-block (lanthanides + actinides).'
     source_title: Periodic Table (IUPAC)
     source_url: https://iupac.org/what-we-do/periodic-table-of-elements/
     confidence: medium
@@ -50,27 +50,32 @@ primary_sources:
     year: 2026
     url: https://iupac.org/what-we-do/periodic-table-of-elements/
     institution: IUPAC
-  - title: "The Periodic Table: A Very Short Introduction (2025)"
+  - title: 'The Periodic Table: A Very Short Introduction (2025)'
     type: book
     year: 2025
     authors:
       - Scerri E.
     institution: Oxford University Press
     url: https://global.oup.com/vsi-periodic/
-  - title: "Periodic Table: Its Story and Its Significance (2025 Edition)"
+  - title: 'Periodic Table: Its Story and Its Significance (2025 Edition)'
     type: book
     year: 2025
     authors:
       - Scerri E.
     institution: Oxford University Press
     url: https://global.oup.com/periodic-table/
-  - title: "Periodic Table: Its Story and Significance (2025)"
+  - title: 'Periodic Table: Its Story and Significance (2025)'
     type: book
     year: 2025
     authors:
       - Scerri E.
     institution: Oxford University Press
     url: https://global.oup.com/periodic-table/
+  - title: IUPAC Periodic Table of the Elements and Isotopes (IPTEI)
+    type: standard
+    year: 2020
+    url: https://iupac.org/iptei/
+    institution: IUPAC / King's Centre for Visualization in Science
 secondary_sources:
   - title: The Disappearing Spoon
     type: book
@@ -83,6 +88,7 @@ secondary_sources:
     url: https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058
     institution: Pearson Education
 ---
+
 ## TL;DR
 
 The periodic table (Dmitri Mendeleev, 1869) organizes all 118 known chemical elements by atomic number, electron configuration, and recurring chemical properties. Groups (columns) share similar properties. Periods (rows) reflect electron shell filling. Mendeleev famously predicted properties of undiscovered elements — correctly.

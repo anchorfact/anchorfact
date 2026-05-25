@@ -66,6 +66,18 @@ primary_sources:
     url: https://arxiv.org/abs/2104.09630v2
     type: academic_paper
     institution: arXiv
+  - title: Improved Techniques for Training GANs
+    authors:
+      - Salimans, T.
+      - Goodfellow, I.
+      - Zaremba, W.
+      - Cheung, V.
+      - Radford, A.
+      - Chen, X.
+    type: academic_paper
+    year: 2016
+    url: https://arxiv.org/abs/1606.03498
+    institution: OpenAI / NeurIPS
 secondary_sources:
   - title: Deep Learning (Goodfellow, Bengio, Courville)
     type: book
@@ -99,6 +111,7 @@ secondary_sources:
     url: https://doi.org/10.1186/s40537-025-01247-x
 updated: '2026-05-24'
 ---
+
 
 ## TL;DR
 

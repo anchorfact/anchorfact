@@ -91,6 +91,16 @@ primary_sources:
     year: 2017
     doi: 10.48550/arXiv.1706.03762
     institution: Google Brain / NeurIPS
+  - title: 'Efficient Transformers: A Survey'
+    authors:
+      - Tay, Y.
+      - Dehghani, M.
+      - Bahri, D.
+      - Metzler, D.
+    type: academic_paper
+    year: 2022
+    doi: 10.1145/3530811
+    institution: ACM Computing Surveys
 secondary_sources:
   - title: Sequence to Sequence Learning with Neural Networks
     authors:
@@ -108,6 +118,7 @@ secondary_sources:
     url: https://web.stanford.edu/class/cs224n/
     institution: Stanford University
 ---
+
 
 
 

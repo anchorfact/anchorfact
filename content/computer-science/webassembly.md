@@ -52,12 +52,18 @@ primary_sources:
     year: 2024
     url: https://webassembly.github.io/spec/core/
     institution: W3C WebAssembly Working Group
+  - title: WebAssembly Specification Release 3.0 — W3C
+    type: standard
+    year: 2024
+    url: https://www.w3.org/TR/wasm-core-3/
+    institution: W3C
 secondary_sources:
   - title: WebAssembly Feature Status
     type: tracker
     url: https://webassembly.org/features/
     institution: Webassembly
 ---
+
 
 
 

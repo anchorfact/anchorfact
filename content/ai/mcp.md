@@ -64,12 +64,18 @@ primary_sources:
     year: 2025
     url: https://modelcontextprotocol.io/specification/
     institution: Linux Foundation / AAIF
+  - title: Model Context Protocol Specification (v1.0)
+    type: standard
+    year: 2025
+    url: https://spec.modelcontextprotocol.io/
+    institution: Anthropic / Linux Foundation
 secondary_sources:
   - title: MCP GitHub Repository
     type: repository
     url: https://github.com/modelcontextprotocol/modelcontextprotocol
     institution: GitHub
 ---
+
 
 
 

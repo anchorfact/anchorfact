@@ -52,6 +52,16 @@ primary_sources:
     year: 2024
     url: https://arxiv.org/abs/2405.04828
     institution: arXiv
+  - title: 'Blockchain and AI: Synergies, Challenges, and Opportunities'
+    authors:
+      - Salah, K.
+      - Rehman, M.H.
+      - Nizamuddin, N.
+      - Al-Fuqaha, A.
+    type: academic_paper
+    year: 2019
+    doi: 10.1109/ACCESS.2019.2951388
+    institution: IEEE Access
 known_gaps:
   - ZK-proof efficiency -- proving ML inference correctness with <1% overhead
   - Trustless AI oracles -- verifiably bringing off-chain data onto blockchain for smart contracts
@@ -89,6 +99,7 @@ secondary_sources:
     url: https://bitcoin.org/bitcoin.pdf
 updated: '2026-05-24'
 ---
+
 
 ## TL;DR
 AI and blockchain converge at three frontiers: running AI services via smart contracts, using crypto-economic incentives to build decentralized compute networks that rival cloud providers in cost, and applying AI to detect fraud in blockchain systems. Together they form the infrastructure for trustless, decentralized intelligence.

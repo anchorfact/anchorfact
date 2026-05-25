@@ -52,6 +52,11 @@ primary_sources:
     year: 2024
     url: https://websockets.spec.whatwg.org/
     institution: WHATWG
+  - title: RFC 8441 — Bootstrapping WebSockets with HTTP/2
+    type: rfc
+    year: 2018
+    url: https://datatracker.ietf.org/doc/html/rfc8441
+    institution: IETF
 secondary_sources:
   - title: The WebSocket Protocol (RFC 6455)
     authors:
@@ -86,6 +91,7 @@ secondary_sources:
     institution: IEEE Access
     url: https://doi.org/10.1109/access.2025.websocket
 ---
+
 
 ## TL;DR
 
