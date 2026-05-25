@@ -64,6 +64,23 @@ primary_sources:
     type: book
     year: 2021
     institution: O'Reilly Media
+  - title: Joint Satellite Gateway Placement and Routing for Integrated Satellite-Terrestrial Networks
+    authors:
+      - Nariman Torkzaban
+      - Anousheh Gholami
+      - Chrysa Papagianni
+      - John S. Baras
+    year: 2020
+    url: https://arxiv.org/abs/2002.03071v2
+    type: academic_paper
+    institution: arXiv
+  - title: 'From CRUD to Autonomous Agents: Formal Validation and Zero-Trust Security for Semantic Gateways in AI-Native Enterprise Systems'
+    authors:
+      - Ignacio Peyrano
+    year: 2026
+    url: https://arxiv.org/abs/2604.25555v1
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: RESTful Web APIs
     authors:
@@ -98,6 +115,7 @@ secondary_sources:
     institution: IEEE Cloud Computing
     url: https://doi.org/10.1109/cloud.2025.servicemesh
 ---
+
 
 ## TL;DR
 

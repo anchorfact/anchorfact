@@ -1,70 +1,97 @@
 ---
-id: "kb-2026-00009"
-title: "Diffusion Models"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "human_only"
-conflict_of_interest: "none_declared"
+id: kb-2026-00009
+title: Diffusion Models
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
+generation_method: human_only
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-ai-01"
-    statement: "Popularized by DDPM and made practical by Stable Diffusion / Latent Diffusion Models , diffusion has surpassed GANs as the dominant paradigm for high-quality image generation and has expanded to video , audio , 3D , and biology"
-    source_title: "High-Resolution Image Synthesis with Latent Diffusion Models (Stable Diffusion)"
-    source_url: "https://arxiv.org/abs/2112.10752"
-    source_doi: "10.48550/arXiv.2112.10752"
-    confidence: "high"
-  - id: "fact-ai-02"
-    statement: "Diffusion models are generative models that create data by learning to reverse a gradual noise-adding process"
-    source_title: "Denoising Diffusion Probabilistic Models (DDPM)"
-    source_url: "https://arxiv.org/abs/2006.11239"
-    source_doi: "10.48550/arXiv.2006.11239"
-    confidence: "high"
-
+  - id: fact-ai-01
+    statement: >-
+      Popularized by DDPM and made practical by Stable Diffusion / Latent Diffusion Models , diffusion has surpassed GANs as the dominant paradigm for high-quality image generation and has expanded to
+      video , audio , 3D , and biology
+    source_title: High-Resolution Image Synthesis with Latent Diffusion Models (Stable Diffusion)
+    source_url: https://arxiv.org/abs/2112.10752
+    source_doi: 10.48550/arXiv.2112.10752
+    confidence: high
+  - id: fact-ai-02
+    statement: Diffusion models are generative models that create data by learning to reverse a gradual noise-adding process
+    source_title: Denoising Diffusion Probabilistic Models (DDPM)
+    source_url: https://arxiv.org/abs/2006.11239
+    source_doi: 10.48550/arXiv.2006.11239
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "DDIM, Consistency Models, and other sampling acceleration techniques deserve separate treatment"
-
+  - DDIM, Consistency Models, and other sampling acceleration techniques deserve separate treatment
 disputed_statements:
-  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
-
+  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
 primary_sources:
-  - title: "Denoising Diffusion Probabilistic Models (DDPM)"
-    authors: ["Ho, Jonathan", "Jain, Ajay", "Abbeel, Pieter"]
-    type: "academic_paper"
+  - title: Denoising Diffusion Probabilistic Models (DDPM)
+    authors:
+      - Ho, Jonathan
+      - Jain, Ajay
+      - Abbeel, Pieter
+    type: academic_paper
     year: 2020
-    url: "https://arxiv.org/abs/2006.11239"
-    doi: "10.48550/arXiv.2006.11239"
-    institution: "UC Berkeley"
-  - title: "High-Resolution Image Synthesis with Latent Diffusion Models (Stable Diffusion)"
-    authors: ["Rombach, Robin", "Blattmann, Andreas", "Lorenz, Dominik", "Esser, Patrick", "Ommer, Björn"]
-    type: "academic_paper"
+    url: https://arxiv.org/abs/2006.11239
+    doi: 10.48550/arXiv.2006.11239
+    institution: UC Berkeley
+  - title: High-Resolution Image Synthesis with Latent Diffusion Models (Stable Diffusion)
+    authors:
+      - Rombach, Robin
+      - Blattmann, Andreas
+      - Lorenz, Dominik
+      - Esser, Patrick
+      - Ommer, Björn
+    type: academic_paper
     year: 2022
-    url: "https://arxiv.org/abs/2112.10752"
-    doi: "10.48550/arXiv.2112.10752"
-    institution: "LMU Munich / RunwayML"
-  - title: "Score-Based Generative Modeling through Stochastic Differential Equations"
-    authors: ["Song, Yang", "Sohl-Dickstein, Jascha", "Kingma, Diederik P.", "Kumar, Abhishek", "Ermon, Stefano", "Poole, Ben"]
-    type: "academic_paper"
+    url: https://arxiv.org/abs/2112.10752
+    doi: 10.48550/arXiv.2112.10752
+    institution: LMU Munich / RunwayML
+  - title: Score-Based Generative Modeling through Stochastic Differential Equations
+    authors:
+      - Song, Yang
+      - Sohl-Dickstein, Jascha
+      - Kingma, Diederik P.
+      - Kumar, Abhishek
+      - Ermon, Stefano
+      - Poole, Ben
+    type: academic_paper
     year: 2021
-    url: "https://arxiv.org/abs/2011.13456"
-    doi: "10.48550/arXiv.2011.13456"
-    institution: "Stanford University / Google Brain"
-
+    url: https://arxiv.org/abs/2011.13456
+    doi: 10.48550/arXiv.2011.13456
+    institution: Stanford University / Google Brain
+  - title: Fast calibration of two-factor models for energy option pricing
+    authors:
+      - Emanuele Fabbiani
+      - Andrea Marziali
+      - Giuseppe De Nicolao
+    year: 2018
+    doi: 10.1002/asmb.2604
+    url: https://arxiv.org/abs/1809.03941v6
+    type: academic_paper
+    institution: arXiv
+  - title: 'MetaSC: Test-Time Safety Specification Optimization for Language Models'
+    authors:
+      - Víctor Gallego
+    year: 2025
+    url: https://arxiv.org/abs/2502.07985v2
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
-  - title: "Sora Technical Report"
-    type: "technical_report"
+  - title: Sora Technical Report
+    type: technical_report
     year: 2024
-    url: "https://openai.com/index/sora/"
-    institution: "OpenAI"
-
+    url: https://openai.com/index/sora/
+    institution: OpenAI
 ---
+
 
 
 ## TL;DR

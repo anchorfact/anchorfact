@@ -1,12 +1,12 @@
 ---
 id: ai-customer-analytics
-title: "AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling"
+title: 'AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,37 +34,55 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-customer-analytics-1
-    title: "Machine Learning for Customer Analytics: Churn Prediction, CLV Modeling, and Behavioral Segmentation (2024-2025 Survey)"
+    title: 'Machine Learning for Customer Analytics: Churn Prediction, CLV Modeling, and Behavioral Segmentation (2024-2025 Survey)'
     type: academic_paper
     year: 2025
     institution: Journal of Marketing Research / KDD / arXiv
     url: https://arxiv.org/search/?query=customer+analytics+churn+prediction+CLV
   - id: ps-ai-customer-analytics-2
-    title: "Causal Inference and Uplift Modeling for Customer Interventions: Next-Best-Action and Incrementality Testing"
+    title: 'Causal Inference and Uplift Modeling for Customer Interventions: Next-Best-Action and Incrementality Testing'
     type: academic_paper
     year: 2025
     institution: ACM RecSys / NeurIPS / arXiv
     url: https://arxiv.org/search/?query=uplift+modeling+next+best+action
+  - title: Explainability, risk modeling, and segmentation based customer churn analytics for personalized retention in e-commerce
+    authors:
+      - Indrajith Ekanayake
+      - Sanjula De Alwis
+    year: 2025
+    doi: 10.1109/ICARC68737.2026.11454037
+    url: https://arxiv.org/abs/2510.11604v2
+    type: academic_paper
+    institution: arXiv
+  - title: Prediction Modeling and Analysis for Telecom Customer Churn in Two Months
+    authors:
+      - Lingling Yang
+      - Dongyang Li
+      - Yao Lu
+    year: 2019
+    url: https://arxiv.org/abs/1911.00558v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Real-time customer 360 unifying data across all touchpoints
   - Causal attribution of revenue across marketing channels and touchpoints
 disputed_statements: []
 secondary_sources:
-  - title: "AI and Consumer Behavior: From Predictive to Generative AI — A Comprehensive Analysis"
+  - title: 'AI and Consumer Behavior: From Predictive to Generative AI — A Comprehensive Analysis'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: Journal of Business Research (Elsevier)
     url: https://doi.org/10.1016/j.jbusres.2024.114624
-  - title: "Machine-Learning Models for Customer-Behavior Analytics: A Comprehensive Review"
+  - title: 'Machine-Learning Models for Customer-Behavior Analytics: A Comprehensive Review'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: WSP Publishing / Computational Intelligence
     url: https://doi.org/10.47297/taposatWSP2633-456905.20250606
-  - title: "AI-Driven Customer Segmentation: A Systematic Literature Review"
+  - title: 'AI-Driven Customer Segmentation: A Systematic Literature Review'
     type: survey_paper
     year: 2025
     authors:
@@ -78,8 +96,9 @@ secondary_sources:
       - multiple
     institution: Neural Computing & Applications (Springer)
     url: https://doi.org/10.1007/s00521-023-09339-6
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI customer analytics predicts who will churn, segments by behavior, and calculates lifetime value -- all in real-time. From Amplitude to Optimove, AI transforms raw event streams into actionable customer intelligence that drives retention, upsell, and personalization.
 

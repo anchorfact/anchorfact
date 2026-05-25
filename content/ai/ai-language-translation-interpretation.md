@@ -1,12 +1,12 @@
 ---
 id: ai-language-translation-interpretation
-title: "AI Language Translation and Interpretation: LLM-Based Translation, Simultaneous Interpretation, and Quality Estimation"
+title: 'AI Language Translation and Interpretation: LLM-Based Translation, Simultaneous Interpretation, and Quality Estimation'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,17 +34,29 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-language-translation-interpretation-1
-    title: "Machine Translation in the Era of Large Language Models: A Comprehensive Survey of LLM-Based Translation (2025)"
+    title: 'Machine Translation in the Era of Large Language Models: A Comprehensive Survey of LLM-Based Translation (2025)'
     type: academic_paper
     year: 2025
     institution: MDPI Information / Springer
     url: https://www.mdpi.com/2078-2489/16/9/723
   - id: ps-ai-language-translation-interpretation-2
-    title: "Simultaneous Machine Translation and Speech-to-Speech Interpretation: Streaming Models, Wait-k Policies, and Voice Preservation"
+    title: 'Simultaneous Machine Translation and Speech-to-Speech Interpretation: Streaming Models, Wait-k Policies, and Voice Preservation'
     type: academic_paper
     year: 2025
     institution: ACL / IWSLT / arXiv
     url: https://arxiv.org/search/?query=simultaneous+machine+translation+speech
+  - title: Enhancing Code Translation in Language Models with Few-Shot Learning via Retrieval-Augmented Generation
+    authors:
+      - Manish Bhattarai
+      - Javier E. Santos
+      - Shawn Jones
+      - Ayan Biswas
+      - Boian Alexandrov
+      - Daniel O'Malley
+    year: 2024
+    url: https://arxiv.org/abs/2407.19619v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Emotion and tone preservation across languages in interpretation
   - Real-time translation for signed languages (ASL video to text/speech)
@@ -85,7 +97,7 @@ secondary_sources:
       - Kunchukuttan, Anoop
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/3358205
-  - title: "SeamlessM4T: Massively Multilingual & Multimodal Machine Translation"
+  - title: 'SeamlessM4T: Massively Multilingual & Multimodal Machine Translation'
     type: technical_report
     year: 2023
     authors:
@@ -97,8 +109,9 @@ secondary_sources:
       - et al.
     institution: Meta AI
     url: https://ai.meta.com/research/seamless-communication/
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI translation has evolved from phrase tables to LLMs that match human translators on common language pairs and provide real-time spoken interpretation for multilingual meetings. From GPT-4 translating with document-level coherence to KUDO AI interpreting with <2s latency, language barriers are dissolving through AI.
 

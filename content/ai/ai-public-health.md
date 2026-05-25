@@ -1,12 +1,12 @@
 ---
 id: ai-public-health
-title: "AI for Public Health: Disease Surveillance, Outbreak Prediction, and Population Health Analytics"
+title: 'AI for Public Health: Disease Surveillance, Outbreak Prediction, and Population Health Analytics'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,37 +34,63 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-public-health-1
-    title: "AI for Infectious Disease Surveillance and Outbreak Prediction: A Systematic Review of Deep Learning Approaches (2023-2025)"
+    title: 'AI for Infectious Disease Surveillance and Outbreak Prediction: A Systematic Review of Deep Learning Approaches (2023-2025)'
     type: academic_paper
     year: 2025
     institution: The Lancet Digital Health / Nature Medicine / arXiv
     url: https://arxiv.org/search/?query=disease+surveillance+AI+outbreak+prediction
   - id: ps-ai-public-health-2
-    title: "Machine Learning for Population Health: Social Determinants, Health Equity, and Predictive Analytics"
+    title: 'Machine Learning for Population Health: Social Determinants, Health Equity, and Predictive Analytics'
     type: academic_paper
     year: 2025
     institution: The Lancet Digital Health / Health Affairs / NEJM
     url: https://arxiv.org/search/?query=population+health+machine+learning
+  - title: 'Tweet for Behavior Change: Using Social Media for the Dissemination of Public Health Messages'
+    authors:
+      - Aisling Gough
+      - Ruth F Hunter
+      - Oluwaseun Ajao
+      - Anna Jurek
+      - Gary McKeown
+      - Jun Hong
+      - Eimear Barrett
+      - Marbeth Ferguson
+      - Gerry McElwee
+      - Miriam McCarthy
+      - Frank Kee
+    year: 2017
+    doi: 10.2196/publichealth.6313
+    url: https://arxiv.org/abs/1703.08813v1
+    type: academic_paper
+    institution: arXiv
+  - title: Reconciling Risk Allocation and Prevalence Estimation in Public Health Using Batched Bandits
+    authors:
+      - Ben Chugg
+      - Daniel E. Ho
+    year: 2021
+    url: https://arxiv.org/abs/2110.13306v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Real-time genomic surveillance integrating sequencing + AI for variant detection
   - AI models accounting for human behavior change during public health interventions
 disputed_statements: []
 secondary_sources:
-  - title: "Artificial Intelligence in Public Health: A Comprehensive Survey of Surveillance, Prediction, and Intervention"
+  - title: 'Artificial Intelligence in Public Health: A Comprehensive Survey of Surveillance, Prediction, and Intervention'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: Nature Digital Medicine
     url: https://doi.org/10.1038/s41746-024-01208-1
-  - title: "AI for Epidemic Forecasting: A Systematic Review of Deep Learning Models for COVID-19 and Beyond"
+  - title: 'AI for Epidemic Forecasting: A Systematic Review of Deep Learning Models for COVID-19 and Beyond'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: The Lancet Digital Health
     url: https://doi.org/10.1016/S2589-7500(24)00059-X
-  - title: "BlueDot: Early Detection of COVID-19 Using AI-Powered Epidemic Intelligence"
+  - title: 'BlueDot: Early Detection of COVID-19 Using AI-Powered Epidemic Intelligence'
     type: journal_article
     year: 2020
     authors:
@@ -76,15 +102,16 @@ secondary_sources:
       - Khan, Kamran
     institution: BlueDot / Journal of Travel Medicine
     url: https://doi.org/10.1093/jtm/taaa008
-  - title: "WHO Report: Ethics and Governance of Artificial Intelligence for Health"
+  - title: 'WHO Report: Ethics and Governance of Artificial Intelligence for Health'
     type: report
     year: 2024
     authors:
       - WHO
     institution: World Health Organization
     url: https://www.who.int/publications/i/item/9789240029200
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI public health systems detect disease outbreaks before they spread globally -- BlueDot flagged COVID-19 9 days before the WHO. From NLP surveillance of 100K+ sources in 65 languages to ML predicting disease prevalence by neighborhood, AI transforms public health from reactive response to proactive prevention.
 

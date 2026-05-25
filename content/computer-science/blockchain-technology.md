@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -23,7 +23,7 @@ atomic_facts:
     source_url: https://dl.acm.org/
     confidence: medium
   - id: fact-computer-science-002
-    statement: "51% attack: controlling majority of hash power/stake enables double-spending."
+    statement: '51% attack: controlling majority of hash power/stake enables double-spending.'
     source_title: ACM Digital Library
     source_url: https://dl.acm.org/
     confidence: medium
@@ -38,20 +38,37 @@ primary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
-  - title: "Blockchain and Web3: A Developer's Guide (2025 Edition)"
+  - title: 'Blockchain and Web3: A Developer''s Guide (2025 Edition)'
     type: book
     year: 2025
     authors:
       - multiple
     institution: O'Reilly Media
     url: https://www.oreilly.com/blockchain/
-  - title: "Blockchain Consensus and Applications: A 2025 Systematic Survey"
+  - title: 'Blockchain Consensus and Applications: A 2025 Systematic Survey'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.blockchain
+  - title: Midterm Status Report of the ILC Technology Network Activities
+    authors:
+      - ILC Technology Network
+    year: 2026
+    url: https://arxiv.org/abs/2603.01172v1
+    type: academic_paper
+    institution: arXiv
+  - title: The Rise of Blockchain Technology in Agriculture and Food Supply Chains
+    authors:
+      - Andreas Kamilaris
+      - Agusti Fonts
+      - Francesc X. Prenafeta-Boldu
+    year: 2019
+    doi: 10.1016/j.tifs.2019.07.034
+    url: https://arxiv.org/abs/1908.07391v1
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: ACM Digital Library
     type: repository
@@ -68,14 +85,14 @@ secondary_sources:
     year: 1996
     url: https://mitpress.mit.edu/sites/default/files/sicp/
     institution: MIT Press
-  - title: "Blockchain Technology: A 2025 Comprehensive Survey of Platforms, Consensus, and Applications"
+  - title: 'Blockchain Technology: A 2025 Comprehensive Survey of Platforms, Consensus, and Applications'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.blockchain
-  - title: "Web3 and Decentralized Applications in 2025: State of Practice"
+  - title: 'Web3 and Decentralized Applications in 2025: State of Practice'
     type: article
     year: 2025
     authors:
@@ -83,6 +100,7 @@ secondary_sources:
     institution: IEEE Access
     url: https://doi.org/10.1109/access.2025.web3
 ---
+
 ## TL;DR
 
 Blockchain is a distributed, immutable ledger where transactions are grouped into blocks, cryptographically linked in a chain. Satoshi Nakamoto's Bitcoin (2009) was the first. Consensus mechanisms: Proof-of-Work (Bitcoin, mining), Proof-of-Stake (Ethereum since 2022, validators stake). Blockchain = decentralized trust without intermediaries.

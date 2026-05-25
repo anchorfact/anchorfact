@@ -1,12 +1,12 @@
 ---
 id: low-resource-nlp
-title: "Low-Resource NLP: Multilingual Models, Endangered Language Preservation, and Translation"
+title: 'Low-Resource NLP: Multilingual Models, Endangered Language Preservation, and Translation'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,31 +34,50 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-low-resource-nlp-1
-    title: "Natural language processing applications for low-resource languages: A comprehensive survey"
+    title: 'Natural language processing applications for low-resource languages: A comprehensive survey'
     type: academic_paper
     year: 2025
     institution: Cambridge University Press NLP Journal
     doi: 10.1017/nlp.2025.7
     url: https://www.cambridge.org/core/journals/natural-language-processing/article/natural-language-processing-applications-for-lowresource-languages/7D3DA31DB6C01B13C6B1F698D4495951
   - id: ps-low-resource-nlp-2
-    title: "Generative AI and Large Language Models in Language Preservation: Automating Translation and Revitalization"
+    title: 'Generative AI and Large Language Models in Language Preservation: Automating Translation and Revitalization'
     type: academic_paper
     year: 2025
     institution: arXiv
     url: https://arxiv.org/abs/2501.11496
+  - title: 'Specializing Multilingual Language Models: An Empirical Study'
+    authors:
+      - Ethan C. Chau
+      - Noah A. Smith
+    year: 2021
+    doi: 10.18653/v1/2021.mrl-1.5
+    url: https://arxiv.org/abs/2106.09063v4
+    type: academic_paper
+    institution: arXiv
+  - title: Creating Lexical Resources for Endangered Languages
+    authors:
+      - Khang Nhut Lam
+      - Feras Al Tarouti
+      - Jugal Kalita
+    year: 2022
+    doi: 10.3115/v1/w14-2207
+    url: https://arxiv.org/abs/2208.03876v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Evaluation metrics for low-resource translation quality without reference translations
   - Community-controlled AI — Indigenous communities governing how their languages are used in AI training
 disputed_statements: []
 secondary_sources:
-  - title: "Low-Resource NLP: A Comprehensive Survey of Transfer Learning, Multilingual Models, and Data Augmentation"
+  - title: 'Low-Resource NLP: A Comprehensive Survey of Transfer Learning, Multilingual Models, and Data Augmentation'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/3635100
-  - title: "No Language Left Behind: Scaling Machine Translation to 200 Languages"
+  - title: 'No Language Left Behind: Scaling Machine Translation to 200 Languages'
     type: journal_article
     year: 2024
     authors:
@@ -78,7 +97,7 @@ secondary_sources:
       - et al.
     institution: Facebook AI Research / ACL
     url: https://arxiv.org/abs/1911.02116
-  - title: "Massively Multilingual Speech (MMS): Scaling Speech Technology to 1000+ Languages"
+  - title: 'Massively Multilingual Speech (MMS): Scaling Speech Technology to 1000+ Languages'
     type: technical_report
     year: 2023
     authors:
@@ -88,8 +107,9 @@ secondary_sources:
       - et al.
     institution: Meta AI
     url: https://arxiv.org/abs/2305.13516
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Of the world's 7,000+ languages, fewer than 100 are well-supported by NLP systems. Low-resource NLP aims to bridge this gap — using cross-lingual transfer, few-shot learning, and community-driven data collection to bring AI language tools to the billions of speakers of underrepresented languages, while also supporting endangered language preservation.
 

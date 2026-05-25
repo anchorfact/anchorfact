@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -17,14 +17,14 @@ data_period: static
 atomic_facts:
   - id: fact-ts-1
     statement: Informer (Zhou et al. 2021, AAAI Best Paper) introduced ProbSparse self-attention and a generative-style decoder, achieving O(L log L) complexity for long sequence time-series forecasting.
-    source_title: "Zhou, Haoyi, et al. Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting. AAAI 2021"
+    source_title: 'Zhou, Haoyi, et al. Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting. AAAI 2021'
     source_url: https://arxiv.org/abs/2012.07436
     confidence: high
   - id: fact-ts-2
     statement: >-
       TimesNet (Wu et al. 2023, Tsinghua) transforms 1D time series into 2D tensors by capturing intra-period and inter-period variations, then applies inception blocks for multi-scale temporal
       modeling.
-    source_title: "Wu, Haixu, et al. TimesNet: Temporal 2D-Variation Modeling for General Time Series Analysis. ICLR 2023"
+    source_title: 'Wu, Haixu, et al. TimesNet: Temporal 2D-Variation Modeling for General Time Series Analysis. ICLR 2023'
     source_url: https://arxiv.org/abs/2210.02186
     confidence: high
   - id: fact-ts-3
@@ -41,16 +41,39 @@ known_gaps:
 disputed_statements:
   - statement: No major disputed statements identified
 primary_sources:
-  - title: "N-BEATS: Neural basis expansion analysis for interpretable time series forecasting"
+  - title: 'N-BEATS: Neural basis expansion analysis for interpretable time series forecasting'
     type: academic_paper
     year: 2020
     url: https://arxiv.org/abs/1905.10437
     institution: ICLR
-  - title: "Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting"
+  - title: 'Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting'
     type: academic_paper
     year: 2021
     url: https://arxiv.org/abs/2012.07436
     institution: AAAI
+  - title: Changing Data Sources in the Age of Machine Learning for Official Statistics
+    authors:
+      - Cedric De Boom
+      - Michael Reusens
+    year: 2023
+    url: https://arxiv.org/abs/2306.04338v1
+    type: academic_paper
+    institution: arXiv
+  - title: 'DOME: Recommendations for supervised machine learning validation in biology'
+    authors:
+      - Ian Walsh
+      - Dmytro Fishman
+      - Dario Garcia-Gasulla
+      - Tiina Titma
+      - Gianluca Pollastri
+      - The ELIXIR Machine Learning focus group
+      - Jen Harrow
+      - Fotis E. Psomopoulos
+      - Silvio C. E. Tosatto
+    year: 2020
+    url: https://arxiv.org/abs/2006.16189v4
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: A Comprehensive Survey of Deep Learning for Time Series Forecasting
     type: survey_paper
@@ -59,7 +82,7 @@ secondary_sources:
       - multiple
     institution: IEEE TKDE
     url: https://doi.org/10.1109/TKDE.2024.3361474
-  - title: "Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting"
+  - title: 'Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting'
     type: conference_paper
     year: 2021
     authors:
@@ -69,7 +92,7 @@ secondary_sources:
       - et al.
     institution: AAAI Best Paper
     url: https://arxiv.org/abs/2012.07436
-  - title: "TimesNet: Temporal 2D-Variation Modeling for General Time Series Analysis"
+  - title: 'TimesNet: Temporal 2D-Variation Modeling for General Time Series Analysis'
     type: conference_paper
     year: 2023
     authors:
@@ -89,8 +112,9 @@ secondary_sources:
       - Kalagnanam, Jayant
     institution: IBM Research / AAAI
     url: https://arxiv.org/abs/2211.14730
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Time series forecasting predicts future values from historical sequences. Traditional statistical methods (ARIMA, ETS) compete with deep learning approaches (LSTM, Transformer variants) depending on data volume and pattern complexity.
 

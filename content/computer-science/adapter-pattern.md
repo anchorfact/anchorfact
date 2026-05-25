@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -38,7 +38,7 @@ primary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
-  - title: "Design Patterns: Elements of Reusable Object-Oriented Software (30th Anniversary Edition, 2025)"
+  - title: 'Design Patterns: Elements of Reusable Object-Oriented Software (30th Anniversary Edition, 2025)'
     type: book
     year: 2025
     authors:
@@ -48,13 +48,32 @@ primary_sources:
       - Vlissides J.
     institution: Addison-Wesley
     url: https://www.informit.com/design-patterns/
-  - title: "Software Architecture Patterns in 2025: Microservices to Modular Monoliths"
+  - title: 'Software Architecture Patterns in 2025: Microservices to Modular Monoliths'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.arch
+  - title: Residual Feature Pyramid Network for Enhancement of Vascular Patterns
+    authors:
+      - Ketan Kotwal
+      - Sebastien Marcel
+    year: 2023
+    doi: 10.1109/CVPRW56347.2022.00165
+    url: https://arxiv.org/abs/2306.17200v1
+    type: academic_paper
+    institution: arXiv
+  - title: 'ERANNs: Efficient Residual Audio Neural Networks for Audio Pattern Recognition'
+    authors:
+      - Sergey Verbitskiy
+      - Vladimir Berikov
+      - Viacheslav Vyshegorodtsev
+    year: 2021
+    doi: 10.1016/j.patrec.2022.07.012
+    url: https://arxiv.org/abs/2106.01621v7
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: ACM Digital Library
     type: repository
@@ -71,14 +90,14 @@ secondary_sources:
     year: 1996
     url: https://mitpress.mit.edu/sites/default/files/sicp/
     institution: MIT Press
-  - title: "Design Patterns in Modern Software Architecture: A 2025 Retrospective"
+  - title: 'Design Patterns in Modern Software Architecture: A 2025 Retrospective'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.patterns
-  - title: "Microservices Design Patterns: From Theory to Cloud-Native Practice (2025)"
+  - title: 'Microservices Design Patterns: From Theory to Cloud-Native Practice (2025)'
     type: article
     year: 2025
     authors:
@@ -86,6 +105,7 @@ secondary_sources:
     institution: IEEE Software
     url: https://doi.org/10.1109/ms.2025.microservices
 ---
+
 ## TL;DR
 
 Converts interface of a class into another interface clients expect. Lets incompatible interfaces work together. Object adapter (composition) preferred over class adapter (inheritance).

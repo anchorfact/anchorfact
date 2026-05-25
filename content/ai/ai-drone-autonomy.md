@@ -1,12 +1,12 @@
 ---
 id: ai-drone-autonomy
-title: "AI for Drone Autonomy: Autonomous Navigation, Swarm Coordination, and Aerial Robotics"
+title: 'AI for Drone Autonomy: Autonomous Navigation, Swarm Coordination, and Aerial Robotics'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -40,24 +40,45 @@ primary_sources:
     institution: Science Robotics / IEEE TRO / arXiv
     url: https://arxiv.org/search/?query=drone+reinforcement+learning+autonomous+navigation
   - id: ps-ai-drone-autonomy-2
-    title: "Multi-Agent Reinforcement Learning for Drone Swarm Coordination: Formation Control, Coverage, and Search-and-Rescue"
+    title: 'Multi-Agent Reinforcement Learning for Drone Swarm Coordination: Formation Control, Coverage, and Search-and-Rescue'
     type: academic_paper
     year: 2025
     institution: IEEE Robotics and Automation Letters / arXiv
     url: https://arxiv.org/search/?query=drone+swarm+MARL+coordination
+  - title: Advanced Drone Swarm Security by Using Blockchain Governance Game
+    authors:
+      - Song-Kyoo Kim
+    year: 2021
+    doi: 10.3390/math10183338
+    url: https://arxiv.org/abs/2112.15454v4
+    type: academic_paper
+    institution: arXiv
+  - title: 'AlphaPilot: Autonomous Drone Racing'
+    authors:
+      - Philipp Foehn
+      - Dario Brescianini
+      - Elia Kaufmann
+      - Titus Cieslewski
+      - Mathias Gehrig
+      - Manasi Muglikar
+      - Davide Scaramuzza
+    year: 2020
+    url: https://arxiv.org/abs/2005.12813v2
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Beyond visual line of sight (BVLOS) autonomous operations at scale
   - Safe human-drone interaction in shared airspace
 disputed_statements: []
 secondary_sources:
-  - title: "Vision-Based Learning for Drones: A Survey"
+  - title: 'Vision-Based Learning for Drones: A Survey'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: arXiv / Frontiers in Robotics and AI
     url: https://arxiv.org/abs/2312.05019
-  - title: "Reinforcement Learning-Based Drone Simulators: Survey, Opportunities, and Challenges"
+  - title: 'Reinforcement Learning-Based Drone Simulators: Survey, Opportunities, and Challenges'
     type: survey_paper
     year: 2024
     authors:
@@ -69,7 +90,7 @@ secondary_sources:
     year: 2025
     authors:
       - multiple
-    institution: "Sustainable Computing: Informatics & Systems (Elsevier)"
+    institution: 'Sustainable Computing: Informatics & Systems (Elsevier)'
     url: https://doi.org/10.1016/j.suscom.2025.100995
   - title: A Survey of Deep Learning Techniques and Computer Vision in Robotic and Drone Applications
     type: survey_paper
@@ -78,8 +99,9 @@ secondary_sources:
       - multiple
     institution: ResearchGate / IEEE Access
     url: https://doi.org/10.1109/ACCESS.2024.3382567
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI gives drones autonomy -- navigating without GPS, dodging obstacles at high speed, and coordinating in swarms. From Skydio's obstacle-dodging drones to Zipline's medical delivery network across Africa, AI-powered aerial autonomy is reshaping delivery, inspection, search-and-rescue, and agriculture.
 

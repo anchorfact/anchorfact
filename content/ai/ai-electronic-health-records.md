@@ -1,12 +1,12 @@
 ---
 id: ai-electronic-health-records
-title: "AI for Electronic Health Records: Clinical NLP, Coding Automation, and Physician Burnout Reduction"
+title: 'AI for Electronic Health Records: Clinical NLP, Coding Automation, and Physician Burnout Reduction'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,17 +34,25 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-electronic-health-records-1
-    title: "Ambient Clinical Intelligence: AI-Powered Clinical Documentation and Physician Burnout Reduction (2024-2025 Survey)"
+    title: 'Ambient Clinical Intelligence: AI-Powered Clinical Documentation and Physician Burnout Reduction (2024-2025 Survey)'
     type: academic_paper
     year: 2025
     institution: JAMA / NEJM Catalyst / arXiv
     url: https://arxiv.org/search/?query=ambient+clinical+intelligence+documentation+physician
   - id: ps-ai-electronic-health-records-2
-    title: "AI for Electronic Health Records: Clinical NLP, Automated Coding, and Workflow Optimization"
+    title: 'AI for Electronic Health Records: Clinical NLP, Automated Coding, and Workflow Optimization'
     type: academic_paper
     year: 2025
     institution: JAMIA / The Lancet Digital Health / arXiv
     url: https://arxiv.org/search/?query=EHR+AI+clinical+NLP+coding+automation
+  - title: 'Data Mining and Electronic Health Records: Selecting Optimal Clinical Treatments in Practice'
+    authors:
+      - Casey Bennett
+      - Thomas Doub
+    year: 2011
+    url: https://arxiv.org/abs/1112.1668v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Cross-EHR interoperability -- AI understanding clinical data across different EHR systems
   - Proactive AI -- EHR predicting patient deterioration and recommending interventions
@@ -57,7 +65,7 @@ secondary_sources:
       - multiple
     institution: arXiv / JAMIA
     url: https://arxiv.org/abs/2507.12774
-  - title: "Advances in Natural Language Processing for Healthcare: A Systematic Review of NLP Applications in EHR"
+  - title: 'Advances in Natural Language Processing for Healthcare: A Systematic Review of NLP Applications in EHR'
     type: survey_paper
     year: 2025
     authors:
@@ -78,8 +86,9 @@ secondary_sources:
       - multiple
     institution: Artificial Intelligence Review (Springer)
     url: https://doi.org/10.1007/s10462-024-10876-2
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI is fixing the EHR problem -- ambient scribes that listen to doctor-patient conversations and write clinical notes automatically, saving physicians 2+ hours/day on documentation and reducing burnout by 40%. From Nuance DAX to Epic, AI transforms EHR from a burden to an assistive partner.
 

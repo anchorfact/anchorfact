@@ -1,12 +1,12 @@
 ---
 id: ai-writing-assistants
-title: "AI Writing Assistants: Grammar Checking, Style Enhancement, and Collaborative Authorship"
+title: 'AI Writing Assistants: Grammar Checking, Style Enhancement, and Collaborative Authorship'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -35,23 +35,33 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-writing-assistants-1
-    title: "AI-Powered Writing Assistants: Grammar Correction, Style Enhancement, and Generative Rewriting (2024-2025 Comprehensive Survey)"
+    title: 'AI-Powered Writing Assistants: Grammar Correction, Style Enhancement, and Generative Rewriting (2024-2025 Comprehensive Survey)'
     type: academic_paper
     year: 2025
     institution: ACL / NAACL / Transactions of the ACL / arXiv
     url: https://arxiv.org/search/?query=AI+writing+assistant+grammar+correction+style
   - id: ps-ai-writing-assistants-2
-    title: "Human-AI Collaborative Writing: Productivity, Style Homogenization, and Authorship Ethics"
+    title: 'Human-AI Collaborative Writing: Productivity, Style Homogenization, and Authorship Ethics'
     type: academic_paper
     year: 2025
     institution: ACM CHI / Stanford HAI / arXiv
     url: https://arxiv.org/search/?query=AI+collaborative+writing+authorship
+  - title: 'LLMs as Writing Assistants: Exploring Perspectives on Sense of Ownership and Reasoning'
+    authors:
+      - Azmine Toushik Wasi
+      - Mst Rafia Islam
+      - Raima Islam
+    year: 2024
+    doi: 10.1145/3690712.3690723
+    url: https://arxiv.org/abs/2404.00027v5
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Multilingual writing assistance with cultural style adaptation
   - AI-assisted creative writing preserving authorial voice while enhancing quality
 disputed_statements: []
 secondary_sources:
-  - title: "Large Language Models as Writing Assistants: A Comprehensive Survey of Capabilities, Limitations, and Human-AI Co-Writing"
+  - title: 'Large Language Models as Writing Assistants: A Comprehensive Survey of Capabilities, Limitations, and Human-AI Co-Writing'
     type: survey_paper
     year: 2024
     authors:
@@ -65,22 +75,23 @@ secondary_sources:
       - OpenAI
     institution: OpenAI
     url: https://arxiv.org/abs/2303.08774
-  - title: "Grammarly, Notion AI, and the Rise of AI Writing Tools: A 2025 Market Analysis"
+  - title: 'Grammarly, Notion AI, and the Rise of AI Writing Tools: A 2025 Market Analysis'
     type: report
     year: 2025
     authors:
       - CB Insights
     institution: CB Insights
     url: https://www.cbinsights.com/research/report/ai-writing-assistants-2025/
-  - title: "AI-Powered Creativity Support: A Systematic Review of Writing, Design, and Content Generation Tools"
+  - title: 'AI-Powered Creativity Support: A Systematic Review of Writing, Design, and Content Generation Tools'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: International Journal of Human-Computer Studies (Elsevier)
     url: https://doi.org/10.1016/j.ijhcs.2025.103456
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI writing assistants are the invisible co-authors behind much of what we read -- correcting grammar, suggesting better words, and rewriting sentences for clarity. From Grammarly's 50M+ users to Microsoft Copilot embedded in Word, AI-powered writing assistance has become a standard productivity layer.
 

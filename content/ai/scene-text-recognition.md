@@ -1,12 +1,12 @@
 ---
 id: scene-text-recognition
-title: "Scene Text Recognition: Transformer-Based OCR and End-to-End Text Spotting"
+title: 'Scene Text Recognition: Transformer-Based OCR and End-to-End Text Spotting'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,7 +34,7 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-scene-text-recognition-1
-    title: "TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models"
+    title: 'TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models'
     type: academic_paper
     year: 2021
     institution: arXiv / Microsoft Research
@@ -45,19 +45,38 @@ primary_sources:
     year: 2025
     institution: MDPI Electronics
     url: https://www.mdpi.com/2079-9292/14/23/4594
+  - title: Geometric Perception based Efficient Text Recognition
+    authors:
+      - P. N. Deelaka
+      - D. R. Jayakodi
+      - D. Y. Silva
+    year: 2023
+    url: https://arxiv.org/abs/2302.03873v1
+    type: academic_paper
+    institution: arXiv
+  - title: 'Upcycle Your OCR: Reusing OCRs for Post-OCR Text Correction in Romanised Sanskrit'
+    authors:
+      - Amrith Krishna
+      - Bodhisattwa Prasad Majumder
+      - Rajesh Shreedhar Bhat
+      - Pawan Goyal
+    year: 2018
+    url: https://arxiv.org/abs/1809.02147v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Handwritten historical document recognition with degraded, non-standard scripts
   - Real-time text recognition on mobile devices for AR translation overlay
 disputed_statements: []
 secondary_sources:
-  - title: "From Detection to Understanding: A Systematic Survey of Deep Learning for Scene Text Recognition"
+  - title: 'From Detection to Understanding: A Systematic Survey of Deep Learning for Scene Text Recognition'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: Applied Sciences (MDPI)
     url: https://doi.org/10.3390/app15179247
-  - title: "A Comprehensive Survey of Transformers in Text Recognition: Printed, Handwritten, and Scene Text"
+  - title: 'A Comprehensive Survey of Transformers in Text Recognition: Printed, Handwritten, and Scene Text'
     type: survey_paper
     year: 2025
     authors:
@@ -80,8 +99,9 @@ secondary_sources:
       - Yao, Cong
     institution: IEEE TPAMI
     url: https://doi.org/10.1109/TPAMI.2016.2646371
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Scene text recognition reads text in the wild -- street signs, storefronts, license plates, and handwritten notes captured by smartphone cameras. Transformer-based architectures have transformed OCR from fragile multi-stage pipelines to robust end-to-end models that handle curved text, diverse fonts, and challenging lighting conditions.
 

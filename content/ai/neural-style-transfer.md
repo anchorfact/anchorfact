@@ -1,12 +1,12 @@
 ---
 id: neural-style-transfer
-title: "Neural Style Transfer: Artistic Rendering, Image-to-Image Translation, and Creative AI"
+title: 'Neural Style Transfer: Artistic Rendering, Image-to-Image Translation, and Creative AI'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -21,7 +21,7 @@ atomic_facts:
       arxiv (June 2025) published a decade survey of AI-driven style transfer -- tracing the evolution from Gatys et al. (2015) Neural Algorithm of Artistic Style (optimizing image pixels to match
       content + style representations from VGG) through real-time feed-forward methods (Johnson et al. 2016, perceptual loss) to diffusion-based style transfer (2023-2025) -- documenting that
       diffusion models (Stable Diffusion + ControlNet + IP-Adapter) achieve 10-100x speedup while offering fine-grained control over style intensity, local regions, and multi-style blending.
-    source_title: "arxiv 2506.19278 (2025) -- Style Transfer: A Decade Survey / Gatys et al., 2015 -- A Neural Algorithm of Artistic Style / IP-Adapter, 2023"
+    source_title: 'arxiv 2506.19278 (2025) -- Style Transfer: A Decade Survey / Gatys et al., 2015 -- A Neural Algorithm of Artistic Style / IP-Adapter, 2023'
     source_url: https://arxiv.org/abs/2506.19278
     confidence: high
   - id: af-neural-style-transfer-2
@@ -34,18 +34,25 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-neural-style-transfer-1
-    title: "Style Transfer: A Decade Survey of Neural Methods from Gatys to Diffusion Models"
+    title: 'Style Transfer: A Decade Survey of Neural Methods from Gatys to Diffusion Models'
     type: academic_paper
     year: 2025
     institution: arXiv
     url: https://arxiv.org/abs/2506.19278
   - id: ps-neural-style-transfer-2
-    title: "Bridging the metrics gap in image style transfer: A comprehensive review of evaluation methods"
+    title: 'Bridging the metrics gap in image style transfer: A comprehensive review of evaluation methods'
     type: academic_paper
     year: 2025
     institution: Neurocomputing / Elsevier
     doi: 10.1016/j.neucom.2025.128990
     url: https://www.sciencedirect.com/science/article/pii/S092523122500102X
+  - title: Neural Artistic Style Transfer with Conditional Adversaria
+    authors:
+      - P. N. Deelaka
+    year: 2023
+    url: https://arxiv.org/abs/2302.03875v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Temporal style transfer -- maintaining style consistency across video frames
   - Style disentanglement -- separating style from content without interference
@@ -60,14 +67,14 @@ secondary_sources:
       - Bethge, Matthias
     institution: University of Tübingen / CVPR
     url: https://arxiv.org/abs/1508.06576
-  - title: "Style Transfer: A Decade Survey"
+  - title: 'Style Transfer: A Decade Survey'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: arXiv
     url: https://arxiv.org/abs/2506.19278
-  - title: "Style Transfer Review: Traditional Machine Learning to Deep Learning Approaches"
+  - title: 'Style Transfer Review: Traditional Machine Learning to Deep Learning Approaches'
     type: survey_paper
     year: 2025
     authors:
@@ -83,8 +90,9 @@ secondary_sources:
       - Fei-Fei, Li
     institution: Stanford / ECCV
     url: https://arxiv.org/abs/1603.08155
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Neural style transfer applies the artistic style of one image (e.g., Van Gogh painting) to the content of another (a photograph), creating new artwork. From Gatys's seminal 2015 paper to IP-Adapter diffusion models, the field has evolved from minute-long optimization to real-time fine-grained style control.
 

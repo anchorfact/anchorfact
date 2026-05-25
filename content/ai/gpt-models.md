@@ -1,91 +1,146 @@
 ---
-id: "kb-2026-00004"
-title: "GPT (Generative Pre-trained Transformer) Model Family"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "human_only"
-conflict_of_interest: "none_declared"
+id: kb-2026-00004
+title: GPT (Generative Pre-trained Transformer) Model Family
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
+generation_method: human_only
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-ai-01"
-    statement: "The GPT model family, developed by OpenAI starting in 2018, represents the lineage of autoregressive language models that scaled from 117M to trillions of parameters, establishing text generation as the primary paradigm for general-purpose AI"
-    source_title: "Language Models are Unsupervised Multitask Learners (GPT-2)"
-    source_url: "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf"
-  - id: "fact-ai-001"
-    statement: "Each layer applies **masked (causal) self-attention**, where position i can only attend to positions 1 through i — future tokens are explicitly masked."
-    source_title: "Improving Language Understanding by Generative Pre-Training (GPT-1)"
-    source_url: "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
-    confidence: "high"
-  - id: "fact-ai-002"
-    statement: "This ensures the model cannot \"cheat\" by looking ahead during training, and it is the critical architectural choice that enables coherent text generation."
-    source_title: "Improving Language Understanding by Generative Pre-Training (GPT-1)"
-    source_url: "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
-    confidence: "high"
-  - id: "fact-ai-003"
-    statement: "The training paradigm evolved through three stages: 1."
-    source_title: "Improving Language Understanding by Generative Pre-Training (GPT-1)"
-    source_url: "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
-    confidence: "high"
-  - id: "fact-ai-004"
-    statement: "**Pre-train then fine-tune** (GPT-1): Pre-train on unlabeled text, fine-tune on labeled downstream tasks 2."
-    source_title: "Improving Language Understanding by Generative Pre-Training (GPT-1)"
-    source_url: "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
-    confidence: "high"
-  - id: "fact-ai-005"
-    statement: "**Zero-shot transfer** (GPT-2): Pre-train on a large enough corpus, and the model acquires task-solving capability without any fine-tuning 3."
-    source_title: "Language Models are Few-Shot Learners (GPT-3)"
-    source_url: "https://arxiv.org/abs/2005.14165"
-    source_doi: "10.48550/arXiv.2005.14165"
-    confidence: "high"
-
+  - id: fact-ai-01
+    statement: >-
+      The GPT model family, developed by OpenAI starting in 2018, represents the lineage of autoregressive language models that scaled from 117M to trillions of parameters, establishing text
+      generation as the primary paradigm for general-purpose AI
+    source_title: Language Models are Unsupervised Multitask Learners (GPT-2)
+    source_url: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+  - id: fact-ai-001
+    statement: Each layer applies **masked (causal) self-attention**, where position i can only attend to positions 1 through i — future tokens are explicitly masked.
+    source_title: Improving Language Understanding by Generative Pre-Training (GPT-1)
+    source_url: https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+    confidence: high
+  - id: fact-ai-002
+    statement: This ensures the model cannot "cheat" by looking ahead during training, and it is the critical architectural choice that enables coherent text generation.
+    source_title: Improving Language Understanding by Generative Pre-Training (GPT-1)
+    source_url: https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+    confidence: high
+  - id: fact-ai-003
+    statement: 'The training paradigm evolved through three stages: 1.'
+    source_title: Improving Language Understanding by Generative Pre-Training (GPT-1)
+    source_url: https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+    confidence: high
+  - id: fact-ai-004
+    statement: '**Pre-train then fine-tune** (GPT-1): Pre-train on unlabeled text, fine-tune on labeled downstream tasks 2.'
+    source_title: Improving Language Understanding by Generative Pre-Training (GPT-1)
+    source_url: https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+    confidence: high
+  - id: fact-ai-005
+    statement: '**Zero-shot transfer** (GPT-2): Pre-train on a large enough corpus, and the model acquires task-solving capability without any fine-tuning 3.'
+    source_title: Language Models are Few-Shot Learners (GPT-3)
+    source_url: https://arxiv.org/abs/2005.14165
+    source_doi: 10.48550/arXiv.2005.14165
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "GPT-4 architecture details (layer count, hidden dimensions) are not publicly disclosed by OpenAI; MoE estimate (~1.76T total, ~280B active) is based on media and analyst reports, not official documentation"
-  - "GPT-5 and GPT-5.2 specifications are based on public announcements and press coverage; technical details are not published"
-  - "Training cost estimates are ballpark figures from external analysis, not official OpenAI disclosure"
-
+  - >-
+    GPT-4 architecture details (layer count, hidden dimensions) are not publicly disclosed by OpenAI; MoE estimate (~1.76T total, ~280B active) is based on media and analyst reports, not official
+    documentation
+  - GPT-5 and GPT-5.2 specifications are based on public announcements and press coverage; technical details are not published
+  - Training cost estimates are ballpark figures from external analysis, not official OpenAI disclosure
 disputed_statements:
-  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
-
+  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
 primary_sources:
-  - title: "Improving Language Understanding by Generative Pre-Training (GPT-1)"
-    authors: ["Radford, Alec", "Narasimhan, Karthik", "Salimans, Tim", "Sutskever, Ilya"]
-    type: "academic_paper"
+  - title: Improving Language Understanding by Generative Pre-Training (GPT-1)
+    authors:
+      - Radford, Alec
+      - Narasimhan, Karthik
+      - Salimans, Tim
+      - Sutskever, Ilya
+    type: academic_paper
     year: 2018
-    url: "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
-    institution: "OpenAI"
-  - title: "Language Models are Unsupervised Multitask Learners (GPT-2)"
-    authors: ["Radford, Alec", "Wu, Jeffrey", "Child, Rewon", "Luan, David", "Amodei, Dario", "Sutskever, Ilya"]
-    type: "academic_paper"
+    url: https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+    institution: OpenAI
+  - title: Language Models are Unsupervised Multitask Learners (GPT-2)
+    authors:
+      - Radford, Alec
+      - Wu, Jeffrey
+      - Child, Rewon
+      - Luan, David
+      - Amodei, Dario
+      - Sutskever, Ilya
+    type: academic_paper
     year: 2019
-    url: "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf"
-    institution: "OpenAI"
-  - title: "Language Models are Few-Shot Learners (GPT-3)"
-    authors: ["Brown, Tom B.", "Mann, Benjamin", "Ryder, Nick", "Subbiah, Melanie", "Kaplan, Jared", "Dhariwal, Prafulla", "Neelakantan, Arvind", "Shyam, Pranav", "Sastry, Girish", "Askell, Amanda", "Agarwal, Sandhini", "Herbert-Voss, Ariel", "Krueger, Gretchen", "Henighan, Tom", "Child, Rewon", "Ramesh, Aditya", "Ziegler, Daniel M.", "Wu, Jeffrey", "Winter, Clemens", "Hesse, Christopher", "Chen, Mark", "Sigler, Eric", "Litwin, Mateusz", "Gray, Scott", "Chess, Benjamin", "Clark, Jack", "Berner, Christopher", "McCandlish, Sam", "Radford, Alec", "Sutskever, Ilya", "Amodei, Dario"]
-    type: "academic_paper"
+    url: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+    institution: OpenAI
+  - title: Language Models are Few-Shot Learners (GPT-3)
+    authors:
+      - Brown, Tom B.
+      - Mann, Benjamin
+      - Ryder, Nick
+      - Subbiah, Melanie
+      - Kaplan, Jared
+      - Dhariwal, Prafulla
+      - Neelakantan, Arvind
+      - Shyam, Pranav
+      - Sastry, Girish
+      - Askell, Amanda
+      - Agarwal, Sandhini
+      - Herbert-Voss, Ariel
+      - Krueger, Gretchen
+      - Henighan, Tom
+      - Child, Rewon
+      - Ramesh, Aditya
+      - Ziegler, Daniel M.
+      - Wu, Jeffrey
+      - Winter, Clemens
+      - Hesse, Christopher
+      - Chen, Mark
+      - Sigler, Eric
+      - Litwin, Mateusz
+      - Gray, Scott
+      - Chess, Benjamin
+      - Clark, Jack
+      - Berner, Christopher
+      - McCandlish, Sam
+      - Radford, Alec
+      - Sutskever, Ilya
+      - Amodei, Dario
+    type: academic_paper
     year: 2020
-    url: "https://arxiv.org/abs/2005.14165"
-    doi: "10.48550/arXiv.2005.14165"
-    institution: "arXiv / Cornell University"
-  - title: "GPT-4 Technical Report"
-
+    url: https://arxiv.org/abs/2005.14165
+    doi: 10.48550/arXiv.2005.14165
+    institution: arXiv / Cornell University
+  - title: GPT-4 Technical Report
+  - title: Towards a Transformer-Based Pre-trained Model for IoT Traffic Classification
+    authors:
+      - Bruna Bazaluk
+      - Mosab Hamdan
+      - Mustafa Ghaleb
+      - Mohammed S. M. Gismalla
+      - Flavio S. Correa da Silva
+      - Daniel Macêdo Batista
+    year: 2024
+    url: https://arxiv.org/abs/2407.19051v1
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
-  - title: "Training language models to follow instructions with human feedback (InstructGPT)"
-    authors: ["Ouyang, Long", "Wu, Jeffrey", "Jiang, Xu", "et al."]
-    type: "academic_paper"
+  - title: Training language models to follow instructions with human feedback (InstructGPT)
+    authors:
+      - Ouyang, Long
+      - Wu, Jeffrey
+      - Jiang, Xu
+      - et al.
+    type: academic_paper
     year: 2022
-    url: "https://arxiv.org/abs/2203.02155"
-    doi: "10.48550/arXiv.2203.02155"
-    institution: "Cornell University"
-
+    url: https://arxiv.org/abs/2203.02155
+    doi: 10.48550/arXiv.2203.02155
+    institution: Cornell University
 ---
+
 
 
 

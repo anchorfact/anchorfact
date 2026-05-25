@@ -1,12 +1,12 @@
 ---
 id: ai-for-smart-homes
-title: "AI for Smart Homes: Ambient Intelligence, Energy Optimization, and Predictive Home Automation"
+title: 'AI for Smart Homes: Ambient Intelligence, Energy Optimization, and Predictive Home Automation'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,23 +34,45 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-for-smart-homes-1
-    title: "Reinforcement Learning for Intelligent Building Energy Management: A Comprehensive Review"
+    title: 'Reinforcement Learning for Intelligent Building Energy Management: A Comprehensive Review'
     type: academic_paper
     year: 2025
     institution: MDPI Energies / Applied Energy
     url: https://www.mdpi.com/journal/energies
   - id: ps-ai-for-smart-homes-2
-    title: "Ambient Intelligence in Smart Homes: From Rule-Based Automation to Predictive, Context-Aware Systems"
+    title: 'Ambient Intelligence in Smart Homes: From Rule-Based Automation to Predictive, Context-Aware Systems'
     type: academic_paper
     year: 2025
     institution: ACM Computing Surveys
     url: https://dl.acm.org/journal/csur
+  - title: A Scenario-Based Mobile Application for Robot-Assisted Smart Digital Homes
+    authors:
+      - Ali Reza Manashty
+      - Amir Rajabzadeh
+      - Zahra Forootan Jahromi
+    year: 2010
+    url: https://arxiv.org/abs/1009.5398v1
+    type: academic_paper
+    institution: arXiv
+  - title: Development and Evaluation of an Online Home Energy Management Strategy for Load Coordination in Smart Homes with Renewable Energy Sources
+    authors:
+      - Xiaoling Chen
+      - Cory Miller
+      - Mithun Goutham
+      - Prasad Dev Hanumalagutti
+      - Rachel Blaser
+      - Stephanie Stockar
+    year: 2023
+    doi: 10.1016/j.energy.2023.130134
+    url: https://arxiv.org/abs/2304.11770v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Multi-occupant preference learning -- balancing conflicting comfort preferences
   - Interoperable AI across heterogeneous smart home devices from different manufacturers (Matter protocol + AI)
 disputed_statements: []
 secondary_sources:
-  - title: "A Review on IoT-Enabled Smart Homes Using AI: State-of-the-Art and Future Directions"
+  - title: 'A Review on IoT-Enabled Smart Homes Using AI: State-of-the-Art and Future Directions'
     type: survey_paper
     year: 2024
     authors:
@@ -64,22 +86,23 @@ secondary_sources:
       - multiple
     institution: arXiv (DL models in CV, NLP, time series for smart homes)
     url: https://arxiv.org/abs/2403.17561
-  - title: "The Intelligent Home: A Systematic Review of Technological Evolution from IoT to Ambient Intelligence"
+  - title: 'The Intelligent Home: A Systematic Review of Technological Evolution from IoT to Ambient Intelligence'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: Symmetry (MDPI)
     url: https://doi.org/10.3390/sym18050718
-  - title: "A Taxonomy of Home Automation: Expert Perspectives on Defining Smarter Homes"
+  - title: 'A Taxonomy of Home Automation: Expert Perspectives on Defining Smarter Homes'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: Information Systems Frontiers (Springer)
     url: https://doi.org/10.1007/s10796-024-10496-9
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI is transforming smart homes from remote-controlled gadgets to truly intelligent living spaces that learn your habits, predict your needs, and optimize energy usage without you thinking about it. The convergence of ambient intelligence, reinforcement learning for HVAC control, and predictive automation is creating homes that are comfortable, efficient, and proactive.
 

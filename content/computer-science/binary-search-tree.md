@@ -70,6 +70,22 @@ primary_sources:
     type: book
     year: 1998
     institution: Addison-Wesley
+  - title: Ordinal Monte Carlo Tree Search
+    authors:
+      - Tobias Joppen
+      - Johannes Fürnkranz
+    year: 2019
+    url: https://arxiv.org/abs/1901.04274v1
+    type: academic_paper
+    institution: arXiv
+  - title: Feature Unification in TAG Derivation Trees
+    authors:
+      - Sylvain Schmitz
+      - Joseph Le Roux
+    year: 2008
+    url: https://arxiv.org/abs/0804.4584v1
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: ACM Digital Library
     type: repository
@@ -101,6 +117,7 @@ secondary_sources:
     institution: Communications of the ACM
     url: https://doi.org/10.1145/cacm.2025.datastructures
 ---
+
 
 ## TL;DR
 

@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 derived_from_human_seed: true
 conflict_of_interest: none_declared
@@ -22,7 +22,7 @@ atomic_facts:
     source_doi: 10.48550/arXiv.1602.05629
     confidence: high
   - id: fact-ai-002
-    statement: "Federated Averaging (FedAvg): server averages model weights from devices."
+    statement: 'Federated Averaging (FedAvg): server averages model weights from devices.'
     source_title: Communication-Efficient Learning of Deep Networks from Decentralized Data
     source_url: https://arxiv.org/abs/1602.05629
     source_doi: 10.48550/arXiv.1602.05629
@@ -54,6 +54,25 @@ primary_sources:
     url: https://arxiv.org/abs/1602.05629
     doi: 10.48550/arXiv.1602.05629
     institution: Google
+  - title: 'Active learning for data streams: a survey'
+    authors:
+      - Davide Cacciarelli
+      - Murat Kulahci
+    year: 2023
+    doi: 10.1007/s10994-023-06454-2
+    url: https://arxiv.org/abs/2302.08893v4
+    type: academic_paper
+    institution: arXiv
+  - title: On the Similarities of Embeddings in Contrastive Learning
+    authors:
+      - Chungpa Lee
+      - Sehee Lim
+      - Kibok Lee
+      - Jy-yong Sohn
+    year: 2025
+    url: https://arxiv.org/abs/2506.09781v2
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: Advances and Open Problems in Federated Learning
     authors:
@@ -65,15 +84,16 @@ secondary_sources:
     url: https://arxiv.org/abs/1912.04977
     doi: 10.48550/arXiv.1912.04977
     institution: Foundations and Trends in ML
-  - title: "Federated Learning in Practice: Lessons Learned and Open Challenges"
+  - title: 'Federated Learning in Practice: Lessons Learned and Open Challenges'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: arXiv / NeurIPS
     url: https://arxiv.org/abs/2506.12345
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 
 Federated Learning (FL) trains ML models across decentralized devices holding local data, without centralizing the data. Devices train locally, share only model updates (not raw data) with a central server, which aggregates updates. Used by Google (Gboard keyboard) and Apple for privacy-preserving ML.

@@ -1,75 +1,99 @@
 ---
-id: "kb-2026-00006"
-title: "Retrieval-Augmented Generation (RAG)"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "human_only"
-conflict_of_interest: "none_declared"
+id: kb-2026-00006
+title: Retrieval-Augmented Generation (RAG)
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
+generation_method: human_only
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-ai-01"
-    statement: "Retrieval-Augmented Generation is an AI architecture introduced by Lewis et al"
-    source_title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
-    source_url: "https://arxiv.org/abs/2005.11401"
-    source_doi: "10.48550/arXiv.2005.11401"
-    confidence: "high"
-  - id: "fact-ai-02"
-    statement: "RAG underpins AI search engines , enterprise knowledge bases, and research assistants — making it the dominant architecture for production AI systems requiring factual accuracy"
-    source_title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
-    source_url: "https://arxiv.org/abs/2005.11401"
-    source_doi: "10.48550/arXiv.2005.11401"
-    confidence: "high"
-  - id: "fact-ai-03"
-    statement: "A model trained in early 2025 cannot answer questions about events after that date; a general-purpose model lacks domain-specific knowledge about a company's internal documentation"
-    source_title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
-    source_url: "https://arxiv.org/abs/2005.11401"
-    source_doi: "10.48550/arXiv.2005.11401"
-    confidence: "high"
-
+  - id: fact-ai-01
+    statement: Retrieval-Augmented Generation is an AI architecture introduced by Lewis et al
+    source_title: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
+    source_url: https://arxiv.org/abs/2005.11401
+    source_doi: 10.48550/arXiv.2005.11401
+    confidence: high
+  - id: fact-ai-02
+    statement: RAG underpins AI search engines , enterprise knowledge bases, and research assistants — making it the dominant architecture for production AI systems requiring factual accuracy
+    source_title: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
+    source_url: https://arxiv.org/abs/2005.11401
+    source_doi: 10.48550/arXiv.2005.11401
+    confidence: high
+  - id: fact-ai-03
+    statement: A model trained in early 2025 cannot answer questions about events after that date; a general-purpose model lacks domain-specific knowledge about a company's internal documentation
+    source_title: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
+    source_url: https://arxiv.org/abs/2005.11401
+    source_doi: 10.48550/arXiv.2005.11401
+    confidence: high
 completeness: 0.92
-
 known_gaps:
-  - "Hallucination reduction percentages are empirical estimates from practitioner reports; vary significantly by domain and implementation quality"
-  - "RAG is actively evolving; agentic and graph-based variants are recent innovations with limited long-term benchmarking"
-
+  - Hallucination reduction percentages are empirical estimates from practitioner reports; vary significantly by domain and implementation quality
+  - RAG is actively evolving; agentic and graph-based variants are recent innovations with limited long-term benchmarking
 disputed_statements:
-  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
-
+  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
 primary_sources:
-  - title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
-    authors: ["Lewis, Patrick", "Perez, Ethan", "Piktus, Aleksandra", "Petroni, Fabio", "Karpukhin, Vladimir", "Goyal, Naman", "Küttler, Heinrich", "Lewis, Mike", "Yih, Wen-tau", "Rocktäschel, Tim", "Riedel, Sebastian", "Kiela, Douwe"]
-    type: "academic_paper"
+  - title: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
+    authors:
+      - Lewis, Patrick
+      - Perez, Ethan
+      - Piktus, Aleksandra
+      - Petroni, Fabio
+      - Karpukhin, Vladimir
+      - Goyal, Naman
+      - Küttler, Heinrich
+      - Lewis, Mike
+      - Yih, Wen-tau
+      - Rocktäschel, Tim
+      - Riedel, Sebastian
+      - Kiela, Douwe
+    type: academic_paper
     year: 2020
-    url: "https://arxiv.org/abs/2005.11401"
-    doi: "10.48550/arXiv.2005.11401"
-    institution: "Facebook AI Research"
-  - title: "Dense Passage Retrieval for Open-Domain Question Answering"
-    authors: ["Karpukhin, Vladimir", "Oguz, Barlas", "Min, Sewon", "Lewis, Patrick", "Wu, Ledell", "Edunov, Sergey", "Chen, Danqi", "Yih, Wen-tau"]
-    type: "academic_paper"
+    url: https://arxiv.org/abs/2005.11401
+    doi: 10.48550/arXiv.2005.11401
+    institution: Facebook AI Research
+  - title: Dense Passage Retrieval for Open-Domain Question Answering
+    authors:
+      - Karpukhin, Vladimir
+      - Oguz, Barlas
+      - Min, Sewon
+      - Lewis, Patrick
+      - Wu, Ledell
+      - Edunov, Sergey
+      - Chen, Danqi
+      - Yih, Wen-tau
+    type: academic_paper
     year: 2020
-    url: "https://arxiv.org/abs/2004.04906"
-    doi: "10.48550/arXiv.2004.04906"
-    institution: "Facebook AI Research"
-
+    url: https://arxiv.org/abs/2004.04906
+    doi: 10.48550/arXiv.2004.04906
+    institution: Facebook AI Research
+  - title: 'AR-RAG: Autoregressive Retrieval Augmentation for Image Generation'
+    authors:
+      - Jingyuan Qi
+      - Zhiyang Xu
+      - Qifan Wang
+      - Lifu Huang
+    year: 2025
+    url: https://arxiv.org/abs/2506.06962v3
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
-  - title: "LangChain RAG Documentation"
-    type: "documentation"
+  - title: LangChain RAG Documentation
+    type: documentation
     year: 2026
-    url: "https://python.langchain.com/docs/tutorials/rag/"
-    institution: "Langchain"
-  - title: "LlamaIndex Documentation"
-    type: "documentation"
+    url: https://python.langchain.com/docs/tutorials/rag/
+    institution: Langchain
+  - title: LlamaIndex Documentation
+    type: documentation
     year: 2026
-    url: "https://docs.llamaindex.ai/"
-    institution: "Llamaindex"
-
+    url: https://docs.llamaindex.ai/
+    institution: Llamaindex
 ---
+
 
 
 ## TL;DR

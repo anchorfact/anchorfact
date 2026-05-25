@@ -1,84 +1,137 @@
 ---
-id: "kb-2026-00005"
-title: "Large Language Models (LLMs)"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "human_only"
-conflict_of_interest: "none_declared"
+id: kb-2026-00005
+title: Large Language Models (LLMs)
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
+generation_method: human_only
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-ai-01"
-    statement: "Large Language Models are Transformer-based neural networks trained on internet-scale text corpora to predict and generate human language"
-    source_title: "Language Models are Few-Shot Learners (GPT-3)"
-    source_url: "https://arxiv.org/abs/2005.14165"
-    source_doi: "10.48550/arXiv.2005.14165"
-    confidence: "high"
-  - id: "fact-ai-02"
-    statement: "They exhibit emergent abilities — qualitatively new capabilities that appear abruptly when model size exceeds specific thresholds, without being explicitly programmed"
-    source_title: "Emergent Abilities of Large Language Models"
-    source_url: "https://arxiv.org/abs/2206.07682"
-    source_doi: "10.48550/arXiv.2206.07682"
-    confidence: "high"
-  - id: "fact-ai-03"
-    statement: "The key insight is scaling: as model size, training data volume, and compute budget increase simultaneously, model performance improves predictably — but also acquires qualitatively new capabilities that smaller models simply do not possess"
-    source_title: "Training Compute-Optimal Large Language Models (Chinchilla)"
-    source_url: "https://arxiv.org/abs/2203.15556"
-    source_doi: "10.48550/arXiv.2203.15556"
-    confidence: "high"
-
+  - id: fact-ai-01
+    statement: Large Language Models are Transformer-based neural networks trained on internet-scale text corpora to predict and generate human language
+    source_title: Language Models are Few-Shot Learners (GPT-3)
+    source_url: https://arxiv.org/abs/2005.14165
+    source_doi: 10.48550/arXiv.2005.14165
+    confidence: high
+  - id: fact-ai-02
+    statement: They exhibit emergent abilities — qualitatively new capabilities that appear abruptly when model size exceeds specific thresholds, without being explicitly programmed
+    source_title: Emergent Abilities of Large Language Models
+    source_url: https://arxiv.org/abs/2206.07682
+    source_doi: 10.48550/arXiv.2206.07682
+    confidence: high
+  - id: fact-ai-03
+    statement: >-
+      The key insight is scaling: as model size, training data volume, and compute budget increase simultaneously, model performance improves predictably — but also acquires qualitatively new
+      capabilities that smaller models simply do not possess
+    source_title: Training Compute-Optimal Large Language Models (Chinchilla)
+    source_url: https://arxiv.org/abs/2203.15556
+    source_doi: 10.48550/arXiv.2203.15556
+    confidence: high
 completeness: 0.9
-
 known_gaps:
-  - "Benchmark scores are from public leaderboards as of late 2024; newer models may exceed these by the time of reading"
-  - "Model parameter counts for frontier models (GPT-4, Gemini, Claude) are estimates from external analysis, not official documentation"
-
+  - Benchmark scores are from public leaderboards as of late 2024; newer models may exceed these by the time of reading
+  - Model parameter counts for frontier models (GPT-4, Gemini, Claude) are estimates from external analysis, not official documentation
 disputed_statements:
-  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
-
+  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
 primary_sources:
-  - title: "Language Models are Few-Shot Learners (GPT-3)"
-    authors: ["Brown, Tom B.", "Mann, Benjamin", "Ryder, Nick", "Kaplan, Jared", "et al."]
-    type: "academic_paper"
+  - title: Language Models are Few-Shot Learners (GPT-3)
+    authors:
+      - Brown, Tom B.
+      - Mann, Benjamin
+      - Ryder, Nick
+      - Kaplan, Jared
+      - et al.
+    type: academic_paper
     year: 2020
-    url: "https://arxiv.org/abs/2005.14165"
-    doi: "10.48550/arXiv.2005.14165"
-    institution: "OpenAI"
-  - title: "Training Compute-Optimal Large Language Models (Chinchilla)"
-    authors: ["Hoffmann, Jordan", "Borgeaud, Sebastian", "Mensch, Arthur", "et al."]
-    type: "academic_paper"
+    url: https://arxiv.org/abs/2005.14165
+    doi: 10.48550/arXiv.2005.14165
+    institution: OpenAI
+  - title: Training Compute-Optimal Large Language Models (Chinchilla)
+    authors:
+      - Hoffmann, Jordan
+      - Borgeaud, Sebastian
+      - Mensch, Arthur
+      - et al.
+    type: academic_paper
     year: 2022
-    url: "https://arxiv.org/abs/2203.15556"
-    doi: "10.48550/arXiv.2203.15556"
-    institution: "DeepMind"
-  - title: "Emergent Abilities of Large Language Models"
-    authors: ["Wei, Jason", "Tay, Yi", "Bommasani, Rishi", "Raffel, Colin", "Zoph, Barret", "Borgeaud, Sebastian", "Yogatama, Dani", "Bosma, Maarten", "Zhou, Denny", "Metzler, Donald", "Chi, Ed H.", "Hashimoto, Tatsunori", "Vinyals, Oriol", "Liang, Percy", "Dean, Jeff", "Fedus, William"]
-    type: "academic_paper"
+    url: https://arxiv.org/abs/2203.15556
+    doi: 10.48550/arXiv.2203.15556
+    institution: DeepMind
+  - title: Emergent Abilities of Large Language Models
+    authors:
+      - Wei, Jason
+      - Tay, Yi
+      - Bommasani, Rishi
+      - Raffel, Colin
+      - Zoph, Barret
+      - Borgeaud, Sebastian
+      - Yogatama, Dani
+      - Bosma, Maarten
+      - Zhou, Denny
+      - Metzler, Donald
+      - Chi, Ed H.
+      - Hashimoto, Tatsunori
+      - Vinyals, Oriol
+      - Liang, Percy
+      - Dean, Jeff
+      - Fedus, William
+    type: academic_paper
     year: 2022
-    url: "https://arxiv.org/abs/2206.07682"
-    doi: "10.48550/arXiv.2206.07682"
-    institution: "Google Research"
-
-secondary_sources:
-  - title: "Stanford CRFM HELM Benchmark"
-    type: "benchmark"
+    url: https://arxiv.org/abs/2206.07682
+    doi: 10.48550/arXiv.2206.07682
+    institution: Google Research
+  - title: 'Reinforcement Learning Meets Large Language Models: A Survey of Advancements and Applications Across the LLM Lifecycle'
+    authors:
+      - Keliang Liu
+      - Dingkang Yang
+      - Ziyun Qian
+      - Weijie Yin
+      - Yuchi Wang
+      - Hongsheng Li
+      - Jun Liu
+      - Peng Zhai
+      - Yang Liu
+      - Lihua Zhang
     year: 2025
-    url: "https://crfm.stanford.edu/helm/"
-    institution: "Stanford University"
-  - title: "Scaling Laws for Neural Language Models"
-    authors: ["Kaplan, Jared", "McCandlish, Sam", "Henighan, Tom", "et al."]
-    type: "academic_paper"
+    url: https://arxiv.org/abs/2509.16679v1
+    type: academic_paper
+    institution: arXiv
+  - title: How do language models learn facts? Dynamics, curricula and hallucinations
+    authors:
+      - Nicolas Zucchet
+      - Jörg Bornschein
+      - Stephanie Chan
+      - Andrew Lampinen
+      - Razvan Pascanu
+      - Soham De
+    year: 2025
+    url: https://arxiv.org/abs/2503.21676v2
+    type: academic_paper
+    institution: arXiv
+secondary_sources:
+  - title: Stanford CRFM HELM Benchmark
+    type: benchmark
+    year: 2025
+    url: https://crfm.stanford.edu/helm/
+    institution: Stanford University
+  - title: Scaling Laws for Neural Language Models
+    authors:
+      - Kaplan, Jared
+      - McCandlish, Sam
+      - Henighan, Tom
+      - et al.
+    type: academic_paper
     year: 2020
-    url: "https://arxiv.org/abs/2001.08361"
-    doi: "10.48550/arXiv.2001.08361"
-    institution: "OpenAI"
-
+    url: https://arxiv.org/abs/2001.08361
+    doi: 10.48550/arXiv.2001.08361
+    institution: OpenAI
 ---
+
 
 
 ## TL;DR

@@ -1,12 +1,12 @@
 ---
 id: ai-insurtech
-title: "AI for Insurance: Underwriting, Claims Processing, and Risk Assessment"
+title: 'AI for Insurance: Underwriting, Claims Processing, and Risk Assessment'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,37 +34,50 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-insurtech-1
-    title: "Artificial Intelligence in Insurance: Underwriting Automation, Claims Processing, and Risk Assessment (2024-2025 Comprehensive Survey)"
+    title: 'Artificial Intelligence in Insurance: Underwriting Automation, Claims Processing, and Risk Assessment (2024-2025 Comprehensive Survey)'
     type: academic_paper
     year: 2025
     institution: Journal of Risk and Insurance / arXiv
     url: https://arxiv.org/search/?query=insurance+AI+underwriting+claims+risk
   - id: ps-ai-insurtech-2
-    title: "Computer Vision for Insurance: Property Risk Assessment, Auto Damage Estimation, and Remote Inspection"
+    title: 'Computer Vision for Insurance: Property Risk Assessment, Auto Damage Estimation, and Remote Inspection'
     type: academic_paper
     year: 2025
     institution: CVPR Workshops / arXiv
     url: https://arxiv.org/search/?query=computer+vision+insurance+damage+assessment
+  - title: 'The Data that Drives Cyber Insurance: A Study into the Underwriting and Claims Processes'
+    authors:
+      - Jason R. C. Nurse
+      - Louise Axon
+      - Arnau Erola
+      - Ioannis Agrafiotis
+      - Michael Goldsmith
+      - Sadie Creese
+    year: 2020
+    doi: 10.1109/CyberSA49311.2020.9139703
+    url: https://arxiv.org/abs/2008.04713v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Explainable insurance AI -- regulatory requirement for adverse action explanations
   - Climate change risk modeling integrating extreme weather projections into long-term pricing
 disputed_statements: []
 secondary_sources:
-  - title: "Redefining Insurance Through Technology: Achievements and Perspectives in Insurtech — A Bibliometric and Systematic Review"
+  - title: 'Redefining Insurance Through Technology: Achievements and Perspectives in Insurtech — A Bibliometric and Systematic Review'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: International Review of Financial Analysis (Elsevier)
     url: https://doi.org/10.1016/j.irfa.2024.103441
-  - title: "AI Revolution in Insurance: Bridging Research and Reality — From Underwriting to Claims"
+  - title: 'AI Revolution in Insurance: Bridging Research and Reality — From Underwriting to Claims'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: Frontiers in Artificial Intelligence
     url: https://doi.org/10.3389/frai.2025.1568266
-  - title: "State of AI in Insurance 2025: Underwriting, Claims, Fraud Detection — Deloitte Survey (76% of US insurers using GenAI)"
+  - title: 'State of AI in Insurance 2025: Underwriting, Claims, Fraud Detection — Deloitte Survey (76% of US insurers using GenAI)'
     type: report
     year: 2025
     authors:
@@ -78,8 +91,9 @@ secondary_sources:
       - multiple
     institution: Nature Scientific Reports
     url: https://doi.org/10.1038/s41598-025-12848-0
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI is rewriting insurance -- from Lemonade issuing policies in 90 seconds to computer vision assessing car damage from photos to satellite AI evaluating property risk without inspection. Insurtech AI makes coverage faster, fairer, and more data-driven than traditional actuarial models.
 

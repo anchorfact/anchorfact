@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -23,7 +23,7 @@ atomic_facts:
     source_url: https://dl.acm.org/
     confidence: medium
   - id: fact-computer-science-002
-    statement: "Chomsky hierarchy: Type 3 (regular, regex, DFA/NFA), Type 2 (context-free, programming language syntax), Type 1 (context-sensitive), Type 0 (recursively enumerable, Turing-complete)."
+    statement: 'Chomsky hierarchy: Type 3 (regular, regex, DFA/NFA), Type 2 (context-free, programming language syntax), Type 1 (context-sensitive), Type 0 (recursively enumerable, Turing-complete).'
     source_title: ACM Digital Library
     source_url: https://dl.acm.org/
     confidence: medium
@@ -49,13 +49,35 @@ primary_sources:
       - Ullman J.D.
     institution: Pearson
     url: https://www.pearson.com/automata/
-  - title: "Formal Methods and Verification: A 2025 Survey of Industrial Practice"
+  - title: 'Formal Methods and Verification: A 2025 Survey of Industrial Practice'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.formal
+  - title: 'Variational Approach to Quantum Field Theory: Gaussian Approximation and the Perturbative Expansion around It'
+    authors:
+      - Jae Hyung Yee
+    year: 1997
+    url: https://arxiv.org/abs/hep-th/9707234v2
+    type: academic_paper
+    institution: arXiv
+  - title: The Great Inequality In A Hamiltonian Planetary Theory
+    authors:
+      - F. Varadi
+      - M. Ghil
+      - W. M. Kaula
+      - Keywords
+      - ':'
+      - Hamiltonian systems
+      - planetary motion
+      - perturbation theory
+      - resonances
+    year: 1993
+    url: https://arxiv.org/abs/chao-dyn/9311011v2
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: ACM Digital Library
     type: repository
@@ -72,14 +94,14 @@ secondary_sources:
     year: 1996
     url: https://mitpress.mit.edu/sites/default/files/sicp/
     institution: MIT Press
-  - title: "Automata Theory and Formal Languages: Modern Applications in Verification and AI (2025)"
+  - title: 'Automata Theory and Formal Languages: Modern Applications in Verification and AI (2025)'
     type: article
     year: 2025
     authors:
       - multiple
     institution: Springer LNCS
     url: https://doi.org/10.1007/lncs.2025.automata
-  - title: "Formal Methods in Software Engineering: A 2025 Survey of Industrial Adoption"
+  - title: 'Formal Methods in Software Engineering: A 2025 Survey of Industrial Adoption'
     type: survey_paper
     year: 2025
     authors:
@@ -87,6 +109,7 @@ secondary_sources:
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.formal
 ---
+
 ## TL;DR
 
 Automata theory studies abstract machines and the problems they can solve. Finite automata (regular languages) → Pushdown automata (context-free) → Turing machines (computable). Powers: regular expressions, parsers, compilers, and the theoretical limits of computation.

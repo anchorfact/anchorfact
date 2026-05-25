@@ -1,12 +1,12 @@
 ---
 id: ai-inventory-management
-title: "AI for Inventory Management: Demand Forecasting, Stock Optimization, and Automated Replenishment"
+title: 'AI for Inventory Management: Demand Forecasting, Stock Optimization, and Automated Replenishment'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,17 +34,33 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-inventory-management-1
-    title: "Machine Learning for Inventory Management: Demand Forecasting, Safety Stock Optimization, and Automated Replenishment (2024-2025 Comprehensive Survey)"
+    title: 'Machine Learning for Inventory Management: Demand Forecasting, Safety Stock Optimization, and Automated Replenishment (2024-2025 Comprehensive Survey)'
     type: academic_paper
     year: 2025
     institution: European Journal of Operational Research / Manufacturing & Service Operations Management / arXiv
     url: https://arxiv.org/search/?query=inventory+management+machine+learning+demand+forecasting
   - id: ps-ai-inventory-management-2
-    title: "Deep Probabilistic Forecasting for Retail Demand: DeepAR, TFT, and N-BEATS Applied to Inventory Optimization"
+    title: 'Deep Probabilistic Forecasting for Retail Demand: DeepAR, TFT, and N-BEATS Applied to Inventory Optimization'
     type: academic_paper
     year: 2025
     institution: arXiv / Amazon Research / INFORMS
     url: https://arxiv.org/search/?query=DeepAR+demand+forecasting+inventory
+  - title: Inventory Management with Partially Observed Nonstationary Demand
+    authors:
+      - Erhan Bayraktar
+      - Mike Ludkovski
+    year: 2012
+    url: https://arxiv.org/abs/1206.6283v1
+    type: academic_paper
+    institution: arXiv
+  - title: Splitting hybrid Make-To-Order and Make-To-Stock demand profiles
+    authors:
+      - Wolfgang Garn
+      - James Aitken
+    year: 2015
+    url: https://arxiv.org/abs/1504.03594v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Causal demand forecasting -- distinguishing demand shifts from promotional lifts
   - Multi-echelon inventory optimization (supplier -> warehouse -> store) under uncertainty
@@ -57,7 +73,7 @@ secondary_sources:
       - multiple
     institution: AIP Conference Proceedings
     url: https://doi.org/10.1063/5.0158934
-  - title: "New-Generation AI-Driven Intelligent Decision-Making and Inventory Optimization: Combining LSTM and Q-Learning"
+  - title: 'New-Generation AI-Driven Intelligent Decision-Making and Inventory Optimization: Combining LSTM and Q-Learning'
     type: journal_article
     year: 2025
     authors:
@@ -71,15 +87,16 @@ secondary_sources:
       - multiple
     institution: Sensors (MDPI)
     url: https://doi.org/10.3390/s25082428
-  - title: "Walmart Case Study: AI-Enabled Demand Forecasting and Inventory Management at Scale"
+  - title: 'Walmart Case Study: AI-Enabled Demand Forecasting and Inventory Management at Scale'
     type: report
     year: 2025
     authors:
       - TSG Strategy Research
     institution: TSG Strategy / Walmart
     url: https://www.tsgstrategy.com/casestudy/walmart
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI inventory management ensures the right products are in the right place at the right time -- predicting demand at day-level, automatically reordering before stockouts, and optimizing safety stock across millions of SKUs. The result: 30% fewer out-of-stocks, 20% lower inventory costs.
 

@@ -1,12 +1,12 @@
 ---
 id: ai-drug-repurposing
-title: "AI for Drug Repurposing: Identifying New Uses for Existing Drugs Through Machine Learning"
+title: 'AI for Drug Repurposing: Identifying New Uses for Existing Drugs Through Machine Learning'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,17 +34,34 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-drug-repurposing-1
-    title: "Machine Learning for Drug Repurposing: Knowledge Graph Approaches, Transcriptomic Signatures, and Clinical Validation (2024-2025 Survey)"
+    title: 'Machine Learning for Drug Repurposing: Knowledge Graph Approaches, Transcriptomic Signatures, and Clinical Validation (2024-2025 Survey)'
     type: academic_paper
     year: 2025
     institution: Nature Reviews Drug Discovery / Briefings in Bioinformatics / arXiv
     url: https://arxiv.org/search/?query=drug+repurposing+machine+learning+knowledge+graph
   - id: ps-ai-drug-repurposing-2
-    title: "AI-Driven Drug Repositioning: From Computational Predictions to Clinical Trials (BenevolentAI, Healx case studies)"
+    title: 'AI-Driven Drug Repositioning: From Computational Predictions to Clinical Trials (BenevolentAI, Healx case studies)'
     type: academic_paper
     year: 2025
     institution: The Lancet Digital Health / Nature Medicine / arXiv
     url: https://arxiv.org/search/?query=AI+drug+repositioning+clinical+trial
+  - title: An in silico drug repurposing pipeline to identify drugs with the potential to inhibit SARS-CoV-2 replication
+    authors:
+      - Méabh MacMahon
+      - Woochang Hwang
+      - Soorin Yim
+      - Eoghan MacMahon
+      - Alexandre Abraham
+      - Justin Barton
+      - Mukunthan Tharmakulasingam
+      - Paul Bilokon
+      - Vasanthi Priyadarshini Gaddi
+      - Namshik Han
+    year: 2021
+    doi: 10.1016/j.imu.2023.101387
+    url: https://arxiv.org/abs/2107.02905v2
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Prospective clinical validation of AI-repurposed drugs (retrospective vs prospective gap)
   - Regulatory approval pathways for AI-discovered drug repurposing indications
@@ -69,22 +86,23 @@ secondary_sources:
       - multiple
     institution: Nature Computational Science
     url: https://doi.org/10.1038/s43588-024-00679-4
-  - title: "AI-Driven Drug Repurposing: Applications and Opportunities"
+  - title: 'AI-Driven Drug Repurposing: Applications and Opportunities'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: Medicines (MDPI)
     url: https://doi.org/10.3390/medicines12040028
-  - title: "Combining Deep Learning Models for Improved Drug Repurposing: A Comparative Study"
+  - title: 'Combining Deep Learning Models for Improved Drug Repurposing: A Comparative Study'
     type: conference_paper
     year: 2024
     authors:
       - multiple
     institution: IEEE Access / ISIVC
     url: https://doi.org/10.1109/ISIVC61350.2024.10544998
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI drug repurposing finds new uses for existing drugs -- identifying that a rheumatoid arthritis drug could treat COVID-19, or that an old antidepressant might work for a rare disease. Knowledge graphs and transcriptomic ML slash drug discovery timelines from 10+ years to months.
 

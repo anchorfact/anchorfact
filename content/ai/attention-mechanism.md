@@ -1,76 +1,100 @@
 ---
-id: "kb-2026-00002"
-title: "Attention Mechanism"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "human_only"
-conflict_of_interest: "none_declared"
+id: kb-2026-00002
+title: Attention Mechanism
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
+generation_method: human_only
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-ai-01"
-    statement: "The Bahdanau paper has been cited over 40,000 times on Google Scholar , making it one of the most influential papers in NLP"
-    source_title: "Neural Machine Translation by Jointly Learning to Align and Translate"
-    source_url: "https://arxiv.org/abs/1409.0473"
-    source_doi: "10.48550/arXiv.1409.0473"
-    confidence: "high"
-  - id: "fact-ai-02"
-    statement: "The attention mechanism allows neural networks to dynamically focus on the most relevant parts of input data when producing each output"
-    source_title: "Effective Approaches to Attention-based Neural Machine Translation"
-    source_url: "https://arxiv.org/abs/1508.04025"
-    source_doi: "10.48550/arXiv.1508.04025"
-    confidence: "high"
-  - id: "fact-ai-03"
-    statement: "Introduced by Bahdanau et al"
-    source_title: "Neural Machine Translation by Jointly Learning to Align and Translate"
-    source_url: "https://arxiv.org/abs/1409.0473"
-    source_doi: "10.48550/arXiv.1409.0473"
-    confidence: "high"
-
+  - id: fact-ai-01
+    statement: The Bahdanau paper has been cited over 40,000 times on Google Scholar , making it one of the most influential papers in NLP
+    source_title: Neural Machine Translation by Jointly Learning to Align and Translate
+    source_url: https://arxiv.org/abs/1409.0473
+    source_doi: 10.48550/arXiv.1409.0473
+    confidence: high
+  - id: fact-ai-02
+    statement: The attention mechanism allows neural networks to dynamically focus on the most relevant parts of input data when producing each output
+    source_title: Effective Approaches to Attention-based Neural Machine Translation
+    source_url: https://arxiv.org/abs/1508.04025
+    source_doi: 10.48550/arXiv.1508.04025
+    confidence: high
+  - id: fact-ai-03
+    statement: Introduced by Bahdanau et al
+    source_title: Neural Machine Translation by Jointly Learning to Align and Translate
+    source_url: https://arxiv.org/abs/1409.0473
+    source_doi: 10.48550/arXiv.1409.0473
+    confidence: high
 completeness: 0.92
-
 known_gaps:
-  - "Exact citation count for Bahdanau (2014) varies across databases (Semantic Scholar vs. Google Scholar); approximate ranges used"
-
+  - Exact citation count for Bahdanau (2014) varies across databases (Semantic Scholar vs. Google Scholar); approximate ranges used
 disputed_statements:
-  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
-
+  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
 primary_sources:
-  - title: "Neural Machine Translation by Jointly Learning to Align and Translate"
-    authors: ["Bahdanau, Dzmitry", "Cho, Kyunghyun", "Bengio, Yoshua"]
-    type: "academic_paper"
+  - title: Neural Machine Translation by Jointly Learning to Align and Translate
+    authors:
+      - Bahdanau, Dzmitry
+      - Cho, Kyunghyun
+      - Bengio, Yoshua
+    type: academic_paper
     year: 2014
-    url: "https://arxiv.org/abs/1409.0473"
-    doi: "10.48550/arXiv.1409.0473"
-    institution: "Université de Montréal / Jacobs University"
-  - title: "Effective Approaches to Attention-based Neural Machine Translation"
-    authors: ["Luong, Minh-Thang", "Pham, Hieu", "Manning, Christopher D."]
-    type: "academic_paper"
+    url: https://arxiv.org/abs/1409.0473
+    doi: 10.48550/arXiv.1409.0473
+    institution: Université de Montréal / Jacobs University
+  - title: Effective Approaches to Attention-based Neural Machine Translation
+    authors:
+      - Luong, Minh-Thang
+      - Pham, Hieu
+      - Manning, Christopher D.
+    type: academic_paper
     year: 2015
-    url: "https://arxiv.org/abs/1508.04025"
-    doi: "10.48550/arXiv.1508.04025"
-    institution: "Stanford University"
-
+    url: https://arxiv.org/abs/1508.04025
+    doi: 10.48550/arXiv.1508.04025
+    institution: Stanford University
+  - title: Synthesis of Mechanism for single- and hybrid-tasks using Differential Evolution
+    authors:
+      - F. Penunuri
+      - R. Peon-Escalante
+      - C. Villanueva
+      - D. Pech-Oy
+    year: 2011
+    url: https://arxiv.org/abs/1102.2017v2
+    type: academic_paper
+    institution: arXiv
+  - title: Synthesis of Spherical 4R Mechanism for Path Generation using Differential Evolution
+    authors:
+      - F. Penunuri
+      - R. Peon-Escalante
+      - C. Villanueva
+      - Carlos A. Cruz-Villar
+    year: 2011
+    doi: 10.1016/j.mechmachtheory.2012.07.003
+    url: https://arxiv.org/abs/1112.2954v2
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
-  - title: "Sequence to Sequence Learning with Neural Networks"
-    authors: ["Sutskever, Ilya", "Vinyals, Oriol", "Le, Quoc V."]
-    type: "academic_paper"
+  - title: Sequence to Sequence Learning with Neural Networks
+    authors:
+      - Sutskever, Ilya
+      - Vinyals, Oriol
+      - Le, Quoc V.
+    type: academic_paper
     year: 2014
-    url: "https://arxiv.org/abs/1409.3215"
-    doi: "10.48550/arXiv.1409.3215"
-    institution: "Google"
-  - title: "CS224n: NLP with Deep Learning — Lecture 8 (Attention)"
-    type: "course_material"
+    url: https://arxiv.org/abs/1409.3215
+    doi: 10.48550/arXiv.1409.3215
+    institution: Google
+  - title: 'CS224n: NLP with Deep Learning — Lecture 8 (Attention)'
+    type: course_material
     year: 2024
-    url: "https://web.stanford.edu/class/cs224n/"
-    institution: "Stanford University"
-
+    url: https://web.stanford.edu/class/cs224n/
+    institution: Stanford University
 ---
+
 
 
 ## TL;DR

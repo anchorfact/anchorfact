@@ -1,12 +1,12 @@
 ---
 id: ai-code-translation
-title: "AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation"
+title: 'AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,17 +34,29 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-code-translation-1
-    title: "AI-Powered Code Translation and Legacy Modernization: LLM-Based Transpilation (2024-2025 Survey)"
+    title: 'AI-Powered Code Translation and Legacy Modernization: LLM-Based Transpilation (2024-2025 Survey)'
     type: academic_paper
     year: 2025
     institution: ICSE / FSE / arXiv
     url: https://arxiv.org/search/?query=code+translation+LLM+legacy+modernization
   - id: ps-ai-code-translation-2
-    title: "Large Language Models for Program Translation: COBOL-to-Java, Python-to-C++, and Multi-Language Transpilation"
+    title: 'Large Language Models for Program Translation: COBOL-to-Java, Python-to-C++, and Multi-Language Transpilation'
     type: academic_paper
     year: 2025
     institution: NeurIPS / OOPSLA / arXiv
     url: https://arxiv.org/search/?query=LLM+program+translation+transpilation
+  - title: Enhancing Code Translation in Language Models with Few-Shot Learning via Retrieval-Augmented Generation
+    authors:
+      - Manish Bhattarai
+      - Javier E. Santos
+      - Shawn Jones
+      - Ayan Biswas
+      - Boian Alexandrov
+      - Daniel O'Malley
+    year: 2024
+    url: https://arxiv.org/abs/2407.19619v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Verification of equivalence -- proving translated code behaves identically to original
   - AI-driven architectural decisions during migration (monolith decomposition strategy)
@@ -59,7 +71,7 @@ secondary_sources:
       - et al.
     institution: arXiv (57 primary studies, 2020-2025)
     url: https://arxiv.org/abs/2505.07425
-  - title: "Generative AI for Code Translation: A Systematic Mapping Study"
+  - title: 'Generative AI for Code Translation: A Systematic Mapping Study'
     type: survey_paper
     year: 2025
     authors:
@@ -85,8 +97,9 @@ secondary_sources:
       - et al.
     institution: Meta AI / Nature
     url: https://www.nature.com/articles/s41586-024-07335-x
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI translates code between languages -- from modernizing billion-line COBOL banking systems to converting Python to Rust. LLM-based code translation attacks the $50B+ legacy modernization market, compressing migration timelines from years to months while maintaining functional equivalence.
 

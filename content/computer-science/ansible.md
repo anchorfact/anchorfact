@@ -62,6 +62,24 @@ primary_sources:
     type: book
     year: 2022
     institution: O'Reilly Media
+  - title: 'Quantum Ansible: Telegraph by Cloning a Known Pure State'
+    authors:
+      - N. Nikitin
+      - K. Toms
+    year: 2019
+    url: https://arxiv.org/abs/1911.10001v1
+    type: academic_paper
+    institution: arXiv
+  - title: 'Security Smells in Ansible and Chef Scripts: A Replication Study'
+    authors:
+      - Akond Rahman
+      - Md. Rayhanur Rahman
+      - Chris Parnin
+      - Laurie Williams
+    year: 2019
+    url: https://arxiv.org/abs/1907.07159v2
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: 'Ansible: Up and Running (3rd Ed)'
     authors:
@@ -82,6 +100,7 @@ secondary_sources:
     url: https://mitpress.mit.edu/sites/default/files/sicp/
     institution: MIT Press
 ---
+
 
 ## TL;DR
 

@@ -1,12 +1,12 @@
 ---
 id: model-compression
-title: "Model Compression: Pruning, Quantization, and Distillation"
+title: 'Model Compression: Pruning, Quantization, and Distillation'
 schema_type: TechArticle
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -48,13 +48,22 @@ primary_sources:
     year: 2021
     url: https://arxiv.org/abs/2106.08295
     institution: JMLR
-  - title: "The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks"
+  - title: 'The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks'
     type: academic_paper
     year: 2019
     url: https://arxiv.org/abs/1803.03635
     institution: ICLR
+  - title: 'UniComp: A Unified Evaluation of Large Language Model Compression via Pruning, Quantization and Distillation'
+    authors:
+      - Jonathan von Rad
+      - Yong Cao
+      - Andreas Geiger
+    year: 2026
+    url: https://arxiv.org/abs/2602.09130v4
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
-  - title: "Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding"
+  - title: 'Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding'
     type: conference_paper
     year: 2016
     authors:
@@ -79,7 +88,7 @@ secondary_sources:
       - Dean, Jeff
     institution: Google / NeurIPS Workshop
     url: https://arxiv.org/abs/1503.02531
-  - title: "The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks"
+  - title: 'The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks'
     type: conference_paper
     year: 2019
     authors:
@@ -87,8 +96,9 @@ secondary_sources:
       - Carbin, Michael
     institution: MIT / ICLR Best Paper
     url: https://arxiv.org/abs/1803.03635
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Model compression reduces inference cost for deployment on resource-constrained devices. The three pillars — pruning, quantization, and distillation — can be combined for 10x+ compression with minimal accuracy loss.
 

@@ -1,12 +1,12 @@
 ---
 id: ai-digital-marketing
-title: "AI for Digital Marketing: Personalization, Campaign Optimization, and Customer Analytics"
+title: 'AI for Digital Marketing: Personalization, Campaign Optimization, and Customer Analytics'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -35,37 +35,46 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-digital-marketing-1
-    title: "AI in Digital Marketing: Personalization, Campaign Optimization, and Customer Lifetime Value Prediction (2024-2025 Comprehensive Survey)"
+    title: 'AI in Digital Marketing: Personalization, Campaign Optimization, and Customer Lifetime Value Prediction (2024-2025 Comprehensive Survey)'
     type: academic_paper
     year: 2025
     institution: arXiv / ACM RecSys / KDD
     url: https://arxiv.org/search/?query=digital+marketing+AI+personalization
   - id: ps-ai-digital-marketing-2
-    title: "Contextual Multi-Armed Bandits for Real-Time Marketing Optimization: Algorithms, Theory, and Practice"
+    title: 'Contextual Multi-Armed Bandits for Real-Time Marketing Optimization: Algorithms, Theory, and Practice'
     type: academic_paper
     year: 2025
     institution: arXiv / Journal of Marketing Research
     url: https://arxiv.org/search/?query=contextual+bandit+marketing
+  - title: Boosting Retailer Revenue by Generated Optimized Combined Multiple Digital Marketing Campaigns
+    authors:
+      - Yafei Xu
+      - Tian Xie
+      - Yu Zhang
+    year: 2020
+    url: https://arxiv.org/abs/2009.08949v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Causal marketing attribution -- measuring incremental impact of each channel
   - Privacy-preserving personalization in the post-cookie era
 disputed_statements: []
 secondary_sources:
-  - title: "Artificial Intelligence in Digital Marketing: Insights from a Comprehensive Bibliometric Review"
+  - title: 'Artificial Intelligence in Digital Marketing: Insights from a Comprehensive Bibliometric Review'
     type: survey_paper
     year: 2023
     authors:
       - multiple
     institution: Information (MDPI)
     url: https://doi.org/10.3390/info14120664
-  - title: "Targeted and Personalized Online Advertising in the Age of AI: A Literature Review and Research Agenda"
+  - title: 'Targeted and Personalized Online Advertising in the Age of AI: A Literature Review and Research Agenda'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: Journal of Advertising Research (ResearchGate)
     url: https://doi.org/10.2501/JAR-2024-032
-  - title: "Martech for 2025: AI Use Cases, Stack Foundations, and Market Structure (108-page Report)"
+  - title: 'Martech for 2025: AI Use Cases, Stack Foundations, and Market Structure (108-page Report)'
     type: report
     year: 2024
     authors:
@@ -73,7 +82,7 @@ secondary_sources:
       - et al.
     institution: Chief Marketing Technologist / Martech
     url: https://chiefmartec.com/2024/12/martech-for-2025/
-  - title: "Personalization Done Right (BCG Survey: 80%+ Consumers Expect Personalized Experiences)"
+  - title: 'Personalization Done Right (BCG Survey: 80%+ Consumers Expect Personalized Experiences)'
     type: journal_article
     year: 2024
     authors:
@@ -82,8 +91,9 @@ secondary_sources:
       - et al.
     institution: Harvard Business Review
     url: https://hbr.org/2024/11/personalization-done-right
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI is the silent force behind every personalized ad, recommended product, and optimized marketing email. From contextual bandits selecting the best offer in real-time to LLMs generating ad copy to deep learning predicting which customers will churn, AI transforms marketing from mass broadcast to one-to-one personalization.
 

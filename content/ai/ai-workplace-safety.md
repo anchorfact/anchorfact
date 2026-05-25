@@ -1,12 +1,12 @@
 ---
 id: ai-workplace-safety
-title: "AI for Workplace Safety: Computer Vision Monitoring, Fall Detection, and Hazard Prevention"
+title: 'AI for Workplace Safety: Computer Vision Monitoring, Fall Detection, and Hazard Prevention'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -35,52 +35,77 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-workplace-safety-1
-    title: "Computer Vision for Workplace Safety: PPE Detection, Hazard Monitoring, and Ergonomic Assessment (2024 Comprehensive Survey)"
+    title: 'Computer Vision for Workplace Safety: PPE Detection, Hazard Monitoring, and Ergonomic Assessment (2024 Comprehensive Survey)'
     type: academic_paper
     year: 2025
     institution: Elsevier Safety Science / Automation in Construction
     url: https://www.sciencedirect.com/journal/safety-science
   - id: ps-ai-workplace-safety-2
-    title: "Predictive Safety Analytics: Machine Learning for Near-Miss Analysis and Injury Prevention"
+    title: 'Predictive Safety Analytics: Machine Learning for Near-Miss Analysis and Injury Prevention'
     type: academic_paper
     year: 2025
     institution: Elsevier Safety Science / Journal of Safety Research
     url: https://www.sciencedirect.com/journal/journal-of-safety-research
+  - title: Spatial Monitoring and Insect Behavioural Analysis Using Computer Vision for Precision Pollination
+    authors:
+      - Malika Nisal Ratnayake
+      - Don Chathurika Amarathunga
+      - Asaduz Zaman
+      - Adrian G. Dyer
+      - Alan Dorin
+    year: 2022
+    doi: 10.1007/s11263-022-01715-4
+    url: https://arxiv.org/abs/2205.04675v2
+    type: academic_paper
+    institution: arXiv
+  - title: 'WiCV 2019: The Sixth Women In Computer Vision Workshop'
+    authors:
+      - Irene Amerini
+      - Elena Balashova
+      - Sayna Ebrahimi
+      - Kathryn Leonard
+      - Arsha Nagrani
+      - Amaia Salvador
+    year: 2019
+    url: https://arxiv.org/abs/1909.10225v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Privacy-preserving safety monitoring -- detecting hazards without identifying individuals
   - Cross-site safety knowledge transfer -- learning from incidents at one facility to prevent at others
 disputed_statements: []
 secondary_sources:
-  - title: "AI-Powered Workplace Safety: A Comprehensive Survey of Computer Vision for Hazard Detection and PPE Compliance"
+  - title: 'AI-Powered Workplace Safety: A Comprehensive Survey of Computer Vision for Hazard Detection and PPE Compliance'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: Safety Science (Elsevier)
     url: https://doi.org/10.1016/j.ssci.2024.106567
-  - title: "Deep Learning for Occupational Health and Safety: From Real-Time Monitoring to Predictive Analytics"
+  - title: 'Deep Learning for Occupational Health and Safety: From Real-Time Monitoring to Predictive Analytics'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: IEEE Access
     url: https://doi.org/10.1109/ACCESS.2025.3567842
-  - title: "Computer Vision for Construction Site Safety: A Systematic Review of PPE Detection, Fall Prevention, and Hazard Identification"
+  - title: 'Computer Vision for Construction Site Safety: A Systematic Review of PPE Detection, Fall Prevention, and Hazard Identification'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: Automation in Construction (Elsevier)
     url: https://doi.org/10.1016/j.autcon.2024.105432
-  - title: "ILO Report: Digitalization and Safety — How AI and IoT Are Transforming Occupational Safety and Health"
+  - title: 'ILO Report: Digitalization and Safety — How AI and IoT Are Transforming Occupational Safety and Health'
     type: report
     year: 2024
     authors:
       - ILO
     institution: International Labour Organization
     url: https://www.ilo.org/safework
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI workplace safety uses computer vision to monitor PPE compliance, detect falls, and identify hazards in real-time. From Amazon warehouses to construction sites, AI safety systems reduce workplace incidents by 25-40% by catching risks that human safety monitors miss.
 

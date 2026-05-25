@@ -1,12 +1,12 @@
 ---
 id: ai-search-recommendation
-title: "AI for Search and Recommendation: Semantic Search, Collaborative Filtering, and Personalization Engines"
+title: 'AI for Search and Recommendation: Semantic Search, Collaborative Filtering, and Personalization Engines'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,17 +34,40 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-search-recommendation-1
-    title: "Deep Learning for Search and Recommendation: Dense Retrieval, Two-Tower Models, and LLM-Based Ranking (2024-2025 Comprehensive Survey)"
+    title: 'Deep Learning for Search and Recommendation: Dense Retrieval, Two-Tower Models, and LLM-Based Ranking (2024-2025 Comprehensive Survey)'
     type: academic_paper
     year: 2025
     institution: SIGIR / RecSys / KDD / arXiv
     url: https://arxiv.org/search/?query=dense+retrieval+recommendation+two+tower+survey
   - id: ps-ai-search-recommendation-2
-    title: "Large Language Models for Information Retrieval and Recommendation: Conversational Search and Generative Ranking"
+    title: 'Large Language Models for Information Retrieval and Recommendation: Conversational Search and Generative Ranking'
     type: academic_paper
     year: 2025
     institution: ECIR / SIGIR / arXiv
     url: https://arxiv.org/search/?query=LLM+search+ranking+recommendation
+  - title: Health System Scale Semantic Search Across Unstructured Clinical Notes
+    authors:
+      - Faith Wavinya Mutinda
+      - Spandana Makeneni
+      - Anna Lin
+      - Shivaji Dutta
+      - Irit R. Rasooly
+      - Patrick Dibussolo
+      - Shivani Kamath Belman
+      - Hessam Shahriari
+      - Kevin Murphy
+      - Alex B. Ruan
+      - Barbara H. Chaiyachati
+      - Sanjay Chainani
+      - Robert W. Grundmeier
+      - Scott M. Haag
+      - Jeffrey M. Miller
+      - Heather M. Griffis
+      - Ian M. Campbell
+    year: 2026
+    url: https://arxiv.org/abs/2604.25605v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Cold-start and serendipity -- recommending novel items beyond the filter bubble
   - Federated and privacy-preserving personalization without centralizing user data
@@ -68,29 +91,30 @@ secondary_sources:
       - Chen, Enhong
     institution: arXiv / World Wide Web Journal
     url: https://arxiv.org/abs/2305.19860
-  - title: "A Comprehensive Survey on LLM-Powered Recommender Systems: Discriminative, Generative, and Hybrid Approaches"
+  - title: 'A Comprehensive Survey on LLM-Powered Recommender Systems: Discriminative, Generative, and Hybrid Approaches'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: IEEE Access
     url: https://doi.org/10.1109/ACCESS.2025.3567842
-  - title: "In-Depth Survey: Deep Learning in Recommender Systems — From Collaborative Filtering to Neural Architectures"
+  - title: 'In-Depth Survey: Deep Learning in Recommender Systems — From Collaborative Filtering to Neural Architectures'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: Neural Computing & Applications (Springer)
     url: https://doi.org/10.1007/s00521-024-10866-z
-  - title: "Generative Recommender Systems: A Comprehensive Survey on LLM and Diffusion Model Integration"
+  - title: 'Generative Recommender Systems: A Comprehensive Survey on LLM and Diffusion Model Integration'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: Information Fusion (Elsevier)
     url: https://doi.org/10.1016/j.inffus.2025.102981
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI search and recommendation power the discovery engine of the internet -- from Google's semantic understanding to TikTok's uncannily accurate For You page to Amazon's product recommendations. Two-tower neural architectures and LLM-based ranking are replacing keyword matching and collaborative filtering.
 

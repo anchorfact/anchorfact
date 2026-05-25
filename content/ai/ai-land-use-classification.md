@@ -1,12 +1,12 @@
 ---
 id: ai-land-use-classification
-title: "AI for Land Use Classification: Satellite Image Segmentation, Urban Expansion Mapping, and Agricultural Monitoring"
+title: 'AI for Land Use Classification: Satellite Image Segmentation, Urban Expansion Mapping, and Agricultural Monitoring'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,44 +34,51 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-land-use-classification-1
-    title: "Deep Learning for Land Use and Land Cover Classification from Satellite Imagery: A Comprehensive Survey (2024-2025)"
+    title: 'Deep Learning for Land Use and Land Cover Classification from Satellite Imagery: A Comprehensive Survey (2024-2025)'
     type: academic_paper
     year: 2025
     institution: Remote Sensing of Environment / ISPRS Journal / arXiv
     url: https://arxiv.org/search/?query=land+use+classification+deep+learning+satellite
   - id: ps-ai-land-use-classification-2
-    title: "Change Detection in Remote Sensing: Siamese Networks, Transformers, and Foundation Models for Urban Expansion Monitoring"
+    title: 'Change Detection in Remote Sensing: Siamese Networks, Transformers, and Foundation Models for Urban Expansion Monitoring'
     type: academic_paper
     year: 2025
     institution: IEEE TGRS / Remote Sensing / arXiv
     url: https://arxiv.org/search/?query=change+detection+satellite+urban+expansion
+  - title: 'Balanced Multi-Task Attention for Satellite Image Classification: A Systematic Approach to Achieving 97.23% Accuracy on EuroSAT Without Pre-Training'
+    authors:
+      - Aditya Vir
+    year: 2025
+    url: https://arxiv.org/abs/2510.15527v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Sub-meter land use classification at continental scale
   - Temporal consistency -- eliminating classification flicker between annual maps
 disputed_statements: []
 secondary_sources:
-  - title: "Deep Learning for Land Use and Land Cover Classification: A Comprehensive Survey from CNNs to Transformers"
+  - title: 'Deep Learning for Land Use and Land Cover Classification: A Comprehensive Survey from CNNs to Transformers'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: IEEE Geoscience & Remote Sensing Magazine
     url: https://doi.org/10.1109/MGRS.2024.3385267
-  - title: "Remote Sensing Image Scene Classification: Advances, Challenges, and Benchmarks (2006-2024)"
+  - title: 'Remote Sensing Image Scene Classification: Advances, Challenges, and Benchmarks (2006-2024)'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: ISPRS Journal of Photogrammetry (Elsevier)
     url: https://doi.org/10.1016/j.isprsjprs.2024.04.012
-  - title: "AI in Remote Sensing and Satellite Image Processing: A Comprehensive Review"
+  - title: 'AI in Remote Sensing and Satellite Image Processing: A Comprehensive Review'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: Environmental Earth Sciences (Springer)
     url: https://doi.org/10.1007/s12665-025-12798-w
-  - title: "Google Earth Engine: Planetary-Scale Geospatial Analysis for Everyone"
+  - title: 'Google Earth Engine: Planetary-Scale Geospatial Analysis for Everyone'
     type: journal_article
     year: 2017
     authors:
@@ -83,8 +90,9 @@ secondary_sources:
       - Moore, Rebecca
     institution: Google / Remote Sensing of Environment
     url: https://doi.org/10.1016/j.rse.2017.06.031
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI classifies every pixel of Earth -- mapping forests, cities, cropland, and water at 10m resolution, updated annually. From ESA's WorldCover global map to Google's near-real-time Dynamic World, deep learning on satellite imagery gives humanity an unprecedented view of how our planet is changing.
 

@@ -72,6 +72,25 @@ primary_sources:
     year: 2010
     doi: 10.3115/1866696.1866709
     institution: Foundations and Trends in IR
+  - title: 'Evaluating Generative Models for Tabular Data: Novel Metrics and Benchmarking'
+    authors:
+      - Dayananda Herurkar
+      - Ahmad Ali
+      - Andreas Dengel
+    year: 2025
+    url: https://arxiv.org/abs/2504.20900v1
+    type: academic_paper
+    institution: arXiv
+  - title: Evaluation of Software Product Quality Metrics
+    authors:
+      - Arthur-Jozsef Molnar
+      - Alexandra Neamţu
+      - Simona Motogna
+    year: 2020
+    doi: 10.1007/978-3-030-40223-5_8
+    url: https://arxiv.org/abs/2009.01557v1
+    type: academic_paper
+    institution: arXiv
 schema_type: TechArticle
 secondary_sources:
   - authors:
@@ -108,6 +127,7 @@ secondary_sources:
 title: Model Evaluation Metrics
 updated: '2026-05-24'
 ---
+
 
 ## TL;DR
 

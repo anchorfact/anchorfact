@@ -1,12 +1,12 @@
 ---
 id: ai-satellite-imagery
-title: "AI for Satellite Imagery: Object Detection, Change Detection, and Global Monitoring"
+title: 'AI for Satellite Imagery: Object Detection, Change Detection, and Global Monitoring'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,30 +34,40 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-satellite-imagery-1
-    title: "Deep Learning for Satellite Imagery Analysis: Object Detection, Change Detection, and Foundation Models (2024-2025 Comprehensive Survey)"
+    title: 'Deep Learning for Satellite Imagery Analysis: Object Detection, Change Detection, and Foundation Models (2024-2025 Comprehensive Survey)'
     type: academic_paper
     year: 2025
     institution: IEEE TGRS / Remote Sensing of Environment / arXiv
     url: https://arxiv.org/search/?query=satellite+object+detection+foundation+model
   - id: ps-ai-satellite-imagery-2
-    title: "Geospatial Foundation Models: Prithvi, Clay, and the Future of Few-Shot Earth Observation AI"
+    title: 'Geospatial Foundation Models: Prithvi, Clay, and the Future of Few-Shot Earth Observation AI'
     type: academic_paper
     year: 2025
     institution: Nature Machine Intelligence / arXiv
     url: https://arxiv.org/search/?query=geospatial+foundation+model+satellite
+  - title: A Comparison of Deep Learning Object Detection Models for Satellite Imagery
+    authors:
+      - Austen Groener
+      - Gary Chern
+      - Mark Pritt
+    year: 2020
+    doi: 10.1109/AIPR47015.2019.9174593
+    url: https://arxiv.org/abs/2009.04857v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Fusion of satellite imagery with ground sensor data for multi-modal monitoring
   - Real-time satellite alerting for time-critical events (disasters, conflicts)
 disputed_statements: []
 secondary_sources:
-  - title: "Advancing Earth Observation: A Survey on AI-Powered Satellite Image Processing"
+  - title: 'Advancing Earth Observation: A Survey on AI-Powered Satellite Image Processing'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: European Journal of Remote Sensing (Taylor & Francis)
     url: https://doi.org/10.1080/22797254.2025.2567921
-  - title: "AI in Remote Sensing and Satellite Image Processing: A Comprehensive Review"
+  - title: 'AI in Remote Sensing and Satellite Image Processing: A Comprehensive Review'
     type: survey_paper
     year: 2025
     authors:
@@ -71,15 +81,16 @@ secondary_sources:
       - multiple
     institution: Advances in Space Research (Elsevier)
     url: https://doi.org/10.1016/j.asr.2024.09.022
-  - title: "Satellite Image Deep Learning Techniques: An Exhaustive Overview (GitHub Community)"
+  - title: 'Satellite Image Deep Learning Techniques: An Exhaustive Overview (GitHub Community)'
     type: survey_paper
     year: 2024
     authors:
       - satellite-image-deep-learning Community
     institution: GitHub / arXiv
     url: https://github.com/satellite-image-deep-learning/techniques
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI sees the planet from space -- counting ships at sea, detecting new construction, monitoring crop health, and mapping humanitarian crises. From NASA's open-source Prithvi model to commercial geospatial intelligence platforms, foundation models are democratizing satellite AI.
 

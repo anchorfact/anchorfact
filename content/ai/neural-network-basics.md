@@ -80,6 +80,27 @@ primary_sources:
     year: 2023
     doi: 10.1007/978-3-031-29642-0
     institution: Springer
+  - title: Midterm Status Report of the ILC Technology Network Activities
+    authors:
+      - ILC Technology Network
+    year: 2026
+    url: https://arxiv.org/abs/2603.01172v1
+    type: academic_paper
+    institution: arXiv
+  - title: 'Korean VLBI Network: the First Dedicated Mm-Wavelength VLBI Network in East Asia'
+    authors:
+      - Kiyoaki Wajima
+      - Hyun-Goo Kim
+      - Seog-Tae Han
+      - Duk-Gyoo Roh
+      - Do-Heung Je
+      - Se-Jin Oh
+      - Seog-Oh Wi
+      - Korean VLBI Network Group
+    year: 2005
+    url: https://arxiv.org/abs/astro-ph/0511065v1
+    type: academic_paper
+    institution: arXiv
 schema_type: TechArticle
 secondary_sources:
   - authors:
@@ -115,6 +136,7 @@ secondary_sources:
 title: Neural Network Basics
 updated: '2026-05-24'
 ---
+
 
 ## TL;DR
 

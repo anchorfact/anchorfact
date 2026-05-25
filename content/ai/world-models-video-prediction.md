@@ -1,12 +1,12 @@
 ---
 id: world-models-video-prediction
-title: "World Models: Video Prediction, Physical Reasoning, and Interactive AI"
+title: 'World Models: Video Prediction, Physical Reasoning, and Interactive AI'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -45,17 +45,26 @@ primary_sources:
     institution: OpenAI
     url: https://openai.com/index/video-generation-models-as-world-simulators/
   - id: ps-world-models-video-prediction-2
-    title: "UniSim: Learning Interactive Real-World Simulators"
+    title: 'UniSim: Learning Interactive Real-World Simulators'
     type: academic_paper
     year: 2024
     institution: UC Berkeley (ICML)
     url: https://arxiv.org/abs/2312.06114
+  - title: Grounding Video Reasoning in Physical Signals
+    authors:
+      - Alibay Osmanli
+      - Zixu Cheng
+      - Shaogang Gong
+    year: 2026
+    url: https://arxiv.org/abs/2604.21873v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Long-term causal reasoning in world models
   - World models for scientific simulation
 disputed_statements: []
 secondary_sources:
-  - title: "World Models: A Comprehensive Survey of Learning Predictive Models of Environments"
+  - title: 'World Models: A Comprehensive Survey of Learning Predictive Models of Environments'
     type: survey_paper
     year: 2024
     authors:
@@ -82,15 +91,16 @@ secondary_sources:
       - Lillicrap, Timothy
     institution: Google DeepMind / Nature
     url: https://arxiv.org/abs/2301.04104
-  - title: "Video Prediction Models as World Models: A Survey of Methods and Applications"
+  - title: 'Video Prediction Models as World Models: A Survey of Methods and Applications'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: IEEE TPAMI
     url: https://doi.org/10.1109/TPAMI.2024.3385267
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 World models learn to simulate reality from video data — predicting future frames, understanding physics, and enabling agents to plan. OpenAI's Sora demonstrates emergent 3D understanding; UniSim creates interactive environments from internet video.
 

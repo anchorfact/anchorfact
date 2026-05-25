@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 derived_from_human_seed: true
 conflict_of_interest: none_declared
@@ -22,7 +22,7 @@ atomic_facts:
     source_doi: 10.48550/arXiv.1406.2661
     confidence: high
   - id: fact-ai-002
-    statement: "Key variants: DCGAN (deep convolutional), StyleGAN (progressive growing, controls style), CycleGAN (unpaired image translation), Pix2Pix (paired)."
+    statement: 'Key variants: DCGAN (deep convolutional), StyleGAN (progressive growing, controls style), CycleGAN (unpaired image translation), Pix2Pix (paired).'
     source_title: Deep Learning (Goodfellow, Bengio, Courville)
     source_url: https://www.deeplearningbook.org/
     confidence: medium
@@ -56,6 +56,16 @@ primary_sources:
     url: https://arxiv.org/abs/1406.2661
     doi: 10.48550/arXiv.1406.2661
     institution: NeurIPS
+  - title: Quaternion Generative Adversarial Networks
+    authors:
+      - Eleonora Grassucci
+      - Edoardo Cicero
+      - Danilo Comminiello
+    year: 2021
+    doi: 10.1007/978-3-030-91390-8_4
+    url: https://arxiv.org/abs/2104.09630v2
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: Deep Learning (Goodfellow, Bengio, Courville)
     type: book
@@ -80,15 +90,16 @@ secondary_sources:
     year: 2017
     url: https://arxiv.org/abs/1701.07875
     institution: ICML / NYU
-  - title: "Generative AI in Depth: A Survey of Recent Advances, Model Variants, and Real-World Applications"
+  - title: 'Generative AI in Depth: A Survey of Recent Advances, Model Variants, and Real-World Applications'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: Journal of Big Data (Springer)
     url: https://doi.org/10.1186/s40537-025-01247-x
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 
 GANs (Goodfellow, 2014) pit two neural networks against each other: Generator creates fake data, Discriminator distinguishes real from fake. Both improve through adversarial training — Generator learns to produce increasingly realistic outputs. Used for image generation, style transfer, super-resolution.

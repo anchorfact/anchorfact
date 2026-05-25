@@ -1,12 +1,12 @@
 ---
 id: ai-for-construction
-title: "AI for Construction: Computer Vision Safety, BIM Digital Twins, and Automated Project Monitoring"
+title: 'AI for Construction: Computer Vision Safety, BIM Digital Twins, and Automated Project Monitoring'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,7 +34,7 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-for-construction-1
-    title: "Automation in Construction: AI and Computer Vision for Construction Safety Monitoring (2023-2025 Special Issues)"
+    title: 'Automation in Construction: AI and Computer Vision for Construction Safety Monitoring (2023-2025 Special Issues)'
     type: academic_paper
     year: 2025
     institution: Elsevier Automation in Construction
@@ -45,41 +45,66 @@ primary_sources:
     year: 2025
     institution: Elsevier / Automation in Construction / Advanced Engineering Informatics
     url: https://www.sciencedirect.com/search?qs=BIM+AI+digital+twin+construction
+  - title: 'WiCV 2019: The Sixth Women In Computer Vision Workshop'
+    authors:
+      - Irene Amerini
+      - Elena Balashova
+      - Sayna Ebrahimi
+      - Kathryn Leonard
+      - Arsha Nagrani
+      - Amaia Salvador
+    year: 2019
+    url: https://arxiv.org/abs/1909.10225v1
+    type: academic_paper
+    institution: arXiv
+  - title: Spatial Monitoring and Insect Behavioural Analysis Using Computer Vision for Precision Pollination
+    authors:
+      - Malika Nisal Ratnayake
+      - Don Chathurika Amarathunga
+      - Asaduz Zaman
+      - Adrian G. Dyer
+      - Alan Dorin
+    year: 2022
+    doi: 10.1007/s11263-022-01715-4
+    url: https://arxiv.org/abs/2205.04675v2
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Automated construction -- robotic bricklaying, 3D printing of buildings at scale
   - Predictive safety -- forecasting accident risk before incidents occur
 disputed_statements: []
 secondary_sources:
-  - title: "Artificial Intelligence and Smart Vision for Building and Construction 4.0: A Comprehensive Review"
+  - title: 'Artificial Intelligence and Smart Vision for Building and Construction 4.0: A Comprehensive Review'
     type: survey_paper
     year: 2022
     authors:
       - multiple
     institution: Automation in Construction (Elsevier)
     url: https://doi.org/10.1016/j.autcon.2022.104440
-  - title: "A Decade of Artificial Intelligence in the Construction Industry: A Scientometric Review"
+  - title: 'A Decade of Artificial Intelligence in the Construction Industry: A Scientometric Review'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: Archives of Computational Methods in Engineering (Springer)
     url: https://doi.org/10.1007/s11831-026-10583-x
-  - title: "Artificial Intelligence in Infrastructure Construction: A Critical Review"
+  - title: 'Artificial Intelligence in Infrastructure Construction: A Critical Review'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: Frontiers of Engineering Management (Springer)
     url: https://doi.org/10.1007/s42524-024-3128-5
-  - title: "Generative Artificial Intelligence for Construction: Use Cases, Opportunities, and Challenges"
+  - title: 'Generative Artificial Intelligence for Construction: Use Cases, Opportunities, and Challenges'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: Journal of Building Engineering (Elsevier)
     url: https://doi.org/10.1016/j.jobe.2025.112039
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 The $12 trillion global construction industry is one of the least digitized sectors -- and AI is changing that. Computer vision monitors safety in real-time, drones capture construction progress, and BIM digital twins compare plans to reality automatically. AI reduces accidents by 25-40% and rework costs by 15-20%.
 

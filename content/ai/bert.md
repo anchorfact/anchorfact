@@ -1,70 +1,100 @@
 ---
-id: "kb-2026-00003"
-title: "BERT (Bidirectional Encoder Representations from Transformers)"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "human_only"
-conflict_of_interest: "none_declared"
+id: kb-2026-00003
+title: BERT (Bidirectional Encoder Representations from Transformers)
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
+generation_method: human_only
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-ai-01"
-    statement: "BERT is a pre-trained language model introduced by Google AI Language in October 2018 and published at NAACL 2019"
-    source_title: "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
-    source_url: "https://arxiv.org/abs/1810.04805"
-    source_doi: "10.48550/arXiv.1810.04805"
-    confidence: "high"
-  - id: "fact-ai-02"
-    statement: "Its key innovation is bidirectional context: unlike previous models , BERT reads text in both directions simultaneously through a Masked Language Modeling objective"
-    source_title: "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
-    source_url: "https://arxiv.org/abs/1810.04805"
-    source_doi: "10.48550/arXiv.1810.04805"
-    confidence: "high"
-  - id: "fact-ai-03"
-    statement: "BERT established the \"pre-train then fine-tune\" paradigm that dominated NLP until the rise of generative models"
-    source_title: "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
-    source_url: "https://arxiv.org/abs/1810.04805"
-    source_doi: "10.48550/arXiv.1810.04805"
-    confidence: "high"
-
+  - id: fact-ai-01
+    statement: BERT is a pre-trained language model introduced by Google AI Language in October 2018 and published at NAACL 2019
+    source_title: 'BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding'
+    source_url: https://arxiv.org/abs/1810.04805
+    source_doi: 10.48550/arXiv.1810.04805
+    confidence: high
+  - id: fact-ai-02
+    statement: 'Its key innovation is bidirectional context: unlike previous models , BERT reads text in both directions simultaneously through a Masked Language Modeling objective'
+    source_title: 'BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding'
+    source_url: https://arxiv.org/abs/1810.04805
+    source_doi: 10.48550/arXiv.1810.04805
+    confidence: high
+  - id: fact-ai-03
+    statement: BERT established the "pre-train then fine-tune" paradigm that dominated NLP until the rise of generative models
+    source_title: 'BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding'
+    source_url: https://arxiv.org/abs/1810.04805
+    source_doi: 10.48550/arXiv.1810.04805
+    confidence: high
 completeness: 0.92
-
 known_gaps:
-  - "BERT citation count (~100K+) is approximate; exact count varies across databases"
-  - "RoBERTa and other variants are mentioned but not primary sources; each has its own separate article"
-
+  - BERT citation count (~100K+) is approximate; exact count varies across databases
+  - RoBERTa and other variants are mentioned but not primary sources; each has its own separate article
 disputed_statements:
-  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
-
+  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
 primary_sources:
-  - title: "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
-    authors: ["Devlin, Jacob", "Chang, Ming-Wei", "Lee, Kenton", "Toutanova, Kristina"]
-    type: "academic_paper"
+  - title: 'BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding'
+    authors:
+      - Devlin, Jacob
+      - Chang, Ming-Wei
+      - Lee, Kenton
+      - Toutanova, Kristina
+    type: academic_paper
     year: 2019
-    url: "https://arxiv.org/abs/1810.04805"
-    doi: "10.48550/arXiv.1810.04805"
-    institution: "Google AI Language"
-
+    url: https://arxiv.org/abs/1810.04805
+    doi: 10.48550/arXiv.1810.04805
+    institution: Google AI Language
+  - title: 'BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer'
+    authors:
+      - Fei Sun
+      - Jun Liu
+      - Jian Wu
+      - Changhua Pei
+      - Xiao Lin
+      - Wenwu Ou
+      - Peng Jiang
+    year: 2019
+    url: https://arxiv.org/abs/1904.06690v2
+    type: academic_paper
+    institution: arXiv
+  - title: Domain Generalisation with Bidirectional Encoder Representations from Vision Transformers
+    authors:
+      - Hamza Riaz
+      - Alan F. Smeaton
+    year: 2023
+    doi: 10.5281/zenodo.8246304
+    url: https://arxiv.org/abs/2307.08117v1
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
-  - title: "The Illustrated BERT"
-    type: "blog_post"
+  - title: The Illustrated BERT
+    type: blog_post
     year: 2018
-    url: "https://jalammar.github.io/illustrated-bert/"
-    institution: "Github"
-  - title: "RoBERTa: A Robustly Optimized BERT Pretraining Approach"
-    authors: ["Liu, Yinhan", "Ott, Myle", "Goyal, Naman", "Du, Jingfei", "Joshi, Mandar", "Chen, Danqi", "Levy, Omer", "Lewis, Mike", "Zettlemoyer, Luke", "Stoyanov, Veselin"]
-    type: "academic_paper"
+    url: https://jalammar.github.io/illustrated-bert/
+    institution: Github
+  - title: 'RoBERTa: A Robustly Optimized BERT Pretraining Approach'
+    authors:
+      - Liu, Yinhan
+      - Ott, Myle
+      - Goyal, Naman
+      - Du, Jingfei
+      - Joshi, Mandar
+      - Chen, Danqi
+      - Levy, Omer
+      - Lewis, Mike
+      - Zettlemoyer, Luke
+      - Stoyanov, Veselin
+    type: academic_paper
     year: 2019
-    url: "https://arxiv.org/abs/1907.11692"
-    doi: "10.48550/arXiv.1907.11692"
-    institution: "Facebook AI / University of Washington"
-
+    url: https://arxiv.org/abs/1907.11692
+    doi: 10.48550/arXiv.1907.11692
+    institution: Facebook AI / University of Washington
 ---
+
 
 
 ## TL;DR

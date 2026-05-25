@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 conflict_of_interest: none_declared
 is_live_document: false
@@ -43,6 +43,28 @@ primary_sources:
     url: https://arxiv.org/abs/1706.03762
     doi: 10.48550/arXiv.1706.03762
     institution: Google Brain / Google Research
+  - title: 'Dalorex: A Data-Local Program Execution and Architecture for Memory-bound Applications'
+    authors:
+      - Marcelo Orenes-Vera
+      - Esin Tureci
+      - David Wentzlaff
+      - Margaret Martonosi
+    year: 2022
+    doi: 10.1109/HPCA56546.2023.10071089
+    url: https://arxiv.org/abs/2207.13219v4
+    type: academic_paper
+    institution: arXiv
+  - title: Towards Assessing Spread in Sets of Software Architecture Designs
+    authors:
+      - Vittorio Cortellessa
+      - J. Andres Diaz-Pace
+      - Daniele Di Pompeo
+      - Michele Tucci
+    year: 2024
+    doi: 10.1007/978-3-031-42592-9_9
+    url: https://arxiv.org/abs/2402.19171v1
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: The Illustrated Transformer
     authors:
@@ -51,13 +73,14 @@ secondary_sources:
     year: 2018
     url: https://jalammar.github.io/illustrated-transformer/
     institution: Github
-  - title: "CS224n: NLP with Deep Learning — Lecture 9 (Transformers)"
+  - title: 'CS224n: NLP with Deep Learning — Lecture 9 (Transformers)'
     type: course_material
     year: 2024
     url: https://web.stanford.edu/class/cs224n/
     institution: Stanford University
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 
 The Transformer is a neural network architecture based solely on attention mechanisms, introduced by Vaswani et al. from Google Brain in the 2017 NeurIPS paper "Attention Is All You Need." It replaced recurrence and convolution with multi-head self-attention, enabling fully parallel computation across input sequences. The base model achieved 28.4 BLEU on WMT 2014 English-to-German translation, setting a new state-of-the-art while requiring only 3.5 days of training on 8 NVIDIA P100 GPUs — a fraction of the training time of previous approaches. As of May 2026, the paper has been cited over 140,000 times and is the foundation of virtually all modern language models (BERT, GPT, LLaMA, Claude, Gemini).

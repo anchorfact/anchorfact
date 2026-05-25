@@ -1,12 +1,12 @@
 ---
 id: ai-smart-grids
-title: "AI for Smart Grids: Load Forecasting, Demand Response, and Grid Stability"
+title: 'AI for Smart Grids: Load Forecasting, Demand Response, and Grid Stability'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -40,11 +40,30 @@ primary_sources:
     institution: IEEE Transactions on Smart Grid / Nature Energy / arXiv
     url: https://arxiv.org/search/?query=smart+grid+load+forecasting+deep+learning
   - id: ps-ai-smart-grids-2
-    title: "Reinforcement Learning for Grid Optimization: Battery Storage, EV Charging, and Demand Response"
+    title: 'Reinforcement Learning for Grid Optimization: Battery Storage, EV Charging, and Demand Response'
     type: academic_paper
     year: 2025
     institution: IEEE Transactions on Power Systems / Nature Energy / arXiv
     url: https://arxiv.org/search/?query=reinforcement+learning+grid+optimization
+  - title: 'Smart Grid Monitoring Using Power Line Modems: Anomaly Detection and Localization'
+    authors:
+      - Federico Passerini
+      - Andrea M. Tonello
+    year: 2018
+    doi: 10.1109/TSG.2019.2899264
+    url: https://arxiv.org/abs/1807.05347v2
+    type: academic_paper
+    institution: arXiv
+  - title: Demand-Side Scheduling Based on Multi-Agent Deep Actor-Critic Learning for Smart Grids
+    authors:
+      - Joash Lee
+      - Wenbo Wang
+      - Dusit Niyato
+    year: 2020
+    doi: 10.1109/SmartGridComm47815.2020.9302935
+    url: https://arxiv.org/abs/2005.01979v2
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Real-time grid stability under 100% renewable penetration
   - Cybersecurity of AI-controlled grids -- adversarial robustness to attacks
@@ -57,29 +76,30 @@ secondary_sources:
       - multiple
     institution: Renewable & Sustainable Energy Reviews (Elsevier)
     url: https://doi.org/10.1016/j.rser.2025.115974
-  - title: "SmartGrid AI: A Platform Integrating Deep Reinforcement Learning and Neural Networks for Microgrid Optimization"
+  - title: 'SmartGrid AI: A Platform Integrating Deep Reinforcement Learning and Neural Networks for Microgrid Optimization'
     type: journal_article
     year: 2025
     authors:
       - multiple
     institution: Energies (MDPI)
     url: https://doi.org/10.3390/en18051157
-  - title: "Deep Reinforcement Learning for Adaptive Energy Management in Smart Grids: A Comprehensive Review"
+  - title: 'Deep Reinforcement Learning for Adaptive Energy Management in Smart Grids: A Comprehensive Review'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: Applied Soft Computing (Elsevier)
     url: https://doi.org/10.1016/j.asoc.2025.112491
-  - title: "Universal access to affordable, reliable, sustainable and modern energy: How AI Optimizes Smart Grids toward SDG7"
+  - title: 'Universal access to affordable, reliable, sustainable and modern energy: How AI Optimizes Smart Grids toward SDG7'
     type: journal_article
     year: 2024
     authors:
       - multiple
     institution: Nature Energy / IEEE Access
     url: https://doi.org/10.1038/s41560-024-01567-8
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI is the brain of the modern electric grid -- predicting demand hours ahead, optimizing when to charge millions of EVs, and balancing solar and wind power in real-time. From DeepMind's 30-40% energy savings at Google to smart meters learning household usage patterns, AI makes the grid cleaner, cheaper, and more reliable.
 

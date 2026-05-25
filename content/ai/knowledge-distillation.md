@@ -25,12 +25,12 @@ atomic_facts:
     source_doi: 10.48550/arXiv.1503.02531
     source_title: Distilling the Knowledge in a Neural Network
     source_url: https://arxiv.org/abs/1503.02531
-    statement: "Applications: DistilBERT (6 layers instead of 12, 97% of BERT's performance), TinyBERT, MobileNet."
+    statement: 'Applications: DistilBERT (6 layers instead of 12, 97% of BERT''s performance), TinyBERT, MobileNet.'
 category: ai
 completeness: 0.88
 confidence: high
 conflict_of_interest: none_declared
-created_date: "2026-05-22"
+created_date: '2026-05-22'
 data_period: static
 derived_from_human_seed: true
 disputed_statements:
@@ -44,7 +44,7 @@ known_gaps:
   - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
   - Recent developments from 2025-2026 may not be reflected
 language: en
-last_verified: "2026-05-22"
+last_verified: '2026-05-25'
 primary_sources:
   - authors:
       - Hinton, Geoffrey
@@ -61,7 +61,7 @@ primary_sources:
       - Maybank, Stephen J.
       - Tao, Dacheng
     institution: International Journal of Computer Vision (Springer)
-    title: "Knowledge Distillation: A Survey (Gou, Yu, Maybank, Tao)"
+    title: 'Knowledge Distillation: A Survey (Gou, Yu, Maybank, Tao)'
     type: survey_paper
     url: https://doi.org/10.1007/s11263-021-01453-z
     year: 2021
@@ -71,10 +71,35 @@ primary_sources:
       - Shang, Lifeng
       - et al.
     institution: Huawei Noah's Ark Lab / EMNLP
-    title: "TinyBERT: Distilling BERT for Natural Language Understanding"
+    title: 'TinyBERT: Distilling BERT for Natural Language Understanding'
     type: conference_paper
     url: https://arxiv.org/abs/1909.10351
     year: 2020
+  - title: 'DREAM: Efficient Dataset Distillation by Representative Matching'
+    authors:
+      - Yanqing Liu
+      - Jianyang Gu
+      - Kai Wang
+      - Zheng Zhu
+      - Wei Jiang
+      - Yang You
+    year: 2023
+    url: https://arxiv.org/abs/2302.14416v3
+    type: academic_paper
+    institution: arXiv
+  - title: Differentiable Feature Aggregation Search for Knowledge Distillation
+    authors:
+      - Yushuo Guan
+      - Pengyu Zhao
+      - Bingxuan Wang
+      - Yuanxing Zhang
+      - Cong Yao
+      - Kaigui Bian
+      - Jian Tang
+    year: 2020
+    url: https://arxiv.org/abs/2008.00506v1
+    type: academic_paper
+    institution: arXiv
 schema_type: TechArticle
 secondary_sources:
   - institution: MIT Press
@@ -83,8 +108,9 @@ secondary_sources:
     url: https://www.deeplearningbook.org/
     year: 2016
 title: Knowledge Distillation
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 
 Knowledge distillation transfers knowledge from a large teacher model to a smaller student model. The student learns to mimic the teacher's softened output probabilities (not just hard labels). This enables deploying compact models with near-teacher performance — critical for edge devices and mobile applications.

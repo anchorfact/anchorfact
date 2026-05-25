@@ -1,12 +1,12 @@
 ---
 id: ai-for-urban-planning
-title: "AI for Urban Planning: Generative Spatial AI, Digital Twins, and Computational Urban Science"
+title: 'AI for Urban Planning: Generative Spatial AI, Digital Twins, and Computational Urban Science'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -29,36 +29,54 @@ atomic_facts:
       MDPI Smart Cities (October 2025) published a systematic literature review examining the integration of IoT, AI, and digital twins in smart cities — analyzing 200+ papers — finding that AI-driven
       urban digital twins reduce infrastructure maintenance costs by 20-30% through predictive analytics, enable 15-25% energy savings via AI-optimized building management, and improve emergency
       response times by 12-18% through real-time situational awareness.
-    source_title: "MDPI Smart Cities (2025) — IoT, AI, and Digital Twins: A Systematic Literature Review"
+    source_title: 'MDPI Smart Cities (2025) — IoT, AI, and Digital Twins: A Systematic Literature Review'
     source_url: https://www.mdpi.com/2624-6511/8/5/175
     confidence: high
 primary_sources:
   - id: ps-ai-for-urban-planning-1
-    title: "Generative spatial artificial intelligence for sustainable smart cities: opportunities, challenges, and future directions"
+    title: 'Generative spatial artificial intelligence for sustainable smart cities: opportunities, challenges, and future directions'
     type: academic_paper
     year: 2025
     institution: Nature-Based Solutions / Elsevier
     doi: 10.1016/j.nbsj.2025.100004
     url: https://www.sciencedirect.com/science/article/pii/S2666498425000043
   - id: ps-ai-for-urban-planning-2
-    title: "IoT, AI, and Digital Twins in Smart Cities: A Systematic Literature Review"
+    title: 'IoT, AI, and Digital Twins in Smart Cities: A Systematic Literature Review'
     type: academic_paper
     year: 2025
     institution: MDPI Smart Cities
     url: https://www.mdpi.com/2624-6511/8/5/175
+  - title: 'Urban Comfort Assessment in the Era of Digital Planning: A Multidimensional, Data-driven, and AI-assisted Framework'
+    authors:
+      - Sijie Yang
+      - Binyu Lei
+      - Filip Biljecki
+    year: 2025
+    url: https://arxiv.org/abs/2508.16057v1
+    type: academic_paper
+    institution: arXiv
+  - title: 'Planning, Living and Judging: A Multi-agent LLM-based Framework for Cyclical Urban Planning'
+    authors:
+      - Hang Ni
+      - Yuzhi Wang
+      - Hao Liu
+    year: 2024
+    url: https://arxiv.org/abs/2412.20505v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Equity-aware AI planning — preventing gentrification and displacement
   - Long-term validation of AI-generated urban designs against real-world outcomes
 disputed_statements: []
 secondary_sources:
-  - title: "AI in Urban Planning: A Comprehensive Survey of Smart City Applications from Geospatial Analysis to Digital Twins"
+  - title: 'AI in Urban Planning: A Comprehensive Survey of Smart City Applications from Geospatial Analysis to Digital Twins'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: IEEE Access
     url: https://doi.org/10.1109/ACCESS.2024.3415265
-  - title: "Urban Computing: Concepts, Methodologies, and Applications (Zheng et al.)"
+  - title: 'Urban Computing: Concepts, Methodologies, and Applications (Zheng et al.)'
     type: journal_article
     year: 2014
     authors:
@@ -68,22 +86,23 @@ secondary_sources:
       - Yang, Hai
     institution: ACM TIST / Microsoft Research
     url: https://doi.org/10.1145/2629592
-  - title: "Deep Learning for Urban Computing: A Comprehensive Survey of Traffic, Environment, and Energy Applications"
+  - title: 'Deep Learning for Urban Computing: A Comprehensive Survey of Traffic, Environment, and Energy Applications'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/3635100
-  - title: "UN-Habitat: AI and Digital Technologies for Sustainable Urban Development"
+  - title: 'UN-Habitat: AI and Digital Technologies for Sustainable Urban Development'
     type: report
     year: 2024
     authors:
       - UN-Habitat
     institution: UN-Habitat
     url: https://unhabitat.org/topic/digital-technologies
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI is becoming the architect and operator of future cities — generating urban master plans from zoning codes, simulating millions of "what-if" scenarios in digital twins, and optimizing energy, water, and transportation in real-time. Generative spatial AI represents a paradigm shift from reactive urban management to proactive computational design.
 

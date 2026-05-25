@@ -1,12 +1,12 @@
 ---
 id: ai-supply-chain-risk
-title: "AI for Supply Chain Risk: Disruption Prediction, Supplier Monitoring, and Resilience Analytics"
+title: 'AI for Supply Chain Risk: Disruption Prediction, Supplier Monitoring, and Resilience Analytics'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,17 +34,27 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-supply-chain-risk-1
-    title: "Machine Learning for Supply Chain Risk Management: Disruption Prediction, Supplier Analytics, and Resilience Optimization (2024-2025 Survey)"
+    title: 'Machine Learning for Supply Chain Risk Management: Disruption Prediction, Supplier Analytics, and Resilience Optimization (2024-2025 Survey)'
     type: academic_paper
     year: 2025
     institution: Journal of Supply Chain Management / POM / arXiv
     url: https://arxiv.org/search/?query=supply+chain+risk+AI+disruption+prediction
   - id: ps-ai-supply-chain-risk-2
-    title: "Digital Twin Supply Chains: Simulation, What-If Analysis, and AI-Driven Resilience Planning"
+    title: 'Digital Twin Supply Chains: Simulation, What-If Analysis, and AI-Driven Resilience Planning'
     type: academic_paper
     year: 2025
     institution: IEEE TEM / arXiv
     url: https://arxiv.org/search/?query=supply+chain+digital+twin+simulation
+  - title: A Two-Stage Stochastic Programming Model for Blood Supply Chain Management, Considering Facility Disruption and Service Level
+    authors:
+      - Mohammad Arani
+      - Mohsen Momenitabar
+      - Zhila Dehdari Ebrahimi
+      - Xian Liu
+    year: 2021
+    url: https://arxiv.org/abs/2111.02808v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Multi-tier visibility beyond Tier 1 suppliers (transparency into Tier 2-3+ supply chains)
   - Real-time supply chain reconfiguration during active disruptions
@@ -57,29 +67,30 @@ secondary_sources:
       - multiple
     institution: Journal of Big Data (Springer)
     url: https://doi.org/10.1186/s40537-025-01143-4
-  - title: "Artificial Intelligence in Supply Chain Management: A Systematic Literature Review of Empirical Studies (2014-2024)"
+  - title: 'Artificial Intelligence in Supply Chain Management: A Systematic Literature Review of Empirical Studies (2014-2024)'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: Computers in Industry (Elsevier)
     url: https://doi.org/10.1016/j.compind.2024.104095
-  - title: "Research on Supply Chain Resilience Mechanism of AI-Enabled Manufacturing: Empirical Evidence from China"
+  - title: 'Research on Supply Chain Resilience Mechanism of AI-Enabled Manufacturing: Empirical Evidence from China'
     type: journal_article
     year: 2025
     authors:
       - multiple
     institution: Nature Scientific Reports
     url: https://doi.org/10.1038/s41598-025-17138-3
-  - title: "AI in Supply Chain Risk Assessment: A Systematic Literature Review, Bibliometric Analysis, and Research Agenda"
+  - title: 'AI in Supply Chain Risk Assessment: A Systematic Literature Review, Bibliometric Analysis, and Research Agenda'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: arXiv / Annals of Operations Research
     url: https://arxiv.org/abs/2401.10895
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI predicts supply chain disruptions before they happen -- monitoring millions of signals for factory fires, port strikes, and supplier bankruptcies across multi-tier global supply chains. From Resilinc to o9 Solutions, AI supply chain risk management transforms reactive firefighting to proactive resilience.
 

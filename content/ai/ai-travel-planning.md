@@ -1,12 +1,12 @@
 ---
 id: ai-travel-planning
-title: "AI for Travel Planning: Itinerary Generation, Price Prediction, and Personalized Recommendations"
+title: 'AI for Travel Planning: Itinerary Generation, Price Prediction, and Personalized Recommendations'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,52 +34,75 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-travel-planning-1
-    title: "AI-Powered Travel Planning: LLM-Based Itinerary Generation, Price Prediction, and Personalization (2024-2025 Survey)"
+    title: 'AI-Powered Travel Planning: LLM-Based Itinerary Generation, Price Prediction, and Personalization (2024-2025 Survey)'
     type: academic_paper
     year: 2025
     institution: ACM RecTour / CHI / arXiv
     url: https://arxiv.org/search/?query=AI+travel+planning+LLM+itinerary
   - id: ps-ai-travel-planning-2
-    title: "Machine Learning for Travel Demand Prediction: Flight Pricing, Hotel Occupancy, and Tourism Forecasting"
+    title: 'Machine Learning for Travel Demand Prediction: Flight Pricing, Hotel Occupancy, and Tourism Forecasting'
     type: academic_paper
     year: 2025
     institution: Tourism Management / arXiv
     url: https://arxiv.org/search/?query=travel+demand+prediction+machine+learning
+  - title: 'Narrative-Driven Travel Planning: Geoculturally-Grounded Script Generation with Evolutionary Itinerary Optimization'
+    authors:
+      - Ziyu Zhang
+      - Ran Ding
+      - Ying Zhu
+      - Ziqian Kong
+      - Peilan Xu
+    year: 2025
+    url: https://arxiv.org/abs/2502.14456v3
+    type: academic_paper
+    institution: arXiv
+  - title: 'iTIMO: An LLM-empowered Synthesis Dataset for Travel Itinerary Modification'
+    authors:
+      - Zhuoxuan Huang
+      - Yunshan Ma
+      - Hongyu Zhang
+      - Hua Ma
+      - Zhu Sun
+    year: 2026
+    url: https://arxiv.org/abs/2601.10609v4
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Real-time in-trip AI assistance adapting to unexpected changes
   - Multi-destination multi-modal trip optimization across flights, trains, hotels, activities
 disputed_statements: []
 secondary_sources:
-  - title: "Artificial Intelligence in Tourism and Hospitality: A Comprehensive Survey of Recommendation, Personalization, and Dynamic Pricing"
+  - title: 'Artificial Intelligence in Tourism and Hospitality: A Comprehensive Survey of Recommendation, Personalization, and Dynamic Pricing'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: Tourism Management (Elsevier)
     url: https://doi.org/10.1016/j.tourman.2024.104890
-  - title: "AI-Powered Travel Recommendation Systems: From Collaborative Filtering to Large Language Models"
+  - title: 'AI-Powered Travel Recommendation Systems: From Collaborative Filtering to Large Language Models'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: Information Technology & Tourism (Springer)
     url: https://doi.org/10.1007/s40558-025-00267-x
-  - title: "Deep Learning for Travel Demand Forecasting: A Comprehensive Review of Spatio-Temporal Methods"
+  - title: 'Deep Learning for Travel Demand Forecasting: A Comprehensive Review of Spatio-Temporal Methods'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: IEEE Transactions on Intelligent Transportation Systems
     url: https://doi.org/10.1109/TITS.2024.3385267
-  - title: "How Generative AI Is Reshaping Travel Planning: TripIt, Kayak, Expedia AI Assistants — State of the Industry 2025"
+  - title: 'How Generative AI Is Reshaping Travel Planning: TripIt, Kayak, Expedia AI Assistants — State of the Industry 2025'
     type: report
     year: 2025
     authors:
       - Phocuswright Research
     institution: Phocuswright
     url: https://www.phocuswright.com/Travel-Research/Technology-Innovation/Generative-AI-Travel-2025
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI plans your vacation -- from LLMs generating personalized itineraries to Hopper predicting the best time to book flights. Google, Expedia, and Booking.com have all launched conversational AI trip planners, transforming travel from search-heavy research to one-conversation booking.
 

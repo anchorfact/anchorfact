@@ -1,12 +1,12 @@
 ---
 id: ai-content-creation
-title: "AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation"
+title: 'AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -35,30 +35,39 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-content-creation-1
-    title: "Generative AI for Content Creation: Text, Image, Video, and Audio Generation in Marketing and Media (2024-2025 Comprehensive Survey)"
+    title: 'Generative AI for Content Creation: Text, Image, Video, and Audio Generation in Marketing and Media (2024-2025 Comprehensive Survey)'
     type: academic_paper
     year: 2025
     institution: arXiv / ACM CHI / HBR
     url: https://arxiv.org/search/?query=generative+AI+content+creation+survey
   - id: ps-ai-content-creation-2
-    title: "Human-AI Collaboration in Creative Workflows: Productivity, Quality, and Trust in AI-Assisted Content Creation"
+    title: 'Human-AI Collaboration in Creative Workflows: Productivity, Quality, and Trust in AI-Assisted Content Creation'
     type: academic_paper
     year: 2025
     institution: MIT IDE / Harvard Business Review / arXiv
     url: https://arxiv.org/search/?query=human+AI+content+creation+productivity
+  - title: 'Making AI-Enhanced Videos: Analyzing Generative AI Use Cases in YouTube Content Creation'
+    authors:
+      - Torin Anderson
+      - Shuo Niu
+    year: 2025
+    doi: 10.1145/3706599.3719991
+    url: https://arxiv.org/abs/2503.03134v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - AI-generated content detection and disclosure standards
   - Maintaining brand voice consistency across AI-generated content at scale
 disputed_statements: []
 secondary_sources:
-  - title: "Generative AI in Depth: A Survey of Recent Advances, Model Variants, and Real-World Applications"
+  - title: 'Generative AI in Depth: A Survey of Recent Advances, Model Variants, and Real-World Applications'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: Journal of Big Data (Springer)
     url: https://doi.org/10.1186/s40537-025-01247-x
-  - title: "Advancements in Generative AI: A Comprehensive Review of GANs, GPT, Diffusion Models, and Image Generation"
+  - title: 'Advancements in Generative AI: A Comprehensive Review of GANs, GPT, Diffusion Models, and Image Generation'
     type: survey_paper
     year: 2024
     authors:
@@ -72,15 +81,16 @@ secondary_sources:
       - OpenAI
     institution: OpenAI
     url: https://openai.com/research/video-generation-models-as-world-simulators
-  - title: "Creators' Toolkit Report: 86% of Global Creators Using AI"
+  - title: 'Creators'' Toolkit Report: 86% of Global Creators Using AI'
     type: report
     year: 2025
     authors:
       - Adobe Research
     institution: Adobe MAX
     url: https://news.adobe.com/news/2025/10/adobe-max-2025-creators-survey
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI is the creative department that never sleeps -- generating blog posts, social media content, product images, marketing videos, and voiceovers. The $12B AI content creation market (2024) spans text, image, video, and audio generation. The winning formula: AI for speed + humans for soul.
 

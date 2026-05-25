@@ -33,9 +33,9 @@ function extractSearchQuery(frontmatter) {
   return words.join(' ');
 }
 
-// ---- arXiv API 搜索 ----
+// ---- arXiv API 搜索 (v2: 标题搜索更精准) ----
 async function searchArxiv(query, maxResults = 3) {
-  const url = `https://export.arxiv.org/api/query?search_query=all:${encodeURIComponent(query)}&max_results=${maxResults}&sortBy=relevance`;
+  const url = `https://export.arxiv.org/api/query?search_query=ti:${encodeURIComponent(query)}&max_results=${maxResults}&sortBy=relevance`;
   try {
     const res = await fetch(url);
     if (res.status !== 200) return [];

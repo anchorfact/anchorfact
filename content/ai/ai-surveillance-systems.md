@@ -1,12 +1,12 @@
 ---
 id: ai-surveillance-systems
-title: "AI for Surveillance Systems: Object Tracking, Anomaly Detection, and Intelligent Monitoring"
+title: 'AI for Surveillance Systems: Object Tracking, Anomaly Detection, and Intelligent Monitoring'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,52 +34,60 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-surveillance-systems-1
-    title: "Deep Learning for Intelligent Video Surveillance: Object Tracking, Action Recognition, and Anomaly Detection (2024-2025 Comprehensive Survey)"
+    title: 'Deep Learning for Intelligent Video Surveillance: Object Tracking, Action Recognition, and Anomaly Detection (2024-2025 Comprehensive Survey)'
     type: academic_paper
     year: 2025
     institution: IEEE TIFS / CVIU / arXiv
     url: https://arxiv.org/search/?query=video+surveillance+deep+learning+tracking+anomaly
   - id: ps-ai-surveillance-systems-2
-    title: "AI Surveillance Ethics: Facial Recognition Regulation, Bias, and the Right to Privacy in Public Spaces"
+    title: 'AI Surveillance Ethics: Facial Recognition Regulation, Bias, and the Right to Privacy in Public Spaces'
     type: academic_paper
     year: 2025
     institution: ACM FAccT / Nature Machine Intelligence / Harvard Law Review
     url: https://arxiv.org/search/?query=AI+surveillance+ethics+facial+recognition+regulation
+  - title: 'WSCIF: A Weakly-Supervised Color Intelligence Framework for Tactical Anomaly Detection in Surveillance Keyframes'
+    authors:
+      - Wei Meng
+    year: 2025
+    url: https://arxiv.org/abs/2505.09129v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Privacy-preserving surveillance -- detecting anomalies without identifying individuals
   - Edge AI surveillance -- real-time on-camera processing without cloud dependence
 disputed_statements: []
 secondary_sources:
-  - title: "AI-Powered Surveillance for Smart Cities: Foundations, Computer Vision, and Ethics"
+  - title: 'AI-Powered Surveillance for Smart Cities: Foundations, Computer Vision, and Ethics'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: Springer (Book Chapter)
     url: https://doi.org/10.1007/978-3-031-72959-1_11
-  - title: "Computer-Vision Research Powers Surveillance Technology: An Empirical Account of the Surveillance AI Pipeline"
+  - title: 'Computer-Vision Research Powers Surveillance Technology: An Empirical Account of the Surveillance AI Pipeline'
     type: journal_article
     year: 2025
     authors:
       - multiple
     institution: Nature
     url: https://doi.org/10.1038/s41586-025-08972-6
-  - title: "AI-Powered Surveillance Systems: Enhancing Public Safety Through Machine Learning-Driven CCTV"
+  - title: 'AI-Powered Surveillance Systems: Enhancing Public Safety Through Machine Learning-Driven CCTV'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ResearchGate / IEEE Access
     url: https://doi.org/10.1109/ACCESS.2025.3567842
-  - title: "Surveillance and Predictive Policing Through AI: Ethical Frameworks and Policy Recommendations (Deloitte)"
+  - title: 'Surveillance and Predictive Policing Through AI: Ethical Frameworks and Policy Recommendations (Deloitte)'
     type: report
     year: 2024
     authors:
       - Deloitte Research
     institution: Deloitte
     url: https://www.deloitte.com/global/en/Industries/government-public/perspectives/urban-future-with-a-purpose/surveillance-and-predictive-policing-through-ai.html
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI surveillance sees everything, everywhere, all at once -- tracking objects across hundreds of cameras, detecting anomalies in real-time, and enabling forensic search through weeks of footage in seconds. The technology raises fundamental questions about privacy, bias, and the balance between security and civil liberties.
 

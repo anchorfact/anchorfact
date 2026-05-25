@@ -1,12 +1,12 @@
 ---
 id: mechanistic-interpretability
-title: "Mechanistic Interpretability: Reverse-Engineering Neural Network Circuits and Features"
+title: 'Mechanistic Interpretability: Reverse-Engineering Neural Network Circuits and Features'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -29,7 +29,7 @@ atomic_facts:
       MIT Technology Review named mechanistic interpretability a 2026 Breakthrough Technology, recognizing that the ability to locate specific concepts (truth, sycophancy, deception) inside LLM
       activations using sparse autoencoders enables targeted model editing — removing undesirable behaviors without retraining — with Anthropic, DeepMind, and academic labs scaling interpretability to
       frontier models with billions of parameters.
-    source_title: "MIT Technology Review (2026) — 10 Breakthrough Technologies: Mechanistic Interpretability / AI Security & Safety guide (2026) / ACM 2025 MI survey"
+    source_title: 'MIT Technology Review (2026) — 10 Breakthrough Technologies: Mechanistic Interpretability / AI Security & Safety guide (2026) / ACM 2025 MI survey'
     source_url: https://dl.acm.org/doi/10.1145/3787104
     confidence: high
 primary_sources:
@@ -40,11 +40,31 @@ primary_sources:
     institution: arXiv / University of Amsterdam
     url: https://arxiv.org/abs/2404.14082
   - id: ps-mechanistic-interpretability-2
-    title: "Bridging the Black Box: A Survey on Mechanistic Interpretability in AI"
+    title: 'Bridging the Black Box: A Survey on Mechanistic Interpretability in AI'
     type: academic_paper
     year: 2025
     institution: ACM Computing Surveys
     url: https://dl.acm.org/doi/10.1145/3787104
+  - title: A Tutorial about Random Neural Networks in Supervised Learning
+    authors:
+      - Sebastián Basterrech
+      - Gerardo Rubino
+    year: 2016
+    doi: 10.14311/NNW.2015.25.024
+    url: https://arxiv.org/abs/1609.04846v1
+    type: academic_paper
+    institution: arXiv
+  - title: Predicting concentration levels of air pollutants by transfer learning and recurrent neural network
+    authors:
+      - Iat Hang Fong
+      - Tengyue Li
+      - Simon Fong
+      - Raymond K. Wong
+      - Antonio J. Tallón-Ballesteros
+    year: 2025
+    url: https://arxiv.org/abs/2502.01654v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Scaling mechanistic interpretability to trillion-parameter models
   - Causal validation — proving identified circuits cause model behavior rather than merely correlating
@@ -60,7 +80,7 @@ secondary_sources:
       - et al.
     institution: Anthropic
     url: https://transformer-circuits.pub/2022/toy_model/index.html
-  - title: "Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet"
+  - title: 'Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet'
     type: technical_report
     year: 2024
     authors:
@@ -70,7 +90,7 @@ secondary_sources:
       - et al.
     institution: Anthropic
     url: https://transformer-circuits.pub/2024/scaling-monosemanticity/
-  - title: "A Survey of Mechanistic Interpretability: From Features to Circuits to Models"
+  - title: 'A Survey of Mechanistic Interpretability: From Features to Circuits to Models'
     type: survey_paper
     year: 2024
     authors:
@@ -88,8 +108,9 @@ secondary_sources:
       - Sharkey, Lee
     institution: OpenAI / ICLR
     url: https://arxiv.org/abs/2309.08600
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Mechanistic interpretability treats neural networks as scientific objects to be reverse-engineered — locating the circuits, features, and computational pathways that produce specific behaviors. Instead of asking "what does the model output?", it asks "how does the model compute this output?" — enabling targeted fixes for safety, bias, and reliability.
 

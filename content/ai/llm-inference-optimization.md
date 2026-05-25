@@ -1,12 +1,12 @@
 ---
 id: llm-inference-optimization
-title: "LLM Inference Optimization: From FlashAttention to Speculative Decoding"
+title: 'LLM Inference Optimization: From FlashAttention to Speculative Decoding'
 schema_type: TechArticle
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -26,12 +26,12 @@ atomic_facts:
     statement: >-
       FlashAttention (Dao et al. 2022, NeurIPS) reduces attention memory from O(N²) to O(N) via IO-aware tiling, and FlashAttention-2 (2023) further optimizes parallelism, achieving 2-4× speedup with
       no approximation.
-    source_title: "Dao, Tri, et al. FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness. NeurIPS 2022"
+    source_title: 'Dao, Tri, et al. FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness. NeurIPS 2022'
     source_url: https://arxiv.org/abs/2205.14135
     confidence: high
   - id: f3
     statement: LLM.int8() (Dettmers et al. 2022, NeurIPS) enables 8-bit matrix multiplication for transformers with zero performance degradation by handling outlier features in FP16 and the rest in INT8.
-    source_title: "Dettmers, Tim, et al. LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale. NeurIPS 2022"
+    source_title: 'Dettmers, Tim, et al. LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale. NeurIPS 2022'
     source_url: https://arxiv.org/abs/2208.07339
     confidence: high
 completeness: 0.9
@@ -41,7 +41,7 @@ known_gaps:
 disputed_statements:
   - statement: No major disputed statements identified
 primary_sources:
-  - title: "FlashAttention: Fast and Memory-Efficient Exact Attention"
+  - title: 'FlashAttention: Fast and Memory-Efficient Exact Attention'
     type: academic_paper
     year: 2022
     url: https://arxiv.org/abs/2205.14135
@@ -51,6 +51,17 @@ primary_sources:
     year: 2023
     url: https://arxiv.org/abs/2211.17192
     institution: ICML
+  - title: 'Tutorial Proposal: Speculative Decoding for Efficient LLM Inference'
+    authors:
+      - Heming Xia
+      - Cunxiao Du
+      - Yongqi Li
+      - Qian Liu
+      - Wenjie Li
+    year: 2025
+    url: https://arxiv.org/abs/2503.00491v1
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: Efficient Memory Management for Large Language Model Serving with PagedAttention (vLLM)
     type: conference_paper
@@ -62,7 +73,7 @@ secondary_sources:
       - et al.
     institution: UC Berkeley / SOSP
     url: https://arxiv.org/abs/2309.06180
-  - title: "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale"
+  - title: 'LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale'
     type: conference_paper
     year: 2022
     authors:
@@ -72,7 +83,7 @@ secondary_sources:
       - Zettlemoyer, Luke
     institution: Meta AI Research / NeurIPS
     url: https://arxiv.org/abs/2208.07339
-  - title: "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness"
+  - title: 'FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness'
     type: conference_paper
     year: 2022
     authors:
@@ -83,15 +94,16 @@ secondary_sources:
       - Ré, Christopher
     institution: Stanford / NeurIPS
     url: https://arxiv.org/abs/2205.14135
-  - title: "A Survey on Efficient Inference for Large Language Models: Quantization, Pruning, and Distillation"
+  - title: 'A Survey on Efficient Inference for Large Language Models: Quantization, Pruning, and Distillation'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/3635100
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 LLM inference optimization has made serving trillion-parameter models economically viable. FlashAttention eliminates the memory bottleneck; speculative decoding accelerates generation 2-3x; KV-cache optimization reduces memory by 8x.
 

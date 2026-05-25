@@ -1,12 +1,12 @@
 ---
 id: ai-digital-twins-healthcare
-title: "AI Digital Twins for Healthcare: Patient-Specific Simulation, Treatment Planning, and Virtual Organs"
+title: 'AI Digital Twins for Healthcare: Patient-Specific Simulation, Treatment Planning, and Virtual Organs'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,23 +34,33 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-digital-twins-healthcare-1
-    title: "AI-Powered Patient-Specific Digital Twins: Cardiac, Orthopedic, and Multi-Organ Simulation for Personalized Medicine (2024-2025 Survey)"
+    title: 'AI-Powered Patient-Specific Digital Twins: Cardiac, Orthopedic, and Multi-Organ Simulation for Personalized Medicine (2024-2025 Survey)'
     type: academic_paper
     year: 2025
     institution: Nature Biomedical Engineering / IEEE TBME / arXiv
     url: https://arxiv.org/search/?query=patient+specific+digital+twin+simulation
   - id: ps-ai-digital-twins-healthcare-2
-    title: "In Silico Clinical Trials: Virtual Patient Cohorts, Regulatory Acceptance, and the Future of Drug Development"
+    title: 'In Silico Clinical Trials: Virtual Patient Cohorts, Regulatory Acceptance, and the Future of Drug Development'
     type: academic_paper
     year: 2025
     institution: Clinical Pharmacology & Therapeutics / Nature Reviews Drug Discovery / arXiv
     url: https://arxiv.org/search/?query=in+silico+clinical+trial+digital+twin
+  - title: 'Patient Digital Twins for Chronic Care: Technical Hurdles, Lessons Learned, and the Road Ahead'
+    authors:
+      - Micheal P. Papazoglou
+      - Bernd J. Krämer
+      - Mira Raheem
+      - Amal Elgammal
+    year: 2026
+    url: https://arxiv.org/abs/2602.11223v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Real-time patient twin updating from continuous monitoring data
   - Full-body integrative twin connecting organ-level to whole-body physiology
 disputed_statements: []
 secondary_sources:
-  - title: "Digital Twins in Healthcare: A Review of AI-Powered Practical Applications in Personalized Medicine"
+  - title: 'Digital Twins in Healthcare: A Review of AI-Powered Practical Applications in Personalized Medicine'
     type: survey_paper
     year: 2025
     authors:
@@ -64,22 +74,23 @@ secondary_sources:
       - multiple
     institution: Patterns (Cell Press / Elsevier)
     url: https://doi.org/10.1016/j.patter.2024.101040
-  - title: "Medical Digital Twins: Enabling Precision Medicine — A Health Policy Perspective"
+  - title: 'Medical Digital Twins: Enabling Precision Medicine — A Health Policy Perspective'
     type: journal_article
     year: 2025
     authors:
       - multiple
     institution: The Lancet Digital Health
     url: https://doi.org/10.1016/S2589-7500(25)00028-7
-  - title: "A Comprehensive Review of Digital Twin in Healthcare: Personalized Medicine and Patient-Specific Simulation"
+  - title: 'A Comprehensive Review of Digital Twin in Healthcare: Personalized Medicine and Patient-Specific Simulation'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: Digital Health (SAGE)
     url: https://doi.org/10.1177/20552076241304078
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI creates digital twins of individual patients -- virtual replicas that simulate disease progression and predict treatment response. From Dassault's Living Heart used in arrhythmia surgery planning to in silico clinical trials that reduce human testing, healthcare digital twins represent the frontier of personalized medicine.
 

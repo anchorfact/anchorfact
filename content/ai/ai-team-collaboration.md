@@ -1,12 +1,12 @@
 ---
 id: ai-team-collaboration
-title: "AI for Team Collaboration: Smart Meetings, Knowledge Sharing, and Collaborative Intelligence"
+title: 'AI for Team Collaboration: Smart Meetings, Knowledge Sharing, and Collaborative Intelligence'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,52 +34,63 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-team-collaboration-1
-    title: "AI-Powered Meeting Intelligence: Transcription, Summarization, and Action Item Extraction (2024-2025 Comprehensive Survey)"
+    title: 'AI-Powered Meeting Intelligence: Transcription, Summarization, and Action Item Extraction (2024-2025 Comprehensive Survey)'
     type: academic_paper
     year: 2025
     institution: arXiv / ACM CSCW
     url: https://arxiv.org/search/?query=meeting+summarization+AI+collaboration
   - id: ps-ai-team-collaboration-2
-    title: "Organizational Network Analysis with Graph Neural Networks: Collaboration Patterns and Expertise Location"
+    title: 'Organizational Network Analysis with Graph Neural Networks: Collaboration Patterns and Expertise Location'
     type: academic_paper
     year: 2025
     institution: arXiv / Academy of Management
     url: https://arxiv.org/search/?query=organizational+network+GNN
+  - title: 'HKD-SHO: A hybrid smart home system based on knowledge-based and data-driven services'
+    authors:
+      - Mingming Qiu
+      - Elie Najm
+      - Rémi Sharrock
+      - Bruno Traverson
+    year: 2024
+    url: https://arxiv.org/abs/2402.15521v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - AI facilitation of creative collaboration (brainstorming, design sprints)
   - Multi-lingual real-time meeting translation preserving nuance across cultures
 disputed_statements: []
 secondary_sources:
-  - title: "Microsoft New Future of Work Report 2025: AI for Team Collaboration, Shared Goals, and Group Context"
+  - title: 'Microsoft New Future of Work Report 2025: AI for Team Collaboration, Shared Goals, and Group Context'
     type: report
     year: 2025
     authors:
       - Microsoft Research
     institution: Microsoft
     url: https://www.microsoft.com/en-us/research/publication/new-future-of-work-report-2025/
-  - title: "AI-Augmented Collaborative Work: A Systematic Review of Human-AI Teaming in the Workplace"
+  - title: 'AI-Augmented Collaborative Work: A Systematic Review of Human-AI Teaming in the Workplace'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/3635100
-  - title: "Human-AI Collaboration: A Comprehensive Survey of Interactive Machine Learning and Co-Creative Systems"
+  - title: 'Human-AI Collaboration: A Comprehensive Survey of Interactive Machine Learning and Co-Creative Systems'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: IEEE Access
     url: https://doi.org/10.1109/ACCESS.2024.3415265
-  - title: "Zoom/Teams/Slack: How AI Is Transforming Enterprise Collaboration — A 2025 Industry Report"
+  - title: 'Zoom/Teams/Slack: How AI Is Transforming Enterprise Collaboration — A 2025 Industry Report'
     type: report
     year: 2025
     authors:
       - Zoom Research
     institution: Zoom Video Communications
     url: https://www.zoom.com/en/blog/workplace-collaboration-statistics/
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI is the newest member of every team -- transcribing meetings, extracting action items, surfacing relevant documents, and connecting colleagues who should be collaborating. From Microsoft Teams Copilot to Notion AI, AI-augmented collaboration reduces meeting overhead by 10+ hours/month while improving knowledge sharing.
 

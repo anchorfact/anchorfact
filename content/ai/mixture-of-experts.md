@@ -1,72 +1,99 @@
 ---
-id: "kb-2026-00010"
-title: "Mixture of Experts (MoE)"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "human_only"
-conflict_of_interest: "none_declared"
+id: kb-2026-00010
+title: Mixture of Experts (MoE)
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
+generation_method: human_only
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-ai-01"
-    statement: "at Google Brain, MoE is the dominant architecture for frontier-scale models as of 2026: GPT-4 reportedly uses MoE with approximately 1.76T total parameters but only 280B active per forward pass"
-    source_title: "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity"
-    source_url: "https://arxiv.org/abs/2101.03961"
-    source_doi: "10.48550/arXiv.2101.03961"
-    confidence: "high"
-  - id: "fact-ai-02"
-    statement: "Mixture of Experts is a neural network architecture that divides a model into multiple specialized \"expert\" sub-networks, with a learned gating mechanism routing each input token to only a subset of experts"
-    source_title: "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer"
-    source_url: "https://arxiv.org/abs/1701.06538"
-    source_doi: "10.48550/arXiv.1701.06538"
-    confidence: "high"
-  - id: "fact-ai-03"
-    statement: "First made practical for deep learning by Shazeer et al"
-    source_title: "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer"
-    source_url: "https://arxiv.org/abs/1701.06538"
-    source_doi: "10.48550/arXiv.1701.06538"
-
+  - id: fact-ai-01
+    statement: 'at Google Brain, MoE is the dominant architecture for frontier-scale models as of 2026: GPT-4 reportedly uses MoE with approximately 1.76T total parameters but only 280B active per forward pass'
+    source_title: 'Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity'
+    source_url: https://arxiv.org/abs/2101.03961
+    source_doi: 10.48550/arXiv.2101.03961
+    confidence: high
+  - id: fact-ai-02
+    statement: >-
+      Mixture of Experts is a neural network architecture that divides a model into multiple specialized "expert" sub-networks, with a learned gating mechanism routing each input token to only a
+      subset of experts
+    source_title: 'Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer'
+    source_url: https://arxiv.org/abs/1701.06538
+    source_doi: 10.48550/arXiv.1701.06538
+    confidence: high
+  - id: fact-ai-03
+    statement: First made practical for deep learning by Shazeer et al
+    source_title: 'Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer'
+    source_url: https://arxiv.org/abs/1701.06538
+    source_doi: 10.48550/arXiv.1701.06538
 completeness: 0.88
-
 known_gaps:
-  - "GPT-4 MoE configuration is based on external analysis (SemiAnalysis, press reports), not official OpenAI documentation"
-  - "MoE training dynamics (load balancing, expert specialization) remain active research areas"
-
+  - GPT-4 MoE configuration is based on external analysis (SemiAnalysis, press reports), not official OpenAI documentation
+  - MoE training dynamics (load balancing, expert specialization) remain active research areas
 disputed_statements:
-  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
-
+  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
 primary_sources:
-  - title: "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer"
-    authors: ["Shazeer, Noam", "Mirhoseini, Azalia", "Maziarz, Krzysztof", "Davis, Andy", "Le, Quoc", "Hinton, Geoffrey", "Dean, Jeff"]
-    type: "academic_paper"
+  - title: 'Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer'
+    authors:
+      - Shazeer, Noam
+      - Mirhoseini, Azalia
+      - Maziarz, Krzysztof
+      - Davis, Andy
+      - Le, Quoc
+      - Hinton, Geoffrey
+      - Dean, Jeff
+    type: academic_paper
     year: 2017
-    url: "https://arxiv.org/abs/1701.06538"
-    doi: "10.48550/arXiv.1701.06538"
-    institution: "Google Brain"
-  - title: "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity"
-    authors: ["Fedus, William", "Zoph, Barret", "Shazeer, Noam"]
-    type: "academic_paper"
+    url: https://arxiv.org/abs/1701.06538
+    doi: 10.48550/arXiv.1701.06538
+    institution: Google Brain
+  - title: 'Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity'
+    authors:
+      - Fedus, William
+      - Zoph, Barret
+      - Shazeer, Noam
+    type: academic_paper
     year: 2022
-    url: "https://arxiv.org/abs/2101.03961"
-    doi: "10.48550/arXiv.2101.03961"
-    institution: "arXiv / Cornell University"
-  - title: "GPT-4 Technical Report"
-
-secondary_sources:
-  - title: "Mixtral of Experts"
-    authors: ["Jiang, Albert Q.", "Sablayrolles, Alexandre", "Roux, Antoine", "Mensch, Arthur", "Savary, Blanche", "Bamford, Chris", "Chaplot, Devendra Singh", "de las Casas, Diego", "Hanna, Emma Bou", "Bressand, Florian", "et al."]
-    type: "academic_paper"
+    url: https://arxiv.org/abs/2101.03961
+    doi: 10.48550/arXiv.2101.03961
+    institution: arXiv / Cornell University
+  - title: GPT-4 Technical Report
+  - title: 'MoE++: Accelerating Mixture-of-Experts Methods with Zero-Computation Experts'
+    authors:
+      - Peng Jin
+      - Bo Zhu
+      - Li Yuan
+      - Shuicheng Yan
     year: 2024
-    url: "https://arxiv.org/abs/2401.04088"
-    doi: "10.48550/arXiv.2401.04088"
-    institution: "Mistral AI"
-
+    url: https://arxiv.org/abs/2410.07348v1
+    type: academic_paper
+    institution: arXiv
+secondary_sources:
+  - title: Mixtral of Experts
+    authors:
+      - Jiang, Albert Q.
+      - Sablayrolles, Alexandre
+      - Roux, Antoine
+      - Mensch, Arthur
+      - Savary, Blanche
+      - Bamford, Chris
+      - Chaplot, Devendra Singh
+      - de las Casas, Diego
+      - Hanna, Emma Bou
+      - Bressand, Florian
+      - et al.
+    type: academic_paper
+    year: 2024
+    url: https://arxiv.org/abs/2401.04088
+    doi: 10.48550/arXiv.2401.04088
+    institution: Mistral AI
 ---
+
 
 
 

@@ -1,12 +1,12 @@
 ---
 id: ai-legal-contracts
-title: "AI for Legal Contracts: Automated Drafting, Clause Analysis, and Due Diligence"
+title: 'AI for Legal Contracts: Automated Drafting, Clause Analysis, and Due Diligence'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -35,52 +35,63 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-legal-contracts-1
-    title: "AI for Legal Contract Analysis and Drafting: NLP, LLMs, and Due Diligence Automation (2024-2025 Comprehensive Survey)"
+    title: 'AI for Legal Contract Analysis and Drafting: NLP, LLMs, and Due Diligence Automation (2024-2025 Comprehensive Survey)'
     type: academic_paper
     year: 2025
     institution: arXiv / Stanford CodeX / ACM ICAIL
     url: https://arxiv.org/search/?query=contract+analysis+NLP+legal+AI
   - id: ps-ai-legal-contracts-2
-    title: "Large Language Models for Legal Document Drafting: Capabilities, Limitations, and Ethics"
+    title: 'Large Language Models for Legal Document Drafting: Capabilities, Limitations, and Ethics'
     type: academic_paper
     year: 2025
     institution: arXiv / Harvard Law Review / Nature
     url: https://arxiv.org/search/?query=LLM+contract+drafting+legal
+  - title: Graph-based Keyword Planning for Legal Clause Generation from Topics
+    authors:
+      - Sagar Joshi
+      - Sumanth Balaji
+      - Aparna Garimella
+      - Vasudeva Varma
+    year: 2023
+    url: https://arxiv.org/abs/2301.06901v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Contract negotiation AI -- automated counterproposal generation during live negotiations
   - Cross-jurisdictional contract analysis ensuring compliance across multiple legal systems
 disputed_statements: []
 secondary_sources:
-  - title: "A Survey of Classification Tasks and Approaches for Legal Contracts: From NLP to Deep Learning"
+  - title: 'A Survey of Classification Tasks and Approaches for Legal Contracts: From NLP to Deep Learning'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: Artificial Intelligence Review (Springer)
     url: https://doi.org/10.1007/s10462-025-11359-8
-  - title: "Natural Language Processing for the Legal Domain: A Survey of Tasks, Datasets, and Models"
+  - title: 'Natural Language Processing for the Legal Domain: A Survey of Tasks, Datasets, and Models'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/3777009
-  - title: "Contract Understanding and Analysis with Deep Learning: A Survey of Methods and Applications"
+  - title: 'Contract Understanding and Analysis with Deep Learning: A Survey of Methods and Applications'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: arXiv
     url: https://arxiv.org/abs/2410.21306
-  - title: "How AI Is Transforming Contract Review: Harvey AI, CoCounsel, Luminance — State of the Art 2025"
+  - title: 'How AI Is Transforming Contract Review: Harvey AI, CoCounsel, Luminance — State of the Art 2025'
     type: report
     year: 2025
     authors:
       - IS4 Research
     institution: IS4 AI Legal Tech
     url: https://is4.ai/blog/ai-legal-tools-law-firms-2025
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI is transforming legal contracts -- analyzing thousands of documents in hours for due diligence, extracting obligations and risks with 95% accuracy, and drafting complete contracts from natural language instructions in under a minute. From Ironclad to Harvey AI ($3B valuation), LLMs are becoming the junior associate that never sleeps.
 

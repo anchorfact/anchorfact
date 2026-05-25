@@ -1,91 +1,165 @@
 ---
-id: "kb-2026-00007"
-title: "Reinforcement Learning from Human Feedback (RLHF)"
-schema_type: "TechArticle"
-category: "ai"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "human_only"
-conflict_of_interest: "none_declared"
+id: kb-2026-00007
+title: Reinforcement Learning from Human Feedback (RLHF)
+schema_type: TechArticle
+category: ai
+language: en
+confidence: high
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
+generation_method: human_only
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-ai-01"
-    statement: "First demonstrated on Atari games and simulated robotics , it became the industry standard with OpenAI's InstructGPT , which showed that a 1.3B parameter model fine-tuned with RLHF was preferred by human raters over the 175B GPT-3 base model"
-    source_title: "Training Language Models to Follow Instructions with Human Feedback (InstructGPT)"
-    source_url: "https://arxiv.org/abs/2203.02155"
-    source_doi: "10.48550/arXiv.2203.02155"
-    confidence: "high"
-  - id: "fact-ai-002"
-    statement: "First demonstrated on Atari games and simulated robotics (Christiano et al."
-    source_title: "Deep Reinforcement Learning from Human Preferences"
-    source_url: "https://arxiv.org/abs/1706.03741"
-    source_doi: "10.48550/arXiv.1706.03741"
-    confidence: "high"
-  - id: "fact-ai-003"
-    statement: ", 2017), it became the industry standard with OpenAI's InstructGPT (Ouyang et al."
-    source_title: "Training Language Models to Follow Instructions with Human Feedback (InstructGPT)"
-    source_url: "https://arxiv.org/abs/2203.02155"
-    source_doi: "10.48550/arXiv.2203.02155"
-    confidence: "high"
-  - id: "fact-ai-004"
-    statement: "3B parameter model fine-tuned with RLHF was preferred by human raters over the 175B GPT-3 base model."
-    source_title: "Training Language Models to Follow Instructions with Human Feedback (InstructGPT)"
-    source_url: "https://arxiv.org/abs/2203.02155"
-    source_doi: "10.48550/arXiv.2203.02155"
-    confidence: "high"
-  - id: "fact-ai-005"
-    statement: "RLHF has since been adopted by all major LLM providers and is the alignment method behind ChatGPT, Claude, Gemini, and Grok."
-    source_title: "Direct Preference Optimization: Your Language Model is Secretly a Reward Model"
-    source_url: "https://arxiv.org/abs/2305.18290"
-    source_doi: "10.48550/arXiv.2305.18290"
-    confidence: "high"
-
+  - id: fact-ai-01
+    statement: >-
+      First demonstrated on Atari games and simulated robotics , it became the industry standard with OpenAI's InstructGPT , which showed that a 1.3B parameter model fine-tuned with RLHF was preferred
+      by human raters over the 175B GPT-3 base model
+    source_title: Training Language Models to Follow Instructions with Human Feedback (InstructGPT)
+    source_url: https://arxiv.org/abs/2203.02155
+    source_doi: 10.48550/arXiv.2203.02155
+    confidence: high
+  - id: fact-ai-002
+    statement: First demonstrated on Atari games and simulated robotics (Christiano et al.
+    source_title: Deep Reinforcement Learning from Human Preferences
+    source_url: https://arxiv.org/abs/1706.03741
+    source_doi: 10.48550/arXiv.1706.03741
+    confidence: high
+  - id: fact-ai-003
+    statement: ', 2017), it became the industry standard with OpenAI''s InstructGPT (Ouyang et al.'
+    source_title: Training Language Models to Follow Instructions with Human Feedback (InstructGPT)
+    source_url: https://arxiv.org/abs/2203.02155
+    source_doi: 10.48550/arXiv.2203.02155
+    confidence: high
+  - id: fact-ai-004
+    statement: 3B parameter model fine-tuned with RLHF was preferred by human raters over the 175B GPT-3 base model.
+    source_title: Training Language Models to Follow Instructions with Human Feedback (InstructGPT)
+    source_url: https://arxiv.org/abs/2203.02155
+    source_doi: 10.48550/arXiv.2203.02155
+    confidence: high
+  - id: fact-ai-005
+    statement: RLHF has since been adopted by all major LLM providers and is the alignment method behind ChatGPT, Claude, Gemini, and Grok.
+    source_title: 'Direct Preference Optimization: Your Language Model is Secretly a Reward Model'
+    source_url: https://arxiv.org/abs/2305.18290
+    source_doi: 10.48550/arXiv.2305.18290
+    confidence: high
 completeness: 0.92
-
 known_gaps:
-  - "RLHF is under active development; DPO and related alternatives may significantly change the alignment landscape in coming years"
-  - "The 'alignment tax' — performance regression on academic benchmarks — varies by implementation and model family"
-
+  - RLHF is under active development; DPO and related alternatives may significantly change the alignment landscape in coming years
+  - The 'alignment tax' — performance regression on academic benchmarks — varies by implementation and model family
 disputed_statements:
-  - statement: "The effectiveness and scalability of RLHF as an alignment technique is debated, with alternatives like DPO (Direct Preference Optimization) and Constitutional AI showing competitive results"
-
+  - statement: The effectiveness and scalability of RLHF as an alignment technique is debated, with alternatives like DPO (Direct Preference Optimization) and Constitutional AI showing competitive results
 primary_sources:
-  - title: "Deep Reinforcement Learning from Human Preferences"
-    authors: ["Christiano, Paul", "Leike, Jan", "Brown, Tom B.", "Martic, Miljan", "Legg, Shane", "Amodei, Dario"]
-    type: "academic_paper"
+  - title: Deep Reinforcement Learning from Human Preferences
+    authors:
+      - Christiano, Paul
+      - Leike, Jan
+      - Brown, Tom B.
+      - Martic, Miljan
+      - Legg, Shane
+      - Amodei, Dario
+    type: academic_paper
     year: 2017
-    url: "https://arxiv.org/abs/1706.03741"
-    doi: "10.48550/arXiv.1706.03741"
-    institution: "OpenAI / DeepMind"
-  - title: "Training Language Models to Follow Instructions with Human Feedback (InstructGPT)"
-    authors: ["Ouyang, Long", "Wu, Jeffrey", "Jiang, Xu", "Almeida, Diogo", "Wainwright, Carroll", "Mishkin, Pamela", "Zhang, Chong", "Agarwal, Sandhini", "Slama, Katarina", "Ray, Alex", "Schulman, John", "Hilton, Jacob", "Kelton, Fraser", "Miller, Luke", "Simens, Maddie", "Askell, Amanda", "Welinder, Peter", "Christiano, Paul", "Leike, Jan", "Lowe, Ryan"]
-    type: "academic_paper"
+    url: https://arxiv.org/abs/1706.03741
+    doi: 10.48550/arXiv.1706.03741
+    institution: OpenAI / DeepMind
+  - title: Training Language Models to Follow Instructions with Human Feedback (InstructGPT)
+    authors:
+      - Ouyang, Long
+      - Wu, Jeffrey
+      - Jiang, Xu
+      - Almeida, Diogo
+      - Wainwright, Carroll
+      - Mishkin, Pamela
+      - Zhang, Chong
+      - Agarwal, Sandhini
+      - Slama, Katarina
+      - Ray, Alex
+      - Schulman, John
+      - Hilton, Jacob
+      - Kelton, Fraser
+      - Miller, Luke
+      - Simens, Maddie
+      - Askell, Amanda
+      - Welinder, Peter
+      - Christiano, Paul
+      - Leike, Jan
+      - Lowe, Ryan
+    type: academic_paper
     year: 2022
-    url: "https://arxiv.org/abs/2203.02155"
-    doi: "10.48550/arXiv.2203.02155"
-    institution: "OpenAI"
-
-secondary_sources:
-  - title: "Constitutional AI: Harmlessness from AI Feedback"
-    authors: ["Bai, Yuntao", "Kadavath, Saurav", "Kundu, Sandipan", "Askell, Amanda", "Kernion, Jackson", "Jones, Andy", "Chen, Anna", "Goldie, Anna", "Mirhoseini, Azalia", "McKinnon, Cameron", "Chen, Carol", "Olsson, Catherine", "Olah, Christopher", "Hernandez, Danny", "Drain, Dawn", "Ganguli, Deep", "Li, Dustin", "Tran-Johnson, Eli", "Perez, Ethan", "Kerr, Jamie", "et al."]
-    type: "academic_paper"
-    year: 2022
-    url: "https://arxiv.org/abs/2212.08073"
-    doi: "10.48550/arXiv.2212.08073"
-    institution: "Anthropic"
-  - title: "Direct Preference Optimization: Your Language Model is Secretly a Reward Model"
-    authors: ["Rafailov, Rafael", "Sharma, Archit", "Mitchell, Eric", "Ermon, Stefano", "Manning, Christopher D.", "Finn, Chelsea"]
-    type: "academic_paper"
+    url: https://arxiv.org/abs/2203.02155
+    doi: 10.48550/arXiv.2203.02155
+    institution: OpenAI
+  - title: 'RLHF-Blender: A Configurable Interactive Interface for Learning from Diverse Human Feedback'
+    authors:
+      - Yannick Metz
+      - David Lindner
+      - Raphaël Baur
+      - Daniel Keim
+      - Mennatallah El-Assady
     year: 2023
-    url: "https://arxiv.org/abs/2305.18290"
-    doi: "10.48550/arXiv.2305.18290"
-    institution: "Stanford University"
-
+    url: https://arxiv.org/abs/2308.04332v1
+    type: academic_paper
+    institution: arXiv
+  - title: 'Iterative Preference Learning from Human Feedback: Bridging Theory and Practice for RLHF under KL-Constraint'
+    authors:
+      - Wei Xiong
+      - Hanze Dong
+      - Chenlu Ye
+      - Ziqi Wang
+      - Han Zhong
+      - Heng Ji
+      - Nan Jiang
+      - Tong Zhang
+    year: 2023
+    url: https://arxiv.org/abs/2312.11456v4
+    type: academic_paper
+    institution: arXiv
+secondary_sources:
+  - title: 'Constitutional AI: Harmlessness from AI Feedback'
+    authors:
+      - Bai, Yuntao
+      - Kadavath, Saurav
+      - Kundu, Sandipan
+      - Askell, Amanda
+      - Kernion, Jackson
+      - Jones, Andy
+      - Chen, Anna
+      - Goldie, Anna
+      - Mirhoseini, Azalia
+      - McKinnon, Cameron
+      - Chen, Carol
+      - Olsson, Catherine
+      - Olah, Christopher
+      - Hernandez, Danny
+      - Drain, Dawn
+      - Ganguli, Deep
+      - Li, Dustin
+      - Tran-Johnson, Eli
+      - Perez, Ethan
+      - Kerr, Jamie
+      - et al.
+    type: academic_paper
+    year: 2022
+    url: https://arxiv.org/abs/2212.08073
+    doi: 10.48550/arXiv.2212.08073
+    institution: Anthropic
+  - title: 'Direct Preference Optimization: Your Language Model is Secretly a Reward Model'
+    authors:
+      - Rafailov, Rafael
+      - Sharma, Archit
+      - Mitchell, Eric
+      - Ermon, Stefano
+      - Manning, Christopher D.
+      - Finn, Chelsea
+    type: academic_paper
+    year: 2023
+    url: https://arxiv.org/abs/2305.18290
+    doi: 10.48550/arXiv.2305.18290
+    institution: Stanford University
 ---
+
 
 
 

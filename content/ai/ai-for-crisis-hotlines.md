@@ -1,12 +1,12 @@
 ---
 id: ai-for-crisis-hotlines
-title: "AI for Crisis Hotlines: Suicide Prevention Chatbots, Emotional Support AI, and Risk Detection"
+title: 'AI for Crisis Hotlines: Suicide Prevention Chatbots, Emotional Support AI, and Risk Detection'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,17 +34,43 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-for-crisis-hotlines-1
-    title: "AI for Crisis Intervention and Suicide Prevention: Chatbot Support, NLP Risk Detection, and Ethical Frameworks (2024-2025 Survey)"
+    title: 'AI for Crisis Intervention and Suicide Prevention: Chatbot Support, NLP Risk Detection, and Ethical Frameworks (2024-2025 Survey)'
     type: academic_paper
     year: 2025
     institution: The Lancet Digital Health / JAMA Psychiatry / arXiv
     url: https://arxiv.org/search/?query=suicide+prevention+AI+chatbot+NLP+detection
   - id: ps-ai-for-crisis-hotlines-2
-    title: "Ethical AI for Mental Health Crisis: Proactive Detection, Privacy, and the Duty to Intervene"
+    title: 'Ethical AI for Mental Health Crisis: Proactive Detection, Privacy, and the Duty to Intervene'
     type: academic_paper
     year: 2025
     institution: Nature Medicine / Hastings Center Report / arXiv
     url: https://arxiv.org/search/?query=AI+crisis+intervention+ethics+privacy
+  - title: 'Canada Protocol: an ethical checklist for the use of Artificial Intelligence in Suicide Prevention and Mental Health'
+    authors:
+      - Carl-Maria Mörch
+      - Abhishek Gupta
+      - Brian L. Mishara
+    year: 2019
+    doi: 10.1016/j.artmed.2020.101934
+    url: https://arxiv.org/abs/1907.07493v1
+    type: academic_paper
+    institution: arXiv
+  - title: Deep Learning-Based Feature Fusion for Emotion Analysis and Suicide Risk Differentiation in Chinese Psychological Support Hotlines
+    authors:
+      - Han Wang
+      - Jianqiang Li
+      - Qing Zhao
+      - Zhonglong Chen
+      - Changwei Song
+      - Jing Tang
+      - Yuning Huang
+      - Wei Zhai
+      - Yongsheng Tong
+      - Guanghui Fu
+    year: 2025
+    url: https://arxiv.org/abs/2501.08696v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - AI detecting nuanced emotional states (ambivalence, hopelessness vs despair)
   - Seamless AI-to-human escalation with full conversation context for crisis counselors
@@ -64,7 +90,7 @@ secondary_sources:
       - multiple
     institution: Nature Scientific Reports
     url: https://doi.org/10.1038/s41598-025-28704-0
-  - title: "Decoding the Cry for Help: AI's Emerging Role in Suicide Risk Detection — Chatbots, NLP, LLMs"
+  - title: 'Decoding the Cry for Help: AI''s Emerging Role in Suicide Risk Detection — Chatbots, NLP, LLMs'
     type: survey_paper
     year: 2025
     authors:
@@ -78,8 +104,9 @@ secondary_sources:
       - multiple
     institution: arXiv / IEEE EMBC
     url: https://arxiv.org/abs/2409.06164
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI is on the front lines of suicide prevention -- triaging crisis texts in seconds, powering emotional support chatbots, and detecting risk signals in social media posts. From Crisis Text Line's ML triage to Meta's proactive wellness checks, AI extends the reach of limited crisis counseling resources.
 
