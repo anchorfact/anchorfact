@@ -76,6 +76,22 @@ primary_sources:
     year: 2020
     url: https://iupac.org/iptei/
     institution: IUPAC / King's Centre for Visualization in Science
+  - title: Atomic Weights of the Elements 2021 (IUPAC Technical Report)
+    authors:
+      - Prohaska,T.
+      - Irrgeher,J.
+      - Benefield,J.
+      - Böhlke,J.K.
+      - Chesson,L.A.
+      - Coplen,T.B.
+      - Ding,T.
+      - Dunn,P.J.H.
+      - Gröning,M.
+      - Holden,N.E.
+    type: academic_paper
+    year: 2022
+    doi: 10.1515/pac-2019-0603
+    institution: IUPAC/Pure and Applied Chemistry
 secondary_sources:
   - title: The Disappearing Spoon
     type: book
@@ -88,6 +104,7 @@ secondary_sources:
     url: https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058
     institution: Pearson Education
 ---
+
 
 ## TL;DR
 

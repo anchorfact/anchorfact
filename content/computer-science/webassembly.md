@@ -57,12 +57,28 @@ primary_sources:
     year: 2024
     url: https://www.w3.org/TR/wasm-core-3/
     institution: W3C
+  - title: Bringing the Web up to Speed with WebAssembly
+    authors:
+      - Haas,A.
+      - Rossberg,A.
+      - Schuff,D.L.
+      - Titzer,B.L.
+      - Holman,M.
+      - Gohman,D.
+      - Wagner,L.
+      - Zakai,A.
+      - Bastien,J.
+    type: academic_paper
+    year: 2017
+    doi: 10.1145/3062341.3062363
+    institution: PLDI/ACM
 secondary_sources:
   - title: WebAssembly Feature Status
     type: tracker
     url: https://webassembly.org/features/
     institution: Webassembly
 ---
+
 
 
 
