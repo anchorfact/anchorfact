@@ -269,7 +269,7 @@ async function verifyArticle(filePath) {
 // ---- Verify All (parallel: batch concurrency) ----
 const CONCURRENCY = 3;
 
-async function verifyAll(contentDir) {
+async function verifyAll(contentDir, oldReportPath) {
   const articles = [];
 
   function walk(dir) {
@@ -286,43 +286,86 @@ async function verifyAll(contentDir) {
   }
 
   walk(contentDir);
-  console.log(`Found ${articles.length} articles to verify (concurrency=${CONCURRENCY})\n`);
+
+  // ---- 增量模式加载旧报告 ----
+  let oldMap = new Map();
+  let lastGenerated = null;
+  if (oldReportPath && existsSync(oldReportPath)) {
+    try {
+      const old = JSON.parse(readFileSync(oldReportPath, 'utf-8'));
+      lastGenerated = old.summary?.generated ? new Date(old.summary.generated) : null;
+      for (const a of old.articles || []) {
+        oldMap.set(normalizePathForVerify(a.file), a);
+      }
+    } catch (e) { /* ignore corrupted cache */ }
+  }
+
+  const freshArticles = [];
+  const cachedResults = [];
+
+  for (const fp of articles) {
+    const norm = normalizePathForVerify(fp);
+    const cached = oldMap.get(norm);
+    if (cached && lastGenerated) {
+      try {
+        if (statSync(fp).mtime <= lastGenerated) {
+          cachedResults.push(cached);
+          continue;
+        }
+      } catch (e) { /* re-verify */ }
+    }
+    freshArticles.push(fp);
+  }
+
+  const fresh = freshArticles.length;
+  const cached = cachedResults.length;
+  console.log(`Found ${articles.length} articles: ${fresh} to verify, ${cached} cached (concurrency=${CONCURRENCY})\n`);
 
   let done = 0;
-  const results = new Array(articles.length);
+  const freshResults = new Array(freshArticles.length);
 
-  const tasks = articles.map((filePath, i) => async () => {
+  const tasks = freshArticles.map((filePath, i) => async () => {
     try {
       const result = await verifyArticle(filePath);
-      results[i] = result;
+      freshResults[i] = result;
       done++;
-      const pct = Math.round(done / articles.length * 100);
-      if (done % 50 === 0 || done === articles.length) {
-        console.log(`[${done}/${articles.length}] ${pct}% — ${filePath}: ${result.sources_verified}/${result.sources_total} verified`);
+      if (fresh > 0 && (done % 20 === 0 || done === fresh)) {
+        const pct = Math.round(done / fresh * 100);
+        console.log(`[${done}/${fresh}] ${pct}% — ${filePath}: ${result.sources_verified}/${result.sources_total} verified`);
       }
       return result;
     } catch (e) {
       done++;
-      results[i] = { file: filePath, error: e.message, sources_total: 0, sources_verified: 0, sources_unreachable: 0 };
-      return results[i];
+      freshResults[i] = { file: filePath, error: e.message, sources_total: 0, sources_verified: 0, sources_unreachable: 0 };
+      return freshResults[i];
     }
   });
 
   await runWithConcurrency(tasks, CONCURRENCY);
-  return results.filter(Boolean);
+  return [...cachedResults, ...freshResults.filter(Boolean)];
+}
+
+function normalizePathForVerify(p) {
+  return (p || '').replace(/\\/g, '/');
 }
 
 // ---- CLI ----
-const contentDir = process.argv[2] || join(process.cwd(), 'content');
-const outputFile = process.argv[3] || join(process.cwd(), 'verification-report.json');
+const incremental = process.argv.includes('--incremental') || process.argv.includes('-i');
+// 过滤掉 flag 参数，取位置参数
+const args = process.argv.slice(2).filter(a => !a.startsWith('-'));
+const contentDir = args[0] || join(process.cwd(), 'content');
+const outputFile = args[1] || join(process.cwd(), 'verification-report.json');
 
-console.log(`AnchorFact Source Verification v0.2`);
+const mode = incremental ? 'incremental' : 'full';
+const oldReport = incremental ? outputFile : null;
+console.log(`AnchorFact Source Verification v0.3`);
+console.log(`  Mode: ${mode.toUpperCase()}`);
 console.log(`  Content: ${contentDir}`);
 console.log(`  Output:  ${outputFile}`);
 console.log(`  Concurrency: ${CONCURRENCY}\n`);
 
 const start = performance.now();
-const results = await verifyAll(contentDir);
+const results = await verifyAll(contentDir, oldReport);
 const elapsed = (performance.now() - start).toFixed(0);
 
 const totalSources = results.reduce((s, r) => s + r.sources_total, 0);

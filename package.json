@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "node src/compile.js content dist",
-    "verify": "node src/verify-sources.js content verification-report.json",
+    "verify": "node src/verify-sources.js --incremental content verification-report.json",
+    "verify-full": "node src/verify-sources.js content verification-report.json",
     "pipeline": "npm run verify && npm run build",
     "serve": "node src/serve.js",
     "deploy": "npm run pipeline && wrangler pages deploy dist"
