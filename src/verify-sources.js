@@ -267,7 +267,7 @@ async function verifyArticle(filePath) {
 }
 
 // ---- Verify All (parallel: batch concurrency) ----
-const CONCURRENCY = 5;
+const CONCURRENCY = 3;
 
 async function verifyAll(contentDir) {
   const articles = [];
