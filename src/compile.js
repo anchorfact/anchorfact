@@ -453,6 +453,7 @@ const rootHtml = `<!DOCTYPE html>
   <meta charset="utf-8">
   <title>AnchorFact — Anchor AI to Facts</title>
   <meta name="description" content="AnchorFact: AI-structured knowledge base for LLM citations. Confidence based on verified sources.">
+  <meta name="msvalidate.01" content="B9AA7B911CF59012FB84CBDD7470CBA4" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
