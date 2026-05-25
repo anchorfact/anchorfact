@@ -9,6 +9,7 @@
 import { readFileSync, writeFileSync, readdirSync, statSync, existsSync } from 'fs';
 import { join } from 'path';
 import { load } from 'js-yaml';
+import { computeConfidence, classifySourceTier } from './lib/confidence.js';
 
 // ---- Rate Limiter ----
 const RATE_LIMIT_MS = 200; // 每秒 ≤ 5 请求

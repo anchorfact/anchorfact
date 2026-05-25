@@ -9,6 +9,7 @@
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, statSync, existsSync } from 'fs';
 import { join, dirname, basename, extname } from 'path';
 import { load } from 'js-yaml';
+import { computeConfidence, classifySourceTier, computeFreshnessScore } from './lib/confidence.js';
 
 // ---- Helpers ----
 
@@ -68,9 +69,9 @@ function splitFrontmatter(mdContent) {
   }
 }
 
-// ---- Source Tier Classification (Public) ----
+// ---- Source Tier Classification (Public) — imported from lib/confidence.js ----
 
-function classifySourceTier(source) {
+function _classifySourceTier(source) {
   if (source.doi) return 'S';
   if (source.type === 'standard') return 'S';
   if (source.type === 'patent' || source.type === 'rfc') return 'S';
