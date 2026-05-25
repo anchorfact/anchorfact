@@ -7,7 +7,7 @@ language: zh
 confidence: medium
 last_verified: '2026-05-25'
 created_date: '2026-04-28'
-generation_method: human_only
+generation_method: ai_structured
 derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false

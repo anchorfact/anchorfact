@@ -101,7 +101,7 @@ def get_article_markdown_url(article_id: str) -> str:
 def get_article_jsonld_url(article_id: str) -> str:
     return f"https://anchorfact.org/{article_id}/index.json"
 
-def list_categories() -> list[dict]:
+def list_categories_real() -> list[dict]:
     """列出所有领域及其文章数 — 从 index.json 中的 headline 推断类别"""
     manifest = load_article_index()
     cats: dict[str, int] = {}
