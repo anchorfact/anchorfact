@@ -4,9 +4,9 @@ title: Cell Structure
 schema_type: TechArticle
 category: science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -16,7 +16,7 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-science-01
-    statement: "Human body: 37 trillion cells"
+    statement: 'Human body: 37 trillion cells'
     source_title: Molecular Biology of the Cell (Alberts et al.)
     source_url: https://wwnorton.com/books/9780393884821
     confidence: high
@@ -53,20 +53,44 @@ primary_sources:
       - Walter P.
     institution: W.W. Norton
     url: https://wwnorton.com/mboc/
-  - title: "Cell Biology: A 2025 Review of Advances"
+  - title: 'Cell Biology: A 2025 Review of Advances'
     type: article
     year: 2025
     authors:
       - multiple
     institution: Nature Reviews Molecular Cell Biology
     url: https://doi.org/10.1038/s41580-2025-cell
-  - title: "Cell Structure and Function: A 2025 Review"
+  - title: 'Cell Structure and Function: A 2025 Review'
     type: article
     year: 2025
     authors:
       - multiple
     institution: Nature Reviews Molecular Cell Biology
     url: https://doi.org/10.1038/s41580-2025-cell
+  - title: Molecular Biology of the Cell (7th Edition)
+    authors:
+      - Alberts, B.
+      - Johnson, A.
+      - Lewis, J.
+      - Morgan, D.
+      - Raff, M.
+      - Roberts, K.
+      - Walter, P.
+    type: book
+    year: 2022
+    institution: W.W. Norton
+  - title: Essential Cell Biology (6th Edition)
+    authors:
+      - Alberts, B.
+      - Hopkin, K.
+      - Johnson, A.
+      - Morgan, D.
+      - Raff, M.
+      - Roberts, K.
+      - Walter, P.
+    type: book
+    year: 2023
+    institution: W.W. Norton
 secondary_sources:
   - title: A Brief History of Time
     type: book
@@ -79,6 +103,7 @@ secondary_sources:
     url: https://www.nature.com/
     institution: Springer Nature
 ---
+
 ## TL;DR
 
 Cells are the basic unit of life. Prokaryotes (bacteria, archaea): no nucleus, simple. Eukaryotes (animals, plants, fungi): nucleus, membrane-bound organelles. Key organelles: nucleus (DNA), mitochondria (energy, ATP), endoplasmic reticulum (protein synthesis), Golgi apparatus (protein packaging), lysosomes (digestion).

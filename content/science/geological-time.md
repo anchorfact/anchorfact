@@ -4,9 +4,9 @@ title: Geological Time Scale and Earth History
 schema_type: Article
 category: science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -55,7 +55,7 @@ primary_sources:
       - Luczaj J.A.
     institution: W.H. Freeman
     url: https://www.macmillanlearning.com/earth-history/
-  - title: "The Geologic Time Scale 2025: Updated International Chronostratigraphic Chart"
+  - title: 'The Geologic Time Scale 2025: Updated International Chronostratigraphic Chart'
     type: report
     year: 2025
     authors:
@@ -69,6 +69,16 @@ primary_sources:
       - ICS
     institution: International Commission on Stratigraphy
     url: https://stratigraphy.org/chart
+  - title: A Geologic Time Scale 2020
+    authors:
+      - Gradstein, F.M.
+      - Ogg, J.G.
+      - Schmitz, M.D.
+      - Ogg, G.M.
+    type: book
+    year: 2020
+    doi: 10.1016/B978-0-12-824360-2
+    institution: Elsevier
 secondary_sources:
   - title: A Geologic Time Scale 2020 (Gradstein, Ogg, Schmitz, Ogg — Elsevier)
     type: textbook
@@ -94,15 +104,16 @@ secondary_sources:
       - International Commission on Stratigraphy
     institution: IUGS
     url: https://stratigraphy.org/chart
-  - title: "Deep Time: An Illustrated History of Earth (Hazen)"
+  - title: 'Deep Time: An Illustrated History of Earth (Hazen)'
     type: textbook
     year: 2024
     authors:
       - Hazen, Robert M.
     institution: W. W. Norton
     url: https://wwnorton.com/books/9780393608403
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Earth's 4.54-billion-year history is recorded in rocks, fossils, and isotopes. The geological time scale organizes this history into eons, eras, periods, and epochs — each defined by major geological or biological events.
 

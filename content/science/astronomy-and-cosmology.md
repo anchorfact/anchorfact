@@ -1,12 +1,12 @@
 ---
 id: astronomy-and-cosmology
-title: "Astronomy and Cosmology: From Solar System to the Universe"
+title: 'Astronomy and Cosmology: From Solar System to the Universe'
 schema_type: Article
 category: science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -17,7 +17,7 @@ data_period: static
 atomic_facts:
   - id: fact-sci-astro-001
     statement: The Cosmic Microwave Background radiation, discovered by Penzias and Wilson in 1965, provides the strongest evidence for the Big Bang theory.
-    source_title: "Planck 2018 results: Cosmological parameters (A&A 2020)"
+    source_title: 'Planck 2018 results: Cosmological parameters (A&A 2020)'
     source_url: https://doi.org/10.1051/0004-6361/201833910
     confidence: high
   - id: fact-sci-astro-002
@@ -42,6 +42,19 @@ primary_sources:
     year: 2024
     url: https://webb.nasa.gov/
     institution: NASA
+  - title: An Introduction to Modern Astrophysics (2nd Edition)
+    authors:
+      - Carroll, B.W.
+      - Ostlie, D.A.
+    type: book
+    year: 2017
+    institution: Cambridge University Press
+  - title: Cosmology
+    authors:
+      - Weinberg, S.
+    type: book
+    year: 2008
+    institution: Oxford University Press
 known_gaps:
   - Dark energy nature
   - Gravitational wave astronomy (LIGO)
@@ -63,7 +76,7 @@ secondary_sources:
       - Hawking, Stephen
     institution: Bantam Books
     url: https://www.penguinrandomhouse.com/books/18981/a-brief-history-of-time-by-stephen-hawking/
-  - title: "JWST First Science Results: Early Universe and Exoplanet Atmospheres"
+  - title: 'JWST First Science Results: Early Universe and Exoplanet Atmospheres'
     type: journal_article
     year: 2024
     authors:
@@ -77,22 +90,23 @@ secondary_sources:
       - Event Horizon Telescope Collaboration
     institution: Nature / ApJL
     url: https://doi.org/10.3847/2041-8213/ab0ec7
-  - title: "Webb Space Telescope First 3 Years: Transformative Discoveries 2022-2025"
+  - title: 'Webb Space Telescope First 3 Years: Transformative Discoveries 2022-2025'
     type: article
     year: 2025
     authors:
       - multiple
     institution: Nature Astronomy
     url: https://doi.org/10.1038/s41550-2025-jwst
-  - title: "Dark Energy and Cosmic Acceleration: DESI Year 1 Results and Future Surveys (2025)"
+  - title: 'Dark Energy and Cosmic Acceleration: DESI Year 1 Results and Future Surveys (2025)'
     type: article
     year: 2025
     authors:
       - DESI Collaboration
     institution: The Astrophysical Journal
     url: https://doi.org/10.3847/apj.2025.desi
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Astronomy explores the universe from nearby planets to the cosmic horizon. The Big Bang model, confirmed by cosmic microwave background, describes a 13.8-billion-year history of expansion and structure formation.
 

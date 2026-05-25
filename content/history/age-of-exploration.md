@@ -4,9 +4,9 @@ title: Age of Exploration
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -19,27 +19,27 @@ atomic_facts:
     statement: >-
       The Age of Exploration (15th-17th centuries) was driven by European powers seeking new trade routes to Asia, bypassing Ottoman-controlled land routes. Technological enablers: caravel ships,
       improved navigation (astrolabe, compass), cartography. Consequences: Columbian Exchange (global transfer of crops, animals, diseases), colonization, globalizati
-    source_title: "Over the Edge of the World: Magellan's Terrifying Circumnavigation (Laurence Bergreen)"
+    source_title: 'Over the Edge of the World: Magellan''s Terrifying Circumnavigation (Laurence Bergreen)'
     source_url: https://www.harpercollins.com/products/over-the-edge-of-the-world-laurence-bergreen
     confidence: medium
   - id: fact-history-002
-    statement: "Key voyages: Columbus (1492, reached Americas thinking it was Asia), Vasco da Gama (1498, reached India around Africa), Magellan/Elcano (1519-22, first circumnavigation)."
-    source_title: "Over the Edge of the World: Magellan's Terrifying Circumnavigation (Laurence Bergreen)"
+    statement: 'Key voyages: Columbus (1492, reached Americas thinking it was Asia), Vasco da Gama (1498, reached India around Africa), Magellan/Elcano (1519-22, first circumnavigation).'
+    source_title: 'Over the Edge of the World: Magellan''s Terrifying Circumnavigation (Laurence Bergreen)'
     source_url: https://www.harpercollins.com/products/over-the-edge-of-the-world-laurence-bergreen
     confidence: medium
   - id: fact-history-003
     statement: Portuguese and Spanish empires divided by Treaty of Tordesillas (1494).
-    source_title: "Over the Edge of the World: Magellan's Terrifying Circumnavigation (Laurence Bergreen)"
+    source_title: 'Over the Edge of the World: Magellan''s Terrifying Circumnavigation (Laurence Bergreen)'
     source_url: https://www.harpercollins.com/products/over-the-edge-of-the-world-laurence-bergreen
     confidence: medium
   - id: fact-history-004
-    statement: "Columbian Exchange: potatoes, tomatoes, maize to Europe; wheat, horses, smallpox to Americas."
-    source_title: "Over the Edge of the World: Magellan's Terrifying Circumnavigation (Laurence Bergreen)"
+    statement: 'Columbian Exchange: potatoes, tomatoes, maize to Europe; wheat, horses, smallpox to Americas.'
+    source_title: 'Over the Edge of the World: Magellan''s Terrifying Circumnavigation (Laurence Bergreen)'
     source_url: https://www.harpercollins.com/products/over-the-edge-of-the-world-laurence-bergreen
     confidence: medium
   - id: fact-history-005
     statement: Devastating impact on indigenous populations (90% decline in some areas).
-    source_title: "Over the Edge of the World: Magellan's Terrifying Circumnavigation (Laurence Bergreen)"
+    source_title: 'Over the Edge of the World: Magellan''s Terrifying Circumnavigation (Laurence Bergreen)'
     source_url: https://www.harpercollins.com/products/over-the-edge-of-the-world-laurence-bergreen
     confidence: medium
 completeness: 0.88
@@ -51,7 +51,7 @@ disputed_statements:
       The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
       available evidence
 primary_sources:
-  - title: "Over the Edge of the World: Magellan's Terrifying Circumnavigation (Laurence Bergreen)"
+  - title: 'Over the Edge of the World: Magellan''s Terrifying Circumnavigation (Laurence Bergreen)'
     type: book
     year: 2003
     url: https://www.harpercollins.com/products/over-the-edge-of-the-world-laurence-bergreen
@@ -63,7 +63,7 @@ primary_sources:
       - Brotton J.
     institution: Penguin
     url: https://www.penguinrandomhouse.com/exploration/
-  - title: "The Age of Exploration: A Global History (2025)"
+  - title: 'The Age of Exploration: A Global History (2025)'
     type: book
     year: 2025
     authors:
@@ -84,8 +84,20 @@ primary_sources:
       - multiple
     institution: Cambridge University Press
     url: https://doi.org/10.1017/cbo.2025.exploration
+  - title: 'The Age of Exploration: A Global History'
+    authors:
+      - Fernandez-Armesto, F.
+    type: book
+    year: 2006
+    institution: Oxford University Press
+  - title: A History of the World in 100 Objects
+    authors:
+      - MacGregor, N.
+    type: book
+    year: 2010
+    institution: Allen Lane
 secondary_sources:
-  - title: "QLoRA: Efficient Finetuning of Quantized Language Models"
+  - title: 'QLoRA: Efficient Finetuning of Quantized Language Models'
     authors:
       - Dettmers
     type: academic_paper
@@ -99,6 +111,7 @@ secondary_sources:
     url: https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
     institution: Penguin Books
 ---
+
 ## TL;DR
 
 The Age of Exploration (15th-17th centuries) was driven by European powers seeking new trade routes to Asia, bypassing Ottoman-controlled land routes. Technological enablers: caravel ships, improved navigation (astrolabe, compass), cartography. Consequences: Columbian Exchange (global transfer of crops, animals, diseases), colonization, globalization.

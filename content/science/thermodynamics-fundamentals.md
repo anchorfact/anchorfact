@@ -4,9 +4,9 @@ title: Thermodynamics Fundamentals
 schema_type: Article
 category: science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -16,17 +16,17 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-sci-therm-001
-    statement: "First Law: energy conservation (Mayer, Joule, Helmholtz 1840s)."
+    statement: 'First Law: energy conservation (Mayer, Joule, Helmholtz 1840s).'
     source_title: Callen, H.B. Thermodynamics 2nd ed. (Wiley 1985)
     source_url: https://www.wiley.com/en-us/Thermodynamics+and+an+Introduction+to+Thermostatistics%2C+2nd+Edition-p-9780471862567
     confidence: high
   - id: fact-sci-therm-002
-    statement: "Second Law (Clausius 1850): entropy in an isolated system never decreases."
+    statement: 'Second Law (Clausius 1850): entropy in an isolated system never decreases.'
     source_title: Fermi, E. Thermodynamics (Dover 1956)
     source_url: https://store.doverpublications.com/048660361x.html
     confidence: high
   - id: fact-sci-therm-003
-    statement: "Shannon entropy (1948): H=-Σp·log(p) links thermodynamics and information theory."
+    statement: 'Shannon entropy (1948): H=-Σp·log(p) links thermodynamics and information theory.'
     source_title: Shannon, C.E. A Mathematical Theory of Communication (BSTJ 1948)
     source_url: https://doi.org/10.1002/j.1538-7305.1948.tb01338.x
     confidence: high
@@ -42,11 +42,24 @@ primary_sources:
     year: 2022
     url: https://global.oup.com/academic/product/atkins-physical-chemistry-9780198847816/
     institution: Oxford University Press
-  - title: "Thermodynamics: An Engineering Approach, 10th Edition"
+  - title: 'Thermodynamics: An Engineering Approach, 10th Edition'
     type: textbook
     year: 2023
     url: https://www.mheducation.com/highered/product/thermodynamics-engineering-approach-cengel-boles/M9781266152115.html
     institution: McGraw-Hill
+  - title: Thermodynamics and an Introduction to Thermostatistics (2nd Edition)
+    authors:
+      - Callen, H.B.
+    type: book
+    year: 1985
+    institution: Wiley
+  - title: Concepts in Thermal Physics (2nd Edition)
+    authors:
+      - Blundell, S.J.
+      - Blundell, K.M.
+    type: book
+    year: 2009
+    institution: Oxford University Press
 secondary_sources:
   - title: Thermodynamics and an Introduction to Thermostatistics (Callen)
     type: textbook
@@ -55,7 +68,7 @@ secondary_sources:
       - Callen, Herbert B.
     institution: Wiley
     url: https://www.wiley.com/en-us/Thermodynamics+and+an+Introduction+to+Thermostatistics%2C+2nd+Edition-p-9780471862567
-  - title: "Modern Thermodynamics: From Heat Engines to Dissipative Structures"
+  - title: 'Modern Thermodynamics: From Heat Engines to Dissipative Structures'
     type: textbook
     year: 2014
     authors:
@@ -70,29 +83,30 @@ secondary_sources:
       - multiple
     institution: Nature Reviews Materials
     url: https://doi.org/10.1038/s41578-024-00674-z
-  - title: "Energy, Entropy, and Engines: An Introduction to Thermodynamics (Sanjeev Chandra)"
+  - title: 'Energy, Entropy, and Engines: An Introduction to Thermodynamics (Sanjeev Chandra)'
     type: textbook
     year: 2016
     authors:
       - Chandra, Sanjeev
     institution: Wiley
     url: https://doi.org/10.1002/9781119013150
-  - title: "Non-Equilibrium Thermodynamics: From Maxwell's Demon to Quantum Engines (2025 Review)"
+  - title: 'Non-Equilibrium Thermodynamics: From Maxwell''s Demon to Quantum Engines (2025 Review)'
     type: article
     year: 2025
     authors:
       - multiple
     institution: Reviews of Modern Physics
     url: https://doi.org/10.1103/revmodphys.2025.thermo
-  - title: "Information Thermodynamics: Landauer's Principle and Beyond (2025)"
+  - title: 'Information Thermodynamics: Landauer''s Principle and Beyond (2025)'
     type: article
     year: 2025
     authors:
       - multiple
     institution: Nature Physics
     url: https://doi.org/10.1038/s41567-2025-thermo
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Thermodynamics governs energy transformation — from steam engines to living cells. Its four laws are universal, applying equally to black holes and biochemical reactions, making it the most broadly applicable framework in physics.
 

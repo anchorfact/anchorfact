@@ -4,9 +4,9 @@ title: Mongol Empire
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -17,7 +17,7 @@ data_period: static
 atomic_facts:
   - id: fact-history-01
     statement: The Mongol Empire was the largest contiguous land empire in history
-    source_title: "Empire: How Britain Made the Modern World"
+    source_title: 'Empire: How Britain Made the Modern World'
     source_url: https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540
     confidence: high
   - id: fact-history-02
@@ -39,7 +39,7 @@ primary_sources:
     year: 2004
     url: https://www.penguinrandomhouse.com/books/164748/genghis-khan-and-the-making-of-the-modern-world-by-jack-weatherford/
     institution: Crown
-  - title: "The Mongol Empire: Genghis Khan and the Making of the Modern World (2025 Edition)"
+  - title: 'The Mongol Empire: Genghis Khan and the Making of the Modern World (2025 Edition)'
     type: book
     year: 2025
     authors:
@@ -67,8 +67,20 @@ primary_sources:
       - Weatherford J.
     institution: Broadway Books
     url: https://www.penguinrandomhouse.com/genghis-khan/
+  - title: Genghis Khan and the Making of the Modern World
+    authors:
+      - Weatherford, J.
+    type: book
+    year: 2004
+    institution: Crown
+  - title: The Mongols (2nd Edition)
+    authors:
+      - Morgan, D.
+    type: book
+    year: 2007
+    institution: Wiley-Blackwell
 secondary_sources:
-  - title: "Empire: How Britain Made the Modern World"
+  - title: 'Empire: How Britain Made the Modern World'
     type: book
     year: 2003
     url: https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540
@@ -79,6 +91,7 @@ secondary_sources:
     url: https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
     institution: Penguin Books
 ---
+
 ## TL;DR
 
 The Mongol Empire (1206-1368) was the largest contiguous land empire in history (24 million km² at its peak). Founded by Genghis Khan (Temujin) who united Mongol tribes. Mongols were fearsome warriors but also facilitated trade, cultural exchange, and religious tolerance across Eurasia (Pax Mongolica).

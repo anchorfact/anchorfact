@@ -4,9 +4,9 @@ title: Earthquakes
 schema_type: TechArticle
 category: science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -16,12 +16,12 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-science-01
-    statement: "Largest recorded: 1960 Chile"
+    statement: 'Largest recorded: 1960 Chile'
     source_title: Earthquakes (Bolt, 5th Ed)
     source_url: https://us.macmillan.com/books/9780716756187/earthquakes
     confidence: high
   - id: fact-science-02
-    statement: "Surface waves: cause most damage"
+    statement: 'Surface waves: cause most damage'
     source_title: Earthquakes (Bolt, 5th Ed)
     source_url: https://us.macmillan.com/books/9780716756187/earthquakes
     confidence: high
@@ -45,14 +45,14 @@ primary_sources:
       - Segall P.
     institution: Princeton University Press
     url: https://press.princeton.edu/earthquakes/
-  - title: "Seismic Hazard Assessment: A 2025 USGS Review"
+  - title: 'Seismic Hazard Assessment: A 2025 USGS Review'
     type: report
     year: 2025
     authors:
       - USGS
     institution: USGS
     url: https://www.usgs.gov/earthquake-hazards
-  - title: "Earthquakes: A Very Short Introduction (2025)"
+  - title: 'Earthquakes: A Very Short Introduction (2025)'
     type: book
     year: 2025
     authors:
@@ -66,6 +66,19 @@ primary_sources:
       - Segall P.
     institution: Princeton University Press
     url: https://press.princeton.edu/earthquakes/
+  - title: 'Earthquake Seismology: An Introduction'
+    authors:
+      - Stein, S.
+      - Wysession, M.
+    type: book
+    year: 2003
+    institution: Wiley-Blackwell
+  - title: The Mechanics of Earthquakes and Faulting (3rd Edition)
+    authors:
+      - Scholz, C.H.
+    type: book
+    year: 2019
+    institution: Cambridge University Press
 secondary_sources:
   - title: A Brief History of Time
     type: book
@@ -78,6 +91,7 @@ secondary_sources:
     url: https://www.nature.com/
     institution: Springer Nature
 ---
+
 ## TL;DR
 
 Earthquakes occur when tectonic plates suddenly slip along faults, releasing accumulated stress as seismic waves. Measured by seismographs. Magnitude scales: Richter (local, historical), Moment Magnitude (Mw, modern — logarithmic: each 1.0 increase = 32x more energy). Largest recorded: 1960 Chile (Mw 9.5).

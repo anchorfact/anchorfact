@@ -4,9 +4,9 @@ title: Climate Change
 schema_type: TechArticle
 category: science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -21,12 +21,12 @@ atomic_facts:
     source_url: https://www.ipcc.ch/report/ar6/syr/
     confidence: medium
   - id: fact-science-02
-    statement: "CO₂ levels: pre-industrial 280ppm → current 420+ ppm — highest in 800,000 years"
+    statement: 'CO₂ levels: pre-industrial 280ppm → current 420+ ppm — highest in 800,000 years'
     source_title: IPCC Sixth Assessment Report (AR6)
     source_url: https://www.ipcc.ch/report/ar6/syr/
     confidence: medium
   - id: fact-science-03
-    statement: "IPCC: 97%+ of climate scientists agree human activity is the primary cause"
+    statement: 'IPCC: 97%+ of climate scientists agree human activity is the primary cause'
     source_title: IPCC Sixth Assessment Report (AR6)
     source_url: https://www.ipcc.ch/report/ar6/syr/
     confidence: medium
@@ -41,7 +41,7 @@ primary_sources:
     year: 2023
     url: https://www.ipcc.ch/report/ar6/syr/
     institution: IPCC
-  - title: "Climate Change: A Very Short Introduction (2025 5th Edition)"
+  - title: 'Climate Change: A Very Short Introduction (2025 5th Edition)'
     type: book
     year: 2025
     authors:
@@ -55,25 +55,31 @@ primary_sources:
       - Thunberg G.
     institution: Penguin
     url: https://www.penguinrandomhouse.com/climate-book/
-  - title: "Climate Change: A Very Short Introduction (5th Edition, 2025)"
+  - title: 'Climate Change: A Very Short Introduction (5th Edition, 2025)'
     type: book
     year: 2025
     authors:
       - Maslin M.
     institution: Oxford University Press
     url: https://global.oup.com/vsi-climate/
+  - title: Global Warming of 1.5°C (IPCC Special Report)
+    type: government_report
+    year: 2018
+    doi: 10.1017/9781009157940
+    institution: IPCC / Cambridge University Press
 secondary_sources:
   - title: Biology (Campbell, 12th Edition)
     type: textbook
     year: 2020
     url: https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058
     institution: Pearson Education
-  - title: "National Geographic: Science & Exploration"
+  - title: 'National Geographic: Science & Exploration'
     type: reference
     year: 2024
     url: https://www.nationalgeographic.com/science
     institution: National Geographic Society
 ---
+
 ## TL;DR
 
 Climate change is the long-term shift in global temperatures and weather patterns, primarily caused by human greenhouse gas emissions (CO₂, CH₄) since the Industrial Revolution. Global average temperature has risen ~1.2°C above pre-industrial levels. Effects: sea level rise, extreme weather, biodiversity loss.

@@ -2,31 +2,31 @@
 atomic_facts:
   - confidence: high
     id: fact-ai-001
-    source_title: "Dropout: A Simple Way to Prevent Neural Networks from Overfitting"
+    source_title: 'Dropout: A Simple Way to Prevent Neural Networks from Overfitting'
     source_url: https://jmlr.org/papers/v15/srivastava14a.html
     statement: >-
       Overfitting occurs when a model learns noise and patterns specific to training data, failing to generalize to unseen data. Signs: low training error, high validation error. Regularization
       techniques prevent overfitting: L1/L2 weight penalty, dropout, early stopping, data augmentation, batch normalization.
   - confidence: high
     id: fact-ai-002
-    source_title: "Dropout: A Simple Way to Prevent Neural Networks from Overfitting"
+    source_title: 'Dropout: A Simple Way to Prevent Neural Networks from Overfitting'
     source_url: https://jmlr.org/papers/v15/srivastava14a.html
-    statement: "Dropout (Srivastava et al., 2014): randomly deactivate neurons during training — forces network to learn redundant representations."
+    statement: 'Dropout (Srivastava et al., 2014): randomly deactivate neurons during training — forces network to learn redundant representations.'
   - confidence: medium
     id: fact-ai-003
     source_title: Deep Learning (Goodfellow, Bengio, Courville)
     source_url: https://www.deeplearningbook.org/
-    statement: "L2 regularization: add λ||w||² to loss — penalizes large weights."
+    statement: 'L2 regularization: add λ||w||² to loss — penalizes large weights.'
   - confidence: medium
     id: fact-ai-004
     source_title: Deep Learning (Goodfellow, Bengio, Courville)
     source_url: https://www.deeplearningbook.org/
-    statement: "Data augmentation: create synthetic training data (rotate/crop images, synonym replacement for text)."
+    statement: 'Data augmentation: create synthetic training data (rotate/crop images, synonym replacement for text).'
 category: ai
 completeness: 0.88
-confidence: high
+confidence: medium
 conflict_of_interest: none_declared
-created_date: "2026-05-22"
+created_date: '2026-05-22'
 data_period: static
 derived_from_human_seed: true
 disputed_statements:
@@ -40,9 +40,9 @@ known_gaps:
   - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
   - Recent developments from 2025-2026 may not be reflected
 language: en
-last_verified: "2026-05-22"
+last_verified: '2026-05-25'
 primary_sources:
-  - title: "Dropout: A Simple Way to Prevent Neural Networks from Overfitting"
+  - title: 'Dropout: A Simple Way to Prevent Neural Networks from Overfitting'
     type: journal_article
     year: 2014
     authors:
@@ -67,6 +67,25 @@ primary_sources:
       - Neyshabur, Behnam
     institution: ICLR 2021
     url: https://arxiv.org/abs/2010.01412
+  - title: Understanding Deep Learning Requires Rethinking Generalization
+    authors:
+      - Zhang, C.
+      - Bengio, S.
+      - Hardt, M.
+      - Recht, B.
+      - Vinyals, O.
+    type: academic_paper
+    year: 2017
+    doi: 10.1145/3446776
+    institution: ICLR / CACM
+  - title: A Unified Approach to Interpreting Model Predictions (SHAP)
+    authors:
+      - Lundberg, S.M.
+      - Lee, S.
+    type: academic_paper
+    year: 2017
+    url: https://arxiv.org/abs/1705.07874
+    institution: NeurIPS
 schema_type: TechArticle
 secondary_sources:
   - authors:
@@ -76,7 +95,7 @@ secondary_sources:
       - Sutskever, Ilya
       - Salakhutdinov, Ruslan
     institution: JMLR
-    title: "Dropout: A Simple Way to Prevent Neural Networks from Overfitting"
+    title: 'Dropout: A Simple Way to Prevent Neural Networks from Overfitting'
     type: academic_paper
     url: https://jmlr.org/papers/v15/srivastava14a.html
     year: 2014
@@ -102,8 +121,9 @@ secondary_sources:
     institution: IEEE Access
     url: https://doi.org/10.1109/ACCESS.2025.3567842
 title: Overfitting and Regularization
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 
 Overfitting occurs when a model learns noise and patterns specific to training data, failing to generalize to unseen data. Signs: low training error, high validation error. Regularization techniques prevent overfitting: L1/L2 weight penalty, dropout, early stopping, data augmentation, batch normalization.

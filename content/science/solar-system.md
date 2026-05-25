@@ -4,9 +4,9 @@ title: Solar System
 schema_type: TechArticle
 category: science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -21,7 +21,7 @@ atomic_facts:
     source_url: https://science.nasa.gov/solar-system/
     confidence: medium
   - id: fact-science-02
-    statement: "Jupiter: largest , Great Red Spot , 95 known moons"
+    statement: 'Jupiter: largest , Great Red Spot , 95 known moons'
     source_title: NASA Solar System Exploration
     source_url: https://science.nasa.gov/solar-system/
     confidence: medium
@@ -45,14 +45,14 @@ primary_sources:
       - multiple
     institution: Cambridge University Press
     url: https://doi.org/10.1017/cbo.2025.solar
-  - title: "Solar System Exploration: From Voyager to JWST (2025)"
+  - title: 'Solar System Exploration: From Voyager to JWST (2025)'
     type: article
     year: 2025
     authors:
       - multiple
     institution: Nature Astronomy
     url: https://doi.org/10.1038/s41550-2025-solar
-  - title: "The Solar System: A Very Short Introduction (2025)"
+  - title: 'The Solar System: A Very Short Introduction (2025)'
     type: book
     year: 2025
     authors:
@@ -66,8 +66,23 @@ primary_sources:
       - multiple
     institution: Cambridge University Press
     url: https://doi.org/10.1017/cbo.2025.solar
+  - title: The New Solar System (4th Edition)
+    authors:
+      - Beatty, J.K.
+      - Petersen, C.C.
+      - Chaikin, A.
+    type: book
+    year: 1999
+    institution: Cambridge University Press
+  - title: Solar System Dynamics
+    authors:
+      - Murray, C.D.
+      - Dermott, S.F.
+    type: book
+    year: 1999
+    institution: Cambridge University Press
 secondary_sources:
-  - title: "QLoRA: Efficient Finetuning of Quantized Language Models"
+  - title: 'QLoRA: Efficient Finetuning of Quantized Language Models'
     authors:
       - Dettmers
     type: academic_paper
@@ -81,6 +96,7 @@ secondary_sources:
     url: https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058
     institution: Pearson Education
 ---
+
 ## TL;DR
 
 The Solar System formed ~4.6 billion years ago from a molecular cloud. Sun (99.86% of mass) powers the system via nuclear fusion (H → He). Eight planets: Mercury, Venus, Earth, Mars (rocky inner), Jupiter, Saturn, Uranus, Neptune (gas/ice giants). Asteroid belt (Mars-Jupiter), Kuiper belt (beyond Neptune).

@@ -4,9 +4,9 @@ title: Cold War
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -17,17 +17,17 @@ data_period: static
 atomic_facts:
   - id: fact-history-01
     statement: The Cold War was a geopolitical struggle between the United States and Soviet Union — ideological , nuclear arms race, proxy wars, space race
-    source_title: "The Cold War: A New History (John Lewis Gaddis)"
+    source_title: 'The Cold War: A New History (John Lewis Gaddis)'
     source_url: https://www.penguinrandomhouse.com/books/256540/the-cold-war-by-john-lewis-gaddis/
     confidence: high
   - id: fact-history-02
     statement: Ended with the dissolution of the USSR in December 1991
-    source_title: "The Cold War: A New History (John Lewis Gaddis)"
+    source_title: 'The Cold War: A New History (John Lewis Gaddis)'
     source_url: https://www.penguinrandomhouse.com/books/256540/the-cold-war-by-john-lewis-gaddis/
     confidence: high
   - id: fact-history-03
-    statement: "Key moments: Berlin Blockade , Korean War , Cuban Missile Crisis , Vietnam War , Soviet-Afghan War , Berlin Wall falls , USSR dissolution"
-    source_title: "The Cold War: A New History (John Lewis Gaddis)"
+    statement: 'Key moments: Berlin Blockade , Korean War , Cuban Missile Crisis , Vietnam War , Soviet-Afghan War , Berlin Wall falls , USSR dissolution'
+    source_title: 'The Cold War: A New History (John Lewis Gaddis)'
     source_url: https://www.penguinrandomhouse.com/books/256540/the-cold-war-by-john-lewis-gaddis/
     confidence: high
 completeness: 0.88
@@ -39,26 +39,26 @@ disputed_statements:
       Historians disagree on whether the Cold War was primarily an ideological struggle, a geopolitical power contest, or both; interpretations vary across revisionist, post-revisionist, and orthodox
       schools
 primary_sources:
-  - title: "The Cold War: A New History (John Lewis Gaddis)"
+  - title: 'The Cold War: A New History (John Lewis Gaddis)'
     type: book
     year: 2005
     url: https://www.penguinrandomhouse.com/books/256540/the-cold-war-by-john-lewis-gaddis/
     institution: Penguin Press
-  - title: "The Cold War: A World History (2025 Updated Edition)"
+  - title: 'The Cold War: A World History (2025 Updated Edition)'
     type: book
     year: 2025
     authors:
       - Westad O.A.
     institution: Basic Books
     url: https://www.basicbooks.com/cold-war/
-  - title: "The Global Cold War: Third World Interventions (2025 Edition)"
+  - title: 'The Global Cold War: Third World Interventions (2025 Edition)'
     type: book
     year: 2025
     authors:
       - Westad O.A.
     institution: Cambridge University Press
     url: https://doi.org/10.1017/cbo.2025.coldwar
-  - title: "The Cold War: A World History (2025)"
+  - title: 'The Cold War: A World History (2025)'
     type: book
     year: 2025
     authors:
@@ -72,8 +72,21 @@ primary_sources:
       - Westad O.A.
     institution: Cambridge University Press
     url: https://doi.org/10.1017/cbo.2025.coldwar
+  - title: 'The Cold War: A World History'
+    authors:
+      - Westad, O.A.
+    type: book
+    year: 2017
+    institution: Basic Books
+  - title: The Global Cold War
+    authors:
+      - Westad, O.A.
+    type: book
+    year: 2005
+    doi: 10.1017/CBO9780511817991
+    institution: Cambridge University Press
 secondary_sources:
-  - title: "The Cold War: A New History"
+  - title: 'The Cold War: A New History'
     type: book
     year: 2005
     url: https://www.penguinrandomhouse.com/books/292237/the-cold-war-by-john-lewis-gaddis/
@@ -84,6 +97,7 @@ secondary_sources:
     url: https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
     institution: Penguin Books
 ---
+
 ## TL;DR
 
 The Cold War (1947-1991) was a geopolitical struggle between the United States and Soviet Union — ideological (capitalism vs. communism), nuclear arms race, proxy wars, space race. No direct military conflict between the superpowers. Ended with the dissolution of the USSR in December 1991.

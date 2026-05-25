@@ -4,7 +4,7 @@ atomic_facts:
     id: fact-ai-01
     source_title: Deep Learning (Goodfellow, Bengio, Courville)
     source_url: https://www.deeplearningbook.org/
-    statement: "Universal Approximation Theorem: a single hidden layer can approximate any continuous function"
+    statement: 'Universal Approximation Theorem: a single hidden layer can approximate any continuous function'
   - confidence: high
     id: fact-ai-001
     source_title: ImageNet Classification with Deep Convolutional Networks (AlexNet)
@@ -16,17 +16,17 @@ atomic_facts:
     id: fact-ai-002
     source_title: Deep Learning (Goodfellow, Bengio, Courville)
     source_url: https://www.deeplearningbook.org/
-    statement: "Activation functions: ReLU (most common), sigmoid (binary out), tanh (-1 to 1), softmax (multi-class probability)."
+    statement: 'Activation functions: ReLU (most common), sigmoid (binary out), tanh (-1 to 1), softmax (multi-class probability).'
   - confidence: medium
     id: fact-ai-003
     source_title: Deep Learning (Goodfellow, Bengio, Courville)
     source_url: https://www.deeplearningbook.org/
-    statement: "Universal Approximation Theorem: a single hidden layer can approximate any continuous function (given enough neurons)."
+    statement: 'Universal Approximation Theorem: a single hidden layer can approximate any continuous function (given enough neurons).'
 category: ai
 completeness: 0.88
-confidence: high
+confidence: medium
 conflict_of_interest: none_declared
-created_date: "2026-05-22"
+created_date: '2026-05-22'
 data_period: static
 derived_from_human_seed: true
 disputed_statements:
@@ -40,7 +40,7 @@ known_gaps:
   - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
   - Recent developments from 2025-2026 may not be reflected
 language: en
-last_verified: "2026-05-22"
+last_verified: '2026-05-25'
 primary_sources:
   - title: Deep Learning (Goodfellow, Bengio, Courville)
     type: textbook
@@ -51,20 +51,35 @@ primary_sources:
       - Courville, Aaron
     institution: MIT Press
     url: https://www.deeplearningbook.org/
-  - title: "The Modern Mathematics of Deep Learning: Foundations and Recent Advances"
+  - title: 'The Modern Mathematics of Deep Learning: Foundations and Recent Advances'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: Acta Numerica (Cambridge)
     url: https://arxiv.org/abs/2503.12345
-  - title: "A Comprehensive Survey of Deep Learning: Architectures, Training, and Applications"
+  - title: 'A Comprehensive Survey of Deep Learning: Architectures, Training, and Applications'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: IEEE Access
     url: https://doi.org/10.1109/ACCESS.2025.3567842
+  - title: Deep Learning
+    authors:
+      - Goodfellow, I.
+      - Bengio, Y.
+      - Courville, A.
+    type: book
+    year: 2016
+    institution: MIT Press
+  - title: 'Neural Networks and Deep Learning: A Textbook (2nd Edition)'
+    authors:
+      - Aggarwal, C.C.
+    type: book
+    year: 2023
+    doi: 10.1007/978-3-031-29642-0
+    institution: Springer
 schema_type: TechArticle
 secondary_sources:
   - authors:
@@ -98,8 +113,9 @@ secondary_sources:
     institution: Acta Numerica / arXiv
     url: https://arxiv.org/abs/2503.12345
 title: Neural Network Basics
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 
 Neural networks are computing systems inspired by biological neurons: layers of interconnected nodes that transform input data through weighted connections and activation functions. A simple feedforward network: Input Layer → Hidden Layer(s) → Output Layer. Each neuron computes weighted sum + bias + activation function.

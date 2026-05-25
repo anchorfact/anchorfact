@@ -4,9 +4,9 @@ title: Silk Road
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -17,24 +17,24 @@ data_period: static
 atomic_facts:
   - id: fact-history-01
     statement: The Silk Road was a network of trade routes connecting East Asia to Europe from 130 BCE to 1453 CE
-    source_title: "The Silk Roads: A New History of the World (Peter Frankopan)"
+    source_title: 'The Silk Roads: A New History of the World (Peter Frankopan)'
     source_url: https://www.bloomsbury.com/us/silk-roads-9781408839973/
     confidence: high
   - id: fact-history-001
     statement: >-
       The Silk Road was a network of trade routes connecting East Asia to Europe from ~130 BCE to 1453 CE. It transported not just silk, but ideas, technologies, religions (Buddhism, Islam,
       Christianity), and diseases (Black Death). Not a single road — a web of land and sea routes across Eurasia.
-    source_title: "The Silk Roads: A New History of the World (Peter Frankopan)"
+    source_title: 'The Silk Roads: A New History of the World (Peter Frankopan)'
     source_url: https://www.bloomsbury.com/us/silk-roads-9781408839973/
     confidence: medium
   - id: fact-history-002
-    statement: "Cultural exchange: paper-making spread from China to Islamic world (8th century) to Europe."
-    source_title: "The Silk Roads: A New History of the World (Peter Frankopan)"
+    statement: 'Cultural exchange: paper-making spread from China to Islamic world (8th century) to Europe.'
+    source_title: 'The Silk Roads: A New History of the World (Peter Frankopan)'
     source_url: https://www.bloomsbury.com/us/silk-roads-9781408839973/
     confidence: medium
   - id: fact-history-003
-    statement: "Decline: Ottoman Empire blocked routes (1453), prompting European maritime exploration (Age of Discovery)."
-    source_title: "The Silk Roads: A New History of the World (Peter Frankopan)"
+    statement: 'Decline: Ottoman Empire blocked routes (1453), prompting European maritime exploration (Age of Discovery).'
+    source_title: 'The Silk Roads: A New History of the World (Peter Frankopan)'
     source_url: https://www.bloomsbury.com/us/silk-roads-9781408839973/
     confidence: medium
 completeness: 0.88
@@ -46,27 +46,39 @@ disputed_statements:
       The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
       available evidence
 primary_sources:
-  - title: "The Silk Roads: A New History of the World (Peter Frankopan)"
+  - title: 'The Silk Roads: A New History of the World (Peter Frankopan)'
     type: book
     year: 2015
     url: https://www.bloomsbury.com/us/silk-roads-9781408839973/
     institution: Bloomsbury
-  - title: "The Silk Roads: A New History of the World (2025 Illustrated Edition)"
+  - title: 'The Silk Roads: A New History of the World (2025 Illustrated Edition)'
     type: book
     year: 2025
     authors:
       - Frankopan P.
     institution: Bloomsbury
     url: https://www.bloomsbury.com/silk-roads/
-  - title: "The Silk Road: A Very Short Introduction (2025)"
+  - title: 'The Silk Road: A Very Short Introduction (2025)'
     type: book
     year: 2025
     authors:
       - Millward J.A.
     institution: Oxford University Press
     url: https://global.oup.com/vsi-silk-road/
+  - title: 'The Silk Roads: A New History of the World'
+    authors:
+      - Frankopan, P.
+    type: book
+    year: 2015
+    institution: Bloomsbury
+  - title: Empires of the Silk Road
+    authors:
+      - Beckwith, C.I.
+    type: book
+    year: 2009
+    institution: Princeton University Press
 secondary_sources:
-  - title: "The Silk Roads: A New History of the World"
+  - title: 'The Silk Roads: A New History of the World'
     type: book
     year: 2015
     url: https://www.bloomsbury.com/uk/silk-roads-9781408839973/
@@ -77,6 +89,7 @@ secondary_sources:
     url: https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
     institution: Penguin Books
 ---
+
 ## TL;DR
 
 The Silk Road was a network of trade routes connecting East Asia to Europe from ~130 BCE to 1453 CE. It transported not just silk, but ideas, technologies, religions (Buddhism, Islam, Christianity), and diseases (Black Death). Not a single road — a web of land and sea routes across Eurasia.

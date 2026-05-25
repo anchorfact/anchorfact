@@ -4,9 +4,9 @@ title: Industrial Revolution
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -17,17 +17,17 @@ data_period: static
 atomic_facts:
   - id: fact-history-01
     statement: The Industrial Revolution transformed agrarian societies into industrial powerhouses through mechanization, steam power, and factory systems
-    source_title: "The Industrial Revolution: A Very Short Introduction (Robert C. Allen)"
+    source_title: 'The Industrial Revolution: A Very Short Introduction (Robert C. Allen)'
     source_url: https://global.oup.com/academic/product/the-industrial-revolution-9780198706786
     confidence: high
   - id: fact-history-02
     statement: The most profound transformation in human history since agriculture
-    source_title: "The Industrial Revolution: A Very Short Introduction (Robert C. Allen)"
+    source_title: 'The Industrial Revolution: A Very Short Introduction (Robert C. Allen)'
     source_url: https://global.oup.com/academic/product/the-industrial-revolution-9780198706786
     confidence: high
   - id: fact-history-03
-    statement: "Second Industrial Revolution : steel, electricity, chemicals, telephone"
-    source_title: "The Industrial Revolution: A Very Short Introduction (Robert C. Allen)"
+    statement: 'Second Industrial Revolution : steel, electricity, chemicals, telephone'
+    source_title: 'The Industrial Revolution: A Very Short Introduction (Robert C. Allen)'
     source_url: https://global.oup.com/academic/product/the-industrial-revolution-9780198706786
     confidence: high
 completeness: 0.88
@@ -39,12 +39,12 @@ disputed_statements:
       The question of whether the Industrial Revolution improved living standards for the working class in the short term is fiercely debated between 'optimist' and 'pessimist' schools of economic
       history
 primary_sources:
-  - title: "The Industrial Revolution: A Very Short Introduction (Robert C. Allen)"
+  - title: 'The Industrial Revolution: A Very Short Introduction (Robert C. Allen)'
     type: book
     year: 2017
     url: https://global.oup.com/academic/product/the-industrial-revolution-9780198706786
     institution: Oxford University Press
-  - title: "The Industrial Revolution: A Very Short Introduction (2025)"
+  - title: 'The Industrial Revolution: A Very Short Introduction (2025)'
     type: book
     year: 2025
     authors:
@@ -65,6 +65,18 @@ primary_sources:
       - Allen R.C.
     institution: Cambridge University Press
     url: https://doi.org/10.1017/cbo.2025.industrial
+  - title: The British Industrial Revolution in Global Perspective
+    authors:
+      - Allen, R.C.
+    type: book
+    year: 2009
+    institution: Cambridge University Press
+  - title: 'The Enlightened Economy: Britain and the Industrial Revolution 1700-1850'
+    authors:
+      - Mokyr, J.
+    type: book
+    year: 2011
+    institution: Yale University Press
 secondary_sources:
   - title: The Industrial Revolution 1760-1830
     type: book
@@ -77,6 +89,7 @@ secondary_sources:
     url: https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
     institution: Penguin Books
 ---
+
 ## TL;DR
 
 The Industrial Revolution (1760-1840, Britain) transformed agrarian societies into industrial powerhouses through mechanization, steam power, and factory systems. It fundamentally changed how people lived, worked, and organized society. The most profound transformation in human history since agriculture.

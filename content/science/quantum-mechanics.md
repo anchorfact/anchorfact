@@ -4,9 +4,9 @@ title: Quantum Mechanics
 schema_type: TechArticle
 category: science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -23,7 +23,7 @@ atomic_facts:
     source_url: https://link.springer.com/book/9780306447907
     confidence: medium
   - id: fact-science-002
-    statement: "Double-slit experiment: single particles create interference patterns — wave-particle duality demonstrated."
+    statement: 'Double-slit experiment: single particles create interference patterns — wave-particle duality demonstrated.'
     source_title: Principles of Quantum Mechanics (Shankar)
     source_url: https://link.springer.com/book/9780306447907
     confidence: medium
@@ -55,7 +55,7 @@ primary_sources:
       - multiple
     institution: Reviews of Modern Physics
     url: https://doi.org/10.1103/revmodphys.2025.qm
-  - title: "Quantum Mechanics: The Theoretical Minimum (2025)"
+  - title: 'Quantum Mechanics: The Theoretical Minimum (2025)'
     type: book
     year: 2025
     authors:
@@ -63,6 +63,20 @@ primary_sources:
       - Friedman A.
     institution: Basic Books
     url: https://www.basicbooks.com/quantum/
+  - title: Introduction to Quantum Mechanics (3rd Edition)
+    authors:
+      - Griffiths, D.J.
+      - Schroeter, D.F.
+    type: book
+    year: 2018
+    institution: Cambridge University Press
+  - title: Modern Quantum Mechanics (3rd Edition)
+    authors:
+      - Sakurai, J.J.
+      - Napolitano, J.
+    type: book
+    year: 2020
+    institution: Cambridge University Press
 secondary_sources:
   - title: The Feynman Lectures on Physics, Vol. III
     type: book
@@ -75,6 +89,7 @@ secondary_sources:
     url: https://www.cambridge.org/highereducation/books/introduction-to-quantum-mechanics/453C5C8A7D52E149A239D9AF6BEF8CB9
     institution: David J. Griffiths, Cambridge University Press
 ---
+
 ## TL;DR
 
 Quantum mechanics (Planck 1900, Bohr, Heisenberg, Schrödinger, 1920s) describes physical phenomena at atomic and subatomic scales. Fundamental principles: wave-particle duality, quantization (energy in discrete units), uncertainty principle (cannot simultaneously know position and momentum precisely), superposition, entanglement.

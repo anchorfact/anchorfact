@@ -11,12 +11,12 @@ atomic_facts:
     id: fact-ai-002
     source_title: Python Data Science Handbook (Jake VanderPlas)
     source_url: https://jakevdp.github.io/PythonDataScienceHandbook/
-    statement: "Outliers: IQR method (Q1-1.5IQR, Q3+1.5IQR), Z-score (|z|>3)."
+    statement: 'Outliers: IQR method (Q1-1.5IQR, Q3+1.5IQR), Z-score (|z|>3).'
 category: ai
 completeness: 0.88
-confidence: high
+confidence: medium
 conflict_of_interest: none_declared
-created_date: "2026-05-22"
+created_date: '2026-05-22'
 data_period: static
 derived_from_human_seed: true
 disputed_statements:
@@ -28,14 +28,14 @@ known_gaps:
   - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
   - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 language: en
-last_verified: "2026-05-22"
+last_verified: '2026-05-25'
 primary_sources:
   - authors:
       - Han, Jiawei
       - Pei, Jian
       - Tong, Hanghang
     institution: Morgan Kaufmann / Elsevier
-    title: "Data Mining: Concepts and Techniques (Han, Pei, Tong, 4th Edition)"
+    title: 'Data Mining: Concepts and Techniques (Han, Pei, Tong, 4th Edition)'
     type: textbook
     url: https://doi.org/10.1016/C2020-0-00008-4
     year: 2022
@@ -45,7 +45,7 @@ primary_sources:
       - Gramfort, Alexandre
       - et al.
     institution: INRIA / JMLR
-    title: "Scikit-learn: Machine Learning in Python (Pedregosa et al. — JMLR)"
+    title: 'Scikit-learn: Machine Learning in Python (Pedregosa et al. — JMLR)'
     type: journal_article
     url: https://jmlr.org/papers/v12/pedregosa11a.html
     year: 2011
@@ -56,6 +56,24 @@ primary_sources:
     type: survey_paper
     url: https://doi.org/10.1145/3635100
     year: 2024
+  - title: A Survey on Data Preprocessing for Machine Learning and Data Mining
+    authors:
+      - Garcia, S.
+      - Luengo, J.
+      - Herrera, F.
+    type: academic_paper
+    year: 2016
+    doi: 10.1016/j.inffus.2015.06.003
+    institution: Information Fusion
+  - title: 'Data Quality in Machine Learning: A Review'
+    authors:
+      - Gudivada, V.
+      - Apon, A.
+      - Ding, J.
+    type: academic_paper
+    year: 2017
+    doi: 10.1109/IRI.2017.49
+    institution: IEEE IRI
 schema_type: TechArticle
 secondary_sources:
   - institution: Inria
@@ -64,8 +82,9 @@ secondary_sources:
     url: https://scikit-learn.org/stable/modules/preprocessing.html
     year: 2026
 title: Data Preprocessing
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 
 Data preprocessing cleans and prepares raw data for ML. Steps: handling missing values (drop, impute), outlier detection and treatment, encoding categorical variables, feature scaling, train/test splitting. Real-world data is messy — preprocessing typically consumes 60-80% of a data scientist's time.

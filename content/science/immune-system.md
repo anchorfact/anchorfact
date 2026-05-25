@@ -4,9 +4,9 @@ title: Immune System
 schema_type: TechArticle
 category: science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -16,7 +16,7 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-science-01
-    statement: "Innate: first line , inflammatory response, phagocytes engulf pathogens"
+    statement: 'Innate: first line , inflammatory response, phagocytes engulf pathogens'
     source_title: Janeway's Immunobiology (9th Ed)
     source_url: https://www.garlandscience.com/product/isbn/9780815345510
     confidence: high
@@ -28,12 +28,12 @@ atomic_facts:
     source_url: https://www.garlandscience.com/product/isbn/9780815345510
     confidence: medium
   - id: fact-science-002
-    statement: "Innate: first line (skin, mucus), inflammatory response, phagocytes engulf pathogens."
+    statement: 'Innate: first line (skin, mucus), inflammatory response, phagocytes engulf pathogens.'
     source_title: Janeway's Immunobiology (9th Ed)
     source_url: https://www.garlandscience.com/product/isbn/9780815345510
     confidence: medium
   - id: fact-science-003
-    statement: "Autoimmune diseases: immune system attacks self (Type 1 diabetes, rheumatoid arthritis, MS)."
+    statement: 'Autoimmune diseases: immune system attacks self (Type 1 diabetes, rheumatoid arthritis, MS).'
     source_title: Janeway's Immunobiology (9th Ed)
     source_url: https://www.garlandscience.com/product/isbn/9780815345510
     confidence: medium
@@ -56,20 +56,35 @@ primary_sources:
       - Weaver C.
     institution: W.W. Norton
     url: https://wwnorton.com/immunobiology/
-  - title: "Immunology: A 2025 Review of Advances"
+  - title: 'Immunology: A 2025 Review of Advances'
     type: article
     year: 2025
     authors:
       - multiple
     institution: Nature Reviews Immunology
     url: https://doi.org/10.1038/s41577-2025-immuno
-  - title: "Immune: A Journey into the Mysterious System (2025)"
+  - title: 'Immune: A Journey into the Mysterious System (2025)'
     type: book
     year: 2025
     authors:
       - Dettmer P.
     institution: Random House
     url: https://www.penguinrandomhouse.com/immune/
+  - title: Janeway's Immunobiology (10th Edition)
+    authors:
+      - Murphy, K.
+      - Weaver, C.
+    type: book
+    year: 2022
+    institution: W.W. Norton
+  - title: Cellular and Molecular Immunology (10th Edition)
+    authors:
+      - Abbas, A.K.
+      - Lichtman, A.H.
+      - Pillai, S.
+    type: book
+    year: 2022
+    institution: Elsevier
 secondary_sources:
   - title: A Brief History of Time
     type: book
@@ -82,6 +97,7 @@ secondary_sources:
     url: https://www.nature.com/
     institution: Springer Nature
 ---
+
 ## TL;DR
 
 The immune system defends against pathogens (bacteria, viruses, fungi, parasites). Two branches: innate (immediate, non-specific — macrophages, neutrophils, complement) and adaptive (delayed, specific — B cells/antibodies, T cells). Vaccination trains adaptive immunity without causing disease.

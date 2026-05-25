@@ -1,12 +1,12 @@
 ---
 id: organic-chemistry
-title: "Organic Chemistry: Carbon Compounds and Reactions"
+title: 'Organic Chemistry: Carbon Compounds and Reactions'
 schema_type: Article
 category: science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -27,7 +27,7 @@ atomic_facts:
     confidence: high
   - id: fact-sci-oc-003
     statement: IUPAC nomenclature (1919) provides the international standard for naming organic compounds.
-    source_title: "IUPAC Blue Book: Nomenclature of Organic Chemistry (2013)"
+    source_title: 'IUPAC Blue Book: Nomenclature of Organic Chemistry (2013)'
     source_url: https://iupac.org/what-we-do/books/bluebook/
     confidence: high
 completeness: 0.9
@@ -58,6 +58,20 @@ primary_sources:
       - multiple
     institution: Chemical Reviews
     url: https://doi.org/10.1021/chemrev.2025.organic
+  - title: Organic Chemistry (3rd Edition)
+    authors:
+      - Clayden, J.
+      - Greeves, N.
+      - Warren, S.
+    type: book
+    year: 2012
+    institution: Oxford University Press
+  - title: March's Advanced Organic Chemistry (7th Edition)
+    authors:
+      - Smith, M.B.
+    type: book
+    year: 2013
+    institution: Wiley
 known_gaps:
   - Green chemistry principles
   - Organometallic catalysis
@@ -81,22 +95,23 @@ secondary_sources:
       - Hoffmann, Roald
     institution: Angewandte Chemie
     url: https://doi.org/10.1002/anie.197007811
-  - title: "Machine Learning in Organic Synthesis: A Comprehensive Review"
+  - title: 'Machine Learning in Organic Synthesis: A Comprehensive Review'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: Nature Reviews Chemistry
     url: https://doi.org/10.1038/s41570-024-00612-3
-  - title: "IUPAC: Compendium of Chemical Terminology (Gold Book)"
+  - title: 'IUPAC: Compendium of Chemical Terminology (Gold Book)'
     type: reference
     year: 2014
     authors:
       - IUPAC
     institution: IUPAC
     url: https://doi.org/10.1351/goldbook
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Organic chemistry studies carbon-based compounds — from simple hydrocarbons to complex biomolecules. Understanding reaction mechanisms predicts product formation and enables rational synthesis.
 

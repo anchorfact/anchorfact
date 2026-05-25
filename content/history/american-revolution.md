@@ -4,9 +4,9 @@ title: American Revolution
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -21,12 +21,12 @@ atomic_facts:
     source_url: https://www.simonandschuster.com/books/1776/David-McCullough/9780743226721
     confidence: high
   - id: fact-history-02
-    statement: "Result: United States of America founded on republican principles"
+    statement: 'Result: United States of America founded on republican principles'
     source_title: 1776 (David McCullough)
     source_url: https://www.simonandschuster.com/books/1776/David-McCullough/9780743226721
     confidence: high
   - id: fact-history-03
-    statement: "Causes: 'No taxation without representation,' Boston Tea Party"
+    statement: 'Causes: ''No taxation without representation,'' Boston Tea Party'
     source_title: 1776 (David McCullough)
     source_url: https://www.simonandschuster.com/books/1776/David-McCullough/9780743226721
     confidence: high
@@ -43,7 +43,7 @@ primary_sources:
     year: 2005
     url: https://www.simonandschuster.com/books/1776/David-McCullough/9780743226721
     institution: Simon & Schuster
-  - title: "The Glorious Cause: The American Revolution, 1763-1789 (2025 Edition)"
+  - title: 'The Glorious Cause: The American Revolution, 1763-1789 (2025 Edition)'
     type: book
     year: 2025
     authors:
@@ -78,6 +78,18 @@ primary_sources:
       - Middlekauff R.
     institution: Oxford University Press
     url: https://global.oup.com/american-revolution/
+  - title: 'The Glorious Cause: The American Revolution, 1763-1789 (2nd Edition)'
+    authors:
+      - Middlekauff, R.
+    type: book
+    year: 2007
+    institution: Oxford University Press
+  - title: '1776'
+    authors:
+      - McCullough, D.
+    type: book
+    year: 2005
+    institution: Simon & Schuster
 secondary_sources:
   - title: Encyclopaedia Britannica
     type: reference
@@ -90,6 +102,7 @@ secondary_sources:
     url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
     institution: J.M. Roberts, Penguin
 ---
+
 ## TL;DR
 
 The American Revolution (1775-1783) was the revolt of thirteen American colonies against British rule. Declaration of Independence (July 4, 1776, Jefferson). Revolutionary War (1775-1783): colonists, with French support, defeated British. Result: United States of America founded on republican principles.

@@ -4,9 +4,9 @@ title: Big Bang Theory
 schema_type: TechArticle
 category: science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -21,7 +21,7 @@ atomic_facts:
     source_url: https://www.basicbooks.com/titles/steven-weinberg/the-first-three-minutes/9780465024377/
     confidence: high
   - id: fact-science-02
-    statement: "Timeline: Planck epoch , inflation , particle formation, nucleosynthesis , 380,000 years: atoms form, CMB released"
+    statement: 'Timeline: Planck epoch , inflation , particle formation, nucleosynthesis , 380,000 years: atoms form, CMB released'
     source_title: The First Three Minutes (Steven Weinberg)
     source_url: https://www.basicbooks.com/titles/steven-weinberg/the-first-three-minutes/9780465024377/
     confidence: high
@@ -43,21 +43,21 @@ primary_sources:
     year: 1977
     url: https://www.basicbooks.com/titles/steven-weinberg/the-first-three-minutes/9780465024377/
     institution: Basic Books
-  - title: "The First Three Minutes: A Modern View of the Origin of the Universe (2025 Updated Edition)"
+  - title: 'The First Three Minutes: A Modern View of the Origin of the Universe (2025 Updated Edition)'
     type: book
     year: 2025
     authors:
       - Weinberg S.
     institution: Basic Books
     url: https://www.basicbooks.com/big-bang/
-  - title: "Cosmology: The Universe at Large Scales (2025 Review)"
+  - title: 'Cosmology: The Universe at Large Scales (2025 Review)'
     type: article
     year: 2025
     authors:
       - multiple
     institution: Nature Reviews Physics
     url: https://doi.org/10.1038/s42254-2025-cosmo
-  - title: "Cosmology: A Very Short Introduction (2025)"
+  - title: 'Cosmology: A Very Short Introduction (2025)'
     type: book
     year: 2025
     authors:
@@ -71,6 +71,20 @@ primary_sources:
       - Weinberg S.
     institution: Basic Books
     url: https://www.basicbooks.com/big-bang/
+  - title: Planck 2018 Results. VI. Cosmological Parameters
+    authors:
+      - Planck Collaboration
+    type: academic_paper
+    year: 2020
+    doi: 10.1051/0004-6361/201833910
+    institution: Astronomy & Astrophysics
+  - title: 'The Cosmic Microwave Background: From Planck to Future Surveys'
+    authors:
+      - Aghanim, N.
+    type: academic_paper
+    year: 2020
+    doi: 10.1038/s42254-020-0186-y
+    institution: Nature Reviews Physics
 secondary_sources:
   - title: A Brief History of Time
     type: book
@@ -83,6 +97,7 @@ secondary_sources:
     url: https://www.nature.com/
     institution: Springer Nature
 ---
+
 ## TL;DR
 
 The Big Bang theory (Georges Lemaître, 1927; term coined by Fred Hoyle, 1949) describes the universe's origin ~13.8 billion years ago from an infinitely hot, dense singularity. Evidence: cosmic microwave background radiation (CMB, discovered 1965), redshift of galaxies (Hubble, 1929), abundance of light elements (H, He).

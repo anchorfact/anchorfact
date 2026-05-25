@@ -1,12 +1,12 @@
 ---
 id: neuroscience-brain-plasticity
-title: "Neuroscience: Neuroplasticity and Brain Function"
+title: 'Neuroscience: Neuroplasticity and Brain Function'
 schema_type: Article
 category: science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -21,7 +21,7 @@ atomic_facts:
     source_url: https://neurology.mhmedical.com/book.aspx?bookid=3024
     confidence: high
   - id: fact-sci-ns-002
-    statement: "Hebbian plasticity: \"cells that fire together wire together\" (Hebb 1949)."
+    statement: 'Hebbian plasticity: "cells that fire together wire together" (Hebb 1949).'
     source_title: Hebb, D.O. The Organization of Behavior (Wiley 1949)
     source_url: https://doi.org/10.1002/sce.37303405110
     confidence: high
@@ -57,20 +57,35 @@ primary_sources:
       - Siegelbaum S.A.
     institution: McGraw-Hill
     url: https://neurology.mhmedical.com/book.aspx?bookid=3024
-  - title: "Neuroplasticity: From Synaptic to Systems Level (2025 Review)"
+  - title: 'Neuroplasticity: From Synaptic to Systems Level (2025 Review)'
     type: article
     year: 2025
     authors:
       - multiple
     institution: Nature Reviews Neuroscience
     url: https://doi.org/10.1038/s41583-2025-plasticity
-  - title: "The Brain: The Story of You (2025 Updated)"
+  - title: 'The Brain: The Story of You (2025 Updated)'
     type: book
     year: 2025
     authors:
       - Eagleman D.
     institution: Vintage
     url: https://www.penguinrandomhouse.com/the-brain/
+  - title: Principles of Neural Science (6th Edition)
+    authors:
+      - Kandel, E.R.
+      - Koester, J.D.
+      - Mack, S.H.
+      - Siegelbaum, S.A.
+    type: book
+    year: 2021
+    institution: McGraw-Hill
+  - title: 'The Organization of Behavior: A Neuropsychological Theory'
+    authors:
+      - Hebb, D.O.
+    type: book
+    year: 1949
+    institution: Wiley
 secondary_sources:
   - title: Principles of Neural Science (Kandel et al., 6th Edition)
     type: textbook
@@ -82,7 +97,7 @@ secondary_sources:
       - Siegelbaum, Steven A.
     institution: McGraw-Hill
     url: https://neurology.mhmedical.com/book.aspx?bookID=3024
-  - title: "The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science"
+  - title: 'The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science'
     type: textbook
     year: 2007
     authors:
@@ -97,15 +112,16 @@ secondary_sources:
       - Whishaw, Ian Q.
     institution: Annual Review of Psychology
     url: https://doi.org/10.1146/annurev.psych.49.1.43
-  - title: "The Human Brain Project: A Comprehensive Review of 10 Years of European Brain Research"
+  - title: 'The Human Brain Project: A Comprehensive Review of 10 Years of European Brain Research'
     type: survey_paper
     year: 2024
     authors:
       - HBP Consortium
     institution: Nature Neuroscience
     url: https://doi.org/10.1038/s41593-024-01762-7
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Neuroplasticity — the brain's lifelong capacity to reorganize structure and function — is the biological basis of learning, memory, and recovery from injury.
 

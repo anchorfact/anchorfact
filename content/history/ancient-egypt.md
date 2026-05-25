@@ -4,9 +4,9 @@ title: Ancient Egypt
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -28,7 +28,7 @@ atomic_facts:
     source_url: https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587
     confidence: medium
   - id: fact-history-002
-    statement: "Key periods: Old Kingdom (pyramid age, Great Pyramid of Giza built for Khufu), Middle Kingdom (expansion, literature), New Kingdom (empire, Tutankhamun, Ramesses II, Valley of the Kings)."
+    statement: 'Key periods: Old Kingdom (pyramid age, Great Pyramid of Giza built for Khufu), Middle Kingdom (expansion, literature), New Kingdom (empire, Tutankhamun, Ramesses II, Valley of the Kings).'
     source_title: The Oxford History of Ancient Egypt (Ian Shaw)
     source_url: https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587
     confidence: medium
@@ -84,6 +84,18 @@ primary_sources:
       - Shaw I.
     institution: Oxford University Press
     url: https://global.oup.com/ancient-egypt/
+  - title: The Oxford History of Ancient Egypt
+    authors:
+      - Shaw, I.
+    type: book
+    year: 2003
+    institution: Oxford University Press
+  - title: The Rise and Fall of Ancient Egypt
+    authors:
+      - Wilkinson, T.
+    type: book
+    year: 2010
+    institution: Random House
 secondary_sources:
   - title: The Oxford History of Ancient Egypt
     type: book
@@ -96,6 +108,7 @@ secondary_sources:
     url: https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
     institution: Penguin Books
 ---
+
 ## TL;DR
 
 Ancient Egypt (~3100 BCE - 30 BCE) was one of the world's earliest and longest-lasting civilizations along the Nile River. Known for: pyramids (Giza, ~2500 BCE), hieroglyphic writing, mummification, pharaohs as divine rulers, and remarkable stability. The regular Nile floods enabled predictable, abundant agriculture.

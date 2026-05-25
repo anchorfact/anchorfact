@@ -4,9 +4,9 @@ title: Continental Drift
 schema_type: TechArticle
 category: science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -21,7 +21,7 @@ atomic_facts:
     source_url: https://archive.org/details/originofcontinen00wege
     confidence: high
   - id: fact-science-02
-    statement: "Pangaea: existed 335-175 million years ago"
+    statement: 'Pangaea: existed 335-175 million years ago'
     source_title: The Origin of Continents and Oceans (Alfred Wegener, 1915)
     source_url: https://archive.org/details/originofcontinen00wege
     confidence: high
@@ -38,14 +38,14 @@ primary_sources:
     year: 1915
     url: https://archive.org/details/originofcontinen00wege
     institution: Self-published
-  - title: "Plate Tectonics: A Very Short Introduction (2025)"
+  - title: 'Plate Tectonics: A Very Short Introduction (2025)'
     type: book
     year: 2025
     authors:
       - Molnar P.
     institution: Oxford University Press
     url: https://global.oup.com/vsi-plate/
-  - title: "Wegener and Continental Drift: The 2025 Centenary Review"
+  - title: 'Wegener and Continental Drift: The 2025 Centenary Review'
     type: article
     year: 2025
     authors:
@@ -59,6 +59,20 @@ primary_sources:
       - Frankel H.R.
     institution: Cambridge University Press
     url: https://doi.org/10.1017/cbo.2025.drift
+  - title: 'Plate Tectonics: An Insider''s History of the Modern Theory of the Earth'
+    authors:
+      - Oreskes, N.
+    type: book
+    year: 2003
+    institution: Westview Press
+  - title: Global Tectonics (3rd Edition)
+    authors:
+      - Kearey, P.
+      - Klepeis, K.A.
+      - Vine, F.J.
+    type: book
+    year: 2009
+    institution: Wiley-Blackwell
 secondary_sources:
   - title: A Brief History of Time
     type: book
@@ -71,6 +85,7 @@ secondary_sources:
     url: https://www.nature.com/
     institution: Springer Nature
 ---
+
 ## TL;DR
 
 Continental drift (Wegener, 1912) proposed that continents were once joined in a supercontinent (Pangaea) and drifted apart. Initially rejected (couldn't explain mechanism), later confirmed by seafloor spreading (Hess, 1960s) and incorporated into plate tectonics. Coastline fit of South America and Africa was Wegener's first clue.

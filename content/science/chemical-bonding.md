@@ -1,12 +1,12 @@
 ---
 id: chemical-bonding
-title: "Chemical Bonding: From Orbitals to Molecular Structure"
+title: 'Chemical Bonding: From Orbitals to Molecular Structure'
 schema_type: Article
 category: science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -22,7 +22,7 @@ atomic_facts:
     confidence: high
   - id: fact-sci-cb-002
     statement: Molecular orbital theory (Mulliken & Hund) describes bonding through delocalized wavefunctions.
-    source_title: "Mulliken, R.S. Nobel Lecture 1966: Spectroscopy and Molecular Orbitals"
+    source_title: 'Mulliken, R.S. Nobel Lecture 1966: Spectroscopy and Molecular Orbitals'
     source_url: https://www.nobelprize.org/prizes/chemistry/1966/mulliken/lecture/
     confidence: high
   - id: fact-sci-cb-003
@@ -32,7 +32,7 @@ atomic_facts:
     confidence: high
 completeness: 0.9
 primary_sources:
-  - title: "Chemistry: The Central Science, 15th Edition"
+  - title: 'Chemistry: The Central Science, 15th Edition'
     type: textbook
     year: 2021
     url: https://www.pearson.com/en-us/subject-catalog/p/chemistry-the-central-science/P200000007065
@@ -57,6 +57,20 @@ primary_sources:
       - Pauling L.
     institution: Cornell University Press
     url: https://www.cornellpress.cornell.edu/chemical-bond/
+  - title: Chemical Bonding and Molecular Geometry
+    authors:
+      - Gillespie, R.J.
+      - Popelier, P.L.A.
+    type: book
+    year: 2001
+    institution: Oxford University Press
+  - title: 'Valence Bond Theory: Its History, Fundamentals, and Applications'
+    authors:
+      - Shaik, S.
+      - Hiberty, P.C.
+    type: book
+    year: 2007
+    institution: Wiley
 known_gaps:
   - Coordination chemistry and crystal field theory
   - Supramolecular chemistry
@@ -78,7 +92,7 @@ secondary_sources:
       - Popelier, Paul L. A.
     institution: Oxford University Press
     url: https://doi.org/10.1093/oso/9780195104967.001.0001
-  - title: "Valence Bond Theory: Its History, Fundamentals, and Applications"
+  - title: 'Valence Bond Theory: Its History, Fundamentals, and Applications'
     type: survey_paper
     year: 2024
     authors:
@@ -86,15 +100,16 @@ secondary_sources:
       - Hiberty, Philippe C.
     institution: Chemical Reviews (ACS)
     url: https://doi.org/10.1021/acs.chemrev.4c00093
-  - title: "Machine Learning for Chemical Bond Analysis: From Quantum Chemistry to Data-Driven Methods"
+  - title: 'Machine Learning for Chemical Bond Analysis: From Quantum Chemistry to Data-Driven Methods'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: Nature Chemistry
     url: https://doi.org/10.1038/s41557-024-01598-3
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Chemical bonding — the forces holding atoms together in molecules — determines all material properties. From ionic bonds in salt to covalent bonds in DNA, understanding bonding is foundational to chemistry.
 

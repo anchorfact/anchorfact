@@ -1,12 +1,12 @@
 ---
 id: scientific-revolution
-title: "The Scientific Revolution: From Copernicus to Newton"
+title: 'The Scientific Revolution: From Copernicus to Newton'
 schema_type: Article
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -16,12 +16,12 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-hist-sr-001
-    statement: "Kuhn (1962): science progresses through paradigm shifts, not linear accumulation."
+    statement: 'Kuhn (1962): science progresses through paradigm shifts, not linear accumulation.'
     source_title: Kuhn, T.S. Structure of Scientific Revolutions 50th Anniv. Ed. (Chicago 2012)
     source_url: https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html
     confidence: high
   - id: fact-hist-sr-002
-    statement: "Copernican Revolution (1543): displaced Earth from center, initiating 16th-17th c. Scientific Revolution."
+    statement: 'Copernican Revolution (1543): displaced Earth from center, initiating 16th-17th c. Scientific Revolution.'
     source_title: Copernicus, De Revolutionibus (1543) - UNESCO Memory of World
     source_url: https://www.unesco.org/en/memory-world/copernicus-De-revolutionibus
     confidence: high
@@ -32,7 +32,7 @@ atomic_facts:
     confidence: high
 completeness: 0.9
 primary_sources:
-  - title: "The Scientific Revolution: A Very Short Introduction"
+  - title: 'The Scientific Revolution: A Very Short Introduction'
     type: reference
     year: 2011
     url: https://global.oup.com/academic/product/the-scientific-revolution-a-very-short-introduction-9780199567416
@@ -49,13 +49,25 @@ primary_sources:
       - Kuhn T.S.
     institution: University of Chicago Press
     url: https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html
-  - title: "The Scientific Revolution: A Global History (2025)"
+  - title: 'The Scientific Revolution: A Global History (2025)'
     type: book
     year: 2025
     authors:
       - Wootton D.
     institution: HarperCollins
     url: https://www.harpercollins.com/scientific-revolution/
+  - title: 'The Scientific Revolution: A Very Short Introduction'
+    authors:
+      - Principe, L.M.
+    type: book
+    year: 2011
+    institution: Oxford University Press
+  - title: 'The Invention of Science: A New History of the Scientific Revolution'
+    authors:
+      - Wootton, D.
+    type: book
+    year: 2015
+    institution: Harper
 known_gaps:
   - Scientific Revolution outside Europe
   - Role of instrumentation (telescope, microscope)
@@ -70,43 +82,44 @@ secondary_sources:
       - Hacking, Ian (intro.)
     institution: University of Chicago Press
     url: https://doi.org/10.7208/9780226458106
-  - title: "The Scientific Revolution: A Very Short Introduction (Principe)"
+  - title: 'The Scientific Revolution: A Very Short Introduction (Principe)'
     type: textbook
     year: 2011
     authors:
       - Principe, Lawrence M.
     institution: Oxford University Press
     url: https://doi.org/10.1093/actrade/9780199567415.001.0001
-  - title: "The Copernican Revolution: Planetary Astronomy in the Development of Western Thought (Kuhn)"
+  - title: 'The Copernican Revolution: Planetary Astronomy in the Development of Western Thought (Kuhn)'
     type: textbook
     year: 1957
     authors:
       - Kuhn, Thomas S.
     institution: Harvard University Press
     url: https://www.hup.harvard.edu/books/9780674171039
-  - title: "Magisteria: The Entangled Histories of Science & Religion (Spencer)"
+  - title: 'Magisteria: The Entangled Histories of Science & Religion (Spencer)'
     type: textbook
     year: 2023
     authors:
       - Spencer, Nicholas
     institution: Oneworld Publications
     url: https://oneworld-publications.com/work/magisteria/
-  - title: "The Scientific Revolution: New Perspectives and Global Contexts (2025)"
+  - title: 'The Scientific Revolution: New Perspectives and Global Contexts (2025)'
     type: article
     year: 2025
     authors:
       - multiple
     institution: Cambridge University Press
     url: https://doi.org/10.1017/caj.2025.sciencerev
-  - title: "Kuhn at 60: Reassessing The Structure of Scientific Revolutions in 2025"
+  - title: 'Kuhn at 60: Reassessing The Structure of Scientific Revolutions in 2025'
     type: article
     year: 2025
     authors:
       - multiple
     institution: University of Chicago Press
     url: https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 The Scientific Revolution (1543-1687) replaced medieval Aristotelian cosmology with empirical observation and mathematical law. Copernicus, Galileo, Kepler, and Newton established the foundations of modern science.
 

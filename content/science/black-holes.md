@@ -4,9 +4,9 @@ title: Black Holes
 schema_type: TechArticle
 category: science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -26,7 +26,7 @@ atomic_facts:
     source_url: https://www.penguinrandomhouse.com/books/26703/a-brief-history-of-time-by-stephen-hawking/
     confidence: high
   - id: fact-science-03
-    statement: "Supermassive black holes: center of most galaxies"
+    statement: 'Supermassive black holes: center of most galaxies'
     source_title: A Brief History of Time (Stephen Hawking)
     source_url: https://www.penguinrandomhouse.com/books/26703/a-brief-history-of-time-by-stephen-hawking/
     confidence: high
@@ -43,34 +43,48 @@ primary_sources:
     year: 1988
     url: https://www.penguinrandomhouse.com/books/26703/a-brief-history-of-time-by-stephen-hawking/
     institution: Bantam
-  - title: "Black Holes and Time Warps: Einstein's Outrageous Legacy (2025 Anniversary Edition)"
+  - title: 'Black Holes and Time Warps: Einstein''s Outrageous Legacy (2025 Anniversary Edition)'
     type: book
     year: 2025
     authors:
       - Thorne K.S.
     institution: W.W. Norton
     url: https://wwnorton.com/books/black-holes/
-  - title: "Black Hole Physics: From Theory to LIGO Observations (2025 Review)"
+  - title: 'Black Hole Physics: From Theory to LIGO Observations (2025 Review)'
     type: article
     year: 2025
     authors:
       - multiple
     institution: Reviews of Modern Physics
     url: https://doi.org/10.1103/revmodphys.2025.bh
-  - title: "Black Holes: A Very Short Introduction (2025)"
+  - title: 'Black Holes: A Very Short Introduction (2025)'
     type: book
     year: 2025
     authors:
       - multiple
     institution: Oxford University Press
     url: https://global.oup.com/vsi-black-holes/
-  - title: "Black Holes: The Reith Lectures (2025 Edition)"
+  - title: 'Black Holes: The Reith Lectures (2025 Edition)'
     type: book
     year: 2025
     authors:
       - Hawking S.W.
     institution: Bantam
     url: https://www.penguinrandomhouse.com/black-holes/
+  - title: First M87 Event Horizon Telescope Results. I. The Shadow of the Supermassive Black Hole
+    authors:
+      - Event Horizon Telescope Collaboration
+    type: academic_paper
+    year: 2019
+    doi: 10.3847/2041-8213/ab0ec7
+    institution: The Astrophysical Journal Letters
+  - title: Gravitational Waves from Binary Black Hole Mergers
+    authors:
+      - Abbott, B.P. et al. (LIGO/Virgo)
+    type: academic_paper
+    year: 2016
+    doi: 10.1103/PhysRevLett.116.061102
+    institution: Physical Review Letters
 secondary_sources:
   - title: A Brief History of Time
     type: book
@@ -83,6 +97,7 @@ secondary_sources:
     url: https://www.nature.com/
     institution: Springer Nature
 ---
+
 ## TL;DR
 
 A black hole is a region of spacetime where gravity is so strong that nothing — not even light — can escape. Formed when massive stars collapse. Event horizon: point of no return. Hawking radiation (1974): black holes slowly evaporate via quantum effects. First image captured by Event Horizon Telescope (2019, M87 galaxy).

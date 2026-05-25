@@ -4,9 +4,9 @@ title: Ancient Rome
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -17,12 +17,12 @@ data_period: static
 atomic_facts:
   - id: fact-history-01
     statement: Augustus becomes first emperor
-    source_title: "SPQR: A History of Ancient Rome (Mary Beard)"
+    source_title: 'SPQR: A History of Ancient Rome (Mary Beard)'
     source_url: https://www.liverpooluniversitypress.co.uk/doi/book/10.3828/9781846319177
     confidence: high
   - id: fact-history-02
-    statement: "Pax Romana : 200 years of relative peace/prosperity"
-    source_title: "SPQR: A History of Ancient Rome (Mary Beard)"
+    statement: 'Pax Romana : 200 years of relative peace/prosperity'
+    source_title: 'SPQR: A History of Ancient Rome (Mary Beard)'
     source_url: https://www.liverpooluniversitypress.co.uk/doi/book/10.3828/9781846319177
     confidence: high
 completeness: 0.88
@@ -34,12 +34,12 @@ disputed_statements:
       The causes of the Roman Empire's fall remain contested: monocausal explanations (barbarian invasions, economic decline, lead poisoning) have largely been replaced by multi-factor analyses, but
       the relative weight of each factor is disputed
 primary_sources:
-  - title: "SPQR: A History of Ancient Rome (Mary Beard)"
+  - title: 'SPQR: A History of Ancient Rome (Mary Beard)'
     type: book
     year: 2015
     url: https://www.liverpooluniversitypress.co.uk/doi/book/10.3828/9781846319177
     institution: Profile Books
-  - title: "SPQR: A History of Ancient Rome (2025 Paperback Edition)"
+  - title: 'SPQR: A History of Ancient Rome (2025 Paperback Edition)'
     type: book
     year: 2025
     authors:
@@ -53,7 +53,7 @@ primary_sources:
       - multiple
     institution: Oxford University Press
     url: https://global.oup.com/roman-world/
-  - title: "SPQR: A History of Ancient Rome (2025)"
+  - title: 'SPQR: A History of Ancient Rome (2025)'
     type: book
     year: 2025
     authors:
@@ -67,8 +67,20 @@ primary_sources:
       - Heather P.
     institution: Oxford University Press
     url: https://global.oup.com/roman-fall/
+  - title: 'SPQR: A History of Ancient Rome'
+    authors:
+      - Beard, M.
+    type: book
+    year: 2015
+    institution: Liveright
+  - title: The History of Rome (Ab Urbe Condita)
+    authors:
+      - Livy
+    type: book
+    year: -27
+    institution: Classical Text
 secondary_sources:
-  - title: "SPQR: A History of Ancient Rome"
+  - title: 'SPQR: A History of Ancient Rome'
     type: book
     year: 2015
     url: https://www.liverightbooks.com/9781631492228
@@ -79,6 +91,7 @@ secondary_sources:
     url: https://www.britannica.com/topic/The-History-of-the-Decline-and-Fall-of-the-Roman-Empire
     institution: Edward Gibbon
 ---
+
 ## TL;DR
 
 Ancient Rome (753 BC - 476 AD Western Empire, -1453 AD Eastern/Byzantine Empire) was one of history's greatest civilizations. From a small city-state to a Mediterranean-spanning empire. Contributions: Roman law (basis of European civil law), Latin language, republican government, engineering (aqueducts, roads, concrete).

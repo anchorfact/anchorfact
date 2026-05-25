@@ -4,9 +4,9 @@ title: Photosynthesis
 schema_type: TechArticle
 category: science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -23,7 +23,7 @@ atomic_facts:
     source_url: https://www.wiley.com/en-us/Molecular+Mechanisms+of+Photosynthesis%2C+3rd+Edition-p-9781119800019
     confidence: medium
   - id: fact-science-002
-    statement: "Calvin cycle: RuBisCO enzyme fixes CO₂ (most abundant enzyme on Earth)."
+    statement: 'Calvin cycle: RuBisCO enzyme fixes CO₂ (most abundant enzyme on Earth).'
     source_title: Molecular Mechanisms of Photosynthesis (Blankenship)
     source_url: https://www.wiley.com/en-us/Molecular+Mechanisms+of+Photosynthesis%2C+3rd+Edition-p-9781119800019
     confidence: medium
@@ -52,20 +52,32 @@ primary_sources:
       - Blankenship R.E.
     institution: Wiley
     url: https://www.wiley.com/photosynthesis/
-  - title: "Photosynthesis: From Light Harvesting to Carbon Fixation (2025 Review)"
+  - title: 'Photosynthesis: From Light Harvesting to Carbon Fixation (2025 Review)'
     type: article
     year: 2025
     authors:
       - multiple
     institution: Nature Plants
     url: https://doi.org/10.1038/s41477-2025-photo
-  - title: "Photosynthesis: A 2025 Review"
+  - title: 'Photosynthesis: A 2025 Review'
     type: article
     year: 2025
     authors:
       - multiple
     institution: Nature Plants
     url: https://doi.org/10.1038/s41477-2025-photo
+  - title: Photosynthesis (New Comprehensive Biochemistry)
+    authors:
+      - Raghavendra, A.S.
+    type: book
+    year: 2000
+    institution: Elsevier
+  - title: Molecular Mechanisms of Photosynthesis (3rd Edition)
+    authors:
+      - Blankenship, R.E.
+    type: book
+    year: 2021
+    institution: Wiley
 secondary_sources:
   - title: React Documentation
     type: documentation
@@ -78,6 +90,7 @@ secondary_sources:
     url: https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058
     institution: Pearson Education
 ---
+
 ## TL;DR
 
 Photosynthesis converts light energy to chemical energy (glucose) using CO₂ and H₂O, releasing O₂. Two stages: light-dependent reactions (thylakoid membrane, produce ATP + NADPH) and Calvin cycle (stroma, fix CO₂ into sugar). C₃ plants (most), C₄ plants (corn, tropical), CAM plants (succulents) differ in carbon fixation.
