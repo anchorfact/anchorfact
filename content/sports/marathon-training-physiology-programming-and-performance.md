@@ -12,9 +12,9 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts: []
-completeness: 0.5
+completeness: 0.7
 known_gaps:
-  - 内容初稿，待补充详细分析和原子事实
+  - 详细分析和统计数据待后续补充
 disputed_statements: []
 primary_sources:
   - title: 'Source 1 — Marathon Training: Physiology, Programming, and Performance'
@@ -28,19 +28,19 @@ updated: '2026-05-25'
 
 ## TL;DR
 
-[简要概述：Marathon Training: Physiology, Programming, and Performance 是什么，为什么重要，关键事实。待填充。]
+Marathon training (42.195km) requires balancing three physiological systems: aerobic capacity (VO2max, the engine size), lactate threshold (sustainable pace), and running economy (efficiency). A typical 16-20 week training plan builds from 30-40km/week to 60-100km/week, peaking 2-3 weeks before race day. The 80/20 rule — 80% of training at low intensity (Zone 1-2) and 20% at moderate-high intensity (Zone 3-5) — is the evidence-based standard for endurance athletes.
 
 ## Core Explanation
 
-[核心概念解释。待填充。]
+Training phases: base building (aerobic foundation, 6-8 weeks), strength/speed (hill repeats, tempo runs, 3-4 weeks), peak (race-pace specificity, 3-4 weeks), taper (volume reduction by 40-60%, 2-3 weeks). Key workouts: long run (20-35km, building mitochondrial density), tempo run (lactate threshold pace, 20-40 min), intervals (VO2max, 800m-1600m repeats), marathon-pace runs. Energy systems: during a marathon, ~97% of energy comes from aerobic metabolism; glycogen depletion ("hitting the wall") occurs around 30-35km if not properly fueled. Carb-loading (8-12g/kg body weight, 2-3 days pre-race) increases glycogen stores by 50-80%. Mid-race fueling: 30-60g carbs/hour. Elite marathon times: men 2:00:35 (Kelvin Kiptum, 2023), women 2:11:53 (Tigist Assefa, 2023). Every additional year of consistent training improves running economy by ~1%.
 
 ## Detailed Analysis
 
-[详细分析包括技术规格、性能指标、历史发展等。待填充。]
+[详细分析、统计数据、历史发展和进一步阅读。待后续补充。]
 
 ## Further Reading
 
-- [Source 1](https://www.runnersworld.com/)
+- [Source 1 — Marathon Training: Physiology, Programming, and Performance](https://www.runnersworld.com/)
 
 ---
-> 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+> 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。

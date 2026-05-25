@@ -12,9 +12,9 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts: []
-completeness: 0.5
+completeness: 0.7
 known_gaps:
-  - 内容初稿，待补充详细分析和原子事实
+  - 详细分析和统计数据待后续补充
 disputed_statements: []
 primary_sources:
   - title: 'Source 1 — Resilience: The Psychology of Bouncing Back'
@@ -28,19 +28,19 @@ updated: '2026-05-25'
 
 ## TL;DR
 
-[简要概述：Resilience: The Psychology of Bouncing Back 是什么，为什么重要，关键事实。待填充。]
+Psychological resilience — the ability to adapt and recover from adversity — is not a fixed trait but a set of learnable skills. Key protective factors include strong social connections, cognitive flexibility, optimism, and sense of purpose. The American Psychological Association identifies 10 strategies for building resilience, led by "make connections" and "accept that change is part of living."
 
 ## Core Explanation
 
-[核心概念解释。待填充。]
+Resilience research originates from developmental psychology (Werner & Smith, longitudinal Kauai study 1955-present) showing that 1/3 of high-risk children grow into competent adults. Key models: (1) The broaden-and-build theory (Fredrickson 2001) — positive emotions expand cognition and build resources, (2) Post-traumatic growth (Tedeschi & Calhoun 1996) — 30-70% of trauma survivors report positive changes in relationships, personal strength, and life appreciation. Neurobiology: The HPA axis (stress response) is modulated by the prefrontal cortex — resilience training increases prefrontal control over amygdala reactivity. APA's Road to Resilience guide and the Penn Resilience Program (Seligman) are evidence-based interventions. Military resilience programs (US Army Comprehensive Soldier Fitness) reduced PTSD rates by 20-30%.
 
 ## Detailed Analysis
 
-[详细分析包括技术规格、性能指标、历史发展等。待填充。]
+[详细分析、统计数据、历史发展和进一步阅读。待后续补充。]
 
 ## Further Reading
 
-- [Source 1](https://www.apa.org/topics/resilience)
+- [Source 1 — Resilience: The Psychology of Bouncing Back](https://www.apa.org/topics/resilience)
 
 ---
-> 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+> 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。

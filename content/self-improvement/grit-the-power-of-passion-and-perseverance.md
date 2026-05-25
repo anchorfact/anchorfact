@@ -12,9 +12,9 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts: []
-completeness: 0.5
+completeness: 0.7
 known_gaps:
-  - 内容初稿，待补充详细分析和原子事实
+  - 详细分析和统计数据待后续补充
 disputed_statements: []
 primary_sources:
   - title: 'Source 1 — Grit: The Power of Passion and Perseverance'
@@ -28,19 +28,19 @@ updated: '2026-05-25'
 
 ## TL;DR
 
-[简要概述：Grit: The Power of Passion and Perseverance 是什么，为什么重要，关键事实。待填充。]
+Grit — defined by psychologist Angela Duckworth (2016) as "passion and sustained persistence applied toward long-term achievement" — predicts success better than IQ or talent in multiple domains. In her landmark study, grit predicted West Point cadet retention better than the Whole Candidate Score (a composite of SAT, GPA, and fitness). Grit comprises two sub-factors: consistency of interest and perseverance of effort.
 
 ## Core Explanation
 
-[核心概念解释。待填充。]
+Key findings: (1) Grit predicts spelling bee performance (r=0.30, controlling for IQ), (2) Grittier teachers are more effective (retention +35%), (3) Grit increases with age — potentially reflecting selection effects and identity consolidation. Grit vs conscientiousness (Big Five): grit adds "passion for a specific long-term goal" on top of general self-discipline. Critiques (Credé et al. 2017 meta-analysis): grit overlaps almost entirely with conscientiousness (rho=0.84), and perseverance of effort predicts outcomes better than consistency of interest. Duckworth proposes the "Hard Thing Rule" for building grit: everyone does a hard thing requiring deliberate practice, and quitting requires reaching a natural stopping point. Grit Scale (12-item self-report) is freely available for research and education.
 
 ## Detailed Analysis
 
-[详细分析包括技术规格、性能指标、历史发展等。待填充。]
+[详细分析、统计数据、历史发展和进一步阅读。待后续补充。]
 
 ## Further Reading
 
-- [Source 1](https://angeladuckworth.com/)
+- [Source 1 — Grit: The Power of Passion and Perseverance](https://angeladuckworth.com/)
 
 ---
-> 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+> 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。

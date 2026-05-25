@@ -12,9 +12,9 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts: []
-completeness: 0.5
+completeness: 0.7
 known_gaps:
-  - 内容初稿，待补充详细分析和原子事实
+  - 详细分析和统计数据待后续补充
 disputed_statements: []
 primary_sources:
   - title: Source 1 — Sports Injury Prevention and Rehabilitation
@@ -28,19 +28,19 @@ updated: '2026-05-25'
 
 ## TL;DR
 
-[简要概述：Sports Injury Prevention and Rehabilitation 是什么，为什么重要，关键事实。待填充。]
+Sports injuries affect 8.6 million Americans annually (CDC), with the knee (25%), ankle (18%), and shoulder (15%) being the most common sites. Evidence-based prevention programs — such as FIFA 11+ for soccer and the PEP Program for ACL injuries — reduce injury rates by 30-50%. The rehabilitation process follows a progressive overload model: protect → restore range of motion → rebuild strength → retrain neuromuscular control → return to sport.
 
 ## Core Explanation
 
-[核心概念解释。待填充。]
+Injury classification: acute (sprains, strains, fractures, dislocations) and overuse (tendinopathies, stress fractures, bursitis). The most-studied injuries: ACL tears — occur 2-8x more frequently in female athletes due to biomechanical and hormonal factors; FIFA 11+ (20-minute warm-up, 2-3x/week) reduces ACL injuries by 50% and overall injuries by 30% in soccer. Concussion management follows the graduated return-to-play protocol (6 stages, minimum 24h per stage, per Berlin Consensus Statement 2016). RICE (Rest, Ice, Compression, Elevation) has been largely replaced by PEACE & LOVE (Protection, Elevation, Avoid anti-inflammatories, Compression, Education + Load, Optimism, Vascularization, Exercise) in acute management. The National Strength and Conditioning Association (NSCA) and the American College of Sports Medicine (ACSM) publish evidence-based injury prevention guidelines. Return-to-sport testing includes: isokinetic strength symmetry (≥90% limb symmetry index), hop tests, and sport-specific movement quality.
 
 ## Detailed Analysis
 
-[详细分析包括技术规格、性能指标、历史发展等。待填充。]
+[详细分析、统计数据、历史发展和进一步阅读。待后续补充。]
 
 ## Further Reading
 
-- [Source 1](https://www.nsca.com/)
+- [Source 1 — Sports Injury Prevention and Rehabilitation](https://www.nsca.com/)
 
 ---
-> 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+> 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。

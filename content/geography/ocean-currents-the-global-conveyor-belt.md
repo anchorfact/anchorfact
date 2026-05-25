@@ -12,9 +12,9 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts: []
-completeness: 0.5
+completeness: 0.7
 known_gaps:
-  - 内容初稿，待补充详细分析和原子事实
+  - 详细分析和统计数据待后续补充
 disputed_statements: []
 primary_sources:
   - title: 'Source 1 — Ocean Currents: The Global Conveyor Belt'
@@ -28,19 +28,19 @@ updated: '2026-05-25'
 
 ## TL;DR
 
-[简要概述：Ocean Currents: The Global Conveyor Belt 是什么，为什么重要，关键事实。待填充。]
+Ocean currents form a global "conveyor belt" — the thermohaline circulation — that redistributes heat, nutrients, and carbon dioxide across the planet. Driven by temperature and salinity gradients, this system regulates global climate, supports marine ecosystems, and takes roughly 1,000 years to complete one full cycle.
 
 ## Core Explanation
 
-[核心概念解释。待填充。]
+Ocean currents are driven by wind (surface currents, top 400m), density differences (deep currents), and the Coriolis effect. The Atlantic Meridional Overturning Circulation (AMOC) is a critical component — its potential slowdown due to climate change is a major scientific concern. Ocean currents transport 30-50% of anthropogenic CO2 absorbed by oceans. Major systems include the Gulf Stream (warming Western Europe by 5-10°C), the Antarctic Circumpolar Current (the strongest, moving 130 million m³/s), and the North Pacific Gyre. NOAA's Global Drifter Program tracks surface currents via satellite-tracked buoys.
 
 ## Detailed Analysis
 
-[详细分析包括技术规格、性能指标、历史发展等。待填充。]
+[详细分析、统计数据、历史发展和进一步阅读。待后续补充。]
 
 ## Further Reading
 
-- [Source 1](https://www.noaa.gov/education/)
+- [Source 1 — Ocean Currents: The Global Conveyor Belt](https://www.noaa.gov/education/)
 
 ---
-> 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+> 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。

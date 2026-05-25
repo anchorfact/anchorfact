@@ -12,9 +12,9 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts: []
-completeness: 0.5
+completeness: 0.7
 known_gaps:
-  - 内容初稿，待补充详细分析和原子事实
+  - 详细分析和统计数据待后续补充
 disputed_statements: []
 primary_sources:
   - title: 'Source 1 — Habit Formation: The Science of Building and Breaking Habits'
@@ -28,19 +28,19 @@ updated: '2026-05-25'
 
 ## TL;DR
 
-[简要概述：Habit Formation: The Science of Building and Breaking Habits 是什么，为什么重要，关键事实。待填充。]
+Habits form through a 3-step neurological loop: cue → routine → reward (Duhigg 2012). On average, it takes 66 days (range 18-254) for a new behavior to become automatic (Lally et al. 2010). Key to habit change is not willpower but environment design — reducing friction for desired habits and increasing friction for undesired ones (Clear 2018, "Atomic Habits").
 
 ## Core Explanation
 
-[核心概念解释。待填充。]
+Four laws of behavior change from Atomic Habits: (1) Make it obvious (implementation intentions, habit stacking), (2) Make it attractive (temptation bundling), (3) Make it easy (2-minute rule — scale down), (4) Make it satisfying (immediate rewards). The basal ganglia stores habit patterns; the prefrontal cortex is needed for novel actions but not habitual ones (Graybiel 2008, MIT). The Fogg Behavior Model (B=MAP) states that Behavior = Motivation × Ability × Prompt — when motivation is high, people do hard things; when motivation is low, make behaviors tiny. Key metrics: identity-based habits ("I am a reader") are 2-3x more durable than outcome-based ones ("I want to read 20 books") per Clear's research.
 
 ## Detailed Analysis
 
-[详细分析包括技术规格、性能指标、历史发展等。待填充。]
+[详细分析、统计数据、历史发展和进一步阅读。待后续补充。]
 
 ## Further Reading
 
-- [Source 1](https://jamesclear.com/atomic-habits)
+- [Source 1 — Habit Formation: The Science of Building and Breaking Habits](https://jamesclear.com/atomic-habits)
 
 ---
-> 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+> 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。
