@@ -4,9 +4,9 @@ title: Audio Engineering
 schema_type: TechArticle
 category: arts
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -23,12 +23,12 @@ atomic_facts:
     source_url: https://www.routledge.com/Mastering-Audio-The-Art-and-the-Science/Katz/p/book/9780240818962
     confidence: medium
   - id: fact-arts-002
-    statement: "Compression: ratio (e.g., 4:1 means 4dB input above threshold = 1dB output), attack, release."
+    statement: 'Compression: ratio (e.g., 4:1 means 4dB input above threshold = 1dB output), attack, release.'
     source_title: Mastering Audio (Bob Katz, 3rd Ed)
     source_url: https://www.routledge.com/Mastering-Audio-The-Art-and-the-Science/Katz/p/book/9780240818962
     confidence: medium
   - id: fact-arts-003
-    statement: "Mastering: final polish — loudness normalization (LUFS for streaming: Spotify -14 LUFS)."
+    statement: 'Mastering: final polish — loudness normalization (LUFS for streaming: Spotify -14 LUFS).'
     source_title: Mastering Audio (Bob Katz, 3rd Ed)
     source_url: https://www.routledge.com/Mastering-Audio-The-Art-and-the-Science/Katz/p/book/9780240818962
     confidence: medium
@@ -46,7 +46,7 @@ primary_sources:
     year: 2015
     url: https://www.routledge.com/Mastering-Audio-The-Art-and-the-Science/Katz/p/book/9780240818962
     institution: Focal Press
-  - title: "Mastering Audio: The Art and the Science (4th Edition, 2025)"
+  - title: 'Mastering Audio: The Art and the Science (4th Edition, 2025)'
     type: book
     year: 2025
     authors:
@@ -61,6 +61,19 @@ primary_sources:
       - Runstein R.E.
     institution: Routledge
     url: https://www.routledge.com/recording/
+  - title: 'Mastering Audio: The Art and the Science (3rd Edition)'
+    authors:
+      - Katz, B.
+    type: book
+    year: 2015
+    institution: Focal Press
+  - title: Modern Recording Techniques (9th Edition)
+    authors:
+      - Huber, D.M.
+      - Runstein, R.E.
+    type: book
+    year: 2017
+    institution: Routledge
 secondary_sources:
   - title: The Story of Art
     type: book
@@ -73,6 +86,7 @@ secondary_sources:
     url: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
     institution: Phaidon Press
 ---
+
 ## TL;DR
 
 Audio engineering encompasses recording, mixing, and mastering sound. Key concepts: frequency (pitch, Hz), amplitude (loudness, dB), waveform (timbre). Recording chain: source → microphone → preamp → ADC → DAW. Mixing: balance levels, pan (stereo placement), EQ (adjust frequency balance), compression (control dynamics), reverb/delay (space).

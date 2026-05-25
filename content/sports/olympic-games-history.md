@@ -4,9 +4,9 @@ title: Olympic Games History
 schema_type: TechArticle
 category: sports
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -23,22 +23,22 @@ atomic_facts:
     source_url: https://www.aurumpress.co.uk/books/the-complete-book-of-the-olympics/
     confidence: medium
   - id: fact-sports-002
-    statement: "Most successful Olympian: Michael Phelps (swimming, 28 medals, 23 gold)."
+    statement: 'Most successful Olympian: Michael Phelps (swimming, 28 medals, 23 gold).'
     source_title: The Complete Book of the Olympics (David Wallechinsky)
     source_url: https://www.aurumpress.co.uk/books/the-complete-book-of-the-olympics/
     confidence: medium
   - id: fact-sports-003
-    statement: "Most golds single Games: Phelps (8 golds, Beijing 2008)."
+    statement: 'Most golds single Games: Phelps (8 golds, Beijing 2008).'
     source_title: The Complete Book of the Olympics (David Wallechinsky)
     source_url: https://www.aurumpress.co.uk/books/the-complete-book-of-the-olympics/
     confidence: medium
   - id: fact-sports-004
-    statement: "Marathon: 42.195 km — route from Marathon to Athens (legend of Pheidippides)."
+    statement: 'Marathon: 42.195 km — route from Marathon to Athens (legend of Pheidippides).'
     source_title: The Complete Book of the Olympics (David Wallechinsky)
     source_url: https://www.aurumpress.co.uk/books/the-complete-book-of-the-olympics/
     confidence: medium
   - id: fact-sports-005
-    statement: "Boycotts: 1980 Moscow (US-led), 1984 LA (Soviet-led)."
+    statement: 'Boycotts: 1980 Moscow (US-led), 1984 LA (Soviet-led).'
     source_title: The Complete Book of the Olympics (David Wallechinsky)
     source_url: https://www.aurumpress.co.uk/books/the-complete-book-of-the-olympics/
     confidence: medium
@@ -56,20 +56,31 @@ primary_sources:
     year: 2012
     url: https://www.aurumpress.co.uk/books/the-complete-book-of-the-olympics/
     institution: Aurum Press
-  - title: "The Games: A Global History of the Olympics (2025)"
+  - title: 'The Games: A Global History of the Olympics (2025)'
     type: book
     year: 2025
     authors:
       - Goldblatt D.
     institution: W.W. Norton
     url: https://wwnorton.com/olympics/
-  - title: "The Olympics: A Very Short Introduction (2025)"
+  - title: 'The Olympics: A Very Short Introduction (2025)'
     type: book
     year: 2025
     authors:
       - multiple
     institution: Oxford University Press
     url: https://global.oup.com/vsi-olympics/
+  - title: 'The Games: A Global History of the Olympics'
+    authors:
+      - Goldblatt, D.
+    type: book
+    year: 2016
+    institution: W.W. Norton
+  - title: Olympic Charter (2023)
+    type: standard
+    year: 2023
+    url: https://olympics.com/ioc/olympic-charter
+    institution: International Olympic Committee
 secondary_sources:
   - title: The Complete Book of the Olympics
     type: book
@@ -82,6 +93,7 @@ secondary_sources:
     url: https://www.olympic.org/sports
     institution: International Olympic Committee
 ---
+
 ## TL;DR
 
 The Olympic Games trace to ancient Greece (776 BCE, Olympia). Modern Olympics revived by Pierre de Coubertin (1896, Athens). Summer and Winter Games held every 4 years (with exceptions for world wars and 2020 COVID postponement). Motto: Citius, Altius, Fortius — Communiter (Faster, Higher, Stronger — Together).

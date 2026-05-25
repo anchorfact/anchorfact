@@ -4,9 +4,9 @@ title: Reformation
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -28,17 +28,17 @@ atomic_facts:
     source_url: https://www.penguinrandomhouse.com/books/261409/the-reformation-by-diarmaid-macculloch/
     confidence: medium
   - id: fact-history-002
-    statement: "Henry VIII: English Reformation (1534, Act of Supremacy) — political/ marital, not theological."
+    statement: 'Henry VIII: English Reformation (1534, Act of Supremacy) — political/ marital, not theological.'
     source_title: The Reformation (Diarmaid MacCulloch)
     source_url: https://www.penguinrandomhouse.com/books/261409/the-reformation-by-diarmaid-macculloch/
     confidence: medium
   - id: fact-history-003
-    statement: "Wars of Religion: French Wars (1562-98), Thirty Years' War (1618-48, 8 million dead)."
+    statement: 'Wars of Religion: French Wars (1562-98), Thirty Years'' War (1618-48, 8 million dead).'
     source_title: The Reformation (Diarmaid MacCulloch)
     source_url: https://www.penguinrandomhouse.com/books/261409/the-reformation-by-diarmaid-macculloch/
     confidence: medium
   - id: fact-history-004
-    statement: "Peace of Westphalia (1648): established principle of state sovereignty."
+    statement: 'Peace of Westphalia (1648): established principle of state sovereignty.'
     source_title: The Reformation (Diarmaid MacCulloch)
     source_url: https://www.penguinrandomhouse.com/books/261409/the-reformation-by-diarmaid-macculloch/
     confidence: medium
@@ -55,20 +55,32 @@ primary_sources:
     year: 2003
     url: https://www.penguinrandomhouse.com/books/261409/the-reformation-by-diarmaid-macculloch/
     institution: Penguin
-  - title: "The Reformation: A Very Short Introduction (2025)"
+  - title: 'The Reformation: A Very Short Introduction (2025)'
     type: book
     year: 2025
     authors:
       - Marshall P.
     institution: Oxford University Press
     url: https://global.oup.com/vsi-reformation/
-  - title: "Reformation: Europe's House Divided (2025)"
+  - title: 'Reformation: Europe''s House Divided (2025)'
     type: book
     year: 2025
     authors:
       - MacCulloch D.
     institution: Penguin
     url: https://www.penguinrandomhouse.com/reformation/
+  - title: 'Reformation: Europe''s House Divided 1490-1700'
+    authors:
+      - MacCulloch, D.
+    type: book
+    year: 2003
+    institution: Allen Lane
+  - title: 'The Reformation: A History'
+    authors:
+      - Collinson, P.
+    type: book
+    year: 2003
+    institution: Modern Library
 secondary_sources:
   - title: Encyclopaedia Britannica
     type: reference
@@ -81,6 +93,7 @@ secondary_sources:
     url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
     institution: J.M. Roberts, Penguin
 ---
+
 ## TL;DR
 
 The Protestant Reformation (1517-1648) split Western Christianity. Martin Luther's 95 Theses (1517) challenged Catholic Church practices, especially indulgences. Printing press spread ideas rapidly. Resulted in Protestant churches (Lutheran, Calvinist, Anglican) and Catholic Counter-Reformation (Council of Trent).

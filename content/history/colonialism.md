@@ -4,9 +4,9 @@ title: Colonialism
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -16,12 +16,12 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-history-01
-    statement: "Decolonization: 1945-1975, 80 former colonies gained independence"
+    statement: 'Decolonization: 1945-1975, 80 former colonies gained independence'
     source_title: The Scramble for Africa (Thomas Pakenham)
     source_url: https://www.harpercollins.com/products/the-scramble-for-africa-thomas-pakenham
     confidence: high
   - id: fact-history-02
-    statement: "Berlin Conference: 'Scramble for Africa' — by 1914, only Ethiopia and Liberia remained independent"
+    statement: 'Berlin Conference: ''Scramble for Africa'' — by 1914, only Ethiopia and Liberia remained independent'
     source_title: The Scramble for Africa (Thomas Pakenham)
     source_url: https://www.harpercollins.com/products/the-scramble-for-africa-thomas-pakenham
     confidence: high
@@ -39,22 +39,34 @@ primary_sources:
     year: 1991
     url: https://www.harpercollins.com/products/the-scramble-for-africa-thomas-pakenham
     institution: HarperCollins
-  - title: "Colonialism: A Global History (2025)"
+  - title: 'Colonialism: A Global History (2025)'
     type: book
     year: 2025
     authors:
       - multiple
     institution: Routledge
     url: https://www.routledge.com/colonialism/
-  - title: "Colonialism: A Very Short Introduction (2025)"
+  - title: 'Colonialism: A Very Short Introduction (2025)'
     type: book
     year: 2025
     authors:
       - multiple
     institution: Oxford University Press
     url: https://global.oup.com/vsi-colonialism/
+  - title: How Europe Underdeveloped Africa
+    authors:
+      - Rodney, W.
+    type: book
+    year: 1972
+    institution: Bogle-L'Ouverture
+  - title: The Colonial Present
+    authors:
+      - Gregory, D.
+    type: book
+    year: 2004
+    institution: Wiley-Blackwell
 secondary_sources:
-  - title: "Empire: How Britain Made the Modern World"
+  - title: 'Empire: How Britain Made the Modern World'
     type: book
     year: 2003
     url: https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540
@@ -65,6 +77,7 @@ secondary_sources:
     url: https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
     institution: Penguin Books
 ---
+
 ## TL;DR
 
 Colonialism (15th-20th centuries) saw European powers establish political, economic, and cultural control over much of Africa, Asia, and the Americas. Peak at Berlin Conference (1884-85): European powers partitioned Africa without African input. Decolonization: 1945-1975, ~80 former colonies gained independence.

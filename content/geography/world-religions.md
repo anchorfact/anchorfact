@@ -4,9 +4,9 @@ title: World Religions
 schema_type: TechArticle
 category: geography
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -23,17 +23,17 @@ atomic_facts:
     source_url: https://www.harpercollins.com/products/the-worlds-religions-huston-smith
     confidence: medium
   - id: fact-geography-002
-    statement: "Christianity: Catholic (1.3B), Protestant, Orthodox — Trinity, salvation through faith."
+    statement: 'Christianity: Catholic (1.3B), Protestant, Orthodox — Trinity, salvation through faith.'
     source_title: The World's Religions (Huston Smith)
     source_url: https://www.harpercollins.com/products/the-worlds-religions-huston-smith
     confidence: medium
   - id: fact-geography-003
-    statement: "Islam: Sunni (85-90%), Shia — Five Pillars (prayer, fasting, charity, pilgrimage, faith declaration)."
+    statement: 'Islam: Sunni (85-90%), Shia — Five Pillars (prayer, fasting, charity, pilgrimage, faith declaration).'
     source_title: The World's Religions (Huston Smith)
     source_url: https://www.harpercollins.com/products/the-worlds-religions-huston-smith
     confidence: medium
   - id: fact-geography-004
-    statement: "Buddhism: Four Noble Truths (suffering, cause, cessation, Eightfold Path)."
+    statement: 'Buddhism: Four Noble Truths (suffering, cause, cessation, Eightfold Path).'
     source_title: The World's Religions (Huston Smith)
     source_url: https://www.harpercollins.com/products/the-worlds-religions-huston-smith
     confidence: medium
@@ -51,14 +51,14 @@ primary_sources:
     year: 1958
     url: https://www.harpercollins.com/products/the-worlds-religions-huston-smith
     institution: HarperOne
-  - title: "World Religions: A Very Short Introduction (2025)"
+  - title: 'World Religions: A Very Short Introduction (2025)'
     type: book
     year: 2025
     authors:
       - multiple
     institution: Oxford University Press
     url: https://global.oup.com/vsi-world-religions/
-  - title: "God Is Not One: The Eight Rival Religions (2025 Updated)"
+  - title: 'God Is Not One: The Eight Rival Religions (2025 Updated)'
     type: book
     year: 2025
     authors:
@@ -72,6 +72,17 @@ primary_sources:
       - Prothero S.
     institution: HarperOne
     url: https://www.harpercollins.com/world-religions/
+  - title: The World's Religions (50th Anniversary Edition)
+    authors:
+      - Smith, H.
+    type: book
+    year: 2009
+    institution: HarperOne
+  - title: 'Pew Research Center: The Global Religious Landscape'
+    type: government_report
+    year: 2012
+    url: https://www.pewresearch.org/religion/2012/12/18/global-religious-landscape-exec/
+    institution: Pew Research Center
 secondary_sources:
   - title: CIA World Factbook
     type: database
@@ -84,6 +95,7 @@ secondary_sources:
     url: https://www.nationalgeographic.com/maps/atlas/
     institution: National Geographic
 ---
+
 ## TL;DR
 
 Major world religions: Christianity (2.4B, Jesus Christ, Bible), Islam (1.9B, Muhammad, Quran), Hinduism (1.2B, oldest, diverse traditions, Vedas), Buddhism (520M, Siddhartha Gautama, Four Noble Truths), Judaism (15M, Torah, foundational to Christianity/Islam). Non-religious/unaffiliated: ~1.2B.

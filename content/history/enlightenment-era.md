@@ -4,9 +4,9 @@ title: Enlightenment Era
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -23,22 +23,22 @@ atomic_facts:
     source_url: https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A
     confidence: medium
   - id: fact-history-002
-    statement: "Montesquieu: Spirit of the Laws (1748) — legislative/executive/judicial branches."
+    statement: 'Montesquieu: Spirit of the Laws (1748) — legislative/executive/judicial branches.'
     source_title: The Enlightenment (Dorinda Outram, 4th Ed)
     source_url: https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A
     confidence: medium
   - id: fact-history-003
-    statement: "Adam Smith (Wealth of Nations, 1776): invisible hand, division of labor."
+    statement: 'Adam Smith (Wealth of Nations, 1776): invisible hand, division of labor.'
     source_title: The Enlightenment (Dorinda Outram, 4th Ed)
     source_url: https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A
     confidence: medium
   - id: fact-history-004
-    statement: "Encyclopédie (Diderot & d'Alembert, 1751-72): compendium of all knowledge, 71,818 articles."
+    statement: 'Encyclopédie (Diderot & d''Alembert, 1751-72): compendium of all knowledge, 71,818 articles.'
     source_title: The Enlightenment (Dorinda Outram, 4th Ed)
     source_url: https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A
     confidence: medium
   - id: fact-history-005
-    statement: "Salons: intellectual gatherings led by women (Mme Geoffrin)."
+    statement: 'Salons: intellectual gatherings led by women (Mme Geoffrin).'
     source_title: The Enlightenment (Dorinda Outram, 4th Ed)
     source_url: https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A
     confidence: medium
@@ -55,20 +55,32 @@ primary_sources:
     year: 2019
     url: https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A
     institution: Cambridge University Press
-  - title: "The Enlightenment: A Very Short Introduction (2025)"
+  - title: 'The Enlightenment: A Very Short Introduction (2025)'
     type: book
     year: 2025
     authors:
       - Robertson J.
     institution: Oxford University Press
     url: https://global.oup.com/vsi-enlightenment/
-  - title: "The Enlightenment: The Pursuit of Happiness (2025)"
+  - title: 'The Enlightenment: The Pursuit of Happiness (2025)'
     type: book
     year: 2025
     authors:
       - Robertson R.
     institution: Harper
     url: https://www.harpercollins.com/enlightenment/
+  - title: 'The Enlightenment: The Pursuit of Happiness 1680-1790'
+    authors:
+      - Robertson, R.
+    type: book
+    year: 2020
+    institution: Harper
+  - title: The Enlightenment (4th Edition)
+    authors:
+      - Outram, D.
+    type: book
+    year: 2019
+    institution: Cambridge University Press
 secondary_sources:
   - title: Encyclopaedia Britannica
     type: reference
@@ -81,6 +93,7 @@ secondary_sources:
     url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
     institution: J.M. Roberts, Penguin
 ---
+
 ## TL;DR
 
 The Enlightenment (18th century, 'Age of Reason') championed reason, science, individual rights, and skepticism of authority. Key thinkers: Locke (natural rights), Montesquieu (separation of powers), Voltaire (civil liberties, religious tolerance), Rousseau (social contract), Kant ('Sapere aude!' — dare to know). Fueled American and French Revolutions.

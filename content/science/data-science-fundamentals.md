@@ -1,12 +1,12 @@
 ---
 id: data-science-fundamentals
-title: "Data Science: Methods, Tools, and Best Practices"
+title: 'Data Science: Methods, Tools, and Best Practices'
 schema_type: Article
 category: science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -54,7 +54,7 @@ primary_sources:
       - McKinney W.
     institution: O'Reilly Media
     url: https://www.oreilly.com/pydata/
-  - title: "Data Science: A Comprehensive Overview (2025)"
+  - title: 'Data Science: A Comprehensive Overview (2025)'
     type: survey_paper
     year: 2025
     authors:
@@ -68,6 +68,24 @@ primary_sources:
       - Grus J.
     institution: O'Reilly Media
     url: https://www.oreilly.com/data-science/
+  - title: The Elements of Statistical Learning (2nd Edition)
+    authors:
+      - Hastie, T.
+      - Tibshirani, R.
+      - Friedman, J.
+    type: book
+    year: 2009
+    institution: Springer
+  - title: Introduction to Statistical Learning (2nd Edition)
+    authors:
+      - James, G.
+      - Witten, D.
+      - Hastie, T.
+      - Tibshirani, R.
+    type: book
+    year: 2021
+    url: https://www.statlearning.com/
+    institution: Springer
 secondary_sources:
   - title: The Elements of Statistical Learning (Hastie, Tibshirani, Friedman)
     type: textbook
@@ -85,7 +103,7 @@ secondary_sources:
       - Grus, Joel
     institution: O'Reilly Media
     url: https://www.oreilly.com/library/view/data-science-from/9781492041122/
-  - title: "Data Science: A Comprehensive Overview (ACM Computing Surveys)"
+  - title: 'Data Science: A Comprehensive Overview (ACM Computing Surveys)'
     type: survey_paper
     year: 2024
     authors:
@@ -99,8 +117,9 @@ secondary_sources:
       - VanderPlas, Jake
     institution: O'Reilly Media
     url: https://jakevdp.github.io/PythonDataScienceHandbook/
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Data science combines statistics, computer science, and domain expertise to extract insights from data. The modern workflow — from data wrangling through machine learning to deployment — is supported by Python's ecosystem and cloud infrastructure.
 

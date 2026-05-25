@@ -4,9 +4,9 @@ title: Chronic Disease Prevention Strategies
 schema_type: Article
 category: health
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -22,7 +22,7 @@ atomic_facts:
     confidence: high
   - id: fact-hlth-chr-002
     statement: Tobacco, unhealthy diet, inactivity, and alcohol are 4 major modifiable NCD risk factors.
-    source_title: "WHO Fact Sheet: Noncommunicable Diseases (2023)"
+    source_title: 'WHO Fact Sheet: Noncommunicable Diseases (2023)'
     source_url: https://www.who.int/news-room/fact-sheets/detail/noncommunicable-diseases
     confidence: high
   - id: fact-hlth-chr-003
@@ -47,6 +47,17 @@ primary_sources:
     year: 2023
     url: https://www.who.int/publications/i/item/9789240061798
     institution: WHO
+  - title: Global Action Plan for the Prevention and Control of NCDs 2013-2030 (Updated 2023)
+    type: government_report
+    year: 2023
+    url: https://www.who.int/publications/i/item/9789241506236
+    institution: World Health Organization
+  - title: Preventive Medicine and Public Health (5th Edition)
+    authors:
+      - Wallace, R.B.
+    type: book
+    year: 2020
+    institution: McGraw-Hill
 secondary_sources:
   - title: Global Burden of Disease Study 2021 (Lancet — IHME)
     type: journal_article
@@ -70,15 +81,16 @@ secondary_sources:
       - Campbell, Thomas M.
     institution: BenBella Books
     url: https://benbellabooks.com/shop/the-china-study/
-  - title: "CDC Chronic Disease Prevention: AI and Big Data Applications in Population Health Surveillance (2025)"
+  - title: 'CDC Chronic Disease Prevention: AI and Big Data Applications in Population Health Surveillance (2025)'
     type: report
     year: 2025
     authors:
       - CDC
     institution: Centers for Disease Control and Prevention
     url: https://www.cdc.gov/chronicdisease/
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Chronic diseases — cardiovascular disease, diabetes, cancer, respiratory disease — cause 74% of global deaths. The WHO estimates 80% are preventable through modifiable risk factors: diet, physical activity, tobacco, and alcohol.
 

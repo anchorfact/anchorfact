@@ -4,9 +4,9 @@ title: Great Depression
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -17,34 +17,34 @@ data_period: static
 atomic_facts:
   - id: fact-history-01
     statement: The Great Depression was the worst economic downturn in modern history
-    source_title: "The Great Depression: A Diary (Benjamin Roth)"
+    source_title: 'The Great Depression: A Diary (Benjamin Roth)'
     source_url: https://www.publicaffairsbooks.com/titles/benjamin-roth/the-great-depression/9781586489014/
     confidence: high
   - id: fact-history-001
     statement: >-
       The Great Depression (1929-1939) was the worst economic downturn in modern history. Trigger: US stock market crash (October 1929). Global unemployment reached 25-33%. Bank failures, deflation,
       dust bowl. FDR's New Deal (1933) provided relief, recovery, reform. WWII ultimately ended the Depression through massive government spending.
-    source_title: "The Great Depression: A Diary (Benjamin Roth)"
+    source_title: 'The Great Depression: A Diary (Benjamin Roth)'
     source_url: https://www.publicaffairsbooks.com/titles/benjamin-roth/the-great-depression/9781586489014/
     confidence: medium
   - id: fact-history-002
-    statement: "Causes: stock market speculation, bank failures, reduction in purchasing power, drought (Dust Bowl)."
-    source_title: "The Great Depression: A Diary (Benjamin Roth)"
+    statement: 'Causes: stock market speculation, bank failures, reduction in purchasing power, drought (Dust Bowl).'
+    source_title: 'The Great Depression: A Diary (Benjamin Roth)'
     source_url: https://www.publicaffairsbooks.com/titles/benjamin-roth/the-great-depression/9781586489014/
     confidence: medium
   - id: fact-history-003
-    statement: "New Deal programs: CCC (jobs for youth), WPA (infrastructure), Social Security (1935), FDIC (bank deposit insurance)."
-    source_title: "The Great Depression: A Diary (Benjamin Roth)"
+    statement: 'New Deal programs: CCC (jobs for youth), WPA (infrastructure), Social Security (1935), FDIC (bank deposit insurance).'
+    source_title: 'The Great Depression: A Diary (Benjamin Roth)'
     source_url: https://www.publicaffairsbooks.com/titles/benjamin-roth/the-great-depression/9781586489014/
     confidence: medium
   - id: fact-history-004
-    statement: "Keynesian economics: government spending stimulates demand."
-    source_title: "The Great Depression: A Diary (Benjamin Roth)"
+    statement: 'Keynesian economics: government spending stimulates demand.'
+    source_title: 'The Great Depression: A Diary (Benjamin Roth)'
     source_url: https://www.publicaffairsbooks.com/titles/benjamin-roth/the-great-depression/9781586489014/
     confidence: medium
   - id: fact-history-005
-    statement: "Unemployment in US: 3% (1929) → 25% (1933) → 15% (1940)."
-    source_title: "The Great Depression: A Diary (Benjamin Roth)"
+    statement: 'Unemployment in US: 3% (1929) → 25% (1933) → 15% (1940).'
+    source_title: 'The Great Depression: A Diary (Benjamin Roth)'
     source_url: https://www.publicaffairsbooks.com/titles/benjamin-roth/the-great-depression/9781586489014/
     confidence: medium
 completeness: 0.88
@@ -55,25 +55,37 @@ disputed_statements:
       The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
       available evidence
 primary_sources:
-  - title: "The Great Depression: A Diary (Benjamin Roth)"
+  - title: 'The Great Depression: A Diary (Benjamin Roth)'
     type: book
     year: 2009
     url: https://www.publicaffairsbooks.com/titles/benjamin-roth/the-great-depression/9781586489014/
     institution: PublicAffairs
-  - title: "The Great Depression: A Diary (2025 Edition)"
+  - title: 'The Great Depression: A Diary (2025 Edition)'
     type: book
     year: 2025
     authors:
       - Roth B.
     institution: PublicAffairs
     url: https://www.publicaffairsbooks.com/great-depression/
-  - title: "The Great Depression and New Deal: A Very Short Introduction (2025)"
+  - title: 'The Great Depression and New Deal: A Very Short Introduction (2025)'
     type: book
     year: 2025
     authors:
       - Rauchway E.
     institution: Oxford University Press
     url: https://global.oup.com/vsi-depression/
+  - title: 'The Great Depression: A Diary'
+    authors:
+      - Roth, B.
+    type: book
+    year: 2009
+    institution: PublicAffairs
+  - title: 'The Great Depression: America 1929-1941'
+    authors:
+      - McElvaine, R.S.
+    type: book
+    year: 1993
+    institution: Times Books
 secondary_sources:
   - title: Encyclopaedia Britannica
     type: reference
@@ -86,6 +98,7 @@ secondary_sources:
     url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
     institution: J.M. Roberts, Penguin
 ---
+
 ## TL;DR
 
 The Great Depression (1929-1939) was the worst economic downturn in modern history. Trigger: US stock market crash (October 1929). Global unemployment reached 25-33%. Bank failures, deflation, dust bowl. FDR's New Deal (1933) provided relief, recovery, reform. WWII ultimately ended the Depression through massive government spending.

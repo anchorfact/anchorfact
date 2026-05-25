@@ -4,9 +4,9 @@ title: Coral Reefs
 schema_type: TechArticle
 category: science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -21,12 +21,12 @@ atomic_facts:
     source_url: https://global.oup.com/academic/product/the-biology-of-coral-reefs-9780198787358
     confidence: high
   - id: fact-science-02
-    statement: "Great Barrier Reef: 50% coral loss since 1995"
+    statement: 'Great Barrier Reef: 50% coral loss since 1995'
     source_title: The Biology of Coral Reefs (Sheppard, Davy, Pilling, 2nd Ed)
     source_url: https://global.oup.com/academic/product/the-biology-of-coral-reefs-9780198787358
     confidence: high
   - id: fact-science-03
-    statement: "Coral bleaching: triggered by 1-2°C above normal summer temperatures"
+    statement: 'Coral bleaching: triggered by 1-2°C above normal summer temperatures'
     source_title: The Biology of Coral Reefs (Sheppard, Davy, Pilling, 2nd Ed)
     source_url: https://global.oup.com/academic/product/the-biology-of-coral-reefs-9780198787358
     confidence: high
@@ -43,14 +43,14 @@ primary_sources:
     year: 2017
     url: https://global.oup.com/academic/product/the-biology-of-coral-reefs-9780198787358
     institution: Oxford University Press
-  - title: "Coral Reefs: A Very Short Introduction (2025)"
+  - title: 'Coral Reefs: A Very Short Introduction (2025)'
     type: book
     year: 2025
     authors:
       - Sheppard C.
     institution: Oxford University Press
     url: https://global.oup.com/vsi-coral/
-  - title: "Coral Reefs in the Anthropocene: A 2025 Review"
+  - title: 'Coral Reefs in the Anthropocene: A 2025 Review'
     type: article
     year: 2025
     authors:
@@ -64,6 +64,17 @@ primary_sources:
       - multiple
     institution: Nature
     url: https://doi.org/10.1038/s41586-2025-coral
+  - title: 'Coral Reefs: A Very Short Introduction'
+    authors:
+      - Sheppard, C.R.C.
+    type: book
+    year: 2021
+    institution: Oxford University Press
+  - title: 'Status of Coral Reefs of the World: 2020'
+    type: government_report
+    year: 2021
+    url: https://gcrmn.net/2020-report/
+    institution: Global Coral Reef Monitoring Network
 secondary_sources:
   - title: A Brief History of Time
     type: book
@@ -76,6 +87,7 @@ secondary_sources:
     url: https://www.nature.com/
     institution: Springer Nature
 ---
+
 ## TL;DR
 
 Coral reefs are underwater ecosystems built by calcium carbonate skeletons of coral polyps — tiny animals with symbiotic algae (zooxanthellae). Cover <0.1% of ocean floor but host 25% of marine species. Great Barrier Reef (2,300 km, Australia) is the largest living structure on Earth. Bleaching: corals expel algae under heat stress → turn white → die.

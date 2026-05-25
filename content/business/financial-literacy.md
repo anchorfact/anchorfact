@@ -4,9 +4,9 @@ title: Financial Literacy
 schema_type: TechArticle
 category: business
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -23,17 +23,17 @@ atomic_facts:
     source_url: https://www.penguinrandomhouse.com/books/180511/your-money-or-your-life-by-vicki-robin/
     confidence: medium
   - id: fact-business-002
-    statement: "Credit score (FICO): payment history (35%), amounts owed (30%), length (15%), new credit (10%), mix (10%)."
+    statement: 'Credit score (FICO): payment history (35%), amounts owed (30%), length (15%), new credit (10%), mix (10%).'
     source_title: Your Money or Your Life (Vicki Robin, Joe Dominguez)
     source_url: https://www.penguinrandomhouse.com/books/180511/your-money-or-your-life-by-vicki-robin/
     confidence: medium
   - id: fact-business-003
-    statement: "Tax: understand marginal brackets, tax-advantaged accounts (401k, IRA, HSA)."
+    statement: 'Tax: understand marginal brackets, tax-advantaged accounts (401k, IRA, HSA).'
     source_title: Your Money or Your Life (Vicki Robin, Joe Dominguez)
     source_url: https://www.penguinrandomhouse.com/books/180511/your-money-or-your-life-by-vicki-robin/
     confidence: medium
   - id: fact-business-004
-    statement: "Inflation: ~2-3% annually — cash loses purchasing power."
+    statement: 'Inflation: ~2-3% annually — cash loses purchasing power.'
     source_title: Your Money or Your Life (Vicki Robin, Joe Dominguez)
     source_url: https://www.penguinrandomhouse.com/books/180511/your-money-or-your-life-by-vicki-robin/
     confidence: medium
@@ -51,7 +51,7 @@ primary_sources:
     year: 1992
     url: https://www.penguinrandomhouse.com/books/180511/your-money-or-your-life-by-vicki-robin/
     institution: Penguin
-  - title: "The Psychology of Money: Timeless Lessons (2025 Edition)"
+  - title: 'The Psychology of Money: Timeless Lessons (2025 Edition)'
     type: book
     year: 2025
     authors:
@@ -81,6 +81,20 @@ primary_sources:
       - Kiyosaki R.
     institution: Plata Publishing
     url: https://www.richdad.com/
+  - title: Personal Finance (14th Edition)
+    authors:
+      - Kapoor, J.R.
+      - Dlabay, L.R.
+      - Hughes, R.J.
+    type: book
+    year: 2023
+    institution: McGraw-Hill
+  - title: The Psychology of Money
+    authors:
+      - Housel, M.
+    type: book
+    year: 2020
+    institution: Harriman House
 secondary_sources:
   - title: The Intelligent Investor
     type: book
@@ -93,6 +107,7 @@ secondary_sources:
     url: https://www.cengage.com/c/principles-of-economics-9e-mankiw/9780357038314/
     institution: Cengage Learning
 ---
+
 ## TL;DR
 
 Financial literacy is understanding how money works: earning, spending, saving, investing, borrowing, protecting. Key concepts: compound interest, diversification, inflation, risk vs. return, tax-advantaged accounts. Financially literate individuals make informed decisions, avoid predatory lending, and build long-term wealth.

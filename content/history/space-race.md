@@ -4,9 +4,9 @@ title: Space Race
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -21,7 +21,7 @@ atomic_facts:
     source_url: https://us.macmillan.com/books/9780312427566/therightstuff
     confidence: high
   - id: fact-history-02
-    statement: "Mercury : first US astronauts"
+    statement: 'Mercury : first US astronauts'
     source_title: The Right Stuff (Tom Wolfe)
     source_url: https://us.macmillan.com/books/9780312427566/therightstuff
     confidence: high
@@ -45,13 +45,24 @@ primary_sources:
       - Wolfe T.
     institution: Picador
     url: https://us.macmillan.com/right-stuff/
-  - title: "Space Race: The Epic Battle (2025)"
+  - title: 'Space Race: The Epic Battle (2025)'
     type: book
     year: 2025
     authors:
       - Cadbury D.
     institution: Harper Perennial
     url: https://www.harpercollins.com/space-race/
+  - title: The Right Stuff
+    authors:
+      - Wolfe, T.
+    type: book
+    year: 1979
+    institution: Farrar, Straus and Giroux
+  - title: Apollo 11 Flight Plan — NASA Archives
+    type: government_report
+    year: 1969
+    url: https://www.nasa.gov/mission/apollo-11/
+    institution: NASA
 secondary_sources:
   - title: Encyclopaedia Britannica
     type: reference
@@ -64,6 +75,7 @@ secondary_sources:
     url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
     institution: J.M. Roberts, Penguin
 ---
+
 ## TL;DR
 
 The Space Race (1955-1975) was Cold War competition between the US and USSR for space dominance. USSR firsts: satellite (Sputnik 1957), human (Gagarin 1961), woman (Tereshkova 1963), spacewalk (Leonov 1965). US firsts: Moon landing (Apollo 11, Armstrong + Aldrin, July 20, 1969). Apollo program employed 400,000 people.

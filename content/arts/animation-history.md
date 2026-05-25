@@ -4,9 +4,9 @@ title: Animation History
 schema_type: TechArticle
 category: arts
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -19,22 +19,22 @@ atomic_facts:
     statement: >-
       Animation creates the illusion of motion through sequential images. History: flip books → traditional hand-drawn (Disney, 1920s+) → stop-motion (clay, puppets) → CGI (Pixar's Toy Story, 1995,
       first fully CGI feature) → modern hybrid. Disney's 12 principles of animation (Thomas & Johnston, 1981) remain foundational.
-    source_title: "The Illusion of Life: Disney Animation (Thomas & Johnston)"
+    source_title: 'The Illusion of Life: Disney Animation (Thomas & Johnston)'
     source_url: https://www.disneybooks.com/book/the-illusion-of-life/
     confidence: medium
   - id: fact-arts-002
-    statement: "12 principles: squash and stretch, anticipation, staging, straight ahead vs."
-    source_title: "The Illusion of Life: Disney Animation (Thomas & Johnston)"
+    statement: '12 principles: squash and stretch, anticipation, staging, straight ahead vs.'
+    source_title: 'The Illusion of Life: Disney Animation (Thomas & Johnston)'
     source_url: https://www.disneybooks.com/book/the-illusion-of-life/
     confidence: medium
   - id: fact-arts-003
-    statement: "Anime: Japanese distinctive style (Studio Ghibli — Miyazaki)."
-    source_title: "The Illusion of Life: Disney Animation (Thomas & Johnston)"
+    statement: 'Anime: Japanese distinctive style (Studio Ghibli — Miyazaki).'
+    source_title: 'The Illusion of Life: Disney Animation (Thomas & Johnston)'
     source_url: https://www.disneybooks.com/book/the-illusion-of-life/
     confidence: medium
   - id: fact-arts-004
-    statement: "Motion capture: record real movement → animate character (Andy Serkis — Gollum)."
-    source_title: "The Illusion of Life: Disney Animation (Thomas & Johnston)"
+    statement: 'Motion capture: record real movement → animate character (Andy Serkis — Gollum).'
+    source_title: 'The Illusion of Life: Disney Animation (Thomas & Johnston)'
     source_url: https://www.disneybooks.com/book/the-illusion-of-life/
     confidence: medium
 completeness: 0.88
@@ -46,7 +46,7 @@ disputed_statements:
       The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist
       and expressionist accounts
 primary_sources:
-  - title: "The Illusion of Life: Disney Animation (Thomas & Johnston)"
+  - title: 'The Illusion of Life: Disney Animation (Thomas & Johnston)'
     type: book
     year: 1981
     url: https://www.disneybooks.com/book/the-illusion-of-life/
@@ -58,7 +58,7 @@ primary_sources:
       - Williams R.
     institution: Faber & Faber
     url: https://www.faber.co.uk/animation/
-  - title: "Animation: A World History (2025 Updated)"
+  - title: 'Animation: A World History (2025 Updated)'
     type: book
     year: 2025
     authors:
@@ -72,8 +72,20 @@ primary_sources:
       - Williams R.
     institution: Faber & Faber
     url: https://www.faber.co.uk/animation/
+  - title: The Animator's Survival Kit
+    authors:
+      - Williams, R.
+    type: book
+    year: 2001
+    institution: Faber & Faber
+  - title: 'Of Mice and Magic: A History of American Animated Cartoons'
+    authors:
+      - Maltin, L.
+    type: book
+    year: 1987
+    institution: Plume
 secondary_sources:
-  - title: "Film History: An Introduction"
+  - title: 'Film History: An Introduction'
     type: book
     year: 2018
     url: https://www.mheducation.com/highered/product/film-history-introduction-thompson-bordwell/M9781259870354.html
@@ -84,6 +96,7 @@ secondary_sources:
     url: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
     institution: Phaidon Press
 ---
+
 ## TL;DR
 
 Animation creates the illusion of motion through sequential images. History: flip books → traditional hand-drawn (Disney, 1920s+) → stop-motion (clay, puppets) → CGI (Pixar's Toy Story, 1995, first fully CGI feature) → modern hybrid. Disney's 12 principles of animation (Thomas & Johnston, 1981) remain foundational.

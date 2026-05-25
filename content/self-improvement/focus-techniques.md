@@ -4,9 +4,9 @@ title: Focus and Concentration Techniques
 schema_type: TechArticle
 category: self-improvement
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -41,24 +41,24 @@ known_gaps:
   - Attention research is rapidly evolving; this article covers established techniques, not cutting-edge neuroscience
   - ADHD and other attention disorders may require different approaches beyond general techniques
 primary_sources:
-  - title: "Deep Work: Rules for Focused Success in a Distracted World (Cal Newport)"
+  - title: 'Deep Work: Rules for Focused Success in a Distracted World (Cal Newport)'
     type: book
     year: 2016
     url: https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/
     institution: Grand Central Publishing
-  - title: "Flow: The Psychology of Optimal Experience (Csikszentmihalyi)"
+  - title: 'Flow: The Psychology of Optimal Experience (Csikszentmihalyi)'
     type: book
     year: 1990
     url: https://www.harpercollins.com/products/flow-mihaly-csikszentmihalyi
     institution: HarperCollins
-  - title: "Deep Work: Rules for Focused Success in a Distracted World (2025 Edition)"
+  - title: 'Deep Work: Rules for Focused Success in a Distracted World (2025 Edition)'
     type: book
     year: 2025
     authors:
       - Newport C.
     institution: Grand Central
     url: https://www.hachettebookgroup.com/deep-work/
-  - title: "Indistractable: How to Control Your Attention (2025 Updated)"
+  - title: 'Indistractable: How to Control Your Attention (2025 Updated)'
     type: book
     year: 2025
     authors:
@@ -79,6 +79,18 @@ primary_sources:
       - Eyal N.
     institution: BenBella Books
     url: https://www.benbellabooks.com/indistractable/
+  - title: 'Deep Work: Rules for Focused Success in a Distracted World'
+    authors:
+      - Newport, C.
+    type: book
+    year: 2016
+    institution: Grand Central
+  - title: 'Flow: The Psychology of Optimal Experience'
+    authors:
+      - Csikszentmihalyi, M.
+    type: book
+    year: 1990
+    institution: Harper & Row
 secondary_sources:
   - title: Atomic Habits (James Clear)
     type: book
@@ -86,6 +98,7 @@ secondary_sources:
     url: https://jamesclear.com/atomic-habits
     institution: Avery, Penguin Random House
 ---
+
 ## TL;DR
 
 Sustained concentration is a trainable skill eroded by modern distraction culture. Core techniques: Pomodoro (25min focus + 5min break), deep work blocks (2-4h uninterrupted sessions), flow state optimization (clear goals + challenge-skill balance). Environmental design: digital minimalism, dedicated workspace, single-tasking over multitasking. Attention is a finite resource requiring deliberate management.

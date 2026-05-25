@@ -1,12 +1,12 @@
 ---
 id: economics-fundamentals
-title: "Economics: Supply, Demand, and Market Equilibrium"
+title: 'Economics: Supply, Demand, and Market Equilibrium'
 schema_type: Article
 category: business
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -16,12 +16,12 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-biz-ec-001
-    statement: "Adam Smith's Wealth of Nations (1776) founded classical economics: division of labor, invisible hand."
+    statement: 'Adam Smith''s Wealth of Nations (1776) founded classical economics: division of labor, invisible hand.'
     source_title: Smith, A. The Wealth of Nations (1776, Liberty Fund ed.)
     source_url: https://www.econlib.org/library/Smith/smWN.html
     confidence: high
   - id: fact-biz-ec-002
-    statement: "Keynes' General Theory (1936): aggregate demand drives employment and output."
+    statement: 'Keynes'' General Theory (1936): aggregate demand drives employment and output.'
     source_title: Keynes, J.M. The General Theory (Macmillan 1936)
     source_url: https://www.cambridge.org/core/books/general-theory-of-employment-interest-and-money/
     confidence: high
@@ -37,11 +37,24 @@ primary_sources:
     year: 2020
     url: https://www.cengage.com/c/principles-of-economics-9e-mankiw/9780357038314/
     institution: Cengage
-  - title: "MIT 14.01: Principles of Microeconomics"
+  - title: 'MIT 14.01: Principles of Microeconomics'
     type: course_material
     year: 2023
     url: https://ocw.mit.edu/courses/14-01-principles-of-microeconomics-fall-2023/
     institution: MIT OpenCourseWare
+  - title: Economics (23rd Edition)
+    authors:
+      - Samuelson, P.A.
+      - Nordhaus, W.D.
+    type: book
+    year: 2020
+    institution: McGraw-Hill
+  - title: Principles of Economics (9th Edition)
+    authors:
+      - Mankiw, N.G.
+    type: book
+    year: 2020
+    institution: Cengage
 known_gaps:
   - Behavioral economics and bounded rationality
   - International trade theory
@@ -77,22 +90,23 @@ secondary_sources:
       - IMF
     institution: International Monetary Fund
     url: https://www.imf.org/en/Publications/WEO
-  - title: "World Economic Outlook: A Critical Juncture — IMF April 2025 Update"
+  - title: 'World Economic Outlook: A Critical Juncture — IMF April 2025 Update'
     type: report
     year: 2025
     authors:
       - IMF
     institution: International Monetary Fund
     url: https://www.imf.org/en/Publications/WEO
-  - title: "Economics for a Fragile Planet: Rethinking Growth in the Anthropocene (2025)"
+  - title: 'Economics for a Fragile Planet: Rethinking Growth in the Anthropocene (2025)'
     type: book
     year: 2025
     authors:
       - multiple
     institution: Cambridge University Press
     url: https://doi.org/10.1017/cbo.2025.ecogrowth
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Economics studies how societies allocate scarce resources. Supply and demand form the core analytical framework, while GDP, inflation, and unemployment are the headline macroeconomic indicators.
 

@@ -4,9 +4,9 @@ title: Genetics and Heredity
 schema_type: TechArticle
 category: science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -17,19 +17,19 @@ data_period: static
 atomic_facts:
   - id: fact-science-01
     statement: Human Genome Project sequenced all 3 billion base pairs
-    source_title: "The Gene: An Intimate History (Siddhartha Mukherjee)"
+    source_title: 'The Gene: An Intimate History (Siddhartha Mukherjee)'
     source_url: https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524
     confidence: high
   - id: fact-science-001
     statement: >-
       Genetics studies heredity — how traits pass from parents to offspring. Mendel's laws (1866): segregation (alleles separate) and independent assortment. DNA structure (Watson/Crick, 1953). Human
       Genome Project (completed 2003) sequenced all ~3 billion base pairs. CRISPR-Cas9 (2012) enables precise gene editing.
-    source_title: "The Gene: An Intimate History (Siddhartha Mukherjee)"
+    source_title: 'The Gene: An Intimate History (Siddhartha Mukherjee)'
     source_url: https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524
     confidence: medium
   - id: fact-science-002
-    statement: "CRISPR: bacterial immune system repurposed for gene editing — Cas9 protein cuts DNA at guide RNA target."
-    source_title: "The Gene: An Intimate History (Siddhartha Mukherjee)"
+    statement: 'CRISPR: bacterial immune system repurposed for gene editing — Cas9 protein cuts DNA at guide RNA target.'
+    source_title: 'The Gene: An Intimate History (Siddhartha Mukherjee)'
     source_url: https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524
     confidence: medium
 completeness: 0.88
@@ -42,7 +42,7 @@ disputed_statements:
       The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
       available evidence
 primary_sources:
-  - title: "The Gene: An Intimate History (Siddhartha Mukherjee)"
+  - title: 'The Gene: An Intimate History (Siddhartha Mukherjee)'
     type: book
     year: 2016
     url: https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524
@@ -55,13 +55,26 @@ primary_sources:
       - Doebley J.
     institution: W.H. Freeman
     url: https://www.macmillanlearning.com/genetics/
-  - title: "The Gene: An Intimate History (2025 Updated)"
+  - title: 'The Gene: An Intimate History (2025 Updated)'
     type: book
     year: 2025
     authors:
       - Mukherjee S.
     institution: Scribner
     url: https://www.simonandschuster.com/the-gene/
+  - title: Principles of Genetics (7th Edition)
+    authors:
+      - Snustad, D.P.
+      - Simmons, M.J.
+    type: book
+    year: 2015
+    institution: Wiley
+  - title: 'Genetics: Analysis and Principles (7th Edition)'
+    authors:
+      - Brooker, R.J.
+    type: book
+    year: 2020
+    institution: McGraw-Hill
 secondary_sources:
   - title: Molecular Biology of the Gene
     type: book
@@ -74,6 +87,7 @@ secondary_sources:
     url: https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058
     institution: Pearson Education
 ---
+
 ## TL;DR
 
 Genetics studies heredity — how traits pass from parents to offspring. Mendel's laws (1866): segregation (alleles separate) and independent assortment. DNA structure (Watson/Crick, 1953). Human Genome Project (completed 2003) sequenced all ~3 billion base pairs. CRISPR-Cas9 (2012) enables precise gene editing.

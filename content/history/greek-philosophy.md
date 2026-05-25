@@ -4,9 +4,9 @@ title: Greek Philosophy
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -30,7 +30,7 @@ atomic_facts:
     source_url: https://www.simonandschuster.com/books/A-History-of-Western-Philosophy/Bertrand-Russell/9780671201586
     confidence: medium
   - id: fact-history-003
-    statement: "Aristotle (384-322 BCE): empiricism, golden mean (virtue between extremes), Lyceum."
+    statement: 'Aristotle (384-322 BCE): empiricism, golden mean (virtue between extremes), Lyceum.'
     source_title: A History of Western Philosophy (Bertrand Russell)
     source_url: https://www.simonandschuster.com/books/A-History-of-Western-Philosophy/Bertrand-Russell/9780671201586
     confidence: medium
@@ -48,7 +48,7 @@ primary_sources:
     year: 1945
     url: https://www.simonandschuster.com/books/A-History-of-Western-Philosophy/Bertrand-Russell/9780671201586
     institution: Simon & Schuster
-  - title: "Greek Philosophy: A Very Short Introduction (2025)"
+  - title: 'Greek Philosophy: A Very Short Introduction (2025)'
     type: book
     year: 2025
     authors:
@@ -69,8 +69,20 @@ primary_sources:
       - multiple
     institution: Cambridge University Press
     url: https://doi.org/10.1017/cbo.2025.greek
+  - title: A History of Western Philosophy
+    authors:
+      - Russell, B.
+    type: book
+    year: 1945
+    institution: Simon & Schuster
+  - title: The Republic
+    authors:
+      - Plato
+    type: book
+    year: -375
+    institution: Classical Text
 secondary_sources:
-  - title: "The Greeks: A Global History"
+  - title: 'The Greeks: A Global History'
     type: book
     year: 2021
     url: https://www.basicbooks.com/titles/roderick-beaton/the-greeks/9781541618299/
@@ -81,6 +93,7 @@ secondary_sources:
     url: https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
     institution: Penguin Books
 ---
+
 ## TL;DR
 
 Ancient Greek philosophy (6th century BCE - 6th century CE) laid the foundations of Western thought. Three giants: Socrates (questioning method, 'know thyself'), Plato (Theory of Forms, The Republic), Aristotle (logic, ethics, politics, biology — tutored Alexander the Great). Pre-Socratics (Thales: water as fundamental substance).

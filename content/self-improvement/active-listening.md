@@ -4,9 +4,9 @@ title: Active Listening
 schema_type: TechArticle
 category: self-improvement
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -23,7 +23,7 @@ atomic_facts:
     source_url: https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html
     confidence: medium
   - id: fact-self-improvement-002
-    statement: "Empathic listening: understand their frame of reference — 'Seek first to understand, then to be understood.' Reflective listening: mirror back content and emotion."
+    statement: 'Empathic listening: understand their frame of reference — ''Seek first to understand, then to be understood.'' Reflective listening: mirror back content and emotion.'
     source_title: Crucial Conversations (Patterson, Grenny, McMillan, Switzler)
     source_url: https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html
     confidence: medium
@@ -41,14 +41,14 @@ primary_sources:
     year: 2011
     url: https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html
     institution: McGraw-Hill
-  - title: "You're Not Listening: What You're Missing and Why It Matters (2025)"
+  - title: 'You''re Not Listening: What You''re Missing and Why It Matters (2025)'
     type: book
     year: 2025
     authors:
       - Murphy K.
     institution: Celadon Books
     url: https://us.macmillan.com/youre-not-listening/
-  - title: "Crucial Conversations: Tools for Talking When Stakes Are High (2025 3rd Edition)"
+  - title: 'Crucial Conversations: Tools for Talking When Stakes Are High (2025 3rd Edition)'
     type: book
     year: 2025
     authors:
@@ -73,8 +73,20 @@ primary_sources:
       - Patterson K.
     institution: McGraw-Hill
     url: https://www.mheducation.com/crucial-conversations/
+  - title: 'Nonviolent Communication: A Language of Life (3rd Edition)'
+    authors:
+      - Rosenberg, M.B.
+    type: book
+    year: 2015
+    institution: PuddleDancer Press
+  - title: 'Active Listening: Improve Your Ability to Listen and Lead (2nd Edition)'
+    authors:
+      - Hoppe, M.H.
+    type: book
+    year: 2018
+    institution: Center for Creative Leadership
 secondary_sources:
-  - title: "Nonviolent Communication: A Language of Life"
+  - title: 'Nonviolent Communication: A Language of Life'
     type: book
     year: 1999
     url: https://www.nonviolentcommunication.com/product/nvc-a-language-of-life/
@@ -85,6 +97,7 @@ secondary_sources:
     url: https://jamesclear.com/atomic-habits
     institution: Avery, Penguin Random House
 ---
+
 ## TL;DR
 
 Active listening is fully concentrating on, understanding, and responding to what someone is saying — not just waiting for your turn to speak. Techniques: paraphrase ('What I'm hearing is...'), ask open questions, reflect feelings, avoid interrupting, use non-verbal cues (nodding, eye contact).

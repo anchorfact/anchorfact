@@ -1,12 +1,12 @@
 ---
 id: environmental-science
-title: "Environmental Science: Ecosystems and Global Change"
+title: 'Environmental Science: Ecosystems and Global Change'
 schema_type: Article
 category: science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -32,7 +32,7 @@ atomic_facts:
     confidence: high
 completeness: 0.9
 primary_sources:
-  - title: "IPCC Sixth Assessment Report: Synthesis Report"
+  - title: 'IPCC Sixth Assessment Report: Synthesis Report'
     type: official_report
     year: 2023
     url: https://www.ipcc.ch/report/ar6/syr/
@@ -42,6 +42,19 @@ primary_sources:
     year: 2020
     url: https://www.cengage.com/c/living-in-the-environment-20e-miller-spoolman/9780357142202/
     institution: Cengage
+  - title: Living in the Environment (20th Edition)
+    authors:
+      - Miller, G.T.
+      - Spoolman, S.E.
+    type: book
+    year: 2020
+    institution: Cengage
+  - title: Silent Spring
+    authors:
+      - Carson, R.
+    type: book
+    year: 1962
+    institution: Houghton Mifflin
 known_gaps:
   - Carbon capture and storage technologies
   - Climate adaptation strategies by region
@@ -56,7 +69,7 @@ secondary_sources:
       - Spoolman, Scott E.
     institution: Cengage Learning
     url: https://www.cengage.com/c/living-in-the-environment-20e-miller/
-  - title: "IPCC Sixth Assessment Report: Summary for Policymakers"
+  - title: 'IPCC Sixth Assessment Report: Summary for Policymakers'
     type: report
     year: 2023
     authors:
@@ -70,7 +83,7 @@ secondary_sources:
       - UNEP
     institution: United Nations Environment Programme
     url: https://www.unep.org/resources/emissions-gap-report-2024
-  - title: "Planetary Boundaries: Guiding Human Development on a Changing Planet (Rockström et al.)"
+  - title: 'Planetary Boundaries: Guiding Human Development on a Changing Planet (Rockström et al.)'
     type: journal_article
     year: 2015
     authors:
@@ -80,14 +93,14 @@ secondary_sources:
       - et al.
     institution: Stockholm Resilience Centre / Science
     url: https://doi.org/10.1126/science.1259855
-  - title: "IPCC AR6 Synthesis Report: Climate Change 2024 Update"
+  - title: 'IPCC AR6 Synthesis Report: Climate Change 2024 Update'
     type: report
     year: 2024
     authors:
       - IPCC
     institution: IPCC
     url: https://www.ipcc.ch/report/ar6/syr/
-  - title: "Planetary Boundaries: Updated Framework and Current Status (Science Advances 2025)"
+  - title: 'Planetary Boundaries: Updated Framework and Current Status (Science Advances 2025)'
     type: article
     year: 2025
     authors:
@@ -95,8 +108,9 @@ secondary_sources:
       - Richardson K.
     institution: Science Advances
     url: https://doi.org/10.1126/sciadv.2025.boundaries
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Environmental science addresses humanity's most pressing challenge: understanding and mitigating anthropocentric changes to Earth's climate, ecosystems, and biogeochemical cycles.
 

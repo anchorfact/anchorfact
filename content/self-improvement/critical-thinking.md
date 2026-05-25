@@ -4,9 +4,9 @@ title: Critical Thinking
 schema_type: TechArticle
 category: self-improvement
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -43,14 +43,14 @@ primary_sources:
     year: 2011
     url: https://us.macmillan.com/books/9780374533557/thinkingfastandslow
     institution: Farrar, Straus and Giroux
-  - title: "Think Again: The Power of Knowing What You Don't Know (2025)"
+  - title: 'Think Again: The Power of Knowing What You Don''t Know (2025)'
     type: book
     year: 2025
     authors:
       - Grant A.
     institution: Penguin
     url: https://www.penguinrandomhouse.com/think-again/
-  - title: "Critical Thinking: A Student's Introduction (8th Edition, 2025)"
+  - title: 'Critical Thinking: A Student''s Introduction (8th Edition, 2025)'
     type: book
     year: 2025
     authors:
@@ -75,6 +75,19 @@ primary_sources:
       - Irwin W.
     institution: McGraw-Hill
     url: https://www.mheducation.com/critical-thinking/
+  - title: Thinking, Fast and Slow
+    authors:
+      - Kahneman, D.
+    type: book
+    year: 2011
+    institution: Farrar, Straus and Giroux
+  - title: 'Critical Thinking: Tools for Taking Charge of Your Learning and Your Life (4th Edition)'
+    authors:
+      - Paul, R.
+      - Elder, L.
+    type: book
+    year: 2020
+    institution: Rowman & Littlefield
 secondary_sources:
   - title: Thinking, Fast and Slow
     type: book
@@ -87,6 +100,7 @@ secondary_sources:
     url: https://jamesclear.com/atomic-habits
     institution: Avery, Penguin Random House
 ---
+
 ## TL;DR
 
 Critical thinking is the objective analysis and evaluation of claims to form a judgment. Skills: identify assumptions, evaluate evidence, recognize logical fallacies, consider alternative perspectives. System 1 (fast, intuitive) vs. System 2 (slow, deliberate) — Kahneman. Cognitive biases (confirmation bias, anchoring, availability heuristic) distort judgment.

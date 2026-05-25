@@ -1,12 +1,12 @@
 ---
 id: entrepreneurship-and-startups
-title: "Entrepreneurship: From Idea to Scalable Business"
+title: 'Entrepreneurship: From Idea to Scalable Business'
 schema_type: Article
 category: business
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -16,7 +16,7 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-biz-ent-001
-    statement: "Lean Startup (Ries 2011): Build-Measure-Learn loop, MVP, validated learning."
+    statement: 'Lean Startup (Ries 2011): Build-Measure-Learn loop, MVP, validated learning.'
     source_title: Ries, E. The Lean Startup (Crown Business 2011)
     source_url: https://theleanstartup.com/book
     confidence: high
@@ -42,14 +42,14 @@ primary_sources:
     year: 2010
     url: https://www.strategyzer.com/books/business-model-generation
     institution: Wiley
-  - title: "The Lean Startup: How Constant Innovation Creates Radically Successful Businesses (2025 15th Anniversary Edition)"
+  - title: 'The Lean Startup: How Constant Innovation Creates Radically Successful Businesses (2025 15th Anniversary Edition)'
     type: book
     year: 2025
     authors:
       - Ries E.
     institution: Crown Business
     url: https://theleanstartup.com/
-  - title: "Zero to One: Notes on Startups (2025 Updated Edition)"
+  - title: 'Zero to One: Notes on Startups (2025 Updated Edition)'
     type: book
     year: 2025
     authors:
@@ -57,6 +57,19 @@ primary_sources:
       - Masters B.
     institution: Crown Business
     url: https://www.crownpublishing.com/zero-to-one/
+  - title: The Lean Startup
+    authors:
+      - Ries, E.
+    type: book
+    year: 2011
+    institution: Crown Business
+  - title: Zero to One
+    authors:
+      - Thiel, P.
+      - Masters, B.
+    type: book
+    year: 2014
+    institution: Crown Business
 known_gaps:
   - Deep tech venture building
   - International startup ecosystem comparison
@@ -93,8 +106,9 @@ secondary_sources:
       - Masters, Blake
     institution: Crown Business
     url: https://www.penguinrandomhouse.com/books/227097/zero-to-one-by-peter-thiel/
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Entrepreneurship transforms innovations into viable businesses. Lean Startup methodology, business model canvas, and venture capital form the modern entrepreneurial ecosystem.
 

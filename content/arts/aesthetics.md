@@ -4,9 +4,9 @@ title: Aesthetics
 schema_type: TechArticle
 category: arts
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -23,12 +23,12 @@ atomic_facts:
     source_url: https://www.cambridge.org/core/books/kants-critique-of-the-power-of-judgment/
     confidence: medium
   - id: fact-arts-002
-    statement: "Duchamp's Fountain (1917): urinal as art — challenged aesthetics entirely."
+    statement: 'Duchamp''s Fountain (1917): urinal as art — challenged aesthetics entirely.'
     source_title: Critique of Judgment (Immanuel Kant, 1790)
     source_url: https://www.cambridge.org/core/books/kants-critique-of-the-power-of-judgment/
     confidence: medium
   - id: fact-arts-003
-    statement: "'Artworld' theory (Danto, 1964): Art is whatever the artworld accepts as art."
+    statement: '''Artworld'' theory (Danto, 1964): Art is whatever the artworld accepts as art.'
     source_title: Critique of Judgment (Immanuel Kant, 1790)
     source_url: https://www.cambridge.org/core/books/kants-critique-of-the-power-of-judgment/
     confidence: medium
@@ -46,27 +46,40 @@ primary_sources:
     year: 1790
     url: https://www.cambridge.org/core/books/kants-critique-of-the-power-of-judgment/
     institution: Cambridge University Press
-  - title: "Aesthetics: A Very Short Introduction (2025)"
+  - title: 'Aesthetics: A Very Short Introduction (2025)'
     type: book
     year: 2025
     authors:
       - Nanay B.
     institution: Oxford University Press
     url: https://global.oup.com/vsi-aesthetics/
-  - title: "The Philosophy of Art: A Contemporary Introduction (2025)"
+  - title: 'The Philosophy of Art: A Contemporary Introduction (2025)'
     type: book
     year: 2025
     authors:
       - multiple
     institution: Routledge
     url: https://www.routledge.com/aesthetics/
-  - title: "The Philosophy of Art: A Contemporary Introduction (2nd Edition, 2025)"
+  - title: 'The Philosophy of Art: A Contemporary Introduction (2nd Edition, 2025)'
     type: book
     year: 2025
     authors:
       - Carroll N.
     institution: Routledge
     url: https://www.routledge.com/philosophy-of-art/
+  - title: 'Aesthetics: A Comprehensive Anthology (2nd Edition)'
+    authors:
+      - Cahn, S.M.
+      - Meskin, A.
+    type: book
+    year: 2020
+    institution: Wiley-Blackwell
+  - title: The Oxford Handbook of Aesthetics
+    authors:
+      - Levinson, J.
+    type: book
+    year: 2005
+    institution: Oxford University Press
 secondary_sources:
   - title: The Story of Art
     type: book
@@ -79,6 +92,7 @@ secondary_sources:
     url: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
     institution: Phaidon Press
 ---
+
 ## TL;DR
 
 Aesthetics is the philosophical study of beauty, art, and taste. Key questions: What makes something beautiful? Is beauty objective or subjective? What is art? Kant: beauty is 'purposiveness without purpose' — judged disinterestedly (without personal stake). Hume: 'Beauty is no quality in things themselves: it exists merely in the mind.'

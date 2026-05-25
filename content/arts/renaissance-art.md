@@ -4,9 +4,9 @@ title: Renaissance Art
 schema_type: TechArticle
 category: arts
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -30,7 +30,7 @@ atomic_facts:
     source_url: https://www.phaidon.com/store/art/the-story-of-art-pocket-edition-9780714872216/
     confidence: medium
   - id: fact-arts-003
-    statement: "Northern Renaissance: Van Eyck (oil painting innovations), Dürer, Bruegel."
+    statement: 'Northern Renaissance: Van Eyck (oil painting innovations), Dürer, Bruegel.'
     source_title: The Story of Art (E.H. Gombrich)
     source_url: https://www.phaidon.com/store/art/the-story-of-art-pocket-edition-9780714872216/
     confidence: medium
@@ -46,7 +46,7 @@ primary_sources:
     year: 1950
     url: https://www.phaidon.com/store/art/the-story-of-art-pocket-edition-9780714872216/
     institution: Phaidon Press
-  - title: "Renaissance Art: A Very Short Introduction (2025)"
+  - title: 'Renaissance Art: A Very Short Introduction (2025)'
     type: book
     year: 2025
     authors:
@@ -60,6 +60,19 @@ primary_sources:
       - multiple
     institution: Thames & Hudson
     url: https://thamesandhudson.com/renaissance/
+  - title: The Lives of the Artists
+    authors:
+      - Vasari, G.
+    type: book
+    year: 1550
+    institution: Classical Text
+  - title: History of Italian Renaissance Art (7th Edition)
+    authors:
+      - Hartt, F.
+      - Wilkins, D.G.
+    type: book
+    year: 2010
+    institution: Pearson
 secondary_sources:
   - title: The Story of Art
     type: book
@@ -72,6 +85,7 @@ secondary_sources:
     url: https://global.oup.com/academic/content/series/o/oxford-history-of-art-oha/
     institution: Oxford University Press
 ---
+
 ## TL;DR
 
 Renaissance art (14th-16th centuries, Italy) revolutionized Western art through: linear perspective (Brunelleschi, ~1415), anatomical accuracy, chiaroscuro (light/shadow), sfumato (smoky blending, da Vinci), and humanistic themes. Patronage shifted from church to wealthy merchants (Medici).

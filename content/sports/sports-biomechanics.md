@@ -1,12 +1,12 @@
 ---
 id: sports-biomechanics
-title: "Sports Biomechanics: The Physics of Human Movement"
+title: 'Sports Biomechanics: The Physics of Human Movement'
 schema_type: Article
 category: sports
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -16,12 +16,12 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-sp-bm-001
-    statement: "Running GRF: 2-3x body weight moderate pace, up to 4x at sprint (McGinnis, Human Kinetics 2020)."
+    statement: 'Running GRF: 2-3x body weight moderate pace, up to 4x at sprint (McGinnis, Human Kinetics 2020).'
     source_title: McGinnis, P.M. Biomechanics of Sport and Exercise 4th ed. (Human Kinetics 2020)
     source_url: https://us.humankinetics.com/products/biomechanics-of-sport-and-exercise-4th-edition
     confidence: high
   - id: fact-sp-bm-002
-    statement: "Stretch-shortening cycle: elastic energy storage increases power 20-30% (Komi, MSSE 2000)."
+    statement: 'Stretch-shortening cycle: elastic energy storage increases power 20-30% (Komi, MSSE 2000).'
     source_title: Komi, P.V. Stretch-shortening cycle (Journal of Biomechanics 2000)
     source_url: https://doi.org/10.1016/S0021-9290(00)00064-6
     confidence: high
@@ -42,6 +42,18 @@ primary_sources:
     year: 2002
     url: https://www.harpercollins.com/products/the-physics-of-baseball-robert-k-adair
     institution: Harper Perennial
+  - title: Biomechanics of Sport and Exercise (4th Edition)
+    authors:
+      - McGinnis, P.M.
+    type: book
+    year: 2020
+    institution: Human Kinetics
+  - title: Biomechanics and Motor Control of Human Movement (4th Edition)
+    authors:
+      - Winter, D.A.
+    type: book
+    year: 2009
+    institution: Wiley
 known_gaps:
   - Wearable sensor analytics in performance monitoring
   - Injury mechanism biomechanics
@@ -62,22 +74,23 @@ secondary_sources:
       - Winter, David A.
     institution: Wiley
     url: https://doi.org/10.1002/9780470549148
-  - title: "AI in Sports Biomechanics: A Systematic Review of Deep Learning for Motion Analysis"
+  - title: 'AI in Sports Biomechanics: A Systematic Review of Deep Learning for Motion Analysis'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: Sports Biomechanics (Taylor & Francis)
     url: https://doi.org/10.1080/14763141.2024.2345678
-  - title: "Nike Sport Research Lab: How AI and Biomechanics Redesign Performance Footwear"
+  - title: 'Nike Sport Research Lab: How AI and Biomechanics Redesign Performance Footwear'
     type: report
     year: 2024
     authors:
       - Nike Research
     institution: Nike
     url: https://www.nike.com/sustainability
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Sports biomechanics applies physics and engineering principles to human movement — optimizing technique, preventing injury, and designing equipment.
 

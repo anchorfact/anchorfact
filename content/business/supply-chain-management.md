@@ -4,9 +4,9 @@ title: Supply Chain Management
 schema_type: TechArticle
 category: business
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -28,7 +28,7 @@ atomic_facts:
     source_url: https://hbr.org/
     confidence: medium
   - id: fact-business-002
-    statement: "Bullwhip effect: small demand fluctuations amplify upstream, causing inventory inefficiencies."
+    statement: 'Bullwhip effect: small demand fluctuations amplify upstream, causing inventory inefficiencies.'
     source_title: Harvard Business Review
     source_url: https://hbr.org/
     confidence: medium
@@ -38,12 +38,12 @@ atomic_facts:
     source_url: https://hbr.org/
     confidence: medium
   - id: fact-business-004
-    statement: "Safety stock: extra inventory to buffer demand variability."
+    statement: 'Safety stock: extra inventory to buffer demand variability.'
     source_title: Harvard Business Review
     source_url: https://hbr.org/
     confidence: medium
   - id: fact-business-005
-    statement: "KPIs: inventory turnover, order fulfillment rate, lead time, perfect order rate."
+    statement: 'KPIs: inventory turnover, order fulfillment rate, lead time, perfect order rate.'
     source_title: Harvard Business Review
     source_url: https://hbr.org/
     confidence: medium
@@ -58,7 +58,7 @@ primary_sources:
     year: 2026
     url: https://hbr.org/
     institution: Harvard Business Publishing
-  - title: "Supply Chain Management: Strategy, Planning, and Operation (8th Edition, 2025)"
+  - title: 'Supply Chain Management: Strategy, Planning, and Operation (8th Edition, 2025)'
     type: book
     year: 2025
     authors:
@@ -66,7 +66,7 @@ primary_sources:
       - Meindl P.
     institution: Pearson
     url: https://www.pearson.com/supply-chain/
-  - title: "Supply Chain 4.0: From Theory to Digital Practice (2025)"
+  - title: 'Supply Chain 4.0: From Theory to Digital Practice (2025)'
     type: book
     year: 2025
     authors:
@@ -88,18 +88,32 @@ primary_sources:
       - multiple
     institution: Springer
     url: https://doi.org/10.1007/supplychain.2025
+  - title: 'Supply Chain Management: Strategy, Planning, and Operation (7th Edition)'
+    authors:
+      - Chopra, S.
+    type: book
+    year: 2019
+    institution: Pearson
+  - title: Operations and Supply Chain Management (17th Edition)
+    authors:
+      - Jacobs, F.R.
+      - Chase, R.B.
+    type: book
+    year: 2023
+    institution: McGraw-Hill
 secondary_sources:
   - title: Harvard Business Review
     type: journal
     year: 2026
     url: https://hbr.org/
     institution: Harvard Business Publishing
-  - title: "The Goal: A Process of Ongoing Improvement"
+  - title: 'The Goal: A Process of Ongoing Improvement'
     type: book
     year: 1984
     url: https://www.northriverpress.com/the-goal/
     institution: Eliyahu M. Goldratt, North River Press
 ---
+
 ## TL;DR
 
 Supply Chain Management (SCM) coordinates the flow of goods from raw materials to end customer. Key activities: procurement, manufacturing, warehousing, transportation, demand forecasting. Modern SCM is data-driven with real-time visibility and AI optimization.

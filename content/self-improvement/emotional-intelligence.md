@@ -4,9 +4,9 @@ title: Emotional Intelligence
 schema_type: TechArticle
 category: self-improvement
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -23,7 +23,7 @@ atomic_facts:
     source_url: https://www.penguinrandomhouse.com/books/311306/emotional-intelligence-by-daniel-goleman/
     confidence: medium
   - id: fact-self-improvement-002
-    statement: "Marshmallow test (Mischel, 1972): 4-year-olds who delayed gratification had higher SAT scores and better life outcomes decades later."
+    statement: 'Marshmallow test (Mischel, 1972): 4-year-olds who delayed gratification had higher SAT scores and better life outcomes decades later.'
     source_title: Emotional Intelligence (Daniel Goleman)
     source_url: https://www.penguinrandomhouse.com/books/311306/emotional-intelligence-by-daniel-goleman/
     confidence: medium
@@ -46,7 +46,7 @@ primary_sources:
     year: 1995
     url: https://www.penguinrandomhouse.com/books/311306/emotional-intelligence-by-daniel-goleman/
     institution: Bantam
-  - title: "Emotional Intelligence: Why It Can Matter More Than IQ (2025 30th Anniversary)"
+  - title: 'Emotional Intelligence: Why It Can Matter More Than IQ (2025 30th Anniversary)'
     type: book
     year: 2025
     authors:
@@ -68,8 +68,21 @@ primary_sources:
       - Goleman D.
     institution: Bantam
     url: https://www.danielgoleman.info/
+  - title: 'Emotional Intelligence: Why It Can Matter More Than IQ'
+    authors:
+      - Goleman, D.
+    type: book
+    year: 1995
+    institution: Bantam Books
+  - title: Emotional Intelligence 2.0
+    authors:
+      - Bradberry, T.
+      - Greaves, J.
+    type: book
+    year: 2009
+    institution: TalentSmart
 secondary_sources:
-  - title: "Emotional Intelligence: Why It Can Matter More Than IQ"
+  - title: 'Emotional Intelligence: Why It Can Matter More Than IQ'
     type: book
     year: 1995
     url: https://www.penguinrandomhouse.com/books/203272/emotional-intelligence-by-daniel-goleman/
@@ -80,6 +93,7 @@ secondary_sources:
     url: https://jamesclear.com/atomic-habits
     institution: Avery, Penguin Random House
 ---
+
 ## TL;DR
 
 Emotional Intelligence (EQ, Goleman 1995) is the ability to recognize, understand, and manage emotions — in yourself and others. Components: self-awareness, self-regulation, motivation, empathy, social skills. EQ is a better predictor of career success than IQ (Goleman claims — debated but widely accepted).

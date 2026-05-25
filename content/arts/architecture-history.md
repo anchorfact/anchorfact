@@ -4,9 +4,9 @@ title: Architecture History
 schema_type: TechArticle
 category: arts
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -16,7 +16,7 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-arts-01
-    statement: "Frank Lloyd Wright: Fallingwater"
+    statement: 'Frank Lloyd Wright: Fallingwater'
     source_title: A Global History of Architecture (Ching, Jarzombek, Prakash)
     source_url: https://www.wiley.com/en-us/A+Global+History+of+Architecture%2C+3rd+Edition-p-9781118981337
     confidence: high
@@ -28,12 +28,12 @@ atomic_facts:
     source_url: https://www.wiley.com/en-us/A+Global+History+of+Architecture%2C+3rd+Edition-p-9781118981337
     confidence: medium
   - id: fact-arts-002
-    statement: "Frank Lloyd Wright: Fallingwater (organic architecture)."
+    statement: 'Frank Lloyd Wright: Fallingwater (organic architecture).'
     source_title: A Global History of Architecture (Ching, Jarzombek, Prakash)
     source_url: https://www.wiley.com/en-us/A+Global+History+of+Architecture%2C+3rd+Edition-p-9781118981337
     confidence: medium
   - id: fact-arts-003
-    statement: "Sagrada Familia: Gaudi's masterpiece, started 1882, still under construction."
+    statement: 'Sagrada Familia: Gaudi''s masterpiece, started 1882, still under construction.'
     source_title: A Global History of Architecture (Ching, Jarzombek, Prakash)
     source_url: https://www.wiley.com/en-us/A+Global+History+of+Architecture%2C+3rd+Edition-p-9781118981337
     confidence: medium
@@ -60,20 +60,34 @@ primary_sources:
       - Prakash V.
     institution: Wiley
     url: https://www.wiley.com/architecture-history/
-  - title: "Modern Architecture: A Critical History (2025 Edition)"
+  - title: 'Modern Architecture: A Critical History (2025 Edition)'
     type: book
     year: 2025
     authors:
       - Frampton K.
     institution: Thames & Hudson
     url: https://thamesandhudson.com/modern-architecture/
-  - title: "Modern Architecture: A Critical History (5th Edition, 2025)"
+  - title: 'Modern Architecture: A Critical History (5th Edition, 2025)'
     type: book
     year: 2025
     authors:
       - Frampton K.
     institution: Thames & Hudson
     url: https://thamesandhudson.com/modern-architecture/
+  - title: A Global History of Architecture (3rd Edition)
+    authors:
+      - Ching, F.D.K.
+      - Jarzombek, M.
+      - Prakash, V.
+    type: book
+    year: 2017
+    institution: Wiley
+  - title: 'A History of Architecture: Settings and Rituals'
+    authors:
+      - Kostof, S.
+    type: book
+    year: 1995
+    institution: Oxford University Press
 secondary_sources:
   - title: A Global History of Architecture
     type: book
@@ -86,6 +100,7 @@ secondary_sources:
     url: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
     institution: Phaidon Press
 ---
+
 ## TL;DR
 
 Architecture history spans from megalithic structures (Stonehenge, ~3000 BCE) to contemporary skyscrapers. Major styles: Classical (Greek/Roman columns), Gothic (pointed arches, flying buttresses), Renaissance, Baroque, Neoclassical, Modernist (Bauhaus, Le Corbusier), Postmodern, Parametric (Zaha Hadid). Form follows function vs. ornament as crime.

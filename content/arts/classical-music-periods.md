@@ -4,9 +4,9 @@ title: Classical Music Periods
 schema_type: TechArticle
 category: arts
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -16,7 +16,7 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-arts-01
-    statement: "Western classical music spans 500 years: Medieval , Renaissance , Baroque , Classical , Romantic , Modern/Contemporary"
+    statement: 'Western classical music spans 500 years: Medieval , Renaissance , Baroque , Classical , Romantic , Modern/Contemporary'
     source_title: The Classical Style (Charles Rosen)
     source_url: https://wwnorton.com/books/9780393317121
     confidence: high
@@ -28,18 +28,18 @@ atomic_facts:
     source_url: https://wwnorton.com/books/9780393317121
     confidence: medium
   - id: fact-arts-002
-    statement: "Baroque: ornamentation, harpsichord, fugue (Bach), Four Seasons (Vivaldi)."
+    statement: 'Baroque: ornamentation, harpsichord, fugue (Bach), Four Seasons (Vivaldi).'
     source_title: The Classical Style (Charles Rosen)
     source_url: https://wwnorton.com/books/9780393317121
     confidence: medium
   - id: fact-arts-003
-    statement: "Classical: clarity, symmetry, sonata form — Haydn (father of symphony), Mozart (prodigy, 600+ works), Beethoven (bridged to Romantic)."
+    statement: 'Classical: clarity, symmetry, sonata form — Haydn (father of symphony), Mozart (prodigy, 600+ works), Beethoven (bridged to Romantic).'
     source_title: The Classical Style (Charles Rosen)
     source_url: https://wwnorton.com/books/9780393317121
     confidence: medium
   - id: fact-arts-004
-    statement: "20th century: Stravinsky (Rite of Spring caused riot 1913), Schoenberg (12-tone), minimalism (Glass, Reich)."
-    source_title: "The Rest Is Noise: Listening to the Twentieth Century"
+    statement: '20th century: Stravinsky (Rite of Spring caused riot 1913), Schoenberg (12-tone), minimalism (Glass, Reich).'
+    source_title: 'The Rest Is Noise: Listening to the Twentieth Century'
     source_url: https://us.macmillan.com/books/9780312427719/therestisnoise
     confidence: medium
 completeness: 0.88
@@ -56,14 +56,14 @@ primary_sources:
     year: 1971
     url: https://wwnorton.com/books/9780393317121
     institution: W.W. Norton
-  - title: "The Classical Music Book: Big Ideas Simply Explained (2025)"
+  - title: 'The Classical Music Book: Big Ideas Simply Explained (2025)'
     type: book
     year: 2025
     authors:
       - DK
     institution: DK Publishing
     url: https://www.dk.com/classical-music/
-  - title: "The Rest Is Noise: Listening to the Twentieth Century (2025)"
+  - title: 'The Rest Is Noise: Listening to the Twentieth Century (2025)'
     type: book
     year: 2025
     authors:
@@ -77,15 +77,29 @@ primary_sources:
       - DK
     institution: DK Publishing
     url: https://www.dk.com/classical-music/
-  - title: "The Rest Is Noise: Listening to the Twentieth Century (2025 Updated)"
+  - title: 'The Rest Is Noise: Listening to the Twentieth Century (2025 Updated)'
     type: book
     year: 2025
     authors:
       - Ross A.
     institution: Picador
     url: https://us.macmillan.com/rest-is-noise/
+  - title: The Oxford History of Western Music
+    authors:
+      - Taruskin, R.
+    type: book
+    year: 2005
+    institution: Oxford University Press
+  - title: A History of Western Music (10th Edition)
+    authors:
+      - Burkholder, J.P.
+      - Grout, D.J.
+      - Palisca, C.V.
+    type: book
+    year: 2019
+    institution: W.W. Norton
 secondary_sources:
-  - title: "The Rest Is Noise: Listening to the Twentieth Century"
+  - title: 'The Rest Is Noise: Listening to the Twentieth Century'
     type: book
     year: 2007
     url: https://us.macmillan.com/books/9780312427719/therestisnoise
@@ -96,6 +110,7 @@ secondary_sources:
     url: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
     institution: Phaidon Press
 ---
+
 ## TL;DR
 
 Western classical music spans ~500 years: Medieval (500-1400, Gregorian chant), Renaissance (1400-1600, polyphony), Baroque (1600-1750, Bach, Vivaldi), Classical (1750-1820, Mozart, Beethoven), Romantic (1820-1900, Chopin, Tchaikovsky), Modern/Contemporary (1900+). Each period has distinct stylistic characteristics.

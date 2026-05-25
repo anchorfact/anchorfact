@@ -4,9 +4,9 @@ title: Communication Skills
 schema_type: TechArticle
 category: self-improvement
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -23,12 +23,12 @@ atomic_facts:
     source_url: https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html
     confidence: medium
   - id: fact-self-improvement-002
-    statement: "7-38-55 rule (Mehrabian): words 7%, tone 38%, body language 55% — but only for emotional/attitudinal communication."
+    statement: '7-38-55 rule (Mehrabian): words 7%, tone 38%, body language 55% — but only for emotional/attitudinal communication.'
     source_title: Crucial Conversations (Patterson et al.)
     source_url: https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html
     confidence: medium
   - id: fact-self-improvement-003
-    statement: "Nonviolent Communication (Rosenberg): observations without judgment, feelings, needs, requests."
+    statement: 'Nonviolent Communication (Rosenberg): observations without judgment, feelings, needs, requests.'
     source_title: Crucial Conversations (Patterson et al.)
     source_url: https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html
     confidence: medium
@@ -53,7 +53,7 @@ primary_sources:
       - Carnegie D.
     institution: Simon & Schuster
     url: https://www.simonandschuster.com/how-to-win-friends/
-  - title: "Talk Like TED: The 9 Public-Speaking Secrets (2025)"
+  - title: 'Talk Like TED: The 9 Public-Speaking Secrets (2025)'
     type: book
     year: 2025
     authors:
@@ -74,6 +74,22 @@ primary_sources:
       - Gallo C.
     institution: St. Martin's Press
     url: https://us.macmillan.com/talk-like-ted/
+  - title: 'Crucial Conversations: Tools for Talking When Stakes Are High (3rd Edition)'
+    authors:
+      - Grenny, J.
+      - Patterson, K.
+      - McMillan, R.
+      - Switzler, A.
+      - Gregory, E.
+    type: book
+    year: 2021
+    institution: McGraw-Hill
+  - title: How to Win Friends and Influence People
+    authors:
+      - Carnegie, D.
+    type: book
+    year: 1936
+    institution: Simon & Schuster
 secondary_sources:
   - title: How to Win Friends and Influence People
     type: book
@@ -86,6 +102,7 @@ secondary_sources:
     url: https://jamesclear.com/atomic-habits
     institution: Avery, Penguin Random House
 ---
+
 ## TL;DR
 
 Effective communication is the #1 skill for career and relationship success. Key elements: clarity (be specific), active listening (hear before responding), non-verbal awareness (body language is 55% of communication — Mehrabian), empathy, and adapting to audience. 'I' statements: 'I feel X when Y because Z' — less accusatory than 'You always...'
