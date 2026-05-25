@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/world-models-video-prediction",
   "headline": "World Models: Video Prediction, Physical Reasoning, and Interactive AI",
   "description": "World models learn to simulate reality from video data — predicting future frames, understanding physics, and enabling agents to plan. OpenAI's Sora demonstrates emergent 3D understanding; UniSim creates interactive environments from internet video.",
-  "dateCreated": "2026-05-24T18:00:03.552Z",
+  "dateCreated": "2026-05-25T02:46:03.865Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

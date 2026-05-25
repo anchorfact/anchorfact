@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/recommender-systems",
   "headline": "Recommender Systems: Graph Neural Collaborative Filtering and LLM-Based Recommendation",
   "description": "Recommender systems power the discovery engine of the internet — from Netflix suggestions to Amazon product recommendations and TikTok's For You page. Graph neural networks have become the dominant architecture, while LLMs are opening a new paradigm of generative recommendation where AI creates personalized suggestions from natural conversation.",
-  "dateCreated": "2026-05-24T18:00:03.475Z",
+  "dateCreated": "2026-05-25T02:46:03.802Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

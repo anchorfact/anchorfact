@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00014",
   "headline": "Kubernetes (K8s)",
   "description": "Kubernetes (K8s) is an open-source container orchestration platform originally designed by Google, based on their internal Borg system. Donated to the CNCF in 2015, it automates deployment, scaling, and management of containerized applications across clusters of machines. As of 2026, Kubernetes is the de facto standard for cloud-native infrastructure, used by over 60% of organizations running containers in production according to the CNCF Annual Survey.",
-  "dateCreated": "2026-05-24T18:00:03.922Z",
-  "dateModified": "2026-05-24T18:00:03.922Z",
+  "dateCreated": "2026-05-25T02:46:04.159Z",
+  "dateModified": "2026-05-25T02:46:04.159Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

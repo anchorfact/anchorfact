@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00155",
   "headline": "Monitoring and Observability",
   "description": "Monitoring tells you what's wrong; observability lets you ask why. Three pillars: metrics (numeric time-series, counters/gauges), logs (timestamped event records), traces (end-to-end request flow across services). The 'Golden Signals': latency, traffic, errors, saturation.",
-  "dateCreated": "2026-05-24T18:00:03.949Z",
-  "dateModified": "2026-05-24T18:00:03.949Z",
+  "dateCreated": "2026-05-25T02:46:04.178Z",
+  "dateModified": "2026-05-25T02:46:04.178Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

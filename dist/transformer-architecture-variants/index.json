@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/transformer-architecture-variants",
   "headline": "Transformer Variants: From Encoder-Decoder to Mamba State Space Models",
   "description": "While the Transformer architecture dominates AI, alternatives are emerging. State Space Models (Mamba, Jamba) promise linear complexity for long sequences, challenging attention's O(n²) bottleneck.",
-  "dateCreated": "2026-05-24T18:00:03.539Z",
+  "dateCreated": "2026-05-25T02:46:03.855Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

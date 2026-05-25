@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00094",
   "headline": "Cross-Origin Resource Sharing (CORS)",
   "description": "CORS is a browser-enforced security mechanism that controls cross-origin HTTP requests. By default, browsers block cross-origin requests for security (same-origin policy). Servers opt-in via response headers: `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods`, `Access-Control-Allow-Headers`.",
-  "dateCreated": "2026-05-24T18:00:03.771Z",
-  "dateModified": "2026-05-24T18:00:03.771Z",
+  "dateCreated": "2026-05-25T02:46:04.044Z",
+  "dateModified": "2026-05-25T02:46:04.044Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

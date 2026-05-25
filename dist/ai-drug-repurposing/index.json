@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-drug-repurposing",
   "headline": "AI for Drug Repurposing: Identifying New Uses for Existing Drugs Through Machine Learning",
   "description": "AI drug repurposing finds new uses for existing drugs -- identifying that a rheumatoid arthritis drug could treat COVID-19, or that an old antidepressant might work for a rare disease. Knowledge graphs and transcriptomic ML slash drug discovery timelines from 10+ years to months.",
-  "dateCreated": "2026-05-24T18:00:02.894Z",
+  "dateCreated": "2026-05-25T02:46:03.350Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

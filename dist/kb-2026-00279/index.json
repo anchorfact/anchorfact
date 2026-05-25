@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00279",
   "headline": "Autoencoders",
   "description": "Autoencoders are unsupervised neural networks that learn compressed representations by reconstructing input: Encoder → compressed latent space → Decoder → reconstruction. They learn the most salient features by forcing data through a bottleneck. Applications: dimensionality reduction, denoising, anomaly detection.",
-  "dateCreated": "2026-05-24T18:00:03.227Z",
+  "dateCreated": "2026-05-25T02:46:03.590Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

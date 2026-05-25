@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/deep-reinforcement-learning-algorithms",
   "headline": "Deep Reinforcement Learning Algorithms: PPO, SAC, Dreamer, and Decision Transformer",
   "description": "Deep Reinforcement Learning has evolved from simple DQN to sophisticated algorithms: PPO dominates continuous control, SAC excels at sample-efficient exploration, Dreamer learns world models, and Decision Transformer reframes RL as sequence modeling.",
-  "dateCreated": "2026-05-24T18:00:03.281Z",
+  "dateCreated": "2026-05-25T02:46:03.631Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

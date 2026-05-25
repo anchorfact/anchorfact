@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00083",
   "headline": "Server-Sent Events (SSE)",
   "description": "Server-Sent Events (SSE) is a standard enabling servers to push real-time updates to browsers over a single HTTP connection. Unlike WebSocket's bidirectional communication, SSE is unidirectional (server-to-client only) but simpler to implement — using standard HTTP and automatic reconnection.",
-  "dateCreated": "2026-05-24T18:00:04.057Z",
-  "dateModified": "2026-05-24T18:00:04.057Z",
+  "dateCreated": "2026-05-25T02:46:04.256Z",
+  "dateModified": "2026-05-25T02:46:04.256Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

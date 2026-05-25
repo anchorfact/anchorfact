@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00105",
   "headline": "Fullscreen API",
   "description": "The Fullscreen API enables web content to request presentation in full-screen mode (`element.requestFullscreen()`), hiding browser UI. User gesture is required, and `document.exitFullscreen()` restores normal view.",
-  "dateCreated": "2026-05-24T18:00:03.848Z",
-  "dateModified": "2026-05-24T18:00:03.848Z",
+  "dateCreated": "2026-05-25T02:46:04.104Z",
+  "dateModified": "2026-05-25T02:46:04.104Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

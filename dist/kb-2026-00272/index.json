@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00272",
   "headline": "Reinforcement Learning",
   "description": "Reinforcement Learning (RL) trains agents to make sequential decisions by maximizing cumulative reward through trial-and-error interaction with an environment. Key concepts: Agent, Environment, State, Action, Reward, Policy. Famous successes: AlphaGo, Dota 2 (OpenAI Five), robotics.",
-  "dateCreated": "2026-05-24T18:00:03.483Z",
-  "dateModified": "2026-05-24T18:00:03.483Z",
+  "dateCreated": "2026-05-25T02:46:03.805Z",
+  "dateModified": "2026-05-25T02:46:03.805Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

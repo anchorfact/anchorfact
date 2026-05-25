@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-fraud-detection",
   "headline": "AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime",
   "description": "Financial fraud costs the global economy an estimated $5 trillion annually. AI — particularly graph neural networks — is transforming fraud detection from reactive rules to proactive pattern discovery, catching complex money laundering networks and transaction fraud that rule-based systems miss while reducing false alarms that waste investigator time.",
-  "dateCreated": "2026-05-24T18:00:02.961Z",
+  "dateCreated": "2026-05-25T02:46:03.406Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

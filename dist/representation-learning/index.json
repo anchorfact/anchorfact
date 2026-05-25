@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/representation-learning",
   "headline": "Representation Learning: Autoencoders, VAEs, and MAEs",
   "description": "Representation learning transforms raw data (pixels, text) into meaningful vector spaces where similarity corresponds to semantic relatedness. Autoencoders compress and reconstruct; VAEs add probabilistic generation; MAEs learn by masking.",
-  "dateCreated": "2026-05-24T18:00:03.487Z",
+  "dateCreated": "2026-05-25T02:46:03.808Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

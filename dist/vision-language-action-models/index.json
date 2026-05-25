@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/vision-language-action-models",
   "headline": "Vision-Language-Action Models: Unified Multimodal Foundation Models for Embodied AI",
   "description": "Vision-Language-Action (VLA) models extend multimodal AI to physical interaction — a single neural network that sees the environment, understands spoken instructions, and generates robot actions. From \"pick up the red cup\" to complex multi-step manipulation, VLA models represent the convergence of vision, language, and robotics into unified foundation models.",
-  "dateCreated": "2026-05-24T18:00:03.547Z",
+  "dateCreated": "2026-05-25T02:46:03.861Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

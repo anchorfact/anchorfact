@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00117",
   "headline": "Hashing Algorithms",
   "description": "Cryptographic hash functions map arbitrary data to fixed-size digests (fingerprints). Key properties: preimage resistance (cannot reverse), second preimage resistance (cannot find different input with same hash), collision resistance (cannot find any two inputs with same hash). SHA-256 (32 bytes) is the current standard; SHA-3 (Keccak) is the next generation.",
-  "dateCreated": "2026-05-24T18:00:03.879Z",
-  "dateModified": "2026-05-24T18:00:03.879Z",
+  "dateCreated": "2026-05-25T02:46:04.128Z",
+  "dateModified": "2026-05-25T02:46:04.128Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00186",
   "headline": "Content Delivery Network (CDN)",
   "description": "A CDN is a geographically distributed network of edge servers that cache and serve content from locations closest to users, reducing latency and origin server load. Major CDNs: Cloudflare, Akamai, Fastly, Amazon CloudFront. CDNs handle ~75% of all web traffic.",
-  "dateCreated": "2026-05-24T18:00:03.764Z",
-  "dateModified": "2026-05-24T18:00:03.764Z",
+  "dateCreated": "2026-05-25T02:46:04.038Z",
+  "dateModified": "2026-05-25T02:46:04.038Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

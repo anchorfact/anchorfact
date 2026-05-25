@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00067",
   "headline": "PostgreSQL",
   "description": "PostgreSQL is an advanced open-source relational database system with over 35 years of active development. First released in 1989 as POSTGRES at UC Berkeley and renamed PostgreSQL in 1996, it emphasizes extensibility, SQL standards compliance, and reliability. As of May 2026, it has 20,982 GitHub stars and is the preferred database for applications requiring ACID compliance, complex queries, and data integrity. PostgreSQL 17 (2024) is the current stable release; PostgreSQL 18 is in development.",
-  "dateCreated": "2026-05-24T18:00:04.003Z",
-  "dateModified": "2026-05-24T18:00:04.003Z",
+  "dateCreated": "2026-05-25T02:46:04.216Z",
+  "dateModified": "2026-05-25T02:46:04.216Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

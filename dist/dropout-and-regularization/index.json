@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/dropout-and-regularization",
   "headline": "Dropout and Regularization Techniques",
   "description": "Regularization prevents neural networks from memorizing training data instead of learning generalizable patterns. Dropout, weight decay, data augmentation, and early stopping are the primary techniques.",
-  "dateCreated": "2026-05-24T18:00:03.289Z",
+  "dateCreated": "2026-05-25T02:46:03.638Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

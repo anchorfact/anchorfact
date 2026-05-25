@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/cognitive-architectures",
   "headline": "Cognitive Architectures: ACT-R, Soar, and Computational Models of Human-Like Reasoning",
   "description": "Cognitive architectures model how the human mind works -- from memory retrieval and decision-making to language processing and skill acquisition. Unlike deep learning, which optimizes for task performance, cognitive architectures aim for human-like cognition: making the same errors, taking the same time, and using the same strategies. This complementary paradigm offers insights for AI safety, human-AI interaction, and understanding intelligence itself.",
-  "dateCreated": "2026-05-24T18:00:03.250Z",
+  "dateCreated": "2026-05-25T02:46:03.609Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

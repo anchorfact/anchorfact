@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/backpropagation",
   "headline": "Backpropagation: The Engine of Neural Network Learning",
   "description": "Backpropagation is the fundamental algorithm for training neural networks, computing gradients of the loss with respect to every weight via repeated application of the calculus chain rule.",
-  "dateCreated": "2026-05-24T18:00:03.232Z",
+  "dateCreated": "2026-05-25T02:46:03.593Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

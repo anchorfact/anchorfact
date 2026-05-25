@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00157",
   "headline": "Redis",
   "description": "Redis is an in-memory data structure store used as a database, cache, message broker, and streaming engine. It supports strings, hashes, lists, sets, sorted sets, bitmaps, hyperloglogs, geospatial indexes, and streams. Sub-millisecond latency, 100K+ ops/sec on modest hardware.",
-  "dateCreated": "2026-05-24T18:00:04.028Z",
-  "dateModified": "2026-05-24T18:00:04.028Z",
+  "dateCreated": "2026-05-25T02:46:04.235Z",
+  "dateModified": "2026-05-25T02:46:04.235Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

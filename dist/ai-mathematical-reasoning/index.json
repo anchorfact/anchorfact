@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-mathematical-reasoning",
   "headline": "AI for Mathematical Reasoning: Theorem Proving with Lean, AlphaProof, and Formal Mathematics",
   "description": "AI is learning to prove mathematical theorems -- from International Mathematical Olympiad geometry problems (AlphaGeometry) to formal proofs in Lean 4 (AlphaProof). The combination of LLM reasoning, reinforcement learning, and formal verification is creating AI systems that not only solve problems but produce human-verifiable, logically rigorous proofs.",
-  "dateCreated": "2026-05-24T18:00:03.105Z",
+  "dateCreated": "2026-05-25T02:46:03.518Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-gesture-recognition",
   "headline": "AI Gesture Recognition: Hand Tracking, Sign Language, and Touchless Interaction",
   "description": "AI gesture recognition enables hands to control technology without touch -- from MediaPipe's real-time hand tracking on every smartphone to sign language AI translating ASL to speech. Hand pose estimation via transformers approaches human-level accuracy, enabling AR/VR interaction, touchless interfaces, and accessibility.",
-  "dateCreated": "2026-05-24T18:00:03.070Z",
+  "dateCreated": "2026-05-25T02:46:03.491Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

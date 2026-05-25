@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00247",
   "headline": "NoSQL Database Types",
   "description": "NoSQL databases use non-relational models optimized for specific data patterns and scalability. Four types: Key-Value (Redis, DynamoDB), Document (MongoDB, Couchbase), Column-Family (Cassandra, HBase), Graph (Neo4j, Amazon Neptune). Choose NoSQL for: flexible schema, horizontal scaling, specific data models (graphs, time-series).",
-  "dateCreated": "2026-05-24T18:00:03.964Z",
-  "dateModified": "2026-05-24T18:00:03.964Z",
+  "dateCreated": "2026-05-25T02:46:04.188Z",
+  "dateModified": "2026-05-25T02:46:04.188Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

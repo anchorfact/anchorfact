@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00149",
   "headline": "Dependency Injection",
   "description": "Dependency Injection (DI) is a technique where objects receive their dependencies from outside rather than creating them internally. It enables loose coupling, testability (mock dependencies), and centralized configuration.",
-  "dateCreated": "2026-05-24T18:00:03.800Z",
-  "dateModified": "2026-05-24T18:00:03.800Z",
+  "dateCreated": "2026-05-25T02:46:04.065Z",
+  "dateModified": "2026-05-25T02:46:04.065Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

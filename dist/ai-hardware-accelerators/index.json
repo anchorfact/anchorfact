@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-hardware-accelerators",
   "headline": "AI Hardware: NVIDIA H100/B200, TPUs, and Cerebras",
   "description": "AI hardware has become the primary bottleneck and enabler of AI progress. NVIDIA dominates the GPU market (H100→B200 pipeline); Google TPUs and Cerebras wafer-scale chips offer alternative architectures for specialized workloads.",
-  "dateCreated": "2026-05-24T18:00:03.073Z",
+  "dateCreated": "2026-05-25T02:46:03.494Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

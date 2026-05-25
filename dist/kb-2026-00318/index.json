@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00318",
   "headline": "Packer",
   "description": "Packer (HashiCorp, 2013) creates identical machine images for multiple platforms from a single configuration. Define once, build for AWS AMI, Azure VM, GCP image, Docker, VirtualBox. Immutable infrastructure: bake software into image, deploy by launching new instances.",
-  "dateCreated": "2026-05-24T18:00:03.989Z",
-  "dateModified": "2026-05-24T18:00:03.989Z",
+  "dateCreated": "2026-05-25T02:46:04.206Z",
+  "dateModified": "2026-05-25T02:46:04.207Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

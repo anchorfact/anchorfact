@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00123",
   "headline": "SSH Protocol",
   "description": "SSH (Secure Shell) is a cryptographic network protocol for secure remote login and command execution over unsecured networks, standardized as IETF RFC 4251 (2006). It replaced insecure protocols (telnet, rlogin, rsh). SSH uses public-key cryptography for authentication and symmetric encryption for session data.",
-  "dateCreated": "2026-05-24T18:00:04.085Z",
-  "dateModified": "2026-05-24T18:00:04.085Z",
+  "dateCreated": "2026-05-25T02:46:04.279Z",
+  "dateModified": "2026-05-25T02:46:04.279Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

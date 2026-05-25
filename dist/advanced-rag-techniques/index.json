@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/advanced-rag-techniques",
   "headline": "Advanced RAG: From Naive Retrieval to Agentic RAG",
   "description": "RAG (Retrieval-Augmented Generation) has evolved from simple chunk retrieval to sophisticated agentic architectures. Advanced techniques — HyDE, multi-hop, re-ranking, Self-RAG, Agentic RAG — have transformed it from a simple technique into a production-grade knowledge infrastructure.",
-  "dateCreated": "2026-05-24T18:00:02.752Z",
+  "dateCreated": "2026-05-25T02:46:03.211Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

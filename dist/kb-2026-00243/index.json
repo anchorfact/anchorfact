@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00243",
   "headline": "Database Normalization",
   "description": "Database normalization reduces data redundancy and anomalies by organizing data into well-structured tables. Normal forms: 1NF (atomic values), 2NF (no partial dependencies), 3NF (no transitive dependencies), BCNF (every determinant is a candidate key). Most databases target 3NF — enough to eliminate most anomalies while remaining practical.",
-  "dateCreated": "2026-05-24T18:00:03.793Z",
-  "dateModified": "2026-05-24T18:00:03.793Z",
+  "dateCreated": "2026-05-25T02:46:04.060Z",
+  "dateModified": "2026-05-25T02:46:04.060Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

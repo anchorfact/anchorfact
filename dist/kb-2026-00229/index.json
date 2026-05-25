@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00229",
   "headline": "Object-Oriented Programming (OOP)",
   "description": "OOP organizes code around objects (data + behavior) rather than functions. Four pillars: Encapsulation (hide internals), Inheritance (reuse through hierarchy), Polymorphism (same interface, different behavior), Abstraction (simplify complex reality). Languages: Java, C++, Python, C#, Ruby.",
-  "dateCreated": "2026-05-24T18:00:03.974Z",
-  "dateModified": "2026-05-24T18:00:03.974Z",
+  "dateCreated": "2026-05-25T02:46:04.195Z",
+  "dateModified": "2026-05-25T02:46:04.195Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

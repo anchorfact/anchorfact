@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00145",
   "headline": "Decorator Pattern",
   "description": "Attaches additional responsibilities dynamically, providing flexible alternative to subclassing. Decorators conform to the same interface, enabling transparent stacking.",
-  "dateCreated": "2026-05-24T18:00:03.796Z",
-  "dateModified": "2026-05-24T18:00:03.796Z",
+  "dateCreated": "2026-05-25T02:46:04.063Z",
+  "dateModified": "2026-05-25T02:46:04.063Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00144",
   "headline": "Strategy Pattern",
   "description": "Encapsulates interchangeable algorithms, making them swappable at runtime. Replaces large if-else chains with polymorphism. Example: sorting strategies, payment methods.",
-  "dateCreated": "2026-05-24T18:00:04.087Z",
-  "dateModified": "2026-05-24T18:00:04.087Z",
+  "dateCreated": "2026-05-25T02:46:04.280Z",
+  "dateModified": "2026-05-25T02:46:04.280Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00321",
   "headline": "Nomad (HashiCorp)",
   "description": "HashiCorp Nomad (2015) is a flexible workload orchestrator — a simpler alternative to Kubernetes. Schedules and manages containers, VMs, and standalone applications across infrastructure. Single binary, no external dependencies. Nomad excels at non-containerized workloads (Java JARs, raw binaries) alongside containers.",
-  "dateCreated": "2026-05-24T18:00:03.963Z",
-  "dateModified": "2026-05-24T18:00:03.963Z",
+  "dateCreated": "2026-05-25T02:46:04.187Z",
+  "dateModified": "2026-05-25T02:46:04.187Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

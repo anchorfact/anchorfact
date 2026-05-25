@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/continual-learning",
   "headline": "Continual Learning and Catastrophic Forgetting: EWC to MESU",
   "description": "Continual learning enables neural networks to learn new tasks without forgetting previous ones. From EWC's Fisher-based regularization to MESU's Bayesian uncertainty approach, the field targets the fundamental challenge of catastrophic forgetting.",
-  "dateCreated": "2026-05-24T18:00:03.260Z",
+  "dateCreated": "2026-05-25T02:46:03.616Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

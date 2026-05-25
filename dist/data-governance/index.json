@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/data-governance",
   "headline": "AI Data Governance: Metadata Management, Data Catalogs, and AI-Ready Data Quality",
   "description": "AI is transforming data governance from manual, reactive processes to automated, proactive intelligence. ML-powered platforms automatically discover, classify, and monitor data assets across enterprises, ensuring data quality, compliance, and discoverability. As AI systems consume and generate data at unprecedented scale, governance becomes the foundation of trustworthy AI.",
-  "dateCreated": "2026-05-24T18:00:03.272Z",
+  "dateCreated": "2026-05-25T02:46:03.624Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

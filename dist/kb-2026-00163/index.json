@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00163",
   "headline": "GitHub Actions",
   "description": "GitHub Actions is a CI/CD platform integrated into GitHub repositories. Workflows (YAML files in `.github/workflows/`) trigger on events (push, PR, schedule) and execute jobs on runners (Ubuntu, Windows, macOS). Free for public repositories.",
-  "dateCreated": "2026-05-24T18:00:03.857Z",
-  "dateModified": "2026-05-24T18:00:03.857Z",
+  "dateCreated": "2026-05-25T02:46:04.111Z",
+  "dateModified": "2026-05-25T02:46:04.111Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

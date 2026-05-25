@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00098",
   "headline": "ResizeObserver",
   "description": "ResizeObserver reports changes to the dimensions of DOM elements (content-box or border-box), replacing polling-based resize detection and `window.resize`-only approaches. It is essential for responsive components and container queries.",
-  "dateCreated": "2026-05-24T18:00:04.037Z",
-  "dateModified": "2026-05-24T18:00:04.037Z",
+  "dateCreated": "2026-05-25T02:46:04.242Z",
+  "dateModified": "2026-05-25T02:46:04.242Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

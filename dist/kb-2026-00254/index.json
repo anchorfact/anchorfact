@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00254",
   "headline": "Data Lake Architecture",
   "description": "A Data Lake is a centralized repository storing raw data in native format (Parquet, Avro, JSON) on cheap object storage (S3, ADLS). Schema-on-read: apply schema when querying, not when storing. Used for big data analytics, ML training, and data science. The Lakehouse architecture (Databricks, 2021) adds ACID transactions and data warehouse features on top of the data lake.",
-  "dateCreated": "2026-05-24T18:00:03.788Z",
-  "dateModified": "2026-05-24T18:00:03.788Z",
+  "dateCreated": "2026-05-25T02:46:04.056Z",
+  "dateModified": "2026-05-25T02:46:04.056Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

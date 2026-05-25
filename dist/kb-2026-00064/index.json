@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00064",
   "headline": "REST API",
   "description": "REST (Representational State Transfer) is an architectural style for designing networked applications, defined by Roy Fielding in his 2000 doctoral dissertation at UC Irvine. A REST API uses HTTP methods (GET, POST, PUT, DELETE) to perform CRUD operations on resources identified by URLs, with stateless communication and standardized response formats (typically JSON). REST is the dominant API architecture on the web, used by virtually all major platforms including Google, Amazon, Twitter, and GitHub.",
-  "dateCreated": "2026-05-24T18:00:04.041Z",
-  "dateModified": "2026-05-24T18:00:04.041Z",
+  "dateCreated": "2026-05-25T02:46:04.245Z",
+  "dateModified": "2026-05-25T02:46:04.245Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

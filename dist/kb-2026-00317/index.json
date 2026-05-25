@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00317",
   "headline": "Vault (HashiCorp)",
   "description": "HashiCorp Vault (2015) is a secrets management tool — securely stores and controls access to tokens, passwords, certificates, and API keys. Secrets are encrypted at rest and in transit. Dynamic secrets (on-demand, short-lived) eliminate credential sprawl. Enterprise-grade access control via policies.",
-  "dateCreated": "2026-05-24T18:00:04.120Z",
-  "dateModified": "2026-05-24T18:00:04.120Z",
+  "dateCreated": "2026-05-25T02:46:04.304Z",
+  "dateModified": "2026-05-25T02:46:04.304Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

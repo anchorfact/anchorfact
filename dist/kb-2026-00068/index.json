@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00068",
   "headline": "Ethereum",
   "description": "Ethereum is a decentralized, open-source blockchain platform with smart contract functionality, proposed by Vitalik Buterin in 2013 and launched in July 2015. It enables developers to build decentralized applications (dApps) on a Turing-complete virtual machine (EVM). As of May 2026, Ethereum is the second-largest cryptocurrency by market capitalization and the dominant platform for DeFi, NFTs, and Web3 applications. Ethereum completed the transition from Proof-of-Work to Proof-of-Stake (\"The Merge\") in September 2022, reducing energy consumption by approximately 99.95%.",
-  "dateCreated": "2026-05-24T18:00:03.831Z",
-  "dateModified": "2026-05-24T18:00:03.831Z",
+  "dateCreated": "2026-05-25T02:46:04.090Z",
+  "dateModified": "2026-05-25T02:46:04.090Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

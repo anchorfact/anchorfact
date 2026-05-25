@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00251",
   "headline": "SQL Joins",
   "description": "SQL JOINs combine rows from two or more tables based on related columns. Types: INNER JOIN (matching rows only), LEFT JOIN (all left rows + matching right), RIGHT JOIN, FULL OUTER JOIN, CROSS JOIN (Cartesian product). Self-join: join table to itself. JOINs are the most powerful and frequently misused SQL feature.",
-  "dateCreated": "2026-05-24T18:00:04.082Z",
-  "dateModified": "2026-05-24T18:00:04.082Z",
+  "dateCreated": "2026-05-25T02:46:04.276Z",
+  "dateModified": "2026-05-25T02:46:04.276Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

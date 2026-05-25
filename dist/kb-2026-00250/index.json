@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00250",
   "headline": "Entity-Relationship Model",
   "description": "The Entity-Relationship (ER) Model (Peter Chen, 1976) is a conceptual data modeling technique. Entities (objects: Customer, Order) have attributes and participate in relationships (places, contains). Cardinality: 1:1, 1:N, M:N. ER diagrams guide database schema design before implementation.",
-  "dateCreated": "2026-05-24T18:00:03.827Z",
-  "dateModified": "2026-05-24T18:00:03.827Z",
+  "dateCreated": "2026-05-25T02:46:04.087Z",
+  "dateModified": "2026-05-25T02:46:04.087Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

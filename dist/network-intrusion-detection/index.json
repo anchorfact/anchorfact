@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/network-intrusion-detection",
   "headline": "Network Intrusion Detection: AI-Powered Anomaly Detection and Zero-Day Threat Identification",
   "description": "Network Intrusion Detection Systems (NIDS) are the immune system of the internet — monitoring traffic for malicious activity. AI is transforming NIDS from signature-based pattern matching (misses novel attacks) to behavior-based anomaly detection that identifies zero-day threats, insider attacks, and advanced persistent threats by learning what \"normal\" network behavior looks like.",
-  "dateCreated": "2026-05-24T18:00:03.435Z",
+  "dateCreated": "2026-05-25T02:46:03.766Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

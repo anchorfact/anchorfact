@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/latent-diffusion-models",
   "headline": "Diffusion Models in Depth: From DDPM to Stable Diffusion",
   "description": "Diffusion models have replaced GANs as the dominant generative modeling paradigm. By learning to reverse a noise-adding process, they produce state-of-the-art image, video, 3D, and audio generation.",
-  "dateCreated": "2026-05-24T18:00:03.372Z",
+  "dateCreated": "2026-05-25T02:46:03.704Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/neural-rendering",
   "headline": "Neural Rendering: NeRF, View Synthesis, and Implicit Scene Representations",
   "description": "Neural rendering creates photorealistic 3D scenes from photographs -- capturing a place or object and rendering it from any viewpoint. From NeRF (Neural Radiance Fields) to 3D Gaussian Splatting, these techniques are transforming computer graphics, VR, and digital heritage preservation.",
-  "dateCreated": "2026-05-24T18:00:03.441Z",
+  "dateCreated": "2026-05-25T02:46:03.770Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

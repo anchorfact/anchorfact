@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00228",
   "headline": "Agile Methodology",
   "description": "Agile (2001) prioritizes: Individuals over processes, Working software over documentation, Customer collaboration over contract negotiation, Responding to change over following a plan. Frameworks: Scrum, Kanban, XP (Extreme Programming). Agile is not 'no planning' — it's continuous planning.",
-  "dateCreated": "2026-05-24T18:00:03.708Z",
-  "dateModified": "2026-05-24T18:00:03.708Z",
+  "dateCreated": "2026-05-25T02:46:03.990Z",
+  "dateModified": "2026-05-25T02:46:03.990Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

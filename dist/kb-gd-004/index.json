@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-gd-004",
   "headline": "注意：Suno官方未提供公开API，以下为社区开源封装项目调用方式",
   "description": "1. 概览与分类\r",
-  "dateCreated": "2026-05-24T18:00:04.165Z",
-  "dateModified": "2026-05-24T18:00:04.165Z",
+  "dateCreated": "2026-05-25T02:46:04.337Z",
+  "dateModified": "2026-05-25T02:46:04.337Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

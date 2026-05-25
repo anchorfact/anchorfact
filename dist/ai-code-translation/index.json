@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-code-translation",
   "headline": "AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation",
   "description": "AI translates code between languages -- from modernizing billion-line COBOL banking systems to converting Python to Rust. LLM-based code translation attacks the $50B+ legacy modernization market, compressing migration timelines from years to months while maintaining functional equivalence.",
-  "dateCreated": "2026-05-24T18:00:02.824Z",
+  "dateCreated": "2026-05-25T02:46:03.285Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

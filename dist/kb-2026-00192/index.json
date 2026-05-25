@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00192",
   "headline": "Set Theory",
   "description": "Set theory (Georg Cantor, 1874) is the language of mathematics — almost all mathematical objects can be defined as sets. A set is a collection of distinct objects. Operations: union (∪), intersection (∩), difference (−), complement. Used in: databases (SQL JOINs), type theory, probability.",
-  "dateCreated": "2026-05-24T18:00:04.065Z",
-  "dateModified": "2026-05-24T18:00:04.065Z",
+  "dateCreated": "2026-05-25T02:46:04.263Z",
+  "dateModified": "2026-05-25T02:46:04.263Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

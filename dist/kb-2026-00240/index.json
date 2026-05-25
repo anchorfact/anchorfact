@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00240",
   "headline": "Git Branching Strategies",
   "description": "Git branching strategies organize parallel development. Git Flow (Driessen, 2010): main + develop + feature/release/hotfix branches — thorough but complex. GitHub Flow: main + feature branches, deploy from main — simple, CI/CD-friendly. GitLab Flow: adds environment branches (staging, production). Trunk-Based Development: everyone commits to main, short-lived branches.",
-  "dateCreated": "2026-05-24T18:00:03.854Z",
-  "dateModified": "2026-05-24T18:00:03.854Z",
+  "dateCreated": "2026-05-25T02:46:04.108Z",
+  "dateModified": "2026-05-25T02:46:04.108Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

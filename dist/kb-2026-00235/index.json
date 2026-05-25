@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00235",
   "headline": "Code Review Best Practices",
   "description": "Code review is systematic examination of code by peers before merging. Google's code review practice: every change reviewed, small CLs (200 lines ideal), 24-hour review turnaround. It catches bugs, spreads knowledge, and enforces standards. Code review is the single most effective quality practice after testing.",
-  "dateCreated": "2026-05-24T18:00:03.755Z",
-  "dateModified": "2026-05-24T18:00:03.755Z",
+  "dateCreated": "2026-05-25T02:46:04.029Z",
+  "dateModified": "2026-05-25T02:46:04.029Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

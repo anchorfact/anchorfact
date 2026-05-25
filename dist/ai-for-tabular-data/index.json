@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-tabular-data",
   "headline": "AI for Tabular Data: Synthetic Generation, Diffusion Models, and Privacy-Preserving Structured Data",
   "description": "Tabular data -- spreadsheets, databases, CSV files -- is the most common data format in industry yet the least addressed by generative AI. Synthetic tabular data generation creates realistic but artificial structured datasets for privacy-preserving sharing, data augmentation, and imputation. Diffusion models and LLM-based approaches now match real data distributions with formal privacy guarantees.",
-  "dateCreated": "2026-05-24T18:00:03.051Z",
+  "dateCreated": "2026-05-25T02:46:03.476Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

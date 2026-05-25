@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/productivity-systems",
   "headline": "Productivity Systems",
   "description": "Productivity systems organize tasks and time for maximum effectiveness. GTD (Getting Things Done, David Allen): capture everything → clarify → organize → review → engage. Pomodoro Technique (Cirillo): 25-min focused work + 5-min break. Eisenhower Matrix: urgent/important quadrants. Time blocking: schedule specific tasks in calendar.",
-  "dateCreated": "2026-05-24T18:00:04.590Z",
-  "dateModified": "2026-05-24T18:00:04.590Z",
+  "dateCreated": "2026-05-25T02:46:04.658Z",
+  "dateModified": "2026-05-25T02:46:04.658Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

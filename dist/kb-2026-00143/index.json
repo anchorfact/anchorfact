@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00143",
   "headline": "Observer Pattern",
   "description": "One-to-many dependency — when subject changes, all observers are notified. Foundation of event-driven programming, MVC, React state updates, Redux.",
-  "dateCreated": "2026-05-24T18:00:03.976Z",
-  "dateModified": "2026-05-24T18:00:03.976Z",
+  "dateCreated": "2026-05-25T02:46:04.197Z",
+  "dateModified": "2026-05-25T02:46:04.197Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

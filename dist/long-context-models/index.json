@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/long-context-models",
   "headline": "Long-Context Language Models: Beyond 1M Tokens",
   "description": "Modern LLMs process context windows of 100K-2M tokens — entire books, codebases, or years of conversation history. Gemini 1.5 Pro demonstrated >99% retrieval accuracy across 1M tokens, proving usable long-context capability.",
-  "dateCreated": "2026-05-24T18:00:03.387Z",
+  "dateCreated": "2026-05-25T02:46:03.716Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

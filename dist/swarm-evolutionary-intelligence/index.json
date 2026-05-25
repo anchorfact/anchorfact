@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/swarm-evolutionary-intelligence",
   "headline": "Swarm and Evolutionary Intelligence: Genetic Algorithms, NEAT, and Particle Swarms",
   "description": "Evolutionary computation draws inspiration from biological evolution — mutation, crossover, selection — to optimize without gradients. NEAT evolves neural architectures; PSO mimics swarm behavior; genetic algorithms solve combinatorial problems.",
-  "dateCreated": "2026-05-24T18:00:03.517Z",
+  "dateCreated": "2026-05-25T02:46:03.830Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

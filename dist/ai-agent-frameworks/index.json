@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-agent-frameworks",
   "headline": "AI Agent Frameworks: LangChain, AutoGen, and CrewAI",
   "description": "AI agent frameworks provide the orchestration layer for building autonomous AI applications. LangChain pioneered composable LLM pipelines; AutoGen introduced multi-agent conversations; CrewAI enables role-based agent teams.",
-  "dateCreated": "2026-05-24T18:00:02.785Z",
+  "dateCreated": "2026-05-25T02:46:03.242Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

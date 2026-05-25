@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/knowledge-graph-reasoning",
   "headline": "Knowledge Graph Reasoning: Embedding-Based Link Prediction, Logical Inference, and Neurosymbolic Methods",
   "description": "Knowledge graph reasoning answers \"what facts are missing from this knowledge base?\" — predicting unknown relationships between entities using a combination of embedding-based pattern matching, graph neural networks, and logical rule inference. From drug repurposing to question answering, KG reasoning powers structured knowledge discovery across science and industry.",
-  "dateCreated": "2026-05-24T18:00:03.366Z",
+  "dateCreated": "2026-05-25T02:46:03.698Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

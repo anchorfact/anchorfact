@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-network-security",
   "headline": "AI for Network Security: Intelligent Firewalls, DDoS Mitigation, and Zero-Trust Architectures",
   "description": "Network security is an AI-first domain -- intelligent firewalls classify traffic with deep learning, DDoS mitigation systems detect attacks in milliseconds, and zero-trust architectures use ML to continuously evaluate access risk. The speed and scale of modern cyber attacks make AI the only viable defense.",
-  "dateCreated": "2026-05-24T18:00:03.008Z",
+  "dateCreated": "2026-05-25T02:46:03.447Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

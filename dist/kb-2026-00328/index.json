@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00328",
   "headline": "Internet History",
   "description": "The Internet evolved from ARPANET (1969, US Department of Defense) — the first packet-switching network connecting four university computers. TCP/IP (1983) became the standard. Tim Berners-Lee invented the World Wide Web (1989, CERN). Commercialization (1995) and broadband (2000s) brought the Internet to billions.",
-  "dateCreated": "2026-05-24T18:00:04.417Z",
-  "dateModified": "2026-05-24T18:00:04.417Z",
+  "dateCreated": "2026-05-25T02:46:04.528Z",
+  "dateModified": "2026-05-25T02:46:04.528Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

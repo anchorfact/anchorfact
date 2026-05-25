@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/agentic-ai",
   "headline": "Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning",
   "description": "Agentic AI represents the shift from passive question-answering LLMs to proactive autonomous agents — systems that perceive, plan, use tools, and execute multi-step goals. From coding agents to research assistants, agentic architectures are redefining what AI can accomplish independently.",
-  "dateCreated": "2026-05-24T18:00:02.778Z",
+  "dateCreated": "2026-05-25T02:46:03.233Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

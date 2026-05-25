@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-software-testing",
   "headline": "AI for Software Testing: Automated Test Generation, Fuzzing, and Quality Assurance",
   "description": "AI is transforming software testing -- from LLMs generating unit tests from code comments to AI-powered fuzzing finding security vulnerabilities in production systems. Test automation, once brittle and maintenance-heavy, is becoming intelligent: tests that write themselves, adapt to UI changes, and find bugs humans would miss.",
-  "dateCreated": "2026-05-24T18:00:03.041Z",
+  "dateCreated": "2026-05-25T02:46:03.469Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

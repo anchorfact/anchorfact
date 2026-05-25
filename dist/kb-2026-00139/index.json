@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00139",
   "headline": "Bit Manipulation",
   "description": "Bit manipulation operates directly on binary representations using bitwise operators: AND (&), OR (|), XOR (^), NOT (~), left shift (<<), right shift (>>). Used for optimization, cryptography, compression, hardware interfacing, and low-memory algorithms.",
-  "dateCreated": "2026-05-24T18:00:03.726Z",
-  "dateModified": "2026-05-24T18:00:03.726Z",
+  "dateCreated": "2026-05-25T02:46:04.004Z",
+  "dateModified": "2026-05-25T02:46:04.004Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

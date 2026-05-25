@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/edge-ai-and-tinyml",
   "headline": "Edge AI and TinyML: Intelligence at the Edge",
   "description": "Edge AI runs machine learning directly on devices — smartphones, IoT sensors, microcontrollers — eliminating cloud latency and privacy concerns. TinyML pushes ML to devices using <1mW of power.",
-  "dateCreated": "2026-05-24T18:00:03.291Z",
+  "dateCreated": "2026-05-25T02:46:03.639Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

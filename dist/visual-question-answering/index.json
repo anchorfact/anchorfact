@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/visual-question-answering",
   "headline": "Visual Question Answering: Vision-Language Models for Image Understanding and Reasoning",
   "description": "Visual Question Answering (VQA) tests whether AI truly understands images — given a photo and a natural language question, the model must provide the correct answer. This requires integrating computer vision (what objects are present, their spatial relationships) with language understanding (parsing the question, reasoning about its intent). VQA is the quintessential multimodal AI benchmark.",
-  "dateCreated": "2026-05-24T18:00:03.551Z",
+  "dateCreated": "2026-05-25T02:46:03.864Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

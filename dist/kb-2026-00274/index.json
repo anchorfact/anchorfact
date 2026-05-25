@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00274",
   "headline": "Natural Language Processing (NLP)",
   "description": "NLP enables computers to understand, interpret, and generate human language. Tasks: text classification, named entity recognition (NER), machine translation, summarization, question answering, sentiment analysis. Before Transformers (2017): rule-based → statistical → neural (RNN/LSTM). After Transformers: pre-trained language models dominate.",
-  "dateCreated": "2026-05-24T18:00:03.432Z",
+  "dateCreated": "2026-05-25T02:46:03.764Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

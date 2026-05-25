@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/reasoning-models",
   "headline": "AI Reasoning Models: OpenAI o1/o3 and DeepSeek-R1",
   "description": "Reasoning models like OpenAI o1/o3 and DeepSeek-R1 represent a paradigm shift: instead of answering immediately, they \"think\" through problems via internal chain-of-thought, scaling inference-time compute for dramatically better math, coding, and scientific reasoning.",
-  "dateCreated": "2026-05-24T18:00:03.473Z",
+  "dateCreated": "2026-05-25T02:46:03.800Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

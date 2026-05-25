@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00275",
   "headline": "Computer Vision",
   "description": "Computer Vision enables machines to extract meaning from visual data. Key tasks: image classification (what is this?), object detection (where is it? + bounding box), segmentation (pixel-level labeling), pose estimation, depth estimation, 3D reconstruction. Deep learning (CNN, ViT) dominates since 2012.",
-  "dateCreated": "2026-05-24T18:00:03.254Z",
-  "dateModified": "2026-05-24T18:00:03.254Z",
+  "dateCreated": "2026-05-25T02:46:03.611Z",
+  "dateModified": "2026-05-25T02:46:03.611Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

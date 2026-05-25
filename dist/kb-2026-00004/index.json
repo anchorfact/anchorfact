@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00004",
   "headline": "GPT (Generative Pre-trained Transformer) Model Family",
   "description": "The GPT (Generative Pre-trained Transformer) model family, developed by OpenAI starting in 2018, represents the lineage of autoregressive language models that scaled from 117M to trillions of parameters, establishing text generation as the primary paradigm for general-purpose AI. GPT-1 (June 2018) introduced the Transformer decoder for language modeling; GPT-2 (February 2019, 1.5B parameters) demonstrated zero-shot transfer capabilities that alarmed researchers enough to stagger its release; GPT-3 (May 2020, 175B parameters) established few-shot learning as a viable paradigm and catalyzed the commercial LLM ecosystem; GPT-4 (March 2023, estimated 1.76T parameters with Mixture-of-Experts) introduced multimodal capabilities and near-human performance on professional exams. As of May 2026, the GPT lineage powers ChatGPT, which has over 300 million weekly active users.",
-  "dateCreated": "2026-05-24T18:00:03.317Z",
-  "dateModified": "2026-05-24T18:00:03.317Z",
+  "dateCreated": "2026-05-25T02:46:03.661Z",
+  "dateModified": "2026-05-25T02:46:03.661Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00220",
   "headline": "Pathfinding Algorithms in Games",
   "description": "Pathfinding finds routes for game characters to navigate environments. A* algorithm (pronounced A-star) is the standard: combines Dijkstra's shortest path with a heuristic guiding search toward the goal. Used in virtually every game with NPC movement. NavMesh (navigation mesh) replaces grid-based maps with polygon-based walkable areas.",
-  "dateCreated": "2026-05-24T18:00:04.236Z",
-  "dateModified": "2026-05-24T18:00:04.236Z",
+  "dateCreated": "2026-05-25T02:46:04.391Z",
+  "dateModified": "2026-05-25T02:46:04.391Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00174",
   "headline": "Webpack",
   "description": "Webpack is a module bundler that transforms frontend assets (JS, CSS, images) into optimized bundles. Entry point → dependency graph → loaders (transform files) → plugins (optimize output) → bundles. Introduced code splitting and hot module replacement to mainstream JavaScript.",
-  "dateCreated": "2026-05-24T18:00:04.140Z",
-  "dateModified": "2026-05-24T18:00:04.140Z",
+  "dateCreated": "2026-05-25T02:46:04.317Z",
+  "dateModified": "2026-05-25T02:46:04.317Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

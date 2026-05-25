@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00332",
   "headline": "Quantum Mechanics",
   "description": "Quantum mechanics (Planck 1900, Bohr, Heisenberg, Schrödinger, 1920s) describes physical phenomena at atomic and subatomic scales. Fundamental principles: wave-particle duality, quantization (energy in discrete units), uncertainty principle (cannot simultaneously know position and momentum precisely), superposition, entanglement.",
-  "dateCreated": "2026-05-24T18:00:04.547Z",
-  "dateModified": "2026-05-24T18:00:04.547Z",
+  "dateCreated": "2026-05-25T02:46:04.624Z",
+  "dateModified": "2026-05-25T02:46:04.624Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

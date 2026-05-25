@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00161",
   "headline": "Serverless Computing",
   "description": "Serverless computing abstracts away server management — developers write and deploy functions; the cloud provider handles provisioning, scaling, and maintenance. Pay-per-request model (no idle cost). AWS Lambda (2014) pioneered the model; others: Azure Functions, Google Cloud Functions, Cloudflare Workers.",
-  "dateCreated": "2026-05-24T18:00:04.062Z",
-  "dateModified": "2026-05-24T18:00:04.062Z",
+  "dateCreated": "2026-05-25T02:46:04.258Z",
+  "dateModified": "2026-05-25T02:46:04.258Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

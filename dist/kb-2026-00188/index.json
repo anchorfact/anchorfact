@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00188",
   "headline": "MQTT Protocol",
   "description": "MQTT is a lightweight publish-subscribe messaging protocol designed for constrained devices and low-bandwidth networks. Created by IBM (1999), standardized by OASIS. Used extensively in IoT: smart homes, industrial sensors, connected vehicles. QoS levels: 0 (at most once), 1 (at least once), 2 (exactly once).",
-  "dateCreated": "2026-05-24T18:00:03.951Z",
-  "dateModified": "2026-05-24T18:00:03.951Z",
+  "dateCreated": "2026-05-25T02:46:04.179Z",
+  "dateModified": "2026-05-25T02:46:04.179Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

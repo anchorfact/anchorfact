@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00294",
   "headline": "Svelte",
   "description": "Svelte (Rich Harris, 2016) is a radical frontend framework that compiles components to vanilla JavaScript during build — no virtual DOM runtime. Svelte 5 (2024) introduced runes ($state, $derived, $effect) for universal reactivity. Smaller bundles, faster runtime — used by Apple, Spotify, NYT.",
-  "dateCreated": "2026-05-24T18:00:04.091Z",
-  "dateModified": "2026-05-24T18:00:04.091Z",
+  "dateCreated": "2026-05-25T02:46:04.283Z",
+  "dateModified": "2026-05-25T02:46:04.283Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

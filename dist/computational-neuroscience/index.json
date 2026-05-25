@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/computational-neuroscience",
   "headline": "Computational Neuroscience: AI Models of Brain Circuits, Connectomics, and Neural Computation",
   "description": "Computational neuroscience uses AI both as a tool and a model — deep learning automates the reconstruction of brain wiring diagrams (connectomics), while theories like predictive coding and reinforcement learning provide mathematical frameworks explaining how neural circuits compute. The convergence of large-scale neural data and AI models is creating an unprecedented window into the biological basis of intelligence.",
-  "dateCreated": "2026-05-24T18:00:03.252Z",
-  "dateModified": "2026-05-24T18:00:03.252Z",
+  "dateCreated": "2026-05-25T02:46:03.610Z",
+  "dateModified": "2026-05-25T02:46:03.610Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

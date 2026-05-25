@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-remote-sensing",
   "headline": "AI for Remote Sensing: Foundation Models, Satellite Image Analysis, and Earth Observation",
   "description": "Remote sensing AI transforms satellite pixels into actionable Earth intelligence — monitoring deforestation in real-time, mapping flood extent within hours of disaster, and classifying crops across continents. Foundation models pretrained on petabytes of Earth observation data are democratizing planetary-scale AI, enabling few-shot deployment for any location on Earth.",
-  "dateCreated": "2026-05-24T18:00:03.024Z",
+  "dateCreated": "2026-05-25T02:46:03.457Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00262",
   "headline": "rsync",
   "description": "rsync is a fast file synchronization tool using delta-transfer algorithm — only transfers differences between source and destination. `rsync -avz source/ user@host:/dest/`. Ideal for backups, mirroring, deployment. Bandwidth-efficient: only changed blocks, not entire files.",
-  "dateCreated": "2026-05-24T18:00:04.043Z",
-  "dateModified": "2026-05-24T18:00:04.043Z",
+  "dateCreated": "2026-05-25T02:46:04.247Z",
+  "dateModified": "2026-05-25T02:46:04.247Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

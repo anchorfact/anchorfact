@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00086",
   "headline": "Service Workers",
   "description": "Service Workers are programmable network proxies that run in the browser background, intercepting network requests to enable offline functionality, push notifications, and background sync. They are the foundation of Progressive Web Apps (PWAs).",
-  "dateCreated": "2026-05-24T18:00:04.063Z",
-  "dateModified": "2026-05-24T18:00:04.063Z",
+  "dateCreated": "2026-05-25T02:46:04.259Z",
+  "dateModified": "2026-05-25T02:46:04.259Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

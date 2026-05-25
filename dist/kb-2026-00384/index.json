@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00384",
   "headline": "Climate Zones",
   "description": "The Köppen climate classification (Wladimir Köppen, 1884) categorizes world climates into 5 main groups: A (Tropical), B (Arid/Desert), C (Temperate), D (Continental), E (Polar). Further subdivided by precipitation and temperature patterns. Most widely used climate classification system.",
-  "dateCreated": "2026-05-24T18:00:04.296Z",
-  "dateModified": "2026-05-24T18:00:04.296Z",
+  "dateCreated": "2026-05-25T02:46:04.436Z",
+  "dateModified": "2026-05-25T02:46:04.436Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/anomaly-detection",
   "headline": "Anomaly Detection in Machine Learning",
   "description": "Anomaly detection identifies data points that deviate significantly from expected patterns — critical for fraud detection, industrial monitoring, and cybersecurity.",
-  "dateCreated": "2026-05-24T18:00:03.217Z",
+  "dateCreated": "2026-05-25T02:46:03.580Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/neural-style-transfer",
   "headline": "Neural Style Transfer: Artistic Rendering, Image-to-Image Translation, and Creative AI",
   "description": "Neural style transfer applies the artistic style of one image (e.g., Van Gogh painting) to the content of another (a photograph), creating new artwork. From Gatys's seminal 2015 paper to IP-Adapter diffusion models, the field has evolved from minute-long optimization to real-time fine-grained style control.",
-  "dateCreated": "2026-05-24T18:00:03.443Z",
+  "dateCreated": "2026-05-25T02:46:03.772Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

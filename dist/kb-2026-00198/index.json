@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00198",
   "headline": "Lambda Calculus",
   "description": "Lambda calculus (Alonzo Church, 1936) is a formal system for expressing computation via function abstraction and application. It is Turing-complete and the theoretical foundation of functional programming (Lisp, Haskell, ML, Clojure, JavaScript's arrow functions).",
-  "dateCreated": "2026-05-24T18:00:03.923Z",
-  "dateModified": "2026-05-24T18:00:03.923Z",
+  "dateCreated": "2026-05-25T02:46:04.160Z",
+  "dateModified": "2026-05-25T02:46:04.160Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

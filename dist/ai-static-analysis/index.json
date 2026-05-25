@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-static-analysis",
   "headline": "AI for Static Analysis: Automated Bug Detection, Code Review, and Vulnerability Scanning",
   "description": "AI is transforming static program analysis -- from rule-based bug finders with 90% false positive rates to intelligent code reviewers that understand context, track data flow, and find real vulnerabilities before they reach production. LLM-augmented analysis combines the rigor of formal methods with the flexibility of neural code understanding.",
-  "dateCreated": "2026-05-24T18:00:03.177Z",
+  "dateCreated": "2026-05-25T02:46:03.553Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

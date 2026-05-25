@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00060",
   "headline": "Next.js",
   "description": "Next.js is a React-based full-stack web framework created by Vercel, first released in October 2016. It provides server-side rendering (SSR), static site generation (SSG), API routes, and file-system-based routing out of the box. With 139,553 GitHub stars as of May 2026, it is the most popular React framework and powers websites for Nike, TikTok, Hulu, Twitch, and Notion. The App Router (introduced in Next.js 13, 2022, and stabilized in Next.js 14/15) brought React Server Components as the default rendering model.",
-  "dateCreated": "2026-05-24T18:00:03.957Z",
-  "dateModified": "2026-05-24T18:00:03.957Z",
+  "dateCreated": "2026-05-25T02:46:04.183Z",
+  "dateModified": "2026-05-25T02:46:04.183Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

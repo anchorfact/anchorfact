@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00416",
   "headline": "Design Thinking",
   "description": "Design thinking is a human-centered problem-solving methodology popularized by IDEO. Five phases: Empathize (understand users), Define (frame problem), Ideate (brainstorm solutions), Prototype (build low-fidelity versions), Test (gather feedback). Iterative, not linear — you can move back and forth.",
-  "dateCreated": "2026-05-24T18:00:03.583Z",
-  "dateModified": "2026-05-24T18:00:03.583Z",
+  "dateCreated": "2026-05-25T02:46:03.890Z",
+  "dateModified": "2026-05-25T02:46:03.890Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

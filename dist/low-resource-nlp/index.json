@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/low-resource-nlp",
   "headline": "Low-Resource NLP: Multilingual Models, Endangered Language Preservation, and Translation",
   "description": "Of the world's 7,000+ languages, fewer than 100 are well-supported by NLP systems. Low-resource NLP aims to bridge this gap — using cross-lingual transfer, few-shot learning, and community-driven data collection to bring AI language tools to the billions of speakers of underrepresented languages, while also supporting endangered language preservation.",
-  "dateCreated": "2026-05-24T18:00:03.393Z",
+  "dateCreated": "2026-05-25T02:46:03.725Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

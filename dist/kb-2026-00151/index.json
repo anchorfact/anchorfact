@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00151",
   "headline": "Amazon Web Services (AWS)",
   "description": "AWS is the world's largest cloud provider, launched in 2006 with S3 and EC2. It offers 200+ services across compute, storage, database, ML, IoT, and serverless. AWS holds ~32% cloud market share (2025). Key services: EC2 (VMs), S3 (object storage), Lambda (serverless), DynamoDB (NoSQL), RDS (managed databases).",
-  "dateCreated": "2026-05-24T18:00:03.710Z",
-  "dateModified": "2026-05-24T18:00:03.710Z",
+  "dateCreated": "2026-05-25T02:46:03.991Z",
+  "dateModified": "2026-05-25T02:46:03.991Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

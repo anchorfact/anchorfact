@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/self-supervised-learning",
   "headline": "Self-Supervised Learning: Learning Without Labels",
   "description": "Self-supervised learning extracts supervisory signals from unlabeled data, enabling models to learn useful representations without expensive human annotation. SSL underpins modern pretraining of foundation models.",
-  "dateCreated": "2026-05-24T18:00:03.502Z",
+  "dateCreated": "2026-05-25T02:46:03.817Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00119",
   "headline": "Zero Trust Architecture",
   "description": "Zero Trust is a security model that assumes no implicit trust — verify every access request regardless of network location (internal or external). Core principles: never trust, always verify; least privilege access; assume breach. Mandated by US Executive Order 14028 (2021) for federal agencies.",
-  "dateCreated": "2026-05-24T18:00:04.150Z",
-  "dateModified": "2026-05-24T18:00:04.150Z",
+  "dateCreated": "2026-05-25T02:46:04.326Z",
+  "dateModified": "2026-05-25T02:46:04.326Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

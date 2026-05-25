@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00021",
   "headline": "Rust Programming Language",
   "description": "Rust is a systems programming language focused on safety, concurrency, and performance. Created by Graydon Hoare at Mozilla Research in 2010 and first stabilized in 2015, Rust guarantees memory safety without garbage collection through its ownership and borrowing system. According to the JetBrains State of Rust 2025 survey (February 2026), 26% of Rust developers use it professionally, 65% use it for personal projects, and the language continues to attract new users at an accelerating rate (30% of respondents had started using Rust within the past month). The latest stable version is Rust 1.95.0 (released April 16, 2026). Rust was voted the \"most admired\" programming language in the Stack Overflow Developer Survey for nine consecutive years (2016-2024).",
-  "dateCreated": "2026-05-24T18:00:04.048Z",
-  "dateModified": "2026-05-24T18:00:04.048Z",
+  "dateCreated": "2026-05-25T02:46:04.251Z",
+  "dateModified": "2026-05-25T02:46:04.251Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

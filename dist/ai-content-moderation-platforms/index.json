@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-content-moderation-platforms",
   "headline": "AI Content Moderation Platforms: Large-Scale Safety Systems, Policy Engines, and Multilingual Review",
   "description": "AI content moderation is the invisible filter protecting billions of social media users from hate speech, violence, and misinformation. Multi-stage AI pipelines detect policy-violating content at upload time, while human reviewers handle edge cases. The challenge: moderating in 70+ languages while respecting cultural context and free expression.",
-  "dateCreated": "2026-05-24T18:00:02.850Z",
+  "dateCreated": "2026-05-25T02:46:03.308Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

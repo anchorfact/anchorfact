@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-chemistry",
   "headline": "AI for Chemistry: Reaction Prediction, Retrosynthesis, and Computational Chemistry",
   "description": "AI is transforming chemistry from a fundamentally experimental science to a computationally predictable one. Machine learning potentials simulate molecular dynamics at quantum accuracy with million-fold speedups, while AI retrosynthesis tools design complete synthetic routes in minutes rather than weeks. These capabilities are accelerating discovery across pharmaceuticals, materials, and catalysis.",
-  "dateCreated": "2026-05-24T18:00:02.925Z",
+  "dateCreated": "2026-05-25T02:46:03.376Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

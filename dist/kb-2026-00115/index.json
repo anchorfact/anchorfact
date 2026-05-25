@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00115",
   "headline": "Authentication vs Authorization",
   "description": "Authentication verifies identity (who you are), while authorization determines permissions (what you can do). Authentication factors: something you know (password), have (token), are (biometrics). Multi-Factor Authentication (MFA) requires two or more factors. Authorization models: RBAC (Role-Based Access Control), ABAC (Attribute-Based), ReBAC (Relationship-Based).",
-  "dateCreated": "2026-05-24T18:00:03.721Z",
-  "dateModified": "2026-05-24T18:00:03.721Z",
+  "dateCreated": "2026-05-25T02:46:04.000Z",
+  "dateModified": "2026-05-25T02:46:04.000Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

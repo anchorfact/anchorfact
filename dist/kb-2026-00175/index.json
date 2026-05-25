@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00175",
   "headline": "Vite",
   "description": "Vite (Evan You, 2020) is a next-generation frontend build tool that leverages native ES modules for instant dev server startup and HMR. Uses esbuild for pre-bundling (10-100x faster than Webpack) and Rollup for production builds.",
-  "dateCreated": "2026-05-24T18:00:04.124Z",
-  "dateModified": "2026-05-24T18:00:04.124Z",
+  "dateCreated": "2026-05-25T02:46:04.306Z",
+  "dateModified": "2026-05-25T02:46:04.306Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

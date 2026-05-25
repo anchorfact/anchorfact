@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/mechanistic-interpretability",
   "headline": "Mechanistic Interpretability: Reverse-Engineering Neural Network Circuits and Features",
   "description": "Mechanistic interpretability treats neural networks as scientific objects to be reverse-engineered — locating the circuits, features, and computational pathways that produce specific behaviors. Instead of asking \"what does the model output?\", it asks \"how does the model compute this output?\" — enabling targeted fixes for safety, bias, and reliability.",
-  "dateCreated": "2026-05-24T18:00:03.402Z",
+  "dateCreated": "2026-05-25T02:46:03.738Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00202",
   "headline": "Concurrency Models",
   "description": "Concurrency models handle multiple simultaneous computations. Threads (shared memory, mutexes), CSP/Actors (message passing, no shared state), async/await (cooperative multitasking), SIMD/GPU (data-parallel). Key challenges: race conditions, deadlocks, livelocks, starvation. Amdahl's Law limits parallel speedup.",
-  "dateCreated": "2026-05-24T18:00:03.761Z",
-  "dateModified": "2026-05-24T18:00:03.761Z",
+  "dateCreated": "2026-05-25T02:46:04.035Z",
+  "dateModified": "2026-05-25T02:46:04.035Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

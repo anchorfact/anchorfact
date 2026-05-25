@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-gaming-theory",
   "headline": "AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy",
   "description": "AI has mastered games through different strategic paradigms: perfect information (chess, Go -- AlphaZero, 2017-2018), imperfect information (poker -- Libratus/Pluribus, 2017-2019), and the hardest frontier -- games combining imperfect information, multi-agent negotiation, and natural language communication (DeepNash for Stratego, Cicero for Diplomacy). Each milestone has advanced computational game theory and multi-agent strategy.",
-  "dateCreated": "2026-05-24T18:00:02.968Z",
+  "dateCreated": "2026-05-25T02:46:03.411Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

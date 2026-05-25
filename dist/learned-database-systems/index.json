@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/learned-database-systems",
   "headline": "Learned Database Systems: AI-Driven Query Optimization, Learned Indexes, and Cardinality Estimation",
   "description": "Learned database systems replace decades of hand-tuned heuristics in databases with machine learning models. From learned indexes that replace B-trees with tiny neural networks to learned query optimizers that beat expert-designed cost models, AI is challenging the assumption that classical data structures and algorithms are always optimal for specific data distributions.",
-  "dateCreated": "2026-05-24T18:00:03.374Z",
+  "dateCreated": "2026-05-25T02:46:03.707Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

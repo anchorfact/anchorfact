@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00218",
   "headline": "Game Design Document (GDD)",
   "description": "A Game Design Document (GDD) is the blueprint for a video game — defining mechanics, story, art direction, technical requirements, and project scope. It serves as the single source of truth for the development team. Modern GDDs are living documents (wikis, Notion) rather than static PDFs.",
-  "dateCreated": "2026-05-24T18:00:04.194Z",
-  "dateModified": "2026-05-24T18:00:04.194Z",
+  "dateCreated": "2026-05-25T02:46:04.359Z",
+  "dateModified": "2026-05-25T02:46:04.359Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

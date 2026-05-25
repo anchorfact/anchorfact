@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00127",
   "headline": "Linked List",
   "description": "A linked list is a linear collection of nodes, each containing data and a pointer. O(1) insert/delete at known position, O(n) random access. Variants: singly-linked, doubly-linked, circular. Poor cache locality but dynamic sizing is trivial.",
-  "dateCreated": "2026-05-24T18:00:03.929Z",
-  "dateModified": "2026-05-24T18:00:03.929Z",
+  "dateCreated": "2026-05-25T02:46:04.164Z",
+  "dateModified": "2026-05-25T02:46:04.164Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

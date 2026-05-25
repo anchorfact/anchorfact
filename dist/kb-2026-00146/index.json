@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00146",
   "headline": "Adapter Pattern",
   "description": "Converts interface of a class into another interface clients expect. Lets incompatible interfaces work together. Object adapter (composition) preferred over class adapter (inheritance).",
-  "dateCreated": "2026-05-24T18:00:03.706Z",
-  "dateModified": "2026-05-24T18:00:03.706Z",
+  "dateCreated": "2026-05-25T02:46:03.989Z",
+  "dateModified": "2026-05-25T02:46:03.989Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

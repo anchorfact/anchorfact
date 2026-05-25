@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/mlops-llmops",
   "headline": "MLOps and LLMOps: Production AI Engineering, Observability, and Platform Architecture",
   "description": "MLOps and LLMOps are the engineering disciplines that bridge the gap between a research notebook and a reliable, monitored, cost-effective production AI system. As enterprises deploy LLMs at scale, LLMOps extends traditional MLOps with prompt versioning, guardrail monitoring, hallucination detection, and cost-per-call optimization — making AI operations a $10B+ market by 2026.",
-  "dateCreated": "2026-05-24T18:00:03.409Z",
+  "dateCreated": "2026-05-25T02:46:03.749Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

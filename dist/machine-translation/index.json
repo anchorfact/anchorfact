@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/machine-translation",
   "headline": "Machine Translation: Neural MT, LLM-Based Translation, and Multilingual Quality at Scale",
   "description": "Machine translation has advanced from phrase-based statistical models to neural sequence-to-sequence to LLM-based translation spanning 200 languages. The Nature-published NLLB model brings translation quality to low-resource languages for the first time, while LLMs challenge the need for dedicated translation systems altogether.",
-  "dateCreated": "2026-05-24T18:00:03.395Z",
+  "dateCreated": "2026-05-25T02:46:03.728Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

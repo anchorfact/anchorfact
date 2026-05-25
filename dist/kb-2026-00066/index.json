@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00066",
   "headline": "Git Version Control System",
   "description": "Git is a distributed version control system created by Linus Torvalds in April 2005 for Linux kernel development. It tracks changes to files, enabling multiple developers to collaborate without a central server. Git is the de facto standard for software version control, used by over 90% of developers (Stack Overflow 2024 Survey) and hosting platforms including GitHub, GitLab, and Bitbucket. Its distributed model means every clone is a full repository with complete history.",
-  "dateCreated": "2026-05-24T18:00:03.855Z",
-  "dateModified": "2026-05-24T18:00:03.856Z",
+  "dateCreated": "2026-05-25T02:46:04.110Z",
+  "dateModified": "2026-05-25T02:46:04.110Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

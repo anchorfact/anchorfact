@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-document-understanding",
   "headline": "AI Document Understanding: Layout Parsing, Structured Extraction, and Intelligent Document Processing",
   "description": "AI document understanding extracts structured data from unstructured documents — invoices, contracts, medical records, tax forms. From traditional OCR pipelines to end-to-end vision-language models, the field has evolved from optical character recognition to semantic comprehension. LLMs can now \"read\" documents like humans, understanding layout, extracting key fields, and reasoning across tables and text.",
-  "dateCreated": "2026-05-24T18:00:02.885Z",
+  "dateCreated": "2026-05-25T02:46:03.339Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

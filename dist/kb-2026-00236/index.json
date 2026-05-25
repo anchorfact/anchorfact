@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00236",
   "headline": "Technical Debt",
   "description": "Technical debt (Ward Cunningham, 1992) is the implied cost of future rework caused by choosing an expedient solution now instead of a better approach that would take longer. Like financial debt, it accrues interest — the longer you delay, the more it costs to fix.",
-  "dateCreated": "2026-05-24T18:00:04.104Z",
-  "dateModified": "2026-05-24T18:00:04.104Z",
+  "dateCreated": "2026-05-25T02:46:04.292Z",
+  "dateModified": "2026-05-25T02:46:04.292Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

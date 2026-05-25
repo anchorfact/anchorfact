@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/concept-based-explainability",
   "headline": "Concept-Based Explainability: TCAV and Concept Bottleneck Models",
   "description": "Concept-based explainability moves beyond pixel-level saliency maps to higher-level human-understandable concepts. TCAV quantifies whether a model \"thinks\" about stripes when classifying zebras, while Concept Bottleneck Models embed interpretable concept reasoning into the architecture itself.",
-  "dateCreated": "2026-05-24T18:00:03.256Z",
+  "dateCreated": "2026-05-25T02:46:03.613Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

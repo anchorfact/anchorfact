@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00273",
   "headline": "Transfer Learning",
   "description": "Transfer learning applies knowledge from a source domain to improve learning in a target domain. In deep learning: pre-train on large generic dataset (ImageNet), fine-tune on specific task with small labeled dataset. This is the dominant paradigm in computer vision and NLP — training from scratch is rare.",
-  "dateCreated": "2026-05-24T18:00:03.536Z",
+  "dateCreated": "2026-05-25T02:46:03.853Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00372",
   "headline": "Newton's Laws of Motion",
   "description": "Newton's three laws (1687, Principia) form the foundation of classical mechanics. 1st Law (inertia): object at rest stays at rest; in motion stays in motion unless acted upon by force. 2nd Law: F = ma (force equals mass times acceleration). 3rd Law: every action has equal and opposite reaction.",
-  "dateCreated": "2026-05-24T18:00:04.533Z",
-  "dateModified": "2026-05-24T18:00:04.533Z",
+  "dateCreated": "2026-05-25T02:46:04.614Z",
+  "dateModified": "2026-05-25T02:46:04.614Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00100",
   "headline": "History API",
   "description": "The History API (`window.history`) enables single-page applications to manipulate the browser session history — adding entries, replacing states, and navigating without full page reloads. It is the foundation of client-side routing in SPAs.",
-  "dateCreated": "2026-05-24T18:00:03.887Z",
-  "dateModified": "2026-05-24T18:00:03.887Z",
+  "dateCreated": "2026-05-25T02:46:04.133Z",
+  "dateModified": "2026-05-25T02:46:04.133Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

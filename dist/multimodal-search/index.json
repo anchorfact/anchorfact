@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/multimodal-search",
   "headline": "Multimodal Search: Cross-Modal Retrieval, Product Search, and Multimodal Embeddings",
   "description": "Multimodal search enables \"find me products that look like this photo\" or \"find videos about this topic\" -- bridging the gap between different media types through a shared embedding space. From e-commerce product search to enterprise knowledge retrieval, multimodal embeddings let users search across text, images, video, and audio with a single query, in any modality.",
-  "dateCreated": "2026-05-24T18:00:03.429Z",
+  "dateCreated": "2026-05-25T02:46:03.763Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

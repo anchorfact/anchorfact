@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00313",
   "headline": "Ansible",
   "description": "Ansible (Michael DeHaan, 2012, acquired by Red Hat 2015) is an agentless IT automation tool for configuration management, deployment, and orchestration. Uses YAML playbooks and SSH — no agent to install on target machines. Idempotent: running same playbook multiple times produces same result.",
-  "dateCreated": "2026-05-24T18:00:03.713Z",
-  "dateModified": "2026-05-24T18:00:03.713Z",
+  "dateCreated": "2026-05-25T02:46:03.994Z",
+  "dateModified": "2026-05-25T02:46:03.994Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

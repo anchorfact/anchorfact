@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-astronomy",
   "headline": "AI for Astronomy: Exoplanet Detection, Galaxy Classification, and Computational Astrophysics",
   "description": "Astronomy has become a data-driven science drowning in data — the Vera Rubin Observatory (LSST) will generate 20 TB of images per night, JWST produces terabytes weekly, and LIGO streams continuous gravitational wave data. AI is the only viable way to process, classify, and discover in this data deluge. From finding 100+ hidden exoplanets in old NASA data to classifying billions of galaxies, AI is becoming astronomy's most productive tool.",
-  "dateCreated": "2026-05-24T18:00:02.918Z",
+  "dateCreated": "2026-05-25T02:46:03.369Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

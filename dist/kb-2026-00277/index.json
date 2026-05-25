@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00277",
   "headline": "Explainable AI (XAI)",
   "description": "Explainable AI makes model decisions interpretable by humans. As models become more complex (deep NNs, LLMs), understanding WHY a model made a decision becomes critical for trust, debugging, and regulatory compliance (EU AI Act, GDPR). Methods: SHAP (feature importance), LIME (local explanations), attention visualization, saliency maps.",
-  "dateCreated": "2026-05-24T18:00:03.298Z",
+  "dateCreated": "2026-05-25T02:46:03.645Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

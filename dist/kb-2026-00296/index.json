@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00296",
   "headline": "Nuxt.js",
   "description": "Nuxt.js (2016, Nuxt Labs) is the Vue.js equivalent of Next.js — full-stack framework with SSR, SSG, file-based routing, auto-imports, and modules ecosystem. Nuxt 3 (2022) rebuilt on Nitro server engine and Vue 3 Composition API. Nuxt 4 (2024) added Turborepo-like unified build.",
-  "dateCreated": "2026-05-24T18:00:03.970Z",
-  "dateModified": "2026-05-24T18:00:03.970Z",
+  "dateCreated": "2026-05-25T02:46:04.192Z",
+  "dateModified": "2026-05-25T02:46:04.192Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

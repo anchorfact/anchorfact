@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00081",
   "headline": "Fetch API",
   "description": "The Fetch API is a modern JavaScript interface for making HTTP requests, replacing XMLHttpRequest. Standardized by WHATWG, it uses Promises for asynchronous request handling and provides a cleaner, more powerful API for network operations.",
-  "dateCreated": "2026-05-24T18:00:03.840Z",
-  "dateModified": "2026-05-24T18:00:03.840Z",
+  "dateCreated": "2026-05-25T02:46:04.098Z",
+  "dateModified": "2026-05-25T02:46:04.098Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

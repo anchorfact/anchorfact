@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/post-training-alignment",
   "headline": "Post-Training Alignment: DPO, GRPO, and Beyond",
   "description": "Post-training alignment makes base models useful and safe. DPO simplified RLHF by removing the reward model; GRPO enabled DeepSeek-R1's reasoning breakthrough. The alignment pipeline (SFT→DPO/RL→reasoning) is now standard across the industry.",
-  "dateCreated": "2026-05-24T18:00:03.460Z",
+  "dateCreated": "2026-05-25T02:46:03.789Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

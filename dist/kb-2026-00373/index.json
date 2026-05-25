@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00373",
   "headline": "Electromagnetic Spectrum",
   "description": "The electromagnetic spectrum encompasses all types of EM radiation, ordered by wavelength/frequency: radio (longest), microwave, infrared, visible light (400-700nm), ultraviolet, X-ray, gamma ray (shortest). All travel at speed of light (c = 299,792,458 m/s). Maxwell's equations (1865) unified electricity, magnetism, and light.",
-  "dateCreated": "2026-05-24T18:00:04.502Z",
-  "dateModified": "2026-05-24T18:00:04.502Z",
+  "dateCreated": "2026-05-25T02:46:04.590Z",
+  "dateModified": "2026-05-25T02:46:04.590Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

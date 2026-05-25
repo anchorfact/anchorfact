@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/activation-functions",
   "headline": "Activation Functions in Neural Networks",
   "description": "Activation functions introduce non-linearity into neural networks, enabling them to approximate any function. ReLU dominates hidden layers; softmax is standard for classification outputs.",
-  "dateCreated": "2026-05-24T18:00:02.748Z",
+  "dateCreated": "2026-05-25T02:46:03.207Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/efficient-green-ai",
   "headline": "Efficient and Green AI: Reducing the Carbon Footprint of Machine Learning",
   "description": "Green AI addresses the growing carbon footprint of machine learning training. From hardware-aware algorithms to sparse training and model distillation, efficiency research is both an economic and environmental imperative as models scale to trillion parameters.",
-  "dateCreated": "2026-05-24T18:00:03.294Z",
+  "dateCreated": "2026-05-25T02:46:03.641Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

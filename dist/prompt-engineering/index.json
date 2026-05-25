@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/prompt-engineering",
   "headline": "Prompt Engineering: Techniques for LLM Interaction",
   "description": "Prompt engineering is the practice of designing text inputs to elicit desired outputs from language models. It has evolved from simple instruction writing to systematic techniques for reasoning, constraint specification, and multi-step task decomposition.",
-  "dateCreated": "2026-05-24T18:00:03.464Z",
+  "dateCreated": "2026-05-25T02:46:03.794Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

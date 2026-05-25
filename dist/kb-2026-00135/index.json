@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00135",
   "headline": "Greedy Algorithms",
   "description": "Greedy algorithms make locally optimal choices hoping for global optimum. Fast but require correctness proof. Examples: Huffman coding, Prim/Kruskal (MST), activity selection, fractional knapsack.",
-  "dateCreated": "2026-05-24T18:00:03.873Z",
-  "dateModified": "2026-05-24T18:00:03.873Z",
+  "dateCreated": "2026-05-25T02:46:04.123Z",
+  "dateModified": "2026-05-25T02:46:04.123Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

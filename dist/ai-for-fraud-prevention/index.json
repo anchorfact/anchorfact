@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-fraud-prevention",
   "headline": "AI for Payment Fraud Prevention: Real-Time Transaction Scoring, Chargeback Reduction, and Merchant Risk",
   "description": "AI is the silent guardian of every card swipe and online payment -- scoring transactions in milliseconds, detecting fraud rings via graph neural networks, and blocking $25B+ in fraud annually. From Visa's 500M daily transactions to Stripe Radar, AI fraud prevention balances security with seamless user experience.",
-  "dateCreated": "2026-05-24T18:00:02.964Z",
+  "dateCreated": "2026-05-25T02:46:03.409Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

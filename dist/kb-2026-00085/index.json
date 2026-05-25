@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00085",
   "headline": "IndexedDB",
   "description": "IndexedDB is a low-level, asynchronous transactional database API for browsers, supporting structured data storage including objects and binary data. Unlike localStorage's synchronous key-value model, IndexedDB handles large datasets (hundreds of MB) with indexed queries and transactions.",
-  "dateCreated": "2026-05-24T18:00:03.899Z",
-  "dateModified": "2026-05-24T18:00:03.899Z",
+  "dateCreated": "2026-05-25T02:46:04.143Z",
+  "dateModified": "2026-05-25T02:46:04.143Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

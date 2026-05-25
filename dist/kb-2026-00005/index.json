@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00005",
   "headline": "Large Language Models (LLMs)",
   "description": "Large Language Models (LLMs) are Transformer-based neural networks trained on internet-scale text corpora (trillions of tokens) to predict and generate human language. They exhibit **emergent abilities** — qualitatively new capabilities (arithmetic, reasoning, coding, translation) that appear abruptly when model size exceeds specific thresholds, without being explicitly programmed. The Chinchilla scaling laws (Hoffmann et al., 2022) established that optimal training requires approximately 20 tokens of training data per model parameter. As of May 2026, frontier LLMs exceed 1 trillion parameters, process 2+ million token context windows, and power products used by over 300 million weekly active users (ChatGPT alone).",
-  "dateCreated": "2026-05-24T18:00:03.382Z",
-  "dateModified": "2026-05-24T18:00:03.382Z",
+  "dateCreated": "2026-05-25T02:46:03.713Z",
+  "dateModified": "2026-05-25T02:46:03.713Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

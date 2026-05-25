@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00429",
   "headline": "Stock Market Basics",
   "description": "The stock market is a marketplace where shares of publicly traded companies are bought and sold. Major US exchanges: NYSE, NASDAQ. Indexes: S&P 500 (500 largest US companies), Dow Jones (30), NASDAQ Composite (tech-heavy). Historical average return: ~10% annually (S&P 500, 1926-2025) — but volatile.",
-  "dateCreated": "2026-05-24T18:00:03.694Z",
-  "dateModified": "2026-05-24T18:00:03.694Z",
+  "dateCreated": "2026-05-25T02:46:03.980Z",
+  "dateModified": "2026-05-25T02:46:03.980Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

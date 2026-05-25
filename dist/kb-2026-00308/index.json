@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00308",
   "headline": "R Language",
   "description": "R is a statistical computing and graphics language created by Ross Ihaka and Robert Gentleman (1993). It is the dominant language in statistics, bioinformatics, and academic research. CRAN hosts 20,000+ packages. Key libraries: ggplot2 (visualization), dplyr (data manipulation), tidyr, caret (ML).",
-  "dateCreated": "2026-05-24T18:00:04.020Z",
-  "dateModified": "2026-05-24T18:00:04.020Z",
+  "dateCreated": "2026-05-25T02:46:04.228Z",
+  "dateModified": "2026-05-25T02:46:04.228Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-robot-navigation",
   "headline": "AI for Robot Navigation: SLAM, Visual Odometry, and Autonomous Path Planning",
   "description": "Robot navigation answers \"where am I, what is around me, and how do I get there?\" -- SLAM builds maps while tracking the robot's position, visual odometry estimates motion from camera images, and path planning computes collision-free trajectories. AI is transforming all three, enabling robots to navigate autonomously in unmapped, dynamic environments.",
-  "dateCreated": "2026-05-24T18:00:03.028Z",
+  "dateCreated": "2026-05-25T02:46:03.462Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

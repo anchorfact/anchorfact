@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00285",
   "headline": "Tokenization in NLP",
   "description": "Tokenization splits text into units (tokens) that the model processes. Methods: word-level (large vocabulary, OOV problem), character-level (tiny vocabulary, long sequences), subword (balanced: BPE, WordPiece, SentencePiece — standard for modern LLMs). Subword tokenization handles rare and unseen words by decomposing into known subword units.",
-  "dateCreated": "2026-05-24T18:00:03.534Z",
-  "dateModified": "2026-05-24T18:00:03.534Z",
+  "dateCreated": "2026-05-25T02:46:03.850Z",
+  "dateModified": "2026-05-25T02:46:03.850Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

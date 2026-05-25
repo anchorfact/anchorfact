@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/llm-inference-optimization",
   "headline": "LLM Inference Optimization: From FlashAttention to Speculative Decoding",
   "description": "LLM inference optimization has made serving trillion-parameter models economically viable. FlashAttention eliminates the memory bottleneck; speculative decoding accelerates generation 2-3x; KV-cache optimization reduces memory by 8x.",
-  "dateCreated": "2026-05-24T18:00:03.377Z",
+  "dateCreated": "2026-05-25T02:46:03.710Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

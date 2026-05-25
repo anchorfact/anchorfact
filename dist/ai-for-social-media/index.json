@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-social-media",
   "headline": "AI for Social Media: Misinformation Detection, Hate Speech Moderation, and Content Safety",
   "description": "Social media platforms process billions of posts daily — more than any human moderation team could review. AI detects hate speech, misinformation, harassment, and harmful content at scale, but faces fundamental challenges: context understanding, cultural nuance, and bias. The frontier is explainable, fair, and context-aware moderation that protects users without over-censoring legitimate speech.",
-  "dateCreated": "2026-05-24T18:00:03.039Z",
+  "dateCreated": "2026-05-25T02:46:03.467Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/data-centric-ai",
   "headline": "Data-Centric AI: The Systematic Engineering of Training Data",
   "description": "Data-Centric AI shifts the ML development paradigm from model tuning to data improvement. Championed by Andrew Ng, it argues that cleaner labels, better coverage, and systematic data engineering yield higher returns than architecture modifications.",
-  "dateCreated": "2026-05-24T18:00:03.270Z",
+  "dateCreated": "2026-05-25T02:46:03.623Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

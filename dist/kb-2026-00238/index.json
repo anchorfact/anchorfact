@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00238",
   "headline": "Pair Programming",
   "description": "Pair programming (part of XP, Kent Beck) is two developers working at one computer: Driver (writes code) + Navigator (reviews each line, thinks strategically). Roles switch frequently. Studies show 15% more effort but 15% fewer defects — net quality improvement. Extremely effective for complex problems and knowledge transfer.",
-  "dateCreated": "2026-05-24T18:00:03.993Z",
-  "dateModified": "2026-05-24T18:00:03.993Z",
+  "dateCreated": "2026-05-25T02:46:04.209Z",
+  "dateModified": "2026-05-25T02:46:04.209Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

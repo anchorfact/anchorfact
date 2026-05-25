@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00076",
   "headline": "JWT (JSON Web Token)",
   "description": "JWT (JSON Web Token) is a compact, URL-safe token format standardized as IETF RFC 7519. It enables stateless authentication by encoding claims (user identity, permissions, expiry) in a self-contained token signed by the server. JWT is the most widely used token format for web API authentication, replacing server-side sessions in stateless architectures.",
-  "dateCreated": "2026-05-24T18:00:03.916Z",
-  "dateModified": "2026-05-24T18:00:03.916Z",
+  "dateCreated": "2026-05-25T02:46:04.155Z",
+  "dateModified": "2026-05-25T02:46:04.155Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

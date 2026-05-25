@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00013",
   "headline": "Docker",
   "description": "Docker is an open-source platform for developing, shipping, and running applications in lightweight, isolated containers. First released in 2013 by Solomon Hykes at dotCloud, Docker revolutionized software deployment by packaging applications with all their dependencies into portable images that run consistently across any environment. As of 2026, Docker is used by over 15 million developers and is the foundation of modern cloud-native infrastructure.",
-  "dateCreated": "2026-05-24T18:00:03.815Z",
-  "dateModified": "2026-05-24T18:00:03.815Z",
+  "dateCreated": "2026-05-25T02:46:04.078Z",
+  "dateModified": "2026-05-25T02:46:04.078Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

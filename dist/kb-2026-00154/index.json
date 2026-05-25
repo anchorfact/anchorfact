@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00154",
   "headline": "Docker Compose",
   "description": "Docker Compose defines and runs multi-container Docker applications using a YAML file (`docker-compose.yml`). One command (`docker compose up`) starts all services. Ideal for development environments and single-host production deployments.",
-  "dateCreated": "2026-05-24T18:00:03.810Z",
-  "dateModified": "2026-05-24T18:00:03.810Z",
+  "dateCreated": "2026-05-25T02:46:04.073Z",
+  "dateModified": "2026-05-25T02:46:04.074Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

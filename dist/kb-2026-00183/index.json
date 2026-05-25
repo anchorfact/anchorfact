@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00183",
   "headline": "IPv4 vs IPv6",
   "description": "IPv4 (1981) uses 32-bit addresses (~4.3 billion). IPv6 (1998) uses 128-bit addresses (340 undecillion). IPv4 exhausted in 2019 (last /8 allocated). IPv6 adoption: ~45% globally (2025). IPv6 eliminates NAT (every device gets public IP) and simplifies header format.",
-  "dateCreated": "2026-05-24T18:00:03.908Z",
-  "dateModified": "2026-05-24T18:00:03.908Z",
+  "dateCreated": "2026-05-25T02:46:04.150Z",
+  "dateModified": "2026-05-25T02:46:04.150Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

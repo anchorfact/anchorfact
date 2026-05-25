@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/neural-architecture-search",
   "headline": "Neural Architecture Search: Automated Design of Deep Neural Networks",
   "description": "Neural Architecture Search (NAS) automates the design of neural network architectures — replacing years of human intuition and trial-and-error with algorithmic search. From RL-based methods consuming thousands of GPU-hours to modern supernet-based approaches finding architectures in hours, NAS is democratizing optimal network design.",
-  "dateCreated": "2026-05-24T18:00:03.437Z",
+  "dateCreated": "2026-05-25T02:46:03.767Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

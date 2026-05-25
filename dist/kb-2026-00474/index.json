@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00474",
   "headline": "History of Mathematics",
   "description": "Mathematics evolved from practical counting/measurement to abstract reasoning. Milestones: Babylonian base-60 (still in our time/angles), Greek geometry + proof (Euclid, Pythagoras), Indian-Arabic numeral system (including zero, ~7th century), calculus (Newton/Leibniz, 17th century), non-Euclidean geometry (19th), set theory (Cantor), computers.",
-  "dateCreated": "2026-05-24T18:00:04.515Z",
-  "dateModified": "2026-05-24T18:00:04.515Z",
+  "dateCreated": "2026-05-25T02:46:04.600Z",
+  "dateModified": "2026-05-25T02:46:04.600Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

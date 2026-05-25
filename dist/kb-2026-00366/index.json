@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00366",
   "headline": "Genetics and Heredity",
   "description": "Genetics studies heredity — how traits pass from parents to offspring. Mendel's laws (1866): segregation (alleles separate) and independent assortment. DNA structure (Watson/Crick, 1953). Human Genome Project (completed 2003) sequenced all ~3 billion base pairs. CRISPR-Cas9 (2012) enables precise gene editing.",
-  "dateCreated": "2026-05-24T18:00:04.512Z",
-  "dateModified": "2026-05-24T18:00:04.512Z",
+  "dateCreated": "2026-05-25T02:46:04.597Z",
+  "dateModified": "2026-05-25T02:46:04.597Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

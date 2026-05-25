@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-drone-autonomy",
   "headline": "AI for Drone Autonomy: Autonomous Navigation, Swarm Coordination, and Aerial Robotics",
   "description": "AI gives drones autonomy -- navigating without GPS, dodging obstacles at high speed, and coordinating in swarms. From Skydio's obstacle-dodging drones to Zipline's medical delivery network across Africa, AI-powered aerial autonomy is reshaping delivery, inspection, search-and-rescue, and agriculture.",
-  "dateCreated": "2026-05-24T18:00:02.891Z",
+  "dateCreated": "2026-05-25T02:46:03.348Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

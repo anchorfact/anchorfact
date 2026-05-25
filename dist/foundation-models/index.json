@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/foundation-models",
   "headline": "Foundation Models: Paradigm Shift in AI",
   "description": "Foundation models represent a paradigm shift — pretrain once on massive data, then adapt to thousands of downstream tasks via fine-tuning, prompting, or in-context learning.",
-  "dateCreated": "2026-05-24T18:00:03.306Z",
+  "dateCreated": "2026-05-25T02:46:03.652Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/biometric-recognition",
   "headline": "AI Biometric Recognition: Fingerprint, Iris, Face, and Multimodal Deep Learning Systems",
   "description": "AI has transformed biometric recognition from specialized hardware systems to software running on smartphones. Face recognition (Face ID), fingerprint sensors, and iris scanners use deep learning to achieve forensic-grade identity verification. Multimodal systems combining multiple biometrics now reach near-perfect accuracy.",
-  "dateCreated": "2026-05-24T18:00:03.241Z",
+  "dateCreated": "2026-05-25T02:46:03.600Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

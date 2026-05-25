@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-coding-assistants",
   "headline": "AI Coding Assistants: Copilot, Cursor, and Claude Code",
   "description": "AI coding assistants evolved from autocomplete to autonomous agents. By 2026, Cursor leads IDE-based workflows, Claude Code dominates terminal agentic coding (77.2% SWE-bench), and GitHub Copilot remains the enterprise standard with 55% productivity gains.",
-  "dateCreated": "2026-05-24T18:00:02.833Z",
+  "dateCreated": "2026-05-25T02:46:03.293Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

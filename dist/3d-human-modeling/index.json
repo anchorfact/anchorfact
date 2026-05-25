@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/3d-human-modeling",
   "headline": "3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars",
   "description": "3D human modeling reconstructs the human body in three dimensions from images and video -- enabling virtual try-on, motion capture without markers, and realistic digital avatars. Parametric body models (SMPL) and deep learning-based mesh recovery have evolved from laboratory multi-camera setups to working from a single smartphone photo.",
-  "dateCreated": "2026-05-24T18:00:02.744Z",
+  "dateCreated": "2026-05-25T02:46:03.204Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

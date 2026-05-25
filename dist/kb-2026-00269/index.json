@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00269",
   "headline": "Convolutional Neural Networks (CNN)",
   "description": "CNNs are specialized neural networks for grid-structured data (images, video). Key operations: convolution (slide filters over input, detect patterns), pooling (downsample, reduce parameters), fully connected layers (classification). AlexNet (2012) won ImageNet by 10%+ margin, launching the deep learning revolution.",
-  "dateCreated": "2026-05-24T18:00:03.269Z",
+  "dateCreated": "2026-05-25T02:46:03.621Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

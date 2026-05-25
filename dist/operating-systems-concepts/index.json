@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/operating-systems-concepts",
   "headline": "Operating Systems: Processes, Memory, and File Systems",
   "description": "Operating systems manage hardware resources and provide abstractions for applications. Process scheduling, memory management, and file systems are the three pillars of OS design.",
-  "dateCreated": "2026-05-24T18:00:03.978Z",
+  "dateCreated": "2026-05-25T02:46:04.199Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

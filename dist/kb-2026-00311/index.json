@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00311",
   "headline": "Elixir Language",
   "description": "Elixir (José Valim, 2011) is a dynamic, functional language built on the Erlang VM (BEAM) — inheriting Erlang's fault tolerance, concurrency, and distributed computing capabilities. Used by: Discord, WhatsApp (Erlang), Bleacher Report, PepsiCo. Phoenix Framework for web, Nerves for embedded.",
-  "dateCreated": "2026-05-24T18:00:03.825Z",
-  "dateModified": "2026-05-24T18:00:03.825Z",
+  "dateCreated": "2026-05-25T02:46:04.086Z",
+  "dateModified": "2026-05-25T02:46:04.086Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00082",
   "headline": "XMLHttpRequest",
   "description": "XMLHttpRequest (XHR) is an API for making HTTP requests from JavaScript, first introduced by Microsoft in 1999 for Outlook Web Access. It was the foundation of Ajax and is now largely superseded by the Fetch API, though still used in legacy systems and for upload progress tracking.",
-  "dateCreated": "2026-05-24T18:00:04.147Z",
-  "dateModified": "2026-05-24T18:00:04.147Z",
+  "dateCreated": "2026-05-25T02:46:04.323Z",
+  "dateModified": "2026-05-25T02:46:04.323Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

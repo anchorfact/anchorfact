@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/model-merging-and-ensembling",
   "headline": "Model Merging, Mixture of Experts, and Efficient Ensembling",
   "description": "Model merging and mixture of experts challenge the \"one model to rule them all\" assumption. Merging combines strengths of multiple fine-tuned models; MoE activates specialized sub-networks per input — both maximizing capability per parameter.",
-  "dateCreated": "2026-05-24T18:00:03.417Z",
+  "dateCreated": "2026-05-25T02:46:03.755Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

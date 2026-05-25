@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00113",
   "headline": "Cross-Site Scripting (XSS)",
   "description": "XSS is an injection attack where malicious scripts are injected into trusted websites, executing in victims' browsers. Three types: Stored (persistent, in database), Reflected (in URL parameters), DOM-based (client-side JavaScript vulnerability). Prevention: output encoding, Content Security Policy (CSP), input validation.",
-  "dateCreated": "2026-05-24T18:00:03.774Z",
-  "dateModified": "2026-05-24T18:00:03.774Z",
+  "dateCreated": "2026-05-25T02:46:04.047Z",
+  "dateModified": "2026-05-25T02:46:04.047Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

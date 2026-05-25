@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00150",
   "headline": "Repository Pattern",
   "description": "The Repository pattern mediates between the domain and data mapping layers, acting like an in-memory collection of domain objects. It abstracts data access, enabling swapping data sources (database, API, in-memory) without changing business logic.",
-  "dateCreated": "2026-05-24T18:00:04.035Z",
-  "dateModified": "2026-05-24T18:00:04.035Z",
+  "dateCreated": "2026-05-25T02:46:04.240Z",
+  "dateModified": "2026-05-25T02:46:04.240Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00122",
   "headline": "VPN (Virtual Private Network)",
   "description": "A VPN creates an encrypted tunnel between a device and a network, protecting data in transit and masking the user's IP address. Protocols: IPsec (network layer, site-to-site), OpenVPN/WireGuard (application layer, client-to-server). WireGuard (2020, Linux kernel since 5.6) is faster and simpler than IPsec/OpenVPN.",
-  "dateCreated": "2026-05-24T18:00:04.126Z",
-  "dateModified": "2026-05-24T18:00:04.126Z",
+  "dateCreated": "2026-05-25T02:46:04.308Z",
+  "dateModified": "2026-05-25T02:46:04.308Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

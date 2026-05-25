@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00096",
   "headline": "Intersection Observer API",
   "description": "The Intersection Observer API asynchronously observes changes in the visibility of target elements relative to an ancestor viewport. It enables efficient lazy loading, infinite scroll, and visibility-based analytics without polling scroll events.",
-  "dateCreated": "2026-05-24T18:00:03.905Z",
-  "dateModified": "2026-05-24T18:00:03.905Z",
+  "dateCreated": "2026-05-25T02:46:04.147Z",
+  "dateModified": "2026-05-25T02:46:04.147Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

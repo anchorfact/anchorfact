@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00242",
   "headline": "ACID Transactions",
   "description": "ACID (Atomicity, Consistency, Isolation, Durability) are the four properties guaranteeing reliable database transactions. Atomicity: all-or-nothing — either all operations complete or none. Consistency: transaction brings database from one valid state to another. Isolation: concurrent transactions appear sequential. Durability: committed data survives crashes.",
-  "dateCreated": "2026-05-24T18:00:03.704Z",
-  "dateModified": "2026-05-24T18:00:03.704Z",
+  "dateCreated": "2026-05-25T02:46:03.987Z",
+  "dateModified": "2026-05-25T02:46:03.987Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

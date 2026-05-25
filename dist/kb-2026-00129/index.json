@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00129",
   "headline": "Binary Search Tree",
   "description": "A BST stores keys in left < parent < right order. Average O(log n) operations when balanced, degrade to O(n) if unbalanced. Self-balancing variants: AVL, Red-Black, B-tree. BST is foundation for sorted maps/sets.",
-  "dateCreated": "2026-05-24T18:00:03.724Z",
-  "dateModified": "2026-05-24T18:00:03.724Z",
+  "dateCreated": "2026-05-25T02:46:04.003Z",
+  "dateModified": "2026-05-25T02:46:04.003Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

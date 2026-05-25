@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00207",
   "headline": "Amazon FBA (Fulfillment by Amazon)",
   "description": "FBA allows sellers to store products in Amazon's fulfillment centers; Amazon handles picking, packing, shipping, customer service, and returns for those products. Sellers send inventory to Amazon → Amazon stores → Customer orders → Amazon ships. FBA products get Prime badge, increasing visibility and conversion.",
-  "dateCreated": "2026-05-24T18:00:03.644Z",
-  "dateModified": "2026-05-24T18:00:03.644Z",
+  "dateCreated": "2026-05-25T02:46:03.944Z",
+  "dateModified": "2026-05-25T02:46:03.944Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

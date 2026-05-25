@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-space-exploration",
   "headline": "AI for Space Exploration: Autonomous Navigation, Earth Observation, and Spacecraft Autonomy",
   "description": "AI enables space exploration beyond what humans can directly control -- from Mars rovers that drive themselves to satellites that process images in orbit to telescopes that autonomously detect interesting astronomical events. The fundamental constraint of space (communication delays, bandwidth limits, hostile environments) makes AI not just useful but essential for deep-space missions.",
-  "dateCreated": "2026-05-24T18:00:03.044Z",
+  "dateCreated": "2026-05-25T02:46:03.470Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

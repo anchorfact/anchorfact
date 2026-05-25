@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00172",
   "headline": "Responsive Web Design",
   "description": "Responsive Web Design (RWD) creates websites that adapt to any screen size using fluid grids, flexible images, and CSS media queries. Coined by Ethan Marcotte (2010), RWD is now the standard approach for web development.",
-  "dateCreated": "2026-05-24T18:00:04.039Z",
-  "dateModified": "2026-05-24T18:00:04.039Z",
+  "dateCreated": "2026-05-25T02:46:04.244Z",
+  "dateModified": "2026-05-25T02:46:04.244Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

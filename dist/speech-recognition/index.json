@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/speech-recognition",
   "headline": "Speech Recognition: From HMMs to Whisper",
   "description": "Speech recognition converts audio signals to text. Modern end-to-end approaches — CTC, RNN-Transducer, Attention-based Encoder-Decoder — have replaced traditional HMM-GMM pipelines, with Whisper achieving near-human performance.",
-  "dateCreated": "2026-05-24T18:00:03.513Z",
+  "dateCreated": "2026-05-25T02:46:03.825Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

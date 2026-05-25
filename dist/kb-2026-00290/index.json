@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00290",
   "headline": "Ruby on Rails",
   "description": "Rails (David Heinemeier Hansson, 2004) is a convention-over-configuration web framework in Ruby. It popularized MVC in web development, RESTful routing, database migrations, and scaffolding. Rails 7 (2021) introduced Hotwire (Turbo + Stimulus) for reactive UIs without heavy JavaScript.",
-  "dateCreated": "2026-05-24T18:00:04.046Z",
-  "dateModified": "2026-05-24T18:00:04.046Z",
+  "dateCreated": "2026-05-25T02:46:04.249Z",
+  "dateModified": "2026-05-25T02:46:04.249Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

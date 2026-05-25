@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-identity-verification",
   "headline": "AI Identity Verification: Document Authentication, Liveness Detection, and KYC Compliance",
   "description": "AI identity verification authenticates who you are online -- checking your ID document, matching your face to the photo, and verifying you are a real person (not a photo or deepfake). From banking to crypto to gig economy platforms, AI IDV enables secure digital onboarding in under 30 seconds across 200 countries.",
-  "dateCreated": "2026-05-24T18:00:03.076Z",
+  "dateCreated": "2026-05-25T02:46:03.496Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

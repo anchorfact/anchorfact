@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00184",
   "headline": "OSI Model",
   "description": "The OSI (Open Systems Interconnection) model describes 7 layers of network communication. While not literally implemented, it's the standard mental model for understanding networking. Layers: Physical, Data Link, Network, Transport, Session, Presentation, Application.",
-  "dateCreated": "2026-05-24T18:00:03.982Z",
-  "dateModified": "2026-05-24T18:00:03.982Z",
+  "dateCreated": "2026-05-25T02:46:04.201Z",
+  "dateModified": "2026-05-25T02:46:04.201Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00118",
   "headline": "DDoS Attack",
   "description": "A Distributed Denial-of-Service (DDoS) attack overwhelms a target with traffic from multiple sources, making it unavailable to legitimate users. Types: volumetric (saturate bandwidth), protocol (exploit TCP/SYN, DNS amplification), application-layer (HTTP flood, Slowloris). Defense: CDN scrubbing (Cloudflare, Akamai), rate limiting, anycast distribution.",
-  "dateCreated": "2026-05-24T18:00:03.794Z",
-  "dateModified": "2026-05-24T18:00:03.794Z",
+  "dateCreated": "2026-05-25T02:46:04.061Z",
+  "dateModified": "2026-05-25T02:46:04.061Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

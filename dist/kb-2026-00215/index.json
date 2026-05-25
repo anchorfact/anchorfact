@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00215",
   "headline": "A/B Testing",
   "description": "A/B testing (split testing) compares two variants to determine which performs better. Users are randomly assigned to version A (control) or B (treatment); results measured via a Key Performance Indicator (conversion rate, click-through rate, revenue). Statistical significance ensures results aren't due to random chance.",
-  "dateCreated": "2026-05-24T18:00:03.642Z",
-  "dateModified": "2026-05-24T18:00:03.642Z",
+  "dateCreated": "2026-05-25T02:46:03.942Z",
+  "dateModified": "2026-05-25T02:46:03.942Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

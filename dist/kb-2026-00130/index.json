@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00130",
   "headline": "Heap / Priority Queue",
   "description": "A heap is a complete binary tree with the heap property (parent ≤ children for min-heap). O(1) peek, O(log n) insert/extract. Array-based representation: children of i are 2i+1, 2i+2.",
-  "dateCreated": "2026-05-24T18:00:03.883Z",
-  "dateModified": "2026-05-24T18:00:03.883Z",
+  "dateCreated": "2026-05-25T02:46:04.131Z",
+  "dateModified": "2026-05-25T02:46:04.131Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

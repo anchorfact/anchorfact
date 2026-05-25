@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00095",
   "headline": "Same-Origin Policy",
   "description": "The Same-Origin Policy (SOP) is a critical web security mechanism restricting how documents and scripts from one origin interact with resources from another origin. Origin = protocol + host + port. SOP prevents malicious websites from reading sensitive data from other sites.",
-  "dateCreated": "2026-05-24T18:00:04.051Z",
-  "dateModified": "2026-05-24T18:00:04.051Z",
+  "dateCreated": "2026-05-25T02:46:04.252Z",
+  "dateModified": "2026-05-25T02:46:04.252Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00101",
   "headline": "Clipboard API",
   "description": "The Clipboard API (`navigator.clipboard`) provides asynchronous read/write access to the system clipboard from web pages. It replaces `document.execCommand('copy')` with a Promise-based, secure (requires Permissions API) approach supporting text, HTML, images (PNG/SVG), and custom formats.",
-  "dateCreated": "2026-05-24T18:00:03.754Z",
-  "dateModified": "2026-05-24T18:00:03.754Z",
+  "dateCreated": "2026-05-25T02:46:04.026Z",
+  "dateModified": "2026-05-25T02:46:04.026Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/data-science-fundamentals",
   "headline": "Data Science: Methods, Tools, and Best Practices",
   "description": "Data science combines statistics, computer science, and domain expertise to extract insights from data. The modern workflow — from data wrangling through machine learning to deployment — is supported by Python's ecosystem and cloud infrastructure.",
-  "dateCreated": "2026-05-24T18:00:04.496Z",
+  "dateCreated": "2026-05-25T02:46:04.586Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

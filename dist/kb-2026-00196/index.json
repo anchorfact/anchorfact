@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00196",
   "headline": "Automata Theory",
   "description": "Automata theory studies abstract machines and the problems they can solve. Finite automata (regular languages) → Pushdown automata (context-free) → Turing machines (computable). Powers: regular expressions, parsers, compilers, and the theoretical limits of computation.",
-  "dateCreated": "2026-05-24T18:00:03.722Z",
-  "dateModified": "2026-05-24T18:00:03.722Z",
+  "dateCreated": "2026-05-25T02:46:04.001Z",
+  "dateModified": "2026-05-25T02:46:04.001Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

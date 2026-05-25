@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/physics-informed-neural-networks",
   "headline": "Physics-Informed Neural Networks: Solving PDEs with Deep Learning and Neural Operators",
   "description": "Physics-Informed Neural Networks (PINNs) solve differential equations by embedding physical laws directly into neural network training — replacing expensive numerical simulations with neural surrogates that learn directly from PDE equations. From fluid dynamics to heat transfer, PINNs are merging scientific computing with deep learning.",
-  "dateCreated": "2026-05-24T18:00:03.458Z",
+  "dateCreated": "2026-05-25T02:46:03.786Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

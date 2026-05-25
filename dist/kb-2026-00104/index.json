@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00104",
   "headline": "Performance API",
   "description": "The Performance API (`performance.now()`, `performance.getEntries()`) provides high-resolution timing data (microsecond precision) for measuring web application performance. It includes the Navigation Timing, Resource Timing, and User Timing APIs.",
-  "dateCreated": "2026-05-24T18:00:03.995Z",
-  "dateModified": "2026-05-24T18:00:03.995Z",
+  "dateCreated": "2026-05-25T02:46:04.211Z",
+  "dateModified": "2026-05-25T02:46:04.211Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

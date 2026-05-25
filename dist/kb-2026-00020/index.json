@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00020",
   "headline": "Constitutional AI",
   "description": "Constitutional AI (CAI) is Anthropic's method for training AI systems to be helpful and harmless using explicit written principles — a \"constitution\" — rather than implicit human preferences. First published in December 2022 (arXiv:2212.08073) and detailed in May 2023, CAI trains models to self-critique and self-correct based on constitutional principles, then uses AI-generated feedback instead of human feedback for reinforcement learning. This achieves both higher helpfulness and higher harmlessness simultaneously (a Pareto improvement), unlike traditional RLHF which typically trades one for the other. Claude is the first model trained entirely with CAI.",
-  "dateCreated": "2026-05-24T18:00:03.258Z",
+  "dateCreated": "2026-05-25T02:46:03.615Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

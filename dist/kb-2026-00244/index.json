@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00244",
   "headline": "CAP Theorem",
   "description": "The CAP theorem (Eric Brewer, 2000; formally proven by Gilbert & Lynch, 2002) states: a distributed system can guarantee at most two of: Consistency (all nodes see same data), Availability (every request gets a response), Partition Tolerance (system works despite network partitions). Since partitions are inevitable, you must choose between C and A.",
-  "dateCreated": "2026-05-24T18:00:03.746Z",
-  "dateModified": "2026-05-24T18:00:03.746Z",
+  "dateCreated": "2026-05-25T02:46:04.018Z",
+  "dateModified": "2026-05-25T02:46:04.018Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/conversational-ai-systems",
   "headline": "Conversational AI: Task-Oriented Dialogue and Open-Domain Chatbots",
   "description": "Conversational AI spans from task-oriented bots that book flights to open-domain chatbots that discuss any topic. Modern LLMs have collapsed the traditional modular pipeline into end-to-end neural approaches, while frameworks like Rasa CALM bring enterprise-grade reliability.",
-  "dateCreated": "2026-05-24T18:00:03.264Z",
+  "dateCreated": "2026-05-25T02:46:03.620Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

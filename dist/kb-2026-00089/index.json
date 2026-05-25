@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00089",
   "headline": "WebRTC",
   "description": "WebRTC (Web Real-Time Communication) is a W3C standard enabling peer-to-peer audio, video, and data communication between browsers without plugins. It uses DTLS-SRTP for encryption and ICE/STUN/TURN for NAT traversal.",
-  "dateCreated": "2026-05-24T18:00:04.142Z",
-  "dateModified": "2026-05-24T18:00:04.142Z",
+  "dateCreated": "2026-05-25T02:46:04.319Z",
+  "dateModified": "2026-05-25T02:46:04.319Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

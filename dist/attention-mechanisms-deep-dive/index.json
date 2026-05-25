@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/attention-mechanisms-deep-dive",
   "headline": "Attention Mechanisms: Scaled Dot-Product to FlashAttention",
   "description": "Attention mechanisms enable neural networks to dynamically focus on relevant parts of input sequences. Since Vaswani et al. (2017), attention has become the dominant paradigm in NLP, vision, and multimodal AI.",
-  "dateCreated": "2026-05-24T18:00:03.221Z",
+  "dateCreated": "2026-05-25T02:46:03.584Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

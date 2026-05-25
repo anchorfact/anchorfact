@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/language-modeling-theory",
   "headline": "Language Modeling: From N-grams to Scaling Laws and Information-Theoretic Foundations",
   "description": "Language modeling -- the simple task of predicting what word comes next -- is the improbable foundation behind GPT-4 and all modern LLMs. From Claude Shannon's 1948 information theory to scaling laws governing billion-parameter models, the mathematics of prediction unites statistical approaches, neural networks, and the emergent intelligence of large-scale pretraining.",
-  "dateCreated": "2026-05-24T18:00:03.370Z",
+  "dateCreated": "2026-05-25T02:46:03.702Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

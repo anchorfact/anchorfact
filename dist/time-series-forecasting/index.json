@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/time-series-forecasting",
   "headline": "Time Series Forecasting with Machine Learning",
   "description": "Time series forecasting predicts future values from historical sequences. Traditional statistical methods (ARIMA, ETS) compete with deep learning approaches (LSTM, Transformer variants) depending on data volume and pattern complexity.",
-  "dateCreated": "2026-05-24T18:00:03.533Z",
+  "dateCreated": "2026-05-25T02:46:03.848Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

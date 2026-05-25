@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-land-use-classification",
   "headline": "AI for Land Use Classification: Satellite Image Segmentation, Urban Expansion Mapping, and Agricultural Monitoring",
   "description": "AI classifies every pixel of Earth -- mapping forests, cities, cropland, and water at 10m resolution, updated annually. From ESA's WorldCover global map to Google's near-real-time Dynamic World, deep learning on satellite imagery gives humanity an unprecedented view of how our planet is changing.",
-  "dateCreated": "2026-05-24T18:00:03.094Z",
+  "dateCreated": "2026-05-25T02:46:03.509Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

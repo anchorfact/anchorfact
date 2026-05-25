@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00087",
   "headline": "Web Workers",
   "description": "Web Workers enable JavaScript to run in background threads, parallelizing CPU-intensive tasks without blocking the main UI thread. They communicate with the main thread via message passing (`postMessage`), not shared memory (by default).",
-  "dateCreated": "2026-05-24T18:00:04.133Z",
-  "dateModified": "2026-05-24T18:00:04.133Z",
+  "dateCreated": "2026-05-25T02:46:04.313Z",
+  "dateModified": "2026-05-25T02:46:04.313Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

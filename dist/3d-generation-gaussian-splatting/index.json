@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/3d-generation-gaussian-splatting",
   "headline": "3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering",
   "description": "3D Gaussian Splatting (3DGS) has revolutionized 3D scene reconstruction, achieving real-time photorealistic novel view synthesis — 100x faster than NeRF — by representing scenes as millions of optimized anisotropic Gaussian primitives.",
-  "dateCreated": "2026-05-24T18:00:02.734Z",
+  "dateCreated": "2026-05-25T02:46:03.194Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

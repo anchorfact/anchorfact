@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00109",
   "headline": "Navigator API",
   "description": "The Navigator API (`window.navigator` / `navigator`) provides information about the browser and device. Key properties include `userAgent`, `language`, `onLine`, `platform`, `hardwareConcurrency`, and access to various sub-APIs (`geolocation`, `clipboard`, `mediaDevices`).",
-  "dateCreated": "2026-05-24T18:00:03.955Z",
-  "dateModified": "2026-05-24T18:00:03.955Z",
+  "dateCreated": "2026-05-25T02:46:04.182Z",
+  "dateModified": "2026-05-25T02:46:04.182Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

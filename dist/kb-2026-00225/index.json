@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00225",
   "headline": "Visual Novel Design",
   "description": "Visual novels are interactive fiction games with static/anime-style artwork, text-based narrative, and branching dialogue trees. Popular in Japan (dating sims, mystery) and growing globally. Key engines: Ren'Py (Python, open-source), TyranoBuilder, Unity + Fungus. Writing quality is the primary success factor.",
-  "dateCreated": "2026-05-24T18:00:04.284Z",
-  "dateModified": "2026-05-24T18:00:04.284Z",
+  "dateCreated": "2026-05-25T02:46:04.427Z",
+  "dateModified": "2026-05-25T02:46:04.427Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

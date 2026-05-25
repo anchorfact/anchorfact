@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00292",
   "headline": "FastAPI",
   "description": "FastAPI (Sebastian Ramirez, 2018) is a modern Python web framework for building APIs, emphasizing speed and automatic OpenAPI docs. Built on Starlette (web) and Pydantic (data validation). Async support native. Automatic interactive API docs (Swagger UI + ReDoc). One of the fastest-growing Python frameworks.",
-  "dateCreated": "2026-05-24T18:00:03.839Z",
-  "dateModified": "2026-05-24T18:00:03.839Z",
+  "dateCreated": "2026-05-25T02:46:04.096Z",
+  "dateModified": "2026-05-25T02:46:04.096Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

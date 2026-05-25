@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00287",
   "headline": "Express.js",
   "description": "Express.js is a minimal, unopinionated web framework for Node.js, created by TJ Holowaychuk (2010). It provides routing, middleware, request/response handling, and template engines. Express is the most popular Node.js framework and the foundation of MERN/MEAN stacks.",
-  "dateCreated": "2026-05-24T18:00:03.834Z",
-  "dateModified": "2026-05-24T18:00:03.834Z",
+  "dateCreated": "2026-05-25T02:46:04.093Z",
+  "dateModified": "2026-05-25T02:46:04.093Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-quantum-computing",
   "headline": "AI for Quantum Computing: Quantum Error Correction, Circuit Optimization, and Algorithm Discovery",
   "description": "AI and quantum computing form a symbiosis: AI optimizes quantum circuits and corrects qubit errors, while quantum computers may eventually accelerate certain ML computations. DeepMind's AlphaQubit uses RL for quantum error correction -- a critical capability for building fault-tolerant quantum computers.",
-  "dateCreated": "2026-05-24T18:00:03.125Z",
+  "dateCreated": "2026-05-25T02:46:03.532Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

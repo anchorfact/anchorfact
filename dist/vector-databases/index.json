@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/vector-databases",
   "headline": "Vector Databases: Approximate Nearest Neighbor Search, Embedding Storage, and Retrieval at Scale",
   "description": "Vector databases are the storage engine powering modern AI — from RAG (Retrieval-Augmented Generation) to semantic search to recommendation. They store embeddings (numerical representations of text, images, audio) and perform approximate nearest neighbor (ANN) search to find the most similar items in milliseconds across billions of vectors.",
-  "dateCreated": "2026-05-24T18:00:03.543Z",
+  "dateCreated": "2026-05-25T02:46:03.858Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

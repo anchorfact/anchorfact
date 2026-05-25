@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/text-to-speech",
   "headline": "Text-to-Speech and Voice Synthesis",
   "description": "Modern TTS produces speech indistinguishable from human recordings, with voice cloning from one-minute samples and emotional expressiveness that captures laughter, whispers, and nuanced prosody.",
-  "dateCreated": "2026-05-24T18:00:03.529Z",
+  "dateCreated": "2026-05-25T02:46:03.843Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

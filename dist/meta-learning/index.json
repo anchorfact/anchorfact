@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/meta-learning",
   "headline": "Meta-Learning: Learning to Learn with MAML and Reptile",
   "description": "Meta-learning trains models to learn efficiently. Given a distribution of tasks, the meta-learner acquires knowledge that accelerates learning on new tasks — the model \"learns how to learn.\" MAML finds optimal initializations; Reptile simplifies the process.",
-  "dateCreated": "2026-05-24T18:00:03.405Z",
+  "dateCreated": "2026-05-25T02:46:03.744Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

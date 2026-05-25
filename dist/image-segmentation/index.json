@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/image-segmentation",
   "headline": "Image Segmentation: From U-Net to SAM",
   "description": "Image segmentation partitions images into meaningful regions — semantic (class per pixel), instance (object per pixel), or panoptic (both). U-Net dominates medical imaging; SAM enables general-purpose interactive segmentation.",
-  "dateCreated": "2026-05-24T18:00:03.352Z",
+  "dateCreated": "2026-05-25T02:46:03.680Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/distributed-training-systems",
   "headline": "Distributed Training: FSDP, DeepSpeed, and Scaling Laws",
   "description": "Training frontier AI models requires thousands of GPUs working in parallel. FSDP and DeepSpeed ZeRO are the dominant strategies for memory-efficient distributed training, enabling models with hundreds of billions of parameters.",
-  "dateCreated": "2026-05-24T18:00:03.285Z",
+  "dateCreated": "2026-05-25T02:46:03.634Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

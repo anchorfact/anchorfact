@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/loss-functions",
   "headline": "Loss Functions in Machine Learning",
   "description": "Loss functions quantify the difference between model predictions and ground truth, guiding optimization. Cross-entropy dominates classification; MSE dominates regression; specialized losses handle imbalanced, structured, or adversarial tasks.",
-  "dateCreated": "2026-05-24T18:00:03.391Z",
+  "dateCreated": "2026-05-25T02:46:03.722Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

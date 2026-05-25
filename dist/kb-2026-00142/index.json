@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00142",
   "headline": "Factory Method Pattern",
   "description": "Defines an interface for creating objects, letting subclasses decide which class to instantiate. Defers instantiation to subclasses.",
-  "dateCreated": "2026-05-24T18:00:03.837Z",
-  "dateModified": "2026-05-24T18:00:03.837Z",
+  "dateCreated": "2026-05-25T02:46:04.095Z",
+  "dateModified": "2026-05-25T02:46:04.095Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

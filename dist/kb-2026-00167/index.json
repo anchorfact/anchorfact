@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00167",
   "headline": "CSS Grid",
   "description": "CSS Grid provides two-dimensional layout (rows AND columns). `display: grid` enables grid context. `grid-template-columns/rows` define tracks. `fr` unit distributes remaining space. Grid excels at page-level layouts, dashboards, and any design needing both row and column control.",
-  "dateCreated": "2026-05-24T18:00:03.778Z",
-  "dateModified": "2026-05-24T18:00:03.778Z",
+  "dateCreated": "2026-05-25T02:46:04.049Z",
+  "dateModified": "2026-05-25T02:46:04.049Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

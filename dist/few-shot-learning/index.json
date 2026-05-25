@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/few-shot-learning",
   "headline": "Few-Shot Learning: Prototypical Networks, MAML, and In-Context Adaptation",
   "description": "Few-shot learning teaches AI to recognize new concepts from just a handful of examples -- the way humans learn (see one panda, recognize all pandas). From Prototypical Networks to MAML to in-context learning in foundation models, the ability to generalize from few examples is transforming AI from narrow specialists to flexible generalists.",
-  "dateCreated": "2026-05-24T18:00:03.304Z",
+  "dateCreated": "2026-05-25T02:46:03.650Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

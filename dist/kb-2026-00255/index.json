@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00255",
   "headline": "Vector Databases",
   "description": "Vector databases store and query high-dimensional vector embeddings for similarity search, powering AI applications (semantic search, RAG, recommendation). Instead of exact match, they find nearest neighbors using Approximate Nearest Neighbor (ANN) algorithms. Key players: Pinecone, Weaviate, Qdrant, Milvus, pgvector (PostgreSQL extension).",
-  "dateCreated": "2026-05-24T18:00:04.122Z",
-  "dateModified": "2026-05-24T18:00:04.122Z",
+  "dateCreated": "2026-05-25T02:46:04.305Z",
+  "dateModified": "2026-05-25T02:46:04.305Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

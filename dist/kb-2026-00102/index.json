@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00102",
   "headline": "Notifications API",
   "description": "The Notifications API allows web pages to display system-level desktop notifications, even when the page is in the background. Permission must be granted by the user via `Notification.requestPermission()`.",
-  "dateCreated": "2026-05-24T18:00:03.966Z",
-  "dateModified": "2026-05-24T18:00:03.966Z",
+  "dateCreated": "2026-05-25T02:46:04.189Z",
+  "dateModified": "2026-05-25T02:46:04.189Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

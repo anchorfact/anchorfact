@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/autonomous-driving-ai",
   "headline": "End-to-End Autonomous Driving: Tesla FSD, Waymo, and Imitation Learning",
   "description": "Autonomous driving is shifting from modular pipelines to end-to-end neural approaches. Tesla FSD V12 replaced 300K+ lines of hand-written code with a neural network; Waymo EMMA unifies perception and planning via multimodal models.",
-  "dateCreated": "2026-05-24T18:00:03.230Z",
+  "dateCreated": "2026-05-25T02:46:03.591Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

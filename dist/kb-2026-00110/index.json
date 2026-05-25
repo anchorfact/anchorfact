@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00110",
   "headline": "Device Orientation API",
   "description": "The Device Orientation API provides accelerometer, gyroscope, and magnetometer data from mobile devices via DOM events: `deviceorientation` (rotation around 3 axes) and `devicemotion` (acceleration including gravity).",
-  "dateCreated": "2026-05-24T18:00:03.801Z",
-  "dateModified": "2026-05-24T18:00:03.801Z",
+  "dateCreated": "2026-05-25T02:46:04.067Z",
+  "dateModified": "2026-05-25T02:46:04.067Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

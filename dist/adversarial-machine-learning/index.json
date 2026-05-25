@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/adversarial-machine-learning",
   "headline": "Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering",
   "description": "Adversarial Machine Learning studies how AI systems can be fooled — and defended. Tiny perturbations invisible to humans can cause state-of-the-art models to misclassify with high confidence. Building robust AI requires understanding the attack surface and engineering defenses.",
-  "dateCreated": "2026-05-24T18:00:02.760Z",
+  "dateCreated": "2026-05-25T02:46:03.217Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

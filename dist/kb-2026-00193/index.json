@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00193",
   "headline": "Linear Algebra",
   "description": "Linear algebra is the mathematics of vectors and matrices, fundamental to computer graphics, machine learning (neural networks), physics simulation, and data science. Core concepts: vectors, matrices, linear transformations, determinants, eigenvalues/eigenvectors, linear systems.",
-  "dateCreated": "2026-05-24T18:00:03.927Z",
-  "dateModified": "2026-05-24T18:00:03.927Z",
+  "dateCreated": "2026-05-25T02:46:04.163Z",
+  "dateModified": "2026-05-25T02:46:04.163Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

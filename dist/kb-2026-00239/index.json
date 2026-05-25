@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00239",
   "headline": "SOLID Principles",
   "description": "SOLID (Robert C. Martin, 2000s) is five principles for object-oriented design: S (Single Responsibility), O (Open/Closed), L (Liskov Substitution), I (Interface Segregation), D (Dependency Inversion). SOLID makes code more maintainable, testable, and flexible.",
-  "dateCreated": "2026-05-24T18:00:04.076Z",
-  "dateModified": "2026-05-24T18:00:04.076Z",
+  "dateCreated": "2026-05-25T02:46:04.272Z",
+  "dateModified": "2026-05-25T02:46:04.272Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00169",
   "headline": "ARIA (Accessible Rich Internet Applications)",
   "description": "ARIA provides attributes that enhance HTML accessibility for assistive technologies (screen readers). It defines roles (`role='button'`), states (`aria-expanded`), and properties (`aria-label`). The first rule of ARIA: don't use ARIA if native HTML already provides the semantics.",
-  "dateCreated": "2026-05-24T18:00:03.717Z",
-  "dateModified": "2026-05-24T18:00:03.717Z",
+  "dateCreated": "2026-05-25T02:46:03.997Z",
+  "dateModified": "2026-05-25T02:46:03.997Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

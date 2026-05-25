@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-drug-discovery",
   "headline": "AI for Drug Discovery: AlphaFold, Molecular Generation, and Generative Chemistry",
   "description": "AI is transforming drug discovery — AlphaFold3 (2024) predicts biomolecular complex structures with atomic accuracy, while generative chemistry creates novel drug candidates de novo. The convergence of structural biology AI, molecular dynamics simulations, and generative models is compressing the 10-15 year drug development timeline toward faster, cheaper, and more targeted therapeutics.",
-  "dateCreated": "2026-05-24T18:00:02.951Z",
+  "dateCreated": "2026-05-25T02:46:03.397Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

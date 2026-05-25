@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00195",
   "headline": "Information Theory",
   "description": "Information theory (Claude Shannon, 1948) quantifies information, establishing the theoretical limits of data compression and reliable communication. Entropy H = -Σ p(x) log p(x) measures uncertainty. Mutual information measures shared information between variables.",
-  "dateCreated": "2026-05-24T18:00:03.901Z",
-  "dateModified": "2026-05-24T18:00:03.901Z",
+  "dateCreated": "2026-05-25T02:46:04.144Z",
+  "dateModified": "2026-05-25T02:46:04.144Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

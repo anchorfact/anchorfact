@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/text-summarization",
   "headline": "Text Summarization: From Extractive Methods to Abstractive LLM-Based Summarization",
   "description": "Text summarization condenses documents into concise summaries while preserving key information. The field has evolved from simple sentence extraction to LLM-powered abstractive generation that rewrites content in its own words. The hard problems remain: summarizing book-length documents, ensuring factual accuracy, and adapting summaries to user needs.",
-  "dateCreated": "2026-05-24T18:00:03.526Z",
+  "dateCreated": "2026-05-25T02:46:03.840Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

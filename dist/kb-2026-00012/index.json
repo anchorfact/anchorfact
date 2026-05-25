@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00012",
   "headline": "Python Programming Language",
   "description": "Python is a high-level, interpreted programming language created by Guido van Rossum and first released in 1991. It emphasizes code readability through significant whitespace and a clean syntax. As of 2026, Python is the most popular programming language according to the TIOBE Index, used by over 15 million developers worldwide for web development, data science, AI/ML, automation, and scientific computing.",
-  "dateCreated": "2026-05-24T18:00:04.014Z",
-  "dateModified": "2026-05-24T18:00:04.014Z",
+  "dateCreated": "2026-05-25T02:46:04.224Z",
+  "dateModified": "2026-05-25T02:46:04.224Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

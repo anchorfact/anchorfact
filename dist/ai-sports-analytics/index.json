@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-sports-analytics",
   "headline": "AI for Sports Analytics: Player Tracking, Performance Prediction, and Tactical Analysis",
   "description": "AI is transforming sports -- tracking every player and the ball at 25Hz across all NBA arenas, predicting injury risk from movement patterns, and using reinforcement learning to optimize tactics. From expected goals (xG) in soccer to Statcast in baseball, AI-generated metrics are changing how games are played, coached, and analyzed.",
-  "dateCreated": "2026-05-24T18:00:03.173Z",
+  "dateCreated": "2026-05-25T02:46:03.551Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

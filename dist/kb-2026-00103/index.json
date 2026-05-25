@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00103",
   "headline": "Geolocation API",
   "description": "The Geolocation API (`navigator.geolocation`) provides device location (latitude, longitude, altitude, accuracy) to web applications with user consent. It uses GPS, WiFi, cell tower triangulation, or IP-based location depending on available hardware.",
-  "dateCreated": "2026-05-24T18:00:03.852Z",
-  "dateModified": "2026-05-24T18:00:03.852Z",
+  "dateCreated": "2026-05-25T02:46:04.107Z",
+  "dateModified": "2026-05-25T02:46:04.107Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

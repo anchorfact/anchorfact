@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00148",
   "headline": "Model-View-Controller (MVC)",
   "description": "MVC separates application into three components: Model (data/business logic), View (presentation/UI), Controller (handles input, updates model). Originally from Smalltalk-80, MVC is the most influential architectural pattern in UI development.",
-  "dateCreated": "2026-05-24T18:00:03.946Z",
-  "dateModified": "2026-05-24T18:00:03.946Z",
+  "dateCreated": "2026-05-25T02:46:04.175Z",
+  "dateModified": "2026-05-25T02:46:04.175Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

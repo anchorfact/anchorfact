@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00263",
   "headline": "systemd Timers",
   "description": "systemd timers are the modern replacement for cron, providing calendar and monotonic event scheduling with better logging, randomization, and dependency management. Timer unit triggers a matching service unit. `systemctl list-timers` shows all active timers.",
-  "dateCreated": "2026-05-24T18:00:04.095Z",
-  "dateModified": "2026-05-24T18:00:04.095Z",
+  "dateCreated": "2026-05-25T02:46:04.285Z",
+  "dateModified": "2026-05-25T02:46:04.285Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

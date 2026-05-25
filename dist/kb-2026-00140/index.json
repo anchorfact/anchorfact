@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00140",
   "headline": "String Matching Algorithms",
   "description": "String matching finds occurrences of a pattern in text. Naive: O(nm). KMP (Knuth-Morris-Pratt): O(n+m) using prefix function. Boyer-Moore: O(n/m) average, O(nm) worst. Rabin-Karp: O(n+m) average using rolling hash. Real-world text search uses hybrid algorithms.",
-  "dateCreated": "2026-05-24T18:00:04.089Z",
-  "dateModified": "2026-05-24T18:00:04.089Z",
+  "dateCreated": "2026-05-25T02:46:04.281Z",
+  "dateModified": "2026-05-25T02:46:04.281Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

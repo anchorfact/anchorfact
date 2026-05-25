@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00159",
   "headline": "API Gateway",
   "description": "An API Gateway is a single entry point for all client requests to a microservices architecture. It handles cross-cutting concerns: authentication, rate limiting, request routing, protocol translation, caching, logging, and API composition.",
-  "dateCreated": "2026-05-24T18:00:03.715Z",
-  "dateModified": "2026-05-24T18:00:03.715Z",
+  "dateCreated": "2026-05-25T02:46:03.996Z",
+  "dateModified": "2026-05-25T02:46:03.996Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

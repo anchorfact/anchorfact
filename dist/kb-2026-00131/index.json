@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00131",
   "headline": "Graph & BFS/DFS",
   "description": "A graph G=(V,E) models networks. BFS (queue) finds shortest paths in unweighted graphs. DFS (stack/recursion) detects cycles, performs topological sort on DAGs. Both are O(V+E).",
-  "dateCreated": "2026-05-24T18:00:03.865Z",
-  "dateModified": "2026-05-24T18:00:03.865Z",
+  "dateCreated": "2026-05-25T02:46:04.117Z",
+  "dateModified": "2026-05-25T02:46:04.117Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

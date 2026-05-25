@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/robot-manipulation",
   "headline": "Robot Manipulation: Dexterous Grasping, Sim-to-Real Transfer, and Tactile Sensing",
   "description": "Robot manipulation — the ability to grasp, lift, and manipulate objects — remains one of AI's hardest physical challenges. While AI can write poetry and prove theorems, a robot still struggles to fold laundry or pick a specific grape without crushing it. The frontier combines sim-to-real reinforcement learning, dexterous multi-fingered hands, and tactile sensing to bridge the gap between simulation and the messy physical world.",
-  "dateCreated": "2026-05-24T18:00:03.495Z",
+  "dateCreated": "2026-05-25T02:46:03.812Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

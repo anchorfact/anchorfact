@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/causal-representation-learning",
   "headline": "Causal Representation Learning: Deep Causal Discovery, Intervention, and Counterfactuals",
   "description": "Causal Representation Learning bridges deep learning with causality — moving beyond correlational patterns to learn representations that encode cause-effect relationships. Unlike standard deep learning which captures statistical associations, causal representations enable robust generalization, intervention reasoning, and counterfactual \"what-if\" predictions.",
-  "dateCreated": "2026-05-24T18:00:03.248Z",
+  "dateCreated": "2026-05-25T02:46:03.607Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

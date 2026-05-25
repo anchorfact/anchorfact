@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/semantic-web-ontology",
   "headline": "Semantic Web and Ontologies: Knowledge Representation, OWL Reasoning, and Linked Data",
   "description": "The Semantic Web vision -- machines understanding the meaning of data through formal ontologies and linked data -- quietly powers the structured knowledge behind modern AI. Wikidata's 110 million items, Google's Knowledge Graph, and domain ontologies like Gene Ontology provide the structured factual backbone that complements statistical patterns learned by LLMs.",
-  "dateCreated": "2026-05-24T18:00:03.507Z",
+  "dateCreated": "2026-05-25T02:46:03.820Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00065",
   "headline": "Linux",
   "description": "Linux is an open-source, Unix-like operating system kernel created by Linus Torvalds in 1991. Combined with GNU utilities, it forms the GNU/Linux operating system that powers 100% of the TOP500 supercomputers, 96.3% of the top 1 million web servers, all Android devices (3+ billion), and the majority of cloud infrastructure (AWS, GCP, Azure). Linux is licensed under GPLv2 and maintained by thousands of contributors worldwide, with Linus Torvalds remaining the principal maintainer as of 2026.",
-  "dateCreated": "2026-05-24T18:00:03.936Z",
-  "dateModified": "2026-05-24T18:00:03.936Z",
+  "dateCreated": "2026-05-25T02:46:04.169Z",
+  "dateModified": "2026-05-25T02:46:04.169Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

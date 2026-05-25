@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00248",
   "headline": "Elasticsearch",
   "description": "Elasticsearch is a distributed, RESTful search and analytics engine built on Apache Lucene. Released in 2010, it is the 'E' in the ELK Stack (Elasticsearch, Logstash, Kibana). Near real-time search, full-text querying, aggregations, and geospatial queries across massive datasets.",
-  "dateCreated": "2026-05-24T18:00:03.821Z",
-  "dateModified": "2026-05-24T18:00:03.821Z",
+  "dateCreated": "2026-05-25T02:46:04.083Z",
+  "dateModified": "2026-05-25T02:46:04.083Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00132",
   "headline": "Dijkstra's Algorithm",
   "description": "Dijkstra (1956) finds shortest paths from a source vertex to all others in graphs with non-negative weights. O((V+E) log V) with binary heap. Does not work with negative weights — use Bellman-Ford.",
-  "dateCreated": "2026-05-24T18:00:03.803Z",
-  "dateModified": "2026-05-24T18:00:03.803Z",
+  "dateCreated": "2026-05-25T02:46:04.068Z",
+  "dateModified": "2026-05-25T02:46:04.068Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

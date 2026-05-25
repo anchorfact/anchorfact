@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/scene-text-recognition",
   "headline": "Scene Text Recognition: Transformer-Based OCR and End-to-End Text Spotting",
   "description": "Scene text recognition reads text in the wild -- street signs, storefronts, license plates, and handwritten notes captured by smartphone cameras. Transformer-based architectures have transformed OCR from fragile multi-stage pipelines to robust end-to-end models that handle curved text, diverse fonts, and challenging lighting conditions.",
-  "dateCreated": "2026-05-24T18:00:03.498Z",
+  "dateCreated": "2026-05-25T02:46:03.815Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/speaker-recognition",
   "headline": "Speaker Recognition: Voice Biometrics, Diarization, and Deep Learning for Speaker Verification",
   "description": "Speaker recognition identifies who is speaking from their voice -- like a fingerprint for audio. From biometric authentication (\"Is this really the account owner?\") to meeting transcription (\"Who said what?\"), deep learning has transformed speaker verification and diarization from niche DSP problems to commercially deployed AI systems with near-human accuracy.",
-  "dateCreated": "2026-05-24T18:00:03.510Z",
+  "dateCreated": "2026-05-25T02:46:03.823Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

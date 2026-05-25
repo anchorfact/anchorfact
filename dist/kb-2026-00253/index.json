@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00253",
   "headline": "Event Sourcing",
   "description": "Event Sourcing stores state changes as a sequence of immutable events, rather than storing current state directly. The current state is derived by replaying events. Events are the source of truth — like a bank ledger (transactions), not just the current balance. Benefits: complete audit trail, temporal queries, easy debugging.",
-  "dateCreated": "2026-05-24T18:00:03.832Z",
-  "dateModified": "2026-05-24T18:00:03.833Z",
+  "dateCreated": "2026-05-25T02:46:04.092Z",
+  "dateModified": "2026-05-25T02:46:04.092Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

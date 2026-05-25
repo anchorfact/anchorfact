@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/vaccine-development",
   "headline": "Vaccine Development and Immunology",
   "description": "Vaccines train the immune system to recognize pathogens without causing disease. Modern platforms — mRNA, viral vector, protein subunit — enable rapid development, as demonstrated by COVID-19 vaccines reaching deployment in under 12 months.",
-  "dateCreated": "2026-05-24T18:00:04.373Z",
-  "dateModified": "2026-05-24T18:00:04.373Z",
+  "dateCreated": "2026-05-25T02:46:04.496Z",
+  "dateModified": "2026-05-25T02:46:04.496Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00223",
   "headline": "Roguelike Game Design",
   "description": "Roguelike games feature procedural generation, permadeath (no reloading saves), turn-based gameplay, and high difficulty. Named after the 1980 game Rogue. Roguelites (modern variants) relax permadeath by allowing meta-progression (permanent upgrades between runs). Examples: Hades, Dead Cells, Slay the Spire, The Binding of Isaac.",
-  "dateCreated": "2026-05-24T18:00:04.254Z",
-  "dateModified": "2026-05-24T18:00:04.254Z",
+  "dateCreated": "2026-05-25T02:46:04.404Z",
+  "dateModified": "2026-05-25T02:46:04.404Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

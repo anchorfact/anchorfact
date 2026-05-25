@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/synthetic-data-training",
   "headline": "Synthetic Data in AI Training",
   "description": "Synthetic data — generating training examples from other AI models — has emerged as both a powerful scaling technique and a fundamental risk. Models like Phi-4 achieve state-of-the-art results primarily from synthetic data, while model collapse threatens recursive use.",
-  "dateCreated": "2026-05-24T18:00:03.520Z",
+  "dateCreated": "2026-05-25T02:46:03.832Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/object-detection",
   "headline": "Object Detection: YOLO, R-CNN, and DETR",
   "description": "Object detection identifies and localizes objects within images. Two-stage detectors (R-CNN family) prioritize accuracy; single-stage detectors (YOLO, SSD) prioritize speed; transformer-based detectors (DETR) simplify the pipeline.",
-  "dateCreated": "2026-05-24T18:00:03.449Z",
+  "dateCreated": "2026-05-25T02:46:03.776Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

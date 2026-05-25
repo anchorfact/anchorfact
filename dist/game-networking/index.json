@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/game-networking",
   "headline": "Game Networking Architecture",
   "description": "Multiplayer game networking delivers responsive real-time interaction over unreliable networks. The core challenges are latency compensation, state synchronization, and cheat prevention — solved through authoritative servers and client-side prediction.",
-  "dateCreated": "2026-05-24T18:00:04.210Z",
-  "dateModified": "2026-05-24T18:00:04.210Z",
+  "dateCreated": "2026-05-25T02:46:04.371Z",
+  "dateModified": "2026-05-25T02:46:04.371Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

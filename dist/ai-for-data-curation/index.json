@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-data-curation",
   "headline": "AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training",
   "description": "Data curation is the unglamorous workhorse behind every great LLM -- transforming petabytes of noisy web crawl data into clean, deduplicated, high-quality training corpora. The quality of training data matters more than model architecture for downstream performance, and AI-assisted curation pipelines are the key differentiator between frontier and mediocre models.",
-  "dateCreated": "2026-05-24T18:00:02.944Z",
+  "dateCreated": "2026-05-25T02:46:03.391Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

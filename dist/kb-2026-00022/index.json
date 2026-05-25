@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00022",
   "headline": "TypeScript",
   "description": "TypeScript is a strongly-typed superset of JavaScript developed by Microsoft, first released in October 2012 by Anders Hejlsberg (creator of C# and Turbo Pascal). It adds optional static type checking to JavaScript while compiling to plain JavaScript. TypeScript was the 4th most popular programming language in the 2024 Stack Overflow Developer Survey and is used by over 80% of professional web developers. Its type system enables IDE autocompletion, refactoring, and early error detection — making large-scale JavaScript codebases maintainable.",
-  "dateCreated": "2026-05-24T18:00:04.118Z",
-  "dateModified": "2026-05-24T18:00:04.119Z",
+  "dateCreated": "2026-05-25T02:46:04.302Z",
+  "dateModified": "2026-05-25T02:46:04.302Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

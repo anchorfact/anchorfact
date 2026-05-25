@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00091",
   "headline": "WebGL",
   "description": "WebGL is a JavaScript API for rendering 2D and 3D graphics in browsers, based on OpenGL ES. WebGL 2.0 (2017) supports GLSL ES 3.00 shaders, multiple render targets, and integer-based texture formats. WebGPU (2023+) is its successor.",
-  "dateCreated": "2026-05-24T18:00:04.136Z",
-  "dateModified": "2026-05-24T18:00:04.136Z",
+  "dateCreated": "2026-05-25T02:46:04.315Z",
+  "dateModified": "2026-05-25T02:46:04.315Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

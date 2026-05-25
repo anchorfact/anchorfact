@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-digital-forensics",
   "headline": "AI for Digital Forensics: Deepfake Provenance, Evidence Authentication, and Digital Crime Investigation",
   "description": "AI-powered digital forensics detects manipulated media -- from deepfakes to doctored images. The forensic AI arms race pits generation against detection, with cryptographic provenance (C2PA) providing a proactive solution: cameras sign images at capture, creating verifiable chains of custody from sensor to screen.",
-  "dateCreated": "2026-05-24T18:00:02.862Z",
+  "dateCreated": "2026-05-25T02:46:03.321Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

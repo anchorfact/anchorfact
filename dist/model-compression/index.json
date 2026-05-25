@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/model-compression",
   "headline": "Model Compression: Pruning, Quantization, and Distillation",
   "description": "Model compression reduces inference cost for deployment on resource-constrained devices. The three pillars — pruning, quantization, and distillation — can be combined for 10x+ compression with minimal accuracy loss.",
-  "dateCreated": "2026-05-24T18:00:03.411Z",
+  "dateCreated": "2026-05-25T02:46:03.750Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

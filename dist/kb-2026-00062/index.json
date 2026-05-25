@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00062",
   "headline": "LoRA (Low-Rank Adaptation)",
   "description": "LoRA (Low-Rank Adaptation) is a parameter-efficient fine-tuning method for large language models, introduced by Hu et al. from Microsoft in 2021 (arXiv:2106.09685, 19,123 citations as of May 2026). Instead of updating all model parameters during fine-tuning, LoRA injects small, trainable low-rank matrices into the model's weight layers, reducing trainable parameters by up to 10,000x while maintaining near full-fine-tuning performance. The method has become the dominant fine-tuning approach in the open-source LLM community, with 13,547 GitHub stars.",
-  "dateCreated": "2026-05-24T18:00:03.389Z",
+  "dateCreated": "2026-05-25T02:46:03.719Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

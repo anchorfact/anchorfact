@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/bayesian-deep-learning",
   "headline": "Bayesian Deep Learning: Uncertainty Quantification and Robust Predictions",
   "description": "Bayesian Deep Learning equips neural networks with uncertainty estimates — knowing when the model is likely to be wrong. From Monte Carlo Dropout to Deep Ensembles and modern Bayesian approximations, UQ is critical for safety-critical AI (medical, autonomous driving, finance).",
-  "dateCreated": "2026-05-24T18:00:03.236Z",
+  "dateCreated": "2026-05-25T02:46:03.597Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

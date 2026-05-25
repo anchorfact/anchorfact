@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00315",
   "headline": "Terraform State",
   "description": "Terraform state (`terraform.tfstate`) is a JSON file mapping real-world resources to Terraform configuration. It is the source of truth for Terraform's understanding of infrastructure. Remote state (S3 + DynamoDB locking) is essential for team collaboration.",
-  "dateCreated": "2026-05-24T18:00:04.106Z",
-  "dateModified": "2026-05-24T18:00:04.106Z",
+  "dateCreated": "2026-05-25T02:46:04.293Z",
+  "dateModified": "2026-05-25T02:46:04.293Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

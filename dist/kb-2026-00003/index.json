@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00003",
   "headline": "BERT (Bidirectional Encoder Representations from Transformers)",
   "description": "BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained language model introduced by Google AI Language in October 2018 (arXiv) and published at NAACL 2019. Its key innovation is **bidirectional context**: unlike previous models (ELMo concatenated independent left-to-right and right-to-left passes; GPT used only left-to-right), BERT reads text in both directions simultaneously through a Masked Language Modeling objective. At launch, BERT achieved state-of-the-art results on 11 NLP benchmarks, including GLUE (80.5 → 82.1), SQuAD v1.1 (93.2 F1), and MultiNLI (86.7). BERT established the \"pre-train then fine-tune\" paradigm that dominated NLP until the rise of generative models. As of May 2026, it has been cited over 100,000 times.",
-  "dateCreated": "2026-05-24T18:00:03.238Z",
-  "dateModified": "2026-05-24T18:00:03.238Z",
+  "dateCreated": "2026-05-25T02:46:03.598Z",
+  "dateModified": "2026-05-25T02:46:03.598Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

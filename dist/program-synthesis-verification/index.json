@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/program-synthesis-verification",
   "headline": "Program Synthesis and Formal Verification: Neural Theorem Proving with LLMs",
   "description": "Program synthesis generates code from specifications; formal verification proves code correctness mathematically. The convergence of LLMs with formal methods — neural theorem proving — promises AI that writes and verifies its own code, making software more reliable than ever before.",
-  "dateCreated": "2026-05-24T18:00:03.463Z",
+  "dateCreated": "2026-05-25T02:46:03.791Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

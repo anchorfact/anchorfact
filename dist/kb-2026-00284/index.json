@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00284",
   "headline": "Attention vs. Self-Attention",
   "description": "Attention (Bahdanau 2014) computes relevance between encoder and decoder states — cross-attention. Self-Attention (Vaswani 2017) computes relevance within a single sequence — each position attends to all other positions. Self-attention enables the Transformer to capture long-range dependencies without recurrence.",
-  "dateCreated": "2026-05-24T18:00:03.223Z",
+  "dateCreated": "2026-05-25T02:46:03.586Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-predictive-policing",
   "headline": "AI for Predictive Policing: Crime Forecasting, Resource Allocation, and Bias Mitigation",
   "description": "AI predictive policing forecasts where crimes might occur -- but has become one of AI's most controversial applications. The feedback loop problem (AI sends police to areas -> arrests increase -> AI predicts more crime there) and racial bias concerns have led many cities to abandon predictive policing. The emerging approach: AI as decision support, not decision replacement.",
-  "dateCreated": "2026-05-24T18:00:03.117Z",
+  "dateCreated": "2026-05-25T02:46:03.527Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

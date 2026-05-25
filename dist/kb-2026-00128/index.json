@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00128",
   "headline": "Hash Table",
   "description": "A hash table maps keys to values with average O(1) operations. Powers JavaScript Objects, Python dicts, database indexes. Collision resolution: chaining (linked lists) or open addressing (probing). Rehashing triggers at ~75% load factor.",
-  "dateCreated": "2026-05-24T18:00:03.877Z",
-  "dateModified": "2026-05-24T18:00:03.877Z",
+  "dateCreated": "2026-05-25T02:46:04.126Z",
+  "dateModified": "2026-05-25T02:46:04.126Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

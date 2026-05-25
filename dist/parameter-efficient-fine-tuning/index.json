@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/parameter-efficient-fine-tuning",
   "headline": "Parameter-Efficient Fine-Tuning: LoRA, QLoRA, and Adapters",
   "description": "Parameter-efficient fine-tuning (PEFT) adapts large pre-trained models to new tasks by training only a small fraction of parameters. LoRA and QLoRA have democratized LLM customization — GPT-equivalent quality fine-tuning now runs on consumer hardware.",
-  "dateCreated": "2026-05-24T18:00:03.456Z",
+  "dateCreated": "2026-05-25T02:46:03.784Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

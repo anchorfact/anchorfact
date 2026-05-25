@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00256",
   "headline": "Blockchain Technology",
   "description": "Blockchain is a distributed, immutable ledger where transactions are grouped into blocks, cryptographically linked in a chain. Satoshi Nakamoto's Bitcoin (2009) was the first. Consensus mechanisms: Proof-of-Work (Bitcoin, mining), Proof-of-Stake (Ethereum since 2022, validators stake). Blockchain = decentralized trust without intermediaries.",
-  "dateCreated": "2026-05-24T18:00:03.728Z",
-  "dateModified": "2026-05-24T18:00:03.728Z",
+  "dateCreated": "2026-05-25T02:46:04.005Z",
+  "dateModified": "2026-05-25T02:46:04.005Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

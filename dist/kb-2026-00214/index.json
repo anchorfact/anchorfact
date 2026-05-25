@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00214",
   "headline": "Customer Lifetime Value (CLV)",
   "description": "Customer Lifetime Value (CLV) is the total revenue a business can expect from a single customer account throughout the business relationship. It drives decisions about acquisition cost, retention strategies, and customer segmentation. CLV = Average Purchase Value × Purchase Frequency × Customer Lifespan.",
-  "dateCreated": "2026-05-24T18:00:03.651Z",
-  "dateModified": "2026-05-24T18:00:03.651Z",
+  "dateCreated": "2026-05-25T02:46:03.949Z",
+  "dateModified": "2026-05-25T02:46:03.949Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

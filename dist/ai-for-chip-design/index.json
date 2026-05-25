@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-chip-design",
   "headline": "AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence",
   "description": "AI is transforming semiconductor chip design — from floorplanning (Google's RL achieving superhuman results) to computational lithography (NVIDIA cuLitho 40-60x acceleration). As Moore's Law slows, AI-driven EDA becomes the competitive differentiator enabling continued chip innovation at advanced process nodes.",
-  "dateCreated": "2026-05-24T18:00:02.928Z",
+  "dateCreated": "2026-05-25T02:46:03.377Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

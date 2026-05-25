@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/shader-programming",
   "headline": "Shader Programming Fundamentals",
   "description": "Shaders are GPU programs that define how 3D geometry transforms into screen pixels. Vertex shaders position geometry; fragment shaders color each pixel. Modern real-time rendering relies entirely on custom shaders for lighting, materials, and effects.",
-  "dateCreated": "2026-05-24T18:00:04.259Z",
+  "dateCreated": "2026-05-25T02:46:04.408Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

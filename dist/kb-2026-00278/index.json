@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00278",
   "headline": "Federated Learning",
   "description": "Federated Learning (FL) trains ML models across decentralized devices holding local data, without centralizing the data. Devices train locally, share only model updates (not raw data) with a central server, which aggregates updates. Used by Google (Gboard keyboard) and Apple for privacy-preserving ML.",
-  "dateCreated": "2026-05-24T18:00:03.302Z",
+  "dateCreated": "2026-05-25T02:46:03.648Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

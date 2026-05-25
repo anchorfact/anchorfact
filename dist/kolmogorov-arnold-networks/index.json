@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/kolmogorov-arnold-networks",
   "headline": "Kolmogorov-Arnold Networks (KANs): Learnable Activation Functions as MLP Alternatives",
   "description": "Kolmogorov-Arnold Networks (KANs) are a radical architectural innovation: instead of fixed activation functions on neurons, KANs use learnable B-spline functions on edges. This design achieves higher accuracy with far fewer parameters, challenging the 60-year dominance of the Multi-Layer Perceptron.",
-  "dateCreated": "2026-05-24T18:00:03.368Z",
+  "dateCreated": "2026-05-25T02:46:03.700Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

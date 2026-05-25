@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00191",
   "headline": "Boolean Algebra",
   "description": "Boolean algebra (George Boole, 1854) is the mathematical foundation of digital logic and computer science. Variables are true/false. Operators: AND (conjunction), OR (disjunction), NOT (negation), XOR (exclusive OR). De Morgan's Laws: NOT(A AND B) = NOT A OR NOT B.",
-  "dateCreated": "2026-05-24T18:00:03.730Z",
-  "dateModified": "2026-05-24T18:00:03.730Z",
+  "dateCreated": "2026-05-25T02:46:04.006Z",
+  "dateModified": "2026-05-25T02:46:04.006Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

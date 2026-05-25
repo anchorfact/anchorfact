@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00165",
   "headline": "Prometheus",
   "description": "Prometheus is the de facto open-source monitoring and alerting system, graduated from CNCF. It scrapes metrics from instrumented targets via HTTP, stores time-series data locally, and provides a powerful query language (PromQL). Paired with Grafana for visualization and Alertmanager for notifications.",
-  "dateCreated": "2026-05-24T18:00:04.010Z",
-  "dateModified": "2026-05-24T18:00:04.010Z",
+  "dateCreated": "2026-05-25T02:46:04.222Z",
+  "dateModified": "2026-05-25T02:46:04.222Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

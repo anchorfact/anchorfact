@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00280",
   "headline": "Feature Engineering",
   "description": "Feature engineering transforms raw data into informative representations that improve model performance. It's often the most impactful step in ML pipelines — good features beat complex models. Deep learning reduces but doesn't eliminate the need for feature engineering. Techniques: scaling, encoding, binning, interaction features, domain-specific transformations.",
-  "dateCreated": "2026-05-24T18:00:03.300Z",
+  "dateCreated": "2026-05-25T02:46:03.646Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

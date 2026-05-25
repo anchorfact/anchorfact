@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/graph-neural-networks",
   "headline": "Graph Neural Networks: Message Passing and Applications",
   "description": "Graph Neural Networks extend deep learning to graph-structured data — molecules, social networks, knowledge graphs. Message passing enables nodes to learn from their local neighborhood, creating representations that capture both structure and features.",
-  "dateCreated": "2026-05-24T18:00:03.322Z",
+  "dateCreated": "2026-05-25T02:46:03.665Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/contrastive-learning",
   "headline": "Contrastive Learning: SimCLR, MoCo, and CLIP",
   "description": "Contrastive learning trains models to recognize what makes examples similar or different, learning representations by pulling positive pairs together and pushing negative pairs apart in embedding space.",
-  "dateCreated": "2026-05-24T18:00:03.262Z",
+  "dateCreated": "2026-05-25T02:46:03.618Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

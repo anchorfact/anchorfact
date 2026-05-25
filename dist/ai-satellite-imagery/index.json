@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-satellite-imagery",
   "headline": "AI for Satellite Imagery: Object Detection, Change Detection, and Global Monitoring",
   "description": "AI sees the planet from space -- counting ships at sea, detecting new construction, monitoring crop health, and mapping humanitarian crises. From NASA's open-source Prithvi model to commercial geospatial intelligence platforms, foundation models are democratizing satellite AI.",
-  "dateCreated": "2026-05-24T18:00:03.147Z",
+  "dateCreated": "2026-05-25T02:46:03.540Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

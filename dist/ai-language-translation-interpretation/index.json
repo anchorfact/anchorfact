@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-language-translation-interpretation",
   "headline": "AI Language Translation and Interpretation: LLM-Based Translation, Simultaneous Interpretation, and Quality Estimation",
   "description": "AI translation has evolved from phrase tables to LLMs that match human translators on common language pairs and provide real-time spoken interpretation for multilingual meetings. From GPT-4 translating with document-level coherence to KUDO AI interpreting with <2s latency, language barriers are dissolving through AI.",
-  "dateCreated": "2026-05-24T18:00:03.097Z",
+  "dateCreated": "2026-05-25T02:46:03.511Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

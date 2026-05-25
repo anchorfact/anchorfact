@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00097",
   "headline": "MutationObserver",
   "description": "MutationObserver is an API that asynchronously monitors DOM changes — additions, removals, attribute changes, and text content modifications. It replaces the deprecated DOM Mutation Events with a batched, more performant observer pattern.",
-  "dateCreated": "2026-05-24T18:00:03.953Z",
-  "dateModified": "2026-05-24T18:00:03.953Z",
+  "dateCreated": "2026-05-25T02:46:04.181Z",
+  "dateModified": "2026-05-25T02:46:04.181Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

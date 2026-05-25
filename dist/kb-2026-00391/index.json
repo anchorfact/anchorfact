@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00391",
   "headline": "GDP and Economic Growth",
   "description": "GDP (Gross Domestic Product) measures the total market value of all final goods and services produced in a country. GDP = C + I + G + (X-M): Consumption + Investment + Government spending + Net exports. Nominal GDP (current prices) vs. Real GDP (inflation-adjusted). GDP per capita approximates living standards.",
-  "dateCreated": "2026-05-24T18:00:04.304Z",
-  "dateModified": "2026-05-24T18:00:04.304Z",
+  "dateCreated": "2026-05-25T02:46:04.442Z",
+  "dateModified": "2026-05-25T02:46:04.442Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

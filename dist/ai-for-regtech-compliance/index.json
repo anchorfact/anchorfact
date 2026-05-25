@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-regtech-compliance",
   "headline": "AI for Regulatory Technology (RegTech): Compliance Automation, AML, and Regulatory Intelligence",
   "description": "AI is transforming regulatory compliance from a manual, document-heavy process into an automated, intelligent system. Graph neural networks detect sophisticated financial crime patterns that humans and rules-based systems miss, while LLMs ingest and analyze thousands of pages of regulations across jurisdictions, automating the compliance lifecycle from obligation extraction to control mapping to reporting.",
-  "dateCreated": "2026-05-24T18:00:03.021Z",
+  "dateCreated": "2026-05-25T02:46:03.456Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

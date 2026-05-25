@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/statistics-fundamentals",
   "headline": "Statistics: Probability, Inference, and Modeling",
   "description": "Statistics provides the mathematical framework for drawing conclusions from data. Probability quantifies uncertainty; hypothesis testing evaluates evidence; regression models relationships. The Bayesian-frequentist debate reflects two valid philosophies of inference.",
-  "dateCreated": "2026-05-24T18:00:04.555Z",
+  "dateCreated": "2026-05-25T02:46:04.631Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

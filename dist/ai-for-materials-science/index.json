@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-materials-science",
   "headline": "AI for Materials Science: GNoME, Crystal Discovery, and Materials Informatics",
   "description": "AI is accelerating materials science from Edisonian trial-and-error to systematic discovery. DeepMind's GNoME used graph neural networks to discover 2.2 million new crystals — 45x the human-accumulated catalog — while autonomous labs synthesize AI-predicted compounds robotically.",
-  "dateCreated": "2026-05-24T18:00:03.002Z",
+  "dateCreated": "2026-05-25T02:46:03.442Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

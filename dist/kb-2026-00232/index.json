@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00232",
   "headline": "Test-Driven Development (TDD)",
   "description": "TDD (Kent Beck, 2002) is a development practice: write a failing test → write minimum code to pass → refactor. Red-Green-Refactor cycle. TDD ensures testability, drives design toward small, loosely coupled units, and provides a regression safety net. Not about testing — it's about design.",
-  "dateCreated": "2026-05-24T18:00:04.110Z",
-  "dateModified": "2026-05-24T18:00:04.110Z",
+  "dateCreated": "2026-05-25T02:46:04.296Z",
+  "dateModified": "2026-05-25T02:46:04.296Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

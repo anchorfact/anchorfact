@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/information-extraction",
   "headline": "Information Extraction: NER, Relation Extraction, and LLM-Powered IE",
   "description": "Information Extraction (IE) transforms unstructured text into structured knowledge. Named Entity Recognition identifies people, organizations, and locations; Relation Extraction discovers connections between them. Modern LLMs have fundamentally changed IE — from specialized models to unified generative approaches.",
-  "dateCreated": "2026-05-24T18:00:03.358Z",
+  "dateCreated": "2026-05-25T02:46:03.688Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00023",
   "headline": "React",
   "description": "React is an open-source JavaScript library for building user interfaces, developed and maintained by Meta (Facebook). Created by Jordan Walke in 2011 and open-sourced in May 2013, React introduced a component-based architecture and a virtual DOM for efficient UI updates. As of 2026, React is the most widely used frontend library globally, with over 200,000 GitHub stars and billions of weekly NPM downloads. React 19 (released December 2024) introduced Server Components as a stable feature, fundamentally changing the React rendering model.",
-  "dateCreated": "2026-05-24T18:00:04.022Z",
-  "dateModified": "2026-05-24T18:00:04.022Z",
+  "dateCreated": "2026-05-25T02:46:04.230Z",
+  "dateModified": "2026-05-25T02:46:04.230Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

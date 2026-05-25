@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00222",
   "headline": "Real-Time Strategy (RTS) Game Design",
   "description": "RTS games combine resource management, base building, and real-time tactical combat. Players gather resources → build structures → produce units → control battles — all simultaneously. Classic examples: StarCraft, Age of Empires, Command & Conquer. Key design: fog of war, tech trees, unit counters, macro vs. micro management.",
-  "dateCreated": "2026-05-24T18:00:04.250Z",
-  "dateModified": "2026-05-24T18:00:04.250Z",
+  "dateCreated": "2026-05-25T02:46:04.401Z",
+  "dateModified": "2026-05-25T02:46:04.401Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

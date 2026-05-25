@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00147",
   "headline": "Command Pattern",
   "description": "Encapsulates a request as an object, enabling parameterization, queuing, logging, and undo/redo. Commands are first-class objects with execute() and undo() methods.",
-  "dateCreated": "2026-05-24T18:00:03.757Z",
-  "dateModified": "2026-05-24T18:00:03.757Z",
+  "dateCreated": "2026-05-25T02:46:04.031Z",
+  "dateModified": "2026-05-25T02:46:04.031Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

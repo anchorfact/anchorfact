@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00281",
   "headline": "Data Preprocessing",
   "description": "Data preprocessing cleans and prepares raw data for ML. Steps: handling missing values (drop, impute), outlier detection and treatment, encoding categorical variables, feature scaling, train/test splitting. Real-world data is messy — preprocessing typically consumes 60-80% of a data scientist's time.",
-  "dateCreated": "2026-05-24T18:00:03.274Z",
+  "dateCreated": "2026-05-25T02:46:03.626Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

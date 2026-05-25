@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00335",
   "headline": "Photosynthesis",
   "description": "Photosynthesis converts light energy to chemical energy (glucose) using CO₂ and H₂O, releasing O₂. Two stages: light-dependent reactions (thylakoid membrane, produce ATP + NADPH) and Calvin cycle (stroma, fix CO₂ into sugar). C₃ plants (most), C₄ plants (corn, tropical), CAM plants (succulents) differ in carbon fixation.",
-  "dateCreated": "2026-05-24T18:00:04.543Z",
-  "dateModified": "2026-05-24T18:00:04.543Z",
+  "dateCreated": "2026-05-25T02:46:04.622Z",
+  "dateModified": "2026-05-25T02:46:04.622Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

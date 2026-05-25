@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00286",
   "headline": "Knowledge Distillation",
   "description": "Knowledge distillation transfers knowledge from a large teacher model to a smaller student model. The student learns to mimic the teacher's softened output probabilities (not just hard labels). This enables deploying compact models with near-teacher performance — critical for edge devices and mobile applications.",
-  "dateCreated": "2026-05-24T18:00:03.364Z",
+  "dateCreated": "2026-05-25T02:46:03.697Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

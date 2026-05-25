@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/causal-inference-ai",
   "headline": "Causal AI: From Correlation to Causation with do-Calculus",
   "description": "Causal AI moves beyond correlation-based prediction to reason about cause and effect — enabling models to answer \"what if\" questions, make robust decisions under distribution shift, and avoid spurious correlations that break ML systems in production.",
-  "dateCreated": "2026-05-24T18:00:03.246Z",
+  "dateCreated": "2026-05-25T02:46:03.604Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-recruiting",
   "headline": "AI for Recruiting: Resume Screening, Talent Matching, and Fairness in Hiring",
   "description": "AI is reshaping hiring — screening thousands of resumes in seconds, matching candidates to jobs based on skills rather than keywords, and (ideally) reducing human bias. But the fairness challenge is profound: AI trained on historical hiring data can amplify discrimination through seemingly neutral features. Getting AI recruiting right is not just an engineering problem — it's a civil rights issue.",
-  "dateCreated": "2026-05-24T18:00:03.019Z",
+  "dateCreated": "2026-05-25T02:46:03.454Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00270",
   "headline": "Recurrent Neural Networks (RNN)",
   "description": "RNNs process sequential data (text, time series, speech) by maintaining a hidden state that captures information from previous steps. Unlike feedforward networks, RNNs have recurrent connections — output at time t depends on input at t and hidden state from t-1.",
-  "dateCreated": "2026-05-24T18:00:03.477Z",
+  "dateCreated": "2026-05-25T02:46:03.803Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

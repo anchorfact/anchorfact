@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-iot",
   "headline": "AI for the Internet of Things: Federated Learning, TinyML, and Intelligent Edge Devices",
   "description": "AI for IoT brings intelligence to the physical world — from smart thermostats learning your preferences to industrial sensors predicting equipment failure. Federated learning enables AI training across millions of devices without centralizing data, while TinyML compresses models to run on microcontrollers smaller than a grain of rice.",
-  "dateCreated": "2026-05-24T18:00:02.984Z",
+  "dateCreated": "2026-05-25T02:46:03.433Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

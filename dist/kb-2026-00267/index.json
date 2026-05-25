@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00267",
   "headline": "Neural Network Basics",
   "description": "Neural networks are computing systems inspired by biological neurons: layers of interconnected nodes that transform input data through weighted connections and activation functions. A simple feedforward network: Input Layer → Hidden Layer(s) → Output Layer. Each neuron computes weighted sum + bias + activation function.",
-  "dateCreated": "2026-05-24T18:00:03.439Z",
+  "dateCreated": "2026-05-25T02:46:03.769Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

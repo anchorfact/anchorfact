@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00336",
   "headline": "DNA Structure",
   "description": "DNA (deoxyribonucleic acid) is the molecule carrying genetic instructions. Watson, Crick, and Wilkins (1953, Nobel 1962) - with crucial X-ray crystallography data from Rosalind Franklin - determined DNA's double helix structure: two antiparallel strands of sugar-phosphate backbone linked by complementary base pairs (A-T, G-C).",
-  "dateCreated": "2026-05-24T18:00:04.498Z",
-  "dateModified": "2026-05-24T18:00:04.498Z",
+  "dateCreated": "2026-05-25T02:46:04.587Z",
+  "dateModified": "2026-05-25T02:46:04.587Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

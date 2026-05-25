@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00304",
   "headline": "Ruby Language",
   "description": "Ruby (Yukihiro Matsumoto, 1995) is a dynamic, object-oriented language optimized for developer happiness. Everything is an object, including primitives. Convention over configuration. Ruby's elegant syntax (influenced by Perl, Smalltalk) makes it popular for scripting, web (Rails), and DevOps (Chef, Puppet, Vagrant).",
-  "dateCreated": "2026-05-24T18:00:04.045Z",
-  "dateModified": "2026-05-24T18:00:04.045Z",
+  "dateCreated": "2026-05-25T02:46:04.248Z",
+  "dateModified": "2026-05-25T02:46:04.248Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"

@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-generated-content-detection",
   "headline": "AI-Generated Content Detection: Identifying Synthetic Text, Deepfake Images, and AI-Authored Media",
   "description": "As AI-generated text, images, audio, and video become indistinguishable from human-created content, detecting what's real becomes a critical societal challenge — from identifying AI-written student essays and fake product reviews to detecting political deepfakes. Detection is an asymmetric arms race: generation improves faster than detection, and each detection method spawns evasion techniques.",
-  "dateCreated": "2026-05-24T18:00:03.068Z",
+  "dateCreated": "2026-05-25T02:46:03.490Z",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",

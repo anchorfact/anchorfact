@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00259",
   "headline": "Shell Scripting (Bash)",
   "description": "Bash (Bourne Again Shell) is the default shell on most Linux distributions. Shell scripts automate tasks: file operations, process management, text processing. Variables, conditionals, loops, functions — a complete programming language for system administration.",
-  "dateCreated": "2026-05-24T18:00:04.067Z",
-  "dateModified": "2026-05-24T18:00:04.067Z",
+  "dateCreated": "2026-05-25T02:46:04.265Z",
+  "dateModified": "2026-05-25T02:46:04.265Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
