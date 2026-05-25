@@ -1,23 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Optimization Algorithms for Deep Learning — AnchorFact</title>
-  <meta name="anchorfact:confidence" content="medium (0.72)">
-  <meta name="anchorfact:generation" content="ai_structured">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/optimization-algorithms","headline":"Optimization Algorithms for Deep Learning","description":"Optimization algorithms update neural network weights to minimize the loss function. Adam dominates practice, but SGD with momentum remains competitive when well-tuned.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.72,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.9,"freshness":0.5,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.72,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":2,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["A","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Adam: A Method for Stochastic Optimization","sameAs":"https://arxiv.org/abs/1412.6980","anchorfact:sourceTier":"A","anchorfact:year":2015},{"@type":"CreativeWork","name":"SGDR: Stochastic Gradient Descent with Warm Restarts","sameAs":"https://arxiv.org/abs/1608.03983","anchorfact:sourceTier":"A","anchorfact:year":2017}]}</script>
-</head>
-<body><article>## TL;DR<br>
-Optimization algorithms update neural network weights to minimize the loss function. Adam dominates practice, but SGD with momentum remains competitive when well-tuned.<br>
-<br>
-## Core Explanation<br>
-Gradient descent computes the average gradient over training data to update weights. SGD uses single examples or mini-batches for faster, noisier updates that often generalize better. Momentum accumulates past gradients to smooth updates and escape local minima. Adam adapts learning rates per-parameter.<br>
-<br>
-## Detailed Analysis<br>
-AdamW (Loshchilov & Hutter, 2019) fixes Adam's weight decay implementation, making it the recommended variant. Learning rate warmup — gradually increasing from a small initial rate — prevents training instability in transformers. Gradient clipping prevents exploding gradients.<br>
-<br>
-## Further Reading<br>
-- Ruder: An Overview of Gradient Descent Algorithms<br>
-- Lilian Weng: Optimization for Deep Learning<br>
-- PyTorch: torch.optim Documentation</article></body>
-</html>

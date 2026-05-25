@@ -1,24 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>AI for Robot Navigation: SLAM, Visual Odometry, and Autonomous Path Planning — AnchorFact</title>
-  <meta name="anchorfact:confidence" content="medium (0.615)">
-  <meta name="anchorfact:generation" content="ai_structured">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"article","@id":"https://anchorfact.org/kb/ai-for-robot-navigation","headline":"AI for Robot Navigation: SLAM, Visual Odometry, and Autonomous Path Planning","description":"Robot navigation answers \"where am I, what is around me, and how do I get there?\" -- SLAM builds maps while tracking the robot's position, visual odometry estimates motion from camera images, and path planning computes collision-free trajectories. AI is transforming all three, enabling robots to navigate autonomously in unmapped, dynamic environments.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.615,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.2,"freshness":1,"decay":0.1,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.615,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":0,"sources_unreachable":2,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["A","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":false,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Vision-Based Navigation and Perception for Autonomous Robots: A Comprehensive Review","sameAs":"https://www.mdpi.com/2673-4117/6/7/153","anchorfact:sourceTier":"A","anchorfact:year":2025},{"@type":"CreativeWork","name":"A Comprehensive Review on Autonomous Mobile Robots: Sensors, Platforms, and AI Navigation Strategies","sameAs":"https://dl.acm.org/doi/full/10.1145/3727642","anchorfact:sourceTier":"A","anchorfact:year":2025}]}</script>
-</head>
-<body><article>## TL;DR<br>
-Robot navigation answers "where am I, what is around me, and how do I get there?" -- SLAM builds maps while tracking the robot's position, visual odometry estimates motion from camera images, and path planning computes collision-free trajectories. AI is transforming all three, enabling robots to navigate autonomously in unmapped, dynamic environments.<br>
-<br>
-## Core Explanation<br>
-SLAM: a robot starts with no map and uncertain pose. As it moves, it observes landmarks (visual features, LiDAR points) and simultaneously estimates its trajectory and landmark positions. Classical SLAM: filter-based (EKF-SLAM) or graph-based (pose graph optimization). Modern: deep learning-enhanced SLAM -- neural networks predict depth, optical flow, and loop closures. Visual odometry: estimating camera ego-motion from sequential images. Deep VO (DROID-SLAM) replaces handcrafted feature extraction and geometric optimization with learned dense correspondence networks. Path planning: given a map and start/goal positions, find a collision-free path. Classical: A*, RRT*, PRM. Learning-based: RL agents learn navigation policies from simulation (Habitat).<br>
-<br>
-## Detailed Analysis<br>
-DROID-SLAM (2021, Princeton): recurrent iterative update of camera poses and depth using a differentiable Dense Bundle Adjustment layer -- achieving SOTA on TartanAir and ETH3D benchmarks without any training on those datasets. DPV-SLAM (2022): incorporates deep patch-wise visual features for robust matching under viewpoint change. Monocular depth estimation (DPT, MiDaS) enables pseudo-LiDAR SLAM from single cameras. Neural SLAM (iMAP, NICE-SLAM) represents scenes as implicit neural networks (NeRF-style). RL-based navigation: PointGoal navigation in Habitat -- agent receives relative goal coordinates and RGB+Depth observations. SOTA: 99%+ success on seen environments, 70-85% on unseen. Applications: warehouse robots (Amazon Proteus), domestic robots (vacuum cleaners), drone navigation (GPS-denied environments), autonomous vehicles.<br>
-<br>
-## Further Reading<br>
-- ORB-SLAM3: Feature-Based Visual SLAM<br>
-- Habitat Simulator: Embodied AI Navigation (Meta)<br>
-- NVIDIA Isaac Sim: Robotics Simulation Platform<br>
-</article></body>
-</html>

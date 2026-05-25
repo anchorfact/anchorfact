@@ -1,32 +1,53 @@
 #!/usr/bin/env node
 /**
- * AnchorFact Source Verification — 来源刚性验证
- * 
- * 扫描 content/ 下所有 Markdown 文件，对每个 primary_source：
- *   - DOI → CrossRef API 验证元数据存在
- *   - arXiv ID → arXiv API 验证
- *   - URL → HTTP HEAD 检查可达性
- * 
- * 输出：verification-report.json（可被 compile.js 和下游系统消费）
+ * AnchorFact Source Verification v0.2
+ *   - 并行化：文章内来源并行 + 文章间并发度 5
+ *   - 全局 rate limiter：每秒最多 5 个外部 API 请求
+ *   - 输出：verification-report.json
  */
 
 import { readFileSync, writeFileSync, readdirSync, statSync, existsSync } from 'fs';
-import { join, dirname } from 'path';
+import { join } from 'path';
 import { load } from 'js-yaml';
 
-// ---- Token Bucket (Rate Limiting) ----
-const RATE_LIMIT_MS = 200; // CrossRef 建议每秒 ≤ 5 请求
+// ---- Rate Limiter ----
+const RATE_LIMIT_MS = 200; // 每秒 ≤ 5 请求
+let _lastRequestTime = 0;
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+async function rateLimit() {
+  const now = Date.now();
+  const elapsed = now - _lastRequestTime;
+  if (elapsed < RATE_LIMIT_MS) {
+    await sleep(RATE_LIMIT_MS - elapsed);
+  }
+  _lastRequestTime = Date.now();
+}
+
+// ---- Concurrency Helper ----
+async function runWithConcurrency(tasks, limit) {
+  const results = new Array(tasks.length);
+  const executing = new Set();
+
+  for (let i = 0; i < tasks.length; i++) {
+    const p = tasks[i]().then(r => { executing.delete(p); results[i] = r; return r; });
+    executing.add(p);
+    if (executing.size >= limit) await Promise.race(executing);
+  }
+  await Promise.all(executing);
+  return results;
+}
+
 // ---- CrossRef DOI Verification ----
 async function verifyDoi(doi) {
   const cleanDoi = doi.replace(/^https?:\/\/doi\.org\//i, '');
+  await rateLimit();
   try {
     const res = await fetch(`https://api.crossref.org/works/${encodeURIComponent(cleanDoi)}`, {
-      headers: { 'User-Agent': 'AnchorFact/0.1 (mailto:hello@anchorfact.org)' }
+      headers: { 'User-Agent': 'AnchorFact/0.2 (mailto:hello@anchorfact.org)' }
     });
     if (res.status === 200) {
       const data = await res.json();
@@ -48,6 +69,7 @@ async function verifyDoi(doi) {
 // ---- arXiv ID Verification ----
 async function verifyArxiv(arxivId) {
   const cleanId = arxivId.replace(/^arxiv:/i, '').replace(/^https?:\/\/arxiv\.org\/(abs|pdf)\//i, '');
+  await rateLimit();
   try {
     const res = await fetch(`https://export.arxiv.org/api/query?id_list=${encodeURIComponent(cleanId)}&max_results=1`);
     if (res.status === 200) {
@@ -71,21 +93,18 @@ async function verifyArxiv(arxivId) {
 
 // ---- URL Reachability Check ----
 async function verifyUrl(url) {
+  await rateLimit();
   try {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 8000);
     const res = await fetch(url, {
       method: 'HEAD',
       signal: controller.signal,
-      headers: { 'User-Agent': 'AnchorFact/0.1 (mailto:hello@anchorfact.org)' },
+      headers: { 'User-Agent': 'AnchorFact/0.2 (mailto:hello@anchorfact.org)' },
       redirect: 'follow'
     });
     clearTimeout(timeout);
-    return {
-      verified: res.status >= 200 && res.status < 400,
-      status: res.status,
-      final_url: res.url
-    };
+    return { verified: res.status >= 200 && res.status < 400, status: res.status, final_url: res.url };
   } catch (e) {
     return { verified: false, error: e.message };
   }
@@ -100,7 +119,7 @@ function classifySourceTier(source) {
   if (source.type === 'government_report' || source.type === 'industry_whitepaper') return 'A';
   if (source.type === 'blog_post' && source.institution) return 'B';
   if (source.type === 'blog_post') return 'B';
-  return 'C'; // default
+  return 'C';
 }
 
 // ---- Freshness Score ----
@@ -116,152 +135,101 @@ function computeFreshnessScore(source) {
 }
 
 // ---- Confidence Formula (Public, Deterministic) ----
-// 此公式与 compile.js 中的 computeConfidence 完全相同
 function computeConfidence(sources, verificationResults, article) {
-  if (!sources || sources.length === 0) {
-    return { score: 0, level: 'low', inputs: {} };
-  }
+  if (!sources || sources.length === 0) return { score: 0, level: 'low', inputs: {} };
 
-  // 1. Source Tier (取最高等级)
   const tierMap = { 'S': 1.0, 'A': 0.9, 'B': 0.6, 'C': 0.3, 'D': 0 };
   const tiers = sources.map(s => tierMap[classifySourceTier(s)] || 0.3);
   const bestTier = Math.max(...tiers);
-  const sourceTierScore = bestTier;
 
-  // 2. Source Count
   const count = sources.length;
   const sourceCountScore = count >= 3 ? 1.0 : count >= 2 ? 0.8 : 0.5;
 
-  // 3. Source Verified (DOI 可查 / URL 可达)
   const verifiedCount = verificationResults.filter(r => r.verified).length;
   const verifiedRatio = sources.length > 0 ? verifiedCount / sources.length : 0;
-  // 混合：DOI 来源权重更高
   const hasDoiVerified = verificationResults.some(r => r.verified && r.method === 'doi');
   const sourceVerifiedScore = hasDoiVerified ? 1.0 : verifiedRatio >= 0.5 ? 0.7 : verifiedRatio > 0 ? 0.4 : 0;
 
-  // 4. Freshness
   const years = sources.map(s => s.year).filter(Boolean);
   const maxFreshness = years.length > 0 ? computeFreshnessScore({ year: Math.max(...years) }) : 0.5;
 
-  // 5. Decay Factor
   const hasDisputed = article.disputed_statements && article.disputed_statements.length > 0;
   const hasKnownGaps = article.known_gaps && article.known_gaps.length > 0;
   const decayScore = (hasDisputed ? 0.2 : 0) + (hasKnownGaps ? 0.1 : 0);
 
   const score = parseFloat((
-    sourceTierScore * 0.35 +
-    sourceCountScore * 0.20 +
-    sourceVerifiedScore * 0.25 +
-    maxFreshness * 0.10 -
-    decayScore * 0.10
+    bestTier * 0.35 + sourceCountScore * 0.20 + sourceVerifiedScore * 0.25 + maxFreshness * 0.10 - decayScore * 0.10
   ).toFixed(4));
 
-  const level = score >= 0.85 ? 'high' : score >= 0.60 ? 'medium' : 'low';
-
-  return {
-    score,
-    level,
-    inputs: {
-      source_tier: sourceTierScore,
-      source_count: sourceCountScore,
-      source_verified: sourceVerifiedScore,
-      freshness: maxFreshness,
-      decay: decayScore
-    }
-  };
+  return { score, level: score >= 0.85 ? 'high' : score >= 0.60 ? 'medium' : 'low', inputs: {} };
 }
 
 // ---- Markdown Parser ----
 function splitFrontmatter(mdContent) {
   const lines = mdContent.split('\n');
   if (lines[0]?.trim() !== '---') return { frontmatter: {}, body: mdContent };
-
-  const endIndex = lines.slice(1).findIndex(line => line.trim() === '---');
+  const endIndex = lines.slice(1).findIndex(l => l.trim() === '---');
   if (endIndex === -1) return { frontmatter: {}, body: mdContent };
-
-  const yamlBlock = lines.slice(1, endIndex + 1).join('\n');
-  const body = lines.slice(endIndex + 2).join('\n');
-
   try {
-    const fm = load(yamlBlock) || {};
-    return { frontmatter: fm, body };
+    return { frontmatter: load(lines.slice(1, endIndex + 1).join('\n')) || {}, body: lines.slice(endIndex + 2).join('\n') };
   } catch (e) {
-    console.warn(`⚠ YAML parse error: ${e.message}`);
     return { frontmatter: {}, body: mdContent };
   }
 }
 
-// ---- Source Extractor ----
+// ---- Source Identifier Extractor ----
 function extractIdentifiers(source) {
   const ids = { doi: null, arxiv: null, url: null };
-
   if (source.doi) {
     ids.doi = source.doi.startsWith('10.') ? source.doi : source.doi.replace(/^https?:\/\/doi\.org\//i, '');
   }
   if (source.url) {
-    const url = source.url;
-    if (url.includes('arxiv.org')) {
-      const arxivMatch = url.match(/(?:arxiv\.org\/(?:abs|pdf)\/)?(\d{4}\.\d{4,5}(?:v\d+)?)/);
-      if (arxivMatch) ids.arxiv = arxivMatch[1];
+    if (source.url.includes('arxiv.org')) {
+      const m = source.url.match(/(?:arxiv\.org\/(?:abs|pdf)\/)?(\d{4}\.\d{4,5}(?:v\d+)?)/);
+      if (m) ids.arxiv = m[1];
     } else {
-      ids.url = url;
+      ids.url = source.url;
     }
   }
-
   return ids;
 }
 
-// ---- Main: Verify All Sources ----
-async function verifySource(source, filePath) {
+// ---- Verify One Source ----
+async function verifySource(source) {
   const ids = extractIdentifiers(source);
   const results = [];
 
   if (ids.doi) {
-    await sleep(RATE_LIMIT_MS);
     try {
-      const result = await verifyDoi(ids.doi);
+      const r = await verifyDoi(ids.doi);
       results.push({
-        method: 'doi',
-        identifier: ids.doi,
-        verified: result.verified,
-        metadata: result.verified ? {
-          title: result.title,
-          publisher: result.publisher,
-          year: result.year
-        } : { error: result.error },
-        match: result.verified ? (result.title?.toLowerCase().includes(source.title?.toLowerCase()?.slice(0, 30) || '') || false) : false
+        method: 'doi', identifier: ids.doi, verified: r.verified,
+        metadata: r.verified ? { title: r.title, publisher: r.publisher, year: r.year } : { error: r.error },
+        match: r.verified ? (r.title?.toLowerCase().includes(source.title?.toLowerCase()?.slice(0, 30) || '') || false) : false
       });
     } catch (e) {
       results.push({ method: 'doi', identifier: ids.doi, verified: false, metadata: { error: e.message }, match: false });
     }
   }
-
   if (ids.arxiv) {
-    await sleep(RATE_LIMIT_MS);
     try {
-      const result = await verifyArxiv(ids.arxiv);
+      const r = await verifyArxiv(ids.arxiv);
       results.push({
-        method: 'arxiv',
-        identifier: ids.arxiv,
-        verified: result.verified,
-        metadata: result.verified ? { title: result.title } : { error: result.error },
-        match: result.verified
+        method: 'arxiv', identifier: ids.arxiv, verified: r.verified,
+        metadata: r.verified ? { title: r.title } : { error: r.error },
+        match: r.verified
       });
     } catch (e) {
       results.push({ method: 'arxiv', identifier: ids.arxiv, verified: false, metadata: { error: e.message }, match: false });
     }
   }
-
   if (ids.url && !ids.doi && !ids.arxiv) {
-    await sleep(RATE_LIMIT_MS / 2);
     try {
-      const result = await verifyUrl(ids.url);
+      const r = await verifyUrl(ids.url);
       results.push({
-        method: 'url',
-        identifier: ids.url,
-        verified: result.verified,
-        metadata: { status: result.status, final_url: result.final_url },
-        match: result.verified
+        method: 'url', identifier: ids.url, verified: r.verified,
+        metadata: { status: r.status, final_url: r.final_url },
+        match: r.verified
       });
     } catch (e) {
       results.push({ method: 'url', identifier: ids.url, verified: false, metadata: { error: e.message }, match: false });
@@ -271,143 +239,111 @@ async function verifySource(source, filePath) {
   return results;
 }
 
+// ---- Verify One Article (sources verified in parallel) ----
 async function verifyArticle(filePath) {
   const mdContent = readFileSync(filePath, 'utf-8');
   const { frontmatter } = splitFrontmatter(mdContent);
-
   const sources = frontmatter.primary_sources || [];
-  const allResults = [];
 
-  for (const source of sources) {
-    const results = await verifySource(source, filePath);
-    allResults.push({
-      source_title: source.title,
-      source_type: source.type || 'unknown',
-      results,
-      all_verified: results.every(r => r.verified)
-    });
-  }
+  // 并行验证一篇的所有来源
+  const allResults = await Promise.all(sources.map(s => verifySource(s)));
+
+  const vr = allResults.map((results, i) => ({
+    source_title: sources[i]?.title || 'unknown',
+    source_type: sources[i]?.type || 'unknown',
+    results,
+    all_verified: results.length > 0 && results.every(r => r.verified)
+  }));
 
   return {
     file: filePath,
     article_id: frontmatter.id || null,
     generation_method: frontmatter.generation_method || 'unknown',
     sources_total: sources.length,
-    verification_results: allResults,
-    sources_verified: allResults.filter(r => r.all_verified).length,
-    sources_unreachable: allResults.filter(r => r.results.length > 0 && !r.results.some(res => res.verified)).length
+    verification_results: vr,
+    sources_verified: vr.filter(v => v.all_verified).length,
+    sources_unreachable: vr.filter(v => v.results.length > 0 && !v.results.some(r => r.verified)).length
   };
 }
+
+// ---- Verify All (parallel: batch concurrency) ----
+const CONCURRENCY = 5;
 
 async function verifyAll(contentDir) {
   const articles = [];
 
   function walk(dir) {
-    const entries = readdirSync(dir);
-    for (const entry of entries) {
+    for (const entry of readdirSync(dir)) {
       const fullPath = join(dir, entry);
-      if (statSync(fullPath).isDirectory()) {
-        walk(fullPath);
-      } else if (entry.endsWith('.md') && !entry.startsWith('_')) {
-        articles.push(fullPath);
-      }
+      if (statSync(fullPath).isDirectory()) walk(fullPath);
+      else if (entry.endsWith('.md') && !entry.startsWith('_')) articles.push(fullPath);
     }
   }
 
   if (!existsSync(contentDir)) {
-    console.error(`Content directory not found: ${contentDir}`);
+    console.error(`❌ Content directory not found: ${contentDir}`);
     process.exit(1);
   }
 
   walk(contentDir);
-  console.log(`Found ${articles.length} articles to verify\n`);
+  console.log(`Found ${articles.length} articles to verify (concurrency=${CONCURRENCY})\n`);
 
-  const results = [];
-  for (let i = 0; i < articles.length; i++) {
-    const filePath = articles[i];
-    console.log(`[${i + 1}/${articles.length}] Verifying: ${filePath}`);
+  let done = 0;
+  const results = new Array(articles.length);
+
+  const tasks = articles.map((filePath, i) => async () => {
     try {
       const result = await verifyArticle(filePath);
-      results.push(result);
-
-      const verified = result.sources_verified;
-      const total = result.sources_total;
-      console.log(`  ✓ ${verified}/${total} sources verified, ${result.sources_unreachable} unreachable`);
+      results[i] = result;
+      done++;
+      const pct = Math.round(done / articles.length * 100);
+      if (done % 50 === 0 || done === articles.length) {
+        console.log(`[${done}/${articles.length}] ${pct}% — ${filePath}: ${result.sources_verified}/${result.sources_total} verified`);
+      }
+      return result;
     } catch (e) {
-      console.error(`  ✗ Error: ${e.message}`);
-      results.push({
-        file: filePath,
-        error: e.message,
-        sources_total: 0,
-        sources_verified: 0,
-        sources_unreachable: 0
-      });
+      done++;
+      results[i] = { file: filePath, error: e.message, sources_total: 0, sources_verified: 0, sources_unreachable: 0 };
+      return results[i];
     }
-  }
-
-  return results;
-}
-
-// ---- Compute Confidence for Each Article ----
-function computeConfidenceForResults(results) {
-  return results.map(r => {
-    if (r.error) {
-      return { ...r, confidence: { score: 0, level: 'low', inputs: {} } };
-    }
-
-    const sources = [];
-    r.verification_results.forEach(vr => {
-      sources.push({
-        type: vr.source_type,
-        year: vr.results[0]?.metadata?.year || null
-      });
-    });
-
-    const flatResults = r.verification_results.flatMap(vr => vr.results);
-    const confidence = computeConfidence(sources, flatResults, {});
-
-    return { ...r, confidence };
   });
+
+  await runWithConcurrency(tasks, CONCURRENCY);
+  return results.filter(Boolean);
 }
 
 // ---- CLI ----
 const contentDir = process.argv[2] || join(process.cwd(), 'content');
 const outputFile = process.argv[3] || join(process.cwd(), 'verification-report.json');
 
-console.log(`AnchorFact Source Verification`);
+console.log(`AnchorFact Source Verification v0.2`);
 console.log(`  Content: ${contentDir}`);
-console.log(`  Output:  ${outputFile}\n`);
+console.log(`  Output:  ${outputFile}`);
+console.log(`  Concurrency: ${CONCURRENCY}\n`);
 
 const start = performance.now();
 const results = await verifyAll(contentDir);
-const withConfidence = computeConfidenceForResults(results);
-
 const elapsed = (performance.now() - start).toFixed(0);
+
+const totalSources = results.reduce((s, r) => s + r.sources_total, 0);
+const totalVerified = results.reduce((s, r) => s + r.sources_verified, 0);
 
 const summary = {
   generated: new Date().toISOString(),
   total_articles: results.length,
   total_with_errors: results.filter(r => r.error).length,
-  average_sources_per_article: results.length > 0
-    ? (results.reduce((sum, r) => sum + r.sources_total, 0) / results.length).toFixed(1)
-    : 0,
-  overall_verification_rate: results.length > 0
-    ? (results.reduce((sum, r) => sum + r.sources_verified, 0) / results.reduce((sum, r) => sum + r.sources_total, 0) * 100).toFixed(1) + '%'
-    : '0%',
-  confidence_distribution: {
-    high: withConfidence.filter(r => r.confidence?.level === 'high').length,
-    medium: withConfidence.filter(r => r.confidence?.level === 'medium').length,
-    low: withConfidence.filter(r => r.confidence?.level === 'low').length
-  },
-  elapsed_ms: parseInt(elapsed)
+  average_sources_per_article: (totalSources / Math.max(results.length, 1)).toFixed(1),
+  overall_verification_rate: totalSources > 0 ? (totalVerified / totalSources * 100).toFixed(1) + '%' : '0%',
+  elapsed_ms: parseInt(elapsed),
+  elapsed_sec: (elapsed / 1000).toFixed(1),
+  concurrency: CONCURRENCY
 };
 
-const report = { summary, articles: withConfidence };
+const report = { summary, articles: results };
 writeFileSync(outputFile, JSON.stringify(report, null, 2));
 
 console.log(`\n📋 Verification Report: ${outputFile}`);
 console.log(`   Articles: ${summary.total_articles}`);
 console.log(`   Sources/article: ${summary.average_sources_per_article}`);
 console.log(`   Verify rate: ${summary.overall_verification_rate}`);
-console.log(`   Confidence: high=${summary.confidence_distribution.high} medium=${summary.confidence_distribution.medium} low=${summary.confidence_distribution.low}`);
-console.log(`   Elapsed: ${elapsed}ms`);
+console.log(`   Elapsed: ${summary.elapsed_sec}s (${summary.concurrency}x concurrency)`);

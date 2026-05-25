@@ -1,24 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>AI for Signal Processing: Deep Learning for Wireless, Radar, and Biomedical Signals — AnchorFact</title>
-  <meta name="anchorfact:confidence" content="medium (0.8)">
-  <meta name="anchorfact:generation" content="ai_structured">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"article","@id":"https://anchorfact.org/kb/ai-for-signal-processing","headline":"AI for Signal Processing: Deep Learning for Wireless, Radar, and Biomedical Signals","description":"AI is transforming signal processing -- from wireless receivers that learn to decode signals better than mathematically-designed algorithms, to ECG analysis matching cardiologist accuracy, to radar systems that detect and classify objects via deep learning. The convergence of deep learning and signal processing is creating adaptive systems that outperform decades of handcrafted DSP theory.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.8,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":1,"source_count":0.8,"source_verified":1,"freshness":0.5,"decay":0.1,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.8,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":2,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["A","S"],"sources_has_doi":true,"sources_has_url":true,"article_has_disputed":false,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"DeepRx: Deep Learning Receiver for Wireless Communications","sameAs":"https://arxiv.org/abs/2005.09563","anchorfact:sourceTier":"A","anchorfact:year":2020},{"@type":"CreativeWork","name":"Cardiologist-level arrhythmia detection and classification in ambulatory electrocardiograms using a deep neural network","sameAs":"https://www.nature.com/articles/s41591-018-0268-3","anchorfact:sourceTier":"S","anchorfact:year":2019}]}</script>
-</head>
-<body><article>## TL;DR<br>
-AI is transforming signal processing -- from wireless receivers that learn to decode signals better than mathematically-designed algorithms, to ECG analysis matching cardiologist accuracy, to radar systems that detect and classify objects via deep learning. The convergence of deep learning and signal processing is creating adaptive systems that outperform decades of handcrafted DSP theory.<br>
-<br>
-## Core Explanation<br>
-Classical signal processing: based on mathematical models (Fourier transforms, filters, statistical detection). Works well under assumed conditions, degrades in real-world non-idealities. AI approach: neural networks learn optimal processing directly from data. Key domains: (1) Wireless -- neural channel estimation, neural decoding, end-to-end learned transceivers; (2) Biomedical -- ECG (heart), EEG (brain), EMG (muscle), PPG (blood oxygen) classified via CNNs/RNNs/Transformers; (3) Audio/speech -- denoising (DeepFilterNet), source separation (Demucs), enhancement for hearing aids; (4) Radar -- target detection (CFAR replacement), classification (drone vs bird), SAR image formation.<br>
-<br>
-## Detailed Analysis<br>
-Wireless AI: 5G NR and future 6G require massive MIMO (64-256 antennas) and mmWave frequencies. Model-driven DL (deep unfolding): unroll iterative optimization algorithms (ISTA, AMP) into neural network layers with learnable parameters. Biomedical: Nature Medicine 2019 study trained 34-layer CNN on 91,232 single-lead ECG recordings from 53,549 patients, deployed clinically via Zio patch wearable. Radar AI: CNNs distinguish targets from clutter (sea, ground, weather) with lower false alarms. Drone classification via micro-Doppler radar signatures. Key challenges: data scarcity (medical/radar data is expensive or classified), real-time constraints (gigabit-per-second with nanosecond latency), and robustness (adversarial signals, distribution shift).<br>
-<br>
-## Further Reading<br>
-- DeepSig: AI-Native Wireless Communications<br>
-- PhysioNet: Open Medical Signal Datasets<br>
-- GNU Radio + TensorFlow: Software-Defined Radio + AI<br>
-</article></body>
-</html>

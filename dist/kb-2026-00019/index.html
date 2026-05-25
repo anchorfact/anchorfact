@@ -1,70 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>GraphRAG — AnchorFact</title>
-  <meta name="anchorfact:confidence" content="medium (0.76)">
-  <meta name="anchorfact:generation" content="ai_structured">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/kb-2026-00019","headline":"GraphRAG","description":"GraphRAG is a structured, hierarchical approach to Retrieval-Augmented Generation developed by Microsoft Research, open-sourced on July 2, 2024. Unlike standard RAG which retrieves flat text chunks via vector similarity, GraphRAG constructs a knowledge graph from raw text, detects communities using graph algorithms, and generates hierarchical summaries at multiple levels. This enables both local (entity-level) and global (dataset-level) query understanding. As of May 2026, the open-source repository has 33,157 GitHub stars and is deployed in Microsoft Discovery, an Azure-based agentic platform for scientific research.","dateCreated":"2026-05-22","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.76,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.9,"freshness":0.9,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.76,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":2,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["A","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"From Local to Global: A Graph RAG Approach to Query-Focused Summarization","author":"Edge, Trinh, Cheng, et al.","sameAs":"https://arxiv.org/abs/2404.16130","anchorfact:sourceTier":"A","anchorfact:year":2024},{"@type":"CreativeWork","name":"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks","author":"Lewis, Perez, Piktus, et al.","sameAs":"https://arxiv.org/abs/2005.11401","anchorfact:sourceTier":"A","anchorfact:year":2020}]}</script>
-</head>
-<body><article>## TL;DR<br>
-<br>
-GraphRAG is a structured, hierarchical approach to Retrieval-Augmented Generation developed by Microsoft Research, open-sourced on July 2, 2024. Unlike standard RAG which retrieves flat text chunks via vector similarity, GraphRAG constructs a knowledge graph from raw text, detects communities using graph algorithms, and generates hierarchical summaries at multiple levels. This enables both local (entity-level) and global (dataset-level) query understanding. As of May 2026, the open-source repository has 33,157 GitHub stars and is deployed in Microsoft Discovery, an Azure-based agentic platform for scientific research.<br>
-<br>
-## Core Explanation<br>
-<br>
-Standard RAG retrieves the top-k most semantically similar text chunks and feeds them to an LLM. This works well for factoid questions ("What is X?") but fails on global queries that require synthesizing information across an entire dataset ("What are the main themes in these 1,000 documents?"). GraphRAG solves this by:<br>
-<br>
-1. **Entity and Relationship Extraction**: LLM extracts entities and relationships from source documents<br>
-2. **Knowledge Graph Construction**: Entities become nodes, relationships become edges<br>
-3. **Community Detection**: Graph algorithms (Leiden community detection) identify clusters of related entities<br>
-4. **Hierarchical Summarization**: LLM generates summaries at community, sub-community, and entity levels<br>
-5. **Dual Search Modes**:<br>
-   - **Local Search**: Entity-focused queries use the entity's neighborhood in the graph<br>
-   - **Global Search**: Dataset-level queries use community summaries to answer broad thematic questions<br>
-<br>
-## Development Timeline<br>
-<br>
-| Date         | Milestone                                                            |<br>
-| ------------ | -------------------------------------------------------------------- |<br>
-| Feb 13, 2024 | First blog post: "Unlocking LLM discovery on narrative private data" |<br>
-| Jul 2, 2024  | **Open-sourced on GitHub**                                           |<br>
-| Sep 9, 2024  | Auto-tuning: automatic parameter optimization for new domains        |<br>
-| Oct 31, 2024 | **DRIFT Search**: combines global and local search                   |<br>
-| Nov 15, 2024 | Dynamic community selection for improved global search               |<br>
-| Nov 25, 2024 | **LazyGraphRAG**: cost-optimized variant                             |<br>
-| Dec 16, 2024 | **GraphRAG 1.0** official release                                    |<br>
-| Mar 19, 2025 | Claimify: high-quality claim extraction                              |<br>
-| Jun 5, 2025  | BenchmarkQED: automated RAG benchmarking                             |<br>
-| Aug 5, 2025  | **VeriTrail**: hallucination detection and attribution               |<br>
-| May 2026     | 33,157 GitHub stars, deployed in Microsoft Discovery                 |<br>
-<br>
-## Comparison: Standard RAG vs. GraphRAG<br>
-<br>
-| Dimension        | Standard RAG                                  | GraphRAG                                                       |<br>
-| ---------------- | --------------------------------------------- | -------------------------------------------------------------- |<br>
-| Data structure   | Flat vector chunks                            | Knowledge graph (entities + relations)                         |<br>
-| Retrieval method | Semantic similarity (vector search)           | Graph traversal + community detection + vector search          |<br>
-| Query types      | Local (factoid)                               | **Both local and global** (dataset-level synthesis)            |<br>
-| Explainability   | Retrieved chunks                              | Graph paths, community summaries, entity relationships         |<br>
-| Information loss | Chunk boundaries may fragment connected ideas | Entity-relationship model preserves document-level connections |<br>
-| Cost             | Lower (single retrieval + generation)         | Higher (graph construction + multi-level summarization)        |<br>
-<br>
-## Key Components<br>
-<br>
-- **LazyGraphRAG** (Nov 2024): Reduces indexing costs by 100x compared to full GraphRAG while maintaining quality — uses lightweight embedding-based graph construction instead of full LLM extraction<br>
-- **DRIFT Search** (Oct 2024): Hybrid search combining global community summaries with local entity-level retrieval<br>
-- **VeriTrail** (Aug 2025): Attribution framework that traces each generated claim back to source documents, detecting hallucinations<br>
-- **Claimify** (Mar 2025): Extracts structured, verifiable claims from LLM outputs for downstream verification<br>
-<br>
-## Production Deployment<br>
-<br>
-Microsoft Discovery (built on Azure) integrates GraphRAG and LazyGraphRAG for scientific research — an agentic platform that helps researchers query and synthesize insights across large document corpora. A Solution Accelerator (API experience on Azure) is available for enterprise deployment, though the original accelerator has been archived in favor of the core library.<br>
-<br>
-## Further Reading<br>
-<br>
-- [GraphRAG GitHub](https://github.com/microsoft/graphrag): Open-source repository (33K+ stars)<br>
-- [Microsoft Research Project Page](https://www.microsoft.com/en-us/research/project/graphrag/): Official overview and publications<br>
-- [GraphRAG Paper](https://www.microsoft.com/en-us/research/publication/from-local-to-global-a-graph-rag-approach-to-query-focused-summarization/): From Local to Global — A Graph RAG Approach<br>
-</article></body>
-</html>

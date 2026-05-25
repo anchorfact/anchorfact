@@ -1,24 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>AI for Genomics: Single-Cell Foundation Models and RNA Biology — AnchorFact</title>
-  <meta name="anchorfact:confidence" content="high (0.85)">
-  <meta name="anchorfact:generation" content="ai_structured">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"article","@id":"https://anchorfact.org/kb/ai-for-genomics","headline":"AI for Genomics: Single-Cell Foundation Models and RNA Biology","description":"AI foundation models trained on massive genomic datasets — from single-cell RNA sequencing of millions of cells to full RNA transcriptomes — are revolutionizing genomics. These models learn universal biological representations, enabling zero-shot cell typing, perturbation prediction, and de novo RNA design that were previously impossible without labor-intensive experiments.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"high","anchorfact:confidenceScore":0.85,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":1,"source_count":0.8,"source_verified":1,"freshness":1,"decay":0.1,"based_on":"verified_sources"},"confidence_level":"high","confidence_score":0.85,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":2,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["S","S"],"sources_has_doi":true,"sources_has_url":true,"article_has_disputed":false,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Single-cell foundation models: bringing artificial intelligence to single-cell biology","sameAs":"https://www.nature.com/articles/s12276-025-01547-5","anchorfact:sourceTier":"S","anchorfact:year":2025},{"@type":"CreativeWork","name":"AI foundation models for RNA biology","sameAs":"https://www.tandfonline.com/doi/full/10.1080/15476286.2026.2650517","anchorfact:sourceTier":"S","anchorfact:year":2026}]}</script>
-</head>
-<body><article>## TL;DR<br>
-AI foundation models trained on massive genomic datasets — from single-cell RNA sequencing of millions of cells to full RNA transcriptomes — are revolutionizing genomics. These models learn universal biological representations, enabling zero-shot cell typing, perturbation prediction, and de novo RNA design that were previously impossible without labor-intensive experiments.<br>
-<br>
-## Core Explanation<br>
-Single-cell genomics generates high-dimensional data: gene expression profiles for individual cells (20,000+ genes × millions of cells). Traditional analysis clusters cells by expression similarity and manually annotates cell types. AI foundation models (scGPT, scBERT, Geneformer, scFoundation) pretrain on massive scRNA-seq compendia using transformer architectures with gene-as-token representations. Key capabilities: (1) Cell type annotation — zero-shot classification of novel cell populations without labeled training data; (2) Perturbation prediction — predict how gene expression changes when specific genes are knocked out or drugs are applied; (3) Cross-species transfer — apply knowledge from mouse to human cell atlases; (4) Gene program discovery — identify co-regulated gene modules across conditions.<br>
-<br>
-## Detailed Analysis<br>
-scGPT (2023, Toronto) uses a generative pretraining objective — masking gene expression values and predicting them from context, analogous to BERT's masked language modeling. scBERT adapts the BERT architecture with gene-specific tokenization. Geneformer (Theodoris et al., 2023, Nature) demonstrated that pretraining on 30M single-cell transcriptomes enables context-aware gene network predictions. ESM-2 and ESM-3 (Meta/EvolutionaryScale, 2023-2024) extended the paradigm to protein sequences, generating functional proteins at scale. RNA foundation models (2026) integrate sequence, secondary structure, and experimental binding data, predicting RNA-small molecule interactions critical for RNA-targeted therapeutics. Key infrastructure: the Human Cell Atlas (HCA), Tabula Sapiens, and CELLxGENE provide the training data; BioLLM (2025, ScienceDirect) standardizes single-cell analysis pipelines. Critical challenge: batch effects across labs and sequencing platforms degrade model generalization; specialized normalization and harmonization methods remain active research areas.<br>
-<br>
-## Further Reading<br>
-- Geneformer: Transfer Learning for Gene Networks (Theodoris et al., Nature 2023)<br>
-- scGPT GitHub: bowang-lab/scGPT<br>
-- HCA: Human Cell Atlas Data Portal<br>
-</article></body>
-</html>

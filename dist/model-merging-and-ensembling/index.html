@@ -1,23 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Model Merging, Mixture of Experts, and Efficient Ensembling — AnchorFact</title>
-  <meta name="anchorfact:confidence" content="medium (0.71)">
-  <meta name="anchorfact:generation" content="ai_structured">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/model-merging-and-ensembling","headline":"Model Merging, Mixture of Experts, and Efficient Ensembling","description":"Model merging and mixture of experts challenge the \"one model to rule them all\" assumption. Merging combines strengths of multiple fine-tuned models; MoE activates specialized sub-networks per input — both maximizing capability per parameter.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.71,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.7,"freshness":0.9,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.71,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":1,"sources_unreachable":1,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["A","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Model Soups: Averaging Weights of Multiple Fine-Tuned Models Improves Accuracy","sameAs":"https://arxiv.org/abs/2203.05482","anchorfact:sourceTier":"A","anchorfact:year":2022},{"@type":"CreativeWork","name":"DeepSeek-V3 Technical Report","sameAs":"https://arxiv.org/abs/2412.19437","anchorfact:sourceTier":"A","anchorfact:year":2024}]}</script>
-</head>
-<body><article>## TL;DR<br>
-Model merging and mixture of experts challenge the "one model to rule them all" assumption. Merging combines strengths of multiple fine-tuned models; MoE activates specialized sub-networks per input — both maximizing capability per parameter.<br>
-<br>
-## Core Explanation<br>
-Model merging methods: weight averaging (simple arithmetic mean), SLERP (spherical interpolation for smoother transitions), TIES-merging (resolve sign conflicts before averaging), DARE (drop and rescale — prune small delta weights). These techniques enable zero-cost model combination without retraining.<br>
-<br>
-## Detailed Analysis<br>
-MoE routing: a learned gating network selects top-k experts per token. Load balancing loss ensures experts are used evenly. Capacity factor prevents one expert from being overwhelmed. Mixtral 8×7B (8 experts, 2 active) matches Llama 2 70B performance at inference speed of a 12B model.<br>
-<br>
-## Further Reading<br>
-- Hugging Face: Model Merging Guide<br>
-- MergeKit Library<br>
-- Mistral AI: Mixtral Blog</article></body>
-</html>

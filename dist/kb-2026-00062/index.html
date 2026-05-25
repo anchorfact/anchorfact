@@ -1,49 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>LoRA (Low-Rank Adaptation) — AnchorFact</title>
-  <meta name="anchorfact:confidence" content="medium (0.725)">
-  <meta name="anchorfact:generation" content="ai_structured">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/kb-2026-00062","headline":"LoRA (Low-Rank Adaptation)","description":"LoRA (Low-Rank Adaptation) is a parameter-efficient fine-tuning method for large language models, introduced by Hu et al. from Microsoft in 2021 (arXiv:2106.09685, 19,123 citations as of May 2026). Instead of updating all model parameters during fine-tuning, LoRA injects small, trainable low-rank matrices into the model's weight layers, reducing trainable parameters by up to 10,000x while maintaining near full-fine-tuning performance. The method has become the dominant fine-tuning approach in the open-source LLM community, with 13,547 GitHub stars.","dateCreated":"2026-05-22","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.725,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":1,"source_count":0.8,"source_verified":0.7,"freshness":0.7,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.725,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":1,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["S","C"],"sources_has_doi":true,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"LoRA: Low-Rank Adaptation of Large Language Models","author":"Hu, Edward J., Shen, Yelong, Wallis, Phillip, Allen-Zhu, Zeyuan, Li, Yuanzhi, Wang, Shean, Wang, Lu, Chen, Weizhu","sameAs":"https://arxiv.org/abs/2106.09685","anchorfact:sourceTier":"S","anchorfact:year":2021},{"@type":"CreativeWork","name":"LoRA GitHub Repository","sameAs":"https://github.com/microsoft/LoRA","anchorfact:sourceTier":"C","anchorfact:year":null}]}</script>
-</head>
-<body><article>## TL;DR<br>
-<br>
-LoRA (Low-Rank Adaptation) is a parameter-efficient fine-tuning method for large language models, introduced by Hu et al. from Microsoft in 2021 (arXiv:2106.09685, 19,123 citations as of May 2026). Instead of updating all model parameters during fine-tuning, LoRA injects small, trainable low-rank matrices into the model's weight layers, reducing trainable parameters by up to 10,000x while maintaining near full-fine-tuning performance. The method has become the dominant fine-tuning approach in the open-source LLM community, with 13,547 GitHub stars.<br>
-<br>
-## Core Explanation<br>
-<br>
-Standard fine-tuning of a large model (e.g., Llama 70B) requires updating all 70 billion parameters per training step — computationally prohibitive for most individuals and small teams. LoRA's key insight is that weight updates during fine-tuning have low "intrinsic rank" — meaning the effective change to a weight matrix W can be represented as a low-rank decomposition:<br>
-<br>
-```<br>
-W' = W + ΔW  where ΔW = B · A<br>
-```<br>
-<br>
-- W: Original weight matrix (frozen, d × k)<br>
-- A: Down-projection matrix (trainable, r × k, where r << d,k)<br>
-- B: Up-projection matrix (trainable, d × r)<br>
-<br>
-For a typical LoRA configuration (r=8 or r=16 on attention projection matrices), the number of trainable parameters drops from billions to millions. This enables fine-tuning 70B models on a single consumer GPU.<br>
-<br>
-## Key Advantages<br>
-<br>
-- **Parameter efficiency**: Train 0.1-1% of original parameters<br>
-- **No inference latency**: LoRA weights can be merged into the base model (W' = W + BA)<br>
-- **Task switching**: Multiple LoRA adapters can be hot-swapped without reloading the base model<br>
-- **Storage efficiency**: LoRA adapter is typically 5-50 MB vs. 140+ GB for full model weights<br>
-<br>
-## Variants<br>
-<br>
-| Variant                           | Innovation                                                                     |<br>
-| --------------------------------- | ------------------------------------------------------------------------------ |<br>
-| **QLoRA** (Dettmers et al., 2023) | Adds 4-bit quantization to LoRA, enabling 65B fine-tuning on a single 48GB GPU |<br>
-| **DoRA** (Liu et al., 2024)       | Decomposes weight updates into magnitude + direction for better alignment      |<br>
-| **LoRA+**                         | Different learning rates for A and B matrices improve convergence              |<br>
-<br>
-## Further Reading<br>
-<br>
-- [LoRA Paper](https://arxiv.org/abs/2106.09685): Original paper by Hu et al.<br>
-- [LoRA GitHub](https://github.com/microsoft/LoRA): Official Microsoft implementation (13K+ stars)<br>
-- [QLoRA](https://arxiv.org/abs/2305.14314): Quantized LoRA for low-resource fine-tuning<br>
-</article></body>
-</html>

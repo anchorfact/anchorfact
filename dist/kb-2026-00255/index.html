@@ -1,26 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Vector Databases — AnchorFact</title>
-  <meta name="anchorfact:confidence" content="low (0.325)">
-  <meta name="anchorfact:generation" content="human_only">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/kb-2026-00255","headline":"Vector Databases","description":"Vector databases store and query high-dimensional vector embeddings for similarity search, powering AI applications (semantic search, RAG, recommendation). Instead of exact match, they find nearest neighbors using Approximate Nearest Neighbor (ANN) algorithms. Key players: Pinecone, Weaviate, Qdrant, Milvus, pgvector (PostgreSQL extension).","dateCreated":"2026-05-22","dateModified":"2026-05-25T12:59:32.206Z","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"low","anchorfact:confidenceScore":0.325,"anchorfact:generationMethod":"human_only","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.3,"source_count":0.5,"source_verified":0.2,"freshness":1,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"low","confidence_score":0.325,"confidence_basis":"verified_sources","sources_total":1,"sources_verified":0,"sources_unreachable":1,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["C"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"ACM Digital Library","sameAs":"https://dl.acm.org/","anchorfact:sourceTier":"C","anchorfact:year":2026}]}</script>
-</head>
-<body><article><br>
-<br>
-<br>
-<br>
-## TL;DR<br>
-<br>
-Vector databases store and query high-dimensional vector embeddings for similarity search, powering AI applications (semantic search, RAG, recommendation). Instead of exact match, they find nearest neighbors using Approximate Nearest Neighbor (ANN) algorithms. Key players: Pinecone, Weaviate, Qdrant, Milvus, pgvector (PostgreSQL extension).<br>
-<br>
-## Core Explanation<br>
-<br>
-Embedding: text/image/audio → vector (768-3072 dimensions). Similarity metrics: cosine similarity, Euclidean distance, dot product. ANN algorithms: HNSW (hierarchical navigable small world graphs — most popular), IVF (inverted file index), PQ (product quantization for compression). pgvector: add vector search to PostgreSQL — `SELECT * FROM items ORDER BY embedding <=> query_vector LIMIT 10`. Hybrid search: vector similarity + keyword/BM25 (Weaviate).<br>
-<br>
-## Further Reading<br>
-<br>
-- [Pinecone Documentation](undefined)<br>
-</article></body>
-</html>

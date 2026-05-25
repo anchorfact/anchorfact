@@ -1,26 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Package Managers (npm, yarn, pnpm) — AnchorFact</title>
-  <meta name="anchorfact:confidence" content="low (0.5)">
-  <meta name="anchorfact:generation" content="human_only">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/kb-2026-00173","headline":"Package Managers (npm, yarn, pnpm)","description":"Package managers automate dependency installation, version management, and script execution. npm (Node Package Manager) is the default for Node.js with 2M+ packages. Yarn (Facebook, 2016) added deterministic installs via lockfiles. pnpm (2017) saves disk space via content-addressable storage (symlinked node_modules).","dateCreated":"2026-05-22","dateModified":"2026-05-25T12:59:32.102Z","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"low","anchorfact:confidenceScore":0.5,"anchorfact:generationMethod":"human_only","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.3,"source_count":0.5,"source_verified":0.9,"freshness":1,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"low","confidence_score":0.5,"confidence_basis":"verified_sources","sources_total":1,"sources_verified":1,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["C"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"npm Documentation","sameAs":"https://docs.npmjs.com/","anchorfact:sourceTier":"C","anchorfact:year":2026}]}</script>
-</head>
-<body><article><br>
-<br>
-<br>
-<br>
-## TL;DR<br>
-<br>
-Package managers automate dependency installation, version management, and script execution. npm (Node Package Manager) is the default for Node.js with 2M+ packages. Yarn (Facebook, 2016) added deterministic installs via lockfiles. pnpm (2017) saves disk space via content-addressable storage (symlinked node_modules).<br>
-<br>
-## Core Explanation<br>
-<br>
-`package.json`: dependencies (runtime), devDependencies (build/test), peerDependencies (host provides), optionalDependencies. Semantic versioning (semver): MAJOR.MINOR.PATCH. `^1.2.3` allows minor/patch updates; `~1.2.3` allows patch only. `package-lock.json` pins exact versions for reproducible builds. `npx` runs packages without installing.<br>
-<br>
-## Further Reading<br>
-<br>
-- [npm Documentation](https://docs.npmjs.com/)<br>
-</article></body>
-</html>

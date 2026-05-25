@@ -1,35 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Game Networking Architecture — AnchorFact</title>
-  <meta name="anchorfact:confidence" content="low (0.51)">
-  <meta name="anchorfact:generation" content="ai_structured">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/game-networking","headline":"Game Networking Architecture","description":"Multiplayer game networking delivers responsive real-time interaction over unreliable networks. The core challenges are latency compensation, state synchronization, and cheat prevention — solved through authoritative servers and client-side prediction.","dateCreated":"2026-05-24","dateModified":"2026-05-25T12:59:32.266Z","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"low","anchorfact:confidenceScore":0.51,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.3,"source_count":0.8,"source_verified":0.9,"freshness":0.5,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"low","confidence_score":0.51,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":2,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["C","C"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Multiplayer Game Programming","sameAs":"https://www.pearson.com/en-us/subject-catalog/p/multiplayer-game-programming/P200000009344","anchorfact:sourceTier":"C","anchorfact:year":2015},{"@type":"CreativeWork","name":"Source Multiplayer Networking","sameAs":"https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking","anchorfact:sourceTier":"C","anchorfact:year":2020}]}</script>
-</head>
-<body><article>## TL;DR<br>
-Multiplayer game networking delivers responsive real-time interaction over unreliable networks. The core challenges are latency compensation, state synchronization, and cheat prevention — solved through authoritative servers and client-side prediction.<br>
-<br>
-## Core Architecture<br>
-<br>
-### Authoritative Server Model<br>
-The server is the sole authority on game state. Clients send input commands; the server processes them and broadcasts results. This prevents client-side cheating (speed hacks, wallhacks) because the server validates every action.<br>
-<br>
-### Client-Side Prediction<br>
-Players would experience unacceptable input lag (100-200ms) waiting for server confirmation. Instead, clients predict their own movement immediately and reconcile when the server's version arrives. Mispredictions cause rubber-banding — the visual snapback when correction occurs.<br>
-<br>
-### Interpolation and Lag Compensation<br>
-Other players' positions are interpolated between the last two known states, displayed slightly behind real-time (typically 100ms). This creates smooth movement at the cost of slight delay. Lag compensation rewinds server state to the client's perceived time for hit detection.<br>
-<br>
-### State Synchronization Strategies<br>
-- **Full state sync**: Send entire world state each tick (expensive, simple)<br>
-- **Delta compression**: Send only changed fields (efficient, complex)<br>
-- **Interest management**: Send only entities relevant to each player<br>
-<br>
-## Transport Layer<br>
-UDP dominates game networking because:<br>
-- No head-of-line blocking (lost packets don't stall the stream)<br>
-- Application-level reliability control (resend only what matters)<br>
-- Lower latency than TCP (no connection handshake per packet)<br>
-</article></body>
-</html>

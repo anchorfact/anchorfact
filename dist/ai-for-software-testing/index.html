@@ -1,24 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>AI for Software Testing: Automated Test Generation, Fuzzing, and Quality Assurance — AnchorFact</title>
-  <meta name="anchorfact:confidence" content="medium (0.79)">
-  <meta name="anchorfact:generation" content="ai_structured">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"article","@id":"https://anchorfact.org/kb/ai-for-software-testing","headline":"AI for Software Testing: Automated Test Generation, Fuzzing, and Quality Assurance","description":"AI is transforming software testing -- from LLMs generating unit tests from code comments to AI-powered fuzzing finding security vulnerabilities in production systems. Test automation, once brittle and maintenance-heavy, is becoming intelligent: tests that write themselves, adapt to UI changes, and find bugs humans would miss.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.79,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.9,"freshness":1,"decay":0.1,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.79,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":2,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["A","C"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":false,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"The Future of Software Testing: AI-Powered Test Case Generation and Validation","sameAs":"https://link.springer.com/chapter/10.1007/978-3-031-92605-1_18","anchorfact:sourceTier":"A","anchorfact:year":2025},{"@type":"CreativeWork","name":"AI in QA Testing: Tools, Use Cases, and Future -- Complete Guide 2026","sameAs":"https://quashbugs.com/blog/ai-in-qa-the-complete-guide-to-ai-powered-testing-2026","anchorfact:sourceTier":"C","anchorfact:year":2026}]}</script>
-</head>
-<body><article>## TL;DR<br>
-AI is transforming software testing -- from LLMs generating unit tests from code comments to AI-powered fuzzing finding security vulnerabilities in production systems. Test automation, once brittle and maintenance-heavy, is becoming intelligent: tests that write themselves, adapt to UI changes, and find bugs humans would miss.<br>
-<br>
-## Core Explanation<br>
-Testing automation levels: (1) Unit testing -- LLM-based: prompt with function code, generates test cases with edge cases; (2) Integration/API testing -- AI generates API call sequences and validates responses; (3) End-to-end (E2E) testing -- AI-driven: record user sessions, replay with variations; (4) Fuzzing -- ML-guided fuzzing (LibFuzzer + reinforcement learning) learns input structures that maximize code coverage; (5) Visual regression testing -- AI compares screenshots pixel-by-pixel, detecting unintended visual changes with perceptual diff algorithms.<br>
-<br>
-## Detailed Analysis<br>
-LLM-based test generation: Codex/GPT-4 produce test cases from function signatures and docstrings. Challenges: (1) Oracle problem -- generating test inputs is easy, determining expected outputs is hard. Solutions: property-based testing (generate inputs, check invariants), differential testing (compare output across implementations), and metamorphic testing; (2) Coverage -- LLMs tend to generate happy path tests. Coverage-guided approaches: run generated tests, measure code coverage, feed uncovered branches back to LLM. Symbolic execution (KLEE) complements LLMs by systematically exploring all program paths. Fuzzing evolution: dumb fuzzing (random bytes) to coverage-guided (AFL, LibFuzzer -- instrument code, mutate inputs reaching new code) to ML-guided (NEUZZ, MTFuzz -- neural networks predict which mutations increase coverage). Google OSS-Fuzz: continuous ML-guided fuzzing on 700+ open-source projects, 40,000+ bugs found. Self-healing tests: when UI elements change, AI matches new elements by visual similarity, text content, and structural position.<br>
-<br>
-## Further Reading<br>
-- Google OSS-Fuzz: Continuous Fuzzing for Open Source<br>
-- CodiumAI: AI-Powered Test Generation<br>
-- Applitools: AI Visual Testing and Monitoring<br>
-</article></body>
-</html>

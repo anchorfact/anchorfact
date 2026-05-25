@@ -1,102 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Diffusion Models — AnchorFact</title>
-  <meta name="anchorfact:confidence" content="medium (0.64)">
-  <meta name="anchorfact:generation" content="human_only">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/kb-2026-00009","headline":"Diffusion Models","description":"Diffusion models are generative models that create data (images, video, audio, 3D) by learning to reverse a gradual noise-adding process. Starting from pure random noise, they iteratively denoise toward a coherent output. Popularized by DDPM (Ho et al., 2020, UC Berkeley, 15,000+ citations on Google Scholar as of May 2026) and made practical by Stable Diffusion / Latent Diffusion Models (Rombach et al., 2022), diffusion has surpassed GANs as the dominant paradigm for high-quality image generation and has expanded to video (Sora), audio (AudioLDM), 3D (DreamFusion), and biology (AlphaFold 3).","dateCreated":"2026-05-22","dateModified":"2026-05-25T12:59:31.636Z","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.64,"anchorfact:generationMethod":"human_only","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":1,"source_count":1,"source_verified":0.2,"freshness":0.7,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.64,"confidence_basis":"verified_sources","sources_total":3,"sources_verified":0,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["S","S","S"],"sources_has_doi":true,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Denoising Diffusion Probabilistic Models (DDPM)","author":"Ho, Jonathan, Jain, Ajay, Abbeel, Pieter","sameAs":"https://arxiv.org/abs/2006.11239","anchorfact:sourceTier":"S","anchorfact:year":2020},{"@type":"CreativeWork","name":"High-Resolution Image Synthesis with Latent Diffusion Models (Stable Diffusion)","author":"Rombach, Robin, Blattmann, Andreas, Lorenz, Dominik, Esser, Patrick, Ommer, Björn","sameAs":"https://arxiv.org/abs/2112.10752","anchorfact:sourceTier":"S","anchorfact:year":2022},{"@type":"CreativeWork","name":"Score-Based Generative Modeling through Stochastic Differential Equations","author":"Song, Yang, Sohl-Dickstein, Jascha, Kingma, Diederik P., Kumar, Abhishek, Ermon, Stefano, Poole, Ben","sameAs":"https://arxiv.org/abs/2011.13456","anchorfact:sourceTier":"S","anchorfact:year":2021}]}</script>
-</head>
-<body><article><br>
-<br>
-## TL;DR<br>
-<br>
-Diffusion models are generative models that create data (images, video, audio, 3D) by learning to reverse a gradual noise-adding process. Starting from pure random noise, they iteratively denoise toward a coherent output. Popularized by DDPM (Ho et al., 2020, UC Berkeley, 15,000+ citations on Google Scholar as of May 2026) and made practical by Stable Diffusion / Latent Diffusion Models (Rombach et al., 2022), diffusion has surpassed GANs as the dominant paradigm for high-quality image generation and has expanded to video (Sora), audio (AudioLDM), 3D (DreamFusion), and biology (AlphaFold 3).<br>
-<br>
-## Core Explanation<br>
-<br>
-Diffusion models work in two phases:<br>
-<br>
-### Forward Process (Training)<br>
-<br>
-Starting from a real data point x₀ (an image), Gaussian noise is gradually added over T timesteps according to a predefined variance schedule β₁, ..., β_T:<br>
-<br>
-```<br>
-q(x_t | x_{t-1}) = N(x_t; √(1-β_t)·x_{t-1}, β_t·I)<br>
-```<br>
-<br>
-After T steps (typically T=1000), x_T is pure isotropic Gaussian noise. The model learns to predict the noise that was added at each step ε_θ(x_t, t) — essentially learning to reverse the destruction process:<br>
-<br>
-```<br>
-L = E_{x₀,ε,t}[||ε - ε_θ(x_t, t)||²]<br>
-```<br>
-<br>
-This is remarkably simple: the training objective is just a noise prediction regression. No adversarial dynamics, no mode collapse — just predicting which Gaussian noise was added at each step.<br>
-<br>
-### Reverse Process (Generation)<br>
-<br>
-Starting from pure noise x_T ~ N(0, I), the model iteratively removes predicted noise:<br>
-<br>
-```<br>
-x_{t-1} = (1/√(1-β_t)) · (x_t - (β_t/√(1-ᾱ_t))·ε_θ(x_t, t)) + σ_t·z<br>
-```<br>
-<br>
-Over T steps (or fewer using accelerated samplers like DDIM), this converges to a realistic data point. The process is a Markov chain: each step depends only on the previous state and the current timestep embedding.<br>
-<br>
-## Detailed Analysis<br>
-<br>
-### Why Diffusion Superseded GANs<br>
-<br>
-| Property | GANs | Diffusion Models |<br>
-|----------|:----:|:----------------:|<br>
-| Training stability | Unstable (adversarial game) | Stable (simple regression loss) |<br>
-| Mode coverage | Prone to mode collapse | Naturally covers full data distribution |<br>
-| Sample diversity | Can be limited | High diversity |<br>
-| Quality at scale | Excellent (StyleGAN) | Excellent, scales predictably |<br>
-| Training/inference speed | Fast inference, slow training | Fast training, slow inference (mitigated by DDIM, LCM) |<br>
-| Controllability | Limited (requires conditional GAN) | Excellent (cross-attention conditioning) |<br>
-<br>
-The training stability advantage is decisive: GANs require careful balancing of generator and discriminator — if either becomes too strong, training collapses. Diffusion models avoid this entirely by framing generation as a denoising problem with a simple regression objective.<br>
-<br>
-### Latent Diffusion Models (Stable Diffusion)<br>
-<br>
-The original DDPM operates in pixel space, which is computationally prohibitive for high resolution. For a 1024×1024×3 image:<br>
-- Pixel-space diffusion: 3.1M dimensions per step × 1000 steps = enormous<br>
-- Latent diffusion (LDM): compress to 64×64×4 latent space via VAE → 16K dimensions<br>
-<br>
-This 200× compression reduces training time from GPU-weeks to GPU-hours while improving quality. The VAE encoder E maps images to latent codes; diffusion happens entirely in latent space; the VAE decoder D reconstructs the final image. Text conditioning is added via cross-attention with CLIP text embeddings at each U-Net layer.<br>
-<br>
-Stable Diffusion was trained on **LAION-5B**, a dataset of 5.85 billion image-text pairs scraped from the web, and released as open-source in August 2022 by Stability AI, RunwayML, and the CompVis group at LMU Munich. It democratized image generation: previous systems (DALL·E 2) required API access; Stable Diffusion ran on a consumer GPU.<br>
-<br>
-### Major Implementations Timeline<br>
-<br>
-| System | Developer | Release | Key Innovation |<br>
-|--------|-----------|:------:|---------------|<br>
-| DDPM | Ho et al. (UC Berkeley) | Jun 2020 | Proved diffusion can generate high-quality images |<br>
-| DALL·E 2 | OpenAI | Apr 2022 | CLIP-guided diffusion + inpainting |<br>
-| Stable Diffusion | Stability AI / CompVis | Aug 2022 | Latent diffusion, open-source, consumer GPU |<br>
-| Midjourney | Midjourney Inc. | Jul 2022 | Proprietary aesthetic tuning, Discord-native |<br>
-| Imagen | Google | May 2022 | Large frozen T5 text encoders for conditioning |<br>
-| DALL·E 3 | OpenAI | Oct 2023 | Captioner-to-image pipeline (GPT-4V integrated) |<br>
-| SDXL | Stability AI | Jul 2023 | 2.6B params, improved composition |<br>
-| Sora | OpenAI | Feb 2024 | Video diffusion via spacetime patches |<br>
-| Stable Diffusion 3 | Stability AI | Feb 2024 | MMDiT architecture (joint image-text transformer) |<br>
-| Flux | Black Forest Labs | Aug 2024 | Flow matching, 12B params, state-of-art quality |<br>
-<br>
-### Beyond Images<br>
-<br>
-| Domain | Representative Work | Key Approach |<br>
-|--------|-------------------|-------------|<br>
-| **Video** | Sora (OpenAI, 2024), Runway Gen-3 | Treats video as 3D grid of spacetime patches |<br>
-| **Audio** | AudioLDM (2023), MusicGen (Meta, 2023) | Latent diffusion on mel-spectrograms; text-to-music |<br>
-| **3D** | DreamFusion (Google, 2022), Zero123 (2023) | Score Distillation Sampling; multi-view diffusion |<br>
-| **Biology** | AlphaFold 3 (DeepMind, 2024) | Diffusion module for protein-ligand structure prediction |<br>
-| **Motion** | MDM (2023), MotionDiffuse (2023) | Human motion generation for animation and robotics |<br>
-<br>
-## Further Reading<br>
-<br>
-- [DDPM Paper](https://arxiv.org/abs/2006.11239): Original diffusion models paper (15K+ citations)<br>
-- [Stable Diffusion / LDM](https://arxiv.org/abs/2112.10752): Latent diffusion for efficient generation<br>
-- [Score-Based SDE](https://arxiv.org/abs/2011.13456): Unified framework for diffusion and score-based models<br>
-</article></body>
-</html>

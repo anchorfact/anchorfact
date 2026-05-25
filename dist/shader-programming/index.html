@@ -1,36 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Shader Programming Fundamentals — AnchorFact</title>
-  <meta name="anchorfact:confidence" content="low (0.59)">
-  <meta name="anchorfact:generation" content="ai_structured">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/shader-programming","headline":"Shader Programming Fundamentals","description":"Shaders are GPU programs that define how 3D geometry transforms into screen pixels. Vertex shaders position geometry; fragment shaders color each pixel. Modern real-time rendering relies entirely on custom shaders for lighting, materials, and effects.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"low","anchorfact:confidenceScore":0.59,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.3,"source_count":1,"source_verified":0.9,"freshness":0.9,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"low","confidence_score":0.59,"confidence_basis":"verified_sources","sources_total":3,"sources_verified":3,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["C","C","C"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Real-Time Rendering, 4th Edition","sameAs":"https://www.realtimerendering.com/","anchorfact:sourceTier":"C","anchorfact:year":2018},{"@type":"CreativeWork","name":"OpenGL Shading Language Specification","sameAs":"https://registry.khronos.org/OpenGL/specs/gl/GLSLangSpec.4.60.pdf","anchorfact:sourceTier":"C","anchorfact:year":2024},{"@type":"CreativeWork","name":"The Book of Shaders","sameAs":"https://thebookofshaders.com/","anchorfact:sourceTier":"C","anchorfact:year":2021}]}</script>
-</head>
-<body><article>## TL;DR<br>
-Shaders are GPU programs that define how 3D geometry transforms into screen pixels. Vertex shaders position geometry; fragment shaders color each pixel. Modern real-time rendering relies entirely on custom shaders for lighting, materials, and effects.<br>
-<br>
-## Shader Pipeline<br>
-<br>
-### Vertex Shader<br>
-Transforms 3D vertex positions from model space → world space → view space → clip space. Also computes per-vertex data (normals, UVs, tangents) for later stages.<br>
-<br>
-### Fragment (Pixel) Shader<br>
-Computes the final color of each pixel. This is where lighting models (Phong, PBR), texture sampling, normal mapping, and post-processing effects execute. Fragment shaders run millions of times per frame — optimization is critical.<br>
-<br>
-### Geometry and Tessellation Shaders<br>
-Optional pipeline stages for generating or subdividing geometry on the GPU. Tessellation dynamically adds detail to meshes based on camera distance for LOD effects.<br>
-<br>
-## Common Shader Techniques<br>
-- **Phong/Blinn-Phong**: Classic specular lighting model<br>
-- **PBR (Physically Based Rendering)**: Energy-conserving materials using roughness/metallic maps<br>
-- **Normal Mapping**: Simulates surface detail without extra geometry<br>
-- **Shadow Mapping**: Depth comparison from light's perspective<br>
-- **Screen-Space Effects**: Ambient occlusion, reflections, bloom<br>
-<br>
-## Performance Tips<br>
-- Avoid dynamic branching (if/else) when possible — GPUs execute all paths<br>
-- Prefer texture lookups over complex math in fragment shaders<br>
-- Batch draw calls by material/shader to minimize state changes<br>
-- Use mipmaps to reduce texture bandwidth at distance</article></body>
-</html>

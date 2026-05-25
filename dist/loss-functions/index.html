@@ -1,23 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Loss Functions in Machine Learning — AnchorFact</title>
-  <meta name="anchorfact:confidence" content="medium (0.67)">
-  <meta name="anchorfact:generation" content="ai_structured">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/loss-functions","headline":"Loss Functions in Machine Learning","description":"Loss functions quantify the difference between model predictions and ground truth, guiding optimization. Cross-entropy dominates classification; MSE dominates regression; specialized losses handle imbalanced, structured, or adversarial tasks.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.67,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.7,"freshness":0.5,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.67,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":1,"sources_unreachable":1,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["C","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Pattern Recognition and Machine Learning (Bishop)","sameAs":"https://link.springer.com/book/9780387310732","anchorfact:sourceTier":"C","anchorfact:year":2006},{"@type":"CreativeWork","name":"Focal Loss for Dense Object Detection","sameAs":"https://arxiv.org/abs/1708.02002","anchorfact:sourceTier":"A","anchorfact:year":2017}]}</script>
-</head>
-<body><article>## TL;DR<br>
-Loss functions quantify the difference between model predictions and ground truth, guiding optimization. Cross-entropy dominates classification; MSE dominates regression; specialized losses handle imbalanced, structured, or adversarial tasks.<br>
-<br>
-## Core Explanation<br>
-MSE (mean squared error) penalizes large errors quadratically — sensitive to outliers. MAE (mean absolute error) is more robust but has non-differentiable points. Huber loss combines both. For generative models, GAN losses (adversarial, Wasserstein) and diffusion losses (noise prediction) require task-specific formulations.<br>
-<br>
-## Detailed Analysis<br>
-Triplet loss (FaceNet, Schroff et al., 2015) learns embeddings by ensuring anchor-positive distance is less than anchor-negative by a margin. CTC loss (Connectionist Temporal Classification) handles sequence alignment without explicit segmentation — fundamental to speech recognition.<br>
-<br>
-## Further Reading<br>
-- PyTorch Loss Functions Documentation<br>
-- Papers With Code: Loss Functions<br>
-- Keras: Losses Guide</article></body>
-</html>

@@ -1,22 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Data Preprocessing — AnchorFact</title>
-  <meta name="anchorfact:confidence" content="low (0.465)">
-  <meta name="anchorfact:generation" content="ai_structured">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/kb-2026-00281","headline":"Data Preprocessing","description":"Data preprocessing cleans and prepares raw data for ML. Steps: handling missing values (drop, impute), outlier detection and treatment, encoding categorical variables, feature scaling, train/test splitting. Real-world data is messy — preprocessing typically consumes 60-80% of a data scientist's time.","dateCreated":"2026-05-22","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"low","anchorfact:confidenceScore":0.465,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.3,"source_count":1,"source_verified":0.4,"freshness":0.9,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"low","confidence_score":0.465,"confidence_basis":"verified_sources","sources_total":3,"sources_verified":1,"sources_unreachable":2,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["C","C","C"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Data Mining: Concepts and Techniques (Han, Pei, Tong, 4th Edition)","author":"Han, Jiawei, Pei, Jian, Tong, Hanghang","sameAs":"https://doi.org/10.1016/C2020-0-00008-4","anchorfact:sourceTier":"C","anchorfact:year":2022},{"@type":"CreativeWork","name":"Scikit-learn: Machine Learning in Python (Pedregosa et al. — JMLR)","author":"Pedregosa, Fabian, Varoquaux, Gaël, Gramfort, Alexandre, et al.","sameAs":"https://jmlr.org/papers/v12/pedregosa11a.html","anchorfact:sourceTier":"C","anchorfact:year":2011},{"@type":"CreativeWork","name":"A Survey on Data Preprocessing Methods for Machine Learning","author":"multiple","sameAs":"https://doi.org/10.1145/3635100","anchorfact:sourceTier":"C","anchorfact:year":2024}]}</script>
-</head>
-<body><article>## TL;DR<br>
-<br>
-Data preprocessing cleans and prepares raw data for ML. Steps: handling missing values (drop, impute), outlier detection and treatment, encoding categorical variables, feature scaling, train/test splitting. Real-world data is messy — preprocessing typically consumes 60-80% of a data scientist's time.<br>
-<br>
-## Core Explanation<br>
-<br>
-Missing data: MCAR (completely random), MAR (random given observed), MNAR (not random). Imputation: mean/median (simple), KNN (neighbor values), MICE (multiple imputation). Outliers: IQR method (Q1-1.5IQR, Q3+1.5IQR), Z-score (|z|>3). Data leakage: when training data contains information about test set — must prevent (e.g., scale AFTER splitting, not before).<br>
-<br>
-## Further Reading<br>
-<br>
-- [Python Data Science Handbook (Jake VanderPlas)](https://jakevdp.github.io/PythonDataScienceHandbook/)<br>
-</article></body>
-</html>

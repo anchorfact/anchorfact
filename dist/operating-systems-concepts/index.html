@@ -1,23 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Operating Systems: Processes, Memory, and File Systems — AnchorFact</title>
-  <meta name="anchorfact:confidence" content="low (0.51)">
-  <meta name="anchorfact:generation" content="ai_structured">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","@id":"https://anchorfact.org/kb/operating-systems-concepts","headline":"Operating Systems: Processes, Memory, and File Systems","description":"Operating systems manage hardware resources and provide abstractions for applications. Process scheduling, memory management, and file systems are the three pillars of OS design.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"low","anchorfact:confidenceScore":0.51,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.3,"source_count":0.8,"source_verified":0.9,"freshness":0.5,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"low","confidence_score":0.51,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":2,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["C","C"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Operating System Concepts, 10th Edition","sameAs":"https://www.wiley.com/en-us/Operating+System+Concepts%2C+10th+Edition-p-9781119320913","anchorfact:sourceTier":"C","anchorfact:year":2018},{"@type":"CreativeWork","name":"Modern Operating Systems, 4th Edition","sameAs":"https://www.pearson.com/en-us/subject-catalog/p/modern-operating-systems/P200000003295","anchorfact:sourceTier":"C","anchorfact:year":2014}]}</script>
-</head>
-<body><article>## TL;DR<br>
-Operating systems manage hardware resources and provide abstractions for applications. Process scheduling, memory management, and file systems are the three pillars of OS design.<br>
-<br>
-## Core Explanation<br>
-Process management: PCB (Process Control Block) stores process state. Context switching saves/restores CPU registers. Inter-process communication via pipes, message queues, shared memory, sockets. Threads share address space within a process — lighter weight but require synchronization (mutexes, semaphores).<br>
-<br>
-## Detailed Analysis<br>
-Memory: paging (fixed-size pages ← page table → frames), segmentation (logical divisions), TLB (translation lookaside buffer — hardware cache for page table entries). File systems: inodes store metadata, directories map names to inodes. Journaling file systems (ext4, NTFS) prevent corruption from crashes.<br>
-<br>
-## Further Reading<br>
-- OSTEP: Operating Systems: Three Easy Pieces (free)<br>
-- Linux Kernel Documentation<br>
-- Microsoft: Windows Internals</article></body>
-</html>

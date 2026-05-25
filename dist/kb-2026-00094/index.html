@@ -1,26 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Cross-Origin Resource Sharing (CORS) — AnchorFact</title>
-  <meta name="anchorfact:confidence" content="medium (0.745)">
-  <meta name="anchorfact:generation" content="human_only">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/kb-2026-00094","headline":"Cross-Origin Resource Sharing (CORS)","description":"CORS is a browser-enforced security mechanism that controls cross-origin HTTP requests. By default, browsers block cross-origin requests for security (same-origin policy). Servers opt-in via response headers: `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods`, `Access-Control-Allow-Headers`.","dateCreated":"2026-05-22","dateModified":"2026-05-25T12:59:31.939Z","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.745,"anchorfact:generationMethod":"human_only","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":1,"source_count":0.5,"source_verified":0.9,"freshness":1,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.745,"confidence_basis":"verified_sources","sources_total":1,"sources_verified":1,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["S"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Fetch Standard — CORS Protocol","sameAs":"https://fetch.spec.whatwg.org/#http-cors-protocol","anchorfact:sourceTier":"S","anchorfact:year":2026}]}</script>
-</head>
-<body><article><br>
-<br>
-<br>
-<br>
-## TL;DR<br>
-<br>
-CORS is a browser-enforced security mechanism that controls cross-origin HTTP requests. By default, browsers block cross-origin requests for security (same-origin policy). Servers opt-in via response headers: `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods`, `Access-Control-Allow-Headers`.<br>
-<br>
-## Core Explanation<br>
-<br>
-Preflight requests (OPTIONS) check permission before actual request for non-simple requests. Simple requests (GET/POST with standard headers) skip preflight. Credentials (cookies, HTTP auth) require `Access-Control-Allow-Credentials: true` and cannot use wildcard origins. CORS is enforced by the browser, not the server — server-side requests are not restricted.<br>
-<br>
-## Further Reading<br>
-<br>
-- [Fetch Standard — CORS Protocol](https://fetch.spec.whatwg.org/#http-cors-protocol)<br>
-</article></body>
-</html>

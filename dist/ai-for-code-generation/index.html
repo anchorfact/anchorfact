@@ -1,24 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>AI for Code Generation: LLMs as Software Engineering Copilots — AnchorFact</title>
-  <meta name="anchorfact:confidence" content="high (0.85)">
-  <meta name="anchorfact:generation" content="ai_structured">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"article","@id":"https://anchorfact.org/kb/ai-for-code-generation","headline":"AI for Code Generation: LLMs as Software Engineering Copilots","description":"AI code generation has evolved from simple line-level autocomplete to models that can understand entire codebases, fix bugs in production systems, and implement multi-file features from natural language descriptions. LLMs like GitHub Copilot, Claude Code, and Cursor are transforming software engineering by serving as always-available pair programmers.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"high","anchorfact:confidenceScore":0.85,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":1,"source_count":0.8,"source_verified":1,"freshness":1,"decay":0.1,"based_on":"verified_sources"},"confidence_level":"high","confidence_score":0.85,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":2,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["S","A"],"sources_has_doi":true,"sources_has_url":true,"article_has_disputed":false,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"A Survey on Large Language Models for Code Generation","sameAs":"https://dl.acm.org/doi/10.1145/3747588","anchorfact:sourceTier":"S","anchorfact:year":2026},{"@type":"CreativeWork","name":"SWE-bench: Can Language Models Resolve Real-World GitHub Issues?","sameAs":"https://arxiv.org/abs/2310.06770","anchorfact:sourceTier":"A","anchorfact:year":2024}]}</script>
-</head>
-<body><article>## TL;DR<br>
-AI code generation has evolved from simple line-level autocomplete to models that can understand entire codebases, fix bugs in production systems, and implement multi-file features from natural language descriptions. LLMs like GitHub Copilot, Claude Code, and Cursor are transforming software engineering by serving as always-available pair programmers.<br>
-<br>
-## Core Explanation<br>
-The journey of AI code generation: (1) Statistical language modeling of code (2015-2019) -- treating code as sequential text, models like code2vec learned semantic code representations for tasks like method name prediction; (2) Pre-trained code models (2020-2022) -- CodeBERT, PLBART, and CodeT5 applied the BART/T5 architecture to code, enabling code summarization, translation, and defect detection; (3) Decoder-only Code LLMs (2023-present) -- GPT-4, Claude, Code Llama, StarCoder, DeepSeek Coder, and Qwen Coder are autoregressive LLMs trained on trillions of code tokens, enabling instruction-following code generation and agentic software engineering.<br>
-<br>
-## Detailed Analysis<br>
-Key research directions: (1) Fill-in-the-middle (FIM) training -- models learn to predict missing code segments given surrounding context, enabling inline code completion; (2) Repository-level code understanding -- repo-level retrieval-augmented generation (RAG) indexes the entire codebase to provide relevant context when generating code for specific files; (3) Agentic coding -- models act as autonomous agents that read files, run commands, examine outputs, and iteratively refine code. SWE-bench evaluates this capability: agents are given a GitHub issue description and a full codebase snapshot, and must generate a correct patch. Production tools: GitHub Copilot (1.8M+ paid subscribers in 2024), Cursor (AI-native IDE, $10B valuation), Claude Code, Aider and OpenHands (open-source coding agents). Benchmarks: HumanEval, MBPP, LiveCodeBench, SWE-bench, CodeContests. The field is converging on "agentic coding" where AI actively participates in the full software development lifecycle.<br>
-<br>
-## Further Reading<br>
-- SWE-bench Leaderboard: swebench.com<br>
-- A Survey on Code Generation with LLM-based Agents (arxiv 2508.00083)<br>
-- GitHub Copilot / Cursor / Claude Code / Aider / OpenHands<br>
-</article></body>
-</html>

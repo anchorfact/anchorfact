@@ -1,24 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Deep Reinforcement Learning Algorithms: PPO, SAC, Dreamer, and Decision Transformer — AnchorFact</title>
-  <meta name="anchorfact:confidence" content="medium (0.78)">
-  <meta name="anchorfact:generation" content="ai_structured">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"article","@id":"https://anchorfact.org/kb/deep-reinforcement-learning-algorithms","headline":"Deep Reinforcement Learning Algorithms: PPO, SAC, Dreamer, and Decision Transformer","description":"Deep Reinforcement Learning has evolved from simple DQN to sophisticated algorithms: PPO dominates continuous control, SAC excels at sample-efficient exploration, Dreamer learns world models, and Decision Transformer reframes RL as sequence modeling.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.78,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.9,"freshness":0.9,"decay":0.1,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.78,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":2,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["A","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":false,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Proximal Policy Optimization Algorithms (PPO)","sameAs":"https://arxiv.org/abs/1707.06347","anchorfact:sourceTier":"A","anchorfact:year":2017},{"@type":"CreativeWork","name":"Mastering Diverse Domains through World Models (Dreamer v3)","sameAs":"https://arxiv.org/abs/2301.04104","anchorfact:sourceTier":"A","anchorfact:year":2024}]}</script>
-</head>
-<body><article>## TL;DR<br>
-Deep Reinforcement Learning has evolved from simple DQN to sophisticated algorithms: PPO dominates continuous control, SAC excels at sample-efficient exploration, Dreamer learns world models, and Decision Transformer reframes RL as sequence modeling.<br>
-<br>
-## Core Explanation<br>
-RL loop: agent observes state s, takes action a, receives reward r, transitions to s'. Goal: maximize cumulative reward. Algorithm families: (1) Value-based (DQN) — learn Q(s,a) values, act greedily; (2) Policy-based (REINFORCE) — directly optimize policy π(a|s); (3) Actor-critic (PPO, SAC) — combine both. PPO uses importance sampling with clipping for stable updates; SAC adds entropy bonus for exploration; Dreamer builds learned world model for planning.<br>
-<br>
-## Detailed Analysis<br>
-Offline RL trains from fixed datasets without environment interaction — Decision Transformer treats RL trajectories as sequences and uses causal self-attention: given return-to-go, past states, and past actions, predict next action. CQL (Conservative Q-Learning) prevents overestimation on out-of-distribution actions. Model-based RL (Dreamer, MuZero) learns environment dynamics for planning in latent space, dramatically improving sample efficiency.<br>
-<br>
-## Further Reading<br>
-- Spinning Up in Deep RL (OpenAI)<br>
-- Stable-Baselines3 Library<br>
-- RLHF in Practice<br>
-</article></body>
-</html>

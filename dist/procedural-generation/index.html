@@ -1,39 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Procedural Content Generation in Games — AnchorFact</title>
-  <meta name="anchorfact:confidence" content="medium (0.67)">
-  <meta name="anchorfact:generation" content="ai_structured">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/procedural-generation","headline":"Procedural Content Generation in Games","description":"Procedural content generation (PCG) uses algorithms to automatically create game content — terrain, levels, items, quests — replacing manual design with computational generation. It is fundamental to modern open-world and roguelike games.","dateCreated":"2026-05-24","dateModified":"2026-05-25T12:59:32.291Z","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.67,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.7,"freshness":0.5,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.67,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":1,"sources_unreachable":1,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["C","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Procedural Content Generation in Games","sameAs":"https://link.springer.com/book/10.1007/978-3-319-42716-4","anchorfact:sourceTier":"C","anchorfact:year":2016},{"@type":"CreativeWork","name":"An Image Synthesizer","sameAs":"https://dl.acm.org/doi/10.1145/325165.325247","anchorfact:sourceTier":"A","anchorfact:year":1985}]}</script>
-</head>
-<body><article>## TL;DR<br>
-Procedural content generation (PCG) uses algorithms to automatically create game content — terrain, levels, items, quests — replacing manual design with computational generation. It is fundamental to modern open-world and roguelike games.<br>
-<br>
-## Core Concepts<br>
-<br>
-### Noise-Based Generation<br>
-Perlin noise and Simplex noise are the backbone of terrain generation. These functions produce natural-looking gradient noise that, when layered at multiple octaves, creates realistic mountains, valleys, and cave systems.<br>
-<br>
-### L-Systems for Vegetation<br>
-Lindenmayer systems (L-systems) use recursive production rules to model plant growth. Starting from an axiom string, rules like F → F[+F]F[-F]F generate branching structures that resemble trees and foliage.<br>
-<br>
-### Wave Function Collapse (WFC)<br>
-WFC treats content generation as a constraint satisfaction problem. Input examples are analyzed to extract adjacency rules, then the algorithm propagates constraints to fill a grid with compatible tiles — producing coherent dungeons, towns, and textures.<br>
-<br>
-### Cellular Automata for Caves<br>
-Conway's Game of Life rules adapted for cave generation: cells with too few neighbors die (open space), cells with enough neighbors survive (walls), creating organic cave networks.<br>
-<br>
-## Applications<br>
-- **Roguelikes**: Random dungeon layouts, item placement, enemy spawning<br>
-- **Open-world games**: Terrain, vegetation, weather systems<br>
-- **Asset generation**: Texture synthesis, material creation<br>
-- **Narrative**: Quest generation, dialogue variation via grammar-based systems<br>
-<br>
-## Performance Considerations<br>
-Modern PCG must balance generation quality with runtime cost. Techniques include:<br>
-- Pre-generation during loading screens<br>
-- Chunk-based generation with LOD (level of detail)<br>
-- GPU-accelerated noise computation<br>
-- Seed-based determinism for reproducible worlds</article></body>
-</html>

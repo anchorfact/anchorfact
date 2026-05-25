@@ -1,22 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Linux Kernel Modules — AnchorFact</title>
-  <meta name="anchorfact:confidence" content="low (0.425)">
-  <meta name="anchorfact:generation" content="ai_structured">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/kb-2026-00264","headline":"Linux Kernel Modules","description":"Kernel modules extend Linux functionality without recompiling the kernel. `lsmod` lists loaded modules. `modprobe module` loads with dependencies. Kernel modules enable dynamic hardware support: load USB driver when device plugged, unload when removed. Modules run in kernel space (ring 0) — no safety net.","dateCreated":"2026-05-22","dateModified":"2026-05-25T12:59:32.062Z","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"low","anchorfact:confidenceScore":0.425,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.3,"source_count":1,"source_verified":0.2,"freshness":1,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"low","confidence_score":0.425,"confidence_basis":"verified_sources","sources_total":3,"sources_verified":0,"sources_unreachable":3,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["C","C","C"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"ACM Digital Library","sameAs":"https://dl.acm.org/","anchorfact:sourceTier":"C","anchorfact:year":2026},{"@type":"CreativeWork","name":"Linux Kernel Development (4th Edition, 2025)","author":"Love R.","sameAs":"https://www.informit.com/linux-kernel/","anchorfact:sourceTier":"C","anchorfact:year":2025},{"@type":"CreativeWork","name":"Understanding the Linux Kernel: 2025 Updated Guide","author":"multiple","sameAs":"https://www.oreilly.com/linux-kernel/","anchorfact:sourceTier":"C","anchorfact:year":2025}]}</script>
-</head>
-<body><article>## TL;DR<br>
-<br>
-Kernel modules extend Linux functionality without recompiling the kernel. `lsmod` lists loaded modules. `modprobe module` loads with dependencies. Kernel modules enable dynamic hardware support: load USB driver when device plugged, unload when removed. Modules run in kernel space (ring 0) — no safety net.<br>
-<br>
-## Core Explanation<br>
-<br>
-Commands: `lsmod` (list), `modprobe` (load with deps), `rmmod` (remove), `modinfo` (details). Module parameters: `modprobe module param=value`. Blacklisting: `/etc/modprobe.d/blacklist.conf` prevents auto-loading. DKMS (Dynamic Kernel Module Support): auto-rebuilds modules on kernel update. Writing kernel modules requires C and understanding of kernel APIs — crashes the whole system if buggy.<br>
-<br>
-## Further Reading<br>
-<br>
-- [Linux Kernel Module Programming Guide](undefined)<br>
-</article></body>
-</html>
