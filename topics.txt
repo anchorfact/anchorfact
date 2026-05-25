@@ -1,20 +1,20 @@
-self-improvement | Habit Formation: The Science of Building and Breaking Habits | https://jamesclear.com/atomic-habits
-self-improvement | Mindfulness Meditation: Scientific Foundations and Practice | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3679190/
-self-improvement | Resilience: The Psychology of Bouncing Back | https://www.apa.org/topics/resilience
-self-improvement | Procrastination: Causes, Consequences, and Interventions | https://www.apa.org/pubs/journals/releases/pro-0000061.pdf
-self-improvement | Motivation Theory: Intrinsic vs Extrinsic Drivers | https://selfdeterminationtheory.org/
-self-improvement | Conflict Resolution: Strategies and Techniques | https://www.beyondintractability.org/
-self-improvement | Creativity: The Cognitive Science of Innovation | https://mitpress.mit.edu/9780262535045/
-self-improvement | Mentoring and Coaching: Evidence-Based Practices | https://www.emccglobal.org/
-self-improvement | Grit: The Power of Passion and Perseverance | https://angeladuckworth.com/
-self-improvement | Growth Mindset: Theory and Applications | https://www.mindsetworks.com/science/
-sports | Marathon Training: Physiology, Programming, and Performance | https://www.runnersworld.com/
-sports | HIIT: High-Intensity Interval Training Science | https://www.acsm.org/
-sports | Yoga: Philosophy, Practice, and Health Benefits | https://www.yogaalliance.org/
-sports | Esports: Competitive Gaming as Athletic Performance | https://www.esportsobserver.com/
-sports | Sports Injury Prevention and Rehabilitation | https://www.nsca.com/
-sports | Extreme Sports: Risk, Reward, and Psychology | https://www.redbull.com/
-geography | World Climate Zones: Classification and Characteristics | https://www.ncei.noaa.gov/
-geography | Ocean Currents: The Global Conveyor Belt | https://www.noaa.gov/education/
-geography | Urban Geography: Cities, Megacities, and Urbanization | https://www.un.org/development/desa/
-health | Sleep Science: Circadian Rhythms and Health | https://www.sleepfoundation.org/
+health | Nutrition Science: Macronutrients, Micronutrients, and Dietary Guidelines | https://www.who.int/news-room/fact-sheets/detail/healthy-diet,https://ods.od.nih.gov/
+health | Epidemiology: Principles of Disease Surveillance and Outbreak Investigation | https://www.cdc.gov/eis/field-epi-manual/
+health | Vaccine Development: From Koch's Postulates to mRNA Revolution | https://www.nature.com/articles/s41586-021-03645-y
+health | Mental Health: Global Burden, Treatment, and Stigma | https://www.who.int/health-topics/mental-health
+health | Cardiovascular Disease: Atherosclerosis, Risk Factors, and Prevention | https://www.heart.org/en/health-topics
+health | Cancer Biology: Hallmarks of Cancer and Modern Therapies | https://www.cancer.gov/about-cancer/understanding
+geography | Amazon Rainforest: Biodiversity, Carbon Storage, and Threats | https://www.worldwildlife.org/places/amazon
+geography | World Water Crisis: Scarcity, Access, and Geopolitics | https://www.unwater.org/water-facts/
+geography | Migration Patterns: Push-Pull Factors and Global Trends | https://www.iom.int/data-and-research
+geography | Renewable Energy Geography: Solar, Wind, and Hydroelectric Distribution | https://www.irena.org/Data
+sports | Running Biomechanics: Gait Analysis, Foot Strike, and Efficiency | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4934825/
+sports | Strength Training: Physiology of Hypertrophy and Neural Adaptation | https://www.nsca.com/education/
+sports | Swimming Science: Hydrodynamics, Stroke Mechanics, and Drag Reduction | https://www.usaswimming.org/
+sports | Football (Soccer) Analytics: Expected Goals (xG) and Tactical Data Science | https://statsbomb.com/soccer-metrics/
+ai | AI for Protein Structure Prediction: AlphaFold and the Folding Revolution | https://www.nature.com/articles/s41586-021-03819-2,https://alphafold.ebi.ac.uk/
+ai | AI for Autonomous Vehicles: Perception, Planning, and Safety | https://waymo.com/research/,https://arxiv.org/abs/2306.16147
+ai | Multimodal AI: Vision-Language Models from CLIP to GPT-4V | https://arxiv.org/abs/2304.08485,https://openai.com/research/gpt-4v
+ai | AI for Chip Design: Reinforcement Learning for EDA and Floorplanning | https://www.nature.com/articles/s41586-021-03544-w
+ai | Graph Neural Networks: Message Passing, Applications, and Frontiers | https://arxiv.org/abs/1810.00826,https://distill.pub/2021/gnn-intro/
+ai | Reinforcement Learning: From Q-Learning to RLHF | https://arxiv.org/abs/1312.5602,https://arxiv.org/abs/1707.06347
