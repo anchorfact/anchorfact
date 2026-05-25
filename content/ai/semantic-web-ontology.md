@@ -26,7 +26,7 @@ created_date: "2026-05-24"
 data_period: static
 derived_from_human_seed: true
 disputed_statements: []
-generation_method: ai_assisted
+generation_method: ai_structured
 id: semantic-web-ontology
 is_live_document: false
 known_gaps:

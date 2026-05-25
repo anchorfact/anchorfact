@@ -1,18 +1,22 @@
 {
   "name": "anchorfact",
-  "version": "0.1.0",
-  "description": "Anchor AI to Facts — AI-native knowledge base for LLM citations",
+  "version": "0.2.0",
+  "description": "Anchor AI to Facts — AI-structured knowledge base for LLM citations. Trust anchored in verifiable sources.",
   "type": "module",
   "scripts": {
     "build": "node src/compile.js content dist",
+    "verify": "node src/verify-sources.js content verification-report.json",
+    "pipeline": "npm run verify && npm run build",
     "serve": "node src/serve.js",
-    "deploy": "node src/compile.js content dist && wrangler pages deploy dist"
+    "deploy": "npm run pipeline && wrangler pages deploy dist"
   },
   "keywords": [
     "geo",
     "knowledge-base",
     "llm",
     "ai-citations",
+    "structured-data",
+    "source-verification",
     "open-source"
   ],
   "license": "MIT",
@@ -21,7 +25,9 @@
     "type": "git",
     "url": "https://github.com/anchorfact/anchorfact.git"
   },
-  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
     "js-yaml": "^4.1.1"
   }

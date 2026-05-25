@@ -7,7 +7,7 @@ language: en
 confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
-generation_method: ai_assisted
+generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
 derived_from_human_seed: true
