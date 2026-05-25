@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-customer-analytics>
+  a schema:article ;
+  schema:headline "AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-customer-analytics>
+  schema:citation <https://arxiv.org/search/?query=customer+analytics+churn+prediction+CLV> .
+
+<https://anchorfact.org/kb/ai-customer-analytics>
+  schema:citation <https://arxiv.org/search/?query=uplift+modeling+next+best+action> .

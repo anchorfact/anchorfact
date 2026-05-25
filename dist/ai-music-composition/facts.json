@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-music-composition-1",
+    "text": "AI music generation (2023-2026): Suno AI and Udio (2024-2025) produce full songs with vocals, instrumentation, and lyrics from text prompts (\"upbeat pop song about summer love\"). OpenAI Jukebox (2020) pioneered raw audio generation in waveform domain. MusicGen (Meta, 2023) uses a single-stage transformer LM for conditional music generation. Suno V4 (2025) produces radio-quality music indistinguishable from human-produced tracks by casual listeners.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/search/?query=generative+music+AI+text+to+music"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-music-composition-2",
+    "text": "AI music tools for professionals: AIVA (2016-2025) generates classical/soundtrack compositions used in films, games, and ads, recognized by SACEM (French music rights society) as a composer. Google Magenta (2016-2025) provides open-source tools for music ML research including Music Transformer, DDSP, and MusicVAE. Splice and LANDR use AI for sample recommendation, mastering automation, and stem separation (Demucs).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/search/?query=music+generation+deep+learning+diffusion"
+    }
+  }
+]

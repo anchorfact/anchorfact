@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/entrepreneurship-and-startups>
+  a schema:Article ;
+  schema:headline "Entrepreneurship: From Idea to Scalable Business" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/entrepreneurship-and-startups>
+  schema:citation <https://www.penguinrandomhouse.com/books/201674/the-lean-startup-by-eric-ries/> .
+
+<https://anchorfact.org/kb/entrepreneurship-and-startups>
+  schema:citation <https://www.strategyzer.com/books/business-model-generation> .
+
+<https://anchorfact.org/kb/entrepreneurship-and-startups>
+  schema:citation <https://theleanstartup.com/> .
+
+<https://anchorfact.org/kb/entrepreneurship-and-startups>
+  schema:citation <https://www.crownpublishing.com/zero-to-one/> .

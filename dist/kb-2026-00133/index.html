@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>QuickSort & MergeSort — AnchorFact</title></head>
+<body><article><br>
+<br>
+<br>
+<br>
+## TL;DR<br>
+<br>
+QuickSort: average O(n log n), worst O(n²), in-place, not stable. Picks pivot, partitions, recurses. MergeSort: always O(n log n), stable, O(n) auxiliary space. Most practical sorts are hybrid (Timsort=merge+insertion).<br>
+<br>
+## Core Explanation<br>
+<br>
+QuickSort pivot selection: median-of-three reduces worst-case probability. MergeSort is ideal for linked lists (no extra space for merge). Timsort (Python, Java, V8 JS) exploits natural runs in data: O(n) on already-sorted input. Comparison-based sorting lower bound: Ω(n log n). Non-comparison: counting sort, radix sort — O(n) when data range is limited.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Algorithms (4th Edition)](undefined)<br>
+</article></body>
+</html>

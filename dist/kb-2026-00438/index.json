@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00438",
+  "headline": "Management Styles",
+  "description": "Management styles vary by context and culture. Autocratic (top-down decisions), Democratic (participatory), Laissez-faire (hands-off), Transformational (inspire vision), Servant Leadership (leader serves team). Modern approaches favor autonomy, purpose, mastery (Pink). Micromanagement is destructive. Good management adapts style to situation.",
+  "dateCreated": "2026-05-24T18:00:03.674Z",
+  "dateModified": "2026-05-24T18:00:03.674Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Drive: The Surprising Truth About What Motivates Us (Daniel Pink)",
+      "sameAs": "https://www.penguinrandomhouse.com/books/308034/drive-by-daniel-h-pink/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Culture Map: Breaking Through the Invisible Boundaries (2025 Updated)",
+      "author": "Meyer E.",
+      "sameAs": "https://www.publicaffairsbooks.com/culture-map/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "First, Break All the Rules (2025 Edition)",
+      "author": "Buckingham M., Coffman C.",
+      "sameAs": "https://www.gallup.com/first-break/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Culture Map (2025 Updated)",
+      "author": "Meyer E.",
+      "sameAs": "https://www.publicaffairsbooks.com/culture-map/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "First, Break All the Rules (2025)",
+      "author": "Buckingham M.",
+      "sameAs": "https://www.gallup.com/first-break/"
+    }
+  ]
+}

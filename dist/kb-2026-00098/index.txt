@@ -1,0 +1,21 @@
+# ResizeObserver
+Confidence: high
+Last verified: 2026-05-22
+Generation: human_only
+
+
+
+
+
+## TL;DR
+
+ResizeObserver reports changes to the dimensions of DOM elements (content-box or border-box), replacing polling-based resize detection and `window.resize`-only approaches. It is essential for responsive components and container queries.
+
+## Core Explanation
+
+`new ResizeObserver(entries => { /* entries[0].contentRect */ })`. Different from `element.onresize` which only works on `window`. Observes actual element size changes including those caused by CSS, layout, or content changes. Runs after layout but before paint. Delivery is batched — multiple changes in the same frame are reported together.
+
+## Further Reading
+
+- [Resize Observer (W3C)](https://www.w3.org/TR/resize-observer-1/)
+

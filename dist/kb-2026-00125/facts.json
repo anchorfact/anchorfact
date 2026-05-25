@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "The OWASP API Security Top 10 is a dedicated list of the most critical API security risks, separate from the general web application Top 10",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-02",
+    "text": "API1: 2023 Broken Object Level Authorization — user accesses other users' data by modifying ID in URL",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-03",
+    "text": "API3:2023 Broken Object Property Level Authorization — mass assignment vulnerabilities",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  }
+]

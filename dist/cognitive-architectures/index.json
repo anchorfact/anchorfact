@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/cognitive-architectures",
+  "headline": "Cognitive Architectures: ACT-R, Soar, and Computational Models of Human-Like Reasoning",
+  "description": "Cognitive architectures model how the human mind works -- from memory retrieval and decision-making to language processing and skill acquisition. Unlike deep learning, which optimizes for task performance, cognitive architectures aim for human-like cognition: making the same errors, taking the same time, and using the same strategies. This complementary paradigm offers insights for AI safety, human-AI interaction, and understanding intelligence itself.",
+  "dateCreated": "2026-05-24T18:00:03.250Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACT-R: A cognitive architecture for modeling cognition (Carnegie Mellon University)",
+      "sameAs": "https://act-r.psy.cmu.edu/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Bridging Minds and Machines: Toward an Integration of AI and Cognitive Science",
+      "sameAs": "https://arxiv.org/abs/2508.20674"
+    }
+  ]
+}

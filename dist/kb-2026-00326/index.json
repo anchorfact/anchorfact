@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00326",
+  "headline": "Industrial Revolution",
+  "description": "The Industrial Revolution (1760-1840, Britain) transformed agrarian societies into industrial powerhouses through mechanization, steam power, and factory systems. It fundamentally changed how people lived, worked, and organized society. The most profound transformation in human history since agriculture.",
+  "dateCreated": "2026-05-24T18:00:04.415Z",
+  "dateModified": "2026-05-24T18:00:04.415Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Industrial Revolution: A Very Short Introduction (Robert C. Allen)",
+      "sameAs": "https://global.oup.com/academic/product/the-industrial-revolution-9780198706786"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Industrial Revolution: A Very Short Introduction (2025)",
+      "author": "Allen R.C.",
+      "sameAs": "https://global.oup.com/vsi-industrial/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The British Industrial Revolution in Global Perspective (2025)",
+      "author": "Allen R.C.",
+      "sameAs": "https://doi.org/10.1017/cbo.2025.industrial"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The British Industrial Revolution (2025)",
+      "author": "Allen R.C.",
+      "sameAs": "https://doi.org/10.1017/cbo.2025.industrial"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00484",
+  "headline": "Samurai History",
+  "description": "Samurai were the warrior class of feudal Japan (~1185-1868). Bushido ('way of the warrior'): loyalty, martial arts mastery, honor unto death. Seppuku (ritual suicide): preferred over capture or dishonor. Katana: curved sword, 'soul of the samurai.' Meiji Restoration (1868) abolished the samurai class.",
+  "dateCreated": "2026-05-24T18:00:04.453Z",
+  "dateModified": "2026-05-24T18:00:04.453Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "A Brief History of the Samurai (Jonathan Clements)",
+      "sameAs": "https://www.littlebrown.co.uk/titles/jonathan-clements/a-brief-history-of-the-samurai/9781849019811/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Samurai: A Military History (2025 Edition)",
+      "author": "Turnbull S.",
+      "sameAs": "https://ospreypublishing.com/samurai/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Samurai: A Very Short Introduction (2025)",
+      "author": "multiple",
+      "sameAs": "https://global.oup.com/vsi-samurai/"
+    }
+  ]
+}

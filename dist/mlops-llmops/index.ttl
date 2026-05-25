@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/mlops-llmops>
+  a schema:article ;
+  schema:headline "MLOps and LLMOps: Production AI Engineering, Observability, and Platform Architecture" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/mlops-llmops>
+  schema:citation <https://link.springer.com/article/10.1007/s10462-025-11164-3> .
+
+<https://anchorfact.org/kb/mlops-llmops>
+  schema:citation <https://arxiv.org/abs/2604.26152> .

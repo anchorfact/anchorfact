@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00018>
+  a schema:TechArticle ;
+  schema:headline "AI Agents (2025-2026)" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00018>
+  schema:citation <https://zaobi.tech/pages/ai-tech/agent-tech-report-2025/index.html> .
+
+<https://anchorfact.org/kb/kb-2026-00018>
+  schema:citation <https://arxiv.org/html/2601.01743v1> .

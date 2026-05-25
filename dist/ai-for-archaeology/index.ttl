@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-archaeology>
+  a schema:article ;
+  schema:headline "AI for Archaeology: Site Detection, Artifact Classification, and Digital Heritage Preservation" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-archaeology>
+  schema:citation <https://link.springer.com/article/10.1007/s11831-025-10393-7> .
+
+<https://anchorfact.org/kb/ai-for-archaeology>
+  schema:citation <https://www.researchgate.net/publication/387798164> .

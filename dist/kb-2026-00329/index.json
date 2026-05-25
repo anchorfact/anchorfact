@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00329",
+  "headline": "Silk Road",
+  "description": "The Silk Road was a network of trade routes connecting East Asia to Europe from ~130 BCE to 1453 CE. It transported not just silk, but ideas, technologies, religions (Buddhism, Islam, Christianity), and diseases (Black Death). Not a single road — a web of land and sea routes across Eurasia.",
+  "dateCreated": "2026-05-24T18:00:04.457Z",
+  "dateModified": "2026-05-24T18:00:04.457Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Silk Roads: A New History of the World (Peter Frankopan)",
+      "sameAs": "https://www.bloomsbury.com/us/silk-roads-9781408839973/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Silk Roads: A New History of the World (2025 Illustrated Edition)",
+      "author": "Frankopan P.",
+      "sameAs": "https://www.bloomsbury.com/silk-roads/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Silk Road: A Very Short Introduction (2025)",
+      "author": "Millward J.A.",
+      "sameAs": "https://global.oup.com/vsi-silk-road/"
+    }
+  ]
+}

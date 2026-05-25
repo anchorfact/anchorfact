@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00429",
+  "headline": "Stock Market Basics",
+  "description": "The stock market is a marketplace where shares of publicly traded companies are bought and sold. Major US exchanges: NYSE, NASDAQ. Indexes: S&P 500 (500 largest US companies), Dow Jones (30), NASDAQ Composite (tech-heavy). Historical average return: ~10% annually (S&P 500, 1926-2025) — but volatile.",
+  "dateCreated": "2026-05-24T18:00:03.694Z",
+  "dateModified": "2026-05-24T18:00:03.694Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "A Random Walk Down Wall Street (Malkiel, 13th Ed)",
+      "sameAs": "https://wwnorton.com/books/9781324035466"
+    }
+  ]
+}

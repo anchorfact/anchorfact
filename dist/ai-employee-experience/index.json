@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-employee-experience",
+  "headline": "AI for Employee Experience: Onboarding, Learning, and Internal Communications",
+  "description": "AI is HR's most productive colleague -- onboarding new hires conversationally, recommending personalized learning, detecting disengagement before employees leave, and crafting internal communications. From Microsoft Viva to Qualtrics, AI transforms employee experience from one-size-fits-all to hyper-personalized.",
+  "dateCreated": "2026-05-24T18:00:02.901Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AI for Employee Experience: Onboarding Automation, Personalized Learning, and Internal Communication Analytics (2024-2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=employee+experience+AI+onboarding+learning"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "NLP for Employee Engagement: Sentiment Analysis, Turnover Prediction, and Voice of Employee Analytics",
+      "sameAs": "https://arxiv.org/search/?query=employee+engagement+NLP+sentiment"
+    }
+  ]
+}

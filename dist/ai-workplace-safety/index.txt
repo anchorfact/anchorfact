@@ -1,0 +1,14 @@
+# AI for Workplace Safety: Computer Vision Monitoring, Fall Detection, and Hazard Prevention
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI workplace safety uses computer vision to monitor PPE compliance, detect falls, and identify hazards in real-time. From Amazon warehouses to construction sites, AI safety systems reduce workplace incidents by 25-40% by catching risks that human safety monitors miss.
+
+## Core Explanation
+AI safety stack: (1) PPE detection -- cameras identify workers not wearing required equipment (hard hat, vest, gloves). YOLOv8 fine-tuned on construction/industrial datasets (Pictor-v3, SHEL5K). Real-time alerting; (2) Hazard zone monitoring -- define virtual perimeters around dangerous equipment (forklifts, cranes, conveyor belts). AI tracks worker positions via pose estimation + tracking, alerts upon zone violations; (3) Fall/slip detection -- pose estimation (OpenPose, MMPose) tracks body keypoints. Sudden vertical acceleration patterns trigger fall alerts. <2 second detection latency for rapid response; (4) Ergonomic assessment -- RULA/REBA scores from pose angles. Continuous monitoring identifies repetitive strain risks over shifts; (5) Predictive analytics -- near-miss reporting + ML identifies patterns predicting future incidents.
+
+## Detailed Analysis
+PPE detection: YOLOv8 trained on labeled datasets with bounding box annotations. Multi-class: hard hat, safety vest, gloves, goggles, boots. Occlusion handling: partial visibility scenarios (worker behind equipment) require robust detection. Real-time: 30 FPS on edge devices (Jetson Xavier) for multi-camera setups. Fall detection: pose keypoint acceleration as primary signal. False positive challenge: quick movements (throwing, ducking) trigger false alarms. Solution: temporal context (is the person on the ground after the event?) and multi-modal (audio -- impact sound + video). Enterprise AI safety platforms: Intenseye (computer vision EHS), Everguard (wearable + CV fusion), Smartvid.io (construction safety). Privacy: GDPR compliance requires on-device processing (no video storage), blurring faces unless incident detected, and policy transparency. ML predictive analytics: analysis of near-miss reports (free-text NLP) + incident logs identifies high-risk patterns (specific equipment + shift + task combinations).
+

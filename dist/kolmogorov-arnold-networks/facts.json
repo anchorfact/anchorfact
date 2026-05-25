@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-kolmogorov-arnold-networks-1",
+    "text": "KANs (Liu et al., arxiv 2404.19756, 2024) from MIT/Caltech/Northeastern reimagined neural network design: instead of MLPs with fixed activation functions on nodes and learnable weights on edges, KANs place learnable univariate B-spline functions on edges with no linear weights — achieving superior accuracy with 10-100x fewer parameters on function fitting and PDE solving tasks.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2404.19756"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-kolmogorov-arnold-networks-2",
+    "text": "The Kolmogorov-Arnold representation theorem (1957) — which states any multivariate continuous function can be represented as a composition of univariate functions and addition — provides the mathematical foundation for KANs, unlike MLPs which rely on the universal approximation theorem through width/depth scaling.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2405.02000"
+    }
+  }
+]

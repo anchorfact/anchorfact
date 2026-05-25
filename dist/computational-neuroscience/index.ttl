@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/computational-neuroscience>
+  a schema:article ;
+  schema:headline "Computational Neuroscience: AI Models of Brain Circuits, Connectomics, and Neural Computation" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/computational-neuroscience>
+  schema:citation <https://www.microns-explorer.org/> .
+
+<https://anchorfact.org/kb/computational-neuroscience>
+  schema:citation <https://www.nature.com/articles/nn0199_79> .

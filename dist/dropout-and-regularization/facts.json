@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-do-1",
+    "text": "Dropout (Srivastava et al. 2014, Hinton group) randomly drops neurons during training, preventing co-adaptation and acting as an ensemble of exponentially many subnetworks. It remains a standard regularizer in most architectures.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://jmlr.org/papers/v15/srivastava14a.html"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-do-2",
+    "text": "L1 regularization adds |w| to the loss, encouraging sparse weights. L2 adds w², encouraging small weights. Elastic Net (Zou & Hastie 2005) combines both for correlated feature selection.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1111/j.1467-9868.2005.00503.x"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-do-3",
+    "text": "Batch Normalization (Ioffe & Szegedy 2015, Google) normalizes layer inputs, enabling higher learning rates, reducing sensitivity to initialization, and itself providing a mild regularizing effect.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/1502.03167"
+    }
+  }
+]

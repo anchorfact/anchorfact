@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "Django is a high-level Python web framework that follows 'batteries-included' philosophy",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://docs.djangoproject.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-02",
+    "text": "Template language: Django Template Language with inheritance, filters, tags",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://docs.djangoproject.com/"
+    }
+  }
+]

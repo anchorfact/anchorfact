@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00317>
+  a schema:TechArticle ;
+  schema:headline "Vault (HashiCorp)" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00317>
+  schema:citation <https://developer.hashicorp.com/vault/docs> .

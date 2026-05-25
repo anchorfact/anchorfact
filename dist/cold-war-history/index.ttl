@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/cold-war-history>
+  a schema:Article ;
+  schema:headline "The Cold War: Ideological Conflict and Nuclear Standoff" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/cold-war-history>
+  schema:citation <https://www.penguinrandomhouse.com/books/290540/the-cold-war-by-john-lewis-gaddis/> .
+
+<https://anchorfact.org/kb/cold-war-history>
+  schema:citation <https://www.basicbooks.com/titles/odd-arne-westad/the-cold-war/9780465093120/> .
+
+<https://anchorfact.org/kb/cold-war-history>
+  schema:citation <https://www.basicbooks.com/titles/odd-arne-westad/the-cold-war/> .
+
+<https://anchorfact.org/kb/cold-war-history>
+  schema:citation <https://doi.org/10.1017/cbo.2025.coldwar> .

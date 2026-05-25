@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00485>
+  a schema:TechArticle ;
+  schema:headline "Vikings: Exploration and Culture" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00485>
+  schema:citation <https://www.penguinrandomhouse.com/books/302917/the-vikings-by-robert-ferguson/> .

@@ -1,0 +1,17 @@
+# Generative Adversarial Networks (GAN)
+Confidence: high
+Last verified: 2026-05-22
+Generation: human_only
+
+## TL;DR
+
+GANs (Goodfellow, 2014) pit two neural networks against each other: Generator creates fake data, Discriminator distinguishes real from fake. Both improve through adversarial training — Generator learns to produce increasingly realistic outputs. Used for image generation, style transfer, super-resolution.
+
+## Core Explanation
+
+Training instability: if discriminator is too strong, generator learns nothing. Mode collapse: generator produces limited variety. Key variants: DCGAN (deep convolutional), StyleGAN (progressive growing, controls style), CycleGAN (unpaired image translation), Pix2Pix (paired). GANs largely superseded by diffusion models (2022+) for image generation, but remain important for other adversarial tasks.
+
+## Further Reading
+
+- [Generative Adversarial Networks (Goodfellow et al., 2014)](https://arxiv.org/abs/1406.2661)
+

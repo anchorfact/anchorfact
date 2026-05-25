@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00201",
+  "headline": "Number Theory",
+  "description": "Number theory is the study of integers — prime numbers, divisibility, modular arithmetic. It is the mathematical foundation of modern cryptography (RSA, ECC, Diffie-Hellman). Primes are infinite (Euclid's proof). Fundamental Theorem of Arithmetic: every integer >1 has unique prime factorization.",
+  "dateCreated": "2026-05-24T18:00:03.968Z",
+  "dateModified": "2026-05-24T18:00:03.968Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM Digital Library",
+      "sameAs": "https://dl.acm.org/"
+    }
+  ]
+}

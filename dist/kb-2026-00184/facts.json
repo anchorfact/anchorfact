@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "The OSI model describes 7 layers of network communication",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "The OSI (Open Systems Interconnection) model describes 7 layers of network communication. While not literally implemented, it's the standard mental model for understanding networking. Layers: Physical, Data Link, Network, Transport, Session, Presentation, Application.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "TCP/IP model (4 layers): Link, Internet, Transport, Application — simpler, maps directly to real implementations.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  }
+]

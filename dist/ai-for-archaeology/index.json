@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-archaeology",
+  "headline": "AI for Archaeology: Site Detection, Artifact Classification, and Digital Heritage Preservation",
+  "description": "AI is transforming archaeology by enabling automated detection of buried structures from satellite imagery, classification of millions of pottery sherds, decipherment of ancient scripts, and reconstruction of fragmented artifacts. From discovering hidden Maya cities in LiDAR point clouds to identifying new Nazca geoglyphs from satellite data, deep learning is giving archaeologists a powerful lens through which to see the past.",
+  "dateCreated": "2026-05-24T18:00:02.915Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Applications of AI and Machine Learning in Archaeological Practices: A Review",
+      "sameAs": "https://link.springer.com/article/10.1007/s11831-025-10393-7"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Machine learning applications in archaeological practices: a review",
+      "sameAs": "https://www.researchgate.net/publication/387798164"
+    }
+  ]
+}

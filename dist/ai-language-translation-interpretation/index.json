@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-language-translation-interpretation",
+  "headline": "AI Language Translation and Interpretation: LLM-Based Translation, Simultaneous Interpretation, and Quality Estimation",
+  "description": "AI translation has evolved from phrase tables to LLMs that match human translators on common language pairs and provide real-time spoken interpretation for multilingual meetings. From GPT-4 translating with document-level coherence to KUDO AI interpreting with <2s latency, language barriers are dissolving through AI.",
+  "dateCreated": "2026-05-24T18:00:03.097Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Machine Translation in the Era of Large Language Models: A Comprehensive Survey of LLM-Based Translation (2025)",
+      "sameAs": "https://www.mdpi.com/2078-2489/16/9/723"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Simultaneous Machine Translation and Speech-to-Speech Interpretation: Streaming Models, Wait-k Policies, and Voice Preservation",
+      "sameAs": "https://arxiv.org/search/?query=simultaneous+machine+translation+speech"
+    }
+  ]
+}

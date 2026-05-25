@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00181",
+  "headline": "DNS (Domain Name System)",
+  "description": "The Domain Name System (DNS) is a hierarchical, distributed database that translates human-readable domain names (e.g., `anchorfact.org`) into machine-readable IP addresses (e.g., `172.67.x.x`). Designed by Paul Mockapetris in 1983 (RFCs 882/883, superseded by RFCs 1034/1035 in 1987), DNS is one of the oldest Internet protocols still in active use and is a critical dependency for virtually every Internet application. A typical DNS resolution traverses: browser cache → OS cache (stub resolver) → recursive resolver (ISP/public) → root nameserver → TLD nameserver → authoritative nameserver, completing in typically 20-120 milliseconds. DNSSEC (RFCs 4033-4035, 2005) adds cryptographic signatures to prevent spoofing; DoH/DoT (RFCs 8484/7858, 2018) encrypt queries to prevent eavesdropping.",
+  "dateCreated": "2026-05-24T18:00:03.808Z",
+  "dateModified": "2026-05-24T18:00:03.808Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "RFC 1035 — Domain Names — Implementation and Specification",
+      "author": "Mockapetris, P.",
+      "sameAs": "https://www.rfc-editor.org/rfc/rfc1035"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "RFC 4033 — DNS Security Introduction and Requirements",
+      "author": "Arends, R., Austein, R., Larson, M., Massey, D., Rose, S.",
+      "sameAs": "https://www.rfc-editor.org/rfc/rfc4033"
+    }
+  ]
+}

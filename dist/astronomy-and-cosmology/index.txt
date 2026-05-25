@@ -1,0 +1,18 @@
+# Astronomy and Cosmology: From Solar System to the Universe
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Astronomy explores the universe from nearby planets to the cosmic horizon. The Big Bang model, confirmed by cosmic microwave background, describes a 13.8-billion-year history of expansion and structure formation.
+
+## Core Explanation
+The solar system: 8 planets, dwarf planets, asteroid belt, Kuiper belt (Pluto), Oort cloud. Stars: born from collapsing gas clouds, fuse hydrogen to helium in cores, die as white dwarfs, neutron stars, or black holes depending on mass. Galaxies: spiral (Milky Way), elliptical, irregular — grouped in clusters and superclusters.
+
+## Detailed Analysis
+The universe composition: 68% dark energy, 27% dark matter, 5% ordinary matter. Dark energy accelerates cosmic expansion (discovered by Riess, Perlmutter, Schmidt — Nobel 2011). Exoplanet detection: transit method (Kepler, TESS — over 5,500 confirmed), radial velocity, direct imaging.
+
+## Further Reading
+- NASA Astronomy Picture of the Day
+- ESA/Hubble & JWST Image Galleries
+- arXiv: Astrophysics

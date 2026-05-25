@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-predictive-policing",
+  "headline": "AI for Predictive Policing: Crime Forecasting, Resource Allocation, and Bias Mitigation",
+  "description": "AI predictive policing forecasts where crimes might occur -- but has become one of AI's most controversial applications. The feedback loop problem (AI sends police to areas -> arrests increase -> AI predicts more crime there) and racial bias concerns have led many cities to abandon predictive policing. The emerging approach: AI as decision support, not decision replacement.",
+  "dateCreated": "2026-05-24T18:00:03.117Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Machine Learning for Predictive Policing: Crime Forecasting, Spatio-Temporal Models, and the Feedback Loop Problem (2024-2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=predictive+policing+machine+learning+fairness"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Algorithmic Bias in Criminal Justice: Predictive Policing, Pretrial Risk Assessment, and the Perpetuation of Racial Disparities",
+      "sameAs": "https://arxiv.org/search/?query=algorithmic+bias+predictive+policing"
+    }
+  ]
+}

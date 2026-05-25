@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ts-1",
+    "text": "Informer (Zhou et al. 2021, AAAI Best Paper) introduced ProbSparse self-attention and a generative-style decoder, achieving O(L log L) complexity for long sequence time-series forecasting.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2012.07436"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ts-2",
+    "text": "TimesNet (Wu et al. 2023, Tsinghua) transforms 1D time series into 2D tensors by capturing intra-period and inter-period variations, then applies inception blocks for multi-scale temporal modeling.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2210.02186"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ts-3",
+    "text": "GraphCast (Lam et al. 2023, Google DeepMind) applies graph neural networks to global weather forecasting, outperforming ECMWF's operational system on 90% of test variables while running in under 1 minute.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1126/science.adi2336"
+    }
+  }
+]

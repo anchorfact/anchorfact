@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00246",
+  "headline": "Message Queues",
+  "description": "Message queues enable asynchronous, decoupled communication between services. Producer sends message to queue; consumer picks it up — no direct connection needed. Benefits: load leveling, fault tolerance, temporal decoupling. Popular MQs: RabbitMQ (AMQP), Apache Kafka (log-based), Amazon SQS (managed), Redis Streams.",
+  "dateCreated": "2026-05-24T18:00:03.942Z",
+  "dateModified": "2026-05-24T18:00:03.942Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM Digital Library",
+      "sameAs": "https://dl.acm.org/"
+    }
+  ]
+}

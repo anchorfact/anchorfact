@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f1",
+    "text": "Neural Style Transfer (Gatys et al. 2016) demonstrated that CNNs can separate and recombine the content and style of images, enabling artistic creation through AI.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/1508.06576"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f2",
+    "text": "DALL-E 2/3 (Ramesh et al. 2022, OpenAI) demonstrated that diffusion models can generate highly realistic and creative images from natural language descriptions, democratizing visual content creation.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2204.06125"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f3",
+    "text": "StyleGAN (Karras et al. 2019, NVIDIA) introduced a generator architecture that enables scale-specific control of image synthesis, producing photorealistic faces and enabling fine-grained style mixing.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/1812.04948"
+    }
+  }
+]

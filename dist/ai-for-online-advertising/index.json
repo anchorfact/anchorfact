@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-online-advertising",
+  "headline": "AI for Online Advertising: Real-Time Bidding, CTR Prediction, and Programmatic Ads",
+  "description": "Online advertising is the financial engine of the internet -- and AI is its brain. Real-time bidding systems make millions of decisions per second about which ad to show, using deep learning to predict click probability, conversion likelihood, and user value. From Google Search Ads to TikTok's feed, AI-powered advertising generates over $600B annually.",
+  "dateCreated": "2026-05-24T18:00:03.016Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "DLRM: Deep Learning Recommendation Model for Personalization and Recommendation Systems",
+      "sameAs": "https://arxiv.org/abs/1906.00091"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "DCN-V2: Improved Deep and Cross Network for Web-Scale Learning to Rank Systems",
+      "sameAs": "https://arxiv.org/abs/2008.13535"
+    }
+  ]
+}

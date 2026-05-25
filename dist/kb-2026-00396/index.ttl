@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00396>
+  a schema:TechArticle ;
+  schema:headline "Hundred Years' War" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00396>
+  schema:citation <https://www.penguinrandomhouse.com/books/307409/the-hundred-years-war-by-desmond-seward/> .
+
+<https://anchorfact.org/kb/kb-2026-00396>
+  schema:citation <https://yalebooks.yale.edu/hundred-years-war/> .
+
+<https://anchorfact.org/kb/kb-2026-00396>
+  schema:citation <https://ospreypublishing.com/hundred-years-war/> .

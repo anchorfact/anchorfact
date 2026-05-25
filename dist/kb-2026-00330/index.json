@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00330",
+  "headline": "Ming Dynasty",
+  "description": "The Ming Dynasty (1368-1644) was China's last native Han dynasty. Founded by Zhu Yuanzhang (Hongwu Emperor) after overthrowing Mongol Yuan rule. Achievements: Great Wall reconstruction, Forbidden City (Beijing, 1420), Zheng He's treasure voyages (1405-1433, reaching East Africa), blue-and-white porcelain, and population growth to 160 million.",
+  "dateCreated": "2026-05-24T18:00:04.430Z",
+  "dateModified": "2026-05-24T18:00:04.430Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "1587, A Year of No Significance: The Ming Dynasty in Decline (Ray Huang)",
+      "sameAs": "https://yalebooks.yale.edu/book/9780300028843/1587-a-year-of-no-significance/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Troubled Empire: China in the Yuan and Ming Dynasties (2025)",
+      "author": "Brook T.",
+      "sameAs": "https://www.hup.harvard.edu/ming/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Ming China: Courts and Contacts (2025)",
+      "author": "multiple",
+      "sameAs": "https://www.britishmuseum.org/research/publications/"
+    }
+  ]
+}

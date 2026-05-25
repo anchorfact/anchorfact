@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-game-development-01",
+    "text": "Godot is a free, open-source game engine created by Juan Linietsky and Ariel Manzur",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-game-development-02",
+    "text": "Godot's scene system: everything is a scene that can be nested",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  }
+]

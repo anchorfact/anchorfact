@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-food-science",
+  "headline": "AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition",
+  "description": "AI is entering the food system at every stage -- from accelerating discovery of new sustainable ingredients and predicting flavor profiles, to automating quality inspection on production lines, to personalizing nutrition recommendations based on individual microbiomes and health data.",
+  "dateCreated": "2026-05-24T18:00:02.957Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AI for food: accelerating and democratizing discovery and development",
+      "sameAs": "https://www.nature.com/articles/s41538-025-00441-8"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Artificial intelligence and food flavor: How AI is shaping the future of taste",
+      "sameAs": "https://ift.onlinelibrary.wiley.com/doi/10.1111/1541-4337.70068"
+    }
+  ]
+}

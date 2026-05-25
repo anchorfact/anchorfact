@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/latent-diffusion-models",
+  "headline": "Diffusion Models in Depth: From DDPM to Stable Diffusion",
+  "description": "Diffusion models have replaced GANs as the dominant generative modeling paradigm. By learning to reverse a noise-adding process, they produce state-of-the-art image, video, 3D, and audio generation.",
+  "dateCreated": "2026-05-24T18:00:03.372Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Denoising Diffusion Probabilistic Models (DDPM)",
+      "sameAs": "https://arxiv.org/abs/2006.11239"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "High-Resolution Image Synthesis with Latent Diffusion Models (Stable Diffusion)",
+      "sameAs": "https://arxiv.org/abs/2112.10752"
+    }
+  ]
+}

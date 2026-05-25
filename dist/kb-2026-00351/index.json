@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00351",
+  "headline": "Greek Philosophy",
+  "description": "Ancient Greek philosophy (6th century BCE - 6th century CE) laid the foundations of Western thought. Three giants: Socrates (questioning method, 'know thyself'), Plato (Theory of Forms, The Republic), Aristotle (logic, ethics, politics, biology — tutored Alexander the Great). Pre-Socratics (Thales: water as fundamental substance).",
+  "dateCreated": "2026-05-24T18:00:04.408Z",
+  "dateModified": "2026-05-24T18:00:04.408Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "A History of Western Philosophy (Bertrand Russell)",
+      "sameAs": "https://www.simonandschuster.com/books/A-History-of-Western-Philosophy/Bertrand-Russell/9780671201586"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Greek Philosophy: A Very Short Introduction (2025)",
+      "author": "Annas J.",
+      "sameAs": "https://global.oup.com/vsi-greek-philosophy/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Cambridge Companion to Greek Philosophy (2025)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1017/cbo.2025.greek"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Cambridge Companion to Ancient Greek Philosophy (2025)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1017/cbo.2025.greek"
+    }
+  ]
+}

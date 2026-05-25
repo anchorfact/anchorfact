@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-crisis-hotlines",
+  "headline": "AI for Crisis Hotlines: Suicide Prevention Chatbots, Emotional Support AI, and Risk Detection",
+  "description": "AI is on the front lines of suicide prevention -- triaging crisis texts in seconds, powering emotional support chatbots, and detecting risk signals in social media posts. From Crisis Text Line's ML triage to Meta's proactive wellness checks, AI extends the reach of limited crisis counseling resources.",
+  "dateCreated": "2026-05-24T18:00:02.940Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AI for Crisis Intervention and Suicide Prevention: Chatbot Support, NLP Risk Detection, and Ethical Frameworks (2024-2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=suicide+prevention+AI+chatbot+NLP+detection"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Ethical AI for Mental Health Crisis: Proactive Detection, Privacy, and the Duty to Intervene",
+      "sameAs": "https://arxiv.org/search/?query=AI+crisis+intervention+ethics+privacy"
+    }
+  ]
+}

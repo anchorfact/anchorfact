@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/nlp-advanced-techniques",
+  "headline": "Advanced NLP: Tokenization, Embeddings, and Decoding",
+  "description": "Modern NLP pipelines transform raw text to vector representations suitable for neural processing. Tokenization, embeddings, and decoding strategies are the critical infrastructure between human language and machine understanding.",
+  "dateCreated": "2026-05-24T18:00:03.447Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Neural Machine Translation of Rare Words with Subword Units (BPE)",
+      "sameAs": "https://arxiv.org/abs/1508.07909"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Curious Case of Neural Text Degeneration",
+      "sameAs": "https://arxiv.org/abs/1904.09751"
+    }
+  ]
+}

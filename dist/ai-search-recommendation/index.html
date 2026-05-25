@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI for Search and Recommendation: Semantic Search, Collaborative Filtering, and Personalization Engines — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+AI search and recommendation power the discovery engine of the internet -- from Google's semantic understanding to TikTok's uncannily accurate For You page to Amazon's product recommendations. Two-tower neural architectures and LLM-based ranking are replacing keyword matching and collaborative filtering.<br>
+<br>
+## Core Explanation<br>
+Search-recommendation stack: (1) Retrieval -- candidate generation from corpus (millions to billions of items). Multi-stage: fast coarse retrieval (ANN on embeddings) -> fine reranking (cross-encoder); (2) Ranking -- score relevance of each candidate. Pointwise (score per item), pairwise (compare pair), listwise (optimize ordering). Features: query-item similarity, user history, item popularity, contextual features; (3) Personalization -- incorporate user behavior: clicks, purchases, time spent, explicit ratings. Two-tower: user tower encodes user features + history; item tower encodes item features. Similarity = dot product of tower outputs.<br>
+<br>
+## Detailed Analysis<br>
+Dense retrieval: ColBERT (2020) -- late interaction: encode query tokens and document tokens separately, compute fine-grained similarities. DPR (2020) -- early interaction: encode query and document to single vectors, compute cosine similarity. TikTok recommendation: Monolith (2022) -- real-time training on user interactions, serving updated model within minutes. Architecture: collision-less embedding table for billion-scale user/item IDs. YouTube (2016): two-stage -- candidate generation (deep candidate generation from user history -> hundred candidates) -> ranking (deep ranking with rich features). LLM-based search: Perplexity AI, Google AI Overviews, and Bing Copilot integrate retrieval + LLM summarization. LLM ranking: GPT-4 as relevance judge -- out-of-the-box performance matches fine-tuned rankers on some benchmarks.<br>
+</article></body>
+</html>

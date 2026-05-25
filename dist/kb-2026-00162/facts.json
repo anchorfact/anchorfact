@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "A Pod is the smallest deployable unit in Kubernetes — one or more containers sharing network namespace, IPC, and storage volumes",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://kubernetes.io/docs/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "A Pod is the smallest deployable unit in Kubernetes — one or more containers sharing network namespace, IPC, and storage volumes. A Service provides stable networking — a virtual IP (ClusterIP) and DNS name that load-balances across Pod replicas, surviving Pod restarts.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://kubernetes.io/docs/"
+    }
+  }
+]

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00285>
+  a schema:TechArticle ;
+  schema:headline "Tokenization in NLP" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00285>
+  schema:citation <https://arxiv.org/abs/1508.07909> .
+
+<https://anchorfact.org/kb/kb-2026-00285>
+  schema:citation <https://arxiv.org/abs/1808.06226> .

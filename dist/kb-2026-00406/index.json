@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00406",
+  "headline": "Computer History",
+  "description": "Computing history: Ada Lovelace (first algorithm, 1843) → Turing (theoretical foundation, 1936) → ENIAC (first electronic general-purpose computer, 1945) → transistors (1947) → integrated circuits (1958) → microprocessors (Intel 4004, 1971) → personal computers (Altair 1975, Apple II 1977, IBM PC 1981) → Internet → smartphones.",
+  "dateCreated": "2026-05-24T18:00:04.399Z",
+  "dateModified": "2026-05-24T18:00:04.399Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Innovators (Walter Isaacson)",
+      "sameAs": "https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Innovators: How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution (2025)",
+      "author": "Isaacson W.",
+      "sameAs": "https://www.simonandschuster.com/innovators/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Computer: A Very Short Introduction (2025)",
+      "author": "multiple",
+      "sameAs": "https://global.oup.com/vsi-computer/"
+    }
+  ]
+}

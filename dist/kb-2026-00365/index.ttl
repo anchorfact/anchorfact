@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00365>
+  a schema:TechArticle ;
+  schema:headline "Immune System" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00365>
+  schema:citation <https://www.garlandscience.com/product/isbn/9780815345510> .
+
+<https://anchorfact.org/kb/kb-2026-00365>
+  schema:citation <https://wwnorton.com/immunobiology/> .
+
+<https://anchorfact.org/kb/kb-2026-00365>
+  schema:citation <https://doi.org/10.1038/s41577-2025-immuno> .
+
+<https://anchorfact.org/kb/kb-2026-00365>
+  schema:citation <https://www.penguinrandomhouse.com/immune/> .

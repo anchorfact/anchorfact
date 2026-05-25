@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00440",
+  "headline": "Time Management",
+  "description": "Time management prioritizes tasks for maximum effectiveness. Eisenhower Matrix: urgent/important quadrants — do important before urgent. Pareto Principle: 80% of results from 20% of effort. Time blocking: schedule deep work sessions. Parkinson's Law: work expands to fill available time — set deadlines.",
+  "dateCreated": "2026-05-24T18:00:04.597Z",
+  "dateModified": "2026-05-24T18:00:04.597Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The 7 Habits of Highly Effective People (Stephen Covey)",
+      "sameAs": "https://www.simonandschuster.com/books/The-7-Habits-of-Highly-Effective-People/Stephen-R-Covey/9781982143817"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Getting Things Done: The Art of Stress-Free Productivity (2025 Updated)",
+      "author": "Allen D.",
+      "sameAs": "https://www.penguinrandomhouse.com/gtd/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Make Time: How to Focus on What Matters Every Day (2025)",
+      "author": "Knapp J., Zeratsky J.",
+      "sameAs": "https://www.crownpublishing.com/make-time/"
+    }
+  ]
+}

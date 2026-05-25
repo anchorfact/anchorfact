@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00280",
+  "headline": "Feature Engineering",
+  "description": "Feature engineering transforms raw data into informative representations that improve model performance. It's often the most impactful step in ML pipelines — good features beat complex models. Deep learning reduces but doesn't eliminate the need for feature engineering. Techniques: scaling, encoding, binning, interaction features, domain-specific transformations.",
+  "dateCreated": "2026-05-24T18:00:03.300Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Feature Engineering for Machine Learning (Zheng & Casari)",
+      "author": "Zheng, Alice, Casari, Amanda",
+      "sameAs": "https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "An Introduction to Variable and Feature Selection (Guyon & Elisseeff)",
+      "author": "Guyon, Isabelle, Elisseeff, André",
+      "sameAs": "https://jmlr.org/papers/v3/guyon03a.html"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Deep Feature Synthesis: Towards Automating Data Science Endeavors (Kanter & Veeramachaneni)",
+      "author": "Kanter, James Max, Veeramachaneni, Kalyan",
+      "sameAs": "https://doi.org/10.1109/DSAA.2015.7344858"
+    }
+  ]
+}

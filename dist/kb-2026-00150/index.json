@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00150",
+  "headline": "Repository Pattern",
+  "description": "The Repository pattern mediates between the domain and data mapping layers, acting like an in-memory collection of domain objects. It abstracts data access, enabling swapping data sources (database, API, in-memory) without changing business logic.",
+  "dateCreated": "2026-05-24T18:00:04.035Z",
+  "dateModified": "2026-05-24T18:00:04.035Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM Digital Library",
+      "sameAs": "https://dl.acm.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Patterns of Enterprise Application Architecture (2025 Edition)",
+      "author": "Fowler M.",
+      "sameAs": "https://www.informit.com/patterns-eaa/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Domain-Driven Design: Tackling Complexity (2025 Anniversary Edition)",
+      "author": "Evans E.",
+      "sameAs": "https://www.informit.com/ddd/"
+    }
+  ]
+}

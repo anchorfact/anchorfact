@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/text-summarization",
+  "headline": "Text Summarization: From Extractive Methods to Abstractive LLM-Based Summarization",
+  "description": "Text summarization condenses documents into concise summaries while preserving key information. The field has evolved from simple sentence extraction to LLM-powered abstractive generation that rewrites content in its own words. The hard problems remain: summarizing book-length documents, ensuring factual accuracy, and adapting summaries to user needs.",
+  "dateCreated": "2026-05-24T18:00:03.526Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "A Systematic Survey of Text Summarization: From Statistical Methods to Large Language Models",
+      "sameAs": "https://dl.acm.org/doi/abs/10.1145/3731445"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "A Systematic Survey of Text Summarization: From Statistical Methods to LLMs",
+      "sameAs": "https://arxiv.org/abs/2406.11289"
+    }
+  ]
+}

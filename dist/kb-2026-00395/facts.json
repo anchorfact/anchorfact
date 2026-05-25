@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-01",
+    "text": "The Inca Empire was the largest empire in pre-Columbian America, stretching along the Andes from Colombia to Chile",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-02",
+    "text": "Engineering marvels: Machu Picchu, 40,000 km of roads , terraced agriculture",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.simonandschuster.com/books/The-Last-Days-of-the-Incas/Kim-MacQuarrie/9780743260503"
+    }
+  }
+]

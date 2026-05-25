@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/quantum-machine-learning>
+  a schema:article ;
+  schema:headline "Quantum Machine Learning: Tensor Networks, QNNs, and Error Mitigation" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/quantum-machine-learning>
+  schema:citation <https://www.nature.com/articles/s42256-024-00927-2> .
+
+<https://anchorfact.org/kb/quantum-machine-learning>
+  schema:citation <https://doi.org/10.1098/rspa.2023.0218> .

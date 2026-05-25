@@ -1,0 +1,19 @@
+# Network Intrusion Detection: AI-Powered Anomaly Detection and Zero-Day Threat Identification
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Network Intrusion Detection Systems (NIDS) are the immune system of the internet — monitoring traffic for malicious activity. AI is transforming NIDS from signature-based pattern matching (misses novel attacks) to behavior-based anomaly detection that identifies zero-day threats, insider attacks, and advanced persistent threats by learning what "normal" network behavior looks like.
+
+## Core Explanation
+Traditional NIDS: signature-based — maintain a database of known attack patterns (Snort, Suricata rules). Effective for known threats, useless against novel attacks. AI-based NIDS: (1) Supervised classification — train on labeled datasets (normal vs. attack traffic), classify each flow/packet. Features: protocol, port, packet size, inter-arrival time, TCP flags, payload entropy; (2) Anomaly detection — train only on normal traffic (autoencoders, one-class SVM), flag deviations as potential attacks. Advantage: detects zero-days. Disadvantage: higher false positives; (3) Hybrid — combine both, with an ensemble meta-classifier that weighs anomaly scores and signature matches. Key datasets: NSL-KDD, UNSW-NB15, CIC-IDS-2017/2018, CSE-CIC-IDS2018 (modern, with diverse attack types).
+
+## Detailed Analysis
+Nature 2025 NIDS evaluation: Random Forest achieved the best F1 for supervised detection; CNN-LSTM hybrid best for temporal attack patterns (DDoS ramp-up, port scan sequences). Autoencoder-based anomaly detection caught 85% of zero-day attacks vs. 72% for supervised methods. Frontiers 2025 hybrid NIDS: stacked ensemble — base classifiers (Random Forest, XGBoost, DNN, 1D-CNN, LSTM) generate predictions; meta-classifier (LightGBM) learns to combine them optimally based on traffic characteristics (protocol, packet size distribution). The ensemble achieves 99.1% accuracy on known attacks. Springer 2025 survey of NIDS: key challenge is "dataset shift" — attacks evolve faster than datasets. Solutions: online learning (continuous model updates), adversarial training (augment training with GAN-generated attack variants), and federated NIDS (multiple organizations share attack intelligence without sharing raw traffic). IEEE 2026 AI Cybersecurity Conference highlighted explainable NIDS — using SHAP/LIME to show analysts why a specific flow was flagged, building trust for SOC (Security Operations Center) adoption.
+
+## Further Reading
+- CIC-IDS Datasets (Canadian Institute for Cybersecurity)
+- Snort / Suricata Open-Source NIDS
+- Stratosphere IPS: Machine Learning Network Security
+

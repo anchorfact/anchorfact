@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-agent-frameworks>
+  a schema:TechArticle ;
+  schema:headline "AI Agent Frameworks: LangChain, AutoGen, and CrewAI" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-agent-frameworks>
+  schema:citation <https://python.langchain.com/> .
+
+<https://anchorfact.org/kb/ai-agent-frameworks>
+  schema:citation <https://arxiv.org/abs/2308.08155> .

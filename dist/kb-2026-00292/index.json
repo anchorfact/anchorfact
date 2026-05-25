@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00292",
+  "headline": "FastAPI",
+  "description": "FastAPI (Sebastian Ramirez, 2018) is a modern Python web framework for building APIs, emphasizing speed and automatic OpenAPI docs. Built on Starlette (web) and Pydantic (data validation). Async support native. Automatic interactive API docs (Swagger UI + ReDoc). One of the fastest-growing Python frameworks.",
+  "dateCreated": "2026-05-24T18:00:03.839Z",
+  "dateModified": "2026-05-24T18:00:03.839Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "FastAPI Documentation",
+      "sameAs": "https://fastapi.tiangolo.com/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "FastAPI: Modern Python Web Development (2025 Edition)",
+      "author": "Lubanovic B.",
+      "sameAs": "https://www.oreilly.com/fastapi/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "High-Performance Python APIs: FastAPI and ASGI (2025)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1109/ms.2025.fastapi"
+    }
+  ]
+}

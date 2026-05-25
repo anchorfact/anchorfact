@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-in-gaming>
+  a schema:TechArticle ;
+  schema:headline "AI in Gaming: NPCs, Procedural Content, and AlphaStar" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-in-gaming>
+  schema:citation <https://www.nature.com/articles/s41586-019-1724-z> .
+
+<https://anchorfact.org/kb/ai-in-gaming>
+  schema:citation <https://deepmind.google/blog/sima-generalist-ai-agent-for-3d-virtual-environments/> .

@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-medical-imaging-1",
+    "text": "The FDA has cleared over 500 AI/ML-enabled medical devices (as of 2024), with radiology accounting for 75% of clearances -- covering chest X-ray triage (qXR, Annalise CXR), CT stroke detection (Viz.ai LVO), mammography (Transpara, ProFound AI), and lung nodule detection. Retrospective studies show that AI-assisted radiologists detect 10-15% more cancers and reduce reading time by 20-30% when used as a second reader.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nature.com/articles/s41551-022-00935-z"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-medical-imaging-2",
+    "text": "CheXzero (Tiu et al., Nature Biomedical Engineering 2022 / Stanford) demonstrated zero-shot chest X-ray interpretation -- training on image-text pairs from radiology reports via contrastive learning, without requiring manually-annotated disease labels -- achieving AUC 0.89 on 14 pathology classifications, matching radiologist performance while eliminating the need for costly expert annotation that limited previous medical AI.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-aiml-enabled-medical-devices"
+    }
+  }
+]

@@ -1,0 +1,18 @@
+# Representation Learning: Autoencoders, VAEs, and MAEs
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Representation learning transforms raw data (pixels, text) into meaningful vector spaces where similarity corresponds to semantic relatedness. Autoencoders compress and reconstruct; VAEs add probabilistic generation; MAEs learn by masking.
+
+## Core Explanation
+Autoencoders: encoder compresses input to latent representation; decoder reconstructs. The bottleneck forces the model to learn salient features. Standard autoencoders produce deterministic embeddings. VAEs output distribution parameters (μ, σ), with KL divergence regularization keeping the latent space smooth and generative.
+
+## Detailed Analysis
+MAE's key insight: masking a high proportion (75%+) of image patches creates a challenging self-supervised task where the model must understand visual semantics to reconstruct missing patches. The asymmetric design (encoder sees only visible patches; lightweight decoder reconstructs all) enables efficient training.
+
+## Further Reading
+- Lilian Weng: From Autoencoder to Beta-VAE
+- Keras: Autoencoder Tutorial
+- PyTorch: MAE Implementation

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Advanced NLP: Tokenization, Embeddings, and Decoding — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Modern NLP pipelines transform raw text to vector representations suitable for neural processing. Tokenization, embeddings, and decoding strategies are the critical infrastructure between human language and machine understanding.<br>
+<br>
+## Core Explanation<br>
+Tokenization: splitting text into model-digestible units (subwords, words, characters). BPE trains a subword vocabulary from corpus statistics. WordPiece (BERT) uses likelihood-based merging. SentencePiece treats input as raw byte sequences, language-agnostic.<br>
+<br>
+## Detailed Analysis<br>
+Embeddings: Word2Vec (static), GloVe (global co-occurrence), contextual (BERT, GPT — same word has different vectors depending on context). Decoding: greedy (argmax each step), beam search (maintains k hypotheses), sampling (temperature + top-k/p for diversity).<br>
+<br>
+## Further Reading<br>
+- Hugging Face Tokenizers Library<br>
+- Jay Alammar: The Illustrated Word2Vec<br>
+- NLP Course (Hugging Face)</article></body>
+</html>

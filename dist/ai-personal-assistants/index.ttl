@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-personal-assistants>
+  a schema:article ;
+  schema:headline "AI Personal Assistants: Task Automation, Proactive Intelligence, and Agentic Personal AI" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-personal-assistants>
+  schema:citation <https://arxiv.org/search/?query=AI+personal+assistant+agentic+task+automation> .
+
+<https://anchorfact.org/kb/ai-personal-assistants>
+  schema:citation <https://arxiv.org/search/?query=on+device+LLM+personal+assistant> .

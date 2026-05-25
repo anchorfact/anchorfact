@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/vaccine-development",
+  "headline": "Vaccine Development and Immunology",
+  "description": "Vaccines train the immune system to recognize pathogens without causing disease. Modern platforms — mRNA, viral vector, protein subunit — enable rapid development, as demonstrated by COVID-19 vaccines reaching deployment in under 12 months.",
+  "dateCreated": "2026-05-24T18:00:04.373Z",
+  "dateModified": "2026-05-24T18:00:04.373Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Plotkin's Vaccines, 8th Edition",
+      "sameAs": "https://www.elsevier.com/books/plotkins-vaccines/plotkin/978-0-323-79058-1"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "mRNA Vaccines: A New Era in Vaccinology",
+      "sameAs": "https://www.nature.com/articles/s41577-021-00544-x"
+    }
+  ]
+}

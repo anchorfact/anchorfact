@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00436>
+  a schema:TechArticle ;
+  schema:headline "Time Value of Money" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00436>
+  schema:citation <https://www.mheducation.com/highered/product/principles-corporate-finance-brealey-myers/M9781264080946.html> .

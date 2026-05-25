@@ -1,0 +1,68 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-01",
+    "text": "Moore's Law : transistors per chip double 2 years — held for 50 years",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-001",
+    "text": "Computing history: Ada Lovelace (first algorithm, 1843) → Turing (theoretical foundation, 1936) → ENIAC (first electronic general-purpose computer, 1945) → transistors (1947) → integrated circuits (1958) → microprocessors (Intel 4004, 1971) → personal computers (Altair 1975, Apple II 1977, IBM PC 1981) → Internet → smartphones.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-002",
+    "text": "Turing (1936): Turing Machine theoretical model, Bombe broke Enigma in WWII.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-003",
+    "text": "Von Neumann architecture: stored-program concept (1945), basis of all modern computers.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-004",
+    "text": "Moore's Law (Gordon Moore, 1965): transistors per chip double ~2 years — held for 50 years.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-005",
+    "text": "GUI: Xerox PARC (1973) → Apple Macintosh (1984) → Windows (1985).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706"
+    }
+  }
+]

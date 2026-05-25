@@ -1,0 +1,19 @@
+# Low-Resource NLP: Multilingual Models, Endangered Language Preservation, and Translation
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Of the world's 7,000+ languages, fewer than 100 are well-supported by NLP systems. Low-resource NLP aims to bridge this gap — using cross-lingual transfer, few-shot learning, and community-driven data collection to bring AI language tools to the billions of speakers of underrepresented languages, while also supporting endangered language preservation.
+
+## Core Explanation
+The language resource gap: English has billions of training sentences across Wikipedia, books, news, and social media. In contrast, Quechua (8M speakers) has ~10,000 parallel sentences; Aymara, ~200. Traditional NLP trains separate models per language — impossible for low-resource. Modern approaches: (1) Multilingual pretraining — models like mBERT, XLM-RoBERTa, and mT5 are pretrained on ~100 languages simultaneously, sharing a vocabulary and transformer backbone. Zero-shot cross-lingual transfer: fine-tune on English task data, evaluate directly on Swahili — surprisingly effective when languages share typological features; (2) Data augmentation — back-translation (translate target language to English, then back to target), code-switching augmentation, and data from related high-resource languages; (3) Unsupervised techniques — monolingual corpora (Wikipedia, Common Crawl, religious texts) enable language model pretraining even without labeled data.
+
+## Detailed Analysis
+Machine translation for low-resource: the IEEE 2025 survey on low-resource MT documents the paradigm shift from statistical MT (phrase tables) → neural MT (encoder-decoder with attention) → multilingual NMT (single model for many languages, MNMT) → LLM-based translation (prompt "Translate this to Yoruba:"). MNMT benefits from transfer learning — related languages (Romance family: Spanish, Portuguese, Italian) improve each other; but unrelated language families don't benefit. Generative AI for language preservation (arxiv 2025): community linguists create parallel corpora of 500-5,000 sentences (folk tales, conversations, Bible translations); LLMs fine-tuned on this data achieve functional translation quality. Meta's NLLB (No Language Left Behind, 2022-2024) produced translation models for 200 languages using mined parallel data and back-translation. Nature (2024) profiled Meta's system as an "AI boost to endangered languages" but noted it requires meaningful community engagement, not just technology. Critical ethical questions: Who owns Indigenous language data? Should AI models be trained on minority languages without community consent? The "nothing about us without us" principle — linguists advocate for community-controlled AI where language communities decide how their data is used and benefit from resulting tools.
+
+## Further Reading
+- NLLB: No Language Left Behind (Meta, 2022)
+- Masakhane: NLP for African Languages Community
+- XLM-R: Unsupervised Cross-lingual Representation Learning
+

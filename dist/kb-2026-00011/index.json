@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00011",
+  "headline": "TCP/IP Protocol Suite",
+  "description": "TCP/IP is the foundational protocol suite of the Internet, enabling reliable, end-to-end communication across heterogeneous networks. TCP (RFC 793, 1981) provides reliable, ordered, error-checked byte-stream delivery using acknowledgments, retransmission, and congestion control. IP (RFC 791, 1981) handles addressing and routing — delivering individual packets (datagrams) from source to destination across an internetwork of networks. Standardized by Jon Postel at the IETF in 1980-1981, TCP/IP has scaled from ARPANET's 4 nodes to powering over 5.5 billion Internet users as of 2026.",
+  "dateCreated": "2026-05-24T18:00:04.100Z",
+  "dateModified": "2026-05-24T18:00:04.100Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "RFC 791 — Internet Protocol (IPv4)",
+      "author": "Postel, J.",
+      "sameAs": "https://www.rfc-editor.org/rfc/rfc791"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "RFC 793 — Transmission Control Protocol (TCP)",
+      "author": "Postel, J.",
+      "sameAs": "https://www.rfc-editor.org/rfc/rfc793"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "RFC 768 — User Datagram Protocol (UDP)",
+      "author": "Postel, J.",
+      "sameAs": "https://www.rfc-editor.org/rfc/rfc768"
+    }
+  ]
+}

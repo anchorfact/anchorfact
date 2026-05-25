@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-genomics>
+  a schema:article ;
+  schema:headline "AI for Genomics: Single-Cell Foundation Models and RNA Biology" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-genomics>
+  schema:citation <https://www.nature.com/articles/s12276-025-01547-5> .
+
+<https://anchorfact.org/kb/ai-for-genomics>
+  schema:citation <https://www.tandfonline.com/doi/full/10.1080/15476286.2026.2650517> .

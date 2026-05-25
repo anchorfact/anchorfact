@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f1",
+    "text": "Graph Neural Networks (GNNs) operate on graph-structured data by message passing between nodes. The Graph Convolutional Network (GCN, Kipf & Welling 2017, ICLR) uses a first-order approximation of spectral graph convolutions.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/1609.02907"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f2",
+    "text": "Graph Attention Networks (GAT, Veličković et al. 2018, ICLR) introduce attention mechanisms to GNNs, enabling nodes to assign different importance weights to different neighbors during message aggregation.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/1710.10903"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f3",
+    "text": "GNNs power major scientific discoveries: Google DeepMind's GNoME (Nature 2023) used GNNs to discover 2.2M stable crystals, and AlphaFold uses GNN-like architectures for protein structure prediction.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nature.com/articles/s41586-023-06735-9"
+    }
+  }
+]

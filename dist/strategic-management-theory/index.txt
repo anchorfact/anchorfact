@@ -1,0 +1,18 @@
+# Strategic Management: Frameworks and Practice
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Strategic management defines how organizations create and sustain competitive advantage through analytical frameworks and disciplined execution.
+
+## Core Explanation
+Strategy formulation: external analysis (PESTEL), internal analysis (VRIO: Valuable, Rare, Inimitable, Organizationally exploited resources), strategy selection (cost leadership, differentiation, focus). The resource-based view argues sustainable advantage derives from unique internal resources.
+
+## Detailed Analysis
+Blue Ocean Strategy advocates creating uncontested market space. McKinsey estimates 70% of strategic initiatives fail due to execution issues. OKRs (Objectives and Key Results) align organizational effort with measurable outcomes.
+
+## Further Reading
+- Harvard Business Review: Strategy Collection
+- McKinsey Quarterly
+- Strategic Management Journal

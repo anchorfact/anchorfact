@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00424>
+  a schema:TechArticle ;
+  schema:headline "Meditation and Mindfulness" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00424>
+  schema:citation <https://www.penguinrandomhouse.com/books/289133/full-catastrophe-living-by-jon-kabat-zinn/> .
+
+<https://anchorfact.org/kb/kb-2026-00424>
+  schema:citation <https://www.hachettebookgroup.com/mindfulness/> .
+
+<https://anchorfact.org/kb/kb-2026-00424>
+  schema:citation <https://www.guilford.com/mindfulness/> .
+
+<https://anchorfact.org/kb/kb-2026-00424>
+  schema:citation <https://www.hachettebookgroup.com/mindfulness/> .

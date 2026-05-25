@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Dropout and Regularization Techniques — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Regularization prevents neural networks from memorizing training data instead of learning generalizable patterns. Dropout, weight decay, data augmentation, and early stopping are the primary techniques.<br>
+<br>
+## Core Explanation<br>
+Dropout works as implicit ensemble: with n neurons and dropout probability p, 2^n possible network configurations are sampled during training. This prevents co-adaptation where neurons rely on specific other neurons. Modern architectures often prefer batch/layer normalization over dropout as the primary regularizer.<br>
+<br>
+## Detailed Analysis<br>
+Data augmentation (rotation, cropping, color jitter for images; back-translation, word dropout for text) is the most effective regularizer because it directly expands the training distribution. Mixup (Zhang et al., 2018) creates virtual training examples by convex combinations of pairs.<br>
+<br>
+## Further Reading<br>
+- Goodfellow et al., Deep Learning, Ch.7<br>
+- CS231n: Regularization Notes<br>
+- Distill.pub: Visualizing Regularization</article></body>
+</html>

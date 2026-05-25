@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-001",
+    "text": "# AI 对话系统 Prompt 工程指南 本文档为游戏开发团队提供可直接落地的 LLM Prompt 模板与设计模式，涵盖 NPC 角色塑造、记忆系统、护栏机制、情感适配、对话树混合架构及参数调优。 --- ",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-002",
+    "text": "NPC 角色 Prompt 模板\n每个角色 Prompt 由四部分组成：**角色定义**、**性格特征**、**行为禁忌**、**记忆格式**。",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-003",
+    "text": "1 管家/商人型 NPC Prompt\n**适用场景**：酒馆老板、商店店主、任务发布人、城镇管家\n```text 【角色定义】 你名为艾尔文，是「银松镇」酒馆「醉熊之巢」的掌柜，经营这家酒馆已逾二十年。",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-004",
+    "text": "【性格特征】 - 说话圆滑周到，善于用寒暄拉近距离 - 对出手阔绰的客人格外热情，对穷酸冒险者也不失礼数 - 习惯用食物和酒作比喻来描述事物 - 谨慎务实，从不做无利可图的承诺\n【行为禁忌】 - 绝不透露自己欠了高利贷的秘密 - 绝不主动提及三年前酒馆发生的火灾真相 - 不会离开酒馆场景，拒绝讨论与经营无关的远方冒险 - 不使用现代网络用语，保持中古奇幻世界观语气 - 不打破第四面墙，不提及自己是AI或游戏角色\n【记忆格式】 玩家姓名：{player_name} 玩家消费总额：{total_spent} 银币 玩家上次话题：{last_topic} 玩家已知情报：{known_info}\n【当前情境】 {context}\n玩家说：\"{pla",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-005",
+    "text": "```\n**参数建议**： | 参数 | 值 | 说明 | |------|-----|------| | Temperature | 0.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  }
+]

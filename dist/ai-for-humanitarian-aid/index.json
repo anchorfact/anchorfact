@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-humanitarian-aid",
+  "headline": "AI for Humanitarian Aid: Crisis Mapping, Damage Assessment, and Disaster Response Optimization",
+  "description": "When disaster strikes, AI helps humanitarian organizations see the impact, coordinate the response, and deliver aid more efficiently. Satellite imagery AI detects damaged buildings within hours of an earthquake. NLP models scan social media for real-time crisis maps. Reinforcement learning optimizes routing of relief trucks through damaged infrastructure. As climate change intensifies disasters, AI is becoming a critical capability for the humanitarian sector.",
+  "dateCreated": "2026-05-24T18:00:02.974Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Artificial intelligence in humanitarian aid: A review and future directions",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S0166497225002470"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "AI-Driven Multi-Satellite Data Fusion for Real-Time Disaster Assessment",
+      "sameAs": "https://ieeexplore.ieee.org/document/11297255"
+    }
+  ]
+}

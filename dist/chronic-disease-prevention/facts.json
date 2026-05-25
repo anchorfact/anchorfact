@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-hlth-chr-001",
+    "text": "NCDs account for 74% of global deaths; CVD is leading cause per WHO 2023.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.who.int/publications/i/item/9789240057104"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-hlth-chr-002",
+    "text": "Tobacco, unhealthy diet, inactivity, and alcohol are 4 major modifiable NCD risk factors.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.who.int/news-room/fact-sheets/detail/noncommunicable-diseases"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-hlth-chr-003",
+    "text": "Framingham Heart Study (1948-) identified smoking, BP, cholesterol as CVD risk factors.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.2105/AJPH.41.3.279"
+    }
+  }
+]

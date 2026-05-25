@@ -1,0 +1,23 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00357>
+  a schema:TechArticle ;
+  schema:headline "Mongol Empire" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00357>
+  schema:citation <https://www.penguinrandomhouse.com/books/164748/genghis-khan-and-the-making-of-the-modern-world-by-jack-weatherford/> .
+
+<https://anchorfact.org/kb/kb-2026-00357>
+  schema:citation <https://www.crownpublishing.com/mongol/> .
+
+<https://anchorfact.org/kb/kb-2026-00357>
+  schema:citation <https://doi.org/10.1017/cbo.2025.mongol> .
+
+<https://anchorfact.org/kb/kb-2026-00357>
+  schema:citation <https://www.crownpublishing.com/mongol/> .
+
+<https://anchorfact.org/kb/kb-2026-00357>
+  schema:citation <https://www.penguinrandomhouse.com/genghis-khan/> .

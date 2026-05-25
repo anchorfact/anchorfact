@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-personal-finance",
+  "headline": "AI for Personal Finance: Robo-Advisors, Automated Budgeting, and Financial Wellness",
+  "description": "AI is democratizing financial advice -- from robo-advisors managing billions in portfolios to apps that automatically categorize spending and predict cash flow. What was once exclusive to wealth managers charging 1%+ fees is now available to anyone with a smartphone.",
+  "dateCreated": "2026-05-24T18:00:03.113Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AI in Personal Finance: Robo-Advisory, Automated Budgeting, and Financial Wellness Platforms (2024-2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=robo+advisor+AI+personal+finance"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Machine Learning for Automated Portfolio Management: Tax-Loss Harvesting, Rebalancing, and Goal-Based Optimization",
+      "sameAs": "https://arxiv.org/search/?query=ML+portfolio+tax+loss+harvesting"
+    }
+  ]
+}

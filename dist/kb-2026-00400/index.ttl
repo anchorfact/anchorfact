@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00400>
+  a schema:TechArticle ;
+  schema:headline "Polynesian Navigation" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00400>
+  schema:citation <https://www.basicbooks.com/titles/nicholas-thomas/voyagers/9781541619876/> .
+
+<https://anchorfact.org/kb/kb-2026-00400>
+  schema:citation <https://www.harpercollins.com/sea-people/> .
+
+<https://anchorfact.org/kb/kb-2026-00400>
+  schema:citation <https://uhpress.hawaii.edu/voyagers/> .

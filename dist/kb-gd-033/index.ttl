@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-gd-033>
+  a schema:TechArticle ;
+  schema:headline "叙事架构代码实现指南" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-gd-033>
+  schema:citation <https://www.gdconf.com/> .

@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-gaming-theory-1",
+    "text": "DeepMind's DeepNash (Nature Communications, 2022) achieved expert-human level at Stratego -- a game of imperfect information with 10^535 possible states (far more than chess or Go) -- using model-free multi-agent RL with a novel regularized Nash dynamics (R-NaD) algorithm that converges to approximate Nash equilibria. This represented the first time AI mastered a game of this complexity class, where optimal play requires equilibrium reasoning rather than pure optimization.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nature.com/articles/d41586-022-04246-7"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-gaming-theory-2",
+    "text": "Meta's Cicero (Science, 2022) achieved human-level performance at Diplomacy -- a 7-player negotiation game combining cooperation, competition, and natural language communication -- by integrating a strategic reasoning engine (planning via piKL algorithm) with a dialogue module (fine-tuned language model generating persuasive messages). Cicero ranked in the top 10% of human Diplomacy players across 40 anonymous online games.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.science.org/doi/10.1126/science.ade9097"
+    }
+  }
+]

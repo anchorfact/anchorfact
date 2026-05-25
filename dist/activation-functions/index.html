@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Activation Functions in Neural Networks — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Activation functions introduce non-linearity into neural networks, enabling them to approximate any function. ReLU dominates hidden layers; softmax is standard for classification outputs.<br>
+<br>
+## Core Explanation<br>
+Without non-linearity, stacked linear layers collapse into a single linear transformation. Sigmoid (outputs 0-1) was historically popular but suffers from saturating gradients. Tanh (outputs -1 to 1) is zero-centered but still saturates. ReLU solved the vanishing gradient problem for deep networks.<br>
+<br>
+## Detailed Analysis<br>
+Leaky ReLU (small slope for x<0) and ELU address the "dying ReLU" problem where neurons output zero for all inputs. GELU approximates the expected value of stochastic regularization. Swish (f(x)=x·sigmoid(x)), discovered by neural architecture search, outperforms ReLU on deep benchmarks.<br>
+<br>
+## Further Reading<br>
+- PyTorch Documentation: Activation Functions<br>
+- Distill.pub: Visualizing Activation Functions<br>
+- Papers With Code: Activation Functions Benchmark</article></body>
+</html>

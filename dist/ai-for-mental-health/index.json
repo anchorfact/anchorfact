@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-mental-health",
+  "headline": "AI for Mental Health: LLM-Based Therapy, Digital Interventions, and Clinical Trials",
+  "description": "AI is entering mental healthcare with Class I clinical trial evidence. LLM-based therapy chatbots (Therabot, NEJM AI 2025) demonstrate significant symptom reduction for depression and anxiety, while cognitive architectures (Nature Medicine 2026) enable CBT-quality AI interactions. The global mental health access crisis — 1 in 8 people with disorders, <50% receiving treatment — motivates scalable AI solutions.",
+  "dateCreated": "2026-05-24T18:00:03.006Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Randomized Trial of a Generative AI Chatbot for Mental Health Treatment (Therabot)",
+      "sameAs": "https://ai.nejm.org/doi/full/10.1056/aIoa2400802"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "A cognitive layer architecture to support large language model-based cognitive behavioral therapy",
+      "sameAs": "https://www.nature.com/articles/s41591-026-04278-w"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00390",
+  "headline": "Sahara Desert",
+  "description": "The Sahara Desert (9.2 million km²) is the world's largest hot desert, spanning 11 North African countries. Contrary to perception, only ~25% is sand — most is rock/gravel plateaus (hamada). Once a green savannah (African Humid Period, 10,000-5,000 years ago) with lakes and wildlife.",
+  "dateCreated": "2026-05-24T18:00:04.317Z",
+  "dateModified": "2026-05-24T18:00:04.317Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Sahara: A Natural History (de Villiers & Hirtle)",
+      "sameAs": "https://www.bloomsbury.com/us/sahara-9780802713568/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Sahara: A Cultural History (2025)",
+      "author": "Gearon E.",
+      "sameAs": "https://global.oup.com/sahara/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Deserts: A Very Short Introduction (2025)",
+      "author": "Middleton N.",
+      "sameAs": "https://global.oup.com/vsi-deserts/"
+    }
+  ]
+}

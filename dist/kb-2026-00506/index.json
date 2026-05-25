@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00506",
+  "headline": "Stress Management Techniques",
+  "description": "Stress management combines physiological regulation (breathing, exercise, sleep) with cognitive reframing (CBT techniques, mindfulness). Key methods: MBSR (8-week mindfulness program), CBT cognitive restructuring, progressive muscle relaxation, exercise, sleep hygiene. Chronic stress differentiated from acute stress. Burnout (WHO ICD-11): occupational phenomenon from chronic workplace stress.",
+  "dateCreated": "2026-05-24T18:00:04.595Z",
+  "dateModified": "2026-05-24T18:00:04.595Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Full Catastrophe Living (Jon Kabat-Zinn, Revised Ed)",
+      "sameAs": "https://www.penguinrandomhouse.com/books/736/full-catastrophe-living-by-jon-kabat-zinn/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Feeling Good: The New Mood Therapy (David Burns)",
+      "sameAs": "https://www.harpercollins.com/products/feeling-good-david-d-burns"
+    }
+  ]
+}

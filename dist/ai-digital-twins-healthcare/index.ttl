@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-digital-twins-healthcare>
+  a schema:article ;
+  schema:headline "AI Digital Twins for Healthcare: Patient-Specific Simulation, Treatment Planning, and Virtual Organs" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-digital-twins-healthcare>
+  schema:citation <https://arxiv.org/search/?query=patient+specific+digital+twin+simulation> .
+
+<https://anchorfact.org/kb/ai-digital-twins-healthcare>
+  schema:citation <https://arxiv.org/search/?query=in+silico+clinical+trial+digital+twin> .

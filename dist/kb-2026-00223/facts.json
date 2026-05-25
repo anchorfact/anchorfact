@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-game-development-01",
+    "text": "Named after the 1980 game Rogue",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-game-development-001",
+    "text": "Roguelike games feature procedural generation, permadeath (no reloading saves), turn-based gameplay, and high difficulty. Named after the 1980 game Rogue. Roguelites (modern variants) relax permadeath by allowing meta-progression (permanent upgrades between runs). Examples: Hades, Dead Cells, Slay the Spire, The Binding of Isaac.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-game-development-002",
+    "text": "Berlin Interpretation (2008): defines 'high-value' roguelike factors.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-game-development-003",
+    "text": "Key mechanics: procedural level generation (seeded random, room templates, cellular automata), permadeath (+ meta-progression for roguelites), emergent gameplay (systems interact unexpectedly), replayability via randomization.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  }
+]

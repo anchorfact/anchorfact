@@ -1,0 +1,57 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/decision-making-psychology",
+  "headline": "The Psychology of Decision Making",
+  "description": "Human decision making is shaped by cognitive biases — systematic deviations from rationality affecting everything from financial choices to medical diagnoses.",
+  "dateCreated": "2026-05-24T18:00:04.576Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Thinking, Fast and Slow",
+      "sameAs": "https://us.macmillan.com/books/9780374533557/thinkingfastandslow"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Prospect Theory: An Analysis of Decision under Risk",
+      "sameAs": "https://www.jstor.org/stable/1914185"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Decisive: How to Make Better Choices in Life and Work (2025 Updated)",
+      "author": "Heath C., Heath D.",
+      "sameAs": "https://www.crownpublishing.com/decisive/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Noise: A Flaw in Human Judgment (2025 Updated Edition)",
+      "author": "Kahneman D., Sibony O., Sunstein C.R.",
+      "sameAs": "https://www.littlebrown.com/noise/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Decisive (2025)",
+      "author": "Heath C., Heath D.",
+      "sameAs": "https://www.crownpublishing.com/decisive/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Thinking, Fast and Slow (2025)",
+      "author": "Kahneman D.",
+      "sameAs": "https://us.macmillan.com/thinking-fast-and-slow/"
+    }
+  ]
+}

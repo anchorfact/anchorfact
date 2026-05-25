@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/multi-agent-reinforcement-learning",
+  "headline": "Multi-Agent Reinforcement Learning: Cooperation, Competition, and Emergent Strategies",
+  "description": "Multi-Agent Reinforcement Learning (MARL) extends RL to systems where multiple agents learn simultaneously — collaborating, competing, or negotiating. From drone swarms to trading agents, MARL captures emergent collective intelligence that exceeds the sum of individual policies.",
+  "dateCreated": "2026-05-24T18:00:03.419Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "A multi-agent reinforcement learning framework for exploring iterated and evolutionary games",
+      "sameAs": "https://www.nature.com/articles/s41467-025-67178-6"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "A Comprehensive Survey on Multi-Agent Cooperative Decision Making",
+      "sameAs": "https://arxiv.org/abs/2503.13415"
+    }
+  ]
+}

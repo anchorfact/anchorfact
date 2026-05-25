@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "Nuxt.js (2016, Nuxt Labs) is the Vue.js equivalent of Next.js — full-stack framework with SSR, SSG, file-based routing, auto-imports, and modules ecosystem. Nuxt 3 (2022) rebuilt on Nitro server engine and Vue 3 Composition API. Nuxt 4 (2024) added Turborepo-like unified build.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://nuxt.com/docs/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "Modules: 200+ community modules (auth, content, i18n, PWA, SEO).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://nuxt.com/docs/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-003",
+    "text": "Nitro: server engine supporting Node.js, Deno, Bun, Cloudflare Workers, edge.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://nuxt.com/docs/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-004",
+    "text": "File-based routing: `pages/` directory defines routes, `server/api/` defines API endpoints.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://nuxt.com/docs/"
+    }
+  }
+]

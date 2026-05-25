@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00006",
+  "headline": "Retrieval-Augmented Generation (RAG)",
+  "description": "Retrieval-Augmented Generation (RAG) is an AI architecture introduced by Lewis et al. (2020) at Facebook AI Research that combines large language models with real-time external knowledge retrieval. Instead of relying solely on parametric knowledge (what the model memorized during training), RAG retrieves relevant documents from a knowledge base and provides them as context for generation. This reduces hallucination by ~50% in empirical studies, enables responses grounded in up-to-date and domain-specific information, and provides source attribution. RAG underpins AI search engines (Perplexity, Google AI Overviews, ChatGPT Search), enterprise knowledge bases, and research assistants (Elicit, Consensus) — making it the dominant architecture for production AI systems requiring factual accuracy.",
+  "dateCreated": "2026-05-24T18:00:03.471Z",
+  "dateModified": "2026-05-24T18:00:03.471Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "author": "Lewis, Patrick, Perez, Ethan, Piktus, Aleksandra, Petroni, Fabio, Karpukhin, Vladimir, Goyal, Naman, Küttler, Heinrich, Lewis, Mike, Yih, Wen-tau, Rocktäschel, Tim, Riedel, Sebastian, Kiela, Douwe",
+      "sameAs": "https://arxiv.org/abs/2005.11401"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Dense Passage Retrieval for Open-Domain Question Answering",
+      "author": "Karpukhin, Vladimir, Oguz, Barlas, Min, Sewon, Lewis, Patrick, Wu, Ledell, Edunov, Sergey, Chen, Danqi, Yih, Wen-tau",
+      "sameAs": "https://arxiv.org/abs/2004.04906"
+    }
+  ]
+}

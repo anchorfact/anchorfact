@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/llm-inference-optimization",
+  "headline": "LLM Inference Optimization: From FlashAttention to Speculative Decoding",
+  "description": "LLM inference optimization has made serving trillion-parameter models economically viable. FlashAttention eliminates the memory bottleneck; speculative decoding accelerates generation 2-3x; KV-cache optimization reduces memory by 8x.",
+  "dateCreated": "2026-05-24T18:00:03.377Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "FlashAttention: Fast and Memory-Efficient Exact Attention",
+      "sameAs": "https://arxiv.org/abs/2205.14135"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Fast Inference from Transformers via Speculative Decoding",
+      "sameAs": "https://arxiv.org/abs/2211.17192"
+    }
+  ]
+}

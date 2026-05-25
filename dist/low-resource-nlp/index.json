@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/low-resource-nlp",
+  "headline": "Low-Resource NLP: Multilingual Models, Endangered Language Preservation, and Translation",
+  "description": "Of the world's 7,000+ languages, fewer than 100 are well-supported by NLP systems. Low-resource NLP aims to bridge this gap — using cross-lingual transfer, few-shot learning, and community-driven data collection to bring AI language tools to the billions of speakers of underrepresented languages, while also supporting endangered language preservation.",
+  "dateCreated": "2026-05-24T18:00:03.393Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Natural language processing applications for low-resource languages: A comprehensive survey",
+      "sameAs": "https://www.cambridge.org/core/journals/natural-language-processing/article/natural-language-processing-applications-for-lowresource-languages/7D3DA31DB6C01B13C6B1F698D4495951"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Generative AI and Large Language Models in Language Preservation: Automating Translation and Revitalization",
+      "sameAs": "https://arxiv.org/abs/2501.11496"
+    }
+  ]
+}

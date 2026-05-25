@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/desert-ecosystems>
+  a schema:Article ;
+  schema:headline "Desert Ecosystems and Adaptations" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/desert-ecosystems>
+  schema:citation <https://link.springer.com/book/10.1007/978-3-030-69580-4> .
+
+<https://anchorfact.org/kb/desert-ecosystems>
+  schema:citation <https://www.unep.org/resources/report/global-deserts-outlook> .

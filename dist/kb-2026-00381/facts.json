@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sports-001",
+    "text": "Basketball (James Naismith, 1891, Springfield, MA) is played 5v5 on a court with hoops at each end. NBA (1946) is the premier professional league. Scoring: 2pts (inside arc), 3pts (beyond arc), 1pt (free throw). Positions: point guard, shooting guard, small forward, power forward, center.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.abramsbooks.com/product/basketball-and-other-things_9781419726477/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sports-002",
+    "text": "Key rules: shot clock (24s NBA, 14s reset), 3-second violation (offensive player in paint), traveling (excess steps without dribbling).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.fiba.basketball/documents/official-basketball-rules"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sports-003",
+    "text": "Legendary players: Michael Jordan, LeBron James, Kareem Abdul-Jabbar, Kobe Bryant, Stephen Curry (revolutionized 3-point shooting).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.abramsbooks.com/product/basketball-and-other-things_9781419726477/"
+    }
+  }
+]

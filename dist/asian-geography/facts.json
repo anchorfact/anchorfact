@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-001",
+    "text": "6 million km²) is the largest continent — 30% of Earth's land.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nationalgeographic.com/books/atlas/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-002",
+    "text": "Features: Himalayas (highest range), Gobi Desert, Yangtze River (longest in Asia, 6,300 km), Siberian taiga (largest forest), Dead Sea (lowest point on land, -430m).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nationalgeographic.com/books/atlas/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-003",
+    "text": "Monsoons define seasonal climate for billions.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nationalgeographic.com/books/atlas/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-004",
+    "text": "Tibet: 'roof of the world,' average 4,500m elevation.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nationalgeographic.com/books/atlas/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-005",
+    "text": "Southeast Asia: archipelago (Indonesia: 17,000+ islands), rice paddies, tropical monsoon.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nationalgeographic.com/books/atlas/"
+    }
+  }
+]

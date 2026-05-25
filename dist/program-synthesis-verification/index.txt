@@ -1,0 +1,19 @@
+# Program Synthesis and Formal Verification: Neural Theorem Proving with LLMs
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Program synthesis generates code from specifications; formal verification proves code correctness mathematically. The convergence of LLMs with formal methods — neural theorem proving — promises AI that writes and verifies its own code, making software more reliable than ever before.
+
+## Core Explanation
+Program synthesis: given a specification (input-output examples, natural language description, logical constraints), generate a program. Approaches: (1) Inductive synthesis (FlashFill, Excel) — search over program space guided by examples; (2) Neural synthesis (AlphaCode, CodeLlama) — LLMs generate code from natural language. Formal verification: prove that a program satisfies a formal specification (precondition → program → postcondition). Tools: Dafny, Coq, Isabelle, Lean. Neural theorem proving: LLMs generate proof steps, theorem provers verify correctness → combine creativity of LLMs with rigor of formal systems.
+
+## Detailed Analysis
+ProofSeek pipeline: (1) NL Statement Generator — translate code semantics into natural language property statements; (2) LLM Proof Generator — generate formal proofs in Isabelle/Coq syntax; (3) Automated Theorem Prover — verify proof correctness, reject invalid steps. Key insight: LLMs hallucinate but can be constrained by formal checkers, achieving "creativity with guarantees." Applications: smart contract verification (blockchain), operating system kernel verification (seL4 style), cryptography protocol proofs. Code generation surveys (Springer 2026) report that LLM-generated code reduces development time by 40-60% but still requires 15-25% human review for correctness.
+
+## Further Reading
+- Software Foundations (Pierce, UPenn) — Coq tutorial
+- DeepSpec: Science of Deep Specification
+- Lean 4 Theorem Prover Community
+

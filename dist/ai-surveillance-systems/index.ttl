@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-surveillance-systems>
+  a schema:article ;
+  schema:headline "AI for Surveillance Systems: Object Tracking, Anomaly Detection, and Intelligent Monitoring" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-surveillance-systems>
+  schema:citation <https://arxiv.org/search/?query=video+surveillance+deep+learning+tracking+anomaly> .
+
+<https://anchorfact.org/kb/ai-surveillance-systems>
+  schema:citation <https://arxiv.org/search/?query=AI+surveillance+ethics+facial+recognition+regulation> .

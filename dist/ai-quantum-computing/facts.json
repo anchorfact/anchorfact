@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-quantum-computing-1",
+    "text": "AI for quantum computing (2023-2026): (1) Quantum error correction -- deep RL agents (AlphaQubit, DeepMind 2024) decode surface codes, achieving state-of-the-art accuracy for correcting qubit errors, essential for fault-tolerant quantum computing; (2) Circuit optimization -- ML compilers reduce gate count and depth, squeezing more computation into limited qubit coherence time; (3) Algorithm discovery -- AI discovers novel quantum circuits and variational quantum eigensolver (VQE) ansatzes outperforming human-designed circuits.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nature.com/articles/s41586-024-07985-x"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-quantum-computing-2",
+    "text": "Quantum machine learning (QML) -- the intersection of quantum computing and ML -- explores: (1) quantum neural networks that may provide computational advantages over classical NNs; (2) quantum kernels for classification; (3) hybrid quantum-classical models (variational quantum circuits optimized by classical optimizers). Current consensus (2022-2025): NISQ (Noisy Intermediate-Scale Quantum) devices are too small and noisy for practical QML advantage; fault-tolerant quantum computers are required and expected post-2030.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/search/?query=quantum+machine+learning+survey+2025"
+    }
+  }
+]

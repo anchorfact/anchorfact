@@ -1,0 +1,21 @@
+# Vite
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+
+
+
+## TL;DR
+
+Vite (Evan You, 2020) is a next-generation frontend build tool that leverages native ES modules for instant dev server startup and HMR. Uses esbuild for pre-bundling (10-100x faster than Webpack) and Rollup for production builds.
+
+## Core Explanation
+
+Dev server: serves source files natively via ESM, no bundling needed — HMR in <1ms. Production: Rollup for optimized tree-shaken output. Framework-agnostic: React, Vue, Svelte, Solid via plugins. `import.meta.glob()` for dynamic imports. Vite 6 (2024): Environment API, improved SSR. Has largely replaced Webpack in new projects.
+
+## Further Reading
+
+- [Vite Documentation](https://vitejs.dev/)
+

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Swarm and Evolutionary Intelligence: Genetic Algorithms, NEAT, and Particle Swarms — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Evolutionary computation draws inspiration from biological evolution — mutation, crossover, selection — to optimize without gradients. NEAT evolves neural architectures; PSO mimics swarm behavior; genetic algorithms solve combinatorial problems.<br>
+<br>
+## Core Explanation<br>
+Genetic Algorithm loop: (1) initialize population of candidate solutions; (2) evaluate fitness of each; (3) select parents (tournament, roulette); (4) crossover (combine parent genes); (5) mutate (random perturbation); (6) replace population and repeat. Advantages: gradient-free, naturally parallel, well-suited for multi-objective optimization and discrete search spaces.<br>
+<br>
+## Detailed Analysis<br>
+NEAT innovations: (1) historical markings track gene origin for meaningful crossover; (2) speciation protects structural innovation by grouping similar networks; (3) minimal initialization then complexification avoids bloated architectures. Modern applications: neural architecture search (regularized evolution), hyperparameter optimization, game playing (NEAT for Atari). OpenAI used evolution strategies (ES) as alternative to RL for Mujoco locomotion — simpler, more parallelizable.<br>
+<br>
+## Further Reading<br>
+- NEAT-Python Library<br>
+- OpenAI: Evolution Strategies as a Scalable Alternative to RL<br>
+- DEAP: Distributed Evolutionary Algorithms in Python<br>
+</article></body>
+</html>

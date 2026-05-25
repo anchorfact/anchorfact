@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/ai-in-finance",
+  "headline": "AI in Finance: Trading, Risk, and Fraud Detection",
+  "description": "AI is transforming finance — algorithmic trading dominates equity markets, fraud detection saves billions, and LLMs are entering investment analysis. The industry's data-rich, quantitative nature makes it an ideal AI application domain.",
+  "dateCreated": "2026-05-24T18:00:03.082Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Machine Learning in Finance: From Theory to Practice",
+      "sameAs": "https://link.springer.com/book/10.1007/978-3-030-41068-1"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Advances in Financial Machine Learning (Lopez de Prado)",
+      "sameAs": "https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086"
+    }
+  ]
+}

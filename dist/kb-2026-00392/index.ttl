@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00392>
+  a schema:TechArticle ;
+  schema:headline "Indian Independence Movement" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00392>
+  schema:citation <https://www.penguin.co.in/book/indias-struggle-for-independence/> .
+
+<https://anchorfact.org/kb/kb-2026-00392>
+  schema:citation <https://www.harpercollins.com/india-history/> .
+
+<https://anchorfact.org/kb/kb-2026-00392>
+  schema:citation <https://global.oup.com/vsi-indian-independence/> .

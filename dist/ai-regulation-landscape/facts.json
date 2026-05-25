@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f1",
+    "text": "Global AI regulation follows four models: EU comprehensive risk-based (AI Act), US sector-specific voluntary (Executive Order + NIST framework), China prescriptive (Generative AI Measures), UK pro-innovation (non-statutory principles).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://iapp.org/resources/article/global-ai-legislation-tracker"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f2",
+    "text": "China's Generative AI Measures (2023) require safety assessments, algorithm filings, and content moderation for publicly deployed GenAI services. The measures balance AI development with state content control.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f3",
+    "text": "As of 2025, over 60 countries have proposed or enacted AI-related legislation, with the G7 Hiroshima Process and UN AI Advisory Body establishing multilateral governance frameworks for frontier AI.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://compliancehub.wiki/global-ai-law-snapshot/"
+    }
+  }
+]

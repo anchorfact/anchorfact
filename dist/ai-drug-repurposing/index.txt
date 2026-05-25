@@ -1,0 +1,14 @@
+# AI for Drug Repurposing: Identifying New Uses for Existing Drugs Through Machine Learning
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI drug repurposing finds new uses for existing drugs -- identifying that a rheumatoid arthritis drug could treat COVID-19, or that an old antidepressant might work for a rare disease. Knowledge graphs and transcriptomic ML slash drug discovery timelines from 10+ years to months.
+
+## Core Explanation
+Drug repurposing: find new indications for approved drugs. Advantages over de novo discovery: known safety profile (already passed Phase I), existing manufacturing, faster regulatory path (505(b)(2)). AI approaches: (1) Knowledge graph embedding -- biomedical KG (drug-protein-disease-gene) -> predict missing links; (2) Transcriptomic signature matching -- drug-induced gene expression changes (LINCS L1000) vs disease expression signatures. If drug reverses disease signature, it may treat the disease; (3) Molecular docking + ML -- screen drug library against new protein targets.
+
+## Detailed Analysis
+COVID-19 repurposing: BenevolentAI KG (Jan 2020) identified baricitinib as potential COVID treatment based on predicted AAK1 inhibition (viral entry mechanism). ACTT-2 trial (Sept 2020) showed baricitinib + remdesivir reduced recovery time by 1 day. FDA EUA Nov 2020. Healx (Cambridge, 2014-2025): AI platform HealNet predicts drug-disease matches from KG of 1M+ biomedical concepts. Drug for Fragile X syndrome (HLX-1502) predicted by AI in 18 months vs typical 5-10 years, now in Phase 2a. Recursion Pharmaceuticals: computer vision on cellular microscopy images. Screen approved drugs for effects on disease-relevant cellular phenotypes. Hetionet (2017): openly published biomedical KG enabling algorithmic repurposing. Key challenge: AI predictions are retrospective (predicting known drug-disease pairs) -- prospective validation requires clinical trials. Few AI-repurposed drugs have completed Phase 3 yet.
+

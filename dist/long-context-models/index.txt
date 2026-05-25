@@ -1,0 +1,18 @@
+# Long-Context Language Models: Beyond 1M Tokens
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Modern LLMs process context windows of 100K-2M tokens — entire books, codebases, or years of conversation history. Gemini 1.5 Pro demonstrated >99% retrieval accuracy across 1M tokens, proving usable long-context capability.
+
+## Core Explanation
+Context window = working memory limit. Pre-2023: 4K-32K tokens. 2024-2025: 128K-2M tokens via architectural innovations (RoPE scaling, Ring Attention, FlashAttention). The "lost-in-the-middle" problem means models attend most to beginning and end of context, missing information in the middle.
+
+## Detailed Analysis
+Key techniques: Rotary Position Embedding (RoPE) interpolation; Ring Attention distributes sequences across devices; KV-cache quantization reduces memory. RULER benchmark measures real usable context beyond simple needle-in-haystack tests. Long-context enables RAG replacement for some use cases.
+
+## Further Reading
+- RULER: Long Context Evaluation
+- FlashAttention Paper
+- Anthropic: Long Context Best Practices

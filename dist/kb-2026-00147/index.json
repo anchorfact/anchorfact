@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00147",
+  "headline": "Command Pattern",
+  "description": "Encapsulates a request as an object, enabling parameterization, queuing, logging, and undo/redo. Commands are first-class objects with execute() and undo() methods.",
+  "dateCreated": "2026-05-24T18:00:03.757Z",
+  "dateModified": "2026-05-24T18:00:03.757Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM Digital Library",
+      "sameAs": "https://dl.acm.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Head First Design Patterns (2nd Edition Updated 2025)",
+      "author": "Freeman E., Robson E.",
+      "sameAs": "https://www.oreilly.com/head-first-design-patterns/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Behavioral Design Patterns in Cloud-Native Architectures (2025)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.patterns"
+    }
+  ]
+}

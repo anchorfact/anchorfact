@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-nuclear-fusion>
+  a schema:article ;
+  schema:headline "AI for Nuclear Fusion: Plasma Control, Disruption Prediction, and Accelerated Discovery" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-nuclear-fusion>
+  schema:citation <https://www.nature.com/articles/s41586-021-04301-9> .
+
+<https://anchorfact.org/kb/ai-for-nuclear-fusion>
+  schema:citation <https://link.springer.com/article/10.1007/s10894-025-00495-2> .

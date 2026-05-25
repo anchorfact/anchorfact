@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-text-summarization-1",
+    "text": "ACM Computing Surveys (June 2025) published a systematic survey of text summarization tracing four eras: statistical methods (TF-IDF, TextRank, pre-2015) → neural sequence-to-sequence (Pointer-Generator, 2015-2019) → pre-trained language models (BART, PEGASUS, T5, 2019-2022) → LLM-based summarization (GPT-4, Claude, 2022-present) — finding that LLMs achieve ROUGE-L scores 10-15 points higher than fine-tuned BART on multi-document and conversational summarization, but struggle with factual consistency (hallucinating 3-8% of summary content for long documents).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/doi/abs/10.1145/3731445"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-text-summarization-2",
+    "text": "arxiv (June 2024) and ScienceDirect (2024) surveys established long-document summarization as the key remaining challenge — for documents exceeding 10K tokens (legal briefs, scientific papers, meeting transcripts) — documenting that hierarchical models (discourse-aware, extract-then-abstract) and chunk-and-fuse approaches using LLMs with 100K+ context windows now achieve ROUGE-2 scores of 22-28 (vs. 18-22 for pre-LLM baselines) on PubMed and GovReport benchmarks.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2406.11289"
+    }
+  }
+]

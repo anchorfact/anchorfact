@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f1",
+    "text": "AlphaGo (Silver et al. 2016, DeepMind, Nature) defeated world champion Lee Sedol by combining deep neural networks with Monte Carlo tree search, marking a landmark achievement in AI.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nature.com/articles/nature16961"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f2",
+    "text": "AlphaZero (Silver et al. 2018, DeepMind, Science) achieved superhuman performance in Chess, Shogi, and Go using only self-play reinforcement learning — learning from scratch without human game data.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1126/science.aar6404"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f3",
+    "text": "NVIDIA ACE (Avatar Cloud Engine) introduces AI-powered non-player characters (NPCs) with real-time dialogue, emotion, and animation generation, transforming interactive storytelling in games.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://developer.nvidia.com/ace"
+    }
+  }
+]

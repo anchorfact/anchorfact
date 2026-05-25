@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-001",
+    "text": "# 游戏 AI 系统设计 > 好的游戏 AI 不是最聪明的，而是**最有趣的**。玩家的乐趣来自可理解、可预测但又充满惊喜的对手行为。 --- ",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-002",
+    "text": "put(start, 0) came_from = {} g_score = {start: 0} f_score = {start: heuristic(start, goal)}\nwhile not open_set.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-003",
+    "text": "get() if current == goal: return reconstruct_path(came_from, current)\nfor neighbor in neighbors(current): tentative_g = g_score[current] + cost(current, neighbor) if tentative_g < g_score.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-004",
+    "text": "get(neighbor, INF): came_from[neighbor] = current g_score[neighbor] = tentative_g f_score[neighbor] = tentative_g + heuristic(neighbor, goal) open_set.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-005",
+    "text": "put(neighbor, f_score[neighbor])\nreturn None  # 无路径\n# 常见启发式函数 def manhattan(a, b):  # 4方向网格 return abs(a.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  }
+]

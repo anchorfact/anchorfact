@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-document-understanding>
+  a schema:article ;
+  schema:headline "AI Document Understanding: Layout Parsing, Structured Extraction, and Intelligent Document Processing" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-document-understanding>
+  schema:citation <https://arxiv.org/abs/2410.21169> .
+
+<https://anchorfact.org/kb/ai-document-understanding>
+  schema:citation <https://aws.amazon.com/ai/generative-ai/use-cases/document-processing/> .

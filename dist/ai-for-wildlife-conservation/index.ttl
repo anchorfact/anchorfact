@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-wildlife-conservation>
+  a schema:article ;
+  schema:headline "AI for Wildlife Conservation: Camera Trap Analysis, Species Classification, and Biodiversity Monitoring" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-wildlife-conservation>
+  schema:citation <https://www.nature.com/articles/s41598-025-90249-z> .
+
+<https://anchorfact.org/kb/ai-for-wildlife-conservation>
+  schema:citation <https://github.com/microsoft/pytorch-wildlife> .

@@ -1,0 +1,23 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00471>
+  a schema:TechArticle ;
+  schema:headline "Financial Literacy" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00471>
+  schema:citation <https://www.penguinrandomhouse.com/books/180511/your-money-or-your-life-by-vicki-robin/> .
+
+<https://anchorfact.org/kb/kb-2026-00471>
+  schema:citation <https://www.harrimanhouse.com/psychology-of-money/> .
+
+<https://anchorfact.org/kb/kb-2026-00471>
+  schema:citation <https://www.mheducation.com/personal-finance/> .
+
+<https://anchorfact.org/kb/kb-2026-00471>
+  schema:citation <https://www.harrimanhouse.com/psychology-of-money/> .
+
+<https://anchorfact.org/kb/kb-2026-00471>
+  schema:citation <https://www.richdad.com/> .

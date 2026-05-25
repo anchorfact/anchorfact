@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00395>
+  a schema:TechArticle ;
+  schema:headline "Inca Empire" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00395>
+  schema:citation <https://www.simonandschuster.com/books/The-Last-Days-of-the-Incas/Kim-MacQuarrie/9780743260503> .
+
+<https://anchorfact.org/kb/kb-2026-00395>
+  schema:citation <https://www.wiley.com/incas/> .
+
+<https://anchorfact.org/kb/kb-2026-00395>
+  schema:citation <https://global.oup.com/vsi-inca/> .

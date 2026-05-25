@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-supply-chain-risk",
+  "headline": "AI for Supply Chain Risk: Disruption Prediction, Supplier Monitoring, and Resilience Analytics",
+  "description": "AI predicts supply chain disruptions before they happen -- monitoring millions of signals for factory fires, port strikes, and supplier bankruptcies across multi-tier global supply chains. From Resilinc to o9 Solutions, AI supply chain risk management transforms reactive firefighting to proactive resilience.",
+  "dateCreated": "2026-05-24T18:00:03.183Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Machine Learning for Supply Chain Risk Management: Disruption Prediction, Supplier Analytics, and Resilience Optimization (2024-2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=supply+chain+risk+AI+disruption+prediction"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Digital Twin Supply Chains: Simulation, What-If Analysis, and AI-Driven Resilience Planning",
+      "sameAs": "https://arxiv.org/search/?query=supply+chain+digital+twin+simulation"
+    }
+  ]
+}

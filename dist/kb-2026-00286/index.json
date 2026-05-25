@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00286",
+  "headline": "Knowledge Distillation",
+  "description": "Knowledge distillation transfers knowledge from a large teacher model to a smaller student model. The student learns to mimic the teacher's softened output probabilities (not just hard labels). This enables deploying compact models with near-teacher performance — critical for edge devices and mobile applications.",
+  "dateCreated": "2026-05-24T18:00:03.364Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Distilling the Knowledge in a Neural Network (Hinton, Vinyals, Dean)",
+      "author": "Hinton, Geoffrey, Vinyals, Oriol, Dean, Jeff",
+      "sameAs": "https://arxiv.org/abs/1503.02531"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Knowledge Distillation: A Survey (Gou, Yu, Maybank, Tao)",
+      "author": "Gou, Jianping, Yu, Baosheng, Maybank, Stephen J., Tao, Dacheng",
+      "sameAs": "https://doi.org/10.1007/s11263-021-01453-z"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "TinyBERT: Distilling BERT for Natural Language Understanding",
+      "author": "Jiao, Xiaoqi, Yin, Yichun, Shang, Lifeng, et al.",
+      "sameAs": "https://arxiv.org/abs/1909.10351"
+    }
+  ]
+}

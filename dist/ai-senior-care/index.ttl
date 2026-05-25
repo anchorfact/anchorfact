@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-senior-care>
+  a schema:article ;
+  schema:headline "AI for Senior Care: Fall Detection, Medication Reminders, and Social Companionship" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-senior-care>
+  schema:citation <https://arxiv.org/search/?query=senior+care+AI+fall+detection+companion> .
+
+<https://anchorfact.org/kb/ai-senior-care>
+  schema:citation <https://arxiv.org/search/?query=social+robot+elderly+care> .

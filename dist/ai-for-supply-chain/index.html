@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI for Supply Chain: Optimization, Vehicle Routing, and Logistics Intelligence — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+AI is transforming global supply chains — from optimizing delivery routes in real-time to predicting demand weeks ahead. Deep reinforcement learning and large-scale optimization algorithms reduce logistics costs by 15-25% while improving delivery reliability, making AI the competitive backbone of modern e-commerce, freight, and humanitarian logistics.<br>
+<br>
+## Core Explanation<br>
+Supply chain management spans: (1) Demand forecasting — predicting product demand by region, SKU, and time window using temporal models (LSTMs, Transformers) trained on historical sales, weather, and economic indicators; (2) Inventory optimization — determining optimal stock levels across warehouses to minimize holding costs while maintaining service levels (news vendor problem with learning); (3) Vehicle routing — assigning delivery vehicles to routes minimizing distance/time (Traveling Salesman Problem, Vehicle Routing Problem variants) — classical NP-hard problems where AI heuristics dominate; (4) Warehouse automation — robot coordination, pick-path optimization, and computer vision for package sorting; (5) Supplier risk management — AI monitoring of supplier financial health, geopolitical risks, and disruption signals.<br>
+<br>
+## Detailed Analysis<br>
+Vehicle Routing Problem (VRP): given a depot, a fleet of vehicles with capacity constraints, and a set of customers with demands, find minimum-cost routes serving all customers. Extensions: CVRP (capacity), VRPTW (time windows), DVRP (dynamic — new orders arrive during execution). Traditional solutions: OR-Tools (Google), CPLEX heuristics. AI approaches: (1) Attention-based neural construction — transformer models (POMO, AM) directly output node visitation sequences; (2) Deep RL for dynamic VRP — agent learns to dispatch vehicles as orders arrive, optimizing cumulative reward; (3) Graph neural networks learn embeddings of road networks incorporating real-time traffic. Nature 2025 DRL logistics framework handles 100+ vehicles with 1,000+ delivery points in urban environments. Maritime supply chain optimization (Engineering Applications of AI, 2025) uses robust adversarial RL under weather perturbations. The 199-article SLR (2025) identifies the shift from "ML for parameter estimation" (predicting travel times, demand) to "ML for solution generation" (directly producing routing plans). Industry adoption: Amazon, UPS (ORION), and JD.com deploy AI routing at continental scale; humanitarian logistics (WFP, Red Cross) use AI for disaster response supply distribution.<br>
+<br>
+## Further Reading<br>
+- OR-Tools: Google Optimization Tools (Vehicle Routing)<br>
+- POMO: Policy Optimization with Multiple Optima (NeurIPS 2020)<br>
+- UPS ORION: On-Road Integrated Optimization and Navigation<br>
+</article></body>
+</html>

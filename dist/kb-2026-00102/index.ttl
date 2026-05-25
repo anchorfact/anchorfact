@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00102>
+  a schema:TechArticle ;
+  schema:headline "Notifications API" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00102>
+  schema:citation <https://notifications.spec.whatwg.org/> .

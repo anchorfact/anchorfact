@@ -1,0 +1,21 @@
+# Shell Scripting (Bash)
+Confidence: high
+Last verified: 2026-05-22
+Generation: human_only
+
+
+
+
+
+## TL;DR
+
+Bash (Bourne Again Shell) is the default shell on most Linux distributions. Shell scripts automate tasks: file operations, process management, text processing. Variables, conditionals, loops, functions — a complete programming language for system administration.
+
+## Core Explanation
+
+Variables: `NAME='value'`, reference with `$NAME` or `${NAME}`. Conditionals: `if [ -f file ]; then ... fi`. Loops: `for i in *.txt; do ... done`. Input: `$1 $2 ...` (positional params), `$#` (count), `$@` (all). Exit codes: 0=success, non-zero=failure. `set -euo pipefail` for strict mode (exit on error, undefined variable, pipe failures). Shebang: `#!/bin/bash`.
+
+## Further Reading
+
+- [Bash Reference Manual](undefined)
+

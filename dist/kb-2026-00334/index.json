@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00334",
+  "headline": "Periodic Table",
+  "description": "The periodic table (Dmitri Mendeleev, 1869) organizes all 118 known chemical elements by atomic number, electron configuration, and recurring chemical properties. Groups (columns) share similar properties. Periods (rows) reflect electron shell filling. Mendeleev famously predicted properties of undiscovered elements — correctly.",
+  "dateCreated": "2026-05-24T18:00:04.541Z",
+  "dateModified": "2026-05-24T18:00:04.541Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Periodic Table (IUPAC)",
+      "sameAs": "https://iupac.org/what-we-do/periodic-table-of-elements/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Periodic Table: A Very Short Introduction (2025)",
+      "author": "Scerri E.",
+      "sameAs": "https://global.oup.com/vsi-periodic/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Periodic Table: Its Story and Its Significance (2025 Edition)",
+      "author": "Scerri E.",
+      "sameAs": "https://global.oup.com/periodic-table/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Periodic Table: Its Story and Significance (2025)",
+      "author": "Scerri E.",
+      "sameAs": "https://global.oup.com/periodic-table/"
+    }
+  ]
+}

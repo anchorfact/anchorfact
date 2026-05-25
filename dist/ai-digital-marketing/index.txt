@@ -1,0 +1,14 @@
+# AI for Digital Marketing: Personalization, Campaign Optimization, and Customer Analytics
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI is the silent force behind every personalized ad, recommended product, and optimized marketing email. From contextual bandits selecting the best offer in real-time to LLMs generating ad copy to deep learning predicting which customers will churn, AI transforms marketing from mass broadcast to one-to-one personalization.
+
+## Core Explanation
+Marketing AI stack: (1) Personalization -- collaborative filtering (users like you bought X), content-based (product features), contextual bandits (learn which offer maximizes click/conversion for each user context in real-time); (2) Campaign optimization -- multi-channel budget allocation (RL: how much to spend on Google vs Facebook vs email this week). Bayesian optimization for creative A/B testing; (3) Customer analytics -- segmentation (K-means → deep clustering), LTV prediction (survival analysis + regression), churn prediction (binary classification), sentiment analysis (NLP on reviews/tickets); (4) Content generation -- LLMs for ad copy, email subject lines, product descriptions, and social media posts.
+
+## Detailed Analysis
+Contextual bandits: each user is defined by features (demographics, behavior history, context). Each "arm" is an offer/ad. Algorithm selects arm, observes reward (click/conversion/no action), updates beliefs. Thompson sampling: maintain posterior distribution over each arm's reward probability; sample from posterior, pick best sample. Key insight: this provides natural exploration-exploitation balance. Meta Ads (2025): bandit-based delivery across billions of impressions, improving conversion 15-30% over static targeting. Customer LTV: deep survival models (DeepHit, DeepSurv) predict time-to-churn. Churn prediction: features include recency/frequency/monetary (RFM), support tickets, product usage, and NPS scores. XGBoost benchmark achieves 85-92% AUC. Post-cookie era: third-party cookie deprecation forces shift to first-party data, contextual targeting, and cohort-based advertising (Google Topics API). Federated learning for privacy-preserving personalization: train models across user devices without centralizing data.
+

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI Decision Support Systems: Clinical CDSS, Business Intelligence, and Augmented Decision-Making — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+AI decision support systems augment human intelligence rather than replace it -- flagging at-risk patients, recommending optimal prices, and simulating decision outcomes. From clinical CDSS that detects sepsis hours before symptoms to business intelligence platforms that prescribe actions, AI transforms raw data into actionable recommendations with natural language explanations.<br>
+<br>
+## Core Explanation<br>
+Decision support maturity model: Level 1(Descriptive) -- dashboards showing what happened (KPIs, trends); Level 2(Diagnostic) -- root cause analysis (why did sales drop?); Level 3(Predictive) -- forecasting future states (patient readmission risk, demand forecast); Level 4(Prescriptive) -- recommending optimal actions (which treatment, which price, which supplier); Level 5(Autonomous) -- AI executes decisions within constraints. Architecture: Data ingestion (ETL) -> ML models (classification, regression, RL) -> Optimization engine (linear programming, RL policies) -> Recommendation generation -> Presentation layer (dashboard with NL explanations). Human-in-the-loop: AI recommends, human decides (Level 4) or AI acts within guardrails (Level 5).<br>
+<br>
+## Detailed Analysis<br>
+Clinical CDSS: Epic Deterioration Index analyzes EHR data (vital signs, lab results, nursing notes) to predict patient deterioration. Sepsis prediction: ML models (random forest, LSTM) process vitals + labs, alert clinicians 4-6 hours before clinical recognition. Nature Digital Medicine 2025 review: effectiveness depends on workflow integration -- CDSS embedded in clinical workflow (auto-alert in EHR) achieves 3x higher adoption than standalone tools. Alert fatigue: too many false alarms desensitize clinicians. ML-based alert filtering and tiered urgency levels address this. Business decision intelligence: platforms (Tellius, Sisu, Peak) provide automated insight discovery -- AI scans all metric combinations, flags statistically significant changes, and generates natural language explanations. Prescriptive analytics: RL-based pricing (Pricefx), supply chain optimization (O9, Kinaxis), and marketing budget allocation (Google AI). Key challenge: the "last mile" of decision support -- translating AI recommendations into human action. Trust-building through explainability, confidence scores, and decision rationale presentation.<br>
+</article></body>
+</html>

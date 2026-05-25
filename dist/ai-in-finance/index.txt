@@ -1,0 +1,18 @@
+# AI in Finance: Trading, Risk, and Fraud Detection
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI is transforming finance — algorithmic trading dominates equity markets, fraud detection saves billions, and LLMs are entering investment analysis. The industry's data-rich, quantitative nature makes it an ideal AI application domain.
+
+## Core Explanation
+Key applications: (1) Fraud detection — anomaly detection on transaction graphs in real-time; (2) Algorithmic trading — RL agents optimize execution, sentiment analysis on financial news; (3) Credit scoring — gradient-boosted trees with alternative data; (4) Risk management — Monte Carlo simulations accelerated by ML surrogates.
+
+## Detailed Analysis
+Challenges: non-stationary distributions (markets change), low signal-to-noise ratio, regulatory constraints (models must be explainable for lending decisions), and adversarial dynamics (other traders adapt to your strategy). Synthetic data generation addresses the limited historical data problem for rare events (financial crises).
+
+## Further Reading
+- JP Morgan AI Research
+- Bloomberg: Machine Learning in Finance
+- Journal of Financial Data Science

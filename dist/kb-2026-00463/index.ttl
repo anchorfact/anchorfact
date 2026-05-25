@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00463>
+  a schema:TechArticle ;
+  schema:headline "Sleep Disorders" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00463>
+  schema:citation <https://aasm.org/clinical-resources/international-classification-sleep-disorders/> .

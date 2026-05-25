@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/speaker-recognition>
+  a schema:article ;
+  schema:headline "Speaker Recognition: Voice Biometrics, Diarization, and Deep Learning for Speaker Verification" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/speaker-recognition>
+  schema:citation <https://www.sciencedirect.com/science/article/pii/S0952197625023590> .
+
+<https://anchorfact.org/kb/speaker-recognition>
+  schema:citation <https://www.nature.com/articles/s41598-025-09385-1> .

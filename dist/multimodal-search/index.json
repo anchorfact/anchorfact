@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/multimodal-search",
+  "headline": "Multimodal Search: Cross-Modal Retrieval, Product Search, and Multimodal Embeddings",
+  "description": "Multimodal search enables \"find me products that look like this photo\" or \"find videos about this topic\" -- bridging the gap between different media types through a shared embedding space. From e-commerce product search to enterprise knowledge retrieval, multimodal embeddings let users search across text, images, video, and audio with a single query, in any modality.",
+  "dateCreated": "2026-05-24T18:00:03.429Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "MMSearch: Benchmarking the Potential of Large Multimodal Models as Search Engines",
+      "sameAs": "https://github.com/CaraJ7/MMSearch"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Multimodal Search: Searching with Semantic and Visual Understanding Using Multimodal Embeddings",
+      "sameAs": "https://opensearch.org/blog/multimodal-semantic-search/"
+    }
+  ]
+}

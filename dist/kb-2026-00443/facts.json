@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-self-improvement-001",
+    "text": "Learning how to learn is a meta-skill that improves all other skills. Key techniques: spaced repetition (review at increasing intervals), active recall (test yourself, don't re-read), interleaving (mix topics, don't block), elaboration (explain in your own words), and focused + diffuse thinking modes (Pomodoro + rest).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/567576/learning-how-to-learn-by-barbara-oakley-phd-and-terrence-sejnowski-phd/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-self-improvement-002",
+    "text": "Spaced repetition: day 1 → day 2 → day 4 → day 7 → day 14 — memory curve.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/533681/a-mind-for-numbers-by-barbara-oakley-phd/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-self-improvement-003",
+    "text": "Forgetting curve (Ebbinghaus, 1885): we forget 50% within an hour if not reinforced.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/533681/a-mind-for-numbers-by-barbara-oakley-phd/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-self-improvement-004",
+    "text": "Diffuse mode: relaxed, background processing (shower insights).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/533681/a-mind-for-numbers-by-barbara-oakley-phd/"
+    }
+  }
+]

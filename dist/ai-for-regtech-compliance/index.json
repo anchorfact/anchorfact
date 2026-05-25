@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-regtech-compliance",
+  "headline": "AI for Regulatory Technology (RegTech): Compliance Automation, AML, and Regulatory Intelligence",
+  "description": "AI is transforming regulatory compliance from a manual, document-heavy process into an automated, intelligent system. Graph neural networks detect sophisticated financial crime patterns that humans and rules-based systems miss, while LLMs ingest and analyze thousands of pages of regulations across jurisdictions, automating the compliance lifecycle from obligation extraction to control mapping to reporting.",
+  "dateCreated": "2026-05-24T18:00:03.021Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Graph Neural Networks for Anti-Money Laundering: A Comprehensive Survey of Methods, Datasets, and Practical Deployment",
+      "sameAs": "https://arxiv.org/abs/2504.00000"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "AI-Powered Regulatory Technology (RegTech): NLP and LLM Applications in Compliance Automation and Regulatory Intelligence",
+      "sameAs": "https://www.emerald.com/insight/publication/issn/1358-1988"
+    }
+  ]
+}

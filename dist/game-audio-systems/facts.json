@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-au-001",
+    "text": "Wwise and FMOD dominate AAA game audio middleware, powering 80%+ of titles.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://mitpress.mit.edu/9780262033787/game-sound/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-au-002",
+    "text": "Procedural audio (Farnell, MIT 2010): real-time algorithmic sound generation vs. pre-recorded samples.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://mitpress.mit.edu/9780262014410/designing-sound/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-au-003",
+    "text": "Spatial audio/HRTF enables 3D sound positioning, essential for VR/AR immersion.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.researchgate.net/publication/235129007_3-D_Sound_for_Virtual_Reality_and_Multimedia"
+    }
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sci-cb-001",
+    "text": "Linus Pauling's 1939 \"The Nature of the Chemical Bond\" introduced valence bond theory and electronegativity concepts.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1021/ja01355a027"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sci-cb-002",
+    "text": "Molecular orbital theory (Mulliken & Hund) describes bonding through delocalized wavefunctions.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nobelprize.org/prizes/chemistry/1966/mulliken/lecture/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sci-cb-003",
+    "text": "Hydrogen bonding is responsible for water anomalous properties and DNA base pairing.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://global.oup.com/academic/product/an-introduction-to-hydrogen-bonding-9780195095494"
+    }
+  }
+]

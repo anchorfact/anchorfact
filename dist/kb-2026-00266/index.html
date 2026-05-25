@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Docker Networking — AnchorFact</title></head>
+<body><article><br>
+<br>
+<br>
+<br>
+## TL;DR<br>
+<br>
+Docker networking provides container connectivity. Drivers: bridge (default, containers on same host), host (container shares host network), overlay (multi-host, Swarm), macvlan (container gets MAC address, appears as physical device), none (isolated). Custom networks enable DNS-based service discovery.<br>
+<br>
+## Core Explanation<br>
+<br>
+Bridge: Docker creates docker0 bridge, containers get IP from 172.17.0.0/16 subnet. `--link` (deprecated) vs. user-defined networks (DNS resolution: container names resolve). Overlay: VXLAN encapsulation across hosts. Port mapping: `-p 8080:80` maps host 8080 to container 80. Network isolation: containers on different networks can't communicate (unless explicitly connected).<br>
+<br>
+## Further Reading<br>
+<br>
+- [Docker Networking Documentation](undefined)<br>
+</article></body>
+</html>

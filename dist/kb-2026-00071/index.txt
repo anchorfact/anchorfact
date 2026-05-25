@@ -1,0 +1,37 @@
+# Markdown
+Confidence: high
+Last verified: 2026-05-24
+Generation: human_only
+
+## TL;DR
+
+Markdown is a lightweight markup language for creating formatted text using a plain-text editor, created by John Gruber in 2004 with significant contributions from Aaron Swartz. Its design goal is readability — Markdown source is intended to be as readable as plain text, unlike HTML's angle brackets. Markdown is the dominant format for documentation (README files, GitHub wikis), static site generators (Jekyll, Hugo, Astro), note-taking apps (Obsidian, Notion), and LLM-optimized content (llms.txt). The CommonMark specification (v0.31.2, 2024) provides a rigorous, unambiguous standard.
+
+## Core Syntax
+
+| Element | Markdown |
+|---------|----------|
+| Heading | `# H1`, `## H2`, ... `###### H6` |
+| Bold | `**bold**` |
+| Italic | `*italic*` |
+| Link | `[text](url)` |
+| Image | `![alt](url)` |
+| Code | `` `inline` `` |
+| Code block | ```` ```lang\ncode\n``` ```` |
+| List | `- item` or `1. item` |
+| Table | `\| col1 \| col2 \|` with `---|---|` |
+| Blockquote | `> quoted text` |
+
+## Dialects
+
+- **CommonMark**: Rigorous specification (2014+)
+- **GFM (GitHub Flavored Markdown)** : Adds task lists, tables, strikethrough, autolinks
+- **MDX**: Markdown + JSX components (used by Next.js, Astro, Docusaurus)
+- **R Markdown**: Markdown + executable R code for data science
+- **Obsidian Markdown**: Adds wikilinks (`[[page]]`), callouts, YAML frontmatter
+
+## Further Reading
+
+- [CommonMark Spec](https://spec.commonmark.org/0.31.2/): Rigorous standardization
+- [Daring Fireball Markdown](https://daringfireball.net/projects/markdown/): Original 2004 article
+

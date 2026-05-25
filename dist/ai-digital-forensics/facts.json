@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-digital-forensics-1",
+    "text": "AI-powered digital forensics (2023-2026) spans: (1) Deepfake provenance -- AI traces media to its generative source model (GAN fingerprint detection, frequency-domain artifact analysis); (2) Image forensics -- detecting spliced/doctored images via EXIF analysis, noise pattern inconsistency, and lighting inconsistency; (3) Audio forensics -- detecting synthetic speech, identifying recording device from acoustic fingerprint; (4) Timeline reconstruction -- AI correlates timestamps, geolocation metadata, and communication patterns to reconstruct digital crime timelines.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=79"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-digital-forensics-2",
+    "text": "Camera-based provenance via C2PA standard (2025): flagship cameras (Leica M11-P, Sony A9 III, Nikon Z9) cryptographically sign images at capture -- creating a verifiable chain of custody from sensor to publication. AI forensic tools validate these signatures and detect tampering in unsigned media, with the C2PA 2.1 specification enabling interoperability across devices and platforms.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://c2pa.org/specifications/"
+    }
+  }
+]

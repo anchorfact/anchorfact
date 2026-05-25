@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00451",
+  "headline": "Volleyball Fundamentals",
+  "description": "Volleyball is played 6v6 across a net, with teams allowed 3 touches per side (bump-set-spike). Key skills: serve, pass (bump), set (overhead finger pass), attack (spike), block, dig (defense). Beach volleyball: 2v2, same skills, different strategy. Invented by William G. Morgan (1895, Holyoke, MA).",
+  "dateCreated": "2026-05-24T18:00:04.630Z",
+  "dateModified": "2026-05-24T18:00:04.630Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Volleyball Skills & Drills (AVCA)",
+      "sameAs": "https://www.humankinetics.com/products/volleyball-skills-drills"
+    }
+  ]
+}

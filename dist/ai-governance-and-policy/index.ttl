@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-governance-and-policy>
+  a schema:TechArticle ;
+  schema:headline "AI Governance: Risk Frameworks, Audits, and International Cooperation" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-governance-and-policy>
+  schema:citation <https://www.nist.gov/itl/ai-risk-management-framework> .
+
+<https://anchorfact.org/kb/ai-governance-and-policy>
+  schema:citation <https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration> .

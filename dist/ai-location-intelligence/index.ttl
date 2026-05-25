@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-location-intelligence>
+  a schema:article ;
+  schema:headline "AI for Location Intelligence: Geospatial Analytics, POI Recommendation, and Site Selection" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-location-intelligence>
+  schema:citation <https://arxiv.org/search/?query=location+intelligence+spatial+deep+learning> .
+
+<https://anchorfact.org/kb/ai-location-intelligence>
+  schema:citation <https://dl.acm.org/doi/10.1145/3397536.3422262> .

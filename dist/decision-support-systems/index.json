@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/decision-support-systems",
+  "headline": "AI Decision Support Systems: Clinical CDSS, Business Intelligence, and Augmented Decision-Making",
+  "description": "AI decision support systems augment human intelligence rather than replace it -- flagging at-risk patients, recommending optimal prices, and simulating decision outcomes. From clinical CDSS that detects sepsis hours before symptoms to business intelligence platforms that prescribe actions, AI transforms raw data into actionable recommendations with natural language explanations.",
+  "dateCreated": "2026-05-24T18:00:03.279Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AI Clinical Decision Support Systems: A Comprehensive Review of FDA-Cleared Devices and Clinical Outcomes",
+      "sameAs": "https://www.nature.com/npjdigitalmed/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Gartner Strategic Technology Trends: Augmented Decision Intelligence (2025)",
+      "sameAs": "https://www.gartner.com/en/articles/decision-intelligence"
+    }
+  ]
+}

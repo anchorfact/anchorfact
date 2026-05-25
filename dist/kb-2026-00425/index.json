@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00425",
+  "headline": "Gut Microbiome",
+  "description": "The gut microbiome is the ecosystem of ~39 trillion bacteria in the human digestive tract — roughly equal to human cells. It influences digestion, immunity, mental health (gut-brain axis), metabolism, and disease risk. Shaped by diet (fiber feeds beneficial bacteria), antibiotics (disrupt), birth method (vaginal vs. C-section).",
+  "dateCreated": "2026-05-24T18:00:04.337Z",
+  "dateModified": "2026-05-24T18:00:04.337Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "I Contain Multitudes (Ed Yong)",
+      "sameAs": "https://www.harpercollins.com/products/i-contain-multitudes-ed-yong"
+    }
+  ]
+}

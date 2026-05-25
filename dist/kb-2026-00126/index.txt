@@ -1,0 +1,22 @@
+# Array Data Structure
+Confidence: high
+Last verified: 2026-05-22
+Generation: human_only
+
+
+
+
+
+## TL;DR
+
+An array is a contiguous block of memory storing elements of the same type, accessible by index in O(1) time. It is the most fundamental data structure. Dynamic arrays (JavaScript Array, C++ vector) use geometric expansion for amortized O(1) append.
+
+## Core Explanation
+
+Key operations: access O(1), search O(n). Dynamic arrays amortize resizing by doubling capacity. Multi-dimensional arrays stored in row-major (C) or column-major (Fortran). Cache locality makes arrays fast — each cache miss loads 64 bytes (16 ints on 64-bit). Drawbacks: fixed size (static) or expensive resize (dynamic).
+
+## Further Reading
+
+- [Introduction to Algorithms (CLRS)](undefined)
+- [Algorithms (4th Edition)](undefined)
+

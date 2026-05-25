@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-benchmarks-and-evaluation>
+  a schema:TechArticle ;
+  schema:headline "AI Benchmarks: MMLU, SWE-bench, and How We Measure Intelligence" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-benchmarks-and-evaluation>
+  schema:citation <https://arxiv.org/abs/2009.03300> .
+
+<https://anchorfact.org/kb/ai-benchmarks-and-evaluation>
+  schema:citation <https://arxiv.org/abs/2310.06770> .

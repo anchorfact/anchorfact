@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Electron — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+<br>
+Electron (GitHub, 2013, formerly Atom Shell) is a framework for building desktop applications with web technologies (HTML, CSS, JavaScript) using Chromium and Node.js. Each app bundles both runtimes. Used by VS Code, Slack, Discord, Figma, Notion, 1Password.<br>
+<br>
+## Core Explanation<br>
+<br>
+Architecture: Main process (Node.js, system access) + Renderer processes (Chromium, UI). IPC (`ipcMain`/`ipcRenderer`) for inter-process communication. `electron-builder` packages for Windows (.exe), macOS (.dmg), Linux (.AppImage/.deb). Native modules via `native-ext`. Criticism: large bundle size (100+ MB), memory usage. Alternatives: Tauri (Rust backend, smaller, WebView instead of full Chromium).<br>
+<br>
+## Further Reading<br>
+<br>
+- [Electron Documentation](https://www.electronjs.org/docs/)<br>
+</article></body>
+</html>

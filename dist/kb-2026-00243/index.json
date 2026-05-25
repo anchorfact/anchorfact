@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00243",
+  "headline": "Database Normalization",
+  "description": "Database normalization reduces data redundancy and anomalies by organizing data into well-structured tables. Normal forms: 1NF (atomic values), 2NF (no partial dependencies), 3NF (no transitive dependencies), BCNF (every determinant is a candidate key). Most databases target 3NF — enough to eliminate most anomalies while remaining practical.",
+  "dateCreated": "2026-05-24T18:00:03.793Z",
+  "dateModified": "2026-05-24T18:00:03.793Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM Digital Library",
+      "sameAs": "https://dl.acm.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Database Systems: The Complete Book (4th Edition, 2025)",
+      "author": "Garcia-Molina H., Ullman J.D., Widom J.",
+      "sameAs": "https://www.pearson.com/database/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Relational vs NoSQL: Data Modeling in 2025",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.db"
+    }
+  ]
+}

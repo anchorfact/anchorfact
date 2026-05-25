@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-agriculture-1",
+    "text": "Nature Scientific Reports (July 2025) demonstrated a hybrid Transformer-CNN architecture for plant disease detection — combining Vision Transformer global context with CNN local texture features — achieving 96.8% accuracy across 38 crop-disease classes from the PlantVillage dataset, and deploying the model on edge devices (Jetson Nano) for real-time in-field diagnosis, reducing the need for expert agronomist consultation by enabling farmers to photograph leaves and receive instant diagnosis.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nature.com/articles/s41598-025-10537-6"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-agriculture-2",
+    "text": "ScienceDirect (December 2025) published a systematic review of AI methodologies for precision agriculture — analyzing 150+ papers — documenting that deep learning-based crop disease detection achieves 90-97% accuracy, UAV-based multispectral imaging combined with CNNs enables early disease detection 7-14 days before visible symptoms, and multimodal approaches (satellite + drone + soil sensors) improve yield prediction accuracy by 15-25% over single-source methods.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S2772375525007221"
+    }
+  }
+]

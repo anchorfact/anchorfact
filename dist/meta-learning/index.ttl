@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/meta-learning>
+  a schema:article ;
+  schema:headline "Meta-Learning: Learning to Learn with MAML and Reptile" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/meta-learning>
+  schema:citation <https://arxiv.org/abs/1703.03400> .
+
+<https://anchorfact.org/kb/meta-learning>
+  schema:citation <https://arxiv.org/abs/1803.02999> .

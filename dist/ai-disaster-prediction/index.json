@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-disaster-prediction",
+  "headline": "AI for Disaster Prediction: Earthquake Forecasting, Flood Detection, and Early Warning Systems",
+  "description": "AI is becoming humanity's early warning system -- predicting floods days in advance, detecting wildfires from satellite imagery, and providing earthquake alerts seconds before shaking arrives. From Google's Flood Hub covering 80+ countries to AI-powered tsunami buoys, machine learning gives communities precious minutes to hours of lead time that save lives.",
+  "dateCreated": "2026-05-24T18:00:02.876Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Deep artificial intelligence applications for natural disaster management systems: A methodological review",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S1470160X24005247"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "AI-Driven Disaster Prediction and Early Warning Systems: A Systematic Literature Review",
+      "sameAs": "https://link.springer.com/chapter/10.1007/978-981-96-6863-2_6"
+    }
+  ]
+}

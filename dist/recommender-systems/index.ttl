@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/recommender-systems>
+  a schema:article ;
+  schema:headline "Recommender Systems: Graph Neural Collaborative Filtering and LLM-Based Recommendation" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/recommender-systems>
+  schema:citation <https://www.nature.com/articles/s41598-025-15096-4> .
+
+<https://anchorfact.org/kb/recommender-systems>
+  schema:citation <https://www.sciencedirect.com/science/article/pii/S0925231225026980> .

@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00148>
+  a schema:TechArticle ;
+  schema:headline "Model-View-Controller (MVC)" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00148>
+  schema:citation <https://dl.acm.org/> .
+
+<https://anchorfact.org/kb/kb-2026-00148>
+  schema:citation <https://www.informit.com/patterns-eaa/> .
+
+<https://anchorfact.org/kb/kb-2026-00148>
+  schema:citation <https://doi.org/10.1145/acmcs.2025.mvc> .

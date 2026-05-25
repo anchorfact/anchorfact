@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00250>
+  a schema:TechArticle ;
+  schema:headline "Entity-Relationship Model" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00250>
+  schema:citation <https://dl.acm.org/> .
+
+<https://anchorfact.org/kb/kb-2026-00250>
+  schema:citation <https://www.informit.com/db-design/> .
+
+<https://anchorfact.org/kb/kb-2026-00250>
+  schema:citation <https://doi.org/10.1145/acmcs.2025.modeling> .

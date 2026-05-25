@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-tabular-data-1",
+    "text": "arxiv (April 2025) published a comprehensive survey of synthetic tabular data generation -- reviewing 80+ methods across statistical (copula-based, Bayesian networks), GAN-based (CTGAN, CTAB-GAN+, tableGAN), VAE-based (TVAE), diffusion-based (TabDDPM), and LLM-based (GReaT) approaches -- finding that diffusion models achieve the best fidelity-privacy trade-off, with TabDDPM matching real data distributions at 0.05 Wasserstein distance while providing membership inference attack resistance.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2504.16506"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-tabular-data-2",
+    "text": "ScienceDirect Neurocomputing (November 2025) introduced an LLM-integrated framework for realistic synthetic tabular data -- encoding table rows as natural language sentences, generating novel rows via LLM inference, and decoding back to structured format -- achieving 12% improvement in downstream ML utility (classifier trained on synthetic matching real-data classifier) compared to GAN-based methods on tabular benchmarks (Adult, Covertype).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S0925231225020430"
+    }
+  }
+]

@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00291>
+  a schema:TechArticle ;
+  schema:headline "Spring Boot" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00291>
+  schema:citation <https://docs.spring.io/spring-boot/> .

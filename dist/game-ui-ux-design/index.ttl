@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/game-ui-ux-design>
+  a schema:TechArticle ;
+  schema:headline "Game User Interface and UX Design" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/game-ui-ux-design>
+  schema:citation <https://www.routledge.com/The-Art-of-Game-Design/Schell/p/book/9781138632059> .
+
+<https://anchorfact.org/kb/game-ui-ux-design>
+  schema:citation <https://www.pearson.com/en-us/subject-catalog/p/designing-the-user-interface/P200000009530> .

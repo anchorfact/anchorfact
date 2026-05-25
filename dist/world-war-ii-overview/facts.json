@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-hist-ww2-001",
+    "text": "WWII (1939-45) was the deadliest conflict: 70-85M fatalities, ~3% of 1940 world population.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.littlebrown.com/titles/antony-beevor/the-second-world-war/9780316023740/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-hist-ww2-002",
+    "text": "D-Day (June 6, 1944) was the largest amphibious assault: 156,000 Allied troops.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.simonandschuster.com/books/D-Day/Stephen-E-Ambrose/9780684801377"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-hist-ww2-003",
+    "text": "Atomic bombings of Hiroshima/Nagasaki (Aug 1945) led to Japan's surrender (V-J Day Aug 15).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1080/00472336.2015.1112218"
+    }
+  }
+]

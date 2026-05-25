@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Anomaly Detection in Machine Learning — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Anomaly detection identifies data points that deviate significantly from expected patterns — critical for fraud detection, industrial monitoring, and cybersecurity.<br>
+<br>
+## Core Explanation<br>
+Three paradigms: supervised (labeled anomalies, rare class problem), semi-supervised (labeled normal data only, one-class classification), unsupervised (no labels, assumes anomalies are rare and different). Key methods include statistical (z-score, IQR), distance-based (kNN, LOF), and deep learning approaches (autoencoders, GANs).<br>
+<br>
+## Detailed Analysis<br>
+One-class SVM learns a decision boundary enclosing normal data with maximum margin to origin. Deep SVDD finds the smallest hypersphere enclosing normal representations. In time series, LSTM-based predictors flag points with unexpectedly high prediction error as anomalies.<br>
+<br>
+## Further Reading<br>
+- PyOD: Python Outlier Detection Toolkit<br>
+- scikit-learn: Novelty and Outlier Detection<br>
+- Papers With Code: Anomaly Detection</article></body>
+</html>

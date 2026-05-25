@@ -1,0 +1,20 @@
+# Docker Security Best Practices
+Confidence: high
+Last verified: 2026-05-22
+Generation: human_only
+
+
+
+
+
+## TL;DR
+
+Docker containers share the host kernel, making security critical. Best practices: run as non-root user, use minimal base images (distroless, alpine), scan images for vulnerabilities, limit capabilities, use read-only root filesystems, enable seccomp/AppArmor profiles.
+
+## Core Explanation
+
+`USER 1000` in Dockerfile (never run as root). `docker scan` or Trivy for vulnerability scanning. `--read-only` flag makes rootfs immutable. `--cap-drop=ALL --cap-add=NET_BIND_SERVICE` limits Linux capabilities. Docker Bench Security checks against CIS Benchmark. Podman (daemonless, rootless by default) and gVisor (user-space kernel) provide stronger isolation.
+
+## Further Reading
+
+- 

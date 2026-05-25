@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-accessibility-1",
+    "text": "ScienceDirect (February 2026) published a qualitative scoping review of 47 peer-reviewed articles (2018-2025) examining how AI has been integrated into assistive tools across domains — including screen readers with computer vision scene description, speech-to-text for hearing-impaired communication, smart prosthetics with adaptive control, and personalized learning tools for neurodivergent individuals — concluding that AI transforms accessibility from isolated assistive devices to integrated adaptive systems.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S0001691825013241"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-accessibility-2",
+    "text": "Nature Scientific Reports (September 2025) demonstrated a deep computer vision system for sign language recognition achieving 95%+ accuracy on continuous American Sign Language (ASL) videos — processing 30 fps webcam input to generate real-time text/speech translations, addressing the 300+ sign languages used by 70 million deaf people worldwide for whom AI-powered translation enables independent communication.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nature.com/articles/s41598-025-09106-8"
+    }
+  }
+]

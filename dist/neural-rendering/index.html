@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Neural Rendering: NeRF, View Synthesis, and Implicit Scene Representations — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Neural rendering creates photorealistic 3D scenes from photographs -- capturing a place or object and rendering it from any viewpoint. From NeRF (Neural Radiance Fields) to 3D Gaussian Splatting, these techniques are transforming computer graphics, VR, and digital heritage preservation.<br>
+<br>
+## Core Explanation<br>
+Novel view synthesis: given images of a scene from different angles, generate a photorealistic image from any new viewpoint. Neural approach (NeRF): train a neural network F(x, y, z, theta, phi) -> (R, G, B, sigma) mapping every 3D point and viewing direction to color and density. To render a pixel: march a ray through the scene, sample points, query network at each point, accumulate color using volume rendering. The network IS the scene representation -- no explicit mesh or point cloud.<br>
+<br>
+## Detailed Analysis<br>
+NeRF training: for each training image, sample random pixels, cast rays, minimize MSE between rendered and ground-truth colors. Instant-NGP: multi-resolution hash-grid encoding replaces positional encoding, enabling 100-1000x faster training (5 seconds vs hours). 3D Gaussian Splatting (2023): represent scene as 3D Gaussians with position, covariance, opacity, spherical harmonics. Rendering is rasterization of projected Gaussians -- orders of magnitude faster than NeRF's ray marching. Applications: VR scene capture (Luma AI, Polycam -- create 3D from phone video), movie VFX (digital set capture), cultural heritage digitization, real estate virtual tours. Key challenge: dynamic scenes -- NeRF/3DGS assume static scenes. Dynamic extensions (D-NeRF, 4DGS) exist but are less mature. The 2025 survey identifies outdoor, large-scale, and dynamic rendering as the key frontiers.<br>
+</article></body>
+</html>

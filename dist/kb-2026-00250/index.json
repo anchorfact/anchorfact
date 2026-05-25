@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00250",
+  "headline": "Entity-Relationship Model",
+  "description": "The Entity-Relationship (ER) Model (Peter Chen, 1976) is a conceptual data modeling technique. Entities (objects: Customer, Order) have attributes and participate in relationships (places, contains). Cardinality: 1:1, 1:N, M:N. ER diagrams guide database schema design before implementation.",
+  "dateCreated": "2026-05-24T18:00:03.827Z",
+  "dateModified": "2026-05-24T18:00:03.827Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM Digital Library",
+      "sameAs": "https://dl.acm.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Database Design for Mere Mortals (5th Edition, 2025)",
+      "author": "Hernandez M.J.",
+      "sameAs": "https://www.informit.com/db-design/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Conceptual Modeling: From ER to Knowledge Graphs (2025)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.modeling"
+    }
+  ]
+}

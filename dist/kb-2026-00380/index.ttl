@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00380>
+  a schema:TechArticle ;
+  schema:headline "Football (Soccer)" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00380>
+  schema:citation <https://www.hatchards.co.uk/book/jonathan-wilson/inverting-the-pyramid/9781409128649> .

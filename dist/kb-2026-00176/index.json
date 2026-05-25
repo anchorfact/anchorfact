@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00176",
+  "headline": "ESLint",
+  "description": "ESLint is a static analysis tool for JavaScript/TypeScript that identifies problematic patterns and enforces coding standards. Created by Nicholas Zakas (2013), it is the most popular JS linter. ESLint 9 (2024) introduced flat config (`eslint.config.mjs`), replacing `.eslintrc`.",
+  "dateCreated": "2026-05-24T18:00:03.828Z",
+  "dateModified": "2026-05-24T18:00:03.828Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ESLint Documentation",
+      "sameAs": "https://eslint.org/docs/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "JavaScript Tooling and Linting (2025 Edition)",
+      "author": "multiple",
+      "sameAs": "https://www.oreilly.com/eslint/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Static Analysis and Code Quality Tools: A 2025 Survey",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.static"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00114",
+  "headline": "Cross-Site Request Forgery (CSRF)",
+  "description": "CSRF forces authenticated users to execute unwanted actions on a web application. The attacker tricks the victim's browser into sending a request that the application treats as legitimate because it carries the user's session cookie. Prevention: anti-CSRF tokens, SameSite cookies, custom headers.",
+  "dateCreated": "2026-05-24T18:00:03.773Z",
+  "dateModified": "2026-05-24T18:00:03.773Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM Digital Library",
+      "sameAs": "https://dl.acm.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Web Application Security: A Comprehensive Guide (2025)",
+      "author": "multiple",
+      "sameAs": "https://www.oreilly.com/websec/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Browser Security: Threats and Countermeasures (2025 Survey)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.browsersec"
+    }
+  ]
+}

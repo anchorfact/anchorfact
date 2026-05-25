@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Object Detection: YOLO, R-CNN, and DETR — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Object detection identifies and localizes objects within images. Two-stage detectors (R-CNN family) prioritize accuracy; single-stage detectors (YOLO, SSD) prioritize speed; transformer-based detectors (DETR) simplify the pipeline.<br>
+<br>
+## Core Explanation<br>
+R-CNN progression: R-CNN (region proposals + CNN) → Fast R-CNN (shared convolutions) → Faster R-CNN (Region Proposal Network) → Mask R-CNN (adds instance segmentation). YOLO divides the image into a grid, predicting bounding boxes and class probabilities per cell. DETR uses learned object queries as input to a transformer decoder.<br>
+<br>
+## Detailed Analysis<br>
+Anchor boxes were the dominant approach for years — predefined bounding box templates at multiple scales and aspect ratios. Anchor-free methods (CornerNet, CenterNet) and transformer methods (DETR, Deformable DETR) have simplified detection pipelines. Non-maximum suppression (NMS) remains essential for removing duplicate predictions.<br>
+<br>
+## Further Reading<br>
+- Papers With Code: Object Detection<br>
+- YOLO Official Documentation (Ultralytics)<br>
+- MMDetection Open-source Toolbox</article></body>
+</html>

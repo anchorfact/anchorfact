@@ -1,0 +1,14 @@
+# AI for Employee Experience: Onboarding, Learning, and Internal Communications
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI is HR's most productive colleague -- onboarding new hires conversationally, recommending personalized learning, detecting disengagement before employees leave, and crafting internal communications. From Microsoft Viva to Qualtrics, AI transforms employee experience from one-size-fits-all to hyper-personalized.
+
+## Core Explanation
+Employee experience AI: (1) Onboarding -- conversational AI guides new hires (benefits enrollment, equipment setup, first-week schedule). Automates administrative tasks, freeing HR for human connection; (2) L&D -- AI skill gap analysis (comparing employee skills to role requirements and career aspirations). Recommendation engine for courses, mentors, and projects; (3) Engagement -- NLP pulse surveys (weekly 2-3 questions). Sentiment analysis across comments. Prediction models identify at-risk employees before they consider leaving; (4) Communications -- AI personalizes internal newsletters by role, location, interests.
+
+## Detailed Analysis
+Microsoft Viva (2021-2025): modular platform -- Viva Connections (company intranet), Viva Insights (personal/manager productivity analytics), Viva Learning (aggregated learning content), Viva Goals (OKR alignment). AI features: briefing email (daily summary of commitments), focus time scheduling, manager insights (team wellbeing trends). Qualtrics EX: sentiment analysis on employee feedback across lifecycle (candidate -> onboarding -> engagement -> exit). Predictive turnover: features include manager quality scores, workload, commute, compensation, growth opportunities. Culture Amp: 6,500+ companies. ML-powered survey analysis identifies key engagement drivers. Docebo: AI-powered LXP (Learning Experience Platform). Auto-tags content, recommends based on role + skill gaps. Ethical boundary: surveillance concerns -- employee monitoring without trust erodes engagement. Successful AI EX requires transparency and employee opt-in.
+

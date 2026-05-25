@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sci-geo-001",
+    "text": "The Geological Time Scale divides Earth's 4.6B-year history into eons/eras/periods/epochs.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://stratigraphy.org/chart"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sci-geo-002",
+    "text": "Radiometric dating (Patterson 1956) established Earth age at 4.54±0.05 billion years.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1016/0016-7037(56)90036-9"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sci-geo-003",
+    "text": "The Cambrian Explosion (~541 mya) saw rapid emergence of most animal phyla in ~20-25 million years.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.roberts-publishers.com/the-cambrian-explosion.html"
+    }
+  }
+]

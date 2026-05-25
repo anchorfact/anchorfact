@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/backpropagation>
+  a schema:TechArticle ;
+  schema:headline "Backpropagation: The Engine of Neural Network Learning" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/backpropagation>
+  schema:citation <https://www.nature.com/articles/323533a0> .
+
+<https://anchorfact.org/kb/backpropagation>
+  schema:citation <https://arxiv.org/abs/1512.03385> .
+
+<https://anchorfact.org/kb/backpropagation>
+  schema:citation <https://doi.org/10.1109/ACCESS.2025.3567842> .

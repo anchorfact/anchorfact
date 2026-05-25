@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-supply-chain-risk>
+  a schema:article ;
+  schema:headline "AI for Supply Chain Risk: Disruption Prediction, Supplier Monitoring, and Resilience Analytics" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-supply-chain-risk>
+  schema:citation <https://arxiv.org/search/?query=supply+chain+risk+AI+disruption+prediction> .
+
+<https://anchorfact.org/kb/ai-supply-chain-risk>
+  schema:citation <https://arxiv.org/search/?query=supply+chain+digital+twin+simulation> .

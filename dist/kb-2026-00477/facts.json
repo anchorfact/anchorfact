@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-001",
+    "text": "Digital art uses digital technology as part of the creation or presentation process. Forms: digital painting (Photoshop, Procreate), 3D modeling (Blender, Maya), pixel art, generative art (algorithms create art), AI art (DALL-E, Midjourney, Stable Diffusion), NFT art, interactive installations. Digital art democratized creation — tools accessible t",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://thamesandhudson.com/digital-art-9780500204238"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-002",
+    "text": "Generative art: artist defines rules/algorithms, computer executes (Manfred Mohr, Vera Molnár).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://thamesandhudson.com/digital-art-9780500204238"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-003",
+    "text": "AI art: text-to-image (2022+), controversial — copyright, artist consent, training data debates.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://thamesandhudson.com/digital-art-9780500204238"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-004",
+    "text": "NFT (Non-Fungible Token, 2021): blockchain certificate of ownership — Beeple's 'Everydays' sold for $69M.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://thamesandhudson.com/digital-art-9780500204238"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-005",
+    "text": "Blender: free open-source 3D suite — modeling, sculpting, animation, rendering.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://thamesandhudson.com/digital-art-9780500204238"
+    }
+  }
+]

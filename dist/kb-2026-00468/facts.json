@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-001",
+    "text": "Africa (30.37 million km²) is the 2nd largest continent. 54 countries, ~1.5 billion people. Features: Sahara (largest hot desert), Nile (longest river), Great Rift Valley, Victoria Falls, Serengeti, Congo Basin. Most diverse continent by language (2,000+ languages). Fastest growing population — projected 2.5 billion by 2050.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/the-geography-of-sub-saharan-africa/P200000010264"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-002",
+    "text": "Nile: flows north through 11 countries, lifeblood of Egypt for 5,000+ years.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/the-geography-of-sub-saharan-africa/P200000010264"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-003",
+    "text": "Great Rift Valley: tectonic plate divergence — will eventually split Africa (millions of years).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/the-geography-of-sub-saharan-africa/P200000010264"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-004",
+    "text": "Mount Kilimanjaro (Tanzania): highest African peak (5,895m).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/the-geography-of-sub-saharan-africa/P200000010264"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-005",
+    "text": "Victoria Falls (Zambia/Zimbabwe): largest curtain of falling water.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/the-geography-of-sub-saharan-africa/P200000010264"
+    }
+  }
+]

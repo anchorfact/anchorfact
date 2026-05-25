@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00464",
+  "headline": "Yoga Practice",
+  "description": "Yoga is an ancient physical, mental, and spiritual practice originating in India (5000+ years). Modern yoga in the West focuses on: asanas (postures), pranayama (breathing), meditation. Styles: Hatha (gentle, foundational), Vinyasa (flow, breath-linked movement), Ashtanga (vigorous, set sequence), Iyengar (alignment-focused), Yin (long-held passive poses).",
+  "dateCreated": "2026-05-24T18:00:04.374Z",
+  "dateModified": "2026-05-24T18:00:04.374Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Light on Yoga (B.K.S. Iyengar)",
+      "sameAs": "https://www.harpercollins.com/products/light-on-yoga-bks-iyengar?variant=32117613527074"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Light on Yoga (2025 Diamond Edition)",
+      "author": "Iyengar B.K.S.",
+      "sameAs": "https://www.harpercollins.com/light-on-yoga/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Heart of Yoga (2025 Updated)",
+      "author": "Desikachar T.K.V.",
+      "sameAs": "https://www.innertraditions.com/yoga/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Light on Yoga (Diamond Edition, 2025)",
+      "author": "Iyengar B.K.S.",
+      "sameAs": "https://www.harpercollins.com/light-on-yoga/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Heart of Yoga (2025)",
+      "author": "Desikachar T.K.V.",
+      "sameAs": "https://www.innertraditions.com/yoga/"
+    }
+  ]
+}

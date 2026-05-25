@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-01",
+    "text": "Gutenberg Bible : first major book printed with movable type",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.cambridge.org/core/books/printing-revolution-in-early-modern-europe/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-001",
+    "text": "Printing (woodblock: China, ~200 CE) → movable type (Bi Sheng, China 1040 CE; Gutenberg, Germany 1450 CE) → printing press → mass literacy, Reformation, Scientific Revolution. Gutenberg Bible (1455): first major book printed with movable type. Printing was the 'Internet of its day' — democratizing knowledge and transforming society.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.cambridge.org/core/books/printing-revolution-in-early-modern-europe/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-002",
+    "text": "Gutenberg: goldsmith turned inventor — metal movable type, oil-based ink, wooden press adapted from wine press.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.cambridge.org/core/books/printing-revolution-in-early-modern-europe/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-003",
+    "text": "Impact: standardized texts, spread ideas rapidly, weakened Church monopoly on knowledge (Reformation pamphlets), enabled Scientific Revolution (peer review, journals).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.cambridge.org/core/books/printing-revolution-in-early-modern-europe/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-004",
+    "text": "Industrial printing: steam press (1814, The Times).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.cambridge.org/core/books/printing-revolution-in-early-modern-europe/"
+    }
+  }
+]

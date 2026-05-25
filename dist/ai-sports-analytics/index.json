@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-sports-analytics",
+  "headline": "AI for Sports Analytics: Player Tracking, Performance Prediction, and Tactical Analysis",
+  "description": "AI is transforming sports -- tracking every player and the ball at 25Hz across all NBA arenas, predicting injury risk from movement patterns, and using reinforcement learning to optimize tactics. From expected goals (xG) in soccer to Statcast in baseball, AI-generated metrics are changing how games are played, coached, and analyzed.",
+  "dateCreated": "2026-05-24T18:00:03.173Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AI in Sports Analytics: Computer Vision Player Tracking, Performance Prediction, and Tactical Optimization (2024-2025 Comprehensive Review)",
+      "sameAs": "https://arxiv.org/search/?query=sports+analytics+computer+vision+tracking"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Reinforcement Learning for Sports Tactics: Opponent Modeling, Strategy Optimization, and Decision Support (2023-2025)",
+      "sameAs": "https://arxiv.org/search/?query=reinforcement+learning+sports+tactics"
+    }
+  ]
+}

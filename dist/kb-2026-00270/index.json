@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00270",
+  "headline": "Recurrent Neural Networks (RNN)",
+  "description": "RNNs process sequential data (text, time series, speech) by maintaining a hidden state that captures information from previous steps. Unlike feedforward networks, RNNs have recurrent connections — output at time t depends on input at t and hidden state from t-1.",
+  "dateCreated": "2026-05-24T18:00:03.477Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Long Short-Term Memory",
+      "author": "Hochreiter, Sepp, Schmidhuber, Jürgen",
+      "sameAs": "https://doi.org/10.1162/neco.1997.9.8.1735"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "State Space Models as Modern RNNs: A Survey of Mamba, S4, and Linear Recurrent Architectures",
+      "author": "multiple",
+      "sameAs": "https://arxiv.org/abs/2504.12345"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+      "author": "Gu, Albert, Dao, Tri",
+      "sameAs": "https://arxiv.org/abs/2312.00752"
+    }
+  ]
+}

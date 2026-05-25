@@ -1,0 +1,23 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00354>
+  a schema:TechArticle ;
+  schema:headline "Byzantine Empire" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00354>
+  schema:citation <https://press.princeton.edu/books/paperback/9780691143699/byzantium> .
+
+<https://anchorfact.org/kb/kb-2026-00354>
+  schema:citation <https://press.princeton.edu/byzantium/> .
+
+<https://anchorfact.org/kb/kb-2026-00354>
+  schema:citation <https://doi.org/10.1017/cbo.2025.byzantine> .
+
+<https://anchorfact.org/kb/kb-2026-00354>
+  schema:citation <https://press.princeton.edu/byzantium/> .
+
+<https://anchorfact.org/kb/kb-2026-00354>
+  schema:citation <https://www.crownpublishing.com/byzantine/> .

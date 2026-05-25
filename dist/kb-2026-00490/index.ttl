@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00490>
+  a schema:TechArticle ;
+  schema:headline "Animal Behavior" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00490>
+  schema:citation <https://www.oxfordlearninglink.com/s-alcock-animal-behavior-11e> .

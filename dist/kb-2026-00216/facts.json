@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-game-development-01",
+    "text": "Features: Niagara VFX , Chaos Physics, Control Rig , Movie Render Queue",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-game-development-001",
+    "text": "Unreal Engine 5 (UE5, Epic Games, 2022) is a AAA game engine featuring Nanite (virtualized micropolygon geometry — billions of polygons without LODs), Lumen (fully dynamic global illumination), World Partition (automatic world streaming), and MetaHuman (realistic human characters). Free for indies (5% royalty after $1M revenue).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-game-development-002",
+    "text": "Features: Niagara VFX (next-gen particles), Chaos Physics, Control Rig (animation), Movie Render Queue (cinematics).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-game-development-003",
+    "text": "UE5 powers Fortnite, Hellblade II, Black Myth: Wukong.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-game-development-004",
+    "text": "UE5.5 (2025) added MegaLights (dynamic area lights) and improved Nanite for skeletal meshes.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  }
+]

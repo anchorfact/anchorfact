@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-01",
+    "text": "The Roman Empire was the post-Republican period of ancient Rome",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gutenberg.org/ebooks/731"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-02",
+    "text": "At its peak , it spanned 5 million km² across Europe, North Africa, and the Middle East",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gutenberg.org/ebooks/731"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-03",
+    "text": "The Roman Empire's legal, linguistic, architectural, and political legacy shaped Western civilization",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gutenberg.org/ebooks/731"
+    }
+  }
+]

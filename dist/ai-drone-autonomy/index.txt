@@ -1,0 +1,14 @@
+# AI for Drone Autonomy: Autonomous Navigation, Swarm Coordination, and Aerial Robotics
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI gives drones autonomy -- navigating without GPS, dodging obstacles at high speed, and coordinating in swarms. From Skydio's obstacle-dodging drones to Zipline's medical delivery network across Africa, AI-powered aerial autonomy is reshaping delivery, inspection, search-and-rescue, and agriculture.
+
+## Core Explanation
+Drone autonomy stack: (1) Perception -- stereo cameras + IMU for visual-inertial odometry. Depth estimation via stereo matching or monocular depth (MiDaS). Object detection (YOLO) for obstacle avoidance; (2) Localization -- visual SLAM (VINS-Mono, ORB-SLAM3) in GPS-denied environments. GPS+IMU fusion outdoors; (3) Planning -- trajectory optimization (minimum snap) for smooth flight. RL for agile maneuvers (drone racing); (4) Control -- model predictive control (MPC) or RL policy mapping state to motor commands. Sim-to-real transfer: train in simulation (Flightmare, AirSim), transfer to real via domain randomization.
+
+## Detailed Analysis
+Drone racing RL (UZH, 2023): trained purely in simulation, the RL policy achieved lap times faster than human world champions -- demonstrating extreme agility (40+ mph through gates). Key: the policy learned aerodynamic effects that classical controllers can't model. Swarm coordination: DARPA OFFSET program (2019-2022) demonstrated 250+ drone swarms with distributed RL for decentralized coordination. Each drone runs local policy using neighbor communication. Applications: search-and-rescue (coverage optimization), agricultural spraying, light shows. Commercial: Skydio (2023) achieves 360-degree obstacle avoidance via 6 fisheye cameras + Jetson TX2, enabling autonomous flight in dense forests, inside buildings, and under bridges. Zipline (2024): autonomous delivery network with 250+ drones, delivering blood, vaccines, and medical supplies with 99.9% delivery success rate across Rwanda, Ghana, and US cities. Key challenge: FAA BVLOS regulations restrict autonomous drone operations in most countries.
+

@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "Core Web Vitals are exposed via PerformanceObserver",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/performance-timeline/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "The Performance API (`performance.now()`, `performance.getEntries()`) provides high-resolution timing data (microsecond precision) for measuring web application performance. It includes the Navigation Timing, Resource Timing, and User Timing APIs.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/performance-timeline/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "`performance.now()` returns a DOMHighResTimeStamp relative to `timeOrigin` with 5μs precision.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/performance-timeline/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-003",
+    "text": "Core Web Vitals (LCP, INP, CLS) are exposed via PerformanceObserver.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/performance-timeline/"
+    }
+  }
+]

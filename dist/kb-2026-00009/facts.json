@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-01",
+    "text": "Popularized by DDPM and made practical by Stable Diffusion / Latent Diffusion Models , diffusion has surpassed GANs as the dominant paradigm for high-quality image generation and has expanded to video , audio , 3D , and biology",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.48550/arXiv.2112.10752"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-02",
+    "text": "Diffusion models are generative models that create data by learning to reverse a gradual noise-adding process",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.48550/arXiv.2006.11239"
+    }
+  }
+]

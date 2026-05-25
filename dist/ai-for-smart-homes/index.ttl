@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-smart-homes>
+  a schema:article ;
+  schema:headline "AI for Smart Homes: Ambient Intelligence, Energy Optimization, and Predictive Home Automation" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-smart-homes>
+  schema:citation <https://www.mdpi.com/journal/energies> .
+
+<https://anchorfact.org/kb/ai-for-smart-homes>
+  schema:citation <https://dl.acm.org/journal/csur> .

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/climate-zones-and-biomes",
+  "headline": "Global Climate Zones and Terrestrial Biomes",
+  "description": "Earth's surface is divided into distinct climate zones and biomes with characteristic temperature, precipitation, and vegetation patterns. These zones are shifting poleward at unprecedented rates due to anthropogenic climate change.",
+  "dateCreated": "2026-05-24T18:00:04.294Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Biogeography: Introduction to Space, Time, and Life",
+      "sameAs": "https://www.wiley.com/en-us/Biogeography-p-9781119464730"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Koppen Climate Classification",
+      "sameAs": "https://www.climate.gov/koppen-climate-classification"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-tml-1",
+    "text": "TinyML enables on-device ML inference on microcontrollers with <1mW power, using model compression techniques like quantization, pruning, and knowledge distillation to fit models in KB of memory.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.oreilly.com/library/view/tinyml/9781492052036/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-tml-2",
+    "text": "MobileNets (Howard et al. 2017, Google) introduced depthwise separable convolutions, achieving comparable accuracy to standard CNNs with 8-9× fewer parameters, enabling vision AI on mobile devices.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/1704.04861"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-tml-3",
+    "text": "Federated Learning (McMahan et al. 2017, Google) trains models across decentralized edge devices without centralizing raw data, addressing both privacy and bandwidth constraints in edge AI deployments.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/1602.05629"
+    }
+  }
+]

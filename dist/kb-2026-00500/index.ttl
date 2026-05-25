@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00500>
+  a schema:TechArticle ;
+  schema:headline "Basketball Rules and Fundamentals" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00500>
+  schema:citation <https://www.fiba.basketball/documents/official-basketball-rules> .
+
+<https://anchorfact.org/kb/kb-2026-00500>
+  schema:citation <https://official.nba.com/rulebook/> .

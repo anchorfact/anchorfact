@@ -1,0 +1,23 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00346>
+  a schema:TechArticle ;
+  schema:headline "Classical Music Periods" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00346>
+  schema:citation <https://wwnorton.com/books/9780393317121> .
+
+<https://anchorfact.org/kb/kb-2026-00346>
+  schema:citation <https://www.dk.com/classical-music/> .
+
+<https://anchorfact.org/kb/kb-2026-00346>
+  schema:citation <https://us.macmillan.com/rest-is-noise/> .
+
+<https://anchorfact.org/kb/kb-2026-00346>
+  schema:citation <https://www.dk.com/classical-music/> .
+
+<https://anchorfact.org/kb/kb-2026-00346>
+  schema:citation <https://us.macmillan.com/rest-is-noise/> .

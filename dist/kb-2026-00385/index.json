@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00385",
+  "headline": "Ocean Currents",
+  "description": "Ocean currents are continuous, directed movements of seawater driven by wind, temperature, salinity differences, and Earth's rotation (Coriolis effect). Surface currents (top 400m) circulate in gyres. Deep ocean circulation (thermohaline) spans the globe — the 'global conveyor belt.'",
+  "dateCreated": "2026-05-24T18:00:04.312Z",
+  "dateModified": "2026-05-24T18:00:04.312Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "NOAA Ocean Currents",
+      "sameAs": "https://oceanservice.noaa.gov/education/tutorial_currents/"
+    }
+  ]
+}

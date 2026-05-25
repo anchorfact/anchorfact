@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "GraphQL schema design defines types, queries, mutations, and relationships. Best practices: design around business domain (not database schema), use Relay-style pagination (edges/nodes), avoid deeply nested queries (N+1 solved by DataLoader), version via evolution (add fields, deprecate old ones — never remove).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://graphql.org/learn/best-practices/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "GraphQL schema design defines types, queries, mutations, and relationships. Best practices: design around business domain (not database schema), use Relay-style pagination (edges/nodes), avoid deeply nested queries (N+1 solved by DataLoader), version via evolution (add fields, deprecate old ones — never remove).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://graphql.org/learn/best-practices/"
+    }
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/swarm-evolutionary-intelligence",
+  "headline": "Swarm and Evolutionary Intelligence: Genetic Algorithms, NEAT, and Particle Swarms",
+  "description": "Evolutionary computation draws inspiration from biological evolution — mutation, crossover, selection — to optimize without gradients. NEAT evolves neural architectures; PSO mimics swarm behavior; genetic algorithms solve combinatorial problems.",
+  "dateCreated": "2026-05-24T18:00:03.517Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Evolving Neural Networks through Augmenting Topologies (NEAT)",
+      "sameAs": "https://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Particle Swarm Optimization: A Comprehensive Survey",
+      "sameAs": "https://ieeexplore.ieee.org/document/10243027"
+    }
+  ]
+}

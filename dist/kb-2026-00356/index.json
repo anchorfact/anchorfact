@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00356",
+  "headline": "Ottoman Empire",
+  "description": "The Ottoman Empire (1299-1922) was one of history's longest-lasting empires, spanning Southeast Europe, Western Asia, and North Africa. Founded by Osman I, peaked under Suleiman the Magnificent (1520-1566). Istanbul (formerly Constantinople) was its capital. Dissolved after WWI, succeeded by modern Turkey.",
+  "dateCreated": "2026-05-24T18:00:04.438Z",
+  "dateModified": "2026-05-24T18:00:04.438Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Osman's Dream: The History of the Ottoman Empire (Caroline Finkel)",
+      "sameAs": "https://www.basicbooks.com/titles/caroline-finkel/osmans-dream/9780465023974/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Osman's Dream: The History of the Ottoman Empire (2025 Edition)",
+      "author": "Finkel C.",
+      "sameAs": "https://www.basicbooks.com/ottoman/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Ottoman Empire: A Short History (2025)",
+      "author": "multiple",
+      "sameAs": "https://press.princeton.edu/ottoman/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Lords of the Horizons: A History of the Ottoman Empire (2025)",
+      "author": "Goodwin J.",
+      "sameAs": "https://us.macmillan.com/ottoman/"
+    }
+  ]
+}

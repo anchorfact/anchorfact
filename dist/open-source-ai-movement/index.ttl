@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/open-source-ai-movement>
+  a schema:TechArticle ;
+  schema:headline "The Open-Source AI Movement: Llama, DeepSeek, and Democratization" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/open-source-ai-movement>
+  schema:citation <https://arxiv.org/abs/2407.21783> .
+
+<https://anchorfact.org/kb/open-source-ai-movement>
+  schema:citation <https://arxiv.org/abs/2412.19437> .

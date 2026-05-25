@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00172>
+  a schema:TechArticle ;
+  schema:headline "Responsive Web Design" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00172>
+  schema:citation <https://alistapart.com/article/responsive-web-design/> .
+
+<https://anchorfact.org/kb/kb-2026-00172>
+  schema:citation <https://abookapart.com/products/responsive-web-design> .
+
+<https://anchorfact.org/kb/kb-2026-00172>
+  schema:citation <https://www.oreilly.com/a11y/> .

@@ -1,0 +1,34 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00014",
+  "headline": "Kubernetes (K8s)",
+  "description": "Kubernetes (K8s) is an open-source container orchestration platform originally designed by Google, based on their internal Borg system. Donated to the CNCF in 2015, it automates deployment, scaling, and management of containerized applications across clusters of machines. As of 2026, Kubernetes is the de facto standard for cloud-native infrastructure, used by over 60% of organizations running containers in production according to the CNCF Annual Survey.",
+  "dateCreated": "2026-05-24T18:00:03.922Z",
+  "dateModified": "2026-05-24T18:00:03.922Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Kubernetes Documentation",
+      "sameAs": "https://kubernetes.io/docs/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Borg, Omega, and Kubernetes",
+      "author": "Burns, Brendan, Grant, Brian, Oppenheimer, David, Brewer, Eric, Wilkes, John",
+      "sameAs": "https://queue.acm.org/detail.cfm?id=2898444"
+    }
+  ]
+}

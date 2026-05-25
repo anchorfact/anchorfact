@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-chip-design>
+  a schema:article ;
+  schema:headline "AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-chip-design>
+  schema:citation <https://www.nature.com/articles/s41586-021-03544-w> .
+
+<https://anchorfact.org/kb/ai-for-chip-design>
+  schema:citation <https://dl.acm.org/doi/10.1145/3672557> .

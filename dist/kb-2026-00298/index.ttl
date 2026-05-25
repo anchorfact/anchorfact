@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00298>
+  a schema:TechArticle ;
+  schema:headline "Bun Runtime" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00298>
+  schema:citation <https://bun.sh/docs/> .
+
+<https://anchorfact.org/kb/kb-2026-00298>
+  schema:citation <https://www.oreilly.com/bun/> .
+
+<https://anchorfact.org/kb/kb-2026-00298>
+  schema:citation <https://doi.org/10.1109/ms.2025.js> .

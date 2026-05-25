@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00480>
+  a schema:TechArticle ;
+  schema:headline "Fashion History" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00480>
+  schema:citation <https://www.dk.com/us/book/9780756698355-fashion/> .
+
+<https://anchorfact.org/kb/kb-2026-00480>
+  schema:citation <https://www.dk.com/fashion/> .
+
+<https://anchorfact.org/kb/kb-2026-00480>
+  schema:citation <https://www.laurenceking.com/fashion/> .

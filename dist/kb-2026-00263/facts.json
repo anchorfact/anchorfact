@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "systemd timers are the modern replacement for cron, providing calendar and monotonic event scheduling with better logging, randomization, and dependency management. Timer unit triggers a matching service unit. `systemctl list-timers` shows all active timers.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "Timer types: OnCalendar (specific times, like cron: `*-*-* 02:00:00` = daily 2AM), OnBootSec (after boot), OnUnitActiveSec (after service last ran).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-003",
+    "text": "Accuracy: `AccuracySec` trades precision for power saving (default 1min).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  }
+]

@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00333>
+  a schema:TechArticle ;
+  schema:headline "Theory of Relativity" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00333>
+  schema:citation <https://www.gutenberg.org/ebooks/5001> .

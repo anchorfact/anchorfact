@@ -1,0 +1,20 @@
+# Zero Trust Architecture
+Confidence: high
+Last verified: 2026-05-22
+Generation: human_only
+
+
+
+
+
+## TL;DR
+
+Zero Trust is a security model that assumes no implicit trust — verify every access request regardless of network location (internal or external). Core principles: never trust, always verify; least privilege access; assume breach. Mandated by US Executive Order 14028 (2021) for federal agencies.
+
+## Core Explanation
+
+Key components: microsegmentation (network isolation), identity-aware proxies, continuous authentication, encryption everywhere. Replaces the castle-and-moat model (trusted internal network, untrusted external). Implementation frameworks: Google BeyondCorp (origin of Zero Trust, 2014), NIST SP 800-207. ZTNA (Zero Trust Network Access) replaces traditional VPNs.
+
+## Further Reading
+
+- 

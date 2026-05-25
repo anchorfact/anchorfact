@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-speech-emotion-recognition",
+  "headline": "AI for Speech Emotion Recognition: Vocal Biomarkers, Mental Health Screening, and Affective Computing",
+  "description": "Your voice carries rich information about your emotional state. AI systems can now analyze speech patterns -- pitch, rhythm, tone, pauses -- to detect depression, anxiety, and stress with clinical-grade accuracy, enabling passive, scalable mental health screening through everyday voice interactions.",
+  "dateCreated": "2026-05-24T18:00:03.047Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Improving speech depression detection using transfer learning with wav2vec 2.0 in low-resource environments",
+      "sameAs": "https://www.nature.com/articles/s41598-024-60278-1"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Speech-based Clinical Depression Screening: An Empirical Study",
+      "sameAs": "https://arxiv.org/abs/2406.03510"
+    }
+  ]
+}

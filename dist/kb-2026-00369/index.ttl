@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00369>
+  a schema:TechArticle ;
+  schema:headline "Continental Drift" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00369>
+  schema:citation <https://archive.org/details/originofcontinen00wege> .
+
+<https://anchorfact.org/kb/kb-2026-00369>
+  schema:citation <https://global.oup.com/vsi-plate/> .
+
+<https://anchorfact.org/kb/kb-2026-00369>
+  schema:citation <https://doi.org/10.1038/s43017-2025-drift> .
+
+<https://anchorfact.org/kb/kb-2026-00369>
+  schema:citation <https://doi.org/10.1017/cbo.2025.drift> .

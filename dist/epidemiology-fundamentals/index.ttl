@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/epidemiology-fundamentals>
+  a schema:Article ;
+  schema:headline "Epidemiology: The Science of Public Health" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/epidemiology-fundamentals>
+  schema:citation <https://www.cdc.gov/training-publichealth101/> .
+
+<https://anchorfact.org/kb/epidemiology-fundamentals>
+  schema:citation <https://www.who.int/publications/i/item/9241547073> .

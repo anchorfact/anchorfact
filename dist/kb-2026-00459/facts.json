@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-01",
+    "text": "The Great Wall of China is a series of fortifications built across northern China from the 7th century BCE through the Ming Dynasty",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.hachettebookgroup.com/titles/john-man/the-great-wall/9780306817670/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-02",
+    "text": "Total length: 21,196 km",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.hachettebookgroup.com/titles/john-man/the-great-wall/9780306817670/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-03",
+    "text": "Ming Dynasty sections are the most visited",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.hachettebookgroup.com/titles/john-man/the-great-wall/9780306817670/"
+    }
+  }
+]

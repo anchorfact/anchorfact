@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00407>
+  a schema:TechArticle ;
+  schema:headline "Shakespeare's Works" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00407>
+  schema:citation <https://www.penguinrandomhouse.com/books/75451/shakespeare-by-harold-bloom/> .

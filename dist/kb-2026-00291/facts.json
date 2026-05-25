@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "Built on the Spring Framework , it is the dominant Java backend framework",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://docs.spring.io/spring-boot/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "Spring Boot (Pivotal/VMware, 2014) simplifies Java enterprise development with auto-configuration, embedded servers (Tomcat, Jetty), and starter dependencies. Built on the Spring Framework (2002), it is the dominant Java backend framework. Spring Boot 3.x requires Java 17+ and Jakarta EE.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://docs.spring.io/spring-boot/"
+    }
+  }
+]

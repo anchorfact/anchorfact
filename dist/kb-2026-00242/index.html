@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>ACID Transactions — AnchorFact</title></head>
+<body><article><br>
+<br>
+<br>
+<br>
+## TL;DR<br>
+<br>
+ACID (Atomicity, Consistency, Isolation, Durability) are the four properties guaranteeing reliable database transactions. Atomicity: all-or-nothing — either all operations complete or none. Consistency: transaction brings database from one valid state to another. Isolation: concurrent transactions appear sequential. Durability: committed data survives crashes.<br>
+<br>
+## Core Explanation<br>
+<br>
+Isolation levels (weaker to stronger): Read Uncommitted, Read Committed, Repeatable Read, Serializable. Phenomena prevented: dirty reads, non-repeatable reads, phantom reads. PostgreSQL default: Read Committed. Serializable via: 2PL (Two-Phase Locking) or SSI (Serializable Snapshot Isolation, PostgreSQL). CAP theorem: in a distributed system, you can only have two of: Consistency, Availability, Partition tolerance.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Principles of Transaction Processing (Bernstein & Newcomer)](undefined)<br>
+</article></body>
+</html>

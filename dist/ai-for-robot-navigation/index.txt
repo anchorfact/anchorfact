@@ -1,0 +1,19 @@
+# AI for Robot Navigation: SLAM, Visual Odometry, and Autonomous Path Planning
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Robot navigation answers "where am I, what is around me, and how do I get there?" -- SLAM builds maps while tracking the robot's position, visual odometry estimates motion from camera images, and path planning computes collision-free trajectories. AI is transforming all three, enabling robots to navigate autonomously in unmapped, dynamic environments.
+
+## Core Explanation
+SLAM: a robot starts with no map and uncertain pose. As it moves, it observes landmarks (visual features, LiDAR points) and simultaneously estimates its trajectory and landmark positions. Classical SLAM: filter-based (EKF-SLAM) or graph-based (pose graph optimization). Modern: deep learning-enhanced SLAM -- neural networks predict depth, optical flow, and loop closures. Visual odometry: estimating camera ego-motion from sequential images. Deep VO (DROID-SLAM) replaces handcrafted feature extraction and geometric optimization with learned dense correspondence networks. Path planning: given a map and start/goal positions, find a collision-free path. Classical: A*, RRT*, PRM. Learning-based: RL agents learn navigation policies from simulation (Habitat).
+
+## Detailed Analysis
+DROID-SLAM (2021, Princeton): recurrent iterative update of camera poses and depth using a differentiable Dense Bundle Adjustment layer -- achieving SOTA on TartanAir and ETH3D benchmarks without any training on those datasets. DPV-SLAM (2022): incorporates deep patch-wise visual features for robust matching under viewpoint change. Monocular depth estimation (DPT, MiDaS) enables pseudo-LiDAR SLAM from single cameras. Neural SLAM (iMAP, NICE-SLAM) represents scenes as implicit neural networks (NeRF-style). RL-based navigation: PointGoal navigation in Habitat -- agent receives relative goal coordinates and RGB+Depth observations. SOTA: 99%+ success on seen environments, 70-85% on unseen. Applications: warehouse robots (Amazon Proteus), domestic robots (vacuum cleaners), drone navigation (GPS-denied environments), autonomous vehicles.
+
+## Further Reading
+- ORB-SLAM3: Feature-Based Visual SLAM
+- Habitat Simulator: Embodied AI Navigation (Meta)
+- NVIDIA Isaac Sim: Robotics Simulation Platform
+

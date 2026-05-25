@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00442>
+  a schema:TechArticle ;
+  schema:headline "Emotional Intelligence" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00442>
+  schema:citation <https://www.penguinrandomhouse.com/books/311306/emotional-intelligence-by-daniel-goleman/> .
+
+<https://anchorfact.org/kb/kb-2026-00442>
+  schema:citation <https://www.danielgoleman.info/books/emotional-intelligence/> .
+
+<https://anchorfact.org/kb/kb-2026-00442>
+  schema:citation <https://www.talentsmarteq.com/> .
+
+<https://anchorfact.org/kb/kb-2026-00442>
+  schema:citation <https://www.danielgoleman.info/> .

@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "Git is a distributed version control system created by Linus Torvalds in April 2005 for Linux kernel development",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://git-scm.com/book/en/v2"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "It tracks changes to files, enabling multiple developers to collaborate without a central server.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://git-scm.com/book/en/v2"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-003",
+    "text": "Git is the de facto standard for software version control, used by over 90% of developers (Stack Overflow 2024 Survey) and hosting platforms including GitHub, GitLab, and Bitbucket.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://git-scm.com/book/en/v2"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-004",
+    "text": "Its distributed model means every clone is a full repository with complete history.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://git-scm.com/book/en/v2"
+    }
+  }
+]

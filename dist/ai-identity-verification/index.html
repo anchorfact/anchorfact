@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI Identity Verification: Document Authentication, Liveness Detection, and KYC Compliance — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+AI identity verification authenticates who you are online -- checking your ID document, matching your face to the photo, and verifying you are a real person (not a photo or deepfake). From banking to crypto to gig economy platforms, AI IDV enables secure digital onboarding in under 30 seconds across 200 countries.<br>
+<br>
+## Core Explanation<br>
+AI IDV pipeline: (1) Document capture -- user photographs ID (passport, license). AI guides capture (positioning, glare reduction, focus); (2) Document authentication -- computer vision extracts and verifies security features: hologram integrity, microprint, UV features, MRZ (Machine-Readable Zone) code consistency, and document tampering (photoshopped text/photo); (3) Data extraction -- OCR extracts name, DOB, document number, expiry. Cross-validation: extracted data matches MRZ encoding; (4) Facial matching -- face detected in selfie, compared to document photo via ArcFace embeddings. Threshold: <0.0001 FAR (False Accept Rate) at >95% TAR (True Accept Rate); (5) Liveness detection -- confirms live person, not spoof.<br>
+<br>
+## Detailed Analysis<br>
+Liveness detection: the cat-and-mouse game. Attack vectors: (A) Print attack -- photo of ID held to camera; (B) Replay attack -- video of user on screen; (C) 3D mask; (D) Deepfake injection -- AI-generated video bypassing camera. Active liveness: prompt random action (smile, turn head, read numbers). Passive liveness: analyze image texture (screen moire patterns, color gamut of displays vs skin), depth (3D structure from motion), and micro-movements (involuntary eye movements, skin micro-texture). Deepfake challenge: AI can now generate videos of users performing requested actions in real-time. Next-gen liveness: challenge-response protocols using device-level security (secure enclave, TEE), cryptographic binding of capture to device identity. Regulatory landscape: KYC/AML (global -- verify identity before financial account), eIDAS 2.0 (EU -- cross-border digital identity), India Aadhaar (biometric ID for 1.3B), and GDPR/privacy (biometric data is special category). Jumio: 300M+ verifications/year, 200+ countries, 3,500+ document types. Onfido: acquired by Entrust ($650M, 2024) for enterprise IDV.<br>
+</article></body>
+</html>

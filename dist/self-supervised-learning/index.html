@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Self-Supervised Learning: Learning Without Labels — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Self-supervised learning extracts supervisory signals from unlabeled data, enabling models to learn useful representations without expensive human annotation. SSL underpins modern pretraining of foundation models.<br>
+<br>
+## Core Explanation<br>
+Pretext tasks: masked language modeling (predict masked words from context — BERT), contrastive learning (pull similar instances together, push dissimilar apart — SimCLR, MoCo), and generative approaches (reconstruct corrupted input — masked autoencoders). The learned representations transfer to downstream tasks with minimal labeled data.<br>
+<br>
+## Detailed Analysis<br>
+BYOL (Grill et al., 2020) eliminated negative pairs — using a momentum encoder and predictor to prevent representational collapse without contrastive loss. MAE (He et al., 2022) masks 75% of image patches, forcing the model to learn semantic understanding from sparse visible pixels.<br>
+<br>
+## Further Reading<br>
+- LeCun: Self-Supervised Learning (AAAI 2020 Keynote)<br>
+- Lilian Weng: Self-Supervised Representation Learning<br>
+- Papers With Code: Self-Supervised Learning</article></body>
+</html>

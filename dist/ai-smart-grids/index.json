@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-smart-grids",
+  "headline": "AI for Smart Grids: Load Forecasting, Demand Response, and Grid Stability",
+  "description": "AI is the brain of the modern electric grid -- predicting demand hours ahead, optimizing when to charge millions of EVs, and balancing solar and wind power in real-time. From DeepMind's 30-40% energy savings at Google to smart meters learning household usage patterns, AI makes the grid cleaner, cheaper, and more reliable.",
+  "dateCreated": "2026-05-24T18:00:03.165Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Deep Learning for Smart Grid Load Forecasting and Renewable Energy Prediction (2023-2025 Comprehensive Survey)",
+      "sameAs": "https://arxiv.org/search/?query=smart+grid+load+forecasting+deep+learning"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Reinforcement Learning for Grid Optimization: Battery Storage, EV Charging, and Demand Response",
+      "sameAs": "https://arxiv.org/search/?query=reinforcement+learning+grid+optimization"
+    }
+  ]
+}

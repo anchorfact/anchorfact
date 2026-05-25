@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00358>
+  a schema:TechArticle ;
+  schema:headline "World War I" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00358>
+  schema:citation <https://www.penguinrandomhouse.com/books/56337/the-guns-of-august-by-barbara-w-tuchman/> .
+
+<https://anchorfact.org/kb/kb-2026-00358>
+  schema:citation <https://www.penguinrandomhouse.com/ww1/> .
+
+<https://anchorfact.org/kb/kb-2026-00358>
+  schema:citation <https://www.harpercollins.com/sleepwalkers/> .

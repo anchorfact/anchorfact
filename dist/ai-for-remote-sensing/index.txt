@@ -1,0 +1,19 @@
+# AI for Remote Sensing: Foundation Models, Satellite Image Analysis, and Earth Observation
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Remote sensing AI transforms satellite pixels into actionable Earth intelligence — monitoring deforestation in real-time, mapping flood extent within hours of disaster, and classifying crops across continents. Foundation models pretrained on petabytes of Earth observation data are democratizing planetary-scale AI, enabling few-shot deployment for any location on Earth.
+
+## Core Explanation
+Remote sensing data sources: (A) Optical — Sentinel-2 (10m, 13 spectral bands, 5-day revisit), Landsat 8/9 (30m, 11 bands, 16-day), PlanetScope (3m, daily), WorldView (30cm, taskable); (B) SAR — Sentinel-1 (C-band, all-weather, day/night), Capella (50cm, taskable); (C) Multispectral/hyperspectral — PRISMA, EnMAP (200+ bands for material identification). AI tasks: (1) Land cover classification — pixel-level: forest/urban/water/cropland; (2) Object detection — buildings, ships, vehicles, solar panels; (3) Change detection — what changed between two dates (urban expansion, deforestation, disaster damage); (4) Semantic segmentation — per-pixel class for detailed mapping; (5) Regression — crop yield prediction, biomass estimation, building height.
+
+## Detailed Analysis
+Remote sensing foundation models (RSFMs): the challenge is that ImageNet-pretrained models transfer poorly to multispectral and SAR imagery (different channel counts, no natural image statistics). Solution: self-supervised pretraining on massive satellite archives. Prithvi (NASA+IBM): ViT architecture with masked autoencoding — mask 50% of image patches, reconstruct from context, learning Earth-surface visual patterns. IEEE 2025 RS-FM survey documents 20+ foundation models including SatMAE, Scale-MAE, GFMer, and GeoFMBench for standardized evaluation. Nature MI 2025 multi-modal FM: progressive training — Stage 1 (unimodal pretraining on each sensor separately), Stage 2 (cross-modal alignment via contrastive learning across sensor pairs), Stage 3 (joint fine-tuning on downstream tasks). Applications: (1) Disaster response — AI maps flood extent from SAR (cloud-penetrating) within 2 hours of satellite overpass; (2) Agriculture — crop type mapping at national scale, yield prediction 2-3 months before harvest; (3) Climate — deforestation alert systems (Global Forest Watch), carbon stock estimation; (4) Urban — informal settlement mapping, infrastructure monitoring. Springer 2026 review highlights the "remote sensing data deluge" — 100+ TB/day from public satellites alone — making AI the only scalable analysis approach. Earth AI (arxiv 2025) introduces agentic reasoning over geospatial data, enabling natural language queries ("show me deforestation hotspots in Brazil since 2020").
+
+## Further Reading
+- NASA Earthdata & Prithvi Model on Hugging Face
+- Google Earth Engine: Planetary-Scale Geospatial Analysis
+- Global Forest Watch: AI-Powered Deforestation Monitoring
+

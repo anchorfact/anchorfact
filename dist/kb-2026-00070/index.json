@@ -1,0 +1,34 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00070",
+  "headline": "JSON (JavaScript Object Notation)",
+  "description": "JSON (JavaScript Object Notation) is a lightweight, text-based data interchange format standardized as IETF RFC 8259 and ECMA-404. Derived from JavaScript object literal syntax and popularized by Douglas Crockford in the early 2000s, JSON is the dominant data format for web APIs, configuration files, and data storage. Its simplicity — four primitive types (string, number, boolean, null) plus arrays and objects — has made it the universal lingua franca of data exchange on the web.",
+  "dateCreated": "2026-05-24T18:00:03.912Z",
+  "dateModified": "2026-05-24T18:00:03.912Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "RFC 8259 — The JavaScript Object Notation (JSON) Data Interchange Format",
+      "author": "Bray, T.",
+      "sameAs": "https://www.rfc-editor.org/rfc/rfc8259"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "ECMA-404 — The JSON Data Interchange Syntax",
+      "sameAs": "https://doi.org/undefined"
+    }
+  ]
+}

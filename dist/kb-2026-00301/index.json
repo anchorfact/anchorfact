@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00301",
+  "headline": "Tauri",
+  "description": "Tauri (2019) is an Electron alternative: build desktop apps with web frontend + Rust backend. Uses OS native WebView (Edge/WebKit) instead of bundling Chromium — dramatically smaller bundles (<10MB). Tauri 2.0 (2024) added mobile support (iOS/Android), plugin system, and enhanced IPC.",
+  "dateCreated": "2026-05-24T18:00:04.098Z",
+  "dateModified": "2026-05-24T18:00:04.098Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Tauri Documentation",
+      "sameAs": "https://v2.tauri.app/"
+    }
+  ]
+}

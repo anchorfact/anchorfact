@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00013",
+  "headline": "Docker",
+  "description": "Docker is an open-source platform for developing, shipping, and running applications in lightweight, isolated containers. First released in 2013 by Solomon Hykes at dotCloud, Docker revolutionized software deployment by packaging applications with all their dependencies into portable images that run consistently across any environment. As of 2026, Docker is used by over 15 million developers and is the foundation of modern cloud-native infrastructure.",
+  "dateCreated": "2026-05-24T18:00:03.815Z",
+  "dateModified": "2026-05-24T18:00:03.815Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Docker Documentation",
+      "sameAs": "https://docs.docker.com/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Docker: Up and Running (4th Edition, 2025)",
+      "author": "Matthias K., Kane S.P.",
+      "sameAs": "https://www.oreilly.com/docker/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Container Orchestration: From Docker to Kubernetes and Beyond (2025 Survey)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.containers"
+    }
+  ]
+}

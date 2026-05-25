@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/mlops-llmops",
+  "headline": "MLOps and LLMOps: Production AI Engineering, Observability, and Platform Architecture",
+  "description": "MLOps and LLMOps are the engineering disciplines that bridge the gap between a research notebook and a reliable, monitored, cost-effective production AI system. As enterprises deploy LLMs at scale, LLMOps extends traditional MLOps with prompt versioning, guardrail monitoring, hallucination detection, and cost-per-call optimization — making AI operations a $10B+ market by 2026.",
+  "dateCreated": "2026-05-24T18:00:03.409Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Machine learning operations landscape: platforms and tools",
+      "sameAs": "https://link.springer.com/article/10.1007/s10462-025-11164-3"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "AI Observability for Large Language Model Systems: A Multi-Layer Taxonomy",
+      "sameAs": "https://arxiv.org/abs/2604.26152"
+    }
+  ]
+}

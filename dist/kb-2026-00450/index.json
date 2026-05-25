@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00450",
+  "headline": "Swimming Strokes",
+  "description": "Competitive swimming has 4 strokes: freestyle (fastest, front crawl), backstroke (only stroke swum on back), breaststroke (slowest, simultaneous arm/leg motion), butterfly (most demanding, simultaneous overhead arm recovery). Medley: individual (one swimmer all 4) or relay (4 swimmers, each one stroke).",
+  "dateCreated": "2026-05-24T18:00:04.622Z",
+  "dateModified": "2026-05-24T18:00:04.622Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Total Immersion (Terry Laughlin)",
+      "sameAs": "https://www.simonandschuster.com/books/Total-Immersion/Terry-Laughlin/9780743253434"
+    }
+  ]
+}

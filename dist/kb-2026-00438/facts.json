@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-business-001",
+    "text": "Management styles vary by context and culture. Autocratic (top-down decisions), Democratic (participatory), Laissez-faire (hands-off), Transformational (inspire vision), Servant Leadership (leader serves team). Modern approaches favor autonomy, purpose, mastery (Pink). Micromanagement is destructive. Good management adapts style to situation.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/308034/drive-by-daniel-h-pink/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-business-002",
+    "text": "Psychological safety (Google's Project Aristotle, 2015): #1 factor in effective teams.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.harpercollins.com/products/the-effective-executive-peter-f-drucker"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-business-003",
+    "text": "One-on-ones: weekly 30-min manager-employee check-in.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/308034/drive-by-daniel-h-pink/"
+    }
+  }
+]

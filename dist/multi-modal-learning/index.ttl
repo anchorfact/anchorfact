@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/multi-modal-learning>
+  a schema:TechArticle ;
+  schema:headline "Multi-Modal Machine Learning" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/multi-modal-learning>
+  schema:citation <https://arxiv.org/abs/1705.09406> .
+
+<https://anchorfact.org/kb/multi-modal-learning>
+  schema:citation <https://arxiv.org/abs/2304.08485> .

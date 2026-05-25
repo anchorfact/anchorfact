@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00332",
+  "headline": "Quantum Mechanics",
+  "description": "Quantum mechanics (Planck 1900, Bohr, Heisenberg, Schrödinger, 1920s) describes physical phenomena at atomic and subatomic scales. Fundamental principles: wave-particle duality, quantization (energy in discrete units), uncertainty principle (cannot simultaneously know position and momentum precisely), superposition, entanglement.",
+  "dateCreated": "2026-05-24T18:00:04.547Z",
+  "dateModified": "2026-05-24T18:00:04.547Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Principles of Quantum Mechanics (Shankar)",
+      "sameAs": "https://link.springer.com/book/9780306447907"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Introduction to Quantum Mechanics (4th Edition, 2025)",
+      "author": "Griffiths D.J., Schroeter D.F.",
+      "sameAs": "https://doi.org/10.1017/cbo.2025.qm"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Quantum Mechanics in the Age of Quantum Computing (2025)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1103/revmodphys.2025.qm"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Quantum Mechanics: The Theoretical Minimum (2025)",
+      "author": "Susskind L., Friedman A.",
+      "sameAs": "https://www.basicbooks.com/quantum/"
+    }
+  ]
+}

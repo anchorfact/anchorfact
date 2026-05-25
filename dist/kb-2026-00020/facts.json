@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-001",
+    "text": "First published in December 2022 (arXiv:2212.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2212.08073"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-002",
+    "text": "08073) and detailed in May 2023, CAI trains models to self-critique and self-correct based on constitutional principles, then uses AI-generated feedback instead of human feedback for reinforcement learning.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2204.05862"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-003",
+    "text": "This achieves both higher helpfulness and higher harmlessness simultaneously (a Pareto improvement), unlike traditional RLHF which typically trades one for the other.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2212.08073"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-004",
+    "text": "Claude is the first model trained entirely with CAI.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2204.05862"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-005",
+    "text": "The training process has two stages:\n### Stage 1: Supervised Learning (SL)\nThe model is trained to **critique and revise its own responses** using randomly sampled constitutional principles.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2204.05862"
+    }
+  }
+]

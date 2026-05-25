@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-gd-015>
+  a schema:TechArticle ;
+  schema:headline "游戏引擎对比与技术选型" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-gd-015>
+  schema:citation <https://www.gdconf.com/> .

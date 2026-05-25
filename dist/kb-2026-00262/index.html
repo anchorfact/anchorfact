@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>rsync — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+<br>
+rsync is a fast file synchronization tool using delta-transfer algorithm — only transfers differences between source and destination. `rsync -avz source/ user@host:/dest/`. Ideal for backups, mirroring, deployment. Bandwidth-efficient: only changed blocks, not entire files.<br>
+<br>
+## Core Explanation<br>
+<br>
+Flags: `-a` (archive mode = preserve permissions/ownership/timestamps), `-v` (verbose), `-z` (compress), `-P` (progress + partial), `--delete` (remove dest files not in source). Dry-run: `--dry-run` to preview. Exclude: `--exclude='*.tmp'`. Over SSH: `rsync -avz -e ssh ...`. Rsync is often faster than scp for large directory trees with small changes.<br>
+<br>
+## Further Reading<br>
+<br>
+- [rsync Documentation](undefined)<br>
+</article></body>
+</html>

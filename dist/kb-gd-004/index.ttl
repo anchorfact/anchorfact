@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-gd-004>
+  a schema:TechArticle ;
+  schema:headline "注意：Suno官方未提供公开API，以下为社区开源封装项目调用方式" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-gd-004>
+  schema:citation <https://www.gdconf.com/> .

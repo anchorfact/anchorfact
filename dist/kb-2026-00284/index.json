@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00284",
+  "headline": "Attention vs. Self-Attention",
+  "description": "Attention (Bahdanau 2014) computes relevance between encoder and decoder states — cross-attention. Self-Attention (Vaswani 2017) computes relevance within a single sequence — each position attends to all other positions. Self-attention enables the Transformer to capture long-range dependencies without recurrence.",
+  "dateCreated": "2026-05-24T18:00:03.223Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Attention Is All You Need (Transformer)",
+      "author": "Vaswani, Ashish, Shazeer, Noam, Parmar, Niki, Uszkoreit, Jakob, Jones, Llion, Gomez, Aidan N., Kaiser, Łukasz, Polosukhin, Illia",
+      "sameAs": "https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Neural Machine Translation by Jointly Learning to Align and Translate (Bahdanau Attention)",
+      "author": "Bahdanau, Dzmitry, Cho, Kyunghyun, Bengio, Yoshua",
+      "sameAs": "https://arxiv.org/abs/1409.0473"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Efficient Transformers: A Comprehensive Survey (Tay et al. — Google)",
+      "author": "Tay, Yi, Dehghani, Mostafa, Bahri, Dara, Metzler, Donald",
+      "sameAs": "https://doi.org/10.1145/3530811"
+    }
+  ]
+}

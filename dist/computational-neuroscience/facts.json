@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-computational-neuroscience-1",
+    "text": "The Human Connectome Project and the Allen Institute's MICrONS program (completed 2024-2025) produced the first cubic-millimeter-scale connectomic reconstructions of mammalian brain tissue — mapping 200,000+ neurons and 500 million synapses from electron microscopy volumes using deep learning for automatic neuron segmentation (Flood-Filling Networks) and synapse detection — providing ground-truth circuit diagrams for AI models of cortical computation.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.microns-explorer.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-computational-neuroscience-2",
+    "text": "Predictive coding theory (Rao & Ballard, 1999) and modern deep learning instantiations (PredNet, Rao 2024) demonstrate that hierarchical predictive processing — where each cortical layer predicts the activity of the layer below and updates based on prediction errors — provides a unified framework explaining visual perception, motor control, and attention from first principles, while outperforming discriminative CNNs on few-shot learning and anomaly detection.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nature.com/articles/nn0199_79"
+    }
+  }
+]

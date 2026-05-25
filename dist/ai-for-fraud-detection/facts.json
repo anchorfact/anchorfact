@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-fraud-detection-1",
+    "text": "Nature Scientific Reports (December 2025) introduced RL-GNN — a framework combining reinforcement learning with graph neural networks for fraud detection on imbalanced financial transaction data — achieving 15-20% improvement in F1-score over supervised GNN baselines by framing fraud detection as a sequential decision process where the agent learns to investigate suspicious subgraphs adaptively, addressing the extreme class imbalance (<0.1% fraudulent transactions) that plagues financial data.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nature.com/articles/s41598-025-25200-3"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-fraud-detection-2",
+    "text": "MDPI Applied Sciences (February 2026) published a comprehensive systematic review of AI for financial fraud detection — surveying 120+ papers across transaction fraud (credit card, online payment), anti-money laundering (AML network analysis), insurance fraud, and securities fraud — finding that GNN-based anomaly detection reduces false positive rates by 30-50% compared to rule-based systems while detecting 40% more previously unknown fraud patterns.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.mdpi.com/2076-3417/16/4/1931"
+    }
+  }
+]

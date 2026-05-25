@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Attention Mechanisms: Scaled Dot-Product to FlashAttention — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Attention mechanisms enable neural networks to dynamically focus on relevant parts of input sequences. Since Vaswani et al. (2017), attention has become the dominant paradigm in NLP, vision, and multimodal AI.<br>
+<br>
+## Core Explanation<br>
+Self-attention computes weighted representations: each token attends to all others, with weights determined by pairwise similarity. Multi-head attention runs multiple attention operations in parallel, capturing different relationship types. Attention's quadratic complexity O(n²) drives ongoing efficiency research.<br>
+<br>
+## Detailed Analysis<br>
+FlashAttention accelerates by minimizing HBM reads/writes through tiling and recomputation. Sparse attention (Sparse Transformers, Big Bird) uses patterns like sliding windows or random attention. Linear attention (Linformer, Performer) approximates full attention for linear complexity.<br>
+<br>
+## Further Reading<br>
+- The Illustrated Transformer (Jay Alammar)<br>
+- FlashAttention GitHub<br>
+- Lilian Weng: Attention? Attention!</article></body>
+</html>

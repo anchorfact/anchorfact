@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/ai-search-engines",
+  "headline": "AI-Powered Search: Perplexity, Google AI Overviews, and the Future",
+  "description": "AI-powered search represents the most significant disruption to information retrieval since Google. Perplexity's answer engine and Google's AI Overviews synthesize information rather than linking to it — fundamentally changing how billions access knowledge.",
+  "dateCreated": "2026-05-24T18:00:03.151Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Perplexity AI: The Answer Engine",
+      "sameAs": "https://www.perplexity.ai/hub/technical-faq"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Generative AI in Search (Google AI Overviews)",
+      "sameAs": "https://blog.google/products/search/generative-ai-search/"
+    }
+  ]
+}

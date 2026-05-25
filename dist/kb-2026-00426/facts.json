@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-01",
+    "text": "Running is one of the most accessible and effective forms of cardiovascular exercise",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.humankinetics.com/products/daniels-running-formula-4th-edition"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-02",
+    "text": "Injuries: shin splints, runner's knee, plantar fasciitis — most from too much, too soon",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.humankinetics.com/products/daniels-running-formula-4th-edition"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-03",
+    "text": "Shoes: replace every 500-800km",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.humankinetics.com/products/daniels-running-formula-4th-edition"
+    }
+  }
+]

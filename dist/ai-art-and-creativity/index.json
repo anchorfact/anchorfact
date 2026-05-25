@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/ai-art-and-creativity",
+  "headline": "AI Art and Creativity: Generative Models and Authorship",
+  "description": "AI art generators (DALL-E, Midjourney, Stable Diffusion) have democratized image creation — and ignited fierce debates about authorship, copyright, and the nature of creativity itself.",
+  "dateCreated": "2026-05-24T18:00:02.802Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Generative Adversarial Networks",
+      "sameAs": "https://arxiv.org/abs/1406.2661"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Copyright Registration Guidance for Works Containing AI-Generated Material",
+      "sameAs": "https://www.copyright.gov/ai/"
+    }
+  ]
+}

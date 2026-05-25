@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-land-use-classification>
+  a schema:article ;
+  schema:headline "AI for Land Use Classification: Satellite Image Segmentation, Urban Expansion Mapping, and Agricultural Monitoring" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-land-use-classification>
+  schema:citation <https://arxiv.org/search/?query=land+use+classification+deep+learning+satellite> .
+
+<https://anchorfact.org/kb/ai-land-use-classification>
+  schema:citation <https://arxiv.org/search/?query=change+detection+satellite+urban+expansion> .

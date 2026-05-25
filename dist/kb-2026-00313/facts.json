@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "Ansible (Michael DeHaan, 2012, acquired by Red Hat 2015) is an agentless IT automation tool for configuration management, deployment, and orchestration. Uses YAML playbooks and SSH — no agent to install on target machines. Idempotent: running same playbook multiple times produces same result.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.oreilly.com/library/view/ansible-up-and/9781098109141/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "Inventory: defines target hosts (static file or dynamic from cloud).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://docs.ansible.com/"
+    }
+  }
+]

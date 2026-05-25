@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-medical-imaging",
+  "headline": "AI for Medical Imaging: Radiology AI, Computer-Aided Diagnosis, and Clinical Deployment",
+  "description": "AI is the first specialty to enter the radiology reading room at scale -- with over 500 FDA-cleared AI medical imaging devices, AI assists radiologists in detecting cancers, strokes, and fractures faster and more accurately. From zero-shot chest X-ray interpretation to real-time stroke triage, medical imaging AI has crossed from research benchmark to clinical deployment.",
+  "dateCreated": "2026-05-24T18:00:03.004Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Expert-level detection of pathologies from unannotated chest X-ray images via self-supervised learning (CheXzero)",
+      "sameAs": "https://www.nature.com/articles/s41551-022-00935-z"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Artificial Intelligence and Machine Learning (AI/ML)-Enabled Medical Devices (FDA Database)",
+      "sameAs": "https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-aiml-enabled-medical-devices"
+    }
+  ]
+}

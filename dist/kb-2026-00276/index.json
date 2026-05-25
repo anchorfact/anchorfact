@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00276",
+  "headline": "Overfitting and Regularization",
+  "description": "Overfitting occurs when a model learns noise and patterns specific to training data, failing to generalize to unseen data. Signs: low training error, high validation error. Regularization techniques prevent overfitting: L1/L2 weight penalty, dropout, early stopping, data augmentation, batch normalization.",
+  "dateCreated": "2026-05-24T18:00:03.454Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
+      "author": "Srivastava, Nitish, Hinton, Geoffrey",
+      "sameAs": "https://jmlr.org/papers/v15/srivastava14a.html"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "A Comprehensive Survey of Modern Regularization Techniques for Deep Neural Networks",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1016/j.neucom.2025.128639"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Sharpness-Aware Minimization for Efficiently Improving Generalization",
+      "author": "Foret, Pierre, Kleiner, Ariel, Mobahi, Hossein, Neyshabur, Behnam",
+      "sameAs": "https://arxiv.org/abs/2010.01412"
+    }
+  ]
+}

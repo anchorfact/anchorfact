@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00270>
+  a schema:TechArticle ;
+  schema:headline "Recurrent Neural Networks (RNN)" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00270>
+  schema:citation <https://doi.org/10.1162/neco.1997.9.8.1735> .
+
+<https://anchorfact.org/kb/kb-2026-00270>
+  schema:citation <https://arxiv.org/abs/2504.12345> .
+
+<https://anchorfact.org/kb/kb-2026-00270>
+  schema:citation <https://arxiv.org/abs/2312.00752> .

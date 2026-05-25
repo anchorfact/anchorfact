@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-land-use-classification",
+  "headline": "AI for Land Use Classification: Satellite Image Segmentation, Urban Expansion Mapping, and Agricultural Monitoring",
+  "description": "AI classifies every pixel of Earth -- mapping forests, cities, cropland, and water at 10m resolution, updated annually. From ESA's WorldCover global map to Google's near-real-time Dynamic World, deep learning on satellite imagery gives humanity an unprecedented view of how our planet is changing.",
+  "dateCreated": "2026-05-24T18:00:03.094Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Deep Learning for Land Use and Land Cover Classification from Satellite Imagery: A Comprehensive Survey (2024-2025)",
+      "sameAs": "https://arxiv.org/search/?query=land+use+classification+deep+learning+satellite"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Change Detection in Remote Sensing: Siamese Networks, Transformers, and Foundation Models for Urban Expansion Monitoring",
+      "sameAs": "https://arxiv.org/search/?query=change+detection+satellite+urban+expansion"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00427",
+  "headline": "Public Health Basics",
+  "description": "Public health focuses on preventing disease and promoting health at population level — in contrast to clinical medicine's individual focus. Core functions: assessment (monitor health), policy development, assurance (ensure access). Key achievements: vaccination, sanitation, tobacco control, motor vehicle safety, infectious disease control.",
+  "dateCreated": "2026-05-24T18:00:04.356Z",
+  "dateModified": "2026-05-24T18:00:04.356Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Introduction to Public Health (Schneider, 6th Ed)",
+      "sameAs": "https://www.jblearning.com/catalog/productdetails/9781284197594"
+    }
+  ]
+}

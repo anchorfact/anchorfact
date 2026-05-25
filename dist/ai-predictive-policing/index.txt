@@ -1,0 +1,14 @@
+# AI for Predictive Policing: Crime Forecasting, Resource Allocation, and Bias Mitigation
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI predictive policing forecasts where crimes might occur -- but has become one of AI's most controversial applications. The feedback loop problem (AI sends police to areas -> arrests increase -> AI predicts more crime there) and racial bias concerns have led many cities to abandon predictive policing. The emerging approach: AI as decision support, not decision replacement.
+
+## Core Explanation
+Crime prediction models: (1) Hotspot prediction -- spatio-temporal: grid cells (500ft x 500ft) x 4-hour windows. Features: historical crimes (near-repeat patterns -- burglaries cluster in time and space), temporal cycles, urban features (bars, schools, transit stops). Models: Hawkes processes (self-exciting point processes), kernel density estimation, GNNs (city grids as graphs), ConvLSTMs; (2) Individual risk -- predicting recidivism (COMPAS, 1998-present). Controversial: ProPublica (2016) found COMPAS biased against Black defendants (higher false positive rate); (3) Victimization risk -- predicting repeat victimization (domestic violence, stalking).
+
+## Detailed Analysis
+PredPol (2012): used ETAS model (epidemic-type aftershock sequence -- borrowed from seismology) predicting near-repeat patterns. Displayed 500ft x 500ft boxes for patrol officers. Cities deployed then abandoned (Santa Cruz 2020, LA 2019). The feedback loop: Prediction box -> more patrol -> more minor citations for things that would otherwise go unnoticed -> reported as "crime" -> reinforces prediction. This biases models toward areas of existing police presence. RAND (2018): evaluated predictive policing pilots. Found no conclusive evidence of crime reduction in controlled studies. ShotSpotter (2025): acoustic gunshot detection system. ML classifies gunshots vs fireworks/backfires, triangulates location, alerts police with <60 second latency. Deployed in 130+ US cities. Better accepted than predictive policing as it detects actual events rather than predicting future events. Current consensus (2023-2025): AI for policing should focus on forensic investigation support, crime analysis (post-hoc pattern recognition), and resource allocation optimization -- not individual-level prediction.
+

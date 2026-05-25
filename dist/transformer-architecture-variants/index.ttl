@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/transformer-architecture-variants>
+  a schema:TechArticle ;
+  schema:headline "Transformer Variants: From Encoder-Decoder to Mamba State Space Models" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/transformer-architecture-variants>
+  schema:citation <https://arxiv.org/abs/2312.00752> .
+
+<https://anchorfact.org/kb/transformer-architecture-variants>
+  schema:citation <https://arxiv.org/abs/1706.03762> .

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-in-healthcare>
+  a schema:Article ;
+  schema:headline "AI in Healthcare: Diagnostics, Drug Discovery, and Robotics" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-in-healthcare>
+  schema:citation <https://www.nature.com/articles/s41591-018-0300-7> .
+
+<https://anchorfact.org/kb/ai-in-healthcare>
+  schema:citation <https://www.nature.com/articles/s41586-024-07487-w> .

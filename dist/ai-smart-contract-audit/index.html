@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI Smart Contract Auditing: Vulnerability Detection, Formal Verification, and Blockchain Security — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Smart contracts — self-executing programs on blockchains — hold billions in value, and a single bug can drain it all. AI-augmented auditing combines LLM code understanding with formal verification to detect vulnerabilities before deployment, protecting the $100B+ DeFi ecosystem from exploits that have already caused billions in losses.<br>
+<br>
+## Core Explanation<br>
+Smart contracts are immutable once deployed on-chain — bugs cannot be patched (only mitigated through proxy patterns or migration). Common vulnerabilities: (1) Reentrancy — attacker recursively calls a vulnerable function before state updates, draining funds (The DAO hack, $60M); (2) Integer overflow/underflow; (3) Access control — missing or incorrect permission checks; (4) Front-running — miners/validators reorder transactions for profit (MEV — Maximal Extractable Value); (5) Oracle manipulation — feeding manipulated price data to contracts; (6) Logic errors — incorrect business logic (wrong interest calculation, faulty liquidation). Traditional auditing: manual code review ($5K-50K per audit, 1-4 weeks) + static analysis tools (Slither, Mythril, Oyente — rule-based pattern matching).<br>
+<br>
+## Detailed Analysis<br>
+LLM-SmartAudit (IEEE TIFS 2025): three-stage pipeline — (1) LLM Semantic Analysis: the LLM reads Solidity source code and generates a structured description of intended contract behavior (state variables, function purposes, invariants); (2) Vulnerability Hypothesis: the LLM identifies potential vulnerability patterns and generates test cases (attack scenarios) as Solidity code; (3) Formal Verification: symbolic execution (Mythril, Manticore) and SMT solving rigorously verify whether the hypothesized vulnerability is exploitable. This hybrid approach combines LLM flexibility with formal verification rigor — the LLM handles code understanding and hypothesis generation, the formal tools provide mathematical guarantees. Results: 92% detection vs. 78% for Slither alone. CertiK's production pipeline processes contracts using AI-driven initial scanning, then routes detected issues to human auditors for confirmation. Web3 AI auditing ecosystem: Solidity AI Auditor (browser-based), AuditHub (automated scanning), Armur.ai. Key limitations: (1) Economic vulnerabilities — bugs that are technically correct code but economically exploitable (flash loan attacks manipulating oracle prices) — require protocol-level simulation, not just code analysis; (2) Cross-contract attacks combining multiple protocols; (3) The adversarial nature — attackers use the same AI auditing tools to find vulnerabilities, creating an auditing arms race.<br>
+<br>
+## Further Reading<br>
+- CertiK Security Leaderboard & Audit Reports<br>
+- Slither: Solidity Static Analysis Framework (Trail of Bits)<br>
+- Rekt News: DeFi Hack Database<br>
+</article></body>
+</html>

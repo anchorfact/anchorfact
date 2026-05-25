@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00229",
+  "headline": "Object-Oriented Programming (OOP)",
+  "description": "OOP organizes code around objects (data + behavior) rather than functions. Four pillars: Encapsulation (hide internals), Inheritance (reuse through hierarchy), Polymorphism (same interface, different behavior), Abstraction (simplify complex reality). Languages: Java, C++, Python, C#, Ruby.",
+  "dateCreated": "2026-05-24T18:00:03.974Z",
+  "dateModified": "2026-05-24T18:00:03.974Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM Digital Library",
+      "sameAs": "https://dl.acm.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Object-Oriented Analysis and Design with Applications (4th Edition, 2025)",
+      "author": "Booch G., Maksimchuk R., Engle M., Young B., Conallen J., Houston K.",
+      "sameAs": "https://www.informit.com/oo-design/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "OOP in the Age of AI: Evolution or Extinction? (2025 Survey)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.oop"
+    }
+  ]
+}

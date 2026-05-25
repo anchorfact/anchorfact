@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-01",
+    "text": "Augustus becomes first emperor",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.liverpooluniversitypress.co.uk/doi/book/10.3828/9781846319177"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-02",
+    "text": "Pax Romana : 200 years of relative peace/prosperity",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.liverpooluniversitypress.co.uk/doi/book/10.3828/9781846319177"
+    }
+  }
+]

@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00387>
+  a schema:TechArticle ;
+  schema:headline "International Trade" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00387>
+  schema:citation <https://www.pearson.com/en-us/subject-catalog/p/international-economics-theory-and-policy/P200000005849> .

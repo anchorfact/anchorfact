@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/scientific-method>
+  a schema:Article ;
+  schema:headline "The Scientific Method: From Hypothesis to Theory" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/scientific-method>
+  schema:citation <https://www.routledge.com/The-Logic-of-Scientific-Discovery/Popper/p/book/9780415278447> .
+
+<https://anchorfact.org/kb/scientific-method>
+  schema:citation <https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html> .

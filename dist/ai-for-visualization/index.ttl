@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-visualization>
+  a schema:article ;
+  schema:headline "AI for Data Visualization: Automated Chart Generation, Insight Discovery, and Visual Analytics" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-visualization>
+  schema:citation <https://link.springer.com/article/10.1007/s11704-023-2691-y> .
+
+<https://anchorfact.org/kb/ai-for-visualization>
+  schema:citation <https://www.sciencedirect.com/science/article/pii/S2468502X24000226> .

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/concept-based-explainability",
+  "headline": "Concept-Based Explainability: TCAV and Concept Bottleneck Models",
+  "description": "Concept-based explainability moves beyond pixel-level saliency maps to higher-level human-understandable concepts. TCAV quantifies whether a model \"thinks\" about stripes when classifying zebras, while Concept Bottleneck Models embed interpretable concept reasoning into the architecture itself.",
+  "dateCreated": "2026-05-24T18:00:03.256Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)",
+      "sameAs": "https://proceedings.mlr.press/v80/kim18d.html"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Concept-based Explainable Artificial Intelligence: A Survey",
+      "sameAs": "https://dl.acm.org/doi/abs/10.1145/3774643"
+    }
+  ]
+}

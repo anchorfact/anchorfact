@@ -1,0 +1,20 @@
+# Nutrition for Athletes
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+
+
+## TL;DR
+
+Athletic nutrition fuels performance and recovery. Carbs: primary fuel (glycogen). Protein: repair muscle (1.2-2.0 g/kg for athletes). Timing: pre-exercise meal 2-4h before, carb during events >1h (30-60g/h), post-exercise protein within 2h (20-40g). Hydration: drink to thirst — overhydration (hyponatremia) is dangerous.
+
+## Core Explanation
+
+Carb loading: taper exercise + increase carbs 3 days before marathon. Glycogen stores ~2000 calories worth — enough for ~2h intense exercise. During exercise: 30-60g carbs/hour (banana, gel, sports drink). Recovery window: 30-60g carbs + 15-25g protein within 30-60 min. Creatine: most researched supplement — improves explosive power. Beetroot juice: nitrates → vasodilation → improved endurance.
+
+## Further Reading
+
+- [Nancy Clark's Sports Nutrition Guidebook (6th Ed)](https://www.humankinetics.com/products/nancy-clarks-sports-nutrition-guidebook-6th-edition)
+

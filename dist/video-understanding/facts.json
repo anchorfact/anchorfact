@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-video-understanding-1",
+    "text": "Springer IJCV (May 2025) published a comprehensive survey of action understanding -- tracing the evolution from handcrafted features (HOG3D, improved dense trajectories, pre-2014) to 3D CNNs (I3D, C3D, 2014-2019) to video transformers (TimeSformer, VideoMAE, 2020-present) -- finding that VideoMAE v2 achieves 90.8% top-1 on Kinetics-400 and 86.6% on Something-Something V2, matching supervised training with 90% less labeled data through masked autoencoding pretraining.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://link.springer.com/article/10.1007/s11263-025-02478-4"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-video-understanding-2",
+    "text": "ScienceDirect (February 2026) published a comprehensive survey of action recognition consolidating a decade of progress -- documenting that multimodal video-language models (Video-LLaMA, VideoChat) combining visual, audio, and text modalities achieve 5-10% accuracy gains over vision-only models on complex activity understanding (cooking, assembly) and that temporal action detection (localizing start/end times) remains the key open challenge with SOTA mAP of 45-55% on ActivityNet, far below image-level recognition.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S2405959525001869"
+    }
+  }
+]

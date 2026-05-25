@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-document-digitization>
+  a schema:article ;
+  schema:headline "AI for Document Digitization: Historical Archives, Handwriting Recognition, and Mass Digitization" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-document-digitization>
+  schema:citation <https://arxiv.org/search/?query=historical+document+handwriting+recognition+deep+learning> .
+
+<https://anchorfact.org/kb/ai-document-digitization>
+  schema:citation <https://arxiv.org/search/?query=Vesuvius+scroll+ink+detection+CT> .

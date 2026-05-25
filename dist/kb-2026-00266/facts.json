@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "Docker networking provides container connectivity. Drivers: bridge (default, containers on same host), host (container shares host network), overlay (multi-host, Swarm), macvlan (container gets MAC address, appears as physical device), none (isolated). Custom networks enable DNS-based service discovery.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "Bridge: Docker creates docker0 bridge, containers get IP from 172.17.0.0/16 subnet.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-003",
+    "text": "user-defined networks (DNS resolution: container names resolve).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-004",
+    "text": "Port mapping: `-p 8080:80` maps host 8080 to container 80.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  }
+]

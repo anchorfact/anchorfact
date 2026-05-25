@@ -1,0 +1,17 @@
+# Consul (HashiCorp)
+Confidence: high
+Last verified: 2026-05-24
+Generation: human_only
+
+## TL;DR
+
+HashiCorp Consul (2014) is a service mesh and service discovery tool. It provides: service registration + health checking, key-value store, secure service-to-service communication (mTLS + authorization), and multi-datacenter support. Service mesh: sidecar proxy (Envoy) routes and secures traffic.
+
+## Core Explanation
+
+Service discovery: DNS or HTTP API — `my-service.service.consul`. Health checks: HTTP, TCP, script, TTL. KV store: consistent (raft), used for feature flags, dynamic config. Connect: service mesh with intentions (access control policies). Consul KV integrates with Vault for secret storage. Multi-datacenter: WAN federation via gossip protocol.
+
+## Further Reading
+
+- [Consul Documentation](https://developer.hashicorp.com/consul/docs)
+

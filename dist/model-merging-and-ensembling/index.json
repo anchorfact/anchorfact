@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/model-merging-and-ensembling",
+  "headline": "Model Merging, Mixture of Experts, and Efficient Ensembling",
+  "description": "Model merging and mixture of experts challenge the \"one model to rule them all\" assumption. Merging combines strengths of multiple fine-tuned models; MoE activates specialized sub-networks per input — both maximizing capability per parameter.",
+  "dateCreated": "2026-05-24T18:00:03.417Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Model Soups: Averaging Weights of Multiple Fine-Tuned Models Improves Accuracy",
+      "sameAs": "https://arxiv.org/abs/2203.05482"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "DeepSeek-V3 Technical Report",
+      "sameAs": "https://arxiv.org/abs/2412.19437"
+    }
+  ]
+}

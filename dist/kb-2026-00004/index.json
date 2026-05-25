@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00004",
+  "headline": "GPT (Generative Pre-trained Transformer) Model Family",
+  "description": "The GPT (Generative Pre-trained Transformer) model family, developed by OpenAI starting in 2018, represents the lineage of autoregressive language models that scaled from 117M to trillions of parameters, establishing text generation as the primary paradigm for general-purpose AI. GPT-1 (June 2018) introduced the Transformer decoder for language modeling; GPT-2 (February 2019, 1.5B parameters) demonstrated zero-shot transfer capabilities that alarmed researchers enough to stagger its release; GPT-3 (May 2020, 175B parameters) established few-shot learning as a viable paradigm and catalyzed the commercial LLM ecosystem; GPT-4 (March 2023, estimated 1.76T parameters with Mixture-of-Experts) introduced multimodal capabilities and near-human performance on professional exams. As of May 2026, the GPT lineage powers ChatGPT, which has over 300 million weekly active users.",
+  "dateCreated": "2026-05-24T18:00:03.317Z",
+  "dateModified": "2026-05-24T18:00:03.317Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Improving Language Understanding by Generative Pre-Training (GPT-1)",
+      "author": "Radford, Alec, Narasimhan, Karthik, Salimans, Tim, Sutskever, Ilya",
+      "sameAs": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Language Models are Unsupervised Multitask Learners (GPT-2)",
+      "author": "Radford, Alec, Wu, Jeffrey, Child, Rewon, Luan, David, Amodei, Dario, Sutskever, Ilya",
+      "sameAs": "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Language Models are Few-Shot Learners (GPT-3)",
+      "author": "Brown, Tom B., Mann, Benjamin, Ryder, Nick, Subbiah, Melanie, Kaplan, Jared, Dhariwal, Prafulla, Neelakantan, Arvind, Shyam, Pranav, Sastry, Girish, Askell, Amanda, Agarwal, Sandhini, Herbert-Voss, Ariel, Krueger, Gretchen, Henighan, Tom, Child, Rewon, Ramesh, Aditya, Ziegler, Daniel M., Wu, Jeffrey, Winter, Clemens, Hesse, Christopher, Chen, Mark, Sigler, Eric, Litwin, Mateusz, Gray, Scott, Chess, Benjamin, Clark, Jack, Berner, Christopher, McCandlish, Sam, Radford, Alec, Sutskever, Ilya, Amodei, Dario",
+      "sameAs": "https://arxiv.org/abs/2005.14165"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "GPT-4 Technical Report",
+      "sameAs": "https://doi.org/undefined"
+    }
+  ]
+}

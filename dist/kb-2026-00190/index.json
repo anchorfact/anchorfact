@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00190",
+  "headline": "QUIC Protocol",
+  "description": "QUIC is a UDP-based transport protocol developed by Google (2012) and standardized as IETF RFC 9000 (2021). It is the foundation of HTTP/3. Key innovations: 0-RTT connection, multiplexed streams without head-of-line blocking, built-in TLS 1.3 encryption, and connection migration (survives IP changes).",
+  "dateCreated": "2026-05-24T18:00:04.016Z",
+  "dateModified": "2026-05-24T18:00:04.016Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM Digital Library",
+      "sameAs": "https://dl.acm.org/"
+    }
+  ]
+}

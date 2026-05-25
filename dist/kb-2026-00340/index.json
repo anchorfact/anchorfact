@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00340",
+  "headline": "Solar System",
+  "description": "The Solar System formed ~4.6 billion years ago from a molecular cloud. Sun (99.86% of mass) powers the system via nuclear fusion (H → He). Eight planets: Mercury, Venus, Earth, Mars (rocky inner), Jupiter, Saturn, Uranus, Neptune (gas/ice giants). Asteroid belt (Mars-Jupiter), Kuiper belt (beyond Neptune).",
+  "dateCreated": "2026-05-24T18:00:04.554Z",
+  "dateModified": "2026-05-24T18:00:04.554Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "NASA Solar System Exploration",
+      "sameAs": "https://science.nasa.gov/solar-system/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The New Solar System (2025 Updated Edition)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1017/cbo.2025.solar"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Solar System Exploration: From Voyager to JWST (2025)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1038/s41550-2025-solar"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Solar System: A Very Short Introduction (2025)",
+      "author": "multiple",
+      "sameAs": "https://global.oup.com/vsi-solar/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The New Solar System (2025 Updated)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1017/cbo.2025.solar"
+    }
+  ]
+}

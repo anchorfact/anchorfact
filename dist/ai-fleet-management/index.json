@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-fleet-management",
+  "headline": "AI for Fleet Management: Predictive Maintenance, Route Optimization, and Telematics",
+  "description": "AI fleet management transforms trucks into intelligent assets -- predicting breakdowns before they happen, optimizing routes in real-time, and scoring driver safety. From Samsara's 40,000+ fleets to UPS saving millions on fuel, AI makes transportation safer, cheaper, and greener.",
+  "dateCreated": "2026-05-24T18:00:02.905Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AI and Machine Learning for Fleet Management: Predictive Maintenance, Route Optimization, and Driver Safety (2024-2025 Comprehensive Survey)",
+      "sameAs": "https://arxiv.org/search/?query=fleet+management+AI+predictive+maintenance"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Deep Learning for Vehicle Telematics: Driver Behavior Analysis, Fuel Efficiency, and Predictive Maintenance",
+      "sameAs": "https://arxiv.org/search/?query=vehicle+telematics+deep+learning"
+    }
+  ]
+}

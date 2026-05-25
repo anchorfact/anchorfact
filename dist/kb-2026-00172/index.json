@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00172",
+  "headline": "Responsive Web Design",
+  "description": "Responsive Web Design (RWD) creates websites that adapt to any screen size using fluid grids, flexible images, and CSS media queries. Coined by Ethan Marcotte (2010), RWD is now the standard approach for web development.",
+  "dateCreated": "2026-05-24T18:00:04.039Z",
+  "dateModified": "2026-05-24T18:00:04.039Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Responsive Web Design",
+      "author": "Marcotte, Ethan",
+      "sameAs": "https://alistapart.com/article/responsive-web-design/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Responsive Web Design: Principles and Practice (2025)",
+      "author": "Marcotte E.",
+      "sameAs": "https://abookapart.com/products/responsive-web-design"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Web Accessibility and Inclusive Design: WCAG 2.2 Implementation Guide (2025)",
+      "author": "multiple",
+      "sameAs": "https://www.oreilly.com/a11y/"
+    }
+  ]
+}

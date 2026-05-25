@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-tv-1",
+    "text": "The original Transformer (Vaswani et al. 2017) introduced the encoder-decoder architecture with multi-head self-attention, replacing recurrence entirely and enabling parallel computation across all positions.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-tv-2",
+    "text": "Vision Transformer (ViT, Dosovitskiy et al. 2021, Google) applies a pure Transformer to sequences of image patches, achieving state-of-the-art on image classification when pre-trained on large datasets.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2010.11929"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-tv-3",
+    "text": "Swin Transformer (Liu et al. 2021, Microsoft, ICCV Best Paper) introduced hierarchical shifted windows for efficient vision Transformers, enabling linear complexity relative to image size.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2103.14030"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-tv-4",
+    "text": "Efficient Transformers (Tay et al. 2022, Google) survey categorizes linear, sparse, and recurrent attention variants that reduce the O(N²) complexity barrier for long sequences.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1145/3530811"
+    }
+  }
+]

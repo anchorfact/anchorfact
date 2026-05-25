@@ -1,0 +1,20 @@
+# Endangered Species
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+
+
+## TL;DR
+
+Endangered species face extinction risk. IUCN Red List: Extinct → Extinct in Wild → Critically Endangered → Endangered → Vulnerable → Near Threatened → Least Concern. Current extinction rate: 100-1000x background rate (Anthropocene mass extinction). Causes: habitat loss, climate change, invasive species, overexploitation, pollution.
+
+## Core Explanation
+
+Iconic endangered: Amur leopard (~100 wild), vaquita porpoise (~10), Javan rhino (~75), mountain gorilla (~1,000 — success story: population increasing). Conservation success: bald eagle (banned DDT, 1972), giant panda (habitat protection), humpback whale (whaling ban). Extinction vortex: small populations → genetic problems → further decline. 'The Sixth Extinction' (Kolbert): we are causing it. 'In the end, we will conserve only what we love' (Baba Dioum).
+
+## Further Reading
+
+- [IUCN Red List of Threatened Species](https://www.iucnredlist.org/)
+

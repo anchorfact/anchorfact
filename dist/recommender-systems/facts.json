@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-recommender-systems-1",
+    "text": "Nature Scientific Reports (August 2025) conducted an extensive experimental comparison of collaborative filtering models — evaluating neural collaborative filtering, graph-based models (LightGCN, NGCF), and traditional matrix factorization — finding that GNN-based models achieve 8-15% improvement in recall@20 and NDCG@20 on large-scale datasets (Amazon, Yelp, MovieLens-20M), with the gains primarily driven by capturing high-order connectivity patterns in user-item interaction graphs beyond simple co-occurrence.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nature.com/articles/s41598-025-15096-4"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-recommender-systems-2",
+    "text": "The 2025-2026 recommender systems landscape (SIGIR 2026, ScienceDirect FIGNNCF 2026) is defined by three trends: LLM-based generative recommendation (LLMs directly outputting recommended items as tokens), feature-integrated GNNs (combining collaborative signals with item content features), and trustworthy recommendation (robustness against shilling attacks, fairness across user groups, and explainability of recommendations).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S0925231225026980"
+    }
+  }
+]

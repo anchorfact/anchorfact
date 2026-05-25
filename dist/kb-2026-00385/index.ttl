@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00385>
+  a schema:TechArticle ;
+  schema:headline "Ocean Currents" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00385>
+  schema:citation <https://oceanservice.noaa.gov/education/tutorial_currents/> .

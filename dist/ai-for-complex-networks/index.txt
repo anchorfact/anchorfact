@@ -1,0 +1,19 @@
+# AI for Complex Networks: Graph Learning, Resilience, and Network Science
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI and complex network science form a powerful synergy: graph neural networks learn from rich network topologies, while network theory provides structural understanding of AI's own internal representations. Together they unlock insights from interconnected systems.
+
+## Core Explanation
+Complex networks model systems where interactions between components matter: social networks (friendship graphs), biological networks (protein-protein interaction), transportation networks (road graphs), power grids (electrical topology), and the internet (autonomous system graphs). Key properties: scale-free degree distribution (few hubs, many leaves), small-world phenomenon (short average path length), community structure (densely connected modules). AI tools: (1) Node embedding — Node2Vec, GraphSAGE learn vector representations preserving network proximity; (2) Community detection — GNNs learn to partition networks; (3) Link prediction — predict missing edges; (4) Network resilience — predict robustness to node/edge removal.
+
+## Detailed Analysis
+Network neuroscience applies these techniques to the brain connectome — modeling functional MRI correlations as graphs and identifying hub regions. Centrality measures (degree, betweenness, eigenvector) identify critical nodes whose failure cascades through the system. Graph diffusion models generate realistic synthetic networks for simulation. AI for complex networks goes beyond traditional GNN benchmarks by handling heterogeneous, multi-layer, and temporal networks. The 2026 Complex Networks Conference (CNA) highlights the growing intersection with AI methods. Applications: epidemic spreading prediction, infrastructure vulnerability assessment, financial contagion modeling.
+
+## Further Reading
+- Network Science by Albert-László Barabási
+- NetworkX Python Library
+- Stanford CS224W: Machine Learning with Graphs
+

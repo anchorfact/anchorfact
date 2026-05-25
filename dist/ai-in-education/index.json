@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-in-education",
+  "headline": "AI in Education: Personalized Learning and Intelligent Tutoring Systems",
+  "description": "AI is transforming education through intelligent tutoring systems that adapt to individual learners — diagnosing knowledge gaps, generating personalized exercises, and providing real-time feedback. LLMs enable conversational tutoring at unprecedented scale.",
+  "dateCreated": "2026-05-24T18:00:03.080Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Large language models in education: a systematic review",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S2666920X25001699"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "AI in Education: Personalized Learning and Intelligent Tutoring Systems",
+      "sameAs": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1782626/full"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI for Social Media: Misinformation Detection, Hate Speech Moderation, and Content Safety — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Social media platforms process billions of posts daily — more than any human moderation team could review. AI detects hate speech, misinformation, harassment, and harmful content at scale, but faces fundamental challenges: context understanding, cultural nuance, and bias. The frontier is explainable, fair, and context-aware moderation that protects users without over-censoring legitimate speech.<br>
+<br>
+## Core Explanation<br>
+Content moderation pipeline: User post → (1) Pre-filtering (hash matching for known CSAM, terrorist content) → (2) AI classification (probabilistic scoring: toxicity, hate speech, misinformation, spam) → (3) Threshold decision (auto-remove high-confidence, flag medium-confidence for human review, allow low-confidence). Moderation types: (A) Hate speech — attacking protected characteristics (race, religion, gender, sexual orientation); (B) Misinformation — false or misleading claims (health, politics, science); (C) Harassment/cyberbullying — targeted abusive behavior; (D) Violent extremism — terrorist propaganda and recruitment. AI approaches: fine-tuned transformers (HateBERT, BERT-based classifiers), few-shot LLM prompting, and multimodal analysis (text + image + video metadata).<br>
+<br>
+## Detailed Analysis<br>
+ACM 2025 XAI survey: the standard approach — fine-tune pre-trained language models on labeled hate speech datasets (HateXplain, HateSpeech, Gab Hate Corpus). Performance is deceptively high (90%+ F1) because datasets contain spurious correlations — certain identity terms are heavily correlated with hate speech labels. XAI reveals these biases: integrated gradients show models relying on identity terms rather than actual hateful language. Solutions: data augmentation (counter-speech examples), adversarial debiasing, and multi-task learning with debiasing auxiliary objectives. Nature Human Behaviour 2025 context study: evaluated 7 commercial moderation APIs on controlled test sets varying context. Findings: (1) Reclaimed slurs (in-group usage) were flagged as hate speech 40-60% of the time; (2) Sarcasm and humor reduced accuracy significantly; (3) Counter-speech (calling out hate) was often flagged as hate itself. Recommendation: hybrid pipelines — AI for triage (flagging 5-15% of content for review), humans for final judgment on edge cases. Springer 2024 hate speech review: graph-based detection leveraging social network structure (hate speech spreads through specific network patterns). LLMs for content moderation (2025-2026): GPT-4 and Claude used as moderation classifiers, achieving state-of-the-art accuracy when prompted with detailed content policies, but at $0.01-0.10 per classification — prohibitive for free social media platforms processing billions of posts. Multimodal misinformation: deepfake videos, out-of-context images (real photo, false caption) — requiring joint image-text verification.<br>
+<br>
+## Further Reading<br>
+- Perspective API: Toxicity Scoring (Google Jigsaw)<br>
+- HateXplain: Explainable Hate Speech Dataset<br>
+- EU Digital Services Act: Platform Content Moderation Requirements<br>
+</article></body>
+</html>

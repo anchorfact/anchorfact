@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/particle-physics",
+  "headline": "Particle Physics and the Standard Model",
+  "description": "The Standard Model is physics' most successful theory, describing all known fundamental particles and three of four fundamental forces. Discovered particles were predicted decades in advance — the Higgs boson took 48 years from theory to experimental confirmation.",
+  "dateCreated": "2026-05-24T18:00:04.538Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Introduction to Elementary Particles, 2nd Edition",
+      "sameAs": "https://www.wiley.com/en-us/Introduction+to+Elementary+Particles%2C+2nd+Edition-p-9783527406015"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "CERN: The Standard Model",
+      "sameAs": "https://home.cern/science/physics/standard-model"
+    }
+  ]
+}

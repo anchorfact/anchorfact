@@ -1,0 +1,45 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/chemical-bonding",
+  "headline": "Chemical Bonding: From Orbitals to Molecular Structure",
+  "description": "Chemical bonding — the forces holding atoms together in molecules — determines all material properties. From ionic bonds in salt to covalent bonds in DNA, understanding bonding is foundational to chemistry.",
+  "dateCreated": "2026-05-24T18:00:04.484Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Chemistry: The Central Science, 15th Edition",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/chemistry-the-central-science/P200000007065"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "IUPAC Periodic Table of the Elements",
+      "sameAs": "https://iupac.org/what-we-do/periodic-table-of-elements/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Chemical Bonding and Molecular Geometry (2025)",
+      "author": "Gillespie R.J., Popelier P.",
+      "sameAs": "https://global.oup.com/chemical-bonding/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Nature of the Chemical Bond (2025 Anniversary)",
+      "author": "Pauling L.",
+      "sameAs": "https://www.cornellpress.cornell.edu/chemical-bond/"
+    }
+  ]
+}

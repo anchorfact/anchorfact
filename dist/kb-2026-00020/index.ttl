@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00020>
+  a schema:TechArticle ;
+  schema:headline "Constitutional AI" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00020>
+  schema:citation <https://arxiv.org/abs/2212.08073> .
+
+<https://anchorfact.org/kb/kb-2026-00020>
+  schema:citation <https://arxiv.org/abs/2204.05862> .

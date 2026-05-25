@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-001",
+    "text": "GDP (Gross Domestic Product) measures the total market value of all final goods and services produced in a country. GDP = C + I + G + (X-M): Consumption + Investment + Government spending + Net exports. Nominal GDP (current prices) vs. Real GDP (inflation-adjusted). GDP per capita approximates living standards.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://press.princeton.edu/books/paperback/9780691169859/gdp"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-002",
+    "text": "Alternatives: HDI (Human Development Index: health + education + income), GPI (Genuine Progress Indicator), Bhutan's Gross National Happiness.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nationalgeographic.com/maps/atlas/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-003",
+    "text": "Largest economies (nominal): US ($27T), China ($18T), Germany, Japan, India.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://press.princeton.edu/books/paperback/9780691169859/gdp"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-004",
+    "text": "Fastest growing: Guyana (oil discovery, +60% 2024), Macau, Libya.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://press.princeton.edu/books/paperback/9780691169859/gdp"
+    }
+  }
+]

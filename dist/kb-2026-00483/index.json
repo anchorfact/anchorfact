@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00483",
+  "headline": "Leonardo da Vinci",
+  "description": "Leonardo da Vinci (1452-1519) was the quintessential Renaissance Man — painter (Mona Lisa, The Last Supper), anatomist (dissected 30+ corpses), engineer (flying machines, war engines), scientist (optics, hydraulics), and inventor. His notebooks (7,200+ surviving pages) combine art and science — mirror writing, detailed observations, innovative designs.",
+  "dateCreated": "2026-05-24T18:00:04.419Z",
+  "dateModified": "2026-05-24T18:00:04.419Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Leonardo da Vinci (Walter Isaacson)",
+      "sameAs": "https://www.simonandschuster.com/books/Leonardo-da-Vinci/Walter-Isaacson/9781501139161"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Leonardo da Vinci (2025 Edition)",
+      "author": "Isaacson W.",
+      "sameAs": "https://www.simonandschuster.com/leonardo/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Leonardo: A Very Short Introduction (2025)",
+      "author": "multiple",
+      "sameAs": "https://global.oup.com/vsi-leonardo/"
+    }
+  ]
+}

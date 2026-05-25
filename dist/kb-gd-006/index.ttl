@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-gd-006>
+  a schema:TechArticle ;
+  schema:headline "游戏音效设计完全指南" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-gd-006>
+  schema:citation <https://www.gdconf.com/> .

@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00200",
+  "headline": "Graph Theory",
+  "description": "Graph theory studies networks of vertices connected by edges. Applications: social networks, routing algorithms, dependency resolution, compiler optimization (register allocation via graph coloring), circuit design. Euler's 1736 Bridges of Konigsberg paper founded the field.",
+  "dateCreated": "2026-05-24T18:00:03.867Z",
+  "dateModified": "2026-05-24T18:00:03.867Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM Digital Library",
+      "sameAs": "https://dl.acm.org/"
+    }
+  ]
+}

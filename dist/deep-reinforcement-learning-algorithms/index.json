@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/deep-reinforcement-learning-algorithms",
+  "headline": "Deep Reinforcement Learning Algorithms: PPO, SAC, Dreamer, and Decision Transformer",
+  "description": "Deep Reinforcement Learning has evolved from simple DQN to sophisticated algorithms: PPO dominates continuous control, SAC excels at sample-efficient exploration, Dreamer learns world models, and Decision Transformer reframes RL as sequence modeling.",
+  "dateCreated": "2026-05-24T18:00:03.281Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Proximal Policy Optimization Algorithms (PPO)",
+      "sameAs": "https://arxiv.org/abs/1707.06347"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Mastering Diverse Domains through World Models (Dreamer v3)",
+      "sameAs": "https://arxiv.org/abs/2301.04104"
+    }
+  ]
+}

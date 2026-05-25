@@ -1,0 +1,20 @@
+# Economic Systems
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+
+
+## TL;DR
+
+Economic systems organize production, distribution, and consumption. Types: capitalism (private ownership, market-driven), socialism (public/state ownership, planned), mixed economy (most countries — blend of both). Key indicators: GDP (total output), inflation, unemployment, Gini coefficient (inequality).
+
+## Core Explanation
+
+Capitalism: Adam Smith (Wealth of Nations, 1776), invisible hand, supply/demand. Socialism: Karl Marx (Das Kapital, 1867), worker ownership. Keynesian economics: government intervention to manage business cycles. Neoliberalism (1980s+): deregulation, privatization, free trade. Modern Monetary Theory (MMT): countries controlling currency can't default (controversial). China's 'socialism with Chinese characteristics' — state capitalism model.
+
+## Further Reading
+
+- [Economics (Samuelson & Nordhaus, 19th Ed)](https://www.mheducation.com/highered/product/economics-samuelson-nordhaus/M9780073511290.html)
+

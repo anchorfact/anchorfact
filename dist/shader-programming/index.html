@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Shader Programming Fundamentals — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Shaders are GPU programs that define how 3D geometry transforms into screen pixels. Vertex shaders position geometry; fragment shaders color each pixel. Modern real-time rendering relies entirely on custom shaders for lighting, materials, and effects.<br>
+<br>
+## Shader Pipeline<br>
+<br>
+### Vertex Shader<br>
+Transforms 3D vertex positions from model space → world space → view space → clip space. Also computes per-vertex data (normals, UVs, tangents) for later stages.<br>
+<br>
+### Fragment (Pixel) Shader<br>
+Computes the final color of each pixel. This is where lighting models (Phong, PBR), texture sampling, normal mapping, and post-processing effects execute. Fragment shaders run millions of times per frame — optimization is critical.<br>
+<br>
+### Geometry and Tessellation Shaders<br>
+Optional pipeline stages for generating or subdividing geometry on the GPU. Tessellation dynamically adds detail to meshes based on camera distance for LOD effects.<br>
+<br>
+## Common Shader Techniques<br>
+- **Phong/Blinn-Phong**: Classic specular lighting model<br>
+- **PBR (Physically Based Rendering)**: Energy-conserving materials using roughness/metallic maps<br>
+- **Normal Mapping**: Simulates surface detail without extra geometry<br>
+- **Shadow Mapping**: Depth comparison from light's perspective<br>
+- **Screen-Space Effects**: Ambient occlusion, reflections, bloom<br>
+<br>
+## Performance Tips<br>
+- Avoid dynamic branching (if/else) when possible — GPUs execute all paths<br>
+- Prefer texture lookups over complex math in fragment shaders<br>
+- Batch draw calls by material/shader to minimize state changes<br>
+- Use mipmaps to reduce texture bandwidth at distance</article></body>
+</html>

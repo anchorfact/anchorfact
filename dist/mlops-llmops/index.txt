@@ -1,0 +1,19 @@
+# MLOps and LLMOps: Production AI Engineering, Observability, and Platform Architecture
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+MLOps and LLMOps are the engineering disciplines that bridge the gap between a research notebook and a reliable, monitored, cost-effective production AI system. As enterprises deploy LLMs at scale, LLMOps extends traditional MLOps with prompt versioning, guardrail monitoring, hallucination detection, and cost-per-call optimization — making AI operations a $10B+ market by 2026.
+
+## Core Explanation
+MLOps applies DevOps principles to machine learning: (1) Data management — feature stores (Feast, Tecton), dataset versioning (DVC, Pachyderm), data quality monitoring; (2) Experimentation — tracking hyperparameters, metrics, and artifacts (MLflow, Weights & Biases, Neptune); (3) Training orchestration — automated pipelines (Kubeflow, Airflow, Metaflow), distributed training management, hyperparameter optimization; (4) Model registry — versioned model storage with metadata (MLflow Registry, Seldon, BentoML); (5) Serving — REST/gRPC endpoints with auto-scaling (TensorFlow Serving, Triton, Ray Serve, vLLM); (6) Monitoring — data drift, concept drift, prediction quality, latency, throughput (Evidently AI, Arize, WhyLabs, Fiddler).
+
+## Detailed Analysis
+LLMOps extends MLOps for large language models: (1) Prompt management — versioned prompt templates, A/B testing of prompts, prompt injection detection; (2) Output quality — LLM-as-judge evaluation, hallucination rate monitoring, RAG retrieval quality; (3) Safety guardrails — content filtering (toxicity, PII, jailbreak detection), rate limiting, role-based access; (4) Cost optimization — per-request token counting, model routing (route simple queries to cheaper models), caching common responses; (5) Observability — the 2026 five-layer taxonomy captures the full LLM stack: infrastructure, prompts, generation quality, safety, and business KPIs. S&P Global 2025 survey: 42% of companies abandoned AI initiatives in 2024-2025, up from 17% — highlighting that MLOps maturity is the primary bottleneck between AI experimentation and ROI. Leading platforms: Weights & Biases Prompts (prompt monitoring), LangSmith (LangChain ecosystem), Arize Phoenix (open-source LLM observability), Galileo (hallucination detection), Braintrust (eval-driven development). The LLMOps market is transitioning from "which model to use?" to "which infrastructure to run it on reliably and affordably?" — with model routers (OpenRouter, Martian) and inference optimizers (vLLM, TensorRT-LLM, llama.cpp) becoming critical building blocks.
+
+## Further Reading
+- MLflow: Open Source ML Lifecycle Platform (Databricks)
+- Awesome MLOps GitHub: kelvins/awesome-mlops
+- LLMOps Guide (Google Cloud / AWS SageMaker)
+

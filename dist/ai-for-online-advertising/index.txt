@@ -1,0 +1,14 @@
+# AI for Online Advertising: Real-Time Bidding, CTR Prediction, and Programmatic Ads
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Online advertising is the financial engine of the internet -- and AI is its brain. Real-time bidding systems make millions of decisions per second about which ad to show, using deep learning to predict click probability, conversion likelihood, and user value. From Google Search Ads to TikTok's feed, AI-powered advertising generates over $600B annually.
+
+## Core Explanation
+Online advertising flow: User visits webpage -> ad request sent to exchange (Google Ad Manager, Meta Ads) -> Real-time bidding (RTB) -- advertisers submit bids based on predicted value = p(click) * p(conversion|click) * conversion value -> Ad selection -> Feedback (click or not, converts or not) generates training data. Key ML problem: CTR prediction. Input: user features, ad features, context features. Output: probability of click. Extremely sparse and high-dimensional input (billions of user/ad IDs) requiring massive embedding tables (TB scale).
+
+## Detailed Analysis
+CTR architectures: (1) DeepFM -- combine linear (FM) and deep (DNN) components for memorization + generalization; (2) DCN-V2 (Google) -- explicit feature crossing via cross layers computing high-order interactions; (3) DLRM (Meta) -- dense features via MLP + sparse features via embedding lookups + feature interaction via dot product; (4) DIN/DIEN (Alibaba) -- attention-based models weighting user behaviors by relevance to target ad. Calibration: predicted CTR must match empirical CTR (Platt scaling, isotonic regression). Delayed feedback: conversions happen hours/days after clicks. Cold-start: new ads and users have no history -- content-based and few-shot adaptation. Post-cookie era (2024-2026): Google deprecated third-party cookies. Alternatives: first-party data, contextual targeting, Privacy Sandbox APIs (FLEDGE/Topics), and cohort-based advertising.
+

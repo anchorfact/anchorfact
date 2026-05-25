@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00413",
+  "headline": "World Literature",
+  "description": "World literature encompasses literary works from all cultures and periods, emphasizing cross-cultural exchange and universal themes. Key works beyond Western canon: The Tale of Genji (Murasaki Shikibu, ~1000, Japan — first novel), One Thousand and One Nights, Epic of Gilgamesh (~2100 BCE, oldest known literature), Mahabharata (India, longest epic poem).",
+  "dateCreated": "2026-05-24T18:00:03.639Z",
+  "dateModified": "2026-05-24T18:00:03.639Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Norton Anthology of World Literature",
+      "sameAs": "https://wwnorton.com/books/9780393602814"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Penguin Classics Book (2025 Updated)",
+      "author": "multiple",
+      "sameAs": "https://www.penguinrandomhouse.com/classics/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Literature: A Very Short Introduction (2025)",
+      "author": "multiple",
+      "sameAs": "https://global.oup.com/vsi-literature/"
+    }
+  ]
+}

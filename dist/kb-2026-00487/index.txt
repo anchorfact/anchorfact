@@ -1,0 +1,30 @@
+# North America Geography
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+
+
+## TL;DR
+
+North America (24.7 million km²) is the 3rd largest continent. 23 countries, ~600 million people. Features: Rocky Mountains, Great Plains, Mississippi River, Great Lakes (largest freshwater system), Grand Canyon, Niagara Falls. Diverse climates: Arctic (north) → temperate → subtropical (south) → tropical (Central America).
+
+## Core Explanation
+
+Rocky Mountains: 4,800 km from Canada to New Mexico. Mississippi-Missouri River: 4th longest globally (5,971 km). Great Lakes: Superior, Michigan, Huron, Erie, Ontario — 21% of world's surface fresh water. Death Valley (CA): hottest place on Earth (56.7°C, 1913). Denali (AK): highest peak (6,190m), vertical rise > Everest. Tornado Alley: central US — most tornadoes globally.
+
+## Further Reading
+
+- [North America: A Geography (Birdsall, Florin, Palka)](https://www.pearson.com/en-us/subject-catalog/p/north-america/P200000009517)
+atomic_facts:
+  - id: "fact-geography-001"
+    statement: "North America (24.7 million km²) is the 3rd largest continent"
+    confidence: "medium"
+  - id: "fact-geography-002"
+    statement: "23 countries, ~600 million people"
+    confidence: "medium"
+  - id: "fact-geography-003"
+    statement: "Great Lakes: Superior, Michigan, Huron, Erie, Ontario — 21% of world's surface fresh water"
+    confidence: "medium"
+

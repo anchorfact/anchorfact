@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-01",
+    "text": "Key events: 1939 Germany invades Poland, 1941 Pearl Harbor + Operation Barbarossa , 1942 Battle of Midway + Stalingrad , 1944 D-Day , 1945 VE Day + atomic bombs + VJ Day",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.antonybeevor.com/books/the-second-world-war/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-02",
+    "text": "World War II was the deadliest conflict in human history, involving over 100 million people from 30+ countries",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.antonybeevor.com/books/the-second-world-war/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-03",
+    "text": "Holocaust: systematic genocide of 6 million Jews",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.antonybeevor.com/books/the-second-world-war/"
+    }
+  }
+]

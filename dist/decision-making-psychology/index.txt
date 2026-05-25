@@ -1,0 +1,18 @@
+# The Psychology of Decision Making
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Human decision making is shaped by cognitive biases — systematic deviations from rationality affecting everything from financial choices to medical diagnoses.
+
+## Core Explanation
+Key biases: anchoring (over-relying on first information), confirmation bias (seeking confirming evidence), availability heuristic (overestimating memorable events), framing effects, sunk cost fallacy.
+
+## Detailed Analysis
+Debiasing strategies: considering the opposite, premortem analysis, decision matrices, structured analytic techniques. The WRAP framework (Widen options, Reality-test assumptions, Attain distance, Prepare to be wrong) provides practical decision-making process.
+
+## Further Reading
+- Kahneman, Lovallo, Sibony: Before You Make That Big Decision (HBR)
+- Decision Science News
+- Center for Decision Research (Chicago Booth)

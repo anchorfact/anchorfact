@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00086>
+  a schema:TechArticle ;
+  schema:headline "Service Workers" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00086>
+  schema:citation <https://w3c.github.io/ServiceWorker/> .

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00500",
+  "headline": "Basketball Rules and Fundamentals",
+  "description": "Basketball is a 5v5 court sport invented in 1891 by Dr. James Naismith. Teams score by shooting ball through opponent's 10ft-high hoop. FIBA governs international play (Olympics, World Cup); NBA is the premier professional league. Key rules: 24-second shot clock (FIBA) / 14-second reset, 8-second backcourt rule, 5 personal fouls (FIBA) / 6 (NBA) per player.",
+  "dateCreated": "2026-05-24T18:00:04.601Z",
+  "dateModified": "2026-05-24T18:00:04.601Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "FIBA Official Basketball Rules 2024",
+      "sameAs": "https://www.fiba.basketball/documents/official-basketball-rules"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "NBA Official Rulebook 2024-25",
+      "sameAs": "https://official.nba.com/rulebook/"
+    }
+  ]
+}

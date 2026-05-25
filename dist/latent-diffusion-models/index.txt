@@ -1,0 +1,18 @@
+# Diffusion Models in Depth: From DDPM to Stable Diffusion
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Diffusion models have replaced GANs as the dominant generative modeling paradigm. By learning to reverse a noise-adding process, they produce state-of-the-art image, video, 3D, and audio generation.
+
+## Core Explanation
+Forward process: gradually add Gaussian noise to data over T steps (no learnable parameters). Reverse process: train neural network to predict noise at each step, then remove it — equivalent to learning the score function (gradient of log probability) via score matching. At inference, start from pure noise and iteratively denoise.
+
+## Detailed Analysis
+Classifier-free guidance scales the difference between conditional and unconditional predictions to control generation-fidelity tradeoff. DDIM enables deterministic sampling in fewer steps. Latent diffusion runs diffusion in a 1/8-resolution latent space. SDXL (2023) scales to 1024×1024 native resolution.
+
+## Further Reading
+- Lilian Weng: What Are Diffusion Models?
+- Hugging Face Diffusers Library
+- Fast.ai: Diffusion Models from Scratch

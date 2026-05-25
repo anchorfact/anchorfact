@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-data-curation>
+  a schema:article ;
+  schema:headline "AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-data-curation>
+  schema:citation <https://github.com/NVIDIA-NeMo/Curator> .
+
+<https://anchorfact.org/kb/ai-for-data-curation>
+  schema:citation <https://arxiv.org/abs/2502.08211> .

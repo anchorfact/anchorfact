@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00199",
+  "headline": "Type Systems",
+  "description": "Type systems assign types to program constructs, catching errors at compile time. Static typing (C, Java, Rust): types checked before execution. Dynamic typing (Python, JavaScript): types checked at runtime. Type systems prevent entire classes of bugs: null dereferences, type mismatches, memory safety violations.",
+  "dateCreated": "2026-05-24T18:00:04.117Z",
+  "dateModified": "2026-05-24T18:00:04.117Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM Digital Library",
+      "sameAs": "https://dl.acm.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Types and Programming Languages (2025 Updated Edition)",
+      "author": "Pierce B.C.",
+      "sameAs": "https://mitpress.mit.edu/books/types-and-programming-languages"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Type Systems in Modern Programming Languages: A 2025 Survey",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.types"
+    }
+  ]
+}

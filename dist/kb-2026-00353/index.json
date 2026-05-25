@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00353",
+  "headline": "Middle Ages",
+  "description": "The Middle Ages (5th-15th centuries) were the period between the fall of the Western Roman Empire and the Renaissance. Often wrongly called 'Dark Ages,' it saw feudalism, manorialism, the rise of Christianity, Gothic cathedrals, universities (Bologna 1088, Oxford 1096), and the Crusades.",
+  "dateCreated": "2026-05-24T18:00:04.428Z",
+  "dateModified": "2026-05-24T18:00:04.428Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "A Distant Mirror: The Calamitous 14th Century (Barbara Tuchman)",
+      "sameAs": "https://www.penguinrandomhouse.com/books/56336/a-distant-mirror-by-barbara-w-tuchman/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Middle Ages: A Very Short Introduction (2025)",
+      "author": "Rubin M.",
+      "sameAs": "https://global.oup.com/vsi-middle-ages/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Medieval Europe (2025 Edition)",
+      "author": "Wickham C.",
+      "sameAs": "https://yalebooks.yale.edu/medieval-europe/"
+    }
+  ]
+}

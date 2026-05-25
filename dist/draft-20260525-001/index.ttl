@@ -1,0 +1,8 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/draft-20260525-001>
+  a schema:Article ;
+  schema:headline "Tokenisation via Convex Relaxations" ;
+  af:confidence "medium" ;
+  af:generationMethod "undefined" .

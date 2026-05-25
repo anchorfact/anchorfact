@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/operating-systems-concepts",
+  "headline": "Operating Systems: Processes, Memory, and File Systems",
+  "description": "Operating systems manage hardware resources and provide abstractions for applications. Process scheduling, memory management, and file systems are the three pillars of OS design.",
+  "dateCreated": "2026-05-24T18:00:03.978Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Operating System Concepts, 10th Edition",
+      "sameAs": "https://www.wiley.com/en-us/Operating+System+Concepts%2C+10th+Edition-p-9781119320913"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Modern Operating Systems, 4th Edition",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/modern-operating-systems/P200000003295"
+    }
+  ]
+}

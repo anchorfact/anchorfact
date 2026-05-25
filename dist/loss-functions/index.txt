@@ -1,0 +1,18 @@
+# Loss Functions in Machine Learning
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Loss functions quantify the difference between model predictions and ground truth, guiding optimization. Cross-entropy dominates classification; MSE dominates regression; specialized losses handle imbalanced, structured, or adversarial tasks.
+
+## Core Explanation
+MSE (mean squared error) penalizes large errors quadratically — sensitive to outliers. MAE (mean absolute error) is more robust but has non-differentiable points. Huber loss combines both. For generative models, GAN losses (adversarial, Wasserstein) and diffusion losses (noise prediction) require task-specific formulations.
+
+## Detailed Analysis
+Triplet loss (FaceNet, Schroff et al., 2015) learns embeddings by ensuring anchor-positive distance is less than anchor-negative by a margin. CTC loss (Connectionist Temporal Classification) handles sequence alignment without explicit segmentation — fundamental to speech recognition.
+
+## Further Reading
+- PyTorch Loss Functions Documentation
+- Papers With Code: Loss Functions
+- Keras: Losses Guide

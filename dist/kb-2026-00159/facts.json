@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "An API Gateway is a single entry point for all client requests to a microservices architecture. It handles cross-cutting concerns: authentication, rate limiting, request routing, protocol translation, caching, logging, and API composition.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://docs.konghq.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "Service Mesh: gateway handles north-south traffic (client→server); service mesh handles east-west (service→service).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://docs.konghq.com/"
+    }
+  }
+]

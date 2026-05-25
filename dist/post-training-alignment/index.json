@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/post-training-alignment",
+  "headline": "Post-Training Alignment: DPO, GRPO, and Beyond",
+  "description": "Post-training alignment makes base models useful and safe. DPO simplified RLHF by removing the reward model; GRPO enabled DeepSeek-R1's reasoning breakthrough. The alignment pipeline (SFT→DPO/RL→reasoning) is now standard across the industry.",
+  "dateCreated": "2026-05-24T18:00:03.460Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+      "sameAs": "https://arxiv.org/abs/2305.18290"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "DeepSeek-R1 Technical Report",
+      "sameAs": "https://arxiv.org/abs/2501.12948"
+    }
+  ]
+}

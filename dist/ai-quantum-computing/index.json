@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-quantum-computing",
+  "headline": "AI for Quantum Computing: Quantum Error Correction, Circuit Optimization, and Algorithm Discovery",
+  "description": "AI and quantum computing form a symbiosis: AI optimizes quantum circuits and corrects qubit errors, while quantum computers may eventually accelerate certain ML computations. DeepMind's AlphaQubit uses RL for quantum error correction -- a critical capability for building fault-tolerant quantum computers.",
+  "dateCreated": "2026-05-24T18:00:03.125Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AlphaQubit: Reinforcement Learning for Quantum Error Correction Decoding (DeepMind, 2024)",
+      "sameAs": "https://www.nature.com/articles/s41586-024-07985-x"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Quantum Machine Learning: A Survey of Algorithms, Applications, and the Path to Practical Quantum Advantage",
+      "sameAs": "https://arxiv.org/search/?query=quantum+machine+learning+survey+2025"
+    }
+  ]
+}

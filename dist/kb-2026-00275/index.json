@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00275",
+  "headline": "Computer Vision",
+  "description": "Computer Vision enables machines to extract meaning from visual data. Key tasks: image classification (what is this?), object detection (where is it? + bounding box), segmentation (pixel-level labeling), pose estimation, depth estimation, 3D reconstruction. Deep learning (CNN, ViT) dominates since 2012.",
+  "dateCreated": "2026-05-24T18:00:03.254Z",
+  "dateModified": "2026-05-24T18:00:03.254Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Computer Vision: Algorithms and Applications (2nd Ed)",
+      "author": "Szeliski, Richard",
+      "sameAs": "https://szeliski.org/Book/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "ImageNet Classification with Deep Convolutional Neural Networks (AlexNet)",
+      "author": "Krizhevsky, Sutskever, Hinton",
+      "sameAs": "https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-01",
+    "text": "Gamma rays: nuclear processes, cancer treatment, most energetic",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.cambridge.org/highereducation/books/introduction-to-electrodynamics/3EDC2A247A70E2F72D685535D315EB68"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-001",
+    "text": "The electromagnetic spectrum encompasses all types of EM radiation, ordered by wavelength/frequency: radio (longest), microwave, infrared, visible light (400-700nm), ultraviolet, X-ray, gamma ray (shortest). All travel at speed of light (c = 299,792,458 m/s). Maxwell's equations (1865) unified electricity, magnetism, and light.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.cambridge.org/highereducation/books/introduction-to-electrodynamics/3EDC2A247A70E2F72D685535D315EB68"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-002",
+    "text": "Gamma rays: nuclear processes, cancer treatment, most energetic.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.cambridge.org/highereducation/books/introduction-to-electrodynamics/3EDC2A247A70E2F72D685535D315EB68"
+    }
+  }
+]

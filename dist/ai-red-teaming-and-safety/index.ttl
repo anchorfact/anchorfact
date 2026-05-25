@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-red-teaming-and-safety>
+  a schema:TechArticle ;
+  schema:headline "AI Red Teaming: Security Testing for Language Models" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-red-teaming-and-safety>
+  schema:citation <https://learn.microsoft.com/en-us/azure/foundry/concepts/ai-red-teaming-agent> .
+
+<https://anchorfact.org/kb/ai-red-teaming-and-safety>
+  schema:citation <https://owasp.org/www-project-top-10-for-large-language-model-applications/> .

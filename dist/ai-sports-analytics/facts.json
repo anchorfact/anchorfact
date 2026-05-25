@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-sports-analytics-1",
+    "text": "AI sports analytics (2023-2026) uses computer vision for player and ball tracking (pose estimation + multi-object tracking across multi-camera setups), generating spatio-temporal data at 25Hz. Deep learning models predict: expected goals (xG -- shot quality from angle, distance, defender positions), pass completion probability, player fatigue (workload from tracking), and injury risk (movement pattern deviations preceding injury by 1-3 weeks).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/search/?query=sports+analytics+computer+vision+tracking"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-sports-analytics-2",
+    "text": "Reinforcement learning for tactical optimization: Liverpool FC (2022-2024, in partnership with DeepMind) deployed an RL-based system analyzing opponent patterns and recommending counter-tactics (pressing triggers, defensive line height, set-piece positioning). MLB Statcast (2025) uses AI to quantify defensive positioning (OAA -- Outs Above Average) and pitcher-batter matchup optimization. NBA Second Spectrum tracks player and ball at 25Hz with pose data across all 30 arenas.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/search/?query=reinforcement+learning+sports+tactics"
+    }
+  }
+]

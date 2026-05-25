@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00509>
+  a schema:TechArticle ;
+  schema:headline "Habit Stacking and Behavior Design" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00509>
+  schema:citation <https://jamesclear.com/atomic-habits> .
+
+<https://anchorfact.org/kb/kb-2026-00509>
+  schema:citation <https://www.hmhco.com/shop/books/tiny-habits/9780358362777> .

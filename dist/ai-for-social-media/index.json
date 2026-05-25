@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-social-media",
+  "headline": "AI for Social Media: Misinformation Detection, Hate Speech Moderation, and Content Safety",
+  "description": "Social media platforms process billions of posts daily — more than any human moderation team could review. AI detects hate speech, misinformation, harassment, and harmful content at scale, but faces fundamental challenges: context understanding, cultural nuance, and bias. The frontier is explainable, fair, and context-aware moderation that protects users without over-censoring legitimate speech.",
+  "dateCreated": "2026-05-24T18:00:03.039Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Decoding Fake News and Hate Speech: A Survey of Explainable AI Techniques for Social Media Moderation",
+      "sameAs": "https://dl.acm.org/doi/full/10.1145/3711123"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Measuring context sensitivity in artificial intelligence-based content moderation systems",
+      "sameAs": "https://www.nature.com/articles/s41562-025-02363-7"
+    }
+  ]
+}

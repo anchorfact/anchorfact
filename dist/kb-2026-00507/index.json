@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00507",
+  "headline": "Building Mental Resilience",
+  "description": "Mental resilience is a learnable skill — not an innate trait. Core pillars: growth mindset (abilities develop with effort), optimism (realistic not naive), social connection (support network), purpose (meaning beyond self), adaptability (cognitive flexibility). Key practices: reframe challenges as opportunities, maintain perspective during setbacks, build incrementally through small wins.",
+  "dateCreated": "2026-05-24T18:00:04.594Z",
+  "dateModified": "2026-05-24T18:00:04.594Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Mindset: The New Psychology of Success (Carol Dweck)",
+      "sameAs": "https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck-phd/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Grit: The Power of Passion and Perseverance (Angela Duckworth)",
+      "sameAs": "https://www.simonandschuster.com/books/Grit/Angela-Duckworth/9781501111112"
+    }
+  ]
+}

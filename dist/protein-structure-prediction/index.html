@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Protein Structure Prediction: AlphaFold, RoseTTAFold, and AI-Driven Structural Biology — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Protein structure prediction has been transformed by AI — from AlphaFold2's historic 2020 breakthrough predicting static 3D structures to current frontiers: simulating protein dynamics, predicting multi-protein complexes, and designing entirely new proteins with specified functions. The 2024 Nobel Prize in Chemistry recognized this revolution, but fundamental challenges remain.<br>
+<br>
+## Core Explanation<br>
+The protein folding problem: given an amino acid sequence (1D string), predict the 3D folded structure. Proteins fold in milliseconds in cells; experimentally determining structures via X-ray crystallography, cryo-EM, or NMR takes months to years per protein. AI approach: (1) Multiple Sequence Alignment (MSA) — find evolutionarily related sequences, extract co-evolution signals (residue pairs that mutate together are likely near each other in 3D); (2) Pair representation — encode pairwise relationships between all residue pairs; (3) Structure module — iteratively refine 3D coordinates using invariant point attention (IPA), respecting roto-translational equivariance. AlphaFold2 (Jumper et al., Nature 2021) achieved median GDT_TS of 92.4 on CASP14 — considered a solution to the single-chain protein folding problem.<br>
+<br>
+## Detailed Analysis<br>
+Key models: (1) AlphaFold2 (DeepMind, 2020-2021) — MSA + Evoformer + Structure Module. Trained on PDB (180K structures). Open-sourced, with 200M+ predictions in the AlphaFold Database; (2) RoseTTAFold (Baker Lab, 2021) — three-track architecture processing 1D sequence, 2D distance, and 3D coordinates simultaneously; (3) ESMFold (Meta, 2022) — uses language model embeddings instead of MSAs, enabling 60x faster inference at slightly lower accuracy; (4) AlphaFold-Multimer (2022) — extends to protein-protein complexes; (5) AlphaFold3 (2024) — diffusion-based architecture predicting complexes including proteins, DNA, RNA, ligands, and ions. Nature 2026 commentary identifies the conformational landscape problem: proteins are dynamic, not static — they sample multiple conformations essential for function (enzyme open/closed states, transporter inward/outward-facing). Current AI predicts one static structure, missing the ensemble. Frontier 1: predicting full energy landscapes and transition pathways. Frontier 2: de novo protein design — RFdiffusion (Baker Lab, 2023) generates novel protein backbones via diffusion models, then ProteinMPNN designs sequences folding into those backbones. This enables designing proteins that don't exist in nature — enzymes for plastic degradation, carbon capture, or targeted therapeutics.<br>
+<br>
+## Further Reading<br>
+- AlphaFold Database: 200M+ predicted structures (EMBL-EBI)<br>
+- RFdiffusion: Diffusion models for protein backbone generation<br>
+- CASP: Critical Assessment of Structure Prediction (biennial)<br>
+</article></body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/epidemiology-fundamentals",
+  "headline": "Epidemiology: The Science of Public Health",
+  "description": "Epidemiology is the cornerstone of public health — the systematic study of disease distribution, determinants, and control in populations.",
+  "dateCreated": "2026-05-24T18:00:04.333Z",
+  "dateModified": "2026-05-24T18:00:04.333Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Principles of Epidemiology in Public Health Practice, 3rd Ed",
+      "sameAs": "https://www.cdc.gov/training-publichealth101/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Basic Epidemiology, 2nd Edition",
+      "sameAs": "https://www.who.int/publications/i/item/9241547073"
+    }
+  ]
+}

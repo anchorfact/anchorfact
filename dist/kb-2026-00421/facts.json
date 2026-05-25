@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-01",
+    "text": "Compound lifts are most efficient",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://aasgaardco.com/store/books-posters-dvd/practical-programming-for-strength-training/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-02",
+    "text": "Linear progression: add 2.5-5kg each session",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://aasgaardco.com/store/books-posters-dvd/practical-programming-for-strength-training/"
+    }
+  }
+]

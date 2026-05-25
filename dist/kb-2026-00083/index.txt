@@ -1,0 +1,21 @@
+# Server-Sent Events (SSE)
+Confidence: high
+Last verified: 2026-05-22
+Generation: human_only
+
+
+
+
+
+## TL;DR
+
+Server-Sent Events (SSE) is a standard enabling servers to push real-time updates to browsers over a single HTTP connection. Unlike WebSocket's bidirectional communication, SSE is unidirectional (server-to-client only) but simpler to implement — using standard HTTP and automatic reconnection.
+
+## Core Explanation
+
+SSE uses the `EventSource` JavaScript API. The server sends data with `Content-Type: text/event-stream` and `data:`-prefixed lines. Built-in features include: automatic reconnection with Last-Event-ID, custom event types, and simple server implementation (no protocol upgrade). SSE is ideal for live feeds, notifications, and dashboards where client-to-server communication is handled separately via regular HTTP.
+
+## Further Reading
+
+- [Server-Sent Events (W3C Recommendation)](https://html.spec.whatwg.org/multipage/server-sent-events.html)
+

@@ -1,0 +1,45 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00015",
+  "headline": "SQL (Structured Query Language)",
+  "description": "SQL (Structured Query Language) is the standard programming language for managing relational databases. Designed by Donald D. Chamberlin and Raymond F. Boyce at IBM in 1974 and standardized by ANSI in 1986 and ISO in 1987, SQL remains — over 50 years later — the dominant database query language, used by virtually every application that stores structured data. PostgreSQL, MySQL, SQLite, Oracle, and SQL Server collectively power the majority of the world's transactional data systems.",
+  "dateCreated": "2026-05-24T18:00:04.084Z",
+  "dateModified": "2026-05-24T18:00:04.084Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ISO/IEC 9075:2023 — SQL Standard",
+      "sameAs": "https://doi.org/undefined"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "PostgreSQL 17 Documentation",
+      "sameAs": "https://www.postgresql.org/docs/17/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Learning SQL (4th Edition, 2025)",
+      "author": "Beaulieu A.",
+      "sameAs": "https://www.oreilly.com/sql/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "SQL in the Age of LLMs: Query Generation and Optimization (2025)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.sql"
+    }
+  ]
+}

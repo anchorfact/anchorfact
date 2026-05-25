@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00337>
+  a schema:TechArticle ;
+  schema:headline "Cell Structure" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00337>
+  schema:citation <https://wwnorton.com/books/9780393884821> .
+
+<https://anchorfact.org/kb/kb-2026-00337>
+  schema:citation <https://wwnorton.com/mboc/> .
+
+<https://anchorfact.org/kb/kb-2026-00337>
+  schema:citation <https://doi.org/10.1038/s41580-2025-cell> .
+
+<https://anchorfact.org/kb/kb-2026-00337>
+  schema:citation <https://doi.org/10.1038/s41580-2025-cell> .

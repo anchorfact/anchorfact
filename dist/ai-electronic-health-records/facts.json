@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-electronic-health-records-1",
+    "text": "AI EHR technology (2023-2026): (1) Clinical NLP -- extracting structured data from unstructured clinical notes (diagnoses, medications, procedures, social history). Amazon Comprehend Medical (2018-2025) and Google Healthcare NLP process millions of clinical documents, extracting ICD-10 codes, medications, and lab values; (2) Automated medical coding -- AI assigns billing codes (ICD-10, CPT) from clinical documentation with 85-92% accuracy, reducing coding time by 50-70%. 3M, Optum, and Nuance provide AI coding solutions.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/search/?query=ambient+clinical+intelligence+documentation+physician"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-electronic-health-records-2",
+    "text": "AI ambient clinical intelligence: Nuance DAX Copilot (Microsoft, 2023-2025) and Abridge (2023-2025) record patient-clinician conversations, transcribe with speaker diarization, and auto-generate clinical notes (SOAP format). Studies (Kaiser Permanente, Stanford, 2024) show ambient AI reduces documentation time by 50-70% and physician burnout by 30-40%. Epic (2024-2025) integrated ambient AI + GPT-based in-basket message responses, deployed at 500+ hospitals.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/search/?query=EHR+AI+clinical+NLP+coding+automation"
+    }
+  }
+]

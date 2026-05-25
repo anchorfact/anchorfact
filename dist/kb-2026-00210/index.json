@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00210",
+  "headline": "Digital Marketing Fundamentals",
+  "description": "Digital marketing promotes products/services via online channels: search engines (SEO/SEM), social media, email, content marketing, paid ads (PPC). Foundation: understand target audience, create valuable content, measure with analytics, iterate. The customer journey: Awareness → Consideration → Conversion → Loyalty.",
+  "dateCreated": "2026-05-24T18:00:03.653Z",
+  "dateModified": "2026-05-24T18:00:03.653Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Harvard Business Review",
+      "sameAs": "https://hbr.org/"
+    }
+  ]
+}

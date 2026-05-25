@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/shader-programming",
+  "headline": "Shader Programming Fundamentals",
+  "description": "Shaders are GPU programs that define how 3D geometry transforms into screen pixels. Vertex shaders position geometry; fragment shaders color each pixel. Modern real-time rendering relies entirely on custom shaders for lighting, materials, and effects.",
+  "dateCreated": "2026-05-24T18:00:04.259Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Real-Time Rendering, 4th Edition",
+      "sameAs": "https://www.realtimerendering.com/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "OpenGL Shading Language Specification",
+      "sameAs": "https://registry.khronos.org/OpenGL/specs/gl/GLSLangSpec.4.60.pdf"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Book of Shaders",
+      "sameAs": "https://thebookofshaders.com/"
+    }
+  ]
+}

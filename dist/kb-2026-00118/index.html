@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>DDoS Attack — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+<br>
+A Distributed Denial-of-Service (DDoS) attack overwhelms a target with traffic from multiple sources, making it unavailable to legitimate users. Types: volumetric (saturate bandwidth), protocol (exploit TCP/SYN, DNS amplification), application-layer (HTTP flood, Slowloris). Defense: CDN scrubbing (Cloudflare, Akamai), rate limiting, anycast distribution.<br>
+<br>
+## Core Explanation<br>
+<br>
+SYN flood: attacker sends TCP SYN packets but never completes handshake, exhausting server's connection table. DNS amplification: attacker spoofs victim's IP, sends small queries to open DNS resolvers that reply with large responses. Mitigation: SYN cookies, connection rate limiting, IP reputation filtering. Cloud providers (AWS Shield, Google Cloud Armor) provide built-in DDoS protection.<br>
+<br>
+## Further Reading<br>
+<br>
+- </article></body>
+</html>

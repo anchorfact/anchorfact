@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00131",
+  "headline": "Graph & BFS/DFS",
+  "description": "A graph G=(V,E) models networks. BFS (queue) finds shortest paths in unweighted graphs. DFS (stack/recursion) detects cycles, performs topological sort on DAGs. Both are O(V+E).",
+  "dateCreated": "2026-05-24T18:00:03.865Z",
+  "dateModified": "2026-05-24T18:00:03.865Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM Digital Library",
+      "sameAs": "https://dl.acm.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Algorithms (5th Edition, 2025)",
+      "author": "Sedgewick R., Wayne K.",
+      "sameAs": "https://algs4.cs.princeton.edu/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Graph Algorithms: BFS, DFS, and Parallel Processing (2025 Survey)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.graphalgo"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00402>
+  a schema:TechArticle ;
+  schema:headline "Reformation" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00402>
+  schema:citation <https://www.penguinrandomhouse.com/books/261409/the-reformation-by-diarmaid-macculloch/> .
+
+<https://anchorfact.org/kb/kb-2026-00402>
+  schema:citation <https://global.oup.com/vsi-reformation/> .
+
+<https://anchorfact.org/kb/kb-2026-00402>
+  schema:citation <https://www.penguinrandomhouse.com/reformation/> .

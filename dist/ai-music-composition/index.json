@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-music-composition",
+  "headline": "AI Music Composition: Generative Music, Style Imitation, and Creative AI Audio",
+  "description": "AI composes music -- from text descriptions (\"upbeat pop song about summer love\") to complete radio-quality tracks with vocals and instrumentation. Suno AI, Udio, and AIVA challenge the definition of musical creativity, while professional tools like Magenta and Splice augment human composers.",
+  "dateCreated": "2026-05-24T18:00:03.107Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Generative AI for Music Composition: Text-to-Music, Style Transfer, and Creative Audio Synthesis (2024-2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=generative+music+AI+text+to+music"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Deep Learning for Music Generation: Autoregressive, Diffusion, and GAN Approaches from Jukebox to Suno",
+      "sameAs": "https://arxiv.org/search/?query=music+generation+deep+learning+diffusion"
+    }
+  ]
+}

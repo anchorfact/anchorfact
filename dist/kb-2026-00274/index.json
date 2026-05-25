@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00274",
+  "headline": "Natural Language Processing (NLP)",
+  "description": "NLP enables computers to understand, interpret, and generate human language. Tasks: text classification, named entity recognition (NER), machine translation, summarization, question answering, sentiment analysis. Before Transformers (2017): rule-based → statistical → neural (RNN/LSTM). After Transformers: pre-trained language models dominate.",
+  "dateCreated": "2026-05-24T18:00:03.432Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "author": "Devlin, Jacob, Chang, Ming-Wei, Lee, Kenton, Toutanova, Kristina",
+      "sameAs": "https://arxiv.org/abs/1810.04805"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Attention Is All You Need (Transformer)",
+      "author": "Vaswani, Ashish, Shazeer, Noam, Parmar, Niki, et al.",
+      "sameAs": "https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Speech and Language Processing (Jurafsky & Martin, 3rd Edition)",
+      "author": "Jurafsky, Daniel, Martin, James H.",
+      "sameAs": "https://web.stanford.edu/~jurafsky/slp3/"
+    }
+  ]
+}

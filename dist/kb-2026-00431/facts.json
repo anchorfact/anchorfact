@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-business-01",
+    "text": "The Marketing Mix is the set of controllable marketing tools: Product , Price , Place , Promotion",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/principles-of-marketing/P200000009556"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-business-001",
+    "text": "The Marketing Mix (4Ps, McCarthy 1960) is the set of controllable marketing tools: Product (what solves customer's need), Price (value exchange), Place (distribution channels), Promotion (communication). Extended 7Ps adds People, Process, Physical Evidence (for services). All must align for effective strategy.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/principles-of-marketing/P200000009556"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-business-002",
+    "text": "STP: Segmentation (divide market) → Targeting (choose segments) → Positioning (create image).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/principles-of-marketing/P200000009556"
+    }
+  }
+]

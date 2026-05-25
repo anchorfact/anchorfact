@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-workplace-safety",
+  "headline": "AI for Workplace Safety: Computer Vision Monitoring, Fall Detection, and Hazard Prevention",
+  "description": "AI workplace safety uses computer vision to monitor PPE compliance, detect falls, and identify hazards in real-time. From Amazon warehouses to construction sites, AI safety systems reduce workplace incidents by 25-40% by catching risks that human safety monitors miss.",
+  "dateCreated": "2026-05-24T18:00:03.212Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Computer Vision for Workplace Safety: PPE Detection, Hazard Monitoring, and Ergonomic Assessment (2024 Comprehensive Survey)",
+      "sameAs": "https://www.sciencedirect.com/journal/safety-science"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Predictive Safety Analytics: Machine Learning for Near-Miss Analysis and Injury Prevention",
+      "sameAs": "https://www.sciencedirect.com/journal/journal-of-safety-research"
+    }
+  ]
+}

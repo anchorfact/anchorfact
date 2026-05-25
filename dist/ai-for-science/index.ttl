@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-science>
+  a schema:TechArticle ;
+  schema:headline "AI for Science: AlphaFold and the AI-Driven Discovery Revolution" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-science>
+  schema:citation <https://www.nature.com/articles/s41586-024-07487-w> .
+
+<https://anchorfact.org/kb/ai-for-science>
+  schema:citation <https://arxiv.org/abs/2405.12213> .

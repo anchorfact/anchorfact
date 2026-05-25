@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-001",
+    "text": "Arctic: ocean surrounded by continents, floating sea ice, indigenous peoples, polar bears.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.bradtguides.com/product/the-arctic/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-002",
+    "text": "Antarctic: continent surrounded by ocean, ice sheet (70% of Earth's freshwater), no permanent residents, penguins.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nationalgeographic.com/books/atlas/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-003",
+    "text": "Antarctic Treaty (1959): continent dedicated to peace and science.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.bradtguides.com/product/the-arctic/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-004",
+    "text": "Permafrost: frozen soil storing 1,500 Gt carbon — thaw releases CO₂/CH₄.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.bradtguides.com/product/the-arctic/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-005",
+    "text": "Antarctic ice sheet: 58m sea level equivalent if fully melted.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.bradtguides.com/product/the-arctic/"
+    }
+  }
+]

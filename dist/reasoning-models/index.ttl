@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/reasoning-models>
+  a schema:TechArticle ;
+  schema:headline "AI Reasoning Models: OpenAI o1/o3 and DeepSeek-R1" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/reasoning-models>
+  schema:citation <https://openai.com/index/learning-to-reason-with-llms/> .
+
+<https://anchorfact.org/kb/reasoning-models>
+  schema:citation <https://arxiv.org/abs/2501.12948> .

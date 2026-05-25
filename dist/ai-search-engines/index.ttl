@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-search-engines>
+  a schema:TechArticle ;
+  schema:headline "AI-Powered Search: Perplexity, Google AI Overviews, and the Future" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-search-engines>
+  schema:citation <https://www.perplexity.ai/hub/technical-faq> .
+
+<https://anchorfact.org/kb/ai-search-engines>
+  schema:citation <https://blog.google/products/search/generative-ai-search/> .

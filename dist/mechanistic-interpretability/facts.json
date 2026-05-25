@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-mechanistic-interpretability-1",
+    "text": "A comprehensive review (Bereska & Gavves, arxiv 2404.14082, 2024) established the foundations of mechanistic interpretability — defining features as human-interpretable directions in activation space, circuits as subnetworks computing specific functions, and superposition as the compression of more features than dimensions — and surveying automated circuit discovery and sparse autoencoder-based feature disentanglement as the primary tools for reverse-engineering neural networks at scale.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2404.14082"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-mechanistic-interpretability-2",
+    "text": "MIT Technology Review named mechanistic interpretability a 2026 Breakthrough Technology, recognizing that the ability to locate specific concepts (truth, sycophancy, deception) inside LLM activations using sparse autoencoders enables targeted model editing — removing undesirable behaviors without retraining — with Anthropic, DeepMind, and academic labs scaling interpretability to frontier models with billions of parameters.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/doi/10.1145/3787104"
+    }
+  }
+]

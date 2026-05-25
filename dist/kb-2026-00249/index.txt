@@ -1,0 +1,21 @@
+# Data Warehousing
+Confidence: high
+Last verified: 2026-05-22
+Generation: human_only
+
+
+
+
+
+## TL;DR
+
+A data warehouse is a centralized repository optimized for analytical queries (OLAP) rather than transactional operations (OLTP). Kimball methodology: star schema (fact tables + dimension tables). ETL (Extract-Transform-Load) pipelines populate the warehouse from operational systems. Columnar storage (Parquet, ORC) optimizes for analytics.
+
+## Core Explanation
+
+Star schema: central fact table (sales transactions) surrounded by dimension tables (date, product, customer). Slowly Changing Dimensions (SCD): how to handle historical changes (Type 1: overwrite, Type 2: add new row). Modern stack: Snowflake, BigQuery, Redshift (cloud-native). Data Lake: store raw data first (S3), transform later (ELT) — Databricks + Delta Lake.
+
+## Further Reading
+
+- [The Data Warehouse Toolkit (3rd Ed, Kimball & Ross)](undefined)
+

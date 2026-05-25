@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00145",
+  "headline": "Decorator Pattern",
+  "description": "Attaches additional responsibilities dynamically, providing flexible alternative to subclassing. Decorators conform to the same interface, enabling transparent stacking.",
+  "dateCreated": "2026-05-24T18:00:03.796Z",
+  "dateModified": "2026-05-24T18:00:03.796Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM Digital Library",
+      "sameAs": "https://dl.acm.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Design Patterns in Modern Software: A 2025 Practitioner's Guide",
+      "author": "multiple",
+      "sameAs": "https://www.informit.com/design-patterns/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Structural Design Patterns: A 2025 Systematic Review",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.structural"
+    }
+  ]
+}

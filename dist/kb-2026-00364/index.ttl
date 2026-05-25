@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00364>
+  a schema:TechArticle ;
+  schema:headline "Neuroscience of Sleep" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00364>
+  schema:citation <https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325> .

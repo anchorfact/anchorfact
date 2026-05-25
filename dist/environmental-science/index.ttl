@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/environmental-science>
+  a schema:Article ;
+  schema:headline "Environmental Science: Ecosystems and Global Change" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/environmental-science>
+  schema:citation <https://www.ipcc.ch/report/ar6/syr/> .
+
+<https://anchorfact.org/kb/environmental-science>
+  schema:citation <https://www.cengage.com/c/living-in-the-environment-20e-miller-spoolman/9780357142202/> .

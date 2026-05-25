@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/state-space-models>
+  a schema:article ;
+  schema:headline "State Space Models: Mamba, Linear-Time Sequence Modeling, and Alternatives to Transformers" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/state-space-models>
+  schema:citation <https://arxiv.org/abs/2312.00752> .
+
+<https://anchorfact.org/kb/state-space-models>
+  schema:citation <https://arxiv.org/abs/2405.21060> .

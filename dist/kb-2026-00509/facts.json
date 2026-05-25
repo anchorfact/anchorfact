@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-si-022",
+    "text": "Habit stacking (BJ Fogg, 'Tiny Habits'): anchor new habits to existing behaviors using formula 'After [current habit], I will [new habit].' Example: After brushing teeth, I will floss one tooth",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.hmhco.com/shop/books/tiny-habits/9780358362777"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-si-023",
+    "text": "James Clear's 4 Laws of Behavior Change (Atomic Habits, 2018): 1) Make it Obvious (cue), 2) Make it Attractive (craving), 3) Make it Easy (response), 4) Make it Satisfying (reward). Inversion for breaking bad habits: make invisible, unattractive, difficult, unsatisfying",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://jamesclear.com/atomic-habits"
+    }
+  }
+]

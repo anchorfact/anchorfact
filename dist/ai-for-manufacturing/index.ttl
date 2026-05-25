@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-manufacturing>
+  a schema:article ;
+  schema:headline "AI for Manufacturing: Predictive Maintenance, Quality Control, and Digital Twins" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-manufacturing>
+  schema:citation <https://www.mdpi.com/2673-4052/6/3/37> .
+
+<https://anchorfact.org/kb/ai-for-manufacturing>
+  schema:citation <https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1655470/full> .

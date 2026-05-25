@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/nutrition-science",
+  "headline": "Nutrition Science: Macronutrients, Micronutrients, and Diet",
+  "description": "Nutrition science studies how food components affect human health. The balance of macronutrients (carbs, proteins, fats) and adequacy of micronutrients (vitamins, minerals) determine physiological function and disease risk.",
+  "dateCreated": "2026-05-24T18:00:04.352Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Understanding Nutrition, 16th Edition (Whitney & Rolfes)",
+      "sameAs": "https://www.cengage.com/c/understanding-nutrition-16e-whitney/9780357447628/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "WHO Healthy Diet Fact Sheet",
+      "sameAs": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+    }
+  ]
+}

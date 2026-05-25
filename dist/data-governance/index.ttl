@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/data-governance>
+  a schema:article ;
+  schema:headline "AI Data Governance: Metadata Management, Data Catalogs, and AI-Ready Data Quality" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/data-governance>
+  schema:citation <https://datahub.com/> .
+
+<https://anchorfact.org/kb/data-governance>
+  schema:citation <https://eur-lex.europa.eu/eli/reg/2024/1689> .

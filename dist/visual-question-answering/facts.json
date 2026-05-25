@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-visual-question-answering-1",
+    "text": "ACM Computing Surveys (2025) published a comprehensive review of VQA methods — tracing the evolution from CNN+LSTM architectures (2015-2018) to transformer-based vision-language models (ViLBERT, LXMERT, 2019-2021) to large multimodal models (GPT-4V, LLaVA, 2023-present) — finding that current LLM-based VQA systems achieve 82-88% accuracy on VQA v2 but only 45-55% on visual reasoning benchmarks (GQA, NLVR2) requiring compositional reasoning, spatial relationships, and counting.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/doi/full/10.1145/3728635"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-visual-question-answering-2",
+    "text": "ScienceDirect Neurocomputing (2025) and IEEE (2025) established VQA as a core multimodal AI benchmark — covering four question types: object recognition (\"what animal?\"), spatial reasoning (\"is the cup to the left of the plate?\"), counting (\"how many people?\"), and commonsense reasoning (\"why is the person running?\") — with the frontier being VoQA (Visual-only QA) where models must answer questions purely from visual input without language in the training loop.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S0925231225000177"
+    }
+  }
+]

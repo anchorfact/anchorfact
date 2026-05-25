@@ -1,0 +1,21 @@
+# Active Listening
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+
+Active listening is fully concentrating on, understanding, and responding to what someone is saying — not just waiting for your turn to speak. Techniques: paraphrase ('What I'm hearing is...'), ask open questions, reflect feelings, avoid interrupting, use non-verbal cues (nodding, eye contact).
+
+## Core Explanation
+
+Levels of listening: ignoring, pretending, selective, attentive, empathic (Covey). Empathic listening: understand their frame of reference — 'Seek first to understand, then to be understood.' Reflective listening: mirror back content and emotion. Don't: formulate response while they speak, one-up, judge, advise prematurely. Silence: allows speaker to process — resist urge to fill it.
+
+## Further Reading
+
+- [Crucial Conversations (Patterson, Grenny, McMillan, Switzler)](https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html)
+atomic_facts:
+  - id: "fact-self-improvement-001"
+    statement: "Active listening is fully concentrating on, understanding, and responding to what someone is saying — not just waiting for your turn to speak"
+    confidence: "medium"
+

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-warehouse-robotics",
+  "headline": "AI for Warehouse Robotics: Autonomous Forklifts, Bin-Picking, and Fulfillment Automation",
+  "description": "AI robots run the world's warehouses -- 750,000+ at Amazon alone, moving goods, picking orders, and sorting packages. From autonomous forklifts to AI-powered bin-picking arms, warehouse robotics transforms fulfillment from labor-intensive to lights-out automation.",
+  "dateCreated": "2026-05-24T18:00:03.208Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AI and Robotics for Warehouse Automation: Autonomous Mobile Robots, Bin-Picking, and Fulfillment Optimization (2024-2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=warehouse+robotics+AI+bin+picking+AMR"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Computer Vision for Robotic Grasping in Logistics: Object Detection, Pose Estimation, and Grasp Planning in Unstructured Environments",
+      "sameAs": "https://arxiv.org/search/?query=robotic+grasping+warehouse+computer+vision"
+    }
+  ]
+}

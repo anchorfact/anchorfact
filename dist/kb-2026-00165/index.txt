@@ -1,0 +1,21 @@
+# Prometheus
+Confidence: high
+Last verified: 2026-05-22
+Generation: human_only
+
+
+
+
+
+## TL;DR
+
+Prometheus is the de facto open-source monitoring and alerting system, graduated from CNCF. It scrapes metrics from instrumented targets via HTTP, stores time-series data locally, and provides a powerful query language (PromQL). Paired with Grafana for visualization and Alertmanager for notifications.
+
+## Core Explanation
+
+Pull-based model: Prometheus server scrapes targets at intervals (15s default). Instrumentation: client libraries expose /metrics endpoint. PromQL: `rate(http_requests_total[5m])`, `histogram_quantile(0.99, ...)`. Service discovery auto-detects targets (Kubernetes, Consul, EC2). Limitations: single-node, not suitable for long-term storage (use Thanos/Cortex for that).
+
+## Further Reading
+
+- [Prometheus Documentation](https://prometheus.io/docs/)
+

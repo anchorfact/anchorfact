@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-genomics",
+  "headline": "AI for Genomics: Single-Cell Foundation Models and RNA Biology",
+  "description": "AI foundation models trained on massive genomic datasets — from single-cell RNA sequencing of millions of cells to full RNA transcriptomes — are revolutionizing genomics. These models learn universal biological representations, enabling zero-shot cell typing, perturbation prediction, and de novo RNA design that were previously impossible without labor-intensive experiments.",
+  "dateCreated": "2026-05-24T18:00:02.971Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Single-cell foundation models: bringing artificial intelligence to single-cell biology",
+      "sameAs": "https://www.nature.com/articles/s12276-025-01547-5"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "AI foundation models for RNA biology",
+      "sameAs": "https://www.tandfonline.com/doi/full/10.1080/15476286.2026.2650517"
+    }
+  ]
+}

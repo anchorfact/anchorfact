@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/edge-ai-and-tinyml>
+  a schema:TechArticle ;
+  schema:headline "Edge AI and TinyML: Intelligence at the Edge" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/edge-ai-and-tinyml>
+  schema:citation <https://www.oreilly.com/library/view/tinyml/9781492052036/> .
+
+<https://anchorfact.org/kb/edge-ai-and-tinyml>
+  schema:citation <https://arxiv.org/abs/1704.04861> .

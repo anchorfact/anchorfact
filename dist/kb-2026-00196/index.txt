@@ -1,0 +1,16 @@
+# Automata Theory
+Confidence: high
+Last verified: 2026-05-24
+Generation: human_only
+
+## TL;DR
+
+Automata theory studies abstract machines and the problems they can solve. Finite automata (regular languages) → Pushdown automata (context-free) → Turing machines (computable). Powers: regular expressions, parsers, compilers, and the theoretical limits of computation.
+
+## Core Explanation
+
+Chomsky hierarchy: Type 3 (regular, regex, DFA/NFA), Type 2 (context-free, programming language syntax), Type 1 (context-sensitive), Type 0 (recursively enumerable, Turing-complete). Finite automaton: states + transitions + start state + accept states. NFA (nondeterministic) equivalent to DFA (deterministic) — subset construction converts NFA→DFA (exponential blowup possible).
+
+## Further Reading
+
+- 

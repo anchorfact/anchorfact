@@ -1,0 +1,17 @@
+# Docker Compose
+Confidence: high
+Last verified: 2026-05-24
+Generation: human_only
+
+## TL;DR
+
+Docker Compose defines and runs multi-container Docker applications using a YAML file (`docker-compose.yml`). One command (`docker compose up`) starts all services. Ideal for development environments and single-host production deployments.
+
+## Core Explanation
+
+Services, networks, volumes defined declaratively. `depends_on` controls startup order (but not readiness — use healthchecks). Environment variables via `.env` file or inline. Profiles enable conditional service activation. Compose v2 is written in Go (plugin). For multi-host, use Docker Swarm or Kubernetes.
+
+## Further Reading
+
+- [Docker Compose Documentation](https://docs.docker.com/compose/)
+

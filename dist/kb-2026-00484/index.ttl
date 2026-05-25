@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00484>
+  a schema:TechArticle ;
+  schema:headline "Samurai History" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00484>
+  schema:citation <https://www.littlebrown.co.uk/titles/jonathan-clements/a-brief-history-of-the-samurai/9781849019811/> .
+
+<https://anchorfact.org/kb/kb-2026-00484>
+  schema:citation <https://ospreypublishing.com/samurai/> .
+
+<https://anchorfact.org/kb/kb-2026-00484>
+  schema:citation <https://global.oup.com/vsi-samurai/> .

@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-mathematical-reasoning-1",
+    "text": "Nature (November 2025) reported on AlphaProof, a three-stage AI model for generating mathematical proofs, demonstrating formal proofs in Lean 4 for problems at the International Mathematical Olympiad level, representing a breakthrough in AI-driven formal mathematics that combines reinforcement learning, language model pretraining, and formal verification systems.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nature.com/articles/d41586-025-03585-5"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-mathematical-reasoning-2",
+    "text": "AlphaGeometry (Trinh et al., Nature 2024) solved 25/30 IMO geometry problems by combining a neural language model with a symbolic deduction engine (Deductive Database), approaching IMO gold medalist level (average 25.9), and trained on 100M synthetic geometry theorems without human demonstrations.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nature.com/articles/s41586-023-06747-5"
+    }
+  }
+]

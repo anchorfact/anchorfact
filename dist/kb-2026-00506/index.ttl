@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00506>
+  a schema:TechArticle ;
+  schema:headline "Stress Management Techniques" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00506>
+  schema:citation <https://www.penguinrandomhouse.com/books/736/full-catastrophe-living-by-jon-kabat-zinn/> .
+
+<https://anchorfact.org/kb/kb-2026-00506>
+  schema:citation <https://www.harpercollins.com/products/feeling-good-david-d-burns> .

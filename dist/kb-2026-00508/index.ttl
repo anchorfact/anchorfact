@@ -1,0 +1,26 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00508>
+  a schema:TechArticle ;
+  schema:headline "Focus and Concentration Techniques" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00508>
+  schema:citation <https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/> .
+
+<https://anchorfact.org/kb/kb-2026-00508>
+  schema:citation <https://www.harpercollins.com/products/flow-mihaly-csikszentmihalyi> .
+
+<https://anchorfact.org/kb/kb-2026-00508>
+  schema:citation <https://www.hachettebookgroup.com/deep-work/> .
+
+<https://anchorfact.org/kb/kb-2026-00508>
+  schema:citation <https://www.benbellabooks.com/indistractable/> .
+
+<https://anchorfact.org/kb/kb-2026-00508>
+  schema:citation <https://www.hachettebookgroup.com/deep-work/> .
+
+<https://anchorfact.org/kb/kb-2026-00508>
+  schema:citation <https://www.benbellabooks.com/indistractable/> .

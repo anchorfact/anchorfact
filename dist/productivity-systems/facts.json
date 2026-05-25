@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-self-improvement-001",
+    "text": "GTD (Getting Things Done, David Allen): capture everything → clarify → organize → review → engage.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://gettingthingsdone.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-self-improvement-002",
+    "text": "Pomodoro Technique (Cirillo): 25-min focused work + 5-min break.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-self-improvement-003",
+    "text": "Eisenhower Matrix: urgent/important quadrants.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://gettingthingsdone.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-self-improvement-004",
+    "text": "Time blocking: schedule specific tasks in calendar.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-self-improvement-005",
+    "text": "Two-minute rule: if task takes <2 minutes, do it now.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://gettingthingsdone.com/"
+    }
+  }
+]

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/video-understanding>
+  a schema:article ;
+  schema:headline "Video Understanding: Action Recognition, Temporal Action Detection, and Video-Language Models" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/video-understanding>
+  schema:citation <https://link.springer.com/article/10.1007/s11263-025-02478-4> .
+
+<https://anchorfact.org/kb/video-understanding>
+  schema:citation <https://www.sciencedirect.com/science/article/pii/S2405959525001869> .

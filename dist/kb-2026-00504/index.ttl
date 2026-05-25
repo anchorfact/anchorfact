@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00504>
+  a schema:TechArticle ;
+  schema:headline "Sports Psychology Fundamentals" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00504>
+  schema:citation <https://www.humankinetics.com/> .
+
+<https://anchorfact.org/kb/kb-2026-00504>
+  schema:citation <https://www.apadivisions.org/division-47> .

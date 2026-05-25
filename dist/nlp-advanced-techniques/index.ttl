@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/nlp-advanced-techniques>
+  a schema:Article ;
+  schema:headline "Advanced NLP: Tokenization, Embeddings, and Decoding" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/nlp-advanced-techniques>
+  schema:citation <https://arxiv.org/abs/1508.07909> .
+
+<https://anchorfact.org/kb/nlp-advanced-techniques>
+  schema:citation <https://arxiv.org/abs/1904.09751> .

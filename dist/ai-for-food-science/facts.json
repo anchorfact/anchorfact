@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f1",
+    "text": "Computer vision and deep learning for food recognition (food classification, calorie estimation, quality inspection) have achieved >90% accuracy on benchmark datasets, enabling AI-powered dietary tracking and food safety monitoring.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1109/ACCESS.2024.3415265"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f2",
+    "text": "FAO reports that AI can optimize food supply chains through predictive analytics, reducing post-harvest losses by 20-30% and improving food security for vulnerable populations.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.fao.org/technology/en/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f3",
+    "text": "NotCo (Chilean food-tech unicorn, $1.5B valuation) uses the \"Giuseppe\" AI platform to discover plant-based alternatives to animal products by analyzing molecular structures of foods and matching them with plant ingredients.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://notco.com/"
+    }
+  }
+]

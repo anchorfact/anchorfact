@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00389>
+  a schema:TechArticle ;
+  schema:headline "Mount Everest" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00389>
+  schema:citation <https://www.penguinrandomhouse.com/books/306270/into-thin-air-by-jon-krakauer/> .
+
+<https://anchorfact.org/kb/kb-2026-00389>
+  schema:citation <https://www.penguinrandomhouse.com/into-thin-air/> .
+
+<https://anchorfact.org/kb/kb-2026-00389>
+  schema:citation <https://www.nationalgeographic.com/everest/> .

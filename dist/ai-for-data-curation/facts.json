@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-data-curation-1",
+    "text": "NVIDIA NeMo Curator (2026) provides a production-scale data curation pipeline processing 8+ trillion tokens for Nemotron-4 -- implementing URL-level filtering, document-level quality scoring (perplexity-based, classifier-based, LLM-as-judge), fuzzy deduplication (MinHash LSH at billion-document scale), and safety filtering (toxicity, PII removal) -- demonstrating that curated data improves downstream LLM performance by 5-15% on standard benchmarks.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://github.com/NVIDIA-NeMo/Curator"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-data-curation-2",
+    "text": "Core data curation techniques (2024-2026): (1) URL filtering -- remove adult, spam, low-quality domains; (2) Language detection -- fastText for 176 languages; (3) Quality filtering -- heuristics, perplexity-based, and classifier-based; (4) Deduplication -- exact (hash), near (MinHash with 5-gram overlap, Jaccard 0.8), and fuzzy semantic (embedding cosine similarity). Typical reduction: 100TB raw web crawl to 5-10TB curated training data (90-95% reduction).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2502.08211"
+    }
+  }
+]

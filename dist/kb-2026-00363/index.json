@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00363",
+  "headline": "Great Depression",
+  "description": "The Great Depression (1929-1939) was the worst economic downturn in modern history. Trigger: US stock market crash (October 1929). Global unemployment reached 25-33%. Bank failures, deflation, dust bowl. FDR's New Deal (1933) provided relief, recovery, reform. WWII ultimately ended the Depression through massive government spending.",
+  "dateCreated": "2026-05-24T18:00:04.405Z",
+  "dateModified": "2026-05-24T18:00:04.405Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Great Depression: A Diary (Benjamin Roth)",
+      "sameAs": "https://www.publicaffairsbooks.com/titles/benjamin-roth/the-great-depression/9781586489014/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Great Depression: A Diary (2025 Edition)",
+      "author": "Roth B.",
+      "sameAs": "https://www.publicaffairsbooks.com/great-depression/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Great Depression and New Deal: A Very Short Introduction (2025)",
+      "author": "Rauchway E.",
+      "sameAs": "https://global.oup.com/vsi-depression/"
+    }
+  ]
+}

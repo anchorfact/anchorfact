@@ -1,0 +1,17 @@
+# Renaissance Science
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+
+Renaissance science (15th-17th centuries) broke from Aristotelian/medieval frameworks. Key figures: Leonardo da Vinci (anatomy, engineering), Copernicus (heliocentric cosmology), Vesalius (modern anatomy, De Humani Corporis Fabrica, 1543), Galileo (experimental physics, telescopic astronomy). The printing press spread knowledge faster than ever before.
+
+## Core Explanation
+
+Vesalius (1543): corrected Galen's errors (dissected human bodies, not animals). Galileo: leaning tower experiment (apocryphal but illustrative), inertia concept, telescope discoveries (Jupiter moons, Venus phases, sunspots) — all supported Copernicus. Paracelsus: chemical medicine over humors. William Gilbert: magnetism (De Magnete, 1600). Renaissance humanism emphasized observation over authority.
+
+## Further Reading
+
+- [The Scientists (John Gribbin)](https://www.penguinrandomhouse.com/books/292021/the-scientists-by-john-gribbin/)
+

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/efficient-green-ai>
+  a schema:article ;
+  schema:headline "Efficient and Green AI: Reducing the Carbon Footprint of Machine Learning" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/efficient-green-ai>
+  schema:citation <https://dl.acm.org/doi/10.1145/3381831> .
+
+<https://anchorfact.org/kb/efficient-green-ai>
+  schema:citation <https://arxiv.org/abs/2104.10350> .

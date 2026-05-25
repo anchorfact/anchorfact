@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/multi-omics-integration",
+  "headline": "Multi-Omics Integration: AI-Driven Systems Biology from Genomics to Proteomics",
+  "description": "Multi-omics integration uses AI to combine data from multiple biological layers — genome (DNA), transcriptome (RNA), proteome (proteins), and metabolome (small molecules) — into unified models of biological systems. Rather than studying one molecular layer in isolation, multi-omics AI captures the full complexity of living systems, from genetic predisposition to protein function to metabolic output.",
+  "dateCreated": "2026-05-24T18:00:03.426Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AI-based multiomics profiling reveals complementary omics layers for predicting cardiovascular disease",
+      "sameAs": "https://www.nature.com/articles/s41467-026-68956-6"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "AI-driven multi-omics integration in precision oncology: from data to clinical impact",
+      "sameAs": "https://link.springer.com/article/10.1007/s10238-025-01965-9"
+    }
+  ]
+}

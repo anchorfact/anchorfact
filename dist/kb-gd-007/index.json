@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-gd-007",
+  "headline": "cloud xr development",
+  "description": "1. 云游戏技术\r",
+  "dateCreated": "2026-05-24T18:00:04.173Z",
+  "dateModified": "2026-05-24T18:00:04.173Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "游戏开发Wiki（个人知识库）",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  ]
+}

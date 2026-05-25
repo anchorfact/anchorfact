@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00331>
+  a schema:TechArticle ;
+  schema:headline "Evolution by Natural Selection" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00331>
+  schema:citation <https://www.gutenberg.org/ebooks/1228> .

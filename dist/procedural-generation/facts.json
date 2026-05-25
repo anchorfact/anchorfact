@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-pg-001",
+    "text": "Perlin noise (Perlin 1983, SIGGRAPH 1985) is foundational for procedural terrain generation (e.g., Minecraft).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1145/325334.325247"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-pg-002",
+    "text": "No Man's Sky (Hello Games 2016) generates 18 quintillion unique planets via deterministic procedural generation.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdcvault.com/play/1024265/Building-No-Man-s"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-pg-003",
+    "text": "Wave Function Collapse (Gumin 2016): constraint-based procedural generation for tile/city generation.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://github.com/mxgmn/WaveFunctionCollapse"
+    }
+  }
+]

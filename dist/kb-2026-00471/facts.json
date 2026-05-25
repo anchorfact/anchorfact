@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-business-001",
+    "text": "Financial literacy is understanding how money works: earning, spending, saving, investing, borrowing, protecting. Key concepts: compound interest, diversification, inflation, risk vs. return, tax-advantaged accounts. Financially literate individuals make informed decisions, avoid predatory lending, and build long-term wealth.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/180511/your-money-or-your-life-by-vicki-robin/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-business-002",
+    "text": "Credit score (FICO): payment history (35%), amounts owed (30%), length (15%), new credit (10%), mix (10%).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/180511/your-money-or-your-life-by-vicki-robin/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-business-003",
+    "text": "Tax: understand marginal brackets, tax-advantaged accounts (401k, IRA, HSA).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/180511/your-money-or-your-life-by-vicki-robin/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-business-004",
+    "text": "Inflation: ~2-3% annually — cash loses purchasing power.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/180511/your-money-or-your-life-by-vicki-robin/"
+    }
+  }
+]

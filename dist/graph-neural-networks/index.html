@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Graph Neural Networks: Message Passing and Applications — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Graph Neural Networks extend deep learning to graph-structured data — molecules, social networks, knowledge graphs. Message passing enables nodes to learn from their local neighborhood, creating representations that capture both structure and features.<br>
+<br>
+## Core Explanation<br>
+Message passing: each node receives messages from neighbors, aggregates them (mean, sum, max, attention), transforms via neural network, and updates. Stacking L layers gives each node information from its L-hop neighborhood. Key architectures: GCN (graph convolution), GAT (graph attention), GraphSAGE (sampling for large graphs).<br>
+<br>
+## Detailed Analysis<br>
+Applications: molecular property prediction (GNN scores candidates for drug discovery), recommendation (PinSage powers Pinterest recommendations at billion-node scale), traffic prediction (road network as graph), and protein interaction prediction (AlphaFold uses GNN-like operations).<br>
+<br>
+## Further Reading<br>
+- Stanford CS224W: Machine Learning with Graphs<br>
+- PyTorch Geometric Library<br>
+- OGB: Open Graph Benchmark</article></body>
+</html>

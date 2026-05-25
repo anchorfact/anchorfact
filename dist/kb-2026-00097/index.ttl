@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00097>
+  a schema:TechArticle ;
+  schema:headline "MutationObserver" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00097>
+  schema:citation <https://dom.spec.whatwg.org/#interface-mutationobserver> .

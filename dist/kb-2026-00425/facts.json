@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-01",
+    "text": "The gut microbiome is the ecosystem of 39 trillion bacteria in the human digestive tract — roughly equal to human cells",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.harpercollins.com/products/i-contain-multitudes-ed-yong"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-001",
+    "text": "The gut microbiome is the ecosystem of ~39 trillion bacteria in the human digestive tract — roughly equal to human cells. It influences digestion, immunity, mental health (gut-brain axis), metabolism, and disease risk. Shaped by diet (fiber feeds beneficial bacteria), antibiotics (disrupt), birth method (vaginal vs. C-section).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.cdc.gov/health-topics.html"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-002",
+    "text": "Fecal microbiota transplant (FMT): transferring stool from healthy donor — 90%+ effective for C.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.harpercollins.com/products/i-contain-multitudes-ed-yong"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-003",
+    "text": "Gut-brain axis: gut produces 95% of body's serotonin.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.harpercollins.com/products/i-contain-multitudes-ed-yong"
+    }
+  }
+]

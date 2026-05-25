@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "Derived from JavaScript object literal syntax and popularized by Douglas Crockford in the early 2000s, JSON is the dominant data format for web APIs, configuration files, and data storage",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.rfc-editor.org/rfc/rfc8259"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "Derived from JavaScript object literal syntax and popularized by Douglas Crockford in the early 2000s, JSON is the dominant data format for web APIs, configuration files, and data storage.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.rfc-editor.org/rfc/rfc8259"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-003",
+    "text": "Its simplicity — four primitive types (string, number, boolean, null) plus arrays and objects — has made it the universal lingua franca of data exchange on the web.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.rfc-editor.org/rfc/rfc8259"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-004",
+    "text": "5e10` | | Boolean | `true`, `false` | | Null | `null` | | Array | `[1, \"two\", true]` | | Object | `{\"key\": \"value\"}` |\n**Notably absent**: Date type, integer vs.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.rfc-editor.org/rfc/rfc8259"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-005",
+    "text": "float distinction, comments, trailing commas.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.rfc-editor.org/rfc/rfc8259"
+    }
+  }
+]

@@ -1,0 +1,26 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/decision-making-psychology>
+  a schema:Article ;
+  schema:headline "The Psychology of Decision Making" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/decision-making-psychology>
+  schema:citation <https://us.macmillan.com/books/9780374533557/thinkingfastandslow> .
+
+<https://anchorfact.org/kb/decision-making-psychology>
+  schema:citation <https://www.jstor.org/stable/1914185> .
+
+<https://anchorfact.org/kb/decision-making-psychology>
+  schema:citation <https://www.crownpublishing.com/decisive/> .
+
+<https://anchorfact.org/kb/decision-making-psychology>
+  schema:citation <https://www.littlebrown.com/noise/> .
+
+<https://anchorfact.org/kb/decision-making-psychology>
+  schema:citation <https://www.crownpublishing.com/decisive/> .
+
+<https://anchorfact.org/kb/decision-making-psychology>
+  schema:citation <https://us.macmillan.com/thinking-fast-and-slow/> .

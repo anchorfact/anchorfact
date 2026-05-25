@@ -1,0 +1,14 @@
+# Cognitive Architectures: ACT-R, Soar, and Computational Models of Human-Like Reasoning
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Cognitive architectures model how the human mind works -- from memory retrieval and decision-making to language processing and skill acquisition. Unlike deep learning, which optimizes for task performance, cognitive architectures aim for human-like cognition: making the same errors, taking the same time, and using the same strategies. This complementary paradigm offers insights for AI safety, human-AI interaction, and understanding intelligence itself.
+
+## Core Explanation
+Cognitive architecture vs deep learning: DL learns statistical patterns from data through gradient descent. Cognitive architectures model symbolic cognitive processes: goals, beliefs, intentions, and procedural knowledge. Key architectures: (1) ACT-R (CMU) -- hybrid architecture with symbolic production rules (IF conditions THEN actions, learned via utility-based reinforcement) and subsymbolic activation processes (declarative memory chunks have activation levels determining retrieval probability and latency). ACT-R quantitatively predicts human RT distributions and error rates across dozens of cognitive tasks; (2) Soar (UMich) -- state-driven problem-solving in a single long-term memory. Uses chunking mechanism to learn new production rules from impasses; (3) Sigma (USC) -- implements cognitive processes as graphical models, unifying reasoning, learning, and perception under a probabilistic framework; (4) Nengo -- neural-level model implementing spiking neural networks.
+
+## Detailed Analysis
+ACT-R example: driving a car. Declarative memory: facts about traffic rules, map knowledge. Procedural memory: IF approaching red light THEN brake; IF lane change signal THEN check mirror. Goal module: navigate to destination. The subsymbolic level makes retrieval probabilistic -- a recently used memory chunk (braking at the last red light) is more likely to be retrieved quickly. This accounts for recency and frequency effects in human behavior. arxiv 2025 integration vision: (1) LLMs as components of cognitive architectures -- replacing hand-crafted knowledge with learned language models for natural language tasks; (2) Cognitive architectures for AI safety -- modeling human-like reasoning with explicit goals and ethical constraints for interpretable AI decisions; (3) Cognitive models for human-AI interaction -- predicting how humans will interact with AI systems to design better interfaces. ResearchGate 2025 AGI framework proposes integrating ACT-R/Soar/Sigma for a unified theory of intelligence. Key challenge: cognitive architectures model behavior at the millisecond-to-minute scale in laboratory tasks; scaling to real-world, hours-long tasks remains an open problem.
+

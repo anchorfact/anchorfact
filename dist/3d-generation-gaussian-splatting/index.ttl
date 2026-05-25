@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/3d-generation-gaussian-splatting>
+  a schema:article ;
+  schema:headline "3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/3d-generation-gaussian-splatting>
+  schema:citation <https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/> .
+
+<https://anchorfact.org/kb/3d-generation-gaussian-splatting>
+  schema:citation <https://arxiv.org/abs/2003.08934> .

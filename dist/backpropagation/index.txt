@@ -1,0 +1,18 @@
+# Backpropagation: The Engine of Neural Network Learning
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Backpropagation is the fundamental algorithm for training neural networks, computing gradients of the loss with respect to every weight via repeated application of the calculus chain rule.
+
+## Core Explanation
+The forward pass computes predictions; the backward pass computes gradients. For each layer, backprop multiplies the upstream gradient by the local derivative (activation function, weight matrix). The chain rule connects output error to every parameter.
+
+## Detailed Analysis
+The vanishing gradient problem occurs when activation functions like sigmoid/tanh saturate — derivatives approach zero, stopping learning in early layers. ReLU (f(x)=max(0,x)) alleviates this with constant gradient of 1 for positive inputs. Batch normalization further stabilizes gradient flow by normalizing layer inputs.
+
+## Further Reading
+- Stanford CS231n: Backpropagation Notes
+- Goodfellow et al., Deep Learning, Ch.6
+- Distill.pub: Why Momentum Really Works

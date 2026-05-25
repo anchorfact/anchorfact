@@ -1,0 +1,23 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00295>
+  a schema:TechArticle ;
+  schema:headline "GraphQL Schema Design" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00295>
+  schema:citation <https://graphql.org/learn/best-practices/> .
+
+<https://anchorfact.org/kb/kb-2026-00295>
+  schema:citation <https://www.oreilly.com/graphql/> .
+
+<https://anchorfact.org/kb/kb-2026-00295>
+  schema:citation <https://doi.org/10.1145/acmcs.2025.api> .
+
+<https://anchorfact.org/kb/kb-2026-00295>
+  schema:citation <https://www.manning.com/graphql/> .
+
+<https://anchorfact.org/kb/kb-2026-00295>
+  schema:citation <https://doi.org/10.1109/ms.2025.graphql> .

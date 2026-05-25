@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00062>
+  a schema:TechArticle ;
+  schema:headline "LoRA (Low-Rank Adaptation)" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00062>
+  schema:citation <https://arxiv.org/abs/2106.09685> .
+
+<https://anchorfact.org/kb/kb-2026-00062>
+  schema:citation <https://github.com/microsoft/LoRA> .

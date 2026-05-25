@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-podcast-generation>
+  a schema:article ;
+  schema:headline "AI Podcast Generation: Text-to-Speech Narration, AI Hosts, and Automated Audio Content" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-podcast-generation>
+  schema:citation <https://arxiv.org/search/?query=AI+podcast+generation+text+to+speech+narration> .
+
+<https://anchorfact.org/kb/ai-podcast-generation>
+  schema:citation <https://arxiv.org/search/?query=conversational+AI+audio+podcast+generation> .

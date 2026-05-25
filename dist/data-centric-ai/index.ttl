@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/data-centric-ai>
+  a schema:article ;
+  schema:headline "Data-Centric AI: The Systematic Engineering of Training Data" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/data-centric-ai>
+  schema:citation <https://dcai.csail.mit.edu/> .
+
+<https://anchorfact.org/kb/data-centric-ai>
+  schema:citation <https://arxiv.org/abs/2303.10158> .

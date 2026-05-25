@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Bayesian Deep Learning: Uncertainty Quantification and Robust Predictions — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Bayesian Deep Learning equips neural networks with uncertainty estimates — knowing when the model is likely to be wrong. From Monte Carlo Dropout to Deep Ensembles and modern Bayesian approximations, UQ is critical for safety-critical AI (medical, autonomous driving, finance).<br>
+<br>
+## Core Explanation<br>
+Standard neural networks output point predictions without confidence. Bayesian approaches treat weights as probability distributions: p(y|x,D) = ∫ p(y|x,w) p(w|D) dw. The challenge: the posterior p(w|D) is intractable for large networks. Practical approximations: (1) MC Dropout — dropout at inference time approximates a Bernoulli BNN; (2) Deep Ensembles — ensemble of M independently trained models; (3) Laplace approximation — fit a Gaussian to the posterior mode; (4) variational inference — BNNs with learned posterior parameters.<br>
+<br>
+## Detailed Analysis<br>
+Types of uncertainty: aleatoric (inherent data noise, irreducible) and epistemic (model ignorance, reducible with more data). Deep Ensembles capture epistemic uncertainty through mode diversity. SWAG (SWA-Gaussian) fits a Gaussian posterior to SGD iterates. Applications: medical diagnosis with reject option, autonomous driving safety monitoring, active learning (query most uncertain examples). SBMC (2025) improves scalability of full Bayesian methods.<br>
+<br>
+## Further Reading<br>
+- Bayesian Deep Learning Workshop (NeurIPS)<br>
+- Pyro: Probabilistic Programming<br>
+- TensorFlow Probability<br>
+</article></body>
+</html>

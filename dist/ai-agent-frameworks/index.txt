@@ -1,0 +1,18 @@
+# AI Agent Frameworks: LangChain, AutoGen, and CrewAI
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI agent frameworks provide the orchestration layer for building autonomous AI applications. LangChain pioneered composable LLM pipelines; AutoGen introduced multi-agent conversations; CrewAI enables role-based agent teams.
+
+## Core Explanation
+Framework comparison: LangChain — most mature, broadest integration ecosystem (500+ tools/APIs). LangGraph — stateful, graph-based agent control flow. AutoGen — multi-agent with structured message passing. CrewAI — role-based delegation (manager, researcher, writer). Semantic Kernel (Microsoft) — enterprise-grade, native .NET/Python integration.
+
+## Detailed Analysis
+The ReAct pattern (Reasoning + Acting) is the dominant agent loop: think → act → observe → think. Tool calling (function calling) enables agents to invoke APIs, databases, and code. Memory systems (short-term via conversation history, long-term via vector stores) persist context across interactions.
+
+## Further Reading
+- LangChain Documentation
+- Microsoft AutoGen GitHub
+- Anthropic: Tool Use Guide

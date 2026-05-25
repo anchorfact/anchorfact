@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00002>
+  a schema:TechArticle ;
+  schema:headline "Attention Mechanism" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00002>
+  schema:citation <https://arxiv.org/abs/1409.0473> .
+
+<https://anchorfact.org/kb/kb-2026-00002>
+  schema:citation <https://arxiv.org/abs/1508.04025> .

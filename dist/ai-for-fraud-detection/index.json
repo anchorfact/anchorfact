@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-fraud-detection",
+  "headline": "AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime",
+  "description": "Financial fraud costs the global economy an estimated $5 trillion annually. AI — particularly graph neural networks — is transforming fraud detection from reactive rules to proactive pattern discovery, catching complex money laundering networks and transaction fraud that rule-based systems miss while reducing false alarms that waste investigator time.",
+  "dateCreated": "2026-05-24T18:00:02.961Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Reinforcement learning with graph neural network (RL-GNN) for fraud detection in imbalanced financial data",
+      "sameAs": "https://www.nature.com/articles/s41598-025-25200-3"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "A Review of Artificial Intelligence for Financial Fraud Detection: Methods, Challenges, and Future Directions",
+      "sameAs": "https://www.mdpi.com/2076-3417/16/4/1931"
+    }
+  ]
+}

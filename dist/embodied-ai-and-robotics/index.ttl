@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/embodied-ai-and-robotics>
+  a schema:TechArticle ;
+  schema:headline "Embodied AI: Robots That Learn from the Physical World" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/embodied-ai-and-robotics>
+  schema:citation <https://arxiv.org/abs/2307.15818> .
+
+<https://anchorfact.org/kb/embodied-ai-and-robotics>
+  schema:citation <https://arxiv.org/abs/2405.06852> .

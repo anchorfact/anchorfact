@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sci-pp-001",
+    "text": "The Standard Model describes 17 fundamental particles: 6 quarks, 6 leptons, 5 gauge bosons.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://home.cern/science/physics/standard-model"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sci-pp-002",
+    "text": "Higgs boson discovered at CERN LHC in 2012 (ATLAS & CMS), confirming EW symmetry breaking.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1016/j.physletb.2012.08.020"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sci-pp-003",
+    "text": "Dark matter ~27% of universe energy density, inferred from rotation curves (Rubin 1970s).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1086/150317"
+    }
+  }
+]

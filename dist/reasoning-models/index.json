@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/reasoning-models",
+  "headline": "AI Reasoning Models: OpenAI o1/o3 and DeepSeek-R1",
+  "description": "Reasoning models like OpenAI o1/o3 and DeepSeek-R1 represent a paradigm shift: instead of answering immediately, they \"think\" through problems via internal chain-of-thought, scaling inference-time compute for dramatically better math, coding, and scientific reasoning.",
+  "dateCreated": "2026-05-24T18:00:03.473Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Learning to Reason with LLMs (OpenAI o1)",
+      "sameAs": "https://openai.com/index/learning-to-reason-with-llms/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+      "sameAs": "https://arxiv.org/abs/2501.12948"
+    }
+  ]
+}

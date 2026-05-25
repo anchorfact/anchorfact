@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "Julia (Jeff Bezanson, Stefan Karpinski, Viral Shah, Alan Edelman, 2012, MIT) solves the 'two-language problem' — high-level syntax with C-like speed. Just-in-time (JIT) compilation via LLVM. Used for scientific computing, ML, finance, and HPC. Key packages: DifferentialEquations.jl, Flux.jl (ML).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1137/141000671"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "Multiple dispatch: functions defined by combination of ALL argument types — core paradigm.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://docs.julialang.org/"
+    }
+  }
+]

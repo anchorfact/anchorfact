@@ -1,0 +1,19 @@
+# AI in Cybersecurity: Threat Detection and LLM-Powered Defense
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI is reshaping cybersecurity: machine learning detects anomalies in network traffic, LLMs automate threat intelligence analysis and vulnerability detection, and generative AI enables real-time incident response — creating an arms race between AI-powered defense and AI-powered attacks.
+
+## Core Explanation
+Traditional cybersecurity relies on signature-based detection (matching known patterns) and rule-based systems. AI approaches: (1) Anomaly detection — unsupervised learning identifies deviations from normal behavior (network traffic, user actions); (2) Supervised threat classification — classify malware families, phishing emails; (3) LLMs for SOC — automate log analysis, generate incident reports, extract threat intelligence from unstructured text.
+
+## Detailed Analysis
+LLM cybersecurity applications: vulnerability detection (CodeBERT, ChatGPT for code review), secure code generation (prompt-based hardening), binary analysis (transpiled to LLM-readable format), phishing detection (semantic analysis of email content and sender patterns). MDR (Managed Detection and Response) platforms increasingly integrate AI copilots. Adversarial ML threats: attackers poison training data, craft evasion samples that fool ML detectors, and use generative AI for spear-phishing at scale.
+
+## Further Reading
+- Awesome-LLM4Cybersecurity GitHub
+- OWASP Top 10 for LLM Applications
+- MITRE ATLAS: Adversarial Threat Landscape for AI
+

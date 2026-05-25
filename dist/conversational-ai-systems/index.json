@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/conversational-ai-systems",
+  "headline": "Conversational AI: Task-Oriented Dialogue and Open-Domain Chatbots",
+  "description": "Conversational AI spans from task-oriented bots that book flights to open-domain chatbots that discuss any topic. Modern LLMs have collapsed the traditional modular pipeline into end-to-end neural approaches, while frameworks like Rasa CALM bring enterprise-grade reliability.",
+  "dateCreated": "2026-05-24T18:00:03.264Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Conversational AI: Dialogue Systems, Conversational Agents, and Chatbots (McTear)",
+      "sameAs": "https://link.springer.com/book/10.1007/978-3-031-02176-3"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Task-Oriented Dialogue with In-Context Learning (CALM)",
+      "sameAs": "https://arxiv.org/abs/2402.11115"
+    }
+  ]
+}

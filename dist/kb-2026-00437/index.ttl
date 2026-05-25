@@ -1,0 +1,23 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00437>
+  a schema:TechArticle ;
+  schema:headline "Lean Manufacturing" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00437>
+  schema:citation <https://www.simonandschuster.com/books/The-Machine-That-Changed-the-World/James-P-Womack/9780743299794> .
+
+<https://anchorfact.org/kb/kb-2026-00437>
+  schema:citation <https://www.mheducation.com/toyota-way/> .
+
+<https://anchorfact.org/kb/kb-2026-00437>
+  schema:citation <https://www.simonandschuster.com/lean-thinking/> .
+
+<https://anchorfact.org/kb/kb-2026-00437>
+  schema:citation <https://www.mheducation.com/toyota-way/> .
+
+<https://anchorfact.org/kb/kb-2026-00437>
+  schema:citation <https://www.simonandschuster.com/lean-thinking/> .

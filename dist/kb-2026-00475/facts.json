@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-01",
+    "text": "Milky Way: 100-400 billion stars, 100,000 light-years across, spiral type",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/55403/cosmos-by-carl-sagan/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-02",
+    "text": "Andromeda: nearest major galaxy, will collide with Milky Way in 4.5 billion years",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/55403/cosmos-by-carl-sagan/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-03",
+    "text": "Hubble Deep Field : pointed at empty patch for 10 days → thousands of galaxies",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/55403/cosmos-by-carl-sagan/"
+    }
+  }
+]

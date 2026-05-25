@@ -1,0 +1,19 @@
+# AI Protein Design: RFDiffusion, ProteinMPNN, and the Nobel Revolution
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI protein design has entered the post-AlphaFold era. RFDiffusion generates novel protein structures from scratch; ProteinMPNN designs sequences that fold into desired shapes; the 2024 Nobel Prize validated this revolution — transforming drug discovery and biotechnology.
+
+## Core Explanation
+The protein design problem: given a desired function (e.g., binding to a specific target), design a protein sequence that folds into a structure achieving that function. This is the inverse of protein folding (AlphaFold). Approach: (1) generate protein backbone structure (RFDiffusion), (2) design amino acid sequence that folds to that backbone (ProteinMPNN), (3) validate via expression in E. coli and structural determination.
+
+## Detailed Analysis
+RFDdiffusion uses a denoising diffusion process on protein backbone coordinates (frame representation: rotation + translation for each residue). ProteinMPNN is a message-passing neural network trained on Protein Data Bank structures — it predicts amino acid probabilities at each position conditioned on local structure. Applications: enzyme design (novel catalysts), therapeutic protein binders, self-assembling nanomaterials, biosensors.
+
+## Further Reading
+- RFDiffusion GitHub (Baker Lab)
+- ColabFold (free protein folding notebook)
+- "AI for Science" (Nature collection)
+

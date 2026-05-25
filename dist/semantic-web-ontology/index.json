@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/semantic-web-ontology",
+  "headline": "Semantic Web and Ontologies: Knowledge Representation, OWL Reasoning, and Linked Data",
+  "description": "The Semantic Web vision -- machines understanding the meaning of data through formal ontologies and linked data -- quietly powers the structured knowledge behind modern AI. Wikidata's 110 million items, Google's Knowledge Graph, and domain ontologies like Gene Ontology provide the structured factual backbone that complements statistical patterns learned by LLMs.",
+  "dateCreated": "2026-05-24T18:00:03.507Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Semantic Web: A New Form of Web Content (Berners-Lee, Hendler, Lassila)",
+      "author": "Berners-Lee, Tim, Hendler, James, Lassila, Ora",
+      "sameAs": "https://www.scientificamerican.com/article/the-semantic-web/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "OWL 2 Web Ontology Language: Document Overview (W3C Recommendation)",
+      "author": "W3C OWL Working Group",
+      "sameAs": "https://www.w3.org/TR/owl2-overview/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Knowledge Graphs (Hogan, Blomqvist et al.)",
+      "author": "Hogan, Aidan, Blomqvist, Eva, Cochez, Michael, et al.",
+      "sameAs": "https://doi.org/10.1145/3447772"
+    }
+  ]
+}

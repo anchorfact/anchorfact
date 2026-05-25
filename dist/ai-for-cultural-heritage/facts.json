@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-cultural-heritage-1",
+    "text": "Nature Heritage Science (November 2025) published a comprehensive review of AI applications in cultural heritage — covering 3D digitization and reconstruction of artifacts, deep learning-based damage detection on historical buildings, automatic translation and transcription of ancient manuscripts, and GAN-based restoration of deteriorated artworks — documenting 200+ case studies from UNESCO World Heritage sites.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nature.com/articles/s40494-025-02164-1"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-cultural-heritage-2",
+    "text": "UNESCO's Independent Expert Group on AI and Culture (September 2025) released a landmark report concluding that \"AI is advancing faster than cultural ecosystems can adapt\" — recommending international frameworks for AI ethics in cultural heritage, protocols for authenticating AI-generated vs. human-created cultural works, and guidelines ensuring AI preserves rather than erases indigenous and minority cultural expressions.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.unesco.org/en/artificial-intelligence/culture"
+    }
+  }
+]

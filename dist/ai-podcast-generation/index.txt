@@ -1,0 +1,14 @@
+# AI Podcast Generation: Text-to-Speech Narration, AI Hosts, and Automated Audio Content
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI generates podcasts -- from NotebookLM's AI hosts discussing uploaded documents to ElevenLabs narrating audiobooks to Spotify's AI DJ. The podcast creation pipeline is being compressed from hours of recording/editing to minutes of AI generation.
+
+## Core Explanation
+Podcast AI: (1) Script generation -- LLM converts documents/outlines into podcast scripts; (2) Voice -- neural TTS (ElevenLabs, Azure, Play.ht) generates natural narration (100+ voice options, emotional range: excitement, sadness, suspense); (3) Multi-speaker -- AI generates turn-taking conversation between hosts (NotebookLM Audio Overview); (4) Audio editing -- Descript: edit audio by editing text transcript. Remove filler words, regenerate sentences; (5) Music + SFX -- AI generates background music (Suno, Udio).
+
+## Detailed Analysis
+NotebookLM Audio Overview (2024): viral feature. Upload documents -> two AI hosts have 10-minute conversation about content. Use case: students converting lecture notes to study podcasts, researchers sharing papers. ElevenLabs Projects (2025): long-form narration with voice cloning. Authors and publishers creating audiobooks. Storytel AI narration partnership. Descript: edit audio like a doc. Overdub: AI voice clone reads corrections. Studio Sound: AI removes background noise, equalizes. Wondercraft: end-to-end podcast studio. Write script -> select AI voice from 200+ -> add music -> publish. Spotify AI DJ (2023-2025): personalized music + AI voice commentary (Xavier "X" Jernigan voice clone). Spotify voice translation (2024): translate podcasts to other languages while preserving original speaker's voice characteristics.
+

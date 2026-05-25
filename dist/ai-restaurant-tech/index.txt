@@ -1,0 +1,14 @@
+# AI for Restaurant Technology: Order Automation, Kitchen Optimization, and Personalized Dining
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI is taking your order, cooking your food, and personalizing your meal -- from voice AI at drive-thrus to computer vision in kitchens. McDonald's, White Castle, and Sweetgreen deploy AI across ordering, preparation, and personalization, transforming the restaurant experience.
+
+## Core Explanation
+Restaurant AI: (1) Ordering -- voice AI (SoundHound, ConverseNow) handles drive-thru and phone orders. Understands natural speech ("I'll have a number 3, no pickles, extra cheese, and a large Coke"). Handles accents, background noise, and menu modifications; (2) Kitchen -- computer vision tracks food preparation, ensuring order accuracy (did the cook forget no pickles?) and predicting completion time. Thermal cameras monitor food safety; (3) Personalization -- AI CRM recommends items based on order history. Dynamic menu boards adapt to context.
+
+## Detailed Analysis
+White Castle (2021-2025): MasterCard AI-powered drive-thru (SoundHound) deployed at select locations. Averages 90% order accuracy. Panera (2022): OpenCity Tori voice AI for phone orders. Sweetgreen (2023): Infinite Kitchen -- robotic bowl assembly using computer vision. McDonald's Dynamic Yield: personalizes drive-thru menu in real-time. Features: suggest items based on what's in the order so far, trending items (social proof), weather-based suggestions. Result: 3-7% average check increase. Toast: restaurant POS + AI platform used by 100K+ restaurants. AI features: menu optimization (identify underperforming items), labor scheduling (predict traffic for staffing). Key challenge: voice AI with non-native accents and strong regional dialects. Continuous training on diverse speech data.
+

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/ai-video-generation",
+  "headline": "AI Video Generation: Sora, Veo, and the Future of Synthetic Media",
+  "description": "AI video generation exploded in 2024-2025 from research demos to commercial tools. Sora, Veo, and Runway now generate minutes of coherent video from text prompts, with professional filmmaking applications emerging.",
+  "dateCreated": "2026-05-24T18:00:03.206Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Video generation models as world simulators (Sora)",
+      "sameAs": "https://openai.com/index/video-generation-models-as-world-simulators/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Veo: Google's Most Capable Video Generation Model",
+      "sameAs": "https://deepmind.google/technologies/veo/"
+    }
+  ]
+}

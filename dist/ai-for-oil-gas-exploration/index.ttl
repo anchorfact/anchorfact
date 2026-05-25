@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-oil-gas-exploration>
+  a schema:article ;
+  schema:headline "AI for Oil and Gas Exploration: Seismic Interpretation, Reservoir Characterization, and Subsurface Intelligence" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-oil-gas-exploration>
+  schema:citation <https://ieeexplore.ieee.org/document/10418898> .
+
+<https://anchorfact.org/kb/ai-for-oil-gas-exploration>
+  schema:citation <https://www.nature.com/articles/s41598-025-20058-x> .

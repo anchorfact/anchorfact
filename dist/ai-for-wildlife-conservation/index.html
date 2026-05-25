@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI for Wildlife Conservation: Camera Trap Analysis, Species Classification, and Biodiversity Monitoring — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+AI is becoming conservation biology's most powerful tool — automatically classifying millions of camera trap images, identifying individual animals, and monitoring entire ecosystems through bioacoustic AI. With 1 million species at risk of extinction and limited human experts to monitor them, AI scales conservation from local studies to planetary biodiversity tracking.<br>
+<br>
+## Core Explanation<br>
+Camera trap workflow: motion/heat-triggered cameras deployed in wilderness for months → millions of images (80% empty, 15% common species, 5% target species) → human experts classify (impossibly slow at scale) → AI automates. Pipeline: (1) Megadetector (Microsoft) — first-stage CNN classifies each image as animal/human/vehicle/empty, discarding 60-80% of images; (2) Species classifier — fine-grained classification (e.g., "Amur leopard" vs "Snow leopard"); (3) Individual identification — for species with unique markings (tiger stripes, whale flukes, zebra stripes), AI re-identifies specific individuals across time and location, enabling population estimation via capture-recapture statistics.<br>
+<br>
+## Detailed Analysis<br>
+Biodiversity AI beyond camera traps: (A) Bioacoustics — passive acoustic monitoring (PAM) records ecosystem soundscapes. AI classifies species by calls (birds, frogs, bats, whales) — Rainforest Connection uses old smartphones as solar-powered acoustic sensors detecting chainsaw sounds (illegal logging) in real-time; (B) eDNA — environmental DNA from water/soil samples is sequenced → AI classifies species from DNA barcodes; (C) Satellite imagery — detecting deforestation in real-time (Global Forest Watch), mapping animal habitat, and counting large animals (whales, elephants) from sub-meter satellite imagery; (D) Citizen science — iNaturalist AI suggests species from user photos, generating millions of geotagged observations. Nature 2025 challenges: (1) Data imbalance — rare species have few (<100) training examples; few-shot learning and synthetic data augmentation address this; (2) Geographic domain shift — a model trained on Serengeti images performs poorly in the Amazon due to different vegetation, lighting, and species; (3) Open-set recognition — detecting novel species not in the training set. Microsoft PyTorch-Wildlife provides a unified framework addressing all these challenges, pre-trained on 30K+ species. Wildlife.ai develops open-source smart camera traps.<br>
+<br>
+## Further Reading<br>
+- Wildlife Insights: Google's AI-Powered Camera Trap Platform<br>
+- iNaturalist: Citizen Science + AI Species Identification<br>
+- Rainforest Connection: AI for Anti-Logging<br>
+</article></body>
+</html>

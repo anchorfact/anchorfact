@@ -1,0 +1,27 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-digital-art-history-1",
+    "text": "The first digital art exhibition, \"Cybernetic Serendipity,\" was held at the ICA London in 1968, featuring computer-generated visual art, music, and poetry.",
+    "anchorfact:confidence": "high"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-digital-art-history-2",
+    "text": "NFT (Non-Fungible Token) art market exploded in 2021 with Beeple's \"Everydays\" selling for $69.3 million at Christie's, bringing digital art into the traditional auction world.",
+    "anchorfact:confidence": "high"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-digital-art-history-extra",
+    "text": "The term \"New Media Art\" was established as an academic discipline in the 1990s, encompassing digital, internet, and interactive art practices that explore the cultural implications of emerging technologies.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://mitpress.mit.edu/9780262543187/"
+    }
+  }
+]

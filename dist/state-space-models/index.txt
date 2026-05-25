@@ -1,0 +1,19 @@
+# State Space Models: Mamba, Linear-Time Sequence Modeling, and Alternatives to Transformers
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+State Space Models (SSMs), particularly Mamba, offer a linear-complexity alternative to Transformer attention — processing sequences in O(N) time instead of O(N²). By making SSM parameters input-dependent (selective SSMs), Mamba achieves Transformer-competitive quality with dramatically faster inference on long sequences.
+
+## Core Explanation
+State Space Models are inspired by continuous-time dynamical systems: dx(t)/dt = Ax(t) + Bu(t); y(t) = Cx(t) + Du(t). The input u(t) evolves a hidden state x(t) through dynamics matrix A, producing output y(t). Classical SSMs (S4, H3) used fixed A, B, C matrices — efficient via convolution but with limited content-awareness (cannot "focus" on relevant tokens while "ignoring" irrelevant ones). Mamba's innovation: make B, C, and Δ (discretization step size) functions of the input — allowing the model to selectively propagate or forget information based on content. This enables Transformer-like in-context reasoning while preserving the linear complexity advantage via a hardware-aware parallel scan algorithm.
+
+## Detailed Analysis
+Mamba architecture: selective SSM blocks with (1) input projection → (2) 1D convolution → (3) SiLU activation → (4) selective scan (parallel associative scan on GPU) → (5) output projection. Mamba-2 (Dao & Gu, 2024) reveals "Structured State Space Duality" (SSD) — a theoretical connection showing that SSMs are equivalent to a form of linear attention with a structured mask, enabling 2-8x faster training via optimized matrix multiplications. Mamba-3 (2026) explores hybrid designs: interleaving selective SSM layers with sparse attention layers, achieving competitive perplexity with pure Transformers at 3-5x inference speed. Applications: genomics (HyenaDNA processes 1M-length DNA sequences), audio (Mamba-based ASR surpassing Transformer baselines), and long-document understanding. The Jamba (AI21) and Zamba (Zyphra) architectures demonstrate production-ready SSM-Transformer hybrids. Key limitation: retrieval capabilities and exact token copying remain weaker than full attention for certain tasks.
+
+## Further Reading
+- S4: Efficiently Modeling Long Sequences with Structured State Spaces (Gu et al., ICLR 2022)
+- Jamba: Hybrid SSM-Transformer from AI21 Labs
+- Mamba GitHub: state-spaces/mamba
+

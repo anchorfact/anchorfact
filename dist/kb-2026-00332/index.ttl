@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00332>
+  a schema:TechArticle ;
+  schema:headline "Quantum Mechanics" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00332>
+  schema:citation <https://link.springer.com/book/9780306447907> .
+
+<https://anchorfact.org/kb/kb-2026-00332>
+  schema:citation <https://doi.org/10.1017/cbo.2025.qm> .
+
+<https://anchorfact.org/kb/kb-2026-00332>
+  schema:citation <https://doi.org/10.1103/revmodphys.2025.qm> .
+
+<https://anchorfact.org/kb/kb-2026-00332>
+  schema:citation <https://www.basicbooks.com/quantum/> .

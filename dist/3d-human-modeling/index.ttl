@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/3d-human-modeling>
+  a schema:article ;
+  schema:headline "3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/3d-human-modeling>
+  schema:citation <https://smpl.is.tue.mpg.de/> .
+
+<https://anchorfact.org/kb/3d-human-modeling>
+  schema:citation <https://arxiv.org/abs/1712.06584> .

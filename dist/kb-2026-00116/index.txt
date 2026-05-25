@@ -1,0 +1,19 @@
+# Public Key Cryptography
+Confidence: high
+Last verified: 2026-05-22
+Generation: human_only
+
+
+
+
+## TL;DR
+
+Public-key (asymmetric) cryptography uses key pairs: public key (shared freely) and private key (kept secret). It enables encryption (only private key can decrypt), digital signatures (authenticity + integrity), and key exchange (establish shared secrets). RSA (1977), ECC (1985), and Ed25519 (2011) are the dominant algorithms.
+
+## Core Explanation
+
+RSA: security based on difficulty of factoring large numbers. ECC: smaller keys for equivalent security — 256-bit ECC ≈ 3072-bit RSA. Elliptic Curve Diffie-Hellman (ECDH) is the standard key exchange. Key sizes: 2048-bit RSA (minimum), 4096-bit RSA (recommended long-term), 256-bit ECC. Quantum computing threatens both RSA and ECC — NIST is standardizing post-quantum cryptography (2024).
+
+## Further Reading
+
+- 

@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00154",
+  "headline": "Docker Compose",
+  "description": "Docker Compose defines and runs multi-container Docker applications using a YAML file (`docker-compose.yml`). One command (`docker compose up`) starts all services. Ideal for development environments and single-host production deployments.",
+  "dateCreated": "2026-05-24T18:00:03.810Z",
+  "dateModified": "2026-05-24T18:00:03.810Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Docker Compose Documentation",
+      "sameAs": "https://docs.docker.com/compose/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Docker in Practice (3rd Edition, 2025)",
+      "author": "Miell I., Sayers A.H.",
+      "sameAs": "https://www.manning.com/docker-in-practice/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Multi-Container Applications: Docker Compose to Kubernetes (2025)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1109/ms.2025.docker"
+    }
+  ]
+}

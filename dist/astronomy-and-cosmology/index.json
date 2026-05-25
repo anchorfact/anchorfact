@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/astronomy-and-cosmology",
+  "headline": "Astronomy and Cosmology: From Solar System to the Universe",
+  "description": "Astronomy explores the universe from nearby planets to the cosmic horizon. The Big Bang model, confirmed by cosmic microwave background, describes a 13.8-billion-year history of expansion and structure formation.",
+  "dateCreated": "2026-05-24T18:00:04.475Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "An Introduction to Modern Astrophysics, 2nd Edition",
+      "sameAs": "https://www.cambridge.org/9781108422161"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "NASA JWST Science",
+      "sameAs": "https://webb.nasa.gov/"
+    }
+  ]
+}

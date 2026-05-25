@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/sports-biomechanics>
+  a schema:Article ;
+  schema:headline "Sports Biomechanics: The Physics of Human Movement" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/sports-biomechanics>
+  schema:citation <https://www.humankinetics.com/biomechanics-of-sport-and-exercise/> .
+
+<https://anchorfact.org/kb/sports-biomechanics>
+  schema:citation <https://www.harpercollins.com/products/the-physics-of-baseball-robert-k-adair> .

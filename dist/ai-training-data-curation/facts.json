@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f1",
+    "text": "Data-centric AI (as championed by Andrew Ng) posits that systematically improving data quality yields greater performance gains than iterating on model architecture for many practical applications.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2207.10062"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f2",
+    "text": "Dolma (Soldaini et al. 2024, Allen Institute for AI) is an open corpus of 3 trillion tokens for language model pretraining research, providing unprecedented transparency into training data.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2402.00159"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f3",
+    "text": "Data quality dimensions for ML include accuracy, completeness, consistency, timeliness, and representativeness. The METRIC framework (Nature Digital Medicine 2024) provides a systematic approach to assessing data quality for trustworthy AI.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1038/s41746-024-01196-4"
+    }
+  }
+]

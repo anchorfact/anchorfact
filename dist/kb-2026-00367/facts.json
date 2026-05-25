@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-01",
+    "text": "First image captured by Event Horizon Telescope",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/26703/a-brief-history-of-time-by-stephen-hawking/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-02",
+    "text": "A black hole is a region of spacetime where gravity is so strong that nothing — not even light — can escape",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/26703/a-brief-history-of-time-by-stephen-hawking/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-03",
+    "text": "Supermassive black holes: center of most galaxies",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/26703/a-brief-history-of-time-by-stephen-hawking/"
+    }
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-01",
+    "text": "LoRA is a parameter-efficient fine-tuning method for large language models, introduced by Hu et al",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.48550/arXiv.2106.09685"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-02",
+    "text": "from Microsoft in 2021",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.48550/arXiv.2106.09685"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-03",
+    "text": "The method has become the dominant fine-tuning approach in the open-source LLM community, with 13,547 GitHub stars",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.48550/arXiv.2106.09685"
+    }
+  }
+]

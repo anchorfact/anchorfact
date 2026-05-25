@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-01",
+    "text": "Most addictive substances : heroin, cocaine, nicotine, alcohol, methamphetamine",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://drgabormate.com/book/in-the-realm-of-hungry-ghosts/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-001",
+    "text": "Addiction is a chronic brain disease characterized by compulsive substance use despite harmful consequences. It hijacks the brain's reward system (dopamine pathway). Addiction is not a moral failing — it has genetic (40-60% heritability), environmental, and neurobiological roots. Treatment: medication-assisted therapy, CBT, support groups.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://drgabormate.com/book/in-the-realm-of-hungry-ghosts/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-002",
+    "text": "Most addictive substances (ranking): heroin, cocaine, nicotine, alcohol, methamphetamine.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://drgabormate.com/book/in-the-realm-of-hungry-ghosts/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-003",
+    "text": "'The opposite of addiction is connection' (Johann Hari).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://drgabormate.com/book/in-the-realm-of-hungry-ghosts/"
+    }
+  }
+]

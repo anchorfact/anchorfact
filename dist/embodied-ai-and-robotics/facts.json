@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f1",
+    "text": "RT-2 (Brohan et al. 2023, Google DeepMind) is a vision-language-action model that transfers web-scale knowledge to robotic control, enabling generalization to novel objects and instructions without task-specific training.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2307.15818"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f2",
+    "text": "SayCan (Ahn et al. 2022, Google Robotics) grounds language model reasoning in robotic affordances by scoring actions based on both LLM probability and real-world feasibility, enabling natural language robot control.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2204.01691"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f3",
+    "text": "Habitat (Savva et al. 2019, Meta AI) provides a high-performance simulation platform for embodied AI research, enabling training of agents in photorealistic 3D environments at over 10,000 FPS.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/1904.01201"
+    }
+  }
+]

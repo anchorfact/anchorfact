@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-code-translation>
+  a schema:article ;
+  schema:headline "AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-code-translation>
+  schema:citation <https://arxiv.org/search/?query=code+translation+LLM+legacy+modernization> .
+
+<https://anchorfact.org/kb/ai-code-translation>
+  schema:citation <https://arxiv.org/search/?query=LLM+program+translation+transpilation> .

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-supply-chain>
+  a schema:article ;
+  schema:headline "AI for Supply Chain: Optimization, Vehicle Routing, and Logistics Intelligence" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-supply-chain>
+  schema:citation <https://optimization-online.org/wp-content/uploads/2025/12/GalandeJozaniBuyuktahtakin2025_AISupplyChain_OptOnline.pdf> .
+
+<https://anchorfact.org/kb/ai-for-supply-chain>
+  schema:citation <https://www.nature.com/articles/s41598-025-18309-y> .

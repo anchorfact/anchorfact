@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-hyperautomation",
+  "headline": "AI for Hyperautomation: RPA, Intelligent Document Processing, and Cognitive Workflows",
+  "description": "Hyperautomation combines RPA (software robots that mimic human clicks and keystrokes), AI (machine learning for decision-making), and intelligent document processing (extracting meaning from unstructured documents) into end-to-end autonomous business workflows. From invoice processing to insurance claims to customer onboarding, hyperautomation is transforming back-office operations by automating knowledge work that previously required human judgment.",
+  "dateCreated": "2026-05-24T18:00:02.981Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "A Framework for Integrating Robotic Process Automation and Artificial Intelligence in the Context of Industry 5.0",
+      "sameAs": "https://www.mdpi.com/2076-3417/15/13/7402"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Intelligent Document Processing: RPA and AI Transforming Business Operations at Scale",
+      "sameAs": "https://www.researchgate.net/publication/390175338"
+    }
+  ]
+}

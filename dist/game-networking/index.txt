@@ -1,0 +1,30 @@
+# Game Networking Architecture
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Multiplayer game networking delivers responsive real-time interaction over unreliable networks. The core challenges are latency compensation, state synchronization, and cheat prevention — solved through authoritative servers and client-side prediction.
+
+## Core Architecture
+
+### Authoritative Server Model
+The server is the sole authority on game state. Clients send input commands; the server processes them and broadcasts results. This prevents client-side cheating (speed hacks, wallhacks) because the server validates every action.
+
+### Client-Side Prediction
+Players would experience unacceptable input lag (100-200ms) waiting for server confirmation. Instead, clients predict their own movement immediately and reconcile when the server's version arrives. Mispredictions cause rubber-banding — the visual snapback when correction occurs.
+
+### Interpolation and Lag Compensation
+Other players' positions are interpolated between the last two known states, displayed slightly behind real-time (typically 100ms). This creates smooth movement at the cost of slight delay. Lag compensation rewinds server state to the client's perceived time for hit detection.
+
+### State Synchronization Strategies
+- **Full state sync**: Send entire world state each tick (expensive, simple)
+- **Delta compression**: Send only changed fields (efficient, complex)
+- **Interest management**: Send only entities relevant to each player
+
+## Transport Layer
+UDP dominates game networking because:
+- No head-of-line blocking (lost packets don't stall the stream)
+- Application-level reliability control (resend only what matters)
+- Lower latency than TCP (no connection handshake per packet)
+

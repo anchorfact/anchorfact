@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00009",
+  "headline": "Diffusion Models",
+  "description": "Diffusion models are generative models that create data (images, video, audio, 3D) by learning to reverse a gradual noise-adding process. Starting from pure random noise, they iteratively denoise toward a coherent output. Popularized by DDPM (Ho et al., 2020, UC Berkeley, 15,000+ citations on Google Scholar as of May 2026) and made practical by Stable Diffusion / Latent Diffusion Models (Rombach et al., 2022), diffusion has surpassed GANs as the dominant paradigm for high-quality image generation and has expanded to video (Sora), audio (AudioLDM), 3D (DreamFusion), and biology (AlphaFold 3).",
+  "dateCreated": "2026-05-24T18:00:03.283Z",
+  "dateModified": "2026-05-24T18:00:03.283Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Denoising Diffusion Probabilistic Models (DDPM)",
+      "author": "Ho, Jonathan, Jain, Ajay, Abbeel, Pieter",
+      "sameAs": "https://arxiv.org/abs/2006.11239"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "High-Resolution Image Synthesis with Latent Diffusion Models (Stable Diffusion)",
+      "author": "Rombach, Robin, Blattmann, Andreas, Lorenz, Dominik, Esser, Patrick, Ommer, Björn",
+      "sameAs": "https://arxiv.org/abs/2112.10752"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Score-Based Generative Modeling through Stochastic Differential Equations",
+      "author": "Song, Yang, Sohl-Dickstein, Jascha, Kingma, Diederik P., Kumar, Abhishek, Ermon, Stefano, Poole, Ben",
+      "sameAs": "https://arxiv.org/abs/2011.13456"
+    }
+  ]
+}

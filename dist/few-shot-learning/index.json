@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/few-shot-learning",
+  "headline": "Few-Shot Learning: Prototypical Networks, MAML, and In-Context Adaptation",
+  "description": "Few-shot learning teaches AI to recognize new concepts from just a handful of examples -- the way humans learn (see one panda, recognize all pandas). From Prototypical Networks to MAML to in-context learning in foundation models, the ability to generalize from few examples is transforming AI from narrow specialists to flexible generalists.",
+  "dateCreated": "2026-05-24T18:00:03.304Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Prototypical Networks for Few-shot Learning",
+      "sameAs": "https://arxiv.org/abs/1703.05175"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks (MAML)",
+      "sameAs": "https://arxiv.org/abs/1703.03400"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-vector-databases-1",
+    "text": "Microsoft Research DiskANN (2026) achieved the state-of-the-art in web-scale vector search — indexing and querying billion-scale embedding datasets with >95% recall at <5ms latency per query using graph-based ANN algorithms with SSD-aware index layouts, enabling hybrid vector+keyword search at Bing and Microsoft 365 Copilot for trillions of documents.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.microsoft.com/en-us/research/project/project-akupara-approximate-nearest-neighbor-search-for-large-scale-semantic-search/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-vector-databases-2",
+    "text": "arxiv (October 2025) introduced DSANN — a distributed storage ANN system for billion-scale vector databases — combining concurrent indexing, distributed storage with load balancing, and fault-tolerant query serving — demonstrating linear scalability to 10 billion 128-dimensional vectors while maintaining sub-10ms query latency, addressing the infrastructure challenge of deploying vector search at internet scale.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2510.17326"
+    }
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00360",
+  "headline": "Napoleonic Era",
+  "description": "Napoleon Bonaparte (1769-1821) rose from Corsican artillery officer to Emperor of France (1804-1814, 1815). Military genius: won most battles through speed, concentration of force, and corps system. Napoleonic Code (1804) reformed legal systems across Europe. Defeated by coalition of European powers, died in exile on St. Helena.",
+  "dateCreated": "2026-05-24T18:00:04.436Z",
+  "dateModified": "2026-05-24T18:00:04.436Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Napoleon: A Life (Andrew Roberts)",
+      "sameAs": "https://www.penguinrandomhouse.com/books/222045/napoleon-by-andrew-roberts/"
+    }
+  ]
+}

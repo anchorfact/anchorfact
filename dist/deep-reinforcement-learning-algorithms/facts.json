@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-deep-reinforcement-learning-algorithms-1",
+    "text": "PPO (Proximal Policy Optimization, Schulman et al., 2017) became the default deep RL algorithm — used by OpenAI for Dota 2 and robotics — by constraining policy updates to a \"trust region\" via clipped probability ratios, achieving stability without the complexity of TRPO.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/1707.06347"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-deep-reinforcement-learning-algorithms-2",
+    "text": "Dreamer v3 (Hafner et al., 2024) achieves super-human performance on Minecraft diamond collection without human data, learning a world model from pixels and planning via latent imagination — demonstrating that model-based RL can solve long-horizon tasks in complex 3D environments.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2301.04104"
+    }
+  }
+]

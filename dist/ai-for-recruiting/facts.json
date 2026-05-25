@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-recruiting-1",
+    "text": "A comprehensive fairness review (arxiv, updated May 2025) analyzed AI-driven recruitment systems — categorizing biases (historical — learning from past discriminatory hiring, representation — underrepresented groups in training data, measurement — features proxying protected attributes) — and evaluating countermeasures: adversarial debiasing reducing gender/race bias by 30-50%, counterfactual fairness constraints, and blind screening (removing name/gender/age), but noting that no single technique eliminates all bias, and AI can \"launder\" discrimination through seemingly neutral proxies (zip code, school name, hobby keywords).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2405.19699"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-recruiting-2",
+    "text": "Springer (September 2025) published a systematic literature review of AI in employee recruitment — analyzing 87 studies — finding that AI reduces time-to-hire by 40-60% and improves candidate-job matching quality (measured by retention at 12 months) by 15-25%, but that 42% of AI-screened candidates report lower trust in the process compared to human-screened, highlighting the transparency-explainability gap as the primary adoption barrier.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://link.springer.com/article/10.1007/s44282-025-00246-w"
+    }
+  }
+]

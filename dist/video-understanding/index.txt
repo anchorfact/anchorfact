@@ -1,0 +1,14 @@
+# Video Understanding: Action Recognition, Temporal Action Detection, and Video-Language Models
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Video understanding teaches AI to comprehend what happens in video -- recognizing actions (jumping, cooking, playing guitar), detecting when actions start and end, and answering natural language questions about video content. From surveillance and sports analytics to robot learning and content moderation, action recognition is the visual backbone of temporal AI.
+
+## Core Explanation
+Three task granularities: (1) Action classification -- given a trimmed video clip (3-10 seconds), classify the action (Kinetics-400: 400 classes). One label per clip; (2) Temporal action detection -- given an untrimmed video (minutes to hours), detect all action instances with start time, end time, and class label. Much harder due to variable duration and background frames; (3) Spatio-temporal action detection -- add bounding boxes around the person performing each action in each frame (AVA dataset). Architecture evolution: Two-stream (RGB + optical flow) -> 3D CNNs (C3D, I3D, SlowFast -- two pathways: slow for spatial, fast for temporal) -> Video Transformers (TimeSformer, VideoSwin, VideoMAE). Key insight: video has massive temporal redundancy; masked autoencoding (VideoMAE -- mask 90% of video patches, reconstruct) is extremely effective for self-supervised pretraining.
+
+## Detailed Analysis
+TimeSformer (2021, Meta): applies self-attention along spatial dimensions and temporal dimensions separately (divided space-time attention), reducing compute from O(T^2*S^2) to O(T^2+S^2). VideoMAE (2022): randomly mask 90% of spacetime patches, train to reconstruct -- the extreme masking forces the model to learn high-level semantics rather than copying nearby frames. Achieves SOTA with efficient training. SlowFast (2019): Slow pathway (low frame rate, high spatial resolution) captures spatial semantics (objects, scenes); Fast pathway (high frame rate, low spatial resolution) captures motion. Temporal action detection: THUMOS, ActivityNet benchmarks. Approaches: two-stage (propose segments, classify) and single-stage (anchor-free detection). SOTA around 45-55% mAP on ActivityNet -- far below image detection (60-80% mAP). Video-language models (TemporalVLM): answer questions about video content ("Did the person stir the pot before or after adding salt?"). Applications: surveillance (anomaly detection), sports analytics (player action tracking), content moderation (violent/sensitive content), robot learning (learning manipulation from video).
+

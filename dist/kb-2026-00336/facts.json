@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-01",
+    "text": "Human genome: 3 billion base pairs, 20,000-25,000 genes",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.simonandschuster.com/books/The-Double-Helix/James-D-Watson/9780743216302"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-001",
+    "text": "DNA (deoxyribonucleic acid) is the molecule carrying genetic instructions. Watson, Crick, and Wilkins (1953, Nobel 1962) - with crucial X-ray crystallography data from Rosalind Franklin - determined DNA's double helix structure: two antiparallel strands of sugar-phosphate backbone linked by complementary base pairs (A-T, G-C).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.simonandschuster.com/books/The-Double-Helix/James-D-Watson/9780743216302"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-002",
+    "text": "A pairs with T (2 hydrogen bonds), G pairs with C (3 bonds — stronger).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.simonandschuster.com/books/The-Double-Helix/James-D-Watson/9780743216302"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-003",
+    "text": "Human genome: ~3 billion base pairs, ~20,000-25,000 genes.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.simonandschuster.com/books/The-Double-Helix/James-D-Watson/9780743216302"
+    }
+  }
+]

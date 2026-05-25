@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI for Data Visualization: Automated Chart Generation, Insight Discovery, and Visual Analytics — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+AI is democratizing data visualization -- transforming "what chart should I use?" from a design decision requiring expertise to an automated recommendation, and enabling natural language queries that generate interactive dashboards in seconds. LLMs can now both create charts and understand existing ones, bridging the gap between data and human comprehension.<br>
+<br>
+## Core Explanation<br>
+AI for visualization (AI4VIS) pipeline: Raw data -> (1) Data characterization -- AI analyzes column types (categorical, numerical, temporal), distributions, and relationships to determine visual encoding suitability; (2) Chart recommendation -- rule-based (rank charts by expressiveness and effectiveness per Mackinlay's ranking) + ML-based (trained on corpus of human-created visualizations) -> recommends chart type (bar, line, scatter, map, heatmap); (3) Visual encoding -- map data fields to visual channels (x-position, y-position, color, size, shape) using perceptual principles; (4) Code generation -- LLM generates D3.js, Vega-Lite, or matplotlib code; (5) Insight detection -- statistical tests identify significant patterns (trends, outliers, clusters) and LLM generates natural language descriptions.<br>
+<br>
+## Detailed Analysis<br>
+VIS+AI (Springer 2023): AI4VIS subfields: data transformation (AI cleans/reshapes), visual mapping (AI chooses encodings), visual generation (AI writes visualization code), and insight communication (AI generates narratives). VIS4AI: visualizing model internals (activation atlases, feature visualization), model comparison dashboards, and embedding projectors (TensorBoard, What-If Tool). AVA (2024): end-to-end pipeline from raw CSV to interactive dashboard with insights. Data preprocessing (missing value imputation, outlier detection, normalization) -> empirical recommendation (data-to-vis mapping) -> insight recommendation (statistical + ML-based pattern detection) -> narrative generation (template-based + LLM). NL2VIS: "Show sales trends over 5 years" -> LLM selects line chart with time on x-axis -> generates code. Multimodal chart understanding (2024-2025): Qwen3-VL, GPT-4V can interpret existing charts -- answering "What was the peak quarter?" from a chart image. Key challenges: (1) Hallucinated insights -- LLMs "find" patterns that do not exist; (2) Domain specificity -- scientific visualization (volume rendering, flow vis) requires specialized AI; (3) Accessibility -- visualization is inherently visual, creating barriers for blind users.<br>
+</article></body>
+</html>

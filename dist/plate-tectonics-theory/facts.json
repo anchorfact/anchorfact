@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geo-pt-001",
+    "text": "Plate tectonics (1960s): unified Hess's seafloor spreading (1962) with Wegener's continental drift (1912).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.routledge.com/Plate-Tectonics-An-Insiders-History-Of-The-Modern-Theory-Of-The-Earth/Oreskes/p/book/9780813341323"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geo-pt-002",
+    "text": "Pacific Ring of Fire: ~75% active volcanoes, ~90% earthquakes, driven by subduction.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://pubs.usgs.gov/imap/2800/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geo-pt-003",
+    "text": "Himalayas formed ~50 mya from India-Eurasia collision, rising ~1 cm/year (Tapponnier, Science 2001).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1126/science.105978"
+    }
+  }
+]

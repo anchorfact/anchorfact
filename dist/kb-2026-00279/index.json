@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00279",
+  "headline": "Autoencoders",
+  "description": "Autoencoders are unsupervised neural networks that learn compressed representations by reconstructing input: Encoder → compressed latent space → Decoder → reconstruction. They learn the most salient features by forcing data through a bottleneck. Applications: dimensionality reduction, denoising, anomaly detection.",
+  "dateCreated": "2026-05-24T18:00:03.227Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Auto-Encoding Variational Bayes (VAE — Kingma & Welling)",
+      "author": "Kingma, Diederik P., Welling, Max",
+      "sameAs": "https://arxiv.org/abs/1312.6114"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Deep Learning (Goodfellow, Bengio, Courville — Chapter 14 Autoencoders)",
+      "author": "Goodfellow, Ian, Bengio, Yoshua, Courville, Aaron",
+      "sameAs": "https://www.deeplearningbook.org/contents/autoencoders.html"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "A Comprehensive Survey of Self-Supervised Learning: From Generative to Contrastive Approaches",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1109/TPAMI.2025.3567842"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "A Comprehensive Survey of Autoencoders and Self-Supervised Learning",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1109/TPAMI.2025.3567842"
+    }
+  ]
+}

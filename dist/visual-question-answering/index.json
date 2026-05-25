@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/visual-question-answering",
+  "headline": "Visual Question Answering: Vision-Language Models for Image Understanding and Reasoning",
+  "description": "Visual Question Answering (VQA) tests whether AI truly understands images — given a photo and a natural language question, the model must provide the correct answer. This requires integrating computer vision (what objects are present, their spatial relationships) with language understanding (parsing the question, reasoning about its intent). VQA is the quintessential multimodal AI benchmark.",
+  "dateCreated": "2026-05-24T18:00:03.551Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Visual Question Answering: A Survey of Methods, Datasets, and Future Directions",
+      "sameAs": "https://dl.acm.org/doi/full/10.1145/3728635"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "VQA and Visual Reasoning: An Overview of Approaches, Datasets, and Future Challenges",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S0925231225000177"
+    }
+  ]
+}

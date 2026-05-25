@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Advanced RAG: From Naive Retrieval to Agentic RAG — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+RAG (Retrieval-Augmented Generation) has evolved from simple chunk retrieval to sophisticated agentic architectures. Advanced techniques — HyDE, multi-hop, re-ranking, Self-RAG, Agentic RAG — have transformed it from a simple technique into a production-grade knowledge infrastructure.<br>
+<br>
+## Core Explanation<br>
+RAG pipeline: document parsing → chunking (semantic, recursive, sliding window) → embedding → vector store → retrieval (sparse BM25 + dense embeddings = hybrid) → re-ranking → context assembly → generation. Chunking strategy is the most impactful design decision: too small loses context; too large dilutes relevance.<br>
+<br>
+## Detailed Analysis<br>
+HyDE generates a hypothetical ideal answer, embeds it, and retrieves similar documents — often outperforms direct query embedding. Self-RAG trains the model to decide when to retrieve, critique its own generations, and self-correct. Agentic RAG delegates retrieval strategy to the LLM: "search for X, if not found try Y, then synthesize from Z."<br>
+<br>
+## Further Reading<br>
+- LlamaIndex: Advanced RAG Guide<br>
+- LangChain RAG Documentation<br>
+- Microsoft: GraphRAG (Knowledge Graph + RAG)</article></body>
+</html>

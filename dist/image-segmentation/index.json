@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/image-segmentation",
+  "headline": "Image Segmentation: From U-Net to SAM",
+  "description": "Image segmentation partitions images into meaningful regions — semantic (class per pixel), instance (object per pixel), or panoptic (both). U-Net dominates medical imaging; SAM enables general-purpose interactive segmentation.",
+  "dateCreated": "2026-05-24T18:00:03.352Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+      "sameAs": "https://arxiv.org/abs/1505.04597"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Segment Anything (SAM)",
+      "sameAs": "https://arxiv.org/abs/2304.02643"
+    }
+  ]
+}

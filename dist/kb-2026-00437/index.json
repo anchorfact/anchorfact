@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00437",
+  "headline": "Lean Manufacturing",
+  "description": "Lean manufacturing (Toyota Production System, 1950s) maximizes value while minimizing waste. 5 principles: define value, map value stream, create flow, establish pull, pursue perfection. 7 wastes (muda): overproduction, waiting, transport, over-processing, inventory, motion, defects. Applicable beyond manufacturing.",
+  "dateCreated": "2026-05-24T18:00:03.672Z",
+  "dateModified": "2026-05-24T18:00:03.672Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Machine That Changed the World (Womack, Jones, Roos)",
+      "sameAs": "https://www.simonandschuster.com/books/The-Machine-That-Changed-the-World/James-P-Womack/9780743299794"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Toyota Way: 14 Management Principles (2nd Edition, 2025)",
+      "author": "Liker J.K.",
+      "sameAs": "https://www.mheducation.com/toyota-way/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Lean Thinking: Banish Waste and Create Wealth (2025 Updated)",
+      "author": "Womack J.P., Jones D.T.",
+      "sameAs": "https://www.simonandschuster.com/lean-thinking/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Toyota Way (2nd Edition, 2025)",
+      "author": "Liker J.K.",
+      "sameAs": "https://www.mheducation.com/toyota-way/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Lean Thinking (2025 Updated)",
+      "author": "Womack J.P., Jones D.T.",
+      "sameAs": "https://www.simonandschuster.com/lean-thinking/"
+    }
+  ]
+}

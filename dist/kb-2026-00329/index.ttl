@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00329>
+  a schema:TechArticle ;
+  schema:headline "Silk Road" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00329>
+  schema:citation <https://www.bloomsbury.com/us/silk-roads-9781408839973/> .
+
+<https://anchorfact.org/kb/kb-2026-00329>
+  schema:citation <https://www.bloomsbury.com/silk-roads/> .
+
+<https://anchorfact.org/kb/kb-2026-00329>
+  schema:citation <https://global.oup.com/vsi-silk-road/> .

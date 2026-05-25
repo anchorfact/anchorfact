@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI for Tabular Data: Synthetic Generation, Diffusion Models, and Privacy-Preserving Structured Data — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Tabular data -- spreadsheets, databases, CSV files -- is the most common data format in industry yet the least addressed by generative AI. Synthetic tabular data generation creates realistic but artificial structured datasets for privacy-preserving sharing, data augmentation, and imputation. Diffusion models and LLM-based approaches now match real data distributions with formal privacy guarantees.<br>
+<br>
+## Core Explanation<br>
+Why synthetic tabular data: (1) Privacy -- share realistic patient/financial data without exposing real individuals; (2) Scarcity -- augment small datasets for ML training; (3) Imputation -- fill missing values with plausible synthetic data; (4) Testing -- generate diverse test datasets. Challenge: tabular data is heterogeneous -- mixed types (numerical + categorical + datetime + text), complex distributions (multimodal, heavy-tailed), and inter-column correlations. Unlike homogeneous image pixels, tabular data requires specialized generative architectures.<br>
+<br>
+## Detailed Analysis<br>
+Method taxonomy (arxiv 2025): (A) Statistical -- Gaussian copula, Bayesian networks (fast, interpretable, limited expressiveness). CTGAN (2019) -- mode-specific normalization + conditional GAN with sampling-based training, the most widely-used method; (B) VAE-based -- TVAE treats each column as separate variable with appropriate prior; (C) Diffusion -- TabDDPM treats column processes as independent diffusions synchronized via classifier-free guidance; (D) LLM-based -- GReaT serializes table rows as text, fine-tunes GPT-2 to generate novel rows. ScienceDirect 2025 LLM framework: treats table as a corpus where each row is a sentence. LLM learns joint distributions via next-token prediction. Evaluation: statistical fidelity (KS test, correlation difference, Wasserstein distance), ML utility (TSTR -- Train Synthetic Test Real), privacy (membership inference attack resistance). Key challenges: relational databases (multiple linked tables with foreign keys) and differential privacy integration (formal epsilon-delta guarantees).<br>
+<br>
+## Further Reading<br>
+- SDV: Synthetic Data Vault (MIT) -- Python Library<br>
+- CTGAN: Conditional Tabular GAN (NeurIPS 2019)<br>
+- SynthCity: Synthetic Data Generation & Evaluation (Cambridge)<br>
+</article></body>
+</html>

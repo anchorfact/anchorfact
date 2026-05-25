@@ -1,0 +1,96 @@
+---
+id: kb-2026-00449
+title: Tennis Strategy
+schema_type: TechArticle
+category: sports
+language: en
+confidence: high
+last_verified: "2026-05-24"
+created_date: "2026-05-22"
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
+derived_from_human_seed: true
+conflict_of_interest: none_declared
+is_live_document: false
+data_period: static
+atomic_facts:
+  - id: fact-sports-001
+    statement: >-
+      Tennis combines physical skill with strategic thinking. Scoring: 15-30-40-game, 6 games per set (win by 2, tiebreak at 6-6). Strategy: exploit opponent weaknesses, control center of court, serve
+      placement over power, approach net when advantageous. Mental game is as important as physical — managing emotions and momentum.
+    source_title: ITF Rules of Tennis
+    source_url: https://www.itftennis.com/en/about-us/governance/rules-and-regulations/
+    confidence: medium
+  - id: fact-sports-002
+    statement: "Grand Slam tournaments (4): Australian Open, French Open (clay), Wimbledon (grass), US Open (hard)."
+    source_title: Winning Ugly (Brad Gilbert)
+    source_url: https://www.simonandschuster.com/books/Winning-Ugly/Brad-Gilbert/9780671884000
+    confidence: medium
+  - id: fact-sports-003
+    statement: Best of 5 sets (men's Grand Slam), best of 3 (women's, most ATP).
+    source_title: Winning Ugly (Brad Gilbert)
+    source_url: https://www.simonandschuster.com/books/Winning-Ugly/Brad-Gilbert/9780671884000
+    confidence: medium
+  - id: fact-sports-004
+    statement: "Legends: Federer, Nadal, Djokovic, Serena Williams."
+    source_title: Winning Ugly (Brad Gilbert)
+    source_url: https://www.simonandschuster.com/books/Winning-Ugly/Brad-Gilbert/9780671884000
+    confidence: medium
+completeness: 0.88
+known_gaps:
+  - Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed
+  - Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims
+disputed_statements:
+  - statement: The value of analytics-driven versus intuition-based coaching in sports remains debated, with tensions between statistical optimization and experienced human judgment
+primary_sources:
+  - title: Winning Ugly (Brad Gilbert)
+    type: book
+    year: 1993
+    url: https://www.simonandschuster.com/books/Winning-Ugly/Brad-Gilbert/9780671884000
+    institution: Touchstone
+  - title: "Winning Ugly: Mental Warfare in Tennis (2025)"
+    type: book
+    year: 2025
+    authors:
+      - Gilbert B.
+      - Jamison S.
+    institution: Simon & Schuster
+    url: https://www.simonandschuster.com/winning-ugly/
+  - title: The Inner Game of Tennis (2025 50th Anniversary)
+    type: book
+    year: 2025
+    authors:
+      - Gallwey W.T.
+    institution: Random House
+    url: https://www.penguinrandomhouse.com/inner-tennis/
+secondary_sources:
+  - title: ITF Rules of Tennis
+    type: rulebook
+    year: 2024
+    url: https://www.itftennis.com/en/about-us/governance/rules-and-regulations/
+    institution: International Tennis Federation
+  - title: Sports Rules Encyclopedia
+    type: reference
+    year: 2023
+    url: https://www.olympic.org/sports
+    institution: International Olympic Committee
+---
+## TL;DR
+
+Tennis combines physical skill with strategic thinking. Scoring: 15-30-40-game, 6 games per set (win by 2, tiebreak at 6-6). Strategy: exploit opponent weaknesses, control center of court, serve placement over power, approach net when advantageous. Mental game is as important as physical — managing emotions and momentum.
+
+## Core Explanation
+
+Singles court: baseline (back), service boxes, net. Serve: flat (speed), slice (curve), kick (high bounce). Grand Slam tournaments (4): Australian Open, French Open (clay), Wimbledon (grass), US Open (hard). Best of 5 sets (men's Grand Slam), best of 3 (women's, most ATP). Legends: Federer, Nadal, Djokovic, Serena Williams. Tiebreak: first to 7 points (win by 2).
+
+## Further Reading
+
+- [Winning Ugly (Brad Gilbert)](https://www.simonandschuster.com/books/Winning-Ugly/Brad-Gilbert/9780671884000)
+atomic_facts:
+  - id: "fact-sports-001"
+    statement: "Tennis combines physical skill with strategic thinking"
+    confidence: "medium"
+  - id: "fact-sports-002"
+    statement: "Mental game is as important as physical — managing emotions and momentum"
+    confidence: "medium"

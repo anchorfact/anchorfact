@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-chemistry",
+  "headline": "AI for Chemistry: Reaction Prediction, Retrosynthesis, and Computational Chemistry",
+  "description": "AI is transforming chemistry from a fundamentally experimental science to a computationally predictable one. Machine learning potentials simulate molecular dynamics at quantum accuracy with million-fold speedups, while AI retrosynthesis tools design complete synthetic routes in minutes rather than weeks. These capabilities are accelerating discovery across pharmaceuticals, materials, and catalysis.",
+  "dateCreated": "2026-05-24T18:00:02.925Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "E(3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials (NequIP)",
+      "sameAs": "https://www.nature.com/articles/s41467-022-29939-5"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Predicting retrosynthetic pathways using transformer-based models (Molecular Transformer)",
+      "sameAs": "https://pubs.acs.org/doi/10.1021/acscentsci.9b00576"
+    }
+  ]
+}

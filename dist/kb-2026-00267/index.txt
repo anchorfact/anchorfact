@@ -1,0 +1,17 @@
+# Neural Network Basics
+Confidence: high
+Last verified: 2026-05-22
+Generation: human_only
+
+## TL;DR
+
+Neural networks are computing systems inspired by biological neurons: layers of interconnected nodes that transform input data through weighted connections and activation functions. A simple feedforward network: Input Layer → Hidden Layer(s) → Output Layer. Each neuron computes weighted sum + bias + activation function.
+
+## Core Explanation
+
+Activation functions: ReLU (most common), sigmoid (binary out), tanh (-1 to 1), softmax (multi-class probability). Training: forward pass computes output, backward pass (backpropagation) updates weights via gradient descent. Universal Approximation Theorem: a single hidden layer can approximate any continuous function (given enough neurons).
+
+## Further Reading
+
+- [Deep Learning (Goodfellow, Bengio, Courville)](https://www.deeplearningbook.org/)
+

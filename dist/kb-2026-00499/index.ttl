@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00499>
+  a schema:TechArticle ;
+  schema:headline "Philosophy of Mind" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00499>
+  schema:citation <https://www.hachettebookgroup.com/titles/daniel-c-dennett/consciousness-explained/9780316180658/> .

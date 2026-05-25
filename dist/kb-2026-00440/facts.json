@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-self-improvement-001",
+    "text": "Time management prioritizes tasks for maximum effectiveness. Eisenhower Matrix: urgent/important quadrants — do important before urgent. Pareto Principle: 80% of results from 20% of effort. Time blocking: schedule deep work sessions. Parkinson's Law: work expands to fill available time — set deadlines.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-self-improvement-002",
+    "text": "Covey's 7 Habits: Be proactive, Begin with end in mind, First things first, Think win-win, Seek first to understand, Synergize, Sharpen the saw.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.simonandschuster.com/books/The-7-Habits-of-Highly-Effective-People/Stephen-R-Covey/9781982143817"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-self-improvement-003",
+    "text": "Deep work (Cal Newport): 90-minute focused blocks — 4 hours deep work can exceed 12 hours shallow work.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/"
+    }
+  }
+]

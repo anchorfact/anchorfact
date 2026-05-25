@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-construction",
+  "headline": "AI for Construction: Computer Vision Safety, BIM Digital Twins, and Automated Project Monitoring",
+  "description": "The $12 trillion global construction industry is one of the least digitized sectors -- and AI is changing that. Computer vision monitors safety in real-time, drones capture construction progress, and BIM digital twins compare plans to reality automatically. AI reduces accidents by 25-40% and rework costs by 15-20%.",
+  "dateCreated": "2026-05-24T18:00:02.938Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Automation in Construction: AI and Computer Vision for Construction Safety Monitoring (2023-2025 Special Issues)",
+      "sameAs": "https://www.sciencedirect.com/journal/automation-in-construction"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Building Information Modeling (BIM) integrated with AI, IoT, and Digital Twins for Smart Construction",
+      "sameAs": "https://www.sciencedirect.com/search?qs=BIM+AI+digital+twin+construction"
+    }
+  ]
+}

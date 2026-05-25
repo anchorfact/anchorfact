@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/edge-ai-and-tinyml",
+  "headline": "Edge AI and TinyML: Intelligence at the Edge",
+  "description": "Edge AI runs machine learning directly on devices — smartphones, IoT sensors, microcontrollers — eliminating cloud latency and privacy concerns. TinyML pushes ML to devices using <1mW of power.",
+  "dateCreated": "2026-05-24T18:00:03.291Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "TinyML: Machine Learning with TensorFlow Lite",
+      "sameAs": "https://www.oreilly.com/library/view/tinyml/9781492052036/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications",
+      "sameAs": "https://arxiv.org/abs/1704.04861"
+    }
+  ]
+}

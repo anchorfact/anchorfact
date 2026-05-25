@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/image-segmentation>
+  a schema:TechArticle ;
+  schema:headline "Image Segmentation: From U-Net to SAM" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/image-segmentation>
+  schema:citation <https://arxiv.org/abs/1505.04597> .
+
+<https://anchorfact.org/kb/image-segmentation>
+  schema:citation <https://arxiv.org/abs/2304.02643> .

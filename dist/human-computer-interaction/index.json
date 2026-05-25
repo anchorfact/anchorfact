@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/human-computer-interaction",
+  "headline": "Human-Computer Interaction: AI-Powered UX, Generative Interfaces, and Usability Testing",
+  "description": "AI is redesigning how we interact with technology -- from interfaces that generate themselves from natural language descriptions to AI agents that simulate user behavior to test usability. Human-computer interaction, long a field of manual design and testing, is being transformed by generative AI and LLM-based user research.",
+  "dateCreated": "2026-05-24T18:00:03.340Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM CHI 2025: AI + HCI -- Generative Interfaces, Agent-Based Usability Testing, and Intelligent Adaptive Interfaces",
+      "sameAs": "https://chi2025.acm.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Nielsen Norman Group: AI for Usability Testing -- Effectiveness and Limitations (2025)",
+      "sameAs": "https://www.nngroup.com/articles/ai-usability-testing/"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/adversarial-machine-learning>
+  a schema:article ;
+  schema:headline "Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/adversarial-machine-learning>
+  schema:citation <https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2025.pdf> .
+
+<https://anchorfact.org/kb/adversarial-machine-learning>
+  schema:citation <https://www.sciencedirect.com/science/article/pii/S0925231226000676> .

@@ -1,0 +1,19 @@
+# Multi-Omics Integration: AI-Driven Systems Biology from Genomics to Proteomics
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Multi-omics integration uses AI to combine data from multiple biological layers — genome (DNA), transcriptome (RNA), proteome (proteins), and metabolome (small molecules) — into unified models of biological systems. Rather than studying one molecular layer in isolation, multi-omics AI captures the full complexity of living systems, from genetic predisposition to protein function to metabolic output.
+
+## Core Explanation
+The central dogma extended: DNA → RNA → Protein → Metabolites → Phenotype. Each layer provides complementary information: (1) Genomics — what could happen (genetic risk variants); (2) Transcriptomics — what appears to be happening (gene expression); (3) Proteomics — what is actually happening (protein abundance, post-translational modifications — the functional machinery); (4) Metabolomics — what has happened (metabolic byproducts reflecting cellular state); (5) Epigenomics — how gene expression is regulated (DNA methylation, histone modifications). Integration challenge: different omics have different dimensionalities (20K genes vs. 10K proteins vs. 1K metabolites), different noise characteristics, and different measurement platforms. AI integration strategies: (A) Early integration — concatenate all features into one matrix (simplest, ignores modality-specific structure); (B) Intermediate integration — learn separate encodings per omics, then fuse in a joint latent space (autoencoders, multi-modal VAEs); (C) Late integration — build separate models per omics, ensemble predictions.
+
+## Detailed Analysis
+Network-based integration (ScienceDirect 2025 review): construct multi-layer biological networks where nodes are genes/proteins/metabolites and edges are known interactions (protein-protein, TF-gene, metabolic reactions). GNNs propagate information across layers, learning system-wide patterns. CardiOmicScore (Nature Comm 2026): trained on UK Biobank data (500K individuals with genomics, 50K with proteomics, 100K with metabolomics). The model discovered 47 protein-metabolite interactions previously unknown in cardiovascular biology — demonstrating that multi-omics AI generates biological discoveries, not just predictions. Springer 2025 precision oncology review: multi-omics integration improves tumor subtype classification — cancers that appear identical under the microscope have distinct molecular profiles requiring different treatments. AI predicts drug sensitivity by integrating tumor genomics (mutations) with transcriptomics (pathway activation) and proteomics (drug target abundance). MDPI 2024 review categorizes methods into concatenation-based, transformation-based (CCA, PLS), and model-based (Bayesian, network). Key challenge: batch effects — omics data from different labs/cohorts have systematic differences requiring external harmonization (ComBat, Harmony). The 2025 Wiley review emphasizes that multi-omics analysis is shifting from "data integration" to "mechanistic discovery" — using AI to identify causal molecular mechanisms, not just correlational biomarkers.
+
+## Further Reading
+- UK Biobank: Multi-Omics Data for 500K Participants
+- MOFA: Multi-Omics Factor Analysis
+- TCGA: The Cancer Genome Atlas Multi-Omics
+

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-materials-science",
+  "headline": "AI for Materials Science: GNoME, Crystal Discovery, and Materials Informatics",
+  "description": "AI is accelerating materials science from Edisonian trial-and-error to systematic discovery. DeepMind's GNoME used graph neural networks to discover 2.2 million new crystals — 45x the human-accumulated catalog — while autonomous labs synthesize AI-predicted compounds robotically.",
+  "dateCreated": "2026-05-24T18:00:03.002Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Scaling deep learning for materials discovery (GNoME)",
+      "sameAs": "https://www.nature.com/articles/s41586-023-06735-9"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "An autonomous laboratory for the accelerated synthesis of novel materials (A-Lab)",
+      "sameAs": "https://www.nature.com/articles/s41586-023-06934-4"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+# Political Philosophy: Justice, Liberty, and the Social Contract
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Political philosophy addresses fundamental questions of governance: What is justice? What justifies state authority? The social contract tradition — Hobbes through Locke and Rousseau to Rawls — provides the dominant Western framework.
+
+## Core Explanation
+Hobbes argued for absolute sovereignty. Locke countered with natural rights justifying revolution. Rousseau emphasized the general will. Rawls synthesized social contract theory with distributive justice.
+
+## Detailed Analysis
+Nozick's libertarian critique argues only a minimal state is justified. Communitarianism (Sandel, MacIntyre) critiques liberalism's abstract individualism.
+
+## Further Reading
+- Stanford Encyclopedia of Philosophy: Political Philosophy
+- The Harvard Justice Course (Michael Sandel, free online)
+- Philosophy Bites Podcast

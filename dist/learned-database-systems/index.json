@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/learned-database-systems",
+  "headline": "Learned Database Systems: AI-Driven Query Optimization, Learned Indexes, and Cardinality Estimation",
+  "description": "Learned database systems replace decades of hand-tuned heuristics in databases with machine learning models. From learned indexes that replace B-trees with tiny neural networks to learned query optimizers that beat expert-designed cost models, AI is challenging the assumption that classical data structures and algorithms are always optimal for specific data distributions.",
+  "dateCreated": "2026-05-24T18:00:03.374Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Learning database optimization techniques: the state-of-the-art and future directions",
+      "sameAs": "https://link.springer.com/article/10.1007/s11704-025-41116-7"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Case for Learned Index Structures",
+      "sameAs": "https://arxiv.org/abs/1712.01208"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00502",
+  "headline": "Swimming Training and Stroke Techniques",
+  "description": "Competitive swimming comprises four strokes: freestyle, backstroke, breaststroke, butterfly. Training combines aerobic base work, anaerobic sprint sets, technique drills, and dry-land strength. Key concepts: interval training, pace control, flip turns, streamline position, bilateral breathing. Olympic program: 35 events from 50m to 1500m.",
+  "dateCreated": "2026-05-24T18:00:04.624Z",
+  "dateModified": "2026-05-24T18:00:04.624Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "World Aquatics Competition Regulations 2024",
+      "sameAs": "https://www.worldaquatics.com/swimming/rules"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Swimming Fastest (Ernest W. Maglischo)",
+      "sameAs": "https://www.humankinetics.com/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Swimming Anatomy (2025 Edition)",
+      "author": "McLeod I.",
+      "sameAs": "https://us.humankinetics.com/swimming-anatomy/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Swim Coaching Bible (2025 Update)",
+      "author": "multiple",
+      "sameAs": "https://us.humankinetics.com/swimming/"
+    }
+  ]
+}

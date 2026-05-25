@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/cognitive-biases-handbook>
+  a schema:Article ;
+  schema:headline "Cognitive Biases: A Practical Guide to Clearer Thinking" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/cognitive-biases-handbook>
+  schema:citation <https://www.harpercollins.com/products/the-art-of-thinking-clearly-rolf-dobelli> .
+
+<https://anchorfact.org/kb/cognitive-biases-handbook>
+  schema:citation <https://yalebooks.yale.edu/book/9780300122237/nudge/> .
+
+<https://anchorfact.org/kb/cognitive-biases-handbook>
+  schema:citation <https://us.macmillan.com/thinking-fast-and-slow/> .
+
+<https://anchorfact.org/kb/cognitive-biases-handbook>
+  schema:citation <https://www.harpercollins.com/predictably-irrational/> .

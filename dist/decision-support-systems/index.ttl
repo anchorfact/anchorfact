@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/decision-support-systems>
+  a schema:article ;
+  schema:headline "AI Decision Support Systems: Clinical CDSS, Business Intelligence, and Augmented Decision-Making" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/decision-support-systems>
+  schema:citation <https://www.nature.com/npjdigitalmed/> .
+
+<https://anchorfact.org/kb/decision-support-systems>
+  schema:citation <https://www.gartner.com/en/articles/decision-intelligence> .

@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00466>
+  a schema:TechArticle ;
+  schema:headline "Enlightenment Era" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00466>
+  schema:citation <https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A> .
+
+<https://anchorfact.org/kb/kb-2026-00466>
+  schema:citation <https://global.oup.com/vsi-enlightenment/> .
+
+<https://anchorfact.org/kb/kb-2026-00466>
+  schema:citation <https://www.harpercollins.com/enlightenment/> .

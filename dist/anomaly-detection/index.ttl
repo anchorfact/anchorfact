@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/anomaly-detection>
+  a schema:TechArticle ;
+  schema:headline "Anomaly Detection in Machine Learning" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/anomaly-detection>
+  schema:citation <https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/icdm08b.pdf> .
+
+<https://anchorfact.org/kb/anomaly-detection>
+  schema:citation <http://dm.snu.ac.kr/static/docs/TR/SNUDM-TR-2015-03.pdf> .

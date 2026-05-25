@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-recruiting",
+  "headline": "AI for Recruiting: Resume Screening, Talent Matching, and Fairness in Hiring",
+  "description": "AI is reshaping hiring — screening thousands of resumes in seconds, matching candidates to jobs based on skills rather than keywords, and (ideally) reducing human bias. But the fairness challenge is profound: AI trained on historical hiring data can amplify discrimination through seemingly neutral features. Getting AI recruiting right is not just an engineering problem — it's a civil rights issue.",
+  "dateCreated": "2026-05-24T18:00:03.019Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Fairness in AI-Driven Recruitment: Challenges, Metrics, Methods, and Future Directions",
+      "sameAs": "https://arxiv.org/abs/2405.19699"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Role of artificial intelligence in employee recruitment: a systematic literature review",
+      "sameAs": "https://link.springer.com/article/10.1007/s44282-025-00246-w"
+    }
+  ]
+}

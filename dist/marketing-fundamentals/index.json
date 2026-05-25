@@ -1,0 +1,57 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/marketing-fundamentals",
+  "headline": "Marketing: Strategy, Consumer Behavior, and Digital Channels",
+  "description": "Marketing creates, communicates, and delivers value to customers. The 4Ps framework guides strategy; consumer psychology explains why people buy; digital channels enable data-driven targeting at unprecedented scale.",
+  "dateCreated": "2026-05-24T18:00:03.676Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Marketing Management, 15th Global Edition",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/marketing-management/P200000005852"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Influence: The Psychology of Persuasion (Cialdini)",
+      "sameAs": "https://www.harpercollins.com/products/influence-robert-b-cialdini"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Marketing Management (17th Global Edition, 2025)",
+      "author": "Kotler P., Keller K.L.",
+      "sameAs": "https://www.pearson.com/marketing/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "This Is Marketing: You Can't Be Seen Until You Learn to See (2025)",
+      "author": "Godin S.",
+      "sameAs": "https://www.penguinrandomhouse.com/this-is-marketing/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Marketing Management (17th Global, 2025)",
+      "author": "Kotler P., Keller K.L.",
+      "sameAs": "https://www.pearson.com/marketing/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "This Is Marketing (2025)",
+      "author": "Godin S.",
+      "sameAs": "https://www.penguinrandomhouse.com/this-is-marketing/"
+    }
+  ]
+}

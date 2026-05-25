@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-document-understanding",
+  "headline": "AI Document Understanding: Layout Parsing, Structured Extraction, and Intelligent Document Processing",
+  "description": "AI document understanding extracts structured data from unstructured documents — invoices, contracts, medical records, tax forms. From traditional OCR pipelines to end-to-end vision-language models, the field has evolved from optical character recognition to semantic comprehension. LLMs can now \"read\" documents like humans, understanding layout, extracting key fields, and reasoning across tables and text.",
+  "dateCreated": "2026-05-24T18:00:02.885Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Document Parsing Unveiled: Techniques, Challenges, and Prospects for Information Extraction",
+      "sameAs": "https://arxiv.org/abs/2410.21169"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Automate data extraction and analysis from documents with Generative AI (AWS IDP Guide)",
+      "sameAs": "https://aws.amazon.com/ai/generative-ai/use-cases/document-processing/"
+    }
+  ]
+}

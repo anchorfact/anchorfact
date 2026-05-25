@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00502>
+  a schema:TechArticle ;
+  schema:headline "Swimming Training and Stroke Techniques" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00502>
+  schema:citation <https://www.worldaquatics.com/swimming/rules> .
+
+<https://anchorfact.org/kb/kb-2026-00502>
+  schema:citation <https://www.humankinetics.com/> .
+
+<https://anchorfact.org/kb/kb-2026-00502>
+  schema:citation <https://us.humankinetics.com/swimming-anatomy/> .
+
+<https://anchorfact.org/kb/kb-2026-00502>
+  schema:citation <https://us.humankinetics.com/swimming/> .

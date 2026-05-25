@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-drug-discovery>
+  a schema:article ;
+  schema:headline "AI for Drug Discovery: AlphaFold, Molecular Generation, and Generative Chemistry" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-drug-discovery>
+  schema:citation <https://www.nature.com/articles/s41586-024-07487-w> .
+
+<https://anchorfact.org/kb/ai-for-drug-discovery>
+  schema:citation <https://pubs.acs.org/doi/10.1021/acs.jcim.5c00120> .

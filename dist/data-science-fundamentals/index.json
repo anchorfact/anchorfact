@@ -1,0 +1,51 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/data-science-fundamentals",
+  "headline": "Data Science: Methods, Tools, and Best Practices",
+  "description": "Data science combines statistics, computer science, and domain expertise to extract insights from data. The modern workflow — from data wrangling through machine learning to deployment — is supported by Python's ecosystem and cloud infrastructure.",
+  "dateCreated": "2026-05-24T18:00:04.496Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Python for Data Analysis, 3rd Edition",
+      "sameAs": "https://www.oreilly.com/library/view/python-for-data/9781098104023/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Elements of Statistical Learning, 2nd Edition",
+      "sameAs": "https://link.springer.com/book/10.1007/978-0-387-84858-7"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Python for Data Analysis (4th Edition, 2025)",
+      "author": "McKinney W.",
+      "sameAs": "https://www.oreilly.com/pydata/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Data Science: A Comprehensive Overview (2025)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.datascience"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Data Science from Scratch (2025 Edition)",
+      "author": "Grus J.",
+      "sameAs": "https://www.oreilly.com/data-science/"
+    }
+  ]
+}

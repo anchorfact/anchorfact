@@ -1,0 +1,14 @@
+# AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI customer analytics predicts who will churn, segments by behavior, and calculates lifetime value -- all in real-time. From Amplitude to Optimove, AI transforms raw event streams into actionable customer intelligence that drives retention, upsell, and personalization.
+
+## Core Explanation
+Customer analytics AI: (1) Segmentation -- unsupervised: clustering purchase/behavior patterns. Deep embedded clustering learns representations via autoencoder, clusters in latent space; (2) Churn prediction -- supervised binary classification. Features: RFM (recency, frequency, monetary value), engagement trend (declining usage), support sentiment (negative tickets), payment issues. Models: XGBoost (fast, interpretable) and neural networks (higher accuracy); (3) Lifetime Value (CLV) -- survival analysis (Cox PH, DeepSurv, DeepHit) predicts time-to-churn. CLV = expected revenue per period * expected lifespan. Buy-till-you-die models (BG/NBD + Gamma-Gamma); (4) Journey analytics -- Markov chains model transition probabilities between states (visit -> signup -> purchase -> churn). Attribution: Shapley values assign credit across touchpoints.
+
+## Detailed Analysis
+XGBoost churn benchmark: 85-92% AUC. Feature importance: recency (days since last activity) is the strongest predictor. SHAP values explain individual predictions. Uplift modeling: four customer types -- Sure Things (buy anyway), Persuadables (buy if targeted), Sleeping Dogs (churn if targeted), Lost Causes (won't buy). Only target Persuadables. Qini curve measures uplift. Contextual bandits for next-best-action: action space = {send discount, send email, do nothing}. Reward = conversion - cost. Thompson sampling selects optimal action per customer. Amplitude: product analytics tracking user actions, AI identifies behavioral cohorts and engagement patterns. Google Analytics 4: ML-powered predictive metrics (purchase probability, churn probability) built into free analytics. Key challenge: data fragmentation -- customer data siloed across CRM, support, product, and billing systems. CDP (Customer Data Platform) with identity resolution unifies the view.
+

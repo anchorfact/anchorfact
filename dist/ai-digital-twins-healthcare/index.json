@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-digital-twins-healthcare",
+  "headline": "AI Digital Twins for Healthcare: Patient-Specific Simulation, Treatment Planning, and Virtual Organs",
+  "description": "AI creates digital twins of individual patients -- virtual replicas that simulate disease progression and predict treatment response. From Dassault's Living Heart used in arrhythmia surgery planning to in silico clinical trials that reduce human testing, healthcare digital twins represent the frontier of personalized medicine.",
+  "dateCreated": "2026-05-24T18:00:02.872Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AI-Powered Patient-Specific Digital Twins: Cardiac, Orthopedic, and Multi-Organ Simulation for Personalized Medicine (2024-2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=patient+specific+digital+twin+simulation"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "In Silico Clinical Trials: Virtual Patient Cohorts, Regulatory Acceptance, and the Future of Drug Development",
+      "sameAs": "https://arxiv.org/search/?query=in+silico+clinical+trial+digital+twin"
+    }
+  ]
+}

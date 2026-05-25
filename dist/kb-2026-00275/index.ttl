@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00275>
+  a schema:TechArticle ;
+  schema:headline "Computer Vision" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00275>
+  schema:citation <https://szeliski.org/Book/> .
+
+<https://anchorfact.org/kb/kb-2026-00275>
+  schema:citation <https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html> .

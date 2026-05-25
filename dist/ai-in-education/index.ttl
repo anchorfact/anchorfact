@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-in-education>
+  a schema:article ;
+  schema:headline "AI in Education: Personalized Learning and Intelligent Tutoring Systems" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-in-education>
+  schema:citation <https://www.sciencedirect.com/science/article/pii/S2666920X25001699> .
+
+<https://anchorfact.org/kb/ai-in-education>
+  schema:citation <https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1782626/full> .

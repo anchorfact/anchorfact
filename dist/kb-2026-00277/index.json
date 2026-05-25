@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00277",
+  "headline": "Explainable AI (XAI)",
+  "description": "Explainable AI makes model decisions interpretable by humans. As models become more complex (deep NNs, LLMs), understanding WHY a model made a decision becomes critical for trust, debugging, and regulatory compliance (EU AI Act, GDPR). Methods: SHAP (feature importance), LIME (local explanations), attention visualization, saliency maps.",
+  "dateCreated": "2026-05-24T18:00:03.298Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Why Should I Trust You? Explaining the Predictions of Any Classifier (LIME — Ribeiro et al.)",
+      "author": "Ribeiro, Marco Tulio, Singh, Sameer, Guestrin, Carlos",
+      "sameAs": "https://arxiv.org/abs/1602.04938"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "A Unified Approach to Interpreting Model Predictions (SHAP — Lundberg & Lee)",
+      "author": "Lundberg, Scott M., Lee, Su-In",
+      "sameAs": "https://arxiv.org/abs/1705.07874"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Explainable Artificial Intelligence (XAI): A Comprehensive Survey (Arrieta et al. — Information Fusion)",
+      "author": "Arrieta, Alejandro Barredo, Díaz-Rodríguez, Natalia, Del Ser, Javier, et al.",
+      "sameAs": "https://doi.org/10.1016/j.inffus.2019.12.012"
+    }
+  ]
+}

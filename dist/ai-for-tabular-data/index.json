@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-tabular-data",
+  "headline": "AI for Tabular Data: Synthetic Generation, Diffusion Models, and Privacy-Preserving Structured Data",
+  "description": "Tabular data -- spreadsheets, databases, CSV files -- is the most common data format in industry yet the least addressed by generative AI. Synthetic tabular data generation creates realistic but artificial structured datasets for privacy-preserving sharing, data augmentation, and imputation. Diffusion models and LLM-based approaches now match real data distributions with formal privacy guarantees.",
+  "dateCreated": "2026-05-24T18:00:03.051Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "A Comprehensive Survey of Synthetic Tabular Data Generation: Methods, Evaluation, and Applications",
+      "sameAs": "https://arxiv.org/abs/2504.16506"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Generating realistic synthetic tabular data with integrated LLM conditioning",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S0925231225020430"
+    }
+  ]
+}

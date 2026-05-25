@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-protein-design",
+  "headline": "AI Protein Design: RFDiffusion, ProteinMPNN, and the Nobel Revolution",
+  "description": "AI protein design has entered the post-AlphaFold era. RFDiffusion generates novel protein structures from scratch; ProteinMPNN designs sequences that fold into desired shapes; the 2024 Nobel Prize validated this revolution — transforming drug discovery and biotechnology.",
+  "dateCreated": "2026-05-24T18:00:03.119Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "De novo design of protein structure and function with RFdiffusion",
+      "sameAs": "https://www.nature.com/articles/s41586-023-06415-8"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Robust deep learning–based protein sequence design using ProteinMPNN",
+      "sameAs": "https://www.science.org/doi/10.1126/science.add2187"
+    }
+  ]
+}

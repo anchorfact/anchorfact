@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-travel-planning-1",
+    "text": "AI travel planning (2023-2026): LLM-based trip planners (Wonderplan, Roam Around, Layla AI, Mindtrip) generate personalized itineraries from natural language queries (\"plan a 5-day trip to Tokyo with a focus on food and history\"). Google Travel AI (2024-2025) integrates Gemini for conversational trip planning across flights, hotels, and activities. Expedia (2024) launched AI-powered conversational trip planning in its app.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/search/?query=AI+travel+planning+LLM+itinerary"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-travel-planning-2",
+    "text": "AI travel predictions: Hopper (2023-2025) uses ML to predict flight and hotel prices with 95% recommendation accuracy, telling users whether to buy now or wait. Hopper's AI analyzes years of historical pricing data, seasonality, and real-time demand to recommend optimal booking timing, saving users 10-35% on flights. Google Flights (2023) added ML-based price guarantees for certain routes.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/search/?query=travel+demand+prediction+machine+learning"
+    }
+  }
+]

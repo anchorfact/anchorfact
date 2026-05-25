@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00446>
+  a schema:TechArticle ;
+  schema:headline "Decision Making" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00446>
+  schema:citation <https://us.macmillan.com/books/9780374533557/thinkingfastandslow> .
+
+<https://anchorfact.org/kb/kb-2026-00446>
+  schema:citation <https://www.crownpublishing.com/decisive/> .
+
+<https://anchorfact.org/kb/kb-2026-00446>
+  schema:citation <https://us.macmillan.com/thinking-fast-and-slow/> .

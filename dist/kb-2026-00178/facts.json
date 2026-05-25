@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "The Testing Pyramid describes the optimal distribution of test types: many fast unit tests at the base, fewer integration tests in the middle, few slow E2E tests at the top",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.mountaingoatsoftware.com/books/succeeding-with-agile"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "The Testing Pyramid (Mike Cohn) describes the optimal distribution of test types: many fast unit tests at the base, fewer integration tests in the middle, few slow E2E tests at the top. The Anti-Pattern: inverted pyramid (ice cream cone) — many E2E tests, few unit tests.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.mountaingoatsoftware.com/books/succeeding-with-agile"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "E2E tests: test full user flows through browser (Cypress, Playwright), minutes, run on deploy.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.mountaingoatsoftware.com/books/succeeding-with-agile"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-003",
+    "text": "Coverage metrics: line, branch, function — 100% coverage ≠ bug-free.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.mountaingoatsoftware.com/books/succeeding-with-agile"
+    }
+  }
+]

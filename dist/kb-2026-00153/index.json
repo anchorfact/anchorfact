@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00153",
+  "headline": "CI/CD Pipeline",
+  "description": "CI/CD automates software delivery: Continuous Integration (merge frequently, auto-test), Continuous Delivery (auto-deploy to staging), Continuous Deployment (auto-deploy to production). Core principle: every commit triggers pipeline → build → test → deploy. Reduces integration pain and speeds feedback loops.",
+  "dateCreated": "2026-05-24T18:00:03.749Z",
+  "dateModified": "2026-05-24T18:00:03.749Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Continuous Delivery (Jez Humble, David Farley)",
+      "author": "Humble, Jez, Farley, David",
+      "sameAs": "https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Continuous Delivery: Reliable Software Releases (2025 Updated Edition)",
+      "author": "Humble J., Farley D.",
+      "sameAs": "https://www.informit.com/continuous-delivery/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "CI/CD and DevOps Maturity: A 2025 Industry Survey",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.cicd"
+    }
+  ]
+}

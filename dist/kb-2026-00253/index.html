@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Event Sourcing — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+<br>
+Event Sourcing stores state changes as a sequence of immutable events, rather than storing current state directly. The current state is derived by replaying events. Events are the source of truth — like a bank ledger (transactions), not just the current balance. Benefits: complete audit trail, temporal queries, easy debugging.<br>
+<br>
+## Core Explanation<br>
+<br>
+Event: `OrderPlaced {orderId, items}`, `OrderShipped {orderId, tracking}`, `OrderDelivered {orderId}`. Current state = fold/reduce over events. CQRS (Command Query Responsibility Segregation) pairs naturally with Event Sourcing: Commands write events, Queries read from denormalized projections. Event store: append-only, immutable. Snapshots: periodically save current state to avoid replaying entire history.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Event Sourcing (Martin Fowler)](undefined)<br>
+</article></body>
+</html>

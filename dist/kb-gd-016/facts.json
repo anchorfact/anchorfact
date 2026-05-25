@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-001",
+    "text": "# 游戏本地化（Localization / L10n） > **本地化不是翻译。** 翻译是把文字从 A 语言变成 B 语言；本地化是让游戏在 B 文化中**感觉像是为当地人设计的**。 --- ",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-002",
+    "text": "** 翻译是把文字从 A 语言变成 B 语言；本地化是让游戏在 B 文化中**感觉像是为当地人设计的**。",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-003",
+    "text": "000,50（德） └── 货币：符号位置（$100 vs 100$）\n✅ 语音/音频分离 └── 语音文件按语言分包 └── 音效（非语言）共用 ```\n---\n## 多语言技术实现\n### 文本系统架构\n``` 本地化系统架构：\nKey-Value 存储（运行时） ├── 主键： gameplay.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-004",
+    "text": "welcome ├── 英文： \"Welcome, {player_name}!",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-005",
+    "text": "\" ├── 中文： \"欢迎回来，{player_name}！\" ├── 日文： \"お帰りなさい、{player_name}さん！\" └── 占位符：{player_name} → 运行时替换\n存储格式对比： ├── CSV — 简单，Excel 友好，但不支持嵌套 ├── JSON — 灵活，支持嵌套，解析开销小 ├── XLIFF — 行业标准，支持翻译记忆、状态追踪 └── GetText (.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  }
+]

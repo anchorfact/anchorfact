@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/time-series-forecasting>
+  a schema:TechArticle ;
+  schema:headline "Time Series Forecasting with Machine Learning" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/time-series-forecasting>
+  schema:citation <https://arxiv.org/abs/1905.10437> .
+
+<https://anchorfact.org/kb/time-series-forecasting>
+  schema:citation <https://arxiv.org/abs/2012.07436> .

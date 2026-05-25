@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00320",
+  "headline": "Consul (HashiCorp)",
+  "description": "HashiCorp Consul (2014) is a service mesh and service discovery tool. It provides: service registration + health checking, key-value store, secure service-to-service communication (mTLS + authorization), and multi-datacenter support. Service mesh: sidecar proxy (Envoy) routes and secures traffic.",
+  "dateCreated": "2026-05-24T18:00:03.762Z",
+  "dateModified": "2026-05-24T18:00:03.762Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Consul Documentation",
+      "sameAs": "https://developer.hashicorp.com/consul/docs"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "HashiCorp Infrastructure Automation (2025 Edition)",
+      "author": "multiple",
+      "sameAs": "https://www.oreilly.com/hashicorp/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Service Discovery and Service Mesh in Cloud-Native (2025 Survey)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.sd"
+    }
+  ]
+}

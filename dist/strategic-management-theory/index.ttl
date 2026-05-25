@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/strategic-management-theory>
+  a schema:Article ;
+  schema:headline "Strategic Management: Frameworks and Practice" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/strategic-management-theory>
+  schema:citation <https://www.simonandschuster.com/books/Competitive-Strategy/Michael-E-Porter/9780684005278> .
+
+<https://anchorfact.org/kb/strategic-management-theory>
+  schema:citation <https://www.harpercollins.com/> .
+
+<https://anchorfact.org/kb/strategic-management-theory>
+  schema:citation <https://www.hbs.edu/faculty/Pages/item.aspx?num=195> .
+
+<https://anchorfact.org/kb/strategic-management-theory>
+  schema:citation <https://www.crownpublishing.com/good-strategy/> .

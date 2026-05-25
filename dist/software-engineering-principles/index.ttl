@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/software-engineering-principles>
+  a schema:Article ;
+  schema:headline "Software Engineering: Design Principles and Development Methodologies" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/software-engineering-principles>
+  schema:citation <https://www.oreilly.com/library/view/clean-code-a/9780136083238/> .
+
+<https://anchorfact.org/kb/software-engineering-principles>
+  schema:citation <https://www.oreilly.com/library/view/design-patterns-elements/0201633612/> .

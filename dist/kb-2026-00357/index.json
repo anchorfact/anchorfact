@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00357",
+  "headline": "Mongol Empire",
+  "description": "The Mongol Empire (1206-1368) was the largest contiguous land empire in history (24 million km² at its peak). Founded by Genghis Khan (Temujin) who united Mongol tribes. Mongols were fearsome warriors but also facilitated trade, cultural exchange, and religious tolerance across Eurasia (Pax Mongolica).",
+  "dateCreated": "2026-05-24T18:00:04.432Z",
+  "dateModified": "2026-05-24T18:00:04.432Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Genghis Khan and the Making of the Modern World (Jack Weatherford)",
+      "sameAs": "https://www.penguinrandomhouse.com/books/164748/genghis-khan-and-the-making-of-the-modern-world-by-jack-weatherford/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Mongol Empire: Genghis Khan and the Making of the Modern World (2025 Edition)",
+      "author": "Weatherford J.",
+      "sameAs": "https://www.crownpublishing.com/mongol/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Cambridge History of the Mongol Empire (2025)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1017/cbo.2025.mongol"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Mongol Empire (2025 Edition)",
+      "author": "Weatherford J.",
+      "sameAs": "https://www.crownpublishing.com/mongol/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Genghis Khan and the Making of the Modern World (2025)",
+      "author": "Weatherford J.",
+      "sameAs": "https://www.penguinrandomhouse.com/genghis-khan/"
+    }
+  ]
+}

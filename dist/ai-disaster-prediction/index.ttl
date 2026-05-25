@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-disaster-prediction>
+  a schema:article ;
+  schema:headline "AI for Disaster Prediction: Earthquake Forecasting, Flood Detection, and Early Warning Systems" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-disaster-prediction>
+  schema:citation <https://www.sciencedirect.com/science/article/pii/S1470160X24005247> .
+
+<https://anchorfact.org/kb/ai-disaster-prediction>
+  schema:citation <https://link.springer.com/chapter/10.1007/978-981-96-6863-2_6> .

@@ -1,0 +1,14 @@
+# Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Audio source separation -- the "cocktail party problem" -- isolates individual sound sources from a mixture: extracting vocals from a song, separating overlapping speakers in a meeting, or isolating a target voice in a noisy environment. Deep learning has achieved human-level separation quality, enabling applications from music production to hearing aid enhancement.
+
+## Core Explanation
+The problem: given a mixture signal x(t) = s1(t) + s2(t) + ... + sN(t), recover each source si(t). Approaches: (1) Mask-based -- process the magnitude spectrogram, estimate a soft mask for each source (values 0-1 per time-frequency bin), multiply mask with mixture spectrogram, convert to waveform. Limitation: phase information is lost in spectrogram reconstruction; (2) Waveform-based -- operate directly on raw audio samples (Conv-TasNet, Demucs). Learn an encoder that converts waveform to a learned representation, perform separation in that space, decode back to waveform. No phase reconstruction needed; (3) Hybrid -- combine both (Hybrid Demucs). Also: beamforming-based (multi-microphone arrays using spatial information).
+
+## Detailed Analysis
+Conv-TasNet (2019): encoder (1D convolution with learned filters replacing STFT) -> separation module (stacked dilated temporal convolutional blocks with exponentially increasing dilation factors -- 1,2,4,8,...,256 -- capturing short and long patterns) -> decoder (transposed convolution). DPRNN (2020) and SepFormer (2021) replace TCN with dual-path RNNs/Transformers processing intra-chunk and inter-chunk dependencies. Demucs evolution: v1 (waveform U-Net), v2 (improved training, data augmentation), v3 (Hybrid Demucs -- magnitude spectrogram branch + waveform branch), v4 (HT Demucs -- Transformer-based). The hybrid approach uses spectrogram for frequency-domain separation and waveform for time-domain refinement. Applications: (1) Music -- vocal/accompaniment separation, stem extraction for remixing; (2) Speech enhancement -- removing background noise from phone calls, hearing aid preprocessing; (3) Meeting transcription -- separating overlapping speakers before speech recognition; (4) Forensic audio -- isolating voices from background. Key challenges: universal sound separation (separating arbitrary sounds without knowing classes in advance), real-time low-latency (<10ms) for hearing aids, and generalization to unseen acoustic environments.
+

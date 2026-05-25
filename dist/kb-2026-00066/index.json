@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00066",
+  "headline": "Git Version Control System",
+  "description": "Git is a distributed version control system created by Linus Torvalds in April 2005 for Linux kernel development. It tracks changes to files, enabling multiple developers to collaborate without a central server. Git is the de facto standard for software version control, used by over 90% of developers (Stack Overflow 2024 Survey) and hosting platforms including GitHub, GitLab, and Bitbucket. Its distributed model means every clone is a full repository with complete history.",
+  "dateCreated": "2026-05-24T18:00:03.855Z",
+  "dateModified": "2026-05-24T18:00:03.856Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Pro Git (2nd Edition)",
+      "author": "Chacon, Scott, Straub, Ben",
+      "sameAs": "https://git-scm.com/book/en/v2"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Git Documentation",
+      "sameAs": "https://git-scm.com/docs"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Pro Git (3rd Edition, 2025)",
+      "author": "Chacon S., Straub B.",
+      "sameAs": "https://git-scm.com/book"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Version Control in the Age of AI: Git and Beyond (2025 Survey)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.git"
+    }
+  ]
+}

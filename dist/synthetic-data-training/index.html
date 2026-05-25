@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Synthetic Data in AI Training — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Synthetic data — generating training examples from other AI models — has emerged as both a powerful scaling technique and a fundamental risk. Models like Phi-4 achieve state-of-the-art results primarily from synthetic data, while model collapse threatens recursive use.<br>
+<br>
+## Core Explanation<br>
+Synthetic data generation: (1) use a teacher model to generate diverse examples; (2) curriculum learning — progressively harder synthetic problems; (3) self-play — models generate and solve their own problems. Key quality checks: diversity, accuracy, and domain coverage.<br>
+<br>
+## Detailed Analysis<br>
+Phi-4 demonstrated synthetic data can compensate for smaller model size — 14B parameters matching 70B. DeepSeek-R1 used synthetic reasoning traces for distillation. Risks: model collapse (recursive training degrades output), hallucination contamination, and benchmark leakage from synthetic data resembling test sets.<br>
+<br>
+## Further Reading<br>
+- Microsoft Research: Phi Series<br>
+- Nature: AI Model Collapse<br>
+- NeurIPS: Synthetic Data Workshop</article></body>
+</html>

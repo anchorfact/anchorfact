@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "First released in 2013 by Solomon Hykes at dotCloud, Docker revolutionized software deployment by packaging applications with all their dependencies into portable images that run consistently across any environment",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://docs.docker.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-02",
+    "text": "Docker containers are lightweight virtualization units that share the host OS kernel but run in isolated user spaces with their own filesystem, networking, and process tree",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://docs.docker.com/"
+    }
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "Package managers automate dependency installation, version management, and script execution. npm (Node Package Manager) is the default for Node.js with 2M+ packages. Yarn (Facebook, 2016) added deterministic installs via lockfiles. pnpm (2017) saves disk space via content-addressable storage (symlinked node_modules).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://pnpm.io/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "`^1.2.3` allows minor/patch updates; `~1.2.3` allows patch only.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://docs.npmjs.com/"
+    }
+  }
+]

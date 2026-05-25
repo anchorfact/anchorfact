@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-01",
+    "text": "Evolution is a fact, natural selection is the primary mechanism",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gutenberg.org/ebooks/1228"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-001",
+    "text": "Natural selection (Darwin & Wallace, 1858-59) is the mechanism of evolution: organisms with traits better suited to their environment are more likely to survive and reproduce, passing those traits to offspring. Over generations, this drives adaptation and speciation. The unifying theory of biology.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gutenberg.org/ebooks/1228"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-002",
+    "text": "Key concepts: variation (individuals differ), heritability (traits passed to offspring), differential fitness (some produce more offspring).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gutenberg.org/ebooks/1228"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-003",
+    "text": "Modern synthesis (1930s-50s): combined Darwin's theory with Mendelian genetics.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gutenberg.org/ebooks/1228"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-004",
+    "text": "Evolution is a fact, natural selection is the primary mechanism.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gutenberg.org/ebooks/1228"
+    }
+  }
+]

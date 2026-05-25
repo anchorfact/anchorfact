@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00434",
+  "headline": "Cryptocurrency",
+  "description": "Cryptocurrency is digital money secured by cryptography, operating on decentralized networks (blockchains). Bitcoin (2009, Satoshi Nakamoto) was the first and remains the largest. Key concepts: decentralization, limited supply (Bitcoin capped at 21 million), mining/PoS consensus, wallets (public key = address, private key = access).",
+  "dateCreated": "2026-05-24T18:00:03.649Z",
+  "dateModified": "2026-05-24T18:00:03.649Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Bitcoin Standard (Saifedean Ammous)",
+      "sameAs": "https://www.wiley.com/en-us/The+Bitcoin+Standard%3A+The+Decentralized+Alternative+to+Central+Banking-p-9781119473862"
+    }
+  ]
+}

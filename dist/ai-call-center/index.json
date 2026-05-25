@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-call-center",
+  "headline": "AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection",
+  "description": "AI is the silent coach on every customer service call -- transcribing conversations in real-time, suggesting the best responses, detecting customer frustration, and scoring quality across every interaction. From Cresta to Gong, AI transforms call centers from cost centers into intelligence hubs.",
+  "dateCreated": "2026-05-24T18:00:02.819Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AI-Powered Contact Center Transformation: Real-Time Agent Assist, Speech Analytics, and Quality Management (2024-2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=call+center+AI+agent+assist+speech+analytics"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Deep Learning for Conversational Speech Analytics: Sentiment, Emotion, and Intent Detection in Contact Centers",
+      "sameAs": "https://arxiv.org/search/?query=speech+analytics+call+center+sentiment"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/multi-omics-integration>
+  a schema:article ;
+  schema:headline "Multi-Omics Integration: AI-Driven Systems Biology from Genomics to Proteomics" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/multi-omics-integration>
+  schema:citation <https://www.nature.com/articles/s41467-026-68956-6> .
+
+<https://anchorfact.org/kb/multi-omics-integration>
+  schema:citation <https://link.springer.com/article/10.1007/s10238-025-01965-9> .

@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-biz-ent-001",
+    "text": "Lean Startup (Ries 2011): Build-Measure-Learn loop, MVP, validated learning.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://theleanstartup.com/book"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-biz-ent-002",
+    "text": "GEM 2024 tracks entrepreneurship across 50+ economies; highest TEA in Latin America.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gemconsortium.org/report/2023-2024-global-report"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-biz-ent-003",
+    "text": "US VC reached $170.6B in 2024 (PitchBook-NVCA); AI/ML was top sector.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://pitchbook.com/news/reports/q4-2024-pitchbook-nvca-venture-monitor"
+    }
+  }
+]

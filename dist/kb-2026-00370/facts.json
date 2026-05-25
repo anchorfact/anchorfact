@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-01",
+    "text": "The human brain is the most complex known object in the universe with 86 billion neurons and 100 trillion synapses",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https: //www.mheducation.com/highered/product/principles-neural-science-kandel-koester-mack-siegelbaum/9781259642234.html"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-001",
+    "text": "The human brain (~1.4 kg) is the most complex known object in the universe with ~86 billion neurons and ~100 trillion synapses. Regions: cerebrum (thinking, sensory, motor), cerebellum (coordination), brainstem (life support), limbic system (emotion, memory). Consciousness remains one of science's greatest mysteries.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.mheducation.com/highered/product/principles-neural-science-kandel-koester-mack-siegelbaum/9781259642234.html"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-002",
+    "text": "Cerebral cortex: folded outer layer, 4 lobes (frontal: planning/personality, parietal: touch/spatial, temporal: hearing/memory, occipital: vision).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.mheducation.com/highered/product/principles-neural-science-kandel-koester-mack-siegelbaum/9781259642234.html"
+    }
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-robot-navigation",
+  "headline": "AI for Robot Navigation: SLAM, Visual Odometry, and Autonomous Path Planning",
+  "description": "Robot navigation answers \"where am I, what is around me, and how do I get there?\" -- SLAM builds maps while tracking the robot's position, visual odometry estimates motion from camera images, and path planning computes collision-free trajectories. AI is transforming all three, enabling robots to navigate autonomously in unmapped, dynamic environments.",
+  "dateCreated": "2026-05-24T18:00:03.028Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Vision-Based Navigation and Perception for Autonomous Robots: A Comprehensive Review",
+      "sameAs": "https://www.mdpi.com/2673-4117/6/7/153"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "A Comprehensive Review on Autonomous Mobile Robots: Sensors, Platforms, and AI Navigation Strategies",
+      "sameAs": "https://dl.acm.org/doi/full/10.1145/3727642"
+    }
+  ]
+}

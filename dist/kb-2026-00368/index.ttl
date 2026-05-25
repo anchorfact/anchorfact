@@ -1,0 +1,23 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00368>
+  a schema:TechArticle ;
+  schema:headline "Big Bang Theory" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00368>
+  schema:citation <https://www.basicbooks.com/titles/steven-weinberg/the-first-three-minutes/9780465024377/> .
+
+<https://anchorfact.org/kb/kb-2026-00368>
+  schema:citation <https://www.basicbooks.com/big-bang/> .
+
+<https://anchorfact.org/kb/kb-2026-00368>
+  schema:citation <https://doi.org/10.1038/s42254-2025-cosmo> .
+
+<https://anchorfact.org/kb/kb-2026-00368>
+  schema:citation <https://global.oup.com/vsi-cosmology/> .
+
+<https://anchorfact.org/kb/kb-2026-00368>
+  schema:citation <https://www.basicbooks.com/big-bang/> .

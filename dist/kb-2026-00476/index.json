@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00476",
+  "headline": "Audio Engineering",
+  "description": "Audio engineering encompasses recording, mixing, and mastering sound. Key concepts: frequency (pitch, Hz), amplitude (loudness, dB), waveform (timbre). Recording chain: source → microphone → preamp → ADC → DAW. Mixing: balance levels, pan (stereo placement), EQ (adjust frequency balance), compression (control dynamics), reverb/delay (space).",
+  "dateCreated": "2026-05-24T18:00:03.568Z",
+  "dateModified": "2026-05-24T18:00:03.568Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Mastering Audio (Bob Katz, 3rd Ed)",
+      "sameAs": "https://www.routledge.com/Mastering-Audio-The-Art-and-the-Science/Katz/p/book/9780240818962"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Mastering Audio: The Art and the Science (4th Edition, 2025)",
+      "author": "Katz B.",
+      "sameAs": "https://www.routledge.com/mastering-audio/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Modern Recording Techniques (10th Edition, 2025)",
+      "author": "Huber D.M., Runstein R.E.",
+      "sameAs": "https://www.routledge.com/recording/"
+    }
+  ]
+}

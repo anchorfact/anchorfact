@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "The Page Visibility API informs web applications whether a page is visible or hidden",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/page-visibility/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "The Page Visibility API informs web applications whether a page is visible (active tab) or hidden (background tab). `document.visibilityState` is `'visible'` or `'hidden'`, with the `visibilitychange` event for detecting state transitions.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/page-visibility/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "Key uses: pausing video/audio playback when hidden, stopping animation loops, throttling API polling, analytics (actual view time vs.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/page-visibility/"
+    }
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00503",
+  "headline": "Track and Field Events",
+  "description": "Track and field (athletics) comprises running, jumping, and throwing events dating to Ancient Olympics. Sprint events (100m-400m) emphasize explosive power; distance events require aerobic endurance. Field events: long jump, high jump, pole vault, shot put, discus, javelin, hammer. Decathlon/heptathlon tests all-around athleticism.",
+  "dateCreated": "2026-05-24T18:00:04.628Z",
+  "dateModified": "2026-05-24T18:00:04.628Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "World Athletics Technical Rules 2024",
+      "sameAs": "https://worldathletics.org/competition/technical-rules"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Sports Rules Encyclopedia",
+      "sameAs": "https://www.olympic.org/sports"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI for Agriculture: Precision Farming, Plant Disease Detection, and Crop Yield Prediction — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+AI is feeding the world — detecting crop diseases from smartphone photos, predicting harvest yields months in advance from satellite imagery, and optimizing irrigation down to individual plants. With global food demand projected to increase 60% by 2050 and 20-40% of crops lost to pests and diseases annually, AI-driven precision agriculture is becoming essential to food security.<br>
+<br>
+## Core Explanation<br>
+Precision agriculture AI stack: (1) Sensing — satellites (Sentinel-2, Landsat, PlanetScope at 3-30m resolution), UAVs/drones (sub-cm resolution with multispectral cameras), ground sensors (soil moisture, weather stations), and smartphones (farmer-taken photos); (2) Crop disease detection — CNNs/Vision Transformers classify leaf images into healthy vs. specific disease (late blight, rust, bacterial spot). Training data: PlantVillage (54K images, 38 classes), PlantDoc, IP102 (102 pest classes); (3) Yield prediction — time-series models (LSTM, TFT) process multi-year satellite vegetation indices (NDVI, EVI), weather data (temperature, precipitation), and soil properties to predict crop yield 1-3 months before harvest; (4) Weed detection — CNN-based pixel-level weed/crop classification for precision herbicide spraying (reducing chemical use by 70-90%).<br>
+<br>
+## Detailed Analysis<br>
+Nature 2025 Hybrid Transformer-CNN: the Vision Transformer branch captures global leaf structure (disease patterns often span the entire leaf), while the CNN branch captures local texture (lesion boundaries, color variations). Cross-attention fuses both. Deployed on Jetson Nano (edge device) for offline in-field use — critical for rural areas without internet. Springer 2025 DL plant disease review: transfer learning from ImageNet-pretrained models works well for disease classification because visual disease patterns (spots, discoloration) share features with general image textures. Challenges: (1) Domain shift — models trained on lab-condition PlantVillage images (uniform background, controlled lighting) degrade significantly on in-field photos (complex backgrounds, variable lighting, multiple diseases per leaf) — by 15-30% accuracy drop; (2) Early detection — infections are asymptomatic for days before visible symptoms; multispectral/hyperspectral imaging detects pre-visual changes in chlorophyll fluorescence; (3) Data scarcity for rare diseases and regional crop varieties. ScienceDirect 2025 review highlights IoT integration: soil sensors → cloud → AI → variable-rate irrigation/fertilization, closing the loop from sensing to action. UAV-mounted multispectral cameras (NIR, RedEdge) combined with 3D canopy reconstruction from photogrammetry enable per-plant monitoring. Economic impact: AI precision agriculture reduces water usage by 20-30%, fertilizer by 15-25%, and pesticide by 50-70%.<br>
+<br>
+## Further Reading<br>
+- PlantVillage: Public Crop Disease Dataset (Penn State)<br>
+- FAO: AI for Agriculture (UN Food and Agriculture Organization)<br>
+- Microsoft FarmBeats: AI + IoT for Data-Driven Farming<br>
+</article></body>
+</html>

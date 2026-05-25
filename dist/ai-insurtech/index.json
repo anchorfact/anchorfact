@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-insurtech",
+  "headline": "AI for Insurance: Underwriting, Claims Processing, and Risk Assessment",
+  "description": "AI is rewriting insurance -- from Lemonade issuing policies in 90 seconds to computer vision assessing car damage from photos to satellite AI evaluating property risk without inspection. Insurtech AI makes coverage faster, fairer, and more data-driven than traditional actuarial models.",
+  "dateCreated": "2026-05-24T18:00:03.088Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Artificial Intelligence in Insurance: Underwriting Automation, Claims Processing, and Risk Assessment (2024-2025 Comprehensive Survey)",
+      "sameAs": "https://arxiv.org/search/?query=insurance+AI+underwriting+claims+risk"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Computer Vision for Insurance: Property Risk Assessment, Auto Damage Estimation, and Remote Inspection",
+      "sameAs": "https://arxiv.org/search/?query=computer+vision+insurance+damage+assessment"
+    }
+  ]
+}

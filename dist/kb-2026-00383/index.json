@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00383",
+  "headline": "Critical Thinking",
+  "description": "Critical thinking is the objective analysis and evaluation of claims to form a judgment. Skills: identify assumptions, evaluate evidence, recognize logical fallacies, consider alternative perspectives. System 1 (fast, intuitive) vs. System 2 (slow, deliberate) — Kahneman. Cognitive biases (confirmation bias, anchoring, availability heuristic) distort judgment.",
+  "dateCreated": "2026-05-24T18:00:04.574Z",
+  "dateModified": "2026-05-24T18:00:04.574Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Thinking, Fast and Slow (Daniel Kahneman)",
+      "sameAs": "https://us.macmillan.com/books/9780374533557/thinkingfastandslow"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Think Again: The Power of Knowing What You Don't Know (2025)",
+      "author": "Grant A.",
+      "sameAs": "https://www.penguinrandomhouse.com/think-again/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Critical Thinking: A Student's Introduction (8th Edition, 2025)",
+      "author": "Bassham G., Irwin W., Nardone H., Wallace J.",
+      "sameAs": "https://www.mheducation.com/critical-thinking/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Think Again (2025)",
+      "author": "Grant A.",
+      "sameAs": "https://www.penguinrandomhouse.com/think-again/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Critical Thinking (8th Edition, 2025)",
+      "author": "Bassham G., Irwin W.",
+      "sameAs": "https://www.mheducation.com/critical-thinking/"
+    }
+  ]
+}

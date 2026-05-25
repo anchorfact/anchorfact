@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-generated-content-detection>
+  a schema:article ;
+  schema:headline "AI-Generated Content Detection: Identifying Synthetic Text, Deepfake Images, and AI-Authored Media" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-generated-content-detection>
+  schema:citation <https://arxiv.org/abs/2301.11305> .
+
+<https://anchorfact.org/kb/ai-generated-content-detection>
+  schema:citation <https://c2pa.org/specifications/> .

@@ -1,0 +1,18 @@
+# Goal Setting Frameworks
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+
+Goal setting transforms vague aspirations into actionable plans. Key frameworks: SMART goals (Specific, Measurable, Achievable, Relevant, Time-bound), OKRs (Objectives and Key Results), Locke & Latham's Goal Setting Theory. Common techniques: implementation intentions (if-then plans), habit stacking (anchor new habits to existing ones), progress tracking with regular review cycles.
+
+## Core Explanation
+
+SMART evolved from Doran 1981 into multiple variants (SMARTER adds Evaluate + Revise). Key distinction: outcome goals (results) vs process goals (behaviors) vs performance goals (personal standards). Feedback loops: weekly reviews, monthly retrospectives, quarterly OKR grading. Avoid goal conflict: ensure goals across life domains don't undermine each other. Write goals down: 42% more likely to achieve written goals (Dr. Gail Matthews, Dominican University study).
+
+## Further Reading
+
+- [Measure What Matters (OKRs)](https://www.whatmatters.com/)
+- [Atomic Habits](https://jamesclear.com/atomic-habits)
+

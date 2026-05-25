@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/neurosymbolic-ai",
+  "headline": "Neuro-Symbolic AI: Bridging Learning and Reasoning",
+  "description": "Neuro-symbolic AI integrates neural learning with symbolic reasoning — combining the pattern recognition power of deep learning with the systematic generalization of logic. AlphaGeometry proved the paradigm by solving Olympiad-level geometry.",
+  "dateCreated": "2026-05-24T18:00:03.445Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Neurosymbolic AI: The 3rd Wave",
+      "sameAs": "https://arxiv.org/abs/2005.05818"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Solving olympiad geometry without human demonstrations (AlphaGeometry)",
+      "sameAs": "https://www.nature.com/articles/s41586-023-06747-5"
+    }
+  ]
+}

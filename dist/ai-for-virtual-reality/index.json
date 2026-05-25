@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-virtual-reality",
+  "headline": "AI for Virtual Reality: Immersive Content Generation, Intelligent NPCs, and Adaptive Environments",
+  "description": "AI is building the metaverse -- generating 3D worlds from text descriptions, powering NPCs that converse naturally, and enabling controller-free interaction through computer vision. From text-to-3D generation to real-time photorealistic rendering, AI bridges the gap between imagination and immersive experience.",
+  "dateCreated": "2026-05-24T18:00:03.059Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "NVIDIA GET3D: A Generative Model of High Quality 3D Textured Shapes from Images",
+      "sameAs": "https://arxiv.org/abs/2209.11163"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "DreamFusion: Text-to-3D using 2D Diffusion (Google Research)",
+      "sameAs": "https://arxiv.org/abs/2209.14988"
+    }
+  ]
+}

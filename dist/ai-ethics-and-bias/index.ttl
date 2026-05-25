@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-ethics-and-bias>
+  a schema:TechArticle ;
+  schema:headline "AI Ethics and Algorithmic Bias" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-ethics-and-bias>
+  schema:citation <https://www.penguinrandomhouse.com/books/316277/weapons-of-math-destruction-by-cathy-oneil/> .
+
+<https://anchorfact.org/kb/ai-ethics-and-bias>
+  schema:citation <https://artificialintelligenceact.eu/> .

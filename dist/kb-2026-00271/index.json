@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00271",
+  "headline": "Generative Adversarial Networks (GAN)",
+  "description": "GANs (Goodfellow, 2014) pit two neural networks against each other: Generator creates fake data, Discriminator distinguishes real from fake. Both improve through adversarial training — Generator learns to produce increasingly realistic outputs. Used for image generation, style transfer, super-resolution.",
+  "dateCreated": "2026-05-24T18:00:03.308Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Generative Adversarial Networks",
+      "author": "Goodfellow, Ian J., Pouget-Abadie, Jean, Mirza, Mehdi, Xu, Bing, Warde-Farley, David, Ozair, Sherjil, Courville, Aaron, Bengio, Yoshua",
+      "sameAs": "https://arxiv.org/abs/1406.2661"
+    }
+  ]
+}

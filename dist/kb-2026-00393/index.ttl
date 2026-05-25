@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00393>
+  a schema:TechArticle ;
+  schema:headline "Tang Dynasty" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00393>
+  schema:citation <https://global.oup.com/academic/product/chinas-golden-age-9780195176650> .
+
+<https://anchorfact.org/kb/kb-2026-00393>
+  schema:citation <https://www.hup.harvard.edu/catalog.php?isbn=9780674064010> .
+
+<https://anchorfact.org/kb/kb-2026-00393>
+  schema:citation <https://doi.org/10.1017/cbo.2025.tang> .

@@ -1,0 +1,14 @@
+# AI for Legal Contracts: Automated Drafting, Clause Analysis, and Due Diligence
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI is transforming legal contracts -- analyzing thousands of documents in hours for due diligence, extracting obligations and risks with 95% accuracy, and drafting complete contracts from natural language instructions in under a minute. From Ironclad to Harvey AI ($3B valuation), LLMs are becoming the junior associate that never sleeps.
+
+## Core Explanation
+Contract AI stack: (1) Document ingestion -- OCR (scanned PDFs), layout analysis (identifying sections, clauses, signatures); (2) Clause classification -- NLP (fine-tuned LegalBERT, RoBERTa) categorizes each paragraph into clause types (indemnification, limitation of liability, confidentiality, termination, governing law, force majeure, assignment). Multi-label: some paragraphs cover multiple clause types; (3) Information extraction -- NER extracts parties, dates, amounts, obligations, and conditions. Relationship extraction: who owes what to whom under which conditions; (4) Risk analysis -- compare extracted clauses against company playbook (preferred positions). Flag deviations for attorney review; (5) Drafting -- LLM generates contract from template + playbook preferences + deal-specific terms.
+
+## Detailed Analysis
+Due diligence: M&A transactions require reviewing thousands of contracts for change-of-control provisions, assignment restrictions, and material adverse change clauses. AI processes 100+ contracts/hour, 20x faster than manual, reducing deal timelines from weeks to days. Model: LegalBERT (Chalkidis et al., 2020) pretrained on 12GB of US legal text outperforms general-purpose BERT on contract tasks. Clause extraction F1: 93-97% for well-structured contracts, 80-88% for scanned/unstructured. LLM drafting: Spellbook AI prompts GPT-4 with contract type, jurisdiction, and specific terms. Output: complete contract with placeholders for party names, dates, amounts. Human review required -- LLMs can hallucinate non-existent legal concepts or include contradictory provisions. Harvey AI (OpenAI Startup Fund backed, 2024-2025): raised $300M, valued at $3B. Deployed at Allen & Overy, PwC, and other major law firms. CoCounsel (Casetext/Thomson Reuters): the first AI legal assistant to pass the UBE (Uniform Bar Exam).
+

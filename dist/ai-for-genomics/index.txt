@@ -1,0 +1,19 @@
+# AI for Genomics: Single-Cell Foundation Models and RNA Biology
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI foundation models trained on massive genomic datasets — from single-cell RNA sequencing of millions of cells to full RNA transcriptomes — are revolutionizing genomics. These models learn universal biological representations, enabling zero-shot cell typing, perturbation prediction, and de novo RNA design that were previously impossible without labor-intensive experiments.
+
+## Core Explanation
+Single-cell genomics generates high-dimensional data: gene expression profiles for individual cells (20,000+ genes × millions of cells). Traditional analysis clusters cells by expression similarity and manually annotates cell types. AI foundation models (scGPT, scBERT, Geneformer, scFoundation) pretrain on massive scRNA-seq compendia using transformer architectures with gene-as-token representations. Key capabilities: (1) Cell type annotation — zero-shot classification of novel cell populations without labeled training data; (2) Perturbation prediction — predict how gene expression changes when specific genes are knocked out or drugs are applied; (3) Cross-species transfer — apply knowledge from mouse to human cell atlases; (4) Gene program discovery — identify co-regulated gene modules across conditions.
+
+## Detailed Analysis
+scGPT (2023, Toronto) uses a generative pretraining objective — masking gene expression values and predicting them from context, analogous to BERT's masked language modeling. scBERT adapts the BERT architecture with gene-specific tokenization. Geneformer (Theodoris et al., 2023, Nature) demonstrated that pretraining on 30M single-cell transcriptomes enables context-aware gene network predictions. ESM-2 and ESM-3 (Meta/EvolutionaryScale, 2023-2024) extended the paradigm to protein sequences, generating functional proteins at scale. RNA foundation models (2026) integrate sequence, secondary structure, and experimental binding data, predicting RNA-small molecule interactions critical for RNA-targeted therapeutics. Key infrastructure: the Human Cell Atlas (HCA), Tabula Sapiens, and CELLxGENE provide the training data; BioLLM (2025, ScienceDirect) standardizes single-cell analysis pipelines. Critical challenge: batch effects across labs and sequencing platforms degrade model generalization; specialized normalization and harmonization methods remain active research areas.
+
+## Further Reading
+- Geneformer: Transfer Learning for Gene Networks (Theodoris et al., Nature 2023)
+- scGPT GitHub: bowang-lab/scGPT
+- HCA: Human Cell Atlas Data Portal
+

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-election-integrity>
+  a schema:article ;
+  schema:headline "AI for Election Integrity: Disinformation Detection, Voter Analytics, and Electoral Security" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-election-integrity>
+  schema:citation <https://arxiv.org/search/?query=election+integrity+AI+disinformation+deepfake> .
+
+<https://anchorfact.org/kb/ai-election-integrity>
+  schema:citation <https://arxiv.org/search/?query=coordinated+inauthentic+behavior+GNN> .

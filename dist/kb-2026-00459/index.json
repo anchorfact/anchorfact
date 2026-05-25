@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00459",
+  "headline": "Great Wall of China",
+  "description": "The Great Wall of China is a series of fortifications built across northern China from the 7th century BCE through the Ming Dynasty (1368-1644). Total length: 21,196 km (with all branches). Purpose: defense against nomadic invasions from the north. Contrary to myth, it is NOT visible from the Moon with the naked eye.",
+  "dateCreated": "2026-05-24T18:00:04.407Z",
+  "dateModified": "2026-05-24T18:00:04.407Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Great Wall (John Man)",
+      "sameAs": "https://www.hachettebookgroup.com/titles/john-man/the-great-wall/9780306817670/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Great Wall of China: From History to Myth (2025)",
+      "author": "Waldron A.",
+      "sameAs": "https://doi.org/10.1017/cbo.2025.greatwall"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "China: A History (2025 Updated)",
+      "author": "Keay J.",
+      "sameAs": "https://www.basicbooks.com/china-history/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Great Wall: From History to Myth (2025)",
+      "author": "Waldron A.",
+      "sameAs": "https://doi.org/10.1017/cbo.2025.greatwall"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/chronic-disease-prevention",
+  "headline": "Chronic Disease Prevention Strategies",
+  "description": "Chronic diseases — cardiovascular disease, diabetes, cancer, respiratory disease — cause 74% of global deaths. The WHO estimates 80% are preventable through modifiable risk factors: diet, physical activity, tobacco, and alcohol.",
+  "dateCreated": "2026-05-24T18:00:04.331Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Preventive Medicine and Public Health",
+      "sameAs": "https://www.mheducation.com/highered/product/preventive-medicine-public-health-wallace/M9781260143683.html"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "WHO Global Action Plan for NCDs 2023-2030",
+      "sameAs": "https://www.who.int/publications/i/item/9789240061798"
+    }
+  ]
+}

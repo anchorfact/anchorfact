@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00005",
+  "headline": "Large Language Models (LLMs)",
+  "description": "Large Language Models (LLMs) are Transformer-based neural networks trained on internet-scale text corpora (trillions of tokens) to predict and generate human language. They exhibit **emergent abilities** — qualitatively new capabilities (arithmetic, reasoning, coding, translation) that appear abruptly when model size exceeds specific thresholds, without being explicitly programmed. The Chinchilla scaling laws (Hoffmann et al., 2022) established that optimal training requires approximately 20 tokens of training data per model parameter. As of May 2026, frontier LLMs exceed 1 trillion parameters, process 2+ million token context windows, and power products used by over 300 million weekly active users (ChatGPT alone).",
+  "dateCreated": "2026-05-24T18:00:03.382Z",
+  "dateModified": "2026-05-24T18:00:03.382Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Language Models are Few-Shot Learners (GPT-3)",
+      "author": "Brown, Tom B., Mann, Benjamin, Ryder, Nick, Kaplan, Jared, et al.",
+      "sameAs": "https://arxiv.org/abs/2005.14165"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Training Compute-Optimal Large Language Models (Chinchilla)",
+      "author": "Hoffmann, Jordan, Borgeaud, Sebastian, Mensch, Arthur, et al.",
+      "sameAs": "https://arxiv.org/abs/2203.15556"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Emergent Abilities of Large Language Models",
+      "author": "Wei, Jason, Tay, Yi, Bommasani, Rishi, Raffel, Colin, Zoph, Barret, Borgeaud, Sebastian, Yogatama, Dani, Bosma, Maarten, Zhou, Denny, Metzler, Donald, Chi, Ed H., Hashimoto, Tatsunori, Vinyals, Oriol, Liang, Percy, Dean, Jeff, Fedus, William",
+      "sameAs": "https://arxiv.org/abs/2206.07682"
+    }
+  ]
+}

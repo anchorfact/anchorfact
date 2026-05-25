@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f1",
+    "text": "LLMs are transforming search from keyword matching to conversational information retrieval. Perplexity AI, ChatGPT Search, and Google AI Overviews represent the shift toward AI-native search experiences.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2308.07107"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f2",
+    "text": "The original Google PageRank algorithm (Brin & Page 1998, Stanford) used link analysis to rank web pages, catalyzing the modern web search industry before the deep learning era.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1016/S0169-7552(98)00110-X"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f3",
+    "text": "Retrieval-Augmented Generation (RAG, Lewis et al. 2020, Meta AI) combines information retrieval with LLM generation, enabling grounded answers from external knowledge bases while reducing hallucination.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2005.11401"
+    }
+  }
+]

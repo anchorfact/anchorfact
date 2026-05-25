@@ -1,0 +1,23 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00367>
+  a schema:TechArticle ;
+  schema:headline "Black Holes" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00367>
+  schema:citation <https://www.penguinrandomhouse.com/books/26703/a-brief-history-of-time-by-stephen-hawking/> .
+
+<https://anchorfact.org/kb/kb-2026-00367>
+  schema:citation <https://wwnorton.com/books/black-holes/> .
+
+<https://anchorfact.org/kb/kb-2026-00367>
+  schema:citation <https://doi.org/10.1103/revmodphys.2025.bh> .
+
+<https://anchorfact.org/kb/kb-2026-00367>
+  schema:citation <https://global.oup.com/vsi-black-holes/> .
+
+<https://anchorfact.org/kb/kb-2026-00367>
+  schema:citation <https://www.penguinrandomhouse.com/black-holes/> .

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-content-moderation-platforms>
+  a schema:article ;
+  schema:headline "AI Content Moderation Platforms: Large-Scale Safety Systems, Policy Engines, and Multilingual Review" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-content-moderation-platforms>
+  schema:citation <https://arxiv.org/search/?query=content+moderation+AI+scale+pipeline> .
+
+<https://anchorfact.org/kb/ai-content-moderation-platforms>
+  schema:citation <https://transparency.meta.com/reports/community-standards-enforcement/> .

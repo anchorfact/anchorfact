@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-protein-design-1",
+    "text": "RFDiffusion (Watson et al., Nature 2023) adapts denoising diffusion models to protein backbone generation — producing novel protein structures with desired functions (binding, catalysis) that do not exist in nature, validated experimentally with cryo-EM.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nature.com/articles/s41586-023-06415-8"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-protein-design-2",
+    "text": "The 2024 Nobel Prize in Chemistry was awarded to David Baker (computational protein design) and Demis Hassabis/John Jumper (AlphaFold) — the first Nobel directly recognizing AI-driven scientific discovery.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.science.org/doi/10.1126/science.add2187"
+    }
+  }
+]

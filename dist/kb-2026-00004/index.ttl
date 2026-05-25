@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00004>
+  a schema:TechArticle ;
+  schema:headline "GPT (Generative Pre-trained Transformer) Model Family" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00004>
+  schema:citation <https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf> .
+
+<https://anchorfact.org/kb/kb-2026-00004>
+  schema:citation <https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf> .
+
+<https://anchorfact.org/kb/kb-2026-00004>
+  schema:citation <https://arxiv.org/abs/2005.14165> .
+
+<https://anchorfact.org/kb/kb-2026-00004>
+  schema:citation <https://doi.org/undefined> .

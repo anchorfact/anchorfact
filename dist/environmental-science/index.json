@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/environmental-science",
+  "headline": "Environmental Science: Ecosystems and Global Change",
+  "description": "Environmental science addresses humanity's most pressing challenge: understanding and mitigating anthropocentric changes to Earth's climate, ecosystems, and biogeochemical cycles.",
+  "dateCreated": "2026-05-24T18:00:04.505Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "IPCC Sixth Assessment Report: Synthesis Report",
+      "sameAs": "https://www.ipcc.ch/report/ar6/syr/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Living in the Environment, 20th Edition",
+      "sameAs": "https://www.cengage.com/c/living-in-the-environment-20e-miller-spoolman/9780357142202/"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Helm — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+<br>
+Helm (Deis, 2015, graduated CNCF) is the Kubernetes package manager — 'apt/yum for K8s'. Charts package Kubernetes resources (Deployments, Services, ConfigMaps) with templating (Go templates) and values. Helm 3 (2019) removed Tiller (server component) for improved security.<br>
+<br>
+## Core Explanation<br>
+<br>
+Chart structure: `Chart.yaml` (metadata), `values.yaml` (defaults), `templates/` (Kubernetes YAML with Go templates). `helm install myapp ./chart --set image.tag=v2`. `helm upgrade` for rolling updates. Repositories: `helm repo add stable https://charts.helm.sh/stable`. Helmfile: declarative Helm chart management. Hooks: pre/post install/upgrade/delete.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Helm Documentation](https://helm.sh/docs/)<br>
+</article></body>
+</html>

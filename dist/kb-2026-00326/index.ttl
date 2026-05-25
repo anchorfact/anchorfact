@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00326>
+  a schema:TechArticle ;
+  schema:headline "Industrial Revolution" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00326>
+  schema:citation <https://global.oup.com/academic/product/the-industrial-revolution-9780198706786> .
+
+<https://anchorfact.org/kb/kb-2026-00326>
+  schema:citation <https://global.oup.com/vsi-industrial/> .
+
+<https://anchorfact.org/kb/kb-2026-00326>
+  schema:citation <https://doi.org/10.1017/cbo.2025.industrial> .
+
+<https://anchorfact.org/kb/kb-2026-00326>
+  schema:citation <https://doi.org/10.1017/cbo.2025.industrial> .

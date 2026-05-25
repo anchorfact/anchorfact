@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00269>
+  a schema:TechArticle ;
+  schema:headline "Convolutional Neural Networks (CNN)" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00269>
+  schema:citation <https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks> .

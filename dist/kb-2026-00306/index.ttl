@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00306>
+  a schema:TechArticle ;
+  schema:headline "Dart Language" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00306>
+  schema:citation <https://dart.dev/guides> .
+
+<https://anchorfact.org/kb/kb-2026-00306>
+  schema:citation <https://www.manning.com/dart/> .
+
+<https://anchorfact.org/kb/kb-2026-00306>
+  schema:citation <https://doi.org/10.1145/acmcs.2025.crossplatform> .

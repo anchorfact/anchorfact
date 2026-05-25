@@ -1,0 +1,18 @@
+# Edge AI and TinyML: Intelligence at the Edge
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Edge AI runs machine learning directly on devices — smartphones, IoT sensors, microcontrollers — eliminating cloud latency and privacy concerns. TinyML pushes ML to devices using <1mW of power.
+
+## Core Explanation
+Edge deployment constraints: memory (MB to KB), compute (no GPU), power (battery), and connectivity (intermittent). Model optimization via quantization, pruning, and architecture design (MobileNet, EfficientNet) is essential. ONNX Runtime and TFLite provide cross-platform inference.
+
+## Detailed Analysis
+Efficient architectures: MobileNet (depthwise separable convolution), ShuffleNet (channel shuffle), EfficientNet (compound scaling of depth/width/resolution), MCUNet (TinyNAS + TinyEngine for microcontrollers). Edge TPU (Google Coral) and Apple Neural Engine provide dedicated hardware acceleration.
+
+## Further Reading
+- TensorFlow Lite Micro
+- Edge Impulse Platform
+- tinyML Foundation

@@ -1,0 +1,19 @@
+# Visual Question Answering: Vision-Language Models for Image Understanding and Reasoning
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Visual Question Answering (VQA) tests whether AI truly understands images — given a photo and a natural language question, the model must provide the correct answer. This requires integrating computer vision (what objects are present, their spatial relationships) with language understanding (parsing the question, reasoning about its intent). VQA is the quintessential multimodal AI benchmark.
+
+## Core Explanation
+VQA pipeline: Image → visual encoder (CNN → ViT/CLIP) → visual features. Question → language encoder (LSTM → Transformer) → text features. Fusion → cross-modal attention between visual and linguistic representations → answer decoder (classification over frequent answers or generative). Architecture evolution: (1) CNN+LSTM — CNN encodes image to feature vector, LSTM encodes question, concatenate → MLP predicts answer (simple, struggles with spatial reasoning); (2) Bottom-up top-down attention (Anderson et al., 2018) — detect object regions (Faster R-CNN), attend to question-relevant regions; (3) Vision-Language pretrained models — ViLBERT, LXMERT, UNITER pretrain on image-text pairs with masked modeling and image-text matching; (4) Large multimodal models — GPT-4V, LLaVA, Gemini process interleaved image+text tokens, generating free-form answers.
+
+## Detailed Analysis
+VQA v2 dataset: 1.1M questions on 200K COCO images, balanced to remove language priors (for every image, each question has a complementary image with a different answer). Key finding: naive models achieve 54% by answering "yes" to "is there a...?" questions; the balanced dataset forces visual grounding. GQA: compositional questions requiring multi-step reasoning ("is the red object to the left of the blue cube made of metal?"). ScienceDirect 2025 overview identifies four reasoning types: (1) Object recognition — straightforward (SOTA: 95%+); (2) Spatial — above/below/left/right (SOTA: 65-75%); (3) Counting — how many objects (SOTA: 55-65%); (4) Commonsense — "why is this person wearing a helmet?" requires world knowledge (SOTA: 50-60%). VoQA (arxiv 2025): reformulates VQA as pure visual reasoning — the model receives only the image (no question text) and must infer what question is being asked from visual context, then answer it. This tests whether the model truly understands the scene or just pattern-matches question-answer pairs. Key limitations: (A) Language bias — models exploit spurious correlations in training data; (B) Knowledge grounding — questions like "what material is this building?" require knowledge not in the image; (C) Medical/domain-specific VQA requires specialized training.
+
+## Further Reading
+- VQA v2 Dataset: visualqa.org
+- LLaVA: Large Language and Vision Assistant
+- GQA: Compositional Visual Reasoning Benchmark
+

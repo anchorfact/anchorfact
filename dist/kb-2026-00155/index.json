@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00155",
+  "headline": "Monitoring and Observability",
+  "description": "Monitoring tells you what's wrong; observability lets you ask why. Three pillars: metrics (numeric time-series, counters/gauges), logs (timestamped event records), traces (end-to-end request flow across services). The 'Golden Signals': latency, traffic, errors, saturation.",
+  "dateCreated": "2026-05-24T18:00:03.949Z",
+  "dateModified": "2026-05-24T18:00:03.949Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Site Reliability Engineering (Google)",
+      "author": "Beyer, Betsy, Jones, Chris, Petoff, Jennifer, Murphy, Niall Richard",
+      "sameAs": "https://sre.google/books/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Observability Engineering (2025 Updated Edition)",
+      "author": "multiple",
+      "sameAs": "https://www.oreilly.com/observability/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Cloud-Native Observability: A 2025 Survey",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.observability"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00401>
+  a schema:TechArticle ;
+  schema:headline "Colonialism" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00401>
+  schema:citation <https://www.harpercollins.com/products/the-scramble-for-africa-thomas-pakenham> .
+
+<https://anchorfact.org/kb/kb-2026-00401>
+  schema:citation <https://www.routledge.com/colonialism/> .
+
+<https://anchorfact.org/kb/kb-2026-00401>
+  schema:citation <https://global.oup.com/vsi-colonialism/> .

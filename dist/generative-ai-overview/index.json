@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/generative-ai-overview",
+  "headline": "Generative AI: Models, Capabilities, and Impact",
+  "description": "Generative AI creates novel content — text, images, code, audio, and video — representing the most commercially significant AI breakthrough since deep learning. Foundation models powering generative AI are reshaping creative industries and enterprise workflows.",
+  "dateCreated": "2026-05-24T18:00:03.310Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Generative AI: A Creative New World",
+      "sameAs": "https://www.sequoiacap.com/article/generative-ai-a-creative-new-world/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Economic Potential of Generative AI (McKinsey)",
+      "sameAs": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai"
+    }
+  ]
+}

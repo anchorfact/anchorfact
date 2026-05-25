@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-online-advertising>
+  a schema:article ;
+  schema:headline "AI for Online Advertising: Real-Time Bidding, CTR Prediction, and Programmatic Ads" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-online-advertising>
+  schema:citation <https://arxiv.org/abs/1906.00091> .
+
+<https://anchorfact.org/kb/ai-for-online-advertising>
+  schema:citation <https://arxiv.org/abs/2008.13535> .

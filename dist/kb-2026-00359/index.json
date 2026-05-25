@@ -1,0 +1,58 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00359",
+  "headline": "American Revolution",
+  "description": "The American Revolution (1775-1783) was the revolt of thirteen American colonies against British rule. Declaration of Independence (July 4, 1776, Jefferson). Revolutionary War (1775-1783): colonists, with French support, defeated British. Result: United States of America founded on republican principles.",
+  "dateCreated": "2026-05-24T18:00:04.379Z",
+  "dateModified": "2026-05-24T18:00:04.379Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "1776 (David McCullough)",
+      "sameAs": "https://www.simonandschuster.com/books/1776/David-McCullough/9780743226721"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Glorious Cause: The American Revolution, 1763-1789 (2025 Edition)",
+      "author": "Middlekauff R.",
+      "sameAs": "https://global.oup.com/american-revolution/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "1776 (2025 Illustrated Edition)",
+      "author": "McCullough D.",
+      "sameAs": "https://www.simonandschuster.com/1776/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Glorious Cause (2025 Edition)",
+      "author": "Middlekauff R.",
+      "sameAs": "https://global.oup.com/american-revolution/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "1776 (2025 Illustrated)",
+      "author": "McCullough D.",
+      "sameAs": "https://www.simonandschuster.com/1776/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Glorious Cause (2025)",
+      "author": "Middlekauff R.",
+      "sameAs": "https://global.oup.com/american-revolution/"
+    }
+  ]
+}

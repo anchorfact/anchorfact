@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-search-recommendation>
+  a schema:article ;
+  schema:headline "AI for Search and Recommendation: Semantic Search, Collaborative Filtering, and Personalization Engines" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-search-recommendation>
+  schema:citation <https://arxiv.org/search/?query=dense+retrieval+recommendation+two+tower+survey> .
+
+<https://anchorfact.org/kb/ai-search-recommendation>
+  schema:citation <https://arxiv.org/search/?query=LLM+search+ranking+recommendation> .

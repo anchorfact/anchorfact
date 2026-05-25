@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/multi-modal-learning",
+  "headline": "Multi-Modal Machine Learning",
+  "description": "Multi-modal learning combines vision, language, audio, and other data modalities to achieve understanding beyond single-modality systems. GPT-4V and Gemini represent the frontier of integrated vision-language reasoning.",
+  "dateCreated": "2026-05-24T18:00:03.423Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Multimodal Machine Learning: A Survey and Taxonomy",
+      "sameAs": "https://arxiv.org/abs/1705.09406"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Visual Instruction Tuning (LLaVA)",
+      "sameAs": "https://arxiv.org/abs/2304.08485"
+    }
+  ]
+}

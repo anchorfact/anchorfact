@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00433",
+  "headline": "SEO for Business",
+  "description": "SEO (Search Engine Optimization) increases website visibility in organic search results. Three pillars: on-page (content quality, keywords, title tags), technical (site speed, mobile-friendly, crawlable), off-page (backlinks, authority). Google's algorithm uses 200+ ranking factors. SEO is a long-term investment — results take 3-6 months.",
+  "dateCreated": "2026-05-24T18:00:03.692Z",
+  "dateModified": "2026-05-24T18:00:03.692Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Art of SEO (Enge, Spencer, Stricchiola, 4th Ed)",
+      "sameAs": "https://www.oreilly.com/library/view/the-art-of/9781098102593/"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-shader-programming-1",
+    "text": "GPU shaders are small programs that run on graphics hardware to determine vertex positions (vertex shaders) and pixel colors (fragment shaders).",
+    "anchorfact:confidence": "high"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-shader-programming-2",
+    "text": "GLSL (OpenGL Shading Language) and HLSL (High-Level Shading Language) are the two dominant shader languages used in game development.",
+    "anchorfact:confidence": "high"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-shader-programming-extra",
+    "text": "Fragment shaders execute in massive parallelism across GPU cores, with modern GPUs running thousands of shader invocations simultaneously to achieve real-time frame rates at high resolutions.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://thebookofshaders.com/"
+    }
+  }
+]

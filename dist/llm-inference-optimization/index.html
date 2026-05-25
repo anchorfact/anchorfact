@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>LLM Inference Optimization: From FlashAttention to Speculative Decoding — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+LLM inference optimization has made serving trillion-parameter models economically viable. FlashAttention eliminates the memory bottleneck; speculative decoding accelerates generation 2-3x; KV-cache optimization reduces memory by 8x.<br>
+<br>
+## Core Explanation<br>
+Attention is the bottleneck: computing attention scores between all token pairs requires O(n²) memory. FlashAttention tiles this computation in fast SRAM. KV-cache stores past key/value vectors to avoid recomputation but consumes GBs of memory. Quantization compresses it to INT4/INT8.<br>
+<br>
+## Detailed Analysis<br>
+Continuous batching (vLLM) maximizes GPU utilization by dynamically adding/removing requests. PagedAttention manages KV-cache like virtual memory. Tensor parallelism splits matrices across GPUs. Pipeline parallelism divides layers across devices. Mixture-of-Experts reduces active parameters per token.<br>
+<br>
+## Further Reading<br>
+- FlashAttention GitHub<br>
+- vLLM Project<br>
+- NVIDIA TensorRT-LLM</article></body>
+</html>

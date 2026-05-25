@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/human-computer-interaction>
+  a schema:article ;
+  schema:headline "Human-Computer Interaction: AI-Powered UX, Generative Interfaces, and Usability Testing" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/human-computer-interaction>
+  schema:citation <https://chi2025.acm.org/> .
+
+<https://anchorfact.org/kb/human-computer-interaction>
+  schema:citation <https://www.nngroup.com/articles/ai-usability-testing/> .

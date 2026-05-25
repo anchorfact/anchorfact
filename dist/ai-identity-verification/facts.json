@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-identity-verification-1",
+    "text": "AI-powered identity verification (IDV) platforms (Jumio, Onfido, Veriff) combine: (1) Document verification -- computer vision authenticates ID documents (passports, driver's licenses) by checking security features (holograms, microprint, MRZ codes) via deep learning; (2) Facial matching -- ArcFace embeddings compare selfie to document photo with <0.01% false accept rate; (3) Liveness detection -- active (user performs actions: smile, turn head) and passive (detecting print/replay/digital injection attacks via texture, depth, and motion analysis). Jumio processes 300M+ verifications annually across 200+ countries.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/search/?query=identity+verification+document+authentication+liveness"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-identity-verification-2",
+    "text": "Regulatory compliance drives AI IDV adoption: KYC (Know Your Customer) requirements under AML regulations, GDPR data protection, and eIDAS 2.0 (EU digital identity framework) mandate robust identity verification for financial services, crypto exchanges, and online platforms. AI IDV reduces verification time from days (manual review) to <30 seconds while improving fraud detection (catching 95%+ of synthetic identity fraud vs. 60% for manual review).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://digital-strategy.ec.europa.eu/en/policies/eidas-regulation"
+    }
+  }
+]

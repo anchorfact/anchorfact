@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Contrastive Learning: SimCLR, MoCo, and CLIP — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Contrastive learning trains models to recognize what makes examples similar or different, learning representations by pulling positive pairs together and pushing negative pairs apart in embedding space.<br>
+<br>
+## Core Explanation<br>
+The contrastive loss (InfoNCE) treats each training example as its own class: the positive pair (augmented version of same image) should be similar; all other examples in the batch are negatives. Key design choices: data augmentation strategy, batch size (larger = more negatives), projection head dimensionality, and temperature parameter.<br>
+<br>
+## Detailed Analysis<br>
+CLIP extended contrastive learning to cross-modal pretraining — matching images with their captions across 400M examples. This enables zero-shot transfer: classify images by checking which text description (e.g., "a photo of a dog") has highest cosine similarity with the image embedding.<br>
+<br>
+## Further Reading<br>
+- Lilian Weng: Contrastive Representation Learning<br>
+- OpenAI CLIP Blog Post<br>
+- Papers With Code: Contrastive Learning</article></body>
+</html>

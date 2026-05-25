@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/multimodal-search>
+  a schema:article ;
+  schema:headline "Multimodal Search: Cross-Modal Retrieval, Product Search, and Multimodal Embeddings" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/multimodal-search>
+  schema:citation <https://github.com/CaraJ7/MMSearch> .
+
+<https://anchorfact.org/kb/multimodal-search>
+  schema:citation <https://opensearch.org/blog/multimodal-semantic-search/> .

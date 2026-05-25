@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/knowledge-graph-reasoning",
+  "headline": "Knowledge Graph Reasoning: Embedding-Based Link Prediction, Logical Inference, and Neurosymbolic Methods",
+  "description": "Knowledge graph reasoning answers \"what facts are missing from this knowledge base?\" — predicting unknown relationships between entities using a combination of embedding-based pattern matching, graph neural networks, and logical rule inference. From drug repurposing to question answering, KG reasoning powers structured knowledge discovery across science and industry.",
+  "dateCreated": "2026-05-24T18:00:03.366Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Knowledge graph reasoning: Mainstream methods, applications, and future trends",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S0952197625016276"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Bridging data and discovery: a survey on knowledge graphs in AI-driven scientific discovery",
+      "sameAs": "https://academic.oup.com/nsr/article/13/8/nwag140/8507209"
+    }
+  ]
+}

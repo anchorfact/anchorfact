@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00408>
+  a schema:TechArticle ;
+  schema:headline "Ancient Greek Literature" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00408>
+  schema:citation <https://www.gutenberg.org/ebooks/2199> .
+
+<https://anchorfact.org/kb/kb-2026-00408>
+  schema:citation <https://www.penguinrandomhouse.com/iliad/> .
+
+<https://anchorfact.org/kb/kb-2026-00408>
+  schema:citation <https://global.oup.com/vsi-greek-lit/> .
+
+<https://anchorfact.org/kb/kb-2026-00408>
+  schema:citation <https://www.penguinrandomhouse.com/iliad/> .

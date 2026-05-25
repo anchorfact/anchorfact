@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-human-pose-estimation-1",
+    "text": "ViTPose (Xu et al., NeurIPS 2022) introduced a plain Vision Transformer for pose estimation -- demonstrating that a simple ViT backbone without CNN-specific design (no deconvolution, no heatmap refinement) achieves SOTA on MS COCO keypoint (79.1 AP) and MPII benchmarks, scaling predictably from ViT-S to ViT-H, establishing the transformer era for human pose estimation.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2204.12484"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-human-pose-estimation-2",
+    "text": "The 2023-2025 evolution: MotionBERT (Zhu et al., ICCV 2023) unified 2D/3D pose estimation, mesh recovery, and motion prediction under a single pretrained transformer -- achieving 86.8 MPJPE on Human3.6M -- while RTMPose (MMPose, 2023) achieved real-time 30+ fps multi-person pose estimation on edge devices via distillation from large teacher models.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://openaccess.thecvf.com/content/ICCV2023/html/Zhu_MotionBERT_A_Unified_Perspective_on_Learning_Human_Motion_Representations_ICCV_2023_paper.html"
+    }
+  }
+]

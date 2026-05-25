@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/affective-computing>
+  a schema:article ;
+  schema:headline "Affective Computing: Multimodal Emotion Recognition, Sentiment Analysis, and Empathetic AI" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/affective-computing>
+  schema:citation <https://ieeexplore.ieee.org/document/11264591> .
+
+<https://anchorfact.org/kb/affective-computing>
+  schema:citation <https://www.nature.com/articles/s41598-025-89202-x> .

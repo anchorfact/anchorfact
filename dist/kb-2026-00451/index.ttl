@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00451>
+  a schema:TechArticle ;
+  schema:headline "Volleyball Fundamentals" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00451>
+  schema:citation <https://www.humankinetics.com/products/volleyball-skills-drills> .

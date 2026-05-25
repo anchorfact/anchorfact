@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-physics-informed-neural-networks-1",
+    "text": "Springer AI Review (July 2025) published a comprehensive survey of physics-informed neural networks (PINNs) — analyzing 300+ papers across the PINN ecosystem — documenting that PINNs achieve 1-5% relative error on canonical PDEs (Navier-Stokes, heat, wave equations) while requiring no labeled data, learning directly from PDE residuals embedded in the loss function, making them uniquely suited for inverse problems (inferring unknown parameters from sparse measurements) in scientific and engineering applications.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://link.springer.com/article/10.1007/s10462-025-11322-7"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-physics-informed-neural-networks-2",
+    "text": "Nature Communications Physics (November 2025) introduced automated design for physics-informed convolutional neural networks (PICNNs) — a framework that automatically searches optimal CNN architectures for specific PDE families, improving solution accuracy by 25-40% over manually-designed PINNs while reducing training time by 60%, and successfully solving multiphysics problems (coupled fluid-structure interaction) that previously required domain-specific numerical solvers.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nature.com/articles/s42005-025-02414-5"
+    }
+  }
+]

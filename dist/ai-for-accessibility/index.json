@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-accessibility",
+  "headline": "AI for Accessibility: Assistive Technologies, Sign Language Recognition, and Inclusive Systems",
+  "description": "AI is democratizing accessibility — from real-time sign language translation on smartphones to AI-powered screen readers that describe visual scenes. Computer vision, speech recognition, and natural language processing collectively transform assistive technologies from specialized hardware into software running on the devices people already own.",
+  "dateCreated": "2026-05-24T18:00:02.907Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The influence of artificial intelligence on individuals with disabilities: A qualitative scoping review of 47 peer-reviewed articles",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S0001691825013241"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Deep computer vision with artificial intelligence for sign language recognition",
+      "sameAs": "https://www.nature.com/articles/s41598-025-09106-8"
+    }
+  ]
+}

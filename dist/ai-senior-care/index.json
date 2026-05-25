@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-senior-care",
+  "headline": "AI for Senior Care: Fall Detection, Medication Reminders, and Social Companionship",
+  "description": "AI helps seniors age in place -- detecting falls and calling for help, managing medications, and providing social companionship through conversational robots. From Apple Watch's life-saving fall detection to ElliQ's proactive AI companion, technology addresses the global challenge of supporting an aging population.",
+  "dateCreated": "2026-05-24T18:00:03.159Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AI for Aging in Place: Fall Detection, Medication Management, and Social Robots for Senior Care (2024-2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=senior+care+AI+fall+detection+companion"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Socially Assistive Robotics for Elderly Care: Loneliness Reduction, Cognitive Stimulation, and Health Monitoring",
+      "sameAs": "https://arxiv.org/search/?query=social+robot+elderly+care"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-001",
+    "text": "North America (24.7 million km²) is the 3rd largest continent. 23 countries, ~600 million people. Features: Rocky Mountains, Great Plains, Mississippi River, Great Lakes (largest freshwater system), Grand Canyon, Niagara Falls. Diverse climates: Arctic (north) → temperate → subtropical (south) → tropical (Central America).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/north-america/P200000009517"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-002",
+    "text": "Rocky Mountains: 4,800 km from Canada to New Mexico.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/north-america/P200000009517"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-003",
+    "text": "Mississippi-Missouri River: 4th longest globally (5,971 km).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/north-america/P200000009517"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-004",
+    "text": "Great Lakes: Superior, Michigan, Huron, Erie, Ontario — 21% of world's surface fresh water.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.cia.gov/the-world-factbook/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-005",
+    "text": "Death Valley (CA): hottest place on Earth (56.7°C, 1913).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/north-america/P200000009517"
+    }
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/game-ui-ux-design",
+  "headline": "Game User Interface and UX Design",
+  "description": "Game UI bridges player intent and game mechanics. Good UI design communicates game state without breaking immersion, using principles from human-computer interaction adapted to real-time, controller-driven contexts.",
+  "dateCreated": "2026-05-24T18:00:04.217Z",
+  "dateModified": "2026-05-24T18:00:04.217Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Art of Game Design",
+      "sameAs": "https://www.routledge.com/The-Art-of-Game-Design/Schell/p/book/9781138632059"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Designing the User Interface, 6th Edition",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/designing-the-user-interface/P200000009530"
+    }
+  ]
+}

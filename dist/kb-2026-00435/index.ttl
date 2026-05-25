@@ -1,0 +1,23 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00435>
+  a schema:TechArticle ;
+  schema:headline "Negotiation Skills" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00435>
+  schema:citation <https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/> .
+
+<https://anchorfact.org/kb/kb-2026-00435>
+  schema:citation <https://www.penguinrandomhouse.com/getting-to-yes/> .
+
+<https://anchorfact.org/kb/kb-2026-00435>
+  schema:citation <https://www.harpercollins.com/never-split-the-difference/> .
+
+<https://anchorfact.org/kb/kb-2026-00435>
+  schema:citation <https://www.penguinrandomhouse.com/getting-to-yes/> .
+
+<https://anchorfact.org/kb/kb-2026-00435>
+  schema:citation <https://www.harpercollins.com/never-split/> .

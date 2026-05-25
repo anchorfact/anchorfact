@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00078",
+  "headline": "C++ Programming Language",
+  "description": "C++ is a general-purpose programming language created by Bjarne Stroustrup at Bell Labs in 1979 as \"C with Classes,\" first commercially released in 1985. It extends C with object-oriented programming, generic programming (templates), and functional features while maintaining C's performance and memory control. Standardized by ISO (C++23 is current; C++26 in development), C++ powers game engines (Unreal Engine), browsers (Chrome V8), databases (MySQL), operating systems (Windows, macOS), and high-frequency trading systems.",
+  "dateCreated": "2026-05-24T18:00:03.738Z",
+  "dateModified": "2026-05-24T18:00:03.738Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ISO/IEC 14882:2024 — C++23 Standard",
+      "sameAs": "https://www.iso.org/standard/83626.html"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The C++ Programming Language (5th Edition Updated for C++26, 2025)",
+      "author": "Stroustrup B.",
+      "sameAs": "https://www.stroustrup.com/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Modern C++: Best Practices for Performance and Safety (2025)",
+      "author": "multiple",
+      "sameAs": "https://www.oreilly.com/cpp/"
+    }
+  ]
+}

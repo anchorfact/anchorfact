@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/loss-functions",
+  "headline": "Loss Functions in Machine Learning",
+  "description": "Loss functions quantify the difference between model predictions and ground truth, guiding optimization. Cross-entropy dominates classification; MSE dominates regression; specialized losses handle imbalanced, structured, or adversarial tasks.",
+  "dateCreated": "2026-05-24T18:00:03.391Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Pattern Recognition and Machine Learning (Bishop)",
+      "sameAs": "https://link.springer.com/book/9780387310732"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Focal Loss for Dense Object Detection",
+      "sameAs": "https://arxiv.org/abs/1708.02002"
+    }
+  ]
+}

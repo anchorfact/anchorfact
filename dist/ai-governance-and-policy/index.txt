@@ -1,0 +1,18 @@
+# AI Governance: Risk Frameworks, Audits, and International Cooperation
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI governance has transitioned from voluntary principles to binding regulation and international cooperation. The Bletchley Declaration, NIST AI RMF, and EU AI Act represent landmark milestones in the emerging global AI governance architecture.
+
+## Core Explanation
+Governance layers: (1) International — Bletchley Declaration, Hiroshima AI Process (G7), UN Advisory Body on AI; (2) National — US Executive Orders, China's AI regulations, UK AI Safety Institute; (3) Industry — Frontier Model Forum (Anthropic, Google, Microsoft, OpenAI), voluntary safety commitments; (4) Technical — red teaming, model evaluations, safety cases.
+
+## Detailed Analysis
+The AI Safety Institute (UK) and US AISI conduct pre-deployment safety testing. The International Scientific Report on Advanced AI Safety (2024, mandated by Bletchley) synthesizes global research. Key debate: open-source models — should frontier capabilities be openly released?
+
+## Further Reading
+- Stanford HAI: AI Policy Tracker
+- AI Safety Institutes (UK/US)
+- OECD AI Policy Observatory

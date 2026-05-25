@@ -1,0 +1,19 @@
+# Quantum Machine Learning: Tensor Networks, QNNs, and Error Mitigation
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Quantum Machine Learning sits at the intersection of quantum computing and AI. Current research focuses on quantum error mitigation via ML, tensor network-inspired architectures, and quantum kernel methods — practical applications on noisy intermediate-scale quantum (NISQ) devices.
+
+## Core Explanation
+QML approaches: (1) Variational quantum circuits (VQC) — trainable parameterized quantum gates optimized classically; (2) Quantum kernel methods — quantum circuits compute kernel functions that may be classically intractable; (3) Tensor network ML — classical methods inspired by quantum formalism that compress high-dimensional data efficiently. The hybrid classical-quantum paradigm dominates: quantum subroutines embedded in classical pipelines.
+
+## Detailed Analysis
+Quantum error mitigation (QEM) represents the most practical QML success to date: neural networks learn to correct measurement errors without full quantum error correction (which requires thousands of physical qubits per logical qubit). IBM has demonstrated ML-QEM on 100-qubit experiments. Tensor networks bridge classical ML and quantum computing — MPS, PEPS, MERA provide interpretable, compression-efficient architectures.
+
+## Further Reading
+- IBM Qiskit Machine Learning
+- PennyLane (Xanadu) Tutorials
+- TensorNetwork.org
+

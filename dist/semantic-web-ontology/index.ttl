@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/semantic-web-ontology>
+  a schema:article ;
+  schema:headline "Semantic Web and Ontologies: Knowledge Representation, OWL Reasoning, and Linked Data" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/semantic-web-ontology>
+  schema:citation <https://www.scientificamerican.com/article/the-semantic-web/> .
+
+<https://anchorfact.org/kb/semantic-web-ontology>
+  schema:citation <https://www.w3.org/TR/owl2-overview/> .
+
+<https://anchorfact.org/kb/semantic-web-ontology>
+  schema:citation <https://doi.org/10.1145/3447772> .

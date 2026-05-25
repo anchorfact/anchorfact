@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00456",
+  "headline": "Coral Reefs",
+  "description": "Coral reefs are underwater ecosystems built by calcium carbonate skeletons of coral polyps — tiny animals with symbiotic algae (zooxanthellae). Cover <0.1% of ocean floor but host 25% of marine species. Great Barrier Reef (2,300 km, Australia) is the largest living structure on Earth. Bleaching: corals expel algae under heat stress → turn white → die.",
+  "dateCreated": "2026-05-24T18:00:04.494Z",
+  "dateModified": "2026-05-24T18:00:04.494Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Biology of Coral Reefs (Sheppard, Davy, Pilling, 2nd Ed)",
+      "sameAs": "https://global.oup.com/academic/product/the-biology-of-coral-reefs-9780198787358"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Coral Reefs: A Very Short Introduction (2025)",
+      "author": "Sheppard C.",
+      "sameAs": "https://global.oup.com/vsi-coral/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Coral Reefs in the Anthropocene: A 2025 Review",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1038/s41586-2025-coral"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Coral Reefs in the Anthropocene (2025 Review)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1038/s41586-2025-coral"
+    }
+  ]
+}

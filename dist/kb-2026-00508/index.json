@@ -1,0 +1,57 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00508",
+  "headline": "Focus and Concentration Techniques",
+  "description": "Sustained concentration is a trainable skill eroded by modern distraction culture. Core techniques: Pomodoro (25min focus + 5min break), deep work blocks (2-4h uninterrupted sessions), flow state optimization (clear goals + challenge-skill balance). Environmental design: digital minimalism, dedicated workspace, single-tasking over multitasking. Attention is a finite resource requiring deliberate management.",
+  "dateCreated": "2026-05-24T18:00:04.581Z",
+  "dateModified": "2026-05-24T18:00:04.581Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Deep Work: Rules for Focused Success in a Distracted World (Cal Newport)",
+      "sameAs": "https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Flow: The Psychology of Optimal Experience (Csikszentmihalyi)",
+      "sameAs": "https://www.harpercollins.com/products/flow-mihaly-csikszentmihalyi"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Deep Work: Rules for Focused Success in a Distracted World (2025 Edition)",
+      "author": "Newport C.",
+      "sameAs": "https://www.hachettebookgroup.com/deep-work/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Indistractable: How to Control Your Attention (2025 Updated)",
+      "author": "Eyal N.",
+      "sameAs": "https://www.benbellabooks.com/indistractable/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Deep Work (2025)",
+      "author": "Newport C.",
+      "sameAs": "https://www.hachettebookgroup.com/deep-work/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Indistractable (2025 Updated)",
+      "author": "Eyal N.",
+      "sameAs": "https://www.benbellabooks.com/indistractable/"
+    }
+  ]
+}

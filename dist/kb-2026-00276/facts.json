@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-001",
+    "text": "Overfitting occurs when a model learns noise and patterns specific to training data, failing to generalize to unseen data. Signs: low training error, high validation error. Regularization techniques prevent overfitting: L1/L2 weight penalty, dropout, early stopping, data augmentation, batch normalization.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://jmlr.org/papers/v15/srivastava14a.html"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-002",
+    "text": "Dropout (Srivastava et al., 2014): randomly deactivate neurons during training — forces network to learn redundant representations.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://jmlr.org/papers/v15/srivastava14a.html"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-003",
+    "text": "L2 regularization: add λ||w||² to loss — penalizes large weights.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.deeplearningbook.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-004",
+    "text": "Data augmentation: create synthetic training data (rotate/crop images, synonym replacement for text).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.deeplearningbook.org/"
+    }
+  }
+]

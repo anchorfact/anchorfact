@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f1",
+    "text": "AlphaFold 2 (Jumper et al. 2021, DeepMind, Nature) solved the 50-year protein folding problem, predicting 3D protein structures with atomic accuracy and leading to the 2024 Nobel Prize in Chemistry awarded to Hassabis, Jumper, and Baker.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nature.com/articles/s41586-021-03819-2"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f2",
+    "text": "GNoME (Merchant et al. 2023, DeepMind, Nature) used graph neural networks to discover 2.2 million new stable crystal structures — equivalent to nearly 800 years of experimental knowledge — advancing materials science.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nature.com/articles/s41586-023-06735-9"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f3",
+    "text": "GraphCast (Lam et al. 2023, DeepMind, Science) demonstrated that graph neural networks can outperform the world's best operational weather forecasting system on 90% of test variables in under one minute.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1126/science.adi2336"
+    }
+  }
+]

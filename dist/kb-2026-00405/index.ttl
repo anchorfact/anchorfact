@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00405>
+  a schema:TechArticle ;
+  schema:headline "Space Race" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00405>
+  schema:citation <https://us.macmillan.com/books/9780312427566/therightstuff> .
+
+<https://anchorfact.org/kb/kb-2026-00405>
+  schema:citation <https://us.macmillan.com/right-stuff/> .
+
+<https://anchorfact.org/kb/kb-2026-00405>
+  schema:citation <https://www.harpercollins.com/space-race/> .

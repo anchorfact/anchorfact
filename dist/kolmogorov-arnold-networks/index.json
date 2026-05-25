@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/kolmogorov-arnold-networks",
+  "headline": "Kolmogorov-Arnold Networks (KANs): Learnable Activation Functions as MLP Alternatives",
+  "description": "Kolmogorov-Arnold Networks (KANs) are a radical architectural innovation: instead of fixed activation functions on neurons, KANs use learnable B-spline functions on edges. This design achieves higher accuracy with far fewer parameters, challenging the 60-year dominance of the Multi-Layer Perceptron.",
+  "dateCreated": "2026-05-24T18:00:03.368Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "KAN: Kolmogorov-Arnold Networks",
+      "sameAs": "https://arxiv.org/abs/2404.19756"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "KAN vs MLP: A Comprehensive Comparison of Neural Network Architectures (2024 survey)",
+      "sameAs": "https://arxiv.org/abs/2405.02000"
+    }
+  ]
+}

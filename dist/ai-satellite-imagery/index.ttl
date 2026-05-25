@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-satellite-imagery>
+  a schema:article ;
+  schema:headline "AI for Satellite Imagery: Object Detection, Change Detection, and Global Monitoring" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-satellite-imagery>
+  schema:citation <https://arxiv.org/search/?query=satellite+object+detection+foundation+model> .
+
+<https://anchorfact.org/kb/ai-satellite-imagery>
+  schema:citation <https://arxiv.org/search/?query=geospatial+foundation+model+satellite> .

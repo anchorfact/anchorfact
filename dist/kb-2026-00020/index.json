@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00020",
+  "headline": "Constitutional AI",
+  "description": "Constitutional AI (CAI) is Anthropic's method for training AI systems to be helpful and harmless using explicit written principles — a \"constitution\" — rather than implicit human preferences. First published in December 2022 (arXiv:2212.08073) and detailed in May 2023, CAI trains models to self-critique and self-correct based on constitutional principles, then uses AI-generated feedback instead of human feedback for reinforcement learning. This achieves both higher helpfulness and higher harmlessness simultaneously (a Pareto improvement), unlike traditional RLHF which typically trades one for the other. Claude is the first model trained entirely with CAI.",
+  "dateCreated": "2026-05-24T18:00:03.258Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Constitutional AI: Harmlessness from AI Feedback",
+      "author": "Bai, Kadavath, Kundu, et al.",
+      "sameAs": "https://arxiv.org/abs/2212.08073"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback",
+      "author": "Bai, Jones, Kamalu, et al.",
+      "sameAs": "https://arxiv.org/abs/2204.05862"
+    }
+  ]
+}

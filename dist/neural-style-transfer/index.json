@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/neural-style-transfer",
+  "headline": "Neural Style Transfer: Artistic Rendering, Image-to-Image Translation, and Creative AI",
+  "description": "Neural style transfer applies the artistic style of one image (e.g., Van Gogh painting) to the content of another (a photograph), creating new artwork. From Gatys's seminal 2015 paper to IP-Adapter diffusion models, the field has evolved from minute-long optimization to real-time fine-grained style control.",
+  "dateCreated": "2026-05-24T18:00:03.443Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Style Transfer: A Decade Survey of Neural Methods from Gatys to Diffusion Models",
+      "sameAs": "https://arxiv.org/abs/2506.19278"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Bridging the metrics gap in image style transfer: A comprehensive review of evaluation methods",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S092523122500102X"
+    }
+  ]
+}

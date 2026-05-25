@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/object-detection",
+  "headline": "Object Detection: YOLO, R-CNN, and DETR",
+  "description": "Object detection identifies and localizes objects within images. Two-stage detectors (R-CNN family) prioritize accuracy; single-stage detectors (YOLO, SSD) prioritize speed; transformer-based detectors (DETR) simplify the pipeline.",
+  "dateCreated": "2026-05-24T18:00:03.449Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "You Only Look Once: Unified, Real-Time Object Detection",
+      "sameAs": "https://arxiv.org/abs/1506.02640"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "End-to-End Object Detection with Transformers (DETR)",
+      "sameAs": "https://arxiv.org/abs/2005.12872"
+    }
+  ]
+}

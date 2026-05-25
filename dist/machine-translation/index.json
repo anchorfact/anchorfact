@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/machine-translation",
+  "headline": "Machine Translation: Neural MT, LLM-Based Translation, and Multilingual Quality at Scale",
+  "description": "Machine translation has advanced from phrase-based statistical models to neural sequence-to-sequence to LLM-based translation spanning 200 languages. The Nature-published NLLB model brings translation quality to low-resource languages for the first time, while LLMs challenge the need for dedicated translation systems altogether.",
+  "dateCreated": "2026-05-24T18:00:03.395Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Scaling neural machine translation to 200 languages (No Language Left Behind)",
+      "sameAs": "https://www.nature.com/articles/s41586-024-07335-x"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Machine Translation in the Era of Large Language Models: A Comprehensive Survey",
+      "sameAs": "https://www.mdpi.com/2078-2489/16/9/723"
+    }
+  ]
+}

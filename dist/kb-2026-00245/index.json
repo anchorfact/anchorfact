@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00245",
+  "headline": "Redis Data Types",
+  "description": "Redis supports rich data types beyond simple key-value: String, List, Set, Sorted Set, Hash, Bitmap, HyperLogLog, Geospatial, Stream. Each type has specialized atomic operations — Redis is often called a 'data structure server'. Streams (Redis 5.0, 2018) enable message queue and event sourcing patterns.",
+  "dateCreated": "2026-05-24T18:00:04.026Z",
+  "dateModified": "2026-05-24T18:00:04.026Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM Digital Library",
+      "sameAs": "https://dl.acm.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Redis Essentials (2025 Edition)",
+      "author": "multiple",
+      "sameAs": "https://www.packtpub.com/redis/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Redis and Modern Caching Architectures (2025)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1109/ms.2025.redis"
+    }
+  ]
+}

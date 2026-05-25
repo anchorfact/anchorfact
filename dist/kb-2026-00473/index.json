@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00473",
+  "headline": "Philosophy of Science",
+  "description": "Philosophy of science examines how science works. Kuhn (1962) challenged the view of science as steady accumulation: instead, 'paradigm shifts' disrupt 'normal science.' Popper: falsifiability demarcates science from non-science — a theory must be testable and refutable. Scientific realism vs. instrumentalism: do theories describe reality or just predict observations?",
+  "dateCreated": "2026-05-24T18:00:03.618Z",
+  "dateModified": "2026-05-24T18:00:03.618Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Structure of Scientific Revolutions (Thomas Kuhn)",
+      "sameAs": "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html"
+    }
+  ]
+}

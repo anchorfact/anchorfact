@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Data-Centric AI: The Systematic Engineering of Training Data — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Data-Centric AI shifts the ML development paradigm from model tuning to data improvement. Championed by Andrew Ng, it argues that cleaner labels, better coverage, and systematic data engineering yield higher returns than architecture modifications.<br>
+<br>
+## Core Explanation<br>
+Traditional model-centric approach: fix dataset, iterate on model architecture, hyperparameters, training recipes → diminishing returns. Data-centric approach: fix model, iterate on data quality → consistent improvement. Key activities: (1) label quality — find and fix noisy labels via confident learning; (2) data augmentation — expand coverage of rare cases; (3) data valuation — identify which training examples matter most; (4) active learning — intelligently select which examples to label next.<br>
+<br>
+## Detailed Analysis<br>
+Active learning strategies: uncertainty sampling (query examples where model is least confident), diversity sampling (cover feature space), and hybrid approaches (BADGE). Curriculum learning presents examples from easy to hard, mimicking human education. The data flywheel creates compounding returns: each deployment cycle generates higher-quality data than the last.<br>
+<br>
+## Further Reading<br>
+- Andrew Ng: "From Model-Centric to Data-Centric AI"<br>
+- MIT DCAI Course (free online)<br>
+- Cleanlab: Automated Data Curation<br>
+</article></body>
+</html>

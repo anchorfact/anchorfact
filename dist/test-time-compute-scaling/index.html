@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Test-Time Compute Scaling: Inference-Time Reasoning Paradigms from o1/o3 to Forest-of-Thought — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Test-Time Compute Scaling represents a paradigm shift: instead of making models bigger during training, allocate more computation during inference for deeper reasoning. OpenAI o1/o3 demonstrated that "thinking longer" enables PhD-level scientific reasoning and competitive programming — reshaping the scaling landscape from pre-training to inference.<br>
+<br>
+## Core Explanation<br>
+Traditional scaling: increase model parameters (GPT-3→4) and training data to improve capability (pre-training scaling law). Limitation: diminishing returns; each 10x parameter increase yields ~5% benchmark improvement. Test-time compute scaling: allocate a fixed inference compute budget across strategies — (1) Best-of-N sampling — generate N independent chains, select best by verifier; (2) Chain-of-Thought (CoT) with sequential revision — generate, self-criticize, improve; (3) Tree search — build branching reasoning tree (Forest-of-Thought, Tree-of-Thoughts); (4) Process reward models (PRMs) — score intermediate steps, guide search. The key insight from OpenAI's research: test-time compute and model size follow a smooth substitutability curve — a smaller model with more inference time can match a larger model with less.<br>
+<br>
+## Detailed Analysis<br>
+OpenAI o1 architecture: internal chain-of-thought (hidden to users) + RL training with process reward models. The model "thinks" in a private reasoning space before producing the final answer. o3 (December 2024) scaled this further with fine-tuned compute allocation per problem difficulty. DeepSeek-R1 (January 2025) replicated the paradigm via pure RL without supervised CoT data, proving that reasoning emerges from reward optimization alone. Eight test-time compute strategies (from 2025 systematization surveys): (1) N-best sampling, (2) Majority voting, (3) CoT self-consistency, (4) Tree-of-Thoughts, (5) Forest-of-Thought, (6) Monte Carlo Tree Search (MCTS) reasoning, (7) Self-refinement loops, (8) Adaptive compute routing (allocate more inference time to harder problems). Practical considerations: latency vs. quality trade-off; for real-time applications (<1s latency), CoT with 2-3 revision steps outperforms complex tree search. Cost analysis (2025): o1-level reasoning at scale costs $0.10-1.00 per query vs. $0.001-0.01 for standard LLM inference — limiting deployment to high-value domains (scientific research, drug discovery, math education).<br>
+<br>
+## Further Reading<br>
+- DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via RL (2025)<br>
+- Let's Verify Step by Step (OpenAI Process Reward Models, 2023)<br>
+- Scaling LLM Test-Time Compute Optimally (Snell et al., NeurIPS 2024)<br>
+</article></body>
+</html>

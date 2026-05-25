@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/game-networking",
+  "headline": "Game Networking Architecture",
+  "description": "Multiplayer game networking delivers responsive real-time interaction over unreliable networks. The core challenges are latency compensation, state synchronization, and cheat prevention — solved through authoritative servers and client-side prediction.",
+  "dateCreated": "2026-05-24T18:00:04.210Z",
+  "dateModified": "2026-05-24T18:00:04.210Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Multiplayer Game Programming",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/multiplayer-game-programming/P200000009344"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Source Multiplayer Networking",
+      "sameAs": "https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking"
+    }
+  ]
+}

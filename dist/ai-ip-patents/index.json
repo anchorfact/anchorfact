@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-ip-patents",
+  "headline": "AI for Intellectual Property: Patent Search, Prior Art Analysis, and Trademark Intelligence",
+  "description": "AI is transforming intellectual property law -- from semantic patent search that finds prior art keyword systems miss to LLM-assisted patent drafting to trademark availability screening. The 150M+ global patent corpus is too vast for manual analysis; AI-powered IP tools are becoming essential for patent examiners, attorneys, and R&D strategists.",
+  "dateCreated": "2026-05-24T18:00:03.092Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Advancing patent law with generative AI: Human-in-the-loop frameworks for patent drafting and prior art",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S0172219025000080"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "AI-Powered Prior Art Search: Towards Enriching Intellectual Property Systems",
+      "sameAs": "https://link.springer.com/chapter/10.1007/978-3-031-99201-8_7"
+    }
+  ]
+}

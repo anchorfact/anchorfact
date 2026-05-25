@@ -1,0 +1,18 @@
+# Entrepreneurship: From Idea to Scalable Business
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Entrepreneurship transforms innovations into viable businesses. Lean Startup methodology, business model canvas, and venture capital form the modern entrepreneurial ecosystem.
+
+## Core Explanation
+The entrepreneurial process: opportunity identification → validation (customer discovery, MVP) → business model design (canvas: value proposition, customer segments, revenue streams, key resources) → funding (bootstrapping, angel, VC, crowdfunding) → scaling (hiring, process, internationalization).
+
+## Detailed Analysis
+Product-market fit — defined by Sean Ellis as "at least 40% of users would be very disappointed without your product" — is the single most critical milestone. Unit economics: LTV/CAC > 3 signals healthy growth. Cohort retention curves reveal whether users stick around.
+
+## Further Reading
+- Y Combinator: Startup School (free)
+- Paul Graham: Essays
+- First Round Review

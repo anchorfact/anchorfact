@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/activation-functions",
+  "headline": "Activation Functions in Neural Networks",
+  "description": "Activation functions introduce non-linearity into neural networks, enabling them to approximate any function. ReLU dominates hidden layers; softmax is standard for classification outputs.",
+  "dateCreated": "2026-05-24T18:00:02.748Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Deep Learning (Goodfellow, Bengio, Courville), Ch.6.3",
+      "sameAs": "https://www.deeplearningbook.org/contents/mlp.html"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Rectified Linear Units Improve Restricted Boltzmann Machines",
+      "sameAs": "https://www.cs.toronto.edu/~hinton/absps/reluICML.pdf"
+    }
+  ]
+}

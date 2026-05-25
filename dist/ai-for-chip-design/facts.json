@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-chip-design-1",
+    "text": "Google's breakthrough Nature paper (Mirhoseini et al., 2021, doi:10.1038/s41586-021-03544-w) demonstrated that deep reinforcement learning can generate superhuman chip floorplans in under six hours — matching or exceeding human experts with decades of experience on Google TPU accelerator chip designs — representing a paradigm shift in electronic design automation (EDA).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nature.com/articles/s41586-021-03544-w"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-chip-design-2",
+    "text": "NVIDIA cuLitho (announced GTC 2023, deployed 2024-2025) accelerates computational lithography — the most computationally intensive EDA step — by 40-60x using GPU-accelerated algorithms, reducing semiconductor manufacturing's optical proximity correction from weeks to hours and enabling next-generation sub-3nm process node design.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/doi/10.1145/3672557"
+    }
+  }
+]

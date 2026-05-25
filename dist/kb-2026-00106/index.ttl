@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00106>
+  a schema:TechArticle ;
+  schema:headline "Pointer Lock API" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00106>
+  schema:citation <https://www.w3.org/TR/pointerlock/> .

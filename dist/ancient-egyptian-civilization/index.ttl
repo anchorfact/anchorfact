@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ancient-egyptian-civilization>
+  a schema:Article ;
+  schema:headline "Ancient Egyptian Civilization: Pharaohs, Pyramids, and Afterlife" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ancient-egyptian-civilization>
+  schema:citation <https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587> .
+
+<https://anchorfact.org/kb/ancient-egyptian-civilization>
+  schema:citation <https://thamesandhudson.com/the-complete-gods-and-goddesses-of-ancient-egypt-9780500284247> .
+
+<https://anchorfact.org/kb/ancient-egyptian-civilization>
+  schema:citation <https://global.oup.com/ancient-egypt/> .
+
+<https://anchorfact.org/kb/ancient-egyptian-civilization>
+  schema:citation <https://www.penguinrandomhouse.com/ancient-egypt/> .

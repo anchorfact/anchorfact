@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-personal-assistants",
+  "headline": "AI Personal Assistants: Task Automation, Proactive Intelligence, and Agentic Personal AI",
+  "description": "AI personal assistants are evolving from voice command executors to proactive, agentic companions that anticipate needs and autonomously complete tasks. Apple Intelligence, Google Gemini, and ChatGPT represent the new generation of personal AI that works across apps, retains memory, and acts on your behalf.",
+  "dateCreated": "2026-05-24T18:00:03.111Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AI Personal Assistants: From Reactive Q&A to Proactive Task Automation with Agentic LLMs (2024-2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=AI+personal+assistant+agentic+task+automation"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "On-Device Large Language Models for Privacy-Preserving Personal AI Assistants (Apple Intelligence, 2024)",
+      "sameAs": "https://arxiv.org/search/?query=on+device+LLM+personal+assistant"
+    }
+  ]
+}

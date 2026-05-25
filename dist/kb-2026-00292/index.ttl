@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00292>
+  a schema:TechArticle ;
+  schema:headline "FastAPI" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00292>
+  schema:citation <https://fastapi.tiangolo.com/> .
+
+<https://anchorfact.org/kb/kb-2026-00292>
+  schema:citation <https://www.oreilly.com/fastapi/> .
+
+<https://anchorfact.org/kb/kb-2026-00292>
+  schema:citation <https://doi.org/10.1109/ms.2025.fastapi> .

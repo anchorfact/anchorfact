@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/anomaly-detection",
+  "headline": "Anomaly Detection in Machine Learning",
+  "description": "Anomaly detection identifies data points that deviate significantly from expected patterns — critical for fraud detection, industrial monitoring, and cybersecurity.",
+  "dateCreated": "2026-05-24T18:00:03.217Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Isolation Forest",
+      "sameAs": "https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/icdm08b.pdf"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Variational Autoencoder based Anomaly Detection using Reconstruction Probability",
+      "sameAs": "http://dm.snu.ac.kr/static/docs/TR/SNUDM-TR-2015-03.pdf"
+    }
+  ]
+}

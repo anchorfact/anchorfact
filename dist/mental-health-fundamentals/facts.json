@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-hlth-mh-001",
+    "text": "1 in 8 people (970M) had a mental disorder in 2019; anxiety & depression most common (WHO 2022).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.who.int/publications/i/item/9789240049338"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-hlth-mh-002",
+    "text": "DSM-5-TR (APA 2022) is the standard global classification of mental disorders.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1176/appi.books.9780890425787"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-hlth-mh-003",
+    "text": "CBT (Beck 1960s) is the most evidence-based psychotherapy for depression/anxiety.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1016/S0005-7894(79)80093-3"
+    }
+  }
+]

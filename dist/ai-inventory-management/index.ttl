@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-inventory-management>
+  a schema:article ;
+  schema:headline "AI for Inventory Management: Demand Forecasting, Stock Optimization, and Automated Replenishment" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-inventory-management>
+  schema:citation <https://arxiv.org/search/?query=inventory+management+machine+learning+demand+forecasting> .
+
+<https://anchorfact.org/kb/ai-inventory-management>
+  schema:citation <https://arxiv.org/search/?query=DeepAR+demand+forecasting+inventory> .

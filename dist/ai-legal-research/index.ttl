@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-legal-research>
+  a schema:article ;
+  schema:headline "AI for Legal Research: Case Law Search, Citation Analysis, and Litigation Analytics" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-legal-research>
+  schema:citation <https://arxiv.org/search/?query=legal+research+AI+case+law+semantic+search> .
+
+<https://anchorfact.org/kb/ai-legal-research>
+  schema:citation <https://arxiv.org/search/?query=LLM+legal+litigation+prediction> .

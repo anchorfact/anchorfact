@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-scene-text-recognition-1",
+    "text": "TrOCR (Li et al., Microsoft, 2021) introduced a transformer-based end-to-end OCR approach -- using a pretrained image Transformer (ViT/DeiT) as encoder and a pretrained text Transformer (RoBERTa) as decoder -- achieving SOTA on printed and handwritten text recognition benchmarks (IAM, SROIE) without complex preprocessing (no binarization, no segmentation), establishing the transformer paradigm for text recognition.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2109.10282"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-scene-text-recognition-2",
+    "text": "MDPI Electronics (November 2025) proposed a two-stage end-to-end OCR framework combining a DETR-based text detector with a transformer-based text recognizer in a unified pipeline -- achieving 92.5% F1 on ICDAR 2015 (incidental scene text) and 95.1% on Total-Text (curved text), demonstrating robustness across diverse fonts, orientations, occlusions, and lighting conditions in real-world scenarios.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.mdpi.com/2079-9292/14/23/4594"
+    }
+  }
+]

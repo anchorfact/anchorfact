@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "The Clipboard API (`navigator.clipboard`) provides asynchronous read/write access to the system clipboard from web pages. It replaces `document.execCommand('copy')` with a Promise-based, secure (requires Permissions API) approach supporting text, HTML, images (PNG/SVG), and custom formats.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/clipboard-apis/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "Clipboard access must be triggered by user gesture (click, keypress).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/clipboard-apis/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-003",
+    "text": "The Permissions API controls read access: `navigator.permissions.query({ name: 'clipboard-read' })`.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/clipboard-apis/"
+    }
+  }
+]

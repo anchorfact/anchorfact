@@ -1,0 +1,18 @@
+# Foundation Models: Paradigm Shift in AI
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Foundation models represent a paradigm shift — pretrain once on massive data, then adapt to thousands of downstream tasks via fine-tuning, prompting, or in-context learning.
+
+## Core Explanation
+Emergent abilities: capabilities that appear only at sufficient scale — chain-of-thought reasoning, instruction following, theory of mind, and tool use. These were NOT explicitly trained for; they emerged as model size crossed thresholds. Chinchilla scaling laws (Hoffmann et al., 2022) showed that for a given compute budget, model size and training tokens should scale equally.
+
+## Detailed Analysis
+The foundation model ecosystem: closed (GPT-4, Claude, Gemini), open-weight (Llama, Mistral, Qwen, DeepSeek), and fully open (OLMo, Pythia). Fine-tuning approaches include full fine-tuning, parameter-efficient methods (LoRA, QLoRA), and instruction tuning. The ecosystem increasingly demands transparency in training data composition.
+
+## Further Reading
+- Stanford CRFM: Foundation Model Research
+- Hugging Face: Open LLM Leaderboard
+- Epoch AI: Compute Trends

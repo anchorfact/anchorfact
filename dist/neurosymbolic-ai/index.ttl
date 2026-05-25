@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/neurosymbolic-ai>
+  a schema:article ;
+  schema:headline "Neuro-Symbolic AI: Bridging Learning and Reasoning" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/neurosymbolic-ai>
+  schema:citation <https://arxiv.org/abs/2005.05818> .
+
+<https://anchorfact.org/kb/neurosymbolic-ai>
+  schema:citation <https://www.nature.com/articles/s41586-023-06747-5> .

@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00349>
+  a schema:TechArticle ;
+  schema:headline "World Religions" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00349>
+  schema:citation <https://www.harpercollins.com/products/the-worlds-religions-huston-smith> .
+
+<https://anchorfact.org/kb/kb-2026-00349>
+  schema:citation <https://global.oup.com/vsi-world-religions/> .
+
+<https://anchorfact.org/kb/kb-2026-00349>
+  schema:citation <https://www.harpercollins.com/world-religions/> .
+
+<https://anchorfact.org/kb/kb-2026-00349>
+  schema:citation <https://www.harpercollins.com/world-religions/> .

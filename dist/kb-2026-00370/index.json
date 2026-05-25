@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00370",
+  "headline": "Human Brain Structure",
+  "description": "The human brain (~1.4 kg) is the most complex known object in the universe with ~86 billion neurons and ~100 trillion synapses. Regions: cerebrum (thinking, sensory, motor), cerebellum (coordination), brainstem (life support), limbic system (emotion, memory). Consciousness remains one of science's greatest mysteries.",
+  "dateCreated": "2026-05-24T18:00:04.520Z",
+  "dateModified": "2026-05-24T18:00:04.520Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Principles of Neural Science (6th Ed, Kandel et al.)",
+      "sameAs": "https://www.mheducation.com/highered/product/principles-neural-science-kandel-koester-mack-siegelbaum/9781259642234.html"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/entrepreneurship-and-startups",
+  "headline": "Entrepreneurship: From Idea to Scalable Business",
+  "description": "Entrepreneurship transforms innovations into viable businesses. Lean Startup methodology, business model canvas, and venture capital form the modern entrepreneurial ecosystem.",
+  "dateCreated": "2026-05-24T18:00:03.661Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Lean Startup",
+      "sameAs": "https://www.penguinrandomhouse.com/books/201674/the-lean-startup-by-eric-ries/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Business Model Generation (Osterwalder & Pigneur)",
+      "sameAs": "https://www.strategyzer.com/books/business-model-generation"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Lean Startup: How Constant Innovation Creates Radically Successful Businesses (2025 15th Anniversary Edition)",
+      "author": "Ries E.",
+      "sameAs": "https://theleanstartup.com/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Zero to One: Notes on Startups (2025 Updated Edition)",
+      "author": "Thiel P., Masters B.",
+      "sameAs": "https://www.crownpublishing.com/zero-to-one/"
+    }
+  ]
+}

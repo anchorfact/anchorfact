@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00443>
+  a schema:TechArticle ;
+  schema:headline "Learning How to Learn" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00443>
+  schema:citation <https://www.penguinrandomhouse.com/books/533681/a-mind-for-numbers-by-barbara-oakley-phd/> .

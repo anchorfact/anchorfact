@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-air-quality",
+  "headline": "AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction",
+  "description": "AI breathes for the planet -- calibrating low-cost sensors into hyperlocal air quality networks, predicting pollution 72 hours ahead, and estimating health impacts. From Google Maps air quality layer to PurpleAir's 30K citizen sensors, AI makes the invisible air visible.",
+  "dateCreated": "2026-05-24T18:00:02.797Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Deep Learning for Air Quality Monitoring and Prediction: Low-Cost Sensor Calibration, Satellite Estimation, and Forecasting (2024-2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=air+quality+deep+learning+PM2.5+prediction"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Machine Learning for Air Pollution Source Attribution and Health Impact Assessment",
+      "sameAs": "https://arxiv.org/search/?query=air+pollution+machine+learning+source+attribution"
+    }
+  ]
+}

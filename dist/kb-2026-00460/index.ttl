@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00460>
+  a schema:TechArticle ;
+  schema:headline "Pyramids of Giza" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00460>
+  schema:citation <https://thamesandhudson.com/the-complete-pyramids-9780500285473> .
+
+<https://anchorfact.org/kb/kb-2026-00460>
+  schema:citation <https://aucpress.com/pyramids/> .
+
+<https://anchorfact.org/kb/kb-2026-00460>
+  schema:citation <https://thamesandhudson.com/giza/> .

@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00088",
+  "headline": "WebSocket API",
+  "description": "The WebSocket API is the browser-side interface to the WebSocket protocol (RFC 6455), providing full-duplex, bidirectional communication between browser and server over a single TCP connection.",
+  "dateCreated": "2026-05-24T18:00:04.143Z",
+  "dateModified": "2026-05-24T18:00:04.143Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The WebSocket API (W3C)",
+      "sameAs": "https://www.w3.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Real-Time Web Communication: WebSocket, WebRTC, and Server-Sent Events (2025 Edition)",
+      "author": "Grigorik I.",
+      "sameAs": "https://www.oreilly.com/library/view/high-performance-browser/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "A Survey of Real-Time Communication Protocols (2025)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.rtc"
+    }
+  ]
+}

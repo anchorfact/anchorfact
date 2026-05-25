@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/thermodynamics-fundamentals",
+  "headline": "Thermodynamics Fundamentals",
+  "description": "Thermodynamics governs energy transformation — from steam engines to living cells. Its four laws are universal, applying equally to black holes and biochemical reactions, making it the most broadly applicable framework in physics.",
+  "dateCreated": "2026-05-24T18:00:04.562Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Atkins' Physical Chemistry, 12th Edition",
+      "sameAs": "https://global.oup.com/academic/product/atkins-physical-chemistry-9780198847816/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Thermodynamics: An Engineering Approach, 10th Edition",
+      "sameAs": "https://www.mheducation.com/highered/product/thermodynamics-engineering-approach-cengel-boles/M9781266152115.html"
+    }
+  ]
+}

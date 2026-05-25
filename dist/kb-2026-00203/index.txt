@@ -1,0 +1,20 @@
+# Regular Expressions
+Confidence: high
+Last verified: 2026-05-22
+Generation: human_only
+
+
+
+
+
+## TL;DR
+
+Regular expressions (regex) are patterns for matching text, powered by finite automata theory. First introduced by Stephen Kleene (1951), regex is the standard tool for text search, validation, and extraction across programming languages, text editors, and command-line tools.
+
+## Core Explanation
+
+Core syntax: `.` any char, `*` zero or more, `+` one or more, `?` optional, `|` alternation, `[]` character class, `()` capturing group, `\d` digit, `\w` word char. Lookahead `(?=...)` and lookbehind `(?<=...)` assert without consuming. Backtracking can cause catastrophic (exponential) performance on pathological patterns — prefer simple, linear-time patterns.
+
+## Further Reading
+
+- 

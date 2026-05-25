@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sci-ds-001",
+    "text": "CRISP-DM remains the most widely adopted data science project framework with 6 phases.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.semanticscholar.org/paper/CRISP-DM"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sci-ds-002",
+    "text": "Hadley Wickham's \"Tidy Data\" paper (JStatSoft 2014) established the standard for structuring datasets.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.18637/jss.v059.i10"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sci-ds-003",
+    "text": "Data science combines statistics, computer science, and domain expertise (Conway Venn diagram 2010).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram"
+    }
+  }
+]

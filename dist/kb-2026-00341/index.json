@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00341",
+  "headline": "Human Anatomy",
+  "description": "Human anatomy is the study of body structure. Systems: skeletal (206 bones, support), muscular (600+ muscles, movement), nervous (brain, spinal cord, nerves), cardiovascular (heart, blood vessels), respiratory (lungs, gas exchange), digestive, endocrine (hormones), immune, urinary, reproductive.",
+  "dateCreated": "2026-05-24T18:00:04.519Z",
+  "dateModified": "2026-05-24T18:00:04.519Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Gray's Anatomy (41st Edition)",
+      "sameAs": "https://www.elsevier.com/books/grays-anatomy/standring/978-0-7020-5230-9"
+    }
+  ]
+}

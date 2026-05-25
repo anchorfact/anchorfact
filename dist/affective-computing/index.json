@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/affective-computing",
+  "headline": "Affective Computing: Multimodal Emotion Recognition, Sentiment Analysis, and Empathetic AI",
+  "description": "Affective computing gives AI emotional intelligence — recognizing human emotions from voice, face, text, and physiology, and responding empathetically. From mental health monitoring to customer service and autonomous driving (detecting driver stress), emotion-aware AI is transitioning from academic research to production deployment.",
+  "dateCreated": "2026-05-24T18:00:02.767Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Multimodal Emotion Recognition: A Comprehensive Survey of Methods, Modalities, and Applications",
+      "sameAs": "https://ieeexplore.ieee.org/document/11264591"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "MemoCMT: multimodal emotion recognition using cross-modal transformer",
+      "sameAs": "https://www.nature.com/articles/s41598-025-89202-x"
+    }
+  ]
+}

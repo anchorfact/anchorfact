@@ -1,0 +1,45 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/strategic-management-theory",
+  "headline": "Strategic Management: Frameworks and Practice",
+  "description": "Strategic management defines how organizations create and sustain competitive advantage through analytical frameworks and disciplined execution.",
+  "dateCreated": "2026-05-24T18:00:03.695Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Competitive Strategy: Techniques for Analyzing Industries and Competitors",
+      "sameAs": "https://www.simonandschuster.com/books/Competitive-Strategy/Michael-E-Porter/9780684005278"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Practice of Management",
+      "sameAs": "https://www.harpercollins.com/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Competitive Strategy: Techniques for Analyzing Industries and Competitors (2025 45th Anniversary Edition)",
+      "author": "Porter M.E.",
+      "sameAs": "https://www.hbs.edu/faculty/Pages/item.aspx?num=195"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Good Strategy Bad Strategy: The Difference and Why It Matters (2025 Updated)",
+      "author": "Rumelt R.",
+      "sameAs": "https://www.crownpublishing.com/good-strategy/"
+    }
+  ]
+}

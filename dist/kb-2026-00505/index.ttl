@@ -1,0 +1,26 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00505>
+  a schema:TechArticle ;
+  schema:headline "Goal Setting Frameworks" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00505>
+  schema:citation <https://www.penguinrandomhouse.com/books/545839/measure-what-matters-by-john-doerr/> .
+
+<https://anchorfact.org/kb/kb-2026-00505>
+  schema:citation <https://jamesclear.com/atomic-habits> .
+
+<https://anchorfact.org/kb/kb-2026-00505>
+  schema:citation <https://www.penguinrandomhouse.com/atomic-habits/> .
+
+<https://anchorfact.org/kb/kb-2026-00505>
+  schema:citation <https://www.simonandschuster.com/7-habits/> .
+
+<https://anchorfact.org/kb/kb-2026-00505>
+  schema:citation <https://www.penguinrandomhouse.com/atomic-habits/> .
+
+<https://anchorfact.org/kb/kb-2026-00505>
+  schema:citation <https://www.simonandschuster.com/7-habits/> .

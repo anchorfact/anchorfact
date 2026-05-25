@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-conversational-ai-systems-1",
+    "text": "Rasa CALM (Conversational AI with Language Models, 2024) replaces traditional intent-classification + state-machine dialogue with an LLM-generated flow — business logic expressed as natural language descriptions, with the LLM deciding next actions based on conversation context.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://link.springer.com/book/10.1007/978-3-031-02176-3"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-conversational-ai-systems-2",
+    "text": "Task-oriented dialogue systems follow a structured pipeline: natural language understanding (intent + slot filling), dialogue state tracking, dialogue policy, and natural language generation. Modern LLM-based approaches can collapse this pipeline into a single end-to-end model with tool calling for database access.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2402.11115"
+    }
+  }
+]

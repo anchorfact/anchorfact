@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/transformer-architecture-variants",
+  "headline": "Transformer Variants: From Encoder-Decoder to Mamba State Space Models",
+  "description": "While the Transformer architecture dominates AI, alternatives are emerging. State Space Models (Mamba, Jamba) promise linear complexity for long sequences, challenging attention's O(n²) bottleneck.",
+  "dateCreated": "2026-05-24T18:00:03.539Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+      "sameAs": "https://arxiv.org/abs/2312.00752"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Attention Is All You Need",
+      "sameAs": "https://arxiv.org/abs/1706.03762"
+    }
+  ]
+}

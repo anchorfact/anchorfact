@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00416",
+  "headline": "Design Thinking",
+  "description": "Design thinking is a human-centered problem-solving methodology popularized by IDEO. Five phases: Empathize (understand users), Define (frame problem), Ideate (brainstorm solutions), Prototype (build low-fidelity versions), Test (gather feedback). Iterative, not linear — you can move back and forth.",
+  "dateCreated": "2026-05-24T18:00:03.583Z",
+  "dateModified": "2026-05-24T18:00:03.583Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Change by Design (Tim Brown)",
+      "sameAs": "https://www.harpercollins.com/products/change-by-design-tim-brown"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Change by Design: How Design Thinking Creates New Alternatives (2025 Revised)",
+      "author": "Brown T.",
+      "sameAs": "https://www.harpercollins.com/change-by-design/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Design Thinking: A Guide to Creative Problem Solving (2025)",
+      "author": "multiple",
+      "sameAs": "https://www.routledge.com/design-thinking/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Change by Design: Revised and Updated (2025)",
+      "author": "Brown T.",
+      "sameAs": "https://www.harpercollins.com/change-by-design/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Design Thinking: Understanding How Designers Think (2025)",
+      "author": "Cross N.",
+      "sameAs": "https://www.bloomsbury.com/design-thinking/"
+    }
+  ]
+}

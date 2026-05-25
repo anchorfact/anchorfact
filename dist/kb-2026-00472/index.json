@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00472",
+  "headline": "Risk Management",
+  "description": "Risk management identifies, assesses, and mitigates threats to an organization's capital and earnings. Process: identify risk → analyze (probability × impact) → evaluate → treat (avoid, reduce, transfer/insure, accept). Financial risk: market, credit, liquidity, operational. Enterprise Risk Management (ERM) takes a holistic approach.",
+  "dateCreated": "2026-05-24T18:00:03.690Z",
+  "dateModified": "2026-05-24T18:00:03.690Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Against the Gods: The Remarkable Story of Risk (Peter Bernstein)",
+      "sameAs": "https://www.wiley.com/en-us/Against+the+Gods%3A+The+Remarkable+Story+of+Risk-p-9780471295631"
+    }
+  ]
+}

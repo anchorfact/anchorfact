@@ -1,0 +1,23 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00430>
+  a schema:TechArticle ;
+  schema:headline "Entrepreneurship Fundamentals" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00430>
+  schema:citation <https://www.penguinrandomhouse.com/books/120785/the-lean-startup-by-eric-ries/> .
+
+<https://anchorfact.org/kb/kb-2026-00430>
+  schema:citation <https://theleanstartup.com/> .
+
+<https://anchorfact.org/kb/kb-2026-00430>
+  schema:citation <https://www.cengage.com/entrepreneurship/> .
+
+<https://anchorfact.org/kb/kb-2026-00430>
+  schema:citation <https://theleanstartup.com/> .
+
+<https://anchorfact.org/kb/kb-2026-00430>
+  schema:citation <https://www.crownpublishing.com/zero-to-one/> .

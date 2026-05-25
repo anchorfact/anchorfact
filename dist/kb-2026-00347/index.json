@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00347",
+  "headline": "World Geography",
+  "description": "Earth's surface: 71% water, 29% land. Seven continents: Asia (largest, 44.6M km²), Africa, North America, South America, Antarctica, Europe, Australia. Five oceans: Pacific (largest, 165M km²), Atlantic, Indian, Southern, Arctic. Highest point: Mt. Everest (8,848.86m). Deepest: Mariana Trench (10,994m).",
+  "dateCreated": "2026-05-24T18:00:04.323Z",
+  "dateModified": "2026-05-24T18:00:04.323Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "National Geographic Atlas of the World (11th Ed)",
+      "sameAs": "https://www.nationalgeographic.com/books/article/atlas-of-the-world-11th-edition"
+    }
+  ]
+}

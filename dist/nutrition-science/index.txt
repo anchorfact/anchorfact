@@ -1,0 +1,18 @@
+# Nutrition Science: Macronutrients, Micronutrients, and Diet
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Nutrition science studies how food components affect human health. The balance of macronutrients (carbs, proteins, fats) and adequacy of micronutrients (vitamins, minerals) determine physiological function and disease risk.
+
+## Core Explanation
+Macronutrients: carbohydrates — simple (sugars) vs complex (starches, fiber). Glycemic index measures blood sugar response. Proteins — composed of 20 amino acids (9 essential, must come from diet). Fats — saturated (solid at room temp), unsaturated (liquid), trans (industrial, harmful). Micronutrients: vitamins (A, B-complex, C, D, E, K) and minerals (calcium, iron, zinc, iodine).
+
+## Detailed Analysis
+Dietary patterns: Mediterranean (olive oil, vegetables, fish — associated with 25-30% CVD reduction), DASH (hypertension reduction), plant-based. The double burden of malnutrition — undernutrition and obesity coexisting — affects many developing nations.
+
+## Further Reading
+- Harvard Nutrition Source
+- USDA Dietary Guidelines
+- FAO: Food-Based Dietary Guidelines

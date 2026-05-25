@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "PHP (Rasmus Lerdorf, 1994, originally Personal Home Page Tools) is a server-side scripting language powering 75%+ of websites with known server-side languages (WordPress, Wikipedia, Facebook). PHP 8.x (2020+) brought JIT compilation, union types, match expressions, named arguments, and fibers.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.wiley.com/en-us/PHP+%26+MySQL%3A+Server+side+Web+Development-p-9781119149224"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "PHP 8.0: JIT compiler, union types, match expression, named arguments, attributes.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.php.net/docs.php"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-003",
+    "text": "PHP 8.1: enums, fibers (async), readonly properties.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.php.net/docs.php"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-004",
+    "text": "PHP 8.4 (2024): property hooks, asymmetric visibility.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.php.net/docs.php"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-005",
+    "text": "PHP-FPM: FastCGI Process Manager — handles requests efficiently.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.php.net/docs.php"
+    }
+  }
+]

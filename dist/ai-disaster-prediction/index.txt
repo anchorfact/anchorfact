@@ -1,0 +1,14 @@
+# AI for Disaster Prediction: Earthquake Forecasting, Flood Detection, and Early Warning Systems
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI is becoming humanity's early warning system -- predicting floods days in advance, detecting wildfires from satellite imagery, and providing earthquake alerts seconds before shaking arrives. From Google's Flood Hub covering 80+ countries to AI-powered tsunami buoys, machine learning gives communities precious minutes to hours of lead time that save lives.
+
+## Core Explanation
+Disaster AI pipeline: (1) Sensing -- satellites (optical, SAR, thermal), ground sensors (seismic, water level, weather stations), IoT buoys (DART for tsunami), social media (crowdsourced reports); (2) Prediction -- time-series forecasting (flood level from rainfall + river gauge data), image-based detection (wildfire smoke from satellite), seismic pattern recognition (earthquake P-wave for early warning); (3) Alerting -- AI decides alert urgency and geographic scope, generates multi-language warnings, pushes via mobile networks (Wireless Emergency Alerts); (4) Response -- post-disaster damage assessment via satellite change detection, AI-optimized resource allocation (where to send rescue teams), and supply chain disruption prediction.
+
+## Detailed Analysis
+Flood prediction: Google Flood Hub uses LSTM-based hydrological models trained on river gauge data, terrain elevation, and weather forecasts. Inundation models predict flood extent at 10m resolution. 7-day lead time, 460M people covered in 80 countries. Earthquake: EEW (Earthquake Early Warning) -- ShakeAlert (US West Coast) detects P-waves (non-destructive, travel faster) and alerts before S-waves (destructive) arrive. Seconds of warning enable automated train braking, elevator stopping, and surgical procedure pausing. AI improves phase picking (P/S wave arrival times) with 90%+ accuracy vs 70% for traditional STA/LTA. Wildfire: AI processes satellite thermal imagery (MODIS, VIIRS, GOES) for real-time hotspot detection. ML combines with weather (wind, humidity, temperature) and vegetation dryness indices for fire spread prediction. Social media NLP: during disasters, Twitter/Facebook posts provide real-time situational awareness. AI filters noise, geolocates reports, and maps affected areas.
+

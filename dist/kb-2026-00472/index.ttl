@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00472>
+  a schema:TechArticle ;
+  schema:headline "Risk Management" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00472>
+  schema:citation <https://www.wiley.com/en-us/Against+the+Gods%3A+The+Remarkable+Story+of+Risk-p-9780471295631> .

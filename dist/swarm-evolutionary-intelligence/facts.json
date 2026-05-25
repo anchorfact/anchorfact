@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-swarm-evolutionary-intelligence-1",
+    "text": "NEAT (NeuroEvolution of Augmenting Topologies, Stanley & Miikkulainen, 2002) evolves both weights and network architecture simultaneously — starting from minimal networks and complexifying through speciation, achieving competitive results on reinforcement learning benchmarks without backpropagation.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-swarm-evolutionary-intelligence-2",
+    "text": "Particle Swarm Optimization (Kennedy & Eberhart, 1995) is inspired by bird flocking and fish schooling — particles adjust their position based on personal best and swarm best, with few hyperparameters and strong global search capability for non-differentiable optimization.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://ieeexplore.ieee.org/document/10243027"
+    }
+  }
+]

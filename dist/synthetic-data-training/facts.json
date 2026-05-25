@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f1",
+    "text": "Phi-1 (Gunasekar et al. 2023, Microsoft, \"Textbooks Are All You Need\") showed that a 1.3B parameter model trained on high-quality synthetic textbook data can achieve coding performance competitive with models 10× larger.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2306.11644"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f2",
+    "text": "Phi-3 (Abdin et al. 2024, Microsoft) is a 3.8B model that achieves GPT-3.5-level performance by training on heavily filtered and synthetic data, demonstrating that data quality trumps data quantity.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2404.14219"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f3",
+    "text": "Synthetic data privacy risks include memorization and unintended leakage. Best practices (DeepMind 2024) recommend differential privacy guarantees, careful prompt engineering, and thorough decontamination against evaluation sets.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2404.07503"
+    }
+  }
+]

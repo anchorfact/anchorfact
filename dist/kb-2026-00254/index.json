@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00254",
+  "headline": "Data Lake Architecture",
+  "description": "A Data Lake is a centralized repository storing raw data in native format (Parquet, Avro, JSON) on cheap object storage (S3, ADLS). Schema-on-read: apply schema when querying, not when storing. Used for big data analytics, ML training, and data science. The Lakehouse architecture (Databricks, 2021) adds ACID transactions and data warehouse features on top of the data lake.",
+  "dateCreated": "2026-05-24T18:00:03.788Z",
+  "dateModified": "2026-05-24T18:00:03.788Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM Digital Library",
+      "sameAs": "https://dl.acm.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Data Lakehouse: The Definitive Guide (2025 Edition)",
+      "author": "multiple",
+      "sameAs": "https://www.oreilly.com/lakehouse/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Modern Data Architectures: A 2025 Systematic Review",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.data"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-predictive-policing>
+  a schema:article ;
+  schema:headline "AI for Predictive Policing: Crime Forecasting, Resource Allocation, and Bias Mitigation" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-predictive-policing>
+  schema:citation <https://arxiv.org/search/?query=predictive+policing+machine+learning+fairness> .
+
+<https://anchorfact.org/kb/ai-predictive-policing>
+  schema:citation <https://arxiv.org/search/?query=algorithmic+bias+predictive+policing> .

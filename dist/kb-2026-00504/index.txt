@@ -1,0 +1,19 @@
+# Sports Psychology Fundamentals
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+
+
+## TL;DR
+
+Sports psychology applies psychological principles to athletic performance and well-being. Core techniques: goal setting (SMART: Specific, Measurable, Achievable, Relevant, Time-bound), visualization (mental rehearsal), self-talk (positive/cognitive restructuring), arousal regulation (breathing, progressive relaxation), concentration training (mindfulness, pre-performance routines).
+
+## Core Explanation
+
+Goal setting: outcome goals (winning), performance goals (personal best), process goals (technique execution). Self-efficacy theory (Bandura): belief in one's ability to succeed affects performance. Attribution theory: how athletes explain success/failure (internal vs external, stable vs unstable). Team dynamics: cohesion (task + social), leadership, communication. Choking under pressure: attentional narrowing, increased self-consciousness, impaired automaticity.
+
+## Further Reading
+
+- [APA Division 47: Sport Psychology](https://www.apadivisions.org/division-47)
+

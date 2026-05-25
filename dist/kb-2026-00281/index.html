@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Data Preprocessing — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+<br>
+Data preprocessing cleans and prepares raw data for ML. Steps: handling missing values (drop, impute), outlier detection and treatment, encoding categorical variables, feature scaling, train/test splitting. Real-world data is messy — preprocessing typically consumes 60-80% of a data scientist's time.<br>
+<br>
+## Core Explanation<br>
+<br>
+Missing data: MCAR (completely random), MAR (random given observed), MNAR (not random). Imputation: mean/median (simple), KNN (neighbor values), MICE (multiple imputation). Outliers: IQR method (Q1-1.5IQR, Q3+1.5IQR), Z-score (|z|>3). Data leakage: when training data contains information about test set — must prevent (e.g., scale AFTER splitting, not before).<br>
+<br>
+## Further Reading<br>
+<br>
+- [Python Data Science Handbook (Jake VanderPlas)](https://jakevdp.github.io/PythonDataScienceHandbook/)<br>
+</article></body>
+</html>

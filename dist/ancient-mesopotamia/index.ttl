@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ancient-mesopotamia>
+  a schema:Article ;
+  schema:headline "Ancient Mesopotamia: Cradle of Civilization" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ancient-mesopotamia>
+  schema:citation <https://press.uchicago.edu/ucp/books/book/chicago/A/bo3633333.html> .
+
+<https://anchorfact.org/kb/ancient-mesopotamia>
+  schema:citation <https://www.routledge.com/The-Babylonian-World/Leick/p/book/9780415497903> .
+
+<https://anchorfact.org/kb/ancient-mesopotamia>
+  schema:citation <https://global.oup.com/mesopotamia/> .
+
+<https://anchorfact.org/kb/ancient-mesopotamia>
+  schema:citation <https://us.macmillan.com/babylon/> .

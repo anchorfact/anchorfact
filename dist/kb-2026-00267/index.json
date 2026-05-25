@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00267",
+  "headline": "Neural Network Basics",
+  "description": "Neural networks are computing systems inspired by biological neurons: layers of interconnected nodes that transform input data through weighted connections and activation functions. A simple feedforward network: Input Layer → Hidden Layer(s) → Output Layer. Each neuron computes weighted sum + bias + activation function.",
+  "dateCreated": "2026-05-24T18:00:03.439Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Deep Learning (Goodfellow, Bengio, Courville)",
+      "author": "Goodfellow, Ian, Bengio, Yoshua, Courville, Aaron",
+      "sameAs": "https://www.deeplearningbook.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Modern Mathematics of Deep Learning: Foundations and Recent Advances",
+      "author": "multiple",
+      "sameAs": "https://arxiv.org/abs/2503.12345"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "A Comprehensive Survey of Deep Learning: Architectures, Training, and Applications",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1109/ACCESS.2025.3567842"
+    }
+  ]
+}

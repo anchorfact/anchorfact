@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00350",
+  "headline": "Ancient Egypt",
+  "description": "Ancient Egypt (~3100 BCE - 30 BCE) was one of the world's earliest and longest-lasting civilizations along the Nile River. Known for: pyramids (Giza, ~2500 BCE), hieroglyphic writing, mummification, pharaohs as divine rulers, and remarkable stability. The regular Nile floods enabled predictable, abundant agriculture.",
+  "dateCreated": "2026-05-24T18:00:04.381Z",
+  "dateModified": "2026-05-24T18:00:04.381Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Oxford History of Ancient Egypt (Ian Shaw)",
+      "sameAs": "https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Rise and Fall of Ancient Egypt (2025 Paperback)",
+      "author": "Wilkinson T.",
+      "sameAs": "https://www.penguinrandomhouse.com/ancient-egypt/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Oxford History of Ancient Egypt (2025 Updated)",
+      "author": "Shaw I.",
+      "sameAs": "https://global.oup.com/ancient-egypt/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Rise and Fall of Ancient Egypt (2025)",
+      "author": "Wilkinson T.",
+      "sameAs": "https://www.penguinrandomhouse.com/ancient-egypt/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Oxford History of Ancient Egypt (2025)",
+      "author": "Shaw I.",
+      "sameAs": "https://global.oup.com/ancient-egypt/"
+    }
+  ]
+}

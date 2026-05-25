@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "Created by Jordan Walke in 2011 and open-sourced in May 2013, React introduced a component-based architecture and a virtual DOM for efficient UI updates",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://react.dev/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "Created by Jordan Walke in 2011 and open-sourced in May 2013, React introduced a component-based architecture and a virtual DOM for efficient UI updates.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://react.dev/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-003",
+    "text": "As of 2026, React is the most widely used frontend library globally, with over 200,000 GitHub stars and billions of weekly NPM downloads.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://github.com/facebook/react"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-004",
+    "text": "React 19 (released December 2024) introduced Server Components as a stable feature, fundamentally changing the React rendering model.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://react.dev/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-005",
+    "text": "</div> }`) - **JSX**: HTML-like syntax embedded in JavaScript - **Virtual DOM**: In-memory representation of the UI; React computes minimal DOM mutations - **Hooks** (React 16.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://react.dev/"
+    }
+  }
+]

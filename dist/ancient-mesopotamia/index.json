@@ -1,0 +1,45 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/ancient-mesopotamia",
+  "headline": "Ancient Mesopotamia: Cradle of Civilization",
+  "description": "Mesopotamia gave humanity its first cities, writing, legal codes, and mathematical systems. Sumerians, Akkadians, Babylonians, and Assyrians each built upon earlier innovations.",
+  "dateCreated": "2026-05-24T18:00:04.385Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Ancient Mesopotamia: Portrait of a Dead Civilization",
+      "sameAs": "https://press.uchicago.edu/ucp/books/book/chicago/A/bo3633333.html"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Babylonian World",
+      "sameAs": "https://www.routledge.com/The-Babylonian-World/Leick/p/book/9780415497903"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Ancient Near East: A Very Short Introduction (2025 Updated Edition)",
+      "author": "Podany A.H.",
+      "sameAs": "https://global.oup.com/mesopotamia/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Babylon: Mesopotamia and the Birth of Civilization (2025 Edition)",
+      "author": "Kriwaczek P.",
+      "sameAs": "https://us.macmillan.com/babylon/"
+    }
+  ]
+}

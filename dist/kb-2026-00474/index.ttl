@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00474>
+  a schema:TechArticle ;
+  schema:headline "History of Mathematics" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00474>
+  schema:citation <https://www.wiley.com/en-us/A+History+of+Mathematics%2C+3rd+Edition-p-9780470525487> .

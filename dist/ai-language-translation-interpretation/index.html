@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI Language Translation and Interpretation: LLM-Based Translation, Simultaneous Interpretation, and Quality Estimation — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+AI translation has evolved from phrase tables to LLMs that match human translators on common language pairs and provide real-time spoken interpretation for multilingual meetings. From GPT-4 translating with document-level coherence to KUDO AI interpreting with <2s latency, language barriers are dissolving through AI.<br>
+<br>
+## Core Explanation<br>
+Translation AI: (1) Text translation -- LLM-based (prompt: "Translate to French: [text]") achieves competitive quality. Advantages over NMT: document-level coherence, style adaptation (formal/casual), and terminology control via prompting; (2) Speech translation -- cascade: ASR -> MT -> TTS. Streaming ASR (Whisper large-v3) + incremental MT (wait-k policy: wait for k source words before starting translation); (3) Quality estimation -- predict translation quality without reference. AI QE models (COMET, BLEURT) score translations on adequacy and fluency; (4) Terminology management -- AI maintains glossaries per domain (legal, medical, technical).<br>
+<br>
+## Detailed Analysis<br>
+Wait-k policy (ACL 2018-2025): k=0 (start translating immediately, high latency preference), k=infinity (wait for full sentence, high quality). Optimal k balances quality-latency trade-off. COMET (2020-2025): neural quality estimation model trained to predict human judgment (MQM scores). KUDO AI: cloud-based simultaneous interpretation. User selects source+target languages, AI translates in real-time with voice output. Applications: UN-style meetings, webinars, telehealth. Zoom AI Companion: real-time translated captions in 30+ languages. Limitations: (1) Cultural idioms -- "it's raining cats and dogs" requires non-literal translation; (2) Code-switching -- bilingual speakers mixing languages mid-sentence; (3) Sign language -- AI ASL-to-text requires video pose estimation + gesture recognition, still in research stage.<br>
+</article></body>
+</html>

@@ -1,0 +1,14 @@
+# AI Digital Twins for Healthcare: Patient-Specific Simulation, Treatment Planning, and Virtual Organs
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI creates digital twins of individual patients -- virtual replicas that simulate disease progression and predict treatment response. From Dassault's Living Heart used in arrhythmia surgery planning to in silico clinical trials that reduce human testing, healthcare digital twins represent the frontier of personalized medicine.
+
+## Core Explanation
+Patient digital twin: personalized computational model integrating: (1) Anatomy -- patient-specific geometry from CT/MRI; (2) Physiology -- organ function models (electrophysiology, fluid dynamics, metabolism); (3) Genomics/Proteomics -- molecular data for drug response prediction; (4) Wearables -- continuous monitoring data updating the twin. Applications: (A) Surgery planning -- simulate procedure on twin first, optimize approach; (B) Drug response -- predict patient's response to medication before administering; (C) Disease progression -- forecast how disease will evolve.
+
+## Detailed Analysis
+Dassault Living Heart: finite element model of cardiac electrophysiology. Personalized from patient MRI. Used clinically at Johns Hopkins, Boston Children's for congenital heart defect surgery planning and arrhythmia ablation guidance. Siemens Healthineers: digital twin for interventional cardiology. Philips: digital twin for critical care -- simulate patient trajectory under different treatment options. Insilico Medicine: AI platform Pharma.AI uses patient data to simulate drug effects. In silico trials: create virtual patient cohort matching target population demographics. Simulate drug administration, measure efficacy and safety endpoints. Certara (2024): biosimulation + AI. Novadiscovery: JINKO platform for in silico trials. FDA guidance (2024): computational modeling evidence accepted for medical device submissions. Regulators increasingly endorse in silico evidence for early-stage safety assessment. Key challenge: model validation -- does the twin accurately predict real patient outcomes? Prospective validation studies are ongoing.
+

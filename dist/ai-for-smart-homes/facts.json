@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-smart-homes-1",
+    "text": "Smart home AI has evolved from rule-based automation (IF motion detected THEN turn on lights) to ambient intelligence -- continuous, context-aware systems that learn occupant behavior patterns, predict needs, and proactively adjust home environments (temperature, lighting, music, security) without explicit user commands. Google Nest Learning Thermostat (4th gen, 2024) and Amazon Alexa Hunches demonstrate the shift to predictive, learning-based home AI.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.mdpi.com/journal/energies"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-smart-homes-2",
+    "text": "AI-driven home energy optimization -- combining smart meter data, occupancy prediction (ML models forecasting when rooms will be occupied), weather forecasts, and dynamic electricity pricing -- reduces residential energy consumption by 15-30% through optimal HVAC scheduling, appliance load shifting, and battery storage management (storing energy when cheap, using during peak prices), with reinforcement learning approaches (Deep Q-Networks for HVAC control) outperforming rule-based and MPC controllers.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/journal/csur"
+    }
+  }
+]

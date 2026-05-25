@@ -1,0 +1,18 @@
+# AI Regulation: The 2024-2026 Global Landscape
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+2024-2026 marks the transition from voluntary AI ethics principles to binding regulation. The EU AI Act set the global standard; the US follows with executive orders and state-level laws. China, UK, and G7 add regulatory layers.
+
+## Core Explanation
+Regulatory approaches: EU — risk-based tier system with heavy compliance burden; US — sector-specific (FDA for medical AI, NHTSA for autonomous vehicles) plus executive orders; China — algorithm registry and content control; UK — principles-based, regulator-led. The Bletchley Declaration (2023) and Seoul Statement (2024) represent international coordination.
+
+## Detailed Analysis
+Key requirements: transparency (disclosing AI use, training data), safety testing (red-teaming, benchmarks), accountability (human oversight, liability), and fairness (bias audits). The Frontier AI Safety Commitments (Seoul, 2024) established voluntary safety frameworks from leading labs.
+
+## Further Reading
+- EU AI Act Compliance Checker
+- Stanford HAI: AI Policy Tracker
+- IAPP: AI Governance Resources

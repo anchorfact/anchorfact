@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>TCP/IP Protocol Suite — AnchorFact</title></head>
+<body><article><br>
+<br>
+<br>
+## TL;DR<br>
+<br>
+TCP/IP is the foundational protocol suite of the Internet, enabling reliable, end-to-end communication across heterogeneous networks. TCP (RFC 793, 1981) provides reliable, ordered, error-checked byte-stream delivery using acknowledgments, retransmission, and congestion control. IP (RFC 791, 1981) handles addressing and routing — delivering individual packets (datagrams) from source to destination across an internetwork of networks. Standardized by Jon Postel at the IETF in 1980-1981, TCP/IP has scaled from ARPANET's 4 nodes to powering over 5.5 billion Internet users as of 2026.<br>
+<br>
+## Core Explanation<br>
+<br>
+TCP/IP organizes network communication into four abstraction layers (the "Internet model"), which can be mapped to the more detailed 7-layer OSI model:<br>
+<br>
+| TCP/IP Layer | Function | Protocols | Maps to OSI |<br>
+|-------------|----------|-----------|:----------:|<br>
+| **Application** | User-facing protocols | HTTP, DNS, SMTP, SSH, FTP | Layers 5-7 |<br>
+| **Transport** | End-to-end delivery, reliability | TCP, UDP | Layer 4 |<br>
+| **Internet** | Packet routing, addressing | IP (v4, v6), ICMP, ARP | Layer 3 |<br>
+| **Link** | Physical transmission, local delivery | Ethernet, WiFi, PPP, fiber | Layers 1-2 |<br>
+<br>
+Each layer encapsulates the data from the layer above: Application data → TCP segment → IP packet → Ethernet frame → physical bits.<br>
+<br>
+### Encapsulation<br>
+<br>
+```<br>
+Ethernet Frame<br>
+└── IP Packet (20-60 byte header + payload)<br>
+    └── TCP Segment (20-60 byte header + payload)<br>
+        └── Application Data (HTTP request, email, etc.)<br>
+```<br>
+<br>
+TCP segments are carried inside IP packets; IP packets are carried inside link-layer frames (Ethernet, WiFi). Each layer adds its own header and, at the link layer, a trailer (CRC for error detection).<br>
+<br>
+## Detailed Analysis<br>
+<br>
+### IP: The Internet Layer<br>
+<br>
+IP provides **best-effort** (unreliable) packet delivery. Key functions:<br>
+<br>
+| Function | IPv4 | IPv6 |<br>
+|----------|------|------|<br>
+| Addressing | 32-bit (4.3B addresses) | 128-bit (3.4×10³⁸ addresses) |<br>
+| Notation | `192.168.1.1` | `2001:db8::1` |<br>
+| Header size | 20-60 bytes (variable) | 40 bytes (fixed) |<br>
+| Fragmentation | Routers and hosts | Source only |<br>
+| NAT required? | Yes (address shortage) | No |<br>
+| Broadcast | Yes | No (replaced by multicast) |<br>
+| Adoption (2025) | ~55% global traffic | ~45% (Google stats) |<br>
+<br>
+IP's core job is **routing**: each router examines the destination IP address in the packet header and forwards it to the next hop toward the destination. Routing tables are maintained by routing protocols (BGP, OSPF). IP does NOT guarantee delivery, ordering, or duplicate prevention — those responsibilities fall to the transport layer.<br>
+<br>
+**Supporting protocols at the Internet layer:**<br>
+- **ICMP** (RFC 792): Error reporting and diagnostics (`ping`, `traceroute`)<br>
+- **ARP** (RFC 826): Maps IP addresses to MAC addresses on local networks<br>
+<br>
+### TCP: Reliable Transport<br>
+<br>
+TCP transforms IP's unreliable packet delivery into a reliable byte stream with the following guarantees:<br>
+<br>
+**Connection Management — Three-Way Handshake:**<br>
+```<br>
+Client                    Server<br>
+  |---- SYN, seq=x -------->|    (1) Client: "I want to connect, starting at seq=x"<br>
+  |<--- SYN-ACK, seq=y -----|    (2) Server: "OK, I'll start at seq=y, I got your SYN"<br>
+  |---- ACK, ack=y+1 ------>|    (3) Client: "I got your SYN-ACK, connection established"<br>
+<br>
+Connection established: both sides can now send data<br>
+```<br>
+<br>
+**Reliable Delivery:**<br>
+- Every byte is assigned a **sequence number**<br>
+- Receiver sends **acknowledgments** (ACKs) with the next expected byte number<br>
+- Sender maintains a **retransmission timer**: if no ACK arrives within RTO (Retransmission Timeout), the segment is resent<br>
+- **Cumulative ACK**: ACK of byte N means all bytes up to N-1 were received correctly<br>
+<br>
+**Flow Control — Sliding Window:**<br>
+- Receiver advertises a **window size** (bytes it can buffer) in each ACK<br>
+- Sender cannot have more unacknowledged data in flight than the window<br>
+- Window size is dynamic: shrinks when receiver's buffer fills, expands when data is consumed by the application<br>
+- This prevents a fast sender from overwhelming a slow receiver<br>
+<br>
+**Congestion Control (TCP's most important innovation):**<br>
+<br>
+TCP detects network congestion through packet loss (timeout or triple duplicate ACK) and adapts its sending rate:<br>
+<br>
+| Mechanism | Trigger | Action |<br>
+|-----------|---------|--------|<br>
+| **Slow Start** | New connection or timeout | cwnd = 1 MSS; double each RTT (exponential growth) |<br>
+| **Congestion Avoidance** | cwnd ≥ ssthresh | cwnd += 1 MSS per RTT (linear growth, AIMD) |<br>
+| **Fast Retransmit** | 3 duplicate ACKs | Retransmit lost segment immediately (don't wait for timeout) |<br>
+| **Fast Recovery** | After fast retransmit | cwnd = ssthresh + 3; stay in congestion avoidance (don't slow start) |<br>
+<br>
+Where `cwnd` = congestion window (sender-side limit), `ssthresh` = slow start threshold, `MSS` = Maximum Segment Size. The classic **AIMD** (Additive Increase, Multiplicative Decrease) algorithm is: increase cwnd by 1 MSS per RTT (additive), but on loss, cut cwnd in half (multiplicative decrease). This produces the characteristic TCP "sawtooth" pattern.<br>
+<br>
+### UDP: Minimal Transport<br>
+<br>
+UDP (RFC 768) provides the minimal transport service: connectionless, no reliability, no flow control, no congestion control. The 8-byte header contains only source port, destination port, length, and checksum.<br>
+<br>
+| Property | TCP | UDP |<br>
+|----------|:---:|:---:|<br>
+| Connection | Connection-oriented (3-way handshake) | Connectionless |<br>
+| Reliability | Guaranteed (ACK + retransmit) | Not guaranteed |<br>
+| Ordering | Preserved | Not preserved |<br>
+| Flow control | Sliding window | None |<br>
+| Congestion control | AIMD | None (application responsible) |<br>
+| Header size | 20-60 bytes | 8 bytes |<br>
+| Use cases | Web, email, file transfer, SSH | DNS, VoIP, gaming, streaming, QUIC |<br>
+<br>
+UDP is chosen when: (1) speed > reliability, (2) occasional loss is acceptable, (3) the application implements its own reliability (QUIC does this over UDP), or (4) multicast/broadcast is needed (TCP can't multicast).<br>
+<br>
+### Connection Teardown — Four-Way FIN Exchange<br>
+<br>
+```<br>
+Client                    Server<br>
+  |---- FIN, seq=x -------->|    (1) Client: "I'm done sending"<br>
+  |<--- ACK, ack=x+1 --------|    (2) Server: "Got it"<br>
+  |<--- FIN, seq=y ---------|    (3) Server: "I'm done too"<br>
+  |---- ACK, ack=y+1 ------>|    (4) Client: "Got it"<br>
+                                 [Client waits 2×MSL before closing — TIME_WAIT state]<br>
+```<br>
+<br>
+Each side independently closes its direction of communication, enabling a "half-close" state where one side can still send while the other has finished.<br>
+<br>
+## Further Reading<br>
+<br>
+- [RFC 793 — TCP](https://www.rfc-editor.org/rfc/rfc793): The original TCP specification (Jon Postel, 1981)<br>
+- [RFC 791 — IP](https://www.rfc-editor.org/rfc/rfc791): The original IPv4 specification<br>
+- [RFC 768 — UDP](https://www.rfc-editor.org/rfc/rfc768): User Datagram Protocol<br>
+- [Kurose & Ross: Computer Networking](https://www.pearson.com/en-us/subject-catalog/p/computer-networking/P200000003430): Standard networking textbook<br>
+</article></body>
+</html>

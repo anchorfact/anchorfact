@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/arctic-and-antarctic>
+  a schema:TechArticle ;
+  schema:headline "Arctic and Antarctic" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/arctic-and-antarctic>
+  schema:citation <https://www.bradtguides.com/product/the-arctic/> .
+
+<https://anchorfact.org/kb/arctic-and-antarctic>
+  schema:citation <https://www.nationalgeographic.com/books/atlas/> .

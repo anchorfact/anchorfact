@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/synthetic-data-training",
+  "headline": "Synthetic Data in AI Training",
+  "description": "Synthetic data — generating training examples from other AI models — has emerged as both a powerful scaling technique and a fundamental risk. Models like Phi-4 achieve state-of-the-art results primarily from synthetic data, while model collapse threatens recursive use.",
+  "dateCreated": "2026-05-24T18:00:03.520Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Phi-4 Technical Report",
+      "sameAs": "https://arxiv.org/abs/2412.08905"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "AI models collapse when trained on recursively generated data",
+      "sameAs": "https://www.nature.com/articles/s41586-024-07566-y"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00413>
+  a schema:TechArticle ;
+  schema:headline "World Literature" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00413>
+  schema:citation <https://wwnorton.com/books/9780393602814> .
+
+<https://anchorfact.org/kb/kb-2026-00413>
+  schema:citation <https://www.penguinrandomhouse.com/classics/> .
+
+<https://anchorfact.org/kb/kb-2026-00413>
+  schema:citation <https://global.oup.com/vsi-literature/> .

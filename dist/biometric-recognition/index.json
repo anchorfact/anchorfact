@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/biometric-recognition",
+  "headline": "AI Biometric Recognition: Fingerprint, Iris, Face, and Multimodal Deep Learning Systems",
+  "description": "AI has transformed biometric recognition from specialized hardware systems to software running on smartphones. Face recognition (Face ID), fingerprint sensors, and iris scanners use deep learning to achieve forensic-grade identity verification. Multimodal systems combining multiple biometrics now reach near-perfect accuracy.",
+  "dateCreated": "2026-05-24T18:00:03.241Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Biometrics recognition using deep learning: a survey (150+ papers)",
+      "sameAs": "https://dl.acm.org/doi/10.1007/s10462-022-10237-x"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "A multi-modal biometric recognition system based on fingerprints, iris, and facial recognition",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S2772941925001887"
+    }
+  ]
+}

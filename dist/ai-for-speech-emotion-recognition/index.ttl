@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-speech-emotion-recognition>
+  a schema:article ;
+  schema:headline "AI for Speech Emotion Recognition: Vocal Biomarkers, Mental Health Screening, and Affective Computing" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-speech-emotion-recognition>
+  schema:citation <https://www.nature.com/articles/s41598-024-60278-1> .
+
+<https://anchorfact.org/kb/ai-for-speech-emotion-recognition>
+  schema:citation <https://arxiv.org/abs/2406.03510> .

@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-001",
+    "text": "Mount Everest (8,848.86m / 29,031.7ft) is Earth's highest mountain above sea level, on the Nepal-Tibet (China) border. First ascent: Edmund Hillary and Tenzing Norgay (May 29, 1953). Over 6,000 people have summited; ~330 have died trying. Commercial expeditions (1990s+) dramatically increased summit attempts.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/306270/into-thin-air-by-jon-krakauer/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-002",
+    "text": "Death zone: above 8,000m, oxygen insufficient for human survival — even with supplemental O₂, body deteriorates.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/306270/into-thin-air-by-jon-krakauer/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-003",
+    "text": "Key dangers: altitude sickness (HAPE/HACE), avalanches, crevasses, exposure, summit fever.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/306270/into-thin-air-by-jon-krakauer/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-004",
+    "text": "Two main routes: South Col (Nepal, easier), North Col (Tibet).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/306270/into-thin-air-by-jon-krakauer/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-005",
+    "text": "Traffic jams: 2019 photo of climbers queueing near summit sparked regulation debate.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/306270/into-thin-air-by-jon-krakauer/"
+    }
+  }
+]

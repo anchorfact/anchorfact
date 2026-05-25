@@ -1,0 +1,45 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/cognitive-biases-handbook",
+  "headline": "Cognitive Biases: A Practical Guide to Clearer Thinking",
+  "description": "Cognitive biases are systematic errors in thinking affecting judgment and decision making. Over 180 documented biases influence everything from medical diagnoses to investment choices.",
+  "dateCreated": "2026-05-24T18:00:04.570Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Art of Thinking Clearly",
+      "sameAs": "https://www.harpercollins.com/products/the-art-of-thinking-clearly-rolf-dobelli"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Nudge: Improving Decisions About Health, Wealth, and Happiness",
+      "sameAs": "https://yalebooks.yale.edu/book/9780300122237/nudge/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Thinking, Fast and Slow (2025 Paperback Edition)",
+      "author": "Kahneman D.",
+      "sameAs": "https://us.macmillan.com/thinking-fast-and-slow/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Predictably Irrational: The Hidden Forces That Shape Our Decisions (2025 Revised)",
+      "author": "Ariely D.",
+      "sameAs": "https://www.harpercollins.com/predictably-irrational/"
+    }
+  ]
+}

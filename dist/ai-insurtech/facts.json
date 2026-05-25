@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-insurtech-1",
+    "text": "AI insurance (insurtech) platforms (Lemonade, Root, Zesty.ai, Tractable) deploy: (1) Underwriting AI -- Lemonade's AI chatbot (Maya) issues renters insurance policies in 90 seconds, processing 30% of claims instantly via AI. Root uses smartphone telematics to price auto insurance based on driving behavior (braking, cornering, phone use) rather than demographics; (2) Claims processing -- Tractable uses computer vision to assess auto damage from photos, estimating repair costs in minutes vs days.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/search/?query=insurance+AI+underwriting+claims+risk"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-insurtech-2",
+    "text": "AI risk assessment: Zesty.ai uses computer vision on satellite + aerial imagery to assess property risk (wildfire, flood, wind) without physical inspection. Convolutional neural networks classify roof condition, vegetation proximity, and construction materials from imagery. Predictive models combine 100+ data sources (weather history, topography, building permits) to price property insurance with 15-25% lower loss ratios than traditional actuarial models.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/search/?query=computer+vision+insurance+damage+assessment"
+    }
+  }
+]

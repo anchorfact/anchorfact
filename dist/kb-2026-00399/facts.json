@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-01",
+    "text": "The Maya civilization in Central America developed the most sophisticated writing system in the pre-Columbian Americas, advanced mathematics , accurate astronomical calendars, and monumental architecture",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://thamesandhudson.com/the-maya-9780500291887"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-001",
+    "text": "The Maya civilization (2000 BCE - 1500s CE) in Central America developed the most sophisticated writing system in the pre-Columbian Americas, advanced mathematics (concept of zero!), accurate astronomical calendars, and monumental architecture (Chichen Itza, Tikal). Classic Period: 250-900 CE.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://thamesandhudson.com/the-maya-9780500291887"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-002",
+    "text": "Achievements: concept of zero independently developed, accurate solar year (365.242 days), complex hieroglyphic writing (deciphered 1980s).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://thamesandhudson.com/the-maya-9780500291887"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-003",
+    "text": "Calendar: 260-day ritual + 365-day solar = 52-year Calendar Round.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://thamesandhudson.com/the-maya-9780500291887"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-004",
+    "text": "Classic Maya collapse (~900 CE): likely multi-cause — overpopulation, drought, warfare, environmental degradation.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://thamesandhudson.com/the-maya-9780500291887"
+    }
+  }
+]

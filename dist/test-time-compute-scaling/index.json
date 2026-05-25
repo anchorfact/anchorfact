@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/test-time-compute-scaling",
+  "headline": "Test-Time Compute Scaling: Inference-Time Reasoning Paradigms from o1/o3 to Forest-of-Thought",
+  "description": "Test-Time Compute Scaling represents a paradigm shift: instead of making models bigger during training, allocate more computation during inference for deeper reasoning. OpenAI o1/o3 demonstrated that \"thinking longer\" enables PhD-level scientific reasoning and competitive programming — reshaping the scaling landscape from pre-training to inference.",
+  "dateCreated": "2026-05-24T18:00:03.522Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "OpenAI o1 System Card: Learning to Reason with Large Language Models",
+      "sameAs": "https://openai.com/index/learning-to-reason-with-llms/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning",
+      "sameAs": "https://arxiv.org/abs/2412.09078"
+    }
+  ]
+}

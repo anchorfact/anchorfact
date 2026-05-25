@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/representation-learning",
+  "headline": "Representation Learning: Autoencoders, VAEs, and MAEs",
+  "description": "Representation learning transforms raw data (pixels, text) into meaningful vector spaces where similarity corresponds to semantic relatedness. Autoencoders compress and reconstruct; VAEs add probabilistic generation; MAEs learn by masking.",
+  "dateCreated": "2026-05-24T18:00:03.487Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Auto-Encoding Variational Bayes (VAE)",
+      "sameAs": "https://arxiv.org/abs/1312.6114"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Masked Autoencoders Are Scalable Vision Learners (MAE)",
+      "sameAs": "https://arxiv.org/abs/2111.06377"
+    }
+  ]
+}

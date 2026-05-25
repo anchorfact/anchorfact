@@ -1,0 +1,68 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-business-01",
+    "text": "Bullet points: first capitalize every word, 5 bullets, focus on benefits not just features",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://hbr.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-business-001",
+    "text": "Amazon product listing optimization improves search visibility (Amazon SEO / A9 algorithm) and conversion. Key elements: product title (most keywords in first 80 chars), bullet points (features + benefits), product description (A+ Content), backend search terms, high-quality images, and competitive pricing.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://hbr.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-business-002",
+    "text": "Title formula: Brand + Model + Key Feature + Product Type + Size/Color.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://hbr.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-business-003",
+    "text": "Bullet points: first capitalize every word, 5 bullets, focus on benefits not just features.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://hbr.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-business-004",
+    "text": "Backend search terms: 250 bytes, no competitor brands, no repetition, lowercase.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://hbr.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-business-005",
+    "text": "Main image: pure white background, product fills 85% of frame.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://hbr.org/"
+    }
+  }
+]

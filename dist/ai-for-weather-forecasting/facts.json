@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-weather-forecasting-1",
+    "text": "Google DeepMind's GraphCast (Science, November 2023) demonstrated that a graph neural network trained on 39 years of ERA5 reanalysis data can produce 10-day global weather forecasts in under 1 minute on a single TPU -- matching or exceeding the ECMWF Integrated Forecasting System (IFS) on 90% of 1,380 verification targets, while being 1,000x computationally cheaper. This represents a paradigm shift from physics-based numerical weather prediction (NWP) to data-driven forecasting.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.science.org/doi/10.1126/science.adi2336"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-weather-forecasting-2",
+    "text": "Huawei's Pangu-Weather (Nature, July 2023, Bi et al.) and NVIDIA's FourCastNet (2022) demonstrated similar capabilities using 3D transformer and Fourier neural operator architectures respectively. By 2025-2026, ECMWF has integrated AI models (AIFS -- Artificial Intelligence Forecasting System) into operational ensemble forecasting, running alongside traditional physics-based IFS to produce calibrated, probabilistic forecasts that combine the strengths of both approaches.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nature.com/articles/s41586-023-06185-3"
+    }
+  }
+]

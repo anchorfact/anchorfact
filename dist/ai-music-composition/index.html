@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI Music Composition: Generative Music, Style Imitation, and Creative AI Audio — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+AI composes music -- from text descriptions ("upbeat pop song about summer love") to complete radio-quality tracks with vocals and instrumentation. Suno AI, Udio, and AIVA challenge the definition of musical creativity, while professional tools like Magenta and Splice augment human composers.<br>
+<br>
+## Core Explanation<br>
+Music AI approaches: (1) Symbolic generation -- compose in MIDI/score representation. Music Transformer, MuseNet. Output: notes, durations, velocities. Can be rendered by any virtual instrument. Limitation: no expressive performance; (2) Audio generation -- generate raw waveforms. Jukebox (2020): hierarchical VQ-VAE compresses audio into discrete codes, autoregressive transformer generates codes. MusicGen (2023): EnCodec audio tokenizer + single-stage transformer with text/melody conditioning. Suno/Udio (2024-2025): end-to-end, full songs with vocals, prompt-based; (3) Hybrid -- symbolic structure + audio rendering (DDSP -- differentiable digital signal processing).<br>
+<br>
+## Detailed Analysis<br>
+MusicGen (Meta, 2023): EnCodec compresses 32kHz audio into 50Hz discrete codes. Single transformer predicts code sequence conditioned on text (T5 encoder) or melody (chromagram). Suno V4 (2025): produces radio-quality music. Generates coherent song structure (verse, chorus, bridge), multi-instrument arrangement, expressive vocals. AIVA: classical/soundtrack specialist. Uses deep learning + rule-based music theory constraints. Registered composer with SACEM. Copyright questions: US Copyright Office (2023-2025) ruled that purely AI-generated works (no human creative input) are not copyrightable. Human-AI collaborations (human curates/edits AI output) may qualify. Training data consent: Suno trained on copyrighted music without explicit artist consent -- Sony, Universal, Warner filed lawsuits (2024-2025). Future: licensing frameworks for AI training on music catalogs.<br>
+</article></body>
+</html>

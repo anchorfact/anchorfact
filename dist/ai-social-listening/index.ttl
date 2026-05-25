@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-social-listening>
+  a schema:article ;
+  schema:headline "AI Social Listening: Brand Monitoring, Sentiment Analysis, and Consumer Insights" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-social-listening>
+  schema:citation <https://arxiv.org/search/?query=social+listening+AI+sentiment+analysis+brand> .
+
+<https://anchorfact.org/kb/ai-social-listening>
+  schema:citation <https://arxiv.org/search/?query=logo+detection+social+media+computer+vision> .

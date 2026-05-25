@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/contrastive-learning>
+  a schema:TechArticle ;
+  schema:headline "Contrastive Learning: SimCLR, MoCo, and CLIP" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/contrastive-learning>
+  schema:citation <https://arxiv.org/abs/2103.00020> .
+
+<https://anchorfact.org/kb/contrastive-learning>
+  schema:citation <https://arxiv.org/abs/1911.05722> .

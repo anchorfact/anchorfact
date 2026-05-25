@@ -1,0 +1,14 @@
+# Machine Translation: Neural MT, LLM-Based Translation, and Multilingual Quality at Scale
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Machine translation has advanced from phrase-based statistical models to neural sequence-to-sequence to LLM-based translation spanning 200 languages. The Nature-published NLLB model brings translation quality to low-resource languages for the first time, while LLMs challenge the need for dedicated translation systems altogether.
+
+## Core Explanation
+Neural MT (2016-2022): encoder-decoder Transformer. Encoder processes source sentence; decoder generates target sentence token by token with attention. Trained on parallel corpora (millions of translated sentence pairs). Key innovations: subword tokenization (BPE, SentencePiece -- handles rare words), back-translation (generate synthetic parallel data), multilingual models (single model for many language pairs). LLM-based MT (2023-present): prompt LLM with "Translate to French: Hello." Few-shot: provide 3-5 example translations in the prompt. Advantage: no dedicated training needed. Disadvantage: slower, worse for low-resource languages where the LLM has limited training data.
+
+## Detailed Analysis
+NLLB-200 (Nature 2024, Meta): mined parallel data across 200 languages from CommonCrawl using LASER embeddings for sentence alignment. Mixture-of-Experts with 128 experts, routing each token to top-2 experts. LASER3 provides language-agnostic representations. Evaluation: FLORES-200 benchmark. BLEU improvement for African languages: +8-15 points. MDPI 2025 survey: LLM translation varies dramatically by language resource level. English-French: LLM BLEU ~42 (matches NMT). English-Swahili: LLM BLEU ~18 (NMT: ~28). Simultaneous translation (SimulMT): produce target translation while source is still being spoken -- balancing quality vs. latency using incremental decoding with RALCP policy. Key challenge: cultural adaptation -- translating idioms and culturally-specific concepts requires deeper understanding than word-for-word mapping.
+

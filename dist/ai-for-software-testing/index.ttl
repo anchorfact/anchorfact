@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-software-testing>
+  a schema:article ;
+  schema:headline "AI for Software Testing: Automated Test Generation, Fuzzing, and Quality Assurance" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-software-testing>
+  schema:citation <https://link.springer.com/chapter/10.1007/978-3-031-92605-1_18> .
+
+<https://anchorfact.org/kb/ai-for-software-testing>
+  schema:citation <https://quashbugs.com/blog/ai-in-qa-the-complete-guide-to-ai-powered-testing-2026> .

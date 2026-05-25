@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00344>
+  a schema:TechArticle ;
+  schema:headline "Film History" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00344>
+  schema:citation <https://www.rutgersuniversitypress.org/a-short-history-of-film-third-edition/9780813595139/> .
+
+<https://anchorfact.org/kb/kb-2026-00344>
+  schema:citation <https://www.pavilionbooks.com/film/> .
+
+<https://anchorfact.org/kb/kb-2026-00344>
+  schema:citation <https://www.mheducation.com/film-history/> .
+
+<https://anchorfact.org/kb/kb-2026-00344>
+  schema:citation <https://www.pavilionbooks.com/film/> .

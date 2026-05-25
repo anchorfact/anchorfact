@@ -1,0 +1,26 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00359>
+  a schema:TechArticle ;
+  schema:headline "American Revolution" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00359>
+  schema:citation <https://www.simonandschuster.com/books/1776/David-McCullough/9780743226721> .
+
+<https://anchorfact.org/kb/kb-2026-00359>
+  schema:citation <https://global.oup.com/american-revolution/> .
+
+<https://anchorfact.org/kb/kb-2026-00359>
+  schema:citation <https://www.simonandschuster.com/1776/> .
+
+<https://anchorfact.org/kb/kb-2026-00359>
+  schema:citation <https://global.oup.com/american-revolution/> .
+
+<https://anchorfact.org/kb/kb-2026-00359>
+  schema:citation <https://www.simonandschuster.com/1776/> .
+
+<https://anchorfact.org/kb/kb-2026-00359>
+  schema:citation <https://global.oup.com/american-revolution/> .

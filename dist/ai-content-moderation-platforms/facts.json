@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-content-moderation-platforms-1",
+    "text": "AI content moderation at scale: platforms process billions of posts daily using multi-stage pipelines -- (1) hash matching (known CSAM/terrorist content via PhotoDNA, PDQ); (2) ML classifiers (toxicity, hate speech, misinformation, spam scoring per content policy); (3) LLM-based reasoning (understanding context -- sarcasm, reclaimed slurs, counter-speech); (4) human review for edge cases. Facebook alone employs 15,000+ content moderators supported by AI triage.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/search/?query=content+moderation+AI+scale+pipeline"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-content-moderation-platforms-2",
+    "text": "Multilingual moderation challenge: AI classifiers trained on English data perform poorly on non-English content. Facebook (2025) reported that 87% of proactively removed hate speech was detected by AI before user reports in English, but only 65% in Arabic and 55% in Burmese. Cross-lingual transfer (XLM-R, multilingual LLMs) and community-specific policy adaptation are the key approaches to closing this language gap.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://transparency.meta.com/reports/community-standards-enforcement/"
+    }
+  }
+]

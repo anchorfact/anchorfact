@@ -1,0 +1,21 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/draft-20260525-001",
+  "headline": "Tokenisation via Convex Relaxations",
+  "description": "Tokenisation via Convex Relaxations",
+  "dateCreated": "2026-05-24T18:00:03.287Z",
+  "dateModified": "2026-05-24T18:00:03.287Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "medium",
+  "citation": []
+}

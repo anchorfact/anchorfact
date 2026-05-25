@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-content-creation",
+  "headline": "AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation",
+  "description": "AI is the creative department that never sleeps -- generating blog posts, social media content, product images, marketing videos, and voiceovers. The $12B AI content creation market (2024) spans text, image, video, and audio generation. The winning formula: AI for speed + humans for soul.",
+  "dateCreated": "2026-05-24T18:00:02.845Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Generative AI for Content Creation: Text, Image, Video, and Audio Generation in Marketing and Media (2024-2025 Comprehensive Survey)",
+      "sameAs": "https://arxiv.org/search/?query=generative+AI+content+creation+survey"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Human-AI Collaboration in Creative Workflows: Productivity, Quality, and Trust in AI-Assisted Content Creation",
+      "sameAs": "https://arxiv.org/search/?query=human+AI+content+creation+productivity"
+    }
+  ]
+}

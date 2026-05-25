@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-01",
+    "text": "The Middle Ages were the period between the fall of the Western Roman Empire and the Renaissance",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.britannica.com/topic/The-Civilization-of-the-Renaissance-in-Italy"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-02",
+    "text": "High Middle Ages : population growth, trade revival, Gothic cathedrals",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/56336/a-distant-mirror-by-barbara-w-tuchman/"
+    }
+  }
+]

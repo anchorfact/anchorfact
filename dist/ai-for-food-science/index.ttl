@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-food-science>
+  a schema:article ;
+  schema:headline "AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-food-science>
+  schema:citation <https://www.nature.com/articles/s41538-025-00441-8> .
+
+<https://anchorfact.org/kb/ai-for-food-science>
+  schema:citation <https://ift.onlinelibrary.wiley.com/doi/10.1111/1541-4337.70068> .

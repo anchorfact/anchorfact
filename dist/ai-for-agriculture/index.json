@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-agriculture",
+  "headline": "AI for Agriculture: Precision Farming, Plant Disease Detection, and Crop Yield Prediction",
+  "description": "AI is feeding the world — detecting crop diseases from smartphone photos, predicting harvest yields months in advance from satellite imagery, and optimizing irrigation down to individual plants. With global food demand projected to increase 60% by 2050 and 20-40% of crops lost to pests and diseases annually, AI-driven precision agriculture is becoming essential to food security.",
+  "dateCreated": "2026-05-24T18:00:02.910Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AI-driven smart agriculture using hybrid Transformer-CNN for high-precision plant disease detection",
+      "sameAs": "https://www.nature.com/articles/s41598-025-10537-6"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Precision agriculture in the age of AI: A systematic review of crop disease detection methodologies",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S2772375525007221"
+    }
+  ]
+}

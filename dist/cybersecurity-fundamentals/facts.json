@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-cs-cyb-001",
+    "text": "CIA Triad (Confidentiality, Integrity, Availability) is foundational security model (NIST SP 800-12).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.6028/NIST.SP.800-12r1"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-cs-cyb-002",
+    "text": "Morris Worm (1988) first major internet worm, led to CERT/CC creation.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1145/66093.66095"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-cs-cyb-003",
+    "text": "Zero Trust Architecture (NIST SP 800-207, 2020): \"never trust, always verify\" paradigm.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.6028/NIST.SP.800-207"
+    }
+  }
+]

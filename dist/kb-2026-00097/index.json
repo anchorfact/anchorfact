@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00097",
+  "headline": "MutationObserver",
+  "description": "MutationObserver is an API that asynchronously monitors DOM changes — additions, removals, attribute changes, and text content modifications. It replaces the deprecated DOM Mutation Events with a batched, more performant observer pattern.",
+  "dateCreated": "2026-05-24T18:00:03.953Z",
+  "dateModified": "2026-05-24T18:00:03.953Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "DOM Standard — MutationObserver",
+      "sameAs": "https://dom.spec.whatwg.org/#interface-mutationobserver"
+    }
+  ]
+}

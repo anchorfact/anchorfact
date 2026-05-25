@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-crisis-hotlines>
+  a schema:article ;
+  schema:headline "AI for Crisis Hotlines: Suicide Prevention Chatbots, Emotional Support AI, and Risk Detection" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-crisis-hotlines>
+  schema:citation <https://arxiv.org/search/?query=suicide+prevention+AI+chatbot+NLP+detection> .
+
+<https://anchorfact.org/kb/ai-for-crisis-hotlines>
+  schema:citation <https://arxiv.org/search/?query=AI+crisis+intervention+ethics+privacy> .

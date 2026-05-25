@@ -1,0 +1,18 @@
+# Molecular Biology: The Central Dogma
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+The Central Dogma describes the flow of genetic information from DNA to RNA to protein. CRISPR-Cas9 has revolutionized molecular biology by enabling precise genome editing in any organism.
+
+## Core Explanation
+DNA replication: helicase unwinds the double helix; DNA polymerase adds complementary nucleotides (A-T, G-C). Transcription: RNA polymerase synthesizes mRNA from the template DNA strand. Translation: ribosomes read mRNA codons (3-base units), tRNAs deliver corresponding amino acids, forming polypeptide chains.
+
+## Detailed Analysis
+CRISPR-Cas9 mechanism: guide RNA (gRNA) matches target DNA sequence; Cas9 creates a double-strand break; cellular repair mechanisms (NHEJ or HDR) enable gene knockout or precise editing. Applications include gene therapy, agricultural improvement, and disease model creation.
+
+## Further Reading
+- Nature Reviews Molecular Cell Biology
+- Addgene: CRISPR Guide
+- MIT Biology: Molecular Biology

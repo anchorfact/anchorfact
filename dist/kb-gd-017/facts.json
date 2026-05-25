@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-001",
+    "text": "# 游戏数学 > **游戏开发中 90% 的\"感觉不对\"问题，根源是数学没调好。** 随机太假、移动太僵、碰撞不准、概率失衡——都是数学。 --- ",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-002",
+    "text": "常用数学模式\n---\n## 随机数与概率\n### 伪随机数生成器（PRNG）\n| 算法 | 周期 | 速度 | 质量 | 适用场景 | |------|------|------|------|----------| | **System.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-003",
+    "text": "Random** | 2^31 | 快 | 低 | 非关键随机（如粒子偏移） | | **xorshift** | 2^128 | 极快 | 中 | 高频调用（如每帧噪声） | | **PCG** | 2^64 | 快 | 高 | 通用游戏随机，推荐 | | **Mersenne Twister** | 2^19937 | 中 | 极高 | 需要统计级质量的场景 |\n**种子（Seed）的重要性**： ``` 使用确定性的种子可以让随机序列可复现： - 程序化生成：相同种子 = 相同世界 - 调试：可以复现玩家报告的 bug - 回放系统：记录种子而非所有随机结果 ```\n### 游戏常用概率分布\n``` 1.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-004",
+    "text": "均匀分布（Uniform） └── random(min, max) └── 适用：骰子、随机方向\n2.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-005",
+    "text": "加权随机（Weighted Random） └── 按权重概率选择 └── 适用：掉落表、稀有度\n3.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  }
+]

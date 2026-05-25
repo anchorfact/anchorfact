@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00091>
+  a schema:TechArticle ;
+  schema:headline "WebGL" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00091>
+  schema:citation <https://www.khronos.org/registry/webgl/specs/latest/2.0/> .

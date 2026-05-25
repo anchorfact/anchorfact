@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00441",
+  "headline": "Active Listening",
+  "description": "Active listening is fully concentrating on, understanding, and responding to what someone is saying — not just waiting for your turn to speak. Techniques: paraphrase ('What I'm hearing is...'), ask open questions, reflect feelings, avoid interrupting, use non-verbal cues (nodding, eye contact).",
+  "dateCreated": "2026-05-24T18:00:04.568Z",
+  "dateModified": "2026-05-24T18:00:04.568Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Crucial Conversations (Patterson, Grenny, McMillan, Switzler)",
+      "sameAs": "https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "You're Not Listening: What You're Missing and Why It Matters (2025)",
+      "author": "Murphy K.",
+      "sameAs": "https://us.macmillan.com/youre-not-listening/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Crucial Conversations: Tools for Talking When Stakes Are High (2025 3rd Edition)",
+      "author": "Grenny J., Patterson K., McMillan R., Switzler A.",
+      "sameAs": "https://www.mheducation.com/crucial-conversations/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "You're Not Listening (2025)",
+      "author": "Murphy K.",
+      "sameAs": "https://us.macmillan.com/youre-not-listening/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Crucial Conversations (3rd Edition, 2025)",
+      "author": "Grenny J., Patterson K.",
+      "sameAs": "https://www.mheducation.com/crucial-conversations/"
+    }
+  ]
+}

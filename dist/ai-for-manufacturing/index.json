@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-manufacturing",
+  "headline": "AI for Manufacturing: Predictive Maintenance, Quality Control, and Digital Twins",
+  "description": "AI is the brain of modern manufacturing — predicting equipment failures before they happen, detecting microscopic product defects at production line speed, and simulating entire factory operations in real-time digital twins. Industry 4.0 plus AI (\"Industry 5.0\") reduces downtime by 30-45%, defect rates by 35%, and energy consumption by 25%.",
+  "dateCreated": "2026-05-24T18:00:03.000Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Enabling Intelligent Industrial Automation: A Comprehensive Review of Machine Learning Applications in Manufacturing",
+      "sameAs": "https://www.mdpi.com/2673-4052/6/3/37"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Generative and Predictive AI for Digital Twin Systems in Advanced Manufacturing",
+      "sameAs": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1655470/full"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/molecular-biology-central-dogma",
+  "headline": "Molecular Biology: The Central Dogma",
+  "description": "The Central Dogma describes the flow of genetic information from DNA to RNA to protein. CRISPR-Cas9 has revolutionized molecular biology by enabling precise genome editing in any organism.",
+  "dateCreated": "2026-05-24T18:00:04.527Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Molecular Biology of the Gene, 7th Edition",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/molecular-biology-of-the-gene/P200000006955"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "A Programmable Dual-RNA-Guided DNA Endonuclease in Adaptive Bacterial Immunity",
+      "sameAs": "https://www.science.org/doi/10.1126/science.1225829"
+    }
+  ]
+}

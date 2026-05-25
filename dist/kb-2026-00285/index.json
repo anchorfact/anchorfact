@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00285",
+  "headline": "Tokenization in NLP",
+  "description": "Tokenization splits text into units (tokens) that the model processes. Methods: word-level (large vocabulary, OOV problem), character-level (tiny vocabulary, long sequences), subword (balanced: BPE, WordPiece, SentencePiece — standard for modern LLMs). Subword tokenization handles rare and unseen words by decomposing into known subword units.",
+  "dateCreated": "2026-05-24T18:00:03.534Z",
+  "dateModified": "2026-05-24T18:00:03.534Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Neural Machine Translation of Rare Words with Subword Units (BPE)",
+      "author": "Sennrich, Haddow, Birch",
+      "sameAs": "https://arxiv.org/abs/1508.07909"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "SentencePiece: A Simple and Language Independent Subword Tokenizer and Detokenizer",
+      "author": "Kudo, Richardson",
+      "sameAs": "https://arxiv.org/abs/1808.06226"
+    }
+  ]
+}

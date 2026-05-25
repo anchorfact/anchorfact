@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00468",
+  "headline": "African Geography",
+  "description": "Africa (30.37 million km²) is the 2nd largest continent. 54 countries, ~1.5 billion people. Features: Sahara (largest hot desert), Nile (longest river), Great Rift Valley, Victoria Falls, Serengeti, Congo Basin. Most diverse continent by language (2,000+ languages). Fastest growing population — projected 2.5 billion by 2050.",
+  "dateCreated": "2026-05-24T18:00:04.286Z",
+  "dateModified": "2026-05-24T18:00:04.286Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Geography of Sub-Saharan Africa (Samuel Aryeetey-Attoh)",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/the-geography-of-sub-saharan-africa/P200000010264"
+    }
+  ]
+}

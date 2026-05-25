@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/arctic-and-antarctic",
+  "headline": "Arctic and Antarctic",
+  "description": "The Arctic (North Pole region) and Antarctic (South Pole continent) are Earth's polar extremes. Arctic: ocean surrounded by continents, floating sea ice, indigenous peoples, polar bears. Antarctic: continent surrounded by ocean, ice sheet (70% of Earth's freshwater), no permanent residents, penguins. Antarctic Treaty (1959): continent dedicated to peace and science.",
+  "dateCreated": "2026-05-24T18:00:04.290Z",
+  "dateModified": "2026-05-24T18:00:04.290Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Arctic: A Guide to Coastal Wildlife (Tony Soper)",
+      "sameAs": "https://www.bradtguides.com/product/the-arctic/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "National Geographic Atlas of the World, 11th Ed",
+      "sameAs": "https://www.nationalgeographic.com/books/atlas/"
+    }
+  ]
+}

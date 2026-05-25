@@ -1,0 +1,45 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/contemporary-art-trends",
+  "headline": "Contemporary Art Trends and the Digital Turn",
+  "description": "Contemporary art is defined by technological entanglement: NFTs transformed digital ownership, AI challenges human authorship, and social media reshapes curation.",
+  "dateCreated": "2026-05-24T18:00:03.579Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Art in the Age of Machine Learning",
+      "sameAs": "https://mitpress.mit.edu/9780262046183/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Christie's: Beeple Auction Record",
+      "sameAs": "https://www.christies.com/about-us/press-archive/details"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Art Since 1900: Modernism, Antimodernism, Postmodernism (4th Edition, 2025)",
+      "author": "Foster H., Krauss R., Bois Y-A., Buchloh B., Joselit D.",
+      "sameAs": "https://thamesandhudson.com/art-since-1900/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Art Museum in the Age of Digital Reproduction (2025)",
+      "author": "multiple",
+      "sameAs": "https://www.tate.org.uk/publishing/"
+    }
+  ]
+}

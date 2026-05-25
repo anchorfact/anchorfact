@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f1",
+    "text": "BERT (Devlin et al. 2019, Google) introduced bidirectional pretraining with masked language modeling, achieving SOTA on 11 NLP benchmarks and establishing the pretrain-finetune paradigm.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/1810.04805"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f2",
+    "text": "GPT-3 (Brown et al. 2020, OpenAI) demonstrated that scaling language models to 175B parameters enables strong few-shot learning without gradient updates — simply providing a few examples in the prompt.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2005.14165"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f3",
+    "text": "T5 (Raffel et al. 2020, Google) unified all NLP tasks into a text-to-text format, enabling a single model to perform translation, summarization, QA, and classification through the same encoder-decoder Transformer.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://jmlr.org/papers/v21/20-074.html"
+    }
+  }
+]

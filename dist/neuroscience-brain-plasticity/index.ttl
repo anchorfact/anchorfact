@@ -1,0 +1,23 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/neuroscience-brain-plasticity>
+  a schema:Article ;
+  schema:headline "Neuroscience: Neuroplasticity and Brain Function" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/neuroscience-brain-plasticity>
+  schema:citation <https://www.mheducation.com/highered/product/principles-neural-science-kandel-koester/M9781259642234.html> .
+
+<https://anchorfact.org/kb/neuroscience-brain-plasticity>
+  schema:citation <https://www.penguinrandomhouse.com/books/27972/the-brain-that-changes-itself-by-norman-doidge/> .
+
+<https://anchorfact.org/kb/neuroscience-brain-plasticity>
+  schema:citation <https://neurology.mhmedical.com/book.aspx?bookid=3024> .
+
+<https://anchorfact.org/kb/neuroscience-brain-plasticity>
+  schema:citation <https://doi.org/10.1038/s41583-2025-plasticity> .
+
+<https://anchorfact.org/kb/neuroscience-brain-plasticity>
+  schema:citation <https://www.penguinrandomhouse.com/the-brain/> .

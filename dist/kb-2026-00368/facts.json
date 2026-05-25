@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-01",
+    "text": "The Big Bang theory describes the universe's origin 13.8 billion years ago from an infinitely hot, dense singularity",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.basicbooks.com/titles/steven-weinberg/the-first-three-minutes/9780465024377/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-02",
+    "text": "Timeline: Planck epoch , inflation , particle formation, nucleosynthesis , 380,000 years: atoms form, CMB released",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.basicbooks.com/titles/steven-weinberg/the-first-three-minutes/9780465024377/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-science-03",
+    "text": "Dark ages → first stars → galaxies → present",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.basicbooks.com/titles/steven-weinberg/the-first-three-minutes/9780465024377/"
+    }
+  }
+]

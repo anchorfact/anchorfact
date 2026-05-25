@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00079",
+  "headline": "YAML (YAML Ain't Markup Language)",
+  "description": "YAML is a human-readable data serialization format created by Clark Evans in 2001. It uses indentation for structure (like Python) and is the dominant configuration format for DevOps tools (Docker Compose, Kubernetes, Ansible, GitHub Actions, CI/CD pipelines). YAML v1.2.2 (2021) is the current specification.",
+  "dateCreated": "2026-05-24T18:00:04.149Z",
+  "dateModified": "2026-05-24T18:00:04.149Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "YAML Specification v1.2.2",
+      "sameAs": "https://yaml.org/spec/1.2.2/"
+    }
+  ]
+}

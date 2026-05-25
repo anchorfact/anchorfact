@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-001",
+    "text": "Cardiovascular (aerobic) exercise strengthens the heart and lungs through sustained rhythmic movement using large muscle groups. ACSM recommends: 150 minutes moderate or 75 minutes vigorous aerobic activity weekly. Benefits: reduced cardiovascular disease risk, improved mood, better sleep, weight management, longevity.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.acsm.org/read-research/books/acsms-guidelines-for-exercise-testing-and-prescription"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-002",
+    "text": "Target heart rate: 50-85% of maximum (max ≈ 220 - age).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.acsm.org/read-research/books/acsms-guidelines-for-exercise-testing-and-prescription"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-003",
+    "text": "HIIT (High-Intensity Interval Training): alternating intense bursts with recovery — efficient for fitness gains.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.acsm.org/read-research/books/acsms-guidelines-for-exercise-testing-and-prescription"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-004",
+    "text": "VO₂max: maximum oxygen uptake — gold standard fitness measure, declines ~10% per decade after 25.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.acsm.org/read-research/books/acsms-guidelines-for-exercise-testing-and-prescription"
+    }
+  }
+]

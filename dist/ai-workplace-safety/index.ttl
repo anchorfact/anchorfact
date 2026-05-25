@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-workplace-safety>
+  a schema:article ;
+  schema:headline "AI for Workplace Safety: Computer Vision Monitoring, Fall Detection, and Hazard Prevention" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-workplace-safety>
+  schema:citation <https://www.sciencedirect.com/journal/safety-science> .
+
+<https://anchorfact.org/kb/ai-workplace-safety>
+  schema:citation <https://www.sciencedirect.com/journal/journal-of-safety-research> .

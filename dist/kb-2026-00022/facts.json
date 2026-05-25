@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "TypeScript is a strongly-typed superset of JavaScript developed by Microsoft, first released in October 2012 by Anders Hejlsberg",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.typescriptlang.org/docs/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-02",
+    "text": "TypeScript was the 4th most popular programming language in the 2024 Stack Overflow Developer Survey and is used by over 80% of professional web developers",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://survey.stackoverflow.co/2024/"
+    }
+  }
+]

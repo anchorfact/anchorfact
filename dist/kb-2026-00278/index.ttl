@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00278>
+  a schema:TechArticle ;
+  schema:headline "Federated Learning" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00278>
+  schema:citation <https://arxiv.org/abs/1602.05629> .

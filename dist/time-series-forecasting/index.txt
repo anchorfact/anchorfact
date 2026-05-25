@@ -1,0 +1,18 @@
+# Time Series Forecasting with Machine Learning
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Time series forecasting predicts future values from historical sequences. Traditional statistical methods (ARIMA, ETS) compete with deep learning approaches (LSTM, Transformer variants) depending on data volume and pattern complexity.
+
+## Core Explanation
+Classical decomposition: trend (long-term direction), seasonality (periodic patterns), and residuals (noise). ARIMA models capture auto-regressive and moving-average dynamics. Prophet (Facebook) decomposes time series into trend + seasonality + holiday effects with interpretable parameters.
+
+## Detailed Analysis
+Deep learning for time series: LSTMs handle long-term dependencies; Transformers capture global patterns but require positional encoding modifications. PatchTST segments series into patches, treating each patch as a token — significantly improving transformer efficiency for long sequences.
+
+## Further Reading
+- Nixtla: StatsForecast & NeuralForecast Libraries
+- Kaggle: Time Series Competitions
+- Hyndman: Forecasting: Principles and Practice

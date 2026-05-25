@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-static-analysis>
+  a schema:article ;
+  schema:headline "AI for Static Analysis: Automated Bug Detection, Code Review, and Vulnerability Scanning" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-static-analysis>
+  schema:citation <https://ieeexplore.ieee.org/document/11510940> .
+
+<https://anchorfact.org/kb/ai-static-analysis>
+  schema:citation <https://dl.acm.org/doi/10.1145/3649828> .

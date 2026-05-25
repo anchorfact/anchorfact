@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/foundation-models",
+  "headline": "Foundation Models: Paradigm Shift in AI",
+  "description": "Foundation models represent a paradigm shift — pretrain once on massive data, then adapt to thousands of downstream tasks via fine-tuning, prompting, or in-context learning.",
+  "dateCreated": "2026-05-24T18:00:03.306Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "On the Opportunities and Risks of Foundation Models",
+      "sameAs": "https://arxiv.org/abs/2108.07258"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Scaling Laws for Neural Language Models",
+      "sameAs": "https://arxiv.org/abs/2001.08361"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/data-governance",
+  "headline": "AI Data Governance: Metadata Management, Data Catalogs, and AI-Ready Data Quality",
+  "description": "AI is transforming data governance from manual, reactive processes to automated, proactive intelligence. ML-powered platforms automatically discover, classify, and monitor data assets across enterprises, ensuring data quality, compliance, and discoverability. As AI systems consume and generate data at unprecedented scale, governance becomes the foundation of trustworthy AI.",
+  "dateCreated": "2026-05-24T18:00:03.272Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "DataHub: An Open-Source Metadata Platform for the Modern Data Stack (LinkedIn)",
+      "sameAs": "https://datahub.com/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "EU AI Act: Data Governance Requirements for High-Risk AI Systems (Regulation 2024/1689)",
+      "sameAs": "https://eur-lex.europa.eu/eli/reg/2024/1689"
+    }
+  ]
+}

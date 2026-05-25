@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "Kernel modules extend Linux functionality without recompiling the kernel. `lsmod` lists loaded modules. `modprobe module` loads with dependencies. Kernel modules enable dynamic hardware support: load USB driver when device plugged, unload when removed. Modules run in kernel space (ring 0) — no safety net.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "DKMS (Dynamic Kernel Module Support): auto-rebuilds modules on kernel update.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  }
+]

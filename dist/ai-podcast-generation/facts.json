@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-podcast-generation-1",
+    "text": "AI podcast and audio content generation (2023-2026): NotebookLM Audio Overview (Google, 2024) generates conversational AI-host podcast episodes from uploaded documents, with two AI hosts discussing the content in a natural, engaging dialogue. ElevenLabs (2024-2025) provides voice cloning and AI narration used by publishers like Storytel. Descript (2023-2025) enables AI-powered audio editing via text-based interface, with AI voice regeneration for corrections.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/search/?query=AI+podcast+generation+text+to+speech+narration"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-podcast-generation-2",
+    "text": "The AI podcasting ecosystem (2024-2026): Wondercraft AI and Podcastle provide end-to-end podcast creation from text scripts, including voice selection, background music generation, and audio mastering. AI podcasting challenges traditional audio production: what took hours of recording and editing now takes minutes. Spotify (2024-2025) launched AI-powered features including AI DJ (personalized music + commentary) and AI voice translation for podcasts.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/search/?query=conversational+AI+audio+podcast+generation"
+    }
+  }
+]

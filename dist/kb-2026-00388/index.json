@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00388",
+  "headline": "Amazon Rainforest",
+  "description": "The Amazon Rainforest (5.5 million km², 9 countries) is the world's largest tropical rainforest, producing 20% of Earth's oxygen. Biodiversity: 10% of known species — 40,000 plant species, 1,300 birds, 3,000 fish, 427 mammals. Indigenous peoples have lived there for 11,000+ years.",
+  "dateCreated": "2026-05-24T18:00:04.288Z",
+  "dateModified": "2026-05-24T18:00:04.288Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "WWF Amazon",
+      "sameAs": "https://www.worldwildlife.org/places/amazon"
+    }
+  ]
+}

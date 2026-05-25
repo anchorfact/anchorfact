@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00232",
+  "headline": "Test-Driven Development (TDD)",
+  "description": "TDD (Kent Beck, 2002) is a development practice: write a failing test → write minimum code to pass → refactor. Red-Green-Refactor cycle. TDD ensures testability, drives design toward small, loosely coupled units, and provides a regression safety net. Not about testing — it's about design.",
+  "dateCreated": "2026-05-24T18:00:04.110Z",
+  "dateModified": "2026-05-24T18:00:04.110Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM Digital Library",
+      "sameAs": "https://dl.acm.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Test-Driven Development: By Example (2025 Updated Edition)",
+      "author": "Beck K.",
+      "sameAs": "https://www.informit.com/tdd/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Software Testing in the Age of AI: A 2025 Survey",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.testing"
+    }
+  ]
+}

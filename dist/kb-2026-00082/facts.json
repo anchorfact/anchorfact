@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "XMLHttpRequest is an API for making HTTP requests from JavaScript, first introduced by Microsoft in 1999 for Outlook Web Access",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "XMLHttpRequest (XHR) is an API for making HTTP requests from JavaScript, first introduced by Microsoft in 1999 for Outlook Web Access. It was the foundation of Ajax and is now largely superseded by the Fetch API, though still used in legacy systems and for upload progress tracking.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://xhr.spec.whatwg.org/"
+    }
+  }
+]

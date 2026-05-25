@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-climate-science",
+  "headline": "AI for Climate Science: Weather Prediction and Earth System Modeling",
+  "description": "AI is revolutionizing climate science: deep learning weather models now match or exceed physics-based forecasting while running 100-1000x faster. From 10-day global forecasts to high-resolution downscaling, AI tools are accelerating climate adaptation and mitigation.",
+  "dateCreated": "2026-05-24T18:00:02.930Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Learning skillful medium-range global weather forecasting (GraphCast)",
+      "sameAs": "https://www.science.org/doi/10.1126/science.adi2336"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Accurate medium-range global weather forecasting with 3D neural networks (Pangu-Weather)",
+      "sameAs": "https://www.nature.com/articles/s41586-023-06185-3"
+    }
+  ]
+}

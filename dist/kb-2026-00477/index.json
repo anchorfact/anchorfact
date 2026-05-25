@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00477",
+  "headline": "Digital Art",
+  "description": "Digital art uses digital technology as part of the creation or presentation process. Forms: digital painting (Photoshop, Procreate), 3D modeling (Blender, Maya), pixel art, generative art (algorithms create art), AI art (DALL-E, Midjourney, Stable Diffusion), NFT art, interactive installations. Digital art democratized creation — tools accessible to anyone.",
+  "dateCreated": "2026-05-24T18:00:03.592Z",
+  "dateModified": "2026-05-24T18:00:03.592Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Digital Art (Christiane Paul, 3rd Ed)",
+      "sameAs": "https://thamesandhudson.com/digital-art-9780500204238"
+    }
+  ]
+}

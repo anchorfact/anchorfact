@@ -1,0 +1,14 @@
+# AI for Personal Finance: Robo-Advisors, Automated Budgeting, and Financial Wellness
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI is democratizing financial advice -- from robo-advisors managing billions in portfolios to apps that automatically categorize spending and predict cash flow. What was once exclusive to wealth managers charging 1%+ fees is now available to anyone with a smartphone.
+
+## Core Explanation
+Personal finance AI: (1) Robo-advisory -- users answer risk questionnaire, AI allocates across low-cost ETFs (stocks, bonds, REITs). ML for: tax-loss harvesting (sell losers to offset gains, replace with similar assets), automated rebalancing, and goal tracking (retirement, home purchase); (2) Budgeting -- NLP categorizes bank transactions (merchant name + amount -> category). ML predicts recurring bills, identifies subscription waste, and suggests savings targets; (3) Credit monitoring -- AI analyzes credit report factors and suggests score improvement actions; (4) Fraud -- real-time transaction anomaly detection, alerting users of unusual charges.
+
+## Detailed Analysis
+Robo-advisor algorithms: Modern Portfolio Theory optimizes expected return for given risk. ML enhances with: personalized glide paths (younger investors -> more stocks), tax coordination across taxable + retirement accounts, and direct indexing (owning individual stocks instead of ETFs for personalized tax-loss harvesting). Betterment: pioneer since 2010, $800B+ managed. Goal-based investing: users set goals (retirement at 65, $1M college fund), AI runs Monte Carlo simulations (10,000 scenarios) showing probability of success. Budgeting AI: Plaid connects to 12,000+ financial institutions. Transaction enrichment: "UBER *TRIP 5PM" -> Transportation -> Ride Share. Recurring detection: ML identifies subscriptions (same amount, same merchant, monthly). Copilot/Monarch integrate net worth tracking, investment aggregation, and spending analytics. Behavioral finance: AI nudges users toward better decisions -- automatic round-up savings, progress visualization, and spending alerts. Privacy: financial data is highly sensitive -- on-device processing (Apple Card) and read-only access via OAuth (Plaid, MX).
+

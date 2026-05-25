@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-synthetic-media-generation",
+  "headline": "AI Synthetic Media: Digital Humans, Virtual Influencers, and AI-Generated Video Personas",
+  "description": "AI generates humans that don't exist -- digital avatars delivering corporate training at scale, virtual influencers with millions of followers, and AI-de-aged actors on screen. The synthetic media industry spans enterprise video, social media marketing, and entertainment, raising profound questions about authenticity, consent, and disclosure.",
+  "dateCreated": "2026-05-24T18:00:03.191Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AI-Generated Digital Humans: Avatar Synthesis, Lip-Sync Animation, and Enterprise Video Generation (2024-2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=digital+human+avatar+AI+generation"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Synthetic Media Ethics: Virtual Influencers, Deepfake Disclosure, and AI Likeness Rights (2024-2025)",
+      "sameAs": "https://arxiv.org/search/?query=synthetic+media+ethics+virtual+influencer"
+    }
+  ]
+}

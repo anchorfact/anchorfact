@@ -1,0 +1,19 @@
+# AI for Cultural Heritage: Digital Preservation, Art Attribution, and Museum Intelligence
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI is transforming cultural heritage — from digitally reconstructing damaged monuments and deciphering ancient scrolls to attributing artworks and curating museum experiences. As UNESCO warns (2025), AI is advancing faster than cultural ecosystems can adapt, creating both unprecedented preservation opportunities and new authenticity challenges.
+
+## Core Explanation
+Cultural heritage AI applications: (1) Artifact digitization — photogrammetry and neural radiance fields (NeRF) create sub-millimeter 3D models of sculptures, buildings, and archaeological sites; (2) Restoration — GANs inpaint damaged frescoes and fill missing manuscript text based on learned style patterns; (3) Decipherment — deep learning reads damaged inscriptions (DeepScribe for cuneiform tablets, Ithaca for ancient Greek) by learning character and linguistic patterns; (4) Artwork attribution — convolutional neural networks analyze brushstroke patterns, pigment composition, and stylistic features to authenticate paintings (identifying forgeries and resolving attribution disputes); (5) Provenance tracking — blockchain-AI hybrid systems create tamper-proof artwork ownership histories.
+
+## Detailed Analysis
+Herculaneum scrolls (2023-2024 Vesuvius Challenge): AI models (combining CT scanning + transformer-based ink detection) deciphered text from carbonized 2,000-year-old scrolls without physically unrolling them — a breakthrough impossible with previous methods. DeepScribe (Assyriology): transformer model reading cuneiform with higher accuracy than human specialists. AI art attribution controversies: a 2023 neural network attributed a painting to Raphael with 97% confidence, sparking debate about AI's role in artistic judgment — how do we weight statistical pattern matching against connoisseurship? UNESCO 2025 report identifies critical issues: (1) AI training data overwhelmingly represents Western art, potentially "digitally erasing" non-Western cultural heritage; (2) AI restoration decisions (choosing which "original state" to restore to) are value-laden cultural choices, not neutral technical operations; (3) Indigenous communities must retain sovereignty over AI representation of their cultural heritage. The Schmidt Sciences HAVI program (2025, $11M) funds 23 teams exploring AI for archaeology, art history, and philosophy. Museum AI: AI-curated exhibition pathways, personalized visitor experiences, and conversational AI docents.
+
+## Further Reading
+- Vesuvius Challenge: Reading the Herculaneum Papyri
+- Google Arts & Culture: AI Experiments
+- Digital Benin / Mukurtu CMS (Indigenous Cultural Heritage Platforms)
+

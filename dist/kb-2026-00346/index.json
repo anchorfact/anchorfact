@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00346",
+  "headline": "Classical Music Periods",
+  "description": "Western classical music spans ~500 years: Medieval (500-1400, Gregorian chant), Renaissance (1400-1600, polyphony), Baroque (1600-1750, Bach, Vivaldi), Classical (1750-1820, Mozart, Beethoven), Romantic (1820-1900, Chopin, Tchaikovsky), Modern/Contemporary (1900+). Each period has distinct stylistic characteristics.",
+  "dateCreated": "2026-05-24T18:00:03.572Z",
+  "dateModified": "2026-05-24T18:00:03.572Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Classical Style (Charles Rosen)",
+      "sameAs": "https://wwnorton.com/books/9780393317121"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Classical Music Book: Big Ideas Simply Explained (2025)",
+      "author": "DK",
+      "sameAs": "https://www.dk.com/classical-music/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Rest Is Noise: Listening to the Twentieth Century (2025)",
+      "author": "Ross A.",
+      "sameAs": "https://us.macmillan.com/rest-is-noise/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Classical Music Book (2025 Edition)",
+      "author": "DK",
+      "sameAs": "https://www.dk.com/classical-music/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Rest Is Noise: Listening to the Twentieth Century (2025 Updated)",
+      "author": "Ross A.",
+      "sameAs": "https://us.macmillan.com/rest-is-noise/"
+    }
+  ]
+}

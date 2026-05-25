@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "The Notifications API allows web pages to display system-level desktop notifications, even when the page is in the background. Permission must be granted by the user via `Notification.requestPermission()`.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://notifications.spec.whatwg.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "The Notifications API allows web pages to display system-level desktop notifications, even when the page is in the background. Permission must be granted by the user via `Notification.requestPermission()`.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://notifications.spec.whatwg.org/"
+    }
+  }
+]

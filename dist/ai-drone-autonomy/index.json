@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-drone-autonomy",
+  "headline": "AI for Drone Autonomy: Autonomous Navigation, Swarm Coordination, and Aerial Robotics",
+  "description": "AI gives drones autonomy -- navigating without GPS, dodging obstacles at high speed, and coordinating in swarms. From Skydio's obstacle-dodging drones to Zipline's medical delivery network across Africa, AI-powered aerial autonomy is reshaping delivery, inspection, search-and-rescue, and agriculture.",
+  "dateCreated": "2026-05-24T18:00:02.891Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Deep Reinforcement Learning for Autonomous Drone Navigation and Agile Maneuvering (2023-2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=drone+reinforcement+learning+autonomous+navigation"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Multi-Agent Reinforcement Learning for Drone Swarm Coordination: Formation Control, Coverage, and Search-and-Rescue",
+      "sameAs": "https://arxiv.org/search/?query=drone+swarm+MARL+coordination"
+    }
+  ]
+}

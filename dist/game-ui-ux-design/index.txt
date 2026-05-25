@@ -1,0 +1,32 @@
+# Game User Interface and UX Design
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Game UI bridges player intent and game mechanics. Good UI design communicates game state without breaking immersion, using principles from human-computer interaction adapted to real-time, controller-driven contexts.
+
+## UI Classification
+
+### Diegetic vs. Non-Diegetic
+- **Diegetic UI**: Exists in the game world (Dead Space's spine health bar, Pip-Boy in Fallout). Characters can see it. Enhances immersion.
+- **Non-diegetic UI**: Exists only for the player (health bar overlay, minimap). More readable but breaks fourth wall.
+- **Meta UI**: Effects that represent game state visually (screen reddening for low health). Both player and character experience it.
+
+## UX Principles for Games
+
+### Information Hierarchy
+Players need critical information at a glance. Health, ammo, objective markers should be near the screen center (the player's focal point). Secondary info (inventory, quest log) can be in peripheral vision.
+
+### Controller Navigation
+UI must be navigable with D-pad/joystick, not just mouse. Tab order matters. Radial menus reduce selection time for common actions. Button prompts should match controller layout.
+
+### Feedback Loops
+Every player action needs clear feedback: button press → animation change → UI update → sound cue. Missing feedback creates uncertainty and frustration.
+
+## Accessibility
+- Colorblind modes (deuteranopia, protanopia, tritanopia)
+- Scalable UI text for low vision
+- Remappable controls
+- Audio cues for visual information
+- Hold vs. toggle options for repetitive actions

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-team-collaboration",
+  "headline": "AI for Team Collaboration: Smart Meetings, Knowledge Sharing, and Collaborative Intelligence",
+  "description": "AI is the newest member of every team -- transcribing meetings, extracting action items, surfacing relevant documents, and connecting colleagues who should be collaborating. From Microsoft Teams Copilot to Notion AI, AI-augmented collaboration reduces meeting overhead by 10+ hours/month while improving knowledge sharing.",
+  "dateCreated": "2026-05-24T18:00:03.195Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AI-Powered Meeting Intelligence: Transcription, Summarization, and Action Item Extraction (2024-2025 Comprehensive Survey)",
+      "sameAs": "https://arxiv.org/search/?query=meeting+summarization+AI+collaboration"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Organizational Network Analysis with Graph Neural Networks: Collaboration Patterns and Expertise Location",
+      "sameAs": "https://arxiv.org/search/?query=organizational+network+GNN"
+    }
+  ]
+}

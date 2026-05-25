@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-blockchain>
+  a schema:article ;
+  schema:headline "AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-blockchain>
+  schema:citation <https://arxiv.org/abs/2402.02885> .
+
+<https://anchorfact.org/kb/ai-blockchain>
+  schema:citation <https://gensyn.ai/> .

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/model-compression",
+  "headline": "Model Compression: Pruning, Quantization, and Distillation",
+  "description": "Model compression reduces inference cost for deployment on resource-constrained devices. The three pillars — pruning, quantization, and distillation — can be combined for 10x+ compression with minimal accuracy loss.",
+  "dateCreated": "2026-05-24T18:00:03.411Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "A White Paper on Neural Network Quantization",
+      "sameAs": "https://arxiv.org/abs/2106.08295"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks",
+      "sameAs": "https://arxiv.org/abs/1803.03635"
+    }
+  ]
+}

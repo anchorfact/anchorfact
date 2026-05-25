@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/meta-learning",
+  "headline": "Meta-Learning: Learning to Learn with MAML and Reptile",
+  "description": "Meta-learning trains models to learn efficiently. Given a distribution of tasks, the meta-learner acquires knowledge that accelerates learning on new tasks — the model \"learns how to learn.\" MAML finds optimal initializations; Reptile simplifies the process.",
+  "dateCreated": "2026-05-24T18:00:03.405Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks (MAML)",
+      "sameAs": "https://arxiv.org/abs/1703.03400"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "On First-Order Meta-Learning Algorithms (Reptile)",
+      "sameAs": "https://arxiv.org/abs/1803.02999"
+    }
+  ]
+}

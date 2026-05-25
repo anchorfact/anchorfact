@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00476>
+  a schema:TechArticle ;
+  schema:headline "Audio Engineering" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00476>
+  schema:citation <https://www.routledge.com/Mastering-Audio-The-Art-and-the-Science/Katz/p/book/9780240818962> .
+
+<https://anchorfact.org/kb/kb-2026-00476>
+  schema:citation <https://www.routledge.com/mastering-audio/> .
+
+<https://anchorfact.org/kb/kb-2026-00476>
+  schema:citation <https://www.routledge.com/recording/> .

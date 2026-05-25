@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-social-listening",
+  "headline": "AI Social Listening: Brand Monitoring, Sentiment Analysis, and Consumer Insights",
+  "description": "AI social listening hears everything the world says about your brand -- from millions of tweets and reviews to logo appearances in photos. Sentiment analysis, trend detection, and crisis alerting transform unstructured social chatter into actionable consumer intelligence.",
+  "dateCreated": "2026-05-24T18:00:03.169Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AI Social Listening and Consumer Intelligence: NLP, Sentiment Analysis, and Visual Recognition (2024-2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=social+listening+AI+sentiment+analysis+brand"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Computer Vision for Social Media Analytics: Logo Detection, Scene Understanding, and Visual Brand Tracking",
+      "sameAs": "https://arxiv.org/search/?query=logo+detection+social+media+computer+vision"
+    }
+  ]
+}

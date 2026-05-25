@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/mental-health-fundamentals>
+  a schema:Article ;
+  schema:headline "Mental Health: Disorders, Treatments, and Neurobiology" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/mental-health-fundamentals>
+  schema:citation <https://www.psychiatry.org/psychiatrists/practice/dsm> .
+
+<https://anchorfact.org/kb/mental-health-fundamentals>
+  schema:citation <https://www.who.int/publications/i/item/9789240049338> .

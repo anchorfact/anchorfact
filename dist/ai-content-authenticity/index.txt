@@ -1,0 +1,18 @@
+# AI Content Authenticity: Watermarking and Detection
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI-generated content detection is an arms race. Watermarking embeds imperceptible signals during generation; detection tools classify text as AI/human. C2PA standards establish cryptographic provenance chains from capture to publication.
+
+## Core Explanation
+LLM text watermarking: during generation, random seed determines a "green list" of tokens the model is biased toward. Detection: count green-list tokens — statistically significant deviation indicates AI generation. Image watermarking: imperceptible patterns embedded via DCT (frequency domain) survive compression and screenshots.
+
+## Detailed Analysis
+Detection without watermarking: classifiers (GPTZero, Originality.ai) analyze perplexity and burstiness patterns. Adversarial attacks on detectors: paraphrasing (reword to evade patterns) and watermark removal (translate text through another language and back). Deepfake detection focuses on physiological inconsistencies (blink patterns, blood flow).
+
+## Further Reading
+- C2PA Initiative
+- HuggingFace: AI Content Detection
+- Partnership on AI: Synthetic Media Framework

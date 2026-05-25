@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Neural Architecture Search: Automated Design of Deep Neural Networks — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Neural Architecture Search (NAS) automates the design of neural network architectures — replacing years of human intuition and trial-and-error with algorithmic search. From RL-based methods consuming thousands of GPU-hours to modern supernet-based approaches finding architectures in hours, NAS is democratizing optimal network design.<br>
+<br>
+## Core Explanation<br>
+NAS pipeline: (1) Search space — define the space of possible architectures (layer types, kernel sizes, channel counts, skip connections, depth). Cell-based spaces define reusable building blocks (normal cell, reduction cell); macro spaces define overall network structure; (2) Search strategy — how to explore the space: reinforcement learning (controller RNN samples architectures, reward = validation accuracy), evolutionary algorithms (mutation & crossover), Bayesian optimization, differentiable search (DARTS — relax discrete architecture choices to continuous, optimize via gradient descent); (3) Performance estimation — evaluating candidates: full training (too slow), proxy tasks (smaller dataset, fewer epochs), weight sharing (train one supernet containing all possible sub-networks). Modern weight-sharing NAS (Once-for-All, OFA) trains a single large supernet, then extracts specialized sub-networks for different hardware targets (latency, memory, FLOPs constraints) without re-training.<br>
+<br>
+## Detailed Analysis<br>
+Key milestones: NASNet (Zoph et al., 2018) — RL-discovered architecture achieving SOTA on ImageNet but requiring 1,800 GPU-days. DARTS (Liu et al., ICLR 2019) reduced search to ~1 GPU-day via differentiable optimization over a continuous relaxation of the architecture space. Once-for-All (Cai et al., ICLR 2020) trained a 40M-parameter supernet spanning 10^19 sub-networks, deployable on cloud TPUs down to mobile CPUs. Generative NAS (GNAS, 2025): learns the distribution of high-performing architectures, generating novel candidates that inherit successful design patterns. Nature's 2025 NAS collection highlights practical adoption: NAS-designed EfficientNet variants power real-world mobile vision systems; hardware-aware NAS optimizes for specific accelerators (NPU, TPU, GPU). Limitations: (1) CNNs dominated NAS research — transformer architecture search (AutoFormer, HAT) is less mature; (2) Multi-objective NAS (accuracy + latency + energy + memory) requires careful Pareto optimization; (3) Architecture transferability — architectures optimized for ImageNet may not transfer to medical imaging or satellite imagery; (4) Reproducibility — small changes in training hyperparameters can overwhelm architecture effects.<br>
+<br>
+## Further Reading<br>
+- AutoML.org: Neural Architecture Search Overview<br>
+- Once-for-All: Train One Network and Specialize it for Efficient Deployment<br>
+- DARTS: Differentiable Architecture Search (Liu et al., ICLR 2019)<br>
+</article></body>
+</html>

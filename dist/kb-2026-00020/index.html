@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Constitutional AI — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+<br>
+Constitutional AI (CAI) is Anthropic's method for training AI systems to be helpful and harmless using explicit written principles — a "constitution" — rather than implicit human preferences. First published in December 2022 (arXiv:2212.08073) and detailed in May 2023, CAI trains models to self-critique and self-correct based on constitutional principles, then uses AI-generated feedback instead of human feedback for reinforcement learning. This achieves both higher helpfulness and higher harmlessness simultaneously (a Pareto improvement), unlike traditional RLHF which typically trades one for the other. Claude is the first model trained entirely with CAI.<br>
+<br>
+## Core Explanation<br>
+<br>
+Traditional RLHF relies on human labelers to rank model outputs, which has fundamental limitations:<br>
+<br>
+- **Scalability**: Human labeling is expensive and slow<br>
+- **Consistency**: Different labelers apply different standards<br>
+- **Harm exposure**: Humans must read toxic outputs to label them<br>
+- **Opacity**: The resulting values are implicit in the data, not explicitly defined<br>
+<br>
+Constitutional AI replaces the human feedback loop with a constitution — a set of explicit principles that an AI uses to evaluate its own outputs. The training process has two stages:<br>
+<br>
+### Stage 1: Supervised Learning (SL)<br>
+<br>
+The model is trained to **critique and revise its own responses** using randomly sampled constitutional principles. For each training example, the model generates a response, critiques it against a specific principle, and produces a revised version. A small set of human-written examples bootstraps this process; after that, the model self-supervises.<br>
+<br>
+### Stage 2: Reinforcement Learning (RL)<br>
+<br>
+Instead of human preference labels, **AI feedback** is used. For each prompt, the model generates two responses. An AI evaluator (using the same constitution) judges which is better. This AI preference data trains a reward model, which guides PPO-based RL fine-tuning. The result: the model internalizes the constitution's values through reinforcement, without humans ever having to see harmful outputs.<br>
+<br>
+## The Constitution's Six Sources<br>
+<br>
+Anthropic's constitution draws from six categories of principles (updated January 2026):<br>
+<br>
+1. **UN Universal Declaration of Human Rights**: Freedom, equality, dignity, anti-discrimination<br>
+2. **Apple's Terms of Service (inspired)**: Accuracy, honesty, avoiding harmful/deceptive content<br>
+3. **Non-Western Perspectives**: Principles designed to avoid offense to non-Western, non-industrialized, and non-capitalist audiences<br>
+4. **DeepMind Sparrow Rules**: Avoiding stereotypes, threats, harassment, medical/legal advice, conspiracy theories<br>
+5. **Anthropic Research Set 1**: Child-safety, politeness, respect, non-judgmental tone<br>
+6. **Anthropic Research Set 2 (Existential Risk)** : Humility, human control, avoiding self-preservation or power-seeking behavior<br>
+<br>
+## CAI vs. RLHF<br>
+<br>
+| Dimension                | RLHF                                                        | Constitutional AI                                  |<br>
+| ------------------------ | ----------------------------------------------------------- | -------------------------------------------------- |<br>
+| Feedback source          | Human labelers                                              | AI evaluator (guided by constitution)              |<br>
+| Values                   | Implicit in human preference data                           | Explicit in written principles                     |<br>
+| Scalability              | Limited by human labeling capacity                          | Highly scalable (AI supervises AI)                 |<br>
+| Harm exposure            | Humans exposed to toxic content during labeling             | No human exposure to harmful outputs               |<br>
+| Helpfulness/harmlessness | Trade-off (helpfulness decreases as harmlessness increases) | Pareto improvement (both increase simultaneously)  |<br>
+| Transparency             | Difficult to audit implicit preferences                     | Principles can be inspected, debated, and modified |<br>
+| Behavior adjustment      | Requires new human labeling campaign                        | Add or modify a constitutional principle           |<br>
+<br>
+## Advantages and Limitations<br>
+<br>
+**Advantages**:<br>
+<br>
+- **Scalable oversight**: AI supervision replaces human supervision (Anthropic calls this "a success story for scalable oversight")<br>
+- **Auditable values**: Anyone can read the constitution and understand what the model was trained to value<br>
+- **Rapid correction**: If Claude exhibits unwanted behavior, Anthropic can write a new principle and retrain<br>
+- **Proportional response**: Principles include "proportionality" language to prevent excessive moralizing<br>
+<br>
+**Limitations**:<br>
+<br>
+- **Constitution authoring is itself value-laden**: Who writes the principles? Anthropic acknowledges this and has stated goals toward more democratic constitution design<br>
+- **Overly specific principles can reduce generalization**: Longer, more detailed principles may produce worse results than concise, general ones<br>
+- **AI evaluator bias**: The evaluating model may have its own blind spots or biases<br>
+<br>
+## Current and Future Directions<br>
+<br>
+- **Claude** is trained entirely with CAI — all harmlessness improvements come from AI supervision, not human harmlessness data<br>
+- Anthropic is exploring **democratic constitution design** where diverse stakeholders contribute to the principles<br>
+- Future plans include **customizable constitutions** for specific use cases (e.g., a medical AI with a Hippocratic oath-inspired constitution)<br>
+- The current constitution is explicitly stated as not final — Anthropic considers it a living document<br>
+<br>
+## Further Reading<br>
+<br>
+- [Claude's Constitution (Anthropic)](https://www.anthropic.com/news/claudes-constitution): Official description of CAI principles<br>
+- [CAI Paper (arXiv 2212.08073)](https://arxiv.org/abs/2212.08073): Original research paper by Bai et al.<br>
+</article></body>
+</html>

@@ -1,0 +1,20 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "First introduced by Stephen Kleene , regex is the standard tool for text search, validation, and extraction across programming languages, text editors, and command-line tools",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "Regular expressions (regex) are patterns for matching text, powered by finite automata theory. First introduced by Stephen Kleene (1951), regex is the standard tool for text search, validation, and extraction across programming languages, text editors, and command-line tools.",
+    "anchorfact:confidence": "high"
+  }
+]

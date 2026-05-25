@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-complex-networks",
+  "headline": "AI for Complex Networks: Graph Learning, Resilience, and Network Science",
+  "description": "AI and complex network science form a powerful synergy: graph neural networks learn from rich network topologies, while network theory provides structural understanding of AI's own internal representations. Together they unlock insights from interconnected systems.",
+  "dateCreated": "2026-05-24T18:00:02.936Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Artificial intelligence and complex networks meet natural sciences",
+      "sameAs": "https://link.springer.com/article/10.1140/epjs/s11734-025-01844-0"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "A Comprehensive Survey on Artificial Intelligence and Network Science",
+      "sameAs": "https://arxiv.org/abs/2402.16887"
+    }
+  ]
+}

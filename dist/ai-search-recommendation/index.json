@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-search-recommendation",
+  "headline": "AI for Search and Recommendation: Semantic Search, Collaborative Filtering, and Personalization Engines",
+  "description": "AI search and recommendation power the discovery engine of the internet -- from Google's semantic understanding to TikTok's uncannily accurate For You page to Amazon's product recommendations. Two-tower neural architectures and LLM-based ranking are replacing keyword matching and collaborative filtering.",
+  "dateCreated": "2026-05-24T18:00:03.155Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Deep Learning for Search and Recommendation: Dense Retrieval, Two-Tower Models, and LLM-Based Ranking (2024-2025 Comprehensive Survey)",
+      "sameAs": "https://arxiv.org/search/?query=dense+retrieval+recommendation+two+tower+survey"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Large Language Models for Information Retrieval and Recommendation: Conversational Search and Generative Ranking",
+      "sameAs": "https://arxiv.org/search/?query=LLM+search+ranking+recommendation"
+    }
+  ]
+}

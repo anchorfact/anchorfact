@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-augmented-reality",
+  "headline": "AI for Augmented Reality: Real-Time Scene Understanding, Spatial Computing, and Contextual Overlays",
+  "description": "AR overlays digital information onto the physical world, and AI makes that overlay intelligent -- recognizing what you are looking at, understanding the 3D geometry of the space around you, and providing contextually relevant information. From Apple Vision Pro's spatial computing to industrial AR repair guides, AI transforms augmented reality from gimmick to utility.",
+  "dateCreated": "2026-05-24T18:00:02.923Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Apple Vision Pro: AI-Powered Spatial Computing with Scene Understanding",
+      "sameAs": "https://www.apple.com/apple-vision-pro/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "ARCore and ARKit: AI-Powered Augmented Reality Platforms with Scene Understanding",
+      "sameAs": "https://developers.google.com/ar"
+    }
+  ]
+}

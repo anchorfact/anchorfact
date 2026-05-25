@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-drug-repurposing-1",
+    "text": "AI drug repurposing (2020-2026): ML models (knowledge graph embeddings, matrix factorization, deep learning) predict novel drug-disease associations by integrating multi-modal data: drug molecular structure, protein targets, gene expression signatures, clinical side effects, and electronic health records. During COVID-19, AI repurposing identified baricitinib (rheumatoid arthritis drug) as a COVID-19 treatment, later validated in ACTT-2 trial and granted FDA EUA.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/search/?query=drug+repurposing+machine+learning+knowledge+graph"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-drug-repurposing-2",
+    "text": "Knowledge graph-based drug repurposing (2023-2026): platforms like Healx, BenevolentAI, and IBM Watson for Drug Discovery construct biomedical knowledge graphs (10M+ nodes: drugs, targets, diseases, genes, pathways) and use graph neural networks or knowledge graph embeddings (TransE, RotatE, ComplEx) to predict novel links. Healx (2025) advanced an AI-discovered repurposed drug for Fragile X syndrome to Phase 2a clinical trials.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/search/?query=AI+drug+repositioning+clinical+trial"
+    }
+  }
+]

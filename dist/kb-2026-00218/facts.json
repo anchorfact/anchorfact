@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-game-development-01",
+    "text": "A Game Design Document is the blueprint for a video game — defining mechanics, story, art direction, technical requirements, and project scope",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-game-development-001",
+    "text": "A Game Design Document (GDD) is the blueprint for a video game — defining mechanics, story, art direction, technical requirements, and project scope. It serves as the single source of truth for the development team. Modern GDDs are living documents (wikis, Notion) rather than static PDFs.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-game-development-002",
+    "text": "GDD sections: Executive Summary (one-page pitch), Gameplay (core loop, mechanics, controls), Story/World (setting, characters, narrative arc), Art/Sound (visual style, audio direction), UI/UX (menus, HUD, flow), Technical (platform, engine, tools), Monetization (if F2P), Schedule/Milestones.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  }
+]

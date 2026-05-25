@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/cybersecurity-fundamentals>
+  a schema:Article ;
+  schema:headline "Cybersecurity: Threats, Cryptography, and Defense" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/cybersecurity-fundamentals>
+  schema:citation <https://www.pearson.com/en-us/subject-catalog/p/cryptography-and-network-security/P200000003372> .
+
+<https://anchorfact.org/kb/cybersecurity-fundamentals>
+  schema:citation <https://csrc.nist.gov/publications/detail/sp/800-207/final> .

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-fraud-detection>
+  a schema:article ;
+  schema:headline "AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-fraud-detection>
+  schema:citation <https://www.nature.com/articles/s41598-025-25200-3> .
+
+<https://anchorfact.org/kb/ai-for-fraud-detection>
+  schema:citation <https://www.mdpi.com/2076-3417/16/4/1931> .

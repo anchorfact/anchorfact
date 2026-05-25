@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "iptables (legacy) and nftables (modern, since kernel 3.13) are Linux firewall frameworks based on Netfilter hooks. nftables replaces iptables with unified syntax, better performance, and IPv4/IPv6 handling. Used to create packet filtering rules (allow/deny traffic).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "nftables: `nft add table inet filter`, `nft add chain inet filter input { type filter hook input priority 0; }`, `nft add rule inet filter input tcp dport 22 accept`.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  }
+]

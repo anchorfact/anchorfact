@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-water-management>
+  a schema:article ;
+  schema:headline "AI for Water Management: Leak Detection, Quality Monitoring, and Smart Irrigation" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-water-management>
+  schema:citation <https://arxiv.org/search/?query=water+management+AI+leak+detection+smart> .
+
+<https://anchorfact.org/kb/ai-water-management>
+  schema:citation <https://arxiv.org/search/?query=smart+irrigation+machine+learning> .

@@ -1,0 +1,21 @@
+# First Aid CPR
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+
+
+
+## TL;DR
+
+CPR (Cardiopulmonary Resuscitation) doubles or triples survival chances after cardiac arrest. Hands-only CPR (AHA, 2008): push hard and fast on center of chest, 100-120 compressions/minute, 2 inches deep. No rescue breaths needed for bystanders. AED (Automated External Defibrillator): restores normal heart rhythm.
+
+## Core Explanation
+
+CPR steps (adult): check responsiveness, call emergency, start compressions immediately. Compression-to-breath ratio (trained): 30:2. Continue until AED arrives or EMS takes over. Choking (Heimlich maneuver): abdominal thrusts above navel, inward and upward. Recovery position: unconscious but breathing — on side, airway clear. Stroke (FAST): Face drooping, Arm weakness, Speech difficulty, Time to call emergency.
+
+## Further Reading
+
+- [AHA Guidelines for CPR and Emergency Cardiovascular Care](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines)
+

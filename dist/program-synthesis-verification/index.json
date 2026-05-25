@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/program-synthesis-verification",
+  "headline": "Program Synthesis and Formal Verification: Neural Theorem Proving with LLMs",
+  "description": "Program synthesis generates code from specifications; formal verification proves code correctness mathematically. The convergence of LLMs with formal methods — neural theorem proving — promises AI that writes and verifies its own code, making software more reliable than ever before.",
+  "dateCreated": "2026-05-24T18:00:03.463Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Neural Theorem Proving: Generating and Structuring Proofs for Formal Verification (ProofSeek)",
+      "sameAs": "https://proceedings.mlr.press/v284/rao25a.html"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Formal Reasoning Meets LLMs: Toward AI for Mathematics and Verification",
+      "sameAs": "https://cacm.acm.org/research/formal-reasoning-meets-llms-toward-ai-for-mathematics-and-verification/"
+    }
+  ]
+}

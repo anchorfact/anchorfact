@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00487",
+  "headline": "North America Geography",
+  "description": "North America (24.7 million km²) is the 3rd largest continent. 23 countries, ~600 million people. Features: Rocky Mountains, Great Plains, Mississippi River, Great Lakes (largest freshwater system), Grand Canyon, Niagara Falls. Diverse climates: Arctic (north) → temperate → subtropical (south) → tropical (Central America).",
+  "dateCreated": "2026-05-24T18:00:04.310Z",
+  "dateModified": "2026-05-24T18:00:04.310Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "North America: A Geography (Birdsall, Florin, Palka)",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/north-america/P200000009517"
+    }
+  ]
+}

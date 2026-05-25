@@ -1,0 +1,23 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00455>
+  a schema:TechArticle ;
+  schema:headline "Earthquakes" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00455>
+  schema:citation <https://us.macmillan.com/books/9780716756187/earthquakes> .
+
+<https://anchorfact.org/kb/kb-2026-00455>
+  schema:citation <https://press.princeton.edu/earthquakes/> .
+
+<https://anchorfact.org/kb/kb-2026-00455>
+  schema:citation <https://www.usgs.gov/earthquake-hazards> .
+
+<https://anchorfact.org/kb/kb-2026-00455>
+  schema:citation <https://global.oup.com/vsi-earthquakes/> .
+
+<https://anchorfact.org/kb/kb-2026-00455>
+  schema:citation <https://press.princeton.edu/earthquakes/> .

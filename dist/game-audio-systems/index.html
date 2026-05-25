@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Game Audio Systems and Sound Design — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Modern game audio goes far beyond playing sound files. Dynamic mixing, 3D spatialization, adaptive music, and procedural audio create immersive soundscapes that respond to gameplay in real time.<br>
+<br>
+## Audio Middleware<br>
+<br>
+### FMOD and Wwise<br>
+These middleware tools sit between the game engine and the audio hardware. They provide visual authoring environments for sound designers to create complex audio behaviors without programming — volume ducking, reverb zones, parameter-driven music transitions.<br>
+<br>
+### Core Features<br>
+- **Event-driven audio**: Sounds triggered by game events (footsteps, gunshots, UI)<br>
+- **Parameter mapping**: Mix music layers based on gameplay intensity<br>
+- **Occlusion modeling**: Muffle sounds behind walls using raycasts<br>
+- **Reverb zones**: Apply different acoustic environments (cave, hall, outdoor)<br>
+<br>
+## 3D Spatialization<br>
+Positional audio uses HRTF to simulate direction: sounds to the left arrive louder and slightly earlier in the left ear with spectral filtering from the head and ears. Modern APIs (Steam Audio, Oculus Audio) provide real-time HRTF convolution.<br>
+<br>
+## Adaptive Music<br>
+- **Horizontal resequencing**: Rearrange music sections based on game state<br>
+- **Vertical layering**: Add/remove instrument layers based on intensity<br>
+- **Stinger transitions**: Musical punctuation for important events (combat start, level complete)<br>
+<br>
+## Implementation Architecture<br>
+Game code emits audio parameters → Middleware processes mixing/routing → Platform API (XAudio2, OpenAL) → Hardware output. This decoupling lets sound designers iterate independently of engineering schedules.</article></body>
+</html>

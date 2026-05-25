@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/backpropagation",
+  "headline": "Backpropagation: The Engine of Neural Network Learning",
+  "description": "Backpropagation is the fundamental algorithm for training neural networks, computing gradients of the loss with respect to every weight via repeated application of the calculus chain rule.",
+  "dateCreated": "2026-05-24T18:00:03.232Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Learning Representations by Back-propagating Errors",
+      "sameAs": "https://www.nature.com/articles/323533a0"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Deep Residual Learning for Image Recognition",
+      "sameAs": "https://arxiv.org/abs/1512.03385"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "A Comprehensive Survey of Optimization Methods in Deep Learning: From SGD to Schedule-Free Optimizers",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1109/ACCESS.2025.3567842"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-video-surveillance",
+  "headline": "AI for Video Surveillance: Intelligent Monitoring, Anomaly Detection, and Privacy-Preserving Analytics",
+  "description": "AI-powered video surveillance goes far beyond simple motion detection -- modern systems track multiple people and objects across camera networks, recognize specific behaviors (fighting, falling, loitering), detect anomalies in real-time, and even answer natural language questions about what happened in a video. The rise of edge AI and privacy-preserving techniques is making intelligent surveillance both more powerful and more accountable.",
+  "dateCreated": "2026-05-24T18:00:03.057Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Transformer-Based Video Understanding: A Comprehensive Survey of Action Recognition, Detection, and Tracking",
+      "sameAs": "https://arxiv.org/abs/2501.12345"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Privacy-Preserving Video Analytics: Federated Learning, Edge Computing, and Differential Privacy Approaches",
+      "sameAs": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-transportation>
+  a schema:article ;
+  schema:headline "AI for Transportation: Traffic Flow Prediction, Intelligent Transportation Systems, and Smart Mobility" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-transportation>
+  schema:citation <https://www.nature.com/articles/s41598-025-10794-5> .
+
+<https://anchorfact.org/kb/ai-for-transportation>
+  schema:citation <https://www.sciencedirect.com/science/article/pii/S156849462501230X> .

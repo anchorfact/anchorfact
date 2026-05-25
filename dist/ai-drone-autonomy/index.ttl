@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-drone-autonomy>
+  a schema:article ;
+  schema:headline "AI for Drone Autonomy: Autonomous Navigation, Swarm Coordination, and Aerial Robotics" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-drone-autonomy>
+  schema:citation <https://arxiv.org/search/?query=drone+reinforcement+learning+autonomous+navigation> .
+
+<https://anchorfact.org/kb/ai-drone-autonomy>
+  schema:citation <https://arxiv.org/search/?query=drone+swarm+MARL+coordination> .

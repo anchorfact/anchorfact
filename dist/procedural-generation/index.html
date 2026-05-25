@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Procedural Content Generation in Games — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Procedural content generation (PCG) uses algorithms to automatically create game content — terrain, levels, items, quests — replacing manual design with computational generation. It is fundamental to modern open-world and roguelike games.<br>
+<br>
+## Core Concepts<br>
+<br>
+### Noise-Based Generation<br>
+Perlin noise and Simplex noise are the backbone of terrain generation. These functions produce natural-looking gradient noise that, when layered at multiple octaves, creates realistic mountains, valleys, and cave systems.<br>
+<br>
+### L-Systems for Vegetation<br>
+Lindenmayer systems (L-systems) use recursive production rules to model plant growth. Starting from an axiom string, rules like F → F[+F]F[-F]F generate branching structures that resemble trees and foliage.<br>
+<br>
+### Wave Function Collapse (WFC)<br>
+WFC treats content generation as a constraint satisfaction problem. Input examples are analyzed to extract adjacency rules, then the algorithm propagates constraints to fill a grid with compatible tiles — producing coherent dungeons, towns, and textures.<br>
+<br>
+### Cellular Automata for Caves<br>
+Conway's Game of Life rules adapted for cave generation: cells with too few neighbors die (open space), cells with enough neighbors survive (walls), creating organic cave networks.<br>
+<br>
+## Applications<br>
+- **Roguelikes**: Random dungeon layouts, item placement, enemy spawning<br>
+- **Open-world games**: Terrain, vegetation, weather systems<br>
+- **Asset generation**: Texture synthesis, material creation<br>
+- **Narrative**: Quest generation, dialogue variation via grammar-based systems<br>
+<br>
+## Performance Considerations<br>
+Modern PCG must balance generation quality with runtime cost. Techniques include:<br>
+- Pre-generation during loading screens<br>
+- Chunk-based generation with LOD (level of detail)<br>
+- GPU-accelerated noise computation<br>
+- Seed-based determinism for reproducible worlds</article></body>
+</html>

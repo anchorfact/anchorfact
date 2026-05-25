@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-001",
+    "text": "Nutrition provides the energy and nutrients necessary for health. Macronutrients: carbohydrates (4 cal/g, energy), proteins (4 cal/g, repair/build), fats (9 cal/g, hormone production, cell membranes). Micronutrients: vitamins and minerals needed in small amounts. Water: essential for all bodily functions. Balance, variety, moderation are key princi",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.dietaryguidelines.gov/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-002",
+    "text": "Proteins: complete (animal, contains all essential amino acids) vs.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.dietaryguidelines.gov/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-003",
+    "text": "Fats: unsaturated (olive oil, nuts — heart-healthy), saturated (limit), trans (avoid — artificial, banned US 2021).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+    }
+  }
+]

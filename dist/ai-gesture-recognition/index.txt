@@ -1,0 +1,14 @@
+# AI Gesture Recognition: Hand Tracking, Sign Language, and Touchless Interaction
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI gesture recognition enables hands to control technology without touch -- from MediaPipe's real-time hand tracking on every smartphone to sign language AI translating ASL to speech. Hand pose estimation via transformers approaches human-level accuracy, enabling AR/VR interaction, touchless interfaces, and accessibility.
+
+## Core Explanation
+Gesture AI: (1) Hand detection -- locate hand bounding box in image (SSD, BlazePalm). Palm detection first (MediaPipe) -- palms are easier to detect than hands in arbitrary poses; (2) Hand keypoint -- predict 21 3D keypoints (wrist, 4 finger joints x 5 fingers). MediaPipe: regression + iterative refinement. HaMeR (2024): transformer-based, predicts MANO hand model parameters (shape + pose); (3) Gesture classification -- map keypoint sequence to gesture label (swipe, pinch, point, thumbs-up). Temporal models: LSTM, transformer on keypoint trajectories; (4) Sign language -- sequence of gestures mapped to words/sentences. Encoder-decoder: video frames -> keypoint sequence -> gesture tokens -> language decoder.
+
+## Detailed Analysis
+MediaPipe Hands (Google): optimized for mobile inference. Pipeline: palm detector (BlazePalm) -> hand landmark model (21 keypoints, 2D + relative depth). Runs at 30+ FPS on smartphone CPU. HaMeR (Meta, 2024): first fully transformer-based hand mesh recovery. Uses ViT backbone + MANO head. 3D hand mesh (778 vertices) from single RGB image. Sign language AI (Nature 2025): MediaPipe extracts hand + body + face landmarks from video. Transformer processes temporal sequence, outputs gloss (word-level sign) sequence, then language model produces fluent text. 95%+ accuracy on isolated signs, 70-85% on continuous signing. Applications: (1) AR/VR -- gesture-based UI for Quest and Vision Pro; (2) Automotive -- gesture control for infotainment without touching screens; (3) Accessibility -- sign language translation, touchless ATMs; (4) Robotics -- gesture-based robot control.
+

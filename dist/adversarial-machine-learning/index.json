@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/adversarial-machine-learning",
+  "headline": "Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering",
+  "description": "Adversarial Machine Learning studies how AI systems can be fooled — and defended. Tiny perturbations invisible to humans can cause state-of-the-art models to misclassify with high confidence. Building robust AI requires understanding the attack surface and engineering defenses.",
+  "dateCreated": "2026-05-24T18:00:02.760Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations (NIST AI 100-2e3)",
+      "sameAs": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2025.pdf"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "A survey on adversarial machine learning: Attacks, defenses, real-world applications, and algorithmic framework",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S0925231226000676"
+    }
+  ]
+}

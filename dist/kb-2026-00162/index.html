@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Kubernetes Pod & Service — AnchorFact</title></head>
+<body><article><br>
+<br>
+<br>
+<br>
+## TL;DR<br>
+<br>
+A Pod is the smallest deployable unit in Kubernetes — one or more containers sharing network namespace, IPC, and storage volumes. A Service provides stable networking — a virtual IP (ClusterIP) and DNS name that load-balances across Pod replicas, surviving Pod restarts.<br>
+<br>
+## Core Explanation<br>
+<br>
+Pod lifecycle: Pending → Running → Succeeded/Failed. Init containers run before app containers. Sidecar pattern: helper container alongside main (logging, proxying). Service types: ClusterIP (internal only), NodePort (exposes on node IP), LoadBalancer (cloud provider LB). Ingress routes external HTTP traffic to Services.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Kubernetes Documentation](https://kubernetes.io/docs/)<br>
+</article></body>
+</html>

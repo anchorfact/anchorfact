@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-writing-assistants>
+  a schema:article ;
+  schema:headline "AI Writing Assistants: Grammar Checking, Style Enhancement, and Collaborative Authorship" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-writing-assistants>
+  schema:citation <https://arxiv.org/search/?query=AI+writing+assistant+grammar+correction+style> .
+
+<https://anchorfact.org/kb/ai-writing-assistants>
+  schema:citation <https://arxiv.org/search/?query=AI+collaborative+writing+authorship> .

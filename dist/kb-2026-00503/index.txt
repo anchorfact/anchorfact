@@ -1,0 +1,19 @@
+# Track and Field Events
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+
+
+## TL;DR
+
+Track and field (athletics) comprises running, jumping, and throwing events dating to Ancient Olympics. Sprint events (100m-400m) emphasize explosive power; distance events require aerobic endurance. Field events: long jump, high jump, pole vault, shot put, discus, javelin, hammer. Decathlon/heptathlon tests all-around athleticism.
+
+## Core Explanation
+
+Sprint biomechanics: acceleration phase (0-30m), maximum velocity (30-60m), speed endurance (60m+). Starting blocks mandatory for races ≤400m. False start rule: first false start disqualifies (since 2010). Relay zones: 30m exchange zone + 10m acceleration zone. Jumps: foul on take-off board violation (long/triple jump), bar dislodgement (high jump/pole vault). Throws: implement must land within sector (34.92° angle). Wind assistance: legal ≤2.0 m/s for records.
+
+## Further Reading
+
+- [World Athletics Rules](https://worldathletics.org/competition/technical-rules)
+

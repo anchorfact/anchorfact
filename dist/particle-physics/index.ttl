@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/particle-physics>
+  a schema:Article ;
+  schema:headline "Particle Physics and the Standard Model" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/particle-physics>
+  schema:citation <https://www.wiley.com/en-us/Introduction+to+Elementary+Particles%2C+2nd+Edition-p-9783527406015> .
+
+<https://anchorfact.org/kb/particle-physics>
+  schema:citation <https://home.cern/science/physics/standard-model> .

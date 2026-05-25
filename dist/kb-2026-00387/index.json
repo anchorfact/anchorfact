@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00387",
+  "headline": "International Trade",
+  "description": "International trade involves exchange of goods and services across borders. Comparative advantage (Ricardo, 1817): countries benefit by specializing in what they produce most efficiently, even if they're worse at everything. WTO (1995) governs trade rules. Protectionism: tariffs, quotas, subsidies to protect domestic industries.",
+  "dateCreated": "2026-05-24T18:00:04.306Z",
+  "dateModified": "2026-05-24T18:00:04.306Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "International Economics: Theory and Policy (Krugman, Obstfeld, Melitz)",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/international-economics-theory-and-policy/P200000005849"
+    }
+  ]
+}

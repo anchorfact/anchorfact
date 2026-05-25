@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-01",
+    "text": "Great Pyramid of Khufu: 146m originally , 2.3 million stone blocks averaging 2.5 tons each, aligned to true north within 0.05 degrees — a precision modern engineers admire",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://thamesandhudson.com/the-complete-pyramids-9780500285473"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-02",
+    "text": "Khafre pyramid: slightly smaller, retains some casing stones at top",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://thamesandhudson.com/the-complete-pyramids-9780500285473"
+    }
+  }
+]

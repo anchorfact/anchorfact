@@ -1,0 +1,18 @@
+# Multi-Modal Machine Learning
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Multi-modal learning combines vision, language, audio, and other data modalities to achieve understanding beyond single-modality systems. GPT-4V and Gemini represent the frontier of integrated vision-language reasoning.
+
+## Core Explanation
+Five core challenges: representation (how to encode each modality), translation (mapping between modalities), alignment (finding correspondences), fusion (combining information), and co-learning (transferring knowledge between modalities). Late fusion concatenates modality-specific encodings; early fusion processes raw signals jointly.
+
+## Detailed Analysis
+CLIP's dual-encoder architecture: separate vision and text encoders, aligned via contrastive loss. GPT-4V uses a unified transformer processing interleaved image tokens and text tokens. Flamingo (DeepMind) combines frozen vision and language models with learned cross-attention adapters.
+
+## Further Reading
+- CMU MultiComp Lab: Multimodal Research
+- Papers With Code: Multimodal Learning
+- Hugging Face: Vision-Language Models Guide

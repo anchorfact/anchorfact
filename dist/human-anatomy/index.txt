@@ -1,0 +1,18 @@
+# Human Anatomy: Systems, Organs, and Function
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Human anatomy studies the structure of the body. 11 organ systems — skeletal, muscular, nervous, circulatory, respiratory, digestive, endocrine, urinary, reproductive, lymphatic, integumentary — work in coordinated integration.
+
+## Core Explanation
+Major systems: nervous system (brain, spinal cord, nerves — rapid electrical signaling), cardiovascular (heart pumps blood through arteries → capillaries → veins), respiratory (lungs exchange O₂/CO₂ across 70 m² of alveolar surface), digestive (mouth to colon, ~9m tract).
+
+## Detailed Analysis
+The brain (~1.4 kg, 86 billion neurons) consumes 20% of the body's oxygen. Neurons communicate via synapses — electrical signals trigger neurotransmitter release. The liver (~1.5 kg) performs 500+ functions including detoxification, protein synthesis, and glycogen storage.
+
+## Further Reading
+- Visible Body: 3D Anatomy Atlas
+- Khan Academy: Human Anatomy
+- NIH: Visible Human Project

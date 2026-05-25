@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00012>
+  a schema:TechArticle ;
+  schema:headline "Python Programming Language" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00012>
+  schema:citation <https://docs.python.org/3.13/> .
+
+<https://anchorfact.org/kb/kb-2026-00012>
+  schema:citation <https://www.tiobe.com/tiobe-index/> .

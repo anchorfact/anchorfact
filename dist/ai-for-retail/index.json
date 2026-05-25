@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-retail",
+  "headline": "AI for Retail: Cashierless Stores, Dynamic Pricing, and Personalized Shopping",
+  "description": "AI is reengineering retail -- from cashierless stores where you grab-and-go to dynamic prices that optimize in real-time to virtual try-on that lets you see clothes on your body before buying. Computer vision, reinforcement learning, and recommendation systems collectively create a shopping experience that is seamless, personalized, and increasingly autonomous.",
+  "dateCreated": "2026-05-24T18:00:03.026Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Amazon Just Walk Out: AI-Powered Cashierless Retail Technology",
+      "sameAs": "https://aws.amazon.com/just-walk-out/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Deep Reinforcement Learning for Dynamic Pricing and Markdown Optimization in Retail (2023-2025 surveys)",
+      "sameAs": "https://arxiv.org/search/?query=dynamic+pricing+reinforcement+learning+retail"
+    }
+  ]
+}

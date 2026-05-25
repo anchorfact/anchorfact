@@ -1,0 +1,34 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00063",
+  "headline": "WebSocket Protocol",
+  "description": "WebSocket is a communication protocol providing full-duplex, bidirectional communication over a single TCP connection, standardized as IETF RFC 6455 in 2011. Unlike HTTP's request-response model, WebSocket maintains a persistent connection where both client and server can send data at any time. It is the foundation of real-time web applications including chat systems, live dashboards, collaborative editing, multiplayer games, and financial trading platforms. The protocol has universal browser support and is maintained as a living standard by WHATWG (updated March 2026).",
+  "dateCreated": "2026-05-24T18:00:04.145Z",
+  "dateModified": "2026-05-24T18:00:04.145Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "RFC 6455 — The WebSocket Protocol",
+      "author": "Fette, I., Melnikov, A.",
+      "sameAs": "https://www.rfc-editor.org/rfc/rfc6455"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "WebSockets Standard (2026-03-15)",
+      "sameAs": "https://websockets.spec.whatwg.org/"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-digital-twins",
+  "headline": "AI for Digital Twins: Real-Time Simulation, Predictive Maintenance, and System Optimization",
+  "description": "Digital twins are real-time virtual replicas of physical systems -- factories, buildings, cities, even human bodies. AI transforms digital twins from passive monitoring dashboards to active optimization engines that predict failures, simulate scenarios, and autonomously improve operations.",
+  "dateCreated": "2026-05-24T18:00:02.948Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AI-Enabled Digital Twins: From Real-Time Monitoring to Autonomous Optimization (2025 Survey)",
+      "sameAs": "https://www.nvidia.com/en-us/omniverse/digital-twins/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Generative and Predictive AI for Digital Twin Systems in Advanced Manufacturing",
+      "sameAs": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1655470/full"
+    }
+  ]
+}

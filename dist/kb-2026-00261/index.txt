@@ -1,0 +1,17 @@
+# Systemd
+Confidence: high
+Last verified: 2026-05-24
+Generation: human_only
+
+## TL;DR
+
+systemd is the init system and service manager for most Linux distributions (since ~2015). It manages services, sockets, timers, mounts, and devices via unit files. `systemctl start/stop/enable/disable service`. systemd unified Linux service management across distributions, replacing SysV init and Upstart.
+
+## Core Explanation
+
+Unit types: service (.service), socket (.socket), timer (.timer, replaces cron), mount, target (group). `systemctl status service` shows state, logs. `journalctl -u service` views logs. Service unit example: `[Service] ExecStart=/usr/bin/app` with `Restart=always`. systemd starts services in parallel (not sequentially like SysV) — faster boot. Controversy: monolithic design, PID 1 complexity.
+
+## Further Reading
+
+- [systemd Documentation](undefined)
+

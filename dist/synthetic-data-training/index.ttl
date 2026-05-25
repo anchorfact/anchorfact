@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/synthetic-data-training>
+  a schema:TechArticle ;
+  schema:headline "Synthetic Data in AI Training" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/synthetic-data-training>
+  schema:citation <https://arxiv.org/abs/2412.08905> .
+
+<https://anchorfact.org/kb/synthetic-data-training>
+  schema:citation <https://www.nature.com/articles/s41586-024-07566-y> .

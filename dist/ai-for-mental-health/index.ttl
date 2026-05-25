@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-mental-health>
+  a schema:article ;
+  schema:headline "AI for Mental Health: LLM-Based Therapy, Digital Interventions, and Clinical Trials" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-mental-health>
+  schema:citation <https://ai.nejm.org/doi/full/10.1056/aIoa2400802> .
+
+<https://anchorfact.org/kb/ai-for-mental-health>
+  schema:citation <https://www.nature.com/articles/s41591-026-04278-w> .

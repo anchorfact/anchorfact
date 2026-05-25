@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00282>
+  a schema:TechArticle ;
+  schema:headline "Model Evaluation Metrics" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00282>
+  schema:citation <https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/> .
+
+<https://anchorfact.org/kb/kb-2026-00282>
+  schema:citation <https://doi.org/10.1145/3712345> .
+
+<https://anchorfact.org/kb/kb-2026-00282>
+  schema:citation <https://doi.org/10.1109/ACCESS.2025.3567842> .

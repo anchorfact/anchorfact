@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00364",
+  "headline": "Neuroscience of Sleep",
+  "description": "Sleep occupies one-third of human life and is essential for health. Functions: memory consolidation, metabolic waste clearance (glymphatic system), immune function, emotional regulation. Adults need 7-9 hours. Sleep deprivation impairs cognition comparable to alcohol intoxication.",
+  "dateCreated": "2026-05-24T18:00:04.531Z",
+  "dateModified": "2026-05-24T18:00:04.531Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Why We Sleep (Matthew Walker)",
+      "sameAs": "https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325"
+    }
+  ]
+}

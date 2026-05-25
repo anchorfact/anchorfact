@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00105>
+  a schema:TechArticle ;
+  schema:headline "Fullscreen API" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00105>
+  schema:citation <https://fullscreen.spec.whatwg.org/> .

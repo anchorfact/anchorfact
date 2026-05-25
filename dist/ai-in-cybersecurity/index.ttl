@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-in-cybersecurity>
+  a schema:article ;
+  schema:headline "AI in Cybersecurity: Threat Detection and LLM-Powered Defense" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-in-cybersecurity>
+  schema:citation <https://link.springer.com/article/10.1186/s42400-025-00361-w> .
+
+<https://anchorfact.org/kb/ai-in-cybersecurity>
+  schema:citation <https://www.nature.com/articles/s41598-025-19634-y> .

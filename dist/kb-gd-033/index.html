@@ -1,0 +1,3477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>叙事架构代码实现指南 — AnchorFact</title></head>
+<body><article><br>
+<br>
+<br>
+<br>
+<br>
+# 叙事架构代码实现指南<br>
+<br>
+本文档提供游戏叙事系统的核心代码实现示例，覆盖 Etudes 层级化状态机、对话树、变量管理和分支剧情等关键模块。所有代码均可直接运行或稍作修改后集成到项目中。<br>
+<br>
+---<br>
+<br>
+## 目录<br>
+<br>
+1. [Etudes 系统（Owlcat Games）](#1-etudes-系统owlcat-games)<br>
+2. [对话系统代码结构](#2-对话系统代码结构)<br>
+3. [变量管理方案](#3-变量管理方案)<br>
+4. [分支剧情代码示例](#4-分支剧情代码示例)<br>
+5. [叙事工具集成](#5-叙事工具集成)<br>
+<br>
+---<br>
+<br>
+## 1. Etudes 系统（Owlcat Games）<br>
+<br>
+Owlcat Games 在《开拓者》系列中使用 Etudes 系统替代传统全局 Flag，管理超过 30,000 个叙事变量。Etudes 是层级化的状态机，通过优先级排序和冲突检测实现可控的叙事状态管理。<br>
+<br>
+### 1.1 核心概念：层级化状态机<br>
+<br>
+与传统扁平的布尔 Flag 不同，Etudes 使用树状结构组织叙事状态。每个节点代表一个叙事片段或状态，子节点继承父节点的上下文。<br>
+<br>
+```csharp<br>
+// Etudes系统核心数据模型（C#）<br>
+using System;<br>
+using System.Collections.Generic;<br>
+using System.Linq;<br>
+<br>
+namespace NarrativeSystem.Etudes<br>
+{<br>
+    /// <summary><br>
+    /// Etude节点状态枚举<br>
+    /// </summary><br>
+    public enum EtudeState<br>
+    {<br>
+        Inactive,   // 未激活（灰色）<br>
+        Pending,    // 等待条件满足（橙色）<br>
+        Active      // 已激活（绿色）<br>
+    }<br>
+<br>
+    /// <summary><br>
+    /// Etude优先级定义<br>
+    /// 高优先级Etude可以覆盖低优先级的状态变更<br>
+    /// </summary><br>
+    public enum EtudePriority<br>
+    {<br>
+        Background = 0,    // 背景叙事，最低优先级<br>
+        Normal = 100,      // 普通任务<br>
+        Important = 200,   // 重要剧情<br>
+        Critical = 300,    // 关键节点，最高优先级<br>
+        Blocking = 400     // 阻塞级，暂停其他叙事<br>
+    }<br>
+<br>
+    /// <summary><br>
+    /// Etude节点：叙事状态的基本单位<br>
+    /// </summary><br>
+    public class EtudeNode<br>
+    {<br>
+        public string Id { get; set; }                    // 唯一标识符<br>
+        public string Name { get; set; }                  // 显示名称<br>
+        public string Description { get; set; }           // 描述<br>
+        public EtudePriority Priority { get; set; }       // 优先级<br>
+        public EtudeState State { get; private set; }     // 当前状态<br>
+        public EtudeNode Parent { get; set; }             // 父节点<br>
+        public List<EtudeNode> Children { get; set; }     // 子节点列表<br>
+        public List<IEtudeCondition> Conditions { get; set; } // 激活条件<br>
+        public List<IEtudeAction> OnActivate { get; set; }    // 激活时动作<br>
+        public List<IEtudeAction> OnDeactivate { get; set; }  // 取消激活时动作<br>
+        <br>
+        // 冲突规则：哪些Etude与此节点互斥<br>
+        public List<string> ConflictsWith { get; set; }<br>
+<br>
+        public EtudeNode()<br>
+        {<br>
+            Children = new List<EtudeNode>();<br>
+            Conditions = new List<IEtudeCondition>();<br>
+            OnActivate = new List<IEtudeAction>();<br>
+            OnDeactivate = new List<IEtudeAction>();<br>
+            ConflictsWith = new List<string>();<br>
+            State = EtudeState.Inactive;<br>
+        }<br>
+<br>
+        /// <summary><br>
+        /// 评估当前节点是否应该激活<br>
+        /// 同时检查父节点状态和自身条件<br>
+        /// </summary><br>
+        public bool Evaluate(EtudeManager manager)<br>
+        {<br>
+            // 如果父节点未激活，子节点不能激活<br>
+            if (Parent != null && Parent.State != EtudeState.Active)<br>
+                return false;<br>
+<br>
+            // 检查所有条件是否满足<br>
+            return Conditions.All(c => c.Check(manager));<br>
+        }<br>
+<br>
+        /// <summary><br>
+        /// 激活此Etude节点<br>
+        /// </summary><br>
+        public void Activate(EtudeManager manager)<br>
+        {<br>
+            if (State == EtudeState.Active) return;<br>
+            <br>
+            State = EtudeState.Active;<br>
+            foreach (var action in OnActivate)<br>
+            {<br>
+                action.Execute(manager);<br>
+            }<br>
+        }<br>
+<br>
+        /// <summary><br>
+        /// 取消激活此Etude节点<br>
+        /// </summary><br>
+        public void Deactivate(EtudeManager manager)<br>
+        {<br>
+            if (State == EtudeState.Inactive) return;<br>
+            <br>
+            // 递归取消激活所有子节点<br>
+            foreach (var child in Children)<br>
+            {<br>
+                child.Deactivate(manager);<br>
+            }<br>
+            <br>
+            State = EtudeState.Inactive;<br>
+            foreach (var action in OnDeactivate)<br>
+            {<br>
+                action.Execute(manager);<br>
+            }<br>
+        }<br>
+    }<br>
+<br>
+    /// <summary><br>
+    /// 条件接口：所有激活条件必须实现<br>
+    /// </summary><br>
+    public interface IEtudeCondition<br>
+    {<br>
+        bool Check(EtudeManager manager);<br>
+    }<br>
+<br>
+    /// <summary><br>
+    /// 动作接口：激活/取消激活时执行的操作<br>
+    /// </summary><br>
+    public interface IEtudeAction<br>
+    {<br>
+        void Execute(EtudeManager manager);<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 1.2 JSON 配置示例<br>
+<br>
+Etudes 适合通过数据驱动配置，策划可以在 JSON 中定义复杂的叙事状态树。<br>
+<br>
+```json<br>
+{<br>
+  "$schema": "etude-config-v1",<br>
+  "description": "第一章主线任务Etudes配置",<br>
+  "rootEtudes": [<br>
+    {<br>
+      "id": "chapter_01",<br>
+      "name": "第一章：觉醒",<br>
+      "description": "游戏开场章节",<br>
+      "priority": "Normal",<br>
+      "conditions": [<br>
+        { "type": "GameStarted", "value": true }<br>
+      ],<br>
+      "onActivate": [<br>
+        { "type": "SetFlag", "key": "chapter", "value": 1 },<br>
+        { "type": "UnlockMap", "mapId": "village" }<br>
+      ],<br>
+      "children": [<br>
+        {<br>
+          "id": "c01_intro",<br>
+          "name": "开场动画",<br>
+          "priority": "Critical",<br>
+          "conditions": [<br>
+            { "type": "EtudeActive", "etudeId": "chapter_01" }<br>
+          ],<br>
+          "onActivate": [<br>
+            { "type": "PlayCutscene", "cutsceneId": "intro_01" }<br>
+          ],<br>
+          "children": [<br>
+            {<br>
+              "id": "c01_talk_elder",<br>
+              "name": "与长老对话",<br>
+              "priority": "Important",<br>
+              "conditions": [<br>
+                { "type": "CutsceneFinished", "cutsceneId": "intro_01" }<br>
+              ],<br>
+              "onActivate": [<br>
+                { "type": "SpawnNPC", "npcId": "elder", "location": "village_center" },<br>
+                { "type": "AddDialogueOption", "npcId": "elder", "dialogueId": "c01_greeting" }<br>
+              ]<br>
+            },<br>
+            {<br>
+              "id": "c01_find_artifact",<br>
+              "name": "寻找古代遗物",<br>
+              "priority": "Important",<br>
+              "conditions": [<br>
+                { "type": "DialogueCompleted", "dialogueId": "c01_greeting" }<br>
+              ],<br>
+              "onActivate": [<br>
+                { "type": "AddQuest", "questId": "q01_artifact" },<br>
+                { "type": "SpawnItem", "itemId": "ancient_artifact", "location": "cave_depths" }<br>
+              ]<br>
+            }<br>
+          ]<br>
+        },<br>
+        {<br>
+          "id": "c01_secret_ending",<br>
+          "name": "隐藏结局触发",<br>
+          "priority": "Critical",<br>
+          "conditions": [<br>
+            { "type": "FlagEquals", "key": "karma", "value": -100 },<br>
+            { "type": "EtudeActive", "etudeId": "chapter_01" }<br>
+          ],<br>
+          "conflictsWith": ["c01_intro"],<br>
+          "onActivate": [<br>
+            { "type": "TriggerEnding", "endingId": "secret_dark" }<br>
+          ]<br>
+        }<br>
+      ]<br>
+    }<br>
+  ]<br>
+}<br>
+```<br>
+<br>
+### 1.3 优先级排序与冲突检测<br>
+<br>
+```csharp<br>
+using System;<br>
+using System.Collections.Generic;<br>
+using System.Linq;<br>
+<br>
+namespace NarrativeSystem.Etudes<br>
+{<br>
+    /// <summary><br>
+    /// Etudes管理器：核心控制器<br>
+    /// 每帧或每个叙事事件发生时重新评估所有Etude状态<br>
+    /// </summary><br>
+    public class EtudeManager<br>
+    {<br>
+        // 所有已注册的Etude节点<br>
+        private Dictionary<string, EtudeNode> _etudes = new Dictionary<string, EtudeNode>();<br>
+        <br>
+        // 全局变量存储<br>
+        private Dictionary<string, object> _globalFlags = new Dictionary<string, object>();<br>
+        <br>
+        // 冲突日志，用于调试<br>
+        public List<ConflictLog> ConflictLogs { get; private set; } = new List<ConflictLog>();<br>
+<br>
+        /// <summary><br>
+        /// 注册Etude节点到管理器<br>
+        /// </summary><br>
+        public void RegisterEtude(EtudeNode etude)<br>
+        {<br>
+            if (_etudes.ContainsKey(etude.Id))<br>
+            {<br>
+                throw new ArgumentException($"Etude {etude.Id} 已存在！");<br>
+            }<br>
+            _etudes[etude.Id] = etude;<br>
+        }<br>
+<br>
+        /// <summary><br>
+        /// 设置全局变量<br>
+        /// </summary><br>
+        public void SetFlag(string key, object value)<br>
+        {<br>
+            _globalFlags[key] = value;<br>
+            // 变量变更后重新评估所有Etude<br>
+            ReevaluateAll();<br>
+        }<br>
+<br>
+        /// <summary><br>
+        /// 获取全局变量<br>
+        /// </summary><br>
+        public T GetFlag<T>(string key)<br>
+        {<br>
+            if (_globalFlags.TryGetValue(key, out var value) && value is T typed)<br>
+            {<br>
+                return typed;<br>
+            }<br>
+            return default;<br>
+        }<br>
+<br>
+        /// <summary><br>
+        /// 核心评估方法<br>
+        /// 1. 按优先级排序所有待激活Etude<br>
+        /// 2. 检测冲突<br>
+        /// 3. 执行状态变更<br>
+        /// </summary><br>
+        public void ReevaluateAll()<br>
+        {<br>
+            // 收集所有可以激活的Etude（条件满足）<br>
+            var candidates = new List<EtudeNode>();<br>
+            foreach (var etude in _etudes.Values)<br>
+            {<br>
+                if (etude.Evaluate(this))<br>
+                {<br>
+                    candidates.Add(etude);<br>
+                }<br>
+                else if (etude.State == EtudeState.Active)<br>
+                {<br>
+                    // 如果已激活但条件不再满足，取消激活<br>
+                    etude.Deactivate(this);<br>
+                }<br>
+            }<br>
+<br>
+            // 按优先级降序排序：高优先级先处理<br>
+            candidates.Sort((a, b) => b.Priority.CompareTo(a.Priority));<br>
+<br>
+            // 已激活的Etude集合（用于冲突检测）<br>
+            var activatedIds = new HashSet<string>();<br>
+            ConflictLogs.Clear();<br>
+<br>
+            foreach (var candidate in candidates)<br>
+            {<br>
+                // 检查是否与已激活的Etude冲突<br>
+                bool hasConflict = false;<br>
+                foreach (var conflictId in candidate.ConflictsWith)<br>
+                {<br>
+                    if (activatedIds.Contains(conflictId))<br>
+                    {<br>
+                        hasConflict = true;<br>
+                        ConflictLogs.Add(new ConflictLog<br>
+                        {<br>
+                            EtudeA = candidate.Id,<br>
+                            EtudeB = conflictId,<br>
+                            Resolution = candidate.Priority >= _etudes[conflictId].Priority <br>
+                                ? "高优先级覆盖" <br>
+                                : "低优先级被跳过"<br>
+                        });<br>
+<br>
+                        // 如果当前优先级更高，覆盖冲突的Etude<br>
+                        if (candidate.Priority >= _etudes[conflictId].Priority)<br>
+                        {<br>
+                            _etudes[conflictId].Deactivate(this);<br>
+                            activatedIds.Remove(conflictId);<br>
+                        }<br>
+                        else<br>
+                        {<br>
+                            // 优先级低，跳过此候选<br>
+                            break;<br>
+                        }<br>
+                    }<br>
+                }<br>
+<br>
+                if (!hasConflict || candidate.Priority >= candidate.ConflictsWith<br>
+                    .Where(c => activatedIds.Contains(c))<br>
+                    .Select(c => _etudes[c].Priority)<br>
+                    .DefaultIfEmpty(EtudePriority.Background)<br>
+                    .Max())<br>
+                {<br>
+                    candidate.Activate(this);<br>
+                    activatedIds.Add(candidate.Id);<br>
+                }<br>
+            }<br>
+        }<br>
+    }<br>
+<br>
+    /// <summary><br>
+    /// 冲突记录，用于可视化调试<br>
+    /// </summary><br>
+    public class ConflictLog<br>
+    {<br>
+        public string EtudeA { get; set; }<br>
+        public string EtudeB { get; set; }<br>
+        public string Resolution { get; set; }<br>
+        public DateTime Timestamp { get; set; } = DateTime.Now;<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 1.4 可视化调试工具<br>
+<br>
+```python<br>
+# Etudes 状态树可视化（Python + 命令行）<br>
+# 可用于运行时调试，输出类似文件树的结构<br>
+# 绿色 = Active, 橙色 = Pending, 灰色 = Inactive<br>
+<br>
+from enum import Enum<br>
+from typing import List, Dict, Optional<br>
+from dataclasses import dataclass, field<br>
+<br>
+class EtudeState(Enum):<br>
+    INACTIVE = "inactive"<br>
+    PENDING = "pending"<br>
+    ACTIVE = "active"<br>
+<br>
+# ANSI 颜色代码<br>
+COLOR_MAP = {<br>
+    EtudeState.ACTIVE: "\033[32m",     # 绿色<br>
+    EtudeState.PENDING: "\033[33m",    # 橙色<br>
+    EtudeState.INACTIVE: "\033[90m",   # 灰色<br>
+}<br>
+RESET = "\033[0m"<br>
+<br>
+@dataclass<br>
+class EtudeNode:<br>
+    id: str<br>
+    name: str<br>
+    state: EtudeState<br>
+    priority: int = 100<br>
+    children: List['EtudeNode'] = field(default_factory=list)<br>
+    conflicts: List[str] = field(default_factory=list)<br>
+<br>
+class EtudeVisualizer:<br>
+    """Etudes 状态树可视化器"""<br>
+    <br>
+    def __init__(self, root_nodes: List[EtudeNode]):<br>
+        self.roots = root_nodes<br>
+        self.conflict_logs: List[Dict] = []<br>
+    <br>
+    def _colorize(self, text: str, state: EtudeState) -> str:<br>
+        """根据状态给文本上色"""<br>
+        return f"{COLOR_MAP[state]}{text}{RESET}"<br>
+    <br>
+    def _render_node(self, node: EtudeNode, prefix: str = "", is_last: bool = True) -> str:<br>
+        """递归渲染单个节点"""<br>
+        connector = "└── " if is_last else "├── "<br>
+        state_icon = {<br>
+            EtudeState.ACTIVE: "[+]",<br>
+            EtudeState.PENDING: "[~]",<br>
+            EtudeState.INACTIVE: "[ ]",<br>
+        }[node.state]<br>
+        <br>
+        line = f"{prefix}{connector}{state_icon} {node.name} ({node.id})"<br>
+        colored_line = self._colorize(line, node.state)<br>
+        <br>
+        # 如果有冲突，附加警告<br>
+        if node.conflicts and node.state == EtudeState.ACTIVE:<br>
+            conflict_info = f" [冲突: {', '.join(node.conflicts)}]"<br>
+            colored_line += self._colorize(conflict_info, EtudeState.PENDING)<br>
+        <br>
+        result = [colored_line]<br>
+        <br>
+        # 递归渲染子节点<br>
+        child_prefix = prefix + ("    " if is_last else "│   ")<br>
+        for i, child in enumerate(node.children):<br>
+            is_last_child = (i == len(node.children) - 1)<br>
+            result.append(self._render_node(child, child_prefix, is_last_child))<br>
+        <br>
+        return "\n".join(result)<br>
+    <br>
+    def render(self) -> str:<br>
+        """渲染完整的Etudes状态树"""<br>
+        lines = []<br>
+        lines.append("=" * 50)<br>
+        lines.append("Etudes 状态树可视化")<br>
+        lines.append(f"图例: {self._colorize('[+] 激活', EtudeState.ACTIVE)} | "<br>
+                     f"{self._colorize('[~] 等待', EtudeState.PENDING)} | "<br>
+                     f"{self._colorize('[ ] 未激活', EtudeState.INACTIVE)}")<br>
+        lines.append("=" * 50)<br>
+        <br>
+        for root in self.roots:<br>
+            lines.append(self._render_node(root))<br>
+            lines.append("")<br>
+        <br>
+        # 输出冲突日志<br>
+        if self.conflict_logs:<br>
+            lines.append("-" * 50)<br>
+            lines.append("冲突日志:")<br>
+            for log in self.conflict_logs:<br>
+                lines.append(f"  [{log['timestamp']}] {log['a']} vs {log['b']}: {log['resolution']}")<br>
+        <br>
+        return "\n".join(lines)<br>
+<br>
+<br>
+# ===== 使用示例 =====<br>
+if __name__ == "__main__":<br>
+    # 构建示例Etudes树<br>
+    child1 = EtudeNode("c01_talk", "与长老对话", EtudeState.ACTIVE, priority=200)<br>
+    child2 = EtudeNode("c01_fight", "战斗事件", EtudeState.INACTIVE, priority=150)<br>
+    <br>
+    root = EtudeNode("chapter_01", "第一章：觉醒", EtudeState.ACTIVE, priority=100,<br>
+                     children=[child1, child2],<br>
+                     conflicts=["chapter_02"])<br>
+    <br>
+    visualizer = EtudeVisualizer([root])<br>
+    visualizer.conflict_logs = [<br>
+        {"timestamp": "10:23:05", "a": "chapter_01", "b": "chapter_02", "resolution": "高优先级覆盖"}<br>
+    ]<br>
+    <br>
+    print(visualizer.render())<br>
+```<br>
+<br>
+**可视化输出示例：**<br>
+<br>
+```text<br>
+==================================================<br>
+Etudes 状态树可视化<br>
+图例: [+] 激活 | [~] 等待 | [ ] 未激活<br>
+==================================================<br>
+└── [+] 第一章：觉醒 (chapter_01) [冲突: chapter_02]<br>
+    ├── [+] 与长老对话 (c01_talk)<br>
+    └── [ ] 战斗事件 (c01_fight)<br>
+<br>
+--------------------------------------------------<br>
+冲突日志:<br>
+  [10:23:05] chapter_01 vs chapter_02: 高优先级覆盖<br>
+```<br>
+<br>
+---<br>
+<br>
+## 2. 对话系统代码结构<br>
+<br>
+### 2.1 对话树数据结构<br>
+<br>
+```csharp<br>
+// 对话树核心数据结构（C#）<br>
+using System;<br>
+using System.Collections.Generic;<br>
+using System.Linq;<br>
+<br>
+namespace NarrativeSystem.Dialogue<br>
+{<br>
+    /// <summary><br>
+    /// 对话节点基类<br>
+    /// 所有对话节点（文本、选择、条件、动作）的抽象基类<br>
+    /// </summary><br>
+    public abstract class DialogueNode<br>
+    {<br>
+        public string Id { get; set; }<br>
+        public string OwnerId { get; set; }  // 说话者ID<br>
+        public List<string> NextNodes { get; set; } = new List<string>();<br>
+        public List<DialogueCondition> Conditions { get; set; } = new List<DialogueCondition>();<br>
+        <br>
+        /// <summary><br>
+        /// 检查此节点是否可以显示<br>
+        /// </summary><br>
+        public virtual bool CanDisplay(IDialogueContext context)<br>
+        {<br>
+            return Conditions.All(c => c.Evaluate(context));<br>
+        }<br>
+        <br>
+        /// <summary><br>
+        /// 节点被访问时执行<br>
+        /// </summary><br>
+        public abstract void OnVisit(IDialogueContext context);<br>
+    }<br>
+<br>
+    /// <summary><br>
+    /// 文本节点：显示NPC对话文本<br>
+    /// </summary><br>
+    public class TextNode : DialogueNode<br>
+    {<br>
+        public string Text { get; set; }           // 对话文本（支持本地化Key）<br>
+        public string Emotion { get; set; }        // 情绪标签（影响立绘/动画）<br>
+        public float AutoAdvanceDelay { get; set; } // 自动推进延迟（-1表示手动）<br>
+        <br>
+        public override void OnVisit(IDialogueContext context)<br>
+        {<br>
+            context.DisplayText(OwnerId, Text, Emotion);<br>
+            <br>
+            if (AutoAdvanceDelay > 0)<br>
+            {<br>
+                context.ScheduleAdvance(AutoAdvanceDelay, NextNodes.FirstOrDefault());<br>
+            }<br>
+        }<br>
+    }<br>
+<br>
+    /// <summary><br>
+    /// 玩家选择节点：提供分支选项<br>
+    /// </summary><br>
+    public class ChoiceNode : DialogueNode<br>
+    {<br>
+        public List<DialogueChoice> Choices { get; set; } = new List<DialogueChoice>();<br>
+        <br>
+        public override void OnVisit(IDialogueContext context)<br>
+        {<br>
+            // 过滤掉不满足条件的选项<br>
+            var availableChoices = Choices.Where(c => c.CanDisplay(context)).ToList();<br>
+            context.DisplayChoices(availableChoices);<br>
+        }<br>
+    }<br>
+<br>
+    /// <summary><br>
+    /// 单个选项定义<br>
+    /// </summary><br>
+    public class DialogueChoice<br>
+    {<br>
+        public string Id { get; set; }<br>
+        public string Text { get; set; }<br>
+        public string Tooltip { get; set; }           // 鼠标悬停提示<br>
+        public List<DialogueCondition> Conditions { get; set; } = new List<DialogueCondition>();<br>
+        public List<DialogueAction> Actions { get; set; } = new List<DialogueAction>();<br>
+        public string NextNodeId { get; set; }<br>
+        <br>
+        public bool CanDisplay(IDialogueContext context)<br>
+        {<br>
+            return Conditions.All(c => c.Evaluate(context));<br>
+        }<br>
+    }<br>
+<br>
+    /// <summary><br>
+    /// 动作节点：执行无副作用的叙事动作<br>
+    /// </summary><br>
+    public class ActionNode : DialogueNode<br>
+    {<br>
+        public List<DialogueAction> Actions { get; set; } = new List<DialogueAction>();<br>
+        <br>
+        public override void OnVisit(IDialogueContext context)<br>
+        {<br>
+            foreach (var action in Actions)<br>
+            {<br>
+                action.Execute(context);<br>
+            }<br>
+            // 自动跳转到下一个节点<br>
+            context.AdvanceTo(NextNodes.FirstOrDefault());<br>
+        }<br>
+    }<br>
+<br>
+    /// <summary><br>
+    /// 条件节点：根据条件走向不同分支<br>
+    /// </summary><br>
+    public class BranchNode : DialogueNode<br>
+    {<br>
+        public List<ConditionalBranch> Branches { get; set; } = new List<ConditionalBranch>();<br>
+        public string DefaultNodeId { get; set; }  // 默认分支（无条件满足时）<br>
+        <br>
+        public override void OnVisit(IDialogueContext context)<br>
+        {<br>
+            foreach (var branch in Branches)<br>
+            {<br>
+                if (branch.Condition.Evaluate(context))<br>
+                {<br>
+                    context.AdvanceTo(branch.TargetNodeId);<br>
+                    return;<br>
+                }<br>
+            }<br>
+            context.AdvanceTo(DefaultNodeId);<br>
+        }<br>
+    }<br>
+<br>
+    public class ConditionalBranch<br>
+    {<br>
+        public DialogueCondition Condition { get; set; }<br>
+        public string TargetNodeId { get; set; }<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 2.2 条件判断系统<br>
+<br>
+```csharp<br>
+namespace NarrativeSystem.Dialogue<br>
+{<br>
+    /// <summary><br>
+    /// 条件接口：所有对话条件的基类<br>
+    /// </summary><br>
+    public abstract class DialogueCondition<br>
+    {<br>
+        public abstract bool Evaluate(IDialogueContext context);<br>
+    }<br>
+<br>
+    /// <summary><br>
+    /// 变量比较条件<br>
+    /// </summary><br>
+    public class VariableCondition : DialogueCondition<br>
+    {<br>
+        public string VariableName { get; set; }<br>
+        public ComparisonOperator Operator { get; set; }<br>
+        public object ExpectedValue { get; set; }<br>
+        <br>
+        public override bool Evaluate(IDialogueContext context)<br>
+        {<br>
+            var actualValue = context.GetVariable(VariableName);<br>
+            return CompareValues(actualValue, ExpectedValue, Operator);<br>
+        }<br>
+        <br>
+        private bool CompareValues(object actual, object expected, ComparisonOperator op)<br>
+        {<br>
+            if (actual == null || expected == null) return false;<br>
+            <br>
+            var comparable = Comparer<object>.Default;<br>
+            int result = comparable.Compare(actual, expected);<br>
+            <br>
+            return op switch<br>
+            {<br>
+                ComparisonOperator.Equals => result == 0,<br>
+                ComparisonOperator.NotEquals => result != 0,<br>
+                ComparisonOperator.GreaterThan => result > 0,<br>
+                ComparisonOperator.LessThan => result < 0,<br>
+                ComparisonOperator.GreaterOrEqual => result >= 0,<br>
+                ComparisonOperator.LessOrEqual => result <= 0,<br>
+                _ => false<br>
+            };<br>
+        }<br>
+    }<br>
+<br>
+    /// <summary><br>
+    /// 玩家背包物品检查<br>
+    /// </summary><br>
+    public class HasItemCondition : DialogueCondition<br>
+    {<br>
+        public string ItemId { get; set; }<br>
+        public int Count { get; set; } = 1;<br>
+        <br>
+        public override bool Evaluate(IDialogueContext context)<br>
+        {<br>
+            return context.GetItemCount(ItemId) >= Count;<br>
+        }<br>
+    }<br>
+<br>
+    /// <summary><br>
+    /// 关系值条件<br>
+    /// </summary><br>
+    public class RelationshipCondition : DialogueCondition<br>
+    {<br>
+        public string NpcId { get; set; }<br>
+        public ComparisonOperator Operator { get; set; }<br>
+        public int Value { get; set; }<br>
+        <br>
+        public override bool Evaluate(IDialogueContext context)<br>
+        {<br>
+            var relationship = context.GetRelationship(NpcId);<br>
+            return VariableCondition.CompareValues(relationship, Value, Operator);<br>
+        }<br>
+    }<br>
+<br>
+    /// <summary><br>
+    /// 复合条件：AND / OR / NOT<br>
+    /// </summary><br>
+    public class CompositeCondition : DialogueCondition<br>
+    {<br>
+        public LogicOperator LogicOp { get; set; }<br>
+        public List<DialogueCondition> SubConditions { get; set; } = new List<DialogueCondition>();<br>
+        <br>
+        public override bool Evaluate(IDialogueContext context)<br>
+        {<br>
+            return LogicOp switch<br>
+            {<br>
+                LogicOperator.And => SubConditions.All(c => c.Evaluate(context)),<br>
+                LogicOperator.Or => SubConditions.Any(c => c.Evaluate(context)),<br>
+                LogicOperator.Not => !SubConditions.FirstOrDefault()?.Evaluate(context) ?? true,<br>
+                _ => false<br>
+            };<br>
+        }<br>
+    }<br>
+<br>
+    public enum ComparisonOperator { Equals, NotEquals, GreaterThan, LessThan, GreaterOrEqual, LessOrEqual }<br>
+    public enum LogicOperator { And, Or, Not }<br>
+}<br>
+```<br>
+<br>
+### 2.3 变量绑定与上下文<br>
+<br>
+```csharp<br>
+namespace NarrativeSystem.Dialogue<br>
+{<br>
+    /// <summary><br>
+    /// 对话上下文接口：提供对话系统与游戏世界的桥梁<br>
+    /// </summary><br>
+    public interface IDialogueContext<br>
+    {<br>
+        // 变量访问<br>
+        object GetVariable(string name);<br>
+        void SetVariable(string name, object value);<br>
+        <br>
+        // 玩家数据<br>
+        int GetItemCount(string itemId);<br>
+        int GetRelationship(string npcId);<br>
+        <br>
+        // UI 交互<br>
+        void DisplayText(string speakerId, string text, string emotion);<br>
+        void DisplayChoices(List<DialogueChoice> choices);<br>
+        void AdvanceTo(string nodeId);<br>
+        void ScheduleAdvance(float delay, string nodeId);<br>
+    }<br>
+<br>
+    /// <summary><br>
+    /// 默认实现：对话上下文<br>
+    /// </summary><br>
+    public class DefaultDialogueContext : IDialogueContext<br>
+    {<br>
+        private readonly Dictionary<string, object> _variables;<br>
+        private readonly IGameState _gameState;<br>
+        private readonly IDialogueUI _ui;<br>
+        <br>
+        public DefaultDialogueContext(IGameState gameState, IDialogueUI ui)<br>
+        {<br>
+            _gameState = gameState;<br>
+            _ui = ui;<br>
+            _variables = new Dictionary<string, object>();<br>
+        }<br>
+        <br>
+        public object GetVariable(string name)<br>
+        {<br>
+            // 优先从本地对话变量查找，再到全局游戏状态<br>
+            if (_variables.TryGetValue(name, out var localValue))<br>
+                return localValue;<br>
+            return _gameState.GetGlobalVariable(name);<br>
+        }<br>
+        <br>
+        public void SetVariable(string name, object value)<br>
+        {<br>
+            _variables[name] = value;<br>
+            // 同步到全局状态（如果需要持久化）<br>
+            _gameState.SetGlobalVariable(name, value);<br>
+        }<br>
+        <br>
+        public int GetItemCount(string itemId) => _gameState.Inventory.GetCount(itemId);<br>
+        public int GetRelationship(string npcId) => _gameState.Relationships.Get(npcId);<br>
+        <br>
+        public void DisplayText(string speakerId, string text, string emotion)<br>
+        {<br>
+            _ui.ShowText(speakerId, Localize(text), emotion);<br>
+        }<br>
+        <br>
+        public void DisplayChoices(List<DialogueChoice> choices)<br>
+        {<br>
+            _ui.ShowChoices(choices.Select(c => new UIChoice <br>
+            { <br>
+                Text = Localize(c.Text), <br>
+                Tooltip = Localize(c.Tooltip),<br>
+                OnSelect = () => SelectChoice(c)<br>
+            }).ToList());<br>
+        }<br>
+        <br>
+        private void SelectChoice(DialogueChoice choice)<br>
+        {<br>
+            // 执行选项附带的所有动作<br>
+            foreach (var action in choice.Actions)<br>
+            {<br>
+                action.Execute(this);<br>
+            }<br>
+            AdvanceTo(choice.NextNodeId);<br>
+        }<br>
+        <br>
+        public void AdvanceTo(string nodeId)<br>
+        {<br>
+            if (!string.IsNullOrEmpty(nodeId))<br>
+            {<br>
+                _ui.Clear();<br>
+                _gameState.Dialogue.AdvanceToNode(nodeId);<br>
+            }<br>
+            else<br>
+            {<br>
+                _gameState.Dialogue.EndDialogue();<br>
+            }<br>
+        }<br>
+        <br>
+        public void ScheduleAdvance(float delay, string nodeId)<br>
+        {<br>
+            _ui.ScheduleAfterDelay(delay, () => AdvanceTo(nodeId));<br>
+        }<br>
+        <br>
+        private string Localize(string key) => _gameState.Localization.Get(key);<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 2.4 对话数据 JSON 配置<br>
+<br>
+```json<br>
+{<br>
+  "dialogueId": "dlg_elder_greeting",<br>
+  "participants": ["player", "elder"],<br>
+  "entryNode": "node_01",<br>
+  "nodes": {<br>
+    "node_01": {<br>
+      "type": "TextNode",<br>
+      "ownerId": "elder",<br>
+      "text": "TEXT_ELDER_GREETING",<br>
+      "emotion": "neutral",<br>
+      "nextNodes": ["node_02"]<br>
+    },<br>
+    "node_02": {<br>
+      "type": "ChoiceNode",<br>
+      "choices": [<br>
+        {<br>
+          "id": "choice_friendly",<br>
+          "text": "TEXT_CHOICE_FRIENDLY",<br>
+          "nextNodeId": "node_friendly",<br>
+          "actions": [<br>
+            { "type": "ModifyRelationship", "npcId": "elder", "delta": 10 }<br>
+          ]<br>
+        },<br>
+        {<br>
+          "id": "choice_rude",<br>
+          "text": "TEXT_CHOICE_RUDE",<br>
+          "nextNodeId": "node_rude",<br>
+          "actions": [<br>
+            { "type": "ModifyRelationship", "npcId": "elder", "delta": -20 }<br>
+          ]<br>
+        },<br>
+        {<br>
+          "id": "choice_quest",<br>
+          "text": "TEXT_CHOICE_QUEST",<br>
+          "conditions": [<br>
+            { "type": "HasItem", "itemId": "ancient_artifact", "count": 1 }<br>
+          ],<br>
+          "nextNodeId": "node_quest_complete",<br>
+          "actions": [<br>
+            { "type": "RemoveItem", "itemId": "ancient_artifact", "count": 1 },<br>
+            { "type": "CompleteQuest", "questId": "q01_artifact" }<br>
+          ]<br>
+        }<br>
+      ]<br>
+    },<br>
+    "node_friendly": {<br>
+      "type": "TextNode",<br>
+      "ownerId": "elder",<br>
+      "text": "TEXT_ELDER_FRIENDLY",<br>
+      "emotion": "happy",<br>
+      "nextNodes": ["node_end"]<br>
+    },<br>
+    "node_rude": {<br>
+      "type": "TextNode",<br>
+      "ownerId": "elder",<br>
+      "text": "TEXT_ELDER_ANGRY",<br>
+      "emotion": "angry",<br>
+      "nextNodes": ["node_end"]<br>
+    },<br>
+    "node_quest_complete": {<br>
+      "type": "TextNode",<br>
+      "ownerId": "elder",<br>
+      "text": "TEXT_ELDER_QUEST_DONE",<br>
+      "emotion": "surprised",<br>
+      "nextNodes": ["node_reward"]<br>
+    },<br>
+    "node_reward": {<br>
+      "type": "ActionNode",<br>
+      "actions": [<br>
+        { "type": "GiveItem", "itemId": "gold", "count": 100 },<br>
+        { "type": "SetFlag", "key": "elder_quest_done", "value": true }<br>
+      ],<br>
+      "nextNodes": ["node_end"]<br>
+    },<br>
+    "node_end": {<br>
+      "type": "ActionNode",<br>
+      "actions": [<br>
+        { "type": "EndDialogue" }<br>
+      ],<br>
+      "nextNodes": []<br>
+    }<br>
+  }<br>
+}<br>
+```<br>
+<br>
+---<br>
+<br>
+## 3. 变量管理方案<br>
+<br>
+### 3.1 全局 Flag 方法（基础版）<br>
+<br>
+```python<br>
+# 全局 Flag 管理器（Python）<br>
+# 适用于小型项目，简单直接<br>
+<br>
+from typing import Any, Dict, Optional, Callable, List<br>
+from dataclasses import dataclass, field<br>
+from datetime import datetime<br>
+import json<br>
+import os<br>
+<br>
+@dataclass<br>
+class FlagChangeEvent:<br>
+    """Flag 变更事件记录"""<br>
+    flag_name: str<br>
+    old_value: Any<br>
+    new_value: Any<br>
+    timestamp: datetime<br>
+    source: str  # 触发来源（对话、任务、脚本等）<br>
+<br>
+class GlobalFlagManager:<br>
+    """<br>
+    全局 Flag 管理器<br>
+    适用场景：小型项目、原型开发<br>
+    局限性：变量过多时难以维护，无命名空间隔离<br>
+    """<br>
+    <br>
+    def __init__(self):<br>
+        self._flags: Dict[str, Any] = {}<br>
+        self._listeners: Dict[str, List[Callable]] = {}<br>
+        self._history: List[FlagChangeEvent] = []<br>
+        self._dirty = False  # 是否有未保存的变更<br>
+    <br>
+    def set(self, name: str, value: Any, source: str = "system") -> None:<br>
+        """设置Flag值"""<br>
+        old_value = self._flags.get(name)<br>
+        if old_value != value:<br>
+            self._flags[name] = value<br>
+            self._dirty = True<br>
+            <br>
+            # 记录变更历史<br>
+            event = FlagChangeEvent(name, old_value, value, datetime.now(), source)<br>
+            self._history.append(event)<br>
+            <br>
+            # 通知监听器<br>
+            self._notify(name, old_value, value)<br>
+    <br>
+    def get(self, name: str, default: Any = None) -> Any:<br>
+        """获取Flag值"""<br>
+        return self._flags.get(name, default)<br>
+    <br>
+    def toggle(self, name: str) -> bool:<br>
+        """切换布尔Flag"""<br>
+        current = bool(self.get(name, False))<br>
+        self.set(name, not current, source="toggle")<br>
+        return not current<br>
+    <br>
+    def increment(self, name: str, delta: int = 1) -> int:<br>
+        """数值Flag自增"""<br>
+        current = int(self.get(name, 0))<br>
+        new_value = current + delta<br>
+        self.set(name, new_value, source="increment")<br>
+        return new_value<br>
+    <br>
+    def add_listener(self, name: str, callback: Callable) -> None:<br>
+        """添加Flag变更监听器"""<br>
+        if name not in self._listeners:<br>
+            self._listeners[name] = []<br>
+        self._listeners[name].append(callback)<br>
+    <br>
+    def _notify(self, name: str, old_val: Any, new_val: Any) -> None:<br>
+        """触发监听器回调"""<br>
+        for listener in self._listeners.get(name, []):<br>
+            try:<br>
+                listener(name, old_val, new_val)<br>
+            except Exception as e:<br>
+                print(f"[FlagManager] 监听器异常: {e}")<br>
+    <br>
+    def save(self, filepath: str) -> None:<br>
+        """持久化到JSON文件"""<br>
+        data = {<br>
+            "flags": self._flags,<br>
+            "history": [<br>
+                {<br>
+                    "flag": e.flag_name,<br>
+                    "from": e.old_value,<br>
+                    "to": e.new_value,<br>
+                    "time": e.timestamp.isoformat(),<br>
+                    "source": e.source<br>
+                }<br>
+                for e in self._history<br>
+            ]<br>
+        }<br>
+        with open(filepath, 'w', encoding='utf-8') as f:<br>
+            json.dump(data, f, ensure_ascii=False, indent=2)<br>
+        self._dirty = False<br>
+    <br>
+    def load(self, filepath: str) -> None:<br>
+        """从JSON文件加载"""<br>
+        if not os.path.exists(filepath):<br>
+            return<br>
+        with open(filepath, 'r', encoding='utf-8') as f:<br>
+            data = json.load(f)<br>
+        self._flags = data.get("flags", {})<br>
+        self._dirty = False<br>
+<br>
+<br>
+# ===== 使用示例 =====<br>
+if __name__ == "__main__":<br>
+    flags = GlobalFlagManager()<br>
+    <br>
+    # 基础操作<br>
+    flags.set("player_level", 5, source="level_up")<br>
+    flags.set("has_met_elder", True, source="dialogue")<br>
+    <br>
+    # 数值操作<br>
+    flags.increment("karma", -10)<br>
+    print(f"当前业力值: {flags.get('karma')}")<br>
+    <br>
+    # 监听变更<br>
+    def on_karma_change(name, old, new):<br>
+        print(f"[事件] {name} 从 {old} 变为 {new}")<br>
+    <br>
+    flags.add_listener("karma", on_karma_change)<br>
+    flags.increment("karma", 5)  # 触发回调<br>
+    <br>
+    # 保存进度<br>
+    flags.save("save_data.json")<br>
+```<br>
+<br>
+### 3.2 层级化状态机（进阶版）<br>
+<br>
+```python<br>
+# 层级化命名空间状态机（Python）<br>
+# 适用于中型到大型项目，解决全局Flag混乱问题<br>
+<br>
+from typing import Any, Dict, List, Optional, Set<br>
+from dataclasses import dataclass, field<br>
+from enum import Enum<br>
+import copy<br>
+<br>
+class VariableType(Enum):<br>
+    """变量类型枚举，用于类型安全检查"""<br>
+    BOOL = "bool"<br>
+    INT = "int"<br>
+    FLOAT = "float"<br>
+    STRING = "string"<br>
+    VECTOR = "vector"  # 向量/列表<br>
+<br>
+@dataclass<br>
+class VariableDefinition:<br>
+    """变量定义元数据"""<br>
+    name: str<br>
+    var_type: VariableType<br>
+    default_value: Any<br>
+    description: str = ""<br>
+    persistent: bool = True  # 是否持久化保存<br>
+    sync_to_ui: bool = False  # 是否同步到UI<br>
+<br>
+class Namespace:<br>
+    """<br>
+    命名空间：隔离不同系统的变量<br>
+    例如：quest.*, player.*, world.*, dialogue.*<br>
+    """<br>
+    <br>
+    def __init__(self, name: str, parent: Optional['Namespace'] = None):<br>
+        self.name = name<br>
+        self.parent = parent<br>
+        self._variables: Dict[str, Any] = {}<br>
+        self._definitions: Dict[str, VariableDefinition] = {}<br>
+        self._children: Dict[str, 'Namespace'] = {}<br>
+    <br>
+    def define(self, definition: VariableDefinition) -> None:<br>
+        """注册变量定义（应在初始化时调用）"""<br>
+        self._definitions[definition.name] = definition<br>
+        self._variables[definition.name] = copy.deepcopy(definition.default_value)<br>
+    <br>
+    def set(self, name: str, value: Any) -> bool:<br>
+        """<br>
+        设置变量值，包含类型检查<br>
+        返回是否设置成功<br>
+        """<br>
+        if name not in self._definitions:<br>
+            raise KeyError(f"变量 {self.name}.{name} 未定义，请先调用 define()")<br>
+        <br>
+        definition = self._definitions[name]<br>
+        if not self._type_check(value, definition.var_type):<br>
+            raise TypeError(<br>
+                f"变量 {self.name}.{name} 类型错误，"<br>
+                f"期望 {definition.var_type.value}，实际 {type(value)}"<br>
+            )<br>
+        <br>
+        self._variables[name] = value<br>
+        return True<br>
+    <br>
+    def get(self, name: str) -> Any:<br>
+        """获取变量值，如不存在则向上查找父命名空间"""<br>
+        if name in self._variables:<br>
+            return self._variables[name]<br>
+        if self.parent:<br>
+            return self.parent.get(name)<br>
+        raise KeyError(f"变量 {name} 在命名空间 {self.name} 及其父空间中不存在")<br>
+    <br>
+    def get_child(self, name: str) -> 'Namespace':<br>
+        """获取或创建子命名空间"""<br>
+        if name not in self._children:<br>
+            self._children[name] = Namespace(f"{self.name}.{name}", parent=self)<br>
+        return self._children[name]<br>
+    <br>
+    def get_full_path(self, name: str) -> str:<br>
+        """获取变量完整路径"""<br>
+        return f"{self.name}.{name}"<br>
+    <br>
+    def list_all(self) -> Dict[str, Any]:<br>
+        """列出当前命名空间所有变量"""<br>
+        return dict(self._variables)<br>
+    <br>
+    @staticmethod<br>
+    def _type_check(value: Any, expected: VariableType) -> bool:<br>
+        """类型检查"""<br>
+        type_map = {<br>
+            VariableType.BOOL: bool,<br>
+            VariableType.INT: int,<br>
+            VariableType.FLOAT: (int, float),<br>
+            VariableType.STRING: str,<br>
+            VariableType.VECTOR: list,<br>
+        }<br>
+        return isinstance(value, type_map.get(expected, object))<br>
+<br>
+<br>
+class HierarchicalStateManager:<br>
+    """<br>
+    层级化状态管理器<br>
+    组织形式：root -> player / world / quests / dialogue / etudes<br>
+    """<br>
+    <br>
+    def __init__(self):<br>
+        self._root = Namespace("root")<br>
+        self._namespaces: Dict[str, Namespace] = {}<br>
+        self._setup_default_namespaces()<br>
+    <br>
+    def _setup_default_namespaces(self):<br>
+        """初始化默认命名空间结构"""<br>
+        # player 命名空间：玩家相关状态<br>
+        player = self.create_namespace("player")<br>
+        player.define(VariableDefinition("level", VariableType.INT, 1, "玩家等级"))<br>
+        player.define(VariableDefinition("exp", VariableType.INT, 0, "经验值"))<br>
+        player.define(VariableDefinition("name", VariableType.STRING, "", "玩家名称"))<br>
+        <br>
+        # world 命名空间：世界状态<br>
+        world = self.create_namespace("world")<br>
+        world.define(VariableDefinition("day", VariableType.INT, 1, "游戏天数"))<br>
+        world.define(VariableDefinition("time", VariableType.FLOAT, 8.0, "当前时间"))<br>
+        world.define(VariableDefinition("weather", VariableType.STRING, "sunny", "天气"))<br>
+        <br>
+        # quests 命名空间：任务状态（支持子命名空间）<br>
+        quests = self.create_namespace("quests")<br>
+        <br>
+        # dialogue 命名空间：对话记录<br>
+        dialogue = self.create_namespace("dialogue")<br>
+        dialogue.define(VariableDefinition("last_speaker", VariableType.STRING, "", "最后对话NPC"))<br>
+        dialogue.define(VariableDefinition("choices_made", VariableType.VECTOR, [], "已做选择记录"))<br>
+    <br>
+    def create_namespace(self, path: str) -> Namespace:<br>
+        """创建命名空间，支持点号路径如 'quests.main'"""<br>
+        parts = path.split(".")<br>
+        current = self._root<br>
+        <br>
+        for part in parts:<br>
+            if part not in current._children:<br>
+                current._children[part] = Namespace(part, parent=current)<br>
+            current = current._children[part]<br>
+        <br>
+        self._namespaces[path] = current<br>
+        return current<br>
+    <br>
+    def get(self, full_path: str) -> Any:<br>
+        """<br>
+        通过完整路径获取变量值<br>
+        格式：namespace.variable 或 namespace.child.variable<br>
+        """<br>
+        parts = full_path.split(".")<br>
+        if len(parts) < 2:<br>
+            raise ValueError("路径格式错误，应为 'namespace.variable'")<br>
+        <br>
+        # 逐级查找命名空间<br>
+        current = self._root<br>
+        for part in parts[:-1]:<br>
+            if part not in current._children:<br>
+                raise KeyError(f"命名空间 {part} 不存在")<br>
+            current = current._children[part]<br>
+        <br>
+        return current.get(parts[-1])<br>
+    <br>
+    def set(self, full_path: str, value: Any) -> None:<br>
+        """通过完整路径设置变量值"""<br>
+        parts = full_path.split(".")<br>
+        if len(parts) < 2:<br>
+            raise ValueError("路径格式错误")<br>
+        <br>
+        current = self._root<br>
+        for part in parts[:-1]:<br>
+            if part not in current._children:<br>
+                raise KeyError(f"命名空间 {part} 不存在")<br>
+            current = current._children[part]<br>
+        <br>
+        current.set(parts[-1], value)<br>
+    <br>
+    def query(self, pattern: str) -> Dict[str, Any]:<br>
+        """<br>
+        按模式查询变量<br>
+        例如：query("quests.*.status") 返回所有任务状态<br>
+        """<br>
+        results = {}<br>
+        # 简化的通配符匹配实现<br>
+        for ns_path, namespace in self._namespaces.items():<br>
+            for var_name, value in namespace.list_all().items():<br>
+                full = f"{ns_path}.{var_name}" if ns_path else var_name<br>
+                if self._match_pattern(full, pattern):<br>
+                    results[full] = value<br>
+        return results<br>
+    <br>
+    def _match_pattern(self, text: str, pattern: str) -> bool:<br>
+        """简单的通配符匹配"""<br>
+        import fnmatch<br>
+        return fnmatch.fnmatch(text, pattern)<br>
+    <br>
+    def export_namespace(self, path: str) -> Dict[str, Any]:<br>
+        """导出指定命名空间下所有变量（用于保存）"""<br>
+        if path not in self._namespaces:<br>
+            return {}<br>
+        return self._namespaces[path].list_all()<br>
+<br>
+<br>
+# ===== 使用示例 =====<br>
+if __name__ == "__main__":<br>
+    manager = HierarchicalStateManager()<br>
+    <br>
+    # 设置玩家数据<br>
+    manager.set("player.level", 5)<br>
+    manager.set("player.name", "亚瑟")<br>
+    <br>
+    # 设置世界状态<br>
+    manager.set("world.day", 3)<br>
+    manager.set("world.weather", "rainy")<br>
+    <br>
+    # 动态创建任务子命名空间<br>
+    q1 = manager.create_namespace("quests.q01_artifact")<br>
+    q1.define(VariableDefinition("status", VariableType.STRING, "active", "任务状态"))<br>
+    q1.define(VariableDefinition("progress", VariableType.INT, 0, "任务进度"))<br>
+    <br>
+    manager.set("quests.q01_artifact.status", "completed")<br>
+    manager.set("quests.q01_artifact.progress", 100)<br>
+    <br>
+    print(f"玩家等级: {manager.get('player.level')}")<br>
+    print(f"任务状态: {manager.get('quests.q01_artifact.status')}")<br>
+```<br>
+<br>
+### 3.3 持久化存储方案<br>
+<br>
+```csharp<br>
+// 持久化存储：存档系统（C#）<br>
+using System;<br>
+using System.Collections.Generic;<br>
+using System.IO;<br>
+using System.Text.Json;<br>
+using System.Text.Json.Serialization;<br>
+<br>
+namespace NarrativeSystem.Persistence<br>
+{<br>
+    /// <summary><br>
+    /// 存档数据容器<br>
+    /// </summary><br>
+    public class SaveGameData<br>
+    {<br>
+        [JsonPropertyName("version")]<br>
+        public int Version { get; set; } = 1;<br>
+        <br>
+        [JsonPropertyName("timestamp")]<br>
+        public DateTime Timestamp { get; set; }<br>
+        <br>
+        [JsonPropertyName("playTime")]<br>
+        public float PlayTimeSeconds { get; set; }<br>
+        <br>
+        [JsonPropertyName("variables")]<br>
+        public Dictionary<string, JsonElement> Variables { get; set; } = new();<br>
+        <br>
+        [JsonPropertyName("etudes")]<br>
+        public List<EtudeSaveData> Etudes { get; set; } = new();<br>
+        <br>
+        [JsonPropertyName("quests")]<br>
+        public List<QuestSaveData> Quests { get; set; } = new();<br>
+        <br>
+        [JsonPropertyName("dialogueHistory")]<br>
+        public List<DialogueHistoryEntry> DialogueHistory { get; set; } = new();<br>
+        <br>
+        [JsonPropertyName("playerPosition")]<br>
+        public Vector3SaveData PlayerPosition { get; set; }<br>
+        <br>
+        [JsonPropertyName("currentScene")]<br>
+        public string CurrentScene { get; set; }<br>
+    }<br>
+<br>
+    public class EtudeSaveData<br>
+    {<br>
+        [JsonPropertyName("id")]<br>
+        public string Id { get; set; }<br>
+        <br>
+        [JsonPropertyName("state")]<br>
+        public string State { get; set; }<br>
+        <br>
+        [JsonPropertyName("activationTime")]<br>
+        public DateTime? ActivationTime { get; set; }<br>
+    }<br>
+<br>
+    public class QuestSaveData<br>
+    {<br>
+        [JsonPropertyName("id")]<br>
+        public string Id { get; set; }<br>
+        <br>
+        [JsonPropertyName("status")]<br>
+        public string Status { get; set; }<br>
+        <br>
+        [JsonPropertyName("objectives")]<br>
+        public List<ObjectiveSaveData> Objectives { get; set; } = new();<br>
+    }<br>
+<br>
+    public class ObjectiveSaveData<br>
+    {<br>
+        [JsonPropertyName("id")]<br>
+        public string Id { get; set; }<br>
+        <br>
+        [JsonPropertyName("completed")]<br>
+        public bool Completed { get; set; }<br>
+        <br>
+        [JsonPropertyName("progress")]<br>
+        public int Progress { get; set; }<br>
+    }<br>
+<br>
+    public class DialogueHistoryEntry<br>
+    {<br>
+        [JsonPropertyName("dialogueId")]<br>
+        public string DialogueId { get; set; }<br>
+        <br>
+        [JsonPropertyName("nodeId")]<br>
+        public string NodeId { get; set; }<br>
+        <br>
+        [JsonPropertyName("choiceId")]<br>
+        public string ChoiceId { get; set; }<br>
+        <br>
+        [JsonPropertyName("timestamp")]<br>
+        public DateTime Timestamp { get; set; }<br>
+    }<br>
+<br>
+    public class Vector3SaveData<br>
+    {<br>
+        [JsonPropertyName("x")]<br>
+        public float X { get; set; }<br>
+        <br>
+        [JsonPropertyName("y")]<br>
+        public float Y { get; set; }<br>
+        <br>
+        [JsonPropertyName("z")]<br>
+        public float Z { get; set; }<br>
+    }<br>
+<br>
+    /// <summary><br>
+    /// 存档管理器<br>
+    /// </summary><br>
+    public class SaveManager<br>
+    {<br>
+        private readonly string _saveDirectory;<br>
+        private readonly JsonSerializerOptions _jsonOptions;<br>
+        <br>
+        public SaveManager(string saveDirectory)<br>
+        {<br>
+            _saveDirectory = saveDirectory;<br>
+            _jsonOptions = new JsonSerializerOptions<br>
+            {<br>
+                WriteIndented = true,<br>
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase<br>
+            };<br>
+            <br>
+            if (!Directory.Exists(_saveDirectory))<br>
+            {<br>
+                Directory.CreateDirectory(_saveDirectory);<br>
+            }<br>
+        }<br>
+        <br>
+        /// <summary><br>
+        /// 保存游戏<br>
+        /// </summary><br>
+        public void SaveGame(int slot, SaveGameData data)<br>
+        {<br>
+            data.Timestamp = DateTime.UtcNow;<br>
+            var filepath = GetSaveFilePath(slot);<br>
+            var json = JsonSerializer.Serialize(data, _jsonOptions);<br>
+            File.WriteAllText(filepath, json);<br>
+        }<br>
+        <br>
+        /// <summary><br>
+        /// 加载游戏<br>
+        /// </summary><br>
+        public SaveGameData LoadGame(int slot)<br>
+        {<br>
+            var filepath = GetSaveFilePath(slot);<br>
+            if (!File.Exists(filepath))<br>
+            {<br>
+                throw new FileNotFoundException($"存档槽 {slot} 不存在");<br>
+            }<br>
+            <br>
+            var json = File.ReadAllText(filepath);<br>
+            return JsonSerializer.Deserialize<SaveGameData>(json, _jsonOptions);<br>
+        }<br>
+        <br>
+        /// <summary><br>
+        /// 列出所有存档<br>
+        /// </summary><br>
+        public List<SaveInfo> ListSaves()<br>
+        {<br>
+            var saves = new List<SaveInfo>();<br>
+            foreach (var file in Directory.GetFiles(_saveDirectory, "save_*.json"))<br>
+            {<br>
+                var slotStr = Path.GetFileNameWithoutExtension(file).Replace("save_", "");<br>
+                if (int.TryParse(slotStr, out int slot))<br>
+                {<br>
+                    try<br>
+                    {<br>
+                        var data = LoadGame(slot);<br>
+                        saves.Add(new SaveInfo<br>
+                        {<br>
+                            Slot = slot,<br>
+                            Timestamp = data.Timestamp,<br>
+                            PlayTime = TimeSpan.FromSeconds(data.PlayTimeSeconds),<br>
+                            CurrentScene = data.CurrentScene<br>
+                        });<br>
+                    }<br>
+                    catch { /* 忽略损坏的存档 */ }<br>
+                }<br>
+            }<br>
+            return saves;<br>
+        }<br>
+        <br>
+        private string GetSaveFilePath(int slot) =><br>
+            Path.Combine(_saveDirectory, $"save_{slot}.json");<br>
+    }<br>
+<br>
+    public class SaveInfo<br>
+    {<br>
+        public int Slot { get; set; }<br>
+        public DateTime Timestamp { get; set; }<br>
+        public TimeSpan PlayTime { get; set; }<br>
+        public string CurrentScene { get; set; }<br>
+    }<br>
+}<br>
+```<br>
+<br>
+---<br>
+<br>
+## 4. 分支剧情代码示例<br>
+<br>
+### 4.1 简单分支（if-else）<br>
+<br>
+```python<br>
+# 简单分支剧情实现（Python）<br>
+# 适用场景：少量分支、快速原型<br>
+<br>
+def simple_branching_example(player_state):<br>
+    """<br>
+    简单的if-else分支示例<br>
+    player_state: 包含玩家选择记录的字典<br>
+    """<br>
+    has_saved_village = player_state.get("saved_village", False)<br>
+    has_betrayed_king = player_state.get("betrayed_king", False)<br>
+    karma = player_state.get("karma", 0)<br>
+    <br>
+    # 第一幕：村庄事件<br>
+    if has_saved_village:<br>
+        print("村民热情地迎接你，孩子们围上来索要糖果。")<br>
+        reward = "village_blessing"<br>
+    else:<br>
+        print("村庄一片废墟，幸存的村民用怨恨的眼神看着你。")<br>
+        reward = "guilt_memory"<br>
+    <br>
+    player_state["act1_reward"] = reward<br>
+    <br>
+    # 第二幕：王座厅<br>
+    if has_betrayed_king:<br>
+        print("王座厅戒备森严，国王拒绝接见叛徒。")<br>
+        if karma < -50:<br>
+            print("卫兵冲上来逮捕你！")<br>
+            return "arrest_ending"<br>
+    else:<br>
+        print("国王微笑着向你点头。")<br>
+        if karma > 50:<br>
+            print("国王授予你贵族头衔。")<br>
+            player_state["noble_title"] = True<br>
+    <br>
+    return "continue"<br>
+<br>
+<br>
+# 更优雅的数据驱动版本<br>
+BRANCH_TABLE = {<br>
+    "village_event": {<br>
+        "conditions": [<br>
+            {"if": "saved_village", "then": "village_saved_branch"},<br>
+            {"if": "burned_village", "then": "village_burned_branch"},<br>
+        ],<br>
+        "default": "village_neutral_branch"<br>
+    },<br>
+    "village_saved_branch": {<br>
+        "text": "村民热情地迎接你，孩子们围上来索要糖果。",<br>
+        "rewards": ["village_blessing", "+10_karma"],<br>
+        "next": "throne_room"<br>
+    },<br>
+    "village_burned_branch": {<br>
+        "text": "村庄一片废墟，幸存的村民用怨恨的眼神看着你。",<br>
+        "rewards": ["guilt_memory", "-20_karma"],<br>
+        "next": "throne_room"<br>
+    },<br>
+    "village_neutral_branch": {<br>
+        "text": "村庄宁静如常，似乎没人注意到你的到来。",<br>
+        "next": "throne_room"<br>
+    }<br>
+}<br>
+<br>
+def evaluate_branch(branch_id, player_state):<br>
+    """评估分支表，返回对应的剧情内容"""<br>
+    branch = BRANCH_TABLE.get(branch_id)<br>
+    if not branch:<br>
+        return None<br>
+    <br>
+    # 检查是否有条件分支<br>
+    conditions = branch.get("conditions", [])<br>
+    for cond in conditions:<br>
+        flag = cond["if"]<br>
+        if player_state.get(flag, False):<br>
+            return evaluate_branch(cond["then"], player_state)<br>
+    <br>
+    # 返回默认分支<br>
+    default_id = branch.get("default")<br>
+    if default_id:<br>
+        return evaluate_branch(default_id, player_state)<br>
+    <br>
+    return branch<br>
+```<br>
+<br>
+### 4.2 复杂分支（状态机）<br>
+<br>
+```csharp<br>
+// 复杂分支剧情状态机（C#）<br>
+// 适用场景：多结局RPG、复杂叙事网络<br>
+<br>
+using System;<br>
+using System.Collections.Generic;<br>
+using System.Linq;<br>
+<br>
+namespace NarrativeSystem.Branching<br>
+{<br>
+    /// <summary><br>
+    /// 故事状态机：管理复杂分支剧情<br>
+    /// </summary><br>
+    public class StoryStateMachine<br>
+    {<br>
+        private readonly Dictionary<string, StoryState> _states;<br>
+        private StoryState _currentState;<br>
+        private readonly HashSet<string> _visitedStates;<br>
+        private readonly List<StoryTransition> _transitionHistory;<br>
+        <br>
+        // 全局变量存储<br>
+        private readonly Dictionary<string, object> _variables;<br>
+        <br>
+        // 结局注册表<br>
+        private readonly Dictionary<string, EndingDefinition> _endings;<br>
+<br>
+        public StoryStateMachine()<br>
+        {<br>
+            _states = new Dictionary<string, StoryState>();<br>
+            _visitedStates = new HashSet<string>();<br>
+            _transitionHistory = new List<StoryTransition>();<br>
+            _variables = new Dictionary<string, object>();<br>
+            _endings = new Dictionary<string, EndingDefinition>();<br>
+        }<br>
+<br>
+        /// <summary><br>
+        /// 注册故事状态<br>
+        /// </summary><br>
+        public void RegisterState(StoryState state)<br>
+        {<br>
+            _states[state.Id] = state;<br>
+        }<br>
+<br>
+        /// <summary><br>
+        /// 注册结局<br>
+        /// </summary><br>
+        public void RegisterEnding(EndingDefinition ending)<br>
+        {<br>
+            _endings[ending.Id] = ending;<br>
+        }<br>
+<br>
+        /// <summary><br>
+        /// 初始化状态机，进入起始状态<br>
+        /// </summary><br>
+        public void Start(string initialStateId)<br>
+        {<br>
+            if (!_states.TryGetValue(initialStateId, out _currentState))<br>
+            {<br>
+                throw new ArgumentException($"初始状态 {initialStateId} 不存在");<br>
+            }<br>
+            EnterState(_currentState);<br>
+        }<br>
+<br>
+        /// <summary><br>
+        /// 推进剧情：根据当前状态和变量条件进行转移<br>
+        /// </summary><br>
+        public void Tick()<br>
+        {<br>
+            if (_currentState == null) return;<br>
+<br>
+            // 执行当前状态的OnUpdate<br>
+            _currentState.OnUpdate(this);<br>
+<br>
+            // 检查所有出边转移条件<br>
+            foreach (var transition in _currentState.Transitions)<br>
+            {<br>
+                if (transition.CanTransition(this))<br>
+                {<br>
+                    ExecuteTransition(transition);<br>
+                    return;<br>
+                }<br>
+            }<br>
+        }<br>
+<br>
+        /// <summary><br>
+        /// 玩家做出选择<br>
+        /// </summary><br>
+        public void MakeChoice(string choiceId)<br>
+        {<br>
+            var choice = _currentState?.Choices.FirstOrDefault(c => c.Id == choiceId);<br>
+            if (choice == null) return;<br>
+<br>
+            // 执行选择附带的效果<br>
+            foreach (var effect in choice.Effects)<br>
+            {<br>
+                effect.Apply(this);<br>
+            }<br>
+<br>
+            // 记录选择<br>
+            RecordChoice(choiceId);<br>
+<br>
+            // 转移到选择指定的下一状态<br>
+            if (!string.IsNullOrEmpty(choice.TargetStateId))<br>
+            {<br>
+                TransitionTo(choice.TargetStateId);<br>
+            }<br>
+        }<br>
+<br>
+        private void ExecuteTransition(StoryTransition transition)<br>
+        {<br>
+            var fromId = _currentState?.Id;<br>
+            TransitionTo(transition.TargetStateId);<br>
+            <br>
+            _transitionHistory.Add(new StoryTransition<br>
+            {<br>
+                FromStateId = fromId,<br>
+                ToStateId = transition.TargetStateId,<br>
+                TriggerType = transition.TriggerType,<br>
+                Timestamp = DateTime.UtcNow<br>
+            });<br>
+        }<br>
+<br>
+        private void TransitionTo(string stateId)<br>
+        {<br>
+            if (!_states.TryGetValue(stateId, out var nextState))<br>
+            {<br>
+                // 检查是否是结局<br>
+                if (_endings.TryGetValue(stateId, out var ending))<br>
+                {<br>
+                    TriggerEnding(ending);<br>
+                    return;<br>
+                }<br>
+                throw new ArgumentException($"目标状态 {stateId} 不存在");<br>
+            }<br>
+<br>
+            // 退出当前状态<br>
+            _currentState?.OnExit(this);<br>
+            <br>
+            // 进入新状态<br>
+            _currentState = nextState;<br>
+            EnterState(_currentState);<br>
+        }<br>
+<br>
+        private void EnterState(StoryState state)<br>
+        {<br>
+            _visitedStates.Add(state.Id);<br>
+            state.OnEnter(this);<br>
+        }<br>
+<br>
+        private void TriggerEnding(EndingDefinition ending)<br>
+        {<br>
+            ending.OnTrigger(this);<br>
+            _currentState = null; // 状态机结束<br>
+        }<br>
+<br>
+        // 变量操作<br>
+        public void SetVariable(string key, object value) => _variables[key] = value;<br>
+        public T GetVariable<T>(string key) => _variables.TryGetValue(key, out var v) ? (T)v : default;<br>
+        public bool HasVisited(string stateId) => _visitedStates.Contains(stateId);<br>
+        public IReadOnlyList<StoryTransition> GetHistory() => _transitionHistory;<br>
+<br>
+        private void RecordChoice(string choiceId)<br>
+        {<br>
+            var choices = GetVariable<List<string>>("_choices") ?? new List<string>();<br>
+            choices.Add(choiceId);<br>
+            SetVariable("_choices", choices);<br>
+        }<br>
+    }<br>
+<br>
+    /// <summary><br>
+    /// 故事状态节点<br>
+    /// </summary><br>
+    public class StoryState<br>
+    {<br>
+        public string Id { get; set; }<br>
+        public string Name { get; set; }<br>
+        public string Description { get; set; }<br>
+        <br>
+        // 自动转移条件（无需玩家选择）<br>
+        public List<StoryTransition> Transitions { get; set; } = new List<StoryTransition>();<br>
+        <br>
+        // 玩家可做的选择<br>
+        public List<PlayerChoice> Choices { get; set; } = new List<PlayerChoice>();<br>
+<br>
+        // 状态生命周期回调<br>
+        public Action<StoryStateMachine> OnEnter { get; set; } = _ => { };<br>
+        public Action<StoryStateMachine> OnUpdate { get; set; } = _ => { };<br>
+        public Action<StoryStateMachine> OnExit { get; set; } = _ => { };<br>
+    }<br>
+<br>
+    /// <summary><br>
+    /// 状态转移定义<br>
+    /// </summary><br>
+    public class StoryTransition<br>
+    {<br>
+        public string TargetStateId { get; set; }<br>
+        public TransitionTriggerType TriggerType { get; set; }<br>
+        public Func<StoryStateMachine, bool> Condition { get; set; }<br>
+        public DateTime Timestamp { get; set; }<br>
+        public string FromStateId { get; set; }<br>
+        public string ToStateId { get; set; }<br>
+<br>
+        public bool CanTransition(StoryStateMachine machine) => Condition?.Invoke(machine) ?? true;<br>
+    }<br>
+<br>
+    /// <summary><br>
+    /// 玩家选择定义<br>
+    /// </summary><br>
+    public class PlayerChoice<br>
+    {<br>
+        public string Id { get; set; }<br>
+        public string Text { get; set; }<br>
+        public string Tooltip { get; set; }<br>
+        public List<ChoiceEffect> Effects { get; set; } = new List<ChoiceEffect>();<br>
+        public string TargetStateId { get; set; }<br>
+        public Func<StoryStateMachine, bool> VisibilityCondition { get; set; } = _ => true;<br>
+    }<br>
+<br>
+    /// <summary><br>
+    /// 选择效果<br>
+    /// </summary><br>
+    public class ChoiceEffect<br>
+    {<br>
+        public EffectType Type { get; set; }<br>
+        public Dictionary<string, object> Parameters { get; set; } = new Dictionary<string, object>();<br>
+<br>
+        public void Apply(StoryStateMachine machine)<br>
+        {<br>
+            switch (Type)<br>
+            {<br>
+                case EffectType.SetVariable:<br>
+                    machine.SetVariable((string)Parameters["key"], Parameters["value"]);<br>
+                    break;<br>
+                case EffectType.ModifyRelationship:<br>
+                    // 实现关系值修改<br>
+                    break;<br>
+                case EffectType.AddItem:<br>
+                    // 实现添加物品<br>
+                    break;<br>
+                case EffectType.TriggerEvent:<br>
+                    // 实现事件触发<br>
+                    break;<br>
+            }<br>
+        }<br>
+    }<br>
+<br>
+    public class EndingDefinition<br>
+    {<br>
+        public string Id { get; set; }<br>
+        public string Name { get; set; }<br>
+        public string Description { get; set; }<br>
+        public EndingType Type { get; set; }<br>
+        public Action<StoryStateMachine> OnTrigger { get; set; }<br>
+    }<br>
+<br>
+    public enum TransitionTriggerType { Automatic, Conditional, Event }<br>
+    public enum EffectType { SetVariable, ModifyRelationship, AddItem, TriggerEvent }<br>
+    public enum EndingType { Good, Bad, Neutral, Secret, True }<br>
+}<br>
+```<br>
+<br>
+### 4.3 延迟反馈实现<br>
+<br>
+```python<br>
+# 延迟反馈系统（Python）<br>
+# 实现"早期的选择在后期产生回响"的设计目标<br>
+<br>
+import time<br>
+from typing import Dict, List, Callable, Any<br>
+from dataclasses import dataclass, field<br>
+from datetime import datetime, timedelta<br>
+<br>
+@dataclass<br>
+class DelayedConsequence:<br>
+    """<br>
+    延迟后果：记录一个将在未来某个条件满足时触发的效果<br>
+    """<br>
+    consequence_id: str<br>
+    trigger_condition: Dict[str, Any]  # 触发条件<br>
+    effects: List[Dict[str, Any]]      # 触发后的效果列表<br>
+    source_choice: str                 # 来源于哪个选择<br>
+    description: str = ""<br>
+    expires_after: int = -1            # 多少秒后过期（-1表示不过期）<br>
+    created_at: datetime = field(default_factory=datetime.now)<br>
+    triggered: bool = False<br>
+<br>
+class DelayedFeedbackSystem:<br>
+    """<br>
+    延迟反馈系统<br>
+    <br>
+    设计思路：<br>
+    - 玩家做出选择时，不一定立即看到所有后果<br>
+    - 某些后果被注册为"延迟后果"，在特定条件满足时触发<br>
+    - 条件可以是：到达某章节、进入某地图、与某NPC对话等<br>
+    """<br>
+    <br>
+    def __init__(self):<br>
+        self._pending: List[DelayedConsequence] = []<br>
+        self._history: List[DelayedConsequence] = []<br>
+        self._handlers: Dict[str, Callable] = {}<br>
+        self._event_count = 0  # 用于追踪游戏内"时间"<br>
+    <br>
+    def register_handler(self, effect_type: str, handler: Callable):<br>
+        """注册效果处理器"""<br>
+        self._handlers[effect_type] = handler<br>
+    <br>
+    def add_consequence(self, consequence: DelayedConsequence):<br>
+        """添加延迟后果"""<br>
+        self._pending.append(consequence)<br>
+        print(f"[延迟反馈] 注册后果: {consequence.description}")<br>
+    <br>
+    def tick(self, current_state: Dict[str, Any]):<br>
+        """<br>
+        每帧或每个叙事节点检查一次<br>
+        current_state: 当前游戏状态快照<br>
+        """<br>
+        self._event_count += 1<br>
+        to_remove = []<br>
+        <br>
+        for consequence in self._pending:<br>
+            if consequence.triggered:<br>
+                continue<br>
+            <br>
+            # 检查是否过期<br>
+            if consequence.expires_after > 0:<br>
+                elapsed = (datetime.now() - consequence.created_at).total_seconds()<br>
+                if elapsed > consequence.expires_after:<br>
+                    to_remove.append(consequence)<br>
+                    continue<br>
+            <br>
+            # 检查触发条件<br>
+            if self._check_condition(consequence.trigger_condition, current_state):<br>
+                self._trigger(consequence, current_state)<br>
+                to_remove.append(consequence)<br>
+        <br>
+        for c in to_remove:<br>
+            self._pending.remove(c)<br>
+    <br>
+    def _check_condition(self, condition: Dict[str, Any], state: Dict[str, Any]) -> bool:<br>
+        """检查条件是否满足"""<br>
+        condition_type = condition.get("type")<br>
+        <br>
+        if condition_type == "chapter_reached":<br>
+            return state.get("current_chapter") == condition["chapter"]<br>
+        <br>
+        elif condition_type == "location_entered":<br>
+            return state.get("current_location") == condition["location"]<br>
+        <br>
+        elif condition_type == "npc_met":<br>
+            met_npcs = state.get("met_npcs", [])<br>
+            return condition["npc"] in met_npcs<br>
+        <br>
+        elif condition_type == "flag_set":<br>
+            return state.get(condition["flag"]) == condition["value"]<br>
+        <br>
+        elif condition_type == "event_count":<br>
+            return self._event_count >= condition["count"]<br>
+        <br>
+        elif condition_type == "and":<br>
+            return all(self._check_condition(c, state) for c in condition["conditions"])<br>
+        <br>
+        elif condition_type == "or":<br>
+            return any(self._check_condition(c, state) for c in condition["conditions"])<br>
+        <br>
+        return False<br>
+    <br>
+    def _trigger(self, consequence: DelayedConsequence, state: Dict[str, Any]):<br>
+        """触发后果效果"""<br>
+        consequence.triggered = True<br>
+        self._history.append(consequence)<br>
+        <br>
+        print(f"\n[延迟反馈触发] {consequence.description}")<br>
+        for effect in consequence.effects:<br>
+            effect_type = effect["type"]<br>
+            handler = self._handlers.get(effect_type)<br>
+            if handler:<br>
+                handler(effect, state)<br>
+            else:<br>
+                print(f"  [效果] {effect_type}: {effect}")<br>
+    <br>
+    def get_pending(self) -> List[DelayedConsequence]:<br>
+        """获取待触发的后果列表（用于调试UI）"""<br>
+        return [c for c in self._pending if not c.triggered]<br>
+    <br>
+    def get_history(self) -> List[DelayedConsequence]:<br>
+        """获取已触发的历史记录"""<br>
+        return self._history<br>
+<br>
+<br>
+# ===== 使用示例：早期选择，后期回响 =====<br>
+def demo_delayed_feedback():<br>
+    system = DelayedFeedbackSystem()<br>
+    <br>
+    # 注册效果处理器<br>
+    def handle_dialogue(effect, state):<br>
+        print(f"  -> 触发对话: {effect['dialogue_id']}")<br>
+    <br>
+    def handle_flag(effect, state):<br>
+        state[effect["key"]] = effect["value"]<br>
+        print(f"  -> 设置变量: {effect['key']} = {effect['value']}")<br>
+    <br>
+    system.register_handler("show_dialogue", handle_dialogue)<br>
+    system.register_handler("set_flag", handle_flag)<br>
+    <br>
+    # 模拟游戏状态<br>
+    game_state = {<br>
+        "current_chapter": 1,<br>
+        "current_location": "village",<br>
+        "met_npcs": [],<br>
+        "karma": 0<br>
+    }<br>
+    <br>
+    # 第1章：玩家在村庄做出选择——偷了商人的钱<br>
+    print("=" * 50)<br>
+    print("[第1章] 玩家偷了商人的钱...")<br>
+    <br>
+    system.add_consequence(DelayedConsequence(<br>
+        consequence_id="stolen_money_echo",<br>
+        trigger_condition={<br>
+            "type": "chapter_reached",<br>
+            "chapter": 3<br>
+        },<br>
+        effects=[<br>
+            {"type": "show_dialogue", "dialogue_id": "merchant_revenge"},<br>
+            {"type": "set_flag", "key": "merchant_hates_you", "value": True}<br>
+        ],<br>
+        source_choice="steal_from_merchant",<br>
+        description="第1章偷钱的行为在第3章被商人记住"<br>
+    ))<br>
+    <br>
+    # 第2章：正常推进<br>
+    print("\n[第2章] 推进剧情...")<br>
+    game_state["current_chapter"] = 2<br>
+    system.tick(game_state)  # 无触发<br>
+    <br>
+    # 第3章：延迟反馈触发！<br>
+    print("\n[第3章] 到达首都...")<br>
+    game_state["current_chapter"] = 3<br>
+    game_state["current_location"] = "capital"<br>
+    system.tick(game_state)  # 触发商人复仇<br>
+<br>
+if __name__ == "__main__":<br>
+    demo_delayed_feedback()<br>
+```<br>
+<br>
+### 4.4 多结局管理<br>
+<br>
+```python<br>
+# 多结局管理系统（Python）<br>
+# 根据玩家全程的选择组合计算最终结局<br>
+<br>
+from typing import Dict, List, Callable, Optional<br>
+from dataclasses import dataclass<br>
+from enum import Enum<br>
+<br>
+class EndingTier(Enum):<br>
+    """结局层级"""<br>
+    NORMAL = "normal"<br>
+    GOOD = "good"<br>
+    BAD = "bad"<br>
+    SECRET = "secret"<br>
+    TRUE_END = "true_end"<br>
+<br>
+@dataclass<br>
+class Ending:<br>
+    """结局定义"""<br>
+    ending_id: str<br>
+    title: str<br>
+    description: str<br>
+    tier: EndingTier<br>
+    conditions: List[Dict]  # 解锁条件<br>
+    epilogue_text: str = ""<br>
+<br>
+class MultipleEndingManager:<br>
+    """<br>
+    多结局管理器<br>
+    <br>
+    核心机制：<br>
+    1. 每个结局有一组条件（变量值、选择记录、 visited状态等）<br>
+    2. 结局按优先级排序（秘密结局 > 真结局 > 好/坏结局 > 普通结局）<br>
+    3. 支持多条件组合：AND（必须全部满足）或 OR（满足任一）<br>
+    """<br>
+    <br>
+    def __init__(self):<br>
+        self._endings: Dict[str, Ending] = {}<br>
+        self._priority_order = [<br>
+            EndingTier.TRUE_END,<br>
+            EndingTier.SECRET,<br>
+            EndingTier.GOOD,<br>
+            EndingTier.BAD,<br>
+            EndingTier.NORMAL<br>
+        ]<br>
+    <br>
+    def register_ending(self, ending: Ending):<br>
+        """注册结局"""<br>
+        self._endings[ending.ending_id] = ending<br>
+    <br>
+    def calculate_ending(self, player_state: Dict) -> Optional[Ending]:<br>
+        """<br>
+        根据玩家状态计算最终结局<br>
+        返回优先级最高的满足条件的结局<br>
+        """<br>
+        candidates = []<br>
+        <br>
+        for ending in self._endings.values():<br>
+            if self._check_ending_conditions(ending.conditions, player_state):<br>
+                candidates.append(ending)<br>
+        <br>
+        if not candidates:<br>
+            return None<br>
+        <br>
+        # 按优先级排序，返回最高优先级<br>
+        candidates.sort(key=lambda e: self._priority_order.index(e.tier))<br>
+        return candidates[0]<br>
+    <br>
+    def _check_ending_conditions(self, conditions: List[Dict], state: Dict) -> bool:<br>
+        """检查结局条件是否满足"""<br>
+        for cond in conditions:<br>
+            if not self._evaluate_condition(cond, state):<br>
+                return False<br>
+        return True<br>
+    <br>
+    def _evaluate_condition(self, cond: Dict, state: Dict) -> bool:<br>
+        """评估单个条件"""<br>
+        cond_type = cond.get("type")<br>
+        <br>
+        if cond_type == "flag_equals":<br>
+            return state.get(cond["flag"]) == cond["value"]<br>
+        <br>
+        elif cond_type == "flag_gte":<br>
+            return state.get(cond["flag"], 0) >= cond["value"]<br>
+        <br>
+        elif cond_type == "flag_lte":<br>
+            return state.get(cond["flag"], 0) <= cond["value"]<br>
+        <br>
+        elif cond_type == "choice_made":<br>
+            choices = state.get("choices_made", [])<br>
+            return cond["choice_id"] in choices<br>
+        <br>
+        elif cond_type == "all_choices":<br>
+            choices = state.get("choices_made", [])<br>
+            return all(c in choices for c in cond["choice_ids"])<br>
+        <br>
+        elif cond_type == "any_choice":<br>
+            choices = state.get("choices_made", [])<br>
+            return any(c in choices for c in cond["choice_ids"])<br>
+        <br>
+        elif cond_type == "visited_state":<br>
+            visited = state.get("visited_states", [])<br>
+            return cond["state_id"] in visited<br>
+        <br>
+        elif cond_type == "not":<br>
+            return not self._evaluate_condition(cond["condition"], state)<br>
+        <br>
+        return False<br>
+    <br>
+    def preview_endings(self, player_state: Dict) -> List[Dict]:<br>
+        """<br>
+        预览：显示当前状态下各结局的解锁进度<br>
+        用于游戏中的"结局收集"UI<br>
+        """<br>
+        previews = []<br>
+        for ending in self._endings.values():<br>
+            total = len(ending.conditions)<br>
+            met = sum(1 for c in ending.conditions if self._evaluate_condition(c, player_state))<br>
+            previews.append({<br>
+                "ending_id": ending.ending_id,<br>
+                "title": ending.title,<br>
+                "tier": ending.tier.value,<br>
+                "progress": f"{met}/{total}",<br>
+                "unlocked": met == total,<br>
+                "percentage": (met / total * 100) if total > 0 else 0<br>
+            })<br>
+        return sorted(previews, key=lambda x: x["percentage"], reverse=True)<br>
+<br>
+<br>
+# ===== 使用示例：多结局配置 =====<br>
+def setup_endings():<br>
+    manager = MultipleEndingManager()<br>
+    <br>
+    # 真结局：最严格的条件<br>
+    manager.register_ending(Ending(<br>
+        ending_id="true_end",<br>
+        title="世界守护者",<br>
+        description="你拯救了所有人，包括你的敌人。",<br>
+        tier=EndingTier.TRUE_END,<br>
+        conditions=[<br>
+            {"type": "flag_gte", "flag": "karma", "value": 80},<br>
+            {"type": "all_choices", "choice_ids": ["spare_boss", "save_village", "redeem_rival"]},<br>
+            {"type": "visited_state", "state_id": "secret_garden"},<br>
+            {"type": "flag_equals", "flag": "true_artifact_restored", "value": True}<br>
+        ],<br>
+        epilogue_text="在光芒中，世界获得了新生..."<br>
+    ))<br>
+    <br>
+    # 好结局<br>
+    manager.register_ending(Ending(<br>
+        ending_id="good_end",<br>
+        title="英雄归来",<br>
+        description="你成为了人们口中的英雄。",<br>
+        tier=EndingTier.GOOD,<br>
+        conditions=[<br>
+            {"type": "flag_gte", "flag": "karma", "value": 30},<br>
+            {"type": "flag_equals", "flag": "boss_defeated", "value": True}<br>
+        ],<br>
+        epilogue_text="王座上，新的传说开始了..."<br>
+    ))<br>
+    <br>
+    # 坏结局<br>
+    manager.register_ending(Ending(<br>
+        ending_id="bad_end",<br>
+        title="孤独的王座",<br>
+        description="你获得了力量，但失去了所有。",<br>
+        tier=EndingTier.BAD,<br>
+        conditions=[<br>
+            {"type": "flag_lte", "flag": "karma", "value": -30},<br>
+            {"type": "flag_equals", "flag": "boss_defeated", "value": True}<br>
+        ],<br>
+        epilogue_text="王座冰冷，无人分享..."<br>
+    ))<br>
+    <br>
+    # 秘密结局<br>
+    manager.register_ending(Ending(<br>
+        ending_id="secret_end",<br>
+        title="幕后黑手",<br>
+        description="原来你才是最终的幕后操纵者。",<br>
+        tier=EndingTier.SECRET,<br>
+        conditions=[<br>
+            {"type": "choice_made", "choice_id": "join_dark_cult"},<br>
+            {"type": "flag_equals", "flag": "betrayed_all", "value": True},<br>
+            {"type": "flag_equals", "flag": "secret_ritual_done", "value": True}<br>
+        ],<br>
+        epilogue_text="在阴影中，你露出了微笑..."<br>
+    ))<br>
+    <br>
+    # 普通结局（保底）<br>
+    manager.register_ending(Ending(<br>
+        ending_id="normal_end",<br>
+        title="旅程的终点",<br>
+        description="冒险结束，生活继续。",<br>
+        tier=EndingTier.NORMAL,<br>
+        conditions=[<br>
+            {"type": "flag_equals", "flag": "game_completed", "value": True}<br>
+        ]<br>
+    ))<br>
+    <br>
+    return manager<br>
+<br>
+<br>
+# 模拟结算<br>
+if __name__ == "__main__":<br>
+    manager = setup_endings()<br>
+    <br>
+    # 玩家A：走真结局路线<br>
+    player_a = {<br>
+        "karma": 90,<br>
+        "choices_made": ["spare_boss", "save_village", "redeem_rival", "help_stranger"],<br>
+        "visited_states": ["secret_garden", "capital", "dungeon"],<br>
+        "true_artifact_restored": True,<br>
+        "game_completed": True<br>
+    }<br>
+    <br>
+    ending = manager.calculate_ending(player_a)<br>
+    print(f"玩家A结局: {ending.title} [{ending.tier.value}]")<br>
+    <br>
+    # 预览所有结局进度<br>
+    print("\n结局收集进度:")<br>
+    for preview in manager.preview_endings(player_a):<br>
+        status = "已解锁" if preview["unlocked"] else f"{preview['progress']}"<br>
+        print(f"  [{preview['tier']}] {preview['title']}: {status}")<br>
+```<br>
+<br>
+---<br>
+<br>
+## 5. 叙事工具集成<br>
+<br>
+### 5.1 articy:draft X API 集成<br>
+<br>
+```csharp<br>
+// articy:draft X 运行时集成（C# / Unity）<br>
+// articy 导出为 JSON 或 Unity Plugin 后，通过以下接口加载<br>
+<br>
+using System;<br>
+using System.Collections.Generic;<br>
+using System.IO;<br>
+using System.Linq;<br>
+using Newtonsoft.Json;<br>
+using Newtonsoft.Json.Linq;<br>
+<br>
+namespace NarrativeSystem.Integrations.Articy<br>
+{<br>
+    /// <summary><br>
+    /// articy:draft X 导出数据加载器<br>
+    /// </summary><br>
+    public class ArticyDataLoader<br>
+    {<br>
+        private JObject _root;<br>
+        private Dictionary<string, ArticyNode> _nodes;<br>
+        private Dictionary<string, ArticyDialogue> _dialogues;<br>
+<br>
+        /// <summary><br>
+        /// 从 articy 导出的 JSON 文件加载<br>
+        /// </summary><br>
+        public void LoadFromJson(string filepath)<br>
+        {<br>
+            var json = File.ReadAllText(filepath);<br>
+            _root = JObject.Parse(json);<br>
+            _nodes = new Dictionary<string, ArticyNode>();<br>
+            _dialogues = new Dictionary<string, ArticyDialogue>();<br>
+            <br>
+            ParsePackages();<br>
+        }<br>
+<br>
+        private void ParsePackages()<br>
+        {<br>
+            var packages = _root["Packages"] as JArray;<br>
+            foreach (var pkg in packages)<br>
+            {<br>
+                ParseModels(pkg["Models"] as JArray);<br>
+            }<br>
+        }<br>
+<br>
+        private void ParseModels(JArray models)<br>
+        {<br>
+            foreach (var model in models)<br>
+            {<br>
+                var type = model["Type"]?.ToString();<br>
+                var id = model["Id"]?.ToString();<br>
+                <br>
+                switch (type)<br>
+                {<br>
+                    case "Dialogue":<br>
+                        _dialogues[id] = ParseDialogue(model);<br>
+                        break;<br>
+                    case "DialogueFragment":<br>
+                        _nodes[id] = ParseFragment(model);<br>
+                        break;<br>
+                    case "Hub":<br>
+                        _nodes[id] = ParseHub(model);<br>
+                        break;<br>
+                    case "Jump":<br>
+                        _nodes[id] = ParseJump(model);<br>
+                        break;<br>
+                }<br>
+            }<br>
+        }<br>
+<br>
+        private ArticyDialogue ParseDialogue(JToken model)<br>
+        {<br>
+            return new ArticyDialogue<br>
+            {<br>
+                Id = model["Id"].ToString(),<br>
+                TechnicalName = model["TechnicalName"].ToString(),<br>
+                DisplayName = model["DisplayName"]?.ToString(),<br>
+                // 解析输入/输出引脚连接<br>
+                InputPins = ParsePins(model["InputPins"] as JArray),<br>
+                OutputPins = ParsePins(model["OutputPins"] as JArray)<br>
+            };<br>
+        }<br>
+<br>
+        private ArticyFragment ParseFragment(JToken model)<br>
+        {<br>
+            return new ArticyFragment<br>
+            {<br>
+                Id = model["Id"].ToString(),<br>
+                TechnicalName = model["TechnicalName"].ToString(),<br>
+                Text = model["Text"]?.ToString(),<br>
+                StageDirections = model["StageDirections"]?.ToString(),<br>
+                Speaker = model["Speaker"]?.ToString(),<br>
+                InputPins = ParsePins(model["InputPins"] as JArray),<br>
+                OutputPins = ParsePins(model["OutputPins"] as JArray)<br>
+            };<br>
+        }<br>
+<br>
+        private List<ArticyPin> ParsePins(JArray pins)<br>
+        {<br>
+            if (pins == null) return new List<ArticyPin>();<br>
+            <br>
+            return pins.Select(p => new ArticyPin<br>
+            {<br>
+                Id = p["Id"]?.ToString(),<br>
+                Text = p["Text"]?.ToString(),<br>
+                Connections = (p["Connections"] as JArray)?.Select(c => c["Target"]?.ToString()).ToList()<br>
+                    ?? new List<string>()<br>
+            }).ToList();<br>
+        }<br>
+<br>
+        public ArticyDialogue GetDialogue(string id) => _dialogues.GetValueOrDefault(id);<br>
+        public ArticyNode GetNode(string id) => _nodes.GetValueOrDefault(id);<br>
+    }<br>
+<br>
+    // articy 数据模型<br>
+    public class ArticyNode<br>
+    {<br>
+        public string Id { get; set; }<br>
+        public string TechnicalName { get; set; }<br>
+        public List<ArticyPin> InputPins { get; set; } = new List<ArticyPin>();<br>
+        public List<ArticyPin> OutputPins { get; set; } = new List<ArticyPin>();<br>
+    }<br>
+<br>
+    public class ArticyDialogue : ArticyNode<br>
+    {<br>
+        public string DisplayName { get; set; }<br>
+    }<br>
+<br>
+    public class ArticyFragment : ArticyNode<br>
+    {<br>
+        public string Text { get; set; }<br>
+        public string StageDirections { get; set; }<br>
+        public string Speaker { get; set; }<br>
+    }<br>
+<br>
+    public class ArticyHub : ArticyNode { }<br>
+    public class ArticyJump : ArticyNode<br>
+    {<br>
+        public string Target { get; set; }<br>
+    }<br>
+<br>
+    public class ArticyPin<br>
+    {<br>
+        public string Id { get; set; }<br>
+        public string Text { get; set; }<br>
+        public List<string> Connections { get; set; } = new List<string>();<br>
+    }<br>
+}<br>
+```<br>
+<br>
+### 5.2 ink (Inkle) 脚本集成<br>
+<br>
+```csharp<br>
+// ink 运行时集成（C#）<br>
+// 使用官方 ink-engine-runtime 包：Install-Package Ink-engine-runtime<br>
+<br>
+using Ink.Runtime;<br>
+using System;<br>
+using System.Collections.Generic;<br>
+using System.IO;<br>
+using System.Linq;<br>
+<br>
+namespace NarrativeSystem.Integrations.Ink<br>
+{<br>
+    /// <summary><br>
+    /// Ink 故事包装器<br>
+    /// </summary><br>
+    public class InkStoryRunner<br>
+    {<br>
+        private Story _story;<br>
+        private readonly Dictionary<string, Action<object>> _externalFunctions;<br>
+<br>
+        public InkStoryRunner(string jsonFilePath)<br>
+        {<br>
+            var json = File.ReadAllText(jsonFilePath);<br>
+            _story = new Story(json);<br>
+            _externalFunctions = new Dictionary<string, Action<object>>();<br>
+        }<br>
+<br>
+        /// <summary><br>
+        /// 注册外部函数供 ink 脚本调用<br>
+        /// ink 中使用：~ my_function(param)<br>
+        /// </summary><br>
+        public void BindExternalFunction(string name, Func<object> func)<br>
+        {<br>
+            _story.BindExternalFunction(name, func);<br>
+        }<br>
+<br>
+        public void BindExternalFunction<T>(string name, Func<T, object> func)<br>
+        {<br>
+            _story.BindExternalFunction(name, func);<br>
+        }<br>
+<br>
+        /// <summary><br>
+        /// 推进故事：获取当前段落文本<br>
+        /// </summary><br>
+        public string Continue()<br>
+        {<br>
+            if (_story.canContinue)<br>
+            {<br>
+                return _story.Continue();<br>
+            }<br>
+            return null;<br>
+        }<br>
+<br>
+        /// <summary><br>
+        /// 当前是否有选项<br>
+        /// </summary><br>
+        public bool HasChoices => _story.currentChoices.Count > 0;<br>
+<br>
+        /// <summary><br>
+        /// 获取当前可选选项<br>
+        /// </summary><br>
+        public List<InkChoice> GetCurrentChoices()<br>
+        {<br>
+            return _story.currentChoices.Select(c => new InkChoice<br>
+            {<br>
+                Index = c.index,<br>
+                Text = c.text,<br>
+                OriginalChoice = c<br>
+            }).ToList();<br>
+        }<br>
+<br>
+        /// <summary><br>
+        /// 做出选择<br>
+        /// </summary><br>
+        public void ChooseChoiceIndex(int index)<br>
+        {<br>
+            _story.ChooseChoiceIndex(index);<br>
+        }<br>
+<br>
+        /// <summary><br>
+        /// 设置 ink 变量<br>
+        /// </summary><br>
+        public void SetVariable(string name, object value)<br>
+        {<br>
+            _story.variablesState[name] = value;<br>
+        }<br>
+<br>
+        /// <summary><br>
+        /// 获取 ink 变量<br>
+        /// </summary><br>
+        public object GetVariable(string name)<br>
+        {<br>
+            return _story.variablesState[name];<br>
+        }<br>
+<br>
+        /// <summary><br>
+        /// 观察变量变更<br>
+        /// </summary><br>
+        public void ObserveVariable(string name, Action<string, object> callback)<br>
+        {<br>
+            _story.ObserveVariable(name, (varName, newValue) => callback(varName, newValue));<br>
+        }<br>
+<br>
+        /// <summary><br>
+        /// 故事是否结束<br>
+        /// </summary><br>
+        public bool IsEnded => !_story.canContinue && !HasChoices;<br>
+<br>
+        /// <summary><br>
+        /// 获取当前标签（用于触发游戏事件）<br>
+        /// ink 中使用：# trigger_event: battle_boss<br>
+        /// </summary><br>
+        public List<string> CurrentTags => _story.currentTags ?? new List<string>();<br>
+    }<br>
+<br>
+    public class InkChoice<br>
+    {<br>
+        public int Index { get; set; }<br>
+        public string Text { get; set; }<br>
+        public object OriginalChoice { get; set; }<br>
+    }<br>
+}<br>
+```<br>
+<br>
+```ink<br>
+// 示例 ink 脚本（.ink 文件）<br>
+// ink 是 Inkle Studios 开发的叙事脚本语言<br>
+<br>
+// === 变量定义 ===<br>
+VAR karma = 0<br>
+VAR has_artifact = false<br>
+VAR elder_trust = 50<br>
+<br>
+// ===  knots（章节/段落） ===<br>
+-> elder_meeting<br>
+<br>
+=== elder_meeting ===<br>
+# location: village_center<br>
+# music: peaceful<br>
+<br>
+长老看着你，眼神中带着审视。<br>
+<br>
+* [恭敬地打招呼]<br>
+    ~ elder_trust += 10<br>
+    长老微微点头："年轻人，你很有礼貌。"<br>
+    -> elder_quest_offer<br>
+    <br>
+* [直接索要奖励]<br>
+    ~ elder_trust -= 20<br>
+    ~ karma -= 5<br>
+    长老皱眉："无礼！我们还没有正式认识。"<br>
+    -> elder_cold<br>
+<br>
+* {has_artifact} [展示古代遗物]<br>
+    长老瞪大了眼睛："这...这是传说中的圣物！"<br>
+    ~ elder_trust = 100<br>
+    -> elder_artifact_reaction<br>
+<br>
+=== elder_quest_offer ===<br>
+"村子的东边出现了怪物，你愿意帮忙吗？"<br>
+<br>
+* [接受任务]<br>
+    ~ karma += 5<br>
+    太好了，我会给你丰厚的报酬。<br>
+    -> quest_accepted<br>
+    <br>
+* [拒绝]<br>
+    ~ elder_trust -= 10<br>
+    好吧...我们找别人。<br>
+    -> village_leave<br>
+<br>
+=== elder_cold ===<br>
+{ elder_trust < 30:<br>
+    长老转身不再理你。<br>
+    # trigger_event: elder_ignores_player<br>
+- else:<br>
+    虽然不满，长老还是保持了礼貌。<br>
+}<br>
+-> village_leave<br>
+<br>
+=== quest_accepted ===<br>
+// 这里可以使用 ink 的线程和拼接功能<br>
+你接受了任务，准备前往东边的森林。<br>
+# trigger_event: spawn_forest_monsters<br>
+-> END<br>
+<br>
+=== village_leave ===<br>
+你离开了村庄。<br>
+-> END<br>
+<br>
+=== elder_artifact_reaction ===<br>
+长老激动地握住你的手...<br>
+// 特殊剧情分支<br>
+-> END<br>
+```<br>
+<br>
+### 5.3 Yarn Spinner 集成<br>
+<br>
+```csharp<br>
+// Yarn Spinner 集成（Unity / C#）<br>
+// 使用 Yarn Spinner Unity 包<br>
+<br>
+using System;<br>
+using System.Collections.Generic;<br>
+using System.Threading.Tasks;<br>
+using UnityEngine;<br>
+using Yarn;<br>
+using Yarn.Unity;<br>
+<br>
+namespace NarrativeSystem.Integrations.YarnSpinner<br>
+{<br>
+    /// <summary><br>
+    /// Yarn Spinner 对话系统桥接<br>
+    /// </summary><br>
+    public class YarnDialogueBridge : MonoBehaviour<br>
+    {<br>
+        [SerializeField] private DialogueRunner dialogueRunner;<br>
+        [SerializeField] private DialogueUI dialogueUI;<br>
+        <br>
+        // 游戏状态引用<br>
+        private IGameState _gameState;<br>
+        <br>
+        private void Start()<br>
+        {<br>
+            // 注册命令（Yarn 中的 <<command>>）<br>
+            RegisterCommands();<br>
+            <br>
+            // 注册函数（Yarn 中的 {function()}）<br>
+            RegisterFunctions();<br>
+            <br>
+            // 监听变量变更<br>
+            dialogueRunner.VariableStorage.OnVariableChange += OnVariableChanged;<br>
+        }<br>
+<br>
+        private void RegisterCommands()<br>
+        {<br>
+            // <<give_item item_id count>><br>
+            dialogueRunner.AddCommandHandler<string, int>(<br>
+                "give_item", <br>
+                (itemId, count) => _gameState.Inventory.Add(itemId, count)<br>
+            );<br>
+            <br>
+            // <<set_relationship npc_id value>><br>
+            dialogueRunner.AddCommandHandler<string, int>(<br>
+                "set_relationship",<br>
+                (npcId, value) => _gameState.Relationships.Set(npcId, value)<br>
+            );<br>
+            <br>
+            // <<trigger_event event_id>><br>
+            dialogueRunner.AddCommandHandler<string>(<br>
+                "trigger_event",<br>
+                (eventId) => _gameState.Events.Trigger(eventId)<br>
+            );<br>
+            <br>
+            // <<fade_in duration>><br>
+            dialogueRunner.AddCommandHandler<float>(<br>
+                "fade_in",<br>
+                async (duration) => await ScreenFader.FadeIn(duration)<br>
+            );<br>
+            <br>
+            // <<wait seconds>><br>
+            dialogueRunner.AddCommandHandler<float>(<br>
+                "wait",<br>
+                async (seconds) => await Task.Delay(TimeSpan.FromSeconds(seconds))<br>
+            );<br>
+        }<br>
+<br>
+        private void RegisterFunctions()<br>
+        {<br>
+            // {has_item("sword")}<br>
+            dialogueRunner.AddFunction<bool>("has_item", HasItem);<br>
+            <br>
+            // {get_relationship("elder")}<br>
+            dialogueRunner.AddFunction<int>("get_relationship", GetRelationship);<br>
+            <br>
+            // {random_range(1, 100)}<br>
+            dialogueRunner.AddFunction<int>("random_range", RandomRange);<br>
+        }<br>
+<br>
+        private bool HasItem(string itemId)<br>
+        {<br>
+            return _gameState.Inventory.Has(itemId);<br>
+        }<br>
+<br>
+        private int GetRelationship(string npcId)<br>
+        {<br>
+            return _gameState.Relationships.Get(npcId);<br>
+        }<br>
+<br>
+        private int RandomRange(int min, int max)<br>
+        {<br>
+            return UnityEngine.Random.Range(min, max + 1);<br>
+        }<br>
+<br>
+        private void OnVariableChanged(string name, Yarn.IVariableStorage.Value value)<br>
+        {<br>
+            // 同步 Yarn 变量到游戏状态<br>
+            _gameState.SetVariable($"yarn.{name}", ConvertYarnValue(value));<br>
+        }<br>
+<br>
+        private object ConvertYarnValue(Yarn.IVariableStorage.Value value)<br>
+        {<br>
+            return value.type switch<br>
+            {<br>
+                Yarn.IVariableStorage.Type.Number => value.numberValue,<br>
+                Yarn.IVariableStorage.Type.String => value.stringValue,<br>
+                Yarn.IVariableStorage.Type.Bool => value.boolValue,<br>
+                _ => null<br>
+            };<br>
+        }<br>
+<br>
+        /// <summary><br>
+        /// 启动 Yarn 对话<br>
+        /// </summary><br>
+        public void StartDialogue(string nodeName)<br>
+        {<br>
+            if (dialogueRunner.IsDialogueRunning)<br>
+            {<br>
+                dialogueRunner.Stop();<br>
+            }<br>
+            <br>
+            // 同步游戏变量到 Yarn<br>
+            SyncVariablesToYarn();<br>
+            <br>
+            dialogueRunner.StartDialogue(nodeName);<br>
+        }<br>
+<br>
+        private void SyncVariablesToYarn()<br>
+        {<br>
+            // 将游戏状态中的变量注入 Yarn<br>
+            foreach (var kvp in _gameState.GetAllVariables())<br>
+            {<br>
+                var yarnName = kvp.Key.Replace("yarn.", "");<br>
+                switch (kvp.Value)<br>
+                {<br>
+                    case int i:<br>
+                        dialogueRunner.VariableStorage.SetValue(yarnName, (float)i);<br>
+                        break;<br>
+                    case float f:<br>
+                        dialogueRunner.VariableStorage.SetValue(yarnName, f);<br>
+                        break;<br>
+                    case string s:<br>
+                        dialogueRunner.VariableStorage.SetValue(yarnName, s);<br>
+                        break;<br>
+                    case bool b:<br>
+                        dialogueRunner.VariableStorage.SetValue(yarnName, b);<br>
+                        break;<br>
+                }<br>
+            }<br>
+        }<br>
+    }<br>
+}<br>
+```<br>
+<br>
+```yarn<br>
+// 示例 Yarn 脚本（.yarn 文件）<br>
+// Yarn Spinner 使用类似 Markdown 的语法<br>
+<br>
+// === 节点定义 ===<br>
+title: ElderGreeting<br>
+ tags: #location:village #npc:elder<br>
+---<br>
+<<if $visited_elder is true>><br>
+    长老：你又来了，有什么事吗？<br>
+<<else>><br>
+    长老：欢迎来到我们的村庄，旅行者。<br>
+    <<set $visited_elder to true>><br>
+<<endif>><br>
+<br>
+-> 我想接一些任务<br>
+    <<jump QuestBoard>><br>
+    <br>
+-> 我想了解一下这里的历史<br>
+    <<if $player_level >= 5>><br>
+        长老：既然你已经有一定实力了，我可以告诉你关于古代遗迹的事...<br>
+        <<set $knows_about_ruins to true>><br>
+        <<jump RuinsHistory>><br>
+    <<else>><br>
+        长老：你还太年轻了，等变强一些再来吧。<br>
+        <<set $elder_trust to $elder_trust - 5>><br>
+    <<endif>><br>
+    <br>
+-> { $has_artifact } 我找到了这个古代遗物<br>
+    长老：天啊！我以为这只是传说！<br>
+    <<give_item gold 500>><br>
+    <<set_relationship elder 100>><br>
+    <<trigger_event elder_special_quest>><br>
+    <br>
+-> 再见<br>
+    长老：愿风指引你的道路。<br>
+    <<stop>><br>
+===<br>
+<br>
+// === 另一个节点 ===<br>
+title: QuestBoard<br>
+---<br>
+任务公告板上贴着几张泛黄的纸：<br>
+<br>
+-> [清理东边的狼群]（推荐等级：3）<br>
+    <<if $player_level < 3>><br>
+        你觉得自己还不够强大...<br>
+        -> 还是算了<br>
+            <<jump ElderGreeting>><br>
+    <<endif>><br>
+    你接下了委托。<br>
+    <<set $quest_wolves to "active">><br>
+    <<trigger_event spawn_wolves>><br>
+    <br>
+-> [寻找丢失的项链]<br>
+    一个简单的小任务。<br>
+    <<set $quest_necklace to "active">><br>
+<br>
+<<stop>><br>
+===<br>
+```<br>
+<br>
+### 5.4 Twine 导出与解析<br>
+<br>
+```python<br>
+# Twine (Harlowe/SugarCube) 故事解析器（Python）<br>
+# Twine 导出为 HTML 后，可以提取其中的故事数据<br>
+<br>
+from html.parser import HTMLParser<br>
+from dataclasses import dataclass, field<br>
+from typing import Dict, List, Optional<br>
+import re<br>
+import json<br>
+<br>
+@dataclass<br>
+class TwinePassage:<br>
+    """Twine 段落节点"""<br>
+    pid: str<br>
+    name: str<br>
+    text: str<br>
+    tags: List[str] = field(default_factory=list)<br>
+    links: List[str] = field(default_factory=list)  # [[链接文本->目标]]<br>
+    position: tuple = (0, 0)  # 编辑器中的位置<br>
+<br>
+class TwineHtmlParser(HTMLParser):<br>
+    """<br>
+    解析 Twine 导出的 HTML 文件<br>
+    Twine 使用 <tw-storydata> 标签存储故事数据<br>
+    """<br>
+    <br>
+    def __init__(self):<br>
+        super().__init__()<br>
+        self.story_name = ""<br>
+        self.story_data = ""<br>
+        self.passages: List[TwinePassage] = []<br>
+        self._current_passage = None<br>
+        self._in_passage = False<br>
+        self._capture_data = False<br>
+    <br>
+    def handle_starttag(self, tag, attrs):<br>
+        attrs_dict = dict(attrs)<br>
+        <br>
+        if tag == "tw-storydata":<br>
+            self.story_name = attrs_dict.get("name", "")<br>
+            self.story_data = attrs_dict.get("options", "")<br>
+        <br>
+        elif tag == "tw-passagedata":<br>
+            self._in_passage = True<br>
+            self._current_passage = {<br>
+                "pid": attrs_dict.get("pid", ""),<br>
+                "name": attrs_dict.get("name", ""),<br>
+                "tags": attrs_dict.get("tags", "").split() if attrs_dict.get("tags") else [],<br>
+                "position": (<br>
+                    int(attrs_dict.get("position", "0,0").split(",")[0]),<br>
+                    int(attrs_dict.get("position", "0,0").split(",")[1])<br>
+                ) if "position" in attrs_dict else (0, 0),<br>
+                "text": ""<br>
+            }<br>
+    <br>
+    def handle_endtag(self, tag):<br>
+        if tag == "tw-passagedata" and self._current_passage:<br>
+            text = self._current_passage["text"]<br>
+            links = self._extract_links(text)<br>
+            <br>
+            passage = TwinePassage(<br>
+                pid=self._current_passage["pid"],<br>
+                name=self._current_passage["name"],<br>
+                text=text,<br>
+                tags=self._current_passage["tags"],<br>
+                links=links,<br>
+                position=self._current_passage["position"]<br>
+            )<br>
+            self.passages.append(passage)<br>
+            self._in_passage = False<br>
+            self._current_passage = None<br>
+    <br>
+    def handle_data(self, data):<br>
+        if self._in_passage and self._current_passage is not None:<br>
+            self._current_passage["text"] += data<br>
+    <br>
+    def _extract_links(self, text: str) -> List[str]:<br>
+        """提取 Twine 链接语法：[[目标]] 或 [[文本->目标]] 或 [[目标|文本]]"""<br>
+        pattern = r'\[\[(.*?)\]\]'<br>
+        matches = re.findall(pattern, text)<br>
+        targets = []<br>
+        for match in matches:<br>
+            # 处理 "文本->目标" 或 "目标|文本" 格式<br>
+            if '->' in match:<br>
+                targets.append(match.split('->')[-1].strip())<br>
+            elif '|' in match:<br>
+                targets.append(match.split('|')[0].strip())<br>
+            else:<br>
+                targets.append(match.strip())<br>
+        return targets<br>
+<br>
+<br>
+class TwineToCustomConverter:<br>
+    """<br>
+    将 Twine 故事转换为自定义 JSON 格式<br>
+    便于导入到自定义游戏引擎<br>
+    """<br>
+    <br>
+    def convert(self, parser: TwineHtmlParser) -> dict:<br>
+        passages = {}<br>
+        for p in parser.passages:<br>
+            passages[p.name] = {<br>
+                "id": p.pid,<br>
+                "text": p.text,<br>
+                "tags": p.tags,<br>
+                "links": [<br>
+                    {<br>
+                        "target": link,<br>
+                        "conditions": []  # Twine 基础版无内置条件<br>
+                    }<br>
+                    for link in p.links<br>
+                ],<br>
+                "position": p.position<br>
+            }<br>
+        <br>
+        return {<br>
+            "source": "twine",<br>
+            "story_name": parser.story_name,<br>
+            "format": "custom-v1",<br>
+            "entry_point": parser.passages[0].name if parser.passages else "",<br>
+            "passages": passages<br>
+        }<br>
+    <br>
+    def convert_with_macros(self, parser: TwineHtmlParser) -> dict:<br>
+        """<br>
+        增强版本：解析 SugarCube 宏命令<br>
+        支持 (if:), (set:), (goto:) 等<br>
+        """<br>
+        passages = {}<br>
+        for p in parser.passages:<br>
+            parsed = self._parse_macros(p.text)<br>
+            passages[p.name] = {<br>
+                "id": p.pid,<br>
+                "text": parsed["display_text"],<br>
+                "tags": p.tags,<br>
+                "conditions": parsed["conditions"],<br>
+                "variable_ops": parsed["set_ops"],<br>
+                "links": parsed["links"],<br>
+                "position": p.position<br>
+            }<br>
+        <br>
+        return {<br>
+            "source": "twine-sugarcube",<br>
+            "story_name": parser.story_name,<br>
+            "format": "custom-v1",<br>
+            "entry_point": parser.passages[0].name if parser.passages else "",<br>
+            "passages": passages<br>
+        }<br>
+    <br>
+    def _parse_macros(self, text: str) -> dict:<br>
+        """解析 SugarCube 宏"""<br>
+        result = {<br>
+            "display_text": text,<br>
+            "conditions": [],<br>
+            "set_ops": [],<br>
+            "links": []<br>
+        }<br>
+        <br>
+        # 解析 (set: $var to value)<br>
+        set_pattern = r'\(set:\s*\$(\w+)\s+to\s+([^)]+)\)'<br>
+        for match in re.finditer(set_pattern, text):<br>
+            result["set_ops"].append({<br>
+                "variable": match.group(1),<br>
+                "value": self._parse_value(match.group(2).strip())<br>
+            })<br>
+        <br>
+        # 解析 (if: $var > value)[内容]<br>
+        if_pattern = r'\(if:\s*([^)]+)\)\[(.*?)\]'<br>
+        for match in re.finditer(if_pattern, text, re.DOTALL):<br>
+            result["conditions"].append({<br>
+                "expression": match.group(1).strip(),<br>
+                "content": match.group(2).strip()<br>
+            })<br>
+        <br>
+        # 重新提取纯文本（去除宏）<br>
+        clean_text = re.sub(r'\([^)]+\)', '', text)<br>
+        clean_text = re.sub(r'\[.*?\]', '', clean_text, flags=re.DOTALL)<br>
+        result["display_text"] = clean_text.strip()<br>
+        <br>
+        # 提取链接<br>
+        link_pattern = r'\[\[(.*?)\]\]'<br>
+        for match in re.finditer(link_pattern, text):<br>
+            link_text = match.group(1)<br>
+            if '->' in link_text:<br>
+                target = link_text.split('->')[-1].strip()<br>
+            elif '|' in link_text:<br>
+                target = link_text.split('|')[0].strip()<br>
+            else:<br>
+                target = link_text.strip()<br>
+            result["links"].append(target)<br>
+        <br>
+        return result<br>
+    <br>
+    def _parse_value(self, val_str: str):<br>
+        """解析字符串值为 Python 类型"""<br>
+        val_str = val_str.strip().strip('"').strip("'")<br>
+        if val_str.lower() == "true":<br>
+            return True<br>
+        if val_str.lower() == "false":<br>
+            return False<br>
+        try:<br>
+            if "." in val_str:<br>
+                return float(val_str)<br>
+            return int(val_str)<br>
+        except ValueError:<br>
+            return val_str<br>
+<br>
+<br>
+# ===== 使用示例 =====<br>
+if __name__ == "__main__":<br>
+    # 模拟 Twine 导出的 HTML 内容<br>
+    sample_html = """<br>
+    <tw-storydata name="Demo Adventure" startnode="1"><br>
+        <tw-passagedata pid="1" name="Start" tags="intro" position="100,100"><br>
+            你站在一个分岔路口。<br>
+            [[向左走->Forest]]<br>
+            [[向右走->Village]]<br>
+        </tw-passagedata><br>
+        <tw-passagedata pid="2" name="Forest" tags="danger" position="50,250"><br>
+            森林里很暗，你听到了奇怪的声音。<br>
+            (set: $fear to $fear + 1)<br>
+            [[继续深入->DeepForest]]<br>
+            [[返回->Start]]<br>
+        </tw-passagedata><br>
+        <tw-passagedata pid="3" name="Village" tags="safe" position="150,250"><br>
+            村民们热情地欢迎了你。<br>
+            (if: $visited_village)[欢迎回来！]<br>
+            (set: $visited_village to true)<br>
+            [[离开->Start]]<br>
+        </tw-passagedata><br>
+    </tw-storydata><br>
+    """<br>
+    <br>
+    parser = TwineHtmlParser()<br>
+    parser.feed(sample_html)<br>
+    <br>
+    print(f"故事名: {parser.story_name}")<br>
+    print(f"段落数: {len(parser.passages)}")<br>
+    <br>
+    for p in parser.passages:<br>
+        print(f"\n--- {p.name} [{p.pid}] ---")<br>
+        print(f"标签: {p.tags}")<br>
+        print(f"链接: {p.links}")<br>
+        print(f"文本:\n{p.text[:200]}...")<br>
+    <br>
+    # 转换为自定义格式<br>
+    converter = TwineToCustomConverter()<br>
+    custom_format = converter.convert_with_macros(parser)<br>
+    print("\n\n转换后的 JSON:")<br>
+    print(json.dumps(custom_format, ensure_ascii=False, indent=2))<br>
+```<br>
+<br>
+---<br>
+<br>
+## 6. 综合示例：小型叙事系统完整实现<br>
+<br>
+以下是一个可运行的最小完整示例，整合了上述多个概念。<br>
+<br>
+```python<br>
+# mini_narrative_system.py<br>
+# 最小可运行叙事系统：整合 Etudes + 对话树 + 分支 + 变量<br>
+<br>
+from typing import Dict, List, Optional, Callable, Any<br>
+from dataclasses import dataclass, field<br>
+from enum import Enum<br>
+import json<br>
+<br>
+# ===== 核心枚举 =====<br>
+class NodeState(Enum):<br>
+    INACTIVE = 0<br>
+    ACTIVE = 1<br>
+    COMPLETED = 2<br>
+<br>
+class Priority(Enum):<br>
+    LOW = 1<br>
+    NORMAL = 2<br>
+    HIGH = 3<br>
+    CRITICAL = 4<br>
+<br>
+# ===== 数据模型 =====<br>
+@dataclass<br>
+class NarrativeNode:<br>
+    """叙事节点（简化版 Etude）"""<br>
+    id: str<br>
+    name: str<br>
+    priority: Priority = Priority.NORMAL<br>
+    state: NodeState = NodeState.INACTIVE<br>
+    required_flags: Dict[str, Any] = field(default_factory=dict)<br>
+    set_flags_on_enter: Dict[str, Any] = field(default_factory=dict)<br>
+    children: List[str] = field(default_factory=list)<br>
+    dialogue_entry: Optional[str] = None<br>
+    conflicts: List[str] = field(default_factory=list)<br>
+<br>
+@dataclass<br>
+class DialogueEntry:<br>
+    """对话条目"""<br>
+    id: str<br>
+    speaker: str<br>
+    text: str<br>
+    choices: List['DialogueChoice'] = field(default_factory=list)<br>
+    auto_jump: Optional[str] = None<br>
+<br>
+@dataclass<br>
+class DialogueChoice:<br>
+    """玩家选择"""<br>
+    text: str<br>
+    target_dialogue: Optional[str] = None<br>
+    target_node: Optional[str] = None  # 选择后跳转到叙事节点<br>
+    set_flags: Dict[str, Any] = field(default_factory=dict)<br>
+<br>
+# ===== 核心系统 =====<br>
+class MiniNarrativeSystem:<br>
+    """<br>
+    最小叙事系统<br>
+    整合：Etudes式状态管理 + 对话树 + 变量系统<br>
+    """<br>
+    <br>
+    def __init__(self):<br>
+        self.flags: Dict[str, Any] = {}<br>
+        self.nodes: Dict[str, NarrativeNode] = {}<br>
+        self.dialogues: Dict[str, DialogueEntry] = {}<br>
+        self.current_node: Optional[NarrativeNode] = None<br>
+        self.current_dialogue: Optional[DialogueEntry] = None<br>
+        self.choice_history: List[str] = []<br>
+        self.event_log: List[str] = []<br>
+    <br>
+    def register_node(self, node: NarrativeNode):<br>
+        self.nodes[node.id] = node<br>
+    <br>
+    def register_dialogue(self, dialogue: DialogueEntry):<br>
+        self.dialogues[dialogue.id] = dialogue<br>
+    <br>
+    def set_flag(self, key: str, value: Any):<br>
+        old = self.flags.get(key)<br>
+        self.flags[key] = value<br>
+        self.event_log.append(f"[Flag] {key}: {old} -> {value}")<br>
+    <br>
+    def get_flag(self, key: str, default=None):<br>
+        return self.flags.get(key, default)<br>
+    <br>
+    def evaluate_nodes(self):<br>
+        """评估所有节点，激活满足条件的"""<br>
+        candidates = []<br>
+        for node in self.nodes.values():<br>
+            if node.state == NodeState.COMPLETED:<br>
+                continue<br>
+            if self._check_conditions(node.required_flags):<br>
+                candidates.append(node)<br>
+        <br>
+        # 按优先级排序<br>
+        candidates.sort(key=lambda n: n.priority.value, reverse=True)<br>
+        <br>
+        # 激活最高优先级且不冲突的<br>
+        activated = []<br>
+        for node in candidates:<br>
+            if any(conflict in activated for conflict in node.conflicts):<br>
+                continue<br>
+            activated.append(node.id)<br>
+            if node.state == NodeState.INACTIVE:<br>
+                self._activate_node(node)<br>
+    <br>
+    def _check_conditions(self, conditions: Dict[str, Any]) -> bool:<br>
+        for key, expected in conditions.items():<br>
+            if self.flags.get(key) != expected:<br>
+                return False<br>
+        return True<br>
+    <br>
+    def _activate_node(self, node: NarrativeNode):<br>
+        node.state = NodeState.ACTIVE<br>
+        self.event_log.append(f"[Node] 激活: {node.name} ({node.id})")<br>
+        <br>
+        # 设置进入标志<br>
+        for k, v in node.set_flags_on_enter.items():<br>
+            self.set_flag(k, v)<br>
+        <br>
+        # 如果有关联对话，自动进入<br>
+        if node.dialogue_entry and node.dialogue_entry in self.dialogues:<br>
+            self.current_node = node<br>
+            self.start_dialogue(node.dialogue_entry)<br>
+    <br>
+    def start_dialogue(self, dialogue_id: str):<br>
+        if dialogue_id not in self.dialogues:<br>
+            return<br>
+        self.current_dialogue = self.dialogues[dialogue_id]<br>
+        self._render_dialogue()<br>
+    <br>
+    def _render_dialogue(self):<br>
+        if not self.current_dialogue:<br>
+            return<br>
+        d = self.current_dialogue<br>
+        print(f"\n{'='*40}")<br>
+        print(f"[{d.speaker}]")<br>
+        print(f"{d.text}")<br>
+        print(f"{'='*40}")<br>
+        <br>
+        if d.auto_jump:<br>
+            print(f"(自动跳转至: {d.auto_jump})")<br>
+            self._jump_to(d.auto_jump)<br>
+            return<br>
+        <br>
+        if d.choices:<br>
+            for i, choice in enumerate(d.choices, 1):<br>
+                print(f"  {i}. {choice.text}")<br>
+    <br>
+    def select_choice(self, index: int):<br>
+        """玩家选择选项（0-based index）"""<br>
+        if not self.current_dialogue:<br>
+            return<br>
+        <br>
+        choices = self.current_dialogue.choices<br>
+        if index < 0 or index >= len(choices):<br>
+            return<br>
+        <br>
+        choice = choices[index]<br>
+        self.choice_history.append(choice.text)<br>
+        self.event_log.append(f"[Choice] 选择: {choice.text}")<br>
+        <br>
+        # 应用选择效果<br>
+        for k, v in choice.set_flags.items():<br>
+            self.set_flag(k, v)<br>
+        <br>
+        # 跳转<br>
+        if choice.target_dialogue:<br>
+            self._jump_to(choice.target_dialogue)<br>
+        elif choice.target_node:<br>
+            self.current_dialogue = None<br>
+            self._activate_node(self.nodes[choice.target_node])<br>
+        else:<br>
+            self.current_dialogue = None<br>
+            # 对话结束，重新评估节点<br>
+            self.evaluate_nodes()<br>
+    <br>
+    def _jump_to(self, target: str):<br>
+        if target in self.dialogues:<br>
+            self.start_dialogue(target)<br>
+        elif target in self.nodes:<br>
+            self.current_dialogue = None<br>
+            self._activate_node(self.nodes[target])<br>
+    <br>
+    def complete_current_node(self):<br>
+        """完成当前节点"""<br>
+        if self.current_node:<br>
+            self.current_node.state = NodeState.COMPLETED<br>
+            self.event_log.append(f"[Node] 完成: {self.current_node.name}")<br>
+            self.current_node = None<br>
+            self.evaluate_nodes()<br>
+    <br>
+    def save(self) -> str:<br>
+        """导出为 JSON 存档"""<br>
+        data = {<br>
+            "flags": self.flags,<br>
+            "node_states": {nid: n.state.value for nid, n in self.nodes.items()},<br>
+            "choice_history": self.choice_history,<br>
+            "event_log": self.event_log<br>
+        }<br>
+        return json.dumps(data, ensure_ascii=False, indent=2)<br>
+<br>
+<br>
+# ===== 使用示例：完整流程 =====<br>
+def demo_full_system():<br>
+    sys = MiniNarrativeSystem()<br>
+    <br>
+    # 注册叙事节点<br>
+    sys.register_node(NarrativeNode(<br>
+        id="intro",<br>
+        name="开场",<br>
+        priority=Priority.CRITICAL,<br>
+        dialogue_entry="dlg_intro"<br>
+    ))<br>
+    <br>
+    sys.register_node(NarrativeNode(<br>
+        id="village_quest",<br>
+        name="村庄任务",<br>
+        priority=Priority.NORMAL,<br>
+        required_flags={"intro_completed": True},<br>
+        dialogue_entry="dlg_village"<br>
+    ))<br>
+    <br>
+    sys.register_node(NarrativeNode(<br>
+        id="forest_quest",<br>
+        name="森林任务",<br>
+        priority=Priority.NORMAL,<br>
+        required_flags={"intro_completed": True},<br>
+        dialogue_entry="dlg_forest",<br>
+        conflicts=["village_quest"]  # 与村庄任务互斥<br>
+    ))<br>
+    <br>
+    # 注册对话<br>
+    sys.register_dialogue(DialogueEntry(<br>
+        id="dlg_intro",<br>
+        speaker="旁白",<br>
+        text="你醒来在一个陌生的房间里。门开着，外面似乎有声音。",<br>
+        choices=[<br>
+            DialogueChoice(<br>
+                text="走出去看看",<br>
+                target_dialogue="dlg_outside",<br>
+                set_flags={"intro_completed": True}<br>
+            ),<br>
+            DialogueChoice(<br>
+                text="先在房间里搜索",<br>
+                target_dialogue="dlg_search_room"<br>
+            )<br>
+        ]<br>
+    ))<br>
+    <br>
+    sys.register_dialogue(DialogueEntry(<br>
+        id="dlg_search_room",<br>
+        speaker="旁白",<br>
+        text="你发现了一把生锈的钥匙，但没有其他有价值的东西。",<br>
+        choices=[<br>
+            DialogueChoice(<br>
+                text="走出去",<br>
+                target_dialogue="dlg_outside",<br>
+                set_flags={"intro_completed": True, "has_key": True}<br>
+            )<br>
+        ]<br>
+    ))<br>
+    <br>
+    sys.register_dialogue(DialogueEntry(<br>
+        id="dlg_outside",<br>
+        speaker="旁白",<br>
+        text="你来到外面。左边是村庄，右边是森林。",<br>
+        choices=[<br>
+            DialogueChoice(<br>
+                text="去村庄",<br>
+                target_node="village_quest"<br>
+            ),<br>
+            DialogueChoice(<br>
+                text="去森林",<br>
+                target_node="forest_quest"<br>
+            )<br>
+        ]<br>
+    ))<br>
+    <br>
+    sys.register_dialogue(DialogueEntry(<br>
+        id="dlg_village",<br>
+        speaker="村长",<br>
+        text="欢迎，旅行者！我们正被狼群困扰，你能帮忙吗？",<br>
+        choices=[<br>
+            DialogueChoice(<br>
+                text="接受任务",<br>
+                set_flags={"quest_wolves": "accepted"}<br>
+            ),<br>
+            DialogueChoice(<br>
+                text="拒绝",<br>
+                set_flags={"quest_wolves": "refused"}<br>
+            )<br>
+        ]<br>
+    ))<br>
+    <br>
+    sys.register_dialogue(DialogueEntry(<br>
+        id="dlg_forest",<br>
+        speaker="神秘声音",<br>
+        text="森林深处传来低语...你确定要继续吗？",<br>
+        choices=[<br>
+            DialogueChoice(<br>
+                text="深入探索",<br>
+                set_flags={"forest_explored": True}<br>
+            ),<br>
+            DialogueChoice(<br>
+                text="退回去",<br>
+                target_dialogue="dlg_outside"<br>
+            )<br>
+        ]<br>
+    ))<br>
+    <br>
+    # 启动系统<br>
+    print("=" * 50)<br>
+    print("启动叙事系统演示")<br>
+    print("=" * 50)<br>
+    sys.evaluate_nodes()<br>
+    <br>
+    # 模拟玩家交互<br>
+    # 在实际游戏中，这些来自UI输入<br>
+    sys.select_choice(1)  # 先搜索房间<br>
+    sys.select_choice(0)  # 走出去<br>
+    sys.select_choice(0)  # 去村庄<br>
+    sys.select_choice(0)  # 接受任务<br>
+    <br>
+    print("\n" + "=" * 50)<br>
+    print("事件日志:")<br>
+    print("=" * 50)<br>
+    for log in sys.event_log:<br>
+        print(log)<br>
+    <br>
+    print("\n" + "=" * 50)<br>
+    print("存档数据:")<br>
+    print("=" * 50)<br>
+    print(sys.save())<br>
+<br>
+<br>
+if __name__ == "__main__":<br>
+    demo_full_system()<br>
+```<br>
+<br>
+---<br>
+<br>
+## 总结<br>
+<br>
+本文档覆盖了游戏叙事架构的五个核心领域：<br>
+<br>
+| 模块 | 关键技术 | 适用规模 |<br>
+|------|----------|----------|<br>
+| Etudes 系统 | 层级化状态机、优先级排序、冲突检测 | 大型RPG |<br>
+| 对话系统 | 节点树、条件判断、变量绑定 | 通用 |<br>
+| 变量管理 | 全局Flag、命名空间、持久化 | 通用 |<br>
+| 分支剧情 | 状态机、延迟反馈、多结局 | 叙事驱动游戏 |<br>
+| 工具集成 | articy、ink、Yarn、Twine | 通用 |<br>
+<br>
+**选型建议：**<br>
+<br>
+- **小型项目/原型**：直接用 JSON + 简单状态机，或集成 Twine<br>
+- **中型项目**：使用 ink 或 Yarn Spinner，自研轻量状态机<br>
+- **大型项目**：参考 Etudes 架构，自研层级化状态管理，或集成 articy:draft X<br>
+<br>
+---<br>
+<br>
+## 参考来源<br>
+<br>
+- Owlcat Games: GDC 2026 — Managing 30,000+ Narrative Variables<br>
+- Inkle Studios: ink 脚本语言官方文档 (https://github.com/inkle/ink)<br>
+- Yarn Spinner: 官方文档 (https://docs.yarnspinner.dev/)<br>
+- articy: draft X: 官方开发者文档<br>
+- Twine: Harlowe / SugarCube 格式规范<br>
+</article></body>
+</html>

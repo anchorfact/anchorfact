@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-gaming-theory",
+  "headline": "AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy",
+  "description": "AI has mastered games through different strategic paradigms: perfect information (chess, Go -- AlphaZero, 2017-2018), imperfect information (poker -- Libratus/Pluribus, 2017-2019), and the hardest frontier -- games combining imperfect information, multi-agent negotiation, and natural language communication (DeepNash for Stratego, Cicero for Diplomacy). Each milestone has advanced computational game theory and multi-agent strategy.",
+  "dateCreated": "2026-05-24T18:00:02.968Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Mastering the game of Stratego with model-free multiagent reinforcement learning (DeepNash)",
+      "sameAs": "https://www.nature.com/articles/d41586-022-04246-7"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Human-level play in the game of Diplomacy by combining language models with strategic reasoning (Cicero)",
+      "sameAs": "https://www.science.org/doi/10.1126/science.ade9097"
+    }
+  ]
+}

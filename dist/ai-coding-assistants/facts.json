@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f1",
+    "text": "GitHub Copilot (Peng et al. 2024, ACM CACM) significantly improved developer productivity — a controlled experiment found that developers using Copilot completed tasks 55.8% faster than those without AI assistance.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1145/3643756"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f2",
+    "text": "Codex (Chen et al. 2021, OpenAI) demonstrated that LLMs fine-tuned on code can solve 28.8% of novel programming problems from docstrings, establishing the foundation for AI coding assistants.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2107.03374"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f3",
+    "text": "StarCoder2 (BigCode Project, 2024) provides a fully open-source, transparent code LLM trained on The Stack v2, enabling reproducible research on AI code generation with permissively licensed training data.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2402.19173"
+    }
+  }
+]

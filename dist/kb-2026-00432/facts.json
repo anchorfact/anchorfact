@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-business-01",
+    "text": "A brand is more than a logo — it's the sum of perceptions, emotions, and associations customers have",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.simonandschuster.com/books/Building-Strong-Brands/David-A-Aaker/9780029001516"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-business-02",
+    "text": "Apple, Nike, Coca-Cola are among the world's most valuable brands",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.simonandschuster.com/books/Building-Strong-Brands/David-A-Aaker/9780029001516"
+    }
+  }
+]

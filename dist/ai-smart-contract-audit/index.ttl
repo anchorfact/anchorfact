@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-smart-contract-audit>
+  a schema:article ;
+  schema:headline "AI Smart Contract Auditing: Vulnerability Detection, Formal Verification, and Blockchain Security" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-smart-contract-audit>
+  schema:citation <https://ieeexplore.ieee.org/abstract/document/11121619> .
+
+<https://anchorfact.org/kb/ai-smart-contract-audit>
+  schema:citation <https://arxiv.org/abs/2410.09381> .

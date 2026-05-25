@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI for Nuclear Fusion: Plasma Control, Disruption Prediction, and Accelerated Discovery — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+AI is accelerating the path to commercial fusion energy by solving two of the hardest problems in plasma physics: real-time control of magnetically confined 100-million-degree plasma and prediction of dangerous instabilities (disruptions) that can damage reactor walls. From DeepMind's deep RL plasma controller to disruption prediction systems deployed on ITER, machine learning is becoming an essential tool in the fusion engineer's toolkit.<br>
+<br>
+## Core Explanation<br>
+Nuclear fusion promises virtually unlimited clean energy if we can confine and control a plasma at temperatures exceeding 100 million degrees Celsius. The leading approach, the tokamak (a doughnut-shaped magnetic confinement device), faces two key challenges: (1) Plasma shape control -- 10-20 magnetic coils must be precisely coordinated in real time to maintain desired plasma configuration; (2) Disruption avoidance -- plasma instabilities can suddenly release stored energy onto the reactor wall, causing significant damage. AI addresses both: deep RL learns control policies by interacting with plasma simulators, while supervised deep learning predicts disruptions from multi-modal diagnostic signals.<br>
+<br>
+## Detailed Analysis<br>
+DeepMind's approach (2022): A deep RL agent was trained in a simulator to control 19 magnetic coils of the TCV tokamak. The policy network mapped sensor readings to coil currents, trained using a reward function penalizing deviations from the desired plasma shape. The agent discovered novel plasma configurations including the "droplet" shape (better heat exhaust) and "snowflake" divertor (spreads heat load). Crucially, the controller transferred successfully to the physical tokamak with minimal fine-tuning. Disruption prediction: Current tokamaks experience disruptions at rates of 10-30% of discharges, with ITER requiring <1% to avoid damage. ML models ingest multi-modal time-series data and predict disruptions 30-100ms in advance. DisruptionBench provides standardized train/test splits across multiple tokamaks, revealing that within-device prediction works well (F1>0.9) while cross-device generalization remains poor. The US Department of Energy (2025) demonstrated using deep RL to prevent tearing mode instabilities in real time. Beyond control: AI is also applied to accelerate fusion materials discovery, optimize stellarator coil designs, and analyze petabytes of plasma diagnostic data.<br>
+<br>
+## Further Reading<br>
+- DeepMind Blog: Accelerating fusion science through learned plasma control<br>
+- TAE Technologies: Norman fusion device AI control<br>
+- Commonwealth Fusion Systems / SPARC: AI for HTS magnet tokamak operations<br>
+</article></body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI for Signal Processing: Deep Learning for Wireless, Radar, and Biomedical Signals — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+AI is transforming signal processing -- from wireless receivers that learn to decode signals better than mathematically-designed algorithms, to ECG analysis matching cardiologist accuracy, to radar systems that detect and classify objects via deep learning. The convergence of deep learning and signal processing is creating adaptive systems that outperform decades of handcrafted DSP theory.<br>
+<br>
+## Core Explanation<br>
+Classical signal processing: based on mathematical models (Fourier transforms, filters, statistical detection). Works well under assumed conditions, degrades in real-world non-idealities. AI approach: neural networks learn optimal processing directly from data. Key domains: (1) Wireless -- neural channel estimation, neural decoding, end-to-end learned transceivers; (2) Biomedical -- ECG (heart), EEG (brain), EMG (muscle), PPG (blood oxygen) classified via CNNs/RNNs/Transformers; (3) Audio/speech -- denoising (DeepFilterNet), source separation (Demucs), enhancement for hearing aids; (4) Radar -- target detection (CFAR replacement), classification (drone vs bird), SAR image formation.<br>
+<br>
+## Detailed Analysis<br>
+Wireless AI: 5G NR and future 6G require massive MIMO (64-256 antennas) and mmWave frequencies. Model-driven DL (deep unfolding): unroll iterative optimization algorithms (ISTA, AMP) into neural network layers with learnable parameters. Biomedical: Nature Medicine 2019 study trained 34-layer CNN on 91,232 single-lead ECG recordings from 53,549 patients, deployed clinically via Zio patch wearable. Radar AI: CNNs distinguish targets from clutter (sea, ground, weather) with lower false alarms. Drone classification via micro-Doppler radar signatures. Key challenges: data scarcity (medical/radar data is expensive or classified), real-time constraints (gigabit-per-second with nanosecond latency), and robustness (adversarial signals, distribution shift).<br>
+<br>
+## Further Reading<br>
+- DeepSig: AI-Native Wireless Communications<br>
+- PhysioNet: Open Medical Signal Datasets<br>
+- GNU Radio + TensorFlow: Software-Defined Radio + AI<br>
+</article></body>
+</html>

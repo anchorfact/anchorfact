@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/ai-in-gaming",
+  "headline": "AI in Gaming: NPCs, Procedural Content, and AlphaStar",
+  "description": "AI in gaming spans from NPC behavior control to procedural world generation and competitive gameplay. AlphaStar mastered StarCraft II; SIMA learns to follow instructions across multiple 3D games without game-specific engineering.",
+  "dateCreated": "2026-05-24T18:00:03.084Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Grandmaster level in StarCraft II using multi-agent reinforcement learning (AlphaStar)",
+      "sameAs": "https://www.nature.com/articles/s41586-019-1724-z"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "SIMA: A Generalist AI Agent for 3D Virtual Environments",
+      "sameAs": "https://deepmind.google/blog/sima-generalist-ai-agent-for-3d-virtual-environments/"
+    }
+  ]
+}

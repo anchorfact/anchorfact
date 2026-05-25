@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00468>
+  a schema:TechArticle ;
+  schema:headline "African Geography" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00468>
+  schema:citation <https://www.pearson.com/en-us/subject-catalog/p/the-geography-of-sub-saharan-africa/P200000010264> .

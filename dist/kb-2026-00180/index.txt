@@ -1,0 +1,21 @@
+# Playwright
+Confidence: high
+Last verified: 2026-05-22
+Generation: human_only
+
+
+
+
+
+## TL;DR
+
+Playwright is a cross-browser automation library by Microsoft enabling reliable end-to-end testing across Chromium, Firefox, and WebKit with a single API. Unlike Cypress, Playwright runs outside the browser as a Node.js process, supporting multiple tabs, iframes, and native mobile emulation.
+
+## Core Explanation
+
+Key features: auto-waiting for elements, trace viewer (debug test failures), test generator (`codegen` records actions), API testing (same syntax for UI and API), mobile device emulation (iPhone, Pixel). Supports JavaScript, TypeScript, Python, .NET, Java. Playwright has the most comprehensive cross-browser coverage of any testing tool.
+
+## Further Reading
+
+- [Playwright Documentation](https://playwright.dev/)
+

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-content-creation>
+  a schema:article ;
+  schema:headline "AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-content-creation>
+  schema:citation <https://arxiv.org/search/?query=generative+AI+content+creation+survey> .
+
+<https://anchorfact.org/kb/ai-content-creation>
+  schema:citation <https://arxiv.org/search/?query=human+AI+content+creation+productivity> .

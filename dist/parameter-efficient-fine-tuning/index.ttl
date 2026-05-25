@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/parameter-efficient-fine-tuning>
+  a schema:TechArticle ;
+  schema:headline "Parameter-Efficient Fine-Tuning: LoRA, QLoRA, and Adapters" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/parameter-efficient-fine-tuning>
+  schema:citation <https://arxiv.org/abs/2106.09685> .
+
+<https://anchorfact.org/kb/parameter-efficient-fine-tuning>
+  schema:citation <https://arxiv.org/abs/2305.14314> .

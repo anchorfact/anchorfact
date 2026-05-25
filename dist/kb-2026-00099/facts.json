@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "The Web Cryptography API provides browser-native cryptographic operations — hashing, signing, encryption, key generation — without external libraries",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/WebCryptoAPI/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "The Web Cryptography API provides browser-native cryptographic operations — hashing, signing, encryption, key generation — without external libraries. It exposes SubtleCrypto (`crypto.subtle`) for low-level operations and `crypto.getRandomValues()` for cryptographically secure random generation.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/WebCryptoAPI/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "Supported algorithms: SHA-256/384/512, HMAC, AES-CBC/GCM/CTR, RSA-OAEP/PSS, ECDSA, ECDH, PBKDF2.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/WebCryptoAPI/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-003",
+    "text": "Keys can be exported/imported in formats: raw, PKCS#8, SPKI, JWK.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/WebCryptoAPI/"
+    }
+  }
+]

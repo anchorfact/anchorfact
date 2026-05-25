@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/network-intrusion-detection",
+  "headline": "Network Intrusion Detection: AI-Powered Anomaly Detection and Zero-Day Threat Identification",
+  "description": "Network Intrusion Detection Systems (NIDS) are the immune system of the internet — monitoring traffic for malicious activity. AI is transforming NIDS from signature-based pattern matching (misses novel attacks) to behavior-based anomaly detection that identifies zero-day threats, insider attacks, and advanced persistent threats by learning what \"normal\" network behavior looks like.",
+  "dateCreated": "2026-05-24T18:00:03.435Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Enhanced anomaly network intrusion detection via machine learning and deep learning models",
+      "sameAs": "https://www.nature.com/articles/s41598-025-97398-1"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "A deep learning/machine learning approach for anomaly-based network intrusion detection (Hybrid NIDS)",
+      "sameAs": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1625891/full"
+    }
+  ]
+}

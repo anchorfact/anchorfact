@@ -1,0 +1,18 @@
+# Instruction Tuning: Teaching LLMs to Follow Directions
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Instruction tuning transforms raw language models into helpful assistants by training them to follow natural language instructions. It's the critical step between pretraining and deployment for modern LLMs.
+
+## Core Explanation
+The standard post-training pipeline: pretraining (next-token prediction on web data) → SFT (supervised fine-tuning on instruction-response pairs) → alignment (DPO/RLHF for helpfulness and safety). Instruction data sources: human-written (OpenAI), template-generated (T0, FLAN), model-generated (Self-Instruct, Evol-Instruct).
+
+## Detailed Analysis
+Instruction format: (system prompt + user instruction → assistant response). Data quality matters more than quantity — 1,000 high-quality diverse instructions often outperform 100,000 noisy ones. Evol-Instruct (WizardLM) iteratively rewrites simple instructions into increasingly complex versions.
+
+## Further Reading
+- HuggingFace: Instruction Datasets
+- lmsys: Chatbot Arena
+- Stanford Alpaca

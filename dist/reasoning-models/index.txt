@@ -1,0 +1,18 @@
+# AI Reasoning Models: OpenAI o1/o3 and DeepSeek-R1
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Reasoning models like OpenAI o1/o3 and DeepSeek-R1 represent a paradigm shift: instead of answering immediately, they "think" through problems via internal chain-of-thought, scaling inference-time compute for dramatically better math, coding, and scientific reasoning.
+
+## Core Explanation
+Standard LLMs (GPT-4, Claude) produce answers token-by-token with equal compute per token. Reasoning models allocate variable compute: easy questions get quick answers; hard problems trigger extended internal reasoning (hundreds to thousands of tokens). This mimics how humans spend more time on harder problems.
+
+## Detailed Analysis
+o1 launched September 2024; o3 (December 2024) achieved 87.5% on ARC-AGI benchmark. DeepSeek-R1 proved open-weight models can match closed reasoning through pure RL training — no human reasoning demonstrations needed. Google Gemini 2.0 Flash Thinking and Anthropic's extended thinking mode followed, making reasoning a standard LLM capability by 2025.
+
+## Further Reading
+- OpenAI: o1/o3 System Cards
+- DeepSeek-R1 GitHub
+- ARC Prize: Reasoning Benchmark

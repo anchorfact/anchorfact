@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/mental-health-fundamentals",
+  "headline": "Mental Health: Disorders, Treatments, and Neurobiology",
+  "description": "Mental health encompasses emotional, psychological, and social well-being. The biopsychosocial model recognizes mental disorders arise from genetic vulnerability, neurobiological dysfunction, psychological factors, and social determinants.",
+  "dateCreated": "2026-05-24T18:00:04.347Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "DSM-5-TR",
+      "sameAs": "https://www.psychiatry.org/psychiatrists/practice/dsm"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "World Mental Health Report 2022",
+      "sameAs": "https://www.who.int/publications/i/item/9789240049338"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/contemporary-art-trends>
+  a schema:Article ;
+  schema:headline "Contemporary Art Trends and the Digital Turn" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/contemporary-art-trends>
+  schema:citation <https://mitpress.mit.edu/9780262046183/> .
+
+<https://anchorfact.org/kb/contemporary-art-trends>
+  schema:citation <https://www.christies.com/about-us/press-archive/details> .
+
+<https://anchorfact.org/kb/contemporary-art-trends>
+  schema:citation <https://thamesandhudson.com/art-since-1900/> .
+
+<https://anchorfact.org/kb/contemporary-art-trends>
+  schema:citation <https://www.tate.org.uk/publishing/> .

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-drug-repurposing>
+  a schema:article ;
+  schema:headline "AI for Drug Repurposing: Identifying New Uses for Existing Drugs Through Machine Learning" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-drug-repurposing>
+  schema:citation <https://arxiv.org/search/?query=drug+repurposing+machine+learning+knowledge+graph> .
+
+<https://anchorfact.org/kb/ai-drug-repurposing>
+  schema:citation <https://arxiv.org/search/?query=AI+drug+repositioning+clinical+trial> .

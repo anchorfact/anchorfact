@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-nuclear-fusion",
+  "headline": "AI for Nuclear Fusion: Plasma Control, Disruption Prediction, and Accelerated Discovery",
+  "description": "AI is accelerating the path to commercial fusion energy by solving two of the hardest problems in plasma physics: real-time control of magnetically confined 100-million-degree plasma and prediction of dangerous instabilities (disruptions) that can damage reactor walls. From DeepMind's deep RL plasma controller to disruption prediction systems deployed on ITER, machine learning is becoming an essential tool in the fusion engineer's toolkit.",
+  "dateCreated": "2026-05-24T18:00:03.010Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Magnetic control of tokamak plasmas through deep reinforcement learning",
+      "sameAs": "https://www.nature.com/articles/s41586-021-04301-9"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "DisruptionBench and Complimentary New Models: Systematically Evaluate ML-Driven Disruption Prediction",
+      "sameAs": "https://link.springer.com/article/10.1007/s10894-025-00495-2"
+    }
+  ]
+}

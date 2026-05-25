@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00381",
+  "headline": "Basketball Fundamentals",
+  "description": "Basketball (James Naismith, 1891, Springfield, MA) is played 5v5 on a court with hoops at each end. NBA (1946) is the premier professional league. Scoring: 2pts (inside arc), 3pts (beyond arc), 1pt (free throw). Positions: point guard, shooting guard, small forward, power forward, center.",
+  "dateCreated": "2026-05-24T18:00:04.599Z",
+  "dateModified": "2026-05-24T18:00:04.599Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Basketball (And Other Things) (Shea Serrano)",
+      "sameAs": "https://www.abramsbooks.com/product/basketball-and-other-things_9781419726477/"
+    }
+  ]
+}

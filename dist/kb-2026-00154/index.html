@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Docker Compose — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+<br>
+Docker Compose defines and runs multi-container Docker applications using a YAML file (`docker-compose.yml`). One command (`docker compose up`) starts all services. Ideal for development environments and single-host production deployments.<br>
+<br>
+## Core Explanation<br>
+<br>
+Services, networks, volumes defined declaratively. `depends_on` controls startup order (but not readiness — use healthchecks). Environment variables via `.env` file or inline. Profiles enable conditional service activation. Compose v2 is written in Go (plugin). For multi-host, use Docker Swarm or Kubernetes.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Docker Compose Documentation](https://docs.docker.com/compose/)<br>
+</article></body>
+</html>

@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-01",
+    "text": "Large Language Models are Transformer-based neural networks trained on internet-scale text corpora to predict and generate human language",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.48550/arXiv.2005.14165"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-02",
+    "text": "They exhibit emergent abilities — qualitatively new capabilities that appear abruptly when model size exceeds specific thresholds, without being explicitly programmed",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.48550/arXiv.2206.07682"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-03",
+    "text": "The key insight is scaling: as model size, training data volume, and compute budget increase simultaneously, model performance improves predictably — but also acquires qualitatively new capabilities that smaller models simply do not possess",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.48550/arXiv.2203.15556"
+    }
+  }
+]

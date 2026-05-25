@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-logistics",
+  "headline": "AI for Logistics: Last-Mile Delivery, Fleet Routing, and Warehouse Automation",
+  "description": "AI powers the invisible logistics backbone behind every online order -- predicting what customers will order before they click, routing millions of packages through warehouse robots, and optimizing delivery routes in real-time. From Amazon's fulfillment centers to UPS's 10M-gallon fuel savings, AI logistics delivers the physical outcomes of digital intelligence.",
+  "dateCreated": "2026-05-24T18:00:02.998Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Artificial Intelligence in Supply Chain Optimization: A Comprehensive Systematic Review of 199 Articles",
+      "sameAs": "https://optimization-online.org/wp-content/uploads/2025/12/GalandeJozaniBuyuktahtakin2025_AISupplyChain_OptOnline.pdf"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "AI-driven optimization of vehicle routing problems in supply chain logistics",
+      "sameAs": "https://link.springer.com/article/10.1007/s10696-025-09653-2"
+    }
+  ]
+}

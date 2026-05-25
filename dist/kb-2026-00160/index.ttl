@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00160>
+  a schema:TechArticle ;
+  schema:headline "Microservices Architecture" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00160>
+  schema:citation <https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/> .

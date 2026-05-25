@@ -1,0 +1,21 @@
+# Package Managers (npm, yarn, pnpm)
+Confidence: high
+Last verified: 2026-05-22
+Generation: human_only
+
+
+
+
+
+## TL;DR
+
+Package managers automate dependency installation, version management, and script execution. npm (Node Package Manager) is the default for Node.js with 2M+ packages. Yarn (Facebook, 2016) added deterministic installs via lockfiles. pnpm (2017) saves disk space via content-addressable storage (symlinked node_modules).
+
+## Core Explanation
+
+`package.json`: dependencies (runtime), devDependencies (build/test), peerDependencies (host provides), optionalDependencies. Semantic versioning (semver): MAJOR.MINOR.PATCH. `^1.2.3` allows minor/patch updates; `~1.2.3` allows patch only. `package-lock.json` pins exact versions for reproducible builds. `npx` runs packages without installing.
+
+## Further Reading
+
+- [npm Documentation](https://docs.npmjs.com/)
+

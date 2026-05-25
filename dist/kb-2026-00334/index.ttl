@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00334>
+  a schema:TechArticle ;
+  schema:headline "Periodic Table" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00334>
+  schema:citation <https://iupac.org/what-we-do/periodic-table-of-elements/> .
+
+<https://anchorfact.org/kb/kb-2026-00334>
+  schema:citation <https://global.oup.com/vsi-periodic/> .
+
+<https://anchorfact.org/kb/kb-2026-00334>
+  schema:citation <https://global.oup.com/periodic-table/> .
+
+<https://anchorfact.org/kb/kb-2026-00334>
+  schema:citation <https://global.oup.com/periodic-table/> .

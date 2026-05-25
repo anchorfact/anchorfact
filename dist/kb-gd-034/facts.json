@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-001",
+    "text": "**伪装分支** — 看似不同但汇入同一点的剧情（节省成本）\n### 分支管理策略\n| 策略 | 说明 | 成本 | |------|------|------| | 完全分支 | 不同选择走向完全不同的剧情 | 极高 | | 分支合并 | 分支最终汇合到主线 | 中 | | 伪装分支 | 多个选择导向相似结果，但中间过程不同 | 低 | | 延迟反馈 | 选择的影响在后期才显现 | 中 | | 调色板 | 不同选择只影响对话风格而非剧情走向 | 极低 |\n---\n## 角色设计\n### 游戏角色的特殊性 - 玩家化身（Avatar）—— 玩家的游戏内代表 - 旁观者角色 —— 玩家通过其眼睛观察 - NPC 角色 —— 推动剧情或提供功能 ",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-002",
+    "text": "**救赎弧线** — 角色从坏变好\n### 游戏角色设计技巧 - 通过玩法展现性格（不只是对话） - 角色能力与背景故事一致 - 同伴系统：NPC 在战斗中展现性格 - 角色关系网：角色之间的动态关系\n---\n## 场景与任务设计\n### 叙事场景构成 - 设置（时间、地点、情境） - 冲突目标 - 互动玩法 - 剧情推进点 - 奖励与后果\n### 任务叙事结构 1.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-003",
+    "text": "5) = 100 × 4 = 400 分钟\n推荐参数： ├── 小型游戏：深度 1-2，宽度 2-3 ├── 中型 RPG：深度 2-3，宽度 2-4 └── 大型叙事：深度 3+，宽度 3-5（需大量资源） ```\n### 分支热图分析\n``` 用数据优化分支设计：\n1.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-004",
+    "text": "追踪每个分支的选择率 ├── 如果某选项 < 5% 选择率 → 考虑删除或改进 ├── 如果某选项 > 90% 选择率 → 另一个选项可能有问题 └── 理想分布：40-60%（两个选项都吸引人）\n2.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-gd-005",
+    "text": "追踪分支完成率 ├── 某分支 50%+ 玩家中途退出 → 内容质量问题 └── 某分支完成时间远超预期 → 可能太冗长\n3.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.gdconf.com/"
+    }
+  }
+]

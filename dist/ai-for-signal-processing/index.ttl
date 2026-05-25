@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-signal-processing>
+  a schema:article ;
+  schema:headline "AI for Signal Processing: Deep Learning for Wireless, Radar, and Biomedical Signals" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-signal-processing>
+  schema:citation <https://arxiv.org/abs/2005.09563> .
+
+<https://anchorfact.org/kb/ai-for-signal-processing>
+  schema:citation <https://www.nature.com/articles/s41591-018-0268-3> .

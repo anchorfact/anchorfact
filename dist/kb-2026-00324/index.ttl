@@ -1,0 +1,23 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00324>
+  a schema:TechArticle ;
+  schema:headline "Ancient Rome" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00324>
+  schema:citation <https://www.liverpooluniversitypress.co.uk/doi/book/10.3828/9781846319177> .
+
+<https://anchorfact.org/kb/kb-2026-00324>
+  schema:citation <https://wwnorton.com/books/SPQR/> .
+
+<https://anchorfact.org/kb/kb-2026-00324>
+  schema:citation <https://global.oup.com/roman-world/> .
+
+<https://anchorfact.org/kb/kb-2026-00324>
+  schema:citation <https://wwnorton.com/SPQR/> .
+
+<https://anchorfact.org/kb/kb-2026-00324>
+  schema:citation <https://global.oup.com/roman-fall/> .

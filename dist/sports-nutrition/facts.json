@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sp-sn-001",
+    "text": "IOC (2024): 1.2-2.0g protein/kg/day for athletes, distributed across meals.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1016/j.jand.2015.12.006"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sp-sn-002",
+    "text": "Carb loading (10-12g/kg/day, 36-48h pre-event) ↑ glycogen 50-100%, extends endurance ~20% (Bergström 1967).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://us.humankinetics.com/products/sport-nutrition-4th-edition"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sp-sn-003",
+    "text": "Creatine: most researched supplement, strong safety, ↑ high-intensity capacity 10-20% (ISSN 2017).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1186/s12970-017-0173-z"
+    }
+  }
+]

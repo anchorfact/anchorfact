@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/sports-nutrition>
+  a schema:Article ;
+  schema:headline "Sports Nutrition: Fueling Performance and Recovery" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/sports-nutrition>
+  schema:citation <https://www.humankinetics.com/advanced-sports-nutrition/> .
+
+<https://anchorfact.org/kb/sports-nutrition>
+  schema:citation <https://jissn.biomedcentral.com/> .

@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "Node.js is an open-source, cross-platform JavaScript runtime built on Google's V8 engine, created by Ryan Dahl in 2009",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://nodejs.org/docs/latest/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-02",
+    "text": "Its event loop architecture handles thousands of concurrent connections on a single thread without the overhead of thread-per-connection models: - Event Loop: Single-threaded but asynchronous — I/O operations are delegated to the OS kernel via libuv's thread pool - Non-blocking I/O: File system, network, and DNS operations never block the main thre",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://nodejs.org/docs/latest/"
+    }
+  }
+]

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/foundation-models>
+  a schema:TechArticle ;
+  schema:headline "Foundation Models: Paradigm Shift in AI" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/foundation-models>
+  schema:citation <https://arxiv.org/abs/2108.07258> .
+
+<https://anchorfact.org/kb/foundation-models>
+  schema:citation <https://arxiv.org/abs/2001.08361> .

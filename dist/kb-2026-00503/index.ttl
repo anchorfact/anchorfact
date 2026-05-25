@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00503>
+  a schema:TechArticle ;
+  schema:headline "Track and Field Events" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00503>
+  schema:citation <https://worldathletics.org/competition/technical-rules> .
+
+<https://anchorfact.org/kb/kb-2026-00503>
+  schema:citation <https://www.olympic.org/sports> .

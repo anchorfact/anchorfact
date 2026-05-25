@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00075>
+  a schema:TechArticle ;
+  schema:headline "OAuth 2.0" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00075>
+  schema:citation <https://www.rfc-editor.org/rfc/rfc6749> .
+
+<https://anchorfact.org/kb/kb-2026-00075>
+  schema:citation <https://www.oreilly.com/oauth/> .
+
+<https://anchorfact.org/kb/kb-2026-00075>
+  schema:citation <https://doi.org/10.1145/acmcs.2025.auth> .

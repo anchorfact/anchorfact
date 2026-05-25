@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/neural-architecture-search",
+  "headline": "Neural Architecture Search: Automated Design of Deep Neural Networks",
+  "description": "Neural Architecture Search (NAS) automates the design of neural network architectures — replacing years of human intuition and trial-and-error with algorithmic search. From RL-based methods consuming thousands of GPU-hours to modern supernet-based approaches finding architectures in hours, NAS is democratizing optimal network design.",
+  "dateCreated": "2026-05-24T18:00:03.437Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Neural Architecture Search: Methods, Applications, and Theory (Nature Collection)",
+      "sameAs": "https://www.nature.com/collections/adjaeijhja"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Generative neural architecture search (GNAS)",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S092523122501032X"
+    }
+  ]
+}

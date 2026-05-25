@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/corporate-finance>
+  a schema:Article ;
+  schema:headline "Corporate Finance: Capital Structure and Valuation" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/corporate-finance>
+  schema:citation <https://www.mheducation.com/highered/product/principles-corporate-finance-brealey-myers/M9781264080946.html> .
+
+<https://anchorfact.org/kb/corporate-finance>
+  schema:citation <https://www.jstor.org/stable/1809766> .
+
+<https://anchorfact.org/kb/corporate-finance>
+  schema:citation <https://www.mheducation.com/corporate-finance/> .
+
+<https://anchorfact.org/kb/corporate-finance>
+  schema:citation <https://www.wiley.com/valuation/> .

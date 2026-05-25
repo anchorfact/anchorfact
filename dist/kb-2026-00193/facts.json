@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "Linear algebra is the mathematics of vectors and matrices, fundamental to computer graphics, machine learning (neural networks), physics simulation, and data science. Core concepts: vectors, matrices, linear transformations, determinants, eigenvalues/eigenvectors, linear systems.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "SVD (Singular Value Decomposition): A = UΣV^T — fundamental to PCA, recommendation systems, image compression.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  }
+]

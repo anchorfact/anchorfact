@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Text-to-Speech and Voice Synthesis — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Modern TTS produces speech indistinguishable from human recordings, with voice cloning from one-minute samples and emotional expressiveness that captures laughter, whispers, and nuanced prosody.<br>
+<br>
+## Core Explanation<br>
+Two-stage pipeline: text-to-spectrogram (Tacotron, FastSpeech) → spectrogram-to-waveform (WaveNet, HiFi-GAN). End-to-end models (VITS, Voicebox) unify these stages. Mel spectrograms compress audio into time-frequency representations suitable for neural processing.<br>
+<br>
+## Detailed Analysis<br>
+FastSpeech 2 (Microsoft) enables parallel, non-autoregressive generation for real-time synthesis. Voicebox (Meta, 2023) approaches TTS as an in-context learning task — conditioning on a short audio sample to generate speech in any voice, including multilingual transfer.<br>
+<br>
+## Further Reading<br>
+- Hugging Face: Text-to-Speech Models<br>
+- Coqui.ai TTS<br>
+- ISCA Speech Synthesis Workshop</article></body>
+</html>

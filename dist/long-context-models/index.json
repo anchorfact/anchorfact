@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/long-context-models",
+  "headline": "Long-Context Language Models: Beyond 1M Tokens",
+  "description": "Modern LLMs process context windows of 100K-2M tokens — entire books, codebases, or years of conversation history. Gemini 1.5 Pro demonstrated >99% retrieval accuracy across 1M tokens, proving usable long-context capability.",
+  "dateCreated": "2026-05-24T18:00:03.387Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context",
+      "sameAs": "https://arxiv.org/abs/2403.05530"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "RULER: What's the Real Context Size of Your Long-Context Language Models?",
+      "sameAs": "https://arxiv.org/abs/2405.07704"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00281",
+  "headline": "Data Preprocessing",
+  "description": "Data preprocessing cleans and prepares raw data for ML. Steps: handling missing values (drop, impute), outlier detection and treatment, encoding categorical variables, feature scaling, train/test splitting. Real-world data is messy — preprocessing typically consumes 60-80% of a data scientist's time.",
+  "dateCreated": "2026-05-24T18:00:03.274Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Data Mining: Concepts and Techniques (Han, Pei, Tong, 4th Edition)",
+      "author": "Han, Jiawei, Pei, Jian, Tong, Hanghang",
+      "sameAs": "https://doi.org/10.1016/C2020-0-00008-4"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Scikit-learn: Machine Learning in Python (Pedregosa et al. — JMLR)",
+      "author": "Pedregosa, Fabian, Varoquaux, Gaël, Gramfort, Alexandre, et al.",
+      "sameAs": "https://jmlr.org/papers/v12/pedregosa11a.html"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "A Survey on Data Preprocessing Methods for Machine Learning",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/3635100"
+    }
+  ]
+}

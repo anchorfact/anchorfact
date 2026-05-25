@@ -1,0 +1,18 @@
+# Vaccine Development and Immunology
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Vaccines train the immune system to recognize pathogens without causing disease. Modern platforms — mRNA, viral vector, protein subunit — enable rapid development, as demonstrated by COVID-19 vaccines reaching deployment in under 12 months.
+
+## Core Explanation
+All vaccines exploit immunological memory: B cells produce antibodies; T cells destroy infected cells. After vaccination, memory B and T cells persist for decades, enabling rapid response upon actual infection. Adjuvants (aluminum salts, lipid nanoparticles) enhance this response.
+
+## Detailed Analysis
+mRNA vaccines (Pfizer-BioNTech, Moderna) encode the SARS-CoV-2 spike protein. Lipid nanoparticles protect the mRNA and fuse with cell membranes for delivery. Viral vector vaccines (AstraZeneca, J&J) use harmless adenoviruses as delivery vehicles. Traditional inactivated (Sinovac) and protein subunit (Novavax) approaches remain important for global supply diversity.
+
+## Further Reading
+- CDC: How Vaccines Work
+- WHO: Immunization Coverage
+- NEJM: mRNA Vaccine Mechanisms

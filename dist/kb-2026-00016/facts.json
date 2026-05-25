@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-01",
+    "text": "The Model Context Protocol is an open standard for connecting AI models to external data sources and tools, introduced by Anthropic on November 25, 2024",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.anthropic.com/news/model-context-protocol"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-001",
+    "text": "A single MCP server can give AI access to Google Drive, GitHub, or a company's internal knowledge base.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://github.com/modelcontextprotocol/modelcontextprotocol"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-002",
+    "text": "- **MCP Clients**: AI applications (Claude Desktop, ChatGPT, VS Code, custom apps) that connect to MCP servers to retrieve context.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.anthropic.com/news/model-context-protocol"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-003",
+    "text": "This architecture enables AI models to maintain context across multiple data sources without losing state—a critical capability for complex, multi-step agentic workflows.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.anthropic.com/news/model-context-protocol"
+    }
+  }
+]

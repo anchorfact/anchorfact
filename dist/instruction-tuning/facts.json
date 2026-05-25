@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f1",
+    "text": "FLAN (Wei et al. 2022, Google, ICLR) showed that fine-tuning language models on a diverse set of NLP tasks phrased as instructions enables zero-shot generalization to unseen tasks — inaugurating instruction tuning.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2109.01652"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f2",
+    "text": "Scaling instruction tuning (Chung et al. 2022, Google, JMLR) with FLAN-T5 and FLAN-PaLM demonstrated that increasing the diversity and number of instruction-following tasks significantly improves generalization.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2210.11416"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f3",
+    "text": "Instruction tuning is distinct from RLHF — it teaches models to follow natural language instructions via supervised learning on (instruction, response) pairs, forming the foundation of ChatGPT-style conversational abilities.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2203.02155"
+    }
+  }
+]

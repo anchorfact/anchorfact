@@ -1,0 +1,18 @@
+# Desert Ecosystems and Adaptations
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Deserts are not lifeless — they are ecosystems shaped by organisms with extraordinary adaptations for water conservation, temperature regulation, and resource efficiency. Covering a third of Earth's land, deserts are biodiversity hotspots threatened by climate change.
+
+## Core Explanation
+Deserts are defined by precipitation (<250mm/year), not temperature. Antarctica's Dry Valleys receive less than 50mm/year, qualifying as a cold desert. Hot deserts like the Sahara and Sonoran experience extreme diurnal temperature swings of 30°C+.
+
+## Detailed Analysis
+Key adaptations include: CAM photosynthesis (crassulacean acid metabolism) — plants open stomata at night to reduce water loss; estivation — animals enter dormancy during extreme heat/drought; fog harvesting — specialized body surfaces condense atmospheric moisture.
+
+## Further Reading
+- USGS Desert Ecosystem Studies
+- National Geographic: Desert Biome
+- Journal of Arid Environments

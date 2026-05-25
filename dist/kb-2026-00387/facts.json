@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-001",
+    "text": "International trade involves exchange of goods and services across borders. Comparative advantage (Ricardo, 1817): countries benefit by specializing in what they produce most efficiently, even if they're worse at everything. WTO (1995) governs trade rules. Protectionism: tariffs, quotas, subsidies to protect domestic industries.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/international-economics-theory-and-policy/P200000005849"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-002",
+    "text": "Free trade agreements: NAFTA/USMCA, EU Single Market, CPTPP.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/international-economics-theory-and-policy/P200000005849"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-003",
+    "text": "Trade war: US-China (2018+, tariffs on $500B+ goods).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/international-economics-theory-and-policy/P200000005849"
+    }
+  }
+]

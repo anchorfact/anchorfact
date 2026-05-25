@@ -1,0 +1,18 @@
+# Economics: Supply, Demand, and Market Equilibrium
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Economics studies how societies allocate scarce resources. Supply and demand form the core analytical framework, while GDP, inflation, and unemployment are the headline macroeconomic indicators.
+
+## Core Explanation
+Microeconomics: consumer theory (utility maximization), producer theory (profit maximization), market structures (perfect competition, monopoly, oligopoly), externalities (pollution), public goods. Macroeconomics: GDP, inflation (CPI), unemployment, fiscal policy, monetary policy (interest rates).
+
+## Detailed Analysis
+Elasticity measures responsiveness: price elasticity of demand = %ΔQ/%ΔP. Perfectly inelastic demand has elasticity=0. Game theory analyzes strategic interactions (prisoner's dilemma, Nash equilibrium). Comparative advantage explains gains from trade.
+
+## Further Reading
+- OpenStax: Principles of Economics (free)
+- IMF World Economic Outlook
+- The Economist

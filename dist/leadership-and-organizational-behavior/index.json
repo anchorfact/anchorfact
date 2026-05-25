@@ -1,0 +1,45 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/leadership-and-organizational-behavior",
+  "headline": "Leadership Theory and Organizational Behavior",
+  "description": "Leadership is not innate — it's a set of learnable behaviors. Modern leadership theory has shifted from trait-based models to behavioral, situational, and transformational approaches.",
+  "dateCreated": "2026-05-24T18:00:03.667Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Transformational Leadership, 2nd Edition",
+      "sameAs": "https://www.routledge.com/Transformational-Leadership/Bass-Riggio/p/book/9780805847628"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Organizational Behavior, 18th Edition",
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/organizational-behavior/P200000005179"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Organizational Behavior (20th Edition, 2025)",
+      "author": "Robbins S.P., Judge T.A.",
+      "sameAs": "https://www.pearson.com/ob/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Leadership: Theory and Practice (10th Edition, 2025)",
+      "author": "Northouse P.G.",
+      "sameAs": "https://us.sagepub.com/leadership/"
+    }
+  ]
+}

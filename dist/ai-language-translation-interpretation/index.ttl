@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-language-translation-interpretation>
+  a schema:article ;
+  schema:headline "AI Language Translation and Interpretation: LLM-Based Translation, Simultaneous Interpretation, and Quality Estimation" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-language-translation-interpretation>
+  schema:citation <https://www.mdpi.com/2078-2489/16/9/723> .
+
+<https://anchorfact.org/kb/ai-language-translation-interpretation>
+  schema:citation <https://arxiv.org/search/?query=simultaneous+machine+translation+speech> .

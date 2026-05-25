@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-hyperautomation>
+  a schema:article ;
+  schema:headline "AI for Hyperautomation: RPA, Intelligent Document Processing, and Cognitive Workflows" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-hyperautomation>
+  schema:citation <https://www.mdpi.com/2076-3417/15/13/7402> .
+
+<https://anchorfact.org/kb/ai-for-hyperautomation>
+  schema:citation <https://www.researchgate.net/publication/390175338> .

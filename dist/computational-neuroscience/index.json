@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/computational-neuroscience",
+  "headline": "Computational Neuroscience: AI Models of Brain Circuits, Connectomics, and Neural Computation",
+  "description": "Computational neuroscience uses AI both as a tool and a model — deep learning automates the reconstruction of brain wiring diagrams (connectomics), while theories like predictive coding and reinforcement learning provide mathematical frameworks explaining how neural circuits compute. The convergence of large-scale neural data and AI models is creating an unprecedented window into the biological basis of intelligence.",
+  "dateCreated": "2026-05-24T18:00:03.252Z",
+  "dateModified": "2026-05-24T18:00:03.252Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "MICrONS: Functional connectomics spanning multiple areas of mouse visual cortex",
+      "sameAs": "https://www.microns-explorer.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Predictive coding in the visual cortex: a functional interpretation of some extra-classical receptive-field effects",
+      "sameAs": "https://www.nature.com/articles/nn0199_79"
+    }
+  ]
+}

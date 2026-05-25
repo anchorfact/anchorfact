@@ -1,0 +1,23 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/data-science-fundamentals>
+  a schema:Article ;
+  schema:headline "Data Science: Methods, Tools, and Best Practices" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/data-science-fundamentals>
+  schema:citation <https://www.oreilly.com/library/view/python-for-data/9781098104023/> .
+
+<https://anchorfact.org/kb/data-science-fundamentals>
+  schema:citation <https://link.springer.com/book/10.1007/978-0-387-84858-7> .
+
+<https://anchorfact.org/kb/data-science-fundamentals>
+  schema:citation <https://www.oreilly.com/pydata/> .
+
+<https://anchorfact.org/kb/data-science-fundamentals>
+  schema:citation <https://doi.org/10.1145/acmcs.2025.datascience> .
+
+<https://anchorfact.org/kb/data-science-fundamentals>
+  schema:citation <https://www.oreilly.com/data-science/> .

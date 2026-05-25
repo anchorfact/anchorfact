@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Post-Training Alignment: DPO, GRPO, and Beyond — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Post-training alignment makes base models useful and safe. DPO simplified RLHF by removing the reward model; GRPO enabled DeepSeek-R1's reasoning breakthrough. The alignment pipeline (SFT→DPO/RL→reasoning) is now standard across the industry.<br>
+<br>
+## Core Explanation<br>
+The alignment workflow: (1) Supervised Fine-Tuning (SFT) on instruction-following demonstrations. (2) Preference alignment: PPO-RLHF (4-model pipeline), DPO (direct optimization, no reward model), or GRPO (group-based RL, no critic). (3) Optional reasoning training. KTO and ORPO extend DPO for scenarios with only positive or unpaired feedback.<br>
+<br>
+## Detailed Analysis<br>
+PPO-RLHF was the original approach (InstructGPT, ChatGPT). Its complexity — reward model training, policy optimization, KL divergence constraint — motivated simpler alternatives. DPO treats alignment as a classification problem on preference pairs. Constitutional AI (Anthropic) uses principle-based self-critique to generate training data.<br>
+<br>
+## Further Reading<br>
+- Hugging Face Alignment Handbook<br>
+- OpenAI: InstructGPT Paper<br>
+- Lilian Weng: Learning from Human Preferences</article></body>
+</html>

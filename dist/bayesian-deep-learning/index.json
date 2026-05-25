@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/bayesian-deep-learning",
+  "headline": "Bayesian Deep Learning: Uncertainty Quantification and Robust Predictions",
+  "description": "Bayesian Deep Learning equips neural networks with uncertainty estimates — knowing when the model is likely to be wrong. From Monte Carlo Dropout to Deep Ensembles and modern Bayesian approximations, UQ is critical for safety-critical AI (medical, autonomous driving, finance).",
+  "dateCreated": "2026-05-24T18:00:03.236Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Can You Trust Your Model's Uncertainty? Evaluating Predictive Uncertainty Under Dataset Shift",
+      "sameAs": "https://arxiv.org/abs/1906.02530"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles",
+      "sameAs": "https://arxiv.org/abs/1612.01474"
+    }
+  ]
+}

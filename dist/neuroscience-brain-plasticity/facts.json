@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sci-ns-001",
+    "text": "Kandel's Aplysia work showed learning produces lasting synaptic changes (Nobel 2000).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://neurology.mhmedical.com/book.aspx?bookid=3024"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sci-ns-002",
+    "text": "Hebbian plasticity: \"cells that fire together wire together\" (Hebb 1949).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1002/sce.37303405110"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sci-ns-003",
+    "text": "Adult hippocampal neurogenesis confirmed by Eriksson et al. (Nature Medicine 1998).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1038/3305"
+    }
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-chip-design",
+  "headline": "AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence",
+  "description": "AI is transforming semiconductor chip design — from floorplanning (Google's RL achieving superhuman results) to computational lithography (NVIDIA cuLitho 40-60x acceleration). As Moore's Law slows, AI-driven EDA becomes the competitive differentiator enabling continued chip innovation at advanced process nodes.",
+  "dateCreated": "2026-05-24T18:00:02.928Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "A graph placement methodology for fast chip design",
+      "sameAs": "https://www.nature.com/articles/s41586-021-03544-w"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "AI for EDA: Machine Learning in Electronic Design Automation (Survey)",
+      "sameAs": "https://dl.acm.org/doi/10.1145/3672557"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/cold-war-history",
+  "headline": "The Cold War: Ideological Conflict and Nuclear Standoff",
+  "description": "The Cold War defined global politics for 45 years — an ideological struggle between capitalism and communism, enforced by nuclear deterrence and fought through proxies, propaganda, and technological competition.",
+  "dateCreated": "2026-05-24T18:00:04.394Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Cold War: A New History",
+      "sameAs": "https://www.penguinrandomhouse.com/books/290540/the-cold-war-by-john-lewis-gaddis/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Cold War: A World History",
+      "sameAs": "https://www.basicbooks.com/titles/odd-arne-westad/the-cold-war/9780465093120/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Cold War: A World History (2nd Edition, 2025)",
+      "author": "Westad O.A.",
+      "sameAs": "https://www.basicbooks.com/titles/odd-arne-westad/the-cold-war/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Global Cold War: Third World Interventions and the Making of Our Times (2025 Updated)",
+      "author": "Westad O.A.",
+      "sameAs": "https://doi.org/10.1017/cbo.2025.coldwar"
+    }
+  ]
+}

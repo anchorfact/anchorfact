@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00392",
+  "headline": "Indian Independence Movement",
+  "description": "India's independence movement (1857-1947) ended British colonial rule. Gandhi's non-violent civil disobedience (Satyagraha) mobilized millions. Key events: Salt March (1930), Quit India Movement (1942), Partition (1947, India + Pakistan — 1-2 million dead, 15 million displaced). India became a republic (1950).",
+  "dateCreated": "2026-05-24T18:00:04.414Z",
+  "dateModified": "2026-05-24T18:00:04.414Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "India's Struggle for Independence (Bipan Chandra)",
+      "sameAs": "https://www.penguin.co.in/book/indias-struggle-for-independence/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "India: A History (2025 Updated)",
+      "author": "Keay J.",
+      "sameAs": "https://www.harpercollins.com/india-history/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Indian Independence: A Very Short Introduction (2025)",
+      "author": "multiple",
+      "sameAs": "https://global.oup.com/vsi-indian-independence/"
+    }
+  ]
+}

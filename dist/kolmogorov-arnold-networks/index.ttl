@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kolmogorov-arnold-networks>
+  a schema:article ;
+  schema:headline "Kolmogorov-Arnold Networks (KANs): Learnable Activation Functions as MLP Alternatives" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kolmogorov-arnold-networks>
+  schema:citation <https://arxiv.org/abs/2404.19756> .
+
+<https://anchorfact.org/kb/kolmogorov-arnold-networks>
+  schema:citation <https://arxiv.org/abs/2405.02000> .

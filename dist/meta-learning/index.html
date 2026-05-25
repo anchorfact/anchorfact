@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Meta-Learning: Learning to Learn with MAML and Reptile — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Meta-learning trains models to learn efficiently. Given a distribution of tasks, the meta-learner acquires knowledge that accelerates learning on new tasks — the model "learns how to learn." MAML finds optimal initializations; Reptile simplifies the process.<br>
+<br>
+## Core Explanation<br>
+Few-shot learning: classify images of a new species from only 5 examples. Meta-learning solution: train on many classification tasks (different species each time) so the model learns a representation and adaptation strategy that generalizes to novel categories. MAML's inner loop (task-specific fine-tuning) and outer loop (meta-optimization across tasks) create a bi-level optimization.<br>
+<br>
+## Detailed Analysis<br>
+Beyond MAML: (1) Metric-based meta-learning — Prototypical Networks learn an embedding where each class has a prototype (mean of support examples), classification by nearest prototype; (2) Matching Networks with attention over support set; (3) Meta-RL — RL^2 and PEARL train policies that adapt behavior from trial-and-error in new environments. ANIL shows MAML's power comes from feature reuse, not rapid learning.<br>
+<br>
+## Further Reading<br>
+- Chelsea Finn: Meta-Learning Tutorial (ICML)<br>
+- learn2learn PyTorch Library<br>
+- Few-shot Learning Survey (Wang et al.)<br>
+</article></body>
+</html>

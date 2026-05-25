@@ -1,0 +1,18 @@
+# Western Ethical Tradition: Aristotle, Kant, and Utilitarianism
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+The Western ethical tradition is dominated by three approaches: virtue ethics (Aristotle — character), deontology (Kant — duty), and consequentialism/utilitarianism (Bentham/Mill — outcomes). Contemporary ethics integrates elements of all three.
+
+## Core Explanation
+Aristotle: flourishing (eudaimonia) through cultivating virtues. Kant: moral worth from acting from duty, treating persons as ends. Utilitarianism: maximizing overall happiness.
+
+## Detailed Analysis
+The trolley problem illustrates deontological vs. utilitarian reasoning. Bioethics — informed consent, patient autonomy, resource allocation — draws on all three traditions. Effective altruism represents a modern utilitarian movement.
+
+## Further Reading
+- Stanford Encyclopedia of Philosophy (free, peer-reviewed)
+- Internet Encyclopedia of Philosophy
+- Justice (HarvardX — Michael Sandel)

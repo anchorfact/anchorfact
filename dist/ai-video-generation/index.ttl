@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-video-generation>
+  a schema:TechArticle ;
+  schema:headline "AI Video Generation: Sora, Veo, and the Future of Synthetic Media" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-video-generation>
+  schema:citation <https://openai.com/index/video-generation-models-as-world-simulators/> .
+
+<https://anchorfact.org/kb/ai-video-generation>
+  schema:citation <https://deepmind.google/technologies/veo/> .

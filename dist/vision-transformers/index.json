@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/vision-transformers",
+  "headline": "Vision Transformers: ViT, DINOv2, and the End of CNNs",
+  "description": "Vision Transformers (ViTs) have largely replaced CNNs as the dominant architecture in computer vision. DINOv2 demonstrated that self-supervised ViTs produce universal visual features, while SAM 2 extends segmentation to video.",
+  "dateCreated": "2026-05-24T18:00:03.549Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (ViT)",
+      "sameAs": "https://arxiv.org/abs/2010.11929"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "DINOv2: Learning Robust Visual Features without Supervision",
+      "sameAs": "https://arxiv.org/abs/2304.07193"
+    }
+  ]
+}

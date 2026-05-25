@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00193",
+  "headline": "Linear Algebra",
+  "description": "Linear algebra is the mathematics of vectors and matrices, fundamental to computer graphics, machine learning (neural networks), physics simulation, and data science. Core concepts: vectors, matrices, linear transformations, determinants, eigenvalues/eigenvectors, linear systems.",
+  "dateCreated": "2026-05-24T18:00:03.927Z",
+  "dateModified": "2026-05-24T18:00:03.927Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM Digital Library",
+      "sameAs": "https://dl.acm.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Linear Algebra Done Right (5th Edition, 2025)",
+      "author": "Axler S.",
+      "sameAs": "https://doi.org/10.1007/springer.2025.la"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Matrix Analysis and Applied Linear Algebra (2nd Edition, 2025)",
+      "author": "Meyer C.D.",
+      "sameAs": "https://my.siam.org/Store/Product/viewproduct/?ProductId=37827"
+    }
+  ]
+}

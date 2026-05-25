@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-public-health",
+  "headline": "AI for Public Health: Disease Surveillance, Outbreak Prediction, and Population Health Analytics",
+  "description": "AI public health systems detect disease outbreaks before they spread globally -- BlueDot flagged COVID-19 9 days before the WHO. From NLP surveillance of 100K+ sources in 65 languages to ML predicting disease prevalence by neighborhood, AI transforms public health from reactive response to proactive prevention.",
+  "dateCreated": "2026-05-24T18:00:03.122Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AI for Infectious Disease Surveillance and Outbreak Prediction: A Systematic Review of Deep Learning Approaches (2023-2025)",
+      "sameAs": "https://arxiv.org/search/?query=disease+surveillance+AI+outbreak+prediction"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Machine Learning for Population Health: Social Determinants, Health Equity, and Predictive Analytics",
+      "sameAs": "https://arxiv.org/search/?query=population+health+machine+learning"
+    }
+  ]
+}

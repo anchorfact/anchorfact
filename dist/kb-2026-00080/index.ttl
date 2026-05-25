@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00080>
+  a schema:TechArticle ;
+  schema:headline "Swift Programming Language" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00080>
+  schema:citation <https://swift.org/documentation/> .
+
+<https://anchorfact.org/kb/kb-2026-00080>
+  schema:citation <https://github.com/swiftlang/swift> .

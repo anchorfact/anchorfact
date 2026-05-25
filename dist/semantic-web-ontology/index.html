@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Semantic Web and Ontologies: Knowledge Representation, OWL Reasoning, and Linked Data — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+The Semantic Web vision -- machines understanding the meaning of data through formal ontologies and linked data -- quietly powers the structured knowledge behind modern AI. Wikidata's 110 million items, Google's Knowledge Graph, and domain ontologies like Gene Ontology provide the structured factual backbone that complements statistical patterns learned by LLMs.<br>
+<br>
+## Core Explanation<br>
+Core technologies: (A) RDF (Resource Description Framework) -- data model based on subject-predicate-object triples; (B) OWL (Web Ontology Language) -- defines classes, properties, and logical relationships. OWL 2 profiles: OWL EL (tractable for large biomedical ontologies), OWL QL (query answering via SQL), OWL RL (rule-based). Enables reasoning: If X is a dog, X is a mammal. If X is a mammal, X is warm-blooded. Therefore all dogs are warm-blooded is inferred; (C) SPARQL -- query language for RDF data, analogous to SQL; (D) Linked Open Data -- interconnected datasets (DBpedia, GeoNames, MusicBrainx) forming a web of machine-readable knowledge.<br>
+<br>
+## Detailed Analysis<br>
+Wikidata (2012-present): 25,000+ active editors maintaining structured data with references. Supports complex SPARQL queries: "List all female Nobel Prize winners born in countries with population > 100M". DBpedia: extracts data from Wikipedia infoboxes (6M+ entities). Gene Ontology: biological function annotation -- 45,000+ terms in directed acyclic graph. SNOMED CT: clinical terminology with 350,000+ medical concepts. Neuro-symbolic convergence: ontologies provide logically rigorous knowledge, LLMs provide flexible probabilistic knowledge. Hybrid approach: LLMs querying knowledge graphs during generation combines both strengths. Google's Knowledge Vault (12B+ facts) and Amazon Product Graph drive search and recommendation. Key challenges: ontology alignment (mapping equivalent concepts across independent ontologies), temporal knowledge (facts change over time), and scalable reasoning (OWL 2 DL is NEXPTIME-complete; practical reasoners handle large biomedical ontologies efficiently).<br>
+<br>
+## Further Reading<br>
+- Wikidata Query Service: Interactive SPARQL Queries<br>
+- Protege: Open-Source Ontology Editor (Stanford)<br>
+- SPARQL 1.1: W3C Recommendation<br>
+</article></body>
+</html>

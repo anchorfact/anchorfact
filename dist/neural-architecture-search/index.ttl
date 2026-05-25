@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/neural-architecture-search>
+  a schema:article ;
+  schema:headline "Neural Architecture Search: Automated Design of Deep Neural Networks" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/neural-architecture-search>
+  schema:citation <https://www.nature.com/collections/adjaeijhja> .
+
+<https://anchorfact.org/kb/neural-architecture-search>
+  schema:citation <https://www.sciencedirect.com/science/article/pii/S092523122501032X> .

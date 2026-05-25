@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-001",
+    "text": "The Amazon Rainforest (5.5 million km², 9 countries) is the world's largest tropical rainforest, producing 20% of Earth's oxygen. Biodiversity: 10% of known species — 40,000 plant species, 1,300 birds, 3,000 fish, 427 mammals. Indigenous peoples have lived there for 11,000+ years.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://whc.unesco.org/en/list/998/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-002",
+    "text": "Amazon River: largest by discharge volume (209,000 m³/s, 20% of global river flow).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.worldwildlife.org/places/amazon"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-003",
+    "text": "Deforestation: ~17% lost in 50 years — cattle ranching, soy farming, logging.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.worldwildlife.org/places/amazon"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-004",
+    "text": "Tipping point theory: 20-25% deforestation → savannah conversion (self-reinforcing drought).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.worldwildlife.org/places/amazon"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-005",
+    "text": "Indigenous land rights: most effective conservation strategy.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.worldwildlife.org/places/amazon"
+    }
+  }
+]

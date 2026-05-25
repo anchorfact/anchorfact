@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-remote-work",
+  "headline": "AI for Remote Work: Virtual Collaboration, Productivity Analytics, and Distributed Team Intelligence",
+  "description": "AI is the infrastructure layer of remote work -- summarizing meetings, surfacing knowledge, optimizing schedules, and connecting distributed teams. From Zoom AI Companion to Slack AI to Microsoft Viva, AI tools make remote and hybrid work more productive than office-only models.",
+  "dateCreated": "2026-05-24T18:00:03.139Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AI-Powered Remote Work: Virtual Collaboration, Meeting Intelligence, and Distributed Team Productivity (2024-2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=remote+work+AI+collaboration+productivity"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Workplace Analytics and AI: Productivity Measurement, Burnout Prediction, and Hybrid Work Optimization",
+      "sameAs": "https://arxiv.org/search/?query=workplace+analytics+AI+productivity"
+    }
+  ]
+}

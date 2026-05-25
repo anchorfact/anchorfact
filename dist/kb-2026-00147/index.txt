@@ -1,0 +1,17 @@
+# Command Pattern
+Confidence: high
+Last verified: 2026-05-24
+Generation: human_only
+
+## TL;DR
+
+Encapsulates a request as an object, enabling parameterization, queuing, logging, and undo/redo. Commands are first-class objects with execute() and undo() methods.
+
+## Core Explanation
+
+Example: text editor with undo stack — each edit is a Command object pushed to history. Macro commands compose multiple commands. Used in: job queues, transactional systems, game input handling. CQRS (Command Query Responsibility Segregation) extends this to architecture level.
+
+## Further Reading
+
+- [Design Patterns (Gang of Four)](undefined)
+

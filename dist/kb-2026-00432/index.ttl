@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00432>
+  a schema:TechArticle ;
+  schema:headline "Branding Strategy" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00432>
+  schema:citation <https://www.simonandschuster.com/books/Building-Strong-Brands/David-A-Aaker/9780029001516> .
+
+<https://anchorfact.org/kb/kb-2026-00432>
+  schema:citation <https://www.harpercollins.com/storybrand/> .
+
+<https://anchorfact.org/kb/kb-2026-00432>
+  schema:citation <https://www.pearson.com/branding/> .

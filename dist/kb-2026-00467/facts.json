@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-001",
+    "text": "South America (17.84 million km²) is the 4th largest continent. Major features: Andes (longest mountain range, 7,000 km), Amazon Basin (largest rainforest), Atacama Desert (driest non-polar place), Angel Falls (tallest waterfall, 979m), Pantanal (largest tropical wetland). 12 countries, ~430 million people.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://global.oup.com/academic/product/the-physical-geography-of-south-america-9780195313413"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-002",
+    "text": "Andes: formed by subduction of Nazca Plate under South American Plate — still rising.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://global.oup.com/academic/product/the-physical-geography-of-south-america-9780195313413"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-003",
+    "text": "Lake Titicaca (Peru/Bolivia): highest navigable lake (3,812m).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://global.oup.com/academic/product/the-physical-geography-of-south-america-9780195313413"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-004",
+    "text": "Galapagos Islands (Ecuador): Darwin's living laboratory.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://global.oup.com/academic/product/the-physical-geography-of-south-america-9780195313413"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-geography-005",
+    "text": "Largest cities: São Paulo (22M), Buenos Aires (15M), Rio de Janeiro, Lima, Bogotá.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://global.oup.com/academic/product/the-physical-geography-of-south-america-9780195313413"
+    }
+  }
+]

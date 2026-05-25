@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00479",
+  "headline": "History of Printing",
+  "description": "Printing (woodblock: China, ~200 CE) → movable type (Bi Sheng, China 1040 CE; Gutenberg, Germany 1450 CE) → printing press → mass literacy, Reformation, Scientific Revolution. Gutenberg Bible (1455): first major book printed with movable type. Printing was the 'Internet of its day' — democratizing knowledge and transforming society.",
+  "dateCreated": "2026-05-24T18:00:03.606Z",
+  "dateModified": "2026-05-24T18:00:03.606Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Printing Revolution in Early Modern Europe (Elizabeth Eisenstein, 2nd Ed)",
+      "sameAs": "https://www.cambridge.org/core/books/printing-revolution-in-early-modern-europe/"
+    }
+  ]
+}

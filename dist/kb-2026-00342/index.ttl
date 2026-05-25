@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00342>
+  a schema:TechArticle ;
+  schema:headline "Renaissance Art" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00342>
+  schema:citation <https://www.phaidon.com/store/art/the-story-of-art-pocket-edition-9780714872216/> .
+
+<https://anchorfact.org/kb/kb-2026-00342>
+  schema:citation <https://global.oup.com/vsi-renaissance-art/> .
+
+<https://anchorfact.org/kb/kb-2026-00342>
+  schema:citation <https://thamesandhudson.com/renaissance/> .

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Bit Manipulation — AnchorFact</title></head>
+<body><article><br>
+<br>
+<br>
+<br>
+## TL;DR<br>
+<br>
+Bit manipulation operates directly on binary representations using bitwise operators: AND (&), OR (|), XOR (^), NOT (~), left shift (<<), right shift (>>). Used for optimization, cryptography, compression, hardware interfacing, and low-memory algorithms.<br>
+<br>
+## Core Explanation<br>
+<br>
+Common tricks: n & (n-1) clears lowest set bit (used in popcount). n & 1 checks odd/even. XOR swap: a^=b; b^=a; a^=b. x XOR x = 0, x XOR 0 = x. Bitmask: single integer stores 32 boolean flags. Fast multiplication/division by powers of 2 via shift (compiler optimization).<br>
+<br>
+## Further Reading<br>
+<br>
+- [Hacker's Delight (2nd Edition)](undefined)<br>
+</article></body>
+</html>

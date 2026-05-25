@@ -1,0 +1,19 @@
+# AI for Urban Planning: Generative Spatial AI, Digital Twins, and Computational Urban Science
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI is becoming the architect and operator of future cities — generating urban master plans from zoning codes, simulating millions of "what-if" scenarios in digital twins, and optimizing energy, water, and transportation in real-time. Generative spatial AI represents a paradigm shift from reactive urban management to proactive computational design.
+
+## Core Explanation
+Traditional urban planning: planners manually draft land-use maps, zoning regulations, and infrastructure layouts over months to years. Limited iteration — a single master plan is tested against a few scenarios. AI approach: (1) Generative urban design — diffusion models and GANs trained on existing city plans learn the "grammar" of urban form (street network patterns, building typologies, green space distribution) and generate novel, constraint-satisfying designs; (2) Urban digital twins — real-time virtual replicas of cities integrating IoT sensor data (traffic, air quality, energy, water), GIS layers (property boundaries, zoning, topography), and simulation engines (flood, heat island, pedestrian flow); (3) Predictive analytics — AI forecasts neighborhood change (gentrification risk, population shifts, housing demand); (4) Participatory AI — LLMs translate community feedback from public meetings into design constraints, enabling data-driven democratic planning.
+
+## Detailed Analysis
+Generative Spatial AI (ScienceDirect 2025): a four-layer architecture — (1) Data foundation: satellite imagery, OpenStreetMap, census data, building permits, IoT sensors; (2) Foundation models: geospatial foundation models (SatCLIP, GeoFM) pretrained on global earth observation data; (3) Generative layer: diffusion models and GANs conditioned on zoning codes, density targets, and sustainability goals generate urban layouts; (4) Evaluation layer: multi-objective optimization simulates generated designs against KPIs (walkability, carbon footprint, housing affordability, flood resilience). Springer 2024 UDT scoping review: GenAI-enhanced digital twins autonomously generate synthetic urban scenarios (population growth, climate change, economic shocks) for stress-testing city plans, overcoming the "few scenarios" limitation of traditional planning. Nature Computational Science (2024) perspective on city digital twins: distinguishes between descriptive twins (what is happening), predictive twins (what will happen), and prescriptive twins (what should we do). The most advanced prescriptive twins (Singapore Virtual Singapore, Helsinki Digital Twin) already integrate AI optimization. MDPI 2025 SLR: deployment challenges — (1) Data silos across city departments (transportation, water, energy don't share data); (2) Privacy — digital twins capture individual movement patterns; (3) The "last mile" — AI-generated plans must be translated into zoning code amendments and political decisions, requiring explainable AI that planners and council members can understand.
+
+## Further Reading
+- Virtual Singapore: National Digital Twin
+- Urban Grammar: AI-based urban form classification (Alan Turing Institute)
+- CityJSON & 3D BAG: Open 3D City Models
+

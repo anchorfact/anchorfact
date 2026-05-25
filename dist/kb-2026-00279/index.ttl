@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00279>
+  a schema:TechArticle ;
+  schema:headline "Autoencoders" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00279>
+  schema:citation <https://arxiv.org/abs/1312.6114> .
+
+<https://anchorfact.org/kb/kb-2026-00279>
+  schema:citation <https://www.deeplearningbook.org/contents/autoencoders.html> .
+
+<https://anchorfact.org/kb/kb-2026-00279>
+  schema:citation <https://doi.org/10.1109/TPAMI.2025.3567842> .
+
+<https://anchorfact.org/kb/kb-2026-00279>
+  schema:citation <https://doi.org/10.1109/TPAMI.2025.3567842> .

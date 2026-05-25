@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/optimization-algorithms>
+  a schema:TechArticle ;
+  schema:headline "Optimization Algorithms for Deep Learning" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/optimization-algorithms>
+  schema:citation <https://arxiv.org/abs/1412.6980> .
+
+<https://anchorfact.org/kb/optimization-algorithms>
+  schema:citation <https://arxiv.org/abs/1608.03983> .

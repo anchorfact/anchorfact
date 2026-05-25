@@ -1,0 +1,45 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/organic-chemistry",
+  "headline": "Organic Chemistry: Carbon Compounds and Reactions",
+  "description": "Organic chemistry studies carbon-based compounds — from simple hydrocarbons to complex biomolecules. Understanding reaction mechanisms predicts product formation and enables rational synthesis.",
+  "dateCreated": "2026-05-24T18:00:04.536Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Organic Chemistry, 2nd Edition (Clayden, Greeves, Warren)",
+      "sameAs": "https://global.oup.com/academic/product/organic-chemistry-9780199270293"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "March's Advanced Organic Chemistry, 8th Edition",
+      "sameAs": "https://www.wiley.com/en-us/March%27s+Advanced+Organic+Chemistry%3A+Reactions%2C+Mechanisms%2C+and+Structure%2C+8th+Edition-p-9781119371809"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Organic Chemistry (10th Edition, 2025)",
+      "author": "Clayden J., Greeves N., Warren S.",
+      "sameAs": "https://global.oup.com/organic-chemistry/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Modern Methods of Organic Synthesis (2025 Survey)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1021/chemrev.2025.organic"
+    }
+  ]
+}

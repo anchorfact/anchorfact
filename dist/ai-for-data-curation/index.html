@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Data curation is the unglamorous workhorse behind every great LLM -- transforming petabytes of noisy web crawl data into clean, deduplicated, high-quality training corpora. The quality of training data matters more than model architecture for downstream performance, and AI-assisted curation pipelines are the key differentiator between frontier and mediocre models.<br>
+<br>
+## Core Explanation<br>
+Raw web data (Common Crawl, C4, FineWeb) is incredibly noisy: 40-60% boilerplate/navigation, 15-25% adult/spam, 10-20% machine-generated, only 5-10% high-quality text. Curation pipeline: Acquisition (Common Crawl, web scraping) to URL-level filtering to Language detection (fastText) to Document-level filtering (remove short/repetitive) to Quality scoring (classifier trained on Wikipedia vs random web) to Deduplication (exact + near + semantic) to Heuristic filtering (PII removal) to Decontamination (remove benchmark test sets).<br>
+<br>
+## Detailed Analysis<br>
+MinHash deduplication: for each document, compute n-gram shingles, hash each shingle, keep k smallest hash values as document signature. Documents with similar signatures (Jaccard > threshold) are duplicates. MinHash LSH enables O(N) pairwise comparison across billions of documents. NVIDIA NeMo Curator: GPU-accelerated curation using RAPIDS cuDF -- terabytes per hour on GPU clusters vs days on CPU. Quality scoring: (a) Perplexity-based -- KenLM 5-gram model, score by perplexity; (b) Classifier-based -- fastText binary classifier; (c) LLM-as-judge -- prompt LLM to rate quality (expensive for billion-document scale). FineWeb (Hugging Face, 2024): publicly released 15-trillion-token curated dataset. The data wall challenge (2025-2026): high-quality internet text is finite -- estimated 100-200 trillion tokens of unique high-quality English text exist. As models exhaust this, synthetic data generation and multimodal data become essential.<br>
+<br>
+## Further Reading<br>
+- Common Crawl: Monthly Web Archive<br>
+- FineWeb: 15T Token Curated Dataset (HuggingFace)<br>
+- Dolma: Open Curation Toolkit (Allen AI)<br>
+</article></body>
+</html>

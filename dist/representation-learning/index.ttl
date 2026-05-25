@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/representation-learning>
+  a schema:TechArticle ;
+  schema:headline "Representation Learning: Autoencoders, VAEs, and MAEs" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/representation-learning>
+  schema:citation <https://arxiv.org/abs/1312.6114> .
+
+<https://anchorfact.org/kb/representation-learning>
+  schema:citation <https://arxiv.org/abs/2111.06377> .

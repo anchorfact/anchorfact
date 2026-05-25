@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00509",
+  "headline": "Habit Stacking and Behavior Design",
+  "description": "Habit stacking anchors new behaviors to existing routines for automaticity. Core frameworks: Fogg Behavior Model (B=MAP: Behavior = Motivation × Ability × Prompt), Clear's 4 Laws (Obvious, Attractive, Easy, Satisfying), habit tracking for reinforcement. Key insight: identity-based habits (\"I am a reader\") outperform outcome-based (\"read 10 books\"). Start tiny — scale after consistency.",
+  "dateCreated": "2026-05-24T18:00:04.587Z",
+  "dateModified": "2026-05-24T18:00:04.587Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Atomic Habits (James Clear)",
+      "sameAs": "https://jamesclear.com/atomic-habits"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Tiny Habits: The Small Changes That Change Everything (BJ Fogg)",
+      "sameAs": "https://www.hmhco.com/shop/books/tiny-habits/9780358362777"
+    }
+  ]
+}

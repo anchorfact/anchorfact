@@ -1,0 +1,24 @@
+# Public Speaking
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+
+
+## TL;DR
+
+Public speaking is one of the most common fears (glossophobia) — yet also one of the most valuable skills. Key principles: know your audience, structure (intro-body-conclusion), practice aloud, use stories, control pace, make eye contact. It's not about being perfect — it's about connecting. Toastmasters: global public speaking practice organization.
+
+## Core Explanation
+
+Structure: tell them what you'll say (intro), say it (body), tell them what you said (conclusion). Opening: hook (story, question, statistic) in first 30 seconds. Power of pause: silence > 'um,' 'uh.' Body language: open posture, gestures, move with purpose. Slides: less text, more visuals, 10/20/30 rule (Kawasaki: 10 slides, 20 minutes, 30pt font). Record yourself and watch — painful but transformative.
+
+## Further Reading
+
+- [The Art of Public Speaking (Stephen Lucas, 13th Ed)](https://www.mheducation.com/highered/product/art-public-speaking-lucas/M9781259924606.html)
+atomic_facts:
+  - id: "fact-self-improvement-001"
+    statement: "Public speaking is one of the most common fears (glossophobia) — yet also one of the most valuable skills"
+    confidence: "medium"
+

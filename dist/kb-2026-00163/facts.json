@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "GitHub Actions is a CI/CD platform integrated into GitHub repositories. Workflows (YAML files in `.github/workflows/`) trigger on events (push, PR, schedule) and execute jobs on runners (Ubuntu, Windows, macOS). Free for public repositories.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://docs.github.com/en/actions"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "Workflow syntax: `on:` defines triggers, `jobs:` defines steps.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://docs.github.com/en/actions"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-003",
+    "text": "Runners: GitHub-hosted (2-core, 7GB RAM, free for public) or self-hosted.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://docs.github.com/en/actions"
+    }
+  }
+]

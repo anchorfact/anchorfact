@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-digital-marketing>
+  a schema:article ;
+  schema:headline "AI for Digital Marketing: Personalization, Campaign Optimization, and Customer Analytics" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-digital-marketing>
+  schema:citation <https://arxiv.org/search/?query=digital+marketing+AI+personalization> .
+
+<https://anchorfact.org/kb/ai-digital-marketing>
+  schema:citation <https://arxiv.org/search/?query=contextual+bandit+marketing> .

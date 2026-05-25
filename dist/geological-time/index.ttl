@@ -1,0 +1,23 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/geological-time>
+  a schema:Article ;
+  schema:headline "Geological Time Scale and Earth History" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/geological-time>
+  schema:citation <https://stratigraphy.org/timescale/> .
+
+<https://anchorfact.org/kb/geological-time>
+  schema:citation <https://www.macmillanlearning.com/college/us/product/Earth-System-History/p/1319154022> .
+
+<https://anchorfact.org/kb/geological-time>
+  schema:citation <https://www.macmillanlearning.com/earth-history/> .
+
+<https://anchorfact.org/kb/geological-time>
+  schema:citation <https://stratigraphy.org/chart> .
+
+<https://anchorfact.org/kb/geological-time>
+  schema:citation <https://stratigraphy.org/chart> .

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-digital-forensics>
+  a schema:article ;
+  schema:headline "AI for Digital Forensics: Deepfake Provenance, Evidence Authentication, and Digital Crime Investigation" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-digital-forensics>
+  schema:citation <https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=79> .
+
+<https://anchorfact.org/kb/ai-digital-forensics>
+  schema:citation <https://c2pa.org/specifications/> .

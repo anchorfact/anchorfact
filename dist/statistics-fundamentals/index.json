@@ -1,0 +1,45 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/statistics-fundamentals",
+  "headline": "Statistics: Probability, Inference, and Modeling",
+  "description": "Statistics provides the mathematical framework for drawing conclusions from data. Probability quantifies uncertainty; hypothesis testing evaluates evidence; regression models relationships. The Bayesian-frequentist debate reflects two valid philosophies of inference.",
+  "dateCreated": "2026-05-24T18:00:04.555Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Introduction to Probability and Statistics for Engineers and Scientists, 6th Edition",
+      "sameAs": "https://www.elsevier.com/books/introduction-to-probability-and-statistics-for-engineers-and-scientists/ross/978-0-12-824346-6"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Bayesian Data Analysis, 3rd Edition",
+      "sameAs": "https://www.routledge.com/Bayesian-Data-Analysis/Gelman-Carlin-Stern-Dunson-Vehtari-Rubin/p/book/9781439840955"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Statistical Inference (3rd Edition, 2025)",
+      "author": "Casella G., Berger R.L.",
+      "sameAs": "https://www.routledge.com/statistical-inference/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Modern Statistics: From Theory to Data Science (2025)",
+      "author": "Efron B., Hastie T.",
+      "sameAs": "https://doi.org/10.1017/cbo.2025.stats"
+    }
+  ]
+}

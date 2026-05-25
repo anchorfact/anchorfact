@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00442",
+  "headline": "Emotional Intelligence",
+  "description": "Emotional Intelligence (EQ, Goleman 1995) is the ability to recognize, understand, and manage emotions — in yourself and others. Components: self-awareness, self-regulation, motivation, empathy, social skills. EQ is a better predictor of career success than IQ (Goleman claims — debated but widely accepted).",
+  "dateCreated": "2026-05-24T18:00:04.579Z",
+  "dateModified": "2026-05-24T18:00:04.579Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Emotional Intelligence (Daniel Goleman)",
+      "sameAs": "https://www.penguinrandomhouse.com/books/311306/emotional-intelligence-by-daniel-goleman/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Emotional Intelligence: Why It Can Matter More Than IQ (2025 30th Anniversary)",
+      "author": "Goleman D.",
+      "sameAs": "https://www.danielgoleman.info/books/emotional-intelligence/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Emotional Intelligence 2.0 (2025 Updated)",
+      "author": "Bradberry T., Greaves J.",
+      "sameAs": "https://www.talentsmarteq.com/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Emotional Intelligence (30th Anniversary, 2025)",
+      "author": "Goleman D.",
+      "sameAs": "https://www.danielgoleman.info/"
+    }
+  ]
+}

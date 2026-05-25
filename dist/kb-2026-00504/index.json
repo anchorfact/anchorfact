@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00504",
+  "headline": "Sports Psychology Fundamentals",
+  "description": "Sports psychology applies psychological principles to athletic performance and well-being. Core techniques: goal setting (SMART: Specific, Measurable, Achievable, Relevant, Time-bound), visualization (mental rehearsal), self-talk (positive/cognitive restructuring), arousal regulation (breathing, progressive relaxation), concentration training (mindfulness, pre-performance routines).",
+  "dateCreated": "2026-05-24T18:00:04.621Z",
+  "dateModified": "2026-05-24T18:00:04.621Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Foundations of Sport and Exercise Psychology (Weinberg & Gould, 7th Ed)",
+      "sameAs": "https://www.humankinetics.com/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "APA Division 47: Exercise and Sport Psychology",
+      "sameAs": "https://www.apadivisions.org/division-47"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00061>
+  a schema:TechArticle ;
+  schema:headline "Unity Game Engine" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00061>
+  schema:citation <https://docs.unity.com/> .
+
+<https://anchorfact.org/kb/kb-2026-00061>
+  schema:citation <https://docs.unity3d.com/2022.3/Documentation/Manual/> .

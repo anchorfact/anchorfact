@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00109",
+  "headline": "Navigator API",
+  "description": "The Navigator API (`window.navigator` / `navigator`) provides information about the browser and device. Key properties include `userAgent`, `language`, `onLine`, `platform`, `hardwareConcurrency`, and access to various sub-APIs (`geolocation`, `clipboard`, `mediaDevices`).",
+  "dateCreated": "2026-05-24T18:00:03.955Z",
+  "dateModified": "2026-05-24T18:00:03.955Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "HTML Standard — Navigator",
+      "sameAs": "https://html.spec.whatwg.org/multipage/system-state.html#the-navigator-object"
+    }
+  ]
+}

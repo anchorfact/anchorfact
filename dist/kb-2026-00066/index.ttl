@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00066>
+  a schema:TechArticle ;
+  schema:headline "Git Version Control System" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00066>
+  schema:citation <https://git-scm.com/book/en/v2> .
+
+<https://anchorfact.org/kb/kb-2026-00066>
+  schema:citation <https://git-scm.com/docs> .
+
+<https://anchorfact.org/kb/kb-2026-00066>
+  schema:citation <https://git-scm.com/book> .
+
+<https://anchorfact.org/kb/kb-2026-00066>
+  schema:citation <https://doi.org/10.1145/acmcs.2025.git> .

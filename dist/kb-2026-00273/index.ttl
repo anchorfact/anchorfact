@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00273>
+  a schema:TechArticle ;
+  schema:headline "Transfer Learning" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00273>
+  schema:citation <https://ieeexplore.ieee.org/document/5288526> .

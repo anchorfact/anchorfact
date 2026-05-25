@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-oil-gas-exploration",
+  "headline": "AI for Oil and Gas Exploration: Seismic Interpretation, Reservoir Characterization, and Subsurface Intelligence",
+  "description": "Finding oil and gas reservoirs kilometers beneath the Earth's surface involves interpreting massive 3D seismic datasets -- a task AI is revolutionizing. Deep learning models now automatically map underground faults, track rock layers across basins, and predict reservoir properties with accuracy rivaling expert geologists, compressing months of manual work into hours of computation.",
+  "dateCreated": "2026-05-24T18:00:03.014Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Machine Learning in Oil and Gas Exploration: A Review",
+      "sameAs": "https://ieeexplore.ieee.org/document/10418898"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Use of deep learning and self-supervised methods for subsurface characterization across multiple geological basins",
+      "sameAs": "https://www.nature.com/articles/s41598-025-20058-x"
+    }
+  ]
+}

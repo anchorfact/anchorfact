@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00288",
+  "headline": "Django",
+  "description": "Django is a high-level Python web framework (2005) that follows 'batteries-included' philosophy. ORM, admin interface, authentication, form handling, and templating are built-in. Follows MVT (Model-View-Template) architecture. Used by Instagram, Pinterest, Mozilla, Disqus.",
+  "dateCreated": "2026-05-24T18:00:03.806Z",
+  "dateModified": "2026-05-24T18:00:03.806Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Django Documentation",
+      "sameAs": "https://docs.djangoproject.com/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Django for APIs: Build Web APIs with Python and Django (2025 Edition)",
+      "author": "Vincent W.S.",
+      "sameAs": "https://djangoforapis.com/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Python Web Frameworks in 2025: Django, FastAPI, and Flask",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.python"
+    }
+  ]
+}

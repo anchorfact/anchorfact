@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-si-017",
+    "text": "Resilience is the ability to adapt positively to adversity, trauma, or significant stress. Not a fixed trait — can be developed through practice. Key components: emotional regulation, optimism, cognitive flexibility, social support, sense of purpose",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.apa.org/topics/resilience"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-si-018",
+    "text": "Growth mindset (Carol Dweck, 2006): belief that abilities can be developed through effort. Fixed mindset: belief abilities are innate. Students taught growth mindset show improved academic performance (Blackwell et al., 2007, effect size d=0.27-0.53)",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck-phd/"
+    }
+  }
+]

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00014>
+  a schema:TechArticle ;
+  schema:headline "Kubernetes (K8s)" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00014>
+  schema:citation <https://kubernetes.io/docs/> .
+
+<https://anchorfact.org/kb/kb-2026-00014>
+  schema:citation <https://queue.acm.org/detail.cfm?id=2898444> .

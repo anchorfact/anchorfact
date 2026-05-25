@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-continual-learning-1",
+    "text": "Elastic Weight Consolidation (Kirkpatrick et al., PNAS 2017) prevents catastrophic forgetting by adding a quadratic penalty on weight changes proportional to the Fisher Information Matrix — effectively \"freezing\" parameters most important for previous tasks.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.pnas.org/doi/10.1073/pnas.1611835114"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-continual-learning-2",
+    "text": "MESU (Metaplasticity from Synaptic Uncertainty, Nature Communications 2025) introduces a Bayesian update rule scaling each parameter's learning by its uncertainty — achieving continual learning without storing previous task data or computing Fisher matrices, inspired by synaptic metaplasticity in biological brains.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nature.com/articles/s41467-025-64601-w"
+    }
+  }
+]

@@ -1,0 +1,23 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00416>
+  a schema:TechArticle ;
+  schema:headline "Design Thinking" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00416>
+  schema:citation <https://www.harpercollins.com/products/change-by-design-tim-brown> .
+
+<https://anchorfact.org/kb/kb-2026-00416>
+  schema:citation <https://www.harpercollins.com/change-by-design/> .
+
+<https://anchorfact.org/kb/kb-2026-00416>
+  schema:citation <https://www.routledge.com/design-thinking/> .
+
+<https://anchorfact.org/kb/kb-2026-00416>
+  schema:citation <https://www.harpercollins.com/change-by-design/> .
+
+<https://anchorfact.org/kb/kb-2026-00416>
+  schema:citation <https://www.bloomsbury.com/design-thinking/> .

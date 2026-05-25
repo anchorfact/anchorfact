@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00345>
+  a schema:TechArticle ;
+  schema:headline "Jazz Music" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00345>
+  schema:citation <https://wwnorton.com/books/9780393978803> .

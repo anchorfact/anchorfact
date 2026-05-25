@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/game-audio-systems>
+  a schema:TechArticle ;
+  schema:headline "Game Audio Systems and Sound Design" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/game-audio-systems>
+  schema:citation <https://www.routledge.com/Game-Audio-Implementation/Schutze-Ingebretsen/p/book/9781138777248> .
+
+<https://anchorfact.org/kb/game-audio-systems>
+  schema:citation <https://www.aes.org/e-lib/browse.cfm?elib=20380> .

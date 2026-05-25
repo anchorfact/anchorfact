@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/vector-databases",
+  "headline": "Vector Databases: Approximate Nearest Neighbor Search, Embedding Storage, and Retrieval at Scale",
+  "description": "Vector databases are the storage engine powering modern AI — from RAG (Retrieval-Augmented Generation) to semantic search to recommendation. They store embeddings (numerical representations of text, images, audio) and perform approximate nearest neighbor (ANN) search to find the most similar items in milliseconds across billions of vectors.",
+  "dateCreated": "2026-05-24T18:00:03.543Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "DiskANN: Graph-based Approximate Nearest Neighbor Search on Disk",
+      "sameAs": "https://www.microsoft.com/en-us/research/project/project-akupara-approximate-nearest-neighbor-search-for-large-scale-semantic-search/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "DSANN: Distributed Approximate Nearest Neighbor Search of Large Scale Vectors",
+      "sameAs": "https://arxiv.org/abs/2510.17326"
+    }
+  ]
+}

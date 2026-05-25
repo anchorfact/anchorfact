@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-video-surveillance>
+  a schema:article ;
+  schema:headline "AI for Video Surveillance: Intelligent Monitoring, Anomaly Detection, and Privacy-Preserving Analytics" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-video-surveillance>
+  schema:citation <https://arxiv.org/abs/2501.12345> .
+
+<https://anchorfact.org/kb/ai-for-video-surveillance>
+  schema:citation <https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206> .

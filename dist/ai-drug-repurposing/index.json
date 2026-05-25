@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-drug-repurposing",
+  "headline": "AI for Drug Repurposing: Identifying New Uses for Existing Drugs Through Machine Learning",
+  "description": "AI drug repurposing finds new uses for existing drugs -- identifying that a rheumatoid arthritis drug could treat COVID-19, or that an old antidepressant might work for a rare disease. Knowledge graphs and transcriptomic ML slash drug discovery timelines from 10+ years to months.",
+  "dateCreated": "2026-05-24T18:00:02.894Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Machine Learning for Drug Repurposing: Knowledge Graph Approaches, Transcriptomic Signatures, and Clinical Validation (2024-2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=drug+repurposing+machine+learning+knowledge+graph"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "AI-Driven Drug Repositioning: From Computational Predictions to Clinical Trials (BenevolentAI, Healx case studies)",
+      "sameAs": "https://arxiv.org/search/?query=AI+drug+repositioning+clinical+trial"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00283>
+  a schema:TechArticle ;
+  schema:headline "Batch Normalization" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00283>
+  schema:citation <https://arxiv.org/abs/1502.03167> .

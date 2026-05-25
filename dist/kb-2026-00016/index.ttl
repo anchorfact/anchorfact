@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00016>
+  a schema:TechArticle ;
+  schema:headline "Model Context Protocol (MCP)" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00016>
+  schema:citation <https://www.anthropic.com/news/model-context-protocol> .
+
+<https://anchorfact.org/kb/kb-2026-00016>
+  schema:citation <https://modelcontextprotocol.io/specification/2025-06-18> .
+
+<https://anchorfact.org/kb/kb-2026-00016>
+  schema:citation <https://oct-rick-brick.com/zh/articles/2026-03-18-mcp-standardization-agent-protocol/> .

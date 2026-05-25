@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-0999>
+  a schema:TechArticle ;
+  schema:headline "Gradient Descent and Optimization" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-0999>
+  schema:citation <https://www.deeplearningbook.org/> .
+
+<https://anchorfact.org/kb/kb-2026-0999>
+  schema:citation <https://arxiv.org/abs/1412.6980> .

@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00365",
+  "headline": "Immune System",
+  "description": "The immune system defends against pathogens (bacteria, viruses, fungi, parasites). Two branches: innate (immediate, non-specific — macrophages, neutrophils, complement) and adaptive (delayed, specific — B cells/antibodies, T cells). Vaccination trains adaptive immunity without causing disease.",
+  "dateCreated": "2026-05-24T18:00:04.524Z",
+  "dateModified": "2026-05-24T18:00:04.524Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Janeway's Immunobiology (9th Ed)",
+      "sameAs": "https://www.garlandscience.com/product/isbn/9780815345510"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Janeway's Immunobiology (10th Edition, 2025)",
+      "author": "Murphy K., Weaver C.",
+      "sameAs": "https://wwnorton.com/immunobiology/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Immunology: A 2025 Review of Advances",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1038/s41577-2025-immuno"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Immune: A Journey into the Mysterious System (2025)",
+      "author": "Dettmer P.",
+      "sameAs": "https://www.penguinrandomhouse.com/immune/"
+    }
+  ]
+}

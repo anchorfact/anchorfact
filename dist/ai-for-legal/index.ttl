@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-legal>
+  a schema:article ;
+  schema:headline "AI for Legal: Contract Analysis, Legal Reasoning, and Regulatory Compliance" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-legal>
+  schema:citation <https://arxiv.org/abs/2110.00976> .
+
+<https://anchorfact.org/kb/ai-for-legal>
+  schema:citation <https://eur-lex.europa.eu/eli/reg/2024/1689> .

@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-001",
+    "text": "Audio engineering encompasses recording, mixing, and mastering sound. Key concepts: frequency (pitch, Hz), amplitude (loudness, dB), waveform (timbre). Recording chain: source → microphone → preamp → ADC → DAW. Mixing: balance levels, pan (stereo placement), EQ (adjust frequency balance), compression (control dynamics), reverb/delay (space).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.routledge.com/Mastering-Audio-The-Art-and-the-Science/Katz/p/book/9780240818962"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-002",
+    "text": "Compression: ratio (e.g., 4:1 means 4dB input above threshold = 1dB output), attack, release.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.routledge.com/Mastering-Audio-The-Art-and-the-Science/Katz/p/book/9780240818962"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-003",
+    "text": "Mastering: final polish — loudness normalization (LUFS for streaming: Spotify -14 LUFS).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.routledge.com/Mastering-Audio-The-Art-and-the-Science/Katz/p/book/9780240818962"
+    }
+  }
+]

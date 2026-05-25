@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/plate-tectonics-theory>
+  a schema:Article ;
+  schema:headline "Plate Tectonics: The Unifying Theory of Earth Sciences" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/plate-tectonics-theory>
+  schema:citation <https://pubs.usgs.gov/gip/dynamic/dynamic.html> .
+
+<https://anchorfact.org/kb/plate-tectonics-theory>
+  schema:citation <https://cup.columbia.edu/book/plate-tectonics/9780231111655> .

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-cultural-heritage",
+  "headline": "AI for Cultural Heritage: Digital Preservation, Art Attribution, and Museum Intelligence",
+  "description": "AI is transforming cultural heritage — from digitally reconstructing damaged monuments and deciphering ancient scrolls to attributing artworks and curating museum experiences. As UNESCO warns (2025), AI is advancing faster than cultural ecosystems can adapt, creating both unprecedented preservation opportunities and new authenticity challenges.",
+  "dateCreated": "2026-05-24T18:00:02.941Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "A review of the development and application of artificial intelligence in cultural heritage",
+      "sameAs": "https://www.nature.com/articles/s40494-025-02164-1"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Report of the Independent Expert Group on Artificial Intelligence and Culture",
+      "sameAs": "https://www.unesco.org/en/artificial-intelligence/culture"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+# Graph Theory
+Confidence: high
+Last verified: 2026-05-22
+Generation: human_only
+
+
+
+
+
+## TL;DR
+
+Graph theory studies networks of vertices connected by edges. Applications: social networks, routing algorithms, dependency resolution, compiler optimization (register allocation via graph coloring), circuit design. Euler's 1736 Bridges of Konigsberg paper founded the field.
+
+## Core Explanation
+
+Directed vs. undirected. Weighted graphs model distances/costs. Complete graph K_n: every vertex connected to every other. Bipartite graph: vertices can be partitioned into two independent sets. Planar graph: can be drawn without edge crossings (Euler's formula: V - E + F = 2). Trees are connected acyclic graphs. Spanning trees connect all vertices with minimum edges.
+
+## Further Reading
+
+- 

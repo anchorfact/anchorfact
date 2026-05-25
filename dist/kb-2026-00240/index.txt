@@ -1,0 +1,21 @@
+# Git Branching Strategies
+Confidence: high
+Last verified: 2026-05-22
+Generation: human_only
+
+
+
+
+
+## TL;DR
+
+Git branching strategies organize parallel development. Git Flow (Driessen, 2010): main + develop + feature/release/hotfix branches — thorough but complex. GitHub Flow: main + feature branches, deploy from main — simple, CI/CD-friendly. GitLab Flow: adds environment branches (staging, production). Trunk-Based Development: everyone commits to main, short-lived branches.
+
+## Core Explanation
+
+Git Flow: feature branches from develop, release branches for stabilization, hotfixes from main. GitHub Flow: anything in main is deployable. Trunk-Based: feature flags control release, no long-lived branches — Google and Facebook use this. Choose based on team size and release cadence: small team + continuous deploy = GitHub Flow; enterprise + versioned releases = Git Flow.
+
+## Further Reading
+
+- [A successful Git branching model (Vincent Driessen, 2010)](undefined)
+

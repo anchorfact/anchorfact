@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/text-to-sql>
+  a schema:article ;
+  schema:headline "Text-to-SQL: Natural Language Database Querying with Large Language Models" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/text-to-sql>
+  schema:citation <https://www.nature.com/articles/s41598-026-39128-9> .
+
+<https://anchorfact.org/kb/text-to-sql>
+  schema:citation <https://arxiv.org/abs/1809.08887> .

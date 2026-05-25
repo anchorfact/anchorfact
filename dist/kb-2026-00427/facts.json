@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-01",
+    "text": "Social determinants of health: income, education, housing affect health more than healthcare",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.jblearning.com/catalog/productdetails/9781284197594"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-001",
+    "text": "Public health focuses on preventing disease and promoting health at population level — in contrast to clinical medicine's individual focus. Core functions: assessment (monitor health), policy development, assurance (ensure access). Key achievements: vaccination, sanitation, tobacco control, motor vehicle safety, infectious disease control.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.jblearning.com/catalog/productdetails/9781284197594"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-002",
+    "text": "John Snow (1854): Broad Street pump → cholera source — father of epidemiology.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.jblearning.com/catalog/productdetails/9781284197594"
+    }
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/plate-tectonics-theory",
+  "headline": "Plate Tectonics: The Unifying Theory of Earth Sciences",
+  "description": "Plate tectonics is the unifying theory of geology, explaining earthquakes, volcanoes, mountain building, and fossil distribution. Earth is unique in the solar system in having active plate tectonics.",
+  "dateCreated": "2026-05-24T18:00:04.315Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "This Dynamic Earth: The Story of Plate Tectonics",
+      "sameAs": "https://pubs.usgs.gov/gip/dynamic/dynamic.html"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Plate Tectonics: An Insider's History",
+      "sameAs": "https://cup.columbia.edu/book/plate-tectonics/9780231111655"
+    }
+  ]
+}

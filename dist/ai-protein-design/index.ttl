@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-protein-design>
+  a schema:article ;
+  schema:headline "AI Protein Design: RFDiffusion, ProteinMPNN, and the Nobel Revolution" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-protein-design>
+  schema:citation <https://www.nature.com/articles/s41586-023-06415-8> .
+
+<https://anchorfact.org/kb/ai-protein-design>
+  schema:citation <https://www.science.org/doi/10.1126/science.add2187> .

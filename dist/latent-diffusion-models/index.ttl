@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/latent-diffusion-models>
+  a schema:TechArticle ;
+  schema:headline "Diffusion Models in Depth: From DDPM to Stable Diffusion" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/latent-diffusion-models>
+  schema:citation <https://arxiv.org/abs/2006.11239> .
+
+<https://anchorfact.org/kb/latent-diffusion-models>
+  schema:citation <https://arxiv.org/abs/2112.10752> .

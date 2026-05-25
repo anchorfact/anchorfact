@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/thermodynamics-fundamentals>
+  a schema:Article ;
+  schema:headline "Thermodynamics Fundamentals" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/thermodynamics-fundamentals>
+  schema:citation <https://global.oup.com/academic/product/atkins-physical-chemistry-9780198847816/> .
+
+<https://anchorfact.org/kb/thermodynamics-fundamentals>
+  schema:citation <https://www.mheducation.com/highered/product/thermodynamics-engineering-approach-cengel-boles/M9781266152115.html> .

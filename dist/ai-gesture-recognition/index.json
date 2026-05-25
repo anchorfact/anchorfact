@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-gesture-recognition",
+  "headline": "AI Gesture Recognition: Hand Tracking, Sign Language, and Touchless Interaction",
+  "description": "AI gesture recognition enables hands to control technology without touch -- from MediaPipe's real-time hand tracking on every smartphone to sign language AI translating ASL to speech. Hand pose estimation via transformers approaches human-level accuracy, enabling AR/VR interaction, touchless interfaces, and accessibility.",
+  "dateCreated": "2026-05-24T18:00:03.070Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Deep Learning for Hand Pose Estimation and Gesture Recognition: From Depth Sensors to Monocular Transformers (2024-2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=hand+pose+estimation+gesture+recognition+deep+learning"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Sign Language Recognition with AI: Computer Vision, Sequence Modeling, and Real-Time Translation (2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=sign+language+recognition+transformer"
+    }
+  ]
+}

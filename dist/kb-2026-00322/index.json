@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00322",
+  "headline": "World War II",
+  "description": "World War II (1939-1945) was the deadliest conflict in human history, involving over 100 million people from 30+ countries. Axis (Germany, Italy, Japan) vs. Allies (US, UK, USSR, China, France). 70-85 million deaths. Ended with atomic bombings of Hiroshima/Nagasaki and the beginning of the Cold War.",
+  "dateCreated": "2026-05-24T18:00:04.469Z",
+  "dateModified": "2026-05-24T18:00:04.469Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Second World War (Antony Beevor)",
+      "sameAs": "https://www.antonybeevor.com/books/the-second-world-war/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Second World War (2025 Edition)",
+      "author": "Beevor A.",
+      "sameAs": "https://www.littlebrown.com/second-world-war/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "World War II: A Very Short Introduction (2025)",
+      "author": "Weinberg G.L.",
+      "sameAs": "https://global.oup.com/vsi-ww2/"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00478>
+  a schema:TechArticle ;
+  schema:headline "Animation History" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00478>
+  schema:citation <https://www.disneybooks.com/book/the-illusion-of-life/> .
+
+<https://anchorfact.org/kb/kb-2026-00478>
+  schema:citation <https://www.faber.co.uk/animation/> .
+
+<https://anchorfact.org/kb/kb-2026-00478>
+  schema:citation <https://www.routledge.com/animation-history/> .
+
+<https://anchorfact.org/kb/kb-2026-00478>
+  schema:citation <https://www.faber.co.uk/animation/> .

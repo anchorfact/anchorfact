@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/post-training-alignment>
+  a schema:TechArticle ;
+  schema:headline "Post-Training Alignment: DPO, GRPO, and Beyond" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/post-training-alignment>
+  schema:citation <https://arxiv.org/abs/2305.18290> .
+
+<https://anchorfact.org/kb/post-training-alignment>
+  schema:citation <https://arxiv.org/abs/2501.12948> .

@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00160",
+  "headline": "Microservices Architecture",
+  "description": "Microservices architectural style structures an application as a collection of loosely coupled, independently deployable services. Each service owns its data, communicates via APIs, and can be developed/deployed/scaled independently. Contrasts with monolithic architecture (all-in-one).",
+  "dateCreated": "2026-05-24T18:00:03.944Z",
+  "dateModified": "2026-05-24T18:00:03.944Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Building Microservices (2nd Edition)",
+      "author": "Newman, Sam",
+      "sameAs": "https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/"
+    }
+  ]
+}

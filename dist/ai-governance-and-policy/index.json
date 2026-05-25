@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/ai-governance-and-policy",
+  "headline": "AI Governance: Risk Frameworks, Audits, and International Cooperation",
+  "description": "AI governance has transitioned from voluntary principles to binding regulation and international cooperation. The Bletchley Declaration, NIST AI RMF, and EU AI Act represent landmark milestones in the emerging global AI governance architecture.",
+  "dateCreated": "2026-05-24T18:00:03.072Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "NIST AI Risk Management Framework 1.0",
+      "sameAs": "https://www.nist.gov/itl/ai-risk-management-framework"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Bletchley Declaration by Countries Attending the AI Safety Summit",
+      "sameAs": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration"
+    }
+  ]
+}

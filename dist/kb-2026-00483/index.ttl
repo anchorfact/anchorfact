@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00483>
+  a schema:TechArticle ;
+  schema:headline "Leonardo da Vinci" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00483>
+  schema:citation <https://www.simonandschuster.com/books/Leonardo-da-Vinci/Walter-Isaacson/9781501139161> .
+
+<https://anchorfact.org/kb/kb-2026-00483>
+  schema:citation <https://www.simonandschuster.com/leonardo/> .
+
+<https://anchorfact.org/kb/kb-2026-00483>
+  schema:citation <https://global.oup.com/vsi-leonardo/> .

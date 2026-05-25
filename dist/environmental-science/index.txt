@@ -1,0 +1,18 @@
+# Environmental Science: Ecosystems and Global Change
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Environmental science addresses humanity's most pressing challenge: understanding and mitigating anthropocentric changes to Earth's climate, ecosystems, and biogeochemical cycles.
+
+## Core Explanation
+Earth's systems: atmosphere (climate regulation), hydrosphere (water cycle), biosphere (living organisms), lithosphere (geological processes). Carbon cycle: photosynthesis fixes CO₂; respiration, combustion, and decomposition release it. Fossil fuel combustion has increased atmospheric CO₂ from 280 ppm (pre-industrial) to 420+ ppm (2024).
+
+## Detailed Analysis
+Climate impacts: sea level rise (3.7 mm/year), Arctic amplification (warming 3-4x global average), ocean acidification (pH decreased 0.1 since industrialization). Renewable energy (solar, wind, nuclear) deployment must accelerate 3-5x to meet Paris Agreement targets.
+
+## Further Reading
+- NASA Climate Change
+- NOAA Climate.gov
+- UN Environment Programme

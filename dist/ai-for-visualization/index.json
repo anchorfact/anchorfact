@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-visualization",
+  "headline": "AI for Data Visualization: Automated Chart Generation, Insight Discovery, and Visual Analytics",
+  "description": "AI is democratizing data visualization -- transforming \"what chart should I use?\" from a design decision requiring expertise to an automated recommendation, and enabling natural language queries that generate interactive dashboards in seconds. LLMs can now both create charts and understand existing ones, bridging the gap between data and human comprehension.",
+  "dateCreated": "2026-05-24T18:00:03.062Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "VIS+AI: integrating visualization with artificial intelligence for efficient data analysis",
+      "sameAs": "https://link.springer.com/article/10.1007/s11704-023-2691-y"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "AVA: An automated and AI-driven intelligent visual analytics framework",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S2468502X24000226"
+    }
+  ]
+}

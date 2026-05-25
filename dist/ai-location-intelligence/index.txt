@@ -1,0 +1,14 @@
+# AI for Location Intelligence: Geospatial Analytics, POI Recommendation, and Site Selection
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI location intelligence transforms where things happen into predictive insights -- from choosing the optimal location for a new store to predicting crime hotspots hours in advance. Deep learning on geospatial data reveals patterns invisible on maps, powering decisions worth millions in real estate, retail, and logistics.
+
+## Core Explanation
+Location intelligence AI stack: (1) Data -- satellite imagery (land use, building footprints), mobility data (anonymized GPS traces), POI databases (business locations, amenities), demographic data (census), and transactional data (sales by location); (2) Spatial feature engineering -- distance to nearest competitor/highway/transit, neighborhood demographics within radius, foot traffic patterns by time/day; (3) Spatial ML -- location embeddings (Space2Vec -- grid-based, theory-based -- learn geographic representations from coordinates), graph neural networks (census tracts as nodes, adjacency as edges), ConvLSTMs (raster layers over time); (4) Applications -- site selection, trade area analysis, real estate valuation (AVMs), retail cannibalization (will new store steal from existing stores?), and mobility prediction.
+
+## Detailed Analysis
+Site selection: the classic "location, location, location" problem. ML predicts revenue for candidate locations using features: local demographics, competition density, traffic patterns, adjacent businesses (complementary vs. competitive). Models: gradient boosting (XGBoost) and spatial autoregressive models (accounting for spatial autocorrelation). Real estate AVMs: Zillow Zestimate uses neural networks with spatial features (neighborhood comps, school quality, walkability). Location embeddings: Space2Vec encodes GPS coordinates using sinusoidal functions at multiple scales (Fourier features), enabling neural networks to learn spatial patterns. POI recommendation: predict next location a user will visit, recommend nearby points of interest. Key challenge: spatial autocorrelation (nearby observations are correlated) violates i.i.d. assumption of standard ML -- requires specialized spatial cross-validation (blocking by geographic region).
+

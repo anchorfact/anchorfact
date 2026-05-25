@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00206",
+  "headline": "E-Commerce Fundamentals",
+  "description": "E-commerce is the buying and selling of goods/services over the Internet. Models: B2C (business to consumer: Amazon, Shopify stores), B2B (Alibaba), C2C (eBay, Poshmark), D2C (direct-to-consumer brands). Global e-commerce sales exceeded $6 trillion in 2024.",
+  "dateCreated": "2026-05-24T18:00:03.658Z",
+  "dateModified": "2026-05-24T18:00:03.658Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Harvard Business Review",
+      "sameAs": "https://hbr.org/"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/robot-manipulation",
+  "headline": "Robot Manipulation: Dexterous Grasping, Sim-to-Real Transfer, and Tactile Sensing",
+  "description": "Robot manipulation — the ability to grasp, lift, and manipulate objects — remains one of AI's hardest physical challenges. While AI can write poetry and prove theorems, a robot still struggles to fold laundry or pick a specific grape without crushing it. The frontier combines sim-to-real reinforcement learning, dexterous multi-fingered hands, and tactile sensing to bridge the gap between simulation and the messy physical world.",
+  "dateCreated": "2026-05-24T18:00:03.495Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Sim-to-Real Reinforcement Learning for Vision-Based Dexterous Manipulation on Humanoid Robots",
+      "sameAs": "https://arxiv.org/abs/2502.20396"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "An overview of learning-based dexterous grasping: recent advances, challenges, and future directions",
+      "sameAs": "https://link.springer.com/article/10.1007/s10462-025-11262-2"
+    }
+  ]
+}

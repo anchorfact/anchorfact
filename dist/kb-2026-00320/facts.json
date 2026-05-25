@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "HashiCorp Consul (2014) is a service mesh and service discovery tool. It provides: service registration + health checking, key-value store, secure service-to-service communication (mTLS + authorization), and multi-datacenter support. Service mesh: sidecar proxy (Envoy) routes and secures traffic.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://developer.hashicorp.com/consul/docs"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "Service discovery: DNS or HTTP API — `my-service.service.consul`.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://developer.hashicorp.com/consul/docs"
+    }
+  }
+]

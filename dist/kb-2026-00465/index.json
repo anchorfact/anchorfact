@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00465",
+  "headline": "Renaissance Science",
+  "description": "Renaissance science (15th-17th centuries) broke from Aristotelian/medieval frameworks. Key figures: Leonardo da Vinci (anatomy, engineering), Copernicus (heliocentric cosmology), Vesalius (modern anatomy, De Humani Corporis Fabrica, 1543), Galileo (experimental physics, telescopic astronomy). The printing press spread knowledge faster than ever before.",
+  "dateCreated": "2026-05-24T18:00:04.445Z",
+  "dateModified": "2026-05-24T18:00:04.445Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Scientists (John Gribbin)",
+      "sameAs": "https://www.penguinrandomhouse.com/books/292021/the-scientists-by-john-gribbin/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Scientific Renaissance: 1450-1630 (2025 Edition)",
+      "author": "Hall M.B.",
+      "sameAs": "https://store.doverpublications.com/scientific-renaissance/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Science and the Renaissance (2025)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1017/cbo.2025.rensc"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-01",
+    "text": "The printing press spread knowledge faster than ever before",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/292021/the-scientists-by-john-gribbin/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-001",
+    "text": "Renaissance science (15th-17th centuries) broke from Aristotelian/medieval frameworks. Key figures: Leonardo da Vinci (anatomy, engineering), Copernicus (heliocentric cosmology), Vesalius (modern anatomy, De Humani Corporis Fabrica, 1543), Galileo (experimental physics, telescopic astronomy). The printing press spread knowledge faster than ever bef",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.britannica.com/topic/The-Civilization-of-the-Renaissance-in-Italy"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-002",
+    "text": "Vesalius (1543): corrected Galen's errors (dissected human bodies, not animals).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/292021/the-scientists-by-john-gribbin/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-003",
+    "text": "Galileo: leaning tower experiment (apocryphal but illustrative), inertia concept, telescope discoveries (Jupiter moons, Venus phases, sunspots) — all supported Copernicus.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.penguinrandomhouse.com/books/292021/the-scientists-by-john-gribbin/"
+    }
+  }
+]

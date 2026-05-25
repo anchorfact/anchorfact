@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-urban-planning",
+  "headline": "AI for Urban Planning: Generative Spatial AI, Digital Twins, and Computational Urban Science",
+  "description": "AI is becoming the architect and operator of future cities — generating urban master plans from zoning codes, simulating millions of \"what-if\" scenarios in digital twins, and optimizing energy, water, and transportation in real-time. Generative spatial AI represents a paradigm shift from reactive urban management to proactive computational design.",
+  "dateCreated": "2026-05-24T18:00:03.055Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Generative spatial artificial intelligence for sustainable smart cities: opportunities, challenges, and future directions",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S2666498425000043"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "IoT, AI, and Digital Twins in Smart Cities: A Systematic Literature Review",
+      "sameAs": "https://www.mdpi.com/2624-6511/8/5/175"
+    }
+  ]
+}

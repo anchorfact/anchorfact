@@ -1,0 +1,18 @@
+# Geological Time Scale and Earth History
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Earth's 4.54-billion-year history is recorded in rocks, fossils, and isotopes. The geological time scale organizes this history into eons, eras, periods, and epochs — each defined by major geological or biological events.
+
+## Core Explanation
+Radiometric dating (U-Pb, Ar-Ar, K-Ar) measures isotope decay ratios in minerals to determine rock age. The oldest minerals — Jack Hills zircons at 4.4 Ga — suggest liquid water existed on early Earth. Mass extinctions (end-Ordovician, end-Permian, end-Cretaceous) punctuate the record, each resetting evolutionary trajectories.
+
+## Detailed Analysis
+The end-Permian extinction (252 Ma) eliminated 96% of marine species — the closest life has come to total annihilation. The end-Cretaceous (66 Ma) wiped out non-avian dinosaurs via the Chicxulub asteroid impact. The current Holocene epoch (11,700 years) has seen human civilization emerge; a proposal for the Anthropocene epoch reflecting human geological impact is under debate.
+
+## Further Reading
+- ICS: International Chronostratigraphic Chart
+- USGS: Geologic Time
+- Nature Geoscience: Deep Time Collection

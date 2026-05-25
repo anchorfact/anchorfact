@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00486",
+  "headline": "Mesopotamia",
+  "description": "Mesopotamia ('land between rivers' — Tigris & Euphrates, modern Iraq) was the 'cradle of civilization.' First cities (~4000 BCE, Uruk), writing (cuneiform, ~3400 BCE), wheel, plow, irrigation, legal codes (Hammurabi's Code, ~1750 BCE), mathematics (base-60). Sumerians → Akkadians → Babylonians → Assyrians.",
+  "dateCreated": "2026-05-24T18:00:04.427Z",
+  "dateModified": "2026-05-24T18:00:04.427Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Daily Life in Ancient Mesopotamia (Karen Rhea Nemet-Nejat)",
+      "sameAs": "https://www.hendrickson.com/html/product/300044.trade.html"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Mesopotamia: The Invention of the City (2025 Edition)",
+      "author": "Leick G.",
+      "sameAs": "https://www.penguinrandomhouse.com/mesopotamia/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Ancient Near East: A Very Short Introduction (2025)",
+      "author": "Podany A.H.",
+      "sameAs": "https://global.oup.com/vsi-ancient-near-east/"
+    }
+  ]
+}

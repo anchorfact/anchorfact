@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/game-networking>
+  a schema:TechArticle ;
+  schema:headline "Game Networking Architecture" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/game-networking>
+  schema:citation <https://www.pearson.com/en-us/subject-catalog/p/multiplayer-game-programming/P200000009344> .
+
+<https://anchorfact.org/kb/game-networking>
+  schema:citation <https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking> .

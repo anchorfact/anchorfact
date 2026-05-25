@@ -1,0 +1,23 @@
+# Thermodynamics Fundamentals
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Thermodynamics governs energy transformation — from steam engines to living cells. Its four laws are universal, applying equally to black holes and biochemical reactions, making it the most broadly applicable framework in physics.
+
+## Core Explanation
+- **Zeroth Law**: Thermal equilibrium is transitive (basis of temperature measurement)
+- **First Law**: Energy is conserved (ΔU = Q − W)
+- **Second Law**: Entropy always increases in isolated systems
+- **Third Law**: Absolute zero is unattainable
+
+## Detailed Analysis
+The Gibbs free energy (G = H − TS) determines whether reactions occur spontaneously at constant temperature and pressure — fundamental to chemistry and biology. Statistical mechanics (Boltzmann, Gibbs) bridges microscopic particle behavior with macroscopic thermodynamic properties.
+
+Applications span: internal combustion engines (Otto cycle), refrigeration (Carnot cycle reversed), power plants (Rankine cycle), and biological metabolism (ATP hydrolysis).
+
+## Further Reading
+- HyperPhysics: Thermodynamics
+- MIT OpenCourseWare: Thermodynamics & Kinetics
+- Khan Academy: Laws of Thermodynamics

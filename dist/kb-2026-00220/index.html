@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Pathfinding Algorithms in Games — AnchorFact</title></head>
+<body><article><br>
+<br>
+<br>
+<br>
+## TL;DR<br>
+<br>
+Pathfinding finds routes for game characters to navigate environments. A* algorithm (pronounced A-star) is the standard: combines Dijkstra's shortest path with a heuristic guiding search toward the goal. Used in virtually every game with NPC movement. NavMesh (navigation mesh) replaces grid-based maps with polygon-based walkable areas.<br>
+<br>
+## Core Explanation<br>
+<br>
+A*: f(n) = g(n) + h(n). g = cost from start, h = heuristic (estimated cost to goal). Heuristic must be admissible (never overestimate) for optimal path. Common heuristics: Manhattan distance (grid, 4-directional), Euclidean (any direction), octile (8-directional). NavMesh: precompute walkable surfaces, agents use steering behaviors on top. Hierarchical pathfinding for large worlds.<br>
+<br>
+## Further Reading<br>
+<br>
+- </article></body>
+</html>

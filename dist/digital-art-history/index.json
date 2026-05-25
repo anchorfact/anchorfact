@@ -1,0 +1,50 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/digital-art-history",
+  "headline": "Digital Art and New Media Art History",
+  "description": "Digital art spans six decades of creative practice using computers as a medium — from early algorithmic drawings to contemporary AI-generated works and NFT marketplaces. It challenges traditional definitions of authorship, authenticity, and artistic value.",
+  "dateCreated": "2026-05-24T18:00:03.587Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Digital Art (World of Art), 3rd Edition",
+      "sameAs": "https://thamesandhudson.com/digital-art-9780500204238"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "A Philosophy of Computer Art",
+      "sameAs": "https://www.routledge.com/A-Philosophy-of-Computer-Art/Lopes/p/book/9780415547628"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "New Media Art: Practice and Context",
+      "sameAs": "https://mitpress.mit.edu/9780262543187/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Digital Art (World of Art) (4th Edition, 2025)",
+      "author": "Paul C.",
+      "sameAs": "https://thamesandhudson.com/digital-art/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Art in the Age of AI: A Critical History (2025)",
+      "author": "multiple",
+      "sameAs": "https://www.routledge.com/ai-art/"
+    }
+  ]
+}

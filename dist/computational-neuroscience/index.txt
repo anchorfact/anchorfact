@@ -1,0 +1,20 @@
+# Computational Neuroscience: AI Models of Brain Circuits, Connectomics, and Neural Computation
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+
+## TL;DR
+Computational neuroscience uses AI both as a tool and a model — deep learning automates the reconstruction of brain wiring diagrams (connectomics), while theories like predictive coding and reinforcement learning provide mathematical frameworks explaining how neural circuits compute. The convergence of large-scale neural data and AI models is creating an unprecedented window into the biological basis of intelligence.
+
+## Core Explanation
+Two-way relationship between AI and neuroscience: (1) AI for neuroscience — deep learning tools for analyzing neural data: automated neuron segmentation in electron microscopy (connectomics), spike sorting from multi-electrode recordings (Kilosort), decoding behavior from neural population activity (LFADS, CEBRA), and modeling neuron dynamics; (2) Neuroscience for AI — biological principles inspiring AI architectures: convolutional neural networks inspired by visual cortex hierarchy (Hubel & Wiesel → Fukushima Neocognitron → LeNet → modern CNNs), attention mechanisms inspired by selective visual attention, reinforcement learning inspired by dopamine-based reward prediction errors (TD learning), and hippocampal replay inspiring experience replay in DQN.
+
+## Detailed Analysis
+Connectomics: Google's flood-filling networks segment neurons from terabyte-scale electron microscopy volumes — the Drosophila hemibrain (25,000 neurons), mouse visual cortex (MICrONS, 200,000 neurons), and the ongoing human temporal cortex projects. The MICrONS dataset uniquely combines structural connectivity (EM) with functional activity (two-photon calcium imaging) — enabling models that predict function from structure. Neural population analysis: LFADS (Latent Factor Analysis via Dynamical Systems) infers latent dynamics from noisy spike trains; CEBRA (Schneider et al., Nature 2023) learns behaviorally-relevant neural embeddings using contrastive learning. Brain-computer interfaces and neural prosthetics depend critically on these decoding algorithms. Predictive processing: cortex maintains an internal model of the world, generating top-down predictions that are compared to bottom-up sensory input — prediction errors propagate upward, predictions downward. This framework unifies perception, action, and learning under a single objective: minimize surprise / prediction error. Modern instantiations combine predictive coding with variational inference (Variational Predictive Coding, Helmholtz machines). Key open question: is the brain implementing something analogous to backpropagation? Predictive coding provides one biologically plausible alternative.
+
+## Further Reading
+- Neuromatch Academy: Computational Neuroscience
+- Allen Institute Brain Observatory & MICrONS
+- Predictive Processing (Clark, 2023) — MIT Press
+

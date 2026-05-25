@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/mechanistic-interpretability>
+  a schema:article ;
+  schema:headline "Mechanistic Interpretability: Reverse-Engineering Neural Network Circuits and Features" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/mechanistic-interpretability>
+  schema:citation <https://arxiv.org/abs/2404.14082> .
+
+<https://anchorfact.org/kb/mechanistic-interpretability>
+  schema:citation <https://dl.acm.org/doi/10.1145/3787104> .

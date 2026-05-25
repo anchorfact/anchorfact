@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/productivity-systems>
+  a schema:TechArticle ;
+  schema:headline "Productivity Systems" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/productivity-systems>
+  schema:citation <https://gettingthingsdone.com/> .
+
+<https://anchorfact.org/kb/productivity-systems>
+  schema:citation <https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/> .

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-audio-processing>
+  a schema:article ;
+  schema:headline "AI for Audio Processing: Sound Event Detection, Acoustic Scene Analysis, and Environmental Intelligence" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-audio-processing>
+  schema:citation <https://www.nature.com/articles/s44384-025-00036-3> .
+
+<https://anchorfact.org/kb/ai-for-audio-processing>
+  schema:citation <https://link.springer.com/article/10.1007/s10462-025-11106-z> .

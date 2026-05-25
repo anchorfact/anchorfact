@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI for Recruiting: Resume Screening, Talent Matching, and Fairness in Hiring — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+AI is reshaping hiring — screening thousands of resumes in seconds, matching candidates to jobs based on skills rather than keywords, and (ideally) reducing human bias. But the fairness challenge is profound: AI trained on historical hiring data can amplify discrimination through seemingly neutral features. Getting AI recruiting right is not just an engineering problem — it's a civil rights issue.<br>
+<br>
+## Core Explanation<br>
+Recruiting AI applications: (1) Resume parsing — extract structured data (skills, experience, education, certifications) from unstructured PDFs/DOCXs. NLP models (spaCy, BERT-based NER) identify entities and normalize them (e.g., "MIT" → "Massachusetts Institute of Technology"); (2) Candidate screening — rank candidates by job fit. Traditional: keyword matching (brittle, misses synonyms). AI: semantic matching — embed job description and resumes in same vector space, compute cosine similarity. LLM-based: prompt "Rate this candidate for [role] on a scale of 1-10, explaining your reasoning"; (3) Skill extraction and matching — identify both explicit (listed) and inferred (from experience context) skills; (4) Interview scheduling and assessment — AI-conducted initial screening interviews analyzing speech patterns; (5) Bias detection — audit tool for disparities in pass rates across demographic groups.<br>
+<br>
+## Detailed Analysis<br>
+Fairness in AI recruiting (arxiv 2025): biases manifest at every pipeline stage. Sourcing bias — job ads shown more to men via platform algorithms (LinkedIn, Facebook). Screening bias — resume ranking models downgrade candidates with employment gaps (disproportionately women) or non-traditional career paths. Interview bias — speech emotion recognition fails on non-native speakers, perceiving them as "less confident." Springer 2025 SLR: fairness techniques — (1) Pre-processing: reweight training data, generate synthetic minority candidates; (2) In-processing: adversarial debiasing (gradient reversal layer penalizes gender predictability), fairness constraints in loss function; (3) Post-processing: adjust decision thresholds per group to equalize opportunity. Key finding: no single technique works universally — the fairness definition matters. Demographic parity (equal selection rates) conflicts with equal opportunity (equal selection of qualified candidates across groups). HBR (Dec 2025) three-year study: AI reshapes fairness by locking in one definition — organizations using AI hiring tools standardize on a particular fairness metric, often without realizing alternative definitions exist. New York City Local Law 144 (2024-2025) requires bias audits for AI hiring tools — the first such law globally. EU AI Act classifies employment AI as high-risk. The transparency-explainability gap: candidates and hiring managers don't trust black-box scores they can't understand. XAI tools (SHAP, LIME) applied to resume screening show feature importance to build trust.<br>
+<br>
+## Further Reading<br>
+- NYC Local Law 144: AI Hiring Bias Audit Law<br>
+- LinkedIn Fairness Toolkit (LiFT)<br>
+- EU AI Act: High-Risk AI in Employment<br>
+</article></body>
+</html>

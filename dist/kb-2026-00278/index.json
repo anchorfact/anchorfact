@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00278",
+  "headline": "Federated Learning",
+  "description": "Federated Learning (FL) trains ML models across decentralized devices holding local data, without centralizing the data. Devices train locally, share only model updates (not raw data) with a central server, which aggregates updates. Used by Google (Gboard keyboard) and Apple for privacy-preserving ML.",
+  "dateCreated": "2026-05-24T18:00:03.302Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
+      "author": "McMahan, H. Brendan, Moore, Eider, Ramage, Daniel, Hampson, Seth, Aguera y Arcas, Blaise",
+      "sameAs": "https://arxiv.org/abs/1602.05629"
+    }
+  ]
+}

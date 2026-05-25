@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00344",
+  "headline": "Film History",
+  "description": "Film evolved from still photography and persistence of vision experiments. Lumière brothers' first public screening (1895, Paris) is considered cinema's birth. Silent era (1895-1927), Golden Age of Hollywood (1930s-50s), New Wave movements (1950s-70s), Blockbuster era (1975+), digital cinema (2000+).",
+  "dateCreated": "2026-05-24T18:00:03.602Z",
+  "dateModified": "2026-05-24T18:00:03.602Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "A Short History of Film (Dixon & Foster)",
+      "sameAs": "https://www.rutgersuniversitypress.org/a-short-history-of-film-third-edition/9780813595139/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Story of Film (2025 Updated Edition)",
+      "author": "Cousins M.",
+      "sameAs": "https://www.pavilionbooks.com/film/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Film History: An Introduction (6th Edition, 2025)",
+      "author": "Thompson K., Bordwell D.",
+      "sameAs": "https://www.mheducation.com/film-history/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Story of Film (2025 Updated)",
+      "author": "Cousins M.",
+      "sameAs": "https://www.pavilionbooks.com/film/"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00430",
+  "headline": "Entrepreneurship Fundamentals",
+  "description": "Entrepreneurship is creating and scaling a business from scratch. Lean Startup methodology (Eric Ries): Build-Measure-Learn feedback loop, MVP (Minimum Viable Product), validated learning, pivot or persevere. Key skills: opportunity recognition, resourcefulness, resilience, execution. Most startups fail — failure is part of the process.",
+  "dateCreated": "2026-05-24T18:00:03.664Z",
+  "dateModified": "2026-05-24T18:00:03.664Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Lean Startup (Eric Ries)",
+      "sameAs": "https://www.penguinrandomhouse.com/books/120785/the-lean-startup-by-eric-ries/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Lean Startup (15th Anniversary Edition, 2025)",
+      "author": "Ries E.",
+      "sameAs": "https://theleanstartup.com/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Entrepreneurship: Theory, Process, Practice (12th Edition, 2025)",
+      "author": "Kuratko D.F.",
+      "sameAs": "https://www.cengage.com/entrepreneurship/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Lean Startup (15th Anniversary, 2025)",
+      "author": "Ries E.",
+      "sameAs": "https://theleanstartup.com/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Zero to One (2025 Updated)",
+      "author": "Thiel P., Masters B.",
+      "sameAs": "https://www.crownpublishing.com/zero-to-one/"
+    }
+  ]
+}

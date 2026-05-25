@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI Biometric Recognition: Fingerprint, Iris, Face, and Multimodal Deep Learning Systems — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+AI has transformed biometric recognition from specialized hardware systems to software running on smartphones. Face recognition (Face ID), fingerprint sensors, and iris scanners use deep learning to achieve forensic-grade identity verification. Multimodal systems combining multiple biometrics now reach near-perfect accuracy.<br>
+<br>
+## Core Explanation<br>
+Biometric modalities: (1) Face -- the most widely deployed. ArcFace (Deng et al., 2019) uses Additive Angular Margin Loss to maximize inter-class separation, achieving 99.83% on LFW. Face recognition is embedded in every smartphone (Face ID, Android Face Unlock) and airport (CLEAR, eGates); (2) Fingerprint -- minutiae-based (ridge endings, bifurcations) + deep learning for feature extraction. DeepPrint (2019) achieves NIST FRVT top ranking; (3) Iris -- near-infrared imaging of iris patterns. IrisCode (Daugman, 1993) remains the foundation; deep learning improves segmentation and matching; (4) Emerging -- palm vein (NIR imaging of vein patterns, impossible to spoof externally), gait recognition (walking pattern from video), and behavioral (keystroke dynamics, touch patterns).<br>
+<br>
+## Detailed Analysis<br>
+ArcFace architecture: ResNet backbone + ArcFace head. The key innovation: the classification boundary is defined by angular margin in hyperspherical space. For identity i, the logit is s*cos(theta_i + m) where m is the angular margin. This forces embeddings of same identity closer together and different identities further apart in angular space. ScienceDirect 2025 multimodal system: trains separate CNNs for face, fingerprint, and iris. Fusion: score-level (weighted average of individual classifier scores) and feature-level (concatenated embeddings from all three modalities into a joint classifier). Multimodal fusion compensates for individual modality failures (face fails with masks, fingerprint fails with wet/dirty fingers). NIST FRVT (Face Recognition Vendor Test) provides the authoritative benchmark. Key challenges: (1) Bias -- face recognition accuracy varies by race and gender (NIST 2019 found 10-100x higher false match rates for some demographics); (2) Privacy -- biometric data is immutable; a compromised fingerprint cannot be changed. Template protection (cancelable biometrics, fuzzy extractors) and homomorphic encryption for matching are active research areas.<br>
+</article></body>
+</html>

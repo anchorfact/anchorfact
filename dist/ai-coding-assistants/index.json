@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/ai-coding-assistants",
+  "headline": "AI Coding Assistants: Copilot, Cursor, and Claude Code",
+  "description": "AI coding assistants evolved from autocomplete to autonomous agents. By 2026, Cursor leads IDE-based workflows, Claude Code dominates terminal agentic coding (77.2% SWE-bench), and GitHub Copilot remains the enterprise standard with 55% productivity gains.",
+  "dateCreated": "2026-05-24T18:00:02.833Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Claude Code: Agentic coding with Claude",
+      "sameAs": "https://docs.anthropic.com/en/docs/claude-code"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+      "sameAs": "https://arxiv.org/abs/2310.06770"
+    }
+  ]
+}

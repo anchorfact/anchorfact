@@ -1,0 +1,45 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/corporate-finance",
+  "headline": "Corporate Finance: Capital Structure and Valuation",
+  "description": "Corporate finance addresses how firms raise capital and make investment decisions. Capital structure (debt vs equity) and valuation (what assets are worth) are the core concerns.",
+  "dateCreated": "2026-05-24T18:00:03.647Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Principles of Corporate Finance, 14th Edition",
+      "sameAs": "https://www.mheducation.com/highered/product/principles-corporate-finance-brealey-myers/M9781264080946.html"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Cost of Capital, Corporation Finance and the Theory of Investment",
+      "sameAs": "https://www.jstor.org/stable/1809766"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Principles of Corporate Finance (15th Edition, 2025)",
+      "author": "Brealey R.A., Myers S.C., Allen F.",
+      "sameAs": "https://www.mheducation.com/corporate-finance/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Valuation: Measuring and Managing the Value of Companies (2025)",
+      "author": "Koller T., Goedhart M., Wessels D.",
+      "sameAs": "https://www.wiley.com/valuation/"
+    }
+  ]
+}

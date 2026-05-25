@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI for Chemistry: Reaction Prediction, Retrosynthesis, and Computational Chemistry — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+AI is transforming chemistry from a fundamentally experimental science to a computationally predictable one. Machine learning potentials simulate molecular dynamics at quantum accuracy with million-fold speedups, while AI retrosynthesis tools design complete synthetic routes in minutes rather than weeks. These capabilities are accelerating discovery across pharmaceuticals, materials, and catalysis.<br>
+<br>
+## Core Explanation<br>
+Computational chemistry traditionally relies on solving the Schrodinger equation — DFT (Density Functional Theory) provides reasonable accuracy at O(N^3) cost (a few hundred atoms, picoseconds). ML potentials learn the potential energy surface (PES) directly from DFT training data: given atomic positions (3N coordinates), predict energy and forces. Key innovations: (1) E(3)-equivariant neural networks — NequIP, Allegro, MACE enforce rotational and translational symmetry exactly, dramatically improving data efficiency; (2) Active learning loops — MD simulation identifies configurations where ML uncertainty is high, triggers expensive DFT calculation, retrains — iteratively building comprehensive coverage; (3) Universal ML potentials (MACE-MP-0, CHGNet) trained across the entire periodic table for general-purpose simulation.<br>
+<br>
+## Detailed Analysis<br>
+Reaction prediction: given reactants, predict products. AI approaches: (1) Template-based — match reactant substructures to known reaction templates (reliable but limited to known chemistry); (2) Template-free / seq2seq — Molecular Transformer treats reactions as SMILES-to-SMILES translation (analogous to machine translation), discovering novel reaction rules; (3) Graph-based — represent molecules as graphs, edit graph to predict products (Graph2Edits, LocalTransform). Retrosynthesis: the inverse problem — given a target molecule, find synthetic pathways to commercially available building blocks. Multi-step synthesis uses tree search (MCTS, A*) guided by neural heuristics predicting step feasibility, cost, and selectivity. IBM RXN for Chemistry (2024) provides a complete AI synthesis planning platform. Key applications: pharmaceutical process chemistry (designing scalable, green synthesis routes), catalyst discovery (predicting which ligands accelerate specific transformations), and reaction condition optimization (Bayesian optimization over temperature, solvent, concentration). Challenges: (1) Reaction yields are harder to predict than products (kinetic competition, sensitivity to conditions); (2) Stereochemistry prediction (enantioselectivity, diastereoselectivity) remains an active challenge; (3) Training data bias — published reactions overwhelmingly report successful syntheses (positive-unlabeled learning problem).<br>
+<br>
+## Further Reading<br>
+- Open Catalyst Project (OC20/OC22, Meta FAIR)<br>
+- IBM RXN for Chemistry<br>
+- Chemprop: Molecular Property Prediction (MIT)<br>
+</article></body>
+</html>

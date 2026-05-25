@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/attention-mechanisms-deep-dive",
+  "headline": "Attention Mechanisms: Scaled Dot-Product to FlashAttention",
+  "description": "Attention mechanisms enable neural networks to dynamically focus on relevant parts of input sequences. Since Vaswani et al. (2017), attention has become the dominant paradigm in NLP, vision, and multimodal AI.",
+  "dateCreated": "2026-05-24T18:00:03.221Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Attention Is All You Need",
+      "sameAs": "https://arxiv.org/abs/1706.03762"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "FlashAttention-3: Fast and Accurate Attention with Asynchrony and Low-precision",
+      "sameAs": "https://arxiv.org/abs/2407.08608"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-warehouse-robotics>
+  a schema:article ;
+  schema:headline "AI for Warehouse Robotics: Autonomous Forklifts, Bin-Picking, and Fulfillment Automation" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-warehouse-robotics>
+  schema:citation <https://arxiv.org/search/?query=warehouse+robotics+AI+bin+picking+AMR> .
+
+<https://anchorfact.org/kb/ai-warehouse-robotics>
+  schema:citation <https://arxiv.org/search/?query=robotic+grasping+warehouse+computer+vision> .

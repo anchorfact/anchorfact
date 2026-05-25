@@ -1,0 +1,14 @@
+# AI for Smart Grids: Load Forecasting, Demand Response, and Grid Stability
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI is the brain of the modern electric grid -- predicting demand hours ahead, optimizing when to charge millions of EVs, and balancing solar and wind power in real-time. From DeepMind's 30-40% energy savings at Google to smart meters learning household usage patterns, AI makes the grid cleaner, cheaper, and more reliable.
+
+## Core Explanation
+Smart grid AI: (1) Load forecasting -- predict electricity demand (by region, 15-min to 24-hour ahead). Features: historical load, weather (temperature, cloud cover), calendar (weekday/weekend, holidays), special events. DL: LSTM, TFT (Temporal Fusion Transformer), N-BEATS; (2) Renewable forecasting -- predict solar (GHI from cloud satellite + NWP) and wind (hub-height wind speed). ConvLSTM processes satellite image sequences. 20-30% error reduction vs persistence; (3) Generator scheduling -- given load + renewable forecasts, optimize which plants run (unit commitment) and at what power (economic dispatch). ML speeds up mixed-integer optimization; (4) Demand response -- RL-based incentives: offer lower prices for off-peak usage, automatically adjust smart thermostats, schedule EV charging, and cycle industrial loads.
+
+## Detailed Analysis
+DeepMind data center cooling (2019-2025): RL agent controls cooling equipment (chillers, cooling towers, pumps) every 5 minutes. State: temperature, pressure, IT load, weather. Actions: equipment settings. Reward: minimize energy while maintaining temperature constraints. Result: 30-40% cooling energy reduction. EV smart charging: RL agent decides when to charge each EV given electricity price, grid load, and user's departure time. Aggregates thousands of EVs for grid services (frequency regulation). Battery storage: AI predicts optimal charge/discharge schedule for grid-scale batteries -- buy electricity when cheap/solar abundant, sell when expensive. Stem Athena: AI platform managing 1+ GWh of storage across 1,000+ sites. Grid stability: as renewable penetration increases, grid inertia decreases. AI-based fast frequency response uses batteries to stabilize frequency within milliseconds (vs. seconds for traditional generators).
+

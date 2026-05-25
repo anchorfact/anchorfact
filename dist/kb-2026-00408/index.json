@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00408",
+  "headline": "Ancient Greek Literature",
+  "description": "Homer's Iliad and Odyssey (~8th century BCE) are the foundational texts of Western literature. Iliad: final weeks of Trojan War (Achilles vs. Hector). Odyssey: Odysseus's 10-year journey home from Troy. Both were originally oral poetry, later written down. Greek tragedy (Aeschylus, Sophocles, Euripides) explored human suffering and fate.",
+  "dateCreated": "2026-05-24T18:00:03.557Z",
+  "dateModified": "2026-05-24T18:00:03.557Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Iliad (Homer, ~8th century BCE)",
+      "sameAs": "https://www.gutenberg.org/ebooks/2199"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Iliad (2025 Translation)",
+      "author": "Homer",
+      "sameAs": "https://www.penguinrandomhouse.com/iliad/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Greek Literature: A Very Short Introduction (2025)",
+      "author": "multiple",
+      "sameAs": "https://global.oup.com/vsi-greek-lit/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Iliad (2025 New Translation)",
+      "author": "Homer",
+      "sameAs": "https://www.penguinrandomhouse.com/iliad/"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-transportation",
+  "headline": "AI for Transportation: Traffic Flow Prediction, Intelligent Transportation Systems, and Smart Mobility",
+  "description": "AI is the operating system for urban mobility — predicting traffic flow hours in advance, optimizing traffic signals in real-time, and coordinating multi-modal transportation networks. With cities losing $300B+ annually to congestion, AI-driven intelligent transportation systems (ITS) offer the most immediate path to reclaiming lost time, fuel, and productivity.",
+  "dateCreated": "2026-05-24T18:00:03.053Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "An efficient intelligent transportation system for traffic flow prediction and congestion management",
+      "sameAs": "https://www.nature.com/articles/s41598-025-10794-5"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Real-time traffic flow optimization using large language models and deep reinforcement learning",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S156849462501230X"
+    }
+  ]
+}

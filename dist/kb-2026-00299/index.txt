@@ -1,0 +1,17 @@
+# Deno
+Confidence: high
+Last verified: 2026-05-24
+Generation: human_only
+
+## TL;DR
+
+Deno (Ryan Dahl, 2018, Node.js creator) is a secure JavaScript/TypeScript runtime built on Rust (Tokio) and V8. Native TypeScript support, security-first (no file/network access by default), built-in tooling (formatter, linter, test runner, bundler). Deno 2 (2024) added backward compatibility with Node.js/npm ecosystem.
+
+## Core Explanation
+
+Security: `--allow-net`, `--allow-read`, `--allow-write` explicitly grant permissions. `deno compile` creates standalone binaries. `deno fmt` / `deno lint` built-in. URL imports replace node_modules: `import {} from 'https://...'`. Deno 2: `deno add npm:express` — use npm packages natively. Fresh: Deno's full-stack web framework (Preact + islands architecture).
+
+## Further Reading
+
+- [Deno Documentation](https://docs.deno.com/)
+

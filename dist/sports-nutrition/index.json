@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/sports-nutrition",
+  "headline": "Sports Nutrition: Fueling Performance and Recovery",
+  "description": "Sports nutrition optimizes timing, quantity, and composition of nutrient intake to maximize training adaptations, competition performance, and recovery.",
+  "dateCreated": "2026-05-24T18:00:04.617Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Advanced Sports Nutrition, 3rd Edition",
+      "sameAs": "https://www.humankinetics.com/advanced-sports-nutrition/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "ISSN Position Stand: Nutrient Timing",
+      "sameAs": "https://jissn.biomedcentral.com/"
+    }
+  ]
+}

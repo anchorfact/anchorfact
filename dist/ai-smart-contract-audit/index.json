@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-smart-contract-audit",
+  "headline": "AI Smart Contract Auditing: Vulnerability Detection, Formal Verification, and Blockchain Security",
+  "description": "Smart contracts — self-executing programs on blockchains — hold billions in value, and a single bug can drain it all. AI-augmented auditing combines LLM code understanding with formal verification to detect vulnerabilities before deployment, protecting the $100B+ DeFi ecosystem from exploits that have already caused billions in losses.",
+  "dateCreated": "2026-05-24T18:00:03.162Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "LLM-SmartAudit: Advanced Smart Contract Vulnerability Detection via LLM-Augmented Formal Methods",
+      "sameAs": "https://ieeexplore.ieee.org/abstract/document/11121619"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "LLM-SmartAudit: Advanced Smart Contract Vulnerability Detection",
+      "sameAs": "https://arxiv.org/abs/2410.09381"
+    }
+  ]
+}

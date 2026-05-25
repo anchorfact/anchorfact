@@ -1,0 +1,26 @@
+# Next.js
+Confidence: high
+Last verified: 2026-05-22
+Generation: human_only
+
+
+
+## TL;DR
+
+Next.js is a React-based full-stack web framework created by Vercel, first released in October 2016. It provides server-side rendering (SSR), static site generation (SSG), API routes, and file-system-based routing out of the box. With 139,553 GitHub stars as of May 2026, it is the most popular React framework and powers websites for Nike, TikTok, Hulu, Twitch, and Notion. The App Router (introduced in Next.js 13, 2022, and stabilized in Next.js 14/15) brought React Server Components as the default rendering model.
+
+## Core Features
+
+- **App Router** (v13+): File-system routing with layouts, loading states, error boundaries
+- **React Server Components**: Default server-side rendering with zero client JavaScript for static content
+- **Server Actions**: Mutate data on the server directly from components (no API routes needed)
+- **Static/Dynamic Rendering**: Automatic selection between SSG, ISR, SSR, and streaming per route
+- **Middleware**: Edge-compatible request interception for auth, redirects, A/B testing
+- **Image Optimization**: Automatic responsive images via `next/image`
+- **Turbopack**: Rust-based successor to Webpack (stable in Next.js 15)
+
+## Further Reading
+
+- [Next.js Docs](https://nextjs.org/docs): Official documentation
+- [Next.js GitHub](https://github.com/vercel/next.js): Source code (140K+ stars)
+

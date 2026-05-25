@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00378",
+  "headline": "First Aid CPR",
+  "description": "CPR (Cardiopulmonary Resuscitation) doubles or triples survival chances after cardiac arrest. Hands-only CPR (AHA, 2008): push hard and fast on center of chest, 100-120 compressions/minute, 2 inches deep. No rescue breaths needed for bystanders. AED (Automated External Defibrillator): restores normal heart rhythm.",
+  "dateCreated": "2026-05-24T18:00:04.335Z",
+  "dateModified": "2026-05-24T18:00:04.335Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AHA Guidelines for CPR and Emergency Cardiovascular Care",
+      "sameAs": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines"
+    }
+  ]
+}

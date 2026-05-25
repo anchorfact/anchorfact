@@ -1,0 +1,26 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/marketing-fundamentals>
+  a schema:Article ;
+  schema:headline "Marketing: Strategy, Consumer Behavior, and Digital Channels" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/marketing-fundamentals>
+  schema:citation <https://www.pearson.com/en-us/subject-catalog/p/marketing-management/P200000005852> .
+
+<https://anchorfact.org/kb/marketing-fundamentals>
+  schema:citation <https://www.harpercollins.com/products/influence-robert-b-cialdini> .
+
+<https://anchorfact.org/kb/marketing-fundamentals>
+  schema:citation <https://www.pearson.com/marketing/> .
+
+<https://anchorfact.org/kb/marketing-fundamentals>
+  schema:citation <https://www.penguinrandomhouse.com/this-is-marketing/> .
+
+<https://anchorfact.org/kb/marketing-fundamentals>
+  schema:citation <https://www.pearson.com/marketing/> .
+
+<https://anchorfact.org/kb/marketing-fundamentals>
+  schema:citation <https://www.penguinrandomhouse.com/this-is-marketing/> .

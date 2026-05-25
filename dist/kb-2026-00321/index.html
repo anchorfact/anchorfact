@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Nomad (HashiCorp) — AnchorFact</title></head>
+<body><article><br>
+<br>
+<br>
+<br>
+## TL;DR<br>
+<br>
+HashiCorp Nomad (2015) is a flexible workload orchestrator — a simpler alternative to Kubernetes. Schedules and manages containers, VMs, and standalone applications across infrastructure. Single binary, no external dependencies. Nomad excels at non-containerized workloads (Java JARs, raw binaries) alongside containers.<br>
+<br>
+## Core Explanation<br>
+<br>
+Job specification (HCL): task group → tasks with resources, constraints, services. Schedulers: service (long-running), batch (short-lived), system (one per node). Nomad + Consul + Vault: the 'HashiStack' for orchestration + service mesh + secrets. Multi-region: federation across datacenters. Comparison to K8s: simpler, more versatile, smaller community.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Nomad Documentation](https://developer.hashicorp.com/nomad/docs)<br>
+</article></body>
+</html>

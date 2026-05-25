@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-space-exploration",
+  "headline": "AI for Space Exploration: Autonomous Navigation, Earth Observation, and Spacecraft Autonomy",
+  "description": "AI enables space exploration beyond what humans can directly control -- from Mars rovers that drive themselves to satellites that process images in orbit to telescopes that autonomously detect interesting astronomical events. The fundamental constraint of space (communication delays, bandwidth limits, hostile environments) makes AI not just useful but essential for deep-space missions.",
+  "dateCreated": "2026-05-24T18:00:03.044Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Autonomous Navigation and AI-Driven Decision Making for Mars Exploration Rovers",
+      "sameAs": "https://www.science.org/journal/scirobotics"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Onboard AI for Earth Observation: In-Orbit Inference and Autonomous Data Filtering on Phi-Sat Missions",
+      "sameAs": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36"
+    }
+  ]
+}

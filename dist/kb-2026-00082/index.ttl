@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00082>
+  a schema:TechArticle ;
+  schema:headline "XMLHttpRequest" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00082>
+  schema:citation <https://xhr.spec.whatwg.org/> .

@@ -1,0 +1,182 @@
+---
+id: "kb-2026-00111"
+title: "HTTPS / TLS (Transport Layer Security)"
+schema_type: "TechArticle"
+category: "computer-science"
+language: "en"
+confidence: "high"
+last_verified: "2026-05-22"
+created_date: "2026-05-22"
+generation_method: "human_only"
+derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
+atomic_facts:
+  - id: "fact-computer-science-001"
+    statement: "3 (RFC 8446, 2018) is the current standard — it reduced the handshake from 2 to 1 round trip (0-RTT on resumption), removed all obsolete algorithms (RSA key exchange, CBC-mode ciphers, SHA-1, MD5), and mandates forward secrecy (all key exchanges use ECDHE)."
+    source_title: "RFC 8446 — The Transport Layer Security (TLS) Protocol Version 1.3"
+    source_url: "https://www.rfc-editor.org/rfc/rfc8446"
+    confidence: "medium"
+  - id: "fact-computer-science-002"
+    statement: "As of 2026, over 90% of pages loaded in Chrome use HTTPS (Google Transparency Report), and Let's Encrypt has issued more than 400 million free certificates."
+    source_title: "Google Transparency Report — HTTPS encryption on the web"
+    source_url: "https://transparencyreport.google.com/https/overview"
+    confidence: "medium"
+  - id: "fact-computer-science-003"
+    statement: "The lifecycle of a TLS connection:  ### TLS 1."
+    source_title: "RFC 8446 — The Transport Layer Security (TLS) Protocol Version 1.3"
+    source_url: "https://www.rfc-editor.org/rfc/rfc8446"
+    confidence: "medium"
+  - id: "fact-computer-science-004"
+    statement: "Total: ClientHello + data → Server response."
+    source_title: "RFC 8446 — The Transport Layer Security (TLS) Protocol Version 1.3"
+    source_url: "https://www.rfc-editor.org/rfc/rfc8446"
+    confidence: "medium"
+  - id: "fact-computer-science-005"
+    statement: "This eliminates the round-trip entirely but provides weaker forward secrecy for 0-RTT data (replay protection relies on server-side anti-replay mechanisms)."
+    source_title: "Google Transparency Report — HTTPS encryption on the web"
+    source_url: "https://transparencyreport.google.com/https/overview"
+    confidence: "medium"
+
+completeness: 0.9
+
+known_gaps:
+  - "Certificate Transparency (RFC 6962), ACME (RFC 8555), and post-quantum TLS are important extensions not covered here"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "RFC 8446 — The Transport Layer Security (TLS) Protocol Version 1.3"
+    authors: ["Rescorla, E."]
+    type: "standard"
+    year: 2018
+    url: "https://www.rfc-editor.org/rfc/rfc8446"
+    institution: "IETF"
+  - title: "RFC 5246 — The Transport Layer Security (TLS) Protocol Version 1.2"
+    authors: ["Dierks, T.", "Rescorla, E."]
+    type: "standard"
+    year: 2008
+    url: "https://www.rfc-editor.org/rfc/rfc5246"
+    institution: "IETF"
+
+secondary_sources:
+  - title: "Let's Encrypt Stats"
+    type: "data_source"
+    year: 2026
+    url: "https://letsencrypt.org/stats/"
+    institution: "Internet Security Research Group (ISRG)"
+  - title: "Google Transparency Report — HTTPS encryption on the web"
+    type: "data_source"
+    year: 2026
+    url: "https://transparencyreport.google.com/https/overview"
+    institution: "Google"
+
+---
+
+
+
+## TL;DR
+
+HTTPS (HTTP over TLS) provides three essential security properties: **confidentiality** (encryption prevents eavesdropping), **integrity** (tamper detection), and **authentication** (server identity verified via X.509 certificates). TLS 1.3 (RFC 8446, 2018) is the current standard — it reduced the handshake from 2 to 1 round trip (0-RTT on resumption), removed all obsolete algorithms (RSA key exchange, CBC-mode ciphers, SHA-1, MD5), and mandates forward secrecy (all key exchanges use ECDHE). As of 2026, over 90% of pages loaded in Chrome use HTTPS (Google Transparency Report), and Let's Encrypt has issued more than 400 million free certificates.
+
+## Core Explanation
+
+TLS operates between the transport layer (TCP) and the application layer (HTTP). The lifecycle of a TLS connection:
+
+### TLS 1.3 Handshake (1-RTT)
+
+```
+Client                                    Server
+  |--- ClientHello ----------------------->|  (1) Supported ciphers, key share (ECDHE), SNI
+  |<-- ServerHello, EncryptedExtensions ----|  (2) Chosen cipher, server key share, certificate
+  |<-- Certificate, CertVerify, Finished ---|      All server messages after ServerHello are ENCRYPTED
+  |--- Finished -------------------------->|  (3) Client authentication completed
+  |<===== ENCRYPTED APPLICATION DATA =====>|
+```
+
+**0-RTT Resumption**: For previously visited servers, the client can send application data immediately in the first flight, derived from a pre-shared key (PSK) established in a prior session. Total: ClientHello + data → Server response. This eliminates the round-trip entirely but provides weaker forward secrecy for 0-RTT data (replay protection relies on server-side anti-replay mechanisms).
+
+Compare to TLS 1.2 (2-RTT): ClientHello → ServerHello + Certificate → ClientKeyExchange + ChangeCipherSpec → Finished. The two extra round trips added 100-300ms of latency. TLS 1.3's single round trip is a major performance improvement.
+
+## Detailed Analysis
+
+### Key Cryptographic Properties
+
+| Property | How TLS Provides It |
+|----------|-------------------|
+| **Confidentiality** | Symmetric encryption (AES-GCM, ChaCha20-Poly1305) of all application data |
+| **Integrity** | AEAD ciphers (Authenticated Encryption with Associated Data) — encrypt AND authenticate in one operation |
+| **Authentication** | X.509 certificate chain: server's certificate signed by a Certificate Authority (CA), verified via chain of trust to a root CA in the browser's trust store |
+| **Forward Secrecy** | Mandatory in TLS 1.3: all key exchanges use ECDHE (Elliptic Curve Diffie-Hellman Ephemeral). Compromising the server's long-term private key does not decrypt past sessions because ephemeral keys are discarded after each session |
+
+### TLS 1.3: What Was Removed
+
+TLS 1.3 took the unusual step of *removing* features that made TLS 1.2 complex and vulnerable:
+
+| Removed Feature | Why |
+|----------------|-----|
+| RSA key exchange | Not forward secret — server's private key can decrypt ALL past sessions |
+| CBC-mode ciphers | Vulnerable to padding oracle attacks (Lucky13, POODLE) |
+| RC4 stream cipher | Completely broken |
+| SHA-1 hash | Collision demonstrated (SHAttered, 2017) |
+| MD5 hash | Collision attacks trivial |
+| Static DH key exchange | Not forward secret |
+| Compression | CRIME attack (2012) — compressed length leaks plaintext |
+| Renegotiation | Triple Handshake attack |
+
+TLS 1.3 supports only 5 cipher suites (vs. dozens in TLS 1.2), all of which are AEAD ciphers:
+
+1. `TLS_AES_128_GCM_SHA256` (most widely deployed)
+2. `TLS_AES_256_GCM_SHA384` (higher security margin)
+3. `TLS_CHACHA20_POLY1305_SHA256` (optimized for mobile/ARM processors)
+4. `TLS_AES_128_CCM_SHA256` (constrained environments, IoT)
+5. `TLS_AES_128_CCM_8_SHA256` (8-byte authentication tag, IoT)
+
+### X.509 Certificates
+
+Server authentication relies on X.509 certificates, which bind a domain name to a public key. A certificate contains:
+
+- **Subject**: The domain name (Common Name or Subject Alternative Name)
+- **Issuer**: The Certificate Authority that signed it
+- **Validity period**: Not Before / Not After dates
+- **Public key**: The server's public key
+- **Signature**: CA's digital signature over the certificate contents
+
+**Certificate Chain Verification**: Browser receives server certificate → checks it was signed by an intermediate CA → checks intermediate was signed by a root CA → root CA is in the browser's trust store (pre-installed). If any link in the chain fails, the browser shows a security warning.
+
+**Certificate Transparency** (RFC 6962, 2013): All certificates must be publicly logged. Domain owners can monitor CT logs to detect mis-issued certificates. Chrome requires CT for all new certificates since 2018.
+
+### Deployment Status
+
+| Metric | Value (2026) | Source |
+|--------|:------------:|--------|
+| HTTPS adoption (Chrome pageloads) | >90% | Google Transparency Report |
+| TLS 1.3 adoption | ~70% of HTTPS connections | IETF/Cloudflare data |
+| Let's Encrypt certificates issued | 400M+ | Let's Encrypt Stats |
+| Let's Encrypt active domains | 300M+ | Let's Encrypt Stats |
+| Average certificate lifetime | 90 days | ACME standard |
+
+Let's Encrypt (founded 2014, operated by ISRG) was the primary driver of HTTPS adoption, providing free, automated certificates via the ACME protocol (RFC 8555). Before Let's Encrypt (2014), only ~40% of pages used HTTPS; by 2026, over 90% do.
+
+### HSTS (HTTP Strict Transport Security)
+
+HSTS (`Strict-Transport-Security` header) instructs browsers to only connect to a domain via HTTPS, refusing to downgrade to HTTP even if the user types `http://`. It also prevents users from clicking through certificate warnings.
+
+```
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+```
+
+- **max-age**: Duration in seconds (2 years = 63,072,000)
+- **includeSubDomains**: Apply to all subdomains
+- **preload**: Eligible for browser HSTS preload lists (hardcoded in Chrome/Firefox)
+
+Domains on the preload list are never contacted over HTTP, even on first visit. google.com, paypal.com, and thousands of others are preloaded.
+
+## Further Reading
+
+- [RFC 8446 — TLS 1.3](https://www.rfc-editor.org/rfc/rfc8446): Current TLS standard (Rescorla, 2018)
+- [RFC 5246 — TLS 1.2](https://www.rfc-editor.org/rfc/rfc5246): Widely deployed TLS version
+- [Let's Encrypt Stats](https://letsencrypt.org/stats/): Certificate issuance data

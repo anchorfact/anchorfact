@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/ai-content-authenticity",
+  "headline": "AI Content Authenticity: Watermarking and Detection",
+  "description": "AI-generated content detection is an arms race. Watermarking embeds imperceptible signals during generation; detection tools classify text as AI/human. C2PA standards establish cryptographic provenance chains from capture to publication.",
+  "dateCreated": "2026-05-24T18:00:02.841Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "A Watermark for Large Language Models",
+      "sameAs": "https://arxiv.org/abs/2301.10226"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Scalable watermarking for identifying large language model outputs",
+      "sameAs": "https://www.nature.com/articles/s41586-024-08025-4"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-space-exploration-1",
+    "text": "NASA Mars rovers (Perseverance, 2021-present) use AI-powered autonomous navigation (AutoNav) -- stereo vision + deep learning terrain classification allows the rover to drive up to 200 meters per Martian day without Earth-based human command, a 5-10x improvement over previous rovers (Curiosity). Onboard AI processes images in real-time, identifies hazards (rocks, sand traps), and selects safe paths, with Earth communication delays of 4-24 minutes making autonomy essential.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.science.org/journal/scirobotics"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-space-exploration-2",
+    "text": "Earth observation AI at scale: Copernicus Sentinel satellites (ESA) generate 20 TB of data daily. AI models (ESA Phi-Sat, IBM/NASA Prithvi geospatial foundation model) process this data for climate monitoring, disaster response, deforestation tracking, and agricultural assessment. The ESA Phi-Sat-1 mission (2020) was the first to run AI inference in orbit -- filtering cloud-covered images on-satellite before downlink, reducing data transmission by 30%.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36"
+    }
+  }
+]

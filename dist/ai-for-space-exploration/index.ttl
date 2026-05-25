@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-space-exploration>
+  a schema:article ;
+  schema:headline "AI for Space Exploration: Autonomous Navigation, Earth Observation, and Spacecraft Autonomy" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-space-exploration>
+  schema:citation <https://www.science.org/journal/scirobotics> .
+
+<https://anchorfact.org/kb/ai-for-space-exploration>
+  schema:citation <https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36> .

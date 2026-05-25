@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/molecular-biology-central-dogma>
+  a schema:Article ;
+  schema:headline "Molecular Biology: The Central Dogma" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/molecular-biology-central-dogma>
+  schema:citation <https://www.pearson.com/en-us/subject-catalog/p/molecular-biology-of-the-gene/P200000006955> .
+
+<https://anchorfact.org/kb/molecular-biology-central-dogma>
+  schema:citation <https://www.science.org/doi/10.1126/science.1225829> .

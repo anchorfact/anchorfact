@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00409>
+  a schema:TechArticle ;
+  schema:headline "Existentialism" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00409>
+  schema:citation <https://yalebooks.yale.edu/book/9780300115468/existentialism-is-a-humanism/> .

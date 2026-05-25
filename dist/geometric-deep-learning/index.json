@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/geometric-deep-learning",
+  "headline": "Geometric Deep Learning: Group Equivariance and Symmetry",
+  "description": "Geometric Deep Learning reveals that CNNs, GNNs, and Transformers share a common mathematical blueprint — equivariance to symmetry groups. Group-equivariant networks exploit this insight to achieve better sample efficiency and generalization on structured data.",
+  "dateCreated": "2026-05-24T18:00:03.312Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Geometric Deep Learning and Equivariant Neural Networks",
+      "sameAs": "https://link.springer.com/article/10.1007/s10462-023-10502-7"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges",
+      "sameAs": "https://geometricdeeplearning.com/"
+    }
+  ]
+}

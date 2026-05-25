@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-for-fraud-prevention",
+  "headline": "AI for Payment Fraud Prevention: Real-Time Transaction Scoring, Chargeback Reduction, and Merchant Risk",
+  "description": "AI is the silent guardian of every card swipe and online payment -- scoring transactions in milliseconds, detecting fraud rings via graph neural networks, and blocking $25B+ in fraud annually. From Visa's 500M daily transactions to Stripe Radar, AI fraud prevention balances security with seamless user experience.",
+  "dateCreated": "2026-05-24T18:00:02.964Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Machine Learning for Real-Time Payment Fraud Detection: Transaction Scoring, Graph Neural Networks, and Behavioral Biometrics (2024-2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=payment+fraud+detection+real+time+machine+learning"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Graph Neural Networks for Financial Crime: Fraud Ring Detection, Money Laundering, and Anomaly Detection in Transaction Networks",
+      "sameAs": "https://arxiv.org/search/?query=graph+neural+network+fraud+ring+detection"
+    }
+  ]
+}

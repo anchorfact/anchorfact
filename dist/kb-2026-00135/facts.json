@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "Greedy algorithms make locally optimal choices hoping for global optimum. Fast but require correctness proof. Examples: Huffman coding, Prim/Kruskal (MST), activity selection, fractional knapsack.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "Greedy algorithms make locally optimal choices hoping for global optimum. Fast but require correctness proof. Examples: Huffman coding, Prim/Kruskal (MST), activity selection, fractional knapsack.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  }
+]

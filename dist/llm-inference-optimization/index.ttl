@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/llm-inference-optimization>
+  a schema:TechArticle ;
+  schema:headline "LLM Inference Optimization: From FlashAttention to Speculative Decoding" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/llm-inference-optimization>
+  schema:citation <https://arxiv.org/abs/2205.14135> .
+
+<https://anchorfact.org/kb/llm-inference-optimization>
+  schema:citation <https://arxiv.org/abs/2211.17192> .

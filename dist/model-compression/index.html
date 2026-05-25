@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Model Compression: Pruning, Quantization, and Distillation — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Model compression reduces inference cost for deployment on resource-constrained devices. The three pillars — pruning, quantization, and distillation — can be combined for 10x+ compression with minimal accuracy loss.<br>
+<br>
+## Core Explanation<br>
+Pruning removes weights (unstructured) or entire neurons/channels (structured) based on magnitude or gradient criteria. Quantization converts floating-point weights to lower precision (INT8, INT4). Knowledge distillation trains a small student model to mimic a large teacher.<br>
+<br>
+## Detailed Analysis<br>
+Post-training quantization (PTQ): calibrate on representative data, no retraining. Quantization-aware training (QAT): simulate quantization during training for higher accuracy. GPTQ and AWQ enable 4-bit quantization of LLMs. DistilBERT achieves 97% of BERT's performance with 40% fewer parameters via distillation.<br>
+<br>
+## Further Reading<br>
+- PyTorch: Quantization Tutorial<br>
+- Hugging Face Optimum<br>
+- Papers With Code: Model Compression</article></body>
+</html>

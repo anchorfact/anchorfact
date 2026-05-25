@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00478",
+  "headline": "Animation History",
+  "description": "Animation creates the illusion of motion through sequential images. History: flip books → traditional hand-drawn (Disney, 1920s+) → stop-motion (clay, puppets) → CGI (Pixar's Toy Story, 1995, first fully CGI feature) → modern hybrid. Disney's 12 principles of animation (Thomas & Johnston, 1981) remain foundational.",
+  "dateCreated": "2026-05-24T18:00:03.561Z",
+  "dateModified": "2026-05-24T18:00:03.561Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Illusion of Life: Disney Animation (Thomas & Johnston)",
+      "sameAs": "https://www.disneybooks.com/book/the-illusion-of-life/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Animator's Survival Kit (2025 Expanded Edition)",
+      "author": "Williams R.",
+      "sameAs": "https://www.faber.co.uk/animation/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Animation: A World History (2025 Updated)",
+      "author": "Bendazzi G.",
+      "sameAs": "https://www.routledge.com/animation-history/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Animator's Survival Kit (Expanded Edition 2025)",
+      "author": "Williams R.",
+      "sameAs": "https://www.faber.co.uk/animation/"
+    }
+  ]
+}

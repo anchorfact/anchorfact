@@ -1,0 +1,19 @@
+# World Models: Video Prediction, Physical Reasoning, and Interactive AI
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+World models learn to simulate reality from video data — predicting future frames, understanding physics, and enabling agents to plan. OpenAI's Sora demonstrates emergent 3D understanding; UniSim creates interactive environments from internet video.
+
+## Core Explanation
+A world model is a generative model that predicts the future state of the world given current state and an action: s(t+1) = f(s(t), a). In video prediction: given past frames and text/action, generate future frames. These models learn physics implicitly from millions of hours of video — object permanence, collisions, lighting, camera motion.
+
+## Detailed Analysis
+Sora is a diffusion transformer that treats video as a sequence of spacetime patches, trained jointly on videos of variable resolutions and durations. Emergent capabilities: (1) 3D consistency — objects stay consistent as camera moves; (2) long-range coherence — objects remain visible after occlusion; (3) basic physics — fluid dynamics, rigid body motion. DreamerV3 (DeepMind) uses world models within RL agents that learn in latent state space.
+
+## Further Reading
+- DreamerV3: Mastering Diverse Domains (DeepMind)
+- GAIA-1: World Model for Autonomous Driving (Wayve)
+- "World Models" by Schmidhuber
+

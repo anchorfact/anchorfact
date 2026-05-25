@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00272",
+  "headline": "Reinforcement Learning",
+  "description": "Reinforcement Learning (RL) trains agents to make sequential decisions by maximizing cumulative reward through trial-and-error interaction with an environment. Key concepts: Agent, Environment, State, Action, Reward, Policy. Famous successes: AlphaGo, Dota 2 (OpenAI Five), robotics.",
+  "dateCreated": "2026-05-24T18:00:03.483Z",
+  "dateModified": "2026-05-24T18:00:03.483Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Reinforcement Learning: An Introduction (2nd Ed, Sutton & Barto)",
+      "author": "Sutton, Barto",
+      "sameAs": "http://incompleteideas.net/book/the-book-2nd.html"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Mastering the Game of Go with Deep Neural Networks and Tree Search (AlphaGo)",
+      "author": "Silver, Huang, Maddison, et al.",
+      "sameAs": "https://www.nature.com/articles/nature16961"
+    }
+  ]
+}

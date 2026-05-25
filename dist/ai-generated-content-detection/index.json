@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-generated-content-detection",
+  "headline": "AI-Generated Content Detection: Identifying Synthetic Text, Deepfake Images, and AI-Authored Media",
+  "description": "As AI-generated text, images, audio, and video become indistinguishable from human-created content, detecting what's real becomes a critical societal challenge — from identifying AI-written student essays and fake product reviews to detecting political deepfakes. Detection is an asymmetric arms race: generation improves faster than detection, and each detection method spawns evasion techniques.",
+  "dateCreated": "2026-05-24T18:00:03.068Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "DetectGPT: Zero-Shot Machine-Generated Text Detection using Probability Curvature (and follow-up surveys)",
+      "sameAs": "https://arxiv.org/abs/2301.11305"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "C2PA Content Credentials: Technical Specification v2.1",
+      "sameAs": "https://c2pa.org/specifications/"
+    }
+  ]
+}

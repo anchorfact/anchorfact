@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/advanced-rag-techniques",
+  "headline": "Advanced RAG: From Naive Retrieval to Agentic RAG",
+  "description": "RAG (Retrieval-Augmented Generation) has evolved from simple chunk retrieval to sophisticated agentic architectures. Advanced techniques — HyDE, multi-hop, re-ranking, Self-RAG, Agentic RAG — have transformed it from a simple technique into a production-grade knowledge infrastructure.",
+  "dateCreated": "2026-05-24T18:00:02.752Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+      "sameAs": "https://arxiv.org/abs/2312.10997"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+      "sameAs": "https://arxiv.org/abs/2310.11511"
+    }
+  ]
+}

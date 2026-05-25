@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00168",
+  "headline": "HTML5 Semantic Elements",
+  "description": "HTML5 (2014) introduced semantic elements that describe their meaning to both browser and developer: `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, `<footer>`, `<figure>`, `<time>`. They improve accessibility (screen readers), SEO, and code readability.",
+  "dateCreated": "2026-05-24T18:00:03.889Z",
+  "dateModified": "2026-05-24T18:00:03.889Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "HTML Living Standard",
+      "sameAs": "https://html.spec.whatwg.org/"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-si-019",
+    "text": "Deep work (Cal Newport, 2016): professional activities performed in a state of distraction-free concentration that push cognitive capabilities to their limit. These efforts create new value, improve skills, and are hard to replicate",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-si-020",
+    "text": "Pomodoro Technique (Francesco Cirillo, 1980s): 25-minute focused work sessions separated by 5-minute breaks. After 4 pomodoros, take 15-30 minute break. Based on principle that frequent breaks improve mental agility and sustained attention",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://francescocirillo.com/products/the-pomodoro-technique"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-si-021",
+    "text": "Flow state (Csikszentmihalyi, 1990): optimal experience of complete absorption in an activity. Conditions: clear goals, immediate feedback, balance between challenge and skill. Characterized by loss of self-consciousness, distorted time perception, intrinsic reward",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.harpercollins.com/products/flow-mihaly-csikszentmihalyi"
+    }
+  }
+]

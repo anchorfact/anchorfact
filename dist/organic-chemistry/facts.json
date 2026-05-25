@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sci-oc-001",
+    "text": "Woodward (Nobel 1965) pioneered total synthesis of chlorophyll, strychnine, vitamin B12.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1351/pac197333010145"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sci-oc-002",
+    "text": "Woodward-Hoffmann rules (1965, Nobel 1981) explain pericyclic reaction stereochemistry via orbital symmetry.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1002/anie.197007811"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sci-oc-003",
+    "text": "IUPAC nomenclature (1919) provides the international standard for naming organic compounds.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://iupac.org/what-we-do/books/bluebook/"
+    }
+  }
+]

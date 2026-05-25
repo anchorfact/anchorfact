@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00470",
+  "headline": "Communication Skills",
+  "description": "Effective communication is the #1 skill for career and relationship success. Key elements: clarity (be specific), active listening (hear before responding), non-verbal awareness (body language is 55% of communication — Mehrabian), empathy, and adapting to audience. 'I' statements: 'I feel X when Y because Z' — less accusatory than 'You always...'",
+  "dateCreated": "2026-05-24T18:00:04.572Z",
+  "dateModified": "2026-05-24T18:00:04.572Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Crucial Conversations (Patterson et al.)",
+      "sameAs": "https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "How to Win Friends and Influence People (2025 Updated Edition)",
+      "author": "Carnegie D.",
+      "sameAs": "https://www.simonandschuster.com/how-to-win-friends/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Talk Like TED: The 9 Public-Speaking Secrets (2025)",
+      "author": "Gallo C.",
+      "sameAs": "https://us.macmillan.com/talk-like-ted/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "How to Win Friends and Influence People (2025 Updated)",
+      "author": "Carnegie D.",
+      "sameAs": "https://www.simonandschuster.com/how-to-win-friends/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Talk Like TED (2025 Updated)",
+      "author": "Gallo C.",
+      "sameAs": "https://us.macmillan.com/talk-like-ted/"
+    }
+  ]
+}

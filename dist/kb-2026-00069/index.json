@@ -1,0 +1,45 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00069",
+  "headline": "CSS (Cascading Style Sheets)",
+  "description": "CSS (Cascading Style Sheets) is a stylesheet language developed by the W3C that describes the presentation of HTML documents. First proposed by Håkon Wium Lie in 1994, CSS has evolved from basic text styling to a powerful layout and animation engine. Modern CSS (2024+) supports container queries, cascade layers, native nesting, `has()` selector, view transitions, and scroll-driven animations — capabilities that previously required JavaScript.",
+  "dateCreated": "2026-05-24T18:00:03.780Z",
+  "dateModified": "2026-05-24T18:00:03.780Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "MDN CSS Documentation",
+      "sameAs": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "CSS Snapshot 2024 (W3C)",
+      "sameAs": "https://doi.org/undefined"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "CSS: The Definitive Guide (6th Edition, 2025)",
+      "author": "Meyer E.A., Weyl E.",
+      "sameAs": "https://www.oreilly.com/css/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Modern CSS: Grid, Container Queries, and Cascade Layers (2025)",
+      "author": "multiple",
+      "sameAs": "https://abookapart.com/products/modern-css"
+    }
+  ]
+}

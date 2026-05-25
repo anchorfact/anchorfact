@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-01",
+    "text": "'Poetry is language at its most distilled and most powerful'",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.harpercollins.com/products/a-poetry-handbook-mary-oliver?variant=32208032890914"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-02",
+    "text": "Silence again.' Free verse: dominant modern form — rhythm from natural speech, not meter",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.harpercollins.com/products/a-poetry-handbook-mary-oliver?variant=32208032890914"
+    }
+  }
+]

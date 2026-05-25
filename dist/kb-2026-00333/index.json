@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00333",
+  "headline": "Theory of Relativity",
+  "description": "Einstein's relativity (1905 Special, 1915 General) redefined space, time, and gravity. Special relativity: laws of physics same for all non-accelerating observers; speed of light is constant → time dilation, length contraction, E=mc². General relativity: gravity is curvature of spacetime by mass/energy.",
+  "dateCreated": "2026-05-24T18:00:04.557Z",
+  "dateModified": "2026-05-24T18:00:04.557Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Relativity: The Special and General Theory (Einstein, 1916)",
+      "sameAs": "https://www.gutenberg.org/ebooks/5001"
+    }
+  ]
+}

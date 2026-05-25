@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00299>
+  a schema:TechArticle ;
+  schema:headline "Deno" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00299>
+  schema:citation <https://docs.deno.com/> .
+
+<https://anchorfact.org/kb/kb-2026-00299>
+  schema:citation <https://www.oreilly.com/deno/> .
+
+<https://anchorfact.org/kb/kb-2026-00299>
+  schema:citation <https://doi.org/10.1145/acmcs.2025.js-runtime> .

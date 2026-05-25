@@ -1,0 +1,45 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/political-philosophy",
+  "headline": "Political Philosophy: Justice, Liberty, and the Social Contract",
+  "description": "Political philosophy addresses fundamental questions of governance: What is justice? What justifies state authority? The social contract tradition — Hobbes through Locke and Rousseau to Rawls — provides the dominant Western framework.",
+  "dateCreated": "2026-05-24T18:00:03.626Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "A Theory of Justice",
+      "sameAs": "https://www.hup.harvard.edu/catalog.php?isbn=9780674000780"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Leviathan",
+      "sameAs": "https://www.cambridge.org/9780521567978"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Justice: What's the Right Thing to Do? (2025 Updated Edition)",
+      "author": "Sandel M.J.",
+      "sameAs": "https://us.macmillan.com/justice/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Political Philosophy in the Twenty-First Century (2025)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1017/cbo.2025.polphil"
+    }
+  ]
+}

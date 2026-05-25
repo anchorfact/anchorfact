@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00489>
+  a schema:TechArticle ;
+  schema:headline "Human Memory" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00489>
+  schema:citation <https://www.harpercollins.com/products/the-seven-sins-of-memory-daniel-l-schacter> .

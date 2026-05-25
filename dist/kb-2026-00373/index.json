@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00373",
+  "headline": "Electromagnetic Spectrum",
+  "description": "The electromagnetic spectrum encompasses all types of EM radiation, ordered by wavelength/frequency: radio (longest), microwave, infrared, visible light (400-700nm), ultraviolet, X-ray, gamma ray (shortest). All travel at speed of light (c = 299,792,458 m/s). Maxwell's equations (1865) unified electricity, magnetism, and light.",
+  "dateCreated": "2026-05-24T18:00:04.502Z",
+  "dateModified": "2026-05-24T18:00:04.502Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Introduction to Electrodynamics (4th Ed, Griffiths)",
+      "sameAs": "https://www.cambridge.org/highereducation/books/introduction-to-electrodynamics/3EDC2A247A70E2F72D685535D315EB68"
+    }
+  ]
+}

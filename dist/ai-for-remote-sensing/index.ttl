@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-remote-sensing>
+  a schema:article ;
+  schema:headline "AI for Remote Sensing: Foundation Models, Satellite Image Analysis, and Earth Observation" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-remote-sensing>
+  schema:citation <https://www.nature.com/articles/s44287-025-00208-z> .
+
+<https://anchorfact.org/kb/ai-for-remote-sensing>
+  schema:citation <https://ieeexplore.ieee.org/document/11097335> .

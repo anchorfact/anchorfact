@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/operating-systems-concepts>
+  a schema:Article ;
+  schema:headline "Operating Systems: Processes, Memory, and File Systems" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/operating-systems-concepts>
+  schema:citation <https://www.wiley.com/en-us/Operating+System+Concepts%2C+10th+Edition-p-9781119320913> .
+
+<https://anchorfact.org/kb/operating-systems-concepts>
+  schema:citation <https://www.pearson.com/en-us/subject-catalog/p/modern-operating-systems/P200000003295> .

@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00084",
+  "headline": "Web Storage API",
+  "description": "The Web Storage API provides mechanisms for browsers to store key-value pairs persistently (localStorage, ~5-10MB per origin) or per-session (sessionStorage). Introduced as part of HTML5, it offers a simpler alternative to cookies for client-side data storage without sending data on every HTTP request.",
+  "dateCreated": "2026-05-24T18:00:04.131Z",
+  "dateModified": "2026-05-24T18:00:04.131Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Web Storage (W3C Recommendation)",
+      "sameAs": "https://html.spec.whatwg.org/multipage/webstorage.html"
+    }
+  ]
+}

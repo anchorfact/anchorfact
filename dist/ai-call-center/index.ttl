@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-call-center>
+  a schema:article ;
+  schema:headline "AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-call-center>
+  schema:citation <https://arxiv.org/search/?query=call+center+AI+agent+assist+speech+analytics> .
+
+<https://anchorfact.org/kb/ai-call-center>
+  schema:citation <https://arxiv.org/search/?query=speech+analytics+call+center+sentiment> .

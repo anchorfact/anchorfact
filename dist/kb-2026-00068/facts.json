@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "Ethereum is a decentralized, open-source blockchain platform with smart contract functionality, proposed by Vitalik Buterin in 2013 and launched in July 2015",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://ethereum.org/developers/docs/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-02",
+    "text": "Ethereum completed the transition from Proof-of-Work to Proof-of-Stake in September 2022, reducing energy consumption by approximately 99.95%",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://ethereum.org/developers/docs/"
+    }
+  }
+]

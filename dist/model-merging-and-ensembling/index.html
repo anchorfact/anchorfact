@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Model Merging, Mixture of Experts, and Efficient Ensembling — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Model merging and mixture of experts challenge the "one model to rule them all" assumption. Merging combines strengths of multiple fine-tuned models; MoE activates specialized sub-networks per input — both maximizing capability per parameter.<br>
+<br>
+## Core Explanation<br>
+Model merging methods: weight averaging (simple arithmetic mean), SLERP (spherical interpolation for smoother transitions), TIES-merging (resolve sign conflicts before averaging), DARE (drop and rescale — prune small delta weights). These techniques enable zero-cost model combination without retraining.<br>
+<br>
+## Detailed Analysis<br>
+MoE routing: a learned gating network selects top-k experts per token. Load balancing loss ensures experts are used evenly. Capacity factor prevents one expert from being overwhelmed. Mixtral 8×7B (8 experts, 2 active) matches Llama 2 70B performance at inference speed of a 12B model.<br>
+<br>
+## Further Reading<br>
+- Hugging Face: Model Merging Guide<br>
+- MergeKit Library<br>
+- Mistral AI: Mixtral Blog</article></body>
+</html>

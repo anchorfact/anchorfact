@@ -1,0 +1,19 @@
+# Knowledge Graph Reasoning: Embedding-Based Link Prediction, Logical Inference, and Neurosymbolic Methods
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Knowledge graph reasoning answers "what facts are missing from this knowledge base?" — predicting unknown relationships between entities using a combination of embedding-based pattern matching, graph neural networks, and logical rule inference. From drug repurposing to question answering, KG reasoning powers structured knowledge discovery across science and industry.
+
+## Core Explanation
+A knowledge graph is a directed graph of (head entity, relation, tail entity) triples — e.g., (Barack Obama, bornIn, Hawaii), (Hawaii, partOf, USA). KG reasoning: predict missing triples — (Barack Obama, citizenOf, ?) → USA. Methods: (1) Translational models (TransE, 2013) — embed entities and relations in vector space, model relation as translation: h + r ≈ t, score = -||h + r - t||. Simple but struggles with 1-N and symmetric relations; (2) Bilinear/compositional models (DistMult, ComplEx, RotatE) — use tensor factorization or complex-valued embeddings to capture richer relation patterns; (3) GNN-based (R-GCN, CompGCN) — aggregate messages from neighboring entities in the graph, learning entity embeddings that incorporate multi-hop relational context; (4) Neurosymbolic — combine embedding scores with logical rules (Markov Logic Networks, probabilistic soft logic) to ensure consistency and interpretability.
+
+## Detailed Analysis
+ScienceDirect 2025 review categorizes KG reasoning into three paradigms: embedding-based (learn vector representations and score triples), path-based (explicitly traverse multi-hop paths — PRA, DeepPath, MINERVA — using RL agents to walk the graph), and rule-based (AMIE+ mines Horn clauses, NeuralLP learns differentiable rule confidences). The neurosymbolic frontier: IEEE 2024 survey describes methods that embed KG triples and logical axioms into a unified neural framework — enabling reasoning that is both data-driven (from embeddings) and logically consistent (from rules). KG-enhanced LLMs (2025-2026): retrieve relevant KG subgraphs during LLM generation to ground answers in structured knowledge, reducing hallucination. Temporal KGs add time dimension — (Trump, presidentOf, USA, [2017, 2021]) — requiring models that capture temporal dynamics. Key benchmarks: WN18RR (WordNet hierarchy), FB15k-237 (Freebase subset), YAGO3-10 (temporal), ogbl-wikikg2 (OGB large-scale). Industrial KGs: Google Knowledge Graph (500B+ facts), Amazon Product Graph, LinkedIn Economic Graph. The 2026 NSR survey highlights scientific KGs as the next frontier — automatically constructing KGs from literature (biomedical, materials, chemistry) and reasoning over them for hypothesis generation.
+
+## Further Reading
+- PyKEEN: Python Knowledge Graph Embedding Library
+- DGL-KE: Distributed KG Embedding Training
+- TransE: Translating Embeddings for Multi-Relational Data (Bordes et al., NeurIPS 2013)
+

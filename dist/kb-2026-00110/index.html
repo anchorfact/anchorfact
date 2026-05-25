@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Device Orientation API — AnchorFact</title></head>
+<body><article><br>
+<br>
+<br>
+<br>
+## TL;DR<br>
+<br>
+The Device Orientation API provides accelerometer, gyroscope, and magnetometer data from mobile devices via DOM events: `deviceorientation` (rotation around 3 axes) and `devicemotion` (acceleration including gravity).<br>
+<br>
+## Core Explanation<br>
+<br>
+`deviceorientation` event provides `alpha` (z-axis, compass), `beta` (x-axis, tilt), `gamma` (y-axis). `devicemotion` provides `acceleration` (without gravity) and `accelerationIncludingGravity`. Values are in degrees or m/s². iOS 13+ requires user permission (`DeviceOrientationEvent.requestPermission()`). HTTPS required.<br>
+<br>
+## Further Reading<br>
+<br>
+- [DeviceOrientation Event Specification (W3C)](https://www.w3.org/TR/orientation-event/)<br>
+</article></body>
+</html>

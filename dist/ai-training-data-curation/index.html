@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI Training Data Curation: Quality at Scale — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Training data quality is now recognized as the dominant factor in AI model performance. Data curation — filtering, deduplication, quality scoring, and mixture design — has become a first-class engineering discipline.<br>
+<br>
+## Core Explanation<br>
+The curation pipeline: (1) collection from web (Common Crawl), books, code, scientific papers; (2) language ID and filtering; (3) quality scoring (perplexity, ML classifier); (4) deduplication (exact, fuzzy via MinHash, semantic); (5) personally identifiable information (PII) removal; (6) toxicity/safety filtering.<br>
+<br>
+## Detailed Analysis<br>
+Data mixture design determines the relative proportions of sources — code, math, science, books, web — in the final training corpus. Chinchilla scaling laws showed optimal data-to-model-parameter ratios. FineWeb-Edu filters for educational quality using a BERT classifier trained on human annotations.<br>
+<br>
+## Further Reading<br>
+- HuggingFace: FineWeb Blog<br>
+- Dolma: Open Training Dataset (AI2)<br>
+- Common Crawl Foundation</article></body>
+</html>

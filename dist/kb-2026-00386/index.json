@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00386",
+  "headline": "Economic Systems",
+  "description": "Economic systems organize production, distribution, and consumption. Types: capitalism (private ownership, market-driven), socialism (public/state ownership, planned), mixed economy (most countries — blend of both). Key indicators: GDP (total output), inflation, unemployment, Gini coefficient (inequality).",
+  "dateCreated": "2026-05-24T18:00:04.300Z",
+  "dateModified": "2026-05-24T18:00:04.300Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Economics (Samuelson & Nordhaus, 19th Ed)",
+      "sameAs": "https://www.mheducation.com/highered/product/economics-samuelson-nordhaus/M9780073511290.html"
+    }
+  ]
+}

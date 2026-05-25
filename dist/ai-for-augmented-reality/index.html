@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI for Augmented Reality: Real-Time Scene Understanding, Spatial Computing, and Contextual Overlays — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+AR overlays digital information onto the physical world, and AI makes that overlay intelligent -- recognizing what you are looking at, understanding the 3D geometry of the space around you, and providing contextually relevant information. From Apple Vision Pro's spatial computing to industrial AR repair guides, AI transforms augmented reality from gimmick to utility.<br>
+<br>
+## Core Explanation<br>
+AR AI stack: (1) Scene understanding -- LiDAR + cameras create real-time 3D mesh of environment. AI classifies surfaces (floor, wall, table, ceiling), detects objects, and identifies people. This enables occlusion (virtual objects correctly hidden behind real ones) and physics (virtual ball bounces off real table); (2) Tracking -- visual-inertial odometry (VIO) tracks head position. Hand tracking (21 joints per hand) enables gesture interaction. Eye tracking for foveated rendering and gaze-based UI; (3) Rendering -- AI-enhanced graphics: DLSS-style upscaling, foveated rendering (full resolution only where user looks), and neural relighting (virtual objects match real-world lighting); (4) Context -- LLMs provide information about recognized objects, OCR translates text, AI navigation guides with arrows.<br>
+<br>
+## Detailed Analysis<br>
+Apple Vision Pro: R1 chip dedicated to real-time sensor processing -- ingesting camera, LiDAR, IMU, and microphone data with 12ms latency to prevent motion sickness. Scene understanding enables persistent anchors -- the AR system remembers where it placed virtual objects across sessions. Meta Quest 3: uses Snapdragon XR2 Gen 2 with 2x GPU performance for mixed reality passthrough. AI-powered hand tracking enables controller-free interaction. Industrial AR: Microsoft HoloLens overlays assembly instructions, highlights parts to pick, and verifies correct assembly via computer vision. Remote assistance: expert sees worker's view, draws AR annotations. Key challenge: form factor -- current headsets are bulky. AI-efficient rendering and on-device NPUs enable thinner, lighter glasses. All-day battery life requires extreme AI efficiency (sub-1W for always-on scene understanding).<br>
+</article></body>
+</html>

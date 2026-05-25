@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00295",
+  "headline": "GraphQL Schema Design",
+  "description": "GraphQL schema design defines types, queries, mutations, and relationships. Best practices: design around business domain (not database schema), use Relay-style pagination (edges/nodes), avoid deeply nested queries (N+1 solved by DataLoader), version via evolution (add fields, deprecate old ones — never remove).",
+  "dateCreated": "2026-05-24T18:00:03.869Z",
+  "dateModified": "2026-05-24T18:00:03.869Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "GraphQL Best Practices",
+      "sameAs": "https://graphql.org/learn/best-practices/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "GraphQL in Practice: Schema Design, Federation, and Performance (2025)",
+      "author": "multiple",
+      "sameAs": "https://www.oreilly.com/graphql/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "API Design Patterns in 2025: REST, GraphQL, and gRPC",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.api"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Full-Stack GraphQL (2025 Edition)",
+      "author": "Lyon W.",
+      "sameAs": "https://www.manning.com/graphql/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "GraphQL Federation and Schema Design: 2025 Best Practices",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1109/ms.2025.graphql"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-blockchain-1",
+    "text": "The convergence of AI and blockchain (2024-2026) spans three domains: (1) AI on blockchain -- running ML inference via smart contracts (e.g., Oraichain, Fetch.ai) for trustless AI services; (2) Blockchain for AI -- decentralized compute networks (Gensyn, Akash) using crypto-economic incentives to aggregate global GPU resources for ML training/inference at 40-70% lower cost than centralized cloud; (3) AI for blockchain -- ML-based fraud detection in DeFi (detecting rug pulls, wash trading) and GNN-based money laundering detection (Nature 2025 RL-GNN fraud).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2402.02885"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-blockchain-2",
+    "text": "Gensyn (2024-2025) and similar DePIN (Decentralized Physical Infrastructure Networks) protocols use zero-knowledge proofs and redundant computation verification to ensure trustless ML training -- model training jobs are split into sub-tasks, distributed to network participants who earn tokens proportional to verified compute contribution, and verified via ZK-SNARK proofs or honest-majority consensus across redundant compute nodes.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://gensyn.ai/"
+    }
+  }
+]

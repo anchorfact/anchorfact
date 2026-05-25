@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-fraud-prevention>
+  a schema:article ;
+  schema:headline "AI for Payment Fraud Prevention: Real-Time Transaction Scoring, Chargeback Reduction, and Merchant Risk" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-fraud-prevention>
+  schema:citation <https://arxiv.org/search/?query=payment+fraud+detection+real+time+machine+learning> .
+
+<https://anchorfact.org/kb/ai-for-fraud-prevention>
+  schema:citation <https://arxiv.org/search/?query=graph+neural+network+fraud+ring+detection> .

@@ -1,0 +1,27 @@
+# Learning How to Learn
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+
+
+## TL;DR
+
+Learning how to learn is a meta-skill that improves all other skills. Key techniques: spaced repetition (review at increasing intervals), active recall (test yourself, don't re-read), interleaving (mix topics, don't block), elaboration (explain in your own words), and focused + diffuse thinking modes (Pomodoro + rest).
+
+## Core Explanation
+
+Spaced repetition: day 1 → day 2 → day 4 → day 7 → day 14 — memory curve. Forgetting curve (Ebbinghaus, 1885): we forget 50% within an hour if not reinforced. Active recall: flashcards (Anki), practice problems — far more effective than re-reading. Focused mode: intense concentration. Diffuse mode: relaxed, background processing (shower insights). Sleep: when brain consolidates learning. 'Test yourself, don't highlight.'
+
+## Further Reading
+
+- [A Mind for Numbers (Barbara Oakley)](https://www.penguinrandomhouse.com/books/533681/a-mind-for-numbers-by-barbara-oakley-phd/)
+atomic_facts:
+  - id: "fact-self-improvement-001"
+    statement: "Learning how to learn is a meta-skill that improves all other skills"
+    confidence: "medium"
+  - id: "fact-self-improvement-002"
+    statement: "Forgetting curve (Ebbinghaus, 1885): we forget 50% within an hour if not reinforced"
+    confidence: "medium"
+

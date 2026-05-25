@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-causal-inference-ai-1",
+    "text": "Judea Pearl's causal hierarchy (2009) defines three levels of causal reasoning: association (seeing), intervention (doing), and counterfactuals (imagining) — with do-calculus providing a complete mathematical framework for causal inference from observational and experimental data.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1017/CBO9780511803161"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-causal-inference-ai-2",
+    "text": "Microsoft's DoWhy library (Sharma et al., 2018) implements Pearl's causal framework as a four-step pipeline: model (build causal graph), identify (find estimand), estimate (compute effect), and refute (robustness checks) — democratizing causal inference for ML practitioners.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2403.02467"
+    }
+  }
+]

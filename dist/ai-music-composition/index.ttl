@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-music-composition>
+  a schema:article ;
+  schema:headline "AI Music Composition: Generative Music, Style Imitation, and Creative AI Audio" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-music-composition>
+  schema:citation <https://arxiv.org/search/?query=generative+music+AI+text+to+music> .
+
+<https://anchorfact.org/kb/ai-music-composition>
+  schema:citation <https://arxiv.org/search/?query=music+generation+deep+learning+diffusion> .

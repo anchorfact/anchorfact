@@ -1,0 +1,14 @@
+# AI for Beauty and Fashion: Virtual Try-On, Personalized Styling, and Trend Prediction
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI dresses and beautifies the world -- virtually trying on makeup and clothing before buying, predicting fashion trends from social media, and recommending personalized outfits. From L'Oreal's ModiFace to Stitch Fix's AI stylists, computer vision and generative AI transform how we discover and experience fashion.
+
+## Core Explanation
+Fashion/Beauty AI: (1) Virtual try-on -- face tracking (468 landmarks) + AR rendering for makeup. Clothing: VITON-HD/DCTON for garment overlay. Pose estimation + cloth deformation for realistic draping; (2) Skin analysis -- CNN classification of skin conditions (acne, wrinkles, hyperpigmentation). Personalized product recommendation; (3) Trend prediction -- CV on social media images tracks color, pattern, silhouette trends. Time-series forecasting: what will trend 6-12 months out; (4) Personal styling -- ML recommendation matching items to user preferences, body type, and existing wardrobe.
+
+## Detailed Analysis
+ModiFace (L'Oreal): 30+ brand integrations. AI maps 3D face geometry from 2D camera for realistic makeup rendering. Tracks facial expressions for lipstick and eyeshadow that move with face. Heuritech: analyzes 3M+ social media images/day. CV detects fashion attributes. Trend forecasting: baggy jeans trending up +20% in Paris, 12-month lead. Stitch Fix: hybrid AI + human stylist. AI extracts clothing attributes (color, pattern, silhouette, occasion), recommends items. Human stylist personalizes and writes note. Amazon StyleSnap: upload photo, AI finds similar items. Zalando: virtual fitting room using customer measurements. Key challenge: fit -- 30-40% of online clothing purchases returned due to poor fit. AI sizing from photos + measurement estimation reduces returns.
+

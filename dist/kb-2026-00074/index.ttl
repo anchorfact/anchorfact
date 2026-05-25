@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00074>
+  a schema:TechArticle ;
+  schema:headline "GraphQL" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00074>
+  schema:citation <https://spec.graphql.org/> .
+
+<https://anchorfact.org/kb/kb-2026-00074>
+  schema:citation <https://github.com/graphql/graphql-spec> .

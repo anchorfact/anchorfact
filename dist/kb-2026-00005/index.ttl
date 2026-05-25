@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00005>
+  a schema:TechArticle ;
+  schema:headline "Large Language Models (LLMs)" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00005>
+  schema:citation <https://arxiv.org/abs/2005.14165> .
+
+<https://anchorfact.org/kb/kb-2026-00005>
+  schema:citation <https://arxiv.org/abs/2203.15556> .
+
+<https://anchorfact.org/kb/kb-2026-00005>
+  schema:citation <https://arxiv.org/abs/2206.07682> .

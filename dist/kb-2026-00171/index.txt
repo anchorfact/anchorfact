@@ -1,0 +1,17 @@
+# Progressive Web Apps (PWA)
+Confidence: high
+Last verified: 2026-05-24
+Generation: human_only
+
+## TL;DR
+
+PWAs are web applications that use modern APIs to deliver app-like experiences: installable (manifest.json), offline-capable (Service Workers), push notifications, and background sync. PWAs work across platforms from a single codebase.
+
+## Core Explanation
+
+Requirements: HTTPS, Web App Manifest (name, icons, start_url, display: standalone), registered Service Worker with fetch handler. App shell architecture: cache shell (UI), fetch content dynamically. Workbox (Google) simplifies Service Worker management. PWAs can be distributed via app stores (Trusted Web Activity on Android).
+
+## Further Reading
+
+- [Progressive Web Apps (MDN)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
+

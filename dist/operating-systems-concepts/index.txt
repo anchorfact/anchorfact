@@ -1,0 +1,18 @@
+# Operating Systems: Processes, Memory, and File Systems
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Operating systems manage hardware resources and provide abstractions for applications. Process scheduling, memory management, and file systems are the three pillars of OS design.
+
+## Core Explanation
+Process management: PCB (Process Control Block) stores process state. Context switching saves/restores CPU registers. Inter-process communication via pipes, message queues, shared memory, sockets. Threads share address space within a process — lighter weight but require synchronization (mutexes, semaphores).
+
+## Detailed Analysis
+Memory: paging (fixed-size pages ← page table → frames), segmentation (logical divisions), TLB (translation lookaside buffer — hardware cache for page table entries). File systems: inodes store metadata, directories map names to inodes. Journaling file systems (ext4, NTFS) prevent corruption from crashes.
+
+## Further Reading
+- OSTEP: Operating Systems: Three Easy Pieces (free)
+- Linux Kernel Documentation
+- Microsoft: Windows Internals

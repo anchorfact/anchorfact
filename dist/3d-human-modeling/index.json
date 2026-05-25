@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/3d-human-modeling",
+  "headline": "3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars",
+  "description": "3D human modeling reconstructs the human body in three dimensions from images and video -- enabling virtual try-on, motion capture without markers, and realistic digital avatars. Parametric body models (SMPL) and deep learning-based mesh recovery have evolved from laboratory multi-camera setups to working from a single smartphone photo.",
+  "dateCreated": "2026-05-24T18:00:02.744Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "SMPL: A Skinned Multi-Person Linear Model",
+      "sameAs": "https://smpl.is.tue.mpg.de/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "End-to-End Recovery of Human Shape and Pose (HMR)",
+      "sameAs": "https://arxiv.org/abs/1712.06584"
+    }
+  ]
+}

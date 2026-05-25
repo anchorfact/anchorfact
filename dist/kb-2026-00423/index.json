@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00423",
+  "headline": "Immune System Boosters",
+  "description": "Immune system 'boosters' are largely lifestyle factors, not supplements. Evidence-based: adequate sleep, regular moderate exercise, stress management, balanced diet (zinc, vitamin C, D), not smoking, moderate alcohol. 'Boosting' the immune system is a marketing myth — you want balanced, not overactive (allergies, autoimmunity).",
+  "dateCreated": "2026-05-24T18:00:04.342Z",
+  "dateModified": "2026-05-24T18:00:04.342Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "How the Immune System Works (Sompayrac, 6th Ed)",
+      "sameAs": "https://www.wiley.com/en-us/How+the+Immune+System+Works%2C+6th+Edition-p-9781119542124"
+    }
+  ]
+}

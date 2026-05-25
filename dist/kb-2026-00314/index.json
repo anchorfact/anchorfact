@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00314",
+  "headline": "Helm",
+  "description": "Helm (Deis, 2015, graduated CNCF) is the Kubernetes package manager — 'apt/yum for K8s'. Charts package Kubernetes resources (Deployments, Services, ConfigMaps) with templating (Go templates) and values. Helm 3 (2019) removed Tiller (server component) for improved security.",
+  "dateCreated": "2026-05-24T18:00:03.885Z",
+  "dateModified": "2026-05-24T18:00:03.885Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Helm Documentation",
+      "sameAs": "https://helm.sh/docs/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Helm: The Kubernetes Package Manager (2025 Edition)",
+      "author": "multiple",
+      "sameAs": "https://www.oreilly.com/helm/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Kubernetes Application Management: Helm, Kustomize, and GitOps (2025)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.helm"
+    }
+  ]
+}

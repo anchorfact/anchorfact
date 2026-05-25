@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/sports-biomechanics",
+  "headline": "Sports Biomechanics: The Physics of Human Movement",
+  "description": "Sports biomechanics applies physics and engineering principles to human movement — optimizing technique, preventing injury, and designing equipment.",
+  "dateCreated": "2026-05-24T18:00:04.611Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Biomechanics of Sport and Exercise, 4th Edition",
+      "sameAs": "https://www.humankinetics.com/biomechanics-of-sport-and-exercise/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Physics of Baseball, 3rd Edition",
+      "sameAs": "https://www.harpercollins.com/products/the-physics-of-baseball-robert-k-adair"
+    }
+  ]
+}

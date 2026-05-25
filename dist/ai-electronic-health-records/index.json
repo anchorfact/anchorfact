@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-electronic-health-records",
+  "headline": "AI for Electronic Health Records: Clinical NLP, Coding Automation, and Physician Burnout Reduction",
+  "description": "AI is fixing the EHR problem -- ambient scribes that listen to doctor-patient conversations and write clinical notes automatically, saving physicians 2+ hours/day on documentation and reducing burnout by 40%. From Nuance DAX to Epic, AI transforms EHR from a burden to an assistive partner.",
+  "dateCreated": "2026-05-24T18:00:02.899Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Ambient Clinical Intelligence: AI-Powered Clinical Documentation and Physician Burnout Reduction (2024-2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=ambient+clinical+intelligence+documentation+physician"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "AI for Electronic Health Records: Clinical NLP, Automated Coding, and Workflow Optimization",
+      "sameAs": "https://arxiv.org/search/?query=EHR+AI+clinical+NLP+coding+automation"
+    }
+  ]
+}

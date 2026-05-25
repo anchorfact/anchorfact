@@ -1,0 +1,20 @@
+# Building Mental Resilience
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+
+
+## TL;DR
+
+Mental resilience is a learnable skill — not an innate trait. Core pillars: growth mindset (abilities develop with effort), optimism (realistic not naive), social connection (support network), purpose (meaning beyond self), adaptability (cognitive flexibility). Key practices: reframe challenges as opportunities, maintain perspective during setbacks, build incrementally through small wins.
+
+## Core Explanation
+
+Growth mindset (Dweck): view challenges as opportunities to learn, not threats to ego. Reframe failure: "not yet" vs "failed." Grit (Duckworth): passion + perseverance for long-term goals — more predictive of success than IQ in some domains. Antifragility (Taleb): systems that gain from disorder — apply to personal development. Self-compassion (Neff): treat yourself with same kindness you'd offer a friend during difficulty. Practical exercises: three good things journal, adversity reframing worksheet, gratitude practice, social connection scheduling.
+
+## Further Reading
+
+- [APA Resilience Guide](https://www.apa.org/topics/resilience)
+- [Mindset (Carol Dweck)](https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck-phd/)
+

@@ -1,0 +1,23 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00394>
+  a schema:TechArticle ;
+  schema:headline "Aztec Empire" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00394>
+  schema:citation <https://www.wiley.com/en-us/The+Aztecs%2C+3rd+Edition-p-9781405194976> .
+
+<https://anchorfact.org/kb/kb-2026-00394>
+  schema:citation <https://global.oup.com/aztecs/> .
+
+<https://anchorfact.org/kb/kb-2026-00394>
+  schema:citation <https://global.oup.com/vsi-aztecs/> .
+
+<https://anchorfact.org/kb/kb-2026-00394>
+  schema:citation <https://global.oup.com/aztecs/> .
+
+<https://anchorfact.org/kb/kb-2026-00394>
+  schema:citation <https://www.wiley.com/aztecs/> .

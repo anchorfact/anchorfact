@@ -1,0 +1,18 @@
+# Transformer Variants: From Encoder-Decoder to Mamba State Space Models
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+While the Transformer architecture dominates AI, alternatives are emerging. State Space Models (Mamba, Jamba) promise linear complexity for long sequences, challenging attention's O(n²) bottleneck.
+
+## Core Explanation
+Transformer evolution: encoder-decoder (original, T5) → encoder-only (BERT, RoBERTa — understanding) → decoder-only (GPT family — generation). Decoder-only's simplicity and predictable scaling made it the architecture of choice for frontier LLMs.
+
+## Detailed Analysis
+State Space Models (SSMs): discretize continuous-time differential equations to process sequences. Mamba adds input-dependent selectivity — the model dynamically adjusts which parts of the input to focus on. Jamba (AI21) hybridizes Mamba layers with attention layers for the best of both worlds.
+
+## Further Reading
+- The Annotated Transformer (Harvard NLP)
+- Mamba GitHub
+- Lilian Weng: The Transformer Family

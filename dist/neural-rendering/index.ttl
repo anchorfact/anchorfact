@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/neural-rendering>
+  a schema:article ;
+  schema:headline "Neural Rendering: NeRF, View Synthesis, and Implicit Scene Representations" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/neural-rendering>
+  schema:citation <https://arxiv.org/abs/2003.08934> .
+
+<https://anchorfact.org/kb/neural-rendering>
+  schema:citation <https://arxiv.org/abs/2308.04079> .

@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/human-pose-estimation",
+  "headline": "Human Pose Estimation: 2D/3D Keypoint Detection and Transformer-Based Body Tracking",
+  "description": "Human pose estimation -- detecting body keypoints (shoulders, elbows, knees) in images and video -- is a foundational computer vision task powering applications from fitness tracking and motion capture to gesture control and sports analytics. Transformer architectures have replaced specialized CNN designs, achieving real-time multi-person performance even on mobile devices.",
+  "dateCreated": "2026-05-24T18:00:03.347Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ViTPose: Simple Vision Transformer Baselines for Human Pose Estimation",
+      "sameAs": "https://arxiv.org/abs/2204.12484"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "MotionBERT: A Unified Perspective on Learning Human Motion Representations",
+      "sameAs": "https://openaccess.thecvf.com/content/ICCV2023/html/Zhu_MotionBERT_A_Unified_Perspective_on_Learning_Human_Motion_Representations_ICCV_2023_paper.html"
+    }
+  ]
+}

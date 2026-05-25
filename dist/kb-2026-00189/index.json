@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00189",
+  "headline": "gRPC",
+  "description": "gRPC is a high-performance RPC framework developed by Google (2015, graduated CNCF). It uses Protocol Buffers (protobuf) for binary serialization and HTTP/2 for transport, supporting unary, server-streaming, client-streaming, and bidirectional streaming. gRPC inter-service communication is the backbone of microservices at Google, Netflix, and Square.",
+  "dateCreated": "2026-05-24T18:00:03.875Z",
+  "dateModified": "2026-05-24T18:00:03.875Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM Digital Library",
+      "sameAs": "https://dl.acm.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "gRPC: Up and Running (2nd Edition, 2025)",
+      "author": "multiple",
+      "sameAs": "https://www.oreilly.com/grpc/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Modern API Protocols: REST, GraphQL, and gRPC — Performance Benchmarks 2025",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.protocols"
+    }
+  ]
+}

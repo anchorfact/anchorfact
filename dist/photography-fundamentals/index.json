@@ -1,0 +1,50 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/photography-fundamentals",
+  "headline": "Photography Fundamentals and Composition",
+  "description": "Photography combines technical control of light with artistic composition. Mastery of exposure, focus, and framing enables photographers to capture images that communicate beyond what the eye naturally sees.",
+  "dateCreated": "2026-05-24T18:00:03.620Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Understanding Exposure, 4th Edition",
+      "sameAs": "https://www.penguinrandomhouse.com/books/224957/understanding-exposure-4th-edition-by-bryan-peterson/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Photographer's Eye",
+      "sameAs": "https://www.moma.org/calendar/exhibitions/62"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Americans",
+      "sameAs": "https://www.moma.org/calendar/exhibitions/2425"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Photographer's Eye (2025 Edition)",
+      "author": "Freeman M.",
+      "sameAs": "https://www.ilexinstant.com/photographers-eye/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Photography: A Critical Introduction (6th Edition, 2025)",
+      "author": "multiple",
+      "sameAs": "https://www.routledge.com/photography-critical/"
+    }
+  ]
+}

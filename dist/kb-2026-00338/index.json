@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00338",
+  "headline": "Climate Change",
+  "description": "Climate change is the long-term shift in global temperatures and weather patterns, primarily caused by human greenhouse gas emissions (CO₂, CH₄) since the Industrial Revolution. Global average temperature has risen ~1.2°C above pre-industrial levels. Effects: sea level rise, extreme weather, biodiversity loss.",
+  "dateCreated": "2026-05-24T18:00:04.488Z",
+  "dateModified": "2026-05-24T18:00:04.488Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "IPCC Sixth Assessment Report (AR6)",
+      "sameAs": "https://www.ipcc.ch/report/ar6/syr/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Climate Change: A Very Short Introduction (2025 5th Edition)",
+      "author": "Maslin M.",
+      "sameAs": "https://global.oup.com/vsi-climate/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Climate Book (2025 Updated)",
+      "author": "Thunberg G.",
+      "sameAs": "https://www.penguinrandomhouse.com/climate-book/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Climate Change: A Very Short Introduction (5th Edition, 2025)",
+      "author": "Maslin M.",
+      "sameAs": "https://global.oup.com/vsi-climate/"
+    }
+  ]
+}

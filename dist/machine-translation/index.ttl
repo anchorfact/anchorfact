@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/machine-translation>
+  a schema:article ;
+  schema:headline "Machine Translation: Neural MT, LLM-Based Translation, and Multilingual Quality at Scale" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/machine-translation>
+  schema:citation <https://www.nature.com/articles/s41586-024-07335-x> .
+
+<https://anchorfact.org/kb/machine-translation>
+  schema:citation <https://www.mdpi.com/2078-2489/16/9/723> .

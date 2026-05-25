@@ -1,0 +1,19 @@
+# Physics-Informed Neural Networks: Solving PDEs with Deep Learning and Neural Operators
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Physics-Informed Neural Networks (PINNs) solve differential equations by embedding physical laws directly into neural network training — replacing expensive numerical simulations with neural surrogates that learn directly from PDE equations. From fluid dynamics to heat transfer, PINNs are merging scientific computing with deep learning.
+
+## Core Explanation
+Traditional numerical solvers (FEM, FVM, spectral methods) discretize space (meshing) and time, solving PDEs iteratively. Limitations: mesh generation is labor-intensive, fine meshes are computationally expensive, and inverse problems (finding unknown parameters from data) require solving many forward problems. PINN approach (Raissi et al., 2019): (1) Neural network u(x,t;θ) approximates the solution — inputs are spatial coordinates x and time t, output is the field value (velocity, temperature, pressure); (2) Loss function = data loss + PDE residual loss. PDE residual: automatically differentiate the network output with respect to inputs using automatic differentiation (AD), substitute into the governing PDE, and penalize deviations from zero. No labeled training data needed — the network learns purely from the PDE equation as a soft constraint; (3) Boundary/initial conditions encoded as additional loss terms.
+
+## Detailed Analysis
+PINN evolution: (1) Vanilla PINN (2019) uses fully-connected networks with tanh activations. Achieves good results for smooth, low-frequency solutions but struggles with multi-scale phenomena; (2) Extended PINNs (2020-2023): curriculum learning (progressively increase frequency), adaptive loss weighting (dynamic balancing between PDE and data terms), domain decomposition (cPINN, XPINN — split domain into subdomains with separate networks); (3) Physics-informed neural operators (PINO, DeepONet, FNO): instead of solving one specific PDE instance, neural operators learn the solution operator — mapping from input functions (boundary conditions, material properties) to solution functions — enabling thousand-fold inference speedup for parametric studies. Nature 2025 PICNN: replaces fully-connected PINNs with convolutional architectures, capturing spatial locality inherent in PDE solutions. Applications: fluid dynamics (Navier-Stokes, turbulence), solid mechanics (elasticity, plasticity), heat transfer, electromagnetics (Maxwell's equations), and biomedical engineering (blood flow, drug delivery). Key limitation: PINNs fail on stiff PDEs (high Reynolds number turbulence, shock waves) due to spectral bias — neural networks prefer low-frequency solutions. Specialized architectures (Fourier feature networks, multi-scale networks) partially address this. ScienceDirect 2025 comprehensive review identifies hybrid approaches (PINN + classical numerics) as the most promising direction for industrial deployment.
+
+## Further Reading
+- Raissi et al., Science (2019) — Physics-informed neural networks: A deep learning framework for solving forward and inverse problems
+- NVIDIA Modulus: Physics-ML Framework
+- DeepXDE: PINN Library (Lu Lu, Brown University)
+

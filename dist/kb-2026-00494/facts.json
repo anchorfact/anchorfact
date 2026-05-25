@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-001",
+    "text": "Theater originated in ancient Greece (~6th century BCE) from religious rituals honoring Dionysus. Tragedy (Aeschylus, Sophocles, Euripides) and comedy (Aristophanes) established Western dramatic forms. Key developments: Elizabethan theater (Shakespeare, Globe Theater), Restoration comedy, modern realism (Ibsen, Chekhov), musical theater, experiment",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.cengage.com/c/the-essential-theatre-11e-brockett-ball/9781305411074/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-002",
+    "text": "Greek theater: amphitheaters, masks, chorus — 15,000+ capacity.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.cengage.com/c/the-essential-theatre-11e-brockett-ball/9781305411074/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-003",
+    "text": "Shakespeare's Globe (1599): open-air, groundlings standing, all-male casts.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.cengage.com/c/the-essential-theatre-11e-brockett-ball/9781305411074/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-004",
+    "text": "Longest-running show: Phantom of the Opera (1988-2023, 13,981 performances).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.cengage.com/c/the-essential-theatre-11e-brockett-ball/9781305411074/"
+    }
+  }
+]

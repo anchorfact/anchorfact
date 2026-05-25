@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Distributed Training: FSDP, DeepSpeed, and Scaling Laws — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Training frontier AI models requires thousands of GPUs working in parallel. FSDP and DeepSpeed ZeRO are the dominant strategies for memory-efficient distributed training, enabling models with hundreds of billions of parameters.<br>
+<br>
+## Core Explanation<br>
+Data parallelism: each GPU has a full model copy, processes different batch. Model parallelism: split layers across GPUs. Pipeline parallelism: GPUs process different micro-batches in assembly-line fashion. Tensor parallelism: split individual matrices across GPUs. 3D parallelism combines all three.<br>
+<br>
+## Detailed Analysis<br>
+ZeRO-3 reduces per-GPU memory from 120GB to 1.5GB for a 100B model. Activation checkpointing trades compute for memory (recompute activations during backward pass). Mixed precision (FP16/BF16) halves memory. Gradient accumulation simulates larger batch sizes. The trend toward larger clusters: Meta's 24,576 H100 cluster for Llama 3 405B training.<br>
+<br>
+## Further Reading<br>
+- DeepSpeed GitHub<br>
+- PyTorch Distributed Training Guide<br>
+- NVIDIA Megatron-LM</article></body>
+</html>

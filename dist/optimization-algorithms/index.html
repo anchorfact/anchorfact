@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Optimization Algorithms for Deep Learning — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Optimization algorithms update neural network weights to minimize the loss function. Adam dominates practice, but SGD with momentum remains competitive when well-tuned.<br>
+<br>
+## Core Explanation<br>
+Gradient descent computes the average gradient over training data to update weights. SGD uses single examples or mini-batches for faster, noisier updates that often generalize better. Momentum accumulates past gradients to smooth updates and escape local minima. Adam adapts learning rates per-parameter.<br>
+<br>
+## Detailed Analysis<br>
+AdamW (Loshchilov & Hutter, 2019) fixes Adam's weight decay implementation, making it the recommended variant. Learning rate warmup — gradually increasing from a small initial rate — prevents training instability in transformers. Gradient clipping prevents exploding gradients.<br>
+<br>
+## Further Reading<br>
+- Ruder: An Overview of Gradient Descent Algorithms<br>
+- Lilian Weng: Optimization for Deep Learning<br>
+- PyTorch: torch.optim Documentation</article></body>
+</html>

@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00494>
+  a schema:TechArticle ;
+  schema:headline "Theater History" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00494>
+  schema:citation <https://www.cengage.com/c/the-essential-theatre-11e-brockett-ball/9781305411074/> .

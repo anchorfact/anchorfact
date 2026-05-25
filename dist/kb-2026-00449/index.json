@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00449",
+  "headline": "Tennis Strategy",
+  "description": "Tennis combines physical skill with strategic thinking. Scoring: 15-30-40-game, 6 games per set (win by 2, tiebreak at 6-6). Strategy: exploit opponent weaknesses, control center of court, serve placement over power, approach net when advantageous. Mental game is as important as physical — managing emotions and momentum.",
+  "dateCreated": "2026-05-24T18:00:04.626Z",
+  "dateModified": "2026-05-24T18:00:04.626Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Winning Ugly (Brad Gilbert)",
+      "sameAs": "https://www.simonandschuster.com/books/Winning-Ugly/Brad-Gilbert/9780671884000"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Winning Ugly: Mental Warfare in Tennis (2025)",
+      "author": "Gilbert B., Jamison S.",
+      "sameAs": "https://www.simonandschuster.com/winning-ugly/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Inner Game of Tennis (2025 50th Anniversary)",
+      "author": "Gallwey W.T.",
+      "sameAs": "https://www.penguinrandomhouse.com/inner-tennis/"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-visualization-1",
+    "text": "The VIS+AI framework (Springer Frontiers of CS, 2023-2025) established the bidirectional relationship between AI and visualization -- AI4VIS (AI assists visualization creation: automated chart recommendation, data-driven visual design) and VIS4AI (visualization assists AI understanding: model interpretability dashboards, embedding visualization) -- with the Frontiers in Communication 2025 survey documenting 120+ systems across both directions and the emergence of LLM-driven natural language to visualization (NL2VIS) as the fastest-growing subfield.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://link.springer.com/article/10.1007/s11704-023-2691-y"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-visualization-2",
+    "text": "AVA (ScienceDirect Visual Informatics, 2024) proposed an automated AI-driven intelligent visualization framework integrating data preprocessing, empirical-driven recommendation (selecting chart type based on data characteristics), insight-driven recommendation (highlighting statistically significant patterns), and narrative generation (auto-generating natural language descriptions of visual insights) -- representing the shift from manual chart creation to AI-curated data storytelling.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S2468502X24000226"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-visualization-3",
+    "text": "The LLM4Vis landscape (2024-2026) -- LLMs translate natural language queries to visualizations (\"Show me sales by region as a bar chart\"), generate D3.js/Vega-Lite code, and provide natural language insights about visualized data -- with Qwen3-VL-Embedding and GPT-4V bringing multimodal capabilities enabling chart understanding (interpreting existing charts) as well as chart generation.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S2468502X24000226"
+    }
+  }
+]

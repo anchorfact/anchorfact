@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-quantum-computing>
+  a schema:article ;
+  schema:headline "AI for Quantum Computing: Quantum Error Correction, Circuit Optimization, and Algorithm Discovery" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-quantum-computing>
+  schema:citation <https://www.nature.com/articles/s41586-024-07985-x> .
+
+<https://anchorfact.org/kb/ai-quantum-computing>
+  schema:citation <https://arxiv.org/search/?query=quantum+machine+learning+survey+2025> .

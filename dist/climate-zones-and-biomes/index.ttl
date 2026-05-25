@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/climate-zones-and-biomes>
+  a schema:Article ;
+  schema:headline "Global Climate Zones and Terrestrial Biomes" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/climate-zones-and-biomes>
+  schema:citation <https://www.wiley.com/en-us/Biogeography-p-9781119464730> .
+
+<https://anchorfact.org/kb/climate-zones-and-biomes>
+  schema:citation <https://www.climate.gov/koppen-climate-classification> .

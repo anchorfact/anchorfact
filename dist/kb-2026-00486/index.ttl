@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00486>
+  a schema:TechArticle ;
+  schema:headline "Mesopotamia" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00486>
+  schema:citation <https://www.hendrickson.com/html/product/300044.trade.html> .
+
+<https://anchorfact.org/kb/kb-2026-00486>
+  schema:citation <https://www.penguinrandomhouse.com/mesopotamia/> .
+
+<https://anchorfact.org/kb/kb-2026-00486>
+  schema:citation <https://global.oup.com/vsi-ancient-near-east/> .

@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00467>
+  a schema:TechArticle ;
+  schema:headline "South America Geography" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00467>
+  schema:citation <https://global.oup.com/academic/product/the-physical-geography-of-south-america-9780195313413> .

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI for Payment Fraud Prevention: Real-Time Transaction Scoring, Chargeback Reduction, and Merchant Risk — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+AI is the silent guardian of every card swipe and online payment -- scoring transactions in milliseconds, detecting fraud rings via graph neural networks, and blocking $25B+ in fraud annually. From Visa's 500M daily transactions to Stripe Radar, AI fraud prevention balances security with seamless user experience.<br>
+<br>
+## Core Explanation<br>
+Payment fraud pipeline: Transaction -> ML scoring (fraud probability 0-1, <10ms) -> Decision (approve, decline, or step-up authentication). Features: (1) Transaction-level: amount, merchant category, currency, time, country; (2) Cardholder-level: historical spending patterns, velocity (transactions/time), location history; (3) Device-level: device fingerprint (GPU, browser, OS, language), IP geolocation vs shipping address, VPN/proxy detection; (4) Behavioral: typing patterns, mouse movement, touch pressure (mobile). Models: XGBoost (fast, interpretable), DNN (higher accuracy, complex feature interactions), GNN (network structure for fraud rings). Real-time constraint: <10ms latency per transaction, 99.99% uptime.<br>
+<br>
+## Detailed Analysis<br>
+Visa AI: processes 500M+ transactions/day. Deep learning models score each transaction. Advanced Authorization generates risk score in ~1ms. Visa blocks $25B+ fraud annually. Stripe Radar: ML trained on Stripe network (millions of merchants, billions of transactions). Features: card fingerprinting, IP proxy detection, email domain risk. Custom rules: merchants set risk thresholds and blocklists. GNN fraud rings: graph construction -- nodes = accounts/merchants, edges = transactions/connections. Fraud rings create dense, unusual graph patterns. GNN node classification identifies fraudulent accounts from structural features alone. Behavioral biometrics (BioCatch): analyzes 2,000+ behavioral parameters (handedness, eye-hand coordination, hesitation patterns). Detects: BOTs, remote desktop, social engineering victims (stressed typing). Behavioral profiles persist across devices. 3D Secure 2.0: AI decides friction level. 95%+ of transactions are frictionless (AI believes legitimate), <5% require step-up. This eliminated the old "static password" frustration of 3DS 1.0.<br>
+</article></body>
+</html>

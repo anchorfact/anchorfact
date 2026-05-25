@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-beauty-fashion",
+  "headline": "AI for Beauty and Fashion: Virtual Try-On, Personalized Styling, and Trend Prediction",
+  "description": "AI dresses and beautifies the world -- virtually trying on makeup and clothing before buying, predicting fashion trends from social media, and recommending personalized outfits. From L'Oreal's ModiFace to Stitch Fix's AI stylists, computer vision and generative AI transform how we discover and experience fashion.",
+  "dateCreated": "2026-05-24T18:00:02.807Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Artificial Intelligence in Fashion and Beauty: Virtual Try-On, Computer Vision, and Personalized Styling (2024-2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=virtual+try+on+fashion+AI+beauty"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Computer Vision for Fashion: Trend Detection, Clothing Parsing, and Generative Try-On (2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=fashion+computer+vision+trend+detection"
+    }
+  ]
+}

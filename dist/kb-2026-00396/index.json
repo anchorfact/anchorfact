@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00396",
+  "headline": "Hundred Years' War",
+  "description": "The Hundred Years' War (1337-1453) was a series of conflicts between England and France over the French throne. English victories (Crecy 1346, Poitiers 1356, Agincourt 1415) gave way to French revival under Joan of Arc (1429). Ended with French victory. Accelerated the decline of feudalism and rise of national identity.",
+  "dateCreated": "2026-05-24T18:00:04.410Z",
+  "dateModified": "2026-05-24T18:00:04.410Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Hundred Years War: The English in France (Desmond Seward)",
+      "sameAs": "https://www.penguinrandomhouse.com/books/307409/the-hundred-years-war-by-desmond-seward/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Hundred Years War: A People's History (2025)",
+      "author": "Green D.",
+      "sameAs": "https://yalebooks.yale.edu/hundred-years-war/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Hundred Years War (2025 Updated)",
+      "author": "Curry A.",
+      "sameAs": "https://ospreypublishing.com/hundred-years-war/"
+    }
+  ]
+}

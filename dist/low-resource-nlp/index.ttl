@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/low-resource-nlp>
+  a schema:article ;
+  schema:headline "Low-Resource NLP: Multilingual Models, Endangered Language Preservation, and Translation" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/low-resource-nlp>
+  schema:citation <https://www.cambridge.org/core/journals/natural-language-processing/article/natural-language-processing-applications-for-lowresource-languages/7D3DA31DB6C01B13C6B1F698D4495951> .
+
+<https://anchorfact.org/kb/low-resource-nlp>
+  schema:citation <https://arxiv.org/abs/2501.11496> .

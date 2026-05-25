@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00466",
+  "headline": "Enlightenment Era",
+  "description": "The Enlightenment (18th century, 'Age of Reason') championed reason, science, individual rights, and skepticism of authority. Key thinkers: Locke (natural rights), Montesquieu (separation of powers), Voltaire (civil liberties, religious tolerance), Rousseau (social contract), Kant ('Sapere aude!' — dare to know). Fueled American and French Revolutions.",
+  "dateCreated": "2026-05-24T18:00:04.401Z",
+  "dateModified": "2026-05-24T18:00:04.401Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Enlightenment (Dorinda Outram, 4th Ed)",
+      "sameAs": "https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Enlightenment: A Very Short Introduction (2025)",
+      "author": "Robertson J.",
+      "sameAs": "https://global.oup.com/vsi-enlightenment/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Enlightenment: The Pursuit of Happiness (2025)",
+      "author": "Robertson R.",
+      "sameAs": "https://www.harpercollins.com/enlightenment/"
+    }
+  ]
+}

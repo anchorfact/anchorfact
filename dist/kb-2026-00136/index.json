@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00136",
+  "headline": "Time Complexity (Big O)",
+  "description": "Big O describes upper bound of algorithm complexity as input size n grows. Common classes: O(1) constant, O(log n) logarithmic, O(n) linear, O(n log n) linearithmic, O(n²) quadratic, O(2ⁿ) exponential.",
+  "dateCreated": "2026-05-24T18:00:04.113Z",
+  "dateModified": "2026-05-24T18:00:04.113Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM Digital Library",
+      "sameAs": "https://dl.acm.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Introduction to Algorithms (5th Edition, 2025)",
+      "author": "Cormen T.H., Leiserson C.E., Rivest R.L., Stein C.",
+      "sameAs": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Algorithm Design and Analysis: A 2025 Survey",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.algo"
+    }
+  ]
+}

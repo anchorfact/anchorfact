@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Speech Recognition: From HMMs to Whisper — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Speech recognition converts audio signals to text. Modern end-to-end approaches — CTC, RNN-Transducer, Attention-based Encoder-Decoder — have replaced traditional HMM-GMM pipelines, with Whisper achieving near-human performance.<br>
+<br>
+## Core Explanation<br>
+Traditional pipeline: feature extraction (MFCCs) → acoustic model (phoneme prediction) → pronunciation model (phoneme-to-word) → language model (word sequence scoring). End-to-end models collapse these into a single neural network trained on audio-text pairs.<br>
+<br>
+## Detailed Analysis<br>
+Whisper's architecture: encoder-decoder transformer trained on diverse data (different recording conditions, accents, languages). Its multitask training format (transcribe/translate/language identification) improves robustness. Wav2Vec 2.0 (Facebook) uses self-supervised pretraining on raw audio followed by fine-tuning with limited labeled data.<br>
+<br>
+## Further Reading<br>
+- OpenAI Whisper GitHub<br>
+- Kaldi ASR Toolkit<br>
+- Hugging Face: Automatic Speech Recognition</article></body>
+</html>

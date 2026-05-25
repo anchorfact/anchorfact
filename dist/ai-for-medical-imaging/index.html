@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI for Medical Imaging: Radiology AI, Computer-Aided Diagnosis, and Clinical Deployment — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+AI is the first specialty to enter the radiology reading room at scale -- with over 500 FDA-cleared AI medical imaging devices, AI assists radiologists in detecting cancers, strokes, and fractures faster and more accurately. From zero-shot chest X-ray interpretation to real-time stroke triage, medical imaging AI has crossed from research benchmark to clinical deployment.<br>
+<br>
+## Core Explanation<br>
+Medical imaging AI tasks: (1) Classification -- is disease present? (normal vs. abnormal chest X-ray); (2) Detection and localization -- where is the abnormality? (bounding box around lung nodule); (3) Segmentation -- outline the abnormality at pixel level (tumor boundary, organ delineation for radiation therapy); (4) Triage -- prioritize urgent cases (stroke detection alerts radiologist to review immediately); (5) Quantification -- measure disease severity (tumor volume change, ejection fraction). Modalities: X-ray (chest, mammography), CT (chest, brain, abdomen), MRI (brain, prostate, knee), ultrasound (fetal, cardiac), pathology (whole-slide images), and fundus photography (diabetic retinopathy).<br>
+<br>
+## Detailed Analysis<br>
+CheXpert (Stanford): 224K chest X-rays with 14 radiology observations labeled via automatic NLP extraction from reports. CheXzero: uses CLIP-style contrastive pretraining on X-ray images paired with their radiology reports -- the model learns visual representations aligned with textual descriptions without disease labels. A major breakthrough: eliminates the annotation bottleneck that made medical AI data-hungry. FDA clearance categories: Class II (510k) -- most AI devices, requiring demonstration of substantial equivalence to existing devices; Class III (PMA) -- higher-risk, requiring clinical trials. Notable devices: IDx-DR (autonomous diabetic retinopathy screening, first autonomous AI FDA clearance), Viz.ai LVO (stroke detection with care coordination alerts), ProFound AI (mammography CAD). Key challenges: (1) Generalizability -- models degrade 10-20% on data from different hospitals, scanner vendors, and patient populations. Federated learning and domain adaptation address this; (2) Prospective validation -- retrospective accuracy != clinical benefit. Randomized trials measuring patient outcomes (reduced time-to-treatment, improved survival) are rare but essential; (3) Workflow integration -- AI must fit seamlessly into PACS (Picture Archiving and Communication System) and radiologist workflow without adding clicks or time.<br>
+</article></body>
+</html>

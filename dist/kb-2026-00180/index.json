@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00180",
+  "headline": "Playwright",
+  "description": "Playwright is a cross-browser automation library by Microsoft enabling reliable end-to-end testing across Chromium, Firefox, and WebKit with a single API. Unlike Cypress, Playwright runs outside the browser as a Node.js process, supporting multiple tabs, iframes, and native mobile emulation.",
+  "dateCreated": "2026-05-24T18:00:03.999Z",
+  "dateModified": "2026-05-24T18:00:03.999Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Playwright Documentation",
+      "sameAs": "https://playwright.dev/"
+    }
+  ]
+}

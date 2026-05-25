@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00406>
+  a schema:TechArticle ;
+  schema:headline "Computer History" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00406>
+  schema:citation <https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706> .
+
+<https://anchorfact.org/kb/kb-2026-00406>
+  schema:citation <https://www.simonandschuster.com/innovators/> .
+
+<https://anchorfact.org/kb/kb-2026-00406>
+  schema:citation <https://global.oup.com/vsi-computer/> .

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/sports-psychology-performance>
+  a schema:Article ;
+  schema:headline "Sports Psychology: Mental Skills for Peak Performance" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/sports-psychology-performance>
+  schema:citation <https://www.humankinetics.com/foundations-of-sport-and-exercise-psychology/> .
+
+<https://anchorfact.org/kb/sports-psychology-performance>
+  schema:citation <https://www.penguinrandomhouse.com/books/313442/the-champions-mind-by-jim-afremow-phd/> .

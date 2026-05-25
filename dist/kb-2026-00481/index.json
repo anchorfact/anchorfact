@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00481",
+  "headline": "Coffee Culture",
+  "description": "Coffee originated in Ethiopia (legend of Kaldi, goats dancing after eating coffee cherries). Spread: Yemen (15th century, first cultivation) → Ottoman Empire → Europe (17th century, coffeehouses: 'penny universities') → Americas (18th+). Species: Arabica (~60%, better flavor) vs. Robusta (hardier, more caffeine). Second most traded commodity after oil.",
+  "dateCreated": "2026-05-24T18:00:03.575Z",
+  "dateModified": "2026-05-24T18:00:03.575Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The World Atlas of Coffee (James Hoffmann, 2nd Ed)",
+      "sameAs": "https://www.octopusbooks.co.uk/titles/james-hoffmann/the-world-atlas-of-coffee/9781784725716/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The World Atlas of Coffee (3rd Edition, 2025)",
+      "author": "Hoffmann J.",
+      "sameAs": "https://www.octopusbooks.co.uk/coffee-atlas/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Uncommon Grounds: The History of Coffee and How It Transformed Our World (2025)",
+      "author": "Pendergrast M.",
+      "sameAs": "https://www.basicbooks.com/coffee/"
+    }
+  ]
+}

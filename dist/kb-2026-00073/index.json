@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00073",
+  "headline": "Go Programming Language",
+  "description": "Go (Golang) is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson, first released in 2009. It combines the performance of C with the ease of Python — goroutines for concurrency, fast compilation, garbage collection, and a simple syntax. Go powers Docker, Kubernetes, Terraform, Prometheus, and Cloudflare's edge infrastructure. GitHub: 134,013 stars as of May 2026.",
+  "dateCreated": "2026-05-24T18:00:03.862Z",
+  "dateModified": "2026-05-24T18:00:03.862Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Go Documentation",
+      "sameAs": "https://go.dev/doc/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Go GitHub Repository",
+      "sameAs": "https://github.com/golang/go"
+    }
+  ]
+}

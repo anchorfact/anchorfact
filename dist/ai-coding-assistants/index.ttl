@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-coding-assistants>
+  a schema:TechArticle ;
+  schema:headline "AI Coding Assistants: Copilot, Cursor, and Claude Code" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-coding-assistants>
+  schema:citation <https://docs.anthropic.com/en/docs/claude-code> .
+
+<https://anchorfact.org/kb/ai-coding-assistants>
+  schema:citation <https://arxiv.org/abs/2310.06770> .

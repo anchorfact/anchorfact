@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-legal-research-1",
+    "text": "AI legal research platforms (Casetext CoCounsel, Westlaw Precision, Lexis+ AI, vLex Vincent AI) use LLMs and NLP for: semantic case law search (finding relevant precedents beyond keyword matching), citation analysis (Shepardizing -- tracking whether a case has been overturned), litigation analytics (predicting judge rulings, case duration from historical data), and AI-generated legal memos. CoCounsel (2023) was the first AI legal assistant to pass the Uniform Bar Exam.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/search/?query=legal+research+AI+case+law+semantic+search"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-legal-research-2",
+    "text": "AI litigation analytics: Lex Machina (LexisNexis) and Pre/Dicta analyze millions of court records to predict: probability of motion grant, expected case duration, judge behavior patterns (grant rates, trial tendencies), and likely damages range. Law firms using AI litigation analytics report 15-25% improvement in case strategy decisions and settlement timing accuracy.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/search/?query=LLM+legal+litigation+prediction"
+    }
+  }
+]

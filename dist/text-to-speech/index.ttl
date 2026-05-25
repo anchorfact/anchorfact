@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/text-to-speech>
+  a schema:TechArticle ;
+  schema:headline "Text-to-Speech and Voice Synthesis" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/text-to-speech>
+  schema:citation <https://arxiv.org/abs/1712.05884> .
+
+<https://anchorfact.org/kb/text-to-speech>
+  schema:citation <https://arxiv.org/abs/2210.13438> .

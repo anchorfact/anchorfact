@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI for Network Security: Intelligent Firewalls, DDoS Mitigation, and Zero-Trust Architectures — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Network security is an AI-first domain -- intelligent firewalls classify traffic with deep learning, DDoS mitigation systems detect attacks in milliseconds, and zero-trust architectures use ML to continuously evaluate access risk. The speed and scale of modern cyber attacks make AI the only viable defense.<br>
+<br>
+## Core Explanation<br>
+Network security AI applications: (1) Traffic classification -- deep packet inspection via ML (CNN/transformer on packet payloads) identifies applications and protocols, even encrypted (TLS fingerprinting via JA3/JARM); (2) Anomaly detection -- autoencoders learn normal network behavior; deviations trigger alerts. UEBA applies this to user behavior (unusual login time/location, excessive data exfiltration); (3) Threat intelligence -- NLP processes threat reports, blogs, and dark web forums to extract IoCs (Indicators of Compromise) and TTPs (Tactics, Techniques, Procedures); (4) Automated response -- SOAR (Security Orchestration, Automation, and Response) playbooks, increasingly AI-driven (auto-block IP, isolate host).<br>
+<br>
+## Detailed Analysis<br>
+DDoS mitigation: volumetric attacks flood targets with traffic. ML models detect attack signatures in real-time -- analyzing packet rate, source IP entropy, protocol anomalies. Cloudflare's ML-based system mitigates 100+ Tbps-scale attacks using anycast network + AI filtering. Zero-Trust: traditional perimeter security fails when users/devices are everywhere (remote work, cloud). ZTA verifies every access: (1) Identity (MFA, biometric); (2) Device (health status, patch level, encryption); (3) Context (location, time, behavior patterns). ML risk scoring combines these into a trust score. Low score -> step-up authentication or deny. AI automates policy enforcement at scale. NIST SP 800-207 defines ZTA principles; AI addresses the scalability challenge. Key vendors: Palo Alto (ML-Powered NGFW), Cloudflare (AI DDoS + Zero Trust), CrowdStrike (AI-native XDR), Zscaler (AI Zero Trust Exchange). The 2025-2026 trend: AI-vs-AI -- attackers use AI to generate evasive attacks; defenders use AI to detect them. The asymmetry favors attackers (one success needed) over defenders (must catch all).<br>
+</article></body>
+</html>

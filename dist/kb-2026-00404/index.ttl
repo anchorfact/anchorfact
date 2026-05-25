@@ -1,0 +1,23 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00404>
+  a schema:TechArticle ;
+  schema:headline "Civil Rights Movement" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00404>
+  schema:citation <https://www.simonandschuster.com/books/Parting-the-Waters/Taylor-Branch/9780671687427> .
+
+<https://anchorfact.org/kb/kb-2026-00404>
+  schema:citation <https://www.simonandschuster.com/civil-rights/> .
+
+<https://anchorfact.org/kb/kb-2026-00404>
+  schema:citation <https://global.oup.com/vsi-civil-rights/> .
+
+<https://anchorfact.org/kb/kb-2026-00404>
+  schema:citation <https://www.simonandschuster.com/civil-rights/> .
+
+<https://anchorfact.org/kb/kb-2026-00404>
+  schema:citation <https://www.simonandschuster.com/civil-rights/> .

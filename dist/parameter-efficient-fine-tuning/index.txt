@@ -1,0 +1,18 @@
+# Parameter-Efficient Fine-Tuning: LoRA, QLoRA, and Adapters
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Parameter-efficient fine-tuning (PEFT) adapts large pre-trained models to new tasks by training only a small fraction of parameters. LoRA and QLoRA have democratized LLM customization — GPT-equivalent quality fine-tuning now runs on consumer hardware.
+
+## Core Explanation
+The full fine-tuning problem: updating all 175B parameters of GPT-3 requires 350GB of GPU memory just for optimizer states. PEFT solutions: (1) Adapters — small bottleneck layers inserted between transformer blocks; (2) Prefix tuning — learnable prefix vectors prepended to input; (3) LoRA — low-rank weight updates (ΔW = BA where A and B are small matrices).
+
+## Detailed Analysis
+LoRA typically applies to attention projection matrices (W_q, W_v). Rank r=8-64 provides good performance. Multiple LoRA adapters can be hot-swapped for different tasks without reloading the base model. DORA (2024) adds magnitude-direction decomposition for improved performance.
+
+## Further Reading
+- HuggingFace PEFT Library
+- Unsloth: Fast Fine-Tuning
+- Axolotl: Fine-Tuning Framework

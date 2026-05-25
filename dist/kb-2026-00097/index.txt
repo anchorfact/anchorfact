@@ -1,0 +1,21 @@
+# MutationObserver
+Confidence: high
+Last verified: 2026-05-22
+Generation: human_only
+
+
+
+
+
+## TL;DR
+
+MutationObserver is an API that asynchronously monitors DOM changes — additions, removals, attribute changes, and text content modifications. It replaces the deprecated DOM Mutation Events with a batched, more performant observer pattern.
+
+## Core Explanation
+
+`new MutationObserver(callback).observe(element, { childList: true, attributes: true, subtree: true })`. The callback receives an array of MutationRecord objects. Each record specifies the type of mutation, affected nodes, and relevant data. Chrome DevTools can add breakpoints on specific DOM mutations for debugging.
+
+## Further Reading
+
+- [DOM Standard — MutationObserver](https://dom.spec.whatwg.org/#interface-mutationobserver)
+

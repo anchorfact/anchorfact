@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-music-generation",
+  "headline": "AI Music and Audio Generation: Suno, Udio, and MusicLM",
+  "description": "AI music generation has reached production quality: Suno v5 produces professional-grade tracks from text prompts, Udio excels at vocal authenticity, and MusicLM established the text-to-music paradigm. The technology is transforming music creation, advertising, and gaming audio.",
+  "dateCreated": "2026-05-24T18:00:03.109Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "MusicLM: Generating Music From Text",
+      "sameAs": "https://arxiv.org/abs/2301.11325"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Suno v5: The World's Best Music Model",
+      "sameAs": "https://suno.com/blog/v5"
+    }
+  ]
+}

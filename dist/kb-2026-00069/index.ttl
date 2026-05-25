@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00069>
+  a schema:TechArticle ;
+  schema:headline "CSS (Cascading Style Sheets)" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00069>
+  schema:citation <https://developer.mozilla.org/en-US/docs/Web/CSS> .
+
+<https://anchorfact.org/kb/kb-2026-00069>
+  schema:citation <https://doi.org/undefined> .
+
+<https://anchorfact.org/kb/kb-2026-00069>
+  schema:citation <https://www.oreilly.com/css/> .
+
+<https://anchorfact.org/kb/kb-2026-00069>
+  schema:citation <https://abookapart.com/products/modern-css> .

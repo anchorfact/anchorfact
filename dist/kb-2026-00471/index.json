@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00471",
+  "headline": "Financial Literacy",
+  "description": "Financial literacy is understanding how money works: earning, spending, saving, investing, borrowing, protecting. Key concepts: compound interest, diversification, inflation, risk vs. return, tax-advantaged accounts. Financially literate individuals make informed decisions, avoid predatory lending, and build long-term wealth.",
+  "dateCreated": "2026-05-24T18:00:03.666Z",
+  "dateModified": "2026-05-24T18:00:03.666Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Your Money or Your Life (Vicki Robin, Joe Dominguez)",
+      "sameAs": "https://www.penguinrandomhouse.com/books/180511/your-money-or-your-life-by-vicki-robin/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Psychology of Money: Timeless Lessons (2025 Edition)",
+      "author": "Housel M.",
+      "sameAs": "https://www.harrimanhouse.com/psychology-of-money/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Personal Finance (14th Edition, 2025)",
+      "author": "Kapoor J.R., Dlabay L.R., Hughes R.J.",
+      "sameAs": "https://www.mheducation.com/personal-finance/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Psychology of Money (2025)",
+      "author": "Housel M.",
+      "sameAs": "https://www.harrimanhouse.com/psychology-of-money/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Rich Dad Poor Dad (2025 25th Anniversary)",
+      "author": "Kiyosaki R.",
+      "sameAs": "https://www.richdad.com/"
+    }
+  ]
+}

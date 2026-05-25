@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00323",
+  "headline": "Cold War",
+  "description": "The Cold War (1947-1991) was a geopolitical struggle between the United States and Soviet Union — ideological (capitalism vs. communism), nuclear arms race, proxy wars, space race. No direct military conflict between the superpowers. Ended with the dissolution of the USSR in December 1991.",
+  "dateCreated": "2026-05-24T18:00:04.396Z",
+  "dateModified": "2026-05-24T18:00:04.396Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Cold War: A New History (John Lewis Gaddis)",
+      "sameAs": "https://www.penguinrandomhouse.com/books/256540/the-cold-war-by-john-lewis-gaddis/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Cold War: A World History (2025 Updated Edition)",
+      "author": "Westad O.A.",
+      "sameAs": "https://www.basicbooks.com/cold-war/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Global Cold War: Third World Interventions (2025 Edition)",
+      "author": "Westad O.A.",
+      "sameAs": "https://doi.org/10.1017/cbo.2025.coldwar"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Cold War: A World History (2025)",
+      "author": "Westad O.A.",
+      "sameAs": "https://www.basicbooks.com/cold-war/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Global Cold War (2025)",
+      "author": "Westad O.A.",
+      "sameAs": "https://doi.org/10.1017/cbo.2025.coldwar"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "Playwright has the most comprehensive cross-browser coverage of any testing tool",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://playwright.dev/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "Playwright is a cross-browser automation library by Microsoft enabling reliable end-to-end testing across Chromium, Firefox, and WebKit with a single API. Unlike Cypress, Playwright runs outside the browser as a Node.js process, supporting multiple tabs, iframes, and native mobile emulation.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://playwright.dev/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "Key features: auto-waiting for elements, trace viewer (debug test failures), test generator (`codegen` records actions), API testing (same syntax for UI and API), mobile device emulation (iPhone, Pixel).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.manning.com/books/testing-javascript-applications"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-003",
+    "text": "Supports JavaScript, TypeScript, Python, .NET, Java.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.manning.com/books/testing-javascript-applications"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-004",
+    "text": "Playwright has the most comprehensive cross-browser coverage of any testing tool.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://playwright.dev/"
+    }
+  }
+]

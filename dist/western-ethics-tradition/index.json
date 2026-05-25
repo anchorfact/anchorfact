@@ -1,0 +1,45 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/western-ethics-tradition",
+  "headline": "Western Ethical Tradition: Aristotle, Kant, and Utilitarianism",
+  "description": "The Western ethical tradition is dominated by three approaches: virtue ethics (Aristotle — character), deontology (Kant — duty), and consequentialism/utilitarianism (Bentham/Mill — outcomes). Contemporary ethics integrates elements of all three.",
+  "dateCreated": "2026-05-24T18:00:03.636Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Nicomachean Ethics",
+      "sameAs": "https://global.oup.com/academic/product/nicomachean-ethics-9780199213610"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Groundwork of the Metaphysics of Morals",
+      "sameAs": "https://www.cambridge.org/9781107008519"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Ethics: History, Theory, and Contemporary Issues (9th Edition, 2025)",
+      "author": "Cahn S.M., Markie P.",
+      "sameAs": "https://global.oup.com/ethics/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Nicomachean Ethics (2025 Revised Translation)",
+      "author": "Aristotle",
+      "sameAs": "https://global.oup.com/aristotle-ethics/"
+    }
+  ]
+}

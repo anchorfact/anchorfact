@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00341>
+  a schema:TechArticle ;
+  schema:headline "Human Anatomy" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00341>
+  schema:citation <https://www.elsevier.com/books/grays-anatomy/standring/978-0-7020-5230-9> .

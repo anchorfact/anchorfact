@@ -1,0 +1,19 @@
+# Recommender Systems: Graph Neural Collaborative Filtering and LLM-Based Recommendation
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Recommender systems power the discovery engine of the internet — from Netflix suggestions to Amazon product recommendations and TikTok's For You page. Graph neural networks have become the dominant architecture, while LLMs are opening a new paradigm of generative recommendation where AI creates personalized suggestions from natural conversation.
+
+## Core Explanation
+Classical approaches: (1) Collaborative filtering (CF) — "users who liked X also liked Y." Matrix factorization decomposes the sparse user-item interaction matrix into low-rank user and item embeddings; (2) Content-based — recommend items similar to what the user previously liked based on item features (genre, keywords, author); (3) Hybrid — combine both. Neural CF (He et al., 2017) replaced dot product with learned neural scoring. Graph neural CF: users and items are nodes in a bipartite graph; GNN layers aggregate information from neighbors — LightGCN simplifies GCN by removing non-linearities and feature transformations, keeping only neighborhood aggregation. Sequential recommendation: the order of interactions matters — GRU4Rec, SASRec (self-attention), and BERT4Rec model user behavior sequences as language-like patterns.
+
+## Detailed Analysis
+Nature 2025 comparison: tested 6 model families on 5 datasets. Key finding — GNN-based approaches (LightGCN, NGCF) consistently outperform traditional MF and neural CF on ranking metrics, with diminishing returns beyond 3-4 message-passing layers (over-smoothing). FIGNNCF (2026) integrates item features (text descriptions, categories, images) into the GNN propagation, achieving 12% improvement over pure collaborative GNNs. LLM-based recommendation (SIGIR 2026): three paradigms — (1) LLM as feature encoder (LLM-generated item descriptions enrich GNN input); (2) LLM as ranker (prompt: "Given user history [items], rank these candidates"); (3) Generative recommendation (P5, InstructRec) — LLM directly generates recommended item IDs as tokens. Cold-start problem remains the Achilles' heel: new users and items have no interactions. Solutions: meta-learning (learn to adapt from few examples), cross-domain transfer, and content-based bootstrapping. Trustworthy recommendation (AAAI 2025): detecting shilling attacks (fake reviews boosting products), ensuring demographic fairness, and generating explanations for recommendations to build user trust.
+
+## Further Reading
+- LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation (He et al., SIGIR 2020)
+- P5: Pretraining with Prompts for Recommendation (Geng et al., RecSys 2022)
+- RecBole: Unified Recommender Systems Library
+

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>SMTP Protocol — AnchorFact</title></head>
+<body><article><br>
+<br>
+<br>
+<br>
+## TL;DR<br>
+<br>
+SMTP (Simple Mail Transfer Protocol) is the standard for sending email across the Internet. It uses TCP port 25 (or 587 for submission). Email clients submit mail; MTAs relay it between servers. SMTP is text-based and uses `MAIL FROM`, `RCPT TO`, `DATA` commands.<br>
+<br>
+## Core Explanation<br>
+<br>
+SMTP extensions (ESMTP): STARTTLS (encryption), 8BITMIME (non-ASCII), SIZE (message size declaration). SPF, DKIM, DMARC authenticate email origin and content. IMAP/POP3 are for receiving (reading) email — SMTP is send-only. Gmail, Outlook, etc. use SMTP for outgoing, IMAP for incoming.<br>
+<br>
+## Further Reading<br>
+<br>
+- </article></body>
+</html>

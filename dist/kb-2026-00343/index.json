@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00343",
+  "headline": "Impressionism",
+  "description": "Impressionism (1870s-1880s, France) broke from academic painting with visible brushstrokes, emphasis on light and color over line and form, everyday subjects, and painting en plein air (outdoors). Name from Monet's 'Impression, Sunrise' (1872, exhibited 1874). Initially rejected by Salon, now among the most beloved art movements.",
+  "dateCreated": "2026-05-24T18:00:03.608Z",
+  "dateModified": "2026-05-24T18:00:03.608Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Impressionism (Karin H. Grimme)",
+      "sameAs": "https://www.taschen.com/en/books/art/43189/impressionism/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Impressionism (Art & Ideas) (2025 Edition)",
+      "author": "Rubin J.H.",
+      "sameAs": "https://www.phaidon.com/impressionism/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Impressionists at First Hand (2025 Updated)",
+      "author": "Denvir B.",
+      "sameAs": "https://thamesandhudson.com/impressionists/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Impressionism (Art & Ideas) (2025)",
+      "author": "Rubin J.H.",
+      "sameAs": "https://www.phaidon.com/impressionism/"
+    }
+  ]
+}

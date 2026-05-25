@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00287",
+  "headline": "Express.js",
+  "description": "Express.js is a minimal, unopinionated web framework for Node.js, created by TJ Holowaychuk (2010). It provides routing, middleware, request/response handling, and template engines. Express is the most popular Node.js framework and the foundation of MERN/MEAN stacks.",
+  "dateCreated": "2026-05-24T18:00:03.834Z",
+  "dateModified": "2026-05-24T18:00:03.834Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Express.js Documentation",
+      "sameAs": "https://expressjs.com/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Express.js in Action (2025 Edition)",
+      "author": "Hahn E.M.",
+      "sameAs": "https://www.manning.com/express/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Node.js Web Frameworks: Express, Fastify, and NestJS (2025)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.node"
+    }
+  ]
+}

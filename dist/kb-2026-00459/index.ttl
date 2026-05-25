@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00459>
+  a schema:TechArticle ;
+  schema:headline "Great Wall of China" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00459>
+  schema:citation <https://www.hachettebookgroup.com/titles/john-man/the-great-wall/9780306817670/> .
+
+<https://anchorfact.org/kb/kb-2026-00459>
+  schema:citation <https://doi.org/10.1017/cbo.2025.greatwall> .
+
+<https://anchorfact.org/kb/kb-2026-00459>
+  schema:citation <https://www.basicbooks.com/china-history/> .
+
+<https://anchorfact.org/kb/kb-2026-00459>
+  schema:citation <https://doi.org/10.1017/cbo.2025.greatwall> .

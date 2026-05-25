@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Vision-Language-Action Models: Unified Multimodal Foundation Models for Embodied AI — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Vision-Language-Action (VLA) models extend multimodal AI to physical interaction — a single neural network that sees the environment, understands spoken instructions, and generates robot actions. From "pick up the red cup" to complex multi-step manipulation, VLA models represent the convergence of vision, language, and robotics into unified foundation models.<br>
+<br>
+## Core Explanation<br>
+Traditional robotics stack: perception (object detection) → planning (task decomposition) → control (inverse kinematics). Each module is separate, error-prone, and task-specific. VLA paradigm: single transformer processes interleaved tokens — image patches from cameras, text tokens from instructions/context, and action tokens representing end-effector positions, joint angles, or navigation commands. The model is trained on large-scale robot interaction datasets (Open X-Embodiment, 1M+ trajectories across 60+ robot platforms) with next-token prediction or behavior cloning objectives. Key capability: zero-shot generalization — a VLA trained on diverse embodiments can control a novel robot it has never seen, following natural language instructions in novel environments.<br>
+<br>
+## Detailed Analysis<br>
+Leading VLA models: (1) RT-2 (Google DeepMind, 2023) — fine-tuned PaLM-E vision-language model on robot trajectories, achieving 62% success on unseen tasks vs. 32% for specialized baselines; (2) Octo (UC Berkeley, 2024) — open-source generalist robot policy supporting multiple embodiments through a unified transformer; (3) OpenVLA (Stanford, 2024) — 7B-parameter VLA fine-tuned from Prismatic VLMs on Open X-Embodiment; (4) Emu3 (BAAI, Nature 2026) — demonstrates that next-token prediction alone suffices for multimodal generation and perception, providing the architectural foundation for unified perception-action models. Chinese VLA survey (自动化学报 Acta Automatica Sinica, 2025) documents the full VLA pipeline. MDPI VLA-MP framework (2025) integrates bird's-eye-view perception for autonomous driving decisions. Nature Emu3 (2026): trained on image tokenizers + text tokenizers with a single autoregressive objective — the same model generates images, videos, and text, implying seamless integration of action tokens. Key challenges: (1) Action tokenization — how to discretize continuous robot trajectories into tokens efficiently; (2) Real-world deployment — VLA policies must handle novel objects, lighting, and dynamics unseen in training; (3) Safety — VLA-commanded robots can cause physical harm; formal action constraints and human-in-the-loop override mechanisms are essential.<br>
+<br>
+## Further Reading<br>
+- RT-2: Vision-Language-Action Models (Google DeepMind, 2023)<br>
+- Open X-Embodiment Dataset & RT-X (2024)<br>
+- Octo: An Open-Source Generalist Robot Policy<br>
+</article></body>
+</html>

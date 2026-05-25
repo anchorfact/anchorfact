@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00440>
+  a schema:TechArticle ;
+  schema:headline "Time Management" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00440>
+  schema:citation <https://www.simonandschuster.com/books/The-7-Habits-of-Highly-Effective-People/Stephen-R-Covey/9781982143817> .
+
+<https://anchorfact.org/kb/kb-2026-00440>
+  schema:citation <https://www.penguinrandomhouse.com/gtd/> .
+
+<https://anchorfact.org/kb/kb-2026-00440>
+  schema:citation <https://www.crownpublishing.com/make-time/> .

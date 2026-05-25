@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "First released in 1989 as POSTGRES at UC Berkeley and renamed PostgreSQL in 1996, it emphasizes extensibility, SQL standards compliance, and reliability",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.postgresql.org/docs/17/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-02",
+    "text": "PostgreSQL is an advanced open-source relational database system with over 35 years of active development",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.postgresql.org/docs/17/"
+    }
+  }
+]

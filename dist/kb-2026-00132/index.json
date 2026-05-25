@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00132",
+  "headline": "Dijkstra's Algorithm",
+  "description": "Dijkstra (1956) finds shortest paths from a source vertex to all others in graphs with non-negative weights. O((V+E) log V) with binary heap. Does not work with negative weights — use Bellman-Ford.",
+  "dateCreated": "2026-05-24T18:00:03.803Z",
+  "dateModified": "2026-05-24T18:00:03.803Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM Digital Library",
+      "sameAs": "https://dl.acm.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Algorithms Illuminated (Updated 2025 Edition)",
+      "author": "Roughgarden T.",
+      "sameAs": "https://www.algorithmsilluminated.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Graph Algorithms in the Big Data Era: 2025 Survey",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.graph"
+    }
+  ]
+}

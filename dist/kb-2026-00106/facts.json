@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "The Pointer Lock API ) captures mouse movement for games and 3D applications, hiding the cursor and providing raw movement data without screen-edge boundaries",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/pointerlock/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "The Pointer Lock API (`element.requestPointerLock()`) captures mouse movement for games and 3D applications, hiding the cursor and providing raw movement data (`movementX`, `movementY`) without screen-edge boundaries.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/pointerlock/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "Mouse movement deltas are unbounded — ideal for first-person camera controls.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/pointerlock/"
+    }
+  }
+]

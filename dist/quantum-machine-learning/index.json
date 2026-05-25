@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/quantum-machine-learning",
+  "headline": "Quantum Machine Learning: Tensor Networks, QNNs, and Error Mitigation",
+  "description": "Quantum Machine Learning sits at the intersection of quantum computing and AI. Current research focuses on quantum error mitigation via ML, tensor network-inspired architectures, and quantum kernel methods — practical applications on noisy intermediate-scale quantum (NISQ) devices.",
+  "dateCreated": "2026-05-24T18:00:03.469Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Machine learning for practical quantum error mitigation",
+      "sameAs": "https://www.nature.com/articles/s42256-024-00927-2"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Tensor networks for quantum machine learning",
+      "sameAs": "https://doi.org/10.1098/rspa.2023.0218"
+    }
+  ]
+}

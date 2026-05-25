@@ -1,0 +1,14 @@
+# AI Content Moderation Platforms: Large-Scale Safety Systems, Policy Engines, and Multilingual Review
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI content moderation is the invisible filter protecting billions of social media users from hate speech, violence, and misinformation. Multi-stage AI pipelines detect policy-violating content at upload time, while human reviewers handle edge cases. The challenge: moderating in 70+ languages while respecting cultural context and free expression.
+
+## Core Explanation
+Moderation pipeline: Post upload -> Hash matching (known illegal content) -> ML classifier scoring (multiple policy dimensions: hate speech, harassment, violent content, adult content, spam, misinformation) -> Threshold decision -- auto-remove (high confidence), auto-allow (low confidence), or queue for human review (medium confidence) -> Appeal system. Key techniques: (1) Hash matching -- perceptual hashing (PhotoDNA, PDQ) matches known CSAM and terrorist content even after resizing/compression; (2) Text classification -- fine-tuned transformers (BERT, RoBERTa) on labeled policy violation datasets. Multi-label: a single post may violate multiple policies; (3) Multimodal -- image + text + video analysis. Memes: text overlaying unrelated image change meaning; (4) Contextual LLM reasoning -- LLM understands sarcasm and reclaimed language.
+
+## Detailed Analysis
+Scale challenges: Meta processes billions of posts/day across Facebook, Instagram, Threads, WhatsApp. AI removes 95%+ of hate speech proactively (before user reports) in high-resource languages. The language gap: AI performance drops sharply for low-resource languages. Solutions: zero-shot cross-lingual transfer (train on English, apply to Swahili via multilingual embeddings), few-shot annotation (human labels 100 examples, model generalizes), and active learning (prioritize uncertain predictions for human review). Policy engines: content policies are complex, evolving documents. AI must implement nuanced rules (e.g., "graphic violence allowed with warning screen for news content, removed for gratuitous violence"). Policy-as-code: translate human-readable policies into machine-executable rules with LLM assistance. EU Digital Services Act (2024): platforms must provide transparency reports on moderation, allow user appeals, and conduct risk assessments. Key ethical tension: over-moderation (removing legitimate speech) vs. under-moderation (allowing harmful content). Hybrid AI+human pipelines with transparent appeal processes are the emerging best practice.
+

@@ -1,0 +1,14 @@
+# AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI translates code between languages -- from modernizing billion-line COBOL banking systems to converting Python to Rust. LLM-based code translation attacks the $50B+ legacy modernization market, compressing migration timelines from years to months while maintaining functional equivalence.
+
+## Core Explanation
+Code translation: source language -> target language. Approaches: (1) Seq2seq -- encoder (source code) -> decoder (target code). Training: parallel corpora of (source, target) programs solving same problems; (2) LLM zero/few-shot -- "translate this Python function to Rust"; (3) Decompilation + recompilation -- binary -> human-readable code -> target language; (4) Test-generation + verification -- generate translated code, run tests on both versions, flag differences. Key metric: functional equivalence -- transpiled code must produce identical outputs.
+
+## Detailed Analysis
+COBOL modernization: 220B+ lines of COBOL still running. IBM watsonx Code Assistant for Z: LLM trained on COBOL + Java patterns. Two-step: (1) understand COBOL business logic via AI analysis; (2) generate equivalent Java microservices. Amazon Q (2024): Java 8->17 migration with AI. Google Codey: fine-tuned PaLM 2 for code generation and translation. Meta: CodeCompose for internal code gen + translation. Sapienz for automated testing. Translation pipeline: parse source -> AST -> semantic analysis -> generate target AST -> code. AST-level translation preserves structure better than text-level. Key challenge: languages have different paradigms -- COBOL (procedural, batch) -> Java (OOP, event-driven) requires architecture changes, not just syntax. Idiomatic translation: target code should look like a native speaker wrote it, not a literal translation.
+

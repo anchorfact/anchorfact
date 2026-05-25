@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Financial fraud costs the global economy an estimated $5 trillion annually. AI — particularly graph neural networks — is transforming fraud detection from reactive rules to proactive pattern discovery, catching complex money laundering networks and transaction fraud that rule-based systems miss while reducing false alarms that waste investigator time.<br>
+<br>
+## Core Explanation<br>
+Fraud detection challenges: (1) Extreme class imbalance — legitimate transactions outnumber fraudulent ones by 1,000:1 or more; (2) Adversarial adaptation — fraudsters continuously change behavior to evade detection; (3) Latency — real-time systems must decide in <100ms; (4) Cost asymmetry — false negatives (missing fraud) cost far more than false positives (investigating legitimate transactions). Traditional approach: rule-based systems (IF amount > $10,000 AND country = high-risk THEN flag) — cheap but easily gamed, with 95%+ false positive rates. ML approach: (1) Supervised classification — XGBoost/LightGBM on transaction features (amount, time, location, merchant category, velocity); (2) Graph-based anomaly detection — transactions form a temporal graph (accounts as nodes, transfers as edges); fraud rings exhibit distinctive structural signatures (dense subgraphs, unusual centrality patterns).<br>
+<br>
+## Detailed Analysis<br>
+Graph-based fraud detection: the financial network is a heterogeneous graph — accounts (customer, merchant, corporate), transactions (edges with amount, timestamp, currency), and metadata (IP, device, location). GNNs learn node embeddings capturing neighborhood structure — fraudulent accounts tend to cluster in specific subgraphs. The 2024 arxiv GNN-for-fraud review documents architectures: GraphSAGE (inductive, handles new nodes), GAT (attention-based neighbor weighting), and CARE-GNN (camouflage-resistant via reinforcement learning-based neighbor selection). RL-GNN (Nature 2025): treats fraud detection as sequential decision-making — the agent investigates a node (reveals its label), updates its belief about the network, and decides where to investigate next, prioritizing high-information-gain nodes. This reduces manual investigation volume by 60% while maintaining 95% fraud recall. MDPI 2026 review: three AI eras in fraud — Era 1 (2015-2018) basic ML classifiers; Era 2 (2019-2022) deep learning + graph methods; Era 3 (2023-2026) self-supervised pretraining + LLM-augmented fraud analysis. Key limitation: most fraud models are trained on private bank data unusable for academic research; synthetic data generation (SDG, PaySim) and federated learning across institutions are emerging solutions.<br>
+<br>
+## Further Reading<br>
+- AML Graph Analytics (Neo4j, TigerGraph)<br>
+- PaySim: Synthetic Mobile Money Fraud Dataset<br>
+- Graph Fraud Detection Papers: safe-graph/graph-fraud-detection-papers<br>
+</article></body>
+</html>

@@ -1,0 +1,20 @@
+# Probability Theory
+Confidence: high
+Last verified: 2026-05-22
+Generation: human_only
+
+
+
+
+
+## TL;DR
+
+Probability theory quantifies uncertainty — fundamental to machine learning, statistics, cryptography, and randomized algorithms. Key concepts: random variables, probability distributions (Bernoulli, binomial, normal, Poisson), expectation, variance, Bayes' theorem, law of large numbers.
+
+## Core Explanation
+
+Bayes' Theorem: P(A|B) = P(B|A) * P(A) / P(B). Used in: Naive Bayes classifiers, Bayesian inference, spam filters. Probability mass function (PMF) for discrete variables; probability density function (PDF) for continuous. Central Limit Theorem: sum of independent random variables approaches normal distribution — reason why normal distribution appears everywhere.
+
+## Further Reading
+
+- 

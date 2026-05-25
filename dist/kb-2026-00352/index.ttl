@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00352>
+  a schema:TechArticle ;
+  schema:headline "Roman Empire" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00352>
+  schema:citation <https://www.gutenberg.org/ebooks/731> .
+
+<https://anchorfact.org/kb/kb-2026-00352>
+  schema:citation <https://global.oup.com/vsi-roman/> .
+
+<https://anchorfact.org/kb/kb-2026-00352>
+  schema:citation <https://global.oup.com/roman-fall/> .

@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-001",
+    "text": "Model evaluation metrics quantify performance. Classification: accuracy, precision, recall, F1-score, ROC-AUC. Regression: MSE, MAE, R². Confusion matrix: TP/FP/FN/TN. Choose metrics aligned with business goals: medical diagnosis needs high recall (miss fewer positives), spam detection needs high precision (fewer false alarms).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-001",
+    "text": "Model evaluation metrics quantify performance. Classification: accuracy, precision, recall, F1-score, ROC-AUC. Regression: MSE, MAE, R². Confusion matrix: TP/FP/FN/TN. Choose metrics aligned with business goals: medical diagnosis needs high recall (miss fewer positives), spam detection needs high precision (fewer false alarms).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/"
+    }
+  }
+]

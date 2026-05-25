@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/few-shot-learning>
+  a schema:article ;
+  schema:headline "Few-Shot Learning: Prototypical Networks, MAML, and In-Context Adaptation" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/few-shot-learning>
+  schema:citation <https://arxiv.org/abs/1703.05175> .
+
+<https://anchorfact.org/kb/few-shot-learning>
+  schema:citation <https://arxiv.org/abs/1703.03400> .

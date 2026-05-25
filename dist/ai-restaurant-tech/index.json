@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-restaurant-tech",
+  "headline": "AI for Restaurant Technology: Order Automation, Kitchen Optimization, and Personalized Dining",
+  "description": "AI is taking your order, cooking your food, and personalizing your meal -- from voice AI at drive-thrus to computer vision in kitchens. McDonald's, White Castle, and Sweetgreen deploy AI across ordering, preparation, and personalization, transforming the restaurant experience.",
+  "dateCreated": "2026-05-24T18:00:03.143Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AI in Restaurant Technology: Voice Ordering, Kitchen Automation, and Personalization (2024-2025 Survey)",
+      "sameAs": "https://arxiv.org/search/?query=restaurant+AI+voice+ordering+kitchen+automation"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Conversational AI for Quick-Service Restaurants: Drive-Thru Automation and Multi-Language Order Processing",
+      "sameAs": "https://arxiv.org/search/?query=drive+thru+AI+voice+ordering"
+    }
+  ]
+}

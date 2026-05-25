@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-01",
+    "text": "1947: Dior's 'New Look'",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.dk.com/us/book/9780756698355-fashion/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-001",
+    "text": "Fashion reflects culture, technology, and social change through clothing. Key shifts: ancient draped garments → tailored medieval → Renaissance opulence → Industrial Revolution mass production → 20th century rapid cycles → fast fashion (1990s+) → sustainable fashion (2020s+). Haute couture (Paris, 1858, Worth) set luxury standards.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.dk.com/us/book/9780756698355-fashion/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-002",
+    "text": "Coco Chanel: little black dress, Chanel suit, 'fashion changes, style endures.' Fast fashion: Zara (new designs weekly), environmental criticism.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.dk.com/us/book/9780756698355-fashion/"
+    }
+  }
+]

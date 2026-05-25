@@ -1,0 +1,14 @@
+# AI for Land Use Classification: Satellite Image Segmentation, Urban Expansion Mapping, and Agricultural Monitoring
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+AI classifies every pixel of Earth -- mapping forests, cities, cropland, and water at 10m resolution, updated annually. From ESA's WorldCover global map to Google's near-real-time Dynamic World, deep learning on satellite imagery gives humanity an unprecedented view of how our planet is changing.
+
+## Core Explanation
+Land use AI: (1) Classification -- assign every pixel a land cover class. Sentinel-2 (13 spectral bands, 10m) provides rich multi-spectral data. Models: U-Net (encoder-decoder with skip connections), DeepLabV3 (atrous spatial pyramid pooling), SegFormer (transformer-based); (2) Change detection -- compare two images (T1 and T2). Methods: Siamese CNN (shared encoder, difference in features), STANet (spatial-temporal attention), and post-classification comparison (classify both, then compare); (3) Object-based -- segment image into objects (superpixel segmentation), classify each object. Reduces salt-and-pepper noise of pixel-level classification; (4) Foundation models -- Prithvi (NASA+IBM geospatial FM) and SatMAE pretrained on massive satellite data, fine-tuned for land use.
+
+## Detailed Analysis
+ESA WorldCover: production pipeline uses Sentinel-2 (10m, 5-day revisit) + Sentinel-1 (SAR for cloud penetration). AI classifier (random forest + temporal features) produces 11-class map covering entire Earth, updated annually. Google Dynamic World: near-real-time (updated every 2-5 days) land cover classification using Sentinel-2 + deep learning. 9 classes, 10m resolution. Importance: captures seasonal dynamics (snow cover, flooding, crop cycles). Applications: (1) Deforestation monitoring -- Global Forest Watch detects deforestation weekly via satellite AI; (2) Agriculture -- annual crop type maps (CropScape for US), planted area estimation, yield forecasting; (3) Urban planning -- informal settlement detection, impervious surface mapping, urban heat island analysis; (4) Disaster -- building damage assessment from before/after satellite imagery (xView2). Key challenge: temporal consistency -- pixels should not randomly change class between annual maps due to model noise.
+

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00068>
+  a schema:TechArticle ;
+  schema:headline "Ethereum" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00068>
+  schema:citation <https://ethereum.org/developers/docs/> .
+
+<https://anchorfact.org/kb/kb-2026-00068>
+  schema:citation <https://github.com/ethereum/go-ethereum> .

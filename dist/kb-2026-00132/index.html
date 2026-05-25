@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Dijkstra's Algorithm — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+<br>
+Dijkstra (1956) finds shortest paths from a source vertex to all others in graphs with non-negative weights. O((V+E) log V) with binary heap. Does not work with negative weights — use Bellman-Ford.<br>
+<br>
+## Core Explanation<br>
+<br>
+Algorithm: maintain distance array (∞ initially), extract min from priority queue, relax neighbors (update if shorter path found via current vertex). Bellman-Ford handles negative weights (O(VE), detects negative cycles). A* algorithm extends Dijkstra with a heuristic for goal-directed search.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Introduction to Algorithms (CLRS)](undefined)<br>
+</article></body>
+</html>

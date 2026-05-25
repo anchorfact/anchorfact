@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI Hardware: NVIDIA H100/B200, TPUs, and Cerebras — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+AI hardware has become the primary bottleneck and enabler of AI progress. NVIDIA dominates the GPU market (H100→B200 pipeline); Google TPUs and Cerebras wafer-scale chips offer alternative architectures for specialized workloads.<br>
+<br>
+## Core Explanation<br>
+GPU architecture: thousands of CUDA cores + Tensor Cores for matrix multiplication. H100 introduced Transformer Engine with FP8 precision. B200 added FP4 support (2x throughput) and NVLink 5 (1.8 TB/s). Memory bandwidth (3.35 TB/s on B200) limits training more than compute.<br>
+<br>
+## Detailed Analysis<br>
+TPU v5p (Google, 2023): 459 TFLOPS BF16 per chip, connected via ICI (Inter-Chip Interconnect). Cerebras WSE-3 fits an entire LLM on one chip — no networking bottlenecks. The competitive landscape includes AMD MI300X, Intel Gaudi 3, and Chinese alternatives (Huawei Ascend 910B).<br>
+<br>
+## Further Reading<br>
+- NVIDIA CUDA Programming Guide<br>
+- MLPerf Training Benchmarks<br>
+- SemiAnalysis: AI Hardware Reports</article></body>
+</html>

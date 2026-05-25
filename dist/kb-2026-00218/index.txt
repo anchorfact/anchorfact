@@ -1,0 +1,20 @@
+# Game Design Document (GDD)
+Confidence: high
+Last verified: 2026-05-22
+Generation: human_only
+
+
+
+
+
+## TL;DR
+
+A Game Design Document (GDD) is the blueprint for a video game — defining mechanics, story, art direction, technical requirements, and project scope. It serves as the single source of truth for the development team. Modern GDDs are living documents (wikis, Notion) rather than static PDFs.
+
+## Core Explanation
+
+GDD sections: Executive Summary (one-page pitch), Gameplay (core loop, mechanics, controls), Story/World (setting, characters, narrative arc), Art/Sound (visual style, audio direction), UI/UX (menus, HUD, flow), Technical (platform, engine, tools), Monetization (if F2P), Schedule/Milestones. Key: keep it updated. Dead GDDs (outdated, too long) waste time.
+
+## Further Reading
+
+- 

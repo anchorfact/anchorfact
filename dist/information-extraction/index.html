@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Information Extraction: NER, Relation Extraction, and LLM-Powered IE — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Information Extraction (IE) transforms unstructured text into structured knowledge. Named Entity Recognition identifies people, organizations, and locations; Relation Extraction discovers connections between them. Modern LLMs have fundamentally changed IE — from specialized models to unified generative approaches.<br>
+<br>
+## Core Explanation<br>
+IE pipeline: (1) Named Entity Recognition (NER) — locate and classify named entities (Person, Organization, Location, Date); (2) Relation Extraction (RE) — identify semantic relationships between entities (works_at, located_in, founded_by); (3) Event Extraction — detect event triggers and their arguments; (4) Coreference Resolution — link pronouns to entities. Traditional approach uses LSTM-CRF or BERT-based taggers; modern LLM approach uses instruction-following or code-generation formats.<br>
+<br>
+## Detailed Analysis<br>
+Generative IE: prompt LLM to output JSON {"entities": [...], "relations": [...]}. Advantages: handle nested/overlapping entities naturally, zero-shot transfer to new entity types, unified architecture. Multimodal IE extends to documents with tables, forms, and images via LayoutLMv3, Donut, and Nougat. OCR+LLM hybrid pipelines (2025) combine traditional OCR with LLM correction. Applications: scientific literature mining, legal document analysis, financial report extraction.<br>
+<br>
+## Further Reading<br>
+- SpaCy NER and Transformers<br>
+- HuggingFace Token Classification<br>
+- Awesome-LLM4IE Papers GitHub<br>
+</article></body>
+</html>

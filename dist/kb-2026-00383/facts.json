@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-self-improvement-001",
+    "text": "Critical thinking is the objective analysis and evaluation of claims to form a judgment. Skills: identify assumptions, evaluate evidence, recognize logical fallacies, consider alternative perspectives. System 1 (fast, intuitive) vs. System 2 (slow, deliberate) — Kahneman. Cognitive biases (confirmation bias, anchoring, availability heuristic) disto",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://us.macmillan.com/books/9780374533557/thinkingfastandslow"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-self-improvement-001",
+    "text": "Critical thinking is the objective analysis and evaluation of claims to form a judgment. Skills: identify assumptions, evaluate evidence, recognize logical fallacies, consider alternative perspectives. System 1 (fast, intuitive) vs. System 2 (slow, deliberate) — Kahneman. Cognitive biases (confirmation bias, anchoring, availability heuristic) disto",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://us.macmillan.com/books/9780374533557/thinkingfastandslow"
+    }
+  }
+]

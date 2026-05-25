@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f1",
+    "text": "RLHF (Ouyang et al. 2022, OpenAI) fine-tunes LLMs using human preference feedback to align outputs with human values, training a reward model from comparisons and optimizing the policy via PPO. This is how InstructGPT/ChatGPT were built.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2203.02155"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f2",
+    "text": "DPO (Rafailov et al. 2023, Stanford) simplifies alignment by directly optimizing a preference-based objective without training a separate reward model, achieving comparable results to RLHF with greater stability.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2305.18290"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f3",
+    "text": "Constitutional AI (Anthropic 2022) enables self-alignment by having the model critique and revise its own outputs based on predefined principles, reducing human annotation cost while improving harmlessness.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2212.08073"
+    }
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-001",
+    "text": "Viking Age (793-1066 CE): Norse seafarers from Scandinavia raided, traded, and settled across Europe, reaching North America (L'Anse aux Meadows, Newfoundland, ~1000 CE) centuries before Columbus. Not just raiders: also traders, explorers, settlers. Norse mythology (Odin, Thor, Valhalla) remains culturally influential.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://press.princeton.edu/books/hardcover/9780691149851/the-age-of-the-vikings"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-002",
+    "text": "Raids: Lindisfarne (793, shocked Christian Europe), Paris (845).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://press.princeton.edu/books/hardcover/9780691149851/the-age-of-the-vikings"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-003",
+    "text": "Settlements: Iceland (874), Greenland (Erik the Red, 985), Vinland (North America, Leif Erikson ~1000).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://press.princeton.edu/books/hardcover/9780691149851/the-age-of-the-vikings"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-004",
+    "text": "Norman conquest of England (1066): Normans were Viking descendants who adopted French culture.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://press.princeton.edu/books/hardcover/9780691149851/the-age-of-the-vikings"
+    }
+  }
+]

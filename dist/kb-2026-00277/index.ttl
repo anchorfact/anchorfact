@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00277>
+  a schema:TechArticle ;
+  schema:headline "Explainable AI (XAI)" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00277>
+  schema:citation <https://arxiv.org/abs/1602.04938> .
+
+<https://anchorfact.org/kb/kb-2026-00277>
+  schema:citation <https://arxiv.org/abs/1705.07874> .
+
+<https://anchorfact.org/kb/kb-2026-00277>
+  schema:citation <https://doi.org/10.1016/j.inffus.2019.12.012> .

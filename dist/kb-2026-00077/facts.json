@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "C is a general-purpose, procedural programming language created by Dennis Ritchie at Bell Labs between 1969-1973",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.iso.org/standard/82075.html"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "It is the foundation of modern computing: Unix/Linux kernels, Windows, macOS, embedded systems, and the reference implementations of Python, Ruby, and Node.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.iso.org/standard/82075.html"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-003",
+    "text": "Standardized by ISO (C23 is the latest, 2024), C remains essential for systems programming, operating systems, and performance-critical applications where direct memory access and minimal runtime overhead are required.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.iso.org/standard/82075.html"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-kb-2026-00077-extra",
+    "text": "Dennis Ritchie developed C at Bell Labs between 1969 and 1973, evolving from the B programming language to add types and structure for implementing the UNIX operating system.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/doi/10.1145/154766.155363"
+    }
+  }
+]

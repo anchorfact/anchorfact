@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/ai-benchmarks-and-evaluation",
+  "headline": "AI Benchmarks: MMLU, SWE-bench, and How We Measure Intelligence",
+  "description": "AI benchmarks measure progress but are targets as much as tests. MMLU evaluates knowledge; HumanEval tests coding; SWE-bench measures real engineering; ARC-AGI probes abstraction. As models saturate existing benchmarks, new harder ones emerge (GPQA, Humanity's Last Exam).",
+  "dateCreated": "2026-05-24T18:00:02.812Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Measuring Massive Multitask Language Understanding (MMLU)",
+      "sameAs": "https://arxiv.org/abs/2009.03300"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+      "sameAs": "https://arxiv.org/abs/2310.06770"
+    }
+  ]
+}

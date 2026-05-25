@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/brain-computer-interface-ai>
+  a schema:article ;
+  schema:headline "Brain-Computer Interfaces: AI-Powered Neural Decoding and Neurotechnology" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/brain-computer-interface-ai>
+  schema:citation <https://www.frontiersin.org/journals/human-dynamics/articles/10.3389/fhumd.2025.1553905/full> .
+
+<https://anchorfact.org/kb/brain-computer-interface-ai>
+  schema:citation <https://www.nature.com/articles/s42256-025-01090-y> .

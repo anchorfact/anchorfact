@@ -1,0 +1,23 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00355>
+  a schema:TechArticle ;
+  schema:headline "Age of Exploration" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00355>
+  schema:citation <https://www.harpercollins.com/products/over-the-edge-of-the-world-laurence-bergreen> .
+
+<https://anchorfact.org/kb/kb-2026-00355>
+  schema:citation <https://www.penguinrandomhouse.com/exploration/> .
+
+<https://anchorfact.org/kb/kb-2026-00355>
+  schema:citation <https://doi.org/10.1017/cbo.2025.exploration> .
+
+<https://anchorfact.org/kb/kb-2026-00355>
+  schema:citation <https://www.penguinrandomhouse.com/exploration/> .
+
+<https://anchorfact.org/kb/kb-2026-00355>
+  schema:citation <https://doi.org/10.1017/cbo.2025.exploration> .

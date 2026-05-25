@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sports-007",
+    "text": "Competitive swimming has four official strokes: freestyle (front crawl typically fastest), backstroke, breaststroke, butterfly. Individual medley (IM) combines all four in order: butterfly→backstroke→breaststroke→freestyle",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.worldaquatics.com/swimming/rules"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sports-008",
+    "text": "Olympic swimming program includes 35 events (17 male, 17 female, 1 mixed relay). Distances: 50m to 1500m freestyle, 100m/200m backstroke, breaststroke, butterfly, 200m/400m IM. Long course (50m pool) and short course (25m) have separate world records",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://olympics.com/en/sports/swimming/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-sports-009",
+    "text": "Interval training is the foundation of competitive swimming: sets of repeats at specific paces with controlled rest (e.g., 10×100m freestyle on 1:30 interval). Energy systems: aerobic (distance), anaerobic (sprints), lactate threshold training",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.worldaquatics.com/swimming/rules"
+    }
+  }
+]

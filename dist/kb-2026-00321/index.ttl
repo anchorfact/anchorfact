@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00321>
+  a schema:TechArticle ;
+  schema:headline "Nomad (HashiCorp)" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00321>
+  schema:citation <https://developer.hashicorp.com/nomad/docs> .

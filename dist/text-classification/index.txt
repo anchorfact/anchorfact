@@ -1,0 +1,15 @@
+# Text Classification: Zero-Shot, Few-Shot, and LLM-Based Document Categorization
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Text classification -- assigning categories to documents -- is one of NLP's oldest and most practical tasks. The LLM era has transformed it: zero-shot classification eliminates the need for labeled data, few-shot approaches match traditional fine-tuning with 8 examples, and LLMs can classify documents based on natural language instructions rather than fixed category sets.
+
+## Core Explanation
+Text classification tasks: (1) Topic classification -- what is this about? (sports, politics, technology); (2) Sentiment analysis -- positive/negative/neutral; (3) Intent classification -- what does the user want? (booking, complaint, information); (4) Spam detection; (5) Language identification. Traditional approach: fine-tune BERT/RoBERTa on labeled dataset (1K-100K examples per class). Problem: labeling is expensive and categories change (new product categories, emerging topics). LLM approach: (A) Zero-shot -- prompt LLM with "Classify: [text] 
+ Categories: [list]" + natural language inference reformulation (does this text entail the category description?); (B) Few-shot -- provide 2-8 labeled examples in the prompt; (C) SetFit -- fine-tune SentenceTransformer with contrastive learning on few examples, train lightweight classifier on top.
+
+## Detailed Analysis
+arxiv 2025 LLM-era benchmark: 32 datasets, 8 languages. Key findings: (1) Zero-shot GPT-4 achieves 85-90% of fine-tuned BERT accuracy on English text classification; (2) Few-shot (16 examples) matches or exceeds fine-tuned BERT for simpler tasks (topic classification, sentiment), lags by 5-10% on fine-grained classification; (3) Synthetic data generation (LLM creates training examples) bridges the gap to within 2-5% of fully supervised training. Springer 2025 review: SetFit (Tunstall et al., 2022) -- two-stage: contrastive fine-tuning of sentence transformer on few-shot pairs, then train logistic regression classifier on embeddings. Matches GPT-3 few-shot with 1600x smaller model. WC-SBERT (ACM 2024): zero-shot topic classification using SBERT embeddings + Wikipedia category hierarchy as label space. Nature 2026 zero-shot military text classification: prompt engineering with chain-of-thought reasoning for domain-specific fine-grained categories.
+

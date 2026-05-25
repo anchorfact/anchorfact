@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/autonomous-driving-ai>
+  a schema:article ;
+  schema:headline "End-to-End Autonomous Driving: Tesla FSD, Waymo, and Imitation Learning" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/autonomous-driving-ai>
+  schema:citation <https://arxiv.org/abs/2410.23262> .
+
+<https://anchorfact.org/kb/autonomous-driving-ai>
+  schema:citation <https://arxiv.org/abs/2305.01774> .

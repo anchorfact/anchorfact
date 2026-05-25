@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-mathematical-reasoning",
+  "headline": "AI for Mathematical Reasoning: Theorem Proving with Lean, AlphaProof, and Formal Mathematics",
+  "description": "AI is learning to prove mathematical theorems -- from International Mathematical Olympiad geometry problems (AlphaGeometry) to formal proofs in Lean 4 (AlphaProof). The combination of LLM reasoning, reinforcement learning, and formal verification is creating AI systems that not only solve problems but produce human-verifiable, logically rigorous proofs.",
+  "dateCreated": "2026-05-24T18:00:03.105Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AlphaProof: Formal mathematical reasoning in large language models via RL and formal verification",
+      "sameAs": "https://www.nature.com/articles/d41586-025-03585-5"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "AlphaGeometry: Solving olympiad geometry without human demonstrations",
+      "sameAs": "https://www.nature.com/articles/s41586-023-06747-5"
+    }
+  ]
+}

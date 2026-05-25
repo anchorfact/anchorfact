@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-humanitarian-aid>
+  a schema:article ;
+  schema:headline "AI for Humanitarian Aid: Crisis Mapping, Damage Assessment, and Disaster Response Optimization" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-humanitarian-aid>
+  schema:citation <https://www.sciencedirect.com/science/article/pii/S0166497225002470> .
+
+<https://anchorfact.org/kb/ai-for-humanitarian-aid>
+  schema:citation <https://ieeexplore.ieee.org/document/11297255> .

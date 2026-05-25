@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/dropout-and-regularization",
+  "headline": "Dropout and Regularization Techniques",
+  "description": "Regularization prevents neural networks from memorizing training data instead of learning generalizable patterns. Dropout, weight decay, data augmentation, and early stopping are the primary techniques.",
+  "dateCreated": "2026-05-24T18:00:03.289Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
+      "sameAs": "https://jmlr.org/papers/v15/srivastava14a.html"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Elements of Statistical Learning, Ch.7",
+      "sameAs": "https://link.springer.com/book/10.1007/978-0-387-84858-7"
+    }
+  ]
+}

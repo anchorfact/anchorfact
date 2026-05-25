@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "Flexbox provides one-dimensional layout (row or column), distributing space and aligning items within a container. `display: flex` on parent enables flex context. Key properties: `justify-content` (main axis alignment), `align-items` (cross axis), `flex-grow/shrink/basis` (item sizing).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/css-flexbox-1/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "Flexbox provides one-dimensional layout (row or column), distributing space and aligning items within a container. `display: flex` on parent enables flex context. Key properties: `justify-content` (main axis alignment), `align-items` (cross axis), `flex-grow/shrink/basis` (item sizing).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/css-flexbox-1/"
+    }
+  }
+]

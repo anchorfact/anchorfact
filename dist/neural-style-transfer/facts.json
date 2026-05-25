@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-neural-style-transfer-1",
+    "text": "arxiv (June 2025) published a decade survey of AI-driven style transfer -- tracing the evolution from Gatys et al. (2015) Neural Algorithm of Artistic Style (optimizing image pixels to match content + style representations from VGG) through real-time feed-forward methods (Johnson et al. 2016, perceptual loss) to diffusion-based style transfer (2023-2025) -- documenting that diffusion models (Stable Diffusion + ControlNet + IP-Adapter) achieve 10-100x speedup while offering fine-grained control over style intensity, local regions, and multi-style blending.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2506.19278"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-neural-style-transfer-2",
+    "text": "ScienceDirect Neurocomputing (April 2025) published a comprehensive review of style transfer metrics and evaluation -- identifying the key challenge of evaluating artistic quality (no ground truth) -- and documenting that CLIP-based perceptual metrics, user studies, and artist evaluation panels are the emerging gold standard, while traditional pixel-wise metrics (PSNR, SSIM) fail to capture artistic quality.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S092523122500102X"
+    }
+  }
+]

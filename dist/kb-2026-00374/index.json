@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00374",
+  "headline": "Cardiovascular Exercise",
+  "description": "Cardiovascular (aerobic) exercise strengthens the heart and lungs through sustained rhythmic movement using large muscle groups. ACSM recommends: 150 minutes moderate or 75 minutes vigorous aerobic activity weekly. Benefits: reduced cardiovascular disease risk, improved mood, better sleep, weight management, longevity.",
+  "dateCreated": "2026-05-24T18:00:04.330Z",
+  "dateModified": "2026-05-24T18:00:04.330Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACSM Guidelines for Exercise Testing and Prescription (11th Ed)",
+      "sameAs": "https://www.acsm.org/read-research/books/acsms-guidelines-for-exercise-testing-and-prescription"
+    }
+  ]
+}

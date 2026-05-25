@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-knowledge-graph-reasoning-1",
+    "text": "ScienceDirect Engineering Applications of AI (November 2025) published a comprehensive review of knowledge graph reasoning — documenting the evolution from symbolic logic methods (rule-based, description logic) to embedding-based methods (TransE, RotatE, ComplEx) and graph neural network-based approaches (R-GCN, CompGCN) — finding that hybrid neurosymbolic methods combining embedding scores with logical constraints achieve 8-15% improvement in link prediction metrics (MRR, Hits@10) on standard benchmarks (WN18RR, FB15k-237).",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S0952197625016276"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-knowledge-graph-reasoning-2",
+    "text": "National Science Review (March 2026) published a survey on knowledge graphs in AI-driven discovery — identifying KG-enhanced LLMs (retrieving structured knowledge during generation), temporal knowledge graph reasoning (predicting future facts), and multimodal KGs (combining text, images, and structured data) as the three frontier directions for 2025-2026.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://academic.oup.com/nsr/article/13/8/nwag140/8507209"
+    }
+  }
+]

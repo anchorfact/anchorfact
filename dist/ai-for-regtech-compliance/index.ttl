@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-regtech-compliance>
+  a schema:article ;
+  schema:headline "AI for Regulatory Technology (RegTech): Compliance Automation, AML, and Regulatory Intelligence" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-regtech-compliance>
+  schema:citation <https://arxiv.org/abs/2504.00000> .
+
+<https://anchorfact.org/kb/ai-for-regtech-compliance>
+  schema:citation <https://www.emerald.com/insight/publication/issn/1358-1988> .

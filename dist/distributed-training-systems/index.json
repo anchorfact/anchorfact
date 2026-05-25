@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/distributed-training-systems",
+  "headline": "Distributed Training: FSDP, DeepSpeed, and Scaling Laws",
+  "description": "Training frontier AI models requires thousands of GPUs working in parallel. FSDP and DeepSpeed ZeRO are the dominant strategies for memory-efficient distributed training, enabling models with hundreds of billions of parameters.",
+  "dateCreated": "2026-05-24T18:00:03.285Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models",
+      "sameAs": "https://arxiv.org/abs/1910.02054"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "PyTorch Fully Sharded Data Parallel (FSDP)",
+      "sameAs": "https://pytorch.org/docs/stable/fsdp.html"
+    }
+  ]
+}

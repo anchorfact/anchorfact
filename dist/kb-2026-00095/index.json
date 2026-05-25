@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00095",
+  "headline": "Same-Origin Policy",
+  "description": "The Same-Origin Policy (SOP) is a critical web security mechanism restricting how documents and scripts from one origin interact with resources from another origin. Origin = protocol + host + port. SOP prevents malicious websites from reading sensitive data from other sites.",
+  "dateCreated": "2026-05-24T18:00:04.051Z",
+  "dateModified": "2026-05-24T18:00:04.051Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Same-Origin Policy (MDN Web Docs)",
+      "sameAs": "https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy"
+    }
+  ]
+}

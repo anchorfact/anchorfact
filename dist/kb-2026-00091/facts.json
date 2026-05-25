@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "WebGL is a JavaScript API for rendering 2D and 3D graphics in browsers, based on OpenGL ES. WebGL 2.0 (2017) supports GLSL ES 3.00 shaders, multiple render targets, and integer-based texture formats. WebGPU (2023+) is its successor.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.khronos.org/registry/webgl/specs/latest/2.0/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "WebGL uses `getContext('webgl2')` on a canvas element.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.khronos.org/registry/webgl/specs/latest/2.0/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-003",
+    "text": "Key libraries: Three.js (high-level 3D), Babylon.js, PlayCanvas.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.khronos.org/registry/webgl/specs/latest/2.0/"
+    }
+  }
+]

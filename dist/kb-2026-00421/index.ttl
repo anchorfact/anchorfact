@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00421>
+  a schema:TechArticle ;
+  schema:headline "Strength Training Principles" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00421>
+  schema:citation <https://aasgaardco.com/store/books-posters-dvd/practical-programming-for-strength-training/> .

@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00327>
+  a schema:TechArticle ;
+  schema:headline "French Revolution" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00327>
+  schema:citation <https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/> .
+
+<https://anchorfact.org/kb/kb-2026-00327>
+  schema:citation <https://www.penguinrandomhouse.com/french-revolution/> .
+
+<https://anchorfact.org/kb/kb-2026-00327>
+  schema:citation <https://global.oup.com/vsi-french-rev/> .
+
+<https://anchorfact.org/kb/kb-2026-00327>
+  schema:citation <https://www.penguinrandomhouse.com/french-revolution/> .

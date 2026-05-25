@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-for-language-learning>
+  a schema:article ;
+  schema:headline "AI for Language Learning: Intelligent Tutoring, Speech Assessment, and Personalized Curriculum" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-for-language-learning>
+  schema:citation <https://www.nature.com/articles/s41539-025-00320-7> .
+
+<https://anchorfact.org/kb/ai-for-language-learning>
+  schema:citation <https://onlinelibrary.wiley.com/doi/full/10.1111/ijal.70034> .

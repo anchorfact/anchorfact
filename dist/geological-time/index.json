@@ -1,0 +1,51 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://anchorfact.org/kb/geological-time",
+  "headline": "Geological Time Scale and Earth History",
+  "description": "Earth's 4.54-billion-year history is recorded in rocks, fossils, and isotopes. The geological time scale organizes this history into eons, eras, periods, and epochs — each defined by major geological or biological events.",
+  "dateCreated": "2026-05-24T18:00:04.514Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Geologic Time Scale 2024",
+      "sameAs": "https://stratigraphy.org/timescale/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Earth System History, 4th Edition",
+      "sameAs": "https://www.macmillanlearning.com/college/us/product/Earth-System-History/p/1319154022"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Earth System History (5th Edition, 2025)",
+      "author": "Stanley S.M., Luczaj J.A.",
+      "sameAs": "https://www.macmillanlearning.com/earth-history/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Geologic Time Scale 2025: Updated International Chronostratigraphic Chart",
+      "author": "ICS",
+      "sameAs": "https://stratigraphy.org/chart"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Geologic Time Scale 2025",
+      "author": "ICS",
+      "sameAs": "https://stratigraphy.org/chart"
+    }
+  ]
+}

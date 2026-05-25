@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-001",
+    "text": "Music theory describes how music works. Fundamentals: pitch (frequency), rhythm (time), melody (pitch sequence), harmony (simultaneous pitches), timbre (tone quality). Western 12-tone equal temperament divides octave into 12 semitones. Scales: major (happy), minor (sad), pentatonic, chromatic. Chords: triads (3 notes), seventh chords (4 notes).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.mheducation.com/highered/product/tonal-harmony-kostka-payne-almen/M9781259447099.html"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-002",
+    "text": "Time signatures: 4/4 (most common), 3/4 (waltz), 6/8 (compound).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.mheducation.com/highered/product/tonal-harmony-kostka-payne-almen/M9781259447099.html"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-003",
+    "text": "Chord progressions: I-IV-V-I (most common in Western music).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.mheducation.com/highered/product/tonal-harmony-kostka-payne-almen/M9781259447099.html"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-arts-004",
+    "text": "Notation: 5-line staff, clefs (treble, bass), notes and rests.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.mheducation.com/highered/product/tonal-harmony-kostka-payne-almen/M9781259447099.html"
+    }
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-cognitive-architectures-1",
+    "text": "ACT-R (Adaptive Control of Thought - Rational, CMU, continuously developed 1993-2025) is the leading cognitive architecture modeling human cognition as the interaction of modular components: declarative memory (facts, with activation-based retrieval), procedural memory (production rules: IF-THEN), goal module (current intentions), and perceptual-motor modules (vision, motor). The architecture makes quantitative predictions of human reaction times and error rates across domains from driving to algebra.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://act-r.psy.cmu.edu/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-cognitive-architectures-2",
+    "text": "arxiv (August 2025) published a vision for integrating AI and cognitive science -- arguing that future AI should not merely optimize performance but construct systems that deepen our understanding of the human mind. Cognitive architectures (ACT-R, Soar, Sigma, Nengo) provide the theoretical framework, while modern deep learning provides pattern recognition capabilities. The convergence includes LLM-augmented cognitive models and cognitive-architecture-informed AI safety.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/2508.20674"
+    }
+  }
+]

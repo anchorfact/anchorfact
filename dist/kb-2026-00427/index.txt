@@ -1,0 +1,20 @@
+# Public Health Basics
+Confidence: high
+Last verified: 2026-05-22
+Generation: ai_assisted
+
+
+
+
+## TL;DR
+
+Public health focuses on preventing disease and promoting health at population level — in contrast to clinical medicine's individual focus. Core functions: assessment (monitor health), policy development, assurance (ensure access). Key achievements: vaccination, sanitation, tobacco control, motor vehicle safety, infectious disease control.
+
+## Core Explanation
+
+Epidemiology: study of disease distribution and determinants. Incidence (new cases) vs. prevalence (total cases). John Snow (1854): Broad Street pump → cholera source — father of epidemiology. Herd immunity: when enough are immune, disease can't spread. Social determinants of health: income, education, housing affect health more than healthcare. CDC, WHO lead public health globally.
+
+## Further Reading
+
+- [Introduction to Public Health (Schneider, 6th Ed)](https://www.jblearning.com/catalog/productdetails/9781284197594)
+

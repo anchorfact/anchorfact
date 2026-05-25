@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/procedural-generation",
+  "headline": "Procedural Content Generation in Games",
+  "description": "Procedural content generation (PCG) uses algorithms to automatically create game content — terrain, levels, items, quests — replacing manual design with computational generation. It is fundamental to modern open-world and roguelike games.",
+  "dateCreated": "2026-05-24T18:00:04.248Z",
+  "dateModified": "2026-05-24T18:00:04.248Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Procedural Content Generation in Games",
+      "sameAs": "https://link.springer.com/book/10.1007/978-3-319-42716-4"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "An Image Synthesizer",
+      "sameAs": "https://dl.acm.org/doi/10.1145/325165.325247"
+    }
+  ]
+}

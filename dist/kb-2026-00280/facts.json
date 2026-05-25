@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-01",
+    "text": "It's often the most impactful step in ML pipelines — good features beat complex models",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-001",
+    "text": "Feature engineering transforms raw data into informative representations that improve model performance. It's often the most impactful step in ML pipelines — good features beat complex models. Deep learning reduces but doesn't eliminate the need for feature engineering. Techniques: scaling, encoding, binning, interaction features, domain-specific t",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-002",
+    "text": "Scaling: StandardScaler (mean=0, std=1), MinMaxScaler (0 to 1).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-ai-003",
+    "text": "Feature selection: filter (correlation), wrapper (greedy search), embedded (L1 regularization, tree importance).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/"
+    }
+  }
+]

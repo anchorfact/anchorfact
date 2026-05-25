@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00426",
+  "headline": "Running Fundamentals",
+  "description": "Running is one of the most accessible and effective forms of cardiovascular exercise. Training principles: build gradually (10% rule: don't increase weekly mileage by >10%), polarized training (80% easy, 20% hard), recovery weeks (every 3-4 weeks reduce mileage). Proper running form: midfoot strike, cadence 170-180 steps/min.",
+  "dateCreated": "2026-05-24T18:00:04.357Z",
+  "dateModified": "2026-05-24T18:00:04.357Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Daniels' Running Formula (Jack Daniels, 4th Ed)",
+      "sameAs": "https://www.humankinetics.com/products/daniels-running-formula-4th-edition"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00148",
+  "headline": "Model-View-Controller (MVC)",
+  "description": "MVC separates application into three components: Model (data/business logic), View (presentation/UI), Controller (handles input, updates model). Originally from Smalltalk-80, MVC is the most influential architectural pattern in UI development.",
+  "dateCreated": "2026-05-24T18:00:03.946Z",
+  "dateModified": "2026-05-24T18:00:03.946Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM Digital Library",
+      "sameAs": "https://dl.acm.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Patterns of Enterprise Application Architecture (2025 Updated Edition)",
+      "author": "Fowler M.",
+      "sameAs": "https://www.informit.com/patterns-eaa/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Web Application Architecture: MVC, MVP, MVVM in 2025",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.mvc"
+    }
+  ]
+}

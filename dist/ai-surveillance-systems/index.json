@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-surveillance-systems",
+  "headline": "AI for Surveillance Systems: Object Tracking, Anomaly Detection, and Intelligent Monitoring",
+  "description": "AI surveillance sees everything, everywhere, all at once -- tracking objects across hundreds of cameras, detecting anomalies in real-time, and enabling forensic search through weeks of footage in seconds. The technology raises fundamental questions about privacy, bias, and the balance between security and civil liberties.",
+  "dateCreated": "2026-05-24T18:00:03.188Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Deep Learning for Intelligent Video Surveillance: Object Tracking, Action Recognition, and Anomaly Detection (2024-2025 Comprehensive Survey)",
+      "sameAs": "https://arxiv.org/search/?query=video+surveillance+deep+learning+tracking+anomaly"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "AI Surveillance Ethics: Facial Recognition Regulation, Bias, and the Right to Privacy in Public Spaces",
+      "sameAs": "https://arxiv.org/search/?query=AI+surveillance+ethics+facial+recognition+regulation"
+    }
+  ]
+}

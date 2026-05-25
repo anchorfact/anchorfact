@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00355",
+  "headline": "Age of Exploration",
+  "description": "The Age of Exploration (15th-17th centuries) was driven by European powers seeking new trade routes to Asia, bypassing Ottoman-controlled land routes. Technological enablers: caravel ships, improved navigation (astrolabe, compass), cartography. Consequences: Columbian Exchange (global transfer of crops, animals, diseases), colonization, globalization.",
+  "dateCreated": "2026-05-24T18:00:04.377Z",
+  "dateModified": "2026-05-24T18:00:04.377Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Over the Edge of the World: Magellan's Terrifying Circumnavigation (Laurence Bergreen)",
+      "sameAs": "https://www.harpercollins.com/products/over-the-edge-of-the-world-laurence-bergreen"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "A History of the World in Twelve Maps (2025 Updated)",
+      "author": "Brotton J.",
+      "sameAs": "https://www.penguinrandomhouse.com/exploration/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Age of Exploration: A Global History (2025)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1017/cbo.2025.exploration"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "A History of the World in Twelve Maps (2025)",
+      "author": "Brotton J.",
+      "sameAs": "https://www.penguinrandomhouse.com/exploration/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Age of Exploration (2025)",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1017/cbo.2025.exploration"
+    }
+  ]
+}

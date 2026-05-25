@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/world-models-video-prediction>
+  a schema:article ;
+  schema:headline "World Models: Video Prediction, Physical Reasoning, and Interactive AI" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/world-models-video-prediction>
+  schema:citation <https://openai.com/index/video-generation-models-as-world-simulators/> .
+
+<https://anchorfact.org/kb/world-models-video-prediction>
+  schema:citation <https://arxiv.org/abs/2312.06114> .

@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/advanced-rag-techniques>
+  a schema:TechArticle ;
+  schema:headline "Advanced RAG: From Naive Retrieval to Agentic RAG" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/advanced-rag-techniques>
+  schema:citation <https://arxiv.org/abs/2312.10997> .
+
+<https://anchorfact.org/kb/advanced-rag-techniques>
+  schema:citation <https://arxiv.org/abs/2310.11511> .

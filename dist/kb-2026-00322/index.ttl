@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00322>
+  a schema:TechArticle ;
+  schema:headline "World War II" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00322>
+  schema:citation <https://www.antonybeevor.com/books/the-second-world-war/> .
+
+<https://anchorfact.org/kb/kb-2026-00322>
+  schema:citation <https://www.littlebrown.com/second-world-war/> .
+
+<https://anchorfact.org/kb/kb-2026-00322>
+  schema:citation <https://global.oup.com/vsi-ww2/> .

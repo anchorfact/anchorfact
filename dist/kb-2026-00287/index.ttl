@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00287>
+  a schema:TechArticle ;
+  schema:headline "Express.js" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00287>
+  schema:citation <https://expressjs.com/> .
+
+<https://anchorfact.org/kb/kb-2026-00287>
+  schema:citation <https://www.manning.com/express/> .
+
+<https://anchorfact.org/kb/kb-2026-00287>
+  schema:citation <https://doi.org/10.1145/acmcs.2025.node> .

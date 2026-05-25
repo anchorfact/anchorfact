@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/video-understanding",
+  "headline": "Video Understanding: Action Recognition, Temporal Action Detection, and Video-Language Models",
+  "description": "Video understanding teaches AI to comprehend what happens in video -- recognizing actions (jumping, cooking, playing guitar), detecting when actions start and end, and answering natural language questions about video content. From surveillance and sports analytics to robot learning and content moderation, action recognition is the visual backbone of temporal AI.",
+  "dateCreated": "2026-05-24T18:00:03.545Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "About Time: Advances, Challenges, and Outlooks of Action Understanding",
+      "sameAs": "https://link.springer.com/article/10.1007/s11263-025-02478-4"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Action recognition: A comprehensive survey of tasks, methods, and datasets",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S2405959525001869"
+    }
+  ]
+}

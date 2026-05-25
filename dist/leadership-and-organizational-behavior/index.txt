@@ -1,0 +1,18 @@
+# Leadership Theory and Organizational Behavior
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Leadership is not innate — it's a set of learnable behaviors. Modern leadership theory has shifted from trait-based models to behavioral, situational, and transformational approaches.
+
+## Core Explanation
+Leadership theory evolution: trait theories (1940s)→behavioral theories (1950s)→contingency theories (1960s-70s)→transformational leadership (1980s)→authentic/ethical/servant leadership (2000s).
+
+## Detailed Analysis
+Psychological safety was identified by Google's Project Aristotle as the #1 predictor of team performance. Intrinsic motivation (autonomy, mastery, purpose) outperforms extrinsic rewards for complex cognitive work.
+
+## Further Reading
+- Harvard Business Review: Leadership
+- Center for Creative Leadership
+- Academy of Management Journal

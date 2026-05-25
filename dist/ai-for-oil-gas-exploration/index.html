@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AI for Oil and Gas Exploration: Seismic Interpretation, Reservoir Characterization, and Subsurface Intelligence — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Finding oil and gas reservoirs kilometers beneath the Earth's surface involves interpreting massive 3D seismic datasets -- a task AI is revolutionizing. Deep learning models now automatically map underground faults, track rock layers across basins, and predict reservoir properties with accuracy rivaling expert geologists, compressing months of manual work into hours of computation.<br>
+<br>
+## Core Explanation<br>
+The exploration workflow: (1) Seismic acquisition -- sound waves are sent into the ground; reflections from subsurface rock layers are recorded by geophones, producing terabyte-scale 3D seismic volumes; (2) Seismic interpretation -- geoscientists manually trace geological horizons (layer boundaries) and faults (fractures) on 2D slices. A single survey can take 6-12 months to interpret; (3) Reservoir characterization -- estimating rock properties (porosity, permeability, fluid saturation) from seismic attributes and well logs; (4) Drilling decisions -- selecting drilling locations based on the interpretation.<br>
+<br>
+## Detailed Analysis<br>
+AI transforms each stage: (1) Automated fault detection -- 3D CNNs (U-Net variants, 3D ResNet) trained on manually labeled fault cubes detect faults in hours vs. months, learning characteristic seismic signatures of faults; (2) Horizon tracking -- recurrent and attention-based architectures propagate horizon picks through 3D volumes, tracking continuous geological surfaces even across faulted regions; (3) Seismic facies classification -- semantic segmentation groups similar seismic reflection patterns into geological facies (channel systems, carbonate reefs, shale formations), enabling rapid reservoir zone identification; (4) Reservoir property prediction -- integrating seismic attributes with sparse well log data to predict 3D property volumes using geostatistical neural networks. The Nature 2025 self-supervised approach represents a paradigm shift: pre-training on unlabeled seismic data (abundant) enables models to learn general subsurface representations requiring far fewer labeled examples for specific tasks. Physics-informed neural networks (PINNs) incorporate geophysical constraints (wave equation, Darcy's law) into the training objective. The technology is cross-applicable to CO₂ storage monitoring, geothermal reservoir characterization, and groundwater management.<br>
+<br>
+## Further Reading<br>
+- SEG (Society of Exploration Geophysicists) Machine Learning GitHub<br>
+- Schlumberger DELFI / Halliburton DS365: AI-driven subsurface platforms<br>
+- Stanford Center for Earth Resources Forecasting (SCERF)<br>
+</article></body>
+</html>

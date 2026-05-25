@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/cognitive-architectures>
+  a schema:article ;
+  schema:headline "Cognitive Architectures: ACT-R, Soar, and Computational Models of Human-Like Reasoning" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/cognitive-architectures>
+  schema:citation <https://act-r.psy.cmu.edu/> .
+
+<https://anchorfact.org/kb/cognitive-architectures>
+  schema:citation <https://arxiv.org/abs/2508.20674> .

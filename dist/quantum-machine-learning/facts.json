@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-quantum-machine-learning-1",
+    "text": "Machine learning for quantum error mitigation (Nature, 2024) demonstrated that classical ML models can extend the practical reach of noisy quantum computers — reducing error mitigation overhead on 100-qubit experiments, a critical enabler for near-term quantum advantage.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.nature.com/articles/s42256-024-00927-2"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-quantum-machine-learning-2",
+    "text": "Tensor networks — originally developed for quantum many-body physics — serve as efficient ML parameterizations: matrix product states (MPS) for 1D, projected entangled pair states (PEPS) for 2D data. They naturally handle exponential-dimension spaces while maintaining polynomial trainable parameters.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1098/rspa.2023.0218"
+    }
+  }
+]

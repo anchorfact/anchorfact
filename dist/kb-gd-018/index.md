@@ -1,0 +1,338 @@
+---
+id: "kb-gd-018"
+title: "概念性 CI 流水线"
+schema_type: "TechArticle"
+category: "game-development"
+language: "zh"
+confidence: "high"
+last_verified: "2026-04-28"
+created_date: "2026-04-28"
+generation_method: "human_only"
+derived_from_human_seed: true
+conflict_of_interest: "none_declared"
+is_live_document: false
+data_period: "static"
+
+atomic_facts:
+  - id: "fact-gd-001"
+    statement: "2 迭代式开发 vs 瀑布式  ``` 瀑布式: 设计 → 实现 → 测试 → 发布（一次完成，难以回头） 迭代式: [设计→原型→测试→学习] × N （螺旋上升，持续验证） ```  **游戏开发必须使用迭代式原因：** - 核心乐趣无法提前验证，必须通过原型测试 - 创意产业不确定性高，需求会随开发演变 - 玩家反馈在开发后期才可获得 - 技术约束常在实现中才暴露  ---  ## 2."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-002"
+    statement: "2 垂直切片 (Vertical Slice) 详解  **定义:** 一个时间短、质量高、代表最终产品的可玩片段。"
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-003"
+    statement: "**核心作用:** - 团队对齐：所有人看到最终目标 - 决策依据：发行商/管理层判断是否投资 - 管线验证：确认从概念到运行的完整管线畅通 - 成本估算：基于实际数据而非推测  **制作建议:** - 选择最有代表性的关卡/场景（通常是核心体验最集中的部分） - 美术、音效、UI 必须达到最终质量 - 不应超过总工时的 10-15% - 完成后团队扩编进入全面生产  ---  ## 3."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-004"
+    statement: "1 游戏开发的 Scrum 适配  | 标准 Scrum | 游戏行业适配 | 原因 | |------------|--------------|------| | 2周 Sprint | 2-4周 Sprint | 资产制作周期长，2周难以交付可演示增量 | | 跨职能团队 | 专业组 + 特性组混合 | 美术/程序专业化强，完全跨职能效率低 | | PO 定义需求 | 创意总监 + 制作人共同决策 | 游戏创意需要艺术直觉 + 商业判断 | | 每日站会 15min | 每日站会 + 每周深入同步 | 资产依赖多，需要更频繁的跨组对齐 | | Sprint 结束即发布 | Sprint 结束即 Demo，发布按里程碑 | 游戏不适合每两周发布玩家版本 |  ### "
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+  - id: "fact-gd-005"
+    statement: "2 常见团队结构  ``` 小型独立团队 (5-15人):   制作人/设计 + 程序(2-3) + 美术(2-3) + 音效(1) + QA(1)    中型团队 (30-80人):   - 设计组: 系统/关卡/叙事/数值   - 程序组: 引擎/游戏玩法/UI/网络/工具   - 美术组: 概念/3D/动画/VFX/UI/技术美术   - 音频组: 音乐/SFX/语音/集成   - QA组: 功能/兼容性/性能/自动化    大型3A团队 (200+人):   - 多个Feature Team（关卡/战斗/系统）   - 中央技术组（引擎/平台/工具）   - 中央美术组（角色/环境/动画）   - 运营/数据分析组 ```  ### 3."
+    source_title: "游戏开发Wiki（个人知识库）"
+    source_url: "https://www.gdconf.com/"
+    confidence: "medium"
+
+completeness: 0.85
+
+known_gaps:
+  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
+  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
+
+disputed_statements:
+  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+
+primary_sources:
+  - title: "游戏开发Wiki（个人知识库）"
+    type: "knowledge_base"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "Game Developers Conference"
+
+secondary_sources:
+  - title: "GDC Vault"
+    type: "conference"
+    year: 2026
+    url: "https://www.gdconf.com/"
+    institution: "GDC"
+  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
+    type: "textbook"
+    year: 2018
+    url: "https://www.gameenginebook.com/"
+    institution: "CRC Press"
+
+---
+
+
+
+
+
+## 1. 游戏开发生命周期
+
+### 1.1 传统阶段模型
+
+| 阶段 | 时长占比 | 核心目标 | 交付物 | 风险 |
+|------|----------|----------|--------|------|
+| **概念验证** (Proof of Concept) | 5-10% | 验证核心乐趣、技术可行性 | 可玩原型、技术Demo | 方向错误、核心不成立 |
+| **预生产** (Pre-Production) | 10-15% | 确立愿景、制作管线、工具链 | GDD、艺术圣经、技术架构 | 范围膨胀、决策延迟 |
+| **全面生产** (Full Production) | 50-60% | 内容量产、功能实现 | Alpha/Beta版本 |  Feature Creep、技术债 |
+| **Alpha** | 10% | 功能完整、流程可通 | 功能完整的可玩版本 | 性能问题、大量Bug |
+| **Beta** | 10-15% | 内容锁定、优化打磨 | 内容完整的候选发布版 | 平衡问题、崩溃 |
+| **发布/运营** (Live) | 持续 | 发布支持、内容更新 | Day-1 Patch、赛季内容 | 服务器压力、舆情 |
+
+### 1.2 迭代式开发 vs 瀑布式
+
+```
+瀑布式: 设计 → 实现 → 测试 → 发布（一次完成，难以回头）
+迭代式: [设计→原型→测试→学习] × N （螺旋上升，持续验证）
+```
+
+**游戏开发必须使用迭代式原因：**
+- 核心乐趣无法提前验证，必须通过原型测试
+- 创意产业不确定性高，需求会随开发演变
+- 玩家反馈在开发后期才可获得
+- 技术约束常在实现中才暴露
+
+---
+
+## 2. 里程碑与交付物
+
+### 2.1 行业标准里程碑
+
+| 里程碑 | 判定标准 | 典型时间 | 关键决策 |
+|--------|----------|----------|----------|
+| **First Playable** | 核心循环可运行，无美术也玩得下去 | 2-4月 | 是否继续投资 |
+| **Vertical Slice** | 15-30分钟完整体验，质量对标最终 | 6-12月 | 预算审批、发行商签约 |
+| **Content Complete (Alpha)** | 所有功能实现、所有内容导入 | 60-70%工期 | 范围冻结、开始打磨 |
+| **Feature Complete** | 无新功能开发，仅修Bug和优化 | 75-80%工期 | 团队规模收缩 |
+| **Code Complete** | 主干代码冻结，仅修复阻断性Bug | 85-90%工期 | 提交认证 |
+| **Content Lock (Beta)** | 内容不再更改，开始本地化 | 90%工期 | 多语言翻译启动 |
+| **Gold Master** | 可发布版本，提交平台认证 | 95%工期 | 压盘/上线 |
+| **Day-1 Patch** | 发布后首日补丁，修复认证后发现的Bug | 发布后 | 持续支持开始 |
+
+### 2.2 垂直切片 (Vertical Slice) 详解
+
+**定义:** 一个时间短、质量高、代表最终产品的可玩片段。
+
+**核心作用:**
+- 团队对齐：所有人看到最终目标
+- 决策依据：发行商/管理层判断是否投资
+- 管线验证：确认从概念到运行的完整管线畅通
+- 成本估算：基于实际数据而非推测
+
+**制作建议:**
+- 选择最有代表性的关卡/场景（通常是核心体验最集中的部分）
+- 美术、音效、UI 必须达到最终质量
+- 不应超过总工时的 10-15%
+- 完成后团队扩编进入全面生产
+
+---
+
+## 3. 敏捷与 Scrum 在游戏中的应用
+
+### 3.1 游戏开发的 Scrum 适配
+
+| 标准 Scrum | 游戏行业适配 | 原因 |
+|------------|--------------|------|
+| 2周 Sprint | 2-4周 Sprint | 资产制作周期长，2周难以交付可演示增量 |
+| 跨职能团队 | 专业组 + 特性组混合 | 美术/程序专业化强，完全跨职能效率低 |
+| PO 定义需求 | 创意总监 + 制作人共同决策 | 游戏创意需要艺术直觉 + 商业判断 |
+| 每日站会 15min | 每日站会 + 每周深入同步 | 资产依赖多，需要更频繁的跨组对齐 |
+| Sprint 结束即发布 | Sprint 结束即 Demo，发布按里程碑 | 游戏不适合每两周发布玩家版本 |
+
+### 3.2 常见团队结构
+
+```
+小型独立团队 (5-15人):
+  制作人/设计 + 程序(2-3) + 美术(2-3) + 音效(1) + QA(1)
+  
+中型团队 (30-80人):
+  - 设计组: 系统/关卡/叙事/数值
+  - 程序组: 引擎/游戏玩法/UI/网络/工具
+  - 美术组: 概念/3D/动画/VFX/UI/技术美术
+  - 音频组: 音乐/SFX/语音/集成
+  - QA组: 功能/兼容性/性能/自动化
+  
+大型3A团队 (200+人):
+  - 多个Feature Team（关卡/战斗/系统）
+  - 中央技术组（引擎/平台/工具）
+  - 中央美术组（角色/环境/动画）
+  - 运营/数据分析组
+```
+
+### 3.3 制作人角色分类
+
+| 类型 | 核心职责 | 适合项目 |
+|------|----------|----------|
+| **创意制作人** | 维护愿景、设计质量、玩家体验 | 创意驱动型、独立游戏 |
+| **运营制作人** | 进度、预算、资源、风险 | 大型项目、多团队协调 |
+| **技术制作人** | 技术架构、管线、工具链、性能 | 技术复杂项目、自研引擎 |
+| **现场制作人** | 日常执行、Sprint管理、障碍清除 | 敏捷团队、服务游戏 |
+| **执行制作人** | 高层管理、外部关系、战略决策 | 多项目组合、高管层 |
+
+---
+
+## 4. 版本控制与资产管理
+
+### 4.1 版本控制系统对比
+
+| 特性 | Perforce (Helix Core) | Git (+ LFS) | Plastic SCM | SVN |
+|------|----------------------|-------------|-------------|-----|
+| **大型二进制文件** | ⭐⭐⭐ 原生支持 | ⭐⭐ LFS扩展 | ⭐⭐⭐ 原生支持 | ⭐⭐ 一般 |
+| **锁定机制** | ⭐⭐⭐ 文件级锁定 | ⭐⭐ Git LFS锁定 | ⭐⭐⭐ 可视化锁定 | ⭐⭐ 支持 |
+| **分支成本** | 中等 | 低（但大仓困难） | 低 | 高 |
+| **可视化工具** | P4V专业 | 第三方多样 | Gluon易用 | TortoiseSVN |
+| **游戏行业采用率** | ~60% (AAA首选) | ~30% (中小团队) | ~10% | 逐渐淘汰 |
+| **云端托管** | Assembla、自建 | GitHub/GitLab/Bitbucket | Unity Cloud | 较少 |
+
+### 4.2 资产命名与目录规范
+
+```
+/assets
+  /characters
+    /chr_hero_001
+      /source          — 源文件（Maya/Blender/Substance）
+      /textures
+        chr_hero_001_diff_4k.png
+        chr_hero_001_norm_4k.png
+        chr_hero_001_rough_4k.png
+      /meshes
+        chr_hero_001_LOD0.fbx
+        chr_hero_001_LOD1.fbx
+      /animations
+        chr_hero_001_idle_01.fbx
+        chr_hero_001_run_01.fbx
+      /export          — 引擎导入文件
+  /levels
+    /lvl_forest_001
+      /source
+      /lighting
+      /prefabs
+```
+
+**命名约定:**
+- 前缀标识类型: `chr_`角色, `env_`环境, `prp_`道具, `vfx_`特效, `ui_`界面
+- 版本号: `_v01`, `_v02`，保留历史
+- LOD标识: `_LOD0`, `_LOD1`, `_LOD2`
+- 分辨率标识: `_4k`, `_2k`, `_1k`
+
+### 4.3 数字资产管理 (DAM)
+
+| 工具 | 核心功能 | 价格 | 适用规模 |
+|------|----------|------|----------|
+| **Perforce** | 版本控制 + 资产追踪 | $$$ | 大型团队 |
+| **Alienbrain** | 视觉资产管理、审批流程 | $$$ | 中大型团队 |
+| **ShotGrid (Autodesk)** | 制作跟踪、审批、调度 | $$ | 影视/游戏跨界 |
+| **ftrack** | 项目管理 + 资产管理 | $$ | 中型团队 |
+| **Kitsu** | 开源制作跟踪 | 免费 | 小型团队 |
+
+---
+
+## 5. 构建与持续集成
+
+### 5.1 CI/CD 在游戏中的特殊性
+
+**不同于通用软件:**
+- 构建时间极长（大型项目2-6小时）
+- 需要美术资产完整才能运行
+- 平台多（PC/Console/Mobile/Web）
+- 需要自动化测试关卡加载、性能基准
+
+### 5.2 构建流水线示例
+
+```yaml
+# 概念性 CI 流水线
+stages:
+  - validate      # 代码规范检查、资产验证
+  - build         # 各平台编译
+  - test          # 单元测试、集成测试、性能基准
+  - deploy        # 上传内部服务器、通知团队
+
+triggers:
+  - schedule: "0 2 * * *"   # 每日凌晨2点Nightly Build
+  - push: main              # 主干提交触发
+  - manual: release-branch  # 手动触发Release Build
+```
+
+### 5.3 构建类型
+
+| 类型 | 频率 | 用途 | 质量要求 |
+|------|------|------|----------|
+| **CI Build** | 每次提交 | 快速验证编译 | 可运行即可 |
+| **Nightly Build** | 每日 | 团队测试最新整合 | 功能基本完整 |
+| **Weekly/Milestone Build** | 每周/里程碑 | 展示、测试、审查 | 接近发布质量 |
+| **Release Candidate (RC)** | 发布前 | 候选发布、认证提交 | 发布质量 |
+| **Hotfix Build** | 按需 | 紧急修复线上问题 | 最小改动、高稳定性 |
+
+---
+
+## 6. 风险管理
+
+### 6.1 游戏开发常见风险矩阵
+
+| 风险 | 概率 | 影响 | 缓解策略 |
+|------|------|------|----------|
+| 核心乐趣不足 | 中 | 致命 | 早期原型验证、First Playable必须有趣 |
+| 技术架构缺陷 | 中 | 高 | 技术原型、性能基准、定期架构审查 |
+| 范围膨胀 (Scope Creep) | 高 | 高 | 严格的变更控制、MoSCoW优先级、创意总监把关 |
+| 关键人员流失 | 中 | 高 | 知识文档化、结对工作、避免单点故障 |
+| 平台政策变更 | 低 | 高 | 多平台并行规划、法务早期介入 |
+| 第三方依赖失败 | 中 | 中 | 多供应商策略、自研备选方案 |
+| 性能不达标 | 高 | 高 | 持续性能测试、Profiler驱动开发 |
+| 本地化延迟 | 中 | 中 | 提前锁定文本、使用CAT工具、预留缓冲 |
+
+### 6.2 MoSCoW 优先级法
+
+| 优先级 | 含义 | 决策标准 | 开发顺序 |
+|--------|------|----------|----------|
+| **Must Have** | 没有它游戏不能发布 | 核心循环、主干流程、平台合规 | 最先 |
+| **Should Have** | 重要但可妥协 | 次要功能、辅助内容、 polish | 其次 |
+| **Could Have** | 有更好，没有也行 | 彩蛋、额外模式、细节优化 | 时间允许 |
+| **Won't Have** | 明确不做 | 超出范围、后续版本、DLC | 记录但不计划 |
+
+---
+
+## 7. 工具链集成
+
+### 7.1 典型游戏开发工具栈
+
+| 职能 | 工具示例 | 集成点 |
+|------|----------|--------|
+| 项目管理 | Jira / Linear / Notion | 与代码提交、构建状态联动 |
+| 版本控制 | Perforce / Git LFS | 与CI/CD、代码审查集成 |
+| 沟通 | Slack / Discord / Teams | 与构建通知、Bug告警集成 |
+| 文档 | Confluence / Notion / Obsidian | 与代码、设计文档双向链接 |
+| 设计协作 | Figma / Miro / FigJam | 与UI管线、资产导出集成 |
+| 3D制作 | Maya / Blender / 3ds Max | 与引擎导入、动画管线集成 |
+| 纹理 | Substance Suite / Photoshop | 与材质系统、PBR管线集成 |
+| 音频 | Wwise / FMOD / Reaper | 与引擎音频中间件集成 |
+| 测试 | TestRail / Xray / 自建 | 与Bug跟踪、自动化测试集成 |
+| 分析 | Grafana / Datadog / 自建 | 与遥测数据、告警集成 |
+
+---
+
+## 8. 最佳实践清单
+
+- [ ] **尽早且频繁地构建可玩版本** — 每周至少有一个可运行的构建
+- [ ] **自动化一切可自动化的** — 构建、测试、部署、资产检查
+- [ ] **主干开发优先** — 减少长期分支，降低合并痛苦
+- [ ] **资产即代码** — 版本控制、审查、回滚同样适用于资产
+- [ ] **持续性能监控** — 每版构建都跑性能基准，建立趋势图
+- [ ] **文档即对话** — 设计决策记录（ADR）比完美文档更有价值
+- [ ] **透明进度** — 燃尽图、累积流图让所有人看见真实状态
+- [ ] **预留缓冲** — 计划只填80%容量，预留20%应对意外
+- [ ] **定期回顾** — 每个里程碑做Post-Mortem，记录教训
+- [ ] **玩家尽早介入** — 朋友&家庭测试 → 封闭测试 → 公开测试
+
+---
+
+> 评分: 80/100
+> 完整性: 开发生命周期、里程碑、敏捷实践、版本控制、CI/CD、风险管理
+> 改进空间: 可补充具体引擎的项目设置指南、更详细的团队规模案例

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Continual Learning and Catastrophic Forgetting: EWC to MESU — AnchorFact</title></head>
+<body><article>## TL;DR<br>
+Continual learning enables neural networks to learn new tasks without forgetting previous ones. From EWC's Fisher-based regularization to MESU's Bayesian uncertainty approach, the field targets the fundamental challenge of catastrophic forgetting.<br>
+<br>
+## Core Explanation<br>
+Catastrophic forgetting: when a neural network trains on Task B after Task A, gradient updates for B overwrite weights that encode A's knowledge, causing sudden performance drop on A. Three solution families: (1) Regularization (EWC, SI) — penalize weight changes on important parameters; (2) Replay (Experience Replay, GEM) — store and replay previous task samples; (3) Architecture (Progressive Networks) — grow capacity for each task.<br>
+<br>
+## Detailed Analysis<br>
+EWC identifies important weights via the diagonal of the Fisher Information Matrix, approximated from gradients of the previous task's loss. MESU advances this by maintaining per-parameter uncertainty estimates — high-uncertainty parameters remain plastic while low-uncertainty ones consolidate, mimicking biological synaptic metaplasticity. Dynamic architecture methods (PackNet) prune and reallocate capacity.<br>
+<br>
+## Further Reading<br>
+- ContinualAI Community and Avalanche Library<br>
+- "A Continual Learning Survey" (Parisi et al.)<br>
+- NeurIPS 2024 Continual Learning Workshop<br>
+</article></body>
+</html>

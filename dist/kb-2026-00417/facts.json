@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-01",
+    "text": "Bedroom temperature: 18-20°C optimal",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-001",
+    "text": "Sleep hygiene encompasses habits promoting consistent, quality sleep. Key practices: consistent sleep/wake times, cool dark quiet room, no screens 1hr before bed, avoid caffeine after 2pm, exercise during day, wind-down routine. Poor sleep hygiene = poor sleep = poor health. Adults: 7-9 hours.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-health-002",
+    "text": "20-3-8 rule: no caffeine after 2pm, no alcohol within 3 hours of bed, no exercise within 8 hours.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325"
+    }
+  }
+]

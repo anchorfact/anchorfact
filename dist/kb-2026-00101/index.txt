@@ -1,0 +1,21 @@
+# Clipboard API
+Confidence: high
+Last verified: 2026-05-22
+Generation: human_only
+
+
+
+
+
+## TL;DR
+
+The Clipboard API (`navigator.clipboard`) provides asynchronous read/write access to the system clipboard from web pages. It replaces `document.execCommand('copy')` with a Promise-based, secure (requires Permissions API) approach supporting text, HTML, images (PNG/SVG), and custom formats.
+
+## Core Explanation
+
+`navigator.clipboard.writeText('text')` and `readText()` for plain text. `write()` and `read()` for ClipboardItem objects with multiple MIME types. Clipboard access must be triggered by user gesture (click, keypress). The Permissions API controls read access: `navigator.permissions.query({ name: 'clipboard-read' })`.
+
+## Further Reading
+
+- [Clipboard API and Events (W3C)](https://www.w3.org/TR/clipboard-apis/)
+

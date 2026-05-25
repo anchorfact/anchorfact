@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/self-supervised-learning>
+  a schema:TechArticle ;
+  schema:headline "Self-Supervised Learning: Learning Without Labels" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/self-supervised-learning>
+  schema:citation <https://arxiv.org/abs/2002.05709> .
+
+<https://anchorfact.org/kb/self-supervised-learning>
+  schema:citation <https://arxiv.org/abs/1810.04805> .

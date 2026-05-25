@@ -1,0 +1,11 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-gd-003>
+  a schema:TechArticle ;
+  schema:headline "AI 对话系统 Prompt 工程指南" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-gd-003>
+  schema:citation <https://www.gdconf.com/> .

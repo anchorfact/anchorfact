@@ -1,0 +1,46 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "Browser support: Chrome 113+, Edge 113+, Firefox Nightly, Safari Technology Preview",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/webgpu/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "WebGPU is the next-generation graphics and compute API for the web, succeeding WebGL. Based on modern GPU APIs (Vulkan, Metal, Direct3D 12), it provides lower-level access for better performance, compute shaders, and explicit resource management.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/webgpu/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "It introduces: compute shaders (GPU parallel computation beyond graphics), bind groups (explicit resource binding), render bundles (pre-recorded command lists), and WGSL shading language (replacing GLSL).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/webgpu/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-003",
+    "text": "Browser support: Chrome 113+, Edge 113+, Firefox Nightly, Safari Technology Preview.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.w3.org/TR/webgpu/"
+    }
+  }
+]

@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00330>
+  a schema:TechArticle ;
+  schema:headline "Ming Dynasty" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00330>
+  schema:citation <https://yalebooks.yale.edu/book/9780300028843/1587-a-year-of-no-significance/> .
+
+<https://anchorfact.org/kb/kb-2026-00330>
+  schema:citation <https://www.hup.harvard.edu/ming/> .
+
+<https://anchorfact.org/kb/kb-2026-00330>
+  schema:citation <https://www.britishmuseum.org/research/publications/> .

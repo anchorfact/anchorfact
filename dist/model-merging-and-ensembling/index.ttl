@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/model-merging-and-ensembling>
+  a schema:TechArticle ;
+  schema:headline "Model Merging, Mixture of Experts, and Efficient Ensembling" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/model-merging-and-ensembling>
+  schema:citation <https://arxiv.org/abs/2203.05482> .
+
+<https://anchorfact.org/kb/model-merging-and-ensembling>
+  schema:citation <https://arxiv.org/abs/2412.19437> .

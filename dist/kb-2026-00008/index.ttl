@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00008>
+  a schema:TechArticle ;
+  schema:headline "Hypertext Transfer Protocol (HTTP)" ;
+  af:confidence "high" ;
+  af:generationMethod "human_only" .
+
+<https://anchorfact.org/kb/kb-2026-00008>
+  schema:citation <https://www.rfc-editor.org/rfc/rfc9110> .
+
+<https://anchorfact.org/kb/kb-2026-00008>
+  schema:citation <https://www.rfc-editor.org/rfc/rfc9112> .
+
+<https://anchorfact.org/kb/kb-2026-00008>
+  schema:citation <https://www.rfc-editor.org/rfc/rfc9113> .
+
+<https://anchorfact.org/kb/kb-2026-00008>
+  schema:citation <https://www.rfc-editor.org/rfc/rfc9114> .

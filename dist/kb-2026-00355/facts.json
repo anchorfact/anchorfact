@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-001",
+    "text": "The Age of Exploration (15th-17th centuries) was driven by European powers seeking new trade routes to Asia, bypassing Ottoman-controlled land routes. Technological enablers: caravel ships, improved navigation (astrolabe, compass), cartography. Consequences: Columbian Exchange (global transfer of crops, animals, diseases), colonization, globalizati",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.harpercollins.com/products/over-the-edge-of-the-world-laurence-bergreen"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-002",
+    "text": "Key voyages: Columbus (1492, reached Americas thinking it was Asia), Vasco da Gama (1498, reached India around Africa), Magellan/Elcano (1519-22, first circumnavigation).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.harpercollins.com/products/over-the-edge-of-the-world-laurence-bergreen"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-003",
+    "text": "Portuguese and Spanish empires divided by Treaty of Tordesillas (1494).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.harpercollins.com/products/over-the-edge-of-the-world-laurence-bergreen"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-004",
+    "text": "Columbian Exchange: potatoes, tomatoes, maize to Europe; wheat, horses, smallpox to Americas.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.harpercollins.com/products/over-the-edge-of-the-world-laurence-bergreen"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-history-005",
+    "text": "Devastating impact on indigenous populations (90% decline in some areas).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.harpercollins.com/products/over-the-edge-of-the-world-laurence-bergreen"
+    }
+  }
+]

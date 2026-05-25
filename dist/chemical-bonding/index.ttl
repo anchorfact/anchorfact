@@ -1,0 +1,20 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/chemical-bonding>
+  a schema:Article ;
+  schema:headline "Chemical Bonding: From Orbitals to Molecular Structure" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/chemical-bonding>
+  schema:citation <https://www.pearson.com/en-us/subject-catalog/p/chemistry-the-central-science/P200000007065> .
+
+<https://anchorfact.org/kb/chemical-bonding>
+  schema:citation <https://iupac.org/what-we-do/periodic-table-of-elements/> .
+
+<https://anchorfact.org/kb/chemical-bonding>
+  schema:citation <https://global.oup.com/chemical-bonding/> .
+
+<https://anchorfact.org/kb/chemical-bonding>
+  schema:citation <https://www.cornellpress.cornell.edu/chemical-bond/> .

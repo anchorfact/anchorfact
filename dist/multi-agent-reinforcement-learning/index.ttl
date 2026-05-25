@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/multi-agent-reinforcement-learning>
+  a schema:article ;
+  schema:headline "Multi-Agent Reinforcement Learning: Cooperation, Competition, and Emergent Strategies" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/multi-agent-reinforcement-learning>
+  schema:citation <https://www.nature.com/articles/s41467-025-67178-6> .
+
+<https://anchorfact.org/kb/multi-agent-reinforcement-learning>
+  schema:citation <https://arxiv.org/abs/2503.13415> .

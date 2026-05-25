@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "article",
+  "@id": "https://anchorfact.org/kb/ai-digital-forensics",
+  "headline": "AI for Digital Forensics: Deepfake Provenance, Evidence Authentication, and Digital Crime Investigation",
+  "description": "AI-powered digital forensics detects manipulated media -- from deepfakes to doctored images. The forensic AI arms race pits generation against detection, with cryptographic provenance (C2PA) providing a proactive solution: cameras sign images at capture, creating verifiable chains of custody from sensor to screen.",
+  "dateCreated": "2026-05-24T18:00:02.862Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "AI for Multimedia Forensics: Deepfake Detection, Provenance Analysis, and Evidence Authentication (IEEE Signal Processing, 2024)",
+      "sameAs": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=79"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "C2PA Content Credentials 2.1: Cryptographic Provenance for Digital Media",
+      "sameAs": "https://c2pa.org/specifications/"
+    }
+  ]
+}

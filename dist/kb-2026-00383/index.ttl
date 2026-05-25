@@ -1,0 +1,23 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00383>
+  a schema:TechArticle ;
+  schema:headline "Critical Thinking" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00383>
+  schema:citation <https://us.macmillan.com/books/9780374533557/thinkingfastandslow> .
+
+<https://anchorfact.org/kb/kb-2026-00383>
+  schema:citation <https://www.penguinrandomhouse.com/think-again/> .
+
+<https://anchorfact.org/kb/kb-2026-00383>
+  schema:citation <https://www.mheducation.com/critical-thinking/> .
+
+<https://anchorfact.org/kb/kb-2026-00383>
+  schema:citation <https://www.penguinrandomhouse.com/think-again/> .
+
+<https://anchorfact.org/kb/kb-2026-00383>
+  schema:citation <https://www.mheducation.com/critical-thinking/> .

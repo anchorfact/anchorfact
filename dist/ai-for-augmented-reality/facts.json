@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-augmented-reality-1",
+    "text": "Apple Vision Pro (2024) and Meta Quest 3 (2023) represent the state-of-the-art in AI-powered spatial computing: computer vision for real-time 3D scene understanding (identifying surfaces, objects, and people), hand and eye tracking for natural interaction, and AI rendering (foveated rendering tracking gaze to allocate compute where the user is looking). Vision Pro's R1 chip processes 12 cameras, 5 sensors, and 6 microphones with 12ms photon-to-photon latency.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://doi.org/10.1145/3613904.3642568"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-augmented-reality-2",
+    "text": "AR AI applications (2024-2026): scene understanding enables persistent AR (remembering object locations across sessions) and occlusion (virtual objects hidden behind real ones). LLMs provide contextual information about recognized objects (\"this building was built in 1892\"). AI translation overlays foreign text in real-time (Google Lens, Apple Translate). AI navigation overlays arrows on the real world. Industrial AR assists technicians with overlaid assembly instructions.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://developers.google.com/ar"
+    }
+  }
+]

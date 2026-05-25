@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/ai-public-health>
+  a schema:article ;
+  schema:headline "AI for Public Health: Disease Surveillance, Outbreak Prediction, and Population Health Analytics" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/ai-public-health>
+  schema:citation <https://arxiv.org/search/?query=disease+surveillance+AI+outbreak+prediction> .
+
+<https://anchorfact.org/kb/ai-public-health>
+  schema:citation <https://arxiv.org/search/?query=population+health+machine+learning> .

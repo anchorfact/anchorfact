@@ -1,0 +1,30 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-01",
+    "text": "Vite is a next-generation frontend build tool that leverages native ES modules for instant dev server startup and HMR"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "Vite (Evan You, 2020) is a next-generation frontend build tool that leverages native ES modules for instant dev server startup and HMR. Uses esbuild for pre-bundling (10-100x faster than Webpack) and Rollup for production builds.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://vitejs.dev/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "Dev server: serves source files natively via ESM, no bundling needed — HMR in <1ms.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://vitejs.dev/"
+    }
+  }
+]

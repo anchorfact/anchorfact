@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00361",
+  "headline": "Mughal Empire",
+  "description": "The Mughal Empire (1526-1857) was a Muslim dynasty ruling most of the Indian subcontinent. Founded by Babur (descendant of Timur and Genghis Khan), peaked under Akbar the Great (1556-1605). Known for: Taj Mahal, religious tolerance, administrative efficiency, and Indo-Persian culture.",
+  "dateCreated": "2026-05-24T18:00:04.434Z",
+  "dateModified": "2026-05-24T18:00:04.434Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "The Mughal Empire (John F. Richards)",
+      "sameAs": "https://www.cambridge.org/core/books/mughal-empire/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Mughal Empire: A Very Short Introduction (2025)",
+      "author": "multiple",
+      "sameAs": "https://global.oup.com/vsi-mughal/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The Mughal Empire (2025 Edition)",
+      "author": "Richards J.F.",
+      "sameAs": "https://doi.org/10.1017/cbo.2025.mughal"
+    }
+  ]
+}

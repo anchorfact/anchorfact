@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/kb-2026-00366>
+  a schema:TechArticle ;
+  schema:headline "Genetics and Heredity" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/kb-2026-00366>
+  schema:citation <https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524> .
+
+<https://anchorfact.org/kb/kb-2026-00366>
+  schema:citation <https://www.macmillanlearning.com/genetics/> .
+
+<https://anchorfact.org/kb/kb-2026-00366>
+  schema:citation <https://www.simonandschuster.com/the-gene/> .

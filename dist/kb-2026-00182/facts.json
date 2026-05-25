@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-001",
+    "text": "TCP (Transmission Control Protocol) provides reliable, ordered, error-checked delivery — the 'guaranteed delivery' protocol. UDP (User Datagram Protocol) provides bare-bones, best-effort delivery — the 'fire and forget' protocol. TCP is for web pages, email, file transfers; UDP is for real-time (VoIP, gaming, streaming).",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-002",
+    "text": "UDP features: no connection establishment, no ordering guarantee, no retransmission, 8-byte header.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/fact-computer-science-003",
+    "text": "QUIC (HTTP/3) uses UDP to implement TCP-like reliability with better performance.",
+    "anchorfact:confidence": "medium",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://dl.acm.org/"
+    }
+  }
+]

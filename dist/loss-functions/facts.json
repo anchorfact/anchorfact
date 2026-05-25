@@ -1,0 +1,35 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f1",
+    "text": "Cross-entropy loss is the standard objective for classification, minimizing the negative log-likelihood of the true class. It provides strong gradient signals and is theoretically connected to maximum likelihood estimation.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.deeplearningbook.org/contents/mlp.html"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f2",
+    "text": "Focal Loss (Lin et al. 2017, ICCV) down-weights easy examples and focuses training on hard negatives, addressing extreme class imbalance in object detection. It was key to RetinaNet achieving state-of-the-art results.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/1708.02002"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/f3",
+    "text": "Contrastive loss (InfoNCE, Oord et al. 2018, DeepMind) maximizes mutual information between positive pairs while pushing away negatives. It is the foundation of SimCLR, CLIP, and most self-supervised learning methods.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://arxiv.org/abs/1807.03748"
+    }
+  }
+]

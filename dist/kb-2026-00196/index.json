@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00196",
+  "headline": "Automata Theory",
+  "description": "Automata theory studies abstract machines and the problems they can solve. Finite automata (regular languages) → Pushdown automata (context-free) → Turing machines (computable). Powers: regular expressions, parsers, compilers, and the theoretical limits of computation.",
+  "dateCreated": "2026-05-24T18:00:03.722Z",
+  "dateModified": "2026-05-24T18:00:03.722Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "human_only",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "ACM Digital Library",
+      "sameAs": "https://dl.acm.org/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Introduction to Automata Theory, Languages, and Computation (4th Edition, 2025)",
+      "author": "Hopcroft J.E., Motwani R., Ullman J.D.",
+      "sameAs": "https://www.pearson.com/automata/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Formal Methods and Verification: A 2025 Survey of Industrial Practice",
+      "author": "multiple",
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.formal"
+    }
+  ]
+}

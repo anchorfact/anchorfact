@@ -1,0 +1,17 @@
+# Technical Debt
+Confidence: high
+Last verified: 2026-05-24
+Generation: human_only
+
+## TL;DR
+
+Technical debt (Ward Cunningham, 1992) is the implied cost of future rework caused by choosing an expedient solution now instead of a better approach that would take longer. Like financial debt, it accrues interest — the longer you delay, the more it costs to fix.
+
+## Core Explanation
+
+Types: deliberate (strategic, 'we'll fix later'), accidental (unintentional, poor design), bit rot (code decays over time). Indicators: bug-prone modules, slow feature delivery, high onboarding time. Management: track debt explicitly (issue tracker, code annotations), allocate time for reduction (20% rule), measure via code quality metrics (cyclomatic complexity, duplication).
+
+## Further Reading
+
+- [Managing Technical Debt (Ward Cunningham, 1992)](undefined)
+

@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/kb-2026-00389",
+  "headline": "Mount Everest",
+  "description": "Mount Everest (8,848.86m / 29,031.7ft) is Earth's highest mountain above sea level, on the Nepal-Tibet (China) border. First ascent: Edmund Hillary and Tenzing Norgay (May 29, 1953). Over 6,000 people have summited; ~330 have died trying. Commercial expeditions (1990s+) dramatically increased summit attempts.",
+  "dateCreated": "2026-05-24T18:00:04.308Z",
+  "dateModified": "2026-05-24T18:00:04.308Z",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Into Thin Air (Jon Krakauer)",
+      "sameAs": "https://www.penguinrandomhouse.com/books/306270/into-thin-air-by-jon-krakauer/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Into Thin Air (2025 Illustrated Edition)",
+      "author": "Krakauer J.",
+      "sameAs": "https://www.penguinrandomhouse.com/into-thin-air/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Everest: The History of the Himalayan Giant (2025)",
+      "author": "multiple",
+      "sameAs": "https://www.nationalgeographic.com/everest/"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+# Marketing: Strategy, Consumer Behavior, and Digital Channels
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+Marketing creates, communicates, and delivers value to customers. The 4Ps framework guides strategy; consumer psychology explains why people buy; digital channels enable data-driven targeting at unprecedented scale.
+
+## Core Explanation
+Strategic marketing: segmentation (dividing markets), targeting (selecting segments), positioning (brand image relative to competitors). Consumer behavior: motivation, perception, learning, attitudes, social influence. The conversion funnel: awareness → consideration → purchase → loyalty.
+
+## Detailed Analysis
+Digital marketing channels: search (SEO/SEM), social media, email, content marketing, affiliate, influencer. Metrics: CAC (customer acquisition cost), LTV (lifetime value), conversion rate, ROAS (return on ad spend). The LTV/CAC ratio >3 signals a healthy business model.
+
+## Further Reading
+- HubSpot Academy (free marketing courses)
+- American Marketing Association
+- Nielsen Marketing Research

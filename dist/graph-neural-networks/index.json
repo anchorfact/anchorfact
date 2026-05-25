@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "https://anchorfact.org/kb/graph-neural-networks",
+  "headline": "Graph Neural Networks: Message Passing and Applications",
+  "description": "Graph Neural Networks extend deep learning to graph-structured data — molecules, social networks, knowledge graphs. Message passing enables nodes to learn from their local neighborhood, creating representations that capture both structure and features.",
+  "dateCreated": "2026-05-24T18:00:03.322Z",
+  "dateModified": "2026-05-24",
+  "author": {
+    "@type": "Organization",
+    "name": "AnchorFact"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AnchorFact",
+    "url": "https://anchorfact.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "anchorfact:confidence": "high",
+  "anchorfact:generationMethod": "ai_assisted",
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "name": "Semi-Supervised Classification with Graph Convolutional Networks (GCN)",
+      "sameAs": "https://arxiv.org/abs/1609.02907"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Graph Representation Learning (Hamilton)",
+      "sameAs": "https://www.cs.mcgill.ca/~wlh/grl_book/"
+    }
+  ]
+}

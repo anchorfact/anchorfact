@@ -1,0 +1,18 @@
+# The Scientific Revolution: From Copernicus to Newton
+Confidence: high
+Last verified: 2026-05-24
+Generation: ai_assisted
+
+## TL;DR
+The Scientific Revolution (1543-1687) replaced medieval Aristotelian cosmology with empirical observation and mathematical law. Copernicus, Galileo, Kepler, and Newton established the foundations of modern science.
+
+## Core Explanation
+Key figures: Copernicus (heliocentrism, 1543), Galileo (telescopic observation — Jupiter's moons, sunspots, 1610), Kepler (elliptical orbits, three laws of planetary motion, 1609-1619), Bacon (empirical method, inductive reasoning), Descartes (analytic geometry, mechanical philosophy), Newton (universal gravitation, calculus, 1687).
+
+## Detailed Analysis
+The transition from qualitative to quantitative: Galileo's inclined plane experiments measured acceleration with water clocks. Newton's Principia demonstrated that the same physical laws apply to Earth and heavens — the first unification in physics. The Royal Society (founded 1660) institutionalized empirical science.
+
+## Further Reading
+- Stanford Encyclopedia of Philosophy: Scientific Revolution
+- The Galileo Project (Rice University)
+- Cambridge History of Science Series

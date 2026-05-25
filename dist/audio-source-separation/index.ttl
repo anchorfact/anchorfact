@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/audio-source-separation>
+  a schema:article ;
+  schema:headline "Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/audio-source-separation>
+  schema:citation <https://github.com/facebookresearch/demucs> .
+
+<https://anchorfact.org/kb/audio-source-separation>
+  schema:citation <https://ieeexplore.ieee.org/document/8707065> .

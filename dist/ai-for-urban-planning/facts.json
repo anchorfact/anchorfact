@@ -1,0 +1,24 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-urban-planning-1",
+    "text": "ScienceDirect (March 2025) proposed the concept of \"Generative Spatial AI\" for sustainable smart cities — integrating generative AI, foundation models, and geospatial digital twins to autonomously generate urban designs, simulate population dynamics, and optimize land use — demonstrating that diffusion models trained on zoning codes and urban form data can generate diverse, code-compliant master plans in minutes, compared to months for human planners.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S2666498425000043"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Claim",
+    "@id": "https://anchorfact.org/fact/af-ai-for-urban-planning-2",
+    "text": "MDPI Smart Cities (October 2025) published a systematic literature review examining the integration of IoT, AI, and digital twins in smart cities — analyzing 200+ papers — finding that AI-driven urban digital twins reduce infrastructure maintenance costs by 20-30% through predictive analytics, enable 15-25% energy savings via AI-optimized building management, and improve emergency response times by 12-18% through real-time situational awareness.",
+    "anchorfact:confidence": "high",
+    "citation": {
+      "@type": "CreativeWork",
+      "sameAs": "https://www.mdpi.com/2624-6511/8/5/175"
+    }
+  }
+]

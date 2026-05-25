@@ -1,0 +1,17 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/shader-programming>
+  a schema:TechArticle ;
+  schema:headline "Shader Programming Fundamentals" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/shader-programming>
+  schema:citation <https://www.realtimerendering.com/> .
+
+<https://anchorfact.org/kb/shader-programming>
+  schema:citation <https://registry.khronos.org/OpenGL/specs/gl/GLSLangSpec.4.60.pdf> .
+
+<https://anchorfact.org/kb/shader-programming>
+  schema:citation <https://thebookofshaders.com/> .

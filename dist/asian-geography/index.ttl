@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/asian-geography>
+  a schema:TechArticle ;
+  schema:headline "Asian Geography" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/asian-geography>
+  schema:citation <https://www.nationalgeographic.com/books/atlas/> .
+
+<https://anchorfact.org/kb/asian-geography>
+  schema:citation <https://www.cia.gov/the-world-factbook/> .

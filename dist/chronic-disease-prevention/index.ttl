@@ -1,0 +1,14 @@
+@prefix schema: <https://schema.org/> .
+@prefix af: <https://anchorfact.org/ns#> .
+
+<https://anchorfact.org/kb/chronic-disease-prevention>
+  a schema:Article ;
+  schema:headline "Chronic Disease Prevention Strategies" ;
+  af:confidence "high" ;
+  af:generationMethod "ai_assisted" .
+
+<https://anchorfact.org/kb/chronic-disease-prevention>
+  schema:citation <https://www.mheducation.com/highered/product/preventive-medicine-public-health-wallace/M9781260143683.html> .
+
+<https://anchorfact.org/kb/chronic-disease-prevention>
+  schema:citation <https://www.who.int/publications/i/item/9789240061798> .
