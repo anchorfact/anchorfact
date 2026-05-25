@@ -112,3 +112,9 @@ Greek orders: Doric (simple), Ionic (scrolls), Corinthian (leaves). Gothic cathe
 ## Further Reading
 
 - [A Global History of Architecture (Ching, Jarzombek, Prakash)](https://www.wiley.com/en-us/A+Global+History+of+Architecture%2C+3rd+Edition-p-9781118981337)
+
+## Related Articles
+
+- [MLOps and LLMOps: Production AI Engineering, Observability, and Platform Architecture](../../ai/mlops-llmops.md)
+- [Neural Architecture Search: Automated Design of Deep Neural Networks](../../ai/neural-architecture-search.md)
+- [Transformer Architecture](../../ai/transformer.md)

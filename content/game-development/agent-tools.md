@@ -799,3 +799,9 @@ download_url = result["model_urls"]["glb"]
 - [ ] **测试驱动** — 让 AI 先写测试，再写实现
 - [ ] **代码审查** — 把 AI 当作初级程序员，所有代码需要审查
 - [ ] **文档同步** — 要求 AI 同步更新文档和注释
+
+## Related Articles
+
+- [Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning](../../ai/agentic-ai.md)
+- [AI Agent Frameworks: LangChain, AutoGen, and CrewAI](../../ai/ai-agent-frameworks.md)
+- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../../ai/ai-call-center.md)

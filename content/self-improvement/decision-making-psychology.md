@@ -155,3 +155,9 @@ Debiasing strategies: considering the opposite, premortem analysis, decision mat
 - Kahneman, Lovallo, Sibony: Before You Make That Big Decision (HBR)
 - Decision Science News
 - Center for Decision Research (Chicago Booth)
+
+## Related Articles
+
+- [AI Decision Support Systems: Clinical CDSS, Business Intelligence, and Augmented Decision-Making](../../ai/decision-support-systems.md)
+- [Decision Making](../decision-making.md)
+- [Deep Reinforcement Learning Algorithms: PPO, SAC, Dreamer, and Decision Transformer](../../ai/deep-reinforcement-learning-algorithms.md)

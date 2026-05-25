@@ -65,3 +65,9 @@ Goal setting: outcome goals (winning), performance goals (personal best), proces
 ## Further Reading
 
 - [APA Division 47: Sport Psychology](https://www.apadivisions.org/division-47)
+
+## Related Articles
+
+- [Extreme Sports: Risk, Reward, and Psychology](../extreme-sports-risk-reward-and-psychology.md)
+- [Sports Psychology: Mental Skills for Peak Performance](../sports-psychology-performance.md)
+- [AI for Sports Analytics: Player Tracking, Performance Prediction, and Tactical Analysis](../../ai/ai-sports-analytics.md)

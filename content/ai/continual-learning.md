@@ -100,3 +100,9 @@ EWC identifies important weights via the diagonal of the Fisher Information Matr
 - ContinualAI Community and Avalanche Library
 - "A Continual Learning Survey" (Parisi et al.)
 - NeurIPS 2024 Continual Learning Workshop
+
+## Related Articles
+
+- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../adversarial-machine-learning.md)
+- [AI for Drug Repurposing: Identifying New Uses for Existing Drugs Through Machine Learning](../ai-drug-repurposing.md)
+- [AI for Employee Experience: Onboarding, Learning, and Internal Communications](../ai-employee-experience.md)

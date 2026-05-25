@@ -174,3 +174,9 @@ The Transformer spawned four major architecture families:
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762): Original paper (140K+ citations)
 - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/): Visual walkthrough by Jay Alammar
 - [CS224n: Transformers Lecture](https://web.stanford.edu/class/cs224n/): Stanford NLP course
+
+## Related Articles
+
+- [Deep Reinforcement Learning Algorithms: PPO, SAC, Dreamer, and Decision Transformer](../deep-reinforcement-learning-algorithms.md)
+- [GPT (Generative Pre-trained Transformer) Model Family](../gpt-models.md)
+- [Human Pose Estimation: 2D/3D Keypoint Detection and Transformer-Based Body Tracking](../human-pose-estimation.md)

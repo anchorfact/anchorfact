@@ -1018,3 +1018,9 @@ class ReconnectSystem {
 - **开源框架**：GGPO（回滚网络代码）、ENet、GameNetworkingSockets（Valve）
 - **GDC演讲**："It IS Rocket Science!" by Clayton Kroh（《火箭联盟》网络同步）
 - **技术博客**：Riot Games Tech Blog、Overwatch Networked Physics
+
+## Related Articles
+
+- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
+- [game art pipeline](../game-art-pipeline.md)
+- [Game Audio Systems and Sound Design](../game-audio-systems.md)

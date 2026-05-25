@@ -105,3 +105,9 @@ atomic_facts:
   - id: "fact-geography-003"
     statement: "Largest by population: India (1.45B, surpassed China 2023), China (1.42B)"
     confidence: "medium"
+
+## Related Articles
+
+- [Embodied AI: Robots That Learn from the Physical World](../../ai/embodied-ai-and-robotics.md)
+- [World Models: Video Prediction, Physical Reasoning, and Interactive AI](../../ai/world-models-video-prediction.md)
+- [World Literature](../../arts/world-literature.md)

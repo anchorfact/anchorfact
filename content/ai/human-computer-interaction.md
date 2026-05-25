@@ -87,3 +87,9 @@ AI+HCI convergence areas: (1) Generative UI -- LLMs translate design requirement
 
 ## Detailed Analysis
 CHI 2025 generative UI research: LLMs fine-tuned on UI component libraries (Material Design, Ant Design) generate layout code. Key challenge: generated UIs often look good but have functional gaps (missing error states, non-accessible). Solutions: constraint-based generation (design system rules as hard constraints) and iterative refinement (AI generates, human critiques, AI revises). AI usability testing: LLMs prompted with persona descriptions ("65-year-old user with mild vision impairment, first time using this app") simulate interaction. The agent describes what it sees, what it tries to click, and reports confusion. NN/g validation: AI testing catches 60-75% of critical usability issues at 5-10% cost. Benefits: speed (test overnight vs weeks), cost (democratized usability for startups), and iteration frequency (test every design iteration). Limitations: AI agents miss subtle emotional responses and cannot judge aesthetic preference. The ideal workflow: AI testing for rapid iteration (frequent, cheap) + human testing for final validation (infrequent, comprehensive).
+
+## Related Articles
+
+- [Brain-Computer Interfaces: AI-Powered Neural Decoding and Neurotechnology](../brain-computer-interface-ai.md)
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../3d-human-modeling.md)
+- [AI Art and Creativity: Generative Models and Authorship](../ai-art-and-creativity.md)

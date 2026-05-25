@@ -83,3 +83,9 @@ Usage: `new IntersectionObserver(callback, { threshold: 0.1 })`. The callback re
 ## Further Reading
 
 - [Intersection Observer (W3C)](https://www.w3.org/TR/intersection-observer/)
+
+## Related Articles
+
+- [API Gateway](../api-gateway.md)
+- [Broadcast Channel API](../broadcast-channel-api.md)
+- [Canvas API](../canvas-api.md)

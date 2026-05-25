@@ -105,3 +105,9 @@ Socrates (470-399 BCE): never wrote — known through Plato's dialogues, execute
 ## Further Reading
 
 - [A History of Western Philosophy (Bertrand Russell)](https://www.simonandschuster.com/books/A-History-of-Western-Philosophy/Bertrand-Russell/9780671201586)
+
+## Related Articles
+
+- [Ancient Greek Literature](../../arts/ancient-greek-literature.md)
+- [Greek Mythology](../../arts/greek-mythology.md)
+- [Philosophy of Mind](../../arts/philosophy-of-mind.md)

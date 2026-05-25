@@ -88,3 +88,9 @@ Moderation pipeline: Post upload -> Hash matching (known illegal content) -> ML 
 
 ## Detailed Analysis
 Scale challenges: Meta processes billions of posts/day across Facebook, Instagram, Threads, WhatsApp. AI removes 95%+ of hate speech proactively (before user reports) in high-resource languages. The language gap: AI performance drops sharply for low-resource languages. Solutions: zero-shot cross-lingual transfer (train on English, apply to Swahili via multilingual embeddings), few-shot annotation (human labels 100 examples, model generalizes), and active learning (prioritize uncertain predictions for human review). Policy engines: content policies are complex, evolving documents. AI must implement nuanced rules (e.g., "graphic violence allowed with warning screen for news content, removed for gratuitous violence"). Policy-as-code: translate human-readable policies into machine-executable rules with LLM assistance. EU Digital Services Act (2024): platforms must provide transparency reports on moderation, allow user appeals, and conduct risk assessments. Key ethical tension: over-moderation (removing legitimate speech) vs. under-moderation (allowing harmful content). Hybrid AI+human pipelines with transparent appeal processes are the emerging best practice.
+
+## Related Articles
+
+- [AI for Social Media: Misinformation Detection, Hate Speech Moderation, and Content Safety](../ai-for-social-media.md)
+- [Machine Translation: Neural MT, LLM-Based Translation, and Multilingual Quality at Scale](../machine-translation.md)
+- [Content Security Policy (CSP)](../../computer-science/content-security-policy-csp.md)

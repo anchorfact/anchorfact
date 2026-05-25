@@ -89,3 +89,9 @@ Payment fraud pipeline: Transaction -> ML scoring (fraud probability 0-1, <10ms)
 
 ## Detailed Analysis
 Visa AI: processes 500M+ transactions/day. Deep learning models score each transaction. Advanced Authorization generates risk score in ~1ms. Visa blocks $25B+ fraud annually. Stripe Radar: ML trained on Stripe network (millions of merchants, billions of transactions). Features: card fingerprinting, IP proxy detection, email domain risk. Custom rules: merchants set risk thresholds and blocklists. GNN fraud rings: graph construction -- nodes = accounts/merchants, edges = transactions/connections. Fraud rings create dense, unusual graph patterns. GNN node classification identifies fraudulent accounts from structural features alone. Behavioral biometrics (BioCatch): analyzes 2,000+ behavioral parameters (handedness, eye-hand coordination, hesitation patterns). Detects: BOTs, remote desktop, social engineering victims (stressed typing). Behavioral profiles persist across devices. 3D Secure 2.0: AI decides friction level. 95%+ of transactions are frictionless (AI believes legitimate), <5% require step-up. This eliminated the old "static password" frustration of 3DS 1.0.
+
+## Related Articles
+
+- [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../3d-generation-gaussian-splatting.md)
+- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../ai-call-center.md)
+- [AI for Augmented Reality: Real-Time Scene Understanding, Spatial Computing, and Contextual Overlays](../ai-for-augmented-reality.md)

@@ -101,3 +101,9 @@ Land use AI: (1) Classification -- assign every pixel a land cover class. Sentin
 
 ## Detailed Analysis
 ESA WorldCover: production pipeline uses Sentinel-2 (10m, 5-day revisit) + Sentinel-1 (SAR for cloud penetration). AI classifier (random forest + temporal features) produces 11-class map covering entire Earth, updated annually. Google Dynamic World: near-real-time (updated every 2-5 days) land cover classification using Sentinel-2 + deep learning. 9 classes, 10m resolution. Importance: captures seasonal dynamics (snow cover, flooding, crop cycles). Applications: (1) Deforestation monitoring -- Global Forest Watch detects deforestation weekly via satellite AI; (2) Agriculture -- annual crop type maps (CropScape for US), planted area estimation, yield forecasting; (3) Urban planning -- informal settlement detection, impervious surface mapping, urban heat island analysis; (4) Disaster -- building damage assessment from before/after satellite imagery (xView2). Key challenge: temporal consistency -- pixels should not randomly change class between annual maps due to model noise.
+
+## Related Articles
+
+- [AI for Remote Sensing: Foundation Models, Satellite Image Analysis, and Earth Observation](../ai-for-remote-sensing.md)
+- [AI for Wildlife Conservation: Camera Trap Analysis, Species Classification, and Biodiversity Monitoring](../ai-for-wildlife-conservation.md)
+- [AI for Satellite Imagery: Object Detection, Change Detection, and Global Monitoring](../ai-satellite-imagery.md)

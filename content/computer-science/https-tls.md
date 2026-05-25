@@ -180,3 +180,9 @@ Domains on the preload list are never contacted over HTTP, even on first visit. 
 - [RFC 8446 — TLS 1.3](https://www.rfc-editor.org/rfc/rfc8446): Current TLS standard (Rescorla, 2018)
 - [RFC 5246 — TLS 1.2](https://www.rfc-editor.org/rfc/rfc5246): Widely deployed TLS version
 - [Let's Encrypt Stats](https://letsencrypt.org/stats/): Certificate issuance data
+
+## Related Articles
+
+- [AI for Election Integrity: Disinformation Detection, Voter Analytics, and Electoral Security](../../ai/ai-election-integrity.md)
+- [AI for Network Security: Intelligent Firewalls, DDoS Mitigation, and Zero-Trust Architectures](../../ai/ai-for-network-security.md)
+- [AI Red Teaming: Security Testing for Language Models](../../ai/ai-red-teaming-and-safety.md)

@@ -78,3 +78,9 @@ Go (Golang) is a statically typed, compiled programming language designed at Goo
 
 - [Go Docs](https://go.dev/doc/): Official documentation
 - [Go GitHub](https://github.com/golang/go): Source code (134K+ stars)
+
+## Related Articles
+
+- [C++ Programming Language](../c++-language.md)
+- [C Programming Language](../c-language.md)
+- [Python Programming Language](../python.md)

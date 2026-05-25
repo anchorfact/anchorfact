@@ -99,3 +99,9 @@ AI content stack: (1) Text -- LLM-based platforms (Jasper, Copy.ai, Writesonic) 
 
 ## Detailed Analysis
 Jasper AI (2024): 500K+ business users, GPT-4-powered, industry-specific templates. Key features: brand voice (upload style examples, AI learns tone), campaign mode (generate coordinated content across channels), and SEO integration (SurferSEO). Copy.ai: GTM AI platform for go-to-market teams, generating sales emails, LinkedIn posts, and case studies. MIT IDE study (2024): professional writers using ChatGPT completed tasks 37% faster with 12% higher quality (as rated by blind evaluators). Effect strongest for less experienced writers (50% improvement) compared to experienced (20%). Key finding: AI reduces the variance in output quality -- weaker writers improve the most. HBR (2025): purely AI-generated content without human editing scores lower on trust and emotional engagement. Optimal workflow: (1) Human defines strategy and voice; (2) AI generates options; (3) Human selects and refines; (4) AI polishes; (5) Human final approval. Content authenticity concerns: Google and social media platforms increasingly flag AI-generated content, and the EU AI Act mandates disclosure. C2PA content credentials and AI watermarking are emerging standards.
+
+## Related Articles
+
+- [AI Podcast Generation: Text-to-Speech Narration, AI Hosts, and Automated Audio Content](../ai-podcast-generation.md)
+- [AI Video Generation: Sora, Veo, and the Future of Synthetic Media](../ai-video-generation.md)
+- [AI for Drug Discovery: AlphaFold, Molecular Generation, and Generative Chemistry](../ai-for-drug-discovery.md)

@@ -110,3 +110,9 @@ Drone autonomy stack: (1) Perception -- stereo cameras + IMU for visual-inertial
 
 ## Detailed Analysis
 Drone racing RL (UZH, 2023): trained purely in simulation, the RL policy achieved lap times faster than human world champions -- demonstrating extreme agility (40+ mph through gates). Key: the policy learned aerodynamic effects that classical controllers can't model. Swarm coordination: DARPA OFFSET program (2019-2022) demonstrated 250+ drone swarms with distributed RL for decentralized coordination. Each drone runs local policy using neighbor communication. Applications: search-and-rescue (coverage optimization), agricultural spraying, light shows. Commercial: Skydio (2023) achieves 360-degree obstacle avoidance via 6 fisheye cameras + Jetson TX2, enabling autonomous flight in dense forests, inside buildings, and under bridges. Zipline (2024): autonomous delivery network with 250+ drones, delivering blood, vaccines, and medical supplies with 99.9% delivery success rate across Rwanda, Ghana, and US cities. Key challenge: FAA BVLOS regulations restrict autonomous drone operations in most countries.
+
+## Related Articles
+
+- [AI for Space Exploration: Autonomous Navigation, Earth Observation, and Spacecraft Autonomy](../ai-for-space-exploration.md)
+- [AI for Robot Navigation: SLAM, Visual Odometry, and Autonomous Path Planning](../ai-for-robot-navigation.md)
+- [AI for Warehouse Robotics: Autonomous Forklifts, Bin-Picking, and Fulfillment Automation](../ai-warehouse-robotics.md)

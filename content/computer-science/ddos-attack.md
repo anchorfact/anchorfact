@@ -97,4 +97,8 @@ SYN flood: attacker sends TCP SYN packets but never completes handshake, exhaust
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [AI for Network Security: Intelligent Firewalls, DDoS Mitigation, and Zero-Trust Architectures](../../ai/ai-for-network-security.md)

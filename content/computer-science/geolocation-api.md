@@ -68,3 +68,9 @@ The Geolocation API (`navigator.geolocation`) provides device location (latitude
 ## Further Reading
 
 - [Geolocation API (W3C Recommendation)](https://www.w3.org/TR/geolocation/)
+
+## Related Articles
+
+- [API Gateway](../api-gateway.md)
+- [Broadcast Channel API](../broadcast-channel-api.md)
+- [Canvas API](../canvas-api.md)

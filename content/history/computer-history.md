@@ -97,3 +97,9 @@ Turing (1936): Turing Machine theoretical model, Bombe broke Enigma in WWII. Von
 ## Further Reading
 
 - [The Innovators (Walter Isaacson)](https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706)
+
+## Related Articles
+
+- [AI for Construction: Computer Vision Safety, BIM Digital Twins, and Automated Project Monitoring](../../ai/ai-for-construction.md)
+- [AI for Medical Imaging: Radiology AI, Computer-Aided Diagnosis, and Clinical Deployment](../../ai/ai-for-medical-imaging.md)
+- [AI for Workplace Safety: Computer Vision Monitoring, Fall Detection, and Hazard Prevention](../../ai/ai-workplace-safety.md)

@@ -78,4 +78,10 @@ Layer 1: cables, radio, bits on wire. Layer 2: MAC addresses, switches. Layer 3:
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [GPT (Generative Pre-trained Transformer) Model Family](../../ai/gpt-models.md)
+- [Model Context Protocol (MCP)](../../ai/mcp.md)
+- [Model Compression: Pruning, Quantization, and Distillation](../../ai/model-compression.md)

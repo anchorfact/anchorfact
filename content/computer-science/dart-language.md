@@ -93,3 +93,9 @@ Null safety: all types are non-null unless explicitly marked `?`. Async: `Future
 ## Further Reading
 
 - [Dart Documentation](https://dart.dev/guides)
+
+## Related Articles
+
+- [AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation](../../ai/ai-code-translation.md)
+- [AI for Accessibility: Assistive Technologies, Sign Language Recognition, and Inclusive Systems](../../ai/ai-for-accessibility.md)
+- [AI for Language Learning: Intelligent Tutoring, Speech Assessment, and Personalized Curriculum](../../ai/ai-for-language-learning.md)

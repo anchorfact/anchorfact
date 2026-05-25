@@ -90,3 +90,9 @@ Three pillars of AI democratization: (1) Open-source models -- freely available 
 
 ## Detailed Analysis
 Open-source LLM evolution: Llama 2 (2023, Meta: 7B/13B/70B) -> Llama 3 (2024: 8B/70B/405B). Llama 3 70B matches GPT-3.5 on most benchmarks, 405B approaches GPT-4 on some tasks. DeepSeek-V2/R1 (2024-2025) introduced MoE architecture and pure RL training, demonstrating cost-efficient training (reported $5M training cost vs $100M+ for GPT-4). Mistral 7B achieves strong performance at compact size. Open LLM Leaderboard (Hugging Face) provides transparent benchmarking. Low-code AutoML: DataRobot (enterprise AutoML), H2O Driverless AI (automatic feature engineering + model interpretability). LLM-based code generation further democratizes: users describe desired model in natural language, AI generates training code. Key concerns: (1) Quality -- automated models without expert oversight may have hidden biases, data leakage, or overfitting; (2) Compute access -- training frontier models still requires millions in GPU compute, creating a new bottleneck; (3) Responsible use -- democratized access means democratized potential for misuse.
+
+## Related Articles
+
+- [The Open-Source AI Movement: Llama, DeepSeek, and Democratization](../open-source-ai-movement.md)
+- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../adversarial-machine-learning.md)
+- [AI for Drug Repurposing: Identifying New Uses for Existing Drugs Through Machine Learning](../ai-drug-repurposing.md)

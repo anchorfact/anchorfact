@@ -75,3 +75,9 @@ The Broadcast Channel API enables same-origin communication between browsing con
 ## Further Reading
 
 - [HTML Standard — BroadcastChannel](https://html.spec.whatwg.org/multipage/web-messaging.html#broadcasting-to-other-browsing-contexts)
+
+## Related Articles
+
+- [API Gateway](../api-gateway.md)
+- [Canvas API](../canvas-api.md)
+- [Clipboard API](../clipboard-api.md)

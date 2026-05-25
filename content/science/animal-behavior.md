@@ -82,3 +82,9 @@ Bees' waggle dance (von Frisch, Nobel 1973): communicates food distance and dire
 ## Further Reading
 
 - [Animal Behavior (John Alcock, 11th Ed)](https://www.oxfordlearninglink.com/s-alcock-animal-behavior-11e)
+
+## Related Articles
+
+- [Leadership Theory and Organizational Behavior](../../business/leadership-and-organizational-behavior.md)
+- [Marketing: Strategy, Consumer Behavior, and Digital Channels](../../business/marketing-fundamentals.md)
+- [Habit Stacking and Behavior Design](../../self-improvement/habit-stacking.md)

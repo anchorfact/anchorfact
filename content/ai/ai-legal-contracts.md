@@ -100,3 +100,9 @@ Contract AI stack: (1) Document ingestion -- OCR (scanned PDFs), layout analysis
 
 ## Detailed Analysis
 Due diligence: M&A transactions require reviewing thousands of contracts for change-of-control provisions, assignment restrictions, and material adverse change clauses. AI processes 100+ contracts/hour, 20x faster than manual, reducing deal timelines from weeks to days. Model: LegalBERT (Chalkidis et al., 2020) pretrained on 12GB of US legal text outperforms general-purpose BERT on contract tasks. Clause extraction F1: 93-97% for well-structured contracts, 80-88% for scanned/unstructured. LLM drafting: Spellbook AI prompts GPT-4 with contract type, jurisdiction, and specific terms. Output: complete contract with placeholders for party names, dates, amounts. Human review required -- LLMs can hallucinate non-existent legal concepts or include contradictory provisions. Harvey AI (OpenAI Startup Fund backed, 2024-2025): raised $300M, valued at $3B. Deployed at Allen & Overy, PwC, and other major law firms. CoCounsel (Casetext/Thomson Reuters): the first AI legal assistant to pass the UBE (Uniform Bar Exam).
+
+## Related Articles
+
+- [AI for Legal: Contract Analysis, Legal Reasoning, and Regulatory Compliance](../ai-for-legal.md)
+- [AI for Legal Research: Case Law Search, Citation Analysis, and Litigation Analytics](../ai-legal-research.md)
+- [AI for Static Analysis: Automated Bug Detection, Code Review, and Vulnerability Scanning](../ai-static-analysis.md)

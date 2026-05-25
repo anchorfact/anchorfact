@@ -101,3 +101,9 @@ Nature 2025 comparison: tested 6 model families on 5 datasets. Key finding — G
 - LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation (He et al., SIGIR 2020)
 - P5: Pretraining with Prompts for Recommendation (Geng et al., RecSys 2022)
 - RecBole: Unified Recommender Systems Library
+
+## Related Articles
+
+- [AI for Search and Recommendation: Semantic Search, Collaborative Filtering, and Personalization Engines](../ai-search-recommendation.md)
+- [Machine Translation: Neural MT, LLM-Based Translation, and Multilingual Quality at Scale](../machine-translation.md)
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../ai-for-data-curation.md)

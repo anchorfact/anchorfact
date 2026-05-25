@@ -64,4 +64,10 @@ Balance techniques: data-driven (telemetry, win rates), simulation (Monte Carlo,
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
+- [Photography Fundamentals and Composition](../../arts/photography-fundamentals.md)
+- [Poetry Fundamentals](../../arts/poetry-fundamentals.md)

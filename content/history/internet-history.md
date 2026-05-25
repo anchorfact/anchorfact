@@ -72,3 +72,9 @@ ARPANET (1969): UCLA, Stanford, UCSB, Utah. Email invented 1971 (Ray Tomlinson, 
 ## Further Reading
 
 - [Where Wizards Stay Up Late (Katie Hafner, Matthew Lyon)](https://www.simonandschuster.com/books/Where-Wizards-Stay-Up-Late/Katie-Hafner/9780684832678)
+
+## Related Articles
+
+- [AI for the Internet of Things: Federated Learning, TinyML, and Intelligent Edge Devices](../../ai/ai-for-iot.md)
+- [Animation History](../../arts/animation-history.md)
+- [Architecture History](../../arts/architecture-history.md)

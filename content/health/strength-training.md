@@ -89,3 +89,9 @@ Compound exercises (multi-joint): squat, deadlift, bench press, overhead press, 
 ## Further Reading
 
 - [Starting Strength (3rd Ed, Mark Rippetoe)](https://aasgaardco.com/store/books-posters-dvd/starting-strength-basic-barbell-training/)
+
+## Related Articles
+
+- [Strength Training Principles](../strength-training-principles.md)
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../../ai/ai-for-data-curation.md)
+- [AI Training Data Curation: Quality at Scale](../../ai/ai-training-data-curation.md)

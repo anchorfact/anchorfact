@@ -44,3 +44,9 @@ SDT distinguishes intrinsic motivation (doing something for its inherent satisfa
 
 ---
 > 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。
+
+## Related Articles
+
+- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
+- [Music Theory Basics](../../arts/music-theory-basics.md)
+- [Leadership Theory and Organizational Behavior](../../business/leadership-and-organizational-behavior.md)

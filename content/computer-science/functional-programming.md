@@ -64,3 +64,9 @@ Pure functions: no side effects → easier to test, reason about, parallelize. M
 ## Further Reading
 
 - [Structure and Interpretation of Computer Programs (SICP)](undefined)
+
+## Related Articles
+
+- [C++ Programming Language](../c++-language.md)
+- [C Programming Language](../c-language.md)
+- [Dynamic Programming](../dynamic-programming.md)

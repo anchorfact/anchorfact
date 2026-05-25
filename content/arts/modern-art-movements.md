@@ -79,3 +79,9 @@ Cubism (1907): shattered perspective — multiple viewpoints simultaneously (Pic
 ## Further Reading
 
 - [The Story of Modern Art (Norbert Lynton)](https://www.phaidon.com/store/art/the-story-of-modern-art-9780714831398/)
+
+## Related Articles
+
+- [AI Art and Creativity: Generative Models and Authorship](../../ai/ai-art-and-creativity.md)
+- [AI for Cultural Heritage: Digital Preservation, Art Attribution, and Museum Intelligence](../../ai/ai-for-cultural-heritage.md)
+- [AI for Intellectual Property: Patent Search, Prior Art Analysis, and Trademark Intelligence](../../ai/ai-ip-patents.md)

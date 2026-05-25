@@ -73,3 +73,9 @@ Couch to 5K (C25K): 9-week beginner program. Easy runs: conversational pace (Zon
 ## Further Reading
 
 - [Daniels' Running Formula (Jack Daniels, 4th Ed)](https://www.humankinetics.com/products/daniels-running-formula-4th-edition)
+
+## Related Articles
+
+- [Photography Fundamentals and Composition](../../arts/photography-fundamentals.md)
+- [Poetry Fundamentals](../../arts/poetry-fundamentals.md)
+- [Digital Marketing Fundamentals](../../business/digital-marketing-fundamentals.md)

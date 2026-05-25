@@ -106,3 +106,9 @@ The Wilson Cycle describes ocean basin lifecycle: rifting→spreading→subducti
 - USGS Earthquake Hazards Program
 - NOAA Ocean Explorer: Plate Tectonics
 - National Geographic: Plate Tectonics
+
+## Related Articles
+
+- [Plate Tectonics](../../science/plate-tectonics.md)
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
+- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)

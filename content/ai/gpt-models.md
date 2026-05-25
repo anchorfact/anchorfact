@@ -235,3 +235,9 @@ The decoder-only design proved more scalable: as models grew larger, autoregress
 - [GPT-3 Paper](https://arxiv.org/abs/2005.14165): Language Models are Few-Shot Learners (Brown et al., 2020, 30K+ citations)
 - [GPT-4 Technical Report](https://arxiv.org/abs/2303.08774): OpenAI's report (architecture intentionally undisclosed)
 - [InstructGPT Paper](https://arxiv.org/abs/2203.02155): The RLHF paper that made ChatGPT work
+
+## Related Articles
+
+- [AI Art and Creativity: Generative Models and Authorship](../ai-art-and-creativity.md)
+- [AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation](../ai-content-creation.md)
+- [AI for Drug Discovery: AlphaFold, Molecular Generation, and Generative Chemistry](../ai-for-drug-discovery.md)

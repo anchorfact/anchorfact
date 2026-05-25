@@ -44,3 +44,9 @@ MBSR, developed by Jon Kabat-Zinn at UMass Medical School in 1979, is the most s
 
 ---
 > 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。
+
+## Related Articles
+
+- [Meditation and Mindfulness](../../health/meditation-and-mindfulness.md)
+- [Language Modeling: From N-grams to Scaling Laws and Information-Theoretic Foundations](../../ai/language-modeling-theory.md)
+- [Strategic Management: Frameworks and Practice](../../business/strategic-management-theory.md)

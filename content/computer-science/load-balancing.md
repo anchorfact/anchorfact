@@ -74,3 +74,7 @@ Algorithms: round-robin, least connections, IP hash (session persistence), weigh
 ## Further Reading
 
 - [NGINX Documentation](https://nginx.org/en/docs/)
+
+## Related Articles
+
+- [AI for Smart Grids: Load Forecasting, Demand Response, and Grid Stability](../../ai/ai-smart-grids.md)

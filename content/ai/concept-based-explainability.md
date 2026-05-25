@@ -98,3 +98,9 @@ Concept Bottleneck Models (CBMs): architecture forces predictions to pass throug
 - TensorFlow TCAV GitHub Repository
 - Yannic Kilcher's TCAV Video Explanation
 - DALLE-3 Concept Understanding Analysis
+
+## Related Articles
+
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../3d-human-modeling.md)
+- [AI Art and Creativity: Generative Models and Authorship](../ai-art-and-creativity.md)
+- [AI Democratization: Open-Source Models, Low-Code AI, and Accessible Machine Learning](../ai-for-democratization.md)

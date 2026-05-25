@@ -88,3 +88,9 @@ AI for quantum: (1) Quantum error correction -- qubits are fragile (decoherence)
 
 ## Detailed Analysis
 AlphaQubit (DeepMind, Nature 2024): RL-based decoding of surface codes. Trained on simulated quantum error data. Achieves lower logical error rate than prior decoders at same physical error rate. This directly translates to fewer physical qubits needed per logical qubit -- critical for scaling. Quantum ML: NISQ devices (100-1000 qubits, noisy) have not demonstrated practical advantage over classical ML for any real-world task. The "quantum winter" concern (2023-2025): venture investment shifted from quantum software to hardware. Google Willow (2024): 105 qubits, demonstrated exponential error reduction with increased qubit count -- a milestone toward fault-tolerance. IBM roadmap: 100K+ qubits by 2033. Timeline: practical QML advantage likely requires >1000 logical qubits, expected post-2035.
+
+## Related Articles
+
+- [Quantum Machine Learning: Tensor Networks, QNNs, and Error Mitigation](../quantum-machine-learning.md)
+- [Affective Computing: Multimodal Emotion Recognition, Sentiment Analysis, and Empathetic AI](../affective-computing.md)
+- [AI for Digital Marketing: Personalization, Campaign Optimization, and Customer Analytics](../ai-digital-marketing.md)

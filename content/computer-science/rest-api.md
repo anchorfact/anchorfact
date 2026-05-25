@@ -92,3 +92,9 @@ REST (Representational State Transfer) is an architectural style for designing n
 ## Further Reading
 
 - [Fielding's Dissertation](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm): Chapter 5 defines REST
+
+## Related Articles
+
+- [API Gateway](../api-gateway.md)
+- [Broadcast Channel API](../broadcast-channel-api.md)
+- [Canvas API](../canvas-api.md)

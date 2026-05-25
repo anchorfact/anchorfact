@@ -88,3 +88,9 @@ Retail AI stack: (1) In-store -- computer vision for inventory tracking (shelf c
 
 ## Detailed Analysis
 Amazon Just Walk Out: overhead cameras track each shopper with multi-camera 3D pose tracking. Weight sensors on shelves detect when items are removed. The system fuses camera and weight data to associate item removals with specific shoppers. Deep learning handles occlusion (shoppers blocking cameras) and crowd scenarios. Privacy: no facial recognition -- the system uses body appearance features and device association. Dynamic pricing: RL-based approaches (Q-learning, DQN) model the pricing problem as a sequential decision process. State: current inventory, time to end-of-season, competitor prices, demand forecast. Action: set price. Reward: revenue. Constraint: minimum margin, brand price image. Fast-fashion (Zara, H&M) and grocery (dynamic markdowns on perishables) are primary adopters. Visual search: CLIP-based embeddings map product images and text descriptions into shared space. Virtual try-on: VITON-HD and DCTON use GANs/diffusion to generate realistic try-on images.
+
+## Related Articles
+
+- [AI for Beauty and Fashion: Virtual Try-On, Personalized Styling, and Trend Prediction](../ai-beauty-fashion.md)
+- [AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition](../ai-for-food-science.md)
+- [AI for Language Learning: Intelligent Tutoring, Speech Assessment, and Personalized Curriculum](../ai-for-language-learning.md)

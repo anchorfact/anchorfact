@@ -97,3 +97,9 @@ Key works: Botticelli's Birth of Venus (1485), da Vinci's Last Supper (1498) and
 ## Further Reading
 
 - [The Story of Art (E.H. Gombrich)](https://www.phaidon.com/store/art/the-story-of-art-pocket-edition-9780714872216/)
+
+## Related Articles
+
+- [AI Art and Creativity: Generative Models and Authorship](../../ai/ai-art-and-creativity.md)
+- [AI for Cultural Heritage: Digital Preservation, Art Attribution, and Museum Intelligence](../../ai/ai-for-cultural-heritage.md)
+- [AI for Intellectual Property: Patent Search, Prior Art Analysis, and Trademark Intelligence](../../ai/ai-ip-patents.md)

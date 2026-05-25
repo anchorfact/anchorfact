@@ -87,3 +87,9 @@ Digital forensics AI: (1) Deepfake detection -- classify real vs. AI-generated. 
 
 ## Detailed Analysis
 C2PA (Coalition for Content Provenance and Authenticity): backed by Adobe, Microsoft, Google, Intel, Sony, BBC. Key innovation: cameras generate a cryptographic signature at capture (binding image hash + metadata + timestamp + device identity). Any subsequent edit adds a signed manifest recording what was changed. The final image carries the complete provenance chain. C2PA 2.1 (2025): supports selective disclosure (showing cropped image without revealing full original), and integration with social media platforms for automatic "content credentials" display. IEEE Signal Processing (2024) survey: no single forensic method is universal. Best practice: ensemble of complementary detectors (face analysis + frequency analysis + metadata verification). AI forensics admissibility: for evidence to be admissible in court, the forensic method must be scientifically validated (Daubert standard). Current AI forensic tools face challenges: (1) Black-box methods -- difficult to explain to juries; (2) Rapid evolution -- a detector trained today fails against tomorrow's generators.
+
+## Related Articles
+
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../3d-human-modeling.md)
+- [AI for Digital Marketing: Personalization, Campaign Optimization, and Customer Analytics](../ai-digital-marketing.md)
+- [AI Digital Twins for Healthcare: Patient-Specific Simulation, Treatment Planning, and Virtual Organs](../ai-digital-twins-healthcare.md)

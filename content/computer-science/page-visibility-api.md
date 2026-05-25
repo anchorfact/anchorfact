@@ -78,3 +78,9 @@ Key uses: pausing video/audio playback when hidden, stopping animation loops, th
 ## Further Reading
 
 - [Page Visibility (W3C)](https://www.w3.org/TR/page-visibility/)
+
+## Related Articles
+
+- [API Gateway](../api-gateway.md)
+- [Broadcast Channel API](../broadcast-channel-api.md)
+- [Canvas API](../canvas-api.md)

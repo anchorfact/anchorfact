@@ -88,3 +88,9 @@ Air quality AI: (1) Sensing -- low-cost sensors (PurpleAir: laser particle count
 
 ## Detailed Analysis
 PurpleAir: 30,000+ sensors, largest air quality network. LM (Laser + ML) correction algorithm calibrates raw readings. Google Maps air quality: integrates PurpleAir + government monitors + satellite AI. Users see real-time AQI for any location. BreezoMeter (Google-acquired): street-level resolution AQI using dispersion modeling + ML. Health impact: ML estimates attributable mortality and morbidity. WHO: 7M premature deaths/year from air pollution. AI helps target interventions to highest-impact areas. Key challenge: indoor air quality (where people spend 90% of time) is largely unmonitored.
+
+## Related Articles
+
+- [AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition](../ai-for-food-science.md)
+- [AI for Ocean Monitoring: Marine Life Detection, Plastic Pollution Tracking, and Oceanographic AI](../ai-for-ocean-monitoring.md)
+- [AI for Public Health: Disease Surveillance, Outbreak Prediction, and Population Health Analytics](../ai-public-health.md)

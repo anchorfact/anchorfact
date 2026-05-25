@@ -44,3 +44,9 @@ Urban geography classifies cities by function (capital, port, industrial), size 
 
 ---
 > 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。
+
+## Related Articles
+
+- [AI for Urban Planning: Generative Spatial AI, Digital Twins, and Computational Urban Science](../../ai/ai-for-urban-planning.md)
+- [AI for Land Use Classification: Satellite Image Segmentation, Urban Expansion Mapping, and Agricultural Monitoring](../../ai/ai-land-use-classification.md)
+- [African Geography](../african-geography.md)

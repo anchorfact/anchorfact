@@ -106,3 +106,9 @@ PPO-RLHF was the original approach (InstructGPT, ChatGPT). Its complexity — re
 - Hugging Face Alignment Handbook
 - OpenAI: InstructGPT Paper
 - Lilian Weng: Learning from Human Preferences
+
+## Related Articles
+
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../ai-for-data-curation.md)
+- [AI Training Data Curation: Quality at Scale](../ai-training-data-curation.md)
+- [Data-Centric AI: The Systematic Engineering of Training Data](../data-centric-ai.md)

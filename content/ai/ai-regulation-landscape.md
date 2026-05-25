@@ -97,3 +97,9 @@ Key requirements: transparency (disclosing AI use, training data), safety testin
 - EU AI Act Compliance Checker
 - Stanford HAI: AI Policy Tracker
 - IAPP: AI Governance Resources
+
+## Related Articles
+
+- [AI Agents (2025-2026)](../ai-agents.md)
+- [AI for Satellite Imagery: Object Detection, Change Detection, and Global Monitoring](../ai-satellite-imagery.md)
+- [Global Climate Zones and Terrestrial Biomes](../../geography/climate-zones-and-biomes.md)

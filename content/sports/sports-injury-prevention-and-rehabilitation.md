@@ -44,3 +44,9 @@ Injury classification: acute (sprains, strains, fractures, dislocations) and ove
 
 ---
 > 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。
+
+## Related Articles
+
+- [AI for Crisis Hotlines: Suicide Prevention Chatbots, Emotional Support AI, and Risk Detection](../../ai/ai-for-crisis-hotlines.md)
+- [AI for Payment Fraud Prevention: Real-Time Transaction Scoring, Chargeback Reduction, and Merchant Risk](../../ai/ai-for-fraud-prevention.md)
+- [AI for Sports Analytics: Player Tracking, Performance Prediction, and Tactical Analysis](../../ai/ai-sports-analytics.md)

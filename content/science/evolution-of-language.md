@@ -74,3 +74,9 @@ Universal Grammar (Chomsky): all human languages share deep structural rules —
 ## Further Reading
 
 - [The Language Instinct (Steven Pinker)](https://www.harpercollins.com/products/the-language-instinct-steven-pinker)
+
+## Related Articles
+
+- [AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation](../../ai/ai-code-translation.md)
+- [AI for Accessibility: Assistive Technologies, Sign Language Recognition, and Inclusive Systems](../../ai/ai-for-accessibility.md)
+- [AI for Language Learning: Intelligent Tutoring, Speech Assessment, and Personalized Curriculum](../../ai/ai-for-language-learning.md)

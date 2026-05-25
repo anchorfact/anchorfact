@@ -133,3 +133,9 @@ Amazon (AWS), Google (Android, Fuchsia), Microsoft (Windows kernel, Azure), Meta
 - [Rust Official Site](https://rust-lang.org/): Documentation, playground, and getting started
 - [State of Rust 2025 (JetBrains)](https://blog.jetbrains.com/rust/2026/02/11/state-of-rust-2025/): Comprehensive ecosystem survey
 - [The Rust Book](https://doc.rust-lang.org/book/): Official learning resource
+
+## Related Articles
+
+- [C++ Programming Language](../c++-language.md)
+- [C Programming Language](../c-language.md)
+- [Go Programming Language](../go-language.md)

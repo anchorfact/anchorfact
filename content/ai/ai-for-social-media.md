@@ -95,3 +95,9 @@ ACM 2025 XAI survey: the standard approach — fine-tune pre-trained language mo
 - Perspective API: Toxicity Scoring (Google Jigsaw)
 - HateXplain: Explainable Hate Speech Dataset
 - EU Digital Services Act: Platform Content Moderation Requirements
+
+## Related Articles
+
+- [AI Content Moderation Platforms: Large-Scale Safety Systems, Policy Engines, and Multilingual Review](../ai-content-moderation-platforms.md)
+- [AI-Generated Content Detection: Identifying Synthetic Text, Deepfake Images, and AI-Authored Media](../ai-generated-content-detection.md)
+- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../ai-call-center.md)

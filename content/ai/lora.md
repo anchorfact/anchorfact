@@ -120,3 +120,9 @@ For a typical LoRA configuration (r=8 or r=16 on attention projection matrices),
 - [LoRA Paper](https://arxiv.org/abs/2106.09685): Original paper by Hu et al.
 - [LoRA GitHub](https://github.com/microsoft/LoRA): Official Microsoft implementation (13K+ stars)
 - [QLoRA](https://arxiv.org/abs/2305.14314): Quantized LoRA for low-resource fine-tuning
+
+## Related Articles
+
+- [AI Democratization: Open-Source Models, Low-Code AI, and Accessible Machine Learning](../ai-for-democratization.md)
+- [Few-Shot Learning: Prototypical Networks, MAML, and In-Context Adaptation](../few-shot-learning.md)
+- [Low-Resource NLP: Multilingual Models, Endangered Language Preservation, and Translation](../low-resource-nlp.md)

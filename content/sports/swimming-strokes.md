@@ -74,3 +74,7 @@ Freestyle: alternate arm pulls, flutter kick, breathing to side every 2-3 stroke
 ## Further Reading
 
 - [Total Immersion (Terry Laughlin)](https://www.simonandschuster.com/books/Total-Immersion/Terry-Laughlin/9780743253434)
+
+## Related Articles
+
+- [Swimming Training and Stroke Techniques](../swimming-training.md)

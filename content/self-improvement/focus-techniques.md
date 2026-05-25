@@ -111,3 +111,9 @@ Deep work protocol: schedule blocks (minimum 90 minutes), eliminate shallow work
 
 - [Deep Work](https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/)
 - [Flow (Csikszentmihalyi)](https://www.harpercollins.com/products/flow-mihaly-csikszentmihalyi)
+
+## Related Articles
+
+- [Dropout and Regularization Techniques](../../ai/dropout-and-regularization.md)
+- [Prompt Engineering: Techniques for LLM Interaction](../../ai/prompt-engineering.md)
+- [Conflict Resolution: Strategies and Techniques](../conflict-resolution-strategies-and-techniques.md)

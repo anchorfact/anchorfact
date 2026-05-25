@@ -183,3 +183,9 @@ Stable Diffusion was trained on **LAION-5B**, a dataset of 5.85 billion image-te
 - [DDPM Paper](https://arxiv.org/abs/2006.11239): Original diffusion models paper (15K+ citations)
 - [Stable Diffusion / LDM](https://arxiv.org/abs/2112.10752): Latent diffusion for efficient generation
 - [Score-Based SDE](https://arxiv.org/abs/2011.13456): Unified framework for diffusion and score-based models
+
+## Related Articles
+
+- [AI for Tabular Data: Synthetic Generation, Diffusion Models, and Privacy-Preserving Structured Data](../ai-for-tabular-data.md)
+- [Diffusion Models in Depth: From DDPM to Stable Diffusion](../latent-diffusion-models.md)
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../3d-human-modeling.md)

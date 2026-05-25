@@ -85,3 +85,9 @@ Unit tests: test individual functions/components in isolation, milliseconds, run
 ## Further Reading
 
 - [Succeeding with Agile (Mike Cohn)](https://www.mountaingoatsoftware.com/books/succeeding-with-agile)
+
+## Related Articles
+
+- [AI for Software Testing: Automated Test Generation, Fuzzing, and Quality Assurance](../../ai/ai-for-software-testing.md)
+- [AI Red Teaming: Security Testing for Language Models](../../ai/ai-red-teaming-and-safety.md)
+- [Human-Computer Interaction: AI-Powered UX, Generative Interfaces, and Usability Testing](../../ai/human-computer-interaction.md)

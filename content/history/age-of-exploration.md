@@ -123,3 +123,9 @@ Key voyages: Columbus (1492, reached Americas thinking it was Asia), Vasco da Ga
 ## Further Reading
 
 - [Over the Edge of the World: Magellan's Terrifying Circumnavigation (Laurence Bergreen)](https://www.harpercollins.com/products/over-the-edge-of-the-world-laurence-bergreen)
+
+## Related Articles
+
+- [AI for Oil and Gas Exploration: Seismic Interpretation, Reservoir Characterization, and Subsurface Intelligence](../../ai/ai-for-oil-gas-exploration.md)
+- [AI for Space Exploration: Autonomous Navigation, Earth Observation, and Spacecraft Autonomy](../../ai/ai-for-space-exploration.md)
+- [Viking Age](../viking-age.md)

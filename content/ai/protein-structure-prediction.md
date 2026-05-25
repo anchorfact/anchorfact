@@ -105,3 +105,9 @@ Key models: (1) AlphaFold2 (DeepMind, 2020-2021) — MSA + Evoformer + Structure
 - AlphaFold Database: 200M+ predicted structures (EMBL-EBI)
 - RFdiffusion: Diffusion models for protein backbone generation
 - CASP: Critical Assessment of Structure Prediction (biennial)
+
+## Related Articles
+
+- [AI for Science: AlphaFold and the AI-Driven Discovery Revolution](../ai-for-science.md)
+- [AI for Weather Forecasting: Data-Driven Numerical Weather Prediction and Nowcasting](../ai-for-weather-forecasting.md)
+- [Multi-Omics Integration: AI-Driven Systems Biology from Genomics to Proteomics](../multi-omics-integration.md)

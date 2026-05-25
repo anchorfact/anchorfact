@@ -115,3 +115,9 @@ atomic_facts:
   - id: "fact-self-improvement-003"
     statement: "Marshmallow test (Mischel, 1972): 4-year-olds who delayed gratification had higher SAT scores and better life outcomes decades later"
     confidence: "medium"
+
+## Related Articles
+
+- [AI Benchmarks: MMLU, SWE-bench, and How We Measure Intelligence](../../ai/ai-benchmarks-and-evaluation.md)
+- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../../ai/ai-blockchain.md)
+- [AI for Audio Processing: Sound Event Detection, Acoustic Scene Analysis, and Environmental Intelligence](../../ai/ai-for-audio-processing.md)

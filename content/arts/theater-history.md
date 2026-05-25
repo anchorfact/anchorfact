@@ -79,3 +79,9 @@ Greek theater: amphitheaters, masks, chorus — 15,000+ capacity. Shakespeare's 
 ## Further Reading
 
 - [The Essential Theatre (Oscar Brockett, Robert Ball, 11th Ed)](https://www.cengage.com/c/the-essential-theatre-11e-brockett-ball/9781305411074/)
+
+## Related Articles
+
+- [Animation History](../animation-history.md)
+- [Architecture History](../architecture-history.md)
+- [Digital Art and New Media Art History](../digital-art-history.md)

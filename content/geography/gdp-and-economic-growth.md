@@ -83,3 +83,9 @@ atomic_facts:
   - id: "fact-geography-001"
     statement: "Fastest growing: Guyana (oil discovery, +60% 2024), Macau, Libya"
     confidence: "medium"
+
+## Related Articles
+
+- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../../ai/ai-blockchain.md)
+- [Economic Systems](../economic-systems.md)
+- [Growth Mindset: Theory and Applications](../../self-improvement/growth-mindset-theory-and-applications.md)

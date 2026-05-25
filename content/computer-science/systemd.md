@@ -80,3 +80,7 @@ Unit types: service (.service), socket (.socket), timer (.timer, replaces cron),
 ## Further Reading
 
 - [systemd Documentation](undefined)
+
+## Related Articles
+
+- [systemd Timers](../systemd-timers.md)

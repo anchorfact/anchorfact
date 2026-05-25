@@ -4,8 +4,8 @@ title: 'Molecular Biology: The Central Dogma'
 schema_type: Article
 category: science
 language: en
-confidence: medium
-last_verified: '2026-05-25'
+confidence: high
+last_verified: '2026-05-26'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -60,6 +60,13 @@ primary_sources:
     year: 1958
     doi: 10.1038/227561a0
     institution: Symposia of the Society for Experimental Biology
+  - title: The Central Dogma of Molecular Biology at 50
+    authors:
+      - Crick,F.H.C.
+    type: academic_paper
+    year: 2020
+    doi: 10.1038/s41576-020-0216-9
+    institution: Nature Reviews Genetics
 known_gaps:
   - Epigenetic regulation mechanisms
   - Post-translational modifications
@@ -105,6 +112,7 @@ secondary_sources:
 updated: '2026-05-24'
 ---
 
+
 ## TL;DR
 The Central Dogma describes the flow of genetic information from DNA to RNA to protein. CRISPR-Cas9 has revolutionized molecular biology by enabling precise genome editing in any organism.
 
@@ -118,3 +126,9 @@ CRISPR-Cas9 mechanism: guide RNA (gRNA) matches target DNA sequence; Cas9 create
 - Nature Reviews Molecular Cell Biology
 - Addgene: CRISPR Guide
 - MIT Biology: Molecular Biology
+
+## Related Articles
+
+- [AI for Drug Discovery: AlphaFold, Molecular Generation, and Generative Chemistry](../../ai/ai-for-drug-discovery.md)
+- [AI for Genomics: Single-Cell Foundation Models and RNA Biology](../../ai/ai-for-genomics.md)
+- [Multi-Omics Integration: AI-Driven Systems Biology from Genomics to Proteomics](../../ai/multi-omics-integration.md)

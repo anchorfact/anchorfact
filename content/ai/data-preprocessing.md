@@ -96,3 +96,9 @@ Missing data: MCAR (completely random), MAR (random given observed), MNAR (not r
 ## Further Reading
 
 - [Python Data Science Handbook (Jake VanderPlas)](https://jakevdp.github.io/PythonDataScienceHandbook/)
+
+## Related Articles
+
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../ai-for-data-curation.md)
+- [AI for Tabular Data: Synthetic Generation, Diffusion Models, and Privacy-Preserving Structured Data](../ai-for-tabular-data.md)
+- [AI for Data Visualization: Automated Chart Generation, Insight Discovery, and Visual Analytics](../ai-for-visualization.md)

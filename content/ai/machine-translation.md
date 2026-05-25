@@ -102,3 +102,9 @@ Neural MT (2016-2022): encoder-decoder Transformer. Encoder processes source sen
 
 ## Detailed Analysis
 NLLB-200 (Nature 2024, Meta): mined parallel data across 200 languages from CommonCrawl using LASER embeddings for sentence alignment. Mixture-of-Experts with 128 experts, routing each token to top-2 experts. LASER3 provides language-agnostic representations. Evaluation: FLORES-200 benchmark. BLEU improvement for African languages: +8-15 points. MDPI 2025 survey: LLM translation varies dramatically by language resource level. English-French: LLM BLEU ~42 (matches NMT). English-Swahili: LLM BLEU ~18 (NMT: ~28). Simultaneous translation (SimulMT): produce target translation while source is still being spoken -- balancing quality vs. latency using incremental decoding with RALCP policy. Key challenge: cultural adaptation -- translating idioms and culturally-specific concepts requires deeper understanding than word-for-word mapping.
+
+## Related Articles
+
+- [AI Language Translation and Interpretation: LLM-Based Translation, Simultaneous Interpretation, and Quality Estimation](../ai-language-translation-interpretation.md)
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../ai-for-data-curation.md)
+- [Recommender Systems: Graph Neural Collaborative Filtering and LLM-Based Recommendation](../recommender-systems.md)

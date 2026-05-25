@@ -100,3 +100,9 @@ scGPT (2023, Toronto) uses a generative pretraining objective — masking gene e
 - Geneformer: Transfer Learning for Gene Networks (Theodoris et al., Nature 2023)
 - scGPT GitHub: bowang-lab/scGPT
 - HCA: Human Cell Atlas Data Portal
+
+## Related Articles
+
+- [AI for Remote Sensing: Foundation Models, Satellite Image Analysis, and Earth Observation](../ai-for-remote-sensing.md)
+- [Foundation Models: Paradigm Shift in AI](../foundation-models.md)
+- [Multi-Omics Integration: AI-Driven Systems Biology from Genomics to Proteomics](../multi-omics-integration.md)

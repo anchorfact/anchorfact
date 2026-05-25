@@ -98,3 +98,9 @@ Applications: molecular property prediction (GNN scores candidates for drug disc
 - Stanford CS224W: Machine Learning with Graphs
 - PyTorch Geometric Library
 - OGB: Open Graph Benchmark
+
+## Related Articles
+
+- [AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime](../ai-for-fraud-detection.md)
+- [Activation Functions in Neural Networks](../activation-functions.md)
+- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../ai-for-complex-networks.md)

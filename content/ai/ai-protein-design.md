@@ -100,3 +100,9 @@ RFDdiffusion uses a denoising diffusion process on protein backbone coordinates 
 - RFDiffusion GitHub (Baker Lab)
 - ColabFold (free protein folding notebook)
 - "AI for Science" (Nature collection)
+
+## Related Articles
+
+- [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../ai-for-chip-design.md)
+- [AI for Science: AlphaFold and the AI-Driven Discovery Revolution](../ai-for-science.md)
+- [Neural Architecture Search: Automated Design of Deep Neural Networks](../neural-architecture-search.md)

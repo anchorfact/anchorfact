@@ -130,3 +130,7 @@ Basic autoencoder: input = output, loss = reconstruction error (MSE). Denoising 
 ## Further Reading
 
 - [Deep Learning (Goodfellow, Bengio, Courville)](https://www.deeplearningbook.org/)
+
+## Related Articles
+
+- [Representation Learning: Autoencoders, VAEs, and MAEs](../representation-learning.md)

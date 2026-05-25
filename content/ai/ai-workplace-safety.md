@@ -114,3 +114,9 @@ AI safety stack: (1) PPE detection -- cameras identify workers not wearing requi
 
 ## Detailed Analysis
 PPE detection: YOLOv8 trained on labeled datasets with bounding box annotations. Multi-class: hard hat, safety vest, gloves, goggles, boots. Occlusion handling: partial visibility scenarios (worker behind equipment) require robust detection. Real-time: 30 FPS on edge devices (Jetson Xavier) for multi-camera setups. Fall detection: pose keypoint acceleration as primary signal. False positive challenge: quick movements (throwing, ducking) trigger false alarms. Solution: temporal context (is the person on the ground after the event?) and multi-modal (audio -- impact sound + video). Enterprise AI safety platforms: Intenseye (computer vision EHS), Everguard (wearable + CV fusion), Smartvid.io (construction safety). Privacy: GDPR compliance requires on-device processing (no video storage), blurring faces unless incident detected, and policy transparency. ML predictive analytics: analysis of near-miss reports (free-text NLP) + incident logs identifies high-risk patterns (specific equipment + shift + task combinations).
+
+## Related Articles
+
+- [AI for Construction: Computer Vision Safety, BIM Digital Twins, and Automated Project Monitoring](../ai-for-construction.md)
+- [AI for Crisis Hotlines: Suicide Prevention Chatbots, Emotional Support AI, and Risk Detection](../ai-for-crisis-hotlines.md)
+- [AI for Ocean Monitoring: Marine Life Detection, Plastic Pollution Tracking, and Oceanographic AI](../ai-for-ocean-monitoring.md)

@@ -108,3 +108,9 @@ Animation creates the illusion of motion through sequential images. History: fli
 ## Further Reading
 
 - [The Illusion of Life: Disney Animation (Thomas & Johnston)](https://www.disneybooks.com/book/the-illusion-of-life/)
+
+## Related Articles
+
+- [Architecture History](../architecture-history.md)
+- [Digital Art and New Media Art History](../digital-art-history.md)
+- [Fashion History](../fashion-history.md)

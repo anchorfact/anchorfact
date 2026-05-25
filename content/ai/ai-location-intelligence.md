@@ -91,3 +91,9 @@ Location intelligence AI stack: (1) Data -- satellite imagery (land use, buildin
 
 ## Detailed Analysis
 Site selection: the classic "location, location, location" problem. ML predicts revenue for candidate locations using features: local demographics, competition density, traffic patterns, adjacent businesses (complementary vs. competitive). Models: gradient boosting (XGBoost) and spatial autoregressive models (accounting for spatial autocorrelation). Real estate AVMs: Zillow Zestimate uses neural networks with spatial features (neighborhood comps, school quality, walkability). Location embeddings: Space2Vec encodes GPS coordinates using sinusoidal functions at multiple scales (Fourier features), enabling neural networks to learn spatial patterns. POI recommendation: predict next location a user will visit, recommend nearby points of interest. Key challenge: spatial autocorrelation (nearby observations are correlated) violates i.i.d. assumption of standard ML -- requires specialized spatial cross-validation (blocking by geographic region).
+
+## Related Articles
+
+- [AI for Remote Work: Virtual Collaboration, Productivity Analytics, and Distributed Team Intelligence](../ai-remote-work.md)
+- [AI Benchmarks: MMLU, SWE-bench, and How We Measure Intelligence](../ai-benchmarks-and-evaluation.md)
+- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../ai-blockchain.md)

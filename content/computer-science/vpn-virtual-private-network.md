@@ -79,4 +79,10 @@ WireGuard uses state-of-the-art cryptography: Curve25519 (key exchange), ChaCha2
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [AI for Beauty and Fashion: Virtual Try-On, Personalized Styling, and Trend Prediction](../../ai/ai-beauty-fashion.md)
+- [AI Digital Twins for Healthcare: Patient-Specific Simulation, Treatment Planning, and Virtual Organs](../../ai/ai-digital-twins-healthcare.md)
+- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../../ai/ai-for-complex-networks.md)

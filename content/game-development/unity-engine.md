@@ -84,3 +84,9 @@ Unity 是 Unity Technologies 开发的跨平台游戏引擎，首次发布于 20
 
 - [Unity 文档](https://docs.unity.com/): 官方文档
 - [Unity 2022 LTS](https://docs.unity3d.com/2022.3/Documentation/Manual/): 推荐生产版本
+
+## Related Articles
+
+- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
+- [Backpropagation: The Engine of Neural Network Learning](../../ai/backpropagation.md)
+- [game art pipeline](../game-art-pipeline.md)

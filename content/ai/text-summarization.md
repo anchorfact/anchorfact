@@ -102,3 +102,9 @@ Evaluation metrics: ROUGE (Recall-Oriented Understudy for Gisting Evaluation) â€
 - BART: Denoising Sequence-to-Sequence Pre-training (Lewis et al., ACL 2020)
 - PEGASUS: Pre-training with Extracted Gap-sentences (Zhang et al., ICML 2020)
 - Hugging Face Summarization Pipeline
+
+## Related Articles
+
+- [Text Classification: Zero-Shot, Few-Shot, and LLM-Based Document Categorization](../text-classification.md)
+- [AI for Mental Health: LLM-Based Therapy, Digital Interventions, and Clinical Trials](../ai-for-mental-health.md)
+- [AI Language Translation and Interpretation: LLM-Based Translation, Simultaneous Interpretation, and Quality Estimation](../ai-language-translation-interpretation.md)

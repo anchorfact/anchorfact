@@ -91,3 +91,9 @@ The Text-to-SQL problem: given a natural language question ("What were the top 5
 
 ## Detailed Analysis
 LLM-based approaches (2023-present): (1) Few-shot prompting -- provide the schema and a few example (question, SQL) pairs in the prompt. Simple but limited by context window for large schemas; (2) Decomposition -- break complex questions into sub-questions, generate sub-SQL, and combine; (3) Self-correction -- generate SQL, execute it, check results for errors, and retry. The Nature 2026 framework demonstrates a robust pipeline: schema representation encoding (embedding database metadata), retrieval-augmented schema linking (retrieve relevant table/column descriptions), SQL generation with chain-of-thought reasoning, and execution-based self-correction (execute candidate SQL, check syntax and result cardinality, regenerate if wrong). Benchmarks: Spider (standard, ~10K questions), BIRD (challenging, external knowledge required), WikiSQL (simple single-table), and SParC (interactive, multi-turn). Current SOTA: GPT-4 + self-correction achieves ~86% on Spider, ~65% on BIRD. Production tools: Dataherald, Aito, and commercial offerings from Snowflake (Cortex Analyst), Databricks (Genie), and Google BigQuery (Data QnA) are bringing NL2SQL to enterprise data warehouses.
+
+## Related Articles
+
+- [Large Language Models (LLMs)](../llms.md)
+- [AI Red Teaming: Security Testing for Language Models](../ai-red-teaming-and-safety.md)
+- [Long-Context Language Models: Beyond 1M Tokens](../long-context-models.md)

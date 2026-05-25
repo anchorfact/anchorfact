@@ -78,3 +78,9 @@ Key figures: Louis Armstrong (trumpet, scat singing, defined swing), Duke Elling
 ## Further Reading
 
 - [Jazz (Gary Giddins, Scott DeVeaux)](https://wwnorton.com/books/9780393978803)
+
+## Related Articles
+
+- [AI Music Composition: Generative Music, Style Imitation, and Creative AI Audio](../../ai/ai-music-composition.md)
+- [AI Music and Audio Generation: Suno, Udio, and MusicLM](../../ai/ai-music-generation.md)
+- [Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning](../../ai/audio-source-separation.md)

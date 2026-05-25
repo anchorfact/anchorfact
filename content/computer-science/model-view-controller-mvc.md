@@ -82,3 +82,9 @@ Variants: MVP (Model-View-Presenter), MVVM (Model-View-ViewModel, used by Vue, A
 ## Further Reading
 
 - [Patterns of Enterprise Application Architecture](undefined)
+
+## Related Articles
+
+- [GPT (Generative Pre-trained Transformer) Model Family](../../ai/gpt-models.md)
+- [Model Context Protocol (MCP)](../../ai/mcp.md)
+- [Model Compression: Pruning, Quantization, and Distillation](../../ai/model-compression.md)

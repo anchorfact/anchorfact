@@ -91,3 +91,9 @@ Cognitive architecture vs deep learning: DL learns statistical patterns from dat
 
 ## Detailed Analysis
 ACT-R example: driving a car. Declarative memory: facts about traffic rules, map knowledge. Procedural memory: IF approaching red light THEN brake; IF lane change signal THEN check mirror. Goal module: navigate to destination. The subsymbolic level makes retrieval probabilistic -- a recently used memory chunk (braking at the last red light) is more likely to be retrieved quickly. This accounts for recency and frequency effects in human behavior. arxiv 2025 integration vision: (1) LLMs as components of cognitive architectures -- replacing hand-crafted knowledge with learned language models for natural language tasks; (2) Cognitive architectures for AI safety -- modeling human-like reasoning with explicit goals and ethical constraints for interpretable AI decisions; (3) Cognitive models for human-AI interaction -- predicting how humans will interact with AI systems to design better interfaces. ResearchGate 2025 AGI framework proposes integrating ACT-R/Soar/Sigma for a unified theory of intelligence. Key challenge: cognitive architectures model behavior at the millisecond-to-minute scale in laboratory tasks; scaling to real-world, hours-long tasks remains an open problem.
+
+## Related Articles
+
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../3d-human-modeling.md)
+- [Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning](../agentic-ai.md)
+- [Computational Neuroscience: AI Models of Brain Circuits, Connectomics, and Neural Computation](../computational-neuroscience.md)

@@ -85,3 +85,9 @@ Optimization techniques: code splitting (dynamic imports), tree shaking (remove 
 ## Further Reading
 
 - [Web Vitals (Google)](https://web.dev/vitals/)
+
+## Related Articles
+
+- [AI for Digital Marketing: Personalization, Campaign Optimization, and Customer Analytics](../../ai/ai-digital-marketing.md)
+- [AI for Fleet Management: Predictive Maintenance, Route Optimization, and Telematics](../../ai/ai-fleet-management.md)
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../../ai/ai-for-data-curation.md)

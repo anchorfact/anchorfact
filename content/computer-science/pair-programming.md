@@ -97,3 +97,9 @@ Styles: Driver-Navigator (one codes, one reviews), Ping-Pong (TDD: one writes te
 ## Further Reading
 
 - [Extreme Programming Explained (2nd Ed, Kent Beck)](undefined)
+
+## Related Articles
+
+- [C++ Programming Language](../c++-language.md)
+- [C Programming Language](../c-language.md)
+- [Dynamic Programming](../dynamic-programming.md)

@@ -113,3 +113,7 @@ atomic_facts:
   - id: "fact-self-improvement-001"
     statement: "Active listening is fully concentrating on, understanding, and responding to what someone is saying — not just waiting for your turn to speak"
     confidence: "medium"
+
+## Related Articles
+
+- [AI Social Listening: Brand Monitoring, Sentiment Analysis, and Consumer Insights](../../ai/ai-social-listening.md)

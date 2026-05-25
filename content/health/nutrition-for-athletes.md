@@ -75,3 +75,9 @@ Carb loading: taper exercise + increase carbs 3 days before marathon. Glycogen s
 ## Further Reading
 
 - [Nancy Clark's Sports Nutrition Guidebook (6th Ed)](https://www.humankinetics.com/products/nancy-clarks-sports-nutrition-guidebook-6th-edition)
+
+## Related Articles
+
+- [AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition](../../ai/ai-for-food-science.md)
+- [Nutrition Fundamentals](../nutrition-fundamentals.md)
+- [Nutrition Science: Macronutrients, Micronutrients, and Diet](../nutrition-science.md)

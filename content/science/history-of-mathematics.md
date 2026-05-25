@@ -67,3 +67,9 @@ Euclid's Elements (~300 BCE): most influential math textbook ever — deductive 
 ## Further Reading
 
 - [A History of Mathematics (Carl B. Boyer, Uta Merzbach, 3rd Ed)](https://www.wiley.com/en-us/A+History+of+Mathematics%2C+3rd+Edition-p-9780470525487)
+
+## Related Articles
+
+- [AI for Mathematical Reasoning: Theorem Proving with Lean, AlphaProof, and Formal Mathematics](../../ai/ai-mathematical-reasoning.md)
+- [Animation History](../../arts/animation-history.md)
+- [Architecture History](../../arts/architecture-history.md)

@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-22'
 generation_method: human_only
 ai_models:
@@ -72,12 +72,34 @@ primary_sources:
     year: 2017
     doi: 10.1145/3062341.3062363
     institution: PLDI/ACM
+  - title: 'Not So Fast: Analyzing the Performance of WebAssembly vs. Native Code'
+    authors:
+      - Yan,Y.
+      - Tu,T.
+      - Zhao,L.
+      - Zhou,Y.
+      - Wang,W.
+    type: academic_paper
+    year: 2021
+    url: https://arxiv.org/abs/2109.10673
+    institution: arXiv
+  - title: 'Everything Old is New Again: Binary Security of WebAssembly'
+    authors:
+      - Lehmann,D.
+      - Kinder,J.
+      - Pradel,M.
+    type: academic_paper
+    year: 2020
+    url: https://arxiv.org/abs/2008.07639
+    institution: USENIX Security/arXiv
 secondary_sources:
   - title: WebAssembly Feature Status
     type: tracker
     url: https://webassembly.org/features/
     institution: Webassembly
 ---
+
+
 
 
 

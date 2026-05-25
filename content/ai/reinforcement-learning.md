@@ -86,3 +86,9 @@ Markov Decision Process (MDP): formalizes RL as (S, A, P, R, γ). Value function
 ## Further Reading
 
 - [Reinforcement Learning: An Introduction (2nd Ed, Sutton & Barto)](http://incompleteideas.net/book/the-book-2nd.html)
+
+## Related Articles
+
+- [AI for Algorithmic Trading: Reinforcement Learning, Market Prediction, and Quantitative Finance](../ai-for-algorithmic-trading.md)
+- [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../ai-for-chip-design.md)
+- [Deep Reinforcement Learning Algorithms: PPO, SAC, Dreamer, and Decision Transformer](../deep-reinforcement-learning-algorithms.md)

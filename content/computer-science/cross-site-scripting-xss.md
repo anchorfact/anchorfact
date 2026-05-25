@@ -95,4 +95,10 @@ Reflected XSS: attacker crafts URL with script in query parameter, victim clicks
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [Cross-Site Request Forgery (CSRF)](../cross-site-request-forgery-csrf.md)
+- [AI for Archaeology: Site Detection, Artifact Classification, and Digital Heritage Preservation](../../ai/ai-for-archaeology.md)
+- [AI for Location Intelligence: Geospatial Analytics, POI Recommendation, and Site Selection](../../ai/ai-location-intelligence.md)

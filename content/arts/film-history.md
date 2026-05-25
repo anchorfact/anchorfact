@@ -89,3 +89,9 @@ Silent era: Chaplin, Keaton, German Expressionism. Sound: The Jazz Singer (1927)
 ## Further Reading
 
 - [A Short History of Film (Dixon & Foster)](https://www.rutgersuniversitypress.org/a-short-history-of-film-third-edition/9780813595139/)
+
+## Related Articles
+
+- [Animation History](../animation-history.md)
+- [Architecture History](../architecture-history.md)
+- [Digital Art and New Media Art History](../digital-art-history.md)

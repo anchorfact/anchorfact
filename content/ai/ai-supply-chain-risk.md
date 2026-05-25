@@ -99,3 +99,9 @@ Supply chain risk AI: (1) Event monitoring -- NLP + event extraction from global
 
 ## Detailed Analysis
 Resilinc: monitors 400+ risk event types across 100M+ data sources. Maps client supply chains to create "what-if" impact scenarios. During COVID-19, Resilinc mapped supplier dependencies in Wuhan within 24 hours. Everstream Analytics: NLP on multilingual news + weather + IoT (ship tracking). Predictive risk scoring: probability of disruption at each node. Supplier risk: Dun & Bradstreet provides financial health scores. AI combines financial + quality + delivery + geopolitical into composite supplier risk score. China+1 risk: Taiwan semiconductor supply chain concentration. AI maps global semiconductor supply chain dependencies from TSMC through component makers to end products. Multi-echelon: Tier 1 supplier visibility is common; Tier 2-3 visibility requires mapping efforts. AI can infer Tier 2-3 from public data (trade data, factory registration). Key challenge: supply chain data is proprietary -- companies reluctant to share supplier lists with AI platforms.
+
+## Related Articles
+
+- [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../ai-air-quality.md)
+- [AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling](../ai-customer-analytics.md)
+- [AI for Nuclear Fusion: Plasma Control, Disruption Prediction, and Accelerated Discovery](../ai-for-nuclear-fusion.md)

@@ -92,3 +92,7 @@ Persistence: RDB (point-in-time snapshots) and AOF (append-only file log). Pub/S
 ## Further Reading
 
 - [Redis Documentation](https://redis.io/docs/)
+
+## Related Articles
+
+- [Redis Data Types](../redis-data-types.md)

@@ -117,3 +117,9 @@ Example: wrapping a third-party logging library behind your application's Logger
 ## Further Reading
 
 - [Design Patterns (Gang of Four)](undefined)
+
+## Related Articles
+
+- [Command Pattern](../command-pattern.md)
+- [Decorator Pattern](../decorator-pattern.md)
+- [Factory Method Pattern](../factory-method-pattern.md)

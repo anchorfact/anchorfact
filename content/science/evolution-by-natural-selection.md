@@ -85,3 +85,9 @@ Key concepts: variation (individuals differ), heritability (traits passed to off
 ## Further Reading
 
 - [On the Origin of Species (Charles Darwin, 1859)](https://www.gutenberg.org/ebooks/1228)
+
+## Related Articles
+
+- [AI for Location Intelligence: Geospatial Analytics, POI Recommendation, and Site Selection](../../ai/ai-location-intelligence.md)
+- [Natural Language Processing (NLP)](../../ai/natural-language-processing-nlp.md)
+- [Text-to-SQL: Natural Language Database Querying with Large Language Models](../../ai/text-to-sql.md)

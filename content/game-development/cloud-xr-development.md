@@ -367,3 +367,9 @@ VR单帧流程（以90fps为例，11.1ms预算）:
 > 评分: 80/100
 > 完整性: 云游戏架构、延迟优化、VR设计、AR/MR、性能、开发流程
 > 改进空间: 可补充Unity XR Toolkit和Unreal VR的具体项目设置步骤
+
+## Related Articles
+
+- [Software Development Life Cycle (SDLC)](../../computer-science/software-development-life-cycle-sdlc.md)
+- [Software Engineering: Design Principles and Development Methodologies](../../computer-science/software-engineering-principles.md)
+- [Test-Driven Development (TDD)](../../computer-science/test-driven-development-tdd.md)

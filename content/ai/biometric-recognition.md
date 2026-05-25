@@ -95,3 +95,9 @@ Biometric modalities: (1) Face -- the most widely deployed. ArcFace (Deng et al.
 
 ## Detailed Analysis
 ArcFace architecture: ResNet backbone + ArcFace head. The key innovation: the classification boundary is defined by angular margin in hyperspherical space. For identity i, the logit is s*cos(theta_i + m) where m is the angular margin. This forces embeddings of same identity closer together and different identities further apart in angular space. ScienceDirect 2025 multimodal system: trains separate CNNs for face, fingerprint, and iris. Fusion: score-level (weighted average of individual classifier scores) and feature-level (concatenated embeddings from all three modalities into a joint classifier). Multimodal fusion compensates for individual modality failures (face fails with masks, fingerprint fails with wet/dirty fingers). NIST FRVT (Face Recognition Vendor Test) provides the authoritative benchmark. Key challenges: (1) Bias -- face recognition accuracy varies by race and gender (NIST 2019 found 10-100x higher false match rates for some demographics); (2) Privacy -- biometric data is immutable; a compromised fingerprint cannot be changed. Template protection (cancelable biometrics, fuzzy extractors) and homomorphic encryption for matching are active research areas.
+
+## Related Articles
+
+- [Speaker Recognition: Voice Biometrics, Diarization, and Deep Learning for Speaker Verification](../speaker-recognition.md)
+- [Affective Computing: Multimodal Emotion Recognition, Sentiment Analysis, and Empathetic AI](../affective-computing.md)
+- [AI for Accessibility: Assistive Technologies, Sign Language Recognition, and Inclusive Systems](../ai-for-accessibility.md)

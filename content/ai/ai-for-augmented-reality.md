@@ -93,3 +93,9 @@ AR AI stack: (1) Scene understanding -- LiDAR + cameras create real-time 3D mesh
 
 ## Detailed Analysis
 Apple Vision Pro: R1 chip dedicated to real-time sensor processing -- ingesting camera, LiDAR, IMU, and microphone data with 12ms latency to prevent motion sickness. Scene understanding enables persistent anchors -- the AR system remembers where it placed virtual objects across sessions. Meta Quest 3: uses Snapdragon XR2 Gen 2 with 2x GPU performance for mixed reality passthrough. AI-powered hand tracking enables controller-free interaction. Industrial AR: Microsoft HoloLens overlays assembly instructions, highlights parts to pick, and verifies correct assembly via computer vision. Remote assistance: expert sees worker's view, draws AR annotations. Key challenge: form factor -- current headsets are bulky. AI-efficient rendering and on-device NPUs enable thinner, lighter glasses. All-day battery life requires extreme AI efficiency (sub-1W for always-on scene understanding).
+
+## Related Articles
+
+- [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../3d-generation-gaussian-splatting.md)
+- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../ai-call-center.md)
+- [AI for Digital Twins: Real-Time Simulation, Predictive Maintenance, and System Optimization](../ai-for-digital-twins.md)

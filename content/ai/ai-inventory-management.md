@@ -105,3 +105,9 @@ Inventory AI: (1) Demand forecasting -- predict how much of each SKU will sell a
 
 ## Detailed Analysis
 DeepAR (Amazon, 2020): autoregressive RNN predicting probability distribution parameters (negative binomial for count data, Gaussian for continuous). Enables cold-start forecasting for new products via item embeddings. Amazon SCOT: production system processing billions of time series across global fulfillment network. TFT: attention-based model with variable selection networks for multi-horizon forecasting, interpretable importance weights showing which features drive predictions. Learned Reorder Point (RL): treat inventory as MDP -- state (inventory level, on-order, demand history), action (order quantity), reward (sales - holding cost - stockout penalty). RL learns dynamic reorder points adapting to demand patterns. Omnichannel allocation: ship-from-store (fulfill online orders from nearby stores). AI balances store inventory (serving in-store customers) vs fulfillment capacity. Key challenge: the bullwhip effect -- demand variability amplifies up the supply chain. AI reduces amplification through better forecasting and information sharing.
+
+## Related Articles
+
+- [AI for Fleet Management: Predictive Maintenance, Route Optimization, and Telematics](../ai-fleet-management.md)
+- [AI for Smart Grids: Load Forecasting, Demand Response, and Grid Stability](../ai-smart-grids.md)
+- [AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation](../ai-content-creation.md)

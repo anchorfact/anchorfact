@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: science
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -92,6 +92,20 @@ primary_sources:
     year: 2022
     doi: 10.1515/pac-2019-0603
     institution: IUPAC/Pure and Applied Chemistry
+  - title: On the Ontology of the Periodic Table
+    authors:
+      - Scerri,E.R.
+    type: academic_paper
+    year: 2019
+    doi: 10.1007/s10698-019-09337-0
+    institution: Foundations of Chemistry
+  - title: Four New Elements Complete the Seventh Row of the Periodic Table
+    authors:
+      - IUPAC
+    type: standard
+    year: 2024
+    url: https://iupac.org/four-new-elements-complete-seventh-row/
+    institution: IUPAC
 secondary_sources:
   - title: The Disappearing Spoon
     type: book
@@ -106,6 +120,8 @@ secondary_sources:
 ---
 
 
+
+
 ## TL;DR
 
 The periodic table (Dmitri Mendeleev, 1869) organizes all 118 known chemical elements by atomic number, electron configuration, and recurring chemical properties. Groups (columns) share similar properties. Periods (rows) reflect electron shell filling. Mendeleev famously predicted properties of undiscovered elements — correctly.
@@ -117,3 +133,7 @@ Structure: 7 periods, 18 groups. Blocks: s-block (groups 1-2), p-block (13-18), 
 ## Further Reading
 
 - [Periodic Table (IUPAC)](https://iupac.org/what-we-do/periodic-table-of-elements/)
+
+## Related Articles
+
+- [Hash Table](../../computer-science/hash-table.md)

@@ -97,3 +97,9 @@ TinyML pipeline: (1) Train large model (TF/PyTorch); (2) Quantize — reduce 32-
 - TensorFlow Lite for Microcontrollers (TinyML)
 - Flower: A Friendly Federated Learning Framework
 - Edge Impulse: TinyML Development Platform
+
+## Related Articles
+
+- [AI for Language Learning: Intelligent Tutoring, Speech Assessment, and Personalized Curriculum](../ai-for-language-learning.md)
+- [AI in Education: Personalized Learning and Intelligent Tutoring Systems](../ai-in-education.md)
+- [Edge AI and TinyML: Intelligence at the Edge](../edge-ai-and-tinyml.md)

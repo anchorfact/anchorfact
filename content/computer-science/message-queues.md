@@ -84,3 +84,7 @@ Patterns: Point-to-Point (one consumer), Publish-Subscribe (many consumers), Com
 ## Further Reading
 
 - [Enterprise Integration Patterns (Hohpe & Woolf)](undefined)
+
+## Related Articles
+
+- [Graph Neural Networks: Message Passing and Applications](../../ai/graph-neural-networks.md)

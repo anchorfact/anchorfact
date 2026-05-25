@@ -78,4 +78,8 @@ HTTP status codes are three-digit numbers indicating request outcome. 1xx (Infor
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [Hypertext Transfer Protocol (HTTP)](../http-protocol.md)

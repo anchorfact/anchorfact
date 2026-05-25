@@ -76,3 +76,9 @@ Cusco: capital, 'navel of the world.' Government: highly centralized, labor tax 
 ## Further Reading
 
 - [The Last Days of the Incas (Kim MacQuarrie)](https://www.simonandschuster.com/books/The-Last-Days-of-the-Incas/Kim-MacQuarrie/9780743260503)
+
+## Related Articles
+
+- [Aztec Empire](../aztec-empire.md)
+- [Byzantine Empire](../byzantine-empire.md)
+- [Mongol Empire](../mongol-empire.md)

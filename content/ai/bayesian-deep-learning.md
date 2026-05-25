@@ -108,3 +108,9 @@ Types of uncertainty: aleatoric (inherent data noise, irreducible) and epistemic
 - Bayesian Deep Learning Workshop (NeurIPS)
 - Pyro: Probabilistic Programming
 - TensorFlow Probability
+
+## Related Articles
+
+- [AI for Signal Processing: Deep Learning for Wireless, Radar, and Biomedical Signals](../ai-for-signal-processing.md)
+- [Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning](../audio-source-separation.md)
+- [AI Biometric Recognition: Fingerprint, Iris, Face, and Multimodal Deep Learning Systems](../biometric-recognition.md)

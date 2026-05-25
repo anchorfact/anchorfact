@@ -92,3 +92,9 @@ The problem: given an image or video of a person, recover their 3D body shape an
 
 ## Detailed Analysis
 HMR (2018): CNN encoder extracts image features -> iterative 3D regression module predicts SMPL parameters. SPIN (2019): alternates between optimization (SMPLify -- optimize SMPL parameters to fit 2D keypoints) and regression (trained on optimization outputs). This self-improving loop boosts accuracy. PARE (2021): part attention mechanism learns which body parts are visible vs. occluded. TokenHMR (2024): transformer-based, treats pose tokens as queries attending to image features. Applications: virtual try-on (Zalando, Amazon), markerless motion capture (Move AI, Plask), fitness form analysis from single-camera video, and AR/VR avatars from a selfie. Key limitations: clothing (SMPL models naked body shape; clothed body requires separate CAPE/SCARF models) and monocular depth ambiguity -- single-view 3D reconstruction is fundamentally ill-posed.
+
+## Related Articles
+
+- [Cognitive Architectures: ACT-R, Soar, and Computational Models of Human-Like Reasoning](../cognitive-architectures.md)
+- [Human Pose Estimation: 2D/3D Keypoint Detection and Transformer-Based Body Tracking](../human-pose-estimation.md)
+- [State Space Models: Mamba, Linear-Time Sequence Modeling, and Alternatives to Transformers](../state-space-models.md)

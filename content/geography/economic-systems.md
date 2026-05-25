@@ -84,3 +84,9 @@ Capitalism: Adam Smith (Wealth of Nations, 1776), invisible hand, supply/demand.
 ## Further Reading
 
 - [Economics (Samuelson & Nordhaus, 19th Ed)](https://www.mheducation.com/highered/product/economics-samuelson-nordhaus/M9780073511290.html)
+
+## Related Articles
+
+- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../../ai/ai-blockchain.md)
+- [AI Content Moderation Platforms: Large-Scale Safety Systems, Policy Engines, and Multilingual Review](../../ai/ai-content-moderation-platforms.md)
+- [AI for Disaster Prediction: Earthquake Forecasting, Flood Detection, and Early Warning Systems](../../ai/ai-disaster-prediction.md)

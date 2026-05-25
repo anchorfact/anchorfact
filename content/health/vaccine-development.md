@@ -66,3 +66,9 @@ mRNA vaccines (Pfizer-BioNTech, Moderna) encode the SARS-CoV-2 spike protein. Li
 - CDC: How Vaccines Work
 - WHO: Immunization Coverage
 - NEJM: mRNA Vaccine Mechanisms
+
+## Related Articles
+
+- [Software Development Life Cycle (SDLC)](../../computer-science/software-development-life-cycle-sdlc.md)
+- [Software Engineering: Design Principles and Development Methodologies](../../computer-science/software-engineering-principles.md)
+- [Test-Driven Development (TDD)](../../computer-science/test-driven-development-tdd.md)

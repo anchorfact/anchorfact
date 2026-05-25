@@ -80,3 +80,7 @@ Conventions: model file name maps to table name, controller actions map to URL p
 ## Further Reading
 
 - [Ruby on Rails Guides](https://guides.rubyonrails.org/)
+
+## Related Articles
+
+- [Ruby Language](../ruby-language.md)

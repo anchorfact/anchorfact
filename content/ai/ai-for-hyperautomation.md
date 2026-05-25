@@ -88,3 +88,9 @@ RPA: rule-based automation of repetitive tasks -- "if this, then that" on the UI
 
 ## Detailed Analysis
 Intelligent Document Processing (IDP) pipeline: (1) Document ingestion and classification -- is this an invoice, a contract, or a medical record?; (2) OCR and layout analysis -- detect text blocks, tables, and key-value pairs; (3) Entity extraction -- extract specific fields (vendor name, total amount, due date) using NLP/NER; (4) Validation -- cross-check extracted data against business rules and databases; (5) Exception handling -- flag low-confidence extractions for human review. The MDPI 2025 Industry 5.0 framework emphasizes human-AI collaboration rather than full automation -- AI handles routine cases, humans handle exceptions and strategic decisions. Key platforms: UiPath (market leader, $1B+ ARR), Automation Anywhere, Microsoft Power Automate, Blue Prism. Process mining leaders: Celonis, Signavio (SAP). The trend toward "agentic automation" (2025-2026) adds LLM-powered autonomous agents that can reason about multi-step processes and dynamically compose automation workflows, moving beyond pre-programmed RPA scripts.
+
+## Related Articles
+
+- [AI Document Understanding: Layout Parsing, Structured Extraction, and Intelligent Document Processing](../ai-document-understanding.md)
+- [AI for Customer Service: Conversational Agents, Ticket Routing, and Intelligent Contact Centers](../ai-customer-service.md)
+- [AI for Document Digitization: Historical Archives, Handwriting Recognition, and Mass Digitization](../ai-document-digitization.md)

@@ -83,3 +83,9 @@ Freestyle technique: high elbow catch, body rotation (45-60°), 6-beat kick. Bac
 ## Further Reading
 
 - [World Aquatics Rules](https://www.worldaquatics.com/swimming/rules)
+
+## Related Articles
+
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../../ai/ai-for-data-curation.md)
+- [AI Training Data Curation: Quality at Scale](../../ai/ai-training-data-curation.md)
+- [Data-Centric AI: The Systematic Engineering of Training Data](../../ai/data-centric-ai.md)

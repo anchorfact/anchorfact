@@ -94,3 +94,9 @@ Dialogue state tracking tracks slot values (confirmed/requested), dialogue acts 
 - Rasa Open Source Documentation
 - Google Dialogue Flow CX
 - ParlAI (Facebook AI Research)
+
+## Related Articles
+
+- [AI for Customer Service: Conversational Agents, Ticket Routing, and Intelligent Contact Centers](../ai-customer-service.md)
+- [AI for Crisis Hotlines: Suicide Prevention Chatbots, Emotional Support AI, and Risk Detection](../ai-for-crisis-hotlines.md)
+- [AI Democratization: Open-Source Models, Low-Code AI, and Accessible Machine Learning](../ai-for-democratization.md)

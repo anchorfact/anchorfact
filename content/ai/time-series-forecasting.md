@@ -128,3 +128,9 @@ Deep learning for time series: LSTMs handle long-term dependencies; Transformers
 - Nixtla: StatsForecast & NeuralForecast Libraries
 - Kaggle: Time Series Competitions
 - Hyndman: Forecasting: Principles and Practice
+
+## Related Articles
+
+- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../adversarial-machine-learning.md)
+- [AI for Drug Repurposing: Identifying New Uses for Existing Drugs Through Machine Learning](../ai-drug-repurposing.md)
+- [AI Democratization: Open-Source Models, Low-Code AI, and Accessible Machine Learning](../ai-for-democratization.md)

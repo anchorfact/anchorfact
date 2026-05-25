@@ -99,3 +99,9 @@ Remote sensing foundation models (RSFMs): the challenge is that ImageNet-pretrai
 - NASA Earthdata & Prithvi Model on Hugging Face
 - Google Earth Engine: Planetary-Scale Geospatial Analysis
 - Global Forest Watch: AI-Powered Deforestation Monitoring
+
+## Related Articles
+
+- [AI for Genomics: Single-Cell Foundation Models and RNA Biology](../ai-for-genomics.md)
+- [AI for Space Exploration: Autonomous Navigation, Earth Observation, and Spacecraft Autonomy](../ai-for-space-exploration.md)
+- [AI for Land Use Classification: Satellite Image Segmentation, Urban Expansion Mapping, and Agricultural Monitoring](../ai-land-use-classification.md)

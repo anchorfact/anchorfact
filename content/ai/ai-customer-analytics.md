@@ -107,3 +107,9 @@ Customer analytics AI: (1) Segmentation -- unsupervised: clustering purchase/beh
 
 ## Detailed Analysis
 XGBoost churn benchmark: 85-92% AUC. Feature importance: recency (days since last activity) is the strongest predictor. SHAP values explain individual predictions. Uplift modeling: four customer types -- Sure Things (buy anyway), Persuadables (buy if targeted), Sleeping Dogs (churn if targeted), Lost Causes (won't buy). Only target Persuadables. Qini curve measures uplift. Contextual bandits for next-best-action: action space = {send discount, send email, do nothing}. Reward = conversion - cost. Thompson sampling selects optimal action per customer. Amplitude: product analytics tracking user actions, AI identifies behavioral cohorts and engagement patterns. Google Analytics 4: ML-powered predictive metrics (purchase probability, churn probability) built into free analytics. Key challenge: data fragmentation -- customer data siloed across CRM, support, product, and billing systems. CDP (Customer Data Platform) with identity resolution unifies the view.
+
+## Related Articles
+
+- [Customer Lifetime Value (CLV)](../../business/customer-lifetime-value-clv.md)
+- [AI for Digital Marketing: Personalization, Campaign Optimization, and Customer Analytics](../ai-digital-marketing.md)
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../ai-for-climate-science.md)

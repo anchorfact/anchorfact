@@ -60,4 +60,10 @@ Godot's scene system: everything is a scene (player, enemy, level) that can be n
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [Backpropagation: The Engine of Neural Network Learning](../../ai/backpropagation.md)
+- [Unity Game Engine](../unity-engine.md)
+- [Unreal Engine 5](../unreal-engine-5.md)

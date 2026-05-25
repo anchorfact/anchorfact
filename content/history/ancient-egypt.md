@@ -120,3 +120,9 @@ Key periods: Old Kingdom (pyramid age, Great Pyramid of Giza built for Khufu), M
 ## Further Reading
 
 - [The Oxford History of Ancient Egypt (Ian Shaw)](https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587)
+
+## Related Articles
+
+- [Ancient Greek Literature](../../arts/ancient-greek-literature.md)
+- [Ancient Egyptian Civilization: Pharaohs, Pyramids, and Afterlife](../ancient-egyptian-civilization.md)
+- [Ancient Mesopotamia: Cradle of Civilization](../ancient-mesopotamia.md)

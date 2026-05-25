@@ -124,3 +124,9 @@ atomic_facts:
   - id: "fact-self-improvement-003"
     statement: "'I' statements: 'I feel X when Y because 7-38-55 rule (Mehrabian): words 7%, tone 38%, body language 55% — but only for emotional/attitudinal communication"
     confidence: "medium"
+
+## Related Articles
+
+- [Negotiation Skills](../../business/negotiation-skills.md)
+- [Networking Skills](../../business/networking-skills.md)
+- [Sports Psychology: Mental Skills for Peak Performance](../../sports/sports-psychology-performance.md)

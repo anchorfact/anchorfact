@@ -114,3 +114,9 @@ CSS (Cascading Style Sheets) is a stylesheet language developed by the W3C that 
 
 - [MDN CSS](https://developer.mozilla.org/en-US/docs/Web/CSS): Comprehensive reference
 - [CSS Spec (W3C)](https://www.w3.org/TR/css-2024/): Official specification
+
+## Related Articles
+
+- [AI Music Composition: Generative Music, Style Imitation, and Creative AI Audio](../../ai/ai-music-composition.md)
+- [AI Writing Assistants: Grammar Checking, Style Enhancement, and Collaborative Authorship](../../ai/ai-writing-assistants.md)
+- [Neural Style Transfer: Artistic Rendering, Image-to-Image Translation, and Creative AI](../../ai/neural-style-transfer.md)

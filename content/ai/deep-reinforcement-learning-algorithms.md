@@ -101,3 +101,9 @@ Offline RL trains from fixed datasets without environment interaction — Decisi
 - Spinning Up in Deep RL (OpenAI)
 - Stable-Baselines3 Library
 - RLHF in Practice
+
+## Related Articles
+
+- [Optimization Algorithms for Deep Learning](../optimization-algorithms.md)
+- [AI for Algorithmic Trading: Reinforcement Learning, Market Prediction, and Quantitative Finance](../ai-for-algorithmic-trading.md)
+- [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../ai-for-chip-design.md)

@@ -96,3 +96,9 @@ Scaled Dot-Product Attention: Attention(Q,K,V) = softmax(QK^T/√d_k)V. Q=query,
 ## Further Reading
 
 - [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
+
+## Related Articles
+
+- [Attention Mechanism](../attention-mechanism.md)
+- [Attention Mechanisms: Scaled Dot-Product to FlashAttention](../attention-mechanisms-deep-dive.md)
+- [Self-Supervised Learning: Learning Without Labels](../self-supervised-learning.md)

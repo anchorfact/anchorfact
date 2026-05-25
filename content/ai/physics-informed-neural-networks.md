@@ -99,3 +99,9 @@ PINN evolution: (1) Vanilla PINN (2019) uses fully-connected networks with tanh 
 - Raissi et al., Science (2019) — Physics-informed neural networks: A deep learning framework for solving forward and inverse problems
 - NVIDIA Modulus: Physics-ML Framework
 - DeepXDE: PINN Library (Lu Lu, Brown University)
+
+## Related Articles
+
+- [Neural Architecture Search: Automated Design of Deep Neural Networks](../neural-architecture-search.md)
+- [Activation Functions in Neural Networks](../activation-functions.md)
+- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../ai-for-complex-networks.md)

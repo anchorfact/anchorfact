@@ -123,3 +123,9 @@ Machine translation for low-resource: the IEEE 2025 survey on low-resource MT do
 - NLLB: No Language Left Behind (Meta, 2022)
 - Masakhane: NLP for African Languages Community
 - XLM-R: Unsupervised Cross-lingual Representation Learning
+
+## Related Articles
+
+- [AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation](../ai-code-translation.md)
+- [AI Democratization: Open-Source Models, Low-Code AI, and Accessible Machine Learning](../ai-for-democratization.md)
+- [AI Language Translation and Interpretation: LLM-Based Translation, Simultaneous Interpretation, and Quality Estimation](../ai-language-translation-interpretation.md)

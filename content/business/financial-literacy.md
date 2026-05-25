@@ -119,3 +119,8 @@ Compound interest formula: A = P(1 + r/n)^(nt). Credit score (FICO): payment his
 ## Further Reading
 
 - [Your Money or Your Life (Vicki Robin, Joe Dominguez)](https://www.penguinrandomhouse.com/books/180511/your-money-or-your-life-by-vicki-robin/)
+
+## Related Articles
+
+- [AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime](../../ai/ai-for-fraud-detection.md)
+- [AI for Personal Finance: Robo-Advisors, Automated Budgeting, and Financial Wellness](../../ai/ai-personal-finance.md)

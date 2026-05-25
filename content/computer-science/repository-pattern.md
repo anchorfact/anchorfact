@@ -84,3 +84,9 @@ Provides: collection-like interface (add, remove, find), query methods, separati
 ## Further Reading
 
 - [Patterns of Enterprise Application Architecture](undefined)
+
+## Related Articles
+
+- [Adapter Pattern](../adapter-pattern.md)
+- [Command Pattern](../command-pattern.md)
+- [Decorator Pattern](../decorator-pattern.md)

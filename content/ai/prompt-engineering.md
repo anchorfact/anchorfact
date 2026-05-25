@@ -105,3 +105,9 @@ Prompt templates with variables enable dynamic prompt construction for productio
 - OpenAI: Prompt Engineering Guide
 - Anthropic: Prompt Library
 - Prompting Guide (DAIR.AI)
+
+## Related Articles
+
+- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../adversarial-machine-learning.md)
+- [AI for Code Generation: LLMs as Software Engineering Copilots](../ai-for-code-generation.md)
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../ai-for-data-curation.md)

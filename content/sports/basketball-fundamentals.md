@@ -81,3 +81,9 @@ atomic_facts:
   - id: "fact-sports-002"
     statement: "NBA (1946) is the premier professional league"
     confidence: "medium"
+
+## Related Articles
+
+- [Basketball Rules and Fundamentals](../basketball-rules.md)
+- [Photography Fundamentals and Composition](../../arts/photography-fundamentals.md)
+- [Poetry Fundamentals](../../arts/poetry-fundamentals.md)

@@ -258,3 +258,9 @@ secondary_sources:
 - GDC Talks on Level Design (multiple)
 - [参见：game-design-principles.md#核心游戏循环]
 - [参见：player-psychology.md#心流理论]
+
+## Related Articles
+
+- [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../../ai/ai-for-chip-design.md)
+- [AI Protein Design: RFDiffusion, ProteinMPNN, and the Nobel Revolution](../../ai/ai-protein-design.md)
+- [Neural Architecture Search: Automated Design of Deep Neural Networks](../../ai/neural-architecture-search.md)

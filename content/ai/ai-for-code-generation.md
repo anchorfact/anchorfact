@@ -101,3 +101,9 @@ Key research directions: (1) Fill-in-the-middle (FIM) training -- models learn t
 - SWE-bench Leaderboard: swebench.com
 - A Survey on Code Generation with LLM-based Agents (arxiv 2508.00083)
 - GitHub Copilot / Cursor / Claude Code / Aider / OpenHands
+
+## Related Articles
+
+- [AI for Software Testing: Automated Test Generation, Fuzzing, and Quality Assurance](../ai-for-software-testing.md)
+- [Software Engineering: Design Principles and Development Methodologies](../../computer-science/software-engineering-principles.md)
+- [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../3d-generation-gaussian-splatting.md)

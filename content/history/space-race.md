@@ -87,3 +87,9 @@ Sputnik shocked US → NASA created (1958), massive STEM education push. Mercury
 ## Further Reading
 
 - [The Right Stuff (Tom Wolfe)](https://us.macmillan.com/books/9780312427566/therightstuff)
+
+## Related Articles
+
+- [AI for Space Exploration: Autonomous Navigation, Earth Observation, and Spacecraft Autonomy](../../ai/ai-for-space-exploration.md)
+- [State Space Models: Mamba, Linear-Time Sequence Modeling, and Alternatives to Transformers](../../ai/state-space-models.md)
+- [Transformer Variants: From Encoder-Decoder to Mamba State Space Models](../../ai/transformer-architecture-variants.md)

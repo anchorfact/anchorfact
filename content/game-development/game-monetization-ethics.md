@@ -64,4 +64,10 @@ Models: premium (one-time purchase), F2P (microtransactions), subscription (Game
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [AI Ethics and Algorithmic Bias](../../ai/ai-ethics-and-bias.md)
+- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
+- [game art pipeline](../game-art-pipeline.md)

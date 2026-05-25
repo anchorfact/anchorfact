@@ -99,3 +99,9 @@ Satellite AI: (1) Object detection -- identify objects (ships, aircraft, vehicle
 
 ## Detailed Analysis
 Ship detection: xView and DOTA datasets -- annotated satellite images with 60+ object classes. YOLO/DETR adapted for tiny object detection via multi-scale feature pyramids. Maxar (30cm) enables vehicle-level detection. Orbital Insight: AI tracks oil storage tank levels (floating roof height from SAR), retail parking lot fullness, and construction activity from satellite time series. Descartes Labs: AI crop yield forecasting from satellite vegetation indices. MapWithAI (Meta): AI-extracted roads added to OpenStreetMap. Key challenge: cloud cover -- 67% of Earth is cloud-covered at any time. SAR (Sentinel-1) penetrates clouds, but SAR+optical fusion AI is still developing. Temporal resolution: revisit time (1-16 days) limits real-time monitoring.
+
+## Related Articles
+
+- [AI for Surveillance Systems: Object Tracking, Anomaly Detection, and Intelligent Monitoring](../ai-surveillance-systems.md)
+- [AI for Ocean Monitoring: Marine Life Detection, Plastic Pollution Tracking, and Oceanographic AI](../ai-for-ocean-monitoring.md)
+- [AI for Video Surveillance: Intelligent Monitoring, Anomaly Detection, and Privacy-Preserving Analytics](../ai-for-video-surveillance.md)

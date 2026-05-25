@@ -69,3 +69,9 @@ Copernicus: earth orbits sun (De Revolutionibus, 1543) — published on his deat
 ## Further Reading
 
 - [The Structure of Scientific Revolutions (Thomas Kuhn)](https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html)
+
+## Related Articles
+
+- [The Scientific Revolution: From Copernicus to Newton](../../history/scientific-revolution.md)
+- [AI for Science: AlphaFold and the AI-Driven Discovery Revolution](../../ai/ai-for-science.md)
+- [AI Protein Design: RFDiffusion, ProteinMPNN, and the Nobel Revolution](../../ai/ai-protein-design.md)

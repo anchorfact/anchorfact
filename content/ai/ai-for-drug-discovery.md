@@ -96,3 +96,9 @@ AlphaFold3 architecture: diffusion-based model that operates on atomic coordinat
 - Isomorphic Labs Official Website
 - DiffDock: Diffusion Steps, Twists, and Turns for Molecular Docking (Corso et al., 2024)
 - Insilico Medicine AI-Discovered Drug Pipeline
+
+## Related Articles
+
+- [AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation](../ai-content-creation.md)
+- [AI for Science: AlphaFold and the AI-Driven Discovery Revolution](../ai-for-science.md)
+- [AI for Data Visualization: Automated Chart Generation, Insight Discovery, and Visual Analytics](../ai-for-visualization.md)

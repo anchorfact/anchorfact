@@ -111,3 +111,9 @@ atomic_facts:
   - id: "fact-geography-001"
     statement: "Islam: Sunni (85-90%), Shia — Five Pillars (prayer, fasting, charity, pilgrimage, faith declaration)"
     confidence: "medium"
+
+## Related Articles
+
+- [Embodied AI: Robots That Learn from the Physical World](../../ai/embodied-ai-and-robotics.md)
+- [World Models: Video Prediction, Physical Reasoning, and Interactive AI](../../ai/world-models-video-prediction.md)
+- [World Literature](../../arts/world-literature.md)

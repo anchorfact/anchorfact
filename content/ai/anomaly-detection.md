@@ -98,3 +98,9 @@ One-class SVM learns a decision boundary enclosing normal data with maximum marg
 - PyOD: Python Outlier Detection Toolkit
 - scikit-learn: Novelty and Outlier Detection
 - Papers With Code: Anomaly Detection
+
+## Related Articles
+
+- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../adversarial-machine-learning.md)
+- [AI for Drug Repurposing: Identifying New Uses for Existing Drugs Through Machine Learning](../ai-drug-repurposing.md)
+- [AI Democratization: Open-Source Models, Low-Code AI, and Accessible Machine Learning](../ai-for-democratization.md)

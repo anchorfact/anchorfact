@@ -105,3 +105,9 @@ Mamba architecture: selective SSM blocks with (1) input projection → (2) 1D co
 - S4: Efficiently Modeling Long Sequences with Structured State Spaces (Gu et al., ICLR 2022)
 - Jamba: Hybrid SSM-Transformer from AI21 Labs
 - Mamba GitHub: state-spaces/mamba
+
+## Related Articles
+
+- [Transformer Variants: From Encoder-Decoder to Mamba State Space Models](../transformer-architecture-variants.md)
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../3d-human-modeling.md)
+- [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../3d-generation-gaussian-splatting.md)

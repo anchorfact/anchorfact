@@ -98,3 +98,9 @@ Autonomy: control over time, task, technique, team. McGregor's Theory X: workers
 ## Further Reading
 
 - [Drive: The Surprising Truth About What Motivates Us (Daniel Pink)](https://www.penguinrandomhouse.com/books/308034/drive-by-daniel-h-pink/)
+
+## Related Articles
+
+- [AI for Fleet Management: Predictive Maintenance, Route Optimization, and Telematics](../../ai/ai-fleet-management.md)
+- [AI for Inventory Management: Demand Forecasting, Stock Optimization, and Automated Replenishment](../../ai/ai-inventory-management.md)
+- [AI for Water Management: Leak Detection, Quality Monitoring, and Smart Irrigation](../../ai/ai-water-management.md)

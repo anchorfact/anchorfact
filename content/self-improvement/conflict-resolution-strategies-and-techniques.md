@@ -44,3 +44,9 @@ Key frameworks: (1) Thomas-Kilmann Conflict Mode Instrument (TKI) — 5 conflict
 
 ---
 > 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。
+
+## Related Articles
+
+- [Dropout and Regularization Techniques](../../ai/dropout-and-regularization.md)
+- [Multi-Agent Reinforcement Learning: Cooperation, Competition, and Emergent Strategies](../../ai/multi-agent-reinforcement-learning.md)
+- [Prompt Engineering: Techniques for LLM Interaction](../../ai/prompt-engineering.md)

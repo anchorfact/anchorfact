@@ -101,3 +101,9 @@ DeepMind's approach (2022): A deep RL agent was trained in a simulator to contro
 - DeepMind Blog: Accelerating fusion science through learned plasma control
 - TAE Technologies: Norman fusion device AI control
 - Commonwealth Fusion Systems / SPARC: AI for HTS magnet tokamak operations
+
+## Related Articles
+
+- [AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition](../ai-for-food-science.md)
+- [AI for Supply Chain Risk: Disruption Prediction, Supplier Monitoring, and Resilience Analytics](../ai-supply-chain-risk.md)
+- [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../ai-air-quality.md)

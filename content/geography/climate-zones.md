@@ -69,3 +69,9 @@ A Tropical: year-round warm, high rainfall — rainforest (Af), monsoon (Am), sa
 ## Further Reading
 
 - [Köppen Climate Classification](https://www.britannica.com/science/Koppen-climate-classification)
+
+## Related Articles
+
+- [Global Climate Zones and Terrestrial Biomes](../climate-zones-and-biomes.md)
+- [World Climate Zones: Classification and Characteristics](../world-climate-zones-classification-and-characteristics.md)
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)

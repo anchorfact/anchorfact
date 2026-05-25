@@ -115,3 +115,9 @@ Crisis AI: (1) Triage -- NLP classifies incoming messages by risk level (active 
 
 ## Detailed Analysis
 Crisis Text Line (2013-2025): volunteer crisis counselors + ML triage. Processed 10M+ conversations. ML trained on proprietary risk-labeled data. Active rescues: when imminent risk detected, alerts emergency services with texter location. The Trevor Project: LLM chatbot providing affirming support for LGBTQ+ youth (higher suicide risk). Counselor training AI (Crisis Contact Simulator): volunteer counselors practice with AI personas before real conversations. Meta suicide prevention: AI detects self-harm signals in posts, comments, and Facebook Live streams. Community Operations team reviews 24/7. Wellness check referrals to local authorities. Privacy concern: proactive detection without user consent. Meta offers opt-out. Ethical framework: beneficence (save lives) vs autonomy (right to privacy). Crisis organizations generally lean toward intervention when risk is imminent.
+
+## Related Articles
+
+- [AI for Payment Fraud Prevention: Real-Time Transaction Scoring, Chargeback Reduction, and Merchant Risk](../ai-for-fraud-prevention.md)
+- [AI in Finance: Trading, Risk, and Fraud Detection](../ai-in-finance.md)
+- [AI for Workplace Safety: Computer Vision Monitoring, Fall Detection, and Hazard Prevention](../ai-workplace-safety.md)

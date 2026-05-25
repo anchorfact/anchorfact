@@ -66,4 +66,10 @@ Key formats: shoppable videos (product links in feed), live shopping (real-time 
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [AI for Digital Marketing: Personalization, Campaign Optimization, and Customer Analytics](../../ai/ai-digital-marketing.md)
+- [Digital Marketing Fundamentals](../digital-marketing-fundamentals.md)
+- [Marketing: Strategy, Consumer Behavior, and Digital Channels](../marketing-fundamentals.md)

@@ -100,3 +100,9 @@ DePIN for AI compute: Gensyn (2024-2025) builds a protocol for decentralized ML 
 - Institute for Decentralized AI (decentralized-ai.org)
 - Gensyn: Decentralized ML Compute Protocol
 - Ocean Protocol: Tokenized AI Data & Model Marketplace
+
+## Related Articles
+
+- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../ai-blockchain.md)
+- [Activation Functions in Neural Networks](../activation-functions.md)
+- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../ai-for-complex-networks.md)

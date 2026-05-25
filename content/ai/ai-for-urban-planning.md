@@ -116,3 +116,9 @@ Generative Spatial AI (ScienceDirect 2025): a four-layer architecture — (1) Da
 - Virtual Singapore: National Digital Twin
 - Urban Grammar: AI-based urban form classification (Alan Turing Institute)
 - CityJSON & 3D BAG: Open 3D City Models
+
+## Related Articles
+
+- [AI Digital Twins for Healthcare: Patient-Specific Simulation, Treatment Planning, and Virtual Organs](../ai-digital-twins-healthcare.md)
+- [AI for Construction: Computer Vision Safety, BIM Digital Twins, and Automated Project Monitoring](../ai-for-construction.md)
+- [AI for Digital Twins: Real-Time Simulation, Predictive Maintenance, and System Optimization](../ai-for-digital-twins.md)

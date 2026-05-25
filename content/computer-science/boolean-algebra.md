@@ -78,4 +78,8 @@ Truth tables enumerate all input combinations. Boolean algebra underlies: CPU lo
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [Linear Algebra](../linear-algebra.md)

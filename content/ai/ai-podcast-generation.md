@@ -88,3 +88,9 @@ Podcast AI: (1) Script generation -- LLM converts documents/outlines into podcas
 
 ## Detailed Analysis
 NotebookLM Audio Overview (2024): viral feature. Upload documents -> two AI hosts have 10-minute conversation about content. Use case: students converting lecture notes to study podcasts, researchers sharing papers. ElevenLabs Projects (2025): long-form narration with voice cloning. Authors and publishers creating audiobooks. Storytel AI narration partnership. Descript: edit audio like a doc. Overdub: AI voice clone reads corrections. Studio Sound: AI removes background noise, equalizes. Wondercraft: end-to-end podcast studio. Write script -> select AI voice from 200+ -> add music -> publish. Spotify AI DJ (2023-2025): personalized music + AI voice commentary (Xavier "X" Jernigan voice clone). Spotify voice translation (2024): translate podcasts to other languages while preserving original speaker's voice characteristics.
+
+## Related Articles
+
+- [AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation](../ai-content-creation.md)
+- [AI for Social Media: Misinformation Detection, Hate Speech Moderation, and Content Safety](../ai-for-social-media.md)
+- [AI for Software Testing: Automated Test Generation, Fuzzing, and Quality Assurance](../ai-for-software-testing.md)

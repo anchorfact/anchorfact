@@ -69,3 +69,7 @@ SSE uses the `EventSource` JavaScript API. The server sends data with `Content-T
 ## Further Reading
 
 - [Server-Sent Events (W3C Recommendation)](https://html.spec.whatwg.org/multipage/server-sent-events.html)
+
+## Related Articles
+
+- [Track and Field Events](../../sports/track-and-field.md)

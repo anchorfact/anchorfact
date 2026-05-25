@@ -84,3 +84,7 @@ Rise: Toulon (1793), Italian Campaign (1796-97), coup of 18 Brumaire (1799). Bat
 ## Further Reading
 
 - [Napoleon: A Life (Andrew Roberts)](https://www.penguinrandomhouse.com/books/222045/napoleon-by-andrew-roberts/)
+
+## Related Articles
+
+- [Enlightenment Era](../enlightenment-era.md)

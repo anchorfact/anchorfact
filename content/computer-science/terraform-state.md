@@ -76,3 +76,9 @@ State locking: DynamoDB prevents concurrent modifications. `terraform import` ad
 ## Further Reading
 
 - [Terraform State Documentation](https://developer.hashicorp.com/terraform/language/state)
+
+## Related Articles
+
+- [State Space Models: Mamba, Linear-Time Sequence Modeling, and Alternatives to Transformers](../../ai/state-space-models.md)
+- [Transformer Variants: From Encoder-Decoder to Mamba State Space Models](../../ai/transformer-architecture-variants.md)
+- [Terraform](../terraform.md)

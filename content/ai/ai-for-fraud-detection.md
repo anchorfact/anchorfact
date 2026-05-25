@@ -94,3 +94,9 @@ Graph-based fraud detection: the financial network is a heterogeneous graph — 
 - AML Graph Analytics (Neo4j, TigerGraph)
 - PaySim: Synthetic Mobile Money Fraud Dataset
 - Graph Fraud Detection Papers: safe-graph/graph-fraud-detection-papers
+
+## Related Articles
+
+- [Graph Neural Networks: Message Passing and Applications](../graph-neural-networks.md)
+- [Activation Functions in Neural Networks](../activation-functions.md)
+- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../ai-for-complex-networks.md)

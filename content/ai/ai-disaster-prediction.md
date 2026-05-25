@@ -91,3 +91,9 @@ Disaster AI pipeline: (1) Sensing -- satellites (optical, SAR, thermal), ground 
 
 ## Detailed Analysis
 Flood prediction: Google Flood Hub uses LSTM-based hydrological models trained on river gauge data, terrain elevation, and weather forecasts. Inundation models predict flood extent at 10m resolution. 7-day lead time, 460M people covered in 80 countries. Earthquake: EEW (Earthquake Early Warning) -- ShakeAlert (US West Coast) detects P-waves (non-destructive, travel faster) and alerts before S-waves (destructive) arrive. Seconds of warning enable automated train braking, elevator stopping, and surgical procedure pausing. AI improves phase picking (P/S wave arrival times) with 90%+ accuracy vs 70% for traditional STA/LTA. Wildfire: AI processes satellite thermal imagery (MODIS, VIIRS, GOES) for real-time hotspot detection. ML combines with weather (wind, humidity, temperature) and vegetation dryness indices for fire spread prediction. Social media NLP: during disasters, Twitter/Facebook posts provide real-time situational awareness. AI filters noise, geolocates reports, and maps affected areas.
+
+## Related Articles
+
+- [AI for Agriculture: Precision Farming, Plant Disease Detection, and Crop Yield Prediction](../ai-for-agriculture.md)
+- [AI for Transportation: Traffic Flow Prediction, Intelligent Transportation Systems, and Smart Mobility](../ai-for-transportation.md)
+- [AI for Weather Forecasting: Data-Driven Numerical Weather Prediction and Nowcasting](../ai-for-weather-forecasting.md)

@@ -101,3 +101,9 @@ ScienceDirect 2025 review categorizes KG reasoning into three paradigms: embeddi
 - PyKEEN: Python Knowledge Graph Embedding Library
 - DGL-KE: Distributed KG Embedding Training
 - TransE: Translating Embeddings for Multi-Relational Data (Bordes et al., NeurIPS 2013)
+
+## Related Articles
+
+- [Recommender Systems: Graph Neural Collaborative Filtering and LLM-Based Recommendation](../recommender-systems.md)
+- [Semantic Web and Ontologies: Knowledge Representation, OWL Reasoning, and Linked Data](../semantic-web-ontology.md)
+- [Test-Time Compute Scaling: Inference-Time Reasoning Paradigms from o1/o3 to Forest-of-Thought](../test-time-compute-scaling.md)

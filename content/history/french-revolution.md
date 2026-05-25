@@ -106,3 +106,9 @@ Causes: financial crisis, inequality (three estates: clergy, nobility, commoners
 ## Further Reading
 
 - [Citizens: A Chronicle of the French Revolution (Simon Schama)](https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/)
+
+## Related Articles
+
+- [AI for Science: AlphaFold and the AI-Driven Discovery Revolution](../../ai/ai-for-science.md)
+- [AI Protein Design: RFDiffusion, ProteinMPNN, and the Nobel Revolution](../../ai/ai-protein-design.md)
+- [American Revolution](../american-revolution.md)

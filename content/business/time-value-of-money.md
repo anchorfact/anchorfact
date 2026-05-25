@@ -64,3 +64,9 @@ FV = PV × (1 + r)^n. At 7% return, money doubles every ~10 years (Rule of 72: 7
 ## Further Reading
 
 - [Principles of Corporate Finance (Brealey, Myers, Allen, 14th Ed)](https://www.mheducation.com/highered/product/principles-corporate-finance-brealey-myers/M9781264080946.html)
+
+## Related Articles
+
+- [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../../ai/3d-generation-gaussian-splatting.md)
+- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../../ai/ai-call-center.md)
+- [AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling](../../ai/ai-customer-analytics.md)

@@ -92,3 +92,9 @@ LLM-SmartAudit (IEEE TIFS 2025): three-stage pipeline — (1) LLM Semantic Analy
 - CertiK Security Leaderboard & Audit Reports
 - Slither: Solidity Static Analysis Framework (Trail of Bits)
 - Rekt News: DeFi Hack Database
+
+## Related Articles
+
+- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../ai-blockchain.md)
+- [AI for Election Integrity: Disinformation Detection, Voter Analytics, and Electoral Security](../ai-election-integrity.md)
+- [AI Identity Verification: Document Authentication, Liveness Detection, and KYC Compliance](../ai-identity-verification.md)

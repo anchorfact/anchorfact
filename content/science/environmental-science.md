@@ -124,3 +124,9 @@ Climate impacts: sea level rise (3.7 mm/year), Arctic amplification (warming 3-4
 - NASA Climate Change
 - NOAA Climate.gov
 - UN Environment Programme
+
+## Related Articles
+
+- [AI for Satellite Imagery: Object Detection, Change Detection, and Global Monitoring](../../ai/ai-satellite-imagery.md)
+- [AI for Audio Processing: Sound Event Detection, Acoustic Scene Analysis, and Environmental Intelligence](../../ai/ai-for-audio-processing.md)
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)

@@ -144,3 +144,9 @@ The CAPM (Capital Asset Pricing Model): E(R) = Rf + β(E(Rm)-Rf). Beta measures 
 - Aswath Damodaran: Valuation Resources
 - Investopedia
 - CFA Institute
+
+## Related Articles
+
+- [AI for Algorithmic Trading: Reinforcement Learning, Market Prediction, and Quantitative Finance](../../ai/ai-for-algorithmic-trading.md)
+- [AI in Finance: Trading, Risk, and Fraud Detection](../../ai/ai-in-finance.md)
+- [AI for Personal Finance: Robo-Advisors, Automated Budgeting, and Financial Wellness](../../ai/ai-personal-finance.md)

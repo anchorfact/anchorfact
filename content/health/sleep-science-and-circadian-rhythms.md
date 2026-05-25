@@ -92,3 +92,9 @@ Chronic sleep deprivation (<7 hours/night) associates with increased cardiovascu
 - NIH National Center for Sleep Disorders Research
 - Sleep Foundation: Science of Sleep
 - Nature Reviews Neuroscience: Sleep Special Collection
+
+## Related Articles
+
+- [Sleep Science: Circadian Rhythms and Health](../sleep-science-circadian-rhythms-and-health.md)
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
+- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../../ai/ai-for-complex-networks.md)

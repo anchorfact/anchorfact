@@ -91,3 +91,9 @@ Water AI: (1) Leak detection -- acoustic sensors (hydrophones) record pipe noise
 
 ## Detailed Analysis
 TaKaDu (2009-2025): processes data from water utilities worldwide. AI detects anomalies (leaks, bursts, faulty meters) from SCADA flow/pressure data + GIS network maps. Fido Tech: acoustic AI -- placing sensors on pipe fittings (fire hydrants, valves), ML identifies leak acoustic signatures. Aquarius Spectrum: fixed + mobile acoustic leak detection. CropX: soil sensor probes at multiple depths (10/20/30cm). ML integrates soil moisture, weather, and crop growth stage for irrigation recommendations. Netafim: drip irrigation + digital farming. AI determines when, how much, and for how long to irrigate each zone. Key metric: non-revenue water (NRW) -- water lost to leaks, theft, and metering errors. Global average: 30% NRW. AI reduces NRW to 10-15%, saving 130B+ gallons/year.
+
+## Related Articles
+
+- [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../ai-air-quality.md)
+- [AI for Ocean Monitoring: Marine Life Detection, Plastic Pollution Tracking, and Oceanographic AI](../ai-for-ocean-monitoring.md)
+- [AI for Video Surveillance: Intelligent Monitoring, Anomaly Detection, and Privacy-Preserving Analytics](../ai-for-video-surveillance.md)

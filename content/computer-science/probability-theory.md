@@ -83,4 +83,10 @@ Bayes' Theorem: P(A|B) = P(B|A) * P(A) / P(B). Used in: Naive Bayes classifiers,
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
+- [Music Theory Basics](../../arts/music-theory-basics.md)
+- [Leadership Theory and Organizational Behavior](../../business/leadership-and-organizational-behavior.md)

@@ -70,3 +70,7 @@ Sprint biomechanics: acceleration phase (0-30m), maximum velocity (30-60m), spee
 ## Further Reading
 
 - [World Athletics Rules](https://worldathletics.org/competition/technical-rules)
+
+## Related Articles
+
+- [Server-Sent Events (SSE)](../../computer-science/server-sent-events-sse.md)

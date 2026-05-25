@@ -79,3 +79,9 @@ Dopamine: the craving molecule — all addictive substances increase it. Toleran
 ## Further Reading
 
 - [In the Realm of Hungry Ghosts (Gabor Maté)](https://drgabormate.com/book/in-the-realm-of-hungry-ghosts/)
+
+## Related Articles
+
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
+- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../../ai/ai-for-complex-networks.md)
+- [AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition](../../ai/ai-for-food-science.md)

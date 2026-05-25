@@ -114,3 +114,9 @@ Sora is a diffusion transformer that treats video as a sequence of spacetime pat
 - DreamerV3: Mastering Diverse Domains (DeepMind)
 - GAIA-1: World Model for Autonomous Driving (Wayve)
 - "World Models" by Schmidhuber
+
+## Related Articles
+
+- [Cognitive Architectures: ACT-R, Soar, and Computational Models of Human-Like Reasoning](../cognitive-architectures.md)
+- [Embodied AI: Robots That Learn from the Physical World](../embodied-ai-and-robotics.md)
+- [Knowledge Graph Reasoning: Embedding-Based Link Prediction, Logical Inference, and Neurosymbolic Methods](../knowledge-graph-reasoning.md)

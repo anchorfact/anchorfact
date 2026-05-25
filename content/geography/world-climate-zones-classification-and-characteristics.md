@@ -44,3 +44,9 @@ The 5 major zones are further divided into ~30 subtypes. Key subtypes: Af (tropi
 
 ---
 > 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。
+
+## Related Articles
+
+- [Global Climate Zones and Terrestrial Biomes](../climate-zones-and-biomes.md)
+- [Climate Zones](../climate-zones.md)
+- [AI for Archaeology: Site Detection, Artifact Classification, and Digital Heritage Preservation](../../ai/ai-for-archaeology.md)

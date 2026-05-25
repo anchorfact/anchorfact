@@ -125,3 +125,9 @@ Justinian I (527-565): reconquered much of Western Empire, codified Roman law (C
 ## Further Reading
 
 - [Byzantium: The Surprising Life of a Medieval Empire (Judith Herrin)](https://press.princeton.edu/books/paperback/9780691143699/byzantium)
+
+## Related Articles
+
+- [Aztec Empire](../aztec-empire.md)
+- [Inca Empire](../inca-empire.md)
+- [Mongol Empire](../mongol-empire.md)

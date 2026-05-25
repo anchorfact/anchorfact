@@ -475,3 +475,9 @@ public class SecureSaveManager
 > 评分: 80/100
 > 完整性: 序列化、版本迁移、云存档、安全、检查点设计
 > 改进空间: 可补充具体平台(Steam/Epic/Console)的SDK集成代码
+
+## Related Articles
+
+- [Game Audio Systems and Sound Design](../game-audio-systems.md)
+- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../../ai/ai-blockchain.md)
+- [AI Content Moderation Platforms: Large-Scale Safety Systems, Policy Engines, and Multilingual Review](../../ai/ai-content-moderation-platforms.md)

@@ -75,3 +75,9 @@ Pod lifecycle: Pending → Running → Succeeded/Failed. Init containers run bef
 ## Further Reading
 
 - [Kubernetes Documentation](https://kubernetes.io/docs/)
+
+## Related Articles
+
+- [AI for Customer Service: Conversational Agents, Ticket Routing, and Intelligent Contact Centers](../../ai/ai-customer-service.md)
+- [Kubernetes (K8s)](../kubernetes.md)
+- [Service Workers](../service-workers.md)

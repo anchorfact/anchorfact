@@ -88,3 +88,9 @@ Remote work AI: (1) Meeting intelligence -- transcription (Whisper, Azure), summ
 
 ## Detailed Analysis
 Zoom AI Companion (2024): free for paid accounts, leveraging GPT-4o. Features: meeting summary (email after call), smart recording chapters, catch-me-up (late joiners ask AI what they missed), and whiteboard generation. Microsoft Teams Copilot: combines meeting recap + action items + real-time translation. Integrated across Outlook, Teams, and Office. Slack AI: search answers with citations ("summarize the Q3 launch discussion"), channel summaries (daily digest), thread summaries. Notion AI: Q&A over connected knowledge base. "What is the PTO policy?" -> AI retrieves and summarizes from team wiki. Microsoft Viva: aggregate productivity analytics. Privacy-preserving: anonymized at team level (not individual surveillance). Key tension: productivity monitoring vs. employee trust. EU regulation restricts algorithmic management (must be transparent, challengeable).
+
+## Related Articles
+
+- [AI for Team Collaboration: Smart Meetings, Knowledge Sharing, and Collaborative Intelligence](../ai-team-collaboration.md)
+- [AI for Location Intelligence: Geospatial Analytics, POI Recommendation, and Site Selection](../ai-location-intelligence.md)
+- [AI for Beauty and Fashion: Virtual Try-On, Personalized Styling, and Trend Prediction](../ai-beauty-fashion.md)

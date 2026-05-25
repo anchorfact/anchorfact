@@ -82,3 +82,9 @@ Commands: `lsmod` (list), `modprobe` (load with deps), `rmmod` (remove), `modinf
 ## Further Reading
 
 - [Linux Kernel Module Programming Guide](undefined)
+
+## Related Articles
+
+- [Linux File Permissions](../linux-file-permissions.md)
+- [Linux Process Management](../linux-process-management.md)
+- [Linux](../linux.md)

@@ -80,3 +80,8 @@ atomic_facts:
   - id: "fact-self-improvement-003"
     statement: "'You're so smart.' Effort is positive: in a growth mindset, effort means you're learning"
     confidence: "medium"
+
+## Related Articles
+
+- [Growth Mindset: Theory and Applications](../growth-mindset-theory-and-applications.md)
+- [GDP and Economic Growth](../../geography/gdp-and-economic-growth.md)

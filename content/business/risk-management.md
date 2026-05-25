@@ -78,3 +78,9 @@ Value at Risk (VaR): maximum expected loss at given confidence level (e.g., '95%
 ## Further Reading
 
 - [Against the Gods: The Remarkable Story of Risk (Peter Bernstein)](https://www.wiley.com/en-us/Against+the+Gods%3A+The+Remarkable+Story+of+Risk-p-9780471295631)
+
+## Related Articles
+
+- [AI for Fleet Management: Predictive Maintenance, Route Optimization, and Telematics](../../ai/ai-fleet-management.md)
+- [AI for Crisis Hotlines: Suicide Prevention Chatbots, Emotional Support AI, and Risk Detection](../../ai/ai-for-crisis-hotlines.md)
+- [AI for Payment Fraud Prevention: Real-Time Transaction Scoring, Chargeback Reduction, and Merchant Risk](../../ai/ai-for-fraud-prevention.md)

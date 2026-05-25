@@ -92,3 +92,9 @@ The brain (~1.4 kg, 86 billion neurons) consumes 20% of the body's oxygen. Neuro
 - Visible Body: 3D Anatomy Atlas
 - Khan Academy: Human Anatomy
 - NIH: Visible Human Project
+
+## Related Articles
+
+- [Human Anatomy](../../science/human-anatomy.md)
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../../ai/3d-human-modeling.md)
+- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../../ai/ai-blockchain.md)

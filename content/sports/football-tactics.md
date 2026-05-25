@@ -74,3 +74,7 @@ Defensive organization: zonal marking (cover space), man-marking (track opponent
 
 - [IFAB Laws of the Game](https://www.theifab.com/laws-of-the-game-documents/)
 - [UEFA Technical Reports](https://www.uefa.com/uefachampionsleague/)
+
+## Related Articles
+
+- [Football (Soccer)](../football-soccer.md)

@@ -103,3 +103,9 @@ Mask R-CNN added a small FCN branch to Faster R-CNN for instance mask prediction
 - Papers With Code: Semantic Segmentation
 - Meta AI: SAM Demo & Research
 - MONAI: Medical Open Network for AI
+
+## Related Articles
+
+- [AI for Land Use Classification: Satellite Image Segmentation, Urban Expansion Mapping, and Agricultural Monitoring](../ai-land-use-classification.md)
+- [AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling](../ai-customer-analytics.md)
+- [AI for Remote Sensing: Foundation Models, Satellite Image Analysis, and Earth Observation](../ai-for-remote-sensing.md)

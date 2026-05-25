@@ -256,3 +256,9 @@ This "alignment tax" represents the cost of making models safer and more aligned
 - [InstructGPT (Ouyang et al., 2022)](https://arxiv.org/abs/2203.02155): The paper that made RLHF the standard (3K+ citations)
 - [Direct Preference Optimization (Rafailov et al., 2023)](https://arxiv.org/abs/2305.18290): Simpler alternative to RLHF
 - [Constitutional AI (Bai et al., 2022)](https://arxiv.org/abs/2212.08073): AI-feedback alignment method
+
+## Related Articles
+
+- [AI for Algorithmic Trading: Reinforcement Learning, Market Prediction, and Quantitative Finance](../ai-for-algorithmic-trading.md)
+- [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../ai-for-chip-design.md)
+- [Deep Reinforcement Learning Algorithms: PPO, SAC, Dreamer, and Decision Transformer](../deep-reinforcement-learning-algorithms.md)

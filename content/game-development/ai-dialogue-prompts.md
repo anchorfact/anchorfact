@@ -962,3 +962,7 @@ NPC情绪：担忧转为欣慰
 - Convai: NPC Memory and Context Systems
 - 游戏实践：《博德之门3》AI 对话系统分析
 - GDC: LLM在游戏叙事中的应用案例 [待验证具体演讲标题]
+
+## Related Articles
+
+- [Prompt Engineering: Techniques for LLM Interaction](../../ai/prompt-engineering.md)

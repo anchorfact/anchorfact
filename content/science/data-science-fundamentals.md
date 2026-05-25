@@ -133,3 +133,9 @@ Statistical foundations: probability distributions, hypothesis testing, confiden
 - Kaggle: Data Science Competitions
 - Towards Data Science
 - Journal of Data Science
+
+## Related Articles
+
+- [Code Review Best Practices](../../computer-science/code-review-best-practices.md)
+- [Docker Security Best Practices](../../computer-science/docker-security-best-practices.md)
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)

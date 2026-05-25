@@ -331,3 +331,9 @@ secondary_sources:
 - [game-design-principles.md#八种玩家美学] — 感官美学与 UI 的关系
 - [player-psychology.md#行为经济学] — 消费 UI 中的心理学应用
 - [templates/gdd-template.md] — GDD 模板中的 UI 规格部分
+
+## Related Articles
+
+- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
+- [game art pipeline](../game-art-pipeline.md)
+- [Game Audio Systems and Sound Design](../game-audio-systems.md)

@@ -94,3 +94,8 @@ Just-in-Time (JIT): produce only what's needed, when needed. Kanban: visual card
 ## Further Reading
 
 - [The Machine That Changed the World (Womack, Jones, Roos)](https://www.simonandschuster.com/books/The-Machine-That-Changed-the-World/James-P-Womack/9780743299794)
+
+## Related Articles
+
+- [AI for Manufacturing: Predictive Maintenance, Quality Control, and Digital Twins](../../ai/ai-for-manufacturing.md)
+- [AI for Mathematical Reasoning: Theorem Proving with Lean, AlphaProof, and Formal Mathematics](../../ai/ai-mathematical-reasoning.md)

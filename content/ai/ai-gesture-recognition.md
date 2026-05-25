@@ -90,3 +90,9 @@ Gesture AI: (1) Hand detection -- locate hand bounding box in image (SSD, BlazeP
 
 ## Detailed Analysis
 MediaPipe Hands (Google): optimized for mobile inference. Pipeline: palm detector (BlazePalm) -> hand landmark model (21 keypoints, 2D + relative depth). Runs at 30+ FPS on smartphone CPU. HaMeR (Meta, 2024): first fully transformer-based hand mesh recovery. Uses ViT backbone + MANO head. 3D hand mesh (778 vertices) from single RGB image. Sign language AI (Nature 2025): MediaPipe extracts hand + body + face landmarks from video. Transformer processes temporal sequence, outputs gloss (word-level sign) sequence, then language model produces fluent text. 95%+ accuracy on isolated signs, 70-85% on continuous signing. Applications: (1) AR/VR -- gesture-based UI for Quest and Vision Pro; (2) Automotive -- gesture control for infotainment without touching screens; (3) Accessibility -- sign language translation, touchless ATMs; (4) Robotics -- gesture-based robot control.
+
+## Related Articles
+
+- [AI for Accessibility: Assistive Technologies, Sign Language Recognition, and Inclusive Systems](../ai-for-accessibility.md)
+- [Video Understanding: Action Recognition, Temporal Action Detection, and Video-Language Models](../video-understanding.md)
+- [Affective Computing: Multimodal Emotion Recognition, Sentiment Analysis, and Empathetic AI](../affective-computing.md)

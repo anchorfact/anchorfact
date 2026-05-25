@@ -44,3 +44,7 @@ Key research: (1) Procrastination is strongly correlated with impulsiveness (r=0
 
 ---
 > 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。
+
+## Related Articles
+
+- [AI for Mental Health: LLM-Based Therapy, Digital Interventions, and Clinical Trials](../../ai/ai-for-mental-health.md)

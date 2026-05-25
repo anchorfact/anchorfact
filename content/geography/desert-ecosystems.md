@@ -91,3 +91,8 @@ Key adaptations include: CAM photosynthesis (crassulacean acid metabolism) — p
 - USGS Desert Ecosystem Studies
 - National Geographic: Desert Biome
 - Journal of Arid Environments
+
+## Related Articles
+
+- [Sahara Desert](../sahara-desert.md)
+- [Environmental Science: Ecosystems and Global Change](../../science/environmental-science.md)

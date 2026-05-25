@@ -84,3 +84,9 @@ Star schema: central fact table (sales transactions) surrounded by dimension tab
 ## Further Reading
 
 - [The Data Warehouse Toolkit (3rd Ed, Kimball & Ross)](undefined)
+
+## Related Articles
+
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../../ai/ai-for-data-curation.md)
+- [AI for Tabular Data: Synthetic Generation, Diffusion Models, and Privacy-Preserving Structured Data](../../ai/ai-for-tabular-data.md)
+- [AI for Data Visualization: Automated Chart Generation, Insight Discovery, and Visual Analytics](../../ai/ai-for-visualization.md)

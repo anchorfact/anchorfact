@@ -91,3 +91,9 @@ MVP: simplest version that tests key hypothesis — not 'low quality,' but 'mini
 ## Further Reading
 
 - [The Lean Startup (Eric Ries)](https://www.penguinrandomhouse.com/books/120785/the-lean-startup-by-eric-ries/)
+
+## Related Articles
+
+- [Photography Fundamentals and Composition](../../arts/photography-fundamentals.md)
+- [Poetry Fundamentals](../../arts/poetry-fundamentals.md)
+- [Digital Marketing Fundamentals](../digital-marketing-fundamentals.md)

@@ -44,3 +44,9 @@ Major esports titles: League of Legends (Riot Games, 150M+ monthly players), Cou
 
 ---
 > 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。
+
+## Related Articles
+
+- [AI in Gaming: NPCs, Procedural Content, and AlphaStar](../../ai/ai-in-gaming.md)
+- [AI for Sports Analytics: Player Tracking, Performance Prediction, and Tactical Analysis](../../ai/ai-sports-analytics.md)
+- [Performance API](../../computer-science/performance-api.md)

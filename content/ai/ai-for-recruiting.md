@@ -95,3 +95,8 @@ Fairness in AI recruiting (arxiv 2025): biases manifest at every pipeline stage.
 - NYC Local Law 144: AI Hiring Bias Audit Law
 - LinkedIn Fairness Toolkit (LiFT)
 - EU AI Act: High-Risk AI in Employment
+
+## Related Articles
+
+- [AI for Speech Emotion Recognition: Vocal Biomarkers, Mental Health Screening, and Affective Computing](../ai-for-speech-emotion-recognition.md)
+- [String Matching Algorithms](../../computer-science/string-matching-algorithms.md)

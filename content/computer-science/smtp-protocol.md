@@ -78,4 +78,10 @@ SMTP extensions (ESMTP): STARTTLS (encryption), 8BITMIME (non-ASCII), SIZE (mess
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [Model Context Protocol (MCP)](../../ai/mcp.md)
+- [Hypertext Transfer Protocol (HTTP)](../http-protocol.md)
+- [MQTT Protocol](../mqtt-protocol.md)

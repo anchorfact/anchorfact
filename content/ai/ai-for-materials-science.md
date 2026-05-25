@@ -111,3 +111,9 @@ GNoME architecture: message-passing GNN on crystal graphs — nodes = atoms, edg
 - Materials Project (DOE/UC Berkeley) — open materials database
 - GNoME GitHub: google-deepmind/materials_discovery
 - OQMD: Open Quantum Materials Database
+
+## Related Articles
+
+- [AI for Science: AlphaFold and the AI-Driven Discovery Revolution](../ai-for-science.md)
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../ai-for-climate-science.md)
+- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../ai-for-complex-networks.md)

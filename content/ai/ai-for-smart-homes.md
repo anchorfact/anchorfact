@@ -111,3 +111,9 @@ Smart home AI stack: (1) Sensing layer -- motion sensors, door/window contacts, 
 
 ## Detailed Analysis
 Predictive home automation: sequence pattern mining from sensor event logs discovers routines -- "on weekdays, the occupant wakes at 7:15 AM (bedroom motion), goes to kitchen at 7:20 AM (kitchen motion), leaves home at 8:00 AM (front door sensor)" -- the system pre-heats the bathroom, starts the coffee maker, and sets the alarm before the occupant explicitly commands it. Energy optimization via RL: the home is modeled as a Markov Decision Process where the state includes indoor/outdoor temperature, occupancy, electricity price, and battery SoC; actions include HVAC setpoint adjustment, appliance scheduling, and battery charge/discharge; the reward is negative energy cost plus comfort penalty. Deep Q-Networks learn optimal control policies that save 15-30% energy with minimal comfort impact. Privacy challenge: smart home sensors generate highly personal data (when you sleep, when you are home, what you do). Edge AI processing (TensorFlow Lite, Core ML) on local hubs rather than cloud is the architectural solution -- federated learning across homes can improve models without centralizing data. The Matter protocol (2022, backed by Apple, Google, Amazon, Samsung) standardizes device communication, enabling cross-platform AI that works regardless of manufacturer.
+
+## Related Articles
+
+- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../ai-blockchain.md)
+- [AI for Fleet Management: Predictive Maintenance, Route Optimization, and Telematics](../ai-fleet-management.md)
+- [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../ai-for-chip-design.md)

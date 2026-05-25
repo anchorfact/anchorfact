@@ -118,3 +118,9 @@ Enterprise use cases: code generation (Copilot increases developer productivity 
 - Andreessen Horowitz: AI Canon
 - State of AI Report (Air Street Capital)
 - Stanford HAI: AI Index Report
+
+## Related Articles
+
+- [AI Art and Creativity: Generative Models and Authorship](../ai-art-and-creativity.md)
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../3d-human-modeling.md)
+- [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../ai-air-quality.md)

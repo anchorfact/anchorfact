@@ -99,3 +99,9 @@ NEAT innovations: (1) historical markings track gene origin for meaningful cross
 - NEAT-Python Library
 - OpenAI: Evolution Strategies as a Scalable Alternative to RL
 - DEAP: Distributed Evolutionary Algorithms in Python
+
+## Related Articles
+
+- [AI Benchmarks: MMLU, SWE-bench, and How We Measure Intelligence](../ai-benchmarks-and-evaluation.md)
+- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../ai-blockchain.md)
+- [AI for Drone Autonomy: Autonomous Navigation, Swarm Coordination, and Aerial Robotics](../ai-drone-autonomy.md)

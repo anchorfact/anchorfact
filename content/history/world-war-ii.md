@@ -94,3 +94,9 @@ Key events: 1939 Germany invades Poland, 1941 Pearl Harbor + Operation Barbaross
 ## Further Reading
 
 - [The Second World War (Antony Beevor)](https://www.antonybeevor.com/books/the-second-world-war/)
+
+## Related Articles
+
+- [World War I](../world-war-i.md)
+- [World War II: Global Conflict and Its Aftermath](../world-war-ii-overview.md)
+- [Embodied AI: Robots That Learn from the Physical World](../../ai/embodied-ai-and-robotics.md)

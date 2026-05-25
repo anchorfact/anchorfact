@@ -120,3 +120,9 @@ Translation AI: (1) Text translation -- LLM-based (prompt: "Translate to French:
 
 ## Detailed Analysis
 Wait-k policy (ACL 2018-2025): k=0 (start translating immediately, high latency preference), k=infinity (wait for full sentence, high quality). Optimal k balances quality-latency trade-off. COMET (2020-2025): neural quality estimation model trained to predict human judgment (MQM scores). KUDO AI: cloud-based simultaneous interpretation. User selects source+target languages, AI translates in real-time with voice output. Applications: UN-style meetings, webinars, telehealth. Zoom AI Companion: real-time translated captions in 30+ languages. Limitations: (1) Cultural idioms -- "it's raining cats and dogs" requires non-literal translation; (2) Code-switching -- bilingual speakers mixing languages mid-sentence; (3) Sign language -- AI ASL-to-text requires video pose estimation + gesture recognition, still in research stage.
+
+## Related Articles
+
+- [Machine Translation: Neural MT, LLM-Based Translation, and Multilingual Quality at Scale](../machine-translation.md)
+- [AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation](../ai-code-translation.md)
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../ai-for-data-curation.md)

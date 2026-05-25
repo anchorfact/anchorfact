@@ -79,3 +79,9 @@ CSS Grid provides two-dimensional layout (rows AND columns). `display: grid` ena
 ## Further Reading
 
 - [CSS Grid Layout Module Level 2 (W3C)](https://www.w3.org/TR/css-grid-2/)
+
+## Related Articles
+
+- [AI for Smart Grids: Load Forecasting, Demand Response, and Grid Stability](../../ai/ai-smart-grids.md)
+- [CSS Flexbox](../css-flexbox.md)
+- [CSS (Cascading Style Sheets)](../css.md)

@@ -109,3 +109,9 @@ Bias mitigation strategies span the ML pipeline: pre-processing (reweighting/res
 - ACM FAccT Conference
 - AI Now Institute
 - Partnership on AI
+
+## Related Articles
+
+- [AI for Algorithmic Trading: Reinforcement Learning, Market Prediction, and Quantitative Finance](../ai-for-algorithmic-trading.md)
+- [AI for Predictive Policing: Crime Forecasting, Resource Allocation, and Bias Mitigation](../ai-predictive-policing.md)
+- [Game Monetization Ethics](../../game-development/game-monetization-ethics.md)

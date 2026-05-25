@@ -89,3 +89,9 @@ Data governance pillars: (1) Metadata management -- cataloging data assets (tabl
 
 ## Detailed Analysis
 ML for data classification: fine-tuned models (BERT-based) scan column names, sample values, and descriptions to classify columns as PII (email, SSN, phone), financial (revenue, price), or healthcare (diagnosis codes). Regular expression + ML hybrid achieves 95%+ accuracy. Data lineage: AI parses SQL query history to build column-level lineage graphs. For complex ETL (Python/Spark), static code analysis tracks data transformations. Data quality monitoring: time-series anomaly detection on data metrics (row count, null percentage, value distribution drift) alerts when quality degrades. Feathr/Feast feature stores: governance for ML features used in training and inference, ensuring consistency between offline training and online serving. EU AI Act implications: Article 10 requires data governance for high-risk AI -- data must be relevant, representative, free of errors, and complete. Organizations must document data provenance, preprocessing, and quality assessments. Model cards (Google, 2019) provide standardized documentation of model training data, intended use, limitations, and bias evaluation.
+
+## Related Articles
+
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../ai-for-data-curation.md)
+- [AI Training Data Curation: Quality at Scale](../ai-training-data-curation.md)
+- [AI for Water Management: Leak Detection, Quality Monitoring, and Smart Irrigation](../ai-water-management.md)

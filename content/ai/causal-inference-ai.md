@@ -97,3 +97,8 @@ Key frameworks: (1) Potential Outcomes (Rubin) — each unit has multiple potent
 - CausalML Book (causalml-book.org)
 - DoWhy + EconML Libraries
 - Stanford Causal AI Lab
+
+## Related Articles
+
+- [Causal Representation Learning: Deep Causal Discovery, Intervention, and Counterfactuals](../causal-representation-learning.md)
+- [Lambda Calculus](../../computer-science/lambda-calculus.md)

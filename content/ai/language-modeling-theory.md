@@ -97,3 +97,9 @@ The language modeling objective: given context tokens x1, x2, ..., x_{t-1}, pred
 
 ## Detailed Analysis
 Scaling laws (Kaplan et al., 2020): varied model size (768 to 1.5B params), dataset size, and compute. Key findings: (1) L(N) follows power law in model size; (2) Data scaling follows similar power law; (3) Larger models are more sample-efficient. Chinchilla (Hoffmann et al., 2022): the correction -- optimal training uses 20x more tokens than parameters. Chinchilla-70B matches Gopher-280B (4x larger). Information-theoretic view: language modeling IS compression. A perfect LM would achieve entropy of English (~1.0 bits/character). Current SOTA: ~0.8-1.0 bits/character. gzip + kNN beats BERT on text classification (Jiang et al., ACL 2023) -- demonstrating simple compressors capture linguistic structure. Key open question: why does next-token prediction lead to chain-of-thought reasoning and in-context learning? The theoretical understanding of emergent abilities remains incomplete.
+
+## Related Articles
+
+- [Distributed Training: FSDP, DeepSpeed, and Scaling Laws](../distributed-training-systems.md)
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../3d-human-modeling.md)
+- [AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation](../ai-code-translation.md)

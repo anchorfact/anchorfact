@@ -90,3 +90,9 @@ PHP 8.0: JIT compiler, union types, match expression, named arguments, attribute
 ## Further Reading
 
 - [PHP Manual](https://www.php.net/docs.php)
+
+## Related Articles
+
+- [AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation](../../ai/ai-code-translation.md)
+- [AI for Accessibility: Assistive Technologies, Sign Language Recognition, and Inclusive Systems](../../ai/ai-for-accessibility.md)
+- [AI for Language Learning: Intelligent Tutoring, Speech Assessment, and Personalized Curriculum](../../ai/ai-for-language-learning.md)

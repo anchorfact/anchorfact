@@ -73,3 +73,9 @@ Preflight requests (OPTIONS) check permission before actual request for non-simp
 ## Further Reading
 
 - [Fetch Standard — CORS Protocol](https://fetch.spec.whatwg.org/#http-cors-protocol)
+
+## Related Articles
+
+- [AI for Predictive Policing: Crime Forecasting, Resource Allocation, and Bias Mitigation](../../ai/ai-predictive-policing.md)
+- [AI for Team Collaboration: Smart Meetings, Knowledge Sharing, and Collaborative Intelligence](../../ai/ai-team-collaboration.md)
+- [Low-Resource NLP: Multilingual Models, Endangered Language Preservation, and Translation](../../ai/low-resource-nlp.md)

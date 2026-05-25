@@ -101,3 +101,8 @@ Double-slit experiment: single particles create interference patterns — wave-p
 ## Further Reading
 
 - [Principles of Quantum Mechanics (Shankar)](https://link.springer.com/book/9780306447907)
+
+## Related Articles
+
+- [AI for Quantum Computing: Quantum Error Correction, Circuit Optimization, and Algorithm Discovery](../../ai/ai-quantum-computing.md)
+- [Quantum Machine Learning: Tensor Networks, QNNs, and Error Mitigation](../../ai/quantum-machine-learning.md)

@@ -76,3 +76,9 @@ Brand positioning: what unique value do you offer in the customer's mind? Brand 
 ## Further Reading
 
 - [Building Strong Brands (David Aaker)](https://www.simonandschuster.com/books/Building-Strong-Brands/David-A-Aaker/9780029001516)
+
+## Related Articles
+
+- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
+- [Marketing: Strategy, Consumer Behavior, and Digital Channels](../marketing-fundamentals.md)
+- [Strategy Pattern](../../computer-science/strategy-pattern.md)

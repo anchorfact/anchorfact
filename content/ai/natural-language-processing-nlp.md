@@ -106,3 +106,9 @@ Pre-Transformer era: TF-IDF, Word2Vec (Mikolov 2013), GloVe (Pennington 2014) fo
 ## Further Reading
 
 - [Speech and Language Processing (3rd Ed, Jurafsky & Martin)](https://web.stanford.edu/~jurafsky/slp3/)
+
+## Related Articles
+
+- [Low-Resource NLP: Multilingual Models, Endangered Language Preservation, and Translation](../low-resource-nlp.md)
+- [Text-to-SQL: Natural Language Database Querying with Large Language Models](../text-to-sql.md)
+- [AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation](../ai-code-translation.md)

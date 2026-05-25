@@ -112,3 +112,9 @@ The foundation model ecosystem: closed (GPT-4, Claude, Gemini), open-weight (Lla
 - Stanford CRFM: Foundation Model Research
 - Hugging Face: Open LLM Leaderboard
 - Epoch AI: Compute Trends
+
+## Related Articles
+
+- [AI for Genomics: Single-Cell Foundation Models and RNA Biology](../ai-for-genomics.md)
+- [AI for Remote Sensing: Foundation Models, Satellite Image Analysis, and Earth Observation](../ai-for-remote-sensing.md)
+- [Vision-Language-Action Models: Unified Multimodal Foundation Models for Embodied AI](../vision-language-action-models.md)

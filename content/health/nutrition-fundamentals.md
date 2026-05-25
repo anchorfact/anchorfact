@@ -75,3 +75,9 @@ Carbohydrates: simple (sugar, quick energy) vs. complex (whole grains, sustained
 ## Further Reading
 
 - [Dietary Guidelines for Americans 2020-2025](https://www.dietaryguidelines.gov/)
+
+## Related Articles
+
+- [AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition](../../ai/ai-for-food-science.md)
+- [Photography Fundamentals and Composition](../../arts/photography-fundamentals.md)
+- [Poetry Fundamentals](../../arts/poetry-fundamentals.md)

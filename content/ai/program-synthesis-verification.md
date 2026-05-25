@@ -94,3 +94,9 @@ ProofSeek pipeline: (1) NL Statement Generator — translate code semantics into
 - Software Foundations (Pierce, UPenn) — Coq tutorial
 - DeepSpec: Science of Deep Specification
 - Lean 4 Theorem Prover Community
+
+## Related Articles
+
+- [AI for Mathematical Reasoning: Theorem Proving with Lean, AlphaProof, and Formal Mathematics](../ai-mathematical-reasoning.md)
+- [AI Smart Contract Auditing: Vulnerability Detection, Formal Verification, and Blockchain Security](../ai-smart-contract-audit.md)
+- [Neural Rendering: NeRF, View Synthesis, and Implicit Scene Representations](../neural-rendering.md)

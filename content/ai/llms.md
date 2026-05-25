@@ -240,3 +240,9 @@ Training costs have increased approximately 10× per generation, driven primaril
 - [Chinchilla Paper](https://arxiv.org/abs/2203.15556): Training Compute-Optimal LLMs
 - [Emergent Abilities Paper](https://arxiv.org/abs/2206.07682): Wei et al., 2022
 - [HELM Benchmark](https://crfm.stanford.edu/helm/): Stanford's holistic evaluation framework
+
+## Related Articles
+
+- [Text-to-SQL: Natural Language Database Querying with Large Language Models](../text-to-sql.md)
+- [AI Red Teaming: Security Testing for Language Models](../ai-red-teaming-and-safety.md)
+- [Long-Context Language Models: Beyond 1M Tokens](../long-context-models.md)

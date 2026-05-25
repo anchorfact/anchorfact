@@ -94,3 +94,8 @@ atomic_facts:
   - id: "fact-sports-003"
     statement: "Sub-2 hour barrier: Eliud Kipchoge (1:59:40, Vienna 2019, unofficial)"
     confidence: "medium"
+
+## Related Articles
+
+- [Running Fundamentals](../../health/running-fundamentals.md)
+- [Marathon Training: Physiology, Programming, and Performance](../marathon-training-physiology-programming-and-performance.md)

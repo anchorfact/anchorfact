@@ -93,3 +93,9 @@ Vehicle Routing Problem (VRP): given a depot, a fleet of vehicles with capacity 
 - OR-Tools: Google Optimization Tools (Vehicle Routing)
 - POMO: Policy Optimization with Multiple Optima (NeurIPS 2020)
 - UPS ORION: On-Road Integrated Optimization and Navigation
+
+## Related Articles
+
+- [AI for Logistics: Last-Mile Delivery, Fleet Routing, and Warehouse Automation](../ai-for-logistics.md)
+- [AI for Smart Homes: Ambient Intelligence, Energy Optimization, and Predictive Home Automation](../ai-for-smart-homes.md)
+- [AI for Supply Chain Risk: Disruption Prediction, Supplier Monitoring, and Resilience Analytics](../ai-supply-chain-risk.md)

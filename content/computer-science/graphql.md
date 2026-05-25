@@ -85,3 +85,7 @@ GraphQL is a query language and runtime for APIs developed by Facebook in 2012 a
 
 - [GraphQL Spec](https://spec.graphql.org/): Official specification
 - [GraphQL Foundation](https://graphql.org/foundation/): Governance body
+
+## Related Articles
+
+- [GraphQL Schema Design](../graphql-schema-design.md)

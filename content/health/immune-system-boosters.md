@@ -70,3 +70,9 @@ Vitamin D: deficiency linked to increased respiratory infections. Zinc: reduces 
 ## Further Reading
 
 - [How the Immune System Works (Sompayrac, 6th Ed)](https://www.wiley.com/en-us/How+the+Immune+System+Works%2C+6th+Edition-p-9781119542124)
+
+## Related Articles
+
+- [Immune System](../../science/immune-system.md)
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
+- [AI for Digital Twins: Real-Time Simulation, Predictive Maintenance, and System Optimization](../../ai/ai-for-digital-twins.md)

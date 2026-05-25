@@ -110,3 +110,9 @@ Climate change shifts biome boundaries: boreal forests advance into tundra (Arct
 - IPCC Sixth Assessment Report: Biomes
 - World Wildlife Fund: Terrestrial Ecoregions
 - Nature Climate Change
+
+## Related Articles
+
+- [Climate Zones](../climate-zones.md)
+- [World Climate Zones: Classification and Characteristics](../world-climate-zones-classification-and-characteristics.md)
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)

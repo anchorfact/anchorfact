@@ -106,3 +106,9 @@ Instruction format: (system prompt + user instruction → assistant response). D
 - HuggingFace: Instruction Datasets
 - lmsys: Chatbot Arena
 - Stanford Alpaca
+
+## Related Articles
+
+- [AI for Code Generation: LLMs as Software Engineering Copilots](../ai-for-code-generation.md)
+- [Large Language Models (LLMs)](../llms.md)
+- [Parameter-Efficient Fine-Tuning: LoRA, QLoRA, and Adapters](../parameter-efficient-fine-tuning.md)

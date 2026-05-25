@@ -79,3 +79,9 @@ Git Flow: feature branches from develop, release branches for stabilization, hot
 ## Further Reading
 
 - [A successful Git branching model (Vincent Driessen, 2010)](undefined)
+
+## Related Articles
+
+- [Multi-Agent Reinforcement Learning: Cooperation, Competition, and Emergent Strategies](../../ai/multi-agent-reinforcement-learning.md)
+- [Git Version Control System](../git.md)
+- [Chronic Disease Prevention Strategies](../../health/chronic-disease-prevention.md)

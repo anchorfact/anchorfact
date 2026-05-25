@@ -90,3 +90,9 @@ Crime prediction models: (1) Hotspot prediction -- spatio-temporal: grid cells (
 
 ## Detailed Analysis
 PredPol (2012): used ETAS model (epidemic-type aftershock sequence -- borrowed from seismology) predicting near-repeat patterns. Displayed 500ft x 500ft boxes for patrol officers. Cities deployed then abandoned (Santa Cruz 2020, LA 2019). The feedback loop: Prediction box -> more patrol -> more minor citations for things that would otherwise go unnoticed -> reported as "crime" -> reinforces prediction. This biases models toward areas of existing police presence. RAND (2018): evaluated predictive policing pilots. Found no conclusive evidence of crime reduction in controlled studies. ShotSpotter (2025): acoustic gunshot detection system. ML classifies gunshots vs fireworks/backfires, triangulates location, alerts police with <60 second latency. Deployed in 130+ US cities. Better accepted than predictive policing as it detects actual events rather than predicting future events. Current consensus (2023-2025): AI for policing should focus on forensic investigation support, crime analysis (post-hoc pattern recognition), and resource allocation optimization -- not individual-level prediction.
+
+## Related Articles
+
+- [AI for Digital Forensics: Deepfake Provenance, Evidence Authentication, and Digital Crime Investigation](../ai-digital-forensics.md)
+- [AI for Disaster Prediction: Earthquake Forecasting, Flood Detection, and Early Warning Systems](../ai-disaster-prediction.md)
+- [AI Ethics and Algorithmic Bias](../ai-ethics-and-bias.md)

@@ -86,3 +86,9 @@ Linux is an open-source, Unix-like operating system kernel created by Linus Torv
 
 - [Kernel.org Docs](https://www.kernel.org/doc/html/latest/): Official Linux kernel documentation
 - [Linux Kernel Source](https://github.com/torvalds/linux): Torvalds' GitHub mirror
+
+## Related Articles
+
+- [Linux File Permissions](../linux-file-permissions.md)
+- [Linux Kernel Modules](../linux-kernel-modules.md)
+- [Linux Process Management](../linux-process-management.md)

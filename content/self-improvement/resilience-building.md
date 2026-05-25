@@ -66,3 +66,9 @@ Growth mindset (Dweck): view challenges as opportunities to learn, not threats t
 
 - [APA Resilience Guide](https://www.apa.org/topics/resilience)
 - [Mindset (Carol Dweck)](https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck-phd/)
+
+## Related Articles
+
+- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../../ai/ai-for-complex-networks.md)
+- [AI for Mental Health: LLM-Based Therapy, Digital Interventions, and Clinical Trials](../../ai/ai-for-mental-health.md)
+- [AI for Speech Emotion Recognition: Vocal Biomarkers, Mental Health Screening, and Affective Computing](../../ai/ai-for-speech-emotion-recognition.md)

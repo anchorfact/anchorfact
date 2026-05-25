@@ -135,3 +135,9 @@ Environmental enrichment — exercise, cognitive stimulation, social interaction
 - Society for Neuroscience: BrainFacts.org
 - Nature Neuroscience
 - Allen Institute for Brain Science
+
+## Related Articles
+
+- [Computational Neuroscience: AI Models of Brain Circuits, Connectomics, and Neural Computation](../../ai/computational-neuroscience.md)
+- [Brain-Computer Interfaces: AI-Powered Neural Decoding and Neurotechnology](../../ai/brain-computer-interface-ai.md)
+- [Human Anatomy: Systems, Organs, and Function](../../health/human-anatomy.md)

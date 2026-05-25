@@ -79,3 +79,8 @@ Keywords: informational ('what is...'), transactional ('buy...'), navigational (
 ## Further Reading
 
 - [The Art of SEO (Enge, Spencer, Stricchiola, 4th Ed)](https://www.oreilly.com/library/view/the-art-of/9781098102593/)
+
+## Related Articles
+
+- [AI Decision Support Systems: Clinical CDSS, Business Intelligence, and Augmented Decision-Making](../../ai/decision-support-systems.md)
+- [Entrepreneurship: From Idea to Scalable Business](../entrepreneurship-and-startups.md)

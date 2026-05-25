@@ -75,3 +75,8 @@ Flex container properties: `flex-direction` (row|column), `flex-wrap` (wrap|nowr
 ## Further Reading
 
 - [CSS Flexible Box Layout Module Level 1 (W3C)](https://www.w3.org/TR/css-flexbox-1/)
+
+## Related Articles
+
+- [CSS Grid](../css-grid.md)
+- [CSS (Cascading Style Sheets)](../css.md)

@@ -94,3 +94,9 @@ The Nature NPJ 2025 review found: (1) AI-assisted pronunciation training produce
 - Duolingo Research Blog / Birdbrain spaced repetition algorithm
 - Speak.com: AI-powered spoken English tutor
 - Elsa Speak: Deep learning pronunciation coach
+
+## Related Articles
+
+- [AI in Education: Personalized Learning and Intelligent Tutoring Systems](../ai-in-education.md)
+- [AI for the Internet of Things: Federated Learning, TinyML, and Intelligent Edge Devices](../ai-for-iot.md)
+- [Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning](../audio-source-separation.md)

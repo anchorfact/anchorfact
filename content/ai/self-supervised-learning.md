@@ -105,3 +105,9 @@ BYOL (Grill et al., 2020) eliminated negative pairs — using a momentum encoder
 - LeCun: Self-Supervised Learning (AAAI 2020 Keynote)
 - Lilian Weng: Self-Supervised Representation Learning
 - Papers With Code: Self-Supervised Learning
+
+## Related Articles
+
+- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../adversarial-machine-learning.md)
+- [AI for Drug Repurposing: Identifying New Uses for Existing Drugs Through Machine Learning](../ai-drug-repurposing.md)
+- [AI for Employee Experience: Onboarding, Learning, and Internal Communications](../ai-employee-experience.md)

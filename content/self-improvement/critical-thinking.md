@@ -119,3 +119,8 @@ atomic_facts:
   - id: "fact-self-improvement-002"
     statement: "Scientific method: observation → hypothesis → experiment → analysis → conclusion"
     confidence: "medium"
+
+## Related Articles
+
+- [Design Thinking](../../arts/design-thinking.md)
+- [Cognitive Biases: A Practical Guide to Clearer Thinking](../cognitive-biases-handbook.md)

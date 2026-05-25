@@ -92,3 +92,9 @@ Scaling: StandardScaler (mean=0, std=1), MinMaxScaler (0 to 1). Encoding: one-ho
 ## Further Reading
 
 - [Feature Engineering for Machine Learning (Zheng & Casari)](https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/)
+
+## Related Articles
+
+- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../adversarial-machine-learning.md)
+- [AI for Code Generation: LLMs as Software Engineering Copilots](../ai-for-code-generation.md)
+- [Data-Centric AI: The Systematic Engineering of Training Data](../data-centric-ai.md)

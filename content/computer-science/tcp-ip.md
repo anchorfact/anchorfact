@@ -203,3 +203,9 @@ Each side independently closes its direction of communication, enabling a "half-
 - [RFC 791 — IP](https://www.rfc-editor.org/rfc/rfc791): The original IPv4 specification
 - [RFC 768 — UDP](https://www.rfc-editor.org/rfc/rfc768): User Datagram Protocol
 - [Kurose & Ross: Computer Networking](https://www.pearson.com/en-us/subject-catalog/p/computer-networking/P200000003430): Standard networking textbook
+
+## Related Articles
+
+- [Model Context Protocol (MCP)](../../ai/mcp.md)
+- [Hypertext Transfer Protocol (HTTP)](../http-protocol.md)
+- [MQTT Protocol](../mqtt-protocol.md)

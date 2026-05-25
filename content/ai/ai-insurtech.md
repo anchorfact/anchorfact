@@ -102,3 +102,9 @@ Insurance AI: (1) Underwriting -- AI evaluates risk from alternative data: telem
 
 ## Detailed Analysis
 Lemonade: full-stack AI insurer. AI chatbot handles everything from quote to claim. Claims paid in 3 seconds (world record for AI claims). Root: smartphone app measures 200+ driving variables over 2-3 week test period. Only insures good drivers, leading to favorable loss ratios. Zesty.ai: wildfire risk model (Z-FIRE) analyzes 100+ property features from satellite + aerial imagery with 10cm resolution. CNN assesses roof condition, defensible space, surrounding vegetation. Tractable: AI auto damage assessment used by 20+ global insurers. Computer vision identifies damaged parts, estimates repair cost, and flags potential fraud (damage inconsistent with reported accident). Key regulatory challenge: insurance is heavily regulated by state. AI pricing models must demonstrate they don't discriminate against protected classes. Explainability (SHAP, LIME) is essential for regulatory approval and consumer trust.
+
+## Related Articles
+
+- [AI Document Understanding: Layout Parsing, Structured Extraction, and Intelligent Document Processing](../ai-document-understanding.md)
+- [AI for Audio Processing: Sound Event Detection, Acoustic Scene Analysis, and Environmental Intelligence](../ai-for-audio-processing.md)
+- [AI for Crisis Hotlines: Suicide Prevention Chatbots, Emotional Support AI, and Risk Detection](../ai-for-crisis-hotlines.md)

@@ -138,3 +138,9 @@ C is a general-purpose, procedural programming language created by Dennis Ritchi
 ## Further Reading
 
 - [K&R — The C Programming Language](https://en.wikipedia.org/wiki/The_C_Programming_Language): The definitive book
+
+## Related Articles
+
+- [C++ Programming Language](../c++-language.md)
+- [Go Programming Language](../go-language.md)
+- [Python Programming Language](../python.md)

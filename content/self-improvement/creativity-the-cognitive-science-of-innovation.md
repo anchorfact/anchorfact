@@ -44,3 +44,9 @@ Key models: (1) Wallas's 4-stage model (1926): preparation → incubation → il
 
 ---
 > 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。
+
+## Related Articles
+
+- [AI Art and Creativity: Generative Models and Authorship](../../ai/ai-art-and-creativity.md)
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
+- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../../ai/ai-for-complex-networks.md)

@@ -101,3 +101,9 @@ Key innovations: steam engine (Watt, 1769), spinning jenny, cotton gin (Whitney,
 ## Further Reading
 
 - [The Industrial Revolution: A Very Short Introduction (Robert C. Allen)](https://global.oup.com/academic/product/the-industrial-revolution-9780198706786)
+
+## Related Articles
+
+- [AI for Science: AlphaFold and the AI-Driven Discovery Revolution](../../ai/ai-for-science.md)
+- [AI Protein Design: RFDiffusion, ProteinMPNN, and the Nobel Revolution](../../ai/ai-protein-design.md)
+- [American Revolution](../american-revolution.md)

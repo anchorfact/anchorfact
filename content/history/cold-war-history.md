@@ -119,3 +119,9 @@ The nuclear arms race: Mutual Assured Destruction (MAD) paradoxically maintained
 - Cold War International History Project
 - National Security Archive
 - CNN Cold War Documentary Series
+
+## Related Articles
+
+- [Cold War](../cold-war.md)
+- [World War II: Global Conflict and Its Aftermath](../world-war-ii-overview.md)
+- [AI for Nuclear Fusion: Plasma Control, Disruption Prediction, and Accelerated Discovery](../../ai/ai-for-nuclear-fusion.md)

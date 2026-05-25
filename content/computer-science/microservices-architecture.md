@@ -83,3 +83,9 @@ Key principles: decentralized data management (each service has its own database
 ## Further Reading
 
 - [Building Microservices (2nd Edition, Sam Newman)](https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/)
+
+## Related Articles
+
+- [MLOps and LLMOps: Production AI Engineering, Observability, and Platform Architecture](../../ai/mlops-llmops.md)
+- [Neural Architecture Search: Automated Design of Deep Neural Networks](../../ai/neural-architecture-search.md)
+- [Transformer Architecture](../../ai/transformer.md)

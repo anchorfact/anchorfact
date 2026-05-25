@@ -94,3 +94,7 @@ Embedding: text/image/audio → vector (768-3072 dimensions). Similarity metrics
 ## Further Reading
 
 - [Pinecone Documentation](undefined)
+
+## Related Articles
+
+- [Vector Databases: Approximate Nearest Neighbor Search, Embedding Storage, and Retrieval at Scale](../../ai/vector-databases.md)

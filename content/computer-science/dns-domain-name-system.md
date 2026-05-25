@@ -145,3 +145,9 @@ DoH is indistinguishable from regular HTTPS traffic (port 443), making it harder
 - [RFC 1035 — DNS Specification](https://www.rfc-editor.org/rfc/rfc1035): The core DNS protocol (Mockapetris, 1987)
 - [DNSSEC (RFCs 4033-4035)](https://www.rfc-editor.org/rfc/rfc4033): Cryptographic DNS security
 - [DNS and BIND (O'Reilly)](https://www.oreilly.com/library/view/dns-and-bind/0596100574/): The canonical DNS reference
+
+## Related Articles
+
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
+- [AI for Digital Twins: Real-Time Simulation, Predictive Maintenance, and System Optimization](../../ai/ai-for-digital-twins.md)
+- [Conversational AI: Task-Oriented Dialogue and Open-Domain Chatbots](../../ai/conversational-ai-systems.md)

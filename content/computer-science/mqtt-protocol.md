@@ -88,4 +88,10 @@ Architecture: Broker (central server) + Clients (publishers and subscribers). To
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [Model Context Protocol (MCP)](../../ai/mcp.md)
+- [Hypertext Transfer Protocol (HTTP)](../http-protocol.md)
+- [QUIC Protocol](../quic-protocol.md)

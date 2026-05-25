@@ -88,3 +88,9 @@ Restaurant AI: (1) Ordering -- voice AI (SoundHound, ConverseNow) handles drive-
 
 ## Detailed Analysis
 White Castle (2021-2025): MasterCard AI-powered drive-thru (SoundHound) deployed at select locations. Averages 90% order accuracy. Panera (2022): OpenCity Tori voice AI for phone orders. Sweetgreen (2023): Infinite Kitchen -- robotic bowl assembly using computer vision. McDonald's Dynamic Yield: personalizes drive-thru menu in real-time. Features: suggest items based on what's in the order so far, trending items (social proof), weather-based suggestions. Result: 3-7% average check increase. Toast: restaurant POS + AI platform used by 100K+ restaurants. AI features: menu optimization (identify underperforming items), labor scheduling (predict traffic for staffing). Key challenge: voice AI with non-native accents and strong regional dialects. Continuous training on diverse speech data.
+
+## Related Articles
+
+- [AI for Regulatory Technology (RegTech): Compliance Automation, AML, and Regulatory Intelligence](../ai-for-regtech-compliance.md)
+- [AI for Smart Homes: Ambient Intelligence, Energy Optimization, and Predictive Home Automation](../ai-for-smart-homes.md)
+- [AI for Beauty and Fashion: Virtual Try-On, Personalized Styling, and Trend Prediction](../ai-beauty-fashion.md)

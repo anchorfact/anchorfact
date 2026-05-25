@@ -83,4 +83,10 @@ SSH handshake: key exchange (Diffie-Hellman) → host authentication (server key
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [Model Context Protocol (MCP)](../../ai/mcp.md)
+- [Hypertext Transfer Protocol (HTTP)](../http-protocol.md)
+- [MQTT Protocol](../mqtt-protocol.md)

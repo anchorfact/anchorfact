@@ -87,3 +87,9 @@ GTD: externalize all commitments to trusted system, reduce cognitive load. Two-m
 ## Further Reading
 
 - [Getting Things Done (David Allen)](https://gettingthingsdone.com/)
+
+## Related Articles
+
+- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../../ai/ai-blockchain.md)
+- [AI Content Moderation Platforms: Large-Scale Safety Systems, Policy Engines, and Multilingual Review](../../ai/ai-content-moderation-platforms.md)
+- [AI for Disaster Prediction: Earthquake Forecasting, Flood Detection, and Early Warning Systems](../../ai/ai-disaster-prediction.md)

@@ -95,3 +95,9 @@ Sign language recognition (SLR): the Nature 2025 system uses a two-stage pipelin
 - Microsoft Seeing AI App
 - Google Project Euphonia (Speech Recognition for Impaired Speech)
 - Voiceitt: Inclusive Voice AI for Non-Standard Speech
+
+## Related Articles
+
+- [AI Gesture Recognition: Hand Tracking, Sign Language, and Touchless Interaction](../ai-gesture-recognition.md)
+- [AI Biometric Recognition: Fingerprint, Iris, Face, and Multimodal Deep Learning Systems](../biometric-recognition.md)
+- [Video Understanding: Action Recognition, Temporal Action Detection, and Video-Language Models](../video-understanding.md)

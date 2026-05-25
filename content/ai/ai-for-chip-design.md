@@ -95,3 +95,9 @@ Google's chip placement RL: models chip floorplanning as a sequential decision p
 - Synopsys DSO.ai: AI-Driven Design Space Optimization
 - SkyWater Open-Source PDK (130nm) for AI4EDA Research
 - ICCAD & DAC Conference Tracks on ML for EDA
+
+## Related Articles
+
+- [AI for Algorithmic Trading: Reinforcement Learning, Market Prediction, and Quantitative Finance](../ai-for-algorithmic-trading.md)
+- [AI for Regulatory Technology (RegTech): Compliance Automation, AML, and Regulatory Intelligence](../ai-for-regtech-compliance.md)
+- [AI for Smart Homes: Ambient Intelligence, Energy Optimization, and Predictive Home Automation](../ai-for-smart-homes.md)

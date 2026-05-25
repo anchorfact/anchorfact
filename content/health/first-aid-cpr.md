@@ -70,3 +70,7 @@ CPR steps (adult): check responsiveness, call emergency, start compressions imme
 ## Further Reading
 
 - [AHA Guidelines for CPR and Emergency Cardiovascular Care](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines)
+
+## Related Articles
+
+- [AI for Humanitarian Aid: Crisis Mapping, Damage Assessment, and Disaster Response Optimization](../../ai/ai-for-humanitarian-aid.md)

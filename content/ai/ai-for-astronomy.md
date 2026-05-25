@@ -94,3 +94,9 @@ JWST era: NIRCam and MIRI instruments produce ultra-deep infrared images reveali
 - Galaxy Zoo: Citizen Science Galaxy Classification
 - ZTF & LSST Alert Brokers (ANTARES, ALeRCE, Fink)
 - AstroML: Machine Learning for Astronomy (Python Library)
+
+## Related Articles
+
+- [AI for Archaeology: Site Detection, Artifact Classification, and Digital Heritage Preservation](../ai-for-archaeology.md)
+- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../ai-call-center.md)
+- [AI Content Authenticity: Watermarking and Detection](../ai-content-authenticity.md)

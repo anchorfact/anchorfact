@@ -93,3 +93,9 @@ AI transforms each stage: (1) Automated fault detection -- 3D CNNs (U-Net varian
 - SEG (Society of Exploration Geophysicists) Machine Learning GitHub
 - Schlumberger DELFI / Halliburton DS365: AI-driven subsurface platforms
 - Stanford Center for Earth Resources Forecasting (SCERF)
+
+## Related Articles
+
+- [AI Benchmarks: MMLU, SWE-bench, and How We Measure Intelligence](../ai-benchmarks-and-evaluation.md)
+- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../ai-blockchain.md)
+- [AI for Audio Processing: Sound Event Detection, Acoustic Scene Analysis, and Environmental Intelligence](../ai-for-audio-processing.md)

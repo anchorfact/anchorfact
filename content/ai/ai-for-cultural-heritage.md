@@ -94,3 +94,9 @@ Herculaneum scrolls (2023-2024 Vesuvius Challenge): AI models (combining CT scan
 - Vesuvius Challenge: Reading the Herculaneum Papyri
 - Google Arts & Culture: AI Experiments
 - Digital Benin / Mukurtu CMS (Indigenous Cultural Heritage Platforms)
+
+## Related Articles
+
+- [AI for Archaeology: Site Detection, Artifact Classification, and Digital Heritage Preservation](../ai-for-archaeology.md)
+- [AI for Intellectual Property: Patent Search, Prior Art Analysis, and Trademark Intelligence](../ai-ip-patents.md)
+- [Contemporary Art Trends and the Digital Turn](../../arts/contemporary-art-trends.md)

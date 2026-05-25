@@ -94,3 +94,9 @@ Text classification tasks: (1) Topic classification -- what is this about? (spor
 
 ## Detailed Analysis
 arxiv 2025 LLM-era benchmark: 32 datasets, 8 languages. Key findings: (1) Zero-shot GPT-4 achieves 85-90% of fine-tuned BERT accuracy on English text classification; (2) Few-shot (16 examples) matches or exceeds fine-tuned BERT for simpler tasks (topic classification, sentiment), lags by 5-10% on fine-grained classification; (3) Synthetic data generation (LLM creates training examples) bridges the gap to within 2-5% of fully supervised training. Springer 2025 review: SetFit (Tunstall et al., 2022) -- two-stage: contrastive fine-tuning of sentence transformer on few-shot pairs, then train logistic regression classifier on embeddings. Matches GPT-3 few-shot with 1600x smaller model. WC-SBERT (ACM 2024): zero-shot topic classification using SBERT embeddings + Wikipedia category hierarchy as label space. Nature 2026 zero-shot military text classification: prompt engineering with chain-of-thought reasoning for domain-specific fine-grained categories.
+
+## Related Articles
+
+- [Text Summarization: From Extractive Methods to Abstractive LLM-Based Summarization](../text-summarization.md)
+- [AI for Mental Health: LLM-Based Therapy, Digital Interventions, and Clinical Trials](../ai-for-mental-health.md)
+- [AI Language Translation and Interpretation: LLM-Based Translation, Simultaneous Interpretation, and Quality Estimation](../ai-language-translation-interpretation.md)

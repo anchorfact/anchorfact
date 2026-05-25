@@ -1,12 +1,12 @@
 ---
 id: ai-for-weather-forecasting
-title: "AI for Weather Forecasting: Data-Driven Numerical Weather Prediction and Nowcasting"
+title: 'AI for Weather Forecasting: Data-Driven Numerical Weather Prediction and Nowcasting'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-26'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -47,6 +47,35 @@ primary_sources:
     institution: Nature / Huawei Cloud
     doi: 10.1038/s41586-023-06185-3
     url: https://www.nature.com/articles/s41586-023-06185-3
+  - title: Probabilistic Weather Forecasting with Machine Learning (GenCast)
+    authors:
+      - Price,I.
+      - Sanchez-Gonzalez,A.
+      - Alet,F.
+      - Ewalds,T.
+      - El-Kadi,A.
+      - Stott,J.
+      - Mohamed,S.
+      - Battaglia,P.
+      - Lam,R.
+      - Willson,M.
+    type: academic_paper
+    year: 2024
+    doi: 10.1038/s41586-024-08252-9
+    institution: Google DeepMind/Nature
+  - title: 'FuXi: A Cascade Machine Learning Forecasting System'
+    authors:
+      - Chen,L.
+      - Zhong,X.
+      - Zhang,F.
+      - Cheng,Y.
+      - Xu,Y.
+      - Qi,Y.
+      - Li,H.
+    type: academic_paper
+    year: 2023
+    doi: 10.1038/s41597-023-02712-7
+    institution: Nature Scientific Data
 known_gaps:
   - Extreme weather event prediction -- hurricanes, tornadoes, flash floods with sufficient lead time
   - Probabilistic AI weather forecasting with well-calibrated uncertainty estimates
@@ -86,15 +115,17 @@ secondary_sources:
       - Tian, Qi
     institution: Huawei Cloud / Nature
     url: https://www.nature.com/articles/s41586-023-06185-3
-  - title: "AI for Climate and Weather: A Comprehensive Survey on Deep Learning Methods"
+  - title: 'AI for Climate and Weather: A Comprehensive Survey on Deep Learning Methods'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: arXiv / WIREs Climate Change
     url: https://doi.org/10.1002/wcc.890
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
+
 ## TL;DR
 AI is revolutionizing weather forecasting -- models like GraphCast, Pangu-Weather, and FourCastNet can produce 10-day global forecasts in seconds that rival the accuracy of traditional supercomputer-based physics simulations that took hours. By 2025, the European Centre for Medium-Range Weather Forecasts is running AI forecasts operationally alongside classical models, marking the beginning of the data-driven weather prediction era.
 
@@ -103,3 +134,9 @@ Traditional Numerical Weather Prediction (NWP): solve the Navier-Stokes equation
 
 ## Detailed Analysis
 Architecture comparison: GraphCast (Google) -- GNN on icosahedral mesh, 36.7M parameters, 1-minute forecast on TPUv4. Pangu-Weather (Huawei) -- 3D Earth-Specific Transformer (3DEST), processes atmosphere as 3D grid with 13 pressure levels, 64M parameters. FourCastNet (NVIDIA) -- Adaptive Fourier Neural Operator (AFNO), learns in frequency domain via FFT, 74M parameters. Performance: GraphCast outperforms IFS on 90% of targets for deterministic forecasts. For extreme events: GraphCast predicted Hurricane Lee making landfall in Nova Scotia 9 days in advance (vs. 6 days for IFS). ECMWF AIFS (2024-2026): the operational transition. ECMWF now runs GraphCast and other AI models as part of its ensemble prediction system, producing 50 perturbed forecasts for probabilistic prediction. AI models excel at medium-range (1-10 day) deterministic forecasts; physics-based models remain essential for ensembles, uncertainty quantification, and rare events. The future is hybrid -- AI for fast, accurate deterministic prediction + physics for calibration and extremes.
+
+## Related Articles
+
+- [AI for Disaster Prediction: Earthquake Forecasting, Flood Detection, and Early Warning Systems](../ai-disaster-prediction.md)
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../ai-for-climate-science.md)
+- [Protein Structure Prediction: AlphaFold, RoseTTAFold, and AI-Driven Structural Biology](../protein-structure-prediction.md)

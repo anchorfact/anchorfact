@@ -96,3 +96,9 @@ Novel view synthesis: given images of a scene from different angles, generate a 
 
 ## Detailed Analysis
 NeRF training: for each training image, sample random pixels, cast rays, minimize MSE between rendered and ground-truth colors. Instant-NGP: multi-resolution hash-grid encoding replaces positional encoding, enabling 100-1000x faster training (5 seconds vs hours). 3D Gaussian Splatting (2023): represent scene as 3D Gaussians with position, covariance, opacity, spherical harmonics. Rendering is rasterization of projected Gaussians -- orders of magnitude faster than NeRF's ray marching. Applications: VR scene capture (Luma AI, Polycam -- create 3D from phone video), movie VFX (digital set capture), cultural heritage digitization, real estate virtual tours. Key challenge: dynamic scenes -- NeRF/3DGS assume static scenes. Dynamic extensions (D-NeRF, 4DGS) exist but are less mature. The 2025 survey identifies outdoor, large-scale, and dynamic rendering as the key frontiers.
+
+## Related Articles
+
+- [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../3d-generation-gaussian-splatting.md)
+- [Neural Style Transfer: Artistic Rendering, Image-to-Image Translation, and Creative AI](../neural-style-transfer.md)
+- [Program Synthesis and Formal Verification: Neural Theorem Proving with LLMs](../program-synthesis-verification.md)

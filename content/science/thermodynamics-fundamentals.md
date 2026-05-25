@@ -125,3 +125,9 @@ Applications span: internal combustion engines (Otto cycle), refrigeration (Carn
 - HyperPhysics: Thermodynamics
 - MIT OpenCourseWare: Thermodynamics & Kinetics
 - Khan Academy: Laws of Thermodynamics
+
+## Related Articles
+
+- [Photography Fundamentals and Composition](../../arts/photography-fundamentals.md)
+- [Poetry Fundamentals](../../arts/poetry-fundamentals.md)
+- [Digital Marketing Fundamentals](../../business/digital-marketing-fundamentals.md)

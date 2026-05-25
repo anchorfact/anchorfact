@@ -88,3 +88,9 @@ Three task granularities: (1) Action classification -- given a trimmed video cli
 
 ## Detailed Analysis
 TimeSformer (2021, Meta): applies self-attention along spatial dimensions and temporal dimensions separately (divided space-time attention), reducing compute from O(T^2*S^2) to O(T^2+S^2). VideoMAE (2022): randomly mask 90% of spacetime patches, train to reconstruct -- the extreme masking forces the model to learn high-level semantics rather than copying nearby frames. Achieves SOTA with efficient training. SlowFast (2019): Slow pathway (low frame rate, high spatial resolution) captures spatial semantics (objects, scenes); Fast pathway (high frame rate, low spatial resolution) captures motion. Temporal action detection: THUMOS, ActivityNet benchmarks. Approaches: two-stage (propose segments, classify) and single-stage (anchor-free detection). SOTA around 45-55% mAP on ActivityNet -- far below image detection (60-80% mAP). Video-language models (TemporalVLM): answer questions about video content ("Did the person stir the pot before or after adding salt?"). Applications: surveillance (anomaly detection), sports analytics (player action tracking), content moderation (violent/sensitive content), robot learning (learning manipulation from video).
+
+## Related Articles
+
+- [Vision-Language-Action Models: Unified Multimodal Foundation Models for Embodied AI](../vision-language-action-models.md)
+- [Visual Question Answering: Vision-Language Models for Image Understanding and Reasoning](../visual-question-answering.md)
+- [AI for Accessibility: Assistive Technologies, Sign Language Recognition, and Inclusive Systems](../ai-for-accessibility.md)

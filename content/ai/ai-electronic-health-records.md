@@ -97,3 +97,9 @@ EHR AI: (1) Ambient scribe -- microphone records patient encounter; ASR transcri
 
 ## Detailed Analysis
 Nuance DAX Copilot (2023, Microsoft acquisition $19.7B): ambient AI for clinical documentation. Multi-speaker diarization separates doctor/patient speech. SOAP note generation with structured sections. Kaiser Permanente study (2024): 50-70% reduction in documentation time, 79% of physicians report improved work-life balance. Abridge (2018-2025): academic medical center focus. Real-time patient-friendly summaries alongside clinical notes. Epic (2024): integrated ambient AI + GPT-4 in-basket message drafting. Deployed at 500+ hospitals within months. Amazon Comprehend Medical: pre-trained NER for protected health information (PHI), medication, and medical condition extraction. Key impact: physician burnout -- 50%+ of US physicians report burnout symptoms. A major driver: "pajama time" -- 1-2 hours of evening EHR documentation. AI ambient scribes directly address this.
+
+## Related Articles
+
+- [AI for Mental Health: LLM-Based Therapy, Digital Interventions, and Clinical Trials](../ai-for-mental-health.md)
+- [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../ai-air-quality.md)
+- [AI Coding Assistants: Copilot, Cursor, and Claude Code](../ai-coding-assistants.md)

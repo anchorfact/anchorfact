@@ -67,3 +67,9 @@ Service Workers run on a separate thread, have no DOM access, and are event-driv
 ## Further Reading
 
 - [Service Workers Nightly (W3C)](https://w3c.github.io/ServiceWorker/)
+
+## Related Articles
+
+- [AI for Customer Service: Conversational Agents, Ticket Routing, and Intelligent Contact Centers](../../ai/ai-customer-service.md)
+- [Kubernetes Pod & Service](../kubernetes-pod-service.md)
+- [Web Workers](../web-workers.md)

@@ -109,3 +109,9 @@ Innate: first line (skin, mucus), inflammatory response, phagocytes engulf patho
 ## Further Reading
 
 - [Janeway's Immunobiology (9th Ed)](https://www.garlandscience.com/product/isbn/9780815345510)
+
+## Related Articles
+
+- [Immune System Boosters](../../health/immune-system-boosters.md)
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
+- [AI for Digital Twins: Real-Time Simulation, Predictive Maintenance, and System Optimization](../../ai/ai-for-digital-twins.md)

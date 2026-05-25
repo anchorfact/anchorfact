@@ -88,3 +88,9 @@ Call center AI: (1) Real-time transcription -- ASR (Whisper, DeepSpeech) convert
 
 ## Detailed Analysis
 Cresta: real-time agent assist using GPT-4. Features: instant knowledge surfacing (agent mentions product -> relevant docs appear), behavioral guidance ("slow down, the customer sounds confused"), and auto-generated call summaries. Cresta reports 15-25% AHT reduction. Gong: post-call revenue intelligence. Analyzes sales calls for deal risk (competitor mentions, pricing objections, lack of decision-maker involvement). Cogito: behavioral AI analyzing voice tone. Detects: agent burnout (flat tone), customer escalation risk (rising pitch), and conversational dynamics (interruption patterns). Speech emotion recognition: models trained on acted emotional speech (RAVDESS, IEMOCAP) classify 6-8 emotions. Challenges: real-world emotional expression is more subtle than acted datasets. WFM AI: combines historical call patterns + calendar events + marketing campaigns -> call volume forecast. Optimization: Erlang-C + ML for multi-skill scheduling.
+
+## Related Articles
+
+- [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../3d-generation-gaussian-splatting.md)
+- [AI for Election Integrity: Disinformation Detection, Voter Analytics, and Electoral Security](../ai-election-integrity.md)
+- [AI for Augmented Reality: Real-Time Scene Understanding, Spatial Computing, and Contextual Overlays](../ai-for-augmented-reality.md)

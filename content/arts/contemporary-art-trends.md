@@ -144,3 +144,9 @@ The contemporary art market has decentralized geographically — major auctions 
 - Art Basel: Market Reports
 - Rhizome: Net Art Anthology
 - Frieze: Contemporary Art Magazine
+
+## Related Articles
+
+- [AI for Cultural Heritage: Digital Preservation, Art Attribution, and Museum Intelligence](../../ai/ai-for-cultural-heritage.md)
+- [Digital Art and New Media Art History](../digital-art-history.md)
+- [Digital Art](../digital-art.md)

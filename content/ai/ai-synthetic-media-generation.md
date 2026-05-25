@@ -100,3 +100,9 @@ Digital human pipeline: (1) Face synthesis -- StyleGAN/Diffusion models generate
 
 ## Detailed Analysis
 Synthesia: web platform -- choose avatar (140+ stock or custom), type script, select voice, generate video in minutes. Enterprise use: onboarding, compliance training, product demos. $90M Series C at $1B (2023). D-ID: "talking head" animation from single photo. API integrated into chatbot platforms. Virtual influencers: Lil Miquela (created 2016, 2.8M followers) blurs line between real and virtual. Brand partnerships: Prada, Calvin Klein, Samsung. Ethical framework: disclosure labels (Meta 2024 requires AI-generated content labeling), consent (living persons must consent to digital replication), and posthumous rights (actors' estates controlling AI-recreated performances). EU AI Act (2026 enforcement): mandates transparency -- AI-generated content must be labeled as such. California AB 730/AB 602 prohibits non-consensual deepfake creation. Key challenge: the uncanny valley -- as digital humans approach photorealism, subtle imperfections become disturbing. The most successful digital humans (Lil Miquela) embrace a stylized aesthetic rather than aiming for perfect realism.
+
+## Related Articles
+
+- [AI-Generated Content Detection: Identifying Synthetic Text, Deepfake Images, and AI-Authored Media](../ai-generated-content-detection.md)
+- [AI Video Generation: Sora, Veo, and the Future of Synthetic Media](../ai-video-generation.md)
+- [AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation](../ai-content-creation.md)

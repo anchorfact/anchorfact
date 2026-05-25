@@ -138,3 +138,9 @@ Vanilla RNN suffers vanishing/exploding gradients in long sequences. LSTM (Long 
 ## Further Reading
 
 - [Learning Phrase Representations using RNN Encoder-Decoder (Cho et al., 2014)](https://arxiv.org/abs/1406.1078)
+
+## Related Articles
+
+- [Activation Functions in Neural Networks](../activation-functions.md)
+- [AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime](../ai-for-fraud-detection.md)
+- [Convolutional Neural Networks (CNN)](../convolutional-neural-networks-cnn.md)

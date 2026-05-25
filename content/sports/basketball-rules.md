@@ -74,3 +74,9 @@ Scoring: field goal = 2 points (inside arc), 3 points (outside arc), free throw 
 
 - [FIBA Official Basketball Rules](https://www.fiba.basketball/documents/official-basketball-rules)
 - [NBA Official Rulebook](https://official.nba.com/rulebook/)
+
+## Related Articles
+
+- [Basketball Fundamentals](../basketball-fundamentals.md)
+- [Photography Fundamentals and Composition](../../arts/photography-fundamentals.md)
+- [Poetry Fundamentals](../../arts/poetry-fundamentals.md)

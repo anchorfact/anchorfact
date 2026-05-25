@@ -103,3 +103,9 @@ atomic_facts:
   - id: "fact-sports-003"
     statement: "Magnus Carlsen: highest rated (2882, 2014)"
     confidence: "medium"
+
+## Related Articles
+
+- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
+- [Branding Strategy](../../business/branding-strategy.md)
+- [Marketing: Strategy, Consumer Behavior, and Digital Channels](../../business/marketing-fundamentals.md)

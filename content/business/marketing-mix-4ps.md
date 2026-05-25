@@ -74,3 +74,9 @@ Product: features, quality, branding, packaging. Price: cost-based, competitor-b
 ## Further Reading
 
 - [Principles of Marketing (Kotler & Armstrong, 18th Ed)](https://www.pearson.com/en-us/subject-catalog/p/principles-of-marketing/P200000009556)
+
+## Related Articles
+
+- [AI for Digital Marketing: Personalization, Campaign Optimization, and Customer Analytics](../../ai/ai-digital-marketing.md)
+- [Digital Marketing Fundamentals](../digital-marketing-fundamentals.md)
+- [Marketing: Strategy, Consumer Behavior, and Digital Channels](../marketing-fundamentals.md)

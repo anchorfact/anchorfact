@@ -83,3 +83,9 @@ Python 3.0 (2008) was a breaking change from Python 2, removing accumulated cruf
 - [Python 3.13 Docs](https://docs.python.org/3.13/): Official documentation
 - [PEP Index](https://peps.python.org/): Python Enhancement Proposals
 - [PyPI](https://pypi.org/): Python Package Index
+
+## Related Articles
+
+- [C++ Programming Language](../c++-language.md)
+- [C Programming Language](../c-language.md)
+- [Go Programming Language](../go-language.md)

@@ -94,3 +94,9 @@ Memory: paging (fixed-size pages ← page table → frames), segmentation (logic
 - OSTEP: Operating Systems: Three Easy Pieces (free)
 - Linux Kernel Documentation
 - Microsoft: Windows Internals
+
+## Related Articles
+
+- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../../ai/ai-blockchain.md)
+- [AI Content Moderation Platforms: Large-Scale Safety Systems, Policy Engines, and Multilingual Review](../../ai/ai-content-moderation-platforms.md)
+- [AI for Disaster Prediction: Earthquake Forecasting, Flood Detection, and Early Warning Systems](../../ai/ai-disaster-prediction.md)

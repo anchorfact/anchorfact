@@ -88,3 +88,9 @@ Logistics AI stack: (1) Demand forecasting -- time-series models (DeepAR, TFT) p
 
 ## Detailed Analysis
 Vehicle routing: classical OR uses mixed integer programming solved via branch-and-price. ML approach: attention-based neural construction (POMO) -- encoder processes delivery points, decoder outputs visitation order, trained via REINFORCE. Hybrid: ML for demand/travel time estimation + OR for routing optimization. Warehouse robotics: Amazon Sparrow uses suction-based picking with deep learning vision detecting items in totes -- 65% of Amazon orders touched by robotics. Fleet telematics: AI analyzes truck GPS + engine diagnostics to predict maintenance and optimize fuel efficiency. DHL, FedEx, and SF Express deploy similar stacks. Key challenge: the curse of dimensionality -- nationwide delivery networks with thousands of vehicles and millions of packages exceed exact solvers. The AI+OR hybrid, where ML learns key parameters and OR computes globally optimal plans, is the practical frontier.
+
+## Related Articles
+
+- [AI for Supply Chain: Optimization, Vehicle Routing, and Logistics Intelligence](../ai-for-supply-chain.md)
+- [AI for Warehouse Robotics: Autonomous Forklifts, Bin-Picking, and Fulfillment Automation](../ai-warehouse-robotics.md)
+- [AI for Customer Service: Conversational Agents, Ticket Routing, and Intelligent Contact Centers](../ai-customer-service.md)

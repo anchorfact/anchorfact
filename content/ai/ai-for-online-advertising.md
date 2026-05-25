@@ -86,3 +86,9 @@ Online advertising flow: User visits webpage -> ad request sent to exchange (Goo
 
 ## Detailed Analysis
 CTR architectures: (1) DeepFM -- combine linear (FM) and deep (DNN) components for memorization + generalization; (2) DCN-V2 (Google) -- explicit feature crossing via cross layers computing high-order interactions; (3) DLRM (Meta) -- dense features via MLP + sparse features via embedding lookups + feature interaction via dot product; (4) DIN/DIEN (Alibaba) -- attention-based models weighting user behaviors by relevance to target ad. Calibration: predicted CTR must match empirical CTR (Platt scaling, isotonic regression). Delayed feedback: conversions happen hours/days after clicks. Cold-start: new ads and users have no history -- content-based and few-shot adaptation. Post-cookie era (2024-2026): Google deprecated third-party cookies. Alternatives: first-party data, contextual targeting, Privacy Sandbox APIs (FLEDGE/Topics), and cohort-based advertising.
+
+## Related Articles
+
+- [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../3d-generation-gaussian-splatting.md)
+- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../ai-call-center.md)
+- [AI for Augmented Reality: Real-Time Scene Understanding, Spatial Computing, and Contextual Overlays](../ai-for-augmented-reality.md)

@@ -44,3 +44,9 @@ The "flow state" (Csikszentmihalyi 1990) — complete absorption in the activity
 
 ---
 > 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。
+
+## Related Articles
+
+- [Sports Psychology: Mental Skills for Peak Performance](../sports-psychology-performance.md)
+- [Sports Psychology Fundamentals](../sports-psychology.md)
+- [AI for Crisis Hotlines: Suicide Prevention Chatbots, Emotional Support AI, and Risk Detection](../../ai/ai-for-crisis-hotlines.md)

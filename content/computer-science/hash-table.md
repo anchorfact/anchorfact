@@ -84,3 +84,7 @@ Hash function: maps key to integer index. Good hash functions minimize collision
 ## Further Reading
 
 - [Introduction to Algorithms (CLRS)](undefined)
+
+## Related Articles
+
+- [Periodic Table](../../science/periodic-table.md)

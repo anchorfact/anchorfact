@@ -81,3 +81,7 @@ Processing: washed (clean, bright), natural (fruity, fermented), honey (between)
 ## Further Reading
 
 - [The World Atlas of Coffee (James Hoffmann, 2nd Ed)](https://www.octopusbooks.co.uk/titles/james-hoffmann/the-world-atlas-of-coffee/9781784725716/)
+
+## Related Articles
+
+- [Vikings: Exploration and Culture](../../history/vikings-exploration-and-culture.md)

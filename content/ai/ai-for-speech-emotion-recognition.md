@@ -107,3 +107,9 @@ Modern SER architectures: (1) Self-supervised speech foundation models (wav2vec 
 - IEMOCAP, RAVDESS, CREMA-D: Standard SER benchmark datasets
 - Canary Speech: Vocal biomarker technology for mental health
 - Kintsugi AI: Voice-based mental health screening platform
+
+## Related Articles
+
+- [Affective Computing: Multimodal Emotion Recognition, Sentiment Analysis, and Empathetic AI](../affective-computing.md)
+- [AI for Mental Health: LLM-Based Therapy, Digital Interventions, and Clinical Trials](../ai-for-mental-health.md)
+- [Speech Recognition: From HMMs to Whisper](../speech-recognition.md)

@@ -83,3 +83,9 @@ Implementation: private constructor, static getInstance(). Thread-safe: double-c
 ## Further Reading
 
 - [Design Patterns (Gang of Four)](undefined)
+
+## Related Articles
+
+- [Adapter Pattern](../adapter-pattern.md)
+- [Command Pattern](../command-pattern.md)
+- [Decorator Pattern](../decorator-pattern.md)

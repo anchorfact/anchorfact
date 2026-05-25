@@ -79,3 +79,9 @@ Octal notation: `chmod 755` = rwxr-xr-x. Special bits: setuid (4000, run as file
 ## Further Reading
 
 - [Linux Documentation Project — File Permissions](undefined)
+
+## Related Articles
+
+- [Linux Kernel Modules](../linux-kernel-modules.md)
+- [Linux Process Management](../linux-process-management.md)
+- [Linux](../linux.md)

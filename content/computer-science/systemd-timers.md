@@ -79,3 +79,7 @@ Timer types: OnCalendar (specific times, like cron: `*-*-* 02:00:00` = daily 2AM
 ## Further Reading
 
 - [systemd.timer Documentation](undefined)
+
+## Related Articles
+
+- [Systemd](../systemd.md)

@@ -80,3 +80,9 @@ Servant leadership (Greenleaf, 1970): leader's primary role is to serve the team
 ## Further Reading
 
 - [Leaders Eat Last (Simon Sinek)](https://www.penguinrandomhouse.com/books/223777/leaders-eat-last-by-simon-sinek/)
+
+## Related Articles
+
+- [Leadership Theory and Organizational Behavior](../leadership-and-organizational-behavior.md)
+- [Clean Code Principles](../../computer-science/clean-code-principles.md)
+- [Software Engineering: Design Principles and Development Methodologies](../../computer-science/software-engineering-principles.md)

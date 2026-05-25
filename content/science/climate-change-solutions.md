@@ -69,3 +69,9 @@ Solar: costs dropped 90% since 2010. Wind: onshore cheapest energy source per kW
 ## Further Reading
 
 - [Drawdown: The Most Comprehensive Plan Ever Proposed to Reverse Global Warming (Paul Hawken)](https://drawdown.org/)
+
+## Related Articles
+
+- [Climate Change](../climate-change.md)
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
+- [AI for Satellite Imagery: Object Detection, Change Detection, and Global Monitoring](../../ai/ai-satellite-imagery.md)

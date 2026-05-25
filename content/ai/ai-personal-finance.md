@@ -87,3 +87,9 @@ Personal finance AI: (1) Robo-advisory -- users answer risk questionnaire, AI al
 
 ## Detailed Analysis
 Robo-advisor algorithms: Modern Portfolio Theory optimizes expected return for given risk. ML enhances with: personalized glide paths (younger investors -> more stocks), tax coordination across taxable + retirement accounts, and direct indexing (owning individual stocks instead of ETFs for personalized tax-loss harvesting). Betterment: pioneer since 2010, $800B+ managed. Goal-based investing: users set goals (retirement at 65, $1M college fund), AI runs Monte Carlo simulations (10,000 scenarios) showing probability of success. Budgeting AI: Plaid connects to 12,000+ financial institutions. Transaction enrichment: "UBER *TRIP 5PM" -> Transportation -> Ride Share. Recurring detection: ML identifies subscriptions (same amount, same merchant, monthly). Copilot/Monarch integrate net worth tracking, investment aggregation, and spending analytics. Behavioral finance: AI nudges users toward better decisions -- automatic round-up savings, progress visualization, and spending alerts. Privacy: financial data is highly sensitive -- on-device processing (Apple Card) and read-only access via OAuth (Plaid, MX).
+
+## Related Articles
+
+- [Personal Finance](../../business/personal-finance.md)
+- [AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation](../ai-content-creation.md)
+- [AI for Algorithmic Trading: Reinforcement Learning, Market Prediction, and Quantitative Finance](../ai-for-algorithmic-trading.md)

@@ -73,3 +73,9 @@ The History API (`window.history`) enables single-page applications to manipulat
 ## Further Reading
 
 - [HTML Standard — Session History and Navigation](https://html.spec.whatwg.org/multipage/history.html)
+
+## Related Articles
+
+- [Animation History](../../arts/animation-history.md)
+- [Architecture History](../../arts/architecture-history.md)
+- [Digital Art and New Media Art History](../../arts/digital-art-history.md)

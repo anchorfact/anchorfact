@@ -99,3 +99,9 @@ AlphaStar architecture: transformer-based policy processes entity list (units vi
 - Unity ML-Agents
 - OpenAI: Dota 2 Bot
 - Game AI Pro Book Series
+
+## Related Articles
+
+- [AI for Virtual Reality: Immersive Content Generation, Intelligent NPCs, and Adaptive Environments](../ai-for-virtual-reality.md)
+- [Procedural Content Generation in Games](../../game-development/procedural-generation.md)
+- [AI Content Authenticity: Watermarking and Detection](../ai-content-authenticity.md)

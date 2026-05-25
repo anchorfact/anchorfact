@@ -88,4 +88,10 @@ Key components: microsegmentation (network isolation), identity-aware proxies, c
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [AI for Network Security: Intelligent Firewalls, DDoS Mitigation, and Zero-Trust Architectures](../../ai/ai-for-network-security.md)
+- [MLOps and LLMOps: Production AI Engineering, Observability, and Platform Architecture](../../ai/mlops-llmops.md)
+- [Network Intrusion Detection: AI-Powered Anomaly Detection and Zero-Day Threat Identification](../../ai/network-intrusion-detection.md)

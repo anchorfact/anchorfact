@@ -88,3 +88,9 @@ Germ theory (Pasteur 1861): microorganisms cause disease — single most importa
 ## Further Reading
 
 - [The Emperor of All Maladies (Siddhartha Mukherjee)](https://www.simonandschuster.com/books/The-Emperor-of-All-Maladies/Siddhartha-Mukherjee/9781439170915)
+
+## Related Articles
+
+- [Animation History](../../arts/animation-history.md)
+- [Architecture History](../../arts/architecture-history.md)
+- [Digital Art and New Media Art History](../../arts/digital-art-history.md)

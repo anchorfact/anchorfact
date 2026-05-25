@@ -91,3 +91,9 @@ Medical imaging AI tasks: (1) Classification -- is disease present? (normal vs. 
 
 ## Detailed Analysis
 CheXpert (Stanford): 224K chest X-rays with 14 radiology observations labeled via automatic NLP extraction from reports. CheXzero: uses CLIP-style contrastive pretraining on X-ray images paired with their radiology reports -- the model learns visual representations aligned with textual descriptions without disease labels. A major breakthrough: eliminates the annotation bottleneck that made medical AI data-hungry. FDA clearance categories: Class II (510k) -- most AI devices, requiring demonstration of substantial equivalence to existing devices; Class III (PMA) -- higher-risk, requiring clinical trials. Notable devices: IDx-DR (autonomous diabetic retinopathy screening, first autonomous AI FDA clearance), Viz.ai LVO (stroke detection with care coordination alerts), ProFound AI (mammography CAD). Key challenges: (1) Generalizability -- models degrade 10-20% on data from different hospitals, scanner vendors, and patient populations. Federated learning and domain adaptation address this; (2) Prospective validation -- retrospective accuracy != clinical benefit. Randomized trials measuring patient outcomes (reduced time-to-treatment, improved survival) are rare but essential; (3) Workflow integration -- AI must fit seamlessly into PACS (Picture Archiving and Communication System) and radiologist workflow without adding clicks or time.
+
+## Related Articles
+
+- [AI for Electronic Health Records: Clinical NLP, Coding Automation, and Physician Burnout Reduction](../ai-electronic-health-records.md)
+- [AI for Construction: Computer Vision Safety, BIM Digital Twins, and Automated Project Monitoring](../ai-for-construction.md)
+- [AI for Mental Health: LLM-Based Therapy, Digital Interventions, and Clinical Trials](../ai-for-mental-health.md)

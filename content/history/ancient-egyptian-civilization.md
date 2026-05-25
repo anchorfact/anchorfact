@@ -122,3 +122,9 @@ Mummification reflected afterlife beliefs. The Book of the Dead provided spells 
 - British Museum: Egyptian Collection
 - Theban Mapping Project
 - UCLA Encyclopedia of Egyptology
+
+## Related Articles
+
+- [Ancient Mesopotamia: Cradle of Civilization](../ancient-mesopotamia.md)
+- [Ancient Greek Literature](../../arts/ancient-greek-literature.md)
+- [Ancient Egypt](../ancient-egypt.md)

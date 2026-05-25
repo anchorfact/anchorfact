@@ -108,3 +108,9 @@ HyDE generates a hypothetical ideal answer, embeds it, and retrieves similar doc
 - LlamaIndex: Advanced RAG Guide
 - LangChain RAG Documentation
 - Microsoft: GraphRAG (Knowledge Graph + RAG)
+
+## Related Articles
+
+- [Retrieval-Augmented Generation (RAG)](../rag.md)
+- [Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning](../agentic-ai.md)
+- [AI Personal Assistants: Task Automation, Proactive Intelligence, and Agentic Personal AI](../ai-personal-assistants.md)

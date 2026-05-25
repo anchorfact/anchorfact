@@ -101,3 +101,7 @@ Longships: shallow draft enabled river navigation and beach landings. Raids: Lin
 ## Further Reading
 
 - [The Age of the Vikings (Anders Winroth)](https://press.princeton.edu/books/hardcover/9780691149851/the-age-of-the-vikings)
+
+## Related Articles
+
+- [Age of Exploration](../age-of-exploration.md)

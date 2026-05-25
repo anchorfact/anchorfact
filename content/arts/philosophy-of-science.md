@@ -69,3 +69,9 @@ Kuhn: normal science (puzzle-solving within paradigm) â†’ anomalies accumulate â
 ## Further Reading
 
 - [The Structure of Scientific Revolutions (Thomas Kuhn)](https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html)
+
+## Related Articles
+
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
+- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../../ai/ai-for-complex-networks.md)
+- [AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition](../../ai/ai-for-food-science.md)

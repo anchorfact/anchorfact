@@ -67,3 +67,9 @@ Why Mars: most Earth-like planet, past habitability, potential for ancient life.
 ## Further Reading
 
 - [NASA Mars Exploration Program](https://mars.nasa.gov/)
+
+## Related Articles
+
+- [AI for Oil and Gas Exploration: Seismic Interpretation, Reservoir Characterization, and Subsurface Intelligence](../../ai/ai-for-oil-gas-exploration.md)
+- [AI for Space Exploration: Autonomous Navigation, Earth Observation, and Spacecraft Autonomy](../../ai/ai-for-space-exploration.md)
+- [Age of Exploration](../../history/age-of-exploration.md)

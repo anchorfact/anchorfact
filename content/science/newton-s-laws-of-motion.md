@@ -83,3 +83,8 @@ Newton's three laws (1687, Principia) form the foundation of classical mechanics
 ## Further Reading
 
 - [Philosophiæ Naturalis Principia Mathematica (Newton, 1687)](https://www.gutenberg.org/ebooks/28233)
+
+## Related Articles
+
+- [Distributed Training: FSDP, DeepSpeed, and Scaling Laws](../../ai/distributed-training-systems.md)
+- [Language Modeling: From N-grams to Scaling Laws and Information-Theoretic Foundations](../../ai/language-modeling-theory.md)

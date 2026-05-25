@@ -116,3 +116,9 @@ Whisper's architecture: encoder-decoder transformer trained on diverse data (dif
 - OpenAI Whisper GitHub
 - Kaldi ASR Toolkit
 - Hugging Face: Automatic Speech Recognition
+
+## Related Articles
+
+- [AI for Speech Emotion Recognition: Vocal Biomarkers, Mental Health Screening, and Affective Computing](../ai-for-speech-emotion-recognition.md)
+- [Affective Computing: Multimodal Emotion Recognition, Sentiment Analysis, and Empathetic AI](../affective-computing.md)
+- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../ai-call-center.md)

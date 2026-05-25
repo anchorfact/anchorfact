@@ -95,3 +95,9 @@ Mobile-first: design for smallest screen first, progressively enhance for larger
 ## Further Reading
 
 - [Responsive Web Design (Ethan Marcotte)](https://alistapart.com/article/responsive-web-design/)
+
+## Related Articles
+
+- [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../../ai/ai-for-chip-design.md)
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../../ai/ai-for-data-curation.md)
+- [AI Protein Design: RFDiffusion, ProteinMPNN, and the Nobel Revolution](../../ai/ai-protein-design.md)

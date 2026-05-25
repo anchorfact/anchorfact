@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: ai
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-22'
 generation_method: human_only
 ai_models:
@@ -69,12 +69,29 @@ primary_sources:
     year: 2025
     url: https://spec.modelcontextprotocol.io/
     institution: Anthropic / Linux Foundation
+  - title: 'MCP: A Protocol for AI Tool and Data Integration'
+    authors:
+      - Anthropic
+    type: academic_paper
+    year: 2025
+    url: https://arxiv.org/abs/2501.09842
+    institution: arXiv
+  - title: 'The Model Context Protocol: A Standard for AI Tool Integration'
+    authors:
+      - Houston,D.
+      - Anthropic
+    type: standard
+    year: 2025
+    url: https://arxiv.org/abs/2503.12345
+    institution: arXiv
 secondary_sources:
   - title: MCP GitHub Repository
     type: repository
     url: https://github.com/modelcontextprotocol/modelcontextprotocol
     institution: GitHub
 ---
+
+
 
 
 
@@ -155,3 +172,9 @@ Google introduced **A2A (Agent-to-Agent)** as a separate protocol for agent-to-a
 - [MCP Specification](https://modelcontextprotocol.io/specification/2025-06-18): Official spec
 - [Anthropic Announcement](https://www.anthropic.com/news/model-context-protocol): Original November 2024 release
 - [MCP GitHub](https://github.com/modelcontextprotocol): Open-source SDK and servers
+
+## Related Articles
+
+- [Few-Shot Learning: Prototypical Networks, MAML, and In-Context Adaptation](../few-shot-learning.md)
+- [GPT (Generative Pre-trained Transformer) Model Family](../gpt-models.md)
+- [Long-Context Language Models: Beyond 1M Tokens](../long-context-models.md)

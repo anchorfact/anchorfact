@@ -87,3 +87,9 @@ Social listening AI: (1) Data collection -- API access to Twitter/X, Facebook, I
 
 ## Detailed Analysis
 Sentiment analysis: fine-tuned RoBERTa/BERT on labeled social media data. Challenges: sarcasm ("Great, another software update that breaks everything"), emoji-tone mismatch, regional slang. Brandwatch: 7,500+ clients, 100M+ online sources. AI features: Iris AI automatically surfaces interesting patterns ("Apple mentions spiking in Germany due to privacy concerns"). Talkwalker: visual listening identifies brand logos in 2.5M+ images/day. Captures logo presence when brand not tagged. Sprinklr: unified CXM platform -- social listening + social engagement + customer service + advertising in one AI-powered system. Crisis detection: ML monitors sentiment velocity (rate of negative mentions), flags anomalous spikes for PR teams within minutes. Influencer identification: AI ranks potential brand ambassadors by reach, engagement, audience alignment.
+
+## Related Articles
+
+- [Affective Computing: Multimodal Emotion Recognition, Sentiment Analysis, and Empathetic AI](../affective-computing.md)
+- [AI for Wildlife Conservation: Camera Trap Analysis, Species Classification, and Biodiversity Monitoring](../ai-for-wildlife-conservation.md)
+- [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../ai-air-quality.md)

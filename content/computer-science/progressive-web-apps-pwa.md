@@ -89,3 +89,9 @@ Requirements: HTTPS, Web App Manifest (name, icons, start_url, display: standalo
 ## Further Reading
 
 - [Progressive Web Apps (MDN)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
+
+## Related Articles
+
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../../ai/ai-for-data-curation.md)
+- [Semantic Web and Ontologies: Knowledge Representation, OWL Reasoning, and Linked Data](../../ai/semantic-web-ontology.md)
+- [Amazon Web Services (AWS)](../amazon-web-services-aws.md)

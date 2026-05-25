@@ -72,3 +72,9 @@ Brain: ~86 billion neurons, consumes 20% of body's energy. Heart: pumps 7,000 li
 ## Further Reading
 
 - [Gray's Anatomy (41st Edition)](https://www.elsevier.com/books/grays-anatomy/standring/978-0-7020-5230-9)
+
+## Related Articles
+
+- [Human Anatomy: Systems, Organs, and Function](../../health/human-anatomy.md)
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../../ai/3d-human-modeling.md)
+- [Cognitive Architectures: ACT-R, Soar, and Computational Models of Human-Like Reasoning](../../ai/cognitive-architectures.md)

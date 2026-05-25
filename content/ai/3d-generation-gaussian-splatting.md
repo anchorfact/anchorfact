@@ -104,3 +104,9 @@ The key 3DGS innovation: (1) initialize Gaussians from SfM point cloud; (2) opti
 - 3D Gaussian Splatting Papers GitHub
 - NVIDIA Instant NGP
 - DreamFusion: Text-to-3D
+
+## Related Articles
+
+- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../ai-call-center.md)
+- [AI for Augmented Reality: Real-Time Scene Understanding, Spatial Computing, and Contextual Overlays](../ai-for-augmented-reality.md)
+- [AI for Digital Twins: Real-Time Simulation, Predictive Maintenance, and System Optimization](../ai-for-digital-twins.md)

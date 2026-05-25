@@ -75,3 +75,9 @@ Functional features: pattern matching, case classes, for-comprehensions, immutab
 ## Further Reading
 
 - [Scala Documentation](https://docs.scala-lang.org/)
+
+## Related Articles
+
+- [AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation](../../ai/ai-code-translation.md)
+- [AI for Accessibility: Assistive Technologies, Sign Language Recognition, and Inclusive Systems](../../ai/ai-for-accessibility.md)
+- [AI for Language Learning: Intelligent Tutoring, Speech Assessment, and Personalized Curriculum](../../ai/ai-for-language-learning.md)

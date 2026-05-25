@@ -94,3 +94,9 @@ Connectomics: Google's flood-filling networks segment neurons from terabyte-scal
 - Neuromatch Academy: Computational Neuroscience
 - Allen Institute Brain Observatory & MICrONS
 - Predictive Processing (Clark, 2023) — MIT Press
+
+## Related Articles
+
+- [Brain-Computer Interfaces: AI-Powered Neural Decoding and Neurotechnology](../brain-computer-interface-ai.md)
+- [Cognitive Architectures: ACT-R, Soar, and Computational Models of Human-Like Reasoning](../cognitive-architectures.md)
+- [Mechanistic Interpretability: Reverse-Engineering Neural Network Circuits and Features](../mechanistic-interpretability.md)

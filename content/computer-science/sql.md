@@ -106,3 +106,9 @@ Key features include JOIN (combining tables), GROUP BY (aggregation), transactio
 
 - [PostgreSQL Docs](https://www.postgresql.org/docs/): Open-source reference implementation
 - [SQLite Docs](https://www.sqlite.org/docs.html): Lightweight embedded database
+
+## Related Articles
+
+- [Text-to-SQL: Natural Language Database Querying with Large Language Models](../../ai/text-to-sql.md)
+- [AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation](../../ai/ai-code-translation.md)
+- [AI Document Understanding: Layout Parsing, Structured Extraction, and Intelligent Document Processing](../../ai/ai-document-understanding.md)

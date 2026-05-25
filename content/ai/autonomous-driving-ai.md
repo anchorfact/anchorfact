@@ -94,3 +94,9 @@ Imitation learning trains networks on human driving demonstrations (steering ang
 - nuScenes and Waymo Open Dataset
 - CARLA Simulator
 - CVPR 2025 Autonomous Driving Workshop
+
+## Related Articles
+
+- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../adversarial-machine-learning.md)
+- [Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning](../agentic-ai.md)
+- [AI for Drone Autonomy: Autonomous Navigation, Swarm Coordination, and Aerial Robotics](../ai-drone-autonomy.md)

@@ -83,3 +83,9 @@ Types: Dedicated Workers (single tab), Shared Workers (multiple tabs/windows), a
 ## Further Reading
 
 - [Web Workers (WHATWG)](https://html.spec.whatwg.org/multipage/workers.html)
+
+## Related Articles
+
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../../ai/ai-for-data-curation.md)
+- [Semantic Web and Ontologies: Knowledge Representation, OWL Reasoning, and Linked Data](../../ai/semantic-web-ontology.md)
+- [Amazon Web Services (AWS)](../amazon-web-services-aws.md)

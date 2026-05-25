@@ -94,3 +94,9 @@ The Therabot RCT (NEJM AI 2025): 1,200+ participants with clinical depression, a
 - Woebot Health (FDA Breakthrough Device Designation)
 - Lyssn: AI for Psychotherapy Quality Assessment
 - Stanford AI for Mental Health (ai4mh.stanford.edu)
+
+## Related Articles
+
+- [AI for Electronic Health Records: Clinical NLP, Coding Automation, and Physician Burnout Reduction](../ai-electronic-health-records.md)
+- [AI for Speech Emotion Recognition: Vocal Biomarkers, Mental Health Screening, and Affective Computing](../ai-for-speech-emotion-recognition.md)
+- [AI Language Translation and Interpretation: LLM-Based Translation, Simultaneous Interpretation, and Quality Estimation](../ai-language-translation-interpretation.md)

@@ -78,3 +78,9 @@ The Device Orientation API provides accelerometer, gyroscope, and magnetometer d
 ## Further Reading
 
 - [DeviceOrientation Event Specification (W3C)](https://www.w3.org/TR/orientation-event/)
+
+## Related Articles
+
+- [API Gateway](../api-gateway.md)
+- [Broadcast Channel API](../broadcast-channel-api.md)
+- [Canvas API](../canvas-api.md)

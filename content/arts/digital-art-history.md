@@ -115,3 +115,9 @@ The internet spawned net.art — browser-based works by collectives like JODI th
 
 ## Critical Debates
 Digital art confronts traditional art world assumptions: infinite reproducibility challenges scarcity-based value; AI authorship questions human creative agency; immateriality complicates preservation and conservation practices.
+
+## Related Articles
+
+- [AI for Cultural Heritage: Digital Preservation, Art Attribution, and Museum Intelligence](../../ai/ai-for-cultural-heritage.md)
+- [AI Synthetic Media: Digital Humans, Virtual Influencers, and AI-Generated Video Personas](../../ai/ai-synthetic-media-generation.md)
+- [Contemporary Art Trends and the Digital Turn](../contemporary-art-trends.md)

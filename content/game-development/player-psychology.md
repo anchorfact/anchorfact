@@ -343,3 +343,9 @@ secondary_sources:
 - Bartle: Hearts, Clubs, Diamonds, Spades: Players Who Suit MUDs
 - [参见：game-data-analytics.md#留存分析]（数据分析）
 - [参见：core-mechanics.md#平衡设计]（难度曲线与数值设计）
+
+## Related Articles
+
+- [AI for Sports Analytics: Player Tracking, Performance Prediction, and Tactical Analysis](../../ai/ai-sports-analytics.md)
+- [The Psychology of Decision Making](../../self-improvement/decision-making-psychology.md)
+- [Resilience: The Psychology of Bouncing Back](../../self-improvement/resilience-the-psychology-of-bouncing-back.md)

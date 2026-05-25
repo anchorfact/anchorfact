@@ -81,3 +81,7 @@ atomic_facts:
   - id: "fact-geography-002"
     statement: "Trade war: US-China (2018+, tariffs on $500B+ goods)"
     confidence: "medium"
+
+## Related Articles
+
+- [AI Governance: Risk Frameworks, Audits, and International Cooperation](../../ai/ai-governance-and-policy.md)

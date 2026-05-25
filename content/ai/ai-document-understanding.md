@@ -107,3 +107,9 @@ Layout analysis: LayoutLMv3 (Microsoft, 2022) combines text, layout (2D position
 - LayoutLMv3: Unified Text, Layout, and Image Pretraining (Microsoft)
 - Donut: Document Understanding Transformer (NAVER)
 - Hugging Face Document AI Models
+
+## Related Articles
+
+- [AI for Hyperautomation: RPA, Intelligent Document Processing, and Cognitive Workflows](../ai-for-hyperautomation.md)
+- [AI for Customer Service: Conversational Agents, Ticket Routing, and Intelligent Contact Centers](../ai-customer-service.md)
+- [AI for Document Digitization: Historical Archives, Handwriting Recognition, and Mass Digitization](../ai-document-digitization.md)

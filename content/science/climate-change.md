@@ -91,3 +91,9 @@ Greenhouse effect: CO₂ and other gases trap heat. CO₂ levels: pre-industrial
 ## Further Reading
 
 - [IPCC Sixth Assessment Report (AR6)](https://www.ipcc.ch/report/ar6/syr/)
+
+## Related Articles
+
+- [Climate Change Solutions](../climate-change-solutions.md)
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
+- [AI for Satellite Imagery: Object Detection, Change Detection, and Global Monitoring](../../ai/ai-satellite-imagery.md)

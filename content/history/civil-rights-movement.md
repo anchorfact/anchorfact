@@ -94,3 +94,9 @@ Brown v. Board of Education (1954): segregated schools unconstitutional. Rosa Pa
 ## Further Reading
 
 - [Parting the Waters: America in the King Years (Taylor Branch)](https://www.simonandschuster.com/books/Parting-the-Waters/Taylor-Branch/9780671687427)
+
+## Related Articles
+
+- [The Open-Source AI Movement: Llama, DeepSeek, and Democratization](../../ai/open-source-ai-movement.md)
+- [Indian Independence Movement](../indian-independence-movement.md)
+- [Sports Biomechanics: The Physics of Human Movement](../../sports/sports-biomechanics.md)

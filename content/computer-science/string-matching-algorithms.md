@@ -82,3 +82,9 @@ KMP precomputes failure function (longest proper prefix that is also suffix). Bo
 ## Further Reading
 
 - [Introduction to Algorithms (CLRS)](undefined)
+
+## Related Articles
+
+- [AI for Recruiting: Resume Screening, Talent Matching, and Fairness in Hiring](../../ai/ai-for-recruiting.md)
+- [Deep Reinforcement Learning Algorithms: PPO, SAC, Dreamer, and Decision Transformer](../../ai/deep-reinforcement-learning-algorithms.md)
+- [Optimization Algorithms for Deep Learning](../../ai/optimization-algorithms.md)

@@ -90,3 +90,9 @@ Triple Alliance: Tenochtitlan, Texcoco, Tlacopan. Society: pipiltin (nobility) +
 ## Further Reading
 
 - [The Aztecs (Michael E. Smith, 3rd Ed)](https://www.wiley.com/en-us/The+Aztecs%2C+3rd+Edition-p-9781405194976)
+
+## Related Articles
+
+- [Byzantine Empire](../byzantine-empire.md)
+- [Inca Empire](../inca-empire.md)
+- [Mongol Empire](../mongol-empire.md)

@@ -88,3 +88,9 @@ Election AI threats: (1) Deepfake audio/video -- AI-generated clips of candidate
 
 ## Detailed Analysis
 New Hampshire primary (Jan 2024): AI-generated robocall impersonating President Biden telling voters not to vote. The perpetrator used ElevenLabs voice cloning. Resulted in FCC declaratory ruling that AI-generated robocalls are illegal under TCPA. Meta labeled AI-generated political content starting 2024. YouTube required disclosure of synthetic content. Graphika and DFRLab use AI to map disinformation networks -- identifying coordinated accounts by shared posting patterns, account creation metadata, and content similarity. Bot detection: Random Forest on account features (creation date, followers/following ratio, posting frequency, content diversity). Advanced: GNN-based network analysis. The arms race: AI generation improves faster than detection. Defense-in-depth (provenance + detection + platform policy + media literacy) is the emerging consensus. Key concern: AI disinformation disproportionately targets non-English communities where platform AI moderation is weakest.
+
+## Related Articles
+
+- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../ai-call-center.md)
+- [AI for Video Surveillance: Intelligent Monitoring, Anomaly Detection, and Privacy-Preserving Analytics](../ai-for-video-surveillance.md)
+- [AI Smart Contract Auditing: Vulnerability Detection, Formal Verification, and Blockchain Security](../ai-smart-contract-audit.md)

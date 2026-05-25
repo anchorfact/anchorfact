@@ -81,4 +81,8 @@ Three constructs: variables (x), abstraction (λx.M — function definition), ap
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [Causal AI: From Correlation to Causation with do-Calculus](../../ai/causal-inference-ai.md)

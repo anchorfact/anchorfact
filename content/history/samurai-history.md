@@ -90,3 +90,9 @@ Bushido (formalized 17th century): Rectitude, Courage, Benevolence, Respect, Hon
 ## Further Reading
 
 - [A Brief History of the Samurai (Jonathan Clements)](https://www.littlebrown.co.uk/titles/jonathan-clements/a-brief-history-of-the-samurai/9781849019811/)
+
+## Related Articles
+
+- [Animation History](../../arts/animation-history.md)
+- [Architecture History](../../arts/architecture-history.md)
+- [Digital Art and New Media Art History](../../arts/digital-art-history.md)

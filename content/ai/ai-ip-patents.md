@@ -88,3 +88,9 @@ IP AI applications: (1) Prior art search -- find existing patents/publications r
 
 ## Detailed Analysis
 Patent-specific NLP: patents use specialized language (means-plus-function claims, specific legal phrasing). Domain-adapted models (PatentBERT, BigBird-Patent) pretrained on USPTO/EPO databases outperform general-purpose transformers. ScienceDirect 2025 HITL framework: the AI system (1) takes invention disclosure, (2) searches prior art via semantic retrieval, (3) drafts patent claims informed by prior art to maximize novelty, (4) presents to attorney for review. The attorney provides feedback on claim scope and language, which the AI incorporates in subsequent iterations. Key IP AI platforms: NLPatent (semantic search + analytics), Adrenanite (patent landscape visualization), PatentPal (automated drafting). Solve Intelligence ranks 7 prior art AI tools. Challenges: (1) Precision-recall trade-off -- missing a single relevant prior art reference can invalidate a patent; (2) Legal reasoning -- AI excels at retrieval but struggles with legal analysis (obviousness determination, claim construction); (3) Confidentiality -- invention disclosures are highly sensitive, requiring on-premise or private cloud deployment.
+
+## Related Articles
+
+- [AI for Audio Processing: Sound Event Detection, Acoustic Scene Analysis, and Environmental Intelligence](../ai-for-audio-processing.md)
+- [AI for Cultural Heritage: Digital Preservation, Art Attribution, and Museum Intelligence](../ai-for-cultural-heritage.md)
+- [AI for Legal Research: Case Law Search, Citation Analysis, and Litigation Analytics](../ai-legal-research.md)

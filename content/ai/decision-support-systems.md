@@ -88,3 +88,9 @@ Decision support maturity model: Level 1(Descriptive) -- dashboards showing what
 
 ## Detailed Analysis
 Clinical CDSS: Epic Deterioration Index analyzes EHR data (vital signs, lab results, nursing notes) to predict patient deterioration. Sepsis prediction: ML models (random forest, LSTM) process vitals + labs, alert clinicians 4-6 hours before clinical recognition. Nature Digital Medicine 2025 review: effectiveness depends on workflow integration -- CDSS embedded in clinical workflow (auto-alert in EHR) achieves 3x higher adoption than standalone tools. Alert fatigue: too many false alarms desensitize clinicians. ML-based alert filtering and tiered urgency levels address this. Business decision intelligence: platforms (Tellius, Sisu, Peak) provide automated insight discovery -- AI scans all metric combinations, flags statistically significant changes, and generates natural language explanations. Prescriptive analytics: RL-based pricing (Pricefx), supply chain optimization (O9, Kinaxis), and marketing budget allocation (Google AI). Key challenge: the "last mile" of decision support -- translating AI recommendations into human action. Trust-building through explainability, confidence scores, and decision rationale presentation.
+
+## Related Articles
+
+- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../ai-blockchain.md)
+- [The Psychology of Decision Making](../../self-improvement/decision-making-psychology.md)
+- [Decision Making](../../self-improvement/decision-making.md)

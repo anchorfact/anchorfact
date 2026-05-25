@@ -114,3 +114,9 @@ Causes: 'No taxation without representation,' Boston Tea Party (1773). Key battl
 ## Further Reading
 
 - [1776 (David McCullough)](https://www.simonandschuster.com/books/1776/David-McCullough/9780743226721)
+
+## Related Articles
+
+- [AI for Science: AlphaFold and the AI-Driven Discovery Revolution](../../ai/ai-for-science.md)
+- [AI Protein Design: RFDiffusion, ProteinMPNN, and the Nobel Revolution](../../ai/ai-protein-design.md)
+- [South American Geography and Biodiversity](../../geography/south-american-geography.md)

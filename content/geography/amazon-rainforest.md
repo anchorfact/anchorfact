@@ -94,3 +94,9 @@ atomic_facts:
   - id: "fact-geography-003"
     statement: "Amazon River: largest by discharge volume (209,000 m³/s, 20% of global river flow)"
     confidence: "medium"
+
+## Related Articles
+
+- [Amazon FBA (Fulfillment by Amazon)](../../business/amazon-fba-fulfillment-by-amazon.md)
+- [Product Listing Optimization (Amazon)](../../business/product-listing-optimization-amazon.md)
+- [Amazon Web Services (AWS)](../../computer-science/amazon-web-services-aws.md)

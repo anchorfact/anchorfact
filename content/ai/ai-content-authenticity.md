@@ -97,3 +97,9 @@ Detection without watermarking: classifiers (GPTZero, Originality.ai) analyze pe
 - C2PA Initiative
 - HuggingFace: AI Content Detection
 - Partnership on AI: Synthetic Media Framework
+
+## Related Articles
+
+- [AI for Social Media: Misinformation Detection, Hate Speech Moderation, and Content Safety](../ai-for-social-media.md)
+- [AI-Generated Content Detection: Identifying Synthetic Text, Deepfake Images, and AI-Authored Media](../ai-generated-content-detection.md)
+- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../ai-call-center.md)

@@ -106,3 +106,9 @@ Efficient architectures: MobileNet (depthwise separable convolution), ShuffleNet
 - TensorFlow Lite Micro
 - Edge Impulse Platform
 - tinyML Foundation
+
+## Related Articles
+
+- [AI for the Internet of Things: Federated Learning, TinyML, and Intelligent Edge Devices](../ai-for-iot.md)
+- [AI Benchmarks: MMLU, SWE-bench, and How We Measure Intelligence](../ai-benchmarks-and-evaluation.md)
+- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../ai-blockchain.md)

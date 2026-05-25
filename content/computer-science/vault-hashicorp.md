@@ -75,3 +75,8 @@ Secret engines: KV (key-value), AWS (dynamic IAM credentials), PKI (X.509 certif
 ## Further Reading
 
 - [Vault Documentation](https://developer.hashicorp.com/vault/docs)
+
+## Related Articles
+
+- [Consul (HashiCorp)](../consul-hashicorp.md)
+- [Nomad (HashiCorp)](../nomad-hashicorp.md)

@@ -149,3 +149,9 @@ Activation functions: ReLU (most common), sigmoid (binary out), tanh (-1 to 1), 
 ## Further Reading
 
 - [Deep Learning (Goodfellow, Bengio, Courville)](https://www.deeplearningbook.org/)
+
+## Related Articles
+
+- [Backpropagation: The Engine of Neural Network Learning](../backpropagation.md)
+- [Mechanistic Interpretability: Reverse-Engineering Neural Network Circuits and Features](../mechanistic-interpretability.md)
+- [Activation Functions in Neural Networks](../activation-functions.md)

@@ -67,3 +67,8 @@ Oceans: 96.5% of all water. Freshwater: 2.5% — mostly locked in glaciers/ice c
 ## Further Reading
 
 - [NASA Earth Observatory — Water Cycle](https://earthobservatory.nasa.gov/features/Water)
+
+## Related Articles
+
+- [AI for Water Management: Leak Detection, Quality Monitoring, and Smart Irrigation](../../ai/ai-water-management.md)
+- [Software Development Life Cycle (SDLC)](../../computer-science/software-development-life-cycle-sdlc.md)

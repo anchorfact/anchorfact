@@ -79,3 +79,9 @@ Circle of fifths: visualizes key relationships. Time signatures: 4/4 (most commo
 ## Further Reading
 
 - [Tonal Harmony (Kostka, Payne, Almén, 8th Ed)](https://www.mheducation.com/highered/product/tonal-harmony-kostka-payne-almen/M9781259447099.html)
+
+## Related Articles
+
+- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
+- [AI Music Composition: Generative Music, Style Imitation, and Creative AI Audio](../../ai/ai-music-composition.md)
+- [AI Music and Audio Generation: Suno, Udio, and MusicLM](../../ai/ai-music-generation.md)

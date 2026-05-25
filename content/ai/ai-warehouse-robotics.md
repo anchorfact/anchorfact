@@ -88,3 +88,9 @@ Warehouse robotics: (1) Transport -- AMRs (Autonomous Mobile Robots) navigate vi
 
 ## Detailed Analysis
 Amazon Proteus (2022): first fully autonomous Amazon robot designed to work alongside humans. Uses perception + safety-rated sensors. Cardinal (2022): robotic arm for package handling, lifting up to 50lbs. Sparrow (2022): individual item picking from totes -- the hardest robotics problem. Computer vision identifies items in clutter; grasp planner selects approach; suction gripper executes. 65% of Amazon orders now touched by robotics. Locus Robotics: AMRs for order picking. Human pickers stay in zone; robot navigates to next pick location. Covariant AI: universal picking AI for any item. Brain: transformer-based model trained on diverse warehouse item data. AutoStore: cube storage with robots on top grid, digging bins and delivering to ports. 1,400+ installations globally. Key challenge: general-purpose picking. Items vary enormously (size, shape, weight, fragility, packaging). The dream: any item, any grip, first attempt.
+
+## Related Articles
+
+- [AI for Drone Autonomy: Autonomous Navigation, Swarm Coordination, and Aerial Robotics](../ai-drone-autonomy.md)
+- [AI for Logistics: Last-Mile Delivery, Fleet Routing, and Warehouse Automation](../ai-for-logistics.md)
+- [Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning](../agentic-ai.md)

@@ -68,3 +68,9 @@ SOP restricts: DOM access (a page on origin A cannot read origin B's iframe/docu
 ## Further Reading
 
 - [Same-Origin Policy (MDN Web Docs)](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)
+
+## Related Articles
+
+- [AI Content Moderation Platforms: Large-Scale Safety Systems, Policy Engines, and Multilingual Review](../../ai/ai-content-moderation-platforms.md)
+- [Content Security Policy (CSP)](../content-security-policy-csp.md)
+- [Cross-Origin Resource Sharing (CORS)](../cross-origin-resource-sharing-cors.md)

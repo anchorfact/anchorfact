@@ -133,3 +133,9 @@ The transition from qualitative to quantitative: Galileo's inclined plane experi
 - Stanford Encyclopedia of Philosophy: Scientific Revolution
 - The Galileo Project (Rice University)
 - Cambridge History of Science Series
+
+## Related Articles
+
+- [Scientific Revolution](../../science/scientific-revolution.md)
+- [AI for Science: AlphaFold and the AI-Driven Discovery Revolution](../../ai/ai-for-science.md)
+- [AI Protein Design: RFDiffusion, ProteinMPNN, and the Nobel Revolution](../../ai/ai-protein-design.md)

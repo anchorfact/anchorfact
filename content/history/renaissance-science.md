@@ -99,3 +99,9 @@ Vesalius (1543): corrected Galen's errors (dissected human bodies, not animals).
 ## Further Reading
 
 - [The Scientists (John Gribbin)](https://www.penguinrandomhouse.com/books/292021/the-scientists-by-john-gribbin/)
+
+## Related Articles
+
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
+- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../../ai/ai-for-complex-networks.md)
+- [AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition](../../ai/ai-for-food-science.md)

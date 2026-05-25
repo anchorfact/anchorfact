@@ -107,3 +107,9 @@ Embeddings: Word2Vec (static), GloVe (global co-occurrence), contextual (BERT, G
 - Hugging Face Tokenizers Library
 - Jay Alammar: The Illustrated Word2Vec
 - NLP Course (Hugging Face)
+
+## Related Articles
+
+- [Tokenization in NLP](../tokenization-in-nlp.md)
+- [Advanced RAG: From Naive Retrieval to Agentic RAG](../advanced-rag-techniques.md)
+- [AI for Electronic Health Records: Clinical NLP, Coding Automation, and Physician Burnout Reduction](../ai-electronic-health-records.md)

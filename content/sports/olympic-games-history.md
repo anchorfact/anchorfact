@@ -115,3 +115,9 @@ atomic_facts:
   - id: "fact-sports-003"
     statement: "2024 Paris: 329 events, 206 nations"
     confidence: "medium"
+
+## Related Articles
+
+- [Animation History](../../arts/animation-history.md)
+- [Architecture History](../../arts/architecture-history.md)
+- [Digital Art and New Media Art History](../../arts/digital-art-history.md)

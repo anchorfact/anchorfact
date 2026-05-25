@@ -64,4 +64,10 @@ GDD sections: Executive Summary (one-page pitch), Gameplay (core loop, mechanics
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [Game Audio Systems and Sound Design](../game-audio-systems.md)
+- [Game User Interface and UX Design](../game-ui-ux-design.md)
+- [Real-Time Strategy (RTS) Game Design](../real-time-strategy-rts-game-design.md)

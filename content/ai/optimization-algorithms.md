@@ -102,3 +102,9 @@ AdamW (Loshchilov & Hutter, 2019) fixes Adam's weight decay implementation, maki
 - Ruder: An Overview of Gradient Descent Algorithms
 - Lilian Weng: Optimization for Deep Learning
 - PyTorch: torch.optim Documentation
+
+## Related Articles
+
+- [Deep Reinforcement Learning Algorithms: PPO, SAC, Dreamer, and Decision Transformer](../deep-reinforcement-learning-algorithms.md)
+- [AI for Signal Processing: Deep Learning for Wireless, Radar, and Biomedical Signals](../ai-for-signal-processing.md)
+- [Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning](../audio-source-separation.md)

@@ -82,3 +82,9 @@ Red: write test, run, see it fail (confirms test catches failures). Green: write
 ## Further Reading
 
 - [Test-Driven Development: By Example (Kent Beck)](undefined)
+
+## Related Articles
+
+- [AI for Science: AlphaFold and the AI-Driven Discovery Revolution](../../ai/ai-for-science.md)
+- [AI for Software Testing: Automated Test Generation, Fuzzing, and Quality Assurance](../../ai/ai-for-software-testing.md)
+- [AI for Weather Forecasting: Data-Driven Numerical Weather Prediction and Nowcasting](../../ai/ai-for-weather-forecasting.md)

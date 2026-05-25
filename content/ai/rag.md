@@ -198,3 +198,9 @@ RAG is the underlying architecture for most production AI systems requiring fact
 - [RAG Paper (Lewis et al., 2020)](https://arxiv.org/abs/2005.11401): The foundational RAG paper (5K+ citations)
 - [DPR Paper (Karpukhin et al., 2020)](https://arxiv.org/abs/2004.04906): Dense passage retrieval
 - [LangChain RAG Tutorial](https://python.langchain.com/docs/tutorials/rag/): Practical implementation
+
+## Related Articles
+
+- [Advanced RAG: From Naive Retrieval to Agentic RAG](../advanced-rag-techniques.md)
+- [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../3d-generation-gaussian-splatting.md)
+- [AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation](../ai-content-creation.md)

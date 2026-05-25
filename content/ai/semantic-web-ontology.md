@@ -124,3 +124,9 @@ Wikidata (2012-present): 25,000+ active editors maintaining structured data with
 - Wikidata Query Service: Interactive SPARQL Queries
 - Protege: Open-Source Ontology Editor (Stanford)
 - SPARQL 1.1: W3C Recommendation
+
+## Related Articles
+
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../ai-for-data-curation.md)
+- [Knowledge Graph Reasoning: Embedding-Based Link Prediction, Logical Inference, and Neurosymbolic Methods](../knowledge-graph-reasoning.md)
+- [Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning](../agentic-ai.md)

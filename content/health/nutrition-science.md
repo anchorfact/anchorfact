@@ -96,3 +96,9 @@ Dietary patterns: Mediterranean (olive oil, vegetables, fish — associated with
 - Harvard Nutrition Source
 - USDA Dietary Guidelines
 - FAO: Food-Based Dietary Guidelines
+
+## Related Articles
+
+- [AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition](../../ai/ai-for-food-science.md)
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
+- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../../ai/ai-for-complex-networks.md)

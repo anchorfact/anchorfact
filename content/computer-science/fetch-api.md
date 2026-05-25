@@ -78,3 +78,9 @@ Fetch provides the `fetch()` global function returning a Promise resolving to a 
 ## Further Reading
 
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
+
+## Related Articles
+
+- [API Gateway](../api-gateway.md)
+- [Broadcast Channel API](../broadcast-channel-api.md)
+- [Canvas API](../canvas-api.md)

@@ -79,3 +79,9 @@ Top-down: recursion + cache (memoization). Bottom-up: iterative table filling (t
 ## Further Reading
 
 - [Introduction to Algorithms (CLRS)](undefined)
+
+## Related Articles
+
+- [AI for Retail: Cashierless Stores, Dynamic Pricing, and Personalized Shopping](../../ai/ai-for-retail.md)
+- [C++ Programming Language](../c++-language.md)
+- [C Programming Language](../c-language.md)

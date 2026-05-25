@@ -100,3 +100,9 @@ Wayfinding: memorized star compass (32+ points), read reflected/refracted swells
 ## Further Reading
 
 - [Voyagers: The Settlement of the Pacific (Nicholas Thomas)](https://www.basicbooks.com/titles/nicholas-thomas/voyagers/9781541619876/)
+
+## Related Articles
+
+- [AI for Drone Autonomy: Autonomous Navigation, Swarm Coordination, and Aerial Robotics](../../ai/ai-drone-autonomy.md)
+- [AI for Robot Navigation: SLAM, Visual Odometry, and Autonomous Path Planning](../../ai/ai-for-robot-navigation.md)
+- [AI for Space Exploration: Autonomous Navigation, Earth Observation, and Spacecraft Autonomy](../../ai/ai-for-space-exploration.md)

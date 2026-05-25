@@ -94,3 +94,9 @@ Advantages of KANs: (1) Parameter efficiency — 10-100x fewer parameters for eq
 - pyKAN: Official KAN Implementation (GitHub: KindXiaoming/pykan)
 - EfficientKAN and FastKAN Optimizations
 - KAN for Time Series Forecasting and Scientific ML
+
+## Related Articles
+
+- [Activation Functions in Neural Networks](../activation-functions.md)
+- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../ai-for-complex-networks.md)
+- [AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime](../ai-for-fraud-detection.md)

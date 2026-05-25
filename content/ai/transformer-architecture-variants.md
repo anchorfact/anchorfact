@@ -112,3 +112,9 @@ State Space Models (SSMs): discretize continuous-time differential equations to 
 - The Annotated Transformer (Harvard NLP)
 - Mamba GitHub
 - Lilian Weng: The Transformer Family
+
+## Related Articles
+
+- [State Space Models: Mamba, Linear-Time Sequence Modeling, and Alternatives to Transformers](../state-space-models.md)
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../3d-human-modeling.md)
+- [AI Art and Creativity: Generative Models and Authorship](../ai-art-and-creativity.md)

@@ -72,3 +72,7 @@ Galaxy types: spiral (Milky Way), elliptical, irregular. Supermassive black hole
 ## Further Reading
 
 - [Cosmos (Carl Sagan)](https://www.penguinrandomhouse.com/books/55403/cosmos-by-carl-sagan/)
+
+## Related Articles
+
+- [Astronomy and Cosmology: From Solar System to the Universe](../astronomy-and-cosmology.md)

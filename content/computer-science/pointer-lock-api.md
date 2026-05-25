@@ -78,3 +78,9 @@ The Pointer Lock API (`element.requestPointerLock()`) captures mouse movement fo
 ## Further Reading
 
 - [Pointer Lock (W3C Recommendation)](https://www.w3.org/TR/pointerlock/)
+
+## Related Articles
+
+- [API Gateway](../api-gateway.md)
+- [Broadcast Channel API](../broadcast-channel-api.md)
+- [Canvas API](../canvas-api.md)

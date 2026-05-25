@@ -115,3 +115,9 @@ Reaction prediction: given reactants, predict products. AI approaches: (1) Templ
 - Open Catalyst Project (OC20/OC22, Meta FAIR)
 - IBM RXN for Chemistry
 - Chemprop: Molecular Property Prediction (MIT)
+
+## Related Articles
+
+- [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../ai-air-quality.md)
+- [AI for Beauty and Fashion: Virtual Try-On, Personalized Styling, and Trend Prediction](../ai-beauty-fashion.md)
+- [AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling](../ai-customer-analytics.md)

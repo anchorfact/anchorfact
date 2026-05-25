@@ -172,3 +172,7 @@ With 8 experts and top-2 gating, total parameters grow ~4× compared to a dense 
 - [Shazeer et al. (2017)](https://arxiv.org/abs/1701.06538): Original sparsely-gated MoE paper
 - [Switch Transformers](https://arxiv.org/abs/2101.03961): Scaling to trillion parameters (Fedus et al., 2022)
 - [Mixtral Paper](https://arxiv.org/abs/2401.04088): Open-source MoE by Mistral AI
+
+## Related Articles
+
+- [Model Merging, Mixture of Experts, and Efficient Ensembling](../model-merging-and-ensembling.md)

@@ -91,3 +91,9 @@ LLM cybersecurity applications: vulnerability detection (CodeBERT, ChatGPT for c
 - Awesome-LLM4Cybersecurity GitHub
 - OWASP Top 10 for LLM Applications
 - MITRE ATLAS: Adversarial Threat Landscape for AI
+
+## Related Articles
+
+- [Network Intrusion Detection: AI-Powered Anomaly Detection and Zero-Day Threat Identification](../network-intrusion-detection.md)
+- [Information Extraction: NER, Relation Extraction, and LLM-Powered IE](../information-extraction.md)
+- [Cybersecurity: Threats, Cryptography, and Defense](../../computer-science/cybersecurity-fundamentals.md)

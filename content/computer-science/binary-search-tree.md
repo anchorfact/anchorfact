@@ -130,3 +130,9 @@ Traversals: inorder (sorted), preorder (serialization), postorder (deletion). Se
 ## Further Reading
 
 - [Algorithms (4th Edition)](undefined)
+
+## Related Articles
+
+- [AI for Intellectual Property: Patent Search, Prior Art Analysis, and Trademark Intelligence](../../ai/ai-ip-patents.md)
+- [AI for Legal Research: Case Law Search, Citation Analysis, and Litigation Analytics](../../ai/ai-legal-research.md)
+- [AI-Powered Search: Perplexity, Google AI Overviews, and the Future](../../ai/ai-search-engines.md)

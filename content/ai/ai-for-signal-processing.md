@@ -116,3 +116,9 @@ Wireless AI: 5G NR and future 6G require massive MIMO (64-256 antennas) and mmWa
 - DeepSig: AI-Native Wireless Communications
 - PhysioNet: Open Medical Signal Datasets
 - GNU Radio + TensorFlow: Software-Defined Radio + AI
+
+## Related Articles
+
+- [Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning](../audio-source-separation.md)
+- [Bayesian Deep Learning: Uncertainty Quantification and Robust Predictions](../bayesian-deep-learning.md)
+- [AI Biometric Recognition: Fingerprint, Iris, Face, and Multimodal Deep Learning Systems](../biometric-recognition.md)

@@ -116,3 +116,9 @@ Game theory in AI: (1) Perfect information games -- all players see the full sta
 
 ## Detailed Analysis
 DeepNash (Stratego): the game board is 10x10 with 40 pieces per player. Each piece has a rank (1-10, bombs, flag) hidden from the opponent -- 10^535 game states, exceeding chess (10^44) by far. DeepNash architecture: actor-critic with R-NaD -- the agent plays against itself millions of times, and the learning algorithm converges toward Nash equilibrium through regularized dynamics (entropy regularization preventing premature convergence to deterministic strategies). No search -- purely model-free, running at inference time on a single CPU after training. Cicero (Diplomacy): 7 players on a map of Europe. Players move armies/fleets between territories; success requires negotiation. Cicero's strategic module uses piKL (policy iteration with KL regularization) to plan optimal moves given predicted opponent actions. The dialogue module generates natural language messages: proposing alliances, threatening, deceiving -- all strategically grounded in the plan. arxiv 2026 survey on generalist game players: unifying game AI through foundation models pretrained on thousands of games, adapting to novel games via in-context learning.
+
+## Related Articles
+
+- [Multi-Agent Reinforcement Learning: Cooperation, Competition, and Emergent Strategies](../multi-agent-reinforcement-learning.md)
+- [Real-Time Strategy (RTS) Game Design](../../game-development/real-time-strategy-rts-game-design.md)
+- [Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning](../agentic-ai.md)

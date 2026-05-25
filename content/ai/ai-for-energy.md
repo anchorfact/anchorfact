@@ -94,3 +94,9 @@ Renewable forecasting: traditional NWP (numerical weather prediction) provides c
 - Climate Change AI (CCAI) — Energy & Grids Track
 - NVIDIA Earth-2: Climate Digital Twin for Energy
 - Grid Modernization Initiative (DOE) — AI for Grid
+
+## Related Articles
+
+- [AI for Smart Grids: Load Forecasting, Demand Response, and Grid Stability](../ai-smart-grids.md)
+- [AI Digital Twins for Healthcare: Patient-Specific Simulation, Treatment Planning, and Virtual Organs](../ai-digital-twins-healthcare.md)
+- [AI for Construction: Computer Vision Safety, BIM Digital Twins, and Automated Project Monitoring](../ai-for-construction.md)

@@ -103,3 +103,9 @@ ProtoNet (Snell et al., 2017): embedding function maps inputs to a metric space 
 - Learn2Learn: PyTorch Meta-Learning Library
 - Meta-Dataset: Few-Shot Learning Benchmark
 - ChatGPT Few-Shot Prompting Guide
+
+## Related Articles
+
+- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../ai-for-complex-networks.md)
+- [Meta-Learning: Learning to Learn with MAML and Reptile](../meta-learning.md)
+- [Physics-Informed Neural Networks: Solving PDEs with Deep Learning and Neural Operators](../physics-informed-neural-networks.md)

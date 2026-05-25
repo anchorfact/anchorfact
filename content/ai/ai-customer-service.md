@@ -88,3 +88,9 @@ Customer service AI stack: (1) Self-service -- AI chatbot (LLM + RAG over knowle
 
 ## Detailed Analysis
 LLM chatbots: RAG retrieval from help center articles provides grounded answers. Conversation design includes disambiguation ("did you mean X or Y?"), empathy ("I understand this is frustrating"), and action-taking (process refund via API integration). Enterprise platforms: Zendesk AI agents (2024), Intercom Fin (2024, GPT-4 powered), Salesforce Einstein (2024). Performance: 40-60% deflection rate (resolved without human), CSAT within 5% of human agents. Ticket routing: multi-label classification (product + issue type + urgency). Training data: historical tickets with agent-assigned categories. Active learning: low-confidence predictions flagged for human review, improving model over time. Knowledge base maintenance: AI detects outdated articles (low helpfulness ratings) and suggests updates. Key challenge: hallucination in customer-facing AI is unacceptable -- incorrect refund amounts or policy information causes real harm. Solution: constraint-based generation (output must match known policy values) and human-in-the-loop for financial transactions.
+
+## Related Articles
+
+- [AI Agents (2025-2026)](../ai-agents.md)
+- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../ai-call-center.md)
+- [AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling](../ai-customer-analytics.md)

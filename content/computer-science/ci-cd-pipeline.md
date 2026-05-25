@@ -106,3 +106,7 @@ CI: automated builds + tests on every commit. CD: automated deployment after tes
 ## Further Reading
 
 - [Continuous Delivery (Jez Humble, David Farley)](https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/)
+
+## Related Articles
+
+- [game art pipeline](../../game-development/game-art-pipeline.md)

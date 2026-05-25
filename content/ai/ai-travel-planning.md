@@ -111,3 +111,9 @@ Travel AI: (1) Inspiration + Discovery -- LLM conversational trip planning. User
 
 ## Detailed Analysis
 Expedia (2024): ChatGPT-powered conversational trip planner in app. Natural language flights/hotel search. Booking.com AI Trip Planner (2023-2025): GPT-4 integration for destination discovery and itinerary building. Hopper: ML trained on years of real-time pricing data. Rabbit (discontinued) / Hopper Cloud: B2B API for fintech/travel companies. Price Freeze: lock price for small fee. Cancel for Any Reason: AI-calculated premiums. Google Travel: Gemini integration (2025). Features: trip summarization (aggregate reservations from Gmail), Generative AI itinerary suggestions. Key challenge: dynamic inventory -- flights change prices every few minutes. ML models must predict at this granularity.
+
+## Related Articles
+
+- [AI for Beauty and Fashion: Virtual Try-On, Personalized Styling, and Trend Prediction](../ai-beauty-fashion.md)
+- [AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition](../ai-for-food-science.md)
+- [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../3d-generation-gaussian-splatting.md)

@@ -101,3 +101,9 @@ Convolution: filter/kernel learns spatial hierarchies — early layers detect ed
 ## Further Reading
 
 - [ImageNet Classification with Deep Convolutional Networks (AlexNet, Krizhevsky et al., 2012)](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks)
+
+## Related Articles
+
+- [Activation Functions in Neural Networks](../activation-functions.md)
+- [AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime](../ai-for-fraud-detection.md)
+- [Graph Neural Networks: Message Passing and Applications](../graph-neural-networks.md)

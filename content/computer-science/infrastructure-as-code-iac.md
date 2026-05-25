@@ -97,3 +97,9 @@ Declarative (Terraform: define desired state) vs. imperative (Ansible: define st
 ## Further Reading
 
 - [Terraform Documentation](https://developer.hashicorp.com/terraform/docs)
+
+## Related Articles
+
+- [AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation](../../ai/ai-code-translation.md)
+- [AI Coding Assistants: Copilot, Cursor, and Claude Code](../../ai/ai-coding-assistants.md)
+- [AI for Code Generation: LLMs as Software Engineering Copilots](../../ai/ai-for-code-generation.md)

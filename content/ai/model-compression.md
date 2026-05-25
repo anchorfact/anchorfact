@@ -112,3 +112,9 @@ Post-training quantization (PTQ): calibrate on representative data, no retrainin
 - PyTorch: Quantization Tutorial
 - Hugging Face Optimum
 - Papers With Code: Model Compression
+
+## Related Articles
+
+- [GPT (Generative Pre-trained Transformer) Model Family](../gpt-models.md)
+- [Knowledge Distillation](../knowledge-distillation.md)
+- [Model Context Protocol (MCP)](../mcp.md)

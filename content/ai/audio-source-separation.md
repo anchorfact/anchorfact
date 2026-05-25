@@ -105,3 +105,9 @@ The problem: given a mixture signal x(t) = s1(t) + s2(t) + ... + sN(t), recover 
 
 ## Detailed Analysis
 Conv-TasNet (2019): encoder (1D convolution with learned filters replacing STFT) -> separation module (stacked dilated temporal convolutional blocks with exponentially increasing dilation factors -- 1,2,4,8,...,256 -- capturing short and long patterns) -> decoder (transposed convolution). DPRNN (2020) and SepFormer (2021) replace TCN with dual-path RNNs/Transformers processing intra-chunk and inter-chunk dependencies. Demucs evolution: v1 (waveform U-Net), v2 (improved training, data augmentation), v3 (Hybrid Demucs -- magnitude spectrogram branch + waveform branch), v4 (HT Demucs -- Transformer-based). The hybrid approach uses spectrogram for frequency-domain separation and waveform for time-domain refinement. Applications: (1) Music -- vocal/accompaniment separation, stem extraction for remixing; (2) Speech enhancement -- removing background noise from phone calls, hearing aid preprocessing; (3) Meeting transcription -- separating overlapping speakers before speech recognition; (4) Forensic audio -- isolating voices from background. Key challenges: universal sound separation (separating arbitrary sounds without knowing classes in advance), real-time low-latency (<10ms) for hearing aids, and generalization to unseen acoustic environments.
+
+## Related Articles
+
+- [AI for Audio Processing: Sound Event Detection, Acoustic Scene Analysis, and Environmental Intelligence](../ai-for-audio-processing.md)
+- [AI Democratization: Open-Source Models, Low-Code AI, and Accessible Machine Learning](../ai-for-democratization.md)
+- [AI for Language Learning: Intelligent Tutoring, Speech Assessment, and Personalized Curriculum](../ai-for-language-learning.md)

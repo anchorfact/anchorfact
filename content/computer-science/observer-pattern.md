@@ -81,3 +81,9 @@ Subject maintains observer list and notify(). Push (pass data) vs. pull (observe
 ## Further Reading
 
 - [Design Patterns (Gang of Four)](undefined)
+
+## Related Articles
+
+- [Adapter Pattern](../adapter-pattern.md)
+- [Command Pattern](../command-pattern.md)
+- [Decorator Pattern](../decorator-pattern.md)

@@ -80,3 +80,7 @@ Tang Taizong (626-649): one of China's greatest emperors. Wu Zetian: only female
 ## Further Reading
 
 - [China's Golden Age: Everyday Life in the Tang Dynasty (Charles Benn)](https://global.oup.com/academic/product/chinas-golden-age-9780195176650)
+
+## Related Articles
+
+- [Ming Dynasty](../ming-dynasty.md)

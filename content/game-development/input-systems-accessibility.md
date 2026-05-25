@@ -438,3 +438,9 @@ public class AimAssistSystem
 > 评分: 80/100
 > 完整性: 输入架构、设备适配、重映射、辅助功能、触觉、平台要求
 > 改进空间: 可补充Unity Input System和Unreal Enhanced Input的具体配置截图
+
+## Related Articles
+
+- [AI for Accessibility: Assistive Technologies, Sign Language Recognition, and Inclusive Systems](../../ai/ai-for-accessibility.md)
+- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../../ai/ai-blockchain.md)
+- [AI Content Moderation Platforms: Large-Scale Safety Systems, Policy Engines, and Multilingual Review](../../ai/ai-content-moderation-platforms.md)

@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: ai
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-22'
 generation_method: ai_structured
 derived_from_human_seed: true
@@ -78,6 +78,16 @@ primary_sources:
     year: 2016
     url: https://arxiv.org/abs/1606.03498
     institution: OpenAI / NeurIPS
+  - title: Progressive Growing of GANs for Improved Quality, Stability, and Variation
+    authors:
+      - Karras,T.
+      - Aila,T.
+      - Laine,S.
+      - Lehtinen,J.
+    type: academic_paper
+    year: 2018
+    doi: 10.48550/arXiv.1710.10196
+    institution: NVIDIA/ICLR
 secondary_sources:
   - title: Deep Learning (Goodfellow, Bengio, Courville)
     type: book
@@ -113,6 +123,7 @@ updated: '2026-05-24'
 ---
 
 
+
 ## TL;DR
 
 GANs (Goodfellow, 2014) pit two neural networks against each other: Generator creates fake data, Discriminator distinguishes real from fake. Both improve through adversarial training — Generator learns to produce increasingly realistic outputs. Used for image generation, style transfer, super-resolution.
@@ -124,3 +135,9 @@ Training instability: if discriminator is too strong, generator learns nothing. 
 ## Further Reading
 
 - [Generative Adversarial Networks (Goodfellow et al., 2014)](https://arxiv.org/abs/1406.2661)
+
+## Related Articles
+
+- [Activation Functions in Neural Networks](../activation-functions.md)
+- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../adversarial-machine-learning.md)
+- [AI Art and Creativity: Generative Models and Authorship](../ai-art-and-creativity.md)

@@ -75,3 +75,9 @@ Cerebral cortex: folded outer layer, 4 lobes (frontal: planning/personality, par
 ## Further Reading
 
 - [Principles of Neural Science (6th Ed, Kandel et al.)](https://www.mheducation.com/highered/product/principles-neural-science-kandel-koester-mack-siegelbaum/9781259642234.html)
+
+## Related Articles
+
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../../ai/3d-human-modeling.md)
+- [Brain-Computer Interfaces: AI-Powered Neural Decoding and Neurotechnology](../../ai/brain-computer-interface-ai.md)
+- [Cognitive Architectures: ACT-R, Soar, and Computational Models of Human-Like Reasoning](../../ai/cognitive-architectures.md)

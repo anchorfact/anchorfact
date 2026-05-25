@@ -81,4 +81,9 @@ Matrix multiplication: AB = C where C_ij = Σ A_ik * B_kj. Neural networks: forw
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [State Space Models: Mamba, Linear-Time Sequence Modeling, and Alternatives to Transformers](../../ai/state-space-models.md)
+- [Boolean Algebra](../boolean-algebra.md)

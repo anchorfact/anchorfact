@@ -99,3 +99,9 @@ Key challenges: long-range musical structure (verses, choruses, bridges spanning
 - MusicLM Paper and Audio Samples
 - Suno Documentation and API
 - HuggingFace Audio Course
+
+## Related Articles
+
+- [AI Music Composition: Generative Music, Style Imitation, and Creative AI Audio](../ai-music-composition.md)
+- [AI Podcast Generation: Text-to-Speech Narration, AI Hosts, and Automated Audio Content](../ai-podcast-generation.md)
+- [Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning](../audio-source-separation.md)

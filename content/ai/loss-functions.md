@@ -106,3 +106,9 @@ Triplet loss (FaceNet, Schroff et al., 2015) learns embeddings by ensuring ancho
 - PyTorch Loss Functions Documentation
 - Papers With Code: Loss Functions
 - Keras: Losses Guide
+
+## Related Articles
+
+- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../adversarial-machine-learning.md)
+- [AI for Drug Repurposing: Identifying New Uses for Existing Drugs Through Machine Learning](../ai-drug-repurposing.md)
+- [AI Democratization: Open-Source Models, Low-Code AI, and Accessible Machine Learning](../ai-for-democratization.md)

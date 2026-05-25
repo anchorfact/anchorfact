@@ -79,3 +79,9 @@ Signals: SIGTERM (15, graceful), SIGKILL (9, cannot be caught), SIGSTOP (19, sus
 ## Further Reading
 
 - [Linux Manual Pages — ps, top, kill, nice](undefined)
+
+## Related Articles
+
+- [AI for Fleet Management: Predictive Maintenance, Route Optimization, and Telematics](../../ai/ai-fleet-management.md)
+- [AI for Inventory Management: Demand Forecasting, Stock Optimization, and Automated Replenishment](../../ai/ai-inventory-management.md)
+- [AI for Water Management: Leak Detection, Quality Monitoring, and Smart Irrigation](../../ai/ai-water-management.md)

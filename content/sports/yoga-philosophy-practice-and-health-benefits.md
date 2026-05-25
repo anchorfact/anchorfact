@@ -44,3 +44,9 @@ Major yoga styles: Hatha (gentle, foundational), Vinyasa (flow, breath-linked mo
 
 ---
 > 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。
+
+## Related Articles
+
+- [Yoga Practice](../../health/yoga-practice.md)
+- [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../../ai/ai-air-quality.md)
+- [AI for Electronic Health Records: Clinical NLP, Coding Automation, and Physician Burnout Reduction](../../ai/ai-electronic-health-records.md)

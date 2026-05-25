@@ -88,3 +88,9 @@ Personal AI capabilities: (1) Conversational -- natural language Q&A with contex
 
 ## Detailed Analysis
 Apple Intelligence (2024): on-device processing for privacy. 3B parameter on-device LLM for basic tasks, server-side compute for complex. Features: Writing Tools (proofread, rewrite, summarize system-wide), Image Playground (gen AI images), Genmoji (custom emoji), and ChatGPT integration for world knowledge. Google Gemini: deeply integrated with Gmail, Calendar, Drive, Maps. Context-aware: "Find the hotel confirmation email, summarize check-in times, and estimate driving time from my office." Anthropic Computer Use (2024): Claude controls computer screen -- moves mouse, clicks buttons, types text -- to complete tasks. OpenAI Operator (2025): similar capability, integrated with ChatGPT. Key challenge: reliability -- agentic AI that makes mistakes (wrong flight booking, incorrect money transfer) causes real harm. Safety guardrails: spending limits, confirmation for high-stakes actions, and user-in-the-loop for irreversible operations.
+
+## Related Articles
+
+- [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../ai-for-chip-design.md)
+- [AI for Regulatory Technology (RegTech): Compliance Automation, AML, and Regulatory Intelligence](../ai-for-regtech-compliance.md)
+- [AI for Smart Homes: Ambient Intelligence, Energy Optimization, and Predictive Home Automation](../ai-for-smart-homes.md)

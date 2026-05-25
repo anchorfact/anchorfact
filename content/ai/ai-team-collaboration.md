@@ -99,3 +99,9 @@ AI collaboration stack: (1) Meeting intelligence -- real-time transcription (Whi
 
 ## Detailed Analysis
 Meeting intelligence: Whisper (OpenAI) provides state-of-the-art transcription. Speaker diarization (Pyannote) segments audio by speaker. LLM summarization: prompt with full transcript -> extractive (key points) + abstractive (concise summary). Factuality challenge: meeting summaries must not hallucinate decisions. Solution: extractive verification (every summary claim linked to transcript quote). Microsoft Teams Copilot: integrated across Outlook (draft emails, summarize threads), Teams (meeting recap, action items), and Office (document drafting). Google Duet AI: meeting notes, real-time translated captions (70+ languages), and document Q&A. Notion AI: Q&A over team wiki, auto-fill database properties, and writing assistance. Organizational network analysis (ONA): graph where nodes are employees and edges represent collaboration (co-authorship, email, meetings). GNNs predict information flow bottlenecks and identify key connectors. Key challenge: privacy -- AI processing of all communications raises surveillance concerns. Opt-in, transparency, and data minimization are essential.
+
+## Related Articles
+
+- [AI for Remote Work: Virtual Collaboration, Productivity Analytics, and Distributed Team Intelligence](../ai-remote-work.md)
+- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../ai-blockchain.md)
+- [AI for Smart Homes: Ambient Intelligence, Energy Optimization, and Predictive Home Automation](../ai-for-smart-homes.md)

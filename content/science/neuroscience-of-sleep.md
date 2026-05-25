@@ -75,3 +75,9 @@ Stages: NREM (N1-N3, deep sleep for physical restoration) and REM (rapid eye mov
 ## Further Reading
 
 - [Why We Sleep (Matthew Walker)](https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325)
+
+## Related Articles
+
+- [Computational Neuroscience: AI Models of Brain Circuits, Connectomics, and Neural Computation](../../ai/computational-neuroscience.md)
+- [Sleep Disorders](../../health/sleep-disorders.md)
+- [Sleep Hygiene](../../health/sleep-hygiene.md)

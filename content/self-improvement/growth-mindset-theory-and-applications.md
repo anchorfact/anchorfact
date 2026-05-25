@@ -44,3 +44,9 @@ Key neuroscience: brains of growth-mindset individuals show greater error-relate
 
 ---
 > 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。
+
+## Related Articles
+
+- [Growth Mindset](../growth-mindset.md)
+- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
+- [Graph Neural Networks: Message Passing and Applications](../../ai/graph-neural-networks.md)

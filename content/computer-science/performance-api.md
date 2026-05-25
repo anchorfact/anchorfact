@@ -78,3 +78,9 @@ The Performance API (`performance.now()`, `performance.getEntries()`) provides h
 ## Further Reading
 
 - [Performance Timeline (W3C)](https://www.w3.org/TR/performance-timeline/)
+
+## Related Articles
+
+- [AI for Sports Analytics: Player Tracking, Performance Prediction, and Tactical Analysis](../../ai/ai-sports-analytics.md)
+- [API Gateway](../api-gateway.md)
+- [Broadcast Channel API](../broadcast-channel-api.md)

@@ -44,3 +44,9 @@ Ocean currents are driven by wind (surface currents, top 400m), density differen
 
 ---
 > 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。
+
+## Related Articles
+
+- [Ocean Currents](../ocean-currents.md)
+- [AI for Ocean Monitoring: Marine Life Detection, Plastic Pollution Tracking, and Oceanographic AI](../../ai/ai-for-ocean-monitoring.md)
+- [AI Regulation: The 2024-2026 Global Landscape](../../ai/ai-regulation-landscape.md)

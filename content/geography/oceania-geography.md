@@ -84,3 +84,9 @@ Three main groups: Polynesia ('many islands,' triangle Hawaii-New Zealand-Easter
 ## Further Reading
 
 - [The Pacific Islands: Environment and Society (Moshe Rapaport)](https://uhpress.hawaii.edu/title/the-pacific-islands-environment-and-society-revised-edition/)
+
+## Related Articles
+
+- [African Geography](../african-geography.md)
+- [Asian Geography](../asian-geography.md)
+- [North America Geography](../north-america-geography.md)

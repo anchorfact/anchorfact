@@ -95,3 +95,9 @@ Three related tasks: (A) Speaker verification -- given two audio samples, determ
 
 ## Detailed Analysis
 ECAPA-TDNN (2020): the dominant architecture. 1D time-delay neural network with Squeeze-Excitation channel attention for emphasizing speaker-discriminative frequency channels, multi-layer feature aggregation (combining shallow + deep representations), and Additive Angular Margin loss for maximizing inter-speaker separation. ScienceDirect 2025 review: the shift from i-vector/PLDA (pre-2019) to deep embeddings (x-vector, ECAPA-TDNN, RawNet3) reduced EER from 3-5% to <1% on VoxCeleb. Self-supervised pretraining (WavLM, HuBERT) further improves performance. Nature 2025 diarization: Neuro-TM integrates neural front-end processing with end-to-end diarization. Key challenge: overlapping speech (cocktail party problem) -- when multiple speakers talk simultaneously. Target-speaker voice activity detection (TS-VAD) and continuous speech separation (CSS) address this. Applications: call center analytics, meeting transcription, forensic audio analysis, voice-activated banking. Privacy concern: voice biometrics can identify individuals without consent -- voice anonymization (VoicePrivacy challenge) and anti-spoofing (detecting synthetically cloned voices) are active research directions.
+
+## Related Articles
+
+- [AI Biometric Recognition: Fingerprint, Iris, Face, and Multimodal Deep Learning Systems](../biometric-recognition.md)
+- [AI for Signal Processing: Deep Learning for Wireless, Radar, and Biomedical Signals](../ai-for-signal-processing.md)
+- [Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning](../audio-source-separation.md)

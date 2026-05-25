@@ -92,3 +92,9 @@ Fine-tuning strategies: freeze early layers (general features), train later laye
 ## Further Reading
 
 - [A Survey on Transfer Learning (Pan & Yang, 2010)](https://ieeexplore.ieee.org/document/5288526)
+
+## Related Articles
+
+- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../adversarial-machine-learning.md)
+- [AI for Drug Repurposing: Identifying New Uses for Existing Drugs Through Machine Learning](../ai-drug-repurposing.md)
+- [AI for Employee Experience: Onboarding, Learning, and Internal Communications](../ai-employee-experience.md)

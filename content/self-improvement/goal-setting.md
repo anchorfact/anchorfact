@@ -111,3 +111,9 @@ SMART evolved from Doran 1981 into multiple variants (SMARTER adds Evaluate + Re
 
 - [Measure What Matters (OKRs)](https://www.whatmatters.com/)
 - [Atomic Habits](https://jamesclear.com/atomic-habits)
+
+## Related Articles
+
+- [AI Agent Frameworks: LangChain, AutoGen, and CrewAI](../../ai/ai-agent-frameworks.md)
+- [AI Governance: Risk Frameworks, Audits, and International Cooperation](../../ai/ai-governance-and-policy.md)
+- [Strategic Management: Frameworks and Practice](../../business/strategic-management-theory.md)

@@ -82,3 +82,9 @@ Modern PCG must balance generation quality with runtime cost. Techniques include
 - Chunk-based generation with LOD (level of detail)
 - GPU-accelerated noise computation
 - Seed-based determinism for reproducible worlds
+
+## Related Articles
+
+- [AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation](../../ai/ai-content-creation.md)
+- [AI for Virtual Reality: Immersive Content Generation, Intelligent NPCs, and Adaptive Environments](../../ai/ai-for-virtual-reality.md)
+- [AI in Gaming: NPCs, Procedural Content, and AlphaStar](../../ai/ai-in-gaming.md)

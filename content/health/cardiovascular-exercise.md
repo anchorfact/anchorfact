@@ -80,3 +80,7 @@ Types: running, cycling, swimming, brisk walking, rowing. Target heart rate: 50-
 ## Further Reading
 
 - [ACSM Guidelines for Exercise Testing and Prescription (11th Ed)](https://www.acsm.org/read-research/books/acsms-guidelines-for-exercise-testing-and-prescription)
+
+## Related Articles
+
+- [Exercise Physiology: How the Body Adapts to Training](../../sports/sports-exercise-physiology.md)

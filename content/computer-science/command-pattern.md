@@ -95,3 +95,9 @@ Example: text editor with undo stack — each edit is a Command object pushed to
 ## Further Reading
 
 - [Design Patterns (Gang of Four)](undefined)
+
+## Related Articles
+
+- [Adapter Pattern](../adapter-pattern.md)
+- [Decorator Pattern](../decorator-pattern.md)
+- [Factory Method Pattern](../factory-method-pattern.md)

@@ -95,3 +95,9 @@ Energy systems continuum: ATP-PCr (0-10s), glycolytic (10-120s), oxidative (>2mi
 - ACSM Position Stands
 - Journal of Strength and Conditioning Research
 - Sports Medicine (Springer)
+
+## Related Articles
+
+- [Marathon Training: Physiology, Programming, and Performance](../marathon-training-physiology-programming-and-performance.md)
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../../ai/3d-human-modeling.md)
+- [AI Benchmarks: MMLU, SWE-bench, and How We Measure Intelligence](../../ai/ai-benchmarks-and-evaluation.md)

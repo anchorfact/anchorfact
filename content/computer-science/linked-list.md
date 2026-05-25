@@ -101,3 +101,7 @@ Singly-linked: data + next pointer. Doubly-linked: data + next + prev. JavaScrip
 ## Further Reading
 
 - [Introduction to Algorithms (CLRS)](undefined)
+
+## Related Articles
+
+- [Semantic Web and Ontologies: Knowledge Representation, OWL Reasoning, and Linked Data](../../ai/semantic-web-ontology.md)

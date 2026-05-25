@@ -100,3 +100,9 @@ Beyond weather: (1) Climate downscaling — AI generates high-resolution (km-sca
 - Climate Change AI (CCAI) Community & Papers
 - ECMWF AI Weather Prediction Roadmap
 - NVIDIA Earth-2 Digital Twin
+
+## Related Articles
+
+- [AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling](../ai-customer-analytics.md)
+- [AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition](../ai-for-food-science.md)
+- [AI for Weather Forecasting: Data-Driven Numerical Weather Prediction and Nowcasting](../ai-for-weather-forecasting.md)

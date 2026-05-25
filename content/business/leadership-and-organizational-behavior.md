@@ -122,3 +122,9 @@ Psychological safety was identified by Google's Project Aristotle as the #1 pred
 - Harvard Business Review: Leadership
 - Center for Creative Leadership
 - Academy of Management Journal
+
+## Related Articles
+
+- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
+- [Music Theory Basics](../../arts/music-theory-basics.md)
+- [Leadership Principles](../leadership-principles.md)

@@ -94,3 +94,9 @@ Nature 2025 Hybrid Transformer-CNN: the Vision Transformer branch captures globa
 - PlantVillage: Public Crop Disease Dataset (Penn State)
 - FAO: AI for Agriculture (UN Food and Agriculture Organization)
 - Microsoft FarmBeats: AI + IoT for Data-Driven Farming
+
+## Related Articles
+
+- [AI for Disaster Prediction: Earthquake Forecasting, Flood Detection, and Early Warning Systems](../ai-disaster-prediction.md)
+- [AI for Public Health: Disease Surveillance, Outbreak Prediction, and Population Health Analytics](../ai-public-health.md)
+- [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../ai-air-quality.md)

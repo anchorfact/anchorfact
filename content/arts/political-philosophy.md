@@ -120,3 +120,9 @@ Nozick's libertarian critique argues only a minimal state is justified. Communit
 - Stanford Encyclopedia of Philosophy: Political Philosophy
 - The Harvard Justice Course (Michael Sandel, free online)
 - Philosophy Bites Podcast
+
+## Related Articles
+
+- [AI for Legal: Contract Analysis, Legal Reasoning, and Regulatory Compliance](../../ai/ai-for-legal.md)
+- [AI for Social Media: Misinformation Detection, Hate Speech Moderation, and Content Safety](../../ai/ai-for-social-media.md)
+- [AI for Senior Care: Fall Detection, Medication Reminders, and Social Companionship](../../ai/ai-senior-care.md)

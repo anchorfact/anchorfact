@@ -220,3 +220,9 @@ This split — BERT for understanding, GPT for generation — defined NLP for se
 - [BERT Paper](https://arxiv.org/abs/1810.04805): Original paper by Devlin et al. (100K+ citations)
 - [RoBERTa Paper](https://arxiv.org/abs/1907.11692): A Robustly Optimized BERT (Liu et al., 2019)
 - [The Illustrated BERT](https://jalammar.github.io/illustrated-bert/): Visual walkthrough by Jay Alammar
+
+## Related Articles
+
+- [Neural Rendering: NeRF, View Synthesis, and Implicit Scene Representations](../neural-rendering.md)
+- [State Space Models: Mamba, Linear-Time Sequence Modeling, and Alternatives to Transformers](../state-space-models.md)
+- [Transformer Variants: From Encoder-Decoder to Mamba State Space Models](../transformer-architecture-variants.md)

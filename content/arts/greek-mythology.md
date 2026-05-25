@@ -69,3 +69,8 @@ Creation: Chaos → Gaia (Earth) → Uranus (Sky) → Titans → Olympians (Tita
 ## Further Reading
 
 - [Mythology (Edith Hamilton)](https://www.hachettebookgroup.com/titles/edith-hamilton/mythology/9780316438520/)
+
+## Related Articles
+
+- [Ancient Greek Literature](../ancient-greek-literature.md)
+- [Greek Philosophy](../../history/greek-philosophy.md)

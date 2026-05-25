@@ -101,3 +101,9 @@ The ReAct pattern (Reasoning + Acting) is the dominant agent loop: think → act
 - LangChain Documentation
 - Microsoft AutoGen GitHub
 - Anthropic: Tool Use Guide
+
+## Related Articles
+
+- [Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning](../agentic-ai.md)
+- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../ai-call-center.md)
+- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../ai-for-gaming-theory.md)

@@ -104,3 +104,9 @@ Cursor (2024) combined IDE with AI chat and inline editing. Devin (Cognition AI,
 - SWE-bench Leaderboard
 - Cursor Documentation
 - GitHub Copilot Research
+
+## Related Articles
+
+- [AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation](../ai-code-translation.md)
+- [AI for Electronic Health Records: Clinical NLP, Coding Automation, and Physician Burnout Reduction](../ai-electronic-health-records.md)
+- [AI for Code Generation: LLMs as Software Engineering Copilots](../ai-for-code-generation.md)

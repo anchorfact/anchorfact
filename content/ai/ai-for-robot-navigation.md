@@ -103,3 +103,9 @@ DROID-SLAM (2021, Princeton): recurrent iterative update of camera poses and dep
 - ORB-SLAM3: Feature-Based Visual SLAM
 - Habitat Simulator: Embodied AI Navigation (Meta)
 - NVIDIA Isaac Sim: Robotics Simulation Platform
+
+## Related Articles
+
+- [Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning](../agentic-ai.md)
+- [AI for Drone Autonomy: Autonomous Navigation, Swarm Coordination, and Aerial Robotics](../ai-drone-autonomy.md)
+- [AI for Space Exploration: Autonomous Navigation, Earth Observation, and Spacecraft Autonomy](../ai-for-space-exploration.md)

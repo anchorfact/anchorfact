@@ -94,3 +94,9 @@ Nature 2025 ITS framework: three-stage pipeline — (1) Graph construction from 
 - LibCity: Open-source traffic prediction library
 - SUMO: Simulation of Urban MObility (DLR)
 - PeMS: Caltrans Performance Measurement System
+
+## Related Articles
+
+- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../ai-blockchain.md)
+- [AI for Disaster Prediction: Earthquake Forecasting, Flood Detection, and Early Warning Systems](../ai-disaster-prediction.md)
+- [AI in Education: Personalized Learning and Intelligent Tutoring Systems](../ai-in-education.md)

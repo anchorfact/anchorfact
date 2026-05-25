@@ -74,3 +74,9 @@ FaaS (Functions as a Service) is the core of serverless. Cold start: first invoc
 ## Further Reading
 
 - [AWS Lambda Documentation](https://docs.aws.amazon.com/lambda/)
+
+## Related Articles
+
+- [Affective Computing: Multimodal Emotion Recognition, Sentiment Analysis, and Empathetic AI](../../ai/affective-computing.md)
+- [AI for Augmented Reality: Real-Time Scene Understanding, Spatial Computing, and Contextual Overlays](../../ai/ai-for-augmented-reality.md)
+- [AI for Speech Emotion Recognition: Vocal Biomarkers, Mental Health Screening, and Affective Computing](../../ai/ai-for-speech-emotion-recognition.md)

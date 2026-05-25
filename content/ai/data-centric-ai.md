@@ -96,3 +96,9 @@ Active learning strategies: uncertainty sampling (query examples where model is 
 - Andrew Ng: "From Model-Centric to Data-Centric AI"
 - MIT DCAI Course (free online)
 - Cleanlab: Automated Data Curation
+
+## Related Articles
+
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../ai-for-data-curation.md)
+- [AI Training Data Curation: Quality at Scale](../ai-training-data-curation.md)
+- [Synthetic Data in AI Training](../synthetic-data-training.md)

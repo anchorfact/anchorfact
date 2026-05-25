@@ -74,3 +74,9 @@ Data frames: R's native tabular structure. `dplyr`: `filter()`, `select()`, `mut
 ## Further Reading
 
 - [R Documentation](https://www.r-project.org/)
+
+## Related Articles
+
+- [AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation](../../ai/ai-code-translation.md)
+- [AI for Accessibility: Assistive Technologies, Sign Language Recognition, and Inclusive Systems](../../ai/ai-for-accessibility.md)
+- [AI for Language Learning: Intelligent Tutoring, Speech Assessment, and Personalized Curriculum](../../ai/ai-for-language-learning.md)

@@ -96,3 +96,8 @@ Achievements: concept of zero independently developed, accurate solar year (365.
 ## Further Reading
 
 - [The Maya (Michael D. Coe, 9th Ed)](https://thamesandhudson.com/the-maya-9780500291887)
+
+## Related Articles
+
+- [Ancient Egyptian Civilization: Pharaohs, Pyramids, and Afterlife](../ancient-egyptian-civilization.md)
+- [Ancient Mesopotamia: Cradle of Civilization](../ancient-mesopotamia.md)

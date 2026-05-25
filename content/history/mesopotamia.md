@@ -80,3 +80,7 @@ Cuneiform: wedge-shaped marks on clay tablets — first writing system (record k
 ## Further Reading
 
 - [Daily Life in Ancient Mesopotamia (Karen Rhea Nemet-Nejat)](https://www.hendrickson.com/html/product/300044.trade.html)
+
+## Related Articles
+
+- [Ancient Mesopotamia: Cradle of Civilization](../ancient-mesopotamia.md)

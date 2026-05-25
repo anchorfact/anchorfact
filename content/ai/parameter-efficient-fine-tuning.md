@@ -104,3 +104,9 @@ LoRA typically applies to attention projection matrices (W_q, W_v). Rank r=8-64 
 - HuggingFace PEFT Library
 - Unsloth: Fast Fine-Tuning
 - Axolotl: Fine-Tuning Framework
+
+## Related Articles
+
+- [Efficient and Green AI: Reducing the Carbon Footprint of Machine Learning](../efficient-green-ai.md)
+- [Instruction Tuning: Teaching LLMs to Follow Directions](../instruction-tuning.md)
+- [LoRA (Low-Rank Adaptation)](../lora.md)

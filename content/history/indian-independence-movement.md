@@ -80,3 +80,9 @@ India's independence movement (1857-1947) ended British colonial rule. Gandhi's 
 ## Further Reading
 
 - [India's Struggle for Independence (Bipan Chandra)](https://www.penguin.co.in/book/indias-struggle-for-independence/)
+
+## Related Articles
+
+- [The Open-Source AI Movement: Llama, DeepSeek, and Democratization](../../ai/open-source-ai-movement.md)
+- [Civil Rights Movement](../civil-rights-movement.md)
+- [Sports Biomechanics: The Physics of Human Movement](../../sports/sports-biomechanics.md)

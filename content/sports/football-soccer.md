@@ -94,3 +94,7 @@ atomic_facts:
   - id: "fact-sports-003"
     statement: "World Cup winners: Brazil (5), Germany/Italy (4), Argentina (3, 2022)"
     confidence: "medium"
+
+## Related Articles
+
+- [Football (Soccer) Tactics and Formations](../football-tactics.md)

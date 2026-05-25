@@ -95,4 +95,10 @@ SameSite cookie attribute (2020+): `Strict` (never sent cross-site), `Lax` (defa
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [Cross-Site Scripting (XSS)](../cross-site-scripting-xss.md)
+- [AI for Archaeology: Site Detection, Artifact Classification, and Digital Heritage Preservation](../../ai/ai-for-archaeology.md)
+- [AI for Location Intelligence: Geospatial Analytics, POI Recommendation, and Site Selection](../../ai/ai-location-intelligence.md)

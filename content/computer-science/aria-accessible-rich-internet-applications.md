@@ -84,3 +84,9 @@ Key patterns: `aria-label` for accessible names, `aria-labelledby` to reference 
 ## Further Reading
 
 - [WAI-ARIA 1.2 (W3C Recommendation)](https://www.w3.org/TR/wai-aria/)
+
+## Related Articles
+
+- [AI Democratization: Open-Source Models, Low-Code AI, and Accessible Machine Learning](../../ai/ai-for-democratization.md)
+- [AI for the Internet of Things: Federated Learning, TinyML, and Intelligent Edge Devices](../../ai/ai-for-iot.md)
+- [Graph Neural Networks: Message Passing and Applications](../../ai/graph-neural-networks.md)

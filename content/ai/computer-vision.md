@@ -86,3 +86,9 @@ Object detection: R-CNN family (region proposals), YOLO (single shot, real-time)
 ## Further Reading
 
 - [Computer Vision: Algorithms and Applications (2nd Ed, Szeliski)](https://szeliski.org/Book/)
+
+## Related Articles
+
+- [AI for Construction: Computer Vision Safety, BIM Digital Twins, and Automated Project Monitoring](../ai-for-construction.md)
+- [AI for Workplace Safety: Computer Vision Monitoring, Fall Detection, and Hazard Prevention](../ai-workplace-safety.md)
+- [AI for Medical Imaging: Radiology AI, Computer-Aided Diagnosis, and Clinical Deployment](../ai-for-medical-imaging.md)

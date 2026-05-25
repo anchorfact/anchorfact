@@ -101,3 +101,9 @@ Gatys et al. (2015): given a content image C and style image S, optimize a gener
 
 ## Detailed Analysis
 AdaIN (Huang & Belongie, ICCV 2017): aligns channel-wise mean and variance of content features to match style features. Simple, fast, effective. ControlNet (2023): copies Stable Diffusion UNet encoder, fine-tunes on task-specific conditioning (canny edges, depth maps, pose) while freezing base model. For style transfer: edge map from content + style image as IP-Adapter conditioning. IP-Adapter (Tencent, 2023): decoupled cross-attention injecting style features into diffusion model. Only 22M trainable parameters. DragGAN (2023) and Inpaint4Drag (ICCV 2025): interactive point-based manipulation of images. arxiv 2025 survey: diffusion-based methods solve the content-style trade-off better than prior approaches -- high style fidelity without content distortion. Evaluation: CLIP score (text-image alignment), user preference studies, artist panel evaluation. Key challenge: no objective metric for "good style transfer" -- evaluation remains inherently subjective.
+
+## Related Articles
+
+- [AI Music Composition: Generative Music, Style Imitation, and Creative AI Audio](../ai-music-composition.md)
+- [Machine Translation: Neural MT, LLM-Based Translation, and Multilingual Quality at Scale](../machine-translation.md)
+- [Neural Rendering: NeRF, View Synthesis, and Implicit Scene Representations](../neural-rendering.md)

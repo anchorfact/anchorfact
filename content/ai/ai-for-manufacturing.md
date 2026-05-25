@@ -93,3 +93,9 @@ Predictive maintenance evolution: Level 1 (reactive — fix when broken) → Lev
 - Siemens MindSphere & Xcelerator Digital Twin
 - Google Cloud Visual Inspection AI
 - Augury: Machine Health AI (PdM)
+
+## Related Articles
+
+- [AI for Digital Twins: Real-Time Simulation, Predictive Maintenance, and System Optimization](../ai-for-digital-twins.md)
+- [AI Digital Twins for Healthcare: Patient-Specific Simulation, Treatment Planning, and Virtual Organs](../ai-digital-twins-healthcare.md)
+- [AI for Fleet Management: Predictive Maintenance, Route Optimization, and Telematics](../ai-fleet-management.md)

@@ -102,3 +102,9 @@ SELD architecture (Nature 2025): multi-channel audio → Short-Time Fourier Tran
 - DCASE Challenge (dcase.community) — Audio AI Benchmarks
 - pyAudioAnalysis: Open-Source Audio Analysis Library
 - BirdNET: AI Bird Sound Identification (Cornell Lab)
+
+## Related Articles
+
+- [AI for Intellectual Property: Patent Search, Prior Art Analysis, and Trademark Intelligence](../ai-ip-patents.md)
+- [AI for Static Analysis: Automated Bug Detection, Code Review, and Vulnerability Scanning](../ai-static-analysis.md)
+- [Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning](../audio-source-separation.md)

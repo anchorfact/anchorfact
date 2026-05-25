@@ -81,3 +81,9 @@ Akbar: religious tolerance (Din-i-Ilahi syncretic faith), abolished jizya tax on
 ## Further Reading
 
 - [The Mughal Empire (John F. Richards)](https://www.cambridge.org/core/books/mughal-empire/)
+
+## Related Articles
+
+- [Aztec Empire](../aztec-empire.md)
+- [Byzantine Empire](../byzantine-empire.md)
+- [Inca Empire](../inca-empire.md)

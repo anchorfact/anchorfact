@@ -90,3 +90,9 @@ Fashion/Beauty AI: (1) Virtual try-on -- face tracking (468 landmarks) + AR rend
 
 ## Detailed Analysis
 ModiFace (L'Oreal): 30+ brand integrations. AI maps 3D face geometry from 2D camera for realistic makeup rendering. Tracks facial expressions for lipstick and eyeshadow that move with face. Heuritech: analyzes 3M+ social media images/day. CV detects fashion attributes. Trend forecasting: baggy jeans trending up +20% in Paris, 12-month lead. Stitch Fix: hybrid AI + human stylist. AI extracts clothing attributes (color, pattern, silhouette, occasion), recommends items. Human stylist personalizes and writes note. Amazon StyleSnap: upload photo, AI finds similar items. Zalando: virtual fitting room using customer measurements. Key challenge: fit -- 30-40% of online clothing purchases returned due to poor fit. AI sizing from photos + measurement estimation reduces returns.
+
+## Related Articles
+
+- [AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition](../ai-for-food-science.md)
+- [AI for Travel Planning: Itinerary Generation, Price Prediction, and Personalized Recommendations](../ai-travel-planning.md)
+- [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../ai-air-quality.md)

@@ -114,3 +114,9 @@ Tokens are Base64URL-encoded (not encrypted), so payload is readable by anyone. 
 
 - [RFC 7519](https://www.rfc-editor.org/rfc/rfc7519): JWT specification
 - [jwt.io](https://jwt.io/): Online debugger for encoding/decoding JWTs
+
+## Related Articles
+
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../../ai/ai-for-data-curation.md)
+- [Semantic Web and Ontologies: Knowledge Representation, OWL Reasoning, and Linked Data](../../ai/semantic-web-ontology.md)
+- [Amazon Web Services (AWS)](../amazon-web-services-aws.md)

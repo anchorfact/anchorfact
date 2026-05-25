@@ -89,3 +89,7 @@ Horror: fear of the unknown, monsters, psychological terror: Psycho (1960), The 
 ## Further Reading
 
 - [Film Art: An Introduction (Bordwell & Thompson, 12th Ed)](https://www.mheducation.com/highered/product/film-art-introduction-bordwell-thompson/M9781260056082.html)
+
+## Related Articles
+
+- [Film History](../film-history.md)

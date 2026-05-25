@@ -44,3 +44,9 @@ Resilience research originates from developmental psychology (Werner & Smith, lo
 
 ---
 > 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。
+
+## Related Articles
+
+- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../../ai/ai-for-complex-networks.md)
+- [AI for Supply Chain Risk: Disruption Prediction, Supplier Monitoring, and Resilience Analytics](../../ai/ai-supply-chain-risk.md)
+- [player psychology](../../game-development/player-psychology.md)

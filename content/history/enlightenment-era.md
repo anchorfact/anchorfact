@@ -105,3 +105,7 @@ Locke: tabula rasa (blank slate), life/liberty/property. Montesquieu: Spirit of 
 ## Further Reading
 
 - [The Enlightenment (Dorinda Outram, 4th Ed)](https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A)
+
+## Related Articles
+
+- [Napoleonic Era](../napoleonic-era.md)

@@ -103,3 +103,9 @@ Defense taxonomy: (1) Adversarial training — augment training with adversarial
 - Adversarial Robustness Toolbox (IBM ART)
 - CleverHans Library (Google/TensorFlow)
 - NIST AI Risk Management Framework
+
+## Related Articles
+
+- [AI for Drug Repurposing: Identifying New Uses for Existing Drugs Through Machine Learning](../ai-drug-repurposing.md)
+- [AI Democratization: Open-Source Models, Low-Code AI, and Accessible Machine Learning](../ai-for-democratization.md)
+- [Anomaly Detection in Machine Learning](../anomaly-detection.md)

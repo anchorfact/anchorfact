@@ -92,3 +92,9 @@ The Springer 2025 review identifies four main AI application domains: computer v
 - Journal of Computer Applications in Archaeology (CAA)
 - Vesuvius Challenge: scrollprize.org
 - Transkribus AI for Historical Documents: readcoop.eu
+
+## Related Articles
+
+- [AI for Cultural Heritage: Digital Preservation, Art Attribution, and Museum Intelligence](../ai-for-cultural-heritage.md)
+- [AI for Astronomy: Exoplanet Detection, Galaxy Classification, and Computational Astrophysics](../ai-for-astronomy.md)
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../3d-human-modeling.md)

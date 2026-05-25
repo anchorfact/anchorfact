@@ -125,3 +125,9 @@ Spectroscopy for structure determination: IR identifies functional groups, NMR r
 - Master Organic Chemistry (online resource)
 - ChemDraw
 - IUPAC Nomenclature
+
+## Related Articles
+
+- [AI for Chemistry: Reaction Prediction, Retrosynthesis, and Computational Chemistry](../../ai/ai-for-chemistry.md)
+- [AI for Drug Discovery: AlphaFold, Molecular Generation, and Generative Chemistry](../../ai/ai-for-drug-discovery.md)
+- [Efficient and Green AI: Reducing the Carbon Footprint of Machine Learning](../../ai/efficient-green-ai.md)

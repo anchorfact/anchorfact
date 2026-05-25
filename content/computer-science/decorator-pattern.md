@@ -94,3 +94,9 @@ Example: `new CompressedStream(new EncryptedStream(new FileStream()))`. Python @
 ## Further Reading
 
 - [Design Patterns (Gang of Four)](undefined)
+
+## Related Articles
+
+- [Adapter Pattern](../adapter-pattern.md)
+- [Command Pattern](../command-pattern.md)
+- [Factory Method Pattern](../factory-method-pattern.md)

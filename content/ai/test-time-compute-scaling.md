@@ -114,3 +114,9 @@ OpenAI o1 architecture: internal chain-of-thought (hidden to users) + RL trainin
 - DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via RL (2025)
 - Let's Verify Step by Step (OpenAI Process Reward Models, 2023)
 - Scaling LLM Test-Time Compute Optimally (Snell et al., NeurIPS 2024)
+
+## Related Articles
+
+- [Knowledge Graph Reasoning: Embedding-Based Link Prediction, Logical Inference, and Neurosymbolic Methods](../knowledge-graph-reasoning.md)
+- [AI Reasoning Models: OpenAI o1/o3 and DeepSeek-R1](../reasoning-models.md)
+- [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../3d-generation-gaussian-splatting.md)

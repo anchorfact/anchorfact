@@ -105,3 +105,9 @@ Federated Averaging (FedAvg): server averages model weights from devices. Challe
 ## Further Reading
 
 - [Communication-Efficient Learning of Deep Networks from Decentralized Data (McMahan et al., 2017)](https://arxiv.org/abs/1602.05629)
+
+## Related Articles
+
+- [AI for the Internet of Things: Federated Learning, TinyML, and Intelligent Edge Devices](../ai-for-iot.md)
+- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../adversarial-machine-learning.md)
+- [AI for Drug Repurposing: Identifying New Uses for Existing Drugs Through Machine Learning](../ai-drug-repurposing.md)

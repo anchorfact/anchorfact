@@ -103,3 +103,9 @@ MoE routing: a learned gating network selects top-k experts per token. Load bala
 - Hugging Face: Model Merging Guide
 - MergeKit Library
 - Mistral AI: Mixtral Blog
+
+## Related Articles
+
+- [Mixture of Experts (MoE)](../mixture-of-experts.md)
+- [Efficient and Green AI: Reducing the Carbon Footprint of Machine Learning](../efficient-green-ai.md)
+- [GPT (Generative Pre-trained Transformer) Model Family](../gpt-models.md)

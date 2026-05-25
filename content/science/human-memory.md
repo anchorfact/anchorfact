@@ -68,3 +68,9 @@ Working memory: 4±1 chunks (Cowan, 2001 — updated from Miller). Chunking: gro
 ## Further Reading
 
 - [The Seven Sins of Memory (Daniel Schacter)](https://www.harpercollins.com/products/the-seven-sins-of-memory-daniel-l-schacter)
+
+## Related Articles
+
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../../ai/3d-human-modeling.md)
+- [Cognitive Architectures: ACT-R, Soar, and Computational Models of Human-Like Reasoning](../../ai/cognitive-architectures.md)
+- [Human-Computer Interaction: AI-Powered UX, Generative Interfaces, and Usability Testing](../../ai/human-computer-interaction.md)

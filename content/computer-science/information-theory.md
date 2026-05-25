@@ -78,4 +78,10 @@ Shannon's source coding theorem: data can be compressed to entropy bits per symb
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
+- [Information Extraction: NER, Relation Extraction, and LLM-Powered IE](../../ai/information-extraction.md)
+- [Language Modeling: From N-grams to Scaling Laws and Information-Theoretic Foundations](../../ai/language-modeling-theory.md)

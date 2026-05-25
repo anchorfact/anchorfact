@@ -98,3 +98,8 @@ Service discovery: DNS or HTTP API — `my-service.service.consul`. Health check
 ## Further Reading
 
 - [Consul Documentation](https://developer.hashicorp.com/consul/docs)
+
+## Related Articles
+
+- [Nomad (HashiCorp)](../nomad-hashicorp.md)
+- [Vault (HashiCorp)](../vault-hashicorp.md)

@@ -96,3 +96,7 @@ Event: `OrderPlaced {orderId, items}`, `OrderShipped {orderId, tracking}`, `Orde
 ## Further Reading
 
 - [Event Sourcing (Martin Fowler)](undefined)
+
+## Related Articles
+
+- [AI for Audio Processing: Sound Event Detection, Acoustic Scene Analysis, and Environmental Intelligence](../../ai/ai-for-audio-processing.md)

@@ -84,3 +84,9 @@ SRP: a class should have one reason to change. OCP: open for extension, closed f
 ## Further Reading
 
 - [Agile Software Development (Robert C. Martin)](undefined)
+
+## Related Articles
+
+- [Leadership Principles](../../business/leadership-principles.md)
+- [Clean Code Principles](../clean-code-principles.md)
+- [Software Engineering: Design Principles and Development Methodologies](../software-engineering-principles.md)

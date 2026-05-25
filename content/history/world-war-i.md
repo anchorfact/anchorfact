@@ -81,3 +81,9 @@ Schlieffen Plan: Germany's two-front strategy failed at First Battle of Marne (1
 ## Further Reading
 
 - [The Guns of August (Barbara Tuchman)](https://www.penguinrandomhouse.com/books/56337/the-guns-of-august-by-barbara-w-tuchman/)
+
+## Related Articles
+
+- [World War II: Global Conflict and Its Aftermath](../world-war-ii-overview.md)
+- [World War II](../world-war-ii.md)
+- [Embodied AI: Robots That Learn from the Physical World](../../ai/embodied-ai-and-robotics.md)

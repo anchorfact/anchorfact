@@ -140,3 +140,9 @@ Precision = TP/(TP+FP) — when model predicts positive, how often is it correct
 ## Further Reading
 
 - [Pattern Recognition and Machine Learning (Bishop)](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/)
+
+## Related Articles
+
+- [GPT (Generative Pre-trained Transformer) Model Family](../gpt-models.md)
+- [Model Context Protocol (MCP)](../mcp.md)
+- [Model Compression: Pruning, Quantization, and Distillation](../model-compression.md)

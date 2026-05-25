@@ -349,3 +349,9 @@ UI: 交互稿 → 视觉稿 → 切图/九宫格 → UI系统 → 引擎
 > 评分: 80/100
 > 完整性: 3D管线、PBR、动画、光照、优化、UI美术
 > 改进空间: 可补充具体引擎(UE5/Maya/Blender)的操作截图指引
+
+## Related Articles
+
+- [AI Art and Creativity: Generative Models and Authorship](../../ai/ai-art-and-creativity.md)
+- [AI for Cultural Heritage: Digital Preservation, Art Attribution, and Museum Intelligence](../../ai/ai-for-cultural-heritage.md)
+- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)

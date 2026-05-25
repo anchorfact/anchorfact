@@ -96,3 +96,9 @@ Beyond MAML: (1) Metric-based meta-learning — Prototypical Networks learn an e
 - Chelsea Finn: Meta-Learning Tutorial (ICML)
 - learn2learn PyTorch Library
 - Few-shot Learning Survey (Wang et al.)
+
+## Related Articles
+
+- [Few-Shot Learning: Prototypical Networks, MAML, and In-Context Adaptation](../few-shot-learning.md)
+- [Learning How to Learn](../../self-improvement/learning-how-to-learn.md)
+- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../adversarial-machine-learning.md)

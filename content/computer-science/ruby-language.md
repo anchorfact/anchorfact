@@ -80,3 +80,9 @@ Ruby 3.0 (2020): 3x performance improvement (MJIT), Ractor for parallelism, fibe
 ## Further Reading
 
 - [Ruby Documentation](https://www.ruby-lang.org/en/documentation/)
+
+## Related Articles
+
+- [AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation](../../ai/ai-code-translation.md)
+- [AI for Accessibility: Assistive Technologies, Sign Language Recognition, and Inclusive Systems](../../ai/ai-for-accessibility.md)
+- [AI for Language Learning: Intelligent Tutoring, Speech Assessment, and Personalized Curriculum](../../ai/ai-for-language-learning.md)

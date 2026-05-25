@@ -69,3 +69,9 @@ Sonnet: Shakespearean (ABAB CDCD EFEF GG), Petrarchan (ABBA ABBA CDE CDE). Haiku
 ## Further Reading
 
 - [The Poetry Handbook (Mary Oliver)](https://www.harpercollins.com/products/a-poetry-handbook-mary-oliver?variant=32208032890914)
+
+## Related Articles
+
+- [Photography Fundamentals and Composition](../photography-fundamentals.md)
+- [Digital Marketing Fundamentals](../../business/digital-marketing-fundamentals.md)
+- [E-Commerce Fundamentals](../../business/e-commerce-fundamentals.md)

@@ -44,3 +44,9 @@ Key models: (1) GROW model (Goal, Reality, Options, Will) — the most widely us
 
 ---
 > 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。
+
+## Related Articles
+
+- [AI for Digital Forensics: Deepfake Provenance, Evidence Authentication, and Digital Crime Investigation](../../ai/ai-digital-forensics.md)
+- [AI for Mental Health: LLM-Based Therapy, Digital Interventions, and Clinical Trials](../../ai/ai-for-mental-health.md)
+- [AI Language Translation and Interpretation: LLM-Based Translation, Simultaneous Interpretation, and Quality Estimation](../../ai/ai-language-translation-interpretation.md)

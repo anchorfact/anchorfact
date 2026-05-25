@@ -102,3 +102,9 @@ Marketing AI stack: (1) Personalization -- collaborative filtering (users like y
 
 ## Detailed Analysis
 Contextual bandits: each user is defined by features (demographics, behavior history, context). Each "arm" is an offer/ad. Algorithm selects arm, observes reward (click/conversion/no action), updates beliefs. Thompson sampling: maintain posterior distribution over each arm's reward probability; sample from posterior, pick best sample. Key insight: this provides natural exploration-exploitation balance. Meta Ads (2025): bandit-based delivery across billions of impressions, improving conversion 15-30% over static targeting. Customer LTV: deep survival models (DeepHit, DeepSurv) predict time-to-churn. Churn prediction: features include recency/frequency/monetary (RFM), support tickets, product usage, and NPS scores. XGBoost benchmark achieves 85-92% AUC. Post-cookie era: third-party cookie deprecation forces shift to first-party data, contextual targeting, and cohort-based advertising (Google Topics API). Federated learning for privacy-preserving personalization: train models across user devices without centralizing data.
+
+## Related Articles
+
+- [AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling](../ai-customer-analytics.md)
+- [AI for Digital Twins: Real-Time Simulation, Predictive Maintenance, and System Optimization](../ai-for-digital-twins.md)
+- [Digital Marketing Fundamentals](../../business/digital-marketing-fundamentals.md)

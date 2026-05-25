@@ -104,3 +104,9 @@ Foundation models for robotics: RT-2 (Google), Octo (open-source generalist robo
 - Google DeepMind: Robotics Research
 - Toyota Research Institute: LBM
 - Physical Intelligence (π)
+
+## Related Articles
+
+- [World Models: Video Prediction, Physical Reasoning, and Interactive AI](../world-models-video-prediction.md)
+- [Meta-Learning: Learning to Learn with MAML and Reptile](../meta-learning.md)
+- [Vision-Language-Action Models: Unified Multimodal Foundation Models for Embodied AI](../vision-language-action-models.md)

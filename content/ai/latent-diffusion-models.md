@@ -109,3 +109,9 @@ Classifier-free guidance scales the difference between conditional and unconditi
 - Lilian Weng: What Are Diffusion Models?
 - Hugging Face Diffusers Library
 - Fast.ai: Diffusion Models from Scratch
+
+## Related Articles
+
+- [AI for Tabular Data: Synthetic Generation, Diffusion Models, and Privacy-Preserving Structured Data](../ai-for-tabular-data.md)
+- [Diffusion Models](../diffusion-models.md)
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../3d-human-modeling.md)

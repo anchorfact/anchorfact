@@ -100,3 +100,9 @@ Writing AI: (1) Error correction -- grammatical error correction (GEC). Seq2seq:
 
 ## Detailed Analysis
 GECToR (Omelianchuk et al., 2020): sequence tagging approach -- each token tagged as KEEP, DELETE, or REPLACE_X. Iteratively applies corrections. Fast for real-time use. Grammarly: originally rule-based + ML, now GPT-4 powered for full-sentence rewriting. Offers: correctness (grammar, spelling, punctuation), clarity (conciseness, readability), engagement (vocabulary variety, tone), and delivery (formality, confidence). Microsoft Copilot in Word: prompt-based generation ("write a project proposal"), rewriting ("make this more concise"), and summarization. Stanford HAI (2024): AI-assisted writers produce more text faster, but the writing style converges toward AI's default tone -- raising concerns about homogenization. Academic integrity: universities grapple with AI-written assignments. Solutions: disclosure requirements (like citing AI tools), AI-resistant assignment design (in-class writing, oral exams), and AI writing detection (though unreliable).
+
+## Related Articles
+
+- [AI Art and Creativity: Generative Models and Authorship](../ai-art-and-creativity.md)
+- [AI Coding Assistants: Copilot, Cursor, and Claude Code](../ai-coding-assistants.md)
+- [AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation](../ai-content-creation.md)

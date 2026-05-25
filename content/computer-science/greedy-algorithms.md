@@ -101,3 +101,9 @@ Greedy choice property: locally optimal choice leads to globally optimal solutio
 ## Further Reading
 
 - [Introduction to Algorithms (CLRS)](undefined)
+
+## Related Articles
+
+- [Deep Reinforcement Learning Algorithms: PPO, SAC, Dreamer, and Decision Transformer](../../ai/deep-reinforcement-learning-algorithms.md)
+- [Optimization Algorithms for Deep Learning](../../ai/optimization-algorithms.md)
+- [Swarm and Evolutionary Intelligence: Genetic Algorithms, NEAT, and Particle Swarms](../../ai/swarm-evolutionary-intelligence.md)

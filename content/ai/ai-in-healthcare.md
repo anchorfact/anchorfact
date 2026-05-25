@@ -96,3 +96,9 @@ The FDA cleared 521 AI/ML-enabled medical devices by 2023, predominantly in radi
 - FDA: AI/ML-Enabled Medical Devices
 - The Lancet Digital Health
 - Nature Medicine: AI Collection
+
+## Related Articles
+
+- [AI for Drug Discovery: AlphaFold, Molecular Generation, and Generative Chemistry](../ai-for-drug-discovery.md)
+- [AI Digital Twins for Healthcare: Patient-Specific Simulation, Treatment Planning, and Virtual Organs](../ai-digital-twins-healthcare.md)
+- [AI for Drone Autonomy: Autonomous Navigation, Swarm Coordination, and Aerial Robotics](../ai-drone-autonomy.md)

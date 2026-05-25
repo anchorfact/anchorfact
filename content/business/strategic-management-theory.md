@@ -106,3 +106,9 @@ Blue Ocean Strategy advocates creating uncontested market space. McKinsey estima
 - Harvard Business Review: Strategy Collection
 - McKinsey Quarterly
 - Strategic Management Journal
+
+## Related Articles
+
+- [AI Agent Frameworks: LangChain, AutoGen, and CrewAI](../../ai/ai-agent-frameworks.md)
+- [AI for Fleet Management: Predictive Maintenance, Route Optimization, and Telematics](../../ai/ai-fleet-management.md)
+- [AI Governance: Risk Frameworks, Audits, and International Cooperation](../../ai/ai-governance-and-policy.md)

@@ -72,4 +72,10 @@ Blueprint visual scripting enables non-programmer game creation. C++ for perform
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [Backpropagation: The Engine of Neural Network Learning](../../ai/backpropagation.md)
+- [Godot Engine](../godot-engine.md)
+- [Unity Game Engine](../unity-engine.md)

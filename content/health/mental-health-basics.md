@@ -69,3 +69,9 @@ Anxiety: excessive worry, physical symptoms (racing heart, sweating). Depression
 ## Further Reading
 
 - [Diagnostic and Statistical Manual of Mental Disorders (DSM-5-TR)](https://www.psychiatry.org/psychiatrists/practice/dsm)
+
+## Related Articles
+
+- [AI for Mental Health: LLM-Based Therapy, Digital Interventions, and Clinical Trials](../../ai/ai-for-mental-health.md)
+- [AI for Speech Emotion Recognition: Vocal Biomarkers, Mental Health Screening, and Affective Computing](../../ai/ai-for-speech-emotion-recognition.md)
+- [Mental Health: Disorders, Treatments, and Neurobiology](../mental-health-fundamentals.md)

@@ -163,3 +163,9 @@ These improvements are most noticeable on mobile networks (frequent IP changes, 
 - [RFC 9110 — HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110): The definitive HTTP standard
 - [MDN HTTP Documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP): Practical developer reference
 - [HTTP/3 Explained](https://http3-explained.haxx.se/): By Daniel Stenberg, curl author
+
+## Related Articles
+
+- [Model Context Protocol (MCP)](../../ai/mcp.md)
+- [Neural Style Transfer: Artistic Rendering, Image-to-Image Translation, and Creative AI](../../ai/neural-style-transfer.md)
+- [Robot Manipulation: Dexterous Grasping, Sim-to-Real Transfer, and Tactile Sensing](../../ai/robot-manipulation.md)

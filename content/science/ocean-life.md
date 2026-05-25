@@ -83,3 +83,9 @@ Phytoplankton: produce 50-80% of Earth's oxygen. Coral reefs: biodiversity hotsp
 ## Further Reading
 
 - [The Biology of the Deep Ocean (Peter Herring)](https://global.oup.com/academic/product/the-biology-of-the-deep-ocean-9780198549567)
+
+## Related Articles
+
+- [AI for Ocean Monitoring: Marine Life Detection, Plastic Pollution Tracking, and Oceanographic AI](../../ai/ai-for-ocean-monitoring.md)
+- [Software Development Life Cycle (SDLC)](../../computer-science/software-development-life-cycle-sdlc.md)
+- [Ocean Currents: The Global Conveyor Belt](../../geography/ocean-currents-the-global-conveyor-belt.md)

@@ -72,3 +72,9 @@ Swift is a general-purpose, compiled programming language developed by Apple, fi
 
 - [Swift.org](https://swift.org/): Official documentation and downloads
 - [Swift GitHub](https://github.com/swiftlang/swift): Source code
+
+## Related Articles
+
+- [C++ Programming Language](../c++-language.md)
+- [C Programming Language](../c-language.md)
+- [Go Programming Language](../go-language.md)

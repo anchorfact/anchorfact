@@ -78,3 +78,9 @@ atomic_facts:
   - id: "fact-self-improvement-001"
     statement: "Public speaking is one of the most common fears (glossophobia) — yet also one of the most valuable skills"
     confidence: "medium"
+
+## Related Articles
+
+- [AI for Public Health: Disease Surveillance, Outbreak Prediction, and Population Health Analytics](../../ai/ai-public-health.md)
+- [Public Key Cryptography](../../computer-science/public-key-cryptography.md)
+- [Epidemiology: The Science of Public Health](../../health/epidemiology-fundamentals.md)

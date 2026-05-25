@@ -113,3 +113,9 @@ LLM applications in education: writing feedback (suggest improvements, not just 
 - Khan Academy: Khanmigo (GPT-4 tutoring)
 - Duolingo Max: AI-powered language learning
 - Getting Smart: AI in Education Report
+
+## Related Articles
+
+- [AI for Language Learning: Intelligent Tutoring, Speech Assessment, and Personalized Curriculum](../ai-for-language-learning.md)
+- [AI for the Internet of Things: Federated Learning, TinyML, and Intelligent Edge Devices](../ai-for-iot.md)
+- [AI for Transportation: Traffic Flow Prediction, Intelligent Transportation Systems, and Smart Mobility](../ai-for-transportation.md)

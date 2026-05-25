@@ -124,4 +124,10 @@ Bullwhip effect: small demand fluctuations amplify upstream, causing inventory i
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [AI for Supply Chain: Optimization, Vehicle Routing, and Logistics Intelligence](../../ai/ai-for-supply-chain.md)
+- [AI for Supply Chain Risk: Disruption Prediction, Supplier Monitoring, and Resilience Analytics](../../ai/ai-supply-chain-risk.md)
+- [AI for Fleet Management: Predictive Maintenance, Route Optimization, and Telematics](../../ai/ai-fleet-management.md)

@@ -88,3 +88,8 @@ Iconic endangered: Amur leopard (~100 wild), vaquita porpoise (~10), Javan rhino
 ## Further Reading
 
 - [IUCN Red List of Threatened Species](https://www.iucnredlist.org/)
+
+## Related Articles
+
+- [AI for Wildlife Conservation: Camera Trap Analysis, Species Classification, and Biodiversity Monitoring](../../ai/ai-for-wildlife-conservation.md)
+- [Low-Resource NLP: Multilingual Models, Endangered Language Preservation, and Translation](../../ai/low-resource-nlp.md)

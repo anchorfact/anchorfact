@@ -120,3 +120,9 @@ The universe composition: 68% dark energy, 27% dark matter, 5% ordinary matter. 
 - NASA Astronomy Picture of the Day
 - ESA/Hubble & JWST Image Galleries
 - arXiv: Astrophysics
+
+## Related Articles
+
+- [Solar System](../solar-system.md)
+- [AI for Astronomy: Exoplanet Detection, Galaxy Classification, and Computational Astrophysics](../../ai/ai-for-astronomy.md)
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)

@@ -218,3 +218,9 @@ LTV = D1 留存 × D7 留存贡献 + D7 留存 × D30 留存贡献 + ...
 - [参见：player-psychology.md#hook-模型与留存机制]
 - [参见：core-mechanics.md#经济系统]
 - [参见：templates/economy-balance-template.md]
+
+## Related Articles
+
+- [AI for Data Visualization: Automated Chart Generation, Insight Discovery, and Visual Analytics](../../ai/ai-for-visualization.md)
+- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../../ai/ai-call-center.md)
+- [AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling](../../ai/ai-customer-analytics.md)

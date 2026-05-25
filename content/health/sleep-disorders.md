@@ -80,3 +80,9 @@ Insomnia: CBT-I (cognitive behavioral therapy) is first-line treatment — more 
 ## Further Reading
 
 - [International Classification of Sleep Disorders (3rd Ed)](https://aasm.org/clinical-resources/international-classification-sleep-disorders/)
+
+## Related Articles
+
+- [Mental Health: Disorders, Treatments, and Neurobiology](../mental-health-fundamentals.md)
+- [Sleep Hygiene](../sleep-hygiene.md)
+- [Sleep Science and Circadian Rhythms](../sleep-science-and-circadian-rhythms.md)

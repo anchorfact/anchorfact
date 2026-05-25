@@ -107,3 +107,9 @@ Working Directory → git add → Staging Area → git commit → Repository →
 
 - [Pro Git Book](https://git-scm.com/book/en/v2): Free, comprehensive Git book
 - [Git Docs](https://git-scm.com/docs): Official documentation
+
+## Related Articles
+
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
+- [AI for Digital Twins: Real-Time Simulation, Predictive Maintenance, and System Optimization](../../ai/ai-for-digital-twins.md)
+- [AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition](../../ai/ai-for-food-science.md)

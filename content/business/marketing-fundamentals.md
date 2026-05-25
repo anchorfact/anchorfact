@@ -124,3 +124,9 @@ Digital marketing channels: search (SEO/SEM), social media, email, content marke
 - HubSpot Academy (free marketing courses)
 - American Marketing Association
 - Nielsen Marketing Research
+
+## Related Articles
+
+- [AI for Digital Marketing: Personalization, Campaign Optimization, and Customer Analytics](../../ai/ai-digital-marketing.md)
+- [Digital Marketing Fundamentals](../digital-marketing-fundamentals.md)
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../../ai/3d-human-modeling.md)

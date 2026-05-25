@@ -109,3 +109,9 @@ Optional pipeline stages for generating or subdividing geometry on the GPU. Tess
 - Prefer texture lookups over complex math in fragment shaders
 - Batch draw calls by material/shader to minimize state changes
 - Use mipmaps to reduce texture bandwidth at distance
+
+## Related Articles
+
+- [Photography Fundamentals and Composition](../../arts/photography-fundamentals.md)
+- [Poetry Fundamentals](../../arts/poetry-fundamentals.md)
+- [Digital Marketing Fundamentals](../../business/digital-marketing-fundamentals.md)

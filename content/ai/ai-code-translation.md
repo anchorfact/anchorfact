@@ -108,3 +108,9 @@ Code translation: source language -> target language. Approaches: (1) Seq2seq --
 
 ## Detailed Analysis
 COBOL modernization: 220B+ lines of COBOL still running. IBM watsonx Code Assistant for Z: LLM trained on COBOL + Java patterns. Two-step: (1) understand COBOL business logic via AI analysis; (2) generate equivalent Java microservices. Amazon Q (2024): Java 8->17 migration with AI. Google Codey: fine-tuned PaLM 2 for code generation and translation. Meta: CodeCompose for internal code gen + translation. Sapienz for automated testing. Translation pipeline: parse source -> AST -> semantic analysis -> generate target AST -> code. AST-level translation preserves structure better than text-level. Key challenge: languages have different paradigms -- COBOL (procedural, batch) -> Java (OOP, event-driven) requires architecture changes, not just syntax. Idiomatic translation: target code should look like a native speaker wrote it, not a literal translation.
+
+## Related Articles
+
+- [AI Language Translation and Interpretation: LLM-Based Translation, Simultaneous Interpretation, and Quality Estimation](../ai-language-translation-interpretation.md)
+- [Low-Resource NLP: Multilingual Models, Endangered Language Preservation, and Translation](../low-resource-nlp.md)
+- [AI Coding Assistants: Copilot, Cursor, and Claude Code](../ai-coding-assistants.md)

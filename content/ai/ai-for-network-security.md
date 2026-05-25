@@ -89,3 +89,9 @@ Network security AI applications: (1) Traffic classification -- deep packet insp
 
 ## Detailed Analysis
 DDoS mitigation: volumetric attacks flood targets with traffic. ML models detect attack signatures in real-time -- analyzing packet rate, source IP entropy, protocol anomalies. Cloudflare's ML-based system mitigates 100+ Tbps-scale attacks using anycast network + AI filtering. Zero-Trust: traditional perimeter security fails when users/devices are everywhere (remote work, cloud). ZTA verifies every access: (1) Identity (MFA, biometric); (2) Device (health status, patch level, encryption); (3) Context (location, time, behavior patterns). ML risk scoring combines these into a trust score. Low score -> step-up authentication or deny. AI automates policy enforcement at scale. NIST SP 800-207 defines ZTA principles; AI addresses the scalability challenge. Key vendors: Palo Alto (ML-Powered NGFW), Cloudflare (AI DDoS + Zero Trust), CrowdStrike (AI-native XDR), Zscaler (AI Zero Trust Exchange). The 2025-2026 trend: AI-vs-AI -- attackers use AI to generate evasive attacks; defenders use AI to detect them. The asymmetry favors attackers (one success needed) over defenders (must catch all).
+
+## Related Articles
+
+- [Network Intrusion Detection: AI-Powered Anomaly Detection and Zero-Day Threat Identification](../network-intrusion-detection.md)
+- [Zero Trust Architecture](../../computer-science/zero-trust-architecture.md)
+- [Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning](../agentic-ai.md)

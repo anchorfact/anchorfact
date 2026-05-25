@@ -121,3 +121,9 @@ The Standard Model is incomplete — it does not explain dark matter, dark energ
 - CERN Courier: Particle Physics News
 - Symmetry Magazine (Fermilab/SLAC)
 - PDG: Particle Data Group
+
+## Related Articles
+
+- [GPT (Generative Pre-trained Transformer) Model Family](../../ai/gpt-models.md)
+- [Model Context Protocol (MCP)](../../ai/mcp.md)
+- [Model Compression: Pruning, Quantization, and Distillation](../../ai/model-compression.md)

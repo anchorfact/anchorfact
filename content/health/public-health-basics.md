@@ -74,3 +74,9 @@ Epidemiology: study of disease distribution and determinants. Incidence (new cas
 ## Further Reading
 
 - [Introduction to Public Health (Schneider, 6th Ed)](https://www.jblearning.com/catalog/productdetails/9781284197594)
+
+## Related Articles
+
+- [AI for Public Health: Disease Surveillance, Outbreak Prediction, and Population Health Analytics](../../ai/ai-public-health.md)
+- [Epidemiology: The Science of Public Health](../epidemiology-fundamentals.md)
+- [Mental Health Basics](../mental-health-basics.md)

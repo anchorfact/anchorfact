@@ -103,3 +103,9 @@ Genghis Khan (1162-1227): meritocratic leadership, unified tribes, innovative mi
 ## Further Reading
 
 - [Genghis Khan and the Making of the Modern World (Jack Weatherford)](https://www.penguinrandomhouse.com/books/164748/genghis-khan-and-the-making-of-the-modern-world-by-jack-weatherford/)
+
+## Related Articles
+
+- [Aztec Empire](../aztec-empire.md)
+- [Byzantine Empire](../byzantine-empire.md)
+- [Inca Empire](../inca-empire.md)

@@ -83,4 +83,10 @@ Prevention: parameterized queries (prepared statements), stored procedures, inpu
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [Text-to-SQL: Natural Language Database Querying with Large Language Models](../../ai/text-to-sql.md)
+- [Dependency Injection](../dependency-injection.md)
+- [SQL Joins](../sql-joins.md)

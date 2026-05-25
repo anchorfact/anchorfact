@@ -104,3 +104,9 @@ Benchmark limitations: training data contamination, prompt sensitivity (scores v
 - Epoch AI: Benchmarks Dashboard
 - Stanford HELM: Holistic Evaluation
 - LMSYS Chatbot Arena
+
+## Related Articles
+
+- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../ai-blockchain.md)
+- [AI for Audio Processing: Sound Event Detection, Acoustic Scene Analysis, and Environmental Intelligence](../ai-for-audio-processing.md)
+- [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../ai-for-chip-design.md)

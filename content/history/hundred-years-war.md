@@ -75,3 +75,9 @@ English longbow: decisive at Crecy and Agincourt — volley fire decimated Frenc
 ## Further Reading
 
 - [The Hundred Years War: The English in France (Desmond Seward)](https://www.penguinrandomhouse.com/books/307409/the-hundred-years-war-by-desmond-seward/)
+
+## Related Articles
+
+- [The Cold War: Ideological Conflict and Nuclear Standoff](../cold-war-history.md)
+- [Cold War](../cold-war.md)
+- [World War I](../world-war-i.md)

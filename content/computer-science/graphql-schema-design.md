@@ -128,3 +128,9 @@ Types: Object types (User, Post), Scalar types (String, Int, Float, Boolean, ID)
 ## Further Reading
 
 - [GraphQL Best Practices](https://graphql.org/learn/best-practices/)
+
+## Related Articles
+
+- [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../../ai/ai-for-chip-design.md)
+- [AI Protein Design: RFDiffusion, ProteinMPNN, and the Nobel Revolution](../../ai/ai-protein-design.md)
+- [Neural Architecture Search: Automated Design of Deep Neural Networks](../../ai/neural-architecture-search.md)

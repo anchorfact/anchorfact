@@ -105,3 +105,9 @@ Modern reforms address weaknesses: p-hacking, publication bias, low statistical 
 - Center for Open Science
 - Nature: Methods & Protocols
 - Stanford Encyclopedia of Philosophy: Scientific Method
+
+## Related Articles
+
+- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
+- [Music Theory Basics](../../arts/music-theory-basics.md)
+- [Leadership Theory and Organizational Behavior](../../business/leadership-and-organizational-behavior.md)

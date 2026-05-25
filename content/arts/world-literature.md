@@ -98,3 +98,9 @@ Tale of Genji: Heian court life, psychological depth centuries before Western no
 ## Further Reading
 
 - [The Norton Anthology of World Literature](https://wwnorton.com/books/9780393602814)
+
+## Related Articles
+
+- [Embodied AI: Robots That Learn from the Physical World](../../ai/embodied-ai-and-robotics.md)
+- [World Models: Video Prediction, Physical Reasoning, and Interactive AI](../../ai/world-models-video-prediction.md)
+- [Ancient Greek Literature](../ancient-greek-literature.md)

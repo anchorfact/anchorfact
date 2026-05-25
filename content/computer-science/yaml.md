@@ -79,3 +79,9 @@ YAML is a human-readable data serialization format created by Clark Evans in 200
 
 - [YAML Spec v1.2.2](https://yaml.org/spec/1.2.2/): Current specification
 - [yaml.org](https://yaml.org/): Official site
+
+## Related Articles
+
+- [AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation](../../ai/ai-code-translation.md)
+- [AI for Accessibility: Assistive Technologies, Sign Language Recognition, and Inclusive Systems](../../ai/ai-for-accessibility.md)
+- [AI for Language Learning: Intelligent Tutoring, Speech Assessment, and Personalized Curriculum](../../ai/ai-for-language-learning.md)

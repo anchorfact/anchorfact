@@ -83,3 +83,9 @@ Waterfall: phases in strict order, no going back — works for well-understood, 
 ## Further Reading
 
 - [Software Engineering (10th Ed, Sommerville)](undefined)
+
+## Related Articles
+
+- [Software Engineering: Design Principles and Development Methodologies](../software-engineering-principles.md)
+- [AI for Code Generation: LLMs as Software Engineering Copilots](../../ai/ai-for-code-generation.md)
+- [AI for Ocean Monitoring: Marine Life Detection, Plastic Pollution Tracking, and Oceanographic AI](../../ai/ai-for-ocean-monitoring.md)

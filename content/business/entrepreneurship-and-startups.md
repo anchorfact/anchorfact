@@ -122,3 +122,9 @@ Product-market fit — defined by Sean Ellis as "at least 40% of users would be 
 - Y Combinator: Startup School (free)
 - Paul Graham: Essays
 - First Round Review
+
+## Related Articles
+
+- [AI Decision Support Systems: Clinical CDSS, Business Intelligence, and Augmented Decision-Making](../../ai/decision-support-systems.md)
+- [Entrepreneurship Fundamentals](../entrepreneurship-fundamentals.md)
+- [SEO for Business](../seo-for-business.md)

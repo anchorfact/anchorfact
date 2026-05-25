@@ -68,4 +68,10 @@ Berlin Interpretation (2008): defines 'high-value' roguelike factors. Key mechan
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [Game Audio Systems and Sound Design](../game-audio-systems.md)
+- [Game Design Document (GDD)](../game-design-document-gdd.md)
+- [Game User Interface and UX Design](../game-ui-ux-design.md)

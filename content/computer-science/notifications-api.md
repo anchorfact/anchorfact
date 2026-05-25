@@ -74,3 +74,9 @@ The Notifications API allows web pages to display system-level desktop notificat
 ## Further Reading
 
 - [Notifications API Living Standard](https://notifications.spec.whatwg.org/)
+
+## Related Articles
+
+- [API Gateway](../api-gateway.md)
+- [Broadcast Channel API](../broadcast-channel-api.md)
+- [Canvas API](../canvas-api.md)

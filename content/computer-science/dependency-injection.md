@@ -99,3 +99,7 @@ Types: constructor injection (preferred — immutable dependencies), setter inje
 ## Further Reading
 
 - [Inversion of Control Containers and the Dependency Injection pattern (Martin Fowler)](undefined)
+
+## Related Articles
+
+- [SQL Injection](../sql-injection.md)

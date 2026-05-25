@@ -112,3 +112,8 @@ CP systems (MongoDB, HBase, ZooKeeper): sacrifice availability during partition 
 ## Further Reading
 
 - [Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services (Gilbert & Lynch, 2002)](undefined)
+
+## Related Articles
+
+- [AI for Mathematical Reasoning: Theorem Proving with Lean, AlphaProof, and Formal Mathematics](../../ai/ai-mathematical-reasoning.md)
+- [Program Synthesis and Formal Verification: Neural Theorem Proving with LLMs](../../ai/program-synthesis-verification.md)

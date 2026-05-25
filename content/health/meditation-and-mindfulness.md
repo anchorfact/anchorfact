@@ -91,3 +91,7 @@ Types: focused attention (breath, mantra), open monitoring (observe thoughts wit
 ## Further Reading
 
 - [Full Catastrophe Living (Jon Kabat-Zinn)](https://www.penguinrandomhouse.com/books/289133/full-catastrophe-living-by-jon-kabat-zinn/)
+
+## Related Articles
+
+- [Mindfulness Meditation: Scientific Foundations and Practice](../../self-improvement/mindfulness-meditation-scientific-foundations-and-practice.md)

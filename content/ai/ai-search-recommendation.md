@@ -123,3 +123,9 @@ Search-recommendation stack: (1) Retrieval -- candidate generation from corpus (
 
 ## Detailed Analysis
 Dense retrieval: ColBERT (2020) -- late interaction: encode query tokens and document tokens separately, compute fine-grained similarities. DPR (2020) -- early interaction: encode query and document to single vectors, compute cosine similarity. TikTok recommendation: Monolith (2022) -- real-time training on user interactions, serving updated model within minutes. Architecture: collision-less embedding table for billion-scale user/item IDs. YouTube (2016): two-stage -- candidate generation (deep candidate generation from user history -> hundred candidates) -> ranking (deep ranking with rich features). LLM-based search: Perplexity AI, Google AI Overviews, and Bing Copilot integrate retrieval + LLM summarization. LLM ranking: GPT-4 as relevance judge -- out-of-the-box performance matches fine-tuned rankers on some benchmarks.
+
+## Related Articles
+
+- [Recommender Systems: Graph Neural Collaborative Filtering and LLM-Based Recommendation](../recommender-systems.md)
+- [AI Content Moderation Platforms: Large-Scale Safety Systems, Policy Engines, and Multilingual Review](../ai-content-moderation-platforms.md)
+- [AI for Digital Marketing: Personalization, Campaign Optimization, and Customer Analytics](../ai-digital-marketing.md)

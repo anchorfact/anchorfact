@@ -79,3 +79,7 @@ Variables: `NAME='value'`, reference with `$NAME` or `${NAME}`. Conditionals: `i
 ## Further Reading
 
 - [Bash Reference Manual](undefined)
+
+## Related Articles
+
+- [Cross-Site Scripting (XSS)](../cross-site-scripting-xss.md)

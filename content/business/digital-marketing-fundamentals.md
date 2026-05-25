@@ -77,4 +77,10 @@ SEO: organic search visibility (on-page, technical, backlinks). SEM/PPC: Google 
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [AI for Digital Marketing: Personalization, Campaign Optimization, and Customer Analytics](../../ai/ai-digital-marketing.md)
+- [Marketing: Strategy, Consumer Behavior, and Digital Channels](../marketing-fundamentals.md)
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../../ai/3d-human-modeling.md)

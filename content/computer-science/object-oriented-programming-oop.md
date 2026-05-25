@@ -87,3 +87,9 @@ Encapsulation: private fields, public methods — protects data integrity. Inher
 ## Further Reading
 
 - [Object-Oriented Analysis and Design (Booch)](undefined)
+
+## Related Articles
+
+- [AI for Satellite Imagery: Object Detection, Change Detection, and Global Monitoring](../../ai/ai-satellite-imagery.md)
+- [AI for Surveillance Systems: Object Tracking, Anomaly Detection, and Intelligent Monitoring](../../ai/ai-surveillance-systems.md)
+- [Conversational AI: Task-Oriented Dialogue and Open-Domain Chatbots](../../ai/conversational-ai-systems.md)

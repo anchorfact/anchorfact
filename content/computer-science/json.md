@@ -100,3 +100,9 @@ JSON (JavaScript Object Notation) is a lightweight, text-based data interchange 
 
 - [RFC 8259](https://www.rfc-editor.org/rfc/rfc8259): IETF JSON standard
 - [JSON.org](https://www.json.org/): Douglas Crockford's JSON page
+
+## Related Articles
+
+- [AI for Satellite Imagery: Object Detection, Change Detection, and Global Monitoring](../../ai/ai-satellite-imagery.md)
+- [AI for Surveillance Systems: Object Tracking, Anomaly Detection, and Intelligent Monitoring](../../ai/ai-surveillance-systems.md)
+- [Object Detection: YOLO, R-CNN, and DETR](../../ai/object-detection.md)

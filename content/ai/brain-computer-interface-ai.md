@@ -97,3 +97,9 @@ AI advances in BCI: (1) Deep learning decoders (FBCNet, EEGNet) outperform class
 - MIT Technology Review: 10 Breakthrough Technologies 2025 (BCIs)
 - Neuralink PRIME Study ClinicalTrials.gov
 - International BCI Society Annual Meeting
+
+## Related Articles
+
+- [Human-Computer Interaction: AI-Powered UX, Generative Interfaces, and Usability Testing](../human-computer-interaction.md)
+- [Computational Neuroscience: AI Models of Brain Circuits, Connectomics, and Neural Computation](../computational-neuroscience.md)
+- [Activation Functions in Neural Networks](../activation-functions.md)

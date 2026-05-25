@@ -113,3 +113,7 @@ Algorithm: maintain distance array (∞ initially), extract min from priority qu
 ## Further Reading
 
 - [Introduction to Algorithms (CLRS)](undefined)
+
+## Related Articles
+
+- [AI for Quantum Computing: Quantum Error Correction, Circuit Optimization, and Algorithm Discovery](../../ai/ai-quantum-computing.md)

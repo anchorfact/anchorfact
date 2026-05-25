@@ -99,3 +99,9 @@ Traditional search: text query matches text documents (TF-IDF, BM25). Multimodal
 
 ## Detailed Analysis
 CLIP (2021, OpenAI): 400M image-text pairs from web -> contrastive pretraining -> zero-shot image classification and cross-modal retrieval. Follow-ups: SigLIP (sigmoid loss), EVA-CLIP, OpenCLIP. Multimodal search stacks: embedding (encode items offline) -> vector database (Milvus, Qdrant, Elastic) -> retrieval (ANN) -> reranking (cross-encoder) -> serving. Alibaba Qwen3-VL-Embedding (2026): Matryoshka Representation Learning enables nested embeddings -- a single model can produce embeddings at different dimensionalities (64, 128, 256,..., 4096d). At 64d, retrieval is fast but lower recall; at 4096d, recall is highest. Applications: e-commerce (Amazon, Shopify -- visual product search), enterprise (searching across documents, presentations, and images), and media (stock photo/video search). Key challenges: fusion of structured filters (price, category, date) with embedding similarity; freshness (new items need real-time embedding); and personalized search adapting to user preferences.
+
+## Related Articles
+
+- [Vector Databases: Approximate Nearest Neighbor Search, Embedding Storage, and Retrieval at Scale](../vector-databases.md)
+- [Advanced RAG: From Naive Retrieval to Agentic RAG](../advanced-rag-techniques.md)
+- [Affective Computing: Multimodal Emotion Recognition, Sentiment Analysis, and Empathetic AI](../affective-computing.md)

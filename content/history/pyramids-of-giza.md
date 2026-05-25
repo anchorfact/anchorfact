@@ -72,3 +72,7 @@ Construction methods debated: ramps (straight, zigzag, spiral), levers, possibly
 ## Further Reading
 
 - [The Complete Pyramids (Mark Lehner)](https://thamesandhudson.com/the-complete-pyramids-9780500285473)
+
+## Related Articles
+
+- [Ancient Egyptian Civilization: Pharaohs, Pyramids, and Afterlife](../ancient-egyptian-civilization.md)

@@ -107,3 +107,7 @@ Common tricks: n & (n-1) clears lowest set bit (used in popcount). n & 1 checks 
 ## Further Reading
 
 - [Hacker's Delight (2nd Edition)](undefined)
+
+## Related Articles
+
+- [Robot Manipulation: Dexterous Grasping, Sim-to-Real Transfer, and Tactile Sensing](../../ai/robot-manipulation.md)

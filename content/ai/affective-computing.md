@@ -97,3 +97,9 @@ Multimodal fusion strategies: (E) Early fusion — concatenate all modality feat
 - IEMOCAP, RAVDESS, MELD Emotion Datasets
 - Dimensional Emotion Model (Russell's Circumplex)
 - OpenFace: Facial Action Unit Detection
+
+## Related Articles
+
+- [AI for Speech Emotion Recognition: Vocal Biomarkers, Mental Health Screening, and Affective Computing](../ai-for-speech-emotion-recognition.md)
+- [AI Social Listening: Brand Monitoring, Sentiment Analysis, and Consumer Insights](../ai-social-listening.md)
+- [AI Biometric Recognition: Fingerprint, Iris, Face, and Multimodal Deep Learning Systems](../biometric-recognition.md)

@@ -109,3 +109,9 @@ Three convergence domains: (1) AI on blockchain -- smart contracts execute AI in
 
 ## Detailed Analysis
 ZKML (Zero-Knowledge Machine Learning): using ZK-SNARKs to prove that an ML inference was computed correctly without revealing the model weights or input data. This enables private AI services -- you can use an AI model without trusting the provider, because a ZK proof cryptographically guarantees correct computation. Current state: feasible for small models (<100M params), prohibitively expensive for LLMs (proving GPT-4 inference would cost thousands of dollars). ezkl and Modulus Labs provide tooling. Gensyn: task distribution (split training across nodes), verification (redundant computation + spot-checking), incentive (token rewards for verified work). The blockchain coordinates task assignment and payment without centralized orchestration. Applications: (1) Decentralized model marketplaces (buy/sell model access via smart contracts); (2) Data DAOs -- collectively own and monetize datasets; (3) Federated learning with blockchain coordination.
+
+## Related Articles
+
+- [AI for Smart Homes: Ambient Intelligence, Energy Optimization, and Predictive Home Automation](../ai-for-smart-homes.md)
+- [AI for Transportation: Traffic Flow Prediction, Intelligent Transportation Systems, and Smart Mobility](../ai-for-transportation.md)
+- [AI Smart Contract Auditing: Vulnerability Detection, Formal Verification, and Blockchain Security](../ai-smart-contract-audit.md)

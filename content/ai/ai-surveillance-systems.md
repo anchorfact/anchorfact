@@ -96,3 +96,9 @@ Surveillance AI: (1) Object detection and tracking -- YOLO detects persons/vehic
 
 ## Detailed Analysis
 BriefCam: forensic video search platform. Indexes video metadata, enables sub-second search across weeks of footage ("find all people in red between 2-4 PM"). Avigilon: self-learning video analytics. Learns normal scene patterns; flags unusual activity without predefined rules. Anomaly detection: autoencoder trained on normal videos (empty corridor, orderly pedestrian flow). Reconstruction error spikes for anomalies (person running, crowd gathering). Edge AI: on-camera processing (Hailo, Ambarella, Qualcomm) eliminates need to stream all video to cloud. Only metadata and alert clips transmitted. Regulation: EU AI Act Article 5 bans real-time remote biometric identification in publicly accessible spaces, except for: targeted search for specific crime victims, prevention of imminent terrorist threat, or identification of serious crime suspects. Chinese Skynet: 600M+ cameras, AI-powered facial recognition integrated with national ID database. US patchwork: no federal law; city-level bans (San Francisco 2019, Boston 2020). NIST FRVT found significant demographic bias -- higher false match rates for women and people of color.
+
+## Related Articles
+
+- [AI for Video Surveillance: Intelligent Monitoring, Anomaly Detection, and Privacy-Preserving Analytics](../ai-for-video-surveillance.md)
+- [AI for Ocean Monitoring: Marine Life Detection, Plastic Pollution Tracking, and Oceanographic AI](../ai-for-ocean-monitoring.md)
+- [AI for Satellite Imagery: Object Detection, Change Detection, and Global Monitoring](../ai-satellite-imagery.md)

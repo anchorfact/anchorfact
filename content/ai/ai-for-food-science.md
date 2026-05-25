@@ -98,3 +98,9 @@ Flavor prediction is one of the most active areas. Traditional flavor chemistry 
 - FlavorDB: cosylab.iiitd.edu.in/flavordb
 - DayTwo / ZOE: AI-driven personalized nutrition platforms
 - NotCo: AI for plant-based food formulation (Giuseppe AI)
+
+## Related Articles
+
+- [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../ai-air-quality.md)
+- [AI for Beauty and Fashion: Virtual Try-On, Personalized Styling, and Trend Prediction](../ai-beauty-fashion.md)
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../ai-for-climate-science.md)

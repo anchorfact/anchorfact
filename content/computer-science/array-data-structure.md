@@ -96,3 +96,9 @@ Key operations: access O(1), search O(n). Dynamic arrays amortize resizing by do
 
 - [Introduction to Algorithms (CLRS)](undefined)
 - [Algorithms (4th Edition)](undefined)
+
+## Related Articles
+
+- [Tree Data Structure](../tree-data-structure.md)
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../../ai/ai-for-data-curation.md)
+- [AI for Tabular Data: Synthetic Generation, Diffusion Models, and Privacy-Preserving Structured Data](../../ai/ai-for-tabular-data.md)

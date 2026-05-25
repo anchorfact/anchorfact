@@ -101,3 +101,9 @@ Data mixture design determines the relative proportions of sources — code, mat
 - HuggingFace: FineWeb Blog
 - Dolma: Open Training Dataset (AI2)
 - Common Crawl Foundation
+
+## Related Articles
+
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../ai-for-data-curation.md)
+- [Data-Centric AI: The Systematic Engineering of Training Data](../data-centric-ai.md)
+- [AI Data Governance: Metadata Management, Data Catalogs, and AI-Ready Data Quality](../data-governance.md)

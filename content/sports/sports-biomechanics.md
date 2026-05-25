@@ -104,3 +104,9 @@ Motion capture (optical markers, IMU sensors) generates 3D kinematic data. Inver
 - International Society of Biomechanics in Sports
 - Journal of Applied Biomechanics
 - Dartfish Video Analysis
+
+## Related Articles
+
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../../ai/3d-human-modeling.md)
+- [AI for Sports Analytics: Player Tracking, Performance Prediction, and Tactical Analysis](../../ai/ai-sports-analytics.md)
+- [Cognitive Architectures: ACT-R, Soar, and Computational Models of Human-Like Reasoning](../../ai/cognitive-architectures.md)

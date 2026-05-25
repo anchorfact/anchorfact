@@ -117,3 +117,9 @@ Continuous batching (vLLM) maximizes GPU utilization by dynamically adding/remov
 - FlashAttention GitHub
 - vLLM Project
 - NVIDIA TensorRT-LLM
+
+## Related Articles
+
+- [AI for Digital Marketing: Personalization, Campaign Optimization, and Customer Analytics](../ai-digital-marketing.md)
+- [AI for Fleet Management: Predictive Maintenance, Route Optimization, and Telematics](../ai-fleet-management.md)
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../ai-for-data-curation.md)

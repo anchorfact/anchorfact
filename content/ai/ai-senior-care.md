@@ -88,3 +88,9 @@ Senior care AI: (1) Safety -- fall detection via accelerometer (wearable) or com
 
 ## Detailed Analysis
 Apple Watch fall detection (Series 4+, 2018-2025): algorithm trained on thousands of real and simulated falls. Differentiates falls from similar motions (slapping table, jumping). Hard fall -> haptic alert -> if immobile for 1 minute -> auto-call emergency services + emergency contacts with location. Widespread reports of lives saved. ElliQ (2022-2025): proactive AI -- doesn't wait for user to initiate. Greets in morning, suggests activities (trivia, music, exercise), reminds to hydrate. Conversational memory (remembers family names, preferences). Intuition Robotics (2024) data: average 20+ daily interactions, 80% reduction in loneliness scores over 6 months. GrandPad: senior-optimized tablet with simplified interface, AI-assisted photo sharing and video calls. CarePredict: wearable + ML predicting UTI, fall risk, depression from activity patterns. Market driver: the caregiver shortage -- demand for senior care workers far exceeds supply. AI fills the gap for non-clinical support.
+
+## Related Articles
+
+- [AI for Social Media: Misinformation Detection, Hate Speech Moderation, and Content Safety](../ai-for-social-media.md)
+- [AI for Workplace Safety: Computer Vision Monitoring, Fall Detection, and Hazard Prevention](../ai-workplace-safety.md)
+- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../ai-call-center.md)

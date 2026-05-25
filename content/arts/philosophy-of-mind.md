@@ -73,3 +73,9 @@ Mary's Room thought experiment (Jackson, 1982): Mary knows all physical facts ab
 ## Further Reading
 
 - [Consciousness Explained (Daniel Dennett)](https://www.hachettebookgroup.com/titles/daniel-c-dennett/consciousness-explained/9780316180658/)
+
+## Related Articles
+
+- [Philosophy of Science](../philosophy-of-science.md)
+- [Political Philosophy: Justice, Liberty, and the Social Contract](../political-philosophy.md)
+- [Greek Philosophy](../../history/greek-philosophy.md)

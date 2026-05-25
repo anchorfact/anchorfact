@@ -98,3 +98,7 @@ atomic_facts:
   - id: "fact-geography-003"
     statement: "Dust: Sahara is Earth's largest dust source — fertilizes Amazon rainforest across Atlantic"
     confidence: "medium"
+
+## Related Articles
+
+- [Desert Ecosystems and Adaptations](../desert-ecosystems.md)

@@ -95,3 +95,9 @@ Leading vector databases (DataCamp 2026): Pinecone (managed cloud, proprietary i
 - FAISS: Facebook AI Similarity Search (Meta)
 - Pinecone, Weaviate, Milvus, Qdrant Vector Databases
 - ANN-Benchmarks: Benchmarking ANN algorithms
+
+## Related Articles
+
+- [Multimodal Search: Cross-Modal Retrieval, Product Search, and Multimodal Embeddings](../multimodal-search.md)
+- [Vector Databases](../../computer-science/vector-databases.md)
+- [Advanced RAG: From Naive Retrieval to Agentic RAG](../advanced-rag-techniques.md)

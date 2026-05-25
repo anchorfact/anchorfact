@@ -99,3 +99,9 @@ Patient digital twin: personalized computational model integrating: (1) Anatomy 
 
 ## Detailed Analysis
 Dassault Living Heart: finite element model of cardiac electrophysiology. Personalized from patient MRI. Used clinically at Johns Hopkins, Boston Children's for congenital heart defect surgery planning and arrhythmia ablation guidance. Siemens Healthineers: digital twin for interventional cardiology. Philips: digital twin for critical care -- simulate patient trajectory under different treatment options. Insilico Medicine: AI platform Pharma.AI uses patient data to simulate drug effects. In silico trials: create virtual patient cohort matching target population demographics. Simulate drug administration, measure efficacy and safety endpoints. Certara (2024): biosimulation + AI. Novadiscovery: JINKO platform for in silico trials. FDA guidance (2024): computational modeling evidence accepted for medical device submissions. Regulators increasingly endorse in silico evidence for early-stage safety assessment. Key challenge: model validation -- does the twin accurately predict real patient outcomes? Prospective validation studies are ongoing.
+
+## Related Articles
+
+- [AI for Digital Twins: Real-Time Simulation, Predictive Maintenance, and System Optimization](../ai-for-digital-twins.md)
+- [AI for Urban Planning: Generative Spatial AI, Digital Twins, and Computational Urban Science](../ai-for-urban-planning.md)
+- [AI for Construction: Computer Vision Safety, BIM Digital Twins, and Automated Project Monitoring](../ai-for-construction.md)

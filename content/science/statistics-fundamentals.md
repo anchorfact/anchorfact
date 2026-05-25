@@ -111,3 +111,9 @@ Regression: linear (OLS), logistic (binary outcomes), multilevel/hierarchical. M
 - OpenIntro Statistics (free textbook)
 - MIT 18.05: Probability and Statistics
 - Statistical Rethinking (McElreath)
+
+## Related Articles
+
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../../ai/3d-human-modeling.md)
+- [AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling](../../ai/ai-customer-analytics.md)
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)

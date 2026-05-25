@@ -79,3 +79,9 @@ Reviewer focus: design (is it well-architected?), functionality (does it work?),
 ## Further Reading
 
 - [Google Engineering Practices Documentation](undefined)
+
+## Related Articles
+
+- [AI for Static Analysis: Automated Bug Detection, Code Review, and Vulnerability Scanning](../../ai/ai-static-analysis.md)
+- [Docker Security Best Practices](../docker-security-best-practices.md)
+- [Data Science: Methods, Tools, and Best Practices](../../science/data-science-fundamentals.md)

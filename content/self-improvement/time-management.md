@@ -102,3 +102,9 @@ atomic_facts:
   - id: "fact-self-improvement-002"
     statement: "Urgent: quadrant II (important not urgent) is where long-term success lives (planning, learning, relationships)"
     confidence: "medium"
+
+## Related Articles
+
+- [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../../ai/3d-generation-gaussian-splatting.md)
+- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../../ai/ai-call-center.md)
+- [AI for Fleet Management: Predictive Maintenance, Route Optimization, and Telematics](../../ai/ai-fleet-management.md)

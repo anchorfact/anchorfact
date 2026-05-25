@@ -93,3 +93,9 @@ MinHash deduplication: for each document, compute n-gram shingles, hash each shi
 - Common Crawl: Monthly Web Archive
 - FineWeb: 15T Token Curated Dataset (HuggingFace)
 - Dolma: Open Curation Toolkit (Allen AI)
+
+## Related Articles
+
+- [AI Training Data Curation: Quality at Scale](../ai-training-data-curation.md)
+- [Machine Translation: Neural MT, LLM-Based Translation, and Multilingual Quality at Scale](../machine-translation.md)
+- [AI Language Translation and Interpretation: LLM-Based Translation, Simultaneous Interpretation, and Quality Estimation](../ai-language-translation-interpretation.md)

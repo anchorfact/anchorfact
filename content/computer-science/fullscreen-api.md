@@ -68,3 +68,9 @@ The Fullscreen API enables web content to request presentation in full-screen mo
 ## Further Reading
 
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+
+## Related Articles
+
+- [API Gateway](../api-gateway.md)
+- [Broadcast Channel API](../broadcast-channel-api.md)
+- [Canvas API](../canvas-api.md)

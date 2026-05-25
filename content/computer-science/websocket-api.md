@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-22'
 generation_method: ai_structured
 derived_from_human_seed: true
@@ -57,6 +57,11 @@ primary_sources:
     year: 2018
     url: https://datatracker.ietf.org/doc/html/rfc8441
     institution: IETF
+  - title: The WebSocket Protocol — RFC 6455 Implementation Report
+    type: rfc
+    year: 2024
+    url: https://datatracker.ietf.org/doc/rfc6455/
+    institution: IETF
 secondary_sources:
   - title: The WebSocket Protocol (RFC 6455)
     authors:
@@ -93,6 +98,7 @@ secondary_sources:
 ---
 
 
+
 ## TL;DR
 
 The WebSocket API is the browser-side interface to the WebSocket protocol (RFC 6455), providing full-duplex, bidirectional communication between browser and server over a single TCP connection.
@@ -104,3 +110,9 @@ Usage: `const ws = new WebSocket('wss://example.com')`. Events: `onopen`, `onmes
 ## Further Reading
 
 - [The WebSocket API (W3C)](https://websockets.spec.whatwg.org/)
+
+## Related Articles
+
+- [API Gateway](../api-gateway.md)
+- [Broadcast Channel API](../broadcast-channel-api.md)
+- [Canvas API](../canvas-api.md)

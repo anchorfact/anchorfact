@@ -95,3 +95,9 @@ Generative IE: prompt LLM to output JSON {"entities": [...], "relations": [...]}
 - SpaCy NER and Transformers
 - HuggingFace Token Classification
 - Awesome-LLM4IE Papers GitHub
+
+## Related Articles
+
+- [AI in Cybersecurity: Threat Detection and LLM-Powered Defense](../ai-in-cybersecurity.md)
+- [AI Document Understanding: Layout Parsing, Structured Extraction, and Intelligent Document Processing](../ai-document-understanding.md)
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../ai-for-data-curation.md)

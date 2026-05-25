@@ -96,3 +96,9 @@ Database normalization reduces data redundancy and anomalies by organizing data 
 ## Further Reading
 
 - [Database Systems: The Complete Book (Garcia-Molina, Ullman, Widom)](undefined)
+
+## Related Articles
+
+- [Batch Normalization](../../ai/batch-normalization.md)
+- [Learned Database Systems: AI-Driven Query Optimization, Learned Indexes, and Cardinality Estimation](../../ai/learned-database-systems.md)
+- [Text-to-SQL: Natural Language Database Querying with Large Language Models](../../ai/text-to-sql.md)

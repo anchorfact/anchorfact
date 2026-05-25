@@ -78,3 +78,9 @@ The Clipboard API (`navigator.clipboard`) provides asynchronous read/write acces
 ## Further Reading
 
 - [Clipboard API and Events (W3C)](https://www.w3.org/TR/clipboard-apis/)
+
+## Related Articles
+
+- [API Gateway](../api-gateway.md)
+- [Broadcast Channel API](../broadcast-channel-api.md)
+- [Canvas API](../canvas-api.md)

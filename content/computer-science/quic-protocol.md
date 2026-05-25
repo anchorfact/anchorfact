@@ -83,4 +83,10 @@ QUIC eliminates TCP's head-of-line blocking by treating each stream independentl
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [Model Context Protocol (MCP)](../../ai/mcp.md)
+- [Hypertext Transfer Protocol (HTTP)](../http-protocol.md)
+- [MQTT Protocol](../mqtt-protocol.md)

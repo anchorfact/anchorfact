@@ -100,3 +100,9 @@ o1 launched September 2024; o3 (December 2024) achieved 87.5% on ARC-AGI benchma
 - OpenAI: o1/o3 System Cards
 - DeepSeek-R1 GitHub
 - ARC Prize: Reasoning Benchmark
+
+## Related Articles
+
+- [Cognitive Architectures: ACT-R, Soar, and Computational Models of Human-Like Reasoning](../cognitive-architectures.md)
+- [Test-Time Compute Scaling: Inference-Time Reasoning Paradigms from o1/o3 to Forest-of-Thought](../test-time-compute-scaling.md)
+- [Visual Question Answering: Vision-Language Models for Image Understanding and Reasoning](../visual-question-answering.md)

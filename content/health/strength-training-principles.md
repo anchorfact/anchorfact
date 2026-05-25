@@ -68,3 +68,9 @@ SRA curve: Stimulus → Recovery → Adaptation. Training too frequently = incom
 ## Further Reading
 
 - [Practical Programming for Strength Training (Rippetoe & Baker, 3rd Ed)](https://aasgaardco.com/store/books-posters-dvd/practical-programming-for-strength-training/)
+
+## Related Articles
+
+- [Strength Training](../strength-training.md)
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../../ai/ai-for-data-curation.md)
+- [AI Training Data Curation: Quality at Scale](../../ai/ai-training-data-curation.md)

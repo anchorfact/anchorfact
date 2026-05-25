@@ -89,3 +89,9 @@ Employee experience AI: (1) Onboarding -- conversational AI guides new hires (be
 
 ## Detailed Analysis
 Microsoft Viva (2021-2025): modular platform -- Viva Connections (company intranet), Viva Insights (personal/manager productivity analytics), Viva Learning (aggregated learning content), Viva Goals (OKR alignment). AI features: briefing email (daily summary of commitments), focus time scheduling, manager insights (team wellbeing trends). Qualtrics EX: sentiment analysis on employee feedback across lifecycle (candidate -> onboarding -> engagement -> exit). Predictive turnover: features include manager quality scores, workload, commute, compensation, growth opportunities. Culture Amp: 6,500+ companies. ML-powered survey analysis identifies key engagement drivers. Docebo: AI-powered LXP (Learning Experience Platform). Auto-tags content, recommends based on role + skill gaps. Ethical boundary: surveillance concerns -- employee monitoring without trust erodes engagement. Successful AI EX requires transparency and employee opt-in.
+
+## Related Articles
+
+- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../adversarial-machine-learning.md)
+- [AI for Drug Repurposing: Identifying New Uses for Existing Drugs Through Machine Learning](../ai-drug-repurposing.md)
+- [AI for Algorithmic Trading: Reinforcement Learning, Market Prediction, and Quantitative Finance](../ai-for-algorithmic-trading.md)

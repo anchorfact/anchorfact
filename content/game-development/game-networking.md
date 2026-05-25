@@ -77,3 +77,9 @@ UDP dominates game networking because:
 - No head-of-line blocking (lost packets don't stall the stream)
 - Application-level reliability control (resend only what matters)
 - Lower latency than TCP (no connection handshake per packet)
+
+## Related Articles
+
+- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
+- [MLOps and LLMOps: Production AI Engineering, Observability, and Platform Architecture](../../ai/mlops-llmops.md)
+- [Neural Architecture Search: Automated Design of Deep Neural Networks](../../ai/neural-architecture-search.md)

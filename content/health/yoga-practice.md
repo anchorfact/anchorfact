@@ -97,3 +97,9 @@ Key poses: Downward Dog, Warrior I/II/III, Child's Pose, Tree Pose, Cobra. Sun S
 ## Further Reading
 
 - [Light on Yoga (B.K.S. Iyengar)](https://www.harpercollins.com/products/light-on-yoga-bks-iyengar?variant=32117613527074)
+
+## Related Articles
+
+- [Yoga: Philosophy, Practice, and Health Benefits](../../sports/yoga-philosophy-practice-and-health-benefits.md)
+- [Strategic Management: Frameworks and Practice](../../business/strategic-management-theory.md)
+- [Mindfulness Meditation: Scientific Foundations and Practice](../../self-improvement/mindfulness-meditation-scientific-foundations-and-practice.md)

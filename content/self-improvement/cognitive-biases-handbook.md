@@ -122,3 +122,9 @@ Debiasing: premortem (imagine future failure), red teaming (designated challenge
 - ClearerThinking.org (Spencer Greenberg)
 - Center for Applied Rationality
 - LessWrong Community Sequences
+
+## Related Articles
+
+- [AI for Hyperautomation: RPA, Intelligent Document Processing, and Cognitive Workflows](../../ai/ai-for-hyperautomation.md)
+- [Cognitive Architectures: ACT-R, Soar, and Computational Models of Human-Like Reasoning](../../ai/cognitive-architectures.md)
+- [Design Thinking](../../arts/design-thinking.md)

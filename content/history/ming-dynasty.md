@@ -80,3 +80,7 @@ Zheng He: 7 voyages with fleets of 300+ ships, 28,000 crew — largest maritime 
 ## Further Reading
 
 - [1587, A Year of No Significance: The Ming Dynasty in Decline (Ray Huang)](https://yalebooks.yale.edu/book/9780300028843/1587-a-year-of-no-significance/)
+
+## Related Articles
+
+- [Tang Dynasty](../tang-dynasty.md)

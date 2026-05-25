@@ -135,3 +135,7 @@ Dropout (Srivastava et al., 2014): randomly deactivate neurons during training â
 ## Further Reading
 
 - [Deep Learning (Goodfellow, Bengio, Courville)](https://www.deeplearningbook.org/)
+
+## Related Articles
+
+- [Dropout and Regularization Techniques](../dropout-and-regularization.md)

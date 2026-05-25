@@ -99,3 +99,9 @@ Method taxonomy (arxiv 2025): (A) Statistical -- Gaussian copula, Bayesian netwo
 - SDV: Synthetic Data Vault (MIT) -- Python Library
 - CTGAN: Conditional Tabular GAN (NeurIPS 2019)
 - SynthCity: Synthetic Data Generation & Evaluation (Cambridge)
+
+## Related Articles
+
+- [AI for Video Surveillance: Intelligent Monitoring, Anomaly Detection, and Privacy-Preserving Analytics](../ai-for-video-surveillance.md)
+- [AI for Data Visualization: Automated Chart Generation, Insight Discovery, and Visual Analytics](../ai-for-visualization.md)
+- [AI Video Generation: Sora, Veo, and the Future of Synthetic Media](../ai-video-generation.md)

@@ -82,3 +82,7 @@ BN computes μ and σ² per mini-batch, normalizes, then applies γ*normalized +
 ## Further Reading
 
 - [Batch Normalization: Accelerating Deep Network Training (Ioffe & Szegedy, 2015)](https://arxiv.org/abs/1502.03167)
+
+## Related Articles
+
+- [Database Normalization](../../computer-science/database-normalization.md)

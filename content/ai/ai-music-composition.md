@@ -96,3 +96,9 @@ Music AI approaches: (1) Symbolic generation -- compose in MIDI/score representa
 
 ## Detailed Analysis
 MusicGen (Meta, 2023): EnCodec compresses 32kHz audio into 50Hz discrete codes. Single transformer predicts code sequence conditioned on text (T5 encoder) or melody (chromagram). Suno V4 (2025): produces radio-quality music. Generates coherent song structure (verse, chorus, bridge), multi-instrument arrangement, expressive vocals. AIVA: classical/soundtrack specialist. Uses deep learning + rule-based music theory constraints. Registered composer with SACEM. Copyright questions: US Copyright Office (2023-2025) ruled that purely AI-generated works (no human creative input) are not copyrightable. Human-AI collaborations (human curates/edits AI output) may qualify. Training data consent: Suno trained on copyrighted music without explicit artist consent -- Sony, Universal, Warner filed lawsuits (2024-2025). Future: licensing frameworks for AI training on music catalogs.
+
+## Related Articles
+
+- [AI Music and Audio Generation: Suno, Udio, and MusicLM](../ai-music-generation.md)
+- [Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning](../audio-source-separation.md)
+- [Neural Style Transfer: Artistic Rendering, Image-to-Image Translation, and Creative AI](../neural-style-transfer.md)

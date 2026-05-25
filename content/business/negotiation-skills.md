@@ -89,3 +89,9 @@ BATNA: always know your walk-away option before negotiating. Anchoring: first nu
 ## Further Reading
 
 - [Getting to Yes (Fisher, Ury, Patton)](https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/)
+
+## Related Articles
+
+- [Networking Skills](../networking-skills.md)
+- [Communication Skills](../../self-improvement/communication-skills.md)
+- [Sports Psychology: Mental Skills for Peak Performance](../../sports/sports-psychology-performance.md)

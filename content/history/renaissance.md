@@ -85,3 +85,8 @@ Key figures: Leonardo da Vinci (Mona Lisa, inventor, anatomist — Renaissance M
 ## Further Reading
 
 - [The Civilization of the Renaissance in Italy (Jacob Burckhardt, 1860)](https://www.gutenberg.org/ebooks/2074)
+
+## Related Articles
+
+- [Renaissance Art](../../arts/renaissance-art.md)
+- [Renaissance Science](../renaissance-science.md)

@@ -73,3 +73,9 @@ atomic_facts:
   - id: "fact-sports-001"
     statement: "Volleyball is played 6v6 across a net, with teams allowed 3 touches per side (bump-set-spike)"
     confidence: "medium"
+
+## Related Articles
+
+- [Photography Fundamentals and Composition](../../arts/photography-fundamentals.md)
+- [Poetry Fundamentals](../../arts/poetry-fundamentals.md)
+- [Digital Marketing Fundamentals](../../business/digital-marketing-fundamentals.md)

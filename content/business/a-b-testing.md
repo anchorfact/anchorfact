@@ -82,4 +82,10 @@ Sample size calculator determines minimum users needed (for given effect size, p
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [AI for Software Testing: Automated Test Generation, Fuzzing, and Quality Assurance](../../ai/ai-for-software-testing.md)
+- [AI Red Teaming: Security Testing for Language Models](../../ai/ai-red-teaming-and-safety.md)
+- [Human-Computer Interaction: AI-Powered UX, Generative Interfaces, and Usability Testing](../../ai/human-computer-interaction.md)

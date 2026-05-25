@@ -88,3 +88,9 @@ Sports AI stack: (1) Tracking -- computer vision (pose estimation + multi-object
 
 ## Detailed Analysis
 xG (Expected Goals): ML model trained on thousands of shots with features (distance to goal, angle, defender positions, shot type, assist type). Output: probability of goal. Used to evaluate finishing skill (actual goals - xG). Player tracking: NBA Second Spectrum (2023-present) uses optical tracking across all 30 arenas, providing 25Hz 3D player + ball tracking with skeletal pose data. Metrics: speed, acceleration, distance covered, defensive impact. Injury prediction: Kitman Labs, Zone7 analyze player load (training + match) and detect movement pattern changes preceding injury. Can predict non-contact injuries 1-3 weeks in advance with 70-80% recall. Tactical RL: Liverpool/DeepMind partnership trained models on thousands of matches to learn optimal pressing triggers and defensive positioning. Key challenge: the "open system" problem -- sports have too many variables for pure data-driven optimization. The best systems combine AI insights with coach expertise.
+
+## Related Articles
+
+- [AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling](../ai-customer-analytics.md)
+- [AI for Legal Research: Case Law Search, Citation Analysis, and Litigation Analytics](../ai-legal-research.md)
+- [AI for Public Health: Disease Surveillance, Outbreak Prediction, and Population Health Analytics](../ai-public-health.md)

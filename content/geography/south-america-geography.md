@@ -91,3 +91,9 @@ atomic_facts:
   - id: "fact-geography-002"
     statement: "12 countries, ~430 million people"
     confidence: "medium"
+
+## Related Articles
+
+- [North America Geography](../north-america-geography.md)
+- [South American Geography and Biodiversity](../south-american-geography.md)
+- [African Geography](../african-geography.md)

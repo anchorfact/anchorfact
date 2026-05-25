@@ -75,3 +75,8 @@ HTML5 (2014) introduced semantic elements that describe their meaning to both br
 ## Further Reading
 
 - [HTML Living Standard](https://html.spec.whatwg.org/)
+
+## Related Articles
+
+- [AI for Search and Recommendation: Semantic Search, Collaborative Filtering, and Personalization Engines](../../ai/ai-search-recommendation.md)
+- [Semantic Web and Ontologies: Knowledge Representation, OWL Reasoning, and Linked Data](../../ai/semantic-web-ontology.md)

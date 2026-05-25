@@ -94,3 +94,9 @@ Creator (abstract with factory method) + ConcreteCreator + Product interface. In
 ## Further Reading
 
 - [Design Patterns (Gang of Four)](undefined)
+
+## Related Articles
+
+- [Adapter Pattern](../adapter-pattern.md)
+- [Command Pattern](../command-pattern.md)
+- [Decorator Pattern](../decorator-pattern.md)

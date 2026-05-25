@@ -71,4 +71,10 @@ CLV > CAC (Customer Acquisition Cost) is the fundamental unit economics test. CA
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling](../../ai/ai-customer-analytics.md)
+- [AI for Customer Service: Conversational Agents, Ticket Routing, and Intelligent Contact Centers](../../ai/ai-customer-service.md)
+- [AI for Digital Marketing: Personalization, Campaign Optimization, and Customer Analytics](../../ai/ai-digital-marketing.md)

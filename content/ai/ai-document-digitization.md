@@ -105,3 +105,9 @@ AI digitization: (1) Handwritten Text Recognition (HTR) -- transformer-based mod
 
 ## Detailed Analysis
 Transkribus (2013-present): platform for HTR model training and deployment. Users upload 50-200 pages of transcribed text as training data, AI learns the specific handwriting style. Supports 100+ languages and scripts. Results: 95%+ character accuracy for consistent handwriting, 85-90% for challenging scripts. Herculaneum scrolls (Vesuvius Challenge): carbonized in 79 AD Vesuvius eruption -- physically unopenable. Solution: X-ray micro-CT scanning at 4-8um resolution + ML to detect subtle density differences between carbonized ink and carbonized papyrus. $700K awarded. UK National Archives: AI processes millions of WWI unit war diaries, making them searchable for the first time. DeepScribe: transformer model reading cuneiform tablets with higher accuracy than human specialists. Key challenge: ground truth data -- HTR requires human-transcribed training data.
+
+## Related Articles
+
+- [Affective Computing: Multimodal Emotion Recognition, Sentiment Analysis, and Empathetic AI](../affective-computing.md)
+- [AI Document Understanding: Layout Parsing, Structured Extraction, and Intelligent Document Processing](../ai-document-understanding.md)
+- [AI for Accessibility: Assistive Technologies, Sign Language Recognition, and Inclusive Systems](../ai-for-accessibility.md)

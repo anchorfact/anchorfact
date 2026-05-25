@@ -108,3 +108,9 @@ Smart grid AI: (1) Load forecasting -- predict electricity demand (by region, 15
 
 ## Detailed Analysis
 DeepMind data center cooling (2019-2025): RL agent controls cooling equipment (chillers, cooling towers, pumps) every 5 minutes. State: temperature, pressure, IT load, weather. Actions: equipment settings. Reward: minimize energy while maintaining temperature constraints. Result: 30-40% cooling energy reduction. EV smart charging: RL agent decides when to charge each EV given electricity price, grid load, and user's departure time. Aggregates thousands of EVs for grid services (frequency regulation). Battery storage: AI predicts optimal charge/discharge schedule for grid-scale batteries -- buy electricity when cheap/solar abundant, sell when expensive. Stem Athena: AI platform managing 1+ GWh of storage across 1,000+ sites. Grid stability: as renewable penetration increases, grid inertia decreases. AI-based fast frequency response uses batteries to stabilize frequency within milliseconds (vs. seconds for traditional generators).
+
+## Related Articles
+
+- [AI for Energy: Smart Grids, Renewable Forecasting, and Digital Twins](../ai-for-energy.md)
+- [AI for Inventory Management: Demand Forecasting, Stock Optimization, and Automated Replenishment](../ai-inventory-management.md)
+- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../ai-blockchain.md)

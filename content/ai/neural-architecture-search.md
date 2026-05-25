@@ -105,3 +105,9 @@ Key milestones: NASNet (Zoph et al., 2018) — RL-discovered architecture achiev
 - AutoML.org: Neural Architecture Search Overview
 - Once-for-All: Train One Network and Specialize it for Efficient Deployment
 - DARTS: Differentiable Architecture Search (Liu et al., ICLR 2019)
+
+## Related Articles
+
+- [Physics-Informed Neural Networks: Solving PDEs with Deep Learning and Neural Operators](../physics-informed-neural-networks.md)
+- [Activation Functions in Neural Networks](../activation-functions.md)
+- [AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime](../ai-for-fraud-detection.md)

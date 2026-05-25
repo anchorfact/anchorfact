@@ -89,3 +89,8 @@ CI pipeline: commit → build → unit tests → integration tests → code anal
 ## Further Reading
 
 - [Continuous Integration (Martin Fowler, 2006)](undefined)
+
+## Related Articles
+
+- [Decentralized AI: Distributed Inference, Peer-to-Peer Networks, and Blockchain Integration](../../ai/decentralized-ai.md)
+- [Multi-Omics Integration: AI-Driven Systems Biology from Genomics to Proteomics](../../ai/multi-omics-integration.md)

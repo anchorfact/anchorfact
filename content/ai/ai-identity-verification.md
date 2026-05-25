@@ -93,3 +93,9 @@ AI IDV pipeline: (1) Document capture -- user photographs ID (passport, license)
 
 ## Detailed Analysis
 Liveness detection: the cat-and-mouse game. Attack vectors: (A) Print attack -- photo of ID held to camera; (B) Replay attack -- video of user on screen; (C) 3D mask; (D) Deepfake injection -- AI-generated video bypassing camera. Active liveness: prompt random action (smile, turn head, read numbers). Passive liveness: analyze image texture (screen moire patterns, color gamut of displays vs skin), depth (3D structure from motion), and micro-movements (involuntary eye movements, skin micro-texture). Deepfake challenge: AI can now generate videos of users performing requested actions in real-time. Next-gen liveness: challenge-response protocols using device-level security (secure enclave, TEE), cryptographic binding of capture to device identity. Regulatory landscape: KYC/AML (global -- verify identity before financial account), eIDAS 2.0 (EU -- cross-border digital identity), India Aadhaar (biometric ID for 1.3B), and GDPR/privacy (biometric data is special category). Jumio: 300M+ verifications/year, 200+ countries, 3,500+ document types. Onfido: acquired by Entrust ($650M, 2024) for enterprise IDV.
+
+## Related Articles
+
+- [AI Smart Contract Auditing: Vulnerability Detection, Formal Verification, and Blockchain Security](../ai-smart-contract-audit.md)
+- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../ai-call-center.md)
+- [AI Content Authenticity: Watermarking and Detection](../ai-content-authenticity.md)

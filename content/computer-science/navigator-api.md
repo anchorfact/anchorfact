@@ -74,3 +74,9 @@ The Navigator API (`window.navigator` / `navigator`) provides information about 
 ## Further Reading
 
 - [HTML Standard — Navigator](https://html.spec.whatwg.org/multipage/system-state.html#the-navigator-object)
+
+## Related Articles
+
+- [API Gateway](../api-gateway.md)
+- [Broadcast Channel API](../broadcast-channel-api.md)
+- [Canvas API](../canvas-api.md)

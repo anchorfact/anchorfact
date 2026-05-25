@@ -94,3 +94,9 @@ atomic_facts:
   - id: "fact-geography-003"
     statement: "Fastest growing population — projected 2.5 billion by 2050"
     confidence: "medium"
+
+## Related Articles
+
+- [Asian Geography](../asian-geography.md)
+- [North America Geography](../north-america-geography.md)
+- [Oceania Geography](../oceania-geography.md)

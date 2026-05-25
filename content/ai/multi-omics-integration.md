@@ -102,3 +102,9 @@ Network-based integration (ScienceDirect 2025 review): construct multi-layer bio
 - UK Biobank: Multi-Omics Data for 500K Participants
 - MOFA: Multi-Omics Factor Analysis
 - TCGA: The Cancer Genome Atlas Multi-Omics
+
+## Related Articles
+
+- [AI for Genomics: Single-Cell Foundation Models and RNA Biology](../ai-for-genomics.md)
+- [Learned Database Systems: AI-Driven Query Optimization, Learned Indexes, and Cardinality Estimation](../learned-database-systems.md)
+- [Protein Structure Prediction: AlphaFold, RoseTTAFold, and AI-Driven Structural Biology](../protein-structure-prediction.md)

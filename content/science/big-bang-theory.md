@@ -109,3 +109,9 @@ Timeline: Planck epoch (first 10⁻⁴³ seconds, physics unknown), inflation (1
 ## Further Reading
 
 - [The First Three Minutes (Steven Weinberg)](https://www.basicbooks.com/titles/steven-weinberg/the-first-three-minutes/9780465024377/)
+
+## Related Articles
+
+- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
+- [Music Theory Basics](../../arts/music-theory-basics.md)
+- [Leadership Theory and Organizational Behavior](../../business/leadership-and-organizational-behavior.md)

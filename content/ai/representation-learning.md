@@ -103,3 +103,9 @@ MAE's key insight: masking a high proportion (75%+) of image patches creates a c
 - Lilian Weng: From Autoencoder to Beta-VAE
 - Keras: Autoencoder Tutorial
 - PyTorch: MAE Implementation
+
+## Related Articles
+
+- [Causal Representation Learning: Deep Causal Discovery, Intervention, and Counterfactuals](../causal-representation-learning.md)
+- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../adversarial-machine-learning.md)
+- [AI for Drug Repurposing: Identifying New Uses for Existing Drugs Through Machine Learning](../ai-drug-repurposing.md)

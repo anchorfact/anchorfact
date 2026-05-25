@@ -102,3 +102,9 @@ Key properties:
 
 - [RFC 6455](https://www.rfc-editor.org/rfc/rfc6455): Official IETF standard
 - [WHATWG WebSocket Standard](https://websockets.spec.whatwg.org/): Living standard (2026-03-15)
+
+## Related Articles
+
+- [Model Context Protocol (MCP)](../../ai/mcp.md)
+- [Hypertext Transfer Protocol (HTTP)](../http-protocol.md)
+- [MQTT Protocol](../mqtt-protocol.md)

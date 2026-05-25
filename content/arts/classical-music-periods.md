@@ -122,3 +122,9 @@ Baroque: ornamentation, harpsichord, fugue (Bach), Four Seasons (Vivaldi). Class
 ## Further Reading
 
 - [The Classical Style (Charles Rosen)](https://wwnorton.com/books/9780393317121)
+
+## Related Articles
+
+- [AI Music Composition: Generative Music, Style Imitation, and Creative AI Audio](../../ai/ai-music-composition.md)
+- [AI Music and Audio Generation: Suno, Udio, and MusicLM](../../ai/ai-music-generation.md)
+- [Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning](../../ai/audio-source-separation.md)

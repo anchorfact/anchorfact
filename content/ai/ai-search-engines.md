@@ -99,3 +99,9 @@ Perplexity's pipeline: real-time web crawling → relevance filtering → chunk 
 - Perplexity AI Blog
 - Google AI Blog: Search
 - NeuraSearch: AI-Powered Search Research
+
+## Related Articles
+
+- [AI in Cybersecurity: Threat Detection and LLM-Powered Defense](../ai-in-cybersecurity.md)
+- [AI for Intellectual Property: Patent Search, Prior Art Analysis, and Trademark Intelligence](../ai-ip-patents.md)
+- [AI for Legal Research: Case Law Search, Citation Analysis, and Litigation Analytics](../ai-legal-research.md)

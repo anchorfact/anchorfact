@@ -127,3 +127,9 @@ The end-Permian extinction (252 Ma) eliminated 96% of marine species — the clo
 - ICS: International Chronostratigraphic Chart
 - USGS: Geologic Time
 - Nature Geoscience: Deep Time Collection
+
+## Related Articles
+
+- [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../../ai/3d-generation-gaussian-splatting.md)
+- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../../ai/ai-call-center.md)
+- [AI Content Moderation Platforms: Large-Scale Safety Systems, Policy Engines, and Multilingual Review](../../ai/ai-content-moderation-platforms.md)

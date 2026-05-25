@@ -109,3 +109,9 @@ Key moments: Berlin Blockade (1948-49), Korean War (1950-53), Cuban Missile Cris
 ## Further Reading
 
 - [The Cold War: A New History (John Lewis Gaddis)](https://www.penguinrandomhouse.com/books/256540/the-cold-war-by-john-lewis-gaddis/)
+
+## Related Articles
+
+- [The Cold War: Ideological Conflict and Nuclear Standoff](../cold-war-history.md)
+- [Hundred Years' War](../hundred-years-war.md)
+- [World War I](../world-war-i.md)

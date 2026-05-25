@@ -66,3 +66,9 @@ Habit loop (Duhigg): cue → routine → reward, with craving driving the cycle.
 
 - [Atomic Habits](https://jamesclear.com/atomic-habits)
 - [Tiny Habits](https://www.hmhco.com/shop/books/tiny-habits/9780358362777)
+
+## Related Articles
+
+- [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../../ai/ai-for-chip-design.md)
+- [AI Protein Design: RFDiffusion, ProteinMPNN, and the Nobel Revolution](../../ai/ai-protein-design.md)
+- [Neural Architecture Search: Automated Design of Deep Neural Networks](../../ai/neural-architecture-search.md)

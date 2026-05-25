@@ -94,3 +94,9 @@ Learning rate: controls step size — too small (slow convergence), too large (d
 ## Further Reading
 
 - [Deep Learning (Goodfellow, Bengio, Courville)](https://www.deeplearningbook.org/)
+
+## Related Articles
+
+- [AI for Digital Marketing: Personalization, Campaign Optimization, and Customer Analytics](../ai-digital-marketing.md)
+- [AI for Fleet Management: Predictive Maintenance, Route Optimization, and Telematics](../ai-fleet-management.md)
+- [AI for Digital Twins: Real-Time Simulation, Predictive Maintenance, and System Optimization](../ai-for-digital-twins.md)

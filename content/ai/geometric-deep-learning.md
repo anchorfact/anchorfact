@@ -99,3 +99,9 @@ Group convolution generalizes standard convolution: instead of shifting a filter
 - Geometric Deep Learning Course (AMMI)
 - e3nn PyTorch Library
 - Equivariant Self-Attention (SE3-Transformer)
+
+## Related Articles
+
+- [AI for Signal Processing: Deep Learning for Wireless, Radar, and Biomedical Signals](../ai-for-signal-processing.md)
+- [Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning](../audio-source-separation.md)
+- [Bayesian Deep Learning: Uncertainty Quantification and Robust Predictions](../bayesian-deep-learning.md)

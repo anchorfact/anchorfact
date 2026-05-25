@@ -88,3 +88,9 @@ VR/AR AI stack: (1) Content creation -- generative AI creates 3D assets (text-to
 
 ## Detailed Analysis
 Text-to-3D: DreamFusion uses a pretrained 2D diffusion model (Imagen) as a prior -- optimizing a NeRF such that rendered views match what the 2D diffusion model expects from the text prompt (Score Distillation Sampling). GET3D generates textured 3D meshes via GANs conditioned on category labels. LLM NPCs: Inworld AI provides character creation with personality traits, memories, and goals. The NPC maintains conversation context across interactions, remembers past player actions, and adapts behavior. This replaces traditional dialogue trees with generative conversation. Key challenge: real-time AI generation -- VR requires 90 FPS (11ms per frame). AI content generation must happen offline or in cloud, streamed to the headset. Apple Vision Pro (2024) and Meta Quest 3 (2023) demonstrate the hardware trajectory, with dedicated AI accelerators (Neural Engine, Hexagon NPU) for on-device ML inference.
+
+## Related Articles
+
+- [AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation](../ai-content-creation.md)
+- [AI in Gaming: NPCs, Procedural Content, and AlphaStar](../ai-in-gaming.md)
+- [AI Podcast Generation: Text-to-Speech Narration, AI Hosts, and Automated Audio Content](../ai-podcast-generation.md)

@@ -100,3 +100,9 @@ Key methods: (1) Invariant Risk Minimization (IRM) — learn representations whe
 - The Book of Why by Judea Pearl (2018)
 - Causal Inference in Statistics: A Primer (Pearl, Glymour, Jewell, 2016)
 - CausalAI Conference & DoWhy/PyWhy Python Libraries
+
+## Related Articles
+
+- [AI for Signal Processing: Deep Learning for Wireless, Radar, and Biomedical Signals](../ai-for-signal-processing.md)
+- [Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning](../audio-source-separation.md)
+- [Bayesian Deep Learning: Uncertainty Quantification and Robust Predictions](../bayesian-deep-learning.md)

@@ -111,3 +111,9 @@ Drug repurposing: find new indications for approved drugs. Advantages over de no
 
 ## Detailed Analysis
 COVID-19 repurposing: BenevolentAI KG (Jan 2020) identified baricitinib as potential COVID treatment based on predicted AAK1 inhibition (viral entry mechanism). ACTT-2 trial (Sept 2020) showed baricitinib + remdesivir reduced recovery time by 1 day. FDA EUA Nov 2020. Healx (Cambridge, 2014-2025): AI platform HealNet predicts drug-disease matches from KG of 1M+ biomedical concepts. Drug for Fragile X syndrome (HLX-1502) predicted by AI in 18 months vs typical 5-10 years, now in Phase 2a. Recursion Pharmaceuticals: computer vision on cellular microscopy images. Screen approved drugs for effects on disease-relevant cellular phenotypes. Hetionet (2017): openly published biomedical KG enabling algorithmic repurposing. Key challenge: AI predictions are retrospective (predicting known drug-disease pairs) -- prospective validation requires clinical trials. Few AI-repurposed drugs have completed Phase 3 yet.
+
+## Related Articles
+
+- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../adversarial-machine-learning.md)
+- [AI Democratization: Open-Source Models, Low-Code AI, and Accessible Machine Learning](../ai-for-democratization.md)
+- [Anomaly Detection in Machine Learning](../anomaly-detection.md)

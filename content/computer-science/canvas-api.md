@@ -78,3 +78,9 @@ Key methods: `fillRect()`, `strokeRect()`, `arc()`, `drawImage()`, `fillText()`.
 ## Further Reading
 
 - [HTML Canvas 2D Context (W3C)](https://html.spec.whatwg.org/multipage/canvas.html)
+
+## Related Articles
+
+- [API Gateway](../api-gateway.md)
+- [Broadcast Channel API](../broadcast-channel-api.md)
+- [Clipboard API](../clipboard-api.md)

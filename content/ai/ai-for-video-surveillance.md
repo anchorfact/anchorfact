@@ -90,3 +90,9 @@ Traditional video surveillance: motion detection, manual review, hours of footag
 
 ## Detailed Analysis
 Transformer architectures for video: (1) Video Swin Transformer -- extends Swin Transformer to 3D by computing self-attention within local 3D windows, hierarchically merging patches; (2) TimeSformer -- applies spatial attention and temporal attention separately, more efficient than full 3D attention (divides computation by factor of patch_count); (3) VideoMAE -- masked autoencoder pretraining on video, reconstructing masked spatio-temporal patches. Anomaly detection approaches: (1) Reconstruction-based -- autoencoder trained on normal video, flags frames with high reconstruction error as anomalous; (2) Prediction-based -- predict future frames, anomaly = large prediction error; (3) Weakly supervised -- trained on video-level labels (normal/anomalous), learns to localize anomalous segments. Privacy-preserving surveillance: edge AI cameras (NVIDIA Jetson, Google Coral) run inference locally, transmitting only metadata (counts, events, trajectories) rather than video streams -- reducing bandwidth by 99% and addressing privacy regulations. The "smart city" surveillance vision faces tension between public safety benefits and mass surveillance concerns -- technical privacy measures (federated learning, on-device processing, blurring of non-target individuals) are essential prerequisites for ethical deployment.
+
+## Related Articles
+
+- [AI for Surveillance Systems: Object Tracking, Anomaly Detection, and Intelligent Monitoring](../ai-surveillance-systems.md)
+- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../ai-call-center.md)
+- [AI for Election Integrity: Disinformation Detection, Voter Analytics, and Electoral Security](../ai-election-integrity.md)

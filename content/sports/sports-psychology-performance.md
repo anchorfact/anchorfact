@@ -92,3 +92,9 @@ Flow state (Csikszentmihalyi): complete absorption where action and awareness me
 - Association for Applied Sport Psychology
 - The Sport Psychologist Journal
 - Headspace: Sport
+
+## Related Articles
+
+- [AI for Sports Analytics: Player Tracking, Performance Prediction, and Tactical Analysis](../../ai/ai-sports-analytics.md)
+- [Extreme Sports: Risk, Reward, and Psychology](../extreme-sports-risk-reward-and-psychology.md)
+- [Sports Nutrition: Fueling Performance and Recovery](../sports-nutrition.md)

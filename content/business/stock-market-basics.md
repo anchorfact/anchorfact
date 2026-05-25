@@ -77,3 +77,9 @@ Bull market: rising (up 20%+). Bear market: falling (down 20%+). Efficient Marke
 ## Further Reading
 
 - [A Random Walk Down Wall Street (Malkiel, 13th Ed)](https://wwnorton.com/books/9781324035466)
+
+## Related Articles
+
+- [AI for Algorithmic Trading: Reinforcement Learning, Market Prediction, and Quantitative Finance](../../ai/ai-for-algorithmic-trading.md)
+- [AI for Inventory Management: Demand Forecasting, Stock Optimization, and Automated Replenishment](../../ai/ai-inventory-management.md)
+- [Neural Network Basics](../../ai/neural-network-basics.md)

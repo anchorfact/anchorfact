@@ -94,3 +94,9 @@ Iliad themes: rage, honor, mortality. Odyssey: cleverness (polymetis = many-mind
 ## Further Reading
 
 - [The Iliad (Homer, ~8th century BCE)](https://www.gutenberg.org/ebooks/2199)
+
+## Related Articles
+
+- [Greek Mythology](../greek-mythology.md)
+- [World Literature](../world-literature.md)
+- [Ancient Egypt](../../history/ancient-egypt.md)

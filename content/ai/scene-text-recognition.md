@@ -110,3 +110,9 @@ Scene text vs. document OCR: document OCR (clean white background, standard font
 
 ## Detailed Analysis
 TrOCR (2021): two pretrained transformers -- ViT splits image into 16x16 patches, processes as tokens. RoBERTa decoder generates text autoregressively. No CTC, no attention-based alignment needed. Simple, scalable. Pretraining: synthetic data generation using text rendering engine (TextRender) with 1000+ fonts. MDPI 2025 end-to-end framework: DETR text detector + transformer recognizer, joint training signal improves both stages. ICDAR benchmarks: ICDAR 2013 (focused), ICDAR 2015 (incidental), Total-Text (curved), COCO-Text. Current SOTA: ~95% F1 on ICDAR 2015 detection, ~98% word accuracy on recognition. Remaining challenges: Non-Latin scripts (Arabic cursive, Chinese, Devanagari) and handwritten historical documents with degraded ink and non-standard characters.
+
+## Related Articles
+
+- [Human Pose Estimation: 2D/3D Keypoint Detection and Transformer-Based Body Tracking](../human-pose-estimation.md)
+- [Text Classification: Zero-Shot, Few-Shot, and LLM-Based Document Categorization](../text-classification.md)
+- [Text Summarization: From Extractive Methods to Abstractive LLM-Based Summarization](../text-summarization.md)

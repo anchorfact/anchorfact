@@ -106,3 +106,9 @@ Self-supervised ViTs: DINO (self-distillation with no labels), MAE (masked autoe
 - Meta AI: DINOv2 Demo
 - Hugging Face: Vision Transformers
 - Papers With Code: Image Classification
+
+## Related Articles
+
+- [AI for Construction: Computer Vision Safety, BIM Digital Twins, and Automated Project Monitoring](../ai-for-construction.md)
+- [AI for Workplace Safety: Computer Vision Monitoring, Fall Detection, and Hazard Prevention](../ai-workplace-safety.md)
+- [End-to-End Autonomous Driving: Tesla FSD, Waymo, and Imitation Learning](../autonomous-driving-ai.md)

@@ -92,3 +92,9 @@ The insight driving learned databases: classical data structures (B-trees, hash 
 
 ## Detailed Analysis
 RMI (Recursive Model Index): hierarchy of simple models. Stage 1 model: broad positioning; Stage 2: refinement. Bottom-level models predict exact positions. 3x faster than B-tree for read-only, 100x less memory. PGM-Index: provides worst-case error bounds and supports inserts. Cardinality estimation: MSCN (Multi-Set Convolutional Network) represents query predicates as sets, preserving permutation invariance. NeuroCard uses autoregressive models (NARU) over single-table sample, extending to multi-table via joins. Q-error < 3x vs. >100x for PostgreSQL. Learned query optimizers: Bao (Marcus et al., SIGMOD 2021) -- uses Thompson sampling bandit to select among existing optimizer-generated plans; learns per-query which PostgreSQL optimizer hint works best. Neo (Marcus et al., VLDB 2019) -- fully learned query optimizer using DNN for cost estimation + value iteration for plan search. Springer 2025 survey: the "last mile" challenge -- learned components work in research prototypes, integration into production DBMS (PostgreSQL, MySQL, Oracle) requires solving concurrency, crash recovery, and ACID compatibility. Recent progress: PostgreSQL hooks for learned cardinality; DuckDB's extensible optimizer enabling ML integration.
+
+## Related Articles
+
+- [Multi-Omics Integration: AI-Driven Systems Biology from Genomics to Proteomics](../multi-omics-integration.md)
+- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../ai-blockchain.md)
+- [AI Content Moderation Platforms: Large-Scale Safety Systems, Policy Engines, and Multilingual Review](../ai-content-moderation-platforms.md)

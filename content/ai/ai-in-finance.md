@@ -95,3 +95,9 @@ Challenges: non-stationary distributions (markets change), low signal-to-noise r
 - JP Morgan AI Research
 - Bloomberg: Machine Learning in Finance
 - Journal of Financial Data Science
+
+## Related Articles
+
+- [AI for Algorithmic Trading: Reinforcement Learning, Market Prediction, and Quantitative Finance](../ai-for-algorithmic-trading.md)
+- [AI for Crisis Hotlines: Suicide Prevention Chatbots, Emotional Support AI, and Risk Detection](../ai-for-crisis-hotlines.md)
+- [AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime](../ai-for-fraud-detection.md)

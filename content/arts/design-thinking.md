@@ -102,3 +102,9 @@ Empathy: observe, interview, immerse in user experience. Define: synthesize insi
 ## Further Reading
 
 - [Change by Design (Tim Brown)](https://www.harpercollins.com/products/change-by-design-tim-brown)
+
+## Related Articles
+
+- [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../../ai/ai-for-chip-design.md)
+- [AI Protein Design: RFDiffusion, ProteinMPNN, and the Nobel Revolution](../../ai/ai-protein-design.md)
+- [Neural Architecture Search: Automated Design of Deep Neural Networks](../../ai/neural-architecture-search.md)

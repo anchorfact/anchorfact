@@ -77,3 +77,9 @@ Positional audio uses HRTF to simulate direction: sounds to the left arrive loud
 
 ## Implementation Architecture
 Game code emits audio parameters → Middleware processes mixing/routing → Platform API (XAudio2, OpenAL) → Hardware output. This decoupling lets sound designers iterate independently of engineering schedules.
+
+## Related Articles
+
+- [AI for Audio Processing: Sound Event Detection, Acoustic Scene Analysis, and Environmental Intelligence](../../ai/ai-for-audio-processing.md)
+- [Game Design Document (GDD)](../game-design-document-gdd.md)
+- [Game User Interface and UX Design](../game-ui-ux-design.md)

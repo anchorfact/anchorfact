@@ -79,3 +79,9 @@ Urine color: pale straw = hydrated; dark yellow/amber = dehydrated. Thirst is a 
 ## Further Reading
 
 - [Dietary Reference Intakes for Water (IOM, 2004)](https://www.nap.edu/catalog/10925/dietary-reference-intakes-for-water-potassium-sodium-chloride-and-sulfate)
+
+## Related Articles
+
+- [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../../ai/ai-air-quality.md)
+- [AI for Electronic Health Records: Clinical NLP, Coding Automation, and Physician Burnout Reduction](../../ai/ai-electronic-health-records.md)
+- [AI for Mental Health: LLM-Based Therapy, Digital Interventions, and Clinical Trials](../../ai/ai-for-mental-health.md)

@@ -94,3 +94,9 @@ Nature 2025 NIDS evaluation: Random Forest achieved the best F1 for supervised d
 - CIC-IDS Datasets (Canadian Institute for Cybersecurity)
 - Snort / Suricata Open-Source NIDS
 - Stratosphere IPS: Machine Learning Network Security
+
+## Related Articles
+
+- [AI in Cybersecurity: Threat Detection and LLM-Powered Defense](../ai-in-cybersecurity.md)
+- [AI for Network Security: Intelligent Firewalls, DDoS Mitigation, and Zero-Trust Architectures](../ai-for-network-security.md)
+- [AI for Video Surveillance: Intelligent Monitoring, Anomaly Detection, and Privacy-Preserving Analytics](../ai-for-video-surveillance.md)

@@ -78,4 +78,10 @@ Directed vs. undirected. Weighted graphs model distances/costs. Complete graph K
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../../ai/ai-for-complex-networks.md)
+- [AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime](../../ai/ai-for-fraud-detection.md)
+- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)

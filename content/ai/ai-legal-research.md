@@ -93,3 +93,9 @@ Legal research AI: (1) Semantic search -- embedding-based retrieval (LegalBERT, 
 
 ## Detailed Analysis
 CoCounsel (Casetext, 2023-2025): GPT-4 powered. Features: legal research memo, document review, contract analysis, deposition preparation. Passed the Uniform Bar Exam (first AI). Acquired by Thomson Reuters ($650M, 2023). Westlaw Precision: AI-enhanced search with "issue-specific relevance" ranking. Lexis+ AI: conversational search, AI-generated case summaries, Shepard's integration. Lex Machina: predicts case outcomes and judge behavior. Database: 5M+ federal cases, 100K+ state cases. Judge analytics: motion grant rate, time-to-decision, appeal history. Law firms use for venue selection (which judge/court is favorable) and settlement valuation. Key challenge: hallucination -- AI-generated legal content must be factually verified. CoCounsel provides cited sources linking every claim. Competitor attacks: ROSS Intelligence shut down (2020) due to Thomson Reuters copyright lawsuit over training data.
+
+## Related Articles
+
+- [AI for Legal: Contract Analysis, Legal Reasoning, and Regulatory Compliance](../ai-for-legal.md)
+- [AI for Intellectual Property: Patent Search, Prior Art Analysis, and Trademark Intelligence](../ai-ip-patents.md)
+- [AI for Legal Contracts: Automated Drafting, Clause Analysis, and Due Diligence](../ai-legal-contracts.md)

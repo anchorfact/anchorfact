@@ -120,3 +120,9 @@ Public health AI: (1) Surveillance -- NLP processes news, social media, clinical
 
 ## Detailed Analysis
 COVID-19 era innovations: BlueDot (NLP surveillance) detected unusual pneumonia cluster in Wuhan on Dec 31, 2019. HealthMap visualized outbreak spread globally. Google/Apple Exposure Notification (2020): 200M+ opt-in users, Bluetooth-based proximity detection with privacy-preserving design (rotating random IDs, on-device processing). Post-pandemic (2024-2026): shift to multi-pathogen surveillance (influenza, RSV, COVID simultaneously). AI integrating wastewater surveillance (viral RNA in sewage predicts outbreaks 1-2 weeks before clinical cases). Antimicrobial resistance (AMR): AI predicts antibiotic resistance from genomic data, guiding treatment selection. Mental health: AI analyzes social media language patterns at population scale to track depression/anxiety trends. Key challenge: data sharing across jurisdictions during health emergencies. Privacy-preserving federated learning and differential privacy enable multi-country models without sharing raw data.
+
+## Related Articles
+
+- [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../ai-air-quality.md)
+- [AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling](../ai-customer-analytics.md)
+- [AI for Agriculture: Precision Farming, Plant Disease Detection, and Crop Yield Prediction](../ai-for-agriculture.md)

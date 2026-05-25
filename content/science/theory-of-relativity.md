@@ -75,3 +75,9 @@ Special relativity: time slows for moving objects (experimentally confirmed — 
 ## Further Reading
 
 - [Relativity: The Special and General Theory (Einstein, 1916)](https://www.gutenberg.org/ebooks/5001)
+
+## Related Articles
+
+- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
+- [Music Theory Basics](../../arts/music-theory-basics.md)
+- [Leadership Theory and Organizational Behavior](../../business/leadership-and-organizational-behavior.md)

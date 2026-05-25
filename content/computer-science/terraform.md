@@ -85,3 +85,7 @@ Terraform by HashiCorp is the dominant Infrastructure as Code tool, using HCL (H
 ## Further Reading
 
 - [Terraform Documentation](https://developer.hashicorp.com/terraform/docs)
+
+## Related Articles
+
+- [Terraform State](../terraform-state.md)

@@ -84,3 +84,9 @@ Gutenberg: goldsmith turned inventor — metal movable type, oil-based ink, wood
 ## Further Reading
 
 - [The Printing Revolution in Early Modern Europe (Elizabeth Eisenstein, 2nd Ed)](https://www.cambridge.org/core/books/printing-revolution-in-early-modern-europe/)
+
+## Related Articles
+
+- [Animation History](../animation-history.md)
+- [Architecture History](../architecture-history.md)
+- [Digital Art and New Media Art History](../digital-art-history.md)

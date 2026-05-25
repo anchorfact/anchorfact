@@ -122,3 +122,7 @@ Historical: Alfred Wegener proposed continental drift (1912) but couldn't explai
 ## Further Reading
 
 - [Plate Tectonics: An Insider's History (Naomi Oreskes)](https://www.hachettebookgroup.com/titles/naomi-oreskes/plate-tectonics/9780813341323/)
+
+## Related Articles
+
+- [Plate Tectonics: The Unifying Theory of Earth Sciences](../../geography/plate-tectonics-theory.md)

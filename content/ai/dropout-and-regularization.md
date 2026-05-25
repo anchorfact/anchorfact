@@ -110,3 +110,9 @@ Data augmentation (rotation, cropping, color jitter for images; back-translation
 - Goodfellow et al., Deep Learning, Ch.7
 - CS231n: Regularization Notes
 - Distill.pub: Visualizing Regularization
+
+## Related Articles
+
+- [Overfitting and Regularization](../overfitting-and-regularization.md)
+- [Prompt Engineering: Techniques for LLM Interaction](../prompt-engineering.md)
+- [Conflict Resolution: Strategies and Techniques](../../self-improvement/conflict-resolution-strategies-and-techniques.md)

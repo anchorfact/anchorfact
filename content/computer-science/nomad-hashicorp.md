@@ -79,3 +79,8 @@ Job specification (HCL): task group → tasks with resources, constraints, servi
 ## Further Reading
 
 - [Nomad Documentation](https://developer.hashicorp.com/nomad/docs)
+
+## Related Articles
+
+- [Consul (HashiCorp)](../consul-hashicorp.md)
+- [Vault (HashiCorp)](../vault-hashicorp.md)

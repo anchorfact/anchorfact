@@ -84,3 +84,9 @@ Fashion reflects culture, technology, and social change through clothing. Key sh
 ## Further Reading
 
 - [Fashion: The Definitive History of Costume and Style (DK)](https://www.dk.com/us/book/9780756698355-fashion/)
+
+## Related Articles
+
+- [AI for Beauty and Fashion: Virtual Try-On, Personalized Styling, and Trend Prediction](../../ai/ai-beauty-fashion.md)
+- [Animation History](../animation-history.md)
+- [Architecture History](../architecture-history.md)

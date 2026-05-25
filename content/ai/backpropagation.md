@@ -126,3 +126,9 @@ The vanishing gradient problem occurs when activation functions like sigmoid/tan
 - Stanford CS231n: Backpropagation Notes
 - Goodfellow et al., Deep Learning, Ch.6
 - Distill.pub: Why Momentum Really Works
+
+## Related Articles
+
+- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../ai-for-complex-networks.md)
+- [Mechanistic Interpretability: Reverse-Engineering Neural Network Circuits and Features](../mechanistic-interpretability.md)
+- [Neural Network Basics](../neural-network-basics.md)

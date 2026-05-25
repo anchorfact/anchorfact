@@ -71,3 +71,9 @@ Society: jarls (nobles), karls (freemen), thralls (slaves). Women: more rights t
 ## Further Reading
 
 - [The Vikings: A History (Robert Ferguson)](https://www.penguinrandomhouse.com/books/302917/the-vikings-by-robert-ferguson/)
+
+## Related Articles
+
+- [AI for Oil and Gas Exploration: Seismic Interpretation, Reservoir Characterization, and Subsurface Intelligence](../../ai/ai-for-oil-gas-exploration.md)
+- [AI for Space Exploration: Autonomous Navigation, Earth Observation, and Spacecraft Autonomy](../../ai/ai-for-space-exploration.md)
+- [Coffee Culture](../../arts/coffee-culture.md)

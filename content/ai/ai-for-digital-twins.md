@@ -91,3 +91,9 @@ Digital twin maturity: Level 1(Descriptive) -- visual replica with real-time sen
 
 ## Detailed Analysis
 Key platforms: NVIDIA Omniverse -- physically accurate simulation with RTX rendering, connecting to IoT data streams via USD (Universal Scene Description). Siemens Xcelerator: industrial digital twins spanning product design, manufacturing, and service lifecycle. Manufacturing DT: replicate production line with real-time sensor data. AI monitors OEE (Overall Equipment Effectiveness), predicts machine failures, and simulates line reconfiguration. Building DT: Autodesk Tandem integrates BIM models with IoT (HVAC, lighting, occupancy), AI optimizes energy consumption and occupant comfort. Healthcare DT: computational models of individual patients for personalized treatment planning (surgical simulation, drug response prediction). Generative AI: LLMs provide natural language interface to query twin state. Generative design explores optimal configurations (where to place new machine for maximum throughput). Meta DIGIT (2025): AI agents autonomously navigate digital twin environments, running experiments and reporting optimization opportunities. Key challenge: synchronization latency -- digital twin must reflect physical state near-real-time (seconds) for closed-loop control.
+
+## Related Articles
+
+- [AI for Manufacturing: Predictive Maintenance, Quality Control, and Digital Twins](../ai-for-manufacturing.md)
+- [AI Digital Twins for Healthcare: Patient-Specific Simulation, Treatment Planning, and Virtual Organs](../ai-digital-twins-healthcare.md)
+- [AI for Fleet Management: Predictive Maintenance, Route Optimization, and Telematics](../ai-fleet-management.md)

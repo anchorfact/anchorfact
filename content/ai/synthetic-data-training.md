@@ -103,3 +103,9 @@ Phi-4 demonstrated synthetic data can compensate for smaller model size — 14B 
 - Microsoft Research: Phi Series
 - Nature: AI Model Collapse
 - NeurIPS: Synthetic Data Workshop
+
+## Related Articles
+
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../ai-for-data-curation.md)
+- [AI for Tabular Data: Synthetic Generation, Diffusion Models, and Privacy-Preserving Structured Data](../ai-for-tabular-data.md)
+- [AI Training Data Curation: Quality at Scale](../ai-training-data-curation.md)

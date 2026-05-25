@@ -78,3 +78,9 @@ Elevator pitch: 30-second compelling self-introduction. Follow-up: within 24 hou
 ## Further Reading
 
 - [Never Eat Alone (Keith Ferrazzi)](https://www.penguinrandomhouse.com/books/316664/never-eat-alone-expanded-and-updated-by-keith-ferrazzi-with-tahl-raz/)
+
+## Related Articles
+
+- [Negotiation Skills](../negotiation-skills.md)
+- [Docker Networking](../../computer-science/docker-networking.md)
+- [Game Networking Architecture](../../game-development/game-networking.md)

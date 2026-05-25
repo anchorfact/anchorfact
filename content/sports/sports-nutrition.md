@@ -95,3 +95,9 @@ Hydration: as little as 2% body mass loss impairs cognitive and physical perform
 - IOC Consensus Statement: Sports Nutrition
 - Gatorade Sports Science Institute
 - ISSN Conferences and Position Papers
+
+## Related Articles
+
+- [AI for Sports Analytics: Player Tracking, Performance Prediction, and Tactical Analysis](../../ai/ai-sports-analytics.md)
+- [Sports Psychology: Mental Skills for Peak Performance](../sports-psychology-performance.md)
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../../ai/3d-human-modeling.md)

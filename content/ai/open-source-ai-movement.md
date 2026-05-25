@@ -97,3 +97,9 @@ DeepSeek-V3 achieved GPT-4o parity at ~5% of the training cost via architectural
 - Hugging Face Open LLM Leaderboard
 - Epoch AI: Compute Trends
 - AI Index Report: Open vs Closed Models
+
+## Related Articles
+
+- [AI Democratization: Open-Source Models, Low-Code AI, and Accessible Machine Learning](../ai-for-democratization.md)
+- [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../ai-air-quality.md)
+- [Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning](../audio-source-separation.md)

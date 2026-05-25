@@ -94,3 +94,9 @@ atomic_facts:
   - id: "fact-geography-003"
     statement: "Great Lakes: Superior, Michigan, Huron, Erie, Ontario — 21% of world's surface fresh water"
     confidence: "medium"
+
+## Related Articles
+
+- [South America Geography](../south-america-geography.md)
+- [African Geography](../african-geography.md)
+- [Asian Geography](../asian-geography.md)

@@ -91,3 +91,9 @@ Network neuroscience applies these techniques to the brain connectome — modeli
 - Network Science by Albert-László Barabási
 - NetworkX Python Library
 - Stanford CS224W: Machine Learning with Graphs
+
+## Related Articles
+
+- [AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime](../ai-for-fraud-detection.md)
+- [Backpropagation: The Engine of Neural Network Learning](../backpropagation.md)
+- [Few-Shot Learning: Prototypical Networks, MAML, and In-Context Adaptation](../few-shot-learning.md)

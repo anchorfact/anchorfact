@@ -92,3 +92,9 @@ Defense layers: firewall (packet filtering), IDS/IPS (intrusion detection/preven
 - OWASP Top 10
 - NIST Cybersecurity Framework
 - Krebs on Security
+
+## Related Articles
+
+- [AI in Cybersecurity: Threat Detection and LLM-Powered Defense](../../ai/ai-in-cybersecurity.md)
+- [Public Key Cryptography](../public-key-cryptography.md)
+- [Web Cryptography API](../web-cryptography-api.md)

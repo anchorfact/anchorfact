@@ -96,4 +96,10 @@ Mutex (mutual exclusion): only one thread in critical section. Semaphore: counti
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../../ai/3d-human-modeling.md)
+- [AI Art and Creativity: Generative Models and Authorship](../../ai/ai-art-and-creativity.md)
+- [AI Democratization: Open-Source Models, Low-Code AI, and Accessible Machine Learning](../../ai/ai-for-democratization.md)

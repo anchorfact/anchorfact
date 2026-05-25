@@ -88,3 +88,9 @@ Ocean AI: (1) Plastic detection -- satellite multispectral analysis (NIR bands) 
 
 ## Detailed Analysis
 The Ocean Cleanup: satellite + aerial surveys identify plastic hotspots. Lagrangian transport models predict accumulation zones. AI interceptors positioned at optimal locations (rivers, coastal areas) capture plastic before ocean entry. Bioacoustic AI: trained on annotated whale song datasets. CNN on spectrograms for species classification. Population monitoring: AI counts individual whales by unique vocal signatures over months. Allen Coral Atlas: Planet Dove satellites (3.7m resolution) + field validation. CNN segmentation produces global reef maps at 5m resolution, updated every 2 weeks. HAB prediction: environmental features (SST, chlorophyll-a, nutrients, wind) -> ML -> bloom probability. NOAA HAB forecasts cover Gulf of Mexico and Great Lakes. Key challenge: ocean data is sparse and expensive -- satellite coverage is limited by clouds, AUV/data is point measurements. ML must handle extreme data sparsity and extrapolate.
+
+## Related Articles
+
+- [AI for Surveillance Systems: Object Tracking, Anomaly Detection, and Intelligent Monitoring](../ai-surveillance-systems.md)
+- [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../ai-air-quality.md)
+- [AI for Video Surveillance: Intelligent Monitoring, Anomaly Detection, and Privacy-Preserving Analytics](../ai-for-video-surveillance.md)

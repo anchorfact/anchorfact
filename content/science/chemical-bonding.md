@@ -123,3 +123,9 @@ Electronegativity difference determines bond type: <0.5 = nonpolar covalent, 0.5
 - OpenStax Chemistry 2e (free)
 - Royal Society of Chemistry
 - Khan Academy: Chemistry
+
+## Related Articles
+
+- [AI for Drug Discovery: AlphaFold, Molecular Generation, and Generative Chemistry](../../ai/ai-for-drug-discovery.md)
+- [Protein Structure Prediction: AlphaFold, RoseTTAFold, and AI-Driven Structural Biology](../../ai/protein-structure-prediction.md)
+- [Corporate Finance: Capital Structure and Valuation](../../business/corporate-finance.md)

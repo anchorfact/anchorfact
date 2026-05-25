@@ -83,3 +83,9 @@ atomic_facts:
   - id: "fact-self-improvement-001"
     statement: "Avoid: analysis paralysis, sunk cost fallacy, confirmation bias"
     confidence: "medium"
+
+## Related Articles
+
+- [AI Decision Support Systems: Clinical CDSS, Business Intelligence, and Augmented Decision-Making](../../ai/decision-support-systems.md)
+- [The Psychology of Decision Making](../decision-making-psychology.md)
+- [Deep Reinforcement Learning Algorithms: PPO, SAC, Dreamer, and Decision Transformer](../../ai/deep-reinforcement-learning-algorithms.md)

@@ -109,3 +109,9 @@ Leaky ReLU (small slope for x<0) and ELU address the "dying ReLU" problem where 
 - PyTorch Documentation: Activation Functions
 - Distill.pub: Visualizing Activation Functions
 - Papers With Code: Activation Functions Benchmark
+
+## Related Articles
+
+- [Kolmogorov-Arnold Networks (KANs): Learnable Activation Functions as MLP Alternatives](../kolmogorov-arnold-networks.md)
+- [AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime](../ai-for-fraud-detection.md)
+- [Convolutional Neural Networks (CNN)](../convolutional-neural-networks-cnn.md)

@@ -91,3 +91,9 @@ Legal-specific LLMs: LegalBERT (domain-adapted BERT), SaulLM (7B & 14B parameter
 - Stanford Legal Design Lab (AI + Access to Justice)
 - Harvey AI (Legal LLM startup)
 - ICAIL: International Conference on AI and Law
+
+## Related Articles
+
+- [AI for Regulatory Technology (RegTech): Compliance Automation, AML, and Regulatory Intelligence](../ai-for-regtech-compliance.md)
+- [AI for Legal Contracts: Automated Drafting, Clause Analysis, and Due Diligence](../ai-legal-contracts.md)
+- [AI for Legal Research: Case Law Search, Citation Analysis, and Litigation Analytics](../ai-legal-research.md)

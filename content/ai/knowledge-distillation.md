@@ -122,3 +122,9 @@ Temperature: higher T in softmax softens probability distribution, revealing mor
 ## Further Reading
 
 - [Distilling the Knowledge in a Neural Network (Hinton, Vinyals, Dean, 2015)](https://arxiv.org/abs/1503.02531)
+
+## Related Articles
+
+- [AI for Team Collaboration: Smart Meetings, Knowledge Sharing, and Collaborative Intelligence](../ai-team-collaboration.md)
+- [Knowledge Graph Reasoning: Embedding-Based Link Prediction, Logical Inference, and Neurosymbolic Methods](../knowledge-graph-reasoning.md)
+- [Model Compression: Pruning, Quantization, and Distillation](../model-compression.md)

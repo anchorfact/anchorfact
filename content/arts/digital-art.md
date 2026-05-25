@@ -84,3 +84,9 @@ Generative art: artist defines rules/algorithms, computer executes (Manfred Mohr
 ## Further Reading
 
 - [Digital Art (Christiane Paul, 3rd Ed)](https://thamesandhudson.com/digital-art-9780500204238)
+
+## Related Articles
+
+- [AI for Cultural Heritage: Digital Preservation, Art Attribution, and Museum Intelligence](../../ai/ai-for-cultural-heritage.md)
+- [Contemporary Art Trends and the Digital Turn](../contemporary-art-trends.md)
+- [Digital Art and New Media Art History](../digital-art-history.md)

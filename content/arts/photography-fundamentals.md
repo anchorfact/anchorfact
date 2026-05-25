@@ -123,3 +123,9 @@ Sensor sensitivity to light. Low ISO (100-400): clean, noise-free images in brig
 - **Blue hour**: Soft, cool light during twilight for cityscapes
 - **Overcast**: Diffuse, shadowless light ideal for portraits and macro
 - **Hard light**: Strong directional shadows for dramatic contrast
+
+## Related Articles
+
+- [AI Music Composition: Generative Music, Style Imitation, and Creative AI Audio](../../ai/ai-music-composition.md)
+- [Photography History](../photography-history.md)
+- [Poetry Fundamentals](../poetry-fundamentals.md)

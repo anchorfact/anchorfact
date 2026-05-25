@@ -113,3 +113,9 @@ Construction AI stack: (1) Safety monitoring -- CCTV cameras + computer vision d
 
 ## Detailed Analysis
 YOLOv8/DETR for construction: fine-tuned on construction-specific datasets (SODA: site surveillance; MOCS: multi-object construction scenes). Tasks: worker detection, PPE classification (hard hat, vest, glasses, boots), equipment detection (crane, excavator), and hazard zone monitoring. Automation in Construction (Elsevier) special issues (2023-2025) document deployment at major projects (Crossrail London, NEOM Saudi Arabia). BIM + AI: OpenSpace and DroneDeploy automatically align drone imagery to BIM coordinates. 4D BIM adds time dimension -- visualizes construction sequence, compares planned vs actual at each stage. Generative design: AI proposes optimal construction sequences given spatial constraints, crane positions, and material delivery schedules. Key challenges: construction sites are dynamic and unstructured (unlike factory floors), weather degrades camera images, and dust/mud obscure sensors. Edge AI processing on-site (no cloud dependency) addresses connectivity in remote sites.
+
+## Related Articles
+
+- [AI for Workplace Safety: Computer Vision Monitoring, Fall Detection, and Hazard Prevention](../ai-workplace-safety.md)
+- [AI Digital Twins for Healthcare: Patient-Specific Simulation, Treatment Planning, and Virtual Organs](../ai-digital-twins-healthcare.md)
+- [AI for Digital Twins: Real-Time Simulation, Predictive Maintenance, and System Optimization](../ai-for-digital-twins.md)

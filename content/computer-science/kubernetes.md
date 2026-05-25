@@ -88,3 +88,7 @@ Kubernetes (K8s) is an open-source container orchestration platform originally d
 
 - [Kubernetes Docs](https://kubernetes.io/docs/): Official documentation
 - [Borg Paper](https://queue.acm.org/detail.cfm?id=2898444): The system that inspired K8s
+
+## Related Articles
+
+- [Kubernetes Pod & Service](../kubernetes-pod-service.md)

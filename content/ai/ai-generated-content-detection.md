@@ -95,3 +95,9 @@ Deepfake detection: (A) Image — face artifacts (inconsistent eye reflections, 
 - SynthID: Google DeepMind Watermarking
 - C2PA/Content Authenticity Initiative (Adobe)
 - GLTR: Visual Forensic Tool for AI Text (Harvard/IBM)
+
+## Related Articles
+
+- [AI for Social Media: Misinformation Detection, Hate Speech Moderation, and Content Safety](../ai-for-social-media.md)
+- [AI Synthetic Media: Digital Humans, Virtual Influencers, and AI-Generated Video Personas](../ai-synthetic-media-generation.md)
+- [AI Content Authenticity: Watermarking and Detection](../ai-content-authenticity.md)

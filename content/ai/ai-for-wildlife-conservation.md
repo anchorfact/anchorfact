@@ -94,3 +94,9 @@ Biodiversity AI beyond camera traps: (A) Bioacoustics — passive acoustic monit
 - Wildlife Insights: Google's AI-Powered Camera Trap Platform
 - iNaturalist: Citizen Science + AI Species Identification
 - Rainforest Connection: AI for Anti-Logging
+
+## Related Articles
+
+- [AI for Land Use Classification: Satellite Image Segmentation, Urban Expansion Mapping, and Agricultural Monitoring](../ai-land-use-classification.md)
+- [AI Social Listening: Brand Monitoring, Sentiment Analysis, and Consumer Insights](../ai-social-listening.md)
+- [Affective Computing: Multimodal Emotion Recognition, Sentiment Analysis, and Empathetic AI](../affective-computing.md)

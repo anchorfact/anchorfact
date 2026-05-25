@@ -86,3 +86,9 @@ atomic_facts:
   - id: "fact-self-improvement-002"
     statement: "Forgetting curve (Ebbinghaus, 1885): we forget 50% within an hour if not reinforced"
     confidence: "medium"
+
+## Related Articles
+
+- [Meta-Learning: Learning to Learn with MAML and Reptile](../../ai/meta-learning.md)
+- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../../ai/adversarial-machine-learning.md)
+- [AI Benchmarks: MMLU, SWE-bench, and How We Measure Intelligence](../../ai/ai-benchmarks-and-evaluation.md)

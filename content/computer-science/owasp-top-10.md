@@ -96,4 +96,8 @@ The OWASP Top 10 is the de facto standard for web application security awareness
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [OWASP API Security Top 10](../owasp-api-security-top-10.md)

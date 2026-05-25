@@ -120,4 +120,10 @@ Chomsky hierarchy: Type 3 (regular, regex, DFA/NFA), Type 2 (context-free, progr
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
+- [Music Theory Basics](../../arts/music-theory-basics.md)
+- [Leadership Theory and Organizational Behavior](../../business/leadership-and-organizational-behavior.md)

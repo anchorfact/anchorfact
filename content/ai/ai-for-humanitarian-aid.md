@@ -93,3 +93,9 @@ Key technologies: (1) Satellite damage assessment -- Deep learning models (U-Net
 - xView2 Challenge: xview2.org (DARPA building damage assessment benchmark)
 - AIDR: aidr.qcri.org (Qatar Computing Research Institute)
 - UN Global Pulse / Google Skai: AI for crisis response
+
+## Related Articles
+
+- [AI for Digital Marketing: Personalization, Campaign Optimization, and Customer Analytics](../ai-digital-marketing.md)
+- [AI for Disaster Prediction: Earthquake Forecasting, Flood Detection, and Early Warning Systems](../ai-disaster-prediction.md)
+- [AI for Fleet Management: Predictive Maintenance, Route Optimization, and Telematics](../ai-fleet-management.md)

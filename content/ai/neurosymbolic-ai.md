@@ -106,3 +106,9 @@ Key applications: scientific discovery (AI Feynman deduces physical laws from da
 - "The Third Wave of AI" (DARPA)
 - IBM Neuro-Symbolic AI Lab
 - PyReason: Neuro-Symbolic Framework
+
+## Related Articles
+
+- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../adversarial-machine-learning.md)
+- [Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning](../agentic-ai.md)
+- [AI for Drug Repurposing: Identifying New Uses for Existing Drugs Through Machine Learning](../ai-drug-repurposing.md)

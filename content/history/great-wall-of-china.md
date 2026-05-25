@@ -100,3 +100,7 @@ Ming Dynasty sections (near Beijing) are the most visited (Badaling, Mutianyu). 
 ## Further Reading
 
 - [The Great Wall (John Man)](https://www.hachettebookgroup.com/titles/john-man/the-great-wall/9780306817670/)
+
+## Related Articles
+
+- [Great Depression](../great-depression.md)

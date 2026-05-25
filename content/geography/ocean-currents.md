@@ -91,3 +91,9 @@ atomic_facts:
   - id: "fact-geography-002"
     statement: "Deep ocean circulation (thermohaline) spans the globe — the 'global conveyor belt.' Major currents: Gulf Stream (warm, North Atlantic, moderates Europe's climate), Kuroshio (Pacific), Antarctic Circumpolar (largest, 130 million m³/s)"
     confidence: "medium"
+
+## Related Articles
+
+- [Ocean Currents: The Global Conveyor Belt](../ocean-currents-the-global-conveyor-belt.md)
+- [AI for Ocean Monitoring: Marine Life Detection, Plastic Pollution Tracking, and Oceanographic AI](../../ai/ai-for-ocean-monitoring.md)
+- [Ocean Life](../../science/ocean-life.md)

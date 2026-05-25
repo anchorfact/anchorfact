@@ -88,3 +88,9 @@ Fleet AI stack: (1) Telematics -- GPS tracking (location, speed, route), engine 
 
 ## Detailed Analysis
 Samsara AI: processes trillions of IoT data points from 40,000+ fleet customers. Features: vehicle gateway (OBD-II + camera + GPS), driver safety scoring (FICO-like safety score), fuel efficiency analytics (MPG per driver/route/vehicle), and compliance (ELD mandate -- electronic logging). Predictive maintenance: Remaining Useful Life (RUL) models -- LSTM on time-series sensor data. Fleet electrification: AI determines optimal EV deployment (which routes can be electrified now), charging schedule (minimize cost, ensure readiness), and battery health monitoring. UPS ORION: saves 10M gallons fuel/year through AI route optimization. Key challenge: small fleets (5-50 vehicles) lack data volume for custom ML -- pre-trained models from large fleets (FedEx, Amazon) transfer via fleet-level transfer learning.
+
+## Related Articles
+
+- [AI for Digital Twins: Real-Time Simulation, Predictive Maintenance, and System Optimization](../ai-for-digital-twins.md)
+- [AI for Manufacturing: Predictive Maintenance, Quality Control, and Digital Twins](../ai-for-manufacturing.md)
+- [AI for Smart Homes: Ambient Intelligence, Energy Optimization, and Predictive Home Automation](../ai-for-smart-homes.md)

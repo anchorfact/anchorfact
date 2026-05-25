@@ -106,3 +106,9 @@ FastSpeech 2 (Microsoft) enables parallel, non-autoregressive generation for rea
 - Hugging Face: Text-to-Speech Models
 - Coqui.ai TTS
 - ISCA Speech Synthesis Workshop
+
+## Related Articles
+
+- [AI Podcast Generation: Text-to-Speech Narration, AI Hosts, and Automated Audio Content](../ai-podcast-generation.md)
+- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../ai-call-center.md)
+- [AI for Language Learning: Intelligent Tutoring, Speech Assessment, and Personalized Curriculum](../ai-for-language-learning.md)

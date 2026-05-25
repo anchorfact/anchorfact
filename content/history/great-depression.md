@@ -110,3 +110,7 @@ Causes: stock market speculation, bank failures, reduction in purchasing power, 
 ## Further Reading
 
 - [The Great Depression: A Diary (Benjamin Roth)](https://www.publicaffairsbooks.com/titles/benjamin-roth/the-great-depression/9781586489014/)
+
+## Related Articles
+
+- [Great Wall of China](../great-wall-of-china.md)

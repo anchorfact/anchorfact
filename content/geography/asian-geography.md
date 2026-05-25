@@ -87,3 +87,9 @@ Himalayas: India-Eurasia collision, still rising 5mm/year. Tibet: 'roof of the w
 ## Further Reading
 
 - [A Geography of Asia (Dudley Stamp, updated)](https://www.routledge.com/Asia-A-Concise-Geography/Stamp/p/book/9780367178581)
+
+## Related Articles
+
+- [African Geography](../african-geography.md)
+- [North America Geography](../north-america-geography.md)
+- [Oceania Geography](../oceania-geography.md)

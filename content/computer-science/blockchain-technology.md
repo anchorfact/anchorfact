@@ -112,3 +112,9 @@ Block: transactions + timestamp + hash of previous block. Changing any past bloc
 ## Further Reading
 
 - [Bitcoin: A Peer-to-Peer Electronic Cash System (Nakamoto, 2008)](undefined)
+
+## Related Articles
+
+- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../../ai/ai-blockchain.md)
+- [AI for Regulatory Technology (RegTech): Compliance Automation, AML, and Regulatory Intelligence](../../ai/ai-for-regtech-compliance.md)
+- [AI for Restaurant Technology: Order Automation, Kitchen Optimization, and Personalized Dining](../../ai/ai-restaurant-tech.md)

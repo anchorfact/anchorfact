@@ -108,3 +108,9 @@ The Amazon River discharges 209,000 m³/s into the Atlantic — more than the ne
 - National Geographic: South America Physical Geography
 - UNESCO World Heritage: Amazon Basin
 - NASA Earth Observatory: Andes Satellite Imagery
+
+## Related Articles
+
+- [South America Geography](../south-america-geography.md)
+- [AI for Wildlife Conservation: Camera Trap Analysis, Species Classification, and Biodiversity Monitoring](../../ai/ai-for-wildlife-conservation.md)
+- [African Geography](../african-geography.md)

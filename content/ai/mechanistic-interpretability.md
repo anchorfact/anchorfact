@@ -124,3 +124,9 @@ Circuit discovery workflow: (1) Activation patching — intervene on specific mo
 - Transformer Circuits Thread (Anthropic, 2021-2024)
 - Distill.pub: Feature Visualization & Circuits
 - SAE-Vis: Sparse Autoencoder Visualizer (MIT)
+
+## Related Articles
+
+- [Backpropagation: The Engine of Neural Network Learning](../backpropagation.md)
+- [Computational Neuroscience: AI Models of Brain Circuits, Connectomics, and Neural Computation](../computational-neuroscience.md)
+- [Neural Network Basics](../neural-network-basics.md)

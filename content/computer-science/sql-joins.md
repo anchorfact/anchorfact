@@ -79,3 +79,9 @@ INNER JOIN: `SELECT * FROM orders JOIN customers ON orders.cust_id = customers.i
 ## Further Reading
 
 - [PostgreSQL Documentation — Joins](undefined)
+
+## Related Articles
+
+- [Text-to-SQL: Natural Language Database Querying with Large Language Models](../../ai/text-to-sql.md)
+- [SQL Injection](../sql-injection.md)
+- [SQL (Structured Query Language)](../sql.md)

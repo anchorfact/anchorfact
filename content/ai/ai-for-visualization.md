@@ -97,3 +97,9 @@ AI for visualization (AI4VIS) pipeline: Raw data -> (1) Data characterization --
 
 ## Detailed Analysis
 VIS+AI (Springer 2023): AI4VIS subfields: data transformation (AI cleans/reshapes), visual mapping (AI chooses encodings), visual generation (AI writes visualization code), and insight communication (AI generates narratives). VIS4AI: visualizing model internals (activation atlases, feature visualization), model comparison dashboards, and embedding projectors (TensorBoard, What-If Tool). AVA (2024): end-to-end pipeline from raw CSV to interactive dashboard with insights. Data preprocessing (missing value imputation, outlier detection, normalization) -> empirical recommendation (data-to-vis mapping) -> insight recommendation (statistical + ML-based pattern detection) -> narrative generation (template-based + LLM). NL2VIS: "Show sales trends over 5 years" -> LLM selects line chart with time on x-axis -> generates code. Multimodal chart understanding (2024-2025): Qwen3-VL, GPT-4V can interpret existing charts -- answering "What was the peak quarter?" from a chart image. Key challenges: (1) Hallucinated insights -- LLMs "find" patterns that do not exist; (2) Domain specificity -- scientific visualization (volume rendering, flow vis) requires specialized AI; (3) Accessibility -- visualization is inherently visual, creating barriers for blind users.
+
+## Related Articles
+
+- [AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation](../ai-content-creation.md)
+- [AI for Drug Discovery: AlphaFold, Molecular Generation, and Generative Chemistry](../ai-for-drug-discovery.md)
+- [AI for Software Testing: Automated Test Generation, Fuzzing, and Quality Assurance](../ai-for-software-testing.md)

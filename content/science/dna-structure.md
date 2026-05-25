@@ -120,3 +120,9 @@ Nucleotides: Adenine (A), Thymine (T), Guanine (G), Cytosine (C). A pairs with T
 ## Further Reading
 
 - [The Double Helix (James Watson, 1968)](https://www.simonandschuster.com/books/The-Double-Helix/James-D-Watson/9780743216302)
+
+## Related Articles
+
+- [Protein Structure Prediction: AlphaFold, RoseTTAFold, and AI-Driven Structural Biology](../../ai/protein-structure-prediction.md)
+- [Corporate Finance: Capital Structure and Valuation](../../business/corporate-finance.md)
+- [Array Data Structure](../../computer-science/array-data-structure.md)

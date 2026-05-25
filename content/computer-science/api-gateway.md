@@ -128,3 +128,9 @@ Popular gateways: Kong (Lua/OpenResty), AWS API Gateway, Azure API Management, A
 ## Further Reading
 
 - [Kong Gateway Documentation](https://docs.konghq.com/)
+
+## Related Articles
+
+- [Broadcast Channel API](../broadcast-channel-api.md)
+- [Canvas API](../canvas-api.md)
+- [Clipboard API](../clipboard-api.md)

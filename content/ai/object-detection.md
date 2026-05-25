@@ -108,3 +108,9 @@ Anchor boxes were the dominant approach for years — predefined bounding box te
 - Papers With Code: Object Detection
 - YOLO Official Documentation (Ultralytics)
 - MMDetection Open-source Toolbox
+
+## Related Articles
+
+- [AI for Satellite Imagery: Object Detection, Change Detection, and Global Monitoring](../ai-satellite-imagery.md)
+- [AI for Surveillance Systems: Object Tracking, Anomaly Detection, and Intelligent Monitoring](../ai-surveillance-systems.md)
+- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../ai-call-center.md)

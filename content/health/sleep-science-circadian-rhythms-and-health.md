@@ -44,3 +44,9 @@ The circadian clock is synchronized by light via intrinsically photosensitive re
 
 ---
 > 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。
+
+## Related Articles
+
+- [Sleep Science and Circadian Rhythms](../sleep-science-and-circadian-rhythms.md)
+- [Epidemiology: The Science of Public Health](../epidemiology-fundamentals.md)
+- [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../../ai/ai-air-quality.md)

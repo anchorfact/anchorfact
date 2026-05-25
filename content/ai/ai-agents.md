@@ -123,3 +123,8 @@ According to the 2026 State of AI Agents Report (Rivista.ai, December 2025), 81%
 - [2025-2026 Agent Technology Report](https://zaobi.tech/pages/ai-tech/agent-tech-report-2025/index.html): Comprehensive Chinese-language analysis
 - [AI Agent Systems Survey (arXiv 2601.01743)](https://arxiv.org/html/2601.01743v1): Academic survey of architectures and evaluation
 - [MCP Specification](https://modelcontextprotocol.io/): Standard agent-tool integration protocol
+
+## Related Articles
+
+- [AI for Customer Service: Conversational Agents, Ticket Routing, and Intelligent Contact Centers](../ai-customer-service.md)
+- [AI Regulation: The 2024-2026 Global Landscape](../ai-regulation-landscape.md)

@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: ai
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-22'
 generation_method: human_only
 conflict_of_interest: none_declared
@@ -101,6 +101,14 @@ primary_sources:
     year: 2022
     doi: 10.1145/3530811
     institution: ACM Computing Surveys
+  - title: Formal Algorithms for Transformers
+    authors:
+      - Phuong,M.
+      - Hutter,M.
+    type: academic_paper
+    year: 2022
+    url: https://arxiv.org/abs/2207.09238
+    institution: DeepMind/arXiv
 secondary_sources:
   - title: Sequence to Sequence Learning with Neural Networks
     authors:
@@ -118,6 +126,7 @@ secondary_sources:
     url: https://web.stanford.edu/class/cs224n/
     institution: Stanford University
 ---
+
 
 
 
@@ -202,3 +211,8 @@ Attention expanded beyond NLP rapidly:
 - [Bahdanau et al. (2014)](https://arxiv.org/abs/1409.0473): Original attention paper (40K+ citations)
 - [Luong et al. (2015)](https://arxiv.org/abs/1508.04025): Dot-product attention and global vs. local
 - [Stanford CS224n: Attention Lecture](https://web.stanford.edu/class/cs224n/): Lecture slides and videos
+
+## Related Articles
+
+- [Attention Mechanisms: Scaled Dot-Product to FlashAttention](../attention-mechanisms-deep-dive.md)
+- [Attention vs. Self-Attention](../attention-vs-self-attention.md)

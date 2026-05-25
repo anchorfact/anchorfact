@@ -66,3 +66,9 @@ Key metrics: incidence (new cases/period), prevalence (existing cases). Confound
 - WHO Global Health Observatory
 - CDC Morbidity and Mortality Weekly Report
 - The Lancet Infectious Diseases
+
+## Related Articles
+
+- [AI for Public Health: Disease Surveillance, Outbreak Prediction, and Population Health Analytics](../../ai/ai-public-health.md)
+- [Public Health Basics](../public-health-basics.md)
+- [Sleep Science: Circadian Rhythms and Health](../sleep-science-circadian-rhythms-and-health.md)

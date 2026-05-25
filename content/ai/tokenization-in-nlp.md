@@ -89,3 +89,9 @@ BPE (Byte-Pair Encoding): iteratively merge most frequent adjacent token pairs. 
 ## Further Reading
 
 - [Neural Machine Translation of Rare Words with Subword Units (Sennrich et al., 2016)](https://arxiv.org/abs/1508.07909)
+
+## Related Articles
+
+- [Advanced NLP: Tokenization, Embeddings, and Decoding](../nlp-advanced-techniques.md)
+- [AI for Electronic Health Records: Clinical NLP, Coding Automation, and Physician Burnout Reduction](../ai-electronic-health-records.md)
+- [Low-Resource NLP: Multilingual Models, Endangered Language Preservation, and Translation](../low-resource-nlp.md)

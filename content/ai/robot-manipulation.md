@@ -103,3 +103,9 @@ Dexterous hands: multi-fingered hands (Shadow Hand: 24 DOF, Allegro: 16 DOF, LEA
 - Dex-Net: Deep Grasping Dataset (UC Berkeley)
 - NVIDIA Isaac Gym: GPU-Accelerated RL Simulation
 - GelSight/DIGIT: Optical Tactile Sensors
+
+## Related Articles
+
+- [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../3d-generation-gaussian-splatting.md)
+- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../ai-call-center.md)
+- [AI for Augmented Reality: Real-Time Scene Understanding, Spatial Computing, and Contextual Overlays](../ai-for-augmented-reality.md)

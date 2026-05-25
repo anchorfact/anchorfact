@@ -100,3 +100,9 @@ ViTPose (NeurIPS 2022): key insight is simplicity -- no task-specific decoder, j
 - MMPose: Open-Source Pose Estimation Toolbox (OpenMMLab)
 - COCO Keypoint Dataset (200K images, 250K persons)
 - OpenPose: Real-Time Multi-Person 2D Pose Detection
+
+## Related Articles
+
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../3d-human-modeling.md)
+- [AI for Ocean Monitoring: Marine Life Detection, Plastic Pollution Tracking, and Oceanographic AI](../ai-for-ocean-monitoring.md)
+- [AI Language Translation and Interpretation: LLM-Based Translation, Simultaneous Interpretation, and Quality Estimation](../ai-language-translation-interpretation.md)

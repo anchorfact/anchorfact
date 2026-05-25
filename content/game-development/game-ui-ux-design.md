@@ -80,3 +80,9 @@ Every player action needs clear feedback: button press → animation change → 
 - Remappable controls
 - Audio cues for visual information
 - Hold vs. toggle options for repetitive actions
+
+## Related Articles
+
+- [Game Audio Systems and Sound Design](../game-audio-systems.md)
+- [Game Design Document (GDD)](../game-design-document-gdd.md)
+- [Real-Time Strategy (RTS) Game Design](../real-time-strategy-rts-game-design.md)
