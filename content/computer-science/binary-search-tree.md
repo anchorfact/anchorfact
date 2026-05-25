@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -23,7 +23,7 @@ atomic_facts:
     source_url: https://dl.acm.org/
     confidence: medium
   - id: fact-computer-science-002
-    statement: "Self-balancing: AVL (strict balance, ~1.44 log n height), Red-Black (relaxed, ≤2 log n height, fewer rotations)."
+    statement: 'Self-balancing: AVL (strict balance, ~1.44 log n height), Red-Black (relaxed, ≤2 log n height, fewer rotations).'
     source_title: ACM Digital Library
     source_url: https://dl.acm.org/
     confidence: medium
@@ -48,13 +48,28 @@ primary_sources:
       - Wayne K.
     institution: Addison-Wesley
     url: https://algs4.cs.princeton.edu/
-  - title: "Self-Balancing Data Structures: A 2025 Comprehensive Survey"
+  - title: 'Self-Balancing Data Structures: A 2025 Comprehensive Survey'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.ds
+  - title: Introduction to Algorithms (4th Edition)
+    authors:
+      - Cormen, T.H.
+      - Leiserson, C.E.
+      - Rivest, R.L.
+      - Stein, C.
+    type: book
+    year: 2022
+    institution: MIT Press
+  - title: 'The Art of Computer Programming, Vol. 3: Sorting and Searching (2nd Edition)'
+    authors:
+      - Knuth, D.E.
+    type: book
+    year: 1998
+    institution: Addison-Wesley
 secondary_sources:
   - title: ACM Digital Library
     type: repository
@@ -71,7 +86,7 @@ secondary_sources:
     year: 1996
     url: https://mitpress.mit.edu/sites/default/files/sicp/
     institution: MIT Press
-  - title: "Self-Balancing Tree Data Structures: A 2025 Comprehensive Survey"
+  - title: 'Self-Balancing Tree Data Structures: A 2025 Comprehensive Survey'
     type: survey_paper
     year: 2025
     authors:
@@ -86,6 +101,7 @@ secondary_sources:
     institution: Communications of the ACM
     url: https://doi.org/10.1145/cacm.2025.datastructures
 ---
+
 ## TL;DR
 
 A BST stores keys in left < parent < right order. Average O(log n) operations when balanced, degrade to O(n) if unbalanced. Self-balancing variants: AVL, Red-Black, B-tree. BST is foundation for sorted maps/sets.

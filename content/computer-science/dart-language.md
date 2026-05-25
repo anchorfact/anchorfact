@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 derived_from_human_seed: true
 conflict_of_interest: none_declared
@@ -21,7 +21,7 @@ atomic_facts:
     source_url: https://dart.dev/guides
     confidence: medium
   - id: fact-computer-science-002
-    statement: "Dart JIT: hot reload during development; AOT: fast production startup."
+    statement: 'Dart JIT: hot reload during development; AOT: fast production startup.'
     source_title: Dart Documentation
     source_url: https://dart.dev/guides
     confidence: medium
@@ -46,13 +46,24 @@ primary_sources:
       - Buckett C.
     institution: Manning
     url: https://www.manning.com/dart/
-  - title: "Modern Cross-Platform Development: Flutter, Dart, and React Native (2025)"
+  - title: 'Modern Cross-Platform Development: Flutter, Dart, and React Native (2025)'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.crossplatform
+  - title: The Dart Programming Language
+    authors:
+      - Bracha, G.
+    type: book
+    year: 2015
+    institution: Addison-Wesley
+  - title: Dart Language Specification (v3.x)
+    type: standard
+    year: 2024
+    url: https://dart.dev/guides/language/spec
+    institution: Google
 secondary_sources:
   - title: React Documentation
     type: documentation
@@ -70,6 +81,7 @@ secondary_sources:
     url: https://mitpress.mit.edu/sites/default/files/sicp/
     institution: MIT Press
 ---
+
 ## TL;DR
 
 Dart (Google, 2011) is an object-oriented language optimized for client development — primarily Flutter apps. Dart 3 (2023) introduced 100% sound null safety, records, patterns, and class modifiers. Compiles to native ARM/x86 (AOT) for mobile, and JavaScript for web.

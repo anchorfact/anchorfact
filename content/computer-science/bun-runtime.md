@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 derived_from_human_seed: true
 conflict_of_interest: none_declared
@@ -19,7 +19,7 @@ atomic_facts:
     source_url: https://bun.sh/docs/
     confidence: medium
   - id: fact-computer-science-02
-    statement: "bun install: up to 25x faster than npm"
+    statement: 'bun install: up to 25x faster than npm'
     source_title: Bun Documentation
     source_url: https://bun.sh/docs/
     confidence: medium
@@ -51,6 +51,16 @@ primary_sources:
       - multiple
     institution: IEEE Software
     url: https://doi.org/10.1109/ms.2025.js
+  - title: Bun — A Fast All-in-One JavaScript Runtime
+    type: official_doc
+    year: 2024
+    url: https://bun.sh/docs
+    institution: Oven
+  - title: JavaScriptCore (JSC) — WebKit
+    type: official_doc
+    year: 2024
+    url: https://webkit.org/projects/javascriptcore/
+    institution: Apple / WebKit
 secondary_sources:
   - title: Effective TypeScript (2nd Edition)
     authors:
@@ -70,6 +80,7 @@ secondary_sources:
     url: https://mitpress.mit.edu/sites/default/files/sicp/
     institution: MIT Press
 ---
+
 ## TL;DR
 
 Bun (Jarred Sumner, 2022) is an all-in-one JavaScript runtime, bundler, test runner, and package manager written in Zig. It aims to replace Node.js with dramatically faster performance (4x+ faster than Node in benchmarks). Uses JavaScriptCore (Safari's engine) instead of V8.

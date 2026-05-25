@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -51,13 +51,24 @@ primary_sources:
       - Beaulieu A.
     institution: O'Reilly Media
     url: https://www.oreilly.com/sql/
-  - title: "SQL in the Age of LLMs: Query Generation and Optimization (2025)"
+  - title: 'SQL in the Age of LLMs: Query Generation and Optimization (2025)'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.sql
+  - title: A Relational Model of Data for Large Shared Data Banks
+    authors:
+      - Codd, E.F.
+    type: academic_paper
+    year: 1970
+    doi: 10.1145/362384.362685
+    institution: IBM / Communications of the ACM
+  - title: ISO/IEC 9075:2023 — Information Technology — Database Languages — SQL
+    type: standard
+    year: 2023
+    institution: ISO/IEC
 secondary_sources:
   - title: MDN Web Docs — HTTP
     type: documentation
@@ -65,6 +76,7 @@ secondary_sources:
     url: https://developer.mozilla.org/en-US/docs/Web/HTTP
     institution: Mozilla
 ---
+
 ## TL;DR
 
 SQL (Structured Query Language) is the standard programming language for managing relational databases. Designed by Donald D. Chamberlin and Raymond F. Boyce at IBM in 1974 and standardized by ANSI in 1986 and ISO in 1987, SQL remains — over 50 years later — the dominant database query language, used by virtually every application that stores structured data. PostgreSQL, MySQL, SQLite, Oracle, and SQL Server collectively power the majority of the world's transactional data systems.

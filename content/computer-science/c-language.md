@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 derived_from_human_seed: true
 conflict_of_interest: none_declared
@@ -18,7 +18,7 @@ atomic_facts:
     source_url: https://www.iso.org/standard/82075.html
     confidence: high
   - id: fact-computer-science-002
-    statement: "It is the foundation of modern computing: Unix/Linux kernels, Windows, macOS, embedded systems, and the reference implementations of Python, Ruby, and Node."
+    statement: 'It is the foundation of modern computing: Unix/Linux kernels, Windows, macOS, embedded systems, and the reference implementations of Python, Ruby, and Node.'
     source_url: https://www.iso.org/standard/82075.html
     confidence: high
   - id: fact-computer-science-003
@@ -57,13 +57,24 @@ primary_sources:
       - Ritchie D.M.
     institution: Prentice Hall
     url: https://www.informit.com/store/c-programming-language-9780131103627
-  - title: "Memory-Safe Systems Programming: C, Rust, and Zig in 2025"
+  - title: 'Memory-Safe Systems Programming: C, Rust, and Zig in 2025'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.systems
+  - title: The C Programming Language (2nd Edition)
+    authors:
+      - Kernighan, B.W.
+      - Ritchie, D.M.
+    type: book
+    year: 1988
+    institution: Prentice Hall
+  - title: ISO/IEC 9899:2024 — Programming Languages — C
+    type: standard
+    year: 2024
+    institution: ISO/IEC
 secondary_sources:
   - title: The C Programming Language (Kernighan & Ritchie, 2nd Edition)
     type: textbook
@@ -80,7 +91,7 @@ secondary_sources:
       - ISO/IEC JTC1/SC22/WG14
     institution: ISO
     url: https://www.iso.org/standard/82075.html
-  - title: "C Programming: A Modern Approach (King, 2nd Edition)"
+  - title: 'C Programming: A Modern Approach (King, 2nd Edition)'
     type: textbook
     year: 2008
     authors:
@@ -94,22 +105,23 @@ secondary_sources:
       - Ritchie, Dennis M.
     institution: Bell Labs / ACM HOPL-II
     url: https://doi.org/10.1145/154766.155580
-  - title: "The C Programming Language in Modern Systems: A 2025 Retrospective"
+  - title: 'The C Programming Language in Modern Systems: A 2025 Retrospective'
     type: article
     year: 2025
     authors:
       - multiple
     institution: IEEE Computer
     url: https://doi.org/10.1109/mc.2025.c2025
-  - title: "Memory Safety in C: Static Analysis and Formal Verification Advances (2025 Survey)"
+  - title: 'Memory Safety in C: Static Analysis and Formal Verification Advances (2025 Survey)'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.c
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 
 C is a general-purpose, procedural programming language created by Dennis Ritchie at Bell Labs between 1969-1973. It is the foundation of modern computing: Unix/Linux kernels, Windows, macOS, embedded systems, and the reference implementations of Python, Ruby, and Node.js are written in C. Standardized by ISO (C23 is the latest, 2024), C remains essential for systems programming, operating systems, and performance-critical applications where direct memory access and minimal runtime overhead are required.

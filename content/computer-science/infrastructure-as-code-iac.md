@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 derived_from_human_seed: true
 conflict_of_interest: none_declared
@@ -39,22 +39,34 @@ primary_sources:
     year: 2026
     url: https://developer.hashicorp.com/terraform/docs
     institution: HashiCorp
-  - title: "Infrastructure as Code: Dynamic Systems for the Cloud Age (3rd Edition, 2025)"
+  - title: 'Infrastructure as Code: Dynamic Systems for the Cloud Age (3rd Edition, 2025)'
     type: book
     year: 2025
     authors:
       - Morris K.
     institution: O'Reilly Media
     url: https://www.oreilly.com/iac/
-  - title: "IaC and GitOps: State of Practice 2025"
+  - title: 'IaC and GitOps: State of Practice 2025'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.iac
+  - title: Infrastructure as Code (2nd Edition)
+    authors:
+      - Morris, K.
+    type: book
+    year: 2020
+    institution: O'Reilly Media
+  - title: 'Terraform: Up and Running (3rd Edition)'
+    authors:
+      - Brikman, Y.
+    type: book
+    year: 2022
+    institution: O'Reilly Media
 secondary_sources:
-  - title: "Ansible: Up and Running (3rd Edition)"
+  - title: 'Ansible: Up and Running (3rd Edition)'
     authors:
       - Hochstein, Lorin
       - Moser, Rene
@@ -73,6 +85,7 @@ secondary_sources:
     url: https://mitpress.mit.edu/sites/default/files/sicp/
     institution: MIT Press
 ---
+
 ## TL;DR
 
 IaC manages infrastructure through machine-readable definition files rather than manual configuration. Tools: Terraform (HCL, multi-cloud), Pulumi (general-purpose languages), CloudFormation (AWS-native), Ansible (configuration management). Version-controlled infrastructure enables reproducibility, code review, and automated testing.

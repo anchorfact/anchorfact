@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 conflict_of_interest: none_declared
 is_live_document: false
@@ -27,7 +27,7 @@ known_gaps:
   - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
   - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The productivity impact of static typing in dynamic languages is contested: TypeScript advocates cite error reduction, while skeptics argue the overhead outweighs benefits for smaller projects"
+  - statement: 'The productivity impact of static typing in dynamic languages is contested: TypeScript advocates cite error reduction, while skeptics argue the overhead outweighs benefits for smaller projects'
 primary_sources:
   - title: TypeScript Documentation
     type: documentation
@@ -46,13 +46,19 @@ primary_sources:
       - Cherny B.
     institution: O'Reilly Media
     url: https://www.oreilly.com/typescript/
-  - title: "Type Systems for Web Development: TypeScript and Flow (2025)"
+  - title: 'Type Systems for Web Development: TypeScript and Flow (2025)'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.ts
+  - title: Programming TypeScript
+    authors:
+      - Cherny, B.
+    type: book
+    year: 2019
+    institution: O'Reilly Media
 secondary_sources:
   - title: Effective TypeScript (2nd Ed)
     authors:
@@ -62,6 +68,7 @@ secondary_sources:
     url: https://www.oreilly.com/library/view/effective-typescript-2nd/9781098155056/
     institution: O'Reilly
 ---
+
 ## TL;DR
 
 TypeScript is a strongly-typed superset of JavaScript developed by Microsoft, first released in October 2012 by Anders Hejlsberg (creator of C# and Turbo Pascal). It adds optional static type checking to JavaScript while compiling to plain JavaScript. TypeScript was the 4th most popular programming language in the 2024 Stack Overflow Developer Survey and is used by over 80% of professional web developers. Its type system enables IDE autocompletion, refactoring, and early error detection — making large-scale JavaScript codebases maintainable.

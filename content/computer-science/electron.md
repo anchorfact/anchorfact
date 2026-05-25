@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 derived_from_human_seed: true
 conflict_of_interest: none_declared
@@ -21,7 +21,7 @@ atomic_facts:
     source_url: https://www.electronjs.org/docs/
     confidence: medium
   - id: fact-computer-science-002
-    statement: "Criticism: large bundle size (100+ MB), memory usage."
+    statement: 'Criticism: large bundle size (100+ MB), memory usage.'
     source_title: Electron Documentation
     source_url: https://www.electronjs.org/docs/
     confidence: medium
@@ -46,13 +46,18 @@ primary_sources:
       - Kinney S.
     institution: Manning
     url: https://www.manning.com/electron/
-  - title: "Desktop Application Development: Electron, Tauri, and Beyond (2025)"
+  - title: 'Desktop Application Development: Electron, Tauri, and Beyond (2025)'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.desktop
+  - title: Electron Documentation
+    type: official_doc
+    year: 2024
+    url: https://www.electronjs.org/docs
+    institution: OpenJS Foundation
 secondary_sources:
   - title: Node.js Design Patterns (3rd Edition)
     authors:
@@ -73,6 +78,7 @@ secondary_sources:
     url: https://mitpress.mit.edu/sites/default/files/sicp/
     institution: MIT Press
 ---
+
 ## TL;DR
 
 Electron (GitHub, 2013, formerly Atom Shell) is a framework for building desktop applications with web technologies (HTML, CSS, JavaScript) using Chromium and Node.js. Each app bundles both runtimes. Used by VS Code, Slack, Discord, Figma, Notion, 1Password.

@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 derived_from_human_seed: true
 conflict_of_interest: none_declared
@@ -19,7 +19,7 @@ atomic_facts:
     source_url: https://docs.djangoproject.com/
     confidence: medium
   - id: fact-computer-science-02
-    statement: "Template language: Django Template Language with inheritance, filters, tags"
+    statement: 'Template language: Django Template Language with inheritance, filters, tags'
     source_title: Django Documentation
     source_url: https://docs.djangoproject.com/
     confidence: medium
@@ -37,20 +37,27 @@ primary_sources:
     year: 2026
     url: https://docs.djangoproject.com/
     institution: Django Software Foundation
-  - title: "Django for APIs: Build Web APIs with Python and Django (2025 Edition)"
+  - title: 'Django for APIs: Build Web APIs with Python and Django (2025 Edition)'
     type: book
     year: 2025
     authors:
       - Vincent W.S.
     institution: Self-published
     url: https://djangoforapis.com/
-  - title: "Python Web Frameworks in 2025: Django, FastAPI, and Flask"
+  - title: 'Python Web Frameworks in 2025: Django, FastAPI, and Flask'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.python
+  - title: Two Scoops of Django 3.x
+    authors:
+      - Roy Greenfeld, D.
+      - Roy Greenfeld, A.
+    type: book
+    year: 2020
+    institution: Two Scoops Press
 secondary_sources:
   - title: RESTful Web APIs
     authors:
@@ -70,14 +77,14 @@ secondary_sources:
     year: 1996
     url: https://mitpress.mit.edu/sites/default/files/sicp/
     institution: MIT Press
-  - title: "Python Web Frameworks in 2025: Django, FastAPI, and Flask — A Comparative Study"
+  - title: 'Python Web Frameworks in 2025: Django, FastAPI, and Flask — A Comparative Study'
     type: article
     year: 2025
     authors:
       - multiple
     institution: IEEE Software
     url: https://doi.org/10.1109/ms.2025.python
-  - title: "Full-Stack Web Development in 2025: Frameworks, Tools, and Best Practices"
+  - title: 'Full-Stack Web Development in 2025: Frameworks, Tools, and Best Practices'
     type: survey_paper
     year: 2025
     authors:
@@ -85,6 +92,7 @@ secondary_sources:
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.fullstack
 ---
+
 ## TL;DR
 
 Django is a high-level Python web framework (2005) that follows 'batteries-included' philosophy. ORM, admin interface, authentication, form handling, and templating are built-in. Follows MVT (Model-View-Template) architecture. Used by Instagram, Pinterest, Mozilla, Disqus.

@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -16,7 +16,7 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-computer-science-01
-    statement: "The CAP theorem states: a distributed system can guarantee at most two of: Consistency , Availability , Partition Tolerance"
+    statement: 'The CAP theorem states: a distributed system can guarantee at most two of: Consistency , Availability , Partition Tolerance'
     source_title: ACM Digital Library
     source_url: https://dl.acm.org/
     confidence: medium
@@ -47,13 +47,28 @@ primary_sources:
       - Kleppmann M.
     institution: O'Reilly Media
     url: https://dataintensive.net/
-  - title: "Distributed Systems Consistency: From CAP to CRDTs (2025 Survey)"
+  - title: 'Distributed Systems Consistency: From CAP to CRDTs (2025 Survey)'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.consistency
+  - title: Towards Robust Distributed Systems (PODC Keynote)
+    authors:
+      - Brewer, E.A.
+    type: academic_paper
+    year: 2000
+    doi: 10.1145/343477.343502
+    institution: UC Berkeley / PODC
+  - title: Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services
+    authors:
+      - Gilbert, S.
+      - Lynch, N.
+    type: academic_paper
+    year: 2002
+    doi: 10.1145/564585.564601
+    institution: MIT
 secondary_sources:
   - title: ACM Digital Library
     type: repository
@@ -70,14 +85,14 @@ secondary_sources:
     year: 1996
     url: https://mitpress.mit.edu/sites/default/files/sicp/
     institution: MIT Press
-  - title: "Distributed Consistency Models: From CAP to PACELC and Beyond (2025 Tutorial)"
+  - title: 'Distributed Consistency Models: From CAP to PACELC and Beyond (2025 Tutorial)'
     type: article
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.consistency
-  - title: "Eventual Consistency and CRDTs: A 2025 Survey of Theory and Practice"
+  - title: 'Eventual Consistency and CRDTs: A 2025 Survey of Theory and Practice'
     type: survey_paper
     year: 2025
     authors:
@@ -85,6 +100,7 @@ secondary_sources:
     institution: IEEE TPDS
     url: https://doi.org/10.1109/tpds.2025.crdt
 ---
+
 ## TL;DR
 
 The CAP theorem (Eric Brewer, 2000; formally proven by Gilbert & Lynch, 2002) states: a distributed system can guarantee at most two of: Consistency (all nodes see same data), Availability (every request gets a response), Partition Tolerance (system works despite network partitions). Since partitions are inevitable, you must choose between C and A.

@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -23,7 +23,7 @@ atomic_facts:
     source_url: https://dl.acm.org/
     confidence: medium
   - id: fact-computer-science-002
-    statement: "Management: track debt explicitly (issue tracker, code annotations), allocate time for reduction (20% rule), measure via code quality metrics (cyclomatic complexity, duplication)."
+    statement: 'Management: track debt explicitly (issue tracker, code annotations), allocate time for reduction (20% rule), measure via code quality metrics (cyclomatic complexity, duplication).'
     source_title: ACM Digital Library
     source_url: https://dl.acm.org/
     confidence: medium
@@ -40,20 +40,36 @@ primary_sources:
     year: 2026
     url: https://dl.acm.org/
     institution: ACM
-  - title: "Managing Technical Debt: A Practical Guide (2025 Edition)"
+  - title: 'Managing Technical Debt: A Practical Guide (2025 Edition)'
     type: book
     year: 2025
     authors:
       - multiple
     institution: Addison-Wesley
     url: https://www.informit.com/techdebt/
-  - title: "Technical Debt: A 2025 Systematic Mapping Study"
+  - title: 'Technical Debt: A 2025 Systematic Mapping Study'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.techdebt
+  - title: The WyCash Portfolio Management System (Experience Report)
+    authors:
+      - Cunningham, W.
+    type: academic_paper
+    year: 1992
+    doi: 10.1145/157709.157715
+    institution: OOPSLA
+  - title: 'Managing Technical Debt: Insights from Recent Empirical Evidence'
+    authors:
+      - Li, Z.
+      - Avgeriou, P.
+      - Liang, P.
+    type: academic_paper
+    year: 2015
+    doi: 10.1109/MS.2015.88
+    institution: IEEE Software
 secondary_sources:
   - title: ACM Digital Library
     type: repository
@@ -71,6 +87,7 @@ secondary_sources:
     url: https://mitpress.mit.edu/sites/default/files/sicp/
     institution: MIT Press
 ---
+
 ## TL;DR
 
 Technical debt (Ward Cunningham, 1992) is the implied cost of future rework caused by choosing an expedient solution now instead of a better approach that would take longer. Like financial debt, it accrues interest — the longer you delay, the more it costs to fix.

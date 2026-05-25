@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 derived_from_human_seed: true
 conflict_of_interest: none_declared
@@ -21,7 +21,7 @@ atomic_facts:
     source_url: https://docs.konghq.com/
     confidence: medium
   - id: fact-computer-science-002
-    statement: "Service Mesh: gateway handles north-south traffic (client→server); service mesh handles east-west (service→service)."
+    statement: 'Service Mesh: gateway handles north-south traffic (client→server); service mesh handles east-west (service→service).'
     source_title: Kong Gateway Documentation
     source_url: https://docs.konghq.com/
     confidence: medium
@@ -39,20 +39,31 @@ primary_sources:
     year: 2026
     url: https://docs.konghq.com/
     institution: Kong Inc.
-  - title: "API Gateway and Service Mesh: A 2025 Practical Guide"
+  - title: 'API Gateway and Service Mesh: A 2025 Practical Guide'
     type: book
     year: 2025
     authors:
       - multiple
     institution: O'Reilly Media
     url: https://www.oreilly.com/api-gateway/
-  - title: "Microservices Gateways and Service Mesh: 2025 Architecture Survey"
+  - title: 'Microservices Gateways and Service Mesh: 2025 Architecture Survey'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.gateway
+  - title: 'Microservices API Gateways: Performance and Scalability'
+    type: industry_whitepaper
+    year: 2023
+    url: https://nginx.org/en/docs/
+    institution: NGINX / F5
+  - title: Building Microservices (2nd Edition)
+    authors:
+      - Newman, S.
+    type: book
+    year: 2021
+    institution: O'Reilly Media
 secondary_sources:
   - title: RESTful Web APIs
     authors:
@@ -72,14 +83,14 @@ secondary_sources:
     year: 1996
     url: https://mitpress.mit.edu/sites/default/files/sicp/
     institution: MIT Press
-  - title: "API Gateway Architectures in Cloud-Native Systems: A 2025 Taxonomy"
+  - title: 'API Gateway Architectures in Cloud-Native Systems: A 2025 Taxonomy'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.apigateway
-  - title: "Service Mesh and API Management: Convergence Trends 2025"
+  - title: 'Service Mesh and API Management: Convergence Trends 2025'
     type: article
     year: 2025
     authors:
@@ -87,6 +98,7 @@ secondary_sources:
     institution: IEEE Cloud Computing
     url: https://doi.org/10.1109/cloud.2025.servicemesh
 ---
+
 ## TL;DR
 
 An API Gateway is a single entry point for all client requests to a microservices architecture. It handles cross-cutting concerns: authentication, rate limiting, request routing, protocol translation, caching, logging, and API composition.

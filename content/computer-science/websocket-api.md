@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 derived_from_human_seed: true
 conflict_of_interest: none_declared
@@ -28,7 +28,7 @@ primary_sources:
     year: 2023
     url: https://www.w3.org/
     institution: WHATWG
-  - title: "Real-Time Web Communication: WebSocket, WebRTC, and Server-Sent Events (2025 Edition)"
+  - title: 'Real-Time Web Communication: WebSocket, WebRTC, and Server-Sent Events (2025 Edition)'
     type: book
     year: 2025
     authors:
@@ -42,6 +42,16 @@ primary_sources:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.rtc
+  - title: RFC 6455 — The WebSocket Protocol
+    type: rfc
+    year: 2011
+    url: https://datatracker.ietf.org/doc/html/rfc6455
+    institution: IETF
+  - title: The WebSocket API — W3C Living Standard
+    type: standard
+    year: 2024
+    url: https://websockets.spec.whatwg.org/
+    institution: WHATWG
 secondary_sources:
   - title: The WebSocket Protocol (RFC 6455)
     authors:
@@ -68,7 +78,7 @@ secondary_sources:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.websocket
-  - title: "Modern Real-Time Web Protocols: WebSocket, WebRTC, and Beyond"
+  - title: 'Modern Real-Time Web Protocols: WebSocket, WebRTC, and Beyond'
     type: article
     year: 2025
     authors:
@@ -76,6 +86,7 @@ secondary_sources:
     institution: IEEE Access
     url: https://doi.org/10.1109/access.2025.websocket
 ---
+
 ## TL;DR
 
 The WebSocket API is the browser-side interface to the WebSocket protocol (RFC 6455), providing full-duplex, bidirectional communication between browser and server over a single TCP connection.

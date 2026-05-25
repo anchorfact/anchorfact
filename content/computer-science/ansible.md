@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 derived_from_human_seed: true
 conflict_of_interest: none_declared
@@ -17,11 +17,11 @@ atomic_facts:
     statement: >-
       Ansible (Michael DeHaan, 2012, acquired by Red Hat 2015) is an agentless IT automation tool for configuration management, deployment, and orchestration. Uses YAML playbooks and SSH — no agent to
       install on target machines. Idempotent: running same playbook multiple times produces same result.
-    source_title: "Ansible: Up and Running (3rd Ed)"
+    source_title: 'Ansible: Up and Running (3rd Ed)'
     source_url: https://www.oreilly.com/library/view/ansible-up-and/9781098109141/
     confidence: medium
   - id: fact-computer-science-002
-    statement: "Inventory: defines target hosts (static file or dynamic from cloud)."
+    statement: 'Inventory: defines target hosts (static file or dynamic from cloud).'
     source_title: Ansible Documentation
     source_url: https://docs.ansible.com/
     confidence: medium
@@ -39,7 +39,7 @@ primary_sources:
     year: 2026
     url: https://docs.ansible.com/
     institution: Red Hat
-  - title: "Ansible: Up and Running (4th Edition, 2025)"
+  - title: 'Ansible: Up and Running (4th Edition, 2025)'
     type: book
     year: 2025
     authors:
@@ -48,15 +48,22 @@ primary_sources:
       - Moser R.
     institution: O'Reilly Media
     url: https://www.oreilly.com/ansible/
-  - title: "Configuration Management in Cloud-Native Era: 2025 Survey"
+  - title: 'Configuration Management in Cloud-Native Era: 2025 Survey'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.cm
+  - title: 'Ansible: Up and Running (3rd Edition)'
+    authors:
+      - Hochstein, L.
+      - Moser, R.
+    type: book
+    year: 2022
+    institution: O'Reilly Media
 secondary_sources:
-  - title: "Ansible: Up and Running (3rd Ed)"
+  - title: 'Ansible: Up and Running (3rd Ed)'
     authors:
       - Hochstein
       - Moser
@@ -75,6 +82,7 @@ secondary_sources:
     url: https://mitpress.mit.edu/sites/default/files/sicp/
     institution: MIT Press
 ---
+
 ## TL;DR
 
 Ansible (Michael DeHaan, 2012, acquired by Red Hat 2015) is an agentless IT automation tool for configuration management, deployment, and orchestration. Uses YAML playbooks and SSH — no agent to install on target machines. Idempotent: running same playbook multiple times produces same result.

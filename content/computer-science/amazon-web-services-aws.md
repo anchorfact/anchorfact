@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 derived_from_human_seed: true
 conflict_of_interest: none_declared
@@ -45,13 +45,27 @@ primary_sources:
       - Clinton D.
     institution: Sybex
     url: https://www.wiley.com/aws/
-  - title: "Cloud Computing: AWS, Azure, and GCP — A 2025 Comparison"
+  - title: 'Cloud Computing: AWS, Azure, and GCP — A 2025 Comparison'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.cloud
+  - title: Amazon Web Services Overview of Security Processes
+    type: industry_whitepaper
+    year: 2024
+    url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview-security-processes/
+    institution: Amazon Web Services
+  - title: 'Above the Clouds: A Berkeley View of Cloud Computing'
+    authors:
+      - Armbrust, M.
+      - Fox, A.
+      - Griffith, R.
+    type: academic_paper
+    year: 2009
+    doi: 10.1145/1721654.1721672
+    institution: UC Berkeley
 secondary_sources:
   - title: AWS Well-Architected Framework
     type: framework
@@ -69,6 +83,7 @@ secondary_sources:
     url: https://mitpress.mit.edu/sites/default/files/sicp/
     institution: MIT Press
 ---
+
 ## TL;DR
 
 AWS is the world's largest cloud provider, launched in 2006 with S3 and EC2. It offers 200+ services across compute, storage, database, ML, IoT, and serverless. AWS holds ~32% cloud market share (2025). Key services: EC2 (VMs), S3 (object storage), Lambda (serverless), DynamoDB (NoSQL), RDS (managed databases).

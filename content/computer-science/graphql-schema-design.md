@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 derived_from_human_seed: true
 conflict_of_interest: none_declared
@@ -42,14 +42,14 @@ primary_sources:
     year: 2024
     url: https://graphql.org/learn/best-practices/
     institution: GraphQL Foundation
-  - title: "GraphQL in Practice: Schema Design, Federation, and Performance (2025)"
+  - title: 'GraphQL in Practice: Schema Design, Federation, and Performance (2025)'
     type: book
     year: 2025
     authors:
       - multiple
     institution: O'Reilly Media
     url: https://www.oreilly.com/graphql/
-  - title: "API Design Patterns in 2025: REST, GraphQL, and gRPC"
+  - title: 'API Design Patterns in 2025: REST, GraphQL, and gRPC'
     type: survey_paper
     year: 2025
     authors:
@@ -63,13 +63,25 @@ primary_sources:
       - Lyon W.
     institution: Manning
     url: https://www.manning.com/graphql/
-  - title: "GraphQL Federation and Schema Design: 2025 Best Practices"
+  - title: 'GraphQL Federation and Schema Design: 2025 Best Practices'
     type: article
     year: 2025
     authors:
       - multiple
     institution: IEEE Software
     url: https://doi.org/10.1109/ms.2025.graphql
+  - title: 'GraphQL: A Data Query Language'
+    type: standard
+    year: 2024
+    url: https://spec.graphql.org/
+    institution: GraphQL Foundation
+  - title: Learning GraphQL
+    authors:
+      - Porcello, E.
+      - Banks, A.
+    type: book
+    year: 2018
+    institution: O'Reilly Media
 secondary_sources:
   - title: Learning GraphQL
     authors:
@@ -89,14 +101,14 @@ secondary_sources:
     year: 1996
     url: https://mitpress.mit.edu/sites/default/files/sicp/
     institution: MIT Press
-  - title: "GraphQL and API Design Patterns: A 2025 Systematic Review"
+  - title: 'GraphQL and API Design Patterns: A 2025 Systematic Review'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.graphql
-  - title: "Modern API Architectures: REST, GraphQL, gRPC — Performance and Adoption Trends 2025"
+  - title: 'Modern API Architectures: REST, GraphQL, gRPC — Performance and Adoption Trends 2025'
     type: article
     year: 2025
     authors:
@@ -104,6 +116,7 @@ secondary_sources:
     institution: IEEE Software
     url: https://doi.org/10.1109/ms.2025.api
 ---
+
 ## TL;DR
 
 GraphQL schema design defines types, queries, mutations, and relationships. Best practices: design around business domain (not database schema), use Relay-style pagination (edges/nodes), avoid deeply nested queries (N+1 solved by DataLoader), version via evolution (add fields, deprecate old ones — never remove).

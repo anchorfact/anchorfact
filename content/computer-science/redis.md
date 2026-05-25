@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -48,13 +48,19 @@ primary_sources:
       - Carlson J.L.
     institution: Manning
     url: https://www.manning.com/redis/
-  - title: "In-Memory Data Stores and Caching: A 2025 Survey"
+  - title: 'In-Memory Data Stores and Caching: A 2025 Survey'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.cache
+  - title: Redis in Action
+    authors:
+      - Carlson, J.L.
+    type: book
+    year: 2013
+    institution: Manning
 secondary_sources:
   - title: Redis in Action
     authors:
@@ -74,6 +80,7 @@ secondary_sources:
     url: https://mitpress.mit.edu/sites/default/files/sicp/
     institution: MIT Press
 ---
+
 ## TL;DR
 
 Redis is an in-memory data structure store used as a database, cache, message broker, and streaming engine. It supports strings, hashes, lists, sets, sorted sets, bitmaps, hyperloglogs, geospatial indexes, and streams. Sub-millisecond latency, 100K+ ops/sec on modest hardware.

@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -41,7 +41,7 @@ primary_sources:
     year: 2026
     url: https://docs.docker.com/
     institution: Docker Inc.
-  - title: "Docker: Up and Running (4th Edition, 2025)"
+  - title: 'Docker: Up and Running (4th Edition, 2025)'
     type: book
     year: 2025
     authors:
@@ -49,13 +49,20 @@ primary_sources:
       - Kane S.P.
     institution: O'Reilly Media
     url: https://www.oreilly.com/docker/
-  - title: "Container Orchestration: From Docker to Kubernetes and Beyond (2025 Survey)"
+  - title: 'Container Orchestration: From Docker to Kubernetes and Beyond (2025 Survey)'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.containers
+  - title: 'Docker: Up and Running (3rd Edition)'
+    authors:
+      - Kane, S.P.
+      - Matthias, K.
+    type: book
+    year: 2023
+    institution: O'Reilly Media
 secondary_sources:
   - title: MDN Web Docs — HTTP
     type: documentation
@@ -73,6 +80,7 @@ secondary_sources:
     url: https://mitpress.mit.edu/sites/default/files/sicp/
     institution: MIT Press
 ---
+
 ## TL;DR
 
 Docker is an open-source platform for developing, shipping, and running applications in lightweight, isolated containers. First released in 2013 by Solomon Hykes at dotCloud, Docker revolutionized software deployment by packaging applications with all their dependencies into portable images that run consistently across any environment. As of 2026, Docker is used by over 15 million developers and is the foundation of modern cloud-native infrastructure.

@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 conflict_of_interest: none_declared
 is_live_document: false
@@ -37,7 +37,7 @@ primary_sources:
     url: https://developer.mozilla.org/en-US/docs/Web/CSS
     institution: Mozilla
   - title: CSS Snapshot 2024 (W3C)
-  - title: "CSS: The Definitive Guide (6th Edition, 2025)"
+  - title: 'CSS: The Definitive Guide (6th Edition, 2025)'
     type: book
     year: 2025
     authors:
@@ -45,27 +45,39 @@ primary_sources:
       - Weyl E.
     institution: O'Reilly Media
     url: https://www.oreilly.com/css/
-  - title: "Modern CSS: Grid, Container Queries, and Cascade Layers (2025)"
+  - title: 'Modern CSS: Grid, Container Queries, and Cascade Layers (2025)'
     type: book
     year: 2025
     authors:
       - multiple
     institution: A Book Apart
     url: https://abookapart.com/products/modern-css
+  - title: CSS Snapshot 2024 — W3C Group Note
+    type: standard
+    year: 2024
+    url: https://www.w3.org/TR/CSS/
+    institution: W3C
+  - title: 'CSS: The Definitive Guide (5th Edition)'
+    authors:
+      - Meyer, E.A.
+      - Weyl, E.
+    type: book
+    year: 2023
+    institution: O'Reilly Media
 secondary_sources:
   - title: MDN Web Docs — HTTP
     type: documentation
     year: 2026
     url: https://developer.mozilla.org/en-US/docs/Web/HTTP
     institution: Mozilla Foundation
-  - title: "CSS Modern Layout: Grid, Flexbox, and Container Queries in 2025"
+  - title: 'CSS Modern Layout: Grid, Flexbox, and Container Queries in 2025'
     type: article
     year: 2025
     authors:
       - multiple
     institution: MDN Web Docs / W3C
     url: https://www.w3.org/Style/CSS/
-  - title: "Web Design Best Practices 2025: Responsive, Accessible, Performant"
+  - title: 'Web Design Best Practices 2025: Responsive, Accessible, Performant'
     type: article
     year: 2025
     authors:
@@ -73,6 +85,7 @@ secondary_sources:
     institution: Google Web Fundamentals
     url: https://web.dev/learn/design/
 ---
+
 ## TL;DR
 
 CSS (Cascading Style Sheets) is a stylesheet language developed by the W3C that describes the presentation of HTML documents. First proposed by Håkon Wium Lie in 1994, CSS has evolved from basic text styling to a powerful layout and animation engine. Modern CSS (2024+) supports container queries, cascade layers, native nesting, `has()` selector, view transitions, and scroll-driven animations — capabilities that previously required JavaScript.

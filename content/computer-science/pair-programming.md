@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -23,7 +23,7 @@ atomic_facts:
     source_url: https://dl.acm.org/
     confidence: medium
   - id: fact-computer-science-002
-    statement: "Not effective for: simple/mechanical tasks, when developers can't get along."
+    statement: 'Not effective for: simple/mechanical tasks, when developers can''t get along.'
     source_title: ACM Digital Library
     source_url: https://dl.acm.org/
     confidence: medium
@@ -46,13 +46,28 @@ primary_sources:
       - Hunt A.
     institution: Addison-Wesley
     url: https://pragprog.com/titles/tpp20/
-  - title: "Collaborative Software Development in 2025: Pair Programming to AI Pairing"
+  - title: 'Collaborative Software Development in 2025: Pair Programming to AI Pairing'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.collab
+  - title: The Costs and Benefits of Pair Programming
+    authors:
+      - Cockburn, A.
+      - Williams, L.
+    type: academic_paper
+    year: 2000
+    doi: 10.1007/978-3-642-79958-3_15
+    institution: Humans and Technology
+  - title: Extreme Programming Explained (2nd Edition)
+    authors:
+      - Beck, K.
+      - Andres, C.
+    type: book
+    year: 2004
+    institution: Addison-Wesley
 secondary_sources:
   - title: ACM Digital Library
     type: repository
@@ -70,6 +85,7 @@ secondary_sources:
     url: https://mitpress.mit.edu/sites/default/files/sicp/
     institution: MIT Press
 ---
+
 ## TL;DR
 
 Pair programming (part of XP, Kent Beck) is two developers working at one computer: Driver (writes code) + Navigator (reviews each line, thinks strategically). Roles switch frequently. Studies show 15% more effort but 15% fewer defects — net quality improvement. Extremely effective for complex problems and knowledge transfer.

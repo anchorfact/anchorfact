@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -46,13 +46,29 @@ primary_sources:
       - Wayne K.
     institution: Addison-Wesley
     url: https://algs4.cs.princeton.edu/
-  - title: "Graph Algorithms: BFS, DFS, and Parallel Processing (2025 Survey)"
+  - title: 'Graph Algorithms: BFS, DFS, and Parallel Processing (2025 Survey)'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.graphalgo
+  - title: Introduction to Algorithms (4th Edition) — Chapter 20-22
+    authors:
+      - Cormen, T.H.
+      - Leiserson, C.E.
+      - Rivest, R.L.
+      - Stein, C.
+    type: book
+    year: 2022
+    institution: MIT Press
+  - title: Algorithm Design
+    authors:
+      - Kleinberg, J.
+      - Tardos, E.
+    type: book
+    year: 2005
+    institution: Pearson
 secondary_sources:
   - title: ACM Digital Library
     type: repository
@@ -69,14 +85,14 @@ secondary_sources:
     year: 1996
     url: https://mitpress.mit.edu/sites/default/files/sicp/
     institution: MIT Press
-  - title: "Graph Traversal Algorithms: From BFS/DFS to Learned Graph Navigation (2025)"
+  - title: 'Graph Traversal Algorithms: From BFS/DFS to Learned Graph Navigation (2025)'
     type: article
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.traversal
-  - title: "Parallel Graph Processing: BFS, DFS, and Beyond on Modern Hardware (2025)"
+  - title: 'Parallel Graph Processing: BFS, DFS, and Beyond on Modern Hardware (2025)'
     type: article
     year: 2025
     authors:
@@ -84,6 +100,7 @@ secondary_sources:
     institution: IEEE TPDS
     url: https://doi.org/10.1109/tpds.2025.graph
 ---
+
 ## TL;DR
 
 A graph G=(V,E) models networks. BFS (queue) finds shortest paths in unweighted graphs. DFS (stack/recursion) detects cycles, performs topological sort on DAGs. Both are O(V+E).

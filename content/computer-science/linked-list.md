@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -57,6 +57,21 @@ primary_sources:
       - Weiss M.A.
     institution: Pearson
     url: https://www.pearson.com/dsaa/
+  - title: Introduction to Algorithms (4th Edition) — Chapter 10
+    authors:
+      - Cormen, T.H.
+      - Leiserson, C.E.
+      - Rivest, R.L.
+      - Stein, C.
+    type: book
+    year: 2022
+    institution: MIT Press
+  - title: 'The Art of Computer Programming, Vol. 1: Fundamental Algorithms (3rd Edition)'
+    authors:
+      - Knuth, D.E.
+    type: book
+    year: 1997
+    institution: Addison-Wesley
 secondary_sources:
   - title: ACM Digital Library
     type: repository
@@ -74,6 +89,7 @@ secondary_sources:
     url: https://mitpress.mit.edu/sites/default/files/sicp/
     institution: MIT Press
 ---
+
 ## TL;DR
 
 A linked list is a linear collection of nodes, each containing data and a pointer. O(1) insert/delete at known position, O(n) random access. Variants: singly-linked, doubly-linked, circular. Poor cache locality but dynamic sizing is trivial.

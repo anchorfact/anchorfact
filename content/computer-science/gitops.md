@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-25'
+created_date: '2026-05-22'
 generation_method: ai_structured
 derived_from_human_seed: true
 conflict_of_interest: none_declared
@@ -41,20 +41,35 @@ primary_sources:
     year: 2018
     url: https://www.gitops.tech/
     institution: Weaveworks
-  - title: "GitOps: Cloud-Native Continuous Delivery Patterns (2025 Edition)"
+  - title: 'GitOps: Cloud-Native Continuous Delivery Patterns (2025 Edition)'
     type: book
     year: 2025
     authors:
       - multiple
     institution: O'Reilly Media
     url: https://www.oreilly.com/gitops/
-  - title: "DevOps and Platform Engineering in 2025: A Systematic Review"
+  - title: 'DevOps and Platform Engineering in 2025: A Systematic Review'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.devops
+  - title: 'GitOps: A Path to More Self-Service IT'
+    authors:
+      - Lim, K.
+    type: industry_whitepaper
+    year: 2018
+    url: https://www.weave.works/technologies/gitops/
+    institution: Weaveworks
+  - title: GitOps and Kubernetes
+    authors:
+      - Burns, B.
+      - Beda, J.
+      - Hightower, K.
+    type: book
+    year: 2021
+    institution: Manning
 secondary_sources:
   - title: Argo CD Documentation
     type: documentation
@@ -71,14 +86,14 @@ secondary_sources:
     year: 1996
     url: https://mitpress.mit.edu/sites/default/files/sicp/
     institution: MIT Press
-  - title: "GitOps and Infrastructure as Code: A Systematic Mapping Study (2025)"
+  - title: 'GitOps and Infrastructure as Code: A Systematic Mapping Study (2025)'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/acmcs.2025.gitops
-  - title: "DevOps, GitOps, and Platform Engineering in 2025: State of the Union"
+  - title: 'DevOps, GitOps, and Platform Engineering in 2025: State of the Union'
     type: report
     year: 2025
     authors:
@@ -86,6 +101,7 @@ secondary_sources:
     institution: Gartner Research
     url: https://www.gartner.com/en/software-engineering
 ---
+
 ## TL;DR
 
 GitOps (Weaveworks, 2017) is an operational framework using Git as the single source of truth for declarative infrastructure and applications. Git commits trigger automated deployment. Tools: Argo CD, Flux CD. GitOps applies DevOps best practices (version control, code review, CI/CD) to infrastructure.
