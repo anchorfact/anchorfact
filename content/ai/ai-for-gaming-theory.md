@@ -1,12 +1,12 @@
 ---
 id: ai-for-gaming-theory
-title: "AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy"
+title: 'AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -46,12 +46,28 @@ primary_sources:
     institution: Science / Meta AI
     doi: 10.1126/science.ade9097
     url: https://www.science.org/doi/10.1126/science.ade9097
+  - title: Mastering the Game of Go with Deep Neural Networks and Tree Search (AlphaGo)
+    authors:
+      - Silver, D.
+      - Huang, A.
+      - Maddison, C.J.
+      - Guez, A.
+      - Sifre, L.
+      - van den Driessche, G.
+      - Schrittwieser, J.
+      - Antonoglou, I.
+      - Panneershelvam, V.
+      - Lanctot, M.
+    type: academic_paper
+    year: 2016
+    doi: 10.1038/nature16961
+    institution: Google DeepMind / Nature
 known_gaps:
   - Computing exact Nash equilibria for large-scale general-sum games
   - AI for cooperative game theory -- coalition formation and fair value distribution in multi-agent systems
 disputed_statements: []
 secondary_sources:
-  - title: "Game Theory and Multi-Agent Reinforcement Learning: From Nash Equilibria to Advanced Strategies"
+  - title: 'Game Theory and Multi-Agent Reinforcement Learning: From Nash Equilibria to Advanced Strategies'
     type: survey_paper
     year: 2024
     authors:
@@ -80,7 +96,7 @@ secondary_sources:
       - et al.
     institution: Google DeepMind / Science
     url: https://doi.org/10.1126/science.aar6404
-  - title: "Multi-Agent Reinforcement Learning: A Selective Overview of Theories and Algorithms"
+  - title: 'Multi-Agent Reinforcement Learning: A Selective Overview of Theories and Algorithms'
     type: survey_paper
     year: 2021
     authors:
@@ -89,8 +105,9 @@ secondary_sources:
       - Başar, Tamer
     institution: Handbook of RL & Optimal Control (Springer)
     url: https://doi.org/10.1007/978-3-030-60990-0_12
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI has mastered games through different strategic paradigms: perfect information (chess, Go -- AlphaZero, 2017-2018), imperfect information (poker -- Libratus/Pluribus, 2017-2019), and the hardest frontier -- games combining imperfect information, multi-agent negotiation, and natural language communication (DeepNash for Stratego, Cicero for Diplomacy). Each milestone has advanced computational game theory and multi-agent strategy.
 

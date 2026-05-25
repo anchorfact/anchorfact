@@ -1,12 +1,12 @@
 ---
 id: ai-blockchain
-title: "AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems"
+title: 'AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -40,17 +40,24 @@ primary_sources:
     institution: arXiv
     url: https://arxiv.org/abs/2402.02885
   - id: ps-ai-blockchain-2
-    title: "Gensyn: Decentralized Deep Learning Compute Protocol"
+    title: 'Gensyn: Decentralized Deep Learning Compute Protocol'
     type: industry_report
     year: 2025
     institution: Gensyn / DePIN Ecosystem
     url: https://gensyn.ai/
+  - title: 'SoK: Decentralized AI (DeAI)'
+    authors:
+      - Multiple
+    type: academic_paper
+    year: 2024
+    url: https://arxiv.org/abs/2405.04828
+    institution: arXiv
 known_gaps:
   - ZK-proof efficiency -- proving ML inference correctness with <1% overhead
   - Trustless AI oracles -- verifiably bringing off-chain data onto blockchain for smart contracts
 disputed_statements: []
 secondary_sources:
-  - title: "Blockchain Meets Federated Learning: A Comprehensive Survey of Architectures, Applications, and Future Directions"
+  - title: 'Blockchain Meets Federated Learning: A Comprehensive Survey of Architectures, Applications, and Future Directions'
     type: survey_paper
     year: 2024
     authors:
@@ -59,7 +66,7 @@ secondary_sources:
       - et al.
     institution: IEEE Access
     url: https://doi.org/10.1109/ACCESS.2024.3512349
-  - title: "Blockchain-Based Federated Learning: A Survey and New Perspectives"
+  - title: 'Blockchain-Based Federated Learning: A Survey and New Perspectives'
     type: survey_paper
     year: 2024
     authors:
@@ -73,15 +80,16 @@ secondary_sources:
       - multiple
     institution: Peer-to-Peer Networking & Applications (Springer)
     url: https://doi.org/10.1007/s12083-025-02167-6
-  - title: "Bitcoin: A Peer-to-Peer Electronic Cash System (Blockchain Genesis)"
+  - title: 'Bitcoin: A Peer-to-Peer Electronic Cash System (Blockchain Genesis)'
     type: white_paper
     year: 2008
     authors:
       - Nakamoto, Satoshi
     institution: bitcoin.org
     url: https://bitcoin.org/bitcoin.pdf
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI and blockchain converge at three frontiers: running AI services via smart contracts, using crypto-economic incentives to build decentralized compute networks that rival cloud providers in cost, and applying AI to detect fraud in blockchain systems. Together they form the infrastructure for trustless, decentralized intelligence.
 

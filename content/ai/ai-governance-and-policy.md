@@ -1,12 +1,12 @@
 ---
 id: ai-governance-and-policy
-title: "AI Governance: Risk Frameworks, Audits, and International Cooperation"
+title: 'AI Governance: Risk Frameworks, Audits, and International Cooperation'
 schema_type: TechArticle
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -19,7 +19,7 @@ atomic_facts:
     statement: >-
       The EU AI Act (Regulation 2024/1689) is the world's first comprehensive AI regulatory framework, using a risk-based approach: unacceptable risk (banned), high-risk (strict compliance), limited
       risk (transparency), minimal risk (no regulation).
-    source_title: "European Union. Regulation (EU) 2024/1689: The Artificial Intelligence Act. 2024"
+    source_title: 'European Union. Regulation (EU) 2024/1689: The Artificial Intelligence Act. 2024'
     source_url: https://artificialintelligenceact.eu/
     confidence: high
   - id: f2
@@ -44,42 +44,53 @@ primary_sources:
     year: 2023
     url: https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration
     institution: UK Government
+  - title: EU Artificial Intelligence Act (Regulation 2024/1689)
+    type: standard
+    year: 2024
+    url: https://artificialintelligenceact.eu/
+    institution: European Union
+  - title: The AI Risk Management Framework (AI RMF 1.0)
+    type: government_report
+    year: 2023
+    doi: 10.6028/NIST.AI.100-1
+    institution: NIST
 known_gaps:
   - Liability frameworks for autonomous AI decisions
   - AI safety research funding mechanisms
 disputed_statements:
   - statement: No major disputed statements identified
 secondary_sources:
-  - title: "The EU AI Act: A Framework for Collaborative Governance of Artificial Intelligence"
+  - title: 'The EU AI Act: A Framework for Collaborative Governance of Artificial Intelligence'
     type: journal_article
     year: 2024
     authors:
       - multiple
     institution: Internet Policy Review (ScienceDirect)
     url: https://doi.org/10.1016/j.clsr.2024.106021
-  - title: "Global AI Law and Policy Tracker: EU, US, UK, China (IAPP)"
+  - title: 'Global AI Law and Policy Tracker: EU, US, UK, China (IAPP)'
     type: report
     year: 2025
     authors:
       - IAPP Research
     institution: International Association of Privacy Professionals
     url: https://iapp.org/resources/article/global-ai-legislation-tracker
-  - title: "AI Regulation Compared: EU AI Act, US Executive Order, UK AI Framework, China AI Law (2026)"
+  - title: 'AI Regulation Compared: EU AI Act, US Executive Order, UK AI Framework, China AI Law (2026)'
     type: report
     year: 2025
     authors:
       - Legalithm Research
     institution: Legalithm
     url: https://www.legalithm.com/en/blog/ai-regulation-comparison-eu-us-uk-china-global
-  - title: "The New Rules of AI: A Global Legal Overview — EU, US, UK, Asia Compliance Risks (Morgan Lewis)"
+  - title: 'The New Rules of AI: A Global Legal Overview — EU, US, UK, Asia Compliance Risks (Morgan Lewis)'
     type: report
     year: 2025
     authors:
       - Morgan Lewis Research
     institution: Morgan Lewis & Bockius LLP
     url: https://www.morganlewis.com/pubs/2025/12/the-new-rules-of-ai-a-global-legal-overview
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI governance has transitioned from voluntary principles to binding regulation and international cooperation. The Bletchley Declaration, NIST AI RMF, and EU AI Act represent landmark milestones in the emerging global AI governance architecture.
 

@@ -1,12 +1,12 @@
 ---
 id: audio-source-separation
-title: "Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning"
+title: 'Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -29,7 +29,7 @@ atomic_facts:
       Conv-TasNet (Luo & Mesgarani, 2019) introduced a fully convolutional time-domain audio separation network -- processing raw waveforms without STFT/spectrogram conversion -- achieving 15.6 dB
       SI-SNRi on WSJ0-2mix, outperforming previous spectrogram-based methods by 2-4 dB. The architecture combines a learned encoder (replacing STFT), temporal convolutional separation network (TCN
       with dilated convolutions capturing long-range dependencies), and decoder.
-    source_title: "Luo & Mesgarani, IEEE TASLP (2019) -- Conv-TasNet: Surpassing Ideal Time-Frequency Magnitude Masking for Speech Separation / Follow-up works: DPRNN, SepFormer, TF-GridNet"
+    source_title: 'Luo & Mesgarani, IEEE TASLP (2019) -- Conv-TasNet: Surpassing Ideal Time-Frequency Magnitude Masking for Speech Separation / Follow-up works: DPRNN, SepFormer, TF-GridNet'
     source_url: https://ieeexplore.ieee.org/document/8707065
     confidence: high
 primary_sources:
@@ -40,32 +40,43 @@ primary_sources:
     institution: Meta AI / ISMIR / GitHub
     url: https://github.com/facebookresearch/demucs
   - id: ps-audio-source-separation-2
-    title: "Conv-TasNet: Surpassing Ideal Time-Frequency Masking for Speech Separation"
+    title: 'Conv-TasNet: Surpassing Ideal Time-Frequency Masking for Speech Separation'
     type: academic_paper
     year: 2019
     institution: IEEE Transactions on Audio, Speech, and Language Processing
     doi: 10.1109/TASLP.2019.2915167
     url: https://ieeexplore.ieee.org/document/8707065
+  - title: 'Music Source Separation: A Survey'
+    authors:
+      - Rafii, Z.
+      - Liutkus, A.
+      - Stöter, F.
+      - Mimilakis, S.I.
+      - Bittner, R.
+    type: academic_paper
+    year: 2019
+    url: https://arxiv.org/abs/1910.02008
+    institution: arXiv
 known_gaps:
   - Real-time low-latency separation for hearing aids and live audio
   - Universal sound separation -- separating arbitrary sounds without predefined class labels
 disputed_statements: []
 secondary_sources:
-  - title: "A Comprehensive Survey on Deep Learning for Audio Source Separation: From Monaural to Multi-Channel"
+  - title: 'A Comprehensive Survey on Deep Learning for Audio Source Separation: From Monaural to Multi-Channel'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: IEEE/ACM TASLP
     url: https://doi.org/10.1109/TASLP.2024.3385267
-  - title: "Music Source Separation: A Comprehensive Survey of Deep Learning Methods"
+  - title: 'Music Source Separation: A Comprehensive Survey of Deep Learning Methods'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/3635100
-  - title: "Conv-TasNet: Surpassing Ideal Time-Frequency Magnitude Masking for Speech Separation"
+  - title: 'Conv-TasNet: Surpassing Ideal Time-Frequency Magnitude Masking for Speech Separation'
     type: journal_article
     year: 2019
     authors:
@@ -73,7 +84,7 @@ secondary_sources:
       - Mesgarani, Nima
     institution: Columbia University / IEEE/ACM TASLP
     url: https://doi.org/10.1109/TASLP.2019.2915167
-  - title: "Demucs: Deep Extractor for Music Sources with Extra Unlabeled Data Remixed"
+  - title: 'Demucs: Deep Extractor for Music Sources with Extra Unlabeled Data Remixed'
     type: conference_paper
     year: 2021
     authors:
@@ -83,8 +94,9 @@ secondary_sources:
       - Bach, Francis
     institution: Meta AI / ISMIR
     url: https://arxiv.org/abs/1909.01174
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Audio source separation -- the "cocktail party problem" -- isolates individual sound sources from a mixture: extracting vocals from a song, separating overlapping speakers in a meeting, or isolating a target voice in a noisy environment. Deep learning has achieved human-level separation quality, enabling applications from music production to hearing aid enhancement.
 

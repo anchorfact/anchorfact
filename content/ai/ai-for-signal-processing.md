@@ -1,12 +1,12 @@
 ---
 id: ai-for-signal-processing
-title: "AI for Signal Processing: Deep Learning for Wireless, Radar, and Biomedical Signals"
+title: 'AI for Signal Processing: Deep Learning for Wireless, Radar, and Biomedical Signals'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,7 +34,7 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-for-signal-processing-1
-    title: "DeepRx: Deep Learning Receiver for Wireless Communications"
+    title: 'DeepRx: Deep Learning Receiver for Wireless Communications'
     type: academic_paper
     year: 2020
     institution: Nokia Bell Labs / arXiv
@@ -46,12 +46,20 @@ primary_sources:
     institution: Nature Medicine
     doi: 10.1038/s41591-018-0268-3
     url: https://www.nature.com/articles/s41591-018-0268-3
+  - title: An Introduction to Deep Learning for the Physical Layer
+    authors:
+      - O'Shea, T.
+      - Hoydis, J.
+    type: academic_paper
+    year: 2017
+    doi: 10.1109/TCCN.2017.2758370
+    institution: IEEE TCCN
 known_gaps:
   - Real-time AI signal processing on ultra-low-power hardware (<1mW)
   - Explainable signal processing -- clinicians understanding why AI flagged an ECG segment
 disputed_statements: []
 secondary_sources:
-  - title: "Image Denoising: The Deep Learning Revolution and Beyond — A Comprehensive Survey"
+  - title: 'Image Denoising: The Deep Learning Revolution and Beyond — A Comprehensive Survey'
     type: survey_paper
     year: 2023
     authors:
@@ -60,7 +68,7 @@ secondary_sources:
       - Vaksman, Gregory
     institution: arXiv / IEEE Signal Processing Magazine
     url: https://arxiv.org/abs/2301.03362
-  - title: "Deep Learning-Based Image Denoising: A Comprehensive Survey"
+  - title: 'Deep Learning-Based Image Denoising: A Comprehensive Survey'
     type: survey_paper
     year: 2025
     authors:
@@ -74,15 +82,16 @@ secondary_sources:
       - multiple
     institution: Nature Machine Intelligence
     url: https://doi.org/10.1038/s42256-024-00790-1
-  - title: "ISP Meets Deep Learning: A Survey on Deep Learning Methods for Image Signal Processing"
+  - title: 'ISP Meets Deep Learning: A Survey on Deep Learning Methods for Image Signal Processing'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: ACM Computing Surveys
     url: https://doi.org/10.1145/3708516
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI is transforming signal processing -- from wireless receivers that learn to decode signals better than mathematically-designed algorithms, to ECG analysis matching cardiologist accuracy, to radar systems that detect and classify objects via deep learning. The convergence of deep learning and signal processing is creating adaptive systems that outperform decades of handcrafted DSP theory.
 

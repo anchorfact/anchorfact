@@ -1,12 +1,12 @@
 ---
 id: ai-for-chemistry
-title: "AI for Chemistry: Reaction Prediction, Retrosynthesis, and Computational Chemistry"
+title: 'AI for Chemistry: Reaction Prediction, Retrosynthesis, and Computational Chemistry'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -47,12 +47,28 @@ primary_sources:
     institution: ACS Central Science
     doi: 10.1021/acscentsci.9b00576
     url: https://pubs.acs.org/doi/10.1021/acscentsci.9b00576
+  - title: A Deep Learning Approach to Antibiotic Discovery
+    authors:
+      - Stokes, J.M.
+      - Yang, K.
+      - Swanson, K.
+      - Jin, W.
+      - Cubillos-Ruiz, A.
+      - Donghia, N.M.
+      - MacNair, C.R.
+      - French, S.
+      - Carfrae, L.A.
+      - Bloom-Ackermann, Z.
+    type: academic_paper
+    year: 2020
+    doi: 10.1016/j.cell.2020.01.021
+    institution: MIT / Cell
 known_gaps:
   - Predicting reaction yields and side-product formation
   - Multi-step retrosynthesis with practical feasibility constraints (cost, availability, safety)
 disputed_statements: []
 secondary_sources:
-  - title: "AlphaFold 3: Accurate Structure Prediction of Biomolecular Interactions (Google DeepMind/Isomorphic Labs)"
+  - title: 'AlphaFold 3: Accurate Structure Prediction of Biomolecular Interactions (Google DeepMind/Isomorphic Labs)'
     type: journal_article
     year: 2024
     authors:
@@ -62,29 +78,30 @@ secondary_sources:
       - et al.
     institution: Google DeepMind / Nature
     url: https://www.nature.com/articles/s41586-024-07487-w
-  - title: "AI-Enabled Drug and Molecular Discovery: From Computational Methods to Clinical Translation"
+  - title: 'AI-Enabled Drug and Molecular Discovery: From Computational Methods to Clinical Translation'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: Nature Reviews Chemistry (Springer)
     url: https://doi.org/10.1007/s44345-025-00037-5
-  - title: "Artificial Intelligence in Drug Design and Discovery: A Comprehensive Review"
+  - title: 'Artificial Intelligence in Drug Design and Discovery: A Comprehensive Review'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: Artificial Intelligence Chemistry (Elsevier)
     url: https://doi.org/10.1016/j.aichem.2025.100048
-  - title: "Deep Learning-Driven Protein Structure Prediction: AlphaFold, RoseTTAFold, RFDiffusion — A Systematic Review"
+  - title: 'Deep Learning-Driven Protein Structure Prediction: AlphaFold, RoseTTAFold, RFDiffusion — A Systematic Review'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: arXiv
     url: https://arxiv.org/abs/2504.01490
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI is transforming chemistry from a fundamentally experimental science to a computationally predictable one. Machine learning potentials simulate molecular dynamics at quantum accuracy with million-fold speedups, while AI retrosynthesis tools design complete synthetic routes in minutes rather than weeks. These capabilities are accelerating discovery across pharmaceuticals, materials, and catalysis.
 

@@ -1,12 +1,12 @@
 ---
 id: ai-for-materials-science
-title: "AI for Materials Science: GNoME, Crystal Discovery, and Materials Informatics"
+title: 'AI for Materials Science: GNoME, Crystal Discovery, and Materials Informatics'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -44,12 +44,24 @@ primary_sources:
     year: 2024
     institution: Nature / Lawrence Berkeley National Laboratory
     url: https://www.nature.com/articles/s41586-023-06934-4
+  - title: Graph Networks for Materials Exploration (GNoME)
+    authors:
+      - Merchant, A.
+      - Batzner, S.
+      - Schoenholz, S.S.
+      - Aykol, M.
+      - Cheon, G.
+      - Cubuk, E.D.
+    type: academic_paper
+    year: 2023
+    url: https://arxiv.org/abs/2311.14744
+    institution: Google DeepMind / arXiv
 known_gaps:
   - Scaling AI-driven synthesis to industrial production volumes
   - Remaining gaps in predicting material synthesis pathways and kinetics
 disputed_statements: []
 secondary_sources:
-  - title: "GNoME: Scaling Deep Learning for Materials Discovery — Graph Networks for Materials Exploration"
+  - title: 'GNoME: Scaling Deep Learning for Materials Discovery — Graph Networks for Materials Exploration'
     type: journal_article
     year: 2023
     authors:
@@ -59,14 +71,14 @@ secondary_sources:
       - et al.
     institution: Google DeepMind / Nature
     url: https://www.nature.com/articles/s41586-023-06735-9
-  - title: "AI for Materials Science: A Comprehensive Survey of Machine Learning in Materials Discovery"
+  - title: 'AI for Materials Science: A Comprehensive Survey of Machine Learning in Materials Discovery'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: Nature Reviews Materials
     url: https://doi.org/10.1038/s41578-024-00674-z
-  - title: "The Materials Project: Harnessing the Power of Supercomputing and ML for Materials Discovery"
+  - title: 'The Materials Project: Harnessing the Power of Supercomputing and ML for Materials Discovery'
     type: journal_article
     year: 2023
     authors:
@@ -76,15 +88,16 @@ secondary_sources:
       - et al.
     institution: Lawrence Berkeley National Lab / APL Materials
     url: https://doi.org/10.1063/1.4812323
-  - title: "AlphaFold and Beyond: Deep Learning for Protein and Materials Structure Prediction"
+  - title: 'AlphaFold and Beyond: Deep Learning for Protein and Materials Structure Prediction'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: Annual Review of Materials Research
     url: https://doi.org/10.1146/annurev-matsci-080622-102420
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI is accelerating materials science from Edisonian trial-and-error to systematic discovery. DeepMind's GNoME used graph neural networks to discover 2.2 million new crystals — 45x the human-accumulated catalog — while autonomous labs synthesize AI-predicted compounds robotically.
 

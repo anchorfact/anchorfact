@@ -1,12 +1,12 @@
 ---
 id: ai-for-speech-emotion-recognition
-title: "AI for Speech Emotion Recognition: Vocal Biomarkers, Mental Health Screening, and Affective Computing"
+title: 'AI for Speech Emotion Recognition: Vocal Biomarkers, Mental Health Screening, and Affective Computing'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-25'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -39,31 +39,39 @@ primary_sources:
     doi: 10.1038/s41598-024-60278-1
     url: https://www.nature.com/articles/s41598-024-60278-1
   - id: ps-ai-for-speech-emotion-recognition-2
-    title: "Speech-based Clinical Depression Screening: An Empirical Study"
+    title: 'Speech-based Clinical Depression Screening: An Empirical Study'
     type: academic_paper
     year: 2024
     institution: arXiv / ACM Multimedia
     url: https://arxiv.org/abs/2406.03510
+  - title: 'Speech Emotion Recognition: A Comprehensive Survey'
+    authors:
+      - Akçay, M.B.
+      - Oğuz, K.
+    type: academic_paper
+    year: 2020
+    doi: 10.1007/s10462-020-09873-y
+    institution: Artificial Intelligence Review
 known_gaps:
   - Generalization across languages, cultures, and recording conditions for SER models
   - Integration of speech emotion AI into clinical workflows with rigorous validation in healthcare settings
 disputed_statements: []
 secondary_sources:
-  - title: "Speech Emotion Recognition: A Comprehensive Survey of Deep Learning Methods and Multimodal Approaches"
+  - title: 'Speech Emotion Recognition: A Comprehensive Survey of Deep Learning Methods and Multimodal Approaches'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: IEEE/ACM TASLP
     url: https://doi.org/10.1109/TASLP.2024.3385267
-  - title: "Deep Learning for Speech Emotion Recognition: A Systematic Review of Feature Extraction, Model Architectures, and Benchmarks"
+  - title: 'Deep Learning for Speech Emotion Recognition: A Systematic Review of Feature Extraction, Model Architectures, and Benchmarks'
     type: survey_paper
     year: 2025
     authors:
       - multiple
     institution: Information Fusion (Elsevier)
     url: https://doi.org/10.1016/j.inffus.2025.102890
-  - title: "Wav2Vec 2.0: A Framework for Self-Supervised Learning of Speech Representations"
+  - title: 'Wav2Vec 2.0: A Framework for Self-Supervised Learning of Speech Representations'
     type: conference_paper
     year: 2020
     authors:
@@ -73,7 +81,7 @@ secondary_sources:
       - Auli, Michael
     institution: Facebook AI Research / NeurIPS
     url: https://arxiv.org/abs/2006.11477
-  - title: "HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units"
+  - title: 'HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units'
     type: journal_article
     year: 2021
     authors:
@@ -83,8 +91,9 @@ secondary_sources:
       - et al.
     institution: Meta AI / IEEE/ACM TASLP
     url: https://doi.org/10.1109/TASLP.2021.3122291
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Your voice carries rich information about your emotional state. AI systems can now analyze speech patterns -- pitch, rhythm, tone, pauses -- to detect depression, anxiety, and stress with clinical-grade accuracy, enabling passive, scalable mental health screening through everyday voice interactions.
 

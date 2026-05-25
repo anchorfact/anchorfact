@@ -77,6 +77,20 @@ primary_sources:
     url: https://arxiv.org/abs/1112.2954v2
     type: academic_paper
     institution: arXiv
+  - title: Attention Is All You Need
+    authors:
+      - Vaswani, A.
+      - Shazeer, N.
+      - Parmar, N.
+      - Uszkoreit, J.
+      - Jones, L.
+      - Gomez, A.N.
+      - Kaiser, L.
+      - Polosukhin, I.
+    type: academic_paper
+    year: 2017
+    doi: 10.48550/arXiv.1706.03762
+    institution: Google Brain / NeurIPS
 secondary_sources:
   - title: Sequence to Sequence Learning with Neural Networks
     authors:
@@ -94,6 +108,7 @@ secondary_sources:
     url: https://web.stanford.edu/class/cs224n/
     institution: Stanford University
 ---
+
 
 
 
