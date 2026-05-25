@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00078>
   a schema:TechArticle ;
   schema:headline "C++ Programming Language" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.795" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00078>
-  schema:citation <https://www.iso.org/standard/83626.html> .
+  schema:citation <https://www.iso.org/standard/83626.html> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/kb-2026-00078>
-  schema:citation <https://www.stroustrup.com/> .
+  schema:citation <https://www.stroustrup.com/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00078>
-  schema:citation <https://www.oreilly.com/cpp/> .
+  schema:citation <https://www.oreilly.com/cpp/> ;
+  af:sourceTier "C" .

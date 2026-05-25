@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/kb-2026-00111>
   a schema:TechArticle ;
   schema:headline "HTTPS / TLS (Transport Layer Security)" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.58" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00111>
-  schema:citation <https://www.rfc-editor.org/rfc/rfc8446> .
+  schema:citation <https://www.rfc-editor.org/rfc/rfc8446> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/kb-2026-00111>
-  schema:citation <https://www.rfc-editor.org/rfc/rfc5246> .
+  schema:citation <https://www.rfc-editor.org/rfc/rfc5246> ;
+  af:sourceTier "S" .

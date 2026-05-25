@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-hist-sr-001",
     "text": "Kuhn (1962): science progresses through paradigm shifts, not linear accumulation.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-hist-sr-002",
     "text": "Copernican Revolution (1543): displaced Earth from center, initiating 16th-17th c. Scientific Revolution.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.unesco.org/en/memory-world/copernicus-De-revolutionibus"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-hist-sr-003",
     "text": "Newton's Principia (1687) unified celestial/terrestrial mechanics, founding classical physics.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.ucpress.edu/book/9780520290884/the-principia"

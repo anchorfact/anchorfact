@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/f1",
     "text": "AlphaGeometry (Trinh et al. 2024, DeepMind, Nature) combines a neural language model with a symbolic deduction engine to solve Olympiad-level geometry problems, demonstrating the power of neurosymbolic approaches.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nature.com/articles/s41586-023-06747-5"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/f2",
     "text": "Neurosymbolic AI integrates neural learning with symbolic reasoning, combining the pattern recognition strengths of deep learning with the interpretability and systematic generalization of symbolic AI.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.1016/j.artint.2020.103372"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/f3",
     "text": "DeepMind's AlphaProof combined AlphaZero with formal mathematics to achieve silver-medal level at the 2024 International Mathematical Olympiad, solving 4/6 problems including the hardest geometry and number theory problems.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://deepmind.google/discover/blog/ai-solves-imo-problems/"

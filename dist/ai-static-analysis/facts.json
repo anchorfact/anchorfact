@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-static-analysis-1",
     "text": "IEEE (2026) introduced SmartCode AI -- a hybrid architecture integrating rule-based static analysis with an ensemble of transformer-based deep learning models -- achieving 94% bug detection accuracy across C/C++ and Java codebases, reducing false positive rates by 60% compared to pure static analysis tools (Coverity, SonarQube) by using the transformer component to filter rule-based warnings based on learned code context patterns.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://ieeexplore.ieee.org/document/11510940"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-static-analysis-2",
     "text": "LLift (ACM OOPSLA 2024, UC Riverside / Columbia) demonstrated that LLM-assisted static analysis achieves whole-repository reasoning for security vulnerability detection -- the LLM provides high-level code understanding (identifying untrusted input sources, tracking data flow through complex function call chains) while static analysis provides formal guarantees, together discovering 57 previously unknown Use-Before-Initialization bugs in the Linux kernel (v6.1), 42 of which were confirmed and patched by kernel maintainers.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://dl.acm.org/doi/10.1145/3649828"

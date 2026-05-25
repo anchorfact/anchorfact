@@ -4,17 +4,23 @@
 <https://anchorfact.org/kb/kb-2026-00502>
   a schema:TechArticle ;
   schema:headline "Swimming Training and Stroke Techniques" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.57" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00502>
-  schema:citation <https://www.worldaquatics.com/swimming/rules> .
+  schema:citation <https://www.worldaquatics.com/swimming/rules> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00502>
-  schema:citation <https://www.humankinetics.com/> .
+  schema:citation <https://www.humankinetics.com/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00502>
-  schema:citation <https://us.humankinetics.com/swimming-anatomy/> .
+  schema:citation <https://us.humankinetics.com/swimming-anatomy/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00502>
-  schema:citation <https://us.humankinetics.com/swimming/> .
+  schema:citation <https://us.humankinetics.com/swimming/> ;
+  af:sourceTier "C" .

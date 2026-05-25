@@ -1,7 +1,7 @@
 # AI-Generated Content Detection: Identifying Synthetic Text, Deepfake Images, and AI-Authored Media
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 As AI-generated text, images, audio, and video become indistinguishable from human-created content, detecting what's real becomes a critical societal challenge — from identifying AI-written student essays and fake product reviews to detecting political deepfakes. Detection is an asymmetric arms race: generation improves faster than detection, and each detection method spawns evasion techniques.

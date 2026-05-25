@@ -1,7 +1,7 @@
 # Optimization Algorithms for Deep Learning
-Confidence: high
+Confidence: medium (0.72) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Optimization algorithms update neural network weights to minimize the loss function. Adam dominates practice, but SGD with momentum remains competitive when well-tuned.

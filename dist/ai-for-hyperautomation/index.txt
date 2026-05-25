@@ -1,7 +1,7 @@
 # AI for Hyperautomation: RPA, Intelligent Document Processing, and Cognitive Workflows
-Confidence: high
+Confidence: medium (0.615) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Hyperautomation combines RPA (software robots that mimic human clicks and keystrokes), AI (machine learning for decision-making), and intelligent document processing (extracting meaning from unstructured documents) into end-to-end autonomous business workflows. From invoice processing to insurance claims to customer onboarding, hyperautomation is transforming back-office operations by automating knowledge work that previously required human judgment.

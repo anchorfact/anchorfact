@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-001",
     "text": "Scala (Martin Odersky, 2004, EPFL) elegantly combines object-oriented and functional programming on the JVM. Scala 3 (2021) redesigned with optional braces (Python-like), enums, extension methods, and given/using for implicits. Used by: Twitter (originally), Netflix, LinkedIn, Apache Spark.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.artima.com/shop/programming_in_scala_5ed"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-002",
     "text": "Apache Spark: written in Scala, with Scala/Python/Java APIs.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://docs.scala-lang.org/"

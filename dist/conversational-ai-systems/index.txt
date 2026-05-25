@@ -1,7 +1,7 @@
 # Conversational AI: Task-Oriented Dialogue and Open-Domain Chatbots
-Confidence: high
+Confidence: medium (0.78) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Conversational AI spans from task-oriented bots that book flights to open-domain chatbots that discuss any topic. Modern LLMs have collapsed the traditional modular pipeline into end-to-end neural approaches, while frameworks like Rasa CALM bring enterprise-grade reliability.

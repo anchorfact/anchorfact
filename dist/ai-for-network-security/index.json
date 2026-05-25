@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-network-security",
   "headline": "AI for Network Security: Intelligent Firewalls, DDoS Mitigation, and Zero-Trust Architectures",
   "description": "Network security is an AI-first domain -- intelligent firewalls classify traffic with deep learning, DDoS mitigation systems detect attacks in milliseconds, and zero-trust architectures use ML to continuously evaluate access risk. The speed and scale of modern cyber attacks make AI the only viable defense.",
-  "dateCreated": "2026-05-25T02:46:03.447Z",
+  "dateCreated": "2026-05-24",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",
@@ -16,18 +16,50 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidence": "medium",
+  "anchorfact:confidenceScore": 0.74,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 0.9,
+      "source_count": 0.8,
+      "source_verified": 0.7,
+      "freshness": 1,
+      "decay": 0.1,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "medium",
+    "confidence_score": 0.74,
+    "confidence_basis": "verified_sources",
+    "sources_total": 2,
+    "sources_verified": 1,
+    "sources_unreachable": 1,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "A",
+      "A"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": false,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "NIST Special Publication 800-207: Zero Trust Architecture",
-      "sameAs": "https://www.nist.gov/publications/zero-trust-architecture"
+      "sameAs": "https://www.nist.gov/publications/zero-trust-architecture",
+      "anchorfact:sourceTier": "A",
+      "anchorfact:year": 2020
     },
     {
       "@type": "CreativeWork",
       "name": "Cloudflare: AI-Powered DDoS Protection and Network Security (2025)",
-      "sameAs": "https://www.cloudflare.com/learning/ddos/ddos-mitigation/"
+      "sameAs": "https://www.cloudflare.com/learning/ddos/ddos-mitigation/",
+      "anchorfact:sourceTier": "A",
+      "anchorfact:year": 2025
     }
   ]
 }

@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-for-retail>
   a schema:article ;
   schema:headline "AI for Retail: Cashierless Stores, Dynamic Pricing, and Personalized Shopping" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-for-retail>
-  schema:citation <https://aws.amazon.com/just-walk-out/> .
+  schema:citation <https://aws.amazon.com/just-walk-out/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/ai-for-retail>
-  schema:citation <https://arxiv.org/search/?query=dynamic+pricing+reinforcement+learning+retail> .
+  schema:citation <https://arxiv.org/search/?query=dynamic+pricing+reinforcement+learning+retail> ;
+  af:sourceTier "A" .

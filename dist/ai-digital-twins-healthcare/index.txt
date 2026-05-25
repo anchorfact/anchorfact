@@ -1,7 +1,7 @@
 # AI Digital Twins for Healthcare: Patient-Specific Simulation, Treatment Planning, and Virtual Organs
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI creates digital twins of individual patients -- virtual replicas that simulate disease progression and predict treatment response. From Dassault's Living Heart used in arrhythmia surgery planning to in silico clinical trials that reduce human testing, healthcare digital twins represent the frontier of personalized medicine.

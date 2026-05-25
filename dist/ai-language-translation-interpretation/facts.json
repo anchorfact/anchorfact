@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-language-translation-interpretation-1",
     "text": "LLM-based machine translation (2023-2026): GPT-4, Claude, and Gemini achieve BLEU scores matching or exceeding dedicated NMT systems (NLLB-200) on high-resource language pairs, while few-shot prompting with 5-10 examples closes ~60% of the quality gap for low-resource languages. MDPI (2025) survey documented the shift from encoder-decoder NMT to LLM-based translation, finding LLMs excel at document-level translation (maintaining coherence across paragraphs) where NMT struggles.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.mdpi.com/2078-2489/16/9/723"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-language-translation-interpretation-2",
     "text": "Simultaneous interpretation AI: KUDO AI and Wordly provide real-time speech-to-speech translation for multilingual meetings with <2 second latency across 40+ languages. The pipeline: ASR (speech-to-text) -> MT (text-to-text) -> TTS (text-to-speech). Key innovations: streaming ASR (processing audio incrementally), wait-k policy (deciding when to output translations before sentence completion), and voice preservation (translated speech in original speaker's voice). KUDO raised $21M (2023).",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=simultaneous+machine+translation+speech"

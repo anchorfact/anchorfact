@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering — AnchorFact</title></head>
-<body><article>## TL;DR<br>
-Adversarial Machine Learning studies how AI systems can be fooled — and defended. Tiny perturbations invisible to humans can cause state-of-the-art models to misclassify with high confidence. Building robust AI requires understanding the attack surface and engineering defenses.<br>
-<br>
-## Core Explanation<br>
-Adversarial attacks: (1) Evasion attacks — add imperceptible perturbation ε to input x such that f(x+ε) ≠ f(x). FGSM (Fast Gradient Sign Method): x' = x + ε·sign(∇_x L). PGD (Projected Gradient Descent) iterates FGSM within L∞ ball. Physical attacks: printed adversarial patches on objects fool real-world computer vision. (2) Poisoning attacks — inject malicious samples into training data to create backdoors. (3) Privacy attacks — extract training data (membership inference) or reconstruct inputs (model inversion).<br>
-<br>
-## Detailed Analysis<br>
-Defense taxonomy: (1) Adversarial training — augment training with adversarial examples (most effective but computationally expensive); (2) Certified defenses — provide mathematical guarantees of robustness within perturbation bounds (randomized smoothing, interval bound propagation); (3) Detection methods — identify adversarial inputs at inference (feature squeezing, MagNet); (4) Input preprocessing — JPEG compression, total variation minimization to remove perturbations. 2025 trend: multimodal adversarial attacks combining visual, text, and audio modalities. NIST emphasizes that no defense is universally effective — defense-in-depth and red teaming are essential. ICCV 2025 featured adversarial vulnerability exploration in vision-language-action models for robotics.<br>
-<br>
-## Further Reading<br>
-- Adversarial Robustness Toolbox (IBM ART)<br>
-- CleverHans Library (Google/TensorFlow)<br>
-- NIST AI Risk Management Framework<br>
+<head>
+  <meta charset="utf-8">
+  <title>Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering — AnchorFact</title>
+  <meta name="anchorfact:confidence" content="medium (0.74)">
+  <meta name="anchorfact:generation" content="ai_structured">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"article","@id":"https://anchorfact.org/kb/adversarial-machine-learning","headline":"Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering","description":"Adversarial Machine Learning studies how AI systems can be fooled — and defended. Tiny perturbations invisible to humans can cause state-of-the-art models to misclassify with high confidence. Building robust AI requires understanding the attack surface and engineering defenses.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.74,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.7,"freshness":1,"decay":0.1,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.74,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":1,"sources_unreachable":1,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["A","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":false,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations (NIST AI 100-2e3)","sameAs":"https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2025.pdf","anchorfact:sourceTier":"A","anchorfact:year":2025},{"@type":"CreativeWork","name":"A survey on adversarial machine learning: Attacks, defenses, real-world applications, and algorithmic framework","sameAs":"https://www.sciencedirect.com/science/article/pii/S0925231226000676","anchorfact:sourceTier":"A","anchorfact:year":2026}]}</script>
+</head>
+<body><article>## TL;DR<br>
+Adversarial Machine Learning studies how AI systems can be fooled — and defended. Tiny perturbations invisible to humans can cause state-of-the-art models to misclassify with high confidence. Building robust AI requires understanding the attack surface and engineering defenses.<br>
+<br>
+## Core Explanation<br>
+Adversarial attacks: (1) Evasion attacks — add imperceptible perturbation ε to input x such that f(x+ε) ≠ f(x). FGSM (Fast Gradient Sign Method): x' = x + ε·sign(∇_x L). PGD (Projected Gradient Descent) iterates FGSM within L∞ ball. Physical attacks: printed adversarial patches on objects fool real-world computer vision. (2) Poisoning attacks — inject malicious samples into training data to create backdoors. (3) Privacy attacks — extract training data (membership inference) or reconstruct inputs (model inversion).<br>
+<br>
+## Detailed Analysis<br>
+Defense taxonomy: (1) Adversarial training — augment training with adversarial examples (most effective but computationally expensive); (2) Certified defenses — provide mathematical guarantees of robustness within perturbation bounds (randomized smoothing, interval bound propagation); (3) Detection methods — identify adversarial inputs at inference (feature squeezing, MagNet); (4) Input preprocessing — JPEG compression, total variation minimization to remove perturbations. 2025 trend: multimodal adversarial attacks combining visual, text, and audio modalities. NIST emphasizes that no defense is universally effective — defense-in-depth and red teaming are essential. ICCV 2025 featured adversarial vulnerability exploration in vision-language-action models for robotics.<br>
+<br>
+## Further Reading<br>
+- Adversarial Robustness Toolbox (IBM ART)<br>
+- CleverHans Library (Google/TensorFlow)<br>
+- NIST AI Risk Management Framework<br>
 </article></body>
 </html>

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-text-classification-1",
     "text": "arxiv (February 2025) compared text classification across 32 datasets spanning 8 languages in the LLM era -- evaluating zero-shot classification, few-shot fine-tuning, and synthetic data-based classifiers versus traditional fine-tuned models -- finding that zero-shot LLM classification (GPT-4) achieves 85-90% of fine-tuned BERT performance without any training data, while few-shot (8-16 examples) matches or exceeds it for most tasks.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2502.11830"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-text-classification-2",
     "text": "Springer (August 2025) published a comprehensive review of NLP zero-shot and few-shot learning methods -- covering text classification, NER, and sentiment analysis -- documenting that prompt-based zero-shot classification (natural language inference reformulation) and SetFit (few-shot sentence transformer fine-tuning) are the dominant paradigms, with SetFit achieving 90%+ accuracy with just 8 labeled examples per class on standard benchmarks (AG News, DBpedia).",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://link.springer.com/article/10.1007/s42452-025-07225-5"

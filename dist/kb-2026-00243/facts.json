@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-01",
     "text": "Most databases target 3NF — enough to eliminate most anomalies while remaining practical",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://dl.acm.org/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-02",
     "text": "2NF: non-key attributes depend on the whole primary key",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://dl.acm.org/"

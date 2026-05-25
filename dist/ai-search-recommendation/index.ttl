@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-search-recommendation>
   a schema:article ;
   schema:headline "AI for Search and Recommendation: Semantic Search, Collaborative Filtering, and Personalization Engines" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-search-recommendation>
-  schema:citation <https://arxiv.org/search/?query=dense+retrieval+recommendation+two+tower+survey> .
+  schema:citation <https://arxiv.org/search/?query=dense+retrieval+recommendation+two+tower+survey> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-search-recommendation>
-  schema:citation <https://arxiv.org/search/?query=LLM+search+ranking+recommendation> .
+  schema:citation <https://arxiv.org/search/?query=LLM+search+ranking+recommendation> ;
+  af:sourceTier "A" .

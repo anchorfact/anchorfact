@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00284>
   a schema:TechArticle ;
   schema:headline "Attention vs. Self-Attention" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.52" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00284>
-  schema:citation <https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf> .
+  schema:citation <https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00284>
-  schema:citation <https://arxiv.org/abs/1409.0473> .
+  schema:citation <https://arxiv.org/abs/1409.0473> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00284>
-  schema:citation <https://doi.org/10.1145/3530811> .
+  schema:citation <https://doi.org/10.1145/3530811> ;
+  af:sourceTier "C" .

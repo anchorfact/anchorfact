@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Attention vs. Self-Attention — AnchorFact</title></head>
-<body><article>## TL;DR<br>
-<br>
-Attention (Bahdanau 2014) computes relevance between encoder and decoder states — cross-attention. Self-Attention (Vaswani 2017) computes relevance within a single sequence — each position attends to all other positions. Self-attention enables the Transformer to capture long-range dependencies without recurrence.<br>
-<br>
-## Core Explanation<br>
-<br>
-Scaled Dot-Product Attention: Attention(Q,K,V) = softmax(QK^T/√d_k)V. Q=query, K=key, V=value. d_k scaling prevents softmax saturation. Multi-Head Attention: run attention h times in parallel, concatenate outputs — captures different relationship types. Cross-attention: Q from decoder, K,V from encoder. Self-attention: Q,K,V all from same sequence. Causal/Masked self-attention prevents attending to future tokens.<br>
-<br>
-## Further Reading<br>
-<br>
-- [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)<br>
+<head>
+  <meta charset="utf-8">
+  <title>Attention vs. Self-Attention — AnchorFact</title>
+  <meta name="anchorfact:confidence" content="low (0.52)">
+  <meta name="anchorfact:generation" content="ai_structured">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/kb-2026-00284","headline":"Attention vs. Self-Attention","description":"Attention (Bahdanau 2014) computes relevance between encoder and decoder states — cross-attention. Self-Attention (Vaswani 2017) computes relevance within a single sequence — each position attends to all other positions. Self-attention enables the Transformer to capture long-range dependencies without recurrence.","dateCreated":"2026-05-22","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"low","anchorfact:confidenceScore":0.52,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.3,"source_count":1,"source_verified":0.7,"freshness":0.7,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"low","confidence_score":0.52,"confidence_basis":"verified_sources","sources_total":3,"sources_verified":2,"sources_unreachable":1,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["C","C","C"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Attention Is All You Need (Transformer)","author":"Vaswani, Ashish, Shazeer, Noam, Parmar, Niki, Uszkoreit, Jakob, Jones, Llion, Gomez, Aidan N., Kaiser, Łukasz, Polosukhin, Illia","sameAs":"https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf","anchorfact:sourceTier":"C","anchorfact:year":2017},{"@type":"CreativeWork","name":"Neural Machine Translation by Jointly Learning to Align and Translate (Bahdanau Attention)","author":"Bahdanau, Dzmitry, Cho, Kyunghyun, Bengio, Yoshua","sameAs":"https://arxiv.org/abs/1409.0473","anchorfact:sourceTier":"C","anchorfact:year":2015},{"@type":"CreativeWork","name":"Efficient Transformers: A Comprehensive Survey (Tay et al. — Google)","author":"Tay, Yi, Dehghani, Mostafa, Bahri, Dara, Metzler, Donald","sameAs":"https://doi.org/10.1145/3530811","anchorfact:sourceTier":"C","anchorfact:year":2022}]}</script>
+</head>
+<body><article>## TL;DR<br>
+<br>
+Attention (Bahdanau 2014) computes relevance between encoder and decoder states — cross-attention. Self-Attention (Vaswani 2017) computes relevance within a single sequence — each position attends to all other positions. Self-attention enables the Transformer to capture long-range dependencies without recurrence.<br>
+<br>
+## Core Explanation<br>
+<br>
+Scaled Dot-Product Attention: Attention(Q,K,V) = softmax(QK^T/√d_k)V. Q=query, K=key, V=value. d_k scaling prevents softmax saturation. Multi-Head Attention: run attention h times in parallel, concatenate outputs — captures different relationship types. Cross-attention: Q from decoder, K,V from encoder. Self-attention: Q,K,V all from same sequence. Causal/Masked self-attention prevents attending to future tokens.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)<br>
 </article></body>
 </html>

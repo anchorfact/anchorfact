@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/game-audio-systems>
   a schema:TechArticle ;
   schema:headline "Game Audio Systems and Sound Design" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.72" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/game-audio-systems>
-  schema:citation <https://www.routledge.com/Game-Audio-Implementation/Schutze-Ingebretsen/p/book/9781138777248> .
+  schema:citation <https://www.routledge.com/Game-Audio-Implementation/Schutze-Ingebretsen/p/book/9781138777248> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/game-audio-systems>
-  schema:citation <https://www.aes.org/e-lib/browse.cfm?elib=20380> .
+  schema:citation <https://www.aes.org/e-lib/browse.cfm?elib=20380> ;
+  af:sourceTier "A" .

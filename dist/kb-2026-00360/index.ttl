@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00360>
   a schema:TechArticle ;
   schema:headline "Napoleonic Era" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.43" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00360>
-  schema:citation <https://www.penguinrandomhouse.com/books/222045/napoleon-by-andrew-roberts/> .
+  schema:citation <https://www.penguinrandomhouse.com/books/222045/napoleon-by-andrew-roberts/> ;
+  af:sourceTier "C" .

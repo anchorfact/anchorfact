@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00477>
   a schema:TechArticle ;
   schema:headline "Digital Art" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.43" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00477>
-  schema:citation <https://thamesandhudson.com/digital-art-9780500204238> .
+  schema:citation <https://thamesandhudson.com/digital-art-9780500204238> ;
+  af:sourceTier "C" .

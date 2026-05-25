@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00396>
   a schema:TechArticle ;
   schema:headline "Hundred Years' War" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00396>
-  schema:citation <https://www.penguinrandomhouse.com/books/307409/the-hundred-years-war-by-desmond-seward/> .
+  schema:citation <https://www.penguinrandomhouse.com/books/307409/the-hundred-years-war-by-desmond-seward/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00396>
-  schema:citation <https://yalebooks.yale.edu/hundred-years-war/> .
+  schema:citation <https://yalebooks.yale.edu/hundred-years-war/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00396>
-  schema:citation <https://ospreypublishing.com/hundred-years-war/> .
+  schema:citation <https://ospreypublishing.com/hundred-years-war/> ;
+  af:sourceTier "C" .

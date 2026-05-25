@@ -1,7 +1,7 @@
 # Astronomy and Cosmology: From Solar System to the Universe
-Confidence: high
+Confidence: low (0.375) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Astronomy explores the universe from nearby planets to the cosmic horizon. The Big Bang model, confirmed by cosmic microwave background, describes a 13.8-billion-year history of expansion and structure formation.

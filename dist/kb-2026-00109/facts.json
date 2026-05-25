@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-001",
     "text": "The Navigator API (`window.navigator` / `navigator`) provides information about the browser and device. Key properties include `userAgent`, `language`, `onLine`, `platform`, `hardwareConcurrency`, and access to various sub-APIs (`geolocation`, `clipboard`, `mediaDevices`).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://html.spec.whatwg.org/multipage/system-state.html#the-navigator-object"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-001",
     "text": "The Navigator API (`window.navigator` / `navigator`) provides information about the browser and device. Key properties include `userAgent`, `language`, `onLine`, `platform`, `hardwareConcurrency`, and access to various sub-APIs (`geolocation`, `clipboard`, `mediaDevices`).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://html.spec.whatwg.org/multipage/system-state.html#the-navigator-object"

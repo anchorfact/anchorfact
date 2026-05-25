@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-001",
     "text": "Networking is building mutually beneficial professional relationships — not just collecting contacts. Key principles: give before you ask, be genuinely interested in others, follow up consistently, provide value first. The best networkers are connectors — they link people who can help each other. Networking is a long game.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguinrandomhouse.com/books/316664/never-eat-alone-expanded-and-updated-by-keith-ferrazzi-with-tahl-raz/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-002",
     "text": "Elevator pitch: 30-second compelling self-introduction.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguinrandomhouse.com/books/316664/never-eat-alone-expanded-and-updated-by-keith-ferrazzi-with-tahl-raz/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-003",
     "text": "Follow-up: within 24 hours, with a specific reference to conversation.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguinrandomhouse.com/books/316664/never-eat-alone-expanded-and-updated-by-keith-ferrazzi-with-tahl-raz/"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-004",
     "text": "Quality > quantity: 5 deep relationships better than 500 LinkedIn connections.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguinrandomhouse.com/books/316664/never-eat-alone-expanded-and-updated-by-keith-ferrazzi-with-tahl-raz/"

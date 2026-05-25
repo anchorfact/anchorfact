@@ -4,17 +4,23 @@
 <https://anchorfact.org/kb/contemporary-art-trends>
   a schema:Article ;
   schema:headline "Contemporary Art Trends and the Digital Turn" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.425" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/contemporary-art-trends>
-  schema:citation <https://mitpress.mit.edu/9780262046183/> .
+  schema:citation <https://mitpress.mit.edu/9780262046183/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/contemporary-art-trends>
-  schema:citation <https://www.christies.com/about-us/press-archive/details> .
+  schema:citation <https://www.christies.com/about-us/press-archive/details> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/contemporary-art-trends>
-  schema:citation <https://thamesandhudson.com/art-since-1900/> .
+  schema:citation <https://thamesandhudson.com/art-since-1900/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/contemporary-art-trends>
-  schema:citation <https://www.tate.org.uk/publishing/> .
+  schema:citation <https://www.tate.org.uk/publishing/> ;
+  af:sourceTier "C" .

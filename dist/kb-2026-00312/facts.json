@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-01",
     "text": "Jenkins is the most established open-source CI/CD automation server",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.jenkins.io/doc/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-001",
     "text": "Jenkins (Kohsuke Kawaguchi, 2011, forked from Hudson) is the most established open-source CI/CD automation server. Jenkins Pipeline (Jenkinsfile, Groovy DSL) defines build/deploy as code. Over 1800 plugins. Jenkins is Java-based, highly extensible but complex to maintain.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.jenkins.io/doc/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-002",
     "text": "Plugins: Git, Docker, Slack, Blue Ocean (modern UI).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.jenkins.io/doc/"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-003",
     "text": "Modern alternatives: GitHub Actions (simpler, cloud-native), GitLab CI.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.jenkins.io/doc/"

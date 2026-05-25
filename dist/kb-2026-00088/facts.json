@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-001",
     "text": "The WebSocket API is the browser-side interface to the WebSocket protocol (RFC 6455), providing full-duplex, bidirectional communication between browser and server over a single TCP connection.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.rfc-editor.org/rfc/rfc6455"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-002",
     "text": "The `readyState` property tracks connection state (CONNECTING=0, OPEN=1, CLOSING=2, CLOSED=3).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://websockets.spec.whatwg.org/"

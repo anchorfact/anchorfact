@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/kb-2026-00060>
   a schema:TechArticle ;
   schema:headline "Next.js" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.56" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00060>
-  schema:citation <https://nextjs.org/docs> .
+  schema:citation <https://nextjs.org/docs> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00060>
-  schema:citation <https://github.com/vercel/next.js> .
+  schema:citation <https://github.com/vercel/next.js> ;
+  af:sourceTier "C" .

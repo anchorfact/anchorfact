@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-document-understanding",
   "headline": "AI Document Understanding: Layout Parsing, Structured Extraction, and Intelligent Document Processing",
   "description": "AI document understanding extracts structured data from unstructured documents — invoices, contracts, medical records, tax forms. From traditional OCR pipelines to end-to-end vision-language models, the field has evolved from optical character recognition to semantic comprehension. LLMs can now \"read\" documents like humans, understanding layout, extracting key fields, and reasoning across tables and text.",
-  "dateCreated": "2026-05-25T02:46:03.339Z",
+  "dateCreated": "2026-05-24",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",
@@ -16,18 +16,50 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidence": "medium",
+  "anchorfact:confidenceScore": 0.79,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 0.9,
+      "source_count": 0.8,
+      "source_verified": 0.9,
+      "freshness": 1,
+      "decay": 0.1,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "medium",
+    "confidence_score": 0.79,
+    "confidence_basis": "verified_sources",
+    "sources_total": 2,
+    "sources_verified": 2,
+    "sources_unreachable": 0,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "A",
+      "C"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": false,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "Document Parsing Unveiled: Techniques, Challenges, and Prospects for Information Extraction",
-      "sameAs": "https://arxiv.org/abs/2410.21169"
+      "sameAs": "https://arxiv.org/abs/2410.21169",
+      "anchorfact:sourceTier": "A",
+      "anchorfact:year": 2024
     },
     {
       "@type": "CreativeWork",
       "name": "Automate data extraction and analysis from documents with Generative AI (AWS IDP Guide)",
-      "sameAs": "https://aws.amazon.com/ai/generative-ai/use-cases/document-processing/"
+      "sameAs": "https://aws.amazon.com/ai/generative-ai/use-cases/document-processing/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2026
     }
   ]
 }

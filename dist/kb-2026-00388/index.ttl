@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00388>
   a schema:TechArticle ;
   schema:headline "Amazon Rainforest" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.325" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00388>
-  schema:citation <https://www.worldwildlife.org/places/amazon> .
+  schema:citation <https://www.worldwildlife.org/places/amazon> ;
+  af:sourceTier "C" .

@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00363>
   a schema:TechArticle ;
   schema:headline "Great Depression" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00363>
-  schema:citation <https://www.publicaffairsbooks.com/titles/benjamin-roth/the-great-depression/9781586489014/> .
+  schema:citation <https://www.publicaffairsbooks.com/titles/benjamin-roth/the-great-depression/9781586489014/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00363>
-  schema:citation <https://www.publicaffairsbooks.com/great-depression/> .
+  schema:citation <https://www.publicaffairsbooks.com/great-depression/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00363>
-  schema:citation <https://global.oup.com/vsi-depression/> .
+  schema:citation <https://global.oup.com/vsi-depression/> ;
+  af:sourceTier "C" .

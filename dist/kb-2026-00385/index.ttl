@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00385>
   a schema:TechArticle ;
   schema:headline "Ocean Currents" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.5" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00385>
-  schema:citation <https://oceanservice.noaa.gov/education/tutorial_currents/> .
+  schema:citation <https://oceanservice.noaa.gov/education/tutorial_currents/> ;
+  af:sourceTier "C" .

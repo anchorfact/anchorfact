@@ -1,7 +1,7 @@
 # Exercise Physiology: How the Body Adapts to Training
-Confidence: high
+Confidence: medium (0.725) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Exercise physiology explains how cardiovascular, respiratory, muscular, and endocrine systems adapt to training stress. These adaptations are the biological basis for improved athletic performance and health.

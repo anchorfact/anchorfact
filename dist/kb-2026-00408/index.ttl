@@ -4,17 +4,23 @@
 <https://anchorfact.org/kb/kb-2026-00408>
   a schema:TechArticle ;
   schema:headline "Ancient Greek Literature" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00408>
-  schema:citation <https://www.gutenberg.org/ebooks/2199> .
+  schema:citation <https://www.gutenberg.org/ebooks/2199> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00408>
-  schema:citation <https://www.penguinrandomhouse.com/iliad/> .
+  schema:citation <https://www.penguinrandomhouse.com/iliad/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00408>
-  schema:citation <https://global.oup.com/vsi-greek-lit/> .
+  schema:citation <https://global.oup.com/vsi-greek-lit/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00408>
-  schema:citation <https://www.penguinrandomhouse.com/iliad/> .
+  schema:citation <https://www.penguinrandomhouse.com/iliad/> ;
+  af:sourceTier "C" .

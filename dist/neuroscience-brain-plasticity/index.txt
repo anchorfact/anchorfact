@@ -1,7 +1,7 @@
 # Neuroscience: Neuroplasticity and Brain Function
-Confidence: high
+Confidence: low (0.475) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Neuroplasticity — the brain's lifelong capacity to reorganize structure and function — is the biological basis of learning, memory, and recovery from injury.

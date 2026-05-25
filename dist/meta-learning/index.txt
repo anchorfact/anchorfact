@@ -1,7 +1,7 @@
 # Meta-Learning: Learning to Learn with MAML and Reptile
-Confidence: high
+Confidence: medium (0.69) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Meta-learning trains models to learn efficiently. Given a distribution of tasks, the meta-learner acquires knowledge that accelerates learning on new tasks — the model "learns how to learn." MAML finds optimal initializations; Reptile simplifies the process.

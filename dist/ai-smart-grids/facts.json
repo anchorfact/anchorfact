@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-smart-grids-1",
     "text": "AI-powered smart grid management (2023-2026): deep learning models (LSTM, TFT, Transformer) predict electricity demand at 15-minute to day-ahead horizons with 2-5% MAPE (Mean Absolute Percentage Error), enabling optimal generator scheduling and reducing reliance on expensive peaker plants. Renewable forecasting (solar irradiance, wind speed) uses ConvLSTM on satellite cloud imagery and NWP data, reducing forecast error by 20-30% vs persistence models.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=smart+grid+load+forecasting+deep+learning"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-smart-grids-2",
     "text": "Reinforcement learning for grid optimization: DeepMind (2019-2025) demonstrated that RL-based cooling optimization in Google data centers reduces energy consumption by 30-40%, while grid-scale RL applications optimize battery storage dispatch, electric vehicle charging scheduling, and demand response (incentivizing consumers to shift usage to off-peak hours). The US DOE (2024) estimates AI-optimized grids can reduce carbon emissions by 10-20% through improved renewable integration.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=reinforcement+learning+grid+optimization"

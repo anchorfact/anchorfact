@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00001>
   a schema:TechArticle ;
   schema:headline "Transformer Architecture" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.52" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00001>
-  schema:citation <https://arxiv.org/abs/1706.03762> .
+  schema:citation <https://arxiv.org/abs/1706.03762> ;
+  af:sourceTier "S" .

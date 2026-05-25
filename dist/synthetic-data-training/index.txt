@@ -1,7 +1,7 @@
 # Synthetic Data in AI Training
-Confidence: high
+Confidence: medium (0.76) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Synthetic data — generating training examples from other AI models — has emerged as both a powerful scaling technique and a fundamental risk. Models like Phi-4 achieve state-of-the-art results primarily from synthetic data, while model collapse threatens recursive use.

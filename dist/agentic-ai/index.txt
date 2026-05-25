@@ -1,7 +1,7 @@
 # Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Agentic AI represents the shift from passive question-answering LLMs to proactive autonomous agents — systems that perceive, plan, use tools, and execute multi-step goals. From coding agents to research assistants, agentic architectures are redefining what AI can accomplish independently.

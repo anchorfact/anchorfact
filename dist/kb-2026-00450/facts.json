@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-sports-001",
     "text": "Competitive swimming has 4 strokes: freestyle (fastest, front crawl), backstroke (only stroke swum on back), breaststroke (slowest, simultaneous arm/leg motion), butterfly (most demanding, simultaneous overhead arm recovery). Medley: individual (one swimmer all 4) or relay (4 swimmers, each one stroke).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.worldaquatics.com/swimming/rules"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-sports-002",
     "text": "Freestyle: alternate arm pulls, flutter kick, breathing to side every 2-3 strokes.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.simonandschuster.com/books/Total-Immersion/Terry-Laughlin/9780743253434"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-sports-003",
     "text": "Butterfly: dolphin kick, both arms recover over water simultaneously — Michael Phelps' signature stroke.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.simonandschuster.com/books/Total-Immersion/Terry-Laughlin/9780743253434"

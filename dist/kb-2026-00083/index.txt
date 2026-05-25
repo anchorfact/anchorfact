@@ -1,5 +1,5 @@
 # Server-Sent Events (SSE)
-Confidence: high
+Confidence: medium (0.675) (verified)
 Last verified: 2026-05-22
 Generation: human_only
 

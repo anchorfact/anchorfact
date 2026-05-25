@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-ethics-and-bias>
   a schema:TechArticle ;
   schema:headline "AI Ethics and Algorithmic Bias" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.745" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-ethics-and-bias>
-  schema:citation <https://www.penguinrandomhouse.com/books/316277/weapons-of-math-destruction-by-cathy-oneil/> .
+  schema:citation <https://www.penguinrandomhouse.com/books/316277/weapons-of-math-destruction-by-cathy-oneil/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/ai-ethics-and-bias>
-  schema:citation <https://artificialintelligenceact.eu/> .
+  schema:citation <https://artificialintelligenceact.eu/> ;
+  af:sourceTier "S" .

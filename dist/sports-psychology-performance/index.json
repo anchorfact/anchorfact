@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/sports-psychology-performance",
   "headline": "Sports Psychology: Mental Skills for Peak Performance",
   "description": "Sports psychology trains the mind for peak performance — managing pressure, maintaining focus, and building resilience are as critical as physical preparation.",
-  "dateCreated": "2026-05-25T02:46:04.681Z",
+  "dateCreated": "2026-05-24",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",
@@ -16,18 +16,50 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidence": "low",
+  "anchorfact:confidenceScore": 0.55,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 0.3,
+      "source_count": 0.8,
+      "source_verified": 0.9,
+      "freshness": 0.9,
+      "decay": 0.30000000000000004,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "low",
+    "confidence_score": 0.55,
+    "confidence_basis": "verified_sources",
+    "sources_total": 2,
+    "sources_verified": 2,
+    "sources_unreachable": 0,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "C",
+      "C"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": true,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "Foundations of Sport and Exercise Psychology, 8th Edition",
-      "sameAs": "https://www.humankinetics.com/foundations-of-sport-and-exercise-psychology/"
+      "sameAs": "https://www.humankinetics.com/foundations-of-sport-and-exercise-psychology/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2023
     },
     {
       "@type": "CreativeWork",
       "name": "The Champion's Mind (Afremow)",
-      "sameAs": "https://www.penguinrandomhouse.com/books/313442/the-champions-mind-by-jim-afremow-phd/"
+      "sameAs": "https://www.penguinrandomhouse.com/books/313442/the-champions-mind-by-jim-afremow-phd/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2013
     }
   ]
 }

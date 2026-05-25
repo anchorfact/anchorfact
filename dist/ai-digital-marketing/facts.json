@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-digital-marketing-1",
     "text": "AI-powered marketing platforms (HubSpot AI, Salesforce Marketing Cloud, Adobe Sensei) deploy: (1) Personalization engines -- collaborative filtering + content-based + contextual bandits selecting offers/creatives per user; (2) Campaign optimization -- RL-based budget allocation across channels (search, social, display, email) maximizing ROI; (3) Customer analytics -- clustering + LTV prediction (deep survival models) + churn prediction (XGBoost/neural networks with 85-92% accuracy); (4) Content generation -- LLM-generated ad copy, email subject lines, and product descriptions.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=digital+marketing+AI+personalization"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-digital-marketing-2",
     "text": "Contextual multi-armed bandits (2023-2025) are the dominant framework for real-time marketing optimization: each user visit is a \"pull\" of the bandit arm (offer/ad), the reward is click/conversion. Thompson sampling and upper confidence bound (UCB) algorithms balance exploration (try new things) and exploitation (use what works). Meta (2025) reports bandit-based ad delivery improves conversion rates by 15-30% over static targeting with 100x fewer parameters than deep neural network approaches.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=contextual+bandit+marketing"

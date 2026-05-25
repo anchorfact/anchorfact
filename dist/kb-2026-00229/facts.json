@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-001",
     "text": "OOP organizes code around objects (data + behavior) rather than functions. Four pillars: Encapsulation (hide internals), Inheritance (reuse through hierarchy), Polymorphism (same interface, different behavior), Abstraction (simplify complex reality). Languages: Java, C++, Python, C#, Ruby.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://dl.acm.org/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-002",
     "text": "Inheritance: `class Dog extends Animal` — code reuse but can create fragile hierarchies.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://dl.acm.org/"

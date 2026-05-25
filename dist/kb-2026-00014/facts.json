@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-01",
     "text": "Kubernetes is an open-source container orchestration platform originally designed by Google, based on their internal Borg system",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.1145/2898442.2898444"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-02",
     "text": "Donated to the CNCF in 2015, it automates deployment, scaling, and management of containerized applications across clusters of machines",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://kubernetes.io/docs/"

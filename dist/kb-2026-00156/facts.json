@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-01",
     "text": "NGINX and HAProxy are the most popular software load balancers",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://nginx.org/en/docs/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-02",
     "text": "Cloud-native: AWS ALB/NLB, GCP Cloud Load Balancing",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://nginx.org/en/docs/"

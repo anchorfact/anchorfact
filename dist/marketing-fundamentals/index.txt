@@ -1,7 +1,7 @@
 # Marketing: Strategy, Consumer Behavior, and Digital Channels
-Confidence: high
+Confidence: low (0.475) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Marketing creates, communicates, and delivers value to customers. The 4Ps framework guides strategy; consumer psychology explains why people buy; digital channels enable data-driven targeting at unprecedented scale.

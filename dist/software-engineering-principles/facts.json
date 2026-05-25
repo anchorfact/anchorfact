@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-cs-se-001",
     "text": "Brooks's Law (1975): adding manpower to a late project makes it later.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.informit.com/store/mythical-man-month-essays-on-software-engineering-9780201835953"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-cs-se-002",
     "text": "Agile Manifesto (2001): individuals/interactions, working software, collaboration, change response.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://agilemanifesto.org/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-cs-se-003",
     "text": "SOLID principles (Martin): Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.informit.com/store/clean-architecture-a-craftsmans-guide-to-software-structure-9780134494166"

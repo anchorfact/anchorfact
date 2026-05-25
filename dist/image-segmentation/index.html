@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Image Segmentation: From U-Net to SAM — AnchorFact</title></head>
-<body><article>## TL;DR<br>
-Image segmentation partitions images into meaningful regions — semantic (class per pixel), instance (object per pixel), or panoptic (both). U-Net dominates medical imaging; SAM enables general-purpose interactive segmentation.<br>
-<br>
-## Core Explanation<br>
-Encoder-decoder architectures: the encoder compresses spatial information into feature maps; the decoder upsamples to pixel-level predictions. Skip connections (U-Net) preserve fine spatial details lost during downsampling. Dilated/atrous convolutions maintain receptive field without resolution loss.<br>
-<br>
-## Detailed Analysis<br>
-Mask R-CNN added a small FCN branch to Faster R-CNN for instance mask prediction — the dominant model from 2017-2023. SAM's three-component design: image encoder (ViT), prompt encoder, and mask decoder. The lightning-fast mask decoder enables real-time interactive segmentation after one-time image encoding.<br>
-<br>
-## Further Reading<br>
-- Papers With Code: Semantic Segmentation<br>
-- Meta AI: SAM Demo & Research<br>
+<head>
+  <meta charset="utf-8">
+  <title>Image Segmentation: From U-Net to SAM — AnchorFact</title>
+  <meta name="anchorfact:confidence" content="medium (0.76)">
+  <meta name="anchorfact:generation" content="ai_structured">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/image-segmentation","headline":"Image Segmentation: From U-Net to SAM","description":"Image segmentation partitions images into meaningful regions — semantic (class per pixel), instance (object per pixel), or panoptic (both). U-Net dominates medical imaging; SAM enables general-purpose interactive segmentation.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.76,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.9,"freshness":0.9,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.76,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":2,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["A","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"U-Net: Convolutional Networks for Biomedical Image Segmentation","sameAs":"https://arxiv.org/abs/1505.04597","anchorfact:sourceTier":"A","anchorfact:year":2015},{"@type":"CreativeWork","name":"Segment Anything (SAM)","sameAs":"https://arxiv.org/abs/2304.02643","anchorfact:sourceTier":"A","anchorfact:year":2023}]}</script>
+</head>
+<body><article>## TL;DR<br>
+Image segmentation partitions images into meaningful regions — semantic (class per pixel), instance (object per pixel), or panoptic (both). U-Net dominates medical imaging; SAM enables general-purpose interactive segmentation.<br>
+<br>
+## Core Explanation<br>
+Encoder-decoder architectures: the encoder compresses spatial information into feature maps; the decoder upsamples to pixel-level predictions. Skip connections (U-Net) preserve fine spatial details lost during downsampling. Dilated/atrous convolutions maintain receptive field without resolution loss.<br>
+<br>
+## Detailed Analysis<br>
+Mask R-CNN added a small FCN branch to Faster R-CNN for instance mask prediction — the dominant model from 2017-2023. SAM's three-component design: image encoder (ViT), prompt encoder, and mask decoder. The lightning-fast mask decoder enables real-time interactive segmentation after one-time image encoding.<br>
+<br>
+## Further Reading<br>
+- Papers With Code: Semantic Segmentation<br>
+- Meta AI: SAM Demo & Research<br>
 - MONAI: Medical Open Network for AI</article></body>
 </html>

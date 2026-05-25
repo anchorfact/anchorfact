@@ -4,17 +4,23 @@
 <https://anchorfact.org/kb/kb-2026-00066>
   a schema:TechArticle ;
   schema:headline "Git Version Control System" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.6" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00066>
-  schema:citation <https://git-scm.com/book/en/v2> .
+  schema:citation <https://git-scm.com/book/en/v2> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00066>
-  schema:citation <https://git-scm.com/docs> .
+  schema:citation <https://git-scm.com/docs> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00066>
-  schema:citation <https://git-scm.com/book> .
+  schema:citation <https://git-scm.com/book> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00066>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.git> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.git> ;
+  af:sourceTier "C" .

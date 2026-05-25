@@ -1,7 +1,7 @@
 # AI for Social Media: Misinformation Detection, Hate Speech Moderation, and Content Safety
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Social media platforms process billions of posts daily — more than any human moderation team could review. AI detects hate speech, misinformation, harassment, and harmful content at scale, but faces fundamental challenges: context understanding, cultural nuance, and bias. The frontier is explainable, fair, and context-aware moderation that protects users without over-censoring legitimate speech.

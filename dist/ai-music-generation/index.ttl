@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-music-generation>
   a schema:article ;
   schema:headline "AI Music and Audio Generation: Suno, Udio, and MusicLM" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.74" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-music-generation>
-  schema:citation <https://arxiv.org/abs/2301.11325> .
+  schema:citation <https://arxiv.org/abs/2301.11325> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-music-generation>
-  schema:citation <https://suno.com/blog/v5> .
+  schema:citation <https://suno.com/blog/v5> ;
+  af:sourceTier "C" .

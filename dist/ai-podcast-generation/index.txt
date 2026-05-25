@@ -1,7 +1,7 @@
 # AI Podcast Generation: Text-to-Speech Narration, AI Hosts, and Automated Audio Content
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI generates podcasts -- from NotebookLM's AI hosts discussing uploaded documents to ElevenLabs narrating audiobooks to Spotify's AI DJ. The podcast creation pipeline is being compressed from hours of recording/editing to minutes of AI generation.

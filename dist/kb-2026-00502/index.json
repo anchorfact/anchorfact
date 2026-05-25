@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00502",
   "headline": "Swimming Training and Stroke Techniques",
   "description": "Competitive swimming comprises four strokes: freestyle, backstroke, breaststroke, butterfly. Training combines aerobic base work, anaerobic sprint sets, technique drills, and dry-land strength. Key concepts: interval training, pace control, flip turns, streamline position, bilateral breathing. Olympic program: 35 events from 50m to 1500m.",
-  "dateCreated": "2026-05-25T02:46:04.684Z",
-  "dateModified": "2026-05-25T02:46:04.684Z",
+  "dateCreated": "2026-05-24",
+  "dateModified": "2026-05-25T12:59:32.570Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -16,30 +16,68 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidence": "low",
+  "anchorfact:confidenceScore": 0.57,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 0.3,
+      "source_count": 1,
+      "source_verified": 0.7,
+      "freshness": 1,
+      "decay": 0.1,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "low",
+    "confidence_score": 0.57,
+    "confidence_basis": "verified_sources",
+    "sources_total": 4,
+    "sources_verified": 2,
+    "sources_unreachable": 2,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "C",
+      "C",
+      "C",
+      "C"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": false,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "World Aquatics Competition Regulations 2024",
-      "sameAs": "https://www.worldaquatics.com/swimming/rules"
+      "sameAs": "https://www.worldaquatics.com/swimming/rules",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2024
     },
     {
       "@type": "CreativeWork",
       "name": "Swimming Fastest (Ernest W. Maglischo)",
-      "sameAs": "https://www.humankinetics.com/"
+      "sameAs": "https://www.humankinetics.com/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2003
     },
     {
       "@type": "CreativeWork",
       "name": "Swimming Anatomy (2025 Edition)",
       "author": "McLeod I.",
-      "sameAs": "https://us.humankinetics.com/swimming-anatomy/"
+      "sameAs": "https://us.humankinetics.com/swimming-anatomy/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "The Swim Coaching Bible (2025 Update)",
       "author": "multiple",
-      "sameAs": "https://us.humankinetics.com/swimming/"
+      "sameAs": "https://us.humankinetics.com/swimming/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     }
   ]
 }

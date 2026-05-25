@@ -1,7 +1,7 @@
 # Deep Reinforcement Learning Algorithms: PPO, SAC, Dreamer, and Decision Transformer
-Confidence: high
+Confidence: medium (0.78) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Deep Reinforcement Learning has evolved from simple DQN to sophisticated algorithms: PPO dominates continuous control, SAC excels at sample-efficient exploration, Dreamer learns world models, and Decision Transformer reframes RL as sequence modeling.

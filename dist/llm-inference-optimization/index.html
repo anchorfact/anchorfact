@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>LLM Inference Optimization: From FlashAttention to Speculative Decoding — AnchorFact</title></head>
-<body><article>## TL;DR<br>
-LLM inference optimization has made serving trillion-parameter models economically viable. FlashAttention eliminates the memory bottleneck; speculative decoding accelerates generation 2-3x; KV-cache optimization reduces memory by 8x.<br>
-<br>
-## Core Explanation<br>
-Attention is the bottleneck: computing attention scores between all token pairs requires O(n²) memory. FlashAttention tiles this computation in fast SRAM. KV-cache stores past key/value vectors to avoid recomputation but consumes GBs of memory. Quantization compresses it to INT4/INT8.<br>
-<br>
-## Detailed Analysis<br>
-Continuous batching (vLLM) maximizes GPU utilization by dynamically adding/removing requests. PagedAttention manages KV-cache like virtual memory. Tensor parallelism splits matrices across GPUs. Pipeline parallelism divides layers across devices. Mixture-of-Experts reduces active parameters per token.<br>
-<br>
-## Further Reading<br>
-- FlashAttention GitHub<br>
-- vLLM Project<br>
+<head>
+  <meta charset="utf-8">
+  <title>LLM Inference Optimization: From FlashAttention to Speculative Decoding — AnchorFact</title>
+  <meta name="anchorfact:confidence" content="medium (0.76)">
+  <meta name="anchorfact:generation" content="ai_structured">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/llm-inference-optimization","headline":"LLM Inference Optimization: From FlashAttention to Speculative Decoding","description":"LLM inference optimization has made serving trillion-parameter models economically viable. FlashAttention eliminates the memory bottleneck; speculative decoding accelerates generation 2-3x; KV-cache optimization reduces memory by 8x.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.76,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.9,"freshness":0.9,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.76,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":2,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["A","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"FlashAttention: Fast and Memory-Efficient Exact Attention","sameAs":"https://arxiv.org/abs/2205.14135","anchorfact:sourceTier":"A","anchorfact:year":2022},{"@type":"CreativeWork","name":"Fast Inference from Transformers via Speculative Decoding","sameAs":"https://arxiv.org/abs/2211.17192","anchorfact:sourceTier":"A","anchorfact:year":2023}]}</script>
+</head>
+<body><article>## TL;DR<br>
+LLM inference optimization has made serving trillion-parameter models economically viable. FlashAttention eliminates the memory bottleneck; speculative decoding accelerates generation 2-3x; KV-cache optimization reduces memory by 8x.<br>
+<br>
+## Core Explanation<br>
+Attention is the bottleneck: computing attention scores between all token pairs requires O(n²) memory. FlashAttention tiles this computation in fast SRAM. KV-cache stores past key/value vectors to avoid recomputation but consumes GBs of memory. Quantization compresses it to INT4/INT8.<br>
+<br>
+## Detailed Analysis<br>
+Continuous batching (vLLM) maximizes GPU utilization by dynamically adding/removing requests. PagedAttention manages KV-cache like virtual memory. Tensor parallelism splits matrices across GPUs. Pipeline parallelism divides layers across devices. Mixture-of-Experts reduces active parameters per token.<br>
+<br>
+## Further Reading<br>
+- FlashAttention GitHub<br>
+- vLLM Project<br>
 - NVIDIA TensorRT-LLM</article></body>
 </html>

@@ -1,7 +1,7 @@
 # AI for Weather Forecasting: Data-Driven Numerical Weather Prediction and Nowcasting
-Confidence: high
+Confidence: medium (0.84) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is revolutionizing weather forecasting -- models like GraphCast, Pangu-Weather, and FourCastNet can produce 10-day global forecasts in seconds that rival the accuracy of traditional supercomputer-based physics simulations that took hours. By 2025, the European Centre for Medium-Range Weather Forecasts is running AI forecasts operationally alongside classical models, marking the beginning of the data-driven weather prediction era.

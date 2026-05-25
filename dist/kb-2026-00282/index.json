@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00282",
   "headline": "Model Evaluation Metrics",
   "description": "Model evaluation metrics quantify performance. Classification: accuracy, precision, recall, F1-score, ROC-AUC. Regression: MSE, MAE, R². Confusion matrix: TP/FP/FN/TN. Choose metrics aligned with business goals: medical diagnosis needs high recall (miss fewer positives), spam detection needs high precision (fewer false alarms).",
-  "dateCreated": "2026-05-25T02:46:03.753Z",
+  "dateCreated": "2026-05-22",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",
@@ -16,26 +16,61 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "human_only",
+  "anchorfact:confidence": "low",
+  "anchorfact:confidenceScore": 0.475,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 0.3,
+      "source_count": 1,
+      "source_verified": 0.4,
+      "freshness": 1,
+      "decay": 0.30000000000000004,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "low",
+    "confidence_score": 0.475,
+    "confidence_basis": "verified_sources",
+    "sources_total": 3,
+    "sources_verified": 1,
+    "sources_unreachable": 2,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "C",
+      "C",
+      "C"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": true,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "Pattern Recognition and Machine Learning (Bishop)",
       "author": "Bishop, Christopher M.",
-      "sameAs": "https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/"
+      "sameAs": "https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2006
     },
     {
       "@type": "CreativeWork",
       "name": "Evaluating Large Language Models: A Holistic Survey of Benchmarks and Metrics",
       "author": "multiple",
-      "sameAs": "https://doi.org/10.1145/3712345"
+      "sameAs": "https://doi.org/10.1145/3712345",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "A Comprehensive Survey on Evaluation Metrics for Machine Learning: Classification, Regression, and Beyond",
       "author": "multiple",
-      "sameAs": "https://doi.org/10.1109/ACCESS.2025.3567842"
+      "sameAs": "https://doi.org/10.1109/ACCESS.2025.3567842",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     }
   ]
 }

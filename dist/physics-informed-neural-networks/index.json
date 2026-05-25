@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/physics-informed-neural-networks",
   "headline": "Physics-Informed Neural Networks: Solving PDEs with Deep Learning and Neural Operators",
   "description": "Physics-Informed Neural Networks (PINNs) solve differential equations by embedding physical laws directly into neural network training — replacing expensive numerical simulations with neural surrogates that learn directly from PDE equations. From fluid dynamics to heat transfer, PINNs are merging scientific computing with deep learning.",
-  "dateCreated": "2026-05-25T02:46:03.786Z",
+  "dateCreated": "2026-05-24",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",
@@ -17,17 +17,49 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidenceScore": 0.85,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 1,
+      "source_count": 0.8,
+      "source_verified": 1,
+      "freshness": 1,
+      "decay": 0.1,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "high",
+    "confidence_score": 0.85,
+    "confidence_basis": "verified_sources",
+    "sources_total": 2,
+    "sources_verified": 2,
+    "sources_unreachable": 0,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "S",
+      "S"
+    ],
+    "sources_has_doi": true,
+    "sources_has_url": true,
+    "article_has_disputed": false,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "Physics-informed neural networks for PDE problems: a comprehensive review of methods, applications, and challenges",
-      "sameAs": "https://link.springer.com/article/10.1007/s10462-025-11322-7"
+      "sameAs": "https://link.springer.com/article/10.1007/s10462-025-11322-7",
+      "anchorfact:sourceTier": "S",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "Automated design for physics-informed modeling with convolutional neural networks",
-      "sameAs": "https://www.nature.com/articles/s42005-025-02414-5"
+      "sameAs": "https://www.nature.com/articles/s42005-025-02414-5",
+      "anchorfact:sourceTier": "S",
+      "anchorfact:year": 2025
     }
   ]
 }

@@ -1,7 +1,7 @@
 # AI for Satellite Imagery: Object Detection, Change Detection, and Global Monitoring
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI sees the planet from space -- counting ships at sea, detecting new construction, monitoring crop health, and mapping humanitarian crises. From NASA's open-source Prithvi model to commercial geospatial intelligence platforms, foundation models are democratizing satellite AI.

@@ -4,20 +4,27 @@
 <https://anchorfact.org/kb/kb-2026-00022>
   a schema:TechArticle ;
   schema:headline "TypeScript" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00022>
-  schema:citation <https://www.typescriptlang.org/docs/> .
+  schema:citation <https://www.typescriptlang.org/docs/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00022>
-  schema:citation <https://github.com/microsoft/TypeScript> .
+  schema:citation <https://github.com/microsoft/TypeScript> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00022>
-  schema:citation <https://doi.org/undefined> .
+  schema:citation <https://doi.org/undefined> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00022>
-  schema:citation <https://www.oreilly.com/typescript/> .
+  schema:citation <https://www.oreilly.com/typescript/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00022>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.ts> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.ts> ;
+  af:sourceTier "C" .

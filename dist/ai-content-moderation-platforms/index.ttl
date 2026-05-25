@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-content-moderation-platforms>
   a schema:article ;
   schema:headline "AI Content Moderation Platforms: Large-Scale Safety Systems, Policy Engines, and Multilingual Review" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-content-moderation-platforms>
-  schema:citation <https://arxiv.org/search/?query=content+moderation+AI+scale+pipeline> .
+  schema:citation <https://arxiv.org/search/?query=content+moderation+AI+scale+pipeline> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-content-moderation-platforms>
-  schema:citation <https://transparency.meta.com/reports/community-standards-enforcement/> .
+  schema:citation <https://transparency.meta.com/reports/community-standards-enforcement/> ;
+  af:sourceTier "A" .

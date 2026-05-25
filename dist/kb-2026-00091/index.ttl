@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00091>
   a schema:TechArticle ;
   schema:headline "WebGL" ;
-  af:confidence "high" ;
+  af:confidence "medium" ;
+  af:confidenceScore "0.695" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00091>
-  schema:citation <https://www.khronos.org/registry/webgl/specs/latest/2.0/> .
+  schema:citation <https://www.khronos.org/registry/webgl/specs/latest/2.0/> ;
+  af:sourceTier "S" .

@@ -1,5 +1,5 @@
 # Track and Field Events
-Confidence: high
+Confidence: low (0.395) (verified)
 Last verified: 2026-05-24
 Generation: ai_assisted
 

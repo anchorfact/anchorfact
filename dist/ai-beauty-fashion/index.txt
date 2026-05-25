@@ -1,7 +1,7 @@
 # AI for Beauty and Fashion: Virtual Try-On, Personalized Styling, and Trend Prediction
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI dresses and beautifies the world -- virtually trying on makeup and clothing before buying, predicting fashion trends from social media, and recommending personalized outfits. From L'Oreal's ModiFace to Stitch Fix's AI stylists, computer vision and generative AI transform how we discover and experience fashion.

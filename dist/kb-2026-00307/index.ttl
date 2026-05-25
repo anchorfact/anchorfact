@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00307>
   a schema:TechArticle ;
   schema:headline "Zig Language" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.325" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00307>
-  schema:citation <https://ziglang.org/documentation/> .
+  schema:citation <https://ziglang.org/documentation/> ;
+  af:sourceTier "C" .

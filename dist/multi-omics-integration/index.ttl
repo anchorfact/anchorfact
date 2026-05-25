@@ -5,10 +5,14 @@
   a schema:article ;
   schema:headline "Multi-Omics Integration: AI-Driven Systems Biology from Genomics to Proteomics" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidenceScore "0.85" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/multi-omics-integration>
-  schema:citation <https://www.nature.com/articles/s41467-026-68956-6> .
+  schema:citation <https://www.nature.com/articles/s41467-026-68956-6> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/multi-omics-integration>
-  schema:citation <https://link.springer.com/article/10.1007/s10238-025-01965-9> .
+  schema:citation <https://link.springer.com/article/10.1007/s10238-025-01965-9> ;
+  af:sourceTier "S" .

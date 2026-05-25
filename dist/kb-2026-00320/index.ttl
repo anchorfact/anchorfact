@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00320>
   a schema:TechArticle ;
   schema:headline "Consul (HashiCorp)" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00320>
-  schema:citation <https://developer.hashicorp.com/consul/docs> .
+  schema:citation <https://developer.hashicorp.com/consul/docs> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00320>
-  schema:citation <https://www.oreilly.com/hashicorp/> .
+  schema:citation <https://www.oreilly.com/hashicorp/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00320>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.sd> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.sd> ;
+  af:sourceTier "C" .

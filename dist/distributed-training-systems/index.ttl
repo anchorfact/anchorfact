@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/distributed-training-systems>
   a schema:TechArticle ;
   schema:headline "Distributed Training: FSDP, DeepSpeed, and Scaling Laws" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.76" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/distributed-training-systems>
-  schema:citation <https://arxiv.org/abs/1910.02054> .
+  schema:citation <https://arxiv.org/abs/1910.02054> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/distributed-training-systems>
-  schema:citation <https://pytorch.org/docs/stable/fsdp.html> .
+  schema:citation <https://pytorch.org/docs/stable/fsdp.html> ;
+  af:sourceTier "C" .

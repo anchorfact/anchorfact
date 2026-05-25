@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00413>
   a schema:TechArticle ;
   schema:headline "World Literature" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00413>
-  schema:citation <https://wwnorton.com/books/9780393602814> .
+  schema:citation <https://wwnorton.com/books/9780393602814> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00413>
-  schema:citation <https://www.penguinrandomhouse.com/classics/> .
+  schema:citation <https://www.penguinrandomhouse.com/classics/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00413>
-  schema:citation <https://global.oup.com/vsi-literature/> .
+  schema:citation <https://global.oup.com/vsi-literature/> ;
+  af:sourceTier "C" .

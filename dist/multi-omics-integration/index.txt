@@ -1,7 +1,7 @@
 # Multi-Omics Integration: AI-Driven Systems Biology from Genomics to Proteomics
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Multi-omics integration uses AI to combine data from multiple biological layers — genome (DNA), transcriptome (RNA), proteome (proteins), and metabolome (small molecules) — into unified models of biological systems. Rather than studying one molecular layer in isolation, multi-omics AI captures the full complexity of living systems, from genetic predisposition to protein function to metabolic output.

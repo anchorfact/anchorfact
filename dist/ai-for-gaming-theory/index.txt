@@ -1,7 +1,7 @@
 # AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy
-Confidence: high
+Confidence: medium (0.82) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI has mastered games through different strategic paradigms: perfect information (chess, Go -- AlphaZero, 2017-2018), imperfect information (poker -- Libratus/Pluribus, 2017-2019), and the hardest frontier -- games combining imperfect information, multi-agent negotiation, and natural language communication (DeepNash for Stratego, Cicero for Diplomacy). Each milestone has advanced computational game theory and multi-agent strategy.

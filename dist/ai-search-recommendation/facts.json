@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-search-recommendation-1",
     "text": "AI search and recommendation (2023-2026): (1) Semantic search -- dense retrieval (ColBERT, DPR) replaces BM25 keyword matching with embedding-based similarity, improving recall by 15-25% on tail queries. Hybrid search combines dense + sparse retrieval + cross-encoder reranking; (2) Recommendation -- two-tower architectures (user tower + item tower) serve as the backbone for industrial-scale recommenders (YouTube, TikTok, Amazon). Recent advances: multi-task learning (jointly optimizing engagement, satisfaction, and diversity).",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=dense+retrieval+recommendation+two+tower+survey"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-search-recommendation-2",
     "text": "LLMs for search and recommendation: conversational search (\"I need a laptop under $1000 with good battery life for programming\" -> AI filters and ranks), LLM-based ranking (GPT-4 evaluates relevance of query-document pairs, 2024), and generative recommendation (LLM directly outputs recommended items). The shift from retrieval-augmented generation to generation-augmented retrieval represents the 2025-2026 frontier.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=LLM+search+ranking+recommendation"

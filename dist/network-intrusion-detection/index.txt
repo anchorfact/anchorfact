@@ -1,7 +1,7 @@
 # Network Intrusion Detection: AI-Powered Anomaly Detection and Zero-Day Threat Identification
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Network Intrusion Detection Systems (NIDS) are the immune system of the internet — monitoring traffic for malicious activity. AI is transforming NIDS from signature-based pattern matching (misses novel attacks) to behavior-based anomaly detection that identifies zero-day threats, insider attacks, and advanced persistent threats by learning what "normal" network behavior looks like.

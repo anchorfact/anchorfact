@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/conversational-ai-systems>
   a schema:article ;
   schema:headline "Conversational AI: Task-Oriented Dialogue and Open-Domain Chatbots" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.78" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/conversational-ai-systems>
-  schema:citation <https://link.springer.com/book/10.1007/978-3-031-02176-3> .
+  schema:citation <https://link.springer.com/book/10.1007/978-3-031-02176-3> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/conversational-ai-systems>
-  schema:citation <https://arxiv.org/abs/2402.11115> .
+  schema:citation <https://arxiv.org/abs/2402.11115> ;
+  af:sourceTier "A" .

@@ -1,7 +1,7 @@
 # AI for Crisis Hotlines: Suicide Prevention Chatbots, Emotional Support AI, and Risk Detection
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is on the front lines of suicide prevention -- triaging crisis texts in seconds, powering emotional support chatbots, and detecting risk signals in social media posts. From Crisis Text Line's ML triage to Meta's proactive wellness checks, AI extends the reach of limited crisis counseling resources.

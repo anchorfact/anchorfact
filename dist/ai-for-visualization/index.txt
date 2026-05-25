@@ -1,7 +1,7 @@
 # AI for Data Visualization: Automated Chart Generation, Insight Discovery, and Visual Analytics
-Confidence: high
+Confidence: medium (0.73) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is democratizing data visualization -- transforming "what chart should I use?" from a design decision requiring expertise to an automated recommendation, and enabling natural language queries that generate interactive dashboards in seconds. LLMs can now both create charts and understand existing ones, bridging the gap between data and human comprehension.

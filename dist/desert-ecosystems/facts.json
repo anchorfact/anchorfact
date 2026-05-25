@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-geo-de-001",
     "text": "Deserts: ~33% of land surface, defined by aridity (<250mm/year), not temperature.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://wad.jrc.ec.europa.eu/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-geo-de-002",
     "text": "UNCCD: 12M hectares productive land lost annually to desertification, affecting 1.5B people.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.unccd.int/resources/global-land-outlook/glo2"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-geo-de-003",
     "text": "CAM photosynthesis: cacti open stomata at night to conserve water (Nobel, Plant Physiology 5th ed. 2020).",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.elsevier.com/books/physicochemical-and-environmental-plant-physiology/nobel/978-0-12-819146-0"

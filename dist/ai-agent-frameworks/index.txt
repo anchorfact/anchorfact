@@ -1,7 +1,7 @@
 # AI Agent Frameworks: LangChain, AutoGen, and CrewAI
-Confidence: high
+Confidence: medium (0.76) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI agent frameworks provide the orchestration layer for building autonomous AI applications. LangChain pioneered composable LLM pipelines; AutoGen introduced multi-agent conversations; CrewAI enables role-based agent teams.

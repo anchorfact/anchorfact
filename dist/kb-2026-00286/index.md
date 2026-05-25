@@ -35,7 +35,7 @@ data_period: static
 derived_from_human_seed: true
 disputed_statements:
   - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
-generation_method: human_only
+generation_method: ai_structured
 id: kb-2026-00286
 is_live_document: false
 known_gaps:

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-ocean-monitoring-1",
     "text": "AI-powered ocean monitoring (2023-2026): computer vision on satellite imagery (Sentinel-2, Planet) detects plastic pollution accumulations (floating debris, garbage patches) at 10m resolution; bioacoustic AI classifies whale songs and dolphin clicks for marine mammal population monitoring; and autonomous underwater vehicles (AUVs) use deep learning for real-time species identification and habitat mapping. The Ocean Cleanup project uses AI to model plastic transport and optimize interception locations.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=AI+ocean+monitoring+marine+deep+learning"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-ocean-monitoring-2",
     "text": "Oceanographic AI: deep learning models predict ocean currents (using satellite altimetry + Argo float data), sea surface temperature (SST forecasting with ConvLSTM), harmful algal blooms (HAB prediction from chlorophyll + SST + nutrient data), and coral reef health (analyzing underwater imagery for bleaching detection -- Allen Coral Atlas maps all tropical coral reefs at 3.7m resolution using Planet satellite + AI).",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=satellite+plastic+detection+deep+learning"

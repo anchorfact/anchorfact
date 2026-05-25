@@ -1,7 +1,7 @@
 # AI-Powered Search: Perplexity, Google AI Overviews, and the Future
-Confidence: high
+Confidence: low (0.51) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI-powered search represents the most significant disruption to information retrieval since Google. Perplexity's answer engine and Google's AI Overviews synthesize information rather than linking to it — fundamentally changing how billions access knowledge.

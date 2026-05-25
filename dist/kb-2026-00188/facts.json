@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-01",
     "text": "Created by IBM , standardized by OASIS",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://dl.acm.org/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-001",
     "text": "MQTT is a lightweight publish-subscribe messaging protocol designed for constrained devices and low-bandwidth networks. Created by IBM (1999), standardized by OASIS. Used extensively in IoT: smart homes, industrial sensors, connected vehicles. QoS levels: 0 (at most once), 1 (at least once), 2 (exactly once).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://dl.acm.org/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-002",
     "text": "Architecture: Broker (central server) + Clients (publishers and subscribers).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://dl.acm.org/"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-003",
     "text": "Retained messages: new subscribers receive last published message.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://dl.acm.org/"
@@ -49,6 +61,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-004",
     "text": "Last Will and Testament (LWT): message published if client disconnects unexpectedly.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://dl.acm.org/"

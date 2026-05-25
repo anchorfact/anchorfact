@@ -1,7 +1,7 @@
 # AI for Archaeology: Site Detection, Artifact Classification, and Digital Heritage Preservation
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is transforming archaeology by enabling automated detection of buried structures from satellite imagery, classification of millions of pottery sherds, decipherment of ancient scripts, and reconstruction of fragmented artifacts. From discovering hidden Maya cities in LiDAR point clouds to identifying new Nazca geoglyphs from satellite data, deep learning is giving archaeologists a powerful lens through which to see the past.

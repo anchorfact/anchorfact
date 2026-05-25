@@ -5,10 +5,14 @@
   a schema:article ;
   schema:headline "Learned Database Systems: AI-Driven Query Optimization, Learned Indexes, and Cardinality Estimation" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidenceScore "0.85" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/learned-database-systems>
-  schema:citation <https://link.springer.com/article/10.1007/s11704-025-41116-7> .
+  schema:citation <https://link.springer.com/article/10.1007/s11704-025-41116-7> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/learned-database-systems>
-  schema:citation <https://arxiv.org/abs/1712.01208> .
+  schema:citation <https://arxiv.org/abs/1712.01208> ;
+  af:sourceTier "A" .

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-wildlife-conservation-1",
     "text": "Nature Scientific Reports (May 2025) identified key challenges in AI-based animal detection from camera trap images — class imbalance (empty images dominate 60-80% of captures), fine-grained species similarity (distinguishing jaguars from leopards, or 50+ bird species), and domain shift across geographic locations — and demonstrated that ensemble deep learning with hard negative mining and test-time augmentation improves detection F1 by 12-18% over standard fine-tuned CNNs on the Snapshot Serengeti and iWildCam benchmarks.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nature.com/articles/s41598-025-90249-z"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-wildlife-conservation-2",
     "text": "Microsoft AI for Good Lab released PyTorch-Wildlife (2024-2025) — an open-source, unified AI framework for wildlife monitoring combining Megadetector (animal/empty/human/vehicle classification), species classification (30,000+ species supported), and bioacoustic analysis — deployed across 50+ conservation projects globally, including African elephant population monitoring, Amazon rainforest biodiversity assessment, and Arctic marine mammal tracking.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://github.com/microsoft/pytorch-wildlife"

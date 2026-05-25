@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/human-anatomy>
   a schema:Article ;
   schema:headline "Human Anatomy: Systems, Organs, and Function" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.51" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/human-anatomy>
-  schema:citation <https://www.elsevier.com/books/grays-anatomy/standring/978-0-7020-7707-4> .
+  schema:citation <https://www.elsevier.com/books/grays-anatomy/standring/978-0-7020-7707-4> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/human-anatomy>
-  schema:citation <https://www.elsevier.com/books/guyton-and-hall-textbook-of-medical-physiology/hall/978-0-323-59712-8> .
+  schema:citation <https://www.elsevier.com/books/guyton-and-hall-textbook-of-medical-physiology/hall/978-0-323-59712-8> ;
+  af:sourceTier "C" .

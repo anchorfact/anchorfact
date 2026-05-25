@@ -1,7 +1,7 @@
 # Economics: Supply, Demand, and Market Equilibrium
-Confidence: high
+Confidence: medium (0.71) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Economics studies how societies allocate scarce resources. Supply and demand form the core analytical framework, while GDP, inflation, and unemployment are the headline macroeconomic indicators.

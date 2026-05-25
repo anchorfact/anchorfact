@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-arts-01",
     "text": "Mary's Room thought experiment : Mary knows all physical facts about color but has never seen it — does she learn something new when she first sees red",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.hachettebookgroup.com/titles/daniel-c-dennett/consciousness-explained/9780316180658/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-arts-02",
     "text": "Integrated Information Theory : consciousness = integrated information",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.hachettebookgroup.com/titles/daniel-c-dennett/consciousness-explained/9780316180658/"

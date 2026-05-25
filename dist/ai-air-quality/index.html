@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction — AnchorFact</title></head>
-<body><article>## TL;DR<br>
-AI breathes for the planet -- calibrating low-cost sensors into hyperlocal air quality networks, predicting pollution 72 hours ahead, and estimating health impacts. From Google Maps air quality layer to PurpleAir's 30K citizen sensors, AI makes the invisible air visible.<br>
-<br>
-## Core Explanation<br>
-Air quality AI: (1) Sensing -- low-cost sensors (PurpleAir: laser particle counter, $250) + ML calibration against reference monitors ($15K-50K). Satellite AI: Sentinel-5P TROPOMI instrument measures column concentrations; ML converts to surface PM2.5; (2) Prediction -- ConvLSTM (spatial-temporal) + meteorological features + emissions inventory. 24-72h forecasts at 1-10km resolution; (3) Source attribution -- ML identifies pollution sources (traffic vs industrial vs agricultural) from chemical composition and wind patterns; (4) Health -- ML estimate population exposure and predict health outcomes.<br>
-<br>
-## Detailed Analysis<br>
-PurpleAir: 30,000+ sensors, largest air quality network. LM (Laser + ML) correction algorithm calibrates raw readings. Google Maps air quality: integrates PurpleAir + government monitors + satellite AI. Users see real-time AQI for any location. BreezoMeter (Google-acquired): street-level resolution AQI using dispersion modeling + ML. Health impact: ML estimates attributable mortality and morbidity. WHO: 7M premature deaths/year from air pollution. AI helps target interventions to highest-impact areas. Key challenge: indoor air quality (where people spend 90% of time) is largely unmonitored.<br>
+<head>
+  <meta charset="utf-8">
+  <title>AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction — AnchorFact</title>
+  <meta name="anchorfact:confidence" content="medium (0.79)">
+  <meta name="anchorfact:generation" content="ai_structured">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"article","@id":"https://anchorfact.org/kb/ai-air-quality","headline":"AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction","description":"AI breathes for the planet -- calibrating low-cost sensors into hyperlocal air quality networks, predicting pollution 72 hours ahead, and estimating health impacts. From Google Maps air quality layer to PurpleAir's 30K citizen sensors, AI makes the invisible air visible.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.79,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.9,"freshness":1,"decay":0.1,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.79,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":2,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["A","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":false,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Deep Learning for Air Quality Monitoring and Prediction: Low-Cost Sensor Calibration, Satellite Estimation, and Forecasting (2024-2025 Survey)","sameAs":"https://arxiv.org/search/?query=air+quality+deep+learning+PM2.5+prediction","anchorfact:sourceTier":"A","anchorfact:year":2025},{"@type":"CreativeWork","name":"Machine Learning for Air Pollution Source Attribution and Health Impact Assessment","sameAs":"https://arxiv.org/search/?query=air+pollution+machine+learning+source+attribution","anchorfact:sourceTier":"A","anchorfact:year":2025}]}</script>
+</head>
+<body><article>## TL;DR<br>
+AI breathes for the planet -- calibrating low-cost sensors into hyperlocal air quality networks, predicting pollution 72 hours ahead, and estimating health impacts. From Google Maps air quality layer to PurpleAir's 30K citizen sensors, AI makes the invisible air visible.<br>
+<br>
+## Core Explanation<br>
+Air quality AI: (1) Sensing -- low-cost sensors (PurpleAir: laser particle counter, $250) + ML calibration against reference monitors ($15K-50K). Satellite AI: Sentinel-5P TROPOMI instrument measures column concentrations; ML converts to surface PM2.5; (2) Prediction -- ConvLSTM (spatial-temporal) + meteorological features + emissions inventory. 24-72h forecasts at 1-10km resolution; (3) Source attribution -- ML identifies pollution sources (traffic vs industrial vs agricultural) from chemical composition and wind patterns; (4) Health -- ML estimate population exposure and predict health outcomes.<br>
+<br>
+## Detailed Analysis<br>
+PurpleAir: 30,000+ sensors, largest air quality network. LM (Laser + ML) correction algorithm calibrates raw readings. Google Maps air quality: integrates PurpleAir + government monitors + satellite AI. Users see real-time AQI for any location. BreezoMeter (Google-acquired): street-level resolution AQI using dispersion modeling + ML. Health impact: ML estimates attributable mortality and morbidity. WHO: 7M premature deaths/year from air pollution. AI helps target interventions to highest-impact areas. Key challenge: indoor air quality (where people spend 90% of time) is largely unmonitored.<br>
 </article></body>
 </html>

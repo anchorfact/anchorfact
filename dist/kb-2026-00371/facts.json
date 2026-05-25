@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-01",
     "text": "Earth's total water volume: 1.386 billion km³",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://earthobservatory.nasa.gov/features/Water"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-02",
     "text": "Average residence time: oceans 3,200 years, atmosphere 9 days",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://earthobservatory.nasa.gov/features/Water"

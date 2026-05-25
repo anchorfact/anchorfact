@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-content-creation>
   a schema:article ;
   schema:headline "AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-content-creation>
-  schema:citation <https://arxiv.org/search/?query=generative+AI+content+creation+survey> .
+  schema:citation <https://arxiv.org/search/?query=generative+AI+content+creation+survey> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-content-creation>
-  schema:citation <https://arxiv.org/search/?query=human+AI+content+creation+productivity> .
+  schema:citation <https://arxiv.org/search/?query=human+AI+content+creation+productivity> ;
+  af:sourceTier "A" .

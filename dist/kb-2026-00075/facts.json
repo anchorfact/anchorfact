@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-01",
     "text": "OAuth 2.0 is an authorization framework standardized as IETF RFC 6749 that enables third-party applications to obtain limited access to a user's resources without exposing their credentials",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.rfc-editor.org/rfc/rfc6749"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-001",
     "text": "OAuth 2.0 is an authorization framework standardized as IETF RFC 6749 (2012) that enables third-party applications to obtain limited access to a user's resources without exposing their credentials. It powers virtually all \"Sign in with Google/GitHub/Apple\" flows and is the foundation of modern API security.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.rfc-editor.org/rfc/rfc6749"

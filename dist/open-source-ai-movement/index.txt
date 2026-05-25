@@ -1,7 +1,7 @@
 # The Open-Source AI Movement: Llama, DeepSeek, and Democratization
-Confidence: high
+Confidence: medium (0.76) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 The open-source AI movement has democratized access to frontier models. By 2025, open-weight models (Llama, DeepSeek, Mistral, Qwen) match or exceed GPT-4 on key benchmarks, transforming AI from a centralized service to a distributed ecosystem.

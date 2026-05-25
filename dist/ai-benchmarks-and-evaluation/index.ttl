@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-benchmarks-and-evaluation>
   a schema:TechArticle ;
   schema:headline "AI Benchmarks: MMLU, SWE-bench, and How We Measure Intelligence" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.76" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-benchmarks-and-evaluation>
-  schema:citation <https://arxiv.org/abs/2009.03300> .
+  schema:citation <https://arxiv.org/abs/2009.03300> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-benchmarks-and-evaluation>
-  schema:citation <https://arxiv.org/abs/2310.06770> .
+  schema:citation <https://arxiv.org/abs/2310.06770> ;
+  af:sourceTier "A" .

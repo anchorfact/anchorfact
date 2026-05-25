@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Contrastive Learning: SimCLR, MoCo, and CLIP — AnchorFact</title></head>
-<body><article>## TL;DR<br>
-Contrastive learning trains models to recognize what makes examples similar or different, learning representations by pulling positive pairs together and pushing negative pairs apart in embedding space.<br>
-<br>
-## Core Explanation<br>
-The contrastive loss (InfoNCE) treats each training example as its own class: the positive pair (augmented version of same image) should be similar; all other examples in the batch are negatives. Key design choices: data augmentation strategy, batch size (larger = more negatives), projection head dimensionality, and temperature parameter.<br>
-<br>
-## Detailed Analysis<br>
-CLIP extended contrastive learning to cross-modal pretraining — matching images with their captions across 400M examples. This enables zero-shot transfer: classify images by checking which text description (e.g., "a photo of a dog") has highest cosine similarity with the image embedding.<br>
-<br>
-## Further Reading<br>
-- Lilian Weng: Contrastive Representation Learning<br>
-- OpenAI CLIP Blog Post<br>
+<head>
+  <meta charset="utf-8">
+  <title>Contrastive Learning: SimCLR, MoCo, and CLIP — AnchorFact</title>
+  <meta name="anchorfact:confidence" content="medium (0.74)">
+  <meta name="anchorfact:generation" content="ai_structured">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/contrastive-learning","headline":"Contrastive Learning: SimCLR, MoCo, and CLIP","description":"Contrastive learning trains models to recognize what makes examples similar or different, learning representations by pulling positive pairs together and pushing negative pairs apart in embedding space.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.74,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.9,"freshness":0.7,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.74,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":2,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["A","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Learning Transferable Visual Models From Natural Language Supervision (CLIP)","sameAs":"https://arxiv.org/abs/2103.00020","anchorfact:sourceTier":"A","anchorfact:year":2021},{"@type":"CreativeWork","name":"Momentum Contrast for Unsupervised Visual Representation Learning (MoCo)","sameAs":"https://arxiv.org/abs/1911.05722","anchorfact:sourceTier":"A","anchorfact:year":2020}]}</script>
+</head>
+<body><article>## TL;DR<br>
+Contrastive learning trains models to recognize what makes examples similar or different, learning representations by pulling positive pairs together and pushing negative pairs apart in embedding space.<br>
+<br>
+## Core Explanation<br>
+The contrastive loss (InfoNCE) treats each training example as its own class: the positive pair (augmented version of same image) should be similar; all other examples in the batch are negatives. Key design choices: data augmentation strategy, batch size (larger = more negatives), projection head dimensionality, and temperature parameter.<br>
+<br>
+## Detailed Analysis<br>
+CLIP extended contrastive learning to cross-modal pretraining — matching images with their captions across 400M examples. This enables zero-shot transfer: classify images by checking which text description (e.g., "a photo of a dog") has highest cosine similarity with the image embedding.<br>
+<br>
+## Further Reading<br>
+- Lilian Weng: Contrastive Representation Learning<br>
+- OpenAI CLIP Blog Post<br>
 - Papers With Code: Contrastive Learning</article></body>
 </html>

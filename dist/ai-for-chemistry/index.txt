@@ -1,7 +1,7 @@
 # AI for Chemistry: Reaction Prediction, Retrosynthesis, and Computational Chemistry
-Confidence: high
+Confidence: medium (0.82) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is transforming chemistry from a fundamentally experimental science to a computationally predictable one. Machine learning potentials simulate molecular dynamics at quantum accuracy with million-fold speedups, while AI retrosynthesis tools design complete synthetic routes in minutes rather than weeks. These capabilities are accelerating discovery across pharmaceuticals, materials, and catalysis.

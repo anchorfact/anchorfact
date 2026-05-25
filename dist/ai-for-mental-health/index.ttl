@@ -5,10 +5,14 @@
   a schema:article ;
   schema:headline "AI for Mental Health: LLM-Based Therapy, Digital Interventions, and Clinical Trials" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidenceScore "0.85" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-for-mental-health>
-  schema:citation <https://ai.nejm.org/doi/full/10.1056/aIoa2400802> .
+  schema:citation <https://ai.nejm.org/doi/full/10.1056/aIoa2400802> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/ai-for-mental-health>
-  schema:citation <https://www.nature.com/articles/s41591-026-04278-w> .
+  schema:citation <https://www.nature.com/articles/s41591-026-04278-w> ;
+  af:sourceTier "S" .

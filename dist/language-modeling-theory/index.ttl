@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/language-modeling-theory>
   a schema:article ;
   schema:headline "Language Modeling: From N-grams to Scaling Laws and Information-Theoretic Foundations" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.76" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/language-modeling-theory>
-  schema:citation <https://arxiv.org/abs/2001.08361> .
+  schema:citation <https://arxiv.org/abs/2001.08361> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/language-modeling-theory>
-  schema:citation <https://arxiv.org/abs/2203.15556> .
+  schema:citation <https://arxiv.org/abs/2203.15556> ;
+  af:sourceTier "A" .

@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/attention-mechanisms-deep-dive>
   a schema:Article ;
   schema:headline "Attention Mechanisms: Scaled Dot-Product to FlashAttention" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.76" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/attention-mechanisms-deep-dive>
-  schema:citation <https://arxiv.org/abs/1706.03762> .
+  schema:citation <https://arxiv.org/abs/1706.03762> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/attention-mechanisms-deep-dive>
-  schema:citation <https://arxiv.org/abs/2407.08608> .
+  schema:citation <https://arxiv.org/abs/2407.08608> ;
+  af:sourceTier "A" .

@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Meta-Learning: Learning to Learn with MAML and Reptile — AnchorFact</title></head>
-<body><article>## TL;DR<br>
-Meta-learning trains models to learn efficiently. Given a distribution of tasks, the meta-learner acquires knowledge that accelerates learning on new tasks — the model "learns how to learn." MAML finds optimal initializations; Reptile simplifies the process.<br>
-<br>
-## Core Explanation<br>
-Few-shot learning: classify images of a new species from only 5 examples. Meta-learning solution: train on many classification tasks (different species each time) so the model learns a representation and adaptation strategy that generalizes to novel categories. MAML's inner loop (task-specific fine-tuning) and outer loop (meta-optimization across tasks) create a bi-level optimization.<br>
-<br>
-## Detailed Analysis<br>
-Beyond MAML: (1) Metric-based meta-learning — Prototypical Networks learn an embedding where each class has a prototype (mean of support examples), classification by nearest prototype; (2) Matching Networks with attention over support set; (3) Meta-RL — RL^2 and PEARL train policies that adapt behavior from trial-and-error in new environments. ANIL shows MAML's power comes from feature reuse, not rapid learning.<br>
-<br>
-## Further Reading<br>
-- Chelsea Finn: Meta-Learning Tutorial (ICML)<br>
-- learn2learn PyTorch Library<br>
-- Few-shot Learning Survey (Wang et al.)<br>
+<head>
+  <meta charset="utf-8">
+  <title>Meta-Learning: Learning to Learn with MAML and Reptile — AnchorFact</title>
+  <meta name="anchorfact:confidence" content="medium (0.69)">
+  <meta name="anchorfact:generation" content="ai_structured">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"article","@id":"https://anchorfact.org/kb/meta-learning","headline":"Meta-Learning: Learning to Learn with MAML and Reptile","description":"Meta-learning trains models to learn efficiently. Given a distribution of tasks, the meta-learner acquires knowledge that accelerates learning on new tasks — the model \"learns how to learn.\" MAML finds optimal initializations; Reptile simplifies the process.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.69,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.7,"freshness":0.5,"decay":0.1,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.69,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":1,"sources_unreachable":1,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["A","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":false,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks (MAML)","sameAs":"https://arxiv.org/abs/1703.03400","anchorfact:sourceTier":"A","anchorfact:year":2017},{"@type":"CreativeWork","name":"On First-Order Meta-Learning Algorithms (Reptile)","sameAs":"https://arxiv.org/abs/1803.02999","anchorfact:sourceTier":"A","anchorfact:year":2018}]}</script>
+</head>
+<body><article>## TL;DR<br>
+Meta-learning trains models to learn efficiently. Given a distribution of tasks, the meta-learner acquires knowledge that accelerates learning on new tasks — the model "learns how to learn." MAML finds optimal initializations; Reptile simplifies the process.<br>
+<br>
+## Core Explanation<br>
+Few-shot learning: classify images of a new species from only 5 examples. Meta-learning solution: train on many classification tasks (different species each time) so the model learns a representation and adaptation strategy that generalizes to novel categories. MAML's inner loop (task-specific fine-tuning) and outer loop (meta-optimization across tasks) create a bi-level optimization.<br>
+<br>
+## Detailed Analysis<br>
+Beyond MAML: (1) Metric-based meta-learning — Prototypical Networks learn an embedding where each class has a prototype (mean of support examples), classification by nearest prototype; (2) Matching Networks with attention over support set; (3) Meta-RL — RL^2 and PEARL train policies that adapt behavior from trial-and-error in new environments. ANIL shows MAML's power comes from feature reuse, not rapid learning.<br>
+<br>
+## Further Reading<br>
+- Chelsea Finn: Meta-Learning Tutorial (ICML)<br>
+- learn2learn PyTorch Library<br>
+- Few-shot Learning Survey (Wang et al.)<br>
 </article></body>
 </html>

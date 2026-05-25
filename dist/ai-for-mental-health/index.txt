@@ -1,7 +1,7 @@
 # AI for Mental Health: LLM-Based Therapy, Digital Interventions, and Clinical Trials
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is entering mental healthcare with Class I clinical trial evidence. LLM-based therapy chatbots (Therabot, NEJM AI 2025) demonstrate significant symptom reduction for depression and anxiety, while cognitive architectures (Nature Medicine 2026) enable CBT-quality AI interactions. The global mental health access crisis — 1 in 8 people with disorders, <50% receiving treatment — motivates scalable AI solutions.

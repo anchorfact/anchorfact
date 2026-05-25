@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00461>
   a schema:TechArticle ;
   schema:headline "Chess Strategy" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00461>
-  schema:citation <https://www.penguinrandomhouse.com/books/71097/bobby-fischer-teaches-chess-by-bobby-fischer/> .
+  schema:citation <https://www.penguinrandomhouse.com/books/71097/bobby-fischer-teaches-chess-by-bobby-fischer/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00461>
-  schema:citation <https://www.penguinrandomhouse.com/fischer/> .
+  schema:citation <https://www.penguinrandomhouse.com/fischer/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00461>
-  schema:citation <https://www.silman.com/> .
+  schema:citation <https://www.silman.com/> ;
+  af:sourceTier "C" .

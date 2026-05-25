@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00436>
   a schema:TechArticle ;
   schema:headline "Time Value of Money" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.49" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00436>
-  schema:citation <https://www.mheducation.com/highered/product/principles-corporate-finance-brealey-myers/M9781264080946.html> .
+  schema:citation <https://www.mheducation.com/highered/product/principles-corporate-finance-brealey-myers/M9781264080946.html> ;
+  af:sourceTier "C" .

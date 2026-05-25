@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00342>
   a schema:TechArticle ;
   schema:headline "Renaissance Art" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00342>
-  schema:citation <https://www.phaidon.com/store/art/the-story-of-art-pocket-edition-9780714872216/> .
+  schema:citation <https://www.phaidon.com/store/art/the-story-of-art-pocket-edition-9780714872216/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00342>
-  schema:citation <https://global.oup.com/vsi-renaissance-art/> .
+  schema:citation <https://global.oup.com/vsi-renaissance-art/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00342>
-  schema:citation <https://thamesandhudson.com/renaissance/> .
+  schema:citation <https://thamesandhudson.com/renaissance/> ;
+  af:sourceTier "C" .

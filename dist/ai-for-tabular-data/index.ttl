@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-for-tabular-data>
   a schema:article ;
   schema:headline "AI for Tabular Data: Synthetic Generation, Diffusion Models, and Privacy-Preserving Structured Data" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.74" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-for-tabular-data>
-  schema:citation <https://arxiv.org/abs/2504.16506> .
+  schema:citation <https://arxiv.org/abs/2504.16506> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-for-tabular-data>
-  schema:citation <https://www.sciencedirect.com/science/article/pii/S0925231225020430> .
+  schema:citation <https://www.sciencedirect.com/science/article/pii/S0925231225020430> ;
+  af:sourceTier "A" .

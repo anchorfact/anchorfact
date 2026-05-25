@@ -1,7 +1,7 @@
 # Text Classification: Zero-Shot, Few-Shot, and LLM-Based Document Categorization
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Text classification -- assigning categories to documents -- is one of NLP's oldest and most practical tasks. The LLM era has transformed it: zero-shot classification eliminates the need for labeled data, few-shot approaches match traditional fine-tuning with 8 examples, and LLMs can classify documents based on natural language instructions rather than fixed category sets.

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-001",
     "text": "Docker Compose defines and runs multi-container Docker applications using a YAML file (`docker-compose.yml`). One command (`docker compose up`) starts all services. Ideal for development environments and single-host production deployments.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://docs.docker.com/compose/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-001",
     "text": "Docker Compose defines and runs multi-container Docker applications using a YAML file (`docker-compose.yml`). One command (`docker compose up`) starts all services. Ideal for development environments and single-host production deployments.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://docs.docker.com/compose/"

@@ -5,10 +5,14 @@
   a schema:article ;
   schema:headline "Vision-Language-Action Models: Unified Multimodal Foundation Models for Embodied AI" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidenceScore "0.85" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/vision-language-action-models>
-  schema:citation <https://arxiv.org/abs/2505.04769> .
+  schema:citation <https://arxiv.org/abs/2505.04769> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/vision-language-action-models>
-  schema:citation <https://www.nature.com/articles/s41586-025-10041-x> .
+  schema:citation <https://www.nature.com/articles/s41586-025-10041-x> ;
+  af:sourceTier "S" .

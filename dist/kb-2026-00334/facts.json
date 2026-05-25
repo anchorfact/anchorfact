@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-001",
     "text": "The periodic table (Dmitri Mendeleev, 1869) organizes all 118 known chemical elements by atomic number, electron configuration, and recurring chemical properties. Groups (columns) share similar properties. Periods (rows) reflect electron shell filling. Mendeleev famously predicted properties of undiscovered elements — correctly.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://iupac.org/what-we-do/periodic-table-of-elements/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-002",
     "text": "Blocks: s-block (groups 1-2), p-block (13-18), d-block (3-12, transition metals), f-block (lanthanides + actinides).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://iupac.org/what-we-do/periodic-table-of-elements/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-003",
     "text": "Superheavy elements (Z>103) are synthetic and short-lived.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://iupac.org/what-we-do/periodic-table-of-elements/"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-004",
     "text": "Oganesson (Og, Z=118) is the heaviest confirmed element.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://iupac.org/what-we-do/periodic-table-of-elements/"

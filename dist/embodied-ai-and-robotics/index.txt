@@ -1,7 +1,7 @@
 # Embodied AI: Robots That Learn from the Physical World
-Confidence: high
+Confidence: medium (0.76) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Embodied AI brings intelligence into the physical world — robots that see, understand, plan, and act. Vision-language-action models (RT-2, Octo, π0) transfer web-scale knowledge to robot control.

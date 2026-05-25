@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-accessibility",
   "headline": "AI for Accessibility: Assistive Technologies, Sign Language Recognition, and Inclusive Systems",
   "description": "AI is democratizing accessibility — from real-time sign language translation on smartphones to AI-powered screen readers that describe visual scenes. Computer vision, speech recognition, and natural language processing collectively transform assistive technologies from specialized hardware into software running on the devices people already own.",
-  "dateCreated": "2026-05-25T02:46:03.362Z",
+  "dateCreated": "2026-05-24",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",
@@ -17,17 +17,49 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidenceScore": 0.85,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 1,
+      "source_count": 0.8,
+      "source_verified": 1,
+      "freshness": 1,
+      "decay": 0.1,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "high",
+    "confidence_score": 0.85,
+    "confidence_basis": "verified_sources",
+    "sources_total": 2,
+    "sources_verified": 1,
+    "sources_unreachable": 1,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "S",
+      "S"
+    ],
+    "sources_has_doi": true,
+    "sources_has_url": true,
+    "article_has_disputed": false,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "The influence of artificial intelligence on individuals with disabilities: A qualitative scoping review of 47 peer-reviewed articles",
-      "sameAs": "https://www.sciencedirect.com/science/article/pii/S0001691825013241"
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S0001691825013241",
+      "anchorfact:sourceTier": "S",
+      "anchorfact:year": 2026
     },
     {
       "@type": "CreativeWork",
       "name": "Deep computer vision with artificial intelligence for sign language recognition",
-      "sameAs": "https://www.nature.com/articles/s41598-025-09106-8"
+      "sameAs": "https://www.nature.com/articles/s41598-025-09106-8",
+      "anchorfact:sourceTier": "S",
+      "anchorfact:year": 2025
     }
   ]
 }

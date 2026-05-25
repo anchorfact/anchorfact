@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-001",
     "text": "Elixir (José Valim, 2011) is a dynamic, functional language built on the Erlang VM (BEAM) — inheriting Erlang's fault tolerance, concurrency, and distributed computing capabilities. Used by: Discord, WhatsApp (Erlang), Bleacher Report, PepsiCo. Phoenix Framework for web, Nerves for embedded.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://elixir-lang.org/docs.html"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-002",
     "text": "Pattern matching is fundamental: `=` is match, not assignment.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://elixir-lang.org/docs.html"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-003",
     "text": "Phoenix LiveView: real-time server-rendered UI without JavaScript.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://elixir-lang.org/docs.html"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-004",
     "text": "OTP (Open Telecom Platform): battle-tested patterns (GenServer, Supervisor).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://elixir-lang.org/docs.html"

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-01",
     "text": "Terraform by HashiCorp is the dominant Infrastructure as Code tool, using HCL to declaratively define and provision cloud resources across 3000+ providers",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://developer.hashicorp.com/terraform/docs"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-001",
     "text": "Terraform by HashiCorp is the dominant Infrastructure as Code tool, using HCL (HashiCorp Configuration Language) to declaratively define and provision cloud resources across 3000+ providers. State file tracks real-world resources; plan shows pending changes.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://developer.hashicorp.com/terraform/docs"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-002",
     "text": "Remote state (S3 + DynamoDB) for team collaboration and state locking.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://developer.hashicorp.com/terraform/docs"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-003",
     "text": "Terraform Cloud/Enterprise adds VCS integration, policy as code (Sentinel), and cost estimation.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://developer.hashicorp.com/terraform/docs"

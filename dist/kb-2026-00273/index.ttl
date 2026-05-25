@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00273>
   a schema:TechArticle ;
   schema:headline "Transfer Learning" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.7" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00273>
-  schema:citation <https://ieeexplore.ieee.org/document/5288526> .
+  schema:citation <https://ieeexplore.ieee.org/document/5288526> ;
+  af:sourceTier "S" .

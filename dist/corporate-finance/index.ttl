@@ -4,17 +4,23 @@
 <https://anchorfact.org/kb/corporate-finance>
   a schema:Article ;
   schema:headline "Corporate Finance: Capital Structure and Valuation" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.685" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/corporate-finance>
-  schema:citation <https://www.mheducation.com/highered/product/principles-corporate-finance-brealey-myers/M9781264080946.html> .
+  schema:citation <https://www.mheducation.com/highered/product/principles-corporate-finance-brealey-myers/M9781264080946.html> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/corporate-finance>
-  schema:citation <https://www.jstor.org/stable/1809766> .
+  schema:citation <https://www.jstor.org/stable/1809766> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/corporate-finance>
-  schema:citation <https://www.mheducation.com/corporate-finance/> .
+  schema:citation <https://www.mheducation.com/corporate-finance/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/corporate-finance>
-  schema:citation <https://www.wiley.com/valuation/> .
+  schema:citation <https://www.wiley.com/valuation/> ;
+  af:sourceTier "C" .

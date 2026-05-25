@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-01",
     "text": "2nd Law: heavier objects need more force to accelerate — why trucks accelerate slower than motorcycles",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gutenberg.org/ebooks/28233"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-001",
     "text": "Newton's three laws (1687, Principia) form the foundation of classical mechanics. 1st Law (inertia): object at rest stays at rest; in motion stays in motion unless acted upon by force. 2nd Law: F = ma (force equals mass times acceleration). 3rd Law: every action has equal and opposite reaction.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gutenberg.org/ebooks/28233"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-002",
     "text": "1st Law: seatbelt prevents you from continuing forward when car stops — your body wants to keep moving (inertia).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gutenberg.org/ebooks/28233"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-003",
     "text": "2nd Law: heavier objects need more force to accelerate — why trucks accelerate slower than motorcycles.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gutenberg.org/ebooks/28233"
@@ -49,6 +61,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-004",
     "text": "3rd Law: rocket pushes exhaust down, exhaust pushes rocket up.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gutenberg.org/ebooks/28233"

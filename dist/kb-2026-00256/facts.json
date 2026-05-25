@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-001",
     "text": "Blockchain is a distributed, immutable ledger where transactions are grouped into blocks, cryptographically linked in a chain. Satoshi Nakamoto's Bitcoin (2009) was the first. Consensus mechanisms: Proof-of-Work (Bitcoin, mining), Proof-of-Stake (Ethereum since 2022, validators stake). Blockchain = decentralized trust without intermediaries.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://dl.acm.org/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-002",
     "text": "51% attack: controlling majority of hash power/stake enables double-spending.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://dl.acm.org/"

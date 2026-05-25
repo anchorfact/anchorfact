@@ -4,20 +4,27 @@
 <https://anchorfact.org/kb/kb-2026-00437>
   a schema:TechArticle ;
   schema:headline "Lean Manufacturing" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.425" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00437>
-  schema:citation <https://www.simonandschuster.com/books/The-Machine-That-Changed-the-World/James-P-Womack/9780743299794> .
+  schema:citation <https://www.simonandschuster.com/books/The-Machine-That-Changed-the-World/James-P-Womack/9780743299794> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00437>
-  schema:citation <https://www.mheducation.com/toyota-way/> .
+  schema:citation <https://www.mheducation.com/toyota-way/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00437>
-  schema:citation <https://www.simonandschuster.com/lean-thinking/> .
+  schema:citation <https://www.simonandschuster.com/lean-thinking/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00437>
-  schema:citation <https://www.mheducation.com/toyota-way/> .
+  schema:citation <https://www.mheducation.com/toyota-way/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00437>
-  schema:citation <https://www.simonandschuster.com/lean-thinking/> .
+  schema:citation <https://www.simonandschuster.com/lean-thinking/> ;
+  af:sourceTier "C" .

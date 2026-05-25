@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/object-detection>
   a schema:TechArticle ;
   schema:headline "Object Detection: YOLO, R-CNN, and DETR" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.72" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/object-detection>
-  schema:citation <https://arxiv.org/abs/1506.02640> .
+  schema:citation <https://arxiv.org/abs/1506.02640> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/object-detection>
-  schema:citation <https://arxiv.org/abs/2005.12872> .
+  schema:citation <https://arxiv.org/abs/2005.12872> ;
+  af:sourceTier "A" .

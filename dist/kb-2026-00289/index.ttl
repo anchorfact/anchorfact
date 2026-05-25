@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00289>
   a schema:TechArticle ;
   schema:headline "Flask" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00289>
-  schema:citation <https://flask.palletsprojects.com/> .
+  schema:citation <https://flask.palletsprojects.com/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00289>
-  schema:citation <https://www.oreilly.com/flask/> .
+  schema:citation <https://www.oreilly.com/flask/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00289>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.flask> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.flask> ;
+  af:sourceTier "C" .

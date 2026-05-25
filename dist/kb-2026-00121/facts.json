@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-01",
     "text": "A firewall is a network security system that monitors and controls incoming/outgoing traffic based on predetermined rules",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://dl.acm.org/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-001",
     "text": "A firewall is a network security system that monitors and controls incoming/outgoing traffic based on predetermined rules. Types: packet filtering (stateless, layer 3/4), stateful inspection (tracks connection state), application-layer (WAF, layer 7), next-generation (NGFW, combines all).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://dl.acm.org/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-002",
     "text": "Stateful firewalls maintain connection tables and can make contextual decisions (allow reply packets for established connections).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://dl.acm.org/"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-003",
     "text": "WAF (Web Application Firewall) inspects HTTP requests for SQL injection, XSS, and other application attacks.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://dl.acm.org/"

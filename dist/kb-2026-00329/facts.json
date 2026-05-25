@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-01",
     "text": "The Silk Road was a network of trade routes connecting East Asia to Europe from 130 BCE to 1453 CE",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.bloomsbury.com/us/silk-roads-9781408839973/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-001",
     "text": "The Silk Road was a network of trade routes connecting East Asia to Europe from ~130 BCE to 1453 CE. It transported not just silk, but ideas, technologies, religions (Buddhism, Islam, Christianity), and diseases (Black Death). Not a single road — a web of land and sea routes across Eurasia.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.bloomsbury.com/us/silk-roads-9781408839973/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-002",
     "text": "Cultural exchange: paper-making spread from China to Islamic world (8th century) to Europe.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.bloomsbury.com/us/silk-roads-9781408839973/"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-003",
     "text": "Decline: Ottoman Empire blocked routes (1453), prompting European maritime exploration (Age of Discovery).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.bloomsbury.com/us/silk-roads-9781408839973/"

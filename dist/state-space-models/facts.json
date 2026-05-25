@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/f1",
     "text": "Mamba (Gu & Dao 2023, CMU/Princeton) introduces a selective state space model with input-dependent parameters, achieving Transformer-quality language modeling with linear time complexity.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2312.00752"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/f2",
     "text": "Structured State Space Sequence Models (S4, Gu et al. 2022, Stanford) proposed a mathematical framework for modeling long-range dependencies efficiently using state space representations from control theory.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2111.00396"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/f3",
     "text": "SSMs (Mamba, S4, H3) are emerging as a promising alternative to Transformers for long-sequence tasks, offering O(N) complexity while maintaining competitive quality on language and genomics benchmarks.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2212.14052"

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-001",
     "text": "1 心流通道图\n``` 高 ↑ 焦虑 │    挑战 > 技能 区   │        ↑ │    ┌────┐ 挑战    │    │心流│ 难度   │    │区域│ │    └────┘ │        ↓ 无聊 │    挑战 < 技能 区   │ └────────────────────→ 技能水平            高 ```\n### 2.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-002",
     "text": "2 三个区域\n- **焦虑区** — 挑战远高于玩家技能 → 压力、挫败感、流失 - **心流区** — 挑战与技能匹配 → 最佳体验、沉浸、愉悦 - **无聊区** — 挑战低于玩家技能 → 乏味、分心、流失\n### 2.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-003",
     "text": "3 动态难度调整（DDA）\n保持玩家在心流区的具体方法：\n| 方法 | 说明 | 示例 | |------|------|------| | **隐性调整** | 根据表现微调数值 | 《Left 4 Dead》AI 导演系统 | | **自适应难度** | 失败时降低难度 | 《Mario Kart》橡皮筋 AI | | **可选难度** | 玩家自主选择 | 普通/困难模式切换 | | **辅助功能** | 降低操作门槛 | 自动瞄准、慢动作模式 |\n### 2.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-004",
     "text": "4 难度曲线设计检查表\n- [ ] 前 5 分钟：新手引导，挑战极低 - [ ] 1 小时内：逐步引入核心机制 - [ ] 前 10 小时：难度稳步上升 - [ ] 每个新机制后有\"练习期\" - [ ] 高潮（Boss 战）后有\"喘息区\" - [ ] 夜间/疲劳时段适当降低要求\n---\n## 3.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -49,6 +61,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-005",
     "text": "**游戏应用：** - 每日奖励连续签到（断签的损失感） - 装备强化可能失败（损失厌恶促使买保险） - 限时活动错过就没了（FOMO）\n### 3.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"

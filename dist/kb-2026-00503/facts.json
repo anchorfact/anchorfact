@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-sports-010",
     "text": "Track and field is the oldest Olympic sport, contested since 776 BCE. Modern program includes 24 men's and 23 women's events: sprints (100m-400m), middle distance (800m-1500m), long distance (5000m-10000m), hurdles (110m/400m), relays (4×100m, 4×400m), jumps, throws, combined events",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://worldathletics.org/competition/technical-rules"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-sports-011",
     "text": "Usain Bolt holds world records: 100m (9.58s, 2009 Berlin) and 200m (19.19s, 2009 Berlin). Marathon world record: Kelvin Kiptum 2:00:35 (2023 Chicago). Long jump: Mike Powell 8.95m (1991, Tokyo)",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://worldathletics.org/records/by-discipline"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-sports-012",
     "text": "Decathlon (men) and heptathlon (women) are combined events testing overall athletic ability across 10/7 disciplines over 2 days. Scoring uses IAAF points tables comparing performance to benchmark standards",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://worldathletics.org/competition/technical-rules"

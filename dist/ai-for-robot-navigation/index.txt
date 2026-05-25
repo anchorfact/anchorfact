@@ -1,7 +1,7 @@
 # AI for Robot Navigation: SLAM, Visual Odometry, and Autonomous Path Planning
-Confidence: high
+Confidence: medium (0.615) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Robot navigation answers "where am I, what is around me, and how do I get there?" -- SLAM builds maps while tracking the robot's position, visual odometry estimates motion from camera images, and path planning computes collision-free trajectories. AI is transforming all three, enabling robots to navigate autonomously in unmapped, dynamic environments.

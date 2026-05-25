@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/kb-2026-0999>
   a schema:TechArticle ;
   schema:headline "Gradient Descent and Optimization" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.72" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-0999>
-  schema:citation <https://www.deeplearningbook.org/> .
+  schema:citation <https://www.deeplearningbook.org/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-0999>
-  schema:citation <https://arxiv.org/abs/1412.6980> .
+  schema:citation <https://arxiv.org/abs/1412.6980> ;
+  af:sourceTier "A" .

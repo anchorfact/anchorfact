@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-01",
     "text": "Turbo: replaces Rails UJS — faster page updates without full reload",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://guides.rubyonrails.org/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-001",
     "text": "Rails (David Heinemeier Hansson, 2004) is a convention-over-configuration web framework in Ruby. It popularized MVC in web development, RESTful routing, database migrations, and scaffolding. Rails 7 (2021) introduced Hotwire (Turbo + Stimulus) for reactive UIs without heavy JavaScript.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://guides.rubyonrails.org/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-002",
     "text": "Asset Pipeline (Sprockets) and Webpacker for frontend.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://guides.rubyonrails.org/"

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/f1",
     "text": "Sora (OpenAI 2024) generates up to 1-minute videos from text prompts using a diffusion transformer architecture, demonstrating emergent 3D consistency, object permanence, and world simulation capabilities.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://openai.com/research/video-generation-models-as-world-simulators"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/f2",
     "text": "Runway Gen-3 Alpha (2024) and Kling (Kuaishou 2024) represent the commercial frontier of text-to-video generation, producing cinematic-quality video with fine-grained control over motion, lighting, and camera angles.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://runwayml.com/research/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/f3",
     "text": "Video diffusion models (Ho et al. 2022, Google) extend image diffusion to the temporal dimension with 3D U-Net architectures, enabling both unconditional and text-conditioned video generation from noise.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2204.03458"

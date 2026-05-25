@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Parameter-Efficient Fine-Tuning: LoRA, QLoRA, and Adapters — AnchorFact</title></head>
-<body><article>## TL;DR<br>
-Parameter-efficient fine-tuning (PEFT) adapts large pre-trained models to new tasks by training only a small fraction of parameters. LoRA and QLoRA have democratized LLM customization — GPT-equivalent quality fine-tuning now runs on consumer hardware.<br>
-<br>
-## Core Explanation<br>
-The full fine-tuning problem: updating all 175B parameters of GPT-3 requires 350GB of GPU memory just for optimizer states. PEFT solutions: (1) Adapters — small bottleneck layers inserted between transformer blocks; (2) Prefix tuning — learnable prefix vectors prepended to input; (3) LoRA — low-rank weight updates (ΔW = BA where A and B are small matrices).<br>
-<br>
-## Detailed Analysis<br>
-LoRA typically applies to attention projection matrices (W_q, W_v). Rank r=8-64 provides good performance. Multiple LoRA adapters can be hot-swapped for different tasks without reloading the base model. DORA (2024) adds magnitude-direction decomposition for improved performance.<br>
-<br>
-## Further Reading<br>
-- HuggingFace PEFT Library<br>
-- Unsloth: Fast Fine-Tuning<br>
+<head>
+  <meta charset="utf-8">
+  <title>Parameter-Efficient Fine-Tuning: LoRA, QLoRA, and Adapters — AnchorFact</title>
+  <meta name="anchorfact:confidence" content="medium (0.76)">
+  <meta name="anchorfact:generation" content="ai_structured">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/parameter-efficient-fine-tuning","headline":"Parameter-Efficient Fine-Tuning: LoRA, QLoRA, and Adapters","description":"Parameter-efficient fine-tuning (PEFT) adapts large pre-trained models to new tasks by training only a small fraction of parameters. LoRA and QLoRA have democratized LLM customization — GPT-equivalent quality fine-tuning now runs on consumer hardware.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.76,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.9,"freshness":0.9,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.76,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":2,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["A","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"LoRA: Low-Rank Adaptation of Large Language Models","sameAs":"https://arxiv.org/abs/2106.09685","anchorfact:sourceTier":"A","anchorfact:year":2022},{"@type":"CreativeWork","name":"QLoRA: Efficient Finetuning of Quantized Language Models","sameAs":"https://arxiv.org/abs/2305.14314","anchorfact:sourceTier":"A","anchorfact:year":2023}]}</script>
+</head>
+<body><article>## TL;DR<br>
+Parameter-efficient fine-tuning (PEFT) adapts large pre-trained models to new tasks by training only a small fraction of parameters. LoRA and QLoRA have democratized LLM customization — GPT-equivalent quality fine-tuning now runs on consumer hardware.<br>
+<br>
+## Core Explanation<br>
+The full fine-tuning problem: updating all 175B parameters of GPT-3 requires 350GB of GPU memory just for optimizer states. PEFT solutions: (1) Adapters — small bottleneck layers inserted between transformer blocks; (2) Prefix tuning — learnable prefix vectors prepended to input; (3) LoRA — low-rank weight updates (ΔW = BA where A and B are small matrices).<br>
+<br>
+## Detailed Analysis<br>
+LoRA typically applies to attention projection matrices (W_q, W_v). Rank r=8-64 provides good performance. Multiple LoRA adapters can be hot-swapped for different tasks without reloading the base model. DORA (2024) adds magnitude-direction decomposition for improved performance.<br>
+<br>
+## Further Reading<br>
+- HuggingFace PEFT Library<br>
+- Unsloth: Fast Fine-Tuning<br>
 - Axolotl: Fine-Tuning Framework</article></body>
 </html>

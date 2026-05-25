@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00421>
   a schema:TechArticle ;
   schema:headline "Strength Training Principles" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.43" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00421>
-  schema:citation <https://aasgaardco.com/store/books-posters-dvd/practical-programming-for-strength-training/> .
+  schema:citation <https://aasgaardco.com/store/books-posters-dvd/practical-programming-for-strength-training/> ;
+  af:sourceTier "C" .

@@ -1,7 +1,7 @@
 # Advanced NLP: Tokenization, Embeddings, and Decoding
-Confidence: high
+Confidence: medium (0.72) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Modern NLP pipelines transform raw text to vector representations suitable for neural processing. Tokenization, embeddings, and decoding strategies are the critical infrastructure between human language and machine understanding.

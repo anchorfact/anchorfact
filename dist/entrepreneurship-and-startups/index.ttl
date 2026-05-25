@@ -4,17 +4,23 @@
 <https://anchorfact.org/kb/entrepreneurship-and-startups>
   a schema:Article ;
   schema:headline "Entrepreneurship: From Idea to Scalable Business" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.6" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/entrepreneurship-and-startups>
-  schema:citation <https://www.penguinrandomhouse.com/books/201674/the-lean-startup-by-eric-ries/> .
+  schema:citation <https://www.penguinrandomhouse.com/books/201674/the-lean-startup-by-eric-ries/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/entrepreneurship-and-startups>
-  schema:citation <https://www.strategyzer.com/books/business-model-generation> .
+  schema:citation <https://www.strategyzer.com/books/business-model-generation> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/entrepreneurship-and-startups>
-  schema:citation <https://theleanstartup.com/> .
+  schema:citation <https://theleanstartup.com/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/entrepreneurship-and-startups>
-  schema:citation <https://www.crownpublishing.com/zero-to-one/> .
+  schema:citation <https://www.crownpublishing.com/zero-to-one/> ;
+  af:sourceTier "C" .

@@ -4,20 +4,27 @@
 <https://anchorfact.org/kb/geological-time>
   a schema:Article ;
   schema:headline "Geological Time Scale and Earth History" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/geological-time>
-  schema:citation <https://stratigraphy.org/timescale/> .
+  schema:citation <https://stratigraphy.org/timescale/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/geological-time>
-  schema:citation <https://www.macmillanlearning.com/college/us/product/Earth-System-History/p/1319154022> .
+  schema:citation <https://www.macmillanlearning.com/college/us/product/Earth-System-History/p/1319154022> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/geological-time>
-  schema:citation <https://www.macmillanlearning.com/earth-history/> .
+  schema:citation <https://www.macmillanlearning.com/earth-history/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/geological-time>
-  schema:citation <https://stratigraphy.org/chart> .
+  schema:citation <https://stratigraphy.org/chart> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/geological-time>
-  schema:citation <https://stratigraphy.org/chart> .
+  schema:citation <https://stratigraphy.org/chart> ;
+  af:sourceTier "C" .

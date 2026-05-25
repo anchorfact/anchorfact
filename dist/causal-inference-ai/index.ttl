@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/causal-inference-ai>
   a schema:article ;
   schema:headline "Causal AI: From Correlation to Causation with do-Calculus" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.78" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/causal-inference-ai>
-  schema:citation <https://doi.org/10.1017/CBO9780511803161> .
+  schema:citation <https://doi.org/10.1017/CBO9780511803161> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/causal-inference-ai>
-  schema:citation <https://arxiv.org/abs/2403.02467> .
+  schema:citation <https://arxiv.org/abs/2403.02467> ;
+  af:sourceTier "A" .

@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00453>
   a schema:TechArticle ;
   schema:headline "Climate Change Solutions" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.45" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00453>
-  schema:citation <https://drawdown.org/> .
+  schema:citation <https://drawdown.org/> ;
+  af:sourceTier "C" .

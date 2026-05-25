@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-gaming-theory",
   "headline": "AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy",
   "description": "AI has mastered games through different strategic paradigms: perfect information (chess, Go -- AlphaZero, 2017-2018), imperfect information (poker -- Libratus/Pluribus, 2017-2019), and the hardest frontier -- games combining imperfect information, multi-agent negotiation, and natural language communication (DeepNash for Stratego, Cicero for Diplomacy). Each milestone has advanced computational game theory and multi-agent strategy.",
-  "dateCreated": "2026-05-25T02:46:03.411Z",
+  "dateCreated": "2026-05-24",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",
@@ -16,18 +16,50 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidence": "medium",
+  "anchorfact:confidenceScore": 0.82,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 1,
+      "source_count": 0.8,
+      "source_verified": 1,
+      "freshness": 0.7,
+      "decay": 0.1,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "medium",
+    "confidence_score": 0.82,
+    "confidence_basis": "verified_sources",
+    "sources_total": 2,
+    "sources_verified": 2,
+    "sources_unreachable": 0,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "A",
+      "S"
+    ],
+    "sources_has_doi": true,
+    "sources_has_url": true,
+    "article_has_disputed": false,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "Mastering the game of Stratego with model-free multiagent reinforcement learning (DeepNash)",
-      "sameAs": "https://www.nature.com/articles/d41586-022-04246-7"
+      "sameAs": "https://www.nature.com/articles/d41586-022-04246-7",
+      "anchorfact:sourceTier": "A",
+      "anchorfact:year": 2022
     },
     {
       "@type": "CreativeWork",
       "name": "Human-level play in the game of Diplomacy by combining language models with strategic reasoning (Cicero)",
-      "sameAs": "https://www.science.org/doi/10.1126/science.ade9097"
+      "sameAs": "https://www.science.org/doi/10.1126/science.ade9097",
+      "anchorfact:sourceTier": "S",
+      "anchorfact:year": 2022
     }
   ]
 }

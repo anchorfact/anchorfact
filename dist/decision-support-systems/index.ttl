@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/decision-support-systems>
   a schema:article ;
   schema:headline "AI Decision Support Systems: Clinical CDSS, Business Intelligence, and Augmented Decision-Making" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.74" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/decision-support-systems>
-  schema:citation <https://www.nature.com/npjdigitalmed/> .
+  schema:citation <https://www.nature.com/npjdigitalmed/> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/decision-support-systems>
-  schema:citation <https://www.gartner.com/en/articles/decision-intelligence> .
+  schema:citation <https://www.gartner.com/en/articles/decision-intelligence> ;
+  af:sourceTier "C" .

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-01",
     "text": "The American Revolution was the revolt of thirteen American colonies against British rule",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.simonandschuster.com/books/1776/David-McCullough/9780743226721"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-02",
     "text": "Result: United States of America founded on republican principles",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.simonandschuster.com/books/1776/David-McCullough/9780743226721"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-03",
     "text": "Causes: 'No taxation without representation,' Boston Tea Party",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.simonandschuster.com/books/1776/David-McCullough/9780743226721"

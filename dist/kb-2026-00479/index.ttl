@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00479>
   a schema:TechArticle ;
   schema:headline "History of Printing" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.255" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00479>
-  schema:citation <https://www.cambridge.org/core/books/printing-revolution-in-early-modern-europe/> .
+  schema:citation <https://www.cambridge.org/core/books/printing-revolution-in-early-modern-europe/> ;
+  af:sourceTier "C" .

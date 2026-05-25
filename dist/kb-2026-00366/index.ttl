@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00366>
   a schema:TechArticle ;
   schema:headline "Genetics and Heredity" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.425" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00366>
-  schema:citation <https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524> .
+  schema:citation <https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00366>
-  schema:citation <https://www.macmillanlearning.com/genetics/> .
+  schema:citation <https://www.macmillanlearning.com/genetics/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00366>
-  schema:citation <https://www.simonandschuster.com/the-gene/> .
+  schema:citation <https://www.simonandschuster.com/the-gene/> ;
+  af:sourceTier "C" .

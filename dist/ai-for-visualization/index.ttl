@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-for-visualization>
   a schema:article ;
   schema:headline "AI for Data Visualization: Automated Chart Generation, Insight Discovery, and Visual Analytics" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.73" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-for-visualization>
-  schema:citation <https://link.springer.com/article/10.1007/s11704-023-2691-y> .
+  schema:citation <https://link.springer.com/article/10.1007/s11704-023-2691-y> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-for-visualization>
-  schema:citation <https://www.sciencedirect.com/science/article/pii/S2468502X24000226> .
+  schema:citation <https://www.sciencedirect.com/science/article/pii/S2468502X24000226> ;
+  af:sourceTier "A" .

@@ -5,10 +5,14 @@
   a schema:article ;
   schema:headline "AI for Accessibility: Assistive Technologies, Sign Language Recognition, and Inclusive Systems" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidenceScore "0.85" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-for-accessibility>
-  schema:citation <https://www.sciencedirect.com/science/article/pii/S0001691825013241> .
+  schema:citation <https://www.sciencedirect.com/science/article/pii/S0001691825013241> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/ai-for-accessibility>
-  schema:citation <https://www.nature.com/articles/s41598-025-09106-8> .
+  schema:citation <https://www.nature.com/articles/s41598-025-09106-8> ;
+  af:sourceTier "S" .

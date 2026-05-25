@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00486>
   a schema:TechArticle ;
   schema:headline "Mesopotamia" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00486>
-  schema:citation <https://www.hendrickson.com/html/product/300044.trade.html> .
+  schema:citation <https://www.hendrickson.com/html/product/300044.trade.html> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00486>
-  schema:citation <https://www.penguinrandomhouse.com/mesopotamia/> .
+  schema:citation <https://www.penguinrandomhouse.com/mesopotamia/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00486>
-  schema:citation <https://global.oup.com/vsi-ancient-near-east/> .
+  schema:citation <https://global.oup.com/vsi-ancient-near-east/> ;
+  af:sourceTier "C" .

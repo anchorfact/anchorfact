@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/language-modeling-theory",
   "headline": "Language Modeling: From N-grams to Scaling Laws and Information-Theoretic Foundations",
   "description": "Language modeling -- the simple task of predicting what word comes next -- is the improbable foundation behind GPT-4 and all modern LLMs. From Claude Shannon's 1948 information theory to scaling laws governing billion-parameter models, the mathematics of prediction unites statistical approaches, neural networks, and the emergent intelligence of large-scale pretraining.",
-  "dateCreated": "2026-05-25T02:46:03.702Z",
+  "dateCreated": "2026-05-24",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",
@@ -16,18 +16,50 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidence": "medium",
+  "anchorfact:confidenceScore": 0.76,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 0.9,
+      "source_count": 0.8,
+      "source_verified": 0.9,
+      "freshness": 0.7,
+      "decay": 0.1,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "medium",
+    "confidence_score": 0.76,
+    "confidence_basis": "verified_sources",
+    "sources_total": 2,
+    "sources_verified": 2,
+    "sources_unreachable": 0,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "A",
+      "A"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": false,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "Scaling Laws for Neural Language Models (Kaplan et al., 2020)",
-      "sameAs": "https://arxiv.org/abs/2001.08361"
+      "sameAs": "https://arxiv.org/abs/2001.08361",
+      "anchorfact:sourceTier": "A",
+      "anchorfact:year": 2020
     },
     {
       "@type": "CreativeWork",
       "name": "Training Compute-Optimal Large Language Models (Chinchilla -- Hoffmann et al., 2022)",
-      "sameAs": "https://arxiv.org/abs/2203.15556"
+      "sameAs": "https://arxiv.org/abs/2203.15556",
+      "anchorfact:sourceTier": "A",
+      "anchorfact:year": 2022
     }
   ]
 }

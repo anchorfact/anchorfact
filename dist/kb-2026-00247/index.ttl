@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00247>
   a schema:TechArticle ;
   schema:headline "NoSQL Database Types" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.425" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00247>
-  schema:citation <https://dl.acm.org/> .
+  schema:citation <https://dl.acm.org/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00247>
-  schema:citation <https://www.informit.com/nosql/> .
+  schema:citation <https://www.informit.com/nosql/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00247>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.nosql> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.nosql> ;
+  af:sourceTier "C" .

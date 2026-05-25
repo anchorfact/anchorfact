@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-synthetic-media-generation>
   a schema:article ;
   schema:headline "AI Synthetic Media: Digital Humans, Virtual Influencers, and AI-Generated Video Personas" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-synthetic-media-generation>
-  schema:citation <https://arxiv.org/search/?query=digital+human+avatar+AI+generation> .
+  schema:citation <https://arxiv.org/search/?query=digital+human+avatar+AI+generation> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-synthetic-media-generation>
-  schema:citation <https://arxiv.org/search/?query=synthetic+media+ethics+virtual+influencer> .
+  schema:citation <https://arxiv.org/search/?query=synthetic+media+ethics+virtual+influencer> ;
+  af:sourceTier "A" .

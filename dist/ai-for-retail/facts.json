@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-retail-1",
     "text": "Amazon Just Walk Out technology -- deployed in 100+ Amazon Fresh and Whole Foods locations -- combines computer vision (overhead cameras tracking shoppers), sensor fusion (weight sensors on shelves detecting item removal), and deep learning to create fully cashierless shopping. The system associates each shopper with items picked up in real-time, charging their Amazon account upon exit without checkout lines. Amazon Go pioneered the concept in 2018.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://aws.amazon.com/just-walk-out/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-retail-2",
     "text": "AI-driven dynamic pricing and personalized recommendations in retail: companies like Walmart, Target, and Amazon adjust prices in real-time based on competitor prices, demand signals, inventory levels, and customer behavior. Reinforcement learning for markdown optimization (Zara, H&M) sets optimal discount schedules for seasonal inventory, reducing waste by 15-25% while maximizing revenue. Visual search (\"find products that look like this photo\") and virtual try-on (AR clothing, makeup) use deep learning to bridge online-offline shopping.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=dynamic+pricing+reinforcement+learning+retail"

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-oil-gas-exploration-1",
     "text": "IEEE Access (February 2024) published a comprehensive review documenting that CNNs applied to 3D seismic volumes can automatically map geological faults with >90% accuracy compared to manual interpretation, reducing interpretation time from months to hours.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://ieeexplore.ieee.org/document/10418898"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-oil-gas-exploration-2",
     "text": "A Nature Scientific Reports study (October 2025) demonstrated self-supervised learning on massive unlabeled 3D seismic volumes using masked autoencoding, achieving superior transfer to downstream tasks -- fault segmentation, horizon tracking, and reservoir property estimation -- with significantly fewer labeled examples than supervised methods.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nature.com/articles/s41598-025-20058-x"

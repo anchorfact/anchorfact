@@ -1,7 +1,7 @@
 # AI for Mathematical Reasoning: Theorem Proving with Lean, AlphaProof, and Formal Mathematics
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is learning to prove mathematical theorems -- from International Mathematical Olympiad geometry problems (AlphaGeometry) to formal proofs in Lean 4 (AlphaProof). The combination of LLM reasoning, reinforcement learning, and formal verification is creating AI systems that not only solve problems but produce human-verifiable, logically rigorous proofs.

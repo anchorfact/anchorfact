@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-test-time-compute-scaling-1",
     "text": "OpenAI o1 (September 2024) and o3 (December 2024) introduced the test-time compute scaling paradigm — allocating additional computation during inference (not training) to generate and evaluate multiple reasoning chains — achieving PhD-level performance on GPQA Diamond (87.7% o3 vs. 65% human experts) and ELO 2727 on Codeforces, demonstrating that inference-time computation can substitute for model size scaling.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://openai.com/index/learning-to-reason-with-llms/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-test-time-compute-scaling-2",
     "text": "Forest-of-Thought (Li et al., arxiv 2412.09078, 2024) proposed a tree-structured reasoning framework that scales test-time compute by building a forest of reasoning paths and dynamically pruning branches via confidence-based and consistency-based criteria — achieving 15-20% improvement over chain-of-thought baselines on MATH and GSM8K benchmarks with equivalent compute budget.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2412.09078"

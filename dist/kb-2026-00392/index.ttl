@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00392>
   a schema:TechArticle ;
   schema:headline "Indian Independence Movement" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00392>
-  schema:citation <https://www.penguin.co.in/book/indias-struggle-for-independence/> .
+  schema:citation <https://www.penguin.co.in/book/indias-struggle-for-independence/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00392>
-  schema:citation <https://www.harpercollins.com/india-history/> .
+  schema:citation <https://www.harpercollins.com/india-history/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00392>
-  schema:citation <https://global.oup.com/vsi-indian-independence/> .
+  schema:citation <https://global.oup.com/vsi-indian-independence/> ;
+  af:sourceTier "C" .

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-construction-1",
     "text": "Computer vision for construction safety: AI-powered site cameras detect PPE compliance (hard hat, safety vest), identify fall hazards (workers near unprotected edges), and monitor equipment operation zones, reducing onsite accidents by 25-40% according to studies published in Automation in Construction (2023-2025). Deep learning models (YOLOv8, DETR) trained on construction-specific datasets (SODA, MOCS) detect workers, equipment, and hazards in real-time.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.sciencedirect.com/journal/automation-in-construction"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-construction-2",
     "text": "BIM (Building Information Modeling) integrated with AI and IoT: digital twins of construction projects combine 3D BIM models with real-time sensor data (drone photogrammetry for progress monitoring, IoT sensors for concrete curing, thermal cameras for energy efficiency). AI compares as-built reality (drone scans) against as-planned BIM models, automatically detecting deviations (incorrectly placed columns, missing elements) and flagging schedule risks, reducing rework costs by 15-20%.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.sciencedirect.com/search?qs=BIM+AI+digital+twin+construction"

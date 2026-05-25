@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-generated-content-detection>
   a schema:article ;
   schema:headline "AI-Generated Content Detection: Identifying Synthetic Text, Deepfake Images, and AI-Authored Media" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-generated-content-detection>
-  schema:citation <https://arxiv.org/abs/2301.11305> .
+  schema:citation <https://arxiv.org/abs/2301.11305> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-generated-content-detection>
-  schema:citation <https://c2pa.org/specifications/> .
+  schema:citation <https://c2pa.org/specifications/> ;
+  af:sourceTier "C" .

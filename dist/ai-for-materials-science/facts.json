@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-materials-science-1",
     "text": "Google DeepMind's GNoME (Graph Networks for Materials Exploration, Merchant et al., Nature 2023) discovered 2.2 million new stable inorganic crystals — including 381,000 most-stable structures — using graph neural networks with active learning, increasing the known stable materials catalog from 48,000 to 429,000 (9x expansion) and predicting 736 experimentally validated structures.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nature.com/articles/s41586-023-06735-9"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-materials-science-2",
     "text": "Lawrence Berkeley National Laboratory's A-Lab (2024) autonomously synthesized 41 of 58 AI-predicted novel compounds (71% success rate) using robotic experimentation guided by active learning — demonstrating closed-loop AI-driven materials discovery from computational prediction to physical synthesis.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nature.com/articles/s41586-023-06934-4"

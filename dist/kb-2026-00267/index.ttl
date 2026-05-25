@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00267>
   a schema:TechArticle ;
   schema:headline "Neural Network Basics" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00267>
-  schema:citation <https://www.deeplearningbook.org/> .
+  schema:citation <https://www.deeplearningbook.org/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00267>
-  schema:citation <https://arxiv.org/abs/2503.12345> .
+  schema:citation <https://arxiv.org/abs/2503.12345> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00267>
-  schema:citation <https://doi.org/10.1109/ACCESS.2025.3567842> .
+  schema:citation <https://doi.org/10.1109/ACCESS.2025.3567842> ;
+  af:sourceTier "C" .

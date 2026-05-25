@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-health-001",
     "text": "Good posture minimizes stress on joints, muscles, and ligaments. Desk ergonomics: monitor at eye level, elbows at 90°, feet flat on floor, lumbar support. 'Best posture is next posture' — move frequently. Prolonged sitting: 8+ hours/day linked to increased mortality, independent of exercise.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.osha.gov/ergonomics"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-health-002",
     "text": "Chair: thighs parallel to floor, knees ~90°, 2-3 finger gap behind knees.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.osha.gov/ergonomics"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-health-003",
     "text": "Text neck: head forward posture — each inch forward adds ~10 lbs of cervical spine load.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.osha.gov/ergonomics"

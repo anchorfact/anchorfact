@@ -1,7 +1,7 @@
 # Data Preprocessing
-Confidence: high
+Confidence: low (0.465) (verified)
 Last verified: 2026-05-22
-Generation: human_only
+Generation: ai_structured
 
 ## TL;DR
 

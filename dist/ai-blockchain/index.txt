@@ -1,7 +1,7 @@
 # AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI and blockchain converge at three frontiers: running AI services via smart contracts, using crypto-economic incentives to build decentralized compute networks that rival cloud providers in cost, and applying AI to detect fraud in blockchain systems. Together they form the infrastructure for trustless, decentralized intelligence.

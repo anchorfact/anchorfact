@@ -5,10 +5,14 @@
   a schema:article ;
   schema:headline "AI for Mathematical Reasoning: Theorem Proving with Lean, AlphaProof, and Formal Mathematics" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidenceScore "0.85" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-mathematical-reasoning>
-  schema:citation <https://www.nature.com/articles/d41586-025-03585-5> .
+  schema:citation <https://www.nature.com/articles/d41586-025-03585-5> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-mathematical-reasoning>
-  schema:citation <https://www.nature.com/articles/s41586-023-06747-5> .
+  schema:citation <https://www.nature.com/articles/s41586-023-06747-5> ;
+  af:sourceTier "S" .

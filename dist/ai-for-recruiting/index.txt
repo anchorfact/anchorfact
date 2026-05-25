@@ -1,7 +1,7 @@
 # AI for Recruiting: Resume Screening, Talent Matching, and Fairness in Hiring
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is reshaping hiring — screening thousands of resumes in seconds, matching candidates to jobs based on skills rather than keywords, and (ideally) reducing human bias. But the fairness challenge is profound: AI trained on historical hiring data can amplify discrimination through seemingly neutral features. Getting AI recruiting right is not just an engineering problem — it's a civil rights issue.

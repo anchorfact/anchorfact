@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-geometric-deep-learning-1",
     "text": "Bronstein, Bruna, Cohen, and Veličković (2021/2023) unified CNNs, GNNs, and Transformers under the Geometric Deep Learning blueprint — convolutional architectures over domains with symmetry groups — showing that equivariance to group transformations is the common design principle.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://link.springer.com/article/10.1007/s10462-023-10502-7"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-geometric-deep-learning-2",
     "text": "Gauge equivariant CNNs extend convolution to curved manifolds (e.g., spheres, 3D meshes) by defining convolutional filters in local tangent frames connected by parallel transport — enabling CNNs on non-Euclidean domains like the cortical surface (brain imaging) and climate data on the sphere.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://geometricdeeplearning.com/"

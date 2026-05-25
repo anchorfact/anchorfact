@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00401>
   a schema:TechArticle ;
   schema:headline "Colonialism" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00401>
-  schema:citation <https://www.harpercollins.com/products/the-scramble-for-africa-thomas-pakenham> .
+  schema:citation <https://www.harpercollins.com/products/the-scramble-for-africa-thomas-pakenham> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00401>
-  schema:citation <https://www.routledge.com/colonialism/> .
+  schema:citation <https://www.routledge.com/colonialism/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00401>
-  schema:citation <https://global.oup.com/vsi-colonialism/> .
+  schema:citation <https://global.oup.com/vsi-colonialism/> ;
+  af:sourceTier "C" .

@@ -1,7 +1,7 @@
 # AI for Wildlife Conservation: Camera Trap Analysis, Species Classification, and Biodiversity Monitoring
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is becoming conservation biology's most powerful tool — automatically classifying millions of camera trap images, identifying individual animals, and monitoring entire ecosystems through bioacoustic AI. With 1 million species at risk of extinction and limited human experts to monitor them, AI scales conservation from local studies to planetary biodiversity tracking.

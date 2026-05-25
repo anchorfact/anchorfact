@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00181",
   "headline": "DNS (Domain Name System)",
   "description": "The Domain Name System (DNS) is a hierarchical, distributed database that translates human-readable domain names (e.g., `anchorfact.org`) into machine-readable IP addresses (e.g., `172.67.x.x`). Designed by Paul Mockapetris in 1983 (RFCs 882/883, superseded by RFCs 1034/1035 in 1987), DNS is one of the oldest Internet protocols still in active use and is a critical dependency for virtually every Internet application. A typical DNS resolution traverses: browser cache → OS cache (stub resolver) → recursive resolver (ISP/public) → root nameserver → TLD nameserver → authoritative nameserver, completing in typically 20-120 milliseconds. DNSSEC (RFCs 4033-4035, 2005) adds cryptographic signatures to prevent spoofing; DoH/DoT (RFCs 8484/7858, 2018) encrypt queries to prevent eavesdropping.",
-  "dateCreated": "2026-05-25T02:46:04.072Z",
-  "dateModified": "2026-05-25T02:46:04.072Z",
+  "dateCreated": "2026-05-22",
+  "dateModified": "2026-05-25T12:59:31.970Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -16,20 +16,52 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
+  "anchorfact:confidence": "low",
+  "anchorfact:confidenceScore": 0.56,
   "anchorfact:generationMethod": "human_only",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 1,
+      "source_count": 0.8,
+      "source_verified": 0.2,
+      "freshness": 0.3,
+      "decay": 0.30000000000000004,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "low",
+    "confidence_score": 0.56,
+    "confidence_basis": "verified_sources",
+    "sources_total": 2,
+    "sources_verified": 0,
+    "sources_unreachable": 2,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "S",
+      "S"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": true,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "RFC 1035 — Domain Names — Implementation and Specification",
       "author": "Mockapetris, P.",
-      "sameAs": "https://www.rfc-editor.org/rfc/rfc1035"
+      "sameAs": "https://www.rfc-editor.org/rfc/rfc1035",
+      "anchorfact:sourceTier": "S",
+      "anchorfact:year": 1987
     },
     {
       "@type": "CreativeWork",
       "name": "RFC 4033 — DNS Security Introduction and Requirements",
       "author": "Arends, R., Austein, R., Larson, M., Massey, D., Rose, S.",
-      "sameAs": "https://www.rfc-editor.org/rfc/rfc4033"
+      "sameAs": "https://www.rfc-editor.org/rfc/rfc4033",
+      "anchorfact:sourceTier": "S",
+      "anchorfact:year": 2005
     }
   ]
 }

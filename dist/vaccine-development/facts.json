@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-hlth-vac-001",
     "text": "Jenner's smallpox vaccine (1796) led to eradication (WHO 1980), the only eradicated human disease.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.1080/08998280.2005.11928028"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-hlth-vac-002",
     "text": "mRNA vaccines (Nobel 2023, Karikó & Weissman) enabled COVID-19 vaccine in <12 months.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.1038/d41586-021-02483-w"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-hlth-vac-003",
     "text": "WHO EPI (1974) prevented ~154M deaths over 50 years (Lancet 2024).",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.1016/S0140-6736(24)00850-X"

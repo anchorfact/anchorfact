@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00398>
   a schema:TechArticle ;
   schema:headline "Rise of Islam" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00398>
-  schema:citation <https://www.penguinrandomhouse.com/books/164306/islam-by-karen-armstrong/> .
+  schema:citation <https://www.penguinrandomhouse.com/books/164306/islam-by-karen-armstrong/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00398>
-  schema:citation <https://global.oup.com/vsi-islam/> .
+  schema:citation <https://global.oup.com/vsi-islam/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00398>
-  schema:citation <https://doi.org/10.1017/cbo.2025.islam> .
+  schema:citation <https://doi.org/10.1017/cbo.2025.islam> ;
+  af:sourceTier "C" .

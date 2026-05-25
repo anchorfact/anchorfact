@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-game-development-001",
     "text": "Pathfinding finds routes for game characters to navigate environments. A* algorithm (pronounced A-star) is the standard: combines Dijkstra's shortest path with a heuristic guiding search toward the goal. Used in virtually every game with NPC movement. NavMesh (navigation mesh) replaces grid-based maps with polygon-based walkable areas.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-game-development-002",
     "text": "Common heuristics: Manhattan distance (grid, 4-directional), Euclidean (any direction), octile (8-directional).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"

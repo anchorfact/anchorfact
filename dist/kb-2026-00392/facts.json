@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-01",
     "text": "Key events: Salt March , Quit India Movement , Partition",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguin.co.in/book/indias-struggle-for-independence/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-02",
     "text": "1857 Sepoy Mutiny: first major uprising",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguin.co.in/book/indias-struggle-for-independence/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-03",
     "text": "Indian National Congress founded 1885",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguin.co.in/book/indias-struggle-for-independence/"

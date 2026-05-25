@@ -1,7 +1,7 @@
 # Neuro-Symbolic AI: Bridging Learning and Reasoning
-Confidence: high
+Confidence: medium (0.78) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Neuro-symbolic AI integrates neural learning with symbolic reasoning — combining the pattern recognition power of deep learning with the systematic generalization of logic. AlphaGeometry proved the paradigm by solving Olympiad-level geometry.

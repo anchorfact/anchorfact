@@ -1,7 +1,7 @@
 # AI for Employee Experience: Onboarding, Learning, and Internal Communications
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is HR's most productive colleague -- onboarding new hires conversationally, recommending personalized learning, detecting disengagement before employees leave, and crafting internal communications. From Microsoft Viva to Qualtrics, AI transforms employee experience from one-size-fits-all to hyper-personalized.

@@ -4,20 +4,27 @@
 <https://anchorfact.org/kb/kb-2026-00430>
   a schema:TechArticle ;
   schema:headline "Entrepreneurship Fundamentals" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00430>
-  schema:citation <https://www.penguinrandomhouse.com/books/120785/the-lean-startup-by-eric-ries/> .
+  schema:citation <https://www.penguinrandomhouse.com/books/120785/the-lean-startup-by-eric-ries/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00430>
-  schema:citation <https://theleanstartup.com/> .
+  schema:citation <https://theleanstartup.com/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00430>
-  schema:citation <https://www.cengage.com/entrepreneurship/> .
+  schema:citation <https://www.cengage.com/entrepreneurship/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00430>
-  schema:citation <https://theleanstartup.com/> .
+  schema:citation <https://theleanstartup.com/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00430>
-  schema:citation <https://www.crownpublishing.com/zero-to-one/> .
+  schema:citation <https://www.crownpublishing.com/zero-to-one/> ;
+  af:sourceTier "C" .

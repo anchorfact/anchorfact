@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00180>
   a schema:TechArticle ;
   schema:headline "Playwright" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.5" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00180>
-  schema:citation <https://playwright.dev/> .
+  schema:citation <https://playwright.dev/> ;
+  af:sourceTier "C" .

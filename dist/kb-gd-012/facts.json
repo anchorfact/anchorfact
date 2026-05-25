@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-001",
     "text": "1 DAU / MAU / Stickiness\n``` DAU = 每日活跃用户数 MAU = 每月活跃用户数 Stickiness = DAU / MAU × 100% ```\n- **Stickiness 目标：** > 20% 为优秀，> 15% 为良好 - Stickiness 反映了游戏对玩家的\"粘性\"\n### 2.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-002",
     "text": "2 留存率计算\n``` D1 留存 = 第 1 天回访用户 / 第 0 天新增用户 × 100% D7 留存 = 第 7 天回访用户 / 第 0 天新增用户 × 100% D30 留存 = 第 30 天回访用户 / 第 0 天新增用户 × 100% ```\n**注意：** 留存率一定是按**新增 Cohort** 计算的，不是按整体活跃用户。",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-003",
     "text": "3 LTV 计算\n``` LTV = ARPU × 平均用户生命周期\n常见估算方式: LTV = D1 留存 × D7 留存贡献 + D7 留存 × D30 留存贡献 + .",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-004",
     "text": "4 关键平衡指标\n| 指标 | 说明 | 预警阈值 | |------|------|----------| | 货币通胀率 | 玩家持有的货币增速 | > 15%/周 | | 付费深度 | 最大可消费金额 | 与用户群匹配 | | Gini 系数 | 付费公平性 | < 0.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -49,6 +61,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-005",
     "text": "4 为健康 | | 消费集中度 | top 10% 玩家占总消费比 | < 70% 为健康 |\n---\n## 3.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"

@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00462>
   a schema:TechArticle ;
   schema:headline "Nutrition for Athletes" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.45" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00462>
-  schema:citation <https://www.humankinetics.com/products/nancy-clarks-sports-nutrition-guidebook-6th-edition> .
+  schema:citation <https://www.humankinetics.com/products/nancy-clarks-sports-nutrition-guidebook-6th-edition> ;
+  af:sourceTier "C" .

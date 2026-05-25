@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00316>
   a schema:TechArticle ;
   schema:headline "Grafana" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.5" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00316>
-  schema:citation <https://grafana.com/docs/> .
+  schema:citation <https://grafana.com/docs/> ;
+  af:sourceTier "C" .

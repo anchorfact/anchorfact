@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-in-gaming>
   a schema:TechArticle ;
   schema:headline "AI in Gaming: NPCs, Procedural Content, and AlphaStar" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.76" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-in-gaming>
-  schema:citation <https://www.nature.com/articles/s41586-019-1724-z> .
+  schema:citation <https://www.nature.com/articles/s41586-019-1724-z> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-in-gaming>
-  schema:citation <https://deepmind.google/blog/sima-generalist-ai-agent-for-3d-virtual-environments/> .
+  schema:citation <https://deepmind.google/blog/sima-generalist-ai-agent-for-3d-virtual-environments/> ;
+  af:sourceTier "C" .

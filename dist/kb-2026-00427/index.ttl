@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00427>
   a schema:TechArticle ;
   schema:headline "Public Health Basics" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.45" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00427>
-  schema:citation <https://www.jblearning.com/catalog/productdetails/9781284197594> .
+  schema:citation <https://www.jblearning.com/catalog/productdetails/9781284197594> ;
+  af:sourceTier "C" .

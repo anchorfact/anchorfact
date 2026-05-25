@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00313>
   a schema:TechArticle ;
   schema:headline "Ansible" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00313>
-  schema:citation <https://docs.ansible.com/> .
+  schema:citation <https://docs.ansible.com/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00313>
-  schema:citation <https://www.oreilly.com/ansible/> .
+  schema:citation <https://www.oreilly.com/ansible/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00313>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.cm> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.cm> ;
+  af:sourceTier "C" .

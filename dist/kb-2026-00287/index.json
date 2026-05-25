@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00287",
   "headline": "Express.js",
   "description": "Express.js is a minimal, unopinionated web framework for Node.js, created by TJ Holowaychuk (2010). It provides routing, middleware, request/response handling, and template engines. Express is the most popular Node.js framework and the foundation of MERN/MEAN stacks.",
-  "dateCreated": "2026-05-25T02:46:04.093Z",
-  "dateModified": "2026-05-25T02:46:04.093Z",
+  "dateCreated": "2026-05-22",
+  "dateModified": "2026-05-25T12:59:31.990Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -16,25 +16,60 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "human_only",
+  "anchorfact:confidence": "low",
+  "anchorfact:confidenceScore": 0.475,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 0.3,
+      "source_count": 1,
+      "source_verified": 0.4,
+      "freshness": 1,
+      "decay": 0.30000000000000004,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "low",
+    "confidence_score": 0.475,
+    "confidence_basis": "verified_sources",
+    "sources_total": 3,
+    "sources_verified": 1,
+    "sources_unreachable": 2,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "C",
+      "C",
+      "C"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": true,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "Express.js Documentation",
-      "sameAs": "https://expressjs.com/"
+      "sameAs": "https://expressjs.com/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2026
     },
     {
       "@type": "CreativeWork",
       "name": "Express.js in Action (2025 Edition)",
       "author": "Hahn E.M.",
-      "sameAs": "https://www.manning.com/express/"
+      "sameAs": "https://www.manning.com/express/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "Node.js Web Frameworks: Express, Fastify, and NestJS (2025)",
       "author": "multiple",
-      "sameAs": "https://doi.org/10.1145/acmcs.2025.node"
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.node",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     }
   ]
 }

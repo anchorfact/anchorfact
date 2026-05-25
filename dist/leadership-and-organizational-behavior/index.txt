@@ -1,7 +1,7 @@
 # Leadership Theory and Organizational Behavior
-Confidence: high
+Confidence: low (0.55) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Leadership is not innate — it's a set of learnable behaviors. Modern leadership theory has shifted from trait-based models to behavioral, situational, and transformational approaches.

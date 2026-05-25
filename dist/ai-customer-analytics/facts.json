@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-customer-analytics-1",
     "text": "AI customer analytics (2023-2026): (1) Segmentation -- deep clustering (VAE + k-means, GMM, deep embedded clustering) discovers behavioral segments from transaction, browsing, and engagement data, replacing manual RFM segmentation; (2) Churn prediction -- XGBoost/neural networks with 85-92% AUC predict customers likely to leave in the next 30-60 days. Features: recency/frequency/monetary (RFM), support tickets, product usage, NPS; (3) LTV -- deep survival models predict customer lifetime value and duration.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=customer+analytics+churn+prediction+CLV"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-customer-analytics-2",
     "text": "Causal customer analytics (2024-2026): uplift modeling estimates the incremental effect of interventions (discount, email, feature change) on individual customers -- only targeting customers who would respond positively. AI-driven next-best-action: contextual bandits and RL recommend the optimal marketing action per customer in real-time, improving campaign ROI by 20-40% over batch A/B tested campaigns. Customer journey analytics: Markov models + sequence mining analyze multi-touch conversion paths.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=uplift+modeling+next+best+action"

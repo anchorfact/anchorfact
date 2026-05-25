@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00299>
   a schema:TechArticle ;
   schema:headline "Deno" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.425" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00299>
-  schema:citation <https://docs.deno.com/> .
+  schema:citation <https://docs.deno.com/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00299>
-  schema:citation <https://www.oreilly.com/deno/> .
+  schema:citation <https://www.oreilly.com/deno/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00299>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.js-runtime> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.js-runtime> ;
+  af:sourceTier "C" .

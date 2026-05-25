@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/f1",
     "text": "Knowledge Distillation (Hinton, Vinyals, Dean 2015, Google) transfers knowledge from a large teacher model to a smaller student by training on soft targets (probability distributions) rather than hard labels.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/1503.02531"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/f2",
     "text": "The Lottery Ticket Hypothesis (Frankle & Carbin 2019, MIT) showed that dense, randomly-initialized networks contain sparse subnetworks that can be trained in isolation to match the full network's accuracy.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/1803.03635"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/f3",
     "text": "Deep Compression (Han et al. 2016, Stanford/NVIDIA) combined pruning, trained quantization, and Huffman coding to reduce model size by 35-49× without accuracy loss, establishing the compression pipeline used in TinyML.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/1510.00149"

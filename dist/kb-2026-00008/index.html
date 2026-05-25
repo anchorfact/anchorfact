@@ -1,96 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Hypertext Transfer Protocol (HTTP) — AnchorFact</title></head>
-<body><article><br>
-<br>
-## TL;DR<br>
-<br>
-HTTP (Hypertext Transfer Protocol) is the foundational application-layer protocol of the World Wide Web, standardized by the IETF. Originally designed by Tim Berners-Lee at CERN in 1989, it defines how clients request resources from servers and how servers respond. HTTP has evolved through four major versions: HTTP/0.9 (1991), HTTP/1.0 (1996) and 1.1 (1997/1999), HTTP/2 (2015), and HTTP/3 (2022 — the first version not using TCP, instead using QUIC over UDP). As of 2025, HTTP/2 and HTTP/3 together carry ~60% of global web traffic, and HTTP/3's QUIC transport represents the most fundamental architectural shift since the protocol's inception.<br>
-<br>
-## Core Explanation<br>
-<br>
-HTTP is a request-response protocol. The fundamental cycle:<br>
-<br>
-1. Client opens a connection to server<br>
-2. Client sends a **request message**<br>
-3. Server processes and returns a **response message**<br>
-4. Connection may be closed or reused<br>
-<br>
-Each message consists of three parts:<br>
-<br>
-```<br>
-REQUEST                              RESPONSE<br>
-GET /index.html HTTP/1.1            HTTP/1.1 200 OK<br>
-Host: example.com                   Content-Type: text/html<br>
-Accept: text/html                   Content-Length: 1234<br>
-                                    Cache-Control: max-age=3600<br>
-[empty line]                        [empty line]<br>
-                                    <!DOCTYPE html>...<br>
-```<br>
-<br>
-- **Start line**: Method + target + version (request) | Version + status code + reason (response)<br>
-- **Headers**: Key-value pairs — metadata about the request/response<br>
-- **Body** (optional): The payload (HTML, JSON, binary data)<br>
-<br>
-HTTP is fundamentally **stateless**: each request is independent. Application state is managed through higher-level mechanisms — cookies (`Set-Cookie` / `Cookie` headers), tokens (Authorization headers), or URL parameters.<br>
-<br>
-## Detailed Analysis<br>
-<br>
-### Version Evolution<br>
-<br>
-| Version | Year | Transport | Key Innovation | Head-of-Line Blocking? |<br>
-|---------|:----:|-----------|---------------|:----------------------:|<br>
-| HTTP/0.9 | 1991 | TCP | `GET /path` → HTML response. Single line. No headers. | N/A (single request) |<br>
-| HTTP/1.0 | 1996 | TCP | Headers, status codes, `Content-Type`. One request per connection by default. | Yes |<br>
-| HTTP/1.1 | 1997 | TCP | Persistent connections, pipelining (broken in practice), chunked transfer, Host header, caching (Cache-Control). Dominant for 20 years. | Yes (pipelining didn't solve it) |<br>
-| HTTP/2 | 2015 | TCP | Binary framing, multiplexed streams, header compression (HPACK), server push. | At transport layer (TCP); streams fine |<br>
-| HTTP/3 | 2022 | QUIC (UDP) | 0-RTT resumption, no HOL blocking, connection migration, mandatory TLS 1.3 | No |<br>
-<br>
-The head-of-line blocking problem: In HTTP/1.1, if the first of 6 parallel requests stalls, all 6 stall — because responses must be delivered in order. HTTP/2 solves this by multiplexing requests over independent streams, but TCP itself can still cause HOL blocking at the transport layer (a lost TCP packet blocks all streams). HTTP/3's QUIC solves this definitively: each stream is independent at the transport layer, so a lost packet affects only its stream.<br>
-<br>
-### HTTP Methods<br>
-<br>
-| Method | Semantics | Idempotent? | Safe? | Body? |<br>
-|--------|-----------|:----------:|:-----:|:-----:|<br>
-| **GET** | Retrieve a resource | Yes | Yes | No |<br>
-| **HEAD** | Like GET but no response body | Yes | Yes | No |<br>
-| **POST** | Submit data, create resource | No | No | Yes |<br>
-| **PUT** | Replace or create a resource at a known URI | Yes | No | Yes |<br>
-| **DELETE** | Remove a resource | Yes | No | No |<br>
-| **PATCH** | Partial update of a resource | No | No | Yes |<br>
-| **OPTIONS** | Describe communication options for a resource | Yes | Yes | No |<br>
-<br>
-- **Idempotent**: Multiple identical requests have the same effect as a single request. Safe to retry on failure.<br>
-- **Safe**: Does not modify the resource. Can be cached, pre-fetched, and crawled freely.<br>
-<br>
-### Status Code Classes<br>
-<br>
-| Class | Meaning | Key Codes |<br>
-|:-----:|---------|-----------|<br>
-| **1xx** | Informational | `100 Continue`, `101 Switching Protocols` (WebSocket upgrade) |<br>
-| **2xx** | Success | `200 OK`, `201 Created`, `204 No Content` |<br>
-| **3xx** | Redirection | `301 Moved Permanently`, `302 Found`, `304 Not Modified` (caching) |<br>
-| **4xx** | Client Error | `400 Bad Request`, `401 Unauthorized`, `403 Forbidden`, `404 Not Found`, `429 Too Many Requests` |<br>
-| **5xx** | Server Error | `500 Internal Server Error`, `502 Bad Gateway`, `503 Service Unavailable` |<br>
-<br>
-### HTTP/3 Deep Dive: Why QUIC Matters<br>
-<br>
-HTTP/3's use of QUIC (RFC 9000, 2021) is the most significant change in HTTP's history:<br>
-<br>
-| Feature | TCP (HTTP/2) | QUIC (HTTP/3) |<br>
-|---------|:-----------:|:------------:|<br>
-| Handshake | 1-RTT (TCP + TLS 1.3) | 0-RTT for previously visited sites |<br>
-| Stream multiplexing | Shared TCP congestion control | Independent per-stream |<br>
-| Head-of-line blocking | TCP level: lost packet blocks all | No transport-level HOL blocking |<br>
-| Connection migration | Breaks on IP change | Survives WiFi→cellular switches |<br>
-| Encryption | Optional (but commonly TLS) | Mandatory TLS 1.3 |<br>
-<br>
-These improvements are most noticeable on mobile networks (frequent IP changes, higher packet loss) and for multiplexed applications (video streaming with chat, collaborative editing).<br>
-<br>
-## Further Reading<br>
-<br>
-- [RFC 9110 — HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110): The definitive HTTP standard<br>
-- [MDN HTTP Documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP): Practical developer reference<br>
-- [HTTP/3 Explained](https://http3-explained.haxx.se/): By Daniel Stenberg, curl author<br>
+<head>
+  <meta charset="utf-8">
+  <title>Hypertext Transfer Protocol (HTTP) — AnchorFact</title>
+  <meta name="anchorfact:confidence" content="medium (0.64)">
+  <meta name="anchorfact:generation" content="human_only">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/kb-2026-00008","headline":"Hypertext Transfer Protocol (HTTP)","description":"HTTP (Hypertext Transfer Protocol) is the foundational application-layer protocol of the World Wide Web, standardized by the IETF. Originally designed by Tim Berners-Lee at CERN in 1989, it defines how clients request resources from servers and how servers respond. HTTP has evolved through four major versions: HTTP/0.9 (1991), HTTP/1.0 (1996) and 1.1 (1997/1999), HTTP/2 (2015), and HTTP/3 (2022 — the first version not using TCP, instead using QUIC over UDP). As of 2025, HTTP/2 and HTTP/3 together carry ~60% of global web traffic, and HTTP/3's QUIC transport represents the most fundamental architectural shift since the protocol's inception.","dateCreated":"2026-05-22","dateModified":"2026-05-25T12:59:32.031Z","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.64,"anchorfact:generationMethod":"human_only","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":1,"source_count":1,"source_verified":0.2,"freshness":0.7,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.64,"confidence_basis":"verified_sources","sources_total":4,"sources_verified":0,"sources_unreachable":4,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["S","S","S","S"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"RFC 9110 — HTTP Semantics","author":"Fielding, R., Nottingham, M., Reschke, J.","sameAs":"https://www.rfc-editor.org/rfc/rfc9110","anchorfact:sourceTier":"S","anchorfact:year":2022},{"@type":"CreativeWork","name":"RFC 9112 — HTTP/1.1","author":"Fielding, R., Nottingham, M., Reschke, J.","sameAs":"https://www.rfc-editor.org/rfc/rfc9112","anchorfact:sourceTier":"S","anchorfact:year":2022},{"@type":"CreativeWork","name":"RFC 9113 — HTTP/2","author":"Thomson, M., Benfield, C.","sameAs":"https://www.rfc-editor.org/rfc/rfc9113","anchorfact:sourceTier":"S","anchorfact:year":2022},{"@type":"CreativeWork","name":"RFC 9114 — HTTP/3","author":"Bishop, M.","sameAs":"https://www.rfc-editor.org/rfc/rfc9114","anchorfact:sourceTier":"S","anchorfact:year":2022}]}</script>
+</head>
+<body><article><br>
+<br>
+## TL;DR<br>
+<br>
+HTTP (Hypertext Transfer Protocol) is the foundational application-layer protocol of the World Wide Web, standardized by the IETF. Originally designed by Tim Berners-Lee at CERN in 1989, it defines how clients request resources from servers and how servers respond. HTTP has evolved through four major versions: HTTP/0.9 (1991), HTTP/1.0 (1996) and 1.1 (1997/1999), HTTP/2 (2015), and HTTP/3 (2022 — the first version not using TCP, instead using QUIC over UDP). As of 2025, HTTP/2 and HTTP/3 together carry ~60% of global web traffic, and HTTP/3's QUIC transport represents the most fundamental architectural shift since the protocol's inception.<br>
+<br>
+## Core Explanation<br>
+<br>
+HTTP is a request-response protocol. The fundamental cycle:<br>
+<br>
+1. Client opens a connection to server<br>
+2. Client sends a **request message**<br>
+3. Server processes and returns a **response message**<br>
+4. Connection may be closed or reused<br>
+<br>
+Each message consists of three parts:<br>
+<br>
+```<br>
+REQUEST                              RESPONSE<br>
+GET /index.html HTTP/1.1            HTTP/1.1 200 OK<br>
+Host: example.com                   Content-Type: text/html<br>
+Accept: text/html                   Content-Length: 1234<br>
+                                    Cache-Control: max-age=3600<br>
+[empty line]                        [empty line]<br>
+                                    <!DOCTYPE html>...<br>
+```<br>
+<br>
+- **Start line**: Method + target + version (request) | Version + status code + reason (response)<br>
+- **Headers**: Key-value pairs — metadata about the request/response<br>
+- **Body** (optional): The payload (HTML, JSON, binary data)<br>
+<br>
+HTTP is fundamentally **stateless**: each request is independent. Application state is managed through higher-level mechanisms — cookies (`Set-Cookie` / `Cookie` headers), tokens (Authorization headers), or URL parameters.<br>
+<br>
+## Detailed Analysis<br>
+<br>
+### Version Evolution<br>
+<br>
+| Version | Year | Transport | Key Innovation | Head-of-Line Blocking? |<br>
+|---------|:----:|-----------|---------------|:----------------------:|<br>
+| HTTP/0.9 | 1991 | TCP | `GET /path` → HTML response. Single line. No headers. | N/A (single request) |<br>
+| HTTP/1.0 | 1996 | TCP | Headers, status codes, `Content-Type`. One request per connection by default. | Yes |<br>
+| HTTP/1.1 | 1997 | TCP | Persistent connections, pipelining (broken in practice), chunked transfer, Host header, caching (Cache-Control). Dominant for 20 years. | Yes (pipelining didn't solve it) |<br>
+| HTTP/2 | 2015 | TCP | Binary framing, multiplexed streams, header compression (HPACK), server push. | At transport layer (TCP); streams fine |<br>
+| HTTP/3 | 2022 | QUIC (UDP) | 0-RTT resumption, no HOL blocking, connection migration, mandatory TLS 1.3 | No |<br>
+<br>
+The head-of-line blocking problem: In HTTP/1.1, if the first of 6 parallel requests stalls, all 6 stall — because responses must be delivered in order. HTTP/2 solves this by multiplexing requests over independent streams, but TCP itself can still cause HOL blocking at the transport layer (a lost TCP packet blocks all streams). HTTP/3's QUIC solves this definitively: each stream is independent at the transport layer, so a lost packet affects only its stream.<br>
+<br>
+### HTTP Methods<br>
+<br>
+| Method | Semantics | Idempotent? | Safe? | Body? |<br>
+|--------|-----------|:----------:|:-----:|:-----:|<br>
+| **GET** | Retrieve a resource | Yes | Yes | No |<br>
+| **HEAD** | Like GET but no response body | Yes | Yes | No |<br>
+| **POST** | Submit data, create resource | No | No | Yes |<br>
+| **PUT** | Replace or create a resource at a known URI | Yes | No | Yes |<br>
+| **DELETE** | Remove a resource | Yes | No | No |<br>
+| **PATCH** | Partial update of a resource | No | No | Yes |<br>
+| **OPTIONS** | Describe communication options for a resource | Yes | Yes | No |<br>
+<br>
+- **Idempotent**: Multiple identical requests have the same effect as a single request. Safe to retry on failure.<br>
+- **Safe**: Does not modify the resource. Can be cached, pre-fetched, and crawled freely.<br>
+<br>
+### Status Code Classes<br>
+<br>
+| Class | Meaning | Key Codes |<br>
+|:-----:|---------|-----------|<br>
+| **1xx** | Informational | `100 Continue`, `101 Switching Protocols` (WebSocket upgrade) |<br>
+| **2xx** | Success | `200 OK`, `201 Created`, `204 No Content` |<br>
+| **3xx** | Redirection | `301 Moved Permanently`, `302 Found`, `304 Not Modified` (caching) |<br>
+| **4xx** | Client Error | `400 Bad Request`, `401 Unauthorized`, `403 Forbidden`, `404 Not Found`, `429 Too Many Requests` |<br>
+| **5xx** | Server Error | `500 Internal Server Error`, `502 Bad Gateway`, `503 Service Unavailable` |<br>
+<br>
+### HTTP/3 Deep Dive: Why QUIC Matters<br>
+<br>
+HTTP/3's use of QUIC (RFC 9000, 2021) is the most significant change in HTTP's history:<br>
+<br>
+| Feature | TCP (HTTP/2) | QUIC (HTTP/3) |<br>
+|---------|:-----------:|:------------:|<br>
+| Handshake | 1-RTT (TCP + TLS 1.3) | 0-RTT for previously visited sites |<br>
+| Stream multiplexing | Shared TCP congestion control | Independent per-stream |<br>
+| Head-of-line blocking | TCP level: lost packet blocks all | No transport-level HOL blocking |<br>
+| Connection migration | Breaks on IP change | Survives WiFi→cellular switches |<br>
+| Encryption | Optional (but commonly TLS) | Mandatory TLS 1.3 |<br>
+<br>
+These improvements are most noticeable on mobile networks (frequent IP changes, higher packet loss) and for multiplexed applications (video streaming with chat, collaborative editing).<br>
+<br>
+## Further Reading<br>
+<br>
+- [RFC 9110 — HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110): The definitive HTTP standard<br>
+- [MDN HTTP Documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP): Practical developer reference<br>
+- [HTTP/3 Explained](https://http3-explained.haxx.se/): By Daniel Stenberg, curl author<br>
 </article></body>
 </html>

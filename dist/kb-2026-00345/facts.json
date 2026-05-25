@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-arts-001",
     "text": "Jazz originated in New Orleans (late 19th/early 20th century), blending African rhythms, blues, ragtime, and European harmony. Key characteristics: swing, improvisation, blue notes, call-and-response. Called 'America's classical music.' Evolved through: Dixieland → Swing → Bebop → Cool → Free → Fusion.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://wwnorton.com/books/9780393978803"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-arts-002",
     "text": "Key figures: Louis Armstrong (trumpet, scat singing, defined swing), Duke Ellington (composer, big band leader), Charlie Parker/Dizzy Gillespie (bebop, fast complex improvisation), Miles Davis (Kind of Blue, 1959 — best-selling jazz album, modal jazz), John Coltrane (A Love Supreme, 1965 — spiritual jazz).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://wwnorton.com/books/9780393978803"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-arts-003",
     "text": "Jazz influenced rock, R&B, hip-hop — foundational to 20th century music.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://wwnorton.com/books/9780393978803"

@@ -1,7 +1,7 @@
 # Causal Representation Learning: Deep Causal Discovery, Intervention, and Counterfactuals
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Causal Representation Learning bridges deep learning with causality — moving beyond correlational patterns to learn representations that encode cause-effect relationships. Unlike standard deep learning which captures statistical associations, causal representations enable robust generalization, intervention reasoning, and counterfactual "what-if" predictions.

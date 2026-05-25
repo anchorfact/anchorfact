@@ -1,7 +1,7 @@
 # Negotiation Skills
-Confidence: high
+Confidence: low (0.495) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 

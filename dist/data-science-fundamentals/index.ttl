@@ -4,20 +4,27 @@
 <https://anchorfact.org/kb/data-science-fundamentals>
   a schema:Article ;
   schema:headline "Data Science: Methods, Tools, and Best Practices" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/data-science-fundamentals>
-  schema:citation <https://www.oreilly.com/library/view/python-for-data/9781098104023/> .
+  schema:citation <https://www.oreilly.com/library/view/python-for-data/9781098104023/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/data-science-fundamentals>
-  schema:citation <https://link.springer.com/book/10.1007/978-0-387-84858-7> .
+  schema:citation <https://link.springer.com/book/10.1007/978-0-387-84858-7> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/data-science-fundamentals>
-  schema:citation <https://www.oreilly.com/pydata/> .
+  schema:citation <https://www.oreilly.com/pydata/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/data-science-fundamentals>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.datascience> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.datascience> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/data-science-fundamentals>
-  schema:citation <https://www.oreilly.com/data-science/> .
+  schema:citation <https://www.oreilly.com/data-science/> ;
+  af:sourceTier "C" .

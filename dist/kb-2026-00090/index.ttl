@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00090>
   a schema:TechArticle ;
   schema:headline "Canvas API" ;
-  af:confidence "high" ;
+  af:confidence "medium" ;
+  af:confidenceScore "0.735" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00090>
-  schema:citation <https://html.spec.whatwg.org/multipage/canvas.html> .
+  schema:citation <https://html.spec.whatwg.org/multipage/canvas.html> ;
+  af:sourceTier "S" .

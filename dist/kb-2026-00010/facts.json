@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-ai-01",
     "text": "at Google Brain, MoE is the dominant architecture for frontier-scale models as of 2026: GPT-4 reportedly uses MoE with approximately 1.76T total parameters but only 280B active per forward pass",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.48550/arXiv.2101.03961"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-ai-02",
     "text": "Mixture of Experts is a neural network architecture that divides a model into multiple specialized \"expert\" sub-networks, with a learned gating mechanism routing each input token to only a subset of experts",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.48550/arXiv.1701.06538"
@@ -26,6 +32,9 @@
     "@type": "Claim",
     "@id": "https://anchorfact.org/fact/fact-ai-03",
     "text": "First made practical for deep learning by Shazeer et al",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.48550/arXiv.1701.06538"

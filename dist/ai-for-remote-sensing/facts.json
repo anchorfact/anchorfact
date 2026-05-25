@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-remote-sensing-1",
     "text": "Nature Machine Intelligence (August 2025) presented a multi-modal remote sensing foundation model — integrating optical, SAR (Synthetic Aperture Radar), and multispectral satellite imagery through progressive pretraining (unimodal → cross-modal alignment → joint fine-tuning) — demonstrating that the unified model outperforms single-modal baselines by 8-12% on land cover classification, change detection, and disaster mapping across global benchmarks, with strong zero-shot transfer to novel geographic regions.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nature.com/articles/s44287-025-00208-z"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-remote-sensing-2",
     "text": "NASA and IBM (2023, with 2025 expansions) released the first open-source geospatial AI foundation model (Prithvi) — a ViT-based model pretrained on Harmonized Landsat Sentinel-2 (HLS) data covering the entire Earth at 30m resolution — enabling researchers to fine-tune for tasks including flood mapping, crop type classification, and wildfire burn scar delineation with just 100-500 labeled examples, democratizing access to state-of-the-art remote sensing AI.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://ieeexplore.ieee.org/document/11097335"

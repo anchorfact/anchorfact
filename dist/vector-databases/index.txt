@@ -1,7 +1,7 @@
 # Vector Databases: Approximate Nearest Neighbor Search, Embedding Storage, and Retrieval at Scale
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Vector databases are the storage engine powering modern AI — from RAG (Retrieval-Augmented Generation) to semantic search to recommendation. They store embeddings (numerical representations of text, images, audio) and perform approximate nearest neighbor (ANN) search to find the most similar items in milliseconds across billions of vectors.

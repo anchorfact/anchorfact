@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/3d-human-modeling>
   a schema:article ;
   schema:headline "3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.74" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/3d-human-modeling>
-  schema:citation <https://smpl.is.tue.mpg.de/> .
+  schema:citation <https://smpl.is.tue.mpg.de/> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/3d-human-modeling>
-  schema:citation <https://arxiv.org/abs/1712.06584> .
+  schema:citation <https://arxiv.org/abs/1712.06584> ;
+  af:sourceTier "A" .

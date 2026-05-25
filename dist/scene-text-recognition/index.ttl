@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/scene-text-recognition>
   a schema:article ;
   schema:headline "Scene Text Recognition: Transformer-Based OCR and End-to-End Text Spotting" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.74" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/scene-text-recognition>
-  schema:citation <https://arxiv.org/abs/2109.10282> .
+  schema:citation <https://arxiv.org/abs/2109.10282> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/scene-text-recognition>
-  schema:citation <https://www.mdpi.com/2079-9292/14/23/4594> .
+  schema:citation <https://www.mdpi.com/2079-9292/14/23/4594> ;
+  af:sourceTier "A" .

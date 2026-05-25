@@ -1,7 +1,7 @@
 # Edge AI and TinyML: Intelligence at the Edge
-Confidence: high
+Confidence: medium (0.67) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Edge AI runs machine learning directly on devices — smartphones, IoT sensors, microcontrollers — eliminating cloud latency and privacy concerns. TinyML pushes ML to devices using <1mW of power.

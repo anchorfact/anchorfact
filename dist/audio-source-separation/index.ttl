@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/audio-source-separation>
   a schema:article ;
   schema:headline "Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.84" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/audio-source-separation>
-  schema:citation <https://github.com/facebookresearch/demucs> .
+  schema:citation <https://github.com/facebookresearch/demucs> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/audio-source-separation>
-  schema:citation <https://ieeexplore.ieee.org/document/8707065> .
+  schema:citation <https://ieeexplore.ieee.org/document/8707065> ;
+  af:sourceTier "S" .

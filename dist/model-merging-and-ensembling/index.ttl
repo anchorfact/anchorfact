@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/model-merging-and-ensembling>
   a schema:TechArticle ;
   schema:headline "Model Merging, Mixture of Experts, and Efficient Ensembling" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.71" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/model-merging-and-ensembling>
-  schema:citation <https://arxiv.org/abs/2203.05482> .
+  schema:citation <https://arxiv.org/abs/2203.05482> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/model-merging-and-ensembling>
-  schema:citation <https://arxiv.org/abs/2412.19437> .
+  schema:citation <https://arxiv.org/abs/2412.19437> ;
+  af:sourceTier "A" .

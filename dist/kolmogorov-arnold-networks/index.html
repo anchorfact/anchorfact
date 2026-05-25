@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Kolmogorov-Arnold Networks (KANs): Learnable Activation Functions as MLP Alternatives — AnchorFact</title></head>
-<body><article>## TL;DR<br>
-Kolmogorov-Arnold Networks (KANs) are a radical architectural innovation: instead of fixed activation functions on neurons, KANs use learnable B-spline functions on edges. This design achieves higher accuracy with far fewer parameters, challenging the 60-year dominance of the Multi-Layer Perceptron.<br>
-<br>
-## Core Explanation<br>
-MLP: each edge carries a scalar weight w, each node has a fixed activation function σ (ReLU, GELU, etc.). Operation: h_{l+1} = σ(W_l · h_l). KAN: each edge carries a learnable univariate function φ(x) (parameterized as B-spline), nodes perform simple summation. Operation: h_{l+1,j} = Σ_i φ_{l,i,j}(h_{l,i}). This flips the standard paradigm — putting the "learning" on the edges (as functions) and the "nonlinearity" through the function shapes themselves. B-splines provide smooth, locally-supported basis functions with learnable coefficients, enabling efficient gradient-based optimization.<br>
-<br>
-## Detailed Analysis<br>
-Advantages of KANs: (1) Parameter efficiency — 10-100x fewer parameters for equivalent accuracy on symbolic regression and PDE solving; (2) Interpretability — each edge function φ(x) can be visualized and understood, and the network can be symbolically simplified (pruning, symbolic regression) into compact mathematical formulas; (3) Avoids catastrophic forgetting naturally since different edges learn different functional relationships. Limitations: (1) Slower training — B-spline evaluation is more expensive than matrix multiplication, though FastKAN and ChebyKAN variants reduce this; (2) Not yet competitive with Transformers for large-scale language modeling; (3) Hyperparameter sensitivity — B-spline order (k) and grid size affect performance. The 2024 paper sparked 15,000+ GitHub stars and extensive follow-up work including Convolutional KANs, Graph KANs, and Fourier KANs. Physics applications (PDE solving, operator learning) and scientific computing benefit most from KANs' interpretability and efficiency.<br>
-<br>
-## Further Reading<br>
-- pyKAN: Official KAN Implementation (GitHub: KindXiaoming/pykan)<br>
-- EfficientKAN and FastKAN Optimizations<br>
-- KAN for Time Series Forecasting and Scientific ML<br>
+<head>
+  <meta charset="utf-8">
+  <title>Kolmogorov-Arnold Networks (KANs): Learnable Activation Functions as MLP Alternatives — AnchorFact</title>
+  <meta name="anchorfact:confidence" content="medium (0.78)">
+  <meta name="anchorfact:generation" content="ai_structured">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"article","@id":"https://anchorfact.org/kb/kolmogorov-arnold-networks","headline":"Kolmogorov-Arnold Networks (KANs): Learnable Activation Functions as MLP Alternatives","description":"Kolmogorov-Arnold Networks (KANs) are a radical architectural innovation: instead of fixed activation functions on neurons, KANs use learnable B-spline functions on edges. This design achieves higher accuracy with far fewer parameters, challenging the 60-year dominance of the Multi-Layer Perceptron.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.78,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.9,"freshness":0.9,"decay":0.1,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.78,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":2,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["A","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":false,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"KAN: Kolmogorov-Arnold Networks","sameAs":"https://arxiv.org/abs/2404.19756","anchorfact:sourceTier":"A","anchorfact:year":2024},{"@type":"CreativeWork","name":"KAN vs MLP: A Comprehensive Comparison of Neural Network Architectures (2024 survey)","sameAs":"https://arxiv.org/abs/2405.02000","anchorfact:sourceTier":"A","anchorfact:year":2024}]}</script>
+</head>
+<body><article>## TL;DR<br>
+Kolmogorov-Arnold Networks (KANs) are a radical architectural innovation: instead of fixed activation functions on neurons, KANs use learnable B-spline functions on edges. This design achieves higher accuracy with far fewer parameters, challenging the 60-year dominance of the Multi-Layer Perceptron.<br>
+<br>
+## Core Explanation<br>
+MLP: each edge carries a scalar weight w, each node has a fixed activation function σ (ReLU, GELU, etc.). Operation: h_{l+1} = σ(W_l · h_l). KAN: each edge carries a learnable univariate function φ(x) (parameterized as B-spline), nodes perform simple summation. Operation: h_{l+1,j} = Σ_i φ_{l,i,j}(h_{l,i}). This flips the standard paradigm — putting the "learning" on the edges (as functions) and the "nonlinearity" through the function shapes themselves. B-splines provide smooth, locally-supported basis functions with learnable coefficients, enabling efficient gradient-based optimization.<br>
+<br>
+## Detailed Analysis<br>
+Advantages of KANs: (1) Parameter efficiency — 10-100x fewer parameters for equivalent accuracy on symbolic regression and PDE solving; (2) Interpretability — each edge function φ(x) can be visualized and understood, and the network can be symbolically simplified (pruning, symbolic regression) into compact mathematical formulas; (3) Avoids catastrophic forgetting naturally since different edges learn different functional relationships. Limitations: (1) Slower training — B-spline evaluation is more expensive than matrix multiplication, though FastKAN and ChebyKAN variants reduce this; (2) Not yet competitive with Transformers for large-scale language modeling; (3) Hyperparameter sensitivity — B-spline order (k) and grid size affect performance. The 2024 paper sparked 15,000+ GitHub stars and extensive follow-up work including Convolutional KANs, Graph KANs, and Fourier KANs. Physics applications (PDE solving, operator learning) and scientific computing benefit most from KANs' interpretability and efficiency.<br>
+<br>
+## Further Reading<br>
+- pyKAN: Official KAN Implementation (GitHub: KindXiaoming/pykan)<br>
+- EfficientKAN and FastKAN Optimizations<br>
+- KAN for Time Series Forecasting and Scientific ML<br>
 </article></body>
 </html>

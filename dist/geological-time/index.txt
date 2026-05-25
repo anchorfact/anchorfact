@@ -1,7 +1,7 @@
 # Geological Time Scale and Earth History
-Confidence: high
+Confidence: low (0.55) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Earth's 4.54-billion-year history is recorded in rocks, fossils, and isotopes. The geological time scale organizes this history into eons, eras, periods, and epochs — each defined by major geological or biological events.

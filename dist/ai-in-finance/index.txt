@@ -1,7 +1,7 @@
 # AI in Finance: Trading, Risk, and Fraud Detection
-Confidence: high
+Confidence: low (0.51) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is transforming finance — algorithmic trading dominates equity markets, fraud detection saves billions, and LLMs are entering investment analysis. The industry's data-rich, quantitative nature makes it an ideal AI application domain.

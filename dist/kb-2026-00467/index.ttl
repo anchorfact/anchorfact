@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00467>
   a schema:TechArticle ;
   schema:headline "South America Geography" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.43" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00467>
-  schema:citation <https://global.oup.com/academic/product/the-physical-geography-of-south-america-9780195313413> .
+  schema:citation <https://global.oup.com/academic/product/the-physical-geography-of-south-america-9780195313413> ;
+  af:sourceTier "C" .

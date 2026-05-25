@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/concept-based-explainability>
   a schema:article ;
   schema:headline "Concept-Based Explainability: TCAV and Concept Bottleneck Models" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.74" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/concept-based-explainability>
-  schema:citation <https://proceedings.mlr.press/v80/kim18d.html> .
+  schema:citation <https://proceedings.mlr.press/v80/kim18d.html> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/concept-based-explainability>
-  schema:citation <https://dl.acm.org/doi/abs/10.1145/3774643> .
+  schema:citation <https://dl.acm.org/doi/abs/10.1145/3774643> ;
+  af:sourceTier "A" .

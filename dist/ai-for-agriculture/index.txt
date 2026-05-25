@@ -1,7 +1,7 @@
 # AI for Agriculture: Precision Farming, Plant Disease Detection, and Crop Yield Prediction
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is feeding the world — detecting crop diseases from smartphone photos, predicting harvest yields months in advance from satellite imagery, and optimizing irrigation down to individual plants. With global food demand projected to increase 60% by 2050 and 20-40% of crops lost to pests and diseases annually, AI-driven precision agriculture is becoming essential to food security.

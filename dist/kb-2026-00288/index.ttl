@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00288>
   a schema:TechArticle ;
   schema:headline "Django" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00288>
-  schema:citation <https://docs.djangoproject.com/> .
+  schema:citation <https://docs.djangoproject.com/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00288>
-  schema:citation <https://djangoforapis.com/> .
+  schema:citation <https://djangoforapis.com/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00288>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.python> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.python> ;
+  af:sourceTier "C" .

@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/kb-2026-00020>
   a schema:TechArticle ;
   schema:headline "Constitutional AI" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.74" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00020>
-  schema:citation <https://arxiv.org/abs/2212.08073> .
+  schema:citation <https://arxiv.org/abs/2212.08073> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/kb-2026-00020>
-  schema:citation <https://arxiv.org/abs/2204.05862> .
+  schema:citation <https://arxiv.org/abs/2204.05862> ;
+  af:sourceTier "A" .

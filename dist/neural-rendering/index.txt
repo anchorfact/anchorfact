@@ -1,7 +1,7 @@
 # Neural Rendering: NeRF, View Synthesis, and Implicit Scene Representations
-Confidence: high
+Confidence: medium (0.78) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Neural rendering creates photorealistic 3D scenes from photographs -- capturing a place or object and rendering it from any viewpoint. From NeRF (Neural Radiance Fields) to 3D Gaussian Splatting, these techniques are transforming computer graphics, VR, and digital heritage preservation.

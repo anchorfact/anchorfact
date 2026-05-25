@@ -1,7 +1,7 @@
 # AI for Drug Discovery: AlphaFold, Molecular Generation, and Generative Chemistry
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is transforming drug discovery — AlphaFold3 (2024) predicts biomolecular complex structures with atomic accuracy, while generative chemistry creates novel drug candidates de novo. The convergence of structural biology AI, molecular dynamics simulations, and generative models is compressing the 10-15 year drug development timeline toward faster, cheaper, and more targeted therapeutics.

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-sp-spy-001",
     "text": "Flow state (Csikszentmihalyi 1975): complete absorption, clear goals, effortless action at peak performance.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.harpercollins.com/products/flow-mihaly-csikszentmihalyi"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-sp-spy-002",
     "text": "Inverted-U/Yerkes-Dodson Law (1908): optimal performance at moderate arousal levels.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://us.humankinetics.com/products/foundations-of-sport-and-exercise-psychology-8th-edition"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-sp-spy-003",
     "text": "Imagery/visualization: combined with physical practice shows 25-30% performance improvement.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.1093/oxfordhb/9780199731763.013.0011"

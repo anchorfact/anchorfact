@@ -1,7 +1,7 @@
 # Text-to-SQL: Natural Language Database Querying with Large Language Models
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Text-to-SQL (NL2SQL) translates natural language questions into executable SQL queries, enabling anyone in an organization to query databases without knowing SQL. With LLMs, the technology has moved from lab benchmarks to production deployments, handling complex multi-table joins, nested subqueries, and domain-specific business logic from plain English questions.

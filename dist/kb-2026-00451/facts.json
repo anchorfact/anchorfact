@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-sports-001",
     "text": "Volleyball is played 6v6 across a net, with teams allowed 3 touches per side (bump-set-spike). Key skills: serve, pass (bump), set (overhead finger pass), attack (spike), block, dig (defense). Beach volleyball: 2v2, same skills, different strategy. Invented by William G. Morgan (1895, Holyoke, MA).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.humankinetics.com/products/volleyball-skills-drills"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-sports-002",
     "text": "Scoring: rally scoring to 25 (win by 2), best of 5 sets (5th set to 15).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.humankinetics.com/products/volleyball-skills-drills"

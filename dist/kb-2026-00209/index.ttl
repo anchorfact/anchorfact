@@ -4,20 +4,27 @@
 <https://anchorfact.org/kb/kb-2026-00209>
   a schema:TechArticle ;
   schema:headline "Supply Chain Management" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00209>
-  schema:citation <https://hbr.org/> .
+  schema:citation <https://hbr.org/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00209>
-  schema:citation <https://www.pearson.com/supply-chain/> .
+  schema:citation <https://www.pearson.com/supply-chain/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00209>
-  schema:citation <https://doi.org/10.1007/supplychain.2025> .
+  schema:citation <https://doi.org/10.1007/supplychain.2025> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00209>
-  schema:citation <https://www.pearson.com/supply-chain/> .
+  schema:citation <https://www.pearson.com/supply-chain/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00209>
-  schema:citation <https://doi.org/10.1007/supplychain.2025> .
+  schema:citation <https://doi.org/10.1007/supplychain.2025> ;
+  af:sourceTier "C" .

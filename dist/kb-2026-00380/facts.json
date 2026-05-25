@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-sports-001",
     "text": "Football (soccer) is the world's most popular sport, played by 250+ million in 200+ countries. Modern rules codified by FA (England, 1863). FIFA governs globally. FIFA World Cup: most-watched sporting event (3.5 billion viewers, 2022). Key competitions: Premier League, La Liga, Champions League, Copa Libertadores.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.hatchards.co.uk/book/jonathan-wilson/inverting-the-pyramid/9781409128649"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-sports-002",
     "text": "Rules: 11 players per side, 90 minutes, offside (attacker beyond last defender when ball played).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.hatchards.co.uk/book/jonathan-wilson/inverting-the-pyramid/9781409128649"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-sports-003",
     "text": "Formations: 4-4-2, 4-3-3, 3-5-2 — strategic evolution.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.hatchards.co.uk/book/jonathan-wilson/inverting-the-pyramid/9781409128649"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-sports-004",
     "text": "Legends: Pelé (3 World Cups), Maradona, Messi (8 Ballon d'Or), Cristiano Ronaldo.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.hatchards.co.uk/book/jonathan-wilson/inverting-the-pyramid/9781409128649"
@@ -49,6 +61,9 @@
     "@id": "https://anchorfact.org/fact/fact-sports-005",
     "text": "World Cup winners: Brazil (5), Germany/Italy (4), Argentina (3, 2022).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.hatchards.co.uk/book/jonathan-wilson/inverting-the-pyramid/9781409128649"

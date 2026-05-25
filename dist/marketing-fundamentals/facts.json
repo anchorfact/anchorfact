@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-biz-mkt-001",
     "text": "Kotler's 4Ps (Product, Price, Place, Promotion) is the cornerstone framework (Marketing Management 1967).",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/marketing-management/P200000009654"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-biz-mkt-002",
     "text": "Digital ad spend surpassed traditional in 2019, reaching $670B+ in 2024 (Statista).",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.statista.com/outlook/dmo/digital-advertising/worldwide"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-biz-mkt-003",
     "text": "NPS (Reichheld, HBR 2003) is the most widely used customer loyalty metric in Fortune 500.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://hbr.org/2003/12/the-one-number-you-need-to-grow"

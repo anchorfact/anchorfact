@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/instruction-tuning>
   a schema:Article ;
   schema:headline "Instruction Tuning: Teaching LLMs to Follow Directions" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.76" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/instruction-tuning>
-  schema:citation <https://arxiv.org/abs/2109.01652> .
+  schema:citation <https://arxiv.org/abs/2109.01652> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/instruction-tuning>
-  schema:citation <https://arxiv.org/abs/2212.10560> .
+  schema:citation <https://arxiv.org/abs/2212.10560> ;
+  af:sourceTier "A" .

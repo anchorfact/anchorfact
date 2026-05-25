@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-gesture-recognition-1",
     "text": "AI gesture recognition (2023-2026): MediaPipe Hands (Google) provides real-time 21-keypoint hand tracking via single RGB camera, enabling gesture-based interaction at 30+ FPS on mobile devices. Hand pose estimation evolved from depth sensors (Kinect, Leap Motion) to monocular RGB (MediaPipe, OpenPose) to transformer-based (HaMeR, 2024). Applications: AR/VR interaction, sign language recognition, automotive gesture control, and touchless public interfaces.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=hand+pose+estimation+gesture+recognition+deep+learning"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-gesture-recognition-2",
     "text": "Sign language recognition AI: transformer-based models convert video of signing into text/speech in real-time. Google's MediaPipe + SLR research (2020-2025) enables mobile-device sign language detection. Nature (2025) demonstrated deep computer vision for ASL recognition achieving 95%+ accuracy on continuous signing, addressing the communication gap for 70M+ deaf sign language users. Challenge: 300+ distinct sign languages require language-specific models.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=sign+language+recognition+transformer"

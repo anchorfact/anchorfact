@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00175>
   a schema:TechArticle ;
   schema:headline "Vite" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.5" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00175>
-  schema:citation <https://vitejs.dev/> .
+  schema:citation <https://vitejs.dev/> ;
+  af:sourceTier "C" .

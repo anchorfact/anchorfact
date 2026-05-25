@@ -1,7 +1,7 @@
 # Indian Independence Movement
-Confidence: high
+Confidence: low (0.55) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 

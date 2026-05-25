@@ -1,7 +1,7 @@
 # Quantum Machine Learning: Tensor Networks, QNNs, and Error Mitigation
-Confidence: high
+Confidence: medium (0.73) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Quantum Machine Learning sits at the intersection of quantum computing and AI. Current research focuses on quantum error mitigation via ML, tensor network-inspired architectures, and quantum kernel methods — practical applications on noisy intermediate-scale quantum (NISQ) devices.

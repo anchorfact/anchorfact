@@ -1,7 +1,7 @@
 # AI Regulation: The 2024-2026 Global Landscape
-Confidence: high
+Confidence: medium (0.62) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 2024-2026 marks the transition from voluntary AI ethics principles to binding regulation. The EU AI Act set the global standard; the US follows with executive orders and state-level laws. China, UK, and G7 add regulatory layers.

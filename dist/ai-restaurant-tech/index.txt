@@ -1,7 +1,7 @@
 # AI for Restaurant Technology: Order Automation, Kitchen Optimization, and Personalized Dining
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is taking your order, cooking your food, and personalizing your meal -- from voice AI at drive-thrus to computer vision in kitchens. McDonald's, White Castle, and Sweetgreen deploy AI across ordering, preparation, and personalization, transforming the restaurant experience.

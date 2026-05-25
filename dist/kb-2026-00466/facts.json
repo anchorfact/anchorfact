@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-001",
     "text": "The Enlightenment (18th century, 'Age of Reason') championed reason, science, individual rights, and skepticism of authority. Key thinkers: Locke (natural rights), Montesquieu (separation of powers), Voltaire (civil liberties, religious tolerance), Rousseau (social contract), Kant ('Sapere aude!' — dare to know). Fueled American and French Revoluti",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-002",
     "text": "Montesquieu: Spirit of the Laws (1748) — legislative/executive/judicial branches.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-003",
     "text": "Adam Smith (Wealth of Nations, 1776): invisible hand, division of labor.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-004",
     "text": "Encyclopédie (Diderot & d'Alembert, 1751-72): compendium of all knowledge, 71,818 articles.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A"
@@ -49,6 +61,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-005",
     "text": "Salons: intellectual gatherings led by women (Mme Geoffrin).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A"

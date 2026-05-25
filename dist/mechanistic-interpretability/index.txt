@@ -1,7 +1,7 @@
 # Mechanistic Interpretability: Reverse-Engineering Neural Network Circuits and Features
-Confidence: high
+Confidence: medium (0.74) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Mechanistic interpretability treats neural networks as scientific objects to be reverse-engineered — locating the circuits, features, and computational pathways that produce specific behaviors. Instead of asking "what does the model output?", it asks "how does the model compute this output?" — enabling targeted fixes for safety, bias, and reliability.

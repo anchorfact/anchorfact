@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00300>
   a schema:TechArticle ;
   schema:headline "Electron" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00300>
-  schema:citation <https://www.electronjs.org/docs/> .
+  schema:citation <https://www.electronjs.org/docs/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00300>
-  schema:citation <https://www.manning.com/electron/> .
+  schema:citation <https://www.manning.com/electron/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00300>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.desktop> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.desktop> ;
+  af:sourceTier "C" .

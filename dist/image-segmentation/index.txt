@@ -1,7 +1,7 @@
 # Image Segmentation: From U-Net to SAM
-Confidence: high
+Confidence: medium (0.76) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Image segmentation partitions images into meaningful regions — semantic (class per pixel), instance (object per pixel), or panoptic (both). U-Net dominates medical imaging; SAM enables general-purpose interactive segmentation.

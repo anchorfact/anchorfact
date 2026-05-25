@@ -1,7 +1,7 @@
 # AI Music Composition: Generative Music, Style Imitation, and Creative AI Audio
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI composes music -- from text descriptions ("upbeat pop song about summer love") to complete radio-quality tracks with vocals and instrumentation. Suno AI, Udio, and AIVA challenge the definition of musical creativity, while professional tools like Magenta and Splice augment human composers.

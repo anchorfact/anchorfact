@@ -1,7 +1,7 @@
 # Political Philosophy: Justice, Liberty, and the Social Contract
-Confidence: high
+Confidence: low (0.425) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Political philosophy addresses fundamental questions of governance: What is justice? What justifies state authority? The social contract tradition — Hobbes through Locke and Rousseau to Rawls — provides the dominant Western framework.

@@ -4,17 +4,23 @@
 <https://anchorfact.org/kb/kb-2026-00349>
   a schema:TechArticle ;
   schema:headline "World Religions" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00349>
-  schema:citation <https://www.harpercollins.com/products/the-worlds-religions-huston-smith> .
+  schema:citation <https://www.harpercollins.com/products/the-worlds-religions-huston-smith> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00349>
-  schema:citation <https://global.oup.com/vsi-world-religions/> .
+  schema:citation <https://global.oup.com/vsi-world-religions/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00349>
-  schema:citation <https://www.harpercollins.com/world-religions/> .
+  schema:citation <https://www.harpercollins.com/world-religions/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00349>
-  schema:citation <https://www.harpercollins.com/world-religions/> .
+  schema:citation <https://www.harpercollins.com/world-religions/> ;
+  af:sourceTier "C" .

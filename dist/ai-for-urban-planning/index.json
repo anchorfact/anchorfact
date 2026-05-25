@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-urban-planning",
   "headline": "AI for Urban Planning: Generative Spatial AI, Digital Twins, and Computational Urban Science",
   "description": "AI is becoming the architect and operator of future cities — generating urban master plans from zoning codes, simulating millions of \"what-if\" scenarios in digital twins, and optimizing energy, water, and transportation in real-time. Generative spatial AI represents a paradigm shift from reactive urban management to proactive computational design.",
-  "dateCreated": "2026-05-25T02:46:03.479Z",
+  "dateCreated": "2026-05-24",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",
@@ -16,18 +16,50 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidence": "medium",
+  "anchorfact:confidenceScore": 0.65,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 1,
+      "source_count": 0.8,
+      "source_verified": 0.2,
+      "freshness": 1,
+      "decay": 0.1,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "medium",
+    "confidence_score": 0.65,
+    "confidence_basis": "verified_sources",
+    "sources_total": 2,
+    "sources_verified": 0,
+    "sources_unreachable": 2,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "S",
+      "A"
+    ],
+    "sources_has_doi": true,
+    "sources_has_url": true,
+    "article_has_disputed": false,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "Generative spatial artificial intelligence for sustainable smart cities: opportunities, challenges, and future directions",
-      "sameAs": "https://www.sciencedirect.com/science/article/pii/S2666498425000043"
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S2666498425000043",
+      "anchorfact:sourceTier": "S",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "IoT, AI, and Digital Twins in Smart Cities: A Systematic Literature Review",
-      "sameAs": "https://www.mdpi.com/2624-6511/8/5/175"
+      "sameAs": "https://www.mdpi.com/2624-6511/8/5/175",
+      "anchorfact:sourceTier": "A",
+      "anchorfact:year": 2025
     }
   ]
 }

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-nuclear-fusion-1",
     "text": "Google DeepMind (Nature, February 2022) demonstrated the first application of deep reinforcement learning to control magnetic confinement of fusion plasma in the TCV tokamak. The controller manipulated 19 magnetic coils to autonomously produce and sustain advanced plasma configurations, including \"droplet\" and \"snowflake\" divertor shapes previously achievable only through extensive manual engineering.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nature.com/articles/s41586-021-04301-9"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-nuclear-fusion-2",
     "text": "AI-driven disruption prediction is critical for ITER and large tokamaks. Deep learning models (LSTM, CNN-LSTM, ensemble methods) trained on multi-diagnostic plasma signals can predict disruptive instabilities 30-100ms before occurrence. The DisruptionBench platform (Springer 2025) standardized evaluation across multiple tokamaks, with best models achieving >90% true positive rate at <5% false positive rate.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://link.springer.com/article/10.1007/s10894-025-00495-2"

@@ -1,7 +1,7 @@
 # AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is the creative department that never sleeps -- generating blog posts, social media content, product images, marketing videos, and voiceovers. The $12B AI content creation market (2024) spans text, image, video, and audio generation. The winning formula: AI for speed + humans for soul.

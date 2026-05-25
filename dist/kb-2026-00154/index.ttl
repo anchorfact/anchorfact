@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00154>
   a schema:TechArticle ;
   schema:headline "Docker Compose" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00154>
-  schema:citation <https://docs.docker.com/compose/> .
+  schema:citation <https://docs.docker.com/compose/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00154>
-  schema:citation <https://www.manning.com/docker-in-practice/> .
+  schema:citation <https://www.manning.com/docker-in-practice/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00154>
-  schema:citation <https://doi.org/10.1109/ms.2025.docker> .
+  schema:citation <https://doi.org/10.1109/ms.2025.docker> ;
+  af:sourceTier "C" .

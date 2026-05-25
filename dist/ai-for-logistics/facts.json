@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-logistics-1",
     "text": "Amazon deploys AI across its entire logistics chain: demand forecasting predicts order volumes by zip-code level using deep learning; warehouse robots (Sparrow, Cardinal) use computer vision and RL for bin-picking and inventory placement; last-mile route optimization via SageMaker-trained RL models reduces delivery miles by 10-15%; and drone delivery (Prime Air) uses ML for autonomous navigation. Combined, AI reduces delivery cost per package by 20-30%.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.amazon.science/research-areas/supply-chain-and-logistics"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-logistics-2",
     "text": "Last-mile delivery accounts for 53% of total shipping costs. AI optimization combining vehicle routing (CVRPTW with heterogeneous fleets), dynamic re-optimization, and delivery time prediction reduces last-mile costs by 15-25%, as demonstrated by UPS ORION (saving 10M gallons of fuel/year) and JD.com (100% AI-routed deliveries).",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.ups.com/us/en/services/technology-integration/orion.page"

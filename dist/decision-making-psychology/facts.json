@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-si-dm-001",
     "text": "Bounded rationality (Simon, Nobel 1978): decisions constrained by information, cognition, time.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.2307/1884852"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-si-dm-002",
     "text": "Nudge theory (Thaler & Sunstein 2008, Nobel 2017): choice architecture guides better decisions.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://yalebooks.yale.edu/book/9780300262285/nudge/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-si-dm-003",
     "text": "Paradox of Choice (Schwartz 2004): too many options lead to decision paralysis.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.harpercollins.com/products/the-paradox-of-choice-barry-schwartz"

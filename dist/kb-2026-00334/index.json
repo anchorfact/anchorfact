@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00334",
   "headline": "Periodic Table",
   "description": "The periodic table (Dmitri Mendeleev, 1869) organizes all 118 known chemical elements by atomic number, electron configuration, and recurring chemical properties. Groups (columns) share similar properties. Periods (rows) reflect electron shell filling. Mendeleev famously predicted properties of undiscovered elements — correctly.",
-  "dateCreated": "2026-05-25T02:46:04.620Z",
-  "dateModified": "2026-05-25T02:46:04.620Z",
+  "dateCreated": "2026-05-22",
+  "dateModified": "2026-05-25T12:59:32.507Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -16,31 +16,69 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidence": "medium",
+  "anchorfact:confidenceScore": 0.845,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 1,
+      "source_count": 1,
+      "source_verified": 0.9,
+      "freshness": 1,
+      "decay": 0.30000000000000004,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "medium",
+    "confidence_score": 0.845,
+    "confidence_basis": "verified_sources",
+    "sources_total": 4,
+    "sources_verified": 4,
+    "sources_unreachable": 0,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "S",
+      "C",
+      "C",
+      "C"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": true,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "Periodic Table (IUPAC)",
-      "sameAs": "https://iupac.org/what-we-do/periodic-table-of-elements/"
+      "sameAs": "https://iupac.org/what-we-do/periodic-table-of-elements/",
+      "anchorfact:sourceTier": "S",
+      "anchorfact:year": 2026
     },
     {
       "@type": "CreativeWork",
       "name": "The Periodic Table: A Very Short Introduction (2025)",
       "author": "Scerri E.",
-      "sameAs": "https://global.oup.com/vsi-periodic/"
+      "sameAs": "https://global.oup.com/vsi-periodic/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "Periodic Table: Its Story and Its Significance (2025 Edition)",
       "author": "Scerri E.",
-      "sameAs": "https://global.oup.com/periodic-table/"
+      "sameAs": "https://global.oup.com/periodic-table/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "Periodic Table: Its Story and Significance (2025)",
       "author": "Scerri E.",
-      "sameAs": "https://global.oup.com/periodic-table/"
+      "sameAs": "https://global.oup.com/periodic-table/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     }
   ]
 }

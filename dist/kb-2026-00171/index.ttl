@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00171>
   a schema:TechArticle ;
   schema:headline "Progressive Web Apps (PWA)" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.495" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00171>
-  schema:citation <https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps> .
+  schema:citation <https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00171>
-  schema:citation <https://www.oreilly.com/pwa/> .
+  schema:citation <https://www.oreilly.com/pwa/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00171>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.mobile> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.mobile> ;
+  af:sourceTier "C" .

@@ -4,17 +4,23 @@
 <https://anchorfact.org/kb/strategic-management-theory>
   a schema:Article ;
   schema:headline "Strategic Management: Frameworks and Practice" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.425" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/strategic-management-theory>
-  schema:citation <https://www.simonandschuster.com/books/Competitive-Strategy/Michael-E-Porter/9780684005278> .
+  schema:citation <https://www.simonandschuster.com/books/Competitive-Strategy/Michael-E-Porter/9780684005278> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/strategic-management-theory>
-  schema:citation <https://www.harpercollins.com/> .
+  schema:citation <https://www.harpercollins.com/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/strategic-management-theory>
-  schema:citation <https://www.hbs.edu/faculty/Pages/item.aspx?num=195> .
+  schema:citation <https://www.hbs.edu/faculty/Pages/item.aspx?num=195> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/strategic-management-theory>
-  schema:citation <https://www.crownpublishing.com/good-strategy/> .
+  schema:citation <https://www.crownpublishing.com/good-strategy/> ;
+  af:sourceTier "C" .

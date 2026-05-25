@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Terraform State — AnchorFact</title></head>
-<body><article><br>
-<br>
-<br>
-<br>
-<br>
-## TL;DR<br>
-<br>
-Terraform state (`terraform.tfstate`) is a JSON file mapping real-world resources to Terraform configuration. It is the source of truth for Terraform's understanding of infrastructure. Remote state (S3 + DynamoDB locking) is essential for team collaboration.<br>
-<br>
-## Core Explanation<br>
-<br>
-State locking: DynamoDB prevents concurrent modifications. `terraform import` adds existing resources to state without recreating them. `terraform state mv` moves resources between states. `terraform state rm` removes from state without destroying. State drift detection: `terraform refresh` updates state to match reality. Never edit state manually — use Terraform commands.<br>
-<br>
-## Further Reading<br>
-<br>
-- [Terraform State Documentation](https://developer.hashicorp.com/terraform/language/state)<br>
+<head>
+  <meta charset="utf-8">
+  <title>Terraform State — AnchorFact</title>
+  <meta name="anchorfact:confidence" content="low (0.5)">
+  <meta name="anchorfact:generation" content="human_only">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/kb-2026-00315","headline":"Terraform State","description":"Terraform state (`terraform.tfstate`) is a JSON file mapping real-world resources to Terraform configuration. It is the source of truth for Terraform's understanding of infrastructure. Remote state (S3 + DynamoDB locking) is essential for team collaboration.","dateCreated":"2026-05-22","dateModified":"2026-05-25T12:59:32.194Z","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"low","anchorfact:confidenceScore":0.5,"anchorfact:generationMethod":"human_only","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.3,"source_count":0.5,"source_verified":0.9,"freshness":1,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"low","confidence_score":0.5,"confidence_basis":"verified_sources","sources_total":1,"sources_verified":1,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["C"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Terraform State Documentation","sameAs":"https://developer.hashicorp.com/terraform/language/state","anchorfact:sourceTier":"C","anchorfact:year":2026}]}</script>
+</head>
+<body><article><br>
+<br>
+<br>
+<br>
+<br>
+## TL;DR<br>
+<br>
+Terraform state (`terraform.tfstate`) is a JSON file mapping real-world resources to Terraform configuration. It is the source of truth for Terraform's understanding of infrastructure. Remote state (S3 + DynamoDB locking) is essential for team collaboration.<br>
+<br>
+## Core Explanation<br>
+<br>
+State locking: DynamoDB prevents concurrent modifications. `terraform import` adds existing resources to state without recreating them. `terraform state mv` moves resources between states. `terraform state rm` removes from state without destroying. State drift detection: `terraform refresh` updates state to match reality. Never edit state manually — use Terraform commands.<br>
+<br>
+## Further Reading<br>
+<br>
+- [Terraform State Documentation](https://developer.hashicorp.com/terraform/language/state)<br>
 </article></body>
 </html>

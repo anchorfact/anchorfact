@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-multi-agent-reinforcement-learning-1",
     "text": "A Nature Communications study (2025) applied MARL to iterated game theory — training populations of agents in evolutionary game environments and discovering dominant strategies for cooperation and defection that emerged from agent-agent interaction, validating classical game theory predictions with learned behavior.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nature.com/articles/s41467-025-67178-6"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-multi-agent-reinforcement-learning-2",
     "text": "A comprehensive MARL survey (MDPI 2025) and LLM-based multi-agent decision-making survey (arxiv 2503.13415) classify MARL into cooperative (shared reward), competitive (zero-sum), and mixed (general-sum) settings — with CTDE (Centralized Training Decentralized Execution) as the dominant paradigm for cooperative multi-agent control.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2503.13415"

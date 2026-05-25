@@ -1,7 +1,7 @@
 # AI in Education: Personalized Learning and Intelligent Tutoring Systems
-Confidence: high
+Confidence: medium (0.615) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is transforming education through intelligent tutoring systems that adapt to individual learners — diagnosing knowledge gaps, generating personalized exercises, and providing real-time feedback. LLMs enable conversational tutoring at unprecedented scale.

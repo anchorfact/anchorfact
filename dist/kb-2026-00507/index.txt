@@ -1,5 +1,5 @@
 # Building Mental Resilience
-Confidence: high
+Confidence: low (0.48) (verified)
 Last verified: 2026-05-24
 Generation: ai_assisted
 

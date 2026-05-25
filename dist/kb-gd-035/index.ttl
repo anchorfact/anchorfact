@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-gd-035>
   a schema:TechArticle ;
   schema:headline "UGC 与 Mod 系统" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.5" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-gd-035>
-  schema:citation <https://www.gdconf.com/> .
+  schema:citation <https://www.gdconf.com/> ;
+  af:sourceTier "C" .

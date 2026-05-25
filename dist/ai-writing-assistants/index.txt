@@ -1,7 +1,7 @@
 # AI Writing Assistants: Grammar Checking, Style Enhancement, and Collaborative Authorship
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI writing assistants are the invisible co-authors behind much of what we read -- correcting grammar, suggesting better words, and rewriting sentences for clarity. From Grammarly's 50M+ users to Microsoft Copilot embedded in Word, AI-powered writing assistance has become a standard productivity layer.

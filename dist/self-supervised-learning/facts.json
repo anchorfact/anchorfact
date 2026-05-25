@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-ssl-1",
     "text": "Self-supervised learning (SSL) creates pretext tasks from unlabeled data — such as predicting image rotations, solving jigsaw puzzles, or masked language modeling — to learn useful representations without human labels.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/1810.04805"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-ssl-2",
     "text": "SimCLR (Chen, Kornblith, Hinton et al. 2020, Google) established contrastive SSL as a dominant paradigm, showing that composition of data augmentations is crucial for learning good representations.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2002.05709"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-ssl-3",
     "text": "MAE (He et al. 2022) masks 75% of image patches and trains a ViT to reconstruct them, achieving strong transfer performance while being simpler and faster than contrastive methods.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2111.06377"

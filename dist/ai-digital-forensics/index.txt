@@ -1,7 +1,7 @@
 # AI for Digital Forensics: Deepfake Provenance, Evidence Authentication, and Digital Crime Investigation
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI-powered digital forensics detects manipulated media -- from deepfakes to doctored images. The forensic AI arms race pits generation against detection, with cryptographic provenance (C2PA) providing a proactive solution: cameras sign images at capture, creating verifiable chains of custody from sensor to screen.

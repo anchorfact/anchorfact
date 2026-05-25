@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-virtual-reality-1",
     "text": "AI-generated VR content: diffusion models and 3D Gaussian Splatting create photorealistic 3D environments from text descriptions (\"create a medieval castle courtyard at sunset\"). NVIDIA GET3D and Google DreamFusion generate 3D assets from 2D image prompts. Meta's Horizon Worlds uses procedural generation + AI for world-building, and AI-driven NPCs (large language models) enable natural conversation and adaptive behavior in virtual environments.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2209.11163"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-virtual-reality-2",
     "text": "AI for VR/AR interaction (2024-2026): Meta Quest uses computer vision-based hand tracking and body pose estimation for controller-free interaction. Neural rendering (Gaussian splatting) enables real-time photorealistic passthrough. Generative AI creates personalized avatars from selfies (Meta Codec Avatars), and LLM-powered NPCs provide dynamic, context-aware dialogue rather than scripted responses.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2209.14988"

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-01",
     "text": "Deep ocean: largest ecosystem on Earth, largely unexplored",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://global.oup.com/academic/product/the-biology-of-the-deep-ocean-9780198549567"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-001",
     "text": "Oceans cover 71% of Earth's surface and contain 97% of its water. Average depth: 3,688m. Zones: sunlight (0-200m, photosynthesis), twilight (200-1,000m), midnight (1,000-4,000m), abyssal, hadal (trenches, >6,000m). Deep ocean: largest ecosystem on Earth, largely unexplored. Marine life ranges from microscopic plankton to blue whales (largest animal",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://global.oup.com/academic/product/the-biology-of-the-deep-ocean-9780198549567"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-002",
     "text": "Coral reefs: biodiversity hotspots (25% of marine species in <0.1% of ocean).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://global.oup.com/academic/product/the-biology-of-the-deep-ocean-9780198549567"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-003",
     "text": "Bioluminescence: 90% of deep-sea organisms produce light.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://global.oup.com/academic/product/the-biology-of-the-deep-ocean-9780198549567"
@@ -49,6 +61,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-004",
     "text": "Hydrothermal vents (1977 discovery): life powered by chemosynthesis (not sunlight).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://global.oup.com/academic/product/the-biology-of-the-deep-ocean-9780198549567"

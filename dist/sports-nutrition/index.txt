@@ -1,7 +1,7 @@
 # Sports Nutrition: Fueling Performance and Recovery
-Confidence: high
+Confidence: medium (0.795) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Sports nutrition optimizes timing, quantity, and composition of nutrient intake to maximize training adaptations, competition performance, and recovery.

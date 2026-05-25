@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-01",
     "text": "REST is an architectural style for designing networked applications, defined by Roy Fielding in his 2000 doctoral dissertation at UC Irvine",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-02",
     "text": "REST is the dominant API architecture on the web, used by virtually all major platforms including Google, Amazon, Twitter, and GitHub",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm"

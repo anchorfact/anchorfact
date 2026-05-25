@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00372>
   a schema:TechArticle ;
   schema:headline "Newton's Laws of Motion" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.255" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00372>
-  schema:citation <https://www.gutenberg.org/ebooks/28233> .
+  schema:citation <https://www.gutenberg.org/ebooks/28233> ;
+  af:sourceTier "C" .

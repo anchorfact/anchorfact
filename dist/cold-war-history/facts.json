@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-hist-cw-001",
     "text": "Cold War (1947-91): US-led NATO vs. Soviet-led Warsaw Pact ideological conflict, no direct combat.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguinrandomhouse.com/books/292198/the-cold-war-by-john-lewis-gaddis/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-hist-cw-002",
     "text": "Cuban Missile Crisis (Oct 1962): closest to nuclear war, resolved via US-Turkey/USSR-Cuba missile swap.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguinrandomhouse.com/books/123425/one-minute-to-midnight-by-michael-dobbs/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-hist-cw-003",
     "text": "Berlin Wall fell Nov 9, 1989 symbolizing Cold War end; German reunification Oct 1990.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.basicbooks.com/titles/mary-elise-sarotte/the-collapse/9780465064946/"

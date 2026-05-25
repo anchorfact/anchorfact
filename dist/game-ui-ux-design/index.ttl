@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/game-ui-ux-design>
   a schema:TechArticle ;
   schema:headline "Game User Interface and UX Design" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.51" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/game-ui-ux-design>
-  schema:citation <https://www.routledge.com/The-Art-of-Game-Design/Schell/p/book/9781138632059> .
+  schema:citation <https://www.routledge.com/The-Art-of-Game-Design/Schell/p/book/9781138632059> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/game-ui-ux-design>
-  schema:citation <https://www.pearson.com/en-us/subject-catalog/p/designing-the-user-interface/P200000009530> .
+  schema:citation <https://www.pearson.com/en-us/subject-catalog/p/designing-the-user-interface/P200000009530> ;
+  af:sourceTier "C" .

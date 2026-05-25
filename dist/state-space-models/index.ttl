@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/state-space-models>
   a schema:article ;
   schema:headline "State Space Models: Mamba, Linear-Time Sequence Modeling, and Alternatives to Transformers" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.765" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/state-space-models>
-  schema:citation <https://arxiv.org/abs/2312.00752> .
+  schema:citation <https://arxiv.org/abs/2312.00752> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/state-space-models>
-  schema:citation <https://arxiv.org/abs/2405.21060> .
+  schema:citation <https://arxiv.org/abs/2405.21060> ;
+  af:sourceTier "A" .

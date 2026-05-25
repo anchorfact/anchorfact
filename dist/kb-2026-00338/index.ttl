@@ -4,17 +4,23 @@
 <https://anchorfact.org/kb/kb-2026-00338>
   a schema:TechArticle ;
   schema:headline "Climate Change" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.6" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00338>
-  schema:citation <https://www.ipcc.ch/report/ar6/syr/> .
+  schema:citation <https://www.ipcc.ch/report/ar6/syr/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00338>
-  schema:citation <https://global.oup.com/vsi-climate/> .
+  schema:citation <https://global.oup.com/vsi-climate/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00338>
-  schema:citation <https://www.penguinrandomhouse.com/climate-book/> .
+  schema:citation <https://www.penguinrandomhouse.com/climate-book/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00338>
-  schema:citation <https://global.oup.com/vsi-climate/> .
+  schema:citation <https://global.oup.com/vsi-climate/> ;
+  af:sourceTier "C" .

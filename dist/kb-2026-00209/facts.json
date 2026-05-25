@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-01",
     "text": "Supply Chain Management coordinates the flow of goods from raw materials to end customer",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://hbr.org/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-001",
     "text": "Supply Chain Management (SCM) coordinates the flow of goods from raw materials to end customer. Key activities: procurement, manufacturing, warehousing, transportation, demand forecasting. Modern SCM is data-driven with real-time visibility and AI optimization.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://hbr.org/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-002",
     "text": "Bullwhip effect: small demand fluctuations amplify upstream, causing inventory inefficiencies.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://hbr.org/"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-003",
     "text": "Just-in-Time (JIT) minimizes inventory but increases risk.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://hbr.org/"
@@ -49,6 +61,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-004",
     "text": "Safety stock: extra inventory to buffer demand variability.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://hbr.org/"
@@ -60,6 +75,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-005",
     "text": "KPIs: inventory turnover, order fulfillment rate, lead time, perfect order rate.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://hbr.org/"

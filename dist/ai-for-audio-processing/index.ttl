@@ -5,10 +5,14 @@
   a schema:article ;
   schema:headline "AI for Audio Processing: Sound Event Detection, Acoustic Scene Analysis, and Environmental Intelligence" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidenceScore "0.85" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-for-audio-processing>
-  schema:citation <https://www.nature.com/articles/s44384-025-00036-3> .
+  schema:citation <https://www.nature.com/articles/s44384-025-00036-3> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/ai-for-audio-processing>
-  schema:citation <https://link.springer.com/article/10.1007/s10462-025-11106-z> .
+  schema:citation <https://link.springer.com/article/10.1007/s10462-025-11106-z> ;
+  af:sourceTier "S" .

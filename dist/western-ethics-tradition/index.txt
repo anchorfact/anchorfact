@@ -1,7 +1,7 @@
 # Western Ethical Tradition: Aristotle, Kant, and Utilitarianism
-Confidence: high
+Confidence: medium (0.6) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 The Western ethical tradition is dominated by three approaches: virtue ethics (Aristotle — character), deontology (Kant — duty), and consequentialism/utilitarianism (Bentham/Mill — outcomes). Contemporary ethics integrates elements of all three.

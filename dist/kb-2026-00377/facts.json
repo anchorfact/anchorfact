@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-health-01",
     "text": "Depression: persistent sadness, loss of interest, fatigue — leading cause of disability worldwide",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.psychiatry.org/psychiatrists/practice/dsm"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-health-02",
     "text": "SSRIs: most prescribed antidepressants",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.psychiatry.org/psychiatrists/practice/dsm"

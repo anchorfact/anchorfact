@@ -4,7 +4,10 @@
     "@type": "Claim",
     "@id": "https://anchorfact.org/fact/fact-transformer-001",
     "text": "The Transformer architecture was introduced by Vaswani et al. from Google Brain / Google Research in the 2017 paper 'Attention Is All You Need'",
-    "anchorfact:confidence": "high"
+    "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null
   },
   {
     "@context": "https://schema.org",
@@ -12,6 +15,9 @@
     "@id": "https://anchorfact.org/fact/fact-transformer-002",
     "text": "As of May 2026, the paper has been cited over 140,000 times, making it one of the most cited papers in AI history",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://scholar.google.com/scholar?cites=..."
@@ -22,6 +28,9 @@
     "@type": "Claim",
     "@id": "https://anchorfact.org/fact/fact-transformer-003",
     "text": "The base Transformer model achieved 28.4 BLEU on the WMT 2014 English-to-German translation task, setting a new state-of-the-art at the time of publication",
-    "anchorfact:confidence": "high"
+    "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null
   }
 ]

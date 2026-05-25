@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-01",
     "text": "Most startups fail — failure is part of the process",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguinrandomhouse.com/books/120785/the-lean-startup-by-eric-ries/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-02",
     "text": "'Market matters more than product.' Cash flow profit in early stages",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguinrandomhouse.com/books/120785/the-lean-startup-by-eric-ries/"

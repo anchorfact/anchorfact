@@ -1,5 +1,5 @@
 # Time Value of Money
-Confidence: high
+Confidence: low (0.49) (verified)
 Last verified: 2026-05-22
 Generation: ai_assisted
 

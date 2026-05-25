@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/information-extraction>
   a schema:article ;
   schema:headline "Information Extraction: NER, Relation Extraction, and LLM-Powered IE" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.78" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/information-extraction>
-  schema:citation <https://www.nature.com/articles/s41467-024-45563-x> .
+  schema:citation <https://www.nature.com/articles/s41467-024-45563-x> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/information-extraction>
-  schema:citation <https://arxiv.org/abs/2312.17616> .
+  schema:citation <https://arxiv.org/abs/2312.17616> ;
+  af:sourceTier "A" .

@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00281>
   a schema:TechArticle ;
   schema:headline "Data Preprocessing" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.465" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00281>
-  schema:citation <https://doi.org/10.1016/C2020-0-00008-4> .
+  schema:citation <https://doi.org/10.1016/C2020-0-00008-4> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00281>
-  schema:citation <https://jmlr.org/papers/v12/pedregosa11a.html> .
+  schema:citation <https://jmlr.org/papers/v12/pedregosa11a.html> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00281>
-  schema:citation <https://doi.org/10.1145/3635100> .
+  schema:citation <https://doi.org/10.1145/3635100> ;
+  af:sourceTier "C" .

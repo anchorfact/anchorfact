@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/kb-2026-00272>
   a schema:TechArticle ;
   schema:headline "Reinforcement Learning" ;
-  af:confidence "high" ;
+  af:confidence "medium" ;
+  af:confidenceScore "0.72" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00272>
-  schema:citation <http://incompleteideas.net/book/the-book-2nd.html> .
+  schema:citation <http://incompleteideas.net/book/the-book-2nd.html> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00272>
-  schema:citation <https://www.nature.com/articles/nature16961> .
+  schema:citation <https://www.nature.com/articles/nature16961> ;
+  af:sourceTier "A" .

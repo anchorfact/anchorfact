@@ -5,10 +5,14 @@
   a schema:article ;
   schema:headline "Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidenceScore "0.85" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/agentic-ai>
-  schema:citation <https://link.springer.com/article/10.1007/s10462-025-11422-4> .
+  schema:citation <https://link.springer.com/article/10.1007/s10462-025-11422-4> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/agentic-ai>
-  schema:citation <https://www.nature.com/articles/s41467-025-63804-5> .
+  schema:citation <https://www.nature.com/articles/s41467-025-63804-5> ;
+  af:sourceTier "S" .

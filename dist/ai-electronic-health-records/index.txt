@@ -1,7 +1,7 @@
 # AI for Electronic Health Records: Clinical NLP, Coding Automation, and Physician Burnout Reduction
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is fixing the EHR problem -- ambient scribes that listen to doctor-patient conversations and write clinical notes automatically, saving physicians 2+ hours/day on documentation and reducing burnout by 40%. From Nuance DAX to Epic, AI transforms EHR from a burden to an assistive partner.

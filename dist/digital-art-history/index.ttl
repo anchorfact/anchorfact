@@ -4,20 +4,27 @@
 <https://anchorfact.org/kb/digital-art-history>
   a schema:Article ;
   schema:headline "Digital Art and New Media Art History" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/digital-art-history>
-  schema:citation <https://thamesandhudson.com/digital-art-9780500204238> .
+  schema:citation <https://thamesandhudson.com/digital-art-9780500204238> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/digital-art-history>
-  schema:citation <https://www.routledge.com/A-Philosophy-of-Computer-Art/Lopes/p/book/9780415547628> .
+  schema:citation <https://www.routledge.com/A-Philosophy-of-Computer-Art/Lopes/p/book/9780415547628> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/digital-art-history>
-  schema:citation <https://mitpress.mit.edu/9780262543187/> .
+  schema:citation <https://mitpress.mit.edu/9780262543187/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/digital-art-history>
-  schema:citation <https://thamesandhudson.com/digital-art/> .
+  schema:citation <https://thamesandhudson.com/digital-art/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/digital-art-history>
-  schema:citation <https://www.routledge.com/ai-art/> .
+  schema:citation <https://www.routledge.com/ai-art/> ;
+  af:sourceTier "C" .

@@ -1,7 +1,7 @@
 # Chemical Bonding: From Orbitals to Molecular Structure
-Confidence: high
+Confidence: medium (0.845) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Chemical bonding — the forces holding atoms together in molecules — determines all material properties. From ionic bonds in salt to covalent bonds in DNA, understanding bonding is foundational to chemistry.

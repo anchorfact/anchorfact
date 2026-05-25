@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-data-governance-1",
     "text": "AI-powered data governance platforms (Alation, Collibra, Atlan, DataHub) use ML for automated metadata harvesting, data classification (PII/sensitive data detection via NLP), data lineage reconstruction (tracing data flow through pipelines), and data quality monitoring (anomaly detection on freshness, completeness, accuracy metrics). These platforms reduce manual governance effort by 50-70% compared to traditional manual cataloging.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://datahub.com/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-data-governance-2",
     "text": "The AI data governance challenge (2025): as enterprises deploy LLMs and generative AI, new governance requirements emerge -- model cards (documenting training data, limitations, bias), dataset versioning (DVC, Pachyderm), feature stores (Feast, Tecton) for ML feature governance, and prompt governance (auditing which prompts access which data). The EU AI Act mandates data governance documentation for high-risk AI systems.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.1017/err.2024.25"

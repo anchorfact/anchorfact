@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-multimodal-search-1",
     "text": "ICLR 2025 introduced MMSearch -- the first comprehensive multimodal search benchmark evaluating large multimodal models (LMMs) on search tasks across text, image, video, and audio modalities -- finding that GPT-4V achieves 63% mean recall@10 on multimodal search queries, while specialized embedding models (Jina CLIP v2, Nomic Embed) achieve 72-78% on text-to-image and image-to-text retrieval, highlighting the gap between generalist LMMs and specialized retrieval models.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://github.com/CaraJ7/MMSearch"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-multimodal-search-2",
     "text": "Qwen3-VL-Embedding and Qwen3-VL-Reranker (Alibaba Tongyi Lab, 2026) introduced a unified multimodal retrieval framework achieving SOTA on 13 multimodal retrieval benchmarks -- the embedding model (trained with Matryoshka Representation Learning and contrastive loss) supports variable embedding dimensions (64-4096), and the reranker refines top-K results via cross-modal attention -- demonstrating that unified vision-language embedding models surpass modality-specific approaches by 8-15%.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://opensearch.org/blog/multimodal-semantic-search/"

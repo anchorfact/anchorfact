@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-climate-science-1",
     "text": "Google DeepMind's GraphCast (2023, Science) achieves medium-range weather forecasting (10-day) with higher accuracy than ECMWF's IFS HRES — the gold-standard numerical weather prediction system — processing a 0.25° global grid in under 60 seconds on a single TPU v4 versus hours on supercomputers for physics-based models.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.science.org/doi/10.1126/science.adi2336"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-climate-science-2",
     "text": "Huawei's Pangu-Weather (2023, Nature) — a 3D Earth-specific transformer — became the first AI model to outperform ECMWF IFS on deterministic forecast skill, using 39 years of ERA5 reanalysis data and achieving RMSE reductions of 10-20% on key variables including geopotential, temperature, and wind speed.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nature.com/articles/s41586-023-06185-3"

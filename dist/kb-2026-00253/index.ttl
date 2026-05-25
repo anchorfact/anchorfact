@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00253>
   a schema:TechArticle ;
   schema:headline "Event Sourcing" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.425" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00253>
-  schema:citation <https://dl.acm.org/> .
+  schema:citation <https://dl.acm.org/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00253>
-  schema:citation <https://www.oreilly.com/eda/> .
+  schema:citation <https://www.oreilly.com/eda/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00253>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.es> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.es> ;
+  af:sourceTier "C" .

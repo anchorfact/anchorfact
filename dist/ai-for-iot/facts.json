@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-iot-1",
     "text": "ScienceDirect (August 2025) examined the integration of Federated Learning, TinyML, and IoT — demonstrating that FL+TinyML pipelines trained across 1,000+ distributed IoT devices (smart home sensors, wearables) achieve within 2-5% accuracy of centralized training while preserving user data privacy, with model sizes compressed to 50-500KB for microcontroller deployment via quantization and knowledge distillation.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.sciencedirect.com/science/article/pii/S2405959525000839"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-iot-2",
     "text": "Nature Communications (April 2025) addressed the challenge of personalized AI in IoT systems — proposing a framework where federated meta-learning enables rapid adaptation of shared models to individual user behavior patterns (smart home preferences, health monitoring baselines) using just 5-10 local training examples per user, reducing personalization training time by 80% compared to training separate models per device.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nature.com/articles/s41467-025-59217-z"

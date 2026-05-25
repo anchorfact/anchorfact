@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/kb-2026-00018>
   a schema:TechArticle ;
   schema:headline "AI Agents (2025-2026)" ;
-  af:confidence "high" ;
+  af:confidence "medium" ;
+  af:confidenceScore "0.77" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00018>
-  schema:citation <https://zaobi.tech/pages/ai-tech/agent-tech-report-2025/index.html> .
+  schema:citation <https://zaobi.tech/pages/ai-tech/agent-tech-report-2025/index.html> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00018>
-  schema:citation <https://arxiv.org/html/2601.01743v1> .
+  schema:citation <https://arxiv.org/html/2601.01743v1> ;
+  af:sourceTier "A" .

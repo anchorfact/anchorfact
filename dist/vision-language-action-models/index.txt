@@ -1,7 +1,7 @@
 # Vision-Language-Action Models: Unified Multimodal Foundation Models for Embodied AI
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Vision-Language-Action (VLA) models extend multimodal AI to physical interaction — a single neural network that sees the environment, understands spoken instructions, and generates robot actions. From "pick up the red cup" to complex multi-step manipulation, VLA models represent the convergence of vision, language, and robotics into unified foundation models.

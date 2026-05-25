@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/kb-2026-00002>
   a schema:TechArticle ;
   schema:headline "Attention Mechanism" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.56" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00002>
-  schema:citation <https://arxiv.org/abs/1409.0473> .
+  schema:citation <https://arxiv.org/abs/1409.0473> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/kb-2026-00002>
-  schema:citation <https://arxiv.org/abs/1508.04025> .
+  schema:citation <https://arxiv.org/abs/1508.04025> ;
+  af:sourceTier "S" .

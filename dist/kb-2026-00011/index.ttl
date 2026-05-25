@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00011>
   a schema:TechArticle ;
   schema:headline "TCP/IP Protocol Suite" ;
-  af:confidence "high" ;
+  af:confidence "medium" ;
+  af:confidenceScore "0.6" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00011>
-  schema:citation <https://www.rfc-editor.org/rfc/rfc791> .
+  schema:citation <https://www.rfc-editor.org/rfc/rfc791> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/kb-2026-00011>
-  schema:citation <https://www.rfc-editor.org/rfc/rfc793> .
+  schema:citation <https://www.rfc-editor.org/rfc/rfc793> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/kb-2026-00011>
-  schema:citation <https://www.rfc-editor.org/rfc/rfc768> .
+  schema:citation <https://www.rfc-editor.org/rfc/rfc768> ;
+  af:sourceTier "S" .

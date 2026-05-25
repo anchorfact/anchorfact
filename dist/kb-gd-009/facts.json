@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-001",
     "text": "**有意义的选择** — 玩家面临的选择应有真实后果\n### 机制类型\n- **核心机制** — 游戏最基础的交互（跳跃、射击、建造） - **进阶机制** — 随着游戏进程解锁的新能力 - **元机制** — 外层系统（科技树、声望系统）\n---\n## 战斗系统设计\n### 现代战斗系统趋势（2025-2026）\n**从冷却CD到资源型系统：**\n传统\"技能CD好了就用\"的模式正在被资源型战斗系统取代：\n- **决心点数系统（Determination Points）** — 技能消耗 DP，DP 每回合恢复，强技能消耗更多。",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-002",
     "text": "消除\"最强技能CD一好就放\"的机械操作 - **骰子转行动点引擎** — 掷骰分配到属性槽（力量/敏捷/智力）产生行动点。",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-003",
     "text": "**工具建模：** 用 Machinations 或 Excel 建立经济模型 3.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-004",
     "text": "**回归测试：** 调整后重新模拟，确保没有新问题\n参见：[templates/economy-balance-template.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -49,6 +61,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-005",
     "text": "md#数据驱动平衡工作流] — 数据分析方法\n---\n## 技能树与成长系统\n### 技能树设计模式\n1.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"

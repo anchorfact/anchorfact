@@ -1,7 +1,7 @@
 # AI for Retail: Cashierless Stores, Dynamic Pricing, and Personalized Shopping
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is reengineering retail -- from cashierless stores where you grab-and-go to dynamic prices that optimize in real-time to virtual try-on that lets you see clothes on your body before buying. Computer vision, reinforcement learning, and recommendation systems collectively create a shopping experience that is seamless, personalized, and increasingly autonomous.

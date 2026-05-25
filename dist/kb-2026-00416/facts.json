@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-arts-01",
     "text": "Prototype: fail fast, learn faster — paper sketches, wireframes, role-play",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.harpercollins.com/products/change-by-design-tim-brown"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-arts-001",
     "text": "Design thinking is a human-centered problem-solving methodology popularized by IDEO. Five phases: Empathize (understand users), Define (frame problem), Ideate (brainstorm solutions), Prototype (build low-fidelity versions), Test (gather feedback). Iterative, not linear — you can move back and forth.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.harpercollins.com/products/change-by-design-tim-brown"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-arts-002",
     "text": "Define: synthesize insights into problem statement.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.harpercollins.com/products/change-by-design-tim-brown"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-arts-003",
     "text": "Double Diamond model (Design Council) formalizes the process.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.harpercollins.com/products/change-by-design-tim-brown"

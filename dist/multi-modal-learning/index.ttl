@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/multi-modal-learning>
   a schema:TechArticle ;
   schema:headline "Multi-Modal Machine Learning" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.76" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/multi-modal-learning>
-  schema:citation <https://arxiv.org/abs/1705.09406> .
+  schema:citation <https://arxiv.org/abs/1705.09406> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/multi-modal-learning>
-  schema:citation <https://arxiv.org/abs/2304.08485> .
+  schema:citation <https://arxiv.org/abs/2304.08485> ;
+  af:sourceTier "A" .

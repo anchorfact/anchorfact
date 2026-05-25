@@ -1,7 +1,7 @@
 # AI for Predictive Policing: Crime Forecasting, Resource Allocation, and Bias Mitigation
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI predictive policing forecasts where crimes might occur -- but has become one of AI's most controversial applications. The feedback loop problem (AI sends police to areas -> arrests increase -> AI predicts more crime there) and racial bias concerns have led many cities to abandon predictive policing. The emerging approach: AI as decision support, not decision replacement.

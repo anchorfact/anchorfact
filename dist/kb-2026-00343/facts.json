@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-arts-01",
     "text": "Initially rejected by Salon, now among the most beloved art movements",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.taschen.com/en/books/art/43189/impressionism/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-arts-001",
     "text": "Impressionism (1870s-1880s, France) broke from academic painting with visible brushstrokes, emphasis on light and color over line and form, everyday subjects, and painting en plein air (outdoors). Name from Monet's 'Impression, Sunrise' (1872, exhibited 1874). Initially rejected by Salon, now among the most beloved art movements.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.taschen.com/en/books/art/43189/impressionism/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-arts-002",
     "text": "Key artists: Claude Monet (water lilies, Rouen Cathedral series), Pierre-Auguste Renoir (social scenes, vibrant light), Edgar Degas (ballet dancers, unusual angles), Camille Pissarro, Berthe Morisot.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.taschen.com/en/books/art/43189/impressionism/"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-arts-003",
     "text": "Post-Impressionists (Van Gogh, Cezanne, Gauguin, Seurat) built on and reacted against Impressionism.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.taschen.com/en/books/art/43189/impressionism/"

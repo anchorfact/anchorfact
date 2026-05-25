@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/kb-2026-00080>
   a schema:TechArticle ;
   schema:headline "Swift Programming Language" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.56" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00080>
-  schema:citation <https://swift.org/documentation/> .
+  schema:citation <https://swift.org/documentation/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00080>
-  schema:citation <https://github.com/swiftlang/swift> .
+  schema:citation <https://github.com/swiftlang/swift> ;
+  af:sourceTier "C" .

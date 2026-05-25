@@ -1,7 +1,7 @@
 # AI Protein Design: RFDiffusion, ProteinMPNN, and the Nobel Revolution
-Confidence: high
+Confidence: medium (0.73) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI protein design has entered the post-AlphaFold era. RFDiffusion generates novel protein structures from scratch; ProteinMPNN designs sequences that fold into desired shapes; the 2024 Nobel Prize validated this revolution — transforming drug discovery and biotechnology.

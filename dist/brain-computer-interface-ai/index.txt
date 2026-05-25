@@ -1,7 +1,7 @@
 # Brain-Computer Interfaces: AI-Powered Neural Decoding and Neurotechnology
-Confidence: high
+Confidence: medium (0.74) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Brain-Computer Interfaces (BCIs) decode neural signals into digital commands, enabling direct brain-to-machine communication. The convergence of high-density neural implants, AI-powered decoding algorithms, and shared autonomy paradigms is transforming neurotechnology from laboratory experiments into clinical reality.

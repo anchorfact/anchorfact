@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00443>
   a schema:TechArticle ;
   schema:headline "Learning How to Learn" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.43" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00443>
-  schema:citation <https://www.penguinrandomhouse.com/books/533681/a-mind-for-numbers-by-barbara-oakley-phd/> .
+  schema:citation <https://www.penguinrandomhouse.com/books/533681/a-mind-for-numbers-by-barbara-oakley-phd/> ;
+  af:sourceTier "C" .

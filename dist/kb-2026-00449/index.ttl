@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00449>
   a schema:TechArticle ;
   schema:headline "Tennis Strategy" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.425" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00449>
-  schema:citation <https://www.simonandschuster.com/books/Winning-Ugly/Brad-Gilbert/9780671884000> .
+  schema:citation <https://www.simonandschuster.com/books/Winning-Ugly/Brad-Gilbert/9780671884000> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00449>
-  schema:citation <https://www.simonandschuster.com/winning-ugly/> .
+  schema:citation <https://www.simonandschuster.com/winning-ugly/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00449>
-  schema:citation <https://www.penguinrandomhouse.com/inner-tennis/> .
+  schema:citation <https://www.penguinrandomhouse.com/inner-tennis/> ;
+  af:sourceTier "C" .

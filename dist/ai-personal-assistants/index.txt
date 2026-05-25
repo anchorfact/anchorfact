@@ -1,7 +1,7 @@
 # AI Personal Assistants: Task Automation, Proactive Intelligence, and Agentic Personal AI
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI personal assistants are evolving from voice command executors to proactive, agentic companions that anticipate needs and autonomously complete tasks. Apple Intelligence, Google Gemini, and ChatGPT represent the new generation of personal AI that works across apps, retains memory, and acts on your behalf.

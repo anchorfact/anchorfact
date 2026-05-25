@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00162>
   a schema:TechArticle ;
   schema:headline "Kubernetes Pod & Service" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.5" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00162>
-  schema:citation <https://kubernetes.io/docs/> .
+  schema:citation <https://kubernetes.io/docs/> ;
+  af:sourceTier "C" .

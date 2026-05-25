@@ -1,7 +1,7 @@
 # AI for Medical Imaging: Radiology AI, Computer-Aided Diagnosis, and Clinical Deployment
-Confidence: high
+Confidence: medium (0.765) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is the first specialty to enter the radiology reading room at scale -- with over 500 FDA-cleared AI medical imaging devices, AI assists radiologists in detecting cancers, strokes, and fractures faster and more accurately. From zero-shot chest X-ray interpretation to real-time stroke triage, medical imaging AI has crossed from research benchmark to clinical deployment.

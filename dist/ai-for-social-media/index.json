@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-social-media",
   "headline": "AI for Social Media: Misinformation Detection, Hate Speech Moderation, and Content Safety",
   "description": "Social media platforms process billions of posts daily — more than any human moderation team could review. AI detects hate speech, misinformation, harassment, and harmful content at scale, but faces fundamental challenges: context understanding, cultural nuance, and bias. The frontier is explainable, fair, and context-aware moderation that protects users without over-censoring legitimate speech.",
-  "dateCreated": "2026-05-25T02:46:03.467Z",
+  "dateCreated": "2026-05-24",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",
@@ -17,17 +17,49 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidenceScore": 0.85,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 1,
+      "source_count": 0.8,
+      "source_verified": 1,
+      "freshness": 1,
+      "decay": 0.1,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "high",
+    "confidence_score": 0.85,
+    "confidence_basis": "verified_sources",
+    "sources_total": 2,
+    "sources_verified": 2,
+    "sources_unreachable": 0,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "S",
+      "S"
+    ],
+    "sources_has_doi": true,
+    "sources_has_url": true,
+    "article_has_disputed": false,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "Decoding Fake News and Hate Speech: A Survey of Explainable AI Techniques for Social Media Moderation",
-      "sameAs": "https://dl.acm.org/doi/full/10.1145/3711123"
+      "sameAs": "https://dl.acm.org/doi/full/10.1145/3711123",
+      "anchorfact:sourceTier": "S",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "Measuring context sensitivity in artificial intelligence-based content moderation systems",
-      "sameAs": "https://www.nature.com/articles/s41562-025-02363-7"
+      "sameAs": "https://www.nature.com/articles/s41562-025-02363-7",
+      "anchorfact:sourceTier": "S",
+      "anchorfact:year": 2025
     }
   ]
 }

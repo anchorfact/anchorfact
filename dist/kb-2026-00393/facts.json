@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-01",
     "text": "Capital Chang'an was the world's largest city",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-02",
     "text": "An Lushan Rebellion : devastating civil war, 13-36 million deaths — decline began",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://global.oup.com/academic/product/chinas-golden-age-9780195176650"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-03",
     "text": "Ended with Huang Chao Rebellion",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://global.oup.com/academic/product/chinas-golden-age-9780195176650"

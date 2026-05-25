@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-001",
     "text": "**清理上下文** — 每步新开对话，避免上下文污染\n### 推荐工作流\n``` GDD → 技术选型 → CLAUDE.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-002",
     "text": "md 规则 → 实现计划 → 内存银行（Memory Bank）→ 分步开发 → 测试 → 审查 ```\n### Verb 编码方法（2026）\n1.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-003",
     "text": "使用 TDD 确保质量\n---\n## Skill 套装推荐\n| 项目 | ⭐ | 用途 | |------|-----|------| | **addyosmani/agent-skills** | 16.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-004",
     "text": "0 提供多 Agent 协作 - 适合 AAA 品质但需要更多算力\n---\n## 在项目中使用 AI 辅助设计\nAI Agent 不仅能辅助写代码，也能辅助**游戏设计本身**。",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -49,6 +61,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-005",
     "text": "以下是经过验证的实战案例：\n### 实战案例 1：基于 MDA 框架的机制生成\n**场景**：需要为一个 Roguelike 游戏设计 20 个独特的武器机制。",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"

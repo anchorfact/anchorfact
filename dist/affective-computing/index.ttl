@@ -5,10 +5,14 @@
   a schema:article ;
   schema:headline "Affective Computing: Multimodal Emotion Recognition, Sentiment Analysis, and Empathetic AI" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidenceScore "0.85" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/affective-computing>
-  schema:citation <https://ieeexplore.ieee.org/document/11264591> .
+  schema:citation <https://ieeexplore.ieee.org/document/11264591> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/affective-computing>
-  schema:citation <https://www.nature.com/articles/s41598-025-89202-x> .
+  schema:citation <https://www.nature.com/articles/s41598-025-89202-x> ;
+  af:sourceTier "S" .

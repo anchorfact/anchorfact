@@ -1,7 +1,7 @@
 # AI for Legal Research: Case Law Search, Citation Analysis, and Litigation Analytics
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI legal research finds the needle in the haystack -- semantic search across millions of cases, predicting judge rulings, and generating legal memos. From CoCounsel (first AI to pass the Bar) to Westlaw Precision, AI is becoming the junior associate that legal research teams rely on.

@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00172>
   a schema:TechArticle ;
   schema:headline "Responsive Web Design" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00172>
-  schema:citation <https://alistapart.com/article/responsive-web-design/> .
+  schema:citation <https://alistapart.com/article/responsive-web-design/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00172>
-  schema:citation <https://abookapart.com/products/responsive-web-design> .
+  schema:citation <https://abookapart.com/products/responsive-web-design> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00172>
-  schema:citation <https://www.oreilly.com/a11y/> .
+  schema:citation <https://www.oreilly.com/a11y/> ;
+  af:sourceTier "C" .

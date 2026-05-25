@@ -4,23 +4,31 @@
 <https://anchorfact.org/kb/marketing-fundamentals>
   a schema:Article ;
   schema:headline "Marketing: Strategy, Consumer Behavior, and Digital Channels" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/marketing-fundamentals>
-  schema:citation <https://www.pearson.com/en-us/subject-catalog/p/marketing-management/P200000005852> .
+  schema:citation <https://www.pearson.com/en-us/subject-catalog/p/marketing-management/P200000005852> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/marketing-fundamentals>
-  schema:citation <https://www.harpercollins.com/products/influence-robert-b-cialdini> .
+  schema:citation <https://www.harpercollins.com/products/influence-robert-b-cialdini> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/marketing-fundamentals>
-  schema:citation <https://www.pearson.com/marketing/> .
+  schema:citation <https://www.pearson.com/marketing/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/marketing-fundamentals>
-  schema:citation <https://www.penguinrandomhouse.com/this-is-marketing/> .
+  schema:citation <https://www.penguinrandomhouse.com/this-is-marketing/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/marketing-fundamentals>
-  schema:citation <https://www.pearson.com/marketing/> .
+  schema:citation <https://www.pearson.com/marketing/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/marketing-fundamentals>
-  schema:citation <https://www.penguinrandomhouse.com/this-is-marketing/> .
+  schema:citation <https://www.penguinrandomhouse.com/this-is-marketing/> ;
+  af:sourceTier "C" .

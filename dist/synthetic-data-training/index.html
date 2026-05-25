@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Synthetic Data in AI Training — AnchorFact</title></head>
-<body><article>## TL;DR<br>
-Synthetic data — generating training examples from other AI models — has emerged as both a powerful scaling technique and a fundamental risk. Models like Phi-4 achieve state-of-the-art results primarily from synthetic data, while model collapse threatens recursive use.<br>
-<br>
-## Core Explanation<br>
-Synthetic data generation: (1) use a teacher model to generate diverse examples; (2) curriculum learning — progressively harder synthetic problems; (3) self-play — models generate and solve their own problems. Key quality checks: diversity, accuracy, and domain coverage.<br>
-<br>
-## Detailed Analysis<br>
-Phi-4 demonstrated synthetic data can compensate for smaller model size — 14B parameters matching 70B. DeepSeek-R1 used synthetic reasoning traces for distillation. Risks: model collapse (recursive training degrades output), hallucination contamination, and benchmark leakage from synthetic data resembling test sets.<br>
-<br>
-## Further Reading<br>
-- Microsoft Research: Phi Series<br>
-- Nature: AI Model Collapse<br>
+<head>
+  <meta charset="utf-8">
+  <title>Synthetic Data in AI Training — AnchorFact</title>
+  <meta name="anchorfact:confidence" content="medium (0.76)">
+  <meta name="anchorfact:generation" content="ai_structured">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/synthetic-data-training","headline":"Synthetic Data in AI Training","description":"Synthetic data — generating training examples from other AI models — has emerged as both a powerful scaling technique and a fundamental risk. Models like Phi-4 achieve state-of-the-art results primarily from synthetic data, while model collapse threatens recursive use.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.76,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.9,"freshness":0.9,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.76,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":2,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["A","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Phi-4 Technical Report","sameAs":"https://arxiv.org/abs/2412.08905","anchorfact:sourceTier":"A","anchorfact:year":2024},{"@type":"CreativeWork","name":"AI models collapse when trained on recursively generated data","sameAs":"https://www.nature.com/articles/s41586-024-07566-y","anchorfact:sourceTier":"A","anchorfact:year":2024}]}</script>
+</head>
+<body><article>## TL;DR<br>
+Synthetic data — generating training examples from other AI models — has emerged as both a powerful scaling technique and a fundamental risk. Models like Phi-4 achieve state-of-the-art results primarily from synthetic data, while model collapse threatens recursive use.<br>
+<br>
+## Core Explanation<br>
+Synthetic data generation: (1) use a teacher model to generate diverse examples; (2) curriculum learning — progressively harder synthetic problems; (3) self-play — models generate and solve their own problems. Key quality checks: diversity, accuracy, and domain coverage.<br>
+<br>
+## Detailed Analysis<br>
+Phi-4 demonstrated synthetic data can compensate for smaller model size — 14B parameters matching 70B. DeepSeek-R1 used synthetic reasoning traces for distillation. Risks: model collapse (recursive training degrades output), hallucination contamination, and benchmark leakage from synthetic data resembling test sets.<br>
+<br>
+## Further Reading<br>
+- Microsoft Research: Phi Series<br>
+- Nature: AI Model Collapse<br>
 - NeurIPS: Synthetic Data Workshop</article></body>
 </html>

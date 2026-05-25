@@ -1,7 +1,7 @@
 # AI for Workplace Safety: Computer Vision Monitoring, Fall Detection, and Hazard Prevention
-Confidence: high
+Confidence: medium (0.615) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI workplace safety uses computer vision to monitor PPE compliance, detect falls, and identify hazards in real-time. From Amazon warehouses to construction sites, AI safety systems reduce workplace incidents by 25-40% by catching risks that human safety monitors miss.

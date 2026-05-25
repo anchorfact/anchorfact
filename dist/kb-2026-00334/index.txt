@@ -1,7 +1,7 @@
 # Periodic Table
-Confidence: high
+Confidence: medium (0.845) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 

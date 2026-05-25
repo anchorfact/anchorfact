@@ -1,7 +1,7 @@
 # Learned Database Systems: AI-Driven Query Optimization, Learned Indexes, and Cardinality Estimation
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Learned database systems replace decades of hand-tuned heuristics in databases with machine learning models. From learned indexes that replace B-trees with tiny neural networks to learned query optimizers that beat expert-designed cost models, AI is challenging the assumption that classical data structures and algorithms are always optimal for specific data distributions.

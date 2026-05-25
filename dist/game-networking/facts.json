@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-net-001",
     "text": "Client-side prediction + server reconciliation (Quake, Carmack 1996) are foundational netcode techniques.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://developer.valvesoftware.com/wiki/Latency_Compensating_Methods_in_Client/Server_In-game_Protocol_Design_and_Optimization"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-net-002",
     "text": "Deterministic lockstep (Age of Empires 1997) syncs game state via command transmission for RTS.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.informit.com/store/multiplayer-game-programming-9780134034300"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-net-003",
     "text": "Rollback netcode (GGPO 2009) revolutionized fighting game online play via input prediction + state rollback.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdcvault.com/play/1025961/GGPO-s"

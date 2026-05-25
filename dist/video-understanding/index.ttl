@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/video-understanding>
   a schema:article ;
   schema:headline "Video Understanding: Action Recognition, Temporal Action Detection, and Video-Language Models" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.74" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/video-understanding>
-  schema:citation <https://link.springer.com/article/10.1007/s11263-025-02478-4> .
+  schema:citation <https://link.springer.com/article/10.1007/s11263-025-02478-4> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/video-understanding>
-  schema:citation <https://www.sciencedirect.com/science/article/pii/S2405959525001869> .
+  schema:citation <https://www.sciencedirect.com/science/article/pii/S2405959525001869> ;
+  af:sourceTier "A" .

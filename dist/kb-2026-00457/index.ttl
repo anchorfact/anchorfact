@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00457>
   a schema:TechArticle ;
   schema:headline "Renewable Energy" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.255" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00457>
-  schema:citation <https://www.withouthotair.com/> .
+  schema:citation <https://www.withouthotair.com/> ;
+  af:sourceTier "C" .

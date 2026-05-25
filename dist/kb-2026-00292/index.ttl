@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00292>
   a schema:TechArticle ;
   schema:headline "FastAPI" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00292>
-  schema:citation <https://fastapi.tiangolo.com/> .
+  schema:citation <https://fastapi.tiangolo.com/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00292>
-  schema:citation <https://www.oreilly.com/fastapi/> .
+  schema:citation <https://www.oreilly.com/fastapi/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00292>
-  schema:citation <https://doi.org/10.1109/ms.2025.fastapi> .
+  schema:citation <https://doi.org/10.1109/ms.2025.fastapi> ;
+  af:sourceTier "C" .

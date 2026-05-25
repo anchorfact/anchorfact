@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-001",
     "text": "Quantum mechanics (Planck 1900, Bohr, Heisenberg, Schrödinger, 1920s) describes physical phenomena at atomic and subatomic scales. Fundamental principles: wave-particle duality, quantization (energy in discrete units), uncertainty principle (cannot simultaneously know position and momentum precisely), superposition, entanglement.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://link.springer.com/book/9780306447907"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-002",
     "text": "Double-slit experiment: single particles create interference patterns — wave-particle duality demonstrated.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://link.springer.com/book/9780306447907"

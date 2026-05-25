@@ -4,17 +4,23 @@
 <https://anchorfact.org/kb/kb-2026-00015>
   a schema:TechArticle ;
   schema:headline "SQL (Structured Query Language)" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.795" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00015>
-  schema:citation <https://doi.org/undefined> .
+  schema:citation <https://doi.org/undefined> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/kb-2026-00015>
-  schema:citation <https://www.postgresql.org/docs/17/> .
+  schema:citation <https://www.postgresql.org/docs/17/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00015>
-  schema:citation <https://www.oreilly.com/sql/> .
+  schema:citation <https://www.oreilly.com/sql/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00015>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.sql> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.sql> ;
+  af:sourceTier "C" .

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-transportation-1",
     "text": "Nature Scientific Reports (July 2025) proposed an efficient ITS framework for traffic flow prediction — combining graph convolutional networks capturing road network topology with temporal transformers modeling multi-scale traffic patterns — achieving 12-18% improvement in prediction accuracy (MAE, RMSE) over standalone LSTM and GRU baselines on the PeMS highway dataset covering 35,000+ sensors across California freeways.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nature.com/articles/s41598-025-10794-5"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-transportation-2",
     "text": "ScienceDirect Applied Soft Computing (December 2025) introduced an LLM-based real-time traffic flow optimization framework — framing traffic signal control as a reinforcement learning problem where an LLM serves as the high-level policy network, translating traffic camera observations into signal phase decisions — reducing average intersection wait time by 22% and vehicle stops by 28% compared to fixed-timing signals in SUMO simulations of 50-intersection urban networks.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.sciencedirect.com/science/article/pii/S156849462501230X"

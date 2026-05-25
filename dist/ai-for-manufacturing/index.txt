@@ -1,7 +1,7 @@
 # AI for Manufacturing: Predictive Maintenance, Quality Control, and Digital Twins
-Confidence: high
+Confidence: medium (0.615) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is the brain of modern manufacturing — predicting equipment failures before they happen, detecting microscopic product defects at production line speed, and simulating entire factory operations in real-time digital twins. Industry 4.0 plus AI ("Industry 5.0") reduces downtime by 30-45%, defect rates by 35%, and energy consumption by 25%.

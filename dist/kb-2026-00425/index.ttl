@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00425>
   a schema:TechArticle ;
   schema:headline "Gut Microbiome" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.275" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00425>
-  schema:citation <https://www.harpercollins.com/products/i-contain-multitudes-ed-yong> .
+  schema:citation <https://www.harpercollins.com/products/i-contain-multitudes-ed-yong> ;
+  af:sourceTier "C" .

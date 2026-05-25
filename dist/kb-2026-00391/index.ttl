@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00391>
   a schema:TechArticle ;
   schema:headline "GDP and Economic Growth" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.255" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00391>
-  schema:citation <https://press.princeton.edu/books/paperback/9780691169859/gdp> .
+  schema:citation <https://press.princeton.edu/books/paperback/9780691169859/gdp> ;
+  af:sourceTier "C" .

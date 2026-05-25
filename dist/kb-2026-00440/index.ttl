@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00440>
   a schema:TechArticle ;
   schema:headline "Time Management" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.425" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00440>
-  schema:citation <https://www.simonandschuster.com/books/The-7-Habits-of-Highly-Effective-People/Stephen-R-Covey/9781982143817> .
+  schema:citation <https://www.simonandschuster.com/books/The-7-Habits-of-Highly-Effective-People/Stephen-R-Covey/9781982143817> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00440>
-  schema:citation <https://www.penguinrandomhouse.com/gtd/> .
+  schema:citation <https://www.penguinrandomhouse.com/gtd/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00440>
-  schema:citation <https://www.crownpublishing.com/make-time/> .
+  schema:citation <https://www.crownpublishing.com/make-time/> ;
+  af:sourceTier "C" .

@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00445>
   a schema:TechArticle ;
   schema:headline "Leadership Principles" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.43" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00445>
-  schema:citation <https://www.penguinrandomhouse.com/books/223777/leaders-eat-last-by-simon-sinek/> .
+  schema:citation <https://www.penguinrandomhouse.com/books/223777/leaders-eat-last-by-simon-sinek/> ;
+  af:sourceTier "C" .

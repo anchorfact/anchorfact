@@ -1,7 +1,7 @@
 # LoRA (Low-Rank Adaptation)
-Confidence: high
+Confidence: medium (0.725) (verified)
 Last verified: 2026-05-22
-Generation: human_only
+Generation: ai_structured
 
 ## TL;DR
 

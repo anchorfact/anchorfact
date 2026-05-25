@@ -7,7 +7,7 @@ language: en
 confidence: high
 last_verified: "2026-05-22"
 created_date: "2026-05-22"
-generation_method: human_only
+generation_method: ai_structured
 ai_models:
   - claude-opus
 derived_from_human_seed: true

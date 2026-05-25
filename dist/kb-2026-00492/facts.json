@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-01",
     "text": "'The Sixth Extinction' : we are causing it",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.iucnredlist.org/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-001",
     "text": "Endangered species face extinction risk. IUCN Red List: Extinct → Extinct in Wild → Critically Endangered → Endangered → Vulnerable → Near Threatened → Least Concern. Current extinction rate: 100-1000x background rate (Anthropocene mass extinction). Causes: habitat loss, climate change, invasive species, overexploitation, pollution.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.iucnredlist.org/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-002",
     "text": "Iconic endangered: Amur leopard (~100 wild), vaquita porpoise (~10), Javan rhino (~75), mountain gorilla (~1,000 — success story: population increasing).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.iucnredlist.org/"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-003",
     "text": "Conservation success: bald eagle (banned DDT, 1972), giant panda (habitat protection), humpback whale (whaling ban).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.iucnredlist.org/"
@@ -49,6 +61,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-004",
     "text": "'The Sixth Extinction' (Kolbert): we are causing it.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.iucnredlist.org/"
@@ -60,6 +75,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-005",
     "text": "'In the end, we will conserve only what we love' (Baba Dioum).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.iucnredlist.org/"

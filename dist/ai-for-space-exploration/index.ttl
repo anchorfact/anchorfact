@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-for-space-exploration>
   a schema:article ;
   schema:headline "AI for Space Exploration: Autonomous Navigation, Earth Observation, and Spacecraft Autonomy" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.74" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-for-space-exploration>
-  schema:citation <https://www.science.org/journal/scirobotics> .
+  schema:citation <https://www.science.org/journal/scirobotics> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-for-space-exploration>
-  schema:citation <https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36> .
+  schema:citation <https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36> ;
+  af:sourceTier "A" .

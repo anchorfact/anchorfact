@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-in-cybersecurity-1",
     "text": "A systematic review of 180+ works (Springer 2025) found LLMs applied across 10+ cybersecurity tasks including vulnerability detection (code-level), threat intelligence extraction, phishing detection, malware analysis, and security operations automation.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://link.springer.com/article/10.1186/s42400-025-00361-w"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-in-cybersecurity-2",
     "text": "Nature (2025) published an AI-driven cybersecurity framework using a multi-modal fusion of cyber and physical datasets — achieving high-precision anomaly detection by combining network traffic patterns with physical sensor data, outperforming single-modality systems by 23%.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nature.com/articles/s41598-025-19634-y"

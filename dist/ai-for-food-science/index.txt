@@ -1,7 +1,7 @@
 # AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is entering the food system at every stage -- from accelerating discovery of new sustainable ingredients and predicting flavor profiles, to automating quality inspection on production lines, to personalizing nutrition recommendations based on individual microbiomes and health data.

@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00277>
   a schema:TechArticle ;
   schema:headline "Explainable AI (XAI)" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00277>
-  schema:citation <https://arxiv.org/abs/1602.04938> .
+  schema:citation <https://arxiv.org/abs/1602.04938> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00277>
-  schema:citation <https://arxiv.org/abs/1705.07874> .
+  schema:citation <https://arxiv.org/abs/1705.07874> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00277>
-  schema:citation <https://doi.org/10.1016/j.inffus.2019.12.012> .
+  schema:citation <https://doi.org/10.1016/j.inffus.2019.12.012> ;
+  af:sourceTier "C" .

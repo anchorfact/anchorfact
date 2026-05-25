@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00329>
   a schema:TechArticle ;
   schema:headline "Silk Road" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00329>
-  schema:citation <https://www.bloomsbury.com/us/silk-roads-9781408839973/> .
+  schema:citation <https://www.bloomsbury.com/us/silk-roads-9781408839973/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00329>
-  schema:citation <https://www.bloomsbury.com/silk-roads/> .
+  schema:citation <https://www.bloomsbury.com/silk-roads/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00329>
-  schema:citation <https://global.oup.com/vsi-silk-road/> .
+  schema:citation <https://global.oup.com/vsi-silk-road/> ;
+  af:sourceTier "C" .

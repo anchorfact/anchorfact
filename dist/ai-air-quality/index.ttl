@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-air-quality>
   a schema:article ;
   schema:headline "AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-air-quality>
-  schema:citation <https://arxiv.org/search/?query=air+quality+deep+learning+PM2.5+prediction> .
+  schema:citation <https://arxiv.org/search/?query=air+quality+deep+learning+PM2.5+prediction> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-air-quality>
-  schema:citation <https://arxiv.org/search/?query=air+pollution+machine+learning+source+attribution> .
+  schema:citation <https://arxiv.org/search/?query=air+pollution+machine+learning+source+attribution> ;
+  af:sourceTier "A" .

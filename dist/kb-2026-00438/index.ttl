@@ -4,20 +4,27 @@
 <https://anchorfact.org/kb/kb-2026-00438>
   a schema:TechArticle ;
   schema:headline "Management Styles" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00438>
-  schema:citation <https://www.penguinrandomhouse.com/books/308034/drive-by-daniel-h-pink/> .
+  schema:citation <https://www.penguinrandomhouse.com/books/308034/drive-by-daniel-h-pink/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00438>
-  schema:citation <https://www.publicaffairsbooks.com/culture-map/> .
+  schema:citation <https://www.publicaffairsbooks.com/culture-map/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00438>
-  schema:citation <https://www.gallup.com/first-break/> .
+  schema:citation <https://www.gallup.com/first-break/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00438>
-  schema:citation <https://www.publicaffairsbooks.com/culture-map/> .
+  schema:citation <https://www.publicaffairsbooks.com/culture-map/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00438>
-  schema:citation <https://www.gallup.com/first-break/> .
+  schema:citation <https://www.gallup.com/first-break/> ;
+  af:sourceTier "C" .

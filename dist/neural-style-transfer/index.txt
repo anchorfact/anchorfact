@@ -1,7 +1,7 @@
 # Neural Style Transfer: Artistic Rendering, Image-to-Image Translation, and Creative AI
-Confidence: high
+Confidence: medium (0.775) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Neural style transfer applies the artistic style of one image (e.g., Van Gogh painting) to the content of another (a photograph), creating new artwork. From Gatys's seminal 2015 paper to IP-Adapter diffusion models, the field has evolved from minute-long optimization to real-time fine-grained style control.

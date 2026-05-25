@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-hyperautomation-1",
     "text": "MDPI Applied Sciences (July 2025) proposed a framework for integrating Robotic Process Automation (RPA) and AI in the context of Industry 5.0, defining hyperautomation as the convergence of RPA, AI/ML, intelligent document processing (IDP), process mining, and low-code platforms to create end-to-end autonomous business processes that go beyond simple task automation to intelligent, adaptive workflow orchestration.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.mdpi.com/2076-3417/15/13/7402"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-hyperautomation-2",
     "text": "Intelligent Document Processing (IDP) -- combining OCR, NLP, and ML to extract, classify, and validate data from unstructured documents (invoices, contracts, forms) -- has become a cornerstone of hyperautomation, with platforms like UiPath, Automation Anywhere, and Microsoft Power Automate processing billions of documents annually. IDP accuracy has reached 95-99% for structured forms and 85-92% for semi-structured documents, reducing manual data entry by 60-80%.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.researchgate.net/publication/390175338"

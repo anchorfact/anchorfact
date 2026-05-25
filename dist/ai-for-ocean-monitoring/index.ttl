@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-for-ocean-monitoring>
   a schema:article ;
   schema:headline "AI for Ocean Monitoring: Marine Life Detection, Plastic Pollution Tracking, and Oceanographic AI" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-for-ocean-monitoring>
-  schema:citation <https://arxiv.org/search/?query=AI+ocean+monitoring+marine+deep+learning> .
+  schema:citation <https://arxiv.org/search/?query=AI+ocean+monitoring+marine+deep+learning> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-for-ocean-monitoring>
-  schema:citation <https://arxiv.org/search/?query=satellite+plastic+detection+deep+learning> .
+  schema:citation <https://arxiv.org/search/?query=satellite+plastic+detection+deep+learning> ;
+  af:sourceTier "A" .

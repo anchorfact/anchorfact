@@ -1,7 +1,7 @@
 # AI Reasoning Models: OpenAI o1/o3 and DeepSeek-R1
-Confidence: high
+Confidence: medium (0.72) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Reasoning models like OpenAI o1/o3 and DeepSeek-R1 represent a paradigm shift: instead of answering immediately, they "think" through problems via internal chain-of-thought, scaling inference-time compute for dramatically better math, coding, and scientific reasoning.

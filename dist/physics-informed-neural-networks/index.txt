@@ -1,7 +1,7 @@
 # Physics-Informed Neural Networks: Solving PDEs with Deep Learning and Neural Operators
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Physics-Informed Neural Networks (PINNs) solve differential equations by embedding physical laws directly into neural network training — replacing expensive numerical simulations with neural surrogates that learn directly from PDE equations. From fluid dynamics to heat transfer, PINNs are merging scientific computing with deep learning.

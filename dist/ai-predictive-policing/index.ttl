@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-predictive-policing>
   a schema:article ;
   schema:headline "AI for Predictive Policing: Crime Forecasting, Resource Allocation, and Bias Mitigation" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-predictive-policing>
-  schema:citation <https://arxiv.org/search/?query=predictive+policing+machine+learning+fairness> .
+  schema:citation <https://arxiv.org/search/?query=predictive+policing+machine+learning+fairness> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-predictive-policing>
-  schema:citation <https://arxiv.org/search/?query=algorithmic+bias+predictive+policing> .
+  schema:citation <https://arxiv.org/search/?query=algorithmic+bias+predictive+policing> ;
+  af:sourceTier "A" .

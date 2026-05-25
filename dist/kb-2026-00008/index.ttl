@@ -4,17 +4,23 @@
 <https://anchorfact.org/kb/kb-2026-00008>
   a schema:TechArticle ;
   schema:headline "Hypertext Transfer Protocol (HTTP)" ;
-  af:confidence "high" ;
+  af:confidence "medium" ;
+  af:confidenceScore "0.64" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00008>
-  schema:citation <https://www.rfc-editor.org/rfc/rfc9110> .
+  schema:citation <https://www.rfc-editor.org/rfc/rfc9110> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/kb-2026-00008>
-  schema:citation <https://www.rfc-editor.org/rfc/rfc9112> .
+  schema:citation <https://www.rfc-editor.org/rfc/rfc9112> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/kb-2026-00008>
-  schema:citation <https://www.rfc-editor.org/rfc/rfc9113> .
+  schema:citation <https://www.rfc-editor.org/rfc/rfc9113> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/kb-2026-00008>
-  schema:citation <https://www.rfc-editor.org/rfc/rfc9114> .
+  schema:citation <https://www.rfc-editor.org/rfc/rfc9114> ;
+  af:sourceTier "S" .

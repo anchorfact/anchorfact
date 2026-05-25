@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00076>
   a schema:TechArticle ;
   schema:headline "JWT (JSON Web Token)" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.67" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00076>
-  schema:citation <https://www.rfc-editor.org/rfc/rfc7519> .
+  schema:citation <https://www.rfc-editor.org/rfc/rfc7519> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/kb-2026-00076>
-  schema:citation <https://www.manning.com/api-security/> .
+  schema:citation <https://www.manning.com/api-security/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00076>
-  schema:citation <https://www.oreilly.com/oauth/> .
+  schema:citation <https://www.oreilly.com/oauth/> ;
+  af:sourceTier "C" .

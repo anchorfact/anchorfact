@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-regulation-landscape>
   a schema:TechArticle ;
   schema:headline "AI Regulation: The 2024-2026 Global Landscape" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.62" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-regulation-landscape>
-  schema:citation <https://artificialintelligenceact.eu/> .
+  schema:citation <https://artificialintelligenceact.eu/> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/ai-regulation-landscape>
-  schema:citation <https://www.whitehouse.gov/ostp/ai-bill-of-rights/> .
+  schema:citation <https://www.whitehouse.gov/ostp/ai-bill-of-rights/> ;
+  af:sourceTier "C" .

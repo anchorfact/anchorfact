@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-speech-emotion-recognition-1",
     "text": "A 2024 Nature Scientific Reports study proposed a deep multi-modal framework integrating speech acoustic features (prosody, spectral features, voice quality) with linguistic content (transcribed text) for depression detection, achieving an AUC of 0.82 for depression screening using spontaneous speech recordings.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nature.com/articles/s41598-024-60278-1"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-speech-emotion-recognition-2",
     "text": "Speech-based emotion recognition (SER) has evolved from hand-crafted acoustic features + SVM to end-to-end deep learning using wav2vec 2.0, HuBERT, and Whisper speech foundation models. State-of-the-art SER achieves 75-85% accuracy on acted emotions but only 55-65% on naturalistic spontaneous emotions, reflecting the challenge of real-world emotion recognition.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2406.03510"

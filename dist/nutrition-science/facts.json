@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-hlth-nut-001",
     "text": "WHO: <5g salt/day, <10% energy from free sugars, 400g+ fruits/veg daily.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-hlth-nut-002",
     "text": "Mediterranean diet: 25-30% CVD event reduction (PREDIMED trial, NEJM 2013/2018).",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.1056/NEJMoa1800389"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-hlth-nut-003",
     "text": "EAT-Lancet Commission (2019) proposed planetary health diet for 10B people by 2050.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.1016/S0140-6736(18)31788-4"

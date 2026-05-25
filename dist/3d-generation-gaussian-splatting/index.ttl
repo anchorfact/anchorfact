@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/3d-generation-gaussian-splatting>
   a schema:article ;
   schema:headline "3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.78" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/3d-generation-gaussian-splatting>
-  schema:citation <https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/> .
+  schema:citation <https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/3d-generation-gaussian-splatting>
-  schema:citation <https://arxiv.org/abs/2003.08934> .
+  schema:citation <https://arxiv.org/abs/2003.08934> ;
+  af:sourceTier "A" .

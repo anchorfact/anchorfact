@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00384>
   a schema:TechArticle ;
   schema:headline "Climate Zones" ;
-  af:confidence "high" ;
+  af:confidence "medium" ;
+  af:confidenceScore "0.735" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00384>
-  schema:citation <https://www.britannica.com/science/Koppen-climate-classification> .
+  schema:citation <https://www.britannica.com/science/Koppen-climate-classification> ;
+  af:sourceTier "S" .

@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00075>
   a schema:TechArticle ;
   schema:headline "OAuth 2.0" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.67" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00075>
-  schema:citation <https://www.rfc-editor.org/rfc/rfc6749> .
+  schema:citation <https://www.rfc-editor.org/rfc/rfc6749> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/kb-2026-00075>
-  schema:citation <https://www.oreilly.com/oauth/> .
+  schema:citation <https://www.oreilly.com/oauth/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00075>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.auth> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.auth> ;
+  af:sourceTier "C" .

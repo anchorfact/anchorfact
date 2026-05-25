@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-learned-database-systems-1",
     "text": "Springer Frontiers of Computer Science (June 2025) published a comprehensive survey of learned database optimization techniques -- reviewing 150+ papers across learned cardinality estimation (MSCN, NeuroCard, BayesCard), learned cost models, learned join order selection (ReJOIN, Balsa, Neo), learned index structures (RMI, PGM-Index, CDFShop), and learned query optimizers (Bao, Neo) -- documenting that learned cardinality estimation with multi-set convolutional networks (MSCN) reduces Q-error (ratio of estimated to actual row count) from 100-1000x in traditional DBMS to 1.5-3x, transforming query plan quality.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://link.springer.com/article/10.1007/s11704-025-41116-7"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-learned-database-systems-2",
     "text": "The Recursive Model Index (RMI, Kraska et al., 2018) demonstrated that learned index structures -- replacing B-trees with a hierarchy of simple neural models predicting data positions -- achieve 3x faster lookup while using 100x less memory for read-only workloads, spawning the field of learned data structures (learned Bloom filters, learned hash functions, PGM-index) and challenging the assumption that general-purpose data structures are always optimal.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/1712.01208"

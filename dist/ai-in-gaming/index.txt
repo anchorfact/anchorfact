@@ -1,7 +1,7 @@
 # AI in Gaming: NPCs, Procedural Content, and AlphaStar
-Confidence: high
+Confidence: medium (0.76) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI in gaming spans from NPC behavior control to procedural world generation and competitive gameplay. AlphaStar mastered StarCraft II; SIMA learns to follow instructions across multiple 3D games without game-specific engineering.

@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/sports-nutrition>
   a schema:Article ;
   schema:headline "Sports Nutrition: Fueling Performance and Recovery" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.795" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/sports-nutrition>
-  schema:citation <https://www.humankinetics.com/advanced-sports-nutrition/> .
+  schema:citation <https://www.humankinetics.com/advanced-sports-nutrition/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/sports-nutrition>
-  schema:citation <https://jissn.biomedcentral.com/> .
+  schema:citation <https://jissn.biomedcentral.com/> ;
+  af:sourceTier "S" .

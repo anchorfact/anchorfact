@@ -1,7 +1,7 @@
 # AI for Science: AlphaFold and the AI-Driven Discovery Revolution
-Confidence: high
+Confidence: medium (0.76) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI for science is transforming discovery — AlphaFold 3 predicts all biomolecular structures, GNoME discovered 2.2 million new crystals, and AI-designed drugs enter clinical trials. The 2024 Nobel Prize in Chemistry for AlphaFold signified mainstream recognition of AI-driven science.

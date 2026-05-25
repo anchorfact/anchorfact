@@ -1,5 +1,5 @@
 # 游戏引擎对比与技术选型
-Confidence: high
+Confidence: low (0.5) (verified)
 Last verified: 2026-04-28
 Generation: human_only
 

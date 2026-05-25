@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-satellite-imagery-1",
     "text": "AI satellite imagery analysis (2023-2026): deep learning object detection (YOLO, DETR) identifies ships, aircraft, buildings, vehicles, and infrastructure from sub-meter resolution satellite imagery (Maxar 30cm, Planet 3m, Airbus 30cm). National geospatial agencies (NGA, NRO) deploy AI for automated intelligence analysis. Commercial platforms (Orbital Insight, Descartes Labs, SpaceKnow) serve enterprise customers with AI-derived geospatial intelligence.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=satellite+object+detection+foundation+model"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-satellite-imagery-2",
     "text": "Foundation models for satellite imagery: NASA+IBM Prithvi (2023-2025) and Clay Foundation Model (2024) pretrain ViT-based architectures on global satellite data, enabling few-shot fine-tuning for applications including: military infrastructure monitoring, agricultural yield forecasting, deforestation tracking, and humanitarian crisis mapping. These models reduce the labeled data requirement from thousands of examples to 100-500, democratizing satellite AI.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=geospatial+foundation+model+satellite"

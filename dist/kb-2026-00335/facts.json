@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-001",
     "text": "Photosynthesis converts light energy to chemical energy (glucose) using CO₂ and H₂O, releasing O₂. Two stages: light-dependent reactions (thylakoid membrane, produce ATP + NADPH) and Calvin cycle (stroma, fix CO₂ into sugar). C₃ plants (most), C₄ plants (corn, tropical), CAM plants (succulents) differ in carbon fixation.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.wiley.com/en-us/Molecular+Mechanisms+of+Photosynthesis%2C+3rd+Edition-p-9781119800019"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-002",
     "text": "Calvin cycle: RuBisCO enzyme fixes CO₂ (most abundant enzyme on Earth).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.wiley.com/en-us/Molecular+Mechanisms+of+Photosynthesis%2C+3rd+Edition-p-9781119800019"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-003",
     "text": "Photosynthesis produces essentially all atmospheric oxygen.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.wiley.com/en-us/Molecular+Mechanisms+of+Photosynthesis%2C+3rd+Edition-p-9781119800019"

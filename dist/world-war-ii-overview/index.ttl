@@ -4,17 +4,23 @@
 <https://anchorfact.org/kb/world-war-ii-overview>
   a schema:Article ;
   schema:headline "World War II: Global Conflict and Its Aftermath" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/world-war-ii-overview>
-  schema:citation <https://www.littlebrown.com/titles/antony-beevor/the-second-world-war/9780316023740/> .
+  schema:citation <https://www.littlebrown.com/titles/antony-beevor/the-second-world-war/9780316023740/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/world-war-ii-overview>
-  schema:citation <https://www.simonandschuster.com/books/The-Rise-and-Fall-of-the-Third-Reich/William-L-Shirer/9781451651683> .
+  schema:citation <https://www.simonandschuster.com/books/The-Rise-and-Fall-of-the-Third-Reich/William-L-Shirer/9781451651683> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/world-war-ii-overview>
-  schema:citation <https://www.littlebrown.com/the-second-world-war/> .
+  schema:citation <https://www.littlebrown.com/the-second-world-war/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/world-war-ii-overview>
-  schema:citation <https://www.basicbooks.com/bloodlands/> .
+  schema:citation <https://www.basicbooks.com/bloodlands/> ;
+  af:sourceTier "C" .

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-astronomy-1",
     "text": "A comprehensive review (FNAS Journal of Scientific Innovation, March 2026) surveyed AI applications across modern astrophysics — covering machine learning for exoplanet detection (transit photometry, radial velocity), galaxy morphology classification (Hubble sequence, JWST deep fields), gravitational wave detection (LIGO/Virgo glitch classification), and transient astronomy (real-time classification of supernovae, gamma-ray bursts) — documenting that CNNs now process data from Vera Rubin LSST, JWST, and SKA telescopes at petabyte scale.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.fnasjournals.com/index.php/FNAS-JSI/article/view/1153"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-astronomy-2",
     "text": "A University of Warwick study (ScienceDaily, May 2026) used a powerful AI pipeline to reanalyze NASA Kepler and TESS archival data, discovering 100+ previously undetected exoplanets — including 15 rare multi-planet systems and several Earth-sized worlds in habitable zones — demonstrating that AI can extract discoveries from already-analyzed data that human and traditional statistical methods missed, effectively \"doubling\" the scientific return of billion-dollar space telescope investments.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nature.com/articles/s41598-025-98935-8"

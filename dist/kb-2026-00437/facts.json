@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-001",
     "text": "Lean manufacturing (Toyota Production System, 1950s) maximizes value while minimizing waste. 5 principles: define value, map value stream, create flow, establish pull, pursue perfection. 7 wastes (muda): overproduction, waiting, transport, over-processing, inventory, motion, defects. Applicable beyond manufacturing.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.simonandschuster.com/books/The-Machine-That-Changed-the-World/James-P-Womack/9780743299794"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-002",
     "text": "5S: Sort, Set in order, Shine, Standardize, Sustain.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.simonandschuster.com/books/The-Machine-That-Changed-the-World/James-P-Womack/9780743299794"

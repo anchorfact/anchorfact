@@ -1,5 +1,5 @@
 # Information Theory
-Confidence: high
+Confidence: low (0.325) (verified)
 Last verified: 2026-05-22
 Generation: human_only
 

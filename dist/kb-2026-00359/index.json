@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00359",
   "headline": "American Revolution",
   "description": "The American Revolution (1775-1783) was the revolt of thirteen American colonies against British rule. Declaration of Independence (July 4, 1776, Jefferson). Revolutionary War (1775-1783): colonists, with French support, defeated British. Result: United States of America founded on republican principles.",
-  "dateCreated": "2026-05-25T02:46:04.500Z",
-  "dateModified": "2026-05-25T02:46:04.501Z",
+  "dateCreated": "2026-05-22",
+  "dateModified": "2026-05-25T12:59:32.384Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -16,43 +16,87 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidence": "low",
+  "anchorfact:confidenceScore": 0.55,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 0.3,
+      "source_count": 1,
+      "source_verified": 0.7,
+      "freshness": 1,
+      "decay": 0.30000000000000004,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "low",
+    "confidence_score": 0.55,
+    "confidence_basis": "verified_sources",
+    "sources_total": 6,
+    "sources_verified": 3,
+    "sources_unreachable": 3,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "C",
+      "C",
+      "C",
+      "C",
+      "C",
+      "C"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": true,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "1776 (David McCullough)",
-      "sameAs": "https://www.simonandschuster.com/books/1776/David-McCullough/9780743226721"
+      "sameAs": "https://www.simonandschuster.com/books/1776/David-McCullough/9780743226721",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2005
     },
     {
       "@type": "CreativeWork",
       "name": "The Glorious Cause: The American Revolution, 1763-1789 (2025 Edition)",
       "author": "Middlekauff R.",
-      "sameAs": "https://global.oup.com/american-revolution/"
+      "sameAs": "https://global.oup.com/american-revolution/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "1776 (2025 Illustrated Edition)",
       "author": "McCullough D.",
-      "sameAs": "https://www.simonandschuster.com/1776/"
+      "sameAs": "https://www.simonandschuster.com/1776/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "The Glorious Cause (2025 Edition)",
       "author": "Middlekauff R.",
-      "sameAs": "https://global.oup.com/american-revolution/"
+      "sameAs": "https://global.oup.com/american-revolution/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "1776 (2025 Illustrated)",
       "author": "McCullough D.",
-      "sameAs": "https://www.simonandschuster.com/1776/"
+      "sameAs": "https://www.simonandschuster.com/1776/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "The Glorious Cause (2025)",
       "author": "Middlekauff R.",
-      "sameAs": "https://global.oup.com/american-revolution/"
+      "sameAs": "https://global.oup.com/american-revolution/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     }
   ]
 }

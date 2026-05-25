@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/asian-geography>
   a schema:TechArticle ;
   schema:headline "Asian Geography" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.51" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/asian-geography>
-  schema:citation <https://www.nationalgeographic.com/books/atlas/> .
+  schema:citation <https://www.nationalgeographic.com/books/atlas/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/asian-geography>
-  schema:citation <https://www.cia.gov/the-world-factbook/> .
+  schema:citation <https://www.cia.gov/the-world-factbook/> ;
+  af:sourceTier "C" .

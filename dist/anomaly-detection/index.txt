@@ -1,7 +1,7 @@
 # Anomaly Detection in Machine Learning
-Confidence: high
+Confidence: medium (0.7) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Anomaly detection identifies data points that deviate significantly from expected patterns — critical for fraud detection, industrial monitoring, and cybersecurity.

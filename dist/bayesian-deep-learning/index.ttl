@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/bayesian-deep-learning>
   a schema:article ;
   schema:headline "Bayesian Deep Learning: Uncertainty Quantification and Robust Predictions" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.74" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/bayesian-deep-learning>
-  schema:citation <https://arxiv.org/abs/1906.02530> .
+  schema:citation <https://arxiv.org/abs/1906.02530> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/bayesian-deep-learning>
-  schema:citation <https://arxiv.org/abs/1612.01474> .
+  schema:citation <https://arxiv.org/abs/1612.01474> ;
+  af:sourceTier "A" .

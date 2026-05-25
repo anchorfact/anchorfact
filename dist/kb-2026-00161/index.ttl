@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00161>
   a schema:TechArticle ;
   schema:headline "Serverless Computing" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.5" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00161>
-  schema:citation <https://docs.aws.amazon.com/lambda/> .
+  schema:citation <https://docs.aws.amazon.com/lambda/> ;
+  af:sourceTier "C" .

@@ -1,7 +1,7 @@
 # AI for Signal Processing: Deep Learning for Wireless, Radar, and Biomedical Signals
-Confidence: high
+Confidence: medium (0.8) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is transforming signal processing -- from wireless receivers that learn to decode signals better than mathematically-designed algorithms, to ECG analysis matching cardiologist accuracy, to radar systems that detect and classify objects via deep learning. The convergence of deep learning and signal processing is creating adaptive systems that outperform decades of handcrafted DSP theory.

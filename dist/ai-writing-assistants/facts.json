@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-writing-assistants-1",
     "text": "AI writing assistants (Grammarly, ProWritingAid, QuillBot, Wordtune) serve 50M+ users with: (1) Grammar and spelling correction -- transformer-based error detection and seq2seq correction achieving 90%+ precision; (2) Style enhancement -- suggesting vocabulary improvements, tone adjustment, clarity rewrites; (3) Plagiarism detection -- comparing text against billions of web pages and academic papers; (4) Generative AI -- LLM-powered sentence completion, paraphrasing, and tone transformation (formal-casual). Grammarly (2024-2025) integrated GPT-4 for full-sentence rewriting.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=AI+writing+assistant+grammar+correction+style"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-writing-assistants-2",
     "text": "AI collaborative authorship: Google Docs (Smart Compose, 2018-present), Microsoft Word (Editor, Copilot 2023-2025), and Notion AI provide real-time AI writing assistance within the authoring environment. Studies (Stanford HAI, 2024) find AI writing assistants increase writing speed by 20-35% and improve grammar scores by 25-40%, but raise concerns about authorship attribution, academic integrity, and the homogenization of writing style across AI-assisted texts.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=AI+collaborative+writing+authorship"

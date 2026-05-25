@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00476>
   a schema:TechArticle ;
   schema:headline "Audio Engineering" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00476>
-  schema:citation <https://www.routledge.com/Mastering-Audio-The-Art-and-the-Science/Katz/p/book/9780240818962> .
+  schema:citation <https://www.routledge.com/Mastering-Audio-The-Art-and-the-Science/Katz/p/book/9780240818962> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00476>
-  schema:citation <https://www.routledge.com/mastering-audio/> .
+  schema:citation <https://www.routledge.com/mastering-audio/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00476>
-  schema:citation <https://www.routledge.com/recording/> .
+  schema:citation <https://www.routledge.com/recording/> ;
+  af:sourceTier "C" .

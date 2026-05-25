@@ -4,20 +4,27 @@
 <https://anchorfact.org/kb/kb-2026-00354>
   a schema:TechArticle ;
   schema:headline "Byzantine Empire" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00354>
-  schema:citation <https://press.princeton.edu/books/paperback/9780691143699/byzantium> .
+  schema:citation <https://press.princeton.edu/books/paperback/9780691143699/byzantium> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00354>
-  schema:citation <https://press.princeton.edu/byzantium/> .
+  schema:citation <https://press.princeton.edu/byzantium/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00354>
-  schema:citation <https://doi.org/10.1017/cbo.2025.byzantine> .
+  schema:citation <https://doi.org/10.1017/cbo.2025.byzantine> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00354>
-  schema:citation <https://press.princeton.edu/byzantium/> .
+  schema:citation <https://press.princeton.edu/byzantium/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00354>
-  schema:citation <https://www.crownpublishing.com/byzantine/> .
+  schema:citation <https://www.crownpublishing.com/byzantine/> ;
+  af:sourceTier "C" .

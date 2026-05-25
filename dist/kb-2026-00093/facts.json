@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-01",
     "text": "Content Security Policy is a security standard that helps prevent XSS, clickjacking, and code injection attacks by controlling which resources a web page is allowed to load",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.w3.org/TR/CSP2/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-001",
     "text": "Content Security Policy (CSP) is a security standard that helps prevent XSS, clickjacking, and code injection attacks by controlling which resources a web page is allowed to load. It is delivered via HTTP headers (`Content-Security-Policy`) or `<meta>` tags.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.w3.org/TR/CSP2/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-002",
     "text": "Key directives: `default-src` (fallback), `script-src`, `style-src`, `img-src`, `connect-src` (fetch/XHR/WebSocket), `frame-ancestors` (clickjack protection), `form-action`.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.w3.org/TR/CSP2/"

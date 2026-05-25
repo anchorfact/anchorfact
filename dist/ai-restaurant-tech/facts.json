@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-restaurant-tech-1",
     "text": "AI restaurant technology (2023-2026): (1) Voice AI ordering -- companies like SoundHound, ConverseNow, and Valyant AI deploy conversational AI for drive-thru and phone ordering at White Castle, Panera, and Checkers, handling 80%+ of orders without human intervention; (2) Computer vision kitchen -- PreciTaste and Agot AI use overhead cameras to monitor food preparation, ensure order accuracy, and predict when food will be ready; (3) Dynamic menu pricing -- AI adjusts prices based on demand, time, weather, and inventory.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=restaurant+AI+voice+ordering+kitchen+automation"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-restaurant-tech-2",
     "text": "AI restaurant personalization (2024-2026): CRM AI (Toast, Lunchbox, Olo) analyzes order history to recommend items, predict future orders, and personalize loyalty offers. McDonald's Dynamic Yield (acquired 2019, sold 2021 but technology retained) personalizes drive-thru menu boards based on weather (ice cream on hot days), time of day (coffee in morning), and trending items, increasing average check by 3-7%.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=drive+thru+AI+voice+ordering"

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-01",
     "text": "The Aztec Empire dominated central Mexico from Tenochtitlan , built on an island in Lake Texcoco — larger than any European city of its time",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-02",
     "text": "Population: 5 million before conquest → 1 million after",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.wiley.com/en-us/The+Aztecs%2C+3rd+Edition-p-9781405194976"

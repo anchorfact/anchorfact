@@ -1,7 +1,7 @@
 # AI for Remote Sensing: Foundation Models, Satellite Image Analysis, and Earth Observation
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Remote sensing AI transforms satellite pixels into actionable Earth intelligence — monitoring deforestation in real-time, mapping flood extent within hours of disaster, and classifying crops across continents. Foundation models pretrained on petabytes of Earth observation data are democratizing planetary-scale AI, enabling few-shot deployment for any location on Earth.

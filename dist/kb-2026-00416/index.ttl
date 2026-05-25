@@ -4,20 +4,27 @@
 <https://anchorfact.org/kb/kb-2026-00416>
   a schema:TechArticle ;
   schema:headline "Design Thinking" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.425" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00416>
-  schema:citation <https://www.harpercollins.com/products/change-by-design-tim-brown> .
+  schema:citation <https://www.harpercollins.com/products/change-by-design-tim-brown> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00416>
-  schema:citation <https://www.harpercollins.com/change-by-design/> .
+  schema:citation <https://www.harpercollins.com/change-by-design/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00416>
-  schema:citation <https://www.routledge.com/design-thinking/> .
+  schema:citation <https://www.routledge.com/design-thinking/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00416>
-  schema:citation <https://www.harpercollins.com/change-by-design/> .
+  schema:citation <https://www.harpercollins.com/change-by-design/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00416>
-  schema:citation <https://www.bloomsbury.com/design-thinking/> .
+  schema:citation <https://www.bloomsbury.com/design-thinking/> ;
+  af:sourceTier "C" .

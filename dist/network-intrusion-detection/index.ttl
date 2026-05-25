@@ -5,10 +5,14 @@
   a schema:article ;
   schema:headline "Network Intrusion Detection: AI-Powered Anomaly Detection and Zero-Day Threat Identification" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidenceScore "0.85" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/network-intrusion-detection>
-  schema:citation <https://www.nature.com/articles/s41598-025-97398-1> .
+  schema:citation <https://www.nature.com/articles/s41598-025-97398-1> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/network-intrusion-detection>
-  schema:citation <https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1625891/full> .
+  schema:citation <https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1625891/full> ;
+  af:sourceTier "S" .

@@ -1,7 +1,7 @@
 # Linked List
-Confidence: high
+Confidence: low (0.475) (verified)
 Last verified: 2026-05-24
-Generation: human_only
+Generation: ai_structured
 
 ## TL;DR
 

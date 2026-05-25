@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-warehouse-robotics-1",
     "text": "AI warehouse robotics (2020-2026): Amazon Robotics deploys 750,000+ robots across fulfillment centers -- autonomous mobile robots (Proteus, Hercules) for goods-to-person transport, robotic arms (Sparrow, Cardinal) for bin-picking using computer vision and suction/gripper end-effectors, and sortation systems. Amazon reports that robots have reduced fulfillment cost per unit by 20-40% and increased storage density by 40%.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=warehouse+robotics+AI+bin+picking+AMR"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-warehouse-robotics-2",
     "text": "Beyond Amazon: the warehouse robotics ecosystem (2023-2026) includes autonomous forklifts (Vecna Robotics, Seegrid, Fox Robotics) using SLAM + computer vision for pallet movement, autonomous mobile robots (Locus Robotics, 6 River Systems/Shopify, Fetch/Zebra) for order picking, and goods-to-person systems (AutoStore, fabric, Exotec). Computer vision for depalletizing and mixed-SKU picking uses deep learning for object detection, grasp planning, and quality inspection.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=robotic+grasping+warehouse+computer+vision"

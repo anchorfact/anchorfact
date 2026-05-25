@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/vaccine-development>
   a schema:Article ;
   schema:headline "Vaccine Development and Immunology" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.71" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/vaccine-development>
-  schema:citation <https://www.elsevier.com/books/plotkins-vaccines/plotkin/978-0-323-79058-1> .
+  schema:citation <https://www.elsevier.com/books/plotkins-vaccines/plotkin/978-0-323-79058-1> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/vaccine-development>
-  schema:citation <https://www.nature.com/articles/s41577-021-00544-x> .
+  schema:citation <https://www.nature.com/articles/s41577-021-00544-x> ;
+  af:sourceTier "A" .

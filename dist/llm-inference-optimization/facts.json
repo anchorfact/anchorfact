@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/f1",
     "text": "vLLM (Kwon et al. 2023, UC Berkeley, SOSP) introduces PagedAttention — a virtual memory-inspired attention algorithm that reduces memory waste from KV-cache fragmentation by 80%, achieving 24× higher throughput than HuggingFace Transformers.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2309.06180"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/f2",
     "text": "FlashAttention (Dao et al. 2022, NeurIPS) reduces attention memory from O(N²) to O(N) via IO-aware tiling, and FlashAttention-2 (2023) further optimizes parallelism, achieving 2-4× speedup with no approximation.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2205.14135"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/f3",
     "text": "LLM.int8() (Dettmers et al. 2022, NeurIPS) enables 8-bit matrix multiplication for transformers with zero performance degradation by handling outlier features in FP16 and the rest in INT8.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2208.07339"

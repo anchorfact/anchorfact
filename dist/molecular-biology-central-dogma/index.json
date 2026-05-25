@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/molecular-biology-central-dogma",
   "headline": "Molecular Biology: The Central Dogma",
   "description": "The Central Dogma describes the flow of genetic information from DNA to RNA to protein. CRISPR-Cas9 has revolutionized molecular biology by enabling precise genome editing in any organism.",
-  "dateCreated": "2026-05-25T02:46:04.610Z",
+  "dateCreated": "2026-05-24",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",
@@ -16,18 +16,50 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidence": "medium",
+  "anchorfact:confidenceScore": 0.65,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 0.9,
+      "source_count": 0.8,
+      "source_verified": 0.7,
+      "freshness": 0.3,
+      "decay": 0.30000000000000004,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "medium",
+    "confidence_score": 0.65,
+    "confidence_basis": "verified_sources",
+    "sources_total": 2,
+    "sources_verified": 1,
+    "sources_unreachable": 1,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "C",
+      "A"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": true,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "Molecular Biology of the Gene, 7th Edition",
-      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/molecular-biology-of-the-gene/P200000006955"
+      "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/molecular-biology-of-the-gene/P200000006955",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2013
     },
     {
       "@type": "CreativeWork",
       "name": "A Programmable Dual-RNA-Guided DNA Endonuclease in Adaptive Bacterial Immunity",
-      "sameAs": "https://www.science.org/doi/10.1126/science.1225829"
+      "sameAs": "https://www.science.org/doi/10.1126/science.1225829",
+      "anchorfact:sourceTier": "A",
+      "anchorfact:year": 2012
     }
   ]
 }

@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-transportation",
   "headline": "AI for Transportation: Traffic Flow Prediction, Intelligent Transportation Systems, and Smart Mobility",
   "description": "AI is the operating system for urban mobility — predicting traffic flow hours in advance, optimizing traffic signals in real-time, and coordinating multi-modal transportation networks. With cities losing $300B+ annually to congestion, AI-driven intelligent transportation systems (ITS) offer the most immediate path to reclaiming lost time, fuel, and productivity.",
-  "dateCreated": "2026-05-25T02:46:03.478Z",
+  "dateCreated": "2026-05-24",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",
@@ -17,17 +17,49 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidenceScore": 0.85,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 1,
+      "source_count": 0.8,
+      "source_verified": 1,
+      "freshness": 1,
+      "decay": 0.1,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "high",
+    "confidence_score": 0.85,
+    "confidence_basis": "verified_sources",
+    "sources_total": 2,
+    "sources_verified": 1,
+    "sources_unreachable": 1,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "S",
+      "A"
+    ],
+    "sources_has_doi": true,
+    "sources_has_url": true,
+    "article_has_disputed": false,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "An efficient intelligent transportation system for traffic flow prediction and congestion management",
-      "sameAs": "https://www.nature.com/articles/s41598-025-10794-5"
+      "sameAs": "https://www.nature.com/articles/s41598-025-10794-5",
+      "anchorfact:sourceTier": "S",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "Real-time traffic flow optimization using large language models and deep reinforcement learning",
-      "sameAs": "https://www.sciencedirect.com/science/article/pii/S156849462501230X"
+      "sameAs": "https://www.sciencedirect.com/science/article/pii/S156849462501230X",
+      "anchorfact:sourceTier": "A",
+      "anchorfact:year": 2025
     }
   ]
 }

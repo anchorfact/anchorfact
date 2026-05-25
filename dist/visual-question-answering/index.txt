@@ -1,7 +1,7 @@
 # Visual Question Answering: Vision-Language Models for Image Understanding and Reasoning
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Visual Question Answering (VQA) tests whether AI truly understands images — given a photo and a natural language question, the model must provide the correct answer. This requires integrating computer vision (what objects are present, their spatial relationships) with language understanding (parsing the question, reasoning about its intent). VQA is the quintessential multimodal AI benchmark.

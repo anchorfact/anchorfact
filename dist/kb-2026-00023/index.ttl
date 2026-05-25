@@ -4,17 +4,23 @@
 <https://anchorfact.org/kb/kb-2026-00023>
   a schema:TechArticle ;
   schema:headline "React" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00023>
-  schema:citation <https://react.dev/> .
+  schema:citation <https://react.dev/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00023>
-  schema:citation <https://github.com/facebook/react> .
+  schema:citation <https://github.com/facebook/react> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00023>
-  schema:citation <https://www.oreilly.com/react/> .
+  schema:citation <https://www.oreilly.com/react/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00023>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.frontend> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.frontend> ;
+  af:sourceTier "C" .

@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/chronic-disease-prevention>
   a schema:Article ;
   schema:headline "Chronic Disease Prevention Strategies" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.5" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/chronic-disease-prevention>
-  schema:citation <https://www.mheducation.com/highered/product/preventive-medicine-public-health-wallace/M9781260143683.html> .
+  schema:citation <https://www.mheducation.com/highered/product/preventive-medicine-public-health-wallace/M9781260143683.html> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/chronic-disease-prevention>
-  schema:citation <https://www.who.int/publications/i/item/9789240061798> .
+  schema:citation <https://www.who.int/publications/i/item/9789240061798> ;
+  af:sourceTier "C" .

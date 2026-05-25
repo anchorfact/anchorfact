@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00104>
   a schema:TechArticle ;
   schema:headline "Performance API" ;
-  af:confidence "high" ;
+  af:confidence "medium" ;
+  af:confidenceScore "0.735" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00104>
-  schema:citation <https://www.w3.org/TR/performance-timeline/> .
+  schema:citation <https://www.w3.org/TR/performance-timeline/> ;
+  af:sourceTier "S" .

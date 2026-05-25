@@ -1,7 +1,7 @@
 # Object Detection: YOLO, R-CNN, and DETR
-Confidence: high
+Confidence: medium (0.72) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Object detection identifies and localizes objects within images. Two-stage detectors (R-CNN family) prioritize accuracy; single-stage detectors (YOLO, SSD) prioritize speed; transformer-based detectors (DETR) simplify the pipeline.

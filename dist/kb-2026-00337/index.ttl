@@ -4,17 +4,23 @@
 <https://anchorfact.org/kb/kb-2026-00337>
   a schema:TechArticle ;
   schema:headline "Cell Structure" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00337>
-  schema:citation <https://wwnorton.com/books/9780393884821> .
+  schema:citation <https://wwnorton.com/books/9780393884821> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00337>
-  schema:citation <https://wwnorton.com/mboc/> .
+  schema:citation <https://wwnorton.com/mboc/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00337>
-  schema:citation <https://doi.org/10.1038/s41580-2025-cell> .
+  schema:citation <https://doi.org/10.1038/s41580-2025-cell> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00337>
-  schema:citation <https://doi.org/10.1038/s41580-2025-cell> .
+  schema:citation <https://doi.org/10.1038/s41580-2025-cell> ;
+  af:sourceTier "C" .

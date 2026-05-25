@@ -5,10 +5,14 @@
   a schema:article ;
   schema:headline "AI for Logistics: Last-Mile Delivery, Fleet Routing, and Warehouse Automation" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidenceScore "0.85" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-for-logistics>
-  schema:citation <https://optimization-online.org/wp-content/uploads/2025/12/GalandeJozaniBuyuktahtakin2025_AISupplyChain_OptOnline.pdf> .
+  schema:citation <https://optimization-online.org/wp-content/uploads/2025/12/GalandeJozaniBuyuktahtakin2025_AISupplyChain_OptOnline.pdf> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-for-logistics>
-  schema:citation <https://link.springer.com/article/10.1007/s10696-025-09653-2> .
+  schema:citation <https://link.springer.com/article/10.1007/s10696-025-09653-2> ;
+  af:sourceTier "S" .

@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-drone-autonomy>
   a schema:article ;
   schema:headline "AI for Drone Autonomy: Autonomous Navigation, Swarm Coordination, and Aerial Robotics" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-drone-autonomy>
-  schema:citation <https://arxiv.org/search/?query=drone+reinforcement+learning+autonomous+navigation> .
+  schema:citation <https://arxiv.org/search/?query=drone+reinforcement+learning+autonomous+navigation> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-drone-autonomy>
-  schema:citation <https://arxiv.org/search/?query=drone+swarm+MARL+coordination> .
+  schema:citation <https://arxiv.org/search/?query=drone+swarm+MARL+coordination> ;
+  af:sourceTier "A" .

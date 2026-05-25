@@ -1,7 +1,7 @@
 # AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is the silent coach on every customer service call -- transcribing conversations in real-time, suggesting the best responses, detecting customer frustration, and scoring quality across every interaction. From Cresta to Gong, AI transforms call centers from cost centers into intelligence hubs.

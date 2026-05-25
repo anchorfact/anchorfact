@@ -1,7 +1,7 @@
 # AI for Humanitarian Aid: Crisis Mapping, Damage Assessment, and Disaster Response Optimization
-Confidence: high
+Confidence: medium (0.775) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 When disaster strikes, AI helps humanitarian organizations see the impact, coordinate the response, and deliver aid more efficiently. Satellite imagery AI detects damaged buildings within hours of an earthquake. NLP models scan social media for real-time crisis maps. Reinforcement learning optimizes routing of relief trucks through damaged infrastructure. As climate change intensifies disasters, AI is becoming a critical capability for the humanitarian sector.

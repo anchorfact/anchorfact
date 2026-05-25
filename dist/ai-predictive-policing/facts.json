@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-predictive-policing-1",
     "text": "AI predictive policing (2015-2025): ML models predict crime hotspots (spatio-temporal forecasting -- where and when crimes are likely to occur) using historical crime data, temporal patterns (time of day, day of week, seasonality), environmental features (lighting, foot traffic, business density), and socioeconomic indicators. Early systems (PredPol, 2012) used self-exciting point processes (Hawkes process) and kernel density estimation. Modern approaches use GNNs modeling city grid connectivity and temporal transformers.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=predictive+policing+machine+learning+fairness"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-predictive-policing-2",
     "text": "Predictive policing controversy: studies (RAND, 2018-2024) found that predictive policing can create feedback loops -- police are sent to AI-predicted areas, make more arrests (not necessarily more crime), feeding back into the model and reinforcing over-policing of historically targeted communities. Cities (Santa Cruz, Los Angeles, Chicago) ended predictive policing programs due to bias and civil liberties concerns. The 2024 consensus: AI should augment rather than direct policing -- providing decision support for resource allocation while maintaining human judgment and accountability.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=algorithmic+bias+predictive+policing"

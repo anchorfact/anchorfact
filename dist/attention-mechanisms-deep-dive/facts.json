@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-attn-1",
     "text": "Scaled Dot-Product Attention computes Attention(Q,K,V) = softmax(QK^T/√d_k)V, where the scaling factor √d_k prevents the dot products from growing too large in magnitude.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-attn-2",
     "text": "Multi-Head Attention runs multiple attention operations in parallel, allowing the model to jointly attend to information from different representation subspaces at different positions.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-attn-3",
     "text": "FlashAttention (Dao et al. 2022) reduces the memory footprint of attention from O(N²) to O(N) through IO-aware tiling and recomputation, enabling training on longer sequences.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2205.14135"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-attn-4",
     "text": "Self-attention computes attention where Q, K, V all come from the same sequence (encoder). Cross-attention computes attention where Q comes from one sequence and K, V from another (decoder-encoder).",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/1409.0473"

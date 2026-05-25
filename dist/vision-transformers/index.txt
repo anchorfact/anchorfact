@@ -1,7 +1,7 @@
 # Vision Transformers: ViT, DINOv2, and the End of CNNs
-Confidence: high
+Confidence: medium (0.76) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Vision Transformers (ViTs) have largely replaced CNNs as the dominant architecture in computer vision. DINOv2 demonstrated that self-supervised ViTs produce universal visual features, while SAM 2 extends segmentation to video.

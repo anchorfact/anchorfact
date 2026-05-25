@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-01",
     "text": "TikTok Shop generated over $15 billion GMV in 2024",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://hbr.org/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-02",
     "text": "Launched in Southeast Asia , expanded to the UK and US",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://hbr.org/"

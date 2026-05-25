@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-music-generation-1",
     "text": "Suno v5 (2025) produces broadcast-quality music from text prompts with 8-minute tracks, multi-language vocals (English, Chinese, Japanese, Spanish), genre-specific accuracy, and studio-quality 48kHz output — positioning AI as a production-ready music creation tool.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2301.11325"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-music-generation-2",
     "text": "MusicLM (Agostinelli et al., Google, 2023) generates high-fidelity music from text descriptions by treating music generation as a hierarchical sequence-to-sequence modeling problem — combining AudioLM's acoustic tokenization with MuLan's text-music joint embedding.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://suno.com/blog/v5"

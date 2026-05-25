@@ -1,7 +1,7 @@
 # AI Governance: Risk Frameworks, Audits, and International Cooperation
-Confidence: high
+Confidence: medium (0.795) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI governance has transitioned from voluntary principles to binding regulation and international cooperation. The Bletchley Declaration, NIST AI RMF, and EU AI Act represent landmark milestones in the emerging global AI governance architecture.

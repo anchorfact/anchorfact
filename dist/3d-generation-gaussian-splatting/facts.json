@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/f1",
     "text": "3D Gaussian Splatting (Kerbl et al. 2023, Inria, SIGGRAPH Best Paper) represents 3D scenes as collections of anisotropic 3D Gaussians optimized via gradient descent, achieving state-of-the-art quality at real-time rendering speeds.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2308.04079"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/f2",
     "text": "DreamFusion (Poole et al. 2022, Google) pioneered text-to-3D generation by distilling a pretrained 2D diffusion model (Imagen) into a NeRF, known as Score Distillation Sampling (SDS).",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2209.14988"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/f3",
     "text": "The transition from NeRF to 3D Gaussian Splatting represents a paradigm shift in neural rendering — from implicit MLP-based representations to explicit, rasterizable primitives optimized for real-time performance.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.3390/s25185748"

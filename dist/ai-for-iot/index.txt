@@ -1,7 +1,7 @@
 # AI for the Internet of Things: Federated Learning, TinyML, and Intelligent Edge Devices
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI for IoT brings intelligence to the physical world — from smart thermostats learning your preferences to industrial sensors predicting equipment failure. Federated learning enables AI training across millions of devices without centralizing data, while TinyML compresses models to run on microcontrollers smaller than a grain of rice.

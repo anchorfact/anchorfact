@@ -4,20 +4,27 @@
 <https://anchorfact.org/kb/kb-2026-00346>
   a schema:TechArticle ;
   schema:headline "Classical Music Periods" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00346>
-  schema:citation <https://wwnorton.com/books/9780393317121> .
+  schema:citation <https://wwnorton.com/books/9780393317121> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00346>
-  schema:citation <https://www.dk.com/classical-music/> .
+  schema:citation <https://www.dk.com/classical-music/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00346>
-  schema:citation <https://us.macmillan.com/rest-is-noise/> .
+  schema:citation <https://us.macmillan.com/rest-is-noise/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00346>
-  schema:citation <https://www.dk.com/classical-music/> .
+  schema:citation <https://www.dk.com/classical-music/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00346>
-  schema:citation <https://us.macmillan.com/rest-is-noise/> .
+  schema:citation <https://us.macmillan.com/rest-is-noise/> ;
+  af:sourceTier "C" .

@@ -1,7 +1,7 @@
 # Long-Context Language Models: Beyond 1M Tokens
-Confidence: high
+Confidence: low (0.585) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Modern LLMs process context windows of 100K-2M tokens — entire books, codebases, or years of conversation history. Gemini 1.5 Pro demonstrated >99% retrieval accuracy across 1M tokens, proving usable long-context capability.

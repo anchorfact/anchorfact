@@ -1,7 +1,7 @@
 # Data Science: Methods, Tools, and Best Practices
-Confidence: high
+Confidence: low (0.475) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Data science combines statistics, computer science, and domain expertise to extract insights from data. The modern workflow — from data wrangling through machine learning to deployment — is supported by Python's ecosystem and cloud infrastructure.

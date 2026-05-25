@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/neural-style-transfer>
   a schema:article ;
   schema:headline "Neural Style Transfer: Artistic Rendering, Image-to-Image Translation, and Creative AI" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.775" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/neural-style-transfer>
-  schema:citation <https://arxiv.org/abs/2506.19278> .
+  schema:citation <https://arxiv.org/abs/2506.19278> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/neural-style-transfer>
-  schema:citation <https://www.sciencedirect.com/science/article/pii/S092523122500102X> .
+  schema:citation <https://www.sciencedirect.com/science/article/pii/S092523122500102X> ;
+  af:sourceTier "S" .

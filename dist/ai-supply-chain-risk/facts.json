@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-supply-chain-risk-1",
     "text": "AI supply chain risk management (2023-2026): (1) Disruption prediction -- NLP monitors news, weather, geopolitical events, and social media for signals of supply disruption (factory fire, port strike, natural disaster). Resilinc and Riskmethods (now Sphera) provide AI-powered alerting across multi-tier supply chains; (2) Supplier risk -- ML scores supplier financial health (credit ratings, payment patterns), quality (defect rates, audit scores), and geopolitical exposure (sanctions, trade restrictions).",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=supply+chain+risk+AI+disruption+prediction"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-supply-chain-risk-2",
     "text": "ML for supply chain resilience (2024-2026): what-if simulation using digital twin supply chain models tests disruption scenarios (\"what happens if the Shanghai port closes for 2 weeks?\") and recommends mitigation strategies (alternate suppliers, safety stock buffer, rerouting). Multi-echelon inventory optimization with disruption-aware demand forecasting reduces stockout risk by 30-40% during disruptions while minimizing excess inventory during normal operations.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=supply+chain+digital+twin+simulation"

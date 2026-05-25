@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/deep-reinforcement-learning-algorithms>
   a schema:article ;
   schema:headline "Deep Reinforcement Learning Algorithms: PPO, SAC, Dreamer, and Decision Transformer" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.78" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/deep-reinforcement-learning-algorithms>
-  schema:citation <https://arxiv.org/abs/1707.06347> .
+  schema:citation <https://arxiv.org/abs/1707.06347> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/deep-reinforcement-learning-algorithms>
-  schema:citation <https://arxiv.org/abs/2301.04104> .
+  schema:citation <https://arxiv.org/abs/2301.04104> ;
+  af:sourceTier "A" .

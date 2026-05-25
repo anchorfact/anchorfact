@@ -1,7 +1,7 @@
 # Machine Translation: Neural MT, LLM-Based Translation, and Multilingual Quality at Scale
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Machine translation has advanced from phrase-based statistical models to neural sequence-to-sequence to LLM-based translation spanning 200 languages. The Nature-published NLLB model brings translation quality to low-resource languages for the first time, while LLMs challenge the need for dedicated translation systems altogether.

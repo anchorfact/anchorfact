@@ -4,20 +4,27 @@
 <https://anchorfact.org/kb/photography-fundamentals>
   a schema:Article ;
   schema:headline "Photography Fundamentals and Composition" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/photography-fundamentals>
-  schema:citation <https://www.penguinrandomhouse.com/books/224957/understanding-exposure-4th-edition-by-bryan-peterson/> .
+  schema:citation <https://www.penguinrandomhouse.com/books/224957/understanding-exposure-4th-edition-by-bryan-peterson/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/photography-fundamentals>
-  schema:citation <https://www.moma.org/calendar/exhibitions/62> .
+  schema:citation <https://www.moma.org/calendar/exhibitions/62> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/photography-fundamentals>
-  schema:citation <https://www.moma.org/calendar/exhibitions/2425> .
+  schema:citation <https://www.moma.org/calendar/exhibitions/2425> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/photography-fundamentals>
-  schema:citation <https://www.ilexinstant.com/photographers-eye/> .
+  schema:citation <https://www.ilexinstant.com/photographers-eye/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/photography-fundamentals>
-  schema:citation <https://www.routledge.com/photography-critical/> .
+  schema:citation <https://www.routledge.com/photography-critical/> ;
+  af:sourceTier "C" .

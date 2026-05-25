@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-001",
     "text": "1 Forward Rendering（前向渲染）\n**原理**：对每个物体，遍历所有光源计算光照\n``` 对于每个物体： 对于每个像素： 对于每个光源： 计算光照贡献 累加所有光照 ```\n**优点**： - 简单直观 - 支持透明物体 - 内存占用低\n**缺点**： - 光源数量增加时性能急剧下降（O(n×m)） - 重复计算（多个物体在同一像素）\n**适用场景**： - 移动游戏 - 光源少的场景 - 需要大量透明物体的游戏\n### 1.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-002",
     "text": "2 Deferred Rendering（延迟渲染）\n**原理**：先渲染几何信息到G-Buffer，再统一计算光照\n``` Pass 1 - 几何 Pass： 渲染所有物体到 G-Buffer G-Buffer 包含：位置、法线、颜色、材质属性\nPass 2 - 光照 Pass： 对每个光源： 在光源影响范围内计算光照 读取 G-Buffer 数据 ```\n**优点**： - 光源数量对性能影响小 - 每个像素只计算一次几何 - 适合大量光源场景\n**缺点**： - 内存占用高（G-Buffer） - 不支持 MSAA（多重采样抗锯齿） - 透明物体需要单独处理\n**适用场",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-003",
     "text": "3 Forward+ / Tiled Forward Rendering\n**原理**：结合 Forward 和 Deferred 的优点\n``` 1.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-004",
     "text": "前向渲染，但每个像素只计算相关光源 ```\n**优点**： - 支持大量光源（比 Forward 多） - 支持 MSAA - 支持透明物体 - 内存占用适中\n**适用场景**： - 现代游戏的主流选择 - Unity URP、Unreal 默认管线\n### 1.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -49,6 +61,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-005",
     "text": "4 Clustered Rendering\n**原理**：在 Tile 的基础上增加深度维度\n``` 1.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"

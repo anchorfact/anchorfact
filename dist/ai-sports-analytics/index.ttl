@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-sports-analytics>
   a schema:article ;
   schema:headline "AI for Sports Analytics: Player Tracking, Performance Prediction, and Tactical Analysis" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-sports-analytics>
-  schema:citation <https://arxiv.org/search/?query=sports+analytics+computer+vision+tracking> .
+  schema:citation <https://arxiv.org/search/?query=sports+analytics+computer+vision+tracking> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-sports-analytics>
-  schema:citation <https://arxiv.org/search/?query=reinforcement+learning+sports+tactics> .
+  schema:citation <https://arxiv.org/search/?query=reinforcement+learning+sports+tactics> ;
+  af:sourceTier "A" .

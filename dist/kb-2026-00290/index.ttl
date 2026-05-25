@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00290>
   a schema:TechArticle ;
   schema:headline "Ruby on Rails" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.5" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00290>
-  schema:citation <https://guides.rubyonrails.org/> .
+  schema:citation <https://guides.rubyonrails.org/> ;
+  af:sourceTier "C" .

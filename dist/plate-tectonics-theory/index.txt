@@ -1,7 +1,7 @@
 # Plate Tectonics: The Unifying Theory of Earth Sciences
-Confidence: high
+Confidence: low (0.55) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Plate tectonics is the unifying theory of geology, explaining earthquakes, volcanoes, mountain building, and fossil distribution. Earth is unique in the solar system in having active plate tectonics.

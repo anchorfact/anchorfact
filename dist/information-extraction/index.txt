@@ -1,7 +1,7 @@
 # Information Extraction: NER, Relation Extraction, and LLM-Powered IE
-Confidence: high
+Confidence: medium (0.78) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Information Extraction (IE) transforms unstructured text into structured knowledge. Named Entity Recognition identifies people, organizations, and locations; Relation Extraction discovers connections between them. Modern LLMs have fundamentally changed IE — from specialized models to unified generative approaches.

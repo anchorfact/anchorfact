@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-for-climate-science>
   a schema:article ;
   schema:headline "AI for Climate Science: Weather Prediction and Earth System Modeling" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.73" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-for-climate-science>
-  schema:citation <https://www.science.org/doi/10.1126/science.adi2336> .
+  schema:citation <https://www.science.org/doi/10.1126/science.adi2336> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-for-climate-science>
-  schema:citation <https://www.nature.com/articles/s41586-023-06185-3> .
+  schema:citation <https://www.nature.com/articles/s41586-023-06185-3> ;
+  af:sourceTier "A" .

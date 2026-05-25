@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-sci-stat-001",
     "text": "Central Limit Theorem: sampling distribution approaches normality as N increases.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.cengage.com/c/statistical-inference-2e-casella/9780534243128/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-sci-stat-002",
     "text": "Bayes' theorem (1763): posterior ∝ likelihood × prior; foundation of Bayesian statistics.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.1201/b16018"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-sci-stat-003",
     "text": "Pearson's r (1895) remains the standard linear correlation measure.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.2307/2685263"

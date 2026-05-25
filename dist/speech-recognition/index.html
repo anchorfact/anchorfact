@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Speech Recognition: From HMMs to Whisper — AnchorFact</title></head>
-<body><article>## TL;DR<br>
-Speech recognition converts audio signals to text. Modern end-to-end approaches — CTC, RNN-Transducer, Attention-based Encoder-Decoder — have replaced traditional HMM-GMM pipelines, with Whisper achieving near-human performance.<br>
-<br>
-## Core Explanation<br>
-Traditional pipeline: feature extraction (MFCCs) → acoustic model (phoneme prediction) → pronunciation model (phoneme-to-word) → language model (word sequence scoring). End-to-end models collapse these into a single neural network trained on audio-text pairs.<br>
-<br>
-## Detailed Analysis<br>
-Whisper's architecture: encoder-decoder transformer trained on diverse data (different recording conditions, accents, languages). Its multitask training format (transcribe/translate/language identification) improves robustness. Wav2Vec 2.0 (Facebook) uses self-supervised pretraining on raw audio followed by fine-tuning with limited labeled data.<br>
-<br>
-## Further Reading<br>
-- OpenAI Whisper GitHub<br>
-- Kaldi ASR Toolkit<br>
+<head>
+  <meta charset="utf-8">
+  <title>Speech Recognition: From HMMs to Whisper — AnchorFact</title>
+  <meta name="anchorfact:confidence" content="medium (0.76)">
+  <meta name="anchorfact:generation" content="ai_structured">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/speech-recognition","headline":"Speech Recognition: From HMMs to Whisper","description":"Speech recognition converts audio signals to text. Modern end-to-end approaches — CTC, RNN-Transducer, Attention-based Encoder-Decoder — have replaced traditional HMM-GMM pipelines, with Whisper achieving near-human performance.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.76,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.9,"freshness":0.9,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.76,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":2,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["A","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Robust Speech Recognition via Large-Scale Weak Supervision (Whisper)","sameAs":"https://arxiv.org/abs/2212.04356","anchorfact:sourceTier":"A","anchorfact:year":2023},{"@type":"CreativeWork","name":"Connectionist Temporal Classification","sameAs":"https://www.cs.toronto.edu/~graves/icml_2006.pdf","anchorfact:sourceTier":"A","anchorfact:year":2006}]}</script>
+</head>
+<body><article>## TL;DR<br>
+Speech recognition converts audio signals to text. Modern end-to-end approaches — CTC, RNN-Transducer, Attention-based Encoder-Decoder — have replaced traditional HMM-GMM pipelines, with Whisper achieving near-human performance.<br>
+<br>
+## Core Explanation<br>
+Traditional pipeline: feature extraction (MFCCs) → acoustic model (phoneme prediction) → pronunciation model (phoneme-to-word) → language model (word sequence scoring). End-to-end models collapse these into a single neural network trained on audio-text pairs.<br>
+<br>
+## Detailed Analysis<br>
+Whisper's architecture: encoder-decoder transformer trained on diverse data (different recording conditions, accents, languages). Its multitask training format (transcribe/translate/language identification) improves robustness. Wav2Vec 2.0 (Facebook) uses self-supervised pretraining on raw audio followed by fine-tuning with limited labeled data.<br>
+<br>
+## Further Reading<br>
+- OpenAI Whisper GitHub<br>
+- Kaldi ASR Toolkit<br>
 - Hugging Face: Automatic Speech Recognition</article></body>
 </html>

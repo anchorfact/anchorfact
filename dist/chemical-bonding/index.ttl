@@ -4,17 +4,23 @@
 <https://anchorfact.org/kb/chemical-bonding>
   a schema:Article ;
   schema:headline "Chemical Bonding: From Orbitals to Molecular Structure" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.845" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/chemical-bonding>
-  schema:citation <https://www.pearson.com/en-us/subject-catalog/p/chemistry-the-central-science/P200000007065> .
+  schema:citation <https://www.pearson.com/en-us/subject-catalog/p/chemistry-the-central-science/P200000007065> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/chemical-bonding>
-  schema:citation <https://iupac.org/what-we-do/periodic-table-of-elements/> .
+  schema:citation <https://iupac.org/what-we-do/periodic-table-of-elements/> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/chemical-bonding>
-  schema:citation <https://global.oup.com/chemical-bonding/> .
+  schema:citation <https://global.oup.com/chemical-bonding/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/chemical-bonding>
-  schema:citation <https://www.cornellpress.cornell.edu/chemical-bond/> .
+  schema:citation <https://www.cornellpress.cornell.edu/chemical-bond/> ;
+  af:sourceTier "C" .

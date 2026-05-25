@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-code-translation-1",
     "text": "AI code translation (2023-2026): LLMs translate code between programming languages (COBOL to Java, Python to Rust, JavaScript to TypeScript). IBM watsonx Code Assistant for Z (2023-2025) uses generative AI to modernize mainframe COBOL applications to Java -- a $50B+ market given that 220B+ lines of COBOL still run 70% of global financial transactions. Amazon Code Transformation (2024) translates Java 8/11 to Java 17.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=code+translation+LLM+legacy+modernization"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-code-translation-2",
     "text": "AI-assisted legacy modernization: beyond line-by-line translation, AI restructures monolithic architectures into microservices, converts outdated frameworks to modern equivalents, and generates tests for migrated code. Google (2024), Meta (2023-2025), and Microsoft (2024) deploy internal AI tools for large-scale codebase modernization -- Meta's CodeCompose and Sapienz systems have modernized millions of lines of code, reducing migration timelines from years to months.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=LLM+program+translation+transpilation"

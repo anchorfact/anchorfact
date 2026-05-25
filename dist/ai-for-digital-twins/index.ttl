@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-for-digital-twins>
   a schema:article ;
   schema:headline "AI for Digital Twins: Real-Time Simulation, Predictive Maintenance, and System Optimization" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.74" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-for-digital-twins>
-  schema:citation <https://www.nvidia.com/en-us/omniverse/digital-twins/> .
+  schema:citation <https://www.nvidia.com/en-us/omniverse/digital-twins/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/ai-for-digital-twins>
-  schema:citation <https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1655470/full> .
+  schema:citation <https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1655470/full> ;
+  af:sourceTier "A" .

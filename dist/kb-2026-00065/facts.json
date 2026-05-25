@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-01",
     "text": "Linux is an open-source, Unix-like operating system kernel created by Linus Torvalds in 1991",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.kernel.org/doc/html/latest/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-02",
     "text": "Combined with GNU utilities, it forms the GNU/Linux operating system that powers 100% of the TOP500 supercomputers, 96.3% of the top 1 million web servers, all Android devices , and the majority of cloud infrastructure",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.kernel.org/doc/html/latest/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-03",
     "text": "Linux is licensed under GPLv2 and maintained by thousands of contributors worldwide, with Linus Torvalds remaining the principal maintainer as of 2026",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.kernel.org/doc/html/latest/"

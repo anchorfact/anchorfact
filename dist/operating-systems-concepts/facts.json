@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-cs-os-001",
     "text": "Tanenbaum's MINIX (1987) inspired Linus Torvalds' creation of Linux (1991).",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.pearson.com/en-us/subject-catalog/p/modern-operating-systems/P200000003285"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-cs-os-002",
     "text": "Unix (Bell Labs, Thompson & Ritchie 1969-71): hierarchical FS, pipes, shell scripting.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.1145/361011.361061"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-cs-os-003",
     "text": "Process scheduling: FCFS, SJF, Round Robin, Priority, Multilevel Queue algorithms.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.wiley.com/en-us/Operating+System+Concepts%2C+10th+Edition-p-9781119800361"

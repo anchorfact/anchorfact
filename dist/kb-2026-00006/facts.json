@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-ai-01",
     "text": "Retrieval-Augmented Generation is an AI architecture introduced by Lewis et al",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.48550/arXiv.2005.11401"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-ai-02",
     "text": "RAG underpins AI search engines , enterprise knowledge bases, and research assistants — making it the dominant architecture for production AI systems requiring factual accuracy",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.48550/arXiv.2005.11401"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-ai-03",
     "text": "A model trained in early 2025 cannot answer questions about events after that date; a general-purpose model lacks domain-specific knowledge about a company's internal documentation",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.48550/arXiv.2005.11401"

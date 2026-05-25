@@ -1,7 +1,7 @@
 # The Scientific Method: From Hypothesis to Theory
-Confidence: high
+Confidence: low (0.49) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 The scientific method — observation→question→hypothesis→experiment→analysis→conclusion — is humanity's most reliable path to knowledge. Its power lies not in proving theories true, but in systematically eliminating false ones.

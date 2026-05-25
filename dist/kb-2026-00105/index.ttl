@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00105>
   a schema:TechArticle ;
   schema:headline "Fullscreen API" ;
-  af:confidence "high" ;
+  af:confidence "medium" ;
+  af:confidenceScore "0.735" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00105>
-  schema:citation <https://fullscreen.spec.whatwg.org/> .
+  schema:citation <https://fullscreen.spec.whatwg.org/> ;
+  af:sourceTier "S" .

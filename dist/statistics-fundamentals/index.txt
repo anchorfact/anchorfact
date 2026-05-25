@@ -1,7 +1,7 @@
 # Statistics: Probability, Inference, and Modeling
-Confidence: high
+Confidence: low (0.55) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Statistics provides the mathematical framework for drawing conclusions from data. Probability quantifies uncertainty; hypothesis testing evaluates evidence; regression models relationships. The Bayesian-frequentist debate reflects two valid philosophies of inference.

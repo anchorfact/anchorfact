@@ -4,20 +4,27 @@
 <https://anchorfact.org/kb/kb-2026-00404>
   a schema:TechArticle ;
   schema:headline "Civil Rights Movement" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00404>
-  schema:citation <https://www.simonandschuster.com/books/Parting-the-Waters/Taylor-Branch/9780671687427> .
+  schema:citation <https://www.simonandschuster.com/books/Parting-the-Waters/Taylor-Branch/9780671687427> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00404>
-  schema:citation <https://www.simonandschuster.com/civil-rights/> .
+  schema:citation <https://www.simonandschuster.com/civil-rights/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00404>
-  schema:citation <https://global.oup.com/vsi-civil-rights/> .
+  schema:citation <https://global.oup.com/vsi-civil-rights/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00404>
-  schema:citation <https://www.simonandschuster.com/civil-rights/> .
+  schema:citation <https://www.simonandschuster.com/civil-rights/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00404>
-  schema:citation <https://www.simonandschuster.com/civil-rights/> .
+  schema:citation <https://www.simonandschuster.com/civil-rights/> ;
+  af:sourceTier "C" .

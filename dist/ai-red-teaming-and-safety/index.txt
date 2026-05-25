@@ -1,7 +1,7 @@
 # AI Red Teaming: Security Testing for Language Models
-Confidence: high
+Confidence: medium (0.805) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI red teaming applies adversarial testing methodologies to AI systems — probing for jailbreaks, prompt injection, bias exploitation, and data leakage. Microsoft, Anthropic, and OWASP have established red teaming as a standard practice for responsible AI deployment.

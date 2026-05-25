@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00333>
   a schema:TechArticle ;
   schema:headline "Theory of Relativity" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.255" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00333>
-  schema:citation <https://www.gutenberg.org/ebooks/5001> .
+  schema:citation <https://www.gutenberg.org/ebooks/5001> ;
+  af:sourceTier "C" .

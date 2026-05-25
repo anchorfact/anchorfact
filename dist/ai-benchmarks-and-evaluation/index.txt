@@ -1,7 +1,7 @@
 # AI Benchmarks: MMLU, SWE-bench, and How We Measure Intelligence
-Confidence: high
+Confidence: medium (0.76) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI benchmarks measure progress but are targets as much as tests. MMLU evaluates knowledge; HumanEval tests coding; SWE-bench measures real engineering; ARC-AGI probes abstraction. As models saturate existing benchmarks, new harder ones emerge (GPQA, Humanity's Last Exam).

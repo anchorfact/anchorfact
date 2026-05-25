@@ -1,7 +1,7 @@
 # Tokenisation via Convex Relaxations
-Confidence: medium
-Last verified: undefined
-Generation: undefined
+Confidence: low (0) (estimated)
+Last verified: N/A
+Generation: ai_structured
 
 
 # Tokenisation via Convex Relaxations

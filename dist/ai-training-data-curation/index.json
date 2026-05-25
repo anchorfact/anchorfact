@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-training-data-curation",
   "headline": "AI Training Data Curation: Quality at Scale",
   "description": "Training data quality is now recognized as the dominant factor in AI model performance. Data curation — filtering, deduplication, quality scoring, and mixture design — has become a first-class engineering discipline.",
-  "dateCreated": "2026-05-25T02:46:03.565Z",
+  "dateCreated": "2026-05-24",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",
@@ -16,18 +16,50 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidence": "medium",
+  "anchorfact:confidenceScore": 0.76,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 0.9,
+      "source_count": 0.8,
+      "source_verified": 0.9,
+      "freshness": 0.9,
+      "decay": 0.30000000000000004,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "medium",
+    "confidence_score": 0.76,
+    "confidence_basis": "verified_sources",
+    "sources_total": 2,
+    "sources_verified": 2,
+    "sources_unreachable": 0,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "A",
+      "C"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": true,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "FineWeb: Decanting the Web for the Finest Text Data at Scale",
-      "sameAs": "https://arxiv.org/abs/2406.17557"
+      "sameAs": "https://arxiv.org/abs/2406.17557",
+      "anchorfact:sourceTier": "A",
+      "anchorfact:year": 2024
     },
     {
       "@type": "CreativeWork",
       "name": "NVIDIA NeMo Curator: Scalable Data Pre-Processing",
-      "sameAs": "https://github.com/NVIDIA-NeMo/Curator"
+      "sameAs": "https://github.com/NVIDIA-NeMo/Curator",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2024
     }
   ]
 }

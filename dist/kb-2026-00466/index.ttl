@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00466>
   a schema:TechArticle ;
   schema:headline "Enlightenment Era" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00466>
-  schema:citation <https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A> .
+  schema:citation <https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00466>
-  schema:citation <https://global.oup.com/vsi-enlightenment/> .
+  schema:citation <https://global.oup.com/vsi-enlightenment/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00466>
-  schema:citation <https://www.harpercollins.com/enlightenment/> .
+  schema:citation <https://www.harpercollins.com/enlightenment/> ;
+  af:sourceTier "C" .

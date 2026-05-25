@@ -1,7 +1,7 @@
 # AI for Fleet Management: Predictive Maintenance, Route Optimization, and Telematics
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI fleet management transforms trucks into intelligent assets -- predicting breakdowns before they happen, optimizing routes in real-time, and scoring driver safety. From Samsara's 40,000+ fleets to UPS saving millions on fuel, AI makes transportation safer, cheaper, and greener.

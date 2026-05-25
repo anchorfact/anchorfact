@@ -1,7 +1,7 @@
 # Dropout and Regularization Techniques
-Confidence: high
+Confidence: medium (0.7) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Regularization prevents neural networks from memorizing training data instead of learning generalizable patterns. Dropout, weight decay, data augmentation, and early stopping are the primary techniques.

@@ -5,10 +5,14 @@
   a schema:article ;
   schema:headline "Decentralized AI: Distributed Inference, Peer-to-Peer Networks, and Blockchain Integration" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidenceScore "0.85" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/decentralized-ai>
-  schema:citation <https://www.mdpi.com/2078-2489/16/9/765> .
+  schema:citation <https://www.mdpi.com/2078-2489/16/9/765> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/decentralized-ai>
-  schema:citation <https://arxiv.org/abs/2402.02885> .
+  schema:citation <https://arxiv.org/abs/2402.02885> ;
+  af:sourceTier "A" .

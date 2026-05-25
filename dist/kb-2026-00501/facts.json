@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-sports-004",
     "text": "Modern football tactics evolved from the 2-3-5 'Pyramid' formation (1880s) through WM (3-2-2-3, Chapman 1925), Catenaccio (defensive, 1960s), Total Football (Dutch 1970s), to today's 4-3-3 and 4-2-3-1 systems",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.fifa.com/en/tournaments/mens/worldcup"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-sports-005",
     "text": "Pressing is a defensive tactic where players aggressively close down opponents to regain possession. Gegenpressing (counter-pressing): immediately press after losing ball (popularized by Klopp). High press vs mid-block vs low-block refer to defensive line position",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.uefa.com/uefachampionsleague/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-sports-006",
     "text": "Possession-based football (Tiki-taka): Barcelona/Pep Guardiola (2008-2012) dominated with ~70% possession, short passes, positional play, high defensive line. Won 14 trophies in 4 years including 2 Champions Leagues",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.fifa.com/en/tournaments/mens/worldcup"

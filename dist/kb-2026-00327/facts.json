@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-01",
     "text": "The French Revolution overthrew the monarchy, established a republic, and fundamentally transformed French society and European politics",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-001",
     "text": "The French Revolution (1789-1799) overthrew the monarchy, established a republic, and fundamentally transformed French society and European politics. Ideals: Liberty, Equality, Fraternity. Marked the rise of modern nationalism, secularism, and the concept of universal human rights.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-002",
     "text": "Events: Storming of the Bastille (July 14, 1789), Declaration of the Rights of Man, Reign of Terror (1793-94, Robespierre, guillotine), Napoleon's coup (1799).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-003",
     "text": "Legacy: metric system, Napoleonic Code (basis of European law), abolished feudalism, inspired revolutions worldwide.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/"

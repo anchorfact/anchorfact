@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-document-digitization-1",
     "text": "AI historical document digitization (2023-2026): transformer-based handwritten text recognition (HTR) models (TrOCR, PyLaia, Kraken) process historical manuscripts, letters, and archives. The National Archives (UK, US) deploy AI HTR for mass digitization of centuries-old documents. Transkribus (READ-COOP) serves 100,000+ users digitizing historical texts in 100+ languages including Latin, Greek, and Fraktur scripts.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=historical+document+handwriting+recognition+deep+learning"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-document-digitization-2",
     "text": "AI for damaged document recovery: the Vesuvius Challenge (2023-2024) awarded $700K for successfully reading text from carbonized Herculaneum scrolls (79 AD) using CT scanning + transformer-based ink detection. Deep learning denoising and inpainting restores damaged manuscripts, and layout analysis (Mask R-CNN, DETR) reconstructs document structure (columns, margins, illustrations) from scanned pages.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=Vesuvius+scroll+ink+detection+CT"

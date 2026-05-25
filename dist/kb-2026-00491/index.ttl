@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00491>
   a schema:TechArticle ;
   schema:headline "Evolution of Language" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.255" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00491>
-  schema:citation <https://www.harpercollins.com/products/the-language-instinct-steven-pinker> .
+  schema:citation <https://www.harpercollins.com/products/the-language-instinct-steven-pinker> ;
+  af:sourceTier "C" .

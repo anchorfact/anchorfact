@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-01",
     "text": "Harvard Negotiation Project : separate people from the problem, focus on interests , invent options for mutual gain, insist on objective criteria",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-02",
     "text": "Anchoring: first number thrown out heavily influences outcome",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/"

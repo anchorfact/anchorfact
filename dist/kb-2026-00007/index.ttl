@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/kb-2026-00007>
   a schema:TechArticle ;
   schema:headline "Reinforcement Learning from Human Feedback (RLHF)" ;
-  af:confidence "high" ;
+  af:confidence "medium" ;
+  af:confidenceScore "0.6" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00007>
-  schema:citation <https://arxiv.org/abs/1706.03741> .
+  schema:citation <https://arxiv.org/abs/1706.03741> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/kb-2026-00007>
-  schema:citation <https://arxiv.org/abs/2203.02155> .
+  schema:citation <https://arxiv.org/abs/2203.02155> ;
+  af:sourceTier "S" .

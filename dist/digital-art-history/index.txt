@@ -1,7 +1,7 @@
 # Digital Art and New Media Art History
-Confidence: high
+Confidence: low (0.475) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Digital art spans six decades of creative practice using computers as a medium — from early algorithmic drawings to contemporary AI-generated works and NFT marketplaces. It challenges traditional definitions of authorship, authenticity, and artistic value.

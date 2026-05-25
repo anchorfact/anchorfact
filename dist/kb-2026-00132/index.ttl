@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00132>
   a schema:TechArticle ;
   schema:headline "Dijkstra's Algorithm" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00132>
-  schema:citation <https://dl.acm.org/> .
+  schema:citation <https://dl.acm.org/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00132>
-  schema:citation <https://www.algorithmsilluminated.org/> .
+  schema:citation <https://www.algorithmsilluminated.org/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00132>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.graph> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.graph> ;
+  af:sourceTier "C" .

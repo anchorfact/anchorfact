@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/f1",
     "text": "CLIP (Radford et al. 2021, OpenAI) learns joint image-text representations via contrastive pretraining on 400M web-crawled pairs, demonstrating zero-shot transfer to 30+ vision tasks without task-specific training.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2103.00020"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/f2",
     "text": "GPT-4V(ision) (OpenAI 2023) is a multimodal model that accepts image and text inputs, producing text outputs with visual understanding capabilities competitive with task-specific vision models.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://openai.com/research/gpt-4v-system-card"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/f3",
     "text": "Flamingo (Alayrac et al. 2022, DeepMind) demonstrated few-shot visual understanding by interleaving pretrained vision and language models with perceiver resamplers, achieving state-of-the-art on 16 multi-modal benchmarks.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2204.14198"

@@ -5,10 +5,14 @@
   a schema:article ;
   schema:headline "AI for Remote Sensing: Foundation Models, Satellite Image Analysis, and Earth Observation" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidenceScore "0.85" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-for-remote-sensing>
-  schema:citation <https://www.nature.com/articles/s44287-025-00208-z> .
+  schema:citation <https://www.nature.com/articles/s44287-025-00208-z> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/ai-for-remote-sensing>
-  schema:citation <https://ieeexplore.ieee.org/document/11097335> .
+  schema:citation <https://ieeexplore.ieee.org/document/11097335> ;
+  af:sourceTier "A" .

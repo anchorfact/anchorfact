@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00479",
   "headline": "History of Printing",
   "description": "Printing (woodblock: China, ~200 CE) → movable type (Bi Sheng, China 1040 CE; Gutenberg, Germany 1450 CE) → printing press → mass literacy, Reformation, Scientific Revolution. Gutenberg Bible (1455): first major book printed with movable type. Printing was the 'Internet of its day' — democratizing knowledge and transforming society.",
-  "dateCreated": "2026-05-25T02:46:03.912Z",
-  "dateModified": "2026-05-25T02:46:03.912Z",
+  "dateCreated": "2026-05-22",
+  "dateModified": "2026-05-25T12:59:31.820Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -16,13 +16,42 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
+  "anchorfact:confidence": "low",
+  "anchorfact:confidenceScore": 0.255,
   "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 0.3,
+      "source_count": 0.5,
+      "source_verified": 0.2,
+      "freshness": 0.3,
+      "decay": 0.30000000000000004,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "low",
+    "confidence_score": 0.255,
+    "confidence_basis": "verified_sources",
+    "sources_total": 1,
+    "sources_verified": 0,
+    "sources_unreachable": 1,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "C"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": true,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "The Printing Revolution in Early Modern Europe (Elizabeth Eisenstein, 2nd Ed)",
-      "sameAs": "https://www.cambridge.org/core/books/printing-revolution-in-early-modern-europe/"
+      "sameAs": "https://www.cambridge.org/core/books/printing-revolution-in-early-modern-europe/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2005
     }
   ]
 }

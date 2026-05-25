@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-information-extraction-1",
     "text": "JSON-structured information extraction from scientific text (Nature Communications 2024) demonstrated that fine-tuned LLMs (GPT-3, Llama-2) outperform specialized NER models on joint entity recognition and relation extraction — extracting structured materials science data from 10K+ papers at 90%+ precision.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nature.com/articles/s41467-024-45563-x"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-information-extraction-2",
     "text": "Multimodal information extraction (MIE) — combining text, images, and layout from documents — achieves 15-20% improvement over text-only IE on tasks like invoice extraction, identity document parsing, and scientific figure understanding, driven by LayoutLM and similar document AI models.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2312.17616"

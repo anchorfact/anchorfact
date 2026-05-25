@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-bp-1",
     "text": "Backpropagation efficiently computes gradients of a loss function with respect to all weights in a neural network by applying the chain rule recursively from output to input layers.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.1038/323533a0"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-bp-2",
     "text": "Modern deep learning frameworks (PyTorch, TensorFlow, JAX) implement automatic differentiation (autograd) which generalizes backpropagation to arbitrary computational graphs.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://jmlr.org/papers/v18/17-468.html"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-bp-3",
     "text": "The vanishing gradient problem occurs when gradients become exponentially small in early layers of deep networks, making training difficult. ReLU and residual connections (He et al. 2016) mitigate this issue.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nature.com/articles/nature14539"

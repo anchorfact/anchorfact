@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-biometric-recognition-1",
     "text": "ACM Computing Surveys (2023, 150+ papers) provided a comprehensive survey of biometric recognition using deep learning -- covering face (FaceNet, ArcFace), fingerprint (MinutiaeNet), iris (IrisCode), palmprint, ear, voice, signature, and gait recognition -- documenting that ArcFace (additive angular margin loss) achieves 99.8%+ verification accuracy on LFW and that multimodal fusion (face + iris + fingerprint) reduces EER below 0.01%, approaching forensic-grade identification.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://dl.acm.org/doi/10.1007/s10462-022-10237-x"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-biometric-recognition-2",
     "text": "ScienceDirect (December 2025) presented a multimodal biometric system combining fingerprints, iris, and face using hybrid CNN architectures -- achieving 99.95% identification accuracy and EER < 0.001% on a combined dataset, demonstrating that AI-driven multimodal biometrics can meet the security requirements for national ID systems (Aadhaar, 1.3B+ enrollments) and border control (US-VISIT, EU Entry/Exit System).",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.sciencedirect.com/science/article/pii/S2772941925001887"

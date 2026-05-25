@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00484>
   a schema:TechArticle ;
   schema:headline "Samurai History" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00484>
-  schema:citation <https://www.littlebrown.co.uk/titles/jonathan-clements/a-brief-history-of-the-samurai/9781849019811/> .
+  schema:citation <https://www.littlebrown.co.uk/titles/jonathan-clements/a-brief-history-of-the-samurai/9781849019811/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00484>
-  schema:citation <https://ospreypublishing.com/samurai/> .
+  schema:citation <https://ospreypublishing.com/samurai/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00484>
-  schema:citation <https://global.oup.com/vsi-samurai/> .
+  schema:citation <https://global.oup.com/vsi-samurai/> ;
+  af:sourceTier "C" .

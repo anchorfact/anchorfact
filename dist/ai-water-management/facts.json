@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-water-management-1",
     "text": "AI water management (2023-2026): (1) Leak detection -- ML on acoustic sensor data + pressure readings identifies pipe leaks within 1-2m accuracy. AI analyzes flow and pressure patterns across water distribution networks (district metered areas), reducing non-revenue water loss by 20-30%. Companies like TaKaDu, Fido Tech, and Aquarius Spectrum process IoT data from municipal water systems on five continents.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=water+management+AI+leak+detection+smart"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-water-management-2",
     "text": "Smart irrigation AI: companies like CropX, Netafim, and Jain Logic use soil moisture sensors + weather forecasts + satellite vegetation indices to optimize irrigation scheduling. ML models predict crop water needs at field-zone resolution, reducing water consumption by 20-40% while maintaining or improving crop yields. AI also predicts pipe failure using historical maintenance data + environmental factors (soil type, temperature, age).",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=smart+irrigation+machine+learning"

@@ -1,7 +1,7 @@
 # Multi-Agent Reinforcement Learning: Cooperation, Competition, and Emergent Strategies
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Multi-Agent Reinforcement Learning (MARL) extends RL to systems where multiple agents learn simultaneously — collaborating, competing, or negotiating. From drone swarms to trading agents, MARL captures emergent collective intelligence that exceeds the sum of individual policies.

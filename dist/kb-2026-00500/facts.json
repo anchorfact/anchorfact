@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-sports-001",
     "text": "Basketball was invented by Dr. James Naismith in 1891 at Springfield College, Massachusetts. Original rules: 13 rules, peach baskets as goals, soccer ball used",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.fiba.basketball/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-sports-002",
     "text": "NBA (National Basketball Association) founded 1946 as BAA. 30 teams (29 US + Toronto). Season: 82 regular-season games + playoffs (best-of-7 series). Championship: Larry O'Brien Trophy",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nba.com/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-sports-003",
     "text": "Standard court dimensions: FIBA 28m×15m, NBA 94ft×50ft (28.65m×15.24m). 3-point line distance: FIBA 6.75m, NBA 23ft 9in (7.24m) at top of key. Rim height: 10ft (3.05m) universal",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.fiba.basketball/documents/official-basketball-rules"

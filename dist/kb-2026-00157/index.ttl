@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00157>
   a schema:TechArticle ;
   schema:headline "Redis" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00157>
-  schema:citation <https://redis.io/docs/> .
+  schema:citation <https://redis.io/docs/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00157>
-  schema:citation <https://www.manning.com/redis/> .
+  schema:citation <https://www.manning.com/redis/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00157>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.cache> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.cache> ;
+  af:sourceTier "C" .

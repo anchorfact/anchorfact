@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-arts-001",
     "text": "Philosophy of science examines how science works. Kuhn (1962) challenged the view of science as steady accumulation: instead, 'paradigm shifts' disrupt 'normal science.' Popper: falsifiability demarcates science from non-science — a theory must be testable and refutable. Scientific realism vs. instrumentalism: do theories describe reality or just p",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-arts-002",
     "text": "Reproducibility crisis (2010s): many published findings fail to replicate — methodology reform ongoing.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html"

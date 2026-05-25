@@ -1,5 +1,5 @@
 # Roguelike Game Design
-Confidence: high
+Confidence: low (0.53) (verified)
 Last verified: 2026-05-22
 Generation: human_only
 

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-01",
     "text": "Solar: costs dropped 90% since 2010",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://drawdown.org/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-02",
     "text": "Electric vehicles: reach price parity with ICE by 2027",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://drawdown.org/"

@@ -1,7 +1,7 @@
 # AI for Legal: Contract Analysis, Legal Reasoning, and Regulatory Compliance
-Confidence: high
+Confidence: medium (0.78) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is entering the legal profession — from automated contract review and e-discovery to legal reasoning and regulatory compliance. While LLMs cannot replace lawyers, they dramatically accelerate document-intensive legal work and enable compliance at scale.

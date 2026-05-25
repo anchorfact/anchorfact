@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-25T02:46:04.690Z",
+  "generated": "2026-05-25T12:59:32.576Z",
   "articles": 806,
   "ids": [
     "https://anchorfact.org/kb/3d-generation-gaussian-splatting",
@@ -809,5 +809,18 @@
     "https://anchorfact.org/kb/kb-2026-00503",
     "https://anchorfact.org/kb/kb-2026-00451"
   ],
-  "compiler_version": "poc-0.1.0"
+  "confidence_distribution": {
+    "high": 47,
+    "medium": 279,
+    "low": 480,
+    "basis": {
+      "verified": 805,
+      "estimated": 1
+    }
+  },
+  "compiler_version": "0.2.1",
+  "verification_report": {
+    "timestamp": "2026-05-25T11:56:53.598Z",
+    "articles_verified": 809
+  }
 }

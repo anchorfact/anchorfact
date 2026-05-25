@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-si-cb-001",
     "text": "Kahneman (2011): System 1 (fast/intuitive) vs. System 2 (slow/deliberate) dual-process theory.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://us.macmillan.com/books/9780374533557/thinking-fast-and-slow"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-si-cb-002",
     "text": "Confirmation bias: seeking confirmatory evidence (Wason 1960s; Nickerson, RGPS 1998).",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.1037/1089-2680.2.2.175"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-si-cb-003",
     "text": "Loss aversion (Kahneman & Tversky 1979): losses hurt ~2x more than equivalent gains feel good.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.2307/1914185"

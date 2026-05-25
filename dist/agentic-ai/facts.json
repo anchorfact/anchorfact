@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/f1",
     "text": "Agentic AI refers to LLM-powered systems that autonomously plan, execute multi-step tasks, use tools, and verify outputs. Key architectures include ReAct, AutoGPT, and multi-agent frameworks like CrewAI.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2308.08435"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/f2",
     "text": "Chain-of-Thought prompting (Wei et al. 2022, Google) elicits step-by-step reasoning from LLMs, significantly improving performance on arithmetic, commonsense, and symbolic reasoning tasks.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2201.11903"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/f3",
     "text": "Tree of Thoughts (Yao et al. 2023, Princeton/DeepMind) extends CoT by exploring multiple reasoning paths simultaneously, using BFS/DFS search with self-evaluation for deliberate problem-solving.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2305.10601"

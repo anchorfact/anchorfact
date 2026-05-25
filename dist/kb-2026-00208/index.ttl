@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00208>
   a schema:TechArticle ;
   schema:headline "Product Listing Optimization (Amazon)" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.5" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00208>
-  schema:citation <https://hbr.org/> .
+  schema:citation <https://hbr.org/> ;
+  af:sourceTier "C" .

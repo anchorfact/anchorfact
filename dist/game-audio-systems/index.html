@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Game Audio Systems and Sound Design — AnchorFact</title></head>
-<body><article>## TL;DR<br>
-Modern game audio goes far beyond playing sound files. Dynamic mixing, 3D spatialization, adaptive music, and procedural audio create immersive soundscapes that respond to gameplay in real time.<br>
-<br>
-## Audio Middleware<br>
-<br>
-### FMOD and Wwise<br>
-These middleware tools sit between the game engine and the audio hardware. They provide visual authoring environments for sound designers to create complex audio behaviors without programming — volume ducking, reverb zones, parameter-driven music transitions.<br>
-<br>
-### Core Features<br>
-- **Event-driven audio**: Sounds triggered by game events (footsteps, gunshots, UI)<br>
-- **Parameter mapping**: Mix music layers based on gameplay intensity<br>
-- **Occlusion modeling**: Muffle sounds behind walls using raycasts<br>
-- **Reverb zones**: Apply different acoustic environments (cave, hall, outdoor)<br>
-<br>
-## 3D Spatialization<br>
-Positional audio uses HRTF to simulate direction: sounds to the left arrive louder and slightly earlier in the left ear with spectral filtering from the head and ears. Modern APIs (Steam Audio, Oculus Audio) provide real-time HRTF convolution.<br>
-<br>
-## Adaptive Music<br>
-- **Horizontal resequencing**: Rearrange music sections based on game state<br>
-- **Vertical layering**: Add/remove instrument layers based on intensity<br>
-- **Stinger transitions**: Musical punctuation for important events (combat start, level complete)<br>
-<br>
-## Implementation Architecture<br>
+<head>
+  <meta charset="utf-8">
+  <title>Game Audio Systems and Sound Design — AnchorFact</title>
+  <meta name="anchorfact:confidence" content="medium (0.72)">
+  <meta name="anchorfact:generation" content="ai_structured">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/game-audio-systems","headline":"Game Audio Systems and Sound Design","description":"Modern game audio goes far beyond playing sound files. Dynamic mixing, 3D spatialization, adaptive music, and procedural audio create immersive soundscapes that respond to gameplay in real time.","dateCreated":"2026-05-24","dateModified":"2026-05-25T12:59:32.251Z","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.72,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.9,"freshness":0.5,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.72,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":2,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["C","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Game Audio Implementation","sameAs":"https://www.routledge.com/Game-Audio-Implementation/Schutze-Ingebretsen/p/book/9781138777248","anchorfact:sourceTier":"C","anchorfact:year":2016},{"@type":"CreativeWork","name":"Spatial Audio in VR","sameAs":"https://www.aes.org/e-lib/browse.cfm?elib=20380","anchorfact:sourceTier":"A","anchorfact:year":2019}]}</script>
+</head>
+<body><article>## TL;DR<br>
+Modern game audio goes far beyond playing sound files. Dynamic mixing, 3D spatialization, adaptive music, and procedural audio create immersive soundscapes that respond to gameplay in real time.<br>
+<br>
+## Audio Middleware<br>
+<br>
+### FMOD and Wwise<br>
+These middleware tools sit between the game engine and the audio hardware. They provide visual authoring environments for sound designers to create complex audio behaviors without programming — volume ducking, reverb zones, parameter-driven music transitions.<br>
+<br>
+### Core Features<br>
+- **Event-driven audio**: Sounds triggered by game events (footsteps, gunshots, UI)<br>
+- **Parameter mapping**: Mix music layers based on gameplay intensity<br>
+- **Occlusion modeling**: Muffle sounds behind walls using raycasts<br>
+- **Reverb zones**: Apply different acoustic environments (cave, hall, outdoor)<br>
+<br>
+## 3D Spatialization<br>
+Positional audio uses HRTF to simulate direction: sounds to the left arrive louder and slightly earlier in the left ear with spectral filtering from the head and ears. Modern APIs (Steam Audio, Oculus Audio) provide real-time HRTF convolution.<br>
+<br>
+## Adaptive Music<br>
+- **Horizontal resequencing**: Rearrange music sections based on game state<br>
+- **Vertical layering**: Add/remove instrument layers based on intensity<br>
+- **Stinger transitions**: Musical punctuation for important events (combat start, level complete)<br>
+<br>
+## Implementation Architecture<br>
 Game code emits audio parameters → Middleware processes mixing/routing → Platform API (XAudio2, OpenAL) → Hardware output. This decoupling lets sound designers iterate independently of engineering schedules.</article></body>
 </html>

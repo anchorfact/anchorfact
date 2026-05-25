@@ -5,10 +5,14 @@
   a schema:article ;
   schema:headline "Text Summarization: From Extractive Methods to Abstractive LLM-Based Summarization" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidenceScore "0.85" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/text-summarization>
-  schema:citation <https://dl.acm.org/doi/abs/10.1145/3731445> .
+  schema:citation <https://dl.acm.org/doi/abs/10.1145/3731445> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/text-summarization>
-  schema:citation <https://arxiv.org/abs/2406.11289> .
+  schema:citation <https://arxiv.org/abs/2406.11289> ;
+  af:sourceTier "A" .

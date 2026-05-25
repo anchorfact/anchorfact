@@ -5,10 +5,14 @@
   a schema:article ;
   schema:headline "AI for Astronomy: Exoplanet Detection, Galaxy Classification, and Computational Astrophysics" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidenceScore "0.85" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-for-astronomy>
-  schema:citation <https://www.fnasjournals.com/index.php/FNAS-JSI/article/view/1153> .
+  schema:citation <https://www.fnasjournals.com/index.php/FNAS-JSI/article/view/1153> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-for-astronomy>
-  schema:citation <https://www.nature.com/articles/s41598-025-98935-8> .
+  schema:citation <https://www.nature.com/articles/s41598-025-98935-8> ;
+  af:sourceTier "S" .

@@ -1,7 +1,7 @@
 # AI for Complex Networks: Graph Learning, Resilience, and Network Science
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI and complex network science form a powerful synergy: graph neural networks learn from rich network topologies, while network theory provides structural understanding of AI's own internal representations. Together they unlock insights from interconnected systems.

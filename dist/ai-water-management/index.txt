@@ -1,7 +1,7 @@
 # AI for Water Management: Leak Detection, Quality Monitoring, and Smart Irrigation
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI water management finds leaks in aging pipes with acoustic AI, monitors water quality in real-time, and optimizes irrigation to save billions of gallons. From TaKaDu's municipal water intelligence to CropX soil sensing, AI tackles the global water crisis through data-driven efficiency.

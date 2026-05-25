@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-in-education>
   a schema:article ;
   schema:headline "AI in Education: Personalized Learning and Intelligent Tutoring Systems" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.615" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-in-education>
-  schema:citation <https://www.sciencedirect.com/science/article/pii/S2666920X25001699> .
+  schema:citation <https://www.sciencedirect.com/science/article/pii/S2666920X25001699> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-in-education>
-  schema:citation <https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1782626/full> .
+  schema:citation <https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1782626/full> ;
+  af:sourceTier "A" .

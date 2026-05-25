@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/kb-2026-00501>
   a schema:TechArticle ;
   schema:headline "Football (Soccer) Tactics and Formations" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.5" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00501>
-  schema:citation <https://www.theifab.com/laws-of-the-game-documents/> .
+  schema:citation <https://www.theifab.com/laws-of-the-game-documents/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00501>
-  schema:citation <https://www.hatchettebookgroup.com/titles/jonathan-wilson/inverting-the-pyramid/> .
+  schema:citation <https://www.hatchettebookgroup.com/titles/jonathan-wilson/inverting-the-pyramid/> ;
+  af:sourceTier "C" .

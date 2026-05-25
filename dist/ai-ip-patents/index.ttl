@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-ip-patents>
   a schema:article ;
   schema:headline "AI for Intellectual Property: Patent Search, Prior Art Analysis, and Trademark Intelligence" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.74" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-ip-patents>
-  schema:citation <https://www.sciencedirect.com/science/article/pii/S0172219025000080> .
+  schema:citation <https://www.sciencedirect.com/science/article/pii/S0172219025000080> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-ip-patents>
-  schema:citation <https://link.springer.com/chapter/10.1007/978-3-031-99201-8_7> .
+  schema:citation <https://link.springer.com/chapter/10.1007/978-3-031-99201-8_7> ;
+  af:sourceTier "A" .

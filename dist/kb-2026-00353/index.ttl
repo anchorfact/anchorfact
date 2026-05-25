@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00353>
   a schema:TechArticle ;
   schema:headline "Middle Ages" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00353>
-  schema:citation <https://www.penguinrandomhouse.com/books/56336/a-distant-mirror-by-barbara-w-tuchman/> .
+  schema:citation <https://www.penguinrandomhouse.com/books/56336/a-distant-mirror-by-barbara-w-tuchman/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00353>
-  schema:citation <https://global.oup.com/vsi-middle-ages/> .
+  schema:citation <https://global.oup.com/vsi-middle-ages/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00353>
-  schema:citation <https://yalebooks.yale.edu/medieval-europe/> .
+  schema:citation <https://yalebooks.yale.edu/medieval-europe/> ;
+  af:sourceTier "C" .

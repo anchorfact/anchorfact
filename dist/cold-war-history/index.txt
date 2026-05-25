@@ -1,7 +1,7 @@
 # The Cold War: Ideological Conflict and Nuclear Standoff
-Confidence: high
+Confidence: low (0.55) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 The Cold War defined global politics for 45 years — an ideological struggle between capitalism and communism, enforced by nuclear deterrence and fought through proxies, propaganda, and technological competition.

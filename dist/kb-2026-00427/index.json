@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00427",
   "headline": "Public Health Basics",
   "description": "Public health focuses on preventing disease and promoting health at population level — in contrast to clinical medicine's individual focus. Core functions: assessment (monitor health), policy development, assurance (ensure access). Key achievements: vaccination, sanitation, tobacco control, motor vehicle safety, infectious disease control.",
-  "dateCreated": "2026-05-25T02:46:04.482Z",
-  "dateModified": "2026-05-25T02:46:04.482Z",
+  "dateCreated": "2026-05-22",
+  "dateModified": "2026-05-25T12:59:32.367Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -16,13 +16,42 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
+  "anchorfact:confidence": "low",
+  "anchorfact:confidenceScore": 0.45,
   "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 0.3,
+      "source_count": 0.5,
+      "source_verified": 0.9,
+      "freshness": 0.5,
+      "decay": 0.30000000000000004,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "low",
+    "confidence_score": 0.45,
+    "confidence_basis": "verified_sources",
+    "sources_total": 1,
+    "sources_verified": 1,
+    "sources_unreachable": 0,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "C"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": true,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "Introduction to Public Health (Schneider, 6th Ed)",
-      "sameAs": "https://www.jblearning.com/catalog/productdetails/9781284197594"
+      "sameAs": "https://www.jblearning.com/catalog/productdetails/9781284197594",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2020
     }
   ]
 }

@@ -4,20 +4,27 @@
 <https://anchorfact.org/kb/kb-2026-00368>
   a schema:TechArticle ;
   schema:headline "Big Bang Theory" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00368>
-  schema:citation <https://www.basicbooks.com/titles/steven-weinberg/the-first-three-minutes/9780465024377/> .
+  schema:citation <https://www.basicbooks.com/titles/steven-weinberg/the-first-three-minutes/9780465024377/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00368>
-  schema:citation <https://www.basicbooks.com/big-bang/> .
+  schema:citation <https://www.basicbooks.com/big-bang/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00368>
-  schema:citation <https://doi.org/10.1038/s42254-2025-cosmo> .
+  schema:citation <https://doi.org/10.1038/s42254-2025-cosmo> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00368>
-  schema:citation <https://global.oup.com/vsi-cosmology/> .
+  schema:citation <https://global.oup.com/vsi-cosmology/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00368>
-  schema:citation <https://www.basicbooks.com/big-bang/> .
+  schema:citation <https://www.basicbooks.com/big-bang/> ;
+  af:sourceTier "C" .

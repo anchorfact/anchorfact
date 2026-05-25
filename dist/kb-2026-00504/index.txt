@@ -1,5 +1,5 @@
 # Sports Psychology Fundamentals
-Confidence: high
+Confidence: low (0.52) (verified)
 Last verified: 2026-05-24
 Generation: ai_assisted
 

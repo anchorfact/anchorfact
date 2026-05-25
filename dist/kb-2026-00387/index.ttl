@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00387>
   a schema:TechArticle ;
   schema:headline "International Trade" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.45" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00387>
-  schema:citation <https://www.pearson.com/en-us/subject-catalog/p/international-economics-theory-and-policy/P200000005849> .
+  schema:citation <https://www.pearson.com/en-us/subject-catalog/p/international-economics-theory-and-policy/P200000005849> ;
+  af:sourceTier "C" .

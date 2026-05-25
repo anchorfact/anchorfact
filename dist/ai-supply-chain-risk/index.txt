@@ -1,7 +1,7 @@
 # AI for Supply Chain Risk: Disruption Prediction, Supplier Monitoring, and Resilience Analytics
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI predicts supply chain disruptions before they happen -- monitoring millions of signals for factory fires, port strikes, and supplier bankruptcies across multi-tier global supply chains. From Resilinc to o9 Solutions, AI supply chain risk management transforms reactive firefighting to proactive resilience.

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-speaker-recognition-1",
     "text": "ScienceDirect (December 2025) published a comprehensive review of speaker verification -- documenting that ECAPA-TDNN (Emphasized Channel Attention, Propagation and Aggregation TDNN) with Additive Angular Margin loss achieves 0.69% EER (Equal Error Rate) on VoxCeleb1, representing the dominant architecture family, while self-supervised pretraining (WavLM, HuBERT) further reduces EER to 0.31-0.45%, approaching human-level performance on clean speech.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.sciencedirect.com/science/article/pii/S0952197625023590"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-speaker-recognition-2",
     "text": "Nature Scientific Reports (July 2025) demonstrated an enhanced deep learning framework for speaker diarization -- the Neuro-TM Diarizer integrating ECAPA-TDNN embeddings, TitaNet, and MarbleNet -- achieving 3.2% DER (Diarization Error Rate) on AMI meeting corpus, a 25% improvement over the previous SOTA (Pyannote), and demonstrating robust performance across noisy meeting scenarios with 4-8 overlapping speakers.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nature.com/articles/s41598-025-09385-1"

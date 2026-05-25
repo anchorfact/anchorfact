@@ -1,7 +1,7 @@
 # AI for Warehouse Robotics: Autonomous Forklifts, Bin-Picking, and Fulfillment Automation
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI robots run the world's warehouses -- 750,000+ at Amazon alone, moving goods, picking orders, and sorting packages. From autonomous forklifts to AI-powered bin-picking arms, warehouse robotics transforms fulfillment from labor-intensive to lights-out automation.

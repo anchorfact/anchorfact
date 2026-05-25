@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-air-quality-1",
     "text": "AI air quality monitoring (2023-2026): (1) Low-cost sensor calibration -- ML corrects readings from low-cost sensors (PurpleAir, IQAir) against reference-grade monitors, reducing error from 20-30% to <5%, enabling hyperlocal air quality networks at 100x lower cost. PurpleAir network: 30,000+ citizen science sensors globally; (2) Satellite-based monitoring -- deep learning estimates PM2.5, NO2, and O3 from satellite (Sentinel-5P, MODIS) with 1-10km resolution, covering areas with no ground monitors.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=air+quality+deep+learning+PM2.5+prediction"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-air-quality-2",
     "text": "AI air quality prediction: ConvLSTM and Transformer models forecast PM2.5 and ozone levels 24-72 hours ahead using meteorological data (wind, temperature, humidity), emissions data, and traffic patterns. Google (2023-2025) deployed AI air quality forecasting in Google Maps and Environmental Insights Explorer. Health impact: ML models estimate population-level health outcomes (asthma ER visits, cardiovascular events) from air quality forecasts, enabling public health interventions.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=air+pollution+machine+learning+source+attribution"

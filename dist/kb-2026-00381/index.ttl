@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00381>
   a schema:TechArticle ;
   schema:headline "Basketball Fundamentals" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.45" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00381>
-  schema:citation <https://www.abramsbooks.com/product/basketball-and-other-things_9781419726477/> .
+  schema:citation <https://www.abramsbooks.com/product/basketball-and-other-things_9781419726477/> ;
+  af:sourceTier "C" .

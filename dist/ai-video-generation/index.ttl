@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-video-generation>
   a schema:TechArticle ;
   schema:headline "AI Video Generation: Sora, Veo, and the Future of Synthetic Media" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.72" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-video-generation>
-  schema:citation <https://openai.com/index/video-generation-models-as-world-simulators/> .
+  schema:citation <https://openai.com/index/video-generation-models-as-world-simulators/> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-video-generation>
-  schema:citation <https://deepmind.google/technologies/veo/> .
+  schema:citation <https://deepmind.google/technologies/veo/> ;
+  af:sourceTier "C" .

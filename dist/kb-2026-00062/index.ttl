@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/kb-2026-00062>
   a schema:TechArticle ;
   schema:headline "LoRA (Low-Rank Adaptation)" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.725" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00062>
-  schema:citation <https://arxiv.org/abs/2106.09685> .
+  schema:citation <https://arxiv.org/abs/2106.09685> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/kb-2026-00062>
-  schema:citation <https://github.com/microsoft/LoRA> .
+  schema:citation <https://github.com/microsoft/LoRA> ;
+  af:sourceTier "C" .

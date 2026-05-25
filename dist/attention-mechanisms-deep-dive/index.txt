@@ -1,7 +1,7 @@
 # Attention Mechanisms: Scaled Dot-Product to FlashAttention
-Confidence: high
+Confidence: medium (0.76) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Attention mechanisms enable neural networks to dynamically focus on relevant parts of input sequences. Since Vaswani et al. (2017), attention has become the dominant paradigm in NLP, vision, and multimodal AI.

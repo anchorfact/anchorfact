@@ -1,7 +1,7 @@
 # Strategic Management: Frameworks and Practice
-Confidence: high
+Confidence: low (0.425) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Strategic management defines how organizations create and sustain competitive advantage through analytical frameworks and disciplined execution.

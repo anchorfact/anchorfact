@@ -1,7 +1,7 @@
 # AI for Climate Science: Weather Prediction and Earth System Modeling
-Confidence: high
+Confidence: medium (0.73) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is revolutionizing climate science: deep learning weather models now match or exceed physics-based forecasting while running 100-1000x faster. From 10-day global forecasts to high-resolution downscaling, AI tools are accelerating climate adaptation and mitigation.

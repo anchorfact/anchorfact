@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-gd-024>
   a schema:TechArticle ;
   schema:headline "多人游戏设计（Multiplayer Game Design）" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.5" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-gd-024>
-  schema:citation <https://www.gdconf.com/> .
+  schema:citation <https://www.gdconf.com/> ;
+  af:sourceTier "C" .

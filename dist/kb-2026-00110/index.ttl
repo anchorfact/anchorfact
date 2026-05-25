@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00110>
   a schema:TechArticle ;
   schema:headline "Device Orientation API" ;
-  af:confidence "high" ;
+  af:confidence "medium" ;
+  af:confidenceScore "0.735" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00110>
-  schema:citation <https://www.w3.org/TR/orientation-event/> .
+  schema:citation <https://www.w3.org/TR/orientation-event/> ;
+  af:sourceTier "S" .

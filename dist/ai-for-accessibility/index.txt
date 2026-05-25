@@ -1,7 +1,7 @@
 # AI for Accessibility: Assistive Technologies, Sign Language Recognition, and Inclusive Systems
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is democratizing accessibility — from real-time sign language translation on smartphones to AI-powered screen readers that describe visual scenes. Computer vision, speech recognition, and natural language processing collectively transform assistive technologies from specialized hardware into software running on the devices people already own.

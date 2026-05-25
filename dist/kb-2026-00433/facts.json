@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-01",
     "text": "Title tag: most important on-page element — <60 chars, include primary keyword",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.oreilly.com/library/view/the-art-of/9781098102593/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-001",
     "text": "SEO (Search Engine Optimization) increases website visibility in organic search results. Three pillars: on-page (content quality, keywords, title tags), technical (site speed, mobile-friendly, crawlable), off-page (backlinks, authority). Google's algorithm uses 200+ ranking factors. SEO is a long-term investment — results take 3-6 months.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.oreilly.com/library/view/the-art-of/9781098102593/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-002",
     "text": "Keywords: informational ('what is...'), transactional ('buy...'), navigational ('brand name').",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.oreilly.com/library/view/the-art-of/9781098102593/"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-003",
     "text": "Title tag: most important on-page element — <60 chars, include primary keyword.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.oreilly.com/library/view/the-art-of/9781098102593/"

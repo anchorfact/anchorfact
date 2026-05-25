@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-program-synthesis-verification-1",
     "text": "ProofSeek (2025, ML Research Press) introduced a framework combining LLM-generated formal proofs with automated theorem provers — achieving state-of-the-art results on miniF2F-test benchmark and successfully verifying AWS S3 bucket replication code, demonstrating that LLMs can generate complete formal verification proofs for production systems.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://proceedings.mlr.press/v284/rao25a.html"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-program-synthesis-verification-2",
     "text": "CACM (Feb 2026) published a comprehensive survey on integrating LLMs with formal methods: \"Formal Reasoning Meets LLMs: Toward AI for Mathematics and Verification\" — concluding that LLM+formal verification hybrids represent the most promising path toward solving open math problems and generating verifiable software at scale.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://cacm.acm.org/research/formal-reasoning-meets-llms-toward-ai-for-mathematics-and-verification/"

@@ -1,7 +1,7 @@
 # AI for Energy: Smart Grids, Renewable Forecasting, and Digital Twins
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is becoming the operating system for modern energy grids — predicting renewable output, balancing supply and demand in real-time, and optimizing the transition to decarbonized energy. From the IEA's 2026 roadmap to Nature-published smart grid frameworks, AI delivers 15-50% efficiency gains while enabling high renewable penetration.

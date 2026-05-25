@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-robot-navigation-1",
     "text": "MDPI (July 2025) published a comprehensive review of vision-based navigation and perception for autonomous robots -- covering SLAM (Simultaneous Localization and Mapping), visual odometry, obstacle detection, and path planning -- documenting that deep learning-enhanced SLAM (DROID-SLAM, DPV-SLAM) achieves 30-50% lower trajectory error than classical ORB-SLAM3 on challenging benchmarks (EuRoC, TUM RGB-D).",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.mdpi.com/2673-4117/6/7/153"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-robot-navigation-2",
     "text": "ACM Computing Surveys (2025) presented a comprehensive review of autonomous mobile robots covering sensor types, platform designs, and AI-based navigation strategies -- documenting the integration of deep reinforcement learning for end-to-end navigation (learning to map sensor input to motor commands) achieving human-level navigation in complex indoor environments with dynamic obstacles.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://dl.acm.org/doi/full/10.1145/3727642"

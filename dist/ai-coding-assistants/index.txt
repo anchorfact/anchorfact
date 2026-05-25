@@ -1,7 +1,7 @@
 # AI Coding Assistants: Copilot, Cursor, and Claude Code
-Confidence: high
+Confidence: medium (0.77) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI coding assistants evolved from autocomplete to autonomous agents. By 2026, Cursor leads IDE-based workflows, Claude Code dominates terminal agentic coding (77.2% SWE-bench), and GitHub Copilot remains the enterprise standard with 55% productivity gains.

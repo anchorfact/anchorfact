@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-drug-discovery-1",
     "text": "AlphaFold3 (Google DeepMind & Isomorphic Labs, Nature 2024, doi:10.1038/s41586-024-07487-w) introduced a substantially updated diffusion-based architecture capable of jointly predicting structures of complexes including proteins, nucleic acids, small molecules, ions, and modified residues — extending structural prediction beyond single proteins to biomolecular interactions critical for drug design.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nature.com/articles/s41586-024-07487-w"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-drug-discovery-2",
     "text": "A comprehensive 2025 assessment evaluated AlphaFold3 across diverse pharmaceutical applications — including protein-ligand docking, antibody-antigen interface prediction, and covalent inhibitor design — finding that AF3 achieves binding pose accuracy within 2.0Å RMSD for 65% of targets, competitive with specialized docking tools, while operating orders of magnitude faster.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://pubs.acs.org/doi/10.1021/acs.jcim.5c00120"

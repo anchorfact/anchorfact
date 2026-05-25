@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00352>
   a schema:TechArticle ;
   schema:headline "Roman Empire" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00352>
-  schema:citation <https://www.gutenberg.org/ebooks/731> .
+  schema:citation <https://www.gutenberg.org/ebooks/731> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00352>
-  schema:citation <https://global.oup.com/vsi-roman/> .
+  schema:citation <https://global.oup.com/vsi-roman/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00352>
-  schema:citation <https://global.oup.com/roman-fall/> .
+  schema:citation <https://global.oup.com/roman-fall/> ;
+  af:sourceTier "C" .

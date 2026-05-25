@@ -1,7 +1,7 @@
 # AI for Senior Care: Fall Detection, Medication Reminders, and Social Companionship
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI helps seniors age in place -- detecting falls and calling for help, managing medications, and providing social companionship through conversational robots. From Apple Watch's life-saving fall detection to ElliQ's proactive AI companion, technology addresses the global challenge of supporting an aging population.

@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/latent-diffusion-models>
   a schema:TechArticle ;
   schema:headline "Diffusion Models in Depth: From DDPM to Stable Diffusion" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.74" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/latent-diffusion-models>
-  schema:citation <https://arxiv.org/abs/2006.11239> .
+  schema:citation <https://arxiv.org/abs/2006.11239> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/latent-diffusion-models>
-  schema:citation <https://arxiv.org/abs/2112.10752> .
+  schema:citation <https://arxiv.org/abs/2112.10752> ;
+  af:sourceTier "A" .

@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-for-fraud-prevention>
   a schema:article ;
   schema:headline "AI for Payment Fraud Prevention: Real-Time Transaction Scoring, Chargeback Reduction, and Merchant Risk" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-for-fraud-prevention>
-  schema:citation <https://arxiv.org/search/?query=payment+fraud+detection+real+time+machine+learning> .
+  schema:citation <https://arxiv.org/search/?query=payment+fraud+detection+real+time+machine+learning> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-for-fraud-prevention>
-  schema:citation <https://arxiv.org/search/?query=graph+neural+network+fraud+ring+detection> .
+  schema:citation <https://arxiv.org/search/?query=graph+neural+network+fraud+ring+detection> ;
+  af:sourceTier "A" .

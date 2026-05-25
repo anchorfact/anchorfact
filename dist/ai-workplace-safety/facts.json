@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-workplace-safety-1",
     "text": "AI-powered workplace safety (2023-2026) uses computer vision for: (1) PPE compliance -- YOLOv8/DETR detection of hard hats, safety vests, gloves, and goggles with 95%+ accuracy; (2) Hazard zone monitoring -- defining virtual exclusion zones around machinery, alerting when workers enter; (3) Fall detection -- pose estimation identifying slips, trips, and falls in real-time (<2 second detection latency); (4) Ergonomic assessment -- pose-based RULA/REBA scoring identifying awkward postures. Deployments at Amazon, Tesla, and construction sites report 25-40% reduction in recordable incidents.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.sciencedirect.com/journal/safety-science"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-workplace-safety-2",
     "text": "Wearable + AI safety: smart helmets with IMU sensors detect impacts; smart vests with biometric monitoring detect heat stress (heart rate, skin temperature); and computer vision + IoT fusion (cameras + environmental sensors) creates real-time safety dashboards. ML-based predictive safety models analyze near-miss data to predict high-risk locations and times, enabling proactive safety interventions rather than reactive incident response.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.sciencedirect.com/journal/journal-of-safety-research"

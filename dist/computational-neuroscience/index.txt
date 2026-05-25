@@ -1,7 +1,7 @@
 # Computational Neuroscience: AI Models of Brain Circuits, Connectomics, and Neural Computation
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 
 ## TL;DR

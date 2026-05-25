@@ -1,7 +1,7 @@
 # AI for Smart Grids: Load Forecasting, Demand Response, and Grid Stability
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is the brain of the modern electric grid -- predicting demand hours ahead, optimizing when to charge millions of EVs, and balancing solar and wind power in real-time. From DeepMind's 30-40% energy savings at Google to smart meters learning household usage patterns, AI makes the grid cleaner, cheaper, and more reliable.

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-01",
     "text": "Laravel is the most popular PHP web framework, known for elegant syntax and comprehensive ecosystem",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://laravel.com/docs/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-001",
     "text": "Laravel (Taylor Otwell, 2011) is the most popular PHP web framework, known for elegant syntax and comprehensive ecosystem. Features: Eloquent ORM, Blade templating, Artisan CLI, migrations, queues, broadcasting. Laravel ecosystem includes Forge (server management), Vapor (serverless), Nova (admin panel).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://laravel.com/docs/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-002",
     "text": "Laravel 11 (2024): slimmer skeleton, SQLite by default, health routing.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://laravel.com/docs/"

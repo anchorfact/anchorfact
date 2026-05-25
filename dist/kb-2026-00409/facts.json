@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-arts-001",
     "text": "Existentialism (19th-20th centuries) asserts that 'existence precedes essence' — humans are born without predetermined purpose and must create their own meaning through choices and actions. Key thinkers: Kierkegaard, Nietzsche, Heidegger, Sartre, Camus. Emphasizes individual freedom, responsibility, and the anxiety of authentic existence.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://yalebooks.yale.edu/book/9780300115468/existentialism-is-a-humanism/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-arts-002",
     "text": "Camus: The Myth of Sisyphus — life is absurd (meaningless), but we must imagine Sisyphus happy.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://yalebooks.yale.edu/book/9780300115468/existentialism-is-a-humanism/"

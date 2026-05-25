@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/few-shot-learning>
   a schema:article ;
   schema:headline "Few-Shot Learning: Prototypical Networks, MAML, and In-Context Adaptation" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.74" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/few-shot-learning>
-  schema:citation <https://arxiv.org/abs/1703.05175> .
+  schema:citation <https://arxiv.org/abs/1703.05175> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/few-shot-learning>
-  schema:citation <https://arxiv.org/abs/1703.03400> .
+  schema:citation <https://arxiv.org/abs/1703.03400> ;
+  af:sourceTier "A" .

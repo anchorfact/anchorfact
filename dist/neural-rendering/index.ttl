@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/neural-rendering>
   a schema:article ;
   schema:headline "Neural Rendering: NeRF, View Synthesis, and Implicit Scene Representations" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.78" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/neural-rendering>
-  schema:citation <https://arxiv.org/abs/2003.08934> .
+  schema:citation <https://arxiv.org/abs/2003.08934> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/neural-rendering>
-  schema:citation <https://arxiv.org/abs/2308.04079> .
+  schema:citation <https://arxiv.org/abs/2308.04079> ;
+  af:sourceTier "A" .

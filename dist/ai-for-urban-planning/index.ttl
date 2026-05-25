@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-for-urban-planning>
   a schema:article ;
   schema:headline "AI for Urban Planning: Generative Spatial AI, Digital Twins, and Computational Urban Science" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.65" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-for-urban-planning>
-  schema:citation <https://www.sciencedirect.com/science/article/pii/S2666498425000043> .
+  schema:citation <https://www.sciencedirect.com/science/article/pii/S2666498425000043> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/ai-for-urban-planning>
-  schema:citation <https://www.mdpi.com/2624-6511/8/5/175> .
+  schema:citation <https://www.mdpi.com/2624-6511/8/5/175> ;
+  af:sourceTier "A" .

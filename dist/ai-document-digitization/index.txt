@@ -1,7 +1,7 @@
 # AI for Document Digitization: Historical Archives, Handwriting Recognition, and Mass Digitization
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI reads what humans cannot -- carbonized scrolls from 79 AD, centuries-old handwritten manuscripts, and billions of historical documents. From the Vesuvius Challenge reading Herculaneum scrolls to Transkribus serving 100,000 users, AI is unlocking humanity's written heritage.

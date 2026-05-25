@@ -1,7 +1,7 @@
 # Post-Training Alignment: DPO, GRPO, and Beyond
-Confidence: high
+Confidence: medium (0.77) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Post-training alignment makes base models useful and safe. DPO simplified RLHF by removing the reward model; GRPO enabled DeepSeek-R1's reasoning breakthrough. The alignment pipeline (SFT→DPO/RL→reasoning) is now standard across the industry.

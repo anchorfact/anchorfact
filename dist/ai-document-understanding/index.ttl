@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-document-understanding>
   a schema:article ;
   schema:headline "AI Document Understanding: Layout Parsing, Structured Extraction, and Intelligent Document Processing" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-document-understanding>
-  schema:citation <https://arxiv.org/abs/2410.21169> .
+  schema:citation <https://arxiv.org/abs/2410.21169> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-document-understanding>
-  schema:citation <https://aws.amazon.com/ai/generative-ai/use-cases/document-processing/> .
+  schema:citation <https://aws.amazon.com/ai/generative-ai/use-cases/document-processing/> ;
+  af:sourceTier "C" .

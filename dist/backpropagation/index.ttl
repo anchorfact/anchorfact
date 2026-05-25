@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/backpropagation>
   a schema:TechArticle ;
   schema:headline "Backpropagation: The Engine of Neural Network Learning" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.76" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/backpropagation>
-  schema:citation <https://www.nature.com/articles/323533a0> .
+  schema:citation <https://www.nature.com/articles/323533a0> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/backpropagation>
-  schema:citation <https://arxiv.org/abs/1512.03385> .
+  schema:citation <https://arxiv.org/abs/1512.03385> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/backpropagation>
-  schema:citation <https://doi.org/10.1109/ACCESS.2025.3567842> .
+  schema:citation <https://doi.org/10.1109/ACCESS.2025.3567842> ;
+  af:sourceTier "C" .

@@ -4,23 +4,31 @@
 <https://anchorfact.org/kb/kb-2026-00359>
   a schema:TechArticle ;
   schema:headline "American Revolution" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00359>
-  schema:citation <https://www.simonandschuster.com/books/1776/David-McCullough/9780743226721> .
+  schema:citation <https://www.simonandschuster.com/books/1776/David-McCullough/9780743226721> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00359>
-  schema:citation <https://global.oup.com/american-revolution/> .
+  schema:citation <https://global.oup.com/american-revolution/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00359>
-  schema:citation <https://www.simonandschuster.com/1776/> .
+  schema:citation <https://www.simonandschuster.com/1776/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00359>
-  schema:citation <https://global.oup.com/american-revolution/> .
+  schema:citation <https://global.oup.com/american-revolution/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00359>
-  schema:citation <https://www.simonandschuster.com/1776/> .
+  schema:citation <https://www.simonandschuster.com/1776/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00359>
-  schema:citation <https://global.oup.com/american-revolution/> .
+  schema:citation <https://global.oup.com/american-revolution/> ;
+  af:sourceTier "C" .

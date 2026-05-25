@@ -4,20 +4,27 @@
 <https://anchorfact.org/kb/kb-2026-00441>
   a schema:TechArticle ;
   schema:headline "Active Listening" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00441>
-  schema:citation <https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html> .
+  schema:citation <https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00441>
-  schema:citation <https://us.macmillan.com/youre-not-listening/> .
+  schema:citation <https://us.macmillan.com/youre-not-listening/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00441>
-  schema:citation <https://www.mheducation.com/crucial-conversations/> .
+  schema:citation <https://www.mheducation.com/crucial-conversations/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00441>
-  schema:citation <https://us.macmillan.com/youre-not-listening/> .
+  schema:citation <https://us.macmillan.com/youre-not-listening/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00441>
-  schema:citation <https://www.mheducation.com/crucial-conversations/> .
+  schema:citation <https://www.mheducation.com/crucial-conversations/> ;
+  af:sourceTier "C" .

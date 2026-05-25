@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-ai-01",
     "text": "2025 was widely called the \"Year of the Agent\" across the AI industry, marking a transition from passive conversational AI to autonomous systems capable of multi-step reasoning, tool use, and independent action",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/html/2601.01743v1"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-ai-02",
     "text": "By 2026, AI agents are deployed across software engineering , general task automation , and enterprise workflow automation",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://zaobi.tech/pages/ai-tech/agent-tech-report-2025/index.html"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-ai-03",
     "text": "An AI agent is an autonomous system that combines a foundation model with reasoning, planning, memory, and tool-use capabilities to accomplish goals without continuous human supervision",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/html/2601.01743v1"

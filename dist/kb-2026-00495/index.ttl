@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00495>
   a schema:TechArticle ;
   schema:headline "Greek Mythology" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.43" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00495>
-  schema:citation <https://www.hachettebookgroup.com/titles/edith-hamilton/mythology/9780316438520/> .
+  schema:citation <https://www.hachettebookgroup.com/titles/edith-hamilton/mythology/9780316438520/> ;
+  af:sourceTier "C" .

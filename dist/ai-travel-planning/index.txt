@@ -1,7 +1,7 @@
 # AI for Travel Planning: Itinerary Generation, Price Prediction, and Personalized Recommendations
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI plans your vacation -- from LLMs generating personalized itineraries to Hopper predicting the best time to book flights. Google, Expedia, and Booking.com have all launched conversational AI trip planners, transforming travel from search-heavy research to one-conversation booking.

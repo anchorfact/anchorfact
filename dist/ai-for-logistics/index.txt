@@ -1,7 +1,7 @@
 # AI for Logistics: Last-Mile Delivery, Fleet Routing, and Warehouse Automation
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI powers the invisible logistics backbone behind every online order -- predicting what customers will order before they click, routing millions of packages through warehouse robots, and optimizing delivery routes in real-time. From Amazon's fulfillment centers to UPS's 10M-gallon fuel savings, AI logistics delivers the physical outcomes of digital intelligence.

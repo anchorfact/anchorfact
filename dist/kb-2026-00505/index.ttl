@@ -4,23 +4,31 @@
 <https://anchorfact.org/kb/kb-2026-00505>
   a schema:TechArticle ;
   schema:headline "Goal Setting Frameworks" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00505>
-  schema:citation <https://www.penguinrandomhouse.com/books/545839/measure-what-matters-by-john-doerr/> .
+  schema:citation <https://www.penguinrandomhouse.com/books/545839/measure-what-matters-by-john-doerr/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00505>
-  schema:citation <https://jamesclear.com/atomic-habits> .
+  schema:citation <https://jamesclear.com/atomic-habits> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00505>
-  schema:citation <https://www.penguinrandomhouse.com/atomic-habits/> .
+  schema:citation <https://www.penguinrandomhouse.com/atomic-habits/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00505>
-  schema:citation <https://www.simonandschuster.com/7-habits/> .
+  schema:citation <https://www.simonandschuster.com/7-habits/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00505>
-  schema:citation <https://www.penguinrandomhouse.com/atomic-habits/> .
+  schema:citation <https://www.penguinrandomhouse.com/atomic-habits/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00505>
-  schema:citation <https://www.simonandschuster.com/7-habits/> .
+  schema:citation <https://www.simonandschuster.com/7-habits/> ;
+  af:sourceTier "C" .

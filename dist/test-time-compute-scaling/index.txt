@@ -1,7 +1,7 @@
 # Test-Time Compute Scaling: Inference-Time Reasoning Paradigms from o1/o3 to Forest-of-Thought
-Confidence: high
+Confidence: medium (0.73) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Test-Time Compute Scaling represents a paradigm shift: instead of making models bigger during training, allocate more computation during inference for deeper reasoning. OpenAI o1/o3 demonstrated that "thinking longer" enables PhD-level scientific reasoning and competitive programming — reshaping the scaling landscape from pre-training to inference.

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-manufacturing-1",
     "text": "MDPI Automation (August 2025) published a comprehensive review of ML across three key manufacturing domains — Predictive Maintenance (PdM) using vibration analysis and anomaly detection achieving 30-45% reduction in unplanned downtime; Quality Control (QC) with computer vision defect detection at 99%+ accuracy and line speed; and Process Optimization via reinforcement learning reducing energy consumption by 10-25% while maintaining throughput.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.mdpi.com/2673-4052/6/3/37"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-manufacturing-2",
     "text": "Frontiers in AI (December 2025) designed an AI-enabled Digital Twin System for manufacturing — integrating real-time sensor data, generative AI for failure scenario simulation, and predictive analytics — demonstrating that AI-driven digital twins reduce new product introduction time by 40% and quality defect rates by 35% in semiconductor fabrication, validated at a TSMC partner facility.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1655470/full"

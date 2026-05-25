@@ -1,7 +1,7 @@
 # AI for Video Surveillance: Intelligent Monitoring, Anomaly Detection, and Privacy-Preserving Analytics
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI-powered video surveillance goes far beyond simple motion detection -- modern systems track multiple people and objects across camera networks, recognize specific behaviors (fighting, falling, loitering), detect anomalies in real-time, and even answer natural language questions about what happened in a video. The rise of edge AI and privacy-preserving techniques is making intelligent surveillance both more powerful and more accountable.

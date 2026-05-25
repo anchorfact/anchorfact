@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/generative-ai-overview>
   a schema:TechArticle ;
   schema:headline "Generative AI: Models, Capabilities, and Impact" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.5" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/generative-ai-overview>
-  schema:citation <https://www.sequoiacap.com/article/generative-ai-a-creative-new-world/> .
+  schema:citation <https://www.sequoiacap.com/article/generative-ai-a-creative-new-world/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/generative-ai-overview>
-  schema:citation <https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai> .
+  schema:citation <https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai> ;
+  af:sourceTier "C" .

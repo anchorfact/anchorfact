@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00482>
   a schema:TechArticle ;
   schema:headline "History of Medicine" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.255" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00482>
-  schema:citation <https://www.simonandschuster.com/books/The-Emperor-of-All-Maladies/Siddhartha-Mukherjee/9781439170915> .
+  schema:citation <https://www.simonandschuster.com/books/The-Emperor-of-All-Maladies/Siddhartha-Mukherjee/9781439170915> ;
+  af:sourceTier "C" .

@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00322>
   a schema:TechArticle ;
   schema:headline "World War II" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00322>
-  schema:citation <https://www.antonybeevor.com/books/the-second-world-war/> .
+  schema:citation <https://www.antonybeevor.com/books/the-second-world-war/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00322>
-  schema:citation <https://www.littlebrown.com/second-world-war/> .
+  schema:citation <https://www.littlebrown.com/second-world-war/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00322>
-  schema:citation <https://global.oup.com/vsi-ww2/> .
+  schema:citation <https://global.oup.com/vsi-ww2/> ;
+  af:sourceTier "C" .

@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-identity-verification>
   a schema:article ;
   schema:headline "AI Identity Verification: Document Authentication, Liveness Detection, and KYC Compliance" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.74" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-identity-verification>
-  schema:citation <https://arxiv.org/search/?query=identity+verification+document+authentication+liveness> .
+  schema:citation <https://arxiv.org/search/?query=identity+verification+document+authentication+liveness> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-identity-verification>
-  schema:citation <https://digital-strategy.ec.europa.eu/en/policies/eidas-regulation> .
+  schema:citation <https://digital-strategy.ec.europa.eu/en/policies/eidas-regulation> ;
+  af:sourceTier "A" .

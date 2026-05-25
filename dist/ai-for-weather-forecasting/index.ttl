@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-for-weather-forecasting>
   a schema:article ;
   schema:headline "AI for Weather Forecasting: Data-Driven Numerical Weather Prediction and Nowcasting" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.84" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-for-weather-forecasting>
-  schema:citation <https://www.science.org/doi/10.1126/science.adi2336> .
+  schema:citation <https://www.science.org/doi/10.1126/science.adi2336> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/ai-for-weather-forecasting>
-  schema:citation <https://www.nature.com/articles/s41586-023-06185-3> .
+  schema:citation <https://www.nature.com/articles/s41586-023-06185-3> ;
+  af:sourceTier "S" .

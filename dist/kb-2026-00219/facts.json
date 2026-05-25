@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-game-development-01",
     "text": "Poor balance = one dominant strategy, exploitable loopholes",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-game-development-001",
     "text": "Game balance ensures fair, engaging gameplay where multiple strategies are viable and challenge scales appropriately. Balance types: player-vs-player (character/weapon balance), progression (level curves), economy (currency sinks/sources), difficulty (dynamic difficulty adjustment). Poor balance = one dominant strategy, exploitable loopholes.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-game-development-002",
     "text": "Balance techniques: data-driven (telemetry, win rates), simulation (Monte Carlo, thousands of AI matches), spreadsheet modeling (Excel/Google Sheets).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"

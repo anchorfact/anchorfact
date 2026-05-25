@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00496>
   a schema:TechArticle ;
   schema:headline "Ocean Life" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.43" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00496>
-  schema:citation <https://global.oup.com/academic/product/the-biology-of-the-deep-ocean-9780198549567> .
+  schema:citation <https://global.oup.com/academic/product/the-biology-of-the-deep-ocean-9780198549567> ;
+  af:sourceTier "C" .

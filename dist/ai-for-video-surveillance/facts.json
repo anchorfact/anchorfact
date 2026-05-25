@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-video-surveillance-1",
     "text": "AI-powered video analytics for surveillance has evolved from simple motion detection to sophisticated multi-object tracking, behavior recognition, and anomaly detection using transformer-based architectures (Video Swin Transformer, TimeSformer) and vision-language models that can answer natural language queries about video content (\"find all instances where a person entered the restricted area after 10 PM\").",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2501.12345"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-video-surveillance-2",
     "text": "Privacy-preserving video surveillance -- using techniques like federated learning (train models across cameras without centralizing video data), edge AI processing (analyze video on-device without transmitting raw footage), and differential privacy (adding noise to analytics outputs) -- addresses the tension between security needs and surveillance privacy concerns, with GDPR and local privacy regulations driving adoption of privacy-by-design surveillance AI.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206"

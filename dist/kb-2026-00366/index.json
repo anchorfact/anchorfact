@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00366",
   "headline": "Genetics and Heredity",
   "description": "Genetics studies heredity — how traits pass from parents to offspring. Mendel's laws (1866): segregation (alleles separate) and independent assortment. DNA structure (Watson/Crick, 1953). Human Genome Project (completed 2003) sequenced all ~3 billion base pairs. CRISPR-Cas9 (2012) enables precise gene editing.",
-  "dateCreated": "2026-05-25T02:46:04.597Z",
-  "dateModified": "2026-05-25T02:46:04.597Z",
+  "dateCreated": "2026-05-22",
+  "dateModified": "2026-05-25T12:59:32.484Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -16,25 +16,60 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidence": "low",
+  "anchorfact:confidenceScore": 0.425,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 0.3,
+      "source_count": 1,
+      "source_verified": 0.2,
+      "freshness": 1,
+      "decay": 0.30000000000000004,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "low",
+    "confidence_score": 0.425,
+    "confidence_basis": "verified_sources",
+    "sources_total": 3,
+    "sources_verified": 0,
+    "sources_unreachable": 3,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "C",
+      "C",
+      "C"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": true,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "The Gene: An Intimate History (Siddhartha Mukherjee)",
-      "sameAs": "https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524"
+      "sameAs": "https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2016
     },
     {
       "@type": "CreativeWork",
       "name": "Introduction to Genetic Analysis (12th Edition, 2025)",
       "author": "Griffiths A.J.F., Doebley J.",
-      "sameAs": "https://www.macmillanlearning.com/genetics/"
+      "sameAs": "https://www.macmillanlearning.com/genetics/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "The Gene: An Intimate History (2025 Updated)",
       "author": "Mukherjee S.",
-      "sameAs": "https://www.simonandschuster.com/the-gene/"
+      "sameAs": "https://www.simonandschuster.com/the-gene/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     }
   ]
 }

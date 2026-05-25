@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-decentralized-ai-1",
     "text": "MDPI Information (September 2025) published a comprehensive systematic review of decentralized AI — analyzing 71 peer-reviewed studies across four pillars: decentralized data governance (federated learning, data cooperatives), decentralized compute networks (P2P GPU sharing, DePIN), decentralized model marketplaces (blockchain-based model licensing), and decentralized inference (distributed LLM serving) — identifying trustworthiness as the central cross-cutting challenge.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.mdpi.com/2078-2489/16/9/765"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-decentralized-ai-2",
     "text": "MIT Media Lab's Decentralized AI research initiative and the emerging DePIN (Decentralized Physical Infrastructure Networks) ecosystem (2024-2026) demonstrate practical P2P AI inference at scale — networks like Akash, Gensyn, and Render distribute model serving across thousands of globally distributed GPU nodes, reducing inference costs by 40-70% compared to centralized cloud providers while eliminating single points of failure.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2402.02885"

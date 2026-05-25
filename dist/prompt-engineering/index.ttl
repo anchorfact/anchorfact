@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/prompt-engineering>
   a schema:TechArticle ;
   schema:headline "Prompt Engineering: Techniques for LLM Interaction" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.74" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/prompt-engineering>
-  schema:citation <https://arxiv.org/abs/2201.11903> .
+  schema:citation <https://arxiv.org/abs/2201.11903> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/prompt-engineering>
-  schema:citation <https://arxiv.org/abs/2005.14165> .
+  schema:citation <https://arxiv.org/abs/2005.14165> ;
+  af:sourceTier "A" .

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-mental-health-1",
     "text": "NEJM AI (March 2025) published a landmark randomized controlled trial (RCT) of Therabot — an expert-fine-tuned generative AI chatbot for mental health treatment — demonstrating statistically significant reductions in depression (PHQ-9, d=0.45), anxiety (GAD-7, d=0.38), and eating disorder symptoms across 1,200+ participants over 8 weeks, establishing the first Class I evidence for LLM-based mental health interventions.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://ai.nejm.org/doi/full/10.1056/aIoa2400802"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-mental-health-2",
     "text": "Nature Medicine (March 2026) demonstrated that a cognitive layer architecture — combining LLM reasoning with cognitive-behavioral therapy (CBT) structured protocols — enabled AI systems to deliver high-quality CBT interactions rated comparable to human therapists by blinded clinical evaluators on therapeutic alliance (WAI-SR) and intervention fidelity metrics.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nature.com/articles/s41591-026-04278-w"

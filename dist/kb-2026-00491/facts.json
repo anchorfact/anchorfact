@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-01",
     "text": "Or emerged suddenly as a by-product of larger brains",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.harpercollins.com/products/the-language-instinct-steven-pinker"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-02",
     "text": "Estimated origin: 50,000-200,000 years ago",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.harpercollins.com/products/the-language-instinct-steven-pinker"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-03",
     "text": "Nicaraguan Sign Language : deaf children created a new language spontaneously",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.harpercollins.com/products/the-language-instinct-steven-pinker"

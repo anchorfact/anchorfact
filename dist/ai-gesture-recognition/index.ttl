@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-gesture-recognition>
   a schema:article ;
   schema:headline "AI Gesture Recognition: Hand Tracking, Sign Language, and Touchless Interaction" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-gesture-recognition>
-  schema:citation <https://arxiv.org/search/?query=hand+pose+estimation+gesture+recognition+deep+learning> .
+  schema:citation <https://arxiv.org/search/?query=hand+pose+estimation+gesture+recognition+deep+learning> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-gesture-recognition>
-  schema:citation <https://arxiv.org/search/?query=sign+language+recognition+transformer> .
+  schema:citation <https://arxiv.org/search/?query=sign+language+recognition+transformer> ;
+  af:sourceTier "A" .

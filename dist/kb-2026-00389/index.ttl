@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00389>
   a schema:TechArticle ;
   schema:headline "Mount Everest" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00389>
-  schema:citation <https://www.penguinrandomhouse.com/books/306270/into-thin-air-by-jon-krakauer/> .
+  schema:citation <https://www.penguinrandomhouse.com/books/306270/into-thin-air-by-jon-krakauer/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00389>
-  schema:citation <https://www.penguinrandomhouse.com/into-thin-air/> .
+  schema:citation <https://www.penguinrandomhouse.com/into-thin-air/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00389>
-  schema:citation <https://www.nationalgeographic.com/everest/> .
+  schema:citation <https://www.nationalgeographic.com/everest/> ;
+  af:sourceTier "C" .

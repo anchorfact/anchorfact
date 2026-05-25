@@ -5,10 +5,14 @@
   a schema:article ;
   schema:headline "AI for Recruiting: Resume Screening, Talent Matching, and Fairness in Hiring" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidenceScore "0.85" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-for-recruiting>
-  schema:citation <https://arxiv.org/abs/2405.19699> .
+  schema:citation <https://arxiv.org/abs/2405.19699> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-for-recruiting>
-  schema:citation <https://link.springer.com/article/10.1007/s44282-025-00246-w> .
+  schema:citation <https://link.springer.com/article/10.1007/s44282-025-00246-w> ;
+  af:sourceTier "S" .

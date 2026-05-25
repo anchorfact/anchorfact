@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-democratization-1",
     "text": "The open-source AI movement (2023-2026) has produced models competitive with proprietary systems: Llama 3 (Meta, 2024), Mistral, DeepSeek, Qwen, and Gemma achieve within 5-10% of GPT-4 performance on standard benchmarks while being freely available. Hugging Face hosts 500K+ open models. The trend has democratized access to frontier AI capabilities, previously available only through paid APIs.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2407.21783"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-democratization-2",
     "text": "Low-code and no-code AI platforms (2024-2026) enable non-programmers to build ML models: Google AutoML, Microsoft Azure ML Designer, DataRobot, and H2O Driverless AI provide automated feature engineering, model selection, and hyperparameter tuning via drag-and-drop interfaces. LLM-based code generation (GitHub Copilot, Replit Agent) further lowers the programming barrier, enabling natural language specification of ML pipelines.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://huggingface.co/"

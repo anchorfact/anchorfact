@@ -1,7 +1,7 @@
 # The Psychology of Decision Making
-Confidence: high
+Confidence: medium (0.635) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Human decision making is shaped by cognitive biases — systematic deviations from rationality affecting everything from financial choices to medical diagnoses.

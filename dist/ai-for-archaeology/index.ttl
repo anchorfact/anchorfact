@@ -5,10 +5,14 @@
   a schema:article ;
   schema:headline "AI for Archaeology: Site Detection, Artifact Classification, and Digital Heritage Preservation" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidenceScore "0.85" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-for-archaeology>
-  schema:citation <https://link.springer.com/article/10.1007/s11831-025-10393-7> .
+  schema:citation <https://link.springer.com/article/10.1007/s11831-025-10393-7> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/ai-for-archaeology>
-  schema:citation <https://www.researchgate.net/publication/387798164> .
+  schema:citation <https://www.researchgate.net/publication/387798164> ;
+  af:sourceTier "A" .

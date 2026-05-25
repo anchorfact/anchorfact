@@ -1,7 +1,7 @@
 # Backpropagation: The Engine of Neural Network Learning
-Confidence: high
+Confidence: medium (0.76) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Backpropagation is the fundamental algorithm for training neural networks, computing gradients of the loss with respect to every weight via repeated application of the calculus chain rule.

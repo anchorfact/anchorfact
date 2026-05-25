@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-smart-homes",
   "headline": "AI for Smart Homes: Ambient Intelligence, Energy Optimization, and Predictive Home Automation",
   "description": "AI is transforming smart homes from remote-controlled gadgets to truly intelligent living spaces that learn your habits, predict your needs, and optimize energy usage without you thinking about it. The convergence of ambient intelligence, reinforcement learning for HVAC control, and predictive automation is creating homes that are comfortable, efficient, and proactive.",
-  "dateCreated": "2026-05-25T02:46:03.466Z",
+  "dateCreated": "2026-05-24",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",
@@ -16,18 +16,50 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidence": "medium",
+  "anchorfact:confidenceScore": 0.615,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 0.9,
+      "source_count": 0.8,
+      "source_verified": 0.2,
+      "freshness": 1,
+      "decay": 0.1,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "medium",
+    "confidence_score": 0.615,
+    "confidence_basis": "verified_sources",
+    "sources_total": 2,
+    "sources_verified": 0,
+    "sources_unreachable": 2,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "A",
+      "A"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": false,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "Reinforcement Learning for Intelligent Building Energy Management: A Comprehensive Review",
-      "sameAs": "https://www.mdpi.com/journal/energies"
+      "sameAs": "https://www.mdpi.com/journal/energies",
+      "anchorfact:sourceTier": "A",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "Ambient Intelligence in Smart Homes: From Rule-Based Automation to Predictive, Context-Aware Systems",
-      "sameAs": "https://dl.acm.org/journal/csur"
+      "sameAs": "https://dl.acm.org/journal/csur",
+      "anchorfact:sourceTier": "A",
+      "anchorfact:year": 2025
     }
   ]
 }

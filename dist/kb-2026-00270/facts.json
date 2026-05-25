@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-ai-001",
     "text": "RNNs process sequential data (text, time series, speech) by maintaining a hidden state that captures information from previous steps. Unlike feedforward networks, RNNs have recurrent connections — output at time t depends on input at t and hidden state from t-1.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.48550/arXiv.1406.1078"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-ai-002",
     "text": "LSTM (Long Short-Term Memory, Hochreiter & Schmidhuber 1997): adds forget/input/output gates to control information flow.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.1162/neco.1997.9.8.1735"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-ai-003",
     "text": "GRU (Gated Recurrent Unit, Cho 2014): simplified LSTM with reset/update gates.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.48550/arXiv.1406.1078"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-ai-004",
     "text": "Transformers largely replaced RNNs for NLP (2017+), but RNNs remain relevant for small datasets and real-time streaming.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.48550/arXiv.1406.1078"

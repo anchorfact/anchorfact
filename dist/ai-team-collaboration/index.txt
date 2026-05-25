@@ -1,7 +1,7 @@
 # AI for Team Collaboration: Smart Meetings, Knowledge Sharing, and Collaborative Intelligence
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is the newest member of every team -- transcribing meetings, extracting action items, surfacing relevant documents, and connecting colleagues who should be collaborating. From Microsoft Teams Copilot to Notion AI, AI-augmented collaboration reduces meeting overhead by 10+ hours/month while improving knowledge sharing.

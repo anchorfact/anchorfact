@@ -1,83 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Model Context Protocol (MCP) — AnchorFact</title></head>
-<body><article><br>
-<br>
-<br>
-## TL;DR<br>
-<br>
-The Model Context Protocol (MCP) is an open standard for connecting AI models to external data sources and tools, introduced by Anthropic on November 25, 2024. It replaces the fragmented pattern of custom integrations with a unified client-server protocol. As of December 2025, MCP has been adopted by OpenAI, Google, and Microsoft; hosts over 10,000 public servers; sees 97 million SDK downloads per month; and has been donated to the Linux Foundation under the new Agentic AI Foundation (AAIF).<br>
-<br>
-## Core Explanation<br>
-<br>
-Before MCP, every AI application that needed to access external data—files, databases, APIs, business tools—required custom integration code. Each data source had its own API, authentication scheme, and data format. MCP replaces this with a standardized protocol:<br>
-<br>
-- **MCP Servers**: Lightweight programs that expose data sources (files, databases, tools) through a standard interface. A single MCP server can give AI access to Google Drive, GitHub, or a company's internal knowledge base.<br>
-- **MCP Clients**: AI applications (Claude Desktop, ChatGPT, VS Code, custom apps) that connect to MCP servers to retrieve context. The client sends tool/resource requests; the server responds with structured data.<br>
-<br>
-This architecture enables AI models to maintain context across multiple data sources without losing state—a critical capability for complex, multi-step agentic workflows.<br>
-<br>
-## Detailed Analysis<br>
-<br>
-### Adoption Timeline<br>
-<br>
-| Date     | Milestone                                                                                     |<br>
-| -------- | --------------------------------------------------------------------------------------------- |<br>
-| Nov 2024 | Anthropic releases MCP; approximately 100 public servers available                            |<br>
-| Mar 2025 | **OpenAI** announces MCP support in ChatGPT and API                                           |<br>
-| Apr 2025 | **Google** integrates MCP into Gemini via AI Studio and Vertex AI                             |<br>
-| May 2025 | Public MCP servers exceed 4,000                                                               |<br>
-| Jun 2025 | Specification update: mandatory PKCE, Resource Indicators, no token passthrough               |<br>
-| Nov 2025 | Transport layer upgraded from SSE to Streamable HTTP; specification update                    |<br>
-| Dec 2025 | **Donated to Linux Foundation** under AAIF; 10,000+ public servers; 97M monthly SDK downloads |<br>
-<br>
-### Linux Foundation Governance (AAIF)<br>
-<br>
-In December 2025, Anthropic donated MCP to the Linux Foundation's newly established **Agentic AI Foundation (AAIF)** , modeled after CNCF (Kubernetes). This moved MCP from single-company control to community-governed, vendor-neutral stewardship.<br>
-<br>
-**AAIF Joint Founders**: Anthropic (MCP), Block (goose AI Agent framework), OpenAI (AGENTS.md specification)<br>
-<br>
-**AAIF Platinum Members** (governance participants): AWS, Anthropic, Block, Bloomberg, Cloudflare, Google, Microsoft, OpenAI<br>
-<br>
-This is the same governance model that made Kubernetes the de facto standard for container orchestration.<br>
-<br>
-### Protocol Architecture<br>
-<br>
-MCP uses a **client-server model** over Streamable HTTP (originally SSE, upgraded November 2025):<br>
-<br>
-- **Resources**: File-like data that can be read by clients (documents, database records, API responses)<br>
-- **Tools**: Functions that can be invoked by AI models (search, calculation, API calls, file operations)<br>
-- **Prompts**: Pre-written prompt templates for common tasks<br>
-- **Sampling**: Server-initiated requests to the LLM for completions<br>
-<br>
-### Security (2025-06-18 Specification)<br>
-<br>
-- **Mandatory PKCE**: Per OAuth 2.1, prevents authorization code interception and injection attacks<br>
-- **Resource Indicators** (RFC 8707): Tokens are scoped to specific MCP servers, preventing cross-server token misuse<br>
-- **No Token Passthrough**: MCP servers must reject tokens not explicitly issued for them<br>
-<br>
-### Key Pre-Built Servers<br>
-<br>
-Anthropic ships pre-built MCP servers for: Google Drive, Slack, GitHub, Git, PostgreSQL, Puppeteer (browser automation), Brave Search, and filesystem access. The open-source community has extended this to thousands of additional integrations.<br>
-<br>
-### MCP vs. REST API<br>
-<br>
-| Aspect         | Traditional REST API          | MCP                                   |<br>
-| -------------- | ----------------------------- | ------------------------------------- |<br>
-| Integration    | Custom code per data source   | Standardized protocol                 |<br>
-| Context        | Stateless, request-by-request | Stateful connections maintain context |<br>
-| Discovery      | Manual documentation          | Self-describing servers               |<br>
-| Authentication | Per-service implementation    | Standardized OAuth 2.1 flow           |<br>
-| Tool calls     | Separate API discovery        | Servers expose tools natively         |<br>
-<br>
-### Competition and Ecosystem<br>
-<br>
-Google introduced **A2A (Agent-to-Agent)** as a separate protocol for agent-to-agent communication, which complements rather than competes with MCP (MCP handles tool/data access; A2A handles agent coordination). The coexistence of both standards under Linux Foundation governance suggests a complementary ecosystem rather than a winner-take-all dynamic.<br>
-<br>
-## Further Reading<br>
-<br>
-- [MCP Specification](https://modelcontextprotocol.io/specification/2025-06-18): Official spec<br>
-- [Anthropic Announcement](https://www.anthropic.com/news/model-context-protocol): Original November 2024 release<br>
-- [MCP GitHub](https://github.com/modelcontextprotocol): Open-source SDK and servers<br>
+<head>
+  <meta charset="utf-8">
+  <title>Model Context Protocol (MCP) — AnchorFact</title>
+  <meta name="anchorfact:confidence" content="medium (0.845)">
+  <meta name="anchorfact:generation" content="human_only">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/kb-2026-00016","headline":"Model Context Protocol (MCP)","description":"The Model Context Protocol (MCP) is an open standard for connecting AI models to external data sources and tools, introduced by Anthropic on November 25, 2024. It replaces the fragmented pattern of custom integrations with a unified client-server protocol. As of December 2025, MCP has been adopted by OpenAI, Google, and Microsoft; hosts over 10,000 public servers; sees 97 million SDK downloads per month; and has been donated to the Linux Foundation under the new Agentic AI Foundation (AAIF).","dateCreated":"2026-05-22","dateModified":"2026-05-25T12:59:31.700Z","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.845,"anchorfact:generationMethod":"human_only","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":1,"source_count":1,"source_verified":0.9,"freshness":1,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.845,"confidence_basis":"verified_sources","sources_total":3,"sources_verified":3,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["C","S","C"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Introducing the Model Context Protocol","author":"Anthropic","sameAs":"https://www.anthropic.com/news/model-context-protocol","anchorfact:sourceTier":"C","anchorfact:year":2024},{"@type":"CreativeWork","name":"Model Context Protocol Specification (2025-06-18)","sameAs":"https://modelcontextprotocol.io/specification/2025-06-18","anchorfact:sourceTier":"S","anchorfact:year":2025},{"@type":"CreativeWork","name":"MCP Standardization and Agent Protocol (2026-03-18 analysis)","sameAs":"https://oct-rick-brick.com/zh/articles/2026-03-18-mcp-standardization-agent-protocol/","anchorfact:sourceTier":"C","anchorfact:year":2026}]}</script>
+</head>
+<body><article><br>
+<br>
+<br>
+## TL;DR<br>
+<br>
+The Model Context Protocol (MCP) is an open standard for connecting AI models to external data sources and tools, introduced by Anthropic on November 25, 2024. It replaces the fragmented pattern of custom integrations with a unified client-server protocol. As of December 2025, MCP has been adopted by OpenAI, Google, and Microsoft; hosts over 10,000 public servers; sees 97 million SDK downloads per month; and has been donated to the Linux Foundation under the new Agentic AI Foundation (AAIF).<br>
+<br>
+## Core Explanation<br>
+<br>
+Before MCP, every AI application that needed to access external data—files, databases, APIs, business tools—required custom integration code. Each data source had its own API, authentication scheme, and data format. MCP replaces this with a standardized protocol:<br>
+<br>
+- **MCP Servers**: Lightweight programs that expose data sources (files, databases, tools) through a standard interface. A single MCP server can give AI access to Google Drive, GitHub, or a company's internal knowledge base.<br>
+- **MCP Clients**: AI applications (Claude Desktop, ChatGPT, VS Code, custom apps) that connect to MCP servers to retrieve context. The client sends tool/resource requests; the server responds with structured data.<br>
+<br>
+This architecture enables AI models to maintain context across multiple data sources without losing state—a critical capability for complex, multi-step agentic workflows.<br>
+<br>
+## Detailed Analysis<br>
+<br>
+### Adoption Timeline<br>
+<br>
+| Date     | Milestone                                                                                     |<br>
+| -------- | --------------------------------------------------------------------------------------------- |<br>
+| Nov 2024 | Anthropic releases MCP; approximately 100 public servers available                            |<br>
+| Mar 2025 | **OpenAI** announces MCP support in ChatGPT and API                                           |<br>
+| Apr 2025 | **Google** integrates MCP into Gemini via AI Studio and Vertex AI                             |<br>
+| May 2025 | Public MCP servers exceed 4,000                                                               |<br>
+| Jun 2025 | Specification update: mandatory PKCE, Resource Indicators, no token passthrough               |<br>
+| Nov 2025 | Transport layer upgraded from SSE to Streamable HTTP; specification update                    |<br>
+| Dec 2025 | **Donated to Linux Foundation** under AAIF; 10,000+ public servers; 97M monthly SDK downloads |<br>
+<br>
+### Linux Foundation Governance (AAIF)<br>
+<br>
+In December 2025, Anthropic donated MCP to the Linux Foundation's newly established **Agentic AI Foundation (AAIF)** , modeled after CNCF (Kubernetes). This moved MCP from single-company control to community-governed, vendor-neutral stewardship.<br>
+<br>
+**AAIF Joint Founders**: Anthropic (MCP), Block (goose AI Agent framework), OpenAI (AGENTS.md specification)<br>
+<br>
+**AAIF Platinum Members** (governance participants): AWS, Anthropic, Block, Bloomberg, Cloudflare, Google, Microsoft, OpenAI<br>
+<br>
+This is the same governance model that made Kubernetes the de facto standard for container orchestration.<br>
+<br>
+### Protocol Architecture<br>
+<br>
+MCP uses a **client-server model** over Streamable HTTP (originally SSE, upgraded November 2025):<br>
+<br>
+- **Resources**: File-like data that can be read by clients (documents, database records, API responses)<br>
+- **Tools**: Functions that can be invoked by AI models (search, calculation, API calls, file operations)<br>
+- **Prompts**: Pre-written prompt templates for common tasks<br>
+- **Sampling**: Server-initiated requests to the LLM for completions<br>
+<br>
+### Security (2025-06-18 Specification)<br>
+<br>
+- **Mandatory PKCE**: Per OAuth 2.1, prevents authorization code interception and injection attacks<br>
+- **Resource Indicators** (RFC 8707): Tokens are scoped to specific MCP servers, preventing cross-server token misuse<br>
+- **No Token Passthrough**: MCP servers must reject tokens not explicitly issued for them<br>
+<br>
+### Key Pre-Built Servers<br>
+<br>
+Anthropic ships pre-built MCP servers for: Google Drive, Slack, GitHub, Git, PostgreSQL, Puppeteer (browser automation), Brave Search, and filesystem access. The open-source community has extended this to thousands of additional integrations.<br>
+<br>
+### MCP vs. REST API<br>
+<br>
+| Aspect         | Traditional REST API          | MCP                                   |<br>
+| -------------- | ----------------------------- | ------------------------------------- |<br>
+| Integration    | Custom code per data source   | Standardized protocol                 |<br>
+| Context        | Stateless, request-by-request | Stateful connections maintain context |<br>
+| Discovery      | Manual documentation          | Self-describing servers               |<br>
+| Authentication | Per-service implementation    | Standardized OAuth 2.1 flow           |<br>
+| Tool calls     | Separate API discovery        | Servers expose tools natively         |<br>
+<br>
+### Competition and Ecosystem<br>
+<br>
+Google introduced **A2A (Agent-to-Agent)** as a separate protocol for agent-to-agent communication, which complements rather than competes with MCP (MCP handles tool/data access; A2A handles agent coordination). The coexistence of both standards under Linux Foundation governance suggests a complementary ecosystem rather than a winner-take-all dynamic.<br>
+<br>
+## Further Reading<br>
+<br>
+- [MCP Specification](https://modelcontextprotocol.io/specification/2025-06-18): Official spec<br>
+- [Anthropic Announcement](https://www.anthropic.com/news/model-context-protocol): Original November 2024 release<br>
+- [MCP GitHub](https://github.com/modelcontextprotocol): Open-source SDK and servers<br>
 </article></body>
 </html>

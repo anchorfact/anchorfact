@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00429>
   a schema:TechArticle ;
   schema:headline "Stock Market Basics" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.49" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00429>
-  schema:citation <https://wwnorton.com/books/9781324035466> .
+  schema:citation <https://wwnorton.com/books/9781324035466> ;
+  af:sourceTier "C" .

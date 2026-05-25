@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-surveillance-systems-1",
     "text": "AI video surveillance (2023-2026): deep learning models (YOLOv8/ReID for multi-object tracking, I3D/VideoMAE for action recognition) analyze CCTV feeds in real-time. Applications: anomaly detection (fighting, loitering, abandoned objects), people counting (retail footfall), vehicle analytics (license plate recognition, parking occupancy), and forensic search (\"find person in red shirt between 2-4 PM across 100 cameras\").",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=video+surveillance+deep+learning+tracking+anomaly"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-surveillance-systems-2",
     "text": "AI surveillance ethics and regulation: the EU AI Act (2026 enforcement) bans real-time biometric surveillance in public spaces (with exceptions for serious crime). China extensively deploys AI surveillance (Skynet, 600M+ cameras). US cities (San Francisco, Boston) have banned government use of facial recognition. The AI surveillance debate centers on: public safety benefit vs. privacy and civil liberties, bias in facial recognition, and the chilling effect of mass surveillance.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=AI+surveillance+ethics+facial+recognition+regulation"

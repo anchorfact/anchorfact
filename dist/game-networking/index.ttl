@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/game-networking>
   a schema:TechArticle ;
   schema:headline "Game Networking Architecture" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.51" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/game-networking>
-  schema:citation <https://www.pearson.com/en-us/subject-catalog/p/multiplayer-game-programming/P200000009344> .
+  schema:citation <https://www.pearson.com/en-us/subject-catalog/p/multiplayer-game-programming/P200000009344> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/game-networking>
-  schema:citation <https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking> .
+  schema:citation <https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking> ;
+  af:sourceTier "C" .

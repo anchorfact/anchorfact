@@ -1,7 +1,7 @@
 # AI for Software Testing: Automated Test Generation, Fuzzing, and Quality Assurance
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is transforming software testing -- from LLMs generating unit tests from code comments to AI-powered fuzzing finding security vulnerabilities in production systems. Test automation, once brittle and maintenance-heavy, is becoming intelligent: tests that write themselves, adapt to UI changes, and find bugs humans would miss.

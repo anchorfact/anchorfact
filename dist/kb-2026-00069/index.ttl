@@ -4,17 +4,23 @@
 <https://anchorfact.org/kb/kb-2026-00069>
   a schema:TechArticle ;
   schema:headline "CSS (Cascading Style Sheets)" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00069>
-  schema:citation <https://developer.mozilla.org/en-US/docs/Web/CSS> .
+  schema:citation <https://developer.mozilla.org/en-US/docs/Web/CSS> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00069>
-  schema:citation <https://doi.org/undefined> .
+  schema:citation <https://doi.org/undefined> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00069>
-  schema:citation <https://www.oreilly.com/css/> .
+  schema:citation <https://www.oreilly.com/css/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00069>
-  schema:citation <https://abookapart.com/products/modern-css> .
+  schema:citation <https://abookapart.com/products/modern-css> ;
+  af:sourceTier "C" .

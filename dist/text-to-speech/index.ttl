@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/text-to-speech>
   a schema:TechArticle ;
   schema:headline "Text-to-Speech and Voice Synthesis" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.76" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/text-to-speech>
-  schema:citation <https://arxiv.org/abs/1712.05884> .
+  schema:citation <https://arxiv.org/abs/1712.05884> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/text-to-speech>
-  schema:citation <https://arxiv.org/abs/2210.13438> .
+  schema:citation <https://arxiv.org/abs/2210.13438> ;
+  af:sourceTier "A" .

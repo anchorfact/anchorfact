@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-01",
     "text": "Germ theory : microorganisms cause disease — single most important medical breakthrough",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.simonandschuster.com/books/The-Emperor-of-All-Maladies/Siddhartha-Mukherjee/9781439170915"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-001",
     "text": "Medicine's evolution: ancient (Hippocrates: disease natural not supernatural, ~400 BCE) → Galen (anatomy via animals, errors persisted 1500 years) → Vesalius (human dissection, 1543) → germ theory (Pasteur, Koch, 1860s-80s) → anesthesia (1846, Morton) → antiseptics (Lister, 1867) → antibiotics (Fleming: penicillin, 1928) → modern medicine.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.simonandschuster.com/books/The-Emperor-of-All-Maladies/Siddhartha-Mukherjee/9781439170915"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-002",
     "text": "Germ theory (Pasteur 1861): microorganisms cause disease — single most important medical breakthrough.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.simonandschuster.com/books/The-Emperor-of-All-Maladies/Siddhartha-Mukherjee/9781439170915"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-003",
     "text": "Handwashing (Semmelweis, 1847): reduced maternal mortality from 18% to 2% — doctors rejected him, he died in asylum.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.simonandschuster.com/books/The-Emperor-of-All-Maladies/Siddhartha-Mukherjee/9781439170915"
@@ -49,6 +61,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-004",
     "text": "Smallpox eradication (1980): only human disease eradicated — vaccination (Jenner, 1796).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.simonandschuster.com/books/The-Emperor-of-All-Maladies/Siddhartha-Mukherjee/9781439170915"
@@ -60,6 +75,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-005",
     "text": "CRISPR gene editing (2012): possible cures for genetic diseases.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.simonandschuster.com/books/The-Emperor-of-All-Maladies/Siddhartha-Mukherjee/9781439170915"

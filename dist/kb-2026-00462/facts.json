@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-health-01",
     "text": "Carbs: primary fuel",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.humankinetics.com/products/nancy-clarks-sports-nutrition-guidebook-6th-edition"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-health-02",
     "text": "Carb loading: taper exercise + increase carbs 3 days before marathon",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.humankinetics.com/products/nancy-clarks-sports-nutrition-guidebook-6th-edition"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-health-03",
     "text": "Glycogen stores 2000 calories worth — enough for 2h intense exercise",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.humankinetics.com/products/nancy-clarks-sports-nutrition-guidebook-6th-edition"

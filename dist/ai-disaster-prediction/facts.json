@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-disaster-prediction-1",
     "text": "ScienceDirect (2024) published a systematic review of deep learning for natural disaster management -- analyzing CNN, LSTM, and hybrid architectures applied to earthquake prediction (seismic signal analysis), flood forecasting (hydrological + meteorological ML models), wildfire detection (satellite + ground camera), and tsunami early warning (DART buoy + coastal sensor networks) -- finding that DL achieves 15-30% improvement in prediction lead time over physics-based models.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.sciencedirect.com/science/article/pii/S1470160X24005247"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-disaster-prediction-2",
     "text": "Springer (2025) chapter on AI for disaster prediction documented the integration of multimodal data -- satellite imagery (Sentinel, MODIS), seismic sensors (USGS), weather radar, IoT flood gauges, and social media (Twitter crisis mapping via NLP) -- into unified AI early warning systems. Google Flood Hub (2023-2025) provides AI-based flood forecasts for 80+ countries, reaching 460M people with 7-day lead time.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://link.springer.com/chapter/10.1007/978-981-96-6863-2_6"

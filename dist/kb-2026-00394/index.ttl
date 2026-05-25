@@ -4,20 +4,27 @@
 <https://anchorfact.org/kb/kb-2026-00394>
   a schema:TechArticle ;
   schema:headline "Aztec Empire" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.6" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00394>
-  schema:citation <https://www.wiley.com/en-us/The+Aztecs%2C+3rd+Edition-p-9781405194976> .
+  schema:citation <https://www.wiley.com/en-us/The+Aztecs%2C+3rd+Edition-p-9781405194976> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00394>
-  schema:citation <https://global.oup.com/aztecs/> .
+  schema:citation <https://global.oup.com/aztecs/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00394>
-  schema:citation <https://global.oup.com/vsi-aztecs/> .
+  schema:citation <https://global.oup.com/vsi-aztecs/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00394>
-  schema:citation <https://global.oup.com/aztecs/> .
+  schema:citation <https://global.oup.com/aztecs/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00394>
-  schema:citation <https://www.wiley.com/aztecs/> .
+  schema:citation <https://www.wiley.com/aztecs/> ;
+  af:sourceTier "C" .

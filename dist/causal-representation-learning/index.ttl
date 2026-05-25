@@ -5,10 +5,14 @@
   a schema:article ;
   schema:headline "Causal Representation Learning: Deep Causal Discovery, Intervention, and Counterfactuals" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidenceScore "0.85" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/causal-representation-learning>
-  schema:citation <https://dl.acm.org/doi/10.1145/3762179> .
+  schema:citation <https://dl.acm.org/doi/10.1145/3762179> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/causal-representation-learning>
-  schema:citation <https://ojs.aaai.org/index.php/AAAI/article/view/28108> .
+  schema:citation <https://ojs.aaai.org/index.php/AAAI/article/view/28108> ;
+  af:sourceTier "A" .

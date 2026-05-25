@@ -1,7 +1,7 @@
 # Mental Health: Disorders, Treatments, and Neurobiology
-Confidence: high
+Confidence: medium (0.775) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Mental health encompasses emotional, psychological, and social well-being. The biopsychosocial model recognizes mental disorders arise from genetic vulnerability, neurobiological dysfunction, psychological factors, and social determinants.

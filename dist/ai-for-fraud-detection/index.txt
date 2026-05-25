@@ -1,7 +1,7 @@
 # AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Financial fraud costs the global economy an estimated $5 trillion annually. AI — particularly graph neural networks — is transforming fraud detection from reactive rules to proactive pattern discovery, catching complex money laundering networks and transaction fraud that rule-based systems miss while reducing false alarms that waste investigator time.

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-01",
     "text": "Servant leadership : leader's primary role is to serve the team",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguinrandomhouse.com/books/223777/leaders-eat-last-by-simon-sinek/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-001",
     "text": "Leadership is the art of enabling others to achieve shared goals. Key principles: lead by example (embody values), empower (don't micromanage), servant leadership (put team first), communicate vision (Sinek: 'Start with Why'), build trust through integrity and consistency. The best leaders create more leaders.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguinrandomhouse.com/books/223777/leaders-eat-last-by-simon-sinek/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-002",
     "text": "Servant leadership (Greenleaf, 1970): leader's primary role is to serve the team.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguinrandomhouse.com/books/223777/leaders-eat-last-by-simon-sinek/"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-003",
     "text": "Psychological safety: team members feel safe to take risks (Google's #1 team factor).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguinrandomhouse.com/books/223777/leaders-eat-last-by-simon-sinek/"

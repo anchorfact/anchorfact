@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/foundation-models>
   a schema:TechArticle ;
   schema:headline "Foundation Models: Paradigm Shift in AI" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.74" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/foundation-models>
-  schema:citation <https://arxiv.org/abs/2108.07258> .
+  schema:citation <https://arxiv.org/abs/2108.07258> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/foundation-models>
-  schema:citation <https://arxiv.org/abs/2001.08361> .
+  schema:citation <https://arxiv.org/abs/2001.08361> ;
+  af:sourceTier "A" .

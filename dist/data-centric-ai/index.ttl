@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/data-centric-ai>
   a schema:article ;
   schema:headline "Data-Centric AI: The Systematic Engineering of Training Data" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/data-centric-ai>
-  schema:citation <https://dcai.csail.mit.edu/> .
+  schema:citation <https://dcai.csail.mit.edu/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/data-centric-ai>
-  schema:citation <https://arxiv.org/abs/2303.10158> .
+  schema:citation <https://arxiv.org/abs/2303.10158> ;
+  af:sourceTier "A" .

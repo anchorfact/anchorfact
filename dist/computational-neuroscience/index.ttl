@@ -5,10 +5,14 @@
   a schema:article ;
   schema:headline "Computational Neuroscience: AI Models of Brain Circuits, Connectomics, and Neural Computation" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidenceScore "0.85" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/computational-neuroscience>
-  schema:citation <https://www.microns-explorer.org/> .
+  schema:citation <https://www.microns-explorer.org/> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/computational-neuroscience>
-  schema:citation <https://www.nature.com/articles/nn0199_79> .
+  schema:citation <https://www.nature.com/articles/nn0199_79> ;
+  af:sourceTier "S" .

@@ -1,7 +1,7 @@
 # Model Merging, Mixture of Experts, and Efficient Ensembling
-Confidence: high
+Confidence: medium (0.71) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Model merging and mixture of experts challenge the "one model to rule them all" assumption. Merging combines strengths of multiple fine-tuned models; MoE activates specialized sub-networks per input — both maximizing capability per parameter.

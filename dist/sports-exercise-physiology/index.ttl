@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/sports-exercise-physiology>
   a schema:Article ;
   schema:headline "Exercise Physiology: How the Body Adapts to Training" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.725" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/sports-exercise-physiology>
-  schema:citation <https://www.lww.com/exercise-physiology-9781975217280> .
+  schema:citation <https://www.lww.com/exercise-physiology-9781975217280> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/sports-exercise-physiology>
-  schema:citation <https://www.acsm.org/> .
+  schema:citation <https://www.acsm.org/> ;
+  af:sourceTier "S" .

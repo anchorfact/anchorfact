@@ -1,7 +1,7 @@
 # AI for Nuclear Fusion: Plasma Control, Disruption Prediction, and Accelerated Discovery
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is accelerating the path to commercial fusion energy by solving two of the hardest problems in plasma physics: real-time control of magnetically confined 100-million-degree plasma and prediction of dangerous instabilities (disruptions) that can damage reactor walls. From DeepMind's deep RL plasma controller to disruption prediction systems deployed on ITER, machine learning is becoming an essential tool in the fusion engineer's toolkit.

@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/kb-2026-00070>
   a schema:TechArticle ;
   schema:headline "JSON (JavaScript Object Notation)" ;
-  af:confidence "high" ;
+  af:confidence "medium" ;
+  af:confidenceScore "0.705" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00070>
-  schema:citation <https://www.rfc-editor.org/rfc/rfc8259> .
+  schema:citation <https://www.rfc-editor.org/rfc/rfc8259> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/kb-2026-00070>
-  schema:citation <https://doi.org/undefined> .
+  schema:citation <https://doi.org/undefined> ;
+  af:sourceTier "S" .

@@ -1,7 +1,7 @@
 # AI Content Authenticity: Watermarking and Detection
-Confidence: high
+Confidence: medium (0.76) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI-generated content detection is an arms race. Watermarking embeds imperceptible signals during generation; detection tools classify text as AI/human. C2PA standards establish cryptographic provenance chains from capture to publication.

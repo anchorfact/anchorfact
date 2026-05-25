@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Concept-Based Explainability: TCAV and Concept Bottleneck Models — AnchorFact</title></head>
-<body><article>## TL;DR<br>
-Concept-based explainability moves beyond pixel-level saliency maps to higher-level human-understandable concepts. TCAV quantifies whether a model "thinks" about stripes when classifying zebras, while Concept Bottleneck Models embed interpretable concept reasoning into the architecture itself.<br>
-<br>
-## Core Explanation<br>
-Post-hoc saliency methods (Grad-CAM, Integrated Gradients) show "where" a model looks but not "what concept" it uses. TCAV approach: (1) Collect examples of concept (e.g., images with stripes vs. without); (2) Train a linear CAV (Concept Activation Vector) in the model's activation layer that separates concept from non-concept; (3) Measure the directional derivative of the model's output along the CAV direction — the TCAV score = fraction of inputs where the concept influences classification. Statistical significance via two-sided t-test against random concepts.<br>
-<br>
-## Detailed Analysis<br>
-Concept Bottleneck Models (CBMs): architecture forces predictions to pass through a concept layer — model learns to predict concepts from input, then predict label from concepts. Advantages: inherently interpretable, can intervene on misconceptions (e.g., "ignore texture bias, use shape"). Limitations: requires annotated concept labels; reduces accuracy vs. unrestricted models. Hybrid CBMs (CVPR 2025) relax the bottleneck with residual connections. Visual-TCAV (2024) generates concept saliency maps showing where concepts are recognized spatially. Applications: medical imaging (clinician-verifiable reasoning), autonomous driving (concept-level failure analysis), and bias auditing (checking if models use protected attributes as concepts).<br>
-<br>
-## Further Reading<br>
-- TensorFlow TCAV GitHub Repository<br>
-- Yannic Kilcher's TCAV Video Explanation<br>
-- DALLE-3 Concept Understanding Analysis<br>
+<head>
+  <meta charset="utf-8">
+  <title>Concept-Based Explainability: TCAV and Concept Bottleneck Models — AnchorFact</title>
+  <meta name="anchorfact:confidence" content="medium (0.74)">
+  <meta name="anchorfact:generation" content="ai_structured">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"article","@id":"https://anchorfact.org/kb/concept-based-explainability","headline":"Concept-Based Explainability: TCAV and Concept Bottleneck Models","description":"Concept-based explainability moves beyond pixel-level saliency maps to higher-level human-understandable concepts. TCAV quantifies whether a model \"thinks\" about stripes when classifying zebras, while Concept Bottleneck Models embed interpretable concept reasoning into the architecture itself.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.74,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.7,"freshness":1,"decay":0.1,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.74,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":1,"sources_unreachable":1,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["A","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":false,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)","sameAs":"https://proceedings.mlr.press/v80/kim18d.html","anchorfact:sourceTier":"A","anchorfact:year":2018},{"@type":"CreativeWork","name":"Concept-based Explainable Artificial Intelligence: A Survey","sameAs":"https://dl.acm.org/doi/abs/10.1145/3774643","anchorfact:sourceTier":"A","anchorfact:year":2025}]}</script>
+</head>
+<body><article>## TL;DR<br>
+Concept-based explainability moves beyond pixel-level saliency maps to higher-level human-understandable concepts. TCAV quantifies whether a model "thinks" about stripes when classifying zebras, while Concept Bottleneck Models embed interpretable concept reasoning into the architecture itself.<br>
+<br>
+## Core Explanation<br>
+Post-hoc saliency methods (Grad-CAM, Integrated Gradients) show "where" a model looks but not "what concept" it uses. TCAV approach: (1) Collect examples of concept (e.g., images with stripes vs. without); (2) Train a linear CAV (Concept Activation Vector) in the model's activation layer that separates concept from non-concept; (3) Measure the directional derivative of the model's output along the CAV direction — the TCAV score = fraction of inputs where the concept influences classification. Statistical significance via two-sided t-test against random concepts.<br>
+<br>
+## Detailed Analysis<br>
+Concept Bottleneck Models (CBMs): architecture forces predictions to pass through a concept layer — model learns to predict concepts from input, then predict label from concepts. Advantages: inherently interpretable, can intervene on misconceptions (e.g., "ignore texture bias, use shape"). Limitations: requires annotated concept labels; reduces accuracy vs. unrestricted models. Hybrid CBMs (CVPR 2025) relax the bottleneck with residual connections. Visual-TCAV (2024) generates concept saliency maps showing where concepts are recognized spatially. Applications: medical imaging (clinician-verifiable reasoning), autonomous driving (concept-level failure analysis), and bias auditing (checking if models use protected attributes as concepts).<br>
+<br>
+## Further Reading<br>
+- TensorFlow TCAV GitHub Repository<br>
+- Yannic Kilcher's TCAV Video Explanation<br>
+- DALLE-3 Concept Understanding Analysis<br>
 </article></body>
 </html>

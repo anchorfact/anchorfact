@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/kb-2026-00503>
   a schema:TechArticle ;
   schema:headline "Track and Field Events" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.395" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00503>
-  schema:citation <https://worldathletics.org/competition/technical-rules> .
+  schema:citation <https://worldathletics.org/competition/technical-rules> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00503>
-  schema:citation <https://www.olympic.org/sports> .
+  schema:citation <https://www.olympic.org/sports> ;
+  af:sourceTier "C" .

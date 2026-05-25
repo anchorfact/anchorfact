@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-cs-fp-001",
     "text": "Lambda calculus (Church 1936) is the mathematical foundation of functional programming.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.collegepublications.co.uk/logic/mlf/?00006"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-cs-fp-002",
     "text": "LISP (McCarthy 1958): first FP language, introduced GC, recursion, symbolic computation.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.1145/367177.367199"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-cs-fp-003",
     "text": "Haskell (1990): purely functional, named after Curry; popularized monads, lazy evaluation.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://doi.org/10.1145/1238844.1238856"

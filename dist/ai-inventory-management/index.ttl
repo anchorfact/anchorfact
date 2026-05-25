@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-inventory-management>
   a schema:article ;
   schema:headline "AI for Inventory Management: Demand Forecasting, Stock Optimization, and Automated Replenishment" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-inventory-management>
-  schema:citation <https://arxiv.org/search/?query=inventory+management+machine+learning+demand+forecasting> .
+  schema:citation <https://arxiv.org/search/?query=inventory+management+machine+learning+demand+forecasting> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-inventory-management>
-  schema:citation <https://arxiv.org/search/?query=DeepAR+demand+forecasting+inventory> .
+  schema:citation <https://arxiv.org/search/?query=DeepAR+demand+forecasting+inventory> ;
+  af:sourceTier "A" .

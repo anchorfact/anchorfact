@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00169>
   a schema:TechArticle ;
   schema:headline "ARIA (Accessible Rich Internet Applications)" ;
-  af:confidence "high" ;
+  af:confidence "medium" ;
+  af:confidenceScore "0.735" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00169>
-  schema:citation <https://www.w3.org/TR/wai-aria/> .
+  schema:citation <https://www.w3.org/TR/wai-aria/> ;
+  af:sourceTier "S" .

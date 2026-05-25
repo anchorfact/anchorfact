@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-robot-manipulation-1",
     "text": "arxiv (February 2025) demonstrated practical sim-to-real reinforcement learning for dexterous manipulation on humanoid robots — training RL policies in GPU-accelerated simulation (Isaac Gym) for three challenging tasks (grasp-and-reach, box lift, object reorientation) with domain randomization (randomizing friction, object mass, lighting, camera position) and successfully transferring policies zero-shot to a real humanoid robot achieving 85-92% task success rates across all three tasks.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2502.20396"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-robot-manipulation-2",
     "text": "Springer AI Review (July 2025) published a comprehensive survey of learning-based dexterous grasping — reviewing 200+ papers across five categories: grasp detection (identifying stable grasp points from visual input), grasp planning (trajectory optimization), reinforcement learning for dexterous hands (training multi-fingered policies), sim-to-real transfer (bridging the simulation-reality gap), and tactile sensing integration (using fingertip force/torque sensors to adapt grasps in real-time).",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://link.springer.com/article/10.1007/s10462-025-11262-2"

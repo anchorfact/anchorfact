@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00447>
   a schema:TechArticle ;
   schema:headline "Networking Skills" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.43" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00447>
-  schema:citation <https://www.penguinrandomhouse.com/books/316664/never-eat-alone-expanded-and-updated-by-keith-ferrazzi-with-tahl-raz/> .
+  schema:citation <https://www.penguinrandomhouse.com/books/316664/never-eat-alone-expanded-and-updated-by-keith-ferrazzi-with-tahl-raz/> ;
+  af:sourceTier "C" .

@@ -1,7 +1,7 @@
 # Low-Resource NLP: Multilingual Models, Endangered Language Preservation, and Translation
-Confidence: high
+Confidence: medium (0.65) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Of the world's 7,000+ languages, fewer than 100 are well-supported by NLP systems. Low-resource NLP aims to bridge this gap — using cross-lingual transfer, few-shot learning, and community-driven data collection to bring AI language tools to the billions of speakers of underrepresented languages, while also supporting endangered language preservation.

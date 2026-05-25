@@ -1,7 +1,7 @@
 # AI Identity Verification: Document Authentication, Liveness Detection, and KYC Compliance
-Confidence: high
+Confidence: medium (0.74) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI identity verification authenticates who you are online -- checking your ID document, matching your face to the photo, and verifying you are a real person (not a photo or deepfake). From banking to crypto to gig economy platforms, AI IDV enables secure digital onboarding in under 30 seconds across 200 countries.

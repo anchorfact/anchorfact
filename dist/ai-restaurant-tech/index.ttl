@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-restaurant-tech>
   a schema:article ;
   schema:headline "AI for Restaurant Technology: Order Automation, Kitchen Optimization, and Personalized Dining" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-restaurant-tech>
-  schema:citation <https://arxiv.org/search/?query=restaurant+AI+voice+ordering+kitchen+automation> .
+  schema:citation <https://arxiv.org/search/?query=restaurant+AI+voice+ordering+kitchen+automation> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-restaurant-tech>
-  schema:citation <https://arxiv.org/search/?query=drive+thru+AI+voice+ordering> .
+  schema:citation <https://arxiv.org/search/?query=drive+thru+AI+voice+ordering> ;
+  af:sourceTier "A" .

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-001",
     "text": "WebRTC (Web Real-Time Communication) is a W3C standard enabling peer-to-peer audio, video, and data communication between browsers without plugins. It uses DTLS-SRTP for encryption and ICE/STUN/TURN for NAT traversal.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.w3.org/TR/webrtc/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-001",
     "text": "WebRTC (Web Real-Time Communication) is a W3C standard enabling peer-to-peer audio, video, and data communication between browsers without plugins. It uses DTLS-SRTP for encryption and ICE/STUN/TURN for NAT traversal.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.w3.org/TR/webrtc/"

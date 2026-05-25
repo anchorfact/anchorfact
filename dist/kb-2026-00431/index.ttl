@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00431>
   a schema:TechArticle ;
   schema:headline "Marketing Mix (4Ps)" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.45" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00431>
-  schema:citation <https://www.pearson.com/en-us/subject-catalog/p/principles-of-marketing/P200000009556> .
+  schema:citation <https://www.pearson.com/en-us/subject-catalog/p/principles-of-marketing/P200000009556> ;
+  af:sourceTier "C" .

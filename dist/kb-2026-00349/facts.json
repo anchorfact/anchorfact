@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-geography-001",
     "text": "Major world religions: Christianity (2.4B, Jesus Christ, Bible), Islam (1.9B, Muhammad, Quran), Hinduism (1.2B, oldest, diverse traditions, Vedas), Buddhism (520M, Siddhartha Gautama, Four Noble Truths), Judaism (15M, Torah, foundational to Christianity/Islam). Non-religious/unaffiliated: ~1.2B.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.harpercollins.com/products/the-worlds-religions-huston-smith"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-geography-002",
     "text": "Christianity: Catholic (1.3B), Protestant, Orthodox — Trinity, salvation through faith.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.harpercollins.com/products/the-worlds-religions-huston-smith"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-geography-003",
     "text": "Islam: Sunni (85-90%), Shia — Five Pillars (prayer, fasting, charity, pilgrimage, faith declaration).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.harpercollins.com/products/the-worlds-religions-huston-smith"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-geography-004",
     "text": "Buddhism: Four Noble Truths (suffering, cause, cessation, Eightfold Path).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.harpercollins.com/products/the-worlds-religions-huston-smith"

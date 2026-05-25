@@ -1,7 +1,7 @@
 # Game Audio Systems and Sound Design
-Confidence: high
+Confidence: medium (0.72) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Modern game audio goes far beyond playing sound files. Dynamic mixing, 3D spatialization, adaptive music, and procedural audio create immersive soundscapes that respond to gameplay in real time.

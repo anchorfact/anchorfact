@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00324",
   "headline": "Ancient Rome",
   "description": "Ancient Rome (753 BC - 476 AD Western Empire, -1453 AD Eastern/Byzantine Empire) was one of history's greatest civilizations. From a small city-state to a Mediterranean-spanning empire. Contributions: Roman law (basis of European civil law), Latin language, republican government, engineering (aqueducts, roads, concrete).",
-  "dateCreated": "2026-05-25T02:46:04.506Z",
-  "dateModified": "2026-05-25T02:46:04.506Z",
+  "dateCreated": "2026-05-22",
+  "dateModified": "2026-05-25T12:59:32.390Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -16,37 +16,78 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidence": "low",
+  "anchorfact:confidenceScore": 0.55,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 0.3,
+      "source_count": 1,
+      "source_verified": 0.7,
+      "freshness": 1,
+      "decay": 0.30000000000000004,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "low",
+    "confidence_score": 0.55,
+    "confidence_basis": "verified_sources",
+    "sources_total": 5,
+    "sources_verified": 3,
+    "sources_unreachable": 2,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "C",
+      "C",
+      "C",
+      "C",
+      "C"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": true,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "SPQR: A History of Ancient Rome (Mary Beard)",
-      "sameAs": "https://www.liverpooluniversitypress.co.uk/doi/book/10.3828/9781846319177"
+      "sameAs": "https://www.liverpooluniversitypress.co.uk/doi/book/10.3828/9781846319177",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2015
     },
     {
       "@type": "CreativeWork",
       "name": "SPQR: A History of Ancient Rome (2025 Paperback Edition)",
       "author": "Beard M.",
-      "sameAs": "https://wwnorton.com/books/SPQR/"
+      "sameAs": "https://wwnorton.com/books/SPQR/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "The Oxford History of the Roman World (2025 Updated Edition)",
       "author": "multiple",
-      "sameAs": "https://global.oup.com/roman-world/"
+      "sameAs": "https://global.oup.com/roman-world/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "SPQR: A History of Ancient Rome (2025)",
       "author": "Beard M.",
-      "sameAs": "https://wwnorton.com/SPQR/"
+      "sameAs": "https://wwnorton.com/SPQR/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "The Fall of the Roman Empire (2025)",
       "author": "Heather P.",
-      "sameAs": "https://global.oup.com/roman-fall/"
+      "sameAs": "https://global.oup.com/roman-fall/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     }
   ]
 }

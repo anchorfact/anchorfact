@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00221>
   a schema:TechArticle ;
   schema:headline "Game Monetization Ethics" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.53" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00221>
-  schema:citation <https://www.gdcvault.com/> .
+  schema:citation <https://www.gdcvault.com/> ;
+  af:sourceTier "C" .

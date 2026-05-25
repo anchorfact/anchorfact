@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-location-intelligence-1",
     "text": "AI-powered location intelligence (2023-2026) leverages geospatial big data -- satellite imagery, mobile location pings (GDPR-compliant), POI databases (OpenStreetMap, Google Places), and mobility patterns -- for applications including optimal retail site selection (predicting foot traffic and revenue), real estate valuation (automated valuation models using spatial features), urban planning (population density and movement prediction), and logistics hub placement (minimizing distribution costs).",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=location+intelligence+spatial+deep+learning"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-location-intelligence-2",
     "text": "Deep learning for spatial prediction: graph neural networks model urban spatial dependencies (adjacent neighborhoods influence each other); ConvLSTMs predict spatio-temporal patterns (crime hotspots, traffic congestion); and point-of-interest (POI) recommendation systems use location embeddings (GeoIE, Space2Vec) to represent geographic coordinates in neural networks, enabling tasks like next-place prediction and personalized location recommendations with 15-25% accuracy improvement over non-spatial baselines.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://dl.acm.org/doi/10.1145/3397536.3422262"

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-audio-processing-1",
     "text": "Nature (Computational Science, December 2025) published a comprehensive survey of environmental acoustic intelligence through Sound Event Localization and Detection (SELD) — the joint task of identifying what sounds are active (siren, dog bark, speech) and where they originate in 3D space — establishing SELD as the foundation for audio-based AI that gives machines \"hearing\" capabilities analogous to computer vision for sight.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nature.com/articles/s44384-025-00036-3"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-audio-processing-2",
     "text": "Springer AI Review (March 2025) surveyed deep learning for environmental sound recognition on embedded devices — reviewing architectures (CNN, CRNN, Transformer) optimized for edge deployment — demonstrating that TinyML audio models (<100KB) achieve 85-92% accuracy on standard benchmarks (ESC-50, UrbanSound8K) while operating at 10mW on microcontrollers, enabling always-on environmental monitoring.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://link.springer.com/article/10.1007/s10462-025-11106-z"

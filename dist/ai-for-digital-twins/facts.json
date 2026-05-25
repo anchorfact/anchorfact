@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-digital-twins-1",
     "text": "AI-powered digital twins bridge the physical and digital worlds by maintaining real-time virtual replicas synchronized with IoT sensor data. Digital twins span manufacturing (factory floor simulation -- Siemens Xcelerator), buildings (energy optimization -- Autodesk Tandem), cities (Singapore Virtual Singapore), and healthcare (patient digital twins for personalized treatment). AI enhances twins through anomaly detection, what-if simulation, and reinforcement learning-based optimization.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nvidia.com/en-us/omniverse/digital-twins/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-digital-twins-2",
     "text": "Generative AI for digital twins (2025): LLMs enable natural language querying of digital twin data (\"what is the energy consumption of Building 3 this week compared to last?\"), and generative design proposes optimal configurations (factory layout, building HVAC settings) based on simulated outcomes. Meta's DIGIT (2025) introduced AI agents that autonomously explore and optimize digital twin environments.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1655470/full"

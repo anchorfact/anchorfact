@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00094>
   a schema:TechArticle ;
   schema:headline "Cross-Origin Resource Sharing (CORS)" ;
-  af:confidence "high" ;
+  af:confidence "medium" ;
+  af:confidenceScore "0.745" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00094>
-  schema:citation <https://fetch.spec.whatwg.org/#http-cors-protocol> .
+  schema:citation <https://fetch.spec.whatwg.org/#http-cors-protocol> ;
+  af:sourceTier "S" .

@@ -1,7 +1,7 @@
 # AI Synthetic Media: Digital Humans, Virtual Influencers, and AI-Generated Video Personas
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI generates humans that don't exist -- digital avatars delivering corporate training at scale, virtual influencers with millions of followers, and AI-de-aged actors on screen. The synthetic media industry spans enterprise video, social media marketing, and entertainment, raising profound questions about authenticity, consent, and disclosure.

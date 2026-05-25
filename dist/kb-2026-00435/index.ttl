@@ -4,20 +4,27 @@
 <https://anchorfact.org/kb/kb-2026-00435>
   a schema:TechArticle ;
   schema:headline "Negotiation Skills" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.495" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00435>
-  schema:citation <https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/> .
+  schema:citation <https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00435>
-  schema:citation <https://www.penguinrandomhouse.com/getting-to-yes/> .
+  schema:citation <https://www.penguinrandomhouse.com/getting-to-yes/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00435>
-  schema:citation <https://www.harpercollins.com/never-split-the-difference/> .
+  schema:citation <https://www.harpercollins.com/never-split-the-difference/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00435>
-  schema:citation <https://www.penguinrandomhouse.com/getting-to-yes/> .
+  schema:citation <https://www.penguinrandomhouse.com/getting-to-yes/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00435>
-  schema:citation <https://www.harpercollins.com/never-split/> .
+  schema:citation <https://www.harpercollins.com/never-split/> ;
+  af:sourceTier "C" .

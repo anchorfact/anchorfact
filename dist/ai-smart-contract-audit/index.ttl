@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-smart-contract-audit>
   a schema:article ;
   schema:headline "AI Smart Contract Auditing: Vulnerability Detection, Formal Verification, and Blockchain Security" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-smart-contract-audit>
-  schema:citation <https://ieeexplore.ieee.org/abstract/document/11121619> .
+  schema:citation <https://ieeexplore.ieee.org/abstract/document/11121619> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-smart-contract-audit>
-  schema:citation <https://arxiv.org/abs/2410.09381> .
+  schema:citation <https://arxiv.org/abs/2410.09381> ;
+  af:sourceTier "A" .

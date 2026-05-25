@@ -4,17 +4,23 @@
 <https://anchorfact.org/kb/kb-2026-00456>
   a schema:TechArticle ;
   schema:headline "Coral Reefs" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00456>
-  schema:citation <https://global.oup.com/academic/product/the-biology-of-coral-reefs-9780198787358> .
+  schema:citation <https://global.oup.com/academic/product/the-biology-of-coral-reefs-9780198787358> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00456>
-  schema:citation <https://global.oup.com/vsi-coral/> .
+  schema:citation <https://global.oup.com/vsi-coral/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00456>
-  schema:citation <https://doi.org/10.1038/s41586-2025-coral> .
+  schema:citation <https://doi.org/10.1038/s41586-2025-coral> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00456>
-  schema:citation <https://doi.org/10.1038/s41586-2025-coral> .
+  schema:citation <https://doi.org/10.1038/s41586-2025-coral> ;
+  af:sourceTier "C" .

@@ -5,10 +5,14 @@
   a schema:article ;
   schema:headline "AI for Agriculture: Precision Farming, Plant Disease Detection, and Crop Yield Prediction" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidenceScore "0.85" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-for-agriculture>
-  schema:citation <https://www.nature.com/articles/s41598-025-10537-6> .
+  schema:citation <https://www.nature.com/articles/s41598-025-10537-6> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/ai-for-agriculture>
-  schema:citation <https://www.sciencedirect.com/science/article/pii/S2772375525007221> .
+  schema:citation <https://www.sciencedirect.com/science/article/pii/S2772375525007221> ;
+  af:sourceTier "A" .

@@ -1,7 +1,7 @@
 # AI in Cybersecurity: Threat Detection and LLM-Powered Defense
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is reshaping cybersecurity: machine learning detects anomalies in network traffic, LLMs automate threat intelligence analysis and vulnerability detection, and generative AI enables real-time incident response — creating an arms race between AI-powered defense and AI-powered attacks.

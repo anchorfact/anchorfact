@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/multi-agent-reinforcement-learning>
   a schema:article ;
   schema:headline "Multi-Agent Reinforcement Learning: Cooperation, Competition, and Emergent Strategies" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/multi-agent-reinforcement-learning>
-  schema:citation <https://www.nature.com/articles/s41467-025-67178-6> .
+  schema:citation <https://www.nature.com/articles/s41467-025-67178-6> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/multi-agent-reinforcement-learning>
-  schema:citation <https://arxiv.org/abs/2503.13415> .
+  schema:citation <https://arxiv.org/abs/2503.13415> ;
+  af:sourceTier "A" .

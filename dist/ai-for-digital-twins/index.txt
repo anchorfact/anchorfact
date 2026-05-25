@@ -1,7 +1,7 @@
 # AI for Digital Twins: Real-Time Simulation, Predictive Maintenance, and System Optimization
-Confidence: high
+Confidence: medium (0.74) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Digital twins are real-time virtual replicas of physical systems -- factories, buildings, cities, even human bodies. AI transforms digital twins from passive monitoring dashboards to active optimization engines that predict failures, simulate scenarios, and autonomously improve operations.

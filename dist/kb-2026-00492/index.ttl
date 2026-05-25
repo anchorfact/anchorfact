@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00492>
   a schema:TechArticle ;
   schema:headline "Endangered Species" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.57" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00492>
-  schema:citation <https://www.iucnredlist.org/> .
+  schema:citation <https://www.iucnredlist.org/> ;
+  af:sourceTier "S" .

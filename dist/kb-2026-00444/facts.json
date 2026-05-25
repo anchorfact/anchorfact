@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-self-improvement-001",
     "text": "Growth mindset (Carol Dweck, 2006) is the belief that abilities can be developed through effort, learning, and persistence. Fixed mindset: believe abilities are innate and unchangeable. Growth mindset people embrace challenges, learn from criticism, and see effort as the path to mastery. The belief itself becomes a self-fulfilling prophecy.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-self-improvement-001",
     "text": "Growth mindset (Carol Dweck, 2006) is the belief that abilities can be developed through effort, learning, and persistence. Fixed mindset: believe abilities are innate and unchangeable. Growth mindset people embrace challenges, learn from criticism, and see effort as the path to mastery. The belief itself becomes a self-fulfilling prophecy.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck/"

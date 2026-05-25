@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-01",
     "text": "Mars is the most explored planet beyond Earth",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://mars.nasa.gov/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-02",
     "text": "Why Mars: most Earth-like planet, past habitability, potential for ancient life",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://mars.nasa.gov/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-science-03",
     "text": "Sample return: NASA/ESA Mars Sample Return mission",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://mars.nasa.gov/"

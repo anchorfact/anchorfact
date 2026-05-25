@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/climate-zones-and-biomes>
   a schema:Article ;
   schema:headline "Global Climate Zones and Terrestrial Biomes" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.375" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/climate-zones-and-biomes>
-  schema:citation <https://www.wiley.com/en-us/Biogeography-p-9781119464730> .
+  schema:citation <https://www.wiley.com/en-us/Biogeography-p-9781119464730> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/climate-zones-and-biomes>
-  schema:citation <https://www.climate.gov/koppen-climate-classification> .
+  schema:citation <https://www.climate.gov/koppen-climate-classification> ;
+  af:sourceTier "C" .

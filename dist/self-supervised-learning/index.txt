@@ -1,7 +1,7 @@
 # Self-Supervised Learning: Learning Without Labels
-Confidence: high
+Confidence: medium (0.72) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Self-supervised learning extracts supervisory signals from unlabeled data, enabling models to learn useful representations without expensive human annotation. SSL underpins modern pretraining of foundation models.

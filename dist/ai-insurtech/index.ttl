@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-insurtech>
   a schema:article ;
   schema:headline "AI for Insurance: Underwriting, Claims Processing, and Risk Assessment" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-insurtech>
-  schema:citation <https://arxiv.org/search/?query=insurance+AI+underwriting+claims+risk> .
+  schema:citation <https://arxiv.org/search/?query=insurance+AI+underwriting+claims+risk> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-insurtech>
-  schema:citation <https://arxiv.org/search/?query=computer+vision+insurance+damage+assessment> .
+  schema:citation <https://arxiv.org/search/?query=computer+vision+insurance+damage+assessment> ;
+  af:sourceTier "A" .

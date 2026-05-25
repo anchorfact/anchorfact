@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-retail",
   "headline": "AI for Retail: Cashierless Stores, Dynamic Pricing, and Personalized Shopping",
   "description": "AI is reengineering retail -- from cashierless stores where you grab-and-go to dynamic prices that optimize in real-time to virtual try-on that lets you see clothes on your body before buying. Computer vision, reinforcement learning, and recommendation systems collectively create a shopping experience that is seamless, personalized, and increasingly autonomous.",
-  "dateCreated": "2026-05-25T02:46:03.460Z",
+  "dateCreated": "2026-05-24",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",
@@ -16,18 +16,50 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidence": "medium",
+  "anchorfact:confidenceScore": 0.79,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 0.9,
+      "source_count": 0.8,
+      "source_verified": 0.9,
+      "freshness": 1,
+      "decay": 0.1,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "medium",
+    "confidence_score": 0.79,
+    "confidence_basis": "verified_sources",
+    "sources_total": 2,
+    "sources_verified": 2,
+    "sources_unreachable": 0,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "C",
+      "A"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": false,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "Amazon Just Walk Out: AI-Powered Cashierless Retail Technology",
-      "sameAs": "https://aws.amazon.com/just-walk-out/"
+      "sameAs": "https://aws.amazon.com/just-walk-out/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "Deep Reinforcement Learning for Dynamic Pricing and Markdown Optimization in Retail (2023-2025 surveys)",
-      "sameAs": "https://arxiv.org/search/?query=dynamic+pricing+reinforcement+learning+retail"
+      "sameAs": "https://arxiv.org/search/?query=dynamic+pricing+reinforcement+learning+retail",
+      "anchorfact:sourceTier": "A",
+      "anchorfact:year": 2024
     }
   ]
 }

@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00242>
   a schema:TechArticle ;
   schema:headline "ACID Transactions" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.325" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00242>
-  schema:citation <https://dl.acm.org/> .
+  schema:citation <https://dl.acm.org/> ;
+  af:sourceTier "C" .

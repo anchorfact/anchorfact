@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-regtech-compliance",
   "headline": "AI for Regulatory Technology (RegTech): Compliance Automation, AML, and Regulatory Intelligence",
   "description": "AI is transforming regulatory compliance from a manual, document-heavy process into an automated, intelligent system. Graph neural networks detect sophisticated financial crime patterns that humans and rules-based systems miss, while LLMs ingest and analyze thousands of pages of regulations across jurisdictions, automating the compliance lifecycle from obligation extraction to control mapping to reporting.",
-  "dateCreated": "2026-05-25T02:46:03.456Z",
+  "dateCreated": "2026-05-24",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",
@@ -16,18 +16,50 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidence": "medium",
+  "anchorfact:confidenceScore": 0.74,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 0.9,
+      "source_count": 0.8,
+      "source_verified": 0.7,
+      "freshness": 1,
+      "decay": 0.1,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "medium",
+    "confidence_score": 0.74,
+    "confidence_basis": "verified_sources",
+    "sources_total": 2,
+    "sources_verified": 1,
+    "sources_unreachable": 1,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "A",
+      "A"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": false,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "Graph Neural Networks for Anti-Money Laundering: A Comprehensive Survey of Methods, Datasets, and Practical Deployment",
-      "sameAs": "https://arxiv.org/abs/2504.00000"
+      "sameAs": "https://arxiv.org/abs/2504.00000",
+      "anchorfact:sourceTier": "A",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "AI-Powered Regulatory Technology (RegTech): NLP and LLM Applications in Compliance Automation and Regulatory Intelligence",
-      "sameAs": "https://www.emerald.com/insight/publication/issn/1358-1988"
+      "sameAs": "https://www.emerald.com/insight/publication/issn/1358-1988",
+      "anchorfact:sourceTier": "A",
+      "anchorfact:year": 2025
     }
   ]
 }

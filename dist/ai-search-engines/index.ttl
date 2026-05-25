@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-search-engines>
   a schema:TechArticle ;
   schema:headline "AI-Powered Search: Perplexity, Google AI Overviews, and the Future" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.51" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-search-engines>
-  schema:citation <https://www.perplexity.ai/hub/technical-faq> .
+  schema:citation <https://www.perplexity.ai/hub/technical-faq> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/ai-search-engines>
-  schema:citation <https://blog.google/products/search/generative-ai-search/> .
+  schema:citation <https://blog.google/products/search/generative-ai-search/> ;
+  af:sourceTier "C" .

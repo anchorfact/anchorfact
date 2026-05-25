@@ -1,7 +1,7 @@
 # Affective Computing: Multimodal Emotion Recognition, Sentiment Analysis, and Empathetic AI
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Affective computing gives AI emotional intelligence — recognizing human emotions from voice, face, text, and physiology, and responding empathetically. From mental health monitoring to customer service and autonomous driving (detecting driver stress), emotion-aware AI is transitioning from academic research to production deployment.

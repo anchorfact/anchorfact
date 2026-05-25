@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00151>
   a schema:TechArticle ;
   schema:headline "Amazon Web Services (AWS)" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00151>
-  schema:citation <https://docs.aws.amazon.com/> .
+  schema:citation <https://docs.aws.amazon.com/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00151>
-  schema:citation <https://www.wiley.com/aws/> .
+  schema:citation <https://www.wiley.com/aws/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00151>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.cloud> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.cloud> ;
+  af:sourceTier "C" .

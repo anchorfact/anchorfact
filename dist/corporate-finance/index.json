@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/corporate-finance",
   "headline": "Corporate Finance: Capital Structure and Valuation",
   "description": "Corporate finance addresses how firms raise capital and make investment decisions. Capital structure (debt vs equity) and valuation (what assets are worth) are the core concerns.",
-  "dateCreated": "2026-05-25T02:46:03.947Z",
+  "dateCreated": "2026-05-24",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",
@@ -16,30 +16,68 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidence": "medium",
+  "anchorfact:confidenceScore": 0.685,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 0.9,
+      "source_count": 1,
+      "source_verified": 0.4,
+      "freshness": 1,
+      "decay": 0.30000000000000004,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "medium",
+    "confidence_score": 0.685,
+    "confidence_basis": "verified_sources",
+    "sources_total": 4,
+    "sources_verified": 1,
+    "sources_unreachable": 3,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "C",
+      "A",
+      "C",
+      "C"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": true,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "Principles of Corporate Finance, 14th Edition",
-      "sameAs": "https://www.mheducation.com/highered/product/principles-corporate-finance-brealey-myers/M9781264080946.html"
+      "sameAs": "https://www.mheducation.com/highered/product/principles-corporate-finance-brealey-myers/M9781264080946.html",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2022
     },
     {
       "@type": "CreativeWork",
       "name": "The Cost of Capital, Corporation Finance and the Theory of Investment",
-      "sameAs": "https://www.jstor.org/stable/1809766"
+      "sameAs": "https://www.jstor.org/stable/1809766",
+      "anchorfact:sourceTier": "A",
+      "anchorfact:year": 1958
     },
     {
       "@type": "CreativeWork",
       "name": "Principles of Corporate Finance (15th Edition, 2025)",
       "author": "Brealey R.A., Myers S.C., Allen F.",
-      "sameAs": "https://www.mheducation.com/corporate-finance/"
+      "sameAs": "https://www.mheducation.com/corporate-finance/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "Valuation: Measuring and Managing the Value of Companies (2025)",
       "author": "Koller T., Goedhart M., Wessels D.",
-      "sameAs": "https://www.wiley.com/valuation/"
+      "sameAs": "https://www.wiley.com/valuation/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     }
   ]
 }

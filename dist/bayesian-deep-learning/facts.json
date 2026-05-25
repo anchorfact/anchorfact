@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-bayesian-deep-learning-1",
     "text": "Deep Ensembles — training multiple copies of the same model with different random seeds — remain one of the most effective and practical uncertainty quantification methods, often matching or exceeding Bayesian Neural Networks (BNNs) in calibration while being simpler to implement.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/1906.02530"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-bayesian-deep-learning-2",
     "text": "Scalable Bayesian Monte Carlo (SBMC, 2025) introduces a new method for Bayesian deep learning that combines a probabilistic model with an efficient sampling algorithm — achieving uncertainty estimates competitive with Deep Ensembles at significantly lower computational cost, published as arXiv 2505.13585.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/1612.01474"

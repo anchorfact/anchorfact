@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/geometric-deep-learning>
   a schema:article ;
   schema:headline "Geometric Deep Learning: Group Equivariance and Symmetry" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.78" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/geometric-deep-learning>
-  schema:citation <https://link.springer.com/article/10.1007/s10462-023-10502-7> .
+  schema:citation <https://link.springer.com/article/10.1007/s10462-023-10502-7> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/geometric-deep-learning>
-  schema:citation <https://geometricdeeplearning.com/> .
+  schema:citation <https://geometricdeeplearning.com/> ;
+  af:sourceTier "C" .

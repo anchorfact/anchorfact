@@ -4,20 +4,27 @@
 <https://anchorfact.org/kb/kb-2026-00077>
   a schema:TechArticle ;
   schema:headline "C Programming Language" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.825" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00077>
-  schema:citation <https://www.iso.org/standard/82075.html> .
+  schema:citation <https://www.iso.org/standard/82075.html> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/kb-2026-00077>
-  schema:citation <https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html> .
+  schema:citation <https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00077>
-  schema:citation <https://dl.acm.org/doi/10.1145/154766.155363> .
+  schema:citation <https://dl.acm.org/doi/10.1145/154766.155363> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/kb-2026-00077>
-  schema:citation <https://www.informit.com/store/c-programming-language-9780131103627> .
+  schema:citation <https://www.informit.com/store/c-programming-language-9780131103627> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00077>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.systems> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.systems> ;
+  af:sourceTier "C" .

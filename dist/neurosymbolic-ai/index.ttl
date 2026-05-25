@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/neurosymbolic-ai>
   a schema:article ;
   schema:headline "Neuro-Symbolic AI: Bridging Learning and Reasoning" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.78" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/neurosymbolic-ai>
-  schema:citation <https://arxiv.org/abs/2005.05818> .
+  schema:citation <https://arxiv.org/abs/2005.05818> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/neurosymbolic-ai>
-  schema:citation <https://www.nature.com/articles/s41586-023-06747-5> .
+  schema:citation <https://www.nature.com/articles/s41586-023-06747-5> ;
+  af:sourceTier "A" .

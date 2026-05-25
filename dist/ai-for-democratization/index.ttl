@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-for-democratization>
   a schema:article ;
   schema:headline "AI Democratization: Open-Source Models, Low-Code AI, and Accessible Machine Learning" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-for-democratization>
-  schema:citation <https://arxiv.org/abs/2407.21783> .
+  schema:citation <https://arxiv.org/abs/2407.21783> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-for-democratization>
-  schema:citation <https://huggingface.co/> .
+  schema:citation <https://huggingface.co/> ;
+  af:sourceTier "C" .

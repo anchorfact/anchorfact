@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00419>
   a schema:TechArticle ;
   schema:headline "Hydration and Health" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.5" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00419>
-  schema:citation <https://www.nap.edu/catalog/10925/dietary-reference-intakes-for-water-potassium-sodium-chloride-and-sulfate> .
+  schema:citation <https://www.nap.edu/catalog/10925/dietary-reference-intakes-for-water-potassium-sodium-chloride-and-sulfate> ;
+  af:sourceTier "S" .

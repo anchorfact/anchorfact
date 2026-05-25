@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00135",
   "headline": "Greedy Algorithms",
   "description": "Greedy algorithms make locally optimal choices hoping for global optimum. Fast but require correctness proof. Examples: Huffman coding, Prim/Kruskal (MST), activity selection, fractional knapsack.",
-  "dateCreated": "2026-05-25T02:46:04.123Z",
-  "dateModified": "2026-05-25T02:46:04.123Z",
+  "dateCreated": "2026-05-22",
+  "dateModified": "2026-05-25T12:59:32.018Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -16,25 +16,60 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "human_only",
+  "anchorfact:confidence": "low",
+  "anchorfact:confidenceScore": 0.425,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 0.3,
+      "source_count": 1,
+      "source_verified": 0.2,
+      "freshness": 1,
+      "decay": 0.30000000000000004,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "low",
+    "confidence_score": 0.425,
+    "confidence_basis": "verified_sources",
+    "sources_total": 3,
+    "sources_verified": 0,
+    "sources_unreachable": 3,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "C",
+      "C",
+      "C"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": true,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "ACM Digital Library",
-      "sameAs": "https://dl.acm.org/"
+      "sameAs": "https://dl.acm.org/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2026
     },
     {
       "@type": "CreativeWork",
       "name": "Introduction to Algorithms (5th Edition, 2025)",
       "author": "Cormen T.H., Leiserson C.E., Rivest R.L., Stein C.",
-      "sameAs": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition"
+      "sameAs": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "Greedy Algorithms: Design, Analysis, and Modern Applications (2025)",
       "author": "multiple",
-      "sameAs": "https://doi.org/10.1145/acmcs.2025.greedy"
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.greedy",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     }
   ]
 }

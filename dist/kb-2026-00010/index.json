@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00010",
   "headline": "Mixture of Experts (MoE)",
   "description": "Mixture of Experts (MoE) is a neural network architecture that divides a model into multiple specialized \"expert\" sub-networks, with a learned gating mechanism routing each input token to only a subset of experts. This enables models with trillions of total parameters while keeping inference cost proportional to a much smaller \"active\" parameter count. First made practical for deep learning by Shazeer et al. (2017) at Google Brain, MoE is the dominant architecture for frontier-scale models as of 2026: GPT-4 reportedly uses MoE with approximately 1.76T total parameters but only ~280B active per forward pass. Open-source implementations (Mixtral, DeepSeek-V2) have brought MoE to the wider community.",
-  "dateCreated": "2026-05-25T02:46:03.747Z",
-  "dateModified": "2026-05-25T02:46:03.747Z",
+  "dateCreated": "2026-05-22",
+  "dateModified": "2026-05-25T12:59:31.704Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -16,25 +16,60 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
+  "anchorfact:confidence": "medium",
+  "anchorfact:confidenceScore": 0.69,
   "anchorfact:generationMethod": "human_only",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 1,
+      "source_count": 1,
+      "source_verified": 0.4,
+      "freshness": 0.7,
+      "decay": 0.30000000000000004,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "medium",
+    "confidence_score": 0.69,
+    "confidence_basis": "verified_sources",
+    "sources_total": 3,
+    "sources_verified": 1,
+    "sources_unreachable": 1,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "S",
+      "S",
+      "C"
+    ],
+    "sources_has_doi": true,
+    "sources_has_url": true,
+    "article_has_disputed": true,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
       "author": "Shazeer, Noam, Mirhoseini, Azalia, Maziarz, Krzysztof, Davis, Andy, Le, Quoc, Hinton, Geoffrey, Dean, Jeff",
-      "sameAs": "https://arxiv.org/abs/1701.06538"
+      "sameAs": "https://arxiv.org/abs/1701.06538",
+      "anchorfact:sourceTier": "S",
+      "anchorfact:year": 2017
     },
     {
       "@type": "CreativeWork",
       "name": "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity",
       "author": "Fedus, William, Zoph, Barret, Shazeer, Noam",
-      "sameAs": "https://arxiv.org/abs/2101.03961"
+      "sameAs": "https://arxiv.org/abs/2101.03961",
+      "anchorfact:sourceTier": "S",
+      "anchorfact:year": 2022
     },
     {
       "@type": "CreativeWork",
       "name": "GPT-4 Technical Report",
-      "sameAs": "https://doi.org/undefined"
+      "sameAs": "https://doi.org/undefined",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": null
     }
   ]
 }

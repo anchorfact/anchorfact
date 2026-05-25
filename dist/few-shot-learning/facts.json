@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-few-shot-learning-1",
     "text": "Few-shot learning paradigms evolved through three eras: (1) Metric learning (2015-2018) -- Prototypical Networks (ProtoNet, NeurIPS 2017) learn distance metrics and classify via nearest-prototype comparison, achieving 56% on miniImageNet 5-way 1-shot; (2) Optimization-based (2017-2019) -- MAML (ICML 2017) learns a model initialization that adapts to new tasks in 1-5 gradient steps; (3) Foundation model era (2022-present) -- GPT-3/Claude perform few-shot via in-context examples without parameter updates.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/1703.05175"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-few-shot-learning-2",
     "text": "Foundation model few-shot learning (2023-2025) demonstrated that large models achieve 70-90% accuracy on novel classification tasks given 5-10 demonstration examples in the prompt -- without any parameter updates -- effectively shifting research focus from meta-learning algorithms to in-context learning mechanisms and optimal demonstration selection strategies.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/1703.03400"

@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00095>
   a schema:TechArticle ;
   schema:headline "Same-Origin Policy" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.49" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00095>
-  schema:citation <https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy> .
+  schema:citation <https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy> ;
+  af:sourceTier "C" .

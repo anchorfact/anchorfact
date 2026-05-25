@@ -1,7 +1,7 @@
 # AI for Surveillance Systems: Object Tracking, Anomaly Detection, and Intelligent Monitoring
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI surveillance sees everything, everywhere, all at once -- tracking objects across hundreds of cameras, detecting anomalies in real-time, and enabling forensic search through weeks of footage in seconds. The technology raises fundamental questions about privacy, bias, and the balance between security and civil liberties.

@@ -1,7 +1,7 @@
 # Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering
-Confidence: high
+Confidence: medium (0.74) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Adversarial Machine Learning studies how AI systems can be fooled — and defended. Tiny perturbations invisible to humans can cause state-of-the-art models to misclassify with high confidence. Building robust AI requires understanding the attack surface and engineering defenses.

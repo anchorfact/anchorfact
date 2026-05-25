@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00003",
   "headline": "BERT (Bidirectional Encoder Representations from Transformers)",
   "description": "BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained language model introduced by Google AI Language in October 2018 (arXiv) and published at NAACL 2019. Its key innovation is **bidirectional context**: unlike previous models (ELMo concatenated independent left-to-right and right-to-left passes; GPT used only left-to-right), BERT reads text in both directions simultaneously through a Masked Language Modeling objective. At launch, BERT achieved state-of-the-art results on 11 NLP benchmarks, including GLUE (80.5 → 82.1), SQuAD v1.1 (93.2 F1), and MultiNLI (86.7). BERT established the \"pre-train then fine-tune\" paradigm that dominated NLP until the rise of generative models. As of May 2026, it has been cited over 100,000 times.",
-  "dateCreated": "2026-05-25T02:46:03.598Z",
-  "dateModified": "2026-05-25T02:46:03.598Z",
+  "dateCreated": "2026-05-22",
+  "dateModified": "2026-05-25T12:59:31.606Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -16,14 +16,43 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
+  "anchorfact:confidence": "low",
+  "anchorfact:confidenceScore": 0.52,
   "anchorfact:generationMethod": "human_only",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 1,
+      "source_count": 0.5,
+      "source_verified": 0.2,
+      "freshness": 0.5,
+      "decay": 0.30000000000000004,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "low",
+    "confidence_score": 0.52,
+    "confidence_basis": "verified_sources",
+    "sources_total": 1,
+    "sources_verified": 0,
+    "sources_unreachable": 0,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "S"
+    ],
+    "sources_has_doi": true,
+    "sources_has_url": true,
+    "article_has_disputed": true,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
       "author": "Devlin, Jacob, Chang, Ming-Wei, Lee, Kenton, Toutanova, Kristina",
-      "sameAs": "https://arxiv.org/abs/1810.04805"
+      "sameAs": "https://arxiv.org/abs/1810.04805",
+      "anchorfact:sourceTier": "S",
+      "anchorfact:year": 2019
     }
   ]
 }

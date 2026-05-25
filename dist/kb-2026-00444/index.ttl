@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00444>
   a schema:TechArticle ;
   schema:headline "Growth Mindset" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.43" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00444>
-  schema:citation <https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck/> .
+  schema:citation <https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck/> ;
+  af:sourceTier "C" .

@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/kb-2026-00006>
   a schema:TechArticle ;
   schema:headline "Retrieval-Augmented Generation (RAG)" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.58" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00006>
-  schema:citation <https://arxiv.org/abs/2005.11401> .
+  schema:citation <https://arxiv.org/abs/2005.11401> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/kb-2026-00006>
-  schema:citation <https://arxiv.org/abs/2004.04906> .
+  schema:citation <https://arxiv.org/abs/2004.04906> ;
+  af:sourceTier "S" .

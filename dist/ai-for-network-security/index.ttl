@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-for-network-security>
   a schema:article ;
   schema:headline "AI for Network Security: Intelligent Firewalls, DDoS Mitigation, and Zero-Trust Architectures" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.74" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-for-network-security>
-  schema:citation <https://www.nist.gov/publications/zero-trust-architecture> .
+  schema:citation <https://www.nist.gov/publications/zero-trust-architecture> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-for-network-security>
-  schema:citation <https://www.cloudflare.com/learning/ddos/ddos-mitigation/> .
+  schema:citation <https://www.cloudflare.com/learning/ddos/ddos-mitigation/> ;
+  af:sourceTier "A" .

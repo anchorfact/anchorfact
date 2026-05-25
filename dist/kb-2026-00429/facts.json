@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-01",
     "text": "Efficient Market Hypothesis : prices reflect all available info — you can't consistently beat the market",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://wwnorton.com/books/9781324035466"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-001",
     "text": "The stock market is a marketplace where shares of publicly traded companies are bought and sold. Major US exchanges: NYSE, NASDAQ. Indexes: S&P 500 (500 largest US companies), Dow Jones (30), NASDAQ Composite (tech-heavy). Historical average return: ~10% annually (S&P 500, 1926-2025) — but volatile.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://wwnorton.com/books/9781324035466"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-002",
     "text": "Efficient Market Hypothesis (EMH): prices reflect all available info — you can't consistently beat the market (Fama, 1970 Nobel).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://wwnorton.com/books/9781324035466"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-003",
     "text": "Passive investing (index funds) beats active (stock picking) long-term (~90% of active managers underperform index over 15 years).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://wwnorton.com/books/9781324035466"

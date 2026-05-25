@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-beauty-fashion>
   a schema:article ;
   schema:headline "AI for Beauty and Fashion: Virtual Try-On, Personalized Styling, and Trend Prediction" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-beauty-fashion>
-  schema:citation <https://arxiv.org/search/?query=virtual+try+on+fashion+AI+beauty> .
+  schema:citation <https://arxiv.org/search/?query=virtual+try+on+fashion+AI+beauty> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-beauty-fashion>
-  schema:citation <https://arxiv.org/search/?query=fashion+computer+vision+trend+detection> .
+  schema:citation <https://arxiv.org/search/?query=fashion+computer+vision+trend+detection> ;
+  af:sourceTier "A" .

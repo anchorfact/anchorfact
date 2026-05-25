@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00347>
   a schema:TechArticle ;
   schema:headline "World Geography" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.275" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00347>
-  schema:citation <https://www.nationalgeographic.com/books/article/atlas-of-the-world-11th-edition> .
+  schema:citation <https://www.nationalgeographic.com/books/article/atlas-of-the-world-11th-edition> ;
+  af:sourceTier "C" .

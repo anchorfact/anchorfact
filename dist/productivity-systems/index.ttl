@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/productivity-systems>
   a schema:TechArticle ;
   schema:headline "Productivity Systems" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.51" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/productivity-systems>
-  schema:citation <https://gettingthingsdone.com/> .
+  schema:citation <https://gettingthingsdone.com/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/productivity-systems>
-  schema:citation <https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/> .
+  schema:citation <https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/> ;
+  af:sourceTier "C" .

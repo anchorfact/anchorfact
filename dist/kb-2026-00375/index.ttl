@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00375>
   a schema:TechArticle ;
   schema:headline "Strength Training" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.43" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00375>
-  schema:citation <https://aasgaardco.com/store/books-posters-dvd/starting-strength-basic-barbell-training/> .
+  schema:citation <https://aasgaardco.com/store/books-posters-dvd/starting-strength-basic-barbell-training/> ;
+  af:sourceTier "C" .

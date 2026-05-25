@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00155>
   a schema:TechArticle ;
   schema:headline "Monitoring and Observability" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00155>
-  schema:citation <https://sre.google/books/> .
+  schema:citation <https://sre.google/books/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00155>
-  schema:citation <https://www.oreilly.com/observability/> .
+  schema:citation <https://www.oreilly.com/observability/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00155>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.observability> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.observability> ;
+  af:sourceTier "C" .

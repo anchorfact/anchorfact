@@ -1,7 +1,7 @@
 # Recommender Systems: Graph Neural Collaborative Filtering and LLM-Based Recommendation
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Recommender systems power the discovery engine of the internet — from Netflix suggestions to Amazon product recommendations and TikTok's For You page. Graph neural networks have become the dominant architecture, while LLMs are opening a new paradigm of generative recommendation where AI creates personalized suggestions from natural conversation.

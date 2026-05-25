@@ -1,7 +1,7 @@
 # State Space Models: Mamba, Linear-Time Sequence Modeling, and Alternatives to Transformers
-Confidence: high
+Confidence: medium (0.765) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 State Space Models (SSMs), particularly Mamba, offer a linear-complexity alternative to Transformer attention — processing sequences in O(N) time instead of O(N²). By making SSM parameters input-dependent (selective SSMs), Mamba achieves Transformer-competitive quality with dramatically faster inference on long sequences.

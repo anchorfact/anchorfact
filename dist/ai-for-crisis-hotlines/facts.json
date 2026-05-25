@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-crisis-hotlines-1",
     "text": "AI crisis intervention (2023-2026): LLM-based chatbots provide 24/7 emotional support for mental health crises. The Trevor Project (2024) deployed AI to train volunteer crisis counselors, analyzing practice conversations for empathy and effectiveness. Crisis Text Line (2023-2025) uses ML to triage incoming texts, prioritizing high-risk texters (active suicide ideation) for immediate counselor response, reducing wait times from 5 minutes to <30 seconds for highest-risk.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=suicide+prevention+AI+chatbot+NLP+detection"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-crisis-hotlines-2",
     "text": "AI suicide risk detection (2023-2026): NLP models analyze text conversations, social media posts, and clinical notes for linguistic markers of suicide risk (hopelessness language, temporal focus, pronoun usage). Facebook (2017-2025) deployed AI that proactively flags posts indicating self-harm risk for review by trained moderators, facilitating thousands of wellness checks. Ethical challenge: balancing proactive intervention with user privacy and consent.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=AI+crisis+intervention+ethics+privacy"

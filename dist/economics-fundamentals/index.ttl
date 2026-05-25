@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/economics-fundamentals>
   a schema:Article ;
   schema:headline "Economics: Supply, Demand, and Market Equilibrium" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.71" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/economics-fundamentals>
-  schema:citation <https://www.cengage.com/c/principles-of-economics-9e-mankiw/9780357038314/> .
+  schema:citation <https://www.cengage.com/c/principles-of-economics-9e-mankiw/9780357038314/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/economics-fundamentals>
-  schema:citation <https://ocw.mit.edu/courses/14-01-principles-of-microeconomics-fall-2023/> .
+  schema:citation <https://ocw.mit.edu/courses/14-01-principles-of-microeconomics-fall-2023/> ;
+  af:sourceTier "A" .

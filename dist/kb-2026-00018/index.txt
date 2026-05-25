@@ -1,5 +1,5 @@
 # AI Agents (2025-2026)
-Confidence: high
+Confidence: medium (0.77) (verified)
 Last verified: 2026-05-22
 Generation: human_only
 

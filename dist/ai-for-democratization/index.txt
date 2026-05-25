@@ -1,7 +1,7 @@
 # AI Democratization: Open-Source Models, Low-Code AI, and Accessible Machine Learning
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI democratization is making machine learning accessible to everyone -- from trillion-parameter open-source models anyone can download to drag-and-drop AutoML platforms that build models without code. The monopoly of a few tech giants over AI is being challenged by a global community of researchers, developers, and citizen data scientists.

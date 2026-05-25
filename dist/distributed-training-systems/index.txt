@@ -1,7 +1,7 @@
 # Distributed Training: FSDP, DeepSpeed, and Scaling Laws
-Confidence: high
+Confidence: medium (0.76) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Training frontier AI models requires thousands of GPUs working in parallel. FSDP and DeepSpeed ZeRO are the dominant strategies for memory-efficient distributed training, enabling models with hundreds of billions of parameters.

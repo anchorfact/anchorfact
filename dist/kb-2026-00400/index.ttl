@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00400>
   a schema:TechArticle ;
   schema:headline "Polynesian Navigation" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00400>
-  schema:citation <https://www.basicbooks.com/titles/nicholas-thomas/voyagers/9781541619876/> .
+  schema:citation <https://www.basicbooks.com/titles/nicholas-thomas/voyagers/9781541619876/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00400>
-  schema:citation <https://www.harpercollins.com/sea-people/> .
+  schema:citation <https://www.harpercollins.com/sea-people/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00400>
-  schema:citation <https://uhpress.hawaii.edu/voyagers/> .
+  schema:citation <https://uhpress.hawaii.edu/voyagers/> ;
+  af:sourceTier "C" .

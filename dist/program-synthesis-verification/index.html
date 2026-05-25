@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Program Synthesis and Formal Verification: Neural Theorem Proving with LLMs — AnchorFact</title></head>
-<body><article>## TL;DR<br>
-Program synthesis generates code from specifications; formal verification proves code correctness mathematically. The convergence of LLMs with formal methods — neural theorem proving — promises AI that writes and verifies its own code, making software more reliable than ever before.<br>
-<br>
-## Core Explanation<br>
-Program synthesis: given a specification (input-output examples, natural language description, logical constraints), generate a program. Approaches: (1) Inductive synthesis (FlashFill, Excel) — search over program space guided by examples; (2) Neural synthesis (AlphaCode, CodeLlama) — LLMs generate code from natural language. Formal verification: prove that a program satisfies a formal specification (precondition → program → postcondition). Tools: Dafny, Coq, Isabelle, Lean. Neural theorem proving: LLMs generate proof steps, theorem provers verify correctness → combine creativity of LLMs with rigor of formal systems.<br>
-<br>
-## Detailed Analysis<br>
-ProofSeek pipeline: (1) NL Statement Generator — translate code semantics into natural language property statements; (2) LLM Proof Generator — generate formal proofs in Isabelle/Coq syntax; (3) Automated Theorem Prover — verify proof correctness, reject invalid steps. Key insight: LLMs hallucinate but can be constrained by formal checkers, achieving "creativity with guarantees." Applications: smart contract verification (blockchain), operating system kernel verification (seL4 style), cryptography protocol proofs. Code generation surveys (Springer 2026) report that LLM-generated code reduces development time by 40-60% but still requires 15-25% human review for correctness.<br>
-<br>
-## Further Reading<br>
-- Software Foundations (Pierce, UPenn) — Coq tutorial<br>
-- DeepSpec: Science of Deep Specification<br>
-- Lean 4 Theorem Prover Community<br>
+<head>
+  <meta charset="utf-8">
+  <title>Program Synthesis and Formal Verification: Neural Theorem Proving with LLMs — AnchorFact</title>
+  <meta name="anchorfact:confidence" content="medium (0.74)">
+  <meta name="anchorfact:generation" content="ai_structured">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"article","@id":"https://anchorfact.org/kb/program-synthesis-verification","headline":"Program Synthesis and Formal Verification: Neural Theorem Proving with LLMs","description":"Program synthesis generates code from specifications; formal verification proves code correctness mathematically. The convergence of LLMs with formal methods — neural theorem proving — promises AI that writes and verifies its own code, making software more reliable than ever before.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.74,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.7,"freshness":1,"decay":0.1,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.74,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":1,"sources_unreachable":1,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["A","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":false,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Neural Theorem Proving: Generating and Structuring Proofs for Formal Verification (ProofSeek)","sameAs":"https://proceedings.mlr.press/v284/rao25a.html","anchorfact:sourceTier":"A","anchorfact:year":2025},{"@type":"CreativeWork","name":"Formal Reasoning Meets LLMs: Toward AI for Mathematics and Verification","sameAs":"https://cacm.acm.org/research/formal-reasoning-meets-llms-toward-ai-for-mathematics-and-verification/","anchorfact:sourceTier":"A","anchorfact:year":2026}]}</script>
+</head>
+<body><article>## TL;DR<br>
+Program synthesis generates code from specifications; formal verification proves code correctness mathematically. The convergence of LLMs with formal methods — neural theorem proving — promises AI that writes and verifies its own code, making software more reliable than ever before.<br>
+<br>
+## Core Explanation<br>
+Program synthesis: given a specification (input-output examples, natural language description, logical constraints), generate a program. Approaches: (1) Inductive synthesis (FlashFill, Excel) — search over program space guided by examples; (2) Neural synthesis (AlphaCode, CodeLlama) — LLMs generate code from natural language. Formal verification: prove that a program satisfies a formal specification (precondition → program → postcondition). Tools: Dafny, Coq, Isabelle, Lean. Neural theorem proving: LLMs generate proof steps, theorem provers verify correctness → combine creativity of LLMs with rigor of formal systems.<br>
+<br>
+## Detailed Analysis<br>
+ProofSeek pipeline: (1) NL Statement Generator — translate code semantics into natural language property statements; (2) LLM Proof Generator — generate formal proofs in Isabelle/Coq syntax; (3) Automated Theorem Prover — verify proof correctness, reject invalid steps. Key insight: LLMs hallucinate but can be constrained by formal checkers, achieving "creativity with guarantees." Applications: smart contract verification (blockchain), operating system kernel verification (seL4 style), cryptography protocol proofs. Code generation surveys (Springer 2026) report that LLM-generated code reduces development time by 40-60% but still requires 15-25% human review for correctness.<br>
+<br>
+## Further Reading<br>
+- Software Foundations (Pierce, UPenn) — Coq tutorial<br>
+- DeepSpec: Science of Deep Specification<br>
+- Lean 4 Theorem Prover Community<br>
 </article></body>
 </html>

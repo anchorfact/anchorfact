@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/f1",
     "text": "Chain-of-Thought prompting (Wei et al. 2022, Google, NeurIPS) elicits step-by-step reasoning by adding \"Let's think step by step\" to prompts, dramatically improving performance on multi-step reasoning tasks like math and commonsense QA.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2201.11903"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/f2",
     "text": "Tree of Thoughts (Yao et al. 2023, NeurIPS) extends CoT by exploring multiple reasoning paths via BFS/DFS with self-evaluation, achieving 74% on Game of 24 vs 4% with standard prompting.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2305.10601"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/f3",
     "text": "Few-shot prompting (Brown et al. 2020, GPT-3) showed that providing 1-64 input-output examples in the prompt enables LLMs to perform new tasks without any gradient updates, establishing in-context learning as a fundamental capability.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2005.14165"

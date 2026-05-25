@@ -1,7 +1,7 @@
 # Pyramids of Giza
-Confidence: high
+Confidence: low (0.445) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-supply-chain-1",
     "text": "A comprehensive systematic review (Optimization Online, December 2025) analyzed 199 peer-reviewed articles on AI in supply chain optimization — categorizing machine learning usage into parameter estimation and solution generation — and found that deep reinforcement learning-based approaches for dynamic vehicle routing achieve 15-25% cost reductions compared to static optimization methods in real-world logistics scenarios with stochastic demand.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://optimization-online.org/wp-content/uploads/2025/12/GalandeJozaniBuyuktahtakin2025_AISupplyChain_OptOnline.pdf"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-supply-chain-2",
     "text": "Nature Scientific Reports (September 2025) proposed a novel hierarchical deep reinforcement learning framework for multi-objective dynamic logistics optimization — simultaneously minimizing delivery time, fuel consumption, and carbon emissions — demonstrating 18-22% Pareto improvement over traditional operations research methods on benchmarks from European logistics networks.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.nature.com/articles/s41598-025-18309-y"

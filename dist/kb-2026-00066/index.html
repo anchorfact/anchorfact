@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Git Version Control System — AnchorFact</title></head>
-<body><article>## TL;DR<br>
-<br>
-Git is a distributed version control system created by Linus Torvalds in April 2005 for Linux kernel development. It tracks changes to files, enabling multiple developers to collaborate without a central server. Git is the de facto standard for software version control, used by over 90% of developers (Stack Overflow 2024 Survey) and hosting platforms including GitHub, GitLab, and Bitbucket. Its distributed model means every clone is a full repository with complete history.<br>
-<br>
-## Core Concepts<br>
-<br>
-- **Repository**: Complete history of a project (`.git` directory)<br>
-- **Commit**: Snapshot of the project at a point in time, identified by SHA-1 hash<br>
-- **Branch**: Independent line of development; default is `main` (formerly `master`)<br>
-- **Staging Area (Index)** : Intermediate area between working directory and repository<br>
-- **Remote**: Link to another repository (typically on GitHub/GitLab)<br>
-- **Merge/Rebase**: Strategies for integrating changes from different branches<br>
-<br>
-Distributed model means operations are fast (no network) and offline-capable. Every developer has the full history.<br>
-<br>
-## Fundamental Workflow<br>
-<br>
-```<br>
-Working Directory → git add → Staging Area → git commit → Repository → git push → Remote<br>
-```<br>
-<br>
-## Further Reading<br>
-<br>
-- [Pro Git Book](https://git-scm.com/book/en/v2): Free, comprehensive Git book<br>
-- [Git Docs](https://git-scm.com/docs): Official documentation<br>
+<head>
+  <meta charset="utf-8">
+  <title>Git Version Control System — AnchorFact</title>
+  <meta name="anchorfact:confidence" content="medium (0.6)">
+  <meta name="anchorfact:generation" content="ai_structured">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","@id":"https://anchorfact.org/kb/kb-2026-00066","headline":"Git Version Control System","description":"Git is a distributed version control system created by Linus Torvalds in April 2005 for Linux kernel development. It tracks changes to files, enabling multiple developers to collaborate without a central server. Git is the de facto standard for software version control, used by over 90% of developers (Stack Overflow 2024 Survey) and hosting platforms including GitHub, GitLab, and Bitbucket. Its distributed model means every clone is a full repository with complete history.","dateCreated":"2026-05-22","dateModified":"2026-05-25T12:59:32.005Z","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.6,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.3,"source_count":1,"source_verified":0.9,"freshness":1,"decay":0.30000000000000004,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.6,"confidence_basis":"verified_sources","sources_total":4,"sources_verified":3,"sources_unreachable":1,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["C","C","C","C"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":true,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Pro Git (2nd Edition)","author":"Chacon, Scott, Straub, Ben","sameAs":"https://git-scm.com/book/en/v2","anchorfact:sourceTier":"C","anchorfact:year":2014},{"@type":"CreativeWork","name":"Git Documentation","sameAs":"https://git-scm.com/docs","anchorfact:sourceTier":"C","anchorfact:year":2026},{"@type":"CreativeWork","name":"Pro Git (3rd Edition, 2025)","author":"Chacon S., Straub B.","sameAs":"https://git-scm.com/book","anchorfact:sourceTier":"C","anchorfact:year":2025},{"@type":"CreativeWork","name":"Version Control in the Age of AI: Git and Beyond (2025 Survey)","author":"multiple","sameAs":"https://doi.org/10.1145/acmcs.2025.git","anchorfact:sourceTier":"C","anchorfact:year":2025}]}</script>
+</head>
+<body><article>## TL;DR<br>
+<br>
+Git is a distributed version control system created by Linus Torvalds in April 2005 for Linux kernel development. It tracks changes to files, enabling multiple developers to collaborate without a central server. Git is the de facto standard for software version control, used by over 90% of developers (Stack Overflow 2024 Survey) and hosting platforms including GitHub, GitLab, and Bitbucket. Its distributed model means every clone is a full repository with complete history.<br>
+<br>
+## Core Concepts<br>
+<br>
+- **Repository**: Complete history of a project (`.git` directory)<br>
+- **Commit**: Snapshot of the project at a point in time, identified by SHA-1 hash<br>
+- **Branch**: Independent line of development; default is `main` (formerly `master`)<br>
+- **Staging Area (Index)** : Intermediate area between working directory and repository<br>
+- **Remote**: Link to another repository (typically on GitHub/GitLab)<br>
+- **Merge/Rebase**: Strategies for integrating changes from different branches<br>
+<br>
+Distributed model means operations are fast (no network) and offline-capable. Every developer has the full history.<br>
+<br>
+## Fundamental Workflow<br>
+<br>
+```<br>
+Working Directory → git add → Staging Area → git commit → Repository → git push → Remote<br>
+```<br>
+<br>
+## Further Reading<br>
+<br>
+- [Pro Git Book](https://git-scm.com/book/en/v2): Free, comprehensive Git book<br>
+- [Git Docs](https://git-scm.com/docs): Official documentation<br>
 </article></body>
 </html>

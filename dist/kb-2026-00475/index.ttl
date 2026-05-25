@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00475>
   a schema:TechArticle ;
   schema:headline "Galaxies and the Universe" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.43" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00475>
-  schema:citation <https://www.penguinrandomhouse.com/books/55403/cosmos-by-carl-sagan/> .
+  schema:citation <https://www.penguinrandomhouse.com/books/55403/cosmos-by-carl-sagan/> ;
+  af:sourceTier "C" .

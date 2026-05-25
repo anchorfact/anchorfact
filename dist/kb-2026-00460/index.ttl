@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00460>
   a schema:TechArticle ;
   schema:headline "Pyramids of Giza" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.445" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00460>
-  schema:citation <https://thamesandhudson.com/the-complete-pyramids-9780500285473> .
+  schema:citation <https://thamesandhudson.com/the-complete-pyramids-9780500285473> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00460>
-  schema:citation <https://aucpress.com/pyramids/> .
+  schema:citation <https://aucpress.com/pyramids/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00460>
-  schema:citation <https://thamesandhudson.com/giza/> .
+  schema:citation <https://thamesandhudson.com/giza/> ;
+  af:sourceTier "C" .

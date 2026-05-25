@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00153>
   a schema:TechArticle ;
   schema:headline "CI/CD Pipeline" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00153>
-  schema:citation <https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/> .
+  schema:citation <https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00153>
-  schema:citation <https://www.informit.com/continuous-delivery/> .
+  schema:citation <https://www.informit.com/continuous-delivery/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00153>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.cicd> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.cicd> ;
+  af:sourceTier "C" .

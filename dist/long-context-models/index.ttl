@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/long-context-models>
   a schema:TechArticle ;
   schema:headline "Long-Context Language Models: Beyond 1M Tokens" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.585" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/long-context-models>
-  schema:citation <https://arxiv.org/abs/2403.05530> .
+  schema:citation <https://arxiv.org/abs/2403.05530> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/long-context-models>
-  schema:citation <https://arxiv.org/abs/2405.07704> .
+  schema:citation <https://arxiv.org/abs/2405.07704> ;
+  af:sourceTier "A" .

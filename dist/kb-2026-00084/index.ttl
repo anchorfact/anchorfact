@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00084>
   a schema:TechArticle ;
   schema:headline "Web Storage API" ;
-  af:confidence "high" ;
+  af:confidence "medium" ;
+  af:confidenceScore "0.715" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "human_only" .
 
 <https://anchorfact.org/kb/kb-2026-00084>
-  schema:citation <https://html.spec.whatwg.org/multipage/webstorage.html> .
+  schema:citation <https://html.spec.whatwg.org/multipage/webstorage.html> ;
+  af:sourceTier "S" .

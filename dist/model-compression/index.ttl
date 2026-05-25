@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/model-compression>
   a schema:TechArticle ;
   schema:headline "Model Compression: Pruning, Quantization, and Distillation" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.69" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/model-compression>
-  schema:citation <https://arxiv.org/abs/2106.08295> .
+  schema:citation <https://arxiv.org/abs/2106.08295> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/model-compression>
-  schema:citation <https://arxiv.org/abs/1803.03635> .
+  schema:citation <https://arxiv.org/abs/1803.03635> ;
+  af:sourceTier "A" .

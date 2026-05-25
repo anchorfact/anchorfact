@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00274>
   a schema:TechArticle ;
   schema:headline "Natural Language Processing (NLP)" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.54" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00274>
-  schema:citation <https://arxiv.org/abs/1810.04805> .
+  schema:citation <https://arxiv.org/abs/1810.04805> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00274>
-  schema:citation <https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf> .
+  schema:citation <https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00274>
-  schema:citation <https://web.stanford.edu/~jurafsky/slp3/> .
+  schema:citation <https://web.stanford.edu/~jurafsky/slp3/> ;
+  af:sourceTier "C" .

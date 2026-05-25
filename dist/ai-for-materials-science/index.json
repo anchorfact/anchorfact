@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-materials-science",
   "headline": "AI for Materials Science: GNoME, Crystal Discovery, and Materials Informatics",
   "description": "AI is accelerating materials science from Edisonian trial-and-error to systematic discovery. DeepMind's GNoME used graph neural networks to discover 2.2 million new crystals — 45x the human-accumulated catalog — while autonomous labs synthesize AI-predicted compounds robotically.",
-  "dateCreated": "2026-05-25T02:46:03.442Z",
+  "dateCreated": "2026-05-24",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",
@@ -16,18 +16,50 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidence": "medium",
+  "anchorfact:confidenceScore": 0.84,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 1,
+      "source_count": 0.8,
+      "source_verified": 1,
+      "freshness": 0.9,
+      "decay": 0.1,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "medium",
+    "confidence_score": 0.84,
+    "confidence_basis": "verified_sources",
+    "sources_total": 2,
+    "sources_verified": 2,
+    "sources_unreachable": 0,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "S",
+      "A"
+    ],
+    "sources_has_doi": true,
+    "sources_has_url": true,
+    "article_has_disputed": false,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "Scaling deep learning for materials discovery (GNoME)",
-      "sameAs": "https://www.nature.com/articles/s41586-023-06735-9"
+      "sameAs": "https://www.nature.com/articles/s41586-023-06735-9",
+      "anchorfact:sourceTier": "S",
+      "anchorfact:year": 2023
     },
     {
       "@type": "CreativeWork",
       "name": "An autonomous laboratory for the accelerated synthesis of novel materials (A-Lab)",
-      "sameAs": "https://www.nature.com/articles/s41586-023-06934-4"
+      "sameAs": "https://www.nature.com/articles/s41586-023-06934-4",
+      "anchorfact:sourceTier": "A",
+      "anchorfact:year": 2024
     }
   ]
 }

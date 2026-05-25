@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/audio-source-separation",
   "headline": "Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning",
   "description": "Audio source separation -- the \"cocktail party problem\" -- isolates individual sound sources from a mixture: extracting vocals from a song, separating overlapping speakers in a meeting, or isolating a target voice in a noisy environment. Deep learning has achieved human-level separation quality, enabling applications from music production to hearing aid enhancement.",
-  "dateCreated": "2026-05-25T02:46:03.588Z",
+  "dateCreated": "2026-05-24",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",
@@ -16,18 +16,50 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidence": "medium",
+  "anchorfact:confidenceScore": 0.84,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 1,
+      "source_count": 0.8,
+      "source_verified": 1,
+      "freshness": 0.9,
+      "decay": 0.1,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "medium",
+    "confidence_score": 0.84,
+    "confidence_basis": "verified_sources",
+    "sources_total": 2,
+    "sources_verified": 2,
+    "sources_unreachable": 0,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "A",
+      "S"
+    ],
+    "sources_has_doi": true,
+    "sources_has_url": true,
+    "article_has_disputed": false,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "Music Source Separation in the Waveform Domain (Demucs)",
-      "sameAs": "https://github.com/facebookresearch/demucs"
+      "sameAs": "https://github.com/facebookresearch/demucs",
+      "anchorfact:sourceTier": "A",
+      "anchorfact:year": 2024
     },
     {
       "@type": "CreativeWork",
       "name": "Conv-TasNet: Surpassing Ideal Time-Frequency Masking for Speech Separation",
-      "sameAs": "https://ieeexplore.ieee.org/document/8707065"
+      "sameAs": "https://ieeexplore.ieee.org/document/8707065",
+      "anchorfact:sourceTier": "S",
+      "anchorfact:year": 2019
     }
   ]
 }

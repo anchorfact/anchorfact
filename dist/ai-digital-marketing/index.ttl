@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-digital-marketing>
   a schema:article ;
   schema:headline "AI for Digital Marketing: Personalization, Campaign Optimization, and Customer Analytics" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-digital-marketing>
-  schema:citation <https://arxiv.org/search/?query=digital+marketing+AI+personalization> .
+  schema:citation <https://arxiv.org/search/?query=digital+marketing+AI+personalization> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-digital-marketing>
-  schema:citation <https://arxiv.org/search/?query=contextual+bandit+marketing> .
+  schema:citation <https://arxiv.org/search/?query=contextual+bandit+marketing> ;
+  af:sourceTier "A" .

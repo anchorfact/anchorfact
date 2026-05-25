@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-game-development-01",
     "text": "Unity 是 Unity Technologies 开发的跨平台游戏引擎，首次发布于 2005 年。支持 2D/3D 游戏开发，使用 C 作为脚本语言，构建目标覆盖 25+ 平台（Windows、macOS、iOS、Android、WebGL、主机等）。截至 2026 年，Unity 是全球使用量最大的游戏引擎，超过 50% 的手游使用 Unity 开发。Unity 2022 LTS 是当前推荐的生产版本，Unity 6（2024年发布）是最新一代。",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://docs.unity3d.com/2022.3/Documentation/Manual/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-game-development-001",
     "text": "Unity 是 Unity Technologies 开发的跨平台游戏引擎，首次发布于 2005 年。支持 2D/3D 游戏开发，使用 C# 作为脚本语言，构建目标覆盖 25+ 平台（Windows、macOS、iOS、Android、WebGL、主机等）。截至 2026 年，Unity 是全球使用量最大的游戏引擎，超过 50% 的手游使用 Unity 开发。Unity 2022 LTS 是当前推荐的生产版本，Unity 6（2024年发布）是最新一代。",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://docs.unity3d.com/2022.3/Documentation/Manual/"

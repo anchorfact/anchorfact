@@ -1,7 +1,7 @@
 # AI Data Governance: Metadata Management, Data Catalogs, and AI-Ready Data Quality
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is transforming data governance from manual, reactive processes to automated, proactive intelligence. ML-powered platforms automatically discover, classify, and monitor data assets across enterprises, ensuring data quality, compliance, and discoverability. As AI systems consume and generate data at unprecedented scale, governance becomes the foundation of trustworthy AI.

@@ -1,5 +1,5 @@
 # Cardiovascular Exercise
-Confidence: high
+Confidence: low (0.295) (verified)
 Last verified: 2026-05-22
 Generation: ai_assisted
 

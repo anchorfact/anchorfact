@@ -1,7 +1,7 @@
 # AI for Inventory Management: Demand Forecasting, Stock Optimization, and Automated Replenishment
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI inventory management ensures the right products are in the right place at the right time -- predicting demand at day-level, automatically reordering before stockouts, and optimizing safety stock across millions of SKUs. The result: 30% fewer out-of-stocks, 20% lower inventory costs.

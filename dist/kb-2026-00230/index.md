@@ -7,7 +7,7 @@ language: en
 confidence: high
 last_verified: "2026-05-24"
 created_date: "2026-05-22"
-generation_method: human_only
+generation_method: ai_structured
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static

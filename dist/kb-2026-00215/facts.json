@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-01",
     "text": "Users are randomly assigned to version A or B ; results measured via a Key Performance Indicator",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://hbr.org/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-001",
     "text": "A/B testing (split testing) compares two variants to determine which performs better. Users are randomly assigned to version A (control) or B (treatment); results measured via a Key Performance Indicator (conversion rate, click-through rate, revenue). Statistical significance ensures results aren't due to random chance.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://hbr.org/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-002",
     "text": "p-value < 0.05 typically indicates statistical significance.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://hbr.org/"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-business-003",
     "text": "Common test duration: minimum 1-2 full business cycles.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://hbr.org/"

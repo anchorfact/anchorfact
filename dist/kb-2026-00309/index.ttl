@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00309>
   a schema:TechArticle ;
   schema:headline "Julia Language" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00309>
-  schema:citation <https://docs.julialang.org/> .
+  schema:citation <https://docs.julialang.org/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00309>
-  schema:citation <https://www.oreilly.com/julia/> .
+  schema:citation <https://www.oreilly.com/julia/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00309>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.julia> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.julia> ;
+  af:sourceTier "C" .

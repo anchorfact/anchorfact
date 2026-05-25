@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Few-Shot Learning: Prototypical Networks, MAML, and In-Context Adaptation — AnchorFact</title></head>
-<body><article>## TL;DR<br>
-Few-shot learning teaches AI to recognize new concepts from just a handful of examples -- the way humans learn (see one panda, recognize all pandas). From Prototypical Networks to MAML to in-context learning in foundation models, the ability to generalize from few examples is transforming AI from narrow specialists to flexible generalists.<br>
-<br>
-## Core Explanation<br>
-The N-way K-shot classification problem: given N classes with K labeled examples each, classify a new query example. Meta-learning (learning to learn): train on many small tasks (episodes), each with N-way K-shot structure. Three paradigms: (1) Metric-based -- ProtoNet computes class prototypes as mean embedding of support examples, classifies query by nearest-prototype distance; (2) Optimization-based -- MAML trains parameters such that one gradient step on a new task's loss produces good performance; (3) Hallucination-based -- generate additional training examples via data augmentation or generative models.<br>
-<br>
-## Detailed Analysis<br>
-ProtoNet (Snell et al., 2017): embedding function maps inputs to a metric space where Euclidean distance corresponds to semantic similarity. Compute prototype per class, classify query as closest prototype. Works well when classes are visually distinct, struggles with fine-grained categories. MAML (Finn et al., 2017): learns initialization sensitive to task-specific gradients. Inner loop: task-specific adaptation (few gradient steps). Outer loop: meta-update across tasks. Foundation model few-shot: rather than meta-training, simply prompt a frozen LLM with examples. Key observation (Min et al., 2022): demonstration labels need not be correct -- model learns task format, not specific answers. Ground-truth labels provide marginal gain over random labels. Applications: medical imaging (rare disease classification), personalized NLP, and robotics (adapting manipulation to novel objects).<br>
-<br>
-## Further Reading<br>
-- Learn2Learn: PyTorch Meta-Learning Library<br>
-- Meta-Dataset: Few-Shot Learning Benchmark<br>
-- ChatGPT Few-Shot Prompting Guide<br>
+<head>
+  <meta charset="utf-8">
+  <title>Few-Shot Learning: Prototypical Networks, MAML, and In-Context Adaptation — AnchorFact</title>
+  <meta name="anchorfact:confidence" content="medium (0.74)">
+  <meta name="anchorfact:generation" content="ai_structured">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"article","@id":"https://anchorfact.org/kb/few-shot-learning","headline":"Few-Shot Learning: Prototypical Networks, MAML, and In-Context Adaptation","description":"Few-shot learning teaches AI to recognize new concepts from just a handful of examples -- the way humans learn (see one panda, recognize all pandas). From Prototypical Networks to MAML to in-context learning in foundation models, the ability to generalize from few examples is transforming AI from narrow specialists to flexible generalists.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.74,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.9,"freshness":0.5,"decay":0.1,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.74,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":2,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["A","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":false,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Prototypical Networks for Few-shot Learning","sameAs":"https://arxiv.org/abs/1703.05175","anchorfact:sourceTier":"A","anchorfact:year":2017},{"@type":"CreativeWork","name":"Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks (MAML)","sameAs":"https://arxiv.org/abs/1703.03400","anchorfact:sourceTier":"A","anchorfact:year":2017}]}</script>
+</head>
+<body><article>## TL;DR<br>
+Few-shot learning teaches AI to recognize new concepts from just a handful of examples -- the way humans learn (see one panda, recognize all pandas). From Prototypical Networks to MAML to in-context learning in foundation models, the ability to generalize from few examples is transforming AI from narrow specialists to flexible generalists.<br>
+<br>
+## Core Explanation<br>
+The N-way K-shot classification problem: given N classes with K labeled examples each, classify a new query example. Meta-learning (learning to learn): train on many small tasks (episodes), each with N-way K-shot structure. Three paradigms: (1) Metric-based -- ProtoNet computes class prototypes as mean embedding of support examples, classifies query by nearest-prototype distance; (2) Optimization-based -- MAML trains parameters such that one gradient step on a new task's loss produces good performance; (3) Hallucination-based -- generate additional training examples via data augmentation or generative models.<br>
+<br>
+## Detailed Analysis<br>
+ProtoNet (Snell et al., 2017): embedding function maps inputs to a metric space where Euclidean distance corresponds to semantic similarity. Compute prototype per class, classify query as closest prototype. Works well when classes are visually distinct, struggles with fine-grained categories. MAML (Finn et al., 2017): learns initialization sensitive to task-specific gradients. Inner loop: task-specific adaptation (few gradient steps). Outer loop: meta-update across tasks. Foundation model few-shot: rather than meta-training, simply prompt a frozen LLM with examples. Key observation (Min et al., 2022): demonstration labels need not be correct -- model learns task format, not specific answers. Ground-truth labels provide marginal gain over random labels. Applications: medical imaging (rare disease classification), personalized NLP, and robotics (adapting manipulation to novel objects).<br>
+<br>
+## Further Reading<br>
+- Learn2Learn: PyTorch Meta-Learning Library<br>
+- Meta-Dataset: Few-Shot Learning Benchmark<br>
+- ChatGPT Few-Shot Prompting Guide<br>
 </article></body>
 </html>

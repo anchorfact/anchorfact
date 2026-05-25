@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-online-advertising-1",
     "text": "Real-time bidding (RTB) processes 10+ million ad auctions per second globally -- each auction deciding in <100ms which ad to show. Deep learning models (DeepFM, DCN-V2, DLRM) process sparse categorical features (user ID, ad ID, context) and dense features via embedding layers and feature interaction networks, predicting CTR (click-through rate) with log loss ~0.12-0.15.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/1906.00091"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-for-online-advertising-2",
     "text": "Google, Meta, and Amazon collectively capture ~60% of the $600B+ global digital advertising market (2025) -- with Meta's ad system processing trillions of predictions daily using GNN-based and transformer-based recommendation models that jointly optimize user engagement, advertiser ROI, and platform revenue through multi-objective reinforcement learning.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2008.13535"

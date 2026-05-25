@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00271>
   a schema:TechArticle ;
   schema:headline "Generative Adversarial Networks (GAN)" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.5" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00271>
-  schema:citation <https://arxiv.org/abs/1406.2661> .
+  schema:citation <https://arxiv.org/abs/1406.2661> ;
+  af:sourceTier "S" .

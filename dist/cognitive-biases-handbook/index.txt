@@ -1,7 +1,7 @@
 # Cognitive Biases: A Practical Guide to Clearer Thinking
-Confidence: high
+Confidence: low (0.475) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Cognitive biases are systematic errors in thinking affecting judgment and decision making. Over 180 documented biases influence everything from medical diagnoses to investment choices.

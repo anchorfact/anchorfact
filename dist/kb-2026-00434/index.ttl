@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00434>
   a schema:TechArticle ;
   schema:headline "Cryptocurrency" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.45" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00434>
-  schema:citation <https://www.wiley.com/en-us/The+Bitcoin+Standard%3A+The+Decentralized+Alternative+to+Central+Banking-p-9781119473862> .
+  schema:citation <https://www.wiley.com/en-us/The+Bitcoin+Standard%3A+The+Decentralized+Alternative+to+Central+Banking-p-9781119473862> ;
+  af:sourceTier "C" .

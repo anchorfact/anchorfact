@@ -4,17 +4,23 @@
 <https://anchorfact.org/kb/kb-2026-00478>
   a schema:TechArticle ;
   schema:headline "Animation History" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.425" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00478>
-  schema:citation <https://www.disneybooks.com/book/the-illusion-of-life/> .
+  schema:citation <https://www.disneybooks.com/book/the-illusion-of-life/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00478>
-  schema:citation <https://www.faber.co.uk/animation/> .
+  schema:citation <https://www.faber.co.uk/animation/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00478>
-  schema:citation <https://www.routledge.com/animation-history/> .
+  schema:citation <https://www.routledge.com/animation-history/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00478>
-  schema:citation <https://www.faber.co.uk/animation/> .
+  schema:citation <https://www.faber.co.uk/animation/> ;
+  af:sourceTier "C" .

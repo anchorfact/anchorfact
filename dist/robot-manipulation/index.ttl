@@ -5,10 +5,14 @@
   a schema:article ;
   schema:headline "Robot Manipulation: Dexterous Grasping, Sim-to-Real Transfer, and Tactile Sensing" ;
   af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidenceScore "0.85" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/robot-manipulation>
-  schema:citation <https://arxiv.org/abs/2502.20396> .
+  schema:citation <https://arxiv.org/abs/2502.20396> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/robot-manipulation>
-  schema:citation <https://link.springer.com/article/10.1007/s10462-025-11262-2> .
+  schema:citation <https://link.springer.com/article/10.1007/s10462-025-11262-2> ;
+  af:sourceTier "S" .

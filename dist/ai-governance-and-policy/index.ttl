@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-governance-and-policy>
   a schema:TechArticle ;
   schema:headline "AI Governance: Risk Frameworks, Audits, and International Cooperation" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.795" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-governance-and-policy>
-  schema:citation <https://www.nist.gov/itl/ai-risk-management-framework> .
+  schema:citation <https://www.nist.gov/itl/ai-risk-management-framework> ;
+  af:sourceTier "S" .
 
 <https://anchorfact.org/kb/ai-governance-and-policy>
-  schema:citation <https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration> .
+  schema:citation <https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration> ;
+  af:sourceTier "C" .

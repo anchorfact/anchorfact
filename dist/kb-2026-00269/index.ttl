@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00269>
   a schema:TechArticle ;
   schema:headline "Convolutional Neural Networks (CNN)" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.7" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00269>
-  schema:citation <https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks> .
+  schema:citation <https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks> ;
+  af:sourceTier "S" .

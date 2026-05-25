@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/ai-digital-twins-healthcare>
   a schema:article ;
   schema:headline "AI Digital Twins for Healthcare: Patient-Specific Simulation, Treatment Planning, and Virtual Organs" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.79" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/ai-digital-twins-healthcare>
-  schema:citation <https://arxiv.org/search/?query=patient+specific+digital+twin+simulation> .
+  schema:citation <https://arxiv.org/search/?query=patient+specific+digital+twin+simulation> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/ai-digital-twins-healthcare>
-  schema:citation <https://arxiv.org/search/?query=in+silico+clinical+trial+digital+twin> .
+  schema:citation <https://arxiv.org/search/?query=in+silico+clinical+trial+digital+twin> ;
+  af:sourceTier "A" .

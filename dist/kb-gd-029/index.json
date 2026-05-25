@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-gd-029",
   "headline": "程序化内容生成（PCG）",
   "description": "程序化内容生成（PCG）\r",
-  "dateCreated": "2026-05-25T02:46:04.398Z",
-  "dateModified": "2026-05-25T02:46:04.398Z",
+  "dateCreated": "2026-04-28",
+  "dateModified": "2026-05-25T12:59:32.289Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -16,13 +16,42 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
+  "anchorfact:confidence": "low",
+  "anchorfact:confidenceScore": 0.5,
   "anchorfact:generationMethod": "human_only",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 0.3,
+      "source_count": 0.5,
+      "source_verified": 0.9,
+      "freshness": 1,
+      "decay": 0.30000000000000004,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "low",
+    "confidence_score": 0.5,
+    "confidence_basis": "verified_sources",
+    "sources_total": 1,
+    "sources_verified": 1,
+    "sources_unreachable": 0,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "C"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": true,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "游戏开发Wiki（个人知识库）",
-      "sameAs": "https://www.gdconf.com/"
+      "sameAs": "https://www.gdconf.com/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2026
     }
   ]
 }

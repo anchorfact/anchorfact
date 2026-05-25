@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00120>
   a schema:TechArticle ;
   schema:headline "OWASP Top 10" ;
-  af:confidence "high" ;
-  af:generationMethod "human_only" .
+  af:confidence "low" ;
+  af:confidenceScore "0.445" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00120>
-  schema:citation <https://dl.acm.org/> .
+  schema:citation <https://dl.acm.org/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00120>
-  schema:citation <https://www.oreilly.com/websec/> .
+  schema:citation <https://www.oreilly.com/websec/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00120>
-  schema:citation <https://doi.org/10.1145/acmcs.2025.appsec> .
+  schema:citation <https://doi.org/10.1145/acmcs.2025.appsec> ;
+  af:sourceTier "C" .

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/f1",
     "text": "OpenAI o1 (2024) represents a paradigm shift to reasoning-time compute scaling: the model \"thinks\" through problems using hidden chain-of-thought, dramatically improving math, coding, and scientific reasoning capabilities.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://openai.com/research/learning-to-reason-with-llms"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/f2",
     "text": "DeepSeek-R1 (2025) achieved o1-level reasoning using pure reinforcement learning without supervised fine-tuning on reasoning data, demonstrating that reasoning emerges from RL with simple reward functions.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2501.12948"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/f3",
     "text": "Scaling test-time compute (Snell et al. 2024, DeepMind, ICLR 2025) proved that increasing inference computation (e.g., best-of-N, beam search) can be more effective than scaling model parameters for improving LLM performance.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/abs/2408.03314"

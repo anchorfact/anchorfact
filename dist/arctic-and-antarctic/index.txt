@@ -1,5 +1,5 @@
 # Arctic and Antarctic
-Confidence: high
+Confidence: low (0.335) (verified)
 Last verified: 2026-05-22
 Generation: ai_assisted
 

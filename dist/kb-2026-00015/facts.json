@@ -4,7 +4,10 @@
     "@type": "Claim",
     "@id": "https://anchorfact.org/fact/fact-computer-science-01",
     "text": "Boyce at IBM in 1974 and standardized by ANSI in 1986 and ISO in 1987, SQL remains — over 50 years later — the dominant database query language, used by virtually every application that stores structured data",
-    "anchorfact:confidence": "medium"
+    "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null
   },
   {
     "@context": "https://schema.org",
@@ -12,6 +15,9 @@
     "@id": "https://anchorfact.org/fact/fact-computer-science-02",
     "text": "Designed by Donald D",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.postgresql.org/docs/17/"

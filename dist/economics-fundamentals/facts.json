@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-biz-ec-001",
     "text": "Adam Smith's Wealth of Nations (1776) founded classical economics: division of labor, invisible hand.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.econlib.org/library/Smith/smWN.html"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-biz-ec-002",
     "text": "Keynes' General Theory (1936): aggregate demand drives employment and output.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.cambridge.org/core/books/general-theory-of-employment-interest-and-money/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-biz-ec-003",
     "text": "Samuelson's Economics (1948, 20th ed.) is the best-selling economics textbook.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.mheducation.com/highered/product/economics-samuelson-nordhaus/M9780078021756.html"

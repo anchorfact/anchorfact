@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00377>
   a schema:TechArticle ;
   schema:headline "Mental Health Basics" ;
-  af:confidence "high" ;
+  af:confidence "medium" ;
+  af:confidenceScore "0.715" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00377>
-  schema:citation <https://www.psychiatry.org/psychiatrists/practice/dsm> .
+  schema:citation <https://www.psychiatry.org/psychiatrists/practice/dsm> ;
+  af:sourceTier "S" .

@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/representation-learning>
   a schema:TechArticle ;
   schema:headline "Representation Learning: Autoencoders, VAEs, and MAEs" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.74" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/representation-learning>
-  schema:citation <https://arxiv.org/abs/1312.6114> .
+  schema:citation <https://arxiv.org/abs/1312.6114> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/representation-learning>
-  schema:citation <https://arxiv.org/abs/2111.06377> .
+  schema:citation <https://arxiv.org/abs/2111.06377> ;
+  af:sourceTier "A" .

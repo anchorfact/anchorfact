@@ -1,7 +1,7 @@
 # Efficient and Green AI: Reducing the Carbon Footprint of Machine Learning
-Confidence: high
+Confidence: medium (0.71) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Green AI addresses the growing carbon footprint of machine learning training. From hardware-aware algorithms to sparse training and model distillation, efficiency research is both an economic and environmental imperative as models scale to trillion parameters.

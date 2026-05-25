@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00325>
   a schema:TechArticle ;
   schema:headline "Renaissance" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.255" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00325>
-  schema:citation <https://www.gutenberg.org/ebooks/2074> .
+  schema:citation <https://www.gutenberg.org/ebooks/2074> ;
+  af:sourceTier "C" .

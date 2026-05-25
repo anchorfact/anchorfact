@@ -1,7 +1,7 @@
 # Environmental Science: Ecosystems and Global Change
-Confidence: high
+Confidence: low (0.5) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Environmental science addresses humanity's most pressing challenge: understanding and mitigating anthropocentric changes to Earth's climate, ecosystems, and biogeochemical cycles.

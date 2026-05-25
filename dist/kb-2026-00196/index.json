@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00196",
   "headline": "Automata Theory",
   "description": "Automata theory studies abstract machines and the problems they can solve. Finite automata (regular languages) → Pushdown automata (context-free) → Turing machines (computable). Powers: regular expressions, parsers, compilers, and the theoretical limits of computation.",
-  "dateCreated": "2026-05-25T02:46:04.001Z",
-  "dateModified": "2026-05-25T02:46:04.001Z",
+  "dateCreated": "2026-05-22",
+  "dateModified": "2026-05-25T12:59:31.906Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -16,25 +16,60 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "human_only",
+  "anchorfact:confidence": "low",
+  "anchorfact:confidenceScore": 0.425,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 0.3,
+      "source_count": 1,
+      "source_verified": 0.2,
+      "freshness": 1,
+      "decay": 0.30000000000000004,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "low",
+    "confidence_score": 0.425,
+    "confidence_basis": "verified_sources",
+    "sources_total": 3,
+    "sources_verified": 0,
+    "sources_unreachable": 3,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "C",
+      "C",
+      "C"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": true,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "ACM Digital Library",
-      "sameAs": "https://dl.acm.org/"
+      "sameAs": "https://dl.acm.org/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2026
     },
     {
       "@type": "CreativeWork",
       "name": "Introduction to Automata Theory, Languages, and Computation (4th Edition, 2025)",
       "author": "Hopcroft J.E., Motwani R., Ullman J.D.",
-      "sameAs": "https://www.pearson.com/automata/"
+      "sameAs": "https://www.pearson.com/automata/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "Formal Methods and Verification: A 2025 Survey of Industrial Practice",
       "author": "multiple",
-      "sameAs": "https://doi.org/10.1145/acmcs.2025.formal"
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.formal",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     }
   ]
 }

@@ -1,7 +1,7 @@
 # AI for Augmented Reality: Real-Time Scene Understanding, Spatial Computing, and Contextual Overlays
-Confidence: high
+Confidence: medium (0.79) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AR overlays digital information onto the physical world, and AI makes that overlay intelligent -- recognizing what you are looking at, understanding the 3D geometry of the space around you, and providing contextually relevant information. From Apple Vision Pro's spatial computing to industrial AR repair guides, AI transforms augmented reality from gimmick to utility.

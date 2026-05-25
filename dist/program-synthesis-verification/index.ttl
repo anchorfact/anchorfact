@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/program-synthesis-verification>
   a schema:article ;
   schema:headline "Program Synthesis and Formal Verification: Neural Theorem Proving with LLMs" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.74" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/program-synthesis-verification>
-  schema:citation <https://proceedings.mlr.press/v284/rao25a.html> .
+  schema:citation <https://proceedings.mlr.press/v284/rao25a.html> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/program-synthesis-verification>
-  schema:citation <https://cacm.acm.org/research/formal-reasoning-meets-llms-toward-ai-for-mathematics-and-verification/> .
+  schema:citation <https://cacm.acm.org/research/formal-reasoning-meets-llms-toward-ai-for-mathematics-and-verification/> ;
+  af:sourceTier "A" .

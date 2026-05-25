@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-social-listening-1",
     "text": "AI social listening platforms (Brandwatch, Sprinklr, Talkwalker, Meltwater) process billions of social media posts, reviews, and news articles using NLP for: sentiment analysis (positive/negative/neutral), entity extraction (brands, products, people), emerging trend detection (identifying topics growing in volume), and crisis detection (spike in negative sentiment). Brandwatch (2025) serves 7,500+ enterprise clients.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=social+listening+AI+sentiment+analysis+brand"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-social-listening-2",
     "text": "AI-powered image listening (2023-2026): computer vision detects brand logos in user-generated photos (Instagram, TikTok) even when brands are not tagged or mentioned in text, capturing 80%+ of brand mentions that text-only monitoring misses. Logo detection via YOLO/CNN identifies brand presence, product usage context, and consumer demographics from visual content.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=logo+detection+social+media+computer+vision"

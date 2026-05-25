@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training — AnchorFact</title></head>
-<body><article>## TL;DR<br>
-Data curation is the unglamorous workhorse behind every great LLM -- transforming petabytes of noisy web crawl data into clean, deduplicated, high-quality training corpora. The quality of training data matters more than model architecture for downstream performance, and AI-assisted curation pipelines are the key differentiator between frontier and mediocre models.<br>
-<br>
-## Core Explanation<br>
-Raw web data (Common Crawl, C4, FineWeb) is incredibly noisy: 40-60% boilerplate/navigation, 15-25% adult/spam, 10-20% machine-generated, only 5-10% high-quality text. Curation pipeline: Acquisition (Common Crawl, web scraping) to URL-level filtering to Language detection (fastText) to Document-level filtering (remove short/repetitive) to Quality scoring (classifier trained on Wikipedia vs random web) to Deduplication (exact + near + semantic) to Heuristic filtering (PII removal) to Decontamination (remove benchmark test sets).<br>
-<br>
-## Detailed Analysis<br>
-MinHash deduplication: for each document, compute n-gram shingles, hash each shingle, keep k smallest hash values as document signature. Documents with similar signatures (Jaccard > threshold) are duplicates. MinHash LSH enables O(N) pairwise comparison across billions of documents. NVIDIA NeMo Curator: GPU-accelerated curation using RAPIDS cuDF -- terabytes per hour on GPU clusters vs days on CPU. Quality scoring: (a) Perplexity-based -- KenLM 5-gram model, score by perplexity; (b) Classifier-based -- fastText binary classifier; (c) LLM-as-judge -- prompt LLM to rate quality (expensive for billion-document scale). FineWeb (Hugging Face, 2024): publicly released 15-trillion-token curated dataset. The data wall challenge (2025-2026): high-quality internet text is finite -- estimated 100-200 trillion tokens of unique high-quality English text exist. As models exhaust this, synthetic data generation and multimodal data become essential.<br>
-<br>
-## Further Reading<br>
-- Common Crawl: Monthly Web Archive<br>
-- FineWeb: 15T Token Curated Dataset (HuggingFace)<br>
-- Dolma: Open Curation Toolkit (Allen AI)<br>
+<head>
+  <meta charset="utf-8">
+  <title>AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training — AnchorFact</title>
+  <meta name="anchorfact:confidence" content="medium (0.79)">
+  <meta name="anchorfact:generation" content="ai_structured">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"article","@id":"https://anchorfact.org/kb/ai-for-data-curation","headline":"AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training","description":"Data curation is the unglamorous workhorse behind every great LLM -- transforming petabytes of noisy web crawl data into clean, deduplicated, high-quality training corpora. The quality of training data matters more than model architecture for downstream performance, and AI-assisted curation pipelines are the key differentiator between frontier and mediocre models.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.79,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.9,"freshness":1,"decay":0.1,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.79,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":2,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["C","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":false,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"NeMo Curator: Scalable Data Preprocessing and Curation for Foundation Model Training","sameAs":"https://github.com/NVIDIA-NeMo/Curator","anchorfact:sourceTier":"C","anchorfact:year":2026},{"@type":"CreativeWork","name":"Training Data Curation: Web Filtering, Deduplication, and Quality Scoring for LLMs","sameAs":"https://arxiv.org/abs/2502.08211","anchorfact:sourceTier":"A","anchorfact:year":2025}]}</script>
+</head>
+<body><article>## TL;DR<br>
+Data curation is the unglamorous workhorse behind every great LLM -- transforming petabytes of noisy web crawl data into clean, deduplicated, high-quality training corpora. The quality of training data matters more than model architecture for downstream performance, and AI-assisted curation pipelines are the key differentiator between frontier and mediocre models.<br>
+<br>
+## Core Explanation<br>
+Raw web data (Common Crawl, C4, FineWeb) is incredibly noisy: 40-60% boilerplate/navigation, 15-25% adult/spam, 10-20% machine-generated, only 5-10% high-quality text. Curation pipeline: Acquisition (Common Crawl, web scraping) to URL-level filtering to Language detection (fastText) to Document-level filtering (remove short/repetitive) to Quality scoring (classifier trained on Wikipedia vs random web) to Deduplication (exact + near + semantic) to Heuristic filtering (PII removal) to Decontamination (remove benchmark test sets).<br>
+<br>
+## Detailed Analysis<br>
+MinHash deduplication: for each document, compute n-gram shingles, hash each shingle, keep k smallest hash values as document signature. Documents with similar signatures (Jaccard > threshold) are duplicates. MinHash LSH enables O(N) pairwise comparison across billions of documents. NVIDIA NeMo Curator: GPU-accelerated curation using RAPIDS cuDF -- terabytes per hour on GPU clusters vs days on CPU. Quality scoring: (a) Perplexity-based -- KenLM 5-gram model, score by perplexity; (b) Classifier-based -- fastText binary classifier; (c) LLM-as-judge -- prompt LLM to rate quality (expensive for billion-document scale). FineWeb (Hugging Face, 2024): publicly released 15-trillion-token curated dataset. The data wall challenge (2025-2026): high-quality internet text is finite -- estimated 100-200 trillion tokens of unique high-quality English text exist. As models exhaust this, synthetic data generation and multimodal data become essential.<br>
+<br>
+## Further Reading<br>
+- Common Crawl: Monthly Web Archive<br>
+- FineWeb: 15T Token Curated Dataset (HuggingFace)<br>
+- Dolma: Open Curation Toolkit (Allen AI)<br>
 </article></body>
 </html>

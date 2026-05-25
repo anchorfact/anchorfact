@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Causal AI: From Correlation to Causation with do-Calculus — AnchorFact</title></head>
-<body><article>## TL;DR<br>
-Causal AI moves beyond correlation-based prediction to reason about cause and effect — enabling models to answer "what if" questions, make robust decisions under distribution shift, and avoid spurious correlations that break ML systems in production.<br>
-<br>
-## Core Explanation<br>
-Correlation ≠ causation: an AI that learns "umbrella sales predict rain" fails when umbrella sellers run promotions during dry weather. Causal models explicitly represent the data-generating process via Structural Causal Models (SCMs): directed acyclic graphs where nodes are variables and edges represent causal relationships. do-calculus provides rules for transforming expressions with do(X=x) interventions into estimable quantities.<br>
-<br>
-## Detailed Analysis<br>
-Key frameworks: (1) Potential Outcomes (Rubin) — each unit has multiple potential outcomes under different treatments; (2) SCM (Pearl) — equations encode mechanisms, interventions break incoming arrows; (3) Structural Equation Modeling. Modern ML applications: causal representation learning (locate independent causal mechanisms), causal fairness (remove discriminatory causal paths), and causal RL (learn interventions that transfer across environments).<br>
-<br>
-## Further Reading<br>
-- CausalML Book (causalml-book.org)<br>
-- DoWhy + EconML Libraries<br>
-- Stanford Causal AI Lab<br>
+<head>
+  <meta charset="utf-8">
+  <title>Causal AI: From Correlation to Causation with do-Calculus — AnchorFact</title>
+  <meta name="anchorfact:confidence" content="medium (0.78)">
+  <meta name="anchorfact:generation" content="ai_structured">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"article","@id":"https://anchorfact.org/kb/causal-inference-ai","headline":"Causal AI: From Correlation to Causation with do-Calculus","description":"Causal AI moves beyond correlation-based prediction to reason about cause and effect — enabling models to answer \"what if\" questions, make robust decisions under distribution shift, and avoid spurious correlations that break ML systems in production.","dateCreated":"2026-05-24","dateModified":"2026-05-24","author":{"@type":"Organization","name":"AnchorFact"},"publisher":{"@type":"Organization","name":"AnchorFact","url":"https://anchorfact.org"},"license":"https://creativecommons.org/licenses/by/4.0/","anchorfact:confidence":"medium","anchorfact:confidenceScore":0.78,"anchorfact:generationMethod":"ai_structured","anchorfact:verification":{"confidence_formula_version":"v1.0","confidence_inputs":{"source_tier":0.9,"source_count":0.8,"source_verified":0.9,"freshness":0.9,"decay":0.1,"based_on":"verified_sources"},"confidence_level":"medium","confidence_score":0.78,"confidence_basis":"verified_sources","sources_total":2,"sources_verified":2,"sources_unreachable":0,"verification_timestamp":"2026-05-25T11:56:53.598Z","verification_note":"实际来源验证已执行","sources_tier":["C","A"],"sources_has_doi":false,"sources_has_url":true,"article_has_disputed":false,"article_has_known_gaps":true},"citation":[{"@type":"CreativeWork","name":"Causality: Models, Reasoning, and Inference","sameAs":"https://doi.org/10.1017/CBO9780511803161","anchorfact:sourceTier":"C","anchorfact:year":2009},{"@type":"CreativeWork","name":"Causal Machine Learning: A Survey and Open Problems","sameAs":"https://arxiv.org/abs/2403.02467","anchorfact:sourceTier":"A","anchorfact:year":2024}]}</script>
+</head>
+<body><article>## TL;DR<br>
+Causal AI moves beyond correlation-based prediction to reason about cause and effect — enabling models to answer "what if" questions, make robust decisions under distribution shift, and avoid spurious correlations that break ML systems in production.<br>
+<br>
+## Core Explanation<br>
+Correlation ≠ causation: an AI that learns "umbrella sales predict rain" fails when umbrella sellers run promotions during dry weather. Causal models explicitly represent the data-generating process via Structural Causal Models (SCMs): directed acyclic graphs where nodes are variables and edges represent causal relationships. do-calculus provides rules for transforming expressions with do(X=x) interventions into estimable quantities.<br>
+<br>
+## Detailed Analysis<br>
+Key frameworks: (1) Potential Outcomes (Rubin) — each unit has multiple potential outcomes under different treatments; (2) SCM (Pearl) — equations encode mechanisms, interventions break incoming arrows; (3) Structural Equation Modeling. Modern ML applications: causal representation learning (locate independent causal mechanisms), causal fairness (remove discriminatory causal paths), and causal RL (learn interventions that transfer across environments).<br>
+<br>
+## Further Reading<br>
+- CausalML Book (causalml-book.org)<br>
+- DoWhy + EconML Libraries<br>
+- Stanford Causal AI Lab<br>
 </article></body>
 </html>

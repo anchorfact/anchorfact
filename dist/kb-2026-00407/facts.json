@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-arts-01",
     "text": "William Shakespeare is the most influential writer in the English language",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguinrandomhouse.com/books/75451/shakespeare-by-harold-bloom/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-arts-02",
     "text": "Hamlet: 'To be, or not to be' — most performed play globally",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.penguinrandomhouse.com/books/75451/shakespeare-by-harold-bloom/"

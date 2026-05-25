@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00490>
   a schema:TechArticle ;
   schema:headline "Animal Behavior" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.315" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00490>
-  schema:citation <https://www.oxfordlearninglink.com/s-alcock-animal-behavior-11e> .
+  schema:citation <https://www.oxfordlearninglink.com/s-alcock-animal-behavior-11e> ;
+  af:sourceTier "C" .

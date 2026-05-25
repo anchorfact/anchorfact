@@ -4,7 +4,7 @@
   "@id": "https://anchorfact.org/kb/ai-for-language-learning",
   "headline": "AI for Language Learning: Intelligent Tutoring, Speech Assessment, and Personalized Curriculum",
   "description": "AI is transforming how we learn languages -- from Duolingo's adaptive algorithms that personalize every lesson to AI speech coaches that provide real-time pronunciation feedback, to LLMs that engage learners in unscripted conversations in their target language. Modern AI language tutors combine cognitive science (spaced repetition, interleaved practice) with natural language processing to create learning experiences that adapt to each learner's pace and needs.",
-  "dateCreated": "2026-05-25T02:46:03.435Z",
+  "dateCreated": "2026-05-24",
   "dateModified": "2026-05-24",
   "author": {
     "@type": "Organization",
@@ -17,17 +17,49 @@
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "ai_assisted",
+  "anchorfact:confidenceScore": 0.85,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 1,
+      "source_count": 0.8,
+      "source_verified": 1,
+      "freshness": 1,
+      "decay": 0.1,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "high",
+    "confidence_score": 0.85,
+    "confidence_basis": "verified_sources",
+    "sources_total": 2,
+    "sources_verified": 2,
+    "sources_unreachable": 0,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "S",
+      "S"
+    ],
+    "sources_has_doi": true,
+    "sources_has_url": true,
+    "article_has_disputed": false,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "A systematic review of AI-driven intelligent tutoring systems in language education",
-      "sameAs": "https://www.nature.com/articles/s41539-025-00320-7"
+      "sameAs": "https://www.nature.com/articles/s41539-025-00320-7",
+      "anchorfact:sourceTier": "S",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "Artificial Intelligence for Language Learning: A Systematic Review of Approaches, Roles, and Outcomes",
-      "sameAs": "https://onlinelibrary.wiley.com/doi/full/10.1111/ijal.70034"
+      "sameAs": "https://onlinelibrary.wiley.com/doi/full/10.1111/ijal.70034",
+      "anchorfact:sourceTier": "S",
+      "anchorfact:year": 2025
     }
   ]
 }

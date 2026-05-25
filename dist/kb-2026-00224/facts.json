@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-game-development-001",
     "text": "Tilemaps are 2D level design systems using a grid of reusable tiles — the foundation of classic and modern 2D games (Super Mario, Stardew Valley). Tiles are small images (16x16, 32x32 px) arranged in layers (ground, objects, collision). Tilemap editors: Tiled (industry standard), built-in editors in Unity, Godot, GameMaker.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-game-development-002",
     "text": "Isometric tilemaps (2.5D): tiles drawn at 30° angle for pseudo-3D perspective.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"

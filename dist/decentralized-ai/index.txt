@@ -1,7 +1,7 @@
 # Decentralized AI: Distributed Inference, Peer-to-Peer Networks, and Blockchain Integration
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Decentralized AI reimagines how AI systems are built, trained, and served — distributing computation across peer-to-peer networks instead of centralized data centers. Combining federated learning, blockchain incentives, and DePIN GPU networks, decentralized AI promises democratized access, censorship resistance, and elimination of cloud monopolies.

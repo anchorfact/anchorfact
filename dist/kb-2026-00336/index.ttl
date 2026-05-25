@@ -4,20 +4,27 @@
 <https://anchorfact.org/kb/kb-2026-00336>
   a schema:TechArticle ;
   schema:headline "DNA Structure" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00336>
-  schema:citation <https://www.simonandschuster.com/books/The-Double-Helix/James-D-Watson/9780743216302> .
+  schema:citation <https://www.simonandschuster.com/books/The-Double-Helix/James-D-Watson/9780743216302> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00336>
-  schema:citation <https://wwnorton.com/books/double-helix/> .
+  schema:citation <https://wwnorton.com/books/double-helix/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00336>
-  schema:citation <https://doi.org/10.1038/s41576-2025-dna> .
+  schema:citation <https://doi.org/10.1038/s41576-2025-dna> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00336>
-  schema:citation <https://global.oup.com/vsi-dna/> .
+  schema:citation <https://global.oup.com/vsi-dna/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00336>
-  schema:citation <https://www.penguinrandomhouse.com/dna/> .
+  schema:citation <https://www.penguinrandomhouse.com/dna/> ;
+  af:sourceTier "C" .

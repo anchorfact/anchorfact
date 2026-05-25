@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-001",
     "text": "# 游戏商业化策略（Monetization Strategy） 游戏商业化策略决定了产品如何将玩家参与度转化为可持续收入。优秀的商业化设计不仅能带来收入，还能增强玩家体验；而糟糕的设计则会破坏游戏经济、损害玩家信任。 --- ",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-002",
     "text": "优秀的商业化设计不仅能带来收入，还能增强玩家体验；而糟糕的设计则会破坏游戏经济、损害玩家信任。",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-003",
     "text": "1 买断制（Premium / Buy-to-Play）\n玩家一次性付费购买游戏完整内容，后续无强制消费。",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-004",
     "text": "| 维度 | 说明 | |------|------| | **收入公式** | 销量 × 单价 | | **优点** | 开发预期稳定、无付费墙、玩家口碑好、适合叙事/单机体验 | | **缺点** | 收入天花板低、无持续现金流、盗版风险 | | **代表产品** | 《艾尔登法环》《塞尔达传说》《Hades》 | | **定价策略** | 3A级 $59.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"
@@ -49,6 +61,9 @@
     "@id": "https://anchorfact.org/fact/fact-gd-005",
     "text": "99（移动端） |\n**变体模式：** - **扩展包/DLC**：通过新增内容延续收入（如《文明6》资料片） - **季票（Season Pass）**：预购未来内容包，降低单次购买决策门槛\n---\n### 1.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.gdconf.com/"

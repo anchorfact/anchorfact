@@ -4,5 +4,7 @@
 <https://anchorfact.org/kb/draft-20260525-001>
   a schema:Article ;
   schema:headline "Tokenisation via Convex Relaxations" ;
-  af:confidence "medium" ;
-  af:generationMethod "undefined" .
+  af:confidence "low" ;
+  af:confidenceScore "0" ;
+  af:confidenceBasis "estimated" ;
+  af:generationMethod "ai_structured" .

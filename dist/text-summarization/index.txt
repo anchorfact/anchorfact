@@ -1,7 +1,7 @@
 # Text Summarization: From Extractive Methods to Abstractive LLM-Based Summarization
-Confidence: high
+Confidence: high (0.85) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Text summarization condenses documents into concise summaries while preserving key information. The field has evolved from simple sentence extraction to LLM-powered abstractive generation that rewrites content in its own words. The hard problems remain: summarizing book-length documents, ensuring factual accuracy, and adapting summaries to user needs.

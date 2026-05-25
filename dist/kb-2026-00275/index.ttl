@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/kb-2026-00275>
   a schema:TechArticle ;
   schema:headline "Computer Vision" ;
-  af:confidence "high" ;
+  af:confidence "medium" ;
+  af:confidenceScore "0.74" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00275>
-  schema:citation <https://szeliski.org/Book/> .
+  schema:citation <https://szeliski.org/Book/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00275>
-  schema:citation <https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html> .
+  schema:citation <https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html> ;
+  af:sourceTier "A" .

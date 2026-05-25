@@ -1,7 +1,7 @@
 # AI for Materials Science: GNoME, Crystal Discovery, and Materials Informatics
-Confidence: high
+Confidence: medium (0.84) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is accelerating materials science from Edisonian trial-and-error to systematic discovery. DeepMind's GNoME used graph neural networks to discover 2.2 million new crystals — 45x the human-accumulated catalog — while autonomous labs synthesize AI-predicted compounds robotically.

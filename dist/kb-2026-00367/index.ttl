@@ -4,20 +4,27 @@
 <https://anchorfact.org/kb/kb-2026-00367>
   a schema:TechArticle ;
   schema:headline "Black Holes" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00367>
-  schema:citation <https://www.penguinrandomhouse.com/books/26703/a-brief-history-of-time-by-stephen-hawking/> .
+  schema:citation <https://www.penguinrandomhouse.com/books/26703/a-brief-history-of-time-by-stephen-hawking/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00367>
-  schema:citation <https://wwnorton.com/books/black-holes/> .
+  schema:citation <https://wwnorton.com/books/black-holes/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00367>
-  schema:citation <https://doi.org/10.1103/revmodphys.2025.bh> .
+  schema:citation <https://doi.org/10.1103/revmodphys.2025.bh> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00367>
-  schema:citation <https://global.oup.com/vsi-black-holes/> .
+  schema:citation <https://global.oup.com/vsi-black-holes/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00367>
-  schema:citation <https://www.penguinrandomhouse.com/black-holes/> .
+  schema:citation <https://www.penguinrandomhouse.com/black-holes/> ;
+  af:sourceTier "C" .

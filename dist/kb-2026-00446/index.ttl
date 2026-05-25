@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00446>
   a schema:TechArticle ;
   schema:headline "Decision Making" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.425" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00446>
-  schema:citation <https://us.macmillan.com/books/9780374533557/thinkingfastandslow> .
+  schema:citation <https://us.macmillan.com/books/9780374533557/thinkingfastandslow> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00446>
-  schema:citation <https://www.crownpublishing.com/decisive/> .
+  schema:citation <https://www.crownpublishing.com/decisive/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00446>
-  schema:citation <https://us.macmillan.com/thinking-fast-and-slow/> .
+  schema:citation <https://us.macmillan.com/thinking-fast-and-slow/> ;
+  af:sourceTier "C" .

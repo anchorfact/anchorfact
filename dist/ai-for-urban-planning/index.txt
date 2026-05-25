@@ -1,7 +1,7 @@
 # AI for Urban Planning: Generative Spatial AI, Digital Twins, and Computational Urban Science
-Confidence: high
+Confidence: medium (0.65) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 AI is becoming the architect and operator of future cities — generating urban master plans from zoning codes, simulating millions of "what-if" scenarios in digital twins, and optimizing energy, water, and transportation in real-time. Generative spatial AI represents a paradigm shift from reactive urban management to proactive computational design.

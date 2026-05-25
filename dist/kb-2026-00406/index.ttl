@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00406>
   a schema:TechArticle ;
   schema:headline "Computer History" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.475" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00406>
-  schema:citation <https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706> .
+  schema:citation <https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00406>
-  schema:citation <https://www.simonandschuster.com/innovators/> .
+  schema:citation <https://www.simonandschuster.com/innovators/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00406>
-  schema:citation <https://global.oup.com/vsi-computer/> .
+  schema:citation <https://global.oup.com/vsi-computer/> ;
+  af:sourceTier "C" .

@@ -4,14 +4,19 @@
 <https://anchorfact.org/kb/kb-2026-00399>
   a schema:TechArticle ;
   schema:headline "Mayan Civilization" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "low" ;
+  af:confidenceScore "0.55" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/kb-2026-00399>
-  schema:citation <https://thamesandhudson.com/the-maya-9780500291887> .
+  schema:citation <https://thamesandhudson.com/the-maya-9780500291887> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00399>
-  schema:citation <https://thamesandhudson.com/maya/> .
+  schema:citation <https://thamesandhudson.com/maya/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00399>
-  schema:citation <https://global.oup.com/vsi-maya/> .
+  schema:citation <https://global.oup.com/vsi-maya/> ;
+  af:sourceTier "C" .

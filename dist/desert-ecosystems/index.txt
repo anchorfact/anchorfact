@@ -1,7 +1,7 @@
 # Desert Ecosystems and Adaptations
-Confidence: high
+Confidence: low (0.355) (verified)
 Last verified: 2026-05-24
-Generation: ai_assisted
+Generation: ai_structured
 
 ## TL;DR
 Deserts are not lifeless — they are ecosystems shaped by organisms with extraordinary adaptations for water conservation, temperature regulation, and resource efficiency. Covering a third of Earth's land, deserts are biodiversity hotspots threatened by climate change.

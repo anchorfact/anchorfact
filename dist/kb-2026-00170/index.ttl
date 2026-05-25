@@ -4,8 +4,11 @@
 <https://anchorfact.org/kb/kb-2026-00170>
   a schema:TechArticle ;
   schema:headline "Web Performance Optimization" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.315" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00170>
-  schema:citation <https://web.dev/vitals/> .
+  schema:citation <https://web.dev/vitals/> ;
+  af:sourceTier "C" .

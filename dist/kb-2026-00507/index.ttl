@@ -4,11 +4,15 @@
 <https://anchorfact.org/kb/kb-2026-00507>
   a schema:TechArticle ;
   schema:headline "Building Mental Resilience" ;
-  af:confidence "high" ;
+  af:confidence "low" ;
+  af:confidenceScore "0.48" ;
+  af:confidenceBasis "verified_sources" ;
   af:generationMethod "ai_assisted" .
 
 <https://anchorfact.org/kb/kb-2026-00507>
-  schema:citation <https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck-phd/> .
+  schema:citation <https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck-phd/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/kb-2026-00507>
-  schema:citation <https://www.simonandschuster.com/books/Grit/Angela-Duckworth/9781501111112> .
+  schema:citation <https://www.simonandschuster.com/books/Grit/Angela-Duckworth/9781501111112> ;
+  af:sourceTier "C" .

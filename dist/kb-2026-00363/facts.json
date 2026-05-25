@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-01",
     "text": "The Great Depression was the worst economic downturn in modern history",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.publicaffairsbooks.com/titles/benjamin-roth/the-great-depression/9781586489014/"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-001",
     "text": "The Great Depression (1929-1939) was the worst economic downturn in modern history. Trigger: US stock market crash (October 1929). Global unemployment reached 25-33%. Bank failures, deflation, dust bowl. FDR's New Deal (1933) provided relief, recovery, reform. WWII ultimately ended the Depression through massive government spending.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.publicaffairsbooks.com/titles/benjamin-roth/the-great-depression/9781586489014/"
@@ -27,6 +33,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-002",
     "text": "Causes: stock market speculation, bank failures, reduction in purchasing power, drought (Dust Bowl).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.publicaffairsbooks.com/titles/benjamin-roth/the-great-depression/9781586489014/"
@@ -38,6 +47,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-003",
     "text": "New Deal programs: CCC (jobs for youth), WPA (infrastructure), Social Security (1935), FDIC (bank deposit insurance).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.publicaffairsbooks.com/titles/benjamin-roth/the-great-depression/9781586489014/"
@@ -49,6 +61,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-004",
     "text": "Keynesian economics: government spending stimulates demand.",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.publicaffairsbooks.com/titles/benjamin-roth/the-great-depression/9781586489014/"
@@ -60,6 +75,9 @@
     "@id": "https://anchorfact.org/fact/fact-history-005",
     "text": "Unemployment in US: 3% (1929) → 25% (1933) → 15% (1940).",
     "anchorfact:confidence": "medium",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://www.publicaffairsbooks.com/titles/benjamin-roth/the-great-depression/9781586489014/"

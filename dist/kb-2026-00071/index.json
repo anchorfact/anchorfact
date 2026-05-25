@@ -4,8 +4,8 @@
   "@id": "https://anchorfact.org/kb/kb-2026-00071",
   "headline": "Markdown",
   "description": "Markdown is a lightweight markup language for creating formatted text using a plain-text editor, created by John Gruber in 2004 with significant contributions from Aaron Swartz. Its design goal is readability — Markdown source is intended to be as readable as plain text, unlike HTML's angle brackets. Markdown is the dominant format for documentation (README files, GitHub wikis), static site generators (Jekyll, Hugo, Astro), note-taking apps (Obsidian, Notion), and LLM-optimized content (llms.txt). The CommonMark specification (v0.31.2, 2024) provides a rigorous, unambiguous standard.",
-  "dateCreated": "2026-05-25T02:46:04.171Z",
-  "dateModified": "2026-05-25T02:46:04.171Z",
+  "dateCreated": "2026-05-22",
+  "dateModified": "2026-05-25T12:59:32.068Z",
   "author": {
     "@type": "Organization",
     "name": "AnchorFact"
@@ -16,31 +16,69 @@
     "url": "https://anchorfact.org"
   },
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "anchorfact:confidence": "high",
-  "anchorfact:generationMethod": "human_only",
+  "anchorfact:confidence": "medium",
+  "anchorfact:confidenceScore": 0.845,
+  "anchorfact:generationMethod": "ai_structured",
+  "anchorfact:verification": {
+    "confidence_formula_version": "v1.0",
+    "confidence_inputs": {
+      "source_tier": 1,
+      "source_count": 1,
+      "source_verified": 0.9,
+      "freshness": 1,
+      "decay": 0.30000000000000004,
+      "based_on": "verified_sources"
+    },
+    "confidence_level": "medium",
+    "confidence_score": 0.845,
+    "confidence_basis": "verified_sources",
+    "sources_total": 4,
+    "sources_verified": 3,
+    "sources_unreachable": 1,
+    "verification_timestamp": "2026-05-25T11:56:53.598Z",
+    "verification_note": "实际来源验证已执行",
+    "sources_tier": [
+      "S",
+      "C",
+      "C",
+      "C"
+    ],
+    "sources_has_doi": false,
+    "sources_has_url": true,
+    "article_has_disputed": true,
+    "article_has_known_gaps": true
+  },
   "citation": [
     {
       "@type": "CreativeWork",
       "name": "CommonMark Specification (v0.31.2)",
-      "sameAs": "https://spec.commonmark.org/0.31.2/"
+      "sameAs": "https://spec.commonmark.org/0.31.2/",
+      "anchorfact:sourceTier": "S",
+      "anchorfact:year": 2024
     },
     {
       "@type": "CreativeWork",
       "name": "Markdown (Daring Fireball)",
       "author": "Gruber, John",
-      "sameAs": "https://daringfireball.net/projects/markdown/"
+      "sameAs": "https://daringfireball.net/projects/markdown/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2004
     },
     {
       "@type": "CreativeWork",
       "name": "The Markdown Guide: Definitive Edition (2025)",
       "author": "Cone M.",
-      "sameAs": "https://www.markdownguide.org/"
+      "sameAs": "https://www.markdownguide.org/",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     },
     {
       "@type": "CreativeWork",
       "name": "Technical Writing and Documentation in the Age of LLMs (2025)",
       "author": "multiple",
-      "sameAs": "https://doi.org/10.1145/acmcs.2025.techwriting"
+      "sameAs": "https://doi.org/10.1145/acmcs.2025.techwriting",
+      "anchorfact:sourceTier": "C",
+      "anchorfact:year": 2025
     }
   ]
 }

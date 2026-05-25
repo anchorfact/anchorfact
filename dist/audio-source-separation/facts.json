@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-audio-source-separation-1",
     "text": "Demucs (Defossez et al., Meta, 2019-2024) evolved through four versions -- from waveform-domain Conv-TasNet-style architecture to the Hybrid Demucs (combining waveform and spectrogram representations) -- achieving SDR (Signal-to-Distortion Ratio) of 9.2 dB on MUSDB18 for music source separation (separating vocals, drums, bass, and other instruments from mixed recordings), enabling professional-quality stem extraction used by DJs, remix artists, and karaoke systems.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://github.com/facebookresearch/demucs"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-audio-source-separation-2",
     "text": "Conv-TasNet (Luo & Mesgarani, 2019) introduced a fully convolutional time-domain audio separation network -- processing raw waveforms without STFT/spectrogram conversion -- achieving 15.6 dB SI-SNRi on WSJ0-2mix, outperforming previous spectrogram-based methods by 2-4 dB. The architecture combines a learned encoder (replacing STFT), temporal convolutional separation network (TCN with dilated convolutions capturing long-range dependencies), and decoder.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://ieeexplore.ieee.org/document/8707065"

@@ -4,23 +4,31 @@
 <https://anchorfact.org/kb/decision-making-psychology>
   a schema:Article ;
   schema:headline "The Psychology of Decision Making" ;
-  af:confidence "high" ;
-  af:generationMethod "ai_assisted" .
+  af:confidence "medium" ;
+  af:confidenceScore "0.635" ;
+  af:confidenceBasis "verified_sources" ;
+  af:generationMethod "ai_structured" .
 
 <https://anchorfact.org/kb/decision-making-psychology>
-  schema:citation <https://us.macmillan.com/books/9780374533557/thinkingfastandslow> .
+  schema:citation <https://us.macmillan.com/books/9780374533557/thinkingfastandslow> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/decision-making-psychology>
-  schema:citation <https://www.jstor.org/stable/1914185> .
+  schema:citation <https://www.jstor.org/stable/1914185> ;
+  af:sourceTier "A" .
 
 <https://anchorfact.org/kb/decision-making-psychology>
-  schema:citation <https://www.crownpublishing.com/decisive/> .
+  schema:citation <https://www.crownpublishing.com/decisive/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/decision-making-psychology>
-  schema:citation <https://www.littlebrown.com/noise/> .
+  schema:citation <https://www.littlebrown.com/noise/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/decision-making-psychology>
-  schema:citation <https://www.crownpublishing.com/decisive/> .
+  schema:citation <https://www.crownpublishing.com/decisive/> ;
+  af:sourceTier "C" .
 
 <https://anchorfact.org/kb/decision-making-psychology>
-  schema:citation <https://us.macmillan.com/thinking-fast-and-slow/> .
+  schema:citation <https://us.macmillan.com/thinking-fast-and-slow/> ;
+  af:sourceTier "C" .

@@ -5,6 +5,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-personal-finance-1",
     "text": "AI-powered personal finance platforms (Betterment, Wealthfront, Mint/Intuit) serve millions of users with robo-advisory -- automated portfolio management using Modern Portfolio Theory + ML for tax-loss harvesting, rebalancing, and goal-based planning. Betterment manages $800B+ in assets (2025) using AI-driven personalized glide paths that adjust risk based on age, income, and goals.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=robo+advisor+AI+personal+finance"
@@ -16,6 +19,9 @@
     "@id": "https://anchorfact.org/fact/af-ai-personal-finance-2",
     "text": "AI for financial wellness: NLP-powered spending analysis categorizes transactions automatically (food, transport, entertainment), anomaly detection flags unusual charges, and ML-based budgeting predicts future cash flow. Apps like YNAB, Copilot, and Rocket Money use AI to provide personalized savings recommendations, achieving 15-25% savings increases for users who follow AI suggestions.",
     "anchorfact:confidence": "high",
+    "anchorfact:sourceRef": null,
+    "anchorfact:sourceExcerpt": null,
+    "anchorfact:verificationMethod": null,
     "citation": {
       "@type": "CreativeWork",
       "sameAs": "https://arxiv.org/search/?query=ML+portfolio+tax+loss+harvesting"
