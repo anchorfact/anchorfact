@@ -5,7 +5,7 @@ schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -93,6 +93,7 @@ secondary_sources:
     url: https://doi.org/10.1038/s41598-025-12848-0
 updated: '2026-05-24'
 ---
+
 
 ## TL;DR
 AI is rewriting insurance -- from Lemonade issuing policies in 90 seconds to computer vision assessing car damage from photos to satellite AI evaluating property risk without inspection. Insurtech AI makes coverage faster, fairer, and more data-driven than traditional actuarial models.

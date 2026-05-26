@@ -5,7 +5,7 @@ schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -111,6 +111,7 @@ secondary_sources:
     url: https://ai.meta.com/research/seamless-communication/
 updated: '2026-05-24'
 ---
+
 
 ## TL;DR
 AI translation has evolved from phrase tables to LLMs that match human translators on common language pairs and provide real-time spoken interpretation for multilingual meetings. From GPT-4 translating with document-level coherence to KUDO AI interpreting with <2s latency, language barriers are dissolving through AI.

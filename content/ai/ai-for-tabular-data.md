@@ -1,12 +1,12 @@
 ---
 id: ai-for-tabular-data
-title: "AI for Tabular Data: Synthetic Generation, Diffusion Models, and Privacy-Preserving Structured Data"
+title: 'AI for Tabular Data: Synthetic Generation, Diffusion Models, and Privacy-Preserving Structured Data'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-26'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,7 +34,7 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-for-tabular-data-1
-    title: "A Comprehensive Survey of Synthetic Tabular Data Generation: Methods, Evaluation, and Applications"
+    title: 'A Comprehensive Survey of Synthetic Tabular Data Generation: Methods, Evaluation, and Applications'
     type: academic_paper
     year: 2025
     institution: arXiv
@@ -45,12 +45,39 @@ primary_sources:
     year: 2025
     institution: Neurocomputing / Elsevier
     url: https://www.sciencedirect.com/science/article/pii/S0925231225020430
+  - title: 'Privacy Measurement in Tabular Synthetic Data: State of the Art and Future Research Directions'
+    authors:
+      - Alexander Boudewijn
+      - Andrea Filippo Ferraris
+      - Daniele Panfilo
+      - Vanessa Cocca
+      - Sabrina Zinutti
+      - Karel De Schepper
+      - Carlo Rossi Chauvenet
+    year: 2023
+    url: https://arxiv.org/abs/2311.17453v1
+    type: academic_paper
+    institution: arXiv
+  - title: 'Diffusion and Flow Matching Models for Tabular Data: A Survey'
+    authors:
+      - Zhong Li
+      - Qi Huang
+      - Lincen Yang
+      - Jiayang Shi
+      - Zhao Yang
+      - Niki van Stein
+      - Thomas Bäck
+      - Matthijs van Leeuwen
+    year: 2025
+    url: https://arxiv.org/abs/2502.17119v2
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Generating tabular data with complex relational constraints (foreign keys, multi-table schemas)
   - Differential privacy guarantees for synthetic tabular data at scale
 disputed_statements: []
 secondary_sources:
-  - title: "Deep Learning for Tabular Data: A Comprehensive Survey of Architectures, Benchmarks, and Applications"
+  - title: 'Deep Learning for Tabular Data: A Comprehensive Survey of Architectures, Benchmarks, and Applications'
     type: survey_paper
     year: 2024
     authors:
@@ -66,7 +93,7 @@ secondary_sources:
       - Varoquaux, Gaël
     institution: Inria / NeurIPS
     url: https://arxiv.org/abs/2207.08815
-  - title: "TabTransformer: Tabular Data Modeling Using Contextual Embeddings"
+  - title: 'TabTransformer: Tabular Data Modeling Using Contextual Embeddings'
     type: conference_paper
     year: 2021
     authors:
@@ -76,7 +103,7 @@ secondary_sources:
       - Karnin, Zohar
     institution: Amazon / NeurIPS
     url: https://arxiv.org/abs/2012.06678
-  - title: "XGBoost: A Scalable Tree Boosting System (Seminal)"
+  - title: 'XGBoost: A Scalable Tree Boosting System (Seminal)'
     type: conference_paper
     year: 2016
     authors:
@@ -84,8 +111,9 @@ secondary_sources:
       - Guestrin, Carlos
     institution: University of Washington / KDD
     url: https://arxiv.org/abs/1603.02754
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Tabular data -- spreadsheets, databases, CSV files -- is the most common data format in industry yet the least addressed by generative AI. Synthetic tabular data generation creates realistic but artificial structured datasets for privacy-preserving sharing, data augmentation, and imputation. Diffusion models and LLM-based approaches now match real data distributions with formal privacy guarantees.
 

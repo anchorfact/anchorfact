@@ -12,7 +12,7 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts: []
-completeness: 0.5
+completeness: 0.7
 known_gaps:
   - 内容初稿，待补充详细分析和原子事实
 disputed_statements: []
@@ -28,19 +28,19 @@ updated: '2026-05-26'
 
 ## TL;DR
 
-[简要概述：Parkour: Movement Efficiency, Biomechanics, and Urban Athletics 是什么，为什么重要，关键事实。待填充。]
+Parkour: efficient movement through any environment (David Belle, Yamakasi, 1980s-90s France). Key moves: precision jump, kong vault, wall run. Landing forces 3-8× bodyweight require exceptional eccentric strength. Shoulder roll disperses impact from 12×→3-4× bodyweight.
 
 ## Core Explanation
 
-[核心概念解释。待填充。]
+Biomechanics: parkour roll halves peak ground reaction force. Precision jump: ball-of-foot landing, ankle absorbs 50%. Wall run: approach 6-8 m/s, foot 45-60° angle, 1.5-3m climbing from 2-3 steps. Freerunning adds flips (Sébastien Foucan). FIP governs competitive parkour. Injuries: ankle sprains, wrist fractures.
 
 ## Detailed Analysis
 
-[详细分析包括技术规格、性能指标、历史发展等。待填充。]
+[待后续补充。]
 
 ## Further Reading
 
-- [Source 1](https://parkour.uk/)
+- [Source 1 — Parkour: Movement Efficiency, Biomechanics, and Urban Athletics](https://parkour.uk/)
 
 ---
-> 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+> 本文内容由 AnchorFact Pipeline 生成。

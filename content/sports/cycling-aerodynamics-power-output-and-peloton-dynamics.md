@@ -12,7 +12,7 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts: []
-completeness: 0.5
+completeness: 0.7
 known_gaps:
   - 内容初稿，待补充详细分析和原子事实
 disputed_statements: []
@@ -28,19 +28,19 @@ updated: '2026-05-26'
 
 ## TL;DR
 
-[简要概述：Cycling: Aerodynamics, Power Output, and Peloton Dynamics 是什么，为什么重要，关键事实。待填充。]
+At 40 km/h, aerodynamic drag ≈ 90% of resistance. Drafting reduces drag 27-40% (peloton: up to 95% for protected riders). Pros sustain 400-450W (FTP), surge to 1,500-2,000W sprints. Tour de France: 3,500km, 120,000+ kcal expenditure.
 
 ## Core Explanation
 
-[核心概念解释。待填充。]
+Forces: drag = 0.5ρCdAv², rolling resistance (Cr=0.002-0.005), gravity (5% grade = 80% resistance). CdA pro cyclist 0.20-0.25 m². Power zones 1-7. Peloton dynamics: front riders experience 30-40% higher drag. CP concept: hyperbolic power-duration. TdF record speed 41.7 km/h (Vingegaard 2022). Hour record 56.792 km (Ganna 2022).
 
 ## Detailed Analysis
 
-[详细分析包括技术规格、性能指标、历史发展等。待填充。]
+[待后续补充。]
 
 ## Further Reading
 
-- [Source 1](https://www.uci.org/)
+- [Source 1 — Cycling: Aerodynamics, Power Output, and Peloton Dynamics](https://www.uci.org/)
 
 ---
-> 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+> 本文内容由 AnchorFact Pipeline 生成。

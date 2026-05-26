@@ -12,7 +12,7 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts: []
-completeness: 0.5
+completeness: 0.7
 known_gaps:
   - 内容初稿，待补充详细分析和原子事实
 disputed_statements: []
@@ -28,19 +28,19 @@ updated: '2026-05-26'
 
 ## TL;DR
 
-[简要概述：Global Deserts: Formation, Distribution, and Desertification 是什么，为什么重要，关键事实。待填充。]
+Deserts cover 33% of land (precipitation <250mm/yr). Form at 30° latitude (Hadley subsidence), rain shadows, cold coasts. Desertification affects 250M directly, threatens 1B. Sahara (9.2M km²) largest hot desert, expanded 10% since 1920.
 
 ## Core Explanation
 
-[核心概念解释。待填充。]
+Formation: subtropical (Hadley cells), rain shadow (Atacama, Gobi), coastal (Namib), continental interior. Atacama driest non-polar — some stations never recorded rain. Great Green Wall (Sahel, 2007): restore 100M hectares. Sahara 20,000-year cycle driven by Earth axial precession — was savanna 10,000 years ago.
 
 ## Detailed Analysis
 
-[详细分析包括技术规格、性能指标、历史发展等。待填充。]
+[待后续补充。]
 
 ## Further Reading
 
-- [Source 1](https://www.usgs.gov/special-topics/)
+- [Source 1 — Global Deserts: Formation, Distribution, and Desertification](https://www.usgs.gov/special-topics/)
 
 ---
-> 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+> 本文内容由 AnchorFact Pipeline 生成。

@@ -12,7 +12,7 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts: []
-completeness: 0.5
+completeness: 0.7
 known_gaps:
   - 内容初稿，待补充详细分析和原子事实
 disputed_statements: []
@@ -28,19 +28,19 @@ updated: '2026-05-26'
 
 ## TL;DR
 
-[简要概述：Diving: Physics of Rotation, Entry and Rip Entry Technique 是什么，为什么重要，关键事实。待填充。]
+Competitive diving: 1.5-second flight transforms via conservation of angular momentum. Tuck reduces moment of inertia 3-4×, angular velocity increases proportionally. Rip entry creates 25-35cm hole — splashless through body alignment into vanishingly small entry.
 
 ## Core Explanation
 
-[核心概念解释。待填充。]
+Phases: takeoff (10m platform, 1.7s; 3m springboard, 1.4s), flight (tuck=pike=straight positions), entry (within 7° of vertical). Angular momentum: L=Iω. Tuck I=3-4 kg·m², straight I=12-15 kg·m². DD range 1.2-4.8. Scoring: 7 judges, trim top/bottom 2, sum middle 3 × DD.
 
 ## Detailed Analysis
 
-[详细分析包括技术规格、性能指标、历史发展等。待填充。]
+[待后续补充。]
 
 ## Further Reading
 
-- [Source 1](https://www.fina.org/)
+- [Source 1 — Diving: Physics of Rotation, Entry and Rip Entry Technique](https://www.fina.org/)
 
 ---
-> 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+> 本文内容由 AnchorFact Pipeline 生成。

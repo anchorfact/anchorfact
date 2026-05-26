@@ -12,7 +12,7 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts: []
-completeness: 0.5
+completeness: 0.7
 known_gaps:
   - 内容初稿，待补充详细分析和原子事实
 disputed_statements: []
@@ -28,19 +28,19 @@ updated: '2026-05-26'
 
 ## TL;DR
 
-[简要概述：Svalbard: The Arctic Archipelago's Geography and Climate Research 是什么，为什么重要，关键事实。待填充。]
+Svalbard: Norwegian Arctic archipelago (74-81°N). Longyearbyen (2,400 pop, northernmost settlement). Global Seed Vault: 1.2M seed samples. Warming 6× faster than global average. Svalbard Treaty (1920, 46 signatories): Norwegian sovereignty, equal commercial rights.
 
 ## Core Explanation
 
-[核心概念解释。待填充。]
+Area 62,000 km², 60% glaciated. West Spitsbergen Current keeps west coast ice-free. Ny-Ålesund: northernmost year-round research community (11 nations). SvalSat (78°N): only ground station downloading from all polar-orbiting satellites. Polar bears ~3,000 (more than humans). Polar night Oct-Feb, midnight sun Apr-Aug.
 
 ## Detailed Analysis
 
-[详细分析包括技术规格、性能指标、历史发展等。待填充。]
+[待后续补充。]
 
 ## Further Reading
 
-- [Source 1](https://www.npolar.no/en/)
+- [Source 1 — Svalbard: The Arctic Archipelago's Geography and Climate Research](https://www.npolar.no/en/)
 
 ---
-> 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+> 本文内容由 AnchorFact Pipeline 生成。

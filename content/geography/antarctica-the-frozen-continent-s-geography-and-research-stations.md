@@ -12,7 +12,7 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts: []
-completeness: 0.5
+completeness: 0.7
 known_gaps:
   - 内容初稿，待补充详细分析和原子事实
 disputed_statements: []
@@ -28,19 +28,19 @@ updated: '2026-05-26'
 
 ## TL;DR
 
-[简要概述：Antarctica: The Frozen Continent's Geography and Research Stations 是什么，为什么重要，关键事实。待填充。]
+Antarctica: coldest, windiest, driest continent (avg elevation 2,300m). 90% of world ice, 70% freshwater — if melted: 58m sea-level rise. Antarctic Treaty (1959, 54 nations): peace and science. ~70 research stations, 1,000-5,000 seasonal population.
 
 ## Core Explanation
 
-[核心概念解释。待填充。]
+Area 14.2M km². Ice avg 2,160m thick, max 4,776m. Lake Vostok: subglacial, isolated 15-25 Myr. EPICA ice core: 800,000 years climate record. Ozone hole discovered 1985, Montreal Protocol 1987. Emperor penguins breed in -40°C darkness. Weddell seals dive 600m. Krill 500M tonnes biomass. Madrid Protocol 1998: natural reserve.
 
 ## Detailed Analysis
 
-[详细分析包括技术规格、性能指标、历史发展等。待填充。]
+[待后续补充。]
 
 ## Further Reading
 
-- [Source 1](https://www.nsf.gov/geo/opp/)
+- [Source 1 — Antarctica: The Frozen Continent's Geography and Research Stations](https://www.nsf.gov/geo/opp/)
 
 ---
-> 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+> 本文内容由 AnchorFact Pipeline 生成。

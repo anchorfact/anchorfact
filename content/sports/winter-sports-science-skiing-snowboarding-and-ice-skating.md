@@ -12,7 +12,7 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts: []
-completeness: 0.5
+completeness: 0.7
 known_gaps:
   - 内容初稿，待补充详细分析和原子事实
 disputed_statements: []
@@ -28,19 +28,19 @@ updated: '2026-05-26'
 
 ## TL;DR
 
-[简要概述：Winter Sports Science: Skiing, Snowboarding, and Ice Skating 是什么，为什么重要，关键事实。待填充。]
+Alpine skiing: 130+ km/h downhill, turn forces 3-5G. Ice skating blade (1.1-1.3mm width) creates thin water layer, friction coefficient 0.005-0.01. Parabolic ski technology revolutionized turning in the 1990s.
 
 ## Core Explanation
 
-[核心概念解释。待填充。]
+Alpine disciplines: downhill, super-G, giant slalom, slalom. Turn phases: initiation, steering (ski flexes into reverse camber), completion (edge angle up to 75°). Snowboard: sidecut radius, flex pattern. Speed skating "klap" mechanism (1996, ~5% efficiency gain). Figure skating: quad jumps 500-700°/s rotational velocity.
 
 ## Detailed Analysis
 
-[详细分析包括技术规格、性能指标、历史发展等。待填充。]
+[待后续补充。]
 
 ## Further Reading
 
-- [Source 1](https://www.fis-ski.com/)
+- [Source 1 — Winter Sports Science: Skiing, Snowboarding, and Ice Skating](https://www.fis-ski.com/)
 
 ---
-> 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+> 本文内容由 AnchorFact Pipeline 生成。

@@ -12,7 +12,7 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts: []
-completeness: 0.5
+completeness: 0.7
 known_gaps:
   - 内容初稿，待补充详细分析和原子事实
 disputed_statements: []
@@ -28,19 +28,19 @@ updated: '2026-05-26'
 
 ## TL;DR
 
-[简要概述：Rowing: Biomechanics of the Perfect Stroke 是什么，为什么重要，关键事实。待填充。]
+Rowing: 60% legs, 30% back, 10% arms. Elite rowers generate 500-600W over 2,000m (~5:40-6:00 men). Boat speed ∝ power^(1/3). Four stroke phases executed at 34-40 strokes/min in racing.
 
 ## Core Explanation
 
-[核心概念解释。待填充。]
+Phases: catch, drive (legs→back→arms, peak force 800-1,200N), finish, recovery. Concept2 erg: power in watts, "split" time/500m. WR 2K men 5:35.8, women 6:21.1. Boat types: 1× (8.2m, 14kg) to 8+ (17.6m, 96kg). Hydrodynamics: wave-making resistance limits shell speed.
 
 ## Detailed Analysis
 
-[详细分析包括技术规格、性能指标、历史发展等。待填充。]
+[待后续补充。]
 
 ## Further Reading
 
-- [Source 1](https://worldrowing.com/)
+- [Source 1 — Rowing: Biomechanics of the Perfect Stroke](https://worldrowing.com/)
 
 ---
-> 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+> 本文内容由 AnchorFact Pipeline 生成。

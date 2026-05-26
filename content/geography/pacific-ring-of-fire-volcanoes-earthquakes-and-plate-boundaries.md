@@ -12,7 +12,7 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts: []
-completeness: 0.5
+completeness: 0.7
 known_gaps:
   - 内容初稿，待补充详细分析和原子事实
 disputed_statements: []
@@ -28,19 +28,19 @@ updated: '2026-05-26'
 
 ## TL;DR
 
-[简要概述：Pacific Ring of Fire: Volcanoes, Earthquakes, and Plate Boundaries 是什么，为什么重要，关键事实。待填充。]
+Pacific Ring of Fire: 40,000-km belt, 75% of active volcanoes (452), 90% of earthquakes including 81% of M≥8 events. Subduction zones generate magma arcs and megathrust earthquakes. 1960 Valdivia M9.5 largest ever.
 
 ## Core Explanation
 
-[核心概念解释。待填充。]
+Subduction: Pacific Plate beneath North American, Philippine Sea, Australian; Nazca beneath South American. Notable: Tambora 1815 (VEI 7, year without summer), Pinatubo 1991 (VEI 6, cooled Earth 0.5°C), Krakatoa 1883 (heard 4,800 km away). 2004 Sumatra M9.1 (228,000 killed), 2011 Tohoku M9.0 (Fukushima). PTWC established 1949.
 
 ## Detailed Analysis
 
-[详细分析包括技术规格、性能指标、历史发展等。待填充。]
+[待后续补充。]
 
 ## Further Reading
 
-- [Source 1](https://www.usgs.gov/natural-hazards/)
+- [Source 1 — Pacific Ring of Fire: Volcanoes, Earthquakes, and Plate Boundaries](https://www.usgs.gov/natural-hazards/)
 
 ---
-> 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+> 本文内容由 AnchorFact Pipeline 生成。

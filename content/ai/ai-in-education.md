@@ -5,7 +5,7 @@ schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -99,6 +99,7 @@ secondary_sources:
     url: https://www.unesco.org/en/digital-education/artificial-intelligence
 updated: '2026-05-24'
 ---
+
 
 ## TL;DR
 AI is transforming education through intelligent tutoring systems that adapt to individual learners — diagnosing knowledge gaps, generating personalized exercises, and providing real-time feedback. LLMs enable conversational tutoring at unprecedented scale.

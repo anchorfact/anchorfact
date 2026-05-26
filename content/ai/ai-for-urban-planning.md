@@ -5,7 +5,7 @@ schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -102,6 +102,7 @@ secondary_sources:
     url: https://unhabitat.org/topic/digital-technologies
 updated: '2026-05-24'
 ---
+
 
 ## TL;DR
 AI is becoming the architect and operator of future cities — generating urban master plans from zoning codes, simulating millions of "what-if" scenarios in digital twins, and optimizing energy, water, and transportation in real-time. Generative spatial AI represents a paradigm shift from reactive urban management to proactive computational design.

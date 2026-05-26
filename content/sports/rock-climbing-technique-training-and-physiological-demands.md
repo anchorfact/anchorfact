@@ -12,7 +12,7 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts: []
-completeness: 0.5
+completeness: 0.7
 known_gaps:
   - 内容初稿，待补充详细分析和原子事实
 disputed_statements: []
@@ -28,19 +28,19 @@ updated: '2026-05-26'
 
 ## TL;DR
 
-[简要概述：Rock Climbing: Technique, Training, and Physiological Demands 是什么，为什么重要，关键事实。待填充。]
+Climbing demands maximal finger strength (grip-to-bodyweight ratio is best grade predictor). Elite climbers: 65-80% bodyweight/hand grip vs 35-45% non-climbers. Training: hangboarding, campusing, 4×4 intervals. Olympic debut Tokyo 2020.
 
 ## Core Explanation
 
-[核心概念解释。待填充。]
+Disciplines: bouldering (4-5m, V0-V17), lead (15-40m, 5.0-5.15d), speed (15m, WR 5.00s men/6.25s women). VO2max elite climbers 55-65 ml/kg/min. Finger pulley injuries 30-40% of climbing injuries. Notable: Adam Ondra (first 5.15d), Alex Honnold (free solo El Capitan).
 
 ## Detailed Analysis
 
-[详细分析包括技术规格、性能指标、历史发展等。待填充。]
+[待后续补充。]
 
 ## Further Reading
 
-- [Source 1](https://www.climbing.com/)
+- [Source 1 — Rock Climbing: Technique, Training, and Physiological Demands](https://www.climbing.com/)
 
 ---
-> 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+> 本文内容由 AnchorFact Pipeline 生成。

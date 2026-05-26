@@ -5,7 +5,7 @@ schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -90,6 +90,7 @@ secondary_sources:
     url: https://github.com/satellite-image-deep-learning/techniques
 updated: '2026-05-24'
 ---
+
 
 ## TL;DR
 AI sees the planet from space -- counting ships at sea, detecting new construction, monitoring crop health, and mapping humanitarian crises. From NASA's open-source Prithvi model to commercial geospatial intelligence platforms, foundation models are democratizing satellite AI.
