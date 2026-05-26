@@ -90,7 +90,9 @@ export function computeConfidence(sources, article = {}, verificationData = null
     decayScore * 0.10
   ).toFixed(4));
 
-  const level = score >= 0.85 ? 'high' : score >= 0.60 ? 'medium' : 'low';
+  let level = score >= 0.85 ? 'high' : score >= 0.60 ? 'medium' : 'low';
+  // Hard constraint: estimated basis cannot be 'high'
+  if (scoreBasis === 'estimated' && level === 'high') level = 'medium';
 
   return {
     score,
