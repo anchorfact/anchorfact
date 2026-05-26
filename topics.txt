@@ -1,20 +1,30 @@
-health | Nutrition Science: Macronutrients, Micronutrients, and Dietary Guidelines | https://www.who.int/news-room/fact-sheets/detail/healthy-diet,https://ods.od.nih.gov/
-health | Epidemiology: Principles of Disease Surveillance and Outbreak Investigation | https://www.cdc.gov/eis/field-epi-manual/
-health | Vaccine Development: From Koch's Postulates to mRNA Revolution | https://www.nature.com/articles/s41586-021-03645-y
-health | Mental Health: Global Burden, Treatment, and Stigma | https://www.who.int/health-topics/mental-health
-health | Cardiovascular Disease: Atherosclerosis, Risk Factors, and Prevention | https://www.heart.org/en/health-topics
-health | Cancer Biology: Hallmarks of Cancer and Modern Therapies | https://www.cancer.gov/about-cancer/understanding
-geography | Amazon Rainforest: Biodiversity, Carbon Storage, and Threats | https://www.worldwildlife.org/places/amazon
-geography | World Water Crisis: Scarcity, Access, and Geopolitics | https://www.unwater.org/water-facts/
-geography | Migration Patterns: Push-Pull Factors and Global Trends | https://www.iom.int/data-and-research
-geography | Renewable Energy Geography: Solar, Wind, and Hydroelectric Distribution | https://www.irena.org/Data
-sports | Running Biomechanics: Gait Analysis, Foot Strike, and Efficiency | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4934825/
-sports | Strength Training: Physiology of Hypertrophy and Neural Adaptation | https://www.nsca.com/education/
-sports | Swimming Science: Hydrodynamics, Stroke Mechanics, and Drag Reduction | https://www.usaswimming.org/
-sports | Football (Soccer) Analytics: Expected Goals (xG) and Tactical Data Science | https://statsbomb.com/soccer-metrics/
-ai | AI for Protein Structure Prediction: AlphaFold and the Folding Revolution | https://www.nature.com/articles/s41586-021-03819-2,https://alphafold.ebi.ac.uk/
-ai | AI for Autonomous Vehicles: Perception, Planning, and Safety | https://waymo.com/research/,https://arxiv.org/abs/2306.16147
-ai | Multimodal AI: Vision-Language Models from CLIP to GPT-4V | https://arxiv.org/abs/2304.08485,https://openai.com/research/gpt-4v
-ai | AI for Chip Design: Reinforcement Learning for EDA and Floorplanning | https://www.nature.com/articles/s41586-021-03544-w
-ai | Graph Neural Networks: Message Passing, Applications, and Frontiers | https://arxiv.org/abs/1810.00826,https://distill.pub/2021/gnn-intro/
-ai | Reinforcement Learning: From Q-Learning to RLHF | https://arxiv.org/abs/1312.5602,https://arxiv.org/abs/1707.06347
+self-improvement | Negotiation Skills: BATNA, Anchoring, and Integrative Bargaining | https://hbr.org/
+self-improvement | Ikigai: The Japanese Art of Finding Purpose | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6923189/
+self-improvement | Cognitive Load Theory: Optimizing Learning and Decision Making | https://www.cambridge.org/core/books/cognitive-load-theory/
+self-improvement | Journaling for Mental Health: Evidence and Methods | https://www.apa.org/monitor/
+self-improvement | Imposter Syndrome: Prevalence, Causes, and Coping Strategies | https://psycnet.apa.org/
+self-improvement | Self-Compassion: The Science of Being Kind to Yourself | https://self-compassion.org/
+self-improvement | Dopamine Detox: Neuroscience of Reward and Motivation | https://www.nature.com/articles/s41583-019-0125-5
+self-improvement | Digital Minimalism: Reducing Screen Time for Better Focus | https://www.calnewport.com/
+self-improvement | Ikarian Longevity: Lessons from the World's Blue Zones | https://www.bluezones.com/
+self-improvement | Stoicism in Modern Life: Ancient Philosophy Meets Psychology | https://modernstoicism.com/
+sports | Tennis Biomechanics: Serve Kinematics and Groundstroke Efficiency | https://www.itftennis.com/
+sports | Cricket Strategy: Data Analytics and Match Modeling | https://www.espncricinfo.com/
+sports | Rock Climbing: Technique, Training, and Physiological Demands | https://www.climbing.com/
+sports | Combat Sports: Biomechanics of Striking and Grappling | https://www.ufc.com/
+sports | Winter Sports Science: Skiing, Snowboarding, and Ice Skating | https://www.fis-ski.com/
+sports | Diving: Physics of Rotation, Entry and Rip Entry Technique | https://www.fina.org/
+sports | Rowing: Biomechanics of the Perfect Stroke | https://worldrowing.com/
+sports | Cycling: Aerodynamics, Power Output, and Peloton Dynamics | https://www.uci.org/
+sports | Triathlon Training: Multi-Sport Physiology and Transitions | https://www.triathlon.org/
+sports | Parkour: Movement Efficiency, Biomechanics, and Urban Athletics | https://parkour.uk/
+geography | Himalayas: Geology, Glaciers, and Geopolitical Boundaries | https://www.usgs.gov/
+geography | Antarctica: The Frozen Continent's Geography and Research Stations | https://www.nsf.gov/geo/opp/
+geography | Coral Triangle: Marine Biodiversity Hotspot in Southeast Asia | https://www.worldwildlife.org/places/coral-triangle
+geography | Global Deserts: Formation, Distribution, and Desertification | https://www.usgs.gov/special-topics/
+geography | Pacific Ring of Fire: Volcanoes, Earthquakes, and Plate Boundaries | https://www.usgs.gov/natural-hazards/
+geography | Great Lakes: Hydrology, Ecology, and Transboundary Management | https://www.epa.gov/greatlakes
+geography | World Time Zones: History, Politics, and the Prime Meridian | https://www.timeanddate.com/
+geography | Earth's Magnetic Field: Geodynamo, Reversals, and Navigation | https://www.ncei.noaa.gov/
+geography | Svalbard: The Arctic Archipelago's Geography and Climate Research | https://www.npolar.no/en/
+geography | Mediterranean Sea: Physical Geography, Biodiversity, and Marine Protected Areas | https://www.iucn.org/
