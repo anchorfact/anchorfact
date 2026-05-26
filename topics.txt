@@ -1,29 +1,30 @@
-science | Quantum Entanglement: Theory, Bell's Theorem, and Quantum Information | https://arxiv.org/abs/quant-ph/9703019,https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.23.880
-science | CRISPR Gene Editing: Cas9 Mechanism, Applications, and Ethical Frontiers | https://www.science.org/doi/10.1126/science.1225829
-science | The Standard Model of Particle Physics: Quarks, Leptons, and Fundamental Forces | https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.71.S96
-science | Evolution by Natural Selection: Darwin's Theory and Modern Synthesis | https://www.nature.com/articles/s41559-019-0999-3
-science | General Relativity: Einstein's Theory of Gravitation and Its Tests | https://link.springer.com/book/10.1007/978-3-319-64550-5
-science | Human Genome Project: Sequencing, Findings, and the Post-Genomic Era | https://www.nature.com/articles/nature07983
-science | Neurotransmitters: Dopamine, Serotonin, and the Chemical Basis of Behavior | https://www.nature.com/articles/s41583-019-0125-5
-science | The Big Bang: Cosmic Microwave Background and the Origin of the Universe | https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.87.1003
-science | Semiconductor Physics: Band Theory, Doping, and the PN Junction | https://link.springer.com/book/10.1007/978-3-540-78655-4
-science | Vitamin D: Synthesis, Metabolism, and Health Effects | https://www.nejm.org/doi/full/10.1056/NEJMra1313922
-computer-science | Rust Programming Language: Ownership, Borrowing, and Memory Safety | https://doc.rust-lang.org/book/
-computer-science | Design Patterns: Gang of Four Patterns in Modern Software Engineering | https://dl.acm.org/doi/10.5555/186897
-computer-science | Functional Programming: Monads, Functors, and Category Theory in Code | https://www.cambridge.org/core/books/category-theory-for-programmers/
-computer-science | Microservices Architecture: Patterns, Trade-offs, and Resilience | https://martinfowler.com/articles/microservices.html
-computer-science | Linux Kernel: Process Scheduling, Memory Management, and System Calls | https://www.kernel.org/doc/html/latest/
-computer-science | OpenGL and Vulkan: Graphics Pipeline, Shaders, and GPU Architecture | https://www.khronos.org/vulkan/
-computer-science | File Systems: FAT, NTFS, ext4, ZFS — Design, Performance, and Reliability | https://pages.cs.wisc.edu/~remzi/OSTEP/
-computer-science | Unicode and UTF-8: Encoding the World's Writing Systems | https://www.unicode.org/standard/standard.html
-computer-science | Digital Signal Processing: Sampling, Fourier Transform, and Filter Design | https://dl.acm.org/doi/10.5555/148949
-computer-science | Reinforcement Learning: Q-Learning, Policy Gradients, and the Bellman Equation | https://dl.acm.org/doi/10.5555/3312046
-computer-science | Computer Vision: Convolution, Feature Detection, and Image Understanding | https://szeliski.org/Book/
 science | Carbon Cycle: Sources, Sinks, and Anthropogenic Perturbations | https://www.ipcc.ch/report/ar6/wg1/
 science | Stem Cells: Pluripotency, Differentiation, and Regenerative Medicine | https://www.cell.com/cell-stem-cell/
 science | Nuclear Fission and Fusion: Principles, Reactors, and Energy Prospects | https://www.iaea.org/publications
 science | Antibody Structure and Function: Immunoglobulin Classes and Therapeutic Applications | https://www.nature.com/articles/nri3600
 science | Aerodynamics: Lift, Drag, and the Boundary Layer | https://www.cambridge.org/core/books/aerodynamics-for-engineering-students/
-geography | Great Barrier Reef: Ecology, Coral Bleaching, and Conservation | https://www.gbrmpa.gov.au/
-business | Bitcoin and Cryptocurrency: Proof of Work, Decentralization, and Financial Inclusion | https://nakamotoinstitute.org/bitcoin/
-business | Game Theory: Nash Equilibrium, Zero-Sum Games, and Strategic Interaction | https://press.princeton.edu/books/paperback/9780691170817/the-theory-of-games-and-economic-behavior
+ai | Large Language Model Training: Scaling Laws, Data Curation, and Compute | https://arxiv.org/abs/2203.15556
+ai | AI for Audio Processing: Speech Recognition, Music Generation, and Sound Understanding | https://arxiv.org/abs/2105.01703
+ai | AI for Art and Creativity: GANs, Diffusion, and Computational Aesthetics | https://arxiv.org/abs/2306.03227
+ai | AI for Augmented Reality: Real-Time Object Detection, Depth Estimation, and Scene Understanding | https://arxiv.org/abs/2304.08485
+ai | AI for Genomics: Variant Calling, Gene Expression Prediction, and Protein-DNA Binding | https://www.nature.com/articles/s41576-019-0125-5
+ai | AI for Mathematical Reasoning: Theorem Proving, Symbolic Computation, and Autoformalization | https://www.nature.com/articles/s41586-023-06945-1
+ai | AI for Network Security: Intrusion Detection, Threat Intelligence, and Anomaly Analysis | https://arxiv.org/abs/2005.11154
+computer-science | Git: Distributed Version Control Internals and Workflows | https://git-scm.com/book/en/v2
+computer-science | SQL Query Optimization: Join Algorithms, Cost Models, and Index Selection | https://dl.acm.org/doi/10.1145/362384.362685
+computer-science | Container Orchestration: Kubernetes Architecture, Scheduling, and Service Mesh | https://kubernetes.io/docs/concepts/
+computer-science | Interpreters and Compilers: Lexing, Parsing, and Code Generation | https://dl.acm.org/doi/10.5555/1090333
+computer-science | The Halting Problem and Computability Theory | https://dl.acm.org/doi/10.5555/1097010
+computer-science | Elliptic Curve Cryptography: Mathematics, Curves, and TLS Integration | https://doi.org/10.1007/978-0-387-72092-0
+computer-science | The Actor Model: Concurrency Through Message Passing | https://dl.acm.org/doi/10.5555/109522
+science | Human Brain: Structure, Functional Regions, and the Connectome | https://www.nature.com/articles/s41583-019-0125-5
+science | Continental Drift and Plate Tectonics: Wegener to Modern Geodynamics | https://pubs.geoscienceworld.org/gsa/geology/
+science | The Standard Model of Cosmology: ΛCDM, Inflation, and the Cosmic Web | https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.87.1003
+science | Exoplanets: Detection Methods, Habitable Zones, and Biosignatures | https://www.nature.com/articles/s41586-019-1732-z
+science | The Microbiome: Gut Bacteria, Immunity, and the Gut-Brain Axis | https://www.nature.com/articles/s41586-019-1238-8
+science | Special Relativity: Time Dilation, Length Contraction, and E=mc² | https://link.springer.com/book/10.1007/978-3-319-63307-1
+science | Ocean Acidification: CO2-Driven Chemistry Changes and Marine Ecosystem Impacts | https://www.ipcc.ch/report/ar6/wg1/
+science | RNA Biology: From Transcription to RNA Interference and mRNA Vaccines | https://www.nature.com/articles/s41580-019-0137-2
+business | Behavioral Economics: Kahneman, Tversky, and the Psychology of Irrational Decisions | https://press.princeton.edu/books/paperback/9780691135727/thinking-fast-and-slow
+business | Venture Capital: Fund Structure, Term Sheets, and Portfolio Strategy | https://www.nvca.org/
+business | Intellectual Property: Patents, Copyrights, Trademarks, and Trade Secrets | https://www.wipo.int/portal/en/
