@@ -1,29 +1,11 @@
-computer-science | WebRTC: Real-Time Communication in the Browser | https://www.w3.org/TR/webrtc/
-computer-science | JWT: JSON Web Tokens — Authentication, Claims, and Security | https://datatracker.ietf.org/doc/html/rfc7519
-science | Photosynthesis: Light Reactions, Calvin Cycle, and C4/CAM Pathways | https://www.nature.com/articles/s41586-019-1138-y
-science | Protein Folding: Anfinsen's Dogma, Chaperones, and AlphaFold | https://www.nature.com/articles/s41586-021-03819-2
-science | Epigenetics: DNA Methylation, Histone Modification, and Gene Regulation | https://www.nature.com/articles/s41576-019-0137-2
-science | Immune System: Innate vs Adaptive Immunity, T Cells, and B Cells | https://www.nature.com/articles/nri3600
-science | Homeostasis: Feedback Loops, Thermoregulation, and Physiological Balance | https://www.ncbi.nlm.nih.gov/books/NBK279297/
-science | Electromagnetic Spectrum: Radio Waves to Gamma Rays and Applications | https://www.nist.gov/pml/
-science | Nuclear Magnetic Resonance: From MRI Imaging to Chemical Structure | https://pubs.acs.org/doi/10.1021/ed076p857
-science | Fermentation: Biochemistry, Industrial Applications, and Gut Health | https://www.nature.com/articles/s41579-019-0196-4
-science | Plate Tectonics: Continental Drift, Seafloor Spreading, and Subduction | https://pubs.geoscienceworld.org/gsa/geology/
-science | Hormones: Endocrine System, Feedback Loops, and Metabolic Regulation | https://www.ncbi.nlm.nih.gov/books/NBK279127/
-computer-science | CAP Theorem in Practice: Consistency, Availability, and Partition Tolerance Trade-offs | https://dl.acm.org/doi/10.1145/564585.564601
-computer-science | Deep Learning Hardware: GPUs, TPUs, and AI Accelerator Architecture | https://arxiv.org/abs/1906.04788
-computer-science | Web Authentication: WebAuthn, Passkeys, and Passwordless Future | https://www.w3.org/TR/webauthn-3/
-computer-science | Graph Databases: Neo4j, Property Graphs, and Cypher Query Language | https://neo4j.com/docs/
-computer-science | Time Series Databases: InfluxDB, Prometheus, and Downsampling | https://docs.influxdata.com/
-computer-science | Error Correction Codes: Hamming, Reed-Solomon, and LDPC | https://dl.acm.org/doi/10.5555/1097010
-computer-science | Actor-Critic Methods: A2C, A3C, PPO, and Deep Reinforcement Learning | https://arxiv.org/abs/1707.06347
-computer-science | Raft Consensus Algorithm: Leader Election, Log Replication, and Safety | https://raft.github.io/
-computer-science | Columnar Databases: Parquet, ORC, and Analytical Workloads | https://parquet.apache.org/
-ai | AI for Drug Discovery: Molecular Docking, Virtual Screening, and De Novo Design | https://www.nature.com/articles/s41586-019-1138-y
-ai | AI for Chemistry: Reaction Prediction, Retrosynthesis, and Materials Discovery | https://www.nature.com/articles/s41586-021-03544-w
-ai | AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring | https://www.nature.com/articles/s41586-019-1138-y
-history | Roman Empire: Rise, Pax Romana, and the Fall of the Western Empire | https://www.cambridge.org/core/books/cambridge-ancient-history/
-history | Ancient Greece: Democracy, Philosophy, and the Persian Wars | https://www.cambridge.org/core/books/cambridge-ancient-history/
-history | Renaissance: Humanism, Art, and the Rebirth of Classical Learning | https://www.cambridge.org/core/books/cambridge-history-of-the-renaissance/
-history | World War I: Causes, Trench Warfare, and the Treaty of Versailles | https://www.cambridge.org/core/books/cambridge-history-of-the-first-world-war/
-history | Industrial Revolution: Steam, Factories, and the Transformation of Society | https://www.cambridge.org/core/books/cambridge-economic-history-of-modern-britain/
+computer-science | gRPC: Protocol Buffers, HTTP/2 Streaming, and Service Contracts | https://grpc.io/docs/
+computer-science | NATS and Message Brokers: Pub-Sub, Request-Reply, and Queue Groups | https://docs.nats.io/
+computer-science | Neural Radiance Fields (NeRF): 3D Scene Representation from Images | https://arxiv.org/abs/2003.08934
+computer-science | WebGPU: Next-Generation Web Graphics and Compute API | https://www.w3.org/TR/webgpu/
+ai | AI for Protein Design: Diffusion Models, Sequence Generation, and Functional Optimization | https://www.nature.com/articles/s41586-023-06412-2
+history | French Revolution: Liberty, Terror, and the Birth of Modern Politics | https://www.cambridge.org/core/books/cambridge-history-of-modern-france/
+science | Genetic Code: Codons, Translation, and the Ribosome | https://www.nature.com/articles/s41580-019-0137-2
+science | Plasma Physics: Fusion Energy, Space Plasmas, and Industrial Applications | https://www.iaea.org/publications
+science | Fluid Dynamics: Navier-Stokes Equations, Turbulence, and Aerodynamics | https://www.cambridge.org/core/books/fluid-mechanics/
+science | Infectious Disease Epidemiology: R Value, Herd Immunity, and Outbreak Modeling | https://www.cdc.gov/eis/field-epi-manual/
+business | Options Pricing: Black-Scholes Model, Greeks, and Derivatives Markets | https://doi.org/10.1086/260062
