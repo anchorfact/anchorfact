@@ -1,30 +1,29 @@
-ai | Diffusion Models: DDPM, Stable Diffusion, and Score-Based Generative Modeling | https://arxiv.org/abs/2006.11239,https://arxiv.org/abs/2207.12598
-ai | BERT: Bidirectional Encoder Representations from Transformers | https://arxiv.org/abs/1810.04805
-ai | CLIP: Contrastive Language-Image Pre-Training | https://arxiv.org/abs/2103.00020
-ai | LoRA: Low-Rank Adaptation of Large Language Models | https://arxiv.org/abs/2106.09685
-ai | Mixture of Experts: Sparse Activation for Scaling Transformers | https://arxiv.org/abs/1701.06538
-computer-science | Load Balancing: Algorithms, Consistent Hashing, and Modern Approaches | https://arxiv.org/abs/2301.12345
-computer-science | Database Indexing: B-Trees, Hash Indexes, and Query Optimization | https://dl.acm.org/doi/10.1145/362384.362685
-computer-science | TCP/IP Protocol Suite: Architecture, Congestion Control, and Evolution | https://datatracker.ietf.org/doc/html/rfc793
-computer-science | DNS: The Domain Name System Architecture and Security | https://datatracker.ietf.org/doc/html/rfc1035
-computer-science | HTTP/3: QUIC Protocol and Next-Generation Web Transport | https://datatracker.ietf.org/doc/html/rfc9114
-computer-science | OAuth 2.0: Authorization Framework and Security Best Practices | https://datatracker.ietf.org/doc/html/rfc6749
-computer-science | TLS 1.3: Transport Layer Security Protocol and Cryptographic Design | https://datatracker.ietf.org/doc/html/rfc8446
-health | Diabetes: Type 1, Type 2, Pathophysiology and Management | https://www.who.int/news-room/fact-sheets/detail/diabetes
-health | Hypertension: Mechanisms, Risk Factors, and Treatment Guidelines | https://www.who.int/news-room/fact-sheets/detail/hypertension
-health | Vaccination: Immunology, Herd Immunity, and Public Health Impact | https://www.who.int/health-topics/vaccines-and-immunization
-health | Antibiotics: Mechanisms of Action, Resistance, and Stewardship | https://www.who.int/news-room/fact-sheets/detail/antibiotic-resistance
-health | Obesity: Epidemiology, Metabolic Consequences, and Interventions | https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight
-health | Depression: Neurobiology, Diagnosis, and Evidence-Based Treatments | https://www.nimh.nih.gov/health/topics/depression
-business | Supply and Demand: The Fundamental Model of Market Economics | https://www.imf.org/en/Publications/fandd
-business | Inflation: Causes, Measurement, and Central Bank Policy | https://www.imf.org/en/Publications/fandd
-business | GDP: Gross Domestic Product Measurement and Limitations | https://www.imf.org/en/Publications/fandd
-business | Unemployment: Types, Measurement, and Labor Market Dynamics | https://www.ilo.org/global/statistics-and-databases/
-business | Market Structures: Perfect Competition, Monopoly, Oligopoly, and Contestability | https://www.aeaweb.org/
-computer-science | MapReduce: Distributed Data Processing Paradigm | https://static.googleusercontent.com/media/research.google.com/en/us/archive/mapreduce-osdi04.pdf
-ai | NeRF: Neural Radiance Fields for View Synthesis | https://arxiv.org/abs/2003.08934
-computer-science | Lambda Calculus: Foundations of Functional Programming and Computation | https://dl.acm.org/doi/10.5555/1097010
-computer-science | Paxos Algorithm: Consensus in Distributed Systems | https://dl.acm.org/doi/10.1145/279227.279229
-computer-science | CAP Theorem: Consistency, Availability, and Partition Tolerance | https://dl.acm.org/doi/10.1145/564585.564601
-computer-science | Bloom Filters: Space-Efficient Probabilistic Data Structures | https://dl.acm.org/doi/10.1145/362686.362692
-computer-science | Merkle Trees: Cryptographic Data Integrity and Blockchain Foundations | https://nakamotoinstitute.org/bitcoin/
+science | Quantum Entanglement: Theory, Bell's Theorem, and Quantum Information | https://arxiv.org/abs/quant-ph/9703019,https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.23.880
+science | CRISPR Gene Editing: Cas9 Mechanism, Applications, and Ethical Frontiers | https://www.science.org/doi/10.1126/science.1225829
+science | The Standard Model of Particle Physics: Quarks, Leptons, and Fundamental Forces | https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.71.S96
+science | Evolution by Natural Selection: Darwin's Theory and Modern Synthesis | https://www.nature.com/articles/s41559-019-0999-3
+science | General Relativity: Einstein's Theory of Gravitation and Its Tests | https://link.springer.com/book/10.1007/978-3-319-64550-5
+science | Human Genome Project: Sequencing, Findings, and the Post-Genomic Era | https://www.nature.com/articles/nature07983
+science | Neurotransmitters: Dopamine, Serotonin, and the Chemical Basis of Behavior | https://www.nature.com/articles/s41583-019-0125-5
+science | The Big Bang: Cosmic Microwave Background and the Origin of the Universe | https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.87.1003
+science | Semiconductor Physics: Band Theory, Doping, and the PN Junction | https://link.springer.com/book/10.1007/978-3-540-78655-4
+science | Vitamin D: Synthesis, Metabolism, and Health Effects | https://www.nejm.org/doi/full/10.1056/NEJMra1313922
+computer-science | Rust Programming Language: Ownership, Borrowing, and Memory Safety | https://doc.rust-lang.org/book/
+computer-science | Design Patterns: Gang of Four Patterns in Modern Software Engineering | https://dl.acm.org/doi/10.5555/186897
+computer-science | Functional Programming: Monads, Functors, and Category Theory in Code | https://www.cambridge.org/core/books/category-theory-for-programmers/
+computer-science | Microservices Architecture: Patterns, Trade-offs, and Resilience | https://martinfowler.com/articles/microservices.html
+computer-science | Linux Kernel: Process Scheduling, Memory Management, and System Calls | https://www.kernel.org/doc/html/latest/
+computer-science | OpenGL and Vulkan: Graphics Pipeline, Shaders, and GPU Architecture | https://www.khronos.org/vulkan/
+computer-science | File Systems: FAT, NTFS, ext4, ZFS — Design, Performance, and Reliability | https://pages.cs.wisc.edu/~remzi/OSTEP/
+computer-science | Unicode and UTF-8: Encoding the World's Writing Systems | https://www.unicode.org/standard/standard.html
+computer-science | Digital Signal Processing: Sampling, Fourier Transform, and Filter Design | https://dl.acm.org/doi/10.5555/148949
+computer-science | Reinforcement Learning: Q-Learning, Policy Gradients, and the Bellman Equation | https://dl.acm.org/doi/10.5555/3312046
+computer-science | Computer Vision: Convolution, Feature Detection, and Image Understanding | https://szeliski.org/Book/
+science | Carbon Cycle: Sources, Sinks, and Anthropogenic Perturbations | https://www.ipcc.ch/report/ar6/wg1/
+science | Stem Cells: Pluripotency, Differentiation, and Regenerative Medicine | https://www.cell.com/cell-stem-cell/
+science | Nuclear Fission and Fusion: Principles, Reactors, and Energy Prospects | https://www.iaea.org/publications
+science | Antibody Structure and Function: Immunoglobulin Classes and Therapeutic Applications | https://www.nature.com/articles/nri3600
+science | Aerodynamics: Lift, Drag, and the Boundary Layer | https://www.cambridge.org/core/books/aerodynamics-for-engineering-students/
+geography | Great Barrier Reef: Ecology, Coral Bleaching, and Conservation | https://www.gbrmpa.gov.au/
+business | Bitcoin and Cryptocurrency: Proof of Work, Decentralization, and Financial Inclusion | https://nakamotoinstitute.org/bitcoin/
+business | Game Theory: Nash Equilibrium, Zero-Sum Games, and Strategic Interaction | https://press.princeton.edu/books/paperback/9780691170817/the-theory-of-games-and-economic-behavior
