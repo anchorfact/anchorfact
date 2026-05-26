@@ -1,30 +1,29 @@
-science | Carbon Cycle: Sources, Sinks, and Anthropogenic Perturbations | https://www.ipcc.ch/report/ar6/wg1/
-science | Stem Cells: Pluripotency, Differentiation, and Regenerative Medicine | https://www.cell.com/cell-stem-cell/
-science | Nuclear Fission and Fusion: Principles, Reactors, and Energy Prospects | https://www.iaea.org/publications
-science | Antibody Structure and Function: Immunoglobulin Classes and Therapeutic Applications | https://www.nature.com/articles/nri3600
-science | Aerodynamics: Lift, Drag, and the Boundary Layer | https://www.cambridge.org/core/books/aerodynamics-for-engineering-students/
-ai | Large Language Model Training: Scaling Laws, Data Curation, and Compute | https://arxiv.org/abs/2203.15556
-ai | AI for Audio Processing: Speech Recognition, Music Generation, and Sound Understanding | https://arxiv.org/abs/2105.01703
-ai | AI for Art and Creativity: GANs, Diffusion, and Computational Aesthetics | https://arxiv.org/abs/2306.03227
-ai | AI for Augmented Reality: Real-Time Object Detection, Depth Estimation, and Scene Understanding | https://arxiv.org/abs/2304.08485
-ai | AI for Genomics: Variant Calling, Gene Expression Prediction, and Protein-DNA Binding | https://www.nature.com/articles/s41576-019-0125-5
-ai | AI for Mathematical Reasoning: Theorem Proving, Symbolic Computation, and Autoformalization | https://www.nature.com/articles/s41586-023-06945-1
-ai | AI for Network Security: Intrusion Detection, Threat Intelligence, and Anomaly Analysis | https://arxiv.org/abs/2005.11154
-computer-science | Git: Distributed Version Control Internals and Workflows | https://git-scm.com/book/en/v2
-computer-science | SQL Query Optimization: Join Algorithms, Cost Models, and Index Selection | https://dl.acm.org/doi/10.1145/362384.362685
-computer-science | Container Orchestration: Kubernetes Architecture, Scheduling, and Service Mesh | https://kubernetes.io/docs/concepts/
-computer-science | Interpreters and Compilers: Lexing, Parsing, and Code Generation | https://dl.acm.org/doi/10.5555/1090333
-computer-science | The Halting Problem and Computability Theory | https://dl.acm.org/doi/10.5555/1097010
-computer-science | Elliptic Curve Cryptography: Mathematics, Curves, and TLS Integration | https://doi.org/10.1007/978-0-387-72092-0
-computer-science | The Actor Model: Concurrency Through Message Passing | https://dl.acm.org/doi/10.5555/109522
-science | Human Brain: Structure, Functional Regions, and the Connectome | https://www.nature.com/articles/s41583-019-0125-5
-science | Continental Drift and Plate Tectonics: Wegener to Modern Geodynamics | https://pubs.geoscienceworld.org/gsa/geology/
-science | The Standard Model of Cosmology: ΛCDM, Inflation, and the Cosmic Web | https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.87.1003
-science | Exoplanets: Detection Methods, Habitable Zones, and Biosignatures | https://www.nature.com/articles/s41586-019-1732-z
-science | The Microbiome: Gut Bacteria, Immunity, and the Gut-Brain Axis | https://www.nature.com/articles/s41586-019-1238-8
-science | Special Relativity: Time Dilation, Length Contraction, and E=mc² | https://link.springer.com/book/10.1007/978-3-319-63307-1
-science | Ocean Acidification: CO2-Driven Chemistry Changes and Marine Ecosystem Impacts | https://www.ipcc.ch/report/ar6/wg1/
-science | RNA Biology: From Transcription to RNA Interference and mRNA Vaccines | https://www.nature.com/articles/s41580-019-0137-2
-business | Behavioral Economics: Kahneman, Tversky, and the Psychology of Irrational Decisions | https://press.princeton.edu/books/paperback/9780691135727/thinking-fast-and-slow
-business | Venture Capital: Fund Structure, Term Sheets, and Portfolio Strategy | https://www.nvca.org/
-business | Intellectual Property: Patents, Copyrights, Trademarks, and Trade Secrets | https://www.wipo.int/portal/en/
+computer-science | WebRTC: Real-Time Communication in the Browser | https://www.w3.org/TR/webrtc/
+computer-science | JWT: JSON Web Tokens — Authentication, Claims, and Security | https://datatracker.ietf.org/doc/html/rfc7519
+science | Photosynthesis: Light Reactions, Calvin Cycle, and C4/CAM Pathways | https://www.nature.com/articles/s41586-019-1138-y
+science | Protein Folding: Anfinsen's Dogma, Chaperones, and AlphaFold | https://www.nature.com/articles/s41586-021-03819-2
+science | Epigenetics: DNA Methylation, Histone Modification, and Gene Regulation | https://www.nature.com/articles/s41576-019-0137-2
+science | Immune System: Innate vs Adaptive Immunity, T Cells, and B Cells | https://www.nature.com/articles/nri3600
+science | Homeostasis: Feedback Loops, Thermoregulation, and Physiological Balance | https://www.ncbi.nlm.nih.gov/books/NBK279297/
+science | Electromagnetic Spectrum: Radio Waves to Gamma Rays and Applications | https://www.nist.gov/pml/
+science | Nuclear Magnetic Resonance: From MRI Imaging to Chemical Structure | https://pubs.acs.org/doi/10.1021/ed076p857
+science | Fermentation: Biochemistry, Industrial Applications, and Gut Health | https://www.nature.com/articles/s41579-019-0196-4
+science | Plate Tectonics: Continental Drift, Seafloor Spreading, and Subduction | https://pubs.geoscienceworld.org/gsa/geology/
+science | Hormones: Endocrine System, Feedback Loops, and Metabolic Regulation | https://www.ncbi.nlm.nih.gov/books/NBK279127/
+computer-science | CAP Theorem in Practice: Consistency, Availability, and Partition Tolerance Trade-offs | https://dl.acm.org/doi/10.1145/564585.564601
+computer-science | Deep Learning Hardware: GPUs, TPUs, and AI Accelerator Architecture | https://arxiv.org/abs/1906.04788
+computer-science | Web Authentication: WebAuthn, Passkeys, and Passwordless Future | https://www.w3.org/TR/webauthn-3/
+computer-science | Graph Databases: Neo4j, Property Graphs, and Cypher Query Language | https://neo4j.com/docs/
+computer-science | Time Series Databases: InfluxDB, Prometheus, and Downsampling | https://docs.influxdata.com/
+computer-science | Error Correction Codes: Hamming, Reed-Solomon, and LDPC | https://dl.acm.org/doi/10.5555/1097010
+computer-science | Actor-Critic Methods: A2C, A3C, PPO, and Deep Reinforcement Learning | https://arxiv.org/abs/1707.06347
+computer-science | Raft Consensus Algorithm: Leader Election, Log Replication, and Safety | https://raft.github.io/
+computer-science | Columnar Databases: Parquet, ORC, and Analytical Workloads | https://parquet.apache.org/
+ai | AI for Drug Discovery: Molecular Docking, Virtual Screening, and De Novo Design | https://www.nature.com/articles/s41586-019-1138-y
+ai | AI for Chemistry: Reaction Prediction, Retrosynthesis, and Materials Discovery | https://www.nature.com/articles/s41586-021-03544-w
+ai | AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring | https://www.nature.com/articles/s41586-019-1138-y
+history | Roman Empire: Rise, Pax Romana, and the Fall of the Western Empire | https://www.cambridge.org/core/books/cambridge-ancient-history/
+history | Ancient Greece: Democracy, Philosophy, and the Persian Wars | https://www.cambridge.org/core/books/cambridge-ancient-history/
+history | Renaissance: Humanism, Art, and the Rebirth of Classical Learning | https://www.cambridge.org/core/books/cambridge-history-of-the-renaissance/
+history | World War I: Causes, Trench Warfare, and the Treaty of Versailles | https://www.cambridge.org/core/books/cambridge-history-of-the-first-world-war/
+history | Industrial Revolution: Steam, Factories, and the Transformation of Society | https://www.cambridge.org/core/books/cambridge-economic-history-of-modern-britain/
