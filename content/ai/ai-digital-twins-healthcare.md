@@ -93,6 +93,7 @@ updated: '2026-05-24'
 
 
 
+
 ## TL;DR
 AI creates digital twins of individual patients -- virtual replicas that simulate disease progression and predict treatment response. From Dassault's Living Heart used in arrhythmia surgery planning to in silico clinical trials that reduce human testing, healthcare digital twins represent the frontier of personalized medicine.
 
