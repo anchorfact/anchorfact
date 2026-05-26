@@ -93,6 +93,7 @@ updated: '2026-05-24'
 ---
 
 
+
 ## TL;DR
 AI is transforming legal contracts -- analyzing thousands of documents in hours for due diligence, extracting obligations and risks with 95% accuracy, and drafting complete contracts from natural language instructions in under a minute. From Ironclad to Harvey AI ($3B valuation), LLMs are becoming the junior associate that never sleeps.
 

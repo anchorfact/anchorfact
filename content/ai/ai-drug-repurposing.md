@@ -104,6 +104,7 @@ updated: '2026-05-24'
 ---
 
 
+
 ## TL;DR
 AI drug repurposing finds new uses for existing drugs -- identifying that a rheumatoid arthritis drug could treat COVID-19, or that an old antidepressant might work for a rare disease. Knowledge graphs and transcriptomic ML slash drug discovery timelines from 10+ years to months.
 

@@ -113,6 +113,7 @@ updated: '2026-05-24'
 ---
 
 
+
 ## TL;DR
 AI translation has evolved from phrase tables to LLMs that match human translators on common language pairs and provide real-time spoken interpretation for multilingual meetings. From GPT-4 translating with document-level coherence to KUDO AI interpreting with <2s latency, language barriers are dissolving through AI.
 

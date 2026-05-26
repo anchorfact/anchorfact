@@ -90,6 +90,7 @@ updated: '2026-05-24'
 ---
 
 
+
 ## TL;DR
 AI is fixing the EHR problem -- ambient scribes that listen to doctor-patient conversations and write clinical notes automatically, saving physicians 2+ hours/day on documentation and reducing burnout by 40%. From Nuance DAX to Epic, AI transforms EHR from a burden to an assistive partner.
 

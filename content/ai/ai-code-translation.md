@@ -101,6 +101,8 @@ updated: '2026-05-24'
 ---
 
 
+
+
 ## TL;DR
 AI translates code between languages -- from modernizing billion-line COBOL banking systems to converting Python to Rust. LLM-based code translation attacks the $50B+ legacy modernization market, compressing migration timelines from years to months while maintaining functional equivalence.
 

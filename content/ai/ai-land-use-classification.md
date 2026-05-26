@@ -94,6 +94,7 @@ updated: '2026-05-24'
 ---
 
 
+
 ## TL;DR
 AI classifies every pixel of Earth -- mapping forests, cities, cropland, and water at 10m resolution, updated annually. From ESA's WorldCover global map to Google's near-real-time Dynamic World, deep learning on satellite imagery gives humanity an unprecedented view of how our planet is changing.
 
