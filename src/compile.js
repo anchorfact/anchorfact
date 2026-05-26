@@ -258,6 +258,7 @@ function compileFile(mdPath, distDir) {
   <title>${frontmatter.title} — AnchorFact</title>
   <meta name="anchorfact:confidence" content="${confidence.level} (${confidence.score})">
   <meta name="anchorfact:generation" content="${frontmatter.generation_method || 'ai_structured'}">
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "6c2614afcd75419ba49039a97b7378ab"}'></script>
   <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
 </head>
 <body><article>${body.replace(/\n/g, '<br>\n')}</article></body>
@@ -364,6 +365,7 @@ const rootHtml = `<!DOCTYPE html>
   <title>AnchorFact — Anchor AI to Facts</title>
   <meta name="description" content="AnchorFact: AI-structured knowledge base for LLM citations. Confidence based on verified sources.">
   <meta name="msvalidate.01" content="B9AA7B911CF59012FB84CBDD7470CBA4" />
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "6c2614afcd75419ba49039a97b7378ab"}'></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
