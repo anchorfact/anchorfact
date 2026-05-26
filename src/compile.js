@@ -531,9 +531,15 @@ const headersFile = `# _headers — AnchorFact AI-optimized headers with securit
   Content-Type: text/turtle; charset=utf-8
   Cache-Control: public, max-age=86400
 /*/index.md
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+  CDN-Cache-Control: public, max-age=604800
+/*/index.html
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+  CDN-Cache-Control: public, max-age=604800
 /*/index.txt
   Cache-Control: public, max-age=604800
+/
+  Cache-Control: public, max-age=3600
 /llms.txt
   Cache-Control: public, max-age=3600
 /manifest.json
