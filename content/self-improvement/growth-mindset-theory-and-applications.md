@@ -66,4 +66,4 @@ Key neuroscience: brains of growth-mindset individuals show greater error-relate
 
 - [Growth Mindset](../growth-mindset.md)
 - [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
-- [Graph Neural Networks: Message Passing and Applications](../../ai/graph-neural-networks.md)
+- [Graph Neural Networks: Message Passing, Applications, and Frontiers](../../ai/graph-neural-networks-message-passing-applications-and-frontiers.md)

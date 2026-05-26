@@ -97,6 +97,6 @@ Graph-based fraud detection: the financial network is a heterogeneous graph — 
 
 ## Related Articles
 
+- [Graph Neural Networks: Message Passing, Applications, and Frontiers](../graph-neural-networks-message-passing-applications-and-frontiers.md)
 - [Graph Neural Networks: Message Passing and Applications](../graph-neural-networks.md)
 - [Activation Functions in Neural Networks](../activation-functions.md)
-- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../ai-for-complex-networks.md)

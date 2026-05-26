@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [LoRA (Low-Rank Adaptation)](../lora.md)
+- [Large Language Models (LLMs)](../llms.md)
+- [Low-Resource NLP: Multilingual Models, Endangered Language Preservation, and Translation](../low-resource-nlp.md)

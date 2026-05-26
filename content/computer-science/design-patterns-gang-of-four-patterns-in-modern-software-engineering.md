@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Software Engineering: Design Principles and Development Methodologies](../software-engineering-principles.md)
+- [AI for Code Generation: LLMs as Software Engineering Copilots](../../ai/ai-for-code-generation.md)
+- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../../ai/adversarial-machine-learning.md)

@@ -116,4 +116,4 @@ Regression: linear (OLS), logistic (binary outcomes), multilevel/hierarchical. M
 
 - [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../../ai/3d-human-modeling.md)
 - [AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling](../../ai/ai-customer-analytics.md)
-- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
+- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../../ai/ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)

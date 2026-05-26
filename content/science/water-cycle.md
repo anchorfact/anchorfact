@@ -72,3 +72,4 @@ Oceans: 96.5% of all water. Freshwater: 2.5% — mostly locked in glaciers/ice c
 
 - [AI for Water Management: Leak Detection, Quality Monitoring, and Smart Irrigation](../../ai/ai-water-management.md)
 - [Software Development Life Cycle (SDLC)](../../computer-science/software-development-life-cycle-sdlc.md)
+- [World Water Crisis: Scarcity, Access, and Geopolitics](../../geography/world-water-crisis-scarcity-access-and-geopolitics.md)

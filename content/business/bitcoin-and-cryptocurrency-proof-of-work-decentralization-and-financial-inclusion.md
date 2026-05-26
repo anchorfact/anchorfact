@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime](../../ai/ai-for-fraud-detection.md)
+- [AI for Personal Finance: Robo-Advisors, Automated Budgeting, and Financial Wellness](../../ai/ai-personal-finance.md)
+- [AI for Remote Work: Virtual Collaboration, Productivity Analytics, and Distributed Team Intelligence](../../ai/ai-remote-work.md)

@@ -44,3 +44,9 @@ Distances: Sprint, Olympic, 70.3, Ironman. Energy: bike 55% energy, 50% time. Br
 
 ---
 > 本文内容由 AnchorFact Pipeline 生成。
+
+## Related Articles
+
+- [Marathon Training: Physiology, Programming, and Performance](../marathon-training-physiology-programming-and-performance.md)
+- [Exercise Physiology: How the Body Adapts to Training](../sports-exercise-physiology.md)
+- [Strength Training: Physiology of Hypertrophy and Neural Adaptation](../strength-training-physiology-of-hypertrophy-and-neural-adaptation.md)

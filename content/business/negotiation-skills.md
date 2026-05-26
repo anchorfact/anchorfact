@@ -92,6 +92,6 @@ BATNA: always know your walk-away option before negotiating. Anchoring: first nu
 
 ## Related Articles
 
+- [Negotiation Skills: BATNA, Anchoring, and Integrative Bargaining](../../self-improvement/negotiation-skills-batna-anchoring-and-integrative-bargaining.md)
 - [Networking Skills](../networking-skills.md)
 - [Communication Skills](../../self-improvement/communication-skills.md)
-- [Sports Psychology: Mental Skills for Peak Performance](../../sports/sports-psychology-performance.md)

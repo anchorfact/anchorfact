@@ -84,4 +84,4 @@ Reviewer focus: design (is it well-architected?), functionality (does it work?),
 
 - [AI for Static Analysis: Automated Bug Detection, Code Review, and Vulnerability Scanning](../../ai/ai-static-analysis.md)
 - [Docker Security Best Practices](../docker-security-best-practices.md)
-- [Data Science: Methods, Tools, and Best Practices](../../science/data-science-fundamentals.md)
+- [OAuth 2.0: Authorization Framework and Security Best Practices](../oauth-2-0-authorization-framework-and-security-best-practices.md)

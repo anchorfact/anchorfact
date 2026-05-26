@@ -104,5 +104,5 @@ ViTPose (NeurIPS 2022): key insight is simplicity -- no task-specific decoder, j
 ## Related Articles
 
 - [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../3d-human-modeling.md)
+- [AI for Augmented Reality: Real-Time Object Detection, Depth Estimation, and Scene Understanding](../ai-for-augmented-reality-real-time-object-detection-depth-estimation-and-scene-understanding.md)
 - [AI for Ocean Monitoring: Marine Life Detection, Plastic Pollution Tracking, and Oceanographic AI](../ai-for-ocean-monitoring.md)
-- [AI Language Translation and Interpretation: LLM-Based Translation, Simultaneous Interpretation, and Quality Estimation](../ai-language-translation-interpretation.md)

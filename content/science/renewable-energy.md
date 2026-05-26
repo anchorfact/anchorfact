@@ -77,4 +77,5 @@ Solar PV: global capacity 1.6 TW (2024), growing ~30%/year. Wind: 1 TW (2024). C
 ## Related Articles
 
 - [AI for Energy: Smart Grids, Renewable Forecasting, and Digital Twins](../../ai/ai-for-energy.md)
+- [Renewable Energy Geography: Solar, Wind, and Hydroelectric Distribution](../../geography/renewable-energy-geography-solar-wind-and-hydroelectric-distribution.md)
 - [AI for Smart Homes: Ambient Intelligence, Energy Optimization, and Predictive Home Automation](../../ai/ai-for-smart-homes.md)

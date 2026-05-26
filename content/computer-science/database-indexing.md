@@ -82,6 +82,6 @@ B-tree: O(log n) lookups, supports =, <, >, BETWEEN, ORDER BY. Multi-column inde
 
 ## Related Articles
 
+- [Database Indexing: B-Trees, Hash Indexes, and Query Optimization](../database-indexing-b-trees-hash-indexes-and-query-optimization.md)
 - [Learned Database Systems: AI-Driven Query Optimization, Learned Indexes, and Cardinality Estimation](../../ai/learned-database-systems.md)
 - [Text-to-SQL: Natural Language Database Querying with Large Language Models](../../ai/text-to-sql.md)
-- [Database Normalization](../database-normalization.md)

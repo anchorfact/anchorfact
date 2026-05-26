@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Industrial Revolution](../industrial-revolution.md)
+- [AI for Protein Structure Prediction: AlphaFold and the Folding Revolution](../../ai/ai-for-protein-structure-prediction-alphafold-and-the-folding-revolution.md)
+- [AI for Science: AlphaFold and the AI-Driven Discovery Revolution](../../ai/ai-for-science.md)

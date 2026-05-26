@@ -67,6 +67,6 @@ Pure functions: no side effects → easier to test, reason about, parallelize. M
 
 ## Related Articles
 
-- [C++ Programming Language](../c++-language.md)
-- [C Programming Language](../c-language.md)
-- [Dynamic Programming](../dynamic-programming.md)
+- [Functional Programming: Monads, Functors, and Category Theory in Code](../functional-programming-monads-functors-and-category-theory-in-code.md)
+- [Lambda Calculus: Foundations of Functional Programming and Computation](../lambda-calculus-foundations-of-functional-programming-and-computation.md)
+- [AI for Protein Design: Diffusion Models, Sequence Generation, and Functional Optimization](../../ai/ai-for-protein-design-diffusion-models-sequence-generation-and-functional-optimization.md)

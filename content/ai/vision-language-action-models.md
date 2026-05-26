@@ -106,6 +106,6 @@ Leading VLA models: (1) RT-2 (Google DeepMind, 2023) — fine-tuned PaLM-E visio
 
 ## Related Articles
 
+- [Multimodal AI: Vision-Language Models from CLIP to GPT-4V](../multimodal-ai-vision-language-models-from-clip-to-gpt-4v.md)
 - [Video Understanding: Action Recognition, Temporal Action Detection, and Video-Language Models](../video-understanding.md)
 - [Visual Question Answering: Vision-Language Models for Image Understanding and Reasoning](../visual-question-answering.md)
-- [AI for Genomics: Single-Cell Foundation Models and RNA Biology](../ai-for-genomics.md)

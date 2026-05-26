@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../../ai/3d-human-modeling.md)
+- [AI for Construction: Computer Vision Safety, BIM Digital Twins, and Automated Project Monitoring](../../ai/ai-for-construction.md)
+- [Cognitive Architectures: ACT-R, Soar, and Computational Models of Human-Like Reasoning](../../ai/cognitive-architectures.md)

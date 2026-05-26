@@ -87,6 +87,6 @@ SHA-1 (broken, 2017 collision demonstrated). MD5 (completely broken). SHA-2 fami
 
 ## Related Articles
 
+- [Load Balancing: Algorithms, Consistent Hashing, and Modern Approaches](../load-balancing-algorithms-consistent-hashing-and-modern-approaches.md)
 - [Deep Reinforcement Learning Algorithms: PPO, SAC, Dreamer, and Decision Transformer](../../ai/deep-reinforcement-learning-algorithms.md)
 - [Optimization Algorithms for Deep Learning](../../ai/optimization-algorithms.md)
-- [Swarm and Evolutionary Intelligence: Genetic Algorithms, NEAT, and Particle Swarms](../../ai/swarm-evolutionary-intelligence.md)

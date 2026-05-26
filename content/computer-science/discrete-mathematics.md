@@ -83,4 +83,5 @@ Combinatorics: counting, permutations (P(n,k) = n!/(n-k)!), combinations (C(n,k)
 ## Related Articles
 
 - [AI for Mathematical Reasoning: Theorem Proving with Lean, AlphaProof, and Formal Mathematics](../../ai/ai-mathematical-reasoning.md)
+- [Elliptic Curve Cryptography: Mathematics, Curves, and TLS Integration](../elliptic-curve-cryptography-mathematics-curves-and-tls-integration.md)
 - [History of Mathematics](../../science/history-of-mathematics.md)

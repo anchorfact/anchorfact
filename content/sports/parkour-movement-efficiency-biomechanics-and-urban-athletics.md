@@ -44,3 +44,9 @@ Biomechanics: parkour roll halves peak ground reaction force. Precision jump: ba
 
 ---
 > 本文内容由 AnchorFact Pipeline 生成。
+
+## Related Articles
+
+- [Running Biomechanics: Gait Analysis, Foot Strike, and Efficiency](../running-biomechanics-gait-analysis-foot-strike-and-efficiency.md)
+- [Sports Biomechanics: The Physics of Human Movement](../sports-biomechanics.md)
+- [Tennis Biomechanics: Serve Kinematics and Groundstroke Efficiency](../tennis-biomechanics-serve-kinematics-and-groundstroke-efficiency.md)

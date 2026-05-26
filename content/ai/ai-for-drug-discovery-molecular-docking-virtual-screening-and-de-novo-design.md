@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [AI for Drug Discovery: AlphaFold, Molecular Generation, and Generative Chemistry](../ai-for-drug-discovery.md)
+- [AI in Healthcare: Diagnostics, Drug Discovery, and Robotics](../ai-in-healthcare.md)
+- [AI for Beauty and Fashion: Virtual Try-On, Personalized Styling, and Trend Prediction](../ai-beauty-fashion.md)

@@ -104,6 +104,6 @@ Offline RL trains from fixed datasets without environment interaction — Decisi
 
 ## Related Articles
 
+- [Actor-Critic Methods: A2C, A3C, PPO, and Deep Reinforcement Learning](../../computer-science/actor-critic-methods-a2c-a3c-ppo-and-deep-reinforcement-learning.md)
 - [Optimization Algorithms for Deep Learning](../optimization-algorithms.md)
 - [AI for Algorithmic Trading: Reinforcement Learning, Market Prediction, and Quantitative Finance](../ai-for-algorithmic-trading.md)
-- [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../ai-for-chip-design.md)

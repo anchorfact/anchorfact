@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Economics: Supply, Demand, and Market Equilibrium](../economics-fundamentals.md)
+- [The Standard Model of Particle Physics: Quarks, Leptons, and Fundamental Forces](../../science/the-standard-model-of-particle-physics-quarks-leptons-and-fundamental-forces.md)
+- [AI for Algorithmic Trading: Reinforcement Learning, Market Prediction, and Quantitative Finance](../../ai/ai-for-algorithmic-trading.md)

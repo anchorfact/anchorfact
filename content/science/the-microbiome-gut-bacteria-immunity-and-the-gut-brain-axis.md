@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Gut Microbiome](../../health/gut-microbiome.md)
+- [Brain-Computer Interfaces: AI-Powered Neural Decoding and Neurotechnology](../../ai/brain-computer-interface-ai.md)
+- [Computational Neuroscience: AI Models of Brain Circuits, Connectomics, and Neural Computation](../../ai/computational-neuroscience.md)

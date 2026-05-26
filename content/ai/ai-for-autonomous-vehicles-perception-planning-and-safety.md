@@ -50,3 +50,9 @@ updated: '2026-05-25'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning](../agentic-ai.md)
+- [AI for Robot Navigation: SLAM, Visual Odometry, and Autonomous Path Planning](../ai-for-robot-navigation.md)
+- [AI Content Moderation Platforms: Large-Scale Safety Systems, Policy Engines, and Multilingual Review](../ai-content-moderation-platforms.md)

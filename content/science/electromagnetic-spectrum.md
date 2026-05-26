@@ -73,3 +73,7 @@ Radio waves: communication, broadcasting. Microwaves: radar, cooking, WiFi. Infr
 ## Further Reading
 
 - [Introduction to Electrodynamics (4th Ed, Griffiths)](https://www.cambridge.org/highereducation/books/introduction-to-electrodynamics/3EDC2A247A70E2F72D685535D315EB68)
+
+## Related Articles
+
+- [Electromagnetic Spectrum: Radio Waves to Gamma Rays and Applications](../electromagnetic-spectrum-radio-waves-to-gamma-rays-and-applications.md)

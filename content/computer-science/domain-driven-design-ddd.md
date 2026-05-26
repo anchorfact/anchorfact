@@ -92,6 +92,6 @@ Ubiquitous Language: same terms in code, conversation, and documentation. Bounde
 
 ## Related Articles
 
+- [AI for Chip Design: Reinforcement Learning for EDA and Floorplanning](../../ai/ai-for-chip-design-reinforcement-learning-for-eda-and-floorplanning.md)
 - [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../../ai/ai-for-chip-design.md)
-- [AI for Science: AlphaFold and the AI-Driven Discovery Revolution](../../ai/ai-for-science.md)
-- [AI for Weather Forecasting: Data-Driven Numerical Weather Prediction and Nowcasting](../../ai/ai-for-weather-forecasting.md)
+- [AI for Drug Discovery: Molecular Docking, Virtual Screening, and De Novo Design](../../ai/ai-for-drug-discovery-molecular-docking-virtual-screening-and-de-novo-design.md)

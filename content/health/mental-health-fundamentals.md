@@ -99,4 +99,4 @@ The monoamine hypothesis guided antidepressant development for decades; newer re
 
 - [AI for Mental Health: LLM-Based Therapy, Digital Interventions, and Clinical Trials](../../ai/ai-for-mental-health.md)
 - [AI for Speech Emotion Recognition: Vocal Biomarkers, Mental Health Screening, and Affective Computing](../../ai/ai-for-speech-emotion-recognition.md)
-- [Mental Health Basics](../mental-health-basics.md)
+- [Depression: Neurobiology, Diagnosis, and Evidence-Based Treatments](../depression-neurobiology-diagnosis-and-evidence-based-treatments.md)

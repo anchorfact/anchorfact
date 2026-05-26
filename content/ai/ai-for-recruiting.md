@@ -98,5 +98,6 @@ Fairness in AI recruiting (arxiv 2025): biases manifest at every pipeline stage.
 
 ## Related Articles
 
+- [AI for Drug Discovery: Molecular Docking, Virtual Screening, and De Novo Design](../ai-for-drug-discovery-molecular-docking-virtual-screening-and-de-novo-design.md)
 - [AI for Speech Emotion Recognition: Vocal Biomarkers, Mental Health Screening, and Affective Computing](../ai-for-speech-emotion-recognition.md)
 - [String Matching Algorithms](../../computer-science/string-matching-algorithms.md)

@@ -99,6 +99,6 @@ MusicGen (Meta, 2023): EnCodec compresses 32kHz audio into 50Hz discrete codes. 
 
 ## Related Articles
 
+- [AI for Audio Processing: Speech Recognition, Music Generation, and Sound Understanding](../ai-for-audio-processing-speech-recognition-music-generation-and-sound-understanding.md)
 - [AI Music and Audio Generation: Suno, Udio, and MusicLM](../ai-music-generation.md)
 - [Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning](../audio-source-separation.md)
-- [Neural Style Transfer: Artistic Rendering, Image-to-Image Translation, and Creative AI](../neural-style-transfer.md)

@@ -103,3 +103,4 @@ Session management: after authentication, a session token (cookie, JWT) maintain
 
 - [AI for Digital Forensics: Deepfake Provenance, Evidence Authentication, and Digital Crime Investigation](../../ai/ai-digital-forensics.md)
 - [AI Identity Verification: Document Authentication, Liveness Detection, and KYC Compliance](../../ai/ai-identity-verification.md)
+- [JWT: JSON Web Tokens — Authentication, Claims, and Security](../jwt-json-web-tokens-authentication-claims-and-security.md)

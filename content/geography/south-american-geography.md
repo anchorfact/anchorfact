@@ -111,6 +111,6 @@ The Amazon River discharges 209,000 m³/s into the Atlantic — more than the ne
 
 ## Related Articles
 
+- [Mediterranean Sea: Physical Geography, Biodiversity, and Marine Protected Areas](../mediterranean-sea-physical-geography-biodiversity-and-marine-protected-areas.md)
 - [South America Geography](../south-america-geography.md)
 - [AI for Wildlife Conservation: Camera Trap Analysis, Species Classification, and Biodiversity Monitoring](../../ai/ai-for-wildlife-conservation.md)
-- [African Geography](../african-geography.md)

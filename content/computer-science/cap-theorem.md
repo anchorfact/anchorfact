@@ -115,5 +115,6 @@ CP systems (MongoDB, HBase, ZooKeeper): sacrifice availability during partition 
 
 ## Related Articles
 
-- [AI for Mathematical Reasoning: Theorem Proving with Lean, AlphaProof, and Formal Mathematics](../../ai/ai-mathematical-reasoning.md)
-- [Program Synthesis and Formal Verification: Neural Theorem Proving with LLMs](../../ai/program-synthesis-verification.md)
+- [CAP Theorem: Consistency, Availability, and Partition Tolerance](../cap-theorem-consistency-availability-and-partition-tolerance.md)
+- [CAP Theorem in Practice: Consistency, Availability, and Partition Tolerance Trade-offs](../cap-theorem-in-practice-consistency-availability-and-partition-tolerance-trade-offs.md)
+- [AI for Mathematical Reasoning: Theorem Proving, Symbolic Computation, and Autoformalization](../../ai/ai-for-mathematical-reasoning-theorem-proving-symbolic-computation-and-autoformalization.md)

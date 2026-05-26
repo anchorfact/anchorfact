@@ -109,6 +109,6 @@ ZeRO-3 reduces per-GPU memory from 120GB to 1.5GB for a 100B model. Activation c
 
 ## Related Articles
 
+- [Large Language Model Training: Scaling Laws, Data Curation, and Compute](../large-language-model-training-scaling-laws-data-curation-and-compute.md)
 - [Language Modeling: From N-grams to Scaling Laws and Information-Theoretic Foundations](../language-modeling-theory.md)
 - [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../ai-for-data-curation.md)
-- [AI for Remote Work: Virtual Collaboration, Productivity Analytics, and Distributed Team Intelligence](../ai-remote-work.md)

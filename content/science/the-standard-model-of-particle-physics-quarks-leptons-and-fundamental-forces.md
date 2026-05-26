@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Particle Physics and the Standard Model](../particle-physics.md)
+- [Supply and Demand: The Fundamental Model of Market Economics](../../business/supply-and-demand-the-fundamental-model-of-market-economics.md)
+- [The Standard Model of Cosmology: ΛCDM, Inflation, and the Cosmic Web](../the-standard-model-of-cosmology-cdm-inflation-and-the-cosmic-web.md)

@@ -84,4 +84,4 @@ Binary tree properties: max nodes at level l = 2^l, max total nodes = 2^(h+1)-1.
 
 - [Array Data Structure](../array-data-structure.md)
 - [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../../ai/ai-for-data-curation.md)
-- [AI for Tabular Data: Synthetic Generation, Diffusion Models, and Privacy-Preserving Structured Data](../../ai/ai-for-tabular-data.md)
+- [AI for Protein Structure Prediction: AlphaFold and the Folding Revolution](../../ai/ai-for-protein-structure-prediction-alphafold-and-the-folding-revolution.md)

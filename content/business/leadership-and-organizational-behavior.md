@@ -127,4 +127,4 @@ Psychological safety was identified by Google's Project Aristotle as the #1 pred
 
 - [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
 - [Music Theory Basics](../../arts/music-theory-basics.md)
-- [Leadership Principles](../leadership-principles.md)
+- [Game Theory: Nash Equilibrium, Zero-Sum Games, and Strategic Interaction](../game-theory-nash-equilibrium-zero-sum-games-and-strategic-interaction.md)

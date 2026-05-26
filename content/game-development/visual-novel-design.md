@@ -64,6 +64,6 @@ Branching: choices lead to different endings (good/bad/true). Common routes: cha
 
 ## Related Articles
 
+- [AI for Chip Design: Reinforcement Learning for EDA and Floorplanning](../../ai/ai-for-chip-design-reinforcement-learning-for-eda-and-floorplanning.md)
 - [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../../ai/ai-for-chip-design.md)
-- [AI for Robot Navigation: SLAM, Visual Odometry, and Autonomous Path Planning](../../ai/ai-for-robot-navigation.md)
-- [AI for Data Visualization: Automated Chart Generation, Insight Discovery, and Visual Analytics](../../ai/ai-for-visualization.md)
+- [AI for Drug Discovery: Molecular Docking, Virtual Screening, and De Novo Design](../../ai/ai-for-drug-discovery-molecular-docking-virtual-screening-and-de-novo-design.md)

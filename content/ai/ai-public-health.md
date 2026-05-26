@@ -124,6 +124,6 @@ COVID-19 era innovations: BlueDot (NLP surveillance) detected unusual pneumonia 
 
 ## Related Articles
 
+- [Epidemiology: Principles of Disease Surveillance and Outbreak Investigation](../../health/epidemiology-principles-of-disease-surveillance-and-outbreak-investigation.md)
 - [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../ai-air-quality.md)
 - [AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling](../ai-customer-analytics.md)
-- [AI for Agriculture: Precision Farming, Plant Disease Detection, and Crop Yield Prediction](../ai-for-agriculture.md)

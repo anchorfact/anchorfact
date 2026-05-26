@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [TCP/IP Protocol Suite](../tcp-ip.md)
+- [AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition](../../ai/ai-for-food-science.md)
+- [AI for Manufacturing: Predictive Maintenance, Quality Control, and Digital Twins](../../ai/ai-for-manufacturing.md)

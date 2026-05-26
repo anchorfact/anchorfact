@@ -83,4 +83,5 @@ Types: running, cycling, swimming, brisk walking, rowing. Target heart rate: 50-
 
 ## Related Articles
 
+- [Cardiovascular Disease: Atherosclerosis, Risk Factors, and Prevention](../cardiovascular-disease-atherosclerosis-risk-factors-and-prevention.md)
 - [Exercise Physiology: How the Body Adapts to Training](../../sports/sports-exercise-physiology.md)

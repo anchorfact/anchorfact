@@ -106,4 +106,4 @@ Convolution: filter/kernel learns spatial hierarchies — early layers detect ed
 
 - [Activation Functions in Neural Networks](../activation-functions.md)
 - [AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime](../ai-for-fraud-detection.md)
-- [Graph Neural Networks: Message Passing and Applications](../graph-neural-networks.md)
+- [Graph Neural Networks: Message Passing, Applications, and Frontiers](../graph-neural-networks-message-passing-applications-and-frontiers.md)

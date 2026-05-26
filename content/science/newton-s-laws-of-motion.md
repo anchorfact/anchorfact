@@ -88,3 +88,4 @@ Newton's three laws (1687, Principia) form the foundation of classical mechanics
 
 - [Distributed Training: FSDP, DeepSpeed, and Scaling Laws](../../ai/distributed-training-systems.md)
 - [Language Modeling: From N-grams to Scaling Laws and Information-Theoretic Foundations](../../ai/language-modeling-theory.md)
+- [Large Language Model Training: Scaling Laws, Data Curation, and Compute](../../ai/large-language-model-training-scaling-laws-data-curation-and-compute.md)

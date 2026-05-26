@@ -98,5 +98,5 @@ ProofSeek pipeline: (1) NL Statement Generator — translate code semantics into
 ## Related Articles
 
 - [AI for Mathematical Reasoning: Theorem Proving with Lean, AlphaProof, and Formal Mathematics](../ai-mathematical-reasoning.md)
+- [AI for Mathematical Reasoning: Theorem Proving, Symbolic Computation, and Autoformalization](../ai-for-mathematical-reasoning-theorem-proving-symbolic-computation-and-autoformalization.md)
 - [AI Smart Contract Auditing: Vulnerability Detection, Formal Verification, and Blockchain Security](../ai-smart-contract-audit.md)
-- [Neural Rendering: NeRF, View Synthesis, and Implicit Scene Representations](../neural-rendering.md)

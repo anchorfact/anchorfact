@@ -97,6 +97,6 @@ atomic_facts:
 
 ## Related Articles
 
+- [Antarctica: The Frozen Continent's Geography and Research Stations](../antarctica-the-frozen-continent-s-geography-and-research-stations.md)
 - [Asian Geography](../asian-geography.md)
-- [North America Geography](../north-america-geography.md)
-- [Oceania Geography](../oceania-geography.md)
+- [Mediterranean Sea: Physical Geography, Biodiversity, and Marine Protected Areas](../mediterranean-sea-physical-geography-biodiversity-and-marine-protected-areas.md)

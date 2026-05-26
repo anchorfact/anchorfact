@@ -147,6 +147,6 @@ The CAPM (Capital Asset Pricing Model): E(R) = Rf + β(E(Rm)-Rf). Beta measures 
 
 ## Related Articles
 
+- [Venture Capital: Fund Structure, Term Sheets, and Portfolio Strategy](../venture-capital-fund-structure-term-sheets-and-portfolio-strategy.md)
 - [AI for Algorithmic Trading: Reinforcement Learning, Market Prediction, and Quantitative Finance](../../ai/ai-for-algorithmic-trading.md)
-- [AI in Finance: Trading, Risk, and Fraud Detection](../../ai/ai-in-finance.md)
-- [AI for Personal Finance: Robo-Advisors, Automated Budgeting, and Financial Wellness](../../ai/ai-personal-finance.md)
+- [AI for Protein Structure Prediction: AlphaFold and the Folding Revolution](../../ai/ai-for-protein-structure-prediction-alphafold-and-the-folding-revolution.md)

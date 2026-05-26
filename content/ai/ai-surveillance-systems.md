@@ -5,7 +5,7 @@ schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -87,6 +87,7 @@ secondary_sources:
     url: https://www.deloitte.com/global/en/Industries/government-public/perspectives/urban-future-with-a-purpose/surveillance-and-predictive-policing-through-ai.html
 updated: '2026-05-24'
 ---
+
 
 ## TL;DR
 AI surveillance sees everything, everywhere, all at once -- tracking objects across hundreds of cameras, detecting anomalies in real-time, and enabling forensic search through weeks of footage in seconds. The technology raises fundamental questions about privacy, bias, and the balance between security and civil liberties.

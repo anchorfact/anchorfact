@@ -44,3 +44,9 @@ Kinetic chain: rear foot push-off (2-3× bodyweight), hip rotation 700-900°/s, 
 
 ---
 > 本文内容由 AnchorFact Pipeline 生成。
+
+## Related Articles
+
+- [Sports Biomechanics: The Physics of Human Movement](../sports-biomechanics.md)
+- [AI for Sports Analytics: Player Tracking, Performance Prediction, and Tactical Analysis](../../ai/ai-sports-analytics.md)
+- [Extreme Sports: Risk, Reward, and Psychology](../extreme-sports-risk-reward-and-psychology.md)

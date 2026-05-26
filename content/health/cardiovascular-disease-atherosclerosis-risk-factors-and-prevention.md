@@ -44,3 +44,9 @@ updated: '2026-05-25'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [AI for Crisis Hotlines: Suicide Prevention Chatbots, Emotional Support AI, and Risk Detection](../../ai/ai-for-crisis-hotlines.md)
+- [AI for Payment Fraud Prevention: Real-Time Transaction Scoring, Chargeback Reduction, and Merchant Risk](../../ai/ai-for-fraud-prevention.md)
+- [Chronic Disease Prevention Strategies](../chronic-disease-prevention.md)

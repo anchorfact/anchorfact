@@ -74,3 +74,4 @@ Sprint biomechanics: acceleration phase (0-30m), maximum velocity (30-60m), spee
 ## Related Articles
 
 - [Server-Sent Events (SSE)](../../computer-science/server-sent-events-sse.md)
+- [Earth's Magnetic Field: Geodynamo, Reversals, and Navigation](../../geography/earth-s-magnetic-field-geodynamo-reversals-and-navigation.md)

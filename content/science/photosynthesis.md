@@ -102,3 +102,7 @@ Light reactions: photosystem II splits H₂O → O₂ + electrons, photosystem I
 ## Further Reading
 
 - [Molecular Mechanisms of Photosynthesis (Blankenship)](https://www.wiley.com/en-us/Molecular+Mechanisms+of+Photosynthesis%2C+3rd+Edition-p-9781119800019)
+
+## Related Articles
+
+- [Photosynthesis: Light Reactions, Calvin Cycle, and C4/CAM Pathways](../photosynthesis-light-reactions-calvin-cycle-and-c4-cam-pathways.md)

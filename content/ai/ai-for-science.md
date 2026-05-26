@@ -107,4 +107,4 @@ AlphaFold 3's diffusion approach: input raw atom positions → add noise → tra
 
 - [AI for Drug Discovery: AlphaFold, Molecular Generation, and Generative Chemistry](../ai-for-drug-discovery.md)
 - [AI for Materials Science: GNoME, Crystal Discovery, and Materials Informatics](../ai-for-materials-science.md)
-- [Protein Structure Prediction: AlphaFold, RoseTTAFold, and AI-Driven Structural Biology](../protein-structure-prediction.md)
+- [AI for Protein Structure Prediction: AlphaFold and the Folding Revolution](../ai-for-protein-structure-prediction-alphafold-and-the-folding-revolution.md)

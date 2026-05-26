@@ -130,6 +130,6 @@ Method taxonomy (arxiv 2025): (A) Statistical -- Gaussian copula, Bayesian netwo
 
 ## Related Articles
 
+- [AI for Protein Design: Diffusion Models, Sequence Generation, and Functional Optimization](../ai-for-protein-design-diffusion-models-sequence-generation-and-functional-optimization.md)
 - [AI for Video Surveillance: Intelligent Monitoring, Anomaly Detection, and Privacy-Preserving Analytics](../ai-for-video-surveillance.md)
 - [AI for Data Visualization: Automated Chart Generation, Insight Discovery, and Visual Analytics](../ai-for-visualization.md)
-- [AI Video Generation: Sora, Veo, and the Future of Synthetic Media](../ai-video-generation.md)

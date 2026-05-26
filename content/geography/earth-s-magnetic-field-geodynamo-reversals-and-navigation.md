@@ -44,3 +44,9 @@ Structure: 95% dipole (tilted 11°). Reversals recorded in seafloor magnetic str
 
 ---
 > 本文内容由 AnchorFact Pipeline 生成。
+
+## Related Articles
+
+- [AI for Drone Autonomy: Autonomous Navigation, Swarm Coordination, and Aerial Robotics](../../ai/ai-drone-autonomy.md)
+- [AI for Robot Navigation: SLAM, Visual Odometry, and Autonomous Path Planning](../../ai/ai-for-robot-navigation.md)
+- [AI for Space Exploration: Autonomous Navigation, Earth Observation, and Spacecraft Autonomy](../../ai/ai-for-space-exploration.md)

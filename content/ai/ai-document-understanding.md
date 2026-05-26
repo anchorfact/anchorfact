@@ -111,5 +111,5 @@ Layout analysis: LayoutLMv3 (Microsoft, 2022) combines text, layout (2D position
 ## Related Articles
 
 - [AI for Hyperautomation: RPA, Intelligent Document Processing, and Cognitive Workflows](../ai-for-hyperautomation.md)
+- [AI for Audio Processing: Speech Recognition, Music Generation, and Sound Understanding](../ai-for-audio-processing-speech-recognition-music-generation-and-sound-understanding.md)
 - [AI for Customer Service: Conversational Agents, Ticket Routing, and Intelligent Contact Centers](../ai-customer-service.md)
-- [AI for Document Digitization: Historical Archives, Handwriting Recognition, and Mass Digitization](../ai-document-digitization.md)

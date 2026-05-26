@@ -118,4 +118,4 @@ Defense strategies: input/output filtering, constitutional AI (principle-based s
 
 - [Large Language Models (LLMs)](../llms.md)
 - [Long-Context Language Models: Beyond 1M Tokens](../long-context-models.md)
-- [Low-Resource NLP: Multilingual Models, Endangered Language Preservation, and Translation](../low-resource-nlp.md)
+- [LoRA: Low-Rank Adaptation of Large Language Models](../lora-low-rank-adaptation-of-large-language-models.md)

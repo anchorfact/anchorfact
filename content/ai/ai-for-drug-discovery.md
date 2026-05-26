@@ -99,6 +99,6 @@ AlphaFold3 architecture: diffusion-based model that operates on atomic coordinat
 
 ## Related Articles
 
+- [AI for Drug Discovery: Molecular Docking, Virtual Screening, and De Novo Design](../ai-for-drug-discovery-molecular-docking-virtual-screening-and-de-novo-design.md)
 - [AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation](../ai-content-creation.md)
-- [AI for Science: AlphaFold and the AI-Driven Discovery Revolution](../ai-for-science.md)
-- [AI for Data Visualization: Automated Chart Generation, Insight Discovery, and Visual Analytics](../ai-for-visualization.md)
+- [AI for Chemistry: Reaction Prediction, Retrosynthesis, and Materials Discovery](../ai-for-chemistry-reaction-prediction-retrosynthesis-and-materials-discovery.md)

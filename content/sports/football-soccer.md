@@ -97,4 +97,5 @@ atomic_facts:
 
 ## Related Articles
 
+- [Football (Soccer) Analytics: Expected Goals (xG) and Tactical Data Science](../football-soccer-analytics-expected-goals-xg-and-tactical-data-science.md)
 - [Football (Soccer) Tactics and Formations](../football-tactics.md)

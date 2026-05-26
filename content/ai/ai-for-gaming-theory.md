@@ -119,6 +119,6 @@ DeepNash (Stratego): the game board is 10x10 with 40 pieces per player. Each pie
 
 ## Related Articles
 
+- [Game Theory: Nash Equilibrium, Zero-Sum Games, and Strategic Interaction](../../business/game-theory-nash-equilibrium-zero-sum-games-and-strategic-interaction.md)
 - [Multi-Agent Reinforcement Learning: Cooperation, Competition, and Emergent Strategies](../multi-agent-reinforcement-learning.md)
 - [Real-Time Strategy (RTS) Game Design](../../game-development/real-time-strategy-rts-game-design.md)
-- [Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning](../agentic-ai.md)

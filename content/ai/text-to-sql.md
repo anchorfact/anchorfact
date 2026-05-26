@@ -95,5 +95,5 @@ LLM-based approaches (2023-present): (1) Few-shot prompting -- provide the schem
 ## Related Articles
 
 - [Large Language Models (LLMs)](../llms.md)
+- [LoRA: Low-Rank Adaptation of Large Language Models](../lora-low-rank-adaptation-of-large-language-models.md)
 - [AI Red Teaming: Security Testing for Language Models](../ai-red-teaming-and-safety.md)
-- [Long-Context Language Models: Beyond 1M Tokens](../long-context-models.md)

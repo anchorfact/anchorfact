@@ -93,5 +93,5 @@ Architecture: Broker (central server) + Clients (publishers and subscribers). To
 ## Related Articles
 
 - [Model Context Protocol (MCP)](../../ai/mcp.md)
-- [Hypertext Transfer Protocol (HTTP)](../http-protocol.md)
-- [QUIC Protocol](../quic-protocol.md)
+- [gRPC: Protocol Buffers, HTTP/2 Streaming, and Service Contracts](../grpc-protocol-buffers-http-2-streaming-and-service-contracts.md)
+- [HTTP/3: QUIC Protocol and Next-Generation Web Transport](../http-3-quic-protocol-and-next-generation-web-transport.md)

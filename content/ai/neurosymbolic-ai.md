@@ -109,6 +109,6 @@ Key applications: scientific discovery (AI Feynman deduces physical laws from da
 
 ## Related Articles
 
+- [AI for Mathematical Reasoning: Theorem Proving, Symbolic Computation, and Autoformalization](../ai-for-mathematical-reasoning-theorem-proving-symbolic-computation-and-autoformalization.md)
 - [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../adversarial-machine-learning.md)
 - [Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning](../agentic-ai.md)
-- [AI for Drug Repurposing: Identifying New Uses for Existing Drugs Through Machine Learning](../ai-drug-repurposing.md)

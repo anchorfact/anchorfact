@@ -91,4 +91,4 @@ Linux is an open-source, Unix-like operating system kernel created by Linus Torv
 
 - [Linux File Permissions](../linux-file-permissions.md)
 - [Linux Kernel Modules](../linux-kernel-modules.md)
-- [Linux Process Management](../linux-process-management.md)
+- [Linux Kernel: Process Scheduling, Memory Management, and System Calls](../linux-kernel-process-scheduling-memory-management-and-system-calls.md)

@@ -97,3 +97,7 @@ TPU v5p (Google, 2023): 459 TFLOPS BF16 per chip, connected via ICI (Inter-Chip 
 - NVIDIA CUDA Programming Guide
 - MLPerf Training Benchmarks
 - SemiAnalysis: AI Hardware Reports
+
+## Related Articles
+
+- [Deep Learning Hardware: GPUs, TPUs, and AI Accelerator Architecture](../../computer-science/deep-learning-hardware-gpus-tpus-and-ai-accelerator-architecture.md)

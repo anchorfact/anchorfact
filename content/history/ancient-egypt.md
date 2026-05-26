@@ -125,4 +125,4 @@ Key periods: Old Kingdom (pyramid age, Great Pyramid of Giza built for Khufu), M
 
 - [Ancient Greek Literature](../../arts/ancient-greek-literature.md)
 - [Ancient Egyptian Civilization: Pharaohs, Pyramids, and Afterlife](../ancient-egyptian-civilization.md)
-- [Ancient Mesopotamia: Cradle of Civilization](../ancient-mesopotamia.md)
+- [Ancient Greece: Democracy, Philosophy, and the Persian Wars](../ancient-greece-democracy-philosophy-and-the-persian-wars.md)

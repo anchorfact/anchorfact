@@ -50,3 +50,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Diffusion Models in Depth: From DDPM to Stable Diffusion](../latent-diffusion-models.md)
+- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../3d-human-modeling.md)
+- [AI Art and Creativity: Generative Models and Authorship](../ai-art-and-creativity.md)

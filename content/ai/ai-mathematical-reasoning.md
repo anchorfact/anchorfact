@@ -112,6 +112,6 @@ AlphaGeometry (Nature 2024): trained on 100M synthetic geometry theorems generat
 
 ## Related Articles
 
+- [AI for Mathematical Reasoning: Theorem Proving, Symbolic Computation, and Autoformalization](../ai-for-mathematical-reasoning-theorem-proving-symbolic-computation-and-autoformalization.md)
 - [Program Synthesis and Formal Verification: Neural Theorem Proving with LLMs](../program-synthesis-verification.md)
 - [Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning](../agentic-ai.md)
-- [AI for Legal: Contract Analysis, Legal Reasoning, and Regulatory Compliance](../ai-for-legal.md)

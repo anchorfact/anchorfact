@@ -103,3 +103,7 @@ Epicenter: point on surface above focus (hypocenter). P-waves (primary, fast, co
 ## Further Reading
 
 - [Earthquakes (Bolt, 5th Ed)](https://us.macmillan.com/books/9780716756187/earthquakes)
+
+## Related Articles
+
+- [Pacific Ring of Fire: Volcanoes, Earthquakes, and Plate Boundaries](../../geography/pacific-ring-of-fire-volcanoes-earthquakes-and-plate-boundaries.md)

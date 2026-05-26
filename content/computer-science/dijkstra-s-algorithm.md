@@ -117,3 +117,5 @@ Algorithm: maintain distance array (∞ initially), extract min from priority qu
 ## Related Articles
 
 - [AI for Quantum Computing: Quantum Error Correction, Circuit Optimization, and Algorithm Discovery](../../ai/ai-quantum-computing.md)
+- [Paxos Algorithm: Consensus in Distributed Systems](../paxos-algorithm-consensus-in-distributed-systems.md)
+- [Raft Consensus Algorithm: Leader Election, Log Replication, and Safety](../raft-consensus-algorithm-leader-election-log-replication-and-safety.md)

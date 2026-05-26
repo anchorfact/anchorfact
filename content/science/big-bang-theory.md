@@ -112,6 +112,6 @@ Timeline: Planck epoch (first 10⁻⁴³ seconds, physics unknown), inflation (1
 
 ## Related Articles
 
+- [The Big Bang: Cosmic Microwave Background and the Origin of the Universe](../the-big-bang-cosmic-microwave-background-and-the-origin-of-the-universe.md)
 - [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
 - [Music Theory Basics](../../arts/music-theory-basics.md)
-- [Leadership Theory and Organizational Behavior](../../business/leadership-and-organizational-behavior.md)

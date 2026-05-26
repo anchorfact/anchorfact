@@ -44,3 +44,9 @@ Area 62,000 km², 60% glaciated. West Spitsbergen Current keeps west coast ice-f
 
 ---
 > 本文内容由 AnchorFact Pipeline 生成。
+
+## Related Articles
+
+- [Antarctica: The Frozen Continent's Geography and Research Stations](../antarctica-the-frozen-continent-s-geography-and-research-stations.md)
+- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../../ai/ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)
+- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)

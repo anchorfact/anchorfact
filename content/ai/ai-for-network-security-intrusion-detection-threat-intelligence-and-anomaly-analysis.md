@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Network Intrusion Detection: AI-Powered Anomaly Detection and Zero-Day Threat Identification](../network-intrusion-detection.md)
+- [AI for Audio Processing: Sound Event Detection, Acoustic Scene Analysis, and Environmental Intelligence](../ai-for-audio-processing.md)
+- [AI for Election Integrity: Disinformation Detection, Voter Analytics, and Electoral Security](../ai-election-integrity.md)

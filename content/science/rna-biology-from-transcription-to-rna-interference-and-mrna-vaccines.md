@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [AI for Genomics: Single-Cell Foundation Models and RNA Biology](../../ai/ai-for-genomics.md)
+- [Multi-Omics Integration: AI-Driven Systems Biology from Genomics to Proteomics](../../ai/multi-omics-integration.md)
+- [Protein Structure Prediction: AlphaFold, RoseTTAFold, and AI-Driven Structural Biology](../../ai/protein-structure-prediction.md)

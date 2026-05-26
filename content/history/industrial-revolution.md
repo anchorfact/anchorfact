@@ -104,6 +104,6 @@ Key innovations: steam engine (Watt, 1769), spinning jenny, cotton gin (Whitney,
 
 ## Related Articles
 
+- [Industrial Revolution: Steam, Factories, and the Transformation of Society](../industrial-revolution-steam-factories-and-the-transformation-of-society.md)
+- [AI for Protein Structure Prediction: AlphaFold and the Folding Revolution](../../ai/ai-for-protein-structure-prediction-alphafold-and-the-folding-revolution.md)
 - [AI for Science: AlphaFold and the AI-Driven Discovery Revolution](../../ai/ai-for-science.md)
-- [AI Protein Design: RFDiffusion, ProteinMPNN, and the Nobel Revolution](../../ai/ai-protein-design.md)
-- [American Revolution](../american-revolution.md)

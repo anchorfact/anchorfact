@@ -99,3 +99,7 @@ Arctic warming 4x faster than global average (Arctic amplification). Permafrost:
 ## Further Reading
 
 - [The Arctic: A Guide to Coastal Wildlife (Tony Soper)](https://www.bradtguides.com/product/the-arctic/)
+
+## Related Articles
+
+- [Svalbard: The Arctic Archipelago's Geography and Climate Research](../svalbard-the-arctic-archipelago-s-geography-and-climate-research.md)

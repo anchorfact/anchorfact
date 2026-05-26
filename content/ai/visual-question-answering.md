@@ -106,6 +106,6 @@ VQA v2 dataset: 1.1M questions on 200K COCO images, balanced to remove language 
 
 ## Related Articles
 
+- [Multimodal AI: Vision-Language Models from CLIP to GPT-4V](../multimodal-ai-vision-language-models-from-clip-to-gpt-4v.md)
 - [Video Understanding: Action Recognition, Temporal Action Detection, and Video-Language Models](../video-understanding.md)
 - [Vision-Language-Action Models: Unified Multimodal Foundation Models for Embodied AI](../vision-language-action-models.md)
-- [AI for Remote Sensing: Foundation Models, Satellite Image Analysis, and Earth Observation](../ai-for-remote-sensing.md)

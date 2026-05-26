@@ -109,3 +109,7 @@ Schwarzschild radius: 2GM/c² — defines event horizon. Spaghettification: extr
 ## Further Reading
 
 - [A Brief History of Time (Stephen Hawking)](https://www.penguinrandomhouse.com/books/26703/a-brief-history-of-time-by-stephen-hawking/)
+
+## Related Articles
+
+- [Options Pricing: Black-Scholes Model, Greeks, and Derivatives Markets](../../business/options-pricing-black-scholes-model-greeks-and-derivatives-markets.md)

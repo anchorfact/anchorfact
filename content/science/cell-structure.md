@@ -119,5 +119,5 @@ Mitochondria: 'powerhouse of the cell' — oxidative phosphorylation produces AT
 ## Related Articles
 
 - [AI for Genomics: Single-Cell Foundation Models and RNA Biology](../../ai/ai-for-genomics.md)
+- [AI for Protein Structure Prediction: AlphaFold and the Folding Revolution](../../ai/ai-for-protein-structure-prediction-alphafold-and-the-folding-revolution.md)
 - [Protein Structure Prediction: AlphaFold, RoseTTAFold, and AI-Driven Structural Biology](../../ai/protein-structure-prediction.md)
-- [Corporate Finance: Capital Structure and Valuation](../../business/corporate-finance.md)

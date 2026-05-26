@@ -85,6 +85,6 @@ Commands: `lsmod` (list), `modprobe` (load with deps), `rmmod` (remove), `modinf
 
 ## Related Articles
 
+- [Linux Kernel: Process Scheduling, Memory Management, and System Calls](../linux-kernel-process-scheduling-memory-management-and-system-calls.md)
 - [Linux File Permissions](../linux-file-permissions.md)
 - [Linux Process Management](../linux-process-management.md)
-- [Linux](../linux.md)

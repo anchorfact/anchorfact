@@ -21,7 +21,7 @@ category: ai
 completeness: 0.88
 confidence: high
 conflict_of_interest: none_declared
-created_date: "2026-05-22"
+created_date: '2026-05-22'
 data_period: static
 derived_from_human_seed: true
 disputed_statements:
@@ -35,7 +35,7 @@ known_gaps:
   - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
   - Recent developments from 2025-2026 may not be reflected
 language: en
-last_verified: "2026-05-22"
+last_verified: '2026-05-26'
 primary_sources:
   - authors:
       - Kingma, Diederik P.
@@ -54,7 +54,7 @@ primary_sources:
     type: textbook
     url: https://www.deeplearningbook.org/contents/autoencoders.html
     year: 2016
-  - title: "A Comprehensive Survey of Self-Supervised Learning: From Generative to Contrastive Approaches"
+  - title: 'A Comprehensive Survey of Self-Supervised Learning: From Generative to Contrastive Approaches'
     type: survey_paper
     year: 2025
     authors:
@@ -68,6 +68,24 @@ primary_sources:
       - multiple
     institution: IEEE TPAMI
     url: https://doi.org/10.1109/TPAMI.2025.3567842
+  - title: Autoencoders
+    authors:
+      - Dor Bank
+      - Noam Koenigstein
+      - Raja Giryes
+    year: 2020
+    url: https://arxiv.org/abs/2003.05991v2
+    type: academic_paper
+    institution: arXiv
+  - title: Isometric Autoencoders
+    authors:
+      - Amos Gropp
+      - Matan Atzmon
+      - Yaron Lipman
+    year: 2020
+    url: https://arxiv.org/abs/2006.09289v2
+    type: academic_paper
+    institution: arXiv
 schema_type: TechArticle
 secondary_sources:
   - authors:
@@ -95,7 +113,7 @@ secondary_sources:
     type: academic_paper
     url: https://arxiv.org/abs/1312.6114
     year: 2014
-  - title: "A Comprehensive Survey of Autoencoders: From Classic to Modern Architectures"
+  - title: 'A Comprehensive Survey of Autoencoders: From Classic to Modern Architectures'
     type: survey_paper
     year: 2025
     authors:
@@ -109,7 +127,7 @@ secondary_sources:
       - He, Kaiming
     institution: Meta AI / CVPR
     url: https://arxiv.org/abs/2111.06377
-  - title: "Self-Supervised Learning: Generative or Contrastive (Liu et al., IEEE TKDE)"
+  - title: 'Self-Supervised Learning: Generative or Contrastive (Liu et al., IEEE TKDE)'
     type: survey_paper
     year: 2025
     authors:
@@ -117,8 +135,9 @@ secondary_sources:
     institution: IEEE TKDE
     url: https://doi.org/10.1109/TKDE.2025.3567842
 title: Autoencoders
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 
 Autoencoders are unsupervised neural networks that learn compressed representations by reconstructing input: Encoder → compressed latent space → Decoder → reconstruction. They learn the most salient features by forcing data through a bottleneck. Applications: dimensionality reduction, denoising, anomaly detection.

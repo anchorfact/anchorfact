@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [AI Art and Creativity: Generative Models and Authorship](../ai-art-and-creativity.md)
+- [AI for Astronomy: Exoplanet Detection, Galaxy Classification, and Computational Astrophysics](../ai-for-astronomy.md)
+- [AI for Chemistry: Reaction Prediction, Retrosynthesis, and Computational Chemistry](../ai-for-chemistry.md)

@@ -47,6 +47,6 @@ Key models: (1) GROW model (Goal, Reality, Options, Will) — the most widely us
 
 ## Related Articles
 
+- [Depression: Neurobiology, Diagnosis, and Evidence-Based Treatments](../../health/depression-neurobiology-diagnosis-and-evidence-based-treatments.md)
 - [AI for Digital Forensics: Deepfake Provenance, Evidence Authentication, and Digital Crime Investigation](../../ai/ai-digital-forensics.md)
 - [AI for Mental Health: LLM-Based Therapy, Digital Interventions, and Clinical Trials](../../ai/ai-for-mental-health.md)
-- [AI Language Translation and Interpretation: LLM-Based Translation, Simultaneous Interpretation, and Quality Estimation](../../ai/ai-language-translation-interpretation.md)

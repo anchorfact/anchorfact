@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Particle Physics and the Standard Model](../particle-physics.md)
+- [The Standard Model of Particle Physics: Quarks, Leptons, and Fundamental Forces](../the-standard-model-of-particle-physics-quarks-leptons-and-fundamental-forces.md)
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../../ai/ai-for-data-curation.md)

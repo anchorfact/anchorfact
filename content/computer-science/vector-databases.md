@@ -98,3 +98,5 @@ Embedding: text/image/audio → vector (768-3072 dimensions). Similarity metrics
 ## Related Articles
 
 - [Vector Databases: Approximate Nearest Neighbor Search, Embedding Storage, and Retrieval at Scale](../../ai/vector-databases.md)
+- [Columnar Databases: Parquet, ORC, and Analytical Workloads](../columnar-databases-parquet-orc-and-analytical-workloads.md)
+- [Graph Databases: Neo4j, Property Graphs, and Cypher Query Language](../graph-databases-neo4j-property-graphs-and-cypher-query-language.md)

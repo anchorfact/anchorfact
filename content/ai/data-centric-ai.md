@@ -101,4 +101,4 @@ Active learning strategies: uncertainty sampling (query examples where model is 
 
 - [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../ai-for-data-curation.md)
 - [AI Training Data Curation: Quality at Scale](../ai-training-data-curation.md)
-- [Synthetic Data in AI Training](../synthetic-data-training.md)
+- [Large Language Model Training: Scaling Laws, Data Curation, and Compute](../large-language-model-training-scaling-laws-data-curation-and-compute.md)

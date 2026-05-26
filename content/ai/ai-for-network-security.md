@@ -92,6 +92,6 @@ DDoS mitigation: volumetric attacks flood targets with traffic. ML models detect
 
 ## Related Articles
 
+- [AI for Network Security: Intrusion Detection, Threat Intelligence, and Anomaly Analysis](../ai-for-network-security-intrusion-detection-threat-intelligence-and-anomaly-analysis.md)
 - [Network Intrusion Detection: AI-Powered Anomaly Detection and Zero-Day Threat Identification](../network-intrusion-detection.md)
 - [Zero Trust Architecture](../../computer-science/zero-trust-architecture.md)
-- [Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning](../agentic-ai.md)

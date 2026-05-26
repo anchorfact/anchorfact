@@ -44,3 +44,9 @@ Subduction: Pacific Plate beneath North American, Philippine Sea, Australian; Na
 
 ---
 > 本文内容由 AnchorFact Pipeline 生成。
+
+## Related Articles
+
+- [Himalayas: Geology, Glaciers, and Geopolitical Boundaries](../himalayas-geology-glaciers-and-geopolitical-boundaries.md)
+- [Plate Tectonics: The Unifying Theory of Earth Sciences](../plate-tectonics-theory.md)
+- [Continental Drift and Plate Tectonics: Wegener to Modern Geodynamics](../../science/continental-drift-and-plate-tectonics-wegener-to-modern-geodynamics.md)

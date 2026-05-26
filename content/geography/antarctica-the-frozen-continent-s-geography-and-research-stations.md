@@ -44,3 +44,9 @@ Area 14.2M km². Ice avg 2,160m thick, max 4,776m. Lake Vostok: subglacial, isol
 
 ---
 > 本文内容由 AnchorFact Pipeline 生成。
+
+## Related Articles
+
+- [Svalbard: The Arctic Archipelago's Geography and Climate Research](../svalbard-the-arctic-archipelago-s-geography-and-climate-research.md)
+- [AI for Legal Research: Case Law Search, Citation Analysis, and Litigation Analytics](../../ai/ai-legal-research.md)
+- [African Geography](../african-geography.md)

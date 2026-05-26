@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: ai
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-22'
 generation_method: ai_structured
 conflict_of_interest: none_declared
@@ -94,6 +94,7 @@ secondary_sources:
     doi: 10.48550/arXiv.1907.11692
     institution: Facebook AI / University of Washington
 ---
+
 
 
 
@@ -223,6 +224,6 @@ This split — BERT for understanding, GPT for generation — defined NLP for se
 
 ## Related Articles
 
+- [BERT: Bidirectional Encoder Representations from Transformers](../bert-bidirectional-encoder-representations-from-transformers.md)
+- [Mixture of Experts: Sparse Activation for Scaling Transformers](../mixture-of-experts-sparse-activation-for-scaling-transformers.md)
 - [Neural Rendering: NeRF, View Synthesis, and Implicit Scene Representations](../neural-rendering.md)
-- [State Space Models: Mamba, Linear-Time Sequence Modeling, and Alternatives to Transformers](../state-space-models.md)
-- [Transformer Variants: From Encoder-Decoder to Mamba State Space Models](../transformer-architecture-variants.md)

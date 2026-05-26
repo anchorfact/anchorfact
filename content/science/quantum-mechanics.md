@@ -106,3 +106,4 @@ Double-slit experiment: single particles create interference patterns — wave-p
 
 - [AI for Quantum Computing: Quantum Error Correction, Circuit Optimization, and Algorithm Discovery](../../ai/ai-quantum-computing.md)
 - [Quantum Machine Learning: Tensor Networks, QNNs, and Error Mitigation](../../ai/quantum-machine-learning.md)
+- [Quantum Entanglement: Theory, Bell's Theorem, and Quantum Information](../quantum-entanglement-theory-bell-s-theorem-and-quantum-information.md)

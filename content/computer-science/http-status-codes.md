@@ -82,4 +82,5 @@ HTTP status codes are three-digit numbers indicating request outcome. 1xx (Infor
 
 ## Related Articles
 
+- [Error Correction Codes: Hamming, Reed-Solomon, and LDPC](../error-correction-codes-hamming-reed-solomon-and-ldpc.md)
 - [Hypertext Transfer Protocol (HTTP)](../http-protocol.md)

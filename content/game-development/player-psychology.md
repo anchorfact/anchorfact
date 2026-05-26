@@ -347,5 +347,5 @@ secondary_sources:
 ## Related Articles
 
 - [AI for Sports Analytics: Player Tracking, Performance Prediction, and Tactical Analysis](../../ai/ai-sports-analytics.md)
+- [Behavioral Economics: Kahneman, Tversky, and the Psychology of Irrational Decisions](../../business/behavioral-economics-kahneman-tversky-and-the-psychology-of-irrational-decisions.md)
 - [The Psychology of Decision Making](../../self-improvement/decision-making-psychology.md)
-- [Resilience: The Psychology of Bouncing Back](../../self-improvement/resilience-the-psychology-of-bouncing-back.md)

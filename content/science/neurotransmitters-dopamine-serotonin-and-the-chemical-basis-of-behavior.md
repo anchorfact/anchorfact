@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Leadership Theory and Organizational Behavior](../../business/leadership-and-organizational-behavior.md)
+- [Marketing: Strategy, Consumer Behavior, and Digital Channels](../../business/marketing-fundamentals.md)
+- [Animal Behavior](../animal-behavior.md)

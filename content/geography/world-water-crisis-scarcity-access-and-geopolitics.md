@@ -44,3 +44,9 @@ updated: '2026-05-25'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [AI for Crisis Hotlines: Suicide Prevention Chatbots, Emotional Support AI, and Risk Detection](../../ai/ai-for-crisis-hotlines.md)
+- [AI for Humanitarian Aid: Crisis Mapping, Damage Assessment, and Disaster Response Optimization](../../ai/ai-for-humanitarian-aid.md)
+- [AI for Water Management: Leak Detection, Quality Monitoring, and Smart Irrigation](../../ai/ai-water-management.md)

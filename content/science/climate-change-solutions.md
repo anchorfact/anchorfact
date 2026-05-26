@@ -73,5 +73,5 @@ Solar: costs dropped 90% since 2010. Wind: onshore cheapest energy source per kW
 ## Related Articles
 
 - [Climate Change](../climate-change.md)
+- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../../ai/ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)
 - [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
-- [AI for Satellite Imagery: Object Detection, Change Detection, and Global Monitoring](../../ai/ai-satellite-imagery.md)

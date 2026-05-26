@@ -144,5 +144,5 @@ Precision = TP/(TP+FP) — when model predicts positive, how often is it correct
 ## Related Articles
 
 - [GPT (Generative Pre-trained Transformer) Model Family](../gpt-models.md)
+- [Large Language Model Training: Scaling Laws, Data Curation, and Compute](../large-language-model-training-scaling-laws-data-curation-and-compute.md)
 - [Model Context Protocol (MCP)](../mcp.md)
-- [Model Compression: Pruning, Quantization, and Distillation](../model-compression.md)

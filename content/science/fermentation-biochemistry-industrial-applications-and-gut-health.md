@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Plasma Physics: Fusion Energy, Space Plasmas, and Industrial Applications](../plasma-physics-fusion-energy-space-plasmas-and-industrial-applications.md)
+- [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../../ai/ai-air-quality.md)
+- [AI for Electronic Health Records: Clinical NLP, Coding Automation, and Physician Burnout Reduction](../../ai/ai-electronic-health-records.md)

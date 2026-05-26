@@ -108,6 +108,6 @@ Key models: (1) AlphaFold2 (DeepMind, 2020-2021) — MSA + Evoformer + Structure
 
 ## Related Articles
 
+- [AI for Protein Structure Prediction: AlphaFold and the Folding Revolution](../ai-for-protein-structure-prediction-alphafold-and-the-folding-revolution.md)
+- [AI for Genomics: Variant Calling, Gene Expression Prediction, and Protein-DNA Binding](../ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md)
 - [AI for Science: AlphaFold and the AI-Driven Discovery Revolution](../ai-for-science.md)
-- [AI for Weather Forecasting: Data-Driven Numerical Weather Prediction and Nowcasting](../ai-for-weather-forecasting.md)
-- [Multi-Omics Integration: AI-Driven Systems Biology from Genomics to Proteomics](../multi-omics-integration.md)

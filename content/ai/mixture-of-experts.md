@@ -175,4 +175,5 @@ With 8 experts and top-2 gating, total parameters grow ~4× compared to a dense 
 
 ## Related Articles
 
+- [Mixture of Experts: Sparse Activation for Scaling Transformers](../mixture-of-experts-sparse-activation-for-scaling-transformers.md)
 - [Model Merging, Mixture of Experts, and Efficient Ensembling](../model-merging-and-ensembling.md)

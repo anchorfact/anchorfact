@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Continental Drift and Plate Tectonics: Wegener to Modern Geodynamics](../continental-drift-and-plate-tectonics-wegener-to-modern-geodynamics.md)
+- [Plate Tectonics: The Unifying Theory of Earth Sciences](../../geography/plate-tectonics-theory.md)
+- [Continental Drift](../continental-drift.md)

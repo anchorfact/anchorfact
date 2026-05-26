@@ -44,3 +44,9 @@ Coral Triangle Initiative (2009): 6-nation partnership. Ecosystems: coral reefs,
 
 ---
 > 本文内容由 AnchorFact Pipeline 生成。
+
+## Related Articles
+
+- [Mediterranean Sea: Physical Geography, Biodiversity, and Marine Protected Areas](../mediterranean-sea-physical-geography-biodiversity-and-marine-protected-areas.md)
+- [AI for Ocean Monitoring: Marine Life Detection, Plastic Pollution Tracking, and Oceanographic AI](../../ai/ai-for-ocean-monitoring.md)
+- [AI for Wildlife Conservation: Camera Trap Analysis, Species Classification, and Biodiversity Monitoring](../../ai/ai-for-wildlife-conservation.md)

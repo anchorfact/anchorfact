@@ -109,4 +109,5 @@ CI: automated builds + tests on every commit. CD: automated deployment after tes
 
 ## Related Articles
 
+- [OpenGL and Vulkan: Graphics Pipeline, Shaders, and GPU Architecture](../opengl-and-vulkan-graphics-pipeline-shaders-and-gpu-architecture.md)
 - [game art pipeline](../../game-development/game-art-pipeline.md)

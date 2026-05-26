@@ -44,3 +44,9 @@ updated: '2026-05-25'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Parkour: Movement Efficiency, Biomechanics, and Urban Athletics](../parkour-movement-efficiency-biomechanics-and-urban-athletics.md)
+- [Tennis Biomechanics: Serve Kinematics and Groundstroke Efficiency](../tennis-biomechanics-serve-kinematics-and-groundstroke-efficiency.md)
+- [Affective Computing: Multimodal Emotion Recognition, Sentiment Analysis, and Empathetic AI](../../ai/affective-computing.md)

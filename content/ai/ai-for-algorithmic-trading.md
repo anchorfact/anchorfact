@@ -92,6 +92,6 @@ Deep RL for trading: the MDP formulation -- state (price history, technical indi
 
 ## Related Articles
 
+- [AI for Chip Design: Reinforcement Learning for EDA and Floorplanning](../ai-for-chip-design-reinforcement-learning-for-eda-and-floorplanning.md)
 - [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../ai-for-chip-design.md)
 - [AI in Finance: Trading, Risk, and Fraud Detection](../ai-in-finance.md)
-- [Deep Reinforcement Learning Algorithms: PPO, SAC, Dreamer, and Decision Transformer](../deep-reinforcement-learning-algorithms.md)

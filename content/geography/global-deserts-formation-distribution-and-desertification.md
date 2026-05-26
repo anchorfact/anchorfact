@@ -44,3 +44,9 @@ Formation: subtropical (Hadley cells), rain shadow (Atacama, Gobi), coastal (Nam
 
 ---
 > 本文内容由 AnchorFact Pipeline 生成。
+
+## Related Articles
+
+- [AI Regulation: The 2024-2026 Global Landscape](../../ai/ai-regulation-landscape.md)
+- [AI for Satellite Imagery: Object Detection, Change Detection, and Global Monitoring](../../ai/ai-satellite-imagery.md)
+- [Global Climate Zones and Terrestrial Biomes](../climate-zones-and-biomes.md)

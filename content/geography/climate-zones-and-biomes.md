@@ -125,4 +125,4 @@ Climate change shifts biome boundaries: boreal forests advance into tundra (Arct
 
 - [Climate Zones](../climate-zones.md)
 - [World Climate Zones: Classification and Characteristics](../world-climate-zones-classification-and-characteristics.md)
-- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
+- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../../ai/ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)

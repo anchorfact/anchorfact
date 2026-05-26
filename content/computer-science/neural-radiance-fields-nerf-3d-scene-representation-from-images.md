@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [NeRF: Neural Radiance Fields for View Synthesis](../../ai/nerf-neural-radiance-fields-for-view-synthesis.md)
+- [Neural Rendering: NeRF, View Synthesis, and Implicit Scene Representations](../../ai/neural-rendering.md)
+- [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../../ai/3d-generation-gaussian-splatting.md)

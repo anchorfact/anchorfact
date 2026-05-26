@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Neural Rendering: NeRF, View Synthesis, and Implicit Scene Representations](../neural-rendering.md)
+- [Neural Radiance Fields (NeRF): 3D Scene Representation from Images](../../computer-science/neural-radiance-fields-nerf-3d-scene-representation-from-images.md)
+- [Program Synthesis and Formal Verification: Neural Theorem Proving with LLMs](../program-synthesis-verification.md)

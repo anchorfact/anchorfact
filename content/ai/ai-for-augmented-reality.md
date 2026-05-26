@@ -96,6 +96,6 @@ Apple Vision Pro: R1 chip dedicated to real-time sensor processing -- ingesting 
 
 ## Related Articles
 
+- [AI for Augmented Reality: Real-Time Object Detection, Depth Estimation, and Scene Understanding](../ai-for-augmented-reality-real-time-object-detection-depth-estimation-and-scene-understanding.md)
 - [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../3d-generation-gaussian-splatting.md)
 - [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../ai-call-center.md)
-- [AI for Digital Twins: Real-Time Simulation, Predictive Maintenance, and System Optimization](../ai-for-digital-twins.md)

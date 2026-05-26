@@ -101,6 +101,6 @@ Concept Bottleneck Models (CBMs): architecture forces predictions to pass throug
 
 ## Related Articles
 
+- [Diffusion Models: DDPM, Stable Diffusion, and Score-Based Generative Modeling](../diffusion-models-ddpm-stable-diffusion-and-score-based-generative-modeling.md)
 - [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../3d-human-modeling.md)
 - [AI Art and Creativity: Generative Models and Authorship](../ai-art-and-creativity.md)
-- [AI Democratization: Open-Source Models, Low-Code AI, and Accessible Machine Learning](../ai-for-democratization.md)

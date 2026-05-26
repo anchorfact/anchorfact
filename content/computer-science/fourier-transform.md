@@ -93,4 +93,8 @@ Continuous FT: F(ω) = ∫ f(t)e^(-iωt) dt. Discrete FT: X_k = Σ x_n e^(-i2πk
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [Digital Signal Processing: Sampling, Fourier Transform, and Filter Design](../digital-signal-processing-sampling-fourier-transform-and-filter-design.md)

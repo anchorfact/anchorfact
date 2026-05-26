@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [AI for Intellectual Property: Patent Search, Prior Art Analysis, and Trademark Intelligence](../../ai/ai-ip-patents.md)
+- [CAP Theorem in Practice: Consistency, Availability, and Partition Tolerance Trade-offs](../../computer-science/cap-theorem-in-practice-consistency-availability-and-partition-tolerance-trade-offs.md)
+- [Graph Databases: Neo4j, Property Graphs, and Cypher Query Language](../../computer-science/graph-databases-neo4j-property-graphs-and-cypher-query-language.md)

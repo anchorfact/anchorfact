@@ -76,3 +76,4 @@ Galaxy types: spiral (Milky Way), elliptical, irregular. Supermassive black hole
 ## Related Articles
 
 - [Astronomy and Cosmology: From Solar System to the Universe](../astronomy-and-cosmology.md)
+- [The Big Bang: Cosmic Microwave Background and the Origin of the Universe](../the-big-bang-cosmic-microwave-background-and-the-origin-of-the-universe.md)

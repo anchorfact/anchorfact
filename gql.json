@@ -1,0 +1,1 @@
+{"query":"{ viewer { zones(filter: {zoneTag: \"6045b8eae7613ee0b76a689c61f85422\"}) { httpRequests1dGroups(filter: {date_gt: \"2026-05-24\"}, limit:3,orderBy:[date_ASC]) { dimensions { date } sum { requests pageViews bytes cachedRequests threats } } } } }"}

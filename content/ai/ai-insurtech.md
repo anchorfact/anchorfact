@@ -108,5 +108,5 @@ Lemonade: full-stack AI insurer. AI chatbot handles everything from quote to cla
 ## Related Articles
 
 - [AI Document Understanding: Layout Parsing, Structured Extraction, and Intelligent Document Processing](../ai-document-understanding.md)
+- [AI for Audio Processing: Speech Recognition, Music Generation, and Sound Understanding](../ai-for-audio-processing-speech-recognition-music-generation-and-sound-understanding.md)
 - [AI for Audio Processing: Sound Event Detection, Acoustic Scene Analysis, and Environmental Intelligence](../ai-for-audio-processing.md)
-- [AI for Crisis Hotlines: Suicide Prevention Chatbots, Emotional Support AI, and Risk Detection](../ai-for-crisis-hotlines.md)

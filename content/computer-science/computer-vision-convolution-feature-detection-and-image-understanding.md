@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [AI for Workplace Safety: Computer Vision Monitoring, Fall Detection, and Hazard Prevention](../../ai/ai-workplace-safety.md)
+- [Visual Question Answering: Vision-Language Models for Image Understanding and Reasoning](../../ai/visual-question-answering.md)
+- [AI for Augmented Reality: Real-Time Object Detection, Depth Estimation, and Scene Understanding](../../ai/ai-for-augmented-reality-real-time-object-detection-depth-estimation-and-scene-understanding.md)

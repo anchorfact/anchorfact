@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [AI for Chemistry: Reaction Prediction, Retrosynthesis, and Computational Chemistry](../ai-for-chemistry.md)
+- [AI for Drug Discovery: AlphaFold, Molecular Generation, and Generative Chemistry](../ai-for-drug-discovery.md)
+- [AI for Materials Science: GNoME, Crystal Discovery, and Materials Informatics](../ai-for-materials-science.md)

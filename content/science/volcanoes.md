@@ -88,3 +88,7 @@ VEI (Volcanic Explosivity Index): 0-8 logarithmic scale. Mount Tambora (1815, VE
 ## Further Reading
 
 - [Volcanoes: Global Perspectives (Lockwood, Hazlett, de la Cruz-Reyna, 2nd Ed)](https://www.wiley.com/en-us/Volcanoes%3A+Global+Perspectives%2C+2nd+Edition-p-9781119477532)
+
+## Related Articles
+
+- [Pacific Ring of Fire: Volcanoes, Earthquakes, and Plate Boundaries](../../geography/pacific-ring-of-fire-volcanoes-earthquakes-and-plate-boundaries.md)

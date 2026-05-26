@@ -44,3 +44,7 @@ Key findings: (1) Grit predicts spelling bee performance (r=0.30, controlling fo
 
 ---
 > 本文内容由 AnchorFact Agent Pipeline 自动生成初稿并人工审核。来源已验证可访问。
+
+## Related Articles
+
+- [Cycling: Aerodynamics, Power Output, and Peloton Dynamics](../../sports/cycling-aerodynamics-power-output-and-peloton-dynamics.md)

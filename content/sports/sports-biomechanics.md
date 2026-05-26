@@ -107,6 +107,6 @@ Motion capture (optical markers, IMU sensors) generates 3D kinematic data. Inver
 
 ## Related Articles
 
+- [Combat Sports: Biomechanics of Striking and Grappling](../combat-sports-biomechanics-of-striking-and-grappling.md)
+- [Parkour: Movement Efficiency, Biomechanics, and Urban Athletics](../parkour-movement-efficiency-biomechanics-and-urban-athletics.md)
 - [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../../ai/3d-human-modeling.md)
-- [AI for Sports Analytics: Player Tracking, Performance Prediction, and Tactical Analysis](../../ai/ai-sports-analytics.md)
-- [Cognitive Architectures: ACT-R, Soar, and Computational Models of Human-Like Reasoning](../../ai/cognitive-architectures.md)

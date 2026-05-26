@@ -45,3 +45,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [AI for Mathematical Reasoning: Theorem Proving with Lean, AlphaProof, and Formal Mathematics](../../ai/ai-mathematical-reasoning.md)
+- [Decentralized AI: Distributed Inference, Peer-to-Peer Networks, and Blockchain Integration](../../ai/decentralized-ai.md)
+- [Multi-Omics Integration: AI-Driven Systems Biology from Genomics to Proteomics](../../ai/multi-omics-integration.md)

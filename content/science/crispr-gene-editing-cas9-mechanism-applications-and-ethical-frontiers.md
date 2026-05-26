@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Graph Neural Networks: Message Passing, Applications, and Frontiers](../../ai/graph-neural-networks-message-passing-applications-and-frontiers.md)
+- [AI for Genomics: Variant Calling, Gene Expression Prediction, and Protein-DNA Binding](../../ai/ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md)
+- [Attention Mechanism](../../ai/attention-mechanism.md)

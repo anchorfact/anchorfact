@@ -95,5 +95,5 @@ LLM cybersecurity applications: vulnerability detection (CodeBERT, ChatGPT for c
 ## Related Articles
 
 - [Network Intrusion Detection: AI-Powered Anomaly Detection and Zero-Day Threat Identification](../network-intrusion-detection.md)
+- [AI for Network Security: Intrusion Detection, Threat Intelligence, and Anomaly Analysis](../ai-for-network-security-intrusion-detection-threat-intelligence-and-anomaly-analysis.md)
 - [Information Extraction: NER, Relation Extraction, and LLM-Powered IE](../information-extraction.md)
-- [Cybersecurity: Threats, Cryptography, and Defense](../../computer-science/cybersecurity-fundamentals.md)

@@ -91,6 +91,6 @@ PurpleAir: 30,000+ sensors, largest air quality network. LM (Laser + ML) correct
 
 ## Related Articles
 
+- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)
 - [AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition](../ai-for-food-science.md)
 - [AI for Ocean Monitoring: Marine Life Detection, Plastic Pollution Tracking, and Oceanographic AI](../ai-for-ocean-monitoring.md)
-- [AI for Public Health: Disease Surveillance, Outbreak Prediction, and Population Health Analytics](../ai-public-health.md)

@@ -5,7 +5,7 @@ schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -91,6 +91,7 @@ secondary_sources:
 updated: '2026-05-24'
 ---
 
+
 ## TL;DR
 AI predicts supply chain disruptions before they happen -- monitoring millions of signals for factory fires, port strikes, and supplier bankruptcies across multi-tier global supply chains. From Resilinc to o9 Solutions, AI supply chain risk management transforms reactive firefighting to proactive resilience.
 
@@ -104,4 +105,4 @@ Resilinc: monitors 400+ risk event types across 100M+ data sources. Maps client 
 
 - [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../ai-air-quality.md)
 - [AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling](../ai-customer-analytics.md)
-- [AI for Nuclear Fusion: Plasma Control, Disruption Prediction, and Accelerated Discovery](../ai-for-nuclear-fusion.md)
+- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)

@@ -72,5 +72,5 @@ SOP restricts: DOM access (a page on origin A cannot read origin B's iframe/docu
 ## Related Articles
 
 - [AI Content Moderation Platforms: Large-Scale Safety Systems, Policy Engines, and Multilingual Review](../../ai/ai-content-moderation-platforms.md)
+- [Inflation: Causes, Measurement, and Central Bank Policy](../../business/inflation-causes-measurement-and-central-bank-policy.md)
 - [Content Security Policy (CSP)](../content-security-policy-csp.md)
-- [Cross-Origin Resource Sharing (CORS)](../cross-origin-resource-sharing-cors.md)

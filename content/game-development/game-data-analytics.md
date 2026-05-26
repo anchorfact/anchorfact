@@ -222,5 +222,5 @@ LTV = D1 留存 × D7 留存贡献 + D7 留存 × D30 留存贡献 + ...
 ## Related Articles
 
 - [AI for Data Visualization: Automated Chart Generation, Insight Discovery, and Visual Analytics](../../ai/ai-for-visualization.md)
-- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../../ai/ai-call-center.md)
-- [AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling](../../ai/ai-customer-analytics.md)
+- [Cricket Strategy: Data Analytics and Match Modeling](../../sports/cricket-strategy-data-analytics-and-match-modeling.md)
+- [Football (Soccer) Analytics: Expected Goals (xG) and Tactical Data Science](../../sports/football-soccer-analytics-expected-goals-xg-and-tactical-data-science.md)

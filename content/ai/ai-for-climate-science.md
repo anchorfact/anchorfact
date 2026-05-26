@@ -103,6 +103,6 @@ Beyond weather: (1) Climate downscaling — AI generates high-resolution (km-sca
 
 ## Related Articles
 
+- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)
 - [AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling](../ai-customer-analytics.md)
 - [AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition](../ai-for-food-science.md)
-- [AI for Weather Forecasting: Data-Driven Numerical Weather Prediction and Nowcasting](../ai-for-weather-forecasting.md)

@@ -123,6 +123,6 @@ Elasticity measures responsiveness: price elasticity of demand = %ΔQ/%ΔP. Perf
 
 ## Related Articles
 
+- [Supply and Demand: The Fundamental Model of Market Economics](../supply-and-demand-the-fundamental-model-of-market-economics.md)
 - [AI for Algorithmic Trading: Reinforcement Learning, Market Prediction, and Quantitative Finance](../../ai/ai-for-algorithmic-trading.md)
 - [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
-- [AI for Supply Chain: Optimization, Vehicle Routing, and Logistics Intelligence](../../ai/ai-for-supply-chain.md)

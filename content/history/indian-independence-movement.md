@@ -85,4 +85,4 @@ India's independence movement (1857-1947) ended British colonial rule. Gandhi's 
 
 - [The Open-Source AI Movement: Llama, DeepSeek, and Democratization](../../ai/open-source-ai-movement.md)
 - [Civil Rights Movement](../civil-rights-movement.md)
-- [Sports Biomechanics: The Physics of Human Movement](../../sports/sports-biomechanics.md)
+- [Parkour: Movement Efficiency, Biomechanics, and Urban Athletics](../../sports/parkour-movement-efficiency-biomechanics-and-urban-athletics.md)

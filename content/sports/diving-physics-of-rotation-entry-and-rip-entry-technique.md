@@ -44,3 +44,9 @@ Phases: takeoff (10m platform, 1.7s; 3m springboard, 1.4s), flight (tuck=pike=st
 
 ---
 > 本文内容由 AnchorFact Pipeline 生成。
+
+## Related Articles
+
+- [Physics-Informed Neural Networks: Solving PDEs with Deep Learning and Neural Operators](../../ai/physics-informed-neural-networks.md)
+- [Particle Physics and the Standard Model](../../science/particle-physics.md)
+- [Plasma Physics: Fusion Energy, Space Plasmas, and Industrial Applications](../../science/plasma-physics-fusion-energy-space-plasmas-and-industrial-applications.md)

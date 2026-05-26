@@ -105,5 +105,5 @@ Data mixture design determines the relative proportions of sources — code, mat
 ## Related Articles
 
 - [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../ai-for-data-curation.md)
+- [Large Language Model Training: Scaling Laws, Data Curation, and Compute](../large-language-model-training-scaling-laws-data-curation-and-compute.md)
 - [Data-Centric AI: The Systematic Engineering of Training Data](../data-centric-ai.md)
-- [AI Data Governance: Metadata Management, Data Catalogs, and AI-Ready Data Quality](../data-governance.md)

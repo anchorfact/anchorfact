@@ -66,4 +66,4 @@ Fog of war: unexplored (black), explored but not visible (dim), currently visibl
 
 - [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../../ai/3d-generation-gaussian-splatting.md)
 - [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../../ai/ai-call-center.md)
-- [AI for Augmented Reality: Real-Time Scene Understanding, Spatial Computing, and Contextual Overlays](../../ai/ai-for-augmented-reality.md)
+- [AI for Augmented Reality: Real-Time Object Detection, Depth Estimation, and Scene Understanding](../../ai/ai-for-augmented-reality-real-time-object-detection-depth-estimation-and-scene-understanding.md)

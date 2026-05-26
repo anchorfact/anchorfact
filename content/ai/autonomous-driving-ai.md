@@ -1,12 +1,12 @@
 ---
 id: autonomous-driving-ai
-title: "End-to-End Autonomous Driving: Tesla FSD, Waymo, and Imitation Learning"
+title: 'End-to-End Autonomous Driving: Tesla FSD, Waymo, and Imitation Learning'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-26'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -32,17 +32,48 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-autonomous-driving-ai-1
-    title: "EMMA: End-to-End Multimodal Model for Autonomous Driving"
+    title: 'EMMA: End-to-End Multimodal Model for Autonomous Driving'
     type: academic_paper
     year: 2024
     institution: Waymo/Google
     url: https://arxiv.org/abs/2410.23262
   - id: ps-autonomous-driving-ai-2
-    title: "A Survey of End-to-End Driving: Architectures and Methods"
+    title: 'A Survey of End-to-End Driving: Architectures and Methods'
     type: academic_paper
     year: 2024
     institution: IEEE Transactions
     url: https://arxiv.org/abs/2305.01774
+  - title: 'DriveE2E: Closed-Loop Benchmark for End-to-End Autonomous Driving through Real-to-Simulation'
+    authors:
+      - Haibao Yu
+      - Wenxian Yang
+      - Ruiyang Hao
+      - Chuanye Wang
+      - Jiaru Zhong
+      - Ping Luo
+      - Zaiqing Nie
+    year: 2025
+    url: https://arxiv.org/abs/2509.23922v1
+    type: academic_paper
+    institution: arXiv
+  - title: 'FocalAD: Local Motion Planning for End-to-End Autonomous Driving'
+    authors:
+      - Bin Sun
+      - Boao Zhang
+      - Jiayi Lu
+      - Xinjie Feng
+      - Jiachen Shang
+      - Rui Cao
+      - Mengchao Zheng
+      - Chuanye Wang
+      - Shichun Yang
+      - Yaoguang Cao
+      - Ziying Song
+    year: 2025
+    doi: 10.1007/s42154-025-00465-6
+    url: https://arxiv.org/abs/2506.11419v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Safety guarantees for learned driving policies
   - Edge cases and long-tail distribution in autonomous driving
@@ -58,29 +89,30 @@ secondary_sources:
       - et al.
     institution: NVIDIA
     url: https://arxiv.org/abs/1604.07316
-  - title: "A Survey of Deep Learning for Autonomous Driving: Perception, Planning, and Control"
+  - title: 'A Survey of Deep Learning for Autonomous Driving: Perception, Planning, and Control'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: IEEE Transactions on Intelligent Transportation Systems
     url: https://doi.org/10.1109/TITS.2024.3385267
-  - title: "Waymo: Safety Performance of the Waymo Rider-Only Automated Driving System"
+  - title: 'Waymo: Safety Performance of the Waymo Rider-Only Automated Driving System'
     type: report
     year: 2024
     authors:
       - Waymo Research
     institution: Waymo / Alphabet
     url: https://waymo.com/safety/
-  - title: "Tesla Full Self-Driving (FSD): AI-Powered Autonomy at Scale — Architecture and Performance"
+  - title: 'Tesla Full Self-Driving (FSD): AI-Powered Autonomy at Scale — Architecture and Performance'
     type: report
     year: 2024
     authors:
       - Tesla AI
     institution: Tesla
     url: https://www.tesla.com/AI
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Autonomous driving is shifting from modular pipelines to end-to-end neural approaches. Tesla FSD V12 replaced 300K+ lines of hand-written code with a neural network; Waymo EMMA unifies perception and planning via multimodal models.
 

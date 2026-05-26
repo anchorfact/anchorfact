@@ -138,4 +138,4 @@ Statistical foundations: probability distributions, hypothesis testing, confiden
 
 - [Code Review Best Practices](../../computer-science/code-review-best-practices.md)
 - [Docker Security Best Practices](../../computer-science/docker-security-best-practices.md)
-- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
+- [OAuth 2.0: Authorization Framework and Security Best Practices](../../computer-science/oauth-2-0-authorization-framework-and-security-best-practices.md)

@@ -123,6 +123,6 @@ Nucleotides: Adenine (A), Thymine (T), Guanine (G), Cytosine (C). A pairs with T
 
 ## Related Articles
 
+- [AI for Genomics: Variant Calling, Gene Expression Prediction, and Protein-DNA Binding](../../ai/ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md)
+- [AI for Protein Structure Prediction: AlphaFold and the Folding Revolution](../../ai/ai-for-protein-structure-prediction-alphafold-and-the-folding-revolution.md)
 - [Protein Structure Prediction: AlphaFold, RoseTTAFold, and AI-Driven Structural Biology](../../ai/protein-structure-prediction.md)
-- [Corporate Finance: Capital Structure and Valuation](../../business/corporate-finance.md)
-- [Array Data Structure](../../computer-science/array-data-structure.md)

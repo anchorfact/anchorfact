@@ -107,6 +107,6 @@ Primary prevention (before disease onset) includes population-level policies: to
 
 ## Related Articles
 
+- [Cardiovascular Disease: Atherosclerosis, Risk Factors, and Prevention](../cardiovascular-disease-atherosclerosis-risk-factors-and-prevention.md)
 - [AI for Agriculture: Precision Farming, Plant Disease Detection, and Crop Yield Prediction](../../ai/ai-for-agriculture.md)
 - [AI for Crisis Hotlines: Suicide Prevention Chatbots, Emotional Support AI, and Risk Detection](../../ai/ai-for-crisis-hotlines.md)
-- [AI for Payment Fraud Prevention: Real-Time Transaction Scoring, Chargeback Reduction, and Merchant Risk](../../ai/ai-for-fraud-prevention.md)

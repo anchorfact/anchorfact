@@ -84,3 +84,7 @@ Bitcoin: deflationary (halving every 4 years, most recent 2024). Ethereum: smart
 ## Further Reading
 
 - [The Bitcoin Standard (Saifedean Ammous)](https://www.wiley.com/en-us/The+Bitcoin+Standard%3A+The+Decentralized+Alternative+to+Central+Banking-p-9781119473862)
+
+## Related Articles
+
+- [Bitcoin and Cryptocurrency: Proof of Work, Decentralization, and Financial Inclusion](../bitcoin-and-cryptocurrency-proof-of-work-decentralization-and-financial-inclusion.md)

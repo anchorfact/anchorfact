@@ -77,4 +77,5 @@ Defensive organization: zonal marking (cover space), man-marking (track opponent
 
 ## Related Articles
 
+- [Football (Soccer) Analytics: Expected Goals (xG) and Tactical Data Science](../football-soccer-analytics-expected-goals-xg-and-tactical-data-science.md)
 - [Football (Soccer)](../football-soccer.md)

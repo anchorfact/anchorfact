@@ -5,7 +5,7 @@ schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -90,6 +90,7 @@ secondary_sources:
     url: https://www.zoom.com/en/blog/workplace-collaboration-statistics/
 updated: '2026-05-24'
 ---
+
 
 ## TL;DR
 AI is the newest member of every team -- transcribing meetings, extracting action items, surfacing relevant documents, and connecting colleagues who should be collaborating. From Microsoft Teams Copilot to Notion AI, AI-augmented collaboration reduces meeting overhead by 10+ hours/month while improving knowledge sharing.

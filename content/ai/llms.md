@@ -243,6 +243,6 @@ Training costs have increased approximately 10× per generation, driven primaril
 
 ## Related Articles
 
+- [LoRA: Low-Rank Adaptation of Large Language Models](../lora-low-rank-adaptation-of-large-language-models.md)
 - [Text-to-SQL: Natural Language Database Querying with Large Language Models](../text-to-sql.md)
 - [AI Red Teaming: Security Testing for Language Models](../ai-red-teaming-and-safety.md)
-- [Long-Context Language Models: Beyond 1M Tokens](../long-context-models.md)

@@ -353,5 +353,5 @@ UI: 交互稿 → 视觉稿 → 切图/九宫格 → UI系统 → 引擎
 ## Related Articles
 
 - [AI Art and Creativity: Generative Models and Authorship](../../ai/ai-art-and-creativity.md)
+- [AI for Art and Creativity: GANs, Diffusion, and Computational Aesthetics](../../ai/ai-for-art-and-creativity-gans-diffusion-and-computational-aesthetics.md)
 - [AI for Cultural Heritage: Digital Preservation, Art Attribution, and Museum Intelligence](../../ai/ai-for-cultural-heritage.md)
-- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)

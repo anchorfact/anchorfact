@@ -106,6 +106,6 @@ MoE routing: a learned gating network selects top-k experts per token. Load bala
 
 ## Related Articles
 
+- [Mixture of Experts: Sparse Activation for Scaling Transformers](../mixture-of-experts-sparse-activation-for-scaling-transformers.md)
 - [Mixture of Experts (MoE)](../mixture-of-experts.md)
 - [Efficient and Green AI: Reducing the Carbon Footprint of Machine Learning](../efficient-green-ai.md)
-- [GPT (Generative Pre-trained Transformer) Model Family](../gpt-models.md)

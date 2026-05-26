@@ -143,6 +143,6 @@ CRISPR-Cas9 mechanism: guide RNA (gRNA) matches target DNA sequence; Cas9 create
 
 ## Related Articles
 
+- [AI for Drug Discovery: Molecular Docking, Virtual Screening, and De Novo Design](../../ai/ai-for-drug-discovery-molecular-docking-virtual-screening-and-de-novo-design.md)
 - [AI for Drug Discovery: AlphaFold, Molecular Generation, and Generative Chemistry](../../ai/ai-for-drug-discovery.md)
 - [AI for Genomics: Single-Cell Foundation Models and RNA Biology](../../ai/ai-for-genomics.md)
-- [Multi-Omics Integration: AI-Driven Systems Biology from Genomics to Proteomics](../../ai/multi-omics-integration.md)

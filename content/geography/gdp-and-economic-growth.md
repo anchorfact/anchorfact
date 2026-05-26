@@ -87,5 +87,5 @@ atomic_facts:
 ## Related Articles
 
 - [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../../ai/ai-blockchain.md)
+- [GDP: Gross Domestic Product Measurement and Limitations](../../business/gdp-gross-domestic-product-measurement-and-limitations.md)
 - [Economic Systems](../economic-systems.md)
-- [Growth Mindset: Theory and Applications](../../self-improvement/growth-mindset-theory-and-applications.md)

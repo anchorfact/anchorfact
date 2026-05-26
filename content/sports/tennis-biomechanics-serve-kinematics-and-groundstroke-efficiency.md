@@ -44,3 +44,9 @@ Serve phases: wind-up, cocking (max shoulder external rotation 170-180°), accel
 
 ---
 > 本文内容由 AnchorFact Pipeline 生成。
+
+## Related Articles
+
+- [Parkour: Movement Efficiency, Biomechanics, and Urban Athletics](../parkour-movement-efficiency-biomechanics-and-urban-athletics.md)
+- [Running Biomechanics: Gait Analysis, Foot Strike, and Efficiency](../running-biomechanics-gait-analysis-foot-strike-and-efficiency.md)
+- [Combat Sports: Biomechanics of Striking and Grappling](../combat-sports-biomechanics-of-striking-and-grappling.md)

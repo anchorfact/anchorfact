@@ -44,3 +44,9 @@ Disciplines: bouldering (4-5m, V0-V17), lead (15-40m, 5.0-5.15d), speed (15m, WR
 
 ---
 > 本文内容由 AnchorFact Pipeline 生成。
+
+## Related Articles
+
+- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../../ai/ai-for-data-curation.md)
+- [AI Training Data Curation: Quality at Scale](../../ai/ai-training-data-curation.md)
+- [CLIP: Contrastive Language-Image Pre-Training](../../ai/clip-contrastive-language-image-pre-training.md)

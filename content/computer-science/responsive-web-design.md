@@ -98,6 +98,6 @@ Mobile-first: design for smallest screen first, progressively enhance for larger
 
 ## Related Articles
 
+- [AI for Chip Design: Reinforcement Learning for EDA and Floorplanning](../../ai/ai-for-chip-design-reinforcement-learning-for-eda-and-floorplanning.md)
 - [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../../ai/ai-for-chip-design.md)
 - [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../../ai/ai-for-data-curation.md)
-- [AI Protein Design: RFDiffusion, ProteinMPNN, and the Nobel Revolution](../../ai/ai-protein-design.md)

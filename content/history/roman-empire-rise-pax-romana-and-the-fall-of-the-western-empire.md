@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Roman Empire](../roman-empire.md)
+- [AI for Senior Care: Fall Detection, Medication Reminders, and Social Companionship](../../ai/ai-senior-care.md)
+- [AI for Workplace Safety: Computer Vision Monitoring, Fall Detection, and Hazard Prevention](../../ai/ai-workplace-safety.md)

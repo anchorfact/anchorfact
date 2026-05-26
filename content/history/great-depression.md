@@ -113,4 +113,6 @@ Causes: stock market speculation, bank failures, reduction in purchasing power, 
 
 ## Related Articles
 
-- [Great Wall of China](../great-wall-of-china.md)
+- [Great Barrier Reef: Ecology, Coral Bleaching, and Conservation](../../geography/great-barrier-reef-ecology-coral-bleaching-and-conservation.md)
+- [Great Lakes: Hydrology, Ecology, and Transboundary Management](../../geography/great-lakes-hydrology-ecology-and-transboundary-management.md)
+- [Depression: Neurobiology, Diagnosis, and Evidence-Based Treatments](../../health/depression-neurobiology-diagnosis-and-evidence-based-treatments.md)

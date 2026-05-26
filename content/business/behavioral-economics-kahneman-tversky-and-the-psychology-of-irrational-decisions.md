@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Economics: Supply, Demand, and Market Equilibrium](../economics-fundamentals.md)
+- [Supply and Demand: The Fundamental Model of Market Economics](../supply-and-demand-the-fundamental-model-of-market-economics.md)
+- [player psychology](../../game-development/player-psychology.md)

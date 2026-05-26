@@ -101,4 +101,5 @@ Key frameworks: (1) Potential Outcomes (Rubin) — each unit has multiple potent
 ## Related Articles
 
 - [Causal Representation Learning: Deep Causal Discovery, Intervention, and Counterfactuals](../causal-representation-learning.md)
+- [Lambda Calculus: Foundations of Functional Programming and Computation](../../computer-science/lambda-calculus-foundations-of-functional-programming-and-computation.md)
 - [Lambda Calculus](../../computer-science/lambda-calculus.md)

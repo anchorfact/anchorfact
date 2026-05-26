@@ -92,5 +92,5 @@ New Hampshire primary (Jan 2024): AI-generated robocall impersonating President 
 ## Related Articles
 
 - [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../ai-call-center.md)
+- [AI for Network Security: Intrusion Detection, Threat Intelligence, and Anomaly Analysis](../ai-for-network-security-intrusion-detection-threat-intelligence-and-anomaly-analysis.md)
 - [AI for Video Surveillance: Intelligent Monitoring, Anomaly Detection, and Privacy-Preserving Analytics](../ai-for-video-surveillance.md)
-- [AI Smart Contract Auditing: Vulnerability Detection, Formal Verification, and Blockchain Security](../ai-smart-contract-audit.md)

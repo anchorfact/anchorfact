@@ -91,5 +91,5 @@ Himalayas: India-Eurasia collision, still rising 5mm/year. Tibet: 'roof of the w
 ## Related Articles
 
 - [African Geography](../african-geography.md)
-- [North America Geography](../north-america-geography.md)
-- [Oceania Geography](../oceania-geography.md)
+- [Antarctica: The Frozen Continent's Geography and Research Stations](../antarctica-the-frozen-continent-s-geography-and-research-stations.md)
+- [Mediterranean Sea: Physical Geography, Biodiversity, and Marine Protected Areas](../mediterranean-sea-physical-geography-biodiversity-and-marine-protected-areas.md)

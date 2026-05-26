@@ -88,3 +88,7 @@ Five Pillars: Shahada (faith declaration), Salah (prayer 5x daily), Zakat (chari
 ## Further Reading
 
 - [Islam: A Short History (Karen Armstrong)](https://www.penguinrandomhouse.com/books/164306/islam-by-karen-armstrong/)
+
+## Related Articles
+
+- [Roman Empire: Rise, Pax Romana, and the Fall of the Western Empire](../roman-empire-rise-pax-romana-and-the-fall-of-the-western-empire.md)

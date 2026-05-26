@@ -44,3 +44,9 @@ Lake stats: Superior (82,100 km², deepest 406m), Erie (shallowest 64m, eutrophi
 
 ---
 > 本文内容由 AnchorFact Pipeline 生成。
+
+## Related Articles
+
+- [Great Barrier Reef: Ecology, Coral Bleaching, and Conservation](../great-barrier-reef-ecology-coral-bleaching-and-conservation.md)
+- [AI for Fleet Management: Predictive Maintenance, Route Optimization, and Telematics](../../ai/ai-fleet-management.md)
+- [AI for Inventory Management: Demand Forecasting, Stock Optimization, and Automated Replenishment](../../ai/ai-inventory-management.md)

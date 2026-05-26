@@ -74,4 +74,4 @@ A Tropical: year-round warm, high rainfall — rainforest (Af), monsoon (Am), sa
 
 - [Global Climate Zones and Terrestrial Biomes](../climate-zones-and-biomes.md)
 - [World Climate Zones: Classification and Characteristics](../world-climate-zones-classification-and-characteristics.md)
-- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
+- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../../ai/ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)

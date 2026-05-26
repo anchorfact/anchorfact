@@ -109,6 +109,6 @@ The Wilson Cycle describes ocean basin lifecycle: rifting→spreading→subducti
 
 ## Related Articles
 
+- [Continental Drift and Plate Tectonics: Wegener to Modern Geodynamics](../../science/continental-drift-and-plate-tectonics-wegener-to-modern-geodynamics.md)
+- [Plate Tectonics: Continental Drift, Seafloor Spreading, and Subduction](../../science/plate-tectonics-continental-drift-seafloor-spreading-and-subduction.md)
 - [Plate Tectonics](../../science/plate-tectonics.md)
-- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
-- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)

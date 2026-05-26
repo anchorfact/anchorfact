@@ -74,3 +74,7 @@ Core APIs: `RTCPeerConnection` (media/data transport), `getUserMedia()` (camera/
 ## Further Reading
 
 - [WebRTC 1.0 (W3C Recommendation)](https://www.w3.org/TR/webrtc/)
+
+## Related Articles
+
+- [WebRTC: Real-Time Communication in the Browser](../webrtc-real-time-communication-in-the-browser.md)

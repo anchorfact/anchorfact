@@ -116,4 +116,4 @@ COBOL modernization: 220B+ lines of COBOL still running. IBM watsonx Code Assist
 
 - [AI Language Translation and Interpretation: LLM-Based Translation, Simultaneous Interpretation, and Quality Estimation](../ai-language-translation-interpretation.md)
 - [Low-Resource NLP: Multilingual Models, Endangered Language Preservation, and Translation](../low-resource-nlp.md)
-- [AI Coding Assistants: Copilot, Cursor, and Claude Code](../ai-coding-assistants.md)
+- [Genetic Code: Codons, Translation, and the Ribosome](../../science/genetic-code-codons-translation-and-the-ribosome.md)

@@ -71,5 +71,5 @@ Service Workers run on a separate thread, have no DOM access, and are event-driv
 ## Related Articles
 
 - [AI for Customer Service: Conversational Agents, Ticket Routing, and Intelligent Contact Centers](../../ai/ai-customer-service.md)
-- [Kubernetes Pod & Service](../kubernetes-pod-service.md)
-- [Web Workers](../web-workers.md)
+- [Container Orchestration: Kubernetes Architecture, Scheduling, and Service Mesh](../container-orchestration-kubernetes-architecture-scheduling-and-service-mesh.md)
+- [gRPC: Protocol Buffers, HTTP/2 Streaming, and Service Contracts](../grpc-protocol-buffers-http-2-streaming-and-service-contracts.md)

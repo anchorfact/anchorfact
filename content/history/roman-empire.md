@@ -84,6 +84,6 @@ Five Good Emperors (96-180 CE): Nerva, Trajan, Hadrian, Antoninus Pius, Marcus A
 
 ## Related Articles
 
+- [Roman Empire: Rise, Pax Romana, and the Fall of the Western Empire](../roman-empire-rise-pax-romana-and-the-fall-of-the-western-empire.md)
 - [Aztec Empire](../aztec-empire.md)
 - [Byzantine Empire](../byzantine-empire.md)
-- [Inca Empire](../inca-empire.md)

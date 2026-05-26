@@ -105,6 +105,6 @@ SELD architecture (Nature 2025): multi-channel audio → Short-Time Fourier Tran
 
 ## Related Articles
 
-- [AI for Intellectual Property: Patent Search, Prior Art Analysis, and Trademark Intelligence](../ai-ip-patents.md)
-- [AI for Static Analysis: Automated Bug Detection, Code Review, and Vulnerability Scanning](../ai-static-analysis.md)
-- [Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning](../audio-source-separation.md)
+- [AI for Audio Processing: Speech Recognition, Music Generation, and Sound Understanding](../ai-for-audio-processing-speech-recognition-music-generation-and-sound-understanding.md)
+- [AI for Network Security: Intrusion Detection, Threat Intelligence, and Anomaly Analysis](../ai-for-network-security-intrusion-detection-threat-intelligence-and-anomaly-analysis.md)
+- [AI for Augmented Reality: Real-Time Object Detection, Depth Estimation, and Scene Understanding](../ai-for-augmented-reality-real-time-object-detection-depth-estimation-and-scene-understanding.md)

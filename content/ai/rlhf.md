@@ -259,6 +259,6 @@ This "alignment tax" represents the cost of making models safer and more aligned
 
 ## Related Articles
 
+- [Reinforcement Learning: From Q-Learning to RLHF](../reinforcement-learning-from-q-learning-to-rlhf.md)
 - [AI for Algorithmic Trading: Reinforcement Learning, Market Prediction, and Quantitative Finance](../ai-for-algorithmic-trading.md)
-- [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../ai-for-chip-design.md)
-- [Deep Reinforcement Learning Algorithms: PPO, SAC, Dreamer, and Decision Transformer](../deep-reinforcement-learning-algorithms.md)
+- [AI for Chip Design: Reinforcement Learning for EDA and Floorplanning](../ai-for-chip-design-reinforcement-learning-for-eda-and-floorplanning.md)

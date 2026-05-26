@@ -79,3 +79,8 @@ Diversity: more diverse microbiome = generally healthier. Prebiotics: fiber that
 ## Further Reading
 
 - [I Contain Multitudes (Ed Yong)](https://www.harpercollins.com/products/i-contain-multitudes-ed-yong)
+
+## Related Articles
+
+- [The Microbiome: Gut Bacteria, Immunity, and the Gut-Brain Axis](../../science/the-microbiome-gut-bacteria-immunity-and-the-gut-brain-axis.md)
+- [Fermentation: Biochemistry, Industrial Applications, and Gut Health](../../science/fermentation-biochemistry-industrial-applications-and-gut-health.md)

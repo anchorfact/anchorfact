@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [AI Document Understanding: Layout Parsing, Structured Extraction, and Intelligent Document Processing](../../ai/ai-document-understanding.md)
+- [AI for Audio Processing: Speech Recognition, Music Generation, and Sound Understanding](../../ai/ai-for-audio-processing-speech-recognition-music-generation-and-sound-understanding.md)
+- [AI for Audio Processing: Sound Event Detection, Acoustic Scene Analysis, and Environmental Intelligence](../../ai/ai-for-audio-processing.md)

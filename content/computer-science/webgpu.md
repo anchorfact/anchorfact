@@ -83,3 +83,7 @@ WebGPU uses `navigator.gpu.requestAdapter()` and separates logical device from p
 ## Further Reading
 
 - [WebGPU (W3C Working Draft)](https://www.w3.org/TR/webgpu/)
+
+## Related Articles
+
+- [WebGPU: Next-Generation Web Graphics and Compute API](../webgpu-next-generation-web-graphics-and-compute-api.md)

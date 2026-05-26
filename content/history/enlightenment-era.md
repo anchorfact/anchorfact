@@ -109,3 +109,4 @@ Locke: tabula rasa (blank slate), life/liberty/property. Montesquieu: Spirit of 
 ## Related Articles
 
 - [Napoleonic Era](../napoleonic-era.md)
+- [Human Genome Project: Sequencing, Findings, and the Post-Genomic Era](../../science/human-genome-project-sequencing-findings-and-the-post-genomic-era.md)

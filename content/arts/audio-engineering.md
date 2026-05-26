@@ -102,5 +102,5 @@ Dynamic range: difference between quietest and loudest — compressed in modern 
 ## Related Articles
 
 - [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../../ai/adversarial-machine-learning.md)
+- [AI for Audio Processing: Speech Recognition, Music Generation, and Sound Understanding](../../ai/ai-for-audio-processing-speech-recognition-music-generation-and-sound-understanding.md)
 - [AI for Audio Processing: Sound Event Detection, Acoustic Scene Analysis, and Environmental Intelligence](../../ai/ai-for-audio-processing.md)
-- [AI for Code Generation: LLMs as Software Engineering Copilots](../../ai/ai-for-code-generation.md)

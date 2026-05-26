@@ -118,5 +118,5 @@ OpenAI o1 architecture: internal chain-of-thought (hidden to users) + RL trainin
 ## Related Articles
 
 - [Knowledge Graph Reasoning: Embedding-Based Link Prediction, Logical Inference, and Neurosymbolic Methods](../knowledge-graph-reasoning.md)
+- [Large Language Model Training: Scaling Laws, Data Curation, and Compute](../large-language-model-training-scaling-laws-data-curation-and-compute.md)
 - [AI Reasoning Models: OpenAI o1/o3 and DeepSeek-R1](../reasoning-models.md)
-- [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../3d-generation-gaussian-splatting.md)

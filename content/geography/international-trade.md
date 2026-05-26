@@ -85,3 +85,5 @@ atomic_facts:
 ## Related Articles
 
 - [AI Governance: Risk Frameworks, Audits, and International Cooperation](../../ai/ai-governance-and-policy.md)
+- [Intellectual Property: Patents, Copyrights, Trademarks, and Trade Secrets](../../business/intellectual-property-patents-copyrights-trademarks-and-trade-secrets.md)
+- [CAP Theorem in Practice: Consistency, Availability, and Partition Tolerance Trade-offs](../../computer-science/cap-theorem-in-practice-consistency-availability-and-partition-tolerance-trade-offs.md)

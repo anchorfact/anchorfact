@@ -88,6 +88,6 @@ Key concepts: variation (individuals differ), heritability (traits passed to off
 
 ## Related Articles
 
+- [Evolution by Natural Selection: Darwin's Theory and Modern Synthesis](../evolution-by-natural-selection-darwin-s-theory-and-modern-synthesis.md)
 - [AI for Location Intelligence: Geospatial Analytics, POI Recommendation, and Site Selection](../../ai/ai-location-intelligence.md)
 - [Natural Language Processing (NLP)](../../ai/natural-language-processing-nlp.md)
-- [Text-to-SQL: Natural Language Database Querying with Large Language Models](../../ai/text-to-sql.md)

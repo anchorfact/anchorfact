@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Hormones: Endocrine System, Feedback Loops, and Metabolic Regulation](../hormones-endocrine-system-feedback-loops-and-metabolic-regulation.md)
+- [Reinforcement Learning from Human Feedback (RLHF)](../../ai/rlhf.md)
+- [Game Balance Fundamentals](../../game-development/game-balance-fundamentals.md)

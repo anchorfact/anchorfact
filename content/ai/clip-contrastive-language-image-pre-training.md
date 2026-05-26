@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Contrastive Learning: SimCLR, MoCo, and CLIP](../contrastive-learning.md)
+- [Large Language Model Training: Scaling Laws, Data Curation, and Compute](../large-language-model-training-scaling-laws-data-curation-and-compute.md)
+- [Multimodal AI: Vision-Language Models from CLIP to GPT-4V](../multimodal-ai-vision-language-models-from-clip-to-gpt-4v.md)

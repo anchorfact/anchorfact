@@ -111,4 +111,4 @@ PPO-RLHF was the original approach (InstructGPT, ChatGPT). Its complexity — re
 
 - [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../ai-for-data-curation.md)
 - [AI Training Data Curation: Quality at Scale](../ai-training-data-curation.md)
-- [Data-Centric AI: The Systematic Engineering of Training Data](../data-centric-ai.md)
+- [CLIP: Contrastive Language-Image Pre-Training](../clip-contrastive-language-image-pre-training.md)

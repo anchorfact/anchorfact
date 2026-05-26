@@ -5,7 +5,7 @@ schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -106,6 +106,7 @@ secondary_sources:
 updated: '2026-05-24'
 ---
 
+
 ## TL;DR
 AI workplace safety uses computer vision to monitor PPE compliance, detect falls, and identify hazards in real-time. From Amazon warehouses to construction sites, AI safety systems reduce workplace incidents by 25-40% by catching risks that human safety monitors miss.
 
@@ -118,5 +119,5 @@ PPE detection: YOLOv8 trained on labeled datasets with bounding box annotations.
 ## Related Articles
 
 - [AI for Construction: Computer Vision Safety, BIM Digital Twins, and Automated Project Monitoring](../ai-for-construction.md)
+- [Computer Vision: Convolution, Feature Detection, and Image Understanding](../../computer-science/computer-vision-convolution-feature-detection-and-image-understanding.md)
 - [AI for Crisis Hotlines: Suicide Prevention Chatbots, Emotional Support AI, and Risk Detection](../ai-for-crisis-hotlines.md)
-- [AI for Ocean Monitoring: Marine Life Detection, Plastic Pollution Tracking, and Oceanographic AI](../ai-for-ocean-monitoring.md)

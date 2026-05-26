@@ -364,6 +364,7 @@ const rootHtml = `<!DOCTYPE html>
   <meta charset="utf-8">
   <title>AnchorFact — Anchor AI to Facts</title>
   <meta name="description" content="AnchorFact: AI-structured knowledge base for LLM citations. Confidence based on verified sources.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <meta name="msvalidate.01" content="B9AA7B911CF59012FB84CBDD7470CBA4" />
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "6c2614afcd75419ba49039a97b7378ab"}'></script>
   <script type="application/ld+json">
@@ -536,6 +537,12 @@ const headersFile = `# _headers — AnchorFact AI-optimized headers with securit
 /*/index.html
   Cache-Control: public, max-age=604800, stale-while-revalidate=86400
   CDN-Cache-Control: public, max-age=604800
+/*/index.json
+  CDN-Cache-Control: public, max-age=86400
+/*/index.ttl
+  CDN-Cache-Control: public, max-age=86400
+/*/
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
 /*/index.txt
   Cache-Control: public, max-age=604800
 /
@@ -559,4 +566,9 @@ console.log('✅ _headers generated');
 const dashHtml = `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>AnchorFact Dashboard</title><meta name="description" content="AnchorFact Live Dashboard"><style>:root{--blue:#2563EB;--green:#16A34A;--yellow:#CA8A04;--red:#DC2626;--bg:#F8FAFC;--card:#FFF;--text:#1E293B;--muted:#64748B;--border:#E2E8F0}*{box-sizing:border-box;margin:0;padding:0}body{font-family:system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}.container{max-width:960px;margin:0 auto;padding:24px 20px}h1{color:var(--blue);font-size:1.8rem;margin-bottom:4px}.tagline{color:var(--muted);font-size:.95rem;margin-bottom:24px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:24px}.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px}.card .label{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}.card .value{font-size:2rem;font-weight:700}.card .sub{font-size:.8rem;color:var(--muted);margin-top:4px}.bar-container{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:16px}.bar-row{display:flex;align-items:center;margin:8px 0;gap:12px}.bar-label{width:80px;font-size:.85rem;text-align:right}.bar{height:24px;border-radius:4px;min-width:2px}.bar.h{background:var(--green)}.bar.m{background:var(--yellow)}.bar.l{background:var(--red)}.bar-count{font-size:.8rem;font-weight:600;margin-left:8px}table{width:100%;border-collapse:collapse;font-size:.85rem}th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--border)}th{color:var(--muted);font-size:.75rem;text-transform:uppercase}.footer{color:var(--muted);font-size:.8rem;margin-top:32px;text-align:center}a{color:var(--blue)}</style></head><body><div class="container"><h1>⚓ AnchorFact Dashboard</h1><p class="tagline">AI-Native Knowledge Base — Live Stats</p><div class="grid"><div class="card"><div class="label">Total Articles</div><div class="value">${results.length}</div><div class="sub">across 11 domains</div></div><div class="card"><div class="label">High Confidence</div><div class="value" style="color:var(--green)">${confidenceSummary.high}</div><div class="sub">${(confidenceSummary.high/results.length*100).toFixed(1)}% (≥ 0.85)</div></div><div class="card"><div class="label">Medium</div><div class="value" style="color:var(--yellow)">${confidenceSummary.medium}</div><div class="sub">${(confidenceSummary.medium/results.length*100).toFixed(1)}%</div></div><div class="card"><div class="label">Low</div><div class="value" style="color:var(--red)">${confidenceSummary.low}</div><div class="sub">${(confidenceSummary.low/results.length*100).toFixed(1)}%</div></div></div><div class="bar-container"><h3>Confidence Distribution</h3>${(()=>{const m=Math.max(confidenceSummary.high,confidenceSummary.medium,confidenceSummary.low,1);return ['high','medium','low'].map(l=>{const v=confidenceSummary[l];const c=l==='high'?'h':l==='medium'?'m':'l';return '<div class="bar-row"><span class="bar-label">'+l.charAt(0).toUpperCase()+l.slice(1)+'</span><div class="bar '+c+'" style="width:'+(v/m*100)+'%"></div><span class="bar-count">'+v+'</span></div>'}).join('')})()}</div><div class="bar-container"><h3>Trust Formula</h3><table><tr><td style="width:140px">Formula</td><td><code>source_tier × 0.35 + source_count × 0.20 + source_verified × 0.25 + freshness × 0.10 − decay × 0.10</code></td></tr><tr><td>Verified basis</td><td>${confidenceSummary.basis?.verified||0} articles</td></tr><tr><td>Estimated basis</td><td>${confidenceSummary.basis?.estimated||0} articles</td></tr><tr><td>Generated</td><td>${new Date().toISOString()}</td></tr><tr><td>Verification report</td><td>${_verificationTimestamp||'N/A'}</td></tr></table></div><p class="footer"><a href="/">Home</a> · <a href="/llms.txt">llms.txt</a> · <a href="/manifest.json">manifest.json</a> · <a href="https://github.com/anchorfact/anchorfact">GitHub</a> · <a href="/dashboard.html">Refresh</a></p></div></body></html>`;
 writeFileSync(join(distDir, 'dashboard.html'), dashHtml);
 console.log('✅ dashboard.html generated');
+
+// Generate favicon.svg
+const favicon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#2563EB"/><text x="16" y="23" text-anchor="middle" font-family="system-ui" font-size="22" font-weight="700" fill="white">⚓</text></svg>`;
+writeFileSync(join(distDir, 'favicon.svg'), favicon);
+console.log('✅ favicon.svg generated');
 

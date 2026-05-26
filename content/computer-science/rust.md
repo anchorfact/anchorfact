@@ -136,6 +136,6 @@ Amazon (AWS), Google (Android, Fuchsia), Microsoft (Windows kernel, Azure), Meta
 
 ## Related Articles
 
+- [Rust Programming Language: Ownership, Borrowing, and Memory Safety](../rust-programming-language-ownership-borrowing-and-memory-safety.md)
 - [C++ Programming Language](../c++-language.md)
 - [C Programming Language](../c-language.md)
-- [Go Programming Language](../go-language.md)

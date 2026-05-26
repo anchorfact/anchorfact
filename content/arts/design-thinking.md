@@ -105,6 +105,6 @@ Empathy: observe, interview, immerse in user experience. Define: synthesize insi
 
 ## Related Articles
 
+- [AI for Chip Design: Reinforcement Learning for EDA and Floorplanning](../../ai/ai-for-chip-design-reinforcement-learning-for-eda-and-floorplanning.md)
 - [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../../ai/ai-for-chip-design.md)
-- [AI Protein Design: RFDiffusion, ProteinMPNN, and the Nobel Revolution](../../ai/ai-protein-design.md)
-- [Neural Architecture Search: Automated Design of Deep Neural Networks](../../ai/neural-architecture-search.md)
+- [AI for Drug Discovery: Molecular Docking, Virtual Screening, and De Novo Design](../../ai/ai-for-drug-discovery-molecular-docking-virtual-screening-and-de-novo-design.md)

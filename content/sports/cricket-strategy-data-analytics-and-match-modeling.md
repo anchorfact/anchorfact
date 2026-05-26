@@ -44,3 +44,9 @@ Batting: Strike Rate, Boundary %, Dot Ball %. Bowling: Economy Rate, Yorker Leng
 
 ---
 > 本文内容由 AnchorFact Pipeline 生成。
+
+## Related Articles
+
+- [AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling](../../ai/ai-customer-analytics.md)
+- [AI for Data Visualization: Automated Chart Generation, Insight Discovery, and Visual Analytics](../../ai/ai-for-visualization.md)
+- [game data analytics](../../game-development/game-data-analytics.md)

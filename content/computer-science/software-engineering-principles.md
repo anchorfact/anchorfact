@@ -94,6 +94,6 @@ Development methodologies: Waterfall vs Agile. Agile frameworks: Scrum (sprints,
 
 ## Related Articles
 
+- [Design Patterns: Gang of Four Patterns in Modern Software Engineering](../design-patterns-gang-of-four-patterns-in-modern-software-engineering.md)
 - [AI for Code Generation: LLMs as Software Engineering Copilots](../../ai/ai-for-code-generation.md)
 - [Software Development Life Cycle (SDLC)](../software-development-life-cycle-sdlc.md)
-- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../../ai/adversarial-machine-learning.md)

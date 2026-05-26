@@ -5,7 +5,7 @@ schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -102,6 +102,7 @@ secondary_sources:
     url: https://www.phocuswright.com/Travel-Research/Technology-Innovation/Generative-AI-Travel-2025
 updated: '2026-05-24'
 ---
+
 
 ## TL;DR
 AI plans your vacation -- from LLMs generating personalized itineraries to Hopper predicting the best time to book flights. Google, Expedia, and Booking.com have all launched conversational AI trip planners, transforming travel from search-heavy research to one-conversation booking.

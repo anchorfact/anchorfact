@@ -49,4 +49,4 @@ The 5 major zones are further divided into ~30 subtypes. Key subtypes: Af (tropi
 
 - [Global Climate Zones and Terrestrial Biomes](../climate-zones-and-biomes.md)
 - [Climate Zones](../climate-zones.md)
-- [AI for Archaeology: Site Detection, Artifact Classification, and Digital Heritage Preservation](../../ai/ai-for-archaeology.md)
+- [World Time Zones: History, Politics, and the Prime Meridian](../world-time-zones-history-politics-and-the-prime-meridian.md)

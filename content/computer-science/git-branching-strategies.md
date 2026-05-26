@@ -83,5 +83,5 @@ Git Flow: feature branches from develop, release branches for stabilization, hot
 ## Related Articles
 
 - [Multi-Agent Reinforcement Learning: Cooperation, Competition, and Emergent Strategies](../../ai/multi-agent-reinforcement-learning.md)
+- [Git: Distributed Version Control Internals and Workflows](../git-distributed-version-control-internals-and-workflows.md)
 - [Git Version Control System](../git.md)
-- [Chronic Disease Prevention Strategies](../../health/chronic-disease-prevention.md)

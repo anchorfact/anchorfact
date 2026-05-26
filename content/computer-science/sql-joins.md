@@ -84,4 +84,4 @@ INNER JOIN: `SELECT * FROM orders JOIN customers ON orders.cust_id = customers.i
 
 - [Text-to-SQL: Natural Language Database Querying with Large Language Models](../../ai/text-to-sql.md)
 - [SQL Injection](../sql-injection.md)
-- [SQL (Structured Query Language)](../sql.md)
+- [SQL Query Optimization: Join Algorithms, Cost Models, and Index Selection](../sql-query-optimization-join-algorithms-cost-models-and-index-selection.md)

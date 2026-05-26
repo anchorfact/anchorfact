@@ -48,5 +48,5 @@ Training phases: base building (aerobic foundation, 6-8 weeks), strength/speed (
 ## Related Articles
 
 - [Exercise Physiology: How the Body Adapts to Training](../sports-exercise-physiology.md)
-- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../../ai/ai-for-data-curation.md)
-- [AI for Sports Analytics: Player Tracking, Performance Prediction, and Tactical Analysis](../../ai/ai-sports-analytics.md)
+- [Strength Training: Physiology of Hypertrophy and Neural Adaptation](../strength-training-physiology-of-hypertrophy-and-neural-adaptation.md)
+- [Triathlon Training: Multi-Sport Physiology and Transitions](../triathlon-training-multi-sport-physiology-and-transitions.md)

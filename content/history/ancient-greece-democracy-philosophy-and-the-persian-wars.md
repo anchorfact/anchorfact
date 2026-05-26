@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Stoicism in Modern Life: Ancient Philosophy Meets Psychology](../../self-improvement/stoicism-in-modern-life-ancient-philosophy-meets-psychology.md)
+- [Ancient Greek Literature](../../arts/ancient-greek-literature.md)
+- [Philosophy of Mind](../../arts/philosophy-of-mind.md)

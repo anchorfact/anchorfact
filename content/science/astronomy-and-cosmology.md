@@ -125,4 +125,4 @@ The universe composition: 68% dark energy, 27% dark matter, 5% ordinary matter. 
 
 - [Solar System](../solar-system.md)
 - [AI for Astronomy: Exoplanet Detection, Galaxy Classification, and Computational Astrophysics](../../ai/ai-for-astronomy.md)
-- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
+- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../../ai/ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)

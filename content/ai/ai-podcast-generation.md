@@ -92,5 +92,5 @@ NotebookLM Audio Overview (2024): viral feature. Upload documents -> two AI host
 ## Related Articles
 
 - [AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation](../ai-content-creation.md)
+- [AI for Audio Processing: Speech Recognition, Music Generation, and Sound Understanding](../ai-for-audio-processing-speech-recognition-music-generation-and-sound-understanding.md)
 - [AI for Social Media: Misinformation Detection, Hate Speech Moderation, and Content Safety](../ai-for-social-media.md)
-- [AI for Software Testing: Automated Test Generation, Fuzzing, and Quality Assurance](../ai-for-software-testing.md)

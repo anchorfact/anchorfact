@@ -99,3 +99,8 @@ Coral bleaching: triggered by 1-2°C above normal summer temperatures. Recovery 
 ## Further Reading
 
 - [The Biology of Coral Reefs (Sheppard, Davy, Pilling, 2nd Ed)](https://global.oup.com/academic/product/the-biology-of-coral-reefs-9780198787358)
+
+## Related Articles
+
+- [Coral Triangle: Marine Biodiversity Hotspot in Southeast Asia](../../geography/coral-triangle-marine-biodiversity-hotspot-in-southeast-asia.md)
+- [Great Barrier Reef: Ecology, Coral Bleaching, and Conservation](../../geography/great-barrier-reef-ecology-coral-bleaching-and-conservation.md)

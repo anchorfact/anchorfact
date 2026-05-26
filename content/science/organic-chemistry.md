@@ -128,6 +128,6 @@ Spectroscopy for structure determination: IR identifies functional groups, NMR r
 
 ## Related Articles
 
+- [AI for Chemistry: Reaction Prediction, Retrosynthesis, and Materials Discovery](../../ai/ai-for-chemistry-reaction-prediction-retrosynthesis-and-materials-discovery.md)
 - [AI for Chemistry: Reaction Prediction, Retrosynthesis, and Computational Chemistry](../../ai/ai-for-chemistry.md)
-- [AI for Drug Discovery: AlphaFold, Molecular Generation, and Generative Chemistry](../../ai/ai-for-drug-discovery.md)
-- [Efficient and Green AI: Reducing the Carbon Footprint of Machine Learning](../../ai/efficient-green-ai.md)
+- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../../ai/ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)

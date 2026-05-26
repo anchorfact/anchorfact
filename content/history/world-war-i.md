@@ -84,6 +84,6 @@ Schlieffen Plan: Germany's two-front strategy failed at First Battle of Marne (1
 
 ## Related Articles
 
+- [World War I: Causes, Trench Warfare, and the Treaty of Versailles](../world-war-i-causes-trench-warfare-and-the-treaty-of-versailles.md)
 - [World War II: Global Conflict and Its Aftermath](../world-war-ii-overview.md)
 - [World War II](../world-war-ii.md)
-- [Embodied AI: Robots That Learn from the Physical World](../../ai/embodied-ai-and-robotics.md)

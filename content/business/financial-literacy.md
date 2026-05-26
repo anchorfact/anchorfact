@@ -124,3 +124,4 @@ Compound interest formula: A = P(1 + r/n)^(nt). Credit score (FICO): payment his
 
 - [AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime](../../ai/ai-for-fraud-detection.md)
 - [AI for Personal Finance: Robo-Advisors, Automated Budgeting, and Financial Wellness](../../ai/ai-personal-finance.md)
+- [Bitcoin and Cryptocurrency: Proof of Work, Decentralization, and Financial Inclusion](../bitcoin-and-cryptocurrency-proof-of-work-decentralization-and-financial-inclusion.md)

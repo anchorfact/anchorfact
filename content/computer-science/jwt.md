@@ -117,6 +117,6 @@ Tokens are Base64URL-encoded (not encrypted), so payload is readable by anyone. 
 
 ## Related Articles
 
+- [JWT: JSON Web Tokens — Authentication, Claims, and Security](../jwt-json-web-tokens-authentication-claims-and-security.md)
 - [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../../ai/ai-for-data-curation.md)
 - [Semantic Web and Ontologies: Knowledge Representation, OWL Reasoning, and Linked Data](../../ai/semantic-web-ontology.md)
-- [Amazon Web Services (AWS)](../amazon-web-services-aws.md)

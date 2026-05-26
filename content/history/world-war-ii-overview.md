@@ -123,5 +123,5 @@ The Pacific War (1941-1945) was defined by naval aviation and island-hopping. Th
 ## Related Articles
 
 - [The Cold War: Ideological Conflict and Nuclear Standoff](../cold-war-history.md)
+- [World War I: Causes, Trench Warfare, and the Treaty of Versailles](../world-war-i-causes-trench-warfare-and-the-treaty-of-versailles.md)
 - [World War I](../world-war-i.md)
-- [World War II](../world-war-ii.md)

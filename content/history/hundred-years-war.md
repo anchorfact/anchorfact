@@ -80,4 +80,4 @@ English longbow: decisive at Crecy and Agincourt — volley fire decimated Frenc
 
 - [The Cold War: Ideological Conflict and Nuclear Standoff](../cold-war-history.md)
 - [Cold War](../cold-war.md)
-- [World War I](../world-war-i.md)
+- [World War I: Causes, Trench Warfare, and the Treaty of Versailles](../world-war-i-causes-trench-warfare-and-the-treaty-of-versailles.md)

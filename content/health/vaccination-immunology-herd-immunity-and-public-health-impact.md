@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../../ai/ai-air-quality.md)
+- [AI for Public Health: Disease Surveillance, Outbreak Prediction, and Population Health Analytics](../../ai/ai-public-health.md)
+- [Epidemiology: The Science of Public Health](../epidemiology-fundamentals.md)

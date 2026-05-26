@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../../ai/ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)
+- [Efficient and Green AI: Reducing the Carbon Footprint of Machine Learning](../../ai/efficient-green-ai.md)
+- [Software Development Life Cycle (SDLC)](../../computer-science/software-development-life-cycle-sdlc.md)

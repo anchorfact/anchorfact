@@ -126,6 +126,6 @@ Electronegativity difference determines bond type: <0.5 = nonpolar covalent, 0.5
 
 ## Related Articles
 
+- [Nuclear Magnetic Resonance: From MRI Imaging to Chemical Structure](../nuclear-magnetic-resonance-from-mri-imaging-to-chemical-structure.md)
+- [AI for Drug Discovery: Molecular Docking, Virtual Screening, and De Novo Design](../../ai/ai-for-drug-discovery-molecular-docking-virtual-screening-and-de-novo-design.md)
 - [AI for Drug Discovery: AlphaFold, Molecular Generation, and Generative Chemistry](../../ai/ai-for-drug-discovery.md)
-- [Protein Structure Prediction: AlphaFold, RoseTTAFold, and AI-Driven Structural Biology](../../ai/protein-structure-prediction.md)
-- [Corporate Finance: Capital Structure and Valuation](../../business/corporate-finance.md)

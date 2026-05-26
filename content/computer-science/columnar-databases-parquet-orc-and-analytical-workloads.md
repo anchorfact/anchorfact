@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Vector Databases: Approximate Nearest Neighbor Search, Embedding Storage, and Retrieval at Scale](../../ai/vector-databases.md)
+- [Graph Databases: Neo4j, Property Graphs, and Cypher Query Language](../graph-databases-neo4j-property-graphs-and-cypher-query-language.md)
+- [Time Series Databases: InfluxDB, Prometheus, and Downsampling](../time-series-databases-influxdb-prometheus-and-downsampling.md)

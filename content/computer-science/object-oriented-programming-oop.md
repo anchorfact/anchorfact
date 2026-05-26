@@ -90,6 +90,6 @@ Encapsulation: private fields, public methods — protects data integrity. Inher
 
 ## Related Articles
 
+- [AI for Augmented Reality: Real-Time Object Detection, Depth Estimation, and Scene Understanding](../../ai/ai-for-augmented-reality-real-time-object-detection-depth-estimation-and-scene-understanding.md)
 - [AI for Satellite Imagery: Object Detection, Change Detection, and Global Monitoring](../../ai/ai-satellite-imagery.md)
 - [AI for Surveillance Systems: Object Tracking, Anomaly Detection, and Intelligent Monitoring](../../ai/ai-surveillance-systems.md)
-- [Conversational AI: Task-Oriented Dialogue and Open-Domain Chatbots](../../ai/conversational-ai-systems.md)

@@ -185,4 +185,4 @@ Google introduced **A2A (Agent-to-Agent)** as a separate protocol for agent-to-a
 
 - [Few-Shot Learning: Prototypical Networks, MAML, and In-Context Adaptation](../few-shot-learning.md)
 - [GPT (Generative Pre-trained Transformer) Model Family](../gpt-models.md)
-- [Long-Context Language Models: Beyond 1M Tokens](../long-context-models.md)
+- [Large Language Model Training: Scaling Laws, Data Curation, and Compute](../large-language-model-training-scaling-laws-data-curation-and-compute.md)

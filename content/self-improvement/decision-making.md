@@ -108,5 +108,5 @@ atomic_facts:
 ## Related Articles
 
 - [AI Decision Support Systems: Clinical CDSS, Business Intelligence, and Augmented Decision-Making](../../ai/decision-support-systems.md)
+- [Cognitive Load Theory: Optimizing Learning and Decision Making](../cognitive-load-theory-optimizing-learning-and-decision-making.md)
 - [The Psychology of Decision Making](../decision-making-psychology.md)
-- [Deep Reinforcement Learning Algorithms: PPO, SAC, Dreamer, and Decision Transformer](../../ai/deep-reinforcement-learning-algorithms.md)

@@ -102,4 +102,4 @@ Key poses: Downward Dog, Warrior I/II/III, Child's Pose, Tree Pose, Cobra. Sun S
 
 - [Yoga: Philosophy, Practice, and Health Benefits](../../sports/yoga-philosophy-practice-and-health-benefits.md)
 - [Strategic Management: Frameworks and Practice](../../business/strategic-management-theory.md)
-- [Mindfulness Meditation: Scientific Foundations and Practice](../../self-improvement/mindfulness-meditation-scientific-foundations-and-practice.md)
+- [CAP Theorem in Practice: Consistency, Availability, and Partition Tolerance Trade-offs](../../computer-science/cap-theorem-in-practice-consistency-availability-and-partition-tolerance-trade-offs.md)

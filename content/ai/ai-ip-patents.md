@@ -93,4 +93,4 @@ Patent-specific NLP: patents use specialized language (means-plus-function claim
 
 - [AI for Audio Processing: Sound Event Detection, Acoustic Scene Analysis, and Environmental Intelligence](../ai-for-audio-processing.md)
 - [AI for Cultural Heritage: Digital Preservation, Art Attribution, and Museum Intelligence](../ai-for-cultural-heritage.md)
-- [AI for Legal Research: Case Law Search, Citation Analysis, and Litigation Analytics](../ai-legal-research.md)
+- [AI for Network Security: Intrusion Detection, Threat Intelligence, and Anomaly Analysis](../ai-for-network-security-intrusion-detection-threat-intelligence-and-anomaly-analysis.md)

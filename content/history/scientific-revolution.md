@@ -137,5 +137,5 @@ The transition from qualitative to quantitative: Galileo's inclined plane experi
 ## Related Articles
 
 - [Scientific Revolution](../../science/scientific-revolution.md)
+- [AI for Protein Structure Prediction: AlphaFold and the Folding Revolution](../../ai/ai-for-protein-structure-prediction-alphafold-and-the-folding-revolution.md)
 - [AI for Science: AlphaFold and the AI-Driven Discovery Revolution](../../ai/ai-for-science.md)
-- [AI Protein Design: RFDiffusion, ProteinMPNN, and the Nobel Revolution](../../ai/ai-protein-design.md)

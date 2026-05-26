@@ -91,4 +91,4 @@ Object detection: R-CNN family (region proposals), YOLO (single shot, real-time)
 
 - [AI for Construction: Computer Vision Safety, BIM Digital Twins, and Automated Project Monitoring](../ai-for-construction.md)
 - [AI for Workplace Safety: Computer Vision Monitoring, Fall Detection, and Hazard Prevention](../ai-workplace-safety.md)
-- [AI for Medical Imaging: Radiology AI, Computer-Aided Diagnosis, and Clinical Deployment](../ai-for-medical-imaging.md)
+- [Computer Vision: Convolution, Feature Detection, and Image Understanding](../../computer-science/computer-vision-convolution-feature-detection-and-image-understanding.md)

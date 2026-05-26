@@ -79,4 +79,8 @@ Protobuf `.proto` files define service and message types. gRPC generates client/
 
 ## Further Reading
 
-- 
+-
+
+## Related Articles
+
+- [gRPC: Protocol Buffers, HTTP/2 Streaming, and Service Contracts](../grpc-protocol-buffers-http-2-streaming-and-service-contracts.md)

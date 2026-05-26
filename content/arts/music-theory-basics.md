@@ -82,6 +82,6 @@ Circle of fifths: visualizes key relationships. Time signatures: 4/4 (most commo
 
 ## Related Articles
 
+- [AI for Audio Processing: Speech Recognition, Music Generation, and Sound Understanding](../../ai/ai-for-audio-processing-speech-recognition-music-generation-and-sound-understanding.md)
 - [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
 - [AI Music Composition: Generative Music, Style Imitation, and Creative AI Audio](../../ai/ai-music-composition.md)
-- [AI Music and Audio Generation: Suno, Udio, and MusicLM](../../ai/ai-music-generation.md)

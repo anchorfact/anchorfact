@@ -95,5 +95,5 @@ Greenhouse effect: CO₂ and other gases trap heat. CO₂ levels: pre-industrial
 ## Related Articles
 
 - [Climate Change Solutions](../climate-change-solutions.md)
+- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../../ai/ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)
 - [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
-- [AI for Satellite Imagery: Object Detection, Change Detection, and Global Monitoring](../../ai/ai-satellite-imagery.md)

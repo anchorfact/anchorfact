@@ -102,6 +102,6 @@ Key challenges: long-range musical structure (verses, choruses, bridges spanning
 
 ## Related Articles
 
+- [AI for Audio Processing: Speech Recognition, Music Generation, and Sound Understanding](../ai-for-audio-processing-speech-recognition-music-generation-and-sound-understanding.md)
 - [AI Music Composition: Generative Music, Style Imitation, and Creative AI Audio](../ai-music-composition.md)
 - [AI Podcast Generation: Text-to-Speech Narration, AI Hosts, and Automated Audio Content](../ai-podcast-generation.md)
-- [Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning](../audio-source-separation.md)

@@ -96,5 +96,5 @@ Defense layers: firewall (packet filtering), IDS/IPS (intrusion detection/preven
 ## Related Articles
 
 - [AI in Cybersecurity: Threat Detection and LLM-Powered Defense](../../ai/ai-in-cybersecurity.md)
+- [Elliptic Curve Cryptography: Mathematics, Curves, and TLS Integration](../elliptic-curve-cryptography-mathematics-curves-and-tls-integration.md)
 - [Public Key Cryptography](../public-key-cryptography.md)
-- [Web Cryptography API](../web-cryptography-api.md)

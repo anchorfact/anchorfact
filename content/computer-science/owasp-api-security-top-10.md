@@ -83,4 +83,4 @@ API1: 2023 Broken Object Level Authorization (BOLA) — user accesses other user
 
 - [OWASP Top 10](../owasp-top-10.md)
 - [AI for Election Integrity: Disinformation Detection, Voter Analytics, and Electoral Security](../../ai/ai-election-integrity.md)
-- [AI for Network Security: Intelligent Firewalls, DDoS Mitigation, and Zero-Trust Architectures](../../ai/ai-for-network-security.md)
+- [AI for Network Security: Intrusion Detection, Threat Intelligence, and Anomaly Analysis](../../ai/ai-for-network-security-intrusion-detection-threat-intelligence-and-anomaly-analysis.md)

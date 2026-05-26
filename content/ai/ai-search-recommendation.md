@@ -5,7 +5,7 @@ schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -114,6 +114,7 @@ secondary_sources:
     url: https://doi.org/10.1016/j.inffus.2025.102981
 updated: '2026-05-24'
 ---
+
 
 ## TL;DR
 AI search and recommendation power the discovery engine of the internet -- from Google's semantic understanding to TikTok's uncannily accurate For You page to Amazon's product recommendations. Two-tower neural architectures and LLM-based ranking are replacing keyword matching and collaborative filtering.

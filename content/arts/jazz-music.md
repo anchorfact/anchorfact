@@ -81,6 +81,6 @@ Key figures: Louis Armstrong (trumpet, scat singing, defined swing), Duke Elling
 
 ## Related Articles
 
+- [AI for Audio Processing: Speech Recognition, Music Generation, and Sound Understanding](../../ai/ai-for-audio-processing-speech-recognition-music-generation-and-sound-understanding.md)
 - [AI Music Composition: Generative Music, Style Imitation, and Creative AI Audio](../../ai/ai-music-composition.md)
 - [AI Music and Audio Generation: Suno, Udio, and MusicLM](../../ai/ai-music-generation.md)
-- [Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning](../../ai/audio-source-separation.md)

@@ -99,5 +99,5 @@ Energy systems continuum: ATP-PCr (0-10s), glycolytic (10-120s), oxidative (>2mi
 ## Related Articles
 
 - [Marathon Training: Physiology, Programming, and Performance](../marathon-training-physiology-programming-and-performance.md)
-- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../../ai/3d-human-modeling.md)
-- [AI Benchmarks: MMLU, SWE-bench, and How We Measure Intelligence](../../ai/ai-benchmarks-and-evaluation.md)
+- [Strength Training: Physiology of Hypertrophy and Neural Adaptation](../strength-training-physiology-of-hypertrophy-and-neural-adaptation.md)
+- [Triathlon Training: Multi-Sport Physiology and Transitions](../triathlon-training-multi-sport-physiology-and-transitions.md)

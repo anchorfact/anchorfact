@@ -111,6 +111,6 @@ Anchor boxes were the dominant approach for years — predefined bounding box te
 
 ## Related Articles
 
+- [AI for Augmented Reality: Real-Time Object Detection, Depth Estimation, and Scene Understanding](../ai-for-augmented-reality-real-time-object-detection-depth-estimation-and-scene-understanding.md)
 - [AI for Satellite Imagery: Object Detection, Change Detection, and Global Monitoring](../ai-satellite-imagery.md)
 - [AI for Surveillance Systems: Object Tracking, Anomaly Detection, and Intelligent Monitoring](../ai-surveillance-systems.md)
-- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../ai-call-center.md)

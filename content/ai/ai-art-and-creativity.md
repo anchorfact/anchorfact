@@ -98,6 +98,6 @@ The copyright question: training on copyrighted images without permission — fa
 
 ## Related Articles
 
+- [AI for Art and Creativity: GANs, Diffusion, and Computational Aesthetics](../ai-for-art-and-creativity-gans-diffusion-and-computational-aesthetics.md)
+- [Diffusion Models: DDPM, Stable Diffusion, and Score-Based Generative Modeling](../diffusion-models-ddpm-stable-diffusion-and-score-based-generative-modeling.md)
 - [Generative AI: Models, Capabilities, and Impact](../generative-ai-overview.md)
-- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../3d-human-modeling.md)
-- [AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation](../ai-content-creation.md)

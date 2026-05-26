@@ -120,3 +120,8 @@ The trolley problem illustrates deontological vs. utilitarian reasoning. Bioethi
 - Stanford Encyclopedia of Philosophy (free, peer-reviewed)
 - Internet Encyclopedia of Philosophy
 - Justice (HarvardX — Michael Sandel)
+
+## Related Articles
+
+- [Roman Empire: Rise, Pax Romana, and the Fall of the Western Empire](../../history/roman-empire-rise-pax-romana-and-the-fall-of-the-western-empire.md)
+- [CRISPR Gene Editing: Cas9 Mechanism, Applications, and Ethical Frontiers](../../science/crispr-gene-editing-cas9-mechanism-applications-and-ethical-frontiers.md)

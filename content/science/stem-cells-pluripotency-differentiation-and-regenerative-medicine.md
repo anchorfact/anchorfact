@@ -44,3 +44,8 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [History of Medicine](../history-of-medicine.md)
+- [Immune System: Innate vs Adaptive Immunity, T Cells, and B Cells](../immune-system-innate-vs-adaptive-immunity-t-cells-and-b-cells.md)

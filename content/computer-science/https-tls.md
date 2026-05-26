@@ -183,6 +183,6 @@ Domains on the preload list are never contacted over HTTP, even on first visit. 
 
 ## Related Articles
 
+- [TLS 1.3: Transport Layer Security Protocol and Cryptographic Design](../tls-1-3-transport-layer-security-protocol-and-cryptographic-design.md)
 - [AI for Election Integrity: Disinformation Detection, Voter Analytics, and Electoral Security](../../ai/ai-election-integrity.md)
-- [AI for Network Security: Intelligent Firewalls, DDoS Mitigation, and Zero-Trust Architectures](../../ai/ai-for-network-security.md)
-- [AI Red Teaming: Security Testing for Language Models](../../ai/ai-red-teaming-and-safety.md)
+- [AI for Network Security: Intrusion Detection, Threat Intelligence, and Anomaly Analysis](../../ai/ai-for-network-security-intrusion-detection-threat-intelligence-and-anomaly-analysis.md)

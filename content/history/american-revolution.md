@@ -117,6 +117,6 @@ Causes: 'No taxation without representation,' Boston Tea Party (1773). Key battl
 
 ## Related Articles
 
+- [AI for Protein Structure Prediction: AlphaFold and the Folding Revolution](../../ai/ai-for-protein-structure-prediction-alphafold-and-the-folding-revolution.md)
 - [AI for Science: AlphaFold and the AI-Driven Discovery Revolution](../../ai/ai-for-science.md)
 - [AI Protein Design: RFDiffusion, ProteinMPNN, and the Nobel Revolution](../../ai/ai-protein-design.md)
-- [South American Geography and Biodiversity](../../geography/south-american-geography.md)

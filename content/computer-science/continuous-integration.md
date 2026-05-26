@@ -94,3 +94,4 @@ CI pipeline: commit → build → unit tests → integration tests → code anal
 
 - [Decentralized AI: Distributed Inference, Peer-to-Peer Networks, and Blockchain Integration](../../ai/decentralized-ai.md)
 - [Multi-Omics Integration: AI-Driven Systems Biology from Genomics to Proteomics](../../ai/multi-omics-integration.md)
+- [Elliptic Curve Cryptography: Mathematics, Curves, and TLS Integration](../elliptic-curve-cryptography-mathematics-curves-and-tls-integration.md)

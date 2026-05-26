@@ -87,4 +87,6 @@ Patterns: Point-to-Point (one consumer), Publish-Subscribe (many consumers), Com
 
 ## Related Articles
 
+- [Graph Neural Networks: Message Passing, Applications, and Frontiers](../../ai/graph-neural-networks-message-passing-applications-and-frontiers.md)
 - [Graph Neural Networks: Message Passing and Applications](../../ai/graph-neural-networks.md)
+- [NATS and Message Brokers: Pub-Sub, Request-Reply, and Queue Groups](../nats-and-message-brokers-pub-sub-request-reply-and-queue-groups.md)

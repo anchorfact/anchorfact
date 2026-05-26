@@ -110,4 +110,4 @@ Modern reforms address weaknesses: p-hacking, publication bias, low statistical 
 
 - [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
 - [Music Theory Basics](../../arts/music-theory-basics.md)
-- [Leadership Theory and Organizational Behavior](../../business/leadership-and-organizational-behavior.md)
+- [Game Theory: Nash Equilibrium, Zero-Sum Games, and Strategic Interaction](../../business/game-theory-nash-equilibrium-zero-sum-games-and-strategic-interaction.md)

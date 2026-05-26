@@ -45,3 +45,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [AI for Retail: Cashierless Stores, Dynamic Pricing, and Personalized Shopping](../../ai/ai-for-retail.md)
+- [GPT (Generative Pre-trained Transformer) Model Family](../../ai/gpt-models.md)
+- [Large Language Model Training: Scaling Laws, Data Curation, and Compute](../../ai/large-language-model-training-scaling-laws-data-curation-and-compute.md)

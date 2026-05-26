@@ -44,3 +44,9 @@ Before zones: 144 local times in US by 1870. Sir Sandford Fleming proposed 24-zo
 
 ---
 > 本文内容由 AnchorFact Pipeline 生成。
+
+## Related Articles
+
+- [World Climate Zones: Classification and Characteristics](../world-climate-zones-classification-and-characteristics.md)
+- [Geological Time Scale and Earth History](../../science/geological-time.md)
+- [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../../ai/3d-generation-gaussian-splatting.md)

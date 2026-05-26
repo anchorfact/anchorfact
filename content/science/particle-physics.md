@@ -124,6 +124,6 @@ The Standard Model is incomplete — it does not explain dark matter, dark energ
 
 ## Related Articles
 
+- [The Standard Model of Particle Physics: Quarks, Leptons, and Fundamental Forces](../the-standard-model-of-particle-physics-quarks-leptons-and-fundamental-forces.md)
+- [The Standard Model of Cosmology: ΛCDM, Inflation, and the Cosmic Web](../the-standard-model-of-cosmology-cdm-inflation-and-the-cosmic-web.md)
 - [GPT (Generative Pre-trained Transformer) Model Family](../../ai/gpt-models.md)
-- [Model Context Protocol (MCP)](../../ai/mcp.md)
-- [Model Compression: Pruning, Quantization, and Distillation](../../ai/model-compression.md)

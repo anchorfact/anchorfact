@@ -44,3 +44,9 @@ Phases: catch, drive (legs→back→arms, peak force 800-1,200N), finish, recove
 
 ---
 > 本文内容由 AnchorFact Pipeline 生成。
+
+## Related Articles
+
+- [Market Structures: Perfect Competition, Monopoly, Oligopoly, and Contestability](../../business/market-structures-perfect-competition-monopoly-oligopoly-and-contestability.md)
+- [Combat Sports: Biomechanics of Striking and Grappling](../combat-sports-biomechanics-of-striking-and-grappling.md)
+- [Parkour: Movement Efficiency, Biomechanics, and Urban Athletics](../parkour-movement-efficiency-biomechanics-and-urban-athletics.md)

@@ -97,6 +97,6 @@ Memory: paging (fixed-size pages ← page table → frames), segmentation (logic
 
 ## Related Articles
 
+- [File Systems: FAT, NTFS, ext4, ZFS — Design, Performance, and Reliability](../file-systems-fat-ntfs-ext4-zfs-design-performance-and-reliability.md)
 - [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../../ai/ai-blockchain.md)
 - [AI Content Moderation Platforms: Large-Scale Safety Systems, Policy Engines, and Multilingual Review](../../ai/ai-content-moderation-platforms.md)
-- [AI for Disaster Prediction: Earthquake Forecasting, Flood Detection, and Early Warning Systems](../../ai/ai-disaster-prediction.md)

@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Attention Mechanisms: Scaled Dot-Product to FlashAttention](../../ai/attention-mechanisms-deep-dive.md)
+- [Multimodal Search: Cross-Modal Retrieval, Product Search, and Multimodal Embeddings](../../ai/multimodal-search.md)
+- [Inflation: Causes, Measurement, and Central Bank Policy](../inflation-causes-measurement-and-central-bank-policy.md)

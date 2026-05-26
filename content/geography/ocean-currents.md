@@ -96,4 +96,4 @@ atomic_facts:
 
 - [Ocean Currents: The Global Conveyor Belt](../ocean-currents-the-global-conveyor-belt.md)
 - [AI for Ocean Monitoring: Marine Life Detection, Plastic Pollution Tracking, and Oceanographic AI](../../ai/ai-for-ocean-monitoring.md)
-- [Ocean Life](../../science/ocean-life.md)
+- [Ocean Acidification: CO2-Driven Chemistry Changes and Marine Ecosystem Impacts](../../science/ocean-acidification-co2-driven-chemistry-changes-and-marine-ecosystem-impacts.md)

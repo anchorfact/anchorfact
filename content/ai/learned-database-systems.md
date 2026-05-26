@@ -95,6 +95,6 @@ RMI (Recursive Model Index): hierarchy of simple models. Stage 1 model: broad po
 
 ## Related Articles
 
+- [Database Indexing: B-Trees, Hash Indexes, and Query Optimization](../../computer-science/database-indexing-b-trees-hash-indexes-and-query-optimization.md)
 - [Multi-Omics Integration: AI-Driven Systems Biology from Genomics to Proteomics](../multi-omics-integration.md)
-- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../ai-blockchain.md)
-- [AI Content Moderation Platforms: Large-Scale Safety Systems, Policy Engines, and Multilingual Review](../ai-content-moderation-platforms.md)
+- [SQL Query Optimization: Join Algorithms, Cost Models, and Index Selection](../../computer-science/sql-query-optimization-join-algorithms-cost-models-and-index-selection.md)

@@ -104,5 +104,5 @@ Cooperative MARL: agents share a team reward (traffic light control, warehouse r
 ## Related Articles
 
 - [AI for Algorithmic Trading: Reinforcement Learning, Market Prediction, and Quantitative Finance](../ai-for-algorithmic-trading.md)
+- [AI for Chip Design: Reinforcement Learning for EDA and Floorplanning](../ai-for-chip-design-reinforcement-learning-for-eda-and-floorplanning.md)
 - [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../ai-for-chip-design.md)
-- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../ai-for-gaming-theory.md)

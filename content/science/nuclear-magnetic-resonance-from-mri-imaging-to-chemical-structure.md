@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Chemical Bonding: From Orbitals to Molecular Structure](../chemical-bonding.md)
+- [AI for Medical Imaging: Radiology AI, Computer-Aided Diagnosis, and Clinical Deployment](../../ai/ai-for-medical-imaging.md)
+- [AI for Nuclear Fusion: Plasma Control, Disruption Prediction, and Accelerated Discovery](../../ai/ai-for-nuclear-fusion.md)

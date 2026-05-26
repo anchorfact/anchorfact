@@ -73,6 +73,6 @@ Vitamin D: deficiency linked to increased respiratory infections. Zinc: reduces 
 
 ## Related Articles
 
+- [Immune System: Innate vs Adaptive Immunity, T Cells, and B Cells](../../science/immune-system-innate-vs-adaptive-immunity-t-cells-and-b-cells.md)
 - [Immune System](../../science/immune-system.md)
-- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
-- [AI for Digital Twins: Real-Time Simulation, Predictive Maintenance, and System Optimization](../../ai/ai-for-digital-twins.md)
+- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../../ai/ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)

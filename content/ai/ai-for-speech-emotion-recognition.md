@@ -111,5 +111,5 @@ Modern SER architectures: (1) Self-supervised speech foundation models (wav2vec 
 ## Related Articles
 
 - [Affective Computing: Multimodal Emotion Recognition, Sentiment Analysis, and Empathetic AI](../affective-computing.md)
+- [AI for Audio Processing: Speech Recognition, Music Generation, and Sound Understanding](../ai-for-audio-processing-speech-recognition-music-generation-and-sound-understanding.md)
 - [AI for Mental Health: LLM-Based Therapy, Digital Interventions, and Clinical Trials](../ai-for-mental-health.md)
-- [Speech Recognition: From HMMs to Whisper](../speech-recognition.md)

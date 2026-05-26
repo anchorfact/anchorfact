@@ -89,3 +89,7 @@ Roles: Product Owner (WHAT to build), Scrum Master (HOW to Scrum), Developers (b
 ## Further Reading
 
 - [The Scrum Guide (Schwaber & Sutherland)](undefined)
+
+## Related Articles
+
+- [OAuth 2.0: Authorization Framework and Security Best Practices](../oauth-2-0-authorization-framework-and-security-best-practices.md)

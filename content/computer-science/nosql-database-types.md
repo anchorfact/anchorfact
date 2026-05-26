@@ -88,4 +88,4 @@ Key-Value: simplest — `get/set` by key, ultra-fast, no query language. Documen
 
 - [Learned Database Systems: AI-Driven Query Optimization, Learned Indexes, and Cardinality Estimation](../../ai/learned-database-systems.md)
 - [Text-to-SQL: Natural Language Database Querying with Large Language Models](../../ai/text-to-sql.md)
-- [Database Indexing](../database-indexing.md)
+- [Unemployment: Types, Measurement, and Labor Market Dynamics](../../business/unemployment-types-measurement-and-labor-market-dynamics.md)

@@ -99,6 +99,6 @@ NeRF training: for each training image, sample random pixels, cast rays, minimiz
 
 ## Related Articles
 
+- [NeRF: Neural Radiance Fields for View Synthesis](../nerf-neural-radiance-fields-for-view-synthesis.md)
+- [Neural Radiance Fields (NeRF): 3D Scene Representation from Images](../../computer-science/neural-radiance-fields-nerf-3d-scene-representation-from-images.md)
 - [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../3d-generation-gaussian-splatting.md)
-- [Neural Style Transfer: Artistic Rendering, Image-to-Image Translation, and Creative AI](../neural-style-transfer.md)
-- [Program Synthesis and Formal Verification: Neural Theorem Proving with LLMs](../program-synthesis-verification.md)

@@ -96,5 +96,5 @@ Tools: Prometheus (metrics, pull-based), Grafana (dashboards), ELK/OpenSearch (l
 ## Related Articles
 
 - [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../../ai/ai-air-quality.md)
+- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../../ai/ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)
 - [AI for Construction: Computer Vision Safety, BIM Digital Twins, and Automated Project Monitoring](../../ai/ai-for-construction.md)
-- [AI for Ocean Monitoring: Marine Life Detection, Plastic Pollution Tracking, and Oceanographic AI](../../ai/ai-for-ocean-monitoring.md)

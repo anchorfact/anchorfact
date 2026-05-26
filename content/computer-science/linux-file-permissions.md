@@ -82,6 +82,6 @@ Octal notation: `chmod 755` = rwxr-xr-x. Special bits: setuid (4000, run as file
 
 ## Related Articles
 
+- [File Systems: FAT, NTFS, ext4, ZFS — Design, Performance, and Reliability](../file-systems-fat-ntfs-ext4-zfs-design-performance-and-reliability.md)
 - [Linux Kernel Modules](../linux-kernel-modules.md)
-- [Linux Process Management](../linux-process-management.md)
-- [Linux](../linux.md)
+- [Linux Kernel: Process Scheduling, Memory Management, and System Calls](../linux-kernel-process-scheduling-memory-management-and-system-calls.md)

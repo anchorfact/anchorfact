@@ -89,4 +89,4 @@ Unity 是 Unity Technologies 开发的跨平台游戏引擎，首次发布于 20
 
 - [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
 - [Backpropagation: The Engine of Neural Network Learning](../../ai/backpropagation.md)
-- [game art pipeline](../game-art-pipeline.md)
+- [Game Theory: Nash Equilibrium, Zero-Sum Games, and Strategic Interaction](../../business/game-theory-nash-equilibrium-zero-sum-games-and-strategic-interaction.md)

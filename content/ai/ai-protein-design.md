@@ -103,6 +103,6 @@ RFDdiffusion uses a denoising diffusion process on protein backbone coordinates 
 
 ## Related Articles
 
-- [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../ai-for-chip-design.md)
-- [AI for Science: AlphaFold and the AI-Driven Discovery Revolution](../ai-for-science.md)
-- [Neural Architecture Search: Automated Design of Deep Neural Networks](../neural-architecture-search.md)
+- [AI for Protein Design: Diffusion Models, Sequence Generation, and Functional Optimization](../ai-for-protein-design-diffusion-models-sequence-generation-and-functional-optimization.md)
+- [AI for Protein Structure Prediction: AlphaFold and the Folding Revolution](../ai-for-protein-structure-prediction-alphafold-and-the-folding-revolution.md)
+- [AI for Chip Design: Reinforcement Learning for EDA and Floorplanning](../ai-for-chip-design-reinforcement-learning-for-eda-and-floorplanning.md)

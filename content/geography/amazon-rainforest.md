@@ -119,6 +119,6 @@ atomic_facts:
 
 ## Related Articles
 
+- [Amazon Rainforest: Biodiversity, Carbon Storage, and Threats](../amazon-rainforest-biodiversity-carbon-storage-and-threats.md)
 - [Amazon FBA (Fulfillment by Amazon)](../../business/amazon-fba-fulfillment-by-amazon.md)
 - [Product Listing Optimization (Amazon)](../../business/product-listing-optimization-amazon.md)
-- [Amazon Web Services (AWS)](../../computer-science/amazon-web-services-aws.md)

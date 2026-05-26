@@ -109,4 +109,4 @@ LoRA typically applies to attention projection matrices (W_q, W_v). Rank r=8-64 
 
 - [Efficient and Green AI: Reducing the Carbon Footprint of Machine Learning](../efficient-green-ai.md)
 - [Instruction Tuning: Teaching LLMs to Follow Directions](../instruction-tuning.md)
-- [LoRA (Low-Rank Adaptation)](../lora.md)
+- [LoRA: Low-Rank Adaptation of Large Language Models](../lora-low-rank-adaptation-of-large-language-models.md)

@@ -186,6 +186,6 @@ Stable Diffusion was trained on **LAION-5B**, a dataset of 5.85 billion image-te
 
 ## Related Articles
 
+- [AI for Protein Design: Diffusion Models, Sequence Generation, and Functional Optimization](../ai-for-protein-design-diffusion-models-sequence-generation-and-functional-optimization.md)
 - [AI for Tabular Data: Synthetic Generation, Diffusion Models, and Privacy-Preserving Structured Data](../ai-for-tabular-data.md)
-- [Diffusion Models in Depth: From DDPM to Stable Diffusion](../latent-diffusion-models.md)
-- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../3d-human-modeling.md)
+- [Diffusion Models: DDPM, Stable Diffusion, and Score-Based Generative Modeling](../diffusion-models-ddpm-stable-diffusion-and-score-based-generative-modeling.md)

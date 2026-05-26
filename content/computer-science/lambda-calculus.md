@@ -85,4 +85,5 @@ Three constructs: variables (x), abstraction (λx.M — function definition), ap
 
 ## Related Articles
 
+- [Lambda Calculus: Foundations of Functional Programming and Computation](../lambda-calculus-foundations-of-functional-programming-and-computation.md)
 - [Causal AI: From Correlation to Causation with do-Calculus](../../ai/causal-inference-ai.md)

@@ -105,5 +105,5 @@ Key research directions: (1) Fill-in-the-middle (FIM) training -- models learn t
 ## Related Articles
 
 - [AI for Software Testing: Automated Test Generation, Fuzzing, and Quality Assurance](../ai-for-software-testing.md)
-- [Software Engineering: Design Principles and Development Methodologies](../../computer-science/software-engineering-principles.md)
-- [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../3d-generation-gaussian-splatting.md)
+- [Design Patterns: Gang of Four Patterns in Modern Software Engineering](../../computer-science/design-patterns-gang-of-four-patterns-in-modern-software-engineering.md)
+- [Interpreters and Compilers: Lexing, Parsing, and Code Generation](../../computer-science/interpreters-and-compilers-lexing-parsing-and-code-generation.md)

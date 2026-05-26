@@ -126,3 +126,5 @@ Historical: Alfred Wegener proposed continental drift (1912) but couldn't explai
 ## Related Articles
 
 - [Plate Tectonics: The Unifying Theory of Earth Sciences](../../geography/plate-tectonics-theory.md)
+- [Continental Drift and Plate Tectonics: Wegener to Modern Geodynamics](../continental-drift-and-plate-tectonics-wegener-to-modern-geodynamics.md)
+- [Plate Tectonics: Continental Drift, Seafloor Spreading, and Subduction](../plate-tectonics-continental-drift-seafloor-spreading-and-subduction.md)

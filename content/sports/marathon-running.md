@@ -99,3 +99,4 @@ atomic_facts:
 
 - [Running Fundamentals](../../health/running-fundamentals.md)
 - [Marathon Training: Physiology, Programming, and Performance](../marathon-training-physiology-programming-and-performance.md)
+- [Running Biomechanics: Gait Analysis, Foot Strike, and Efficiency](../running-biomechanics-gait-analysis-foot-strike-and-efficiency.md)

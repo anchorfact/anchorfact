@@ -66,5 +66,5 @@ Key models: (1) Wallas's 4-stage model (1926): preparation → incubation → il
 ## Related Articles
 
 - [AI Art and Creativity: Generative Models and Authorship](../../ai/ai-art-and-creativity.md)
-- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
-- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../../ai/ai-for-complex-networks.md)
+- [AI for Art and Creativity: GANs, Diffusion, and Computational Aesthetics](../../ai/ai-for-art-and-creativity-gans-diffusion-and-computational-aesthetics.md)
+- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../../ai/ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)

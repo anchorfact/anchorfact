@@ -104,3 +104,7 @@ Kant: the beautiful produces 'free play' of imagination and understanding, pleas
 ## Further Reading
 
 - [Critique of Judgment (Immanuel Kant, 1790)](https://www.cambridge.org/core/books/kants-critique-of-the-power-of-judgment/)
+
+## Related Articles
+
+- [AI for Art and Creativity: GANs, Diffusion, and Computational Aesthetics](../../ai/ai-for-art-and-creativity-gans-diffusion-and-computational-aesthetics.md)

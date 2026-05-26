@@ -50,3 +50,9 @@ updated: '2026-05-25'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Protein Structure Prediction: AlphaFold, RoseTTAFold, and AI-Driven Structural Biology](../protein-structure-prediction.md)
+- [Protein Folding: Anfinsen's Dogma, Chaperones, and AlphaFold](../../science/protein-folding-anfinsen-s-dogma-chaperones-and-alphafold.md)
+- [AI for Genomics: Variant Calling, Gene Expression Prediction, and Protein-DNA Binding](../ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md)

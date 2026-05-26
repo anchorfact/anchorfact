@@ -108,3 +108,7 @@ OAuth 2.0 is an authorization framework standardized as IETF RFC 6749 (2012) tha
 
 - [RFC 6749](https://www.rfc-editor.org/rfc/rfc6749): OAuth 2.0 specification
 - [OAuth 2.1 Draft](https://datatracker.ietf.org/doc/draft-ietf-oauth-v2-1/): Consolidation and security best practices
+
+## Related Articles
+
+- [OAuth 2.0: Authorization Framework and Security Best Practices](../oauth-2-0-authorization-framework-and-security-best-practices.md)

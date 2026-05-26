@@ -101,6 +101,6 @@ Applications: molecular property prediction (GNN scores candidates for drug disc
 
 ## Related Articles
 
+- [Graph Neural Networks: Message Passing, Applications, and Frontiers](../graph-neural-networks-message-passing-applications-and-frontiers.md)
 - [AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime](../ai-for-fraud-detection.md)
 - [Activation Functions in Neural Networks](../activation-functions.md)
-- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../ai-for-complex-networks.md)

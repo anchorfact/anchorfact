@@ -103,4 +103,6 @@ Ming Dynasty sections (near Beijing) are the most visited (Badaling, Mutianyu). 
 
 ## Related Articles
 
+- [Great Barrier Reef: Ecology, Coral Bleaching, and Conservation](../../geography/great-barrier-reef-ecology-coral-bleaching-and-conservation.md)
+- [Great Lakes: Hydrology, Ecology, and Transboundary Management](../../geography/great-lakes-hydrology-ecology-and-transboundary-management.md)
 - [Great Depression](../great-depression.md)

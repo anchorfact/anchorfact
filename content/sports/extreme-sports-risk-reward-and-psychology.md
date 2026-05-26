@@ -49,4 +49,4 @@ The "flow state" (Csikszentmihalyi 1990) — complete absorption in the activity
 
 - [Sports Psychology: Mental Skills for Peak Performance](../sports-psychology-performance.md)
 - [Sports Psychology Fundamentals](../sports-psychology.md)
-- [AI for Crisis Hotlines: Suicide Prevention Chatbots, Emotional Support AI, and Risk Detection](../../ai/ai-for-crisis-hotlines.md)
+- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../../ai/ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)

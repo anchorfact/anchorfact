@@ -80,6 +80,6 @@ Game code emits audio parameters → Middleware processes mixing/routing → Pla
 
 ## Related Articles
 
+- [AI for Audio Processing: Speech Recognition, Music Generation, and Sound Understanding](../../ai/ai-for-audio-processing-speech-recognition-music-generation-and-sound-understanding.md)
 - [AI for Audio Processing: Sound Event Detection, Acoustic Scene Analysis, and Environmental Intelligence](../../ai/ai-for-audio-processing.md)
-- [Game Design Document (GDD)](../game-design-document-gdd.md)
-- [Game User Interface and UX Design](../game-ui-ux-design.md)
+- [File Systems: FAT, NTFS, ext4, ZFS — Design, Performance, and Reliability](../../computer-science/file-systems-fat-ntfs-ext4-zfs-design-performance-and-reliability.md)

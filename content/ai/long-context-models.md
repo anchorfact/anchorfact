@@ -105,4 +105,4 @@ Key techniques: Rotary Position Embedding (RoPE) interpolation; Ring Attention d
 
 - [AI Red Teaming: Security Testing for Language Models](../ai-red-teaming-and-safety.md)
 - [Large Language Models (LLMs)](../llms.md)
-- [Low-Resource NLP: Multilingual Models, Endangered Language Preservation, and Translation](../low-resource-nlp.md)
+- [LoRA: Low-Rank Adaptation of Large Language Models](../lora-low-rank-adaptation-of-large-language-models.md)

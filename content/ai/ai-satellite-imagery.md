@@ -92,6 +92,7 @@ updated: '2026-05-24'
 ---
 
 
+
 ## TL;DR
 AI sees the planet from space -- counting ships at sea, detecting new construction, monitoring crop health, and mapping humanitarian crises. From NASA's open-source Prithvi model to commercial geospatial intelligence platforms, foundation models are democratizing satellite AI.
 
@@ -104,5 +105,5 @@ Ship detection: xView and DOTA datasets -- annotated satellite images with 60+ o
 ## Related Articles
 
 - [AI for Surveillance Systems: Object Tracking, Anomaly Detection, and Intelligent Monitoring](../ai-surveillance-systems.md)
+- [AI for Augmented Reality: Real-Time Object Detection, Depth Estimation, and Scene Understanding](../ai-for-augmented-reality-real-time-object-detection-depth-estimation-and-scene-understanding.md)
 - [AI for Ocean Monitoring: Marine Life Detection, Plastic Pollution Tracking, and Oceanographic AI](../ai-for-ocean-monitoring.md)
-- [AI for Video Surveillance: Intelligent Monitoring, Anomaly Detection, and Privacy-Preserving Analytics](../ai-for-video-surveillance.md)

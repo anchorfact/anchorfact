@@ -73,5 +73,5 @@ Copernicus: earth orbits sun (De Revolutionibus, 1543) — published on his deat
 ## Related Articles
 
 - [The Scientific Revolution: From Copernicus to Newton](../../history/scientific-revolution.md)
+- [AI for Protein Structure Prediction: AlphaFold and the Folding Revolution](../../ai/ai-for-protein-structure-prediction-alphafold-and-the-folding-revolution.md)
 - [AI for Science: AlphaFold and the AI-Driven Discovery Revolution](../../ai/ai-for-science.md)
-- [AI Protein Design: RFDiffusion, ProteinMPNN, and the Nobel Revolution](../../ai/ai-protein-design.md)

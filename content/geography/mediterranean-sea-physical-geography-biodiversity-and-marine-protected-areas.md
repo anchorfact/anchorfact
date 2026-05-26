@@ -44,3 +44,9 @@ Strait of Gibraltar: 14.3 km wide, Atlantic inflow ~1 Sv. Sub-basins: Western, C
 
 ---
 > 本文内容由 AnchorFact Pipeline 生成。
+
+## Related Articles
+
+- [Coral Triangle: Marine Biodiversity Hotspot in Southeast Asia](../coral-triangle-marine-biodiversity-hotspot-in-southeast-asia.md)
+- [South American Geography and Biodiversity](../south-american-geography.md)
+- [AI for Ocean Monitoring: Marine Life Detection, Plastic Pollution Tracking, and Oceanographic AI](../../ai/ai-for-ocean-monitoring.md)

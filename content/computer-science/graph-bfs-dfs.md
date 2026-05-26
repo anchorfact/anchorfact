@@ -117,4 +117,4 @@ Adjacency list: O(V+E) space, good for sparse graphs. Adjacency matrix: O(V²) s
 
 - [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../../ai/ai-for-complex-networks.md)
 - [AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime](../../ai/ai-for-fraud-detection.md)
-- [Graph Neural Networks: Message Passing and Applications](../../ai/graph-neural-networks.md)
+- [Graph Neural Networks: Message Passing, Applications, and Frontiers](../../ai/graph-neural-networks-message-passing-applications-and-frontiers.md)

@@ -92,5 +92,5 @@ Clinical CDSS: Epic Deterioration Index analyzes EHR data (vital signs, lab resu
 ## Related Articles
 
 - [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../ai-blockchain.md)
+- [Cognitive Load Theory: Optimizing Learning and Decision Making](../../self-improvement/cognitive-load-theory-optimizing-learning-and-decision-making.md)
 - [The Psychology of Decision Making](../../self-improvement/decision-making-psychology.md)
-- [Decision Making](../../self-improvement/decision-making.md)

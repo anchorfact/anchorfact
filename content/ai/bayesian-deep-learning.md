@@ -1,12 +1,12 @@
 ---
 id: bayesian-deep-learning
-title: "Bayesian Deep Learning: Uncertainty Quantification and Robust Predictions"
+title: 'Bayesian Deep Learning: Uncertainty Quantification and Robust Predictions'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-26'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -43,12 +43,20 @@ primary_sources:
     year: 2017
     institution: NeurIPS
     url: https://arxiv.org/abs/1612.01474
+  - title: Uncertainty Quantification For Turbulent Flows with Machine Learning
+    authors:
+      - Minghan Chu
+      - Weicheng Qian
+    year: 2023
+    url: https://arxiv.org/abs/2310.11435v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Real-time Bayesian inference on large models
   - Out-of-distribution detection guarantees
 disputed_statements: []
 secondary_sources:
-  - title: "Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning"
+  - title: 'Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning'
     type: conference_paper
     year: 2016
     authors:
@@ -93,8 +101,9 @@ secondary_sources:
       - Wierstra, Daan
     institution: Google DeepMind / ICML
     url: https://arxiv.org/abs/1505.05424
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Bayesian Deep Learning equips neural networks with uncertainty estimates — knowing when the model is likely to be wrong. From Monte Carlo Dropout to Deep Ensembles and modern Bayesian approximations, UQ is critical for safety-critical AI (medical, autonomous driving, finance).
 

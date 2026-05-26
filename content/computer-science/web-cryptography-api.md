@@ -87,5 +87,5 @@ Supported algorithms: SHA-256/384/512, HMAC, AES-CBC/GCM/CTR, RSA-OAEP/PSS, ECDS
 ## Related Articles
 
 - [Web Storage API](../web-storage-api.md)
+- [WebGPU: Next-Generation Web Graphics and Compute API](../webgpu-next-generation-web-graphics-and-compute-api.md)
 - [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../../ai/ai-for-data-curation.md)
-- [Semantic Web and Ontologies: Knowledge Representation, OWL Reasoning, and Linked Data](../../ai/semantic-web-ontology.md)

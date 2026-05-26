@@ -93,5 +93,5 @@ Compound exercises (multi-joint): squat, deadlift, bench press, overhead press, 
 ## Related Articles
 
 - [Strength Training Principles](../strength-training-principles.md)
+- [Strength Training: Physiology of Hypertrophy and Neural Adaptation](../../sports/strength-training-physiology-of-hypertrophy-and-neural-adaptation.md)
 - [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../../ai/ai-for-data-curation.md)
-- [AI Training Data Curation: Quality at Scale](../../ai/ai-training-data-curation.md)

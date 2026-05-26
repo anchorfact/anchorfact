@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [CAP Theorem in Practice: Consistency, Availability, and Partition Tolerance Trade-offs](../cap-theorem-in-practice-consistency-availability-and-partition-tolerance-trade-offs.md)
+- [CAP Theorem](../cap-theorem.md)
+- [AI for Mathematical Reasoning: Theorem Proving, Symbolic Computation, and Autoformalization](../../ai/ai-for-mathematical-reasoning-theorem-proving-symbolic-computation-and-autoformalization.md)

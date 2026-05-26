@@ -89,4 +89,5 @@ Key figures: Leonardo da Vinci (Mona Lisa, inventor, anatomist — Renaissance M
 ## Related Articles
 
 - [Renaissance Art](../../arts/renaissance-art.md)
+- [Renaissance: Humanism, Art, and the Rebirth of Classical Learning](../renaissance-humanism-art-and-the-rebirth-of-classical-learning.md)
 - [Renaissance Science](../renaissance-science.md)

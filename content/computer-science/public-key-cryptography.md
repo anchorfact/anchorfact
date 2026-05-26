@@ -83,4 +83,4 @@ RSA: security based on difficulty of factoring large numbers. ECC: smaller keys 
 
 - [AI for Public Health: Disease Surveillance, Outbreak Prediction, and Population Health Analytics](../../ai/ai-public-health.md)
 - [Cybersecurity: Threats, Cryptography, and Defense](../cybersecurity-fundamentals.md)
-- [Web Cryptography API](../web-cryptography-api.md)
+- [Elliptic Curve Cryptography: Mathematics, Curves, and TLS Integration](../elliptic-curve-cryptography-mathematics-curves-and-tls-integration.md)

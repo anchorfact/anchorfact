@@ -92,5 +92,5 @@ ScienceDirect 2025 DL vulnerability survey: models include CNN (token-level), RN
 ## Related Articles
 
 - [AI for Audio Processing: Sound Event Detection, Acoustic Scene Analysis, and Environmental Intelligence](../ai-for-audio-processing.md)
+- [AI for Network Security: Intrusion Detection, Threat Intelligence, and Anomaly Analysis](../ai-for-network-security-intrusion-detection-threat-intelligence-and-anomaly-analysis.md)
 - [AI for Legal Contracts: Automated Drafting, Clause Analysis, and Due Diligence](../ai-legal-contracts.md)
-- [AI Smart Contract Auditing: Vulnerability Detection, Formal Verification, and Blockchain Security](../ai-smart-contract-audit.md)

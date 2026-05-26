@@ -97,6 +97,6 @@ Nature 2025 NIDS evaluation: Random Forest achieved the best F1 for supervised d
 
 ## Related Articles
 
+- [AI for Network Security: Intrusion Detection, Threat Intelligence, and Anomaly Analysis](../ai-for-network-security-intrusion-detection-threat-intelligence-and-anomaly-analysis.md)
 - [AI in Cybersecurity: Threat Detection and LLM-Powered Defense](../ai-in-cybersecurity.md)
 - [AI for Network Security: Intelligent Firewalls, DDoS Mitigation, and Zero-Trust Architectures](../ai-for-network-security.md)
-- [AI for Video Surveillance: Intelligent Monitoring, Anomaly Detection, and Privacy-Preserving Analytics](../ai-for-video-surveillance.md)

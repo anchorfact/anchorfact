@@ -49,4 +49,4 @@ Resilience research originates from developmental psychology (Werner & Smith, lo
 
 - [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../../ai/ai-for-complex-networks.md)
 - [AI for Supply Chain Risk: Disruption Prediction, Supplier Monitoring, and Resilience Analytics](../../ai/ai-supply-chain-risk.md)
-- [player psychology](../../game-development/player-psychology.md)
+- [Behavioral Economics: Kahneman, Tversky, and the Psychology of Irrational Decisions](../../business/behavioral-economics-kahneman-tversky-and-the-psychology-of-irrational-decisions.md)

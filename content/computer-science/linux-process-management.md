@@ -82,6 +82,6 @@ Signals: SIGTERM (15, graceful), SIGKILL (9, cannot be caught), SIGSTOP (19, sus
 
 ## Related Articles
 
+- [Linux Kernel: Process Scheduling, Memory Management, and System Calls](../linux-kernel-process-scheduling-memory-management-and-system-calls.md)
 - [AI for Fleet Management: Predictive Maintenance, Route Optimization, and Telematics](../../ai/ai-fleet-management.md)
 - [AI for Inventory Management: Demand Forecasting, Stock Optimization, and Automated Replenishment](../../ai/ai-inventory-management.md)
-- [AI for Water Management: Leak Detection, Quality Monitoring, and Smart Irrigation](../../ai/ai-water-management.md)

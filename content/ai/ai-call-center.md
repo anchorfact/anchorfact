@@ -91,6 +91,6 @@ Cresta: real-time agent assist using GPT-4. Features: instant knowledge surfacin
 
 ## Related Articles
 
+- [AI for Augmented Reality: Real-Time Object Detection, Depth Estimation, and Scene Understanding](../ai-for-augmented-reality-real-time-object-detection-depth-estimation-and-scene-understanding.md)
 - [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../3d-generation-gaussian-splatting.md)
 - [AI for Election Integrity: Disinformation Detection, Voter Analytics, and Electoral Security](../ai-election-integrity.md)
-- [AI for Augmented Reality: Real-Time Scene Understanding, Spatial Computing, and Contextual Overlays](../ai-for-augmented-reality.md)

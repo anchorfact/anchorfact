@@ -92,5 +92,5 @@ AlphaQubit (DeepMind, Nature 2024): RL-based decoding of surface codes. Trained 
 ## Related Articles
 
 - [Quantum Machine Learning: Tensor Networks, QNNs, and Error Mitigation](../quantum-machine-learning.md)
+- [Error Correction Codes: Hamming, Reed-Solomon, and LDPC](../../computer-science/error-correction-codes-hamming-reed-solomon-and-ldpc.md)
 - [Affective Computing: Multimodal Emotion Recognition, Sentiment Analysis, and Empathetic AI](../affective-computing.md)
-- [AI for Digital Marketing: Personalization, Campaign Optimization, and Customer Analytics](../ai-digital-marketing.md)

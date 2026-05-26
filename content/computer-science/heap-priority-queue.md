@@ -79,3 +79,7 @@ Binary heap is the most common implementation. Heapify (construction): O(n) bott
 ## Further Reading
 
 - [Introduction to Algorithms (CLRS)](undefined)
+
+## Related Articles
+
+- [NATS and Message Brokers: Pub-Sub, Request-Reply, and Queue Groups](../nats-and-message-brokers-pub-sub-request-reply-and-queue-groups.md)

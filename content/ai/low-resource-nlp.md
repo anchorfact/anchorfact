@@ -126,6 +126,6 @@ Machine translation for low-resource: the IEEE 2025 survey on low-resource MT do
 
 ## Related Articles
 
+- [LoRA: Low-Rank Adaptation of Large Language Models](../lora-low-rank-adaptation-of-large-language-models.md)
 - [AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation](../ai-code-translation.md)
 - [AI Democratization: Open-Source Models, Low-Code AI, and Accessible Machine Learning](../ai-for-democratization.md)
-- [AI Language Translation and Interpretation: LLM-Based Translation, Simultaneous Interpretation, and Quality Estimation](../ai-language-translation-interpretation.md)

@@ -78,6 +78,6 @@ Cerebral cortex: folded outer layer, 4 lobes (frontal: planning/personality, par
 
 ## Related Articles
 
+- [Human Brain: Structure, Functional Regions, and the Connectome](../human-brain-structure-functional-regions-and-the-connectome.md)
 - [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../../ai/3d-human-modeling.md)
-- [Brain-Computer Interfaces: AI-Powered Neural Decoding and Neurotechnology](../../ai/brain-computer-interface-ai.md)
-- [Cognitive Architectures: ACT-R, Soar, and Computational Models of Human-Like Reasoning](../../ai/cognitive-architectures.md)
+- [AI for Protein Structure Prediction: AlphaFold and the Folding Revolution](../../ai/ai-for-protein-structure-prediction-alphafold-and-the-folding-revolution.md)

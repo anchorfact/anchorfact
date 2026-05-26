@@ -44,3 +44,7 @@ Geology: double-thick crust (70 km) beneath Tibetan Plateau. MCT and MBT fault s
 
 ---
 > 本文内容由 AnchorFact Pipeline 生成。
+
+## Related Articles
+
+- [Pacific Ring of Fire: Volcanoes, Earthquakes, and Plate Boundaries](../pacific-ring-of-fire-volcanoes-earthquakes-and-plate-boundaries.md)

@@ -132,6 +132,7 @@ secondary_sources:
 
 
 
+
 ## TL;DR
 
 The attention mechanism allows neural networks to dynamically focus on the most relevant parts of input data when producing each output. Introduced by Bahdanau et al. (2014) from Université de Montréal and refined by Luong et al. (2015) from Stanford, attention solved the information bottleneck of fixed-length context vectors in encoder-decoder architectures. The Bahdanau paper has been cited over 40,000 times on Google Scholar (May 2026), making it one of the most influential papers in NLP. Attention is the foundational concept enabling Transformers and all modern language models.
@@ -216,3 +217,4 @@ Attention expanded beyond NLP rapidly:
 
 - [Attention Mechanisms: Scaled Dot-Product to FlashAttention](../attention-mechanisms-deep-dive.md)
 - [Attention vs. Self-Attention](../attention-vs-self-attention.md)
+- [CRISPR Gene Editing: Cas9 Mechanism, Applications, and Ethical Frontiers](../../science/crispr-gene-editing-cas9-mechanism-applications-and-ethical-frontiers.md)

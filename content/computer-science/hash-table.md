@@ -87,4 +87,5 @@ Hash function: maps key to integer index. Good hash functions minimize collision
 
 ## Related Articles
 
+- [Database Indexing: B-Trees, Hash Indexes, and Query Optimization](../database-indexing-b-trees-hash-indexes-and-query-optimization.md)
 - [Periodic Table](../../science/periodic-table.md)

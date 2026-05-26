@@ -96,5 +96,5 @@ HMR (2018): CNN encoder extracts image features -> iterative 3D regression modul
 ## Related Articles
 
 - [Cognitive Architectures: ACT-R, Soar, and Computational Models of Human-Like Reasoning](../cognitive-architectures.md)
+- [Diffusion Models: DDPM, Stable Diffusion, and Score-Based Generative Modeling](../diffusion-models-ddpm-stable-diffusion-and-score-based-generative-modeling.md)
 - [Human Pose Estimation: 2D/3D Keypoint Detection and Transformer-Based Body Tracking](../human-pose-estimation.md)
-- [State Space Models: Mamba, Linear-Time Sequence Modeling, and Alternatives to Transformers](../state-space-models.md)

@@ -88,5 +88,5 @@ Three main groups: Polynesia ('many islands,' triangle Hawaii-New Zealand-Easter
 ## Related Articles
 
 - [African Geography](../african-geography.md)
+- [Antarctica: The Frozen Continent's Geography and Research Stations](../antarctica-the-frozen-continent-s-geography-and-research-stations.md)
 - [Asian Geography](../asian-geography.md)
-- [North America Geography](../north-america-geography.md)

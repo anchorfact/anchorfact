@@ -77,4 +77,6 @@ Algorithms: round-robin, least connections, IP hash (session persistence), weigh
 
 ## Related Articles
 
+- [Load Balancing: Algorithms, Consistent Hashing, and Modern Approaches](../load-balancing-algorithms-consistent-hashing-and-modern-approaches.md)
 - [AI for Smart Grids: Load Forecasting, Demand Response, and Grid Stability](../../ai/ai-smart-grids.md)
+- [Cognitive Load Theory: Optimizing Learning and Decision Making](../../self-improvement/cognitive-load-theory-optimizing-learning-and-decision-making.md)

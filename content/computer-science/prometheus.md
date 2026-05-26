@@ -85,3 +85,7 @@ Pull-based model: Prometheus server scrapes targets at intervals (15s default). 
 ## Further Reading
 
 - [Prometheus Documentation](https://prometheus.io/docs/)
+
+## Related Articles
+
+- [Time Series Databases: InfluxDB, Prometheus, and Downsampling](../time-series-databases-influxdb-prometheus-and-downsampling.md)

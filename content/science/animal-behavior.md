@@ -87,4 +87,4 @@ Bees' waggle dance (von Frisch, Nobel 1973): communicates food distance and dire
 
 - [Leadership Theory and Organizational Behavior](../../business/leadership-and-organizational-behavior.md)
 - [Marketing: Strategy, Consumer Behavior, and Digital Channels](../../business/marketing-fundamentals.md)
-- [Habit Stacking and Behavior Design](../../self-improvement/habit-stacking.md)
+- [Neurotransmitters: Dopamine, Serotonin, and the Chemical Basis of Behavior](../neurotransmitters-dopamine-serotonin-and-the-chemical-basis-of-behavior.md)

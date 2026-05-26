@@ -89,4 +89,4 @@ Key patterns: `aria-label` for accessible names, `aria-labelledby` to reference 
 
 - [AI Democratization: Open-Source Models, Low-Code AI, and Accessible Machine Learning](../../ai/ai-for-democratization.md)
 - [AI for the Internet of Things: Federated Learning, TinyML, and Intelligent Edge Devices](../../ai/ai-for-iot.md)
-- [Graph Neural Networks: Message Passing and Applications](../../ai/graph-neural-networks.md)
+- [Graph Neural Networks: Message Passing, Applications, and Frontiers](../../ai/graph-neural-networks-message-passing-applications-and-frontiers.md)

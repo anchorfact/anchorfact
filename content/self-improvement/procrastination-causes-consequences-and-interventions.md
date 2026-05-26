@@ -47,4 +47,6 @@ Key research: (1) Procrastination is strongly correlated with impulsiveness (r=0
 
 ## Related Articles
 
+- [Obesity: Epidemiology, Metabolic Consequences, and Interventions](../../health/obesity-epidemiology-metabolic-consequences-and-interventions.md)
 - [AI for Mental Health: LLM-Based Therapy, Digital Interventions, and Clinical Trials](../../ai/ai-for-mental-health.md)
+- [Inflation: Causes, Measurement, and Central Bank Policy](../../business/inflation-causes-measurement-and-central-bank-policy.md)

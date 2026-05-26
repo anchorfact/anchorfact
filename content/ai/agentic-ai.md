@@ -105,6 +105,6 @@ Agent architectures: (A) Tool-augmented LLMs — single model with API calling c
 
 ## Related Articles
 
+- [AI for Autonomous Vehicles: Perception, Planning, and Safety](../ai-for-autonomous-vehicles-perception-planning-and-safety.md)
 - [AI for Robot Navigation: SLAM, Visual Odometry, and Autonomous Path Planning](../ai-for-robot-navigation.md)
 - [Cognitive Architectures: ACT-R, Soar, and Computational Models of Human-Like Reasoning](../cognitive-architectures.md)
-- [Advanced RAG: From Naive Retrieval to Agentic RAG](../advanced-rag-techniques.md)

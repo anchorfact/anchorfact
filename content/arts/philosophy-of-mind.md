@@ -78,4 +78,4 @@ Mary's Room thought experiment (Jackson, 1982): Mary knows all physical facts ab
 
 - [Philosophy of Science](../philosophy-of-science.md)
 - [Political Philosophy: Justice, Liberty, and the Social Contract](../political-philosophy.md)
-- [Greek Philosophy](../../history/greek-philosophy.md)
+- [Ancient Greece: Democracy, Philosophy, and the Persian Wars](../../history/ancient-greece-democracy-philosophy-and-the-persian-wars.md)

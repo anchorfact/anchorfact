@@ -103,6 +103,6 @@ JSON (JavaScript Object Notation) is a lightweight, text-based data interchange 
 
 ## Related Articles
 
+- [AI for Augmented Reality: Real-Time Object Detection, Depth Estimation, and Scene Understanding](../../ai/ai-for-augmented-reality-real-time-object-detection-depth-estimation-and-scene-understanding.md)
 - [AI for Satellite Imagery: Object Detection, Change Detection, and Global Monitoring](../../ai/ai-satellite-imagery.md)
 - [AI for Surveillance Systems: Object Tracking, Anomaly Detection, and Intelligent Monitoring](../../ai/ai-surveillance-systems.md)
-- [Object Detection: YOLO, R-CNN, and DETR](../../ai/object-detection.md)

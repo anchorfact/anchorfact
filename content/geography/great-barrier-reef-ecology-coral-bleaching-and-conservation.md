@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Great Lakes: Hydrology, Ecology, and Transboundary Management](../great-lakes-hydrology-ecology-and-transboundary-management.md)
+- [AI for Wildlife Conservation: Camera Trap Analysis, Species Classification, and Biodiversity Monitoring](../../ai/ai-for-wildlife-conservation.md)
+- [Coral Triangle: Marine Biodiversity Hotspot in Southeast Asia](../coral-triangle-marine-biodiversity-hotspot-in-southeast-asia.md)

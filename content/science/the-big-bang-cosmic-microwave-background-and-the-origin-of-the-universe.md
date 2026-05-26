@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Big Bang Theory](../big-bang-theory.md)
+- [Cross-Origin Resource Sharing (CORS)](../../computer-science/cross-origin-resource-sharing-cors.md)
+- [Same-Origin Policy](../../computer-science/same-origin-policy.md)

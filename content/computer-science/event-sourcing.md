@@ -100,3 +100,4 @@ Event: `OrderPlaced {orderId, items}`, `OrderShipped {orderId, tracking}`, `Orde
 ## Related Articles
 
 - [AI for Audio Processing: Sound Event Detection, Acoustic Scene Analysis, and Environmental Intelligence](../../ai/ai-for-audio-processing.md)
+- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../../ai/ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)

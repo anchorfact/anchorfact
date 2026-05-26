@@ -206,6 +206,6 @@ Each side independently closes its direction of communication, enabling a "half-
 
 ## Related Articles
 
+- [TCP/IP Protocol Suite: Architecture, Congestion Control, and Evolution](../tcp-ip-protocol-suite-architecture-congestion-control-and-evolution.md)
 - [Model Context Protocol (MCP)](../../ai/mcp.md)
-- [Hypertext Transfer Protocol (HTTP)](../http-protocol.md)
-- [MQTT Protocol](../mqtt-protocol.md)
+- [gRPC: Protocol Buffers, HTTP/2 Streaming, and Service Contracts](../grpc-protocol-buffers-http-2-streaming-and-service-contracts.md)

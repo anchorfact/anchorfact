@@ -114,4 +114,4 @@ XGBoost churn benchmark: 85-92% AUC. Feature importance: recency (days since las
 
 - [Customer Lifetime Value (CLV)](../../business/customer-lifetime-value-clv.md)
 - [AI for Digital Marketing: Personalization, Campaign Optimization, and Customer Analytics](../ai-digital-marketing.md)
-- [AI for Climate Science: Weather Prediction and Earth System Modeling](../ai-for-climate-science.md)
+- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)

@@ -100,6 +100,6 @@ Key works: Botticelli's Birth of Venus (1485), da Vinci's Last Supper (1498) and
 
 ## Related Articles
 
+- [Renaissance: Humanism, Art, and the Rebirth of Classical Learning](../../history/renaissance-humanism-art-and-the-rebirth-of-classical-learning.md)
 - [AI Art and Creativity: Generative Models and Authorship](../../ai/ai-art-and-creativity.md)
-- [AI for Cultural Heritage: Digital Preservation, Art Attribution, and Museum Intelligence](../../ai/ai-for-cultural-heritage.md)
-- [AI for Intellectual Property: Patent Search, Prior Art Analysis, and Trademark Intelligence](../../ai/ai-ip-patents.md)
+- [AI for Art and Creativity: GANs, Diffusion, and Computational Aesthetics](../../ai/ai-for-art-and-creativity-gans-diffusion-and-computational-aesthetics.md)

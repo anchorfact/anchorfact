@@ -118,6 +118,6 @@ Reaction prediction: given reactants, predict products. AI approaches: (1) Templ
 
 ## Related Articles
 
+- [AI for Chemistry: Reaction Prediction, Retrosynthesis, and Materials Discovery](../ai-for-chemistry-reaction-prediction-retrosynthesis-and-materials-discovery.md)
 - [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../ai-air-quality.md)
 - [AI for Beauty and Fashion: Virtual Try-On, Personalized Styling, and Trend Prediction](../ai-beauty-fashion.md)
-- [AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling](../ai-customer-analytics.md)

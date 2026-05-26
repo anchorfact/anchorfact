@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [CAP Theorem: Consistency, Availability, and Partition Tolerance](../cap-theorem-consistency-availability-and-partition-tolerance.md)
+- [CAP Theorem](../cap-theorem.md)
+- [Microservices Architecture: Patterns, Trade-offs, and Resilience](../microservices-architecture-patterns-trade-offs-and-resilience.md)

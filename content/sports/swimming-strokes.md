@@ -85,4 +85,5 @@ Freestyle: alternate arm pulls, flutter kick, breathing to side every 2-3 stroke
 
 ## Related Articles
 
+- [Swimming Science: Hydrodynamics, Stroke Mechanics, and Drag Reduction](../swimming-science-hydrodynamics-stroke-mechanics-and-drag-reduction.md)
 - [Swimming Training and Stroke Techniques](../swimming-training.md)

@@ -44,3 +44,9 @@ updated: '2026-05-26'
 
 ---
 > 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+
+## Related Articles
+
+- [Unicode and UTF-8: Encoding the World's Writing Systems](../../computer-science/unicode-and-utf-8-encoding-the-world-s-writing-systems.md)
+- [Global Climate Zones and Terrestrial Biomes](../../geography/climate-zones-and-biomes.md)
+- [Climate Zones](../../geography/climate-zones.md)

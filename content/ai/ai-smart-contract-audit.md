@@ -97,4 +97,4 @@ LLM-SmartAudit (IEEE TIFS 2025): three-stage pipeline — (1) LLM Semantic Analy
 
 - [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../ai-blockchain.md)
 - [AI for Election Integrity: Disinformation Detection, Voter Analytics, and Electoral Security](../ai-election-integrity.md)
-- [AI Identity Verification: Document Authentication, Liveness Detection, and KYC Compliance](../ai-identity-verification.md)
+- [AI for Network Security: Intrusion Detection, Threat Intelligence, and Anomaly Analysis](../ai-for-network-security-intrusion-detection-threat-intelligence-and-anomaly-analysis.md)

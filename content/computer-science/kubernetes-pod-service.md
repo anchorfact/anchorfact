@@ -78,6 +78,6 @@ Pod lifecycle: Pending → Running → Succeeded/Failed. Init containers run bef
 
 ## Related Articles
 
+- [Container Orchestration: Kubernetes Architecture, Scheduling, and Service Mesh](../container-orchestration-kubernetes-architecture-scheduling-and-service-mesh.md)
 - [AI for Customer Service: Conversational Agents, Ticket Routing, and Intelligent Contact Centers](../../ai/ai-customer-service.md)
-- [Kubernetes (K8s)](../kubernetes.md)
-- [Service Workers](../service-workers.md)
+- [gRPC: Protocol Buffers, HTTP/2 Streaming, and Service Contracts](../grpc-protocol-buffers-http-2-streaming-and-service-contracts.md)

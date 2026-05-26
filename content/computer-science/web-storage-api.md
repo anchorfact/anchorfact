@@ -81,5 +81,5 @@ localStorage persists indefinitely until explicitly cleared. sessionStorage is c
 ## Related Articles
 
 - [Web Cryptography API](../web-cryptography-api.md)
+- [WebGPU: Next-Generation Web Graphics and Compute API](../webgpu-next-generation-web-graphics-and-compute-api.md)
 - [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../../ai/ai-for-data-curation.md)
-- [Semantic Web and Ontologies: Knowledge Representation, OWL Reasoning, and Linked Data](../../ai/semantic-web-ontology.md)

@@ -100,6 +100,6 @@ Scaling laws (Kaplan et al., 2020): varied model size (768 to 1.5B params), data
 
 ## Related Articles
 
+- [Large Language Model Training: Scaling Laws, Data Curation, and Compute](../large-language-model-training-scaling-laws-data-curation-and-compute.md)
 - [Distributed Training: FSDP, DeepSpeed, and Scaling Laws](../distributed-training-systems.md)
 - [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../3d-human-modeling.md)
-- [AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation](../ai-code-translation.md)

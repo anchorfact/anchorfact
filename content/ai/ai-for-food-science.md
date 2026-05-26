@@ -103,4 +103,4 @@ Flavor prediction is one of the most active areas. Traditional flavor chemistry 
 
 - [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../ai-air-quality.md)
 - [AI for Beauty and Fashion: Virtual Try-On, Personalized Styling, and Trend Prediction](../ai-beauty-fashion.md)
-- [AI for Climate Science: Weather Prediction and Earth System Modeling](../ai-for-climate-science.md)
+- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)

@@ -97,3 +97,8 @@ Evidence: matching fossils (Mesosaurus in Africa + South America), matching rock
 ## Further Reading
 
 - [The Origin of Continents and Oceans (Alfred Wegener, 1915)](https://archive.org/details/originofcontinen00wege)
+
+## Related Articles
+
+- [Continental Drift and Plate Tectonics: Wegener to Modern Geodynamics](../continental-drift-and-plate-tectonics-wegener-to-modern-geodynamics.md)
+- [Plate Tectonics: Continental Drift, Seafloor Spreading, and Subduction](../plate-tectonics-continental-drift-seafloor-spreading-and-subduction.md)

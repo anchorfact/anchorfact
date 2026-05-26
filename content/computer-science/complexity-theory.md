@@ -84,4 +84,4 @@ P ⊆ NP ⊆ PSPACE ⊆ EXPTIME. NP-complete problems: if you can solve one effi
 
 - [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
 - [Music Theory Basics](../../arts/music-theory-basics.md)
-- [Leadership Theory and Organizational Behavior](../../business/leadership-and-organizational-behavior.md)
+- [Game Theory: Nash Equilibrium, Zero-Sum Games, and Strategic Interaction](../../business/game-theory-nash-equilibrium-zero-sum-games-and-strategic-interaction.md)
