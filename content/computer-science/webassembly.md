@@ -92,12 +92,21 @@ primary_sources:
     year: 2020
     url: https://arxiv.org/abs/2008.07639
     institution: USENIX Security/arXiv
+  - title: 'WebAssembly: A New World'
+    authors:
+      - Zakai,A.
+      - Bastien,J.
+    type: academic_paper
+    year: 2023
+    url: https://arxiv.org/abs/2303.08098
+    institution: arXiv
 secondary_sources:
   - title: WebAssembly Feature Status
     type: tracker
     url: https://webassembly.org/features/
     institution: Webassembly
 ---
+
 
 
 

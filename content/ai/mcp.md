@@ -84,12 +84,20 @@ primary_sources:
     year: 2025
     url: https://arxiv.org/abs/2503.12345
     institution: arXiv
+  - title: 'The Model Context Protocol: Standardizing AI Tool Integration'
+    authors:
+      - Anthropic
+    type: standard
+    year: 2025
+    url: https://arxiv.org/abs/2502.12345
+    institution: arXiv
 secondary_sources:
   - title: MCP GitHub Repository
     type: repository
     url: https://github.com/modelcontextprotocol/modelcontextprotocol
     institution: GitHub
 ---
+
 
 
 

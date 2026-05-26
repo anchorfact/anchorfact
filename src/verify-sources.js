@@ -9,7 +9,7 @@
 import { readFileSync, writeFileSync, readdirSync, statSync, existsSync } from 'fs';
 import { join } from 'path';
 import { load } from 'js-yaml';
-import { computeConfidence, classifySourceTier } from './lib/confidence.js';
+import { computeConfidence, classifySourceTier, computeFreshnessScore } from './lib/confidence.js';
 
 // ---- Rate Limiter ----
 const RATE_LIMIT_MS = 200; // 每秒 ≤ 5 请求
@@ -111,32 +111,11 @@ async function verifyUrl(url) {
   }
 }
 
-// ---- Source Tier Classification ----
-function classifySourceTier(source) {
-  if (source.doi) return 'S';
-  if (source.type === 'standard') return 'S';
-  if (source.type === 'patent' || source.type === 'rfc') return 'S';
-  if (source.type === 'academic_paper' || source.type === 'course_material') return 'A';
-  if (source.type === 'government_report' || source.type === 'industry_whitepaper') return 'A';
-  if (source.type === 'blog_post' && source.institution) return 'B';
-  if (source.type === 'blog_post') return 'B';
-  return 'C';
-}
+// ---- Source Tier / Freshness — imported from lib/confidence.js ----
+// (classifySourceTier, computeFreshnessScore, computeConfidence are shared)
 
-// ---- Freshness Score ----
-function computeFreshnessScore(source) {
-  const year = source.year || 0;
-  if (!year) return 0.5;
-  const ageYears = new Date().getFullYear() - year;
-  if (ageYears <= 1) return 1.0;
-  if (ageYears <= 3) return 0.9;
-  if (ageYears <= 5) return 0.7;
-  if (ageYears <= 10) return 0.5;
-  return 0.3;
-}
-
-// ---- Confidence Formula (Public, Deterministic) ----
-function computeConfidence(sources, verificationResults, article) {
+// Verify-specific confidence calculation (uses verificationResults from report)
+function computeConfidenceLocal(sources, verificationResults, article) {
   if (!sources || sources.length === 0) return { score: 0, level: 'low', inputs: {} };
 
   const tierMap = { 'S': 1.0, 'A': 0.9, 'B': 0.6, 'C': 0.3, 'D': 0 };

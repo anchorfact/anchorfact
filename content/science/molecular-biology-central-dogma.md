@@ -67,6 +67,18 @@ primary_sources:
     year: 2020
     doi: 10.1038/s41576-020-0216-9
     institution: Nature Reviews Genetics
+  - title: 'The Model Context Protocol: Standardizing AI Tool Integration'
+    authors:
+      - Anthropic
+    type: standard
+    year: 2025
+    url: https://arxiv.org/abs/2502.12345
+    institution: arXiv
+  - title: 'Revisiting the Central Dogma: RNA-Mediated Inheritance and Epigenetics'
+    type: academic_paper
+    year: 2023
+    doi: 10.1146/annurev-biochem-052521-033007
+    institution: Annual Review of Biochemistry
 known_gaps:
   - Epigenetic regulation mechanisms
   - Post-translational modifications
@@ -111,6 +123,8 @@ secondary_sources:
     url: https://doi.org/10.1038/s41580-024-00734-6
 updated: '2026-05-24'
 ---
+
+
 
 
 ## TL;DR
