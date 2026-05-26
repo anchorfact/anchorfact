@@ -515,7 +515,13 @@ writeFileSync(join(distDir, 'dc8a3c2e1f4b5a7d9e0c8b6f3a5d7e9c.txt'), 'dc8a3c2e1f
 console.log('✅ IndexNow key generated');
 
 // _headers for AI-optimized HTTP headers (Cloudflare Pages)
-const headersFile = `# _headers — AnchorFact AI-optimized headers
+const headersFile = `# _headers — AnchorFact AI-optimized headers with security hardening
+# Security hardening (2026-05-26)
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
 /*/index.json
   Access-Control-Allow-Origin: *
   Content-Type: application/ld+json; charset=utf-8
