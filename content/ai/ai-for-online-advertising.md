@@ -1,12 +1,12 @@
 ---
 id: ai-for-online-advertising
-title: "AI for Online Advertising: Real-Time Bidding, CTR Prediction, and Programmatic Ads"
+title: 'AI for Online Advertising: Real-Time Bidding, CTR Prediction, and Programmatic Ads'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-26'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -32,17 +32,27 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-for-online-advertising-1
-    title: "DLRM: Deep Learning Recommendation Model for Personalization and Recommendation Systems"
+    title: 'DLRM: Deep Learning Recommendation Model for Personalization and Recommendation Systems'
     type: academic_paper
     year: 2019
     institution: arXiv / Meta AI
     url: https://arxiv.org/abs/1906.00091
   - id: ps-ai-for-online-advertising-2
-    title: "DCN-V2: Improved Deep and Cross Network for Web-Scale Learning to Rank Systems"
+    title: 'DCN-V2: Improved Deep and Cross Network for Web-Scale Learning to Rank Systems'
     type: academic_paper
     year: 2020
     institution: Google Research / KDD
     url: https://arxiv.org/abs/2008.13535
+  - title: A dynamic pricing model for unifying programmatic guarantee and real-time bidding in display advertising
+    authors:
+      - Bowei Chen
+      - Shuai Yuan
+      - Jun Wang
+    year: 2014
+    doi: 10.1145/2648584.2648585
+    url: https://arxiv.org/abs/1405.5189v3
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Privacy-preserving advertising after third-party cookie deprecation
   - Causal estimation of ad effectiveness -- did the ad actually cause the conversion?
@@ -55,29 +65,30 @@ secondary_sources:
       - multiple
     institution: Journal of Big Data (Springer)
     url: https://doi.org/10.1186/s40537-022-00592-5
-  - title: "A Systematic Literature Review on AI-Based Recommendation Systems: Technologies, Applications, and Challenges"
+  - title: 'A Systematic Literature Review on AI-Based Recommendation Systems: Technologies, Applications, and Challenges'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: IEEE Access
     url: https://doi.org/10.1109/ACCESS.2024.3451218
-  - title: "Artificial Intelligence in Advertising: Advancements, Challenges, and Ethical Considerations in Targeting, Personalization, Content Creation, and Ad Optimization"
+  - title: 'Artificial Intelligence in Advertising: Advancements, Challenges, and Ethical Considerations in Targeting, Personalization, Content Creation, and Ad Optimization'
     type: survey_paper
     year: 2023
     authors:
       - multiple
     institution: SAGE Open
     url: https://doi.org/10.1177/21582440231210759
-  - title: "Review-based Recommender Systems: A Survey of Approaches, Challenges, and Future Directions"
+  - title: 'Review-based Recommender Systems: A Survey of Approaches, Challenges, and Future Directions'
     type: survey_paper
     year: 2024
     authors:
       - multiple
     institution: arXiv
     url: https://arxiv.org/abs/2405.05562
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Online advertising is the financial engine of the internet -- and AI is its brain. Real-time bidding systems make millions of decisions per second about which ad to show, using deep learning to predict click probability, conversion likelihood, and user value. From Google Search Ads to TikTok's feed, AI-powered advertising generates over $600B annually.
 

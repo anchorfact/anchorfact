@@ -5,7 +5,7 @@ schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -101,6 +101,7 @@ secondary_sources:
     url: https://doi.org/10.1109/ACCESS.2024.3382567
 updated: '2026-05-24'
 ---
+
 
 ## TL;DR
 AI gives drones autonomy -- navigating without GPS, dodging obstacles at high speed, and coordinating in swarms. From Skydio's obstacle-dodging drones to Zipline's medical delivery network across Africa, AI-powered aerial autonomy is reshaping delivery, inspection, search-and-rescue, and agriculture.

@@ -5,7 +5,7 @@ schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -98,6 +98,7 @@ secondary_sources:
     url: https://doi.org/10.1007/s00521-023-09339-6
 updated: '2026-05-24'
 ---
+
 
 ## TL;DR
 AI customer analytics predicts who will churn, segments by behavior, and calculates lifetime value -- all in real-time. From Amplitude to Optimove, AI transforms raw event streams into actionable customer intelligence that drives retention, upsell, and personalization.

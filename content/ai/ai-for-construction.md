@@ -5,7 +5,7 @@ schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -104,6 +104,7 @@ secondary_sources:
     url: https://doi.org/10.1016/j.jobe.2025.112039
 updated: '2026-05-24'
 ---
+
 
 ## TL;DR
 The $12 trillion global construction industry is one of the least digitized sectors -- and AI is changing that. Computer vision monitors safety in real-time, drones capture construction progress, and BIM digital twins compare plans to reality automatically. AI reduces accidents by 25-40% and rework costs by 15-20%.

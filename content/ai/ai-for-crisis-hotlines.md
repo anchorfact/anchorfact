@@ -5,7 +5,7 @@ schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -106,6 +106,7 @@ secondary_sources:
     url: https://arxiv.org/abs/2409.06164
 updated: '2026-05-24'
 ---
+
 
 ## TL;DR
 AI is on the front lines of suicide prevention -- triaging crisis texts in seconds, powering emotional support chatbots, and detecting risk signals in social media posts. From Crisis Text Line's ML triage to Meta's proactive wellness checks, AI extends the reach of limited crisis counseling resources.

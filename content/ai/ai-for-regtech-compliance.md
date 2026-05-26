@@ -1,12 +1,12 @@
 ---
 id: ai-for-regtech-compliance
-title: "AI for Regulatory Technology (RegTech): Compliance Automation, AML, and Regulatory Intelligence"
+title: 'AI for Regulatory Technology (RegTech): Compliance Automation, AML, and Regulatory Intelligence'
 schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-26'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -34,30 +34,39 @@ atomic_facts:
     confidence: high
 primary_sources:
   - id: ps-ai-for-regtech-compliance-1
-    title: "Graph Neural Networks for Anti-Money Laundering: A Comprehensive Survey of Methods, Datasets, and Practical Deployment"
+    title: 'Graph Neural Networks for Anti-Money Laundering: A Comprehensive Survey of Methods, Datasets, and Practical Deployment'
     type: academic_paper
     year: 2025
     institution: arXiv / ACM Transactions on Knowledge Discovery from Data
     url: https://arxiv.org/abs/2504.00000
   - id: ps-ai-for-regtech-compliance-2
-    title: "AI-Powered Regulatory Technology (RegTech): NLP and LLM Applications in Compliance Automation and Regulatory Intelligence"
+    title: 'AI-Powered Regulatory Technology (RegTech): NLP and LLM Applications in Compliance Automation and Regulatory Intelligence'
     type: academic_paper
     year: 2025
     institution: Journal of Financial Regulation and Compliance / Springer
     url: https://www.emerald.com/insight/publication/issn/1358-1988
+  - title: A Hybrid Approach to Information Retrieval and Answer Generation for Regulatory Texts
+    authors:
+      - Jhon Rayo
+      - Raul de la Rosa
+      - Mario Garrido
+    year: 2025
+    url: https://arxiv.org/abs/2502.16767v1
+    type: academic_paper
+    institution: arXiv
 known_gaps:
   - Explainable AI for regulatory decisions -- providing auditable, human-interpretable reasons for AML alerts
   - Cross-border regulatory harmonization -- AI systems that navigate conflicting regulations across jurisdictions
 disputed_statements: []
 secondary_sources:
-  - title: "From Complexity to Clarity: AI/NLP's Role in Automated Regulatory Compliance (ACL Findings)"
+  - title: 'From Complexity to Clarity: AI/NLP''s Role in Automated Regulatory Compliance (ACL Findings)'
     type: conference_paper
     year: 2025
     authors:
       - multiple
     institution: ACL
     url: https://aclanthology.org/2025.findings-acl.1366/
-  - title: "AI Integration in Financial Services: A Systematic Review of RegTech, Fraud Detection, and Robo-Advisory (1989-2024)"
+  - title: 'AI Integration in Financial Services: A Systematic Review of RegTech, Fraud Detection, and Robo-Advisory (1989-2024)'
     type: survey_paper
     year: 2025
     authors:
@@ -71,15 +80,16 @@ secondary_sources:
       - multiple
     institution: IEEE Access
     url: https://doi.org/10.1109/ACCESS.2025.3567842
-  - title: "White & Case: 2025 Global Compliance Risk Benchmarking Survey — AI in the Compliance Function"
+  - title: 'White & Case: 2025 Global Compliance Risk Benchmarking Survey — AI in the Compliance Function'
     type: report
     year: 2025
     authors:
       - White & Case Research
     institution: White & Case LLP
     url: https://www.whitecase.com/insight-our-thinking/2025-global-compliance-risk-benchmarking-survey-artificial-intelligence
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 AI is transforming regulatory compliance from a manual, document-heavy process into an automated, intelligent system. Graph neural networks detect sophisticated financial crime patterns that humans and rules-based systems miss, while LLMs ingest and analyze thousands of pages of regulations across jurisdictions, automating the compliance lifecycle from obligation extraction to control mapping to reporting.
 
