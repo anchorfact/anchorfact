@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: self-improvement
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -88,6 +88,22 @@ primary_sources:
     type: book
     year: 2020
     institution: Rowman & Littlefield
+  - title: Wishful Thinking is Risky Thinking
+    authors:
+      - Jarrod Burgh
+      - Emerson Melo
+    year: 2023
+    url: https://arxiv.org/abs/2307.02422v2
+    type: academic_paper
+    institution: arXiv
+  - title: Censored Beliefs and Wishful Thinking
+    authors:
+      - Jarrod Burgh
+      - Emerson Melo
+    year: 2024
+    url: https://arxiv.org/abs/2402.01892v2
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: Thinking, Fast and Slow
     type: book
@@ -100,6 +116,7 @@ secondary_sources:
     url: https://jamesclear.com/atomic-habits
     institution: Avery, Penguin Random House
 ---
+
 
 ## TL;DR
 

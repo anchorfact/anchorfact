@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: self-improvement
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -71,6 +71,26 @@ primary_sources:
     type: book
     year: 2017
     institution: Berrett-Koehler
+  - title: 'IoT-Driven Smart Management in Broiler Farming: Simulation of Remote Sensing and Control Systems'
+    authors:
+      - Sandra Coello Suarez
+      - V. Sanchez Padilla
+      - Ronald Ponguillo-Intriago
+      - Albert Espinal
+    year: 2025
+    doi: 10.1109/TEMSCONLATAM65810.2025.11238529
+    url: https://arxiv.org/abs/2510.23356v1
+    type: academic_paper
+    institution: arXiv
+  - title: Impacts of National Cultures on Managerial Decisions of Engaging in Core Earnings Management
+    authors:
+      - Muhammad Rofiqul Islam
+      - Abdullah Al Mehdi
+    year: 2024
+    doi: 10.7176/EJBM/16-4-07
+    url: https://arxiv.org/abs/2407.16854v1
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: 'Deep Work: Rules for Focused Success in a Distracted World'
     type: book
@@ -83,6 +103,7 @@ secondary_sources:
     url: https://jamesclear.com/atomic-habits
     institution: Avery, Penguin Random House
 ---
+
 
 ## TL;DR
 

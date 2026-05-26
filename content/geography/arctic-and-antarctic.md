@@ -1,75 +1,87 @@
 ---
-id: ""
-title: "Arctic and Antarctic"
-schema_type: "TechArticle"
-category: "geography"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+id: ''
+title: Arctic and Antarctic
+schema_type: TechArticle
+category: geography
+language: en
+confidence: high
+last_verified: '2026-05-26'
+created_date: '2026-05-22'
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-geography-001"
-    statement: "Arctic: ocean surrounded by continents, floating sea ice, indigenous peoples, polar bears."
-    source_title: "The Arctic: A Guide to Coastal Wildlife (Tony Soper)"
-    source_url: "https://www.bradtguides.com/product/the-arctic/"
-    confidence: "medium"
-  - id: "fact-geography-002"
-    statement: "Antarctic: continent surrounded by ocean, ice sheet (70% of Earth's freshwater), no permanent residents, penguins."
-    source_title: "National Geographic Atlas of the World, 11th Ed"
-    source_url: "https://www.nationalgeographic.com/books/atlas/"
-    confidence: "medium"
-  - id: "fact-geography-003"
-    statement: "Antarctic Treaty (1959): continent dedicated to peace and science."
-    source_title: "The Arctic: A Guide to Coastal Wildlife (Tony Soper)"
-    source_url: "https://www.bradtguides.com/product/the-arctic/"
-    confidence: "medium"
-  - id: "fact-geography-004"
-    statement: "Permafrost: frozen soil storing 1,500 Gt carbon — thaw releases CO₂/CH₄."
-    source_title: "The Arctic: A Guide to Coastal Wildlife (Tony Soper)"
-    source_url: "https://www.bradtguides.com/product/the-arctic/"
-    confidence: "medium"
-  - id: "fact-geography-005"
-    statement: "Antarctic ice sheet: 58m sea level equivalent if fully melted."
-    source_title: "The Arctic: A Guide to Coastal Wildlife (Tony Soper)"
-    source_url: "https://www.bradtguides.com/product/the-arctic/"
-    confidence: "medium"
-
+  - id: fact-geography-001
+    statement: 'Arctic: ocean surrounded by continents, floating sea ice, indigenous peoples, polar bears.'
+    source_title: 'The Arctic: A Guide to Coastal Wildlife (Tony Soper)'
+    source_url: https://www.bradtguides.com/product/the-arctic/
+    confidence: medium
+  - id: fact-geography-002
+    statement: 'Antarctic: continent surrounded by ocean, ice sheet (70% of Earth''s freshwater), no permanent residents, penguins.'
+    source_title: National Geographic Atlas of the World, 11th Ed
+    source_url: https://www.nationalgeographic.com/books/atlas/
+    confidence: medium
+  - id: fact-geography-003
+    statement: 'Antarctic Treaty (1959): continent dedicated to peace and science.'
+    source_title: 'The Arctic: A Guide to Coastal Wildlife (Tony Soper)'
+    source_url: https://www.bradtguides.com/product/the-arctic/
+    confidence: medium
+  - id: fact-geography-004
+    statement: 'Permafrost: frozen soil storing 1,500 Gt carbon — thaw releases CO₂/CH₄.'
+    source_title: 'The Arctic: A Guide to Coastal Wildlife (Tony Soper)'
+    source_url: https://www.bradtguides.com/product/the-arctic/
+    confidence: medium
+  - id: fact-geography-005
+    statement: 'Antarctic ice sheet: 58m sea level equivalent if fully melted.'
+    source_title: 'The Arctic: A Guide to Coastal Wildlife (Tony Soper)'
+    source_url: https://www.bradtguides.com/product/the-arctic/
+    confidence: medium
 completeness: 0.85
-
 known_gaps:
-  - "Statistics and data cited are from 2024 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
+  - Statistics and data cited are from 2024 and earlier; more recent data may have become available since publication
+  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: "The extent and causes of Arctic sea ice decline involve complex feedback loops; attribution to anthropogenic vs natural variability remains an active research area"
-
+  - statement: The extent and causes of Arctic sea ice decline involve complex feedback loops; attribution to anthropogenic vs natural variability remains an active research area
 primary_sources:
-  - title: "The Arctic: A Guide to Coastal Wildlife (Tony Soper)"
-    type: "book"
+  - title: 'The Arctic: A Guide to Coastal Wildlife (Tony Soper)'
+    type: book
     year: 2019
-    url: "https://www.bradtguides.com/product/the-arctic/"
-    institution: "Bradt Travel Guides"
-  - title: "National Geographic Atlas of the World, 11th Ed"
-    type: "reference"
+    url: https://www.bradtguides.com/product/the-arctic/
+    institution: Bradt Travel Guides
+  - title: National Geographic Atlas of the World, 11th Ed
+    type: reference
     year: 2019
-    url: "https://www.nationalgeographic.com/books/atlas/"
-    institution: "National Geographic Society"
-
+    url: https://www.nationalgeographic.com/books/atlas/
+    institution: National Geographic Society
+  - title: Geomorphometric modeling and mapping of Antarctic oases
+    authors:
+      - I. V. Florinsky
+    year: 2023
+    url: https://arxiv.org/abs/2305.07523v3
+    type: academic_paper
+    institution: arXiv
+  - title: Computer Vision Pipeline for Automated Antarctic Krill Analysis
+    authors:
+      - Mazvydas Gudelis
+      - Michal Mackiewicz
+      - Julie Bremner
+      - Sophie Fielding
+    year: 2023
+    url: https://arxiv.org/abs/2309.06188v2
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
-  - title: "Physical Geography (Petersen & Sack, 12th Ed)"
-    type: "textbook"
+  - title: Physical Geography (Petersen & Sack, 12th Ed)
+    type: textbook
     year: 2021
-    url: "https://www.cengage.com/c/physical-geography-12e-petersen-sack-gabler/9780357142448/"
-    institution: "Cengage Learning"
-
+    url: https://www.cengage.com/c/physical-geography-12e-petersen-sack-gabler/9780357142448/
+    institution: Cengage Learning
 ---
+
 
 
 

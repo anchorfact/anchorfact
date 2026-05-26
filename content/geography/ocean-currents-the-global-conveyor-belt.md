@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: geography
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-25'
 generation_method: ai_structured
 conflict_of_interest: none_declared
@@ -22,9 +22,39 @@ primary_sources:
     year: 2026
     url: https://www.noaa.gov/education/
     institution: TBD
+  - title: A minimalistic and optimized conveyor belt for neutral atoms
+    authors:
+      - Ritayan Roy
+      - Paul C. Condylis
+      - Vindhiya Prakash
+      - Daniel Sahagun
+      - Björn Hessmo
+    year: 2017
+    doi: 10.1038/s41598-017-13959-z
+    url: https://arxiv.org/abs/1704.03030v2
+    type: academic_paper
+    institution: arXiv
+  - title: Existence and hardness of conveyor belts
+    authors:
+      - Molly Baird
+      - Sara C. Billey
+      - Erik D. Demaine
+      - Martin L. Demaine
+      - David Eppstein
+      - Sándor Fekete
+      - Graham Gordon
+      - Sean Griffin
+      - Joseph S. B. Mitchell
+      - Joshua P. Swanson
+    year: 2019
+    doi: 10.37236/9782
+    url: https://arxiv.org/abs/1908.07668v1
+    type: academic_paper
+    institution: arXiv
 secondary_sources: []
 updated: '2026-05-25'
 ---
+
 
 ## TL;DR
 

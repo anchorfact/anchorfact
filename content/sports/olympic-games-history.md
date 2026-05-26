@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: sports
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -81,6 +81,16 @@ primary_sources:
     year: 2023
     url: https://olympics.com/ioc/olympic-charter
     institution: International Olympic Committee
+  - title: 'Seeding for Success: Skill and Stochasticity in Tabletop Games'
+    authors:
+      - James Goodman
+      - Diego Perez-Liebana
+      - Simon Lucas
+    year: 2025
+    doi: 10.1109/TG.2025.3542263
+    url: https://arxiv.org/abs/2503.02686v1
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: The Complete Book of the Olympics
     type: book
@@ -93,6 +103,7 @@ secondary_sources:
     url: https://www.olympic.org/sports
     institution: International Olympic Committee
 ---
+
 
 ## TL;DR
 

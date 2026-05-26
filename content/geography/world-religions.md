@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: geography
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -83,6 +83,23 @@ primary_sources:
     year: 2012
     url: https://www.pewresearch.org/religion/2012/12/18/global-religious-landscape-exec/
     institution: Pew Research Center
+  - title: On World Religion Adherence Distribution Evolution
+    authors:
+      - M. Ausloos
+      - F. Petroni
+    year: 2008
+    url: https://arxiv.org/abs/0801.1010v1
+    type: academic_paper
+    institution: arXiv
+  - title: A model for the evolutionary diversification of religions
+    authors:
+      - Michael Doebeli
+      - Iaroslav Ispolatov
+    year: 2008
+    doi: 10.1016/j.jtbi.2010.09.013
+    url: https://arxiv.org/abs/0810.0296v1
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: CIA World Factbook
     type: database
@@ -95,6 +112,7 @@ secondary_sources:
     url: https://www.nationalgeographic.com/maps/atlas/
     institution: National Geographic
 ---
+
 
 ## TL;DR
 

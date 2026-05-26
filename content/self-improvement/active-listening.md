@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: self-improvement
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -85,6 +85,28 @@ primary_sources:
     type: book
     year: 2018
     institution: Center for Creative Leadership
+  - title: 'A Robot That Listens: Enhancing Self-Disclosure and Engagement Through Sentiment-based Backchannels and Active Listening'
+    authors:
+      - Hieu Tran
+      - Go-Eum Cha
+      - Sooyeon Jeong
+    year: 2025
+    doi: 10.1109/RO-MAN63969.2025.11217862
+    url: https://arxiv.org/abs/2509.07873v1
+    type: academic_paper
+    institution: arXiv
+  - title: 'Responsive Listening Head Generation: A Benchmark Dataset and Baseline'
+    authors:
+      - Mohan Zhou
+      - Yalong Bai
+      - Wei Zhang
+      - Ting Yao
+      - Tiejun Zhao
+      - Tao Mei
+    year: 2021
+    url: https://arxiv.org/abs/2112.13548v3
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: 'Nonviolent Communication: A Language of Life'
     type: book
@@ -97,6 +119,7 @@ secondary_sources:
     url: https://jamesclear.com/atomic-habits
     institution: Avery, Penguin Random House
 ---
+
 
 ## TL;DR
 

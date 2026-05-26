@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: sports
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-26'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -65,6 +65,23 @@ primary_sources:
       - multiple
     institution: Human Kinetics
     url: https://us.humankinetics.com/swimming/
+  - title: 'Stroke of Surprise: Progressive Semantic Illusions in Vector Sketching'
+    authors:
+      - Huai-Hsun Cheng
+      - Siang-Ling Zhang
+      - Yu-Lun Liu
+    year: 2026
+    url: https://arxiv.org/abs/2602.12280v2
+    type: academic_paper
+    institution: arXiv
+  - title: Segmentation of Ischemic Stroke Lesions using Transfer Learning on Multi-sequence MRI
+    authors:
+      - R. P. Chowdhury
+      - T. Rahman
+    year: 2025
+    url: https://arxiv.org/abs/2511.07281v1
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: Principles of Sports Training
     type: textbook
@@ -72,6 +89,7 @@ secondary_sources:
     url: https://www.humankinetics.com/
     institution: Human Kinetics
 ---
+
 ## TL;DR
 
 Competitive swimming comprises four strokes: freestyle, backstroke, breaststroke, butterfly. Training combines aerobic base work, anaerobic sprint sets, technique drills, and dry-land strength. Key concepts: interval training, pace control, flip turns, streamline position, bilateral breathing. Olympic program: 35 events from 50m to 1500m.

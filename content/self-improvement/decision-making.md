@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: self-improvement
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+last_verified: '2026-05-26'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -23,7 +23,7 @@ atomic_facts:
     source_url: https://us.macmillan.com/books/9780374533557/thinkingfastandslow
     confidence: medium
   - id: fact-self-improvement-002
-    statement: "Regret minimization framework (Bezos): at 80, will I regret not doing this?"
+    statement: 'Regret minimization framework (Bezos): at 80, will I regret not doing this?'
     source_title: Thinking, Fast and Slow (Daniel Kahneman)
     source_url: https://us.macmillan.com/books/9780374533557/thinkingfastandslow
     confidence: medium
@@ -41,7 +41,7 @@ primary_sources:
     year: 2011
     url: https://us.macmillan.com/books/9780374533557/thinkingfastandslow
     institution: Farrar, Straus and Giroux
-  - title: "Decisive: How to Make Better Choices (2025)"
+  - title: 'Decisive: How to Make Better Choices (2025)'
     type: book
     year: 2025
     authors:
@@ -56,6 +56,26 @@ primary_sources:
       - Kahneman D.
     institution: FSG
     url: https://us.macmillan.com/thinking-fast-and-slow/
+  - title: Quantum decision making by social agents
+    authors:
+      - V. I. Yukalov
+      - D. Sornette
+    year: 2012
+    doi: 10.1142/S0219622014500564
+    url: https://arxiv.org/abs/1202.4918v2
+    type: academic_paper
+    institution: arXiv
+  - title: 'Ethics-Based Auditing of Automated Decision-Making Systems: Nature, Scope, and Limitations'
+    authors:
+      - Jakob Mokander
+      - Jessica Morley
+      - Mariarosaria Taddeo
+      - Luciano Floridi
+    year: 2021
+    doi: 10.1007/s11948-021-00319-4
+    url: https://arxiv.org/abs/2110.10980v1
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: Thinking, Fast and Slow
     type: book
@@ -68,6 +88,7 @@ secondary_sources:
     url: https://jamesclear.com/atomic-habits
     institution: Avery, Penguin Random House
 ---
+
 ## TL;DR
 
 Effective decision-making balances intuition with analysis. Key frameworks: pros/cons list, decision matrix (weighted criteria), cost-benefit analysis, expected value, premortem (imagine failure, then work backwards). Avoid: analysis paralysis, sunk cost fallacy, confirmation bias. 'Good decision process > good outcome' — you can do everything right and still lose.

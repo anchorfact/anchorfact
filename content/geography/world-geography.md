@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: geography
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-22'
 generation_method: ai_assisted
 ai_models:
@@ -68,6 +68,22 @@ primary_sources:
     type: book
     year: 2019
     institution: National Geographic
+  - title: Artificial Intelligence and Human Geography
+    authors:
+      - Song Gao
+    year: 2023
+    url: https://arxiv.org/abs/2312.08827v1
+    type: academic_paper
+    institution: arXiv
+  - title: 'A Scoping Review of Earth Observation and Machine Learning for Causal Inference: Implications for the Geography of Poverty'
+    authors:
+      - Kazuki Sakamoto
+      - Connor T. Jerzak
+      - Adel Daoud
+    year: 2024
+    url: https://arxiv.org/abs/2406.02584v4
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: CIA World Factbook
     type: database
@@ -80,6 +96,7 @@ secondary_sources:
     url: https://www.nationalgeographic.com/maps/atlas/
     institution: National Geographic
 ---
+
 
 
 

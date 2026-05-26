@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: self-improvement
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -91,6 +91,25 @@ primary_sources:
     type: book
     year: 1990
     institution: Harper & Row
+  - title: Concentration of the Langevin Algorithm's Stationary Distribution
+    authors:
+      - Jason M. Altschuler
+      - Kunal Talwar
+    year: 2022
+    url: https://arxiv.org/abs/2212.12629v2
+    type: academic_paper
+    institution: arXiv
+  - title: 'Mapping dissolved carbon in space and time: An experimental technique for the measurement of pH and total carbon concentration in density driven convection of CO$_2$ dissolved in water'
+    authors:
+      - Hilmar Yngvi Birggison
+      - Yao Xu
+      - Marcel Moura
+      - Eirik Grude Flekkøy
+      - Knut Jørgen Måløy
+    year: 2024
+    url: https://arxiv.org/abs/2405.05682v1
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: Atomic Habits (James Clear)
     type: book
@@ -98,6 +117,7 @@ secondary_sources:
     url: https://jamesclear.com/atomic-habits
     institution: Avery, Penguin Random House
 ---
+
 
 ## TL;DR
 

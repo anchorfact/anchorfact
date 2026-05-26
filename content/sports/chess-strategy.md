@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: sports
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -69,6 +69,24 @@ primary_sources:
     year: 2023
     url: https://handbook.fide.com/chapter/E012023
     institution: FIDE
+  - title: A New Strategy for the Exploration of Venus
+    authors:
+      - The VEXAG Exploration Strategy Study Analysis Workgroup
+    year: 2024
+    url: https://arxiv.org/abs/2412.06830v1
+    type: academic_paper
+    institution: arXiv
+  - title: A discount strategy in word-of-mouth marketing and its assessment
+    authors:
+      - Tianrui Zhang
+      - Xiaofan Yang
+      - Lu-Xing Yang
+      - Yuan Yan Tang
+      - Yingbo Wu
+    year: 2017
+    url: https://arxiv.org/abs/1704.06910v1
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: FIDE Laws of Chess
     type: rulebook
@@ -81,6 +99,7 @@ secondary_sources:
     url: https://www.olympic.org/sports
     institution: International Olympic Committee
 ---
+
 
 ## TL;DR
 

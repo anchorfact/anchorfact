@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: self-improvement
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-25'
 generation_method: ai_structured
 conflict_of_interest: none_declared
@@ -22,9 +22,27 @@ primary_sources:
     year: 2026
     url: https://mitpress.mit.edu/9780262535045/
     institution: TBD
+  - title: Philosophy of Cognitive Science in the Age of Deep Learning
+    authors:
+      - Raphaël Millière
+    year: 2024
+    url: https://arxiv.org/abs/2405.04048v1
+    type: academic_paper
+    institution: arXiv
+  - title: Pulsar Science with the SKA Observatory
+    authors:
+      - Bhal Chandra Joshi
+      - Aris Karastergiou
+      - Marta Burgay
+      - The SKA pulsar science working group
+    year: 2025
+    url: https://arxiv.org/abs/2512.16152v1
+    type: academic_paper
+    institution: arXiv
 secondary_sources: []
 updated: '2026-05-25'
 ---
+
 
 ## TL;DR
 

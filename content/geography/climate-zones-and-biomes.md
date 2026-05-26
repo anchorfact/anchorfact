@@ -5,8 +5,8 @@ schema_type: Article
 category: geography
 language: en
 confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+last_verified: '2026-05-26'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -16,17 +16,17 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-geo-cz-001
-    statement: "Köppen-Geiger system (1884, updated Peel 2007): 5 main climate groups (Tropical, Dry, Temperate, Continental, Polar)."
+    statement: 'Köppen-Geiger system (1884, updated Peel 2007): 5 main climate groups (Tropical, Dry, Temperate, Continental, Polar).'
     source_title: Peel, Finlayson & McMahon, Köppen-Geiger world map (HESS 2007)
     source_url: https://doi.org/10.5194/hess-11-1633-2007
     confidence: high
   - id: fact-geo-cz-002
-    statement: "Tropical rainforests: ~6% land area but >50% of terrestrial species (Conservation International 2024)."
-    source_title: "IPCC AR6 WG2: Climate Change 2022 Impacts"
+    statement: 'Tropical rainforests: ~6% land area but >50% of terrestrial species (Conservation International 2024).'
+    source_title: 'IPCC AR6 WG2: Climate Change 2022 Impacts'
     source_url: https://www.ipcc.ch/report/ar6/wg2/
     confidence: high
   - id: fact-geo-cz-003
-    statement: "Permafrost carbon feedback: thawing releases CH4/CO2, amplifying warming (Schuur, Nature 2015)."
+    statement: 'Permafrost carbon feedback: thawing releases CH4/CO2, amplifying warming (Schuur, Nature 2015).'
     source_title: Schuur et al. Permafrost carbon feedback (Nature 2015)
     source_url: https://doi.org/10.1038/nature14338
     confidence: high
@@ -37,7 +37,7 @@ known_gaps:
 disputed_statements:
   - statement: No major disputed statements identified
 primary_sources:
-  - title: "Biogeography: Introduction to Space, Time, and Life"
+  - title: 'Biogeography: Introduction to Space, Time, and Life'
     type: textbook
     year: 2022
     url: https://www.wiley.com/en-us/Biogeography-p-9781119464730
@@ -47,6 +47,15 @@ primary_sources:
     year: 2024
     url: https://www.climate.gov/koppen-climate-classification
     institution: NOAA
+  - title: Solar magnetic fields and terrestrial climate
+    authors:
+      - Katya Georgieva
+      - Yury Nagovitsyn
+      - Boian Kirov
+    year: 2014
+    url: https://arxiv.org/abs/1411.6030v1
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: Fundamentals of the Physical Environment (Smithson, Addison, Atkinson, 4th Edition)
     type: textbook
@@ -57,7 +66,7 @@ secondary_sources:
       - Atkinson, Ken
     institution: Routledge
     url: https://doi.org/10.4324/9780203934029
-  - title: "The Global Climate System: Patterns, Processes, and Teleconnections (Bridgman & Oliver)"
+  - title: 'The Global Climate System: Patterns, Processes, and Teleconnections (Bridgman & Oliver)'
     type: textbook
     year: 2006
     authors:
@@ -65,7 +74,7 @@ secondary_sources:
       - Oliver, John E.
     institution: Cambridge University Press
     url: https://doi.org/10.1017/CBO9780511817984
-  - title: "Köppen Climate Classification: Updated World Map of the Köppen-Geiger Climate Classification (Peel et al.)"
+  - title: 'Köppen Climate Classification: Updated World Map of the Köppen-Geiger Climate Classification (Peel et al.)'
     type: journal_article
     year: 2007
     authors:
@@ -74,29 +83,30 @@ secondary_sources:
       - McMahon, Thomas A.
     institution: Hydrology & Earth System Sciences
     url: https://doi.org/10.5194/hess-11-1633-2007
-  - title: "IPCC Special Report: Climate Change and Land (SRCCL)"
+  - title: 'IPCC Special Report: Climate Change and Land (SRCCL)'
     type: report
     year: 2019
     authors:
       - IPCC
     institution: Intergovernmental Panel on Climate Change
     url: https://www.ipcc.ch/srccl/
-  - title: "Köppen Climate Classification: Updated High-Resolution Maps for the 2020-2040 Period (2025)"
+  - title: 'Köppen Climate Classification: Updated High-Resolution Maps for the 2020-2040 Period (2025)'
     type: article
     year: 2025
     authors:
       - multiple
     institution: Nature Scientific Data
     url: https://doi.org/10.1038/s41597-2025-koppen
-  - title: "Biome Shifts Under Climate Change: Projections to 2100 (IPCC AR6 / Nature 2025)"
+  - title: 'Biome Shifts Under Climate Change: Projections to 2100 (IPCC AR6 / Nature 2025)'
     type: article
     year: 2025
     authors:
       - multiple
     institution: Nature Climate Change
     url: https://doi.org/10.1038/s41558-2025-biome
-updated: "2026-05-24"
+updated: '2026-05-24'
 ---
+
 ## TL;DR
 Earth's surface is divided into distinct climate zones and biomes with characteristic temperature, precipitation, and vegetation patterns. These zones are shifting poleward at unprecedented rates due to anthropogenic climate change.
 

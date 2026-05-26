@@ -5,7 +5,7 @@ schema_type: Article
 category: self-improvement
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -92,6 +92,26 @@ primary_sources:
     type: book
     year: 2008
     institution: HarperCollins
+  - title: Quantum decision making by social agents
+    authors:
+      - V. I. Yukalov
+      - D. Sornette
+    year: 2012
+    doi: 10.1142/S0219622014500564
+    url: https://arxiv.org/abs/1202.4918v2
+    type: academic_paper
+    institution: arXiv
+  - title: 'Ethics-Based Auditing of Automated Decision-Making Systems: Nature, Scope, and Limitations'
+    authors:
+      - Jakob Mokander
+      - Jessica Morley
+      - Mariarosaria Taddeo
+      - Luciano Floridi
+    year: 2021
+    doi: 10.1007/s11948-021-00319-4
+    url: https://arxiv.org/abs/2110.10980v1
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: Thinking, Fast and Slow (Kahneman)
     type: textbook
@@ -141,6 +161,7 @@ secondary_sources:
     url: https://doi.org/10.1177/pspi.2025.ai
 updated: '2026-05-24'
 ---
+
 
 ## TL;DR
 Human decision making is shaped by cognitive biases — systematic deviations from rationality affecting everything from financial choices to medical diagnoses.

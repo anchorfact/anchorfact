@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: self-improvement
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-26'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -90,6 +90,38 @@ primary_sources:
     type: book
     year: 1936
     institution: Simon & Schuster
+  - title: 'Memento-Skills: Let Agents Design Agents'
+    authors:
+      - Huichi Zhou
+      - Siyuan Guo
+      - Anjie Liu
+      - Zhongwei Yu
+      - Ziqin Gong
+      - Bowen Zhao
+      - Zhixun Chen
+      - Menglong Zhang
+      - Yihang Chen
+      - Jinsong Li
+      - Runyu Yang
+      - Qiangbin Liu
+      - Xinlei Yu
+      - Jianmin Zhou
+      - Na Wang
+      - Chunyang Sun
+      - Jun Wang
+    year: 2026
+    url: https://arxiv.org/abs/2603.18743v1
+    type: academic_paper
+    institution: arXiv
+  - title: Piano Skills Assessment
+    authors:
+      - Paritosh Parmar
+      - Jaiden Reddy
+      - Brendan Morris
+    year: 2021
+    url: https://arxiv.org/abs/2101.04884v2
+    type: academic_paper
+    institution: arXiv
 secondary_sources:
   - title: How to Win Friends and Influence People
     type: book
@@ -102,6 +134,7 @@ secondary_sources:
     url: https://jamesclear.com/atomic-habits
     institution: Avery, Penguin Random House
 ---
+
 
 ## TL;DR
 
