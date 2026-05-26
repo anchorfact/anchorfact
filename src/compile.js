@@ -77,7 +77,7 @@ function splitFrontmatter(mdContent) {
 // ---- Compilers ----
 
 function compileJsonLd(frontmatter, body, filePath) {
-  const articleId = frontmatter.id || basename(filePath, '.md');
+  const articleId = basename(filePath, '.md'); // slug-based, matches dist directory
   const sources = frontmatter.primary_sources || [];
   const vd = lookupVerificationData(filePath);
   const confidence = computeConfidence(sources, frontmatter, vd);
@@ -172,7 +172,7 @@ ${body}
 }
 
 function compileTurtle(frontmatter, body, filePath) {
-  const articleId = frontmatter.id || basename(filePath, '.md');
+  const articleId = basename(filePath, '.md'); // slug-based, matches dist directory
   const vd = lookupVerificationData(filePath);
   const confidence = computeConfidence(frontmatter.primary_sources || [], frontmatter, vd);
   const lines = [];
@@ -223,7 +223,8 @@ function compileFile(mdPath, distDir) {
     return;
   }
 
-  const articleId = frontmatter.id || basename(mdPath, '.md');
+  // slug-based unique ID (avoids agent-pipeline kb-id collisions)
+  const articleId = basename(mdPath, '.md');
   const outDir = join(distDir, articleId);
   mkdirSync(outDir, { recursive: true });
 
@@ -265,9 +266,13 @@ function compileFile(mdPath, distDir) {
 </html>`;
   writeFileSync(join(outDir, 'index.html'), html);
 
+  const isPlaceholder = body.includes('待后续补充') || body.includes('待补充');
+  if (isPlaceholder) frontmatter.completeness = Math.min(frontmatter.completeness || 0.5, 0.4); // force low completeness for drafts
+
   const basisIcon = confidence.inputs.based_on === 'verified_sources' ? '✓' : '?';
-  console.log(`${basisIcon} Compiled: ${mdPath} → ${outDir}/ (${confidence.level}/${confidence.score}, basis=${confidence.inputs.based_on})`);
-  return { articleId, ...jsonLd, _confidence: confidence };
+  const draftIcon = isPlaceholder ? '📝' : '';
+  console.log(`${basisIcon}${draftIcon} Compiled: ${mdPath} → ${outDir}/ (${confidence.level}/${confidence.score}, basis=${confidence.inputs.based_on}${isPlaceholder ? ', DRAFT' : ''})`);
+  return { articleId, ...jsonLd, _confidence: confidence, _isPlaceholder: isPlaceholder };
 }
 
 function compileAll(contentDir, distDir, verificationReportPath) {
@@ -327,6 +332,8 @@ const confidenceSummary = {
   high: results.filter(r => r._confidence?.level === 'high').length,
   medium: results.filter(r => r._confidence?.level === 'medium').length,
   low: results.filter(r => r._confidence?.level === 'low').length,
+  _draftMedium: results.filter(r => r._isPlaceholder && r._confidence?.level === 'medium').length,
+  _draftLow: results.filter(r => r._isPlaceholder && r._confidence?.level === 'low').length,
   basis: {
     verified: results.filter(r => r._confidence?.inputs?.based_on === 'verified_sources').length,
     estimated: results.filter(r => r._confidence?.inputs?.based_on !== 'verified_sources').length
@@ -395,20 +402,41 @@ const rootHtml = `<!DOCTYPE html>
 <body>
   <h1>AnchorFact</h1>
   <p class="tagline">Anchor AI to Facts. Trust anchored in verifiable sources.</p>
-  <p class="meta">Confidence based on ${confidenceSummary.basis.verified} verified · ${confidenceSummary.basis.estimated} estimated · ${_verificationTimestamp ? 'report: ' + _verificationTimestamp : 'no verification report'}</p>
+  <div class="card" style="background:#F0FDF4;border-color:#BBF7D0;margin-bottom:16px;">
+    <strong style="color:#166534;">✅ Verified Sources in Use</strong><br>
+    <span style="font-size:1.1rem;font-weight:700;color:#166534;">${confidenceSummary.basis.verified} articles</span> use real source verification data (CrossRef DOI + arXiv API + HTTP).<br>
+    <span style="font-size:0.85rem;color:#64748B;">${confidenceSummary.basis.estimated} articles use estimated confidence — run <code>npm run verify</code> to verify them. Verification report: ${_verificationTimestamp ? new Date(_verificationTimestamp).toISOString().slice(0,10) : 'pending'}</span>
+  </div>
   <p>An <strong>AI-structured knowledge base</strong> for LLM citations. Every article is compiled from traceable publications — not written, but <em>integrated</em>. Confidence is computed by a <strong>public formula</strong> with actual source verification data.</p>
   <div class="card">
     <strong>For AIs</strong><br>
-    <a href="/llms.txt">llms.txt</a> — site map for LLM crawlers
+    <a href="/llms.txt">llms.txt</a> — site map for LLM crawlers ·
+    <a href="/dashboard.html">Dashboard</a> — live stats
   </div>
   <div class="card">
-    <strong>Knowledge Base (${results.length} articles)</strong><br>
+    <strong>Completed Articles (${results.filter(r => !r._isPlaceholder).length})</strong><br>
     <span class="badge-h">high: ${confidenceSummary.high}</span>
-    <span class="badge-m">medium: ${confidenceSummary.medium}</span>
-    <span class="badge-l">low: ${confidenceSummary.low}</span>
+    <span class="badge-m">medium: ${confidenceSummary.medium - confidenceSummary._draftMedium}</span>
+    <span class="badge-l">low: ${confidenceSummary.low - confidenceSummary._draftLow}</span>
     <br><br>
-    ${articleLinks}
+    ${results.filter(r => !r._isPlaceholder).map(r => {
+      const id = r['@id'].split('/').pop();
+      const conf = r._confidence;
+      return `<span title="confidence: ${conf?.level} (${conf?.score}) [${conf?.inputs?.based_on}]">${conf?.inputs?.based_on === 'verified_sources' ? '✓' : '?'}<a href="/${id}/">${r.headline || id}</a></span>` +
+        ` · <a href="/${id}/index.json">JSON-LD</a>` +
+        ` · <a href="/${id}/index.txt">TXT</a>`;
+    }).join('<br>\n    ')}
   </div>
+  ${results.filter(r => r._isPlaceholder).length > 0 ? `
+  <div class="card" style="background:#FFFBEB;border-color:#FDE68A;">
+    <strong style="color:#92400E;">📝 Draft Articles (${results.filter(r => r._isPlaceholder).length})</strong><br>
+    <span style="font-size:0.85rem;color:#92400E;">These articles have outline content and verified sources, but detailed analysis is still being completed.</span><br><br>
+    ${results.filter(r => r._isPlaceholder).slice(0,15).map(r => {
+      const id = r['@id'].split('/').pop();
+      return `<a href="/${id}/" style="color:#B45309;">${r.headline || id}</a>`;
+    }).join(' · ')}
+    ${results.filter(r => r._isPlaceholder).length > 15 ? ' · <em>and '+(results.filter(r=>r._isPlaceholder).length-15)+' more</em>' : ''}
+  </div>` : ''}
   <div class="card">
     <strong>Project</strong><br>
     <a href="https://github.com/anchorfact/anchorfact">GitHub</a> ·
