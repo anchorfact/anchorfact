@@ -1,141 +1,88 @@
 ---
-atomic_facts:
-  - confidence: high
-    id: fact-ai-001
-    source_title: 'Dropout: A Simple Way to Prevent Neural Networks from Overfitting'
-    source_url: https://jmlr.org/papers/v15/srivastava14a.html
-    statement: >-
-      Overfitting occurs when a model learns noise and patterns specific to training data, failing to generalize to unseen data. Signs: low training error, high validation error. Regularization
-      techniques prevent overfitting: L1/L2 weight penalty, dropout, early stopping, data augmentation, batch normalization.
-  - confidence: high
-    id: fact-ai-002
-    source_title: 'Dropout: A Simple Way to Prevent Neural Networks from Overfitting'
-    source_url: https://jmlr.org/papers/v15/srivastava14a.html
-    statement: 'Dropout (Srivastava et al., 2014): randomly deactivate neurons during training — forces network to learn redundant representations.'
-  - confidence: medium
-    id: fact-ai-003
-    source_title: Deep Learning (Goodfellow, Bengio, Courville)
-    source_url: https://www.deeplearningbook.org/
-    statement: 'L2 regularization: add λ||w||² to loss — penalizes large weights.'
-  - confidence: medium
-    id: fact-ai-004
-    source_title: Deep Learning (Goodfellow, Bengio, Courville)
-    source_url: https://www.deeplearningbook.org/
-    statement: 'Data augmentation: create synthetic training data (rotate/crop images, synonym replacement for text).'
-category: ai
-completeness: 0.88
-confidence: medium
-conflict_of_interest: none_declared
-created_date: '2026-05-22'
-data_period: static
-derived_from_human_seed: true
-disputed_statements:
-  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
-generation_method: ai_structured
 id: kb-2026-00276
-is_live_document: false
-known_gaps:
-  - Statistics and data cited are from 2016 and earlier; more recent data may have become available since publication
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-  - Recent developments from 2025-2026 may not be reflected
+title: Overfitting and Regularization
+schema_type: TechArticle
+category: ai
 language: en
-last_verified: '2026-05-25'
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: ai_structured
+ai_models:
+  - claude-opus
+derived_from_human_seed: true
+conflict_of_interest: none_declared
+is_live_document: false
+data_period: static
+atomic_facts:
+  - id: fact-ai-001
+    statement: The Deep Learning textbook treats regularization as changes to a learning algorithm intended to reduce generalization error rather than training error alone.
+    source_title: Deep Learning - Chapter 7, Regularization for Deep Learning
+    source_url: https://www.deeplearningbook.org/contents/regularization.html
+    confidence: medium
+  - id: fact-ai-002
+    statement: Dropout trains neural networks by randomly omitting units during training and was proposed as a method to reduce overfitting.
+    source_title: 'Dropout: A Simple Way to Prevent Neural Networks from Overfitting'
+    source_url: https://jmlr.org/papers/v15/srivastava14a.html
+    confidence: medium
+  - id: fact-ai-003
+    statement: The Inception-v3 paper used label smoothing as a regularizing component of its training procedure.
+    source_title: Rethinking the Inception Architecture for Computer Vision
+    source_url: https://arxiv.org/abs/1512.00567
+    confidence: medium
 primary_sources:
+  - title: Deep Learning - Chapter 7, Regularization for Deep Learning
+    type: textbook
+    year: 2016
+    authors:
+      - Goodfellow, Ian
+      - Bengio, Yoshua
+      - Courville, Aaron
+    institution: MIT Press
+    url: https://www.deeplearningbook.org/contents/regularization.html
   - title: 'Dropout: A Simple Way to Prevent Neural Networks from Overfitting'
-    type: journal_article
+    type: academic_paper
     year: 2014
     authors:
-      - Srivastava, Nitish
-      - Hinton, Geoffrey
-    institution: JMLR
-    url: https://jmlr.org/papers/v15/srivastava14a.html
-  - title: A Comprehensive Survey of Modern Regularization Techniques for Deep Neural Networks
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: Neurocomputing (Elsevier)
-    url: https://doi.org/10.1016/j.neucom.2025.128639
-  - title: Sharpness-Aware Minimization for Efficiently Improving Generalization
-    type: conference_paper
-    year: 2021
-    authors:
-      - Foret, Pierre
-      - Kleiner, Ariel
-      - Mobahi, Hossein
-      - Neyshabur, Behnam
-    institution: ICLR 2021
-    url: https://arxiv.org/abs/2010.01412
-  - title: Understanding Deep Learning Requires Rethinking Generalization
-    authors:
-      - Zhang, C.
-      - Bengio, S.
-      - Hardt, M.
-      - Recht, B.
-      - Vinyals, O.
-    type: academic_paper
-    year: 2017
-    doi: 10.1145/3446776
-    institution: ICLR / CACM
-  - title: A Unified Approach to Interpreting Model Predictions (SHAP)
-    authors:
-      - Lundberg, S.M.
-      - Lee, S.
-    type: academic_paper
-    year: 2017
-    url: https://arxiv.org/abs/1705.07874
-    institution: NeurIPS
-schema_type: TechArticle
-secondary_sources:
-  - authors:
       - Srivastava, Nitish
       - Hinton, Geoffrey
       - Krizhevsky, Alex
       - Sutskever, Ilya
       - Salakhutdinov, Ruslan
-    institution: JMLR
-    title: 'Dropout: A Simple Way to Prevent Neural Networks from Overfitting'
-    type: academic_paper
+    institution: Journal of Machine Learning Research
     url: https://jmlr.org/papers/v15/srivastava14a.html
-    year: 2014
-  - title: A Comprehensive Survey of Regularization Techniques in Deep Learning
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: Neurocomputing (Elsevier)
-    url: https://doi.org/10.1016/j.neucom.2025.128639
-  - title: Rethinking the Inception Architecture for Computer Vision (Label Smoothing)
-    type: conference_paper
-    year: 2016
+  - title: Rethinking the Inception Architecture for Computer Vision
+    type: academic_paper
+    year: 2015
     authors:
       - Szegedy, Christian
-    institution: Google / CVPR
+      - Vanhoucke, Vincent
+      - Ioffe, Sergey
+      - Shlens, Jonathon
+      - Wojna, Zbigniew
+    institution: arXiv
     url: https://arxiv.org/abs/1512.00567
-  - title: A Survey of Modern Regularization Methods for Deep Neural Networks
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE Access
-    url: https://doi.org/10.1109/ACCESS.2025.3567842
-title: Overfitting and Regularization
-updated: '2026-05-24'
+completeness: 0.84
+known_gaps:
+  - This entry covers stable regularization examples and does not claim that any one method is universally optimal.
 ---
 
 ## TL;DR
 
-Overfitting occurs when a model learns noise and patterns specific to training data, failing to generalize to unseen data. Signs: low training error, high validation error. Regularization techniques prevent overfitting: L1/L2 weight penalty, dropout, early stopping, data augmentation, batch normalization.
+Overfitting is the gap between fitting the training data and generalizing to new data. Regularization methods such as dropout, weight penalties, augmentation, and label smoothing are intended to improve generalization.
 
 ## Core Explanation
 
-Dropout (Srivastava et al., 2014): randomly deactivate neurons during training — forces network to learn redundant representations. L2 regularization: add λ||w||² to loss — penalizes large weights. Early stopping: stop training when validation error stops improving. Data augmentation: create synthetic training data (rotate/crop images, synonym replacement for text). Bias-variance tradeoff: underfitting (high bias) vs. overfitting (high variance).
+This repair pass removed unsupported survey metadata and retained only claims that map directly to the Deep Learning textbook, the JMLR dropout paper, and the Inception-v3 label-smoothing paper.
 
 ## Further Reading
 
-- [Deep Learning (Goodfellow, Bengio, Courville)](https://www.deeplearningbook.org/)
+- [Deep Learning - Chapter 7, Regularization for Deep Learning](https://www.deeplearningbook.org/contents/regularization.html)
+- [Dropout: A Simple Way to Prevent Neural Networks from Overfitting](https://jmlr.org/papers/v15/srivastava14a.html)
+- [Rethinking the Inception Architecture for Computer Vision](https://arxiv.org/abs/1512.00567)
 
 ## Related Articles
 
-- [Dropout and Regularization Techniques](../dropout-and-regularization.md)
+- [Neural Network Basics](../neural-network-basics.md)
+- [Activation Functions in Neural Networks](../activation-functions.md)
+- [Backpropagation: The Engine of Neural Network Learning](../backpropagation.md)

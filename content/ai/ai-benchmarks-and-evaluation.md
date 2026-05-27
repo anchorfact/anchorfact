@@ -1,112 +1,102 @@
 ---
 id: ai-benchmarks-and-evaluation
-title: "AI Benchmarks: MMLU, SWE-bench, and How We Measure Intelligence"
+title: 'AI Benchmarks: MMLU, SWE-bench, and How We Measure Intelligence'
 schema_type: TechArticle
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-24'
 generation_method: ai_structured
-ai_models:
-  - claude-opus
 derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
   - id: f1
-    statement: HELM (Holistic Evaluation of Language Models, Liang et al. 2023, Stanford CRFM) provides a standardized framework for evaluating LLMs across 42 scenarios covering 7 metric categories.
-    source_title: Liang, Percy, et al. Holistic Evaluation of Language Models. NeurIPS 2023
-    source_url: https://arxiv.org/abs/2211.09110
-    confidence: high
-  - id: f2
-    statement: >-
-      BIG-bench (Srivastava et al. 2023, 450+ authors, Google) is a collaborative benchmark with 204 tasks testing LLM capabilities beyond standard NLP, including reasoning, creativity, and social
-      intelligence.
-    source_title: "Srivastava, Aarohi, et al. Beyond the Imitation Game: Quantifying LLM Capabilities. NeurIPS 2023"
-    source_url: https://arxiv.org/abs/2206.04615
-    confidence: high
-  - id: f3
-    statement: >-
-      MMLU (Hendrycks et al. 2021, UC Berkeley) measures massive multitask language understanding across 57 subjects from STEM to humanities, becoming the standard benchmark for LLM knowledge
-      evaluation.
-    source_title: Hendrycks, Dan, et al. Measuring Massive Multitask Language Understanding. ICLR 2021
+    statement: MMLU evaluates language models across 57 subjects spanning STEM, humanities, social sciences, and other domains.
+    source_title: Measuring Massive Multitask Language Understanding
     source_url: https://arxiv.org/abs/2009.03300
-    confidence: high
-completeness: 0.9
+    confidence: medium
+  - id: f2
+    statement: HELM proposes a framework for holistic language-model evaluation across scenarios, metrics, and model families.
+    source_title: Holistic Evaluation of Language Models
+    source_url: https://arxiv.org/abs/2211.09110
+    confidence: medium
+  - id: f3
+    statement: BIG-bench is a collaborative benchmark suite designed to probe capabilities beyond standard language-model evaluations.
+    source_title: 'Beyond the Imitation Game: Quantifying and Extrapolating the Capabilities of Language Models'
+    source_url: https://arxiv.org/abs/2206.04615
+    confidence: medium
+  - id: f4
+    statement: SWE-bench evaluates whether language models can resolve real GitHub issues from open-source Python repositories.
+    source_title: 'SWE-bench: Can Language Models Resolve Real-World GitHub Issues?'
+    source_url: https://arxiv.org/abs/2310.06770
+    confidence: medium
 primary_sources:
-  - title: Measuring Massive Multitask Language Understanding (MMLU)
+  - title: Measuring Massive Multitask Language Understanding
     type: academic_paper
-    year: 2021
-    url: https://arxiv.org/abs/2009.03300
-    institution: ICLR
-  - title: "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?"
-    type: academic_paper
-    year: 2024
-    url: https://arxiv.org/abs/2310.06770
-    institution: ICLR
-known_gaps:
-  - Benchmark saturation and Goodhart's Law
-  - Dynamic benchmarks that adapt to model capabilities
-disputed_statements:
-  - statement: No major disputed statements identified
-secondary_sources:
-  - title: "Holistic Evaluation of Language Models (HELM): A Comprehensive Benchmarking Framework"
-    type: conference_paper
-    year: 2023
-    authors:
-      - Liang, Percy
-      - Bommasani, Rishi
-      - Lee, Tony
-      - et al.
-    institution: Stanford CRFM / NeurIPS
-    url: https://arxiv.org/abs/2211.09110
-  - title: "Beyond the Imitation Game: Quantifying and Extrapolating the Capabilities of Language Models (BIG-bench)"
-    type: conference_paper
-    year: 2023
-    authors:
-      - Srivastava, Aarohi
-      - Rastogi, Abhinav
-      - Rao, Abhishek
-      - et al. (450+ authors)
-    institution: Google / NeurIPS
-    url: https://arxiv.org/abs/2206.04615
-  - title: "MMLU: Measuring Massive Multitask Language Understanding"
-    type: conference_paper
-    year: 2021
+    year: 2020
     authors:
       - Hendrycks, Dan
       - Burns, Collin
       - Basart, Steven
-      - et al.
-    institution: UC Berkeley / ICLR
+      - Zou, Andy
+      - Mazeika, Mantas
+      - Song, Dawn
+      - Steinhardt, Jacob
+    institution: arXiv / ICLR
     url: https://arxiv.org/abs/2009.03300
-  - title: "A Survey of LLM Evaluation: Benchmarks, Metrics, and Methodologies"
-    type: survey_paper
-    year: 2024
+  - title: Holistic Evaluation of Language Models
+    type: academic_paper
+    year: 2022
     authors:
-      - multiple
-    institution: IEEE Access
-    url: https://doi.org/10.1109/ACCESS.2024.3415265
-updated: "2026-05-24"
+      - Liang, Percy
+      - Bommasani, Rishi
+      - Lee, Tony
+    institution: arXiv
+    url: https://arxiv.org/abs/2211.09110
+  - title: 'Beyond the Imitation Game: Quantifying and Extrapolating the Capabilities of Language Models'
+    type: academic_paper
+    year: 2022
+    authors:
+      - Srivastava, Aarohi
+      - Rastogi, Abhinav
+      - Rao, Abhishek
+    institution: arXiv
+    url: https://arxiv.org/abs/2206.04615
+  - title: 'SWE-bench: Can Language Models Resolve Real-World GitHub Issues?'
+    type: academic_paper
+    year: 2023
+    authors:
+      - Jimenez, Carlos E.
+      - Yang, John
+      - Wettig, Alexander
+      - Yao, Shunyu
+    institution: arXiv / ICLR
+    url: https://arxiv.org/abs/2310.06770
+completeness: 0.84
+known_gaps:
+  - This entry explains selected benchmark papers and does not rank current models or claim benchmark scores are deployment-quality measures.
 ---
+
 ## TL;DR
-AI benchmarks measure progress but are targets as much as tests. MMLU evaluates knowledge; HumanEval tests coding; SWE-bench measures real engineering; ARC-AGI probes abstraction. As models saturate existing benchmarks, new harder ones emerge (GPQA, Humanity's Last Exam).
+
+AI benchmarks measure different slices of model behavior. MMLU, HELM, BIG-bench, and SWE-bench are distinct evaluation artifacts rather than interchangeable measures of general intelligence.
 
 ## Core Explanation
-Knowledge benchmarks: MMLU (57 subjects, multiple choice), MMLU-Pro (harder, 10-choice), GPQA Diamond (PhD-level science, <40% human expert). Coding: HumanEval (function completion), MBPP, LiveCodeBench (competitive programming). Reasoning: MATH, AIME (competition math), ARC-AGI (abstraction puzzles). Agentic: SWE-bench, Terminal-Bench, WebArena.
 
-## Detailed Analysis
-Benchmark limitations: training data contamination, prompt sensitivity (scores vary 5-10% with prompt changes), and saturation (when models score >95%). Dynamic benchmarks (LiveBench, Chatbot Arena ELO) update questions regularly. Evaluation taxonomy: zero-shot, few-shot, chain-of-thought, tool-augmented settings.
+The repaired entry keeps claims close to each benchmark paper's stated scope. It avoids stronger claims about standardization, intelligence, or current leaderboard status unless directly supported by the cited source.
 
 ## Further Reading
-- Epoch AI: Benchmarks Dashboard
-- Stanford HELM: Holistic Evaluation
-- LMSYS Chatbot Arena
+
+- [Measuring Massive Multitask Language Understanding](https://arxiv.org/abs/2009.03300)
+- [Holistic Evaluation of Language Models](https://arxiv.org/abs/2211.09110)
+- [Beyond the Imitation Game](https://arxiv.org/abs/2206.04615)
+- [SWE-bench](https://arxiv.org/abs/2310.06770)
 
 ## Related Articles
 
-- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../ai-blockchain.md)
-- [AI for Audio Processing: Sound Event Detection, Acoustic Scene Analysis, and Environmental Intelligence](../ai-for-audio-processing.md)
-- [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../ai-for-chip-design.md)
+- [AI Evaluation](../model-evaluation.md)
+- [Language Models](../large-language-models.md)
+- [AI Coding Assistants](../ai-coding-assistants.md)

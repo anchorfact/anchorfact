@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: history
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-28'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -16,90 +16,54 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-history-001
-    statement: >-
-      Polynesian navigators settled the vast Pacific Ocean (covering 1/3 of Earth's surface) using wayfinding — navigation by stars, ocean swells, wind patterns, bird behavior, and clouds. They
-      reached Hawaii, Easter Island (Rapa Nui), and New Zealand (Aotearoa) — the last uninhabited landmasses on Earth settled by humans (~1200 CE).
-    source_title: 'Voyagers: The Settlement of the Pacific (Nicholas Thomas)'
-    source_url: https://www.basicbooks.com/titles/nicholas-thomas/voyagers/9781541619876/
+    statement: Polynesian wayfinding uses non-instrument observations of stars, sun, ocean swells, winds, birds, and other natural signs to maintain direction and estimate position at sea.
+    source_title: Polynesian Wayfinding
+    source_url: https://hokulea.com/polynesian-wayfinding/
     confidence: medium
   - id: fact-history-002
-    statement: 'Wayfinding: memorized star compass (32+ points), read reflected/refracted swells, observed birds (landfinding species: terns, frigates).'
-    source_title: 'Voyagers: The Settlement of the Pacific (Nicholas Thomas)'
-    source_url: https://www.basicbooks.com/titles/nicholas-thomas/voyagers/9781541619876/
+    statement: The modern Hokulea voyage program helped revive traditional long-distance wayfinding and demonstrated open-ocean voyaging without Western navigation instruments.
+    source_title: 'Guiding Us Home: Traditional Hawaiian Wayfinding Aboard Hokulea'
+    source_url: https://folklife.si.edu/magazine/hokulea-hawaiian-wayfinding
     confidence: medium
   - id: fact-history-003
-    statement: 'Austronesian migration: started from Taiwan ~3000 BCE → Philippines → Indonesia → Pacific (Lapita culture) → Remote Oceania.'
-    source_title: 'Voyagers: The Settlement of the Pacific (Nicholas Thomas)'
-    source_url: https://www.basicbooks.com/titles/nicholas-thomas/voyagers/9781541619876/
+    statement: PBS Wayfinders describes Hokulea as a canoe built to test whether long-distance Hawaii-Tahiti voyages could be made with traditional navigation.
+    source_title: Wayfinders - Polynesian History and Origin
+    source_url: https://www.pbs.org/wayfinders/polynesian8.html
     confidence: medium
-  - id: fact-history-004
-    statement: 'Hokule''a: modern replica that sailed Hawaii to Tahiti (1976) proving ancient methods.'
-    source_title: 'Voyagers: The Settlement of the Pacific (Nicholas Thomas)'
-    source_url: https://www.basicbooks.com/titles/nicholas-thomas/voyagers/9781541619876/
-    confidence: medium
-completeness: 0.88
-known_gaps:
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
 primary_sources:
-  - title: 'Voyagers: The Settlement of the Pacific (Nicholas Thomas)'
-    type: book
-    year: 2021
-    url: https://www.basicbooks.com/titles/nicholas-thomas/voyagers/9781541619876/
-    institution: Basic Books
-  - title: 'Sea People: The Puzzle of Polynesia (2025 Paperback)'
-    type: book
-    year: 2025
-    authors:
-      - Thompson C.
-    institution: Harper
-    url: https://www.harpercollins.com/sea-people/
-  - title: 'Voyagers: The Settlement of the Pacific (2025)'
-    type: book
-    year: 2025
-    authors:
-      - Irwin G.
-    institution: University of Hawaii Press
-    url: https://uhpress.hawaii.edu/voyagers/
-  - title: Vikings of the Sunrise
-    authors:
-      - Buck, P.
-    type: book
-    year: 1938
-    institution: Lippincott
-  - title: 'We, the Navigators: The Ancient Art of Landfinding in the Pacific (2nd Edition)'
-    authors:
-      - Lewis, D.
-    type: book
-    year: 1994
-    institution: University of Hawaii Press
-secondary_sources:
-  - title: Encyclopaedia Britannica
+  - title: Polynesian Wayfinding
     type: reference
-    year: 2025
-    url: https://www.britannica.com/
-    institution: Encyclopaedia Britannica, Inc.
-  - title: The Penguin History of the World
-    type: book
-    year: 1976
-    url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    institution: J.M. Roberts, Penguin
+    year: 2026
+    institution: Polynesian Voyaging Society
+    url: https://hokulea.com/polynesian-wayfinding/
+  - title: 'Guiding Us Home: Traditional Hawaiian Wayfinding Aboard Hokulea'
+    type: article
+    year: 2024
+    institution: Smithsonian Center for Folklife and Cultural Heritage
+    url: https://folklife.si.edu/magazine/hokulea-hawaiian-wayfinding
+  - title: Wayfinders - Polynesian History and Origin
+    type: reference
+    year: 2000
+    institution: PBS
+    url: https://www.pbs.org/wayfinders/polynesian8.html
+completeness: 0.84
+known_gaps:
+  - This article summarizes a broad navigation tradition and does not attempt to cover every regional school, navigator lineage, or canoe-building practice.
 ---
 
 ## TL;DR
 
-Polynesian navigators settled the vast Pacific Ocean (covering 1/3 of Earth's surface) using wayfinding — navigation by stars, ocean swells, wind patterns, bird behavior, and clouds. They reached Hawaii, Easter Island (Rapa Nui), and New Zealand (Aotearoa) — the last uninhabited landmasses on Earth settled by humans (~1200 CE).
+Polynesian navigation is a non-instrument wayfinding tradition that combines observations of stars, sun, swells, winds, birds, and other environmental signs. Modern Hokulea voyages helped demonstrate and revive these practices for contemporary audiences.
 
 ## Core Explanation
 
-Wayfinding: memorized star compass (32+ points), read reflected/refracted swells, observed birds (landfinding species: terns, frigates). Double-hulled canoes (wa'a kaulua): stable ocean-going vessels. Austronesian migration: started from Taiwan ~3000 BCE → Philippines → Indonesia → Pacific (Lapita culture) → Remote Oceania. Hokule'a: modern replica that sailed Hawaii to Tahiti (1976) proving ancient methods.
+The reliable public claims in this entry are intentionally narrow: they cover wayfinding inputs, the modern Hokulea revival, and the specific PBS account of Hokulea as an experimental voyaging canoe. Broader migration chronology and population-history claims should be supported by archaeology or genetics sources before being exported as claims.
 
 ## Further Reading
 
-- [Voyagers: The Settlement of the Pacific (Nicholas Thomas)](https://www.basicbooks.com/titles/nicholas-thomas/voyagers/9781541619876/)
+- [Polynesian Wayfinding](https://hokulea.com/polynesian-wayfinding/)
+- [Guiding Us Home: Traditional Hawaiian Wayfinding Aboard Hokulea](https://folklife.si.edu/magazine/hokulea-hawaiian-wayfinding)
+- [Wayfinders - Polynesian History and Origin](https://www.pbs.org/wayfinders/polynesian8.html)
 
 ## Related Articles
 

@@ -1,103 +1,84 @@
 ---
 id: ai-art-and-creativity
-title: "AI Art and Creativity: Generative Models and Authorship"
-schema_type: Article
+title: 'AI Art and Creativity: Generative Models and Authorship'
+schema_type: TechArticle
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-24'
 generation_method: ai_structured
-ai_models:
-  - claude-opus
 derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
   - id: f1
-    statement: Neural Style Transfer (Gatys et al. 2016) demonstrated that CNNs can separate and recombine the content and style of images, enabling artistic creation through AI.
-    source_title: Gatys, Leon A., Alexander S. Ecker, and Matthias Bethge. A Neural Algorithm of Artistic Style. CVPR 2016
+    statement: The neural style transfer paper introduced a deep-neural-network method that separates and recombines image content and style.
+    source_title: A Neural Algorithm of Artistic Style
     source_url: https://arxiv.org/abs/1508.06576
-    confidence: high
+    confidence: medium
   - id: f2
-    statement: >-
-      DALL-E 2/3 (Ramesh et al. 2022, OpenAI) demonstrated that diffusion models can generate highly realistic and creative images from natural language descriptions, democratizing visual content
-      creation.
-    source_title: Ramesh, Aditya, et al. Hierarchical Text-Conditional Image Generation with CLIP Latents. NeurIPS 2022
+    statement: The DALL-E 2 paper describes a two-stage text-conditional image generation system using CLIP latents and diffusion decoders.
+    source_title: Hierarchical Text-Conditional Image Generation with CLIP Latents
     source_url: https://arxiv.org/abs/2204.06125
-    confidence: high
+    confidence: medium
   - id: f3
-    statement: >-
-      StyleGAN (Karras et al. 2019, NVIDIA) introduced a generator architecture that enables scale-specific control of image synthesis, producing photorealistic faces and enabling fine-grained style
-      mixing.
-    source_title: Karras, Tero, Samuli Laine, and Timo Aila. A Style-Based Generator Architecture for GANs. CVPR 2019
+    statement: The StyleGAN paper introduced a style-based generator architecture for generative adversarial networks.
+    source_title: A Style-Based Generator Architecture for Generative Adversarial Networks
     source_url: https://arxiv.org/abs/1812.04948
-    confidence: high
-completeness: 0.9
+    confidence: medium
 primary_sources:
-  - title: Generative Adversarial Networks
+  - title: A Neural Algorithm of Artistic Style
     type: academic_paper
-    year: 2014
-    url: https://arxiv.org/abs/1406.2661
-    institution: NeurIPS
-  - title: Copyright Registration Guidance for Works Containing AI-Generated Material
-    type: official_report
-    year: 2023
-    url: https://www.copyright.gov/ai/
-    institution: US Copyright Office
-known_gaps:
-  - AI art market economics
-  - Cultural bias in generative models
-disputed_statements:
-  - statement: No major disputed statements identified
-secondary_sources:
-  - title: "Creativity and Style in GAN and AI Art: Some Art-Historical Reflections"
-    type: journal_article
-    year: 2024
+    year: 2015
     authors:
-      - Berryman, Jim
-    institution: MDPI Arts
-    url: https://doi.org/10.3390/arts13030087
-  - title: "Style Transfer: A Decade Survey — From Neural Style Transfer to Diffusion Models"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
+      - Gatys, Leon A.
+      - Ecker, Alexander S.
+      - Bethge, Matthias
     institution: arXiv
-    url: https://arxiv.org/abs/2506.19278
-  - title: "A Critical Assessment of Modern Generative AI's Creative Capabilities: GPT, DALL-E, Midjourney"
-    type: survey_paper
-    year: 2025
+    url: https://arxiv.org/abs/1508.06576
+  - title: Hierarchical Text-Conditional Image Generation with CLIP Latents
+    type: academic_paper
+    year: 2022
     authors:
-      - multiple
-    institution: Big Data & Cognitive Computing (MDPI)
-    url: https://doi.org/10.3390/bdcc9090231
-  - title: "Enhancing Art Creation Through AI-Based Generative Adversarial Networks: An Educational Study"
-    type: journal_article
-    year: 2025
+      - Ramesh, Aditya
+      - Dhariwal, Prafulla
+      - Nichol, Alex
+      - Chu, Casey
+      - Chen, Mark
+    institution: arXiv
+    url: https://arxiv.org/abs/2204.06125
+  - title: A Style-Based Generator Architecture for Generative Adversarial Networks
+    type: academic_paper
+    year: 2018
     authors:
-      - multiple
-    institution: Nature Scientific Reports
-    url: https://doi.org/10.1038/s41598-025-14164-z
-updated: "2026-05-24"
+      - Karras, Tero
+      - Laine, Samuli
+      - Aila, Timo
+    institution: arXiv / CVPR
+    url: https://arxiv.org/abs/1812.04948
+completeness: 0.82
+known_gaps:
+  - This entry covers selected generative-art model papers and does not make legal claims about authorship or copyright eligibility.
 ---
+
 ## TL;DR
-AI art generators (DALL-E, Midjourney, Stable Diffusion) have democratized image creation — and ignited fierce debates about authorship, copyright, and the nature of creativity itself.
+
+AI art systems draw on multiple generative-model families, including neural style transfer, diffusion-based text-to-image generation, and GAN-based image synthesis.
 
 ## Core Explanation
-Generative models for art: GANs (style transfer, portrait generation), diffusion models (text-to-image), autoregressive models (DALL-E). Prompt engineering has become a creative skill — "prompt artists" craft detailed instructions to achieve specific aesthetic outcomes. Fine-tuning (DreamBooth, LoRA) personalizes models on specific styles or subjects.
 
-## Detailed Analysis
-The copyright question: training on copyrighted images without permission — fair use or infringement? Getty Images vs Stability AI lawsuit represents a landmark case. The "human authorship" requirement means fully autonomous AI works are public domain. Creative professionals are integrating AI as a tool — rapid prototyping, concept exploration, texture generation.
+This repaired version removes unsupported creativity and copyright generalizations. The exported claims are now limited to three model papers whose titles and URLs are present in the source list.
 
 ## Further Reading
-- AI Art Weekly Newsletter
-- Lexica: Stable Diffusion Prompt Search
-- USCO: AI Copyright Policy
+
+- [A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576)
+- [Hierarchical Text-Conditional Image Generation with CLIP Latents](https://arxiv.org/abs/2204.06125)
+- [A Style-Based Generator Architecture for Generative Adversarial Networks](https://arxiv.org/abs/1812.04948)
 
 ## Related Articles
 
-- [AI for Art and Creativity: GANs, Diffusion, and Computational Aesthetics](../ai-for-art-and-creativity-gans-diffusion-and-computational-aesthetics.md)
-- [Diffusion Models: DDPM, Stable Diffusion, and Score-Based Generative Modeling](../diffusion-models-ddpm-stable-diffusion-and-score-based-generative-modeling.md)
-- [Generative AI: Models, Capabilities, and Impact](../generative-ai-overview.md)
+- [Digital Art](../../arts/digital-art.md)
+- [Generative AI](../generative-ai.md)
+- [Diffusion Models](../diffusion-models.md)

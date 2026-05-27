@@ -1,184 +1,79 @@
 ---
 id: decision-making-psychology
 title: The Psychology of Decision Making
-schema_type: Article
+schema_type: TechArticle
 category: self-improvement
 language: en
 confidence: medium
-last_verified: '2026-05-26'
+last_verified: '2026-05-28'
 created_date: '2026-05-24'
 generation_method: ai_structured
-ai_models:
-  - claude-opus
 derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-si-dm-001
-    statement: 'Bounded rationality (Simon, Nobel 1978): decisions constrained by information, cognition, time.'
-    source_title: Simon, H.A. Behavioral Model of Rational Choice (QJE 1955)
-    source_url: https://doi.org/10.2307/1884852
-    confidence: high
+    statement: Herbert Simon's 1955 QJE paper "A Behavioral Model of Rational Choice" is a foundational source for bounded-rationality approaches to decision making.
+    source_title: A Behavioral Model of Rational Choice
+    source_url: https://academic.oup.com/qje/article-abstract/69/1/99/1919737
+    confidence: medium
   - id: fact-si-dm-002
-    statement: 'Nudge theory (Thaler & Sunstein 2008, Nobel 2017): choice architecture guides better decisions.'
-    source_title: Thaler & Sunstein, Nudge Updated Ed. (Yale 2021)
-    source_url: https://yalebooks.yale.edu/book/9780300262285/nudge/
-    confidence: high
+    statement: Kahneman and Tversky's 1979 Econometrica paper presents prospect theory as an alternative descriptive model for decision making under risk.
+    source_title: 'Prospect Theory: An Analysis of Decision under Risk'
+    source_url: https://www.econometricsociety.org/publications/econometrica/browse/1979/03/01/prospect-theory-analysis-decision-under-risk
+    confidence: medium
   - id: fact-si-dm-003
-    statement: 'Paradox of Choice (Schwartz 2004): too many options lead to decision paralysis.'
-    source_title: Schwartz, B. The Paradox of Choice (HarperCollins 2004)
-    source_url: https://www.harpercollins.com/products/the-paradox-of-choice-barry-schwartz
-    confidence: high
-completeness: 0.9
-known_gaps:
-  - Neuroscience of decision making
-  - Group decision-making dynamics
-disputed_statements:
-  - statement: No major disputed statements identified
+    statement: Nudge, The Final Edition, frames choice architecture as a practical way to influence decisions without forbidding options.
+    source_title: Nudge
+    source_url: https://yalebooks.yale.edu/book/9780300262285/nudge/
+    confidence: medium
 primary_sources:
-  - title: Thinking, Fast and Slow
-    type: textbook
-    year: 2011
-    url: https://us.macmillan.com/books/9780374533557/thinkingfastandslow
-    institution: Farrar, Straus and Giroux
+  - title: A Behavioral Model of Rational Choice
+    type: academic_paper
+    year: 1955
+    authors:
+      - Simon, Herbert A.
+    institution: The Quarterly Journal of Economics
+    url: https://academic.oup.com/qje/article-abstract/69/1/99/1919737
   - title: 'Prospect Theory: An Analysis of Decision under Risk'
     type: academic_paper
-    year: 1979
-    url: https://www.jstor.org/stable/1914185
-    institution: Econometrica
-  - title: 'Decisive: How to Make Better Choices in Life and Work (2025 Updated)'
-    type: book
-    year: 2025
-    authors:
-      - Heath C.
-      - Heath D.
-    institution: Crown Currency
-    url: https://www.crownpublishing.com/decisive/
-  - title: 'Noise: A Flaw in Human Judgment (2025 Updated Edition)'
-    type: book
-    year: 2025
-    authors:
-      - Kahneman D.
-      - Sibony O.
-      - Sunstein C.R.
-    institution: Little, Brown Spark
-    url: https://www.littlebrown.com/noise/
-  - title: Decisive (2025)
-    type: book
-    year: 2025
-    authors:
-      - Heath C.
-      - Heath D.
-    institution: Crown Currency
-    url: https://www.crownpublishing.com/decisive/
-  - title: Thinking, Fast and Slow (2025)
-    type: book
-    year: 2025
-    authors:
-      - Kahneman D.
-    institution: FSG
-    url: https://us.macmillan.com/thinking-fast-and-slow/
-  - title: 'Nudge: The Final Edition'
-    authors:
-      - Thaler, R.H.
-      - Sunstein, C.R.
-    type: book
-    year: 2021
-    institution: Penguin
-  - title: Predictably Irrational
-    authors:
-      - Ariely, D.
-    type: book
-    year: 2008
-    institution: HarperCollins
-  - title: Quantum decision making by social agents
-    authors:
-      - V. I. Yukalov
-      - D. Sornette
-    year: 2012
-    doi: 10.1142/S0219622014500564
-    url: https://arxiv.org/abs/1202.4918v2
-    type: academic_paper
-    institution: arXiv
-  - title: 'Ethics-Based Auditing of Automated Decision-Making Systems: Nature, Scope, and Limitations'
-    authors:
-      - Jakob Mokander
-      - Jessica Morley
-      - Mariarosaria Taddeo
-      - Luciano Floridi
-    year: 2021
-    doi: 10.1007/s11948-021-00319-4
-    url: https://arxiv.org/abs/2110.10980v1
-    type: academic_paper
-    institution: arXiv
-secondary_sources:
-  - title: Thinking, Fast and Slow (Kahneman)
-    type: textbook
-    year: 2011
-    authors:
-      - Kahneman, Daniel
-    institution: Farrar, Straus and Giroux
-    url: https://us.macmillan.com/books/9780374533557/thinkingfastandslow
-  - title: 'Decisive: How to Make Better Choices in Life and Work (Heath & Heath)'
-    type: textbook
-    year: 2013
-    authors:
-      - Heath, Chip
-      - Heath, Dan
-    institution: Crown Business
-    url: https://www.penguinrandomhouse.com/books/202772/decisive-by-chip-heath-and-dan-heath/
-  - title: 'Prospect Theory: An Analysis of Decision under Risk (Kahneman & Tversky — Econometrica 1979)'
-    type: journal_article
     year: 1979
     authors:
       - Kahneman, Daniel
       - Tversky, Amos
     institution: Econometrica
-    url: https://doi.org/10.2307/1914185
-  - title: 'The Decision Lab: A Behavioral Science Reference Guide to Decision-Making Frameworks (2024)'
-    type: reference
-    year: 2024
-    authors:
-      - The Decision Lab
-    institution: The Decision Lab
-    url: https://thedecisionlab.com/reference-guide
-  - title: 'Noise: A Flaw in Human Judgment — The Hidden Role of Random Error in Decisions (2025 Paperback)'
+    url: https://www.econometricsociety.org/publications/econometrica/browse/1979/03/01/prospect-theory-analysis-decision-under-risk
+    doi: 10.2307/1914185
+  - title: Nudge
     type: book
-    year: 2025
+    year: 2021
     authors:
-      - Kahneman D.
-      - Sibony O.
-      - Sunstein C.R.
-    institution: Little, Brown Spark
-    url: https://www.littlebrown.com/titles/daniel-kahneman/noise/9780316451406/
-  - title: 'AI-Assisted Decision Making: Human-in-the-Loop vs. Automated Systems (2025 Survey)'
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: Psychological Science in the Public Interest
-    url: https://doi.org/10.1177/pspi.2025.ai
-updated: '2026-05-24'
+      - Thaler, Richard H.
+      - Sunstein, Cass R.
+    institution: Yale University Press
+    url: https://yalebooks.yale.edu/book/9780300262285/nudge/
+completeness: 0.82
+known_gaps:
+  - This entry covers selected decision-making frameworks and does not evaluate all behavioral-economics debates or replication issues.
 ---
 
-
 ## TL;DR
-Human decision making is shaped by cognitive biases — systematic deviations from rationality affecting everything from financial choices to medical diagnoses.
+
+Decision-making psychology studies how people choose under limits, risk, and contextual framing. Bounded rationality, prospect theory, and choice architecture are stable sourced anchors for this entry.
 
 ## Core Explanation
-Key biases: anchoring (over-relying on first information), confirmation bias (seeking confirming evidence), availability heuristic (overestimating memorable events), framing effects, sunk cost fallacy.
 
-## Detailed Analysis
-Debiasing strategies: considering the opposite, premortem analysis, decision matrices, structured analytic techniques. The WRAP framework (Widen options, Reality-test assumptions, Attain distance, Prepare to be wrong) provides practical decision-making process.
+The previous version mixed unsupported book claims with evidence text that did not map to article sources. This version keeps three source-mapped claims and removes broad, unsourced statements such as generic paradox-of-choice summaries.
 
 ## Further Reading
-- Kahneman, Lovallo, Sibony: Before You Make That Big Decision (HBR)
-- Decision Science News
-- Center for Decision Research (Chicago Booth)
+
+- [A Behavioral Model of Rational Choice](https://academic.oup.com/qje/article-abstract/69/1/99/1919737)
+- [Prospect Theory: An Analysis of Decision under Risk](https://www.econometricsociety.org/publications/econometrica/browse/1979/03/01/prospect-theory-analysis-decision-under-risk)
+- [Nudge](https://yalebooks.yale.edu/book/9780300262285/nudge/)
 
 ## Related Articles
 
-- [AI Decision Support Systems: Clinical CDSS, Business Intelligence, and Augmented Decision-Making](../../ai/decision-support-systems.md)
-- [Cognitive Load Theory: Optimizing Learning and Decision Making](../cognitive-load-theory-optimizing-learning-and-decision-making.md)
+- [Cognitive Biases Handbook](../cognitive-biases-handbook.md)
+- [Critical Thinking](../critical-thinking.md)
 - [Decision Making](../decision-making.md)

@@ -1,102 +1,81 @@
 ---
-id: "kb-2026-00468"
-title: "African Geography"
-schema_type: "TechArticle"
-category: "geography"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+id: kb-2026-00468
+title: African Geography
+schema_type: TechArticle
+category: geography
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: ai_assisted
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-geography-001"
-    statement: "Africa (30.37 million km²) is the 2nd largest continent. 54 countries, ~1.5 billion people. Features: Sahara (largest hot desert), Nile (longest river), Great Rift Valley, Victoria Falls, Serengeti, Congo Basin. Most diverse continent by language (2,000+ languages). Fastest growing population — projected 2.5 billion by 2050."
-    source_title: "The Geography of Sub-Saharan Africa (Samuel Aryeetey-Attoh)"
-    source_url: "https://www.pearson.com/en-us/subject-catalog/p/the-geography-of-sub-saharan-africa/P200000010264"
-    confidence: "medium"
-  - id: "fact-geography-002"
-    statement: "Nile: flows north through 11 countries, lifeblood of Egypt for 5,000+ years."
-    source_title: "The Geography of Sub-Saharan Africa (Samuel Aryeetey-Attoh)"
-    source_url: "https://www.pearson.com/en-us/subject-catalog/p/the-geography-of-sub-saharan-africa/P200000010264"
-    confidence: "medium"
-  - id: "fact-geography-003"
-    statement: "Great Rift Valley: tectonic plate divergence — will eventually split Africa (millions of years)."
-    source_title: "The Geography of Sub-Saharan Africa (Samuel Aryeetey-Attoh)"
-    source_url: "https://www.pearson.com/en-us/subject-catalog/p/the-geography-of-sub-saharan-africa/P200000010264"
-    confidence: "medium"
-  - id: "fact-geography-004"
-    statement: "Mount Kilimanjaro (Tanzania): highest African peak (5,895m)."
-    source_title: "The Geography of Sub-Saharan Africa (Samuel Aryeetey-Attoh)"
-    source_url: "https://www.pearson.com/en-us/subject-catalog/p/the-geography-of-sub-saharan-africa/P200000010264"
-    confidence: "medium"
-  - id: "fact-geography-005"
-    statement: "Victoria Falls (Zambia/Zimbabwe): largest curtain of falling water."
-    source_title: "The Geography of Sub-Saharan Africa (Samuel Aryeetey-Attoh)"
-    source_url: "https://www.pearson.com/en-us/subject-catalog/p/the-geography-of-sub-saharan-africa/P200000010264"
-    confidence: "medium"
-
-completeness: 0.88
-
-known_gaps:
-  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
-  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - id: fact-geography-001
+    statement: Britannica describes Africa as the world's second-largest continent.
+    source_title: Africa
+    source_url: https://www.britannica.com/place/Africa
+    confidence: medium
+  - id: fact-geography-002
+    statement: Britannica describes the Nile as a major north-flowing river of northeastern Africa.
+    source_title: Nile River
+    source_url: https://www.britannica.com/place/Nile-River
+    confidence: medium
+  - id: fact-geography-003
+    statement: Britannica identifies Kilimanjaro as the highest mountain in Africa.
+    source_title: Kilimanjaro
+    source_url: https://www.britannica.com/place/Kilimanjaro
+    confidence: medium
+  - id: fact-geography-004
+    statement: UNESCO lists Mosi-oa-Tunya / Victoria Falls as a World Heritage property on the Zambia-Zimbabwe border.
+    source_title: Mosi-oa-Tunya / Victoria Falls
+    source_url: https://whc.unesco.org/en/list/509/
+    confidence: medium
 primary_sources:
-  - title: "The Geography of Sub-Saharan Africa (Samuel Aryeetey-Attoh)"
-    type: "book"
-    year: 2019
-    url: "https://www.pearson.com/en-us/subject-catalog/p/the-geography-of-sub-saharan-africa/P200000010264"
-    institution: "Pearson"
-
-secondary_sources:
-  - title: "National Geographic Atlas of the World"
-    type: "reference"
-    year: 2019
-    url: "https://www.nationalgeographic.com/maps/atlas/"
-    institution: "National Geographic"
-  - title: "National Geographic Atlas of the World, 11th Ed"
-    type: "reference"
-    year: 2019
-    url: "https://www.nationalgeographic.com/books/atlas/"
-    institution: "National Geographic Society"
-
+  - title: Africa
+    type: reference
+    year: 2026
+    institution: Encyclopaedia Britannica
+    url: https://www.britannica.com/place/Africa
+  - title: Nile River
+    type: reference
+    year: 2026
+    institution: Encyclopaedia Britannica
+    url: https://www.britannica.com/place/Nile-River
+  - title: Kilimanjaro
+    type: reference
+    year: 2026
+    institution: Encyclopaedia Britannica
+    url: https://www.britannica.com/place/Kilimanjaro
+  - title: Mosi-oa-Tunya / Victoria Falls
+    type: official_report
+    year: 2026
+    institution: UNESCO World Heritage Centre
+    url: https://whc.unesco.org/en/list/509/
+completeness: 0.82
+known_gaps:
+  - This entry covers selected physical-geography facts and does not attempt a full regional, political, or demographic profile of Africa.
 ---
-
-
 
 ## TL;DR
 
-Africa (30.37 million km²) is the 2nd largest continent. 54 countries, ~1.5 billion people. Features: Sahara (largest hot desert), Nile (longest river), Great Rift Valley, Victoria Falls, Serengeti, Congo Basin. Most diverse continent by language (2,000+ languages). Fastest growing population — projected 2.5 billion by 2050.
+African geography includes continent-scale landforms, major rivers, high mountains, and internationally recognized natural heritage sites. This repaired entry keeps only source-mapped physical-geography claims.
 
 ## Core Explanation
 
-Nile: flows north through 11 countries, lifeblood of Egypt for 5,000+ years. Congo Basin: second-largest rainforest. Great Rift Valley: tectonic plate divergence — will eventually split Africa (millions of years). Mount Kilimanjaro (Tanzania): highest African peak (5,895m). Victoria Falls (Zambia/Zimbabwe): largest curtain of falling water. Sahara: expanding south (Sahel region affected).
+The previous version relied on one broad textbook source for many precise facts. This repair pass maps each exported claim to a specific Britannica or UNESCO page.
 
 ## Further Reading
 
-- [The Geography of Sub-Saharan Africa (Samuel Aryeetey-Attoh)](https://www.pearson.com/en-us/subject-catalog/p/the-geography-of-sub-saharan-africa/P200000010264)
-atomic_facts:
-  - id: "fact-geography-001"
-    statement: "Africa (30.37 million km²) is the 2nd largest continent"
-    confidence: "medium"
-  - id: "fact-geography-002"
-    statement: "54 countries, ~1.5 billion people"
-    confidence: "medium"
-  - id: "fact-geography-003"
-    statement: "Fastest growing population — projected 2.5 billion by 2050"
-    confidence: "medium"
+- [Africa](https://www.britannica.com/place/Africa)
+- [Nile River](https://www.britannica.com/place/Nile-River)
+- [Kilimanjaro](https://www.britannica.com/place/Kilimanjaro)
+- [Mosi-oa-Tunya / Victoria Falls](https://whc.unesco.org/en/list/509/)
 
 ## Related Articles
 
-- [Antarctica: The Frozen Continent's Geography and Research Stations](../antarctica-the-frozen-continent-s-geography-and-research-stations.md)
-- [Asian Geography](../asian-geography.md)
-- [Mediterranean Sea: Physical Geography, Biodiversity, and Marine Protected Areas](../mediterranean-sea-physical-geography-biodiversity-and-marine-protected-areas.md)
+- [Physical Geography](../physical-geography.md)
+- [Desert Ecosystems](../desert-ecosystems.md)
+- [World Geography](../world-geography.md)

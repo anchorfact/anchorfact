@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: geography
 language: en
 confidence: medium
-last_verified: '2026-05-26'
+last_verified: '2026-05-28'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -13,125 +13,48 @@ ai_models:
 derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
-data_period: static
+data_period: '2020'
 atomic_facts:
   - id: fact-geography-001
-    statement: >-
-      Major world religions: Christianity (2.4B, Jesus Christ, Bible), Islam (1.9B, Muhammad, Quran), Hinduism (1.2B, oldest, diverse traditions, Vedas), Buddhism (520M, Siddhartha Gautama, Four Noble
-      Truths), Judaism (15M, Torah, foundational to Christianity/Islam). Non-religious/unaffiliated: ~1.2B.
-    source_title: The World's Religions (Huston Smith)
-    source_url: https://www.harpercollins.com/products/the-worlds-religions-huston-smith
+    statement: Pew Research Center's 2025 global religious landscape report groups the world population into Christians, Muslims, Hindus, Buddhists, Jews, other religions, and the religiously unaffiliated.
+    source_title: How the Global Religious Landscape Changed From 2010 to 2020
+    source_url: https://www.pewresearch.org/religion/2025/06/09/how-the-global-religious-landscape-changed-from-2010-to-2020/
     confidence: medium
   - id: fact-geography-002
-    statement: 'Christianity: Catholic (1.3B), Protestant, Orthodox — Trinity, salvation through faith.'
-    source_title: The World's Religions (Huston Smith)
-    source_url: https://www.harpercollins.com/products/the-worlds-religions-huston-smith
+    statement: Pew estimates that Christians remained the largest religious group in 2020, at 2.3 billion people or 28.8 percent of the world population.
+    source_title: How the Global Religious Landscape Changed From 2010 to 2020
+    source_url: https://www.pewresearch.org/religion/2025/06/09/how-the-global-religious-landscape-changed-from-2010-to-2020/
     confidence: medium
   - id: fact-geography-003
-    statement: 'Islam: Sunni (85-90%), Shia — Five Pillars (prayer, fasting, charity, pilgrimage, faith declaration).'
-    source_title: The World's Religions (Huston Smith)
-    source_url: https://www.harpercollins.com/products/the-worlds-religions-huston-smith
+    statement: Pew estimates that Muslims were the fastest-growing religious group from 2010 to 2020 and reached 25.6 percent of the world population in 2020.
+    source_title: How the Global Religious Landscape Changed From 2010 to 2020
+    source_url: https://www.pewresearch.org/religion/2025/06/09/how-the-global-religious-landscape-changed-from-2010-to-2020/
     confidence: medium
-  - id: fact-geography-004
-    statement: 'Buddhism: Four Noble Truths (suffering, cause, cessation, Eightfold Path).'
-    source_title: The World's Religions (Huston Smith)
-    source_url: https://www.harpercollins.com/products/the-worlds-religions-huston-smith
-    confidence: medium
-completeness: 0.88
-known_gaps:
-  - Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed
-  - Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
 primary_sources:
-  - title: The World's Religions (Huston Smith)
-    type: book
-    year: 1958
-    url: https://www.harpercollins.com/products/the-worlds-religions-huston-smith
-    institution: HarperOne
-  - title: 'World Religions: A Very Short Introduction (2025)'
-    type: book
+  - title: How the Global Religious Landscape Changed From 2010 to 2020
+    type: research_report
     year: 2025
-    authors:
-      - multiple
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-world-religions/
-  - title: 'God Is Not One: The Eight Rival Religions (2025 Updated)'
-    type: book
-    year: 2025
-    authors:
-      - Prothero S.
-    institution: HarperOne
-    url: https://www.harpercollins.com/world-religions/
-  - title: God Is Not One (2025 Updated)
-    type: book
-    year: 2025
-    authors:
-      - Prothero S.
-    institution: HarperOne
-    url: https://www.harpercollins.com/world-religions/
-  - title: The World's Religions (50th Anniversary Edition)
-    authors:
-      - Smith, H.
-    type: book
-    year: 2009
-    institution: HarperOne
-  - title: 'Pew Research Center: The Global Religious Landscape'
-    type: government_report
-    year: 2012
-    url: https://www.pewresearch.org/religion/2012/12/18/global-religious-landscape-exec/
     institution: Pew Research Center
-  - title: On World Religion Adherence Distribution Evolution
-    authors:
-      - M. Ausloos
-      - F. Petroni
-    year: 2008
-    url: https://arxiv.org/abs/0801.1010v1
-    type: academic_paper
-    institution: arXiv
-  - title: A model for the evolutionary diversification of religions
-    authors:
-      - Michael Doebeli
-      - Iaroslav Ispolatov
-    year: 2008
-    doi: 10.1016/j.jtbi.2010.09.013
-    url: https://arxiv.org/abs/0810.0296v1
-    type: academic_paper
-    institution: arXiv
-secondary_sources:
-  - title: CIA World Factbook
-    type: database
-    year: 2025
-    url: https://www.cia.gov/the-world-factbook/
-    institution: Central Intelligence Agency
-  - title: National Geographic Atlas
-    type: reference
-    year: 2019
-    url: https://www.nationalgeographic.com/maps/atlas/
-    institution: National Geographic
+    url: https://www.pewresearch.org/religion/2025/06/09/how-the-global-religious-landscape-changed-from-2010-to-2020/
+completeness: 0.78
+known_gaps:
+  - This entry now uses one demographic source for public claims; doctrinal summaries of individual religions require separate sourced entries.
 ---
-
 
 ## TL;DR
 
-Major world religions: Christianity (2.4B, Jesus Christ, Bible), Islam (1.9B, Muhammad, Quran), Hinduism (1.2B, oldest, diverse traditions, Vedas), Buddhism (520M, Siddhartha Gautama, Four Noble Truths), Judaism (15M, Torah, foundational to Christianity/Islam). Non-religious/unaffiliated: ~1.2B.
+Public claims in this article are limited to Pew Research Center's demographic categories and estimates. Doctrinal summaries and older population numbers were removed because the sampled article did not support them with precise sources.
 
 ## Core Explanation
 
-Christianity: Catholic (1.3B), Protestant, Orthodox — Trinity, salvation through faith. Islam: Sunni (85-90%), Shia — Five Pillars (prayer, fasting, charity, pilgrimage, faith declaration). Hinduism: karma, dharma, samsara (reincarnation), moksha (liberation). Buddhism: Four Noble Truths (suffering, cause, cessation, Eightfold Path). Sikhism (30M, Punjab, monotheistic, equality).
+World-religion data changes by year, category definition, and methodology. This entry therefore treats the Pew 2025 report as the current evidence anchor and avoids mixing it with unsourced textbook or atlas claims.
 
 ## Further Reading
 
-- [The World's Religions (Huston Smith)](https://www.harpercollins.com/products/the-worlds-religions-huston-smith)
-atomic_facts:
-  - id: "fact-geography-001"
-    statement: "Islam: Sunni (85-90%), Shia — Five Pillars (prayer, fasting, charity, pilgrimage, faith declaration)"
-    confidence: "medium"
+- [How the Global Religious Landscape Changed From 2010 to 2020](https://www.pewresearch.org/religion/2025/06/09/how-the-global-religious-landscape-changed-from-2010-to-2020/)
 
 ## Related Articles
 
-- [Embodied AI: Robots That Learn from the Physical World](../../ai/embodied-ai-and-robotics.md)
-- [World Models: Video Prediction, Physical Reasoning, and Interactive AI](../../ai/world-models-video-prediction.md)
-- [World Literature](../../arts/world-literature.md)
+- [Cultural Geography](../cultural-geography.md)
+- [Population Geography](../population-geography.md)
+- [Human Geography](../human-geography.md)

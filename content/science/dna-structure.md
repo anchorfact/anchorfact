@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: science
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-28'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -15,114 +15,62 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-science-01
-    statement: 'Human genome: 3 billion base pairs, 20,000-25,000 genes'
-    source_title: The Double Helix (James Watson, 1968)
-    source_url: https://www.simonandschuster.com/books/The-Double-Helix/James-D-Watson/9780743216302
-    confidence: high
   - id: fact-science-001
-    statement: >-
-      DNA (deoxyribonucleic acid) is the molecule carrying genetic instructions. Watson, Crick, and Wilkins (1953, Nobel 1962) - with crucial X-ray crystallography data from Rosalind Franklin -
-      determined DNA's double helix structure: two antiparallel strands of sugar-phosphate backbone linked by complementary base pairs (A-T, G-C).
-    source_title: The Double Helix (James Watson, 1968)
-    source_url: https://www.simonandschuster.com/books/The-Double-Helix/James-D-Watson/9780743216302
+    statement: Watson and Crick's 1953 Nature paper proposed a double-helical structure for deoxyribose nucleic acid.
+    source_title: 'Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid'
+    source_url: https://doi.org/10.1038/171737a0
     confidence: medium
   - id: fact-science-002
-    statement: A pairs with T (2 hydrogen bonds), G pairs with C (3 bonds — stronger).
-    source_title: The Double Helix (James Watson, 1968)
-    source_url: https://www.simonandschuster.com/books/The-Double-Helix/James-D-Watson/9780743216302
+    statement: NHGRI describes DNA sequencing as determining the order of the four bases adenine, cytosine, guanine, and thymine in a DNA molecule.
+    source_title: DNA Sequencing Fact Sheet
+    source_url: https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Fact-Sheet
     confidence: medium
   - id: fact-science-003
-    statement: 'Human genome: ~3 billion base pairs, ~20,000-25,000 genes.'
-    source_title: The Double Helix (James Watson, 1968)
-    source_url: https://www.simonandschuster.com/books/The-Double-Helix/James-D-Watson/9780743216302
+    statement: Britannica describes the human genome as approximately three billion DNA base pairs and says coding regions encode roughly 20,000 to 25,000 genes.
+    source_title: Human Genome
+    source_url: https://www.britannica.com/science/human-genome
     confidence: medium
-completeness: 0.88
-known_gaps:
-  - Statistics and data cited are from 2013 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-  - Climate and environmental data may have been updated by more recent IPCC or scientific assessments
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
 primary_sources:
-  - title: The Double Helix (James Watson, 1968)
-    type: book
-    year: 1968
-    url: https://www.simonandschuster.com/books/The-Double-Helix/James-D-Watson/9780743216302
-    institution: Atheneum
-  - title: 'The Double Helix: A Personal Account (2025 Edition)'
-    type: book
-    year: 2025
-    authors:
-      - Watson J.D.
-    institution: W.W. Norton
-    url: https://wwnorton.com/books/double-helix/
-  - title: 'DNA Structure and Function at 70: A 2025 Review'
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: Nature Reviews Genetics
-    url: https://doi.org/10.1038/s41576-2025-dna
-  - title: 'DNA: A Very Short Introduction (2025)'
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-dna/
-  - title: 'DNA: The Story of the Genetic Revolution (2025 Updated)'
-    type: book
-    year: 2025
-    authors:
-      - Watson J.D.
-      - Berry A.
-      - Davies K.
-    institution: Knopf
-    url: https://www.penguinrandomhouse.com/dna/
   - title: 'Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid'
-    authors:
-      - Watson, J.D.
-      - Crick, F.H.C.
     type: academic_paper
     year: 1953
-    doi: 10.1038/171737a0
-    institution: Nature
-  - title: 'The Double Helix: A Personal Account of the Discovery of the Structure of DNA'
     authors:
-      - Watson, J.D.
-    type: book
-    year: 1968
-    institution: Atheneum
-secondary_sources:
-  - title: Molecular Biology of the Gene
-    type: book
-    year: 2013
-    url: https://www.pearson.com/en-us/subject-catalog/p/molecular-biology-of-the-gene/P200000007006
-    institution: James D. Watson et al., Pearson
-  - title: Biology (Campbell, 12th Edition)
-    type: textbook
-    year: 2020
-    url: https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058
-    institution: Pearson Education
+      - Watson, James D.
+      - Crick, Francis H. C.
+    institution: Nature
+    url: https://doi.org/10.1038/171737a0
+    doi: 10.1038/171737a0
+  - title: DNA Sequencing Fact Sheet
+    type: government_report
+    year: 2023
+    institution: National Human Genome Research Institute
+    url: https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Fact-Sheet
+  - title: Human Genome
+    type: reference
+    year: 2026
+    institution: Encyclopaedia Britannica
+    url: https://www.britannica.com/science/human-genome
+completeness: 0.84
+known_gaps:
+  - This article focuses on DNA structure and genome-scale facts; the history of Rosalind Franklin's data and later molecular-biology developments need separate treatment.
 ---
 
 ## TL;DR
 
-DNA (deoxyribonucleic acid) is the molecule carrying genetic instructions. Watson, Crick, and Wilkins (1953, Nobel 1962) - with crucial X-ray crystallography data from Rosalind Franklin - determined DNA's double helix structure: two antiparallel strands of sugar-phosphate backbone linked by complementary base pairs (A-T, G-C).
+DNA is the hereditary molecule whose double-helical structure was proposed in 1953. Human genome summaries commonly describe roughly three billion base pairs and about 20,000 to 25,000 protein-coding genes.
 
 ## Core Explanation
 
-Nucleotides: Adenine (A), Thymine (T), Guanine (G), Cytosine (C). A pairs with T (2 hydrogen bonds), G pairs with C (3 bonds — stronger). DNA replication: helicase unwinds → DNA polymerase adds complementary bases → two identical copies. Human genome: ~3 billion base pairs, ~20,000-25,000 genes. Central dogma: DNA → RNA (transcription) → protein (translation).
+This entry now avoids using memoir or generic textbook pages as evidence for precise genomic facts. The exported claims are mapped to the original Nature structure paper, NHGRI sequencing material, and Britannica's human-genome reference.
 
 ## Further Reading
 
-- [The Double Helix (James Watson, 1968)](https://www.simonandschuster.com/books/The-Double-Helix/James-D-Watson/9780743216302)
+- [Molecular Structure of Nucleic Acids](https://doi.org/10.1038/171737a0)
+- [DNA Sequencing Fact Sheet](https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Fact-Sheet)
+- [Human Genome](https://www.britannica.com/science/human-genome)
 
 ## Related Articles
 
-- [AI for Genomics: Variant Calling, Gene Expression Prediction, and Protein-DNA Binding](../../ai/ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md)
-- [AI for Protein Structure Prediction: AlphaFold and the Folding Revolution](../../ai/ai-for-protein-structure-prediction-alphafold-and-the-folding-revolution.md)
-- [Protein Structure Prediction: AlphaFold, RoseTTAFold, and AI-Driven Structural Biology](../../ai/protein-structure-prediction.md)
+- [Genetics and Heredity](../genetics-and-heredity.md)
+- [Molecular Biology Central Dogma](../molecular-biology-central-dogma.md)
+- [Human Genome Project: Sequencing, Findings, and the Post-Genomic Era](../human-genome-project-sequencing-findings-and-the-post-genomic-era.md)
