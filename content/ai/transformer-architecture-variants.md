@@ -1,10 +1,10 @@
 ---
 id: transformer-architecture-variants
-title: "Transformer Variants: From Encoder-Decoder to Mamba State Space Models"
+title: "Transformer Variants: From Encoder-Decoder to State Space Models"
 schema_type: TechArticle
 category: ai
 language: en
-confidence: high
+confidence: medium
 last_verified: "2026-05-24"
 created_date: "2026-05-24"
 generation_method: ai_structured
@@ -16,102 +16,85 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-tv-1
-    statement: >-
-      The original Transformer (Vaswani et al. 2017) introduced the encoder-decoder architecture with multi-head self-attention, replacing recurrence entirely and enabling parallel computation across
-      all positions.
-    source_title: Vaswani, Ashish, et al. Attention Is All You Need. NeurIPS 2017
-    source_url: https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
-    confidence: high
+    statement: The original Transformer introduced an encoder-decoder architecture based on multi-head attention and position-wise feed-forward layers.
+    source_title: Attention Is All You Need
+    source_url: https://arxiv.org/abs/1706.03762
+    confidence: medium
   - id: fact-tv-2
-    statement: >-
-      Vision Transformer (ViT, Dosovitskiy et al. 2021, Google) applies a pure Transformer to sequences of image patches, achieving state-of-the-art on image classification when pre-trained on large
-      datasets.
-    source_title: Dosovitskiy, Alexey, et al. An Image is Worth 16x16 Words. ICLR 2021
+    statement: Vision Transformer applies a standard Transformer directly to sequences of image patches for image classification.
+    source_title: An Image is Worth 16x16 Words
     source_url: https://arxiv.org/abs/2010.11929
-    confidence: high
+    confidence: medium
   - id: fact-tv-3
-    statement: Swin Transformer (Liu et al. 2021, Microsoft, ICCV Best Paper) introduced hierarchical shifted windows for efficient vision Transformers, enabling linear complexity relative to image size.
-    source_title: "Liu, Ze, et al. Swin Transformer: Hierarchical Vision Transformer using Shifted Windows. ICCV 2021"
+    statement: Swin Transformer introduced hierarchical shifted windows for efficient vision Transformer modeling.
+    source_title: "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows"
     source_url: https://arxiv.org/abs/2103.14030
-    confidence: high
+    confidence: medium
   - id: fact-tv-4
-    statement: Efficient Transformers (Tay et al. 2022, Google) survey categorizes linear, sparse, and recurrent attention variants that reduce the O(N²) complexity barrier for long sequences.
-    source_title: "Tay, Yi, et al. Efficient Transformers: A Survey. ACM Computing Surveys 2022"
+    statement: Efficient Transformer research includes linear, sparse, low-rank, memory-compressed, and recurrent approaches for reducing long-sequence attention costs.
+    source_title: "Efficient Transformers: A Survey"
     source_url: https://doi.org/10.1145/3530811
-    confidence: high
+    confidence: medium
 completeness: 0.9
+known_gaps:
+  - Hybrid attention and state-space architectures are evolving quickly
+  - Large-scale production comparisons are not exhaustively covered
 primary_sources:
-  - title: "Mamba: Linear-Time Sequence Modeling with Selective State Spaces"
-    type: academic_paper
-    year: 2023
-    url: https://arxiv.org/abs/2312.00752
-    institution: CMU/Princeton
   - title: Attention Is All You Need
     type: academic_paper
-    year: 2017
-    url: https://arxiv.org/abs/1706.03762
-    institution: NeurIPS
-known_gaps:
-  - Hybrid attention-SSM architectures
-  - Mamba for billion-parameter scale
-disputed_statements:
-  - statement: No major disputed statements identified
-secondary_sources:
-  - title: Attention Is All You Need (Original Transformer)
-    type: conference_paper
     year: 2017
     authors:
       - Vaswani, Ashish
       - Shazeer, Noam
       - Parmar, Niki
-      - et al.
-    institution: Google Brain / NeurIPS
+    institution: NeurIPS
     url: https://arxiv.org/abs/1706.03762
-  - title: "Efficient Transformers: A Comprehensive Survey of Linear, Sparse, and Recurrent Attention Variants"
-    type: survey_paper
+  - title: An Image is Worth 16x16 Words
+    type: academic_paper
+    year: 2021
+    authors:
+      - Dosovitskiy, Alexey
+      - Beyer, Lucas
+      - Kolesnikov, Alexander
+    institution: ICLR
+    url: https://arxiv.org/abs/2010.11929
+  - title: "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows"
+    type: academic_paper
+    year: 2021
+    authors:
+      - Liu, Ze
+      - Lin, Yutong
+      - Cao, Yue
+    institution: ICCV
+    url: https://arxiv.org/abs/2103.14030
+  - title: "Efficient Transformers: A Survey"
+    type: academic_paper
     year: 2022
     authors:
       - Tay, Yi
       - Dehghani, Mostafa
       - Bahri, Dara
       - Metzler, Donald
-    institution: Google Research / ACM Computing Surveys
+    institution: ACM Computing Surveys
     url: https://doi.org/10.1145/3530811
-  - title: "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (ViT)"
-    type: conference_paper
-    year: 2021
-    authors:
-      - Dosovitskiy, Alexey
-      - Beyer, Lucas
-      - Kolesnikov, Alexander
-      - et al.
-    institution: Google Research / ICLR
-    url: https://arxiv.org/abs/2010.11929
-  - title: "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows (ICCV Best Paper)"
-    type: conference_paper
-    year: 2021
-    authors:
-      - Liu, Ze
-      - Lin, Yutong
-      - Cao, Yue
-      - et al.
-    institution: Microsoft Research / ICCV
-    url: https://arxiv.org/abs/2103.14030
+secondary_sources: []
 updated: "2026-05-24"
 ---
+
 ## TL;DR
-While the Transformer architecture dominates AI, alternatives are emerging. State Space Models (Mamba, Jamba) promise linear complexity for long sequences, challenging attention's O(n²) bottleneck.
+
+Transformer variants adapt the original attention-based architecture to different data types and scaling constraints. Major branches include encoder-decoder language models, encoder-only models, decoder-only models, vision Transformers, sparse or linear attention variants, and newer state-space alternatives.
 
 ## Core Explanation
-Transformer evolution: encoder-decoder (original, T5) → encoder-only (BERT, RoBERTa — understanding) → decoder-only (GPT family — generation). Decoder-only's simplicity and predictable scaling made it the architecture of choice for frontier LLMs.
 
-## Detailed Analysis
-State Space Models (SSMs): discretize continuous-time differential equations to process sequences. Mamba adds input-dependent selectivity — the model dynamically adjusts which parts of the input to focus on. Jamba (AI21) hybridizes Mamba layers with attention layers for the best of both worlds.
+The original Transformer used self-attention and cross-attention in an encoder-decoder architecture. Later variants changed the architecture for language understanding, autoregressive generation, vision tasks, and long-context efficiency. Vision Transformer treats image patches as tokens, while Swin Transformer adds hierarchical shifted windows. Efficient Transformer research studies ways to reduce the quadratic cost of standard attention on long sequences.
 
 ## Further Reading
-- The Annotated Transformer (Harvard NLP)
-- Mamba GitHub
-- Lilian Weng: The Transformer Family
+
+- [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+- [An Image is Worth 16x16 Words](https://arxiv.org/abs/2010.11929)
+- [Swin Transformer](https://arxiv.org/abs/2103.14030)
+- [Efficient Transformers: A Survey](https://doi.org/10.1145/3530811)
 
 ## Related Articles
 

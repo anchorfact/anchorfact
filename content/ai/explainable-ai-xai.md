@@ -1,104 +1,80 @@
 ---
-atomic_facts:
-  - confidence: high
-    id: fact-ai-01
-    source_title: Interpretable Machine Learning
-    source_url: https://christophm.github.io/interpretable-ml-book/
-    statement: "Saliency maps: highlight input pixels most influential for prediction"
-  - confidence: high
-    id: fact-ai-001
-    source_title: A Unified Approach to Interpreting Model Predictions (SHAP)
-    source_url: https://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions
-    statement: >-
-      Explainable AI makes model decisions interpretable by humans. As models become more complex (deep NNs, LLMs), understanding WHY a model made a decision becomes critical for trust, debugging, and
-      regulatory compliance (EU AI Act, GDPR). Methods: SHAP (feature importance), LIME (local explanations), attention visualization, saliency maps.
-  - confidence: high
-    id: fact-ai-002
-    source_title: A Unified Approach to Interpreting Model Predictions (SHAP)
-    source_url: https://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions
-    statement: "SHAP (SHapley Additive exPlanations): game-theoretic approach assigning each feature an importance score."
-  - confidence: medium
-    id: fact-ai-003
-    source_title: Interpretable Machine Learning
-    source_url: https://christophm.github.io/interpretable-ml-book/
-    statement: "Saliency maps: highlight input pixels most influential for prediction."
-category: ai
-completeness: 0.88
-confidence: high
-conflict_of_interest: none_declared
-created_date: "2026-05-22"
-data_period: static
-derived_from_human_seed: true
-disputed_statements:
-  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
-generation_method: ai_structured
 id: kb-2026-00277
+title: Explainable AI (XAI)
+schema_type: TechArticle
+category: ai
+language: en
+confidence: medium
+last_verified: "2026-05-22"
+created_date: "2026-05-22"
+generation_method: ai_structured
+ai_models:
+  - claude-opus
+derived_from_human_seed: true
+conflict_of_interest: none_declared
 is_live_document: false
+data_period: static
+atomic_facts:
+  - id: fact-ai-001
+    statement: Explainable AI research studies methods for making model behavior understandable to humans, especially for complex models whose internal reasoning is not directly interpretable.
+    source_title: "Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI"
+    source_url: https://doi.org/10.1016/j.inffus.2019.12.012
+    confidence: medium
+  - id: fact-ai-002
+    statement: LIME explains an individual model prediction by learning a local interpretable model around that prediction.
+    source_title: "Why Should I Trust You? Explaining the Predictions of Any Classifier"
+    source_url: https://arxiv.org/abs/1602.04938
+    confidence: medium
+  - id: fact-ai-003
+    statement: SHAP uses Shapley-value-inspired additive feature attributions to explain model predictions.
+    source_title: A Unified Approach to Interpreting Model Predictions
+    source_url: https://arxiv.org/abs/1705.07874
+    confidence: medium
+completeness: 0.88
 known_gaps:
-  - Statistics and data cited are from 2023 and earlier; more recent data may have become available since publication
   - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
   - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-  - Recent developments from 2025-2026 may not be reflected
-language: en
-last_verified: "2026-05-22"
 primary_sources:
-  - authors:
+  - title: "Why Should I Trust You? Explaining the Predictions of Any Classifier"
+    type: academic_paper
+    year: 2016
+    authors:
       - Ribeiro, Marco Tulio
       - Singh, Sameer
       - Guestrin, Carlos
-    institution: University of Washington / KDD
-    title: Why Should I Trust You? Explaining the Predictions of Any Classifier (LIME — Ribeiro et al.)
-    type: conference_paper
+    institution: KDD
     url: https://arxiv.org/abs/1602.04938
-    year: 2016
-  - authors:
-      - Lundberg, Scott M.
-      - Lee, Su-In
-    institution: University of Washington / NeurIPS
-    title: A Unified Approach to Interpreting Model Predictions (SHAP — Lundberg & Lee)
-    type: conference_paper
-    url: https://arxiv.org/abs/1705.07874
+  - title: A Unified Approach to Interpreting Model Predictions
+    type: academic_paper
     year: 2017
-  - authors:
-      - Arrieta, Alejandro Barredo
-      - Díaz-Rodríguez, Natalia
-      - Del Ser, Javier
-      - et al.
-    institution: Information Fusion (Elsevier)
-    title: "Explainable Artificial Intelligence (XAI): A Comprehensive Survey (Arrieta et al. — Information Fusion)"
-    type: survey_paper
-    url: https://doi.org/10.1016/j.inffus.2019.12.012
-    year: 2020
-schema_type: TechArticle
-secondary_sources:
-  - authors:
+    authors:
       - Lundberg, Scott M.
       - Lee, Su-In
     institution: NeurIPS
-    title: A Unified Approach to Interpreting Model Predictions (SHAP)
+    url: https://arxiv.org/abs/1705.07874
+  - title: "Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI"
     type: academic_paper
-    url: https://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions
-    year: 2017
-  - authors:
-      - Ribeiro
-      - Singh
-      - Guestrin
-    institution: KDD / University of Washington
-    title: "\"Why Should I Trust You?\": Explaining the Predictions of Any Classifier (LIME)"
-    type: academic_paper
-    url: https://arxiv.org/abs/1602.04938
-    year: 2016
-title: Explainable AI (XAI)
+    year: 2020
+    authors:
+      - Arrieta, Alejandro Barredo
+      - Diaz-Rodriguez, Natalia
+      - Del Ser, Javier
+    institution: Information Fusion
+    url: https://doi.org/10.1016/j.inffus.2019.12.012
+secondary_sources: []
 updated: "2026-05-24"
 ---
+
 ## TL;DR
 
-Explainable AI makes model decisions interpretable by humans. As models become more complex (deep NNs, LLMs), understanding WHY a model made a decision becomes critical for trust, debugging, and regulatory compliance (EU AI Act, GDPR). Methods: SHAP (feature importance), LIME (local explanations), attention visualization, saliency maps.
+Explainable AI (XAI) studies how to make model behavior understandable to humans. It is especially important for debugging, trust, governance, and high-stakes uses where a prediction alone is not enough.
 
 ## Core Explanation
 
-SHAP (SHapley Additive exPlanations): game-theoretic approach assigning each feature an importance score. LIME: locally approximate complex model with simple interpretable model. Saliency maps: highlight input pixels most influential for prediction. Limitations: explanations can be misleading, feature correlations complicate attribution. Post-hoc methods explain AFTER prediction; inherently interpretable models explain BY design.
+Common post-hoc methods include LIME, which builds local interpretable approximations for individual predictions, and SHAP, which uses Shapley-value-inspired feature attributions. XAI methods can clarify model behavior, but explanations can still be incomplete or misleading when features are correlated, models are unstable, or the explanation method does not match the underlying decision process.
 
 ## Further Reading
 
-- [Interpretable Machine Learning (Christoph Molnar)](https://christophm.github.io/interpretable-ml-book/)
+- [Why Should I Trust You? Explaining the Predictions of Any Classifier](https://arxiv.org/abs/1602.04938)
+- [A Unified Approach to Interpreting Model Predictions](https://arxiv.org/abs/1705.07874)
+- [Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI](https://doi.org/10.1016/j.inffus.2019.12.012)

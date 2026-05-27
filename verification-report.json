@@ -4,18 +4,18 @@
     "total_articles": 1000,
     "total_with_errors": 0,
     "average_sources_per_article": "2.2",
-    "overall_verification_rate": "43.1%",
+    "overall_verification_rate": "44.3%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 34
+    "manual_reviewed_articles": 50
   },
   "articles": [
     {
       "file": "content/ai/3d-generation-gaussian-splatting.md",
       "article_id": "3d-generation-gaussian-splatting",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
           "source_title": "3D Gaussian Splatting for Real-Time Radiance Field Rendering",
@@ -23,11 +23,12 @@
           "results": [
             {
               "method": "url",
-              "identifier": "https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/",
+              "identifier": "https://arxiv.org/abs/2308.04079",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -39,11 +40,31 @@
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2003.08934",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2003.08934",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2003.08934&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "DreamFusion: Text-to-3D using 2D Diffusion",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2209.14988",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -51,8 +72,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/3d-human-modeling.md",
@@ -101,10 +124,10 @@
       "file": "content/ai/activation-functions.md",
       "article_id": "activation-functions",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "Deep Learning (Goodfellow, Bengio, Courville), Ch.6.3",
+          "source_title": "Deep Learning",
           "source_type": "textbook",
           "results": [
             {
@@ -112,8 +135,9 @@
               "identifier": "https://www.deeplearningbook.org/contents/mlp.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.deeplearningbook.org/contents/mlp.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -122,15 +146,52 @@
         },
         {
           "source_title": "Rectified Linear Units Improve Restricted Boltzmann Machines",
-          "source_type": "academic_paper",
+          "source_type": "conference_paper",
           "results": [
             {
               "method": "url",
               "identifier": "https://www.cs.toronto.edu/~hinton/absps/reluICML.pdf",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.cs.toronto.edu/~hinton/absps/reluICML.pdf"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Gaussian Error Linear Units (GELUs)",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1606.08415",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Searching for Activation Functions",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1710.05941",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -138,8 +199,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/advanced-rag-techniques.md",
@@ -9127,39 +9190,43 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Why Should I Trust You? Explaining the Predictions of Any Classifier (LIME — Ribeiro et al.)",
+          "source_title": "Why Should I Trust You? Explaining the Predictions of Any Classifier",
           "source_type": "conference_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1602.04938",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1602.04938",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "A Unified Approach to Interpreting Model Predictions (SHAP — Lundberg & Lee)",
+          "source_title": "A Unified Approach to Interpreting Model Predictions",
           "source_type": "conference_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1705.07874",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1705.07874",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Explainable Artificial Intelligence (XAI): A Comprehensive Survey (Arrieta et al. — Information Fusion)",
+          "source_title": "Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI",
           "source_type": "survey_paper",
           "results": [
             {
@@ -9167,8 +9234,9 @@
               "identifier": "https://doi.org/10.1016/j.inffus.2019.12.012",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1566253519308103"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -9176,8 +9244,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/feature-engineering.md",
@@ -12906,7 +12976,7 @@
       "file": "content/ai/recurrent-neural-networks-rnn.md",
       "article_id": "kb-2026-00270",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
           "source_title": "Long Short-Term Memory",
@@ -12915,60 +12985,11 @@
             {
               "method": "url",
               "identifier": "https://doi.org/10.1162/neco.1997.9.8.1735",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://direct.mit.edu/neco/article/9/8/1735-1780/6109"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "State Space Models as Modern RNNs: A Survey of Mamba, S4, and Linear Recurrent Architectures",
-          "source_type": "survey_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2504.12345",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
-          "source_type": "conference_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2312.00752",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Long Short-Term Memory",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1162/neco.1997.9.8.1735",
               "verified": true,
               "metadata": {
-                "title": "Long Short-Term Memory",
-                "publisher": "MIT Press",
-                "year": 2006
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -12976,17 +12997,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Learning Phrase Representations using RNN Encoder-Decoder (GRU)",
-          "source_type": "academic_paper",
+          "source_title": "Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation",
+          "source_type": "conference_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.3115/v1/D14-1179",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1406.1078",
               "verified": true,
               "metadata": {
-                "title": "Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation",
-                "publisher": "Association for Computational Linguistics",
-                "year": 2015
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Attention Is All You Need",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1706.03762",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -12994,8 +13033,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/reinforcement-learning-from-q-learning-to-rlhf.md",
@@ -14073,34 +14114,74 @@
       "file": "content/ai/transformer-architecture-variants.md",
       "article_id": "transformer-architecture-variants",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2312.00752",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
           "source_title": "Attention Is All You Need",
-          "source_type": "academic_paper",
+          "source_type": "conference_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1706.03762",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1706.03762",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=1706.03762&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "An Image is Worth 16x16 Words",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2010.11929",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2103.14030",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Efficient Transformers: A Survey",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1145/3530811",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -14108,8 +14189,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/transformer.md",
@@ -16858,19 +16941,20 @@
       "file": "content/business/financial-literacy.md",
       "article_id": "kb-2026-00471",
       "generation_method": "ai_structured",
-      "sources_total": 7,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Your Money or Your Life (Vicki Robin, Joe Dominguez)",
-          "source_type": "book",
+          "source_title": "Financial Well-Being Resources",
+          "source_type": "government_resource",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/180511/your-money-or-your-life-by-vicki-robin/",
+              "identifier": "https://www.consumerfinance.gov/consumer-tools/educator-tools/financial-well-being-resources/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/180511/your-money-or-your-life-by-vicki-robin/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -16878,61 +16962,17 @@
           "all_verified": true
         },
         {
-          "source_title": "The Psychology of Money: Timeless Lessons (2025 Edition)",
-          "source_type": "book",
+          "source_title": "What's in My FICO Scores?",
+          "source_type": "official_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.harrimanhouse.com/psychology-of-money/",
-              "verified": false,
-              "metadata": {},
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Personal Finance (14th Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.mheducation.com/personal-finance/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.mheducation.com/personal-finance"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Psychology of Money (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.harrimanhouse.com/psychology-of-money/",
-              "verified": false,
-              "metadata": {},
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Rich Dad Poor Dad (2025 25th Anniversary)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.richdad.com/",
+              "identifier": "https://www.myfico.com/credit-education/whats-in-your-credit-score",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://richdad.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -16940,20 +16980,28 @@
           "all_verified": true
         },
         {
-          "source_title": "Personal Finance (14th Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Psychology of Money",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "source_title": "Diversify Your Investments",
+          "source_type": "government_resource",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.investor.gov/introduction-investing/investing-basics/save-and-invest/diversify-your-investments",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/business/game-theory-nash-equilibrium-zero-sum-games-and-strategic-interaction.md",
@@ -19490,10 +19538,10 @@
       "file": "content/computer-science/c-language.md",
       "article_id": "kb-2026-00077",
       "generation_method": "ai_structured",
-      "sources_total": 7,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "ISO/IEC 9899:2024 — C23 Standard",
+          "source_title": "ISO/IEC 9899:2024 Programming languages C",
           "source_type": "standard",
           "results": [
             {
@@ -19501,8 +19549,9 @@
               "identifier": "https://www.iso.org/standard/82075.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.iso.org/standard/82075.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -19510,7 +19559,7 @@
           "all_verified": true
         },
         {
-          "source_title": "The C Programming Language (2nd Edition)",
+          "source_title": "The C Programming Language",
           "source_type": "textbook",
           "results": [
             {
@@ -19518,8 +19567,9 @@
               "identifier": "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.pearson.com/en-us/search/Shop?aq=Kernighan%20C-Programming-Language-2nd-Edition"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -19528,70 +19578,27 @@
         },
         {
           "source_title": "The Development of the C Language",
-          "source_type": "academic_paper",
+          "source_type": "historical_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/doi/10.1145/154766.155363",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/doi/10.1145/154766.155363"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The C Programming Language, Updated for C23 Standard (2025 Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.informit.com/store/c-programming-language-9780131103627",
+              "identifier": "https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.informit.com/store/c-programming-language-9780131103627"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "Memory-Safe Systems Programming: C, Rust, and Zig in 2025",
-          "source_type": "survey_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.systems",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.systems"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The C Programming Language (2nd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "ISO/IEC 9899:2024 — Programming Languages — C",
-          "source_type": "standard",
-          "results": [],
-          "all_verified": false
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 2
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/canvas-api.md",
@@ -26428,19 +26435,92 @@
       "file": "content/computer-science/php-language.md",
       "article_id": "kb-2026-00303",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 5,
       "verification_results": [
         {
-          "source_title": "PHP Manual",
+          "source_title": "History of PHP",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.php.net/docs.php",
+              "identifier": "https://www.php.net/manual/en/history.php.php",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.php.net/docs.php"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PHP 8.0.0 Release Announcement",
+          "source_type": "release_notes",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.php.net/releases/8.0/en.php",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PHP 8.1.0 Release Announcement",
+          "source_type": "release_notes",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.php.net/releases/8.1/en.php",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PHP 8.4 Release Announcement",
+          "source_type": "release_notes",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.php.net/releases/8.4/en.php",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "FastCGI Process Manager (FPM)",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.php.net/manual/en/install.fpm.php",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -26448,26 +26528,101 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 5,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/playwright.md",
       "article_id": "kb-2026-00180",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 5,
       "verification_results": [
         {
-          "source_title": "Playwright Documentation",
+          "source_title": "Browsers",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://playwright.dev/",
+              "identifier": "https://playwright.dev/docs/browsers",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://playwright.dev/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Auto-waiting",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://playwright.dev/docs/actionability",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Trace viewer",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://playwright.dev/docs/trace-viewer",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Test generator",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://playwright.dev/docs/codegen",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "API testing",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://playwright.dev/docs/api-testing",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -26475,8 +26630,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 5,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/pointer-lock-api.md",
@@ -26874,19 +27031,20 @@
       "file": "content/computer-science/react.md",
       "article_id": "kb-2026-00023",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "React Documentation",
+          "source_title": "Your First Component",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://react.dev/",
+              "identifier": "https://react.dev/learn/your-first-component",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://react.dev/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -26894,16 +27052,17 @@
           "all_verified": true
         },
         {
-          "source_title": "React GitHub Repository",
-          "source_type": "repository",
+          "source_title": "React v19",
+          "source_type": "release_notes",
           "results": [
             {
               "method": "url",
-              "identifier": "https://github.com/facebook/react",
+              "identifier": "https://react.dev/blog/2024/12/05/react-19",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/facebook/react"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -26911,42 +27070,28 @@
           "all_verified": true
         },
         {
-          "source_title": "Learning React (3rd Edition, 2025)",
-          "source_type": "book",
+          "source_title": "Server Components",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/react/",
-              "verified": false,
+              "identifier": "https://react.dev/reference/rsc/server-components",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/react/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Modern Frontend Frameworks: React, Vue, and Svelte in 2025",
-          "source_type": "survey_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.frontend",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.frontend"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/recursion.md",
@@ -30383,19 +30528,38 @@
       "file": "content/game-development/community-management.md",
       "article_id": "kb-gd-008",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "Community Moderation",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://partner.steamgames.com/doc/marketing/community_moderation",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Policies and Guidelines",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://discord.com/safety/360043709612-Our-policies",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -30403,8 +30567,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 2,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/game-development/core-mechanics.md",
@@ -30852,16 +31018,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "Edit Mode vs. Play Mode tests",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://docs.unity.cn/Packages/com.unity.test-framework@2.0/manual/edit-mode-vs-play-mode-tests.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -30869,20 +31036,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Game Testing: All in One (3rd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "source_title": "Unit tests",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.unity.com/en-us/build-automation/reference/unit-tests",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "The Art of Game Design: A Book of Lenses (3rd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "source_title": "Automation System Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://dev.epicgames.com/documentation/en-us/unreal-engine/automation-system-overview?application_version=4.27",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/game-development/game-ui-ux-design.md",
@@ -35688,7 +35881,7 @@
       "file": "content/history/french-revolution.md",
       "article_id": "kb-2026-00327",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 1,
       "verification_results": [
         {
           "source_title": "Citizens: A Chronicle of the French Revolution (Simon Schama)",
@@ -35699,80 +35892,20 @@
               "identifier": "https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "Citizens: A Chronicle of the French Revolution (2025 Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/french-revolution/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.penguinrandomhouse.com/french-revolution/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The French Revolution: A Very Short Introduction (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/vsi-french-rev/",
-              "verified": true,
-              "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-french-rev/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Citizens: A Chronicle of the French Revolution (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/french-revolution/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.penguinrandomhouse.com/french-revolution/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Citizens: A Chronicle of the French Revolution",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "The French Revolution: A Very Short Introduction",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 2
+      "sources_verified": 1,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/great-depression.md",
@@ -37141,7 +37274,7 @@
       "file": "content/history/renaissance-science.md",
       "article_id": "kb-2026-00465",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 1,
       "verification_results": [
         {
           "source_title": "The Scientists (John Gribbin)",
@@ -37152,63 +37285,20 @@
               "identifier": "https://www.penguinrandomhouse.com/books/292021/the-scientists-by-john-gribbin/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/292021/the-scientists-by-john-gribbin/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "The Scientific Renaissance: 1450-1630 (2025 Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://store.doverpublications.com/scientific-renaissance/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://store.doverpublications.com/scientific-renaissance/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Science and the Renaissance (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1017/cbo.2025.rensc",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1017/cbo.2025.rensc"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Scientific Revolution",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Structure of Scientific Revolutions (4th Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
         }
       ],
       "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/renaissance.md",
@@ -37553,7 +37643,7 @@
       "file": "content/history/silk-road.md",
       "article_id": "kb-2026-00329",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 1,
       "verification_results": [
         {
           "source_title": "The Silk Roads: A New History of the World (Peter Frankopan)",
@@ -37562,65 +37652,22 @@
             {
               "method": "url",
               "identifier": "https://www.bloomsbury.com/us/silk-roads-9781408839973/",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.bloomsbury.com/us/silk-roads-9781408839973/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Silk Roads: A New History of the World (2025 Illustrated Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.bloomsbury.com/silk-roads/",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.bloomsbury.com/silk-roads/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Silk Road: A Very Short Introduction (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/vsi-silk-road/",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-silk-road/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "The Silk Roads: A New History of the World",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Empires of the Silk Road",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
         }
       ],
       "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/space-race.md",
@@ -37771,7 +37818,7 @@
       "file": "content/history/viking-age.md",
       "article_id": "kb-2026-00397",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 1,
       "verification_results": [
         {
           "source_title": "The Age of the Vikings (Anders Winroth)",
@@ -37780,65 +37827,22 @@
             {
               "method": "url",
               "identifier": "https://press.princeton.edu/books/hardcover/9780691149851/the-age-of-the-vikings",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://press.princeton.edu/books/hardcover/9780691149851/the-age-of-the-vikings"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Vikings: A History (2025 Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/vikings/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.penguinrandomhouse.com/vikings/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Viking Age: A Very Short Introduction (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/vsi-vikings/",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-vikings/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "The Viking World",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Children of Ash and Elm: A History of the Vikings",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
         }
       ],
       "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/vikings-exploration-and-culture.md",

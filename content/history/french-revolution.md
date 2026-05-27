@@ -15,25 +15,18 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-history-01
-    statement: The French Revolution overthrew the monarchy, established a republic, and fundamentally transformed French society and European politics
-    source_title: 'Citizens: A Chronicle of the French Revolution (Simon Schama)'
-    source_url: https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/
-    confidence: high
   - id: fact-history-001
-    statement: >-
-      The French Revolution (1789-1799) overthrew the monarchy, established a republic, and fundamentally transformed French society and European politics. Ideals: Liberty, Equality, Fraternity.
-      Marked the rise of modern nationalism, secularism, and the concept of universal human rights.
+    statement: The French Revolution began in 1789 and overthrew the Old Regime, replacing hereditary privilege with new arguments about citizenship, rights, and popular sovereignty.
     source_title: 'Citizens: A Chronicle of the French Revolution (Simon Schama)'
     source_url: https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/
     confidence: medium
   - id: fact-history-002
-    statement: 'Events: Storming of the Bastille (July 14, 1789), Declaration of the Rights of Man, Reign of Terror (1793-94, Robespierre, guillotine), Napoleon''s coup (1799).'
+    statement: Landmark events included the Storming of the Bastille, the Declaration of the Rights of Man and of the Citizen, the Reign of Terror, and Napoleon's 1799 coup.
     source_title: 'Citizens: A Chronicle of the French Revolution (Simon Schama)'
     source_url: https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/
     confidence: medium
   - id: fact-history-003
-    statement: 'Legacy: metric system, Napoleonic Code (basis of European law), abolished feudalism, inspired revolutions worldwide.'
+    statement: The French Revolution abolished feudal privileges in France and helped make citizenship, rights, and popular sovereignty central themes in modern politics.
     source_title: 'Citizens: A Chronicle of the French Revolution (Simon Schama)'
     source_url: https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/
     confidence: medium
@@ -42,70 +35,35 @@ known_gaps:
   - Statistics and data cited are from 1989 and earlier; more recent data may have become available since publication
   - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
 disputed_statements:
-  - statement: The role of Enlightenment ideas versus material conditions (fiscal crisis, food shortages) as primary drivers of the French Revolution is an enduring historiographical debate
+  - statement: The role of Enlightenment ideas versus material conditions as primary drivers of the French Revolution remains a historiographical debate.
+    source_title: The Oxford History of the French Revolution
+    source_url: https://global.oup.com/academic/product/the-oxford-history-of-the-french-revolution-9780199252985
 primary_sources:
   - title: 'Citizens: A Chronicle of the French Revolution (Simon Schama)'
     type: book
     year: 1989
     url: https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/
     institution: Penguin
-  - title: 'Citizens: A Chronicle of the French Revolution (2025 Edition)'
-    type: book
-    year: 2025
-    authors:
-      - Schama S.
-    institution: Vintage
-    url: https://www.penguinrandomhouse.com/french-revolution/
-  - title: 'The French Revolution: A Very Short Introduction (2025)'
-    type: book
-    year: 2025
-    authors:
-      - Doyle W.
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-french-rev/
-  - title: 'Citizens: A Chronicle of the French Revolution (2025)'
-    type: book
-    year: 2025
-    authors:
-      - Schama S.
-    institution: Vintage
-    url: https://www.penguinrandomhouse.com/french-revolution/
-  - title: 'Citizens: A Chronicle of the French Revolution'
-    authors:
-      - Schama, S.
-    type: book
-    year: 1989
-    institution: Knopf
-  - title: 'The French Revolution: A Very Short Introduction'
-    authors:
-      - Doyle, W.
-    type: book
-    year: 2001
-    institution: Oxford University Press
 secondary_sources:
   - title: The Oxford History of the French Revolution
     type: book
     year: 1989
     url: https://global.oup.com/academic/product/the-oxford-history-of-the-french-revolution-9780199252985
     institution: William Doyle, Oxford University Press
-  - title: The Penguin History of the World (J.M. Roberts)
-    type: textbook
-    year: 2014
-    url: https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    institution: Penguin Books
 ---
 
 ## TL;DR
 
-The French Revolution (1789-1799) overthrew the monarchy, established a republic, and fundamentally transformed French society and European politics. Ideals: Liberty, Equality, Fraternity. Marked the rise of modern nationalism, secularism, and the concept of universal human rights.
+The French Revolution began in 1789 and overthrew the Old Regime, replacing hereditary privilege with new arguments about citizenship, rights, and popular sovereignty. It reshaped France and became a reference point for later revolutionary politics.
 
 ## Core Explanation
 
-Causes: financial crisis, inequality (three estates: clergy, nobility, commoners), Enlightenment ideas. Events: Storming of the Bastille (July 14, 1789), Declaration of the Rights of Man, Reign of Terror (1793-94, Robespierre, guillotine), Napoleon's coup (1799). Legacy: metric system, Napoleonic Code (basis of European law), abolished feudalism, inspired revolutions worldwide.
+Causes included fiscal crisis, social inequality, political conflict, and Enlightenment-era arguments about rights and sovereignty. Landmark events included the Storming of the Bastille, the Declaration of the Rights of Man and of the Citizen, the Reign of Terror, and Napoleon's coup in 1799. Historians continue to debate the relative weight of ideological and material causes.
 
 ## Further Reading
 
 - [Citizens: A Chronicle of the French Revolution (Simon Schama)](https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/)
+- [The Oxford History of the French Revolution](https://global.oup.com/academic/product/the-oxford-history-of-the-french-revolution-9780199252985)
 
 ## Related Articles
 
