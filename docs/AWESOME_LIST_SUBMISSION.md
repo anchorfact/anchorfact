@@ -1,40 +1,46 @@
-# AnchorFact — AI-Native Knowledge Base
+# AnchorFact - Verified Claims for LLM Citations
 
-> Anchor AI to Facts. 876 articles. Public confidence formula. MCP Server included.
+> Machine-readable verified claims, public confidence metadata, and source-backed article records for AI systems.
 
-AnchorFact is an **AI-structured knowledge base designed for LLM and AI Agent consumption**. Unlike Wikipedia (human editors, opaque trust) or AI-generated content farms (no source traceability), AnchorFact anchors every statement in **machine-verifiable sources** (DOI papers, ISO/IEC standards, RFCs) and computes confidence via a **public, deterministic formula** that any downstream system can independently verify.
+AnchorFact is a trust-first knowledge registry for LLM and AI agent consumption. It keeps generated articles in the repository, but only promotes entries with real source verification data into public machine-readable surfaces such as `llms.txt`, `sitemap.xml`, `manifest.json`, and `claims.json`.
 
 ## Why This Exists
 
-AI search engines (ChatGPT, Perplexity, Claude) cite sources designed for humans — Wikipedia, blog posts, news articles. Extraction errors are common. Structure is inconsistent. Trust is opaque.
+AI search systems often cite human-oriented pages with inconsistent structure and unclear provenance. AnchorFact flips the unit of value from "many AI-written articles" to "claims and articles with explicit verification metadata."
 
-AnchorFact flips this: every article is compiled from traceable publications. Confidence = `source_tier × 0.35 + source_count × 0.20 + source_verified × 0.25 + freshness × 0.10 − decay × 0.10`. No black-box AI scoring. No human editorial judgment. You can replicate the calculation yourself.
+Each public entry exposes:
+
+- canonical URL and stable route metadata
+- confidence level and confidence basis
+- source verification coverage
+- draft/public status
+- machine-readable claims with evidence references when available
 
 ## Key Features
 
-- **876 articles** across 11 domains (AI, computer science, history, science, geography, sports, self-improvement, etc.)
-- **Public confidence formula** — deterministic, verifiable, reproducible
-- **5 output formats**: JSON-LD (Schema.org), Turtle (RDF), Markdown, Plain Text, HTML
-- **Source verification pipeline**: CrossRef DOI + arXiv API + HTTP reachability, incremental mode (<1s for unchanged files)
-- **MCP Server** (Python): BM25 search + structured article retrieval for Claude Desktop / AI agents
-- **CI/CD**: GitHub Actions every 6h, auto-deploy to Cloudflare Pages
-- **llms.txt**, sitemap.xml, CORS headers, IndexNow — AI-crawler optimized
-- **MIT licensed** (code), CC-BY 4.0 (content)
+- **Trust-first publication model**: public and draft content are separated by a shared quality model.
+- **Machine-readable outputs**: HTML, JSON-LD, Turtle, Markdown, plain text, `llms.txt`, `manifest.json`, and `claims.json`.
+- **Source verification pipeline**: DOI, arXiv, and URL reachability checks feed the confidence and quality gates.
+- **Quality gate**: duplicate routes, missing public verification, placeholder content, and invalid high estimated confidence are blocked before build.
+- **Cloudflare Pages deployment**: Pages builds only from the latest trusted snapshot; full verification runs in GitHub Actions.
+- **Open license**: MIT code and CC-BY 4.0 content.
 
-## Quick Facts
+## Current Snapshot
 
 | Metric | Value |
-|--------|-------|
-| Articles | 876 |
-| High confidence (≥0.85) | 104 |
-| Avg sources/article | 2.5 |
-| DOI-verified sources | ~90 |
-| Source verification rate | ~40% |
-| Core tests | 19/19 passing |
+| --- | ---: |
+| Total articles | 1000 |
+| Public eligible articles | 573 |
+| Draft articles | 427 |
+| Public claims | 1715 |
+| Overall source verification rate | 41.1% |
+| Average sources per article | 2.3 |
 
 ## Links
 
-- **Website**: [anchorfact.org](https://anchorfact.org)
-- **Dashboard**: [anchorfact.org/dashboard.html](https://anchorfact.org/dashboard.html)
-- **GitHub**: [github.com/anchorfact/anchorfact](https://github.com/anchorfact/anchorfact)
-- **Design doc**: [DESIGN.md](https://github.com/anchorfact/anchorfact/blob/main/DESIGN.md)
+- Website: [anchorfact.org](https://anchorfact.org)
+- Public LLM index: [anchorfact.org/llms.txt](https://anchorfact.org/llms.txt)
+- Claims export: [anchorfact.org/claims.json](https://anchorfact.org/claims.json)
+- Manifest: [anchorfact.org/manifest.json](https://anchorfact.org/manifest.json)
+- GitHub: [github.com/anchorfact/anchorfact](https://github.com/anchorfact/anchorfact)
+- Design doc: [DESIGN.md](https://github.com/anchorfact/anchorfact/blob/main/DESIGN.md)

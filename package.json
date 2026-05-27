@@ -10,6 +10,7 @@
     "quality": "node src/quality-gate.js content verification-report.json",
     "pages:build": "npm run quality && npm run build",
     "pipeline": "npm run verify && npm run quality && npm run build",
+    "smoke:prod": "node src/smoke-production.js",
     "test": "node tests/confidence.test.js && node tests/article-quality.test.js && node tests/compile.test.js && node tests/quality-gate.test.js && node tests/verification-cache.test.js",
     "serve": "node src/serve.js",
     "deploy": "npm run pages:build && wrangler pages deploy dist",

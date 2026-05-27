@@ -44,7 +44,7 @@ Cloudflare Pages should use:
 Build command: npm run pages:build
 Build output directory: dist
 Production branch: main
-Node.js version: 20
+Node.js version: 20 or newer
 ```
 
 Do not run `npm run verify-full` inside the Cloudflare Pages build. Source verification is intentionally handled by GitHub Actions because it is slower and depends on external DOI, arXiv, and URL checks.
@@ -60,6 +60,14 @@ npm run build
 ```
 
 If the generated `verification-report.json` changes, the workflow commits it back to `main`. That commit triggers Cloudflare Pages to rebuild the public site from the latest trusted verification snapshot.
+
+After a production deployment, run:
+
+```bash
+EXPECTED_PUBLIC_ARTICLES=573 EXPECTED_DRAFT_ARTICLES=427 EXPECTED_CLAIMS=1715 npm run smoke:prod
+```
+
+This checks the homepage, `/manifest.json`, `/llms.txt`, `/claims.json`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
 
 ## Content Model
 
@@ -112,6 +120,7 @@ Ordinary draft content is allowed to remain in the repository.
 | `npm run build` | Compiles content into `dist/`. |
 | `npm run pages:build` | Runs quality and build for Cloudflare Pages. |
 | `npm run pipeline` | Runs verify, quality, and build. |
+| `npm run smoke:prod` | Checks the live production machine-readable endpoints. |
 
 ## License
 
