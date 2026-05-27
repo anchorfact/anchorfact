@@ -75,15 +75,35 @@ test('Single S-tier DOI source → medium at minimum', () => {
   // 0.35*1 + 0.20*0.5 + 0.25*1 + 0.10*1 = 0.35+0.10+0.25+0.10 = 0.80
   assertEq(r.score >= 0.75, true, 'score should be >=0.75');
 });
-test('3 S-tier DOI sources → high', () => {
+test('3 S-tier DOI sources without verification → medium (estimated cannot be high)', () => {
   const sources = [
     { doi: '10.a/a', type: 'academic_paper', year: 2025 },
     { doi: '10.b/b', type: 'standard', year: 2025 },
     { doi: '10.c/c', type: 'rfc', year: 2025 },
   ];
   const r = computeConfidence(sources, {});
+  assertEq(r.level, 'medium');
+  assertEq(r.inputs.based_on, 'estimated');
+  assertEq(r.score >= 0.85, true, 'score can be high while level is capped');
+});
+test('3 S-tier DOI sources with verification → high', () => {
+  const sources = [
+    { doi: '10.a/a', type: 'academic_paper', year: 2025 },
+    { doi: '10.b/b', type: 'standard', year: 2025 },
+    { doi: '10.c/c', type: 'rfc', year: 2025 },
+  ];
+  const vd = {
+    sources_total: 3,
+    sources_verified: 3,
+    verification_results: [
+      { results: [{ method: 'doi', verified: true }] },
+      { results: [{ method: 'doi', verified: true }] },
+      { results: [{ method: 'doi', verified: true }] }
+    ]
+  };
+  const r = computeConfidence(sources, {}, vd);
   assertEq(r.level, 'high');
-  assertEq(r.score >= 0.85, true, '3 S-tier with DOI should be high');
+  assertEq(r.inputs.based_on, 'verified_sources');
 });
 test('Disputed article gets decay penalty', () => {
   const sources = [
@@ -99,6 +119,10 @@ test('With real verification data', () => {
   const vd = { sources_total: 3, sources_verified: 3, verification_results: [{ results: [{ method: 'doi', verified: true }] }] };
   const r = computeConfidence([{ doi: '10.x/x', type: 'academic_paper', year: 2025 }], {}, vd);
   assertEq(r.inputs.based_on, 'verified_sources');
+});
+test('Blog source is lower tier than academic DOI source', () => {
+  assertEq(classifySourceTier({ type: 'blog_post', url: 'https://example.com' }), 'B');
+  assertEq(classifySourceTier({ type: 'academic_paper', doi: '10.1234/test' }), 'S');
 });
 
 console.log(`\n${passed} passed, ${failed} failed`);

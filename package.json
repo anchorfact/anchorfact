@@ -1,16 +1,18 @@
 {
   "name": "anchorfact",
   "version": "0.2.0",
-  "description": "Anchor AI to Facts — AI-structured knowledge base for LLM citations. Trust anchored in verifiable sources.",
+  "description": "Machine-readable verified claims for LLM citations.",
   "type": "module",
   "scripts": {
     "build": "node src/compile.js content dist",
     "verify": "node src/verify-sources.js --incremental content verification-report.json",
     "verify-full": "node src/verify-sources.js content verification-report.json",
-    "pipeline": "npm run verify && npm run build",
-    "test": "node tests/confidence.test.js",
+    "quality": "node src/quality-gate.js content verification-report.json",
+    "pages:build": "npm run quality && npm run build",
+    "pipeline": "npm run verify && npm run quality && npm run build",
+    "test": "node tests/confidence.test.js && node tests/article-quality.test.js && node tests/compile.test.js && node tests/quality-gate.test.js && node tests/verification-cache.test.js",
     "serve": "node src/serve.js",
-    "deploy": "npm run pipeline && wrangler pages deploy dist",
+    "deploy": "npm run pages:build && wrangler pages deploy dist",
     "monitor": "node scripts/monitor-sources.js --summary"
   },
   "keywords": [

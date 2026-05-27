@@ -3,8 +3,8 @@ name = "anchorfact"
 compatibility_date = "2026-05-22"
 pages_build_output_dir = "dist"
 
-# Build config for Cloudflare Pages (auto-detected)
-# Build command: node src/compile.js content dist
+# Build config for Cloudflare Pages
+# Build command: npm run pages:build
 # Build output: dist
 
 [env.production]

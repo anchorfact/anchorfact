@@ -10,6 +10,7 @@ import { readFileSync, writeFileSync, readdirSync, statSync, existsSync } from '
 import { join } from 'path';
 import { load } from 'js-yaml';
 import { computeConfidence, classifySourceTier, computeFreshnessScore } from './lib/confidence.js';
+import { isCacheableVerificationResult } from './lib/verification-cache.js';
 
 // ---- Rate Limiter ----
 const RATE_LIMIT_MS = 200; // 每秒 ≤ 5 请求
@@ -286,7 +287,7 @@ async function verifyAll(contentDir, oldReportPath) {
   for (const fp of articles) {
     const norm = normalizePathForVerify(fp);
     const cached = oldMap.get(norm);
-    if (cached && lastGenerated) {
+    if (cached && lastGenerated && isCacheableVerificationResult(cached)) {
       try {
         if (statSync(fp).mtime <= lastGenerated) {
           cachedResults.push(cached);

@@ -1,5 +1,13 @@
 # AI 原生知识库项目设计文档
 
+> Trust-first implementation update (2026-05-27):
+> AnchorFact is now treated as a machine-readable verified claim registry for LLM citations.
+> The current compiler separates content into public verified entries and draft entries.
+> Only entries with real source verification data and no placeholder content appear in `llms.txt`, sitemap, and the homepage public index.
+> Drafts remain in the repository and compiled output, but are marked `noindex` and excluded from AI entrypoints.
+> Cloudflare Pages now runs only `npm run pages:build`; GitHub Actions owns scheduled/manual `verify-full` snapshots and commits `verification-report.json` back to the repository.
+> First-phase scope deliberately excludes database migration, blockchain anchoring, token governance, and MCP redesign.
+
 > 版本：v0.5
 > 日期：2026-05-22
 > 状态：方案设计阶段

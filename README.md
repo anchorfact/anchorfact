@@ -1,142 +1,118 @@
-# AnchorFact — Anchor AI to Facts
+# AnchorFact
 
-> **AI 时代的信息锚点**：一个由 AI 自动运维、专为 LLM 和 AI Agent 消费设计的结构化信息来源。不是内容创作——是可溯源信息的精准整合。
+> Machine-readable verified claims for LLM citations.
 
----
+AnchorFact is an open source knowledge registry for AI systems. Its core unit is not a long article, but a verifiable factual claim connected to traceable sources. Articles are still generated as Markdown, JSON-LD, Turtle, plain text, and HTML, but only entries with real source verification data are promoted into public AI entrypoints.
 
-## 它是什么
+## Current Direction
 
-AnchorFact 是一个**开源的结构化知识库**，所有内容由 AI 从可溯源出版物（学术论文、技术标准、专利等）中提取和整合。每条事实标注其原始来源、置信度和可验证路径——让下游 LLM 能判断这条信息有多可信，而不需要相信 AnchorFact 本身。
+AnchorFact is moving from a scale-first knowledge base to a trust-first verified claim registry.
 
-**核心理念**：信任不在于"谁写的"，而在于"来源是否可独立验证"。
+| Area | Policy |
+| --- | --- |
+| Public AI entrypoints | Only verified, non-placeholder articles appear in `llms.txt`, `sitemap.xml`, and the homepage public list. |
+| Draft content | Drafts are retained and compiled, but excluded from AI entrypoints and marked `noindex`. |
+| Confidence | Estimated confidence can never be `high`; public entries must be based on `verified_sources`. |
+| Claims | Public atomic facts with evidence are exported to `/claims.json`. |
+| Routing | Canonical URLs are stable path-derived slugs, with optional `slug` frontmatter override. |
 
----
-
-## 现状态
-
-| 指标 | 数值 |
-|------|------|
-| 文章数 | **805** 篇 |
-| 领域 | 11 个（AI、计算机科学、科学、历史等） |
-| 置信度分布 | A 级 169 · B 级 623 · C 级 13 |
-| 输出格式 | MD · JSON-LD · Turtle · Plain Text · HTML |
-| 部署 | Cloudflare Pages（[anchorfact.org](https://anchorfact.org)） |
-| 许可证 | 内容 CC-BY 4.0 · 代码 MIT |
-
----
-
-## 核心价值
-
-| 原则 | 含义 |
-|------|------|
-| **可验证性优先** | 所有声明必须可追溯到机器可验证的原始来源 |
-| **来源透明** | 置信度由公开公式自动计算，零人工干预 |
-| **AI 原生** | 所有设计决策首先考虑 AI 消费体验 |
-| **开源** | 内容和代码完全公开 |
-
----
-
-## 为什么 AnchorFact 和其他知识库不同
-
-| | AnchorFact | Wikipedia | Grokipedia |
-|---|---|---|---|
-| 读者 | **AI / LLM 优先** | 人类优先 | 人类优先 |
-| 运维 | **AI 自动化** | 人类编辑社区 | AI 生成 |
-| 数据格式 | **JSON-LD + Turtle + MD** | HTML | AI 输出 |
-| 来源验证 | **机器可复现** | 编辑人工判断 | 无强制标准 |
-| 置信度 | **公开公式自动计算** | 无量化标准 | 无 |
-| 中立性保障 | **来源刚性 + 公式透明** | 编辑共识 | 单一 AI 视角 |
-
----
-
-## 快速开始
+## Quick Start
 
 ```bash
-# 克隆仓库
-git clone https://github.com/anchorfact/anchorfact.git
-cd anchorfact
-
-# 构建（需要 Node.js）
+npm ci
+npm test
+npm run verify
+npm run quality
 npm run build
+```
 
-# 或完整流水线：验证来源 → 编译 → 质量检查
+The full pipeline is:
+
+```bash
 npm run pipeline
 ```
 
-内容在 `content/` 目录下，按领域分类。
+This runs source verification, the quality gate, and the compiler.
 
----
+## Deployment
 
-## 架构
+AnchorFact is deployed as a static Cloudflare Pages site connected to GitHub.
 
-```
-content/*.md  (Markdown + YAML Frontmatter)
-  │
-  ▼
-verify-sources.js   ← 来源刚性验证（DOI / URL 可达性）
-  │
-  ▼
-compile.js          ← Markdown → JSON-LD / Turtle / Plain Text / HTML
-  │
-  ▼
-dist/               ← 部署到 Cloudflare Pages
+Cloudflare Pages should use:
+
+```txt
+Build command: npm run pages:build
+Build output directory: dist
+Production branch: main
+Node.js version: 20
 ```
 
-**MCP Server**：`src/mcp_server.py` — AI Agent 可通过 MCP 协议直接检索知识库。
+Do not run `npm run verify-full` inside the Cloudflare Pages build. Source verification is intentionally handled by GitHub Actions because it is slower and depends on external DOI, arXiv, and URL checks.
 
----
+The scheduled `Verification Snapshot` workflow runs weekly and can also be started manually from the GitHub Actions tab. It runs:
 
-## 置信度如何计算
-
-置信度不由 AI 主观判断，由公开公式自动计算：
-
-```
-confidence_score = (
-    source_tier × 0.35     // 来源等级 (S=1.0, A=0.9, B=0.6, C=0.3)
-  + source_count × 0.20   // 独立来源数 (1=0.5, 2=0.8, 3+=1.0)
-  + source_verified × 0.25 // 来源可验证性 (DOI可查=1.0, URL可达=0.7)
-  + freshness × 0.10      // 时效性 (1年内=1.0, 5年=0.7)
-  - decay × 0.10          // 衰减 (disputed=0.2, known_gaps=0.1)
-)
-
-≥ 0.85 → high
-≥ 0.60 → medium
-< 0.60 → 不发布
+```bash
+npm ci
+npm test
+npm run verify-full
+npm run quality
+npm run build
 ```
 
-公式详情见 `src/compile.js` 中的 `computeConfidence` 函数。任何下游系统可独立复现实算。
+If the generated `verification-report.json` changes, the workflow commits it back to `main`. That commit triggers Cloudflare Pages to rebuild the public site from the latest trusted verification snapshot.
 
----
+## Content Model
 
-## 来源等级
+Content lives in `content/` as Markdown with YAML frontmatter.
 
-| 等级 | 示例 | 验证方式 |
-|------|------|---------|
-| **S 级** | DOI 论文、ISO/IEC 标准、RFC、已授权专利 | CrossRef API / 数字签名 |
-| **A 级** | 政府统计、大学官方出版物 | URL 可达性 + 机构确认 |
-| **B 级** | 知名学者个人网站、技术博客 | 作者身份可验证 |
-| **C 级** | Wikipedia、新闻媒体报道 | 不可作为唯一来源 |
-| **D 级** | 匿名论坛、社交媒体、AI 直接生成 | **禁止作为来源** |
+Optional frontmatter fields:
 
----
+- `slug`: explicit canonical output path.
+- `status`: `draft` or `published`. Omit this for automatic quality-based classification.
 
-## 贡献
+Atomic facts should include:
 
-AnchorFact 当前由 AI 自动运维。任何人都可以：
-- 通过 Issue 报告事实错误或提出条目提案
-- 提交 PR 添加或改进内容
-- 内容进入仓库后将自动通过来源验证流水线
+- `id`
+- `statement`
+- one of `source_ref`, `source_url`, or `source_doi`
 
-无需人类社区治理，无需编辑许可。信任链条在代码里，不在人手里。
+Only public articles contribute publishable facts to `/claims.json`.
 
----
+## Build Outputs
 
-## 链接
+| Output | Purpose |
+| --- | --- |
+| `/llms.txt` | Public verified index for LLM crawlers. |
+| `/manifest.json` | Full public/draft index with quality reasons and verification metadata. |
+| `/claims.json` | Public verified atomic claims with evidence links. |
+| `/drafts.html` | Draft review index, marked `noindex`. |
+| `/{slug}/index.json` | JSON-LD article record with confidence and verification layer. |
+| `/{slug}/facts.json` | Per-article atomic facts, when present. |
 
-- [DESIGN.md](./DESIGN.md) — 项目设计文档
-- [anchorfact.org](https://anchorfact.org) — 部署站点
-- [SECURITY.md](./SECURITY.md) — 安全策略
+## Trust Rules
 
----
+Confidence is computed from source tier, source count, verification coverage, freshness, and decay factors. Source verification is performed by `src/verify-sources.js` through DOI, arXiv, and URL checks. The quality model in `src/lib/article-quality.js` decides whether an article is public or draft.
 
-> *AnchorFact 不声称自己比 Wikipedia 更准确。它声称的是：任何人对它的信任可以由机器复现，而非相信任何一个编辑、任何一个机构、或任何一个 AI。*
+The quality gate fails when:
+
+- two articles resolve to the same canonical slug
+- `status: published` is set but the article is not public eligible
+- estimated confidence is ever emitted as `high`
+
+Ordinary draft content is allowed to remain in the repository.
+
+## Project Scripts
+
+| Script | Action |
+| --- | --- |
+| `npm test` | Runs confidence, article-quality, compiler, and quality-gate tests. |
+| `npm run verify` | Incrementally verifies source reachability and writes `verification-report.json`. |
+| `npm run verify-full` | Rebuilds `verification-report.json` without using the incremental cache. |
+| `npm run quality` | Enforces routing and public eligibility rules. |
+| `npm run build` | Compiles content into `dist/`. |
+| `npm run pages:build` | Runs quality and build for Cloudflare Pages. |
+| `npm run pipeline` | Runs verify, quality, and build. |
+
+## License
+
+Content is CC-BY 4.0. Code is MIT.

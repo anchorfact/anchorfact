@@ -1,0 +1,59 @@
+name: Verification Snapshot
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 3 * * 1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: verification-snapshot
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test
+
+      - name: Refresh verification report
+        run: npm run verify-full
+
+      - name: Enforce quality gate
+        run: npm run quality
+
+      - name: Build Pages output
+        run: npm run build
+
+      - name: Show verification summary
+        run: |
+          node -e "const fs=require('fs'); const report=JSON.parse(fs.readFileSync('verification-report.json','utf8')); console.log(JSON.stringify(report.summary, null, 2));"
+
+      - name: Commit verification report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f verification-report.json
+          if git diff --cached --quiet; then
+            echo "verification-report.json is unchanged."
+          else
+            git commit -m "chore: update verification report [skip ci]"
+            git push
+          fi
