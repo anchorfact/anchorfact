@@ -148,6 +148,15 @@ test('claims.json includes only public atomic facts with evidence', () => {
   assert(!claims.claims.some(claim => claim.id.endsWith('broken')), 'broken atomic facts should not be public claims');
 });
 
+test('_headers is generated for Cloudflare Pages static output', () => {
+  const headers = readFileSync(join(distDir, '_headers'), 'utf-8');
+  assert(headers.includes('/*\n  X-Content-Type-Options: nosniff'), '_headers should include global security headers');
+  assert(headers.includes('/manifest.json\n  Access-Control-Allow-Origin: *'), '_headers should expose manifest CORS');
+  assert(headers.includes('/*/index.json\n  Access-Control-Allow-Origin: *'), '_headers should expose article JSON-LD CORS');
+  assert(headers.includes('/drafts\n  X-Robots-Tag: noindex, nofollow'), '_headers should noindex extensionless drafts route');
+  assert(headers.includes('/drafts.html\n  X-Robots-Tag: noindex, nofollow'), '_headers should noindex drafts.html route');
+});
+
 rmSync(root, { recursive: true, force: true });
 
 console.log(`\n${passed} passed, ${failed} failed`);

@@ -466,22 +466,30 @@ function writeHeaders(distDir) {
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+
 /*/index.json
   Access-Control-Allow-Origin: *
   Content-Type: application/ld+json; charset=utf-8
   Cache-Control: public, max-age=86400
+
 /*/index.ttl
   Access-Control-Allow-Origin: *
   Content-Type: text/turtle; charset=utf-8
   Cache-Control: public, max-age=86400
+
 /claims.json
   Access-Control-Allow-Origin: *
   Content-Type: application/json; charset=utf-8
   Cache-Control: public, max-age=3600
+
 /manifest.json
   Access-Control-Allow-Origin: *
   Content-Type: application/json; charset=utf-8
   Cache-Control: public, max-age=3600
+
+/drafts
+  X-Robots-Tag: noindex, nofollow
+
 /drafts.html
   X-Robots-Tag: noindex, nofollow
 `;
