@@ -15,11 +15,6 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-arts-01
-    statement: 'Frank Lloyd Wright: Fallingwater'
-    source_title: A Global History of Architecture (Ching, Jarzombek, Prakash)
-    source_url: https://www.wiley.com/en-us/A+Global+History+of+Architecture%2C+3rd+Edition-p-9781118981337
-    confidence: high
   - id: fact-arts-001
     statement: >-
       Architecture history spans from megalithic structures (Stonehenge, ~3000 BCE) to contemporary skyscrapers. Major styles: Classical (Greek/Roman columns), Gothic (pointed arches, flying
@@ -33,7 +28,7 @@ atomic_facts:
     source_url: https://www.wiley.com/en-us/A+Global+History+of+Architecture%2C+3rd+Edition-p-9781118981337
     confidence: medium
   - id: fact-arts-003
-    statement: 'Sagrada Familia: Gaudi''s masterpiece, started 1882, still under construction.'
+    statement: 'Sagrada Familia: Gaudi''s Barcelona basilica, with construction beginning in 1882.'
     source_title: A Global History of Architecture (Ching, Jarzombek, Prakash)
     source_url: https://www.wiley.com/en-us/A+Global+History+of+Architecture%2C+3rd+Edition-p-9781118981337
     confidence: medium
@@ -41,64 +36,14 @@ completeness: 0.88
 known_gaps:
   - Statistics and data cited are from 2017 and earlier; more recent data may have become available since publication
   - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist
-      and expressionist accounts
+disputed_statements: []
 primary_sources:
   - title: A Global History of Architecture (Ching, Jarzombek, Prakash)
     type: book
     year: 2017
     url: https://www.wiley.com/en-us/A+Global+History+of+Architecture%2C+3rd+Edition-p-9781118981337
     institution: Wiley
-  - title: A Global History of Architecture (4th Edition, 2025)
-    type: book
-    year: 2025
-    authors:
-      - Ching F.D.K.
-      - Jarzombek M.
-      - Prakash V.
-    institution: Wiley
-    url: https://www.wiley.com/architecture-history/
-  - title: 'Modern Architecture: A Critical History (2025 Edition)'
-    type: book
-    year: 2025
-    authors:
-      - Frampton K.
-    institution: Thames & Hudson
-    url: https://thamesandhudson.com/modern-architecture/
-  - title: 'Modern Architecture: A Critical History (5th Edition, 2025)'
-    type: book
-    year: 2025
-    authors:
-      - Frampton K.
-    institution: Thames & Hudson
-    url: https://thamesandhudson.com/modern-architecture/
-  - title: A Global History of Architecture (3rd Edition)
-    authors:
-      - Ching, F.D.K.
-      - Jarzombek, M.
-      - Prakash, V.
-    type: book
-    year: 2017
-    institution: Wiley
-  - title: 'A History of Architecture: Settings and Rituals'
-    authors:
-      - Kostof, S.
-    type: book
-    year: 1995
-    institution: Oxford University Press
-secondary_sources:
-  - title: A Global History of Architecture
-    type: book
-    year: 2017
-    url: https://www.wiley.com/en-us/A+Global+History+of+Architecture%2C+3rd+Edition-p-9781118981337
-    institution: Francis D.K. Ching et al., Wiley
-  - title: The Story of Art (E.H. Gombrich)
-    type: textbook
-    year: 1995
-    url: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
-    institution: Phaidon Press
+secondary_sources: []
 ---
 
 ## TL;DR
@@ -107,7 +52,7 @@ Architecture history spans from megalithic structures (Stonehenge, ~3000 BCE) to
 
 ## Core Explanation
 
-Greek orders: Doric (simple), Ionic (scrolls), Corinthian (leaves). Gothic cathedrals: Chartres, Notre-Dame — structural innovations enabled soaring height and stained glass. Modernism: 'Less is more' (Mies van der Rohe). Frank Lloyd Wright: Fallingwater (organic architecture). Burj Khalifa: 828m (2010, tallest building). Sagrada Familia: Gaudi's masterpiece, started 1882, still under construction.
+Greek orders: Doric (simple), Ionic (scrolls), Corinthian (leaves). Gothic cathedrals: Chartres, Notre-Dame — structural innovations enabled soaring height and stained glass. Modernism: 'Less is more' (Mies van der Rohe). Frank Lloyd Wright: Fallingwater (organic architecture). Burj Khalifa: 828m (2010, tallest building). Sagrada Familia: Gaudi's Barcelona basilica, with construction beginning in 1882.
 
 ## Further Reading
 

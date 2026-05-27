@@ -15,11 +15,6 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-history-01
-    statement: The Protestant Reformation split Western Christianity
-    source_title: The Reformation (Diarmaid MacCulloch)
-    source_url: https://www.penguinrandomhouse.com/books/261409/the-reformation-by-diarmaid-macculloch/
-    confidence: high
   - id: fact-history-001
     statement: >-
       The Protestant Reformation (1517-1648) split Western Christianity. Martin Luther's 95 Theses (1517) challenged Catholic Church practices, especially indulgences. Printing press spread ideas
@@ -45,48 +40,14 @@ atomic_facts:
 completeness: 0.88
 known_gaps:
   - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+disputed_statements: []
 primary_sources:
   - title: The Reformation (Diarmaid MacCulloch)
     type: book
     year: 2003
     url: https://www.penguinrandomhouse.com/books/261409/the-reformation-by-diarmaid-macculloch/
     institution: Penguin
-  - title: 'The Reformation: A Very Short Introduction (2025)'
-    type: book
-    year: 2025
-    authors:
-      - Marshall P.
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-reformation/
-  - title: 'Reformation: Europe''s House Divided (2025)'
-    type: book
-    year: 2025
-    authors:
-      - MacCulloch D.
-    institution: Penguin
-    url: https://www.penguinrandomhouse.com/reformation/
-  - title: 'Reformation: Europe''s House Divided 1490-1700'
-    authors:
-      - MacCulloch, D.
-    type: book
-    year: 2003
-    institution: Allen Lane
-  - title: 'The Reformation: A History'
-    authors:
-      - Collinson, P.
-    type: book
-    year: 2003
-    institution: Modern Library
 secondary_sources:
-  - title: Encyclopaedia Britannica
-    type: reference
-    year: 2025
-    url: https://www.britannica.com/
-    institution: Encyclopaedia Britannica, Inc.
   - title: The Penguin History of the World
     type: book
     year: 1976

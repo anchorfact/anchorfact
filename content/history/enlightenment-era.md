@@ -18,7 +18,7 @@ atomic_facts:
   - id: fact-history-001
     statement: >-
       The Enlightenment (18th century, 'Age of Reason') championed reason, science, individual rights, and skepticism of authority. Key thinkers: Locke (natural rights), Montesquieu (separation of
-      powers), Voltaire (civil liberties, religious tolerance), Rousseau (social contract), Kant ('Sapere aude!' — dare to know). Fueled American and French Revoluti
+      powers), Voltaire (civil liberties, religious tolerance), Rousseau (social contract), and Kant. Enlightenment ideas influenced the American and French Revolutions.
     source_title: The Enlightenment (Dorinda Outram, 4th Ed)
     source_url: https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A
     confidence: medium
@@ -45,48 +45,14 @@ atomic_facts:
 completeness: 0.88
 known_gaps:
   - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+disputed_statements: []
 primary_sources:
   - title: The Enlightenment (Dorinda Outram, 4th Ed)
     type: book
     year: 2019
     url: https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A
     institution: Cambridge University Press
-  - title: 'The Enlightenment: A Very Short Introduction (2025)'
-    type: book
-    year: 2025
-    authors:
-      - Robertson J.
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-enlightenment/
-  - title: 'The Enlightenment: The Pursuit of Happiness (2025)'
-    type: book
-    year: 2025
-    authors:
-      - Robertson R.
-    institution: Harper
-    url: https://www.harpercollins.com/enlightenment/
-  - title: 'The Enlightenment: The Pursuit of Happiness 1680-1790'
-    authors:
-      - Robertson, R.
-    type: book
-    year: 2020
-    institution: Harper
-  - title: The Enlightenment (4th Edition)
-    authors:
-      - Outram, D.
-    type: book
-    year: 2019
-    institution: Cambridge University Press
 secondary_sources:
-  - title: Encyclopaedia Britannica
-    type: reference
-    year: 2025
-    url: https://www.britannica.com/
-    institution: Encyclopaedia Britannica, Inc.
   - title: The Penguin History of the World
     type: book
     year: 1976

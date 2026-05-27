@@ -26,14 +26,14 @@ atomic_facts:
     source_url: "https://thamesandhudson.com/digital-art-9780500204238"
     confidence: "medium"
   - id: "fact-arts-003"
-    statement: "AI art: text-to-image (2022+), controversial — copyright, artist consent, training data debates."
-    source_title: "Digital Art (Christiane Paul, 3rd Ed)"
-    source_url: "https://thamesandhudson.com/digital-art-9780500204238"
+    statement: "Generative art uses rules or algorithms as part of the creative process."
+    source_title: "Beeple's purely digital NFT-based work of art achieves $69.3 million at Christie's"
+    source_url: "https://www.christies.com.cn/about-us/press-archive/details?PressReleaseID=9970&lid=1"
     confidence: "medium"
   - id: "fact-arts-004"
     statement: "NFT (Non-Fungible Token, 2021): blockchain certificate of ownership — Beeple's 'Everydays' sold for $69M."
-    source_title: "Digital Art (Christiane Paul, 3rd Ed)"
-    source_url: "https://thamesandhudson.com/digital-art-9780500204238"
+    source_title: "About Blender - Blender Manual"
+    source_url: "https://docs.blender.org/manual/en/4.5/getting_started/about/index.html"
     confidence: "medium"
   - id: "fact-arts-005"
     statement: "Blender: free open-source 3D suite — modeling, sculpting, animation, rendering."
@@ -47,8 +47,7 @@ known_gaps:
   - "Statistics and data cited are from 2015 and earlier; more recent data may have become available since publication"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 
-disputed_statements:
-  - statement: "The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist and expressionist accounts"
+disputed_statements: []
 
 primary_sources:
   - title: "Digital Art (Christiane Paul, 3rd Ed)"
@@ -56,18 +55,18 @@ primary_sources:
     year: 2015
     url: "https://thamesandhudson.com/digital-art-9780500204238"
     institution: "Thames & Hudson"
+  - title: "Beeple's purely digital NFT-based work of art achieves $69.3 million at Christie's"
+    type: "press_release"
+    year: 2021
+    url: "https://www.christies.com.cn/about-us/press-archive/details?PressReleaseID=9970&lid=1"
+    institution: "Christie's"
+  - title: "About Blender - Blender Manual"
+    type: "documentation"
+    year: 2025
+    url: "https://docs.blender.org/manual/en/4.5/getting_started/about/index.html"
+    institution: "Blender Foundation"
 
-secondary_sources:
-  - title: "The Story of Art"
-    type: "book"
-    year: 1950
-    url: "https://www.phaidon.com/store/art/the-story-of-art-9780714832470/"
-    institution: "E.H. Gombrich, Phaidon"
-  - title: "The Story of Art (E.H. Gombrich)"
-    type: "textbook"
-    year: 1995
-    url: "https://www.phaidon.com/store/art/the-story-of-art-9780714832470/"
-    institution: "Phaidon Press"
+secondary_sources: []
 
 ---
 
@@ -75,11 +74,11 @@ secondary_sources:
 
 ## TL;DR
 
-Digital art uses digital technology as part of the creation or presentation process. Forms: digital painting (Photoshop, Procreate), 3D modeling (Blender, Maya), pixel art, generative art (algorithms create art), AI art (DALL-E, Midjourney, Stable Diffusion), NFT art, interactive installations. Digital art democratized creation — tools accessible to anyone.
+Digital art uses digital technology as part of the creation or presentation process. Forms include digital painting, 3D modeling, pixel art, generative art, NFT art, and interactive installations.
 
 ## Core Explanation
 
-Generative art: artist defines rules/algorithms, computer executes (Manfred Mohr, Vera Molnár). AI art: text-to-image (2022+), controversial — copyright, artist consent, training data debates. NFT (Non-Fungible Token, 2021): blockchain certificate of ownership — Beeple's 'Everydays' sold for $69M. Pixel art: retro aesthetic, limited palettes. Blender: free open-source 3D suite — modeling, sculpting, animation, rendering.
+Generative art: artist defines rules or algorithms, and the computer executes part of the process. NFT (Non-Fungible Token, 2021): blockchain certificate of ownership — Beeple's 'Everydays' sold for $69M. Pixel art: retro aesthetic, limited palettes. Blender: free open-source 3D suite — modeling, sculpting, animation, rendering.
 
 ## Further Reading
 

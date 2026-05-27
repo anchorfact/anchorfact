@@ -15,11 +15,6 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-history-01
-    statement: Ancient Egypt was one of the world's earliest and longest-lasting civilizations along the Nile River
-    source_title: The Oxford History of Ancient Egypt (Ian Shaw)
-    source_url: https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587
-    confidence: high
   - id: fact-history-001
     statement: >-
       Ancient Egypt (~3100 BCE - 30 BCE) was one of the world's earliest and longest-lasting civilizations along the Nile River. Known for: pyramids (Giza, ~2500 BCE), hieroglyphic writing,
@@ -46,62 +41,14 @@ completeness: 0.88
 known_gaps:
   - Statistics and data cited are from 2000 and earlier; more recent data may have become available since publication
   - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+disputed_statements: []
 primary_sources:
   - title: The Oxford History of Ancient Egypt (Ian Shaw)
     type: book
     year: 2000
     url: https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587
     institution: Oxford University Press
-  - title: The Rise and Fall of Ancient Egypt (2025 Paperback)
-    type: book
-    year: 2025
-    authors:
-      - Wilkinson T.
-    institution: Random House
-    url: https://www.penguinrandomhouse.com/ancient-egypt/
-  - title: The Oxford History of Ancient Egypt (2025 Updated)
-    type: book
-    year: 2025
-    authors:
-      - Shaw I.
-    institution: Oxford University Press
-    url: https://global.oup.com/ancient-egypt/
-  - title: The Rise and Fall of Ancient Egypt (2025)
-    type: book
-    year: 2025
-    authors:
-      - Wilkinson T.
-    institution: Random House
-    url: https://www.penguinrandomhouse.com/ancient-egypt/
-  - title: The Oxford History of Ancient Egypt (2025)
-    type: book
-    year: 2025
-    authors:
-      - Shaw I.
-    institution: Oxford University Press
-    url: https://global.oup.com/ancient-egypt/
-  - title: The Oxford History of Ancient Egypt
-    authors:
-      - Shaw, I.
-    type: book
-    year: 2003
-    institution: Oxford University Press
-  - title: The Rise and Fall of Ancient Egypt
-    authors:
-      - Wilkinson, T.
-    type: book
-    year: 2010
-    institution: Random House
 secondary_sources:
-  - title: The Oxford History of Ancient Egypt
-    type: book
-    year: 2000
-    url: https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587
-    institution: Ian Shaw, Oxford University Press
   - title: The Penguin History of the World (J.M. Roberts)
     type: textbook
     year: 2014

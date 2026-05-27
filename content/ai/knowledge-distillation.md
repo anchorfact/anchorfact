@@ -1,15 +1,9 @@
 ---
 atomic_facts:
   - confidence: high
-    id: fact-ai-01
-    source_doi: 10.48550/arXiv.1503.02531
-    source_title: Distilling the Knowledge in a Neural Network
-    source_url: https://arxiv.org/abs/1503.02531
-    statement: Knowledge distillation transfers knowledge from a large teacher model to a smaller student model
-  - confidence: high
     id: fact-ai-001
     source_doi: 10.48550/arXiv.1503.02531
-    source_title: Distilling the Knowledge in a Neural Network
+    source_title: Distilling the Knowledge in a Neural Network (Hinton, Vinyals, Dean)
     source_url: https://arxiv.org/abs/1503.02531
     statement: >-
       Knowledge distillation transfers knowledge from a large teacher model to a smaller student model. The student learns to mimic the teacher's softened output probabilities (not just hard labels).
@@ -17,15 +11,14 @@ atomic_facts:
   - confidence: high
     id: fact-ai-002
     source_doi: 10.48550/arXiv.1503.02531
-    source_title: Distilling the Knowledge in a Neural Network
+    source_title: Distilling the Knowledge in a Neural Network (Hinton, Vinyals, Dean)
     source_url: https://arxiv.org/abs/1503.02531
     statement: Loss = α * (KL divergence between student and teacher distributions) + (1-α) * (cross-entropy with ground truth).
   - confidence: high
     id: fact-ai-003
-    source_doi: 10.48550/arXiv.1503.02531
-    source_title: Distilling the Knowledge in a Neural Network
-    source_url: https://arxiv.org/abs/1503.02531
-    statement: 'Applications: DistilBERT (6 layers instead of 12, 97% of BERT''s performance), TinyBERT, MobileNet.'
+    source_title: 'DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter'
+    source_url: https://arxiv.org/abs/1910.01108
+    statement: 'DistilBERT reports retaining 97% of BERT language-understanding performance while being smaller and faster.'
 category: ai
 completeness: 0.88
 confidence: high
@@ -33,8 +26,7 @@ conflict_of_interest: none_declared
 created_date: '2026-05-22'
 data_period: static
 derived_from_human_seed: true
-disputed_statements:
-  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
+disputed_statements: []
 generation_method: ai_structured
 id: kb-2026-00286
 is_live_document: false
@@ -66,6 +58,16 @@ primary_sources:
     url: https://doi.org/10.1007/s11263-021-01453-z
     year: 2021
   - authors:
+      - Sanh, Victor
+      - Debut, Lysandre
+      - Chaumond, Julien
+      - Wolf, Thomas
+    institution: Hugging Face / arXiv
+    title: 'DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter'
+    type: academic_paper
+    url: https://arxiv.org/abs/1910.01108
+    year: 2019
+  - authors:
       - Jiao, Xiaoqi
       - Yin, Yichun
       - Shang, Lifeng
@@ -75,38 +77,8 @@ primary_sources:
     type: conference_paper
     url: https://arxiv.org/abs/1909.10351
     year: 2020
-  - title: 'DREAM: Efficient Dataset Distillation by Representative Matching'
-    authors:
-      - Yanqing Liu
-      - Jianyang Gu
-      - Kai Wang
-      - Zheng Zhu
-      - Wei Jiang
-      - Yang You
-    year: 2023
-    url: https://arxiv.org/abs/2302.14416v3
-    type: academic_paper
-    institution: arXiv
-  - title: Differentiable Feature Aggregation Search for Knowledge Distillation
-    authors:
-      - Yushuo Guan
-      - Pengyu Zhao
-      - Bingxuan Wang
-      - Yuanxing Zhang
-      - Cong Yao
-      - Kaigui Bian
-      - Jian Tang
-    year: 2020
-    url: https://arxiv.org/abs/2008.00506v1
-    type: academic_paper
-    institution: arXiv
 schema_type: TechArticle
-secondary_sources:
-  - institution: MIT Press
-    title: Deep Learning (Goodfellow, Bengio, Courville)
-    type: book
-    url: https://www.deeplearningbook.org/
-    year: 2016
+secondary_sources: []
 title: Knowledge Distillation
 updated: '2026-05-24'
 ---

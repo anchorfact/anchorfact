@@ -15,11 +15,6 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-history-01
-    statement: "Mona Lisa : sfumato technique, ambiguous smile — most famous painting in history"
-    source_title: Leonardo da Vinci (Walter Isaacson)
-    source_url: https://www.simonandschuster.com/books/Leonardo-da-Vinci/Walter-Isaacson/9781501139161
-    confidence: high
   - id: fact-history-001
     statement: >-
       Leonardo da Vinci (1452-1519) was the quintessential Renaissance Man — painter (Mona Lisa, The Last Supper), anatomist (dissected 30+ corpses), engineer (flying machines, war engines), scientist
@@ -28,9 +23,9 @@ atomic_facts:
     source_url: https://www.simonandschuster.com/books/Leonardo-da-Vinci/Walter-Isaacson/9781501139161
     confidence: medium
   - id: fact-history-002
-    statement: "Mona Lisa (1503-19): sfumato technique, ambiguous smile — most famous painting in history."
-    source_title: The Penguin History of the World
-    source_url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
+    statement: "Mona Lisa (1503-19) is one of Leonardo's best-known paintings and is associated with sfumato technique and an ambiguous smile."
+    source_title: Leonardo da Vinci (Walter Isaacson)
+    source_url: https://www.simonandschuster.com/books/Leonardo-da-Vinci/Walter-Isaacson/9781501139161
     confidence: medium
   - id: fact-history-003
     statement: "Last Supper (1498): innovative composition, deteriorating due to experimental technique."
@@ -45,36 +40,14 @@ atomic_facts:
 completeness: 0.88
 known_gaps:
   - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+disputed_statements: []
 primary_sources:
   - title: Leonardo da Vinci (Walter Isaacson)
     type: book
     year: 2017
     url: https://www.simonandschuster.com/books/Leonardo-da-Vinci/Walter-Isaacson/9781501139161
     institution: Simon & Schuster
-  - title: Leonardo da Vinci (2025 Edition)
-    type: book
-    year: 2025
-    authors:
-      - Isaacson W.
-    institution: Simon & Schuster
-    url: https://www.simonandschuster.com/leonardo/
-  - title: "Leonardo: A Very Short Introduction (2025)"
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-leonardo/
 secondary_sources:
-  - title: Encyclopaedia Britannica
-    type: reference
-    year: 2025
-    url: https://www.britannica.com/
-    institution: Encyclopaedia Britannica, Inc.
   - title: The Penguin History of the World
     type: book
     year: 1976
