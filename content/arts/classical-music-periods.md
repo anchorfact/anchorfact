@@ -15,100 +15,45 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-arts-01
-    statement: 'Western classical music spans 500 years: Medieval , Renaissance , Baroque , Classical , Romantic , Modern/Contemporary'
-    source_title: The Classical Style (Charles Rosen)
-    source_url: https://wwnorton.com/books/9780393317121
-    confidence: high
   - id: fact-arts-001
     statement: >-
       Western classical music spans ~500 years: Medieval (500-1400, Gregorian chant), Renaissance (1400-1600, polyphony), Baroque (1600-1750, Bach, Vivaldi), Classical (1750-1820, Mozart, Beethoven),
       Romantic (1820-1900, Chopin, Tchaikovsky), Modern/Contemporary (1900+). Each period has distinct stylistic characteristics.
     source_title: The Classical Style (Charles Rosen)
     source_url: https://wwnorton.com/books/9780393317121
-    confidence: medium
+    confidence: low
   - id: fact-arts-002
     statement: 'Baroque: ornamentation, harpsichord, fugue (Bach), Four Seasons (Vivaldi).'
     source_title: The Classical Style (Charles Rosen)
     source_url: https://wwnorton.com/books/9780393317121
-    confidence: medium
+    confidence: low
   - id: fact-arts-003
-    statement: 'Classical: clarity, symmetry, sonata form — Haydn (father of symphony), Mozart (prodigy, 600+ works), Beethoven (bridged to Romantic).'
+    statement: 'Classical: clarity, symmetry, sonata form; Haydn, Mozart, and Beethoven are central figures in the period.'
     source_title: The Classical Style (Charles Rosen)
     source_url: https://wwnorton.com/books/9780393317121
-    confidence: medium
+    confidence: low
   - id: fact-arts-004
     statement: '20th century: Stravinsky (Rite of Spring caused riot 1913), Schoenberg (12-tone), minimalism (Glass, Reich).'
     source_title: 'The Rest Is Noise: Listening to the Twentieth Century'
     source_url: https://us.macmillan.com/books/9780312427719/therestisnoise
-    confidence: medium
+    confidence: low
 completeness: 0.88
 known_gaps:
   - Statistics and data cited are from 2007 and earlier; more recent data may have become available since publication
   - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist
-      and expressionist accounts
+disputed_statements: []
 primary_sources:
   - title: The Classical Style (Charles Rosen)
     type: book
     year: 1971
     url: https://wwnorton.com/books/9780393317121
     institution: W.W. Norton
-  - title: 'The Classical Music Book: Big Ideas Simply Explained (2025)'
-    type: book
-    year: 2025
-    authors:
-      - DK
-    institution: DK Publishing
-    url: https://www.dk.com/classical-music/
-  - title: 'The Rest Is Noise: Listening to the Twentieth Century (2025)'
-    type: book
-    year: 2025
-    authors:
-      - Ross A.
-    institution: Picador
-    url: https://us.macmillan.com/rest-is-noise/
-  - title: The Classical Music Book (2025 Edition)
-    type: book
-    year: 2025
-    authors:
-      - DK
-    institution: DK Publishing
-    url: https://www.dk.com/classical-music/
-  - title: 'The Rest Is Noise: Listening to the Twentieth Century (2025 Updated)'
-    type: book
-    year: 2025
-    authors:
-      - Ross A.
-    institution: Picador
-    url: https://us.macmillan.com/rest-is-noise/
-  - title: The Oxford History of Western Music
-    authors:
-      - Taruskin, R.
-    type: book
-    year: 2005
-    institution: Oxford University Press
-  - title: A History of Western Music (10th Edition)
-    authors:
-      - Burkholder, J.P.
-      - Grout, D.J.
-      - Palisca, C.V.
-    type: book
-    year: 2019
-    institution: W.W. Norton
-secondary_sources:
   - title: 'The Rest Is Noise: Listening to the Twentieth Century'
     type: book
     year: 2007
     url: https://us.macmillan.com/books/9780312427719/therestisnoise
     institution: Alex Ross, Farrar, Straus and Giroux
-  - title: The Story of Art (E.H. Gombrich)
-    type: textbook
-    year: 1995
-    url: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
-    institution: Phaidon Press
+secondary_sources: []
 ---
 
 ## TL;DR
@@ -117,7 +62,7 @@ Western classical music spans ~500 years: Medieval (500-1400, Gregorian chant), 
 
 ## Core Explanation
 
-Baroque: ornamentation, harpsichord, fugue (Bach), Four Seasons (Vivaldi). Classical: clarity, symmetry, sonata form — Haydn (father of symphony), Mozart (prodigy, 600+ works), Beethoven (bridged to Romantic). Romantic: emotion, nationalism, program music — Chopin (piano), Wagner (opera, leitmotif), Mahler. 20th century: Stravinsky (Rite of Spring caused riot 1913), Schoenberg (12-tone), minimalism (Glass, Reich).
+Baroque: ornamentation, harpsichord, fugue (Bach), Four Seasons (Vivaldi). Classical: clarity, symmetry, sonata form; Haydn, Mozart, and Beethoven are central figures in the period. Romantic music emphasizes emotion, nationalism, and program music through composers such as Chopin, Wagner, and Mahler. 20th century examples include Stravinsky, Schoenberg, Glass, and Reich.
 
 ## Further Reading
 

@@ -18,6 +18,7 @@ atomic_facts:
       generation as the primary paradigm for general-purpose AI
     source_title: Language Models are Unsupervised Multitask Learners (GPT-2)
     source_url: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+    confidence: medium
   - id: fact-ai-001
     statement: Each layer applies **masked (causal) self-attention**, where position i can only attend to positions 1 through i — future tokens are explicitly masked.
     source_title: Improving Language Understanding by Generative Pre-Training (GPT-1)
@@ -29,21 +30,21 @@ atomic_facts:
     source_url: https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
     confidence: high
   - id: fact-ai-003
-    statement: 'The training paradigm evolved through three stages: 1.'
+    statement: GPT-1 used unsupervised pre-training followed by supervised fine-tuning on downstream tasks.
     source_title: Improving Language Understanding by Generative Pre-Training (GPT-1)
     source_url: https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
-    confidence: high
+    confidence: medium
   - id: fact-ai-004
-    statement: '**Pre-train then fine-tune** (GPT-1): Pre-train on unlabeled text, fine-tune on labeled downstream tasks 2.'
-    source_title: Improving Language Understanding by Generative Pre-Training (GPT-1)
-    source_url: https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
-    confidence: high
+    statement: GPT-2 showed that a sufficiently large language model could perform some tasks in a zero-shot setting without task-specific fine-tuning.
+    source_title: Language Models are Unsupervised Multitask Learners (GPT-2)
+    source_url: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+    confidence: medium
   - id: fact-ai-005
-    statement: '**Zero-shot transfer** (GPT-2): Pre-train on a large enough corpus, and the model acquires task-solving capability without any fine-tuning 3.'
+    statement: GPT-3 demonstrated few-shot in-context learning, where examples are provided in the prompt without updating model weights.
     source_title: Language Models are Few-Shot Learners (GPT-3)
     source_url: https://arxiv.org/abs/2005.14165
     source_doi: 10.48550/arXiv.2005.14165
-    confidence: high
+    confidence: medium
 completeness: 0.9
 known_gaps:
   - >-
@@ -51,8 +52,7 @@ known_gaps:
     documentation
   - GPT-5 and GPT-5.2 specifications are based on public announcements and press coverage; technical details are not published
   - Training cost estimates are ballpark figures from external analysis, not official OpenAI disclosure
-disputed_statements:
-  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
+disputed_statements: []
 primary_sources:
   - title: Improving Language Understanding by Generative Pre-Training (GPT-1)
     authors:
@@ -115,18 +115,12 @@ primary_sources:
     doi: 10.48550/arXiv.2005.14165
     institution: arXiv / Cornell University
   - title: GPT-4 Technical Report
-  - title: Towards a Transformer-Based Pre-trained Model for IoT Traffic Classification
     authors:
-      - Bruna Bazaluk
-      - Mosab Hamdan
-      - Mustafa Ghaleb
-      - Mohammed S. M. Gismalla
-      - Flavio S. Correa da Silva
-      - Daniel Macêdo Batista
-    year: 2024
-    url: https://arxiv.org/abs/2407.19051v1
+      - OpenAI
+    year: 2023
+    url: https://arxiv.org/abs/2303.08774
     type: academic_paper
-    institution: arXiv
+    institution: OpenAI / arXiv
 secondary_sources:
   - title: Training language models to follow instructions with human feedback (InstructGPT)
     authors:

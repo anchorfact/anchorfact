@@ -15,103 +15,38 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-business-01
-    statement: Supply Chain Management coordinates the flow of goods from raw materials to end customer
-    source_title: Harvard Business Review
-    source_url: https://hbr.org/
-    confidence: medium
   - id: fact-business-001
     statement: >-
-      Supply Chain Management (SCM) coordinates the flow of goods from raw materials to end customer. Key activities: procurement, manufacturing, warehousing, transportation, demand forecasting.
-      Modern SCM is data-driven with real-time visibility and AI optimization.
-    source_title: Harvard Business Review
-    source_url: https://hbr.org/
-    confidence: medium
+      Supply chain management includes demand planning, sourcing and procurement, manufacturing or production, inventory management, warehousing, logistics, and delivery to the end customer.
+    source_title: "Supply Chain Management (SCM): Definition, processes and more"
+    source_url: https://www.ascm.org/topics/supply-chain-management/
+    confidence: low
   - id: fact-business-002
-    statement: 'Bullwhip effect: small demand fluctuations amplify upstream, causing inventory inefficiencies.'
-    source_title: Harvard Business Review
-    source_url: https://hbr.org/
-    confidence: medium
+    statement: Supply chain management covers the design, planning, execution, control, and monitoring of activities that synchronize supply with demand.
+    source_title: "Supply Chain Management (SCM): Definition, processes and more"
+    source_url: https://www.ascm.org/topics/supply-chain-management/
+    confidence: low
   - id: fact-business-003
-    statement: Just-in-Time (JIT) minimizes inventory but increases risk.
-    source_title: Harvard Business Review
-    source_url: https://hbr.org/
-    confidence: medium
-  - id: fact-business-004
-    statement: 'Safety stock: extra inventory to buffer demand variability.'
-    source_title: Harvard Business Review
-    source_url: https://hbr.org/
-    confidence: medium
-  - id: fact-business-005
-    statement: 'KPIs: inventory turnover, order fulfillment rate, lead time, perfect order rate.'
-    source_title: Harvard Business Review
-    source_url: https://hbr.org/
-    confidence: medium
+    statement: Supply chain planning is increasingly data-driven as organizations adopt AI, machine learning, advanced analytics, and automation for forecasting and operational decisions.
+    source_title: What is Supply Chain Planning?
+    source_url: https://www.ibm.com/think/topics/supply-chain-planning
+    confidence: low
 completeness: 0.88
 known_gaps:
   - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
-disputed_statements:
-  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
+disputed_statements: []
 primary_sources:
-  - title: Harvard Business Review
-    type: journal
+  - title: "Supply Chain Management (SCM): Definition, processes and more"
+    type: industry_reference
     year: 2026
-    url: https://hbr.org/
-    institution: Harvard Business Publishing
-  - title: 'Supply Chain Management: Strategy, Planning, and Operation (8th Edition, 2025)'
-    type: book
-    year: 2025
-    authors:
-      - Chopra S.
-      - Meindl P.
-    institution: Pearson
-    url: https://www.pearson.com/supply-chain/
-  - title: 'Supply Chain 4.0: From Theory to Digital Practice (2025)'
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Springer
-    url: https://doi.org/10.1007/supplychain.2025
-  - title: Supply Chain Management (8th Edition, 2025)
-    type: book
-    year: 2025
-    authors:
-      - Chopra S.
-      - Meindl P.
-    institution: Pearson
-    url: https://www.pearson.com/supply-chain/
-  - title: Supply Chain 4.0 (2025)
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Springer
-    url: https://doi.org/10.1007/supplychain.2025
-  - title: 'Supply Chain Management: Strategy, Planning, and Operation (7th Edition)'
-    authors:
-      - Chopra, S.
-    type: book
-    year: 2019
-    institution: Pearson
-  - title: Operations and Supply Chain Management (17th Edition)
-    authors:
-      - Jacobs, F.R.
-      - Chase, R.B.
-    type: book
-    year: 2023
-    institution: McGraw-Hill
-secondary_sources:
-  - title: Harvard Business Review
-    type: journal
+    url: https://www.ascm.org/topics/supply-chain-management/
+    institution: Association for Supply Chain Management
+  - title: What is Supply Chain Planning?
+    type: industry_reference
     year: 2026
-    url: https://hbr.org/
-    institution: Harvard Business Publishing
-  - title: 'The Goal: A Process of Ongoing Improvement'
-    type: book
-    year: 1984
-    url: https://www.northriverpress.com/the-goal/
-    institution: Eliyahu M. Goldratt, North River Press
+    url: https://www.ibm.com/think/topics/supply-chain-planning
+    institution: IBM
+secondary_sources: []
 ---
 
 ## TL;DR

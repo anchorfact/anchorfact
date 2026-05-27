@@ -25,16 +25,9 @@ atomic_facts:
     confidence: high
   - id: f2
     statement: FAO reports that AI can optimize food supply chains through predictive analytics, reducing post-harvest losses by 20-30% and improving food security for vulnerable populations.
-    source_title: FAO. Artificial Intelligence for Food and Agriculture — Innovation to Transform Food Systems. 2024
+    source_title: "FAO Report: Artificial Intelligence for Food and Agriculture - Innovation to Transform Food Systems"
     source_url: https://www.fao.org/technology/en/
     confidence: high
-  - id: f3
-    statement: >-
-      NotCo (Chilean food-tech unicorn, $1.5B valuation) uses the "Giuseppe" AI platform to discover plant-based alternatives to animal products by analyzing molecular structures of foods and matching
-      them with plant ingredients.
-    source_title: "NotCo. Giuseppe AI Platform: Molecular-Level Food Discovery. 2023-2024"
-    source_url: https://notco.com/
-    confidence: medium
 primary_sources:
   - id: ps-ai-for-food-science-1
     title: "AI for food: accelerating and democratizing discovery and development"
@@ -76,7 +69,7 @@ secondary_sources:
       - multiple
     institution: Comprehensive Reviews in Food Science & Food Safety (Wiley)
     url: https://doi.org/10.1111/1541-4337.13345
-  - title: "FAO Report: Artificial Intelligence for Food and Agriculture — Innovation to Transform Food Systems"
+  - title: "FAO Report: Artificial Intelligence for Food and Agriculture - Innovation to Transform Food Systems"
     type: report
     year: 2024
     authors:

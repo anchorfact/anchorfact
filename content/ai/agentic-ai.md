@@ -53,20 +53,30 @@ known_gaps:
   - Safety guarantees and controlled autonomy boundaries
 disputed_statements: []
 secondary_sources:
-  - title: "The Rise of AI Agents: A Comprehensive Survey of Agentic AI Systems and Architectures"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/3756789
-  - title: "AutoGPT, BabyAGI, and the Emergence of Autonomous AI Agents: A Systematic Review"
+  - title: "Wang, Lei, et al. A Survey on LLM-Based Autonomous Agents. arXiv 2024"
     type: survey_paper
     year: 2024
     authors:
-      - multiple
-    institution: arXiv / JAIR
-    url: https://arxiv.org/abs/2405.12345
+      - Wang, Lei
+      - et al.
+    institution: arXiv
+    url: https://arxiv.org/abs/2308.08435
+  - title: "Wei, Jason, et al. Chain-of-Thought Prompting Elicits Reasoning in Large Language Models. NeurIPS 2022"
+    type: conference_paper
+    year: 2022
+    authors:
+      - Wei, Jason
+      - et al.
+    institution: Google / NeurIPS
+    url: https://arxiv.org/abs/2201.11903
+  - title: "Yao, Shunyu, et al. Tree of Thoughts: Deliberate Problem Solving with Large Language Models. NeurIPS 2023"
+    type: conference_paper
+    year: 2023
+    authors:
+      - Yao, Shunyu
+      - et al.
+    institution: Princeton / DeepMind / NeurIPS
+    url: https://arxiv.org/abs/2305.10601
   - title: "ReAct: Synergizing Reasoning and Acting in Language Models"
     type: conference_paper
     year: 2023

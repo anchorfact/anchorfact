@@ -19,7 +19,7 @@ atomic_facts:
     statement: India-Eurasia collision created the Himalayas
     source_title: 'Plate Tectonics: An Insider''s History (Naomi Oreskes)'
     source_url: https://www.hachettebookgroup.com/titles/naomi-oreskes/plate-tectonics/9780813341323/
-    confidence: high
+    confidence: medium
   - id: fact-science-001
     statement: >-
       Plate tectonics (theory accepted 1960s) explains Earth's surface dynamics: the lithosphere is broken into tectonic plates that move on the semi-fluid asthenosphere. Boundaries: divergent (pull
@@ -50,37 +50,13 @@ atomic_facts:
 completeness: 0.88
 known_gaps:
   - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+disputed_statements: []
 primary_sources:
   - title: 'Plate Tectonics: An Insider''s History (Naomi Oreskes)'
     type: book
     year: 2001
     url: https://www.hachettebookgroup.com/titles/naomi-oreskes/plate-tectonics/9780813341323/
     institution: Westview Press
-  - title: 'Plate Tectonics: A Comprehensive Introduction (2025)'
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Cambridge University Press
-    url: https://doi.org/10.1017/cbo.2025.plate
-  - title: 'Plate Tectonics at 60: New Frontiers (2025 Review)'
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: Nature Reviews Earth & Environment
-    url: https://doi.org/10.1038/s43017-2025-plate
-  - title: 'The Solid Earth: An Introduction to Global Geophysics (2025)'
-    type: book
-    year: 2025
-    authors:
-      - Fowler C.M.R.
-    institution: Cambridge University Press
-    url: https://doi.org/10.1017/cbo.2025.geophysics
   - title: 'Plate Tectonics: Continental Drift and Mountain Building'
     authors:
       - Frisch, W.
@@ -90,25 +66,7 @@ primary_sources:
     year: 2022
     doi: 10.1007/978-3-030-88999-9
     institution: Springer
-  - title: Global Tectonics (3rd Edition)
-    authors:
-      - Kearey, P.
-      - Klepeis, K.A.
-      - Vine, F.J.
-    type: book
-    year: 2009
-    institution: Wiley-Blackwell
-secondary_sources:
-  - title: A Brief History of Time
-    type: book
-    year: 1988
-    url: https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/
-    institution: Stephen Hawking, Bantam
-  - title: Nature (journal)
-    type: journal
-    year: 2025
-    url: https://www.nature.com/
-    institution: Springer Nature
+secondary_sources: []
 ---
 
 ## TL;DR

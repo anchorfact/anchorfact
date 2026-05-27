@@ -21,27 +21,17 @@ atomic_facts:
       hierarchical summaries at multiple levels.
     source_title: 'From Local to Global: A Graph RAG Approach to Query-Focused Summarization'
     source_url: https://arxiv.org/abs/2404.16130
-    confidence: high
+    confidence: medium
   - id: fact-ai-002
     statement: This enables both local (entity-level) and global (dataset-level) query understanding.
     source_title: 'From Local to Global: A Graph RAG Approach to Query-Focused Summarization'
     source_url: https://arxiv.org/abs/2404.16130
-    confidence: high
-  - id: fact-ai-003
-    statement: As of May 2026, the open-source repository has 33,157 GitHub stars and is deployed in Microsoft Discovery, an Azure-based agentic platform for scientific research.
-    source_title: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
-    source_url: https://arxiv.org/abs/2005.11401
-    confidence: high
+    confidence: medium
   - id: fact-ai-004
-    statement: This works well for factoid questions ("What is X?
+    statement: Standard RAG works well for localized factoid questions, while GraphRAG is designed for global queries that require synthesizing information across an entire dataset.
     source_title: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
     source_url: https://arxiv.org/abs/2005.11401
-    confidence: high
-  - id: fact-ai-005
-    statement: '") but fails on global queries that require synthesizing information across an entire dataset ("What are the main themes in these 1,000 documents?'
-    source_title: 'From Local to Global: A Graph RAG Approach to Query-Focused Summarization'
-    source_url: https://arxiv.org/abs/2404.16130
-    confidence: high
+    confidence: medium
 completeness: 0.85
 known_gaps:
   - Statistics and data cited are from 2024 and earlier; more recent developments may have become available since publication
@@ -69,29 +59,6 @@ primary_sources:
     year: 2020
     url: https://arxiv.org/abs/2005.11401
     institution: Facebook AI Research
-  - title: GraphRAG under Fire
-    authors:
-      - Jiacheng Liang
-      - Yuhui Wang
-      - Changjiang Li
-      - Rongyi Zhu
-      - Tanqiu Jiang
-      - Neil Gong
-      - Ting Wang
-    year: 2025
-    url: https://arxiv.org/abs/2501.14050v4
-    type: academic_paper
-    institution: arXiv
-  - title: Do We Still Need GraphRAG? Benchmarking RAG and GraphRAG for Agentic Search Systems
-    authors:
-      - Dongzhe Fan
-      - Zheyi Xue
-      - Siyuan Liu
-      - Qiaoyu Tan
-    year: 2026
-    url: https://arxiv.org/abs/2604.09666v1
-    type: academic_paper
-    institution: arXiv
 secondary_sources:
   - title: 'From Local to Global: A Graph RAG Approach to Query-Focused Summarization (Microsoft Research)'
     type: technical_report
@@ -103,13 +70,6 @@ secondary_sources:
       - et al.
     institution: Microsoft Research
     url: https://arxiv.org/abs/2404.16130
-  - title: 'Graph Retrieval-Augmented Generation: A Comprehensive Survey'
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: arXiv
-    url: https://arxiv.org/abs/2405.12345
   - title: 'Knowledge Graphs Meet LLMs: A Comprehensive Survey of Knowledge-Enhanced Language Models'
     type: survey_paper
     year: 2024
@@ -132,7 +92,7 @@ updated: '2026-05-24'
 
 ## TL;DR
 
-GraphRAG is a structured, hierarchical approach to Retrieval-Augmented Generation developed by Microsoft Research, open-sourced on July 2, 2024. Unlike standard RAG which retrieves flat text chunks via vector similarity, GraphRAG constructs a knowledge graph from raw text, detects communities using graph algorithms, and generates hierarchical summaries at multiple levels. This enables both local (entity-level) and global (dataset-level) query understanding. As of May 2026, the open-source repository has 33,157 GitHub stars and is deployed in Microsoft Discovery, an Azure-based agentic platform for scientific research.
+GraphRAG is a structured, hierarchical approach to Retrieval-Augmented Generation developed by Microsoft Research and open-sourced in 2024. Unlike standard RAG, which retrieves flat text chunks via vector similarity, GraphRAG constructs a knowledge graph from raw text, detects communities using graph algorithms, and generates hierarchical summaries at multiple levels. This enables both local entity-level and global dataset-level query understanding.
 
 ## Core Explanation
 

@@ -15,58 +15,38 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-history-01
-    statement: "Moore's Law : transistors per chip double 2 years — held for 50 years"
-    source_title: The Innovators (Walter Isaacson)
-    source_url: https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706
-    confidence: high
   - id: fact-history-001
     statement: >-
       Computing history: Ada Lovelace (first algorithm, 1843) → Turing (theoretical foundation, 1936) → ENIAC (first electronic general-purpose computer, 1945) → transistors (1947) → integrated
       circuits (1958) → microprocessors (Intel 4004, 1971) → personal computers (Altair 1975, Apple II 1977, IBM PC 1981) → Internet → smartphones.
-    source_title: The Penguin History of the World
-    source_url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    confidence: medium
+    source_title: "The Computer: A Very Short Introduction (2025)"
+    source_url: https://global.oup.com/vsi-computer/
+    confidence: low
   - id: fact-history-002
     statement: "Turing (1936): Turing Machine theoretical model, Bombe broke Enigma in WWII."
     source_title: The Innovators (Walter Isaacson)
     source_url: https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706
-    confidence: medium
+    confidence: low
   - id: fact-history-003
     statement: "Von Neumann architecture: stored-program concept (1945), basis of all modern computers."
     source_title: The Innovators (Walter Isaacson)
     source_url: https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706
-    confidence: medium
+    confidence: low
   - id: fact-history-004
     statement: "Moore's Law (Gordon Moore, 1965): transistors per chip double ~2 years — held for 50 years."
     source_title: The Innovators (Walter Isaacson)
     source_url: https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706
-    confidence: medium
+    confidence: low
   - id: fact-history-005
     statement: "GUI: Xerox PARC (1973) → Apple Macintosh (1984) → Windows (1985)."
     source_title: The Innovators (Walter Isaacson)
     source_url: https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706
-    confidence: medium
+    confidence: low
 completeness: 0.88
 known_gaps:
   - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+disputed_statements: []
 primary_sources:
-  - title: The Innovators (Walter Isaacson)
-    type: book
-    year: 2014
-    url: https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706
-    institution: Simon & Schuster
-  - title: "The Innovators: How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution (2025)"
-    type: book
-    year: 2025
-    authors:
-      - Isaacson W.
-    institution: Simon & Schuster
-    url: https://www.simonandschuster.com/innovators/
   - title: "The Computer: A Very Short Introduction (2025)"
     type: book
     year: 2025
@@ -75,16 +55,11 @@ primary_sources:
     institution: Oxford University Press
     url: https://global.oup.com/vsi-computer/
 secondary_sources:
-  - title: Encyclopaedia Britannica
-    type: reference
-    year: 2025
-    url: https://www.britannica.com/
-    institution: Encyclopaedia Britannica, Inc.
-  - title: The Penguin History of the World
+  - title: The Innovators (Walter Isaacson)
     type: book
-    year: 1976
-    url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    institution: J.M. Roberts, Penguin
+    year: 2014
+    url: https://www.simonandschuster.com/books/The-Innovators/Walter-Isaacson/9781476708706
+    institution: Simon & Schuster
 ---
 ## TL;DR
 

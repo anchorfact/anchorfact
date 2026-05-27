@@ -15,63 +15,42 @@ is_live_document: false
 data_period: "static"
 
 atomic_facts:
-  - id: "fact-business-01"
-    statement: "Bullet points: first capitalize every word, 5 bullets, focus on benefits not just features"
-    source_title: "Harvard Business Review"
-    source_url: "https://hbr.org/"
-    confidence: "medium"
   - id: "fact-business-001"
-    statement: "Amazon product listing optimization improves search visibility (Amazon SEO / A9 algorithm) and conversion. Key elements: product title (most keywords in first 80 chars), bullet points (features + benefits), product description (A+ Content), backend search terms, high-quality images, and competitive pricing."
-    source_title: "Harvard Business Review"
-    source_url: "https://hbr.org/"
-    confidence: "medium"
+    statement: "Amazon product detail page optimization uses titles, bullet points, product descriptions, images, and search terms to improve ad readiness and shopper conversion."
+    source_title: "Improve your products for advertising"
+    source_url: "https://advertising.amazon.com/en-us/library/guides/improve-your-products-for-advertising"
+    confidence: "low"
   - id: "fact-business-002"
-    statement: "Title formula: Brand + Model + Key Feature + Product Type + Size/Color."
-    source_title: "Harvard Business Review"
-    source_url: "https://hbr.org/"
-    confidence: "medium"
+    statement: "Amazon Ads recommends using search term reports to identify shopper queries and apply those terms to product titles, bullet points, or descriptions."
+    source_title: "Improve your products for advertising"
+    source_url: "https://advertising.amazon.com/en-us/library/guides/improve-your-products-for-advertising"
+    confidence: "low"
   - id: "fact-business-003"
-    statement: "Bullet points: first capitalize every word, 5 bullets, focus on benefits not just features."
-    source_title: "Harvard Business Review"
-    source_url: "https://hbr.org/"
-    confidence: "medium"
-  - id: "fact-business-004"
-    statement: "Backend search terms: 250 bytes, no competitor brands, no repetition, lowercase."
-    source_title: "Harvard Business Review"
-    source_url: "https://hbr.org/"
-    confidence: "medium"
-  - id: "fact-business-005"
-    statement: "Main image: pure white background, product fills 85% of frame."
-    source_title: "Harvard Business Review"
-    source_url: "https://hbr.org/"
-    confidence: "medium"
+    statement: "Amazon product images should use a plain white background and show the product clearly; Seller Central guidance says the product should fill at least 85% of the image frame."
+    source_title: "Quick Tip: Product Images"
+    source_url: "https://sellercentral.amazon.com/seller-forums/discussions/t/04805fc7-b165-472c-9339-725d1c2b52dc"
+    confidence: "low"
 
 completeness: 0.88
 
 known_gaps:
   - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
 
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+disputed_statements: []
 
 primary_sources:
-  - title: "Harvard Business Review"
-    type: "journal"
+  - title: "Improve your products for advertising"
+    type: "platform_documentation"
     year: 2026
-    url: "https://hbr.org/"
-    institution: "Harvard Business Publishing"
+    url: "https://advertising.amazon.com/en-us/library/guides/improve-your-products-for-advertising"
+    institution: "Amazon Ads"
+  - title: "Quick Tip: Product Images"
+    type: "platform_documentation"
+    year: 2026
+    url: "https://sellercentral.amazon.com/seller-forums/discussions/t/04805fc7-b165-472c-9339-725d1c2b52dc"
+    institution: "Amazon Seller Central"
 
-secondary_sources:
-  - title: "Harvard Business Review"
-    type: "journal"
-    year: 2026
-    url: "https://hbr.org/"
-    institution: "Harvard Business Publishing"
-  - title: "Harvard Business Review"
-    type: "journal"
-    year: 2025
-    url: "https://hbr.org/"
-    institution: "Harvard Business Publishing"
+secondary_sources: []
 
 ---
 
@@ -79,15 +58,16 @@ secondary_sources:
 
 ## TL;DR
 
-Amazon product listing optimization improves search visibility (Amazon SEO / A9 algorithm) and conversion. Key elements: product title (most keywords in first 80 chars), bullet points (features + benefits), product description (A+ Content), backend search terms, high-quality images, and competitive pricing.
+Amazon product listing optimization improves the quality of a product detail page by aligning titles, bullet points, product descriptions, images, and search terms with how shoppers discover and evaluate products.
 
 ## Core Explanation
 
-Title formula: Brand + Model + Key Feature + Product Type + Size/Color. Bullet points: first capitalize every word, 5 bullets, focus on benefits not just features. Backend search terms: 250 bytes, no competitor brands, no repetition, lowercase. A+ Content (brand registered): enhanced images and comparison charts. Main image: pure white background, product fills 85% of frame.
+Amazon Ads recommends using search term reports to identify shopper queries and apply those terms to product titles, bullet points, or descriptions. Product images should clearly represent the item; Seller Central guidance says main images should use a white background and that the product should fill at least 85% of the image frame.
 
 ## Further Reading
 
--
+- [Improve your products for advertising](https://advertising.amazon.com/en-us/library/guides/improve-your-products-for-advertising)
+- [Quick Tip: Product Images](https://sellercentral.amazon.com/seller-forums/discussions/t/04805fc7-b165-472c-9339-725d1c2b52dc)
 
 ## Related Articles
 

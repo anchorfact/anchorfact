@@ -15,36 +15,26 @@ is_live_document: false
 data_period: "static"
 
 atomic_facts:
-  - id: "fact-health-01"
-    statement: "Compound exercises : squat, deadlift, bench press, overhead press, pull-up — most efficient"
-    source_title: "Starting Strength (3rd Ed, Mark Rippetoe)"
-    source_url: "https://aasgaardco.com/store/books-posters-dvd/starting-strength-basic-barbell-training/"
-    confidence: "high"
   - id: "fact-health-001"
-    statement: "Strength training (resistance training) builds muscle strength and mass through progressive overload — gradually increasing resistance. ACSM recommends 2+ sessions/week for all major muscle groups. Benefits: increased bone density, metabolic rate, functional independence with aging, injury prevention."
+    statement: "Strength training builds strength through progressive overload: gradually increasing resistance while maintaining trained movement patterns."
     source_title: "Starting Strength (3rd Ed, Mark Rippetoe)"
     source_url: "https://aasgaardco.com/store/books-posters-dvd/starting-strength-basic-barbell-training/"
-    confidence: "medium"
+    confidence: "low"
   - id: "fact-health-002"
-    statement: "Compound exercises (multi-joint): squat, deadlift, bench press, overhead press, pull-up — most efficient."
+    statement: "Compound exercises are multi-joint movements such as the squat, deadlift, bench press, overhead press, and pull-up."
     source_title: "Starting Strength (3rd Ed, Mark Rippetoe)"
     source_url: "https://aasgaardco.com/store/books-posters-dvd/starting-strength-basic-barbell-training/"
-    confidence: "medium"
+    confidence: "low"
   - id: "fact-health-003"
     statement: "Rep ranges: strength (1-5 reps, heavy), hypertrophy (6-12, moderate), endurance (15+, light)."
     source_title: "Starting Strength (3rd Ed, Mark Rippetoe)"
     source_url: "https://aasgaardco.com/store/books-posters-dvd/starting-strength-basic-barbell-training/"
-    confidence: "medium"
+    confidence: "low"
   - id: "fact-health-004"
     statement: "DOMS (delayed onset muscle soreness): normal after new/unaccustomed exercise, peaks 24-72h."
-    source_title: "Starting Strength (3rd Ed, Mark Rippetoe)"
-    source_url: "https://aasgaardco.com/store/books-posters-dvd/starting-strength-basic-barbell-training/"
-    confidence: "medium"
-  - id: "fact-health-005"
-    statement: "Protein: 1.6-2.2 g/kg bodyweight daily for muscle gain."
-    source_title: "Starting Strength (3rd Ed, Mark Rippetoe)"
-    source_url: "https://aasgaardco.com/store/books-posters-dvd/starting-strength-basic-barbell-training/"
-    confidence: "medium"
+    source_title: "ACSM Information On Delayed Onset Muscle Soreness (DOMS)"
+    source_url: "https://www.acsm.org/docs/default-source/files-for-resource-library/delayed-onset-muscle-soreness-%28doms%29.pdf"
+    confidence: "low"
 
 completeness: 0.88
 
@@ -52,8 +42,7 @@ known_gaps:
   - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
   - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
 
-disputed_statements:
-  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
+disputed_statements: []
 
 primary_sources:
   - title: "Starting Strength (3rd Ed, Mark Rippetoe)"
@@ -63,6 +52,11 @@ primary_sources:
     institution: "The Aasgaard Company"
 
 secondary_sources:
+  - title: "ACSM Information On Delayed Onset Muscle Soreness (DOMS)"
+    type: "report"
+    year: 2024
+    url: "https://www.acsm.org/docs/default-source/files-for-resource-library/delayed-onset-muscle-soreness-%28doms%29.pdf"
+    institution: "American College of Sports Medicine"
   - title: "WHO Fact Sheets"
     type: "report"
     year: 2025
@@ -80,15 +74,16 @@ secondary_sources:
 
 ## TL;DR
 
-Strength training (resistance training) builds muscle strength and mass through progressive overload — gradually increasing resistance. ACSM recommends 2+ sessions/week for all major muscle groups. Benefits: increased bone density, metabolic rate, functional independence with aging, injury prevention.
+Strength training builds strength through progressive overload: gradually increasing resistance while maintaining trained movement patterns. Compound exercises are multi-joint movements such as the squat, deadlift, bench press, overhead press, and pull-up.
 
 ## Core Explanation
 
-Compound exercises (multi-joint): squat, deadlift, bench press, overhead press, pull-up — most efficient. Rep ranges: strength (1-5 reps, heavy), hypertrophy (6-12, moderate), endurance (15+, light). Progressive overload: add weight, reps, sets, or decrease rest. DOMS (delayed onset muscle soreness): normal after new/unaccustomed exercise, peaks 24-72h. Protein: 1.6-2.2 g/kg bodyweight daily for muscle gain.
+Rep ranges are commonly programmed differently for strength, hypertrophy, and endurance goals. Progressive overload can come from adding weight, reps, sets, or reducing rest. DOMS is common after new or unaccustomed exercise and ACSM material says soreness can be greatest between 24 and 72 hours after exercise.
 
 ## Further Reading
 
 - [Starting Strength (3rd Ed, Mark Rippetoe)](https://aasgaardco.com/store/books-posters-dvd/starting-strength-basic-barbell-training/)
+- [ACSM Information On Delayed Onset Muscle Soreness](https://www.acsm.org/docs/default-source/files-for-resource-library/delayed-onset-muscle-soreness-%28doms%29.pdf)
 
 ## Related Articles
 

@@ -21,27 +21,27 @@ atomic_facts:
       Variants: Batch GD (full dataset), Stochastic GD (single example), Mini-batch GD (small batches — standard).
     source_title: An Overview of Gradient Descent Optimization Algorithms
     source_url: https://arxiv.org/abs/1609.04747
-    confidence: high
+    confidence: medium
   - id: fact-ai-002
     statement: It iteratively adjusts parameters in the direction of steepest descent of the loss function.
     source_title: An Overview of Gradient Descent Optimization Algorithms
     source_url: https://arxiv.org/abs/1609.04747
-    confidence: high
+    confidence: medium
   - id: fact-ai-003
     statement: "Variants: Batch GD (full dataset), Stochastic GD (single example), Mini-batch GD (small batches — standard)."
     source_title: "Adam: A Method for Stochastic Optimization"
     source_url: https://arxiv.org/abs/1412.6980
-    confidence: high
+    confidence: medium
   - id: fact-ai-004
     statement: "Momentum: accumulates past gradients for smoother steps."
     source_title: "Adam: A Method for Stochastic Optimization"
     source_url: https://arxiv.org/abs/1412.6980
-    confidence: high
+    confidence: medium
   - id: fact-ai-005
     statement: "Adam optimizer: adaptive learning rates per parameter (combines momentum + RMSprop) — de facto standard (Kingma & Ba, 2014)."
     source_title: Deep Learning (Goodfellow, Bengio, Courville)
-    source_url: https://www.deeplearningbook.org/
-    confidence: high
+    source_url: https://www.deeplearningbook.org/contents/optimization.html
+    confidence: medium
 completeness: 0.85
 known_gaps:
   - Statistics and data cited are from 2024 and earlier; more recent developments may have become available since publication
@@ -56,7 +56,7 @@ primary_sources:
       - Courville
     type: textbook
     year: 2016
-    url: https://www.deeplearningbook.org/
+    url: https://www.deeplearningbook.org/contents/optimization.html
     institution: MIT Press
   - title: "Adam: A Method for Stochastic Optimization"
     authors:
@@ -74,13 +74,6 @@ secondary_sources:
     year: 2017
     url: https://arxiv.org/abs/1609.04747
     institution: arXiv
-  - title: "Gradient Descent Algorithm Survey: From SGD to Lion and Beyond"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: arXiv
-    url: https://arxiv.org/abs/2511.20725
 updated: "2026-05-24"
 ---
 ## TL;DR

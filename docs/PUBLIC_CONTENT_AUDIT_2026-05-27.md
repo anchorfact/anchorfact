@@ -1,19 +1,19 @@
 # AnchorFact Public Content Audit - 2026-05-27
 
-Generated: 2026-05-27T13:23:47.244Z
+Generated: 2026-05-27T16:11:20.788Z
 
-Snapshot: 554 public / 446 draft / 1603 claims.
+Snapshot: 554 public / 446 draft / 1584 claims.
 
 ## Summary
 
 This is a risk-weighted audit sample of public AnchorFact articles. It is intended to calibrate quality rules before changing publication eligibility.
 
 - Sample size: 20
-- Low verified coverage samples: 8
-- Articles with at least one fail check: 0
+- Low verified coverage samples: 9
+- Articles with at least one fail check: 1
 - High-confidence samples needing review: 0
-- Claim-evidence failures: 0
-- Recommendations: keep_public: 2, downgrade_confidence: 0, repair_sources: 18, move_to_draft: 0
+- Claim-evidence failures: 1
+- Recommendations: keep_public: 4, downgrade_confidence: 0, repair_sources: 16, move_to_draft: 0
 
 ## Method
 
@@ -23,67 +23,52 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 
 | # | bucket | slug | confidence | coverage | claims | checks | recommendation |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | low_verified_coverage | `business/supply-chain-management` | low | 1/7 (14.3%) | 6 | source=weak; claim=weak; summary=pass | repair_sources |
-| 2 | low_verified_coverage | `history/byzantine-empire` | low | 1/7 (14.3%) | 6 | source=weak; claim=weak; summary=pass | repair_sources |
-| 3 | low_verified_coverage | `history/computer-history` | low | 1/3 (33.3%) | 6 | source=weak; claim=weak; summary=pass | repair_sources |
-| 4 | low_verified_coverage | `history/great-depression` | low | 2/5 (40.0%) | 6 | source=weak; claim=weak; summary=pass | repair_sources |
-| 5 | low_verified_coverage | `ai/gpt-models` | medium | 2/5 (40.0%) | 6 | source=weak; claim=weak; summary=pass | repair_sources |
-| 6 | low_verified_coverage | `science/plate-tectonics` | medium | 2/6 (33.3%) | 6 | source=weak; claim=weak; summary=pass | repair_sources |
-| 7 | low_verified_coverage | `arts/classical-music-periods` | low | 1/7 (14.3%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
-| 8 | low_verified_coverage | `history/age-of-exploration` | low | 1/7 (14.3%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
-| 9 | high_confidence | `ai/agentic-ai` | high | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 10 | high_confidence | `ai/ai-for-food-science` | high | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 1 | low_verified_coverage | `history/enlightenment-era` | low | 1/5 (20.0%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
+| 2 | low_verified_coverage | `history/leonardo-da-vinci` | low | 1/3 (33.3%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
+| 3 | low_verified_coverage | `history/reformation` | low | 2/5 (40.0%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
+| 4 | low_verified_coverage | `history/ancient-egypt` | low | 3/7 (42.9%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
+| 5 | low_verified_coverage | `sports/olympic-games-history` | medium | 1/6 (16.7%) | 5 | source=weak; claim=pass; summary=pass | repair_sources |
+| 6 | low_verified_coverage | `arts/architecture-history` | low | 1/6 (16.7%) | 4 | source=weak; claim=weak; summary=pass | repair_sources |
+| 7 | low_verified_coverage | `science/immune-system` | low | 1/6 (16.7%) | 4 | source=weak; claim=weak; summary=pass | repair_sources |
+| 8 | low_verified_coverage | `arts/design-thinking` | low | 1/5 (20.0%) | 4 | source=weak; claim=weak; summary=pass | repair_sources |
+| 9 | high_confidence | `ai/gpt-models` | high | 4/4 (100.0%) | 6 | source=pass; claim=pass; summary=pass | keep_public |
+| 10 | high_confidence | `ai/agentic-ai` | high | 2/2 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | high_confidence | `ai/affective-computing` | high | 2/2 (100.0%) | 2 | source=pass; claim=pass; summary=pass | keep_public |
 | 12 | high_confidence | `ai/ai-for-astronomy` | high | 2/2 (100.0%) | 2 | source=pass; claim=pass; summary=pass | keep_public |
-| 13 | medium_capped_claims | `ai/computer-vision` | medium | 2/2 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
-| 14 | medium_capped_claims | `ai/gradient-descent` | medium | 1/2 (50.0%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
-| 15 | medium_capped_claims | `ai/graphrag` | medium | 2/4 (50.0%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
-| 16 | medium_capped_claims | `ai/reinforcement-learning` | medium | 2/2 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
-| 17 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 6 | source=pass; claim=weak; summary=pass | repair_sources |
-| 18 | low_confidence_public | `arts/world-literature` | low | 2/3 (66.7%) | 6 | source=weak; claim=weak; summary=pass | repair_sources |
-| 19 | low_confidence_public | `business/product-listing-optimization-amazon` | low | 1/1 (100.0%) | 6 | source=pass; claim=weak; summary=pass | repair_sources |
-| 20 | low_confidence_public | `health/strength-training` | low | 1/1 (100.0%) | 6 | source=pass; claim=weak; summary=pass | repair_sources |
+| 13 | medium_capped_claims | `ai/tokenization-in-nlp` | medium | 1/2 (50.0%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
+| 14 | medium_capped_claims | `ai/attention-mechanisms-deep-dive` | medium | 1/2 (50.0%) | 4 | source=weak; claim=weak; summary=pass | repair_sources |
+| 15 | medium_capped_claims | `ai/constitutional-ai` | medium | 1/2 (50.0%) | 4 | source=weak; claim=fail; summary=pass | repair_sources |
+| 16 | medium_capped_claims | `ai/knowledge-distillation` | medium | 2/5 (40.0%) | 4 | source=weak; claim=weak; summary=pass | repair_sources |
+| 17 | low_confidence_public | `ai/natural-language-processing-nlp` | low | 2/3 (66.7%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
+| 18 | low_confidence_public | `arts/digital-art` | low | 1/1 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
+| 19 | low_confidence_public | `business/cryptocurrency` | low | 1/1 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
+| 20 | low_confidence_public | `computer-science/angular` | low | 1/1 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
 
 ## Article Findings
 
-### 1. Supply Chain Management
+### 1. Enlightenment Era
 
-- canonical slug: `business/supply-chain-management`
-- canonical URL: https://anchorfact.org/business/supply-chain-management/
+- canonical slug: `history/enlightenment-era`
+- canonical URL: https://anchorfact.org/history/enlightenment-era/
 - bucket: `low_verified_coverage`
 - confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/7 (14.3%)
-- claims: 6 total, 6 capped, 0 missing evidence
+- verified source coverage: 1/5 (20.0%)
+- claims: 5 total, 5 capped, 0 missing evidence
 - quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: duplicate_sources, generic_dispute_statement, generic_source_homepage
+- hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 2. Byzantine Empire
+### 2. Leonardo da Vinci
 
-- canonical slug: `history/byzantine-empire`
-- canonical URL: https://anchorfact.org/history/byzantine-empire/
-- bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/7 (14.3%)
-- claims: 6 total, 6 capped, 0 missing evidence
-- quality reasons: partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 3. Computer History
-
-- canonical slug: `history/computer-history`
-- canonical URL: https://anchorfact.org/history/computer-history/
+- canonical slug: `history/leonardo-da-vinci`
+- canonical URL: https://anchorfact.org/history/leonardo-da-vinci/
 - bucket: `low_verified_coverage`
 - confidence: `low` (verified_sources, score 0.475)
 - verified source coverage: 1/3 (33.3%)
-- claims: 6 total, 6 capped, 0 missing evidence
+- claims: 5 total, 5 capped, 0 missing evidence
 - quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
 - source-title match: `weak`
 - claim-evidence match: `weak`
@@ -91,14 +76,14 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 4. Great Depression
+### 3. Reformation
 
-- canonical slug: `history/great-depression`
-- canonical URL: https://anchorfact.org/history/great-depression/
+- canonical slug: `history/reformation`
+- canonical URL: https://anchorfact.org/history/reformation/
 - bucket: `low_verified_coverage`
 - confidence: `low` (verified_sources, score 0.475)
 - verified source coverage: 2/5 (40.0%)
-- claims: 6 total, 6 capped, 0 missing evidence
+- claims: 5 total, 5 capped, 0 missing evidence
 - quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
 - source-title match: `weak`
 - claim-evidence match: `weak`
@@ -106,14 +91,14 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 5. GPT (Generative Pre-trained Transformer) Model Family
+### 4. Ancient Egypt
 
-- canonical slug: `ai/gpt-models`
-- canonical URL: https://anchorfact.org/ai/gpt-models/
+- canonical slug: `history/ancient-egypt`
+- canonical URL: https://anchorfact.org/history/ancient-egypt/
 - bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.71)
-- verified source coverage: 2/5 (40.0%)
-- claims: 6 total, 5 capped, 0 missing evidence
+- confidence: `low` (verified_sources, score 0.475)
+- verified source coverage: 3/7 (42.9%)
+- claims: 5 total, 5 capped, 0 missing evidence
 - quality reasons: partial_source_verification, low_verified_coverage
 - source-title match: `weak`
 - claim-evidence match: `weak`
@@ -121,29 +106,29 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 6. Plate Tectonics
+### 5. Olympic Games History
 
-- canonical slug: `science/plate-tectonics`
-- canonical URL: https://anchorfact.org/science/plate-tectonics/
+- canonical slug: `sports/olympic-games-history`
+- canonical URL: https://anchorfact.org/sports/olympic-games-history/
 - bucket: `low_verified_coverage`
 - confidence: `medium` (verified_sources, score 0.87)
-- verified source coverage: 2/6 (33.3%)
-- claims: 6 total, 1 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage, high_confidence_evidence_gap
+- verified source coverage: 1/6 (16.7%)
+- claims: 5 total, 0 capped, 0 missing evidence
+- quality reasons: partial_source_verification, low_verified_coverage, high_confidence_evidence_gap
 - source-title match: `weak`
-- claim-evidence match: `weak`
+- claim-evidence match: `pass`
 - title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement, generic_source_homepage
+- hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 7. Classical Music Periods
+### 6. Architecture History
 
-- canonical slug: `arts/classical-music-periods`
-- canonical URL: https://anchorfact.org/arts/classical-music-periods/
+- canonical slug: `arts/architecture-history`
+- canonical URL: https://anchorfact.org/arts/architecture-history/
 - bucket: `low_verified_coverage`
 - confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/7 (14.3%)
-- claims: 5 total, 5 capped, 0 missing evidence
+- verified source coverage: 1/6 (16.7%)
+- claims: 4 total, 4 capped, 0 missing evidence
 - quality reasons: partial_source_verification, low_verified_coverage
 - source-title match: `weak`
 - claim-evidence match: `weak`
@@ -151,22 +136,52 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 8. Age of Exploration
+### 7. Immune System
 
-- canonical slug: `history/age-of-exploration`
-- canonical URL: https://anchorfact.org/history/age-of-exploration/
+- canonical slug: `science/immune-system`
+- canonical URL: https://anchorfact.org/science/immune-system/
 - bucket: `low_verified_coverage`
 - confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/7 (14.3%)
-- claims: 5 total, 5 capped, 0 missing evidence
+- verified source coverage: 1/6 (16.7%)
+- claims: 4 total, 4 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_source_homepage
+- recommendation: `repair_sources`
+
+### 8. Design Thinking
+
+- canonical slug: `arts/design-thinking`
+- canonical URL: https://anchorfact.org/arts/design-thinking/
+- bucket: `low_verified_coverage`
+- confidence: `low` (verified_sources, score 0.475)
+- verified source coverage: 1/5 (20.0%)
+- claims: 4 total, 4 capped, 0 missing evidence
 - quality reasons: partial_source_verification, low_verified_coverage
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
+- hygiene flags: none
 - recommendation: `repair_sources`
 
-### 9. Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning
+### 9. GPT (Generative Pre-trained Transformer) Model Family
+
+- canonical slug: `ai/gpt-models`
+- canonical URL: https://anchorfact.org/ai/gpt-models/
+- bucket: `high_confidence`
+- confidence: `high` (verified_sources, score 0.88)
+- verified source coverage: 4/4 (100.0%)
+- claims: 6 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
+
+### 10. Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning
 
 - canonical slug: `ai/agentic-ai`
 - canonical URL: https://anchorfact.org/ai/agentic-ai/
@@ -174,27 +189,12 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - confidence: `high` (verified_sources, score 0.85)
 - verified source coverage: 2/2 (100.0%)
 - claims: 3 total, 0 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak
+- quality reasons: none
 - source-title match: `pass`
-- claim-evidence match: `weak`
+- claim-evidence match: `pass`
 - title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
-- recommendation: `repair_sources`
-
-### 10. AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition
-
-- canonical slug: `ai/ai-for-food-science`
-- canonical URL: https://anchorfact.org/ai/ai-for-food-science/
-- bucket: `high_confidence`
-- confidence: `high` (verified_sources, score 0.85)
-- verified source coverage: 2/2 (100.0%)
-- claims: 3 total, 0 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
-- recommendation: `repair_sources`
+- hygiene flags: none
+- recommendation: `keep_public`
 
 ### 11. Affective Computing: Multimodal Emotion Recognition, Sentiment Analysis, and Empathetic AI
 
@@ -226,44 +226,14 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 13. Computer Vision
+### 13. Tokenization in NLP
 
-- canonical slug: `ai/computer-vision`
-- canonical URL: https://anchorfact.org/ai/computer-vision/
-- bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.74)
-- verified source coverage: 2/2 (100.0%)
-- claims: 5 total, 5 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 14. Gradient Descent and Optimization
-
-- canonical slug: `ai/gradient-descent`
-- canonical URL: https://anchorfact.org/ai/gradient-descent/
+- canonical slug: `ai/tokenization-in-nlp`
+- canonical URL: https://anchorfact.org/ai/tokenization-in-nlp/
 - bucket: `medium_capped_claims`
 - confidence: `medium` (verified_sources, score 0.67)
 - verified source coverage: 1/2 (50.0%)
 - claims: 5 total, 5 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_source_homepage
-- recommendation: `repair_sources`
-
-### 15. GraphRAG
-
-- canonical slug: `ai/graphrag`
-- canonical URL: https://anchorfact.org/ai/graphrag/
-- bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.76)
-- verified source coverage: 2/4 (50.0%)
-- claims: 5 total, 5 capped, 0 missing evidence
 - quality reasons: partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
@@ -271,13 +241,73 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 16. Reinforcement Learning
+### 14. Attention Mechanisms: Scaled Dot-Product to FlashAttention
 
-- canonical slug: `ai/reinforcement-learning`
-- canonical URL: https://anchorfact.org/ai/reinforcement-learning/
+- canonical slug: `ai/attention-mechanisms-deep-dive`
+- canonical URL: https://anchorfact.org/ai/attention-mechanisms-deep-dive/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.72)
-- verified source coverage: 2/2 (100.0%)
+- confidence: `medium` (verified_sources, score 0.71)
+- verified source coverage: 1/2 (50.0%)
+- claims: 4 total, 4 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
+
+### 15. Constitutional AI
+
+- canonical slug: `ai/constitutional-ai`
+- canonical URL: https://anchorfact.org/ai/constitutional-ai/
+- bucket: `medium_capped_claims`
+- confidence: `medium` (verified_sources, score 0.69)
+- verified source coverage: 1/2 (50.0%)
+- claims: 4 total, 4 capped, 0 missing evidence
+- quality reasons: broken_atomic_fact, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `fail`
+- title-summary accuracy: `pass`
+- hygiene flags: broken_atomic_fact
+- recommendation: `repair_sources`
+
+### 16. Knowledge Distillation
+
+- canonical slug: `ai/knowledge-distillation`
+- canonical URL: https://anchorfact.org/ai/knowledge-distillation/
+- bucket: `medium_capped_claims`
+- confidence: `medium` (verified_sources, score 0.675)
+- verified source coverage: 2/5 (40.0%)
+- claims: 4 total, 4 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement, generic_source_homepage
+- recommendation: `repair_sources`
+
+### 17. Natural Language Processing (NLP)
+
+- canonical slug: `ai/natural-language-processing-nlp`
+- canonical URL: https://anchorfact.org/ai/natural-language-processing-nlp/
+- bucket: `low_confidence_public`
+- confidence: `low` (verified_sources, score 0.54)
+- verified source coverage: 2/3 (66.7%)
+- claims: 5 total, 5 capped, 0 missing evidence
+- quality reasons: partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 18. Digital Art
+
+- canonical slug: `arts/digital-art`
+- canonical URL: https://anchorfact.org/arts/digital-art/
+- bucket: `low_confidence_public`
+- confidence: `low` (verified_sources, score 0.43)
+- verified source coverage: 1/1 (100.0%)
 - claims: 5 total, 5 capped, 0 missing evidence
 - quality reasons: none
 - source-title match: `pass`
@@ -286,14 +316,14 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 17. Film Genres
+### 19. Cryptocurrency
 
-- canonical slug: `arts/film-genres`
-- canonical URL: https://anchorfact.org/arts/film-genres/
+- canonical slug: `business/cryptocurrency`
+- canonical URL: https://anchorfact.org/business/cryptocurrency/
 - bucket: `low_confidence_public`
 - confidence: `low` (verified_sources, score 0.45)
 - verified source coverage: 1/1 (100.0%)
-- claims: 6 total, 6 capped, 0 missing evidence
+- claims: 5 total, 5 capped, 0 missing evidence
 - quality reasons: none
 - source-title match: `pass`
 - claim-evidence match: `weak`
@@ -301,49 +331,19 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 18. World Literature
+### 20. Angular
 
-- canonical slug: `arts/world-literature`
-- canonical URL: https://anchorfact.org/arts/world-literature/
-- bucket: `low_confidence_public`
-- confidence: `low` (verified_sources, score 0.55)
-- verified source coverage: 2/3 (66.7%)
-- claims: 6 total, 6 capped, 0 missing evidence
-- quality reasons: partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: duplicate_sources
-- recommendation: `repair_sources`
-
-### 19. Product Listing Optimization (Amazon)
-
-- canonical slug: `business/product-listing-optimization-amazon`
-- canonical URL: https://anchorfact.org/business/product-listing-optimization-amazon/
+- canonical slug: `computer-science/angular`
+- canonical URL: https://anchorfact.org/computer-science/angular/
 - bucket: `low_confidence_public`
 - confidence: `low` (verified_sources, score 0.5)
 - verified source coverage: 1/1 (100.0%)
-- claims: 6 total, 6 capped, 0 missing evidence
+- claims: 5 total, 5 capped, 0 missing evidence
 - quality reasons: generic_source_homepage
 - source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: duplicate_sources, generic_dispute_statement, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 20. Strength Training
-
-- canonical slug: `health/strength-training`
-- canonical URL: https://anchorfact.org/health/strength-training/
-- bucket: `low_confidence_public`
-- confidence: `low` (verified_sources, score 0.43)
-- verified source coverage: 1/1 (100.0%)
-- claims: 6 total, 6 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
+- hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
 ## Rule Calibration
