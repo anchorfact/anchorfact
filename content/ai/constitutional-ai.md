@@ -16,16 +16,16 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-ai-001
-    statement: First published in December 2022 (arXiv:2212.
+    statement: >-
+      Anthropic introduced Constitutional AI in the December 2022 arXiv paper "Constitutional AI: Harmlessness from AI Feedback" (arXiv:2212.08073).
     source_title: "Constitutional AI: Harmlessness from AI Feedback"
     source_url: https://arxiv.org/abs/2212.08073
     confidence: high
   - id: fact-ai-002
     statement: >-
-      08073) and detailed in May 2023, CAI trains models to self-critique and self-correct based on constitutional principles, then uses AI-generated feedback instead of human feedback for
-      reinforcement learning.
-    source_title: Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback
-    source_url: https://arxiv.org/abs/2204.05862
+      Constitutional AI trains models to critique and revise their own responses using constitutional principles, then uses AI-generated preference feedback during reinforcement learning.
+    source_title: "Constitutional AI: Harmlessness from AI Feedback"
+    source_url: https://arxiv.org/abs/2212.08073
     confidence: high
   - id: fact-ai-003
     statement: This achieves both higher helpfulness and higher harmlessness simultaneously (a Pareto improvement), unlike traditional RLHF which typically trades one for the other.
