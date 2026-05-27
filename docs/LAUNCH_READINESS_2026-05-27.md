@@ -4,10 +4,10 @@
 
 Production is live on the apex domain.
 
-- Latest confirmed production commit: `bd8af3e6`.
+- Confirm the active production commit in Cloudflare Pages before each launch review.
 - `anchorfact.org` is reachable and serving the trusted build.
 - `www.anchorfact.org` is not production-ready yet. Public smoke returned Cloudflare `522`, so treat `www` as pending until the Pages custom domain and DNS route are Active.
-- The `6f69cc8b` run with `No deployment available` is expected because that commit only updated `verification-report.json` with `[skip ci]`. The later `bd8af3e6` deployment includes that report.
+- A verification-report-only commit with `[skip ci]` may show `No deployment available`; that is expected when a later normal commit deploys the trusted report.
 
 ## Production Smoke Test
 
@@ -70,7 +70,7 @@ Automated pre-checks:
 | 7 | health | [Addiction Science](https://anchorfact.org/health/addiction-science/) | low/verified_sources | 1/1 | 4 | pass |
 | 8 | history | [Age of Exploration](https://anchorfact.org/history/age-of-exploration/) | low/verified_sources | 1/7 | 5 | review |
 | 9 | science | [Astronomy and Cosmology: From Solar System to the Universe](https://anchorfact.org/science/astronomy-and-cosmology/) | low/verified_sources | 1/4 | 3 | review |
-| 10 | self-improvement | [Active Listening](https://anchorfact.org/self-improvement/active-listening/) | high/verified_sources | 1/9 | 2 | review |
+| 10 | self-improvement | [Active Listening](https://anchorfact.org/self-improvement/active-listening/) | medium/verified_sources | 1/9 | 2 | review |
 | 11 | sports | [Basketball Fundamentals](https://anchorfact.org/sports/basketball-fundamentals/) | low/verified_sources | 1/1 | 3 | pass |
 | 12 | ai | [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](https://anchorfact.org/ai/3d-human-modeling/) | medium/verified_sources | 2/2 | 2 | pass |
 | 13 | arts | [Ancient Greek Literature](https://anchorfact.org/arts/ancient-greek-literature/) | low/verified_sources | 2/4 | 3 | review |
@@ -80,11 +80,11 @@ Automated pre-checks:
 | 17 | geography | [Asian Geography](https://anchorfact.org/geography/asian-geography/) | low/verified_sources | 1/2 | 5 | review |
 | 18 | health | [Chronic Disease Prevention Strategies](https://anchorfact.org/health/chronic-disease-prevention/) | medium/verified_sources | 2/4 | 3 | review |
 | 19 | history | [American Revolution](https://anchorfact.org/history/american-revolution/) | low/verified_sources | 3/8 | 3 | review |
-| 20 | science | [Big Bang Theory](https://anchorfact.org/science/big-bang-theory/) | high/verified_sources | 3/7 | 3 | review |
+| 20 | science | [Big Bang Theory](https://anchorfact.org/science/big-bang-theory/) | medium/verified_sources | 3/7 | 3 | review |
 
 ## Findings
 
 - The launch is good enough to keep public. Main production routes are healthy and the public/draft/claim counts match the trusted verification snapshot.
 - `www.anchorfact.org` should either be added as a Pages custom domain and marked Active, or intentionally redirected/left unused. Do not promote `www` until it stops returning `522`.
-- The next content-quality pass should focus on high-confidence entries with partial coverage. Current manifest has 58 public high-confidence articles with partial source verification, including 19 high-confidence articles below 50% verified source coverage.
-- Do not tighten public rules globally yet. First review the 20 sampled entries for source-title match, claim evidence match, and title/summary accuracy, then decide whether to require a higher verified source coverage threshold for `high` confidence.
+- The next content-quality pass should focus on entries with `low_verified_coverage`. The current build keeps 573 public articles while marking 130 public entries for low-coverage review.
+- Do not tighten public rules globally yet. First review the 20 sampled entries for source-title match, claim evidence match, and title/summary accuracy, then decide whether to require a higher verified source coverage threshold for all public entries.

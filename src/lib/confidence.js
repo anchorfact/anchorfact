@@ -60,11 +60,13 @@ export function computeConfidence(sources, article = {}, verificationData = null
   );
   let sourceVerifiedScore;
   let scoreBasis = 'estimated';
+  let verifiedCoverage = null;
 
   if (verificationData && verificationData.sources_total > 0) {
     const vTotal = verificationData.sources_total;
     const vVerified = verificationData.sources_verified || 0;
     const verifiedRatio = vTotal > 0 ? vVerified / vTotal : 0;
+    verifiedCoverage = verifiedRatio;
     sourceVerifiedScore = hasDoiVerified ? 1.0
       : verifiedRatio >= 0.75 ? 0.9
       : verifiedRatio >= 0.5 ? 0.7
@@ -93,6 +95,10 @@ export function computeConfidence(sources, article = {}, verificationData = null
   let level = score >= 0.85 ? 'high' : score >= 0.60 ? 'medium' : 'low';
   // Hard constraint: estimated basis cannot be 'high'
   if (scoreBasis === 'estimated' && level === 'high') level = 'medium';
+  // High confidence requires meaningful verified coverage, not merely one verified source.
+  if (scoreBasis === 'verified_sources' && level === 'high' && verifiedCoverage !== null && verifiedCoverage < 0.5) {
+    level = 'medium';
+  }
 
   return {
     score,
@@ -102,6 +108,7 @@ export function computeConfidence(sources, article = {}, verificationData = null
       source_tier: bestTier,
       source_count: sourceCountScore,
       source_verified: sourceVerifiedScore,
+      verified_coverage: verifiedCoverage,
       freshness: maxFreshness,
       decay: decayScore,
       based_on: scoreBasis

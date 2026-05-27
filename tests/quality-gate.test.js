@@ -95,6 +95,34 @@ primary_sources:
   assert(failedAsExpected, 'quality gate should fail unverified published articles');
 });
 
+test('low verified coverage is reported without failing the gate', () => {
+  const dir = reset('low-coverage-pass');
+  const articlePath = join(dir, 'content', 'low-coverage.md');
+  writeArticle(dir, 'low-coverage.md', `id: low-coverage
+title: Low Coverage
+primary_sources:
+  - title: Source A
+    doi: 10.1234/a
+  - title: Source B
+    doi: 10.1234/b
+  - title: Source C
+    doi: 10.1234/c`);
+  writeFileSync(join(dir, 'verification-report.json'), JSON.stringify({
+    articles: [{
+      file: articlePath.replace(/\\/g, '/'),
+      sources_total: 3,
+      sources_verified: 1,
+      sources_unreachable: 2,
+      verification_results: [
+        { results: [{ method: 'doi', verified: true }] },
+        { results: [{ method: 'doi', verified: false }] },
+        { results: [{ method: 'doi', verified: false }] }
+      ]
+    }]
+  }, null, 2));
+  runGate(dir);
+});
+
 rmSync(root, { recursive: true, force: true });
 
 console.log(`\n${passed} passed, ${failed} failed`);

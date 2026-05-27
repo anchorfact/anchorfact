@@ -342,6 +342,7 @@ function distribution(results) {
 function manifestArticle(result) {
   return {
     id: result['@id'],
+    canonical_slug: result._quality.canonicalSlug,
     canonical_url: result._quality.canonicalUrl,
     title: result.headline,
     status: result._quality.status,
@@ -353,6 +354,15 @@ function manifestArticle(result) {
     is_draft: result._quality.isDraft,
     quality_reasons: result._quality.qualityReasons
   };
+}
+
+const CONFIDENCE_RANK = { low: 1, medium: 2, high: 3 };
+
+function capClaimConfidence(declaredConfidence, articleConfidence) {
+  const declaredRank = CONFIDENCE_RANK[declaredConfidence] || 0;
+  const articleRank = CONFIDENCE_RANK[articleConfidence] || 0;
+  if (!declaredConfidence || declaredRank === 0 || articleRank === 0) return declaredConfidence || null;
+  return declaredRank > articleRank ? articleConfidence : declaredConfidence;
 }
 
 function articleLink(result) {
@@ -614,16 +624,26 @@ function publicClaims(publicResults) {
   return publicResults.flatMap(result =>
     result._atomicFacts
       .filter(isClaimPublishable)
-      .map(fact => ({
-        id: fact['@id'],
-        article: result._quality.canonicalUrl,
-        title: result.headline,
-        statement: fact.text,
-        confidence: fact['anchorfact:confidence'],
-        source_ref: fact['anchorfact:sourceRef'],
-        source_title: fact['anchorfact:sourceTitle'],
-        citation: fact.citation || null
-      }))
+      .map(fact => {
+        const declaredConfidence = fact['anchorfact:confidence'] || null;
+        const articleConfidence = result._confidence.level;
+        const confidence = capClaimConfidence(declaredConfidence, articleConfidence);
+        const claim = {
+          id: fact['@id'],
+          article: result._quality.canonicalUrl,
+          title: result.headline,
+          statement: fact.text,
+          confidence,
+          source_ref: fact['anchorfact:sourceRef'],
+          source_title: fact['anchorfact:sourceTitle'],
+          citation: fact.citation || null
+        };
+        if (declaredConfidence && declaredConfidence !== confidence) {
+          claim.declared_confidence = declaredConfidence;
+          claim.article_confidence = articleConfidence;
+        }
+        return claim;
+      })
   );
 }
 

@@ -10,6 +10,8 @@ __pycache__/
 *.swo
 .env
 .env.local
+%SystemDrive%/
+*.backup
 # Quality snapshots and temp data
 qs_*.json
 qs_*.txt

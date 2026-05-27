@@ -97,6 +97,18 @@ Only public articles contribute publishable facts to `/claims.json`.
 | `/{slug}/index.json` | JSON-LD article record with confidence and verification layer. |
 | `/{slug}/facts.json` | Per-article atomic facts, when present. |
 
+## MCP and Local API
+
+The Python MCP server and optional HTTP wrapper are backed by `dist/manifest.json`.
+They index public articles only and resolve articles by canonical slug, canonical URL, or JSON-LD `@id`.
+
+```bash
+python src/mcp_server.py
+python src/mcp_http.py
+```
+
+Search results use canonical slugs as `id` values and include `canonical_url`, `jsonld_id`, Markdown URL, and JSON-LD URL fields.
+
 ## Trust Rules
 
 Confidence is computed from source tier, source count, verification coverage, freshness, and decay factors. Source verification is performed by `src/verify-sources.js` through DOI, arXiv, and URL checks. The quality model in `src/lib/article-quality.js` decides whether an article is public or draft.

@@ -105,6 +105,7 @@ test('manifest contains structured article entries and status counts', () => {
   assertEq(manifest.public_article_count, 1);
   assertEq(manifest.draft_article_count, 1);
   assertEq(manifest.articles.find(article => article.title === 'Public Fixture').status, 'public');
+  assertEq(manifest.articles.find(article => article.title === 'Public Fixture').canonical_slug, 'public-fixture');
   assertEq(manifest.articles.find(article => article.title === 'Draft Fixture').status, 'draft');
 });
 
@@ -133,6 +134,9 @@ test('claims.json includes only public atomic facts with evidence', () => {
   assertEq(claims.claim_count, 1);
   assertEq(claims.claims.length, 1);
   assertEq(claims.claims[0].statement, 'Public fixture claim.');
+  assertEq(claims.claims[0].confidence, 'medium');
+  assertEq(claims.claims[0].declared_confidence, 'high');
+  assertEq(claims.claims[0].article_confidence, 'medium');
 });
 
 rmSync(root, { recursive: true, force: true });

@@ -67,6 +67,26 @@ test('verified non-placeholder article is public eligible', () => {
   assertEq(q.verifiedSourceCoverage.ratio, 1);
 });
 
+test('low verified coverage is a non-fatal quality reason', () => {
+  const q = evaluateArticleQuality({
+    frontmatter: {
+      primary_sources: [
+        { title: 'Paper A', doi: '10.1234/a' },
+        { title: 'Paper B', doi: '10.1234/b' },
+        { title: 'Paper C', doi: '10.1234/c' }
+      ]
+    },
+    body: '## TL;DR\nDone.',
+    filePath: 'content/ai/test.md',
+    contentDir: 'content',
+    verificationData: { sources_total: 3, sources_verified: 1 },
+    confidence: { level: 'medium', inputs: { based_on: 'verified_sources' } }
+  });
+  assertEq(q.publicEligible, true);
+  assertEq(q.qualityReasons.includes('low_verified_coverage'), true);
+  assertEq(q.fatalReasons.includes('low_verified_coverage'), false);
+});
+
 test('estimated article is automatically draft', () => {
   const q = evaluateArticleQuality({
     frontmatter: {

@@ -65,11 +65,11 @@ The verification step is incremental. It checks file modification times and only
 
 ## Why MCP Matters
 
-We ship a **Model Context Protocol (MCP) Server** — a Python stdio server that Claude Desktop and other MCP-compatible agents can connect to directly.
+We ship a **Model Context Protocol (MCP) Server** — a Python stdio server that Claude Desktop and other MCP-compatible agents can connect to directly. The server is backed by `dist/manifest.json`, indexes public articles only, and uses canonical slugs rather than legacy flat IDs.
 
 The server provides three tools:
 - `anchorfact_search` — BM25 full-text search with confidence boosting
-- `anchorfact_get_article` — Retrieve full article with source chain and atomic facts
+- `anchorfact_get_article` — Retrieve an article by canonical slug, canonical URL, or JSON-LD `@id`
 - `anchorfact_list_categories` — List all 11 knowledge domains and article counts
 
 This means an AI agent can query AnchorFact the same way it queries a file system or a database — through a structured protocol, not web scraping.

@@ -1,101 +1,132 @@
 #!/usr/bin/env node
-/**
- * AnchorFact 集成测试
- * 
- * 测试编译流程端到端、JSON 输出格式、置信度公式集成
- */
-import { readFileSync, existsSync } from 'fs';
-import { join } from 'path';
-import { computeConfidence, classifySourceTier } from '../src/lib/confidence.js';
-import { load } from 'js-yaml';
+import { execFileSync } from 'child_process';
+import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'fs';
+import { join, resolve } from 'path';
+import { classifySourceTier, computeConfidence, computeFreshnessScore } from '../src/lib/confidence.js';
 
 let passed = 0, failed = 0;
 
 function test(name, fn) {
-  try { fn(); passed++; console.log(`  ✓ ${name}`); }
-  catch (e) { failed++; console.log(`  ✗ ${name}: ${e.message}`); }
+  try {
+    fn();
+    passed++;
+    console.log(`  ✓ ${name}`);
+  } catch (e) {
+    failed++;
+    console.log(`  ✗ ${name}: ${e.message}`);
+  }
 }
-function assert(cond, msg) { if (!cond) throw new Error(msg); }
-function assertEq(a, b, ctx) { if (a !== b) throw new Error(`${ctx || ''} expected ${b}, got ${a}`); }
+
+function assert(condition, message) {
+  if (!condition) throw new Error(message);
+}
+
+function assertEq(actual, expected, ctx = '') {
+  if (JSON.stringify(actual) !== JSON.stringify(expected)) {
+    throw new Error(`${ctx} expected ${JSON.stringify(expected)}, got ${JSON.stringify(actual)}`);
+  }
+}
 
 console.log('AnchorFact Integration Tests\n');
 
-// ---- JSON-LD 输出结构验证 ----
-console.log('JSON-LD output structure:');
-test('dist/manifest.json exists and has expected keys', () => {
-  assert(existsSync('dist/manifest.json'), 'manifest.json not found');
-  const m = JSON.parse(readFileSync('dist/manifest.json', 'utf-8'));
-  assert(m.articles > 0, 'articles count missing');
-  assert(m.confidence_distribution.high !== undefined, 'high count missing');
-  assert(m.confidence_distribution.medium !== undefined, 'medium count missing');
-  assert(m.confidence_distribution.low !== undefined, 'low count missing');
+const root = resolve('tests/.tmp-integration');
+const contentDir = join(root, 'content');
+const distDir = join(root, 'dist');
+const reportPath = join(root, 'verification-report.json');
+const publicFile = join(contentDir, 'ai', 'public.md');
+
+rmSync(root, { recursive: true, force: true });
+mkdirSync(join(contentDir, 'ai'), { recursive: true });
+
+writeFileSync(publicFile, `---
+id: public-fixture
+slug: ai/public-fixture
+title: Public Fixture
+schema_type: TechArticle
+generation_method: ai_structured
+primary_sources:
+  - title: Fixture Paper
+    type: academic_paper
+    year: 2026
+    doi: 10.1234/fixture
+---
+## TL;DR
+Public fixture summary.
+
+## Detailed Analysis
+Complete article body.
+`);
+
+writeFileSync(join(contentDir, 'draft.md'), `---
+id: draft-fixture
+title: Draft Fixture
+primary_sources:
+  - title: Draft Source
+    url: https://example.com/draft
+---
+## TL;DR
+Draft fixture summary.
+
+## Detailed Analysis
+[待后续补充]
+`);
+
+writeFileSync(reportPath, JSON.stringify({
+  summary: { generated: '2026-05-27T00:00:00.000Z' },
+  articles: [{
+    file: publicFile.replace(/\\/g, '/'),
+    sources_total: 1,
+    sources_verified: 1,
+    sources_unreachable: 0,
+    verification_results: [{ results: [{ method: 'doi', verified: true }] }]
+  }]
+}, null, 2));
+
+execFileSync('node', ['src/compile.js', contentDir, distDir, reportPath], { stdio: 'pipe' });
+
+console.log('Compiled output contract:');
+test('manifest exists and has structured counts', () => {
+  const manifest = JSON.parse(readFileSync(join(distDir, 'manifest.json'), 'utf-8'));
+  assertEq(manifest.article_count, 2);
+  assertEq(manifest.public_article_count, 1);
+  assertEq(manifest.draft_article_count, 1);
+  assert(Array.isArray(manifest.articles), 'manifest.articles missing');
+  assertEq(manifest.articles[0].canonical_slug, 'ai/public-fixture');
 });
 
-test('all compiled articles have @context', () => {
-  const m = JSON.parse(readFileSync('dist/manifest.json', 'utf-8'));
-  const ids = m.ids.slice(0, 20);
-  for (const id of ids) {
-    const kbId = id.split('/').pop();
-    if (!existsSync(`dist/${kbId}/index.json`)) continue;
-    const j = JSON.parse(readFileSync(`dist/${kbId}/index.json`, 'utf-8'));
-    assert(j['@context'] === 'https://schema.org', `${kbId}: missing @context`);
-  }
+test('nested route JSON-LD exists and has verification layer', () => {
+  const jsonPath = join(distDir, 'ai', 'public-fixture', 'index.json');
+  assert(existsSync(jsonPath), 'nested index.json missing');
+  const article = JSON.parse(readFileSync(jsonPath, 'utf-8'));
+  assertEq(article['@context'], 'https://schema.org');
+  assertEq(article.url, 'https://anchorfact.org/ai/public-fixture/');
+  assertEq(article['anchorfact:verification'].confidence_basis, 'verified_sources');
 });
 
-test('compiled articles have verification layer', () => {
-  const m = JSON.parse(readFileSync('dist/manifest.json', 'utf-8'));
-  const firstId = m.ids[0].split('/').pop();
-  const j = JSON.parse(readFileSync(`dist/${firstId}/index.json`, 'utf-8'));
-  const v = j['anchorfact:verification'];
-  assert(v !== undefined, 'no verification layer');
-  assertEq(typeof v.confidence_basis, 'string', 'missing confidence_basis');
-  assert(v.sources_total !== undefined, 'missing sources_total');
+test('public machine entrypoints exclude drafts', () => {
+  const llms = readFileSync(join(distDir, 'llms.txt'), 'utf-8');
+  const sitemap = readFileSync(join(distDir, 'sitemap.xml'), 'utf-8');
+  assert(llms.includes('Public Fixture'), 'llms should include public fixture');
+  assert(!llms.includes('Draft Fixture'), 'llms should exclude draft fixture');
+  assert(sitemap.includes('/ai/public-fixture/'), 'sitemap should include nested public route');
+  assert(!sitemap.includes('/draft-fixture/'), 'sitemap should exclude draft');
 });
 
-// ---- Content integrity ----
-console.log('\nContent integrity:');
-test('No article has human_only label in compiled output', () => {
-  const m = JSON.parse(readFileSync('dist/manifest.json', 'utf-8'));
-  const ids = m.ids;
-  let humanOnlyFound = 0;
-  for (const id of ids.slice(0, 100)) {
-    const kbId = id.split('/').pop();
-    if (!existsSync(`dist/${kbId}/index.json`)) continue;
-    const j = JSON.parse(readFileSync(`dist/${kbId}/index.json`, 'utf-8'));
-    if (j['anchorfact:generationMethod'] === 'human_only') humanOnlyFound++;
-  }
-  assert(humanOnlyFound === 0, `${humanOnlyFound} articles still have human_only in first 100`);
-});
-
-test('Confidence scores are in valid range', () => {
-  const m = JSON.parse(readFileSync('dist/manifest.json', 'utf-8'));
-  const ids = m.ids;
-  for (const id of ids.slice(0, 50)) {
-    const kbId = id.split('/').pop();
-    if (!existsSync(`dist/${kbId}/index.json`)) continue;
-    const j = JSON.parse(readFileSync(`dist/${kbId}/index.json`, 'utf-8'));
-    const s = j['anchorfact:confidenceScore'];
-    assert(s >= 0 && s <= 1.0, `${kbId}: score ${s} out of range 0-1`);
-  }
-});
-
-// ---- Edge cases ----
-console.log('\nEdge cases:');
+console.log('\nShared confidence logic:');
 test('computeConfidence with empty sources returns low/0', () => {
-  const r = computeConfidence([]);
-  assertEq(r.level, 'low');
-  assertEq(r.score, 0);
+  const result = computeConfidence([]);
+  assertEq(result.level, 'low');
+  assertEq(result.score, 0);
 });
 
 test('computeConfidence with null sources returns low/0', () => {
-  const r = computeConfidence(null);
-  assertEq(r.score, 0);
+  const result = computeConfidence(null);
+  assertEq(result.level, 'low');
+  assertEq(result.score, 0);
 });
 
 test('Freshness with year 0 defaults to 0.5', () => {
-  const { computeFreshnessScore } = require('../src/lib/confidence.js');
-  // Note: we imported computeFreshnessScore from the shared module
-  // This test will work if computeFreshnessScore is exported
+  assertEq(computeFreshnessScore({ year: 0 }), 0.5);
 });
 
 test('classifySourceTier defaults to C for unknown type', () => {
@@ -103,6 +134,7 @@ test('classifySourceTier defaults to C for unknown type', () => {
   assertEq(classifySourceTier({ type: 'unknown' }), 'C');
 });
 
-// ---- Summary ----
+rmSync(root, { recursive: true, force: true });
+
 console.log(`\n${passed} passed, ${failed} failed`);
 process.exit(failed > 0 ? 1 : 0);

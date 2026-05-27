@@ -105,6 +105,26 @@ test('3 S-tier DOI sources with verification → high', () => {
   assertEq(r.level, 'high');
   assertEq(r.inputs.based_on, 'verified_sources');
 });
+test('High score with verified coverage below 50% is capped to medium', () => {
+  const sources = [
+    { doi: '10.a/a', type: 'academic_paper', year: 2025 },
+    { doi: '10.b/b', type: 'standard', year: 2025 },
+    { doi: '10.c/c', type: 'rfc', year: 2025 },
+  ];
+  const vd = {
+    sources_total: 3,
+    sources_verified: 1,
+    verification_results: [
+      { results: [{ method: 'doi', verified: true }] },
+      { results: [{ method: 'doi', verified: false }] },
+      { results: [{ method: 'doi', verified: false }] }
+    ]
+  };
+  const r = computeConfidence(sources, {}, vd);
+  assertEq(r.score >= 0.85, true, 'raw score should still expose formula output');
+  assertEq(r.level, 'medium');
+  assertEq(r.inputs.verified_coverage, 1 / 3);
+});
 test('Disputed article gets decay penalty', () => {
   const sources = [
     { doi: '10.a/a', type: 'academic_paper', year: 2025 },

@@ -112,6 +112,10 @@ export function evaluateArticleQuality({
     qualityReasons.push('partial_source_verification');
   }
 
+  if (verificationData && coverage.total > 0 && coverage.verified > 0 && coverage.ratio < 0.5) {
+    qualityReasons.push('low_verified_coverage');
+  }
+
   if (confidence?.inputs?.based_on !== 'verified_sources') {
     if (!qualityReasons.includes('estimated_confidence')) {
       qualityReasons.push('estimated_confidence');
