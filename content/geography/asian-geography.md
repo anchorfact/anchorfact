@@ -1,95 +1,77 @@
 ---
-id: ""
-title: "Asian Geography"
-schema_type: "TechArticle"
-category: "geography"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+id: kb-2026-00332
+title: Asian Geography
+schema_type: TechArticle
+category: geography
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: ai_structured
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-geography-001"
-    statement: "6 million km²) is the largest continent — 30% of Earth's land."
-    source_title: "National Geographic Atlas of the World, 11th Ed"
-    source_url: "https://www.nationalgeographic.com/books/atlas/"
-    confidence: "medium"
-  - id: "fact-geography-002"
-    statement: "Features: Himalayas (highest range), Gobi Desert, Yangtze River (longest in Asia, 6,300 km), Siberian taiga (largest forest), Dead Sea (lowest point on land, -430m)."
-    source_title: "National Geographic Atlas of the World, 11th Ed"
-    source_url: "https://www.nationalgeographic.com/books/atlas/"
-    confidence: "medium"
-  - id: "fact-geography-003"
-    statement: "Monsoons define seasonal climate for billions."
-    source_title: "National Geographic Atlas of the World, 11th Ed"
-    source_url: "https://www.nationalgeographic.com/books/atlas/"
-    confidence: "medium"
-  - id: "fact-geography-004"
-    statement: "Tibet: 'roof of the world,' average 4,500m elevation."
-    source_title: "National Geographic Atlas of the World, 11th Ed"
-    source_url: "https://www.nationalgeographic.com/books/atlas/"
-    confidence: "medium"
-  - id: "fact-geography-005"
-    statement: "Southeast Asia: archipelago (Indonesia: 17,000+ islands), rice paddies, tropical monsoon."
-    source_title: "National Geographic Atlas of the World, 11th Ed"
-    source_url: "https://www.nationalgeographic.com/books/atlas/"
-    confidence: "medium"
-
-completeness: 0.85
-
+  - id: fact-asian-geography-01
+    statement: Asia is the world's largest continent by area and is described by Britannica as the largest and most diverse continent.
+    source_title: Asia - Britannica
+    source_url: https://www.britannica.com/place/Asia
+    confidence: medium
+  - id: fact-asian-geography-02
+    statement: Asia includes Mount Everest, the Dead Sea, and Lake Baikal among its major physical-geography extremes.
+    source_title: Asia - Britannica
+    source_url: https://www.britannica.com/place/Asia
+    confidence: medium
+  - id: fact-asian-geography-03
+    statement: The Himalayas contain the world's highest mountains and more than 110 peaks above 7,300 meters.
+    source_title: Himalayas - Britannica
+    source_url: https://www.britannica.com/place/Himalayas
+    confidence: medium
+completeness: 0.78
 known_gaps:
-  - "Statistics and data cited are from 2024 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "Definitions of Asian regional boundaries vary across cultural, political, and geographical framings; the Ural Mountains boundary between Europe and Asia is a convention, not a physical necessity"
-
+  - Regional political geography, population patterns, and climate zones are only summarized.
+disputed_statements: []
 primary_sources:
-  - title: "National Geographic Atlas of the World, 11th Ed"
-    type: "reference"
-    year: 2019
-    url: "https://www.nationalgeographic.com/books/atlas/"
-    institution: "National Geographic Society"
-  - title: "CIA World Factbook"
-    type: "database"
-    year: 2025
-    url: "https://www.cia.gov/the-world-factbook/"
-    institution: "Central Intelligence Agency"
-
+  - title: Asia - Britannica
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/place/Asia
+    institution: Encyclopaedia Britannica
+  - title: Himalayas - Britannica
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/place/Himalayas
+    institution: Encyclopaedia Britannica
 secondary_sources:
-  - title: "Physical Geography (Petersen & Sack, 12th Ed)"
-    type: "textbook"
-    year: 2021
-    url: "https://www.cengage.com/c/physical-geography-12e-petersen-sack-gabler/9780357142448/"
-    institution: "Cengage Learning"
-
+  - title: The World Factbook
+    type: database
+    year: 2026
+    url: https://www.cia.gov/the-world-factbook/
+    institution: Central Intelligence Agency
 ---
-
-
-
-
-
 
 ## TL;DR
 
-Asia (44.6 million km²) is the largest continent — 30% of Earth's land. 48 countries, ~4.7 billion people (60% of humanity). Features: Himalayas (highest range), Gobi Desert, Yangtze River (longest in Asia, 6,300 km), Siberian taiga (largest forest), Dead Sea (lowest point on land, -430m). Monsoons define seasonal climate for billions.
+Asia is the largest continent and contains some of the world's major physical-geography extremes, including the Himalayas, Mount Everest, the Dead Sea, and Lake Baikal.
 
 ## Core Explanation
 
-Himalayas: India-Eurasia collision, still rising 5mm/year. Tibet: 'roof of the world,' average 4,500m elevation. Southeast Asia: archipelago (Indonesia: 17,000+ islands), rice paddies, tropical monsoon. Siberia: vast, sparsely populated, permafrost. Fertile river valleys: Ganges (India), Yangtze + Yellow (China), Mekong (SE Asia), Tigris-Euphrates (Mesopotamia, 'cradle of civilization'). Largest countries by population: India, China.
+The article now focuses on broad, source-backed physical geography rather than unsourced lists. More specific regional topics such as monsoons, plateaus, river basins, and political boundaries should be handled in separate entries.
+
+## Evidence Notes
+
+The previous first fact was broken and began with "6 million km2." This repair replaces it with sourced Britannica claims.
 
 ## Further Reading
 
-- [A Geography of Asia (Dudley Stamp, updated)](https://www.routledge.com/Asia-A-Concise-Geography/Stamp/p/book/9780367178581)
+- [Asia - Britannica](https://www.britannica.com/place/Asia)
+- [Himalayas - Britannica](https://www.britannica.com/place/Himalayas)
 
 ## Related Articles
 
-- [African Geography](../african-geography.md)
-- [Antarctica: The Frozen Continent's Geography and Research Stations](../antarctica-the-frozen-continent-s-geography-and-research-stations.md)
-- [Mediterranean Sea: Physical Geography, Biodiversity, and Marine Protected Areas](../mediterranean-sea-physical-geography-biodiversity-and-marine-protected-areas.md)
+- [Mount Everest](mount-everest.md)
+- [World Geography](world-geography.md)
+- [Plate Tectonics](../science/plate-tectonics.md)

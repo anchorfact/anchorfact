@@ -4,9 +4,9 @@ title: Management Styles
 schema_type: TechArticle
 category: business
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,92 +15,71 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-business-001
-    statement: >-
-      Management styles vary by context and culture. Autocratic (top-down decisions), Democratic (participatory), Laissez-faire (hands-off), Transformational (inspire vision), Servant Leadership
-      (leader serves team). Modern approaches favor autonomy, purpose, mastery (Pink). Micromanagement is destructive. Good management adapts style to situation.
-    source_title: "Drive: The Surprising Truth About What Motivates Us (Daniel Pink)"
-    source_url: https://www.penguinrandomhouse.com/books/308034/drive-by-daniel-h-pink/
+  - id: fact-management-styles-01
+    statement: McGregor's Theory X and Theory Y describe contrasting managerial assumptions about worker motivation and responsibility.
+    source_title: The Human Side of Enterprise - MIT Sloan Management Review
+    source_url: https://sloanreview.mit.edu/article/the-human-side-of-enterprise/
     confidence: medium
-  - id: fact-business-002
-    statement: "Psychological safety (Google's Project Aristotle, 2015): #1 factor in effective teams."
-    source_title: The Effective Executive
-    source_url: https://www.harpercollins.com/products/the-effective-executive-peter-f-drucker
+  - id: fact-management-styles-02
+    statement: Edmondson defined team psychological safety as a shared belief that a team is safe for interpersonal risk taking.
+    source_title: Psychological Safety and Learning Behavior in Work Teams
+    source_url: https://journals.sagepub.com/doi/10.2307/2666999
     confidence: medium
-  - id: fact-business-003
-    statement: "One-on-ones: weekly 30-min manager-employee check-in."
-    source_title: "Drive: The Surprising Truth About What Motivates Us (Daniel Pink)"
-    source_url: https://www.penguinrandomhouse.com/books/308034/drive-by-daniel-h-pink/
+  - id: fact-management-styles-03
+    statement: Google's re:Work guide identifies psychological safety as the first dynamic of effective teams in Project Aristotle.
+    source_title: Understand team effectiveness - Google re:Work
+    source_url: https://rework.withgoogle.com/guides/understanding-team-effectiveness/
     confidence: medium
-completeness: 0.88
+completeness: 0.78
 known_gaps:
-  - Statistics and data cited are from 2009 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This article does not attempt a full taxonomy of every leadership or management style.
+disputed_statements: []
 primary_sources:
-  - title: "Drive: The Surprising Truth About What Motivates Us (Daniel Pink)"
+  - title: The Human Side of Enterprise - MIT Sloan Management Review
+    type: article
+    year: 2006
+    url: https://sloanreview.mit.edu/article/the-human-side-of-enterprise/
+    institution: MIT Sloan Management Review
+  - title: Psychological Safety and Learning Behavior in Work Teams
+    type: journal_article
+    year: 1999
+    url: https://journals.sagepub.com/doi/10.2307/2666999
+    institution: Administrative Science Quarterly
+  - title: Understand team effectiveness - Google re:Work
+    type: organizational_research
+    year: 2025
+    url: https://rework.withgoogle.com/guides/understanding-team-effectiveness/
+    institution: Google re:Work
+secondary_sources:
+  - title: Drive
     type: book
     year: 2009
+    authors:
+      - Pink, Daniel H.
     url: https://www.penguinrandomhouse.com/books/308034/drive-by-daniel-h-pink/
     institution: Riverhead Books
-  - title: "The Culture Map: Breaking Through the Invisible Boundaries (2025 Updated)"
-    type: book
-    year: 2025
-    authors:
-      - Meyer E.
-    institution: PublicAffairs
-    url: https://www.publicaffairsbooks.com/culture-map/
-  - title: First, Break All the Rules (2025 Edition)
-    type: book
-    year: 2025
-    authors:
-      - Buckingham M.
-      - Coffman C.
-    institution: Gallup Press
-    url: https://www.gallup.com/first-break/
-  - title: The Culture Map (2025 Updated)
-    type: book
-    year: 2025
-    authors:
-      - Meyer E.
-    institution: PublicAffairs
-    url: https://www.publicaffairsbooks.com/culture-map/
-  - title: First, Break All the Rules (2025)
-    type: book
-    year: 2025
-    authors:
-      - Buckingham M.
-    institution: Gallup Press
-    url: https://www.gallup.com/first-break/
-secondary_sources:
-  - title: Good to Great
-    type: book
-    year: 2001
-    url: https://www.harpercollins.com/products/good-to-great-jim-collins
-    institution: Jim Collins, HarperBusiness
-  - title: The Effective Executive
-    type: book
-    year: 1967
-    url: https://www.harpercollins.com/products/the-effective-executive-peter-f-drucker
-    institution: Peter F. Drucker, HarperBusiness
 ---
+
 ## TL;DR
 
-Management styles vary by context and culture. Autocratic (top-down decisions), Democratic (participatory), Laissez-faire (hands-off), Transformational (inspire vision), Servant Leadership (leader serves team). Modern approaches favor autonomy, purpose, mastery (Pink). Micromanagement is destructive. Good management adapts style to situation.
+Management style is not a single fixed personality label. Research-backed discussion is usually safer when tied to concrete assumptions and team conditions, such as motivation assumptions and psychological safety.
 
 ## Core Explanation
 
-Autonomy: control over time, task, technique, team. McGregor's Theory X: workers lazy, need control. Theory Y: workers motivated, seek responsibility. Psychological safety (Google's Project Aristotle, 2015): #1 factor in effective teams. One-on-ones: weekly 30-min manager-employee check-in. Feedback: specific, timely, behavioral. 'People don't leave bad jobs, they leave bad managers.'
+McGregor's Theory X and Theory Y describe contrasting assumptions managers may hold about employees. Later organizational research emphasizes team learning conditions, especially psychological safety: whether people believe they can speak up, ask questions, and admit mistakes without interpersonal punishment.
+
+## Evidence Notes
+
+The previous version made broad claims about "autocratic," "democratic," "transformational," and one-on-one practices without direct evidence. This version narrows the article to three source-backed claims.
 
 ## Further Reading
 
-- [Drive: The Surprising Truth About What Motivates Us (Daniel Pink)](https://www.penguinrandomhouse.com/books/308034/drive-by-daniel-h-pink/)
+- [The Human Side of Enterprise - MIT Sloan Management Review](https://sloanreview.mit.edu/article/the-human-side-of-enterprise/)
+- [Psychological Safety and Learning Behavior in Work Teams](https://journals.sagepub.com/doi/10.2307/2666999)
+- [Understand team effectiveness - Google re:Work](https://rework.withgoogle.com/guides/understanding-team-effectiveness/)
 
 ## Related Articles
 
-- [AI for Fleet Management: Predictive Maintenance, Route Optimization, and Telematics](../../ai/ai-fleet-management.md)
-- [AI for Inventory Management: Demand Forecasting, Stock Optimization, and Automated Replenishment](../../ai/ai-inventory-management.md)
-- [AI for Water Management: Leak Detection, Quality Monitoring, and Smart Irrigation](../../ai/ai-water-management.md)
+- [Leadership Principles](leadership-principles.md)
+- [Leadership and Organizational Behavior](leadership-and-organizational-behavior.md)
+- [Decision Making](../self-improvement/decision-making.md)

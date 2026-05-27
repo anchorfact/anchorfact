@@ -1,11 +1,11 @@
 ---
-id: kb-2026-00342
+id: kb-2026-00417
 title: Renaissance Art
 schema_type: TechArticle
 category: arts
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-28'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -15,91 +15,71 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-arts-001
-    statement: >-
-      Renaissance art (14th-16th centuries, Italy) revolutionized Western art through: linear perspective (Brunelleschi, ~1415), anatomical accuracy, chiaroscuro (light/shadow), sfumato (smoky
-      blending, da Vinci), and humanistic themes. Patronage shifted from church to wealthy merchants (Medici).
-    source_title: The Story of Art (E.H. Gombrich)
-    source_url: https://www.phaidon.com/store/art/the-story-of-art-pocket-edition-9780714872216/
+  - id: fact-renaissance-art-01
+    statement: Italian Renaissance art is commonly associated with renewed interest in classical antiquity, naturalism, and human-centered subjects.
+    source_title: Italian Renaissance Art - The Metropolitan Museum of Art
+    source_url: https://www.metmuseum.org/toah/hd/itar/hd_itar.htm
     confidence: medium
-  - id: fact-arts-002
-    statement: >-
-      Key works: Botticelli's Birth of Venus (1485), da Vinci's Last Supper (1498) and Mona Lisa (1503-19), Michelangelo's David (1504) and Sistine Chapel ceiling (1508-12), Raphael's School of Athens
-      (1511).
-    source_title: The Story of Art (E.H. Gombrich)
-    source_url: https://www.phaidon.com/store/art/the-story-of-art-pocket-edition-9780714872216/
+  - id: fact-renaissance-art-02
+    statement: Linear perspective is a Renaissance-associated technique for creating the illusion of depth by making orthogonals converge toward vanishing points.
+    source_title: Linear Perspective - Smarthistory
+    source_url: https://smarthistory.org/technique/linear-perspective/
     confidence: medium
-  - id: fact-arts-003
-    statement: 'Northern Renaissance: Van Eyck (oil painting innovations), Dürer, Bruegel.'
-    source_title: The Story of Art (E.H. Gombrich)
-    source_url: https://www.phaidon.com/store/art/the-story-of-art-pocket-edition-9780714872216/
+  - id: fact-renaissance-art-03
+    statement: Chiaroscuro, the use of strong light-dark contrast, became an important Renaissance visual technique.
+    source_title: The Chiaroscuro Woodcut in Renaissance Italy - National Gallery of Art
+    source_url: https://www.nga.gov/exhibitions/chiaroscuro-woodcut-renaissance-italy
     confidence: medium
-completeness: 0.88
+completeness: 0.78
 known_gaps:
-  - Statistics and data cited are from 1950 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
+  - Individual artist chronologies and regional schools are summarized rather than exhaustively covered.
+disputed_statements: []
 primary_sources:
-  - title: The Story of Art (E.H. Gombrich)
-    type: book
-    year: 1950
-    url: https://www.phaidon.com/store/art/the-story-of-art-pocket-edition-9780714872216/
-    institution: Phaidon Press
-  - title: 'Renaissance Art: A Very Short Introduction (2025)'
-    type: book
+  - title: Italian Renaissance Art - The Metropolitan Museum of Art
+    type: museum_reference
+    year: 2002
+    url: https://www.metmuseum.org/toah/hd/itar/hd_itar.htm
+    institution: The Metropolitan Museum of Art
+  - title: Linear Perspective - Smarthistory
+    type: educational_reference
     year: 2025
-    authors:
-      - Johnson G.A.
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-renaissance-art/
-  - title: The Renaissance Complete (2025)
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Thames & Hudson
-    url: https://thamesandhudson.com/renaissance/
-  - title: The Lives of the Artists
-    authors:
-      - Vasari, G.
-    type: book
-    year: 1550
-    institution: Classical Text
-  - title: History of Italian Renaissance Art (7th Edition)
-    authors:
-      - Hartt, F.
-      - Wilkins, D.G.
-    type: book
-    year: 2010
-    institution: Pearson
+    url: https://smarthistory.org/technique/linear-perspective/
+    institution: Smarthistory
+  - title: The Chiaroscuro Woodcut in Renaissance Italy - National Gallery of Art
+    type: museum_reference
+    year: 2018
+    url: https://www.nga.gov/exhibitions/chiaroscuro-woodcut-renaissance-italy
+    institution: National Gallery of Art
 secondary_sources:
   - title: The Story of Art
     type: book
     year: 1950
-    url: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
-    institution: E.H. Gombrich, Phaidon
-  - title: Oxford History of Art series
-    type: textbook
-    year: 2020
-    url: https://global.oup.com/academic/content/series/o/oxford-history-of-art-oha/
-    institution: Oxford University Press
+    authors:
+      - Gombrich, E. H.
+    url: https://www.phaidon.com/store/art/the-story-of-art-pocket-edition-9780714872216/
+    institution: Phaidon
 ---
 
 ## TL;DR
 
-Renaissance art (14th-16th centuries, Italy) revolutionized Western art through: linear perspective (Brunelleschi, ~1415), anatomical accuracy, chiaroscuro (light/shadow), sfumato (smoky blending, da Vinci), and humanistic themes. Patronage shifted from church to wealthy merchants (Medici).
+Renaissance art is associated with naturalism, renewed engagement with classical antiquity, human-centered subjects, and technical devices such as linear perspective and chiaroscuro.
 
 ## Core Explanation
 
-Key works: Botticelli's Birth of Venus (1485), da Vinci's Last Supper (1498) and Mona Lisa (1503-19), Michelangelo's David (1504) and Sistine Chapel ceiling (1508-12), Raphael's School of Athens (1511). Northern Renaissance: Van Eyck (oil painting innovations), Dürer, Bruegel. Humanism: art focused on human experience and classical antiquity, not just religious themes.
+The period is usually introduced through Italian developments in painting, sculpture, and architecture, but its influence extended across Europe. Rather than listing famous works without evidence, this article focuses on a few well-supported techniques and historical themes.
+
+## Evidence Notes
+
+Unsupported 2025 book references were removed. Museum and educational references now back the core claims directly.
 
 ## Further Reading
 
-- [The Story of Art (E.H. Gombrich)](https://www.phaidon.com/store/art/the-story-of-art-pocket-edition-9780714872216/)
+- [Italian Renaissance Art - The Metropolitan Museum of Art](https://www.metmuseum.org/toah/hd/itar/hd_itar.htm)
+- [Linear Perspective - Smarthistory](https://smarthistory.org/technique/linear-perspective/)
+- [The Chiaroscuro Woodcut in Renaissance Italy - National Gallery of Art](https://www.nga.gov/exhibitions/chiaroscuro-woodcut-renaissance-italy)
 
 ## Related Articles
 
-- [Renaissance: Humanism, Art, and the Rebirth of Classical Learning](../../history/renaissance-humanism-art-and-the-rebirth-of-classical-learning.md)
-- [AI Art and Creativity: Generative Models and Authorship](../../ai/ai-art-and-creativity.md)
-- [AI for Art and Creativity: GANs, Diffusion, and Computational Aesthetics](../../ai/ai-for-art-and-creativity-gans-diffusion-and-computational-aesthetics.md)
+- [Architecture History](architecture-history.md)
+- [Leonardo da Vinci](../history/leonardo-da-vinci.md)
+- [Renaissance](../history/renaissance.md)

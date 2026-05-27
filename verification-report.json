@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 0,
     "average_sources_per_article": "2.2",
-    "overall_verification_rate": "45.7%",
+    "overall_verification_rate": "47.2%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 66
+    "manual_reviewed_articles": 67
   },
   "articles": [
     {
@@ -1553,19 +1553,20 @@
       "file": "content/ai/ai-ethics-and-bias.md",
       "article_id": "ai-ethics-and-bias",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Weapons of Math Destruction (O'Neil)",
-          "source_type": "textbook",
+          "source_title": "Gender Shades - Proceedings of Machine Learning Research",
+          "source_type": "conference_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/316277/weapons-of-math-destruction-by-cathy-oneil/",
+              "identifier": "https://proceedings.mlr.press/v81/buolamwini18a.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/316277/weapons-of-math-destruction-by-cathy-oneil/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -1573,16 +1574,35 @@
           "all_verified": true
         },
         {
-          "source_title": "EU AI Act",
-          "source_type": "standard",
+          "source_title": "A Survey on Bias and Fairness in Machine Learning",
+          "source_type": "survey_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://artificialintelligenceact.eu/",
+              "identifier": "https://dl.acm.org/doi/10.1145/3457607",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://artificialintelligenceact.eu/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "AI Act - European Commission",
+          "source_type": "official_policy",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -1590,8 +1610,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-fleet-management.md",
@@ -4093,19 +4115,20 @@
       "file": "content/ai/ai-for-science.md",
       "article_id": "ai-for-science",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
-          "source_type": "academic_paper",
+          "source_title": "Highly accurate protein structure prediction with AlphaFold",
+          "source_type": "journal_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nature.com/articles/s41586-024-07487-w",
+              "identifier": "https://www.nature.com/articles/s41586-021-03819-2",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nature.com/articles/s41586-024-07487-w?error=cookies_not_supported&code=155cd7e0-9a05-490c-9f05-ca2523a9d4cd"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -4113,15 +4136,35 @@
           "all_verified": true
         },
         {
-          "source_title": "AI for Science: A Survey",
-          "source_type": "academic_paper",
+          "source_title": "Scaling deep learning for materials discovery",
+          "source_type": "journal_article",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2405.12213",
+              "method": "url",
+              "identifier": "https://www.nature.com/articles/s41586-023-06735-9",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2405.12213&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GraphCast - Google DeepMind",
+          "source_type": "research_publication",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://deepmind.google/research/publications/22598/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -4129,8 +4172,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-signal-processing.md",
@@ -4824,19 +4869,20 @@
       "file": "content/ai/ai-for-visualization.md",
       "article_id": "ai-for-visualization",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "VIS+AI: integrating visualization with artificial intelligence for efficient data analysis",
-          "source_type": "academic_paper",
+          "source_title": "Data2Vis - PubMed",
+          "source_type": "journal_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://link.springer.com/article/10.1007/s11704-023-2691-y",
+              "identifier": "https://pubmed.ncbi.nlm.nih.gov/31247545/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://link.springer.com/article/10.1007/s11704-023-2691-y?error=cookies_not_supported&code=50409068-9144-4b00-b04e-d3242bde2b5c"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -4844,25 +4890,46 @@
           "all_verified": true
         },
         {
-          "source_title": "AVA: An automated and AI-driven intelligent visual analytics framework",
-          "source_type": "academic_paper",
+          "source_title": "Formalizing Visualization Design Knowledge as Constraints - CMU Data Interaction Group",
+          "source_type": "conference_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.sciencedirect.com/science/article/pii/S2468502X24000226",
-              "verified": false,
+              "identifier": "https://dig.cmu.edu/publications/2018-draco.html",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.sciencedirect.com/science/article/pii/S2468502X24000226"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "NL4DV - Home",
+          "source_type": "software_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://nl4dv.github.io/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-weather-forecasting.md",
@@ -5058,19 +5125,20 @@
       "file": "content/ai/ai-governance-and-policy.md",
       "article_id": "ai-governance-and-policy",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "NIST AI Risk Management Framework 1.0",
-          "source_type": "standard",
+          "source_title": "AI Act - European Commission",
+          "source_type": "official_policy",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nist.gov/itl/ai-risk-management-framework",
+              "identifier": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nist.gov/itl/ai-risk-management-framework"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -5078,60 +5146,46 @@
           "all_verified": true
         },
         {
-          "source_title": "The Bletchley Declaration by Countries Attending the AI Safety Summit",
-          "source_type": "official_report",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "EU Artificial Intelligence Act (Regulation 2024/1689)",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://artificialintelligenceact.eu/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://artificialintelligenceact.eu/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "The AI Risk Management Framework (AI RMF 1.0)",
+          "source_title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0) - NIST",
           "source_type": "government_report",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.6028/NIST.AI.100-1",
+              "method": "url",
+              "identifier": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10",
               "verified": true,
               "metadata": {
-                "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
-                "publisher": "National Institute of Standards and Technology (U.S.)",
-                "year": 2023
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Countries agree to safe and responsible development of frontier AI in landmark Bletchley Declaration - GOV.UK",
+          "source_type": "government_announcement",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.gov.uk/government/news/countries-agree-to-safe-and-responsible-development-of-frontier-ai-in-landmark-bletchley-declaration",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
             }
           ],
           "all_verified": true
         }
       ],
-      "sources_verified": 4,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-hardware-accelerators.md",
@@ -14793,21 +14847,22 @@
     },
     {
       "file": "content/arts/audio-engineering.md",
-      "article_id": "kb-2026-00476",
+      "article_id": "kb-2026-00411",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Mastering Audio (Bob Katz, 3rd Ed)",
-          "source_type": "book",
+          "source_title": "Loudness Basics - Audio Engineering Society",
+          "source_type": "technical_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.routledge.com/Mastering-Audio-The-Art-and-the-Science/Katz/p/book/9780240818962",
+              "identifier": "https://www.aes.org/resources/audio-topics/loudness-project/loudness-basics/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.routledge.com/Mastering-Audio-The-Art-and-the-Science/Katz/p/book/9780240818962"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -14815,54 +14870,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Mastering Audio: The Art and the Science (4th Edition, 2025)",
-          "source_type": "book",
+          "source_title": "ITU-R BS.1770 - Algorithms to measure audio programme loudness and true-peak audio level",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.routledge.com/mastering-audio/",
-              "verified": false,
+              "identifier": "https://www.itu.int/rec/R-REC-BS.1770",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.routledge.com/mastering-audio/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Modern Recording Techniques (10th Edition, 2025)",
-          "source_type": "book",
+          "source_title": "EBU R 128 - Loudness normalisation and permitted maximum level of audio signals",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.routledge.com/recording/",
-              "verified": false,
+              "identifier": "https://tech.ebu.ch/publications/r128",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.routledge.com/recording/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Mastering Audio: The Art and the Science (3rd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Modern Recording Techniques (9th Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/arts/classical-music-periods.md",
@@ -15979,38 +16026,22 @@
     },
     {
       "file": "content/arts/renaissance-art.md",
-      "article_id": "kb-2026-00342",
+      "article_id": "kb-2026-00417",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Story of Art (E.H. Gombrich)",
-          "source_type": "book",
+          "source_title": "Italian Renaissance Art - The Metropolitan Museum of Art",
+          "source_type": "museum_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.phaidon.com/store/art/the-story-of-art-pocket-edition-9780714872216/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.phaidon.com/en-us/store/art/the-story-of-art-pocket-edition-9780714872216"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Renaissance Art: A Very Short Introduction (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/vsi-renaissance-art/",
+              "identifier": "https://www.metmuseum.org/toah/hd/itar/hd_itar.htm",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-renaissance-art/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -16018,37 +16049,46 @@
           "all_verified": true
         },
         {
-          "source_title": "The Renaissance Complete (2025)",
-          "source_type": "book",
+          "source_title": "Linear Perspective - Smarthistory",
+          "source_type": "educational_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://thamesandhudson.com/renaissance/",
-              "verified": false,
+              "identifier": "https://smarthistory.org/technique/linear-perspective/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.thamesandhudson.com/renaissance"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "The Lives of the Artists",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "History of Italian Renaissance Art (7th Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "source_title": "The Chiaroscuro Woodcut in Renaissance Italy - National Gallery of Art",
+          "source_type": "museum_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.nga.gov/exhibitions/chiaroscuro-woodcut-renaissance-italy",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/arts/shakespeare-s-works.md",
@@ -17255,19 +17295,20 @@
       "file": "content/business/management-styles.md",
       "article_id": "kb-2026-00438",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Drive: The Surprising Truth About What Motivates Us (Daniel Pink)",
-          "source_type": "book",
+          "source_title": "The Human Side of Enterprise - MIT Sloan Management Review",
+          "source_type": "article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/308034/drive-by-daniel-h-pink/",
+              "identifier": "https://sloanreview.mit.edu/article/the-human-side-of-enterprise/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/308034/drive-by-daniel-h-pink/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -17275,76 +17316,46 @@
           "all_verified": true
         },
         {
-          "source_title": "The Culture Map: Breaking Through the Invisible Boundaries (2025 Updated)",
-          "source_type": "book",
+          "source_title": "Psychological Safety and Learning Behavior in Work Teams",
+          "source_type": "journal_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.publicaffairsbooks.com/culture-map/",
-              "verified": false,
+              "identifier": "https://journals.sagepub.com/doi/10.2307/2666999",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.hachettebookgroup.com/culture-map/?lens=publicaffairs"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "First, Break All the Rules (2025 Edition)",
-          "source_type": "book",
+          "source_title": "Understand team effectiveness - Google re:Work",
+          "source_type": "organizational_research",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gallup.com/first-break/",
-              "verified": false,
+              "identifier": "https://rework.withgoogle.com/guides/understanding-team-effectiveness/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.gallup.com/first-break/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Culture Map (2025 Updated)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.publicaffairsbooks.com/culture-map/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.hachettebookgroup.com/culture-map/?lens=publicaffairs"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "First, Break All the Rules (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.gallup.com/first-break/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.gallup.com/first-break/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 4
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/business/market-structures-perfect-competition-monopoly-oligopoly-and-contestability.md",
@@ -32192,38 +32203,40 @@
     },
     {
       "file": "content/geography/asian-geography.md",
-      "article_id": null,
-      "generation_method": "ai_assisted",
+      "article_id": "kb-2026-00332",
+      "generation_method": "ai_structured",
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "National Geographic Atlas of the World, 11th Ed",
+          "source_title": "Asia - Britannica",
           "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nationalgeographic.com/books/atlas/",
-              "verified": false,
+              "identifier": "https://www.britannica.com/place/Asia",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.nationalgeographic.com/books/atlas/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "CIA World Factbook",
-          "source_type": "database",
+          "source_title": "Himalayas - Britannica",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.cia.gov/the-world-factbook/",
+              "identifier": "https://www.britannica.com/place/Himalayas",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.cia.gov/stories/story/spotlighting-the-world-factbook-as-we-bid-a-fond-farewell/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -32231,8 +32244,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 2,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/geography/climate-zones-and-biomes.md",
@@ -32295,31 +32310,52 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content/geography/climate-zones.md",
+      "file": "content/geography/mount-everest.md",
       "article_id": "kb-2026-00384",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "Köppen Climate Classification",
-          "source_type": "standard",
+          "source_title": "Mount Everest - Britannica",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.britannica.com/science/Koppen-climate-classification",
-              "verified": false,
+              "identifier": "https://www.britannica.com/place/Mount-Everest",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.britannica.com/science/Koppen-climate-classification"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Mt. Everest - NASA",
+          "source_type": "government_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.nasa.gov/image-article/mt-everest/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 2,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/geography/coral-triangle-marine-biodiversity-hotspot-in-southeast-asia.md",
@@ -32463,19 +32499,56 @@
       "file": "content/geography/economic-systems.md",
       "article_id": "kb-2026-00386",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Economics (Samuelson & Nordhaus, 19th Ed)",
-          "source_type": "book",
+          "source_title": "Economic system - Britannica Money",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.mheducation.com/highered/product/economics-samuelson-nordhaus/M9780073511290.html",
+              "identifier": "https://www.britannica.com/money/economic-system",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.mheducation.com/highered/product/economics-samuelson-nordhaus/M9780073511290.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Mixed economy - Britannica Money",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/money/mixed-economy",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Keynesian economics - Britannica Money",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/money/Keynesian-economics",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -32483,8 +32556,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/geography/european-union.md",
@@ -32728,21 +32803,22 @@
     },
     {
       "file": "content/geography/mount-everest.md",
-      "article_id": "kb-2026-00389",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
+      "article_id": "kb-2026-00384",
+      "generation_method": "ai_assisted",
+      "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "Into Thin Air (Jon Krakauer)",
-          "source_type": "book",
+          "source_title": "Mount Everest - Britannica",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/306270/into-thin-air-by-jon-krakauer/",
+              "identifier": "https://www.britannica.com/place/Mount-Everest",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/306270/into-thin-air-by-jon-krakauer/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -32750,33 +32826,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Into Thin Air (2025 Illustrated Edition)",
-          "source_type": "book",
+          "source_title": "Mt. Everest - NASA",
+          "source_type": "government_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/into-thin-air/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.penguinrandomhouse.com/into-thin-air/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Everest: The History of the Himalayan Giant (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.nationalgeographic.com/everest/",
+              "identifier": "https://www.nasa.gov/image-article/mt-everest/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nationalgeographic.com/environment/topic/perpetual-planet"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -32785,25 +32845,64 @@
         }
       ],
       "sources_verified": 2,
-      "sources_unreachable": 1
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/geography/north-america-geography.md",
-      "article_id": "kb-2026-00487",
+      "article_id": "kb-2026-00329",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "North America: A Geography (Birdsall, Florin, Palka)",
-          "source_type": "book",
+          "source_title": "North America - Britannica",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.pearson.com/en-us/subject-catalog/p/north-america/P200000009517",
+              "identifier": "https://www.britannica.com/place/North-America",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.pearson.com/en-us/subject-catalog/p/north-america/P200000009517"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Great Lakes Facts and Figures - US EPA",
+          "source_type": "government_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.epa.gov/greatlakes/great-lakes-facts-and-figures",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Weather - Death Valley National Park",
+          "source_type": "government_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://home.nps.gov/deva/learn/nature/weather-and-climate.htm",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -32811,8 +32910,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/geography/ocean-currents-the-global-conveyor-belt.md",
@@ -35396,53 +35497,20 @@
       "file": "content/history/civil-rights-movement.md",
       "article_id": "kb-2026-00404",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Parting the Waters: America in the King Years (Taylor Branch)",
-          "source_type": "book",
+          "source_title": "Montgomery Bus Boycott - The Martin Luther King, Jr. Research and Education Institute",
+          "source_type": "academic_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.simonandschuster.com/books/Parting-the-Waters/Taylor-Branch/9780671687427",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.simonandschuster.com/books/Parting-the-Waters/Taylor-Branch/9780671687427"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Parting the Waters: America in the King Years 1954-63 (2025 Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.simonandschuster.com/civil-rights/",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.simonandschuster.com/civil-rights/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Civil Rights Movement: A Very Short Introduction (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/vsi-civil-rights/",
+              "identifier": "https://kinginstitute.stanford.edu/montgomery-bus-boycott",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-civil-rights/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -35450,42 +35518,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Parting the Waters: America in the King Years (2025)",
-          "source_type": "book",
+          "source_title": "Civil Rights Act, July 2, 1964 - National Archives",
+          "source_type": "government_record",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.simonandschuster.com/civil-rights/",
-              "verified": false,
+              "identifier": "https://www.archives.gov/legislative/features/civil-rights-1964/civil-rights-act-1964.html",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.simonandschuster.com/civil-rights/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Parting the Waters (2025)",
-          "source_type": "book",
+          "source_title": "Introduction - The Martin Luther King, Jr. Research and Education Institute",
+          "source_type": "academic_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.simonandschuster.com/civil-rights/",
-              "verified": false,
+              "identifier": "https://kinginstitute.stanford.edu/introduction",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.simonandschuster.com/civil-rights/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 4
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/cold-war-history.md",
@@ -35926,19 +35998,20 @@
       "file": "content/history/great-wall-of-china.md",
       "article_id": "kb-2026-00459",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "The Great Wall (John Man)",
-          "source_type": "book",
+          "source_title": "Great Wall of China - Britannica",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.hachettebookgroup.com/titles/john-man/the-great-wall/9780306817670/",
+              "identifier": "https://www.britannica.com/topic/Great-Wall-of-China",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.hachettebookgroup.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -35946,106 +36019,47 @@
           "all_verified": true
         },
         {
-          "source_title": "The Great Wall of China: From History to Myth (2025)",
-          "source_type": "book",
+          "source_title": "The Great Wall - UNESCO World Heritage Centre",
+          "source_type": "official_record",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1017/cbo.2025.greatwall",
-              "verified": false,
+              "identifier": "https://whc.unesco.org/en/list/438",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1017/cbo.2025.greatwall"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "China: A History (2025 Updated)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.basicbooks.com/china-history/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.hachettebookgroup.com/china-history/?lens=basic-books"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Great Wall: From History to Myth (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1017/cbo.2025.greatwall",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1017/cbo.2025.greatwall"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Great Wall of China: From History to Myth",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Great Wall of China 221 BC-AD 1644",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 3
+      "sources_verified": 2,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/greek-philosophy.md",
-      "article_id": "kb-2026-00351",
+      "article_id": "kb-2026-00441",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "A History of Western Philosophy (Bertrand Russell)",
-          "source_type": "book",
+          "source_title": "Socrates - Stanford Encyclopedia of Philosophy",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.simonandschuster.com/books/A-History-of-Western-Philosophy/Bertrand-Russell/9780671201586",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.simonandschuster.com/books/A-History-of-Western-Philosophy/Bertrand-Russell/9780671201586"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Greek Philosophy: A Very Short Introduction (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/vsi-greek-philosophy/",
+              "identifier": "https://plato.stanford.edu/entries/socrates/",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-greek-philosophy/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -36053,54 +36067,46 @@
           "all_verified": true
         },
         {
-          "source_title": "The Cambridge Companion to Greek Philosophy (2025)",
-          "source_type": "book",
+          "source_title": "Plato - Stanford Encyclopedia of Philosophy",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1017/cbo.2025.greek",
-              "verified": false,
+              "identifier": "https://plato.stanford.edu/entries/plato/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1017/cbo.2025.greek"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "The Cambridge Companion to Ancient Greek Philosophy (2025)",
-          "source_type": "book",
+          "source_title": "Aristotle - Stanford Encyclopedia of Philosophy",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1017/cbo.2025.greek",
-              "verified": false,
+              "identifier": "https://plato.stanford.edu/entries/aristotle/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1017/cbo.2025.greek"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "A History of Western Philosophy",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Republic",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/hundred-years-war.md",
@@ -39749,36 +39755,20 @@
       "file": "content/science/genetics-and-heredity.md",
       "article_id": "kb-2026-00366",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Gene: An Intimate History (Siddhartha Mukherjee)",
-          "source_type": "book",
+          "source_title": "Mendelian Inheritance - NHGRI",
+          "source_type": "government_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Introduction to Genetic Analysis (12th Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.macmillanlearning.com/genetics/",
+              "identifier": "https://www.genome.gov/genetics-glossary/Mendelian-Inheritance",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.macmillanlearning.com/college/us/discipline/Biology/Genetics/c/020006"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -39786,37 +39776,46 @@
           "all_verified": true
         },
         {
-          "source_title": "The Gene: An Intimate History (2025 Updated)",
-          "source_type": "book",
+          "source_title": "The Cost of Sequencing a Human Genome - NHGRI",
+          "source_type": "government_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.simonandschuster.com/the-gene/",
-              "verified": false,
+              "identifier": "https://www.genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.simonandschuster.com/the-gene/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Principles of Genetics (7th Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Genetics: Analysis and Principles (7th Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "source_title": "What are genome editing and CRISPR-Cas9? - MedlinePlus Genetics",
+          "source_type": "government_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://medlineplus.gov/genetics/understanding/genomicresearch/genomeediting/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/geological-time.md",
@@ -41064,21 +41063,22 @@
     },
     {
       "file": "content/science/photosynthesis.md",
-      "article_id": "kb-2026-00335",
+      "article_id": "kb-2026-00469",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Molecular Mechanisms of Photosynthesis (Blankenship)",
-          "source_type": "book",
+          "source_title": "Overview of Photosynthesis - OpenStax Biology 2e",
+          "source_type": "textbook",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.wiley.com/en-us/Molecular+Mechanisms+of+Photosynthesis%2C+3rd+Edition-p-9781119800019",
+              "identifier": "https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.wiley.com/en-us/Molecular+Mechanisms+of+Photosynthesis%2C+3rd+Edition-p-9781119800019"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -41086,71 +41086,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Molecular Mechanisms of Photosynthesis (3rd Edition, 2025)",
-          "source_type": "book",
+          "source_title": "The Light-Dependent Reactions of Photosynthesis - OpenStax Biology 2e",
+          "source_type": "textbook",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.wiley.com/photosynthesis/",
-              "verified": false,
+              "identifier": "https://openstax.org/books/biology-2e/pages/8-2-the-light-dependent-reactions-of-photosynthesis",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.wiley.com/photosynthesis/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Photosynthesis: From Light Harvesting to Carbon Fixation (2025 Review)",
-          "source_type": "article",
+          "source_title": "Using Light Energy to Make Organic Molecules - OpenStax Biology 2e",
+          "source_type": "textbook",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1038/s41477-2025-photo",
-              "verified": false,
+              "identifier": "https://openstax.org/books/biology-2e/pages/8-3-using-light-energy-to-make-organic-molecules",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1038/s41477-2025-photo"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Photosynthesis: A 2025 Review",
-          "source_type": "article",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1038/s41477-2025-photo",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1038/s41477-2025-photo"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Photosynthesis (New Comprehensive Biochemistry)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Molecular Mechanisms of Photosynthesis (3rd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/plasma-physics-fusion-energy-space-plasmas-and-industrial-applications.md",

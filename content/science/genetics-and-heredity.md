@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: science
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-28'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -15,87 +15,71 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-science-01
-    statement: Human Genome Project sequenced all 3 billion base pairs
-    source_title: 'The Gene: An Intimate History (Siddhartha Mukherjee)'
-    source_url: https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524
-    confidence: high
-  - id: fact-science-001
-    statement: >-
-      Genetics studies heredity — how traits pass from parents to offspring. Mendel's laws (1866): segregation (alleles separate) and independent assortment. DNA structure (Watson/Crick, 1953). Human
-      Genome Project (completed 2003) sequenced all ~3 billion base pairs. CRISPR-Cas9 (2012) enables precise gene editing.
-    source_title: 'The Gene: An Intimate History (Siddhartha Mukherjee)'
-    source_url: https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524
+  - id: fact-genetics-01
+    statement: Mendelian inheritance describes patterns in which traits are passed from parents to offspring through genes.
+    source_title: Mendelian Inheritance - NHGRI
+    source_url: https://www.genome.gov/genetics-glossary/Mendelian-Inheritance
     confidence: medium
-  - id: fact-science-002
-    statement: 'CRISPR: bacterial immune system repurposed for gene editing — Cas9 protein cuts DNA at guide RNA target.'
-    source_title: 'The Gene: An Intimate History (Siddhartha Mukherjee)'
-    source_url: https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524
+  - id: fact-genetics-02
+    statement: The Human Genome Project generated a reference sequence totaling about 3 billion DNA bases and was completed in 2003.
+    source_title: The Cost of Sequencing a Human Genome - NHGRI
+    source_url: https://www.genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost
     confidence: medium
-completeness: 0.88
+  - id: fact-genetics-03
+    statement: CRISPR-Cas9 genome editing uses a guide RNA to direct the Cas9 enzyme to a target DNA sequence.
+    source_title: What are genome editing and CRISPR-Cas9? - MedlinePlus Genetics
+    source_url: https://medlineplus.gov/genetics/understanding/genomicresearch/genomeediting/
+    confidence: medium
+completeness: 0.8
 known_gaps:
-  - Statistics and data cited are from 2016 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-  - Climate and environmental data may have been updated by more recent IPCC or scientific assessments
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - Complex inheritance, epigenetics, population genetics, and clinical interpretation are not covered in depth.
+disputed_statements: []
 primary_sources:
-  - title: 'The Gene: An Intimate History (Siddhartha Mukherjee)'
+  - title: Mendelian Inheritance - NHGRI
+    type: government_reference
+    year: 2025
+    url: https://www.genome.gov/genetics-glossary/Mendelian-Inheritance
+    institution: National Human Genome Research Institute
+  - title: The Cost of Sequencing a Human Genome - NHGRI
+    type: government_reference
+    year: 2025
+    url: https://www.genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost
+    institution: National Human Genome Research Institute
+  - title: What are genome editing and CRISPR-Cas9? - MedlinePlus Genetics
+    type: government_reference
+    year: 2022
+    url: https://medlineplus.gov/genetics/understanding/genomicresearch/genomeediting/
+    institution: National Library of Medicine
+secondary_sources:
+  - title: The Gene
     type: book
     year: 2016
+    authors:
+      - Mukherjee, Siddhartha
     url: https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524
-    institution: Scribner
-  - title: Introduction to Genetic Analysis (12th Edition, 2025)
-    type: book
-    year: 2025
-    authors:
-      - Griffiths A.J.F.
-      - Doebley J.
-    institution: W.H. Freeman
-    url: https://www.macmillanlearning.com/genetics/
-  - title: 'The Gene: An Intimate History (2025 Updated)'
-    type: book
-    year: 2025
-    authors:
-      - Mukherjee S.
-    institution: Scribner
-    url: https://www.simonandschuster.com/the-gene/
-  - title: Principles of Genetics (7th Edition)
-    authors:
-      - Snustad, D.P.
-      - Simmons, M.J.
-    type: book
-    year: 2015
-    institution: Wiley
-  - title: 'Genetics: Analysis and Principles (7th Edition)'
-    authors:
-      - Brooker, R.J.
-    type: book
-    year: 2020
-    institution: McGraw-Hill
-secondary_sources:
-  - title: Molecular Biology of the Gene
-    type: book
-    year: 2013
-    url: https://www.pearson.com/en-us/subject-catalog/p/molecular-biology-of-the-gene/P200000007006
-    institution: James D. Watson et al., Pearson
-  - title: Biology (Campbell, 12th Edition)
-    type: textbook
-    year: 2020
-    url: https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058
-    institution: Pearson Education
+    institution: Simon & Schuster
 ---
 
 ## TL;DR
 
-Genetics studies heredity — how traits pass from parents to offspring. Mendel's laws (1866): segregation (alleles separate) and independent assortment. DNA structure (Watson/Crick, 1953). Human Genome Project (completed 2003) sequenced all ~3 billion base pairs. CRISPR-Cas9 (2012) enables precise gene editing.
+Genetics studies heredity: how DNA, genes, and inheritance patterns help explain traits passed across generations.
 
 ## Core Explanation
 
-Mendel: pea plant experiments → dominant/recessive traits. Gene: DNA segment coding for protein. Chromosome: organized DNA (humans: 23 pairs). Mutations: changes in DNA sequence — can be harmful (disease), neutral, or beneficial (evolution). CRISPR: bacterial immune system repurposed for gene editing — Cas9 protein cuts DNA at guide RNA target. Applications: treating genetic diseases, crop improvement. Ethical concerns: human germline editing.
+For a compact public entry, the safest anchors are Mendelian inheritance, the Human Genome Project, and CRISPR-Cas9 genome editing. Each represents a different level of genetics: inheritance patterns, genome-scale sequencing, and molecular editing.
+
+## Evidence Notes
+
+The previous version bundled many claims into one long atomic fact and cited a popular science book for precise genome and CRISPR mechanics. This version uses NHGRI and MedlinePlus Genetics pages.
 
 ## Further Reading
 
-- [The Gene: An Intimate History (Siddhartha Mukherjee)](https://www.simonandschuster.com/books/The-Gene/Siddhartha-Mukherjee/9781476733524)
+- [Mendelian Inheritance - NHGRI](https://www.genome.gov/genetics-glossary/Mendelian-Inheritance)
+- [The Cost of Sequencing a Human Genome - NHGRI](https://www.genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost)
+- [What are genome editing and CRISPR-Cas9? - MedlinePlus Genetics](https://medlineplus.gov/genetics/understanding/genomicresearch/genomeediting/)
+
+## Related Articles
+
+- [DNA Structure](dna-structure.md)
+- [Molecular Biology Central Dogma](molecular-biology-central-dogma.md)
+- [Epigenetics](epigenetics-dna-methylation-histone-modification-and-gene-regulation.md)

@@ -1,13 +1,13 @@
 ---
-id: kb-2026-00389
+id: kb-2026-00384
 title: Mount Everest
 schema_type: TechArticle
 category: geography
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
-generation_method: ai_structured
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: ai_assisted
 ai_models:
   - claude-opus
 derived_from_human_seed: true
@@ -15,91 +15,65 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-geography-001
-    statement: >-
-      Mount Everest (8,848.86m / 29,031.7ft) is Earth's highest mountain above sea level, on the Nepal-Tibet (China) border. First ascent: Edmund Hillary and Tenzing Norgay (May 29, 1953). Over 6,000
-      people have summited; ~330 have died trying. Commercial expeditions (1990s+) dramatically increased summit attempts.
-    source_title: Into Thin Air (Jon Krakauer)
-    source_url: https://www.penguinrandomhouse.com/books/306270/into-thin-air-by-jon-krakauer/
+  - id: fact-mount-everest-01
+    statement: Nepal and China jointly announced Mount Everest's height as 8,848.86 meters, or 29,031.69 feet, in 2020.
+    source_title: Mount Everest - Britannica
+    source_url: https://www.britannica.com/place/Mount-Everest
     confidence: medium
-  - id: fact-geography-002
-    statement: "Death zone: above 8,000m, oxygen insufficient for human survival — even with supplemental O₂, body deteriorates."
-    source_title: Into Thin Air (Jon Krakauer)
-    source_url: https://www.penguinrandomhouse.com/books/306270/into-thin-air-by-jon-krakauer/
+  - id: fact-mount-everest-02
+    statement: Mount Everest is located in the Himalayas on the Nepal-China border.
+    source_title: Mount Everest - Britannica
+    source_url: https://www.britannica.com/place/Mount-Everest
     confidence: medium
-  - id: fact-geography-003
-    statement: "Key dangers: altitude sickness (HAPE/HACE), avalanches, crevasses, exposure, summit fever."
-    source_title: Into Thin Air (Jon Krakauer)
-    source_url: https://www.penguinrandomhouse.com/books/306270/into-thin-air-by-jon-krakauer/
+  - id: fact-mount-everest-03
+    statement: Edmund Hillary and Tenzing Norgay made the first confirmed ascent of Mount Everest in 1953.
+    source_title: Mt. Everest - NASA
+    source_url: https://www.nasa.gov/image-article/mt-everest/
     confidence: medium
-  - id: fact-geography-004
-    statement: "Two main routes: South Col (Nepal, easier), North Col (Tibet)."
-    source_title: Into Thin Air (Jon Krakauer)
-    source_url: https://www.penguinrandomhouse.com/books/306270/into-thin-air-by-jon-krakauer/
-    confidence: medium
-  - id: fact-geography-005
-    statement: "Traffic jams: 2019 photo of climbers queueing near summit sparked regulation debate."
-    source_title: Into Thin Air (Jon Krakauer)
-    source_url: https://www.penguinrandomhouse.com/books/306270/into-thin-air-by-jon-krakauer/
-    confidence: medium
-completeness: 0.88
+completeness: 0.78
 known_gaps:
-  - Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed
-  - Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - Current annual climbing statistics, death counts, permitting, and route conditions change over time and are not tracked here.
+disputed_statements: []
 primary_sources:
-  - title: Into Thin Air (Jon Krakauer)
+  - title: Mount Everest - Britannica
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/place/Mount-Everest
+    institution: Encyclopaedia Britannica
+  - title: Mt. Everest - NASA
+    type: government_reference
+    year: 2009
+    url: https://www.nasa.gov/image-article/mt-everest/
+    institution: NASA
+secondary_sources:
+  - title: Into Thin Air
     type: book
     year: 1997
+    authors:
+      - Krakauer, Jon
     url: https://www.penguinrandomhouse.com/books/306270/into-thin-air-by-jon-krakauer/
     institution: Villard
-  - title: Into Thin Air (2025 Illustrated Edition)
-    type: book
-    year: 2025
-    authors:
-      - Krakauer J.
-    institution: Anchor
-    url: https://www.penguinrandomhouse.com/into-thin-air/
-  - title: "Everest: The History of the Himalayan Giant (2025)"
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: National Geographic
-    url: https://www.nationalgeographic.com/everest/
-secondary_sources:
-  - title: CIA World Factbook
-    type: database
-    year: 2025
-    url: https://www.cia.gov/the-world-factbook/
-    institution: Central Intelligence Agency
-  - title: National Geographic Atlas
-    type: reference
-    year: 2019
-    url: https://www.nationalgeographic.com/maps/atlas/
-    institution: National Geographic
 ---
+
 ## TL;DR
 
-Mount Everest (8,848.86m / 29,031.7ft) is Earth's highest mountain above sea level, on the Nepal-Tibet (China) border. First ascent: Edmund Hillary and Tenzing Norgay (May 29, 1953). Over 6,000 people have summited; ~330 have died trying. Commercial expeditions (1990s+) dramatically increased summit attempts.
+Mount Everest is the highest mountain above sea level and lies in the Himalayas on the Nepal-China border.
 
 ## Core Explanation
 
-Death zone: above 8,000m, oxygen insufficient for human survival — even with supplemental O₂, body deteriorates. Key dangers: altitude sickness (HAPE/HACE), avalanches, crevasses, exposure, summit fever. Two main routes: South Col (Nepal, easier), North Col (Tibet). Traffic jams: 2019 photo of climbers queueing near summit sparked regulation debate. Helicopters cannot fly above ~6,500m — rescue extremely difficult.
+The current compact article records stable facts: official height, location, and first confirmed ascent. It does not include live summit/death counts because those figures change and require a maintained mountaineering database.
+
+## Evidence Notes
+
+The previous version used a memoir page to support height, route, death, and traffic claims. This repair keeps only stable facts backed by Britannica and NASA.
 
 ## Further Reading
 
-- [Into Thin Air (Jon Krakauer)](https://www.penguinrandomhouse.com/books/306270/into-thin-air-by-jon-krakauer/)
-atomic_facts:
-  - id: "fact-geography-001"
-    statement: "Mount Everest (8,848.86m / 29,031.7ft) is Earth's highest mountain above sea level, on the Nepal-Tibet (China) border"
-    confidence: "medium"
-  - id: "fact-geography-002"
-    statement: "First ascent: Edmund Hillary and Tenzing Norgay (May 29, 1953)"
-    confidence: "medium"
-  - id: "fact-geography-003"
-    statement: "Traffic jams: 2019 photo of climbers queueing near summit sparked regulation debate"
-    confidence: "medium"
+- [Mount Everest - Britannica](https://www.britannica.com/place/Mount-Everest)
+- [Mt. Everest - NASA](https://www.nasa.gov/image-article/mt-everest/)
+
+## Related Articles
+
+- [Asian Geography](asian-geography.md)
+- [Himalayas](himalayas-geology-glaciers-and-geopolitical-boundaries.md)
+- [Plate Tectonics Theory](plate-tectonics-theory.md)

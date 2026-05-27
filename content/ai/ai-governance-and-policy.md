@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: ai
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-28'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -15,98 +15,69 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: f1
-    statement: >-
-      The EU AI Act (Regulation 2024/1689) is the world's first comprehensive AI regulatory framework, using a risk-based approach: unacceptable risk (banned), high-risk (strict compliance), limited
-      risk (transparency), minimal risk (no regulation).
-    source_title: 'European Union. Regulation (EU) 2024/1689: The Artificial Intelligence Act. 2024'
-    source_url: https://artificialintelligenceact.eu/
-    confidence: high
-  - id: f2
-    statement: The US Executive Order on AI (October 2023) required developers of powerful AI systems to share safety test results with the government, while NIST developed the AI Risk Management Framework.
-    source_title: NIST. AI Risk Management Framework 1.0. 2023-2024
-    source_url: https://www.nist.gov/itl/ai-risk-management-framework
-    confidence: high
-  - id: f3
-    statement: The Bletchley Declaration (2023, UK AI Safety Summit) was the first international agreement on frontier AI safety, signed by 28 countries including the US, UK, EU, and China.
-    source_title: UK Government. The Bletchley Declaration on Frontier AI Safety. 2023
-    source_url: https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration
-    confidence: high
-completeness: 0.9
+  - id: fact-ai-governance-01
+    statement: The EU AI Act is Regulation (EU) 2024/1689 and applies risk-based rules to AI systems in the European Union.
+    source_title: AI Act - European Commission
+    source_url: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+    confidence: medium
+  - id: fact-ai-governance-02
+    statement: NIST AI RMF 1.0 is a voluntary framework intended to help organizations manage AI risks and promote trustworthy AI development and use.
+    source_title: Artificial Intelligence Risk Management Framework (AI RMF 1.0) - NIST
+    source_url: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10
+    confidence: medium
+  - id: fact-ai-governance-03
+    statement: The Bletchley Declaration was announced at the 2023 UK AI Safety Summit and was supported by 28 countries plus the European Union.
+    source_title: Countries agree to safe and responsible development of frontier AI in landmark Bletchley Declaration - GOV.UK
+    source_url: https://www.gov.uk/government/news/countries-agree-to-safe-and-responsible-development-of-frontier-ai-in-landmark-bletchley-declaration
+    confidence: medium
+completeness: 0.84
+known_gaps:
+  - Country-by-country implementation timelines and enforcement details change over time and require ongoing updates.
+disputed_statements: []
 primary_sources:
-  - title: NIST AI Risk Management Framework 1.0
-    type: standard
-    year: 2023
-    url: https://www.nist.gov/itl/ai-risk-management-framework
-    institution: NIST
-  - title: The Bletchley Declaration by Countries Attending the AI Safety Summit
-    type: official_report
-    year: 2023
-    url: https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration
-    institution: UK Government
-  - title: EU Artificial Intelligence Act (Regulation 2024/1689)
-    type: standard
+  - title: AI Act - European Commission
+    type: official_policy
     year: 2024
-    url: https://artificialintelligenceact.eu/
-    institution: European Union
-  - title: The AI Risk Management Framework (AI RMF 1.0)
+    url: https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+    institution: European Commission
+  - title: Artificial Intelligence Risk Management Framework (AI RMF 1.0) - NIST
     type: government_report
     year: 2023
-    doi: 10.6028/NIST.AI.100-1
-    institution: NIST
-known_gaps:
-  - Liability frameworks for autonomous AI decisions
-  - AI safety research funding mechanisms
-disputed_statements:
-  - statement: No major disputed statements identified
+    url: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10
+    institution: National Institute of Standards and Technology
+  - title: Countries agree to safe and responsible development of frontier AI in landmark Bletchley Declaration - GOV.UK
+    type: government_announcement
+    year: 2023
+    url: https://www.gov.uk/government/news/countries-agree-to-safe-and-responsible-development-of-frontier-ai-in-landmark-bletchley-declaration
+    institution: UK Government
 secondary_sources:
-  - title: 'The EU AI Act: A Framework for Collaborative Governance of Artificial Intelligence'
-    type: journal_article
-    year: 2024
-    authors:
-      - multiple
-    institution: Internet Policy Review (ScienceDirect)
-    url: https://doi.org/10.1016/j.clsr.2024.106021
-  - title: 'Global AI Law and Policy Tracker: EU, US, UK, China (IAPP)'
+  - title: Global AI Law and Policy Tracker
     type: report
     year: 2025
-    authors:
-      - IAPP Research
-    institution: International Association of Privacy Professionals
     url: https://iapp.org/resources/article/global-ai-legislation-tracker
-  - title: 'AI Regulation Compared: EU AI Act, US Executive Order, UK AI Framework, China AI Law (2026)'
-    type: report
-    year: 2025
-    authors:
-      - Legalithm Research
-    institution: Legalithm
-    url: https://www.legalithm.com/en/blog/ai-regulation-comparison-eu-us-uk-china-global
-  - title: 'The New Rules of AI: A Global Legal Overview — EU, US, UK, Asia Compliance Risks (Morgan Lewis)'
-    type: report
-    year: 2025
-    authors:
-      - Morgan Lewis Research
-    institution: Morgan Lewis & Bockius LLP
-    url: https://www.morganlewis.com/pubs/2025/12/the-new-rules-of-ai-a-global-legal-overview
-updated: '2026-05-24'
+    institution: IAPP
 ---
 
 ## TL;DR
-AI governance has transitioned from voluntary principles to binding regulation and international cooperation. The Bletchley Declaration, NIST AI RMF, and EU AI Act represent landmark milestones in the emerging global AI governance architecture.
+
+AI governance combines law, standards, risk management, audits, and international coordination to shape how AI systems are developed and deployed.
 
 ## Core Explanation
-Governance layers: (1) International — Bletchley Declaration, Hiroshima AI Process (G7), UN Advisory Body on AI; (2) National — US Executive Orders, China's AI regulations, UK AI Safety Institute; (3) Industry — Frontier Model Forum (Anthropic, Google, Microsoft, OpenAI), voluntary safety commitments; (4) Technical — red teaming, model evaluations, safety cases.
 
-## Detailed Analysis
-The AI Safety Institute (UK) and US AISI conduct pre-deployment safety testing. The International Scientific Report on Advanced AI Safety (2024, mandated by Bletchley) synthesizes global research. Key debate: open-source models — should frontier capabilities be openly released?
+Three stable anchors are the EU AI Act, the NIST AI Risk Management Framework, and the Bletchley Declaration. They represent legal regulation, voluntary risk-management guidance, and international cooperation on frontier AI safety.
+
+## Evidence Notes
+
+The previous version cited an unofficial AI Act site and mixed in future-looking legal summaries. This repair uses official European Commission, NIST, and UK Government sources.
 
 ## Further Reading
-- Stanford HAI: AI Policy Tracker
-- AI Safety Institutes (UK/US)
-- OECD AI Policy Observatory
+
+- [AI Act - European Commission](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)
+- [AI RMF 1.0 - NIST](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10)
+- [Bletchley Declaration - GOV.UK](https://www.gov.uk/government/news/countries-agree-to-safe-and-responsible-development-of-frontier-ai-in-landmark-bletchley-declaration)
 
 ## Related Articles
 
-- [AI Agent Frameworks: LangChain, AutoGen, and CrewAI](../ai-agent-frameworks.md)
-- [AI for Crisis Hotlines: Suicide Prevention Chatbots, Emotional Support AI, and Risk Detection](../ai-for-crisis-hotlines.md)
-- [AI for Payment Fraud Prevention: Real-Time Transaction Scoring, Chargeback Reduction, and Merchant Risk](../ai-for-fraud-prevention.md)
+- [AI Ethics and Bias](ai-ethics-and-bias.md)
+- [AI Regulation Landscape](ai-regulation-landscape.md)
+- [AI Red Teaming and Safety](ai-red-teaming-and-safety.md)

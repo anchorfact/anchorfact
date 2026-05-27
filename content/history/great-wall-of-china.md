@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: history
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-28'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -15,94 +15,65 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-history-01
-    statement: The Great Wall of China is a series of fortifications built across northern China from the 7th century BCE through the Ming Dynasty
-    source_title: The Great Wall (John Man)
-    source_url: https://www.hachettebookgroup.com/titles/john-man/the-great-wall/9780306817670/
-    confidence: high
-  - id: fact-history-02
-    statement: 'Total length: 21,196 km'
-    source_title: The Great Wall (John Man)
-    source_url: https://www.hachettebookgroup.com/titles/john-man/the-great-wall/9780306817670/
-    confidence: high
-  - id: fact-history-03
-    statement: Ming Dynasty sections are the most visited
-    source_title: The Great Wall (John Man)
-    source_url: https://www.hachettebookgroup.com/titles/john-man/the-great-wall/9780306817670/
-    confidence: high
-completeness: 0.88
+  - id: fact-great-wall-01
+    statement: The Great Wall of China is a series of defensive fortifications in northern China, with early sections dating to ancient Chinese states and major rebuilding under later dynasties.
+    source_title: Great Wall of China - Britannica
+    source_url: https://www.britannica.com/topic/Great-Wall-of-China
+    confidence: medium
+  - id: fact-great-wall-02
+    statement: Surveys commonly report the total length of all Great Wall sections, including branches and rebuilt stretches, at about 21,196 kilometers.
+    source_title: Great Wall of China - Britannica
+    source_url: https://www.britannica.com/topic/Great-Wall-of-China
+    confidence: medium
+  - id: fact-great-wall-03
+    statement: UNESCO inscribed the Great Wall as a World Heritage property in 1987.
+    source_title: The Great Wall - UNESCO World Heritage Centre
+    source_url: https://whc.unesco.org/en/list/438
+    confidence: medium
+completeness: 0.82
 known_gaps:
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - Regional conservation status and detailed dynasty-by-dynasty archaeology are not exhaustively covered.
+disputed_statements: []
 primary_sources:
-  - title: The Great Wall (John Man)
+  - title: Great Wall of China - Britannica
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/topic/Great-Wall-of-China
+    institution: Encyclopaedia Britannica
+  - title: The Great Wall - UNESCO World Heritage Centre
+    type: official_record
+    year: 1987
+    url: https://whc.unesco.org/en/list/438
+    institution: UNESCO
+secondary_sources:
+  - title: The Great Wall
     type: book
     year: 2008
+    authors:
+      - Man, John
     url: https://www.hachettebookgroup.com/titles/john-man/the-great-wall/9780306817670/
     institution: Da Capo Press
-  - title: 'The Great Wall of China: From History to Myth (2025)'
-    type: book
-    year: 2025
-    authors:
-      - Waldron A.
-    institution: Cambridge University Press
-    url: https://doi.org/10.1017/cbo.2025.greatwall
-  - title: 'China: A History (2025 Updated)'
-    type: book
-    year: 2025
-    authors:
-      - Keay J.
-    institution: Basic Books
-    url: https://www.basicbooks.com/china-history/
-  - title: 'The Great Wall: From History to Myth (2025)'
-    type: book
-    year: 2025
-    authors:
-      - Waldron A.
-    institution: Cambridge University Press
-    url: https://doi.org/10.1017/cbo.2025.greatwall
-  - title: 'The Great Wall of China: From History to Myth'
-    authors:
-      - Waldron, A.
-    type: book
-    year: 1990
-    institution: Cambridge University Press
-  - title: The Great Wall of China 221 BC-AD 1644
-    authors:
-      - Turnbull, S.
-    type: book
-    year: 2007
-    institution: Osprey
-secondary_sources:
-  - title: Encyclopaedia Britannica
-    type: reference
-    year: 2025
-    url: https://www.britannica.com/
-    institution: Encyclopaedia Britannica, Inc.
-  - title: The Penguin History of the World
-    type: book
-    year: 1976
-    url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    institution: J.M. Roberts, Penguin
 ---
 
 ## TL;DR
 
-The Great Wall of China is a series of fortifications built across northern China from the 7th century BCE through the Ming Dynasty (1368-1644). Total length: 21,196 km (with all branches). Purpose: defense against nomadic invasions from the north. Contrary to myth, it is NOT visible from the Moon with the naked eye.
+The Great Wall is not one continuous wall. It is a set of defensive walls, passes, towers, and related fortifications built and rebuilt across northern China over many centuries.
 
 ## Core Explanation
 
-Ming Dynasty sections (near Beijing) are the most visited (Badaling, Mutianyu). Original walls: rammed earth; Ming: brick and stone. Watchtowers every few hundred meters for signaling (smoke by day, fire by night). Labor: soldiers, peasants, prisoners — hundreds of thousands died during construction. Not a single continuous wall — multiple walls built by different dynasties.
+The best-publicized measurement treats the full system, including branches and rebuilt portions, as about 21,196 kilometers. Surviving and restored Ming-era sections near Beijing are the best known to visitors, but the broader system includes older earthen walls and later brick-and-stone construction.
+
+## Evidence Notes
+
+The total-length claim is sourced to Britannica rather than a travel site, and the World Heritage status is sourced directly to UNESCO. This article avoids the common but weakly sourced claim that the wall is visible from the Moon.
 
 ## Further Reading
 
-- [The Great Wall (John Man)](https://www.hachettebookgroup.com/titles/john-man/the-great-wall/9780306817670/)
+- [Great Wall of China - Britannica](https://www.britannica.com/topic/Great-Wall-of-China)
+- [The Great Wall - UNESCO World Heritage Centre](https://whc.unesco.org/en/list/438)
 
 ## Related Articles
 
-- [Great Barrier Reef: Ecology, Coral Bleaching, and Conservation](../../geography/great-barrier-reef-ecology-coral-bleaching-and-conservation.md)
-- [Great Lakes: Hydrology, Ecology, and Transboundary Management](../../geography/great-lakes-hydrology-ecology-and-transboundary-management.md)
-- [Great Depression](../great-depression.md)
+- [Great Depression](great-depression.md)
+- [Ming Dynasty](ming-dynasty.md)
+- [Silk Road](silk-road.md)

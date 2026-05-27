@@ -1,102 +1,84 @@
 ---
-id: "kb-2026-00487"
-title: "North America Geography"
-schema_type: "TechArticle"
-category: "geography"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+id: kb-2026-00329
+title: North America Geography
+schema_type: TechArticle
+category: geography
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-geography-001"
-    statement: "North America (24.7 million km²) is the 3rd largest continent. 23 countries, ~600 million people. Features: Rocky Mountains, Great Plains, Mississippi River, Great Lakes (largest freshwater system), Grand Canyon, Niagara Falls. Diverse climates: Arctic (north) → temperate → subtropical (south) → tropical (Central America)."
-    source_title: "North America: A Geography (Birdsall, Florin, Palka)"
-    source_url: "https://www.pearson.com/en-us/subject-catalog/p/north-america/P200000009517"
-    confidence: "medium"
-  - id: "fact-geography-002"
-    statement: "Rocky Mountains: 4,800 km from Canada to New Mexico."
-    source_title: "North America: A Geography (Birdsall, Florin, Palka)"
-    source_url: "https://www.pearson.com/en-us/subject-catalog/p/north-america/P200000009517"
-    confidence: "medium"
-  - id: "fact-geography-003"
-    statement: "Mississippi-Missouri River: 4th longest globally (5,971 km)."
-    source_title: "North America: A Geography (Birdsall, Florin, Palka)"
-    source_url: "https://www.pearson.com/en-us/subject-catalog/p/north-america/P200000009517"
-    confidence: "medium"
-  - id: "fact-geography-004"
-    statement: "Great Lakes: Superior, Michigan, Huron, Erie, Ontario — 21% of world's surface fresh water."
-    source_title: "CIA World Factbook"
-    source_url: "https://www.cia.gov/the-world-factbook/"
-    confidence: "medium"
-  - id: "fact-geography-005"
-    statement: "Death Valley (CA): hottest place on Earth (56.7°C, 1913)."
-    source_title: "North America: A Geography (Birdsall, Florin, Palka)"
-    source_url: "https://www.pearson.com/en-us/subject-catalog/p/north-america/P200000009517"
-    confidence: "medium"
-
-completeness: 0.88
-
+  - id: fact-north-america-01
+    statement: North America covers about 24.23 million square kilometers and is the third-largest continent.
+    source_title: North America - Britannica
+    source_url: https://www.britannica.com/place/North-America
+    confidence: medium
+  - id: fact-north-america-02
+    statement: The Great Lakes contain about 21 percent of the world's surface fresh water.
+    source_title: Great Lakes Facts and Figures - US EPA
+    source_url: https://www.epa.gov/greatlakes/great-lakes-facts-and-figures
+    confidence: medium
+  - id: fact-north-america-03
+    statement: Death Valley's Furnace Creek recorded 134 degrees Fahrenheit in 1913, a world-record air temperature cited by the National Park Service.
+    source_title: Weather - Death Valley National Park
+    source_url: https://home.nps.gov/deva/learn/nature/weather-and-climate.htm
+    confidence: medium
+completeness: 0.78
 known_gaps:
-  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
-  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
-
+  - Country-by-country political geography, climate regions, and population distributions are not exhaustively covered.
 disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - statement: The 1913 Death Valley temperature record has been debated by some researchers, so readers should treat it as an official-record claim rather than a settled climatological analysis.
 primary_sources:
-  - title: "North America: A Geography (Birdsall, Florin, Palka)"
-    type: "book"
-    year: 2014
-    url: "https://www.pearson.com/en-us/subject-catalog/p/north-america/P200000009517"
-    institution: "Pearson"
-
+  - title: North America - Britannica
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/place/North-America
+    institution: Encyclopaedia Britannica
+  - title: Great Lakes Facts and Figures - US EPA
+    type: government_reference
+    year: 2026
+    url: https://www.epa.gov/greatlakes/great-lakes-facts-and-figures
+    institution: U.S. Environmental Protection Agency
+  - title: Weather - Death Valley National Park
+    type: government_reference
+    year: 2023
+    url: https://home.nps.gov/deva/learn/nature/weather-and-climate.htm
+    institution: National Park Service
 secondary_sources:
-  - title: "CIA World Factbook"
-    type: "database"
-    year: 2025
-    url: "https://www.cia.gov/the-world-factbook/"
-    institution: "Central Intelligence Agency"
-  - title: "National Geographic Atlas"
-    type: "reference"
-    year: 2019
-    url: "https://www.nationalgeographic.com/maps/atlas/"
-    institution: "National Geographic"
-
+  - title: The World Factbook
+    type: database
+    year: 2026
+    url: https://www.cia.gov/the-world-factbook/
+    institution: Central Intelligence Agency
 ---
-
-
 
 ## TL;DR
 
-North America (24.7 million km²) is the 3rd largest continent. 23 countries, ~600 million people. Features: Rocky Mountains, Great Plains, Mississippi River, Great Lakes (largest freshwater system), Grand Canyon, Niagara Falls. Diverse climates: Arctic (north) → temperate → subtropical (south) → tropical (Central America).
+North America is the third-largest continent and includes major physical systems such as the Great Lakes, the Rocky Mountains, the Great Plains, and extensive Arctic-to-tropical climate variation.
 
 ## Core Explanation
 
-Rocky Mountains: 4,800 km from Canada to New Mexico. Mississippi-Missouri River: 4th longest globally (5,971 km). Great Lakes: Superior, Michigan, Huron, Erie, Ontario — 21% of world's surface fresh water. Death Valley (CA): hottest place on Earth (56.7°C, 1913). Denali (AK): highest peak (6,190m), vertical rise > Everest. Tornado Alley: central US — most tornadoes globally.
+For this compact entry, the strongest source-backed claims are continent scale, the Great Lakes freshwater share, and the official Death Valley heat record. More detailed regional geography belongs in separate entries.
+
+## Evidence Notes
+
+The previous version cited one textbook page for several precise facts. This repair separates continent scale, freshwater data, and heat-record claims into direct sources.
 
 ## Further Reading
 
-- [North America: A Geography (Birdsall, Florin, Palka)](https://www.pearson.com/en-us/subject-catalog/p/north-america/P200000009517)
-atomic_facts:
-  - id: "fact-geography-001"
-    statement: "North America (24.7 million km²) is the 3rd largest continent"
-    confidence: "medium"
-  - id: "fact-geography-002"
-    statement: "23 countries, ~600 million people"
-    confidence: "medium"
-  - id: "fact-geography-003"
-    statement: "Great Lakes: Superior, Michigan, Huron, Erie, Ontario — 21% of world's surface fresh water"
-    confidence: "medium"
+- [North America - Britannica](https://www.britannica.com/place/North-America)
+- [Great Lakes Facts and Figures - US EPA](https://www.epa.gov/greatlakes/great-lakes-facts-and-figures)
+- [Weather - Death Valley National Park](https://home.nps.gov/deva/learn/nature/weather-and-climate.htm)
 
 ## Related Articles
 
-- [South America Geography](../south-america-geography.md)
-- [African Geography](../african-geography.md)
-- [Antarctica: The Frozen Continent's Geography and Research Stations](../antarctica-the-frozen-continent-s-geography-and-research-stations.md)
+- [Great Lakes](great-lakes-hydrology-ecology-and-transboundary-management.md)
+- [Climate Zones](climate-zones.md)
+- [World Geography](world-geography.md)

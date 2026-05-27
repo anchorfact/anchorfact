@@ -1,11 +1,11 @@
 ---
-id: kb-2026-00476
+id: kb-2026-00411
 title: Audio Engineering
 schema_type: TechArticle
 category: arts
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-28'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -15,92 +15,71 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-arts-001
-    statement: >-
-      Audio engineering encompasses recording, mixing, and mastering sound. Key concepts: frequency (pitch, Hz), amplitude (loudness, dB), waveform (timbre). Recording chain: source → microphone →
-      preamp → ADC → DAW. Mixing: balance levels, pan (stereo placement), EQ (adjust frequency balance), compression (control dynamics), reverb/delay (space).
-    source_title: Mastering Audio (Bob Katz, 3rd Ed)
-    source_url: https://www.routledge.com/Mastering-Audio-The-Art-and-the-Science/Katz/p/book/9780240818962
+  - id: fact-audio-engineering-01
+    statement: Audio engineers work across recording, mixing, distribution, and reproduction, and loudness measurement helps manage perceived loudness beyond simple peak level.
+    source_title: Loudness Basics - Audio Engineering Society
+    source_url: https://www.aes.org/resources/audio-topics/loudness-project/loudness-basics/
     confidence: medium
-  - id: fact-arts-002
-    statement: 'Compression: ratio (e.g., 4:1 means 4dB input above threshold = 1dB output), attack, release.'
-    source_title: Mastering Audio (Bob Katz, 3rd Ed)
-    source_url: https://www.routledge.com/Mastering-Audio-The-Art-and-the-Science/Katz/p/book/9780240818962
+  - id: fact-audio-engineering-02
+    statement: ITU-R BS.1770 defines algorithms for measuring audio programme loudness and true-peak audio level.
+    source_title: ITU-R BS.1770 - Algorithms to measure audio programme loudness and true-peak audio level
+    source_url: https://www.itu.int/rec/R-REC-BS.1770
     confidence: medium
-  - id: fact-arts-003
-    statement: 'Mastering: final polish — loudness normalization (LUFS for streaming: Spotify -14 LUFS).'
-    source_title: Mastering Audio (Bob Katz, 3rd Ed)
-    source_url: https://www.routledge.com/Mastering-Audio-The-Art-and-the-Science/Katz/p/book/9780240818962
+  - id: fact-audio-engineering-03
+    statement: EBU R 128 recommends programme loudness normalization at -23 LUFS for broadcast workflows.
+    source_title: EBU R 128 - Loudness normalisation and permitted maximum level of audio signals
+    source_url: https://tech.ebu.ch/publications/r128
     confidence: medium
-completeness: 0.88
+completeness: 0.78
 known_gaps:
-  - Statistics and data cited are from 2015 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist
-      and expressionist accounts
+  - Microphone technique, room acoustics, and immersive audio are not covered in detail.
+disputed_statements: []
 primary_sources:
-  - title: Mastering Audio (Bob Katz, 3rd Ed)
-    type: book
-    year: 2015
-    url: https://www.routledge.com/Mastering-Audio-The-Art-and-the-Science/Katz/p/book/9780240818962
-    institution: Focal Press
-  - title: 'Mastering Audio: The Art and the Science (4th Edition, 2025)'
-    type: book
-    year: 2025
-    authors:
-      - Katz B.
-    institution: Focal Press
-    url: https://www.routledge.com/mastering-audio/
-  - title: Modern Recording Techniques (10th Edition, 2025)
-    type: book
-    year: 2025
-    authors:
-      - Huber D.M.
-      - Runstein R.E.
-    institution: Routledge
-    url: https://www.routledge.com/recording/
-  - title: 'Mastering Audio: The Art and the Science (3rd Edition)'
-    authors:
-      - Katz, B.
-    type: book
-    year: 2015
-    institution: Focal Press
-  - title: Modern Recording Techniques (9th Edition)
-    authors:
-      - Huber, D.M.
-      - Runstein, R.E.
-    type: book
-    year: 2017
-    institution: Routledge
+  - title: Loudness Basics - Audio Engineering Society
+    type: technical_reference
+    year: 2024
+    url: https://www.aes.org/resources/audio-topics/loudness-project/loudness-basics/
+    institution: Audio Engineering Society
+  - title: ITU-R BS.1770 - Algorithms to measure audio programme loudness and true-peak audio level
+    type: standard
+    year: 2023
+    url: https://www.itu.int/rec/R-REC-BS.1770
+    institution: International Telecommunication Union
+  - title: EBU R 128 - Loudness normalisation and permitted maximum level of audio signals
+    type: standard
+    year: 2023
+    url: https://tech.ebu.ch/publications/r128
+    institution: European Broadcasting Union
 secondary_sources:
-  - title: The Story of Art
+  - title: Mastering Audio
     type: book
-    year: 1950
-    url: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
-    institution: E.H. Gombrich, Phaidon
-  - title: The Story of Art (E.H. Gombrich)
-    type: textbook
-    year: 1995
-    url: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
-    institution: Phaidon Press
+    year: 2015
+    authors:
+      - Katz, Bob
+    url: https://www.routledge.com/Mastering-Audio-The-Art-and-the-Science/Katz/p/book/9780240818962
+    institution: Routledge
 ---
 
 ## TL;DR
 
-Audio engineering encompasses recording, mixing, and mastering sound. Key concepts: frequency (pitch, Hz), amplitude (loudness, dB), waveform (timbre). Recording chain: source → microphone → preamp → ADC → DAW. Mixing: balance levels, pan (stereo placement), EQ (adjust frequency balance), compression (control dynamics), reverb/delay (space).
+Audio engineering covers the technical work of capturing, shaping, measuring, and delivering sound. Modern delivery workflows often distinguish peak level from perceived loudness.
 
 ## Core Explanation
 
-Dynamic range: difference between quietest and loudest — compressed in modern music (loudness war). EQ types: parametric (frequency + bandwidth + gain), shelving, high/low-pass. Compression: ratio (e.g., 4:1 means 4dB input above threshold = 1dB output), attack, release. Reverb: convolution (real spaces) vs. algorithmic. Mastering: final polish — loudness normalization (LUFS for streaming: Spotify -14 LUFS).
+Recording and mixing workflows manage source capture, gain staging, equalization, dynamics, spatial placement, and final delivery. Loudness standards such as ITU-R BS.1770 and EBU R 128 matter because digital peak meters alone do not describe how loud a listener perceives a programme to be.
+
+## Evidence Notes
+
+The previous version relied on broad book pages and made a platform-specific Spotify loudness claim. This version keeps only standards-backed loudness claims and an AES overview.
 
 ## Further Reading
 
-- [Mastering Audio (Bob Katz, 3rd Ed)](https://www.routledge.com/Mastering-Audio-The-Art-and-the-Science/Katz/p/book/9780240818962)
+- [Loudness Basics - Audio Engineering Society](https://www.aes.org/resources/audio-topics/loudness-project/loudness-basics/)
+- [ITU-R BS.1770](https://www.itu.int/rec/R-REC-BS.1770)
+- [EBU R 128](https://tech.ebu.ch/publications/r128)
 
 ## Related Articles
 
-- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../../ai/adversarial-machine-learning.md)
-- [AI for Audio Processing: Speech Recognition, Music Generation, and Sound Understanding](../../ai/ai-for-audio-processing-speech-recognition-music-generation-and-sound-understanding.md)
-- [AI for Audio Processing: Sound Event Detection, Acoustic Scene Analysis, and Environmental Intelligence](../../ai/ai-for-audio-processing.md)
+- [Music Theory Basics](music-theory-basics.md)
+- [Classical Music Periods](classical-music-periods.md)
+- [AI for Audio Processing](../ai/ai-for-audio-processing-speech-recognition-music-generation-and-sound-understanding.md)

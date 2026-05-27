@@ -1,12 +1,12 @@
 ---
 id: ai-for-science
-title: "AI for Science: AlphaFold and the AI-Driven Discovery Revolution"
+title: 'AI for Science: AlphaFold and AI-Driven Discovery'
 schema_type: TechArticle
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,96 +15,69 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: f1
-    statement: >-
-      AlphaFold 2 (Jumper et al. 2021, DeepMind, Nature) solved the 50-year protein folding problem, predicting 3D protein structures with atomic accuracy and leading to the 2024 Nobel Prize in
-      Chemistry awarded to Hassabis, Jumper, and Baker.
-    source_title: Jumper, John, et al. Highly Accurate Protein Structure Prediction with AlphaFold. Nature 596:583-589, 2021
+  - id: fact-ai-science-01
+    statement: AlphaFold demonstrated highly accurate protein structure prediction in the CASP14 assessment and was published in Nature in 2021.
+    source_title: Highly accurate protein structure prediction with AlphaFold
     source_url: https://www.nature.com/articles/s41586-021-03819-2
-    confidence: high
-  - id: f2
-    statement: >-
-      GNoME (Merchant et al. 2023, DeepMind, Nature) used graph neural networks to discover 2.2 million new stable crystal structures — equivalent to nearly 800 years of experimental knowledge —
-      advancing materials science.
-    source_title: Merchant, Amil, et al. Scaling Deep Learning for Materials Discovery. Nature 624:80-89, 2023
+    confidence: medium
+  - id: fact-ai-science-02
+    statement: GNoME used graph neural networks and large-scale calculations to identify hundreds of thousands of predicted stable crystal structures.
+    source_title: Scaling deep learning for materials discovery
     source_url: https://www.nature.com/articles/s41586-023-06735-9
-    confidence: high
-  - id: f3
-    statement: >-
-      GraphCast (Lam et al. 2023, DeepMind, Science) demonstrated that graph neural networks can outperform the world's best operational weather forecasting system on 90% of test variables in under
-      one minute.
-    source_title: Lam, Remi, et al. Learning Skillful Medium-Range Global Weather Forecasting. Science 2023
-    source_url: https://doi.org/10.1126/science.adi2336
-    confidence: high
-completeness: 0.9
+    confidence: medium
+  - id: fact-ai-science-03
+    statement: GraphCast generated medium-range global weather forecasts and outperformed ECMWF's HRES system on most evaluated variables and lead times.
+    source_title: GraphCast - Google DeepMind
+    source_url: https://deepmind.google/research/publications/22598/
+    confidence: medium
+completeness: 0.82
 known_gaps:
-  - AI-driven materials discovery
-  - AI for climate modeling
-disputed_statements:
-  - statement: No major disputed statements identified
+  - Experimental validation, lab automation, and domain-specific limitations are not covered in depth.
+disputed_statements: []
 primary_sources:
-  - title: Accurate structure prediction of biomolecular interactions with AlphaFold 3
-    type: academic_paper
-    year: 2024
-    url: https://www.nature.com/articles/s41586-024-07487-w
-    institution: Nature/Google DeepMind
-  - title: "AI for Science: A Survey"
-    type: academic_paper
-    year: 2024
-    url: https://arxiv.org/abs/2405.12213
-    institution: arXiv
-secondary_sources:
-  - title: "AI for Science: A Comprehensive Survey of Deep Learning in Scientific Discovery"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: Nature Reviews Physics
-    url: https://doi.org/10.1038/s42254-024-00734-5
-  - title: "GNoME: Scaling Deep Learning for Materials Discovery (Google DeepMind / Nature)"
+  - title: Highly accurate protein structure prediction with AlphaFold
+    type: journal_article
+    year: 2021
+    url: https://www.nature.com/articles/s41586-021-03819-2
+    institution: Nature
+  - title: Scaling deep learning for materials discovery
     type: journal_article
     year: 2023
-    authors:
-      - Merchant, Amil
-      - Batzner, Simon
-      - Schoenholz, Samuel S.
-      - et al.
-    institution: Google DeepMind / Nature
     url: https://www.nature.com/articles/s41586-023-06735-9
-  - title: "AlphaFold: Using AI for Scientific Discovery (Nobel Prize in Chemistry 2024 — Hassabis, Jumper, Baker)"
+    institution: Nature
+  - title: GraphCast - Google DeepMind
+    type: research_publication
+    year: 2023
+    url: https://deepmind.google/research/publications/22598/
+    institution: Google DeepMind
+secondary_sources:
+  - title: Accurate structure prediction of biomolecular interactions with AlphaFold 3
     type: journal_article
     year: 2024
-    authors:
-      - Hassabis, Demis
-      - Jumper, John
-      - Baker, David
-    institution: Nobel Foundation / Nature
-    url: https://www.nature.com/articles/d41586-024-03482-1
-  - title: Applying AI to Rebuild the Middle Class (Autor / MIT — AI for Science Policy)
-    type: report
-    year: 2024
-    authors:
-      - Autor, David
-    institution: MIT / NBER
-    url: https://www.nber.org/papers/w32138
-updated: "2026-05-24"
+    url: https://www.nature.com/articles/s41586-024-07487-w
+    institution: Nature
 ---
+
 ## TL;DR
-AI for science is transforming discovery — AlphaFold 3 predicts all biomolecular structures, GNoME discovered 2.2 million new crystals, and AI-designed drugs enter clinical trials. The 2024 Nobel Prize in Chemistry for AlphaFold signified mainstream recognition of AI-driven science.
+
+AI for science applies machine learning to scientific discovery workflows, including structure prediction, materials search, and weather forecasting.
 
 ## Core Explanation
-Key applications: protein structure prediction (AlphaFold), materials discovery (GNoME/DeepMind — 380,000 stable materials), drug design (Isomorphic Labs — AI-designed molecules entering trials), mathematics (AlphaProof/AlphaGeometry — IMO silver medal), weather forecasting (GraphCast — 10-day forecasts in <1 minute), and genomics (Enformer, ESM — predicting variant effects).
 
-## Detailed Analysis
-AlphaFold 3's diffusion approach: input raw atom positions → add noise → train model to denoise → generate 3D structures. Unlike AlphaFold 2 which predicted protein-only, version 3 handles all biomolecular complexes. Isomorphic Labs (DeepMind spinoff) is using this to accelerate drug discovery timelines from years to months.
+The clearest public examples are domain-specific systems with published evaluations: AlphaFold for protein structure prediction, GNoME for candidate stable materials, and GraphCast for medium-range weather forecasting.
+
+## Evidence Notes
+
+The previous version overstated "solved the 50-year problem" and mixed Nobel commentary into an atomic fact. This version keeps claims closer to the underlying papers and reports.
 
 ## Further Reading
-- Google DeepMind: AlphaFold
-- Nature: AI for Science Collection
-- Isomorphic Labs Blog
+
+- [Highly accurate protein structure prediction with AlphaFold](https://www.nature.com/articles/s41586-021-03819-2)
+- [Scaling deep learning for materials discovery](https://www.nature.com/articles/s41586-023-06735-9)
+- [GraphCast - Google DeepMind](https://deepmind.google/research/publications/22598/)
 
 ## Related Articles
 
-- [AI for Drug Discovery: AlphaFold, Molecular Generation, and Generative Chemistry](../ai-for-drug-discovery.md)
-- [AI for Materials Science: GNoME, Crystal Discovery, and Materials Informatics](../ai-for-materials-science.md)
-- [AI for Protein Structure Prediction: AlphaFold and the Folding Revolution](../ai-for-protein-structure-prediction-alphafold-and-the-folding-revolution.md)
+- [AI for Materials Science](ai-for-materials-science.md)
+- [AI for Weather Forecasting](ai-for-weather-forecasting.md)
+- [AI for Drug Discovery](ai-for-drug-discovery.md)
