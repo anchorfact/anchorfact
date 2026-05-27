@@ -138,7 +138,7 @@ Public hygiene checks are shared by the compiler, quality gate, and audit script
 | `npm run smoke:prod` | Checks the live production machine-readable endpoints. |
 | `npm run audit-public-sample` | Regenerates the 20-article public content audit report. |
 
-Only the scripts above should be treated as production workflow entrypoints. Other files in `scripts/` are maintenance or one-off audit utilities; review them before reuse.
+Only the scripts above should be treated as production workflow entrypoints. Historical batch-generation and enrichment scripts live in `scripts/legacy/` for reference only; do not run them against `content/` without a separate review branch.
 
 ## License
 

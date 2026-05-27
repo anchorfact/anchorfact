@@ -1,6 +1,6 @@
 # How We Built an AI-Native Knowledge Base with Verifiable Trust
 
-> AnchorFact: 1000 articles, 573 public entries, 1715 public claims, and a public trust model for machine-readable citations.
+> AnchorFact: 1000 articles, 554 public entries, 1603 public claims, and a public trust model for machine-readable citations.
 
 ---
 
@@ -43,7 +43,7 @@ confidence = source_tier × 0.35
 **Freshness**: ≤1 year = 1.0, 3yr = 0.9, 5yr = 0.7, 10yr+ = 0.5.  
 **Decay**: disputed statements = -0.2, known gaps = -0.1.
 
-Result: ≥0.85 = high confidence, ≥0.60 = medium, <0.60 = not published.
+Result: >=0.85 = high confidence, >=0.60 = medium, and lower scores remain low confidence. Public eligibility is decided separately by the quality model: an entry needs real source verification, no fatal hygiene problems, and a stable unique route.
 
 This formula isn't perfect — but it's transparent. An LLM citing AnchorFact doesn't need to "trust" us. It can examine the inputs and decide for itself.
 

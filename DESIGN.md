@@ -218,7 +218,7 @@ POST /api/v1/submit (需认证)          → 提交新内容
 
 ```
 第一阶段（MVP）：
-  Cloudflare Pages (静态) + Cloudflare Workers (API) + GitHub (内容仓库)
+  Cloudflare Pages (静态) + GitHub Actions (验证快照) + 本地 MCP/API (agent 接入)
   成本：$0-5/月（Cloudflare 免费额度足够）
 
 第二阶段（公测）：

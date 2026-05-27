@@ -3,7 +3,7 @@
     "anchorfact": {
       "command": "python",
       "args": ["src/mcp_server.py"],
-      "description": "AnchorFact — AI-native knowledge base. 876 articles with verified sources, public confidence formula, BM25 search."
+      "description": "AnchorFact — manifest-backed public article and verified-claims interface for LLM citations."
     }
   }
 }
