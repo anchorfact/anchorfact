@@ -1,13 +1,13 @@
-import { relative, dirname, basename, extname } from 'path';
+import { basename, dirname, extname, relative } from 'path';
+import {
+  collectContentHygieneFlags,
+  hasPlaceholderText,
+  publicFatalHygieneReasons
+} from './content-hygiene.js';
 
-const PLACEHOLDER_PATTERNS = [
-  /待后续补充/,
-  /待补充/,
-  /内容初稿/,
-  /detailed analysis is still being completed/i,
-  /\[(?:详细分析|待后续补充|todo|placeholder)[^\]]*\]/i,
-  /\bTODO\b/i
-];
+function addUnique(target, value) {
+  if (!target.includes(value)) target.push(value);
+}
 
 export function normalizePath(path) {
   return (path || '').replace(/\\/g, '/');
@@ -47,11 +47,7 @@ export function canonicalSlugFor(frontmatter, filePath, contentDir) {
 }
 
 export function hasPlaceholderContent(body, frontmatter = {}) {
-  const knownGaps = Array.isArray(frontmatter.known_gaps)
-    ? frontmatter.known_gaps.join('\n')
-    : '';
-  const text = `${body || ''}\n${knownGaps}`;
-  return PLACEHOLDER_PATTERNS.some(pattern => pattern.test(text));
+  return hasPlaceholderText(body, frontmatter);
 }
 
 export function verifiedSourceCoverage(verificationData) {
@@ -77,57 +73,73 @@ export function evaluateArticleQuality({
   const coverage = verifiedSourceCoverage(verificationData);
   const qualityReasons = [];
   const fatalReasons = [];
+  const hygieneFlags = collectContentHygieneFlags({ frontmatter, body });
 
   if (frontmatter.status === 'draft') {
-    qualityReasons.push('explicit_draft');
-    fatalReasons.push('explicit_draft');
+    addUnique(qualityReasons, 'explicit_draft');
+    addUnique(fatalReasons, 'explicit_draft');
+  }
+
+  if (frontmatter._yaml_error) {
+    addUnique(qualityReasons, 'yaml_field_damage');
+    addUnique(fatalReasons, 'yaml_field_damage');
   }
 
   if (hasPlaceholderContent(body, frontmatter)) {
-    qualityReasons.push('placeholder_content');
-    fatalReasons.push('placeholder_content');
+    addUnique(qualityReasons, 'placeholder_content');
+    addUnique(fatalReasons, 'placeholder_content');
+  }
+
+  for (const reason of ['encoding_mojibake', 'broken_atomic_fact', 'generic_source_homepage', 'claim_evidence_weak']) {
+    if (hygieneFlags.includes(reason)) addUnique(qualityReasons, reason);
+  }
+
+  for (const reason of publicFatalHygieneReasons(frontmatter, body)) {
+    const normalizedReason = reason === 'placeholder_text' ? 'placeholder_content' : reason;
+    addUnique(qualityReasons, normalizedReason);
+    addUnique(fatalReasons, normalizedReason);
   }
 
   if (sources.length === 0) {
-    qualityReasons.push('missing_primary_sources');
-    fatalReasons.push('missing_primary_sources');
+    addUnique(qualityReasons, 'missing_primary_sources');
+    addUnique(fatalReasons, 'missing_primary_sources');
   }
 
   if (!verificationData) {
-    qualityReasons.push('estimated_confidence');
-    fatalReasons.push('estimated_confidence');
+    addUnique(qualityReasons, 'estimated_confidence');
+    addUnique(fatalReasons, 'estimated_confidence');
   }
 
   if (verificationData && coverage.total !== sources.length) {
-    qualityReasons.push('verification_count_mismatch');
-    fatalReasons.push('verification_count_mismatch');
+    addUnique(qualityReasons, 'verification_count_mismatch');
+    addUnique(fatalReasons, 'verification_count_mismatch');
   }
 
   if (verificationData && coverage.total > 0 && coverage.verified === 0) {
-    qualityReasons.push('no_verified_sources');
-    fatalReasons.push('no_verified_sources');
+    addUnique(qualityReasons, 'no_verified_sources');
+    addUnique(fatalReasons, 'no_verified_sources');
   }
 
   if (verificationData && coverage.total > 0 && coverage.verified < coverage.total) {
-    qualityReasons.push('partial_source_verification');
+    addUnique(qualityReasons, 'partial_source_verification');
   }
 
   if (verificationData && coverage.total > 0 && coverage.verified > 0 && coverage.ratio < 0.5) {
-    qualityReasons.push('low_verified_coverage');
+    addUnique(qualityReasons, 'low_verified_coverage');
   }
 
   if (confidence?.inputs?.based_on !== 'verified_sources') {
-    if (!qualityReasons.includes('estimated_confidence')) {
-      qualityReasons.push('estimated_confidence');
-    }
-    if (!fatalReasons.includes('estimated_confidence')) {
-      fatalReasons.push('estimated_confidence');
-    }
+    addUnique(qualityReasons, 'estimated_confidence');
+    addUnique(fatalReasons, 'estimated_confidence');
   }
 
   if (confidence?.inputs?.based_on === 'estimated' && confidence.level === 'high') {
-    qualityReasons.push('estimated_high_confidence');
-    fatalReasons.push('estimated_high_confidence');
+    addUnique(qualityReasons, 'estimated_high_confidence');
+    addUnique(fatalReasons, 'estimated_high_confidence');
+  }
+
+  if (confidence?.inputs?.high_confidence_evidence_gap) {
+    addUnique(qualityReasons, 'high_confidence_evidence_gap');
   }
 
   const publicEligible = fatalReasons.length === 0;

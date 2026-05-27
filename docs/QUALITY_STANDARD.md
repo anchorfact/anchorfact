@@ -1,28 +1,60 @@
-# AnchorFact 知识库质量标准参考框架 (v1.0)
+# AnchorFact Quality Standard
 
-## 一、核心定位
+AnchorFact is a verified claim registry for LLM citations. The public surface should prefer fewer, reviewable entries over larger but weakly sourced output.
 
-本知识库是为AI和人类提供**高可信度、结构化、可追溯**的事实性知识的公共基础设施。所有内容必须以**锚定事实**为根本，严格区别于观点表达或信息聚合。
+## Public Eligibility
 
-## 二、质量维度与标准细则
+An article can be public only when all of these are true:
 
-| 一级维度 | 二级标准 | 具体要求（通过标准） | 拒绝/降级标准 |
-| :--- | :--- | :--- | :--- |
-| **1. 真实性** | **来源权威** | 关键事实必须引用至少 **1个一级信源** (如学术论文、官方文件、一手报道) 或 **2个独立可信的二级信源** (如权威媒体交叉证实)。 | 信源为匿名论坛、无法验证的自媒体、内容农场；或虽标注来源但经查证属虚假/伪造。 |
-| | **可验证** | 所有断言须附有可公开访问的原始来源链接或明确出处，确保他人能复现核实过程。 | 陈述以"众所周知"、"据报道"等模糊方式引用；引用链接失效且无法查找存档。 |
-| | **置信度标注** | 必须根据事实的共识程度明确标注置信度。例如：`high` (广泛共识、铁证) , `medium` (主流观点，存在少量合理质疑) , `low` (存在重大争议，仅作记录)。 | 整个条目无置信度标注，或故意将高度争议性内容标为 `high`。 |
-| **2. 客观性** | **事实与观点分离** | 正文须清晰区分"事实陈述"和"观点/评价"。观点部分必须标注观点持有方及出处。 | 将特定立场或评价包装为客观事实，例如"某政策是灾难性的失败"。 |
-| | **利益冲突规避** | 编辑者须声明与条目主题可能存在的利益关联（如受雇于相关公司）。条目本身不得含有推广性或诋毁性动机。 | 内容呈现明显的商业推广、政治宣传或个人攻击倾向。 |
-| | **争议呈现** | 对存在重大争议的事实，须公平呈现主要的不同观点及其依据，而非只选取一方说法。 | 选择性呈现证据，有意忽略主流反对意见或关键反证。 |
-| **3. 时效性** | **时间标记** | 条目必须包含"创建日期"和"最后实质性更新日期"。涉及统计数据的，必须标注数据所属时间点或时间段。 | 内容陈旧，所引用数据已过公认的有效期且未注明，可能产生误导。 |
-| | **动态事实处理** | 对快速变化的事件（如正在进行的选举、疫情数据），须设计"活文档"机制，能标注当前状态并链接至历史版本。 | 将动态事件的一次性快照当作静态事实永久保存，且无更新说明。 |
-| **4. 完整性** | **核心要素齐备** | 对概念的定义、基本要素、关键背景等必要组成部分不应缺失，确保AI或人类能获得最基本理解。 | 条目过于碎片化，仅为孤立的一句话或一个链接，无法构成独立知识单元。 |
-| | **结构化规范** | 必须遵循项目规定的Schema和数据格式（如JSON-LD），填充TL;DR、核心解释、详细分析等必要字段。 | 格式混乱、字段缺失，导致程序无法解析，或关键信息隐藏在冗长非结构化文本中。 |
-| **5. 分类与可用性** | **分类准确** | 条目须被归入最精确的领域/话题分类下，确保知识图谱的检索效率和语义关联正确性。 | 分类错误或过于宽泛（如将具体的"多普勒效应"仅归入"物理"大类）。 |
-| | **可机器解析** | 最终存储格式必须能被程序无障碍地读取、解析和验证，确保为"AI原生"设计。 | 仅提供扫描版PDF、图片格式文本等机器无法直接处理的内容。 |
+- It has at least one primary source.
+- A verification report exists for the article.
+- At least one source is verified.
+- Verification source counts match the article source list.
+- The article has no placeholder text.
+- The article has no severe hygiene issue such as encoding damage or mostly broken atomic facts.
+- Confidence is based on `verified_sources`, not an estimated fallback.
 
-## 三、标准的应用场景
+Draft articles are still compiled, but they are excluded from the homepage public list, `llms.txt`, `sitemap.xml`, and `claims.json`. Draft HTML is marked `noindex`.
 
-*   **条目准入**：新条目提交时，作为最低门槛的检查清单。任何一项"拒绝标准"被触发，则不予准入。
-*   **内容审查**：社区成员可依据此标准对现有条目提出修改、质疑或降级置信度的建议。
-*   **AI引用反馈**：可设计机制，当AI引用某条知识出错时，用户反馈能对照此标准定位问题（如：是事实过时了，还是来源不可靠了？）。
+## Confidence
+
+Confidence is computed from source tier, source count, verified source coverage, freshness, and decay factors.
+
+- `estimated` entries cannot be `high`.
+- `high` confidence requires verified coverage of at least 50%.
+- `high` confidence requires at least 2 verified sources.
+- The frontmatter `confidence` field is treated as an editorial upper bound.
+- Claims exported from `claims.json` cannot have public confidence above their article confidence.
+
+## Hygiene Flags
+
+These flags should appear in `manifest.json` when detected:
+
+- `encoding_mojibake`: damaged encoding or replacement characters.
+- `broken_atomic_fact`: atomic fact text is truncated or contains leaked Markdown structure.
+- `generic_source_homepage`: a source points to a homepage instead of a specific evidence page.
+- `claim_evidence_weak`: an atomic fact has evidence, but the evidence does not map cleanly to article sources.
+- `high_confidence_evidence_gap`: a raw high score was capped because high-confidence evidence requirements were not met.
+- `low_verified_coverage`: verified source coverage is below 50%; this is currently an audit marker, not a draft condition.
+
+## Claim Quality
+
+Atomic facts are intended to be short, evidence-linked claims. A fact should have:
+
+- `id`
+- `statement`
+- one of `source_ref`, `source_url`, or `source_doi`
+
+Broken facts do not enter public `claims.json`. Weakly mapped evidence may remain visible with an audit marker so reviewers can repair it without silently deleting context.
+
+## Manual Review Priorities
+
+Review public content in this order:
+
+1. Public articles with `broken_atomic_fact` or `encoding_mojibake`.
+2. High-confidence articles with partial source verification.
+3. Public articles with many capped claims.
+4. Low-confidence public articles that still export many claims.
+5. Drafts that are close to public eligibility.
+
+The next rule-tightening pass should be based on audit evidence, not on bulk rewriting the corpus.

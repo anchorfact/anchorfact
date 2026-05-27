@@ -125,6 +125,42 @@ test('High score with verified coverage below 50% is capped to medium', () => {
   assertEq(r.level, 'medium');
   assertEq(r.inputs.verified_coverage, 1 / 3);
 });
+test('High score with only one verified source is capped to medium', () => {
+  const sources = [
+    { doi: '10.a/a', type: 'academic_paper', year: 2025 },
+    { doi: '10.b/b', type: 'standard', year: 2025 },
+  ];
+  const vd = {
+    sources_total: 2,
+    sources_verified: 1,
+    verification_results: [
+      { results: [{ method: 'doi', verified: true }] },
+      { results: [{ method: 'doi', verified: false }] }
+    ]
+  };
+  const r = computeConfidence(sources, {}, vd);
+  assertEq(r.level, 'medium');
+  assertEq(r.inputs.high_confidence_evidence_gap, true);
+});
+test('Editorial confidence caps computed confidence downward', () => {
+  const sources = [
+    { doi: '10.a/a', type: 'academic_paper', year: 2025 },
+    { doi: '10.b/b', type: 'standard', year: 2025 },
+    { doi: '10.c/c', type: 'rfc', year: 2025 },
+  ];
+  const vd = {
+    sources_total: 3,
+    sources_verified: 3,
+    verification_results: [
+      { results: [{ method: 'doi', verified: true }] },
+      { results: [{ method: 'doi', verified: true }] },
+      { results: [{ method: 'doi', verified: true }] }
+    ]
+  };
+  const r = computeConfidence(sources, { confidence: 'medium' }, vd);
+  assertEq(r.level, 'medium');
+  assertEq(r.inputs.editorial_confidence, 'medium');
+});
 test('Disputed article gets decay penalty', () => {
   const sources = [
     { doi: '10.a/a', type: 'academic_paper', year: 2025 },

@@ -61,12 +61,14 @@ export function computeConfidence(sources, article = {}, verificationData = null
   let sourceVerifiedScore;
   let scoreBasis = 'estimated';
   let verifiedCoverage = null;
+  let verifiedSourceCount = 0;
 
   if (verificationData && verificationData.sources_total > 0) {
     const vTotal = verificationData.sources_total;
     const vVerified = verificationData.sources_verified || 0;
     const verifiedRatio = vTotal > 0 ? vVerified / vTotal : 0;
     verifiedCoverage = verifiedRatio;
+    verifiedSourceCount = vVerified;
     sourceVerifiedScore = hasDoiVerified ? 1.0
       : verifiedRatio >= 0.75 ? 0.9
       : verifiedRatio >= 0.5 ? 0.7
@@ -92,12 +94,21 @@ export function computeConfidence(sources, article = {}, verificationData = null
     decayScore * 0.10
   ).toFixed(4));
 
-  let level = score >= 0.85 ? 'high' : score >= 0.60 ? 'medium' : 'low';
+  const rawLevel = score >= 0.85 ? 'high' : score >= 0.60 ? 'medium' : 'low';
+  let level = rawLevel;
+  const highConfidenceEvidenceGap = scoreBasis === 'verified_sources' &&
+    rawLevel === 'high' &&
+    (verifiedCoverage === null || verifiedCoverage < 0.5 || verifiedSourceCount < 2);
   // Hard constraint: estimated basis cannot be 'high'
   if (scoreBasis === 'estimated' && level === 'high') level = 'medium';
-  // High confidence requires meaningful verified coverage, not merely one verified source.
-  if (scoreBasis === 'verified_sources' && level === 'high' && verifiedCoverage !== null && verifiedCoverage < 0.5) {
+  // High confidence requires meaningful verified coverage and at least two verified sources.
+  if (highConfidenceEvidenceGap) {
     level = 'medium';
+  }
+  const rank = { low: 1, medium: 2, high: 3 };
+  const editorialConfidence = String(article.confidence || '').toLowerCase();
+  if (rank[editorialConfidence] && rank[editorialConfidence] < rank[level]) {
+    level = editorialConfidence;
   }
 
   return {
@@ -109,6 +120,9 @@ export function computeConfidence(sources, article = {}, verificationData = null
       source_count: sourceCountScore,
       source_verified: sourceVerifiedScore,
       verified_coverage: verifiedCoverage,
+      verified_source_count: verifiedSourceCount,
+      high_confidence_evidence_gap: highConfidenceEvidenceGap,
+      editorial_confidence: rank[editorialConfidence] ? editorialConfidence : null,
       freshness: maxFreshness,
       decay: decayScore,
       based_on: scoreBasis

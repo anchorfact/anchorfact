@@ -4,7 +4,7 @@ title: 'AI Governance: Risk Frameworks, Audits, and International Cooperation'
 schema_type: TechArticle
 category: ai
 language: en
-confidence: high
+confidence: medium
 last_verified: '2026-05-25'
 created_date: '2026-05-24'
 generation_method: ai_structured

@@ -4,7 +4,7 @@ title: Periodic Table
 schema_type: TechArticle
 category: science
 language: en
-confidence: high
+confidence: medium
 last_verified: '2026-05-26'
 created_date: '2026-05-22'
 generation_method: ai_structured

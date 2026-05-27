@@ -22,6 +22,10 @@ import { join } from 'path';
 import { load } from 'js-yaml';
 import { computeConfidence, classifySourceTier } from './lib/confidence.js';
 import { evaluateArticleQuality, normalizePath } from './lib/article-quality.js';
+import { factEvidenceMapsToSources, isBrokenAtomicFact } from './lib/content-hygiene.js';
+import { publicClaims } from './lib/claims.js';
+import { compileHtml, escapeHtml, escapeTurtle } from './lib/html.js';
+import { buildManifest, distribution } from './lib/manifest.js';
 
 let verificationMap = null;
 let verificationTimestamp = null;
@@ -76,22 +80,6 @@ function extractTldr(body) {
   return body.trim().split('\n')[0]?.replace(/^#+\s*/, '') || '';
 }
 
-function escapeHtml(value) {
-  return String(value || '')
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;');
-}
-
-function escapeTurtle(value) {
-  return String(value || '')
-    .replace(/\\/g, '\\\\')
-    .replace(/"/g, '\\"')
-    .replace(/\n/g, '\\n');
-}
-
 function compileJsonLd(frontmatter, body, filePath, quality, confidence, verificationData) {
   const sources = frontmatter.primary_sources || [];
   const verification = {
@@ -144,6 +132,9 @@ function compileJsonLd(frontmatter, body, filePath, quality, confidence, verific
 function compileAtomicFacts(frontmatter, quality) {
   return (frontmatter.atomic_facts || []).map((fact, index) => {
     const id = fact.id || `${quality.canonicalSlug.replace(/\//g, '-')}-fact-${index + 1}`;
+    const factQualityReasons = [];
+    if (isBrokenAtomicFact(fact)) factQualityReasons.push('broken_atomic_fact');
+    const evidenceMatch = factEvidenceMapsToSources(fact, frontmatter) ? 'mapped' : 'weak';
     const factJson = {
       '@context': 'https://schema.org',
       '@type': 'Claim',
@@ -155,7 +146,9 @@ function compileAtomicFacts(frontmatter, quality) {
       'anchorfact:sourceRef': fact.source_ref || null,
       'anchorfact:sourceTitle': fact.source_title || null,
       'anchorfact:sourceExcerpt': fact.source_excerpt || null,
-      'anchorfact:verificationMethod': fact.verification_method || null
+      'anchorfact:verificationMethod': fact.verification_method || null,
+      'anchorfact:evidenceMatch': evidenceMatch,
+      'anchorfact:qualityReasons': factQualityReasons
     };
 
     if (fact.source_doi) {
@@ -166,16 +159,6 @@ function compileAtomicFacts(frontmatter, quality) {
 
     return factJson;
   });
-}
-
-function isClaimPublishable(factJson) {
-  return !!(
-    factJson.text &&
-    (
-      factJson['anchorfact:sourceRef'] ||
-      factJson.citation?.sameAs
-    )
-  );
 }
 
 function compilePlainText(frontmatter, body, quality, confidence) {
@@ -216,33 +199,6 @@ function compileTurtle(frontmatter, quality, confidence) {
   }
 
   return lines.join('\n');
-}
-
-function compileHtml(frontmatter, body, quality, confidence, jsonLd) {
-  const noIndex = quality.isDraft ? '  <meta name="robots" content="noindex, nofollow">\n' : '';
-  const reasons = quality.qualityReasons.length
-    ? `<p><strong>Quality notes:</strong> ${quality.qualityReasons.map(escapeHtml).join(', ')}</p>`
-    : '';
-
-  return `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-${noIndex}  <title>${escapeHtml(frontmatter.title)} - AnchorFact</title>
-  <meta name="anchorfact:status" content="${quality.status}">
-  <meta name="anchorfact:confidence" content="${confidence.level} (${confidence.score})">
-  <meta name="anchorfact:generation" content="${frontmatter.generation_method || 'ai_structured'}">
-  <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
-</head>
-<body>
-  <article>
-    <h1>${escapeHtml(frontmatter.title)}</h1>
-    <p><strong>Status:</strong> ${quality.status} &middot; <strong>Confidence:</strong> ${confidence.level} (${confidence.score}) &middot; <strong>Basis:</strong> ${confidence.inputs.based_on}</p>
-    ${reasons}
-    <pre style="white-space:pre-wrap">${escapeHtml(body)}</pre>
-  </article>
-</body>
-</html>`;
 }
 
 function compileFile(mdPath, contentDir, distDir) {
@@ -327,44 +283,6 @@ function compileAll(contentDir, distDir, verificationReportPath) {
     .filter(Boolean);
 }
 
-function distribution(results) {
-  return {
-    high: results.filter(result => result._confidence?.level === 'high').length,
-    medium: results.filter(result => result._confidence?.level === 'medium').length,
-    low: results.filter(result => result._confidence?.level === 'low').length,
-    basis: {
-      verified: results.filter(result => result._confidence?.inputs?.based_on === 'verified_sources').length,
-      estimated: results.filter(result => result._confidence?.inputs?.based_on !== 'verified_sources').length
-    }
-  };
-}
-
-function manifestArticle(result) {
-  return {
-    id: result['@id'],
-    canonical_slug: result._quality.canonicalSlug,
-    canonical_url: result._quality.canonicalUrl,
-    title: result.headline,
-    status: result._quality.status,
-    confidence_level: result._confidence.level,
-    confidence_basis: result._confidence.inputs.based_on,
-    confidence_score: result._confidence.score,
-    sources_verified: result._verificationData?.sources_verified ?? null,
-    sources_total: result._verificationData?.sources_total ?? (result.citation || []).length,
-    is_draft: result._quality.isDraft,
-    quality_reasons: result._quality.qualityReasons
-  };
-}
-
-const CONFIDENCE_RANK = { low: 1, medium: 2, high: 3 };
-
-function capClaimConfidence(declaredConfidence, articleConfidence) {
-  const declaredRank = CONFIDENCE_RANK[declaredConfidence] || 0;
-  const articleRank = CONFIDENCE_RANK[articleConfidence] || 0;
-  if (!declaredConfidence || declaredRank === 0 || articleRank === 0) return declaredConfidence || null;
-  return declaredRank > articleRank ? articleConfidence : declaredConfidence;
-}
-
 function articleLink(result) {
   const slug = result._quality.canonicalSlug;
   const confidence = result._confidence;
@@ -376,22 +294,15 @@ function articleLink(result) {
 }
 
 function writeManifest(distDir, results, publicResults, draftResults, claims) {
-  const manifest = {
+  const manifest = buildManifest({
+    results,
+    publicResults,
+    draftResults,
+    claims,
     generated: new Date().toISOString(),
-    article_count: results.length,
-    public_article_count: publicResults.length,
-    draft_article_count: draftResults.length,
-    claim_count: claims.length,
-    ids: results.map(result => result['@id']),
-    public_ids: publicResults.map(result => result['@id']),
-    articles: results.map(manifestArticle),
-    confidence_distribution: distribution(results),
-    public_confidence_distribution: distribution(publicResults),
-    compiler_version: '0.3.0',
-    verification_report: verificationTimestamp
-      ? { timestamp: verificationTimestamp, articles_verified: verificationMap?.size || 0 }
-      : null
-  };
+    verificationTimestamp,
+    verificationCount: verificationMap?.size || 0
+  });
 
   writeFileSync(join(distDir, 'manifest.json'), JSON.stringify(manifest, null, 2));
 }
@@ -618,33 +529,6 @@ function writeDashboard(distDir, results, publicResults, draftResults, claims) {
 function writeFavicon(distDir) {
   const favicon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#2563EB"/><path d="M16 5v20M10 12h12M8 25c3 2 13 2 16 0" stroke="white" stroke-width="3" stroke-linecap="round"/></svg>';
   writeFileSync(join(distDir, 'favicon.svg'), favicon);
-}
-
-function publicClaims(publicResults) {
-  return publicResults.flatMap(result =>
-    result._atomicFacts
-      .filter(isClaimPublishable)
-      .map(fact => {
-        const declaredConfidence = fact['anchorfact:confidence'] || null;
-        const articleConfidence = result._confidence.level;
-        const confidence = capClaimConfidence(declaredConfidence, articleConfidence);
-        const claim = {
-          id: fact['@id'],
-          article: result._quality.canonicalUrl,
-          title: result.headline,
-          statement: fact.text,
-          confidence,
-          source_ref: fact['anchorfact:sourceRef'],
-          source_title: fact['anchorfact:sourceTitle'],
-          citation: fact.citation || null
-        };
-        if (declaredConfidence && declaredConfidence !== confidence) {
-          claim.declared_confidence = declaredConfidence;
-          claim.article_confidence = articleConfidence;
-        }
-        return claim;
-      })
-  );
 }
 
 function writeStaticOutputs(distDir, results) {

@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-27
 
-Generated: 2026-05-27T09:55:46.030Z
+Generated: 2026-05-27T13:23:47.244Z
 
-Snapshot: 573 public / 427 draft / 1715 claims.
+Snapshot: 554 public / 446 draft / 1603 claims.
 
 ## Summary
 
@@ -11,8 +11,9 @@ This is a risk-weighted audit sample of public AnchorFact articles. It is intend
 - Sample size: 20
 - Low verified coverage samples: 8
 - Articles with at least one fail check: 0
-- High-confidence samples needing review: 2
+- High-confidence samples needing review: 0
 - Claim-evidence failures: 0
+- Recommendations: keep_public: 2, downgrade_confidence: 0, repair_sources: 18, move_to_draft: 0
 
 ## Method
 
@@ -30,14 +31,14 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 6 | low_verified_coverage | `science/plate-tectonics` | medium | 2/6 (33.3%) | 6 | source=weak; claim=weak; summary=pass | repair_sources |
 | 7 | low_verified_coverage | `arts/classical-music-periods` | low | 1/7 (14.3%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
 | 8 | low_verified_coverage | `history/age-of-exploration` | low | 1/7 (14.3%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
-| 9 | high_confidence | `science/periodic-table` | high | 6/8 (75.0%) | 4 | source=weak; claim=pass; summary=pass | downgrade_confidence |
-| 10 | high_confidence | `ai/agentic-ai` | high | 2/2 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 11 | high_confidence | `ai/ai-for-food-science` | high | 2/2 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 12 | high_confidence | `ai/ai-governance-and-policy` | high | 4/4 (100.0%) | 3 | source=weak; claim=weak; summary=pass | downgrade_confidence |
+| 9 | high_confidence | `ai/agentic-ai` | high | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 10 | high_confidence | `ai/ai-for-food-science` | high | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 11 | high_confidence | `ai/affective-computing` | high | 2/2 (100.0%) | 2 | source=pass; claim=pass; summary=pass | keep_public |
+| 12 | high_confidence | `ai/ai-for-astronomy` | high | 2/2 (100.0%) | 2 | source=pass; claim=pass; summary=pass | keep_public |
 | 13 | medium_capped_claims | `ai/computer-vision` | medium | 2/2 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
-| 14 | medium_capped_claims | `ai/constitutional-ai` | medium | 1/2 (50.0%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
-| 15 | medium_capped_claims | `ai/gradient-descent` | medium | 1/2 (50.0%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
-| 16 | medium_capped_claims | `ai/graphrag` | medium | 2/4 (50.0%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
+| 14 | medium_capped_claims | `ai/gradient-descent` | medium | 1/2 (50.0%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
+| 15 | medium_capped_claims | `ai/graphrag` | medium | 2/4 (50.0%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
+| 16 | medium_capped_claims | `ai/reinforcement-learning` | medium | 2/2 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
 | 17 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 6 | source=pass; claim=weak; summary=pass | repair_sources |
 | 18 | low_confidence_public | `arts/world-literature` | low | 2/3 (66.7%) | 6 | source=weak; claim=weak; summary=pass | repair_sources |
 | 19 | low_confidence_public | `business/product-listing-optimization-amazon` | low | 1/1 (100.0%) | 6 | source=pass; claim=weak; summary=pass | repair_sources |
@@ -53,7 +54,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - confidence: `low` (verified_sources, score 0.475)
 - verified source coverage: 1/7 (14.3%)
 - claims: 6 total, 6 capped, 0 missing evidence
-- quality reasons: partial_source_verification, low_verified_coverage
+- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
@@ -83,7 +84,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - confidence: `low` (verified_sources, score 0.475)
 - verified source coverage: 1/3 (33.3%)
 - claims: 6 total, 6 capped, 0 missing evidence
-- quality reasons: partial_source_verification, low_verified_coverage
+- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
@@ -98,7 +99,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - confidence: `low` (verified_sources, score 0.475)
 - verified source coverage: 2/5 (40.0%)
 - claims: 6 total, 6 capped, 0 missing evidence
-- quality reasons: partial_source_verification, low_verified_coverage
+- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
@@ -128,7 +129,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - confidence: `medium` (verified_sources, score 0.87)
 - verified source coverage: 2/6 (33.3%)
 - claims: 6 total, 1 capped, 0 missing evidence
-- quality reasons: partial_source_verification, low_verified_coverage
+- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage, high_confidence_evidence_gap
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
@@ -165,22 +166,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 9. Periodic Table
-
-- canonical slug: `science/periodic-table`
-- canonical URL: https://anchorfact.org/science/periodic-table/
-- bucket: `high_confidence`
-- confidence: `high` (verified_sources, score 0.87)
-- verified source coverage: 6/8 (75.0%)
-- claims: 4 total, 0 capped, 0 missing evidence
-- quality reasons: partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `downgrade_confidence`
-
-### 10. Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning
+### 9. Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning
 
 - canonical slug: `ai/agentic-ai`
 - canonical URL: https://anchorfact.org/ai/agentic-ai/
@@ -188,14 +174,14 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - confidence: `high` (verified_sources, score 0.85)
 - verified source coverage: 2/2 (100.0%)
 - claims: 3 total, 0 capped, 0 missing evidence
-- quality reasons: none
+- quality reasons: claim_evidence_weak
 - source-title match: `pass`
-- claim-evidence match: `pass`
+- claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `keep_public`
+- hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
 
-### 11. AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition
+### 10. AI for Food Science: Quality Control, Flavor Prediction, and Personalized Nutrition
 
 - canonical slug: `ai/ai-for-food-science`
 - canonical URL: https://anchorfact.org/ai/ai-for-food-science/
@@ -203,6 +189,21 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - confidence: `high` (verified_sources, score 0.85)
 - verified source coverage: 2/2 (100.0%)
 - claims: 3 total, 0 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
+
+### 11. Affective Computing: Multimodal Emotion Recognition, Sentiment Analysis, and Empathetic AI
+
+- canonical slug: `ai/affective-computing`
+- canonical URL: https://anchorfact.org/ai/affective-computing/
+- bucket: `high_confidence`
+- confidence: `high` (verified_sources, score 0.85)
+- verified source coverage: 2/2 (100.0%)
+- claims: 2 total, 0 capped, 0 missing evidence
 - quality reasons: none
 - source-title match: `pass`
 - claim-evidence match: `pass`
@@ -210,20 +211,20 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 12. AI Governance: Risk Frameworks, Audits, and International Cooperation
+### 12. AI for Astronomy: Exoplanet Detection, Galaxy Classification, and Computational Astrophysics
 
-- canonical slug: `ai/ai-governance-and-policy`
-- canonical URL: https://anchorfact.org/ai/ai-governance-and-policy/
+- canonical slug: `ai/ai-for-astronomy`
+- canonical URL: https://anchorfact.org/ai/ai-for-astronomy/
 - bucket: `high_confidence`
-- confidence: `high` (verified_sources, score 0.86)
-- verified source coverage: 4/4 (100.0%)
-- claims: 3 total, 0 capped, 0 missing evidence
+- confidence: `high` (verified_sources, score 0.85)
+- verified source coverage: 2/2 (100.0%)
+- claims: 2 total, 0 capped, 0 missing evidence
 - quality reasons: none
-- source-title match: `weak`
-- claim-evidence match: `weak`
+- source-title match: `pass`
+- claim-evidence match: `pass`
 - title-summary accuracy: `pass`
-- hygiene flags: generic_source_homepage
-- recommendation: `downgrade_confidence`
+- hygiene flags: none
+- recommendation: `keep_public`
 
 ### 13. Computer Vision
 
@@ -240,22 +241,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 14. Constitutional AI
-
-- canonical slug: `ai/constitutional-ai`
-- canonical URL: https://anchorfact.org/ai/constitutional-ai/
-- bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.69)
-- verified source coverage: 1/2 (50.0%)
-- claims: 5 total, 5 capped, 0 missing evidence
-- quality reasons: partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 15. Gradient Descent and Optimization
+### 14. Gradient Descent and Optimization
 
 - canonical slug: `ai/gradient-descent`
 - canonical URL: https://anchorfact.org/ai/gradient-descent/
@@ -263,14 +249,14 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - confidence: `medium` (verified_sources, score 0.67)
 - verified source coverage: 1/2 (50.0%)
 - claims: 5 total, 5 capped, 0 missing evidence
-- quality reasons: partial_source_verification
+- quality reasons: generic_source_homepage, partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: generic_source_homepage
 - recommendation: `repair_sources`
 
-### 16. GraphRAG
+### 15. GraphRAG
 
 - canonical slug: `ai/graphrag`
 - canonical URL: https://anchorfact.org/ai/graphrag/
@@ -280,6 +266,21 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - claims: 5 total, 5 capped, 0 missing evidence
 - quality reasons: partial_source_verification
 - source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 16. Reinforcement Learning
+
+- canonical slug: `ai/reinforcement-learning`
+- canonical URL: https://anchorfact.org/ai/reinforcement-learning/
+- bucket: `medium_capped_claims`
+- confidence: `medium` (verified_sources, score 0.72)
+- verified source coverage: 2/2 (100.0%)
+- claims: 5 total, 5 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: none
@@ -323,7 +324,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - confidence: `low` (verified_sources, score 0.5)
 - verified source coverage: 1/1 (100.0%)
 - claims: 6 total, 6 capped, 0 missing evidence
-- quality reasons: none
+- quality reasons: generic_source_homepage
 - source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
@@ -348,7 +349,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 ## Rule Calibration
 
 - Keep `low_verified_coverage` as an audit marker until a larger sample confirms the failure rate.
-- Require `high` confidence to have verified coverage >= 50% and at least 2 verified sources.
+- Keep the current high-confidence rule, while continuing spot checks.
 - Keep exporting claims with confidence caps, but continue auditing weak evidence.
 
 ## Next Manual Review

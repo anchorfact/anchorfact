@@ -123,6 +123,40 @@ primary_sources:
   runGate(dir);
 });
 
+test('published article with broken atomic facts fails the gate', () => {
+  const dir = reset('broken-fact-fail');
+  const articlePath = join(dir, 'content', 'broken.md');
+  writeArticle(dir, 'broken.md', `id: broken
+status: published
+title: Broken Facts
+primary_sources:
+  - title: Source
+    url: https://example.com/source
+atomic_facts:
+  - statement: "Leaked section:\\n\\n### Heading"
+    source_url: https://example.com/source
+  - statement: "\`\`\`markdown\\n# bad"
+    source_url: https://example.com/source`);
+  writeFileSync(join(dir, 'verification-report.json'), JSON.stringify({
+    articles: [{
+      file: articlePath.replace(/\\/g, '/'),
+      sources_total: 1,
+      sources_verified: 1,
+      verification_results: [
+        { results: [{ method: 'url', verified: true }], all_verified: true }
+      ]
+    }]
+  }, null, 2));
+
+  let failedAsExpected = false;
+  try {
+    runGate(dir);
+  } catch {
+    failedAsExpected = true;
+  }
+  assert(failedAsExpected, 'quality gate should fail published articles with severe broken facts');
+});
+
 rmSync(root, { recursive: true, force: true });
 
 console.log(`\n${passed} passed, ${failed} failed`);

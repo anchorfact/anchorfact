@@ -198,6 +198,7 @@ test('renderAuditReport contains the required audit contract and rule calibratio
   assert(report.includes('claim-evidence match'), 'missing claim-evidence field');
   assert(report.includes('title-summary accuracy'), 'missing title-summary field');
   assert(report.includes('## Rule Calibration'), 'missing rule calibration section');
+  assert(report.includes('Recommendations:'), 'missing recommendation summary');
   assert(report.includes('573 public / 427 draft / 1715 claims'), 'missing snapshot counts');
 });
 

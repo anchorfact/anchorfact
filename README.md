@@ -64,7 +64,7 @@ If the generated `verification-report.json` changes, the workflow commits it bac
 After a production deployment, run:
 
 ```bash
-EXPECTED_PUBLIC_ARTICLES=573 EXPECTED_DRAFT_ARTICLES=427 EXPECTED_CLAIMS=1715 npm run smoke:prod
+EXPECTED_PUBLIC_ARTICLES=554 EXPECTED_DRAFT_ARTICLES=446 EXPECTED_CLAIMS=1603 npm run smoke:prod
 ```
 
 This checks the homepage, `/manifest.json`, `/llms.txt`, `/claims.json`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
@@ -77,6 +77,7 @@ Optional frontmatter fields:
 
 - `slug`: explicit canonical output path.
 - `status`: `draft` or `published`. Omit this for automatic quality-based classification.
+- `confidence`: `low`, `medium`, or `high`. This is treated as an editorial upper bound on computed confidence.
 
 Atomic facts should include:
 
@@ -121,6 +122,8 @@ The quality gate fails when:
 
 Ordinary draft content is allowed to remain in the repository.
 
+Public hygiene checks are shared by the compiler, quality gate, and audit script through `src/lib/content-hygiene.js`. They flag encoding damage, broken atomic facts, generic homepage sources, weak claim evidence, and placeholder text. `low_verified_coverage` remains an audit marker until a larger review sample justifies making it fatal.
+
 ## Project Scripts
 
 | Script | Action |
@@ -133,6 +136,9 @@ Ordinary draft content is allowed to remain in the repository.
 | `npm run pages:build` | Runs quality and build for Cloudflare Pages. |
 | `npm run pipeline` | Runs verify, quality, and build. |
 | `npm run smoke:prod` | Checks the live production machine-readable endpoints. |
+| `npm run audit-public-sample` | Regenerates the 20-article public content audit report. |
+
+Only the scripts above should be treated as production workflow entrypoints. Other files in `scripts/` are maintenance or one-off audit utilities; review them before reuse.
 
 ## License
 

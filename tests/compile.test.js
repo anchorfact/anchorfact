@@ -54,6 +54,14 @@ atomic_facts:
     statement: Public fixture claim.
     source_url: https://example.com/fixture
     confidence: high
+  - id: fact-public-fixture-broken
+    statement: "\`\`\`markdown\n# leaked section"
+    source_url: https://example.com/fixture
+    confidence: high
+  - id: fact-public-fixture-2
+    statement: Second public fixture claim.
+    source_url: https://example.com/fixture
+    confidence: medium
 ---
 ## TL;DR
 Public fixture summary.
@@ -131,12 +139,13 @@ test('draft page is generated with noindex and draft status', () => {
 test('claims.json includes only public atomic facts with evidence', () => {
   assert(existsSync(join(distDir, 'claims.json')), 'claims.json missing');
   const claims = JSON.parse(readFileSync(join(distDir, 'claims.json'), 'utf-8'));
-  assertEq(claims.claim_count, 1);
-  assertEq(claims.claims.length, 1);
+  assertEq(claims.claim_count, 2);
+  assertEq(claims.claims.length, 2);
   assertEq(claims.claims[0].statement, 'Public fixture claim.');
   assertEq(claims.claims[0].confidence, 'medium');
   assertEq(claims.claims[0].declared_confidence, 'high');
   assertEq(claims.claims[0].article_confidence, 'medium');
+  assert(!claims.claims.some(claim => claim.id.endsWith('broken')), 'broken atomic facts should not be public claims');
 });
 
 rmSync(root, { recursive: true, force: true });

@@ -3,6 +3,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { dirname, join, resolve } from 'path';
 import { pathToFileURL } from 'url';
 import { load as loadYaml } from 'js-yaml';
+import { collectContentHygieneFlags } from '../src/lib/content-hygiene.js';
 
 const DEFAULT_OUTPUT = 'docs/PUBLIC_CONTENT_AUDIT_2026-05-27.md';
 const SAMPLE_SIZE = 20;
@@ -98,57 +99,6 @@ function buildClaimStats(manifest, claimsPayload) {
   return stats;
 }
 
-function sourceKey(source) {
-  return `${String(source.title || '').toLowerCase()}|${String(source.url || source.doi || '').toLowerCase()}`;
-}
-
-function isHomepageUrl(value) {
-  try {
-    const parsed = new URL(value);
-    return parsed.pathname === '/' || parsed.pathname === '';
-  } catch {
-    return false;
-  }
-}
-
-function collectHygieneFlags(content, currentYear = new Date().getFullYear()) {
-  const flags = new Set();
-  const frontmatter = content?.frontmatter || {};
-  const body = content?.body || '';
-  const rawText = `${JSON.stringify(frontmatter)}\n${body}`;
-
-  if (/[\uFFFD\u9225\u9983\u9286\u4FD4]/.test(rawText)) flags.add('encoding_mojibake');
-
-  const atomicFacts = Array.isArray(frontmatter.atomic_facts) ? frontmatter.atomic_facts : [];
-  if (atomicFacts.some(fact => {
-    const statement = String(fact?.statement || '').trim();
-    return statement.length < 25 || /[\(:;,]\s*$/.test(statement) || /\barXiv:\d{4}\.\s*$/i.test(statement);
-  })) {
-    flags.add('broken_atomic_fact');
-  }
-
-  const sources = [
-    ...(Array.isArray(frontmatter.primary_sources) ? frontmatter.primary_sources : []),
-    ...(Array.isArray(frontmatter.secondary_sources) ? frontmatter.secondary_sources : [])
-  ];
-  const sourceKeys = sources.map(sourceKey).filter(Boolean);
-  if (new Set(sourceKeys).size < sourceKeys.length) flags.add('duplicate_sources');
-  if (sources.some(source => source.url && isHomepageUrl(source.url) && !source.doi)) flags.add('generic_source_homepage');
-  if (sources.some(source => Number(source.year) > currentYear)) flags.add('future_source_year');
-
-  const disputes = Array.isArray(frontmatter.disputed_statements) ? frontmatter.disputed_statements : [];
-  if (disputes.some(item => {
-    const statement = String(item?.statement || item || '').toLowerCase();
-    return !item?.source_url && /subject to ongoing scholarly debate|multiple schools of thought|interpretation and significance|no scientific consensus/.test(statement);
-  })) {
-    flags.add('generic_dispute_statement');
-  }
-
-  if (/\[(?:to be completed|todo|tbd|\u5F85|\u540E\u7EED|\u5F8C\u7E8C|\u88DC\u5145|\u8865\u5145)/i.test(body)) flags.add('placeholder_text');
-
-  return [...flags].sort();
-}
-
 function scoreSourceTitleMatch(article, verification) {
   const total = Number(article.sources_total || verification?.sources_total || 0);
   const verified = Number(article.sources_verified || verification?.sources_verified || 0);
@@ -168,6 +118,7 @@ function scoreSourceTitleMatch(article, verification) {
 function scoreClaimEvidence(claimStats, hygieneFlags) {
   if (!claimStats.claims) return 'weak';
   if (claimStats.missingEvidence > 0 || hygieneFlags.includes('broken_atomic_fact')) return 'fail';
+  if (hygieneFlags.includes('claim_evidence_weak')) return 'weak';
   if (hygieneFlags.includes('generic_source_homepage') || claimStats.capped / claimStats.claims > 0.75) return 'weak';
   return 'pass';
 }
@@ -205,7 +156,7 @@ export function buildAuditRows({ manifest, claimsPayload, verificationReport, co
     const verification = verificationBySlug.get(article.canonical_slug);
     const content = contentBySlug?.get ? contentBySlug.get(article.canonical_slug) : contentBySlug?.[article.canonical_slug];
     const stats = claimStats.get(article.canonical_slug) || { claims: 0, capped: 0, missingEvidence: 0 };
-    const hygieneFlags = collectHygieneFlags(content);
+    const hygieneFlags = collectContentHygieneFlags(content);
     const row = {
       ...article,
       verified_ratio: article.sources_total ? article.sources_verified / article.sources_total : 0,
@@ -292,6 +243,17 @@ function rowHasFail(row) {
   return [row.source_title_match, row.claim_evidence_match, row.title_summary_accuracy].includes('fail');
 }
 
+function recommendationSummary(sample) {
+  const counts = { keep_public: 0, downgrade_confidence: 0, repair_sources: 0, move_to_draft: 0 };
+  for (const row of sample) {
+    if (counts[row.recommendation] === undefined) counts[row.recommendation] = 0;
+    counts[row.recommendation]++;
+  }
+  return Object.entries(counts)
+    .map(([name, count]) => `${name}: ${count}`)
+    .join(', ');
+}
+
 function renderEntry(row, index) {
   const reasons = row.quality_reasons?.length ? row.quality_reasons.join(', ') : 'none';
   const flags = row.hygiene_flags?.length ? row.hygiene_flags.join(', ') : 'none';
@@ -322,6 +284,7 @@ export function renderAuditReport(sample, options = {}) {
   const highBad = countRows(sample, row => row.confidence_level === 'high' && (row.source_title_match !== 'pass' || row.claim_evidence_match === 'fail' || row.title_summary_accuracy === 'fail'));
   const claimFailures = countRows(sample, row => row.claim_evidence_match === 'fail');
   const lowCoverageCount = countRows(sample, row => row.quality_reasons?.includes('low_verified_coverage'));
+  const recommendations = recommendationSummary(sample);
 
   const ruleAdvice = [
     failedArticles >= 5
@@ -359,6 +322,7 @@ This is a risk-weighted audit sample of public AnchorFact articles. It is intend
 - Articles with at least one fail check: ${failedArticles}
 - High-confidence samples needing review: ${highBad}
 - Claim-evidence failures: ${claimFailures}
+- Recommendations: ${recommendations}
 
 ## Method
 

@@ -12,10 +12,10 @@ function test(name, fn) {
   try {
     fn();
     passed++;
-    console.log(`  ✓ ${name}`);
+    console.log(`  OK ${name}`);
   } catch (e) {
     failed++;
-    console.log(`  ✗ ${name}: ${e.message}`);
+    console.log(`  FAIL ${name}: ${e.message}`);
   }
 }
 
@@ -46,8 +46,8 @@ test('canonical slug falls back to relative content path', () => {
 });
 
 test('placeholder content is detected in body and known gaps', () => {
-  assertEq(hasPlaceholderContent('## Detailed Analysis\n[待后续补充。]'), true);
-  assertEq(hasPlaceholderContent('complete body', { known_gaps: ['内容初稿，待补充详细分析'] }), true);
+  assertEq(hasPlaceholderContent('## Detailed Analysis\n[to be completed]'), true);
+  assertEq(hasPlaceholderContent('complete body', { known_gaps: ['TODO: fill detailed analysis'] }), true);
   assertEq(hasPlaceholderContent('complete body', { known_gaps: ['minor topic gap'] }), false);
 });
 
@@ -60,7 +60,7 @@ test('verified non-placeholder article is public eligible', () => {
     filePath: 'content/ai/test.md',
     contentDir: 'content',
     verificationData: { sources_total: 1, sources_verified: 1 },
-    confidence: { level: 'high', inputs: { based_on: 'verified_sources' } }
+    confidence: { level: 'medium', inputs: { based_on: 'verified_sources' } }
   });
   assertEq(q.publicEligible, true);
   assertEq(q.status, 'public');
@@ -87,6 +87,63 @@ test('low verified coverage is a non-fatal quality reason', () => {
   assertEq(q.fatalReasons.includes('low_verified_coverage'), false);
 });
 
+test('generic homepage source is a non-fatal quality reason', () => {
+  const q = evaluateArticleQuality({
+    frontmatter: {
+      primary_sources: [{ title: 'Example Home', url: 'https://example.com/' }]
+    },
+    body: '## TL;DR\nDone.',
+    filePath: 'content/ai/test.md',
+    contentDir: 'content',
+    verificationData: { sources_total: 1, sources_verified: 1 },
+    confidence: { level: 'medium', inputs: { based_on: 'verified_sources' } }
+  });
+  assertEq(q.publicEligible, true);
+  assertEq(q.qualityReasons.includes('generic_source_homepage'), true);
+  assertEq(q.fatalReasons.includes('generic_source_homepage'), false);
+});
+
+test('majority broken atomic facts make article draft', () => {
+  const q = evaluateArticleQuality({
+    frontmatter: {
+      primary_sources: [{ title: 'Paper', url: 'https://example.com/paper' }],
+      atomic_facts: [
+        { statement: 'Incomplete arXiv:2212.', source_url: 'https://example.com/paper' },
+        { statement: '```markdown\n# leaked section', source_url: 'https://example.com/paper' }
+      ]
+    },
+    body: '## TL;DR\nDone.',
+    filePath: 'content/ai/test.md',
+    contentDir: 'content',
+    verificationData: { sources_total: 1, sources_verified: 1 },
+    confidence: { level: 'medium', inputs: { based_on: 'verified_sources' } }
+  });
+  assertEq(q.publicEligible, false);
+  assertEq(q.qualityReasons.includes('broken_atomic_fact'), true);
+  assertEq(q.fatalReasons.includes('broken_atomic_fact'), true);
+});
+
+test('high confidence evidence gap is recorded as an audit reason', () => {
+  const q = evaluateArticleQuality({
+    frontmatter: {
+      primary_sources: [
+        { title: 'Paper A', doi: '10.1234/a' },
+        { title: 'Paper B', doi: '10.1234/b' }
+      ]
+    },
+    body: '## TL;DR\nDone.',
+    filePath: 'content/ai/test.md',
+    contentDir: 'content',
+    verificationData: { sources_total: 2, sources_verified: 1 },
+    confidence: {
+      level: 'medium',
+      inputs: { based_on: 'verified_sources', high_confidence_evidence_gap: true }
+    }
+  });
+  assertEq(q.publicEligible, true);
+  assertEq(q.qualityReasons.includes('high_confidence_evidence_gap'), true);
+});
+
 test('estimated article is automatically draft', () => {
   const q = evaluateArticleQuality({
     frontmatter: {
@@ -106,7 +163,7 @@ test('estimated article is automatically draft', () => {
 test('missing sources and placeholders make draft without blocking draft builds', () => {
   const q = evaluateArticleQuality({
     frontmatter: {},
-    body: '[待后续补充。]',
+    body: '[to be completed]',
     filePath: 'content/ai/test.md',
     contentDir: 'content',
     verificationData: null,

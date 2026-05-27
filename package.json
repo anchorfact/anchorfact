@@ -11,6 +11,7 @@
     "pages:build": "npm run quality && npm run build",
     "pipeline": "npm run verify && npm run quality && npm run build",
     "smoke:prod": "node src/smoke-production.js",
+    "audit-public-sample": "node scripts/audit-public-sample.js",
     "test": "node tests/confidence.test.js && node tests/article-quality.test.js && node tests/compile.test.js && node tests/integration.test.js && node tests/mcp-index.test.js && node tests/public-audit.test.js && node tests/quality-gate.test.js && node tests/verification-cache.test.js",
     "serve": "node src/serve.js",
     "deploy": "npm run pages:build && wrangler pages deploy dist",
