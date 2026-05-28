@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T08:21:22.011Z
+Generated: 2026-05-28T08:53:25.984Z
 
-Snapshot: 555 public / 445 draft / 1576 claims.
+Snapshot: 555 public / 445 draft / 1579 claims.
 
 ## Summary
 
@@ -29,20 +29,20 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 4 | high_confidence | `ai/ai-in-healthcare` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 5 | high_confidence | `ai/ai-red-teaming-and-safety` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 6 | medium_capped_claims | `business/strategic-management-theory` | medium | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 7 | medium_capped_claims | `ai/ai-for-data-curation` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 8 | medium_capped_claims | `ai/ai-for-democratization` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 9 | medium_capped_claims | `ai/ai-for-digital-twins` | medium | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 7 | medium_capped_claims | `ai/ai-for-drug-discovery` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 8 | medium_capped_claims | `ai/ai-for-energy` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 9 | medium_capped_claims | `ai/ai-for-fraud-detection` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
 | 10 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 12 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 13 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 14 | risk_fallback | `ai/ai-search-engines` | low | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 15 | risk_fallback | `business/leadership-and-organizational-behavior` | low | 3/6 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 16 | risk_fallback | `computer-science/cypress` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 17 | risk_fallback | `computer-science/fetch-api` | medium | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 18 | risk_fallback | `computer-science/haskell-language` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 19 | risk_fallback | `computer-science/mutationobserver` | medium | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 20 | risk_fallback | `computer-science/ruby-on-rails` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 14 | risk_fallback | `geography/south-american-geography` | low | 2/4 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 15 | risk_fallback | `health/epidemiology-fundamentals` | low | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 16 | risk_fallback | `health/nutrition-science` | low | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 17 | risk_fallback | `health/sleep-science-and-circadian-rhythms` | low | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 18 | risk_fallback | `history/cold-war-history` | low | 2/4 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 19 | risk_fallback | `history/scientific-revolution` | low | 3/6 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 20 | risk_fallback | `science/galaxies-and-the-universe` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
 
 ## Article Findings
 
@@ -136,46 +136,46 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 7. AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training
+### 7. AI for Drug Discovery: AlphaFold, Molecular Generation, and Generative Chemistry
 
-- canonical slug: `ai/ai-for-data-curation`
-- canonical URL: https://anchorfact.org/ai/ai-for-data-curation/
+- canonical slug: `ai/ai-for-drug-discovery`
+- canonical URL: https://anchorfact.org/ai/ai-for-drug-discovery/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.74)
+- confidence: `medium` (verified_sources, score 0.85)
 - verified source coverage: 1/2 (50.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification
+- quality reasons: partial_source_verification, high_confidence_evidence_gap
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 8. AI Democratization: Open-Source Models, Low-Code AI, and Accessible Machine Learning
+### 8. AI for Energy: Smart Grids, Renewable Forecasting, and Digital Twins
 
-- canonical slug: `ai/ai-for-democratization`
-- canonical URL: https://anchorfact.org/ai/ai-for-democratization/
+- canonical slug: `ai/ai-for-energy`
+- canonical URL: https://anchorfact.org/ai/ai-for-energy/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.74)
+- confidence: `medium` (verified_sources, score 0.85)
 - verified source coverage: 1/2 (50.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification
+- quality reasons: partial_source_verification, high_confidence_evidence_gap
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: generic_source_homepage
+- hygiene flags: none
 - recommendation: `repair_sources`
 
-### 9. AI for Digital Twins: Real-Time Simulation, Predictive Maintenance, and System Optimization
+### 9. AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime
 
-- canonical slug: `ai/ai-for-digital-twins`
-- canonical URL: https://anchorfact.org/ai/ai-for-digital-twins/
+- canonical slug: `ai/ai-for-fraud-detection`
+- canonical URL: https://anchorfact.org/ai/ai-for-fraud-detection/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.79)
-- verified source coverage: 2/2 (100.0%)
+- confidence: `medium` (verified_sources, score 0.85)
+- verified source coverage: 1/2 (50.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
+- quality reasons: partial_source_verification, high_confidence_evidence_gap
+- source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: none
@@ -241,12 +241,27 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 14. AI-Powered Search: Perplexity, Google AI Overviews, and the Future
+### 14. South American Geography and Biodiversity
 
-- canonical slug: `ai/ai-search-engines`
-- canonical URL: https://anchorfact.org/ai/ai-search-engines/
+- canonical slug: `geography/south-american-geography`
+- canonical URL: https://anchorfact.org/geography/south-american-geography/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.51)
+- confidence: `low` (verified_sources, score 0.55)
+- verified source coverage: 2/4 (50.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
+
+### 15. Epidemiology: The Science of Public Health
+
+- canonical slug: `health/epidemiology-fundamentals`
+- canonical URL: https://anchorfact.org/health/epidemiology-fundamentals/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.5)
 - verified source coverage: 1/2 (50.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: claim_evidence_weak, partial_source_verification
@@ -256,10 +271,55 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: claim_evidence_weak
 - recommendation: `repair_sources`
 
-### 15. Leadership Theory and Organizational Behavior
+### 16. Nutrition Science: Macronutrients, Micronutrients, and Diet
 
-- canonical slug: `business/leadership-and-organizational-behavior`
-- canonical URL: https://anchorfact.org/business/leadership-and-organizational-behavior/
+- canonical slug: `health/nutrition-science`
+- canonical URL: https://anchorfact.org/health/nutrition-science/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.5)
+- verified source coverage: 1/2 (50.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
+
+### 17. Sleep Science and Circadian Rhythms
+
+- canonical slug: `health/sleep-science-and-circadian-rhythms`
+- canonical URL: https://anchorfact.org/health/sleep-science-and-circadian-rhythms/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.5)
+- verified source coverage: 1/2 (50.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
+
+### 18. The Cold War: Ideological Conflict and Nuclear Standoff
+
+- canonical slug: `history/cold-war-history`
+- canonical URL: https://anchorfact.org/history/cold-war-history/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.55)
+- verified source coverage: 2/4 (50.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
+
+### 19. The Scientific Revolution: From Copernicus to Newton
+
+- canonical slug: `history/scientific-revolution`
+- canonical URL: https://anchorfact.org/history/scientific-revolution/
 - bucket: `risk_fallback`
 - confidence: `low` (verified_sources, score 0.55)
 - verified source coverage: 3/6 (50.0%)
@@ -271,72 +331,12 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: claim_evidence_weak
 - recommendation: `repair_sources`
 
-### 16. Cypress
+### 20. Galaxies and the Universe
 
-- canonical slug: `computer-science/cypress`
-- canonical URL: https://anchorfact.org/computer-science/cypress/
+- canonical slug: `science/galaxies-and-the-universe`
+- canonical URL: https://anchorfact.org/science/galaxies-and-the-universe/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: generic_source_homepage
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 17. Fetch API
-
-- canonical slug: `computer-science/fetch-api`
-- canonical URL: https://anchorfact.org/computer-science/fetch-api/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.745)
-- verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 0 capped, 0 missing evidence
-- quality reasons: generic_source_homepage
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 18. Haskell Language
-
-- canonical slug: `computer-science/haskell-language`
-- canonical URL: https://anchorfact.org/computer-science/haskell-language/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: generic_source_homepage
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 19. MutationObserver
-
-- canonical slug: `computer-science/mutationobserver`
-- canonical URL: https://anchorfact.org/computer-science/mutationobserver/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.745)
-- verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 0 capped, 0 missing evidence
-- quality reasons: generic_source_homepage
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 20. Ruby on Rails
-
-- canonical slug: `computer-science/ruby-on-rails`
-- canonical URL: https://anchorfact.org/computer-science/ruby-on-rails/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
+- confidence: `low` (verified_sources, score 0.43)
 - verified source coverage: 1/1 (100.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: generic_source_homepage

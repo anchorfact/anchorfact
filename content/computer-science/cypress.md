@@ -1,69 +1,69 @@
 ---
-id: "kb-2026-00179"
-title: "Cypress"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00179
+title: Cypress
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "Cypress is a JavaScript end-to-end testing framework that runs directly in the browser, providing real-time reloading, automatic waiting, and time-travel debugging"
-    source_title: "Testing JavaScript Applications"
-    source_url: "https://www.manning.com/books/testing-javascript-applications"
-    confidence: "high"
-  - id: "fact-computer-science-001"
-    statement: "Cypress is a JavaScript end-to-end testing framework that runs directly in the browser, providing real-time reloading, automatic waiting, and time-travel debugging. It competes with Selenium and Playwright. Cypress runs in the same event loop as the application."
-    source_title: "Testing JavaScript Applications"
-    source_url: "https://www.manning.com/books/testing-javascript-applications"
-    confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "Key features: automatic retries and waiting (no `sleep()`), screenshots and videos of test runs, component testing (Cypress 10+, mounts React/Vue components), network stubbing (`cy.intercept()`)."
-    source_title: "Cypress Documentation"
-    source_url: "https://docs.cypress.io/"
-    confidence: "medium"
-
+  - id: af-computer-science-cypress-1
+    statement: >-
+      Cypress is a JavaScript testing tool focused on tests that run in a real browser for modern
+      web applications.
+    source_title: Why Cypress?
+    source_url: https://docs.cypress.io/app/get-started/why-cypress
+    confidence: medium
+  - id: af-computer-science-cypress-2
+    statement: >-
+      Cypress retries queries and assertions automatically until they pass or time out, reducing the
+      need for fixed waits.
+    source_title: Retry-ability
+    source_url: https://docs.cypress.io/app/core-concepts/retry-ability
+    confidence: medium
+  - id: af-computer-science-cypress-3
+    statement: >-
+      Cypress can observe, stub, and assert network traffic in tests with commands such as
+      cy.intercept().
+    source_title: Network Requests
+    source_url: https://docs.cypress.io/app/guides/network-requests
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    This field is under active research and rapid development; some conclusions may evolve with new
+    evidence or technological advances
+  - >-
+    Certain sub-topics are covered at a general level; specialized edge cases and nuanced
+    applications may not be fully addressed
+disputed_statements: []
 primary_sources:
-  - title: "Cypress Documentation"
-    type: "documentation"
+  - id: ps-cypress-1
+    title: Why Cypress?
+    type: official_documentation
     year: 2026
-    url: "https://docs.cypress.io/"
-    institution: "Cypress.io"
-
-secondary_sources:
-  - title: "Testing JavaScript Applications"
-    authors: ["da Costa, Lucas"]
-    type: "book"
-    year: 2021
-    url: "https://www.manning.com/books/testing-javascript-applications"
-    institution: "Manning"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    institution: Cypress.io
+    url: https://docs.cypress.io/app/get-started/why-cypress
+  - id: ps-cypress-2
+    title: Retry-ability
+    type: official_documentation
+    year: 2026
+    institution: Cypress.io
+    url: https://docs.cypress.io/app/core-concepts/retry-ability
+  - id: ps-cypress-3
+    title: Network Requests
+    type: official_documentation
+    year: 2026
+    institution: Cypress.io
+    url: https://docs.cypress.io/app/guides/network-requests
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
 

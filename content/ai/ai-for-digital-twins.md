@@ -4,8 +4,8 @@ title: "AI for Digital Twins: Real-Time Simulation, Predictive Maintenance, and 
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -16,72 +16,54 @@ is_live_document: false
 data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: af-ai-for-digital-twins-1
+  - id: af-ai-ai-for-digital-twins-1
     statement: >-
-      AI-powered digital twins bridge the physical and digital worlds by maintaining real-time virtual replicas synchronized with IoT sensor data. Digital twins span manufacturing (factory floor
-      simulation -- Siemens Xcelerator), buildings (energy optimization -- Autodesk Tandem), cities (Singapore Virtual Singapore), and healthcare (patient digital twins for personalized treatment). AI
-      enhances twins through anomaly detection, what-if simulation, and reinforcement learning-based optimization.
-    source_title: Siemens Xcelerator / Autodesk Tandem / Virtual Singapore / AI Digital Twin Comprehensive Guide (2025)
-    source_url: https://www.nvidia.com/en-us/omniverse/digital-twins/
-    confidence: high
-  - id: af-ai-for-digital-twins-2
+      NIST describes a digital twin as a computer model of a physical system that can support
+      monitoring, prediction, optimization, and decision support.
+    source_title: Digital twins
+    source_url: https://www.nist.gov/digital-twins
+    confidence: medium
+  - id: af-ai-ai-for-digital-twins-2
     statement: >-
-      Generative AI for digital twins (2025): LLMs enable natural language querying of digital twin data ("what is the energy consumption of Building 3 this week compared to last?"), and generative
-      design proposes optimal configurations (factory layout, building HVAC settings) based on simulated outcomes. Meta's DIGIT (2025) introduced AI agents that autonomously explore and optimize
-      digital twin environments.
-    source_title: Generative AI + Digital Twin surveys (2024-2025) / NVIDIA Omniverse digital twin platform / Siemens Industrial AI
-    source_url: https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1655470/full
-    confidence: high
+      Azure Digital Twins models environments as twin graphs whose entities and relationships are
+      defined with Digital Twins Definition Language.
+    source_title: What is Azure Digital Twins?
+    source_url: https://learn.microsoft.com/en-us/azure/digital-twins/overview
+    confidence: medium
+  - id: af-ai-ai-for-digital-twins-3
+    statement: >-
+      Digital-twin research identifies enabling technologies such as IoT, data analytics,
+      simulation, and communication infrastructure as foundations for twin systems.
+    source_title: "Digital Twin: Enabling Technologies, Challenges and Open Research"
+    source_url: https://arxiv.org/abs/1911.01276
+    confidence: medium
 primary_sources:
   - id: ps-ai-for-digital-twins-1
-    title: "AI-Enabled Digital Twins: From Real-Time Monitoring to Autonomous Optimization (2025 Survey)"
-    type: industry_report
-    year: 2025
-    institution: Siemens / NVIDIA / Gartner
-    url: https://www.nvidia.com/en-us/omniverse/digital-twins/
+    title: Digital twins
+    type: government_resource
+    year: 2026
+    institution: National Institute of Standards and Technology
+    url: https://www.nist.gov/digital-twins
   - id: ps-ai-for-digital-twins-2
-    title: Generative and Predictive AI for Digital Twin Systems in Advanced Manufacturing
+    title: What is Azure Digital Twins?
+    type: official_documentation
+    year: 2026
+    institution: Microsoft Learn
+    url: https://learn.microsoft.com/en-us/azure/digital-twins/overview
+  - id: ps-ai-for-digital-twins-3
+    title: "Digital Twin: Enabling Technologies, Challenges and Open Research"
     type: academic_paper
-    year: 2025
-    institution: Frontiers in Artificial Intelligence
-    url: https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1655470/full
+    year: 2019
+    institution: arXiv
+    url: https://arxiv.org/abs/1911.01276
 known_gaps:
-  - Closed-loop autonomous digital twins -- AI detects issue, simulates solutions, and implements fix without human intervention
+  - >-
+    Closed-loop autonomous digital twins -- AI detects issue, simulates solutions, and implements
+    fix without human intervention
   - Multi-scale digital twins integrating molecular, device, system, and city-level simulations
 disputed_statements: []
-secondary_sources:
-  - title: "AI Simulation by Digital Twins: Systematic Survey, Reference Framework, and Research Directions"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: Software and Systems Modeling (Springer)
-    url: https://doi.org/10.1007/s10270-025-01306-0
-  - title: Advancements and Challenges of Digital Twins in Industry
-    type: review
-    year: 2024
-    authors:
-      - Niederer, Steven A.
-      - Sacks, Michael S.
-      - Girolami, Mark
-      - Willcox, Karen
-    institution: Nature Computational Science
-    url: https://doi.org/10.1038/s43588-024-00603-w
-  - title: "A Survey on Digital Twins: Enabling Technologies, Use Cases, Challenges, and Future Directions"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: IEEE Access
-    url: https://doi.org/10.1109/ACCESS.2024.3525234
-  - title: "A Survey on AI-Driven Digital Twins in Industry 4.0: Smart Manufacturing and Advanced Robotics"
-    type: survey_paper
-    year: 2021
-    authors:
-      - multiple
-    institution: Sensors (MDPI) / RWTH Aachen
-    url: https://doi.org/10.3390/s21196340
-updated: "2026-05-24"
+secondary_sources: []
+updated: "2026-05-28"
 ---
 ## TL;DR
 Digital twins are real-time virtual replicas of physical systems -- factories, buildings, cities, even human bodies. AI transforms digital twins from passive monitoring dashboards to active optimization engines that predict failures, simulate scenarios, and autonomously improve operations.

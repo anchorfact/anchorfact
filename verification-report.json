@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 0,
     "average_sources_per_article": "2.1",
-    "overall_verification_rate": "63.8%",
+    "overall_verification_rate": "64.3%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 292
+    "manual_reviewed_articles": 178
   },
   "articles": [
     {
@@ -2947,19 +2947,20 @@
       "file": "content/ai/ai-for-data-curation.md",
       "article_id": "ai-for-data-curation",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "NeMo Curator: Scalable Data Preprocessing and Curation for Foundation Model Training",
-          "source_type": "software",
+          "source_title": "Datasheets for Datasets",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://github.com/NVIDIA-NeMo/Curator",
+              "identifier": "https://arxiv.org/abs/1803.09010",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/NVIDIA-NeMo/Curator"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -2967,58 +2968,101 @@
           "all_verified": true
         },
         {
-          "source_title": "Training Data Curation: Web Filtering, Deduplication, and Quality Scoring for LLMs",
+          "source_title": "Data Statements for Natural Language Processing",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2502.08211",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://aclanthology.org/Q18-1041/",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Data Cascades in High-Stakes AI",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://research.google/pubs/data-cascades-in-high-stakes-ai/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-democratization.md",
       "article_id": "ai-for-democratization",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Llama 3: Open and Efficient Foundation Language Models (Meta AI)",
+          "source_title": "Transformers: State-of-the-Art Natural Language Processing",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2407.21783",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1910.03771",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Hugging Face: Democratizing AI through Open-Source Models, Datasets, and Spaces (500K+ models)",
-          "source_type": "software",
+          "source_title": "Scikit-learn: Machine Learning in Python",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://huggingface.co/",
+              "identifier": "https://jmlr.org/papers/v12/pedregosa11a.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://huggingface.co/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Teachable Machine FAQ",
+          "source_type": "official_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://teachablemachine.withgoogle.com/faq",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -3026,26 +3070,29 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-digital-twins.md",
       "article_id": "ai-for-digital-twins",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "AI-Enabled Digital Twins: From Real-Time Monitoring to Autonomous Optimization (2025 Survey)",
-          "source_type": "industry_report",
+          "source_title": "Digital twins",
+          "source_type": "government_resource",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nvidia.com/en-us/omniverse/digital-twins/",
+              "identifier": "https://www.nist.gov/digital-twins",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nvidia.com/en-us/glossary/digital-twin/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -3053,16 +3100,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Generative and Predictive AI for Digital Twin Systems in Advanced Manufacturing",
+          "source_title": "What is Azure Digital Twins?",
+          "source_type": "official_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/digital-twins/overview",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Digital Twin: Enabling Technologies, Challenges and Open Research",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1655470/full",
+              "identifier": "https://arxiv.org/abs/1911.01276",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1655470/full"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -3070,8 +3136,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-drug-discovery-molecular-docking-virtual-screening-and-de-novo-design.md",
@@ -6776,36 +6844,56 @@
       "file": "content/ai/ai-search-engines.md",
       "article_id": "ai-search-engines",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Perplexity AI: The Answer Engine",
-          "source_type": "official_documentation",
+          "source_title": "The Anatomy of a Large-Scale Hypertextual Web Search Engine",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.perplexity.ai/hub/technical-faq",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.perplexity.ai/hub/technical-faq"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Generative AI in Search (Google AI Overviews)",
-          "source_type": "official_documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://blog.google/products/search/generative-ai-search/",
+              "identifier": "https://doi.org/10.1016/S0169-7552(98)00110-X",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://blog.google/products-and-platforms/products/search/generative-ai-search/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Large Language Models for Information Retrieval: A Survey",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2308.07107",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2005.11401",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -6813,8 +6901,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-search-recommendation.md",
@@ -17927,19 +18017,20 @@
       "file": "content/business/leadership-and-organizational-behavior.md",
       "article_id": "leadership-and-organizational-behavior",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Transformational Leadership, 2nd Edition",
-          "source_type": "textbook",
+          "source_title": "What Leaders Really Do",
+          "source_type": "article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.routledge.com/Transformational-Leadership/Bass-Riggio/p/book/9780805847628",
+              "identifier": "https://hbr.org/2001/12/what-leaders-really-do",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.routledge.com/Transformational-Leadership/Bass-Riggio/p/book/9780805847628"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -17947,16 +18038,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Organizational Behavior, 18th Edition",
-          "source_type": "textbook",
+          "source_title": "Psychological Safety and Learning Behavior in Work Teams",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.pearson.com/en-us/subject-catalog/p/organizational-behavior/P200000005179",
+              "identifier": "https://doi.org/10.2307/2666999",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.pearson.com/en-us/search/All-results?aq=organizational%20behavior"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -17964,56 +18056,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Organizational Behavior (20th Edition, 2025)",
-          "source_type": "book",
+          "source_title": "Organizational Behavior",
+          "source_type": "textbook",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.pearson.com/ob/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.pearson.com/ob/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Leadership: Theory and Practice (10th Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://us.sagepub.com/leadership/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.sagepub.com/leadership"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Organizational Behavior (19th Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Principles of Management",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://openstax.org/details/books/principles-management",
+              "identifier": "https://openstax.org/details/books/organizational-behavior",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://openstax.org/details/books/principles-management"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -18022,7 +18075,9 @@
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 2
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/business/leadership-principles.md",
@@ -21331,21 +21386,58 @@
     },
     {
       "file": "content/computer-science/cypress.md",
-      "article_id": "kb-2026-00179",
+      "article_id": "cypress",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Cypress Documentation",
-          "source_type": "documentation",
+          "source_title": "Why Cypress?",
+          "source_type": "official_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.cypress.io/",
+              "identifier": "https://docs.cypress.io/app/get-started/why-cypress",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://docs.cypress.io/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Retry-ability",
+          "source_type": "official_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cypress.io/app/core-concepts/retry-ability",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Network Requests",
+          "source_type": "official_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cypress.io/app/guides/network-requests",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -21353,8 +21445,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/dart-language.md",
@@ -23063,21 +23157,58 @@
     },
     {
       "file": "content/computer-science/fetch-api.md",
-      "article_id": "kb-2026-00081",
+      "article_id": "fetch-api",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Fetch Standard",
-          "source_type": "standard",
+          "source_title": "Window: fetch() method",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://fetch.spec.whatwg.org/",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://fetch.spec.whatwg.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Fetch API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Using the Fetch API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -23085,8 +23216,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/file-systems-fat-ntfs-ext4-zfs-design-performance-and-reliability.md",
@@ -24138,21 +24271,58 @@
     },
     {
       "file": "content/computer-science/haskell-language.md",
-      "article_id": "kb-2026-00310",
+      "article_id": "haskell-language",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Haskell Documentation",
-          "source_type": "documentation",
+          "source_title": "Haskell 2010 Language Report",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.haskell.org/documentation/",
+              "identifier": "https://www.haskell.org/onlinereport/haskell2010/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.haskell.org/documentation/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Glasgow Haskell Compiler",
+          "source_type": "official_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.haskell.org/ghc/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cabal User Guide",
+          "source_type": "official_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.haskell.org/cabal/users-guide/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -24160,8 +24330,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/heap-priority-queue.md",
@@ -25941,21 +26113,58 @@
     },
     {
       "file": "content/computer-science/mutationobserver.md",
-      "article_id": "kb-2026-00097",
+      "article_id": "mutationobserver",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "DOM Standard — MutationObserver",
-          "source_type": "standard",
+          "source_title": "MutationObserver",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dom.spec.whatwg.org/#interface-mutationobserver",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://dom.spec.whatwg.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MutationObserver: observe() method",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MutationRecord",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/MutationRecord",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -25963,8 +26172,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/nats-and-message-brokers-pub-sub-request-reply-and-queue-groups.md",
@@ -28088,21 +28299,58 @@
     },
     {
       "file": "content/computer-science/ruby-on-rails.md",
-      "article_id": "kb-2026-00290",
+      "article_id": "ruby-on-rails",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Ruby on Rails Guides",
-          "source_type": "documentation",
+          "source_title": "Getting Started with Rails",
+          "source_type": "official_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://guides.rubyonrails.org/",
+              "identifier": "https://guides.rubyonrails.org/getting_started.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://guides.rubyonrails.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Active Record Basics",
+          "source_type": "official_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://guides.rubyonrails.org/active_record_basics.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Rails Routing from the Outside In",
+          "source_type": "official_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://guides.rubyonrails.org/routing.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -28110,8 +28358,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/rust-programming-language-ownership-borrowing-and-memory-safety.md",

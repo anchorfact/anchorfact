@@ -4,8 +4,8 @@ title: "AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Sc
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -16,69 +16,52 @@ is_live_document: false
 data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: af-ai-for-data-curation-1
+  - id: af-ai-ai-for-data-curation-1
     statement: >-
-      NVIDIA NeMo Curator (2026) provides a production-scale data curation pipeline processing 8+ trillion tokens for Nemotron-4 -- implementing URL-level filtering, document-level quality scoring
-      (perplexity-based, classifier-based, LLM-as-judge), fuzzy deduplication (MinHash LSH at billion-document scale), and safety filtering (toxicity, PII removal) -- demonstrating that curated data
-      improves downstream LLM performance by 5-15% on standard benchmarks.
-    source_title: NVIDIA NeMo Curator (2026) -- Scalable Data Preprocessing and Curation for LLM Training / GitHub
-    source_url: https://github.com/NVIDIA-NeMo/Curator
-    confidence: high
-  - id: af-ai-for-data-curation-2
+      Datasheets for Datasets proposes standardized dataset documentation covering motivation,
+      composition, collection process, preprocessing, uses, distribution, and maintenance.
+    source_title: Datasheets for Datasets
+    source_url: https://arxiv.org/abs/1803.09010
+    confidence: medium
+  - id: af-ai-ai-for-data-curation-2
     statement: >-
-      Core data curation techniques (2024-2026): (1) URL filtering -- remove adult, spam, low-quality domains; (2) Language detection -- fastText for 176 languages; (3) Quality filtering --
-      heuristics, perplexity-based, and classifier-based; (4) Deduplication -- exact (hash), near (MinHash with 5-gram overlap, Jaccard 0.8), and fuzzy semantic (embedding cosine similarity). Typical
-      reduction: 100TB raw web crawl to 5-10TB curated training data (90-95% reduction).
-    source_title: NVIDIA NeMo Curator / arxiv 2502.08211 -- Data curation survey / Stanford CS324 -- filtering and deduplication (2025)
-    source_url: https://arxiv.org/abs/2502.08211
-    confidence: high
+      Data Statements for Natural Language Processing proposes documenting dataset language,
+      speaker, annotator, and collection characteristics to support responsible NLP use.
+    source_title: Data Statements for Natural Language Processing
+    source_url: https://aclanthology.org/Q18-1041/
+    confidence: medium
+  - id: af-ai-ai-for-data-curation-3
+    statement: >-
+      Data Cascades in High-Stakes AI reports that data issues can compound through ML pipelines,
+      making data quality work a first-order reliability concern.
+    source_title: Data Cascades in High-Stakes AI
+    source_url: https://research.google/pubs/data-cascades-in-high-stakes-ai/
+    confidence: medium
 primary_sources:
   - id: ps-ai-for-data-curation-1
-    title: "NeMo Curator: Scalable Data Preprocessing and Curation for Foundation Model Training"
-    type: software
-    year: 2026
-    institution: NVIDIA / GitHub
-    url: https://github.com/NVIDIA-NeMo/Curator
-  - id: ps-ai-for-data-curation-2
-    title: "Training Data Curation: Web Filtering, Deduplication, and Quality Scoring for LLMs"
+    title: Datasheets for Datasets
     type: academic_paper
-    year: 2025
-    institution: arXiv / NVIDIA
-    url: https://arxiv.org/abs/2502.08211
+    year: 2018
+    institution: arXiv
+    url: https://arxiv.org/abs/1803.09010
+  - id: ps-ai-for-data-curation-2
+    title: Data Statements for Natural Language Processing
+    type: academic_paper
+    year: 2018
+    institution: Transactions of the Association for Computational Linguistics
+    url: https://aclanthology.org/Q18-1041/
+  - id: ps-ai-for-data-curation-3
+    title: Data Cascades in High-Stakes AI
+    type: academic_paper
+    year: 2021
+    institution: Google Research / ACM CHI
+    url: https://research.google/pubs/data-cascades-in-high-stakes-ai/
 known_gaps:
   - Semantic deduplication -- identifying near-duplicate documents with different wording
   - Continuous data quality monitoring during training to detect contaminated examples
 disputed_statements: []
-secondary_sources:
-  - title: "Data Quality in the Age of AI: A Review of State-of-the-Art Techniques for Data Curation"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: Data (MDPI)
-    url: https://doi.org/10.3390/data10120201
-  - title: A Survey on Data Quality Dimensions and Tools for Machine Learning
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: arXiv (17 DQ tools reviewed)
-    url: https://arxiv.org/abs/2406.19614
-  - title: The METRIC-Framework for Assessing Data Quality for Trustworthy AI in Medicine
-    type: journal_article
-    year: 2024
-    authors:
-      - multiple
-    institution: npj Digital Medicine (Nature)
-    url: https://doi.org/10.1038/s41746-024-01196-4
-  - title: "Data Governance in the Age of AI: A Comprehensive Framework (KPMG)"
-    type: report
-    year: 2025
-    authors:
-      - KPMG Research
-    institution: KPMG
-    url: https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2025/data-governance-age-ai.pdf
-updated: "2026-05-24"
+secondary_sources: []
+updated: "2026-05-28"
 ---
 ## TL;DR
 Data curation is the unglamorous workhorse behind every great LLM -- transforming petabytes of noisy web crawl data into clean, deduplicated, high-quality training corpora. The quality of training data matters more than model architecture for downstream performance, and AI-assisted curation pipelines are the key differentiator between frontier and mediocre models.

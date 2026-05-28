@@ -1,67 +1,64 @@
 ---
-id: "kb-2026-00081"
-title: "Fetch API"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00081
+title: Fetch API
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-001"
-    statement: "The Fetch API is a modern JavaScript interface for making HTTP requests, replacing XMLHttpRequest. Standardized by WHATWG, it uses Promises for asynchronous request handling and provides a cleaner, more powerful API for network operations."
-    source_title: "Fetch Standard"
-    source_url: "https://fetch.spec.whatwg.org/"
-    confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "Key features include: streaming responses via ReadableStream, CORS handling, request/response cloning, and AbortController integration for cancellation."
-    source_title: "Fetch Standard"
-    source_url: "https://fetch.spec.whatwg.org/"
-    confidence: "medium"
-  - id: "fact-computer-science-003"
-    statement: "Unlike XHR, fetch rejects only on network errors — HTTP error statuses (404, 500) still resolve successfully."
-    source_title: "Fetch Standard"
-    source_url: "https://fetch.spec.whatwg.org/"
-    confidence: "medium"
-
+  - id: af-computer-science-fetch-api-1
+    statement: >-
+      MDN describes the window.fetch() method as starting the process of fetching a resource from
+      the network and returning a promise.
+    source_title: "Window: fetch() method"
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch
+    confidence: medium
+  - id: af-computer-science-fetch-api-2
+    statement: >-
+      MDN describes the Fetch API as an interface for making HTTP requests and processing responses
+      with promises.
+    source_title: Fetch API
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+    confidence: medium
+  - id: af-computer-science-fetch-api-3
+    statement: >-
+      MDN notes that fetch() promise rejection is reserved for network-level failures, so callers
+      check response status for HTTP errors.
+    source_title: Using the Fetch API
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - Content verified during quality audit; citations cross-referenced with authoritative sources
+disputed_statements: []
 primary_sources:
-  - title: "Fetch Standard"
-    type: "standard"
+  - id: ps-fetch-api-1
+    title: "Window: fetch() method"
+    type: documentation
     year: 2026
-    url: "https://fetch.spec.whatwg.org/"
-    institution: "WHATWG"
-
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch
+  - id: ps-fetch-api-2
+    title: Fetch API
+    type: documentation
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+  - id: ps-fetch-api-3
+    title: Using the Fetch API
+    type: documentation
+    year: 2026
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
 

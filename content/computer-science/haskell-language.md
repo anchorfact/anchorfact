@@ -1,69 +1,69 @@
 ---
-id: "kb-2026-00310"
-title: "Haskell Language"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00310
+title: Haskell Language
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "GHC is the primary implementation"
-    source_title: "Haskell Documentation"
-    source_url: "https://www.haskell.org/documentation/"
-    confidence: "medium"
-  - id: "fact-computer-science-001"
-    statement: "Haskell (1990, named after Haskell Curry) is a purely functional, lazily evaluated programming language with a powerful static type system. All functions are pure (no side effects by default), and IO is explicitly handled through monads. Used in: finance (Standard Chartered, Barclays), compiler development (GHC)."
-    source_title: "Haskell Documentation"
-    source_url: "https://www.haskell.org/documentation/"
-    confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "GHC (Glasgow Haskell Compiler) is the primary implementation."
-    source_title: "Haskell Documentation"
-    source_url: "https://www.haskell.org/documentation/"
-    confidence: "medium"
-
+  - id: af-computer-science-haskell-language-1
+    statement: >-
+      The Haskell 2010 Language Report specifies Haskell as a general-purpose, non-strict, purely
+      functional programming language.
+    source_title: Haskell 2010 Language Report
+    source_url: https://www.haskell.org/onlinereport/haskell2010/
+    confidence: medium
+  - id: af-computer-science-haskell-language-2
+    statement: >-
+      The Glasgow Haskell Compiler is the main compiler implementation used by the Haskell
+      ecosystem.
+    source_title: The Glasgow Haskell Compiler
+    source_url: https://www.haskell.org/ghc/
+    confidence: medium
+  - id: af-computer-science-haskell-language-3
+    statement: >-
+      Cabal provides tooling and a package-description format for building and distributing Haskell
+      software.
+    source_title: Cabal User Guide
+    source_url: https://www.haskell.org/cabal/users-guide/
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    This field is under active research and rapid development; some conclusions may evolve with new
+    evidence or technological advances
+  - >-
+    Certain sub-topics are covered at a general level; specialized edge cases and nuanced
+    applications may not be fully addressed
+disputed_statements: []
 primary_sources:
-  - title: "Haskell Documentation"
-    type: "documentation"
+  - id: ps-haskell-language-1
+    title: Haskell 2010 Language Report
+    type: standard
+    year: 2010
+    institution: Haskell.org
+    url: https://www.haskell.org/onlinereport/haskell2010/
+  - id: ps-haskell-language-2
+    title: The Glasgow Haskell Compiler
+    type: official_documentation
     year: 2026
-    url: "https://www.haskell.org/documentation/"
-    institution: "Haskell.org"
-
-secondary_sources:
-  - title: "Learn You a Haskell for Great Good!"
-    authors: ["Lipovaca, Miran"]
-    type: "book"
-    year: 2011
-    url: "http://learnyouahaskell.com/"
-    institution: "No Starch Press"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    institution: Haskell.org
+    url: https://www.haskell.org/ghc/
+  - id: ps-haskell-language-3
+    title: Cabal User Guide
+    type: official_documentation
+    year: 2026
+    institution: Haskell.org
+    url: https://www.haskell.org/cabal/users-guide/
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
 

@@ -1,67 +1,62 @@
 ---
-id: "kb-2026-00097"
-title: "MutationObserver"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00097
+title: MutationObserver
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "MutationObserver is an API that asynchronously monitors DOM changes — additions, removals, attribute changes, and text content modifications"
-    source_title: "DOM Standard — MutationObserver"
-    source_url: "https://dom.spec.whatwg.org/#interface-mutationobserver"
-    confidence: "medium"
-  - id: "fact-computer-science-001"
-    statement: "MutationObserver is an API that asynchronously monitors DOM changes — additions, removals, attribute changes, and text content modifications. It replaces the deprecated DOM Mutation Events with a batched, more performant observer pattern."
-    source_title: "DOM Standard — MutationObserver"
-    source_url: "https://dom.spec.whatwg.org/#interface-mutationobserver"
-    confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "Chrome DevTools can add breakpoints on specific DOM mutations for debugging."
-    source_title: "DOM Standard — MutationObserver"
-    source_url: "https://dom.spec.whatwg.org/#interface-mutationobserver"
-    confidence: "medium"
-
+  - id: af-computer-science-mutationobserver-1
+    statement: MDN describes MutationObserver as a replacement for the older DOM Mutation Events mechanism.
+    source_title: MutationObserver
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
+    confidence: medium
+  - id: af-computer-science-mutationobserver-2
+    statement: >-
+      The observe() method registers a MutationObserver on a target node with options such as
+      childList, attributes, and subtree.
+    source_title: "MutationObserver: observe() method"
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe
+    confidence: medium
+  - id: af-computer-science-mutationobserver-3
+    statement: >-
+      MDN describes MutationRecord as the object that records an individual DOM mutation observed by
+      MutationObserver.
+    source_title: MutationRecord
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/MutationRecord
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - Content verified during quality audit; citations cross-referenced with authoritative sources
+disputed_statements: []
 primary_sources:
-  - title: "DOM Standard — MutationObserver"
-    type: "standard"
+  - id: ps-mutationobserver-1
+    title: MutationObserver
+    type: documentation
     year: 2026
-    url: "https://dom.spec.whatwg.org/#interface-mutationobserver"
-    institution: "WHATWG"
-
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
+  - id: ps-mutationobserver-2
+    title: "MutationObserver: observe() method"
+    type: documentation
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe
+  - id: ps-mutationobserver-3
+    title: MutationRecord
+    type: documentation
+    year: 2026
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/Web/API/MutationRecord
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
 
