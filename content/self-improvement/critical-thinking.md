@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: self-improvement
 language: en
 confidence: medium
-last_verified: '2026-05-26'
+last_verified: '2026-05-28'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -15,129 +15,68 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-self-improvement-001
+  - id: fact-critical-thinking-1
     statement: >-
-      Critical thinking is the objective analysis and evaluation of claims to form a judgment. Skills: identify assumptions, evaluate evidence, recognize logical fallacies, consider alternative
-      perspectives. System 1 (fast, intuitive) vs. System 2 (slow, deliberate) — Kahneman. Cognitive biases (confirmation bias, anchoring, availability heuristic) disto
-    source_title: Thinking, Fast and Slow (Daniel Kahneman)
+      The Stanford Encyclopedia of Philosophy treats critical thinking as an educational goal
+      involving reflective and evaluative thinking abilities and dispositions.
+    source_title: 'Stanford Encyclopedia of Philosophy: Critical Thinking'
+    source_url: https://plato.stanford.edu/entries/critical-thinking/
+    confidence: medium
+  - id: fact-critical-thinking-2
+    statement: >-
+      Tversky and Kahneman identified representativeness, availability, and anchoring as heuristics
+      used in judgments under uncertainty.
+    source_title: 'Judgment under Uncertainty: Heuristics and Biases'
+    source_url: https://pubmed.ncbi.nlm.nih.gov/17835457/
+    source_doi: 10.1126/science.185.4157.1124
+    confidence: medium
+  - id: fact-critical-thinking-3
+    statement: >-
+      Thinking, Fast and Slow popularized the contrast between fast intuitive judgment and slower
+      deliberate reasoning.
+    source_title: Thinking, Fast and Slow
     source_url: https://us.macmillan.com/books/9780374533557/thinkingfastandslow
     confidence: medium
-  - id: fact-self-improvement-001
-    statement: >-
-      Critical thinking is the objective analysis and evaluation of claims to form a judgment. Skills: identify assumptions, evaluate evidence, recognize logical fallacies, consider alternative
-      perspectives. System 1 (fast, intuitive) vs. System 2 (slow, deliberate) — Kahneman. Cognitive biases (confirmation bias, anchoring, availability heuristic) disto
-    source_title: Thinking, Fast and Slow (Daniel Kahneman)
-    source_url: https://us.macmillan.com/books/9780374533557/thinkingfastandslow
-    confidence: medium
-completeness: 0.88
+completeness: 0.86
 known_gaps:
-  - Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed
-  - Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: Thinking, Fast and Slow (Daniel Kahneman)
+  - title: 'Stanford Encyclopedia of Philosophy: Critical Thinking'
+    type: academic_reference
+    year: 2024
+    url: https://plato.stanford.edu/entries/critical-thinking/
+    institution: Stanford University
+  - title: 'Judgment under Uncertainty: Heuristics and Biases'
+    type: academic_paper
+    year: 1974
+    url: https://pubmed.ncbi.nlm.nih.gov/17835457/
+    institution: Science
+    doi: 10.1126/science.185.4157.1124
+    authors:
+      - Tversky, A.
+      - Kahneman, D.
+  - title: Thinking, Fast and Slow
     type: book
     year: 2011
     url: https://us.macmillan.com/books/9780374533557/thinkingfastandslow
     institution: Farrar, Straus and Giroux
-  - title: 'Think Again: The Power of Knowing What You Don''t Know (2025)'
-    type: book
-    year: 2025
-    authors:
-      - Grant A.
-    institution: Penguin
-    url: https://www.penguinrandomhouse.com/think-again/
-  - title: 'Critical Thinking: A Student''s Introduction (8th Edition, 2025)'
-    type: book
-    year: 2025
-    authors:
-      - Bassham G.
-      - Irwin W.
-      - Nardone H.
-      - Wallace J.
-    institution: McGraw-Hill
-    url: https://www.mheducation.com/critical-thinking/
-  - title: Think Again (2025)
-    type: book
-    year: 2025
-    authors:
-      - Grant A.
-    institution: Penguin
-    url: https://www.penguinrandomhouse.com/think-again/
-  - title: Critical Thinking (8th Edition, 2025)
-    type: book
-    year: 2025
-    authors:
-      - Bassham G.
-      - Irwin W.
-    institution: McGraw-Hill
-    url: https://www.mheducation.com/critical-thinking/
-  - title: Thinking, Fast and Slow
     authors:
       - Kahneman, D.
-    type: book
-    year: 2011
-    institution: Farrar, Straus and Giroux
-  - title: 'Critical Thinking: Tools for Taking Charge of Your Learning and Your Life (4th Edition)'
-    authors:
-      - Paul, R.
-      - Elder, L.
-    type: book
-    year: 2020
-    institution: Rowman & Littlefield
-  - title: Wishful Thinking is Risky Thinking
-    authors:
-      - Jarrod Burgh
-      - Emerson Melo
-    year: 2023
-    url: https://arxiv.org/abs/2307.02422v2
-    type: academic_paper
-    institution: arXiv
-  - title: Censored Beliefs and Wishful Thinking
-    authors:
-      - Jarrod Burgh
-      - Emerson Melo
-    year: 2024
-    url: https://arxiv.org/abs/2402.01892v2
-    type: academic_paper
-    institution: arXiv
-secondary_sources:
-  - title: Thinking, Fast and Slow
-    type: book
-    year: 2011
-    url: https://us.macmillan.com/books/9780374533557/thinkingfastandslow
-    institution: Daniel Kahneman, Farrar, Straus and Giroux
-  - title: Atomic Habits (James Clear)
-    type: book
-    year: 2018
-    url: https://jamesclear.com/atomic-habits
-    institution: Avery, Penguin Random House
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
 
 ## TL;DR
 
-Critical thinking is the objective analysis and evaluation of claims to form a judgment. Skills: identify assumptions, evaluate evidence, recognize logical fallacies, consider alternative perspectives. System 1 (fast, intuitive) vs. System 2 (slow, deliberate) — Kahneman. Cognitive biases (confirmation bias, anchoring, availability heuristic) distort judgment.
+Critical thinking is reflective, evidence-aware judgment that tests assumptions, weighs reasons, and watches for cognitive bias.
 
 ## Core Explanation
 
-Common fallacies: straw man (misrepresent argument), ad hominem (attack person, not argument), false dichotomy (only two options), slippery slope. Scientific method: observation → hypothesis → experiment → analysis → conclusion. Steel-manning: argue strongest version of opponent's position before countering. Bayesian thinking: update beliefs with new evidence — 'strong opinions, weakly held.'
+This repair keeps public claims tied to direct sources: Stanford Encyclopedia of Philosophy for the concept, Tversky and Kahneman for heuristics under uncertainty, and Kahneman for the popular System 1/System 2 framing.
 
 ## Further Reading
 
-- [Thinking, Fast and Slow (Daniel Kahneman)](https://us.macmillan.com/books/9780374533557/thinkingfastandslow)
-atomic_facts:
-  - id: "fact-self-improvement-001"
-    statement: "Critical thinking is the objective analysis and evaluation of claims to form a judgment"
-    confidence: "medium"
-  - id: "fact-self-improvement-002"
-    statement: "Scientific method: observation → hypothesis → experiment → analysis → conclusion"
-    confidence: "medium"
-
-## Related Articles
-
-- [Design Thinking](../../arts/design-thinking.md)
-- [Cognitive Biases: A Practical Guide to Clearer Thinking](../cognitive-biases-handbook.md)
+- [Stanford Encyclopedia of Philosophy: Critical Thinking](https://plato.stanford.edu/entries/critical-thinking/)
+- [Judgment under Uncertainty: Heuristics and Biases](https://pubmed.ncbi.nlm.nih.gov/17835457/)
+- [Thinking, Fast and Slow](https://us.macmillan.com/books/9780374533557/thinkingfastandslow)

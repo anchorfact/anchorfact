@@ -4,8 +4,8 @@ title: API Gateway
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: '2026-05-25'
+confidence: medium
+last_verified: '2026-05-28'
 created_date: '2026-05-22'
 generation_method: ai_structured
 derived_from_human_seed: true
@@ -13,124 +13,58 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-001
+  - id: fact-api-gateway-1
     statement: >-
-      An API Gateway is a single entry point for all client requests to a microservices architecture. It handles cross-cutting concerns: authentication, rate limiting, request routing, protocol
-      translation, caching, logging, and API composition.
-    source_title: Kong Gateway Documentation
-    source_url: https://docs.konghq.com/
+      Microsoft describes an API gateway pattern as an alternative to direct client-to-microservice
+      communication.
+    source_title: 'Microsoft Learn: API Gateway Pattern'
+    source_url: >-
+      https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern
     confidence: medium
-  - id: fact-computer-science-002
-    statement: 'Service Mesh: gateway handles north-south traffic (client→server); service mesh handles east-west (service→service).'
-    source_title: Kong Gateway Documentation
-    source_url: https://docs.konghq.com/
+  - id: fact-api-gateway-2
+    statement: >-
+      Microsoft notes that API gateway products commonly act as reverse proxies for ingress
+      communication and can apply authorization.
+    source_title: 'Microsoft Learn: API Gateway Pattern'
+    source_url: >-
+      https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern
     confidence: medium
-completeness: 0.88
+  - id: fact-api-gateway-3
+    statement: >-
+      AWS API Gateway documentation describes API Gateway as a service for creating, publishing,
+      maintaining, monitoring, and securing APIs.
+    source_title: 'AWS Documentation: What is Amazon API Gateway?'
+    source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: Kong Gateway Documentation
+  - title: 'Microsoft Learn: API Gateway Pattern'
     type: documentation
     year: 2026
-    url: https://docs.konghq.com/
-    institution: Kong Inc.
-  - title: 'API Gateway and Service Mesh: A 2025 Practical Guide'
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: O'Reilly Media
-    url: https://www.oreilly.com/api-gateway/
-  - title: 'Microservices Gateways and Service Mesh: 2025 Architecture Survey'
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.gateway
-  - title: 'Microservices API Gateways: Performance and Scalability'
-    type: industry_whitepaper
-    year: 2023
-    url: https://nginx.org/en/docs/
-    institution: NGINX / F5
-  - title: Building Microservices (2nd Edition)
-    authors:
-      - Newman, S.
-    type: book
-    year: 2021
-    institution: O'Reilly Media
-  - title: Joint Satellite Gateway Placement and Routing for Integrated Satellite-Terrestrial Networks
-    authors:
-      - Nariman Torkzaban
-      - Anousheh Gholami
-      - Chrysa Papagianni
-      - John S. Baras
-    year: 2020
-    url: https://arxiv.org/abs/2002.03071v2
-    type: academic_paper
-    institution: arXiv
-  - title: 'From CRUD to Autonomous Agents: Formal Validation and Zero-Trust Security for Semantic Gateways in AI-Native Enterprise Systems'
-    authors:
-      - Ignacio Peyrano
+    url: >-
+      https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern
+    institution: Microsoft
+  - title: 'AWS Documentation: What is Amazon API Gateway?'
+    type: documentation
     year: 2026
-    url: https://arxiv.org/abs/2604.25555v1
-    type: academic_paper
-    institution: arXiv
-secondary_sources:
-  - title: RESTful Web APIs
-    authors:
-      - Richardson, Leonard
-      - Amundsen, Mike
-    type: book
-    year: 2013
-    url: https://www.oreilly.com/library/view/restful-web-apis/9781449359713/
-    institution: O'Reilly
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
-  - title: 'API Gateway Architectures in Cloud-Native Systems: A 2025 Taxonomy'
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.apigateway
-  - title: 'Service Mesh and API Management: Convergence Trends 2025'
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE Cloud Computing
-    url: https://doi.org/10.1109/cloud.2025.servicemesh
+    url: https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html
+    institution: Amazon Web Services
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
 
 ## TL;DR
 
-An API Gateway is a single entry point for all client requests to a microservices architecture. It handles cross-cutting concerns: authentication, rate limiting, request routing, protocol translation, caching, logging, and API composition.
+An API gateway sits at the edge of a service architecture to route, protect, and manage API traffic.
 
 ## Core Explanation
 
-Popular gateways: Kong (Lua/OpenResty), AWS API Gateway, Azure API Management, Apigee, Envoy (Lyft, graduated CNCF). BFF (Backend for Frontend) pattern: dedicated gateway per client type. API Gateway vs. Service Mesh: gateway handles north-south traffic (client→server); service mesh handles east-west (service→service).
+This repair removes homepage, future survey, and unrelated gateway papers. Public claims now map to Microsoft and AWS API Gateway documentation.
 
 ## Further Reading
 
-- [Kong Gateway Documentation](https://docs.konghq.com/)
-
-## Related Articles
-
-- [Broadcast Channel API](../broadcast-channel-api.md)
-- [Canvas API](../canvas-api.md)
-- [Clipboard API](../clipboard-api.md)
+- [Microsoft Learn: API Gateway Pattern](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern)
+- [AWS Documentation: What is Amazon API Gateway?](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html)

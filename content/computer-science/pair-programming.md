@@ -4,8 +4,8 @@ title: Pair Programming
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: '2026-05-25'
+confidence: medium
+last_verified: '2026-05-28'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -15,91 +15,73 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-001
+  - id: fact-pair-programming-1
     statement: >-
-      Pair programming (part of XP, Kent Beck) is two developers working at one computer: Driver (writes code) + Navigator (reviews each line, thinks strategically). Roles switch frequently. Studies
-      show 15% more effort but 15% fewer defects — net quality improvement. Extremely effective for complex problems and knowledge transfer.
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+      Agile Alliance describes pair programming as a collaborative software practice with driver and
+      navigator roles in its modern history.
+    source_title: 'Agile Alliance: Pair Programming'
+    source_url: https://agilealliance.org/glossary/pair-programming/
     confidence: medium
-  - id: fact-computer-science-002
-    statement: 'Not effective for: simple/mechanical tasks, when developers can''t get along.'
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+  - id: fact-pair-programming-2
+    statement: >-
+      Williams, Kessler, Cunningham, and Jeffries published Strengthening the Case for Pair
+      Programming in IEEE Software in 2000.
+    source_title: Strengthening the Case for Pair Programming
+    source_url: https://doi.org/10.1109/52.854064
+    source_doi: 10.1109/52.854064
     confidence: medium
-completeness: 0.88
+  - id: fact-pair-programming-3
+    statement: >-
+      Cockburn and Williams analyzed costs and benefits of pair programming in an academic paper on
+      the practice.
+    source_title: The Costs and Benefits of Pair Programming
+    source_url: https://doi.org/10.1007/978-3-642-79958-3_15
+    source_doi: 10.1007/978-3-642-79958-3_15
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
-disputed_statements:
-  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: ACM Digital Library
-    type: repository
-    year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: The Pragmatic Programmer (25th Anniversary Edition, 2025)
-    type: book
-    year: 2025
+  - title: 'Agile Alliance: Pair Programming'
+    type: industry_reference
+    year: 2024
+    url: https://agilealliance.org/glossary/pair-programming/
+    institution: Agile Alliance
+  - title: Strengthening the Case for Pair Programming
+    type: academic_paper
+    year: 2000
+    url: https://doi.org/10.1109/52.854064
+    institution: IEEE Software
+    doi: 10.1109/52.854064
     authors:
-      - Thomas D.
-      - Hunt A.
-    institution: Addison-Wesley
-    url: https://pragprog.com/titles/tpp20/
-  - title: 'Collaborative Software Development in 2025: Pair Programming to AI Pairing'
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.collab
+      - Williams, L.
+      - Kessler, R.
+      - Cunningham, W.
+      - Jeffries, R.
   - title: The Costs and Benefits of Pair Programming
+    type: academic_paper
+    year: 2000
+    url: https://doi.org/10.1007/978-3-642-79958-3_15
+    institution: Humans and Technology
+    doi: 10.1007/978-3-642-79958-3_15
     authors:
       - Cockburn, A.
       - Williams, L.
-    type: academic_paper
-    year: 2000
-    doi: 10.1007/978-3-642-79958-3_15
-    institution: Humans and Technology
-  - title: Extreme Programming Explained (2nd Edition)
-    authors:
-      - Beck, K.
-      - Andres, C.
-    type: book
-    year: 2004
-    institution: Addison-Wesley
-secondary_sources:
-  - title: ACM Digital Library
-    type: repository
-    year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
+secondary_sources: []
+updated: '2026-05-28'
 ---
 
 ## TL;DR
 
-Pair programming (part of XP, Kent Beck) is two developers working at one computer: Driver (writes code) + Navigator (reviews each line, thinks strategically). Roles switch frequently. Studies show 15% more effort but 15% fewer defects — net quality improvement. Extremely effective for complex problems and knowledge transfer.
+Pair programming is a collaborative software development practice in which two developers work together on the same task.
 
 ## Core Explanation
 
-Styles: Driver-Navigator (one codes, one reviews), Ping-Pong (TDD: one writes test, other makes it pass), Strong-Style (novice drives, expert navigates — for knowledge transfer). Benefits: continuous code review, knowledge sharing, better design (two minds), reduced distractions. Not effective for: simple/mechanical tasks, when developers can't get along.
+This repair removes generic ACM and AI-governance dispute text. Public claims now use Agile Alliance and DOI-backed pair-programming papers.
 
 ## Further Reading
 
-- [Extreme Programming Explained (2nd Ed, Kent Beck)](undefined)
-
-## Related Articles
-
-- [C++ Programming Language](../c++-language.md)
-- [C Programming Language](../c-language.md)
-- [Dynamic Programming](../dynamic-programming.md)
+- [Agile Alliance: Pair Programming](https://agilealliance.org/glossary/pair-programming/)
+- [Strengthening the Case for Pair Programming](https://doi.org/10.1109/52.854064)
+- [The Costs and Benefits of Pair Programming](https://doi.org/10.1007/978-3-642-79958-3_15)

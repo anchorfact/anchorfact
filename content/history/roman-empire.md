@@ -4,9 +4,9 @@ title: Roman Empire
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,75 +15,59 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-history-01
-    statement: The Roman Empire was the post-Republican period of ancient Rome
-    source_title: The History of the Decline and Fall of the Roman Empire (Edward Gibbon)
-    source_url: https://www.gutenberg.org/ebooks/731
-    confidence: high
-  - id: fact-history-02
-    statement: At its peak , it spanned 5 million km² across Europe, North Africa, and the Middle East
-    source_title: The History of the Decline and Fall of the Roman Empire (Edward Gibbon)
-    source_url: https://www.gutenberg.org/ebooks/731
-    confidence: high
-  - id: fact-history-03
-    statement: The Roman Empire's legal, linguistic, architectural, and political legacy shaped Western civilization
-    source_title: The History of the Decline and Fall of the Roman Empire (Edward Gibbon)
-    source_url: https://www.gutenberg.org/ebooks/731
-    confidence: high
-completeness: 0.88
+  - id: fact-roman-empire-1
+    statement: >-
+      Britannica dates the Roman Empire from 27 BCE after the fall of the Roman Republic through the
+      western empire in the 5th century CE.
+    source_title: 'Britannica: Roman Empire'
+    source_url: https://www.britannica.com/place/Roman-Empire
+    confidence: medium
+  - id: fact-roman-empire-2
+    statement: Britannica identifies Augustus as Rome first emperor, ruling from 27 BCE to 14 CE.
+    source_title: 'Britannica: Augustus'
+    source_url: https://www.britannica.com/biography/Augustus-Roman-emperor
+    confidence: medium
+  - id: fact-roman-empire-3
+    statement: >-
+      Britannica describes the Pax Romana as a period of comparative tranquility from Augustus to
+      Marcus Aurelius.
+    source_title: 'Britannica: Pax Romana'
+    source_url: https://www.britannica.com/event/Pax-Romana
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - Statistics and data cited are from 2015 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The causes of the Roman Empire's fall remain contested: monocausal explanations (barbarian invasions, economic decline, lead poisoning) have largely been replaced by multi-factor analyses, but
-      the relative weight of each factor is disputed
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: The History of the Decline and Fall of the Roman Empire (Edward Gibbon)
-    type: book
-    year: 1776
-    url: https://www.gutenberg.org/ebooks/731
-    institution: Project Gutenberg
-  - title: "The Roman Empire: A Very Short Introduction (2025)"
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-roman/
-  - title: "The Fall of the Roman Empire: A New History (2025)"
-    type: book
-    year: 2025
-    authors:
-      - Heather P.
-    institution: Oxford University Press
-    url: https://global.oup.com/roman-fall/
-secondary_sources:
-  - title: "SPQR: A History of Ancient Rome"
-    type: book
-    year: 2015
-    url: https://www.liverightbooks.com/9781631492228
-    institution: Mary Beard, Liveright
-  - title: The Decline and Fall of the Roman Empire
-    type: book
-    year: 1776
-    url: https://www.britannica.com/topic/The-History-of-the-Decline-and-Fall-of-the-Roman-Empire
-    institution: Edward Gibbon
+  - title: 'Britannica: Roman Empire'
+    type: encyclopedia
+    year: 2026
+    url: https://www.britannica.com/place/Roman-Empire
+    institution: Encyclopaedia Britannica
+  - title: 'Britannica: Augustus'
+    type: encyclopedia
+    year: 2026
+    url: https://www.britannica.com/biography/Augustus-Roman-emperor
+    institution: Encyclopaedia Britannica
+  - title: 'Britannica: Pax Romana'
+    type: encyclopedia
+    year: 2026
+    url: https://www.britannica.com/event/Pax-Romana
+    institution: Encyclopaedia Britannica
+secondary_sources: []
+updated: '2026-05-28'
 ---
+
 ## TL;DR
 
-The Roman Empire was the post-Republican period of ancient Rome (27 BCE - 476 CE West, -1453 CE East). At its peak (117 CE, Trajan), it spanned 5 million km² across Europe, North Africa, and the Middle East. The Roman Empire's legal, linguistic, architectural, and political legacy shaped Western civilization.
+The Roman Empire began under Augustus in 27 BCE and became the central imperial phase of ancient Roman history.
 
 ## Core Explanation
 
-Five Good Emperors (96-180 CE): Nerva, Trajan, Hadrian, Antoninus Pius, Marcus Aurelius. Crisis of the Third Century (235-284 CE): 26 emperors in 50 years. Constantine (306-337): legalized Christianity (Edict of Milan, 313), founded Constantinople. Division (395): Western (Rome) and Eastern (Constantinople) Empires. Fall: multiple causes — political instability, economic decline, barbarian invasions (Visigoths sack Rome, 410 CE), last emperor deposed (476).
+This repair replaces broad Gibbon-only evidence and future book entries with direct Britannica anchors for the empire, Augustus, and the Pax Romana.
 
 ## Further Reading
 
-- [The History of the Decline and Fall of the Roman Empire (Edward Gibbon)](https://www.gutenberg.org/ebooks/731)
-
-## Related Articles
-
-- [Roman Empire: Rise, Pax Romana, and the Fall of the Western Empire](../roman-empire-rise-pax-romana-and-the-fall-of-the-western-empire.md)
-- [Aztec Empire](../aztec-empire.md)
-- [Byzantine Empire](../byzantine-empire.md)
+- [Britannica: Roman Empire](https://www.britannica.com/place/Roman-Empire)
+- [Britannica: Augustus](https://www.britannica.com/biography/Augustus-Roman-emperor)
+- [Britannica: Pax Romana](https://www.britannica.com/event/Pax-Romana)

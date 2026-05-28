@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T03:42:42.792Z
+Generated: 2026-05-28T04:05:33.207Z
 
-Snapshot: 555 public / 445 draft / 1559 claims.
+Snapshot: 555 public / 445 draft / 1567 claims.
 
 ## Summary
 
@@ -13,7 +13,7 @@ This is a risk-weighted audit sample of public AnchorFact articles. It is intend
 - Articles with at least one fail check: 0
 - High-confidence samples needing review: 0
 - Claim-evidence failures: 0
-- Recommendations: keep_public: 8, downgrade_confidence: 0, repair_sources: 12, move_to_draft: 0
+- Recommendations: keep_public: 9, downgrade_confidence: 0, repair_sources: 11, move_to_draft: 0
 
 ## Method
 
@@ -23,22 +23,22 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 
 | # | bucket | slug | confidence | coverage | claims | checks | recommendation |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | low_verified_coverage | `self-improvement/critical-thinking` | medium | 1/9 (11.1%) | 2 | source=weak; claim=pass; summary=pass | repair_sources |
-| 2 | low_verified_coverage | `ai/model-evaluation-metrics` | medium | 1/7 (14.3%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 3 | low_verified_coverage | `computer-science/binary-search-tree` | medium | 1/7 (14.3%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 4 | low_verified_coverage | `computer-science/ansible` | medium | 1/6 (16.7%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 5 | low_verified_coverage | `computer-science/gitops` | medium | 1/5 (20.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 6 | low_verified_coverage | `computer-science/pair-programming` | medium | 1/5 (20.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 7 | low_verified_coverage | `self-improvement/decision-making` | medium | 1/5 (20.0%) | 2 | source=weak; claim=pass; summary=pass | repair_sources |
-| 8 | low_verified_coverage | `computer-science/api-gateway` | medium | 2/7 (28.6%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 1 | low_verified_coverage | `computer-science/graphql-schema-design` | medium | 2/7 (28.6%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 2 | low_verified_coverage | `computer-science/css` | medium | 2/6 (33.3%) | 2 | source=weak; claim=pass; summary=pass | repair_sources |
+| 3 | low_verified_coverage | `computer-science/dart-language` | medium | 2/5 (40.0%) | 2 | source=weak; claim=pass; summary=pass | repair_sources |
+| 4 | low_verified_coverage | `computer-science/dijkstra-s-algorithm` | medium | 2/5 (40.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 5 | low_verified_coverage | `game-development/shader-programming` | low | 1/3 (33.3%) | 1 | source=weak; claim=weak; summary=weak | repair_sources |
+| 6 | low_verified_coverage | `arts/digital-art-history` | low | 2/5 (40.0%) | 1 | source=weak; claim=weak; summary=weak | repair_sources |
+| 7 | low_verified_coverage | `arts/photography-fundamentals` | low | 2/5 (40.0%) | 1 | source=weak; claim=weak; summary=pass | repair_sources |
+| 8 | low_verified_coverage | `computer-science/sql` | medium | 2/6 (33.3%) | 1 | source=weak; claim=pass; summary=pass | keep_public |
 | 9 | high_confidence | `ai/gpt-models` | high | 4/4 (100.0%) | 6 | source=pass; claim=pass; summary=pass | keep_public |
 | 10 | high_confidence | `ai/agentic-ai` | high | 2/2 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | high_confidence | `ai/ai-in-healthcare` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 12 | high_confidence | `ai/ai-red-teaming-and-safety` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 13 | medium_capped_claims | `history/roman-empire` | medium | 3/3 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 14 | medium_capped_claims | `science/astronomy-and-cosmology` | medium | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 15 | medium_capped_claims | `science/black-holes` | medium | 5/7 (71.4%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 16 | medium_capped_claims | `science/chemical-bonding` | medium | 3/6 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 13 | medium_capped_claims | `science/coral-reefs` | medium | 3/6 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 14 | medium_capped_claims | `science/geological-time` | medium | 3/6 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 15 | medium_capped_claims | `science/newton-s-laws-of-motion` | medium | 3/3 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 16 | medium_capped_claims | `science/ocean-life` | medium | 3/3 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
 | 17 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 18 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 19 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
@@ -46,117 +46,12 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 
 ## Article Findings
 
-### 1. Critical Thinking
+### 1. GraphQL Schema Design
 
-- canonical slug: `self-improvement/critical-thinking`
-- canonical URL: https://anchorfact.org/self-improvement/critical-thinking/
-- bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.685)
-- verified source coverage: 1/9 (11.1%)
-- claims: 2 total, 0 capped, 0 missing evidence
-- quality reasons: partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 2. Model Evaluation Metrics
-
-- canonical slug: `ai/model-evaluation-metrics`
-- canonical URL: https://anchorfact.org/ai/model-evaluation-metrics/
-- bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.87)
-- verified source coverage: 1/7 (14.3%)
-- claims: 2 total, 0 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage, high_confidence_evidence_gap
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 3. Binary Search Tree
-
-- canonical slug: `computer-science/binary-search-tree`
-- canonical URL: https://anchorfact.org/computer-science/binary-search-tree/
-- bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.685)
-- verified source coverage: 1/7 (14.3%)
-- claims: 2 total, 0 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: duplicate_sources, generic_dispute_statement, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 4. Ansible
-
-- canonical slug: `computer-science/ansible`
-- canonical URL: https://anchorfact.org/computer-science/ansible/
-- bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.685)
-- verified source coverage: 1/6 (16.7%)
-- claims: 2 total, 0 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 5. GitOps
-
-- canonical slug: `computer-science/gitops`
-- canonical URL: https://anchorfact.org/computer-science/gitops/
-- bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.685)
-- verified source coverage: 1/5 (20.0%)
-- claims: 2 total, 0 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 6. Pair Programming
-
-- canonical slug: `computer-science/pair-programming`
-- canonical URL: https://anchorfact.org/computer-science/pair-programming/
+- canonical slug: `computer-science/graphql-schema-design`
+- canonical URL: https://anchorfact.org/computer-science/graphql-schema-design/
 - bucket: `low_verified_coverage`
 - confidence: `medium` (verified_sources, score 0.72)
-- verified source coverage: 1/5 (20.0%)
-- claims: 2 total, 0 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: duplicate_sources, generic_dispute_statement, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 7. Decision Making
-
-- canonical slug: `self-improvement/decision-making`
-- canonical URL: https://anchorfact.org/self-improvement/decision-making/
-- bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.87)
-- verified source coverage: 1/5 (20.0%)
-- claims: 2 total, 0 capped, 0 missing evidence
-- quality reasons: partial_source_verification, low_verified_coverage, high_confidence_evidence_gap
-- source-title match: `weak`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 8. API Gateway
-
-- canonical slug: `computer-science/api-gateway`
-- canonical URL: https://anchorfact.org/computer-science/api-gateway/
-- bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.685)
 - verified source coverage: 2/7 (28.6%)
 - claims: 2 total, 0 capped, 0 missing evidence
 - quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
@@ -165,6 +60,111 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - title-summary accuracy: `pass`
 - hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
+
+### 2. CSS (Cascading Style Sheets)
+
+- canonical slug: `computer-science/css`
+- canonical URL: https://anchorfact.org/computer-science/css/
+- bucket: `low_verified_coverage`
+- confidence: `medium` (verified_sources, score 0.72)
+- verified source coverage: 2/6 (33.3%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 3. Dart Language
+
+- canonical slug: `computer-science/dart-language`
+- canonical URL: https://anchorfact.org/computer-science/dart-language/
+- bucket: `low_verified_coverage`
+- confidence: `medium` (verified_sources, score 0.72)
+- verified source coverage: 2/5 (40.0%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 4. Dijkstra's Algorithm
+
+- canonical slug: `computer-science/dijkstra-s-algorithm`
+- canonical URL: https://anchorfact.org/computer-science/dijkstra-s-algorithm/
+- bucket: `low_verified_coverage`
+- confidence: `medium` (verified_sources, score 0.87)
+- verified source coverage: 2/5 (40.0%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage, high_confidence_evidence_gap
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: duplicate_sources, generic_dispute_statement, generic_source_homepage
+- recommendation: `repair_sources`
+
+### 5. Shader Programming Fundamentals
+
+- canonical slug: `game-development/shader-programming`
+- canonical URL: https://anchorfact.org/game-development/shader-programming/
+- bucket: `low_verified_coverage`
+- confidence: `low` (verified_sources, score 0.465)
+- verified source coverage: 1/3 (33.3%)
+- claims: 1 total, 1 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `weak`
+- hygiene flags: generic_source_homepage
+- recommendation: `repair_sources`
+
+### 6. Digital Art and New Media Art History
+
+- canonical slug: `arts/digital-art-history`
+- canonical URL: https://anchorfact.org/arts/digital-art-history/
+- bucket: `low_verified_coverage`
+- confidence: `low` (verified_sources, score 0.475)
+- verified source coverage: 2/5 (40.0%)
+- claims: 1 total, 1 capped, 0 missing evidence
+- quality reasons: partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `weak`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 7. Photography Fundamentals and Composition
+
+- canonical slug: `arts/photography-fundamentals`
+- canonical URL: https://anchorfact.org/arts/photography-fundamentals/
+- bucket: `low_verified_coverage`
+- confidence: `low` (verified_sources, score 0.475)
+- verified source coverage: 2/5 (40.0%)
+- claims: 1 total, 1 capped, 0 missing evidence
+- quality reasons: partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 8. SQL (Structured Query Language)
+
+- canonical slug: `computer-science/sql`
+- canonical URL: https://anchorfact.org/computer-science/sql/
+- bucket: `low_verified_coverage`
+- confidence: `medium` (verified_sources, score 0.87)
+- verified source coverage: 2/6 (33.3%)
+- claims: 1 total, 0 capped, 0 missing evidence
+- quality reasons: partial_source_verification, low_verified_coverage, high_confidence_evidence_gap
+- source-title match: `weak`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
 
 ### 9. GPT (Generative Pre-trained Transformer) Model Family
 
@@ -226,43 +226,13 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 13. Roman Empire
+### 13. Coral Reefs
 
-- canonical slug: `history/roman-empire`
-- canonical URL: https://anchorfact.org/history/roman-empire/
+- canonical slug: `science/coral-reefs`
+- canonical URL: https://anchorfact.org/science/coral-reefs/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.6)
-- verified source coverage: 3/3 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 14. Astronomy and Cosmology: From Solar System to the Universe
-
-- canonical slug: `science/astronomy-and-cosmology`
-- canonical URL: https://anchorfact.org/science/astronomy-and-cosmology/
-- bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.775)
-- verified source coverage: 2/2 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 15. Black Holes
-
-- canonical slug: `science/black-holes`
-- canonical URL: https://anchorfact.org/science/black-holes/
-- bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.87)
-- verified source coverage: 5/7 (71.4%)
+- confidence: `medium` (verified_sources, score 0.76)
+- verified source coverage: 3/6 (50.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: generic_source_homepage, partial_source_verification
 - source-title match: `weak`
@@ -271,10 +241,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 16. Chemical Bonding: From Orbitals to Molecular Structure
+### 14. Geological Time Scale and Earth History
 
-- canonical slug: `science/chemical-bonding`
-- canonical URL: https://anchorfact.org/science/chemical-bonding/
+- canonical slug: `science/geological-time`
+- canonical URL: https://anchorfact.org/science/geological-time/
 - bucket: `medium_capped_claims`
 - confidence: `medium` (verified_sources, score 0.795)
 - verified source coverage: 3/6 (50.0%)
@@ -284,6 +254,36 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
+
+### 15. Newton's Laws of Motion
+
+- canonical slug: `science/newton-s-laws-of-motion`
+- canonical URL: https://anchorfact.org/science/newton-s-laws-of-motion/
+- bucket: `medium_capped_claims`
+- confidence: `medium` (verified_sources, score 0.83)
+- verified source coverage: 3/3 (100.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 16. Ocean Life
+
+- canonical slug: `science/ocean-life`
+- canonical URL: https://anchorfact.org/science/ocean-life/
+- bucket: `medium_capped_claims`
+- confidence: `medium` (verified_sources, score 0.83)
+- verified source coverage: 3/3 (100.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
 - recommendation: `repair_sources`
 
 ### 17. Film Genres

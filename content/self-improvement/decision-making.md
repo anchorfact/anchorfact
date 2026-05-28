@@ -4,8 +4,8 @@ title: Decision Making
 schema_type: TechArticle
 category: self-improvement
 language: en
-confidence: high
-last_verified: '2026-05-26'
+confidence: medium
+last_verified: '2026-05-28'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -15,98 +15,73 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-self-improvement-001
+  - id: fact-decision-making-1
     statement: >-
-      Effective decision-making balances intuition with analysis. Key frameworks: pros/cons list, decision matrix (weighted criteria), cost-benefit analysis, expected value, premortem (imagine
-      failure, then work backwards). Avoid: analysis paralysis, sunk cost fallacy, confirmation bias. 'Good decision process > good outcome' — you can do everything righ
-    source_title: Thinking, Fast and Slow (Daniel Kahneman)
+      Tversky and Kahneman described representativeness, availability, and anchoring as heuristics
+      for judgment under uncertainty.
+    source_title: 'Judgment under Uncertainty: Heuristics and Biases'
+    source_url: https://pubmed.ncbi.nlm.nih.gov/17835457/
+    source_doi: 10.1126/science.185.4157.1124
+    confidence: medium
+  - id: fact-decision-making-2
+    statement: >-
+      Prospect theory models decisions under risk with value functions and decision weights rather
+      than only expected utility.
+    source_title: 'Prospect Theory: An Analysis of Decision under Risk'
+    source_url: https://doi.org/10.2307/1914185
+    source_doi: 10.2307/1914185
+    confidence: medium
+  - id: fact-decision-making-3
+    statement: >-
+      Thinking, Fast and Slow presents a practical account of fast intuitive judgment and slower
+      deliberate reasoning.
+    source_title: Thinking, Fast and Slow
     source_url: https://us.macmillan.com/books/9780374533557/thinkingfastandslow
     confidence: medium
-  - id: fact-self-improvement-002
-    statement: 'Regret minimization framework (Bezos): at 80, will I regret not doing this?'
-    source_title: Thinking, Fast and Slow (Daniel Kahneman)
-    source_url: https://us.macmillan.com/books/9780374533557/thinkingfastandslow
-    confidence: medium
-completeness: 0.88
+completeness: 0.86
 known_gaps:
-  - Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed
-  - Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: Thinking, Fast and Slow (Daniel Kahneman)
-    type: book
-    year: 2011
-    url: https://us.macmillan.com/books/9780374533557/thinkingfastandslow
-    institution: Farrar, Straus and Giroux
-  - title: 'Decisive: How to Make Better Choices (2025)'
-    type: book
-    year: 2025
-    authors:
-      - Heath C.
-      - Heath D.
-    institution: Crown Currency
-    url: https://www.crownpublishing.com/decisive/
-  - title: Thinking, Fast and Slow (2025 Anniversary Edition)
-    type: book
-    year: 2025
-    authors:
-      - Kahneman D.
-    institution: FSG
-    url: https://us.macmillan.com/thinking-fast-and-slow/
-  - title: Quantum decision making by social agents
-    authors:
-      - V. I. Yukalov
-      - D. Sornette
-    year: 2012
-    doi: 10.1142/S0219622014500564
-    url: https://arxiv.org/abs/1202.4918v2
+  - title: 'Judgment under Uncertainty: Heuristics and Biases'
     type: academic_paper
-    institution: arXiv
-  - title: 'Ethics-Based Auditing of Automated Decision-Making Systems: Nature, Scope, and Limitations'
+    year: 1974
+    url: https://pubmed.ncbi.nlm.nih.gov/17835457/
+    institution: Science
+    doi: 10.1126/science.185.4157.1124
     authors:
-      - Jakob Mokander
-      - Jessica Morley
-      - Mariarosaria Taddeo
-      - Luciano Floridi
-    year: 2021
-    doi: 10.1007/s11948-021-00319-4
-    url: https://arxiv.org/abs/2110.10980v1
+      - Tversky, A.
+      - Kahneman, D.
+  - title: 'Prospect Theory: An Analysis of Decision under Risk'
     type: academic_paper
-    institution: arXiv
-secondary_sources:
+    year: 1979
+    url: https://doi.org/10.2307/1914185
+    institution: Econometrica
+    doi: 10.2307/1914185
+    authors:
+      - Kahneman, D.
+      - Tversky, A.
   - title: Thinking, Fast and Slow
     type: book
     year: 2011
     url: https://us.macmillan.com/books/9780374533557/thinkingfastandslow
-    institution: Daniel Kahneman, Farrar, Straus and Giroux
-  - title: Atomic Habits (James Clear)
-    type: book
-    year: 2018
-    url: https://jamesclear.com/atomic-habits
-    institution: Avery, Penguin Random House
+    institution: Farrar, Straus and Giroux
+    authors:
+      - Kahneman, D.
+secondary_sources: []
+updated: '2026-05-28'
 ---
 
 ## TL;DR
 
-Effective decision-making balances intuition with analysis. Key frameworks: pros/cons list, decision matrix (weighted criteria), cost-benefit analysis, expected value, premortem (imagine failure, then work backwards). Avoid: analysis paralysis, sunk cost fallacy, confirmation bias. 'Good decision process > good outcome' — you can do everything right and still lose.
+Decision making improves when people separate evidence, probabilities, uncertainty, and bias from the pull of intuition.
 
 ## Core Explanation
 
-Sunk cost fallacy: 'I've already invested so much' — irrecoverable costs shouldn't influence future decisions. Decision matrix: list options as rows, criteria as columns, score each, weigh criteria, sum. Expected value: probability × outcome — for decisions under uncertainty. Regret minimization framework (Bezos): at 80, will I regret not doing this? 'The best decision makers know they'll be wrong some of the time.'
+This repair removes future book entries and unrelated arXiv sources, then maps the public claims to Kahneman and Tversky evidence.
 
 ## Further Reading
 
-- [Thinking, Fast and Slow (Daniel Kahneman)](https://us.macmillan.com/books/9780374533557/thinkingfastandslow)
-atomic_facts:
-  - id: "fact-self-improvement-001"
-    statement: "Avoid: analysis paralysis, sunk cost fallacy, confirmation bias"
-    confidence: "medium"
-
-## Related Articles
-
-- [AI Decision Support Systems: Clinical CDSS, Business Intelligence, and Augmented Decision-Making](../../ai/decision-support-systems.md)
-- [Cognitive Load Theory: Optimizing Learning and Decision Making](../cognitive-load-theory-optimizing-learning-and-decision-making.md)
-- [The Psychology of Decision Making](../decision-making-psychology.md)
+- [Judgment under Uncertainty: Heuristics and Biases](https://pubmed.ncbi.nlm.nih.gov/17835457/)
+- [Prospect Theory: An Analysis of Decision under Risk](https://doi.org/10.2307/1914185)
+- [Thinking, Fast and Slow](https://us.macmillan.com/books/9780374533557/thinkingfastandslow)

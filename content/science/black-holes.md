@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: science
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-28'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -15,101 +15,59 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-science-01
-    statement: First image captured by Event Horizon Telescope
-    source_title: A Brief History of Time (Stephen Hawking)
-    source_url: https://www.penguinrandomhouse.com/books/26703/a-brief-history-of-time-by-stephen-hawking/
-    confidence: high
-  - id: fact-science-02
-    statement: A black hole is a region of spacetime where gravity is so strong that nothing — not even light — can escape
-    source_title: A Brief History of Time (Stephen Hawking)
-    source_url: https://www.penguinrandomhouse.com/books/26703/a-brief-history-of-time-by-stephen-hawking/
-    confidence: high
-  - id: fact-science-03
-    statement: 'Supermassive black holes: center of most galaxies'
-    source_title: A Brief History of Time (Stephen Hawking)
-    source_url: https://www.penguinrandomhouse.com/books/26703/a-brief-history-of-time-by-stephen-hawking/
-    confidence: high
-completeness: 0.88
+  - id: fact-black-holes-1
+    statement: >-
+      NASA describes a black hole as an object whose gravity is so strong that, within a certain
+      distance, nothing can escape, not even light.
+    source_title: 'NASA Science: First Image of a Black Hole'
+    source_url: https://science.nasa.gov/resource/first-image-of-a-black-hole/
+    confidence: medium
+  - id: fact-black-holes-2
+    statement: >-
+      NASA reports that the Event Horizon Telescope obtained an image of the black hole at the
+      center of galaxy M87.
+    source_title: 'NASA Science: First Image of a Black Hole'
+    source_url: https://science.nasa.gov/resource/first-image-of-a-black-hole/
+    confidence: medium
+  - id: fact-black-holes-3
+    statement: >-
+      The LIGO and Virgo collaboration reported the first direct detection of gravitational waves
+      and first observation of a binary black hole merger in 2016.
+    source_title: Observation of Gravitational Waves from a Binary Black Hole Merger
+    source_url: https://doi.org/10.1103/PhysRevLett.116.061102
+    source_doi: 10.1103/PhysRevLett.116.061102
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: A Brief History of Time (Stephen Hawking)
-    type: book
-    year: 1988
-    url: https://www.penguinrandomhouse.com/books/26703/a-brief-history-of-time-by-stephen-hawking/
-    institution: Bantam
-  - title: 'Black Holes and Time Warps: Einstein''s Outrageous Legacy (2025 Anniversary Edition)'
-    type: book
-    year: 2025
-    authors:
-      - Thorne K.S.
-    institution: W.W. Norton
-    url: https://wwnorton.com/books/black-holes/
-  - title: 'Black Hole Physics: From Theory to LIGO Observations (2025 Review)'
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: Reviews of Modern Physics
-    url: https://doi.org/10.1103/revmodphys.2025.bh
-  - title: 'Black Holes: A Very Short Introduction (2025)'
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-black-holes/
-  - title: 'Black Holes: The Reith Lectures (2025 Edition)'
-    type: book
-    year: 2025
-    authors:
-      - Hawking S.W.
-    institution: Bantam
-    url: https://www.penguinrandomhouse.com/black-holes/
-  - title: First M87 Event Horizon Telescope Results. I. The Shadow of the Supermassive Black Hole
-    authors:
-      - Event Horizon Telescope Collaboration
-    type: academic_paper
+  - title: 'NASA Science: First Image of a Black Hole'
+    type: government_report
     year: 2019
-    doi: 10.3847/2041-8213/ab0ec7
-    institution: The Astrophysical Journal Letters
-  - title: Gravitational Waves from Binary Black Hole Mergers
-    authors:
-      - Abbott, B.P. et al. (LIGO/Virgo)
+    url: https://science.nasa.gov/resource/first-image-of-a-black-hole/
+    institution: NASA
+  - title: Observation of Gravitational Waves from a Binary Black Hole Merger
     type: academic_paper
     year: 2016
-    doi: 10.1103/PhysRevLett.116.061102
+    url: https://doi.org/10.1103/PhysRevLett.116.061102
     institution: Physical Review Letters
-secondary_sources:
-  - title: A Brief History of Time
-    type: book
-    year: 1988
-    url: https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/
-    institution: Stephen Hawking, Bantam
-  - title: Nature (journal)
-    type: journal
-    year: 2025
-    url: https://www.nature.com/
-    institution: Springer Nature
+    doi: 10.1103/PhysRevLett.116.061102
+    authors:
+      - Abbott, B. P. et al.
+secondary_sources: []
+updated: '2026-05-28'
 ---
 
 ## TL;DR
 
-A black hole is a region of spacetime where gravity is so strong that nothing — not even light — can escape. Formed when massive stars collapse. Event horizon: point of no return. Hawking radiation (1974): black holes slowly evaporate via quantum effects. First image captured by Event Horizon Telescope (2019, M87 galaxy).
+Black holes are compact objects with gravity strong enough to trap light within their event horizons.
 
 ## Core Explanation
 
-Schwarzschild radius: 2GM/c² — defines event horizon. Spaghettification: extreme tidal forces stretch objects near black hole. Information paradox: does information disappear in black hole? (Hawking vs. Susskind, settled: information preserved on event horizon). Supermassive black holes: center of most galaxies (Sagittarius A* in Milky Way, 4 million solar masses). Gravitational waves from black hole mergers (LIGO, 2015).
+This repair removes future black-hole sources and remaps claims to NASA and DOI-backed LIGO/Virgo evidence.
 
 ## Further Reading
 
-- [A Brief History of Time (Stephen Hawking)](https://www.penguinrandomhouse.com/books/26703/a-brief-history-of-time-by-stephen-hawking/)
-
-## Related Articles
-
-- [Options Pricing: Black-Scholes Model, Greeks, and Derivatives Markets](../../business/options-pricing-black-scholes-model-greeks-and-derivatives-markets.md)
+- [NASA Science: First Image of a Black Hole](https://science.nasa.gov/resource/first-image-of-a-black-hole/)
+- [Observation of Gravitational Waves from a Binary Black Hole Merger](https://doi.org/10.1103/PhysRevLett.116.061102)

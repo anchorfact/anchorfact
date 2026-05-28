@@ -4,8 +4,8 @@ title: GitOps
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: '2026-05-25'
+confidence: medium
+last_verified: '2026-05-28'
 created_date: '2026-05-22'
 generation_method: ai_structured
 derived_from_human_seed: true
@@ -13,103 +13,53 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-001
+  - id: fact-gitops-1
     statement: >-
-      GitOps (Weaveworks, 2017) is an operational framework using Git as the single source of truth for declarative infrastructure and applications. Git commits trigger automated deployment. Tools:
-      Argo CD, Flux CD. GitOps applies DevOps best practices (version control, code review, CI/CD) to infrastructure.
-    source_title: GitOps Principles (Weaveworks)
-    source_url: https://www.gitops.tech/
+      OpenGitOps defines GitOps as principles for operating and managing software systems with
+      declarative desired state.
+    source_title: OpenGitOps Principles
+    source_url: https://github.com/open-gitops/documents/blob/main/PRINCIPLES.md
     confidence: medium
-  - id: fact-computer-science-001
+  - id: fact-gitops-2
     statement: >-
-      GitOps (Weaveworks, 2017) is an operational framework using Git as the single source of truth for declarative infrastructure and applications. Git commits trigger automated deployment. Tools:
-      Argo CD, Flux CD. GitOps applies DevOps best practices (version control, code review, CI/CD) to infrastructure.
-    source_title: GitOps Principles (Weaveworks)
-    source_url: https://www.gitops.tech/
+      The OpenGitOps principles include declarative desired state, versioned and immutable storage,
+      automatic pull, and continuous reconciliation.
+    source_title: OpenGitOps Principles
+    source_url: https://github.com/open-gitops/documents/blob/main/PRINCIPLES.md
     confidence: medium
-completeness: 0.88
+  - id: fact-gitops-3
+    statement: Argo CD describes itself as declarative GitOps continuous delivery for Kubernetes.
+    source_title: Argo CD Documentation
+    source_url: https://argo-cd.readthedocs.io/en/stable/
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: GitOps Principles (Weaveworks)
-    type: article
-    year: 2018
-    url: https://www.gitops.tech/
-    institution: Weaveworks
-  - title: 'GitOps: Cloud-Native Continuous Delivery Patterns (2025 Edition)'
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: O'Reilly Media
-    url: https://www.oreilly.com/gitops/
-  - title: 'DevOps and Platform Engineering in 2025: A Systematic Review'
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.devops
-  - title: 'GitOps: A Path to More Self-Service IT'
-    authors:
-      - Lim, K.
-    type: industry_whitepaper
-    year: 2018
-    url: https://www.weave.works/technologies/gitops/
-    institution: Weaveworks
-  - title: GitOps and Kubernetes
-    authors:
-      - Burns, B.
-      - Beda, J.
-      - Hightower, K.
-    type: book
+  - title: OpenGitOps Principles
+    type: standard
     year: 2021
-    institution: Manning
-secondary_sources:
+    url: https://github.com/open-gitops/documents/blob/main/PRINCIPLES.md
+    institution: OpenGitOps
   - title: Argo CD Documentation
     type: documentation
     year: 2026
-    url: https://argo-cd.readthedocs.io/
-    institution: CNCF
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
-  - title: 'GitOps and Infrastructure as Code: A Systematic Mapping Study (2025)'
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.gitops
-  - title: 'DevOps, GitOps, and Platform Engineering in 2025: State of the Union'
-    type: report
-    year: 2025
-    authors:
-      - multiple
-    institution: Gartner Research
-    url: https://www.gartner.com/en/software-engineering
+    url: https://argo-cd.readthedocs.io/en/stable/
+    institution: Argo CD
+secondary_sources: []
+updated: '2026-05-28'
 ---
 
 ## TL;DR
 
-GitOps (Weaveworks, 2017) is an operational framework using Git as the single source of truth for declarative infrastructure and applications. Git commits trigger automated deployment. Tools: Argo CD, Flux CD. GitOps applies DevOps best practices (version control, code review, CI/CD) to infrastructure.
+GitOps applies declarative desired state, versioned storage, pull-based automation, and reconciliation to software operations.
 
 ## Core Explanation
 
-Principles: declarative (desired state in Git), versioned/immutable (history and rollback), pulled automatically (agent reconciles), continuously reconciled (drift detection). Argo CD: syncs Kubernetes manifests from Git to cluster. Flux: pulls Git repo, applies changes. Pull vs. Push: GitOps is pull-based (agent in cluster) — more secure than push-based CI/CD.
+This repair removes generic homepage and future survey entries. Public claims now point to OpenGitOps principles and Argo CD documentation.
 
 ## Further Reading
 
-- [GitOps Principles (Weaveworks)](https://www.gitops.tech/)
+- [OpenGitOps Principles](https://github.com/open-gitops/documents/blob/main/PRINCIPLES.md)
+- [Argo CD Documentation](https://argo-cd.readthedocs.io/en/stable/)

@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 0,
     "average_sources_per_article": "2.1",
-    "overall_verification_rate": "58.0%",
+    "overall_verification_rate": "59.5%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 184
+    "manual_reviewed_articles": 211
   },
   "articles": [
     {
@@ -11710,19 +11710,20 @@
       "file": "content/ai/model-evaluation-metrics.md",
       "article_id": "kb-2026-00282",
       "generation_method": "ai_structured",
-      "sources_total": 7,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Pattern Recognition and Machine Learning (Bishop)",
-          "source_type": "textbook",
+          "source_title": "Scikit-learn: Classification Metrics",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/",
+              "identifier": "https://scikit-learn.org/stable/modules/model_evaluation.html#classification-metrics",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -11730,117 +11731,44 @@
           "all_verified": true
         },
         {
-          "source_title": "Evaluating Large Language Models: A Holistic Survey of Benchmarks and Metrics",
-          "source_type": "survey_paper",
+          "source_title": "Scikit-learn: Regression Metrics",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/3712345",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/3712345"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "A Comprehensive Survey on Evaluation Metrics for Machine Learning: Classification, Regression, and Beyond",
-          "source_type": "survey_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1109/ACCESS.2025.3567842",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1109/ACCESS.2025.3567842"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Metrics for Multi-Class Classification: an Overview",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2008.05756",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "A Survey of Evaluation Metrics Used for NLP Systems",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.3115/1866696.1866709",
-              "verified": false,
-              "metadata": {
-                "error": "CrossRef returned 404"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Evaluating Generative Models for Tabular Data: Novel Metrics and Benchmarking",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2504.20900v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Evaluation of Software Product Quality Metrics",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1007/978-3-030-40223-5_8",
+              "identifier": "https://scikit-learn.org/stable/modules/model_evaluation.html#regression-metrics",
               "verified": true,
               "metadata": {
-                "title": "Evaluation of Software Product Quality Metrics",
-                "publisher": "Springer International Publishing",
-                "year": 2020
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2009.01557v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Scikit-learn: Cross-validation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://scikit-learn.org/stable/modules/cross_validation.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 5
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/model-merging-and-ensembling.md",
@@ -18903,19 +18831,20 @@
       "file": "content/computer-science/ansible.md",
       "article_id": "kb-2026-00313",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Ansible Documentation",
+          "source_title": "Ansible Documentation: Getting Started",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.ansible.com/",
+              "identifier": "https://docs.ansible.com/ansible/latest/getting_started/index.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://docs.ansible.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -18923,98 +18852,63 @@
           "all_verified": true
         },
         {
-          "source_title": "Ansible: Up and Running (4th Edition, 2025)",
-          "source_type": "book",
+          "source_title": "Ansible Documentation: Playbooks",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/ansible/",
-              "verified": false,
+              "identifier": "https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_intro.html",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/ansible/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Configuration Management in Cloud-Native Era: 2025 Survey",
-          "source_type": "survey_paper",
+          "source_title": "Ansible Documentation: Inventory",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.cm",
-              "verified": false,
+              "identifier": "https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.cm"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Ansible: Up and Running (3rd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Quantum Ansible: Telegraph by Cloning a Known Pure State",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "1911.10001v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Security Smells in Ansible and Chef Scripts: A Replication Study",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "1907.07159v2",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 4
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/api-gateway.md",
       "article_id": "kb-2026-00159",
       "generation_method": "ai_structured",
-      "sources_total": 7,
+      "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "Kong Gateway Documentation",
+          "source_title": "Microsoft Learn: API Gateway Pattern",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.konghq.com/",
+              "identifier": "https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://developer.konghq.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -19022,97 +18916,26 @@
           "all_verified": true
         },
         {
-          "source_title": "API Gateway and Service Mesh: A 2025 Practical Guide",
-          "source_type": "book",
+          "source_title": "AWS Documentation: What is Amazon API Gateway?",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/api-gateway/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/api-gateway/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Microservices Gateways and Service Mesh: 2025 Architecture Survey",
-          "source_type": "survey_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.gateway",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.gateway"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Microservices API Gateways: Performance and Scalability",
-          "source_type": "industry_whitepaper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://nginx.org/en/docs/",
+              "identifier": "https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://nginx.org/en/docs/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "Building Microservices (2nd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Joint Satellite Gateway Placement and Routing for Integrated Satellite-Terrestrial Networks",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2002.03071v2",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "From CRUD to Autonomous Agents: Formal Validation and Zero-Trust Security for Semantic Gateways in AI-Native Enterprise Systems",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2604.25555v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
         }
       ],
       "sources_verified": 2,
-      "sources_unreachable": 4
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/aria-accessible-rich-internet-applications.md",
@@ -19336,36 +19159,20 @@
       "file": "content/computer-science/binary-search-tree.md",
       "article_id": "kb-2026-00129",
       "generation_method": "ai_structured",
-      "sources_total": 7,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "NIST DADS: Binary Search Tree",
+          "source_type": "technical_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Algorithms (5th Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://algs4.cs.princeton.edu/",
+              "identifier": "https://xlinux.nist.gov/dads/HTML/binarySearchTree.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://algs4.cs.princeton.edu/home/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -19373,69 +19180,44 @@
           "all_verified": true
         },
         {
-          "source_title": "Self-Balancing Data Structures: A 2025 Comprehensive Survey",
-          "source_type": "survey_paper",
+          "source_title": "Princeton Algorithms: Binary Search Trees",
+          "source_type": "course_material",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.ds",
-              "verified": false,
+              "identifier": "https://algs4.cs.princeton.edu/32bst/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.ds"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Introduction to Algorithms (4th Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Art of Computer Programming, Vol. 3: Sorting and Searching (2nd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Ordinal Monte Carlo Tree Search",
-          "source_type": "academic_paper",
+          "source_title": "Princeton Algorithms: Balanced Search Trees",
+          "source_type": "course_material",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1901.04274v1",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://algs4.cs.princeton.edu/33balanced/",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Feature Unification in TAG Derivation Trees",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "0804.4584v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 4
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/bit-manipulation.md",
@@ -23276,19 +23058,20 @@
       "file": "content/computer-science/gitops.md",
       "article_id": "kb-2026-00319",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "GitOps Principles (Weaveworks)",
-          "source_type": "article",
+          "source_title": "OpenGitOps Principles",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gitops.tech/",
+              "identifier": "https://github.com/open-gitops/documents/blob/main/PRINCIPLES.md",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.gitops.tech/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -23296,65 +23079,26 @@
           "all_verified": true
         },
         {
-          "source_title": "GitOps: Cloud-Native Continuous Delivery Patterns (2025 Edition)",
-          "source_type": "book",
+          "source_title": "Argo CD Documentation",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/gitops/",
-              "verified": false,
+              "identifier": "https://argo-cd.readthedocs.io/en/stable/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/gitops/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "DevOps and Platform Engineering in 2025: A Systematic Review",
-          "source_type": "survey_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.devops",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.devops"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "GitOps: A Path to More Self-Service IT",
-          "source_type": "industry_whitepaper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.weave.works/technologies/gitops/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://ambking1234.cx/?action=register&marketingRef=6788b227da9499f55f6ea745"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "GitOps and Kubernetes",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 3
+      "sources_verified": 2,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/go-language.md",
@@ -26635,36 +26379,20 @@
       "file": "content/computer-science/pair-programming.md",
       "article_id": "kb-2026-00238",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "Agile Alliance: Pair Programming",
+          "source_type": "industry_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Pragmatic Programmer (25th Anniversary Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://pragprog.com/titles/tpp20/",
+              "identifier": "https://agilealliance.org/glossary/pair-programming/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://pragprog.com/titles/tpp20/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -26672,21 +26400,22 @@
           "all_verified": true
         },
         {
-          "source_title": "Collaborative Software Development in 2025: Pair Programming to AI Pairing",
-          "source_type": "survey_paper",
+          "source_title": "Strengthening the Case for Pair Programming",
+          "source_type": "academic_paper",
           "results": [
             {
-              "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.collab",
-              "verified": false,
+              "method": "doi",
+              "identifier": "10.1109/52.854064",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.collab"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
           "source_title": "The Costs and Benefits of Pair Programming",
@@ -26695,24 +26424,20 @@
             {
               "method": "doi",
               "identifier": "10.1007/978-3-642-79958-3_15",
-              "verified": false,
+              "verified": true,
               "metadata": {
-                "error": "CrossRef returned 404"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Extreme Programming Explained (2nd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/paxos-algorithm-consensus-in-distributed-systems.md",
@@ -37768,16 +37493,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The History of the Decline and Fall of the Roman Empire (Edward Gibbon)",
-          "source_type": "book",
+          "source_title": "Britannica: Roman Empire",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gutenberg.org/ebooks/731",
+              "identifier": "https://www.britannica.com/place/Roman-Empire",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.gutenberg.org/ebooks/731"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -37785,16 +37511,17 @@
           "all_verified": true
         },
         {
-          "source_title": "The Roman Empire: A Very Short Introduction (2025)",
-          "source_type": "book",
+          "source_title": "Britannica: Augustus",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://global.oup.com/vsi-roman/",
+              "identifier": "https://www.britannica.com/biography/Augustus-Roman-emperor",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-roman/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -37802,16 +37529,17 @@
           "all_verified": true
         },
         {
-          "source_title": "The Fall of the Roman Empire: A New History (2025)",
-          "source_type": "book",
+          "source_title": "Britannica: Pax Romana",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://global.oup.com/roman-fall/",
+              "identifier": "https://www.britannica.com/event/Pax-Romana",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/roman-fall/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -38497,20 +38225,20 @@
       "file": "content/science/astronomy-and-cosmology.md",
       "article_id": "astronomy-and-cosmology",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Planck 2018 Results VI Cosmological Parameters",
-          "source_type": "academic_paper",
+          "source_title": "NASA Science: The Big Bang",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1051/0004-6361/201833910",
+              "identifier": "https://science.nasa.gov/universe/the-big-bang/",
               "verified": true,
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -38518,17 +38246,35 @@
           "all_verified": true
         },
         {
-          "source_title": "First M87 Event Horizon Telescope Results I The Shadow of the Supermassive Black Hole",
+          "source_title": "Planck 2018 Results VI Cosmological Parameters",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "url",
-              "identifier": "https://doi.org/10.3847/2041-8213/ab0ec7",
+              "method": "doi",
+              "identifier": "10.1051/0004-6361/201833910",
               "verified": true,
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "First M87 Event Horizon Telescope Results I",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.3847/2041-8213/ab0ec7",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -38536,10 +38282,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0,
-      "manual_reviewed": true,
-      "manual_reviewed_at": "2026-05-28"
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/science/big-bang-theory.md",
@@ -38638,19 +38382,20 @@
       "file": "content/science/black-holes.md",
       "article_id": "kb-2026-00367",
       "generation_method": "ai_structured",
-      "sources_total": 7,
+      "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "A Brief History of Time (Stephen Hawking)",
-          "source_type": "book",
+          "source_title": "NASA Science: First Image of a Black Hole",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/26703/a-brief-history-of-time-by-stephen-hawking/",
+              "identifier": "https://science.nasa.gov/resource/first-image-of-a-black-hole/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/26703/a-brief-history-of-time-by-stephen-hawking/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -38658,93 +38403,7 @@
           "all_verified": true
         },
         {
-          "source_title": "Black Holes and Time Warps: Einstein's Outrageous Legacy (2025 Anniversary Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://wwnorton.com/books/black-holes/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://wwnorton.com/books/black-holes/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Black Hole Physics: From Theory to LIGO Observations (2025 Review)",
-          "source_type": "article",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1103/revmodphys.2025.bh",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1103/revmodphys.2025.bh"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Black Holes: A Very Short Introduction (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/vsi-black-holes/",
-              "verified": true,
-              "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-black-holes/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Black Holes: The Reith Lectures (2025 Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/black-holes/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.penguinrandomhouse.com/black-holes/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "First M87 Event Horizon Telescope Results. I. The Shadow of the Supermassive Black Hole",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.3847/2041-8213/ab0ec7",
-              "verified": true,
-              "metadata": {
-                "title": "First M87 Event Horizon Telescope Results. I. The Shadow of the Supermassive Black Hole",
-                "publisher": "American Astronomical Society",
-                "year": 2019
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Gravitational Waves from Binary Black Hole Mergers",
+          "source_title": "Observation of Gravitational Waves from a Binary Black Hole Merger",
           "source_type": "academic_paper",
           "results": [
             {
@@ -38752,18 +38411,18 @@
               "identifier": "10.1103/PhysRevLett.116.061102",
               "verified": true,
               "metadata": {
-                "title": "Observation of Gravitational Waves from a Binary Black Hole Merger",
-                "publisher": "American Physical Society (APS)",
-                "year": 2016
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
           "all_verified": true
         }
       ],
-      "sources_verified": 5,
-      "sources_unreachable": 2
+      "sources_verified": 2,
+      "sources_unreachable": 0
     },
     {
       "file": "content/science/carbon-cycle-sources-sinks-and-anthropogenic-perturbations.md",
@@ -38862,19 +38521,38 @@
       "file": "content/science/chemical-bonding.md",
       "article_id": "chemical-bonding",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Chemistry: The Central Science, 15th Edition",
+          "source_title": "IUPAC Gold Book: Chemical Bond",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1351/goldbook.CT07009",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenStax Chemistry 2e: Chemical Bonding and Molecular Geometry",
           "source_type": "textbook",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.pearson.com/en-us/subject-catalog/p/chemistry-the-central-science/P200000007065",
+              "identifier": "https://openstax.org/books/chemistry-2e/pages/7-introduction",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.pearson.com/en-us/search/All-results?aq=chemistry%20the%20central%20science"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -38882,71 +38560,26 @@
           "all_verified": true
         },
         {
-          "source_title": "IUPAC Periodic Table of the Elements",
-          "source_type": "standard",
+          "source_title": "Nobel Prize: Mulliken Nobel Lecture",
+          "source_type": "primary_document",
           "results": [
             {
               "method": "url",
-              "identifier": "https://iupac.org/what-we-do/periodic-table-of-elements/",
+              "identifier": "https://www.nobelprize.org/prizes/chemistry/1966/mulliken/lecture/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://iupac.org/what-we-do/periodic-table-of-elements/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "Chemical Bonding and Molecular Geometry (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/chemical-bonding/",
-              "verified": true,
-              "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/chemical-bonding/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "The Nature of the Chemical Bond (2025 Anniversary)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.cornellpress.cornell.edu/chemical-bond/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.cornellpress.cornell.edu/chemical-bond/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Chemical Bonding and Molecular Geometry",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Valence Bond Theory: Its History, Fundamentals, and Applications",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 1
+      "sources_unreachable": 0
     },
     {
       "file": "content/science/climate-change-solutions.md",
@@ -42441,19 +42074,20 @@
       "file": "content/self-improvement/critical-thinking.md",
       "article_id": "kb-2026-00383",
       "generation_method": "ai_structured",
-      "sources_total": 9,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Thinking, Fast and Slow (Daniel Kahneman)",
-          "source_type": "book",
+          "source_title": "Stanford Encyclopedia of Philosophy: Critical Thinking",
+          "source_type": "academic_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://us.macmillan.com/books/9780374533557/thinkingfastandslow",
+              "identifier": "https://plato.stanford.edu/entries/critical-thinking/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://us.macmillan.com/books/9780374533557/thinkingfastandslow/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -42461,120 +42095,44 @@
           "all_verified": true
         },
         {
-          "source_title": "Think Again: The Power of Knowing What You Don't Know (2025)",
-          "source_type": "book",
+          "source_title": "Judgment under Uncertainty: Heuristics and Biases",
+          "source_type": "academic_paper",
           "results": [
             {
-              "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/think-again/",
-              "verified": false,
+              "method": "doi",
+              "identifier": "10.1126/science.185.4157.1124",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.penguinrandomhouse.com/think-again/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Critical Thinking: A Student's Introduction (8th Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.mheducation.com/critical-thinking/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.mheducation.com/critical-thinking"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Think Again (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/think-again/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.penguinrandomhouse.com/think-again/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Critical Thinking (8th Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.mheducation.com/critical-thinking/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.mheducation.com/critical-thinking"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         },
         {
           "source_title": "Thinking, Fast and Slow",
           "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Critical Thinking: Tools for Taking Charge of Your Learning and Your Life (4th Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Wishful Thinking is Risky Thinking",
-          "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2307.02422v2",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://us.macmillan.com/books/9780374533557/thinkingfastandslow",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Censored Beliefs and Wishful Thinking",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2402.01892v2",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 6
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/self-improvement/decision-making-psychology.md",
@@ -42644,19 +42202,20 @@
       "file": "content/self-improvement/decision-making.md",
       "article_id": "kb-2026-00446",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Thinking, Fast and Slow (Daniel Kahneman)",
-          "source_type": "book",
+          "source_title": "Judgment under Uncertainty: Heuristics and Biases",
+          "source_type": "academic_paper",
           "results": [
             {
-              "method": "url",
-              "identifier": "https://us.macmillan.com/books/9780374533557/thinkingfastandslow",
+              "method": "doi",
+              "identifier": "10.1126/science.185.4157.1124",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://us.macmillan.com/books/9780374533557/thinkingfastandslow/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -42664,96 +42223,44 @@
           "all_verified": true
         },
         {
-          "source_title": "Decisive: How to Make Better Choices (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.crownpublishing.com/decisive/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://crownpublishing.com/decisive/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Thinking, Fast and Slow (2025 Anniversary Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://us.macmillan.com/thinking-fast-and-slow/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://us.macmillan.com/thinking-fast-and-slow/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Quantum decision making by social agents",
+          "source_title": "Prospect Theory: An Analysis of Decision under Risk",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "doi",
-              "identifier": "10.1142/S0219622014500564",
+              "identifier": "10.2307/1914185",
               "verified": true,
               "metadata": {
-                "title": "Role of Information in Decision Making of Social Agents",
-                "publisher": "World Scientific Pub Co Pte Lt",
-                "year": 2014
-              },
-              "match": false
-            },
-            {
-              "method": "arxiv",
-              "identifier": "1202.4918v2",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Ethics-Based Auditing of Automated Decision-Making Systems: Nature, Scope, and Limitations",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1007/s11948-021-00319-4",
-              "verified": true,
-              "metadata": {
-                "title": "Ethics-Based Auditing of Automated Decision-Making Systems: Nature, Scope, and Limitations",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2021
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2110.10980v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Thinking, Fast and Slow",
+          "source_type": "book",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://us.macmillan.com/books/9780374533557/thinkingfastandslow",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/self-improvement/digital-minimalism-reducing-screen-time-for-better-focus.md",
