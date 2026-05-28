@@ -4,9 +4,9 @@ title: WebSocket API
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: '2026-05-26'
-created_date: '2026-05-22'
+confidence: medium
+last_verified: "2026-05-28"
+created_date: "2026-05-22"
 generation_method: ai_structured
 derived_from_human_seed: true
 conflict_of_interest: none_declared
@@ -14,102 +14,59 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-computer-science-001
-    statement: The WebSocket API is the browser-side interface to the WebSocket protocol (RFC 6455), providing full-duplex, bidirectional communication between browser and server over a single TCP connection.
+    statement: RFC 6455 defines the WebSocket Protocol for two-way communication between clients and remote hosts.
+    source_title: The WebSocket Protocol
     source_url: https://www.rfc-editor.org/rfc/rfc6455
     confidence: medium
   - id: fact-computer-science-002
-    statement: The `readyState` property tracks connection state (CONNECTING=0, OPEN=1, CLOSING=2, CLOSED=3).
-    source_url: https://websockets.spec.whatwg.org/
+    statement: >-
+      The browser WebSocket interface exposes methods and events for opening, sending, receiving, and closing a
+      WebSocket connection.
+    source_title: WebSocket
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/WebSocket
+    confidence: medium
+  - id: fact-computer-science-003
+    statement: The WebSocket readyState property reports whether a connection is connecting, open, closing, or closed.
+    source_title: "WebSocket: readyState property"
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/readyState
     confidence: medium
 completeness: 0.88
 primary_sources:
-  - title: The WebSocket API (W3C)
-    type: standard
-    year: 2023
-    url: https://www.w3.org/
-    institution: WHATWG
-  - title: 'Real-Time Web Communication: WebSocket, WebRTC, and Server-Sent Events (2025 Edition)'
-    type: book
-    year: 2025
-    authors:
-      - Grigorik I.
-    institution: O'Reilly Media
-    url: https://www.oreilly.com/library/view/high-performance-browser/
-  - title: A Survey of Real-Time Communication Protocols (2025)
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.rtc
-  - title: RFC 6455 — The WebSocket Protocol
+  - title: The WebSocket Protocol
     type: rfc
     year: 2011
-    url: https://datatracker.ietf.org/doc/html/rfc6455
     institution: IETF
-  - title: The WebSocket API — W3C Living Standard
-    type: standard
-    year: 2024
-    url: https://websockets.spec.whatwg.org/
-    institution: WHATWG
-  - title: RFC 8441 — Bootstrapping WebSockets with HTTP/2
-    type: rfc
-    year: 2018
-    url: https://datatracker.ietf.org/doc/html/rfc8441
-    institution: IETF
-  - title: The WebSocket Protocol — RFC 6455 Implementation Report
-    type: rfc
-    year: 2024
-    url: https://datatracker.ietf.org/doc/rfc6455/
-    institution: IETF
-secondary_sources:
-  - title: The WebSocket Protocol (RFC 6455)
-    authors:
-      - Fette
-      - Melnikov
-    type: standard
-    year: 2011
     url: https://www.rfc-editor.org/rfc/rfc6455
-    institution: IETF
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
-  - title: A Survey of WebSocket Protocols and Real-Time Communication in Distributed Systems (2025)
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.websocket
-  - title: 'Modern Real-Time Web Protocols: WebSocket, WebRTC, and Beyond'
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE Access
-    url: https://doi.org/10.1109/access.2025.websocket
+  - title: WebSocket
+    type: documentation
+    year: 2026
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/Web/API/WebSocket
+  - title: "WebSocket: readyState property"
+    type: documentation
+    year: 2026
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/readyState
+secondary_sources: []
+updated: "2026-05-28"
+known_gaps:
+  - HTTP/2 and HTTP/3 transport interactions for WebSocket-like use cases
+  - Backpressure and scaling concerns for high-volume real-time systems
+disputed_statements: []
 ---
-
-
-
 ## TL;DR
-
-The WebSocket API is the browser-side interface to the WebSocket protocol (RFC 6455), providing full-duplex, bidirectional communication between browser and server over a single TCP connection.
+The WebSocket API gives browsers a JavaScript interface for bidirectional communication with a server over the WebSocket protocol. It is useful for chat, collaboration, notifications, dashboards, and other real-time interfaces.
 
 ## Core Explanation
+A client creates a WebSocket with a ws or wss URL, then listens for open, message, error, and close events. The readyState property exposes connection state, and send() transmits data when the connection is open.
 
-Usage: `const ws = new WebSocket('wss://example.com')`. Events: `onopen`, `onmessage`, `onerror`, `onclose`. Methods: `send()`, `close()`. The `readyState` property tracks connection state (CONNECTING=0, OPEN=1, CLOSING=2, CLOSED=3). Binary data can be sent as Blob or ArrayBuffer. WebSocket connections start as HTTP (upgrade) and are not HTTP after the handshake.
+## Detailed Analysis
+WebSocket is not a general replacement for HTTP. It is a persistent connection model, so production systems need connection lifecycle handling, backpressure, authentication, authorization, and scaling design.
 
 ## Further Reading
-
-- [The WebSocket API (W3C)](https://websockets.spec.whatwg.org/)
+- RFC 6455
+- MDN WebSocket
+- MDN readyState
 
 ## Related Articles
 

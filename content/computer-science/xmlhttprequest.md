@@ -1,75 +1,67 @@
 ---
-id: "kb-2026-00082"
-title: "XMLHttpRequest"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00082
+title: XMLHttpRequest
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "XMLHttpRequest is an API for making HTTP requests from JavaScript, first introduced by Microsoft in 1999 for Outlook Web Access"
-    source_title: "MDN Web Docs — HTTP"
-    source_url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    confidence: "medium"
-  - id: "fact-computer-science-001"
-    statement: "XMLHttpRequest (XHR) is an API for making HTTP requests from JavaScript, first introduced by Microsoft in 1999 for Outlook Web Access. It was the foundation of Ajax and is now largely superseded by the Fetch API, though still used in legacy systems and for upload progress tracking."
-    source_title: "XMLHttpRequest Living Standard"
-    source_url: "https://xhr.spec.whatwg.org/"
-    confidence: "medium"
-
+  - id: fact-computer-science-01
+    statement: XMLHttpRequest is a browser API for making HTTP requests from JavaScript.
+    source_title: XMLHttpRequest
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+    confidence: medium
+  - id: fact-computer-science-02
+    statement: XMLHttpRequest.open() initializes a request and specifies the HTTP method and URL.
+    source_title: "XMLHttpRequest: open() method"
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/open
+    confidence: medium
+  - id: fact-computer-science-03
+    statement: XMLHttpRequest.upload returns an XMLHttpRequestUpload object for monitoring upload progress.
+    source_title: "XMLHttpRequest: upload property"
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/upload
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - Legacy browser behavior and compatibility differences
+  - Migration tradeoffs from XMLHttpRequest to Fetch in existing applications
+disputed_statements: []
 primary_sources:
-  - title: "XMLHttpRequest Living Standard"
-    type: "standard"
+  - title: XMLHttpRequest
+    type: documentation
     year: 2026
-    url: "https://xhr.spec.whatwg.org/"
-    institution: "WHATWG"
-
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+  - title: "XMLHttpRequest: open() method"
+    type: documentation
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/open
+  - title: "XMLHttpRequest: upload property"
+    type: documentation
+    year: 2026
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/upload
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
-
-
 ## TL;DR
-
-XMLHttpRequest (XHR) is an API for making HTTP requests from JavaScript, first introduced by Microsoft in 1999 for Outlook Web Access. It was the foundation of Ajax and is now largely superseded by the Fetch API, though still used in legacy systems and for upload progress tracking.
+XMLHttpRequest is a legacy browser API for making HTTP requests from JavaScript. Fetch is usually preferred for new code, but XHR remains relevant in older codebases and in some upload-progress workflows.
 
 ## Core Explanation
+An XHR request is configured with open(), sent with send(), and observed through events or callbacks. It predates the Promise-based Fetch API and has a more event-oriented programming model.
 
-XHR uses event-based callbacks (`onload`, `onerror`, `onprogress`) rather than Promises. It supports synchronous requests (`xhr.open('GET', url, false)`), though these are deprecated and block the main thread. XHR remains the only standard API that provides upload progress events (`xhr.upload.onprogress`), which Fetch API does not natively support.
+## Detailed Analysis
+The durable reason XHR still appears in applications is compatibility and upload progress support. Public content should avoid claiming Fetch has completely replaced it, because migration depends on browser support, app architecture, and progress-event needs.
 
 ## Further Reading
-
-- [XMLHttpRequest Living Standard](https://xhr.spec.whatwg.org/)
+- MDN XMLHttpRequest
+- MDN open()
+- MDN upload

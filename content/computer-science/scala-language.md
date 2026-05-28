@@ -1,80 +1,70 @@
 ---
-id: "kb-2026-00305"
-title: "Scala Language"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00305
+title: Scala Language
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-001"
-    statement: "Scala (Martin Odersky, 2004, EPFL) elegantly combines object-oriented and functional programming on the JVM. Scala 3 (2021) redesigned with optional braces (Python-like), enums, extension methods, and given/using for implicits. Used by: Twitter (originally), Netflix, LinkedIn, Apache Spark."
-    source_title: "Programming in Scala (5th Edition)"
-    source_url: "https://www.artima.com/shop/programming_in_scala_5ed"
-    confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "Apache Spark: written in Scala, with Scala/Python/Java APIs."
-    source_title: "Scala Documentation"
-    source_url: "https://docs.scala-lang.org/"
-    confidence: "medium"
-
+  - id: fact-computer-science-001
+    statement: Scala combines object-oriented and functional programming features.
+    source_title: A Tour of Scala
+    source_url: https://docs.scala-lang.org/tour/tour-of-scala.html
+    confidence: medium
+  - id: fact-computer-science-002
+    statement: Scala 3 includes enum syntax for defining algebraic data types.
+    source_title: "Scala 3 Book: Domain Modeling"
+    source_url: https://docs.scala-lang.org/scala3/book/domain-modeling-tools.html
+    confidence: medium
+  - id: fact-computer-science-003
+    statement: Scala 3 using clauses define context parameters supplied by the compiler from available given instances.
+    source_title: "Scala 3 Reference: Using Clauses"
+    source_url: https://docs.scala-lang.org/scala3/reference/contextual/using-clauses.html
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - Version-specific migration issues between Scala 2 and Scala 3
+  - Ecosystem tradeoffs around build tools, binary compatibility, and libraries
+disputed_statements: []
 primary_sources:
-  - title: "Scala Documentation"
-    type: "documentation"
+  - title: A Tour of Scala
+    type: documentation
     year: 2026
-    url: "https://docs.scala-lang.org/"
-    institution: "EPFL"
-
-secondary_sources:
-  - title: "Programming in Scala (5th Edition)"
-    authors: ["Odersky, Martin", "Spoon, Lex", "Venners, Bill"]
-    type: "book"
-    year: 2021
-    url: "https://www.artima.com/shop/programming_in_scala_5ed"
-    institution: "Artima Press"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    institution: Scala Center
+    url: https://docs.scala-lang.org/tour/tour-of-scala.html
+  - title: "Scala 3 Book: Domain Modeling"
+    type: documentation
+    year: 2026
+    institution: Scala Center
+    url: https://docs.scala-lang.org/scala3/book/domain-modeling-tools.html
+  - title: "Scala 3 Reference: Using Clauses"
+    type: documentation
+    year: 2026
+    institution: Scala Center
+    url: https://docs.scala-lang.org/scala3/reference/contextual/using-clauses.html
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
-
-
 ## TL;DR
-
-Scala (Martin Odersky, 2004, EPFL) elegantly combines object-oriented and functional programming on the JVM. Scala 3 (2021) redesigned with optional braces (Python-like), enums, extension methods, and given/using for implicits. Used by: Twitter (originally), Netflix, LinkedIn, Apache Spark.
+Scala is a JVM language that combines object-oriented and functional programming. Scala 3 modernized several language features while preserving the core idea of concise, typed programming on the JVM.
 
 ## Core Explanation
+Scala supports classes, traits, pattern matching, higher-order functions, immutable collections, and expressive type-system features. Scala 3 adds or refines features such as enums, extension methods, and contextual abstractions.
 
-Functional features: pattern matching, case classes, for-comprehensions, immutable collections. Scala 3: `enum Color { case Red, Green, Blue }`. Given/Using: context parameters (cleaner implicits). Type system: union types, intersection types, dependent types. Apache Spark: written in Scala, with Scala/Python/Java APIs. Akka: actor-based concurrency (now Cloudflow).
+## Detailed Analysis
+Scala is often chosen when teams want functional programming patterns with JVM interoperability. Public claims should be specific to language features or documented ecosystem behavior rather than broad claims about industry adoption.
 
 ## Further Reading
-
-- [Scala Documentation](https://docs.scala-lang.org/)
+- A Tour of Scala
+- Scala 3 domain modeling
+- Scala 3 using clauses
 
 ## Related Articles
 

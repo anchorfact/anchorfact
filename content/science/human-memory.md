@@ -1,73 +1,76 @@
 ---
-id: "kb-2026-00489"
-title: "Human Memory"
-schema_type: "TechArticle"
-category: "science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00489
+title: Human Memory
+schema_type: TechArticle
+category: science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-science-001"
-    statement: "Human memory is not a recording device — it's reconstructive and fallible. Types: sensory (milliseconds), short-term/working (seconds, 7±2 items — Miller, 1956), long-term (unlimited capacity). Long-term: explicit (declarative: episodic + semantic) and implicit (procedural skills, conditioning). Consolidation: moving memories from hippocampus to co"
-    source_title: "The Seven Sins of Memory (Daniel Schacter)"
-    source_url: "https://www.harpercollins.com/products/the-seven-sins-of-memory-daniel-l-schacter"
-    confidence: "medium"
-  - id: "fact-science-002"
-    statement: "Working memory: 4±1 chunks (Cowan, 2001 — updated from Miller)."
-    source_title: "The Seven Sins of Memory (Daniel Schacter)"
-    source_url: "https://www.harpercollins.com/products/the-seven-sins-of-memory-daniel-l-schacter"
-    confidence: "medium"
-
+  - id: fact-science-001
+    statement: >-
+      Schacter described seven common categories of memory error, including transience, absent-mindedness, blocking,
+      misattribution, suggestibility, bias, and persistence.
+    source_title: "The Seven Sins of Memory: Insights from Psychology and Cognitive Neuroscience"
+    source_url: https://doi.org/10.1037/0003-066X.54.3.182
+    confidence: medium
+  - id: fact-science-002
+    statement: >-
+      Cowan argued that short-term memory capacity is often closer to about four chunks than to the older seven-item
+      estimate.
+    source_title: "The magical number 4 in short-term memory: A reconsideration of mental storage capacity"
+    source_url: https://doi.org/10.1017/S0140525X01003922
+    confidence: medium
+  - id: fact-science-003
+    statement: Baddeley described working memory as a system for temporary storage and manipulation of information.
+    source_title: Working memory
+    source_url: https://doi.org/10.1126/science.1736359
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - Neural mechanisms of consolidation and reconsolidation
+  - Differences among laboratory memory tasks, eyewitness memory, and everyday memory
+disputed_statements: []
 primary_sources:
-  - title: "The Seven Sins of Memory (Daniel Schacter)"
-    type: "book"
+  - title: "The Seven Sins of Memory: Insights from Psychology and Cognitive Neuroscience"
+    type: journal_article
+    year: 1999
+    institution: American Psychologist
+    url: https://doi.org/10.1037/0003-066X.54.3.182
+  - title: "The magical number 4 in short-term memory: A reconsideration of mental storage capacity"
+    type: journal_article
     year: 2001
-    url: "https://www.harpercollins.com/products/the-seven-sins-of-memory-daniel-l-schacter"
-    institution: "Houghton Mifflin"
-
-secondary_sources:
-  - title: "A Brief History of Time"
-    type: "book"
-    year: 1988
-    url: "https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/"
-    institution: "Stephen Hawking, Bantam"
-  - title: "Nature (journal)"
-    type: "journal"
-    year: 2025
-    url: "https://www.nature.com/"
-    institution: "Springer Nature"
-
+    institution: Behavioral and Brain Sciences
+    url: https://doi.org/10.1017/S0140525X01003922
+  - title: Working memory
+    type: journal_article
+    year: 1992
+    institution: Science
+    url: https://doi.org/10.1126/science.1736359
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
-
 ## TL;DR
-
-Human memory is not a recording device — it's reconstructive and fallible. Types: sensory (milliseconds), short-term/working (seconds, 7±2 items — Miller, 1956), long-term (unlimited capacity). Long-term: explicit (declarative: episodic + semantic) and implicit (procedural skills, conditioning). Consolidation: moving memories from hippocampus to cortex during sleep.
+Human memory is an active set of systems for encoding, storing, reconstructing, and using information. It is useful but fallible, and different memory tasks rely on different mechanisms.
 
 ## Core Explanation
+Working memory supports temporary storage and manipulation. Long-term memory includes different forms such as episodic, semantic, and procedural memory. Memory errors can arise from forgetting, misattribution, suggestion, bias, blocking, and persistence.
 
-Working memory: 4±1 chunks (Cowan, 2001 — updated from Miller). Chunking: group information into meaningful units. Encoding: deep (semantic, elaborative) > shallow (visual, acoustic). Retrieval: context-dependent (same environment), state-dependent (same emotional/physical state). Forgetting: Ebbinghaus curve, interference (proactive/retroactive), retrieval failure (tip-of-the-tongue). Flashbulb memories: vivid but not more accurate — we're confident but wrong.
+## Detailed Analysis
+Memory should not be described as a perfect recording device. Research on working memory capacity, memory errors, and reconstructive processes shows why confidence, vividness, and accuracy can diverge.
 
 ## Further Reading
-
-- [The Seven Sins of Memory (Daniel Schacter)](https://www.harpercollins.com/products/the-seven-sins-of-memory-daniel-l-schacter)
+- Schacter on the seven sins of memory
+- Cowan on short-term memory capacity
+- Baddeley on working memory
 
 ## Related Articles
 

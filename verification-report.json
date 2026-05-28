@@ -2,13 +2,13 @@
   "summary": {
     "generated": "2026-05-27T14:00:00.000Z",
     "total_articles": 1000,
-    "total_with_errors": 337,
+    "total_with_errors": 334,
     "average_sources_per_article": "2.1",
-    "overall_verification_rate": "66.6%",
+    "overall_verification_rate": "67.0%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 218
+    "manual_reviewed_articles": 228
   },
   "articles": [
     {
@@ -5033,19 +5033,20 @@
       "file": "content/ai/ai-for-software-testing.md",
       "article_id": "ai-for-software-testing",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Future of Software Testing: AI-Powered Test Case Generation and Validation",
+          "source_title": "Software Testing With Large Language Models: Survey, Landscape, and Vision",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://link.springer.com/chapter/10.1007/978-3-031-92605-1_18",
+              "identifier": "https://doi.org/10.1109/TSE.2024.3368208",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://link.springer.com/chapter/10.1007/978-3-031-92605-1_18?error=cookies_not_supported&code=67d43aca-246b-46f0-9b9e-d29f05658313"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -5053,16 +5054,35 @@
           "all_verified": true
         },
         {
-          "source_title": "AI in QA Testing: Tools, Use Cases, and Future -- Complete Guide 2026",
-          "source_type": "industry_report",
+          "source_title": "KLEE: Unassisted and Automatic Generation of High-Coverage Tests for Complex Systems Programs",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://quashbugs.com/blog/ai-in-qa-the-complete-guide-to-ai-powered-testing-2026",
+              "identifier": "https://www.usenix.org/conference/osdi-08/klee-unassisted-and-automatic-generation-high-coverage-tests-complex-systems",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://quashbugs.com/blog/ai-in-qa-the-complete-guide-to-ai-powered-testing-2026"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OSS-Fuzz: Continuous Fuzzing for Open Source Software",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://google.github.io/oss-fuzz/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -5070,43 +5090,65 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-space-exploration.md",
       "article_id": "ai-for-space-exploration",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Autonomous Navigation and AI-Driven Decision Making for Mars Exploration Rovers",
-          "source_type": "academic_paper",
+          "source_title": "Mars 2020 Perseverance Rover: Autonomous Navigation",
+          "source_type": "government_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.science.org/journal/scirobotics",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.science.org/journal/scirobotics"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Onboard AI for Earth Observation: In-Orbit Inference and Autonomous Data Filtering on Phi-Sat Missions",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36",
+              "identifier": "https://mars.nasa.gov/mars2020/spacecraft/rover/autonomous-navigation/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=36"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Software Allows Curiosity Rover to Select Targets",
+          "source_type": "government_article",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.jpl.nasa.gov/news/software-allows-curiosity-rover-to-select-targets/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PhiSat-1: Artificial Intelligence in Space",
+          "source_type": "space_agency_article",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.esa.int/Applications/Observing_the_Earth/Ph-sat-1_Artificial_intelligence_in_space",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -5114,8 +5156,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-speech-emotion-recognition.md",
@@ -5303,20 +5347,20 @@
       "file": "content/ai/ai-for-transportation.md",
       "article_id": "ai-for-transportation",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "An efficient intelligent transportation system for traffic flow prediction and congestion management",
+          "source_title": "Diffusion Convolutional Recurrent Neural Network: Data-Driven Traffic Forecasting",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1038/s41598-025-10794-5",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1707.01926",
               "verified": true,
               "metadata": {
-                "title": "An efficient intelligent transportation system for traffic flow prediction using meta-temporal hyperbolic quantum graph neural networks",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2025
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -5324,25 +5368,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Real-time traffic flow optimization using large language models and deep reinforcement learning",
+          "source_title": "Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framework for Traffic Forecasting",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.sciencedirect.com/science/article/pii/S156849462501230X",
-              "verified": false,
+              "identifier": "https://arxiv.org/abs/1709.04875",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.sciencedirect.com/science/article/pii/S156849462501230X"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Graph WaveNet for Deep Spatial-Temporal Graph Modeling",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1906.00121",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-urban-planning.md",
@@ -28316,19 +28381,56 @@
       "file": "content/computer-science/r-language.md",
       "article_id": "kb-2026-00308",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "R Documentation",
+          "source_title": "An Introduction to R",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.r-project.org/",
+              "identifier": "https://cran.r-project.org/doc/manuals/r-release/R-intro.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.r-project.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The R FAQ",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cran.r-project.org/doc/FAQ/R-FAQ.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "CRAN Packages By Name",
+          "source_type": "package_index",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cran.r-project.org/web/packages/available_packages_by_name.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -28336,8 +28438,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/raft-consensus-algorithm-leader-election-log-replication-and-safety.md",
@@ -29113,19 +29217,56 @@
       "file": "content/computer-science/scala-language.md",
       "article_id": "kb-2026-00305",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Scala Documentation",
+          "source_title": "A Tour of Scala",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.scala-lang.org/",
+              "identifier": "https://docs.scala-lang.org/tour/tour-of-scala.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://docs.scala-lang.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Scala 3 Book: Domain Modeling",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.scala-lang.org/scala3/book/domain-modeling-tools.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Scala 3 Reference: Using Clauses",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.scala-lang.org/scala3/reference/contextual/using-clauses.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -29133,8 +29274,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/scrum-framework.md",
@@ -30884,19 +31027,56 @@
       "file": "content/computer-science/vite.md",
       "article_id": "kb-2026-00175",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Vite Documentation",
+          "source_title": "Vite Guide: Why Vite",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://vitejs.dev/",
+              "identifier": "https://vite.dev/guide/why.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://vite.dev/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Vite Guide: Features",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://vite.dev/guide/features.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Vite Guide: Building for Production",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://vite.dev/guide/build.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -30904,8 +31084,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/vpn-virtual-private-network.md",
@@ -31450,70 +31632,20 @@
       "file": "content/computer-science/websocket-api.md",
       "article_id": "kb-2026-00088",
       "generation_method": "ai_structured",
-      "sources_total": 7,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The WebSocket API (W3C)",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.w3.org/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.w3.org/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Real-Time Web Communication: WebSocket, WebRTC, and Server-Sent Events (2025 Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.oreilly.com/library/view/high-performance-browser/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/library/view/high-performance-browser/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "A Survey of Real-Time Communication Protocols (2025)",
-          "source_type": "survey_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.rtc",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.rtc"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "RFC 6455 — The WebSocket Protocol",
+          "source_title": "The WebSocket Protocol",
           "source_type": "rfc",
           "results": [
             {
               "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc6455",
+              "identifier": "https://www.rfc-editor.org/rfc/rfc6455",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc6455"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -31521,16 +31653,17 @@
           "all_verified": true
         },
         {
-          "source_title": "The WebSocket API — W3C Living Standard",
-          "source_type": "standard",
+          "source_title": "WebSocket",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://websockets.spec.whatwg.org/",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/WebSocket",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://websockets.spec.whatwg.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -31538,33 +31671,17 @@
           "all_verified": true
         },
         {
-          "source_title": "RFC 8441 — Bootstrapping WebSockets with HTTP/2",
-          "source_type": "rfc",
+          "source_title": "WebSocket: readyState property",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc8441",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/WebSocket/readyState",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc8441"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "The WebSocket Protocol — RFC 6455 Implementation Report",
-          "source_type": "rfc",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/rfc6455/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/rfc6455/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -31572,8 +31689,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 5,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/websocket.md",
@@ -31643,19 +31762,56 @@
       "file": "content/computer-science/xmlhttprequest.md",
       "article_id": "kb-2026-00082",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "XMLHttpRequest Living Standard",
-          "source_type": "standard",
+          "source_title": "XMLHttpRequest",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://xhr.spec.whatwg.org/",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://xhr.spec.whatwg.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "XMLHttpRequest: open() method",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/open",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "XMLHttpRequest: upload property",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/upload",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -31663,8 +31819,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/yaml.md",
@@ -41709,19 +41867,56 @@
       "file": "content/science/history-of-mathematics.md",
       "article_id": "kb-2026-00474",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "A History of Mathematics (Carl B. Boyer, Uta Merzbach, 3rd Ed)",
-          "source_type": "book",
+          "source_title": "Euclid's Elements",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.wiley.com/en-us/A+History+of+Mathematics%2C+3rd+Edition-p-9780470525487",
+              "identifier": "https://www.britannica.com/topic/Euclids-Elements",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.wiley.com/en-us/A+History+of+Mathematics%2C+3rd+Edition-p-9780470525487"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Zero",
+          "source_type": "encyclopedia",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/science/zero-mathematics",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Calculus",
+          "source_type": "encyclopedia",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/science/calculus-mathematics",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -41729,8 +41924,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/history-of-medicine.md",
@@ -41964,19 +42161,56 @@
       "file": "content/science/human-memory.md",
       "article_id": "kb-2026-00489",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Seven Sins of Memory (Daniel Schacter)",
-          "source_type": "book",
+          "source_title": "The Seven Sins of Memory: Insights from Psychology and Cognitive Neuroscience",
+          "source_type": "journal_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.harpercollins.com/products/the-seven-sins-of-memory-daniel-l-schacter",
+              "identifier": "https://doi.org/10.1037/0003-066X.54.3.182",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.harpercollins.com/products/the-seven-sins-of-memory-daniel-l-schacter"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The magical number 4 in short-term memory: A reconsideration of mental storage capacity",
+          "source_type": "journal_article",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1017/S0140525X01003922",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Working memory",
+          "source_type": "journal_article",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1126/science.1736359",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -41984,8 +42218,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/immune-system-innate-vs-adaptive-immunity-t-cells-and-b-cells.md",

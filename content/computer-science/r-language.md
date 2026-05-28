@@ -1,79 +1,70 @@
 ---
-id: "kb-2026-00308"
-title: "R Language"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00308
+title: R Language
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "R is a statistical computing and graphics language created by Ross Ihaka and Robert Gentleman"
-    source_title: "R Documentation"
-    source_url: "https://www.r-project.org/"
-    confidence: "medium"
-  - id: "fact-computer-science-02"
-    statement: "It is the dominant language in statistics, bioinformatics, and academic research"
-    source_title: "R Documentation"
-    source_url: "https://www.r-project.org/"
-    confidence: "medium"
-
+  - id: fact-computer-science-01
+    statement: R is an environment for statistical computing and graphics.
+    source_title: An Introduction to R
+    source_url: https://cran.r-project.org/doc/manuals/r-release/R-intro.html
+    confidence: medium
+  - id: fact-computer-science-02
+    statement: The R FAQ describes R as a language and environment for statistical computing and graphics.
+    source_title: The R FAQ
+    source_url: https://cran.r-project.org/doc/FAQ/R-FAQ.html
+    confidence: medium
+  - id: fact-computer-science-03
+    statement: CRAN maintains an index of contributed R packages available by package name.
+    source_title: CRAN Packages By Name
+    source_url: https://cran.r-project.org/web/packages/available_packages_by_name.html
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - Version-specific language behavior and package ecosystem changes
+  - Production deployment patterns for R beyond exploratory analysis
+disputed_statements: []
 primary_sources:
-  - title: "R Documentation"
-    type: "documentation"
+  - title: An Introduction to R
+    type: documentation
     year: 2026
-    url: "https://www.r-project.org/"
-    institution: "R Foundation"
-
-secondary_sources:
-  - title: "R for Data Science (2nd Edition)"
-    authors: ["Wickham, Hadley", "Cetinkaya-Rundel, Mine", "Grolemund, Garrett"]
-    type: "book"
-    year: 2023
-    url: "https://r4ds.hadley.nz/"
-    institution: "O'Reilly"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    institution: R Core Team
+    url: https://cran.r-project.org/doc/manuals/r-release/R-intro.html
+  - title: The R FAQ
+    type: documentation
+    year: 2026
+    institution: R Core Team
+    url: https://cran.r-project.org/doc/FAQ/R-FAQ.html
+  - title: CRAN Packages By Name
+    type: package_index
+    year: 2026
+    institution: Comprehensive R Archive Network
+    url: https://cran.r-project.org/web/packages/available_packages_by_name.html
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
-
 ## TL;DR
-
-R is a statistical computing and graphics language created by Ross Ihaka and Robert Gentleman (1993). It is the dominant language in statistics, bioinformatics, and academic research. CRAN hosts 20,000+ packages. Key libraries: ggplot2 (visualization), dplyr (data manipulation), tidyr, caret (ML).
+R is a programming language and environment for statistical computing, graphics, data analysis, and research workflows. Its strength comes from an interactive language plus a large package ecosystem.
 
 ## Core Explanation
+R supports vectors, data frames, functions, modeling, statistical tests, graphics, and package-based extension. It is commonly used for exploratory analysis, reproducible reports, statistical modeling, and domain-specific research pipelines.
 
-Data frames: R's native tabular structure. `dplyr`: `filter()`, `select()`, `mutate()`, `summarise()`, `group_by()` — grammar of data manipulation. `ggplot2`: layered grammar of graphics — `ggplot(data, aes(x,y)) + geom_point()`. R Markdown: executable documents (code + prose). Shiny: interactive web apps in pure R.
+## Detailed Analysis
+Broad adoption claims are hard to verify without a specific measurement. Public evidence is stronger when it points to official manuals, FAQ material, and package indexes, and avoids unsupported rankings or popularity claims.
 
 ## Further Reading
-
-- [R Documentation](https://www.r-project.org/)
+- An Introduction to R
+- The R FAQ
+- CRAN package index
 
 ## Related Articles
 
