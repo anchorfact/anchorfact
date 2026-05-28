@@ -4,9 +4,9 @@ title: Silk Road
 schema_type: TechArticle
 category: history
 language: en
-confidence: medium
-last_verified: '2026-05-25'
-created_date: '2026-05-22'
+confidence: low
+last_verified: "2026-05-28"
+created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -14,42 +14,43 @@ derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
+completeness: 0.72
 atomic_facts:
   - id: fact-history-001
-    statement: The Silk Road was not a single road but a set of overland and maritime exchange routes linking regions across Eurasia.
-    source_title: 'The Silk Roads: A New History of the World (Peter Frankopan)'
-    source_url: https://www.bloomsbury.com/us/silk-roads-9781408839973/
-    confidence: medium
+    statement: "Peter Frankopan's The Silk Roads frames Eurasian connections as central to world history."
+    source_title: "The Silk Roads: A New History of the World (Peter Frankopan)"
+    source_url: "https://www.bloomsbury.com/us/silk-roads-9781408839973/"
+    confidence: low
   - id: fact-history-002
-    statement: Silk Road exchange moved more than luxury goods; technologies, religions, artistic styles, and diseases also traveled across the network.
-    source_title: 'The Silk Roads: A New History of the World (Peter Frankopan)'
-    source_url: https://www.bloomsbury.com/us/silk-roads-9781408839973/
-    confidence: medium
+    statement: "A cautious Silk Road primer can describe the subject as networks of exchange rather than one literal road."
+    source_title: "The Silk Roads: A New History of the World (Peter Frankopan)"
+    source_url: "https://www.bloomsbury.com/us/silk-roads-9781408839973/"
+    confidence: low
   - id: fact-history-003
-    statement: Frankopan frames Eurasian connections as central to world history rather than peripheral routes between Europe and Asia.
-    source_title: 'The Silk Roads: A New History of the World (Peter Frankopan)'
-    source_url: https://www.bloomsbury.com/us/silk-roads-9781408839973/
-    confidence: medium
-completeness: 0.88
+    statement: "The source supports an introductory focus on long-distance movement of goods, ideas, religions, technologies, and political influence across Eurasia."
+    source_title: "The Silk Roads: A New History of the World (Peter Frankopan)"
+    source_url: "https://www.bloomsbury.com/us/silk-roads-9781408839973/"
+    confidence: low
 known_gaps:
-  - Statistics and data cited are from 2015 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
+  - "This is a low-confidence primer backed by one broad world-history source."
+  - "Route-specific chronology, archaeological evidence, and regional trade data require narrower sources."
+disputed_statements: []
 primary_sources:
-  - title: 'The Silk Roads: A New History of the World (Peter Frankopan)'
+  - title: "The Silk Roads: A New History of the World (Peter Frankopan)"
     type: book
     year: 2015
-    url: https://www.bloomsbury.com/us/silk-roads-9781408839973/
+    url: "https://www.bloomsbury.com/us/silk-roads-9781408839973/"
     institution: Bloomsbury
 secondary_sources: []
 ---
 
 ## TL;DR
 
-The Silk Road was not a single road but a set of overland and maritime exchange routes linking regions across Eurasia. It moved luxury goods alongside technologies, religions, artistic styles, political ideas, and diseases.
+The Silk Road is better understood as a set of connected exchange networks than as one literal road. This low-confidence primer uses one broad world-history source to introduce Eurasian movement of goods, ideas, religions, technologies, and political influence.
 
 ## Core Explanation
 
-Goods such as silk, spices, ceramics, precious stones, and paper moved through connected markets. The routes also linked cities, empires, and religious communities, making Eurasian exchange a major driver of medieval and early modern world history.
+Frankopan's The Silk Roads emphasizes the centrality of Eurasian connections. A compact public summary can safely describe the Silk Road as a networked history of exchange, but it should avoid precise claims about all routes, dates, or commodities without dedicated regional sources.
 
 ## Further Reading
 

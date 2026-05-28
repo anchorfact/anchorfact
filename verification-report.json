@@ -17677,7 +17677,10 @@
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://yalebooks.yale.edu/book/9780300115468/existentialism-is-a-humanism/"
+                "final_url": "https://yalebooks.yale.edu/book/9780300115468/existentialism-is-a-humanism/",
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fiftieth targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -17686,7 +17689,9 @@
         }
       ],
       "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/arts/fashion-history.md",
@@ -18092,16 +18097,19 @@
       "sources_total": 1,
       "verification_results": [
         {
-          "source_title": "Consciousness Explained (Daniel Dennett)",
-          "source_type": "book",
+          "source_title": "Stanford Encyclopedia of Philosophy: Mind",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.hachettebookgroup.com/titles/daniel-c-dennett/consciousness-explained/9780316180658/",
+              "identifier": "https://plato.stanford.edu/entries/mind/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://www.hachettebookgroup.com/"
+                "final_url": "https://plato.stanford.edu/entries/mind/",
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fiftieth targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -18110,7 +18118,9 @@
         }
       ],
       "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/arts/philosophy-of-science.md",
@@ -43495,9 +43505,11 @@
               "identifier": "https://www.penguinrandomhouse.com/books/292021/the-scientists-by-john-gribbin/",
               "verified": true,
               "metadata": {
+                "status": 200,
+                "final_url": "https://www.penguinrandomhouse.com/books/292021/the-scientists-by-john-gribbin/",
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+                "note": "Fiftieth targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -43878,9 +43890,11 @@
               "identifier": "https://www.bloomsbury.com/us/silk-roads-9781408839973/",
               "verified": true,
               "metadata": {
+                "status": 200,
+                "final_url": "https://www.bloomsbury.com/us/silk-roads-9781408839973/",
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+                "note": "Fiftieth targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -45677,7 +45691,10 @@
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://www.harpercollins.com/products/the-language-instinct-steven-pinker"
+                "final_url": "https://www.harpercollins.com/products/the-language-instinct-steven-pinker",
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fiftieth targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -45686,7 +45703,9 @@
         }
       ],
       "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/exoplanets-detection-methods-habitable-zones-and-biosignatures.md",

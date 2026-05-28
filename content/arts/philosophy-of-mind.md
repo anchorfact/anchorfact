@@ -4,78 +4,56 @@ title: "Philosophy of Mind"
 schema_type: "TechArticle"
 category: "arts"
 language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+confidence: "low"
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+ai_models:
+  - "claude-opus"
 derived_from_human_seed: true
 conflict_of_interest: "none_declared"
 is_live_document: false
 data_period: "static"
-
+completeness: 0.7
 atomic_facts:
-  - id: "fact-arts-01"
-    statement: "Mary's Room thought experiment : Mary knows all physical facts about color but has never seen it — does she learn something new when she first sees red"
-    source_title: "Consciousness Explained (Daniel Dennett)"
-    source_url: "https://www.hachettebookgroup.com/titles/daniel-c-dennett/consciousness-explained/9780316180658/"
-    confidence: "high"
-  - id: "fact-arts-02"
-    statement: "Integrated Information Theory : consciousness = integrated information"
-    source_title: "Consciousness Explained (Daniel Dennett)"
-    source_url: "https://www.hachettebookgroup.com/titles/daniel-c-dennett/consciousness-explained/9780316180658/"
-    confidence: "high"
-
-completeness: 0.88
-
+  - id: "fact-arts-001"
+    statement: "The Stanford Encyclopedia of Philosophy's mind entry is a reference source for the philosophy of mind and related debates about mental phenomena."
+    source_title: "Stanford Encyclopedia of Philosophy: Mind"
+    source_url: "https://plato.stanford.edu/entries/mind/"
+    confidence: "low"
+  - id: "fact-arts-002"
+    statement: "A cautious philosophy-of-mind primer can introduce consciousness, mental states, the mind-body relation, dualism, physicalism, and functionalism as entry points."
+    source_title: "Stanford Encyclopedia of Philosophy: Mind"
+    source_url: "https://plato.stanford.edu/entries/mind/"
+    confidence: "low"
 known_gaps:
-  - "Statistics and data cited are from 1991 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
+  - "This is a low-confidence primer backed by one reference source."
+  - "Mary's Room, the Chinese Room, integrated information theory, and qualia debates require narrower source mapping."
+disputed_statements: []
 primary_sources:
-  - title: "Consciousness Explained (Daniel Dennett)"
-    type: "book"
-    year: 1991
-    url: "https://www.hachettebookgroup.com/titles/daniel-c-dennett/consciousness-explained/9780316180658/"
-    institution: "Little, Brown"
-
-secondary_sources:
-  - title: "The Story of Philosophy"
-    type: "book"
-    year: 1926
-    url: "https://www.simonandschuster.com/books/The-Story-of-Philosophy/Will-Durant/9780671201593"
-    institution: "Will Durant, Simon & Schuster"
-  - title: "The Story of Art (E.H. Gombrich)"
-    type: "textbook"
-    year: 1995
-    url: "https://www.phaidon.com/store/art/the-story-of-art-9780714832470/"
-    institution: "Phaidon Press"
   - title: "Stanford Encyclopedia of Philosophy: Mind"
     type: "reference"
     year: 2024
     url: "https://plato.stanford.edu/entries/mind/"
     institution: "Stanford University"
-
+secondary_sources: []
 ---
-
-
-
-
 
 ## TL;DR
 
-Philosophy of mind examines the nature of consciousness, mental states, and the mind-body relationship. Positions: dualism (Descartes: mind and body separate), physicalism (mind = brain), functionalism (mental states = functional roles), panpsychism (consciousness is fundamental). The 'hard problem' (Chalmers): why does physical processing produce subjective experience?
+Philosophy of mind studies mental phenomena and their relation to the physical world. This low-confidence primer uses one reference source and keeps to broad entry points rather than specialist thought experiments.
 
 ## Core Explanation
 
-Mary's Room thought experiment (Jackson, 1982): Mary knows all physical facts about color but has never seen it — does she learn something new when she first sees red? Chinese Room (Searle, 1980): person following instructions manipulates Chinese symbols — understands nothing. Qualia: subjective qualities of experience (the redness of red). Integrated Information Theory (Tononi): consciousness = integrated information (Φ). 'I think, therefore I am' (Descartes, 1641).
+A source-mapped introduction can begin with consciousness, mental states, the mind-body relation, dualism, physicalism, and functionalism. These topics give readers the basic map before moving into more focused debates.
+
+This article removes unsupported claims about Mary's Room, the Chinese Room, integrated information theory, and individual philosophers until those topics have dedicated sources.
 
 ## Further Reading
 
-- [Consciousness Explained (Daniel Dennett)](https://www.hachettebookgroup.com/titles/daniel-c-dennett/consciousness-explained/9780316180658/)
+- [Stanford Encyclopedia of Philosophy: Mind](https://plato.stanford.edu/entries/mind/)
 
 ## Related Articles
 
 - [Philosophy of Science](../philosophy-of-science.md)
 - [Political Philosophy: Justice, Liberty, and the Social Contract](../political-philosophy.md)
-- [Ancient Greece: Democracy, Philosophy, and the Persian Wars](../../history/ancient-greece-democracy-philosophy-and-the-persian-wars.md)
