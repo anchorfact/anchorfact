@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 342,
     "average_sources_per_article": "2.3",
-    "overall_verification_rate": "71.2%",
+    "overall_verification_rate": "71.4%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 336
+    "manual_reviewed_articles": 346
   },
   "articles": [
     {
@@ -22651,19 +22651,56 @@
       "file": "content/computer-science/content-security-policy-csp.md",
       "article_id": "kb-2026-00093",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Content Security Policy Level 2 (W3C Recommendation)",
+          "source_title": "Content Security Policy (CSP) - HTTP | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Content Security Policy Level 3",
           "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.w3.org/TR/CSP2/",
+              "identifier": "https://www.w3.org/TR/CSP3/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.w3.org/TR/CSP2/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Content Security Policy Cheat Sheet",
+          "source_type": "security_guidance",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -22671,8 +22708,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/continuous-integration.md",
@@ -22947,10 +22986,28 @@
       "file": "content/computer-science/css-grid.md",
       "article_id": "kb-2026-00167",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "CSS Grid Layout Module Level 2 (W3C Candidate Recommendation)",
+          "source_title": "CSS grid layout - CSS | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "CSS Grid Layout Module Level 2",
           "source_type": "standard",
           "results": [
             {
@@ -22958,8 +23015,27 @@
               "identifier": "https://www.w3.org/TR/css-grid-2/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.w3.org/TR/css-grid-2/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Learn CSS: Grid",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://web.dev/learn/css/grid",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -22967,8 +23043,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/css.md",
@@ -23737,10 +23815,10 @@
       "file": "content/computer-science/device-orientation-api.md",
       "article_id": "kb-2026-00110",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "DeviceOrientation Event Specification (W3C)",
+          "source_title": "Device Orientation and Motion",
           "source_type": "standard",
           "results": [
             {
@@ -23748,8 +23826,45 @@
               "identifier": "https://www.w3.org/TR/orientation-event/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.w3.org/TR/orientation-event/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "DeviceOrientationEvent - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "DeviceMotionEvent - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/DeviceMotionEvent",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -23757,8 +23872,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/digital-signal-processing-sampling-fourier-transform-and-filter-design.md",
@@ -25400,19 +25517,56 @@
       "file": "content/computer-science/github-actions.md",
       "article_id": "kb-2026-00163",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "GitHub Actions Documentation",
+          "source_title": "Understanding GitHub Actions",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.github.com/en/actions",
+              "identifier": "https://docs.github.com/en/actions/about-github-actions/understanding-github-actions",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/actions"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Workflow syntax for GitHub Actions",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "About GitHub-hosted runners",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -25420,8 +25574,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/gitops.md",
@@ -27289,19 +27445,56 @@
       "file": "content/computer-science/laravel.md",
       "article_id": "kb-2026-00293",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Laravel Documentation",
+          "source_title": "Installation - Laravel",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://laravel.com/docs/",
+              "identifier": "https://laravel.com/docs/12.x/installation",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://laravel.com/docs/13.x"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Routing - Laravel",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://laravel.com/docs/12.x/routing",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Eloquent: Getting Started - Laravel",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://laravel.com/docs/12.x/eloquent",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -27309,8 +27502,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/linear-algebra.md",
@@ -27964,19 +28159,20 @@
       "file": "content/computer-science/mongodb.md",
       "article_id": "kb-2026-00072",
       "generation_method": "human_only",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "MongoDB Documentation",
+          "source_title": "MongoDB Manual",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.mongodb.com/docs/",
+              "identifier": "https://www.mongodb.com/docs/manual/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.mongodb.com/docs/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -27984,16 +28180,35 @@
           "all_verified": true
         },
         {
-          "source_title": "MongoDB GitHub",
-          "source_type": "repository",
+          "source_title": "Documents",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://github.com/mongodb/mongo",
+              "identifier": "https://www.mongodb.com/docs/manual/core/document/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/mongodb/mongo"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "CRUD Operations",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.mongodb.com/docs/manual/crud/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -28001,8 +28216,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/monitoring-and-observability.md",
@@ -28421,7 +28638,7 @@
       "file": "content/computer-science/nomad-hashicorp.md",
       "article_id": "kb-2026-00321",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
           "source_title": "Nomad Documentation",
@@ -28432,8 +28649,45 @@
               "identifier": "https://developer.hashicorp.com/nomad/docs",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://developer.hashicorp.com/nomad/docs"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Job Specification",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.hashicorp.com/nomad/docs/job-specification",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Scheduling",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.hashicorp.com/nomad/docs/concepts/scheduling",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -28441,8 +28695,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/nosql-database-types.md",
@@ -29179,19 +29435,56 @@
       "file": "content/computer-science/page-visibility-api.md",
       "article_id": "kb-2026-00107",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Page Visibility (W3C)",
+          "source_title": "Page Visibility API - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Document: visibilityState property - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Document/visibilityState",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Page Visibility Level 2",
           "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.w3.org/TR/page-visibility/",
+              "identifier": "https://www.w3.org/TR/page-visibility-2/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://html.spec.whatwg.org/multipage/interaction.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -29199,8 +29492,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/pair-programming.md",
@@ -29567,19 +29862,56 @@
       "file": "content/computer-science/pointer-lock-api.md",
       "article_id": "kb-2026-00106",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Pointer Lock (W3C Recommendation)",
+          "source_title": "Pointer Lock API - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Pointer_Lock_API",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Element: requestPointerLock() method - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Element/requestPointerLock",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pointer Lock 2.0",
           "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.w3.org/TR/pointerlock/",
+              "identifier": "https://www.w3.org/TR/pointerlock-2/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.w3.org/TR/pointerlock/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -29587,8 +29919,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/postgresql.md",
@@ -30580,19 +30914,56 @@
       "file": "content/computer-science/ruby-language.md",
       "article_id": "kb-2026-00304",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Ruby Documentation",
+          "source_title": "About Ruby",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.ruby-lang.org/en/documentation/",
+              "identifier": "https://www.ruby-lang.org/en/about/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.ruby-lang.org/en/documentation/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Ruby in Twenty Minutes",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.ruby-lang.org/en/documentation/quickstart/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Ruby Syntax",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.ruby-lang.org/en/master/syntax_rdoc.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fortieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -30600,8 +30971,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/ruby-on-rails.md",

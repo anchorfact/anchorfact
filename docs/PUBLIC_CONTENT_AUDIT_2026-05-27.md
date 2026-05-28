@@ -1,6 +1,6 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T11:43:11.035Z
+Generated: 2026-05-28T11:52:56.337Z
 
 Snapshot: 555 public / 445 draft / 1652 claims.
 
@@ -13,7 +13,7 @@ This is a risk-weighted audit sample of public AnchorFact articles. It is intend
 - Articles with at least one fail check: 0
 - High-confidence samples needing review: 0
 - Claim-evidence failures: 0
-- Recommendations: keep_public: 10, downgrade_confidence: 0, repair_sources: 10, move_to_draft: 0
+- Recommendations: keep_public: 11, downgrade_confidence: 0, repair_sources: 9, move_to_draft: 0
 
 ## Method
 
@@ -33,16 +33,16 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 8 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 9 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 10 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 11 | risk_fallback | `computer-science/content-security-policy-csp` | medium | 1/1 (100.0%) | 3 | source=pass; claim=pass; summary=pass | repair_sources |
-| 12 | risk_fallback | `computer-science/css-grid` | medium | 1/1 (100.0%) | 3 | source=pass; claim=pass; summary=pass | repair_sources |
-| 13 | risk_fallback | `computer-science/device-orientation-api` | medium | 1/1 (100.0%) | 3 | source=pass; claim=pass; summary=pass | repair_sources |
-| 14 | risk_fallback | `computer-science/github-actions` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 15 | risk_fallback | `computer-science/laravel` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 16 | risk_fallback | `computer-science/mongodb` | low | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 17 | risk_fallback | `computer-science/nomad-hashicorp` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 18 | risk_fallback | `computer-science/page-visibility-api` | medium | 1/1 (100.0%) | 3 | source=pass; claim=pass; summary=pass | repair_sources |
-| 19 | risk_fallback | `computer-science/pointer-lock-api` | medium | 1/1 (100.0%) | 3 | source=pass; claim=pass; summary=pass | repair_sources |
-| 20 | risk_fallback | `computer-science/ruby-language` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 11 | risk_fallback | `computer-science/vault-hashicorp` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 12 | risk_fallback | `computer-science/web-storage-api` | medium | 1/1 (100.0%) | 3 | source=pass; claim=pass; summary=pass | repair_sources |
+| 13 | risk_fallback | `geography/international-trade` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 14 | risk_fallback | `health/nutrition-for-athletes` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 15 | risk_fallback | `health/posture-and-ergonomics` | medium | 1/1 (100.0%) | 3 | source=pass; claim=pass; summary=pass | repair_sources |
+| 16 | risk_fallback | `health/public-health-basics` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 17 | risk_fallback | `health/running-fundamentals` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 18 | risk_fallback | `health/stress-management` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 19 | risk_fallback | `science/climate-change` | medium | 4/5 (80.0%) | 3 | source=weak; claim=pass; summary=pass | keep_public |
+| 20 | risk_fallback | `science/human-brain-structure` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
 
 ## Article Findings
 
@@ -196,12 +196,27 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 11. Content Security Policy (CSP)
+### 11. Vault (HashiCorp)
 
-- canonical slug: `computer-science/content-security-policy-csp`
-- canonical URL: https://anchorfact.org/computer-science/content-security-policy-csp/
+- canonical slug: `computer-science/vault-hashicorp`
+- canonical URL: https://anchorfact.org/computer-science/vault-hashicorp/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.695)
+- confidence: `low` (verified_sources, score 0.5)
+- verified source coverage: 1/1 (100.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 12. Web Storage API
+
+- canonical slug: `computer-science/web-storage-api`
+- canonical URL: https://anchorfact.org/computer-science/web-storage-api/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.715)
 - verified source coverage: 1/1 (100.0%)
 - claims: 3 total, 0 capped, 0 missing evidence
 - quality reasons: none
@@ -211,10 +226,40 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 12. CSS Grid
+### 13. International Trade
 
-- canonical slug: `computer-science/css-grid`
-- canonical URL: https://anchorfact.org/computer-science/css-grid/
+- canonical slug: `geography/international-trade`
+- canonical URL: https://anchorfact.org/geography/international-trade/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.45)
+- verified source coverage: 1/1 (100.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 14. Nutrition for Athletes
+
+- canonical slug: `health/nutrition-for-athletes`
+- canonical URL: https://anchorfact.org/health/nutrition-for-athletes/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.45)
+- verified source coverage: 1/1 (100.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 15. Posture and Ergonomics
+
+- canonical slug: `health/posture-and-ergonomics`
+- canonical URL: https://anchorfact.org/health/posture-and-ergonomics/
 - bucket: `risk_fallback`
 - confidence: `medium` (verified_sources, score 0.735)
 - verified source coverage: 1/1 (100.0%)
@@ -226,117 +271,72 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 13. Device Orientation API
+### 16. Public Health Basics
 
-- canonical slug: `computer-science/device-orientation-api`
-- canonical URL: https://anchorfact.org/computer-science/device-orientation-api/
+- canonical slug: `health/public-health-basics`
+- canonical URL: https://anchorfact.org/health/public-health-basics/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.735)
+- confidence: `low` (verified_sources, score 0.45)
 - verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 0 capped, 0 missing evidence
+- claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: none
 - source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 17. Running Fundamentals
+
+- canonical slug: `health/running-fundamentals`
+- canonical URL: https://anchorfact.org/health/running-fundamentals/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.47)
+- verified source coverage: 1/1 (100.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 18. Stress Management
+
+- canonical slug: `health/stress-management`
+- canonical URL: https://anchorfact.org/health/stress-management/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.43)
+- verified source coverage: 1/1 (100.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 19. Climate Change
+
+- canonical slug: `science/climate-change`
+- canonical URL: https://anchorfact.org/science/climate-change/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.87)
+- verified source coverage: 4/5 (80.0%)
+- claims: 3 total, 0 capped, 0 missing evidence
+- quality reasons: partial_source_verification
+- source-title match: `weak`
 - claim-evidence match: `pass`
 - title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
+- hygiene flags: none
+- recommendation: `keep_public`
 
-### 14. GitHub Actions
+### 20. Human Brain Structure
 
-- canonical slug: `computer-science/github-actions`
-- canonical URL: https://anchorfact.org/computer-science/github-actions/
+- canonical slug: `science/human-brain-structure`
+- canonical URL: https://anchorfact.org/science/human-brain-structure/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 15. Laravel
-
-- canonical slug: `computer-science/laravel`
-- canonical URL: https://anchorfact.org/computer-science/laravel/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 16. MongoDB
-
-- canonical slug: `computer-science/mongodb`
-- canonical URL: https://anchorfact.org/computer-science/mongodb/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.51)
-- verified source coverage: 2/2 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 17. Nomad (HashiCorp)
-
-- canonical slug: `computer-science/nomad-hashicorp`
-- canonical URL: https://anchorfact.org/computer-science/nomad-hashicorp/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 18. Page Visibility API
-
-- canonical slug: `computer-science/page-visibility-api`
-- canonical URL: https://anchorfact.org/computer-science/page-visibility-api/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.735)
-- verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 19. Pointer Lock API
-
-- canonical slug: `computer-science/pointer-lock-api`
-- canonical URL: https://anchorfact.org/computer-science/pointer-lock-api/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.695)
-- verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 20. Ruby Language
-
-- canonical slug: `computer-science/ruby-language`
-- canonical URL: https://anchorfact.org/computer-science/ruby-language/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
+- confidence: `low` (verified_sources, score 0.47)
 - verified source coverage: 1/1 (100.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: none

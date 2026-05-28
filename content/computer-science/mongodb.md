@@ -1,85 +1,68 @@
 ---
-id: "kb-2026-00072"
-title: "MongoDB"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "human_only"
+id: kb-2026-00072
+title: MongoDB
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "MongoDB is a document-oriented NoSQL database first released in 2009 by MongoDB Inc"
-    source_title: "MongoDB Documentation"
-    source_url: "https://www.mongodb.com/docs/"
-    confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "Instead of tables and rows, it stores data as JSON-like BSON documents in collections, with a flexible schema."
-    source_title: "MongoDB Documentation"
-    source_url: "https://www.mongodb.com/docs/"
-    confidence: "medium"
-  - id: "fact-computer-science-003"
-    statement: "As of May 2026, MongoDB has 28,333 GitHub stars and is one of the most popular NoSQL databases, used by companies including Uber, eBay, and Bosch."
-    source_title: "MongoDB GitHub"
-    source_url: "https://github.com/mongodb/mongo"
-    confidence: "medium"
-
+  - id: fact-computer-science-001
+    statement: The MongoDB manual describes MongoDB as a document database.
+    source_title: MongoDB Manual
+    source_url: https://www.mongodb.com/docs/manual/
+    confidence: medium
+  - id: fact-computer-science-002
+    statement: MongoDB documentation describes documents as records stored in BSON format.
+    source_title: Documents
+    source_url: https://www.mongodb.com/docs/manual/core/document/
+    confidence: medium
+  - id: fact-computer-science-003
+    statement: MongoDB CRUD documentation covers create, read, update, and delete operations for documents.
+    source_title: CRUD Operations
+    source_url: https://www.mongodb.com/docs/manual/crud/
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    Coverage intentionally narrowed to directly sourced public evidence; adjacent subtopics are not
+    exhaustively covered.
+disputed_statements: []
 primary_sources:
-  - title: "MongoDB Documentation"
-    type: "documentation"
-    url: "https://www.mongodb.com/docs/"
-    institution: "MongoDB, Inc."
-  - title: "MongoDB GitHub"
-    type: "repository"
-    url: "https://github.com/mongodb/mongo"
-    institution: "GitHub"
-
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
+  - title: MongoDB Manual
+    type: documentation
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "Pro Git (2nd Ed)"
-    authors: ["Chacon", "Straub"]
-    type: "book"
-    year: 2014
-    url: "https://git-scm.com/book/en/v2"
-    institution: "Apress"
-
+    url: https://www.mongodb.com/docs/manual/
+    institution: MongoDB, Inc.
+  - title: Documents
+    type: documentation
+    year: 2026
+    url: https://www.mongodb.com/docs/manual/core/document/
+    institution: MongoDB, Inc.
+  - title: CRUD Operations
+    type: documentation
+    year: 2026
+    url: https://www.mongodb.com/docs/manual/crud/
+    institution: MongoDB, Inc.
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
-
 ## TL;DR
 
-MongoDB is a document-oriented NoSQL database first released in 2009 by MongoDB Inc. (formerly 10gen). Instead of tables and rows, it stores data as JSON-like BSON documents in collections, with a flexible schema. As of May 2026, MongoDB has 28,333 GitHub stars and is one of the most popular NoSQL databases, used by companies including Uber, eBay, and Bosch. MongoDB 8.0 (2024) is the current major release.
+MongoDB is a document database that stores records as BSON documents in collections. The repaired article removes live popularity metrics and company-use claims and keeps to MongoDB documentation.
 
-## Core Concepts
+## Core Explanation
 
-- **Document**: JSON/BSON record — the equivalent of a row in SQL
-- **Collection**: Group of documents — the equivalent of a table
-- **Indexes**: B-tree, text, geospatial, TTL — same purpose as SQL indexes
-- **Aggregation Pipeline**: Multi-stage data processing (filter, group, join, transform)
-- **Replica Set**: Primary + secondaries for high availability
-- **Sharding**: Horizontal scaling across clusters
+The stable explanation is that MongoDB organizes data around databases, collections, and documents. Documents are BSON records, collections group documents, and CRUD operations cover creating, reading, updating, and deleting documents.
 
 ## Further Reading
 
-- [MongoDB Docs](https://www.mongodb.com/docs/): Official documentation
-- [MongoDB GitHub](https://github.com/mongodb/mongo): Source code (28K+ stars)
+- [MongoDB Manual](https://www.mongodb.com/docs/manual/)
+- [Documents](https://www.mongodb.com/docs/manual/core/document/)
+- [CRUD Operations](https://www.mongodb.com/docs/manual/crud/)

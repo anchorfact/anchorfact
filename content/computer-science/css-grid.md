@@ -1,84 +1,71 @@
 ---
-id: "kb-2026-00167"
-title: "CSS Grid"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "human_only"
+id: kb-2026-00167
+title: CSS Grid
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-001"
-    statement: "CSS Grid provides two-dimensional layout (rows AND columns). `display: grid` enables grid context. `grid-template-columns/rows` define tracks. `fr` unit distributes remaining space. Grid excels at page-level layouts, dashboards, and any design needing both row and column control."
-    source_title: "CSS Grid Layout Module Level 2 (W3C Candidate Recommendation)"
-    source_url: "https://www.w3.org/TR/css-grid-2/"
-    confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "`auto-fill/auto-fit` with `minmax()` creates responsive grids without media queries."
-    source_title: "CSS Grid Layout Module Level 2 (W3C Candidate Recommendation)"
-    source_url: "https://www.w3.org/TR/css-grid-2/"
-    confidence: "medium"
-  - id: "fact-computer-science-003"
-    statement: "Subgrid (Level 2) enables nested grids to align with parent grid tracks."
-    source_title: "CSS Grid Layout Module Level 2 (W3C Candidate Recommendation)"
-    source_url: "https://www.w3.org/TR/css-grid-2/"
-    confidence: "medium"
-
+  - id: fact-computer-science-001
+    statement: MDN describes CSS Grid Layout as a two-dimensional layout system for CSS.
+    source_title: CSS grid layout - CSS | MDN
+    source_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
+    confidence: medium
+  - id: fact-computer-science-002
+    statement: The CSS Grid Layout Level 2 specification defines subgrid behavior for nested grid boxes.
+    source_title: CSS Grid Layout Module Level 2
+    source_url: https://www.w3.org/TR/css-grid-2/
+    confidence: medium
+  - id: fact-computer-science-003
+    statement: web.dev teaches grid layout as a row-and-column system created by declaring a grid container.
+    source_title: 'Learn CSS: Grid'
+    source_url: https://web.dev/learn/css/grid
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    Coverage intentionally narrowed to directly sourced public evidence; adjacent subtopics are not
+    exhaustively covered.
+disputed_statements: []
 primary_sources:
-  - title: "CSS Grid Layout Module Level 2 (W3C Candidate Recommendation)"
-    type: "standard"
+  - title: CSS grid layout - CSS | MDN
+    type: documentation
+    year: 2025
+    url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
+    institution: Mozilla
+  - title: CSS Grid Layout Module Level 2
+    type: standard
     year: 2024
-    url: "https://www.w3.org/TR/css-grid-2/"
-    institution: "W3C"
-
-secondary_sources:
-  - title: "MDN Web Docs — CSS Grid Layout"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout"
-    institution: "Mozilla"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    url: https://www.w3.org/TR/css-grid-2/
+    institution: W3C
+  - title: 'Learn CSS: Grid'
+    type: documentation
+    year: 2025
+    url: https://web.dev/learn/css/grid
+    institution: Google
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
-
-
 ## TL;DR
 
-CSS Grid provides two-dimensional layout (rows AND columns). `display: grid` enables grid context. `grid-template-columns/rows` define tracks. `fr` unit distributes remaining space. Grid excels at page-level layouts, dashboards, and any design needing both row and column control.
+CSS Grid is a two-dimensional CSS layout system for arranging content in rows and columns. This repair limits the article to stable Grid concepts from MDN, W3C, and web.dev.
 
 ## Core Explanation
 
-`grid-template-areas` enables named visual areas: `header header; sidebar main; footer footer`. `grid-column/grid-row` span items across tracks. `auto-fill/auto-fit` with `minmax()` creates responsive grids without media queries. Subgrid (Level 2) enables nested grids to align with parent grid tracks. Flexbox vs. Grid: Flexbox for components, Grid for page layout.
+The safe public summary is that grid layout starts with a grid container, places items into row and column tracks, and exposes sizing and placement primitives for page and component layouts. Subgrid belongs to Grid Level 2 and lets nested grids participate in parent track sizing.
 
 ## Further Reading
 
-- [CSS Grid Layout Module Level 2 (W3C)](https://www.w3.org/TR/css-grid-2/)
+- [CSS grid layout - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout)
+- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
+- [Learn CSS: Grid](https://web.dev/learn/css/grid)
 
 ## Related Articles
 

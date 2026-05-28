@@ -1,82 +1,72 @@
 ---
-id: "kb-2026-00293"
-title: "Laravel"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "human_only"
+id: kb-2026-00293
+title: Laravel
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "Laravel is the most popular PHP web framework, known for elegant syntax and comprehensive ecosystem"
-    source_title: "Laravel Documentation"
-    source_url: "https://laravel.com/docs/"
-    confidence: "medium"
-  - id: "fact-computer-science-001"
-    statement: "Laravel (Taylor Otwell, 2011) is the most popular PHP web framework, known for elegant syntax and comprehensive ecosystem. Features: Eloquent ORM, Blade templating, Artisan CLI, migrations, queues, broadcasting. Laravel ecosystem includes Forge (server management), Vapor (serverless), Nova (admin panel)."
-    source_title: "Laravel Documentation"
-    source_url: "https://laravel.com/docs/"
-    confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "Laravel 11 (2024): slimmer skeleton, SQLite by default, health routing."
-    source_title: "Laravel Documentation"
-    source_url: "https://laravel.com/docs/"
-    confidence: "medium"
-
+  - id: fact-computer-science-001
+    statement: Laravel documentation presents Laravel as a PHP framework for building web applications.
+    source_title: Installation - Laravel
+    source_url: https://laravel.com/docs/12.x/installation
+    confidence: medium
+  - id: fact-computer-science-002
+    statement: >-
+      Laravel routing documentation shows routes mapping incoming HTTP requests to application
+      responses.
+    source_title: Routing - Laravel
+    source_url: https://laravel.com/docs/12.x/routing
+    confidence: medium
+  - id: fact-computer-science-003
+    statement: >-
+      Laravel Eloquent documentation describes Eloquent as an object-relational mapper for
+      interacting with databases.
+    source_title: 'Eloquent: Getting Started - Laravel'
+    source_url: https://laravel.com/docs/12.x/eloquent
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    Coverage intentionally narrowed to directly sourced public evidence; adjacent subtopics are not
+    exhaustively covered.
+disputed_statements: []
 primary_sources:
-  - title: "Laravel Documentation"
-    type: "documentation"
+  - title: Installation - Laravel
+    type: documentation
     year: 2026
-    url: "https://laravel.com/docs/"
-    institution: "Laravel"
-
-secondary_sources:
-  - title: "Laravel: Up & Running (3rd Edition)"
-    authors: ["Stauffer, Matt"]
-    type: "book"
-    year: 2023
-    url: "https://www.oreilly.com/library/view/laravel-up/9781098153250/"
-    institution: "O'Reilly"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    url: https://laravel.com/docs/12.x/installation
+    institution: Laravel
+  - title: Routing - Laravel
+    type: documentation
+    year: 2026
+    url: https://laravel.com/docs/12.x/routing
+    institution: Laravel
+  - title: 'Eloquent: Getting Started - Laravel'
+    type: documentation
+    year: 2026
+    url: https://laravel.com/docs/12.x/eloquent
+    institution: Laravel
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
-
-
 ## TL;DR
 
-Laravel (Taylor Otwell, 2011) is the most popular PHP web framework, known for elegant syntax and comprehensive ecosystem. Features: Eloquent ORM, Blade templating, Artisan CLI, migrations, queues, broadcasting. Laravel ecosystem includes Forge (server management), Vapor (serverless), Nova (admin panel).
+Laravel is a PHP web application framework with official features for routing, database access, templating, queues, and tooling. This repair removes popularity and release-specific claims that were not directly evidenced.
 
 ## Core Explanation
 
-Eloquent ORM: `User::where('active', true)->get()` — fluent query building. Blade: `@if`, `@foreach`, `{{ $var }}` (auto-escaped). Artisan: `php artisan make:model`, `migrate`, `queue:work`. Service container and providers for dependency injection. Laravel 11 (2024): slimmer skeleton, SQLite by default, health routing.
+The source-backed overview is that Laravel provides an application framework, route definitions for HTTP entry points, and Eloquent ORM for working with databases through model classes. The article now cites Laravel documentation directly for each claim.
 
 ## Further Reading
 
-- [Laravel Documentation](https://laravel.com/docs/)
+- [Installation - Laravel](https://laravel.com/docs/12.x/installation)
+- [Routing - Laravel](https://laravel.com/docs/12.x/routing)
+- [Eloquent: Getting Started - Laravel](https://laravel.com/docs/12.x/eloquent)
