@@ -117,6 +117,7 @@ async function main() {
   assertOk(provenance.artifacts?.manifest_json?.sha256 === sha256Text(results['/manifest.json'].body), 'provenance manifest hash does not match /manifest.json', failures);
   assertOk(provenance.artifacts?.claims_json?.sha256 === sha256Text(results['/claims.json'].body), 'provenance claims hash does not match /claims.json', failures);
   assertOk(provenance.artifacts?.llms_txt?.sha256 === sha256Text(results['/llms.txt'].body), 'provenance llms hash does not match /llms.txt', failures);
+  assertOk(['signed', 'unsigned'].includes(provenance.signature?.status), `provenance signature status expected signed or unsigned, got ${provenance.signature?.status || '(missing)'}`, failures);
   assertOk(llmsText.trim().length > 0, '/llms.txt is empty', failures);
   assertOk(/noindex/i.test(draftsHtml), '/drafts.html is missing noindex', failures);
   headerIncludes(results['/'], 'X-Content-Type-Options', 'nosniff', failures);
@@ -152,6 +153,7 @@ async function main() {
   console.log(`claim_count=${manifest.claim_count}`);
   console.log(`provenance_builder=${provenance.build?.builder || 'unknown'}`);
   console.log(`provenance_commit_sha=${provenance.build?.commit_sha || 'unknown'}`);
+  console.log(`provenance_signature=${provenance.signature?.status || 'unknown'}`);
 
   if (failures.length > 0) {
     console.error('Smoke test failed:');

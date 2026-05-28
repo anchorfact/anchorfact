@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { generateKeyPairSync } from 'crypto';
 import {
   CLAIMS_SCHEMA_VERSION,
   MANIFEST_SCHEMA_VERSION,
@@ -6,6 +7,11 @@ import {
   OFFICIAL_SOURCE_REPOSITORY,
   PROVENANCE_SCHEMA_VERSION
 } from '../src/lib/build-metadata.js';
+import {
+  publicKeyFingerprint,
+  publicKeyId,
+  signProvenanceText
+} from '../src/lib/provenance-signature.js';
 import { sha256Text, verifyLiveProvenance } from '../src/lib/provenance-verify.js';
 
 let passed = 0, failed = 0;
@@ -55,6 +61,18 @@ function makeFetch(routes) {
   };
 }
 
+function fixtureSigningKey() {
+  const { privateKey, publicKey } = generateKeyPairSync('ed25519');
+  const privateKeyPem = privateKey.export({ type: 'pkcs8', format: 'pem' }).toString();
+  const publicKeyPem = publicKey.export({ type: 'spki', format: 'pem' }).toString();
+  return {
+    privateKeyPem,
+    publicKeyPem,
+    keyId: publicKeyId(publicKeyPem),
+    publicKeySha256: publicKeyFingerprint(publicKeyPem)
+  };
+}
+
 function buildFixture(overrides = {}) {
   const baseUrl = OFFICIAL_SITE;
   const manifest = {
@@ -91,6 +109,10 @@ function buildFixture(overrides = {}) {
       branch: 'main',
       build_id: 'https://1f96e004.anchorfact.pages.dev'
     },
+    signature: {
+      status: 'unsigned',
+      reason: 'signing_key_unavailable'
+    },
     content_counts: {
       articles: 3,
       public: 2,
@@ -124,18 +146,36 @@ function buildFixture(overrides = {}) {
       ...overrides.artifacts
     }
   };
+  if (overrides.signingKey) {
+    finalProvenance.signature = {
+      status: 'signed',
+      algorithm: 'Ed25519',
+      key_id: overrides.signingKey.keyId,
+      public_key_sha256: overrides.signingKey.publicKeySha256,
+      signature_url: `${baseUrl}/provenance.sig`
+    };
+  }
+  const provenanceText = JSON.stringify(finalProvenance, null, 2);
+  const signaturePayload = overrides.signingKey
+    ? signProvenanceText(provenanceText, overrides.signingKey, '2026-05-29T00:00:00.000Z')
+    : null;
+  const routes = {
+    [`${baseUrl}/provenance.json`]: { body: provenanceText },
+    [`${baseUrl}/manifest.json`]: { body: manifestText },
+    [`${baseUrl}/claims.json`]: { body: claimsText },
+    [`${baseUrl}/llms.txt`]: { body: llms, contentType: 'text/plain; charset=utf-8' },
+    'https://api.github.com/repos/anchorfact/anchorfact/commits/75b8761df7e7a92d63a204d456c2e553d299f48d': {
+      body: JSON.stringify({ sha: '75b8761df7e7a92d63a204d456c2e553d299f48d' })
+    }
+  };
+  if (signaturePayload) {
+    routes[`${baseUrl}/provenance.sig`] = { body: JSON.stringify(signaturePayload, null, 2) };
+  }
 
   return {
     baseUrl,
-    fetchImpl: makeFetch({
-      [`${baseUrl}/provenance.json`]: { body: JSON.stringify(finalProvenance, null, 2) },
-      [`${baseUrl}/manifest.json`]: { body: manifestText },
-      [`${baseUrl}/claims.json`]: { body: claimsText },
-      [`${baseUrl}/llms.txt`]: { body: llms, contentType: 'text/plain; charset=utf-8' },
-      'https://api.github.com/repos/anchorfact/anchorfact/commits/75b8761df7e7a92d63a204d456c2e553d299f48d': {
-        body: JSON.stringify({ sha: '75b8761df7e7a92d63a204d456c2e553d299f48d' })
-      }
-    })
+    fetchImpl: makeFetch(routes),
+    signingKey: overrides.signingKey
   };
 }
 
@@ -151,6 +191,33 @@ test('verifyLiveProvenance accepts matching official live artifacts', async () =
   assertEq(result.failures, []);
   assertEq(result.artifacts.manifest_json.ok, true);
   assertEq(result.commit.ok, true);
+  assertEq(result.signature.skipped, true);
+});
+
+test('verifyLiveProvenance verifies signed provenance with a trusted public key', async () => {
+  const signingKey = fixtureSigningKey();
+  const fixture = buildFixture({ signingKey });
+  const result = await verifyLiveProvenance({
+    baseUrl: fixture.baseUrl,
+    fetchImpl: fixture.fetchImpl,
+    requireSignature: true,
+    requireTrustedSignature: true,
+    trustedPublicKeys: [signingKey.publicKeyPem]
+  });
+  assertEq(result.ok, true);
+  assertEq(result.signature.ok, true);
+  assertEq(result.signature.trusted, true);
+});
+
+test('verifyLiveProvenance rejects unsigned provenance when a signature is required', async () => {
+  const fixture = buildFixture();
+  const result = await verifyLiveProvenance({
+    baseUrl: fixture.baseUrl,
+    fetchImpl: fixture.fetchImpl,
+    requireSignature: true
+  });
+  assertEq(result.ok, false);
+  assert(result.failures.some(failure => failure.includes('signature is required')), 'missing signature should fail');
 });
 
 test('verifyLiveProvenance rejects artifact hash mismatches', async () => {

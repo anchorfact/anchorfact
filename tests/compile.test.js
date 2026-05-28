@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import { execFileSync } from 'child_process';
+import { generateKeyPairSync } from 'crypto';
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'fs';
 import { join, resolve } from 'path';
 
@@ -31,6 +32,7 @@ console.log('AnchorFact Compile Tests\n');
 const root = resolve('tests/.tmp-compile');
 const contentDir = join(root, 'content');
 const distDir = join(root, 'dist');
+const signedDistDir = join(root, 'signed-dist');
 const reportPath = join(root, 'verification-report.json');
 
 rmSync(root, { recursive: true, force: true });
@@ -160,6 +162,8 @@ test('provenance.json describes compiled artifacts', () => {
   const provenance = JSON.parse(readFileSync(join(distDir, 'provenance.json'), 'utf-8'));
   assertEq(provenance.schema_version, 'anchorfact.provenance.v1');
   assertEq(provenance.official_site, 'https://anchorfact.org');
+  assertEq(provenance.signature.status, 'unsigned');
+  assert(!existsSync(join(distDir, 'provenance.sig')), 'provenance.sig should only be generated when a signing key is configured');
   assertEq(provenance.content_counts, {
     articles: 2,
     public: 1,
@@ -174,11 +178,33 @@ test('provenance.json describes compiled artifacts', () => {
   assert(provenance.artifacts.llms_txt.bytes > 0, 'llms artifact should include byte size');
 });
 
+test('provenance.sig is generated when a signing key is configured', () => {
+  const { privateKey } = generateKeyPairSync('ed25519');
+  const privateKeyPem = privateKey.export({ type: 'pkcs8', format: 'pem' }).toString();
+  execFileSync('node', ['src/compile.js', contentDir, signedDistDir, reportPath], {
+    stdio: 'pipe',
+    env: {
+      ...process.env,
+      ANCHORFACT_PROVENANCE_PRIVATE_KEY_PEM: privateKeyPem
+    }
+  });
+
+  const provenance = JSON.parse(readFileSync(join(signedDistDir, 'provenance.json'), 'utf-8'));
+  const signature = JSON.parse(readFileSync(join(signedDistDir, 'provenance.sig'), 'utf-8'));
+  assertEq(provenance.signature.status, 'signed');
+  assertEq(provenance.signature.algorithm, 'Ed25519');
+  assertEq(signature.schema_version, 'anchorfact.provenance-signature.v1');
+  assertEq(signature.signed_artifact, '/provenance.json');
+  assert(signature.public_key_pem.includes('BEGIN PUBLIC KEY'), 'signature should include public key PEM');
+  assert(/^[a-f0-9]{64}$/.test(signature.payload_sha256), 'signature should include payload sha256');
+});
+
 test('_headers is generated for Cloudflare Pages static output', () => {
   const headers = readFileSync(join(distDir, '_headers'), 'utf-8');
   assert(headers.includes('/*\n  X-Content-Type-Options: nosniff'), '_headers should include global security headers');
   assert(headers.includes('/manifest.json\n  Access-Control-Allow-Origin: *'), '_headers should expose manifest CORS');
   assert(headers.includes('/provenance.json\n  Access-Control-Allow-Origin: *'), '_headers should expose provenance CORS');
+  assert(headers.includes('/provenance.sig\n  Access-Control-Allow-Origin: *'), '_headers should expose provenance signature CORS');
   assert(headers.includes('/*/index.json\n  Access-Control-Allow-Origin: *'), '_headers should expose article JSON-LD CORS');
   assert(headers.includes('/drafts\n  X-Robots-Tag: noindex, nofollow'), '_headers should noindex extensionless drafts route');
   assert(headers.includes('/drafts.html\n  X-Robots-Tag: noindex, nofollow'), '_headers should noindex drafts.html route');

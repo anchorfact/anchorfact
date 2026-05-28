@@ -8,6 +8,10 @@ import {
   PROVENANCE_SCHEMA_VERSION,
   publicUrl
 } from './build-metadata.js';
+import {
+  PROVENANCE_SIGNATURE_PATH,
+  verifyProvenanceSignature
+} from './provenance-signature.js';
 
 const REQUIRED_ARTIFACTS = ['manifest_json', 'claims_json', 'llms_txt'];
 const OFFICIAL_GITHUB_COMMIT_API = 'https://api.github.com/repos/anchorfact/anchorfact/commits/';
@@ -99,6 +103,62 @@ async function verifyCommit(fetchImpl, provenance, failures) {
   return { ok: commitOk, sha };
 }
 
+async function verifySignature({
+  fetchImpl,
+  baseUrl,
+  provenanceText,
+  provenance,
+  trustedPublicKeys,
+  requireSignature,
+  requireTrustedSignature,
+  failures
+}) {
+  const signed = provenance.signature?.status === 'signed';
+  if (!signed && !requireSignature && !requireTrustedSignature) {
+    return {
+      ok: true,
+      trusted: false,
+      status: provenance.signature?.status || 'missing',
+      skipped: true
+    };
+  }
+
+  if (!signed) {
+    failures.push('provenance signature is required but provenance is unsigned');
+    return {
+      ok: false,
+      trusted: false,
+      status: provenance.signature?.status || 'missing'
+    };
+  }
+
+  const response = await fetchText(fetchImpl, routeUrl(baseUrl, PROVENANCE_SIGNATURE_PATH));
+  if (!response.ok) {
+    failures.push(`${PROVENANCE_SIGNATURE_PATH} fetch failed: HTTP ${response.status}`);
+    return {
+      ok: false,
+      trusted: false,
+      status: 'signed'
+    };
+  }
+
+  const signaturePayload = parseJson(response.text, PROVENANCE_SIGNATURE_PATH, failures);
+  const verified = verifyProvenanceSignature(provenanceText, signaturePayload, trustedPublicKeys);
+  for (const failure of verified.failures) {
+    failures.push(failure);
+  }
+  if (requireTrustedSignature && !verified.trusted) {
+    failures.push('signature is valid but not trusted by a configured public key');
+  }
+
+  return {
+    ...verified,
+    status: 'signed',
+    path: PROVENANCE_SIGNATURE_PATH,
+    url: routeUrl(baseUrl, PROVENANCE_SIGNATURE_PATH)
+  };
+}
+
 async function verifyArtifact({ key, artifact, baseUrl, fetchImpl, failures }) {
   if (!artifact || typeof artifact !== 'object') {
     failures.push(`${key} artifact is missing`);
@@ -161,7 +221,10 @@ export async function verifyLiveProvenance({
   baseUrl = OFFICIAL_SITE,
   fetchImpl = globalThis.fetch,
   requireOfficial = true,
-  verifyCommit: shouldVerifyCommit = true
+  verifyCommit: shouldVerifyCommit = true,
+  requireSignature = false,
+  requireTrustedSignature = false,
+  trustedPublicKeys = []
 } = {}) {
   if (typeof fetchImpl !== 'function') {
     throw new Error('verifyLiveProvenance requires a fetch implementation.');
@@ -204,6 +267,17 @@ export async function verifyLiveProvenance({
   checkEq(claims.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'claims provenance_url', failures);
   verifyCounts({ provenance, manifest, claims, failures });
 
+  const signature = await verifySignature({
+    fetchImpl,
+    baseUrl: normalizedBaseUrl,
+    provenanceText: provenanceResponse.text,
+    provenance,
+    trustedPublicKeys,
+    requireSignature,
+    requireTrustedSignature,
+    failures
+  });
+
   const commit = shouldVerifyCommit && requireOfficial
     ? await verifyCommit(fetchImpl, provenance, failures)
     : { ok: true, sha: provenance.build?.commit_sha || null, skipped: true };
@@ -214,6 +288,7 @@ export async function verifyLiveProvenance({
     failures,
     provenance,
     artifacts,
+    signature,
     commit
   };
 }

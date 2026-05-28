@@ -57,6 +57,14 @@ ANCHORFACT_SOURCE_REPOSITORY=https://github.com/anchorfact/anchorfact
 
 Forks should set these values to their own site and repository, or leave `ANCHORFACT_OFFICIAL_BUILD` unset.
 
+Optional provenance signing uses an Ed25519 private key supplied only through deployment secrets:
+
+```txt
+ANCHORFACT_PROVENANCE_PRIVATE_KEY_PEM=<secret PEM value>
+```
+
+Do not commit signing private keys. When this secret is configured, the build publishes `/provenance.sig`; without it, `/provenance.json` is marked unsigned.
+
 Do not run `npm run verify-full` inside the Cloudflare Pages build. Source verification is intentionally handled by GitHub Actions because it is slower and depends on external DOI, arXiv, and URL checks.
 
 The scheduled `Verification Snapshot` workflow runs weekly and can also be started manually from the GitHub Actions tab. It runs:
@@ -81,6 +89,12 @@ npm run verify:provenance
 The smoke test checks the homepage, `/manifest.json`, `/llms.txt`, `/claims.json`, `/provenance.json`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
 
 The provenance verifier fetches `/provenance.json`, recomputes SHA-256 checksums for the core AI entrypoints, checks public/draft/claim counts, confirms official build identity, and verifies the source commit against GitHub.
+
+When a signing public key is available, run the stricter check:
+
+```bash
+npm run verify:provenance -- --require-trusted-signature --public-key path/to/provenance.pub.pem
+```
 
 ## Content Model
 
@@ -108,6 +122,7 @@ Only public articles contribute publishable facts to `/claims.json`.
 | `/manifest.json` | Full public/draft index with quality reasons and verification metadata. |
 | `/claims.json` | Public verified atomic claims with evidence links. |
 | `/provenance.json` | Build identity, schema version, content counts, and artifact checksums. |
+| `/provenance.sig` | Optional detached Ed25519 signature for `/provenance.json`, emitted only when a signing key is configured. |
 | `/drafts.html` | Draft review index, marked `noindex`. |
 | `/{slug}/index.json` | JSON-LD article record with confidence and verification layer. |
 | `/{slug}/facts.json` | Per-article atomic facts, when present. |
@@ -120,7 +135,7 @@ Consumers can independently verify the live canonical build with:
 npm run verify:provenance
 ```
 
-Forks can run the same verifier with `--allow-unofficial --skip-commit` while they establish their own source repository and release identity.
+Forks can run the same verifier with `--allow-unofficial --skip-commit` while they establish their own source repository and release identity. Signed forks should use their own signing keys and publish their own public key.
 
 ## MCP and Local API
 
@@ -160,7 +175,7 @@ Public hygiene checks are shared by the compiler, quality gate, and audit script
 | `npm run pages:build` | Runs quality and build for Cloudflare Pages. |
 | `npm run pipeline` | Runs verify, quality, and build. |
 | `npm run smoke:prod` | Checks the live production machine-readable endpoints. |
-| `npm run verify:provenance` | Verifies live provenance identity, artifact checksums, counts, and source commit. |
+| `npm run verify:provenance` | Verifies live provenance identity, artifact checksums, counts, source commit, and optional signature. |
 | `npm run audit-public-sample` | Regenerates the 20-article public content audit report. |
 | `npm run audit-public-full` | Fails if any public article has an actionable audit recommendation. |
 | `npm run repo:hygiene` | Checks for stale root snapshots, mojibake, old launch metrics, and tracked generated files. |

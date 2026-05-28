@@ -15,6 +15,7 @@ AnchorFact optimizes for trustworthy, source-backed claims. Keep changes small, 
 - Prefer small PRs with a clear test surface.
 - Keep generated `dist/` output out of commits.
 - Preserve public output contracts for `/manifest.json`, `/claims.json`, `/provenance.json`, article JSON-LD, and `llms.txt`.
+- Never commit provenance signing private keys. Signing keys belong in deployment secrets only.
 - Add tests for new behavior before or alongside the implementation.
 
 ## Local Checks

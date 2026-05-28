@@ -102,13 +102,14 @@ export function artifactInfo(distDir, relativePath) {
   };
 }
 
-export function buildProvenance({ manifest, claimsPayload, distDir, generated, build }) {
+export function buildProvenance({ manifest, claimsPayload, distDir, generated, build, signature }) {
   return {
     schema_version: PROVENANCE_SCHEMA_VERSION,
     generated,
     official_source_repository: OFFICIAL_SOURCE_REPOSITORY,
     official_site: OFFICIAL_SITE,
     build,
+    signature,
     verification_report: manifest.verification_report,
     content_counts: {
       articles: manifest.article_count,

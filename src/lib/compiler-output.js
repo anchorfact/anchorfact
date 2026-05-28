@@ -10,6 +10,12 @@ import {
   buildProvenance,
   publicUrl
 } from './build-metadata.js';
+import {
+  PROVENANCE_SIGNATURE_PATH,
+  signatureMetadataForKey,
+  signProvenanceText,
+  signingKeyInfoFromEnv
+} from './provenance-signature.js';
 
 function articleLink(result) {
   const slug = result._quality.canonicalSlug;
@@ -225,6 +231,11 @@ function writeHeaders(distDir) {
   Content-Type: application/json; charset=utf-8
   Cache-Control: public, max-age=3600
 
+/provenance.sig
+  Access-Control-Allow-Origin: *
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: public, max-age=3600
+
 /drafts
   X-Robots-Tag: noindex, nofollow
 
@@ -284,6 +295,13 @@ export function writeStaticOutputs(distDir, results, options = {}) {
   const generated = options.generated || new Date().toISOString();
   const build = options.build || buildMetadataFromEnv();
   const provenanceUrl = publicUrl(PROVENANCE_PATH, build.canonical_site);
+  const signingKey = options.signingKey === undefined
+    ? signingKeyInfoFromEnv(options.env || process.env)
+    : options.signingKey;
+  const signatureMetadata = signatureMetadataForKey(
+    signingKey,
+    publicUrl(PROVENANCE_SIGNATURE_PATH, build.canonical_site)
+  );
   const claimsPayload = {
     schema_version: CLAIMS_SCHEMA_VERSION,
     generated,
@@ -309,8 +327,23 @@ export function writeStaticOutputs(distDir, results, options = {}) {
   writeHeaders(distDir);
   writeDashboard(distDir, results, publicResults, draftResults, claims, options.verificationTimestamp);
   writeFavicon(distDir);
+  const provenance = buildProvenance({
+    manifest,
+    claimsPayload,
+    distDir,
+    generated,
+    build,
+    signature: signatureMetadata
+  });
+  const provenanceText = JSON.stringify(provenance, null, 2);
   writeFileSync(
     join(distDir, 'provenance.json'),
-    JSON.stringify(buildProvenance({ manifest, claimsPayload, distDir, generated, build }), null, 2)
+    provenanceText
   );
+  if (signingKey) {
+    writeFileSync(
+      join(distDir, 'provenance.sig'),
+      JSON.stringify(signProvenanceText(provenanceText, signingKey, generated), null, 2)
+    );
+  }
 }
