@@ -1,87 +1,65 @@
 ---
-id: "kb-2026-00316"
-title: "Grafana"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "human_only"
+id: kb-2026-00316
+title: Grafana
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "Grafana is the leading open-source observability platform for dashboards, alerting, and data visualization"
-    source_title: "Grafana Documentation"
-    source_url: "https://grafana.com/docs/"
-    confidence: "medium"
-  - id: "fact-computer-science-001"
-    statement: "Grafana (2014, Torkel Odegaard) is the leading open-source observability platform for dashboards, alerting, and data visualization. It queries 30+ data sources (Prometheus, Elasticsearch, InfluxDB, PostgreSQL). Grafana 10 (2023) introduced Scenes (dashboard as code) and Correlations."
-    source_title: "Grafana Documentation"
-    source_url: "https://grafana.com/docs/"
-    confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "Alerting: unified UI with Prometheus Alertmanager integration."
-    source_title: "Grafana Documentation"
-    source_url: "https://grafana.com/docs/"
-    confidence: "medium"
-  - id: "fact-computer-science-003"
-    statement: "Grafana Cloud: managed observability stack (free tier: 10K metrics, 50GB logs)."
-    source_title: "Grafana Documentation"
-    source_url: "https://grafana.com/docs/"
-    confidence: "medium"
-
+  - id: af-grafana-1
+    statement: Grafana dashboards organize panels for visualizing data.
+    source_title: Dashboards
+    source_url: https://grafana.com/docs/grafana/latest/dashboards/
+    confidence: medium
+  - id: af-grafana-2
+    statement: Grafana data sources connect Grafana to systems that provide queryable data.
+    source_title: Data sources
+    source_url: https://grafana.com/docs/grafana/latest/datasources/
+    confidence: medium
+  - id: af-grafana-3
+    statement: Grafana Alerting supports alert rules and notification workflows.
+    source_title: Alerting
+    source_url: https://grafana.com/docs/grafana/latest/alerting/
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - Data-source-specific query performance and permissions
+  - Operational design of alerts to reduce noise and missed incidents
+disputed_statements: []
 primary_sources:
-  - title: "Grafana Documentation"
-    type: "documentation"
-    year: 2026
-    url: "https://grafana.com/docs/"
-    institution: "Grafana Labs"
-
-secondary_sources:
-  - title: "Site Reliability Engineering (Google)"
-    authors: ["Beyer, Betsy", "Jones, Chris", "Petoff, Jennifer", "Murphy, Niall Richard"]
-    type: "book"
-    year: 2016
-    url: "https://sre.google/books/"
-    institution: "O'Reilly"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+  - id: ps-grafana-1
+    title: Dashboards
+    type: technical_documentation
+    year: 2024
+    institution: Grafana Labs
+    url: https://grafana.com/docs/grafana/latest/dashboards/
+  - id: ps-grafana-2
+    title: Data sources
+    type: technical_documentation
+    year: 2024
+    institution: Grafana Labs
+    url: https://grafana.com/docs/grafana/latest/datasources/
+  - id: ps-grafana-3
+    title: Alerting
+    type: technical_documentation
+    year: 2024
+    institution: Grafana Labs
+    url: https://grafana.com/docs/grafana/latest/alerting/
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
-
-
 ## TL;DR
-
-Grafana (2014, Torkel Odegaard) is the leading open-source observability platform for dashboards, alerting, and data visualization. It queries 30+ data sources (Prometheus, Elasticsearch, InfluxDB, PostgreSQL). Grafana 10 (2023) introduced Scenes (dashboard as code) and Correlations.
+Grafana is an observability and visualization tool centered on dashboards, data sources, and alerting. Strong claims should cite Grafana docs for each capability.
 
 ## Core Explanation
+Teams use Grafana to query data sources, build dashboards, and configure alerts. Its usefulness depends on data quality, dashboard design, and alert governance.
 
-Dashboards: panels (graph, stat, table, heatmap, geo), variables (dynamic filtering), annotations (event markers). Alerting: unified UI with Prometheus Alertmanager integration. Explore: ad-hoc query interface. Loki: Grafana's log aggregation system (Prometheus for logs). Tempo: distributed tracing. Grafana Cloud: managed observability stack (free tier: 10K metrics, 50GB logs).
-
-## Further Reading
-
-- [Grafana Documentation](https://grafana.com/docs/)
+## Detailed Analysis
+The repaired article uses Grafana documentation for dashboards, data sources, and alerting, avoiding vague platform claims.

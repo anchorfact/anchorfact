@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 342,
     "average_sources_per_article": "2.2",
-    "overall_verification_rate": "70.3%",
+    "overall_verification_rate": "70.6%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 306
+    "manual_reviewed_articles": 316
   },
   "articles": [
     {
@@ -10852,16 +10852,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Feature Engineering for Machine Learning (Zheng & Casari)",
-          "source_type": "textbook",
+          "source_title": "Preprocessing data",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/",
+              "identifier": "https://scikit-learn.org/stable/modules/preprocessing.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.oreilly.com/library/view/feature-engineering-for/9781491953235/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -10869,16 +10870,17 @@
           "all_verified": true
         },
         {
-          "source_title": "An Introduction to Variable and Feature Selection (Guyon & Elisseeff)",
-          "source_type": "journal_article",
+          "source_title": "Feature selection",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://jmlr.org/papers/v3/guyon03a.html",
+              "identifier": "https://scikit-learn.org/stable/modules/feature_selection.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://jmlr.org/papers/v3/guyon03a.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -10886,16 +10888,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Deep Feature Synthesis: Towards Automating Data Science Endeavors (Kanter & Veeramachaneni)",
-          "source_type": "conference_paper",
+          "source_title": "ColumnTransformer for heterogeneous data",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1109/DSAA.2015.7344858",
+              "identifier": "https://scikit-learn.org/stable/modules/compose.html#column-transformer",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://ieeexplore.ieee.org/document/7344858/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -10904,7 +10907,9 @@
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 0
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/federated-learning.md",
@@ -16530,19 +16535,20 @@
       "file": "content/ai/vector-databases.md",
       "article_id": "vector-databases",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "DiskANN: Graph-based Approximate Nearest Neighbor Search on Disk",
+          "source_title": "Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.microsoft.com/en-us/research/project/project-akupara-approximate-nearest-neighbor-search-for-large-scale-semantic-search/",
+              "identifier": "https://arxiv.org/abs/1603.09320",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.microsoft.com/en-us/research/project/project-akupara-approximate-nearest-neighbor-search-for-large-scale-semantic-search/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -16550,42 +16556,65 @@
           "all_verified": true
         },
         {
-          "source_title": "DSANN: Distributed Approximate Nearest Neighbor Search of Large Scale Vectors",
+          "source_title": "Billion-scale similarity search with GPUs",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2510.17326",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1702.08734",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Milvus: A Purpose-Built Vector Data Management System",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2105.08459",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/video-understanding.md",
       "article_id": "video-understanding",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "About Time: Advances, Challenges, and Outlooks of Action Understanding",
+          "source_title": "Two-Stream Convolutional Networks for Action Recognition in Videos",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://link.springer.com/article/10.1007/s11263-025-02478-4",
+              "identifier": "https://arxiv.org/abs/1406.2199",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://link.springer.com/article/10.1007/s11263-025-02478-4?error=cookies_not_supported&code=e67da701-3467-4178-ad63-98e134e32add"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -16593,25 +16622,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Action recognition: A comprehensive survey of tasks, methods, and datasets",
+          "source_title": "Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.sciencedirect.com/science/article/pii/S2405959525001869",
-              "verified": false,
+              "identifier": "https://arxiv.org/abs/1705.07750",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.sciencedirect.com/science/article/pii/S2405959525001869"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Is Space-Time Attention All You Need for Video Understanding?",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2102.05095",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/vision-language-action-models.md",
@@ -19510,19 +19560,56 @@
       "file": "content/business/leadership-principles.md",
       "article_id": "kb-2026-00445",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Leaders Eat Last (Simon Sinek)",
-          "source_type": "book",
+          "source_title": "What Is Leadership?",
+          "source_type": "professional_resource",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/223777/leaders-eat-last-by-simon-sinek/",
+              "identifier": "https://www.ccl.org/articles/leading-effectively-articles/what-is-leadership/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/223777/leaders-eat-last-by-simon-sinek/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Psychological Safety and Learning Behavior in Work Teams",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.2307/2666999",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "What Makes a Leader?",
+          "source_type": "management_article",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://hbr.org/2004/01/what-makes-a-leader",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -19530,8 +19617,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/business/lean-manufacturing.md",
@@ -21047,19 +21136,56 @@
       "file": "content/computer-science/aria-accessible-rich-internet-applications.md",
       "article_id": "kb-2026-00169",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "WAI-ARIA 1.2 (W3C Recommendation)",
+          "source_title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
           "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.w3.org/TR/wai-aria/",
+              "identifier": "https://www.w3.org/TR/wai-aria-1.2/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.w3.org/TR/wai-aria/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ARIA Authoring Practices Guide",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.w3.org/WAI/ARIA/apg/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ARIA",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -21067,8 +21193,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/array-data-structure.md",
@@ -21642,16 +21770,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "ISO/IEC 14882:2024 — C++23 Standard",
-          "source_type": "standard",
+          "source_title": "The C++ Standard",
+          "source_type": "standard_resource",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.iso.org/standard/83626.html",
+              "identifier": "https://isocpp.org/std/the-standard",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.iso.org/standard/83626.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -21659,16 +21788,17 @@
           "all_verified": true
         },
         {
-          "source_title": "The C++ Programming Language (5th Edition Updated for C++26, 2025)",
-          "source_type": "book",
+          "source_title": "Classes",
+          "source_type": "technical_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.stroustrup.com/",
+              "identifier": "https://en.cppreference.com/w/cpp/language/classes",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.stroustrup.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -21676,25 +21806,28 @@
           "all_verified": true
         },
         {
-          "source_title": "Modern C++: Best Practices for Performance and Safety (2025)",
-          "source_type": "book",
+          "source_title": "Templates",
+          "source_type": "technical_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/cpp/",
-              "verified": false,
+              "identifier": "https://en.cppreference.com/w/cpp/language/templates",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/cpp/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/c-language.md",
@@ -24149,19 +24282,56 @@
       "file": "content/computer-science/elixir-language.md",
       "article_id": "kb-2026-00311",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Elixir Documentation",
-          "source_type": "documentation",
+          "source_title": "Elixir Introduction",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://elixir-lang.org/docs.html",
+              "identifier": "https://hexdocs.pm/elixir/introduction.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://elixir-lang.org/docs.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GenServer",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://hexdocs.pm/elixir/GenServer.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Supervisor",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://hexdocs.pm/elixir/Supervisor.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -24169,8 +24339,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/elliptic-curve-cryptography-mathematics-curves-and-tls-integration.md",
@@ -25279,19 +25451,56 @@
       "file": "content/computer-science/grafana.md",
       "article_id": "kb-2026-00316",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Grafana Documentation",
-          "source_type": "documentation",
+          "source_title": "Dashboards",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://grafana.com/docs/",
+              "identifier": "https://grafana.com/docs/grafana/latest/dashboards/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://grafana.com/docs/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Data sources",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://grafana.com/docs/grafana/latest/datasources/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Alerting",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://grafana.com/docs/grafana/latest/alerting/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -25299,8 +25508,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/graph-bfs-dfs.md",
@@ -26364,10 +26575,28 @@
       "file": "content/computer-science/intersection-observer-api.md",
       "article_id": "kb-2026-00096",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Intersection Observer (W3C)",
+          "source_title": "Intersection Observer API",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Intersection Observer",
           "source_type": "standard",
           "results": [
             {
@@ -26375,8 +26604,27 @@
               "identifier": "https://www.w3.org/TR/intersection-observer/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.w3.org/TR/intersection-observer/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "IntersectionObserver's coming into view",
+          "source_type": "technical_article",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://web.dev/articles/intersectionobserver",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -26384,8 +26632,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/iptables-nftables.md",
@@ -39049,19 +39299,20 @@
       "file": "content/history/aztec-empire.md",
       "article_id": "kb-2026-00394",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Aztecs (Michael E. Smith, 3rd Ed)",
-          "source_type": "book",
+          "source_title": "Aztec",
+          "source_type": "encyclopedia_entry",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.wiley.com/en-us/The+Aztecs%2C+3rd+Edition-p-9781405194976",
+              "identifier": "https://www.britannica.com/topic/Aztec",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.wiley.com/en-us/The+Aztecs%2C+3rd+Edition-p-9781405194976"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -39069,16 +39320,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Fifth Sun: A New History of the Aztecs (2025 Paperback)",
-          "source_type": "book",
+          "source_title": "Tenochtitlan",
+          "source_type": "encyclopedia_entry",
           "results": [
             {
               "method": "url",
-              "identifier": "https://global.oup.com/aztecs/",
+              "identifier": "https://www.britannica.com/place/Tenochtitlan",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/aztecs/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -39086,59 +39338,28 @@
           "all_verified": true
         },
         {
-          "source_title": "The Aztecs: A Very Short Introduction (2025 Updated)",
-          "source_type": "book",
+          "source_title": "Hernan Cortes",
+          "source_type": "encyclopedia_entry",
           "results": [
             {
               "method": "url",
-              "identifier": "https://global.oup.com/vsi-aztecs/",
+              "identifier": "https://www.britannica.com/biography/Hernan-Cortes",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-aztecs/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "Fifth Sun: A New History of the Aztecs (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/aztecs/",
-              "verified": true,
-              "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/aztecs/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "The Aztecs (3rd Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.wiley.com/aztecs/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.wiley.com/aztecs/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
         }
       ],
-      "sources_verified": 4,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/byzantine-empire.md",

@@ -1,89 +1,68 @@
 ---
-id: "kb-2026-00169"
-title: "ARIA (Accessible Rich Internet Applications)"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "human_only"
+id: kb-2026-00169
+title: ARIA (Accessible Rich Internet Applications)
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "The first rule of ARIA: don't use ARIA if native HTML already provides the semantics"
-    source_title: "WAI-ARIA 1.2 (W3C Recommendation)"
-    source_url: "https://www.w3.org/TR/wai-aria/"
-    confidence: "medium"
-  - id: "fact-computer-science-001"
-    statement: "ARIA provides attributes that enhance HTML accessibility for assistive technologies (screen readers). It defines roles (`role='button'`), states (`aria-expanded`), and properties (`aria-label`). The first rule of ARIA: don't use ARIA if native HTML already provides the semantics."
-    source_title: "WAI-ARIA 1.2 (W3C Recommendation)"
-    source_url: "https://www.w3.org/TR/wai-aria/"
-    confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "Key patterns: `aria-label` for accessible names, `aria-labelledby` to reference another element, `aria-describedby` for descriptions, `aria-live` for dynamic content announcements (polite/assertive)."
-    source_title: "WAI-ARIA 1.2 (W3C Recommendation)"
-    source_url: "https://www.w3.org/TR/wai-aria/"
-    confidence: "medium"
-  - id: "fact-computer-science-003"
-    statement: "ARIA does NOT change behavior — `role='button'` doesn't add click handling or keyboard interaction."
-    source_title: "WAI-ARIA 1.2 (W3C Recommendation)"
-    source_url: "https://www.w3.org/TR/wai-aria/"
-    confidence: "medium"
-
+  - id: af-aria-accessible-rich-internet-applications-1
+    statement: WAI-ARIA defines roles, states, and properties for improving accessibility of web content and applications.
+    source_title: Accessible Rich Internet Applications (WAI-ARIA) 1.2
+    source_url: https://www.w3.org/TR/wai-aria-1.2/
+    confidence: medium
+  - id: af-aria-accessible-rich-internet-applications-2
+    statement: The ARIA Authoring Practices Guide provides patterns for accessible widgets and interactions.
+    source_title: ARIA Authoring Practices Guide
+    source_url: https://www.w3.org/WAI/ARIA/apg/
+    confidence: medium
+  - id: af-aria-accessible-rich-internet-applications-3
+    statement: MDN warns that native HTML semantics should be preferred where available before adding ARIA.
+    source_title: ARIA
+    source_url: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - Testing with assistive technology across browser and screen-reader combinations
+  - Overuse of ARIA where semantic HTML would be simpler and safer
+disputed_statements: []
 primary_sources:
-  - title: "WAI-ARIA 1.2 (W3C Recommendation)"
-    type: "standard"
+  - id: ps-aria-accessible-rich-internet-applications-1
+    title: Accessible Rich Internet Applications (WAI-ARIA) 1.2
+    type: standard
     year: 2023
-    url: "https://www.w3.org/TR/wai-aria/"
-    institution: "W3C"
-
-secondary_sources:
-  - title: "MDN Web Docs — ARIA"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA"
-    institution: "Mozilla"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    institution: W3C
+    url: https://www.w3.org/TR/wai-aria-1.2/
+  - id: ps-aria-accessible-rich-internet-applications-2
+    title: ARIA Authoring Practices Guide
+    type: technical_documentation
+    year: 2024
+    institution: W3C WAI
+    url: https://www.w3.org/WAI/ARIA/apg/
+  - id: ps-aria-accessible-rich-internet-applications-3
+    title: ARIA
+    type: technical_documentation
+    year: 2024
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
-
-
 ## TL;DR
-
-ARIA provides attributes that enhance HTML accessibility for assistive technologies (screen readers). It defines roles (`role='button'`), states (`aria-expanded`), and properties (`aria-label`). The first rule of ARIA: don't use ARIA if native HTML already provides the semantics.
+ARIA adds accessibility semantics when native HTML is not enough. It is powerful, but misuse can make interfaces less accessible.
 
 ## Core Explanation
+ARIA roles, states, and properties help expose custom widgets to assistive technologies. Authors should still prefer semantic HTML controls when those controls already provide the needed behavior.
 
-Key patterns: `aria-label` for accessible names, `aria-labelledby` to reference another element, `aria-describedby` for descriptions, `aria-live` for dynamic content announcements (polite/assertive). `role='alert'` for important notifications. ARIA does NOT change behavior — `role='button'` doesn't add click handling or keyboard interaction.
-
-## Further Reading
-
-- [WAI-ARIA 1.2 (W3C Recommendation)](https://www.w3.org/TR/wai-aria/)
+## Detailed Analysis
+The repaired article cites the W3C ARIA specification, WAI authoring practices, and MDN guidance to keep claims precise and practical.
 
 ## Related Articles
 

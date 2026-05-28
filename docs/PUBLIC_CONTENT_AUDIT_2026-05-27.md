@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T11:21:19.655Z
+Generated: 2026-05-28T11:27:15.893Z
 
-Snapshot: 555 public / 445 draft / 1670 claims.
+Snapshot: 555 public / 445 draft / 1669 claims.
 
 ## Summary
 
@@ -10,10 +10,10 @@ This is a risk-weighted audit sample of public AnchorFact articles. It is intend
 
 - Sample size: 20
 - Low verified coverage samples: 1
-- Articles with at least one fail check: 1
+- Articles with at least one fail check: 0
 - High-confidence samples needing review: 0
 - Claim-evidence failures: 0
-- Recommendations: keep_public: 10, downgrade_confidence: 0, repair_sources: 9, move_to_draft: 1
+- Recommendations: keep_public: 10, downgrade_confidence: 0, repair_sources: 10, move_to_draft: 0
 
 ## Method
 
@@ -29,20 +29,20 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 4 | high_confidence | `ai/ai-in-healthcare` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 5 | high_confidence | `ai/ai-red-teaming-and-safety` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 6 | medium_capped_claims | `business/strategic-management-theory` | medium | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 7 | medium_capped_claims | `ai/vector-databases` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 8 | medium_capped_claims | `ai/video-understanding` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 9 | medium_capped_claims | `history/aztec-empire` | medium | 4/5 (80.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 10 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 11 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 12 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 13 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 14 | risk_fallback | `computer-science/c-plus-plus-language` | medium | 2/3 (66.7%) | 1 | source=weak; claim=pass; summary=fail | move_to_draft |
-| 15 | risk_fallback | `ai/feature-engineering` | low | 3/3 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
-| 16 | risk_fallback | `business/leadership-principles` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
-| 17 | risk_fallback | `computer-science/aria-accessible-rich-internet-applications` | medium | 1/1 (100.0%) | 4 | source=pass; claim=pass; summary=pass | repair_sources |
-| 18 | risk_fallback | `computer-science/elixir-language` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
-| 19 | risk_fallback | `computer-science/grafana` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
-| 20 | risk_fallback | `computer-science/intersection-observer-api` | medium | 1/1 (100.0%) | 4 | source=pass; claim=pass; summary=pass | repair_sources |
+| 7 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 8 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 9 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 10 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 11 | risk_fallback | `computer-science/jenkins` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
+| 12 | risk_fallback | `computer-science/kotlin` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
+| 13 | risk_fallback | `computer-science/nginx` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
+| 14 | risk_fallback | `computer-science/nuxt-js` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
+| 15 | risk_fallback | `computer-science/performance-api` | medium | 1/1 (100.0%) | 4 | source=pass; claim=pass; summary=pass | repair_sources |
+| 16 | risk_fallback | `computer-science/prometheus` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
+| 17 | risk_fallback | `computer-science/terraform` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
+| 18 | risk_fallback | `computer-science/web-cryptography-api` | medium | 1/1 (100.0%) | 4 | source=pass; claim=pass; summary=pass | repair_sources |
+| 19 | risk_fallback | `computer-science/web-performance-optimization` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
+| 20 | risk_fallback | `computer-science/web-workers` | medium | 1/1 (100.0%) | 4 | source=pass; claim=pass; summary=pass | repair_sources |
 
 ## Article Findings
 
@@ -136,52 +136,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 7. Vector Databases: Approximate Nearest Neighbor Search, Embedding Storage, and Retrieval at Scale
-
-- canonical slug: `ai/vector-databases`
-- canonical URL: https://anchorfact.org/ai/vector-databases/
-- bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.74)
-- verified source coverage: 1/2 (50.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 8. Video Understanding: Action Recognition, Temporal Action Detection, and Video-Language Models
-
-- canonical slug: `ai/video-understanding`
-- canonical URL: https://anchorfact.org/ai/video-understanding/
-- bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.74)
-- verified source coverage: 1/2 (50.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 9. Aztec Empire
-
-- canonical slug: `history/aztec-empire`
-- canonical URL: https://anchorfact.org/history/aztec-empire/
-- bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.6)
-- verified source coverage: 4/5 (80.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 10. Film Genres
+### 7. Film Genres
 
 - canonical slug: `arts/film-genres`
 - canonical URL: https://anchorfact.org/arts/film-genres/
@@ -196,7 +151,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 11. World Literature
+### 8. World Literature
 
 - canonical slug: `arts/world-literature`
 - canonical URL: https://anchorfact.org/arts/world-literature/
@@ -211,7 +166,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 12. Age of Exploration
+### 9. Age of Exploration
 
 - canonical slug: `history/age-of-exploration`
 - canonical URL: https://anchorfact.org/history/age-of-exploration/
@@ -226,7 +181,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 13. Byzantine Empire
+### 10. Byzantine Empire
 
 - canonical slug: `history/byzantine-empire`
 - canonical URL: https://anchorfact.org/history/byzantine-empire/
@@ -241,42 +196,12 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 14. C++ Programming Language
+### 11. Jenkins
 
-- canonical slug: `computer-science/c-plus-plus-language`
-- canonical URL: https://anchorfact.org/computer-science/c-plus-plus-language/
+- canonical slug: `computer-science/jenkins`
+- canonical URL: https://anchorfact.org/computer-science/jenkins/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.795)
-- verified source coverage: 2/3 (66.7%)
-- claims: 1 total, 0 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `pass`
-- title-summary accuracy: `fail`
-- hygiene flags: none
-- recommendation: `move_to_draft`
-
-### 15. Feature Engineering
-
-- canonical slug: `ai/feature-engineering`
-- canonical URL: https://anchorfact.org/ai/feature-engineering/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.55)
-- verified source coverage: 3/3 (100.0%)
-- claims: 4 total, 4 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 16. Leadership Principles
-
-- canonical slug: `business/leadership-principles`
-- canonical URL: https://anchorfact.org/business/leadership-principles/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.43)
+- confidence: `low` (verified_sources, score 0.5)
 - verified source coverage: 1/1 (100.0%)
 - claims: 4 total, 4 capped, 0 missing evidence
 - quality reasons: none
@@ -286,10 +211,55 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 17. ARIA (Accessible Rich Internet Applications)
+### 12. Kotlin
 
-- canonical slug: `computer-science/aria-accessible-rich-internet-applications`
-- canonical URL: https://anchorfact.org/computer-science/aria-accessible-rich-internet-applications/
+- canonical slug: `computer-science/kotlin`
+- canonical URL: https://anchorfact.org/computer-science/kotlin/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.5)
+- verified source coverage: 1/1 (100.0%)
+- claims: 4 total, 4 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 13. Nginx
+
+- canonical slug: `computer-science/nginx`
+- canonical URL: https://anchorfact.org/computer-science/nginx/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.5)
+- verified source coverage: 1/1 (100.0%)
+- claims: 4 total, 4 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 14. Nuxt.js
+
+- canonical slug: `computer-science/nuxt-js`
+- canonical URL: https://anchorfact.org/computer-science/nuxt-js/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.5)
+- verified source coverage: 1/1 (100.0%)
+- claims: 4 total, 4 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 15. Performance API
+
+- canonical slug: `computer-science/performance-api`
+- canonical URL: https://anchorfact.org/computer-science/performance-api/
 - bucket: `risk_fallback`
 - confidence: `medium` (verified_sources, score 0.735)
 - verified source coverage: 1/1 (100.0%)
@@ -301,10 +271,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 18. Elixir Language
+### 16. Prometheus
 
-- canonical slug: `computer-science/elixir-language`
-- canonical URL: https://anchorfact.org/computer-science/elixir-language/
+- canonical slug: `computer-science/prometheus`
+- canonical URL: https://anchorfact.org/computer-science/prometheus/
 - bucket: `risk_fallback`
 - confidence: `low` (verified_sources, score 0.5)
 - verified source coverage: 1/1 (100.0%)
@@ -316,10 +286,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 19. Grafana
+### 17. Terraform
 
-- canonical slug: `computer-science/grafana`
-- canonical URL: https://anchorfact.org/computer-science/grafana/
+- canonical slug: `computer-science/terraform`
+- canonical URL: https://anchorfact.org/computer-science/terraform/
 - bucket: `risk_fallback`
 - confidence: `low` (verified_sources, score 0.5)
 - verified source coverage: 1/1 (100.0%)
@@ -331,12 +301,42 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 20. Intersection Observer API
+### 18. Web Cryptography API
 
-- canonical slug: `computer-science/intersection-observer-api`
-- canonical URL: https://anchorfact.org/computer-science/intersection-observer-api/
+- canonical slug: `computer-science/web-cryptography-api`
+- canonical URL: https://anchorfact.org/computer-science/web-cryptography-api/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.715)
+- confidence: `medium` (verified_sources, score 0.695)
+- verified source coverage: 1/1 (100.0%)
+- claims: 4 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 19. Web Performance Optimization
+
+- canonical slug: `computer-science/web-performance-optimization`
+- canonical URL: https://anchorfact.org/computer-science/web-performance-optimization/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.49)
+- verified source coverage: 1/1 (100.0%)
+- claims: 4 total, 4 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 20. Web Workers
+
+- canonical slug: `computer-science/web-workers`
+- canonical URL: https://anchorfact.org/computer-science/web-workers/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.745)
 - verified source coverage: 1/1 (100.0%)
 - claims: 4 total, 0 capped, 0 missing evidence
 - quality reasons: none
