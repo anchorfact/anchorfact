@@ -4,8 +4,8 @@ title: Dart Language
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: '2026-05-25'
+confidence: medium
+last_verified: '2026-05-28'
 created_date: '2026-05-22'
 generation_method: ai_structured
 derived_from_human_seed: true
@@ -13,89 +13,61 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-001
+  - id: fact-dart-1
     statement: >-
-      Dart (Google, 2011) is an object-oriented language optimized for client development — primarily Flutter apps. Dart 3 (2023) introduced 100% sound null safety, records, patterns, and class
-      modifiers. Compiles to native ARM/x86 (AOT) for mobile, and JavaScript for web.
-    source_title: Dart Documentation
-    source_url: https://dart.dev/guides
+      Dart documentation describes Dart as a client-optimized language for developing fast apps on
+      any platform.
+    source_title: Dart Overview
+    source_url: https://dart.dev/overview
     confidence: medium
-  - id: fact-computer-science-002
-    statement: 'Dart JIT: hot reload during development; AOT: fast production startup.'
-    source_title: Dart Documentation
-    source_url: https://dart.dev/guides
+  - id: fact-dart-2
+    statement: >-
+      Dart documentation says Dart has built-in sound null safety, so values cannot be null unless
+      the type allows it.
+    source_title: 'Dart: Sound Null Safety'
+    source_url: https://dart.dev/null-safety
     confidence: medium
-completeness: 0.88
+  - id: fact-dart-3
+    statement: >-
+      Dart documentation states that Dart is designed for development hot reload and production
+      compilation targets across web, mobile, and desktop.
+    source_title: Dart Overview
+    source_url: https://dart.dev/overview
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact article intentionally covers a small, source-mapped slice of a broader topic.
+disputed_statements: []
 primary_sources:
-  - title: Dart Documentation
+  - title: Dart Overview
     type: documentation
     year: 2026
-    url: https://dart.dev/guides
-    institution: Google
-  - title: Dart in Action (2025 Edition)
-    type: book
-    year: 2025
-    authors:
-      - Buckett C.
-    institution: Manning
-    url: https://www.manning.com/dart/
-  - title: 'Modern Cross-Platform Development: Flutter, Dart, and React Native (2025)'
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.crossplatform
-  - title: The Dart Programming Language
-    authors:
-      - Bracha, G.
-    type: book
-    year: 2015
-    institution: Addison-Wesley
-  - title: Dart Language Specification (v3.x)
-    type: standard
-    year: 2024
-    url: https://dart.dev/guides/language/spec
-    institution: Google
-secondary_sources:
-  - title: React Documentation
+    url: https://dart.dev/overview
+    institution: Dart project
+  - title: Dart Language Tour
     type: documentation
     year: 2026
-    url: https://react.dev/reference/react
-    institution: Meta
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
+    url: https://dart.dev/language
+    institution: Dart project
+  - title: 'Dart: Sound Null Safety'
+    type: documentation
+    year: 2026
+    url: https://dart.dev/null-safety
+    institution: Dart project
+secondary_sources: []
+updated: '2026-05-28'
 ---
 
 ## TL;DR
 
-Dart (Google, 2011) is an object-oriented language optimized for client development — primarily Flutter apps. Dart 3 (2023) introduced 100% sound null safety, records, patterns, and class modifiers. Compiles to native ARM/x86 (AOT) for mobile, and JavaScript for web.
+Dart is a client-optimized, type-safe language used for multi-platform application development.
 
 ## Core Explanation
 
-Null safety: all types are non-null unless explicitly marked `?`. Async: `Future<T>` and `async/await`. `Stream<T>` for reactive data. `isolate` for concurrent threads (no shared memory). Flutter: UI framework using Dart — single codebase for iOS, Android, Web, Desktop. Dart JIT: hot reload during development; AOT: fast production startup.
+Dart is designed around productive application development and deployable performance. Its documentation emphasizes multi-platform targets, hot reload during development, and sound null safety in the language.
 
 ## Further Reading
 
-- [Dart Documentation](https://dart.dev/guides)
-
-## Related Articles
-
-- [AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation](../../ai/ai-code-translation.md)
-- [AI for Accessibility: Assistive Technologies, Sign Language Recognition, and Inclusive Systems](../../ai/ai-for-accessibility.md)
-- [AI for Language Learning: Intelligent Tutoring, Speech Assessment, and Personalized Curriculum](../../ai/ai-for-language-learning.md)
+- [Dart Overview](https://dart.dev/overview)
+- [Dart Language Tour](https://dart.dev/language)
+- [Dart: Sound Null Safety](https://dart.dev/null-safety)

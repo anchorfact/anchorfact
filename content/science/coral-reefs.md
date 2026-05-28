@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: science
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-28'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -15,92 +15,59 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-science-01
-    statement: Great Barrier Reef is the largest living structure on Earth
-    source_title: The Biology of Coral Reefs (Sheppard, Davy, Pilling, 2nd Ed)
-    source_url: https://global.oup.com/academic/product/the-biology-of-coral-reefs-9780198787358
-    confidence: high
-  - id: fact-science-02
-    statement: 'Great Barrier Reef: 50% coral loss since 1995'
-    source_title: The Biology of Coral Reefs (Sheppard, Davy, Pilling, 2nd Ed)
-    source_url: https://global.oup.com/academic/product/the-biology-of-coral-reefs-9780198787358
-    confidence: high
-  - id: fact-science-03
-    statement: 'Coral bleaching: triggered by 1-2°C above normal summer temperatures'
-    source_title: The Biology of Coral Reefs (Sheppard, Davy, Pilling, 2nd Ed)
-    source_url: https://global.oup.com/academic/product/the-biology-of-coral-reefs-9780198787358
-    confidence: high
-completeness: 0.88
+  - id: fact-coral-reefs-1
+    statement: NOAA states that coral reefs are home to millions of species.
+    source_title: 'NOAA: Coral Reef Species'
+    source_url: https://oceanservice.noaa.gov/facts/coral_species.html
+    confidence: medium
+  - id: fact-coral-reefs-2
+    statement: >-
+      UNESCO describes the Great Barrier Reef as a World Heritage property of outstanding universal
+      value.
+    source_title: 'UNESCO: Great Barrier Reef'
+    source_url: https://whc.unesco.org/en/list/154
+    confidence: medium
+  - id: fact-coral-reefs-3
+    statement: >-
+      The Global Coral Reef Monitoring Network published Status of Coral Reefs of the World: 2020 as
+      a global coral-reef assessment.
+    source_title: 'GCRMN: Status of Coral Reefs of the World 2020'
+    source_url: https://gcrmn.net/2020-report/
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact article intentionally covers a small, source-mapped slice of a broader topic.
+disputed_statements: []
 primary_sources:
-  - title: The Biology of Coral Reefs (Sheppard, Davy, Pilling, 2nd Ed)
-    type: book
-    year: 2017
-    url: https://global.oup.com/academic/product/the-biology-of-coral-reefs-9780198787358
-    institution: Oxford University Press
-  - title: 'Coral Reefs: A Very Short Introduction (2025)'
-    type: book
-    year: 2025
-    authors:
-      - Sheppard C.
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-coral/
-  - title: 'Coral Reefs in the Anthropocene: A 2025 Review'
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: Nature
-    url: https://doi.org/10.1038/s41586-2025-coral
-  - title: Coral Reefs in the Anthropocene (2025 Review)
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: Nature
-    url: https://doi.org/10.1038/s41586-2025-coral
-  - title: 'Coral Reefs: A Very Short Introduction'
-    authors:
-      - Sheppard, C.R.C.
-    type: book
-    year: 2021
-    institution: Oxford University Press
-  - title: 'Status of Coral Reefs of the World: 2020'
+  - title: 'NOAA: Coral Reef Species'
+    type: government_report
+    year: 2024
+    url: https://oceanservice.noaa.gov/facts/coral_species.html
+    institution: NOAA National Ocean Service
+  - title: 'UNESCO: Great Barrier Reef'
+    type: world_heritage_record
+    year: 2026
+    url: https://whc.unesco.org/en/list/154
+    institution: UNESCO World Heritage Centre
+  - title: 'GCRMN: Status of Coral Reefs of the World 2020'
     type: government_report
     year: 2021
     url: https://gcrmn.net/2020-report/
     institution: Global Coral Reef Monitoring Network
-secondary_sources:
-  - title: A Brief History of Time
-    type: book
-    year: 1988
-    url: https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/
-    institution: Stephen Hawking, Bantam
-  - title: Nature (journal)
-    type: journal
-    year: 2025
-    url: https://www.nature.com/
-    institution: Springer Nature
+secondary_sources: []
+updated: '2026-05-28'
 ---
 
 ## TL;DR
 
-Coral reefs are underwater ecosystems built by calcium carbonate skeletons of coral polyps — tiny animals with symbiotic algae (zooxanthellae). Cover <0.1% of ocean floor but host 25% of marine species. Great Barrier Reef (2,300 km, Australia) is the largest living structure on Earth. Bleaching: corals expel algae under heat stress → turn white → die.
+Coral reefs are biodiverse marine ecosystems built by corals and exposed to climate, pollution, and local human pressures.
 
 ## Core Explanation
 
-Coral bleaching: triggered by 1-2°C above normal summer temperatures. Recovery possible if stress is brief. Threats: climate change (ocean warming + acidification), overfishing, pollution, coastal development. Acidification: CO₂ dissolves in ocean → carbonic acid → dissolves coral skeletons. Great Barrier Reef: 50% coral loss since 1995. Restoration: coral gardening, assisted evolution, marine protected areas.
+Coral reefs are biologically dense marine ecosystems and culturally significant places. Public evidence for reef claims is strongest when it points to scientific agencies, heritage records, and global monitoring assessments.
 
 ## Further Reading
 
-- [The Biology of Coral Reefs (Sheppard, Davy, Pilling, 2nd Ed)](https://global.oup.com/academic/product/the-biology-of-coral-reefs-9780198787358)
-
-## Related Articles
-
-- [Coral Triangle: Marine Biodiversity Hotspot in Southeast Asia](../../geography/coral-triangle-marine-biodiversity-hotspot-in-southeast-asia.md)
-- [Great Barrier Reef: Ecology, Coral Bleaching, and Conservation](../../geography/great-barrier-reef-ecology-coral-bleaching-and-conservation.md)
+- [NOAA: Coral Reef Species](https://oceanservice.noaa.gov/facts/coral_species.html)
+- [UNESCO: Great Barrier Reef](https://whc.unesco.org/en/list/154)
+- [GCRMN: Status of Coral Reefs of the World 2020](https://gcrmn.net/2020-report/)

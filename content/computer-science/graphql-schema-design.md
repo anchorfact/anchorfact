@@ -4,8 +4,8 @@ title: GraphQL Schema Design
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: '2026-05-25'
+confidence: medium
+last_verified: '2026-05-28'
 created_date: '2026-05-22'
 generation_method: ai_structured
 derived_from_human_seed: true
@@ -13,124 +13,59 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-001
+  - id: fact-graphql-schema-1
     statement: >-
-      GraphQL schema design defines types, queries, mutations, and relationships. Best practices: design around business domain (not database schema), use Relay-style pagination (edges/nodes), avoid
-      deeply nested queries (N+1 solved by DataLoader), version via evolution (add fields, deprecate old ones — never remove).
-    source_title: GraphQL Best Practices
-    source_url: https://graphql.org/learn/best-practices/
+      GraphQL documentation says the type system describes what data clients can query, and that set
+      of capabilities is the service schema.
+    source_title: 'GraphQL Learn: Schemas and Types'
+    source_url: https://graphql.org/learn/schema/
     confidence: medium
-  - id: fact-computer-science-001
+  - id: fact-graphql-schema-2
     statement: >-
-      GraphQL schema design defines types, queries, mutations, and relationships. Best practices: design around business domain (not database schema), use Relay-style pagination (edges/nodes), avoid
-      deeply nested queries (N+1 solved by DataLoader), version via evolution (add fields, deprecate old ones — never remove).
-    source_title: GraphQL Best Practices
-    source_url: https://graphql.org/learn/best-practices/
+      Every GraphQL schema must support query operations, while schemas may also support mutation
+      and subscription operations.
+    source_title: 'GraphQL Learn: Schemas and Types'
+    source_url: https://graphql.org/learn/schema/
     confidence: medium
-completeness: 0.88
+  - id: fact-graphql-schema-3
+    statement: The GraphQL specification defines object types and fields as part of the GraphQL type system.
+    source_title: GraphQL Specification October 2021
+    source_url: https://spec.graphql.org/October2021/
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-  - Recent developments from 2025-2026 may not be reflected
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact article intentionally covers a small, source-mapped slice of a broader topic.
+disputed_statements: []
 primary_sources:
-  - title: GraphQL Best Practices
-    type: guide
-    year: 2024
-    url: https://graphql.org/learn/best-practices/
+  - title: 'GraphQL Learn: Schemas and Types'
+    type: documentation
+    year: 2026
+    url: https://graphql.org/learn/schema/
     institution: GraphQL Foundation
-  - title: 'GraphQL in Practice: Schema Design, Federation, and Performance (2025)'
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: O'Reilly Media
-    url: https://www.oreilly.com/graphql/
-  - title: 'API Design Patterns in 2025: REST, GraphQL, and gRPC'
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.api
-  - title: Full-Stack GraphQL (2025 Edition)
-    type: book
-    year: 2025
-    authors:
-      - Lyon W.
-    institution: Manning
-    url: https://www.manning.com/graphql/
-  - title: 'GraphQL Federation and Schema Design: 2025 Best Practices'
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE Software
-    url: https://doi.org/10.1109/ms.2025.graphql
-  - title: 'GraphQL: A Data Query Language'
+  - title: 'GraphQL Learn: Queries'
+    type: documentation
+    year: 2026
+    url: https://graphql.org/learn/queries/
+    institution: GraphQL Foundation
+  - title: GraphQL Specification October 2021
     type: standard
-    year: 2024
-    url: https://spec.graphql.org/
+    year: 2021
+    url: https://spec.graphql.org/October2021/
     institution: GraphQL Foundation
-  - title: Learning GraphQL
-    authors:
-      - Porcello, E.
-      - Banks, A.
-    type: book
-    year: 2018
-    institution: O'Reilly Media
-secondary_sources:
-  - title: Learning GraphQL
-    authors:
-      - Porcello
-      - Banks
-    type: book
-    year: 2018
-    url: https://www.oreilly.com/library/view/learning-graphql/9781492030706/
-    institution: O'Reilly
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
-  - title: 'GraphQL and API Design Patterns: A 2025 Systematic Review'
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.graphql
-  - title: 'Modern API Architectures: REST, GraphQL, gRPC — Performance and Adoption Trends 2025'
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE Software
-    url: https://doi.org/10.1109/ms.2025.api
+secondary_sources: []
+updated: '2026-05-28'
 ---
 
 ## TL;DR
 
-GraphQL schema design defines types, queries, mutations, and relationships. Best practices: design around business domain (not database schema), use Relay-style pagination (edges/nodes), avoid deeply nested queries (N+1 solved by DataLoader), version via evolution (add fields, deprecate old ones — never remove).
+GraphQL schema design defines the typed contract clients use to query, mutate, and understand an API.
 
 ## Core Explanation
 
-Types: Object types (User, Post), Scalar types (String, Int, Float, Boolean, ID), Enum types, Input types (for mutations), Interface/Union. Connections (Relay spec): `edges { node, cursor }`, `pageInfo { hasNextPage }`. DataLoader: batching + caching — solves N+1. Nullability: non-null `String!` vs. nullable `String` — prefer non-null unless field can legitimately be null.
+A GraphQL schema is the service contract: it declares the available object types, fields, and root operations so clients can ask for exactly the data the API exposes.
 
 ## Further Reading
 
-- [GraphQL Best Practices](https://graphql.org/learn/best-practices/)
-
-## Related Articles
-
-- [AI for Chip Design: Reinforcement Learning for EDA and Floorplanning](../../ai/ai-for-chip-design-reinforcement-learning-for-eda-and-floorplanning.md)
-- [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../../ai/ai-for-chip-design.md)
-- [AI for Drug Discovery: Molecular Docking, Virtual Screening, and De Novo Design](../../ai/ai-for-drug-discovery-molecular-docking-virtual-screening-and-de-novo-design.md)
+- [GraphQL Learn: Schemas and Types](https://graphql.org/learn/schema/)
+- [GraphQL Learn: Queries](https://graphql.org/learn/queries/)
+- [GraphQL Specification October 2021](https://spec.graphql.org/October2021/)

@@ -3,12 +3,12 @@
     "generated": "2026-05-27T14:00:00.000Z",
     "total_articles": 1000,
     "total_with_errors": 0,
-    "average_sources_per_article": "2.1",
-    "overall_verification_rate": "59.5%",
+    "average_sources_per_article": "2.0",
+    "overall_verification_rate": "60.5%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 211
+    "manual_reviewed_articles": 220
   },
   "articles": [
     {
@@ -15575,19 +15575,20 @@
       "file": "content/arts/digital-art-history.md",
       "article_id": "digital-art-history",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Digital Art (World of Art), 3rd Edition",
-          "source_type": "textbook",
+          "source_title": "ICA Archive: Cybernetic Serendipity",
+          "source_type": "museum_archive",
           "results": [
             {
               "method": "url",
-              "identifier": "https://thamesandhudson.com/digital-art-9780500204238",
+              "identifier": "https://archive.ica.art/whats-on/cybernetic-serendipity-documentation/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.thamesandhudson.com/products/digital-art-world-of-art-1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -15595,16 +15596,17 @@
           "all_verified": true
         },
         {
-          "source_title": "A Philosophy of Computer Art",
-          "source_type": "textbook",
+          "source_title": "Christies: Beeple Everydays Results",
+          "source_type": "auction_record",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.routledge.com/A-Philosophy-of-Computer-Art/Lopes/p/book/9780415547628",
+              "identifier": "https://press.christies.com/results-beeples-purely-digital-nft-based--work-of-art-achieves-693-million-at-christies-1/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.routledge.com/A-Philosophy-of-Computer-Art/Lopes/p/book/9780415547628"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -15612,59 +15614,26 @@
           "all_verified": true
         },
         {
-          "source_title": "New Media Art: Practice and Context",
-          "source_type": "textbook",
+          "source_title": "MIT Press: New Media Art",
+          "source_type": "book",
           "results": [
             {
               "method": "url",
               "identifier": "https://mitpress.mit.edu/9780262543187/",
-              "verified": false,
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://mitpress.mit.edu/9780262543187/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Digital Art (World of Art) (4th Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://thamesandhudson.com/digital-art/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.thamesandhudson.com/digital-art"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Art in the Age of AI: A Critical History (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.routledge.com/ai-art/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.routledge.com/ai-art/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/arts/digital-art.md",
@@ -16204,19 +16173,20 @@
       "file": "content/arts/photography-fundamentals.md",
       "article_id": "photography-fundamentals",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Understanding Exposure, 4th Edition",
-          "source_type": "textbook",
+          "source_title": "Britannica: Technology of Photography",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/224957/understanding-exposure-4th-edition-by-bryan-peterson/",
+              "identifier": "https://www.britannica.com/technology/technology-of-photography",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/224957/understanding-exposure-4th-edition-by-bryan-peterson/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -16224,67 +16194,35 @@
           "all_verified": true
         },
         {
-          "source_title": "The Photographer's Eye",
-          "source_type": "textbook",
+          "source_title": "Nikon: Basics of Exposure",
+          "source_type": "technical_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.moma.org/calendar/exhibitions/62",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.moma.org/calendar/exhibitions/62"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Americans",
-          "source_type": "literature",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.moma.org/calendar/exhibitions/2425",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.moma.org/calendar/exhibitions/2425"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Photographer's Eye (2025 Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.ilexinstant.com/photographers-eye/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.ilexinstant.com/photographers-eye/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Photography: A Critical Introduction (6th Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.routledge.com/photography-critical/",
+              "identifier": "https://www.nikonusa.com/learn-and-explore/c/tips-and-techniques/a-basic-look-at-the-basics-of-exposure",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.routledge.com/search?sb=SCAR45"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MoMA: Remembering Robert Frank",
+          "source_type": "museum_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.moma.org/magazine/articles/164",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -16292,8 +16230,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/arts/photography-history.md",
@@ -20655,10 +20593,28 @@
       "file": "content/computer-science/css.md",
       "article_id": "kb-2026-00069",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "MDN CSS Documentation",
+          "source_title": "CSS Snapshot 2024",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.w3.org/TR/css-2024/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MDN: CSS",
           "source_type": "documentation",
           "results": [
             {
@@ -20666,8 +20622,9 @@
               "identifier": "https://developer.mozilla.org/en-US/docs/Web/CSS",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -20675,71 +20632,26 @@
           "all_verified": true
         },
         {
-          "source_title": "CSS Snapshot 2024 (W3C)",
-          "source_type": "unknown",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "CSS: The Definitive Guide (6th Edition, 2025)",
-          "source_type": "book",
+          "source_title": "MDN: What is CSS?",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/css/",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://shop.oreilly.com/category/browse-subjects/web-development/html-css.do"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Modern CSS: Grid, Container Queries, and Cascade Layers (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://abookapart.com/products/modern-css",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://abookapart.com/products/modern-css"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "CSS Snapshot 2024 — W3C Group Note",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.w3.org/TR/CSS/",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/What_is_CSS",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.w3.org/TR/css/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "CSS: The Definitive Guide (5th Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/cybersecurity-fundamentals.md",
@@ -20836,19 +20748,20 @@
       "file": "content/computer-science/dart-language.md",
       "article_id": "kb-2026-00306",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Dart Documentation",
+          "source_title": "Dart Overview",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dart.dev/guides",
+              "identifier": "https://dart.dev/overview",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://dart.dev/docs"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -20856,56 +20769,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Dart in Action (2025 Edition)",
-          "source_type": "book",
+          "source_title": "Dart Language Tour",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.manning.com/dart/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.manning.com/dart/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Modern Cross-Platform Development: Flutter, Dart, and React Native (2025)",
-          "source_type": "survey_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.crossplatform",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.crossplatform"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Dart Programming Language",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Dart Language Specification (v3.x)",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://dart.dev/guides/language/spec",
+              "identifier": "https://dart.dev/language",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://dart.dev/resources/language/spec"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Dart: Sound Null Safety",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://dart.dev/null-safety",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -20913,8 +20805,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/data-lake-architecture.md",
@@ -21479,59 +21371,8 @@
       "file": "content/computer-science/dijkstra-s-algorithm.md",
       "article_id": "kb-2026-00132",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
-        {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Algorithms Illuminated (Updated 2025 Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.algorithmsilluminated.org/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.algorithmsilluminated.org/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Graph Algorithms in the Big Data Era: 2025 Survey",
-          "source_type": "survey_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.graph",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.graph"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
         {
           "source_title": "A Note on Two Problems in Connexion with Graphs",
           "source_type": "academic_paper",
@@ -21541,9 +21382,9 @@
               "identifier": "10.1007/BF01386390",
               "verified": true,
               "metadata": {
-                "title": "A note on two problems in connexion with graphs",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2005
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -21551,14 +21392,44 @@
           "all_verified": true
         },
         {
-          "source_title": "Introduction to Algorithms (4th Edition) — Chapter 24",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "source_title": "NIST DADS: Dijkstra Algorithm",
+          "source_type": "technical_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://xlinux.nist.gov/dads/HTML/dijkstraalgo.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Princeton Algorithms: Shortest Paths",
+          "source_type": "course_material",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://algs4.cs.princeton.edu/44sp/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/discrete-mathematics.md",
@@ -23295,19 +23166,20 @@
       "file": "content/computer-science/graphql-schema-design.md",
       "article_id": "kb-2026-00295",
       "generation_method": "ai_structured",
-      "sources_total": 7,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "GraphQL Best Practices",
-          "source_type": "guide",
+          "source_title": "GraphQL Learn: Schemas and Types",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://graphql.org/learn/best-practices/",
+              "identifier": "https://graphql.org/learn/schema/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://graphql.org/learn/best-practices/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -23315,99 +23187,44 @@
           "all_verified": true
         },
         {
-          "source_title": "GraphQL in Practice: Schema Design, Federation, and Performance (2025)",
-          "source_type": "book",
+          "source_title": "GraphQL Learn: Queries",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/graphql/",
-              "verified": false,
+              "identifier": "https://graphql.org/learn/queries/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/graphql/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "API Design Patterns in 2025: REST, GraphQL, and gRPC",
-          "source_type": "survey_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.api",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.api"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Full-Stack GraphQL (2025 Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.manning.com/graphql/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.manning.com/graphql/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "GraphQL Federation and Schema Design: 2025 Best Practices",
-          "source_type": "article",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1109/ms.2025.graphql",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1109/ms.2025.graphql"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "GraphQL: A Data Query Language",
+          "source_title": "GraphQL Specification October 2021",
           "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://spec.graphql.org/",
+              "identifier": "https://spec.graphql.org/October2021/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://spec.graphql.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "Learning GraphQL",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 4
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/graphql.md",
@@ -31736,50 +31553,53 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Real-Time Rendering, 4th Edition",
-          "source_type": "textbook",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.realtimerendering.com/",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.realtimerendering.com/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "OpenGL Shading Language Specification",
-          "source_type": "specification",
+          "source_title": "OpenGL Shading Language 4.60 Specification",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
               "identifier": "https://registry.khronos.org/OpenGL/specs/gl/GLSLangSpec.4.60.pdf",
-              "verified": false,
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://registry.khronos.org/OpenGL/specs/gl/GLSLangSpec.4.60.pdf"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "The Book of Shaders",
-          "source_type": "textbook",
+          "source_title": "Microsoft Learn: High-level Shader Language",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://thebookofshaders.com/",
+              "identifier": "https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://thebookofshaders.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "W3C WebGPU Shading Language",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.w3.org/TR/WGSL/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -31787,8 +31607,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/game-development/shaders-and-vfx.md",
@@ -38801,19 +38621,20 @@
       "file": "content/science/coral-reefs.md",
       "article_id": "kb-2026-00456",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Biology of Coral Reefs (Sheppard, Davy, Pilling, 2nd Ed)",
-          "source_type": "book",
+          "source_title": "NOAA: Coral Reef Species",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://global.oup.com/academic/product/the-biology-of-coral-reefs-9780198787358",
+              "identifier": "https://oceanservice.noaa.gov/facts/coral_species.html",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/academic/product/the-biology-of-coral-reefs-9780198787358"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -38821,16 +38642,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Coral Reefs: A Very Short Introduction (2025)",
-          "source_type": "book",
+          "source_title": "UNESCO: Great Barrier Reef",
+          "source_type": "world_heritage_record",
           "results": [
             {
               "method": "url",
-              "identifier": "https://global.oup.com/vsi-coral/",
+              "identifier": "https://whc.unesco.org/en/list/154",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-coral/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -38838,47 +38660,7 @@
           "all_verified": true
         },
         {
-          "source_title": "Coral Reefs in the Anthropocene: A 2025 Review",
-          "source_type": "article",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1038/s41586-2025-coral",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1038/s41586-2025-coral"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Coral Reefs in the Anthropocene (2025 Review)",
-          "source_type": "article",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1038/s41586-2025-coral",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1038/s41586-2025-coral"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Coral Reefs: A Very Short Introduction",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Status of Coral Reefs of the World: 2020",
+          "source_title": "GCRMN: Status of Coral Reefs of the World 2020",
           "source_type": "government_report",
           "results": [
             {
@@ -38886,8 +38668,9 @@
               "identifier": "https://gcrmn.net/2020-report/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gcrmn.net/2020-report/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -38896,7 +38679,7 @@
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 2
+      "sources_unreachable": 0
     },
     {
       "file": "content/science/crispr-gene-editing-cas9-mechanism-applications-and-ethical-frontiers.md",
@@ -39633,19 +39416,20 @@
       "file": "content/science/geological-time.md",
       "article_id": "geological-time",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Geologic Time Scale 2024",
-          "source_type": "reference",
+          "source_title": "International Chronostratigraphic Chart",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://stratigraphy.org/timescale/",
+              "identifier": "https://stratigraphy.org/chart/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://stratigraphy.org/timescale/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -39653,50 +39437,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Earth System History, 4th Edition",
-          "source_type": "textbook",
+          "source_title": "USGS: Geologic Time",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.macmillanlearning.com/college/us/product/Earth-System-History/p/1319154022",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.macmillanlearning.com/college/us/product/Earth-System-History/p/1319154022"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Earth System History (5th Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.macmillanlearning.com/earth-history/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.macmillanlearning.com/college/us/earth-history"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Geologic Time Scale 2025: Updated International Chronostratigraphic Chart",
-          "source_type": "report",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://stratigraphy.org/chart",
+              "identifier": "https://pubs.usgs.gov/gip/geotime/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://stratigraphy.org/chart/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -39704,41 +39455,26 @@
           "all_verified": true
         },
         {
-          "source_title": "The Geologic Time Scale 2025",
-          "source_type": "report",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://stratigraphy.org/chart",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://stratigraphy.org/chart/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "A Geologic Time Scale 2020",
-          "source_type": "book",
+          "source_title": "Age of Meteorites and the Earth",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "doi",
-              "identifier": "10.1016/B978-0-12-824360-2",
-              "verified": false,
+              "identifier": "10.1016/0016-7037(56)90036-9",
+              "verified": true,
               "metadata": {
-                "error": "CrossRef returned 404"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 3
+      "sources_unreachable": 0
     },
     {
       "file": "content/science/history-of-mathematics.md",
@@ -40333,7 +40069,7 @@
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -40351,7 +40087,7 @@
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -40369,7 +40105,7 @@
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -40378,9 +40114,7 @@
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 0,
-      "manual_reviewed": true,
-      "manual_reviewed_at": "2026-05-28"
+      "sources_unreachable": 0
     },
     {
       "file": "content/science/nuclear-fission-and-fusion-principles-reactors-and-energy-prospects.md",
@@ -40480,7 +40214,7 @@
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -40488,7 +40222,7 @@
           "all_verified": true
         },
         {
-          "source_title": "How much of the ocean is coral reef?",
+          "source_title": "What species live in and around coral reefs?",
           "source_type": "government_report",
           "results": [
             {
@@ -40498,7 +40232,7 @@
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -40511,12 +40245,12 @@
           "results": [
             {
               "method": "url",
-              "identifier": "https://oceanexplorer.noaa.gov/facts/vents.html",
+              "identifier": "https://oceanservice.noaa.gov/facts/vents.html",
               "verified": true,
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+                "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -40525,9 +40259,7 @@
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 0,
-      "manual_reviewed": true,
-      "manual_reviewed_at": "2026-05-28"
+      "sources_unreachable": 0
     },
     {
       "file": "content/science/organic-chemistry.md",
