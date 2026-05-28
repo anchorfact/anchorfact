@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 342,
     "average_sources_per_article": "2.2",
-    "overall_verification_rate": "68.9%",
+    "overall_verification_rate": "69.5%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 277
+    "manual_reviewed_articles": 287
   },
   "articles": [
     {
@@ -10145,19 +10145,20 @@
       "file": "content/ai/decision-support-systems.md",
       "article_id": "decision-support-systems",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "AI Clinical Decision Support Systems: A Comprehensive Review of FDA-Cleared Devices and Clinical Outcomes",
-          "source_type": "academic_paper",
+          "source_title": "Clinical Decision Support | Agency for Healthcare Research and Quality",
+          "source_type": "government_resource",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nature.com/npjdigitalmed/",
+              "identifier": "https://www.ahrq.gov/topics/clinical-decision-support-cds.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nature.com/npjdigitalmed/?error=cookies_not_supported&code=24f3de2c-5ef1-431b-b2b3-2c40a91eca1f"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -10165,25 +10166,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Gartner Strategic Technology Trends: Augmented Decision Intelligence (2025)",
-          "source_type": "industry_report",
+          "source_title": "An Overview of Clinical Decision Support Systems: Benefits, Risks, and Strategies for Success",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gartner.com/en/articles/decision-intelligence",
-              "verified": false,
+              "identifier": "https://pubmed.ncbi.nlm.nih.gov/32047862/",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.gartner.com/en/articles/decision-intelligence"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "NIST AI Risk Management Framework",
+          "source_type": "government_framework",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.nist.gov/itl/ai-risk-management-framework",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/deep-reinforcement-learning-algorithms.md",
@@ -11653,35 +11675,56 @@
       "file": "content/ai/human-pose-estimation.md",
       "article_id": "human-pose-estimation",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "ViTPose: Simple Vision Transformer Baselines for Human Pose Estimation",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2204.12484",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "MotionBERT: A Unified Perspective on Learning Human Motion Representations",
+          "source_title": "DeepPose: Human Pose Estimation via Deep Neural Networks",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://openaccess.thecvf.com/content/ICCV2023/html/Zhu_MotionBERT_A_Unified_Perspective_on_Learning_Human_Motion_Representations_ICCV_2023_paper.html",
+              "identifier": "https://arxiv.org/abs/1312.4659",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://openaccess.thecvf.com/content/ICCV2023/html/Zhu_MotionBERT_A_Unified_Perspective_on_Learning_Human_Motion_Representations_ICCV_2023_paper.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenPose: Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1812.08008",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Deep High-Resolution Representation Learning for Human Pose Estimation",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1902.09212",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -11689,8 +11732,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/image-segmentation.md",
@@ -11762,19 +11807,20 @@
       "file": "content/ai/information-extraction.md",
       "article_id": "information-extraction",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Structured information extraction from scientific text with large language models",
-          "source_type": "academic_paper",
+          "source_title": "The Automatic Content Extraction (ACE) Program - Tasks, Data, and Evaluation",
+          "source_type": "conference_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nature.com/articles/s41467-024-45563-x",
+              "identifier": "https://aclanthology.org/L04-1011/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nature.com/articles/s41467-024-45563-x?error=cookies_not_supported&code=af5e71d8-47ce-4efc-bfc4-732fa37f338f"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -11782,24 +11828,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Large Language Models for Generative Information Extraction: A Survey",
+          "source_title": "Neural Architectures for Named Entity Recognition",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2312.17616",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1603.01360",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "A General Framework for Information Extraction using Dynamic Span Graphs",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1909.03546",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/instruction-tuning.md",
@@ -15107,36 +15175,56 @@
       "file": "content/ai/robot-manipulation.md",
       "article_id": "robot-manipulation",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Sim-to-Real Reinforcement Learning for Vision-Based Dexterous Manipulation on Humanoid Robots",
+          "source_title": "Learning Dexterous In-Hand Manipulation",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2502.20396",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "An overview of learning-based dexterous grasping: recent advances, challenges, and future directions",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1007/s10462-025-11262-2",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1808.00177",
               "verified": true,
               "metadata": {
-                "title": "An overview of learning-based dexterous grasping: recent advances and future directions",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2025
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Scalable Deep Reinforcement Learning for Vision-Based Robotic Manipulation",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1806.10293",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RT-1: Robotics Transformer for Real-World Control at Scale",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2212.06817",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -15144,8 +15232,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/scene-text-recognition.md",
@@ -15358,37 +15448,56 @@
       "file": "content/ai/speaker-recognition.md",
       "article_id": "speaker-recognition",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "A review of speaker verification: Methods, network architectures, and future directions",
+          "source_title": "VoxCeleb: a large-scale speaker identification dataset",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.sciencedirect.com/science/article/pii/S0952197625023590",
-              "verified": false,
+              "identifier": "https://arxiv.org/abs/1706.08612",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.sciencedirect.com/science/article/pii/S0952197625023590"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "An enhanced deep learning approach for speaker diarization using neural network architectures",
+          "source_title": "X-Vectors: Robust DNN Embeddings for Speaker Recognition",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.danielpovey.com/files/2018_icassp_xvectors.pdf",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ECAPA-TDNN: Emphasized Channel Attention, Propagation and Aggregation in TDNN Based Speaker Verification",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1038/s41598-025-09385-1",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2005.07143",
               "verified": true,
               "metadata": {
-                "title": "An enhanced deep learning approach for speaker diarization using TitaNet, MarbelNet and time delay network",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2025
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -15396,8 +15505,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/speech-recognition.md",
@@ -15732,20 +15843,20 @@
       "file": "content/ai/text-summarization.md",
       "article_id": "text-summarization",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "A Systematic Survey of Text Summarization: From Statistical Methods to Large Language Models",
+          "source_title": "Get To The Point: Summarization with Pointer-Generator Networks",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1145/3731445",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1704.04368",
               "verified": true,
               "metadata": {
-                "title": "A Systematic Survey of Text Summarization: From Statistical Methods to Large Language Models",
-                "publisher": "Association for Computing Machinery (ACM)",
-                "year": 2025
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -15753,24 +15864,46 @@
           "all_verified": true
         },
         {
-          "source_title": "A Systematic Survey of Text Summarization: From Statistical Methods to LLMs",
+          "source_title": "BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2406.11289",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1910.13461",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1912.08777",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/text-to-speech.md",
@@ -15818,20 +15951,20 @@
       "file": "content/ai/text-to-sql.md",
       "article_id": "text-to-sql",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "A robust natural language text-to-SQL generation framework leveraging large language models",
+          "source_title": "Seq2SQL: Generating Structured Queries from Natural Language using Reinforcement Learning",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1038/s41598-026-39128-9",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1709.00103",
               "verified": true,
               "metadata": {
-                "title": "A robust natural language text-to-SQL generation framework with dynamic strategies based on LLMs",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2026
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -15839,24 +15972,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Spider: A Large-Scale Human-Labeled Dataset for Complex and Cross-Database Semantic Parsing",
+          "source_title": "Spider: A Large-Scale Human-Labeled Dataset for Complex and Cross-Domain Semantic Parsing and Text-to-SQL Task",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1809.08887",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1809.08887",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "PICARD: Parsing Incrementally for Constrained Auto-Regressive Decoding from Language Models",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2109.05093",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/time-series-forecasting.md",
@@ -16328,45 +16483,67 @@
       "file": "content/ai/vision-language-action-models.md",
       "article_id": "vision-language-action-models",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Vision-Language-Action (VLA) Models: Concepts, Methods, and Applications (Comprehensive Survey)",
+          "source_title": "PaLM-E: An Embodied Multimodal Language Model",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2505.04769",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Emu3: Multimodal learning with next-token prediction for large multimodal models",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1038/s41586-025-10041-x",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2303.03378",
               "verified": true,
               "metadata": {
-                "title": "Multimodal learning with next-token prediction for large multimodal models",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2026
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2307.15818",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2406.09246",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
             }
           ],
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/vision-transformers.md",
@@ -16414,20 +16591,20 @@
       "file": "content/ai/visual-question-answering.md",
       "article_id": "visual-question-answering",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Visual Question Answering: A Survey of Methods, Datasets, and Future Directions",
+          "source_title": "VQA: Visual Question Answering",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1145/3728635",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1505.00468",
               "verified": true,
               "metadata": {
-                "title": "Visual Question Answering: A Survey of Methods, Datasets, Evaluation, and Challenges",
-                "publisher": "Association for Computing Machinery (ACM)",
-                "year": 2025
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -16435,25 +16612,46 @@
           "all_verified": true
         },
         {
-          "source_title": "VQA and Visual Reasoning: An Overview of Approaches, Datasets, and Future Challenges",
+          "source_title": "Making the V in VQA Matter: Elevating the Role of Image Understanding in Visual Question Answering",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.sciencedirect.com/science/article/pii/S0925231225000177",
-              "verified": false,
+              "identifier": "https://arxiv.org/abs/1612.00837",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.sciencedirect.com/science/article/pii/S0925231225000177"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1707.07998",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/world-models-video-prediction.md",
@@ -20110,19 +20308,56 @@
       "file": "content/business/time-value-of-money.md",
       "article_id": "kb-2026-00436",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Principles of Corporate Finance (Brealey, Myers, Allen, 14th Ed)",
-          "source_type": "book",
+          "source_title": "7.2 Time Value of Money (TVM) Basics - Principles of Finance",
+          "source_type": "open_textbook",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.mheducation.com/highered/product/principles-corporate-finance-brealey-myers/M9781264080946.html",
+              "identifier": "https://openstax.org/books/principles-finance/pages/7-2-time-value-of-money-tvm-basics",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.mheducation.com/highered/product/principles-corporate-finance-brealey-myers/M9781264080946.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "7.4 Applications of TVM in Finance - Principles of Finance",
+          "source_type": "open_textbook",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openstax.org/books/principles-finance/pages/7-4-applications-of-tvm-in-finance",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "What is compound interest?",
+          "source_type": "government_resource",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.investor.gov/additional-resources/information/youth/teachers-classroom-resources/what-compound-interest",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -20130,8 +20365,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/business/unemployment-types-measurement-and-labor-market-dynamics.md",

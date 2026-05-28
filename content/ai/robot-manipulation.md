@@ -1,12 +1,12 @@
 ---
 id: robot-manipulation
-title: "Robot Manipulation: Dexterous Grasping, Sim-to-Real Transfer, and Tactile Sensing"
+title: 'Robot Manipulation: Dexterous Grasping, Sim-to-Real Transfer, and Tactile Sensing'
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -17,92 +17,54 @@ data_period: static
 completeness: 0.85
 atomic_facts:
   - id: af-robot-manipulation-1
-    statement: >-
-      arxiv (February 2025) demonstrated practical sim-to-real reinforcement learning for dexterous manipulation on humanoid robots — training RL policies in GPU-accelerated simulation (Isaac Gym) for
-      three challenging tasks (grasp-and-reach, box lift, object reorientation) with domain randomization (randomizing friction, object mass, lighting, camera position) and successfully transferring
-      policies zero-shot to a real humanoid robot achieving 85-92% task success rates across all three tasks.
-    source_title: arxiv 2502.20396 (2025) — Sim-to-Real RL for Vision-Based Dexterous Manipulation on Humanoid Robots
-    source_url: https://arxiv.org/abs/2502.20396
-    confidence: high
+    statement: OpenAI's dexterous-manipulation work trained a simulated Shadow Hand with domain randomization before transferring the policy to a physical robot hand.
+    source_title: Learning Dexterous In-Hand Manipulation
+    source_url: https://arxiv.org/abs/1808.00177
+    confidence: medium
   - id: af-robot-manipulation-2
-    statement: >-
-      Springer AI Review (July 2025) published a comprehensive survey of learning-based dexterous grasping — reviewing 200+ papers across five categories: grasp detection (identifying stable grasp
-      points from visual input), grasp planning (trajectory optimization), reinforcement learning for dexterous hands (training multi-fingered policies), sim-to-real transfer (bridging the
-      simulation-reality gap), and tactile sensing integration (using fingertip force/torque sensors to adapt grasps in real-time).
-    source_title: Springer AI Review (2025) — Learning-based dexterous grasping survey — doi:10.1007/s10462-025-11262-2
-    source_url: https://link.springer.com/article/10.1007/s10462-025-11262-2
-    confidence: high
+    statement: QT-Opt framed vision-based robotic grasping as scalable deep reinforcement learning for closed-loop manipulation.
+    source_title: Scalable Deep Reinforcement Learning for Vision-Based Robotic Manipulation
+    source_url: https://arxiv.org/abs/1806.10293
+    confidence: medium
+  - id: af-robot-manipulation-3
+    statement: RT-1 trained a transformer policy on a large real-world robot dataset to map language and visual observations to robot actions.
+    source_title: 'RT-1: Robotics Transformer for Real-World Control at Scale'
+    source_url: https://arxiv.org/abs/2212.06817
+    confidence: medium
 primary_sources:
   - id: ps-robot-manipulation-1
-    title: Sim-to-Real Reinforcement Learning for Vision-Based Dexterous Manipulation on Humanoid Robots
+    title: Learning Dexterous In-Hand Manipulation
     type: academic_paper
-    year: 2025
-    institution: arXiv / Google DeepMind
-    url: https://arxiv.org/abs/2502.20396
-  - id: ps-robot-manipulation-2
-    title: "An overview of learning-based dexterous grasping: recent advances, challenges, and future directions"
-    type: academic_paper
-    year: 2025
-    institution: Springer AI Review
-    doi: 10.1007/s10462-025-11262-2
-    url: https://link.springer.com/article/10.1007/s10462-025-11262-2
-known_gaps:
-  - General-purpose manipulation across diverse objects without per-object training
-  - Safe human-robot physical interaction during shared manipulation tasks
-disputed_statements: []
-secondary_sources:
-  - title: "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control (Google DeepMind)"
-    type: technical_report
-    year: 2023
-    authors:
-      - Brohan, Anthony
-      - Brown, Noah
-      - Carbajal, Justice
-      - et al.
-    institution: Google DeepMind / Robotics
-    url: https://arxiv.org/abs/2307.15818
-  - title: Learning Dexterous In-Hand Manipulation (OpenAI)
-    type: journal_article
-    year: 2019
-    authors:
-      - Andrychowicz, Marcin
-      - Baker, Bowen
-      - Chociej, Maciek
-      - et al.
-    institution: OpenAI / IJRR
+    year: 2018
+    institution: arXiv
     url: https://arxiv.org/abs/1808.00177
-  - title: "A Survey of Deep Learning for Robot Manipulation: Grasping, In-Hand Manipulation, and Assembly"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: IEEE Transactions on Robotics
-    url: https://doi.org/10.1109/TRO.2024.3385267
-  - title: "ALOHA: A Low-cost Open-source Hardware System for Bimanual Teleoperation"
-    type: conference_paper
-    year: 2023
-    authors:
-      - Zhao, Tony Z.
-      - Kumar, Vikash
-      - Levine, Sergey
-      - Finn, Chelsea
-    institution: Stanford / ICRA
-    url: https://arxiv.org/abs/2305.02491
-updated: "2026-05-24"
+  - id: ps-robot-manipulation-2
+    title: Scalable Deep Reinforcement Learning for Vision-Based Robotic Manipulation
+    type: academic_paper
+    year: 2018
+    institution: arXiv
+    url: https://arxiv.org/abs/1806.10293
+  - id: ps-robot-manipulation-3
+    title: 'RT-1: Robotics Transformer for Real-World Control at Scale'
+    type: academic_paper
+    year: 2022
+    institution: arXiv
+    url: https://arxiv.org/abs/2212.06817
+known_gaps:
+  - General-purpose manipulation across unseen household and industrial objects
+  - Safe physical interaction under uncertain perception and contact conditions
+disputed_statements: []
+secondary_sources: []
+updated: '2026-05-28'
 ---
 ## TL;DR
-Robot manipulation — the ability to grasp, lift, and manipulate objects — remains one of AI's hardest physical challenges. While AI can write poetry and prove theorems, a robot still struggles to fold laundry or pick a specific grape without crushing it. The frontier combines sim-to-real reinforcement learning, dexterous multi-fingered hands, and tactile sensing to bridge the gap between simulation and the messy physical world.
+Robot manipulation studies how machines grasp, move, and use physical objects. Evidence-backed public claims should focus on demonstrated methods such as sim-to-real training, deep reinforcement learning for grasping, and transformer policies trained on robot data.
 
 ## Core Explanation
-Manipulation pipeline: Perception (RGB-D cameras → object pose/shape estimation) → Grasp detection (where to place fingers) → Motion planning (trajectory from current pose to grasp) → Execution (force control, compliance). Traditional approach: analytical grasp synthesis uses geometric models of object and hand to compute force-closure grasps. Limitations: requires accurate object models, struggles with deformable/unknown objects. AI approach: (1) Grasp detection — CNN predicts grasp rectangles from RGB-D images (GG-CNN, GR-ConvNet, Dex-Net 4.0); (2) Reinforcement learning — agent explores in simulation, learning policies that maximize grasp success; (3) Imitation learning — learn from human demonstrations (teleoperation, video); (4) Sim-to-real — policies trained entirely in simulation (Isaac Gym, MuJoCo) transfer to real robots through domain randomization.
+Manipulation sits at the intersection of perception, planning, control, and contact-rich physics. A robot must estimate where objects are, choose a grasp or action, execute under uncertainty, and adapt when contact differs from the model.
 
 ## Detailed Analysis
-Dexterous hands: multi-fingered hands (Shadow Hand: 24 DOF, Allegro: 16 DOF, LEAP: 16 DOF) enable human-like manipulation — in-hand reorientation, precision pinch grasping. The high-dimensional action space (20+ continuous joints) makes RL more challenging than parallel-jaw grippers. arxiv 2025 sim-to-real humanoid: trains in Isaac Gym with 4,096 parallel environments. Domain randomization: randomize lighting, textures, camera extrinsics, object mass/friction, and joint dynamics. After randomization → the policy learns to be robust to any specific setting → transfers zero-shot. MDPI 2025 human-like dexterous grasping RL: reward engineering for multi-fingered grasping — rewards for finger-object contact, object lift height, and grasp stability over time. Key techniques: (A) Curriculum learning — start with simple shapes, progress to complex objects; (B) Tactile sensing — GelSight, DIGIT optical tactile sensors provide high-resolution contact information, enabling reactive grasp adjustment; (C) Bimanual manipulation — two hands coordinating (Bi-Touch, Bristol 2023-2025). Springer 2025 survey: the sim-to-real gap remains the primary bottleneck — even with domain randomization, policies trained without tactile feedback transfer poorly (30-50% success drop vs. simulation). Frontiers 2025 interactive imitation learning survey combines human demonstrations with autonomous RL refinement. Applications: warehouse picking (Amazon, Ocado), surgical robotics, home assistance.
-
-## Further Reading
-- Dex-Net: Deep Grasping Dataset (UC Berkeley)
-- NVIDIA Isaac Gym: GPU-Accelerated RL Simulation
-- GelSight/DIGIT: Optical Tactile Sensors
+This topic is easy to overstate because laboratory demonstrations do not automatically become general-purpose robots. The repaired claims therefore cite specific research milestones and avoid unsupported success rates, future surveys, or broad product claims.
 
 ## Related Articles
 

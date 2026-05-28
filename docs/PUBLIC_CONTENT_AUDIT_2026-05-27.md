@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T10:59:30.787Z
+Generated: 2026-05-28T11:08:02.956Z
 
-Snapshot: 555 public / 445 draft / 1640 claims.
+Snapshot: 555 public / 445 draft / 1650 claims.
 
 ## Summary
 
@@ -11,9 +11,9 @@ This is a risk-weighted audit sample of public AnchorFact articles. It is intend
 - Sample size: 20
 - Low verified coverage samples: 1
 - Articles with at least one fail check: 0
-- High-confidence samples needing review: 0
+- High-confidence samples needing review: 1
 - Claim-evidence failures: 0
-- Recommendations: keep_public: 10, downgrade_confidence: 0, repair_sources: 10, move_to_draft: 0
+- Recommendations: keep_public: 10, downgrade_confidence: 1, repair_sources: 9, move_to_draft: 0
 
 ## Method
 
@@ -29,20 +29,20 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 4 | high_confidence | `ai/ai-in-healthcare` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 5 | high_confidence | `ai/ai-red-teaming-and-safety` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 6 | medium_capped_claims | `business/strategic-management-theory` | medium | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 7 | medium_capped_claims | `ai/decision-support-systems` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 8 | medium_capped_claims | `ai/human-pose-estimation` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 9 | medium_capped_claims | `ai/information-extraction` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 7 | medium_capped_claims | `ai/multi-agent-reinforcement-learning` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 8 | medium_capped_claims | `ai/multimodal-search` | medium | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 9 | medium_capped_claims | `ai/program-synthesis-verification` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
 | 10 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 12 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 13 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 14 | risk_fallback | `ai/robot-manipulation` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 15 | risk_fallback | `ai/speaker-recognition` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 16 | risk_fallback | `ai/text-summarization` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 17 | risk_fallback | `ai/text-to-sql` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 18 | risk_fallback | `ai/vision-language-action-models` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 19 | risk_fallback | `ai/visual-question-answering` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 20 | risk_fallback | `business/time-value-of-money` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 14 | risk_fallback | `computer-science/bun-runtime` | low | 3/5 (60.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 15 | risk_fallback | `computer-science/eslint` | low | 2/4 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 16 | risk_fallback | `computer-science/responsive-web-design` | low | 2/3 (66.7%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 17 | risk_fallback | `computer-science/webassembly` | high | 4/8 (50.0%) | 2 | source=weak; claim=pass; summary=pass | downgrade_confidence |
+| 18 | risk_fallback | `game-development/godot-engine` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 19 | risk_fallback | `game-development/pathfinding-algorithms-in-games` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 20 | risk_fallback | `game-development/real-time-strategy-rts-game-design` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
 
 ## Article Findings
 
@@ -136,10 +136,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 7. AI Decision Support Systems: Clinical CDSS, Business Intelligence, and Augmented Decision-Making
+### 7. Multi-Agent Reinforcement Learning: Cooperation, Competition, and Emergent Strategies
 
-- canonical slug: `ai/decision-support-systems`
-- canonical URL: https://anchorfact.org/ai/decision-support-systems/
+- canonical slug: `ai/multi-agent-reinforcement-learning`
+- canonical URL: https://anchorfact.org/ai/multi-agent-reinforcement-learning/
 - bucket: `medium_capped_claims`
 - confidence: `medium` (verified_sources, score 0.74)
 - verified source coverage: 1/2 (50.0%)
@@ -151,27 +151,27 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 8. Human Pose Estimation: 2D/3D Keypoint Detection and Transformer-Based Body Tracking
+### 8. Multimodal Search: Cross-Modal Retrieval, Product Search, and Multimodal Embeddings
 
-- canonical slug: `ai/human-pose-estimation`
-- canonical URL: https://anchorfact.org/ai/human-pose-estimation/
+- canonical slug: `ai/multimodal-search`
+- canonical URL: https://anchorfact.org/ai/multimodal-search/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.73)
-- verified source coverage: 1/2 (50.0%)
+- confidence: `medium` (verified_sources, score 0.79)
+- verified source coverage: 2/2 (100.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification
-- source-title match: `weak`
+- quality reasons: none
+- source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 9. Information Extraction: NER, Relation Extraction, and LLM-Powered IE
+### 9. Program Synthesis and Formal Verification: Neural Theorem Proving with LLMs
 
-- canonical slug: `ai/information-extraction`
-- canonical URL: https://anchorfact.org/ai/information-extraction/
+- canonical slug: `ai/program-synthesis-verification`
+- canonical URL: https://anchorfact.org/ai/program-synthesis-verification/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.73)
+- confidence: `medium` (verified_sources, score 0.74)
 - verified source coverage: 1/2 (50.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: partial_source_verification
@@ -241,102 +241,102 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 14. Robot Manipulation: Dexterous Grasping, Sim-to-Real Transfer, and Tactile Sensing
+### 14. Bun Runtime
 
-- canonical slug: `ai/robot-manipulation`
-- canonical URL: https://anchorfact.org/ai/robot-manipulation/
+- canonical slug: `computer-science/bun-runtime`
+- canonical URL: https://anchorfact.org/computer-science/bun-runtime/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.85)
-- verified source coverage: 1/2 (50.0%)
+- confidence: `low` (verified_sources, score 0.55)
+- verified source coverage: 3/5 (60.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification, high_confidence_evidence_gap
+- quality reasons: partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: none
+- hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 15. Speaker Recognition: Voice Biometrics, Diarization, and Deep Learning for Speaker Verification
+### 15. ESLint
 
-- canonical slug: `ai/speaker-recognition`
-- canonical URL: https://anchorfact.org/ai/speaker-recognition/
+- canonical slug: `computer-science/eslint`
+- canonical URL: https://anchorfact.org/computer-science/eslint/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.85)
-- verified source coverage: 1/2 (50.0%)
+- confidence: `low` (verified_sources, score 0.55)
+- verified source coverage: 2/4 (50.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification, high_confidence_evidence_gap
+- quality reasons: partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: none
+- hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 16. Text Summarization: From Extractive Methods to Abstractive LLM-Based Summarization
+### 16. Responsive Web Design
 
-- canonical slug: `ai/text-summarization`
-- canonical URL: https://anchorfact.org/ai/text-summarization/
+- canonical slug: `computer-science/responsive-web-design`
+- canonical URL: https://anchorfact.org/computer-science/responsive-web-design/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.85)
-- verified source coverage: 1/2 (50.0%)
+- confidence: `low` (verified_sources, score 0.55)
+- verified source coverage: 2/3 (66.7%)
 - claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification, high_confidence_evidence_gap
+- quality reasons: partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: none
+- hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 17. Text-to-SQL: Natural Language Database Querying with Large Language Models
+### 17. WebAssembly (Wasm) 3.0
 
-- canonical slug: `ai/text-to-sql`
-- canonical URL: https://anchorfact.org/ai/text-to-sql/
+- canonical slug: `computer-science/webassembly`
+- canonical URL: https://anchorfact.org/computer-science/webassembly/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.85)
-- verified source coverage: 1/2 (50.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification, high_confidence_evidence_gap
+- confidence: `high` (verified_sources, score 0.87)
+- verified source coverage: 4/8 (50.0%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: partial_source_verification
 - source-title match: `weak`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `downgrade_confidence`
+
+### 18. Godot Engine
+
+- canonical slug: `game-development/godot-engine`
+- canonical URL: https://anchorfact.org/game-development/godot-engine/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.53)
+- verified source coverage: 1/1 (100.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: generic_source_homepage
+- source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: none
+- hygiene flags: generic_source_homepage
 - recommendation: `repair_sources`
 
-### 18. Vision-Language-Action Models: Unified Multimodal Foundation Models for Embodied AI
+### 19. Pathfinding Algorithms in Games
 
-- canonical slug: `ai/vision-language-action-models`
-- canonical URL: https://anchorfact.org/ai/vision-language-action-models/
+- canonical slug: `game-development/pathfinding-algorithms-in-games`
+- canonical URL: https://anchorfact.org/game-development/pathfinding-algorithms-in-games/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.85)
-- verified source coverage: 1/2 (50.0%)
+- confidence: `low` (verified_sources, score 0.53)
+- verified source coverage: 1/1 (100.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification, high_confidence_evidence_gap
-- source-title match: `weak`
+- quality reasons: generic_source_homepage
+- source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: none
+- hygiene flags: generic_source_homepage
 - recommendation: `repair_sources`
 
-### 19. Visual Question Answering: Vision-Language Models for Image Understanding and Reasoning
+### 20. Real-Time Strategy (RTS) Game Design
 
-- canonical slug: `ai/visual-question-answering`
-- canonical URL: https://anchorfact.org/ai/visual-question-answering/
+- canonical slug: `game-development/real-time-strategy-rts-game-design`
+- canonical URL: https://anchorfact.org/game-development/real-time-strategy-rts-game-design/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.85)
-- verified source coverage: 1/2 (50.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification, high_confidence_evidence_gap
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 20. Time Value of Money
-
-- canonical slug: `business/time-value-of-money`
-- canonical URL: https://anchorfact.org/business/time-value-of-money/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.49)
+- confidence: `low` (verified_sources, score 0.53)
 - verified source coverage: 1/1 (100.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: generic_source_homepage
