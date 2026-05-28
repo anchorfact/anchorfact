@@ -1,79 +1,70 @@
 ---
-id: "kb-2026-00102"
-title: "Notifications API"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00102
+title: Notifications API
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-001"
-    statement: "The Notifications API allows web pages to display system-level desktop notifications, even when the page is in the background. Permission must be granted by the user via `Notification.requestPermission()`."
-    source_title: "Notifications API Living Standard"
-    source_url: "https://notifications.spec.whatwg.org/"
-    confidence: "medium"
-  - id: "fact-computer-science-001"
-    statement: "The Notifications API allows web pages to display system-level desktop notifications, even when the page is in the background. Permission must be granted by the user via `Notification.requestPermission()`."
-    source_title: "Notifications API Living Standard"
-    source_url: "https://notifications.spec.whatwg.org/"
-    confidence: "medium"
-
+  - id: fact-computer-science-001
+    statement: The Notifications API lets web pages control the display of system notifications to users.
+    source_title: Notifications API
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API
+    confidence: medium
+  - id: fact-computer-science-002
+    statement: Notification.requestPermission() asks the user for permission to display notifications.
+    source_title: "Notification: requestPermission() static method"
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/Notification/requestPermission_static
+    confidence: medium
+  - id: fact-computer-science-003
+    statement: ServiceWorkerRegistration.showNotification() displays a notification from a service worker registration.
+    source_title: "ServiceWorkerRegistration: showNotification() method"
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/showNotification
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - Browser-specific permission UI and anti-abuse restrictions
+  - Interaction between Notifications API, Push API, and service workers
+disputed_statements: []
 primary_sources:
-  - title: "Notifications API Living Standard"
-    type: "standard"
-    year: 2025
-    url: "https://notifications.spec.whatwg.org/"
-    institution: "WHATWG"
-
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
+  - title: Notifications API
+    type: documentation
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API
+  - title: "Notification: requestPermission() static method"
+    type: documentation
+    year: 2026
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/Web/API/Notification/requestPermission_static
+  - title: "ServiceWorkerRegistration: showNotification() method"
+    type: documentation
+    year: 2026
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/showNotification
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
-
-
-
 ## TL;DR
-
-The Notifications API allows web pages to display system-level desktop notifications, even when the page is in the background. Permission must be granted by the user via `Notification.requestPermission()`.
+The Notifications API lets web applications ask permission to display system notifications. It is often used together with service workers and the Push API, but local notification display and server push are separate concepts.
 
 ## Core Explanation
+A site must request permission before showing notifications. Once allowed, a page or service worker can create notifications with a title and options such as body text or icons, subject to browser rules and user settings.
 
-`new Notification('Title', { body: '...', icon: '...' })`. The `notificationclick` event handler (in service workers) enables actions when users interact with notifications. Notifications API is distinct from the Push API — notifications are local display; Push API enables server-initiated triggers.
+## Detailed Analysis
+Notification permission is sensitive because abusive prompts and spam degrade user trust. Good implementations ask at a meaningful moment, explain value before prompting, and respect denial or quiet-permission behavior.
 
 ## Further Reading
-
-- [Notifications API Living Standard](https://notifications.spec.whatwg.org/)
+- Notifications API standard
+- MDN requestPermission()
+- MDN showNotification()
 
 ## Related Articles
 

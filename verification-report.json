@@ -2,13 +2,13 @@
   "summary": {
     "generated": "2026-05-27T14:00:00.000Z",
     "total_articles": 1000,
-    "total_with_errors": 340,
+    "total_with_errors": 337,
     "average_sources_per_article": "2.1",
-    "overall_verification_rate": "66.2%",
+    "overall_verification_rate": "66.6%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 208
+    "manual_reviewed_articles": 218
   },
   "articles": [
     {
@@ -4509,36 +4509,56 @@
       "file": "content/ai/ai-for-recruiting.md",
       "article_id": "ai-for-recruiting",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
           "source_title": "Fairness in AI-Driven Recruitment: Challenges, Metrics, Methods, and Future Directions",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2405.19699",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Role of artificial intelligence in employee recruitment: a systematic literature review",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1007/s44282-025-00246-w",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2405.19699",
               "verified": true,
               "metadata": {
-                "title": "Role of artificial intelligence in employee recruitment: systematic review and future research directions",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2025
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Assessing Adverse Impact in Software, Algorithms, and Artificial Intelligence Used in Employment Selection Procedures",
+          "source_type": "government_guidance",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.eeoc.gov/select-issues-assessing-adverse-impact-software-algorithms-and-artificial-intelligence-used",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Regulation (EU) 2024/1689: Artificial Intelligence Act",
+          "source_type": "legislation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -4546,8 +4566,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-regtech-compliance.md",
@@ -4657,19 +4679,20 @@
       "file": "content/ai/ai-for-retail.md",
       "article_id": "ai-for-retail",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Amazon Just Walk Out: AI-Powered Cashierless Retail Technology",
-          "source_type": "industry_report",
+          "source_title": "AWS Just Walk Out",
+          "source_type": "product_documentation",
           "results": [
             {
               "method": "url",
               "identifier": "https://aws.amazon.com/just-walk-out/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://aws.amazon.com/just-walk-out/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -4677,14 +4700,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Deep Reinforcement Learning for Dynamic Pricing and Markdown Optimization in Retail (2023-2025 surveys)",
+          "source_title": "Amazon.com recommendations: item-to-item collaborative filtering",
+          "source_type": "journal_article",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1109/MIC.2003.1167344",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Dynamic Retail Pricing via Q-Learning",
           "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2411.18261",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-robot-navigation.md",
@@ -4800,81 +4855,67 @@
       "file": "content/ai/ai-for-signal-processing.md",
       "article_id": "ai-for-signal-processing",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "DeepRx: Deep Learning Receiver for Wireless Communications",
+          "source_title": "An Introduction to Deep Learning for the Physical Layer",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2005.09563",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://doi.org/10.1109/TCCN.2017.2758370",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "DeepRx: Deep Learning Receiver for 5G OFDM Systems",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2005.09563",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
           "source_title": "Cardiologist-level arrhythmia detection and classification in ambulatory electrocardiograms using a deep neural network",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1038/s41591-018-0268-3",
+              "method": "url",
+              "identifier": "https://www.nature.com/articles/s41591-018-0268-3",
               "verified": true,
               "metadata": {
-                "title": "Cardiologist-level arrhythmia detection and classification in ambulatory electrocardiograms using a deep neural network",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2018
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "An Introduction to Deep Learning for the Physical Layer",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1109/TCCN.2017.2758370",
-              "verified": true,
-              "metadata": {
-                "title": "An Introduction to Deep Learning for the Physical Layer",
-                "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
-                "year": 2017
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Deep Learning for Wireless Communications: An Emerging Interdisciplinary Paradigm",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1109/MWC.2019.1800430",
-              "verified": true,
-              "metadata": {
-                "title": "Adaptive Coherent/Non-Coherent Spatial Modulation Aided Unmanned Aircraft Systems",
-                "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
-                "year": 2019
-              },
-              "match": false
             }
           ],
           "all_verified": true
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 1
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-smart-homes.md",
@@ -19317,19 +19358,56 @@
       "file": "content/business/tiktok-shop-marketing.md",
       "article_id": "kb-2026-00211",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Harvard Business Review",
-          "source_type": "journal",
+          "source_title": "About TikTok Shop and Showcase",
+          "source_type": "platform_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://hbr.org/",
+              "identifier": "https://ads.us.tiktok.com/help/article/tiktok-shopping-and-showcase?lang=en",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://hbr.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "About TikTok Shop Ads",
+          "source_type": "platform_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://ads.us.tiktok.com/help/article/tiktok-shop-ads-faqs?lang=en",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Disclosures 101 for Social Media Influencers",
+          "source_type": "government_guidance",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -19337,8 +19415,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/business/time-value-of-money.md",
@@ -21425,19 +21505,56 @@
       "file": "content/computer-science/cross-origin-resource-sharing-cors.md",
       "article_id": "kb-2026-00094",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Fetch Standard — CORS Protocol",
-          "source_type": "standard",
+          "source_title": "Cross-Origin Resource Sharing (CORS)",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://fetch.spec.whatwg.org/#http-cors-protocol",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://fetch.spec.whatwg.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Preflight request",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Glossary/Preflight_request",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Same-origin policy",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -21445,8 +21562,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/cross-site-request-forgery-csrf.md",
@@ -22936,19 +23055,20 @@
       "file": "content/computer-science/electron.md",
       "article_id": "kb-2026-00300",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Electron Documentation",
+          "source_title": "Electron: Introduction",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.electronjs.org/docs/",
+              "identifier": "https://www.electronjs.org/docs/latest/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.electronjs.org/docs/latest/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -22956,50 +23076,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Electron in Action (2025 Updated Edition)",
-          "source_type": "book",
+          "source_title": "Electron Process Model",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.manning.com/electron/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.manning.com/electron/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Desktop Application Development: Electron, Tauri, and Beyond (2025)",
-          "source_type": "survey_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.desktop",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.desktop"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Electron Documentation",
-          "source_type": "official_doc",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.electronjs.org/docs",
+              "identifier": "https://www.electronjs.org/docs/latest/tutorial/process-model",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.electronjs.org/docs/latest"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Electron Security",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.electronjs.org/docs/latest/tutorial/security",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -23007,8 +23112,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/elixir-language.md",
@@ -23772,19 +23879,56 @@
       "file": "content/computer-science/fullscreen-api.md",
       "article_id": "kb-2026-00105",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Fullscreen API Standard",
-          "source_type": "standard",
+          "source_title": "Fullscreen API",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://fullscreen.spec.whatwg.org/",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://fullscreen.spec.whatwg.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Element: requestFullscreen() method",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Element/requestFullscreen",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Document: fullscreenElement property",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Document/fullscreenElement",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -23792,8 +23936,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/functional-programming-monads-functors-and-category-theory-in-code.md",
@@ -24825,19 +24971,56 @@
       "file": "content/computer-science/html5-semantic-elements.md",
       "article_id": "kb-2026-00168",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "HTML Living Standard",
+          "source_title": "HTML Standard: the main element",
           "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://html.spec.whatwg.org/",
+              "identifier": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-main-element",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://html.spec.whatwg.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "HTML Standard: the article element",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://html.spec.whatwg.org/multipage/sections.html#the-article-element",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "HTML Standard: the nav element",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://html.spec.whatwg.org/multipage/sections.html#the-nav-element",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -24845,8 +25028,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/http-3-quic-protocol-and-next-generation-web-transport.md",
@@ -26832,19 +27017,56 @@
       "file": "content/computer-science/notifications-api.md",
       "article_id": "kb-2026-00102",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Notifications API Living Standard",
-          "source_type": "standard",
+          "source_title": "Notifications API",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://notifications.spec.whatwg.org/",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://notifications.spec.whatwg.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Notification: requestPermission() static method",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Notification/requestPermission_static",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ServiceWorkerRegistration: showNotification() method",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/showNotification",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -26852,8 +27074,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/number-theory.md",
@@ -27309,19 +27533,56 @@
       "file": "content/computer-science/package-managers-npm-yarn-pnpm.md",
       "article_id": "kb-2026-00173",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "npm Documentation",
+          "source_title": "npm package.json",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.npmjs.com/",
+              "identifier": "https://docs.npmjs.com/cli/configuring-npm/package-json",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://docs.npmjs.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "npm package-lock.json",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.npmjs.com/cli/configuring-npm/package-lock-json",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "pnpm: Symlinked node_modules structure",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://pnpm.io/symlinked-node-modules-structure",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-seventh targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -27329,8 +27590,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/packer.md",

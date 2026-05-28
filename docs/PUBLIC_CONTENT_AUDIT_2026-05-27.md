@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T09:36:08.543Z
+Generated: 2026-05-28T09:48:04.551Z
 
-Snapshot: 555 public / 445 draft / 1595 claims.
+Snapshot: 555 public / 445 draft / 1605 claims.
 
 ## Summary
 
@@ -29,20 +29,20 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 4 | high_confidence | `ai/ai-in-healthcare` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 5 | high_confidence | `ai/ai-red-teaming-and-safety` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 6 | medium_capped_claims | `business/strategic-management-theory` | medium | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 7 | medium_capped_claims | `ai/ai-for-recruiting` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 8 | medium_capped_claims | `ai/ai-for-retail` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 9 | medium_capped_claims | `ai/ai-for-signal-processing` | medium | 3/4 (75.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 7 | medium_capped_claims | `ai/ai-for-software-testing` | medium | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 8 | medium_capped_claims | `ai/ai-for-space-exploration` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 9 | medium_capped_claims | `ai/ai-for-transportation` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
 | 10 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 12 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 13 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 14 | risk_fallback | `business/tiktok-shop-marketing` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 15 | risk_fallback | `computer-science/cross-origin-resource-sharing-cors` | medium | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 16 | risk_fallback | `computer-science/electron` | low | 2/4 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 17 | risk_fallback | `computer-science/fullscreen-api` | medium | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 18 | risk_fallback | `computer-science/html5-semantic-elements` | medium | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 19 | risk_fallback | `computer-science/notifications-api` | medium | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 20 | risk_fallback | `computer-science/package-managers-npm-yarn-pnpm` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 14 | risk_fallback | `computer-science/r-language` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 15 | risk_fallback | `computer-science/scala-language` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 16 | risk_fallback | `computer-science/vite` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 17 | risk_fallback | `computer-science/websocket-api` | medium | 5/7 (71.4%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 18 | risk_fallback | `computer-science/xmlhttprequest` | medium | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 19 | risk_fallback | `science/history-of-mathematics` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 20 | risk_fallback | `science/human-memory` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
 
 ## Article Findings
 
@@ -136,25 +136,25 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 7. AI for Recruiting: Resume Screening, Talent Matching, and Fairness in Hiring
+### 7. AI for Software Testing: Automated Test Generation, Fuzzing, and Quality Assurance
 
-- canonical slug: `ai/ai-for-recruiting`
-- canonical URL: https://anchorfact.org/ai/ai-for-recruiting/
+- canonical slug: `ai/ai-for-software-testing`
+- canonical URL: https://anchorfact.org/ai/ai-for-software-testing/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.85)
-- verified source coverage: 1/2 (50.0%)
+- confidence: `medium` (verified_sources, score 0.79)
+- verified source coverage: 2/2 (100.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification, high_confidence_evidence_gap
-- source-title match: `weak`
+- quality reasons: none
+- source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 8. AI for Retail: Cashierless Stores, Dynamic Pricing, and Personalized Shopping
+### 8. AI for Space Exploration: Autonomous Navigation, Earth Observation, and Spacecraft Autonomy
 
-- canonical slug: `ai/ai-for-retail`
-- canonical URL: https://anchorfact.org/ai/ai-for-retail/
+- canonical slug: `ai/ai-for-space-exploration`
+- canonical URL: https://anchorfact.org/ai/ai-for-space-exploration/
 - bucket: `medium_capped_claims`
 - confidence: `medium` (verified_sources, score 0.74)
 - verified source coverage: 1/2 (50.0%)
@@ -166,15 +166,15 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 9. AI for Signal Processing: Deep Learning for Wireless, Radar, and Biomedical Signals
+### 9. AI for Transportation: Traffic Flow Prediction, Intelligent Transportation Systems, and Smart Mobility
 
-- canonical slug: `ai/ai-for-signal-processing`
-- canonical URL: https://anchorfact.org/ai/ai-for-signal-processing/
+- canonical slug: `ai/ai-for-transportation`
+- canonical URL: https://anchorfact.org/ai/ai-for-transportation/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.84)
-- verified source coverage: 3/4 (75.0%)
+- confidence: `medium` (verified_sources, score 0.85)
+- verified source coverage: 1/2 (50.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification
+- quality reasons: partial_source_verification, high_confidence_evidence_gap
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
@@ -241,10 +241,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 14. TikTok Shop Marketing
+### 14. R Language
 
-- canonical slug: `business/tiktok-shop-marketing`
-- canonical URL: https://anchorfact.org/business/tiktok-shop-marketing/
+- canonical slug: `computer-science/r-language`
+- canonical URL: https://anchorfact.org/computer-science/r-language/
 - bucket: `risk_fallback`
 - confidence: `low` (verified_sources, score 0.5)
 - verified source coverage: 1/1 (100.0%)
@@ -253,17 +253,17 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: duplicate_sources, generic_source_homepage
+- hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 15. Cross-Origin Resource Sharing (CORS)
+### 15. Scala Language
 
-- canonical slug: `computer-science/cross-origin-resource-sharing-cors`
-- canonical URL: https://anchorfact.org/computer-science/cross-origin-resource-sharing-cors/
+- canonical slug: `computer-science/scala-language`
+- canonical URL: https://anchorfact.org/computer-science/scala-language/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.745)
+- confidence: `low` (verified_sources, score 0.5)
 - verified source coverage: 1/1 (100.0%)
-- claims: 2 total, 0 capped, 0 missing evidence
+- claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: generic_source_homepage
 - source-title match: `pass`
 - claim-evidence match: `weak`
@@ -271,40 +271,40 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 16. Electron
+### 16. Vite
 
-- canonical slug: `computer-science/electron`
-- canonical URL: https://anchorfact.org/computer-science/electron/
+- canonical slug: `computer-science/vite`
+- canonical URL: https://anchorfact.org/computer-science/vite/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.55)
-- verified source coverage: 2/4 (50.0%)
+- confidence: `low` (verified_sources, score 0.5)
+- verified source coverage: 1/1 (100.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification
+- quality reasons: generic_source_homepage
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement, generic_source_homepage
+- recommendation: `repair_sources`
+
+### 17. WebSocket API
+
+- canonical slug: `computer-science/websocket-api`
+- canonical URL: https://anchorfact.org/computer-science/websocket-api/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.825)
+- verified source coverage: 5/7 (71.4%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: duplicate_sources, generic_dispute_statement
+- hygiene flags: generic_source_homepage
 - recommendation: `repair_sources`
 
-### 17. Fullscreen API
+### 18. XMLHttpRequest
 
-- canonical slug: `computer-science/fullscreen-api`
-- canonical URL: https://anchorfact.org/computer-science/fullscreen-api/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.735)
-- verified source coverage: 1/1 (100.0%)
-- claims: 2 total, 0 capped, 0 missing evidence
-- quality reasons: generic_source_homepage
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 18. HTML5 Semantic Elements
-
-- canonical slug: `computer-science/html5-semantic-elements`
-- canonical URL: https://anchorfact.org/computer-science/html5-semantic-elements/
+- canonical slug: `computer-science/xmlhttprequest`
+- canonical URL: https://anchorfact.org/computer-science/xmlhttprequest/
 - bucket: `risk_fallback`
 - confidence: `medium` (verified_sources, score 0.745)
 - verified source coverage: 1/1 (100.0%)
@@ -316,14 +316,14 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 19. Notifications API
+### 19. History of Mathematics
 
-- canonical slug: `computer-science/notifications-api`
-- canonical URL: https://anchorfact.org/computer-science/notifications-api/
+- canonical slug: `science/history-of-mathematics`
+- canonical URL: https://anchorfact.org/science/history-of-mathematics/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.745)
+- confidence: `low` (verified_sources, score 0.43)
 - verified source coverage: 1/1 (100.0%)
-- claims: 2 total, 0 capped, 0 missing evidence
+- claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: generic_source_homepage
 - source-title match: `pass`
 - claim-evidence match: `weak`
@@ -331,12 +331,12 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 20. Package Managers (npm, yarn, pnpm)
+### 20. Human Memory
 
-- canonical slug: `computer-science/package-managers-npm-yarn-pnpm`
-- canonical URL: https://anchorfact.org/computer-science/package-managers-npm-yarn-pnpm/
+- canonical slug: `science/human-memory`
+- canonical URL: https://anchorfact.org/science/human-memory/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
+- confidence: `low` (verified_sources, score 0.43)
 - verified source coverage: 1/1 (100.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: generic_source_homepage

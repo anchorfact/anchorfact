@@ -1,73 +1,72 @@
 ---
-id: "kb-2026-00105"
-title: "Fullscreen API"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00105
+title: Fullscreen API
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-001"
-    statement: "The Fullscreen API enables web content to request presentation in full-screen mode (`element.requestFullscreen()`), hiding browser UI. User gesture is required, and `document.exitFullscreen()` restores normal view."
-    source_title: "Fullscreen API Standard"
-    source_url: "https://fullscreen.spec.whatwg.org/"
-    confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "Keyboard access is restricted in fullscreen (no Esc to exit for all keys — only Esc exits by spec)."
-    source_title: "Fullscreen API Standard"
-    source_url: "https://fullscreen.spec.whatwg.org/"
-    confidence: "medium"
-
+  - id: fact-computer-science-001
+    statement: The Fullscreen API adds methods for presenting a specific element and its descendants in fullscreen mode.
+    source_title: Fullscreen API
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API
+    confidence: medium
+  - id: fact-computer-science-002
+    statement: MDN documents requestFullscreen() as a method that asks the user agent to place an element into fullscreen mode.
+    source_title: "Element: requestFullscreen() method"
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/Element/requestFullscreen
+    confidence: medium
+  - id: fact-computer-science-003
+    statement: >-
+      document.fullscreenElement returns the element currently displayed in fullscreen mode, or null when none is
+      fullscreen.
+    source_title: "Document: fullscreenElement property"
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/Document/fullscreenElement
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - Browser-specific behavior around permissions, focus, and keyboard handling
+  - Interaction with embedded frames and permissions policy
+disputed_statements: []
 primary_sources:
-  - title: "Fullscreen API Standard"
-    type: "standard"
-    year: 2024
-    url: "https://fullscreen.spec.whatwg.org/"
-    institution: "WHATWG"
-
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
+  - title: Fullscreen API
+    type: documentation
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "RESTful Web APIs"
-    authors: ["Richardson", "Amundsen"]
-    type: "book"
-    year: 2013
-    url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
-    institution: "O'Reilly"
-
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API
+  - title: "Element: requestFullscreen() method"
+    type: documentation
+    year: 2026
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/Web/API/Element/requestFullscreen
+  - title: "Document: fullscreenElement property"
+    type: documentation
+    year: 2026
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/Web/API/Document/fullscreenElement
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
-
 ## TL;DR
-
-The Fullscreen API enables web content to request presentation in full-screen mode (`element.requestFullscreen()`), hiding browser UI. User gesture is required, and `document.exitFullscreen()` restores normal view.
+The Fullscreen API lets web content request fullscreen display for a specific element and lets scripts detect the current fullscreen element. Browsers mediate this behavior to protect user control.
 
 ## Core Explanation
+The common entry point is element.requestFullscreen(). Scripts can inspect document.fullscreenElement and listen for fullscreen changes. Exiting fullscreen is controlled by browser behavior and the API surface.
 
-`document.fullscreenElement` checks current fullscreen element. CSS pseudo-classes: `:fullscreen` styles the fullscreen element, `::backdrop` styles the background. Keyboard access is restricted in fullscreen (no Esc to exit for all keys — only Esc exits by spec). The API is available only in secure contexts.
+## Detailed Analysis
+Fullscreen behavior depends on user activation, embedding, permissions policy, and browser UI rules. It is useful for video, games, maps, and focused tools, but it should not be treated as a way to hide browser controls permanently from the user.
 
 ## Further Reading
-
-- [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- Fullscreen Standard
+- MDN requestFullscreen()
+- MDN fullscreenElement
 
 ## Related Articles
 

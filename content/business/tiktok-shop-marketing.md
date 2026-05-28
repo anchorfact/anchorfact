@@ -1,72 +1,74 @@
 ---
-id: "kb-2026-00211"
-title: "TikTok Shop Marketing"
-schema_type: "TechArticle"
-category: "business"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00211
+title: TikTok Shop Marketing
+schema_type: TechArticle
+category: business
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
-ai_models: ["claude-opus"]
+generation_method: human_only
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-business-01"
-    statement: "TikTok Shop generated over $15 billion GMV in 2024"
-    source_title: "Harvard Business Review"
-    source_url: "https://hbr.org/"
-    confidence: "medium"
-  - id: "fact-business-02"
-    statement: "Launched in Southeast Asia , expanded to the UK and US"
-    source_title: "Harvard Business Review"
-    source_url: "https://hbr.org/"
-    confidence: "medium"
-
+  - id: fact-business-01
+    statement: >-
+      TikTok describes Shop and Showcase as commerce features that let users discover and buy products through TikTok
+      experiences.
+    source_title: About TikTok Shop and Showcase
+    source_url: https://ads.us.tiktok.com/help/article/tiktok-shopping-and-showcase?lang=en
+    confidence: medium
+  - id: fact-business-02
+    statement: TikTok Shop Ads are advertising products designed to promote products and shops within TikTok Shop commerce flows.
+    source_title: About TikTok Shop Ads
+    source_url: https://ads.us.tiktok.com/help/article/tiktok-shop-ads-faqs?lang=en
+    confidence: medium
+  - id: fact-business-03
+    statement: The FTC says influencers should clearly disclose material connections when endorsing products on social media.
+    source_title: Disclosures 101 for Social Media Influencers
+    source_url: https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
-
-disputed_statements:
-  - statement: "The Efficient Market Hypothesis remains debated: behavioral economists cite persistent market anomalies, while proponents argue that anomalies either disappear after publication or reflect hidden risk factors"
-
+  - Independently verified GMV and seller-outcome metrics by market
+  - Platform policy changes and jurisdiction-specific disclosure rules
+disputed_statements: []
 primary_sources:
-  - title: "Harvard Business Review"
-    type: "journal"
+  - title: About TikTok Shop and Showcase
+    type: platform_documentation
     year: 2026
-    url: "https://hbr.org/"
-    institution: "Harvard Business Publishing"
-
-secondary_sources:
-  - title: "Harvard Business Review"
-    type: "journal"
+    institution: TikTok for Business
+    url: https://ads.us.tiktok.com/help/article/tiktok-shopping-and-showcase?lang=en
+  - title: About TikTok Shop Ads
+    type: platform_documentation
     year: 2026
-    url: "https://hbr.org/"
-    institution: "Harvard Business Publishing"
-  - title: "Marketing Management"
-    type: "book"
-    year: 2015
-    url: "https://www.pearson.com/en-us/subject-catalog/p/marketing-management/P200000009716"
-    institution: "Philip Kotler, Pearson"
-
+    institution: TikTok for Business
+    url: https://ads.us.tiktok.com/help/article/tiktok-shop-ads-faqs?lang=en
+  - title: Disclosures 101 for Social Media Influencers
+    type: government_guidance
+    year: 2019
+    institution: Federal Trade Commission
+    url: https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
 ## TL;DR
-
-TikTok Shop integrates e-commerce directly into short-form video, live streaming, and the platform's marketplace. Sellers create shoppable videos/livestreams where users can purchase without leaving the app. Launched in Southeast Asia (2021), expanded to the UK and US (2023). TikTok Shop generated over $15 billion GMV in 2024.
+TikTok Shop marketing combines short-form video, creator commerce, product showcases, paid shop ads, and live or feed-based shopping experiences. Reliable advice should separate platform features from unverifiable sales claims.
 
 ## Core Explanation
+Marketers use TikTok Shop to connect product discovery and purchase inside the platform. Common tactics include creator collaborations, shoppable content, product pages, paid promotion, and rapid creative testing. Disclosures matter when creators receive payment, free products, affiliate commissions, or other material benefits.
 
-Key formats: shoppable videos (product links in feed), live shopping (real-time selling events), product showcase (storefront tab). Affiliate marketing: creators promote products for commission. TikTok algorithm: interest-based (For You Page) rather than follower-based — small accounts can go viral. Promote products via trending sounds, challenges, and authentic creator-style content.
+## Detailed Analysis
+TikTok Shop performance varies by product category, creator fit, market, pricing, fulfillment quality, and paid-media support. Public-facing claims should avoid unsupported GMV numbers and should cite current platform documentation and advertising or endorsement rules.
 
 ## Further Reading
-
--
+- TikTok Shop and Showcase documentation
+- TikTok Shop Ads documentation
+- FTC disclosures for social media influencers
 
 ## Related Articles
 

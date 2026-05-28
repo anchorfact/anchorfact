@@ -4,9 +4,9 @@ title: Electron
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: '2026-05-25'
-created_date: '2026-05-22'
+confidence: medium
+last_verified: "2026-05-28"
+created_date: "2026-05-22"
 generation_method: ai_structured
 derived_from_human_seed: true
 conflict_of_interest: none_declared
@@ -14,79 +14,54 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-computer-science-001
-    statement: >-
-      Electron (GitHub, 2013, formerly Atom Shell) is a framework for building desktop applications with web technologies (HTML, CSS, JavaScript) using Chromium and Node.js. Each app bundles both
-      runtimes. Used by VS Code, Slack, Discord, Figma, Notion, 1Password.
-    source_title: Electron Documentation
-    source_url: https://www.electronjs.org/docs/
+    statement: Electron lets developers build cross-platform desktop apps with JavaScript, HTML, and CSS.
+    source_title: "Electron: Introduction"
+    source_url: https://www.electronjs.org/docs/latest/
     confidence: medium
   - id: fact-computer-science-002
-    statement: 'Criticism: large bundle size (100+ MB), memory usage.'
-    source_title: Electron Documentation
-    source_url: https://www.electronjs.org/docs/
+    statement: Electron apps use a main process and one or more renderer processes.
+    source_title: Electron Process Model
+    source_url: https://www.electronjs.org/docs/latest/tutorial/process-model
+    confidence: medium
+  - id: fact-computer-science-003
+    statement: Electron security guidance recommends disabling Node.js integration in renderers that display remote content.
+    source_title: Electron Security
+    source_url: https://www.electronjs.org/docs/latest/tutorial/security
     confidence: medium
 completeness: 0.88
 known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - Version-specific API changes in Electron releases
+  - Security hardening for apps that load remote or untrusted content
+disputed_statements: []
 primary_sources:
-  - title: Electron Documentation
+  - title: "Electron: Introduction"
     type: documentation
     year: 2026
-    url: https://www.electronjs.org/docs/
-    institution: OpenJS Foundation
-  - title: Electron in Action (2025 Updated Edition)
-    type: book
-    year: 2025
-    authors:
-      - Kinney S.
-    institution: Manning
-    url: https://www.manning.com/electron/
-  - title: 'Desktop Application Development: Electron, Tauri, and Beyond (2025)'
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.desktop
-  - title: Electron Documentation
-    type: official_doc
-    year: 2024
-    url: https://www.electronjs.org/docs
-    institution: OpenJS Foundation
-secondary_sources:
-  - title: Node.js Design Patterns (3rd Edition)
-    authors:
-      - Casciaro, Mario
-      - Mammino, Luciano
-    type: book
-    year: 2020
-    url: https://www.oreilly.com/library/view/nodejs-design-patterns/9781839214110/
-    institution: Packt
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
+    institution: Electron
+    url: https://www.electronjs.org/docs/latest/
+  - title: Electron Process Model
+    type: documentation
+    year: 2026
+    institution: Electron
+    url: https://www.electronjs.org/docs/latest/tutorial/process-model
+  - title: Electron Security
+    type: documentation
+    year: 2026
+    institution: Electron
+    url: https://www.electronjs.org/docs/latest/tutorial/security
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
 ## TL;DR
-
-Electron (GitHub, 2013, formerly Atom Shell) is a framework for building desktop applications with web technologies (HTML, CSS, JavaScript) using Chromium and Node.js. Each app bundles both runtimes. Used by VS Code, Slack, Discord, Figma, Notion, 1Password.
+Electron is a framework for building desktop applications with web technologies. It combines Chromium for rendering with Node.js and native operating-system integration.
 
 ## Core Explanation
+An Electron app has a main process that controls application lifecycle and native integration, plus renderer processes that display web pages. Communication between processes is explicit, typically through Electron IPC APIs.
 
-Architecture: Main process (Node.js, system access) + Renderer processes (Chromium, UI). IPC (`ipcMain`/`ipcRenderer`) for inter-process communication. `electron-builder` packages for Windows (.exe), macOS (.dmg), Linux (.AppImage/.deb). Native modules via `native-ext`. Criticism: large bundle size (100+ MB), memory usage. Alternatives: Tauri (Rust backend, smaller, WebView instead of full Chromium).
+## Detailed Analysis
+Electron's power comes with security and performance tradeoffs. Apps that load remote content need careful isolation, limited privileges, and current security settings. Bundle size and memory use should be discussed as tradeoffs rather than unsupported numeric claims.
 
 ## Further Reading
-
-- [Electron Documentation](https://www.electronjs.org/docs/)
+- Electron introduction
+- Electron process model
+- Electron security

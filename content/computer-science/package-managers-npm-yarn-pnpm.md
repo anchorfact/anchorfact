@@ -1,76 +1,67 @@
 ---
-id: "kb-2026-00173"
-title: "Package Managers (npm, yarn, pnpm)"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00173
+title: Package Managers (npm, yarn, pnpm)
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-001"
-    statement: "Package managers automate dependency installation, version management, and script execution. npm (Node Package Manager) is the default for Node.js with 2M+ packages. Yarn (Facebook, 2016) added deterministic installs via lockfiles. pnpm (2017) saves disk space via content-addressable storage (symlinked node_modules)."
-    source_title: "pnpm Documentation"
-    source_url: "https://pnpm.io/"
-    confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "`^1.2.3` allows minor/patch updates; `~1.2.3` allows patch only."
-    source_title: "npm Documentation"
-    source_url: "https://docs.npmjs.com/"
-    confidence: "medium"
-
+  - id: fact-computer-science-001
+    statement: npm package.json files describe package metadata, dependencies, and scripts for JavaScript projects.
+    source_title: npm package.json
+    source_url: https://docs.npmjs.com/cli/configuring-npm/package-json
+    confidence: medium
+  - id: fact-computer-science-002
+    statement: npm package-lock.json records an exact dependency tree for installed packages.
+    source_title: npm package-lock.json
+    source_url: https://docs.npmjs.com/cli/configuring-npm/package-lock-json
+    confidence: medium
+  - id: fact-computer-science-003
+    statement: pnpm uses a symlinked node_modules structure backed by content-addressable package storage.
+    source_title: "pnpm: Symlinked node_modules structure"
+    source_url: https://pnpm.io/symlinked-node-modules-structure
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - Version-specific behavior across npm, Yarn, and pnpm releases
+  - Supply-chain security policies beyond basic dependency installation
+disputed_statements: []
 primary_sources:
-  - title: "npm Documentation"
-    type: "documentation"
+  - title: npm package.json
+    type: documentation
     year: 2026
-    url: "https://docs.npmjs.com/"
-    institution: "npm Inc."
-
-secondary_sources:
-  - title: "pnpm Documentation"
-    type: "documentation"
+    institution: npm
+    url: https://docs.npmjs.com/cli/configuring-npm/package-json
+  - title: npm package-lock.json
+    type: documentation
     year: 2026
-    url: "https://pnpm.io/"
-    institution: "pnpm"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    institution: npm
+    url: https://docs.npmjs.com/cli/configuring-npm/package-lock-json
+  - title: "pnpm: Symlinked node_modules structure"
+    type: documentation
+    year: 2026
+    institution: pnpm
+    url: https://pnpm.io/symlinked-node-modules-structure
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
-
-
 ## TL;DR
-
-Package managers automate dependency installation, version management, and script execution. npm (Node Package Manager) is the default for Node.js with 2M+ packages. Yarn (Facebook, 2016) added deterministic installs via lockfiles. pnpm (2017) saves disk space via content-addressable storage (symlinked node_modules).
+JavaScript package managers install dependencies, run scripts, and record dependency graphs for projects. npm, Yarn, and pnpm share the same ecosystem but differ in lockfiles, installation strategy, workspace behavior, and performance tradeoffs.
 
 ## Core Explanation
+package.json declares metadata, scripts, and dependency ranges. Lockfiles record resolved versions so installs are more reproducible. pnpm uses a content-addressable store and symlinked node_modules layout to reduce duplication.
 
-`package.json`: dependencies (runtime), devDependencies (build/test), peerDependencies (host provides), optionalDependencies. Semantic versioning (semver): MAJOR.MINOR.PATCH. `^1.2.3` allows minor/patch updates; `~1.2.3` allows patch only. `package-lock.json` pins exact versions for reproducible builds. `npx` runs packages without installing.
+## Detailed Analysis
+Package managers are also part of the software supply chain. Reliable projects pin lockfiles, review dependency updates, run audits where appropriate, and avoid treating semver ranges as a security boundary.
 
 ## Further Reading
-
-- [npm Documentation](https://docs.npmjs.com/)
+- npm package.json
+- npm package-lock.json
+- pnpm symlinked node_modules
