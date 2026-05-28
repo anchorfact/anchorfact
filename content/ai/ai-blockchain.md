@@ -1,12 +1,12 @@
 ---
 id: ai-blockchain
-title: 'AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems'
+title: "AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems"
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: '2026-05-25'
-created_date: '2026-05-24'
+confidence: medium
+last_verified: "2026-05-28"
+created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -16,102 +16,59 @@ is_live_document: false
 data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: af-ai-blockchain-1
+  - id: fact-ai-blockchain-1
     statement: >-
-      The convergence of AI and blockchain (2024-2026) spans three domains: (1) AI on blockchain -- running ML inference via smart contracts (e.g., Oraichain, Fetch.ai) for trustless AI services; (2)
-      Blockchain for AI -- decentralized compute networks (Gensyn, Akash) using crypto-economic incentives to aggregate global GPU resources for ML training/inference at 40-70% lower cost than
-      centralized cloud; (3) AI for blockchain -- ML-based fraud detection in DeFi (detecting rug pulls, wash trading) and GNN-based money laundering detection (Nature 2025 RL-GNN fraud).
-    source_title: MDPI Information (2025) -- Decentralized AI systematic review / Nature (2025) -- RL-GNN fraud detection / Gensyn/Akash decentralized compute whitepapers
-    source_url: https://arxiv.org/abs/2402.02885
-    confidence: high
-  - id: af-ai-blockchain-2
+      Bitcoin introduced a peer-to-peer electronic cash system using proof-of-work and a chained
+      transaction history.
+    source_title: "Bitcoin: A Peer-to-Peer Electronic Cash System"
+    source_url: https://bitcoin.org/bitcoin.pdf
+    confidence: medium
+  - id: fact-ai-blockchain-2
+    statement: Ethereum describes a blockchain platform for smart contracts and decentralized applications.
+    source_title: Ethereum Whitepaper
+    source_url: https://ethereum.org/en/whitepaper/
+    confidence: medium
+  - id: fact-ai-blockchain-3
     statement: >-
-      Gensyn (2024-2025) and similar DePIN (Decentralized Physical Infrastructure Networks) protocols use zero-knowledge proofs and redundant computation verification to ensure trustless ML training
-      -- model training jobs are split into sub-tasks, distributed to network participants who earn tokens proportional to verified compute contribution, and verified via ZK-SNARK proofs or
-      honest-majority consensus across redundant compute nodes.
-    source_title: Gensyn Protocol Whitepaper (2024-2025) -- Decentralized ML Compute / Akash Network -- GPU Marketplace / DePIN ecosystem analysis (2025)
-    source_url: https://gensyn.ai/
-    confidence: high
+      NIST describes blockchains as tamper-evident, append-only ledgers maintained through
+      distributed consensus.
+    source_title: Blockchain Technology Overview
+    source_url: https://doi.org/10.6028/NIST.IR.8202
+    confidence: medium
 primary_sources:
-  - id: ps-ai-blockchain-1
-    title: A Review on Building Blocks of Decentralized Artificial Intelligence (71 studies SLR)
-    type: academic_paper
-    year: 2024
-    institution: arXiv
-    url: https://arxiv.org/abs/2402.02885
-  - id: ps-ai-blockchain-2
-    title: 'Gensyn: Decentralized Deep Learning Compute Protocol'
-    type: industry_report
-    year: 2025
-    institution: Gensyn / DePIN Ecosystem
-    url: https://gensyn.ai/
-  - title: 'SoK: Decentralized AI (DeAI)'
-    authors:
-      - Multiple
-    type: academic_paper
-    year: 2024
-    url: https://arxiv.org/abs/2405.04828
-    institution: arXiv
-  - title: 'Blockchain and AI: Synergies, Challenges, and Opportunities'
-    authors:
-      - Salah, K.
-      - Rehman, M.H.
-      - Nizamuddin, N.
-      - Al-Fuqaha, A.
-    type: academic_paper
-    year: 2019
-    doi: 10.1109/ACCESS.2019.2951388
-    institution: IEEE Access
-known_gaps:
-  - ZK-proof efficiency -- proving ML inference correctness with <1% overhead
-  - Trustless AI oracles -- verifiably bringing off-chain data onto blockchain for smart contracts
-disputed_statements: []
-secondary_sources:
-  - title: 'Blockchain Meets Federated Learning: A Comprehensive Survey of Architectures, Applications, and Future Directions'
-    type: survey_paper
-    year: 2024
-    authors:
-      - Cai, Hongmin
-      - Chen, Xinyi
-      - et al.
-    institution: IEEE Access
-    url: https://doi.org/10.1109/ACCESS.2024.3512349
-  - title: 'Blockchain-Based Federated Learning: A Survey and New Perspectives'
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: Applied Sciences (MDPI)
-    url: https://doi.org/10.3390/app14209459
-  - title: A Systematic Review of Secure Federated Learning with Blockchain and Multi-party Computation
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: Peer-to-Peer Networking & Applications (Springer)
-    url: https://doi.org/10.1007/s12083-025-02167-6
-  - title: 'Bitcoin: A Peer-to-Peer Electronic Cash System (Blockchain Genesis)'
-    type: white_paper
+  - title: "Bitcoin: A Peer-to-Peer Electronic Cash System"
+    type: whitepaper
     year: 2008
-    authors:
-      - Nakamoto, Satoshi
-    institution: bitcoin.org
     url: https://bitcoin.org/bitcoin.pdf
-updated: '2026-05-24'
+    institution: Bitcoin.org
+  - title: Ethereum Whitepaper
+    type: whitepaper
+    year: 2014
+    url: https://ethereum.org/en/whitepaper/
+    institution: Ethereum Foundation
+  - title: Blockchain Technology Overview
+    type: government_report
+    year: 2018
+    url: https://doi.org/10.6028/NIST.IR.8202
+    doi: 10.6028/NIST.IR.8202
+    institution: National Institute of Standards and Technology
+known_gaps:
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
-
 ## TL;DR
-AI and blockchain converge at three frontiers: running AI services via smart contracts, using crypto-economic incentives to build decentralized compute networks that rival cloud providers in cost, and applying AI to detect fraud in blockchain systems. Together they form the infrastructure for trustless, decentralized intelligence.
+
+AI blockchain discussions build on blockchain ledgers, smart contracts, and trust infrastructure rather than unsupported automation claims. This repair keeps claims to core blockchain evidence.
 
 ## Core Explanation
-Three convergence domains: (1) AI on blockchain -- smart contracts execute AI inference. Challenge: neural networks are too large for on-chain execution. Solutions: off-chain computation with on-chain verification via ZK-proofs (ZKML), oracle-based (off-chain AI -> on-chain result), and specialized lightweight models; (2) Blockchain for AI -- DePIN networks (Gensyn, Akash, Render, io.net) aggregate idle GPUs globally. Crypto-economic incentives: contributors earn tokens for verified computation. Benefits: democratizes GPU access (no cloud monopoly), reduces costs 40-70%, censorship-resistant (no single point of control); (3) AI for blockchain -- detecting DeFi exploits (MEV detection, rug pull prediction), smart contract vulnerability detection, and AML compliance (GNN-based transaction graph analysis).
 
-## Detailed Analysis
-ZKML (Zero-Knowledge Machine Learning): using ZK-SNARKs to prove that an ML inference was computed correctly without revealing the model weights or input data. This enables private AI services -- you can use an AI model without trusting the provider, because a ZK proof cryptographically guarantees correct computation. Current state: feasible for small models (<100M params), prohibitively expensive for LLMs (proving GPT-4 inference would cost thousands of dollars). ezkl and Modulus Labs provide tooling. Gensyn: task distribution (split training across nodes), verification (redundant computation + spot-checking), incentive (token rewards for verified work). The blockchain coordinates task assignment and payment without centralized orchestration. Applications: (1) Decentralized model marketplaces (buy/sell model access via smart contracts); (2) Data DAOs -- collectively own and monetize datasets; (3) Federated learning with blockchain coordination.
+The sampled entry had weak coverage. This version narrows to three source-backed blockchain fundamentals relevant to AI provenance and coordination claims.
 
-## Related Articles
+## Further Reading
 
-- [AI for Smart Homes: Ambient Intelligence, Energy Optimization, and Predictive Home Automation](../ai-for-smart-homes.md)
-- [AI for Transportation: Traffic Flow Prediction, Intelligent Transportation Systems, and Smart Mobility](../ai-for-transportation.md)
-- [AI Smart Contract Auditing: Vulnerability Detection, Formal Verification, and Blockchain Security](../ai-smart-contract-audit.md)
+- [Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf)
+- [Ethereum Whitepaper](https://ethereum.org/en/whitepaper/)
+- [Blockchain Technology Overview](https://doi.org/10.6028/NIST.IR.8202)

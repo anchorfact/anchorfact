@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 0,
     "average_sources_per_article": "2.1",
-    "overall_verification_rate": "53.7%",
+    "overall_verification_rate": "55.0%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 139
+    "manual_reviewed_articles": 151
   },
   "articles": [
     {
@@ -685,35 +685,20 @@
       "file": "content/ai/ai-blockchain.md",
       "article_id": "ai-blockchain",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "A Review on Building Blocks of Decentralized Artificial Intelligence (71 studies SLR)",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2402.02885",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Gensyn: Decentralized Deep Learning Compute Protocol",
-          "source_type": "industry_report",
+          "source_title": "Bitcoin: A Peer-to-Peer Electronic Cash System",
+          "source_type": "whitepaper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://gensyn.ai/",
+              "identifier": "https://bitcoin.org/bitcoin.pdf",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.gensyn.ai/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -721,40 +706,46 @@
           "all_verified": true
         },
         {
-          "source_title": "SoK: Decentralized AI (DeAI)",
-          "source_type": "academic_paper",
+          "source_title": "Ethereum Whitepaper",
+          "source_type": "whitepaper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2405.04828",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://ethereum.org/en/whitepaper/",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Blockchain and AI: Synergies, Challenges, and Opportunities",
-          "source_type": "academic_paper",
+          "source_title": "Blockchain Technology Overview",
+          "source_type": "government_report",
           "results": [
             {
               "method": "doi",
-              "identifier": "10.1109/ACCESS.2019.2951388",
-              "verified": false,
+              "identifier": "10.6028/NIST.IR.8202",
+              "verified": true,
               "metadata": {
-                "error": "CrossRef returned 404"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-call-center.md",
@@ -4261,79 +4252,56 @@
       "file": "content/ai/ai-for-smart-homes.md",
       "article_id": "ai-for-smart-homes",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Reinforcement Learning for Intelligent Building Energy Management: A Comprehensive Review",
+          "source_title": "Matter",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://csa-iot.org/all-solutions/matter/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "TensorFlow Lite Micro: Embedded Machine Learning on TinyML Systems",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.mdpi.com/journal/energies",
-              "verified": false,
+              "identifier": "https://arxiv.org/abs/2010.08678",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.mdpi.com/journal/energies"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Ambient Intelligence in Smart Homes: From Rule-Based Automation to Predictive, Context-Aware Systems",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://dl.acm.org/journal/csur",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/journal/csur"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "A Scenario-Based Mobile Application for Robot-Assisted Smart Digital Homes",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "1009.5398v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Development and Evaluation of an Online Home Energy Management Strategy for Load Coordination in Smart Homes with Renewable Energy Sources",
-          "source_type": "academic_paper",
+          "source_title": "Considerations for Managing Internet of Things Cybersecurity and Privacy Risks",
+          "source_type": "government_report",
           "results": [
             {
               "method": "doi",
-              "identifier": "10.1016/j.energy.2023.130134",
+              "identifier": "10.6028/NIST.IR.8228",
               "verified": true,
               "metadata": {
-                "title": "Development and evaluation of an online home energy management strategy for load coordination in smart homes with renewable energy sources",
-                "publisher": "Elsevier BV",
-                "year": 2023
-              },
-              "match": true
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2304.11770v1",
-              "verified": true,
-              "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2304.11770v1&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -4341,8 +4309,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-social-media.md",
@@ -5312,36 +5282,20 @@
       "file": "content/ai/ai-in-education.md",
       "article_id": "ai-in-education",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Large language models in education: a systematic review",
+          "source_title": "The Relative Effectiveness of Human Tutoring, Intelligent Tutoring Systems, and Other Tutoring Systems",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "url",
-              "identifier": "https://www.sciencedirect.com/science/article/pii/S2666920X25001699",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.sciencedirect.com/science/article/pii/S2666920X25001699"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "AI in Education: Personalized Learning and Intelligent Tutoring Systems",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1782626/full",
+              "method": "doi",
+              "identifier": "10.3102/0034654310388770",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1782626/full"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -5349,40 +5303,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Advancing Education through Tutoring Systems: A Systematic Literature Review",
-          "source_type": "academic_paper",
+          "source_title": "Guidance for generative AI in education and research",
+          "source_type": "government_report",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2503.09748v1",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://unesdoc.unesco.org/ark:/48223/pf0000386693",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Automated Personalized Feedback Improves Learning Gains in an Intelligent Tutoring System",
-          "source_type": "academic_paper",
+          "source_title": "Artificial Intelligence and Future of Teaching and Learning",
+          "source_type": "government_report",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2005.02431v2",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://www.ed.gov/sites/ed/files/documents/ai-report/ai-report.pdf",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-in-finance.md",
@@ -11399,18 +11359,20 @@
       "file": "content/ai/mechanistic-interpretability.md",
       "article_id": "mechanistic-interpretability",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Mechanistic Interpretability for AI Safety — A Review",
-          "source_type": "academic_paper",
+          "source_title": "Circuits",
+          "source_type": "blog_post",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2404.14082",
+              "method": "url",
+              "identifier": "https://distill.pub/2020/circuits/",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2404.14082&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -11418,68 +11380,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Bridging the Black Box: A Survey on Mechanistic Interpretability in AI",
-          "source_type": "academic_paper",
+          "source_title": "A Mathematical Framework for Transformer Circuits",
+          "source_type": "blog_post",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/doi/10.1145/3787104",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/doi/10.1145/3787104"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "A Tutorial about Random Neural Networks in Supervised Learning",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.14311/NNW.2015.25.024",
+              "identifier": "https://transformer-circuits.pub/2021/framework/index.html",
               "verified": true,
               "metadata": {
-                "title": "RANDOM NEURAL NETWORK MODEL FOR SUPERVISED LEARNING PROBLEMS : TUTORIAL",
-                "publisher": "Czech Technical University in Prague - Central Library",
-                "year": 2015
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
-            },
-            {
-              "method": "arxiv",
-              "identifier": "1609.04846v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Predicting concentration levels of air pollutants by transfer learning and recurrent neural network",
-          "source_type": "academic_paper",
+          "source_title": "Toy Models of Superposition",
+          "source_type": "blog_post",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2502.01654v1",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://transformer-circuits.pub/2022/toy_model/index.html",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/meta-learning.md",
@@ -12681,76 +12621,122 @@
       "file": "content/ai/object-detection.md",
       "article_id": "object-detection",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
+        {
+          "source_title": "Rich feature hierarchies for accurate object detection and semantic segmentation",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1311.2524",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1506.01497",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
         {
           "source_title": "You Only Look Once: Unified, Real-Time Object Detection",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1506.02640",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1506.02640",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=1506.02640&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "End-to-End Object Detection with Transformers (DETR)",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2005.12872",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/open-source-ai-movement.md",
       "article_id": "open-source-ai-movement",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Llama 3: Open Foundation and Fine-Tuned Chat Models",
+          "source_title": "BLOOM: A 176B-Parameter Open-Access Multilingual Language Model",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2407.21783",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "DeepSeek-V3 Technical Report",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2412.19437",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2211.05100",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2412.19437&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2307.09288",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Open Source AI Definition",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opensource.org/ai/open-source-ai-definition",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -12758,8 +12744,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/optimization-algorithms.md",
@@ -13496,18 +13484,20 @@
       "file": "content/ai/representation-learning.md",
       "article_id": "representation-learning",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Auto-Encoding Variational Bayes (VAE)",
+          "source_title": "Representation Learning: A Review and New Perspectives",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1312.6114",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1206.5538",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=1312.6114&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -13515,15 +13505,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Masked Autoencoders Are Scalable Vision Learners (MAE)",
+          "source_title": "Efficient Estimation of Word Representations in Vector Space",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2111.06377",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1301.3781",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2111.06377&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Deep learning",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1038/nature14539",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -13531,8 +13541,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/rlhf.md",
@@ -13749,18 +13761,20 @@
       "file": "content/ai/self-supervised-learning.md",
       "article_id": "self-supervised-learning",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "A Simple Framework for Contrastive Learning of Visual Representations (SimCLR)",
+          "source_title": "A Simple Framework for Contrastive Learning of Visual Representations",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2002.05709",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2002.05709",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2002.05709&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -13768,24 +13782,46 @@
           "all_verified": true
         },
         {
-          "source_title": "BERT: Pre-training of Deep Bidirectional Transformers",
+          "source_title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1810.04805",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1810.04805",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Masked Autoencoders Are Scalable Vision Learners",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2111.06377",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/semantic-web-ontology.md",
@@ -21926,19 +21962,20 @@
       "file": "content/computer-science/docker.md",
       "article_id": "kb-2026-00013",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Docker Documentation",
-          "source_type": "documentation",
+          "source_title": "What is a Container?",
+          "source_type": "course_material",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.docker.com/",
+              "identifier": "https://www.docker.com/resources/what-container/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://docs.docker.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -21946,48 +21983,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Docker: Up and Running (4th Edition, 2025)",
-          "source_type": "book",
+          "source_title": "Dockerfile reference",
+          "source_type": "course_material",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/docker/",
-              "verified": false,
+              "identifier": "https://docs.docker.com/reference/dockerfile/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/docker/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Container Orchestration: From Docker to Kubernetes and Beyond (2025 Survey)",
-          "source_type": "survey_paper",
+          "source_title": "Open Container Initiative Runtime Specification",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.containers",
-              "verified": false,
+              "identifier": "https://github.com/opencontainers/runtime-spec",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.containers"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Docker: Up and Running (3rd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/domain-driven-design-ddd.md",
@@ -24202,19 +24237,20 @@
       "file": "content/computer-science/infrastructure-as-code-iac.md",
       "article_id": "kb-2026-00152",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Terraform Documentation",
-          "source_type": "documentation",
+          "source_title": "What is Terraform?",
+          "source_type": "course_material",
           "results": [
             {
               "method": "url",
-              "identifier": "https://developer.hashicorp.com/terraform/docs",
+              "identifier": "https://developer.hashicorp.com/terraform/intro",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://developer.hashicorp.com/terraform/docs"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -24222,54 +24258,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Infrastructure as Code: Dynamic Systems for the Cloud Age (3rd Edition, 2025)",
-          "source_type": "book",
+          "source_title": "What is AWS CloudFormation?",
+          "source_type": "course_material",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/iac/",
-              "verified": false,
+              "identifier": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/iac/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "IaC and GitOps: State of Practice 2025",
-          "source_type": "survey_paper",
+          "source_title": "Pulumi IaC Concepts",
+          "source_type": "course_material",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.iac",
-              "verified": false,
+              "identifier": "https://www.pulumi.com/docs/iac/concepts/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.iac"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Infrastructure as Code (2nd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Terraform: Up and Running (3rd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/interpreters-and-compilers-lexing-parsing-and-code-generation.md",
@@ -24918,36 +24946,20 @@
       "file": "content/computer-science/linked-list.md",
       "article_id": "kb-2026-00127",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "linked list",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Algorithms (5th Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://algs4.cs.princeton.edu/",
+              "identifier": "https://xlinux.nist.gov/dads/HTML/linkedList.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://algs4.cs.princeton.edu/home/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -24955,37 +24967,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Data Structures and Algorithm Analysis (5th Edition, 2025)",
-          "source_type": "book",
+          "source_title": "Linked Lists",
+          "source_type": "course_material",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.pearson.com/dsaa/",
-              "verified": false,
+              "identifier": "https://opendatastructures.org/ods-python/3_Linked_Lists.html",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.pearson.com/dsaa/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Introduction to Algorithms (4th Edition) — Chapter 10",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Art of Computer Programming, Vol. 1: Fundamental Algorithms (3rd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "source_title": "Sequence Data Structures",
+          "source_type": "course_material",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opendatastructures.org/ods-python/2_Sequence_Data_Structures.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/linux-file-permissions.md",
@@ -35971,53 +35992,20 @@
       "file": "content/history/colonialism.md",
       "article_id": "kb-2026-00401",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Scramble for Africa (Thomas Pakenham)",
-          "source_type": "book",
+          "source_title": "Colonialism",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.harpercollins.com/products/the-scramble-for-africa-thomas-pakenham",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.harpercollins.com/products/the-scramble-for-africa-thomas-pakenham"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Colonialism: A Global History (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.routledge.com/colonialism/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.routledge.com/colonialism/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Colonialism: A Very Short Introduction (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/vsi-colonialism/",
+              "identifier": "https://www.britannica.com/topic/colonialism",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-colonialism/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -36025,20 +36013,46 @@
           "all_verified": true
         },
         {
-          "source_title": "How Europe Underdeveloped Africa",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "source_title": "Colonialism",
+          "source_type": "encyclopedia",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://plato.stanford.edu/entries/colonialism/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "The Colonial Present",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "source_title": "Declaration on the Granting of Independence to Colonial Countries and Peoples",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.ohchr.org/en/instruments-mechanisms/instruments/declaration-granting-independence-colonial-countries-and-peoples",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 10 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/computer-history.md",

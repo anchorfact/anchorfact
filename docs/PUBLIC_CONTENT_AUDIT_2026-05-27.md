@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T02:09:11.455Z
+Generated: 2026-05-28T02:14:56.093Z
 
-Snapshot: 555 public / 445 draft / 1527 claims.
+Snapshot: 555 public / 445 draft / 1535 claims.
 
 ## Summary
 
@@ -23,22 +23,22 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 
 | # | bucket | slug | confidence | coverage | claims | checks | recommendation |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | low_verified_coverage | `computer-science/infrastructure-as-code-iac` | low | 1/5 (20.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 2 | low_verified_coverage | `computer-science/linked-list` | low | 1/5 (20.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 3 | low_verified_coverage | `history/colonialism` | low | 1/5 (20.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 4 | low_verified_coverage | `ai/ai-blockchain` | medium | 1/4 (25.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 5 | low_verified_coverage | `ai/ai-for-smart-homes` | medium | 1/4 (25.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 6 | low_verified_coverage | `ai/ai-in-education` | medium | 1/4 (25.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 7 | low_verified_coverage | `ai/mechanistic-interpretability` | medium | 1/4 (25.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 8 | low_verified_coverage | `computer-science/docker` | low | 1/4 (25.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 1 | low_verified_coverage | `computer-science/redis` | low | 1/4 (25.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 2 | low_verified_coverage | `science/solar-system` | low | 2/7 (28.6%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 3 | low_verified_coverage | `ai/ai-digital-twins-healthcare` | medium | 1/3 (33.3%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 4 | low_verified_coverage | `ai/ai-for-online-advertising` | medium | 1/3 (33.3%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 5 | low_verified_coverage | `ai/bayesian-deep-learning` | medium | 1/3 (33.3%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 6 | low_verified_coverage | `computer-science/ci-cd-pipeline` | low | 1/3 (33.3%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 7 | low_verified_coverage | `computer-science/consul-hashicorp` | low | 1/3 (33.3%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 8 | low_verified_coverage | `computer-science/deno` | low | 1/3 (33.3%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
 | 9 | high_confidence | `ai/gpt-models` | high | 4/4 (100.0%) | 6 | source=pass; claim=pass; summary=pass | keep_public |
 | 10 | high_confidence | `ai/agentic-ai` | high | 2/2 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | high_confidence | `ai/ai-in-healthcare` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 12 | high_confidence | `ai/ai-red-teaming-and-safety` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 13 | medium_capped_claims | `ai/object-detection` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 14 | medium_capped_claims | `ai/open-source-ai-movement` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 15 | medium_capped_claims | `ai/representation-learning` | medium | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 16 | medium_capped_claims | `ai/self-supervised-learning` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 13 | medium_capped_claims | `ai/speech-recognition` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 14 | medium_capped_claims | `ai/synthetic-data-training` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 15 | medium_capped_claims | `arts/coffee-culture` | medium | 3/3 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 16 | medium_capped_claims | `arts/political-philosophy` | medium | 3/3 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
 | 17 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 18 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 19 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
@@ -46,13 +46,13 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 
 ## Article Findings
 
-### 1. Infrastructure as Code (IaC)
+### 1. Redis
 
-- canonical slug: `computer-science/infrastructure-as-code-iac`
-- canonical URL: https://anchorfact.org/computer-science/infrastructure-as-code-iac/
+- canonical slug: `computer-science/redis`
+- canonical URL: https://anchorfact.org/computer-science/redis/
 - bucket: `low_verified_coverage`
 - confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/5 (20.0%)
+- verified source coverage: 1/4 (25.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: partial_source_verification, low_verified_coverage
 - source-title match: `weak`
@@ -61,73 +61,28 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 2. Linked List
+### 2. Solar System
 
-- canonical slug: `computer-science/linked-list`
-- canonical URL: https://anchorfact.org/computer-science/linked-list/
+- canonical slug: `science/solar-system`
+- canonical URL: https://anchorfact.org/science/solar-system/
 - bucket: `low_verified_coverage`
 - confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/5 (20.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: duplicate_sources, generic_dispute_statement, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 3. Colonialism
-
-- canonical slug: `history/colonialism`
-- canonical URL: https://anchorfact.org/history/colonialism/
-- bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/5 (20.0%)
+- verified source coverage: 2/7 (28.6%)
 - claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: partial_source_verification, low_verified_coverage
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: none
+- hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 4. AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems
+### 3. AI Digital Twins for Healthcare: Patient-Specific Simulation, Treatment Planning, and Virtual Organs
 
-- canonical slug: `ai/ai-blockchain`
-- canonical URL: https://anchorfact.org/ai/ai-blockchain/
-- bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.74)
-- verified source coverage: 1/4 (25.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_source_homepage
-- recommendation: `repair_sources`
-
-### 5. AI for Smart Homes: Ambient Intelligence, Energy Optimization, and Predictive Home Automation
-
-- canonical slug: `ai/ai-for-smart-homes`
-- canonical URL: https://anchorfact.org/ai/ai-for-smart-homes/
-- bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.89)
-- verified source coverage: 1/4 (25.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification, low_verified_coverage, high_confidence_evidence_gap
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 6. AI in Education: Personalized Learning and Intelligent Tutoring Systems
-
-- canonical slug: `ai/ai-in-education`
-- canonical URL: https://anchorfact.org/ai/ai-in-education/
+- canonical slug: `ai/ai-digital-twins-healthcare`
+- canonical URL: https://anchorfact.org/ai/ai-digital-twins-healthcare/
 - bucket: `low_verified_coverage`
 - confidence: `medium` (verified_sources, score 0.705)
-- verified source coverage: 1/4 (25.0%)
+- verified source coverage: 1/3 (33.3%)
 - claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: partial_source_verification, low_verified_coverage
 - source-title match: `weak`
@@ -136,28 +91,73 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 7. Mechanistic Interpretability: Reverse-Engineering Neural Network Circuits and Features
+### 4. AI for Online Advertising: Real-Time Bidding, CTR Prediction, and Programmatic Ads
 
-- canonical slug: `ai/mechanistic-interpretability`
-- canonical URL: https://anchorfact.org/ai/mechanistic-interpretability/
+- canonical slug: `ai/ai-for-online-advertising`
+- canonical URL: https://anchorfact.org/ai/ai-for-online-advertising/
 - bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.89)
-- verified source coverage: 1/4 (25.0%)
+- confidence: `medium` (verified_sources, score 0.84)
+- verified source coverage: 1/3 (33.3%)
 - claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification, low_verified_coverage, high_confidence_evidence_gap
+- quality reasons: partial_source_verification, low_verified_coverage
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 8. Docker
+### 5. Bayesian Deep Learning: Uncertainty Quantification and Robust Predictions
 
-- canonical slug: `computer-science/docker`
-- canonical URL: https://anchorfact.org/computer-science/docker/
+- canonical slug: `ai/bayesian-deep-learning`
+- canonical URL: https://anchorfact.org/ai/bayesian-deep-learning/
+- bucket: `low_verified_coverage`
+- confidence: `medium` (verified_sources, score 0.695)
+- verified source coverage: 1/3 (33.3%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 6. CI/CD Pipeline
+
+- canonical slug: `computer-science/ci-cd-pipeline`
+- canonical URL: https://anchorfact.org/computer-science/ci-cd-pipeline/
 - bucket: `low_verified_coverage`
 - confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/4 (25.0%)
+- verified source coverage: 1/3 (33.3%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 7. Consul (HashiCorp)
+
+- canonical slug: `computer-science/consul-hashicorp`
+- canonical URL: https://anchorfact.org/computer-science/consul-hashicorp/
+- bucket: `low_verified_coverage`
+- confidence: `low` (verified_sources, score 0.475)
+- verified source coverage: 1/3 (33.3%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 8. Deno
+
+- canonical slug: `computer-science/deno`
+- canonical URL: https://anchorfact.org/computer-science/deno/
+- bucket: `low_verified_coverage`
+- confidence: `low` (verified_sources, score 0.475)
+- verified source coverage: 1/3 (33.3%)
 - claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
 - source-title match: `weak`
@@ -226,12 +226,27 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 13. Object Detection: YOLO, R-CNN, and DETR
+### 13. Speech Recognition: From HMMs to Whisper
 
-- canonical slug: `ai/object-detection`
-- canonical URL: https://anchorfact.org/ai/object-detection/
+- canonical slug: `ai/speech-recognition`
+- canonical URL: https://anchorfact.org/ai/speech-recognition/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.67)
+- confidence: `medium` (verified_sources, score 0.71)
+- verified source coverage: 1/2 (50.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak, duplicate_sources
+- recommendation: `repair_sources`
+
+### 14. Synthetic Data in AI Training
+
+- canonical slug: `ai/synthetic-data-training`
+- canonical URL: https://anchorfact.org/ai/synthetic-data-training/
+- bucket: `medium_capped_claims`
+- confidence: `medium` (verified_sources, score 0.71)
 - verified source coverage: 1/2 (50.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: partial_source_verification
@@ -241,49 +256,34 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 14. The Open-Source AI Movement: Llama, DeepSeek, and Democratization
+### 15. Coffee Culture
 
-- canonical slug: `ai/open-source-ai-movement`
-- canonical URL: https://anchorfact.org/ai/open-source-ai-movement/
+- canonical slug: `arts/coffee-culture`
+- canonical URL: https://anchorfact.org/arts/coffee-culture/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.71)
-- verified source coverage: 1/2 (50.0%)
+- confidence: `medium` (verified_sources, score 0.83)
+- verified source coverage: 3/3 (100.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
-- recommendation: `repair_sources`
-
-### 15. Representation Learning: Autoencoders, VAEs, and MAEs
-
-- canonical slug: `ai/representation-learning`
-- canonical URL: https://anchorfact.org/ai/representation-learning/
-- bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.74)
-- verified source coverage: 2/2 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak
+- quality reasons: none
 - source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
+- hygiene flags: none
 - recommendation: `repair_sources`
 
-### 16. Self-Supervised Learning: Learning Without Labels
+### 16. Political Philosophy: Justice, Liberty, and the Social Contract
 
-- canonical slug: `ai/self-supervised-learning`
-- canonical URL: https://anchorfact.org/ai/self-supervised-learning/
+- canonical slug: `arts/political-philosophy`
+- canonical URL: https://anchorfact.org/arts/political-philosophy/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.67)
-- verified source coverage: 1/2 (50.0%)
+- confidence: `medium` (verified_sources, score 0.61)
+- verified source coverage: 3/3 (100.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
-- source-title match: `weak`
+- quality reasons: none
+- source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak, duplicate_sources
+- hygiene flags: none
 - recommendation: `repair_sources`
 
 ### 17. Film Genres

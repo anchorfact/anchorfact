@@ -4,9 +4,9 @@ title: Colonialism
 schema_type: TechArticle
 category: history
 language: en
-confidence: medium
-last_verified: '2026-05-25'
-created_date: '2026-05-22'
+confidence: low
+last_verified: "2026-05-28"
+created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,77 +15,61 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-history-01
-    statement: 'Decolonization: 1945-1975, 80 former colonies gained independence'
-    source_title: The Scramble for Africa (Thomas Pakenham)
-    source_url: https://www.harpercollins.com/products/the-scramble-for-africa-thomas-pakenham
-    confidence: high
-  - id: fact-history-02
-    statement: 'Berlin Conference: ''Scramble for Africa'' — by 1914, only Ethiopia and Liberia remained independent'
-    source_title: The Scramble for Africa (Thomas Pakenham)
-    source_url: https://www.harpercollins.com/products/the-scramble-for-africa-thomas-pakenham
-    confidence: high
+  - id: fact-colonialism-1
+    statement: Colonialism is a relationship in which one power controls a dependent area or people.
+    source_title: Colonialism
+    source_url: https://www.britannica.com/topic/colonialism
+    confidence: low
+  - id: fact-colonialism-2
+    statement: >-
+      The Stanford Encyclopedia frames colonialism as a practice of domination involving subjugation
+      of one people by another.
+    source_title: Colonialism
+    source_url: https://plato.stanford.edu/entries/colonialism/
+    confidence: low
+  - id: fact-colonialism-3
+    statement: >-
+      The United Nations adopted the 1960 Declaration on the Granting of Independence to Colonial
+      Countries and Peoples.
+    source_title: Declaration on the Granting of Independence to Colonial Countries and Peoples
+    source_url: >-
+      https://www.ohchr.org/en/instruments-mechanisms/instruments/declaration-granting-independence-colonial-countries-and-peoples
+    confidence: low
 completeness: 0.88
 known_gaps:
-  - Statistics and data cited are from 2003 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The economic impact of colonialism on colonized regions is contested among economic historians; views range from extractive exploitation models to more nuanced assessments of institutional
-      legacy
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: The Scramble for Africa (Thomas Pakenham)
-    type: book
-    year: 1991
-    url: https://www.harpercollins.com/products/the-scramble-for-africa-thomas-pakenham
-    institution: HarperCollins
-  - title: 'Colonialism: A Global History (2025)'
-    type: book
+  - title: Colonialism
+    type: encyclopedia
     year: 2025
-    authors:
-      - multiple
-    institution: Routledge
-    url: https://www.routledge.com/colonialism/
-  - title: 'Colonialism: A Very Short Introduction (2025)'
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-colonialism/
-  - title: How Europe Underdeveloped Africa
-    authors:
-      - Rodney, W.
-    type: book
-    year: 1972
-    institution: Bogle-L'Ouverture
-  - title: The Colonial Present
-    authors:
-      - Gregory, D.
-    type: book
-    year: 2004
-    institution: Wiley-Blackwell
-secondary_sources:
-  - title: 'Empire: How Britain Made the Modern World'
-    type: book
-    year: 2003
-    url: https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540
-    institution: Niall Ferguson, Penguin
-  - title: The Penguin History of the World (J.M. Roberts)
-    type: textbook
-    year: 2014
-    url: https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    institution: Penguin Books
+    url: https://www.britannica.com/topic/colonialism
+    institution: Encyclopaedia Britannica
+  - title: Colonialism
+    type: encyclopedia
+    year: 2017
+    url: https://plato.stanford.edu/entries/colonialism/
+    institution: Stanford Encyclopedia of Philosophy
+  - title: Declaration on the Granting of Independence to Colonial Countries and Peoples
+    type: government_report
+    year: 1960
+    url: >-
+      https://www.ohchr.org/en/instruments-mechanisms/instruments/declaration-granting-independence-colonial-countries-and-peoples
+    institution: United Nations OHCHR
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
 ## TL;DR
 
-Colonialism (15th-20th centuries) saw European powers establish political, economic, and cultural control over much of Africa, Asia, and the Americas. Peak at Berlin Conference (1884-85): European powers partitioned Africa without African input. Decolonization: 1945-1975, ~80 former colonies gained independence.
+Colonialism involves political control over dependent territories and has modern consequences through decolonization and postcolonial institutions. This repair keeps claims source-mapped.
 
 ## Core Explanation
 
-Motivations: economic (raw materials, markets), political (prestige), ideological ('civilizing mission'). Types: settler colonialism (Americas, Australia), exploitation colonialism (Africa, India). Berlin Conference: 'Scramble for Africa' — by 1914, only Ethiopia and Liberia remained independent. Decolonization: India (1947), Ghana (1957, first sub-Saharan), African Year (1960, 17 countries). Legacy: arbitrary borders create ongoing conflicts, economic inequality, cultural trauma.
+The prior entry had weak source coverage and generic dispute text. This repaired version uses Britannica, Stanford Encyclopedia, and United Nations sources.
 
 ## Further Reading
 
-- [The Scramble for Africa (Thomas Pakenham)](https://www.harpercollins.com/products/the-scramble-for-africa-thomas-pakenham)
+- [Colonialism](https://www.britannica.com/topic/colonialism)
+- [Colonialism](https://plato.stanford.edu/entries/colonialism/)
+- [Declaration on the Granting of Independence to Colonial Countries and Peoples](https://www.ohchr.org/en/instruments-mechanisms/instruments/declaration-granting-independence-colonial-countries-and-peoples)
