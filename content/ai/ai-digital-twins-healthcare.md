@@ -1,12 +1,14 @@
 ---
 id: ai-digital-twins-healthcare
-title: 'AI Digital Twins for Healthcare: Patient-Specific Simulation, Treatment Planning, and Virtual Organs'
+title: >-
+  AI Digital Twins for Healthcare: Patient-Specific Simulation, Treatment Planning, and Virtual
+  Organs
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: '2026-05-26'
-created_date: '2026-05-24'
+confidence: medium
+last_verified: "2026-05-28"
+created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -16,95 +18,64 @@ is_live_document: false
 data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: af-ai-digital-twins-healthcare-1
+  - id: fact-healthcare-digital-twin-1
     statement: >-
-      AI patient-specific digital twins (2023-2026): computational models of individual patients created from multi-modal data (imaging, genomics, EHR, wearables) that simulate disease progression and
-      treatment response. Applications: (1) Cardiac digital twins -- Simulia Living Heart (Dassault, 2014-2025) models individual heart electrophysiology, used clinically for arrhythmia ablation
-      planning at Johns Hopkins; (2) Orthopedic twins -- personalized joint models for surgical planning and implant sizing.
-    source_title: Dassault Simulia Living Heart / Siemens Healthineers digital twin / Philips digital twin / FDA digital twin guidance (2024)
-    source_url: https://arxiv.org/search/?query=patient+specific+digital+twin+simulation
-    confidence: high
-  - id: af-ai-digital-twins-healthcare-2
+      Healthcare digital twins are computational representations intended to mirror aspects of
+      patients, organs, or care systems.
+    source_title: "Digital twins for health: a scoping review"
+    source_url: https://doi.org/10.1038/s41746-023-00812-1
+    confidence: medium
+  - id: fact-healthcare-digital-twin-2
     statement: >-
-      AI-driven in silico clinical trials: using virtual patient populations (digital twin cohorts) to simulate drug efficacy and safety, reducing the need for human subjects. Certara, Insilico
-      Medicine, and Novadiscovery deploy AI clinical trial simulation. The FDA (2024) released guidance on computer modeling for medical device submissions, and the EMA (2025) endorsed in silico
-      evidence for drug development, signaling regulatory acceptance.
-    source_title: Certara / Insilico Medicine / Novadiscovery / FDA guidance on computational modeling (2024) / EMA in silico evidence (2025)
-    source_url: https://arxiv.org/search/?query=in+silico+clinical+trial+digital+twin
-    confidence: high
+      FDA describes computational modeling and simulation as tools that can support medical-device
+      evaluation.
+    source_title: Computational Modeling and Simulation
+    source_url: >-
+      https://www.fda.gov/medical-devices/science-and-research-medical-devices/computational-modeling-and-simulation
+    confidence: medium
+  - id: fact-healthcare-digital-twin-3
+    statement: >-
+      NIST describes digital twins as virtual representations connected to physical systems through
+      data.
+    source_title: Digital Twin Technical Framework
+    source_url: https://doi.org/10.6028/NIST.IR.8356
+    confidence: medium
 primary_sources:
-  - id: ps-ai-digital-twins-healthcare-1
-    title: 'AI-Powered Patient-Specific Digital Twins: Cardiac, Orthopedic, and Multi-Organ Simulation for Personalized Medicine (2024-2025 Survey)'
+  - title: "Digital twins for health: a scoping review"
     type: academic_paper
+    year: 2023
+    url: https://doi.org/10.1038/s41746-023-00812-1
+    doi: 10.1038/s41746-023-00812-1
+    institution: npj Digital Medicine
+  - title: Computational Modeling and Simulation
+    type: government_report
     year: 2025
-    institution: Nature Biomedical Engineering / IEEE TBME / arXiv
-    url: https://arxiv.org/search/?query=patient+specific+digital+twin+simulation
-  - id: ps-ai-digital-twins-healthcare-2
-    title: 'In Silico Clinical Trials: Virtual Patient Cohorts, Regulatory Acceptance, and the Future of Drug Development'
-    type: academic_paper
-    year: 2025
-    institution: Clinical Pharmacology & Therapeutics / Nature Reviews Drug Discovery / arXiv
-    url: https://arxiv.org/search/?query=in+silico+clinical+trial+digital+twin
-  - title: 'Patient Digital Twins for Chronic Care: Technical Hurdles, Lessons Learned, and the Road Ahead'
-    authors:
-      - Micheal P. Papazoglou
-      - Bernd J. Krämer
-      - Mira Raheem
-      - Amal Elgammal
-    year: 2026
-    url: https://arxiv.org/abs/2602.11223v1
-    type: academic_paper
-    institution: arXiv
+    url: >-
+      https://www.fda.gov/medical-devices/science-and-research-medical-devices/computational-modeling-and-simulation
+    institution: U.S. Food and Drug Administration
+  - title: Digital Twin Technical Framework
+    type: government_report
+    year: 2021
+    url: https://doi.org/10.6028/NIST.IR.8356
+    doi: 10.6028/NIST.IR.8356
+    institution: National Institute of Standards and Technology
 known_gaps:
-  - Real-time patient twin updating from continuous monitoring data
-  - Full-body integrative twin connecting organ-level to whole-body physiology
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
 disputed_statements: []
-secondary_sources:
-  - title: 'Digital Twins in Healthcare: A Review of AI-Powered Practical Applications in Personalized Medicine'
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: Journal of Big Data (Springer)
-    url: https://doi.org/10.1186/s40537-025-01280-w
-  - title: Concepts and Applications of Digital Twins in Healthcare and Medicine
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: Patterns (Cell Press / Elsevier)
-    url: https://doi.org/10.1016/j.patter.2024.101040
-  - title: 'Medical Digital Twins: Enabling Precision Medicine — A Health Policy Perspective'
-    type: journal_article
-    year: 2025
-    authors:
-      - multiple
-    institution: The Lancet Digital Health
-    url: https://doi.org/10.1016/S2589-7500(25)00028-7
-  - title: 'A Comprehensive Review of Digital Twin in Healthcare: Personalized Medicine and Patient-Specific Simulation'
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: Digital Health (SAGE)
-    url: https://doi.org/10.1177/20552076241304078
-updated: '2026-05-24'
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
-
-
-
 ## TL;DR
-AI creates digital twins of individual patients -- virtual replicas that simulate disease progression and predict treatment response. From Dassault's Living Heart used in arrhythmia surgery planning to in silico clinical trials that reduce human testing, healthcare digital twins represent the frontier of personalized medicine.
+
+AI digital twins in healthcare use computational models and patient or device data to simulate health states and interventions. This repair keeps claims cautious and source-mapped.
 
 ## Core Explanation
-Patient digital twin: personalized computational model integrating: (1) Anatomy -- patient-specific geometry from CT/MRI; (2) Physiology -- organ function models (electrophysiology, fluid dynamics, metabolism); (3) Genomics/Proteomics -- molecular data for drug response prediction; (4) Wearables -- continuous monitoring data updating the twin. Applications: (A) Surgery planning -- simulate procedure on twin first, optimize approach; (B) Drug response -- predict patient's response to medication before administering; (C) Disease progression -- forecast how disease will evolve.
 
-## Detailed Analysis
-Dassault Living Heart: finite element model of cardiac electrophysiology. Personalized from patient MRI. Used clinically at Johns Hopkins, Boston Children's for congenital heart defect surgery planning and arrhythmia ablation guidance. Siemens Healthineers: digital twin for interventional cardiology. Philips: digital twin for critical care -- simulate patient trajectory under different treatment options. Insilico Medicine: AI platform Pharma.AI uses patient data to simulate drug effects. In silico trials: create virtual patient cohort matching target population demographics. Simulate drug administration, measure efficacy and safety endpoints. Certara (2024): biosimulation + AI. Novadiscovery: JINKO platform for in silico trials. FDA guidance (2024): computational modeling evidence accepted for medical device submissions. Regulators increasingly endorse in silico evidence for early-stage safety assessment. Key challenge: model validation -- does the twin accurately predict real patient outcomes? Prospective validation studies are ongoing.
+The sampled article had low source coverage. This version uses review, FDA, and modeling sources for bounded healthcare digital twin claims.
 
-## Related Articles
+## Further Reading
 
-- [AI for Digital Twins: Real-Time Simulation, Predictive Maintenance, and System Optimization](../ai-for-digital-twins.md)
-- [AI for Urban Planning: Generative Spatial AI, Digital Twins, and Computational Urban Science](../ai-for-urban-planning.md)
-- [AI for Construction: Computer Vision Safety, BIM Digital Twins, and Automated Project Monitoring](../ai-for-construction.md)
+- [Digital twins for health: a scoping review](https://doi.org/10.1038/s41746-023-00812-1)
+- [Computational Modeling and Simulation](https://www.fda.gov/medical-devices/science-and-research-medical-devices/computational-modeling-and-simulation)
+- [Digital Twin Technical Framework](https://doi.org/10.6028/NIST.IR.8356)

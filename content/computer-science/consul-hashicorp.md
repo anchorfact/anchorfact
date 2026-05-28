@@ -4,8 +4,8 @@ title: Consul (HashiCorp)
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: low
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: ai_structured
 derived_from_human_seed: true
@@ -13,93 +13,57 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-001
+  - id: fact-consul-1
+    statement: Consul provides service discovery for registering and discovering services.
+    source_title: Service discovery
+    source_url: https://developer.hashicorp.com/consul/docs/discover
+    confidence: low
+  - id: fact-consul-2
     statement: >-
-      HashiCorp Consul (2014) is a service mesh and service discovery tool. It provides: service registration + health checking, key-value store, secure service-to-service communication (mTLS +
-      authorization), and multi-datacenter support. Service mesh: sidecar proxy (Envoy) routes and secures traffic.
-    source_title: Consul Documentation
-    source_url: https://developer.hashicorp.com/consul/docs
-    confidence: medium
-  - id: fact-computer-science-002
-    statement: "Service discovery: DNS or HTTP API — `my-service.service.consul`."
-    source_title: Consul Documentation
-    source_url: https://developer.hashicorp.com/consul/docs
-    confidence: medium
+      Consul service mesh can secure service-to-service communication with identity-based
+      authorization.
+    source_title: Consul service mesh
+    source_url: https://developer.hashicorp.com/consul/docs/connect
+    confidence: low
+  - id: fact-consul-3
+    statement: Consul includes a key-value store for service configuration and coordination data.
+    source_title: KV store
+    source_url: https://developer.hashicorp.com/consul/docs/dynamic-app-config/kv
+    confidence: low
 completeness: 0.88
 known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: Consul Documentation
-    type: documentation
-    year: 2026
-    url: https://developer.hashicorp.com/consul/docs
+  - title: Service discovery
+    type: course_material
+    year: 2025
+    url: https://developer.hashicorp.com/consul/docs/discover
     institution: HashiCorp
-  - title: HashiCorp Infrastructure Automation (2025 Edition)
-    type: book
+  - title: Consul service mesh
+    type: course_material
     year: 2025
-    authors:
-      - multiple
-    institution: O'Reilly Media
-    url: https://www.oreilly.com/hashicorp/
-  - title: Service Discovery and Service Mesh in Cloud-Native (2025 Survey)
-    type: survey_paper
+    url: https://developer.hashicorp.com/consul/docs/connect
+    institution: HashiCorp
+  - title: KV store
+    type: course_material
     year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.sd
-secondary_sources:
-  - title: DNS and BIND (5th Edition)
-    authors:
-      - Liu, Cricket
-      - Albitz, Paul
-    type: book
-    year: 2006
-    url: https://www.oreilly.com/library/view/dns-and-bind/0596100574/
-    institution: O'Reilly
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
-  - title: "Service Discovery and Configuration Management in Cloud-Native Systems: 2025 Survey"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.servicediscovery
-  - title: "Service Mesh and API Gateways: Architecture Patterns and Trade-offs (2025)"
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE Cloud Computing
-    url: https://doi.org/10.1109/cloud.2025.servicemesh
+    url: https://developer.hashicorp.com/consul/docs/dynamic-app-config/kv
+    institution: HashiCorp
+secondary_sources: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
 
-HashiCorp Consul (2014) is a service mesh and service discovery tool. It provides: service registration + health checking, key-value store, secure service-to-service communication (mTLS + authorization), and multi-datacenter support. Service mesh: sidecar proxy (Envoy) routes and secures traffic.
+Consul is HashiCorp infrastructure software for service discovery, service mesh, and key-value configuration. This repair maps Consul claims to official documentation.
 
 ## Core Explanation
 
-Service discovery: DNS or HTTP API — `my-service.service.consul`. Health checks: HTTP, TCP, script, TTL. KV store: consistent (raft), used for feature flags, dynamic config. Connect: service mesh with intentions (access control policies). Consul KV integrates with Vault for secret storage. Multi-datacenter: WAN federation via gossip protocol.
+The previous public article had low source coverage. This version keeps three official-documentation claims.
 
 ## Further Reading
 
-- [Consul Documentation](https://developer.hashicorp.com/consul/docs)
-
-## Related Articles
-
-- [Nomad (HashiCorp)](../nomad-hashicorp.md)
-- [Vault (HashiCorp)](../vault-hashicorp.md)
+- [Service discovery](https://developer.hashicorp.com/consul/docs/discover)
+- [Consul service mesh](https://developer.hashicorp.com/consul/docs/connect)
+- [KV store](https://developer.hashicorp.com/consul/docs/dynamic-app-config/kv)

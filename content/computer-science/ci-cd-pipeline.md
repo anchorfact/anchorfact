@@ -4,8 +4,8 @@ title: CI/CD Pipeline
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: low
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: ai_structured
 derived_from_human_seed: true
@@ -13,101 +13,57 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-001
+  - id: fact-ci-cd-1
+    statement: GitHub Actions can automate build, test, and deployment workflows from repository events.
+    source_title: Understanding GitHub Actions
+    source_url: https://docs.github.com/en/actions/about-github-actions/understanding-github-actions
+    confidence: low
+  - id: fact-ci-cd-2
     statement: >-
-      CI/CD automates software delivery: Continuous Integration (merge frequently, auto-test), Continuous Delivery (auto-deploy to staging), Continuous Deployment (auto-deploy to production). Core
-      principle: every commit triggers pipeline → build → test → deploy. Reduces integration pain and speeds feedback loops.
-    source_title: Continuous Delivery (Jez Humble, David Farley)
-    source_url: https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/
-    confidence: medium
-  - id: fact-computer-science-002
-    statement: "Tools: GitHub Actions, GitLab CI, Jenkins, CircleCI."
-    source_title: Continuous Delivery (Jez Humble, David Farley)
-    source_url: https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/
-    confidence: medium
+      GitLab describes CI/CD as continuous integration, delivery, and deployment for software
+      changes.
+    source_title: CI/CD concepts
+    source_url: https://docs.gitlab.com/ci/introduction/
+    confidence: low
+  - id: fact-ci-cd-3
+    statement: Continuous integration emphasizes integrating changes frequently with automated verification.
+    source_title: Continuous Integration
+    source_url: https://martinfowler.com/articles/continuousIntegration.html
+    confidence: low
 completeness: 0.88
 known_gaps:
-  - Statistics and data cited are from 2021 and earlier; more recent data may have become available since publication
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-  - Recent developments from 2025-2026 may not be reflected
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: Continuous Delivery (Jez Humble, David Farley)
-    authors:
-      - Humble, Jez
-      - Farley, David
-    type: book
-    year: 2010
-    url: https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/
-    institution: Addison-Wesley
-  - title: "Continuous Delivery: Reliable Software Releases (2025 Updated Edition)"
-    type: book
+  - title: Understanding GitHub Actions
+    type: course_material
     year: 2025
-    authors:
-      - Humble J.
-      - Farley D.
-    institution: Addison-Wesley
-    url: https://www.informit.com/continuous-delivery/
-  - title: "CI/CD and DevOps Maturity: A 2025 Industry Survey"
-    type: survey_paper
+    url: https://docs.github.com/en/actions/about-github-actions/understanding-github-actions
+    institution: GitHub Docs
+  - title: CI/CD concepts
+    type: course_material
     year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.cicd
-secondary_sources:
-  - title: The DevOps Handbook (2nd Edition)
-    authors:
-      - Kim, Gene
-      - Humble, Jez
-      - Debois, Patrick
-      - Willis, John
-    type: book
-    year: 2021
-    url: https://itrevolution.com/product/the-devops-handbook-second-edition/
-    institution: IT Revolution
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
-  - title: "CI/CD Pipelines in the Cloud-Native Era: A 2025 Systematic Review"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.cicd
-  - title: "Software Supply Chain Security: SLSA Framework and Best Practices 2025"
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE Security & Privacy
-    url: https://doi.org/10.1109/msp.2025.slsa
+    url: https://docs.gitlab.com/ci/introduction/
+    institution: GitLab Docs
+  - title: Continuous Integration
+    type: blog_post
+    year: 2006
+    url: https://martinfowler.com/articles/continuousIntegration.html
+    institution: Martin Fowler
+secondary_sources: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
 
-CI/CD automates software delivery: Continuous Integration (merge frequently, auto-test), Continuous Delivery (auto-deploy to staging), Continuous Deployment (auto-deploy to production). Core principle: every commit triggers pipeline → build → test → deploy. Reduces integration pain and speeds feedback loops.
+A CI/CD pipeline automates build, test, integration, and deployment steps so software changes can ship with repeatable checks. This repair maps claims to CI/CD documentation.
 
 ## Core Explanation
 
-CI: automated builds + tests on every commit. CD: automated deployment after tests pass. Pipeline stages: lint, build, unit test, integration test, security scan, deploy to staging, smoke test, deploy to production. Tools: GitHub Actions, GitLab CI, Jenkins, CircleCI. Canary deployments: roll out to subset, monitor, expand. Blue-green: two identical environments, swap traffic.
+The sampled article had low coverage. This version keeps three direct facts from GitHub, GitLab, and Martin Fowler CI material.
 
 ## Further Reading
 
-- [Continuous Delivery (Jez Humble, David Farley)](https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250/)
-
-## Related Articles
-
-- [OpenGL and Vulkan: Graphics Pipeline, Shaders, and GPU Architecture](../opengl-and-vulkan-graphics-pipeline-shaders-and-gpu-architecture.md)
-- [game art pipeline](../../game-development/game-art-pipeline.md)
+- [Understanding GitHub Actions](https://docs.github.com/en/actions/about-github-actions/understanding-github-actions)
+- [CI/CD concepts](https://docs.gitlab.com/ci/introduction/)
+- [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html)
