@@ -4,8 +4,8 @@ title: "AI for Archaeology: Site Detection, Artifact Classification, and Digital
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -18,80 +18,65 @@ completeness: 0.85
 atomic_facts:
   - id: af-ai-for-archaeology-1
     statement: >-
-      A systematic review in Springer Archives of Computational Methods in Engineering (September 2025) categorized AI-driven archaeology into computer vision, deep learning, geospatial analysis, and
-      NLP, with reported accuracies exceeding 94% on ceramic typology classification tasks.
-    source_title: Archives of Computational Methods in Engineering (Springer, 2025) -- doi:10.1007/s11831-025-10393-7
-    source_url: https://link.springer.com/article/10.1007/s11831-025-10393-7
-    confidence: high
+      A 2024 PNAS paper reported an AI-assisted survey that discovered 303 new figurative geoglyphs
+      in the Nazca Pampa during a six-month field survey.
+    source_title: >-
+      AI-accelerated Nazca survey nearly doubles the number of known figurative geoglyphs and sheds
+      light on their purpose
+    source_url: https://www.pnas.org/doi/10.1073/pnas.2407652121
+    confidence: medium
   - id: af-ai-for-archaeology-2
     statement: >-
-      AI-powered satellite and LiDAR imagery analysis has revolutionized archaeological site prospection, with one 2024 project identifying over 300 new Nazca geoglyphs using a ResNet-based classifier
-      on high-resolution satellite imagery. Deep learning models trained on known site locations can predict the probability of archaeological presence across large geographic areas.
-    source_title: Journal of Archaeological Science (2024-2025) / PNAS Nazca geoglyphs AI discovery / CAA Journal
-    source_url: https://www.researchgate.net/publication/387798164
-    confidence: high
+      The Nature paper on Ithaca described a deep neural network for restoring missing text and
+      assisting geographic and chronological attribution of ancient Greek inscriptions.
+    source_title: Restoring and attributing ancient texts using deep neural networks
+    source_url: https://www.nature.com/articles/s41586-022-04448-z
+    confidence: medium
+  - id: af-ai-for-archaeology-3
+    statement: >-
+      The National Endowment for the Humanities reported that Vesuvius Challenge researchers used
+      machine-learning algorithms to detect and decipher passages from scans of carbonized
+      Herculaneum scrolls.
+    source_title: Students Decipher 2,000-Year-Old Herculaneum Scrolls
+    source_url: https://www.neh.gov/news/students-decipher-2000-year-old-herculaneum-scrolls
+    confidence: medium
 primary_sources:
   - id: ps-ai-for-archaeology-1
-    title: "Applications of AI and Machine Learning in Archaeological Practices: A Review"
-    type: academic_paper
-    year: 2025
-    institution: Archives of Computational Methods in Engineering (Springer)
-    doi: 10.1007/s11831-025-10393-7
-    url: https://link.springer.com/article/10.1007/s11831-025-10393-7
+    title: >-
+      AI-accelerated Nazca survey nearly doubles the number of known figurative geoglyphs and sheds
+      light on their purpose
+    type: journal_article
+    year: 2024
+    institution: Proceedings of the National Academy of Sciences
+    doi: 10.1073/pnas.2407652121
+    url: https://www.pnas.org/doi/10.1073/pnas.2407652121
   - id: ps-ai-for-archaeology-2
-    title: "Machine learning applications in archaeological practices: a review"
-    type: academic_paper
-    year: 2025
-    institution: ResearchGate
-    url: https://www.researchgate.net/publication/387798164
+    title: Restoring and attributing ancient texts using deep neural networks
+    type: journal_article
+    year: 2022
+    institution: Nature
+    doi: 10.1038/s41586-022-04448-z
+    url: https://www.nature.com/articles/s41586-022-04448-z
+  - id: ps-ai-for-archaeology-3
+    title: Students Decipher 2,000-Year-Old Herculaneum Scrolls
+    type: institutional_article
+    year: 2024
+    institution: National Endowment for the Humanities
+    url: https://www.neh.gov/news/students-decipher-2000-year-old-herculaneum-scrolls
 known_gaps:
-  - Multi-modal fusion of geophysical survey data with satellite imagery for comprehensive subsurface site mapping
+  - >-
+    Multi-modal fusion of geophysical survey data with satellite imagery for comprehensive
+    subsurface site mapping
   - Standardized open-access archaeological datasets for reproducible AI benchmarking
 disputed_statements: []
-secondary_sources:
-  - title: "AI in Archaeology: A Systematic Review of Deep Learning Applications for Site Detection, Artifact Classification, and Heritage Management"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: Journal of Archaeological Science (Elsevier)
-    url: https://doi.org/10.1016/j.jas.2024.105987
-  - title: "Deep Learning for Archaeological Remote Sensing: Automatic Detection of Archaeological Sites from Satellite and LiDAR Data"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: Remote Sensing (MDPI)
-    url: https://doi.org/10.3390/rs16112200
-  - title: "Vesuvius Challenge: Reading the Herculaneum Papyri Using AI — From Carbonized Scrolls to Readable Text"
-    type: report
-    year: 2024
-    authors:
-      - Vesuvius Challenge Team
-    institution: Vesuvius Challenge / University of Kentucky
-    url: https://scrollprize.org/
-  - title: "Digitizing the Past: Machine Learning for Epigraphy and Ancient Text Analysis"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: Nature Machine Intelligence
-    url: https://doi.org/10.1038/s42256-024-00856-0
-updated: "2026-05-24"
+secondary_sources: []
+updated: "2026-05-28"
 ---
 ## TL;DR
-AI is transforming archaeology by enabling automated detection of buried structures from satellite imagery, classification of millions of pottery sherds, decipherment of ancient scripts, and reconstruction of fragmented artifacts. From discovering hidden Maya cities in LiDAR point clouds to identifying new Nazca geoglyphs from satellite data, deep learning is giving archaeologists a powerful lens through which to see the past.
+AI helps archaeology when it accelerates specific expert workflows: scanning imagery for site candidates, restoring damaged inscriptions, and detecting text in otherwise unreadable heritage materials.
 
 ## Core Explanation
-The archaeology-AI pipeline: (1) Prospection -- satellite imagery (visible, multispectral, SAR) and airborne LiDAR are analyzed by CNNs and vision transformers to detect subtle surface signatures of buried archaeological features. Transfer learning from pre-trained models enables detection even with limited labeled training data; (2) Artifact classification -- deep learning models classify pottery fragments by style, period, and origin based on visual features, achieving expert-level accuracy while processing millions of items; (3) Text and inscription analysis -- LLMs and specialized OCR (Transkribus, PyLaia) transcribe and translate cuneiform tablets, hieroglyphics, and medieval manuscripts; (4) 3D reconstruction -- photogrammetry combined with neural rendering creates high-fidelity 3D models of sites and artifacts for virtual museums and remote research.
-
-## Detailed Analysis
-The Springer 2025 review identifies four main AI application domains: computer vision (object detection, semantic segmentation for site/artifact identification), deep learning (CNN, Transformer for image classification), geospatial analysis (LiDAR point cloud processing, multispectral satellite data fusion), and natural language processing (historical document transcription, ancient language translation). Key breakthroughs: (1) Maya lowlands LiDAR survey -- deep learning detected ~60,000 previously unknown structures across 2,100 km² in Guatemala, revealing a civilization far more populous than previously estimated; (2) Nazca Lines discovery -- a ResNet-50 classifier identified 303 new figurative geoglyphs in 2024, nearly doubling the known catalog; (3) Vesuvius Challenge -- AI-enabled virtual unwrapping and ink detection on carbonized Herculaneum papyri, revealing previously unreadable philosophical texts. Gaps remain in multi-modal fusion, standardizing archaeological data formats for AI, and addressing ethical implications of automated heritage interpretation.
-
-## Further Reading
-- Journal of Computer Applications in Archaeology (CAA)
-- Vesuvius Challenge: scrollprize.org
-- Transkribus AI for Historical Documents: readcoop.eu
+The best-supported examples are narrow and human-supervised. AI can prioritize candidate geoglyphs for field validation, assist historians with damaged inscriptions, and support computer-vision challenges around carbonized scrolls. These tools aid archaeological interpretation; they do not replace excavation, dating, provenance work, or specialist review.
 
 ## Related Articles
 

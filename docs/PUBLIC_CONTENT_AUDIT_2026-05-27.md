@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T05:53:31.379Z
+Generated: 2026-05-28T06:18:37.172Z
 
-Snapshot: 555 public / 445 draft / 1571 claims.
+Snapshot: 555 public / 445 draft / 1580 claims.
 
 ## Summary
 
@@ -11,9 +11,9 @@ This is a risk-weighted audit sample of public AnchorFact articles. It is intend
 - Sample size: 20
 - Low verified coverage samples: 1
 - Articles with at least one fail check: 0
-- High-confidence samples needing review: 0
+- High-confidence samples needing review: 1
 - Claim-evidence failures: 0
-- Recommendations: keep_public: 10, downgrade_confidence: 0, repair_sources: 10, move_to_draft: 0
+- Recommendations: keep_public: 10, downgrade_confidence: 1, repair_sources: 9, move_to_draft: 0
 
 ## Method
 
@@ -29,20 +29,20 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 4 | high_confidence | `ai/ai-in-healthcare` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 5 | high_confidence | `ai/ai-red-teaming-and-safety` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 6 | medium_capped_claims | `business/strategic-management-theory` | medium | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 7 | medium_capped_claims | `ai/ai-disaster-prediction` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 8 | medium_capped_claims | `ai/ai-document-understanding` | medium | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 9 | medium_capped_claims | `ai/ai-for-accessibility` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 7 | medium_capped_claims | `ai/ai-for-agriculture` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 8 | medium_capped_claims | `ai/ai-for-augmented-reality` | medium | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 9 | medium_capped_claims | `ai/ai-for-chip-design` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
 | 10 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 12 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 13 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 14 | risk_fallback | `sports/sports-psychology-performance` | low | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 15 | risk_fallback | `ai/ai-for-archaeology` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 16 | risk_fallback | `ai/data-governance` | medium | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 17 | risk_fallback | `ai/data-preprocessing` | medium | 3/5 (60.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 18 | risk_fallback | `business/customer-lifetime-value-clv` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 19 | risk_fallback | `business/e-commerce-fundamentals` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 20 | risk_fallback | `business/entrepreneurship-fundamentals` | low | 3/5 (60.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 14 | risk_fallback | `computer-science/amazon-web-services-aws` | high | 3/5 (60.0%) | 2 | source=weak; claim=weak; summary=pass | downgrade_confidence |
+| 15 | risk_fallback | `computer-science/django` | low | 2/4 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 16 | risk_fallback | `computer-science/markdown` | medium | 3/4 (75.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 17 | risk_fallback | `science/endangered-species` | medium | 1/1 (100.0%) | 6 | source=pass; claim=weak; summary=pass | repair_sources |
+| 18 | risk_fallback | `ai/generative-ai-overview` | low | 1/2 (50.0%) | 4 | source=weak; claim=weak; summary=pass | repair_sources |
+| 19 | risk_fallback | `business/amazon-fba-fulfillment-by-amazon` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
+| 20 | risk_fallback | `business/digital-marketing-fundamentals` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
 
 ## Article Findings
 
@@ -136,40 +136,40 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 7. AI for Disaster Prediction: Earthquake Forecasting, Flood Detection, and Early Warning Systems
+### 7. AI for Agriculture: Precision Farming, Plant Disease Detection, and Crop Yield Prediction
 
-- canonical slug: `ai/ai-disaster-prediction`
-- canonical URL: https://anchorfact.org/ai/ai-disaster-prediction/
+- canonical slug: `ai/ai-for-agriculture`
+- canonical URL: https://anchorfact.org/ai/ai-for-agriculture/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.74)
+- confidence: `medium` (verified_sources, score 0.85)
 - verified source coverage: 1/2 (50.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification
+- quality reasons: partial_source_verification, high_confidence_evidence_gap
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 8. AI Document Understanding: Layout Parsing, Structured Extraction, and Intelligent Document Processing
+### 8. AI for Augmented Reality: Real-Time Scene Understanding, Spatial Computing, and Contextual Overlays
 
-- canonical slug: `ai/ai-document-understanding`
-- canonical URL: https://anchorfact.org/ai/ai-document-understanding/
+- canonical slug: `ai/ai-for-augmented-reality`
+- canonical URL: https://anchorfact.org/ai/ai-for-augmented-reality/
 - bucket: `medium_capped_claims`
 - confidence: `medium` (verified_sources, score 0.79)
 - verified source coverage: 2/2 (100.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: none
+- quality reasons: claim_evidence_weak
 - source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: none
+- hygiene flags: claim_evidence_weak
 - recommendation: `repair_sources`
 
-### 9. AI for Accessibility: Assistive Technologies, Sign Language Recognition, and Inclusive Systems
+### 9. AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence
 
-- canonical slug: `ai/ai-for-accessibility`
-- canonical URL: https://anchorfact.org/ai/ai-for-accessibility/
+- canonical slug: `ai/ai-for-chip-design`
+- canonical URL: https://anchorfact.org/ai/ai-for-chip-design/
 - bucket: `medium_capped_claims`
 - confidence: `medium` (verified_sources, score 0.85)
 - verified source coverage: 1/2 (50.0%)
@@ -241,109 +241,109 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 14. Sports Psychology: Mental Skills for Peak Performance
+### 14. Amazon Web Services (AWS)
 
-- canonical slug: `sports/sports-psychology-performance`
-- canonical URL: https://anchorfact.org/sports/sports-psychology-performance/
+- canonical slug: `computer-science/amazon-web-services-aws`
+- canonical URL: https://anchorfact.org/computer-science/amazon-web-services-aws/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.55)
-- verified source coverage: 2/2 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, claim_evidence_weak
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 15. AI for Archaeology: Site Detection, Artifact Classification, and Digital Heritage Preservation
-
-- canonical slug: `ai/ai-for-archaeology`
-- canonical URL: https://anchorfact.org/ai/ai-for-archaeology/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.85)
-- verified source coverage: 1/2 (50.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification, high_confidence_evidence_gap
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_source_homepage
-- recommendation: `repair_sources`
-
-### 16. AI Data Governance: Metadata Management, Data Catalogs, and AI-Ready Data Quality
-
-- canonical slug: `ai/data-governance`
-- canonical URL: https://anchorfact.org/ai/data-governance/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.79)
-- verified source coverage: 2/2 (100.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, claim_evidence_weak
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 17. Data Preprocessing
-
-- canonical slug: `ai/data-preprocessing`
-- canonical URL: https://anchorfact.org/ai/data-preprocessing/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.86)
+- confidence: `high` (verified_sources, score 0.87)
 - verified source coverage: 3/5 (60.0%)
 - claims: 2 total, 0 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
+- quality reasons: generic_source_homepage, partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak, generic_dispute_statement
-- recommendation: `repair_sources`
+- hygiene flags: generic_dispute_statement, generic_source_homepage
+- recommendation: `downgrade_confidence`
 
-### 18. Customer Lifetime Value (CLV)
+### 15. Django
 
-- canonical slug: `business/customer-lifetime-value-clv`
-- canonical URL: https://anchorfact.org/business/customer-lifetime-value-clv/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: generic_source_homepage
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: duplicate_sources, generic_dispute_statement, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 19. E-Commerce Fundamentals
-
-- canonical slug: `business/e-commerce-fundamentals`
-- canonical URL: https://anchorfact.org/business/e-commerce-fundamentals/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: generic_source_homepage
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: duplicate_sources, generic_dispute_statement, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 20. Entrepreneurship Fundamentals
-
-- canonical slug: `business/entrepreneurship-fundamentals`
-- canonical URL: https://anchorfact.org/business/entrepreneurship-fundamentals/
+- canonical slug: `computer-science/django`
+- canonical URL: https://anchorfact.org/computer-science/django/
 - bucket: `risk_fallback`
 - confidence: `low` (verified_sources, score 0.55)
-- verified source coverage: 3/5 (60.0%)
+- verified source coverage: 2/4 (50.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: generic_source_homepage, partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: generic_dispute_statement, generic_source_homepage
+- recommendation: `repair_sources`
+
+### 16. Markdown
+
+- canonical slug: `computer-science/markdown`
+- canonical URL: https://anchorfact.org/computer-science/markdown/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.845)
+- verified source coverage: 3/4 (75.0%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement, generic_source_homepage
+- recommendation: `repair_sources`
+
+### 17. Endangered Species
+
+- canonical slug: `science/endangered-species`
+- canonical URL: https://anchorfact.org/science/endangered-species/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.745)
+- verified source coverage: 1/1 (100.0%)
+- claims: 6 total, 0 capped, 0 missing evidence
+- quality reasons: generic_source_homepage
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement, generic_source_homepage
+- recommendation: `repair_sources`
+
+### 18. Generative AI: Models, Capabilities, and Impact
+
+- canonical slug: `ai/generative-ai-overview`
+- canonical URL: https://anchorfact.org/ai/generative-ai-overview/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.5)
+- verified source coverage: 1/2 (50.0%)
+- claims: 4 total, 4 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
+
+### 19. Amazon FBA (Fulfillment by Amazon)
+
+- canonical slug: `business/amazon-fba-fulfillment-by-amazon`
+- canonical URL: https://anchorfact.org/business/amazon-fba-fulfillment-by-amazon/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.5)
+- verified source coverage: 1/1 (100.0%)
+- claims: 4 total, 4 capped, 0 missing evidence
+- quality reasons: generic_source_homepage
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: duplicate_sources, generic_source_homepage
+- recommendation: `repair_sources`
+
+### 20. Digital Marketing Fundamentals
+
+- canonical slug: `business/digital-marketing-fundamentals`
+- canonical URL: https://anchorfact.org/business/digital-marketing-fundamentals/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.5)
+- verified source coverage: 1/1 (100.0%)
+- claims: 4 total, 4 capped, 0 missing evidence
+- quality reasons: generic_source_homepage
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: duplicate_sources, generic_source_homepage
 - recommendation: `repair_sources`
 
 ## Rule Calibration

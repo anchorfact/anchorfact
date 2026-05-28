@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 0,
     "average_sources_per_article": "2.1",
-    "overall_verification_rate": "62.5%",
+    "overall_verification_rate": "62.9%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 262
+    "manual_reviewed_articles": 272
   },
   "articles": [
     {
@@ -1376,36 +1376,56 @@
       "file": "content/ai/ai-disaster-prediction.md",
       "article_id": "ai-disaster-prediction",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Deep artificial intelligence applications for natural disaster management systems: A methodological review",
-          "source_type": "academic_paper",
+          "source_title": "Global prediction of extreme floods in ungauged watersheds",
+          "source_type": "journal_article",
           "results": [
             {
-              "method": "url",
-              "identifier": "https://www.sciencedirect.com/science/article/pii/S1470160X24005247",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.sciencedirect.com/science/article/pii/S1470160X24005247"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "AI-Driven Disaster Prediction and Early Warning Systems: A Systematic Literature Review",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://link.springer.com/chapter/10.1007/978-981-96-6863-2_6",
+              "method": "doi",
+              "identifier": "https://www.nature.com/articles/s41586-024-07145-1",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://link.springer.com/chapter/10.1007/978-981-96-6863-2_6?error=cookies_not_supported&code=ec0e77f2-54d9-405f-9cbf-3e76a70d29c5"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ShakeAlert Earthquake Early Warning",
+          "source_type": "government_program",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://earthquake.usgs.gov/data/shakealert",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "NASA Fire Information for Resource Management System (FIRMS)",
+          "source_type": "government_data_service",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://science.gsfc.nasa.gov/earth/terrestrialinfo/projects/589/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -1413,8 +1433,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/ai-document-digitization.md",
@@ -1474,18 +1494,20 @@
       "file": "content/ai/ai-document-understanding.md",
       "article_id": "ai-document-understanding",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Document Parsing Unveiled: Techniques, Challenges, and Prospects for Information Extraction",
+          "source_title": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2410.21169",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1912.13318",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2410.21169&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -1493,16 +1515,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Automate data extraction and analysis from documents with Generative AI (AWS IDP Guide)",
-          "source_type": "industry_report",
+          "source_title": "OCR-free Document Understanding Transformer",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://aws.amazon.com/ai/generative-ai/use-cases/document-processing/",
+              "identifier": "https://arxiv.org/abs/2111.15664",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://aws.amazon.com/ai/generative-ai/use-cases/document-processing/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon Textract Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/textract/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -1510,7 +1551,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -1801,36 +1842,56 @@
       "file": "content/ai/ai-for-accessibility.md",
       "article_id": "ai-for-accessibility",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The influence of artificial intelligence on individuals with disabilities: A qualitative scoping review of 47 peer-reviewed articles",
-          "source_type": "academic_paper",
+          "source_title": "Seeing AI: New Technology Research to Support the Blind and Visually Impaired Community",
+          "source_type": "product_report",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1016/j.actpsy.2026.104801",
-              "verified": false,
-              "metadata": {
-                "error": "CrossRef returned 404"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Deep computer vision with artificial intelligence for sign language recognition",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1038/s41598-025-09106-8",
+              "method": "url",
+              "identifier": "https://blogs.microsoft.com/accessibility/seeing-ai/",
               "verified": true,
               "metadata": {
-                "title": "Deep computer vision with artificial intelligence based sign language recognition to assist hearing and speech-impaired individuals",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2025
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Use Live Transcribe",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://support.google.com/accessibility/android/answer/9158064?hl=en",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Project Euphonia: Communication research for non-standard speech",
+          "source_type": "research_project",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://sites.research.google/euphonia/about/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -1838,8 +1899,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/ai-for-agriculture.md",
@@ -1930,46 +1991,65 @@
       "file": "content/ai/ai-for-archaeology.md",
       "article_id": "ai-for-archaeology",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Applications of AI and Machine Learning in Archaeological Practices: A Review",
-          "source_type": "academic_paper",
+          "source_title": "AI-accelerated Nazca survey nearly doubles the number of known figurative geoglyphs and sheds light on their purpose",
+          "source_type": "journal_article",
           "results": [
             {
               "method": "doi",
-              "identifier": "10.1007/s11831-025-10393-7",
+              "identifier": "https://www.pnas.org/doi/10.1073/pnas.2407652121",
               "verified": true,
               "metadata": {
-                "title": "Applications of Artificial Intelligence and Machine Learning in the Preservation and Analysis of Heritage Structures: A Comprehensive Review",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2025
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
           "all_verified": true
         },
         {
-          "source_title": "Machine learning applications in archaeological practices: a review",
-          "source_type": "academic_paper",
+          "source_title": "Restoring and attributing ancient texts using deep neural networks",
+          "source_type": "journal_article",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "https://www.nature.com/articles/s41586-022-04448-z",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Students Decipher 2,000-Year-Old Herculaneum Scrolls",
+          "source_type": "institutional_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.researchgate.net/publication/387798164",
-              "verified": false,
+              "identifier": "https://www.neh.gov/news/students-decipher-2000-year-old-herculaneum-scrolls",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.researchgate.net/publication/387798164"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/ai-for-art-and-creativity-gans-diffusion-and-computational-aesthetics.md",
@@ -8808,19 +8888,20 @@
       "file": "content/ai/data-governance.md",
       "article_id": "data-governance",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "DataHub: An Open-Source Metadata Platform for the Modern Data Stack (LinkedIn)",
-          "source_type": "academic_paper",
+          "source_title": "Regulation (EU) 2024/1689",
+          "source_type": "regulation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://datahub.com/",
+              "identifier": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://datahub.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -8828,60 +8909,17 @@
           "all_verified": true
         },
         {
-          "source_title": "EU AI Act: Data Governance Requirements for High-Risk AI Systems (Regulation 2024/1689)",
+          "source_title": "Model Cards for Model Reporting",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://eur-lex.europa.eu/eli/reg/2024/1689",
+              "identifier": "https://arxiv.org/abs/1810.03993",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://eur-lex.europa.eu/eli/reg/2024/1689"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content/ai/data-preprocessing.md",
-      "article_id": "kb-2026-00281",
-      "generation_method": "ai_structured",
-      "sources_total": 5,
-      "verification_results": [
-        {
-          "source_title": "Data Mining: Concepts and Techniques (Han, Pei, Tong, 4th Edition)",
-          "source_type": "textbook",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1016/C2020-0-00008-4",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1016/C2020-0-00008-4"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Scikit-learn: Machine Learning in Python (Pedregosa et al. — JMLR)",
-          "source_type": "journal_article",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://jmlr.org/papers/v12/pedregosa11a.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://jmlr.org/papers/v12/pedregosa11a.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -8889,61 +8927,90 @@
           "all_verified": true
         },
         {
-          "source_title": "A Survey on Data Preprocessing Methods for Machine Learning",
-          "source_type": "survey_paper",
+          "source_title": "Datasheets for Datasets",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/3635100",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/3635100"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "A Survey on Data Preprocessing for Machine Learning and Data Mining",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1016/j.inffus.2015.06.003",
+              "identifier": "https://arxiv.org/abs/1803.09010",
               "verified": true,
               "metadata": {
-                "title": "Gradient entropy metric and p-Laplace diffusion constraint-based algorithm for noisy multispectral image fusion",
-                "publisher": "Elsevier BV",
-                "year": 2015
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Data Quality in Machine Learning: A Review",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1109/IRI.2017.49",
-              "verified": true,
-              "metadata": {
-                "title": "Toward Semantic Search for the Biogeochemical Literature",
-                "publisher": "IEEE",
-                "year": 2017
-              },
-              "match": false
+              "match": true
             }
           ],
           "all_verified": true
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 2
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content/ai/data-preprocessing.md",
+      "article_id": "kb-2026-00281",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Preprocessing data",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://scikit-learn.org/stable/modules/preprocessing.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Imputation of missing values",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://scikit-learn.org/stable/modules/impute.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Common pitfalls and recommended practices",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://scikit-learn.org/stable/common_pitfalls.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/decentralized-ai.md",
@@ -17058,19 +17125,56 @@
       "file": "content/business/customer-lifetime-value-clv.md",
       "article_id": "kb-2026-00214",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Harvard Business Review",
-          "source_type": "journal",
+          "source_title": "Marketing Analysis Toolkit: Customer Lifetime Value Analysis",
+          "source_type": "teaching_note",
           "results": [
             {
               "method": "url",
-              "identifier": "https://hbr.org/",
+              "identifier": "https://www.hbs.edu/faculty/Pages/item.aspx?num=39166",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://hbr.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFM and CLV: Using Iso-Value Curves for Customer Base Analysis",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://faculty.wharton.upenn.edu/wp-content/uploads/2013/08/RFM_CLV-JMR-2005.pdf",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Value of Keeping the Right Customers",
+          "source_type": "article",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://hbr.org/2014/10/the-value-of-keeping-the-right-customers",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -17078,7 +17182,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -17176,19 +17280,56 @@
       "file": "content/business/e-commerce-fundamentals.md",
       "article_id": "kb-2026-00206",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Harvard Business Review",
-          "source_type": "journal",
+          "source_title": "E-Commerce",
+          "source_type": "government_statistics",
           "results": [
             {
               "method": "url",
-              "identifier": "https://hbr.org/",
+              "identifier": "https://www.census.gov/library/publications/time-series/e-commerce.All.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://hbr.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "What Is Ecommerce? Guide To Selling Online",
+          "source_type": "guide",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.shopify.com/au/encyclopedia/what-is-ecommerce",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "E-Commerce Cart & Checkout Usability Research",
+          "source_type": "research_catalog",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://baymard.com/research/checkout-usability",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -17196,7 +17337,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -17333,19 +17474,20 @@
       "file": "content/business/entrepreneurship-fundamentals.md",
       "article_id": "kb-2026-00430",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Lean Startup (Eric Ries)",
+          "source_title": "The Lean Startup",
           "source_type": "book",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/120785/the-lean-startup-by-eric-ries/",
+              "identifier": "https://www.penguinrandomhouse.com/books/210088/the-lean-startup-by-eric-ries/9780307887894/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/120785/the-lean-startup-by-eric-ries/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -17353,16 +17495,17 @@
           "all_verified": true
         },
         {
-          "source_title": "The Lean Startup (15th Anniversary Edition, 2025)",
-          "source_type": "book",
+          "source_title": "Business Model Generation Book Summary",
+          "source_type": "book_summary",
           "results": [
             {
               "method": "url",
-              "identifier": "https://theleanstartup.com/",
+              "identifier": "https://www.strategyzer.com/library/business-model-generation-book-summary",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://theleanstartup.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -17370,59 +17513,26 @@
           "all_verified": true
         },
         {
-          "source_title": "Entrepreneurship: Theory, Process, Practice (12th Edition, 2025)",
-          "source_type": "book",
+          "source_title": "Write your business plan",
+          "source_type": "government_guide",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.cengage.com/entrepreneurship/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.cengage.com/404/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Lean Startup (15th Anniversary, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://theleanstartup.com/",
+              "identifier": "https://www.sba.gov/business-guide/plan-your-business/write-your-business-plan",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://theleanstartup.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "Zero to One (2025 Updated)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.crownpublishing.com/zero-to-one/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://crownpublishing.com/zero-to-one/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 2
+      "sources_unreachable": 0
     },
     {
       "file": "content/business/financial-literacy.md",
@@ -44787,19 +44897,20 @@
       "file": "content/sports/sports-psychology-performance.md",
       "article_id": "sports-psychology-performance",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Foundations of Sport and Exercise Psychology, 8th Edition",
-          "source_type": "textbook",
+          "source_title": "Flow: The Psychology of Optimal Experience",
+          "source_type": "book",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.humankinetics.com/foundations-of-sport-and-exercise-psychology/",
+              "identifier": "https://www.harperacademic.com/book/9780061339202/flow/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://us.humankinetics.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -44807,16 +44918,35 @@
           "all_verified": true
         },
         {
-          "source_title": "The Champion's Mind (Afremow)",
+          "source_title": "The relation of strength of stimulus to rapidity of habit-formation",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "https://doi.org/10.1002/cne.920180503",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Foundations of Sport and Exercise Psychology, 8th Edition",
           "source_type": "textbook",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/313442/the-champions-mind-by-jim-afremow-phd/",
+              "identifier": "https://us.humankinetics.com/products/foundations-of-sport-and-exercise-psychology-8th-edition-with-hkpropel-access",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/313442/the-champions-mind-by-jim-afremow-phd/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twentieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -44824,7 +44954,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {

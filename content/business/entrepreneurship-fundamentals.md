@@ -4,8 +4,8 @@ title: Entrepreneurship Fundamentals
 schema_type: TechArticle
 category: business
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
@@ -16,81 +16,64 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-business-01
-    statement: Most startups fail — failure is part of the process
-    source_title: The Lean Startup (Eric Ries)
-    source_url: https://www.penguinrandomhouse.com/books/120785/the-lean-startup-by-eric-ries/
-    confidence: high
+    statement: >-
+      Penguin Random House describes The Lean Startup as emphasizing validated learning, rapid
+      experimentation, shorter product development cycles, and learning what customers really want.
+    source_title: The Lean Startup
+    source_url: https://www.penguinrandomhouse.com/books/210088/the-lean-startup-by-eric-ries/9780307887894/
+    confidence: medium
   - id: fact-business-02
-    statement: "'Market matters more than product.' Cash flow profit in early stages"
-    source_title: The Lean Startup (Eric Ries)
-    source_url: https://www.penguinrandomhouse.com/books/120785/the-lean-startup-by-eric-ries/
-    confidence: high
+    statement: >-
+      Strategyzer summarizes Business Model Generation as using nine essential building blocks to
+      describe and design business models.
+    source_title: Business Model Generation Book Summary
+    source_url: https://www.strategyzer.com/library/business-model-generation-book-summary
+    confidence: medium
+  - id: fact-business-03
+    statement: >-
+      The U.S. Small Business Administration describes a business plan as a tool for convincing
+      people that working with or investing in a business is a sound choice.
+    source_title: Write your business plan
+    source_url: https://www.sba.gov/business-guide/plan-your-business/write-your-business-plan
+    confidence: medium
 completeness: 0.88
 known_gaps:
-  - Statistics and data cited are from 2014 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - >-
+    Statistics and data cited are from 2014 and earlier; more recent data may have become available
+    since publication
+  - >-
+    Certain sub-topics are covered at a general level; specialized edge cases and nuanced
+    applications may not be fully addressed
+disputed_statements: []
 primary_sources:
-  - title: The Lean Startup (Eric Ries)
+  - id: ps-entrepreneurship-fundamentals-1
+    title: The Lean Startup
     type: book
     year: 2011
-    url: https://www.penguinrandomhouse.com/books/120785/the-lean-startup-by-eric-ries/
-    institution: Crown Business
-  - title: The Lean Startup (15th Anniversary Edition, 2025)
-    type: book
-    year: 2025
     authors:
-      - Ries E.
+      - Ries, Eric
     institution: Crown Business
-    url: https://theleanstartup.com/
-  - title: "Entrepreneurship: Theory, Process, Practice (12th Edition, 2025)"
-    type: book
-    year: 2025
-    authors:
-      - Kuratko D.F.
-    institution: Cengage
-    url: https://www.cengage.com/entrepreneurship/
-  - title: The Lean Startup (15th Anniversary, 2025)
-    type: book
-    year: 2025
-    authors:
-      - Ries E.
-    institution: Crown Business
-    url: https://theleanstartup.com/
-  - title: Zero to One (2025 Updated)
-    type: book
-    year: 2025
-    authors:
-      - Thiel P.
-      - Masters B.
-    institution: Crown Business
-    url: https://www.crownpublishing.com/zero-to-one/
-secondary_sources:
-  - title: The Lean Startup
-    type: book
-    year: 2011
-    url: https://www.penguinrandomhouse.com/books/120396/the-lean-startup-by-eric-ries/
-    institution: Eric Ries, Crown Business
-  - title: Zero to One
-    type: book
-    year: 2014
-    url: https://www.penguinrandomhouse.com/books/223124/zero-to-one-by-peter-thiel-with-blake-masters/
-    institution: Peter Thiel, Crown Business
+    url: https://www.penguinrandomhouse.com/books/210088/the-lean-startup-by-eric-ries/9780307887894/
+  - id: ps-entrepreneurship-fundamentals-2
+    title: Business Model Generation Book Summary
+    type: book_summary
+    year: 2024
+    institution: Strategyzer
+    url: https://www.strategyzer.com/library/business-model-generation-book-summary
+  - id: ps-entrepreneurship-fundamentals-3
+    title: Write your business plan
+    type: government_guide
+    year: 2026
+    institution: U.S. Small Business Administration
+    url: https://www.sba.gov/business-guide/plan-your-business/write-your-business-plan
+secondary_sources: []
+updated: "2026-05-28"
 ---
 ## TL;DR
-
-Entrepreneurship is creating and scaling a business from scratch. Lean Startup methodology (Eric Ries): Build-Measure-Learn feedback loop, MVP (Minimum Viable Product), validated learning, pivot or persevere. Key skills: opportunity recognition, resourcefulness, resilience, execution. Most startups fail — failure is part of the process.
+Entrepreneurship is the practice of creating, testing, and organizing a business opportunity. The safest public claims here center on validated learning, business model design, and business planning.
 
 ## Core Explanation
-
-MVP: simplest version that tests key hypothesis — not 'low quality,' but 'minimum to learn.' Pivot: change direction based on learning (Zoom was originally a failed dating app). Business model canvas: 9 blocks to map business model. Bootstrapping vs. VC funding. 'Market matters more than product.' Cash flow > profit in early stages. 90% of startups fail — key is learning from failure.
-
-## Further Reading
-
-- [The Lean Startup (Eric Ries)](https://www.penguinrandomhouse.com/books/120785/the-lean-startup-by-eric-ries/)
+Entrepreneurs use experiments to test demand, business models to describe how value is created and captured, and plans to communicate strategy, market assumptions, operations, and financing needs. Claims about startup failure rates should cite a specific dataset and cohort before being stated numerically.
 
 ## Related Articles
 

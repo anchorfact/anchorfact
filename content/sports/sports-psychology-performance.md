@@ -4,8 +4,8 @@ title: "Sports Psychology: Mental Skills for Peak Performance"
 schema_type: Article
 category: sports
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -16,82 +16,69 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-sp-spy-001
-    statement: "Flow state (Csikszentmihalyi 1975): complete absorption, clear goals, effortless action at peak performance."
-    source_title: Csikszentmihalyi, M. Flow (Harper Perennial 2008)
-    source_url: https://www.harpercollins.com/products/flow-mihaly-csikszentmihalyi
-    confidence: high
+    statement: >-
+      Csikszentmihalyi popularized flow as a state of complete engagement in an activity, a concept
+      often applied to peak performance discussions.
+    source_title: "Flow: The Psychology of Optimal Experience"
+    source_url: https://www.harperacademic.com/book/9780061339202/flow/
+    confidence: medium
   - id: fact-sp-spy-002
-    statement: "Inverted-U/Yerkes-Dodson Law (1908): optimal performance at moderate arousal levels."
-    source_title: Weinberg & Gould, Foundations of Sport & Exercise Psych 8th ed. (Human Kinetics 2023)
-    source_url: https://us.humankinetics.com/products/foundations-of-sport-and-exercise-psychology-8th-edition
-    confidence: high
+    statement: >-
+      Yerkes and Dodson originally studied the relation between stimulus strength and rapidity of
+      habit formation, a narrower finding than many later broad arousal-performance summaries.
+    source_title: The relation of strength of stimulus to rapidity of habit-formation
+    source_url: https://doi.org/10.1002/cne.920180503
+    confidence: medium
   - id: fact-sp-spy-003
-    statement: "Imagery/visualization: combined with physical practice shows 25-30% performance improvement."
-    source_title: Cumming & Williams, Imagery in performance (Oxford Handbook of Sport Psych 2012)
-    source_url: https://doi.org/10.1093/oxfordhb/9780199731763.013.0011
-    confidence: high
+    statement: >-
+      Weinberg and Gould present sport and exercise psychology as a field connecting research and
+      practice around motivation, emotion regulation, and performance behavior.
+    source_title: Foundations of Sport and Exercise Psychology, 8th Edition
+    source_url: >-
+      https://us.humankinetics.com/products/foundations-of-sport-and-exercise-psychology-8th-edition-with-hkpropel-access
+    confidence: medium
 completeness: 0.9
 primary_sources:
-  - title: Foundations of Sport and Exercise Psychology, 8th Edition
-    type: textbook
-    year: 2023
-    url: https://www.humankinetics.com/foundations-of-sport-and-exercise-psychology/
-    institution: Human Kinetics
-  - title: The Champion's Mind (Afremow)
-    type: textbook
-    year: 2013
-    url: https://www.penguinrandomhouse.com/books/313442/the-champions-mind-by-jim-afremow-phd/
-    institution: Rodale
-known_gaps:
-  - Team cohesion dynamics
-  - Mental health stigma in elite sports
-disputed_statements:
-  - statement: No major disputed statements identified
-secondary_sources:
-  - title: Foundations of Sport and Exercise Psychology (Weinberg & Gould, 8th Edition)
+  - id: ps-sports-psychology-performance-1
+    title: "Flow: The Psychology of Optimal Experience"
+    type: book
+    year: 2008
+    authors:
+      - Csikszentmihalyi, Mihaly
+    institution: Harper Perennial
+    url: https://www.harperacademic.com/book/9780061339202/flow/
+  - id: ps-sports-psychology-performance-2
+    title: The relation of strength of stimulus to rapidity of habit-formation
+    type: academic_paper
+    year: 1908
+    authors:
+      - Yerkes, Robert M.
+      - Dodson, John D.
+    institution: Journal of Comparative Neurology and Psychology
+    doi: 10.1002/cne.920180503
+    url: https://doi.org/10.1002/cne.920180503
+  - id: ps-sports-psychology-performance-3
+    title: Foundations of Sport and Exercise Psychology, 8th Edition
     type: textbook
     year: 2024
     authors:
       - Weinberg, Robert S.
       - Gould, Daniel
     institution: Human Kinetics
-    url: https://us.humankinetics.com/products/foundations-of-sport-and-exercise-psychology-8th-edition
-  - title: The Champion's Mind (Afremow)
-    type: textbook
-    year: 2014
-    authors:
-      - Afremow, Jim
-    institution: Rodale Books
-    url: https://www.penguinrandomhouse.com/books/220466/the-champions-mind-by-jim-afremow/
-  - title: "Mental Toughness in Sport: A Comprehensive Review and Future Directions"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: International Review of Sport & Exercise Psychology
-    url: https://doi.org/10.1080/1750984X.2024.2345678
-  - title: "APA Division 47: Exercise and Sport Psychology — Best Practice Guidelines"
-    type: report
-    year: 2024
-    authors:
-      - American Psychological Association
-    institution: APA
-    url: https://www.apa47.org/
-updated: "2026-05-24"
+    url: >-
+      https://us.humankinetics.com/products/foundations-of-sport-and-exercise-psychology-8th-edition-with-hkpropel-access
+known_gaps:
+  - Team cohesion dynamics
+  - Mental health stigma in elite sports
+disputed_statements: []
+secondary_sources: []
+updated: "2026-05-28"
 ---
 ## TL;DR
-Sports psychology trains the mind for peak performance — managing pressure, maintaining focus, and building resilience are as critical as physical preparation.
+Sports psychology studies how mental states, motivation, attention, and emotion regulation affect training and performance. The safest public claims here are anchored to classic flow research, the original Yerkes-Dodson study, and a standard sport psychology textbook.
 
 ## Core Explanation
-Key skills: goal setting (SMART: Specific, Measurable, Achievable, Relevant, Time-bound), imagery/visualization (mentally rehearsing successful execution activates similar neural pathways to physical practice), arousal regulation, concentration training (mindfulness), and self-talk.
-
-## Detailed Analysis
-Flow state (Csikszentmihalyi): complete absorption where action and awareness merge, self-consciousness disappears, and time distorts. Achieved when challenge matches skill level. Choking under pressure: overthinking automated movements disrupts fluid execution (explicit monitoring theory).
-
-## Further Reading
-- Association for Applied Sport Psychology
-- The Sport Psychologist Journal
-- Headspace: Sport
+Mental skills work can include goal setting, attentional control, imagery, self-talk, arousal regulation, and routines for competition pressure. Claims about exact performance gains should be made cautiously unless tied to a specific study population and method.
 
 ## Related Articles
 
