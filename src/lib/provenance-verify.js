@@ -1,0 +1,219 @@
+import { createHash } from 'crypto';
+import {
+  CLAIMS_SCHEMA_VERSION,
+  MANIFEST_SCHEMA_VERSION,
+  OFFICIAL_SITE,
+  OFFICIAL_SOURCE_REPOSITORY,
+  PROVENANCE_PATH,
+  PROVENANCE_SCHEMA_VERSION,
+  publicUrl
+} from './build-metadata.js';
+
+const REQUIRED_ARTIFACTS = ['manifest_json', 'claims_json', 'llms_txt'];
+const OFFICIAL_GITHUB_COMMIT_API = 'https://api.github.com/repos/anchorfact/anchorfact/commits/';
+
+export function sha256Text(text) {
+  return createHash('sha256').update(Buffer.from(String(text), 'utf8')).digest('hex');
+}
+
+function byteLength(text) {
+  return Buffer.byteLength(String(text), 'utf8');
+}
+
+function normalizeBaseUrl(baseUrl) {
+  return String(baseUrl || OFFICIAL_SITE).replace(/\/+$/, '');
+}
+
+export function isSafeArtifactPath(path) {
+  if (typeof path !== 'string') return false;
+  if (!path.startsWith('/') || path.startsWith('//')) return false;
+  if (path.includes('\\') || path.includes('\0')) return false;
+  return !path.split('/').includes('..');
+}
+
+function routeUrl(baseUrl, path) {
+  return `${normalizeBaseUrl(baseUrl)}${path}`;
+}
+
+async function fetchText(fetchImpl, url) {
+  const response = await fetchImpl(url, {
+    headers: {
+      'User-Agent': 'anchorfact-provenance-verifier'
+    },
+    redirect: 'follow'
+  });
+  const text = await response.text();
+  return {
+    ok: response.ok,
+    status: response.status,
+    text
+  };
+}
+
+function parseJson(text, label, failures) {
+  try {
+    return JSON.parse(text);
+  } catch (error) {
+    failures.push(`${label} is not valid JSON: ${error.message}`);
+    return null;
+  }
+}
+
+function countArticles(articles, predicate) {
+  return Array.isArray(articles) ? articles.filter(predicate).length : 0;
+}
+
+function checkEq(actual, expected, label, failures) {
+  if (actual !== expected) {
+    failures.push(`${label} expected ${expected}, got ${actual ?? '(missing)'}`);
+  }
+}
+
+function checkOfficialIdentity(provenance, failures) {
+  checkEq(provenance.official_site, OFFICIAL_SITE, 'provenance official_site', failures);
+  checkEq(provenance.official_source_repository, OFFICIAL_SOURCE_REPOSITORY, 'provenance official_source_repository', failures);
+  checkEq(provenance.build?.canonical_site, OFFICIAL_SITE, 'build canonical_site', failures);
+  checkEq(provenance.build?.source_repository, OFFICIAL_SOURCE_REPOSITORY, 'build source_repository', failures);
+  checkEq(provenance.build?.official_build, true, 'build official_build', failures);
+  checkEq(provenance.build?.branch, 'main', 'build branch', failures);
+}
+
+async function verifyCommit(fetchImpl, provenance, failures) {
+  const sha = provenance.build?.commit_sha;
+  if (!/^[a-f0-9]{40}$/i.test(String(sha || ''))) {
+    failures.push(`build commit_sha is missing or invalid: ${sha || '(missing)'}`);
+    return { ok: false, sha: sha || null };
+  }
+
+  const response = await fetchText(fetchImpl, `${OFFICIAL_GITHUB_COMMIT_API}${sha}`);
+  if (!response.ok) {
+    failures.push(`GitHub commit lookup failed for ${sha}: HTTP ${response.status}`);
+    return { ok: false, sha };
+  }
+
+  const commit = parseJson(response.text, 'GitHub commit response', failures);
+  const commitOk = commit?.sha === sha;
+  if (!commitOk) {
+    failures.push(`GitHub commit response did not confirm ${sha}`);
+  }
+  return { ok: commitOk, sha };
+}
+
+async function verifyArtifact({ key, artifact, baseUrl, fetchImpl, failures }) {
+  if (!artifact || typeof artifact !== 'object') {
+    failures.push(`${key} artifact is missing`);
+    return { ok: false, key };
+  }
+
+  if (!isSafeArtifactPath(artifact.path)) {
+    failures.push(`${key} unsafe artifact path: ${artifact.path ?? '(missing)'}`);
+    return { ok: false, key, path: artifact.path || null };
+  }
+
+  const url = routeUrl(baseUrl, artifact.path);
+  const response = await fetchText(fetchImpl, url);
+  if (!response.ok) {
+    failures.push(`${key} fetch failed for ${artifact.path}: HTTP ${response.status}`);
+    return { ok: false, key, path: artifact.path, url };
+  }
+
+  const actualSha = sha256Text(response.text);
+  const actualBytes = byteLength(response.text);
+  const ok = actualSha === artifact.sha256 && actualBytes === artifact.bytes;
+  if (actualSha !== artifact.sha256) {
+    failures.push(`${key} sha256 mismatch for ${artifact.path}`);
+  }
+  if (actualBytes !== artifact.bytes) {
+    failures.push(`${key} byte size mismatch for ${artifact.path}`);
+  }
+
+  return {
+    ok,
+    key,
+    path: artifact.path,
+    url,
+    sha256: actualSha,
+    bytes: actualBytes,
+    text: response.text
+  };
+}
+
+function verifyCounts({ provenance, manifest, claims, failures }) {
+  const publicArticles = countArticles(
+    manifest.articles,
+    article => article.status === 'public' && article.is_draft === false
+  );
+  const draftArticles = countArticles(
+    manifest.articles,
+    article => article.status === 'draft' || article.is_draft === true
+  );
+  const claimCount = Array.isArray(claims.claims) ? claims.claims.length : 0;
+
+  checkEq(manifest.public_article_count, publicArticles, 'manifest public article count', failures);
+  checkEq(manifest.draft_article_count, draftArticles, 'manifest draft article count', failures);
+  checkEq(manifest.claim_count, claimCount, 'manifest claim_count', failures);
+  checkEq(provenance.content_counts?.public, manifest.public_article_count, 'provenance public count', failures);
+  checkEq(provenance.content_counts?.draft, manifest.draft_article_count, 'provenance draft count', failures);
+  checkEq(provenance.content_counts?.claims, claimCount, 'provenance claims count', failures);
+}
+
+export async function verifyLiveProvenance({
+  baseUrl = OFFICIAL_SITE,
+  fetchImpl = globalThis.fetch,
+  requireOfficial = true,
+  verifyCommit: shouldVerifyCommit = true
+} = {}) {
+  if (typeof fetchImpl !== 'function') {
+    throw new Error('verifyLiveProvenance requires a fetch implementation.');
+  }
+
+  const normalizedBaseUrl = normalizeBaseUrl(baseUrl);
+  const failures = [];
+  const artifacts = {};
+
+  const provenanceResponse = await fetchText(fetchImpl, routeUrl(normalizedBaseUrl, PROVENANCE_PATH));
+  if (!provenanceResponse.ok) {
+    failures.push(`${PROVENANCE_PATH} fetch failed: HTTP ${provenanceResponse.status}`);
+  }
+
+  const provenance = parseJson(provenanceResponse.text, PROVENANCE_PATH, failures) || {};
+  checkEq(provenance.schema_version, PROVENANCE_SCHEMA_VERSION, 'provenance schema_version', failures);
+  if (requireOfficial) {
+    checkOfficialIdentity(provenance, failures);
+  }
+
+  for (const key of REQUIRED_ARTIFACTS) {
+    artifacts[key] = await verifyArtifact({
+      key,
+      artifact: provenance.artifacts?.[key],
+      baseUrl: normalizedBaseUrl,
+      fetchImpl,
+      failures
+    });
+  }
+
+  const manifest = artifacts.manifest_json?.text
+    ? parseJson(artifacts.manifest_json.text, '/manifest.json', failures) || {}
+    : {};
+  const claims = artifacts.claims_json?.text
+    ? parseJson(artifacts.claims_json.text, '/claims.json', failures) || {}
+    : {};
+  checkEq(manifest.schema_version, MANIFEST_SCHEMA_VERSION, 'manifest schema_version', failures);
+  checkEq(claims.schema_version, CLAIMS_SCHEMA_VERSION, 'claims schema_version', failures);
+  checkEq(manifest.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'manifest provenance_url', failures);
+  checkEq(claims.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'claims provenance_url', failures);
+  verifyCounts({ provenance, manifest, claims, failures });
+
+  const commit = shouldVerifyCommit && requireOfficial
+    ? await verifyCommit(fetchImpl, provenance, failures)
+    : { ok: true, sha: provenance.build?.commit_sha || null, skipped: true };
+
+  return {
+    ok: failures.length === 0,
+    baseUrl: normalizedBaseUrl,
+    failures,
+    provenance,
+    artifacts,
+    commit
+  };
+}

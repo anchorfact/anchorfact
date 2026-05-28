@@ -75,9 +75,12 @@ After a production deployment, run:
 
 ```bash
 EXPECTED_PUBLIC_ARTICLES=555 EXPECTED_DRAFT_ARTICLES=445 EXPECTED_CLAIMS=1685 npm run smoke:prod
+npm run verify:provenance
 ```
 
-This checks the homepage, `/manifest.json`, `/llms.txt`, `/claims.json`, `/provenance.json`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
+The smoke test checks the homepage, `/manifest.json`, `/llms.txt`, `/claims.json`, `/provenance.json`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
+
+The provenance verifier fetches `/provenance.json`, recomputes SHA-256 checksums for the core AI entrypoints, checks public/draft/claim counts, confirms official build identity, and verifies the source commit against GitHub.
 
 ## Content Model
 
@@ -110,6 +113,14 @@ Only public articles contribute publishable facts to `/claims.json`.
 | `/{slug}/facts.json` | Per-article atomic facts, when present. |
 
 `dist/` is generated output and should not be committed. The published site exposes build provenance so consumers can distinguish the canonical `anchorfact.org` build from forks or stale mirrors.
+
+Consumers can independently verify the live canonical build with:
+
+```bash
+npm run verify:provenance
+```
+
+Forks can run the same verifier with `--allow-unofficial --skip-commit` while they establish their own source repository and release identity.
 
 ## MCP and Local API
 
@@ -149,6 +160,7 @@ Public hygiene checks are shared by the compiler, quality gate, and audit script
 | `npm run pages:build` | Runs quality and build for Cloudflare Pages. |
 | `npm run pipeline` | Runs verify, quality, and build. |
 | `npm run smoke:prod` | Checks the live production machine-readable endpoints. |
+| `npm run verify:provenance` | Verifies live provenance identity, artifact checksums, counts, and source commit. |
 | `npm run audit-public-sample` | Regenerates the 20-article public content audit report. |
 | `npm run audit-public-full` | Fails if any public article has an actionable audit recommendation. |
 | `npm run repo:hygiene` | Checks for stale root snapshots, mojibake, old launch metrics, and tracked generated files. |
