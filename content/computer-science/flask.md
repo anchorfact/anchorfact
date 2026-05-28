@@ -4,8 +4,8 @@ title: Flask
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: ai_structured
 derived_from_human_seed: true
@@ -13,73 +13,59 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-001
+  - id: fact-flask-1
     statement: >-
-      Flask (Armin Ronacher, 2010) is a lightweight Python web framework — micro but extensible. Unlike Django's batteries-included, Flask starts minimal and grows via extensions (SQLAlchemy for ORM,
-      Flask-Login for auth). Ideal for APIs, microservices, and prototypes.
-    source_title: Flask Documentation
-    source_url: https://flask.palletsprojects.com/
+      The Flask quickstart creates an application object and uses route decorators to bind URL paths
+      to view functions.
+    source_title: Flask Quickstart
+    source_url: https://flask.palletsprojects.com/en/stable/quickstart/
     confidence: medium
-  - id: fact-computer-science-002
-    statement: Jinja2 templating (shared with Django, different syntax).
-    source_title: Flask Documentation
-    source_url: https://flask.palletsprojects.com/
+  - id: fact-flask-2
+    statement: Flask renders HTML templates through render_template in the tutorial template flow.
+    source_title: "Flask Tutorial: Templates"
+    source_url: https://flask.palletsprojects.com/en/stable/tutorial/templates/
     confidence: medium
-completeness: 0.88
+  - id: fact-flask-3
+    statement: >-
+      The Flask tutorial presents an application factory that creates, configures, and returns the
+      Flask app.
+    source_title: "Flask Tutorial: Application Setup"
+    source_url: https://flask.palletsprojects.com/en/stable/tutorial/factory/
+    confidence: medium
+completeness: 0.84
 known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: Flask Documentation
+  - title: Flask Quickstart
     type: documentation
     year: 2026
-    url: https://flask.palletsprojects.com/
-    institution: Pallets Projects
-  - title: Flask Web Development (3rd Edition, 2025)
-    type: book
-    year: 2025
-    authors:
-      - Grinberg M.
-    institution: O'Reilly Media
-    url: https://www.oreilly.com/flask/
-  - title: "Python Microframeworks: Flask, FastAPI, and Django REST (2025)"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.flask
-secondary_sources:
-  - title: Fluent Python (2nd Edition)
-    authors:
-      - Ramalho, Luciano
-    type: book
-    year: 2021
-    url: https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/
-    institution: O'Reilly
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
+    url: https://flask.palletsprojects.com/en/stable/quickstart/
+    institution: Pallets
+  - title: "Flask Tutorial: Templates"
+    type: documentation
+    year: 2026
+    url: https://flask.palletsprojects.com/en/stable/tutorial/templates/
+    institution: Pallets
+  - title: "Flask Tutorial: Application Setup"
+    type: documentation
+    year: 2026
+    url: https://flask.palletsprojects.com/en/stable/tutorial/factory/
+    institution: Pallets
+secondary_sources: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
 
-Flask (Armin Ronacher, 2010) is a lightweight Python web framework — micro but extensible. Unlike Django's batteries-included, Flask starts minimal and grows via extensions (SQLAlchemy for ORM, Flask-Login for auth). Ideal for APIs, microservices, and prototypes.
+Flask is a Python web framework organized around an application object, URL route decorators, view functions, templates, and optional application factories.
 
 ## Core Explanation
 
-Minimal app: `app = Flask(__name__); @app.route('/'); def hello(): return 'Hello'`. Jinja2 templating (shared with Django, different syntax). Blueprints: modular application components. Application factory pattern for scalable structure. Flask 3.0 (2023) added async support. Extensions: Flask-SQLAlchemy, Flask-Migrate (Alembic), Flask-RESTful.
+This repair removes unsupported future sources and keeps only official Pallets documentation for setup, routing, templates, and app creation.
 
 ## Further Reading
 
-- [Flask Documentation](https://flask.palletsprojects.com/)
+- [Flask Quickstart](https://flask.palletsprojects.com/en/stable/quickstart/)
+- [Flask Tutorial: Templates](https://flask.palletsprojects.com/en/stable/tutorial/templates/)
+- [Flask Tutorial: Application Setup](https://flask.palletsprojects.com/en/stable/tutorial/factory/)

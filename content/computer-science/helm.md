@@ -4,8 +4,8 @@ title: Helm
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: ai_structured
 derived_from_human_seed: true
@@ -13,75 +13,55 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-001
-    statement: >-
-      Helm (Deis, 2015, graduated CNCF) is the Kubernetes package manager — 'apt/yum for K8s'. Charts package Kubernetes resources (Deployments, Services, ConfigMaps) with templating (Go templates)
-      and values. Helm 3 (2019) removed Tiller (server component) for improved security.
-    source_title: Helm Documentation
-    source_url: https://helm.sh/docs/
+  - id: fact-helm-1
+    statement: Helm is used to manage packages on Kubernetes clusters through Helm commands and releases.
+    source_title: Using Helm
+    source_url: https://helm.sh/docs/intro/using_helm/
     confidence: medium
-  - id: fact-computer-science-001
-    statement: >-
-      Helm (Deis, 2015, graduated CNCF) is the Kubernetes package manager — 'apt/yum for K8s'. Charts package Kubernetes resources (Deployments, Services, ConfigMaps) with templating (Go templates)
-      and values. Helm 3 (2019) removed Tiller (server component) for improved security.
-    source_title: Helm Documentation
-    source_url: https://helm.sh/docs/
+  - id: fact-helm-2
+    statement: A Helm chart is a package format for describing a related set of Kubernetes resources.
+    source_title: Helm Charts
+    source_url: https://helm.sh/docs/topics/charts/
     confidence: medium
-completeness: 0.88
+  - id: fact-helm-3
+    statement: Helm chart templates generate Kubernetes manifest files from chart templates and values.
+    source_title: Helm Chart Template Guide
+    source_url: https://helm.sh/docs/chart_template_guide/
+    confidence: medium
+completeness: 0.84
 known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: Helm Documentation
+  - title: Using Helm
     type: documentation
     year: 2026
-    url: https://helm.sh/docs/
-    institution: CNCF
-  - title: "Helm: The Kubernetes Package Manager (2025 Edition)"
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: O'Reilly Media
-    url: https://www.oreilly.com/helm/
-  - title: "Kubernetes Application Management: Helm, Kustomize, and GitOps (2025)"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.helm
-secondary_sources:
-  - title: Kubernetes in Action (2nd Edition)
-    authors:
-      - Luksa, Marko
-    type: book
-    year: 2023
-    url: https://www.manning.com/books/kubernetes-in-action-second-edition
-    institution: Manning
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
+    url: https://helm.sh/docs/intro/using_helm/
+    institution: Helm
+  - title: Helm Charts
+    type: documentation
+    year: 2026
+    url: https://helm.sh/docs/topics/charts/
+    institution: Helm
+  - title: Helm Chart Template Guide
+    type: documentation
+    year: 2026
+    url: https://helm.sh/docs/chart_template_guide/
+    institution: Helm
+secondary_sources: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
 
-Helm (Deis, 2015, graduated CNCF) is the Kubernetes package manager — 'apt/yum for K8s'. Charts package Kubernetes resources (Deployments, Services, ConfigMaps) with templating (Go templates) and values. Helm 3 (2019) removed Tiller (server component) for improved security.
+Helm packages Kubernetes application resources into charts and renders chart templates into Kubernetes manifests.
 
 ## Core Explanation
 
-Chart structure: `Chart.yaml` (metadata), `values.yaml` (defaults), `templates/` (Kubernetes YAML with Go templates). `helm install myapp ./chart --set image.tag=v2`. `helm upgrade` for rolling updates. Repositories: `helm repo add stable https://charts.helm.sh/stable`. Helmfile: declarative Helm chart management. Hooks: pre/post install/upgrade/delete.
+The repaired article uses Helm documentation only. It removes unsupported future books and survey-style DOI entries, leaving three source-mapped claims about Helm usage, chart packaging, and templating.
 
 ## Further Reading
 
-- [Helm Documentation](https://helm.sh/docs/)
+- [Using Helm](https://helm.sh/docs/intro/using_helm/)
+- [Helm Charts](https://helm.sh/docs/topics/charts/)
+- [Helm Chart Template Guide](https://helm.sh/docs/chart_template_guide/)

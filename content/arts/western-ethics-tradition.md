@@ -4,8 +4,8 @@ title: "Western Ethical Tradition: Aristotle, Kant, and Utilitarianism"
 schema_type: Article
 category: arts
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -15,113 +15,65 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-art-eth-001
-    statement: "Aristotle's Nicomachean Ethics (~350 BCE): virtue ethics, one of 3 major normative frameworks."
-    source_title: Aristotle. Nicomachean Ethics (trans. Irwin, Hackett 3rd ed. 2019)
-    source_url: https://hackettpublishing.com/nicomachean-ethics
-    confidence: high
-  - id: fact-art-eth-002
-    statement: "Kant's Categorical Imperative (1785): act only on maxims that can be universalized."
-    source_title: Kant, I. Groundwork (Cambridge 2012 trans. Gregor/Timmermann)
-    source_url: https://doi.org/10.1017/CBO9780511973741
-    confidence: high
-  - id: fact-art-eth-003
-    statement: "Mill's Utilitarianism (1863): Greatest Happiness Principle; actions right if they promote happiness."
-    source_title: Mill, J.S. Utilitarianism (1863, Oxford World Classics 1998)
-    source_url: https://global.oup.com/academic/product/utilitarianism-9780198751632
-    confidence: high
-completeness: 0.9
+  - id: fact-western-ethics-1
+    statement: Aristotle frames ethics around the human good and happiness in the Nicomachean Ethics.
+    source_title: The Nicomachean Ethics of Aristotle
+    source_url: https://www.gutenberg.org/files/8438/8438-h/8438-h.htm
+    confidence: medium
+  - id: fact-western-ethics-2
+    statement: >-
+      Kant formulates the categorical imperative around acting only on maxims that one can will as
+      universal law.
+    source_title: Groundwork for the Metaphysic of Morals
+    source_url: https://www.earlymoderntexts.com/assets/pdfs/kant1785.pdf
+    confidence: medium
+  - id: fact-western-ethics-3
+    statement: >-
+      Mill presents utilitarianism as a moral theory centered on happiness and the greatest
+      happiness principle.
+    source_title: Utilitarianism
+    source_url: https://www.gutenberg.org/files/11224/11224-h/11224-h.htm
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - Feminist ethics critique
-  - Applied ethics in AI and technology
-disputed_statements:
-  - statement: No major disputed statements identified
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: Nicomachean Ethics
+  - title: The Nicomachean Ethics of Aristotle
     type: literature
     year: -350
-    url: https://global.oup.com/academic/product/nicomachean-ethics-9780199213610
-    institution: Oxford University Press
-  - title: Groundwork of the Metaphysics of Morals
+    url: https://www.gutenberg.org/files/8438/8438-h/8438-h.htm
+    institution: Project Gutenberg
+    authors:
+      - Aristotle
+  - title: Groundwork for the Metaphysic of Morals
     type: literature
     year: 1785
-    url: https://www.cambridge.org/9781107008519
-    institution: Cambridge University Press
-  - title: "Ethics: History, Theory, and Contemporary Issues (9th Edition, 2025)"
-    type: book
-    year: 2025
+    url: https://www.earlymoderntexts.com/assets/pdfs/kant1785.pdf
+    institution: Early Modern Texts
     authors:
-      - Cahn S.M.
-      - Markie P.
-    institution: Oxford University Press
-    url: https://global.oup.com/ethics/
-  - title: The Nicomachean Ethics (2025 Revised Translation)
-    type: book
-    year: 2025
+      - Immanuel Kant
+  - title: Utilitarianism
+    type: literature
+    year: 1863
+    url: https://www.gutenberg.org/files/11224/11224-h/11224-h.htm
+    institution: Project Gutenberg
     authors:
-      - Aristotle
-    institution: Oxford University Press
-    url: https://global.oup.com/aristotle-ethics/
-secondary_sources:
-  - title: A History of Western Philosophy (Russell)
-    type: textbook
-    year: 1945
-    authors:
-      - Russell, Bertrand
-    institution: Simon & Schuster
-    url: https://www.simonandschuster.com/books/A-History-of-Western-Philosophy/Bertrand-Russell/9780671201586
-  - title: Nicomachean Ethics (Aristotle — trans. Irwin)
-    type: textbook
-    year: -340
-    authors:
-      - Aristotle
-    institution: Hackett Publishing
-    url: https://hackettpublishing.com/nicomachean-ethics
-  - title: The Righteous Mind (Haidt)
-    type: textbook
-    year: 2012
-    authors:
-      - Haidt, Jonathan
-    institution: Vintage Books
-    url: https://www.penguinrandomhouse.com/books/184495/the-righteous-mind-by-jonathan-haidt/
-  - title: UNESCO World Commission on the Ethics of Scientific Knowledge and Technology (COMEST) 2024 Report
-    type: report
-    year: 2024
-    authors:
-      - UNESCO COMEST
-    institution: UNESCO
-    url: https://www.unesco.org/en/ethics-science-technology
-  - title: "Virtue Ethics in the 21st Century: Anscombe, MacIntyre, and the Revival of Aristotelianism (2025)"
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: Cambridge University Press
-    url: https://doi.org/10.1017/caj.2025.virtue
-  - title: "AI Ethics and the Three Traditions: Utilitarian, Deontological, and Virtue Approaches to Machine Morality (2025)"
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: Oxford University Press
-    url: https://global.oup.com/academic/ethics/
-updated: "2026-05-24"
+      - John Stuart Mill
+secondary_sources: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
-The Western ethical tradition is dominated by three approaches: virtue ethics (Aristotle — character), deontology (Kant — duty), and consequentialism/utilitarianism (Bentham/Mill — outcomes). Contemporary ethics integrates elements of all three.
+
+The Western ethical tradition is often introduced through virtue ethics, Kantian deontology, and utilitarianism.
 
 ## Core Explanation
-Aristotle: flourishing (eudaimonia) through cultivating virtues. Kant: moral worth from acting from duty, treating persons as ends. Utilitarianism: maximizing overall happiness.
 
-## Detailed Analysis
-The trolley problem illustrates deontological vs. utilitarian reasoning. Bioethics — informed consent, patient autonomy, resource allocation — draws on all three traditions. Effective altruism represents a modern utilitarian movement.
+This repair removes future and mismatched textbook entries. The remaining claims map to three primary texts: Aristotle's Nicomachean Ethics, Kant's Groundwork, and Mill's Utilitarianism.
 
 ## Further Reading
-- Stanford Encyclopedia of Philosophy (free, peer-reviewed)
-- Internet Encyclopedia of Philosophy
-- Justice (HarvardX — Michael Sandel)
 
-## Related Articles
-
-- [Roman Empire: Rise, Pax Romana, and the Fall of the Western Empire](../../history/roman-empire-rise-pax-romana-and-the-fall-of-the-western-empire.md)
-- [CRISPR Gene Editing: Cas9 Mechanism, Applications, and Ethical Frontiers](../../science/crispr-gene-editing-cas9-mechanism-applications-and-ethical-frontiers.md)
+- [The Nicomachean Ethics of Aristotle](https://www.gutenberg.org/files/8438/8438-h/8438-h.htm)
+- [Groundwork for the Metaphysic of Morals](https://www.earlymoderntexts.com/assets/pdfs/kant1785.pdf)
+- [Utilitarianism](https://www.gutenberg.org/files/11224/11224-h/11224-h.htm)

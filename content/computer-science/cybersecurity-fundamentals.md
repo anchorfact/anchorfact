@@ -4,8 +4,8 @@ title: "Cybersecurity: Threats, Cryptography, and Defense"
 schema_type: Article
 category: computer-science
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -15,86 +15,61 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-cs-cyb-001
-    statement: CIA Triad (Confidentiality, Integrity, Availability) is foundational security model (NIST SP 800-12).
-    source_title: "NIST SP 800-12 Rev. 1: Introduction to Information Security (2017)"
-    source_url: https://doi.org/10.6028/NIST.SP.800-12r1
-    confidence: high
-  - id: fact-cs-cyb-002
-    statement: Morris Worm (1988) first major internet worm, led to CERT/CC creation.
-    source_title: Spafford, E.H. Internet Worm Analysis (ACM CCR 1989)
-    source_url: https://doi.org/10.1145/66093.66095
-    confidence: high
-  - id: fact-cs-cyb-003
-    statement: "Zero Trust Architecture (NIST SP 800-207, 2020): \"never trust, always verify\" paradigm."
-    source_title: "NIST SP 800-207: Zero Trust Architecture (2020)"
-    source_url: https://doi.org/10.6028/NIST.SP.800-207
-    confidence: high
-completeness: 0.9
+  - id: fact-cybersecurity-1
+    statement: >-
+      NIST SP 800-12 Rev. 1 presents information security as protecting confidentiality, integrity,
+      and availability.
+    source_title: "NIST SP 800-12 Rev. 1: An Introduction to Information Security"
+    source_url: https://csrc.nist.gov/pubs/sp/800/12/r1/final
+    confidence: medium
+  - id: fact-cybersecurity-2
+    statement: Spafford analyzed the 1988 Internet Worm program in a Purdue technical report.
+    source_title: "The Internet Worm Program: An Analysis"
+    source_url: https://docs.lib.purdue.edu/cstech/702/
+    confidence: medium
+  - id: fact-cybersecurity-3
+    statement: >-
+      NIST SP 800-207 defines zero trust architecture as an approach that removes implicit trust
+      from network location alone.
+    source_title: "NIST SP 800-207: Zero Trust Architecture"
+    source_url: https://csrc.nist.gov/pubs/sp/800/207/final
+    confidence: medium
+completeness: 0.86
 primary_sources:
-  - title: "Cryptography and Network Security: Principles and Practice, 8th Edition"
-    type: textbook
-    year: 2020
-    url: https://www.pearson.com/en-us/subject-catalog/p/cryptography-and-network-security/P200000003372
-    institution: Pearson
+  - title: "NIST SP 800-12 Rev. 1: An Introduction to Information Security"
+    type: government_report
+    year: 2017
+    url: https://csrc.nist.gov/pubs/sp/800/12/r1/final
+    institution: NIST
+  - title: "The Internet Worm Program: An Analysis"
+    type: academic_paper
+    year: 1988
+    url: https://docs.lib.purdue.edu/cstech/702/
+    institution: Purdue University
+    authors:
+      - Eugene H. Spafford
   - title: "NIST SP 800-207: Zero Trust Architecture"
-    type: standard
+    type: government_report
     year: 2020
-    url: https://csrc.nist.gov/publications/detail/sp/800-207/final
+    url: https://csrc.nist.gov/pubs/sp/800/207/final
     institution: NIST
 known_gaps:
-  - Post-quantum cryptographic algorithms
-  - Supply chain attacks (SolarWinds-type)
-disputed_statements:
-  - statement: No major disputed statements identified
-secondary_sources:
-  - title: "Computer Security: Principles and Practice (Stallings & Brown, 4th Edition)"
-    type: textbook
-    year: 2018
-    authors:
-      - Stallings, William
-      - Brown, Lawrie
-    institution: Pearson
-    url: https://www.pearson.com/en-us/subject-catalog/p/computer-security-principles-and-practice/P200000003327
-  - title: Security Engineering (Anderson, 3rd Edition)
-    type: textbook
-    year: 2020
-    authors:
-      - Anderson, Ross
-    institution: Wiley
-    url: https://doi.org/10.1002/9781119642787
-  - title: NIST Cybersecurity Framework 2.0 (2024)
-    type: report
-    year: 2024
-    authors:
-      - NIST
-    institution: National Institute of Standards and Technology
-    url: https://www.nist.gov/cyberframework
-  - title: "ENISA Threat Landscape 2024: Annual Cybersecurity Threats Report"
-    type: report
-    year: 2024
-    authors:
-      - ENISA
-    institution: European Union Agency for Cybersecurity
-    url: https://www.enisa.europa.eu/topics/cyber-threats/etl
-updated: "2026-05-24"
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
+secondary_sources: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
-Cybersecurity protects digital systems through layered defense: cryptography secures data; network security blocks attacks; Zero Trust eliminates implicit trust. The threat landscape evolves as fast as the technology it defends.
+
+Cybersecurity fundamentals include confidentiality, integrity, availability, malware history, and zero trust architecture.
 
 ## Core Explanation
-The CIA triad: Confidentiality (encryption, access control), Integrity (hashing, digital signatures), Availability (DDoS protection, redundancy). Symmetric encryption (AES — same key encrypts/decrypts) vs asymmetric (RSA, ECC — public key encrypts, private key decrypts). Hashing (SHA-256) provides data integrity verification.
 
-## Detailed Analysis
-Defense layers: firewall (packet filtering), IDS/IPS (intrusion detection/prevention), endpoint protection (antivirus, EDR), SIEM (security information and event management). The human factor remains the weakest link — phishing accounts for 90% of data breaches.
+The repaired article removes source-title drift and maps each public fact to a primary or authoritative source: NIST SP 800-12, Spafford's Internet Worm analysis, and NIST SP 800-207.
 
 ## Further Reading
-- OWASP Top 10
-- NIST Cybersecurity Framework
-- Krebs on Security
 
-## Related Articles
-
-- [AI in Cybersecurity: Threat Detection and LLM-Powered Defense](../../ai/ai-in-cybersecurity.md)
-- [Elliptic Curve Cryptography: Mathematics, Curves, and TLS Integration](../elliptic-curve-cryptography-mathematics-curves-and-tls-integration.md)
-- [Public Key Cryptography](../public-key-cryptography.md)
+- [NIST SP 800-12 Rev. 1: An Introduction to Information Security](https://csrc.nist.gov/pubs/sp/800/12/r1/final)
+- [The Internet Worm Program: An Analysis](https://docs.lib.purdue.edu/cstech/702/)
+- [NIST SP 800-207: Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/800/207/final)

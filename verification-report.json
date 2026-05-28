@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 0,
     "average_sources_per_article": "2.1",
-    "overall_verification_rate": "56.0%",
+    "overall_verification_rate": "56.8%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 161
+    "manual_reviewed_articles": 172
   },
   "articles": [
     {
@@ -16608,19 +16608,20 @@
       "file": "content/arts/western-ethics-tradition.md",
       "article_id": "western-ethics-tradition",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Nicomachean Ethics",
+          "source_title": "The Nicomachean Ethics of Aristotle",
           "source_type": "literature",
           "results": [
             {
               "method": "url",
-              "identifier": "https://global.oup.com/academic/product/nicomachean-ethics-9780199213610",
+              "identifier": "https://www.gutenberg.org/files/8438/8438-h/8438-h.htm",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/academic/product/nicomachean-ethics-9780199213610"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -16628,33 +16629,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Groundwork of the Metaphysics of Morals",
+          "source_title": "Groundwork for the Metaphysic of Morals",
           "source_type": "literature",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.cambridge.org/9781107008519",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.cambridge.org/9781107008519"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Ethics: History, Theory, and Contemporary Issues (9th Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/ethics/",
+              "identifier": "https://www.earlymoderntexts.com/assets/pdfs/kant1785.pdf",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/ethics/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -16662,16 +16647,17 @@
           "all_verified": true
         },
         {
-          "source_title": "The Nicomachean Ethics (2025 Revised Translation)",
-          "source_type": "book",
+          "source_title": "Utilitarianism",
+          "source_type": "literature",
           "results": [
             {
               "method": "url",
-              "identifier": "https://global.oup.com/aristotle-ethics/",
+              "identifier": "https://www.gutenberg.org/files/11224/11224-h/11224-h.htm",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/aristotle-ethics/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -16680,7 +16666,7 @@
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 1
+      "sources_unreachable": 0
     },
     {
       "file": "content/arts/world-literature.md",
@@ -17867,17 +17853,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Principles of Marketing",
+          "source_title": "Principles of Marketing: Marketing and the Marketing Process",
           "source_type": "course_material",
           "results": [
             {
               "method": "url",
-              "identifier": "https://openstax.org/details/books/principles-marketing",
+              "identifier": "https://openstax.org/books/principles-marketing/pages/1-1-marketing-and-the-marketing-process",
               "verified": true,
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -17885,17 +17871,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Influence: The Psychology of Persuasion",
-          "source_type": "book",
+          "source_title": "Principles of Marketing: Understanding Consumer Markets and Buying Behavior",
+          "source_type": "course_material",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.harpercollins.com/products/influence-robert-b-cialdini",
+              "identifier": "https://openstax.org/books/principles-marketing/pages/3-1-understanding-consumer-markets-and-buying-behavior",
               "verified": true,
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -17903,17 +17889,17 @@
           "all_verified": true
         },
         {
-          "source_title": "The One Number You Need to Grow",
-          "source_type": "article",
+          "source_title": "Principles of Marketing: The Promotion Mix and Its Elements",
+          "source_type": "course_material",
           "results": [
             {
               "method": "url",
-              "identifier": "https://hbr.org/2003/12/the-one-number-you-need-to-grow",
+              "identifier": "https://openstax.org/books/principles-marketing/pages/13-1-the-promotion-mix-and-its-elements",
               "verified": true,
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -20977,19 +20963,38 @@
       "file": "content/computer-science/cybersecurity-fundamentals.md",
       "article_id": "cybersecurity-fundamentals",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Cryptography and Network Security: Principles and Practice, 8th Edition",
-          "source_type": "textbook",
+          "source_title": "NIST SP 800-12 Rev. 1: An Introduction to Information Security",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.pearson.com/en-us/subject-catalog/p/cryptography-and-network-security/P200000003372",
+              "identifier": "https://csrc.nist.gov/pubs/sp/800/12/r1/final",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.pearson.com/en-us/subject-catalog/p/cryptography-and-network-security/P200000003372"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Internet Worm Program: An Analysis",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.lib.purdue.edu/cstech/702/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -20998,15 +21003,16 @@
         },
         {
           "source_title": "NIST SP 800-207: Zero Trust Architecture",
-          "source_type": "standard",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://csrc.nist.gov/publications/detail/sp/800-207/final",
+              "identifier": "https://csrc.nist.gov/pubs/sp/800/207/final",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://csrc.nist.gov/pubs/sp/800/207/final"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -21014,7 +21020,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -21944,16 +21950,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Docker Compose Documentation",
+          "source_title": "Docker Compose Application Model",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.docker.com/compose/",
+              "identifier": "https://docs.docker.com/compose/intro/compose-application-model/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://docs.docker.com/compose/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -21961,42 +21968,44 @@
           "all_verified": true
         },
         {
-          "source_title": "Docker in Practice (3rd Edition, 2025)",
-          "source_type": "book",
+          "source_title": "Compose file reference",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.manning.com/docker-in-practice/",
-              "verified": false,
+              "identifier": "https://docs.docker.com/compose/compose-file/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.manning.com/docker-in-practice/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Multi-Container Applications: Docker Compose to Kubernetes (2025)",
-          "source_type": "article",
+          "source_title": "Compose Specification",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1109/ms.2025.docker",
-              "verified": false,
+              "identifier": "https://compose-spec.github.io/compose-spec/spec.html",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1109/ms.2025.docker"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/docker-networking.md",
@@ -22608,16 +22617,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Express.js Documentation",
+          "source_title": "Express Hello World Example",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://expressjs.com/",
+              "identifier": "https://expressjs.com/en/starter/hello-world.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://expressjs.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -22625,42 +22635,44 @@
           "all_verified": true
         },
         {
-          "source_title": "Express.js in Action (2025 Edition)",
-          "source_type": "book",
+          "source_title": "Express Routing Guide",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.manning.com/express/",
-              "verified": false,
+              "identifier": "https://expressjs.com/en/guide/routing.html",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.manning.com/express/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Node.js Web Frameworks: Express, Fastify, and NestJS (2025)",
-          "source_type": "survey_paper",
+          "source_title": "Using Express Middleware",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.node",
-              "verified": false,
+              "identifier": "https://expressjs.com/en/guide/using-middleware.html",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.node"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/factory-method-pattern.md",
@@ -22730,16 +22742,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "FastAPI Documentation",
+          "source_title": "FastAPI First Steps",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://fastapi.tiangolo.com/",
+              "identifier": "https://fastapi.tiangolo.com/tutorial/first-steps/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://fastapi.tiangolo.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -22747,42 +22760,44 @@
           "all_verified": true
         },
         {
-          "source_title": "FastAPI: Modern Python Web Development (2025 Edition)",
-          "source_type": "book",
+          "source_title": "FastAPI Path Parameters",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/fastapi/",
-              "verified": false,
+              "identifier": "https://fastapi.tiangolo.com/tutorial/path-params/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/fastapi/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "High-Performance Python APIs: FastAPI and ASGI (2025)",
-          "source_type": "article",
+          "source_title": "FastAPI Request Body",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1109/ms.2025.fastapi",
-              "verified": false,
+              "identifier": "https://fastapi.tiangolo.com/tutorial/body/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1109/ms.2025.fastapi"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/fetch-api.md",
@@ -22872,16 +22887,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Flask Documentation",
+          "source_title": "Flask Quickstart",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://flask.palletsprojects.com/",
+              "identifier": "https://flask.palletsprojects.com/en/stable/quickstart/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://flask.palletsprojects.com/en/stable/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -22889,42 +22905,44 @@
           "all_verified": true
         },
         {
-          "source_title": "Flask Web Development (3rd Edition, 2025)",
-          "source_type": "book",
+          "source_title": "Flask Tutorial: Templates",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/flask/",
-              "verified": false,
+              "identifier": "https://flask.palletsprojects.com/en/stable/tutorial/templates/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/flask/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Python Microframeworks: Flask, FastAPI, and Django REST (2025)",
-          "source_type": "survey_paper",
+          "source_title": "Flask Tutorial: Application Setup",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.flask",
-              "verified": false,
+              "identifier": "https://flask.palletsprojects.com/en/stable/tutorial/factory/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.flask"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/fourier-transform.md",
@@ -23989,16 +24007,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Helm Documentation",
+          "source_title": "Using Helm",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://helm.sh/docs/",
+              "identifier": "https://helm.sh/docs/intro/using_helm/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://helm.sh/docs/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -24006,42 +24025,44 @@
           "all_verified": true
         },
         {
-          "source_title": "Helm: The Kubernetes Package Manager (2025 Edition)",
-          "source_type": "book",
+          "source_title": "Helm Charts",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/helm/",
-              "verified": false,
+              "identifier": "https://helm.sh/docs/topics/charts/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/helm/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Kubernetes Application Management: Helm, Kustomize, and GitOps (2025)",
-          "source_type": "survey_paper",
+          "source_title": "Helm Chart Template Guide",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.helm",
-              "verified": false,
+              "identifier": "https://helm.sh/docs/chart_template_guide/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.helm"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/history-api.md",
@@ -24602,16 +24623,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Julia Documentation",
-          "source_type": "documentation",
+          "source_title": "Julia: A Fresh Approach to Numerical Computing",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.julialang.org/",
+              "identifier": "https://arxiv.org/abs/1411.1607",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://docs.julialang.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -24619,42 +24641,44 @@
           "all_verified": true
         },
         {
-          "source_title": "Julia for Data Science (2025 Edition)",
-          "source_type": "book",
+          "source_title": "Julia Manual: Methods",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/julia/",
-              "verified": false,
+              "identifier": "https://docs.julialang.org/en/v1/manual/methods/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/julia/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Julia Programming Language: A 2025 Scientific Computing Survey",
-          "source_type": "survey_paper",
+          "source_title": "Julia JIT Design and Implementation",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.julia",
-              "verified": false,
+              "identifier": "https://docs.julialang.org/en/v1/devdocs/jit/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.julia"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/jwt-json-web-tokens-authentication-claims-and-security.md",
@@ -25655,16 +25679,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Site Reliability Engineering (Google)",
+          "source_title": "SRE Book: Monitoring Distributed Systems",
           "source_type": "book",
           "results": [
             {
               "method": "url",
-              "identifier": "https://sre.google/books/",
+              "identifier": "https://sre.google/sre-book/monitoring-distributed-systems/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://sre.google/books/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -25672,42 +25697,44 @@
           "all_verified": true
         },
         {
-          "source_title": "Observability Engineering (2025 Updated Edition)",
+          "source_title": "SRE Book: Service Level Objectives",
           "source_type": "book",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/observability/",
-              "verified": false,
+              "identifier": "https://sre.google/sre-book/service-level-objectives/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/observability/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Cloud-Native Observability: A 2025 Survey",
-          "source_type": "survey_paper",
+          "source_title": "OpenTelemetry Signals",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.observability",
-              "verified": false,
+              "identifier": "https://opentelemetry.io/docs/concepts/signals/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.observability"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/mqtt-protocol.md",
@@ -27077,7 +27104,7 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Progressive Web Apps (MDN)",
+          "source_title": "Progressive Web Apps",
           "source_type": "documentation",
           "results": [
             {
@@ -27085,8 +27112,9 @@
               "identifier": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -27094,42 +27122,44 @@
           "all_verified": true
         },
         {
-          "source_title": "Progressive Web Apps: Architecture, Performance, and Best Practices (2025)",
-          "source_type": "book",
+          "source_title": "Service Worker API",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/pwa/",
-              "verified": false,
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/pwa/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Cross-Platform Mobile Development in 2025: PWA, React Native, and Flutter",
-          "source_type": "survey_paper",
+          "source_title": "Web Application Manifest",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.mobile",
-              "verified": false,
+              "identifier": "https://www.w3.org/TR/appmanifest/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.mobile"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/prometheus.md",
@@ -31003,19 +31033,20 @@
       "file": "content/game-development/game-audio-systems.md",
       "article_id": "game-audio-systems",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Game Audio Implementation",
-          "source_type": "textbook",
+          "source_title": "Game Sound",
+          "source_type": "book",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.routledge.com/Game-Audio-Implementation/Schutze-Ingebretsen/p/book/9781138777248",
+              "identifier": "https://mitpress.mit.edu/9780262537773/game-sound/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.routledge.com/Game-Audio-Implementation/Schutze-Ingebretsen/p/book/9781138777248"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -31023,16 +31054,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Spatial Audio in VR",
-          "source_type": "academic_paper",
+          "source_title": "Designing Sound",
+          "source_type": "book",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.aes.org/e-lib/browse.cfm?elib=20380",
+              "identifier": "https://mitpress.mit.edu/9780262288835/designing-sound/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://aes.org/publications/elibrary-page/?id=20380"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "3-D Sound for Virtual Reality and Multimedia",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20010044352.pdf",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twelfth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -31040,7 +31090,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {

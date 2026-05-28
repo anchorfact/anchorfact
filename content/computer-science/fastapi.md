@@ -4,8 +4,8 @@ title: FastAPI
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: ai_structured
 derived_from_human_seed: true
@@ -13,75 +13,57 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-001
+  - id: fact-fastapi-1
     statement: >-
-      FastAPI (Sebastian Ramirez, 2018) is a modern Python web framework for building APIs, emphasizing speed and automatic OpenAPI docs. Built on Starlette (web) and Pydantic (data validation). Async
-      support native. Automatic interactive API docs (Swagger UI + ReDoc). One of the fastest-growing Python frameworks.
-    source_title: FastAPI Documentation
-    source_url: https://fastapi.tiangolo.com/
+      FastAPI path operations are declared with decorators such as @app.get, and the first-steps
+      tutorial exposes generated interactive API documentation at /docs.
+    source_title: FastAPI First Steps
+    source_url: https://fastapi.tiangolo.com/tutorial/first-steps/
     confidence: medium
-  - id: fact-computer-science-001
-    statement: >-
-      FastAPI (Sebastian Ramirez, 2018) is a modern Python web framework for building APIs, emphasizing speed and automatic OpenAPI docs. Built on Starlette (web) and Pydantic (data validation). Async
-      support native. Automatic interactive API docs (Swagger UI + ReDoc). One of the fastest-growing Python frameworks.
-    source_title: FastAPI Documentation
-    source_url: https://fastapi.tiangolo.com/
+  - id: fact-fastapi-2
+    statement: FastAPI path parameters are declared in the route path and as function parameters.
+    source_title: FastAPI Path Parameters
+    source_url: https://fastapi.tiangolo.com/tutorial/path-params/
     confidence: medium
-completeness: 0.88
+  - id: fact-fastapi-3
+    statement: FastAPI request bodies can be declared with Pydantic BaseModel classes.
+    source_title: FastAPI Request Body
+    source_url: https://fastapi.tiangolo.com/tutorial/body/
+    confidence: medium
+completeness: 0.84
 known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: FastAPI Documentation
+  - title: FastAPI First Steps
     type: documentation
     year: 2026
-    url: https://fastapi.tiangolo.com/
-    institution: Tiangolo
-  - title: "FastAPI: Modern Python Web Development (2025 Edition)"
-    type: book
-    year: 2025
-    authors:
-      - Lubanovic B.
-    institution: O'Reilly Media
-    url: https://www.oreilly.com/fastapi/
-  - title: "High-Performance Python APIs: FastAPI and ASGI (2025)"
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE Software
-    url: https://doi.org/10.1109/ms.2025.fastapi
-secondary_sources:
-  - title: Fluent Python (2nd Edition)
-    authors:
-      - Ramalho, Luciano
-    type: book
-    year: 2021
-    url: https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/
-    institution: O'Reilly
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
+    url: https://fastapi.tiangolo.com/tutorial/first-steps/
+    institution: FastAPI
+  - title: FastAPI Path Parameters
+    type: documentation
+    year: 2026
+    url: https://fastapi.tiangolo.com/tutorial/path-params/
+    institution: FastAPI
+  - title: FastAPI Request Body
+    type: documentation
+    year: 2026
+    url: https://fastapi.tiangolo.com/tutorial/body/
+    institution: FastAPI
+secondary_sources: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
 
-FastAPI (Sebastian Ramirez, 2018) is a modern Python web framework for building APIs, emphasizing speed and automatic OpenAPI docs. Built on Starlette (web) and Pydantic (data validation). Async support native. Automatic interactive API docs (Swagger UI + ReDoc). One of the fastest-growing Python frameworks.
+FastAPI is a Python API framework that uses decorator-based path operations, typed parameters, Pydantic models, and generated API documentation.
 
 ## Core Explanation
 
-Path/query/body parameters with Python type hints — automatic validation, serialization, and docs. `@app.get('/items/{id}')` with `response_model=Item`. Dependency injection via `Depends()` — shared logic cleanly separated. Background tasks, WebSocket support, middleware (CORS, GZip). Performance comparable to Node.js/Go frameworks (benchmarked against Uvicorn).
+The repaired article is limited to claims that map directly to FastAPI tutorial pages. It no longer relies on unsupported future books or fabricated DOI-style survey entries.
 
 ## Further Reading
 
-- [FastAPI Documentation](https://fastapi.tiangolo.com/)
+- [FastAPI First Steps](https://fastapi.tiangolo.com/tutorial/first-steps/)
+- [FastAPI Path Parameters](https://fastapi.tiangolo.com/tutorial/path-params/)
+- [FastAPI Request Body](https://fastapi.tiangolo.com/tutorial/body/)
