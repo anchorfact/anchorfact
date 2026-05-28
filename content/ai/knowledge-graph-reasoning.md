@@ -4,8 +4,8 @@ title: "Knowledge Graph Reasoning: Embedding-Based Link Prediction, Logical Infe
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -14,96 +14,63 @@ derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
-completeness: 0.85
+completeness: 0.78
 atomic_facts:
   - id: af-knowledge-graph-reasoning-1
-    statement: >-
-      ScienceDirect Engineering Applications of AI (November 2025) published a comprehensive review of knowledge graph reasoning — documenting the evolution from symbolic logic methods (rule-based,
-      description logic) to embedding-based methods (TransE, RotatE, ComplEx) and graph neural network-based approaches (R-GCN, CompGCN) — finding that hybrid neurosymbolic methods combining embedding
-      scores with logical constraints achieve 8-15% improvement in link prediction metrics (MRR, Hits@10) on standard benchmarks (WN18RR, FB15k-237).
-    source_title: "Engineering Applications of AI / ScienceDirect (2025) — Knowledge graph reasoning: Mainstream methods, applications — doi:10.1016/j.engappai.2025.110514"
-    source_url: https://www.sciencedirect.com/science/article/pii/S0952197625016276
-    confidence: high
+    statement: "A 2025 Engineering Applications of Artificial Intelligence survey categorizes knowledge graph reasoning methods into ontology-based reasoning, rule-based reasoning, neural rule reasoning based on distributed representations, neural rule reasoning based on deep learning, and hybrid reasoning."
+    source_title: "Knowledge graph reasoning: Mainstream methods, applications and prospects"
+    source_url: "https://www.sciencedirect.com/science/article/pii/S0952197625016276"
+    source_doi: "10.1016/j.engappai.2025.111625"
+    confidence: medium
   - id: af-knowledge-graph-reasoning-2
-    statement: >-
-      National Science Review (March 2026) published a survey on knowledge graphs in AI-driven discovery — identifying KG-enhanced LLMs (retrieving structured knowledge during generation), temporal
-      knowledge graph reasoning (predicting future facts), and multimodal KGs (combining text, images, and structured data) as the three frontier directions for 2025-2026.
-    source_title: "National Science Review (2026) — Bridging data and discovery: a survey on knowledge graphs in AI — doi:10.1093/nsr/nwag140"
-    source_url: https://academic.oup.com/nsr/article/13/8/nwag140/8507209
-    confidence: high
+    statement: "A 2026 National Science Review survey describes scientific knowledge graphs as structured infrastructure for AI-driven scientific discovery, including applications in drug development, omics analysis, reaction prediction, and materials design."
+    source_title: "Bridging data and discovery: a survey on knowledge graphs in AI for science"
+    source_url: "https://academic.oup.com/nsr/article/13/8/nwag140/8507209"
+    source_doi: "10.1093/nsr/nwag140"
+    confidence: medium
 primary_sources:
   - id: ps-knowledge-graph-reasoning-1
-    title: "Knowledge graph reasoning: Mainstream methods, applications, and future trends"
-    type: academic_paper
+    title: "Knowledge graph reasoning: Mainstream methods, applications and prospects"
+    type: survey_paper
     year: 2025
     institution: Engineering Applications of Artificial Intelligence / Elsevier
-    doi: 10.1016/j.engappai.2025.110514
-    url: https://www.sciencedirect.com/science/article/pii/S0952197625016276
+    doi: "10.1016/j.engappai.2025.111625"
+    url: "https://www.sciencedirect.com/science/article/pii/S0952197625016276"
   - id: ps-knowledge-graph-reasoning-2
-    title: "Bridging data and discovery: a survey on knowledge graphs in AI-driven scientific discovery"
-    type: academic_paper
+    title: "Bridging data and discovery: a survey on knowledge graphs in AI for science"
+    type: survey_paper
     year: 2026
-    institution: National Science Review / Oxford
-    doi: 10.1093/nsr/nwag140
-    url: https://academic.oup.com/nsr/article/13/8/nwag140/8507209
+    institution: National Science Review / Oxford University Press
+    doi: "10.1093/nsr/nwag140"
+    url: "https://academic.oup.com/nsr/article/13/8/nwag140/8507209"
 known_gaps:
-  - Efficient reasoning over billion-scale knowledge graphs with real-time latency
-  - Multimodal KG reasoning combining text, image, and structured entity embeddings
+  - "Benchmark-specific performance claims are omitted because they require method-by-method source mapping."
+  - "The article summarizes survey-level categories rather than ranking individual KG reasoning models."
 disputed_statements: []
-secondary_sources:
-  - title: "Knowledge Graph Reasoning: A Comprehensive Survey of Symbolic, Neural, and Neurosymbolic Approaches"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/3635100
-  - title: "RotatE: Knowledge Graph Embedding by Relational Rotation in Complex Space"
-    type: conference_paper
-    year: 2019
-    authors:
-      - Sun, Zhiqing
-      - Deng, Zhi-Hong
-      - Nie, Jian-Yun
-      - Tang, Jian
-    institution: Mila / ICLR
-    url: https://arxiv.org/abs/1902.10197
-  - title: "A Review of Knowledge Graph Completion: From Embedding Methods to Large Language Models"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: IEEE TKDE
-    url: https://doi.org/10.1109/TKDE.2024.3361474
-  - title: Complex Embeddings for Simple Link Prediction (ComplEx)
-    type: conference_paper
-    year: 2016
-    authors:
-      - Trouillon, Théo
-      - Welbl, Johannes
-      - Riedel, Sebastian
-      - Gaussier, Eric
-      - Bouchard, Guillaume
-    institution: University College London / ICML
-    url: https://arxiv.org/abs/1606.06357
-updated: "2026-05-24"
+secondary_sources: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
-Knowledge graph reasoning answers "what facts are missing from this knowledge base?" — predicting unknown relationships between entities using a combination of embedding-based pattern matching, graph neural networks, and logical rule inference. From drug repurposing to question answering, KG reasoning powers structured knowledge discovery across science and industry.
+
+Knowledge graph reasoning uses structured triples to infer missing or implied relationships. Current survey evidence supports a broad taxonomy of symbolic, neural, and hybrid methods, plus growing use of scientific knowledge graphs as infrastructure for AI-assisted discovery.
 
 ## Core Explanation
-A knowledge graph is a directed graph of (head entity, relation, tail entity) triples — e.g., (Barack Obama, bornIn, Hawaii), (Hawaii, partOf, USA). KG reasoning: predict missing triples — (Barack Obama, citizenOf, ?) → USA. Methods: (1) Translational models (TransE, 2013) — embed entities and relations in vector space, model relation as translation: h + r ≈ t, score = -||h + r - t||. Simple but struggles with 1-N and symmetric relations; (2) Bilinear/compositional models (DistMult, ComplEx, RotatE) — use tensor factorization or complex-valued embeddings to capture richer relation patterns; (3) GNN-based (R-GCN, CompGCN) — aggregate messages from neighboring entities in the graph, learning entity embeddings that incorporate multi-hop relational context; (4) Neurosymbolic — combine embedding scores with logical rules (Markov Logic Networks, probabilistic soft logic) to ensure consistency and interpretability.
+
+A knowledge graph represents facts as relationships between entities, often in the form head, relation, tail. Reasoning tries to infer new or missing relationships from the graph. Some methods use ontologies and rules; others learn vector representations of entities and relations; hybrid methods combine learned scores with explicit constraints.
+
+The 2025 Engineering Applications of Artificial Intelligence survey organizes the field into ontology-based, rule-based, neural, and hybrid approaches. The 2026 National Science Review survey focuses on scientific knowledge graphs, emphasizing their role in organizing heterogeneous scientific information for biology, chemistry, and materials science.
 
 ## Detailed Analysis
-ScienceDirect 2025 review categorizes KG reasoning into three paradigms: embedding-based (learn vector representations and score triples), path-based (explicitly traverse multi-hop paths — PRA, DeepPath, MINERVA — using RL agents to walk the graph), and rule-based (AMIE+ mines Horn clauses, NeuralLP learns differentiable rule confidences). The neurosymbolic frontier: IEEE 2024 survey describes methods that embed KG triples and logical axioms into a unified neural framework — enabling reasoning that is both data-driven (from embeddings) and logically consistent (from rules). KG-enhanced LLMs (2025-2026): retrieve relevant KG subgraphs during LLM generation to ground answers in structured knowledge, reducing hallucination. Temporal KGs add time dimension — (Trump, presidentOf, USA, [2017, 2021]) — requiring models that capture temporal dynamics. Key benchmarks: WN18RR (WordNet hierarchy), FB15k-237 (Freebase subset), YAGO3-10 (temporal), ogbl-wikikg2 (OGB large-scale). Industrial KGs: Google Knowledge Graph (500B+ facts), Amazon Product Graph, LinkedIn Economic Graph. The 2026 NSR survey highlights scientific KGs as the next frontier — automatically constructing KGs from literature (biomedical, materials, chemistry) and reasoning over them for hypothesis generation.
+
+The evidence supports a careful distinction between knowledge graph completion and open-ended reasoning. Link prediction can rank likely missing facts, while rule and ontology methods can enforce explicit logical structure. Scientific knowledge graphs add another layer: they provide auditable structure for literature-derived entities, experimental data, and domain relationships that AI systems can query or reason over.
 
 ## Further Reading
-- PyKEEN: Python Knowledge Graph Embedding Library
-- DGL-KE: Distributed KG Embedding Training
-- TransE: Translating Embeddings for Multi-Relational Data (Bordes et al., NeurIPS 2013)
+
+- [Knowledge graph reasoning: Mainstream methods, applications and prospects](https://www.sciencedirect.com/science/article/pii/S0952197625016276)
+- [Bridging data and discovery: a survey on knowledge graphs in AI for science](https://academic.oup.com/nsr/article/13/8/nwag140/8507209)
 
 ## Related Articles
 
 - [Recommender Systems: Graph Neural Collaborative Filtering and LLM-Based Recommendation](../recommender-systems.md)
 - [Semantic Web and Ontologies: Knowledge Representation, OWL Reasoning, and Linked Data](../semantic-web-ontology.md)
-- [Test-Time Compute Scaling: Inference-Time Reasoning Paradigms from o1/o3 to Forest-of-Thought](../test-time-compute-scaling.md)

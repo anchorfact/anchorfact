@@ -2380,7 +2380,7 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "E(3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials (NequIP)",
+          "source_title": "E(3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials",
           "source_type": "academic_paper",
           "results": [
             {
@@ -2390,7 +2390,10 @@
               "metadata": {
                 "title": "E(3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials",
                 "publisher": "Springer Science and Business Media LLC",
-                "year": 2022
+                "year": 2022,
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-seventh targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -2398,7 +2401,7 @@
           "all_verified": true
         },
         {
-          "source_title": "Predicting retrosynthetic pathways using transformer-based models (Molecular Transformer)",
+          "source_title": "Molecular Transformer: A Model for Uncertainty-Calibrated Chemical Reaction Prediction",
           "source_type": "academic_paper",
           "results": [
             {
@@ -2408,9 +2411,12 @@
               "metadata": {
                 "title": "Molecular Transformer: A Model for Uncertainty-Calibrated Chemical Reaction Prediction",
                 "publisher": "American Chemical Society (ACS)",
-                "year": 2019
+                "year": 2019,
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-seventh targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
           "all_verified": true
@@ -2426,7 +2432,10 @@
               "metadata": {
                 "title": "A Deep Learning Approach to Antibiotic Discovery",
                 "publisher": "Elsevier BV",
-                "year": 2020
+                "year": 2020,
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-seventh targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -2435,7 +2444,9 @@
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 0
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-chip-design-reinforcement-learning-for-eda-and-floorplanning.md",
@@ -6789,8 +6800,8 @@
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "AlphaProof: Formal mathematical reasoning in large language models via RL and formal verification",
-          "source_type": "academic_paper",
+          "source_title": "Mathematicians put AI model AlphaProof to the test",
+          "source_type": "academic_article",
           "results": [
             {
               "method": "url",
@@ -6798,7 +6809,10 @@
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://www.nature.com/articles/d41586-025-03585-5?error=cookies_not_supported&code=dce6a7d3-c5f3-4601-bf0f-0c84a6d080a7"
+                "final_url": "https://www.nature.com/articles/d41586-025-03585-5",
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-seventh targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -6806,7 +6820,7 @@
           "all_verified": true
         },
         {
-          "source_title": "AlphaGeometry: Solving olympiad geometry without human demonstrations",
+          "source_title": "Solving olympiad geometry without human demonstrations",
           "source_type": "academic_paper",
           "results": [
             {
@@ -6816,16 +6830,21 @@
               "metadata": {
                 "title": "Solving olympiad geometry without human demonstrations",
                 "publisher": "Springer Science and Business Media LLC",
-                "year": 2024
+                "year": 2024,
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-seventh targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
           "all_verified": true
         }
       ],
       "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-music-composition.md",
@@ -12003,26 +12022,29 @@
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "Knowledge graph reasoning: Mainstream methods, applications, and future trends",
-          "source_type": "academic_paper",
+          "source_title": "Knowledge graph reasoning: Mainstream methods, applications and prospects",
+          "source_type": "survey_paper",
           "results": [
             {
               "method": "doi",
-              "identifier": "10.1016/j.engappai.2025.110514",
+              "identifier": "10.1016/j.engappai.2025.111625",
               "verified": true,
               "metadata": {
-                "title": "Assessment of hybrid kernel function in extreme support vector regression model for streamflow time series forecasting based on a bayesian estimator decomposition algorithm",
+                "title": "Knowledge graph reasoning: Mainstream methods, applications and prospects",
                 "publisher": "Elsevier BV",
-                "year": 2025
+                "year": 2025,
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-seventh targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
           "all_verified": true
         },
         {
-          "source_title": "Bridging data and discovery: a survey on knowledge graphs in AI-driven scientific discovery",
-          "source_type": "academic_paper",
+          "source_title": "Bridging data and discovery: a survey on knowledge graphs in AI for science",
+          "source_type": "survey_paper",
           "results": [
             {
               "method": "doi",
@@ -12031,7 +12053,10 @@
               "metadata": {
                 "title": "Bridging data and discovery: a survey on knowledge graphs in AI for science",
                 "publisher": "Oxford University Press (OUP)",
-                "year": 2026
+                "year": 2026,
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-seventh targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -12040,7 +12065,9 @@
         }
       ],
       "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/kolmogorov-arnold-networks.md",
@@ -18026,7 +18053,7 @@
       "sources_total": 1,
       "verification_results": [
         {
-          "source_title": "Tonal Harmony (Kostka, Payne, Almén, 8th Ed)",
+          "source_title": "Tonal Harmony (Kostka, Payne, Almen, 8th Ed)",
           "source_type": "book",
           "results": [
             {
@@ -18035,7 +18062,10 @@
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://www.mheducation.com/highered/product/tonal-harmony-kostka-payne-almen/M9781259447099.html"
+                "final_url": "https://www.mheducation.com/highered/product/tonal-harmony-kostka-payne-almen/M9781259447099.html",
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-seventh targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -18044,7 +18074,9 @@
         }
       ],
       "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/arts/philosophy-of-mind.md",
@@ -20311,7 +20343,10 @@
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://wwnorton.com/books/9781324035466"
+                "final_url": "https://wwnorton.com/books/9781324035466",
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-seventh targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -20320,7 +20355,9 @@
         }
       ],
       "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/business/strategic-management-theory.md",

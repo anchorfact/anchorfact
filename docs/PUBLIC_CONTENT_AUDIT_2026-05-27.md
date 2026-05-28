@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T13:40:16.780Z
+Generated: 2026-05-28T13:52:49.742Z
 
-Snapshot: 555 public / 445 draft / 1688 claims.
+Snapshot: 555 public / 445 draft / 1687 claims.
 
 ## Summary
 
@@ -32,7 +32,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 7 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 8 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 9 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 10 | low_confidence_public | `arts/music-theory-basics` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
+| 10 | low_confidence_public | `history/ancient-egypt` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
 | 11 | risk_fallback | `science/climate-change` | medium | 4/5 (80.0%) | 3 | source=weak; claim=pass; summary=pass | keep_public |
 | 12 | risk_fallback | `science/plate-tectonics` | medium | 2/2 (100.0%) | 6 | source=pass; claim=pass; summary=pass | keep_public |
 | 13 | risk_fallback | `ai/gradient-descent` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
@@ -181,10 +181,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 10. Music Theory Basics
+### 10. Ancient Egypt
 
-- canonical slug: `arts/music-theory-basics`
-- canonical URL: https://anchorfact.org/arts/music-theory-basics/
+- canonical slug: `history/ancient-egypt`
+- canonical URL: https://anchorfact.org/history/ancient-egypt/
 - bucket: `low_confidence_public`
 - confidence: `low` (verified_sources, score 0.555)
 - verified source coverage: 1/1 (100.0%)

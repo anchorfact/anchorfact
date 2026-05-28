@@ -4,75 +4,55 @@ title: "Stock Market Basics"
 schema_type: "TechArticle"
 category: "business"
 language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+confidence: "low"
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+ai_models:
+  - "claude-opus"
 derived_from_human_seed: true
 conflict_of_interest: "none_declared"
 is_live_document: false
 data_period: "static"
-
+completeness: 0.7
 atomic_facts:
-  - id: "fact-business-01"
-    statement: "Efficient Market Hypothesis : prices reflect all available info — you can't consistently beat the market"
-    source_title: "A Random Walk Down Wall Street (Malkiel, 13th Ed)"
-    source_url: "https://wwnorton.com/books/9781324035466"
-    confidence: "high"
   - id: "fact-business-001"
-    statement: "The stock market is a marketplace where shares of publicly traded companies are bought and sold. Major US exchanges: NYSE, NASDAQ. Indexes: S&P 500 (500 largest US companies), Dow Jones (30), NASDAQ Composite (tech-heavy). Historical average return: ~10% annually (S&P 500, 1926-2025) — but volatile."
+    statement: "A Random Walk Down Wall Street is a long-running investment guide by Burton G. Malkiel that discusses market efficiency, diversification, and index-style investing for individual investors."
     source_title: "A Random Walk Down Wall Street (Malkiel, 13th Ed)"
     source_url: "https://wwnorton.com/books/9781324035466"
-    confidence: "medium"
+    confidence: "low"
   - id: "fact-business-002"
-    statement: "Efficient Market Hypothesis (EMH): prices reflect all available info — you can't consistently beat the market (Fama, 1970 Nobel)."
+    statement: "The book's central random-walk argument is that stock prices are difficult to forecast consistently from publicly available information."
     source_title: "A Random Walk Down Wall Street (Malkiel, 13th Ed)"
     source_url: "https://wwnorton.com/books/9781324035466"
-    confidence: "medium"
+    confidence: "low"
   - id: "fact-business-003"
-    statement: "Passive investing (index funds) beats active (stock picking) long-term (~90% of active managers underperform index over 15 years)."
+    statement: "For a basic stock-market overview, the source supports emphasizing diversification and caution about reliable market timing rather than promising repeatable stock-picking outperformance."
     source_title: "A Random Walk Down Wall Street (Malkiel, 13th Ed)"
     source_url: "https://wwnorton.com/books/9781324035466"
-    confidence: "medium"
-
+    confidence: "low"
 known_gaps:
-  - "Statistics and data cited are from 2023 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The Efficient Market Hypothesis remains debated: behavioral economists cite persistent market anomalies, while proponents argue that anomalies either disappear after publication or reflect hidden risk factors"
-
+  - "This short article is a low-confidence primer backed by one book source."
+  - "Current market returns, exchange listings, index membership, and active-manager performance statistics change over time and are intentionally omitted."
+disputed_statements: []
 primary_sources:
   - title: "A Random Walk Down Wall Street (Malkiel, 13th Ed)"
     type: "book"
     year: 2023
     url: "https://wwnorton.com/books/9781324035466"
     institution: "W. W. Norton"
-
-secondary_sources:
-  - title: "Principles of Economics (N. Gregory Mankiw)"
-    type: "textbook"
-    year: 2020
-    url: "https://www.cengage.com/c/principles-of-economics-9e-mankiw/9780357038314/"
-    institution: "Cengage Learning"
-  - title: "The Intelligent Investor (Benjamin Graham)"
-    type: "book"
-    year: 2006
-    url: "https://www.harpercollins.com/products/the-intelligent-investor-benjamin-graham"
-    institution: "HarperCollins"
-
+secondary_sources: []
 ---
-
-
 
 ## TL;DR
 
-The stock market is a marketplace where shares of publicly traded companies are bought and sold. Major US exchanges: NYSE, NASDAQ. Indexes: S&P 500 (500 largest US companies), Dow Jones (30), NASDAQ Composite (tech-heavy). Historical average return: ~10% annually (S&P 500, 1926-2025) — but volatile.
+The stock market is where investors buy and sell ownership shares in public companies. This primer is intentionally conservative: with one book source, it focuses on market efficiency, diversification, and the difficulty of consistently timing or beating the market.
 
 ## Core Explanation
 
-Bull market: rising (up 20%+). Bear market: falling (down 20%+). Efficient Market Hypothesis (EMH): prices reflect all available info — you can't consistently beat the market (Fama, 1970 Nobel). Passive investing (index funds) beats active (stock picking) long-term (~90% of active managers underperform index over 15 years). Dollar-cost averaging: invest fixed amount regularly — reduces timing risk. Compound interest: 'Eighth wonder of the world' (Einstein, attributed).
+Stocks represent ownership claims on companies, and stock prices move as buyers and sellers update their expectations about business results, interest rates, risk, and future cash flows. Market indexes group many stocks together so investors can follow broad market segments instead of one company at a time.
+
+A Random Walk Down Wall Street argues that public information is quickly reflected in prices, making reliable short-term prediction difficult. For beginners, the practical takeaway is not that markets are risk-free; it is that diversification, costs, time horizon, and risk tolerance matter more than confidence in a single prediction.
 
 ## Further Reading
 
@@ -81,5 +61,4 @@ Bull market: rising (up 20%+). Bear market: falling (down 20%+). Efficient Marke
 ## Related Articles
 
 - [AI for Algorithmic Trading: Reinforcement Learning, Market Prediction, and Quantitative Finance](../../ai/ai-for-algorithmic-trading.md)
-- [AI for Inventory Management: Demand Forecasting, Stock Optimization, and Automated Replenishment](../../ai/ai-inventory-management.md)
-- [Neural Network Basics](../../ai/neural-network-basics.md)
+- [Personal Finance](personal-finance.md)
