@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T10:27:20.072Z
+Generated: 2026-05-28T10:41:14.265Z
 
-Snapshot: 555 public / 445 draft / 1619 claims.
+Snapshot: 555 public / 445 draft / 1622 claims.
 
 ## Summary
 
@@ -11,9 +11,9 @@ This is a risk-weighted audit sample of public AnchorFact articles. It is intend
 - Sample size: 20
 - Low verified coverage samples: 1
 - Articles with at least one fail check: 0
-- High-confidence samples needing review: 0
+- High-confidence samples needing review: 1
 - Claim-evidence failures: 0
-- Recommendations: keep_public: 10, downgrade_confidence: 0, repair_sources: 10, move_to_draft: 0
+- Recommendations: keep_public: 10, downgrade_confidence: 1, repair_sources: 9, move_to_draft: 0
 
 ## Method
 
@@ -29,20 +29,20 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 4 | high_confidence | `ai/ai-in-healthcare` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 5 | high_confidence | `ai/ai-red-teaming-and-safety` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 6 | medium_capped_claims | `business/strategic-management-theory` | medium | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 7 | medium_capped_claims | `ai/ai-quantum-computing` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 8 | medium_capped_claims | `ai/ai-static-analysis` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 9 | medium_capped_claims | `ai/biometric-recognition` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 7 | medium_capped_claims | `ai/brain-computer-interface-ai` | medium | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 8 | medium_capped_claims | `ai/causal-inference-ai` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 9 | medium_capped_claims | `ai/causal-representation-learning` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
 | 10 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 12 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 13 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 14 | risk_fallback | `game-development/game-design-document-gdd` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 15 | risk_fallback | `game-development/game-monetization-ethics` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 16 | risk_fallback | `game-development/game-networking` | low | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 17 | risk_fallback | `geography/plate-tectonics-theory` | low | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 18 | risk_fallback | `health/human-anatomy` | low | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 19 | risk_fallback | `science/renewable-energy` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 20 | risk_fallback | `science/scientific-method` | low | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 14 | risk_fallback | `self-improvement/stress-management` | low | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 15 | risk_fallback | `sports/basketball-rules` | low | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 16 | risk_fallback | `ai/ai-for-logistics` | high | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 17 | risk_fallback | `ai/ai-for-social-media` | high | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 18 | risk_fallback | `ai/ai-for-weather-forecasting` | high | 3/4 (75.0%) | 2 | source=weak; claim=pass; summary=pass | downgrade_confidence |
+| 19 | risk_fallback | `ai/computational-neuroscience` | high | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 20 | risk_fallback | `ai/decentralized-ai` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
 
 ## Article Findings
 
@@ -136,12 +136,27 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 7. AI for Quantum Computing: Quantum Error Correction, Circuit Optimization, and Algorithm Discovery
+### 7. Brain-Computer Interfaces: AI-Powered Neural Decoding and Neurotechnology
 
-- canonical slug: `ai/ai-quantum-computing`
-- canonical URL: https://anchorfact.org/ai/ai-quantum-computing/
+- canonical slug: `ai/brain-computer-interface-ai`
+- canonical URL: https://anchorfact.org/ai/brain-computer-interface-ai/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.74)
+- confidence: `medium` (verified_sources, score 0.79)
+- verified source coverage: 2/2 (100.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: generic_source_homepage
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_source_homepage
+- recommendation: `repair_sources`
+
+### 8. Causal AI: From Correlation to Causation with do-Calculus
+
+- canonical slug: `ai/causal-inference-ai`
+- canonical URL: https://anchorfact.org/ai/causal-inference-ai/
+- bucket: `medium_capped_claims`
+- confidence: `medium` (verified_sources, score 0.73)
 - verified source coverage: 1/2 (50.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: partial_source_verification
@@ -151,25 +166,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 8. AI for Static Analysis: Automated Bug Detection, Code Review, and Vulnerability Scanning
+### 9. Causal Representation Learning: Deep Causal Discovery, Intervention, and Counterfactuals
 
-- canonical slug: `ai/ai-static-analysis`
-- canonical URL: https://anchorfact.org/ai/ai-static-analysis/
-- bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.74)
-- verified source coverage: 1/2 (50.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 9. AI Biometric Recognition: Fingerprint, Iris, Face, and Multimodal Deep Learning Systems
-
-- canonical slug: `ai/biometric-recognition`
-- canonical URL: https://anchorfact.org/ai/biometric-recognition/
+- canonical slug: `ai/causal-representation-learning`
+- canonical URL: https://anchorfact.org/ai/causal-representation-learning/
 - bucket: `medium_capped_claims`
 - confidence: `medium` (verified_sources, score 0.85)
 - verified source coverage: 1/2 (50.0%)
@@ -241,40 +241,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 14. Game Design Document (GDD)
+### 14. Stress Management Techniques
 
-- canonical slug: `game-development/game-design-document-gdd`
-- canonical URL: https://anchorfact.org/game-development/game-design-document-gdd/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.53)
-- verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: generic_source_homepage
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_source_homepage
-- recommendation: `repair_sources`
-
-### 15. Game Monetization Ethics
-
-- canonical slug: `game-development/game-monetization-ethics`
-- canonical URL: https://anchorfact.org/game-development/game-monetization-ethics/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.53)
-- verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: generic_source_homepage
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_source_homepage
-- recommendation: `repair_sources`
-
-### 16. Game Networking Architecture
-
-- canonical slug: `game-development/game-networking`
-- canonical URL: https://anchorfact.org/game-development/game-networking/
+- canonical slug: `self-improvement/stress-management`
+- canonical URL: https://anchorfact.org/self-improvement/stress-management/
 - bucket: `risk_fallback`
 - confidence: `low` (verified_sources, score 0.51)
 - verified source coverage: 2/2 (100.0%)
@@ -286,10 +256,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: claim_evidence_weak
 - recommendation: `repair_sources`
 
-### 17. Plate Tectonics: The Unifying Theory of Earth Sciences
+### 15. Basketball Rules and Fundamentals
 
-- canonical slug: `geography/plate-tectonics-theory`
-- canonical URL: https://anchorfact.org/geography/plate-tectonics-theory/
+- canonical slug: `sports/basketball-rules`
+- canonical URL: https://anchorfact.org/sports/basketball-rules/
 - bucket: `risk_fallback`
 - confidence: `low` (verified_sources, score 0.55)
 - verified source coverage: 2/2 (100.0%)
@@ -301,14 +271,14 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: claim_evidence_weak
 - recommendation: `repair_sources`
 
-### 18. Human Anatomy: Systems, Organs, and Function
+### 16. AI for Logistics: Last-Mile Delivery, Fleet Routing, and Warehouse Automation
 
-- canonical slug: `health/human-anatomy`
-- canonical URL: https://anchorfact.org/health/human-anatomy/
+- canonical slug: `ai/ai-for-logistics`
+- canonical URL: https://anchorfact.org/ai/ai-for-logistics/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.51)
+- confidence: `high` (verified_sources, score 0.85)
 - verified source coverage: 2/2 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
+- claims: 2 total, 0 capped, 0 missing evidence
 - quality reasons: claim_evidence_weak
 - source-title match: `pass`
 - claim-evidence match: `weak`
@@ -316,14 +286,14 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: claim_evidence_weak
 - recommendation: `repair_sources`
 
-### 19. Renewable Energy
+### 17. AI for Social Media: Misinformation Detection, Hate Speech Moderation, and Content Safety
 
-- canonical slug: `science/renewable-energy`
-- canonical URL: https://anchorfact.org/science/renewable-energy/
+- canonical slug: `ai/ai-for-social-media`
+- canonical URL: https://anchorfact.org/ai/ai-for-social-media/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.43)
-- verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
+- confidence: `high` (verified_sources, score 0.85)
+- verified source coverage: 2/2 (100.0%)
+- claims: 2 total, 0 capped, 0 missing evidence
 - quality reasons: generic_source_homepage
 - source-title match: `pass`
 - claim-evidence match: `weak`
@@ -331,19 +301,49 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_source_homepage
 - recommendation: `repair_sources`
 
-### 20. The Scientific Method: From Hypothesis to Theory
+### 18. AI for Weather Forecasting: Data-Driven Numerical Weather Prediction and Nowcasting
 
-- canonical slug: `science/scientific-method`
-- canonical URL: https://anchorfact.org/science/scientific-method/
+- canonical slug: `ai/ai-for-weather-forecasting`
+- canonical URL: https://anchorfact.org/ai/ai-for-weather-forecasting/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.49)
+- confidence: `high` (verified_sources, score 0.88)
+- verified source coverage: 3/4 (75.0%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: duplicate_sources
+- recommendation: `downgrade_confidence`
+
+### 19. Computational Neuroscience: AI Models of Brain Circuits, Connectomics, and Neural Computation
+
+- canonical slug: `ai/computational-neuroscience`
+- canonical URL: https://anchorfact.org/ai/computational-neuroscience/
+- bucket: `risk_fallback`
+- confidence: `high` (verified_sources, score 0.85)
 - verified source coverage: 2/2 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: generic_source_homepage
 - source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
+- hygiene flags: generic_source_homepage
+- recommendation: `repair_sources`
+
+### 20. Decentralized AI: Distributed Inference, Peer-to-Peer Networks, and Blockchain Integration
+
+- canonical slug: `ai/decentralized-ai`
+- canonical URL: https://anchorfact.org/ai/decentralized-ai/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.85)
+- verified source coverage: 1/2 (50.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: partial_source_verification, high_confidence_evidence_gap
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
 - recommendation: `repair_sources`
 
 ## Rule Calibration

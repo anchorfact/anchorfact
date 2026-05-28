@@ -2,13 +2,13 @@
   "summary": {
     "generated": "2026-05-27T14:00:00.000Z",
     "total_articles": 1000,
-    "total_with_errors": 358,
+    "total_with_errors": 355,
     "average_sources_per_article": "2.2",
-    "overall_verification_rate": "67.7%",
+    "overall_verification_rate": "68.0%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 247
+    "manual_reviewed_articles": 257
   },
   "articles": [
     {
@@ -7079,19 +7079,20 @@
       "file": "content/ai/ai-quantum-computing.md",
       "article_id": "ai-quantum-computing",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "AlphaQubit: Reinforcement Learning for Quantum Error Correction Decoding (DeepMind, 2024)",
+          "source_title": "Quantum machine learning",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nature.com/articles/s41586-024-07985-x",
+              "identifier": "https://www.nature.com/articles/nature23474",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nature.com/articles/s41586-024-07985-x?error=cookies_not_supported&code=da876af3-91b0-4a25-9c93-e288f66c2bd8"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -7099,14 +7100,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Quantum Machine Learning: A Survey of Algorithms, Applications, and the Path to Practical Quantum Advantage",
+          "source_title": "A variational eigenvalue solver on a photonic quantum processor",
           "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.nature.com/articles/ncomms5213",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "A Quantum Approximate Optimization Algorithm",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1411.4028",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-red-teaming-and-safety.md",
@@ -7647,19 +7680,20 @@
       "file": "content/ai/ai-static-analysis.md",
       "article_id": "ai-static-analysis",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "SmartCode AI: A Hybrid Static Analysis and Ensemble Deep Learning Framework for Automated Bug Detection",
+          "source_title": "DeepBugs: A Learning Approach to Name-based Bug Detection",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://ieeexplore.ieee.org/document/11510940",
+              "identifier": "https://arxiv.org/abs/1805.11683",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://ieeexplore.ieee.org/document/11510940"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -7667,25 +7701,46 @@
           "all_verified": true
         },
         {
-          "source_title": "LLift: Enhancing Static Analysis for Practical Bug Detection with LLM Integration",
+          "source_title": "VulDeePecker: A Deep Learning-Based System for Vulnerability Detection",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/doi/10.1145/3649828",
-              "verified": false,
+              "identifier": "https://arxiv.org/abs/1801.01681",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/doi/10.1145/3649828"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Devign: Effective Vulnerability Identification by Learning Comprehensive Program Semantics via Graph Neural Networks",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1909.03496",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-supply-chain-risk.md",
@@ -8955,20 +9010,20 @@
       "file": "content/ai/biometric-recognition.md",
       "article_id": "biometric-recognition",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Biometrics recognition using deep learning: a survey (150+ papers)",
+          "source_title": "ArcFace: Additive Angular Margin Loss for Deep Face Recognition",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1007/s10462-022-10237-x",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1801.07698",
               "verified": true,
               "metadata": {
-                "title": "Biometrics recognition using deep learning: a survey",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2023
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -8976,25 +9031,46 @@
           "all_verified": true
         },
         {
-          "source_title": "A multi-modal biometric recognition system based on fingerprints, iris, and facial recognition",
-          "source_type": "academic_paper",
+          "source_title": "Face Recognition Technology Evaluation 1:1 Verification",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.sciencedirect.com/science/article/pii/S2772941925001887",
-              "verified": false,
+              "identifier": "https://pages.nist.gov/frvt/html/frvt11.html",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.sciencedirect.com/science/article/pii/S2772941925001887"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "ISO/IEC 30107-3:2023 Biometric presentation attack detection",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.iso.org/standard/79520.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/brain-computer-interface-ai.md",
@@ -32882,19 +32958,56 @@
       "file": "content/game-development/game-design-document-gdd.md",
       "article_id": "kb-2026-00218",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "GDC Vault",
-          "source_type": "conference",
+          "source_title": "Game Design Workshop",
+          "source_type": "book",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdcvault.com/",
+              "identifier": "https://www.routledge.com/Game-Design-Workshop-A-Playcentric-Approach-to-Creating-Innovative-Games/Fullerton/p/book/9781032607009",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdcvault.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Art of Game Design: A Book of Lenses",
+          "source_type": "book",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.routledge.com/The-Art-of-Game-Design-A-Book-of-Lenses/Schell/p/book/9781138632059",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Level Up! The Guide to Great Video Game Design",
+          "source_type": "book",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.wiley-vch.de/en/areas-interest/computing-computer-sciences/level-up-the-guide-to-great-video-game-design-978-1-394-29876-1",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -32902,8 +33015,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/game-development/game-design-principles.md",
@@ -33118,19 +33233,56 @@
       "file": "content/game-development/game-monetization-ethics.md",
       "article_id": "kb-2026-00221",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "GDC Vault",
-          "source_type": "conference",
+          "source_title": "Bringing Dark Patterns to Light",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdcvault.com/",
+              "identifier": "https://www.ftc.gov/reports/bringing-dark-patterns-light",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdcvault.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Government response to the call for evidence on loot boxes in video games",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.gov.uk/government/consultations/loot-boxes-in-video-games-call-for-evidence/outcome/government-response-to-the-call-for-evidence-on-loot-boxes-in-video-games",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ESRB Ratings Guide",
+          "source_type": "industry_standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.esrb.org/ratings-guide/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -33138,26 +33290,29 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/game-development/game-networking.md",
       "article_id": "game-networking",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Multiplayer Game Programming",
-          "source_type": "textbook",
+          "source_title": "User Datagram Protocol",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.pearson.com/en-us/subject-catalog/p/multiplayer-game-programming/P200000009344",
+              "identifier": "https://www.rfc-editor.org/rfc/rfc768",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.pearson.com/en-us/search/All-results?aq=multiplayer%20game%20programming"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -33166,15 +33321,34 @@
         },
         {
           "source_title": "Source Multiplayer Networking",
-          "source_type": "official_documentation",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
               "identifier": "https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://developer.valvesoftware.com/.within.website/?redir=https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Snapshot Interpolation",
+          "source_type": "technical_article",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://gafferongames.com/post/snapshot_interpolation/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -33182,8 +33356,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/game-development/game-production-pipeline.md",
@@ -35717,19 +35893,20 @@
       "file": "content/geography/plate-tectonics-theory.md",
       "article_id": "plate-tectonics-theory",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
           "source_title": "This Dynamic Earth: The Story of Plate Tectonics",
-          "source_type": "official_report",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
               "identifier": "https://pubs.usgs.gov/gip/dynamic/dynamic.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://pubs.usgs.gov/gip/dynamic/dynamic.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -35737,16 +35914,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Plate Tectonics: An Insider's History",
-          "source_type": "textbook",
+          "source_title": "Understanding plate motions",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://cup.columbia.edu/book/plate-tectonics/9780231111655",
+              "identifier": "https://pubs.usgs.gov/gip/dynamic/understanding.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://cup.columbia.edu/book/plate-tectonics/9780231111655/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Plate tectonics",
+          "source_type": "encyclopedia",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/science/plate-tectonics",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -35754,8 +35950,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/geography/renewable-energy-geography-solar-wind-and-hydroelectric-distribution.md",
@@ -36617,19 +36815,20 @@
       "file": "content/health/human-anatomy.md",
       "article_id": "human-anatomy",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Gray's Anatomy: The Anatomical Basis of Clinical Practice, 42nd Edition",
+          "source_title": "OpenStax Anatomy and Physiology 2e: Introduction",
           "source_type": "textbook",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.elsevier.com/books/grays-anatomy/standring/978-0-7020-7707-4",
+              "identifier": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://shop.elsevier.com/books/grays-anatomy/standring/978-0-7020-7705-0"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -36637,16 +36836,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Guyton and Hall Textbook of Medical Physiology, 14th Edition",
+          "source_title": "OpenStax Anatomy and Physiology 2e: Structural Organization of the Human Body",
           "source_type": "textbook",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.elsevier.com/books/guyton-and-hall-textbook-of-medical-physiology/hall/978-0-323-59712-8",
+              "identifier": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-2-structural-organization-of-the-human-body",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://shop.elsevier.com/books/guyton-and-hall-textbook-of-medical-physiology/hall/978-0-323-59712-8"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenStax Anatomy and Physiology 2e: Anatomical Terminology",
+          "source_type": "textbook",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-6-anatomical-terminology",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -36654,8 +36872,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/health/hydration-and-health.md",
@@ -43684,19 +43904,56 @@
       "file": "content/science/renewable-energy.md",
       "article_id": "kb-2026-00457",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Sustainable Energy — Without the Hot Air (David MacKay)",
-          "source_type": "book",
+          "source_title": "Renewables",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.withouthotair.com/",
+              "identifier": "https://www.iea.org/energy-system/renewables",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.withouthotair.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Renewable Energy",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.nrel.gov/research/re-renewable-energy.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "IPCC AR6 WGIII Chapter 6: Energy Systems",
+          "source_type": "scientific_assessment",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-6/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -43704,8 +43961,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/rna-biology-from-transcription-to-rna-interference-and-mrna-vaccines.md",
@@ -43735,19 +43994,20 @@
       "file": "content/science/scientific-method.md",
       "article_id": "scientific-method",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Logic of Scientific Discovery",
-          "source_type": "textbook",
+          "source_title": "Scientific method",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.routledge.com/The-Logic-of-Scientific-Discovery/Popper/p/book/9780415278447",
+              "identifier": "https://www.britannica.com/science/scientific-method",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.routledge.com/The-Logic-of-Scientific-Discovery/Popper/p/book/9780415278447"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -43755,16 +44015,35 @@
           "all_verified": true
         },
         {
-          "source_title": "The Structure of Scientific Revolutions",
+          "source_title": "OpenStax Biology 2e: The Process of Science",
           "source_type": "textbook",
           "results": [
             {
               "method": "url",
-              "identifier": "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html",
+              "identifier": "https://openstax.org/books/biology-2e/pages/1-2-the-process-of-science",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Understanding Science: How Science Works",
+          "source_type": "educational_resource",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://undsci.berkeley.edu/understanding-science-101/how-science-works/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -43772,8 +44051,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/scientific-revolution.md",
