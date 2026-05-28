@@ -1,297 +1,89 @@
 ---
-id: "kb-gd-009"
-title: "游戏机制与系统设计"
-schema_type: "TechArticle"
-category: "game-development"
-language: "zh"
-confidence: "high"
-last_verified: "2026-04-28"
-created_date: "2026-04-28"
-generation_method: "human_only"
+id: kb-gd-009
+title: Game Core Mechanics and System Loops
+schema_type: TechArticle
+category: game-development
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-04-28'
+generation_method: ai_assisted
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-gd-001"
-    statement: "**有意义的选择** — 玩家面临的选择应有真实后果  ### 机制类型  - **核心机制** — 游戏最基础的交互（跳跃、射击、建造） - **进阶机制** — 随着游戏进程解锁的新能力 - **元机制** — 外层系统（科技树、声望系统）  ---  ## 战斗系统设计  ### 现代战斗系统趋势（2025-2026）  **从冷却CD到资源型系统：**  传统\"技能CD好了就用\"的模式正在被资源型战斗系统取代：  - **决心点数系统（Determination Points）** — 技能消耗 DP，DP 每回合恢复，强技能消耗更多。"
-    source_title: "游戏开发Wiki（个人知识库）"
-    source_url: "https://www.gdconf.com/"
-    confidence: "medium"
-  - id: "fact-gd-002"
-    statement: "消除\"最强技能CD一好就放\"的机械操作 - **骰子转行动点引擎** — 掷骰分配到属性槽（力量/敏捷/智力）产生行动点。"
-    source_title: "游戏开发Wiki（个人知识库）"
-    source_url: "https://www.gdconf.com/"
-    confidence: "medium"
-  - id: "fact-gd-003"
-    statement: "**工具建模：** 用 Machinations 或 Excel 建立经济模型 3."
-    source_title: "游戏开发Wiki（个人知识库）"
-    source_url: "https://www.gdconf.com/"
-    confidence: "medium"
-  - id: "fact-gd-004"
-    statement: "**回归测试：** 调整后重新模拟，确保没有新问题  参见：[templates/economy-balance-template."
-    source_title: "游戏开发Wiki（个人知识库）"
-    source_url: "https://www.gdconf.com/"
-    confidence: "medium"
-  - id: "fact-gd-005"
-    statement: "md#数据驱动平衡工作流] — 数据分析方法  ---  ## 技能树与成长系统  ### 技能树设计模式  1."
-    source_title: "游戏开发Wiki（个人知识库）"
-    source_url: "https://www.gdconf.com/"
-    confidence: "medium"
-
-completeness: 0.85
-
+  - id: fact-game-development-core-mechanics-1
+    statement: >-
+      The MDA framework analyzes games through mechanics, dynamics, and aesthetics as linked layers
+      of game design.
+    source_title: 'MDA: A Formal Approach to Game Design and Game Research'
+    source_url: https://users.cs.northwestern.edu/~hunicke/MDA.pdf
+    confidence: medium
+  - id: fact-game-development-core-mechanics-2
+    statement: >-
+      Game Programming Patterns describes a game loop as repeatedly processing input, updating game
+      state, rendering, and tracking time during gameplay.
+    source_title: 'Game Programming Patterns: Game Loop'
+    source_url: https://gameprogrammingpatterns.com/game-loop.html
+    confidence: medium
+  - id: fact-game-development-core-mechanics-3
+    statement: >-
+      Game Programming Patterns presents the State pattern as a way for an object to alter behavior
+      when its internal state changes.
+    source_title: 'Game Programming Patterns: State'
+    source_url: https://gameprogrammingpatterns.com/state.html
+    confidence: medium
+completeness: 0.82
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    Specialized edge cases and platform-specific implementation details are outside this
+    source-mapped public slice.
+disputed_statements: []
 primary_sources:
-  - title: "游戏开发Wiki（个人知识库）"
-    type: "knowledge_base"
-    year: 2026
-    url: "https://www.gdconf.com/"
-    institution: "Game Developers Conference"
-
-secondary_sources:
-  - title: "GDC Vault"
-    type: "conference"
-    year: 2026
-    url: "https://www.gdconf.com/"
-    institution: "GDC"
-  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
-    type: "textbook"
-    year: 2018
-    url: "https://www.gameenginebook.com/"
-    institution: "CRC Press"
-
+  - title: 'MDA: A Formal Approach to Game Design and Game Research'
+    authors:
+      - Robin Hunicke
+      - Marc LeBlanc
+      - Robert Zubek
+    type: conference_paper
+    year: 2004
+    url: https://users.cs.northwestern.edu/~hunicke/MDA.pdf
+    institution: Northwestern University
+  - title: 'Game Programming Patterns: Game Loop'
+    authors:
+      - Robert Nystrom
+    type: book_chapter
+    year: 2014
+    url: https://gameprogrammingpatterns.com/game-loop.html
+    institution: Game Programming Patterns
+  - title: 'Game Programming Patterns: State'
+    authors:
+      - Robert Nystrom
+    type: book_chapter
+    year: 2014
+    url: https://gameprogrammingpatterns.com/state.html
+    institution: Game Programming Patterns
+secondary_sources: []
+updated: '2026-05-28'
 ---
 
+## TL;DR
 
+Core mechanics connect player inputs, game-state updates, feedback, and higher-level dynamics into a playable system.
 
+## Core Explanation
 
+Mechanics define the player-facing rules, while loops and state patterns provide implementation structures for progressing and organizing those rules during play.
 
-# 游戏机制与系统设计
+## Source-Mapped Facts
 
-## 核心机制设计
+- The MDA framework analyzes games through mechanics, dynamics, and aesthetics as linked layers of game design. ([source](https://users.cs.northwestern.edu/~hunicke/MDA.pdf))
+- Game Programming Patterns describes a game loop as repeatedly processing input, updating game state, rendering, and tracking time during gameplay. ([source](https://gameprogrammingpatterns.com/game-loop.html))
+- Game Programming Patterns presents the State pattern as a way for an object to alter behavior when its internal state changes. ([source](https://gameprogrammingpatterns.com/state.html))
 
-游戏机制是构成游戏玩法的规则和系统。好的机制设计让玩家在规则框架内做出有意义的决策。
+## Further Reading
 
-### 机制设计原则
-
-1. **可理解性** — 玩家应该能直观理解机制如何运作
-2. **深度** — 简单规则能产生复杂策略（易学难精）
-3. **一致性** — 机制之间互相支持而非冲突
-4. **反馈** — 每个操作都有清晰、即时的反馈
-5. **有意义的选择** — 玩家面临的选择应有真实后果
-
-### 机制类型
-
-- **核心机制** — 游戏最基础的交互（跳跃、射击、建造）
-- **进阶机制** — 随着游戏进程解锁的新能力
-- **元机制** — 外层系统（科技树、声望系统）
-
----
-
-## 战斗系统设计
-
-### 现代战斗系统趋势（2025-2026）
-
-**从冷却CD到资源型系统：**
-
-传统"技能CD好了就用"的模式正在被资源型战斗系统取代：
-
-- **决心点数系统（Determination Points）** — 技能消耗 DP，DP 每回合恢复，强技能消耗更多。消除"最强技能CD一好就放"的机械操作
-- **骰子转行动点引擎** — 掷骰分配到属性槽（力量/敏捷/智力）产生行动点。玩家面临取舍：多次小行动 vs 一次蓄力大招
-
-### 战斗系统构成要素
-
-- 攻击与防御属性体系
-- 行动顺序/回合机制
-- 伤害计算公式
-- 状态效果（Buff/Debuff）
-- 资源管理（MP、耐力、能量）
-
-### 平衡设计要点
-
-- 使用模拟工具（Machinations）做数据驱动平衡
-- 建立平衡性测试矩阵
-- 关注极端情况（玩家找到的"最优解"）
-
----
-
-## 经济系统设计
-
-### 核心循环
-
-探索 → 获取战利品 → 制作/交易 → 强化装备 → 更难挑战 → 更好战利品
-
-### 经济系统要素
-
-| 要素 | 说明 |
-|------|------|
-| 资源类型 | 货币、材料、消耗品、稀有素材 |
-| 获取方式 | 战斗掉落、采集、制作、交易、任务奖励 |
-| 消耗渠道 | 装备升级、消耗品、制作需求、维修 |
-| 通胀控制 | 消耗出口（Sink）设计、绑定货币 vs 交易货币 |
-
-### 动态经济
-
-- 供求关系影响价格（NPC 商店根据库存调价）
-- 阵营贡献度解锁专属商品
-- 玩家驱动市场（MMO 经济）
-
----
-
-## 经济平衡实践指南
-
-### 来源-沉没模型（Source-Sink Model）
-
-经济系统的核心公式极其简单：
-
-```
-稳定状态条件: Σ(来源) ≈ Σ(沉没)
-```
-
-当来源 > 沉没 → 通胀（玩家越来越富）
-当来源 < 沉没 → 通缩（玩家越来越穷）
-
-#### 示例：金币经济建模
-
-**来源（Source）：**
-
-| 来源 | 每日产出 | 占比 | 可调性 |
-|------|----------|------|--------|
-| 主线任务 | 500 | 25% | 低（主线不能随便改） |
-| 日常任务 | 800 | 40% | 高（日常奖励最易调） |
-| 战斗掉落 | 500 | 25% | 中（影响战斗体验） |
-| 成就奖励 | 200 | 10% | 低（一次性产出） |
-| **总计** | **2000** | **100%** | — |
-
-**沉没（Sink）：**
-
-| 沉没 | 每日消耗 | 占比 | 可调性 |
-|------|----------|------|--------|
-| 装备强化 | 800 | 40% | 高（消耗大户） |
-| 技能升级 | 600 | 30% | 中（影响成长节奏） |
-| 药水消耗 | 400 | 20% | 中（影响战斗体验） |
-| 交易税 | 200 | 10% | 高（隐形调节工具） |
-| **总计** | **2000** | **100%** | — |
-
-**平衡状态：** 平衡（净流量 = 0）
-
-### 通胀检测与预警
-
-#### 核心监测指标
-
-| 指标 | 健康值 | 警告值 | 危险值 |
-|------|--------|--------|--------|
-| 货币持有量增长率 | < 5%/周 | 5-15%/周 | > 15%/周 |
-| 玩家平均消费/产出比 | > 90% | 70-90% | < 70% |
-| 顶级装备获取时间 | 设计值 ±10% | ±20% | ±50% |
-| Gini 系数（公平性） | < 0.3 | 0.3-0.4 | > 0.4 |
-
-#### 通胀应对策略
-
-- 短期：限时活动消耗（抽卡、限时商店）
-- 中期：新增沉没出口（新养成系统）
-- 长期：版本更新重置经济（新资料片）
-
-#### 通缩应对策略
-
-- 增加产出渠道（新日常任务）
-- 降低消耗成本
-- 发放补偿奖励
-
-### 消耗出口（Sink）设计
-
-| 出口类型 | 示例 | 设计要点 |
-|----------|------|----------|
-| **数值消耗** | 装备强化、升级 | 确保消耗 > 产出的 80% |
-| **功能消耗** | 技能 CD、能量条 | 创造决策点 |
-| **机会消耗** | 限时活动 | 利用损失厌恶 |
-| **社交消耗** | 公会捐赠、交易税 | 促进社交互动 |
-| **外观消耗** | 皮肤、装饰 | 纯自愿消费 |
-| **竞争消耗** | 排位赛入场费 | 筛选活跃玩家 |
-
-### 调优工作流
-
-```
-1. 纸上模拟（Paper Simulation）
-   ↓
-2. Machinations / Excel 建模
-   ↓
-3. Playtest 数据收集
-   ↓
-4. 数值调整（基于数据）
-   ↓
-5. 回归测试（验证平衡）
-```
-
-#### 详细步骤
-
-1. **纸上模拟：** 用手算模拟核心经济循环，验证基础合理性
-2. **工具建模：** 用 Machinations 或 Excel 建立经济模型
-3. **数据收集：** 内部测试 → 封测 → 公测 各阶段收集经济数据
-4. **分析调整：** 对照通胀检测阈值表，定位问题并调整
-5. **回归测试：** 调整后重新模拟，确保没有新问题
-
-参见：[templates/economy-balance-template.md] — 经济平衡调优表
-参见：[game-data-analytics.md#数据驱动平衡工作流] — 数据分析方法
-
----
-
-## 技能树与成长系统
-
-### 技能树设计模式
-
-1. **线性解锁** — 达到等级解锁新技能（简单直接）
-2. **分支树** — 选择专属路线（如 RPG 职业分化）
-3. **网状解锁** — 自由搭配，无固定路线
-4. **阵营绑定** — 通过阵营声望解锁专属技能
-5. **玩家驱动变异** — 根据玩家行为动态解锁路径
-
-### 成长系统要素
-
-- 等级 vs 技能熟练度
-- 属性点分配（力/敏/智等）
-- 被动技能与主动技能搭配
-- 里程碑奖励
-
-### 平衡策略
-
-- 避免"最优解"：确保多条路径都有竞争力
-- 重置机制：允许玩家重新分配技能点数
-- 协同效应：不同技能组合产生 > 各自之和的效果
-
----
-
-## 游戏平衡方法论
-
-### 数据驱动平衡
-
-使用 Machinations 等工具建模和模拟：
-1. XP 曲线设计 — 升级所需经验随等级增长曲线
-2. 属性缩放 — 基础属性与装备加成的比例关系
-3. 战斗经济测试 — 模拟战斗流程验证数值
-4. 经济循环模拟 — 测试资源流入与流出平衡
-
-### 平衡维度
-
-- PvE 难度曲线
-- PvP 公平性
-- 资源获取速率
-- 角色成长速度
-- 不同玩法路线的收益
-
----
-
-## 参考来源
-
-- Machinations: Progression Systems for Game Economy Designers
-- Dustgrave: Determination Points System (2025)
-- Essence: The Grim Expeditions D8 Action Point Engine (2025)
-- Brand of Iron Whitepaper: Connected Economy Loop
+- [MDA: A Formal Approach to Game Design and Game Research](https://users.cs.northwestern.edu/~hunicke/MDA.pdf)
+- [Game Programming Patterns: Game Loop](https://gameprogrammingpatterns.com/game-loop.html)
+- [Game Programming Patterns: State](https://gameprogrammingpatterns.com/state.html)

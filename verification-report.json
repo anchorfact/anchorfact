@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 0,
     "average_sources_per_article": "2.1",
-    "overall_verification_rate": "61.0%",
+    "overall_verification_rate": "61.5%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 231
+    "manual_reviewed_articles": 242
   },
   "articles": [
     {
@@ -472,20 +472,21 @@
     {
       "file": "content/ai/ai-agents.md",
       "article_id": "kb-2026-00018",
-      "generation_method": "human_only",
-      "sources_total": 2,
+      "generation_method": "ai_assisted",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "2025-2026 Agent Technology Progress Report",
-          "source_type": "report",
+          "source_title": "LangChain Agents Documentation",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://zaobi.tech/pages/ai-tech/agent-tech-report-2025/index.html",
+              "identifier": "https://docs.langchain.com/oss/python/langchain/agents",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://zaobi.tech/pages/ai-tech/agent-tech-report-2025/index.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -493,24 +494,44 @@
           "all_verified": true
         },
         {
-          "source_title": "AI Agent Systems: Architectures, Applications, and Evaluation (arXiv 2601.01743)",
-          "source_type": "academic_paper",
+          "source_title": "Model Context Protocol Introduction",
+          "source_type": "documentation",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2601.01743v1",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://modelcontextprotocol.io/docs/getting-started/intro",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Claude Code Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://code.claude.com/docs/en/overview",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "errors": []
     },
     {
       "file": "content/ai/ai-air-quality.md",
@@ -831,20 +852,21 @@
     {
       "file": "content/ai/ai-coding-assistants.md",
       "article_id": "ai-coding-assistants",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
+      "generation_method": "ai_assisted",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Claude Code: Agentic coding with Claude",
-          "source_type": "official_documentation",
+          "source_title": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
+          "source_type": "research_page",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.anthropic.com/en/docs/claude-code",
+              "identifier": "https://www.microsoft.com/en-us/research/publication/the-impact-of-ai-on-developer-productivity-evidence-from-github-copilot/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://code.claude.com/docs"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -856,11 +878,31 @@
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2310.06770",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2310.06770",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2310.06770&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Claude Code Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://code.claude.com/docs/en/overview",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -868,8 +910,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "errors": []
     },
     {
       "file": "content/ai/ai-content-authenticity.md",
@@ -5437,11 +5479,11 @@
     {
       "file": "content/ai/ai-in-gaming.md",
       "article_id": "ai-in-gaming",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
+      "generation_method": "ai_assisted",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Grandmaster level in StarCraft II using multi-agent reinforcement learning (AlphaStar)",
+          "source_title": "Grandmaster Level in StarCraft II Using Multi-Agent Reinforcement Learning",
           "source_type": "academic_paper",
           "results": [
             {
@@ -5449,8 +5491,9 @@
               "identifier": "https://www.nature.com/articles/s41586-019-1724-z",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nature.com/articles/s41586-019-1724-z?error=cookies_not_supported&code=0570a989-0d64-4fce-897e-e23f835a0d2d"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -5458,16 +5501,35 @@
           "all_verified": true
         },
         {
-          "source_title": "SIMA: A Generalist AI Agent for 3D Virtual Environments",
-          "source_type": "official_report",
+          "source_title": "SIMA: Generalist AI Agent for 3D Virtual Environments",
+          "source_type": "research_blog",
           "results": [
             {
               "method": "url",
               "identifier": "https://deepmind.google/blog/sima-generalist-ai-agent-for-3d-virtual-environments/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://deepmind.google/blog/sima-generalist-ai-agent-for-3d-virtual-environments/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "NVIDIA ACE for Games",
+          "source_type": "developer_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.nvidia.com/ace-for-games",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -5475,8 +5537,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "errors": []
     },
     {
       "file": "content/ai/ai-in-healthcare.md",
@@ -6280,20 +6342,21 @@
     {
       "file": "content/ai/ai-regulation-landscape.md",
       "article_id": "ai-regulation-landscape",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
+      "generation_method": "ai_assisted",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "EU AI Act: Regulation (EU) 2024/1689",
-          "source_type": "standard",
+          "source_title": "Regulation (EU) 2024/1689: Artificial Intelligence Act",
+          "source_type": "regulation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://artificialintelligenceact.eu/",
+              "identifier": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://artificialintelligenceact.eu/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -6302,24 +6365,43 @@
         },
         {
           "source_title": "Blueprint for an AI Bill of Rights",
-          "source_type": "official_report",
+          "source_type": "government_framework",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.whitehouse.gov/ostp/ai-bill-of-rights/",
-              "verified": false,
+              "identifier": "https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.whitehouse.gov/ostp/ai-bill-of-rights/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Interim Measures for Generative AI Services",
+          "source_type": "regulation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "errors": []
     },
     {
       "file": "content/ai/ai-remote-work.md",
@@ -17061,20 +17143,21 @@
     {
       "file": "content/business/entrepreneurship-and-startups.md",
       "article_id": "entrepreneurship-and-startups",
-      "generation_method": "ai_structured",
-      "sources_total": 6,
+      "generation_method": "ai_assisted",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Lean Startup",
-          "source_type": "textbook",
+          "source_title": "The Lean Startup Methodology",
+          "source_type": "methodology_page",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/201674/the-lean-startup-by-eric-ries/",
+              "identifier": "https://theleanstartup.com/principles",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/201674/the-lean-startup-by-eric-ries/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -17082,16 +17165,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Business Model Generation (Osterwalder & Pigneur)",
-          "source_type": "textbook",
+          "source_title": "Strategyzer: The Business Model Canvas",
+          "source_type": "methodology_page",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.strategyzer.com/books/business-model-generation",
+              "identifier": "https://www.strategyzer.com/library/the-business-model-canvas",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.strategyzer.com/library/business-model-generation"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -17099,54 +17183,26 @@
           "all_verified": true
         },
         {
-          "source_title": "The Lean Startup: How Constant Innovation Creates Radically Successful Businesses (2025 15th Anniversary Edition)",
-          "source_type": "book",
+          "source_title": "GEM 2024/2025 Global Report: Entrepreneurship Reality Check",
+          "source_type": "report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://theleanstartup.com/",
+              "identifier": "https://gemconsortium.org/report/gem-20242025-global-report-entrepreneurship-reality-check-4",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://theleanstartup.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "Zero to One: Notes on Startups (2025 Updated Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.crownpublishing.com/zero-to-one/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://crownpublishing.com/zero-to-one/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Lean Startup",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Zero to One",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 1
+      "errors": []
     },
     {
       "file": "content/business/entrepreneurship-fundamentals.md",
@@ -30562,20 +30618,57 @@
     {
       "file": "content/game-development/core-mechanics.md",
       "article_id": "kb-gd-009",
-      "generation_method": "human_only",
-      "sources_total": 1,
+      "generation_method": "ai_assisted",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "MDA: A Formal Approach to Game Design and Game Research",
+          "source_type": "conference_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://users.cs.northwestern.edu/~hunicke/MDA.pdf",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Game Programming Patterns: Game Loop",
+          "source_type": "book_chapter",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://gameprogrammingpatterns.com/game-loop.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Game Programming Patterns: State",
+          "source_type": "book_chapter",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://gameprogrammingpatterns.com/state.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -30583,8 +30676,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "errors": []
     },
     {
       "file": "content/game-development/game-ai-systems.md",
@@ -30653,20 +30746,57 @@
     {
       "file": "content/game-development/game-art-pipeline.md",
       "article_id": "kb-gd-011",
-      "generation_method": "human_only",
-      "sources_total": 1,
+      "generation_method": "ai_assisted",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "Unity Manual: Importing a Model",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://docs.unity3d.com/Manual/ImportingModelFiles.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "glTF 2.0 Specification",
+          "source_type": "technical_specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenUSD Introduction",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openusd.org/release/intro.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -30674,8 +30804,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "errors": []
     },
     {
       "file": "content/game-development/game-audio-systems.md",
@@ -30970,20 +31100,57 @@
     {
       "file": "content/game-development/game-mathematics.md",
       "article_id": "kb-gd-017",
-      "generation_method": "human_only",
-      "sources_total": 1,
+      "generation_method": "ai_assisted",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "Unity Scripting API: Vector3",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://docs.unity3d.com/ScriptReference/Vector3.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Unity Scripting API: Quaternion",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.unity3d.com/ScriptReference/Quaternion.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Unity Scripting API: Matrix4x4",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.unity3d.com/ScriptReference/Matrix4x4.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -30991,8 +31158,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "errors": []
     },
     {
       "file": "content/game-development/game-monetization-ethics.md",
@@ -31350,20 +31517,57 @@
     {
       "file": "content/game-development/monetization-strategy.md",
       "article_id": "kb-gd-023",
-      "generation_method": "human_only",
-      "sources_total": 1,
+      "generation_method": "ai_assisted",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "Apple Developer: In-App Purchase",
+          "source_type": "developer_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://developer.apple.com/in-app-purchase/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Play's Billing System",
+          "source_type": "developer_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.android.com/google/play/billing",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "FTC: Bringing Dark Patterns to Light",
+          "source_type": "regulatory_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.ftc.gov/reports/bringing-dark-patterns-light",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -31371,8 +31575,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "errors": []
     },
     {
       "file": "content/game-development/multiplayer-game-design.md",
@@ -31404,20 +31608,57 @@
     {
       "file": "content/game-development/narrative-design.md",
       "article_id": "kb-gd-025",
-      "generation_method": "human_only",
-      "sources_total": 1,
+      "generation_method": "ai_assisted",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "ink: Inkle's Narrative Scripting Language",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://www.inklestudios.com/ink/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Yarn Spinner: First Steps",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://yarnspinner.dev/docs/yarn/01-first-steps/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Twine Reference: Basic Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://twinery.org/reference/en/getting-started/basic-concepts.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -31425,8 +31666,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "errors": []
     },
     {
       "file": "content/game-development/pathfinding-algorithms-in-games.md",
@@ -31522,20 +31763,57 @@
     {
       "file": "content/game-development/physics-systems.md",
       "article_id": "kb-gd-027",
-      "generation_method": "human_only",
-      "sources_total": 1,
+      "generation_method": "ai_assisted",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "Unity Manual: Built-in 3D Physics",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://docs.unity3d.com/Manual/PhysicsOverview.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Unity Manual: Rigidbody Component Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.unity3d.com/Manual/class-Rigidbody.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Box2D Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://box2d.org/documentation/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Seventeenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -31543,8 +31821,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "errors": []
     },
     {
       "file": "content/game-development/player-psychology.md",

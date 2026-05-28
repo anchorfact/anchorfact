@@ -1,105 +1,83 @@
 ---
 id: ai-regulation-landscape
-title: "AI Regulation: The 2024-2026 Global Landscape"
+title: 'AI Regulation Landscape: EU, US, and China Baselines'
 schema_type: TechArticle
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
-generation_method: ai_structured
-ai_models:
-  - claude-opus
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-24'
+generation_method: ai_assisted
 derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: f1
+  - id: fact-ai-ai-regulation-landscape-1
     statement: >-
-      Global AI regulation follows four models: EU comprehensive risk-based (AI Act), US sector-specific voluntary (Executive Order + NIST framework), China prescriptive (Generative AI Measures), UK
-      pro-innovation (non-statutory principles).
-    source_title: "IAPP. Global AI Legislation Tracker: EU, US, UK, China, Canada, Brazil, Japan, Korea. 2024-2025"
-    source_url: https://iapp.org/resources/article/global-ai-legislation-tracker
-    confidence: high
-  - id: f2
-    statement: >-
-      China's Generative AI Measures (2023) require safety assessments, algorithm filings, and content moderation for publicly deployed GenAI services. The measures balance AI development with state
-      content control.
-    source_title: Cyberspace Administration of China. Interim Measures for the Management of Generative AI Services. 2023
-    source_url: https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm
-    confidence: high
-  - id: f3
-    statement: >-
-      As of 2025, over 60 countries have proposed or enacted AI-related legislation, with the G7 Hiroshima Process and UN AI Advisory Body establishing multilateral governance frameworks for frontier
-      AI.
-    source_title: "ComplianceHub. Global AI Law Snapshot: EU, China, USA, UK, Japan, Korea, Brazil. 2025"
-    source_url: https://compliancehub.wiki/global-ai-law-snapshot/
+      Regulation (EU) 2024/1689 is the European Union regulation laying down harmonised rules on
+      artificial intelligence.
+    source_title: 'Regulation (EU) 2024/1689: Artificial Intelligence Act'
+    source_url: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
     confidence: medium
-completeness: 0.9
+  - id: fact-ai-ai-regulation-landscape-2
+    statement: >-
+      The White House Office of Science and Technology Policy published the Blueprint for an AI Bill
+      of Rights as a nonbinding framework for automated systems.
+    source_title: Blueprint for an AI Bill of Rights
+    source_url: https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/
+    confidence: medium
+  - id: fact-ai-ai-regulation-landscape-3
+    statement: >-
+      China published Interim Measures for Generative AI Services in July 2023, with the measures
+      taking effect on August 15, 2023.
+    source_title: Interim Measures for Generative AI Services
+    source_url: https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm
+    confidence: medium
+completeness: 0.82
 known_gaps:
-  - International AI governance coordination
-  - Open-source model exemption criteria
-disputed_statements:
-  - statement: No major disputed statements identified
+  - >-
+    Specialized edge cases and platform-specific implementation details are outside this
+    source-mapped public slice.
+disputed_statements: []
 primary_sources:
-  - title: "EU AI Act: Regulation (EU) 2024/1689"
-    type: standard
+  - title: 'Regulation (EU) 2024/1689: Artificial Intelligence Act'
+    type: regulation
     year: 2024
-    url: https://artificialintelligenceact.eu/
-    institution: European Commission
-  - title: Blueprint for an AI Bill of Rights
-    type: official_report
-    year: 2022
-    url: https://www.whitehouse.gov/ostp/ai-bill-of-rights/
-    institution: White House OSTP
-secondary_sources:
-  - title: "Global AI Law Snapshot: A Comparative Overview of AI Regulations in the EU, China, and the USA"
-    type: report
-    year: 2025
-    authors:
-      - ComplianceHub Research
-    institution: ComplianceHub Wiki
-    url: https://compliancehub.wiki/global-ai-law-snapshot/
-  - title: "EU AI Act Explorer: The World's First Comprehensive AI Regulatory Framework (Regulation 2024/1689)"
-    type: report
-    year: 2024
-    authors:
-      - EU Commission
+    url: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
     institution: European Union
-    url: https://artificialintelligenceact.eu/ai-act-explorer/
-  - title: "Decoding the EU AI Act: Risk Categories, Compliance Requirements, and Business Implications (KPMG)"
-    type: report
-    year: 2024
-    authors:
-      - KPMG
-    institution: KPMG
-    url: https://assets.kpmg.com/content/dam/kpmgsites/xx/pdf/2024/02/decoding-the-eu-ai-act.pdf
-  - title: "AI Regulations in 2025: US, EU, UK, Japan, China — A Comprehensive Comparison"
-    type: report
-    year: 2025
-    authors:
-      - Anecdotes Research
-    institution: Anecdotes AI
-    url: https://www.anecdotes.ai/learn/ai-regulations-in-2025-us-eu-uk-japan-china-and-more
-updated: "2026-05-24"
+  - title: Blueprint for an AI Bill of Rights
+    type: government_framework
+    year: 2022
+    url: https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/
+    institution: White House Office of Science and Technology Policy
+  - title: Interim Measures for Generative AI Services
+    type: regulation
+    year: 2023
+    url: https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm
+    institution: Cyberspace Administration of China
+secondary_sources: []
+updated: '2026-05-28'
+ai_models:
+  - claude-opus
 ---
+
 ## TL;DR
-2024-2026 marks the transition from voluntary AI ethics principles to binding regulation. The EU AI Act set the global standard; the US follows with executive orders and state-level laws. China, UK, and G7 add regulatory layers.
+
+AI regulation is fragmented across jurisdictions, with the EU AI Act, the US AI Bill of Rights blueprint, and China generative-AI measures illustrating different policy tools.
 
 ## Core Explanation
-Regulatory approaches: EU — risk-based tier system with heavy compliance burden; US — sector-specific (FDA for medical AI, NHTSA for autonomous vehicles) plus executive orders; China — algorithm registry and content control; UK — principles-based, regulator-led. The Bletchley Declaration (2023) and Seoul Statement (2024) represent international coordination.
 
-## Detailed Analysis
-Key requirements: transparency (disclosing AI use, training data), safety testing (red-teaming, benchmarks), accountability (human oversight, liability), and fairness (bias audits). The Frontier AI Safety Commitments (Seoul, 2024) established voluntary safety frameworks from leading labs.
+Jurisdictions use different instruments: the EU codifies risk-based legal duties, the United States published rights-oriented policy guidance, and China regulates public generative-AI services.
+
+## Source-Mapped Facts
+
+- Regulation (EU) 2024/1689 is the European Union regulation laying down harmonised rules on artificial intelligence. ([source](https://eur-lex.europa.eu/eli/reg/2024/1689/oj))
+- The White House Office of Science and Technology Policy published the Blueprint for an AI Bill of Rights as a nonbinding framework for automated systems. ([source](https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/))
+- China published Interim Measures for Generative AI Services in July 2023, with the measures taking effect on August 15, 2023. ([source](https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm))
 
 ## Further Reading
-- EU AI Act Compliance Checker
-- Stanford HAI: AI Policy Tracker
-- IAPP: AI Governance Resources
 
-## Related Articles
-
-- [AI Agents (2025-2026)](../ai-agents.md)
-- [AI for Satellite Imagery: Object Detection, Change Detection, and Global Monitoring](../ai-satellite-imagery.md)
-- [Global Climate Zones and Terrestrial Biomes](../../geography/climate-zones-and-biomes.md)
+- [Regulation (EU) 2024/1689: Artificial Intelligence Act](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+- [Blueprint for an AI Bill of Rights](https://bidenwhitehouse.archives.gov/ostp/ai-bill-of-rights/)
+- [Interim Measures for Generative AI Services](https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm)
