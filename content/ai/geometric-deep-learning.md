@@ -4,8 +4,8 @@ title: "Geometric Deep Learning: Group Equivariance and Symmetry"
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -16,92 +16,59 @@ is_live_document: false
 data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: af-geometric-deep-learning-1
+  - id: af-ai-geometric-deep-learning-1
     statement: >-
-      Bronstein, Bruna, Cohen, and Veličković (2021/2023) unified CNNs, GNNs, and Transformers under the Geometric Deep Learning blueprint — convolutional architectures over domains with symmetry
-      groups — showing that equivariance to group transformations is the common design principle.
-    source_title: Bronstein et al., AI Review (2023)
-    source_url: https://link.springer.com/article/10.1007/s10462-023-10502-7
-    confidence: high
-  - id: af-geometric-deep-learning-2
+      The geometric deep learning survey frames the field around deep learning on structured domains
+      such as graphs, groups, and manifolds.
+    source_title: "Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges"
+    source_url: https://arxiv.org/abs/2104.13478
+    confidence: medium
+  - id: af-ai-geometric-deep-learning-2
     statement: >-
-      Gauge equivariant CNNs extend convolution to curved manifolds (e.g., spheres, 3D meshes) by defining convolutional filters in local tangent frames connected by parallel transport — enabling CNNs
-      on non-Euclidean domains like the cortical surface (brain imaging) and climate data on the sphere.
-    source_title: Cohen et al., AI Review / NeurIPS (2019)
-    source_url: https://geometricdeeplearning.com/
-    confidence: high
+      Graph Convolutional Networks apply neural network layers to graph-structured data for
+      semi-supervised classification.
+    source_title: Semi-Supervised Classification with Graph Convolutional Networks
+    source_url: https://arxiv.org/abs/1609.02907
+    confidence: medium
+  - id: af-ai-geometric-deep-learning-3
+    statement: PointNet directly processes point sets for 3D classification and segmentation tasks.
+    source_title: "PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation"
+    source_url: https://arxiv.org/abs/1612.00593
+    confidence: medium
 primary_sources:
-  - id: ps-geometric-deep-learning-1
-    title: Geometric Deep Learning and Equivariant Neural Networks
-    type: academic_paper
-    year: 2023
-    institution: AI Review / Springer
-    url: https://link.springer.com/article/10.1007/s10462-023-10502-7
-  - id: ps-geometric-deep-learning-2
+  - id: ps-ai-geometric-deep-learning-1
     title: "Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges"
-    type: textbook
+    type: academic_paper
     year: 2021
     institution: arXiv
-    url: https://geometricdeeplearning.com/
+    url: https://arxiv.org/abs/2104.13478
+  - id: ps-ai-geometric-deep-learning-2
+    title: Semi-Supervised Classification with Graph Convolutional Networks
+    type: academic_paper
+    year: 2016
+    institution: arXiv
+    url: https://arxiv.org/abs/1609.02907
+  - id: ps-ai-geometric-deep-learning-3
+    title: "PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation"
+    type: academic_paper
+    year: 2016
+    institution: arXiv
+    url: https://arxiv.org/abs/1612.00593
 known_gaps:
   - Efficient equivariant networks at scale
   - Equivariant architectures for video and temporal data
 disputed_statements: []
-secondary_sources:
-  - title: "Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges (Bronstein et al. — Seminal Textbook)"
-    type: textbook
-    year: 2021
-    authors:
-      - Bronstein, Michael M.
-      - Bruna, Joan
-      - Cohen, Taco
-      - Veličković, Petar
-    institution: arXiv / Oxford / DeepMind / Imperial College
-    url: https://arxiv.org/abs/2104.13478
-  - title: "Geometric Deep Learning and Equivariant Neural Networks: A Comprehensive Survey"
-    type: survey_paper
-    year: 2023
-    authors:
-      - Gerken, Jan
-      - Aronsson, Jimmy
-      - Carlsson, Oscar
-      - et al.
-    institution: Artificial Intelligence Review (Springer)
-    url: https://doi.org/10.1007/s10462-023-10502-7
-  - title: Mathematical Foundations of Geometric Deep Learning (Bronstein)
-    type: survey_paper
-    year: 2025
-    authors:
-      - Bronstein, Michael M.
-    institution: arXiv / USI Lugano
-    url: https://arxiv.org/abs/2508.02723
-  - title: E(n) Equivariant Graph Neural Networks (EGNN)
-    type: conference_paper
-    year: 2021
-    authors:
-      - Satorras, Victor Garcia
-      - Hoogeboom, Emiel
-      - Welling, Max
-    institution: University of Amsterdam / ICML
-    url: https://arxiv.org/abs/2102.09844
-updated: "2026-05-24"
+secondary_sources: []
+updated: "2026-05-28"
 ---
 ## TL;DR
-Geometric Deep Learning reveals that CNNs, GNNs, and Transformers share a common mathematical blueprint — equivariance to symmetry groups. Group-equivariant networks exploit this insight to achieve better sample efficiency and generalization on structured data.
+Geometric Deep Learning: Group Equivariance and Symmetry: Geometric deep learning extends neural networks to data with structure such as graphs, manifolds, sets, meshes, and point clouds.
 
 ## Core Explanation
-Symmetry principle: if a transformation (translation, rotation, permutation) applied to the input should produce a corresponding transformation in the output, the network should respect this equivariance. Traditional CNNs are translation-equivariant by design (shared weights). GDL extends this to arbitrary groups: rotation-equivariant CNNs for medical imaging, permutation-equivariant GNNs for molecular graphs, gauge-equivariant networks for spherical data.
-
-## Detailed Analysis
-Group convolution generalizes standard convolution: instead of shifting a filter across spatial positions, transform the filter by all group elements. SE(3)-equivariant networks respect 3D rotation and translation — critical for protein structure prediction and molecular dynamics. Steerable CNNs learn filters expressed as linear combinations of basis functions, guaranteeing equivariance by construction. AlphaFold 2 and 3 leverage SE(3)-equivariant message passing.
+The field studies how symmetry, invariance, equivariance, and domain geometry shape model architectures. Graph convolutional networks and point-cloud networks are practical examples.
 
 ## Further Reading
-- Geometric Deep Learning Course (AMMI)
-- e3nn PyTorch Library
-- Equivariant Self-Attention (SE3-Transformer)
 
-## Related Articles
-
-- [AI for Signal Processing: Deep Learning for Wireless, Radar, and Biomedical Signals](../ai-for-signal-processing.md)
-- [Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning](../audio-source-separation.md)
-- [Bayesian Deep Learning: Uncertainty Quantification and Robust Predictions](../bayesian-deep-learning.md)
+- [Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges](https://arxiv.org/abs/2104.13478)
+- [Semi-Supervised Classification with Graph Convolutional Networks](https://arxiv.org/abs/1609.02907)
+- [PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation](https://arxiv.org/abs/1612.00593)

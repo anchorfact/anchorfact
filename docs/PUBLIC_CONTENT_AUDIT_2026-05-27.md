@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T10:51:03.975Z
+Generated: 2026-05-28T10:59:30.787Z
 
-Snapshot: 555 public / 445 draft / 1630 claims.
+Snapshot: 555 public / 445 draft / 1640 claims.
 
 ## Summary
 
@@ -29,20 +29,20 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 4 | high_confidence | `ai/ai-in-healthcare` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 5 | high_confidence | `ai/ai-red-teaming-and-safety` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 6 | medium_capped_claims | `business/strategic-management-theory` | medium | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 7 | medium_capped_claims | `ai/concept-based-explainability` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 8 | medium_capped_claims | `ai/continual-learning` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 9 | medium_capped_claims | `ai/conversational-ai-systems` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 7 | medium_capped_claims | `ai/decision-support-systems` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 8 | medium_capped_claims | `ai/human-pose-estimation` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 9 | medium_capped_claims | `ai/information-extraction` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
 | 10 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 12 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 13 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 14 | risk_fallback | `ai/few-shot-learning` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 15 | risk_fallback | `ai/geometric-deep-learning` | medium | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 16 | risk_fallback | `ai/learned-database-systems` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 17 | risk_fallback | `ai/machine-translation` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 18 | risk_fallback | `ai/mlops-llmops` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 19 | risk_fallback | `ai/protein-structure-prediction` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 20 | risk_fallback | `ai/recommender-systems` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 14 | risk_fallback | `ai/robot-manipulation` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 15 | risk_fallback | `ai/speaker-recognition` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 16 | risk_fallback | `ai/text-summarization` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 17 | risk_fallback | `ai/text-to-sql` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 18 | risk_fallback | `ai/vision-language-action-models` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 19 | risk_fallback | `ai/visual-question-answering` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 20 | risk_fallback | `business/time-value-of-money` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
 
 ## Article Findings
 
@@ -136,10 +136,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 7. Concept-Based Explainability: TCAV and Concept Bottleneck Models
+### 7. AI Decision Support Systems: Clinical CDSS, Business Intelligence, and Augmented Decision-Making
 
-- canonical slug: `ai/concept-based-explainability`
-- canonical URL: https://anchorfact.org/ai/concept-based-explainability/
+- canonical slug: `ai/decision-support-systems`
+- canonical URL: https://anchorfact.org/ai/decision-support-systems/
 - bucket: `medium_capped_claims`
 - confidence: `medium` (verified_sources, score 0.74)
 - verified source coverage: 1/2 (50.0%)
@@ -151,12 +151,12 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 8. Continual Learning and Catastrophic Forgetting: EWC to MESU
+### 8. Human Pose Estimation: 2D/3D Keypoint Detection and Transformer-Based Body Tracking
 
-- canonical slug: `ai/continual-learning`
-- canonical URL: https://anchorfact.org/ai/continual-learning/
+- canonical slug: `ai/human-pose-estimation`
+- canonical URL: https://anchorfact.org/ai/human-pose-estimation/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.74)
+- confidence: `medium` (verified_sources, score 0.73)
 - verified source coverage: 1/2 (50.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: partial_source_verification
@@ -166,10 +166,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 9. Conversational AI: Task-Oriented Dialogue and Open-Domain Chatbots
+### 9. Information Extraction: NER, Relation Extraction, and LLM-Powered IE
 
-- canonical slug: `ai/conversational-ai-systems`
-- canonical URL: https://anchorfact.org/ai/conversational-ai-systems/
+- canonical slug: `ai/information-extraction`
+- canonical URL: https://anchorfact.org/ai/information-extraction/
 - bucket: `medium_capped_claims`
 - confidence: `medium` (verified_sources, score 0.73)
 - verified source coverage: 1/2 (50.0%)
@@ -241,109 +241,109 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 14. Few-Shot Learning: Prototypical Networks, MAML, and In-Context Adaptation
+### 14. Robot Manipulation: Dexterous Grasping, Sim-to-Real Transfer, and Tactile Sensing
 
-- canonical slug: `ai/few-shot-learning`
-- canonical URL: https://anchorfact.org/ai/few-shot-learning/
+- canonical slug: `ai/robot-manipulation`
+- canonical URL: https://anchorfact.org/ai/robot-manipulation/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.69)
+- confidence: `medium` (verified_sources, score 0.85)
 - verified source coverage: 1/2 (50.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification
+- quality reasons: partial_source_verification, high_confidence_evidence_gap
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: duplicate_sources
+- hygiene flags: none
 - recommendation: `repair_sources`
 
-### 15. Geometric Deep Learning: Group Equivariance and Symmetry
+### 15. Speaker Recognition: Voice Biometrics, Diarization, and Deep Learning for Speaker Verification
 
-- canonical slug: `ai/geometric-deep-learning`
-- canonical URL: https://anchorfact.org/ai/geometric-deep-learning/
+- canonical slug: `ai/speaker-recognition`
+- canonical URL: https://anchorfact.org/ai/speaker-recognition/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.78)
-- verified source coverage: 2/2 (100.0%)
+- confidence: `medium` (verified_sources, score 0.85)
+- verified source coverage: 1/2 (50.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: partial_source_verification, high_confidence_evidence_gap
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 16. Text Summarization: From Extractive Methods to Abstractive LLM-Based Summarization
+
+- canonical slug: `ai/text-summarization`
+- canonical URL: https://anchorfact.org/ai/text-summarization/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.85)
+- verified source coverage: 1/2 (50.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: partial_source_verification, high_confidence_evidence_gap
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 17. Text-to-SQL: Natural Language Database Querying with Large Language Models
+
+- canonical slug: `ai/text-to-sql`
+- canonical URL: https://anchorfact.org/ai/text-to-sql/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.85)
+- verified source coverage: 1/2 (50.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: partial_source_verification, high_confidence_evidence_gap
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 18. Vision-Language-Action Models: Unified Multimodal Foundation Models for Embodied AI
+
+- canonical slug: `ai/vision-language-action-models`
+- canonical URL: https://anchorfact.org/ai/vision-language-action-models/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.85)
+- verified source coverage: 1/2 (50.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: partial_source_verification, high_confidence_evidence_gap
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 19. Visual Question Answering: Vision-Language Models for Image Understanding and Reasoning
+
+- canonical slug: `ai/visual-question-answering`
+- canonical URL: https://anchorfact.org/ai/visual-question-answering/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.85)
+- verified source coverage: 1/2 (50.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: partial_source_verification, high_confidence_evidence_gap
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 20. Time Value of Money
+
+- canonical slug: `business/time-value-of-money`
+- canonical URL: https://anchorfact.org/business/time-value-of-money/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.49)
+- verified source coverage: 1/1 (100.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: generic_source_homepage
 - source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: generic_source_homepage
-- recommendation: `repair_sources`
-
-### 16. Learned Database Systems: AI-Driven Query Optimization, Learned Indexes, and Cardinality Estimation
-
-- canonical slug: `ai/learned-database-systems`
-- canonical URL: https://anchorfact.org/ai/learned-database-systems/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.85)
-- verified source coverage: 1/2 (50.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification, high_confidence_evidence_gap
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 17. Machine Translation: Neural MT, LLM-Based Translation, and Multilingual Quality at Scale
-
-- canonical slug: `ai/machine-translation`
-- canonical URL: https://anchorfact.org/ai/machine-translation/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.85)
-- verified source coverage: 1/2 (50.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification, high_confidence_evidence_gap
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 18. MLOps and LLMOps: Production AI Engineering, Observability, and Platform Architecture
-
-- canonical slug: `ai/mlops-llmops`
-- canonical URL: https://anchorfact.org/ai/mlops-llmops/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.85)
-- verified source coverage: 1/2 (50.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification, high_confidence_evidence_gap
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 19. Protein Structure Prediction: AlphaFold, RoseTTAFold, and AI-Driven Structural Biology
-
-- canonical slug: `ai/protein-structure-prediction`
-- canonical URL: https://anchorfact.org/ai/protein-structure-prediction/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.85)
-- verified source coverage: 1/2 (50.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification, high_confidence_evidence_gap
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 20. Recommender Systems: Graph Neural Collaborative Filtering and LLM-Based Recommendation
-
-- canonical slug: `ai/recommender-systems`
-- canonical URL: https://anchorfact.org/ai/recommender-systems/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.85)
-- verified source coverage: 1/2 (50.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification, high_confidence_evidence_gap
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
 - recommendation: `repair_sources`
 
 ## Rule Calibration

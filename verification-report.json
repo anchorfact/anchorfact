@@ -2,13 +2,13 @@
   "summary": {
     "generated": "2026-05-27T14:00:00.000Z",
     "total_articles": 1000,
-    "total_with_errors": 351,
+    "total_with_errors": 342,
     "average_sources_per_article": "2.2",
-    "overall_verification_rate": "68.3%",
+    "overall_verification_rate": "68.9%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 267
+    "manual_reviewed_articles": 277
   },
   "articles": [
     {
@@ -9507,19 +9507,20 @@
       "file": "content/ai/concept-based-explainability.md",
       "article_id": "concept-based-explainability",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)",
+          "source_title": "Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://proceedings.mlr.press/v80/kim18d.html",
+              "identifier": "https://arxiv.org/abs/1711.11279",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://proceedings.mlr.press/v80/kim18d.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -9527,25 +9528,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Concept-based Explainable Artificial Intelligence: A Survey",
+          "source_title": "Concept Bottleneck Models",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/doi/abs/10.1145/3774643",
-              "verified": false,
+              "identifier": "https://arxiv.org/abs/2007.04612",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/doi/abs/10.1145/3774643"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "ACE: Automatic Concept-based Explanations for CNNs",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1902.03129",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/constitutional-ai.md",
@@ -9599,36 +9621,56 @@
       "file": "content/ai/continual-learning.md",
       "article_id": "continual-learning",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Overcoming catastrophic forgetting in neural networks (EWC)",
+          "source_title": "Overcoming catastrophic forgetting in neural networks",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.pnas.org/doi/10.1073/pnas.1611835114",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.pnas.org/doi/10.1073/pnas.1611835114"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Bayesian continual learning and forgetting in artificial neural networks (MESU)",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.nature.com/articles/s41467-025-64601-w",
+              "identifier": "https://doi.org/10.1073/pnas.1611835114",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nature.com/articles/s41467-025-64601-w?error=cookies_not_supported&code=6d308926-5fca-48f2-bcfa-14c8fe832e70"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Gradient Episodic Memory for Continual Learning",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1706.08840",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Learning without Forgetting",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1606.09282",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -9636,8 +9678,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/contrastive-learning.md",
@@ -9709,19 +9753,20 @@
       "file": "content/ai/conversational-ai-systems.md",
       "article_id": "conversational-ai-systems",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Conversational AI: Dialogue Systems, Conversational Agents, and Chatbots (McTear)",
-          "source_type": "textbook",
+          "source_title": "A Neural Conversational Model",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://link.springer.com/book/10.1007/978-3-031-02176-3",
+              "identifier": "https://arxiv.org/abs/1506.05869",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://link.springer.com/book/10.1007/978-3-031-02176-3?error=cookies_not_supported&code=e426a6c9-4c04-41c0-a7d2-813e366f226d"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -9729,24 +9774,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Task-Oriented Dialogue with In-Context Learning (CALM)",
+          "source_title": "Recipes for building an open-domain chatbot",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2402.11115",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2004.13637",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "LaMDA: Language Models for Dialog Applications",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2201.08239",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/convolutional-neural-networks-cnn.md",
@@ -10899,18 +10966,20 @@
       "file": "content/ai/few-shot-learning.md",
       "article_id": "few-shot-learning",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Prototypical Networks for Few-shot Learning",
+          "source_title": "Matching Networks for One Shot Learning",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1703.05175",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1606.04080",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=1703.05175&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -10918,24 +10987,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks (MAML)",
+          "source_title": "Prototypical Networks for Few-shot Learning",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1703.03400",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1703.05175",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1703.03400",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/foundation-models.md",
@@ -11141,19 +11232,20 @@
       "file": "content/ai/geometric-deep-learning.md",
       "article_id": "geometric-deep-learning",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Geometric Deep Learning and Equivariant Neural Networks",
+          "source_title": "Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://link.springer.com/article/10.1007/s10462-023-10502-7",
+              "identifier": "https://arxiv.org/abs/2104.13478",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://link.springer.com/article/10.1007/s10462-023-10502-7?error=cookies_not_supported&code=066689e8-5abe-4d25-88ee-5365de3dc286"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -11161,16 +11253,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges",
-          "source_type": "textbook",
+          "source_title": "Semi-Supervised Classification with Graph Convolutional Networks",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://geometricdeeplearning.com/",
+              "identifier": "https://arxiv.org/abs/1609.02907",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://geometricdeeplearning.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1612.00593",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -11178,8 +11289,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/gpt-models.md",
@@ -12022,20 +12135,20 @@
       "file": "content/ai/learned-database-systems.md",
       "article_id": "learned-database-systems",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Learning database optimization techniques: the state-of-the-art and future directions",
+          "source_title": "The Case for Learned Index Structures",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1007/s11704-025-41116-7",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1712.01208",
               "verified": true,
               "metadata": {
-                "title": "Learning database optimization techniques: the state-of-the-art and prospects",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2025
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -12043,24 +12156,46 @@
           "all_verified": true
         },
         {
-          "source_title": "The Case for Learned Index Structures",
+          "source_title": "SageDB: A Learned Database System",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1712.01208",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://cidrdb.org/cidr2019/papers/p117-kraska-cidr19.pdf",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Bao: Making Learned Query Optimization Practical",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2004.03814",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/llm-inference-optimization.md",
@@ -12545,20 +12680,20 @@
       "file": "content/ai/machine-translation.md",
       "article_id": "machine-translation",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Scaling neural machine translation to 200 languages (No Language Left Behind)",
+          "source_title": "BLEU: a Method for Automatic Evaluation of Machine Translation",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1038/s41586-024-07335-x",
+              "method": "url",
+              "identifier": "https://aclanthology.org/P02-1040/",
               "verified": true,
               "metadata": {
-                "title": "Scaling neural machine translation to 200 languages",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2024
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -12566,25 +12701,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Machine Translation in the Era of Large Language Models: A Comprehensive Survey",
+          "source_title": "Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.mdpi.com/2078-2489/16/9/723",
-              "verified": false,
+              "identifier": "https://arxiv.org/abs/1609.08144",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.mdpi.com/2078-2489/16/9/723"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Attention Is All You Need",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1706.03762",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/mcp.md",
@@ -12870,20 +13026,20 @@
       "file": "content/ai/mlops-llmops.md",
       "article_id": "mlops-llmops",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Machine learning operations landscape: platforms and tools",
+          "source_title": "Hidden Technical Debt in Machine Learning Systems",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1007/s10462-025-11164-3",
+              "method": "url",
+              "identifier": "https://papers.nips.cc/paper_files/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html",
               "verified": true,
               "metadata": {
-                "title": "Machine learning operations landscape: platforms and tools",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2025
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -12891,24 +13047,46 @@
           "all_verified": true
         },
         {
-          "source_title": "AI Observability for Large Language Model Systems: A Multi-Layer Taxonomy",
+          "source_title": "The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2604.26152",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://research.google/pubs/the-ml-test-score-a-rubric-for-ml-production-readiness-and-technical-debt-reduction/",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "AI Risk Management Framework",
+          "source_type": "government_guidance",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.nist.gov/itl/ai-risk-management-framework",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/model-compression.md",
@@ -14320,20 +14498,20 @@
       "file": "content/ai/protein-structure-prediction.md",
       "article_id": "protein-structure-prediction",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The latest AI breakthroughs in structural biology: protein conformational landscapes and de novo design",
+          "source_title": "Highly accurate protein structure prediction with AlphaFold",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1038/s42003-026-10112-3",
+              "method": "url",
+              "identifier": "https://www.nature.com/articles/s41586-021-03819-2",
               "verified": true,
               "metadata": {
-                "title": "The latest AI breakthroughs in structural biology: protein binder design and conformational state prediction",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2026
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -14341,25 +14519,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Artificial intelligence methods for protein folding and design",
+          "source_title": "Accurate prediction of protein structures and interactions using a three-track neural network",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.sciencedirect.com/science/article/abs/pii/S0959440X25000843",
-              "verified": false,
+              "identifier": "https://www.science.org/doi/10.1126/science.abj8754",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.sciencedirect.com/science/article/abs/pii/S0959440X25000843"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Assessment of protein structure prediction in CASP14",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1002/prot.26237",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/quantum-machine-learning.md",
@@ -14528,20 +14727,20 @@
       "file": "content/ai/recommender-systems.md",
       "article_id": "recommender-systems",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Collaborative filtering models: an experimental and detailed comparison of neural and graph-based approaches",
+          "source_title": "Matrix Factorization Techniques for Recommender Systems",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1038/s41598-025-15096-4",
+              "method": "url",
+              "identifier": "https://doi.org/10.1109/MC.2009.263",
               "verified": true,
               "metadata": {
-                "title": "Collaborative filtering models an experimental and detailed comparative study",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2025
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -14549,25 +14748,46 @@
           "all_verified": true
         },
         {
-          "source_title": "FIGNNCF: Feature Integrated Graph Neural Network based Collaborative Filtering for Sequential Recommendation",
+          "source_title": "Neural Collaborative Filtering",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.sciencedirect.com/science/article/pii/S0925231225026980",
-              "verified": false,
+              "identifier": "https://arxiv.org/abs/1708.05031",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.sciencedirect.com/science/article/pii/S0925231225026980"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Deep Neural Networks for YouTube Recommendations",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://dl.acm.org/doi/10.1145/2959100.2959190",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/recurrent-neural-networks-rnn.md",

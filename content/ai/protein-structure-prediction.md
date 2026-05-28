@@ -4,8 +4,8 @@ title: "Protein Structure Prediction: AlphaFold, RoseTTAFold, and AI-Driven Stru
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -16,98 +16,59 @@ is_live_document: false
 data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: af-protein-structure-prediction-1
+  - id: af-ai-protein-structure-prediction-1
+    statement: AlphaFold demonstrated highly accurate protein structure prediction with deep learning.
+    source_title: Highly accurate protein structure prediction with AlphaFold
+    source_url: https://www.nature.com/articles/s41586-021-03819-2
+    confidence: medium
+  - id: af-ai-protein-structure-prediction-2
     statement: >-
-      Nature (May 2026) published a commentary identifying the next two frontiers of AI in structural biology: predicting full protein conformational landscapes (all functionally-relevant shapes a
-      protein adopts) and routine de novo design of proteins with novel functions — going beyond static single-structure prediction that AlphaFold2 achieved in 2020.
-    source_title: Nature Communications Biology (2026) — The latest AI breakthroughs in structural biology — doi:10.1038/s42003-026-10112-3
-    source_url: https://www.nature.com/articles/s42003-026-10112-3
-    confidence: high
-  - id: af-protein-structure-prediction-2
+      RoseTTAFold uses a three-track neural network for predicting protein structures and
+      interactions.
+    source_title: Accurate prediction of protein structures and interactions using a three-track neural network
+    source_url: https://www.science.org/doi/10.1126/science.abj8754
+    confidence: medium
+  - id: af-ai-protein-structure-prediction-3
     statement: >-
-      ScienceDirect (August 2025) published a comprehensive review of AI methods for protein folding and design — documenting that models like AlphaFold2, RoseTTAFold, and ESMFold achieve sub-angstrom
-      accuracy for single-chain predictions but still struggle with conformational ensembles, intrinsically disordered regions, and protein dynamics that are critical for understanding enzyme
-      catalysis and allosteric regulation.
-    source_title: ScienceDirect Current Opinion in Structural Biology (2025) — AI methods for protein folding and design — doi:10.1016/j.sbi.2025.102985
-    source_url: https://www.sciencedirect.com/science/article/abs/pii/S0959440X25000843
-    confidence: high
+      The CASP14 assessment evaluated the performance of protein structure prediction methods,
+      including major deep-learning advances.
+    source_title: Assessment of protein structure prediction in CASP14
+    source_url: https://doi.org/10.1002/prot.26237
+    confidence: medium
 primary_sources:
-  - id: ps-protein-structure-prediction-1
-    title: "The latest AI breakthroughs in structural biology: protein conformational landscapes and de novo design"
+  - id: ps-ai-protein-structure-prediction-1
+    title: Highly accurate protein structure prediction with AlphaFold
     type: academic_paper
-    year: 2026
-    institution: Nature Communications Biology
-    doi: 10.1038/s42003-026-10112-3
-    url: https://www.nature.com/articles/s42003-026-10112-3
-  - id: ps-protein-structure-prediction-2
-    title: Artificial intelligence methods for protein folding and design
+    year: 2021
+    institution: Nature
+    url: https://www.nature.com/articles/s41586-021-03819-2
+  - id: ps-ai-protein-structure-prediction-2
+    title: Accurate prediction of protein structures and interactions using a three-track neural network
     type: academic_paper
-    year: 2025
-    institution: Current Opinion in Structural Biology / Elsevier
-    url: https://www.sciencedirect.com/science/article/abs/pii/S0959440X25000843
+    year: 2021
+    institution: Science
+    url: https://www.science.org/doi/10.1126/science.abj8754
+  - id: ps-ai-protein-structure-prediction-3
+    title: Assessment of protein structure prediction in CASP14
+    type: academic_paper
+    year: 2021
+    institution: Proteins
+    url: https://doi.org/10.1002/prot.26237
 known_gaps:
   - Predicting intrinsically disordered protein regions and dynamics
   - De novo design of enzymes with novel catalytic functions not found in nature
 disputed_statements: []
-secondary_sources:
-  - title: "AlphaFold 3: Accurate Structure Prediction of Biomolecular Interactions (Google DeepMind)"
-    type: journal_article
-    year: 2024
-    authors:
-      - Abramson, Josh
-      - Adler, Jonas
-      - Dunger, Jack
-      - et al.
-    institution: Google DeepMind / Nature
-    url: https://www.nature.com/articles/s41586-024-07487-w
-  - title: "AlphaFold 2: Improved Protein Structure Prediction Using Deep Learning (CASP14)"
-    type: journal_article
-    year: 2021
-    authors:
-      - Jumper, John
-      - Evans, Richard
-      - Pritzel, Alexander
-      - et al.
-    institution: Google DeepMind / Nature
-    url: https://www.nature.com/articles/s41586-021-03819-2
-  - title: "RoseTTAFold: Accurate Prediction of Protein Structures and Interactions (Baker Lab)"
-    type: journal_article
-    year: 2021
-    authors:
-      - Baek, Minkyung
-      - DiMaio, Frank
-      - Anishchenko, Ivan
-      - et al.
-    institution: University of Washington / Science
-    url: https://doi.org/10.1126/science.abj8754
-  - title: Highly Accurate Protein Structure Prediction with AlphaFold (Seminal — Jumper et al. / Nature 2021)
-    type: journal_article
-    year: 2021
-    authors:
-      - Jumper, John
-      - Evans, Richard
-      - Pritzel, Alexander
-      - et al.
-    institution: Google DeepMind / Nature
-    url: https://www.nature.com/articles/s41586-021-03819-2
-updated: "2026-05-24"
+secondary_sources: []
+updated: "2026-05-28"
 ---
 ## TL;DR
-Protein structure prediction has been transformed by AI — from AlphaFold2's historic 2020 breakthrough predicting static 3D structures to current frontiers: simulating protein dynamics, predicting multi-protein complexes, and designing entirely new proteins with specified functions. The 2024 Nobel Prize in Chemistry recognized this revolution, but fundamental challenges remain.
+Protein Structure Prediction: AlphaFold, RoseTTAFold, and AI-Driven Structural Biology: Protein structure prediction estimates three-dimensional protein structure from amino-acid sequence or related biological information.
 
 ## Core Explanation
-The protein folding problem: given an amino acid sequence (1D string), predict the 3D folded structure. Proteins fold in milliseconds in cells; experimentally determining structures via X-ray crystallography, cryo-EM, or NMR takes months to years per protein. AI approach: (1) Multiple Sequence Alignment (MSA) — find evolutionarily related sequences, extract co-evolution signals (residue pairs that mutate together are likely near each other in 3D); (2) Pair representation — encode pairwise relationships between all residue pairs; (3) Structure module — iteratively refine 3D coordinates using invariant point attention (IPA), respecting roto-translational equivariance. AlphaFold2 (Jumper et al., Nature 2021) achieved median GDT_TS of 92.4 on CASP14 — considered a solution to the single-chain protein folding problem.
-
-## Detailed Analysis
-Key models: (1) AlphaFold2 (DeepMind, 2020-2021) — MSA + Evoformer + Structure Module. Trained on PDB (180K structures). Open-sourced, with 200M+ predictions in the AlphaFold Database; (2) RoseTTAFold (Baker Lab, 2021) — three-track architecture processing 1D sequence, 2D distance, and 3D coordinates simultaneously; (3) ESMFold (Meta, 2022) — uses language model embeddings instead of MSAs, enabling 60x faster inference at slightly lower accuracy; (4) AlphaFold-Multimer (2022) — extends to protein-protein complexes; (5) AlphaFold3 (2024) — diffusion-based architecture predicting complexes including proteins, DNA, RNA, ligands, and ions. Nature 2026 commentary identifies the conformational landscape problem: proteins are dynamic, not static — they sample multiple conformations essential for function (enzyme open/closed states, transporter inward/outward-facing). Current AI predicts one static structure, missing the ensemble. Frontier 1: predicting full energy landscapes and transition pathways. Frontier 2: de novo protein design — RFdiffusion (Baker Lab, 2023) generates novel protein backbones via diffusion models, then ProteinMPNN designs sequences folding into those backbones. This enables designing proteins that don't exist in nature — enzymes for plastic degradation, carbon capture, or targeted therapeutics.
+AI structure prediction advanced sharply with deep learning systems evaluated in CASP. Strong public claims should distinguish structure prediction from experimental structure determination and from downstream functional validation.
 
 ## Further Reading
-- AlphaFold Database: 200M+ predicted structures (EMBL-EBI)
-- RFdiffusion: Diffusion models for protein backbone generation
-- CASP: Critical Assessment of Structure Prediction (biennial)
 
-## Related Articles
-
-- [AI for Protein Structure Prediction: AlphaFold and the Folding Revolution](../ai-for-protein-structure-prediction-alphafold-and-the-folding-revolution.md)
-- [AI for Genomics: Variant Calling, Gene Expression Prediction, and Protein-DNA Binding](../ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md)
-- [AI for Science: AlphaFold and the AI-Driven Discovery Revolution](../ai-for-science.md)
+- [Highly accurate protein structure prediction with AlphaFold](https://www.nature.com/articles/s41586-021-03819-2)
+- [Accurate prediction of protein structures and interactions using a three-track neural network](https://www.science.org/doi/10.1126/science.abj8754)
+- [Assessment of protein structure prediction in CASP14](https://doi.org/10.1002/prot.26237)

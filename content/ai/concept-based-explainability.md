@@ -4,8 +4,8 @@ title: "Concept-Based Explainability: TCAV and Concept Bottleneck Models"
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -16,91 +16,63 @@ is_live_document: false
 data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: af-concept-based-explainability-1
+  - id: af-ai-concept-based-explainability-1
     statement: >-
-      TCAV (Testing with Concept Activation Vectors, Kim et al., ICML 2018) introduced a quantitative method for measuring how much a trained model relies on human-defined concepts (e.g., "stripes"
-      for zebra classification) — training linear classifiers in the model's activation space to separate concept-present from concept-absent examples.
-    source_title: Kim et al., ICML 2018 (Google Brain) — TCAV — Interpretability Beyond Feature Attribution
-    source_url: https://proceedings.mlr.press/v80/kim18d.html
-    confidence: high
-  - id: af-concept-based-explainability-2
+      TCAV tests a model using concept activation vectors to quantify sensitivity to user-defined
+      concepts.
+    source_title: >-
+      Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation
+      Vectors
+    source_url: https://arxiv.org/abs/1711.11279
+    confidence: medium
+  - id: af-ai-concept-based-explainability-2
+    statement: Concept Bottleneck Models predict intermediate concepts before predicting a final task label.
+    source_title: Concept Bottleneck Models
+    source_url: https://arxiv.org/abs/2007.04612
+    confidence: medium
+  - id: af-ai-concept-based-explainability-3
     statement: >-
-      CVPR 2025 introduced Hybrid Concept Bottleneck Models (HCBM) that combine the interpretability of standard CBMs with the flexibility of post-hoc concept extraction — allowing models to discover
-      new concepts from data while maintaining alignment with predefined human-interpretable concepts.
-    source_title: Liu et al., CVPR 2025 — Hybrid Concept Bottleneck Models
-    source_url: https://dl.acm.org/doi/abs/10.1145/3774643
-    confidence: high
+      ACE proposes automatically discovering concepts for concept-based explanations of
+      convolutional neural networks.
+    source_title: "ACE: Automatic Concept-based Explanations for CNNs"
+    source_url: https://arxiv.org/abs/1902.03129
+    confidence: medium
 primary_sources:
-  - id: ps-concept-based-explainability-1
-    title: "Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)"
+  - id: ps-ai-concept-based-explainability-1
+    title: >-
+      Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation
+      Vectors
     type: academic_paper
-    year: 2018
-    institution: ICML / Google Brain
-    url: https://proceedings.mlr.press/v80/kim18d.html
-  - id: ps-concept-based-explainability-2
-    title: "Concept-based Explainable Artificial Intelligence: A Survey"
+    year: 2017
+    institution: arXiv
+    url: https://arxiv.org/abs/1711.11279
+  - id: ps-ai-concept-based-explainability-2
+    title: Concept Bottleneck Models
     type: academic_paper
-    year: 2025
-    institution: ACM Computing Surveys
-    url: https://dl.acm.org/doi/abs/10.1145/3774643
+    year: 2020
+    institution: arXiv
+    url: https://arxiv.org/abs/2007.04612
+  - id: ps-ai-concept-based-explainability-3
+    title: "ACE: Automatic Concept-based Explanations for CNNs"
+    type: academic_paper
+    year: 2019
+    institution: arXiv
+    url: https://arxiv.org/abs/1902.03129
 known_gaps:
   - Automatic concept discovery without human labeling
   - Truthfulness and reliability of concept explanations
 disputed_statements: []
-secondary_sources:
-  - title: "This Looks Like That: Deep Learning for Interpretable Image Recognition (Prototypical Networks for XAI)"
-    type: conference_paper
-    year: 2019
-    authors:
-      - Chen, Chaofan
-      - Li, Oscar
-      - Tao, Chaofan
-      - et al.
-    institution: Duke University / NeurIPS
-    url: https://arxiv.org/abs/1806.10574
-  - title: "Explainable AI (XAI): A Comprehensive Survey of Methods, Metrics, and Applications"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/3635100
-  - title: "TCAV: Interpretability Beyond Feature Attribution — Quantitative Testing with Concept Activation Vectors"
-    type: conference_paper
-    year: 2018
-    authors:
-      - Kim, Been
-      - Wattenberg, Martin
-      - Gilmer, Justin
-      - et al.
-    institution: Google Brain / ICML
-    url: https://arxiv.org/abs/1711.11279
-  - title: A Unified Approach to Interpreting Model Predictions (SHAP — Lundberg & Lee)
-    type: conference_paper
-    year: 2017
-    authors:
-      - Lundberg, Scott M.
-      - Lee, Su-In
-    institution: University of Washington / NeurIPS
-    url: https://arxiv.org/abs/1705.07874
-updated: "2026-05-24"
+secondary_sources: []
+updated: "2026-05-28"
 ---
 ## TL;DR
-Concept-based explainability moves beyond pixel-level saliency maps to higher-level human-understandable concepts. TCAV quantifies whether a model "thinks" about stripes when classifying zebras, while Concept Bottleneck Models embed interpretable concept reasoning into the architecture itself.
+Concept-Based Explainability: TCAV and Concept Bottleneck Models: Concept-based explainability explains model behavior with human-interpretable concepts rather than only raw features or saliency maps.
 
 ## Core Explanation
-Post-hoc saliency methods (Grad-CAM, Integrated Gradients) show "where" a model looks but not "what concept" it uses. TCAV approach: (1) Collect examples of concept (e.g., images with stripes vs. without); (2) Train a linear CAV (Concept Activation Vector) in the model's activation layer that separates concept from non-concept; (3) Measure the directional derivative of the model's output along the CAV direction — the TCAV score = fraction of inputs where the concept influences classification. Statistical significance via two-sided t-test against random concepts.
-
-## Detailed Analysis
-Concept Bottleneck Models (CBMs): architecture forces predictions to pass through a concept layer — model learns to predict concepts from input, then predict label from concepts. Advantages: inherently interpretable, can intervene on misconceptions (e.g., "ignore texture bias, use shape"). Limitations: requires annotated concept labels; reduces accuracy vs. unrestricted models. Hybrid CBMs (CVPR 2025) relax the bottleneck with residual connections. Visual-TCAV (2024) generates concept saliency maps showing where concepts are recognized spatially. Applications: medical imaging (clinician-verifiable reasoning), autonomous driving (concept-level failure analysis), and bias auditing (checking if models use protected attributes as concepts).
+Concept methods can test whether a model is sensitive to a concept, route predictions through concept bottlenecks, or discover visual concepts automatically. Their quality depends on concept definitions, datasets, and evaluation.
 
 ## Further Reading
-- TensorFlow TCAV GitHub Repository
-- Yannic Kilcher's TCAV Video Explanation
-- DALLE-3 Concept Understanding Analysis
 
-## Related Articles
-
-- [Diffusion Models: DDPM, Stable Diffusion, and Score-Based Generative Modeling](../diffusion-models-ddpm-stable-diffusion-and-score-based-generative-modeling.md)
-- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../3d-human-modeling.md)
-- [AI Art and Creativity: Generative Models and Authorship](../ai-art-and-creativity.md)
+- [Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors](https://arxiv.org/abs/1711.11279)
+- [Concept Bottleneck Models](https://arxiv.org/abs/2007.04612)
+- [ACE: Automatic Concept-based Explanations for CNNs](https://arxiv.org/abs/1902.03129)

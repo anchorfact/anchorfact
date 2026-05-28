@@ -4,8 +4,8 @@ title: "Few-Shot Learning: Prototypical Networks, MAML, and In-Context Adaptatio
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -16,96 +16,61 @@ is_live_document: false
 data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: af-few-shot-learning-1
+  - id: af-ai-few-shot-learning-1
     statement: >-
-      Few-shot learning paradigms evolved through three eras: (1) Metric learning (2015-2018) -- Prototypical Networks (ProtoNet, NeurIPS 2017) learn distance metrics and classify via
-      nearest-prototype comparison, achieving 56% on miniImageNet 5-way 1-shot; (2) Optimization-based (2017-2019) -- MAML (ICML 2017) learns a model initialization that adapts to new tasks in 1-5
-      gradient steps; (3) Foundation model era (2022-present) -- GPT-3/Claude perform few-shot via in-context examples without parameter updates.
-    source_title: ProtoNet (Snell et al., NeurIPS 2017) / MAML (Finn et al., ICML 2017) -- foundational few-shot learning methods / Foundation model in-context learning (2022-present)
+      Matching Networks learn an attention-based nearest-neighbor style classifier for one-shot
+      learning.
+    source_title: Matching Networks for One Shot Learning
+    source_url: https://arxiv.org/abs/1606.04080
+    confidence: medium
+  - id: af-ai-few-shot-learning-2
+    statement: >-
+      Prototypical Networks classify few-shot examples by distances to class prototypes in an
+      embedding space.
+    source_title: Prototypical Networks for Few-shot Learning
     source_url: https://arxiv.org/abs/1703.05175
-    confidence: high
-  - id: af-few-shot-learning-2
+    confidence: medium
+  - id: af-ai-few-shot-learning-3
     statement: >-
-      Foundation model few-shot learning (2023-2025) demonstrated that large models achieve 70-90% accuracy on novel classification tasks given 5-10 demonstration examples in the prompt -- without any
-      parameter updates -- effectively shifting research focus from meta-learning algorithms to in-context learning mechanisms and optimal demonstration selection strategies.
-    source_title: GPT-3/4 in-context learning (2020-2024) / Brown et al. -- Language Models are Few-Shot Learners / Meta-learning survey (2025)
+      MAML optimizes model parameters so the model can adapt quickly to new tasks with a small
+      number of gradient steps.
+    source_title: Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks
     source_url: https://arxiv.org/abs/1703.03400
-    confidence: high
+    confidence: medium
 primary_sources:
-  - id: ps-few-shot-learning-1
+  - id: ps-ai-few-shot-learning-1
+    title: Matching Networks for One Shot Learning
+    type: academic_paper
+    year: 2016
+    institution: arXiv
+    url: https://arxiv.org/abs/1606.04080
+  - id: ps-ai-few-shot-learning-2
     title: Prototypical Networks for Few-shot Learning
     type: academic_paper
     year: 2017
-    institution: NeurIPS / University of Toronto
+    institution: arXiv
     url: https://arxiv.org/abs/1703.05175
-  - id: ps-few-shot-learning-2
-    title: Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks (MAML)
+  - id: ps-ai-few-shot-learning-3
+    title: Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks
     type: academic_paper
     year: 2017
-    institution: ICML / UC Berkeley
+    institution: arXiv
     url: https://arxiv.org/abs/1703.03400
 known_gaps:
   - Optimal demonstration selection -- which examples maximize in-context learning performance
   - Adapting foundation models to entirely novel domains with no training distribution overlap
 disputed_statements: []
-secondary_sources:
-  - title: "Meta-learning Approaches for Few-Shot Learning: A Survey of Recent Advances"
-    type: survey_paper
-    year: 2024
-    authors:
-      - Gharoun, Hassan
-      - Momenifar, Fereshteh
-      - Chen, Fang
-      - Gandomi, Amir H.
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/3659943
-  - title: Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks (MAML)
-    type: conference_paper
-    year: 2017
-    authors:
-      - Finn, Chelsea
-      - Abbeel, Pieter
-      - Levine, Sergey
-    institution: UC Berkeley / ICML
-    url: https://arxiv.org/abs/1703.03400
-  - title: Prototypical Networks for Few-shot Learning
-    type: conference_paper
-    year: 2017
-    authors:
-      - Snell, Jake
-      - Swersky, Kevin
-      - Zemel, Richard S.
-    institution: University of Toronto / NeurIPS
-    url: https://arxiv.org/abs/1703.05175
-  - title: Matching Networks for One Shot Learning
-    type: conference_paper
-    year: 2016
-    authors:
-      - Vinyals, Oriol
-      - Blundell, Charles
-      - Lillicrap, Timothy
-      - Kavukcuoglu, Koray
-      - Wierstra, Daan
-    institution: Google DeepMind / NeurIPS
-    url: https://arxiv.org/abs/1606.04080
-updated: "2026-05-24"
+secondary_sources: []
+updated: "2026-05-28"
 ---
 ## TL;DR
-Few-shot learning teaches AI to recognize new concepts from just a handful of examples -- the way humans learn (see one panda, recognize all pandas). From Prototypical Networks to MAML to in-context learning in foundation models, the ability to generalize from few examples is transforming AI from narrow specialists to flexible generalists.
+Few-Shot Learning: Prototypical Networks, MAML, and In-Context Adaptation: Few-shot learning aims to learn new classes or tasks from only a small number of labeled examples.
 
 ## Core Explanation
-The N-way K-shot classification problem: given N classes with K labeled examples each, classify a new query example. Meta-learning (learning to learn): train on many small tasks (episodes), each with N-way K-shot structure. Three paradigms: (1) Metric-based -- ProtoNet computes class prototypes as mean embedding of support examples, classifies query by nearest-prototype distance; (2) Optimization-based -- MAML trains parameters such that one gradient step on a new task's loss produces good performance; (3) Hallucination-based -- generate additional training examples via data augmentation or generative models.
-
-## Detailed Analysis
-ProtoNet (Snell et al., 2017): embedding function maps inputs to a metric space where Euclidean distance corresponds to semantic similarity. Compute prototype per class, classify query as closest prototype. Works well when classes are visually distinct, struggles with fine-grained categories. MAML (Finn et al., 2017): learns initialization sensitive to task-specific gradients. Inner loop: task-specific adaptation (few gradient steps). Outer loop: meta-update across tasks. Foundation model few-shot: rather than meta-training, simply prompt a frozen LLM with examples. Key observation (Min et al., 2022): demonstration labels need not be correct -- model learns task format, not specific answers. Ground-truth labels provide marginal gain over random labels. Applications: medical imaging (rare disease classification), personalized NLP, and robotics (adapting manipulation to novel objects).
+Important approaches include metric learning, prototype-based classification, and meta-learning. These methods are evaluated with episodes that mimic learning from limited support examples.
 
 ## Further Reading
-- Learn2Learn: PyTorch Meta-Learning Library
-- Meta-Dataset: Few-Shot Learning Benchmark
-- ChatGPT Few-Shot Prompting Guide
 
-## Related Articles
-
-- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../ai-for-complex-networks.md)
-- [Meta-Learning: Learning to Learn with MAML and Reptile](../meta-learning.md)
-- [Physics-Informed Neural Networks: Solving PDEs with Deep Learning and Neural Operators](../physics-informed-neural-networks.md)
+- [Matching Networks for One Shot Learning](https://arxiv.org/abs/1606.04080)
+- [Prototypical Networks for Few-shot Learning](https://arxiv.org/abs/1703.05175)
+- [Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks](https://arxiv.org/abs/1703.03400)
