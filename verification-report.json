@@ -3,12 +3,12 @@
     "generated": "2026-05-27T14:00:00.000Z",
     "total_articles": 1000,
     "total_with_errors": 342,
-    "average_sources_per_article": "2.3",
-    "overall_verification_rate": "72.3%",
+    "average_sources_per_article": "2.4",
+    "overall_verification_rate": "72.5%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 382
+    "manual_reviewed_articles": 515
   },
   "articles": [
     {
@@ -32804,19 +32804,20 @@
       "file": "content/computer-science/swift.md",
       "article_id": "kb-2026-00080",
       "generation_method": "human_only",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Swift.org Documentation",
+          "source_title": "About Swift | Swift.org",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://swift.org/documentation/",
+              "identifier": "https://www.swift.org/about/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.swift.org/documentation/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -32824,16 +32825,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Swift GitHub Repository",
-          "source_type": "repository",
+          "source_title": "Documentation | Swift.org",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://github.com/swiftlang/swift",
+              "identifier": "https://www.swift.org/documentation/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/swiftlang/swift"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Swift Programming Language",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -32841,8 +32861,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/systemd-timers.md",
@@ -33179,10 +33201,10 @@
       "file": "content/computer-science/terraform-state.md",
       "article_id": "kb-2026-00315",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Terraform State Documentation",
+          "source_title": "State | Terraform | HashiCorp Developer",
           "source_type": "documentation",
           "results": [
             {
@@ -33190,8 +33212,45 @@
               "identifier": "https://developer.hashicorp.com/terraform/language/state",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://developer.hashicorp.com/terraform/language/state"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "State: Purpose | Terraform | HashiCorp Developer",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.hashicorp.com/terraform/language/state/purpose",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "State: Remote Storage | Terraform | HashiCorp Developer",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.hashicorp.com/terraform/language/state/remote",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -33199,8 +33258,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/terraform.md",
@@ -34496,10 +34557,10 @@
       "file": "content/computer-science/webrtc.md",
       "article_id": "kb-2026-00089",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "WebRTC 1.0 (W3C Recommendation)",
+          "source_title": "WebRTC: Real-Time Communication in Browsers",
           "source_type": "standard",
           "results": [
             {
@@ -34507,8 +34568,45 @@
               "identifier": "https://www.w3.org/TR/webrtc/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.w3.org/TR/webrtc/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "WebRTC API - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RTCPeerConnection - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -34516,8 +34614,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/websocket-api.md",
@@ -34719,10 +34819,10 @@
       "file": "content/computer-science/yaml.md",
       "article_id": "kb-2026-00079",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "YAML Specification v1.2.2",
+          "source_title": "YAML Ain't Markup Language (YAML) revision 1.2.2",
           "source_type": "standard",
           "results": [
             {
@@ -34730,8 +34830,45 @@
               "identifier": "https://yaml.org/spec/1.2.2/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://yaml.org/spec/1.2.2/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "YAML Ain't Markup Language (YAML) Version 1.2",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://yaml.org/spec/1.2.1/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "YAML Ain't Markup Language (YAML) Version 1.1",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://yaml.org/spec/1.1/current.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -34739,8 +34876,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/zero-trust-architecture.md",
@@ -34773,19 +34912,56 @@
       "file": "content/computer-science/zig-language.md",
       "article_id": "kb-2026-00307",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Zig Documentation",
+          "source_title": "Overview | Zig Programming Language",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://ziglang.org/documentation/",
+              "identifier": "https://ziglang.org/learn/overview/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://ziglang.org/documentation/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Documentation - The Zig Programming Language",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://ziglang.org/documentation/master/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Why Zig When There is Already C++, D, and Rust?",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://ziglang.org/learn/why_zig_rust_d_cpp/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -34793,8 +34969,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/game-development/accessibility-guide.md",
@@ -39652,19 +39830,56 @@
       "file": "content/health/first-aid-cpr.md",
       "article_id": "kb-2026-00378",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "AHA Guidelines for CPR and Emergency Cardiovascular Care",
-          "source_type": "standard",
+          "source_title": "CPR and ECC Guidelines | American Heart Association CPR & First Aid",
+          "source_type": "medical_guideline",
           "results": [
             {
               "method": "url",
               "identifier": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Hands-Only CPR | American Heart Association CPR & First Aid",
+          "source_type": "medical_guideline",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cpr.heart.org/en/cpr-courses-and-kits/hands-only-cpr",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "CPR Steps | How to Perform CPR | Red Cross",
+          "source_type": "medical_guideline",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.redcross.org/take-a-class/cpr/performing-cpr/cpr-steps",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -39672,8 +39887,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/health/gut-microbiome.md",
@@ -40687,19 +40904,56 @@
       "file": "content/health/strength-training-principles.md",
       "article_id": "kb-2026-00421",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Practical Programming for Strength Training (Rippetoe & Baker, 3rd Ed)",
-          "source_type": "book",
+          "source_title": "Adult Activity: An Overview | Physical Activity Basics | CDC",
+          "source_type": "government_guideline",
           "results": [
             {
               "method": "url",
-              "identifier": "https://aasgaardco.com/store/books-posters-dvd/practical-programming-for-strength-training/",
+              "identifier": "https://www.cdc.gov/physical-activity-basics/guidelines/adults.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://aasgaardco.com/store/books-posters-dvd/books/practical-programming-for-strength-training/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Current Guidelines | odphp.health.gov",
+          "source_type": "government_guideline",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "American College of Sports Medicine position stand: Progression models in resistance training for healthy adults",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://pubmed.ncbi.nlm.nih.gov/19204579/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -40707,8 +40961,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/health/strength-training.md",
@@ -42585,16 +42841,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "A Distant Mirror: The Calamitous 14th Century (Barbara Tuchman)",
-          "source_type": "book",
+          "source_title": "Middle Ages | Britannica",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/56336/a-distant-mirror-by-barbara-w-tuchman/",
+              "identifier": "https://www.britannica.com/event/Middle-Ages",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/56336/a-distant-mirror-by-barbara-w-tuchman/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -42602,16 +42859,17 @@
           "all_verified": true
         },
         {
-          "source_title": "The Middle Ages: A Very Short Introduction (2025)",
-          "source_type": "book",
+          "source_title": "Feudalism | Britannica",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://global.oup.com/vsi-middle-ages/",
+              "identifier": "https://www.britannica.com/topic/feudalism",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-middle-ages/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -42619,25 +42877,28 @@
           "all_verified": true
         },
         {
-          "source_title": "Medieval Europe (2025 Edition)",
-          "source_type": "book",
+          "source_title": "Black Death | Britannica",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://yalebooks.yale.edu/medieval-europe/",
-              "verified": false,
+              "identifier": "https://www.britannica.com/event/Black-Death",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://yalebooks.yale.edu/medieval-europe/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/ming-dynasty.md",
@@ -43728,19 +43989,56 @@
       "file": "content/history/vikings-exploration-and-culture.md",
       "article_id": "kb-2026-00485",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Vikings: A History (Robert Ferguson)",
-          "source_type": "book",
+          "source_title": "Viking | Britannica",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/302917/the-vikings-by-robert-ferguson/",
+              "identifier": "https://www.britannica.com/topic/Viking-people",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/302917/the-vikings-by-robert-ferguson/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "L'Anse aux Meadows National Historic Site | UNESCO World Heritage Centre",
+          "source_type": "heritage_site",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://whc.unesco.org/en/list/4/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Viking Age: The Ships | National Museum of Denmark",
+          "source_type": "museum_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/the-ships/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -43748,8 +44046,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/world-war-i-causes-trench-warfare-and-the-treaty-of-versailles.md",

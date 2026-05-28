@@ -1,84 +1,75 @@
 ---
-id: "kb-2026-00307"
-title: "Zig Language"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00307
+title: Zig Language
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-001"
-    statement: "Zig (Andrew Kelley, 2016) is a systems programming language competing with C — manual memory management without hidden allocations, compile-time execution, and seamless C interoperability (can import C headers directly). No garbage collector, no hidden control flow. Bun JS runtime is written in Zig."
-    source_title: "Zig Documentation"
-    source_url: "https://ziglang.org/documentation/"
-    confidence: "medium"
-  - id: "fact-computer-science-001"
-    statement: "Zig (Andrew Kelley, 2016) is a systems programming language competing with C — manual memory management without hidden allocations, compile-time execution, and seamless C interoperability (can import C headers directly). No garbage collector, no hidden control flow. Bun JS runtime is written in Zig."
-    source_title: "Zig Documentation"
-    source_url: "https://ziglang.org/documentation/"
-    confidence: "medium"
-
+  - id: fact-computer-science-01
+    statement: >-
+      Zig emphasizes explicit control by avoiding hidden control flow, hidden memory allocations, a preprocessor, and
+      macros.
+    source_title: Overview | Zig Programming Language
+    source_url: https://ziglang.org/learn/overview/
+    confidence: medium
+  - id: fact-computer-science-02
+    statement: The Zig overview states that Zig programmers manage their own memory and handle memory allocation failure.
+    source_title: Overview | Zig Programming Language
+    source_url: https://ziglang.org/learn/overview/
+    confidence: medium
+  - id: fact-computer-science-03
+    statement: >-
+      The Zig language reference documents compile-time parameters and type construction through comptime-aware
+      builtins.
+    source_title: Documentation - The Zig Programming Language
+    source_url: https://ziglang.org/documentation/master/
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - This public article was narrowed to source-mapped claims during a targeted evidence repair pass.
+disputed_statements: []
 primary_sources:
-  - title: "Zig Documentation"
-    type: "documentation"
+  - title: Overview | Zig Programming Language
+    type: documentation
     year: 2026
-    url: "https://ziglang.org/documentation/"
-    institution: "Zig Software Foundation"
-
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
+    url: https://ziglang.org/learn/overview/
+    institution: Zig Software Foundation
+  - title: Documentation - The Zig Programming Language
+    type: documentation
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    url: https://ziglang.org/documentation/master/
+    institution: Zig Software Foundation
+  - title: Why Zig When There is Already C++, D, and Rust?
+    type: documentation
+    year: 2026
+    url: https://ziglang.org/learn/why_zig_rust_d_cpp/
+    institution: Zig Software Foundation
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
-
-
 
 ## TL;DR
 
-Zig (Andrew Kelley, 2016) is a systems programming language competing with C — manual memory management without hidden allocations, compile-time execution, and seamless C interoperability (can import C headers directly). No garbage collector, no hidden control flow. Bun JS runtime is written in Zig.
+Zig is presented by its official documentation as a language focused on explicit control, manual memory management, and compile-time metaprogramming. This repair removes duplicate claims and narrows the public article to directly documented language properties.
 
-## Core Explanation
+## Evidence Notes
 
-No hidden allocations: `ArrayList(T).init(allocator)` requires explicit allocator. `comptime`: execute code at compile time — generic types, optimization. `defer` for cleanup (like Go). C interop: `@cImport(@cInclude('stdio.h'))` — direct access to C libraries. No macros or preprocessor: all metaprogramming via comptime. Error handling: `try` and `catch` without exceptions.
+- Zig's overview supports the no-hidden-control-flow and memory-management claims.
+- The language reference supports the compile-time language-feature claim.
+- The comparison page is retained as a focused official context source.
 
 ## Further Reading
 
-- [Zig Documentation](https://ziglang.org/documentation/)
-
-## Related Articles
-
-- [AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation](../../ai/ai-code-translation.md)
-- [AI for Accessibility: Assistive Technologies, Sign Language Recognition, and Inclusive Systems](../../ai/ai-for-accessibility.md)
-- [AI for Language Learning: Intelligent Tutoring, Speech Assessment, and Personalized Curriculum](../../ai/ai-for-language-learning.md)
+- [Overview | Zig Programming Language](https://ziglang.org/learn/overview/)
+- [Documentation - The Zig Programming Language](https://ziglang.org/documentation/master/)
+- [Why Zig When There is Already C++, D, and Rust?](https://ziglang.org/learn/why_zig_rust_d_cpp/)

@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T12:33:03.735Z
+Generated: 2026-05-28T12:42:25.536Z
 
-Snapshot: 555 public / 445 draft / 1676 claims.
+Snapshot: 555 public / 445 draft / 1685 claims.
 
 ## Summary
 
@@ -13,7 +13,7 @@ This is a risk-weighted audit sample of public AnchorFact articles. It is intend
 - Articles with at least one fail check: 0
 - High-confidence samples needing review: 0
 - Claim-evidence failures: 0
-- Recommendations: keep_public: 11, downgrade_confidence: 0, repair_sources: 9, move_to_draft: 0
+- Recommendations: keep_public: 17, downgrade_confidence: 0, repair_sources: 3, move_to_draft: 0
 
 ## Method
 
@@ -34,15 +34,15 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 9 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 10 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | risk_fallback | `science/climate-change` | medium | 4/5 (80.0%) | 3 | source=weak; claim=pass; summary=pass | keep_public |
-| 12 | risk_fallback | `computer-science/swift` | low | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 13 | risk_fallback | `computer-science/terraform-state` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 14 | risk_fallback | `computer-science/webrtc` | medium | 1/1 (100.0%) | 2 | source=pass; claim=pass; summary=pass | repair_sources |
-| 15 | risk_fallback | `computer-science/yaml` | medium | 1/1 (100.0%) | 2 | source=pass; claim=pass; summary=pass | repair_sources |
-| 16 | risk_fallback | `computer-science/zig-language` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 17 | risk_fallback | `health/first-aid-cpr` | medium | 1/1 (100.0%) | 2 | source=pass; claim=pass; summary=weak | repair_sources |
-| 18 | risk_fallback | `health/strength-training-principles` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 19 | risk_fallback | `history/middle-ages` | low | 2/3 (66.7%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 20 | risk_fallback | `history/vikings-exploration-and-culture` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 12 | risk_fallback | `self-improvement/growth-mindset` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 13 | risk_fallback | `self-improvement/habit-stacking` | low | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 14 | risk_fallback | `sports/volleyball-fundamentals` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 15 | risk_fallback | `science/plate-tectonics` | medium | 2/2 (100.0%) | 6 | source=pass; claim=pass; summary=pass | keep_public |
+| 16 | risk_fallback | `ai/gradient-descent` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 17 | risk_fallback | `ai/reinforcement-learning` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 18 | risk_fallback | `ai/tokenization-in-nlp` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 19 | risk_fallback | `arts/digital-art` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 20 | risk_fallback | `computer-science/php-language` | medium | 5/5 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 
 ## Article Findings
 
@@ -211,100 +211,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 12. Swift Programming Language
+### 12. Growth Mindset
 
-- canonical slug: `computer-science/swift`
-- canonical URL: https://anchorfact.org/computer-science/swift/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.56)
-- verified source coverage: 2/2 (100.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 13. Terraform State
-
-- canonical slug: `computer-science/terraform-state`
-- canonical URL: https://anchorfact.org/computer-science/terraform-state/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 14. WebRTC
-
-- canonical slug: `computer-science/webrtc`
-- canonical URL: https://anchorfact.org/computer-science/webrtc/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.735)
-- verified source coverage: 1/1 (100.0%)
-- claims: 2 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 15. YAML (YAML Ain't Markup Language)
-
-- canonical slug: `computer-science/yaml`
-- canonical URL: https://anchorfact.org/computer-science/yaml/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.715)
-- verified source coverage: 1/1 (100.0%)
-- claims: 2 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 16. Zig Language
-
-- canonical slug: `computer-science/zig-language`
-- canonical URL: https://anchorfact.org/computer-science/zig-language/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 17. First Aid CPR
-
-- canonical slug: `health/first-aid-cpr`
-- canonical URL: https://anchorfact.org/health/first-aid-cpr/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.695)
-- verified source coverage: 1/1 (100.0%)
-- claims: 2 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `weak`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 18. Strength Training Principles
-
-- canonical slug: `health/strength-training-principles`
-- canonical URL: https://anchorfact.org/health/strength-training-principles/
+- canonical slug: `self-improvement/growth-mindset`
+- canonical URL: https://anchorfact.org/self-improvement/growth-mindset/
 - bucket: `risk_fallback`
 - confidence: `low` (verified_sources, score 0.43)
 - verified source coverage: 1/1 (100.0%)
@@ -316,13 +226,13 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 19. Middle Ages
+### 13. Habit Stacking and Behavior Design
 
-- canonical slug: `history/middle-ages`
-- canonical URL: https://anchorfact.org/history/middle-ages/
+- canonical slug: `self-improvement/habit-stacking`
+- canonical URL: https://anchorfact.org/self-improvement/habit-stacking/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.55)
-- verified source coverage: 2/3 (66.7%)
+- confidence: `low` (verified_sources, score 0.48)
+- verified source coverage: 1/2 (50.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: partial_source_verification
 - source-title match: `weak`
@@ -331,10 +241,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 20. Vikings: Exploration and Culture
+### 14. Volleyball Fundamentals
 
-- canonical slug: `history/vikings-exploration-and-culture`
-- canonical URL: https://anchorfact.org/history/vikings-exploration-and-culture/
+- canonical slug: `sports/volleyball-fundamentals`
+- canonical URL: https://anchorfact.org/sports/volleyball-fundamentals/
 - bucket: `risk_fallback`
 - confidence: `low` (verified_sources, score 0.43)
 - verified source coverage: 1/1 (100.0%)
@@ -345,6 +255,96 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - title-summary accuracy: `pass`
 - hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
+
+### 15. Plate Tectonics
+
+- canonical slug: `science/plate-tectonics`
+- canonical URL: https://anchorfact.org/science/plate-tectonics/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.82)
+- verified source coverage: 2/2 (100.0%)
+- claims: 6 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
+
+### 16. Gradient Descent and Optimization
+
+- canonical slug: `ai/gradient-descent`
+- canonical URL: https://anchorfact.org/ai/gradient-descent/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.72)
+- verified source coverage: 2/2 (100.0%)
+- claims: 5 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
+
+### 17. Reinforcement Learning
+
+- canonical slug: `ai/reinforcement-learning`
+- canonical URL: https://anchorfact.org/ai/reinforcement-learning/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.72)
+- verified source coverage: 2/2 (100.0%)
+- claims: 5 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
+
+### 18. Tokenization in NLP
+
+- canonical slug: `ai/tokenization-in-nlp`
+- canonical URL: https://anchorfact.org/ai/tokenization-in-nlp/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.76)
+- verified source coverage: 3/3 (100.0%)
+- claims: 5 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
+
+### 19. Digital Art
+
+- canonical slug: `arts/digital-art`
+- canonical URL: https://anchorfact.org/arts/digital-art/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.62)
+- verified source coverage: 3/3 (100.0%)
+- claims: 5 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
+
+### 20. PHP Language
+
+- canonical slug: `computer-science/php-language`
+- canonical URL: https://anchorfact.org/computer-science/php-language/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.62)
+- verified source coverage: 5/5 (100.0%)
+- claims: 5 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
 
 ## Rule Calibration
 

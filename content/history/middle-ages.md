@@ -4,8 +4,8 @@ title: Middle Ages
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
@@ -16,63 +16,60 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-history-01
-    statement: The Middle Ages were the period between the fall of the Western Roman Empire and the Renaissance
-    source_title: The Civilization of the Renaissance in Italy
-    source_url: https://www.britannica.com/topic/The-Civilization-of-the-Renaissance-in-Italy
-    confidence: high
+    statement: >-
+      Britannica describes the early Middle Ages as extending from the fall of Rome to about the year 1000, followed by
+      later medieval developments before the Renaissance.
+    source_title: Middle Ages | Britannica
+    source_url: https://www.britannica.com/event/Middle-Ages
+    confidence: medium
   - id: fact-history-02
-    statement: "High Middle Ages : population growth, trade revival, Gothic cathedrals"
-    source_title: "A Distant Mirror: The Calamitous 14th Century (Barbara Tuchman)"
-    source_url: https://www.penguinrandomhouse.com/books/56336/a-distant-mirror-by-barbara-w-tuchman/
-    confidence: high
+    statement: >-
+      Britannica identifies feudalism as a medieval social system associated with relationships between lords and
+      vassals.
+    source_title: Feudalism | Britannica
+    source_url: https://www.britannica.com/topic/feudalism
+    confidence: medium
+  - id: fact-history-03
+    statement: Britannica dates the Black Death in medieval Europe to 1347 through 1351 and identifies it as a plague pandemic.
+    source_title: Black Death | Britannica
+    source_url: https://www.britannica.com/event/Black-Death
+    confidence: medium
 completeness: 0.88
 known_gaps:
-  - Statistics and data cited are from 1978 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The characterization of the Middle Ages as a 'Dark Age' is rejected by most modern historians, who emphasize intellectual, artistic, and technological continuity, though debate continues about
-      the pace of progress relative to other periods
+  - This public article was narrowed to source-mapped claims during a targeted evidence repair pass.
+disputed_statements: []
 primary_sources:
-  - title: "A Distant Mirror: The Calamitous 14th Century (Barbara Tuchman)"
-    type: book
-    year: 1978
-    url: https://www.penguinrandomhouse.com/books/56336/a-distant-mirror-by-barbara-w-tuchman/
-    institution: Knopf
-  - title: "The Middle Ages: A Very Short Introduction (2025)"
-    type: book
-    year: 2025
-    authors:
-      - Rubin M.
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-middle-ages/
-  - title: Medieval Europe (2025 Edition)
-    type: book
-    year: 2025
-    authors:
-      - Wickham C.
-    institution: Yale University Press
-    url: https://yalebooks.yale.edu/medieval-europe/
-secondary_sources:
-  - title: The Civilization of the Renaissance in Italy
-    type: book
-    year: 1860
-    url: https://www.britannica.com/topic/The-Civilization-of-the-Renaissance-in-Italy
-    institution: Jacob Burckhardt
-  - title: The Penguin History of the World (J.M. Roberts)
-    type: textbook
-    year: 2014
-    url: https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    institution: Penguin Books
+  - title: Middle Ages | Britannica
+    type: encyclopedia
+    year: 2026
+    url: https://www.britannica.com/event/Middle-Ages
+    institution: Encyclopaedia Britannica
+  - title: Feudalism | Britannica
+    type: encyclopedia
+    year: 2026
+    url: https://www.britannica.com/topic/feudalism
+    institution: Encyclopaedia Britannica
+  - title: Black Death | Britannica
+    type: encyclopedia
+    year: 2026
+    url: https://www.britannica.com/event/Black-Death
+    institution: Encyclopaedia Britannica
+secondary_sources: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
 
-The Middle Ages (5th-15th centuries) were the period between the fall of the Western Roman Empire and the Renaissance. Often wrongly called 'Dark Ages,' it saw feudalism, manorialism, the rise of Christianity, Gothic cathedrals, universities (Bologna 1088, Oxford 1096), and the Crusades.
+This Middle Ages entry is narrowed to three Britannica-backed anchors: the broad period framing, feudalism as a medieval social system, and the Black Death as a 1347-1351 plague pandemic in Europe.
 
-## Core Explanation
+## Evidence Notes
 
-Feudalism: lords grant land (fiefs) to vassals in exchange for military service. Manorialism: self-sufficient agricultural estates. Key events: Battle of Hastings (1066, Norman conquest of England), Magna Carta (1215, limits on royal power), Black Death (1347-51, killed 30-60% of Europe), Hundred Years' War (1337-1453). High Middle Ages (1000-1300): population growth, trade revival, Gothic cathedrals.
+- Britannica anchors the period framing.
+- Britannica's feudalism entry anchors the social-system claim.
+- Britannica's Black Death entry anchors the plague-pandemic date claim.
 
 ## Further Reading
 
-- [A Distant Mirror: The Calamitous 14th Century (Barbara Tuchman)](https://www.penguinrandomhouse.com/books/56336/a-distant-mirror-by-barbara-w-tuchman/)
+- [Middle Ages | Britannica](https://www.britannica.com/event/Middle-Ages)
+- [Feudalism | Britannica](https://www.britannica.com/topic/feudalism)
+- [Black Death | Britannica](https://www.britannica.com/event/Black-Death)

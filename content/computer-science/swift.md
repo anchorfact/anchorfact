@@ -1,80 +1,75 @@
 ---
-id: "kb-2026-00080"
-title: "Swift Programming Language"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00080
+title: Swift Programming Language
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "Swift is a general-purpose, compiled programming language developed by Apple, first announced at WWDC 2014 and open-sourced in December 2015"
-    source_title: "The Swift Programming Language (Swift 5.10)"
-    source_url: "https://docs.swift.org/swift-book/"
-    confidence: "medium"
-  - id: "fact-computer-science-02"
-    statement: "It is the primary language for iOS, macOS, watchOS, and visionOS app development, and is increasingly used for server-side development via the Vapor framework"
-    source_title: "The Swift Programming Language (Swift 5.10)"
-    source_url: "https://docs.swift.org/swift-book/"
-    confidence: "medium"
-
+  - id: fact-computer-science-01
+    statement: >-
+      Swift is a general-purpose programming language suitable for systems programming, mobile and desktop apps, and
+      cloud services.
+    source_title: About Swift | Swift.org
+    source_url: https://www.swift.org/about/
+    confidence: medium
+  - id: fact-computer-science-02
+    statement: >-
+      Swift.org describes The Swift Programming Language book as the authoritative Swift reference, including a guided
+      tour, language guide, and formal reference.
+    source_title: Documentation | Swift.org
+    source_url: https://www.swift.org/documentation/
+    confidence: medium
+  - id: fact-computer-science-03
+    statement: >-
+      The Swift project published Swift, supporting libraries, debugger, and package manager under an open-source
+      license on December 3, 2015.
+    source_title: About Swift | Swift.org
+    source_url: https://www.swift.org/about/
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - This public article was narrowed to source-mapped claims during a targeted evidence repair pass.
+disputed_statements: []
 primary_sources:
-  - title: "Swift.org Documentation"
-    type: "documentation"
+  - title: About Swift | Swift.org
+    type: documentation
     year: 2026
-    url: "https://swift.org/documentation/"
-    institution: "Apple Inc."
-  - title: "Swift GitHub Repository"
-    type: "repository"
-    url: "https://github.com/swiftlang/swift"
-    institution: "GitHub"
-
-secondary_sources:
-  - title: "The Swift Programming Language (Swift 5.10)"
-    type: "documentation"
-    year: 2024
-    url: "https://docs.swift.org/swift-book/"
-    institution: "Apple"
-
+    url: https://www.swift.org/about/
+    institution: Swift.org
+  - title: Documentation | Swift.org
+    type: documentation
+    year: 2026
+    url: https://www.swift.org/documentation/
+    institution: Swift.org
+  - title: The Swift Programming Language
+    type: documentation
+    year: 2026
+    url: https://docs.swift.org/swift-book/documentation/the-swift-programming-language/
+    institution: Swift.org
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
 
 ## TL;DR
 
-Swift is a general-purpose, compiled programming language developed by Apple, first announced at WWDC 2014 and open-sourced in December 2015. Designed as a modern replacement for Objective-C, Swift combines safety (optionals, strong typing, automatic memory management via ARC) with performance (LLVM-based compilation). It is the primary language for iOS, macOS, watchOS, and visionOS app development, and is increasingly used for server-side development via the Vapor framework.
+Swift is a general-purpose programming language documented by Swift.org for systems programming, app development, and cloud services. Its public documentation points to The Swift Programming Language as the authoritative language reference, and the project has been open source since December 2015.
 
-## Key Features
+## Evidence Notes
 
-- **Optionals**: Explicit handling of nil — `var name: String?`
-- **Protocol-Oriented Programming**: Prefer composition over inheritance
-- **Value Types**: Structs and enums are value types (copy semantics) by default
-- **ARC**: Automatic Reference Counting — deterministic memory management without GC
-- **Async/Await** (Swift 5.5, 2021): Native structured concurrency
-- **SwiftUI** (2019): Declarative UI framework for all Apple platforms
-- **Swift 6** (2024): Full data-race safety via Sendable and actor isolation
+- Swift.org defines Swift's general-purpose scope and open-source project history.
+- Swift.org documentation identifies the official language reference.
+- The Swift language book is the project-maintained reference for language details.
 
 ## Further Reading
 
-- [Swift.org](https://swift.org/): Official documentation and downloads
-- [Swift GitHub](https://github.com/swiftlang/swift): Source code
-
-## Related Articles
-
-- [C++ Programming Language](../c++-language.md)
-- [C Programming Language](../c-language.md)
-- [Go Programming Language](../go-language.md)
+- [About Swift | Swift.org](https://www.swift.org/about/)
+- [Documentation | Swift.org](https://www.swift.org/documentation/)
+- [The Swift Programming Language](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/)

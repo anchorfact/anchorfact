@@ -1,87 +1,71 @@
 ---
-id: "kb-2026-00079"
-title: "YAML (YAML Ain't Markup Language)"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00079
+title: YAML (YAML Ain't Markup Language)
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "YAML is a human-readable data serialization format created by Clark Evans in 2001"
-    source_title: "YAML Specification v1.2.2"
-    source_url: "https://yaml.org/spec/1.2.2/"
-    confidence: "medium"
-  - id: "fact-computer-science-02"
-    statement: "It uses indentation for structure and is the dominant configuration format for DevOps tools"
-    source_title: "YAML Specification v1.2.2"
-    source_url: "https://yaml.org/spec/1.2.2/"
-    confidence: "medium"
-
+  - id: fact-computer-science-01
+    statement: YAML 1.2.2 defines YAML as a human-friendly data serialization language for common native data structures.
+    source_title: YAML Ain't Markup Language (YAML) revision 1.2.2
+    source_url: https://yaml.org/spec/1.2.2/
+    confidence: medium
+  - id: fact-computer-science-02
+    statement: >-
+      The YAML 1.2.1 specification states that YAML 1.2 aligned YAML with JSON as an official subset and changed
+      implicit typing rules from YAML 1.1.
+    source_title: YAML Ain't Markup Language (YAML) Version 1.2
+    source_url: https://yaml.org/spec/1.2.1/
+    confidence: medium
+  - id: fact-computer-science-03
+    statement: The YAML information model represents data using mappings, sequences, and scalars.
+    source_title: YAML Ain't Markup Language (YAML) revision 1.2.2
+    source_url: https://yaml.org/spec/1.2.2/
+    confidence: medium
 completeness: 0.8
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
-
+  - This public article was narrowed to source-mapped claims during a targeted evidence repair pass.
+disputed_statements: []
 primary_sources:
-  - title: "YAML Specification v1.2.2"
-    type: "standard"
+  - title: YAML Ain't Markup Language (YAML) revision 1.2.2
+    type: standard
     year: 2021
-    url: "https://yaml.org/spec/1.2.2/"
-    institution: "Yaml"
-
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "Pro Git (2nd Ed)"
-    authors: ["Chacon", "Straub"]
-    type: "book"
-    year: 2014
-    url: "https://git-scm.com/book/en/v2"
-    institution: "Apress"
-
+    url: https://yaml.org/spec/1.2.2/
+    institution: YAML Language Development Team
+  - title: YAML Ain't Markup Language (YAML) Version 1.2
+    type: standard
+    year: 2009
+    url: https://yaml.org/spec/1.2.1/
+    institution: YAML Language Development Team
+  - title: YAML Ain't Markup Language (YAML) Version 1.1
+    type: standard
+    year: 2005
+    url: https://yaml.org/spec/1.1/current.html
+    institution: YAML Language Development Team
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
 
 ## TL;DR
 
-YAML is a human-readable data serialization format created by Clark Evans in 2001. It uses indentation for structure (like Python) and is the dominant configuration format for DevOps tools (Docker Compose, Kubernetes, Ansible, GitHub Actions, CI/CD pipelines). YAML v1.2.2 (2021) is the current specification.
+YAML is a human-friendly data serialization language whose information model uses mappings, sequences, and scalars. The article now relies on YAML specifications rather than unrelated web or AI sources.
 
-## Key Characteristics
+## Evidence Notes
 
-- **Indentation-based**: No braces or brackets — whitespace defines structure
-- **Three basic types**: Scalars (strings, numbers, booleans), sequences (`- item`), mappings (`key: value`)
-- **Comments**: `#` for inline comments (unlike JSON)
-- **Anchors & Aliases**: `&anchor` / `*alias` for reusing values
-- **Multi-document**: `---` separates documents, `...` terminates
-
-## Gotchas
-
-- Norway problem: `no` parses as `false` in YAML 1.1; fixed in 1.2
-- Indentation must use spaces, not tabs
-- Complex YAML degrades readability quickly
+- YAML 1.2.2 anchors the current definition and data model.
+- YAML 1.2.1 documents the JSON-alignment change from earlier behavior.
+- YAML 1.1 remains included only as version-history evidence.
 
 ## Further Reading
 
-- [YAML Spec v1.2.2](https://yaml.org/spec/1.2.2/): Current specification
-- [yaml.org](https://yaml.org/): Official site
-
-## Related Articles
-
-- [AI for Code Translation: Language Migration, Legacy Modernization, and Transpilation](../../ai/ai-code-translation.md)
-- [AI for Accessibility: Assistive Technologies, Sign Language Recognition, and Inclusive Systems](../../ai/ai-for-accessibility.md)
-- [AI for Language Learning: Intelligent Tutoring, Speech Assessment, and Personalized Curriculum](../../ai/ai-for-language-learning.md)
+- [YAML 1.2.2 specification](https://yaml.org/spec/1.2.2/)
+- [YAML 1.2.1 specification](https://yaml.org/spec/1.2.1/)
+- [YAML 1.1 specification](https://yaml.org/spec/1.1/current.html)

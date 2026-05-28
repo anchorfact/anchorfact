@@ -1,79 +1,77 @@
 ---
-id: "kb-2026-00485"
+id: kb-2026-00485
 title: "Vikings: Exploration and Culture"
-schema_type: "TechArticle"
-category: "history"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+schema_type: TechArticle
+category: history
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-history-01"
-    statement: "Vikings were Scandinavian seafarers who explored, traded, and raided across Europe, reaching North America 1000 CE — 500 years before Columbus"
-    source_title: "The Vikings: A History (Robert Ferguson)"
-    source_url: "https://www.penguinrandomhouse.com/books/302917/the-vikings-by-robert-ferguson/"
-    confidence: "high"
-  - id: "fact-history-02"
-    statement: "Women: more rights than most contemporary cultures — own property, divorce, run farms while men raided"
-    source_title: "The Vikings: A History (Robert Ferguson)"
-    source_url: "https://www.penguinrandomhouse.com/books/302917/the-vikings-by-robert-ferguson/"
-    confidence: "high"
-
+  - id: fact-history-01
+    statement: >-
+      Britannica describes Vikings as Scandinavian seafaring raiders, traders, explorers, and colonizers active mainly
+      from the 9th to the 11th century.
+    source_title: Viking | Britannica
+    source_url: https://www.britannica.com/topic/Viking-people
+    confidence: medium
+  - id: fact-history-02
+    statement: >-
+      UNESCO describes L Anse aux Meadows as an 11th-century Norse settlement at the tip of Newfoundland that provides
+      evidence of early European presence in North America.
+    source_title: L'Anse aux Meadows National Historic Site | UNESCO World Heritage Centre
+    source_url: https://whc.unesco.org/en/list/4/
+    confidence: medium
+  - id: fact-history-03
+    statement: >-
+      The National Museum of Denmark describes Viking ships as central to Viking travel, trade, and warfare across seas
+      and rivers.
+    source_title: "The Viking Age: The Ships | National Museum of Denmark"
+    source_url: https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/the-ships/
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Statistics and data cited are from 2023 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - This public article was narrowed to source-mapped claims during a targeted evidence repair pass.
+disputed_statements: []
 primary_sources:
-  - title: "The Vikings: A History (Robert Ferguson)"
-    type: "book"
-    year: 2009
-    url: "https://www.penguinrandomhouse.com/books/302917/the-vikings-by-robert-ferguson/"
-    institution: "Penguin"
-
-secondary_sources:
-  - title: "QLoRA: Efficient Finetuning of Quantized Language Models"
-    authors: ["Dettmers"]
-    type: "academic_paper"
-    year: 2023
-    url: "https://arxiv.org/abs/2305.14314"
-    doi: "10.48550/arXiv.2305.14314"
-    institution: "arXiv"
-  - title: "The Penguin History of the World (J.M. Roberts)"
-    type: "textbook"
-    year: 2014
-    url: "https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
-    institution: "Penguin Books"
-
+  - title: Viking | Britannica
+    type: encyclopedia
+    year: 2026
+    url: https://www.britannica.com/topic/Viking-people
+    institution: Encyclopaedia Britannica
+  - title: L'Anse aux Meadows National Historic Site | UNESCO World Heritage Centre
+    type: heritage_site
+    year: 2026
+    url: https://whc.unesco.org/en/list/4/
+    institution: UNESCO
+  - title: "The Viking Age: The Ships | National Museum of Denmark"
+    type: museum_reference
+    year: 2026
+    url: https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/the-ships/
+    institution: National Museum of Denmark
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
 
 ## TL;DR
 
-Vikings (Norse: víkingr = raider/pirate) were Scandinavian seafarers (8th-11th centuries) who explored, traded, and raided across Europe, reaching North America ~1000 CE — 500 years before Columbus. Beyond the raiding stereotype: skilled traders, craftsmen, shipbuilders, and storytellers. Runestones and sagas preserve their history.
+The Vikings entry is narrowed to directly supported claims about Scandinavian seafaring activity, Norse settlement evidence in Newfoundland, and the role of ships in Viking mobility.
 
-## Core Explanation
+## Evidence Notes
 
-Society: jarls (nobles), karls (freemen), thralls (slaves). Women: more rights than most contemporary cultures — own property, divorce, run farms while men raided. Norse gods: Odin (wisdom, war), Thor (thunder, protection), Freyja (love, fertility). Ragnarok: prophecy of the end of the world. Longship: clinker-built (overlapping planks), flexible, shallow draft — the technological advantage that enabled Viking reach. Runestones: memorial stones with inscriptions — 'Tola had this stone raised for her son Harald.'
+- Britannica anchors the broad people-and-period description.
+- UNESCO anchors the North American settlement evidence.
+- The National Museum of Denmark anchors the ship-technology and mobility context.
 
 ## Further Reading
 
-- [The Vikings: A History (Robert Ferguson)](https://www.penguinrandomhouse.com/books/302917/the-vikings-by-robert-ferguson/)
-
-## Related Articles
-
-- [AI for Oil and Gas Exploration: Seismic Interpretation, Reservoir Characterization, and Subsurface Intelligence](../../ai/ai-for-oil-gas-exploration.md)
-- [AI for Space Exploration: Autonomous Navigation, Earth Observation, and Spacecraft Autonomy](../../ai/ai-for-space-exploration.md)
-- [Coffee Culture](../../arts/coffee-culture.md)
+- [Viking | Britannica](https://www.britannica.com/topic/Viking-people)
+- [L'Anse aux Meadows National Historic Site | UNESCO World Heritage Centre](https://whc.unesco.org/en/list/4/)
+- [The Viking Age: The Ships | National Museum of Denmark](https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/the-ships/)
