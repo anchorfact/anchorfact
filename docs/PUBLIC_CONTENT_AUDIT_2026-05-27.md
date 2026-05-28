@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T11:08:02.956Z
+Generated: 2026-05-28T11:14:52.332Z
 
-Snapshot: 555 public / 445 draft / 1650 claims.
+Snapshot: 555 public / 445 draft / 1660 claims.
 
 ## Summary
 
@@ -11,9 +11,9 @@ This is a risk-weighted audit sample of public AnchorFact articles. It is intend
 - Sample size: 20
 - Low verified coverage samples: 1
 - Articles with at least one fail check: 0
-- High-confidence samples needing review: 1
+- High-confidence samples needing review: 0
 - Claim-evidence failures: 0
-- Recommendations: keep_public: 10, downgrade_confidence: 1, repair_sources: 9, move_to_draft: 0
+- Recommendations: keep_public: 10, downgrade_confidence: 0, repair_sources: 10, move_to_draft: 0
 
 ## Method
 
@@ -29,20 +29,20 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 4 | high_confidence | `ai/ai-in-healthcare` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 5 | high_confidence | `ai/ai-red-teaming-and-safety` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 6 | medium_capped_claims | `business/strategic-management-theory` | medium | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 7 | medium_capped_claims | `ai/multi-agent-reinforcement-learning` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 8 | medium_capped_claims | `ai/multimodal-search` | medium | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 9 | medium_capped_claims | `ai/program-synthesis-verification` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 7 | medium_capped_claims | `ai/quantum-machine-learning` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 8 | medium_capped_claims | `ai/swarm-evolutionary-intelligence` | medium | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 9 | medium_capped_claims | `ai/text-classification` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
 | 10 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 12 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 13 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 14 | risk_fallback | `computer-science/bun-runtime` | low | 3/5 (60.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 15 | risk_fallback | `computer-science/eslint` | low | 2/4 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 16 | risk_fallback | `computer-science/responsive-web-design` | low | 2/3 (66.7%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 17 | risk_fallback | `computer-science/webassembly` | high | 4/8 (50.0%) | 2 | source=weak; claim=pass; summary=pass | downgrade_confidence |
-| 18 | risk_fallback | `game-development/godot-engine` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 19 | risk_fallback | `game-development/pathfinding-algorithms-in-games` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 20 | risk_fallback | `game-development/real-time-strategy-rts-game-design` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 14 | risk_fallback | `game-development/tilemap-system` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 15 | risk_fallback | `game-development/unity-engine` | low | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 16 | risk_fallback | `game-development/visual-novel-design` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 17 | risk_fallback | `geography/climate-zones` | low | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 18 | risk_fallback | `health/meditation-and-mindfulness` | low | 2/4 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 19 | risk_fallback | `science/climate-change-solutions` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 20 | risk_fallback | `sports/sports-psychology` | low | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
 
 ## Article Findings
 
@@ -136,12 +136,12 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 7. Multi-Agent Reinforcement Learning: Cooperation, Competition, and Emergent Strategies
+### 7. Quantum Machine Learning: Tensor Networks, QNNs, and Error Mitigation
 
-- canonical slug: `ai/multi-agent-reinforcement-learning`
-- canonical URL: https://anchorfact.org/ai/multi-agent-reinforcement-learning/
+- canonical slug: `ai/quantum-machine-learning`
+- canonical URL: https://anchorfact.org/ai/quantum-machine-learning/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.74)
+- confidence: `medium` (verified_sources, score 0.73)
 - verified source coverage: 1/2 (50.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: partial_source_verification
@@ -151,12 +151,12 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 8. Multimodal Search: Cross-Modal Retrieval, Product Search, and Multimodal Embeddings
+### 8. Swarm and Evolutionary Intelligence: Genetic Algorithms, NEAT, and Particle Swarms
 
-- canonical slug: `ai/multimodal-search`
-- canonical URL: https://anchorfact.org/ai/multimodal-search/
+- canonical slug: `ai/swarm-evolutionary-intelligence`
+- canonical URL: https://anchorfact.org/ai/swarm-evolutionary-intelligence/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.79)
+- confidence: `medium` (verified_sources, score 0.78)
 - verified source coverage: 2/2 (100.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: none
@@ -166,10 +166,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 9. Program Synthesis and Formal Verification: Neural Theorem Proving with LLMs
+### 9. Text Classification: Zero-Shot, Few-Shot, and LLM-Based Document Categorization
 
-- canonical slug: `ai/program-synthesis-verification`
-- canonical URL: https://anchorfact.org/ai/program-synthesis-verification/
+- canonical slug: `ai/text-classification`
+- canonical URL: https://anchorfact.org/ai/text-classification/
 - bucket: `medium_capped_claims`
 - confidence: `medium` (verified_sources, score 0.74)
 - verified source coverage: 1/2 (50.0%)
@@ -241,25 +241,70 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 14. Bun Runtime
+### 14. Tilemap System
 
-- canonical slug: `computer-science/bun-runtime`
-- canonical URL: https://anchorfact.org/computer-science/bun-runtime/
+- canonical slug: `game-development/tilemap-system`
+- canonical URL: https://anchorfact.org/game-development/tilemap-system/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.55)
-- verified source coverage: 3/5 (60.0%)
+- confidence: `low` (verified_sources, score 0.53)
+- verified source coverage: 1/1 (100.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification
-- source-title match: `weak`
+- quality reasons: generic_source_homepage
+- source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
+- hygiene flags: generic_source_homepage
 - recommendation: `repair_sources`
 
-### 15. ESLint
+### 15. Unity Game Engine
 
-- canonical slug: `computer-science/eslint`
-- canonical URL: https://anchorfact.org/computer-science/eslint/
+- canonical slug: `game-development/unity-engine`
+- canonical URL: https://anchorfact.org/game-development/unity-engine/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.56)
+- verified source coverage: 2/2 (100.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: generic_source_homepage
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_source_homepage
+- recommendation: `repair_sources`
+
+### 16. Visual Novel Design
+
+- canonical slug: `game-development/visual-novel-design`
+- canonical URL: https://anchorfact.org/game-development/visual-novel-design/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.53)
+- verified source coverage: 1/1 (100.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: generic_source_homepage
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_source_homepage
+- recommendation: `repair_sources`
+
+### 17. Climate Zones
+
+- canonical slug: `geography/climate-zones`
+- canonical URL: https://anchorfact.org/geography/climate-zones/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.56)
+- verified source coverage: 2/2 (100.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: generic_source_homepage
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_source_homepage
+- recommendation: `repair_sources`
+
+### 18. Meditation and Mindfulness
+
+- canonical slug: `health/meditation-and-mindfulness`
+- canonical URL: https://anchorfact.org/health/meditation-and-mindfulness/
 - bucket: `risk_fallback`
 - confidence: `low` (verified_sources, score 0.55)
 - verified source coverage: 2/4 (50.0%)
@@ -271,42 +316,12 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 16. Responsive Web Design
+### 19. Climate Change Solutions
 
-- canonical slug: `computer-science/responsive-web-design`
-- canonical URL: https://anchorfact.org/computer-science/responsive-web-design/
+- canonical slug: `science/climate-change-solutions`
+- canonical URL: https://anchorfact.org/science/climate-change-solutions/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.55)
-- verified source coverage: 2/3 (66.7%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 17. WebAssembly (Wasm) 3.0
-
-- canonical slug: `computer-science/webassembly`
-- canonical URL: https://anchorfact.org/computer-science/webassembly/
-- bucket: `risk_fallback`
-- confidence: `high` (verified_sources, score 0.87)
-- verified source coverage: 4/8 (50.0%)
-- claims: 2 total, 0 capped, 0 missing evidence
-- quality reasons: partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `downgrade_confidence`
-
-### 18. Godot Engine
-
-- canonical slug: `game-development/godot-engine`
-- canonical URL: https://anchorfact.org/game-development/godot-engine/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.53)
+- confidence: `low` (verified_sources, score 0.45)
 - verified source coverage: 1/1 (100.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: generic_source_homepage
@@ -316,28 +331,13 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_source_homepage
 - recommendation: `repair_sources`
 
-### 19. Pathfinding Algorithms in Games
+### 20. Sports Psychology Fundamentals
 
-- canonical slug: `game-development/pathfinding-algorithms-in-games`
-- canonical URL: https://anchorfact.org/game-development/pathfinding-algorithms-in-games/
+- canonical slug: `sports/sports-psychology`
+- canonical URL: https://anchorfact.org/sports/sports-psychology/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.53)
-- verified source coverage: 1/1 (100.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: generic_source_homepage
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_source_homepage
-- recommendation: `repair_sources`
-
-### 20. Real-Time Strategy (RTS) Game Design
-
-- canonical slug: `game-development/real-time-strategy-rts-game-design`
-- canonical URL: https://anchorfact.org/game-development/real-time-strategy-rts-game-design/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.53)
-- verified source coverage: 1/1 (100.0%)
+- confidence: `low` (verified_sources, score 0.57)
+- verified source coverage: 2/2 (100.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: generic_source_homepage
 - source-title match: `pass`

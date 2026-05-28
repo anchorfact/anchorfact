@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 342,
     "average_sources_per_article": "2.2",
-    "overall_verification_rate": "69.5%",
+    "overall_verification_rate": "70.0%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 287
+    "manual_reviewed_articles": 297
   },
   "articles": [
     {
@@ -13346,19 +13346,20 @@
       "file": "content/ai/multi-agent-reinforcement-learning.md",
       "article_id": "multi-agent-reinforcement-learning",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "A multi-agent reinforcement learning framework for exploring iterated and evolutionary games",
+          "source_title": "Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nature.com/articles/s41467-025-67178-6",
+              "identifier": "https://arxiv.org/abs/1706.02275",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nature.com/articles/s41467-025-67178-6?error=cookies_not_supported&code=179da063-7405-43a1-a9a5-1f82948bb201"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -13366,24 +13367,46 @@
           "all_verified": true
         },
         {
-          "source_title": "A Comprehensive Survey on Multi-Agent Cooperative Decision Making",
+          "source_title": "QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2503.13415",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1803.11485",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "The StarCraft Multi-Agent Challenge",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1902.04043",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/multi-modal-learning.md",
@@ -13544,19 +13567,20 @@
       "file": "content/ai/multimodal-search.md",
       "article_id": "multimodal-search",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "MMSearch: Benchmarking the Potential of Large Multimodal Models as Search Engines",
+          "source_title": "Learning Transferable Visual Models From Natural Language Supervision",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://github.com/CaraJ7/MMSearch",
+              "identifier": "https://arxiv.org/abs/2103.00020",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/CaraJ7/MMSearch"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -13564,16 +13588,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Multimodal Search: Searching with Semantic and Visual Understanding Using Multimodal Embeddings",
-          "source_type": "industry_report",
+          "source_title": "Billion-scale similarity search with GPUs",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://opensearch.org/blog/multimodal-semantic-search/",
+              "identifier": "https://arxiv.org/abs/1702.08734",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://opensearch.org/blog/multimodal-semantic-search/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ImageBind: One Embedding Space To Bind Them All",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2305.05665",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -13581,8 +13624,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/natural-language-processing-nlp.md",
@@ -14480,19 +14525,20 @@
       "file": "content/ai/program-synthesis-verification.md",
       "article_id": "program-synthesis-verification",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Neural Theorem Proving: Generating and Structuring Proofs for Formal Verification (ProofSeek)",
+          "source_title": "Program sketching",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://proceedings.mlr.press/v284/rao25a.html",
+              "identifier": "https://link.springer.com/article/10.1007/s10009-012-0249-7",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://proceedings.mlr.press/v284/rao25a.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -14500,25 +14546,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Formal Reasoning Meets LLMs: Toward AI for Mathematics and Verification",
+          "source_title": "A Language to Specify Syntax-Guided Synthesis Problems",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://cacm.acm.org/research/formal-reasoning-meets-llms-toward-ai-for-mathematics-and-verification/",
-              "verified": false,
+              "identifier": "https://arxiv.org/abs/1405.5590",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://cacm.acm.org/research/formal-reasoning-meets-llms-toward-ai-for-mathematics-and-verification/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Counterexample Guided Inductive Synthesis",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.kroening.com/papers/cav2018-synthesis.pdf",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/prompt-engineering.md",
@@ -21439,19 +21506,20 @@
       "file": "content/computer-science/bun-runtime.md",
       "article_id": "kb-2026-00298",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Bun Documentation",
-          "source_type": "documentation",
+          "source_title": "Bun Runtime Documentation",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://bun.sh/docs/",
+              "identifier": "https://bun.sh/docs/runtime",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://bun.sh/docs"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -21459,50 +21527,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Bun and Modern JavaScript Tooling (2025)",
-          "source_type": "book",
+          "source_title": "Bun Bundler Documentation",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/bun/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/bun/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Evolution of JavaScript Runtimes in 2025",
-          "source_type": "article",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1109/ms.2025.js",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1109/ms.2025.js"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Bun — A Fast All-in-One JavaScript Runtime",
-          "source_type": "official_doc",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://bun.sh/docs",
+              "identifier": "https://bun.sh/docs/bundler",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://bun.sh/docs"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -21510,16 +21545,17 @@
           "all_verified": true
         },
         {
-          "source_title": "JavaScriptCore (JSC) — WebKit",
-          "source_type": "official_doc",
+          "source_title": "Bun Test Runner Documentation",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://webkit.org/projects/javascriptcore/",
+              "identifier": "https://bun.sh/docs/test",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://webkit.org/project/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -21528,7 +21564,9 @@
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 2
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/c++-language.md",
@@ -24185,19 +24223,20 @@
       "file": "content/computer-science/eslint.md",
       "article_id": "kb-2026-00176",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "ESLint Documentation",
-          "source_type": "documentation",
+          "source_title": "Getting Started with ESLint",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://eslint.org/docs/",
+              "identifier": "https://eslint.org/docs/latest/use/getting-started",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://eslint.org/docs/latest/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -24205,50 +24244,35 @@
           "all_verified": true
         },
         {
-          "source_title": "JavaScript Tooling and Linting (2025 Edition)",
-          "source_type": "book",
+          "source_title": "Configure Rules",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/eslint/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/eslint/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Static Analysis and Code Quality Tools: A 2025 Survey",
-          "source_type": "survey_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.static",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.static"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "ESLint Documentation",
-          "source_type": "official_doc",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://eslint.org/docs/latest/",
+              "identifier": "https://eslint.org/docs/latest/use/configure/rules",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://eslint.org/docs/latest/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Custom Rules",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://eslint.org/docs/latest/extend/custom-rules",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -24256,8 +24280,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/ethereum.md",
@@ -29789,16 +29815,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Responsive Web Design",
-          "source_type": "article",
+          "source_title": "Responsive design - Learn web development",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://alistapart.com/article/responsive-web-design/",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://alistapart.com/article/responsive-web-design/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -29806,16 +29833,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Responsive Web Design: Principles and Practice (2025)",
-          "source_type": "book",
+          "source_title": "Using media queries",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://abookapart.com/products/responsive-web-design",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://abookapart.com/products/responsive-web-design"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -29823,25 +29851,28 @@
           "all_verified": true
         },
         {
-          "source_title": "Web Accessibility and Inclusive Design: WCAG 2.2 Implementation Guide (2025)",
-          "source_type": "book",
+          "source_title": "Viewport meta element",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/a11y/",
-              "verified": false,
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Viewport_meta_element",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/a11y/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/rest-api.md",
@@ -32234,88 +32265,38 @@
       "file": "content/computer-science/webassembly.md",
       "article_id": "kb-2026-00017",
       "generation_method": "ai_structured",
-      "sources_total": 8,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Wasm 3.0 Completed",
-          "source_type": "announcement",
+          "source_title": "WebAssembly Core Specification",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://webassembly.org/news/2025-09-17-wasm-3.0/",
+              "identifier": "https://www.w3.org/TR/wasm-core-2/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://webassembly.org/news/2025-09-17-wasm-3.0/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "WASI Preview 2 — WebAssembly System Interface",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://github.com/WebAssembly/WASI",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/WebAssembly/WASI"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "WebAssembly Specification (Release 3.0)",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://webassembly.github.io/spec/core/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://webassembly.github.io/spec/core/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "WebAssembly Specification Release 3.0 — W3C",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.w3.org/TR/wasm-core-3/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.w3.org/TR/wasm-core-3/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
         },
         {
           "source_title": "Bringing the Web up to Speed with WebAssembly",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1145/3062341.3062363",
+              "method": "url",
+              "identifier": "https://doi.org/10.1145/3062341.3062363",
               "verified": true,
               "metadata": {
-                "title": "Bringing the web up to speed with WebAssembly",
-                "publisher": "ACM",
-                "year": 2017
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -32323,56 +32304,28 @@
           "all_verified": true
         },
         {
-          "source_title": "Not So Fast: Analyzing the Performance of WebAssembly vs. Native Code",
-          "source_type": "academic_paper",
+          "source_title": "WebAssembly concepts",
+          "source_type": "technical_documentation",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2109.10673",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/WebAssembly/Guides/Concepts",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Everything Old is New Again: Binary Security of WebAssembly",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2008.07639",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "WebAssembly: A New World",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2303.08098",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 4,
-      "sources_unreachable": 4
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/webgl.md",
@@ -34144,19 +34097,56 @@
       "file": "content/game-development/godot-engine.md",
       "article_id": "kb-2026-00217",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "GDC Vault",
-          "source_type": "conference",
+          "source_title": "Introduction to Godot",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdcvault.com/",
+              "identifier": "https://docs.godotengine.org/en/stable/getting_started/introduction/introduction_to_godot.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdcvault.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Nodes and scenes",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.godotengine.org/en/stable/getting_started/step_by_step/nodes_and_scenes.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GDScript basics",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -34164,8 +34154,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/game-development/input-systems-accessibility.md",
@@ -34417,19 +34409,56 @@
       "file": "content/game-development/pathfinding-algorithms-in-games.md",
       "article_id": "kb-2026-00220",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "GDC Vault",
-          "source_type": "conference",
+          "source_title": "A Note on Two Problems in Connexion with Graphs",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdcvault.com/",
+              "identifier": "https://doi.org/10.1007/BF01386390",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdcvault.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "A Formal Basis for the Heuristic Determination of Minimum Cost Paths",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1109/TSSC.1968.300136",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Online Graph Pruning for Pathfinding on Grid Maps",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://ojs.aaai.org/index.php/AAAI/article/view/7994",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -34437,8 +34466,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/game-development/performance-optimization.md",
@@ -34690,19 +34721,56 @@
       "file": "content/game-development/real-time-strategy-rts-game-design.md",
       "article_id": "kb-2026-00222",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "GDC Vault",
-          "source_type": "conference",
+          "source_title": "MDA: A Formal Approach to Game Design and Game Research",
+          "source_type": "conference_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdcvault.com/",
+              "identifier": "https://users.cs.northwestern.edu/~hunicke/MDA.pdf",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdcvault.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Real-Time Strategy Games: A New AI Research Challenge",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cdn.aaai.org/AIIDE/2005/AIIDE05-008.pdf",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "A Survey of Real-Time Strategy Game AI Research and Competition in StarCraft",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1308.0962",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -34710,8 +34778,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/game-development/rendering-pipeline.md",

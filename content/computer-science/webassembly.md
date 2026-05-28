@@ -4,8 +4,8 @@ title: WebAssembly (Wasm) 3.0
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: '2026-05-26'
+confidence: medium
+last_verified: '2026-05-28'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -15,148 +15,53 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-01
-    statement: >-
-      Wasm 3.0, completed on September 17, 2025 , represents the culmination of 6-8 years of specification work, adding 10 major features including 64-bit addressing, garbage collection, exception
-      handling, tail calls, and multiple memories
-    source_title: Wasm 3.0 Completed
-    source_url: https://webassembly.org/news/2025-09-17-wasm-3.0/
+  - id: af-webassembly-1
+    statement: The W3C WebAssembly Core Specification defines WebAssembly as a low-level virtual instruction set architecture.
+    source_title: WebAssembly Core Specification
+    source_url: https://www.w3.org/TR/wasm-core-2/
     confidence: medium
-  - id: fact-computer-science-02
-    statement: WebAssembly is a portable binary instruction format for stack-based virtual machines, designed as a compilation target for programming languages
-    source_title: Wasm 3.0 Completed
-    source_url: https://webassembly.org/news/2025-09-17-wasm-3.0/
+  - id: af-webassembly-2
+    statement: The original WebAssembly paper presents Wasm as a compact, safe, portable low-level code format for the web.
+    source_title: Bringing the Web up to Speed with WebAssembly
+    source_url: https://doi.org/10.1145/3062341.3062363
+    confidence: medium
+  - id: af-webassembly-3
+    statement: MDN describes WebAssembly as a compilation target for languages such as C, C++, and Rust that can run on the web.
+    source_title: WebAssembly concepts
+    source_url: https://developer.mozilla.org/en-US/docs/WebAssembly/Guides/Concepts
     confidence: medium
 completeness: 0.9
 known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - Host integration details outside the browser
+  - Runtime support differences across engines and embedding environments
+disputed_statements: []
 primary_sources:
-  - title: Wasm 3.0 Completed
-    authors:
-      - Rossberg, Andreas
-    type: announcement
-    year: 2025
-    url: https://webassembly.org/news/2025-09-17-wasm-3.0/
-    institution: WebAssembly Community Group (W3C)
-  - title: WASI Preview 2 — WebAssembly System Interface
+  - id: ps-webassembly-1
+    title: WebAssembly Core Specification
     type: standard
-    year: 2024
-    url: https://github.com/WebAssembly/WASI
-    institution: WebAssembly CG
-  - title: WebAssembly Specification (Release 3.0)
-    type: standard
-    year: 2024
-    url: https://webassembly.github.io/spec/core/
-    institution: W3C WebAssembly Working Group
-  - title: WebAssembly Specification Release 3.0 — W3C
-    type: standard
-    year: 2024
-    url: https://www.w3.org/TR/wasm-core-3/
+    year: 2022
     institution: W3C
-  - title: Bringing the Web up to Speed with WebAssembly
-    authors:
-      - Haas,A.
-      - Rossberg,A.
-      - Schuff,D.L.
-      - Titzer,B.L.
-      - Holman,M.
-      - Gohman,D.
-      - Wagner,L.
-      - Zakai,A.
-      - Bastien,J.
+    url: https://www.w3.org/TR/wasm-core-2/
+  - id: ps-webassembly-2
+    title: Bringing the Web up to Speed with WebAssembly
     type: academic_paper
     year: 2017
-    doi: 10.1145/3062341.3062363
-    institution: PLDI/ACM
-  - title: 'Not So Fast: Analyzing the Performance of WebAssembly vs. Native Code'
-    authors:
-      - Yan,Y.
-      - Tu,T.
-      - Zhao,L.
-      - Zhou,Y.
-      - Wang,W.
-    type: academic_paper
-    year: 2021
-    url: https://arxiv.org/abs/2109.10673
-    institution: arXiv
-  - title: 'Everything Old is New Again: Binary Security of WebAssembly'
-    authors:
-      - Lehmann,D.
-      - Kinder,J.
-      - Pradel,M.
-    type: academic_paper
-    year: 2020
-    url: https://arxiv.org/abs/2008.07639
-    institution: USENIX Security/arXiv
-  - title: 'WebAssembly: A New World'
-    authors:
-      - Zakai,A.
-      - Bastien,J.
-    type: academic_paper
-    year: 2023
-    url: https://arxiv.org/abs/2303.08098
-    institution: arXiv
-secondary_sources:
-  - title: WebAssembly Feature Status
-    type: tracker
-    url: https://webassembly.org/features/
-    institution: Webassembly
+    institution: ACM PLDI
+    url: https://doi.org/10.1145/3062341.3062363
+  - id: ps-webassembly-3
+    title: WebAssembly concepts
+    type: technical_documentation
+    year: 2024
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/WebAssembly/Guides/Concepts
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
-
-
-
-
-
-
 ## TL;DR
-
-WebAssembly (Wasm) is a portable binary instruction format for stack-based virtual machines, designed as a compilation target for programming languages. Wasm 3.0, completed on September 17, 2025 (announced by Andreas Rossberg of the W3C WebAssembly Community Group), represents the culmination of 6-8 years of specification work, adding 10 major features including 64-bit addressing, garbage collection, exception handling, tail calls, and multiple memories. It is now available in all major browsers and standalone engines like Wasmtime.
+WebAssembly is a portable low-level code format and execution model. This repair downgrades the article from high to medium confidence and removes future Wasm 3.0 claims.
 
 ## Core Explanation
-
-WebAssembly was originally designed (2015-2017) to run code at near-native speed in web browsers as a complement to JavaScript, supporting languages like C, C++, and Rust. It has since expanded beyond the browser to server-side, edge computing (Cloudflare Workers), blockchain (deterministic smart contracts), and plugin systems.
-
-Wasm 3.0 (2025) transforms it from a relatively constrained compilation target into a general-purpose execution platform capable of hosting managed languages (Java, OCaml, Kotlin) with full garbage collection support.
+Wasm is commonly used as a compilation target for languages that need predictable, sandboxed execution in web and embedded environments. Its guarantees come from the specification and engine behavior, not from any single future announcement.
 
 ## Detailed Analysis
-
-### Wasm 3.0 — 10 New Features (September 17, 2025)
-
-| # | Feature | Description |
-|:-:|---------|------------|
-| 1 | **Memory64** | 64-bit addressing, expanding addressable memory from 4 GB to 16 EB (theoretical). Browsers limit to 16 GB. |
-| 2 | **Multiple Memories** | Single modules can declare and directly access multiple memory regions, enabling memory-to-memory copies without host intervention. |
-| 3 | **Garbage Collection (GC)** | Runtime-managed heap with struct, array, and tagged integer types. Language-agnostic — no built-in object system. Enables Java, Kotlin, OCaml, Dart compilation. |
-| 4 | **Typed References** | Subtyping and recursive types enabling safe indirect function calls (`call_ref`) without runtime type checks. |
-| 5 | **Tail Calls** | Function calls that exit the caller immediately, avoiding stack overflow. Supports both static and dynamic tail calls. |
-| 6 | **Exception Handling** | Native Wasm exceptions with tags and payloads, eliminating dependence on JavaScript exception mechanisms. |
-| 7 | **Relaxed SIMD** | Relaxed variants of Wasm 2.0's vector instructions, trading strict determinism for higher performance. |
-| 8 | **Deterministic Profile** | Default deterministic behavior for all non-deterministic operations (NaN generation, relaxed SIMD) — critical for blockchain and reproducible computing. |
-| 9 | **Custom Annotation Syntax** | Generic annotation syntax in the text format for embedding custom metadata, analogous to custom sections in the binary format. |
-| 10 | **JS String Builtins** | Wasm modules can import functions to manipulate JavaScript string externref values directly, improving JS-Wasm interop. |
-
-### WASI Preview 2 (2024)
-
-WASI (WebAssembly System Interface) standardizes OS-level capabilities (filesystem, networking, clocks) for Wasm outside the browser. WASI Preview 2, stabilized in 2024, introduced the Component Model — a standard for composing multiple Wasm modules with typed interfaces, enabling language-agnostic component reuse.
-
-Combined, Wasm 3.0 + WASI Preview 2 + Component Model position WebAssembly as a "write once, run anywhere" platform competitive with Docker containers, but with stronger sandboxing, smaller footprints, and near-native startup times.
-
-### Adoption
-
-- **Browsers**: Firefox, Chrome, Safari, Edge all ship Wasm 3.0 (September 2025)
-- **Standalone**: Wasmtime, Wasmer, WAMR support completing
-- **Languages**: Rust, C, C++, Go, Java, Kotlin, OCaml, Dart, Python (via Pyodide), Ruby
-- **Production use**: Cloudflare Workers, Shopify Functions, Figma, AutoCAD Web, Adobe Photoshop Web, 1Password
-- **Blockchain**: Polkadot, NEAR, Cosmos use Wasm for deterministic smart contracts
-
-## Further Reading
-
-- [Wasm 3.0 Announcement](https://webassembly.org/news/2025-09-17-wasm-3.0/): Official release by Andreas Rossberg
-- [Wasi Preview 2](https://github.com/WebAssembly/WASI): System interface standard
-- [WebAssembly Feature Status](https://webassembly.org/features/): Engine support tracker
+The public article now rests on the W3C core specification, the original PLDI paper, and MDN's conceptual documentation. That is enough for a medium-confidence overview while avoiding speculative release claims.

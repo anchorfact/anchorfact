@@ -4,8 +4,8 @@ title: Bun Runtime
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: '2026-05-25'
+confidence: medium
+last_verified: '2026-05-28'
 created_date: '2026-05-22'
 generation_method: ai_structured
 derived_from_human_seed: true
@@ -13,82 +13,53 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-01
-    statement: It aims to replace Node.js with dramatically faster performance
-    source_title: Bun Documentation
-    source_url: https://bun.sh/docs/
+  - id: af-bun-runtime-1
+    statement: Bun documents itself as a JavaScript runtime with built-in Web APIs and Node.js compatibility goals.
+    source_title: Bun Runtime Documentation
+    source_url: https://bun.sh/docs/runtime
     confidence: medium
-  - id: fact-computer-science-02
-    statement: 'bun install: up to 25x faster than npm'
-    source_title: Bun Documentation
-    source_url: https://bun.sh/docs/
+  - id: af-bun-runtime-2
+    statement: Bun includes a bundler for JavaScript and TypeScript projects.
+    source_title: Bun Bundler Documentation
+    source_url: https://bun.sh/docs/bundler
+    confidence: medium
+  - id: af-bun-runtime-3
+    statement: Bun includes a Jest-compatible test runner exposed through the bun test command.
+    source_title: Bun Test Runner Documentation
+    source_url: https://bun.sh/docs/test
     confidence: medium
 completeness: 0.88
 known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - Compatibility differences with the full Node.js ecosystem
+  - Long-term stability of tooling APIs across Bun releases
+disputed_statements: []
 primary_sources:
-  - title: Bun Documentation
-    type: documentation
-    year: 2026
-    url: https://bun.sh/docs/
-    institution: Oven
-  - title: Bun and Modern JavaScript Tooling (2025)
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: O'Reilly Media
-    url: https://www.oreilly.com/bun/
-  - title: The Evolution of JavaScript Runtimes in 2025
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE Software
-    url: https://doi.org/10.1109/ms.2025.js
-  - title: Bun — A Fast All-in-One JavaScript Runtime
-    type: official_doc
+  - id: ps-bun-runtime-1
+    title: Bun Runtime Documentation
+    type: technical_documentation
     year: 2024
-    url: https://bun.sh/docs
-    institution: Oven
-  - title: JavaScriptCore (JSC) — WebKit
-    type: official_doc
+    institution: Bun
+    url: https://bun.sh/docs/runtime
+  - id: ps-bun-runtime-2
+    title: Bun Bundler Documentation
+    type: technical_documentation
     year: 2024
-    url: https://webkit.org/projects/javascriptcore/
-    institution: Apple / WebKit
-secondary_sources:
-  - title: Effective TypeScript (2nd Edition)
-    authors:
-      - Vanderkam, Dan
-    type: book
+    institution: Bun
+    url: https://bun.sh/docs/bundler
+  - id: ps-bun-runtime-3
+    title: Bun Test Runner Documentation
+    type: technical_documentation
     year: 2024
-    url: https://www.oreilly.com/library/view/effective-typescript-2nd/9781098155056/
-    institution: O'Reilly
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
+    institution: Bun
+    url: https://bun.sh/docs/test
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
 ## TL;DR
-
-Bun (Jarred Sumner, 2022) is an all-in-one JavaScript runtime, bundler, test runner, and package manager written in Zig. It aims to replace Node.js with dramatically faster performance (4x+ faster than Node in benchmarks). Uses JavaScriptCore (Safari's engine) instead of V8.
+Bun is a JavaScript runtime and toolchain that bundles runtime, bundler, package-management, and testing features. Public claims should stay close to Bun's own documentation rather than broad performance promises.
 
 ## Core Explanation
+Developers may use Bun to run JavaScript or TypeScript, bundle code, and run tests. Its appeal is the integrated toolchain, but compatibility and behavior should be checked against specific project needs.
 
-`bun install`: up to 25x faster than npm (uses binary lockfile, symlinked node_modules). Bundler: built-in, no configuration needed. Test runner: Jest-compatible. Native support: TypeScript, JSX, SQLite, .env, and Web APIs. Bun 1.0 (Sep 2023): production-ready for macOS/Linux. Bun 1.2 (2025): Windows support. Drop-in replacement for `node` and `npm` in many projects.
-
-## Further Reading
-
-- [Bun Documentation](https://bun.sh/docs/)
+## Detailed Analysis
+This repair removes vague or weak sources and keeps the evidence to documentation pages for runtime behavior, bundling, and testing.
