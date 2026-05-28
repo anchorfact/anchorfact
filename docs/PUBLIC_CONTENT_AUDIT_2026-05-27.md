@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T10:03:28.799Z
+Generated: 2026-05-28T10:15:13.434Z
 
-Snapshot: 555 public / 445 draft / 1615 claims.
+Snapshot: 555 public / 445 draft / 1616 claims.
 
 ## Summary
 
@@ -29,20 +29,20 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 4 | high_confidence | `ai/ai-in-healthcare` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 5 | high_confidence | `ai/ai-red-teaming-and-safety` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 6 | medium_capped_claims | `business/strategic-management-theory` | medium | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 7 | medium_capped_claims | `ai/ai-for-video-surveillance` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 8 | medium_capped_claims | `ai/ai-generated-content-detection` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 9 | medium_capped_claims | `ai/ai-identity-verification` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 7 | medium_capped_claims | `ai/ai-in-cybersecurity` | medium | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 8 | medium_capped_claims | `ai/ai-ip-patents` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 9 | medium_capped_claims | `ai/ai-protein-design` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
 | 10 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 12 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 13 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 14 | risk_fallback | `science/water-cycle` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 15 | risk_fallback | `self-improvement/resilience-building` | low | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 16 | risk_fallback | `computer-science/git` | medium | 3/4 (75.0%) | 4 | source=weak; claim=pass; summary=pass | repair_sources |
-| 17 | risk_fallback | `game-development/roguelike-game-design` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
-| 18 | risk_fallback | `geography/sahara-desert` | low | 2/3 (66.7%) | 4 | source=weak; claim=weak; summary=pass | repair_sources |
-| 19 | risk_fallback | `science/periodic-table` | medium | 6/8 (75.0%) | 4 | source=weak; claim=pass; summary=pass | repair_sources |
-| 20 | risk_fallback | `ai/ai-for-visualization` | low | 3/3 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 14 | risk_fallback | `ai/ai-hardware-accelerators` | low | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 15 | risk_fallback | `ai/ai-in-finance` | low | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 16 | risk_fallback | `computer-science/linux` | low | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 17 | risk_fallback | `computer-science/nextjs` | low | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 18 | risk_fallback | `computer-science/operating-systems-concepts` | low | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 19 | risk_fallback | `computer-science/software-engineering-principles` | low | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 20 | risk_fallback | `game-development/game-balance-fundamentals` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
 
 ## Article Findings
 
@@ -136,10 +136,25 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 7. AI for Video Surveillance: Intelligent Monitoring, Anomaly Detection, and Privacy-Preserving Analytics
+### 7. AI in Cybersecurity: Threat Detection and LLM-Powered Defense
 
-- canonical slug: `ai/ai-for-video-surveillance`
-- canonical URL: https://anchorfact.org/ai/ai-for-video-surveillance/
+- canonical slug: `ai/ai-in-cybersecurity`
+- canonical URL: https://anchorfact.org/ai/ai-in-cybersecurity/
+- bucket: `medium_capped_claims`
+- confidence: `medium` (verified_sources, score 0.79)
+- verified source coverage: 2/2 (100.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 8. AI for Intellectual Property: Patent Search, Prior Art Analysis, and Trademark Intelligence
+
+- canonical slug: `ai/ai-ip-patents`
+- canonical URL: https://anchorfact.org/ai/ai-ip-patents/
 - bucket: `medium_capped_claims`
 - confidence: `medium` (verified_sources, score 0.74)
 - verified source coverage: 1/2 (50.0%)
@@ -151,27 +166,12 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 8. AI-Generated Content Detection: Identifying Synthetic Text, Deepfake Images, and AI-Authored Media
+### 9. AI Protein Design: RFDiffusion, ProteinMPNN, and the Nobel Revolution
 
-- canonical slug: `ai/ai-generated-content-detection`
-- canonical URL: https://anchorfact.org/ai/ai-generated-content-detection/
+- canonical slug: `ai/ai-protein-design`
+- canonical URL: https://anchorfact.org/ai/ai-protein-design/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.74)
-- verified source coverage: 1/2 (50.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 9. AI Identity Verification: Document Authentication, Liveness Detection, and KYC Compliance
-
-- canonical slug: `ai/ai-identity-verification`
-- canonical URL: https://anchorfact.org/ai/ai-identity-verification/
-- bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.74)
+- confidence: `medium` (verified_sources, score 0.73)
 - verified source coverage: 1/2 (50.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: partial_source_verification
@@ -241,74 +241,44 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 14. Water Cycle
+### 14. AI Hardware: NVIDIA H100/B200, TPUs, and Cerebras
 
-- canonical slug: `science/water-cycle`
-- canonical URL: https://anchorfact.org/science/water-cycle/
+- canonical slug: `ai/ai-hardware-accelerators`
+- canonical URL: https://anchorfact.org/ai/ai-hardware-accelerators/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: generic_source_homepage
+- confidence: `low` (verified_sources, score 0.55)
+- verified source coverage: 2/2 (100.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak
 - source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 15. Building Mental Resilience
-
-- canonical slug: `self-improvement/resilience-building`
-- canonical URL: https://anchorfact.org/self-improvement/resilience-building/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.48)
-- verified source coverage: 1/2 (50.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
-- source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: claim_evidence_weak
 - recommendation: `repair_sources`
 
-### 16. Git Version Control System
+### 15. AI in Finance: Trading, Risk, and Fraud Detection
 
-- canonical slug: `computer-science/git`
-- canonical URL: https://anchorfact.org/computer-science/git/
+- canonical slug: `ai/ai-in-finance`
+- canonical URL: https://anchorfact.org/ai/ai-in-finance/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.6)
-- verified source coverage: 3/4 (75.0%)
-- claims: 4 total, 1 capped, 0 missing evidence
-- quality reasons: partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 17. Roguelike Game Design
-
-- canonical slug: `game-development/roguelike-game-design`
-- canonical URL: https://anchorfact.org/game-development/roguelike-game-design/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.53)
-- verified source coverage: 1/1 (100.0%)
-- claims: 4 total, 4 capped, 0 missing evidence
-- quality reasons: generic_source_homepage
+- confidence: `low` (verified_sources, score 0.51)
+- verified source coverage: 2/2 (100.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak
 - source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: generic_source_homepage
+- hygiene flags: claim_evidence_weak
 - recommendation: `repair_sources`
 
-### 18. Sahara Desert
+### 16. Linux
 
-- canonical slug: `geography/sahara-desert`
-- canonical URL: https://anchorfact.org/geography/sahara-desert/
+- canonical slug: `computer-science/linux`
+- canonical URL: https://anchorfact.org/computer-science/linux/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.55)
-- verified source coverage: 2/3 (66.7%)
-- claims: 4 total, 4 capped, 0 missing evidence
+- confidence: `low` (verified_sources, score 0.51)
+- verified source coverage: 1/2 (50.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
@@ -316,28 +286,58 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 19. Periodic Table
+### 17. Next.js
 
-- canonical slug: `science/periodic-table`
-- canonical URL: https://anchorfact.org/science/periodic-table/
+- canonical slug: `computer-science/nextjs`
+- canonical URL: https://anchorfact.org/computer-science/nextjs/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.87)
-- verified source coverage: 6/8 (75.0%)
-- claims: 4 total, 0 capped, 0 missing evidence
-- quality reasons: partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `pass`
+- confidence: `low` (verified_sources, score 0.56)
+- verified source coverage: 2/2 (100.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
+- hygiene flags: duplicate_sources, generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 20. AI for Data Visualization
+### 18. Operating Systems: Processes, Memory, and File Systems
 
-- canonical slug: `ai/ai-for-visualization`
-- canonical URL: https://anchorfact.org/ai/ai-for-visualization/
+- canonical slug: `computer-science/operating-systems-concepts`
+- canonical URL: https://anchorfact.org/computer-science/operating-systems-concepts/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.57)
-- verified source coverage: 3/3 (100.0%)
+- confidence: `low` (verified_sources, score 0.51)
+- verified source coverage: 2/2 (100.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
+
+### 19. Software Engineering: Design Principles and Development Methodologies
+
+- canonical slug: `computer-science/software-engineering-principles`
+- canonical URL: https://anchorfact.org/computer-science/software-engineering-principles/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.49)
+- verified source coverage: 2/2 (100.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
+
+### 20. Game Balance Fundamentals
+
+- canonical slug: `game-development/game-balance-fundamentals`
+- canonical URL: https://anchorfact.org/game-development/game-balance-fundamentals/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.53)
+- verified source coverage: 1/1 (100.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: generic_source_homepage
 - source-title match: `pass`

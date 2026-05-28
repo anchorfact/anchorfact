@@ -2,13 +2,13 @@
   "summary": {
     "generated": "2026-05-27T14:00:00.000Z",
     "total_articles": 1000,
-    "total_with_errors": 334,
+    "total_with_errors": 361,
     "average_sources_per_article": "2.1",
-    "overall_verification_rate": "67.0%",
+    "overall_verification_rate": "67.4%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 228
+    "manual_reviewed_articles": 237
   },
   "articles": [
     {
@@ -5488,35 +5488,56 @@
       "file": "content/ai/ai-for-video-surveillance.md",
       "article_id": "ai-for-video-surveillance",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Transformer-Based Video Understanding: A Comprehensive Survey of Action Recognition, Detection, and Tracking",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2501.12345",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Privacy-Preserving Video Analytics: Federated Learning, Edge Computing, and Differential Privacy Approaches",
+          "source_title": "Simple Online and Realtime Tracking with a Deep Association Metric",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206",
+              "identifier": "https://arxiv.org/abs/1703.07402",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Real-world Anomaly Detection in Surveillance Videos",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1801.04264",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1705.07750",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -5524,8 +5545,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-virtual-reality.md",
@@ -5576,17 +5599,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Data2Vis - PubMed",
-          "source_type": "journal_article",
+          "source_title": "Visualizing Data using t-SNE",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://pubmed.ncbi.nlm.nih.gov/31247545/",
+              "identifier": "https://www.jmlr.org/papers/v9/vandermaaten08a.html",
               "verified": true,
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -5594,17 +5617,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Formalizing Visualization Design Knowledge as Constraints - CMU Data Interaction Group",
-          "source_type": "conference_paper",
+          "source_title": "UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dig.cmu.edu/publications/2018-draco.html",
+              "identifier": "https://arxiv.org/abs/1802.03426",
               "verified": true,
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -5612,17 +5635,17 @@
           "all_verified": true
         },
         {
-          "source_title": "NL4DV - Home",
-          "source_type": "software_documentation",
+          "source_title": "VizML: A Machine Learning Approach to Visualization Recommendation",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://nl4dv.github.io/",
+              "identifier": "https://arxiv.org/abs/1808.04819",
               "verified": true,
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -5764,35 +5787,56 @@
       "file": "content/ai/ai-generated-content-detection.md",
       "article_id": "ai-generated-content-detection",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "DetectGPT: Zero-Shot Machine-Generated Text Detection using Probability Curvature (and follow-up surveys)",
+          "source_title": "DetectGPT: Zero-Shot Machine-Generated Text Detection using Probability Curvature",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2301.11305",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2301.11305",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "C2PA Content Credentials: Technical Specification v2.1",
+          "source_title": "A Watermark for Large Language Models",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2301.10226",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "C2PA Technical Specification 2.3",
           "source_type": "industry_standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://c2pa.org/specifications/",
+              "identifier": "https://spec.c2pa.org/specifications/specifications/2.3/specs/C2PA_Specification.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://spec.c2pa.org/specifications/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -5800,8 +5844,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-gesture-recognition.md",
@@ -5939,25 +5985,56 @@
       "file": "content/ai/ai-identity-verification.md",
       "article_id": "ai-identity-verification",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "AI-Powered Identity Verification: Document Authentication, Facial Matching, and Liveness Detection (2025 Comprehensive Technical Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "eIDAS 2.0: European Digital Identity Framework and AI-Based Identity Verification Requirements",
+          "source_title": "ArcFace: Additive Angular Margin Loss for Deep Face Recognition",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://digital-strategy.ec.europa.eu/en/policies/eidas-regulation",
+              "identifier": "https://arxiv.org/abs/1801.07698",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://digital-strategy.ec.europa.eu/en/policies/eidas-regulation"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Face Recognition Technology Evaluation 1:1 Verification",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://pages.nist.gov/frvt/html/frvt11.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ISO/IEC 30107-3:2023 Biometric presentation attack detection",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.iso.org/standard/79520.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -5965,8 +6042,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-in-cybersecurity.md",
@@ -24145,19 +24224,20 @@
       "file": "content/computer-science/git.md",
       "article_id": "kb-2026-00066",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Pro Git (2nd Edition)",
+          "source_title": "Pro Git: About Version Control",
           "source_type": "book",
           "results": [
             {
               "method": "url",
-              "identifier": "https://git-scm.com/book/en/v2",
+              "identifier": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://git-scm.com/book/en/v2"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -24165,59 +24245,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Git Documentation",
+          "source_title": "Pro Git: Git Basics - Getting a Git Repository",
+          "source_type": "book",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Git commit Documentation",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://git-scm.com/docs",
+              "identifier": "https://git-scm.com/docs/git-commit",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://git-scm.com/docs"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "Pro Git (3rd Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://git-scm.com/book",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://git-scm.com/book"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Version Control in the Age of AI: Git and Beyond (2025 Survey)",
-          "source_type": "survey_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.git",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.git"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 1
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/github-actions.md",
@@ -33660,19 +33727,56 @@
       "file": "content/game-development/roguelike-game-design.md",
       "article_id": "kb-2026-00223",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "GDC Vault",
-          "source_type": "conference",
+          "source_title": "Berlin Interpretation",
+          "source_type": "community_standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdcvault.com/",
+              "identifier": "https://www.roguebasin.com/index.php/Berlin_Interpretation",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdcvault.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Procedural Content Generation in Games",
+          "source_type": "book",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://link.springer.com/book/10.1007/978-3-319-42716-4",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Procedural Content Generation via Machine Learning",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1702.00539",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -33680,8 +33784,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/game-development/save-systems-design.md",
@@ -35437,33 +35543,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Sahara: A Natural History (de Villiers & Hirtle)",
-          "source_type": "book",
+          "source_title": "Sahara",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.bloomsbury.com/us/sahara-9780802713568/",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.bloomsbury.com/us/sahara-9780802713568/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Sahara: A Cultural History (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/sahara/",
+              "identifier": "https://www.britannica.com/place/Sahara-desert-Africa",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/sahara/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -35471,16 +35561,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Deserts: A Very Short Introduction (2025)",
-          "source_type": "book",
+          "source_title": "Bodele Depression Dust Feeds Amazon",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://global.oup.com/vsi-deserts/",
+              "identifier": "https://science.nasa.gov/earth/earth-observatory/bodele-depression-dust-feeds-amazon-7279/",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-deserts/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Tassili n'Ajjer",
+          "source_type": "world_heritage_record",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://whc.unesco.org/en/list/179",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -35488,8 +35597,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/geography/south-america-geography.md",
@@ -42938,10 +43049,10 @@
       "file": "content/science/periodic-table.md",
       "article_id": "kb-2026-00334",
       "generation_method": "ai_structured",
-      "sources_total": 8,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Periodic Table (IUPAC)",
+          "source_title": "Periodic Table of Elements",
           "source_type": "standard",
           "results": [
             {
@@ -42949,8 +43060,9 @@
               "identifier": "https://iupac.org/what-we-do/periodic-table-of-elements/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://iupac.org/what-we-do/periodic-table-of-elements/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -42958,16 +43070,17 @@
           "all_verified": true
         },
         {
-          "source_title": "The Periodic Table: A Very Short Introduction (2025)",
-          "source_type": "book",
+          "source_title": "Periodic table",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://global.oup.com/vsi-periodic/",
+              "identifier": "https://www.britannica.com/science/periodic-table",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-periodic/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -42975,110 +43088,28 @@
           "all_verified": true
         },
         {
-          "source_title": "Periodic Table: Its Story and Its Significance (2025 Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/periodic-table/",
-              "verified": true,
-              "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/periodic-table/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Periodic Table: Its Story and Significance (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/periodic-table/",
-              "verified": true,
-              "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/periodic-table/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "IUPAC Periodic Table of the Elements and Isotopes (IPTEI)",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://iupac.org/iptei/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://iupac.org/iptei/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Atomic Weights of the Elements 2021 (IUPAC Technical Report)",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1515/pac-2019-0603",
-              "verified": true,
-              "metadata": {
-                "title": "Standard atomic weights of the elements 2021 (IUPAC Technical Report)",
-                "publisher": "Walter de Gruyter GmbH",
-                "year": 2022
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "On the Ontology of the Periodic Table",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1007/s10698-019-09337-0",
-              "verified": false,
-              "metadata": {
-                "error": "CrossRef returned 404"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Four New Elements Complete the Seventh Row of the Periodic Table",
+          "source_title": "Four new elements complete the seventh row of the periodic table",
           "source_type": "standard",
           "results": [
             {
               "method": "url",
               "identifier": "https://iupac.org/four-new-elements-complete-seventh-row/",
-              "verified": false,
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://iupac.org/four-new-elements-complete-seventh-row/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 6,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/photosynthesis-light-reactions-calvin-cycle-and-c4-cam-pathways.md",
@@ -43995,19 +44026,56 @@
       "file": "content/science/water-cycle.md",
       "article_id": "kb-2026-00371",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "NASA Earth Observatory — Water Cycle",
-          "source_type": "documentation",
+          "source_title": "The Water Cycle",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://earthobservatory.nasa.gov/features/Water",
+              "identifier": "https://www.usgs.gov/index.php/publications/water-cycle",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://science.nasa.gov/earth/earth-observatory/the-water-cycle/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Water Cycle",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://science.nasa.gov/earth/earth-observatory/the-water-cycle",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The water cycle",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://prod-01-alb-www-noaa.woc.noaa.gov/education/resource-collections/freshwater/water-cycle",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -44015,8 +44083,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/self-improvement/active-listening.md",
@@ -45309,19 +45379,20 @@
       "file": "content/self-improvement/resilience-building.md",
       "article_id": "kb-2026-00507",
       "generation_method": "ai_assisted",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Mindset: The New Psychology of Success (Carol Dweck)",
-          "source_type": "book",
+          "source_title": "Ordinary magic: Resilience processes in development",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck-phd/",
+              "identifier": "https://doi.org/10.1037/0003-066X.56.3.227",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck-phd/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -45329,25 +45400,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Grit: The Power of Passion and Perseverance (Angela Duckworth)",
-          "source_type": "book",
+          "source_title": "The science of resilience: implications for the prevention and treatment of depression",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.simonandschuster.com/books/Grit/Angela-Duckworth/9781501111112",
-              "verified": false,
+              "identifier": "https://doi.org/10.1126/science.1222942",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.simonandschuster.com/books/Grit/Angela-Duckworth/9781501111112"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Building your resilience",
+          "source_type": "professional_guidance",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.apa.org/topics/resilience/building-your-resilience",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/self-improvement/resilience-the-psychology-of-bouncing-back.md",

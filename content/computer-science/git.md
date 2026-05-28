@@ -4,8 +4,8 @@ title: Git Version Control System
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
@@ -15,101 +15,66 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-01
-    statement: Git is a distributed version control system created by Linus Torvalds in April 2005 for Linux kernel development
-    source_title: Pro Git (2nd Edition)
-    source_url: https://git-scm.com/book/en/v2
-    confidence: high
-  - id: fact-computer-science-002
-    statement: It tracks changes to files, enabling multiple developers to collaborate without a central server.
-    source_title: Pro Git (2nd Edition)
-    source_url: https://git-scm.com/book/en/v2
+  - id: af-computer-science-git-1
+    statement: >-
+      Pro Git describes Git as a distributed version control system in which clients mirror the
+      repository, including its full history.
+    source_title: "Pro Git: About Version Control"
+    source_url: https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
     confidence: medium
-  - id: fact-computer-science-003
-    statement: Git is the de facto standard for software version control, used by over 90% of developers (Stack Overflow 2024 Survey) and hosting platforms including GitHub, GitLab, and Bitbucket.
-    source_title: Pro Git (2nd Edition)
-    source_url: https://git-scm.com/book/en/v2
+  - id: af-computer-science-git-2
+    statement: >-
+      Pro Git explains that a Git project can be started by creating a new repository in an existing
+      directory or by cloning an existing repository.
+    source_title: "Pro Git: Git Basics - Getting a Git Repository"
+    source_url: https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository
     confidence: medium
-  - id: fact-computer-science-004
-    statement: Its distributed model means every clone is a full repository with complete history.
-    source_title: Pro Git (2nd Edition)
-    source_url: https://git-scm.com/book/en/v2
+  - id: af-computer-science-git-3
+    statement: >-
+      The git commit command records changes to the repository and can use the staging area to
+      choose the content of the new commit.
+    source_title: Git commit Documentation
+    source_url: https://git-scm.com/docs/git-commit
     confidence: medium
 completeness: 0.85
 known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - >-
+    This field is under active research and rapid development; some conclusions may evolve with new
+    evidence or technological advances
+  - >-
+    Certain sub-topics are covered at a general level; specialized edge cases and nuanced
+    applications may not be fully addressed
+disputed_statements: []
 primary_sources:
-  - title: Pro Git (2nd Edition)
-    authors:
-      - Chacon, Scott
-      - Straub, Ben
+  - id: ps-computer-science-git-1
+    title: "Pro Git: About Version Control"
     type: book
     year: 2014
-    url: https://git-scm.com/book/en/v2
     institution: Git Project
-  - title: Git Documentation
+    url: https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
+  - id: ps-computer-science-git-2
+    title: "Pro Git: Git Basics - Getting a Git Repository"
+    type: book
+    year: 2014
+    institution: Git Project
+    url: https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository
+  - id: ps-computer-science-git-3
+    title: Git commit Documentation
     type: documentation
     year: 2026
-    url: https://git-scm.com/docs
     institution: Git Project
-  - title: Pro Git (3rd Edition, 2025)
-    type: book
-    year: 2025
-    authors:
-      - Chacon S.
-      - Straub B.
-    institution: Apress
-    url: https://git-scm.com/book
-  - title: "Version Control in the Age of AI: Git and Beyond (2025 Survey)"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.git
-secondary_sources:
-  - title: Pro Git (2nd Ed)
-    authors:
-      - Chacon
-      - Straub
-    type: book
-    year: 2014
-    url: https://git-scm.com/book/en/v2
-    institution: Apress
+    url: https://git-scm.com/docs/git-commit
+secondary_sources: []
+updated: "2026-05-28"
 ---
 ## TL;DR
+Git is a distributed version control system for recording project history, branching work, and sharing changes through repositories. Its key workflow is to edit files, stage chosen changes, commit a snapshot, and exchange commits with other repositories.
 
-Git is a distributed version control system created by Linus Torvalds in April 2005 for Linux kernel development. It tracks changes to files, enabling multiple developers to collaborate without a central server. Git is the de facto standard for software version control, used by over 90% of developers (Stack Overflow 2024 Survey) and hosting platforms including GitHub, GitLab, and Bitbucket. Its distributed model means every clone is a full repository with complete history.
-
-## Core Concepts
-
-- **Repository**: Complete history of a project (`.git` directory)
-- **Commit**: Snapshot of the project at a point in time, identified by SHA-1 hash
-- **Branch**: Independent line of development; default is `main` (formerly `master`)
-- **Staging Area (Index)** : Intermediate area between working directory and repository
-- **Remote**: Link to another repository (typically on GitHub/GitLab)
-- **Merge/Rebase**: Strategies for integrating changes from different branches
-
-Distributed model means operations are fast (no network) and offline-capable. Every developer has the full history.
-
-## Fundamental Workflow
-
-```
-Working Directory → git add → Staging Area → git commit → Repository → git push → Remote
-```
+## Core Explanation
+Unlike centralized version control, a Git clone carries repository history locally, so many operations are fast and can be done offline. A repository can be created in an existing directory or cloned from another repository. The staging area lets developers choose exactly which changes become part of the next commit, making commits the durable unit of project history.
 
 ## Further Reading
 
-- [Pro Git Book](https://git-scm.com/book/en/v2): Free, comprehensive Git book
-- [Git Docs](https://git-scm.com/docs): Official documentation
-
-## Related Articles
-
-- [Git: Distributed Version Control Internals and Workflows](../git-distributed-version-control-internals-and-workflows.md)
-- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../../ai/ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)
-- [AI for Climate Science: Weather Prediction and Earth System Modeling](../../ai/ai-for-climate-science.md)
+- [Pro Git: About Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
+- [Pro Git: Getting a Git Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
+- [git commit documentation](https://git-scm.com/docs/git-commit)
