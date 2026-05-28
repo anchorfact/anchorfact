@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -16,91 +16,68 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: f1
-    statement: >-
-      Data-centric AI (as championed by Andrew Ng) posits that systematically improving data quality yields greater performance gains than iterating on model architecture for many practical
-      applications.
-    source_title: "Mazumder, Mark, et al. DataPerf: Benchmarks for Data-Centric AI Development. NeurIPS 2023"
+    statement: "DataPerf is a benchmark suite for evaluating datasets and data-centric algorithms in machine learning."
+    source_title: DataPerf Benchmarks for Data-Centric AI Development
     source_url: https://arxiv.org/abs/2207.10062
     confidence: high
   - id: f2
-    statement: Dolma (Soldaini et al. 2024, Allen Institute for AI) is an open corpus of 3 trillion tokens for language model pretraining research, providing unprecedented transparency into training data.
-    source_title: "Soldaini, Luca, et al. Dolma: an Open Corpus of Three Trillion Tokens. AI2 2024"
+    statement: "Dolma is an open English corpus of about three trillion tokens for language model pretraining research."
+    source_title: Dolma an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research
     source_url: https://arxiv.org/abs/2402.00159
     confidence: high
   - id: f3
-    statement: >-
-      Data quality dimensions for ML include accuracy, completeness, consistency, timeliness, and representativeness. The METRIC framework (Nature Digital Medicine 2024) provides a systematic approach
-      to assessing data quality for trustworthy AI.
-    source_title: Multiple authors. The METRIC-framework for assessing data quality for trustworthy AI. npj Digital Medicine 2024
-    source_url: https://doi.org/10.1038/s41746-024-01196-4
+    statement: "The METRIC framework reviews data-quality characteristics for trustworthy AI in medicine."
+    source_title: The METRIC-framework for assessing data quality for trustworthy AI in medicine
+    source_url: https://www.nature.com/articles/s41746-024-01196-4
     confidence: high
-completeness: 0.9
-primary_sources:
-  - title: "FineWeb: Decanting the Web for the Finest Text Data at Scale"
-    type: academic_paper
-    year: 2024
-    url: https://arxiv.org/abs/2406.17557
-    institution: HuggingFace
-  - title: "NVIDIA NeMo Curator: Scalable Data Pre-Processing"
-    type: official_documentation
-    year: 2024
-    url: https://github.com/NVIDIA-NeMo/Curator
-    institution: NVIDIA
+completeness: 0.85
 known_gaps:
   - Synthetic data quality evaluation
   - Data mixture optimization theory
-disputed_statements:
-  - statement: No major disputed statements identified
-secondary_sources:
-  - title: "Data-Centric Artificial Intelligence: A Comprehensive Survey"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: IEEE TKDE
-    url: https://doi.org/10.1109/TKDE.2024.3361474
-  - title: "DataPerf: Benchmarks for Data-Centric AI Development"
-    type: conference_paper
-    year: 2023
-    authors:
-      - Mazumder, Mark
-      - Banbury, Colby
-      - Yao, Xiaozhe
-      - et al.
-    institution: Coactive AI / Harvard / NeurIPS
+disputed_statements: []
+primary_sources:
+  - title: DataPerf Benchmarks for Data-Centric AI Development
+    type: academic_paper
+    year: 2022
     url: https://arxiv.org/abs/2207.10062
-  - title: A Survey on Data Quality Dimensions and Tools for Machine Learning
-    type: survey_paper
+    institution: arXiv / NeurIPS
+  - title: Dolma an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research
+    type: academic_paper
     year: 2024
-    authors:
-      - multiple
-    institution: arXiv
-    url: https://arxiv.org/abs/2406.19614
-  - title: "Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research"
-    type: technical_report
-    year: 2024
-    authors:
-      - Soldaini, Luca
-      - Kinney, Rodney
-      - Bhagia, Akshita
-      - et al.
-    institution: Allen Institute for AI
     url: https://arxiv.org/abs/2402.00159
-updated: "2026-05-24"
+    institution: Allen Institute for AI / arXiv
+  - title: The METRIC-framework for assessing data quality for trustworthy AI in medicine
+    type: academic_paper
+    year: 2024
+    url: https://www.nature.com/articles/s41746-024-01196-4
+    doi: 10.1038/s41746-024-01196-4
+    institution: npj Digital Medicine
+secondary_sources:
+  - title: Ai2 Dolma 3 trillion token open corpus for language model pretraining
+    type: official_report
+    year: 2023
+    url: https://allenai.org/blog/dolma-3-trillion-tokens-open-llm-corpus-9a0ff4b8da64
+    institution: Allen Institute for AI
+updated: "2026-05-28"
 ---
+
 ## TL;DR
-Training data quality is now recognized as the dominant factor in AI model performance. Data curation — filtering, deduplication, quality scoring, and mixture design — has become a first-class engineering discipline.
+
+Training-data curation turns raw data into model-ready datasets through filtering, deduplication, quality checks, documentation, and mixture design.
 
 ## Core Explanation
-The curation pipeline: (1) collection from web (Common Crawl), books, code, scientific papers; (2) language ID and filtering; (3) quality scoring (perplexity, ML classifier); (4) deduplication (exact, fuzzy via MinHash, semantic); (5) personally identifiable information (PII) removal; (6) toxicity/safety filtering.
+
+The repaired claims focus on three concrete evidence anchors: DataPerf for data-centric evaluation, Dolma for transparent language-model pretraining data, and METRIC for data-quality assessment in medical AI.
 
 ## Detailed Analysis
-Data mixture design determines the relative proportions of sources — code, math, science, books, web — in the final training corpus. Chinchilla scaling laws showed optimal data-to-model-parameter ratios. FineWeb-Edu filters for educational quality using a BERT classifier trained on human annotations.
+
+This version avoids broad claims that data always dominates model architecture. That idea can be useful, but public claims need direct study-level evidence for the domain and metric being discussed.
 
 ## Further Reading
-- HuggingFace: FineWeb Blog
-- Dolma: Open Training Dataset (AI2)
-- Common Crawl Foundation
+
+- [DataPerf](https://arxiv.org/abs/2207.10062)
+- [Dolma](https://arxiv.org/abs/2402.00159)
+- [METRIC framework](https://www.nature.com/articles/s41746-024-01196-4)
 
 ## Related Articles
 

@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: history
 language: en
 confidence: medium
-last_verified: '2026-05-25'
-created_date: '2026-05-22'
+last_verified: "2026-05-28"
+created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -16,61 +16,67 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-history-001
-    statement: >-
-      The Enlightenment (18th century, 'Age of Reason') championed reason, science, individual rights, and skepticism of authority. Key thinkers: Locke (natural rights), Montesquieu (separation of
-      powers), Voltaire (civil liberties, religious tolerance), Rousseau (social contract), and Kant. Enlightenment ideas influenced the American and French Revolutions.
-    source_title: The Enlightenment (Dorinda Outram, 4th Ed)
-    source_url: https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A
+    statement: "Britannica describes the Enlightenment as a European intellectual movement of the 17th and 18th centuries centered on ideas of God, reason, nature, and humanity."
+    source_title: "Enlightenment"
+    source_url: "https://www.britannica.com/event/Enlightenment-European-history"
     confidence: medium
   - id: fact-history-002
-    statement: 'Montesquieu: Spirit of the Laws (1748) — legislative/executive/judicial branches.'
-    source_title: The Enlightenment (Dorinda Outram, 4th Ed)
-    source_url: https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A
+    statement: "Britannica describes Montesquieu's The Spirit of Laws as a work first published in 1748 and associated with the principle of separation of powers."
+    source_title: "The Spirit of Laws"
+    source_url: "https://www.britannica.com/topic/The-Spirit-of-Laws"
     confidence: medium
   - id: fact-history-003
-    statement: 'Adam Smith (Wealth of Nations, 1776): invisible hand, division of labor.'
-    source_title: The Enlightenment (Dorinda Outram, 4th Ed)
-    source_url: https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A
+    statement: "The Stanford Encyclopedia of Philosophy describes Diderot and d'Alembert's Encyclopedia project as a central project of the French Enlightenment."
+    source_title: "Enlightenment Stanford Encyclopedia of Philosophy"
+    source_url: "https://plato.stanford.edu/entries/enlightenment/"
     confidence: medium
-  - id: fact-history-004
-    statement: 'Encyclopédie (Diderot & d''Alembert, 1751-72): compendium of all knowledge, 71,818 articles.'
-    source_title: The Enlightenment (Dorinda Outram, 4th Ed)
-    source_url: https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A
-    confidence: medium
-  - id: fact-history-005
-    statement: 'Salons: intellectual gatherings led by women (Mme Geoffrin).'
-    source_title: The Enlightenment (Dorinda Outram, 4th Ed)
-    source_url: https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A
-    confidence: medium
-completeness: 0.88
+completeness: 0.82
 known_gaps:
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
+  - Women's salons and non-European Enlightenment reception need additional source review
+  - Links to the American and French Revolutions should be sourced separately
 disputed_statements: []
 primary_sources:
-  - title: The Enlightenment (Dorinda Outram, 4th Ed)
-    type: book
-    year: 2019
-    url: https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A
-    institution: Cambridge University Press
+  - title: "Enlightenment"
+    type: "reference"
+    year: 2026
+    url: "https://www.britannica.com/event/Enlightenment-European-history"
+    institution: "Encyclopaedia Britannica"
+  - title: "The Spirit of Laws"
+    type: "reference"
+    year: 2026
+    url: "https://www.britannica.com/topic/The-Spirit-of-Laws"
+    institution: "Encyclopaedia Britannica"
+  - title: "Enlightenment Stanford Encyclopedia of Philosophy"
+    type: "reference"
+    year: 2026
+    url: "https://plato.stanford.edu/entries/enlightenment/"
+    institution: "Stanford Encyclopedia of Philosophy"
 secondary_sources:
-  - title: The Penguin History of the World
-    type: book
-    year: 1976
-    url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    institution: J.M. Roberts, Penguin
+  - title: "Baron de Montesquieu"
+    type: "reference"
+    year: 2018
+    url: "https://plato.stanford.edu/archives/spr2018/entries/montesquieu/"
+    institution: "Stanford Encyclopedia of Philosophy"
+updated: "2026-05-28"
 ---
 
 ## TL;DR
 
-The Enlightenment (18th century, 'Age of Reason') championed reason, science, individual rights, and skepticism of authority. Key thinkers: Locke (natural rights), Montesquieu (separation of powers), Voltaire (civil liberties, religious tolerance), Rousseau (social contract), Kant ('Sapere aude!' — dare to know). Fueled American and French Revolutions.
+The Enlightenment was a broad intellectual movement in seventeenth- and eighteenth-century Europe that emphasized reason, criticism, science, and reform.
 
 ## Core Explanation
 
-Locke: tabula rasa (blank slate), life/liberty/property. Montesquieu: Spirit of the Laws (1748) — legislative/executive/judicial branches. Rousseau: general will, man born free but everywhere in chains. Adam Smith (Wealth of Nations, 1776): invisible hand, division of labor. Encyclopédie (Diderot & d'Alembert, 1751-72): compendium of all knowledge, 71,818 articles. Salons: intellectual gatherings led by women (Mme Geoffrin).
+This repaired entry keeps three public claims: a general definition of the Enlightenment, Montesquieu's separation-of-powers contribution, and the Encyclopedie project associated with Diderot and d'Alembert.
+
+## Detailed Analysis
+
+The previous article bundled Locke, Voltaire, Rousseau, Kant, Smith, salons, and revolutionary influence into source-light facts. Those themes are important but should be restored only when each claim is mapped to direct evidence.
 
 ## Further Reading
 
-- [The Enlightenment (Dorinda Outram, 4th Ed)](https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A)
+- [Britannica: Enlightenment](https://www.britannica.com/event/Enlightenment-European-history)
+- [Britannica: The Spirit of Laws](https://www.britannica.com/topic/The-Spirit-of-Laws)
+- [Stanford Encyclopedia of Philosophy: Enlightenment](https://plato.stanford.edu/entries/enlightenment/)
 
 ## Related Articles
 

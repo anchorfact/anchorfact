@@ -1,12 +1,12 @@
 ---
 id: ai-red-teaming-and-safety
-title: 'AI Red Teaming: Security Testing for Language Models'
+title: "AI Red Teaming: Security Testing for Language Models"
 schema_type: TechArticle
 category: ai
 language: en
 confidence: high
-last_verified: '2026-05-25'
-created_date: '2026-05-24'
+last_verified: "2026-05-28"
+created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -16,103 +16,67 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: f1
-    statement: >-
-      AI red teaming (adapted from cybersecurity) involves systematic adversarial testing of AI systems to uncover harmful behaviors. Anthropic, OpenAI, Google DeepMind, and Microsoft have established
-      dedicated red teaming practices.
-    source_title: 'Multiple authors. Recent Advancements in LLM Red-Teaming: Techniques and Defenses. 2024'
-    source_url: https://arxiv.org/abs/2410.09097
+    statement: "Perez et al. studied using one language model to generate adversarial test cases for red teaming another language model."
+    source_title: Red Teaming Language Models with Language Models
+    source_url: https://arxiv.org/abs/2202.03286
     confidence: high
   - id: f2
-    statement: >-
-      Constitutional AI (Bai et al. 2022, Anthropic) trains models using a curated set of principles (a "constitution") for self-critique and revision, reducing reliance on human feedback for
-      alignment.
-    source_title: 'Bai, Yuntao, et al. Constitutional AI: Harmlessness from AI Feedback. Anthropic 2022'
+    statement: "Constitutional AI uses a set of written principles to guide model self-critique and revision during harmlessness training."
+    source_title: Constitutional AI Harmlessness from AI Feedback
     source_url: https://arxiv.org/abs/2212.08073
     confidence: high
   - id: f3
-    statement: >-
-      Jailbreaking attacks (prompt injection, DAN, role-playing) exploit LLM vulnerabilities to bypass safety guardrails. Defenses include input/output filtering, RLHF, and adversarial training, but
-      no defense is foolproof.
-    source_title: Multiple authors. Comprehensive Survey of LLM Red-Teaming. ACM Computing Surveys 2025
-    source_url: https://dl.acm.org/doi/10.1145/3729215
+    statement: "OWASP's 2025 Top 10 for LLM Applications identifies prompt injection and sensitive information disclosure among the major LLM application risks."
+    source_title: OWASP Top 10 for LLM Applications
+    source_url: https://owasp.org/www-project-top-10-for-large-language-model-applications/
     confidence: high
-completeness: 0.9
+completeness: 0.85
+known_gaps:
+  - Automated red teaming at scale
+  - Defense-in-depth for multimodal models
+disputed_statements: []
 primary_sources:
-  - title: Lessons from Red Teaming 100 Generative AI Products
-    type: official_report
-    year: 2025
-    url: https://learn.microsoft.com/en-us/azure/foundry/concepts/ai-red-teaming-agent
-    institution: Microsoft
+  - title: Red Teaming Language Models with Language Models
+    type: academic_paper
+    year: 2022
+    url: https://arxiv.org/abs/2202.03286
+    institution: Anthropic / arXiv
+  - title: Constitutional AI Harmlessness from AI Feedback
+    type: academic_paper
+    year: 2022
+    url: https://arxiv.org/abs/2212.08073
+    institution: Anthropic / arXiv
   - title: OWASP Top 10 for LLM Applications
     type: standard
     year: 2025
     url: https://owasp.org/www-project-top-10-for-large-language-model-applications/
     institution: OWASP
-  - title: Red Teaming Language Models with Language Models
-    authors:
-      - Perez, E.
-      - Huang, S.
-      - Song, F.
-      - Cai, T.
-      - Ring, R.
-      - Aslanides, J.
-      - Glaese, A.
-      - McAleese, N.
-      - Irving, G.
-    type: academic_paper
-    year: 2022
-    url: https://arxiv.org/abs/2202.03286
-    institution: Anthropic / arXiv
-known_gaps:
-  - Automated red teaming at scale
-  - Defense-in-depth for multi-modal models
-disputed_statements:
-  - statement: No major disputed statements identified
 secondary_sources:
-  - title: 'Securing LLM Agents: From Prompt Sanitization to Autonomous Red Teaming — The First Comprehensive Survey'
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: Computers & Security (Elsevier)
-    url: https://doi.org/10.1016/j.cose.2025.104268
-  - title: 'Recent Advancements in LLM Red-Teaming: Techniques, Benchmarks, and Defenses'
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: arXiv
-    url: https://arxiv.org/abs/2410.09097
-  - title: 'Evaluating Alignment in Large Language Models: Human Feedback, Adversarial Testing, and Scalable Oversight'
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: AI and Ethics (Springer)
-    url: https://doi.org/10.1007/s43681-024-00637-w
-  - title: 'OpenAI''s Approach to External Red Teaming for AI Systems: Design Considerations and Lessons Learned'
+  - title: OpenAI's approach to external red teaming for AI systems
     type: report
     year: 2024
-    authors:
-      - OpenAI
+    url: https://openai.com/index/external-red-teaming/
     institution: OpenAI
-    url: https://openai.com/research/external-red-teaming
-updated: '2026-05-24'
+updated: "2026-05-28"
 ---
 
 ## TL;DR
-AI red teaming applies adversarial testing methodologies to AI systems — probing for jailbreaks, prompt injection, bias exploitation, and data leakage. Microsoft, Anthropic, and OWASP have established red teaming as a standard practice for responsible AI deployment.
+
+AI red teaming uses adversarial testing to find unsafe, vulnerable, or policy-violating behavior in AI systems before deployment.
 
 ## Core Explanation
-Attack taxonomy: prompt injection (direct: override system prompt; indirect: malicious content in retrieved documents), jailbreaking (DAN, role-playing, encoding tricks), data extraction (memorized training data leakage), and model inversion (reconstruct training data from outputs). Multi-modal models introduce new attack surfaces (visual prompt injection via images).
+
+The repaired evidence focuses on model-generated red-team test cases, Constitutional AI training, and OWASP's application-security risk taxonomy for LLM systems.
 
 ## Detailed Analysis
-Defense strategies: input/output filtering, constitutional AI (principle-based self-regulation), RLHF preference training for safety, and structured output validation. Automated red teaming tools (Garak, PromptFoo, Microsoft's PyRIT) scale adversarial testing. The cat-and-mouse dynamic between attacks and defenses is ongoing.
+
+The prior version leaned on broad survey claims and overgeneralized defense language. Current claims avoid saying that any defense is complete and keep specific risks attached to OWASP's named categories.
 
 ## Further Reading
-- redteams.ai: AI Red Teaming Wiki
-- Anthropic: Safety Research
-- Microsoft PyRIT: Python Risk Identification Tool
+
+- [Red Teaming Language Models with Language Models](https://arxiv.org/abs/2202.03286)
+- [Constitutional AI](https://arxiv.org/abs/2212.08073)
+- [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
 
 ## Related Articles
 

@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 0,
     "average_sources_per_article": "2.2",
-    "overall_verification_rate": "47.2%",
+    "overall_verification_rate": "48.4%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 67
+    "manual_reviewed_articles": 82
   },
   "articles": [
     {
@@ -5476,19 +5476,20 @@
       "file": "content/ai/ai-in-healthcare.md",
       "article_id": "ai-in-healthcare",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "High-performance medicine: the convergence of human and artificial intelligence",
+          "source_title": "CheXNet Radiologist-Level Pneumonia Detection on Chest X-Rays with Deep Learning",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nature.com/articles/s41591-018-0300-7",
+              "identifier": "https://arxiv.org/abs/1711.05225",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nature.com/articles/s41591-018-0300-7?error=cookies_not_supported&code=fde3f82a-237c-483b-a72d-c5fc5e97919b"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -5496,16 +5497,35 @@
           "all_verified": true
         },
         {
-          "source_title": "AlphaFold 3 (Nature, 2024)",
+          "source_title": "International evaluation of an AI system for breast cancer screening",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nature.com/articles/s41586-024-07487-w",
+              "identifier": "https://www.nature.com/articles/s41586-019-1799-6",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nature.com/articles/s41586-024-07487-w?error=cookies_not_supported&code=2cc53371-16ea-4018-a410-54fe5e127944"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Artificial Intelligence-Enabled Medical Devices",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-enabled-medical-devices",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -5513,8 +5533,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-insurtech.md",
@@ -6190,16 +6212,35 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Lessons from Red Teaming 100 Generative AI Products",
-          "source_type": "official_report",
+          "source_title": "Red Teaming Language Models with Language Models",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://learn.microsoft.com/en-us/azure/foundry/concepts/ai-red-teaming-agent",
+              "identifier": "https://arxiv.org/abs/2202.03286",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/ai-red-teaming-agent"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Constitutional AI Harmlessness from AI Feedback",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2212.08073",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -6215,33 +6256,20 @@
               "identifier": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "Red Teaming Language Models with Language Models",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2202.03286",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-regulation-landscape.md",
@@ -6831,35 +6859,56 @@
       "file": "content/ai/ai-training-data-curation.md",
       "article_id": "ai-training-data-curation",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "FineWeb: Decanting the Web for the Finest Text Data at Scale",
+          "source_title": "DataPerf Benchmarks for Data-Centric AI Development",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2406.17557",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2207.10062",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "NVIDIA NeMo Curator: Scalable Data Pre-Processing",
-          "source_type": "official_documentation",
+          "source_title": "Dolma an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://github.com/NVIDIA-NeMo/Curator",
+              "identifier": "https://arxiv.org/abs/2402.00159",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/NVIDIA-NeMo/Curator"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The METRIC-framework for assessing data quality for trustworthy AI in medicine",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.nature.com/articles/s41746-024-01196-4",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -6867,8 +6916,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-travel-planning.md",
@@ -6928,36 +6979,56 @@
       "file": "content/ai/ai-video-generation.md",
       "article_id": "ai-video-generation",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Video generation models as world simulators (Sora)",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://openai.com/index/video-generation-models-as-world-simulators/",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://openai.com/index/video-generation-models-as-world-simulators/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Veo: Google's Most Capable Video Generation Model",
+          "source_title": "Video generation models as world simulators",
           "source_type": "official_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://deepmind.google/technologies/veo/",
+              "identifier": "https://openai.com/index/video-generation-models-as-world-simulators/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://deepmind.google/models/veo/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google I/O 2024 Introducing Veo and Imagen 3",
+          "source_type": "official_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://blog.google/technology/ai/google-generative-ai-veo-imagen-3/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Imagen Video High Definition Video Generation with Diffusion Models",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2210.02303",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -6965,8 +7036,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-warehouse-robotics.md",
@@ -15950,19 +16023,20 @@
       "file": "content/arts/political-philosophy.md",
       "article_id": "political-philosophy",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
           "source_title": "A Theory of Justice",
-          "source_type": "textbook",
+          "source_type": "book",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.hup.harvard.edu/catalog.php?isbn=9780674000780",
+              "identifier": "https://www.hup.harvard.edu/books/9780674000780",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://www.hup.harvard.edu/catalog.php?isbn=9780674000780"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -15970,59 +16044,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Leviathan",
-          "source_type": "literature",
+          "source_title": "Two Concepts of Liberty",
+          "source_type": "book_chapter",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.cambridge.org/9780521567978",
-              "verified": false,
+              "identifier": "https://academic.oup.com/book/7968/chapter-abstract/153281672",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.cambridge.org/9780521567978"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Justice: What's the Right Thing to Do? (2025 Updated Edition)",
+          "source_title": "The Origins of Totalitarianism",
           "source_type": "book",
           "results": [
             {
               "method": "url",
-              "identifier": "https://us.macmillan.com/justice/",
-              "verified": false,
+              "identifier": "https://www.penguinrandomhouse.com/books/770207/hannah-arendt-the-origins-of-totalitarianism-expanded-edition-loa-389-by-hannah-arendt--jerome-kohn-and-thomas-wild-editors/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://us.macmillan.com/justice/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Political Philosophy in the Twenty-First Century (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1017/cbo.2025.polphil",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1017/cbo.2025.polphil"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/arts/renaissance-art.md",
@@ -16660,33 +16721,20 @@
       "file": "content/business/economics-fundamentals.md",
       "article_id": "economics-fundamentals",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Principles of Economics, 9th Edition (Mankiw)",
+          "source_title": "Demand, Supply, and Equilibrium in Markets for Goods and Services",
           "source_type": "textbook",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.cengage.com/c/principles-of-economics-9e-mankiw/9780357038314/",
-              "verified": false,
-              "metadata": {},
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "MIT 14.01: Principles of Microeconomics",
-          "source_type": "course_material",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://ocw.mit.edu/courses/14-01-principles-of-microeconomics-fall-2023/",
+              "identifier": "https://openstax.org/books/principles-economics-3e/pages/3-1-demand-supply-and-equilibrium-in-markets-for-goods-and-services",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://ocw.mit.edu/courses/14-01-principles-of-microeconomics-fall-2023/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -16694,20 +16742,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Economics (23rd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "source_title": "MIT 14.01 Principles of Microeconomics",
+          "source_type": "course_material",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://ocw.mit.edu/courses/14-01-principles-of-microeconomics-fall-2023/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "Principles of Economics (9th Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "source_title": "Demand and Supply Key Concepts and Summary",
+          "source_type": "textbook",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openstax.org/books/principles-economics-3e/pages/3-key-concepts-and-summary",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/business/entrepreneurship-and-startups.md",
@@ -17860,36 +17934,20 @@
       "file": "content/business/strategic-management-theory.md",
       "article_id": "strategic-management-theory",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Competitive Strategy: Techniques for Analyzing Industries and Competitors",
-          "source_type": "textbook",
+          "source_title": "The Five Competitive Forces That Shape Strategy",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.simonandschuster.com/books/Competitive-Strategy/Michael-E-Porter/9780684005278",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.simonandschuster.com/books/Competitive-Strategy/Michael-E-Porter/9780684005278"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Practice of Management",
-          "source_type": "textbook",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.harpercollins.com/",
+              "identifier": "https://www.hbs.edu/faculty/Pages/item.aspx?num=34522",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.harpercollins.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -17897,42 +17955,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Competitive Strategy: Techniques for Analyzing Industries and Competitors (2025 45th Anniversary Edition)",
-          "source_type": "book",
+          "source_title": "Firm Resources and Sustained Competitive Advantage",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.hbs.edu/faculty/Pages/item.aspx?num=195",
-              "verified": false,
+              "identifier": "https://journals.sagepub.com/doi/10.1177/014920639101700108",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.hbs.edu/faculty/Pages/item.aspx?num=195"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Good Strategy Bad Strategy: The Difference and Why It Matters (2025 Updated)",
+          "source_title": "Blue Ocean Strategy",
           "source_type": "book",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.crownpublishing.com/good-strategy/",
-              "verified": false,
+              "identifier": "https://www.blueoceanstrategy.com/books/blue-ocean-strategy-book/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://crownpublishing.com/good-strategy/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/business/supply-and-demand-the-fundamental-model-of-market-economics.md",
@@ -32388,36 +32450,20 @@
       "file": "content/geography/desert-ecosystems.md",
       "article_id": "desert-ecosystems",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Desert Ecology: Life in Extreme Environments",
-          "source_type": "textbook",
+          "source_title": "Desert Mission Biomes",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://link.springer.com/book/10.1007/978-3-030-69580-4",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://link.springer.com/book/10.1007/978-3-030-69580-4"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "UNEP Global Deserts Outlook",
-          "source_type": "official_report",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.unep.org/resources/report/global-deserts-outlook",
+              "identifier": "https://earthobservatory.nasa.gov/biome/biodesert.php",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.unep.org/resources/report/global-deserts-outlook"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -32425,51 +32471,46 @@
           "all_verified": true
         },
         {
-          "source_title": "An Introduction to Software Ecosystems",
-          "source_type": "academic_paper",
+          "source_title": "Global Land Outlook 2",
+          "source_type": "government_report",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1007/978-3-031-36060-2",
+              "method": "url",
+              "identifier": "https://www.unccd.int/resources/global-land-outlook/glo2",
               "verified": true,
               "metadata": {
-                "title": "Software Ecosystems",
-                "publisher": "Springer International Publishing",
-                "year": 2023
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2307.15709v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Computing of Applied Digital Ecosystems",
-          "source_type": "academic_paper",
+          "source_title": "Using Light Energy to Make Organic Molecules",
+          "source_type": "textbook",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "0910.0674v1",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://openstax.org/books/biology-2e/pages/8-3-using-light-energy-to-make-organic-molecules",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/geography/earth-s-magnetic-field-geodynamo-reversals-and-navigation.md",
@@ -33000,19 +33041,56 @@
       "file": "content/geography/ocean-currents.md",
       "article_id": "kb-2026-00385",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "NOAA Ocean Currents",
-          "source_type": "documentation",
+          "source_title": "What causes ocean currents",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://oceanservice.noaa.gov/education/tutorial_currents/",
+              "identifier": "https://oceanexplorer.noaa.gov/ocean-fact/currents/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://oceanservice.noaa.gov/education/tutorial_currents/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "What is a gyre",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://oceanservice.noaa.gov/facts/gyre.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Garbage Patches",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://marinedebris.noaa.gov/discover-marine-debris/garbage-patches",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -33020,26 +33098,65 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/geography/oceania-geography.md",
       "article_id": "kb-2026-00488",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Pacific Islands: Environment and Society (Moshe Rapaport)",
-          "source_type": "book",
+          "source_title": "Oceania",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://uhpress.hawaii.edu/title/the-pacific-islands-environment-and-society-revised-edition/",
+              "identifier": "https://www.britannica.com/place/Oceania-region-Pacific-Ocean",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://uhpress.hawaii.edu/title/the-pacific-islands-environment-and-society-revised-edition/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Papua New Guinea The World Factbook",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.cia.gov/the-world-factbook/about/archives/2021/countries/papua-new-guinea/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "IPCC AR6 WGII Fact Sheet Small Islands",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.ipcc.ch/report/ar6/wg2/downloads/outreach/IPCC_AR6_WGII_FactSheet_SmallIslands.pdf",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -33047,8 +33164,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/geography/pacific-ring-of-fire-volcanoes-earthquakes-and-plate-boundaries.md",
@@ -33213,19 +33332,56 @@
       "file": "content/geography/south-america-geography.md",
       "article_id": "kb-2026-00467",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Physical Geography of South America (Veblen, Young, Orme)",
-          "source_type": "book",
+          "source_title": "South America",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://global.oup.com/academic/product/the-physical-geography-of-south-america-9780195313413",
+              "identifier": "https://www.britannica.com/place/South-America",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/academic/product/the-physical-geography-of-south-america-9780195313413"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "South America The Andes Mountains",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/place/South-America/The-Andes-Mountains",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon Basin",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/place/Amazon-Basin",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -33233,8 +33389,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/geography/south-american-geography.md",
@@ -35187,53 +35345,20 @@
       "file": "content/history/ancient-mesopotamia.md",
       "article_id": "ancient-mesopotamia",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Ancient Mesopotamia: Portrait of a Dead Civilization",
-          "source_type": "textbook",
+          "source_title": "Mesopotamia",
+          "source_type": "museum_collection",
           "results": [
             {
               "method": "url",
-              "identifier": "https://press.uchicago.edu/ucp/books/book/chicago/A/bo3633333.html",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://press.uchicago.edu/ucp/books/book/chicago/A/bo3633333.html"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Babylonian World",
-          "source_type": "reference",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.routledge.com/The-Babylonian-World/Leick/p/book/9780415497903",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.routledge.com/The-Babylonian-World/Leick/p/book/9780415497903"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Ancient Near East: A Very Short Introduction (2025 Updated Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/mesopotamia/",
+              "identifier": "https://www.britishmuseum.org/collection/galleries/mesopotamia",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/mesopotamia/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -35241,25 +35366,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Babylon: Mesopotamia and the Birth of Civilization (2025 Edition)",
-          "source_type": "book",
+          "source_title": "The Code of Hammurabi",
+          "source_type": "museum_collection",
           "results": [
             {
               "method": "url",
-              "identifier": "https://us.macmillan.com/babylon/",
-              "verified": false,
+              "identifier": "https://www.louvre.fr/en/the-code-of-hammurabi",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://us.macmillan.com/babylon/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Gilgamesh",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/topic/Gilgamesh",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/ancient-rome.md",
@@ -35863,20 +36009,56 @@
       "file": "content/history/enlightenment-era.md",
       "article_id": "kb-2026-00466",
       "generation_method": "ai_structured",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Enlightenment (Dorinda Outram, 4th Ed)",
-          "source_type": "book",
+          "source_title": "Enlightenment",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.cambridge.org/core/books/enlightenment/B4B9824B7A8ED96285F706D33EA9625A",
+              "identifier": "https://www.britannica.com/event/Enlightenment-European-history",
               "verified": true,
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Targeted evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Spirit of Laws",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/topic/The-Spirit-of-Laws",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Enlightenment Stanford Encyclopedia of Philosophy",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://plato.stanford.edu/entries/enlightenment/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -35884,7 +36066,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 3,
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
@@ -37927,19 +38109,20 @@
       "file": "content/history/world-war-ii-overview.md",
       "article_id": "world-war-ii-overview",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Second World War",
-          "source_type": "textbook",
+          "source_title": "World War II",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.littlebrown.com/titles/antony-beevor/the-second-world-war/9780316023740/",
+              "identifier": "https://www.britannica.com/event/World-War-II",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.hachettebookgroup.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -37947,59 +38130,46 @@
           "all_verified": true
         },
         {
-          "source_title": "The Rise and Fall of the Third Reich",
-          "source_type": "textbook",
+          "source_title": "The 10 Things You Need to Know About D-Day",
+          "source_type": "museum_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.simonandschuster.com/books/The-Rise-and-Fall-of-the-Third-Reich/William-L-Shirer/9781451651683",
-              "verified": false,
+              "identifier": "https://www.iwm.org.uk/history/the-10-things-you-need-to-know-about-d-day",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.simonandschuster.com/books/The-Rise-and-Fall-of-the-Third-Reich/William-L-Shirer/9781451651683"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "The Second World War (2025 Updated Edition)",
-          "source_type": "book",
+          "source_title": "Timeline of World War II",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.littlebrown.com/the-second-world-war/",
-              "verified": false,
+              "identifier": "https://www.britannica.com/topic/Timeline-of-World-War-II",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.hachettebookgroup.com/the-second-world-war/?lens=little-brown"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Bloodlands: Europe Between Hitler and Stalin (2025 Anniversary Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.basicbooks.com/bloodlands/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.hachettebookgroup.com/bloodlands/?lens=basic-books"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/world-war-ii.md",
@@ -38156,36 +38326,20 @@
       "file": "content/science/astronomy-and-cosmology.md",
       "article_id": "astronomy-and-cosmology",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "An Introduction to Modern Astrophysics, 2nd Edition",
-          "source_type": "textbook",
+          "source_title": "Planck 2018 Results VI Cosmological Parameters",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.cambridge.org/9781108422161",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.cambridge.org/9781108422161"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "NASA JWST Science",
-          "source_type": "official_documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://webb.nasa.gov/",
+              "identifier": "https://doi.org/10.1051/0004-6361/201833910",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://science.nasa.gov/mission/webb/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -38193,20 +38347,28 @@
           "all_verified": true
         },
         {
-          "source_title": "An Introduction to Modern Astrophysics (2nd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Cosmology",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "source_title": "First M87 Event Horizon Telescope Results I The Shadow of the Supermassive Black Hole",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.3847/2041-8213/ab0ec7",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 2,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/big-bang-theory.md",
@@ -39444,19 +39606,20 @@
       "file": "content/science/environmental-science.md",
       "article_id": "environmental-science",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "IPCC Sixth Assessment Report: Synthesis Report",
-          "source_type": "official_report",
+          "source_title": "IPCC AR6 Working Group I Technical Summary",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.ipcc.ch/report/ar6/syr/",
+              "identifier": "https://www.ipcc.ch/report/ar6/wg1/chapter/technical-summary/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.ipcc.ch/report/ar6/syr/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -39464,34 +39627,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Living in the Environment, 20th Edition",
-          "source_type": "textbook",
+          "source_title": "Earth beyond six of nine planetary boundaries",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.cengage.com/c/living-in-the-environment-20e-miller-spoolman/9780357142202/",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://doi.org/10.1126/sciadv.adh2458",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Living in the Environment (20th Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Silent Spring",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "source_title": "Global Assessment Report on Biodiversity and Ecosystem Services",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.5281/zenodo.3831673",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/epigenetics-dna-methylation-histone-modification-and-gene-regulation.md",

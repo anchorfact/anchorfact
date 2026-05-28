@@ -1,8 +1,8 @@
-# AnchorFact Public Content Audit - 2026-05-27
+# AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-27T23:59:09.070Z
+Generated: 2026-05-28T00:46:15.839Z
 
-Snapshot: 555 public / 445 draft / 1548 claims.
+Snapshot: 555 public / 445 draft / 1540 claims.
 
 ## Summary
 
@@ -23,81 +23,51 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 
 | # | bucket | slug | confidence | coverage | claims | checks | recommendation |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | low_verified_coverage | `arts/political-philosophy` | low | 1/4 (25.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 2 | low_verified_coverage | `business/economics-fundamentals` | medium | 1/4 (25.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 3 | low_verified_coverage | `business/strategic-management-theory` | low | 1/4 (25.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 4 | low_verified_coverage | `geography/desert-ecosystems` | medium | 1/4 (25.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 5 | low_verified_coverage | `history/ancient-mesopotamia` | low | 1/4 (25.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 6 | low_verified_coverage | `history/world-war-ii-overview` | low | 1/4 (25.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 7 | low_verified_coverage | `science/astronomy-and-cosmology` | low | 1/4 (25.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 8 | low_verified_coverage | `science/environmental-science` | low | 1/4 (25.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 1 | low_verified_coverage | `history/cold-war` | medium | 2/7 (28.6%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 2 | low_verified_coverage | `science/molecular-biology-central-dogma` | medium | 2/7 (28.6%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 3 | low_verified_coverage | `science/neuroscience-brain-plasticity` | low | 2/7 (28.6%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 4 | low_verified_coverage | `ai/autoencoders` | medium | 2/6 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 5 | low_verified_coverage | `ai/backpropagation` | medium | 1/3 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 6 | low_verified_coverage | `ai/llm-inference-optimization` | medium | 1/3 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 7 | low_verified_coverage | `ai/world-models-video-prediction` | medium | 1/3 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 8 | low_verified_coverage | `arts/aesthetics` | low | 2/6 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
 | 9 | high_confidence | `ai/gpt-models` | high | 4/4 (100.0%) | 6 | source=pass; claim=pass; summary=pass | keep_public |
 | 10 | high_confidence | `ai/agentic-ai` | high | 2/2 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 11 | high_confidence | `computer-science/c-language` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 12 | high_confidence | `ai/affective-computing` | high | 2/2 (100.0%) | 2 | source=pass; claim=pass; summary=pass | keep_public |
-| 13 | medium_capped_claims | `ai/ai-in-healthcare` | medium | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 14 | medium_capped_claims | `ai/ai-red-teaming-and-safety` | medium | 2/3 (66.7%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 15 | medium_capped_claims | `ai/ai-training-data-curation` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 16 | medium_capped_claims | `ai/ai-video-generation` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 17 | low_confidence_public | `geography/ocean-currents` | low | 1/1 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
-| 18 | low_confidence_public | `geography/oceania-geography` | low | 1/1 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
-| 19 | low_confidence_public | `geography/south-america-geography` | low | 1/1 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
-| 20 | low_confidence_public | `history/enlightenment-era` | low | 1/1 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
+| 11 | high_confidence | `ai/ai-in-healthcare` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
+| 12 | high_confidence | `ai/ai-red-teaming-and-safety` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
+| 13 | medium_capped_claims | `ai/contrastive-learning` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 14 | medium_capped_claims | `ai/distributed-training-systems` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 15 | medium_capped_claims | `ai/dropout-and-regularization` | medium | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 16 | medium_capped_claims | `ai/edge-ai-and-tinyml` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 17 | low_confidence_public | `history/mayan-civilization` | low | 2/3 (66.7%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
+| 18 | low_confidence_public | `history/meiji-restoration` | low | 2/3 (66.7%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
+| 19 | low_confidence_public | `history/napoleonic-era` | low | 1/1 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
+| 20 | low_confidence_public | `history/renaissance` | low | 1/1 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
 
 ## Article Findings
 
-### 1. Political Philosophy: Justice, Liberty, and the Social Contract
+### 1. Cold War
 
-- canonical slug: `arts/political-philosophy`
-- canonical URL: https://anchorfact.org/arts/political-philosophy/
+- canonical slug: `history/cold-war`
+- canonical URL: https://anchorfact.org/history/cold-war/
 - bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/4 (25.0%)
+- confidence: `medium` (verified_sources, score 0.87)
+- verified source coverage: 2/7 (28.6%)
 - claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification, low_verified_coverage
+- quality reasons: partial_source_verification, low_verified_coverage, high_confidence_evidence_gap
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
+- hygiene flags: none
 - recommendation: `repair_sources`
 
-### 2. Economics: Supply, Demand, and Market Equilibrium
+### 2. Molecular Biology: The Central Dogma
 
-- canonical slug: `business/economics-fundamentals`
-- canonical URL: https://anchorfact.org/business/economics-fundamentals/
+- canonical slug: `science/molecular-biology-central-dogma`
+- canonical URL: https://anchorfact.org/science/molecular-biology-central-dogma/
 - bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.675)
-- verified source coverage: 1/4 (25.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
-- recommendation: `repair_sources`
-
-### 3. Strategic Management: Frameworks and Practice
-
-- canonical slug: `business/strategic-management-theory`
-- canonical URL: https://anchorfact.org/business/strategic-management-theory/
-- bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/4 (25.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, claim_evidence_weak, partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 4. Desert Ecosystems and Adaptations
-
-- canonical slug: `geography/desert-ecosystems`
-- canonical URL: https://anchorfact.org/geography/desert-ecosystems/
-- bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.86)
-- verified source coverage: 1/4 (25.0%)
+- confidence: `medium` (verified_sources, score 0.87)
+- verified source coverage: 2/7 (28.6%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: claim_evidence_weak, partial_source_verification, low_verified_coverage, high_confidence_evidence_gap
 - source-title match: `weak`
@@ -106,28 +76,13 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: claim_evidence_weak
 - recommendation: `repair_sources`
 
-### 5. Ancient Mesopotamia: Cradle of Civilization
+### 3. Neuroscience: Neuroplasticity and Brain Function
 
-- canonical slug: `history/ancient-mesopotamia`
-- canonical URL: https://anchorfact.org/history/ancient-mesopotamia/
+- canonical slug: `science/neuroscience-brain-plasticity`
+- canonical URL: https://anchorfact.org/science/neuroscience-brain-plasticity/
 - bucket: `low_verified_coverage`
 - confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/4 (25.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, claim_evidence_weak, partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 6. World War II: Global Conflict and Its Aftermath
-
-- canonical slug: `history/world-war-ii-overview`
-- canonical URL: https://anchorfact.org/history/world-war-ii-overview/
-- bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/4 (25.0%)
+- verified source coverage: 2/7 (28.6%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: claim_evidence_weak, partial_source_verification, low_verified_coverage
 - source-title match: `weak`
@@ -136,34 +91,79 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: claim_evidence_weak
 - recommendation: `repair_sources`
 
-### 7. Astronomy and Cosmology: From Solar System to the Universe
+### 4. Autoencoders
 
-- canonical slug: `science/astronomy-and-cosmology`
-- canonical URL: https://anchorfact.org/science/astronomy-and-cosmology/
+- canonical slug: `ai/autoencoders`
+- canonical URL: https://anchorfact.org/ai/autoencoders/
 - bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.465)
-- verified source coverage: 1/4 (25.0%)
+- confidence: `medium` (verified_sources, score 0.685)
+- verified source coverage: 2/6 (33.3%)
 - claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, claim_evidence_weak, partial_source_verification, low_verified_coverage
+- quality reasons: claim_evidence_weak, partial_source_verification, low_verified_coverage
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak, generic_source_homepage
+- hygiene flags: claim_evidence_weak, generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 8. Environmental Science: Ecosystems and Global Change
+### 5. Backpropagation: The Engine of Neural Network Learning
 
-- canonical slug: `science/environmental-science`
-- canonical URL: https://anchorfact.org/science/environmental-science/
+- canonical slug: `ai/backpropagation`
+- canonical URL: https://anchorfact.org/ai/backpropagation/
 - bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.465)
-- verified source coverage: 1/4 (25.0%)
+- confidence: `medium` (verified_sources, score 0.685)
+- verified source coverage: 1/3 (33.3%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: claim_evidence_weak, partial_source_verification, low_verified_coverage
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
+
+### 6. LLM Inference Optimization: From FlashAttention to Speculative Decoding
+
+- canonical slug: `ai/llm-inference-optimization`
+- canonical URL: https://anchorfact.org/ai/llm-inference-optimization/
+- bucket: `low_verified_coverage`
+- confidence: `medium` (verified_sources, score 0.685)
+- verified source coverage: 1/3 (33.3%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 7. World Models: Video Prediction, Physical Reasoning, and Interactive AI
+
+- canonical slug: `ai/world-models-video-prediction`
+- canonical URL: https://anchorfact.org/ai/world-models-video-prediction/
+- bucket: `low_verified_coverage`
+- confidence: `medium` (verified_sources, score 0.705)
+- verified source coverage: 1/3 (33.3%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak, partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
+
+### 8. Aesthetics
+
+- canonical slug: `arts/aesthetics`
+- canonical URL: https://anchorfact.org/arts/aesthetics/
+- bucket: `low_verified_coverage`
+- confidence: `low` (verified_sources, score 0.475)
+- verified source coverage: 2/6 (33.3%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
 - recommendation: `repair_sources`
 
 ### 9. GPT (Generative Pre-trained Transformer) Model Family
@@ -196,10 +196,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 11. C Programming Language
+### 11. AI in Healthcare: Diagnostics, Drug Discovery, and Robotics
 
-- canonical slug: `computer-science/c-language`
-- canonical URL: https://anchorfact.org/computer-science/c-language/
+- canonical slug: `ai/ai-in-healthcare`
+- canonical URL: https://anchorfact.org/ai/ai-in-healthcare/
 - bucket: `high_confidence`
 - confidence: `high` (verified_sources, score 0.865)
 - verified source coverage: 3/3 (100.0%)
@@ -211,14 +211,14 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 12. Affective Computing: Multimodal Emotion Recognition, Sentiment Analysis, and Empathetic AI
+### 12. AI Red Teaming: Security Testing for Language Models
 
-- canonical slug: `ai/affective-computing`
-- canonical URL: https://anchorfact.org/ai/affective-computing/
+- canonical slug: `ai/ai-red-teaming-and-safety`
+- canonical URL: https://anchorfact.org/ai/ai-red-teaming-and-safety/
 - bucket: `high_confidence`
-- confidence: `high` (verified_sources, score 0.85)
-- verified source coverage: 2/2 (100.0%)
-- claims: 2 total, 0 capped, 0 missing evidence
+- confidence: `high` (verified_sources, score 0.865)
+- verified source coverage: 3/3 (100.0%)
+- claims: 3 total, 0 capped, 0 missing evidence
 - quality reasons: none
 - source-title match: `pass`
 - claim-evidence match: `pass`
@@ -226,40 +226,25 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 13. AI in Healthcare: Diagnostics, Drug Discovery, and Robotics
+### 13. Contrastive Learning: SimCLR, MoCo, and CLIP
 
-- canonical slug: `ai/ai-in-healthcare`
-- canonical URL: https://anchorfact.org/ai/ai-in-healthcare/
+- canonical slug: `ai/contrastive-learning`
+- canonical URL: https://anchorfact.org/ai/contrastive-learning/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.76)
-- verified source coverage: 2/2 (100.0%)
+- confidence: `medium` (verified_sources, score 0.69)
+- verified source coverage: 1/2 (50.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
-- recommendation: `repair_sources`
-
-### 14. AI Red Teaming: Security Testing for Language Models
-
-- canonical slug: `ai/ai-red-teaming-and-safety`
-- canonical URL: https://anchorfact.org/ai/ai-red-teaming-and-safety/
-- bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.795)
-- verified source coverage: 2/3 (66.7%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
+- quality reasons: partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
+- hygiene flags: duplicate_sources
 - recommendation: `repair_sources`
 
-### 15. AI Training Data Curation: Quality at Scale
+### 14. Distributed Training: FSDP, DeepSpeed, and Scaling Laws
 
-- canonical slug: `ai/ai-training-data-curation`
-- canonical URL: https://anchorfact.org/ai/ai-training-data-curation/
+- canonical slug: `ai/distributed-training-systems`
+- canonical URL: https://anchorfact.org/ai/distributed-training-systems/
 - bucket: `medium_capped_claims`
 - confidence: `medium` (verified_sources, score 0.71)
 - verified source coverage: 1/2 (50.0%)
@@ -271,55 +256,70 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: claim_evidence_weak
 - recommendation: `repair_sources`
 
-### 16. AI Video Generation: Sora, Veo, and the Future of Synthetic Media
+### 15. Dropout and Regularization Techniques
 
-- canonical slug: `ai/ai-video-generation`
-- canonical URL: https://anchorfact.org/ai/ai-video-generation/
+- canonical slug: `ai/dropout-and-regularization`
+- canonical URL: https://anchorfact.org/ai/dropout-and-regularization/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.72)
+- confidence: `medium` (verified_sources, score 0.7)
+- verified source coverage: 2/2 (100.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, claim_evidence_weak
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak, duplicate_sources, generic_source_homepage
+- recommendation: `repair_sources`
+
+### 16. Edge AI and TinyML: Intelligence at the Edge
+
+- canonical slug: `ai/edge-ai-and-tinyml`
+- canonical URL: https://anchorfact.org/ai/edge-ai-and-tinyml/
+- bucket: `medium_capped_claims`
+- confidence: `medium` (verified_sources, score 0.67)
 - verified source coverage: 1/2 (50.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: claim_evidence_weak, partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
+- hygiene flags: claim_evidence_weak, duplicate_sources
 - recommendation: `repair_sources`
 
-### 17. Ocean Currents
+### 17. Mayan Civilization
 
-- canonical slug: `geography/ocean-currents`
-- canonical URL: https://anchorfact.org/geography/ocean-currents/
+- canonical slug: `history/mayan-civilization`
+- canonical URL: https://anchorfact.org/history/mayan-civilization/
 - bucket: `low_confidence_public`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
+- confidence: `low` (verified_sources, score 0.55)
+- verified source coverage: 2/3 (66.7%)
 - claims: 5 total, 5 capped, 0 missing evidence
-- quality reasons: generic_source_homepage
-- source-title match: `pass`
+- quality reasons: partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 18. Meiji Restoration
+
+- canonical slug: `history/meiji-restoration`
+- canonical URL: https://anchorfact.org/history/meiji-restoration/
+- bucket: `low_confidence_public`
+- confidence: `low` (verified_sources, score 0.55)
+- verified source coverage: 2/3 (66.7%)
+- claims: 5 total, 5 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification
+- source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 18. Oceania Geography
+### 19. Napoleonic Era
 
-- canonical slug: `geography/oceania-geography`
-- canonical URL: https://anchorfact.org/geography/oceania-geography/
-- bucket: `low_confidence_public`
-- confidence: `low` (verified_sources, score 0.43)
-- verified source coverage: 1/1 (100.0%)
-- claims: 5 total, 5 capped, 0 missing evidence
-- quality reasons: generic_source_homepage
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 19. South America Geography
-
-- canonical slug: `geography/south-america-geography`
-- canonical URL: https://anchorfact.org/geography/south-america-geography/
+- canonical slug: `history/napoleonic-era`
+- canonical URL: https://anchorfact.org/history/napoleonic-era/
 - bucket: `low_confidence_public`
 - confidence: `low` (verified_sources, score 0.43)
 - verified source coverage: 1/1 (100.0%)
@@ -331,19 +331,19 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 20. Enlightenment Era
+### 20. Renaissance
 
-- canonical slug: `history/enlightenment-era`
-- canonical URL: https://anchorfact.org/history/enlightenment-era/
+- canonical slug: `history/renaissance`
+- canonical URL: https://anchorfact.org/history/renaissance/
 - bucket: `low_confidence_public`
-- confidence: `low` (verified_sources, score 0.47)
+- confidence: `low` (verified_sources, score 0.43)
 - verified source coverage: 1/1 (100.0%)
 - claims: 5 total, 5 capped, 0 missing evidence
 - quality reasons: none
 - source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: none
+- hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
 ## Rule Calibration

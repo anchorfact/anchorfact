@@ -1,12 +1,12 @@
 ---
 id: astronomy-and-cosmology
-title: 'Astronomy and Cosmology: From Solar System to the Universe'
+title: "Astronomy and Cosmology: From Solar System to the Universe"
 schema_type: Article
 category: science
 language: en
-confidence: medium
-last_verified: '2026-05-25'
-created_date: '2026-05-24'
+confidence: high
+last_verified: "2026-05-28"
+created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -16,110 +16,64 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-sci-astro-001
-    statement: The Cosmic Microwave Background radiation, discovered by Penzias and Wilson in 1965, provides the strongest evidence for the Big Bang theory.
-    source_title: 'Planck 2018 results: Cosmological parameters (A&A 2020)'
+    statement: "Planck 2018 cosmological-parameter results use cosmic microwave background observations to constrain the standard cosmological model."
+    source_title: Planck 2018 Results VI Cosmological Parameters
     source_url: https://doi.org/10.1051/0004-6361/201833910
     confidence: high
   - id: fact-sci-astro-002
-    statement: Dark energy constitutes ~68% of the total energy density of the universe (Planck Collaboration).
-    source_title: Planck Collaboration, Astronomy & Astrophysics 2020
+    statement: "The Planck 2018 results estimate dark energy at about 68 percent of the universe's total energy density in the Lambda-CDM model."
+    source_title: Planck 2018 Results VI Cosmological Parameters
     source_url: https://doi.org/10.1051/0004-6361/201833910
     confidence: high
   - id: fact-sci-astro-003
-    statement: The EHT captured the first direct image of a black hole (M87*) in 2019, confirming general relativity predictions.
-    source_title: EHT Collaboration, The Astrophysical Journal Letters 2019
+    statement: "The Event Horizon Telescope Collaboration published the first horizon-scale image of the supermassive black hole in M87 in 2019."
+    source_title: First M87 Event Horizon Telescope Results I The Shadow of the Supermassive Black Hole
     source_url: https://doi.org/10.3847/2041-8213/ab0ec7
     confidence: high
-completeness: 0.9
-primary_sources:
-  - title: An Introduction to Modern Astrophysics, 2nd Edition
-    type: textbook
-    year: 2017
-    url: https://www.cambridge.org/9781108422161
-    institution: Cambridge University Press
-  - title: NASA JWST Science
-    type: official_documentation
-    year: 2024
-    url: https://webb.nasa.gov/
-    institution: NASA
-  - title: An Introduction to Modern Astrophysics (2nd Edition)
-    authors:
-      - Carroll, B.W.
-      - Ostlie, D.A.
-    type: book
-    year: 2017
-    institution: Cambridge University Press
-  - title: Cosmology
-    authors:
-      - Weinberg, S.
-    type: book
-    year: 2008
-    institution: Oxford University Press
+completeness: 0.85
 known_gaps:
   - Dark energy nature
-  - Gravitational wave astronomy (LIGO)
-disputed_statements:
-  - statement: No major disputed statements identified
-secondary_sources:
-  - title: An Introduction to Modern Astrophysics (Carroll & Ostlie, 2nd Edition)
-    type: textbook
-    year: 2017
-    authors:
-      - Carroll, Bradley W.
-      - Ostlie, Dale A.
-    institution: Cambridge University Press
-    url: https://doi.org/10.1017/9781108380980
-  - title: A Brief History of Time (Hawking)
-    type: textbook
-    year: 1988
-    authors:
-      - Hawking, Stephen
-    institution: Bantam Books
-    url: https://www.penguinrandomhouse.com/books/18981/a-brief-history-of-time-by-stephen-hawking/
-  - title: 'JWST First Science Results: Early Universe and Exoplanet Atmospheres'
-    type: journal_article
-    year: 2024
-    authors:
-      - NASA / ESA / CSA JWST Team
-    institution: Nature
-    url: https://doi.org/10.1038/d41586-024-02588-6
-  - title: The First Direct Image of a Black Hole (Event Horizon Telescope)
-    type: journal_article
+  - Gravitational wave astronomy
+disputed_statements: []
+primary_sources:
+  - title: Planck 2018 Results VI Cosmological Parameters
+    type: academic_paper
+    year: 2020
+    url: https://doi.org/10.1051/0004-6361/201833910
+    doi: 10.1051/0004-6361/201833910
+    institution: Astronomy and Astrophysics
+  - title: First M87 Event Horizon Telescope Results I The Shadow of the Supermassive Black Hole
+    type: academic_paper
     year: 2019
-    authors:
-      - Event Horizon Telescope Collaboration
-    institution: Nature / ApJL
     url: https://doi.org/10.3847/2041-8213/ab0ec7
-  - title: 'Webb Space Telescope First 3 Years: Transformative Discoveries 2022-2025'
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: Nature Astronomy
-    url: https://doi.org/10.1038/s41550-2025-jwst
-  - title: 'Dark Energy and Cosmic Acceleration: DESI Year 1 Results and Future Surveys (2025)'
-    type: article
-    year: 2025
-    authors:
-      - DESI Collaboration
-    institution: The Astrophysical Journal
-    url: https://doi.org/10.3847/apj.2025.desi
-updated: '2026-05-24'
+    doi: 10.3847/2041-8213/ab0ec7
+    institution: The Astrophysical Journal Letters
+secondary_sources:
+  - title: NASA JWST Science
+    type: official_documentation
+    year: 2026
+    url: https://science.nasa.gov/mission/webb/
+    institution: NASA
+updated: "2026-05-28"
 ---
 
 ## TL;DR
-Astronomy explores the universe from nearby planets to the cosmic horizon. The Big Bang model, confirmed by cosmic microwave background, describes a 13.8-billion-year history of expansion and structure formation.
+
+Astronomy and cosmology study objects and structure from planets and stars to galaxies, black holes, and the expanding universe.
 
 ## Core Explanation
-The solar system: 8 planets, dwarf planets, asteroid belt, Kuiper belt (Pluto), Oort cloud. Stars: born from collapsing gas clouds, fuse hydrogen to helium in cores, die as white dwarfs, neutron stars, or black holes depending on mass. Galaxies: spiral (Milky Way), elliptical, irregular — grouped in clusters and superclusters.
+
+The repaired public claims focus on two well-defined evidence anchors: Planck's cosmic microwave background constraints on cosmological parameters and the Event Horizon Telescope's first image of M87's black hole shadow.
 
 ## Detailed Analysis
-The universe composition: 68% dark energy, 27% dark matter, 5% ordinary matter. Dark energy accelerates cosmic expansion (discovered by Riess, Perlmutter, Schmidt — Nobel 2011). Exoplanet detection: transit method (Kepler, TESS — over 5,500 confirmed), radial velocity, direct imaging.
+
+The previous source list mixed textbook entries and unrelated or future-looking JWST claims. JWST, exoplanets, gravitational waves, and stellar evolution remain important topics but need their own direct evidence before being exposed as public claims here.
 
 ## Further Reading
-- NASA Astronomy Picture of the Day
-- ESA/Hubble & JWST Image Galleries
-- arXiv: Astrophysics
+
+- [Planck 2018 Results VI](https://doi.org/10.1051/0004-6361/201833910)
+- [First M87 Event Horizon Telescope Results](https://doi.org/10.3847/2041-8213/ab0ec7)
+- [NASA Webb Mission](https://science.nasa.gov/mission/webb/)
 
 ## Related Articles
 

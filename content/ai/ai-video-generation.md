@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -16,93 +16,67 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: f1
-    statement: >-
-      Sora (OpenAI 2024) generates up to 1-minute videos from text prompts using a diffusion transformer architecture, demonstrating emergent 3D consistency, object permanence, and world simulation
-      capabilities.
-    source_title: OpenAI. Video Generation Models as World Simulators (Sora). 2024
-    source_url: https://openai.com/research/video-generation-models-as-world-simulators
-    confidence: high
+    statement: "OpenAI's Sora research post describes a generalist visual model that can generate videos and images across durations, aspect ratios, and resolutions up to a full minute of high-definition video."
+    source_title: Video generation models as world simulators
+    source_url: https://openai.com/index/video-generation-models-as-world-simulators/
+    confidence: medium
   - id: f2
-    statement: >-
-      Runway Gen-3 Alpha (2024) and Kling (Kuaishou 2024) represent the commercial frontier of text-to-video generation, producing cinematic-quality video with fine-grained control over motion,
-      lighting, and camera angles.
-    source_title: "Runway Research. Gen-3 Alpha: High-Fidelity Controllable Video Generation. 2024"
-    source_url: https://runwayml.com/research/
-    confidence: high
+    statement: "Google introduced Veo in 2024 as a video-generation model for creating high-quality 1080p video with cinematic styles."
+    source_title: Google I/O 2024 Introducing Veo and Imagen 3
+    source_url: https://blog.google/technology/ai/google-generative-ai-veo-imagen-3/
+    confidence: medium
   - id: f3
-    statement: >-
-      Video diffusion models (Ho et al. 2022, Google) extend image diffusion to the temporal dimension with 3D U-Net architectures, enabling both unconditional and text-conditioned video generation
-      from noise.
-    source_title: "Ho, Jonathan, et al. Imagen Video: High Definition Video Generation with Diffusion Models. Google 2022"
-    source_url: https://arxiv.org/abs/2204.03458
-    confidence: high
-completeness: 0.9
+    statement: "Imagen Video is a text-conditioned video generation system based on a cascade of video diffusion models."
+    source_title: Imagen Video High Definition Video Generation with Diffusion Models
+    source_url: https://arxiv.org/abs/2210.02303
+    confidence: medium
+completeness: 0.85
 known_gaps:
   - Long-form narrative video generation
   - AI video watermarking standards
-disputed_statements:
-  - statement: No major disputed statements identified
+disputed_statements: []
 primary_sources:
-  - title: Video generation models as world simulators (Sora)
-    type: academic_paper
+  - title: Video generation models as world simulators
+    type: official_report
     year: 2024
     url: https://openai.com/index/video-generation-models-as-world-simulators/
     institution: OpenAI
-  - title: "Veo: Google's Most Capable Video Generation Model"
+  - title: Google I/O 2024 Introducing Veo and Imagen 3
     type: official_report
-    year: 2025
-    url: https://deepmind.google/technologies/veo/
-    institution: Google DeepMind
-secondary_sources:
-  - title: Video Generation Models as World Simulators (Sora)
-    type: technical_report
     year: 2024
-    authors:
-      - Brooks, Tim
-      - Peebles, Bill
-      - Holmes, Connor
-      - et al.
-    institution: OpenAI
-    url: https://openai.com/research/video-generation-models-as-world-simulators
-  - title: "A Comprehensive Survey of AI Video Generation: From GANs to Diffusion Models to World Models"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: IEEE TPAMI
-    url: https://doi.org/10.1109/TPAMI.2024.3385267
-  - title: "Make-A-Video: Text-to-Video Generation without Text-Video Data (Meta AI)"
-    type: conference_paper
+    url: https://blog.google/technology/ai/google-generative-ai-veo-imagen-3/
+    institution: Google
+  - title: Imagen Video High Definition Video Generation with Diffusion Models
+    type: academic_paper
     year: 2022
-    authors:
-      - Singer, Uriel
-      - Polyak, Adam
-      - Hayes, Thomas
-      - et al.
-    institution: Meta AI
-    url: https://arxiv.org/abs/2209.14792
-  - title: "Runway Gen-3 and the State of AI Video Generation: A 2025 Industry Report"
-    type: report
-    year: 2025
-    authors:
-      - Runway Research
-    institution: Runway ML
-    url: https://runwayml.com/research/
-updated: "2026-05-24"
+    url: https://arxiv.org/abs/2210.02303
+    institution: Google Research / arXiv
+secondary_sources:
+  - title: Veo
+    type: official_documentation
+    year: 2026
+    url: https://deepmind.google/models/veo/
+    institution: Google DeepMind
+updated: "2026-05-28"
 ---
+
 ## TL;DR
-AI video generation exploded in 2024-2025 from research demos to commercial tools. Sora, Veo, and Runway now generate minutes of coherent video from text prompts, with professional filmmaking applications emerging.
+
+AI video generation uses generative models to create or transform video from text, image, or video inputs. Sora, Veo, and diffusion-based research systems illustrate different parts of the field.
 
 ## Core Explanation
-Diffusion transformers form the architectural backbone: starting from noise, the model iteratively denoises toward a video that matches the text description. Spacetime patches treat video as 3D data (width × height × time). Training on massive video datasets teaches physics simulation: objects fall, water flows, light reflects.
+
+The repaired public claims now cite OpenAI's Sora research post, Google's official Veo announcement, and the Imagen Video paper. Claims about commercial rankings, regional competitors, and current product capabilities should be refreshed separately because this area changes quickly.
 
 ## Detailed Analysis
-Sora's "world model" hypothesis: training on enough video data causes the model to develop an internal understanding of physics. Veo 3's real-time mode enables interactive video generation. Runway Gen-4 offers professional video editing within existing footage. Kling (Kuaishou) and Wan (Alibaba) represent Chinese competitors.
+
+Diffusion and transformer-based systems generate video by modeling visual data across space and time. The strongest evidence here supports high-level capability descriptions rather than broad statements about world simulation, physical reasoning, or professional adoption.
 
 ## Further Reading
-- Runway Research Blog
-- Papers With Code: Video Generation
-- C2PA Content Credentials Standard
+
+- [OpenAI: Video generation models as world simulators](https://openai.com/index/video-generation-models-as-world-simulators/)
+- [Google: Introducing Veo and Imagen 3](https://blog.google/technology/ai/google-generative-ai-veo-imagen-3/)
+- [Imagen Video](https://arxiv.org/abs/2210.02303)
 
 ## Related Articles
 

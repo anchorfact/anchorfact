@@ -4,93 +4,79 @@ title: "Ocean Currents"
 schema_type: "TechArticle"
 category: "geography"
 language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+confidence: "medium"
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+ai_models:
+  - "claude-opus"
 derived_from_human_seed: true
 conflict_of_interest: "none_declared"
 is_live_document: false
 data_period: "static"
-
 atomic_facts:
   - id: "fact-geography-001"
-    statement: "Ocean currents are continuous, directed movements of seawater driven by wind, temperature, salinity differences, and Earth's rotation (Coriolis effect). Surface currents (top 400m) circulate in gyres. Deep ocean circulation (thermohaline) spans the globe — the 'global conveyor belt.'"
-    source_title: "NOAA Ocean Currents"
-    source_url: "https://oceanservice.noaa.gov/education/tutorial_currents/"
+    statement: "NOAA describes ocean currents as moving seawater driven by wind, density differences, and Earth's rotation."
+    source_title: "What causes ocean currents"
+    source_url: "https://oceanexplorer.noaa.gov/ocean-fact/currents/"
     confidence: "medium"
   - id: "fact-geography-002"
-    statement: "Major currents: Gulf Stream (warm, North Atlantic, moderates Europe's climate), Kuroshio (Pacific), Antarctic Circumpolar (largest, 130 million m³/s)."
-    source_title: "NOAA Ocean Currents"
-    source_url: "https://oceanservice.noaa.gov/education/tutorial_currents/"
+    statement: "NOAA defines gyres as large systems of rotating ocean currents and identifies five major subtropical gyres."
+    source_title: "What is a gyre"
+    source_url: "https://oceanservice.noaa.gov/facts/gyre.html"
     confidence: "medium"
   - id: "fact-geography-003"
-    statement: "Gyres: rotate clockwise in Northern Hemisphere, counterclockwise in Southern."
-    source_title: "NOAA Ocean Currents"
-    source_url: "https://oceanservice.noaa.gov/education/tutorial_currents/"
+    statement: "NOAA explains that garbage patches form where marine debris concentrates within ocean gyres, including the Great Pacific Garbage Patch."
+    source_title: "Garbage Patches"
+    source_url: "https://marinedebris.noaa.gov/discover-marine-debris/garbage-patches"
     confidence: "medium"
-  - id: "fact-geography-004"
-    statement: "Great Pacific Garbage Patch: plastic accumulated by gyre currents."
-    source_title: "NOAA Ocean Currents"
-    source_url: "https://oceanservice.noaa.gov/education/tutorial_currents/"
-    confidence: "medium"
-  - id: "fact-geography-005"
-    statement: "AMOC (Atlantic Meridional Overturning Circulation): potential slowdown from climate change — catastrophic climate impacts."
-    source_title: "NOAA Ocean Currents"
-    source_url: "https://oceanservice.noaa.gov/education/tutorial_currents/"
-    confidence: "medium"
-
-completeness: 0.88
-
+completeness: 0.82
 known_gaps:
-  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
-  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - Regional current systems and seasonal variability are not exhaustively covered
+  - AMOC trends and climate-change impacts require separate specialist sources
+disputed_statements: []
 primary_sources:
-  - title: "NOAA Ocean Currents"
-    type: "documentation"
+  - title: "What causes ocean currents"
+    type: "government_report"
     year: 2026
-    url: "https://oceanservice.noaa.gov/education/tutorial_currents/"
-    institution: "NOAA"
-
+    url: "https://oceanexplorer.noaa.gov/ocean-fact/currents/"
+    institution: "NOAA Ocean Exploration"
+  - title: "What is a gyre"
+    type: "government_report"
+    year: 2026
+    url: "https://oceanservice.noaa.gov/facts/gyre.html"
+    institution: "NOAA National Ocean Service"
+  - title: "Garbage Patches"
+    type: "government_report"
+    year: 2026
+    url: "https://marinedebris.noaa.gov/discover-marine-debris/garbage-patches"
+    institution: "NOAA Marine Debris Program"
 secondary_sources:
-  - title: "NOAA Ocean Explorer"
-    type: "reference"
-    year: 2025
-    url: "https://oceanexplorer.noaa.gov/"
-    institution: "National Oceanic and Atmospheric Administration"
-  - title: "National Geographic Atlas of the World, 11th Ed"
-    type: "reference"
-    year: 2019
-    url: "https://www.nationalgeographic.com/books/atlas/"
-    institution: "National Geographic Society"
-
+  - title: "Thermohaline Circulation"
+    type: "government_report"
+    year: 2026
+    url: "https://oceanservice.noaa.gov/education/tutorial_currents/05conveyor1.html"
+    institution: "NOAA National Ocean Service"
+updated: "2026-05-28"
 ---
-
-
 
 ## TL;DR
 
-Ocean currents are continuous, directed movements of seawater driven by wind, temperature, salinity differences, and Earth's rotation (Coriolis effect). Surface currents (top 400m) circulate in gyres. Deep ocean circulation (thermohaline) spans the globe — the 'global conveyor belt.'
+Ocean currents are directed movements of seawater shaped by wind, density differences, Earth's rotation, basin geometry, and exchanges between surface and deep waters.
 
 ## Core Explanation
 
-Major currents: Gulf Stream (warm, North Atlantic, moderates Europe's climate), Kuroshio (Pacific), Antarctic Circumpolar (largest, 130 million m³/s). Gyres: rotate clockwise in Northern Hemisphere, counterclockwise in Southern. Great Pacific Garbage Patch: plastic accumulated by gyre currents. AMOC (Atlantic Meridional Overturning Circulation): potential slowdown from climate change — catastrophic climate impacts.
+Surface currents organize into large rotating gyres. Deep currents are strongly influenced by density differences caused by temperature and salinity. Floating debris can concentrate in gyre systems, producing garbage patches.
+
+## Detailed Analysis
+
+The repaired article removes unsupported claims about specific current sizes and catastrophic AMOC impacts. Those topics need dedicated source review before returning to public claims.
 
 ## Further Reading
 
-- [NOAA Ocean Currents](https://oceanservice.noaa.gov/education/tutorial_currents/)
-atomic_facts:
-  - id: "fact-geography-001"
-    statement: "Ocean currents are continuous, directed movements of seawater driven by wind, temperature, salinity differences, and Earth's rotation (Coriolis effect)"
-    confidence: "medium"
-  - id: "fact-geography-002"
-    statement: "Deep ocean circulation (thermohaline) spans the globe — the 'global conveyor belt.' Major currents: Gulf Stream (warm, North Atlantic, moderates Europe's climate), Kuroshio (Pacific), Antarctic Circumpolar (largest, 130 million m³/s)"
-    confidence: "medium"
+- [NOAA Ocean Exploration: What causes ocean currents](https://oceanexplorer.noaa.gov/ocean-fact/currents/)
+- [NOAA: What is a gyre?](https://oceanservice.noaa.gov/facts/gyre.html)
+- [NOAA Marine Debris Program: Garbage Patches](https://marinedebris.noaa.gov/discover-marine-debris/garbage-patches)
 
 ## Related Articles
 

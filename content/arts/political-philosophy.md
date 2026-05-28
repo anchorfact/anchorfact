@@ -5,7 +5,7 @@ schema_type: Article
 category: arts
 language: en
 confidence: high
-last_verified: "2026-05-24"
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -16,110 +16,67 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-art-pp-001
-    statement: "Rawls' Theory of Justice (1971): veil of ignorance, difference principle, distributive justice."
-    source_title: Rawls, J. A Theory of Justice (Harvard 1971, revised 1999)
-    source_url: https://www.hup.harvard.edu/catalog.php?isbn=9780674000780
+    statement: "John Rawls's A Theory of Justice uses the original position and veil of ignorance to derive principles of justice for a social contract."
+    source_title: A Theory of Justice
+    source_url: https://www.hup.harvard.edu/books/9780674000780
     confidence: high
   - id: fact-art-pp-002
-    statement: "Berlin's Two Concepts of Liberty (1958): negative liberty (freedom from) vs. positive liberty (self-mastery)."
-    source_title: Berlin, I. Two Concepts of Liberty (Clarendon 1958/1969)
-    source_url: https://doi.org/10.1093/019924989X.001.0001
+    statement: "Isaiah Berlin's Two Concepts of Liberty distinguishes negative liberty from positive liberty."
+    source_title: Two Concepts of Liberty
+    source_url: https://academic.oup.com/book/7968/chapter-abstract/153281672
     confidence: high
   - id: fact-art-pp-003
-    statement: "Arendt's Origins of Totalitarianism (1951): analyzed shared roots of Nazism and Stalinism."
-    source_title: Arendt, H. Origins of Totalitarianism (Harcourt 1951)
-    source_url: https://www.semanticscholar.org/paper/origins-of-totalitarianism
+    statement: "Hannah Arendt's The Origins of Totalitarianism analyzes Nazism and Stalinism as modern totalitarian movements."
+    source_title: The Origins of Totalitarianism
+    source_url: https://www.penguinrandomhouse.com/books/770207/hannah-arendt-the-origins-of-totalitarianism-expanded-edition-loa-389-by-hannah-arendt--jerome-kohn-and-thomas-wild-editors/
     confidence: high
-completeness: 0.9
+completeness: 0.82
 known_gaps:
   - Non-Western political philosophy traditions
   - Digital governance and platform democracy
-disputed_statements:
-  - statement: No major disputed statements identified
+disputed_statements: []
 primary_sources:
   - title: A Theory of Justice
-    type: textbook
-    year: 1971
-    url: https://www.hup.harvard.edu/catalog.php?isbn=9780674000780
-    institution: Harvard University Press
-  - title: Leviathan
-    type: literature
-    year: 1651
-    url: https://www.cambridge.org/9780521567978
-    institution: Cambridge University Press
-  - title: "Justice: What's the Right Thing to Do? (2025 Updated Edition)"
     type: book
-    year: 2025
-    authors:
-      - Sandel M.J.
-    institution: Farrar, Straus and Giroux
-    url: https://us.macmillan.com/justice/
-  - title: Political Philosophy in the Twenty-First Century (2025)
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Cambridge University Press
-    url: https://doi.org/10.1017/cbo.2025.polphil
-secondary_sources:
-  - title: History of Political Philosophy (Strauss & Cropsey, 3rd Edition)
-    type: textbook
-    year: 1987
-    authors:
-      - Strauss, Leo
-      - Cropsey, Joseph (eds.)
-    institution: University of Chicago Press
-    url: https://doi.org/10.7208/9780226777108
-  - title: A Theory of Justice (Rawls)
-    type: textbook
-    year: 1971
-    authors:
-      - Rawls, John
+    year: 1999
+    url: https://www.hup.harvard.edu/books/9780674000780
     institution: Harvard University Press
-    url: https://doi.org/10.4159/9780674042605
-  - title: On Liberty (Mill)
-    type: textbook
-    year: 1859
-    authors:
-      - Mill, John Stuart
-    institution: Penguin Classics
-    url: https://www.penguinrandomhouse.com/books/292641/on-liberty-by-john-stuart-mill/
-  - title: "Freedom House: Freedom in the World 2025 — The Global State of Political Rights and Civil Liberties"
-    type: report
-    year: 2025
-    authors:
-      - Freedom House
-    institution: Freedom House
-    url: https://freedomhouse.org/report/freedom-world
-  - title: Democracy in Crisis? Political Philosophy Responses to Authoritarianism, Populism, and AI (2025)
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: Cambridge University Press
-    url: https://doi.org/10.1017/caj.2025.polphil
-  - title: "Justice and Technology: Rawlsian Approaches to AI Fairness and Digital Rights (2025)"
-    type: article
-    year: 2025
-    authors:
-      - multiple
+  - title: Two Concepts of Liberty
+    type: book_chapter
+    year: 2002
+    url: https://academic.oup.com/book/7968/chapter-abstract/153281672
     institution: Oxford University Press
-    url: https://global.oup.com/academic/philosophy/
-updated: "2026-05-24"
+  - title: The Origins of Totalitarianism
+    type: book
+    year: 2024
+    url: https://www.penguinrandomhouse.com/books/770207/hannah-arendt-the-origins-of-totalitarianism-expanded-edition-loa-389-by-hannah-arendt--jerome-kohn-and-thomas-wild-editors/
+    institution: Library of America / Penguin Random House
+secondary_sources:
+  - title: Political Philosophy
+    type: reference
+    year: 2024
+    url: https://plato.stanford.edu/entries/political-philosophy/
+    institution: Stanford Encyclopedia of Philosophy
+updated: "2026-05-28"
 ---
+
 ## TL;DR
-Political philosophy addresses fundamental questions of governance: What is justice? What justifies state authority? The social contract tradition — Hobbes through Locke and Rousseau to Rawls — provides the dominant Western framework.
+
+Political philosophy asks how authority, rights, liberty, equality, and justice can be justified. Modern social-contract theory remains one important tradition, but it is only one part of the field.
 
 ## Core Explanation
-Hobbes argued for absolute sovereignty. Locke countered with natural rights justifying revolution. Rousseau emphasized the general will. Rawls synthesized social contract theory with distributive justice.
+
+Rawls renewed social-contract reasoning by asking what principles free and equal people would choose behind a veil of ignorance. Berlin clarified a lasting distinction between freedom from interference and freedom as self-direction. Arendt's study of totalitarianism remains a central twentieth-century analysis of political domination.
 
 ## Detailed Analysis
-Nozick's libertarian critique argues only a minimal state is justified. Communitarianism (Sandel, MacIntyre) critiques liberalism's abstract individualism.
+
+The article now keeps only claims tied to specific reviewed sources. Broader themes such as Hobbes, Locke, Rousseau, Nozick, communitarianism, and non-Western traditions should be expanded only with direct evidence.
 
 ## Further Reading
-- Stanford Encyclopedia of Philosophy: Political Philosophy
-- The Harvard Justice Course (Michael Sandel, free online)
-- Philosophy Bites Podcast
+
+- [A Theory of Justice](https://www.hup.harvard.edu/books/9780674000780)
+- [Two Concepts of Liberty](https://academic.oup.com/book/7968/chapter-abstract/153281672)
+- [The Origins of Totalitarianism](https://www.penguinrandomhouse.com/books/770207/hannah-arendt-the-origins-of-totalitarianism-expanded-edition-loa-389-by-hannah-arendt--jerome-kohn-and-thomas-wild-editors/)
 
 ## Related Articles
 
