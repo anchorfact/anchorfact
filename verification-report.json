@@ -18138,7 +18138,10 @@
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html"
+                "final_url": "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html",
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifty-first targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -18147,7 +18150,9 @@
         }
       ],
       "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/arts/photography-fundamentals.md",
@@ -18247,16 +18252,19 @@
       "sources_total": 1,
       "verification_results": [
         {
-          "source_title": "The Poetry Handbook (Mary Oliver)",
+          "source_title": "A Poetry Handbook (Mary Oliver)",
           "source_type": "book",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.harpercollins.com/products/a-poetry-handbook-mary-oliver?variant=32208032890914",
+              "identifier": "https://www.harpercollins.com/products/a-poetry-handbook-mary-oliver",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://www.harpercollins.com/products/a-poetry-handbook-mary-oliver?variant=32208032890914"
+                "final_url": "https://www.harpercollins.com/products/a-poetry-handbook-mary-oliver",
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifty-first targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -18265,7 +18273,9 @@
         }
       ],
       "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/arts/political-philosophy.md",
@@ -18406,16 +18416,19 @@
       "sources_total": 1,
       "verification_results": [
         {
-          "source_title": "Shakespeare: The Invention of the Human (Harold Bloom)",
-          "source_type": "book",
+          "source_title": "The Oxford Shakespeare: The Complete Works",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/75451/shakespeare-by-harold-bloom/",
+              "identifier": "https://global.oup.com/academic/product/the-oxford-shakespeare-9780199267170",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/75451/shakespeare-by-harold-bloom/"
+                "final_url": "https://global.oup.com/academic/product/the-oxford-shakespeare-9780199267170",
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifty-first targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -18424,7 +18437,9 @@
         }
       ],
       "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/arts/theater-history.md",
@@ -47701,7 +47716,10 @@
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html"
+                "final_url": "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html",
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Fifty-first targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -47710,7 +47728,9 @@
         }
       ],
       "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/semiconductor-physics-band-theory-doping-and-the-pn-junction.md",
