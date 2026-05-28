@@ -31,6 +31,26 @@ function githubRepositoryUrl(value) {
   return value;
 }
 
+function isOfficialCloudflarePagesBuild(env, canonicalSite, sourceRepository, branch) {
+  const deploymentUrl = firstEnv(env, ['CF_PAGES_URL']);
+  if (
+    !envBool(env.CF_PAGES)
+    || canonicalSite !== OFFICIAL_SITE
+    || sourceRepository !== OFFICIAL_SOURCE_REPOSITORY
+    || branch !== 'main'
+    || !deploymentUrl
+  ) {
+    return false;
+  }
+
+  try {
+    const hostname = new URL(deploymentUrl).hostname.toLowerCase();
+    return hostname === 'anchorfact.pages.dev' || hostname.endsWith('.anchorfact.pages.dev');
+  } catch {
+    return false;
+  }
+}
+
 function trimTrailingSlash(value) {
   return String(value || '').replace(/\/+$/, '');
 }
@@ -48,6 +68,7 @@ export function buildMetadataFromEnv(env = process.env) {
     firstEnv(env, ['ANCHORFACT_CANONICAL_SITE']) || OFFICIAL_SITE
   );
   const declaredOfficial = envBool(env.ANCHORFACT_OFFICIAL_BUILD);
+  const branch = firstEnv(env, ['ANCHORFACT_BRANCH', 'CF_PAGES_BRANCH', 'GITHUB_REF_NAME']);
 
   const builder = firstEnv(env, ['ANCHORFACT_BUILDER'])
     || (envBool(env.CF_PAGES) ? 'cloudflare-pages' : null)
@@ -56,13 +77,13 @@ export function buildMetadataFromEnv(env = process.env) {
 
   return {
     builder,
-    official_build: declaredOfficial
+    official_build: (declaredOfficial || isOfficialCloudflarePagesBuild(env, canonicalSite, sourceRepository, branch))
       && sourceRepository === OFFICIAL_SOURCE_REPOSITORY
       && canonicalSite === OFFICIAL_SITE,
     canonical_site: canonicalSite,
     source_repository: sourceRepository,
     commit_sha: firstEnv(env, ['ANCHORFACT_COMMIT_SHA', 'CF_PAGES_COMMIT_SHA', 'GITHUB_SHA']),
-    branch: firstEnv(env, ['ANCHORFACT_BRANCH', 'CF_PAGES_BRANCH', 'GITHUB_REF_NAME']),
+    branch,
     build_id: firstEnv(env, ['ANCHORFACT_BUILD_ID', 'CF_PAGES_URL', 'GITHUB_RUN_ID'])
   };
 }

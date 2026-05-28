@@ -62,6 +62,31 @@ test('official builds require explicit canonical identity', () => {
   assertEq(fork.official_build, false);
 });
 
+test('official Cloudflare Pages channel is recognized on main', () => {
+  const build = buildMetadataFromEnv({
+    CF_PAGES: '1',
+    CF_PAGES_BRANCH: 'main',
+    CF_PAGES_URL: 'https://6d75e698.anchorfact.pages.dev'
+  });
+  assertEq(build.builder, 'cloudflare-pages');
+  assertEq(build.official_build, true);
+  assertEq(build.build_id, 'https://6d75e698.anchorfact.pages.dev');
+
+  const preview = buildMetadataFromEnv({
+    CF_PAGES: '1',
+    CF_PAGES_BRANCH: 'feature-branch',
+    CF_PAGES_URL: 'https://preview.anchorfact.pages.dev'
+  });
+  assertEq(preview.official_build, false);
+
+  const fork = buildMetadataFromEnv({
+    CF_PAGES: '1',
+    CF_PAGES_BRANCH: 'main',
+    CF_PAGES_URL: 'https://hash.example.pages.dev'
+  });
+  assertEq(fork.official_build, false);
+});
+
 test('github repository shorthand is normalized', () => {
   const build = buildMetadataFromEnv({
     GITHUB_ACTIONS: 'true',
