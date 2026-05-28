@@ -4,8 +4,8 @@ title: Meiji Restoration
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
@@ -15,80 +15,57 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-history-01
-    statement: The Meiji Restoration ended Japan's 265-year Tokugawa shogunate, restored imperial rule, and launched rapid modernization
-    source_title: The Making of Modern Japan (Marius Jansen)
-    source_url: https://www.hup.harvard.edu/catalog.php?isbn=9780674009912
-    confidence: high
-  - id: fact-history-001
+  - id: fact-meiji-1
     statement: >-
-      The Meiji Restoration (1868) ended Japan's 265-year Tokugawa shogunate, restored imperial rule, and launched rapid modernization. Japan transformed from an isolated feudal society to an
-      industrialized world power in a single generation. Slogans: 'Enrich the country, strengthen the military.'
-    source_title: The Making of Modern Japan (Marius Jansen)
-    source_url: https://www.hup.harvard.edu/catalog.php?isbn=9780674009912
+      The Meiji Restoration of 1868 ended the Tokugawa shogunate and restored political authority around the
+      emperor.
+    source_title: Meiji Restoration
+    source_url: https://www.britannica.com/event/Meiji-Restoration
     confidence: medium
-  - id: fact-history-002
-    statement: "Key reforms: abolition of feudal domains (han) → prefectures, universal conscription, compulsory education, land tax reform, constitutional government (1889)."
-    source_title: The Making of Modern Japan (Marius Jansen)
-    source_url: https://www.hup.harvard.edu/catalog.php?isbn=9780674009912
+  - id: fact-meiji-2
+    statement: Britannica describes the opening of Japan in the 1850s as a major pressure on the late Tokugawa order.
+    source_title: "Japan: The opening of Japan"
+    source_url: https://www.britannica.com/place/Japan/The-opening-of-Japan
     confidence: medium
-  - id: fact-history-003
-    statement: "Iwakura Mission (1871-73): studied Western institutions globally."
-    source_title: The Making of Modern Japan (Marius Jansen)
-    source_url: https://www.hup.harvard.edu/catalog.php?isbn=9780674009912
+  - id: fact-meiji-3
+    statement: The Constitution of the Empire of Japan was promulgated in 1889 during the Meiji period.
+    source_title: The Constitution of the Empire of Japan
+    source_url: https://www.ndl.go.jp/constitution/e/etc/c02.html
     confidence: medium
-  - id: fact-history-004
-    statement: "Wars: Sino-Japanese (1894-95, gained Taiwan), Russo-Japanese (1904-05, first Asian power to defeat European power)."
-    source_title: The Making of Modern Japan (Marius Jansen)
-    source_url: https://www.hup.harvard.edu/catalog.php?isbn=9780674009912
-    confidence: medium
-completeness: 0.88
+completeness: 0.84
 known_gaps:
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact repair does not cover every Meiji social, military, and industrial reform.
+disputed_statements: []
 primary_sources:
-  - title: The Making of Modern Japan (Marius Jansen)
-    type: book
-    year: 2000
-    url: https://www.hup.harvard.edu/catalog.php?isbn=9780674009912
-    institution: Harvard University Press
-  - title: "The Meiji Restoration: A Global History (2025)"
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Cambridge University Press
-    url: https://doi.org/10.1017/cbo.2025.meiji
-  - title: "Japan: A Very Short Introduction (2025)"
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-japan/
-secondary_sources:
-  - title: Encyclopaedia Britannica
+  - title: Meiji Restoration
     type: reference
-    year: 2025
-    url: https://www.britannica.com/
-    institution: Encyclopaedia Britannica, Inc.
-  - title: The Penguin History of the World
-    type: book
-    year: 1976
-    url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    institution: J.M. Roberts, Penguin
+    year: 2026
+    url: https://www.britannica.com/event/Meiji-Restoration
+    institution: Encyclopaedia Britannica
+  - title: "Japan: The opening of Japan"
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/place/Japan/The-opening-of-Japan
+    institution: Encyclopaedia Britannica
+  - title: The Constitution of the Empire of Japan
+    type: primary_document
+    year: 1889
+    url: https://www.ndl.go.jp/constitution/e/etc/c02.html
+    institution: National Diet Library
+secondary_sources: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
 
-The Meiji Restoration (1868) ended Japan's 265-year Tokugawa shogunate, restored imperial rule, and launched rapid modernization. Japan transformed from an isolated feudal society to an industrialized world power in a single generation. Slogans: 'Enrich the country, strengthen the military.'
+The Meiji Restoration transformed Japan's political order and accelerated state-led modernization. This repair removes fabricated 2025 DOI metadata and ties the claims to Britannica and the National Diet Library.
 
 ## Core Explanation
 
-Key reforms: abolition of feudal domains (han) → prefectures, universal conscription, compulsory education, land tax reform, constitutional government (1889). Western technology adopted: railways, telegraph, factories, modern navy. Iwakura Mission (1871-73): studied Western institutions globally. Wars: Sino-Japanese (1894-95, gained Taiwan), Russo-Japanese (1904-05, first Asian power to defeat European power).
+The selected evidence covers the 1868 restoration, the external pressure created by the opening of Japan, and the 1889 Meiji Constitution. Broader claims about industrialization, wars, and slogans need separate source-backed facts before returning to the public claim set.
 
 ## Further Reading
 
-- [The Making of Modern Japan (Marius Jansen)](https://www.hup.harvard.edu/catalog.php?isbn=9780674009912)
+- [Britannica: Meiji Restoration](https://www.britannica.com/event/Meiji-Restoration)
+- [Britannica: The opening of Japan](https://www.britannica.com/place/Japan/The-opening-of-Japan)
+- [National Diet Library: Constitution of the Empire of Japan](https://www.ndl.go.jp/constitution/e/etc/c02.html)

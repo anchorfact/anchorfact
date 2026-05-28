@@ -1,12 +1,12 @@
 ---
 id: neuroscience-brain-plasticity
-title: 'Neuroscience: Neuroplasticity and Brain Function'
+title: "Neuroscience: Neuroplasticity and Brain Function"
 schema_type: Article
 category: science
 language: en
-confidence: medium
-last_verified: '2026-05-25'
-created_date: '2026-05-24'
+confidence: high
+last_verified: "2026-05-28"
+created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,129 +15,79 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-sci-ns-001
-    statement: Kandel's Aplysia work showed learning produces lasting synaptic changes (Nobel 2000).
-    source_title: Kandel, E.R. et al. Principles of Neural Science, 6th ed. (McGraw-Hill 2021)
+  - id: fact-neuroplasticity-1
+    statement: >-
+      Kandel and colleagues describe learning and memory as processes involving changes in synaptic strength
+      and neural circuits.
+    source_title: Principles of Neural Science, 6th Edition
     source_url: https://neurology.mhmedical.com/book.aspx?bookid=3024
     confidence: high
-  - id: fact-sci-ns-002
-    statement: 'Hebbian plasticity: "cells that fire together wire together" (Hebb 1949).'
-    source_title: Hebb, D.O. The Organization of Behavior (Wiley 1949)
-    source_url: https://doi.org/10.1002/sce.37303405110
+  - id: fact-neuroplasticity-2
+    statement: >-
+      Hebb's Organization of Behavior proposed that repeated co-activation of neurons can strengthen their
+      functional connections.
+    source_title: "The Organization of Behavior: A Neuropsychological Theory"
+    source_url: https://psycnet.apa.org/record/1949-04232-000
     confidence: high
-  - id: fact-sci-ns-003
-    statement: Adult hippocampal neurogenesis confirmed by Eriksson et al. (Nature Medicine 1998).
-    source_title: Eriksson et al. Neurogenesis in adult human hippocampus (Nature Medicine 1998)
-    source_url: https://doi.org/10.1038/3305
+  - id: fact-neuroplasticity-3
+    statement: >-
+      Eriksson et al. reported evidence for neurogenesis in the adult human hippocampus in Nature Medicine in
+      1998.
+    source_title: Neurogenesis in the adult human hippocampus
+    source_url: https://www.nature.com/articles/nm1198_1313
+    source_doi: 10.1038/3305
     confidence: high
-completeness: 0.9
+completeness: 0.85
 known_gaps:
-  - Neuroplasticity limits and critical period mechanisms
-  - Neurogenesis in adult humans debate
-disputed_statements:
-  - statement: No major disputed statements identified
+  - Adult human neurogenesis remains an active research area, so this entry avoids broad clinical claims.
+disputed_statements: []
 primary_sources:
   - title: Principles of Neural Science, 6th Edition
     type: textbook
     year: 2021
-    url: https://www.mheducation.com/highered/product/principles-neural-science-kandel-koester/M9781259642234.html
-    institution: McGraw-Hill
-  - title: The Brain That Changes Itself
-    type: textbook
-    year: 2007
-    url: https://www.penguinrandomhouse.com/books/27972/the-brain-that-changes-itself-by-norman-doidge/
-    institution: Penguin
-  - title: Principles of Neural Science (7th Edition, 2025)
-    type: book
-    year: 2025
-    authors:
-      - Kandel E.R.
-      - Koester J.D.
-      - Mack S.H.
-      - Siegelbaum S.A.
-    institution: McGraw-Hill
     url: https://neurology.mhmedical.com/book.aspx?bookid=3024
-  - title: 'Neuroplasticity: From Synaptic to Systems Level (2025 Review)'
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: Nature Reviews Neuroscience
-    url: https://doi.org/10.1038/s41583-2025-plasticity
-  - title: 'The Brain: The Story of You (2025 Updated)'
-    type: book
-    year: 2025
-    authors:
-      - Eagleman D.
-    institution: Vintage
-    url: https://www.penguinrandomhouse.com/the-brain/
-  - title: Principles of Neural Science (6th Edition)
-    authors:
-      - Kandel, E.R.
-      - Koester, J.D.
-      - Mack, S.H.
-      - Siegelbaum, S.A.
-    type: book
-    year: 2021
     institution: McGraw-Hill
-  - title: 'The Organization of Behavior: A Neuropsychological Theory'
     authors:
-      - Hebb, D.O.
+      - Eric R. Kandel
+      - John D. Koester
+      - Sarah H. Mack
+      - Steven A. Siegelbaum
+  - title: "The Organization of Behavior: A Neuropsychological Theory"
     type: book
     year: 1949
+    url: https://psycnet.apa.org/record/1949-04232-000
     institution: Wiley
-secondary_sources:
-  - title: Principles of Neural Science (Kandel et al., 6th Edition)
-    type: textbook
-    year: 2021
     authors:
-      - Kandel, Eric R.
-      - Koester, John D.
-      - Mack, Sarah H.
-      - Siegelbaum, Steven A.
-    institution: McGraw-Hill
-    url: https://neurology.mhmedical.com/book.aspx?bookID=3024
-  - title: 'The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science'
-    type: textbook
-    year: 2007
-    authors:
-      - Doidge, Norman
-    institution: Penguin Books
-    url: https://www.penguinrandomhouse.com/books/298180/the-brain-that-changes-itself-by-norman-doidge/
-  - title: Brain Plasticity and Behavior (Kolb & Whishaw — Annual Review)
-    type: journal_article
+      - Donald O. Hebb
+  - title: Neurogenesis in the adult human hippocampus
+    type: academic_paper
     year: 1998
+    url: https://www.nature.com/articles/nm1198_1313
+    doi: 10.1038/3305
+    institution: Nature Medicine
     authors:
-      - Kolb, Bryan
-      - Whishaw, Ian Q.
-    institution: Annual Review of Psychology
-    url: https://doi.org/10.1146/annurev.psych.49.1.43
-  - title: 'The Human Brain Project: A Comprehensive Review of 10 Years of European Brain Research'
-    type: survey_paper
-    year: 2024
-    authors:
-      - HBP Consortium
-    institution: Nature Neuroscience
-    url: https://doi.org/10.1038/s41593-024-01762-7
-updated: '2026-05-24'
+      - Peter S. Eriksson
+      - Ekaterina Perfilieva
+      - Thomas Bjork-Eriksson
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
 ## TL;DR
-Neuroplasticity — the brain's lifelong capacity to reorganize structure and function — is the biological basis of learning, memory, and recovery from injury.
+
+Neuroplasticity is the nervous system's capacity to change synaptic strength, circuit organization, and behavior through experience. This repaired version removes unsupported future reviews and keeps the public facts tied to Kandel, Hebb, and Eriksson.
 
 ## Core Explanation
-Plasticity operates at synaptic, cellular, and systems levels. Hebb's rule — "neurons that fire together, wire together" — captures the associative principle underlying LTP. The adult brain generates ~700 new neurons daily in the hippocampus.
 
-## Detailed Analysis
-Environmental enrichment — exercise, cognitive stimulation, social interaction — upregulates BDNF, promoting plasticity. Constraint-induced movement therapy exploits plasticity to rehabilitate stroke patients by forcing use of the affected limb.
+The selected claims cover synaptic change, Hebbian association, and one landmark adult hippocampal neurogenesis paper. Broader therapeutic and daily-neuron-count claims need fresher, narrower evidence before being public claims.
 
 ## Further Reading
-- Society for Neuroscience: BrainFacts.org
-- Nature Neuroscience
-- Allen Institute for Brain Science
+
+- [Principles of Neural Science](https://neurology.mhmedical.com/book.aspx?bookid=3024)
+- [Hebb: The Organization of Behavior](https://psycnet.apa.org/record/1949-04232-000)
+- [Eriksson et al.: Neurogenesis in the adult human hippocampus](https://www.nature.com/articles/nm1198_1313)
 
 ## Related Articles
 
-- [Computational Neuroscience: AI Models of Brain Circuits, Connectomics, and Neural Computation](../../ai/computational-neuroscience.md)
-- [Brain-Computer Interfaces: AI-Powered Neural Decoding and Neurotechnology](../../ai/brain-computer-interface-ai.md)
-- [Human Anatomy: Systems, Organs, and Function](../../health/human-anatomy.md)
+- [Human Brain Structure](human-brain-structure.md)
+- [Neuroscience of Sleep](neuroscience-of-sleep.md)

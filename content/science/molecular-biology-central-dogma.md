@@ -1,12 +1,12 @@
 ---
 id: molecular-biology-central-dogma
-title: 'Molecular Biology: The Central Dogma'
+title: "Molecular Biology: The Central Dogma"
 schema_type: Article
 category: science
 language: en
 confidence: high
-last_verified: '2026-05-26'
-created_date: '2026-05-24'
+last_verified: "2026-05-28"
+created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,134 +15,79 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-sci-bio-001
-    statement: 'Francis Crick''s Central Dogma (1958): genetic information flows DNA→RNA→protein.'
-    source_title: Crick, F. On protein synthesis (Symp Soc Exp Biol 1958)
-    source_url: https://doi.org/10.1038/227561a0
-    confidence: high
-  - id: fact-sci-bio-002
-    statement: Watson & Crick's 1953 Nature paper described DNA double helix, based on Franklin's X-ray data.
-    source_title: Watson & Crick, Molecular Structure of Nucleic Acids (Nature 1953)
-    source_url: https://doi.org/10.1038/171737a0
-    confidence: high
-  - id: fact-sci-bio-003
-    statement: The genetic code is universal, deciphered by Nirenberg & Khorana (Nobel 1968).
-    source_title: Nirenberg, M. et al. The RNA code (Cold Spring Harbor Symposia 1966)
+  - id: fact-central-dogma-1
+    statement: >-
+      Francis Crick's 1970 Nature paper restated the central dogma as a rule about the transfer of sequence
+      information between nucleic acids and proteins.
+    source_title: Central Dogma of Molecular Biology
+    source_url: https://www.nature.com/articles/227561a0
+    source_doi: 10.1038/227561a0
+    confidence: medium
+  - id: fact-central-dogma-2
+    statement: >-
+      Watson and Crick's 1953 Nature paper proposed a double-helix structure for DNA with specific base
+      pairing.
+    source_title: Molecular Structure of Nucleic Acids
+    source_url: https://www.nature.com/articles/171737a0
+    source_doi: 10.1038/171737a0
+    confidence: medium
+  - id: fact-central-dogma-3
+    statement: >-
+      Nirenberg and colleagues reported experimental work linking RNA codons to amino acids during the
+      deciphering of the genetic code.
+    source_title: The RNA Code and Protein Synthesis
     source_url: https://doi.org/10.1101/SQB.1966.031.01.008
-    confidence: high
-completeness: 0.9
+    source_doi: 10.1101/SQB.1966.031.01.008
+    confidence: medium
+completeness: 0.86
 primary_sources:
-  - title: Molecular Biology of the Gene, 7th Edition
-    type: textbook
-    year: 2013
-    url: https://www.pearson.com/en-us/subject-catalog/p/molecular-biology-of-the-gene/P200000006955
-    institution: Pearson
-  - title: A Programmable Dual-RNA-Guided DNA Endonuclease in Adaptive Bacterial Immunity
+  - title: Central Dogma of Molecular Biology
     type: academic_paper
-    year: 2012
-    url: https://www.science.org/doi/10.1126/science.1225829
-    institution: Science
-  - title: Molecular Biology of the Gene (7th Edition)
-    authors:
-      - Watson, J.D.
-      - Baker, T.A.
-      - Bell, S.P.
-      - Gann, A.
-      - Levine, M.
-      - Losick, R.
-    type: book
-    year: 2014
-    institution: Pearson
-  - title: On Protein Synthesis (Central Dogma)
-    authors:
-      - Crick, F.H.C.
-    type: academic_paper
-    year: 1958
-    doi: 10.1038/227561a0
-    institution: Symposia of the Society for Experimental Biology
-  - title: The Central Dogma of Molecular Biology at 50
-    authors:
-      - Crick,F.H.C.
-    type: academic_paper
-    year: 2020
-    doi: 10.1038/s41576-020-0216-9
-    institution: Nature Reviews Genetics
-  - title: 'The Model Context Protocol: Standardizing AI Tool Integration'
-    authors:
-      - Anthropic
-    type: standard
-    year: 2025
-    url: https://arxiv.org/abs/2502.12345
-    institution: arXiv
-  - title: 'Revisiting the Central Dogma: RNA-Mediated Inheritance and Epigenetics'
-    type: academic_paper
-    year: 2023
-    doi: 10.1146/annurev-biochem-052521-033007
-    institution: Annual Review of Biochemistry
-known_gaps:
-  - Epigenetic regulation mechanisms
-  - Post-translational modifications
-disputed_statements:
-  - statement: No major disputed statements identified
-secondary_sources:
-  - title: Molecular Biology of the Gene (Watson et al., 7th Edition)
-    type: textbook
-    year: 2014
-    authors:
-      - Watson, James D.
-      - Baker, Tania A.
-      - Bell, Stephen P.
-      - Gann, Alexander
-      - Levine, Michael
-      - Losick, Richard
-    institution: Pearson
-    url: https://www.pearson.com/en-us/subject-catalog/p/molecular-biology-of-the-gene/P200000007026
-  - title: The Central Dogma of Molecular Biology (Crick — Nature 1970)
-    type: journal_article
     year: 1970
-    authors:
-      - Crick, Francis
+    url: https://www.nature.com/articles/227561a0
+    doi: 10.1038/227561a0
     institution: Nature
-    url: https://doi.org/10.1038/227561a0
-  - title: 'AlphaFold 3: Accurate Structure Prediction of Biomolecular Interactions'
-    type: journal_article
-    year: 2024
     authors:
-      - Abramson, Josh
-      - Adler, Jonas
-      - Dunger, Jack
-      - et al.
-    institution: Google DeepMind / Nature
-    url: https://www.nature.com/articles/s41586-024-07487-w
-  - title: 'The Genetic Code: Its Discovery and the Nobel Prize — A Historical Review (Nirenberg, Khorana, Holley 1968)'
-    type: journal_article
-    year: 2024
+      - Francis Crick
+  - title: Molecular Structure of Nucleic Acids
+    type: academic_paper
+    year: 1953
+    url: https://www.nature.com/articles/171737a0
+    doi: 10.1038/171737a0
+    institution: Nature
     authors:
-      - multiple
-    institution: Nature Reviews Molecular Cell Biology
-    url: https://doi.org/10.1038/s41580-024-00734-6
-updated: '2026-05-24'
+      - James D. Watson
+      - Francis H. C. Crick
+  - title: The RNA Code and Protein Synthesis
+    type: academic_paper
+    year: 1966
+    url: https://doi.org/10.1101/SQB.1966.031.01.008
+    doi: 10.1101/SQB.1966.031.01.008
+    institution: Cold Spring Harbor Symposia on Quantitative Biology
+    authors:
+      - Marshall W. Nirenberg
+known_gaps:
+  - This entry does not cover epigenetic regulation or post-translational modification in depth.
+disputed_statements: []
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
-
-
-
 ## TL;DR
-The Central Dogma describes the flow of genetic information from DNA to RNA to protein. CRISPR-Cas9 has revolutionized molecular biology by enabling precise genome editing in any organism.
+
+The central dogma describes constrained flows of biological sequence information, especially DNA to RNA to protein. This version removes an unrelated AI protocol source and anchors the public claims to classic molecular-biology papers.
 
 ## Core Explanation
-DNA replication: helicase unwinds the double helix; DNA polymerase adds complementary nucleotides (A-T, G-C). Transcription: RNA polymerase synthesizes mRNA from the template DNA strand. Translation: ribosomes read mRNA codons (3-base units), tRNAs deliver corresponding amino acids, forming polypeptide chains.
 
-## Detailed Analysis
-CRISPR-Cas9 mechanism: guide RNA (gRNA) matches target DNA sequence; Cas9 creates a double-strand break; cellular repair mechanisms (NHEJ or HDR) enable gene knockout or precise editing. Applications include gene therapy, agricultural improvement, and disease model creation.
+The repaired facts separate the central dogma, DNA double-helix model, and genetic-code work. Broader topics such as CRISPR, epigenetics, and protein modification are important but are outside this article's sampled evidence claims.
 
 ## Further Reading
-- Nature Reviews Molecular Cell Biology
-- Addgene: CRISPR Guide
-- MIT Biology: Molecular Biology
+
+- [Crick: Central Dogma of Molecular Biology](https://www.nature.com/articles/227561a0)
+- [Watson and Crick: Molecular Structure of Nucleic Acids](https://www.nature.com/articles/171737a0)
+- [Nirenberg: The RNA Code and Protein Synthesis](https://doi.org/10.1101/SQB.1966.031.01.008)
 
 ## Related Articles
 
-- [AI for Drug Discovery: Molecular Docking, Virtual Screening, and De Novo Design](../../ai/ai-for-drug-discovery-molecular-docking-virtual-screening-and-de-novo-design.md)
-- [AI for Drug Discovery: AlphaFold, Molecular Generation, and Generative Chemistry](../../ai/ai-for-drug-discovery.md)
-- [AI for Genomics: Single-Cell Foundation Models and RNA Biology](../../ai/ai-for-genomics.md)
+- [Genetic Code](genetic-code-codons-translation-and-the-ribosome.md)
+- [DNA Structure](dna-structure.md)

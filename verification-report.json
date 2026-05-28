@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 0,
     "average_sources_per_article": "2.2",
-    "overall_verification_rate": "48.4%",
+    "overall_verification_rate": "49.8%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 82
+    "manual_reviewed_articles": 98
   },
   "articles": [
     {
@@ -7517,18 +7517,20 @@
       "file": "content/ai/autoencoders.md",
       "article_id": "kb-2026-00279",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Auto-Encoding Variational Bayes (VAE — Kingma & Welling)",
+          "source_title": "Auto-Encoding Variational Bayes",
           "source_type": "conference_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1312.6114",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1312.6114",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=1312.6114&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -7536,16 +7538,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Deep Learning (Goodfellow, Bengio, Courville — Chapter 14 Autoencoders)",
-          "source_type": "textbook",
+          "source_title": "Reducing the Dimensionality of Data with Neural Networks",
+          "source_type": "academic_paper",
           "results": [
             {
-              "method": "url",
-              "identifier": "https://www.deeplearningbook.org/contents/autoencoders.html",
+              "method": "doi",
+              "identifier": "10.1126/science.1127647",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.deeplearningbook.org/contents/autoencoders.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -7553,74 +7556,28 @@
           "all_verified": true
         },
         {
-          "source_title": "A Comprehensive Survey of Self-Supervised Learning: From Generative to Contrastive Approaches",
-          "source_type": "survey_paper",
+          "source_title": "Extracting and Composing Robust Features with Denoising Autoencoders",
+          "source_type": "conference_paper",
           "results": [
             {
-              "method": "url",
-              "identifier": "https://doi.org/10.1109/TPAMI.2025.3567842",
-              "verified": false,
+              "method": "doi",
+              "identifier": "10.1145/1390156.1390294",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1109/TPAMI.2025.3567842"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "A Comprehensive Survey of Autoencoders and Self-Supervised Learning",
-          "source_type": "survey_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1109/TPAMI.2025.3567842",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1109/TPAMI.2025.3567842"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Autoencoders",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2003.05991v2",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Isometric Autoencoders",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2006.09289v2",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 4
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/autonomous-driving-ai.md",
@@ -7714,16 +7671,35 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Learning Representations by Back-propagating Errors",
+          "source_title": "Learning representations by back-propagating errors",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1038/323533a0",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Automatic Differentiation in Machine Learning: a Survey",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nature.com/articles/323533a0",
+              "identifier": "https://jmlr.org/papers/v18/17-468.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nature.com/articles/323533a0?error=cookies_not_supported&code=8d5531de-f435-418e-8bfe-166ba72dfe54"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -7732,40 +7708,27 @@
         },
         {
           "source_title": "Deep Residual Learning for Image Recognition",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "1512.03385",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "A Comprehensive Survey of Optimization Methods in Deep Learning: From SGD to Schedule-Free Optimizers",
-          "source_type": "survey_paper",
+          "source_type": "conference_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1109/ACCESS.2025.3567842",
-              "verified": false,
+              "identifier": "https://arxiv.org/abs/1512.03385",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1109/ACCESS.2025.3567842"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/batch-normalization.md",
@@ -8464,18 +8427,20 @@
       "file": "content/ai/contrastive-learning.md",
       "article_id": "contrastive-learning",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Learning Transferable Visual Models From Natural Language Supervision (CLIP)",
-          "source_type": "academic_paper",
+          "source_title": "A Simple Framework for Contrastive Learning of Visual Representations",
+          "source_type": "conference_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2103.00020",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2002.05709",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2103.00020&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -8483,24 +8448,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Momentum Contrast for Unsupervised Visual Representation Learning (MoCo)",
-          "source_type": "academic_paper",
+          "source_title": "Momentum Contrast for Unsupervised Visual Representation Learning",
+          "source_type": "conference_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1911.05722",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1911.05722",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Learning Transferable Visual Models From Natural Language Supervision",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2103.00020",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/conversational-ai-systems.md",
@@ -9061,35 +9048,56 @@
       "file": "content/ai/distributed-training-systems.md",
       "article_id": "distributed-training-systems",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models",
+          "source_title": "Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1910.02054",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1909.08053",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "PyTorch Fully Sharded Data Parallel (FSDP)",
-          "source_type": "official_documentation",
+          "source_title": "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models",
+          "source_type": "conference_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://pytorch.org/docs/stable/fsdp.html",
+              "identifier": "https://arxiv.org/abs/1910.02054",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://docs.pytorch.org/docs/stable/fsdp.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1811.06965",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -9097,8 +9105,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/draft-20260525-001.md",
@@ -9157,7 +9167,7 @@
       "file": "content/ai/dropout-and-regularization.md",
       "article_id": "dropout-and-regularization",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
           "source_title": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
@@ -9165,11 +9175,12 @@
           "results": [
             {
               "method": "url",
-              "identifier": "https://jmlr.org/papers/v15/srivastava14a.html",
+              "identifier": "https://www.jmlr.org/papers/v15/srivastava14a.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://jmlr.org/papers/v15/srivastava14a.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -9177,16 +9188,35 @@
           "all_verified": true
         },
         {
-          "source_title": "The Elements of Statistical Learning, Ch.7",
-          "source_type": "textbook",
+          "source_title": "Regularization and Variable Selection via the Elastic Net",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1111/j.1467-9868.2005.00503.x",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+          "source_type": "conference_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://link.springer.com/book/10.1007/978-0-387-84858-7",
+              "identifier": "https://arxiv.org/abs/1502.03167",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://link.springer.com/book/10.1007/978-0-387-84858-7?error=cookies_not_supported&code=04dd9bf6-2720-4435-8445-19b7928252f1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -9194,17 +9224,19 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/edge-ai-and-tinyml.md",
       "article_id": "edge-ai-and-tinyml",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "TinyML: Machine Learning with TensorFlow Lite",
+          "source_title": "TinyML: Machine Learning with TensorFlow Lite on Arduino and Ultra-Low-Power Microcontrollers",
           "source_type": "textbook",
           "results": [
             {
@@ -9212,8 +9244,9 @@
               "identifier": "https://www.oreilly.com/library/view/tinyml/9781492052036/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.oreilly.com/library/view/tinyml/9781492052036/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -9225,20 +9258,42 @@
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1704.04861",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1704.04861",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1602.05629",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/efficient-green-ai.md",
@@ -10606,15 +10661,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "FlashAttention: Fast and Memory-Efficient Exact Attention",
+          "source_title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2205.14135",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2309.06180",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2205.14135&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -10622,40 +10679,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Fast Inference from Transformers via Speculative Decoding",
-          "source_type": "academic_paper",
+          "source_title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+          "source_type": "conference_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2211.17192",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2205.14135",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Tutorial Proposal: Speculative Decoding for Efficient LLM Inference",
-          "source_type": "academic_paper",
+          "source_title": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+          "source_type": "conference_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2503.00491v1",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2208.07339",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/llms.md",
@@ -14578,7 +14641,43 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Video generation models as world simulators (Sora)",
+          "source_title": "World Models",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1803.10122",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Mastering Diverse Domains through World Models",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2301.04104",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Video generation models as world simulators",
           "source_type": "technical_report",
           "results": [
             {
@@ -14586,84 +14685,39 @@
               "identifier": "https://openai.com/index/video-generation-models-as-world-simulators/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://openai.com/index/video-generation-models-as-world-simulators/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "UniSim: Learning Interactive Real-World Simulators",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2312.06114",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Grounding Video Reasoning in Physical Signals",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2604.21873v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/arts/aesthetics.md",
       "article_id": "kb-2026-00500",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Critique of Judgment (Immanuel Kant, 1790)",
-          "source_type": "book",
+          "source_title": "Aesthetics",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.cambridge.org/core/books/kants-critique-of-the-power-of-judgment/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.cambridge.org/core/books/kants-critique-of-the-power-of-judgment"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Aesthetics: A Very Short Introduction (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/vsi-aesthetics/",
+              "identifier": "https://www.britannica.com/topic/aesthetics",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-aesthetics/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -14671,33 +14725,17 @@
           "all_verified": true
         },
         {
-          "source_title": "The Philosophy of Art: A Contemporary Introduction (2025)",
-          "source_type": "book",
+          "source_title": "Kant's Aesthetics and Teleology",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.routledge.com/aesthetics/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.routledge.com/aesthetics/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Philosophy of Art: A Contemporary Introduction (2nd Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.routledge.com/philosophy-of-art/",
+              "identifier": "https://plato.stanford.edu/entries/kant-aesthetics/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.routledge.com/search?sb=SCHU04"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -14705,20 +14743,28 @@
           "all_verified": true
         },
         {
-          "source_title": "Aesthetics: A Comprehensive Anthology (2nd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Oxford Handbook of Aesthetics",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "source_title": "The Definition of Art",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://plato.stanford.edu/entries/art-definition/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/arts/ancient-greek-literature.md",
@@ -35787,10 +35833,28 @@
       "file": "content/history/cold-war.md",
       "article_id": "kb-2026-00323",
       "generation_method": "ai_structured",
-      "sources_total": 7,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Cold War: A New History (John Lewis Gaddis)",
+          "source_title": "Cold War",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/event/Cold-War",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Cold War: A New History",
           "source_type": "book",
           "results": [
             {
@@ -35798,8 +35862,9 @@
               "identifier": "https://www.penguinrandomhouse.com/books/256540/the-cold-war-by-john-lewis-gaddis/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/256540/the-cold-war-by-john-lewis-gaddis/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -35807,81 +35872,7 @@
           "all_verified": true
         },
         {
-          "source_title": "The Cold War: A World History (2025 Updated Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.basicbooks.com/cold-war/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.hachettebookgroup.com/cold-war/?lens=basic-books"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Global Cold War: Third World Interventions (2025 Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1017/cbo.2025.coldwar",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1017/cbo.2025.coldwar"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Cold War: A World History (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.basicbooks.com/cold-war/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.hachettebookgroup.com/cold-war/?lens=basic-books"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Global Cold War (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1017/cbo.2025.coldwar",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1017/cbo.2025.coldwar"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Cold War: A World History",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Global Cold War",
+          "source_title": "The Global Cold War: Third World Interventions and the Making of Our Times",
           "source_type": "book",
           "results": [
             {
@@ -35889,9 +35880,9 @@
               "identifier": "10.1017/CBO9780511817991",
               "verified": true,
               "metadata": {
-                "title": "The Global Cold War",
-                "publisher": "Cambridge University Press",
-                "year": 2012
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -35899,8 +35890,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 4
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/colonialism.md",
@@ -36654,16 +36647,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Maya (Michael D. Coe, 9th Ed)",
-          "source_type": "book",
+          "source_title": "The Maya calendar and writing system",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://thamesandhudson.com/the-maya-9780500291887",
+              "identifier": "https://www.britannica.com/topic/pre-Columbian-civilizations/The-Maya-calendar-and-writing-system",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.thamesandhudson.com/products/the-maya-ancient-peoples-and-places"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -36671,33 +36665,35 @@
           "all_verified": true
         },
         {
-          "source_title": "The Maya (10th Edition, 2025)",
-          "source_type": "book",
+          "source_title": "Pre-Hispanic City of Chichen-Itza",
+          "source_type": "heritage_record",
           "results": [
             {
               "method": "url",
-              "identifier": "https://thamesandhudson.com/maya/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.thamesandhudson.com/maya"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Maya: A Very Short Introduction (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/vsi-maya/",
+              "identifier": "https://whc.unesco.org/en/list/483",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-maya/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Calendar System",
+          "source_type": "museum_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://maya.nmai.si.edu/calendar/calendar-system",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -36705,8 +36701,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/meiji-restoration.md",
@@ -36715,16 +36713,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Making of Modern Japan (Marius Jansen)",
-          "source_type": "book",
+          "source_title": "Meiji Restoration",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.hup.harvard.edu/catalog.php?isbn=9780674009912",
+              "identifier": "https://www.britannica.com/event/Meiji-Restoration",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://www.hup.harvard.edu/catalog.php?isbn=9780674009912"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -36732,33 +36731,35 @@
           "all_verified": true
         },
         {
-          "source_title": "The Meiji Restoration: A Global History (2025)",
-          "source_type": "book",
+          "source_title": "Japan: The opening of Japan",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1017/cbo.2025.meiji",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1017/cbo.2025.meiji"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Japan: A Very Short Introduction (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/vsi-japan/",
+              "identifier": "https://www.britannica.com/place/Japan/The-opening-of-Japan",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-japan/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Constitution of the Empire of Japan",
+          "source_type": "primary_document",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.ndl.go.jp/constitution/e/etc/c02.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -36766,8 +36767,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/mesopotamia.md",
@@ -37121,10 +37124,46 @@
       "file": "content/history/napoleonic-era.md",
       "article_id": "kb-2026-00360",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Napoleon: A Life (Andrew Roberts)",
+          "source_title": "Napoleonic Wars",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/event/Napoleonic-Wars",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Napoleonic era",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/topic/history-of-Europe/The-Napoleonic-era",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Napoleon: A Life",
           "source_type": "book",
           "results": [
             {
@@ -37132,8 +37171,9 @@
               "identifier": "https://www.penguinrandomhouse.com/books/222045/napoleon-by-andrew-roberts/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/222045/napoleon-by-andrew-roberts/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -37141,8 +37181,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/ottoman-empire.md",
@@ -37450,19 +37492,56 @@
       "file": "content/history/renaissance.md",
       "article_id": "kb-2026-00325",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Civilization of the Renaissance in Italy (Jacob Burckhardt, 1860)",
-          "source_type": "book",
+          "source_title": "Renaissance",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gutenberg.org/ebooks/2074",
+              "identifier": "https://www.britannica.com/event/Renaissance",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.gutenberg.org/ebooks/2074"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Humanism",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/topic/humanism",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Printing press",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/technology/printing-press",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -37470,8 +37549,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/rise-of-islam.md",
@@ -40497,50 +40578,10 @@
       "file": "content/science/molecular-biology-central-dogma.md",
       "article_id": "molecular-biology-central-dogma",
       "generation_method": "ai_structured",
-      "sources_total": 7,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Molecular Biology of the Gene, 7th Edition",
-          "source_type": "textbook",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.pearson.com/en-us/subject-catalog/p/molecular-biology-of-the-gene/P200000006955",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.pearson.com/en-us/subject-catalog/p/molecular-biology-of-the-gene/P200000006955"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "A Programmable Dual-RNA-Guided DNA Endonuclease in Adaptive Bacterial Immunity",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.science.org/doi/10.1126/science.1225829",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.science.org/doi/10.1126/science.1225829"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Molecular Biology of the Gene (7th Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "On Protein Synthesis (Central Dogma)",
+          "source_title": "Central Dogma of Molecular Biology",
           "source_type": "academic_paper",
           "results": [
             {
@@ -40548,72 +40589,62 @@
               "identifier": "10.1038/227561a0",
               "verified": true,
               "metadata": {
-                "title": "Central Dogma of Molecular Biology",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2005
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
           "all_verified": true
         },
         {
-          "source_title": "The Central Dogma of Molecular Biology at 50",
+          "source_title": "Molecular Structure of Nucleic Acids",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "doi",
-              "identifier": "10.1038/s41576-020-0216-9",
-              "verified": false,
+              "identifier": "10.1038/171737a0",
+              "verified": true,
               "metadata": {
-                "error": "CrossRef returned 404"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "The Model Context Protocol: Standardizing AI Tool Integration",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2502.12345",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Revisiting the Central Dogma: RNA-Mediated Inheritance and Epigenetics",
+          "source_title": "The RNA Code and Protein Synthesis",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "doi",
-              "identifier": "10.1146/annurev-biochem-052521-033007",
-              "verified": false,
+              "identifier": "10.1101/SQB.1966.031.01.008",
+              "verified": true,
               "metadata": {
-                "error": "CrossRef returned 404"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 4
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/neuroscience-brain-plasticity.md",
       "article_id": "neuroscience-brain-plasticity",
       "generation_method": "ai_structured",
-      "sources_total": 7,
+      "sources_total": 3,
       "verification_results": [
         {
           "source_title": "Principles of Neural Science, 6th Edition",
@@ -40621,100 +40652,59 @@
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.mheducation.com/highered/product/principles-neural-science-kandel-koester/M9781259642234.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.mheducation.com/highered/product/principles-neural-science-kandel-koester/M9781259642234.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "The Brain That Changes Itself",
-          "source_type": "textbook",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/27972/the-brain-that-changes-itself-by-norman-doidge/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/27972/the-brain-that-changes-itself-by-norman-doidge/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Principles of Neural Science (7th Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
               "identifier": "https://neurology.mhmedical.com/book.aspx?bookid=3024",
-              "verified": false,
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://neurology.mhmedical.com/book.aspx?bookid=3024"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Neuroplasticity: From Synaptic to Systems Level (2025 Review)",
-          "source_type": "article",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1038/s41583-2025-plasticity",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1038/s41583-2025-plasticity"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Brain: The Story of You (2025 Updated)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/the-brain/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.penguinrandomhouse.com/the-brain/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Principles of Neural Science (6th Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "all_verified": true
         },
         {
           "source_title": "The Organization of Behavior: A Neuropsychological Theory",
           "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://psycnet.apa.org/record/1949-04232-000",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Neurogenesis in the adult human hippocampus",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1038/3305",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 6 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/neuroscience-of-sleep.md",

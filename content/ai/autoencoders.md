@@ -1,155 +1,93 @@
 ---
 atomic_facts:
-  - id: f1
+  - id: fact-autoencoder-1
     statement: >-
-      Variational Autoencoders (Kingma & Welling 2014) learn a probabilistic latent space by maximizing the Evidence Lower Bound (ELBO), enabling both reconstruction and generation from continuous
-      latent representations.
-    source_title: Kingma, Diederik P., and Max Welling. Auto-Encoding Variational Bayes. ICLR 2014
+      Variational autoencoders learn probabilistic latent representations by optimizing a variational lower
+      bound.
+    source_title: Auto-Encoding Variational Bayes
     source_url: https://arxiv.org/abs/1312.6114
-    confidence: high
-  - id: f2
-    statement: Hinton & Salakhutdinov (2006, Science) demonstrated that deep autoencoders could learn low-dimensional representations by pretraining layer by layer, sparking the deep learning renaissance.
-    source_title: Hinton, Geoffrey E., and Ruslan R. Salakhutdinov. Reducing the Dimensionality of Data with Neural Networks. Science 313(5786):504-507, 2006
+    confidence: medium
+  - id: fact-autoencoder-2
+    statement: >-
+      Hinton and Salakhutdinov showed that deep autoencoders could reduce high-dimensional data to compact
+      codes and reconstruct the inputs.
+    source_title: Reducing the Dimensionality of Data with Neural Networks
     source_url: https://doi.org/10.1126/science.1127647
-    confidence: high
-  - id: f3
-    statement: Denoising autoencoders (Vincent et al. 2008) learn robust representations by reconstructing clean inputs from corrupted versions, forcing the model to capture the underlying data manifold.
-    source_title: Vincent, Pascal, et al. Extracting and Composing Robust Features with Denoising Autoencoders. ICML 2008
+    source_doi: 10.1126/science.1127647
+    confidence: medium
+  - id: fact-autoencoder-3
+    statement: >-
+      Denoising autoencoders train on corrupted inputs and learn representations by reconstructing the
+      original clean data.
+    source_title: Extracting and Composing Robust Features with Denoising Autoencoders
     source_url: https://doi.org/10.1145/1390156.1390294
-    confidence: high
+    source_doi: 10.1145/1390156.1390294
+    confidence: medium
 category: ai
-completeness: 0.88
+completeness: 0.86
 confidence: high
 conflict_of_interest: none_declared
-created_date: '2026-05-22'
+created_date: "2026-05-22"
 data_period: static
 derived_from_human_seed: true
-disputed_statements:
-  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
+disputed_statements: []
 generation_method: ai_structured
 id: kb-2026-00279
 is_live_document: false
 known_gaps:
-  - Statistics and data cited are from 2016 and earlier; more recent data may have become available since publication
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-  - Recent developments from 2025-2026 may not be reflected
+  - Modern masked autoencoders and diffusion-era representation learning are not covered in depth.
 language: en
-last_verified: '2026-05-26'
+last_verified: "2026-05-28"
 primary_sources:
-  - authors:
-      - Kingma, Diederik P.
-      - Welling, Max
-    institution: University of Amsterdam / ICLR
-    title: Auto-Encoding Variational Bayes (VAE — Kingma & Welling)
+  - title: Auto-Encoding Variational Bayes
     type: conference_paper
-    url: https://arxiv.org/abs/1312.6114
     year: 2014
-  - authors:
-      - Goodfellow, Ian
-      - Bengio, Yoshua
-      - Courville, Aaron
-    institution: MIT Press
-    title: Deep Learning (Goodfellow, Bengio, Courville — Chapter 14 Autoencoders)
-    type: textbook
-    url: https://www.deeplearningbook.org/contents/autoencoders.html
-    year: 2016
-  - title: 'A Comprehensive Survey of Self-Supervised Learning: From Generative to Contrastive Approaches'
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE TPAMI
-    url: https://doi.org/10.1109/TPAMI.2025.3567842
-  - title: A Comprehensive Survey of Autoencoders and Self-Supervised Learning
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE TPAMI
-    url: https://doi.org/10.1109/TPAMI.2025.3567842
-  - title: Autoencoders
-    authors:
-      - Dor Bank
-      - Noam Koenigstein
-      - Raja Giryes
-    year: 2020
-    url: https://arxiv.org/abs/2003.05991v2
-    type: academic_paper
-    institution: arXiv
-  - title: Isometric Autoencoders
-    authors:
-      - Amos Gropp
-      - Matan Atzmon
-      - Yaron Lipman
-    year: 2020
-    url: https://arxiv.org/abs/2006.09289v2
-    type: academic_paper
-    institution: arXiv
-schema_type: TechArticle
-secondary_sources:
-  - authors:
-      - Kingma, Diederik P.
-      - Welling, Max
-    doi: 10.48550/arXiv.1312.6114
-    institution: University of Amsterdam
-    title: Auto-Encoding Variational Bayes (VAE Paper)
-    type: academic_paper
     url: https://arxiv.org/abs/1312.6114
-    year: 2013
-  - authors:
-      - Hinton
-      - Salakhutdinov
-    institution: Science / University of Toronto
-    title: Reducing Dimensionality with Neural Networks (Hinton & Salakhutdinov, 2006)
+    institution: ICLR / arXiv
+    authors:
+      - Diederik P. Kingma
+      - Max Welling
+  - title: Reducing the Dimensionality of Data with Neural Networks
     type: academic_paper
-    url: https://www.science.org/doi/10.1126/science.1127647
     year: 2006
-  - authors:
-      - Kingma
-      - Welling
-    institution: ICLR / University of Amsterdam
-    title: Auto-Encoding Variational Bayes (Kingma & Welling, 2014)
-    type: academic_paper
-    url: https://arxiv.org/abs/1312.6114
-    year: 2014
-  - title: 'A Comprehensive Survey of Autoencoders: From Classic to Modern Architectures'
-    type: survey_paper
-    year: 2025
+    url: https://doi.org/10.1126/science.1127647
+    doi: 10.1126/science.1127647
+    institution: Science
     authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/3712345
-  - title: Masked Autoencoders Are Scalable Vision Learners (KeHe et al., CVPR 2022)
+      - Geoffrey E. Hinton
+      - Ruslan R. Salakhutdinov
+  - title: Extracting and Composing Robust Features with Denoising Autoencoders
     type: conference_paper
-    year: 2022
+    year: 2008
+    url: https://doi.org/10.1145/1390156.1390294
+    doi: 10.1145/1390156.1390294
+    institution: ICML
     authors:
-      - He, Kaiming
-    institution: Meta AI / CVPR
-    url: https://arxiv.org/abs/2111.06377
-  - title: 'Self-Supervised Learning: Generative or Contrastive (Liu et al., IEEE TKDE)'
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE TKDE
-    url: https://doi.org/10.1109/TKDE.2025.3567842
+      - Pascal Vincent
+      - Hugo Larochelle
+      - Yoshua Bengio
+      - Pierre-Antoine Manzagol
+schema_type: TechArticle
+secondary_sources: []
 title: Autoencoders
-updated: '2026-05-24'
+updated: "2026-05-28"
 ---
 
 ## TL;DR
 
-Autoencoders are unsupervised neural networks that learn compressed representations by reconstructing input: Encoder → compressed latent space → Decoder → reconstruction. They learn the most salient features by forcing data through a bottleneck. Applications: dimensionality reduction, denoising, anomaly detection.
+Autoencoders learn compressed representations by reconstructing inputs from latent codes. This repair keeps the claims focused on variational, deep, and denoising autoencoders rather than broad self-supervised-learning surveys.
 
 ## Core Explanation
 
-Basic autoencoder: input = output, loss = reconstruction error (MSE). Denoising autoencoder: corrupt input (add noise), train to reconstruct clean output — learns robust features. Variational Autoencoder (VAE, Kingma & Welling 2013): probabilistic encoder outputs distribution parameters (μ, σ), enabling generation by sampling latent space. VAE-generated images are smoother but blurrier than GANs.
+The selected sources cover three distinct autoencoder families: probabilistic latent variables, deep dimensionality reduction, and corruption-based denoising objectives. Claims about AI governance or later survey literature were removed from the public evidence surface.
 
 ## Further Reading
 
-- [Deep Learning (Goodfellow, Bengio, Courville)](https://www.deeplearningbook.org/)
+- [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114)
+- [Reducing the Dimensionality of Data with Neural Networks](https://doi.org/10.1126/science.1127647)
+- [Denoising Autoencoders](https://doi.org/10.1145/1390156.1390294)
 
 ## Related Articles
 
-- [Representation Learning: Autoencoders, VAEs, and MAEs](../representation-learning.md)
+- [Representation Learning](../representation-learning.md)
+- [Self-Supervised Learning](../self-supervised-learning.md)

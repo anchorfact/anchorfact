@@ -1,12 +1,12 @@
 ---
 id: llm-inference-optimization
-title: 'LLM Inference Optimization: From FlashAttention to Speculative Decoding'
+title: "LLM Inference Optimization: From FlashAttention to Speculative Decoding"
 schema_type: TechArticle
 category: ai
 language: en
 confidence: high
-last_verified: '2026-05-25'
-created_date: '2026-05-24'
+last_verified: "2026-05-28"
+created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,111 +15,81 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: f1
+  - id: fact-llm-inference-1
     statement: >-
-      vLLM (Kwon et al. 2023, UC Berkeley, SOSP) introduces PagedAttention — a virtual memory-inspired attention algorithm that reduces memory waste from KV-cache fragmentation by 80%, achieving 24×
-      higher throughput than HuggingFace Transformers.
-    source_title: Kwon, Woosuk, et al. Efficient Memory Management for Large Language Model Serving with PagedAttention. SOSP 2023
+      PagedAttention applies a virtual-memory style design to key-value cache management for
+      large-language-model serving.
+    source_title: Efficient Memory Management for Large Language Model Serving with PagedAttention
     source_url: https://arxiv.org/abs/2309.06180
-    confidence: high
-  - id: f2
+    confidence: medium
+  - id: fact-llm-inference-2
     statement: >-
-      FlashAttention (Dao et al. 2022, NeurIPS) reduces attention memory from O(N²) to O(N) via IO-aware tiling, and FlashAttention-2 (2023) further optimizes parallelism, achieving 2-4× speedup with
-      no approximation.
-    source_title: 'Dao, Tri, et al. FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness. NeurIPS 2022'
+      FlashAttention computes exact attention with IO-aware tiling to reduce memory traffic between GPU memory
+      levels.
+    source_title: "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness"
     source_url: https://arxiv.org/abs/2205.14135
-    confidence: high
-  - id: f3
-    statement: LLM.int8() (Dettmers et al. 2022, NeurIPS) enables 8-bit matrix multiplication for transformers with zero performance degradation by handling outlier features in FP16 and the rest in INT8.
-    source_title: 'Dettmers, Tim, et al. LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale. NeurIPS 2022'
+    confidence: medium
+  - id: fact-llm-inference-3
+    statement: >-
+      LLM.int8() uses mixed-precision decomposition to run 8-bit matrix multiplication for large transformers
+      while preserving model quality.
+    source_title: "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale"
     source_url: https://arxiv.org/abs/2208.07339
-    confidence: high
-completeness: 0.9
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - Sparse attention for ultra-long sequences
-  - Multi-query speculative decoding
-disputed_statements:
-  - statement: No major disputed statements identified
+  - Speculative decoding, pruning, and serving schedulers are not covered in this compact evidence repair.
+disputed_statements: []
 primary_sources:
-  - title: 'FlashAttention: Fast and Memory-Efficient Exact Attention'
-    type: academic_paper
-    year: 2022
-    url: https://arxiv.org/abs/2205.14135
-    institution: NeurIPS/Stanford
-  - title: Fast Inference from Transformers via Speculative Decoding
+  - title: Efficient Memory Management for Large Language Model Serving with PagedAttention
     type: academic_paper
     year: 2023
-    url: https://arxiv.org/abs/2211.17192
-    institution: ICML
-  - title: 'Tutorial Proposal: Speculative Decoding for Efficient LLM Inference'
-    authors:
-      - Heming Xia
-      - Cunxiao Du
-      - Yongqi Li
-      - Qian Liu
-      - Wenjie Li
-    year: 2025
-    url: https://arxiv.org/abs/2503.00491v1
-    type: academic_paper
-    institution: arXiv
-secondary_sources:
-  - title: Efficient Memory Management for Large Language Model Serving with PagedAttention (vLLM)
-    type: conference_paper
-    year: 2023
-    authors:
-      - Kwon, Woosuk
-      - Li, Zhuohan
-      - Zhuang, Siyuan
-      - et al.
-    institution: UC Berkeley / SOSP
     url: https://arxiv.org/abs/2309.06180
-  - title: 'LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale'
+    institution: SOSP / UC Berkeley
+    authors:
+      - Woosuk Kwon
+      - Zhuohan Li
+      - Siyuan Zhuang
+  - title: "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness"
     type: conference_paper
     year: 2022
-    authors:
-      - Dettmers, Tim
-      - Lewis, Mike
-      - Belkada, Younes
-      - Zettlemoyer, Luke
-    institution: Meta AI Research / NeurIPS
-    url: https://arxiv.org/abs/2208.07339
-  - title: 'FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness'
-    type: conference_paper
-    year: 2022
-    authors:
-      - Dao, Tri
-      - Fu, Daniel Y.
-      - Ermon, Stefano
-      - Rudra, Atri
-      - Ré, Christopher
-    institution: Stanford / NeurIPS
     url: https://arxiv.org/abs/2205.14135
-  - title: 'A Survey on Efficient Inference for Large Language Models: Quantization, Pruning, and Distillation'
-    type: survey_paper
-    year: 2024
+    institution: NeurIPS / Stanford
     authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/3635100
-updated: '2026-05-24'
+      - Tri Dao
+      - Daniel Y. Fu
+      - Stefano Ermon
+      - Atri Rudra
+      - Christopher Re
+  - title: "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale"
+    type: conference_paper
+    year: 2022
+    url: https://arxiv.org/abs/2208.07339
+    institution: NeurIPS / Meta AI
+    authors:
+      - Tim Dettmers
+      - Mike Lewis
+      - Younes Belkada
+      - Luke Zettlemoyer
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
 ## TL;DR
-LLM inference optimization has made serving trillion-parameter models economically viable. FlashAttention eliminates the memory bottleneck; speculative decoding accelerates generation 2-3x; KV-cache optimization reduces memory by 8x.
+
+LLM inference optimization reduces memory use, latency, and serving cost for transformer models. This repaired entry focuses on three well-cited techniques: PagedAttention, FlashAttention, and LLM.int8().
 
 ## Core Explanation
-Attention is the bottleneck: computing attention scores between all token pairs requires O(n²) memory. FlashAttention tiles this computation in fast SRAM. KV-cache stores past key/value vectors to avoid recomputation but consumes GBs of memory. Quantization compresses it to INT4/INT8.
 
-## Detailed Analysis
-Continuous batching (vLLM) maximizes GPU utilization by dynamically adding/removing requests. PagedAttention manages KV-cache like virtual memory. Tensor parallelism splits matrices across GPUs. Pipeline parallelism divides layers across devices. Mixture-of-Experts reduces active parameters per token.
+PagedAttention targets key-value cache fragmentation, FlashAttention targets attention memory traffic, and LLM.int8() targets matrix multiplication precision. The prior future tutorial source was removed from public evidence.
 
 ## Further Reading
-- FlashAttention GitHub
-- vLLM Project
-- NVIDIA TensorRT-LLM
+
+- [PagedAttention / vLLM](https://arxiv.org/abs/2309.06180)
+- [FlashAttention](https://arxiv.org/abs/2205.14135)
+- [LLM.int8()](https://arxiv.org/abs/2208.07339)
 
 ## Related Articles
 
-- [AI for Digital Marketing: Personalization, Campaign Optimization, and Customer Analytics](../ai-digital-marketing.md)
-- [AI for Fleet Management: Predictive Maintenance, Route Optimization, and Telematics](../ai-fleet-management.md)
-- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../ai-for-data-curation.md)
+- [Large Language Model Training](../large-language-model-training-scaling-laws-data-curation-and-compute.md)
+- [Efficient Green AI](../efficient-green-ai.md)

@@ -1,93 +1,76 @@
 ---
-id: "kb-2026-00325"
-title: "Renaissance"
-schema_type: "TechArticle"
-category: "history"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00325
+title: Renaissance
+schema_type: TechArticle
+category: history
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-history-001"
-    statement: "The Renaissance (14th-17th centuries) was a cultural rebirth bridging the Middle Ages and modern era, beginning in Florence, Italy. Emphasis on humanism (human potential and achievement), rediscovery of classical Greek/Roman learning, and extraordinary artistic/scientific innovation. Patronage by wealthy families (Medici) funded artists."
-    source_title: "The Civilization of the Renaissance in Italy (Jacob Burckhardt, 1860)"
-    source_url: "https://www.gutenberg.org/ebooks/2074"
-    confidence: "medium"
-  - id: "fact-history-002"
-    statement: "Key figures: Leonardo da Vinci (Mona Lisa, inventor, anatomist — Renaissance Man), Michelangelo (David, Sistine Chapel), Raphael, Donatello."
-    source_title: "The Civilization of the Renaissance in Italy (Jacob Burckhardt, 1860)"
-    source_url: "https://www.gutenberg.org/ebooks/2074"
-    confidence: "medium"
-  - id: "fact-history-003"
-    statement: "Gutenberg printing press (1440) democratized knowledge."
-    source_title: "The Civilization of the Renaissance in Italy (Jacob Burckhardt, 1860)"
-    source_url: "https://www.gutenberg.org/ebooks/2074"
-    confidence: "medium"
-  - id: "fact-history-004"
-    statement: "Copernicus (1543, heliocentric theory), Galileo (telescope, physics)."
-    source_title: "The Civilization of the Renaissance in Italy (Jacob Burckhardt, 1860)"
-    source_url: "https://www.gutenberg.org/ebooks/2074"
-    confidence: "medium"
-  - id: "fact-history-005"
-    statement: "Machiavelli's The Prince (1513, political realism)."
-    source_title: "The Civilization of the Renaissance in Italy (Jacob Burckhardt, 1860)"
-    source_url: "https://www.gutenberg.org/ebooks/2074"
-    confidence: "medium"
-
-completeness: 0.88
-
+  - id: fact-renaissance-1
+    statement: >-
+      Britannica describes the Renaissance as a period of European cultural, artistic, political, and economic
+      rebirth after the Middle Ages.
+    source_title: Renaissance
+    source_url: https://www.britannica.com/event/Renaissance
+    confidence: medium
+  - id: fact-renaissance-2
+    statement: Humanism emphasized the study of classical texts and human agency in Renaissance intellectual life.
+    source_title: Humanism
+    source_url: https://www.britannica.com/topic/humanism
+    confidence: medium
+  - id: fact-renaissance-3
+    statement: Movable-type printing helped spread texts and ideas in early modern Europe.
+    source_title: Printing press
+    source_url: https://www.britannica.com/technology/printing-press
+    confidence: medium
+completeness: 0.84
 known_gaps:
-  - "Statistics and data cited are from 2013 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
-
+  - This overview does not enumerate every regional Renaissance or individual artist.
+disputed_statements: []
 primary_sources:
-  - title: "The Civilization of the Renaissance in Italy (Jacob Burckhardt, 1860)"
-    type: "book"
-    year: 1860
-    url: "https://www.gutenberg.org/ebooks/2074"
-    institution: "Project Gutenberg"
-
-secondary_sources:
-  - title: "Redis in Action"
-    authors: ["Carlson"]
-    type: "book"
-    year: 2013
-    url: "https://www.manning.com/books/redis-in-action"
-    institution: "Manning"
-  - title: "The Penguin History of the World (J.M. Roberts)"
-    type: "textbook"
-    year: 2014
-    url: "https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431"
-    institution: "Penguin Books"
-
+  - title: Renaissance
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/event/Renaissance
+    institution: Encyclopaedia Britannica
+  - title: Humanism
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/topic/humanism
+    institution: Encyclopaedia Britannica
+  - title: Printing press
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/technology/printing-press
+    institution: Encyclopaedia Britannica
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
 
 ## TL;DR
 
-The Renaissance (14th-17th centuries) was a cultural rebirth bridging the Middle Ages and modern era, beginning in Florence, Italy. Emphasis on humanism (human potential and achievement), rediscovery of classical Greek/Roman learning, and extraordinary artistic/scientific innovation. Patronage by wealthy families (Medici) funded artists.
+The Renaissance was a European cultural and intellectual renewal associated with classical learning, humanism, art, and wider circulation of texts. This repair removes the unrelated AI-safety dispute and replaces single-source bundled claims with Britannica-backed facts.
 
 ## Core Explanation
 
-Key figures: Leonardo da Vinci (Mona Lisa, inventor, anatomist — Renaissance Man), Michelangelo (David, Sistine Chapel), Raphael, Donatello. Gutenberg printing press (1440) democratized knowledge. Copernicus (1543, heliocentric theory), Galileo (telescope, physics). Machiavelli's The Prince (1513, political realism). Shakespeare (1564-1616, peak of English Renaissance).
+The public facts now cover the Renaissance overview, humanism, and the printing press. Lists of artists, political writers, and scientific figures should be handled as separate source-backed claims when expanded.
 
 ## Further Reading
 
-- [The Civilization of the Renaissance in Italy (Jacob Burckhardt, 1860)](https://www.gutenberg.org/ebooks/2074)
+- [Britannica: Renaissance](https://www.britannica.com/event/Renaissance)
+- [Britannica: Humanism](https://www.britannica.com/topic/humanism)
+- [Britannica: Printing press](https://www.britannica.com/technology/printing-press)
 
 ## Related Articles
 
-- [Renaissance Art](../../arts/renaissance-art.md)
-- [Renaissance: Humanism, Art, and the Rebirth of Classical Learning](../renaissance-humanism-art-and-the-rebirth-of-classical-learning.md)
+- [Renaissance Humanism](../renaissance-humanism-art-and-the-rebirth-of-classical-learning.md)
 - [Renaissance Science](../renaissance-science.md)

@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: arts
 language: en
 confidence: medium
-last_verified: '2026-05-25'
-created_date: '2026-05-22'
+last_verified: "2026-05-28"
+created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,96 +15,70 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-arts-001
+  - id: fact-aesthetics-1
     statement: >-
-      Aesthetics is the philosophical study of beauty, art, and taste. Key questions: What makes something beautiful? Is beauty objective or subjective? What is art? Kant: beauty is 'purposiveness
-      without purpose' — judged disinterestedly (without personal stake). Hume: 'Beauty is no quality in things themselves: it exists merely in the mind.'
-    source_title: Critique of Judgment (Immanuel Kant, 1790)
-    source_url: https://www.cambridge.org/core/books/kants-critique-of-the-power-of-judgment/
+      Aesthetics is the branch of philosophy concerned with beauty, art, taste, and related forms of
+      experience and judgment.
+    source_title: Aesthetics
+    source_url: https://www.britannica.com/topic/aesthetics
     confidence: medium
-  - id: fact-arts-002
-    statement: 'Duchamp''s Fountain (1917): urinal as art — challenged aesthetics entirely.'
-    source_title: Critique of Judgment (Immanuel Kant, 1790)
-    source_url: https://www.cambridge.org/core/books/kants-critique-of-the-power-of-judgment/
+  - id: fact-aesthetics-2
+    statement: >-
+      Kant treated judgments of beauty as disinterested and as involving a distinctive relation between
+      imagination and understanding.
+    source_title: Kant's Aesthetics and Teleology
+    source_url: https://plato.stanford.edu/entries/kant-aesthetics/
     confidence: medium
-  - id: fact-arts-003
-    statement: '''Artworld'' theory (Danto, 1964): Art is whatever the artworld accepts as art.'
-    source_title: Critique of Judgment (Immanuel Kant, 1790)
-    source_url: https://www.cambridge.org/core/books/kants-critique-of-the-power-of-judgment/
+  - id: fact-aesthetics-3
+    statement: >-
+      Contemporary debates over defining art include institutional and historical accounts associated with
+      figures such as Danto and Dickie.
+    source_title: The Definition of Art
+    source_url: https://plato.stanford.edu/entries/art-definition/
     confidence: medium
-completeness: 0.88
+completeness: 0.84
 known_gaps:
-  - Statistics and data cited are from 1950 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
+  - >-
+    This overview does not adjudicate between formalist, expressionist, institutional, and historical
+    definitions of art.
 disputed_statements:
-  - statement: >-
-      The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist
-      and expressionist accounts
+  - statement: The definition of art remains contested across major approaches in aesthetics.
+    source_title: The Definition of Art
+    source_url: https://plato.stanford.edu/entries/art-definition/
 primary_sources:
-  - title: Critique of Judgment (Immanuel Kant, 1790)
-    type: book
-    year: 1790
-    url: https://www.cambridge.org/core/books/kants-critique-of-the-power-of-judgment/
-    institution: Cambridge University Press
-  - title: 'Aesthetics: A Very Short Introduction (2025)'
-    type: book
-    year: 2025
-    authors:
-      - Nanay B.
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-aesthetics/
-  - title: 'The Philosophy of Art: A Contemporary Introduction (2025)'
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Routledge
-    url: https://www.routledge.com/aesthetics/
-  - title: 'The Philosophy of Art: A Contemporary Introduction (2nd Edition, 2025)'
-    type: book
-    year: 2025
-    authors:
-      - Carroll N.
-    institution: Routledge
-    url: https://www.routledge.com/philosophy-of-art/
-  - title: 'Aesthetics: A Comprehensive Anthology (2nd Edition)'
-    authors:
-      - Cahn, S.M.
-      - Meskin, A.
-    type: book
-    year: 2020
-    institution: Wiley-Blackwell
-  - title: The Oxford Handbook of Aesthetics
-    authors:
-      - Levinson, J.
-    type: book
-    year: 2005
-    institution: Oxford University Press
-secondary_sources:
-  - title: The Story of Art
-    type: book
-    year: 1950
-    url: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
-    institution: E.H. Gombrich, Phaidon
-  - title: The Story of Art (E.H. Gombrich)
-    type: textbook
-    year: 1995
-    url: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
-    institution: Phaidon Press
+  - title: Aesthetics
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/topic/aesthetics
+    institution: Encyclopaedia Britannica
+  - title: Kant's Aesthetics and Teleology
+    type: reference
+    year: 2022
+    url: https://plato.stanford.edu/entries/kant-aesthetics/
+    institution: Stanford Encyclopedia of Philosophy
+  - title: The Definition of Art
+    type: reference
+    year: 2018
+    url: https://plato.stanford.edu/entries/art-definition/
+    institution: Stanford Encyclopedia of Philosophy
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
 ## TL;DR
 
-Aesthetics is the philosophical study of beauty, art, and taste. Key questions: What makes something beautiful? Is beauty objective or subjective? What is art? Kant: beauty is 'purposiveness without purpose' — judged disinterestedly (without personal stake). Hume: 'Beauty is no quality in things themselves: it exists merely in the mind.'
+Aesthetics studies beauty, art, taste, and aesthetic judgment. This repaired version separates general aesthetics, Kant's account of beauty, and contemporary definitions of art instead of tying unrelated claims to a single Kant source.
 
 ## Core Explanation
 
-Kant: the beautiful produces 'free play' of imagination and understanding, pleasing universally (subjective universal). Sublime: awe-inspiring (starry sky), overwhelms but from safe distance. Duchamp's Fountain (1917): urinal as art — challenged aesthetics entirely. 'Artworld' theory (Danto, 1964): Art is whatever the artworld accepts as art. Institutional theory (Dickie): art is artifact presented to artworld public. 'Beauty is truth, truth beauty' (Keats).
+The article now treats the definition of art as a live philosophical dispute supported by the Stanford Encyclopedia of Philosophy. Duchamp and readymades are relevant examples, but they are not used as standalone public claims in this sampled repair.
 
 ## Further Reading
 
-- [Critique of Judgment (Immanuel Kant, 1790)](https://www.cambridge.org/core/books/kants-critique-of-the-power-of-judgment/)
+- [Britannica: Aesthetics](https://www.britannica.com/topic/aesthetics)
+- [SEP: Kant's Aesthetics and Teleology](https://plato.stanford.edu/entries/kant-aesthetics/)
+- [SEP: The Definition of Art](https://plato.stanford.edu/entries/art-definition/)
 
 ## Related Articles
 
-- [AI for Art and Creativity: GANs, Diffusion, and Computational Aesthetics](../../ai/ai-for-art-and-creativity-gans-diffusion-and-computational-aesthetics.md)
+- [AI for Art and Creativity](../../ai/ai-for-art-and-creativity-gans-diffusion-and-computational-aesthetics.md)

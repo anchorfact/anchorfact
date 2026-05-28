@@ -4,8 +4,8 @@ title: Mayan Civilization
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
@@ -15,89 +15,64 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-history-01
+  - id: fact-maya-1
+    statement: The Maya developed a complex writing system and calendar traditions within pre-Columbian Mesoamerica.
+    source_title: The Maya calendar and writing system
+    source_url: https://www.britannica.com/topic/pre-Columbian-civilizations/The-Maya-calendar-and-writing-system
+    confidence: medium
+  - id: fact-maya-2
     statement: >-
-      The Maya civilization in Central America developed the most sophisticated writing system in the pre-Columbian Americas, advanced mathematics , accurate astronomical calendars, and monumental
-      architecture
-    source_title: The Maya (Michael D. Coe, 9th Ed)
-    source_url: https://thamesandhudson.com/the-maya-9780500291887
-    confidence: high
-  - id: fact-history-001
+      UNESCO describes Chichen-Itza as a major pre-Hispanic city on the Yucatan Peninsula with Maya and Toltec
+      cultural influences.
+    source_title: Pre-Hispanic City of Chichen-Itza
+    source_url: https://whc.unesco.org/en/list/483
+    confidence: medium
+  - id: fact-maya-3
     statement: >-
-      The Maya civilization (2000 BCE - 1500s CE) in Central America developed the most sophisticated writing system in the pre-Columbian Americas, advanced mathematics (concept of zero!), accurate
-      astronomical calendars, and monumental architecture (Chichen Itza, Tikal). Classic Period: 250-900 CE.
-    source_title: The Maya (Michael D. Coe, 9th Ed)
-    source_url: https://thamesandhudson.com/the-maya-9780500291887
+      The Smithsonian explains that the Maya calendar system used interlocking cycles, including the 260-day
+      Tzolkin and 365-day Haab.
+    source_title: The Calendar System
+    source_url: https://maya.nmai.si.edu/calendar/calendar-system
     confidence: medium
-  - id: fact-history-002
-    statement: "Achievements: concept of zero independently developed, accurate solar year (365.242 days), complex hieroglyphic writing (deciphered 1980s)."
-    source_title: The Maya (Michael D. Coe, 9th Ed)
-    source_url: https://thamesandhudson.com/the-maya-9780500291887
-    confidence: medium
-  - id: fact-history-003
-    statement: "Calendar: 260-day ritual + 365-day solar = 52-year Calendar Round."
-    source_title: The Maya (Michael D. Coe, 9th Ed)
-    source_url: https://thamesandhudson.com/the-maya-9780500291887
-    confidence: medium
-  - id: fact-history-004
-    statement: "Classic Maya collapse (~900 CE): likely multi-cause — overpopulation, drought, warfare, environmental degradation."
-    source_title: The Maya (Michael D. Coe, 9th Ed)
-    source_url: https://thamesandhudson.com/the-maya-9780500291887
-    confidence: medium
-completeness: 0.88
+completeness: 0.84
 known_gaps:
-  - Statistics and data cited are from 2021 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This entry does not summarize all regional differences among ancient and living Maya communities.
+disputed_statements: []
 primary_sources:
-  - title: The Maya (Michael D. Coe, 9th Ed)
-    type: book
-    year: 2015
-    url: https://thamesandhudson.com/the-maya-9780500291887
-    institution: Thames & Hudson
-  - title: The Maya (10th Edition, 2025)
-    type: book
-    year: 2025
-    authors:
-      - Coe M.D.
-      - Houston S.
-    institution: Thames & Hudson
-    url: https://thamesandhudson.com/maya/
-  - title: "Maya: A Very Short Introduction (2025)"
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-maya/
-secondary_sources:
-  - title: "The Greeks: A Global History"
-    type: book
-    year: 2021
-    url: https://www.basicbooks.com/titles/roderick-beaton/the-greeks/9781541618299/
-    institution: Roderick Beaton, Basic Books
-  - title: The Penguin History of the World (J.M. Roberts)
-    type: textbook
-    year: 2014
-    url: https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    institution: Penguin Books
+  - title: The Maya calendar and writing system
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/topic/pre-Columbian-civilizations/The-Maya-calendar-and-writing-system
+    institution: Encyclopaedia Britannica
+  - title: Pre-Hispanic City of Chichen-Itza
+    type: heritage_record
+    year: 2026
+    url: https://whc.unesco.org/en/list/483
+    institution: UNESCO World Heritage Centre
+  - title: The Calendar System
+    type: museum_reference
+    year: 2026
+    url: https://maya.nmai.si.edu/calendar/calendar-system
+    institution: Smithsonian National Museum of the American Indian
+secondary_sources: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
 
-The Maya civilization (2000 BCE - 1500s CE) in Central America developed the most sophisticated writing system in the pre-Columbian Americas, advanced mathematics (concept of zero!), accurate astronomical calendars, and monumental architecture (Chichen Itza, Tikal). Classic Period: 250-900 CE.
+Maya civilization is known for writing, calendar systems, mathematics, astronomy, cities, and architecture in Mesoamerica. This repair removes duplicate broad facts and replaces future book metadata with Britannica, UNESCO, and Smithsonian evidence.
 
 ## Core Explanation
 
-Achievements: concept of zero independently developed, accurate solar year (365.242 days), complex hieroglyphic writing (deciphered 1980s). Calendar: 260-day ritual + 365-day solar = 52-year Calendar Round. Long Count calendar: marked time from creation. Classic Maya collapse (~900 CE): likely multi-cause — overpopulation, drought, warfare, environmental degradation. Millions of Maya people survive today.
+The public facts now focus on the writing/calendar tradition, Chichen-Itza as a major site, and the interlocking calendar cycles. Claims about collapse causes and exact calendar precision are left out of the sampled public claim set.
 
 ## Further Reading
 
-- [The Maya (Michael D. Coe, 9th Ed)](https://thamesandhudson.com/the-maya-9780500291887)
+- [Britannica: Maya calendar and writing](https://www.britannica.com/topic/pre-Columbian-civilizations/The-Maya-calendar-and-writing-system)
+- [UNESCO: Chichen-Itza](https://whc.unesco.org/en/list/483)
+- [Smithsonian: The Calendar System](https://maya.nmai.si.edu/calendar/calendar-system)
 
 ## Related Articles
 
-- [Ancient Egyptian Civilization: Pharaohs, Pyramids, and Afterlife](../ancient-egyptian-civilization.md)
-- [Ancient Mesopotamia: Cradle of Civilization](../ancient-mesopotamia.md)
+- [Ancient Mesopotamia](../ancient-mesopotamia.md)
+- [Ancient Egyptian Civilization](../ancient-egyptian-civilization.md)

@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -15,100 +15,79 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-tml-1
+  - id: fact-edge-ai-1
     statement: >-
-      TinyML enables on-device ML inference on microcontrollers with <1mW power, using model compression techniques like quantization, pruning, and knowledge distillation to fit models in KB of
-      memory.
-    source_title: "Warden, Pete, and Daniel Situnayake. TinyML: Machine Learning with TensorFlow Lite. O'Reilly Media 2020"
-    source_url: https://www.oreilly.com/library/view/tinyml/9781492052036/
-    confidence: high
-  - id: fact-tml-2
-    statement: >-
-      MobileNets (Howard et al. 2017, Google) introduced depthwise separable convolutions, achieving comparable accuracy to standard CNNs with 8-9× fewer parameters, enabling vision AI on mobile
+      TinyML focuses on running machine-learning inference on microcontrollers and other ultra-low-power
       devices.
-    source_title: "Howard, Andrew G., et al. MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications. 2017"
-    source_url: https://arxiv.org/abs/1704.04861
-    confidence: high
-  - id: fact-tml-3
+    source_title: "TinyML: Machine Learning with TensorFlow Lite on Arduino and Ultra-Low-Power Microcontrollers"
+    source_url: https://www.oreilly.com/library/view/tinyml/9781492052036/
+    confidence: medium
+  - id: fact-edge-ai-2
     statement: >-
-      Federated Learning (McMahan et al. 2017, Google) trains models across decentralized edge devices without centralizing raw data, addressing both privacy and bandwidth constraints in edge AI
-      deployments.
-    source_title: McMahan, Brendan, et al. Communication-Efficient Learning of Deep Networks from Decentralized Data. AISTATS 2017
+      MobileNets use depthwise separable convolutions to reduce computation for mobile and embedded vision
+      models.
+    source_title: "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications"
+    source_url: https://arxiv.org/abs/1704.04861
+    confidence: medium
+  - id: fact-edge-ai-3
+    statement: >-
+      Federated learning trains models across decentralized devices while keeping raw training data local to
+      those devices.
+    source_title: Communication-Efficient Learning of Deep Networks from Decentralized Data
     source_url: https://arxiv.org/abs/1602.05629
-    confidence: high
-completeness: 0.9
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - On-device training (federated learning)
-  - Neuromorphic computing for edge AI
-disputed_statements:
-  - statement: No major disputed statements identified
+  - On-device training hardware, accelerators, and neuromorphic systems are outside this compact repair.
+disputed_statements: []
 primary_sources:
-  - title: "TinyML: Machine Learning with TensorFlow Lite"
+  - title: "TinyML: Machine Learning with TensorFlow Lite on Arduino and Ultra-Low-Power Microcontrollers"
     type: textbook
-    year: 2019
+    year: 2020
     url: https://www.oreilly.com/library/view/tinyml/9781492052036/
     institution: O'Reilly
+    authors:
+      - Pete Warden
+      - Daniel Situnayake
   - title: "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications"
     type: academic_paper
     year: 2017
     url: https://arxiv.org/abs/1704.04861
-    institution: Google
-secondary_sources:
-  - title: "Empowering Edge Intelligence: A Comprehensive Survey on On-Device AI Models"
-    type: survey_paper
-    year: 2025
+    institution: Google / arXiv
     authors:
-      - Wang, Zhiqing
-      - Tang, Zhiqing
-      - et al.
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/3724420
-  - title: "Tiny Machine Learning and On-Device Inference: A Comprehensive Review"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: Sensors (MDPI)
-    url: https://doi.org/10.3390/s25103191
-  - title: "Tiny Machine Learning (TinyML): Research Trends and the Future"
-    type: survey_paper
-    year: 2026
-    authors:
-      - multiple
-    institution: Array (ScienceDirect)
-    url: https://doi.org/10.1016/j.array.2025.100392
-  - title: "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications"
+      - Andrew G. Howard
+      - Menglong Zhu
+      - Bo Chen
+  - title: Communication-Efficient Learning of Deep Networks from Decentralized Data
     type: conference_paper
     year: 2017
+    url: https://arxiv.org/abs/1602.05629
+    institution: AISTATS / Google
     authors:
-      - Howard, Andrew G.
-      - Zhu, Menglong
-      - Chen, Bo
-      - Kalenichenko, Dmitry
-      - Wang, Weijun
-      - Weyand, Tobias
-      - Andreetto, Marco
-      - Adam, Hartwig
-    institution: Google
-    url: https://arxiv.org/abs/1704.04861
-updated: "2026-05-24"
+      - Brendan McMahan
+      - Eider Moore
+      - Daniel Ramage
+      - Seth Hampson
+      - Blaise Aguera y Arcas
+secondary_sources: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
-Edge AI runs machine learning directly on devices — smartphones, IoT sensors, microcontrollers — eliminating cloud latency and privacy concerns. TinyML pushes ML to devices using <1mW of power.
+
+Edge AI runs machine learning close to the data source, including phones, sensors, and microcontrollers. This repair aligns the evidence to TinyML, MobileNets, and federated learning rather than duplicate or future survey sources.
 
 ## Core Explanation
-Edge deployment constraints: memory (MB to KB), compute (no GPU), power (battery), and connectivity (intermittent). Model optimization via quantization, pruning, and architecture design (MobileNet, EfficientNet) is essential. ONNX Runtime and TFLite provide cross-platform inference.
 
-## Detailed Analysis
-Efficient architectures: MobileNet (depthwise separable convolution), ShuffleNet (channel shuffle), EfficientNet (compound scaling of depth/width/resolution), MCUNet (TinyNAS + TinyEngine for microcontrollers). Edge TPU (Google Coral) and Apple Neural Engine provide dedicated hardware acceleration.
+TinyML addresses ultra-low-power inference, MobileNets address efficient neural architectures, and federated learning addresses decentralized training without centralizing raw data.
 
 ## Further Reading
-- TensorFlow Lite Micro
-- Edge Impulse Platform
-- tinyML Foundation
+
+- [TinyML](https://www.oreilly.com/library/view/tinyml/9781492052036/)
+- [MobileNets](https://arxiv.org/abs/1704.04861)
+- [Federated Learning](https://arxiv.org/abs/1602.05629)
 
 ## Related Articles
 
-- [AI for the Internet of Things: Federated Learning, TinyML, and Intelligent Edge Devices](../ai-for-iot.md)
-- [AI Benchmarks: MMLU, SWE-bench, and How We Measure Intelligence](../ai-benchmarks-and-evaluation.md)
-- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../ai-blockchain.md)
+- [AI for IoT](../ai-for-iot.md)
+- [Model Compression](../model-compression.md)

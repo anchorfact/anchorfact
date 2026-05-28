@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T00:46:15.839Z
+Generated: 2026-05-28T01:28:04.161Z
 
-Snapshot: 555 public / 445 draft / 1540 claims.
+Snapshot: 555 public / 445 draft / 1532 claims.
 
 ## Summary
 
@@ -23,110 +23,35 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 
 | # | bucket | slug | confidence | coverage | claims | checks | recommendation |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | low_verified_coverage | `history/cold-war` | medium | 2/7 (28.6%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 2 | low_verified_coverage | `science/molecular-biology-central-dogma` | medium | 2/7 (28.6%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 3 | low_verified_coverage | `science/neuroscience-brain-plasticity` | low | 2/7 (28.6%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 4 | low_verified_coverage | `ai/autoencoders` | medium | 2/6 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 5 | low_verified_coverage | `ai/backpropagation` | medium | 1/3 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 6 | low_verified_coverage | `ai/llm-inference-optimization` | medium | 1/3 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 7 | low_verified_coverage | `ai/world-models-video-prediction` | medium | 1/3 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 8 | low_verified_coverage | `arts/aesthetics` | low | 2/6 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 1 | low_verified_coverage | `arts/coffee-culture` | low | 1/3 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 2 | low_verified_coverage | `arts/fashion-history` | low | 1/3 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 3 | low_verified_coverage | `business/marketing-fundamentals` | low | 2/6 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 4 | low_verified_coverage | `history/industrial-revolution` | low | 2/6 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 5 | low_verified_coverage | `history/mesopotamia` | low | 1/3 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 6 | low_verified_coverage | `history/mughal-empire` | low | 1/3 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 7 | low_verified_coverage | `history/world-war-i` | low | 1/3 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 8 | low_verified_coverage | `science/organic-chemistry` | low | 2/6 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
 | 9 | high_confidence | `ai/gpt-models` | high | 4/4 (100.0%) | 6 | source=pass; claim=pass; summary=pass | keep_public |
 | 10 | high_confidence | `ai/agentic-ai` | high | 2/2 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | high_confidence | `ai/ai-in-healthcare` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 12 | high_confidence | `ai/ai-red-teaming-and-safety` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 13 | medium_capped_claims | `ai/contrastive-learning` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 14 | medium_capped_claims | `ai/distributed-training-systems` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 15 | medium_capped_claims | `ai/dropout-and-regularization` | medium | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 16 | medium_capped_claims | `ai/edge-ai-and-tinyml` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 17 | low_confidence_public | `history/mayan-civilization` | low | 2/3 (66.7%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
-| 18 | low_confidence_public | `history/meiji-restoration` | low | 2/3 (66.7%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
-| 19 | low_confidence_public | `history/napoleonic-era` | low | 1/1 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
-| 20 | low_confidence_public | `history/renaissance` | low | 1/1 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
+| 13 | medium_capped_claims | `ai/embodied-ai-and-robotics` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 14 | medium_capped_claims | `ai/graph-neural-networks` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 15 | medium_capped_claims | `ai/image-segmentation` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 16 | medium_capped_claims | `ai/knowledge-distillation` | medium | 4/4 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 17 | low_confidence_public | `history/samurai-history` | low | 2/3 (66.7%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
+| 18 | low_confidence_public | `science/evolution-by-natural-selection` | low | 1/1 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
+| 19 | low_confidence_public | `science/newton-s-laws-of-motion` | low | 1/1 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
+| 20 | low_confidence_public | `science/ocean-life` | low | 1/1 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
 
 ## Article Findings
 
-### 1. Cold War
+### 1. Coffee Culture
 
-- canonical slug: `history/cold-war`
-- canonical URL: https://anchorfact.org/history/cold-war/
-- bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.87)
-- verified source coverage: 2/7 (28.6%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: partial_source_verification, low_verified_coverage, high_confidence_evidence_gap
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 2. Molecular Biology: The Central Dogma
-
-- canonical slug: `science/molecular-biology-central-dogma`
-- canonical URL: https://anchorfact.org/science/molecular-biology-central-dogma/
-- bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.87)
-- verified source coverage: 2/7 (28.6%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification, low_verified_coverage, high_confidence_evidence_gap
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
-- recommendation: `repair_sources`
-
-### 3. Neuroscience: Neuroplasticity and Brain Function
-
-- canonical slug: `science/neuroscience-brain-plasticity`
-- canonical URL: https://anchorfact.org/science/neuroscience-brain-plasticity/
+- canonical slug: `arts/coffee-culture`
+- canonical URL: https://anchorfact.org/arts/coffee-culture/
 - bucket: `low_verified_coverage`
 - confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 2/7 (28.6%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
-- recommendation: `repair_sources`
-
-### 4. Autoencoders
-
-- canonical slug: `ai/autoencoders`
-- canonical URL: https://anchorfact.org/ai/autoencoders/
-- bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.685)
-- verified source coverage: 2/6 (33.3%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak, generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 5. Backpropagation: The Engine of Neural Network Learning
-
-- canonical slug: `ai/backpropagation`
-- canonical URL: https://anchorfact.org/ai/backpropagation/
-- bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.685)
-- verified source coverage: 1/3 (33.3%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
-- recommendation: `repair_sources`
-
-### 6. LLM Inference Optimization: From FlashAttention to Speculative Decoding
-
-- canonical slug: `ai/llm-inference-optimization`
-- canonical URL: https://anchorfact.org/ai/llm-inference-optimization/
-- bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.685)
 - verified source coverage: 1/3 (33.3%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: partial_source_verification, low_verified_coverage
@@ -136,13 +61,28 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 7. World Models: Video Prediction, Physical Reasoning, and Interactive AI
+### 2. Fashion History
 
-- canonical slug: `ai/world-models-video-prediction`
-- canonical URL: https://anchorfact.org/ai/world-models-video-prediction/
+- canonical slug: `arts/fashion-history`
+- canonical URL: https://anchorfact.org/arts/fashion-history/
 - bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.705)
+- confidence: `low` (verified_sources, score 0.475)
 - verified source coverage: 1/3 (33.3%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 3. Marketing: Strategy, Consumer Behavior, and Digital Channels
+
+- canonical slug: `business/marketing-fundamentals`
+- canonical URL: https://anchorfact.org/business/marketing-fundamentals/
+- bucket: `low_verified_coverage`
+- confidence: `low` (verified_sources, score 0.475)
+- verified source coverage: 2/6 (33.3%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: claim_evidence_weak, partial_source_verification, low_verified_coverage
 - source-title match: `weak`
@@ -151,10 +91,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: claim_evidence_weak
 - recommendation: `repair_sources`
 
-### 8. Aesthetics
+### 4. Industrial Revolution
 
-- canonical slug: `arts/aesthetics`
-- canonical URL: https://anchorfact.org/arts/aesthetics/
+- canonical slug: `history/industrial-revolution`
+- canonical URL: https://anchorfact.org/history/industrial-revolution/
 - bucket: `low_verified_coverage`
 - confidence: `low` (verified_sources, score 0.475)
 - verified source coverage: 2/6 (33.3%)
@@ -164,6 +104,66 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: none
+- recommendation: `repair_sources`
+
+### 5. Mesopotamia
+
+- canonical slug: `history/mesopotamia`
+- canonical URL: https://anchorfact.org/history/mesopotamia/
+- bucket: `low_verified_coverage`
+- confidence: `low` (verified_sources, score 0.475)
+- verified source coverage: 1/3 (33.3%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement, generic_source_homepage
+- recommendation: `repair_sources`
+
+### 6. Mughal Empire
+
+- canonical slug: `history/mughal-empire`
+- canonical URL: https://anchorfact.org/history/mughal-empire/
+- bucket: `low_verified_coverage`
+- confidence: `low` (verified_sources, score 0.475)
+- verified source coverage: 1/3 (33.3%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 7. World War I
+
+- canonical slug: `history/world-war-i`
+- canonical URL: https://anchorfact.org/history/world-war-i/
+- bucket: `low_verified_coverage`
+- confidence: `low` (verified_sources, score 0.475)
+- verified source coverage: 1/3 (33.3%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 8. Organic Chemistry: Carbon Compounds and Reactions
+
+- canonical slug: `science/organic-chemistry`
+- canonical URL: https://anchorfact.org/science/organic-chemistry/
+- bucket: `low_verified_coverage`
+- confidence: `low` (verified_sources, score 0.475)
+- verified source coverage: 2/6 (33.3%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak, partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak
 - recommendation: `repair_sources`
 
 ### 9. GPT (Generative Pre-trained Transformer) Model Family
@@ -226,27 +226,27 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 13. Contrastive Learning: SimCLR, MoCo, and CLIP
+### 13. Embodied AI: Robots That Learn from the Physical World
 
-- canonical slug: `ai/contrastive-learning`
-- canonical URL: https://anchorfact.org/ai/contrastive-learning/
+- canonical slug: `ai/embodied-ai-and-robotics`
+- canonical URL: https://anchorfact.org/ai/embodied-ai-and-robotics/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.69)
+- confidence: `medium` (verified_sources, score 0.71)
 - verified source coverage: 1/2 (50.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: duplicate_sources
+- hygiene flags: none
 - recommendation: `repair_sources`
 
-### 14. Distributed Training: FSDP, DeepSpeed, and Scaling Laws
+### 14. Graph Neural Networks: Message Passing and Applications
 
-- canonical slug: `ai/distributed-training-systems`
-- canonical URL: https://anchorfact.org/ai/distributed-training-systems/
+- canonical slug: `ai/graph-neural-networks`
+- canonical URL: https://anchorfact.org/ai/graph-neural-networks/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.71)
+- confidence: `medium` (verified_sources, score 0.67)
 - verified source coverage: 1/2 (50.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: claim_evidence_weak, partial_source_verification
@@ -256,55 +256,40 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: claim_evidence_weak
 - recommendation: `repair_sources`
 
-### 15. Dropout and Regularization Techniques
+### 15. Image Segmentation: From U-Net to SAM
 
-- canonical slug: `ai/dropout-and-regularization`
-- canonical URL: https://anchorfact.org/ai/dropout-and-regularization/
+- canonical slug: `ai/image-segmentation`
+- canonical URL: https://anchorfact.org/ai/image-segmentation/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.7)
-- verified source coverage: 2/2 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, claim_evidence_weak
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak, duplicate_sources, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 16. Edge AI and TinyML: Intelligence at the Edge
-
-- canonical slug: `ai/edge-ai-and-tinyml`
-- canonical URL: https://anchorfact.org/ai/edge-ai-and-tinyml/
-- bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.67)
+- confidence: `medium` (verified_sources, score 0.71)
 - verified source coverage: 1/2 (50.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak, duplicate_sources
-- recommendation: `repair_sources`
-
-### 17. Mayan Civilization
-
-- canonical slug: `history/mayan-civilization`
-- canonical URL: https://anchorfact.org/history/mayan-civilization/
-- bucket: `low_confidence_public`
-- confidence: `low` (verified_sources, score 0.55)
-- verified source coverage: 2/3 (66.7%)
-- claims: 5 total, 5 capped, 0 missing evidence
 - quality reasons: partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
+- hygiene flags: duplicate_sources
 - recommendation: `repair_sources`
 
-### 18. Meiji Restoration
+### 16. Knowledge Distillation
 
-- canonical slug: `history/meiji-restoration`
-- canonical URL: https://anchorfact.org/history/meiji-restoration/
+- canonical slug: `ai/knowledge-distillation`
+- canonical URL: https://anchorfact.org/ai/knowledge-distillation/
+- bucket: `medium_capped_claims`
+- confidence: `medium` (verified_sources, score 0.8)
+- verified source coverage: 4/4 (100.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 17. Samurai History
+
+- canonical slug: `history/samurai-history`
+- canonical URL: https://anchorfact.org/history/samurai-history/
 - bucket: `low_confidence_public`
 - confidence: `low` (verified_sources, score 0.55)
 - verified source coverage: 2/3 (66.7%)
@@ -316,10 +301,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 19. Napoleonic Era
+### 18. Evolution by Natural Selection
 
-- canonical slug: `history/napoleonic-era`
-- canonical URL: https://anchorfact.org/history/napoleonic-era/
+- canonical slug: `science/evolution-by-natural-selection`
+- canonical URL: https://anchorfact.org/science/evolution-by-natural-selection/
 - bucket: `low_confidence_public`
 - confidence: `low` (verified_sources, score 0.43)
 - verified source coverage: 1/1 (100.0%)
@@ -328,13 +313,28 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
+- hygiene flags: none
 - recommendation: `repair_sources`
 
-### 20. Renaissance
+### 19. Newton's Laws of Motion
 
-- canonical slug: `history/renaissance`
-- canonical URL: https://anchorfact.org/history/renaissance/
+- canonical slug: `science/newton-s-laws-of-motion`
+- canonical URL: https://anchorfact.org/science/newton-s-laws-of-motion/
+- bucket: `low_confidence_public`
+- confidence: `low` (verified_sources, score 0.43)
+- verified source coverage: 1/1 (100.0%)
+- claims: 5 total, 5 capped, 0 missing evidence
+- quality reasons: generic_source_homepage
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement, generic_source_homepage
+- recommendation: `repair_sources`
+
+### 20. Ocean Life
+
+- canonical slug: `science/ocean-life`
+- canonical URL: https://anchorfact.org/science/ocean-life/
 - bucket: `low_confidence_public`
 - confidence: `low` (verified_sources, score 0.43)
 - verified source coverage: 1/1 (100.0%)
