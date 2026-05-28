@@ -18010,7 +18010,10 @@
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://wwnorton.com/books/9780393978803"
+                "final_url": "https://wwnorton.com/books/9780393978803",
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-ninth targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -18019,7 +18022,9 @@
         }
       ],
       "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/arts/modern-art-movements.md",
@@ -19919,16 +19924,19 @@
       "sources_total": 1,
       "verification_results": [
         {
-          "source_title": "Principles of Marketing (Kotler & Armstrong, 18th Ed)",
-          "source_type": "book",
+          "source_title": "Principles of Marketing: The Marketing Mix and the 4Ps of Marketing",
+          "source_type": "open_textbook",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.pearson.com/en-us/subject-catalog/p/principles-of-marketing/P200000009556",
+              "identifier": "https://openstax.org/books/principles-marketing/pages/1-2-the-marketing-mix-and-the-4ps-of-marketing",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://www.pearson.com/en-us/search/All-results?aq=principles%20of%20marketing"
+                "final_url": "https://openstax.org/books/principles-marketing/pages/1-2-the-marketing-mix-and-the-4ps-of-marketing",
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-ninth targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -19937,7 +19945,9 @@
         }
       ],
       "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/business/negotiation-skills.md",
@@ -20104,16 +20114,19 @@
       "sources_total": 1,
       "verification_results": [
         {
-          "source_title": "The Simple Path to Wealth (JL Collins)",
-          "source_type": "book",
+          "source_title": "JL Collins Stock Series",
+          "source_type": "professional_resource",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.jlcollinsnh.com/stock-series/",
+              "identifier": "https://jlcollinsnh.com/stock-series/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://jlcollinsnh.com/stock-series/"
+                "final_url": "https://jlcollinsnh.com/stock-series/",
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-ninth targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -20122,7 +20135,9 @@
         }
       ],
       "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/business/private-label-products.md",
@@ -28457,7 +28472,10 @@
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/"
+                "final_url": "https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/",
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-ninth targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -28466,7 +28484,9 @@
         }
       ],
       "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/model-view-controller-mvc.md",
@@ -42154,12 +42174,14 @@
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/",
+              "identifier": "https://www.penguinrandomhouse.com/books/161622/citizens-by-simon-schama/",
               "verified": true,
               "metadata": {
+                "status": 200,
+                "final_url": "https://www.penguinrandomhouse.com/books/161622/citizens-by-simon-schama/",
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+                "note": "Forty-ninth targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }

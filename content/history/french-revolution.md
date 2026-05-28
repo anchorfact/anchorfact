@@ -4,9 +4,9 @@ title: French Revolution
 schema_type: TechArticle
 category: history
 language: en
-confidence: medium
-last_verified: '2026-05-25'
-created_date: '2026-05-22'
+confidence: low
+last_verified: "2026-05-28"
+created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -14,59 +14,50 @@ derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
+completeness: 0.72
 atomic_facts:
   - id: fact-history-001
-    statement: The French Revolution began in 1789 and overthrew the Old Regime, replacing hereditary privilege with new arguments about citizenship, rights, and popular sovereignty.
-    source_title: 'Citizens: A Chronicle of the French Revolution (Simon Schama)'
-    source_url: https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/
-    confidence: medium
+    statement: "Penguin Random House describes Simon Schama's Citizens as a social, cultural, and narrative history of the French Revolution."
+    source_title: "Citizens: A Chronicle of the French Revolution (Simon Schama)"
+    source_url: "https://www.penguinrandomhouse.com/books/161622/citizens-by-simon-schama/"
+    confidence: low
   - id: fact-history-002
-    statement: Landmark events included the Storming of the Bastille, the Declaration of the Rights of Man and of the Citizen, the Reign of Terror, and Napoleon's 1799 coup.
-    source_title: 'Citizens: A Chronicle of the French Revolution (Simon Schama)'
-    source_url: https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/
-    confidence: medium
+    statement: "The same publisher page frames the book as a fresh view of Louis XVI's France and a major work of modern history publishing."
+    source_title: "Citizens: A Chronicle of the French Revolution (Simon Schama)"
+    source_url: "https://www.penguinrandomhouse.com/books/161622/citizens-by-simon-schama/"
+    confidence: low
   - id: fact-history-003
-    statement: The French Revolution abolished feudal privileges in France and helped make citizenship, rights, and popular sovereignty central themes in modern politics.
-    source_title: 'Citizens: A Chronicle of the French Revolution (Simon Schama)'
-    source_url: https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/
-    confidence: medium
-completeness: 0.88
+    statement: "A cautious French Revolution primer can introduce Old Regime crisis, citizenship, rights, political conflict, and violence while avoiding one-source certainty on contested causes."
+    source_title: "Citizens: A Chronicle of the French Revolution (Simon Schama)"
+    source_url: "https://www.penguinrandomhouse.com/books/161622/citizens-by-simon-schama/"
+    confidence: low
 known_gaps:
-  - Statistics and data cited are from 1989 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: The role of Enlightenment ideas versus material conditions as primary drivers of the French Revolution remains a historiographical debate.
-    source_title: The Oxford History of the French Revolution
-    source_url: https://global.oup.com/academic/product/the-oxford-history-of-the-french-revolution-9780199252985
+  - "This is a low-confidence primer backed by one broad book publisher page."
+  - "Causes, casualty counts, ideological interpretation, and regional chronology require narrower source mapping."
+disputed_statements: []
 primary_sources:
-  - title: 'Citizens: A Chronicle of the French Revolution (Simon Schama)'
+  - title: "Citizens: A Chronicle of the French Revolution (Simon Schama)"
     type: book
     year: 1989
-    url: https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/
-    institution: Penguin
-secondary_sources:
-  - title: The Oxford History of the French Revolution
-    type: book
-    year: 1989
-    url: https://global.oup.com/academic/product/the-oxford-history-of-the-french-revolution-9780199252985
-    institution: William Doyle, Oxford University Press
+    url: "https://www.penguinrandomhouse.com/books/161622/citizens-by-simon-schama/"
+    institution: "Penguin Random House"
+secondary_sources: []
 ---
 
 ## TL;DR
 
-The French Revolution began in 1789 and overthrew the Old Regime, replacing hereditary privilege with new arguments about citizenship, rights, and popular sovereignty. It reshaped France and became a reference point for later revolutionary politics.
+The French Revolution transformed French political life and became a major reference point for later arguments about citizenship, rights, sovereignty, and political violence. This short primer is low confidence because it is anchored to one broad book page.
 
 ## Core Explanation
 
-Causes included fiscal crisis, social inequality, political conflict, and Enlightenment-era arguments about rights and sovereignty. Landmark events included the Storming of the Bastille, the Declaration of the Rights of Man and of the Citizen, the Reign of Terror, and Napoleon's coup in 1799. Historians continue to debate the relative weight of ideological and material causes.
+Citizens is a narrative, social, and cultural history of the French Revolution. For a compact public entry, the source supports a careful overview of the Old Regime crisis, revolutionary citizenship, political conflict, and the problem of violence.
+
+The article avoids presenting a single cause as settled. Historians debate the relative weight of fiscal crisis, social hierarchy, Enlightenment arguments, political breakdown, war, and popular mobilization.
 
 ## Further Reading
 
-- [Citizens: A Chronicle of the French Revolution (Simon Schama)](https://www.penguinrandomhouse.com/books/122581/citizens-by-simon-schama/)
-- [The Oxford History of the French Revolution](https://global.oup.com/academic/product/the-oxford-history-of-the-french-revolution-9780199252985)
+- [Citizens: A Chronicle of the French Revolution](https://www.penguinrandomhouse.com/books/161622/citizens-by-simon-schama/)
 
 ## Related Articles
 
 - [French Revolution: Liberty, Terror, and the Birth of Modern Politics](../french-revolution-liberty-terror-and-the-birth-of-modern-politics.md)
-- [AI for Protein Structure Prediction: AlphaFold and the Folding Revolution](../../ai/ai-for-protein-structure-prediction-alphafold-and-the-folding-revolution.md)
-- [AI for Science: AlphaFold and the AI-Driven Discovery Revolution](../../ai/ai-for-science.md)

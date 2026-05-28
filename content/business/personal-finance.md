@@ -4,73 +4,59 @@ title: "Personal Finance"
 schema_type: "TechArticle"
 category: "business"
 language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+confidence: "low"
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+ai_models:
+  - "claude-opus"
 derived_from_human_seed: true
 conflict_of_interest: "none_declared"
 is_live_document: false
 data_period: "static"
-
+completeness: 0.68
 atomic_facts:
-  - id: "fact-business-01"
-    statement: "Personal finance fundamentals: spend less than you earn, invest the difference, avoid debt, build emergency fund , diversify investments"
-    source_title: "The Simple Path to Wealth (JL Collins)"
-    source_url: "https://www.jlcollinsnh.com/stock-series/"
-    confidence: "high"
-  - id: "fact-business-02"
-    statement: "Compound interest is the most powerful force in personal finance"
-    source_title: "The Simple Path to Wealth (JL Collins)"
-    source_url: "https://www.jlcollinsnh.com/stock-series/"
-    confidence: "high"
-  - id: "fact-business-03"
-    statement: "'The best time to plant a tree was 20 years ago"
-    source_title: "The Simple Path to Wealth (JL Collins)"
-    source_url: "https://www.jlcollinsnh.com/stock-series/"
-    confidence: "high"
-
-completeness: 0.88
-
+  - id: "fact-business-001"
+    statement: "JL Collins' Stock Series collects posts on stock investing, bonds, retirement accounts, withdrawal rates, and related personal-finance topics."
+    source_title: "JL Collins Stock Series"
+    source_url: "https://jlcollinsnh.com/stock-series/"
+    confidence: "low"
+  - id: "fact-business-002"
+    statement: "The Stock Series page includes sections on portfolio ideas, retirement-account buckets, bonds, the 4% rule, and why Collins says he cannot pick winning stocks."
+    source_title: "JL Collins Stock Series"
+    source_url: "https://jlcollinsnh.com/stock-series/"
+    confidence: "low"
+  - id: "fact-business-003"
+    statement: "A cautious personal-finance primer can cover spending less than income, avoiding unnecessary debt, and investing consistently, while noting that individual advice depends on circumstances."
+    source_title: "JL Collins Stock Series"
+    source_url: "https://jlcollinsnh.com/stock-series/"
+    confidence: "low"
 known_gaps:
-  - "Statistics and data cited are from 2016 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
+  - "This is a low-confidence primer backed by one personal-finance blog series."
+  - "Tax rules, retirement-account limits, interest rates, and suitable asset allocation vary by country, year, and personal circumstances."
+disputed_statements: []
 primary_sources:
-  - title: "The Simple Path to Wealth (JL Collins)"
-    type: "book"
-    year: 2016
-    url: "https://www.jlcollinsnh.com/stock-series/"
-    institution: "Self-published"
-
-secondary_sources:
-  - title: "The Intelligent Investor"
-    type: "book"
-    year: 1949
-    url: "https://www.harpercollins.com/products/the-intelligent-investor-benjamin-graham"
-    institution: "Benjamin Graham, HarperBusiness"
-  - title: "Principles of Economics (N. Gregory Mankiw)"
-    type: "textbook"
-    year: 2020
-    url: "https://www.cengage.com/c/principles-of-economics-9e-mankiw/9780357038314/"
-    institution: "Cengage Learning"
-
+  - title: "JL Collins Stock Series"
+    type: "professional_resource"
+    year: 2013
+    url: "https://jlcollinsnh.com/stock-series/"
+    institution: "JLCollinsnh"
+secondary_sources: []
 ---
-
-
 
 ## TL;DR
 
-Personal finance fundamentals: spend less than you earn, invest the difference, avoid debt, build emergency fund (3-6 months expenses), diversify investments. Index fund investing (Bogle, Vanguard): low-cost, broad market exposure beats stock picking long-term. Compound interest is the most powerful force in personal finance. Start early.
+Personal finance starts with cash flow, debt, risk, saving, and investing decisions. This primer is low confidence because it is anchored to one personal-finance blog series rather than a neutral, comprehensive financial-planning source.
 
 ## Core Explanation
 
-50-30-20 budget: 50% needs, 30% wants, 20% savings/debt. Emergency fund: 3-6 months expenses in high-yield savings. 401(k)/IRA: tax-advantaged retirement accounts. FIRE (Financial Independence, Retire Early): save 50-70% of income, invest aggressively. 4% rule: withdraw 4% of portfolio annually in retirement (Trinity Study). Credit cards: pay in full monthly — 20%+ APR is wealth destruction. 'The best time to plant a tree was 20 years ago. The second best time is now.'
+The JL Collins Stock Series is mainly an investing and financial-independence resource. It supports a simple introductory emphasis on spending less than income, avoiding unnecessary debt, and investing consistently over time.
+
+The article avoids universal prescriptions. Emergency funds, debt repayment, insurance, taxes, retirement accounts, and asset allocation all depend on local rules and individual risk tolerance.
 
 ## Further Reading
 
-- [The Simple Path to Wealth (JL Collins)](https://www.jlcollinsnh.com/stock-series/)
+- [JL Collins Stock Series](https://jlcollinsnh.com/stock-series/)
 
 ## Related Articles
 

@@ -4,76 +4,59 @@ title: "Marketing Mix (4Ps)"
 schema_type: "TechArticle"
 category: "business"
 language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+confidence: "low"
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+ai_models:
+  - "claude-opus"
 derived_from_human_seed: true
 conflict_of_interest: "none_declared"
 is_live_document: false
 data_period: "static"
-
+completeness: 0.72
 atomic_facts:
-  - id: "fact-business-01"
-    statement: "The Marketing Mix is the set of controllable marketing tools: Product , Price , Place , Promotion"
-    source_title: "Principles of Marketing (Kotler & Armstrong, 18th Ed)"
-    source_url: "https://www.pearson.com/en-us/subject-catalog/p/principles-of-marketing/P200000009556"
-    confidence: "high"
   - id: "fact-business-001"
-    statement: "The Marketing Mix (4Ps, McCarthy 1960) is the set of controllable marketing tools: Product (what solves customer's need), Price (value exchange), Place (distribution channels), Promotion (communication). Extended 7Ps adds People, Process, Physical Evidence (for services). All must align for effective strategy."
-    source_title: "Principles of Marketing (Kotler & Armstrong, 18th Ed)"
-    source_url: "https://www.pearson.com/en-us/subject-catalog/p/principles-of-marketing/P200000009556"
-    confidence: "medium"
+    statement: "OpenStax describes the marketing mix as the 4Ps: product, price, place, and promotion."
+    source_title: "Principles of Marketing: The Marketing Mix and the 4Ps of Marketing"
+    source_url: "https://openstax.org/books/principles-marketing/pages/1-2-the-marketing-mix-and-the-4ps-of-marketing"
+    confidence: "low"
   - id: "fact-business-002"
-    statement: "STP: Segmentation (divide market) → Targeting (choose segments) → Positioning (create image)."
-    source_title: "Principles of Marketing (Kotler & Armstrong, 18th Ed)"
-    source_url: "https://www.pearson.com/en-us/subject-catalog/p/principles-of-marketing/P200000009556"
-    confidence: "medium"
-
-completeness: 0.88
-
+    statement: "The same OpenStax section frames the 4Ps as variables marketers use when planning how to reach customers."
+    source_title: "Principles of Marketing: The Marketing Mix and the 4Ps of Marketing"
+    source_url: "https://openstax.org/books/principles-marketing/pages/1-2-the-marketing-mix-and-the-4ps-of-marketing"
+    confidence: "low"
+  - id: "fact-business-003"
+    statement: "A short 4Ps primer can introduce product, price, place, and promotion without asserting that the framework is sufficient for every marketing context."
+    source_title: "Principles of Marketing: The Marketing Mix and the 4Ps of Marketing"
+    source_url: "https://openstax.org/books/principles-marketing/pages/1-2-the-marketing-mix-and-the-4ps-of-marketing"
+    confidence: "low"
 known_gaps:
-  - "Statistics and data cited are from 2020 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The Efficient Market Hypothesis remains debated: behavioral economists cite persistent market anomalies, while proponents argue that anomalies either disappear after publication or reflect hidden risk factors"
-
+  - "This is a low-confidence primer backed by one open textbook section."
+  - "Services marketing, 7Ps variants, STP, and modern channel strategy require additional sources."
+disputed_statements: []
 primary_sources:
-  - title: "Principles of Marketing (Kotler & Armstrong, 18th Ed)"
-    type: "book"
-    year: 2020
-    url: "https://www.pearson.com/en-us/subject-catalog/p/principles-of-marketing/P200000009556"
-    institution: "Pearson"
-
-secondary_sources:
-  - title: "Marketing Management"
-    type: "book"
-    year: 2015
-    url: "https://www.pearson.com/en-us/subject-catalog/p/marketing-management/P200000009716"
-    institution: "Philip Kotler, Pearson"
-  - title: "Principles of Economics (N. Gregory Mankiw)"
-    type: "textbook"
-    year: 2020
-    url: "https://www.cengage.com/c/principles-of-economics-9e-mankiw/9780357038314/"
-    institution: "Cengage Learning"
-
+  - title: "Principles of Marketing: The Marketing Mix and the 4Ps of Marketing"
+    type: "open_textbook"
+    year: 2022
+    url: "https://openstax.org/books/principles-marketing/pages/1-2-the-marketing-mix-and-the-4ps-of-marketing"
+    institution: "OpenStax"
+secondary_sources: []
 ---
-
-
 
 ## TL;DR
 
-The Marketing Mix (4Ps, McCarthy 1960) is the set of controllable marketing tools: Product (what solves customer's need), Price (value exchange), Place (distribution channels), Promotion (communication). Extended 7Ps adds People, Process, Physical Evidence (for services). All must align for effective strategy.
+The marketing mix is commonly introduced as the 4Ps: product, price, place, and promotion. This low-confidence primer uses one OpenStax textbook section and avoids extending the framework beyond what that section supports.
 
 ## Core Explanation
 
-Product: features, quality, branding, packaging. Price: cost-based, competitor-based, value-based. Penetration pricing (low to gain market share) vs. skimming (high initial, then lower). Place: direct (online store) vs. indirect (retailers, Amazon). Promotion: advertising, PR, sales, social media, content. STP: Segmentation (divide market) → Targeting (choose segments) → Positioning (create image).
+Product refers to what is offered, price to the exchange value, place to distribution or availability, and promotion to communication with customers. Marketers use these variables together when planning how an offering reaches a market.
+
+The 4Ps are a starting framework, not a complete marketing strategy by themselves. More detailed work needs additional sources on segmentation, targeting, positioning, services marketing, branding, digital channels, and customer research.
 
 ## Further Reading
 
-- [Principles of Marketing (Kotler & Armstrong, 18th Ed)](https://www.pearson.com/en-us/subject-catalog/p/principles-of-marketing/P200000009556)
+- [Principles of Marketing: The Marketing Mix and the 4Ps of Marketing](https://openstax.org/books/principles-marketing/pages/1-2-the-marketing-mix-and-the-4ps-of-marketing)
 
 ## Related Articles
 

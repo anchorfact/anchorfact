@@ -4,76 +4,55 @@ title: "Jazz Music"
 schema_type: "TechArticle"
 category: "arts"
 language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+confidence: "low"
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+ai_models:
+  - "claude-opus"
 derived_from_human_seed: true
 conflict_of_interest: "none_declared"
 is_live_document: false
 data_period: "static"
-
+completeness: 0.7
 atomic_facts:
   - id: "fact-arts-001"
-    statement: "Jazz originated in New Orleans (late 19th/early 20th century), blending African rhythms, blues, ragtime, and European harmony. Key characteristics: swing, improvisation, blue notes, call-and-response. Called 'America's classical music.' Evolved through: Dixieland → Swing → Bebop → Cool → Free → Fusion."
+    statement: "Jazz by Gary Giddins and Scott DeVeaux is a Norton book source for introducing jazz history and musical development."
     source_title: "Jazz (Gary Giddins, Scott DeVeaux)"
     source_url: "https://wwnorton.com/books/9780393978803"
-    confidence: "medium"
+    confidence: "low"
   - id: "fact-arts-002"
-    statement: "Key figures: Louis Armstrong (trumpet, scat singing, defined swing), Duke Ellington (composer, big band leader), Charlie Parker/Dizzy Gillespie (bebop, fast complex improvisation), Miles Davis (Kind of Blue, 1959 — best-selling jazz album, modal jazz), John Coltrane (A Love Supreme, 1965 — spiritual jazz)."
+    statement: "A cautious jazz primer can describe jazz through improvisation, swing, blues influence, ensemble interaction, and changing styles across the twentieth century."
     source_title: "Jazz (Gary Giddins, Scott DeVeaux)"
     source_url: "https://wwnorton.com/books/9780393978803"
-    confidence: "medium"
+    confidence: "low"
   - id: "fact-arts-003"
-    statement: "Jazz influenced rock, R&B, hip-hop — foundational to 20th century music."
+    statement: "Claims about individual artists, album sales, or genre influence need narrower source mapping than this one-book primer provides."
     source_title: "Jazz (Gary Giddins, Scott DeVeaux)"
     source_url: "https://wwnorton.com/books/9780393978803"
-    confidence: "medium"
-
+    confidence: "low"
 known_gaps:
-  - "Statistics and data cited are from 2020 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist and expressionist accounts"
-
+  - "This is a low-confidence primer backed by one book source."
+  - "Artist-specific discography, sales claims, and regional histories require narrower sources."
+disputed_statements: []
 primary_sources:
   - title: "Jazz (Gary Giddins, Scott DeVeaux)"
     type: "book"
     year: 2009
     url: "https://wwnorton.com/books/9780393978803"
-    institution: "W.W. Norton"
-
-secondary_sources:
-  - title: "The Story of Art (E.H. Gombrich)"
-    type: "textbook"
-    year: 1995
-    url: "https://www.phaidon.com/store/art/the-story-of-art-9780714832470/"
-    institution: "Phaidon Press"
-  - title: "Oxford History of Art series"
-    type: "textbook"
-    year: 2020
-    url: "https://global.oup.com/academic/content/series/o/oxford-history-of-art-oha/"
-    institution: "Oxford University Press"
-  - title: "The History of Jazz (Ted Gioia, 3rd Ed)"
-    type: "book"
-    year: 2021
-    url: "https://global.oup.com/academic/product/the-history-of-jazz-9780190087210"
-    institution: "Oxford University Press"
-
+    institution: "W. W. Norton"
+secondary_sources: []
 ---
-
-
-
 
 ## TL;DR
 
-Jazz originated in New Orleans (late 19th/early 20th century), blending African rhythms, blues, ragtime, and European harmony. Key characteristics: swing, improvisation, blue notes, call-and-response. Called 'America's classical music.' Evolved through: Dixieland → Swing → Bebop → Cool → Free → Fusion.
+Jazz is a broad musical tradition often introduced through improvisation, swing, blues influence, ensemble interaction, and changing styles across the twentieth century. This short entry is low confidence because it is source-mapped to one book.
 
 ## Core Explanation
 
-Key figures: Louis Armstrong (trumpet, scat singing, defined swing), Duke Ellington (composer, big band leader), Charlie Parker/Dizzy Gillespie (bebop, fast complex improvisation), Miles Davis (Kind of Blue, 1959 — best-selling jazz album, modal jazz), John Coltrane (A Love Supreme, 1965 — spiritual jazz). Ella Fitzgerald: queen of scat. Jazz influenced rock, R&B, hip-hop — foundational to 20th century music.
+A useful first pass treats jazz as both a musical language and a history of performance communities. Improvisation, rhythmic feel, call-and-response, blues vocabulary, and interaction between soloists and ensembles are common introductory themes.
+
+This article avoids broad claims such as "best-selling jazz album" or total influence across all modern genres unless those claims are mapped to more precise sources.
 
 ## Further Reading
 
