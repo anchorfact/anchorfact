@@ -1,91 +1,79 @@
 ---
-id: "kb-2026-00443"
-title: "Learning How to Learn"
-schema_type: "TechArticle"
-category: "self-improvement"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+id: kb-2026-00443
+title: Learning How to Learn
+schema_type: TechArticle
+category: self-improvement
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-self-improvement-001"
-    statement: "Learning how to learn is a meta-skill that improves all other skills. Key techniques: spaced repetition (review at increasing intervals), active recall (test yourself, don't re-read), interleaving (mix topics, don't block), elaboration (explain in your own words), and focused + diffuse thinking modes (Pomodoro + rest)."
-    source_title: "Learning How to Learn"
-    source_url: "https://www.penguinrandomhouse.com/books/567576/learning-how-to-learn-by-barbara-oakley-phd-and-terrence-sejnowski-phd/"
-    confidence: "medium"
-  - id: "fact-self-improvement-002"
-    statement: "Spaced repetition: day 1 → day 2 → day 4 → day 7 → day 14 — memory curve."
-    source_title: "A Mind for Numbers (Barbara Oakley)"
-    source_url: "https://www.penguinrandomhouse.com/books/533681/a-mind-for-numbers-by-barbara-oakley-phd/"
-    confidence: "medium"
-  - id: "fact-self-improvement-003"
-    statement: "Forgetting curve (Ebbinghaus, 1885): we forget 50% within an hour if not reinforced."
-    source_title: "A Mind for Numbers (Barbara Oakley)"
-    source_url: "https://www.penguinrandomhouse.com/books/533681/a-mind-for-numbers-by-barbara-oakley-phd/"
-    confidence: "medium"
-  - id: "fact-self-improvement-004"
-    statement: "Diffuse mode: relaxed, background processing (shower insights)."
-    source_title: "A Mind for Numbers (Barbara Oakley)"
-    source_url: "https://www.penguinrandomhouse.com/books/533681/a-mind-for-numbers-by-barbara-oakley-phd/"
-    confidence: "medium"
-
+  - id: fact-self-improvement-001
+    statement: >-
+      Dunlosky and coauthors rated practice testing and distributed practice as high-utility
+      learning techniques.
+    source_title: Improving Students' Learning With Effective Learning Techniques
+    source_url: https://doi.org/10.1177/1529100612453266
+    confidence: medium
+  - id: fact-self-improvement-002
+    statement: >-
+      Roediger and Karpicke found that taking memory tests improved long-term retention compared
+      with repeated studying.
+    source_title: Test-Enhanced Learning
+    source_url: https://doi.org/10.1111/j.1467-9280.2006.01693.x
+    confidence: medium
+  - id: fact-self-improvement-003
+    statement: >-
+      Cepeda and coauthors reviewed distributed practice effects in verbal recall tasks across many
+      experimental conditions.
+    source_title: Distributed Practice in Verbal Recall Tasks
+    source_url: https://doi.org/10.1037/0033-2909.132.3.354
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
-  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    Coverage intentionally narrowed to directly sourced public evidence; adjacent subtopics are not
+    exhaustively covered.
+disputed_statements: []
 primary_sources:
-  - title: "A Mind for Numbers (Barbara Oakley)"
-    type: "book"
-    year: 2014
-    url: "https://www.penguinrandomhouse.com/books/533681/a-mind-for-numbers-by-barbara-oakley-phd/"
-    institution: "TarcherPerigee"
-
-secondary_sources:
-  - title: "Learning How to Learn"
-    type: "book"
-    year: 2018
-    url: "https://www.penguinrandomhouse.com/books/567576/learning-how-to-learn-by-barbara-oakley-phd-and-terrence-sejnowski-phd/"
-    institution: "Barbara Oakley & Terrence Sejnowski, TarcherPerigee"
-  - title: "Atomic Habits (James Clear)"
-    type: "book"
-    year: 2018
-    url: "https://jamesclear.com/atomic-habits"
-    institution: "Avery, Penguin Random House"
-
+  - title: Improving Students' Learning With Effective Learning Techniques
+    type: academic_paper
+    year: 2013
+    url: https://doi.org/10.1177/1529100612453266
+    institution: Psychological Science in the Public Interest
+  - title: Test-Enhanced Learning
+    type: academic_paper
+    year: 2006
+    url: https://doi.org/10.1111/j.1467-9280.2006.01693.x
+    institution: Psychological Science
+  - title: Distributed Practice in Verbal Recall Tasks
+    type: academic_paper
+    year: 2006
+    url: https://doi.org/10.1037/0033-2909.132.3.354
+    institution: Psychological Bulletin
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
-
 ## TL;DR
 
-Learning how to learn is a meta-skill that improves all other skills. Key techniques: spaced repetition (review at increasing intervals), active recall (test yourself, don't re-read), interleaving (mix topics, don't block), elaboration (explain in your own words), and focused + diffuse thinking modes (Pomodoro + rest).
+Learning how to learn is best grounded in cognitive-science techniques with reproducible evidence. This repair focuses on practice testing, retrieval practice, and distributed practice rather than broad productivity claims.
 
 ## Core Explanation
 
-Spaced repetition: day 1 → day 2 → day 4 → day 7 → day 14 — memory curve. Forgetting curve (Ebbinghaus, 1885): we forget 50% within an hour if not reinforced. Active recall: flashcards (Anki), practice problems — far more effective than re-reading. Focused mode: intense concentration. Diffuse mode: relaxed, background processing (shower insights). Sleep: when brain consolidates learning. 'Test yourself, don't highlight.'
+The source-backed version favors techniques that have been evaluated across learners and tasks. Practice testing and distributed practice have strong review support, retrieval practice improves long-term retention, and spacing effects appear across many verbal learning studies.
 
 ## Further Reading
 
-- [A Mind for Numbers (Barbara Oakley)](https://www.penguinrandomhouse.com/books/533681/a-mind-for-numbers-by-barbara-oakley-phd/)
-atomic_facts:
-  - id: "fact-self-improvement-001"
-    statement: "Learning how to learn is a meta-skill that improves all other skills"
-    confidence: "medium"
-  - id: "fact-self-improvement-002"
-    statement: "Forgetting curve (Ebbinghaus, 1885): we forget 50% within an hour if not reinforced"
-    confidence: "medium"
+- [Improving Students' Learning With Effective Learning Techniques](https://doi.org/10.1177/1529100612453266)
+- [Test-Enhanced Learning](https://doi.org/10.1111/j.1467-9280.2006.01693.x)
+- [Distributed Practice in Verbal Recall Tasks](https://doi.org/10.1037/0033-2909.132.3.354)
 
 ## Related Articles
 

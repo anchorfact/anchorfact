@@ -1,84 +1,79 @@
 ---
-id: "kb-2026-00428"
-title: "Addiction Science"
-schema_type: "TechArticle"
-category: "health"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+id: kb-2026-00428
+title: Addiction Science
+schema_type: TechArticle
+category: health
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-health-01"
-    statement: "Most addictive substances : heroin, cocaine, nicotine, alcohol, methamphetamine"
-    source_title: "In the Realm of Hungry Ghosts (Gabor Maté)"
-    source_url: "https://drgabormate.com/book/in-the-realm-of-hungry-ghosts/"
-    confidence: "high"
-  - id: "fact-health-001"
-    statement: "Addiction is a chronic brain disease characterized by compulsive substance use despite harmful consequences. It hijacks the brain's reward system (dopamine pathway). Addiction is not a moral failing — it has genetic (40-60% heritability), environmental, and neurobiological roots. Treatment: medication-assisted therapy, CBT, support groups."
-    source_title: "In the Realm of Hungry Ghosts (Gabor Maté)"
-    source_url: "https://drgabormate.com/book/in-the-realm-of-hungry-ghosts/"
-    confidence: "medium"
-  - id: "fact-health-002"
-    statement: "Most addictive substances (ranking): heroin, cocaine, nicotine, alcohol, methamphetamine."
-    source_title: "In the Realm of Hungry Ghosts (Gabor Maté)"
-    source_url: "https://drgabormate.com/book/in-the-realm-of-hungry-ghosts/"
-    confidence: "medium"
-  - id: "fact-health-003"
-    statement: "'The opposite of addiction is connection' (Johann Hari)."
-    source_title: "In the Realm of Hungry Ghosts (Gabor Maté)"
-    source_url: "https://drgabormate.com/book/in-the-realm-of-hungry-ghosts/"
-    confidence: "medium"
-
+  - id: fact-health-001
+    statement: >-
+      ASAM defines addiction as a treatable chronic medical disease involving brain circuits,
+      genetics, environment, and life experiences.
+    source_title: Definition of Addiction
+    source_url: https://www.asam.org/quality-care/definition-of-addiction
+    confidence: medium
+  - id: fact-health-002
+    statement: >-
+      SAMHSA describes substance use disorder treatment as including behavioral therapies,
+      medications, recovery support, and other clinical services.
+    source_title: Substance Use Disorder Treatment
+    source_url: https://www.samhsa.gov/substance-use/treatment
+    confidence: medium
+  - id: fact-health-003
+    statement: >-
+      NIDA identifies methadone, buprenorphine, and naltrexone as FDA-approved medications used for
+      opioid use disorder.
+    source_title: Medications for Opioid Use Disorder
+    source_url: https://nida.nih.gov/research-topics/medications-opioid-use-disorder
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    Coverage intentionally narrowed to directly sourced public evidence; adjacent subtopics are not
+    exhaustively covered.
+disputed_statements: []
 primary_sources:
-  - title: "In the Realm of Hungry Ghosts (Gabor Maté)"
-    type: "book"
-    year: 2008
-    url: "https://drgabormate.com/book/in-the-realm-of-hungry-ghosts/"
-    institution: "North Atlantic Books"
-
-secondary_sources:
-  - title: "WHO Fact Sheets"
-    type: "report"
-    year: 2025
-    url: "https://www.who.int/news-room/fact-sheets"
-    institution: "World Health Organization"
-  - title: "CDC Health Topics"
-    type: "report"
-    year: 2025
-    url: "https://www.cdc.gov/health-topics.html"
-    institution: "Centers for Disease Control and Prevention"
-
+  - title: Definition of Addiction
+    type: professional_guidance
+    year: 2019
+    url: https://www.asam.org/quality-care/definition-of-addiction
+    institution: American Society of Addiction Medicine
+  - title: Substance Use Disorder Treatment
+    type: government_document
+    year: 2026
+    url: https://www.samhsa.gov/substance-use/treatment
+    institution: Substance Abuse and Mental Health Services Administration
+  - title: Medications for Opioid Use Disorder
+    type: government_document
+    year: 2026
+    url: https://nida.nih.gov/research-topics/medications-opioid-use-disorder
+    institution: National Institute on Drug Abuse
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
-
 ## TL;DR
 
-Addiction is a chronic brain disease characterized by compulsive substance use despite harmful consequences. It hijacks the brain's reward system (dopamine pathway). Addiction is not a moral failing — it has genetic (40-60% heritability), environmental, and neurobiological roots. Treatment: medication-assisted therapy, CBT, support groups.
+Addiction science treats addiction and substance use disorders as medical conditions involving behavior, brain systems, environment, and treatment access. This version avoids rankings and slogans and uses clinical/public-health sources.
 
 ## Core Explanation
 
-Dopamine: the craving molecule — all addictive substances increase it. Tolerance: need more for same effect. Withdrawal: absence causes opposite of drug effect. Most addictive substances (ranking): heroin, cocaine, nicotine, alcohol, methamphetamine. MAT: methadone/buprenorphine for opioids. Harm reduction: needle exchanges, supervised injection sites. 'The opposite of addiction is connection' (Johann Hari).
+The narrowed article focuses on evidence-backed framing: addiction is a treatable chronic medical disease, substance use disorder treatment can include behavioral therapies and medications, and opioid use disorder has FDA-approved medications such as methadone, buprenorphine, and naltrexone.
 
 ## Further Reading
 
-- [In the Realm of Hungry Ghosts (Gabor Maté)](https://drgabormate.com/book/in-the-realm-of-hungry-ghosts/)
+- [Definition of Addiction](https://www.asam.org/quality-care/definition-of-addiction)
+- [Substance Use Disorder Treatment](https://www.samhsa.gov/substance-use/treatment)
+- [Medications for Opioid Use Disorder](https://nida.nih.gov/research-topics/medications-opioid-use-disorder)
 
 ## Related Articles
 

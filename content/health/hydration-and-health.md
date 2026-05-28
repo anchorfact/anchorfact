@@ -1,84 +1,81 @@
 ---
-id: "kb-2026-00419"
-title: "Hydration and Health"
-schema_type: "TechArticle"
-category: "health"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+id: kb-2026-00419
+title: Hydration and Health
+schema_type: TechArticle
+category: health
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-health-01"
-    statement: "bottled: no health difference in most developed countries"
-    source_title: "Dietary Reference Intakes for Water (IOM, 2004)"
-    source_url: "https://www.nap.edu/catalog/10925/dietary-reference-intakes-for-water-potassium-sodium-chloride-and-sulfate"
-    confidence: "medium"
-  - id: "fact-health-001"
-    statement: "Water is essential for every bodily function: temperature regulation, nutrient transport, waste removal, joint lubrication. Daily intake: men ~3.7L, women ~2.7L (from all sources, not just drinking). Dehydration impairs cognition, mood, and physical performance at just 1-2% body water loss."
-    source_title: "Dietary Reference Intakes for Water (IOM, 2004)"
-    source_url: "https://www.nap.edu/catalog/10925/dietary-reference-intakes-for-water-potassium-sodium-chloride-and-sulfate"
-    confidence: "medium"
-  - id: "fact-health-002"
-    statement: "Thirst is a late signal — by the time you're thirsty, you're already 1-2% dehydrated."
-    source_title: "Dietary Reference Intakes for Water (IOM, 2004)"
-    source_url: "https://www.nap.edu/catalog/10925/dietary-reference-intakes-for-water-potassium-sodium-chloride-and-sulfate"
-    confidence: "medium"
-  - id: "fact-health-003"
-    statement: "bottled: no health difference in most developed countries."
-    source_title: "CDC Health Topics"
-    source_url: "https://www.cdc.gov/health-topics.html"
-    confidence: "medium"
-
+  - id: fact-health-001
+    statement: >-
+      The National Academies water DRI report provides population reference intakes for total water
+      from beverages and foods.
+    source_title: Dietary Reference Intakes for Water, Potassium, Sodium, Chloride, and Sulfate
+    source_url: >-
+      https://nap.nationalacademies.org/catalog/10925/dietary-reference-intakes-for-water-potassium-sodium-chloride-and-sulfate
+    confidence: medium
+  - id: fact-health-002
+    statement: >-
+      CDC public-health guidance describes water as a calorie-free drink that helps the body
+      maintain normal temperature and remove wastes.
+    source_title: About Water and Healthier Drinks
+    source_url: https://www.cdc.gov/healthy-weight-growth/water-healthy-drinks/index.html
+    confidence: medium
+  - id: fact-health-003
+    statement: >-
+      Merck Manual defines dehydration as a deficiency of water in the body, usually caused by fluid
+      loss exceeding intake.
+    source_title: Dehydration
+    source_url: https://www.merckmanuals.com/home/kidney-and-urinary-tract-disorders/water-balance/dehydration
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    Coverage intentionally narrowed to directly sourced public evidence; adjacent subtopics are not
+    exhaustively covered.
+disputed_statements: []
 primary_sources:
-  - title: "Dietary Reference Intakes for Water (IOM, 2004)"
-    type: "standard"
-    year: 2004
-    url: "https://www.nap.edu/catalog/10925/dietary-reference-intakes-for-water-potassium-sodium-chloride-and-sulfate"
-    institution: "National Academies Press"
-
-secondary_sources:
-  - title: "WHO Fact Sheets"
-    type: "report"
-    year: 2025
-    url: "https://www.who.int/news-room/fact-sheets"
-    institution: "World Health Organization"
-  - title: "CDC Health Topics"
-    type: "report"
-    year: 2025
-    url: "https://www.cdc.gov/health-topics.html"
-    institution: "Centers for Disease Control and Prevention"
-
+  - title: Dietary Reference Intakes for Water, Potassium, Sodium, Chloride, and Sulfate
+    type: consensus_report
+    year: 2005
+    url: >-
+      https://nap.nationalacademies.org/catalog/10925/dietary-reference-intakes-for-water-potassium-sodium-chloride-and-sulfate
+    institution: National Academies Press
+  - title: About Water and Healthier Drinks
+    type: government_document
+    year: 2026
+    url: https://www.cdc.gov/healthy-weight-growth/water-healthy-drinks/index.html
+    institution: Centers for Disease Control and Prevention
+  - title: Dehydration
+    type: medical_reference
+    year: 2026
+    url: https://www.merckmanuals.com/home/kidney-and-urinary-tract-disorders/water-balance/dehydration
+    institution: Merck Manual Consumer Version
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
-
 ## TL;DR
 
-Water is essential for every bodily function: temperature regulation, nutrient transport, waste removal, joint lubrication. Daily intake: men ~3.7L, women ~2.7L (from all sources, not just drinking). Dehydration impairs cognition, mood, and physical performance at just 1-2% body water loss.
+Hydration is about total water balance, not a single universal glass-count rule. This article now cites dietary-reference, public-health, and clinical reference sources and removes unsupported tap-versus-bottled and thirst claims.
 
 ## Core Explanation
 
-Urine color: pale straw = hydrated; dark yellow/amber = dehydrated. Thirst is a late signal — by the time you're thirsty, you're already 1-2% dehydrated. Water-rich foods (cucumbers, watermelon) count. Hyponatremia: drinking too much water dilutes blood sodium — rare but dangerous (endurance athletes). Tap vs. bottled: no health difference in most developed countries.
+Reliable hydration guidance distinguishes population-level adequate intake estimates from individual needs. Water comes from beverages and food, supports basic body functions, and dehydration is a clinically recognized water-balance problem when losses exceed intake.
 
 ## Further Reading
 
-- [Dietary Reference Intakes for Water (IOM, 2004)](https://www.nap.edu/catalog/10925/dietary-reference-intakes-for-water-potassium-sodium-chloride-and-sulfate)
+- [Dietary Reference Intakes for Water, Potassium, Sodium, Chloride, and Sulfate](https://nap.nationalacademies.org/catalog/10925/dietary-reference-intakes-for-water-potassium-sodium-chloride-and-sulfate)
+- [About Water and Healthier Drinks](https://www.cdc.gov/healthy-weight-growth/water-healthy-drinks/index.html)
+- [Dehydration](https://www.merckmanuals.com/home/kidney-and-urinary-tract-disorders/water-balance/dehydration)
 
 ## Related Articles
 

@@ -1,83 +1,75 @@
 ---
-id: "kb-2026-00101"
-title: "Clipboard API"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "human_only"
+id: kb-2026-00101
+title: Clipboard API
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-001"
-    statement: "The Clipboard API (`navigator.clipboard`) provides asynchronous read/write access to the system clipboard from web pages. It replaces `document.execCommand('copy')` with a Promise-based, secure (requires Permissions API) approach supporting text, HTML, images (PNG/SVG), and custom formats."
-    source_title: "Clipboard API and Events (W3C)"
-    source_url: "https://www.w3.org/TR/clipboard-apis/"
-    confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "Clipboard access must be triggered by user gesture (click, keypress)."
-    source_title: "Clipboard API and Events (W3C)"
-    source_url: "https://www.w3.org/TR/clipboard-apis/"
-    confidence: "medium"
-  - id: "fact-computer-science-003"
-    statement: "The Permissions API controls read access: `navigator.permissions.query({ name: 'clipboard-read' })`."
-    source_title: "Clipboard API and Events (W3C)"
-    source_url: "https://www.w3.org/TR/clipboard-apis/"
-    confidence: "medium"
-
+  - id: fact-computer-science-001
+    statement: MDN describes the Clipboard API as providing read and write access to the system clipboard.
+    source_title: Clipboard API - Web APIs | MDN
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API
+    confidence: medium
+  - id: fact-computer-science-002
+    statement: >-
+      MDN documents Navigator.clipboard as the entry point for the asynchronous Clipboard API in
+      secure contexts.
+    source_title: 'Navigator: clipboard property - Web APIs | MDN'
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/Navigator/clipboard
+    confidence: medium
+  - id: fact-computer-science-003
+    statement: >-
+      The W3C Clipboard API and events specification defines clipboard events and the ClipboardItem
+      interface.
+    source_title: Clipboard API and events
+    source_url: https://www.w3.org/TR/clipboard-apis/
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    Coverage intentionally narrowed to directly sourced public evidence; adjacent subtopics are not
+    exhaustively covered.
+disputed_statements: []
 primary_sources:
-  - title: "Clipboard API and Events (W3C)"
-    type: "standard"
-    year: 2024
-    url: "https://www.w3.org/TR/clipboard-apis/"
-    institution: "W3C"
-
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+  - title: Clipboard API - Web APIs | MDN
+    type: documentation
+    year: 2025
+    url: https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API
+    institution: Mozilla
+  - title: 'Navigator: clipboard property - Web APIs | MDN'
+    type: documentation
+    year: 2025
+    url: https://developer.mozilla.org/en-US/docs/Web/API/Navigator/clipboard
+    institution: Mozilla
+  - title: Clipboard API and events
+    type: standard
+    year: 2025
+    url: https://www.w3.org/TR/clipboard-apis/
+    institution: W3C
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
-
-
 ## TL;DR
 
-The Clipboard API (`navigator.clipboard`) provides asynchronous read/write access to the system clipboard from web pages. It replaces `document.execCommand('copy')` with a Promise-based, secure (requires Permissions API) approach supporting text, HTML, images (PNG/SVG), and custom formats.
+The Clipboard API provides asynchronous browser access to clipboard read and write operations, subject to security and permission constraints. The repaired version avoids overbroad format and gesture claims.
 
 ## Core Explanation
 
-`navigator.clipboard.writeText('text')` and `readText()` for plain text. `write()` and `read()` for ClipboardItem objects with multiple MIME types. Clipboard access must be triggered by user gesture (click, keypress). The Permissions API controls read access: `navigator.permissions.query({ name: 'clipboard-read' })`.
+The modern web clipboard surface centers on Navigator.clipboard and Promise-based methods. The W3C specification defines clipboard events and ClipboardItem, while MDN emphasizes that access is restricted to secure contexts and browser permission/security controls.
 
 ## Further Reading
 
-- [Clipboard API and Events (W3C)](https://www.w3.org/TR/clipboard-apis/)
+- [Clipboard API - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API)
+- [Navigator: clipboard property - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/clipboard)
+- [Clipboard API and events](https://www.w3.org/TR/clipboard-apis/)
 
 ## Related Articles
 

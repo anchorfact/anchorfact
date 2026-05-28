@@ -3,12 +3,12 @@
     "generated": "2026-05-27T14:00:00.000Z",
     "total_articles": 1000,
     "total_with_errors": 342,
-    "average_sources_per_article": "2.2",
-    "overall_verification_rate": "70.9%",
+    "average_sources_per_article": "2.3",
+    "overall_verification_rate": "71.2%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 326
+    "manual_reviewed_articles": 336
   },
   "articles": [
     {
@@ -16973,19 +16973,20 @@
       "file": "content/arts/ancient-greek-literature.md",
       "article_id": "kb-2026-00408",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Iliad (Homer, ~8th century BCE)",
-          "source_type": "literature",
+          "source_title": "Greek literature",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gutenberg.org/ebooks/2199",
+              "identifier": "https://www.britannica.com/art/Greek-literature",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.gutenberg.org/ebooks/2199"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -16993,33 +16994,17 @@
           "all_verified": true
         },
         {
-          "source_title": "The Iliad (2025 Translation)",
-          "source_type": "book",
+          "source_title": "Greek tragedy",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/iliad/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.penguinrandomhouse.com/iliad/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Greek Literature: A Very Short Introduction (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/vsi-greek-lit/",
+              "identifier": "https://www.britannica.com/art/Greek-tragedy",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-greek-lit/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -17027,25 +17012,28 @@
           "all_verified": true
         },
         {
-          "source_title": "The Iliad (2025 New Translation)",
-          "source_type": "book",
+          "source_title": "Poetics",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/iliad/",
-              "verified": false,
+              "identifier": "https://www.britannica.com/topic/Poetics",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.penguinrandomhouse.com/iliad/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/arts/animation-history.md",
@@ -21899,10 +21887,46 @@
       "file": "content/computer-science/canvas-api.md",
       "article_id": "kb-2026-00090",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "HTML Canvas 2D Context (W3C)",
+          "source_title": "Canvas API - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "CanvasRenderingContext2D - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "HTML Standard: The canvas element",
           "source_type": "standard",
           "results": [
             {
@@ -21910,8 +21934,9 @@
               "identifier": "https://html.spec.whatwg.org/multipage/canvas.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://html.spec.whatwg.org/multipage/canvas.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -21919,8 +21944,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/cap-theorem-consistency-availability-and-partition-tolerance.md",
@@ -22171,10 +22198,46 @@
       "file": "content/computer-science/clipboard-api.md",
       "article_id": "kb-2026-00101",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Clipboard API and Events (W3C)",
+          "source_title": "Clipboard API - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Navigator: clipboard property - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/clipboard",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Clipboard API and events",
           "source_type": "standard",
           "results": [
             {
@@ -22182,8 +22245,9 @@
               "identifier": "https://www.w3.org/TR/clipboard-apis/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.w3.org/TR/clipboard-apis/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -22191,8 +22255,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/code-review-best-practices.md",
@@ -33092,10 +33158,10 @@
       "file": "content/computer-science/webgpu.md",
       "article_id": "kb-2026-00092",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "WebGPU (W3C Working Draft)",
+          "source_title": "WebGPU",
           "source_type": "standard",
           "results": [
             {
@@ -33103,8 +33169,45 @@
               "identifier": "https://www.w3.org/TR/webgpu/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.w3.org/TR/webgpu/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "WebGPU Shading Language",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.w3.org/TR/WGSL/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "WebGPU API - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -33112,8 +33215,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/webpack.md",
@@ -36814,19 +36919,56 @@
       "file": "content/geography/gdp-and-economic-growth.md",
       "article_id": "kb-2026-00391",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "GDP: A Brief but Affectionate History (Diane Coyle)",
-          "source_type": "book",
+          "source_title": "Gross Domestic Product | U.S. Bureau of Economic Analysis",
+          "source_type": "government_document",
           "results": [
             {
               "method": "url",
-              "identifier": "https://press.princeton.edu/books/paperback/9780691169859/gdp",
+              "identifier": "https://www.bea.gov/resources/learning-center/what-to-know-gdp",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://press.princeton.edu/books/paperback/9780691169859/gdp"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Gross Domestic Product: An Economy's All",
+          "source_type": "explainer",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.imf.org/en/publications/fandd/issues/series/back-to-basics/gross-domestic-product-gdp",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GDP (current US$) | Data",
+          "source_type": "database",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -36834,8 +36976,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/geography/global-deserts-formation-distribution-and-desertification.md",
@@ -37903,19 +38047,56 @@
       "file": "content/health/addiction-science.md",
       "article_id": "kb-2026-00428",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "In the Realm of Hungry Ghosts (Gabor Maté)",
-          "source_type": "book",
+          "source_title": "Definition of Addiction",
+          "source_type": "professional_guidance",
           "results": [
             {
               "method": "url",
-              "identifier": "https://drgabormate.com/book/in-the-realm-of-hungry-ghosts/",
+              "identifier": "https://www.asam.org/quality-care/definition-of-addiction",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://drgabormate.com/book/in-the-realm-of-hungry-ghosts/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Substance Use Disorder Treatment",
+          "source_type": "government_document",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.samhsa.gov/substance-use/treatment",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Medications for Opioid Use Disorder",
+          "source_type": "government_document",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://nida.nih.gov/research-topics/medications-opioid-use-disorder",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -37923,8 +38104,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/health/antibiotics-mechanisms-of-action-resistance-and-stewardship.md",
@@ -38276,19 +38459,56 @@
       "file": "content/health/gut-microbiome.md",
       "article_id": "kb-2026-00425",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "I Contain Multitudes (Ed Yong)",
-          "source_type": "book",
+          "source_title": "Human Microbiome Project",
+          "source_type": "government_document",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.harpercollins.com/products/i-contain-multitudes-ed-yong",
+              "identifier": "https://commonfund.nih.gov/hmp",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.harpercollins.com/products/i-contain-multitudes-ed-yong"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Structure, function and diversity of the healthy human microbiome",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.nature.com/articles/nature11234",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Probiotics: Usefulness and Safety",
+          "source_type": "government_document",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.nccih.nih.gov/health/probiotics-usefulness-and-safety",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -38296,8 +38516,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/health/human-anatomy.md",
@@ -38369,19 +38591,56 @@
       "file": "content/health/hydration-and-health.md",
       "article_id": "kb-2026-00419",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Dietary Reference Intakes for Water (IOM, 2004)",
-          "source_type": "standard",
+          "source_title": "Dietary Reference Intakes for Water, Potassium, Sodium, Chloride, and Sulfate",
+          "source_type": "consensus_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nap.edu/catalog/10925/dietary-reference-intakes-for-water-potassium-sodium-chloride-and-sulfate",
+              "identifier": "https://nap.nationalacademies.org/catalog/10925/dietary-reference-intakes-for-water-potassium-sodium-chloride-and-sulfate",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nationalacademies.org/projects/HMD-FNB-19-P-139/publication/10925"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "About Water and Healthier Drinks",
+          "source_type": "government_document",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.cdc.gov/healthy-weight-growth/water-healthy-drinks/index.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Dehydration",
+          "source_type": "medical_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.merckmanuals.com/home/kidney-and-urinary-tract-disorders/water-balance/dehydration",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -38389,8 +38648,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/health/hypertension-mechanisms-risk-factors-and-treatment-guidelines.md",
@@ -42512,19 +42773,56 @@
       "file": "content/science/birds.md",
       "article_id": "kb-2026-00497",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Sibley Guide to Birds (2nd Ed)",
-          "source_type": "book",
+          "source_title": "Bird",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/232944/the-sibley-guide-to-birds-second-edition-by-david-allen-sibley/",
+              "identifier": "https://www.britannica.com/animal/bird-animal",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/232944/the-sibley-guide-to-birds-second-edition-by-david-allen-sibley/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "All About Feathers",
+          "source_type": "educational_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://academy.allaboutbirds.org/features/all-about-feathers/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Migration",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/science/migration-animal",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -42532,8 +42830,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/black-holes.md",
@@ -47139,19 +47439,56 @@
       "file": "content/self-improvement/learning-how-to-learn.md",
       "article_id": "kb-2026-00443",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "A Mind for Numbers (Barbara Oakley)",
-          "source_type": "book",
+          "source_title": "Improving Students' Learning With Effective Learning Techniques",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/533681/a-mind-for-numbers-by-barbara-oakley-phd/",
+              "identifier": "https://doi.org/10.1177/1529100612453266",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/533681/a-mind-for-numbers-by-barbara-oakley-phd/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Test-Enhanced Learning",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1111/j.1467-9280.2006.01693.x",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Distributed Practice in Verbal Recall Tasks",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1037/0033-2909.132.3.354",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-ninth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -47159,8 +47496,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/self-improvement/mentoring-and-coaching-evidence-based-practices.md",
