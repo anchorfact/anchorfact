@@ -7,14 +7,53 @@
 
 // ---- Source Tier Classification ----
 
+const S_TIER_TYPES = new Set(['standard', 'patent', 'rfc']);
+const A_TIER_TYPES = new Set([
+  'academic_paper',
+  'journal_article',
+  'conference_paper',
+  'survey_paper',
+  'academic_article',
+  'government_report',
+  'official_report',
+  'research_report',
+  'technical_report',
+  'industry_whitepaper',
+  'textbook',
+  'open_textbook',
+  'course_material'
+]);
+const B_TIER_TYPES = new Set([
+  'blog_post',
+  'documentation',
+  'government_reference',
+  'official_record',
+  'reference',
+  'rulebook',
+  'sports_rulebook',
+  'professional_resource',
+  'book',
+  'book_chapter',
+  'textbook_chapter',
+  'open_textbook_chapter',
+  'literature',
+  'museum_archive',
+  'software_repository',
+  'repository',
+  'whitepaper',
+  'experience_report',
+  'design_reference',
+  'government_statement',
+  'encyclopedia',
+  'article'
+]);
+
 export function classifySourceTier(source) {
   if (source.doi) return 'S';
-  if (source.type === 'standard') return 'S';
-  if (source.type === 'patent' || source.type === 'rfc') return 'S';
-  if (source.type === 'academic_paper' || source.type === 'course_material') return 'A';
-  if (source.type === 'government_report' || source.type === 'industry_whitepaper') return 'A';
-  if (source.type === 'blog_post' && source.institution) return 'B';
-  if (source.type === 'blog_post') return 'B';
+  const type = String(source.type || '').trim().toLowerCase();
+  if (S_TIER_TYPES.has(type)) return 'S';
+  if (A_TIER_TYPES.has(type)) return 'A';
+  if (B_TIER_TYPES.has(type)) return 'B';
   return 'C';
 }
 

@@ -1,6 +1,6 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T12:52:29.055Z
+Generated: 2026-05-28T13:40:16.780Z
 
 Snapshot: 555 public / 445 draft / 1688 claims.
 
@@ -13,7 +13,7 @@ This is a risk-weighted audit sample of public AnchorFact articles. It is intend
 - Articles with at least one fail check: 0
 - High-confidence samples needing review: 0
 - Claim-evidence failures: 0
-- Recommendations: keep_public: 20, downgrade_confidence: 0, repair_sources: 0, move_to_draft: 0
+- Recommendations: keep_public: 19, downgrade_confidence: 0, repair_sources: 1, move_to_draft: 0
 
 ## Method
 
@@ -30,19 +30,19 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 5 | high_confidence | `ai/ai-red-teaming-and-safety` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 6 | medium_capped_claims | `business/strategic-management-theory` | medium | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 7 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 8 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 9 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 10 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 8 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 9 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 10 | low_confidence_public | `arts/music-theory-basics` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
 | 11 | risk_fallback | `science/climate-change` | medium | 4/5 (80.0%) | 3 | source=weak; claim=pass; summary=pass | keep_public |
 | 12 | risk_fallback | `science/plate-tectonics` | medium | 2/2 (100.0%) | 6 | source=pass; claim=pass; summary=pass | keep_public |
 | 13 | risk_fallback | `ai/gradient-descent` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 14 | risk_fallback | `ai/reinforcement-learning` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 15 | risk_fallback | `ai/tokenization-in-nlp` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 16 | risk_fallback | `arts/digital-art` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 17 | risk_fallback | `computer-science/php-language` | medium | 5/5 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 18 | risk_fallback | `computer-science/playwright` | medium | 5/5 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 19 | risk_fallback | `history/computer-history` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 20 | risk_fallback | `history/great-depression` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 17 | risk_fallback | `arts/world-literature` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 18 | risk_fallback | `computer-science/php-language` | medium | 5/5 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 19 | risk_fallback | `computer-science/playwright` | medium | 5/5 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 20 | risk_fallback | `history/computer-history` | medium | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 
 ## Article Findings
 
@@ -141,7 +141,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - canonical slug: `arts/film-genres`
 - canonical URL: https://anchorfact.org/arts/film-genres/
 - bucket: `low_confidence_public`
-- confidence: `low` (verified_sources, score 0.47)
+- confidence: `low` (verified_sources, score 0.575)
 - verified source coverage: 1/1 (100.0%)
 - claims: 5 total, 0 capped, 0 missing evidence
 - quality reasons: none
@@ -151,27 +151,12 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 8. World Literature
-
-- canonical slug: `arts/world-literature`
-- canonical URL: https://anchorfact.org/arts/world-literature/
-- bucket: `low_confidence_public`
-- confidence: `low` (verified_sources, score 0.58)
-- verified source coverage: 2/2 (100.0%)
-- claims: 5 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `keep_public`
-
-### 9. Age of Exploration
+### 8. Age of Exploration
 
 - canonical slug: `history/age-of-exploration`
 - canonical URL: https://anchorfact.org/history/age-of-exploration/
 - bucket: `low_confidence_public`
-- confidence: `low` (verified_sources, score 0.45)
+- confidence: `low` (verified_sources, score 0.555)
 - verified source coverage: 1/1 (100.0%)
 - claims: 5 total, 0 capped, 0 missing evidence
 - quality reasons: none
@@ -181,12 +166,12 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 10. Byzantine Empire
+### 9. Byzantine Empire
 
 - canonical slug: `history/byzantine-empire`
 - canonical URL: https://anchorfact.org/history/byzantine-empire/
 - bucket: `low_confidence_public`
-- confidence: `low` (verified_sources, score 0.45)
+- confidence: `low` (verified_sources, score 0.555)
 - verified source coverage: 1/1 (100.0%)
 - claims: 5 total, 0 capped, 0 missing evidence
 - quality reasons: none
@@ -195,6 +180,21 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - title-summary accuracy: `pass`
 - hygiene flags: none
 - recommendation: `keep_public`
+
+### 10. Music Theory Basics
+
+- canonical slug: `arts/music-theory-basics`
+- canonical URL: https://anchorfact.org/arts/music-theory-basics/
+- bucket: `low_confidence_public`
+- confidence: `low` (verified_sources, score 0.555)
+- verified source coverage: 1/1 (100.0%)
+- claims: 4 total, 4 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
 
 ### 11. Climate Change
 
@@ -276,7 +276,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - canonical slug: `arts/digital-art`
 - canonical URL: https://anchorfact.org/arts/digital-art/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.62)
+- confidence: `medium` (verified_sources, score 0.725)
 - verified source coverage: 3/3 (100.0%)
 - claims: 5 total, 0 capped, 0 missing evidence
 - quality reasons: none
@@ -286,12 +286,27 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 17. PHP Language
+### 17. World Literature
+
+- canonical slug: `arts/world-literature`
+- canonical URL: https://anchorfact.org/arts/world-literature/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.685)
+- verified source coverage: 2/2 (100.0%)
+- claims: 5 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
+
+### 18. PHP Language
 
 - canonical slug: `computer-science/php-language`
 - canonical URL: https://anchorfact.org/computer-science/php-language/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.62)
+- confidence: `medium` (verified_sources, score 0.725)
 - verified source coverage: 5/5 (100.0%)
 - claims: 5 total, 0 capped, 0 missing evidence
 - quality reasons: none
@@ -301,12 +316,12 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 18. Playwright
+### 19. Playwright
 
 - canonical slug: `computer-science/playwright`
 - canonical URL: https://anchorfact.org/computer-science/playwright/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.62)
+- confidence: `medium` (verified_sources, score 0.725)
 - verified source coverage: 5/5 (100.0%)
 - claims: 5 total, 0 capped, 0 missing evidence
 - quality reasons: none
@@ -316,28 +331,13 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 19. Computer History
+### 20. Computer History
 
 - canonical slug: `history/computer-history`
 - canonical URL: https://anchorfact.org/history/computer-history/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.52)
+- confidence: `medium` (verified_sources, score 0.625)
 - verified source coverage: 1/1 (100.0%)
-- claims: 5 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `keep_public`
-
-### 20. Great Depression
-
-- canonical slug: `history/great-depression`
-- canonical URL: https://anchorfact.org/history/great-depression/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.58)
-- verified source coverage: 2/2 (100.0%)
 - claims: 5 total, 0 capped, 0 missing evidence
 - quality reasons: none
 - source-title match: `pass`

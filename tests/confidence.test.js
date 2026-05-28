@@ -41,8 +41,53 @@ test('RFC is S-tier', () => {
 test('Academic paper is A-tier', () => {
   assertEq(classifySourceTier({ type: 'academic_paper' }), 'A');
 });
+test('Common academic and preferred source types are A-tier', () => {
+  for (const type of [
+    'journal_article',
+    'conference_paper',
+    'survey_paper',
+    'academic_article',
+    'government_report',
+    'official_report',
+    'research_report',
+    'technical_report',
+    'industry_whitepaper',
+    'textbook',
+    'open_textbook',
+    'course_material'
+  ]) {
+    assertEq(classifySourceTier({ type }), 'A', type);
+  }
+});
 test('Blog post is B-tier', () => {
   assertEq(classifySourceTier({ type: 'blog_post' }), 'B');
+});
+test('Reference and book-like source types are B-tier', () => {
+  for (const type of [
+    'documentation',
+    'government_reference',
+    'official_record',
+    'reference',
+    'rulebook',
+    'sports_rulebook',
+    'professional_resource',
+    'book',
+    'book_chapter',
+    'textbook_chapter',
+    'open_textbook_chapter',
+    'literature',
+    'museum_archive',
+    'software_repository',
+    'repository',
+    'whitepaper',
+    'experience_report',
+    'design_reference',
+    'government_statement',
+    'encyclopedia',
+    'article'
+  ]) {
+    assertEq(classifySourceTier({ type }), 'B', type);
+  }
 });
 test('Unknown is C-tier', () => {
   assertEq(classifySourceTier({ type: 'unknown' }), 'C');
