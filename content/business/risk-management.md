@@ -1,86 +1,77 @@
 ---
-id: "kb-2026-00472"
-title: "Risk Management"
-schema_type: "TechArticle"
-category: "business"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00472
+title: Risk Management
+schema_type: TechArticle
+category: business
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-business-01"
-    statement: "Enterprise Risk Management takes a holistic approach"
-    source_title: "Against the Gods: The Remarkable Story of Risk (Peter Bernstein)"
-    source_url: "https://www.wiley.com/en-us/Against+the+Gods%3A+The+Remarkable+Story+of+Risk-p-9780471295631"
-    confidence: "high"
-  - id: "fact-business-001"
-    statement: "Risk management identifies, assesses, and mitigates threats to an organization's capital and earnings. Process: identify risk → analyze (probability × impact) → evaluate → treat (avoid, reduce, transfer/insure, accept). Financial risk: market, credit, liquidity, operational. Enterprise Risk Management (ERM) takes a holistic approach."
-    source_title: "Against the Gods: The Remarkable Story of Risk (Peter Bernstein)"
-    source_url: "https://www.wiley.com/en-us/Against+the+Gods%3A+The+Remarkable+Story+of+Risk-p-9780471295631"
-    confidence: "medium"
-  - id: "fact-business-002"
-    statement: "Value at Risk (VaR): maximum expected loss at given confidence level (e.g., '95% VaR of $1M' means 5% chance loss exceeds $1M)."
-    source_title: "Against the Gods: The Remarkable Story of Risk (Peter Bernstein)"
-    source_url: "https://www.wiley.com/en-us/Against+the+Gods%3A+The+Remarkable+Story+of+Risk-p-9780471295631"
-    confidence: "medium"
-  - id: "fact-business-003"
-    statement: "Black Swan (Taleb): rare, unpredictable, high-impact events — you can't predict but you can build robustness."
-    source_title: "Against the Gods: The Remarkable Story of Risk (Peter Bernstein)"
-    source_url: "https://www.wiley.com/en-us/Against+the+Gods%3A+The+Remarkable+Story+of+Risk-p-9780471295631"
-    confidence: "medium"
-
+  - id: fact-business-001
+    statement: >-
+      ISO describes ISO 31000 as an international standard that provides guidelines for managing
+      risk.
+    source_title: ISO 31000 Risk Management
+    source_url: https://www.iso.org/iso-31000-risk-management.html
+    confidence: medium
+  - id: fact-business-002
+    statement: >-
+      COSO describes enterprise risk management as connected to strategy, performance, and
+      organization-wide decision-making.
+    source_title: COSO Enterprise Risk Management Framework
+    source_url: https://www.coso.org/erm-framework
+    confidence: medium
+  - id: fact-business-003
+    statement: >-
+      NIST describes its Risk Management Framework as a process that includes Prepare, Categorize,
+      Select, Implement, Assess, Authorize, and Monitor steps.
+    source_title: NIST Risk Management Framework
+    source_url: https://csrc.nist.gov/projects/risk-management/about-rmf
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    Certain sub-topics are covered at a general level; specialized edge cases and nuanced
+    applications may not be fully addressed
+disputed_statements: []
 primary_sources:
-  - title: "Against the Gods: The Remarkable Story of Risk (Peter Bernstein)"
-    type: "book"
-    year: 1996
-    url: "https://www.wiley.com/en-us/Against+the+Gods%3A+The+Remarkable+Story+of+Risk-p-9780471295631"
-    institution: "Wiley"
-
-secondary_sources:
-  - title: "Harvard Business Review"
-    type: "journal"
-    year: 2025
-    url: "https://hbr.org/"
-    institution: "Harvard Business Publishing"
-  - title: "The Economist"
-    type: "periodical"
-    year: 2025
-    url: "https://www.economist.com/"
-    institution: "The Economist Group"
-
+  - id: ps-risk-management-1
+    title: ISO 31000 Risk Management
+    type: standard
+    year: 2018
+    institution: International Organization for Standardization
+    url: https://www.iso.org/iso-31000-risk-management.html
+  - id: ps-risk-management-2
+    title: COSO Enterprise Risk Management Framework
+    type: framework
+    year: 2017
+    institution: COSO
+    url: https://www.coso.org/erm-framework
+  - id: ps-risk-management-3
+    title: NIST Risk Management Framework
+    type: framework
+    year: 2026
+    institution: National Institute of Standards and Technology
+    url: https://csrc.nist.gov/projects/risk-management/about-rmf
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
-
 ## TL;DR
-
-Risk management identifies, assesses, and mitigates threats to an organization's capital and earnings. Process: identify risk → analyze (probability × impact) → evaluate → treat (avoid, reduce, transfer/insure, accept). Financial risk: market, credit, liquidity, operational. Enterprise Risk Management (ERM) takes a holistic approach.
+Risk management is the structured practice of identifying, assessing, treating, and monitoring uncertainty that can affect objectives. Public claims should cite recognized standards and frameworks rather than generic business advice.
 
 ## Core Explanation
-
-Value at Risk (VaR): maximum expected loss at given confidence level (e.g., '95% VaR of $1M' means 5% chance loss exceeds $1M). Risk matrix: probability (rows) × impact (columns). Black Swan (Taleb): rare, unpredictable, high-impact events — you can't predict but you can build robustness. Diversification: 'don't put all eggs in one basket' — reduces unsystematic risk. Hedging: offsetting position to reduce risk.
-
-## Further Reading
-
-- [Against the Gods: The Remarkable Story of Risk (Peter Bernstein)](https://www.wiley.com/en-us/Against+the+Gods%3A+The+Remarkable+Story+of+Risk-p-9780471295631)
+Organizations use risk frameworks to connect governance, strategy, controls, and monitoring. ISO 31000 gives general risk-management guidance, COSO frames enterprise risk management around strategy and performance, and NIST provides a security and privacy risk-management process for information systems.
 
 ## Related Articles
 
-- [AI for Fleet Management: Predictive Maintenance, Route Optimization, and Telematics](../../ai/ai-fleet-management.md)
-- [AI for Crisis Hotlines: Suicide Prevention Chatbots, Emotional Support AI, and Risk Detection](../../ai/ai-for-crisis-hotlines.md)
-- [AI for Payment Fraud Prevention: Real-Time Transaction Scoring, Chargeback Reduction, and Merchant Risk](../../ai/ai-for-fraud-prevention.md)
+- [Strategic Management Theory](../strategic-management-theory.md)
+- [Amazon Web Services (AWS)](../../computer-science/amazon-web-services-aws.md)
+- [AI Governance and Policy](../../ai/ai-governance-and-policy.md)

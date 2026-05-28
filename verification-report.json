@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 0,
     "average_sources_per_article": "2.1",
-    "overall_verification_rate": "63.4%",
+    "overall_verification_rate": "63.8%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 282
+    "manual_reviewed_articles": 292
   },
   "articles": [
     {
@@ -2559,36 +2559,56 @@
       "file": "content/ai/ai-for-climate-science.md",
       "article_id": "ai-for-climate-science",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Learning skillful medium-range global weather forecasting (GraphCast)",
-          "source_type": "academic_paper",
+          "source_title": "Learning skillful medium-range global weather forecasting",
+          "source_type": "journal_article",
           "results": [
             {
-              "method": "url",
+              "method": "doi",
               "identifier": "https://www.science.org/doi/10.1126/science.adi2336",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.science.org/doi/10.1126/science.adi2336"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Accurate medium-range global weather forecasting with 3D neural networks (Pangu-Weather)",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.nature.com/articles/s41586-023-06185-3",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nature.com/articles/s41586-023-06185-3?error=cookies_not_supported&code=a35aae10-d03d-4849-a552-11fc3dbba70f"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2202.11214",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Neural general circulation models for weather and climate",
+          "source_type": "journal_article",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "https://www.nature.com/articles/s41586-024-07744-y",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -2596,8 +2616,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/ai-for-code-generation.md",
@@ -2647,19 +2667,20 @@
       "file": "content/ai/ai-for-complex-networks.md",
       "article_id": "ai-for-complex-networks",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Artificial intelligence and complex networks meet natural sciences",
+          "source_title": "Semi-Supervised Classification with Graph Convolutional Networks",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://link.springer.com/article/10.1140/epjs/s11734-025-01844-0",
+              "identifier": "https://arxiv.org/abs/1609.02907",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://link.springer.com/article/10.1140/epjs/s11734-025-01844-0?error=cookies_not_supported&code=6363664d-c6e1-4d20-b6fa-cfcdc8f038c6"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -2667,24 +2688,44 @@
           "all_verified": true
         },
         {
-          "source_title": "A Comprehensive Survey on Artificial Intelligence and Network Science",
+          "source_title": "Graph Attention Networks",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2402.16887",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1710.10903",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 503"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "NetworkX Algorithms",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://networkx.org/documentation/stable/reference/algorithms/index.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/ai-for-construction.md",
@@ -2842,20 +2883,20 @@
       "file": "content/ai/ai-for-cultural-heritage.md",
       "article_id": "ai-for-cultural-heritage",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "A review of the development and application of artificial intelligence in cultural heritage",
-          "source_type": "academic_paper",
+          "source_title": "Restoring and attributing ancient texts using deep neural networks",
+          "source_type": "journal_article",
           "results": [
             {
               "method": "doi",
-              "identifier": "10.1038/s40494-025-02164-1",
+              "identifier": "https://www.nature.com/articles/s41586-022-04448-z",
               "verified": true,
               "metadata": {
-                "title": "A review of the development and application of generative technology in digital museums",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2025
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -2863,25 +2904,44 @@
           "all_verified": true
         },
         {
-          "source_title": "Report of the Independent Expert Group on Artificial Intelligence and Culture",
-          "source_type": "government_report",
+          "source_title": "Students Decipher 2,000-Year-Old Herculaneum Scrolls",
+          "source_type": "institutional_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.unesco.org/en/artificial-intelligence/culture",
-              "verified": false,
+              "identifier": "https://www.neh.gov/news/students-decipher-2000-year-old-herculaneum-scrolls",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.unesco.org/en/artificial-intelligence/culture"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Art Camera",
+          "source_type": "project_page",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://artsandculture.google.com/project/art-camera",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/ai-for-data-curation.md",
@@ -18342,19 +18402,56 @@
       "file": "content/business/networking-skills.md",
       "article_id": "kb-2026-00447",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Never Eat Alone (Keith Ferrazzi)",
-          "source_type": "book",
+          "source_title": "The Strength of Weak Ties",
+          "source_type": "journal_article",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "https://doi.org/10.1086/225469",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "How Leaders Create and Use Networks",
+          "source_type": "article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/316664/never-eat-alone-expanded-and-updated-by-keith-ferrazzi-with-tahl-raz/",
+              "identifier": "https://hbr.org/2007/01/how-leaders-create-and-use-networks",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/316664/never-eat-alone-expanded-and-updated-by-keith-ferrazzi-with-tahl-raz/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Build your professional network",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.linkedin.com/help/linkedin/answer/a542780",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -18362,7 +18459,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -18538,19 +18635,56 @@
       "file": "content/business/risk-management.md",
       "article_id": "kb-2026-00472",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Against the Gods: The Remarkable Story of Risk (Peter Bernstein)",
-          "source_type": "book",
+          "source_title": "ISO 31000 Risk Management",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.wiley.com/en-us/Against+the+Gods%3A+The+Remarkable+Story+of+Risk-p-9780471295631",
+              "identifier": "https://www.iso.org/iso-31000-risk-management.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.wiley.com/en-us/Against+the+Gods%3A+The+Remarkable+Story+of+Risk-p-9780471295631"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "COSO Enterprise Risk Management Framework",
+          "source_type": "framework",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.coso.org/erm-framework",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "NIST Risk Management Framework",
+          "source_type": "framework",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://csrc.nist.gov/projects/risk-management/about-rmf",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -18558,7 +18692,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -20723,19 +20857,56 @@
       "file": "content/computer-science/content-delivery-network-cdn.md",
       "article_id": "kb-2026-00186",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Cloudflare CDN Documentation",
+          "source_title": "What is a content delivery network (CDN)?",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://developers.cloudflare.com/cache/",
+              "identifier": "https://www.cloudflare.com/learning/cdn/what-is-a-cdn/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://developers.cloudflare.com/cache/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "HTTP Caching",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.rfc-editor.org/rfc/rfc9111.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cache-Control header",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/docs/Web/HTTP/Reference/Headers/Cache-Control",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -20743,7 +20914,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -23668,19 +23839,20 @@
       "file": "content/computer-science/graphql.md",
       "article_id": "kb-2026-00074",
       "generation_method": "human_only",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "GraphQL Specification (October 2021)",
+          "source_title": "GraphQL Specification October 2021",
           "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://spec.graphql.org/",
+              "identifier": "https://spec.graphql.org/October2021/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://spec.graphql.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -23688,16 +23860,35 @@
           "all_verified": true
         },
         {
-          "source_title": "GraphQL Specification GitHub",
-          "source_type": "repository",
+          "source_title": "Queries and Mutations",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://github.com/graphql/graphql-spec",
+              "identifier": "https://graphql.org/learn/queries/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/graphql/graphql-spec"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GraphQL over HTTP",
+          "source_type": "draft_standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://graphql.github.io/graphql-over-http/draft/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -23705,7 +23896,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -29025,19 +29216,56 @@
       "file": "content/computer-science/tauri.md",
       "article_id": "kb-2026-00301",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Tauri Documentation",
+          "source_title": "Tauri Architecture",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://v2.tauri.app/",
+              "identifier": "https://v2.tauri.app/concept/architecture/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://v2.tauri.app/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Process Model",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://v2.tauri.app/concept/process-model/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Security",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://v2.tauri.app/security/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -29045,7 +29273,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -30223,19 +30451,56 @@
       "file": "content/computer-science/webpack.md",
       "article_id": "kb-2026-00174",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Webpack Documentation",
+          "source_title": "Concepts",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://webpack.js.org/",
+              "identifier": "https://webpack.js.org/concepts/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://webpack.js.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Loaders",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://webpack.js.org/concepts/loaders/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Plugins",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://webpack.js.org/configuration/plugins/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -30243,7 +30508,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -33428,19 +33693,56 @@
       "file": "content/geography/european-union.md",
       "article_id": "kb-2026-00348",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "European Union Official Website",
-          "source_type": "documentation",
+          "source_title": "EU countries",
+          "source_type": "official_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://european-union.europa.eu/",
+              "identifier": "https://european-union.europa.eu/principles-countries-history/eu-countries_en",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://european-union.europa.eu/select-language?destination=/node/1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Aims and values",
+          "source_type": "official_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://european-union.europa.eu/principles-countries-history/principles-and-values/aims-and-values_en",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Official EU currency",
+          "source_type": "official_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://european-union.europa.eu/institutions-law-budget/euro/official-eu-currency_en",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -33448,7 +33750,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {

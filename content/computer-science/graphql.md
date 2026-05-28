@@ -1,91 +1,78 @@
 ---
-id: "kb-2026-00074"
-title: "GraphQL"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00074
+title: GraphQL
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "GraphQL is a query language and runtime for APIs developed by Facebook in 2012 and open-sourced in 2015"
-    source_title: "GraphQL Specification (October 2021)"
-    source_url: "https://spec.graphql.org/"
-    confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "Unlike REST where the server defines fixed endpoints, GraphQL lets clients request exactly the data they need in a single request — no over-fetching or under-fetching."
-    source_title: "GraphQL Specification (October 2021)"
-    source_url: "https://spec.graphql.org/"
-    confidence: "medium"
-  - id: "fact-computer-science-003"
-    statement: "The specification is maintained by the GraphQL Foundation (part of the Linux Foundation)."
-    source_title: "GraphQL Specification (October 2021)"
-    source_url: "https://spec.graphql.org/"
-    confidence: "medium"
-  - id: "fact-computer-science-004"
-    statement: "Key adopters include GitHub, Shopify, Airbnb, and PayPal."
-    source_title: "GraphQL Specification GitHub"
-    source_url: "https://github.com/graphql/graphql-spec"
-    confidence: "medium"
-
+  - id: fact-computer-science-001
+    statement: The GraphQL specification defines GraphQL as a query language and execution engine for APIs.
+    source_title: GraphQL Specification October 2021
+    source_url: https://spec.graphql.org/October2021/
+    confidence: medium
+  - id: fact-computer-science-002
+    statement: >-
+      GraphQL.org documents queries as requests where clients specify fields and receive
+      correspondingly shaped data.
+    source_title: Queries and Mutations
+    source_url: https://graphql.org/learn/queries/
+    confidence: medium
+  - id: fact-computer-science-003
+    statement: The GraphQL over HTTP draft specifies conventions for serving GraphQL requests over HTTP.
+    source_title: GraphQL over HTTP
+    source_url: https://graphql.github.io/graphql-over-http/draft/
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Statistics and data cited are from 2018 and earlier; more recent data may have become available since publication"
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-  - "Recent developments from 2025-2026 may not be reflected"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    Statistics and data cited are from 2018 and earlier; more recent data may have become available
+    since publication
+  - >-
+    This field is under active research and rapid development; some conclusions may evolve with new
+    evidence or technological advances
+  - >-
+    Certain sub-topics are covered at a general level; specialized edge cases and nuanced
+    applications may not be fully addressed
+  - Recent developments from 2025-2026 may not be reflected
+disputed_statements: []
 primary_sources:
-  - title: "GraphQL Specification (October 2021)"
-    type: "standard"
-    url: "https://spec.graphql.org/"
-    institution: "GraphQL Foundation"
-  - title: "GraphQL Specification GitHub"
-    type: "repository"
-    url: "https://github.com/graphql/graphql-spec"
-    institution: "GitHub"
-
-secondary_sources:
-  - title: "Learning GraphQL"
-    authors: ["Porcello", "Banks"]
-    type: "book"
-    year: 2018
-    url: "https://www.oreilly.com/library/view/learning-graphql/9781492030706/"
-    institution: "O'Reilly"
-
+  - id: ps-graphql-1
+    title: GraphQL Specification October 2021
+    type: standard
+    year: 2021
+    institution: GraphQL Foundation
+    url: https://spec.graphql.org/October2021/
+  - id: ps-graphql-2
+    title: Queries and Mutations
+    type: documentation
+    year: 2026
+    institution: GraphQL.org
+    url: https://graphql.org/learn/queries/
+  - id: ps-graphql-3
+    title: GraphQL over HTTP
+    type: draft_standard
+    year: 2026
+    institution: GraphQL Foundation
+    url: https://graphql.github.io/graphql-over-http/draft/
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
-
 ## TL;DR
+GraphQL is a query language and runtime model for APIs. It lets clients request specific fields and relies on schemas, resolvers, and transport conventions to execute those requests.
 
-GraphQL is a query language and runtime for APIs developed by Facebook in 2012 and open-sourced in 2015. Unlike REST where the server defines fixed endpoints, GraphQL lets clients request exactly the data they need in a single request — no over-fetching or under-fetching. The specification is maintained by the GraphQL Foundation (part of the Linux Foundation). Key adopters include GitHub, Shopify, Airbnb, and PayPal.
-
-## Core Concepts
-
-- **Schema**: Strongly typed definition of available data and operations
-- **Queries**: Read operations — `query { user(id: 1) { name, email } }`
-- **Mutations**: Write operations — `mutation { createUser(name: "Alice") { id } }`
-- **Subscriptions**: Real-time data via WebSocket
-- **Resolvers**: Functions that fetch data for each field
-- **Single Endpoint**: Typically `POST /graphql`
-
-## Further Reading
-
-- [GraphQL Spec](https://spec.graphql.org/): Official specification
-- [GraphQL Foundation](https://graphql.org/foundation/): Governance body
+## Core Explanation
+A GraphQL schema describes available types and fields. Clients send queries or mutations that specify the data shape they want. GraphQL can be transported over HTTP using established request and response conventions.
 
 ## Related Articles
 
-- [GraphQL Schema Design](../graphql-schema-design.md)
+- [API Design](../api-design.md)
+- [REST APIs](../rest-apis.md)
+- [JSON](../json.md)

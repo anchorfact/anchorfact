@@ -1,86 +1,81 @@
 ---
-id: "kb-2026-00447"
-title: "Networking Skills"
-schema_type: "TechArticle"
-category: "business"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00447
+title: Networking Skills
+schema_type: TechArticle
+category: business
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-business-001"
-    statement: "Networking is building mutually beneficial professional relationships — not just collecting contacts. Key principles: give before you ask, be genuinely interested in others, follow up consistently, provide value first. The best networkers are connectors — they link people who can help each other. Networking is a long game."
-    source_title: "Never Eat Alone (Keith Ferrazzi)"
-    source_url: "https://www.penguinrandomhouse.com/books/316664/never-eat-alone-expanded-and-updated-by-keith-ferrazzi-with-tahl-raz/"
-    confidence: "medium"
-  - id: "fact-business-002"
-    statement: "Elevator pitch: 30-second compelling self-introduction."
-    source_title: "Never Eat Alone (Keith Ferrazzi)"
-    source_url: "https://www.penguinrandomhouse.com/books/316664/never-eat-alone-expanded-and-updated-by-keith-ferrazzi-with-tahl-raz/"
-    confidence: "medium"
-  - id: "fact-business-003"
-    statement: "Follow-up: within 24 hours, with a specific reference to conversation."
-    source_title: "Never Eat Alone (Keith Ferrazzi)"
-    source_url: "https://www.penguinrandomhouse.com/books/316664/never-eat-alone-expanded-and-updated-by-keith-ferrazzi-with-tahl-raz/"
-    confidence: "medium"
-  - id: "fact-business-004"
-    statement: "Quality > quantity: 5 deep relationships better than 500 LinkedIn connections."
-    source_title: "Never Eat Alone (Keith Ferrazzi)"
-    source_url: "https://www.penguinrandomhouse.com/books/316664/never-eat-alone-expanded-and-updated-by-keith-ferrazzi-with-tahl-raz/"
-    confidence: "medium"
-
+  - id: fact-business-001
+    statement: >-
+      Granovetter argued that weak ties can bridge otherwise separate social circles and help
+      information diffuse across a network.
+    source_title: The Strength of Weak Ties
+    source_url: https://doi.org/10.1086/225469
+    confidence: medium
+  - id: fact-business-002
+    statement: Ibarra and Hunter distinguish operational, personal, and strategic networks for leaders.
+    source_title: How Leaders Create and Use Networks
+    source_url: https://hbr.org/2007/01/how-leaders-create-and-use-networks
+    confidence: medium
+  - id: fact-business-003
+    statement: >-
+      LinkedIn Help describes a professional network as a directory of people someone knows and
+      trusts professionally.
+    source_title: Build your professional network
+    source_url: https://www.linkedin.com/help/linkedin/answer/a542780
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    Certain sub-topics are covered at a general level; specialized edge cases and nuanced
+    applications may not be fully addressed
+disputed_statements: []
 primary_sources:
-  - title: "Never Eat Alone (Keith Ferrazzi)"
-    type: "book"
-    year: 2005
-    url: "https://www.penguinrandomhouse.com/books/316664/never-eat-alone-expanded-and-updated-by-keith-ferrazzi-with-tahl-raz/"
-    institution: "Currency"
-
-secondary_sources:
-  - title: "Harvard Business Review"
-    type: "journal"
-    year: 2025
-    url: "https://hbr.org/"
-    institution: "Harvard Business Publishing"
-  - title: "The Economist"
-    type: "periodical"
-    year: 2025
-    url: "https://www.economist.com/"
-    institution: "The Economist Group"
-
+  - id: ps-networking-skills-1
+    title: The Strength of Weak Ties
+    type: journal_article
+    year: 1973
+    authors:
+      - Granovetter, Mark S.
+    institution: American Journal of Sociology
+    doi: 10.1086/225469
+    url: https://doi.org/10.1086/225469
+  - id: ps-networking-skills-2
+    title: How Leaders Create and Use Networks
+    type: article
+    year: 2007
+    authors:
+      - Ibarra, Herminia
+      - Hunter, Mark Lee
+    institution: Harvard Business Review
+    url: https://hbr.org/2007/01/how-leaders-create-and-use-networks
+  - id: ps-networking-skills-3
+    title: Build your professional network
+    type: documentation
+    year: 2026
+    institution: LinkedIn Help
+    url: https://www.linkedin.com/help/linkedin/answer/a542780
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
-
 ## TL;DR
-
-Networking is building mutually beneficial professional relationships — not just collecting contacts. Key principles: give before you ask, be genuinely interested in others, follow up consistently, provide value first. The best networkers are connectors — they link people who can help each other. Networking is a long game.
+Networking skills are about building and maintaining useful professional relationships. Strong public claims should be grounded in social-network research, leadership-network practice, and platform documentation.
 
 ## Core Explanation
-
-Elevator pitch: 30-second compelling self-introduction. Follow-up: within 24 hours, with a specific reference to conversation. LinkedIn: optimize profile, engage with content, personalized connection requests. Quality > quantity: 5 deep relationships better than 500 LinkedIn connections. Mentorship: find mentors (ask for specific advice, not 'be my mentor'), be a mentor. 'Your network is your net worth' — relationships compound over career.
-
-## Further Reading
-
-- [Never Eat Alone (Keith Ferrazzi)](https://www.penguinrandomhouse.com/books/316664/never-eat-alone-expanded-and-updated-by-keith-ferrazzi-with-tahl-raz/)
+Weak ties can connect people to information outside their close circles. Leaders also need different types of networks for daily work, development, and strategic opportunity. Online professional networks make these relationships easier to track, but the underlying skill remains relationship quality and relevance.
 
 ## Related Articles
 
-- [Negotiation Skills](../negotiation-skills.md)
-- [Docker Networking](../../computer-science/docker-networking.md)
-- [Game Networking Architecture](../../game-development/game-networking.md)
+- [Communication Skills](../self-improvement/communication-skills.md)
+- [Strategic Management Theory](../strategic-management-theory.md)
+- [Digital Marketing Fundamentals](../digital-marketing-fundamentals.md)

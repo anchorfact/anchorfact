@@ -1,91 +1,80 @@
 ---
-id: "kb-2026-00348"
-title: "European Union"
-schema_type: "TechArticle"
-category: "geography"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00348
+title: European Union
+schema_type: TechArticle
+category: geography
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-geography-001"
-    statement: "The European Union is a political and economic union of 27 European countries, founded by the Maastricht Treaty (1993). Successor to the European Coal and Steel Community (1951, Schuman Declaration). Single market (free movement of goods, services, capital, people), common currency (Euro, 20 countries), shared laws."
-    source_title: "European Union Official Website"
-    source_url: "https://european-union.europa.eu/"
-    confidence: "medium"
-  - id: "fact-geography-002"
-    statement: "Key institutions: European Commission (executive, proposes laws), European Parliament (elected, co-legislator), Council of the EU (member states, co-legislator), European Central Bank (monetary policy), European Court of Justice."
-    source_title: "European Union Official Website"
-    source_url: "https://european-union.europa.eu/"
-    confidence: "medium"
-  - id: "fact-geography-003"
-    statement: "Schengen Area: passport-free travel (25 countries)."
-    source_title: "European Union Official Website"
-    source_url: "https://european-union.europa.eu/"
-    confidence: "medium"
-  - id: "fact-geography-004"
-    statement: "Brexit: UK left EU (Jan 31, 2020) — first member to leave."
-    source_title: "European Union Official Website"
-    source_url: "https://european-union.europa.eu/"
-    confidence: "medium"
-
+  - id: fact-geography-001
+    statement: The official EU countries page lists the European Union as having 27 member countries.
+    source_title: EU countries
+    source_url: https://european-union.europa.eu/principles-countries-history/eu-countries_en
+    confidence: medium
+  - id: fact-geography-002
+    statement: >-
+      The EU describes its values as including human dignity, freedom, democracy, equality, rule of
+      law, and human rights.
+    source_title: Aims and values
+    source_url: >-
+      https://european-union.europa.eu/principles-countries-history/principles-and-values/aims-and-values_en
+    confidence: medium
+  - id: fact-geography-003
+    statement: >-
+      The official EU currency page says the euro is the official currency of 21 European Union
+      countries in the euro area.
+    source_title: Official EU currency
+    source_url: https://european-union.europa.eu/institutions-law-budget/euro/official-eu-currency_en
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
-  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    Coverage is at a general level; specialized sub-topics and regional variations are not
+    exhaustively addressed
+  - >-
+    Statistics cited may have been updated since publication; readers should verify current data for
+    time-sensitive claims
+disputed_statements: []
 primary_sources:
-  - title: "European Union Official Website"
-    type: "documentation"
+  - id: ps-european-union-1
+    title: EU countries
+    type: official_reference
     year: 2026
-    url: "https://european-union.europa.eu/"
-    institution: "EU"
-
-secondary_sources:
-  - title: "CIA World Factbook"
-    type: "database"
-    year: 2025
-    url: "https://www.cia.gov/the-world-factbook/"
-    institution: "Central Intelligence Agency"
-  - title: "National Geographic Atlas"
-    type: "reference"
-    year: 2019
-    url: "https://www.nationalgeographic.com/maps/atlas/"
-    institution: "National Geographic"
-
+    institution: European Union
+    url: https://european-union.europa.eu/principles-countries-history/eu-countries_en
+  - id: ps-european-union-2
+    title: Aims and values
+    type: official_reference
+    year: 2026
+    institution: European Union
+    url: >-
+      https://european-union.europa.eu/principles-countries-history/principles-and-values/aims-and-values_en
+  - id: ps-european-union-3
+    title: Official EU currency
+    type: official_reference
+    year: 2026
+    institution: European Union
+    url: https://european-union.europa.eu/institutions-law-budget/euro/official-eu-currency_en
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
-
 ## TL;DR
-
-The European Union is a political and economic union of 27 European countries, founded by the Maastricht Treaty (1993). Successor to the European Coal and Steel Community (1951, Schuman Declaration). Single market (free movement of goods, services, capital, people), common currency (Euro, 20 countries), shared laws.
+The European Union is a political and economic union of 27 member countries. Public claims should rely on official EU pages for membership, values, and euro-area facts.
 
 ## Core Explanation
+The EU combines shared institutions, treaty-based values, and policy coordination among its member countries. Not every EU country uses the euro; the euro area is the subset of EU countries that have adopted the euro as official currency.
 
-Key institutions: European Commission (executive, proposes laws), European Parliament (elected, co-legislator), Council of the EU (member states, co-legislator), European Central Bank (monetary policy), European Court of Justice. Schengen Area: passport-free travel (25 countries). Brexit: UK left EU (Jan 31, 2020) — first member to leave. GDP: ~$18 trillion (2nd largest economy after US).
+## Related Articles
 
-## Further Reading
-
-- [European Union Official Website](https://european-union.europa.eu/)
-atomic_facts:
-  - id: "fact-geography-001"
-    statement: "The European Union is a political and economic union of 27 European countries, founded by the Maastricht Treaty (1993)"
-    confidence: "medium"
-  - id: "fact-geography-002"
-    statement: "Successor to the European Coal and Steel Community (1951, Schuman Declaration)"
-    confidence: "medium"
-  - id: "fact-geography-003"
-    statement: "Brexit: UK left EU (Jan 31, 2020) — first member to leave"
-    confidence: "medium"
+- [Geography of Europe](../europe.md)
+- [European History](../../history/european-history.md)
+- [International Organizations](../international-organizations.md)
