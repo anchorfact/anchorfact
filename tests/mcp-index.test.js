@@ -104,6 +104,26 @@ print(json.dumps(values))
   assertEq(result, ['Public Fixture', 'Public Fixture', 'Public Fixture']);
 });
 
+test('shared BM25 search orders and filters MCP results consistently', () => {
+  const result = runPython(`
+import json
+from mcp_search import BM25Index
+articles = [
+    {"id": "low", "title": "Climate glossary", "description": "climate climate", "confidence": "low"},
+    {"id": "medium", "title": "Climate model", "description": "climate model projections", "confidence": "medium"},
+    {"id": "high", "title": "Climate model evidence", "description": "climate model model evidence", "confidence": "high"},
+]
+index = BM25Index()
+index.build(articles)
+print(json.dumps({
+    "medium": [item["id"] for item in index.search("climate model", confidence_min="medium", limit=3)],
+    "low": [item["id"] for item in index.search("climate", confidence_min="low", limit=3)],
+}))
+`);
+  assertEq(result.medium, ['high', 'medium']);
+  assertEq(result.low.includes('low'), true);
+});
+
 rmSync(root, { recursive: true, force: true });
 
 console.log(`\n${passed} passed, ${failed} failed`);

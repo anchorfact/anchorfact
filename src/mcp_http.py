@@ -15,36 +15,27 @@ from mcp_index import (
     load_public_article_index,
     resolve_article_reference,
 )
+from mcp_search import BM25Index
 
 DIST_DIR = Path(__file__).resolve().parent.parent / "dist"
 
 app = FastAPI(title="AnchorFact MCP", version="1.1.0")
 
 _article_index: list[dict] | None = None
+_search_index = BM25Index()
 
 
 def load_index() -> list[dict]:
     global _article_index
     if _article_index is None:
         _article_index = load_public_article_index(DIST_DIR)
+        _search_index.build(_article_index)
     return _article_index
 
 
 def search_articles(query: str, confidence_min: str = "medium", limit: int = 5) -> list[dict]:
-    confidence_rank = {"high": 3, "medium": 2, "low": 1}
-    min_rank = confidence_rank.get(confidence_min, 1)
-    keywords = query.lower().split()
-    scored = []
-    for article in load_index():
-        confidence = article.get("confidence", "low")
-        if confidence_rank.get(confidence, 0) < min_rank:
-            continue
-        combined = f"{article.get('title', '')} {article.get('description', '')}".lower()
-        score = sum(1 for keyword in keywords if keyword in combined)
-        if score > 0:
-            scored.append((score, article))
-    scored.sort(key=lambda item: item[0], reverse=True)
-    return [article for _, article in scored[:limit]]
+    load_index()
+    return _search_index.search(query, confidence_min=confidence_min, limit=limit)
 
 
 def search_result(article: dict) -> dict:

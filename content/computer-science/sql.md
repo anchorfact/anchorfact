@@ -4,8 +4,8 @@ title: SQL (Structured Query Language)
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: '2026-05-25'
+confidence: medium
+last_verified: '2026-05-28'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -14,50 +14,38 @@ derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
+completeness: 0.82
 atomic_facts:
-  - id: fact-computer-science-01
-    statement: >-
-      Boyce at IBM in 1974 and standardized by ANSI in 1986 and ISO in 1987, SQL remains — over 50 years later — the dominant database query language, used by virtually every application that stores
-      structured data
-    source_title: ISO/IEC 9075:2023 — SQL Standard
+  - id: fact-computer-science-sql-01
+    statement: "ISO/IEC 9075-1:2023 is an ISO standard in the SQL family, covering the SQL framework."
+    source_title: "ISO/IEC 9075-1:2023 Information technology - Database languages SQL - Part 1: Framework"
+    source_url: https://www.iso.org/standard/76583.html
     confidence: medium
-  - id: fact-computer-science-02
-    statement: Designed by Donald D
+  - id: fact-computer-science-sql-02
+    statement: "PostgreSQL 17 documentation presents SQL as the language used to define, query, and manipulate data in PostgreSQL."
     source_title: PostgreSQL 17 Documentation
     source_url: https://www.postgresql.org/docs/17/
     confidence: medium
-completeness: 0.88
+  - id: fact-computer-science-sql-03
+    statement: "Codd's paper 'A Relational Model of Data for Large Shared Data Banks' is a foundational paper for relational database systems."
+    source_title: A Relational Model of Data for Large Shared Data Banks
+    source_doi: 10.1145/362384.362685
+    confidence: medium
 known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The NoSQL vs. SQL debate has evolved: while NoSQL offered horizontal scalability benefits, modern NewSQL systems (CockroachDB, Spanner) have narrowed the gap, and PostgreSQL's JSON support blurs
-      the distinction
+  - "This article is a concise SQL primer and does not compare every vendor dialect or release-specific feature."
+  - "Implementation details vary across PostgreSQL, MySQL, SQLite, Oracle Database, SQL Server, and other systems."
+disputed_statements: []
 primary_sources:
-  - title: ISO/IEC 9075:2023 — SQL Standard
+  - title: "ISO/IEC 9075-1:2023 Information technology - Database languages SQL - Part 1: Framework"
     type: standard
     year: 2023
     institution: ISO
+    url: https://www.iso.org/standard/76583.html
   - title: PostgreSQL 17 Documentation
     type: documentation
     year: 2026
     url: https://www.postgresql.org/docs/17/
     institution: PostgreSQL Global Development Group
-  - title: Learning SQL (4th Edition, 2025)
-    type: book
-    year: 2025
-    authors:
-      - Beaulieu A.
-    institution: O'Reilly Media
-    url: https://www.oreilly.com/sql/
-  - title: 'SQL in the Age of LLMs: Query Generation and Optimization (2025)'
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.sql
   - title: A Relational Model of Data for Large Shared Data Banks
     authors:
       - Codd, E.F.
@@ -65,47 +53,27 @@ primary_sources:
     year: 1970
     doi: 10.1145/362384.362685
     institution: IBM / Communications of the ACM
-  - title: ISO/IEC 9075:2023 — Information Technology — Database Languages — SQL
-    type: standard
-    year: 2023
-    institution: ISO/IEC
-secondary_sources:
-  - title: MDN Web Docs — HTTP
-    type: documentation
-    year: 2026
-    url: https://developer.mozilla.org/en-US/docs/Web/HTTP
-    institution: Mozilla
+secondary_sources: []
+updated: '2026-05-28'
 ---
 
 ## TL;DR
 
-SQL (Structured Query Language) is the standard programming language for managing relational databases. Designed by Donald D. Chamberlin and Raymond F. Boyce at IBM in 1974 and standardized by ANSI in 1986 and ISO in 1987, SQL remains — over 50 years later — the dominant database query language, used by virtually every application that stores structured data. PostgreSQL, MySQL, SQLite, Oracle, and SQL Server collectively power the majority of the world's transactional data systems.
+SQL is the standardized language family used to define, query, and manipulate data in relational database systems. The public evidence here is intentionally narrow: it maps SQL standardization to ISO, practical SQL usage to PostgreSQL documentation, and relational database foundations to Codd's relational-model paper.
 
-## Core Operations
+## Core Explanation
 
-SQL organizes data into tables with rows and columns, supporting four core operations (CRUD):
+SQL sits at the interface between applications and relational database systems. In day-to-day use, SQL statements create schema objects, insert and update rows, query tables, join related data, aggregate results, and control transactions.
 
-- **SELECT**: Query and retrieve data — `SELECT * FROM users WHERE age > 18`
-- **INSERT**: Add new rows — `INSERT INTO users (name, email) VALUES ('Alice', 'alice@example.com')`
-- **UPDATE**: Modify existing rows — `UPDATE users SET status = 'active' WHERE id = 42`
-- **DELETE**: Remove rows — `DELETE FROM users WHERE last_login < '2020-01-01'`
+The language is standardized through the ISO/IEC 9075 family, but implementations also provide dialect-specific extensions. PostgreSQL, MySQL, SQLite, Oracle Database, SQL Server, and other systems therefore share a recognizable SQL core while differing in syntax details, optimizer behavior, functions, and administrative features.
 
-Key features include JOIN (combining tables), GROUP BY (aggregation), transactions (ACID guarantees), and indexes (performance optimization).
-
-## Major Implementations
-
-| Database | Developer | License | Key Strength |
-|----------|-----------|---------|-------------|
-| PostgreSQL | PostgreSQL Global Dev Group | Open-source (PostgreSQL License) | Extensibility, standards compliance, advanced features |
-| MySQL | Oracle | Open-source (GPL) | Speed, simplicity, LAMP stack |
-| SQLite | Dwayne Richard Hipp | Public domain | Embedded, zero-configuration, single-file |
-| Oracle Database | Oracle Corp. | Proprietary | Enterprise features, RAC, Exadata |
-| Microsoft SQL Server | Microsoft | Proprietary | .NET ecosystem, Azure integration |
+Relational databases are historically connected to E. F. Codd's relational model, which separated logical data relationships from physical storage details. SQL is not identical to relational theory, but it became the dominant practical language for working with relational database systems.
 
 ## Further Reading
 
-- [PostgreSQL Docs](https://www.postgresql.org/docs/): Open-source reference implementation
-- [SQLite Docs](https://www.sqlite.org/docs.html): Lightweight embedded database
+- [ISO/IEC 9075-1:2023 SQL framework](https://www.iso.org/standard/76583.html)
+- [PostgreSQL 17 Documentation](https://www.postgresql.org/docs/17/)
+- [A Relational Model of Data for Large Shared Data Banks](https://doi.org/10.1145/362384.362685)
 
 ## Related Articles
 

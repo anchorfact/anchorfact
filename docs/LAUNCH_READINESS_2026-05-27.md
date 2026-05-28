@@ -15,7 +15,7 @@ Production is live on the apex domain.
 Run command:
 
 ```bash
-EXPECTED_PUBLIC_ARTICLES=554 EXPECTED_DRAFT_ARTICLES=446 EXPECTED_CLAIMS=1603 npm run smoke:prod
+EXPECTED_PUBLIC_ARTICLES=555 EXPECTED_DRAFT_ARTICLES=445 EXPECTED_CLAIMS=1685 npm run smoke:prod
 ```
 
 The smoke test checks:
@@ -32,9 +32,9 @@ Current trusted counts:
 
 | Metric | Expected |
 | --- | ---: |
-| Public articles | 554 |
-| Draft articles | 446 |
-| Public claims | 1603 |
+| Public articles | 555 |
+| Draft articles | 445 |
+| Public claims | 1685 |
 | Draft index `noindex` | yes |
 
 ## Deployment Split
@@ -48,6 +48,6 @@ Current split is correct and should stay in place:
 
 ## Next Review Focus
 
-- Continue reviewing public articles with `low_verified_coverage`.
-- Use `npm run audit-public-sample` for the current 20-article risk-weighted sample.
+- Keep the full public audit gate at `keep_public` only.
+- Use `npm run audit-public-full` for CI gating and `npm run audit-public-sample` for human review.
 - Do not tighten public rules globally until sampled source-title and claim-evidence failures justify it.

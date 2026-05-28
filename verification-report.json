@@ -32582,13 +32582,25 @@
       "file": "content/computer-science/sql.md",
       "article_id": "kb-2026-00015",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "ISO/IEC 9075:2023 — SQL Standard",
+          "source_title": "ISO/IEC 9075-1:2023 Information technology - Database languages SQL - Part 1: Framework",
           "source_type": "standard",
-          "results": [],
-          "all_verified": false
+          "results": [
+            {
+              "method": "manual_url_review",
+              "identifier": "https://www.iso.org/standard/76583.html",
+              "verified": true,
+              "metadata": {
+                "final_url": "https://www.iso.org/standard/76583.html",
+                "reviewed_at": "2026-05-28",
+                "note": "Manual review of official ISO standard page; no local verify-full run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
           "source_title": "PostgreSQL 17 Documentation",
@@ -32608,40 +32620,6 @@
           "all_verified": true
         },
         {
-          "source_title": "Learning SQL (4th Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.oreilly.com/sql/",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://shop.oreilly.com/category/browse-subjects/data/relational-databases.do"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "SQL in the Age of LLMs: Query Generation and Optimization (2025)",
-          "source_type": "survey_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.sql",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.sql"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
           "source_title": "A Relational Model of Data for Large Shared Data Banks",
           "source_type": "academic_paper",
           "results": [
@@ -32658,16 +32636,10 @@
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "ISO/IEC 9075:2023 — Information Technology — Database Languages — SQL",
-          "source_type": "standard",
-          "results": [],
-          "all_verified": false
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/ssh-protocol.md",
@@ -44922,11 +44894,29 @@
       "file": "content/science/climate-change.md",
       "article_id": "kb-2026-00338",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "IPCC Sixth Assessment Report (AR6)",
-          "source_type": "report",
+          "source_title": "IPCC AR6 Synthesis Report Headline Statements",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "manual_url_review",
+              "identifier": "https://www.ipcc.ch/report/ar6/syr/resources/spm-headline-statements/",
+              "verified": true,
+              "metadata": {
+                "final_url": "https://www.ipcc.ch/report/ar6/syr/resources/spm-headline-statements/",
+                "reviewed_at": "2026-05-28",
+                "note": "Manual review of official IPCC AR6 headline statements page; no local verify-full run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "IPCC Sixth Assessment Report (AR6) Synthesis Report",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
@@ -44940,79 +44930,10 @@
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "Climate Change: A Very Short Introduction (2025 5th Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/vsi-climate/",
-              "verified": true,
-              "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-climate/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "The Climate Book (2025 Updated)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/climate-book/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.penguinrandomhouse.com/climate-book/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Climate Change: A Very Short Introduction (5th Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/vsi-climate/",
-              "verified": true,
-              "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-climate/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Global Warming of 1.5°C (IPCC Special Report)",
-          "source_type": "government_report",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1017/9781009157940",
-              "verified": true,
-              "metadata": {
-                "title": "Global Warming of 1.5°C",
-                "publisher": "Cambridge University Press",
-                "year": 2022
-              },
-              "match": false
-            }
-          ],
-          "all_verified": true
         }
       ],
-      "sources_verified": 4,
-      "sources_unreachable": 1
+      "sources_verified": 2,
+      "sources_unreachable": 0
     },
     {
       "file": "content/science/continental-drift-and-plate-tectonics-wegener-to-modern-geodynamics.md",

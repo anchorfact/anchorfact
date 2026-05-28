@@ -29,3 +29,6 @@ jobs:
 
       - name: Build Pages output
         run: npm run pages:build
+
+      - name: Run full public audit gate
+        run: npm run audit-public-full

@@ -54,12 +54,26 @@ const STALE_METRIC_PATTERNS = [
   /573 public entries/i,
   /Public eligible articles\s*\|\s*573/i,
   /EXPECTED_PUBLIC_ARTICLES=573/i,
+  /554 public/i,
+  /554 public entries/i,
+  /Public eligible articles\s*\|\s*554/i,
+  /Public articles\s*\|\s*554/i,
+  /EXPECTED_PUBLIC_ARTICLES=554/i,
   /427 draft/i,
   /Draft articles\s*\|\s*427/i,
   /EXPECTED_DRAFT_ARTICLES=427/i,
+  /446 draft/i,
+  /Draft articles\s*\|\s*446/i,
+  /EXPECTED_DRAFT_ARTICLES=446/i,
   /1715 public claims/i,
   /Public claims\s*\|\s*1715/i,
   /EXPECTED_CLAIMS=1715/i,
+  /1603 public claims/i,
+  /Public claims\s*\|\s*1603/i,
+  /EXPECTED_CLAIMS=1603/i,
+  /1683 public claims/i,
+  /Public claims\s*\|\s*1683/i,
+  /EXPECTED_CLAIMS=1683/i,
   /876 articles/i,
   /total_articles["\s:]+805/i
 ];
@@ -120,6 +134,7 @@ function checkTextFiles(failures) {
   for (const file of walk('.')) {
     const relativePath = relative('.', file).replace(/\\/g, '/');
     if (relativePath === 'verification-report.json') continue;
+    if (/^docs\/PUBLIC_CONTENT_REPAIR_/.test(relativePath)) continue;
 
     const text = readFileSync(file, 'utf8');
     for (const pattern of MOJIBAKE_PATTERNS) {

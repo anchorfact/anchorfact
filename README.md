@@ -64,7 +64,7 @@ If the generated `verification-report.json` changes, the workflow commits it bac
 After a production deployment, run:
 
 ```bash
-EXPECTED_PUBLIC_ARTICLES=554 EXPECTED_DRAFT_ARTICLES=446 EXPECTED_CLAIMS=1603 npm run smoke:prod
+EXPECTED_PUBLIC_ARTICLES=555 EXPECTED_DRAFT_ARTICLES=445 EXPECTED_CLAIMS=1685 npm run smoke:prod
 ```
 
 This checks the homepage, `/manifest.json`, `/llms.txt`, `/claims.json`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
