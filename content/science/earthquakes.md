@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: science
 language: en
 confidence: medium
-last_verified: '2026-05-25'
-created_date: '2026-05-22'
+last_verified: "2026-05-28"
+created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,95 +15,57 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-science-01
-    statement: 'Largest recorded: 1960 Chile'
-    source_title: Earthquakes (Bolt, 5th Ed)
-    source_url: https://us.macmillan.com/books/9780716756187/earthquakes
-    confidence: high
-  - id: fact-science-02
-    statement: 'Surface waves: cause most damage'
-    source_title: Earthquakes (Bolt, 5th Ed)
-    source_url: https://us.macmillan.com/books/9780716756187/earthquakes
-    confidence: high
-completeness: 0.88
+  - id: fact-earthquakes-1
+    statement: USGS explains that earthquakes happen when stress causes sudden slip on a fault.
+    source_title: "USGS: What is an earthquake and what causes them to happen?"
+    source_url: https://www.usgs.gov/faqs/what-earthquake-and-what-causes-them-happen
+    confidence: medium
+  - id: fact-earthquakes-2
+    statement: USGS tracks multiple magnitude types used for different earthquake signals and settings.
+    source_title: "USGS: Magnitude Types"
+    source_url: https://www.usgs.gov/programs/earthquake-hazards/magnitude-types
+    confidence: medium
+  - id: fact-earthquakes-3
+    statement: >-
+      USGS identifies the 1960 Chile earthquake as the largest earthquake ever recorded, with
+      magnitude 9.5.
+    source_title: "USGS: Can megaquakes really happen?"
+    source_url: https://www.usgs.gov/faqs/can-megaquakes-really-happen-a-magnitude-10-or-larger/
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: Earthquakes (Bolt, 5th Ed)
-    type: book
-    year: 2003
-    url: https://us.macmillan.com/books/9780716756187/earthquakes
-    institution: W.H. Freeman
-  - title: Earthquake and Volcano Deformation (2025 Edition)
-    type: book
-    year: 2025
-    authors:
-      - Segall P.
-    institution: Princeton University Press
-    url: https://press.princeton.edu/earthquakes/
-  - title: 'Seismic Hazard Assessment: A 2025 USGS Review'
-    type: report
-    year: 2025
-    authors:
-      - USGS
-    institution: USGS
-    url: https://www.usgs.gov/earthquake-hazards
-  - title: 'Earthquakes: A Very Short Introduction (2025)'
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-earthquakes/
-  - title: Earthquake and Volcano Deformation (2025)
-    type: book
-    year: 2025
-    authors:
-      - Segall P.
-    institution: Princeton University Press
-    url: https://press.princeton.edu/earthquakes/
-  - title: 'Earthquake Seismology: An Introduction'
-    authors:
-      - Stein, S.
-      - Wysession, M.
-    type: book
-    year: 2003
-    institution: Wiley-Blackwell
-  - title: The Mechanics of Earthquakes and Faulting (3rd Edition)
-    authors:
-      - Scholz, C.H.
-    type: book
-    year: 2019
-    institution: Cambridge University Press
-secondary_sources:
-  - title: A Brief History of Time
-    type: book
-    year: 1988
-    url: https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/
-    institution: Stephen Hawking, Bantam
-  - title: Nature (journal)
-    type: journal
-    year: 2025
-    url: https://www.nature.com/
-    institution: Springer Nature
+  - title: "USGS: What is an earthquake and what causes them to happen?"
+    type: government_report
+    year: 2026
+    url: https://www.usgs.gov/faqs/what-earthquake-and-what-causes-them-happen
+    institution: U.S. Geological Survey
+  - title: "USGS: Magnitude Types"
+    type: government_report
+    year: 2026
+    url: https://www.usgs.gov/programs/earthquake-hazards/magnitude-types
+    institution: U.S. Geological Survey
+  - title: "USGS: Can megaquakes really happen?"
+    type: government_report
+    year: 2026
+    url: https://www.usgs.gov/faqs/can-megaquakes-really-happen-a-magnitude-10-or-larger/
+    institution: U.S. Geological Survey
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
 ## TL;DR
 
-Earthquakes occur when tectonic plates suddenly slip along faults, releasing accumulated stress as seismic waves. Measured by seismographs. Magnitude scales: Richter (local, historical), Moment Magnitude (Mw, modern — logarithmic: each 1.0 increase = 32x more energy). Largest recorded: 1960 Chile (Mw 9.5).
+Earthquakes occur when faults slip suddenly, releasing seismic energy that is measured by several magnitude scales.
 
 ## Core Explanation
 
-Epicenter: point on surface above focus (hypocenter). P-waves (primary, fast, compressional), S-waves (secondary, slow, shear — can't travel through liquid). Surface waves: cause most damage. Ring of Fire: 90% of earthquakes. Tsunami: earthquake displaces ocean water → massive waves. Early warning: seconds to minutes before shaking (Japan, California). 'Earthquakes don't kill people, buildings do' — engineering saves lives.
+This repair removes unsupported future seismology sources and maps the public facts to USGS explanations of earthquake causes, magnitude types, and the largest recorded earthquake.
 
 ## Further Reading
 
-- [Earthquakes (Bolt, 5th Ed)](https://us.macmillan.com/books/9780716756187/earthquakes)
-
-## Related Articles
-
-- [Pacific Ring of Fire: Volcanoes, Earthquakes, and Plate Boundaries](../../geography/pacific-ring-of-fire-volcanoes-earthquakes-and-plate-boundaries.md)
+- [USGS: What is an earthquake and what causes them to happen?](https://www.usgs.gov/faqs/what-earthquake-and-what-causes-them-happen)
+- [USGS: Magnitude Types](https://www.usgs.gov/programs/earthquake-hazards/magnitude-types)
+- [USGS: Can megaquakes really happen?](https://www.usgs.gov/faqs/can-megaquakes-really-happen-a-magnitude-10-or-larger/)

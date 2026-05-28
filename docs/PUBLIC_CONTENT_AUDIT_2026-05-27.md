@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T03:27:26.056Z
+Generated: 2026-05-28T03:42:42.792Z
 
-Snapshot: 555 public / 445 draft / 1551 claims.
+Snapshot: 555 public / 445 draft / 1559 claims.
 
 ## Summary
 
@@ -23,22 +23,22 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 
 | # | bucket | slug | confidence | coverage | claims | checks | recommendation |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | low_verified_coverage | `computer-science/typescript` | low | 2/6 (33.3%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 2 | low_verified_coverage | `history/hundred-years-war` | low | 1/3 (33.3%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 3 | low_verified_coverage | `history/inca-empire` | low | 1/3 (33.3%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 4 | low_verified_coverage | `history/rise-of-islam` | low | 2/5 (40.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 5 | low_verified_coverage | `history/space-race` | medium | 2/5 (40.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 6 | low_verified_coverage | `history/ancient-rome` | low | 3/7 (42.9%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 7 | low_verified_coverage | `science/earthquakes` | low | 3/7 (42.9%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 8 | low_verified_coverage | `self-improvement/active-listening` | medium | 1/9 (11.1%) | 2 | source=weak; claim=pass; summary=pass | repair_sources |
+| 1 | low_verified_coverage | `self-improvement/critical-thinking` | medium | 1/9 (11.1%) | 2 | source=weak; claim=pass; summary=pass | repair_sources |
+| 2 | low_verified_coverage | `ai/model-evaluation-metrics` | medium | 1/7 (14.3%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 3 | low_verified_coverage | `computer-science/binary-search-tree` | medium | 1/7 (14.3%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 4 | low_verified_coverage | `computer-science/ansible` | medium | 1/6 (16.7%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 5 | low_verified_coverage | `computer-science/gitops` | medium | 1/5 (20.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 6 | low_verified_coverage | `computer-science/pair-programming` | medium | 1/5 (20.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 7 | low_verified_coverage | `self-improvement/decision-making` | medium | 1/5 (20.0%) | 2 | source=weak; claim=pass; summary=pass | repair_sources |
+| 8 | low_verified_coverage | `computer-science/api-gateway` | medium | 2/7 (28.6%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
 | 9 | high_confidence | `ai/gpt-models` | high | 4/4 (100.0%) | 6 | source=pass; claim=pass; summary=pass | keep_public |
 | 10 | high_confidence | `ai/agentic-ai` | high | 2/2 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | high_confidence | `ai/ai-in-healthcare` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 12 | high_confidence | `ai/ai-red-teaming-and-safety` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 13 | medium_capped_claims | `health/chronic-disease-prevention` | medium | 2/4 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 14 | medium_capped_claims | `health/mental-health-fundamentals` | medium | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 15 | medium_capped_claims | `health/vaccine-development` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 16 | medium_capped_claims | `history/ancient-egyptian-civilization` | medium | 3/4 (75.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 13 | medium_capped_claims | `history/roman-empire` | medium | 3/3 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 14 | medium_capped_claims | `science/astronomy-and-cosmology` | medium | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 15 | medium_capped_claims | `science/black-holes` | medium | 5/7 (71.4%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 16 | medium_capped_claims | `science/chemical-bonding` | medium | 3/6 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
 | 17 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 18 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 19 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
@@ -46,104 +46,59 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 
 ## Article Findings
 
-### 1. TypeScript
+### 1. Critical Thinking
 
-- canonical slug: `computer-science/typescript`
-- canonical URL: https://anchorfact.org/computer-science/typescript/
-- bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 2/6 (33.3%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 2. Hundred Years' War
-
-- canonical slug: `history/hundred-years-war`
-- canonical URL: https://anchorfact.org/history/hundred-years-war/
-- bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/3 (33.3%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_source_homepage
-- recommendation: `repair_sources`
-
-### 3. Inca Empire
-
-- canonical slug: `history/inca-empire`
-- canonical URL: https://anchorfact.org/history/inca-empire/
-- bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/3 (33.3%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 4. Rise of Islam
-
-- canonical slug: `history/rise-of-islam`
-- canonical URL: https://anchorfact.org/history/rise-of-islam/
-- bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 2/5 (40.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 5. Space Race
-
-- canonical slug: `history/space-race`
-- canonical URL: https://anchorfact.org/history/space-race/
+- canonical slug: `self-improvement/critical-thinking`
+- canonical URL: https://anchorfact.org/self-improvement/critical-thinking/
 - bucket: `low_verified_coverage`
 - confidence: `medium` (verified_sources, score 0.685)
-- verified source coverage: 2/5 (40.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 6. Ancient Rome
-
-- canonical slug: `history/ancient-rome`
-- canonical URL: https://anchorfact.org/history/ancient-rome/
-- bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 3/7 (42.9%)
-- claims: 2 total, 2 capped, 0 missing evidence
+- verified source coverage: 1/9 (11.1%)
+- claims: 2 total, 0 capped, 0 missing evidence
 - quality reasons: partial_source_verification, low_verified_coverage
 - source-title match: `weak`
-- claim-evidence match: `weak`
+- claim-evidence match: `pass`
 - title-summary accuracy: `pass`
-- hygiene flags: none
+- hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 7. Earthquakes
+### 2. Model Evaluation Metrics
 
-- canonical slug: `science/earthquakes`
-- canonical URL: https://anchorfact.org/science/earthquakes/
+- canonical slug: `ai/model-evaluation-metrics`
+- canonical URL: https://anchorfact.org/ai/model-evaluation-metrics/
 - bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 3/7 (42.9%)
-- claims: 2 total, 2 capped, 0 missing evidence
+- confidence: `medium` (verified_sources, score 0.87)
+- verified source coverage: 1/7 (14.3%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage, high_confidence_evidence_gap
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement, generic_source_homepage
+- recommendation: `repair_sources`
+
+### 3. Binary Search Tree
+
+- canonical slug: `computer-science/binary-search-tree`
+- canonical URL: https://anchorfact.org/computer-science/binary-search-tree/
+- bucket: `low_verified_coverage`
+- confidence: `medium` (verified_sources, score 0.685)
+- verified source coverage: 1/7 (14.3%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: duplicate_sources, generic_dispute_statement, generic_source_homepage
+- recommendation: `repair_sources`
+
+### 4. Ansible
+
+- canonical slug: `computer-science/ansible`
+- canonical URL: https://anchorfact.org/computer-science/ansible/
+- bucket: `low_verified_coverage`
+- confidence: `medium` (verified_sources, score 0.685)
+- verified source coverage: 1/6 (16.7%)
+- claims: 2 total, 0 capped, 0 missing evidence
 - quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
 - source-title match: `weak`
 - claim-evidence match: `weak`
@@ -151,19 +106,64 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 8. Active Listening
+### 5. GitOps
 
-- canonical slug: `self-improvement/active-listening`
-- canonical URL: https://anchorfact.org/self-improvement/active-listening/
+- canonical slug: `computer-science/gitops`
+- canonical URL: https://anchorfact.org/computer-science/gitops/
+- bucket: `low_verified_coverage`
+- confidence: `medium` (verified_sources, score 0.685)
+- verified source coverage: 1/5 (20.0%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement, generic_source_homepage
+- recommendation: `repair_sources`
+
+### 6. Pair Programming
+
+- canonical slug: `computer-science/pair-programming`
+- canonical URL: https://anchorfact.org/computer-science/pair-programming/
+- bucket: `low_verified_coverage`
+- confidence: `medium` (verified_sources, score 0.72)
+- verified source coverage: 1/5 (20.0%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: duplicate_sources, generic_dispute_statement, generic_source_homepage
+- recommendation: `repair_sources`
+
+### 7. Decision Making
+
+- canonical slug: `self-improvement/decision-making`
+- canonical URL: https://anchorfact.org/self-improvement/decision-making/
 - bucket: `low_verified_coverage`
 - confidence: `medium` (verified_sources, score 0.87)
-- verified source coverage: 1/9 (11.1%)
+- verified source coverage: 1/5 (20.0%)
 - claims: 2 total, 0 capped, 0 missing evidence
 - quality reasons: partial_source_verification, low_verified_coverage, high_confidence_evidence_gap
 - source-title match: `weak`
 - claim-evidence match: `pass`
 - title-summary accuracy: `pass`
 - hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 8. API Gateway
+
+- canonical slug: `computer-science/api-gateway`
+- canonical URL: https://anchorfact.org/computer-science/api-gateway/
+- bucket: `low_verified_coverage`
+- confidence: `medium` (verified_sources, score 0.685)
+- verified source coverage: 2/7 (28.6%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
 ### 9. GPT (Generative Pre-trained Transformer) Model Family
@@ -226,58 +226,58 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 13. Chronic Disease Prevention Strategies
+### 13. Roman Empire
 
-- canonical slug: `health/chronic-disease-prevention`
-- canonical URL: https://anchorfact.org/health/chronic-disease-prevention/
+- canonical slug: `history/roman-empire`
+- canonical URL: https://anchorfact.org/history/roman-empire/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.75)
-- verified source coverage: 2/4 (50.0%)
+- confidence: `medium` (verified_sources, score 0.6)
+- verified source coverage: 3/3 (100.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
-- source-title match: `weak`
+- quality reasons: none
+- source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
+- hygiene flags: none
 - recommendation: `repair_sources`
 
-### 14. Mental Health: Disorders, Treatments, and Neurobiology
+### 14. Astronomy and Cosmology: From Solar System to the Universe
 
-- canonical slug: `health/mental-health-fundamentals`
-- canonical URL: https://anchorfact.org/health/mental-health-fundamentals/
+- canonical slug: `science/astronomy-and-cosmology`
+- canonical URL: https://anchorfact.org/science/astronomy-and-cosmology/
 - bucket: `medium_capped_claims`
 - confidence: `medium` (verified_sources, score 0.775)
 - verified source coverage: 2/2 (100.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak
+- quality reasons: none
 - source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
+- hygiene flags: none
 - recommendation: `repair_sources`
 
-### 15. Vaccine Development and Immunology
+### 15. Black Holes
 
-- canonical slug: `health/vaccine-development`
-- canonical URL: https://anchorfact.org/health/vaccine-development/
+- canonical slug: `science/black-holes`
+- canonical URL: https://anchorfact.org/science/black-holes/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.71)
-- verified source coverage: 1/2 (50.0%)
+- confidence: `medium` (verified_sources, score 0.87)
+- verified source coverage: 5/7 (71.4%)
 - claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, claim_evidence_weak, partial_source_verification
+- quality reasons: generic_source_homepage, partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak, generic_source_homepage
+- hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 16. Ancient Egyptian Civilization: Pharaohs, Pyramids, and Afterlife
+### 16. Chemical Bonding: From Orbitals to Molecular Structure
 
-- canonical slug: `history/ancient-egyptian-civilization`
-- canonical URL: https://anchorfact.org/history/ancient-egyptian-civilization/
+- canonical slug: `science/chemical-bonding`
+- canonical URL: https://anchorfact.org/science/chemical-bonding/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.6)
-- verified source coverage: 3/4 (75.0%)
+- confidence: `medium` (verified_sources, score 0.795)
+- verified source coverage: 3/6 (50.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: claim_evidence_weak, partial_source_verification
 - source-title match: `weak`

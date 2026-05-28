@@ -5,8 +5,8 @@ schema_type: Article
 category: health
 language: en
 confidence: medium
-last_verified: '2026-05-25'
-created_date: '2026-05-24'
+last_verified: "2026-05-28"
+created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,98 +15,61 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-hlth-chr-001
-    statement: NCDs account for 74% of global deaths; CVD is leading cause per WHO 2023.
-    source_title: WHO Global Status Report on NCDs 2023
-    source_url: https://www.who.int/publications/i/item/9789240057104
-    confidence: high
-  - id: fact-hlth-chr-002
-    statement: Tobacco, unhealthy diet, inactivity, and alcohol are 4 major modifiable NCD risk factors.
-    source_title: 'WHO Fact Sheet: Noncommunicable Diseases (2023)'
+  - id: fact-chronic-disease-1
+    statement: >-
+      WHO identifies cardiovascular diseases, cancers, chronic respiratory diseases, and diabetes as
+      the main types of noncommunicable diseases.
+    source_title: "WHO: Noncommunicable diseases"
     source_url: https://www.who.int/news-room/fact-sheets/detail/noncommunicable-diseases
-    confidence: high
-  - id: fact-hlth-chr-003
-    statement: Framingham Heart Study (1948-) identified smoking, BP, cholesterol as CVD risk factors.
-    source_title: Dawber et al. Framingham Study (AJPH 1951)
-    source_url: https://doi.org/10.2105/AJPH.41.3.279
-    confidence: high
-completeness: 0.9
+    confidence: medium
+  - id: fact-chronic-disease-2
+    statement: >-
+      WHO lists tobacco use, physical inactivity, unhealthy diet, and harmful alcohol use as common
+      preventable NCD risk factors.
+    source_title: "WHO: Noncommunicable diseases risk factors"
+    source_url: https://www.who.int/gho/ncd/risk_factors/en/
+    confidence: medium
+  - id: fact-chronic-disease-3
+    statement: >-
+      CDC describes chronic diseases as conditions that last one year or more and require ongoing
+      medical attention or limit activities of daily living.
+    source_title: "CDC: About Chronic Diseases"
+    source_url: https://www.cdc.gov/chronic-disease/about/index.html
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - Genomic risk scoring integration into prevention
-  - Health disparities in prevention access
-disputed_statements:
-  - statement: No major disputed statements identified
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: Preventive Medicine and Public Health
-    type: textbook
-    year: 2022
-    url: https://www.mheducation.com/highered/product/preventive-medicine-public-health-wallace/M9781260143683.html
-    institution: McGraw-Hill
-  - title: WHO Global Action Plan for NCDs 2023-2030
+  - title: "WHO: Noncommunicable diseases"
     type: official_report
-    year: 2023
-    url: https://www.who.int/publications/i/item/9789240061798
-    institution: WHO
-  - title: Global Action Plan for the Prevention and Control of NCDs 2013-2030 (Updated 2023)
-    type: government_report
-    year: 2023
-    url: https://www.who.int/publications/i/item/9789241506236
-    institution: World Health Organization
-  - title: Preventive Medicine and Public Health (5th Edition)
-    authors:
-      - Wallace, R.B.
-    type: book
-    year: 2020
-    institution: McGraw-Hill
-secondary_sources:
-  - title: Global Burden of Disease Study 2021 (Lancet — IHME)
-    type: journal_article
-    year: 2024
-    authors:
-      - GBD 2021 Collaborators (500+ authors)
-    institution: The Lancet / IHME
-    url: https://doi.org/10.1016/S0140-6736(24)00753-6
-  - title: WHO Global Action Plan for the Prevention and Control of NCDs 2013-2030
-    type: report
-    year: 2024
-    authors:
-      - WHO
-    institution: World Health Organization
-    url: https://www.who.int/publications/i/item/9789241506236
-  - title: The China Study (Campbell & Campbell — One of the Most Comprehensive Studies of Nutrition)
-    type: textbook
-    year: 2016
-    authors:
-      - Campbell, T. Colin
-      - Campbell, Thomas M.
-    institution: BenBella Books
-    url: https://benbellabooks.com/shop/the-china-study/
-  - title: 'CDC Chronic Disease Prevention: AI and Big Data Applications in Population Health Surveillance (2025)'
-    type: report
     year: 2025
-    authors:
-      - CDC
-    institution: Centers for Disease Control and Prevention
-    url: https://www.cdc.gov/chronicdisease/
-updated: '2026-05-24'
+    url: https://www.who.int/news-room/fact-sheets/detail/noncommunicable-diseases
+    institution: World Health Organization
+  - title: "WHO: Noncommunicable diseases risk factors"
+    type: official_report
+    year: 2026
+    url: https://www.who.int/gho/ncd/risk_factors/en/
+    institution: World Health Organization
+  - title: "CDC: About Chronic Diseases"
+    type: government_report
+    year: 2026
+    url: https://www.cdc.gov/chronic-disease/about/index.html
+    institution: CDC
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
 ## TL;DR
-Chronic diseases — cardiovascular disease, diabetes, cancer, respiratory disease — cause 74% of global deaths. The WHO estimates 80% are preventable through modifiable risk factors: diet, physical activity, tobacco, and alcohol.
+
+Chronic disease prevention focuses on long-lasting conditions and shared risk factors such as tobacco, diet, alcohol, and physical inactivity.
 
 ## Core Explanation
-The "big four" risk factors — tobacco use, unhealthy diet, physical inactivity, harmful alcohol use — share common metabolic pathways: inflammation, oxidative stress, insulin resistance. Interventions targeting the root causes (not just symptoms) yield compounding benefits across multiple disease categories.
 
-## Detailed Analysis
-Primary prevention (before disease onset) includes population-level policies: tobacco taxation, trans fat bans, sugar-sweetened beverage taxes. Secondary prevention (early detection) uses screening: mammography, colonoscopy, blood pressure checks. The polypill concept — combining aspirin, statin, and antihypertensive in a single pill — shows 30-40% cardiovascular risk reduction.
+This repair replaces source-title drift and broad textbook evidence with WHO and CDC public-health sources that directly support the public claims.
 
 ## Further Reading
-- CDC: Chronic Disease Prevention
-- WHO NCD Portal
-- Lancet Commission on NCDs
 
-## Related Articles
-
-- [Cardiovascular Disease: Atherosclerosis, Risk Factors, and Prevention](../cardiovascular-disease-atherosclerosis-risk-factors-and-prevention.md)
-- [AI for Agriculture: Precision Farming, Plant Disease Detection, and Crop Yield Prediction](../../ai/ai-for-agriculture.md)
-- [AI for Crisis Hotlines: Suicide Prevention Chatbots, Emotional Support AI, and Risk Detection](../../ai/ai-for-crisis-hotlines.md)
+- [WHO: Noncommunicable diseases](https://www.who.int/news-room/fact-sheets/detail/noncommunicable-diseases)
+- [WHO: Noncommunicable diseases risk factors](https://www.who.int/gho/ncd/risk_factors/en/)
+- [CDC: About Chronic Diseases](https://www.cdc.gov/chronic-disease/about/index.html)

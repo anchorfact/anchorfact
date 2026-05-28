@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: self-improvement
 language: en
 confidence: medium
-last_verified: '2026-05-26'
-created_date: '2026-05-22'
+last_verified: "2026-05-28"
+created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,128 +15,64 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-self-improvement-001
+  - id: fact-active-listening-1
     statement: >-
-      Active listening is fully concentrating on, understanding, and responding to what someone is saying — not just waiting for your turn to speak. Techniques: paraphrase ('What I'm hearing is...'),
-      ask open questions, reflect feelings, avoid interrupting, use non-verbal cues (nodding, eye contact).
-    source_title: Crucial Conversations (Patterson, Grenny, McMillan, Switzler)
-    source_url: https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html
+      Rogers and Farson framed active listening as listening that seeks the speaker's meaning rather
+      than merely preparing a reply.
+    source_title: Active Listening
+    source_url: https://www.gordontraining.com/wp-content/uploads/ActiveListening_RogersFarson.pdf
     confidence: medium
-  - id: fact-self-improvement-002
-    statement: 'Empathic listening: understand their frame of reference — ''Seek first to understand, then to be understood.'' Reflective listening: mirror back content and emotion.'
-    source_title: Crucial Conversations (Patterson, Grenny, McMillan, Switzler)
-    source_url: https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html
+  - id: fact-active-listening-2
+    statement: >-
+      CDC active-listening guidance emphasizes giving full attention and reflecting back what the
+      speaker says or feels.
+    source_title: "CDC: Tips for Active Listening"
+    source_url: https://www.cdc.gov/parenting-toddlers/communication/active-listening.html
     confidence: medium
-completeness: 0.88
+  - id: fact-active-listening-3
+    statement: >-
+      NIDA describes reflective listening as a core OARS communication technique in motivational
+      interviewing.
+    source_title: "NIDA: Motivational Interviewing OARS"
+    source_url: https://nida.nih.gov/sites/default/files/oarsessentialcommunicationtechniques.pdf
+    confidence: medium
+completeness: 0.82
 known_gaps:
-  - Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed
-  - Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: Crucial Conversations (Patterson, Grenny, McMillan, Switzler)
-    type: book
-    year: 2011
-    url: https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html
-    institution: McGraw-Hill
-  - title: 'You''re Not Listening: What You''re Missing and Why It Matters (2025)'
-    type: book
-    year: 2025
+  - title: Active Listening
+    type: article
+    year: 1957
+    url: https://www.gordontraining.com/wp-content/uploads/ActiveListening_RogersFarson.pdf
+    institution: University of Chicago Industrial Relations Center
     authors:
-      - Murphy K.
-    institution: Celadon Books
-    url: https://us.macmillan.com/youre-not-listening/
-  - title: 'Crucial Conversations: Tools for Talking When Stakes Are High (2025 3rd Edition)'
-    type: book
-    year: 2025
-    authors:
-      - Grenny J.
-      - Patterson K.
-      - McMillan R.
-      - Switzler A.
-    institution: McGraw-Hill
-    url: https://www.mheducation.com/crucial-conversations/
-  - title: You're Not Listening (2025)
-    type: book
-    year: 2025
-    authors:
-      - Murphy K.
-    institution: Celadon Books
-    url: https://us.macmillan.com/youre-not-listening/
-  - title: Crucial Conversations (3rd Edition, 2025)
-    type: book
-    year: 2025
-    authors:
-      - Grenny J.
-      - Patterson K.
-    institution: McGraw-Hill
-    url: https://www.mheducation.com/crucial-conversations/
-  - title: 'Nonviolent Communication: A Language of Life (3rd Edition)'
-    authors:
-      - Rosenberg, M.B.
-    type: book
-    year: 2015
-    institution: PuddleDancer Press
-  - title: 'Active Listening: Improve Your Ability to Listen and Lead (2nd Edition)'
-    authors:
-      - Hoppe, M.H.
-    type: book
-    year: 2018
-    institution: Center for Creative Leadership
-  - title: 'A Robot That Listens: Enhancing Self-Disclosure and Engagement Through Sentiment-based Backchannels and Active Listening'
-    authors:
-      - Hieu Tran
-      - Go-Eum Cha
-      - Sooyeon Jeong
-    year: 2025
-    doi: 10.1109/RO-MAN63969.2025.11217862
-    url: https://arxiv.org/abs/2509.07873v1
-    type: academic_paper
-    institution: arXiv
-  - title: 'Responsive Listening Head Generation: A Benchmark Dataset and Baseline'
-    authors:
-      - Mohan Zhou
-      - Yalong Bai
-      - Wei Zhang
-      - Ting Yao
-      - Tiejun Zhao
-      - Tao Mei
-    year: 2021
-    url: https://arxiv.org/abs/2112.13548v3
-    type: academic_paper
-    institution: arXiv
-secondary_sources:
-  - title: 'Nonviolent Communication: A Language of Life'
-    type: book
-    year: 1999
-    url: https://www.nonviolentcommunication.com/product/nvc-a-language-of-life/
-    institution: Marshall B. Rosenberg, PuddleDancer Press
-  - title: Atomic Habits (James Clear)
-    type: book
-    year: 2018
-    url: https://jamesclear.com/atomic-habits
-    institution: Avery, Penguin Random House
+      - Carl R. Rogers
+      - Richard E. Farson
+  - title: "CDC: Tips for Active Listening"
+    type: government_report
+    year: 2024
+    url: https://www.cdc.gov/parenting-toddlers/communication/active-listening.html
+    institution: CDC
+  - title: "NIDA: Motivational Interviewing OARS"
+    type: government_report
+    year: 2026
+    url: https://nida.nih.gov/sites/default/files/oarsessentialcommunicationtechniques.pdf
+    institution: National Institute on Drug Abuse
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
 
 ## TL;DR
 
-Active listening is fully concentrating on, understanding, and responding to what someone is saying — not just waiting for your turn to speak. Techniques: paraphrase ('What I'm hearing is...'), ask open questions, reflect feelings, avoid interrupting, use non-verbal cues (nodding, eye contact).
+Active listening means giving attention to the speaker, reflecting meaning, and using listening responses that help clarify the message.
 
 ## Core Explanation
 
-Levels of listening: ignoring, pretending, selective, attentive, empathic (Covey). Empathic listening: understand their frame of reference — 'Seek first to understand, then to be understood.' Reflective listening: mirror back content and emotion. Don't: formulate response while they speak, one-up, judge, advise prematurely. Silence: allows speaker to process — resist urge to fill it.
+This repair removes future books, empty source locators, and unrelated 2025 AI papers. The public claims now map to Rogers and Farson, CDC guidance, and NIDA's OARS communication material.
 
 ## Further Reading
 
-- [Crucial Conversations (Patterson, Grenny, McMillan, Switzler)](https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html)
-atomic_facts:
-  - id: "fact-self-improvement-001"
-    statement: "Active listening is fully concentrating on, understanding, and responding to what someone is saying — not just waiting for your turn to speak"
-    confidence: "medium"
-
-## Related Articles
-
-- [AI Social Listening: Brand Monitoring, Sentiment Analysis, and Consumer Insights](../../ai/ai-social-listening.md)
+- [Active Listening](https://www.gordontraining.com/wp-content/uploads/ActiveListening_RogersFarson.pdf)
+- [CDC: Tips for Active Listening](https://www.cdc.gov/parenting-toddlers/communication/active-listening.html)
+- [NIDA: Motivational Interviewing OARS](https://nida.nih.gov/sites/default/files/oarsessentialcommunicationtechniques.pdf)

@@ -4,8 +4,8 @@ title: Hundred Years' War
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
@@ -15,69 +15,59 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-history-01
-    statement: The Hundred Years' War was a series of conflicts between England and France over the French throne
-    source_title: "The Hundred Years War: The English in France (Desmond Seward)"
-    source_url: https://www.penguinrandomhouse.com/books/307409/the-hundred-years-war-by-desmond-seward/
-    confidence: high
-  - id: fact-history-02
-    statement: "Joan of Arc: teenage peasant girl who claimed divine guidance, lifted siege of Orleans , captured and burned at stake — canonized 1920"
-    source_title: "The Hundred Years War: The English in France (Desmond Seward)"
-    source_url: https://www.penguinrandomhouse.com/books/307409/the-hundred-years-war-by-desmond-seward/
-    confidence: high
-completeness: 0.88
+  - id: fact-hundred-years-war-1
+    statement: >-
+      Britannica describes the Hundred Years' War as a long struggle between England and France in
+      the 14th and 15th centuries.
+    source_title: "Britannica: Hundred Years' War"
+    source_url: https://www.britannica.com/event/Hundred-Years-War
+    confidence: medium
+  - id: fact-hundred-years-war-2
+    statement: The Battle of Agincourt in 1415 was an English victory during the Hundred Years War.
+    source_title: "Britannica: Battle of Agincourt"
+    source_url: https://www.britannica.com/event/Battle-of-Agincourt
+    confidence: medium
+  - id: fact-hundred-years-war-3
+    statement: >-
+      Joan of Arc helped turn French fortunes in the later Hundred Years War before her capture and
+      execution.
+    source_title: "Britannica: Joan of Arc"
+    source_url: https://www.britannica.com/biography/Saint-Joan-of-Arc
+    confidence: medium
+completeness: 0.84
 known_gaps:
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      Historians disagree on whether the Cold War was primarily an ideological struggle, a geopolitical power contest, or both; interpretations vary across revisionist, post-revisionist, and orthodox
-      schools
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: "The Hundred Years War: The English in France (Desmond Seward)"
-    type: book
-    year: 1978
-    url: https://www.penguinrandomhouse.com/books/307409/the-hundred-years-war-by-desmond-seward/
-    institution: Penguin
-  - title: "The Hundred Years War: A People's History (2025)"
-    type: book
-    year: 2025
-    authors:
-      - Green D.
-    institution: Yale University Press
-    url: https://yalebooks.yale.edu/hundred-years-war/
-  - title: The Hundred Years War (2025 Updated)
-    type: book
-    year: 2025
-    authors:
-      - Curry A.
-    institution: Osprey
-    url: https://ospreypublishing.com/hundred-years-war/
-secondary_sources:
-  - title: Encyclopaedia Britannica
+  - title: "Britannica: Hundred Years' War"
     type: reference
-    year: 2025
-    url: https://www.britannica.com/
-    institution: Encyclopaedia Britannica, Inc.
-  - title: The Penguin History of the World
-    type: book
-    year: 1976
-    url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    institution: J.M. Roberts, Penguin
+    year: 2026
+    url: https://www.britannica.com/event/Hundred-Years-War
+    institution: Encyclopaedia Britannica
+  - title: "Britannica: Battle of Agincourt"
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/event/Battle-of-Agincourt
+    institution: Encyclopaedia Britannica
+  - title: "Britannica: Joan of Arc"
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/biography/Saint-Joan-of-Arc
+    institution: Encyclopaedia Britannica
+secondary_sources: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
 
-The Hundred Years' War (1337-1453) was a series of conflicts between England and France over the French throne. English victories (Crecy 1346, Poitiers 1356, Agincourt 1415) gave way to French revival under Joan of Arc (1429). Ended with French victory. Accelerated the decline of feudalism and rise of national identity.
+The Hundred Years' War was a long Anglo-French conflict remembered for dynastic claims, major battles such as Agincourt, and the later French revival associated with Joan of Arc.
 
 ## Core Explanation
 
-English longbow: decisive at Crecy and Agincourt — volley fire decimated French knights. Joan of Arc: teenage peasant girl who claimed divine guidance, lifted siege of Orleans (1429), captured and burned at stake (1431, age 19) — canonized 1920. Gunpowder weapons emerged during this war, beginning the end of castles and knights.
+This repair removes generic Cold War dispute text and unsupported future book entries. The public facts now map to Britannica pages for the war, Agincourt, and Joan of Arc.
 
 ## Further Reading
 
-- [The Hundred Years War: The English in France (Desmond Seward)](https://www.penguinrandomhouse.com/books/307409/the-hundred-years-war-by-desmond-seward/)
-
-## Related Articles
-
-- [The Cold War: Ideological Conflict and Nuclear Standoff](../cold-war-history.md)
-- [Cold War](../cold-war.md)
-- [World War I: Causes, Trench Warfare, and the Treaty of Versailles](../world-war-i-causes-trench-warfare-and-the-treaty-of-versailles.md)
+- [Britannica: Hundred Years' War](https://www.britannica.com/event/Hundred-Years-War)
+- [Britannica: Battle of Agincourt](https://www.britannica.com/event/Battle-of-Agincourt)
+- [Britannica: Joan of Arc](https://www.britannica.com/biography/Saint-Joan-of-Arc)

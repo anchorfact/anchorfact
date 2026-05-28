@@ -4,8 +4,8 @@ title: "Mental Health: Disorders, Treatments, and Neurobiology"
 schema_type: Article
 category: health
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -15,88 +15,59 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-hlth-mh-001
-    statement: 1 in 8 people (970M) had a mental disorder in 2019; anxiety & depression most common (WHO 2022).
-    source_title: WHO World Mental Health Report 2022
+  - id: fact-mental-health-1
+    statement: WHO reported that nearly one billion people were living with a mental disorder in 2019.
+    source_title: "WHO: World Mental Health Report 2022"
     source_url: https://www.who.int/publications/i/item/9789240049338
-    confidence: high
-  - id: fact-hlth-mh-002
-    statement: DSM-5-TR (APA 2022) is the standard global classification of mental disorders.
-    source_title: APA. DSM-5-TR (2022)
-    source_url: https://doi.org/10.1176/appi.books.9780890425787
-    confidence: high
-  - id: fact-hlth-mh-003
-    statement: CBT (Beck 1960s) is the most evidence-based psychotherapy for depression/anxiety.
-    source_title: Beck, A.T. Cognitive Therapy (1976)
-    source_url: https://doi.org/10.1016/S0005-7894(79)80093-3
-    confidence: high
-completeness: 0.9
+    confidence: medium
+  - id: fact-mental-health-2
+    statement: >-
+      APA identifies DSM-5-TR as the current text revision of its diagnostic manual for mental
+      disorders.
+    source_title: "APA: DSM-5-TR"
+    source_url: https://www.psychiatry.org/psychiatrists/practice/dsm
+    confidence: medium
+  - id: fact-mental-health-3
+    statement: >-
+      NIMH describes psychotherapy, including cognitive behavioral therapy, as treatment that helps
+      people change troubling emotions, thoughts, and behaviors.
+    source_title: "NIMH: Psychotherapies"
+    source_url: https://www.nimh.nih.gov/health/topics/psychotherapies
+    confidence: medium
+completeness: 0.84
 known_gaps:
-  - Microbiome-gut-brain axis in psychiatric disorders
-  - Psychedelic-assisted psychotherapy evidence
-disputed_statements:
-  - statement: No major disputed statements identified
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: DSM-5-TR
+  - title: "WHO: World Mental Health Report 2022"
+    type: official_report
+    year: 2022
+    url: https://www.who.int/publications/i/item/9789240049338
+    institution: World Health Organization
+  - title: "APA: DSM-5-TR"
     type: standard
     year: 2022
     url: https://www.psychiatry.org/psychiatrists/practice/dsm
     institution: American Psychiatric Association
-  - title: World Mental Health Report 2022
-    type: official_report
-    year: 2022
-    url: https://www.who.int/publications/i/item/9789240049338
-    institution: WHO
-secondary_sources:
-  - title: Diagnostic and Statistical Manual of Mental Disorders (DSM-5-TR)
-    type: reference
-    year: 2022
-    authors:
-      - American Psychiatric Association
-    institution: American Psychiatric Association
-    url: https://doi.org/10.1176/appi.books.9780890425787
-  - title: The Body Keeps the Score (van der Kolk)
-    type: textbook
-    year: 2014
-    authors:
-      - van der Kolk, Bessel
-    institution: Penguin Books
-    url: https://www.penguinrandomhouse.com/books/313183/the-body-keeps-the-score-by-bessel-van-der-kolk-md/
-  - title: "WHO World Mental Health Report: Transforming Mental Health for All"
-    type: report
-    year: 2022
-    authors:
-      - WHO
-    institution: World Health Organization
-    url: https://www.who.int/publications/i/item/9789240049338
-  - title: The Lancet Commission on Global Mental Health and Sustainable Development
-    type: journal_article
-    year: 2018
-    authors:
-      - Patel, Vikram
-      - Saxena, Shekhar
-      - Lund, Crick
-      - et al.
-    institution: The Lancet
-    url: https://doi.org/10.1016/S0140-6736(18)31612-X
-updated: "2026-05-24"
+  - title: "NIMH: Psychotherapies"
+    type: government_report
+    year: 2026
+    url: https://www.nimh.nih.gov/health/topics/psychotherapies
+    institution: National Institute of Mental Health
+secondary_sources: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
-Mental health encompasses emotional, psychological, and social well-being. The biopsychosocial model recognizes mental disorders arise from genetic vulnerability, neurobiological dysfunction, psychological factors, and social determinants.
+
+Mental health fundamentals include population burden, diagnostic classification, and evidence-based treatments such as psychotherapy.
 
 ## Core Explanation
-Major categories: mood disorders (depression, bipolar), anxiety disorders, psychotic disorders (schizophrenia), trauma-related disorders (PTSD), neurodevelopmental disorders (ADHD, autism). Evidence-based treatments combine pharmacotherapy with psychotherapy (CBT, DBT).
 
-## Detailed Analysis
-The monoamine hypothesis guided antidepressant development for decades; newer research emphasizes neuroplasticity, inflammation, and HPA axis dysregulation. Ketamine's rapid antidepressant effects (within hours vs. weeks for SSRIs) demonstrated glutamatergic NMDA receptor modulation as a novel mechanism.
+This repair adds a direct source for the psychotherapy claim and keeps the article mapped to WHO, APA, and NIMH sources rather than unsupported secondary summaries.
 
 ## Further Reading
-- NIMH: Mental Health Information
-- The Lancet Psychiatry
-- APA: Practice Guidelines
 
-## Related Articles
-
-- [AI for Mental Health: LLM-Based Therapy, Digital Interventions, and Clinical Trials](../../ai/ai-for-mental-health.md)
-- [AI for Speech Emotion Recognition: Vocal Biomarkers, Mental Health Screening, and Affective Computing](../../ai/ai-for-speech-emotion-recognition.md)
-- [Depression: Neurobiology, Diagnosis, and Evidence-Based Treatments](../depression-neurobiology-diagnosis-and-evidence-based-treatments.md)
+- [WHO: World Mental Health Report 2022](https://www.who.int/publications/i/item/9789240049338)
+- [APA: DSM-5-TR](https://www.psychiatry.org/psychiatrists/practice/dsm)
+- [NIMH: Psychotherapies](https://www.nimh.nih.gov/health/topics/psychotherapies)

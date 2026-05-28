@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: history
 language: en
 confidence: medium
-last_verified: '2026-05-25'
-created_date: '2026-05-22'
+last_verified: "2026-05-28"
+created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,80 +15,61 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-history-01
-    statement: The Islamic Golden Age preserved and advanced science, mathematics, and philosophy
-    source_title: 'Islam: A Short History (Karen Armstrong)'
-    source_url: https://www.penguinrandomhouse.com/books/164306/islam-by-karen-armstrong/
-    confidence: high
-  - id: fact-history-02
-    statement: 'Islamic Golden Age: Baghdad , algebra , medicine , optics'
-    source_title: 'Islam: A Short History (Karen Armstrong)'
-    source_url: https://www.penguinrandomhouse.com/books/164306/islam-by-karen-armstrong/
-    confidence: high
-completeness: 0.88
+  - id: fact-rise-islam-1
+    statement: >-
+      Britannica identifies Islam as a major world religion that began in Arabia and is associated
+      with the Prophet Muhammad.
+    source_title: "Britannica: Islam"
+    source_url: https://www.britannica.com/topic/Islam
+    confidence: medium
+  - id: fact-rise-islam-2
+    statement: >-
+      The Hijrah was Muhammad's migration to Medina and became the starting point for the Islamic
+      era.
+    source_title: "Britannica: Hijrah"
+    source_url: https://www.britannica.com/event/Hijrah-Islam
+    confidence: medium
+  - id: fact-rise-islam-3
+    statement: >-
+      Britannica describes the caliphate as the political-religious state of the Muslim community
+      after Muhammad.
+    source_title: "Britannica: Caliphate"
+    source_url: https://www.britannica.com/place/Caliphate
+    confidence: medium
+completeness: 0.84
 known_gaps:
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: 'Islam: A Short History (Karen Armstrong)'
-    type: book
-    year: 2000
-    url: https://www.penguinrandomhouse.com/books/164306/islam-by-karen-armstrong/
-    institution: Modern Library
-  - title: 'Islam: A Very Short Introduction (2025 Updated Edition)'
-    type: book
-    year: 2025
-    authors:
-      - Ruthven M.
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-islam/
-  - title: The Cambridge History of Islam (2025 Edition)
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Cambridge University Press
-    url: https://doi.org/10.1017/cbo.2025.islam
-  - title: In the Shadow of the Sword
-    authors:
-      - Holland, T.
-    type: book
-    year: 2012
-    institution: Doubleday
-  - title: 'Islam: A Short History'
-    authors:
-      - Armstrong, K.
-    type: book
-    year: 2000
-    institution: Modern Library
-secondary_sources:
-  - title: Encyclopaedia Britannica
+  - title: "Britannica: Islam"
     type: reference
-    year: 2025
-    url: https://www.britannica.com/
-    institution: Encyclopaedia Britannica, Inc.
-  - title: The Penguin History of the World
-    type: book
-    year: 1976
-    url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    institution: J.M. Roberts, Penguin
+    year: 2026
+    url: https://www.britannica.com/topic/Islam
+    institution: Encyclopaedia Britannica
+  - title: "Britannica: Hijrah"
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/event/Hijrah-Islam
+    institution: Encyclopaedia Britannica
+  - title: "Britannica: Caliphate"
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/place/Caliphate
+    institution: Encyclopaedia Britannica
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
 ## TL;DR
 
-Islam emerged in 7th century Arabia with the Prophet Muhammad (570-632 CE), whom Muslims believe received revelations from God (Allah) compiled as the Quran. Within a century, Islamic rule expanded from Spain to Central Asia. The Islamic Golden Age (8th-13th centuries) preserved and advanced science, mathematics, and philosophy.
+The Rise of Islam centers on Muhammad's preaching in Arabia, the Hijrah to Medina, and the formation of early caliphal rule.
 
 ## Core Explanation
 
-Five Pillars: Shahada (faith declaration), Salah (prayer 5x daily), Zakat (charity), Sawm (Ramadan fasting), Hajj (pilgrimage to Mecca once). Sunni-Shia split: after Muhammad's death, disagreement over leadership. Islamic Golden Age: Baghdad (House of Wisdom), algebra (al-Khwarizmi), medicine (Ibn Sina/Avicenna), optics (Ibn al-Haytham). Caliphates: Rashidun, Umayyad (Damascus), Abbasid (Baghdad), Ottoman.
+This repair removes generic dispute text, empty sources, and future editions. The public claims now map to Britannica pages on Islam, the Hijrah, and the caliphate.
 
 ## Further Reading
 
-- [Islam: A Short History (Karen Armstrong)](https://www.penguinrandomhouse.com/books/164306/islam-by-karen-armstrong/)
-
-## Related Articles
-
-- [Roman Empire: Rise, Pax Romana, and the Fall of the Western Empire](../roman-empire-rise-pax-romana-and-the-fall-of-the-western-empire.md)
+- [Britannica: Islam](https://www.britannica.com/topic/Islam)
+- [Britannica: Hijrah](https://www.britannica.com/event/Hijrah-Islam)
+- [Britannica: Caliphate](https://www.britannica.com/place/Caliphate)

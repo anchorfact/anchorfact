@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: history
 language: en
 confidence: medium
-last_verified: '2026-05-25'
-created_date: '2026-05-22'
+last_verified: "2026-05-28"
+created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,97 +15,59 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-history-01
-    statement: Augustus becomes first emperor
-    source_title: 'SPQR: A History of Ancient Rome (Mary Beard)'
-    source_url: https://www.liverpooluniversitypress.co.uk/doi/book/10.3828/9781846319177
-    confidence: high
-  - id: fact-history-02
-    statement: 'Pax Romana : 200 years of relative peace/prosperity'
-    source_title: 'SPQR: A History of Ancient Rome (Mary Beard)'
-    source_url: https://www.liverpooluniversitypress.co.uk/doi/book/10.3828/9781846319177
-    confidence: high
-completeness: 0.88
+  - id: fact-ancient-rome-1
+    statement: >-
+      Britannica treats ancient Rome as a civilization centered on the city of Rome and its
+      expanding ancient state.
+    source_title: "Britannica: Ancient Rome"
+    source_url: https://www.britannica.com/place/ancient-Rome
+    confidence: medium
+  - id: fact-ancient-rome-2
+    statement: Augustus is identified by Britannica as the first Roman emperor.
+    source_title: "Britannica: Augustus"
+    source_url: https://www.britannica.com/biography/Augustus-Roman-emperor
+    confidence: medium
+  - id: fact-ancient-rome-3
+    statement: >-
+      Britannica defines the Pax Romana as a period of comparative tranquillity from Augustus to
+      Marcus Aurelius.
+    source_title: "Britannica: Pax Romana"
+    source_url: https://www.britannica.com/event/Pax-Romana
+    confidence: medium
+completeness: 0.84
 known_gaps:
-  - Statistics and data cited are from 2015 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The causes of the Roman Empire's fall remain contested: monocausal explanations (barbarian invasions, economic decline, lead poisoning) have largely been replaced by multi-factor analyses, but
-      the relative weight of each factor is disputed
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: 'SPQR: A History of Ancient Rome (Mary Beard)'
-    type: book
-    year: 2015
-    url: https://www.liverpooluniversitypress.co.uk/doi/book/10.3828/9781846319177
-    institution: Profile Books
-  - title: 'SPQR: A History of Ancient Rome (2025 Paperback Edition)'
-    type: book
-    year: 2025
-    authors:
-      - Beard M.
-    institution: W.W. Norton
-    url: https://wwnorton.com/books/SPQR/
-  - title: The Oxford History of the Roman World (2025 Updated Edition)
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Oxford University Press
-    url: https://global.oup.com/roman-world/
-  - title: 'SPQR: A History of Ancient Rome (2025)'
-    type: book
-    year: 2025
-    authors:
-      - Beard M.
-    institution: W.W. Norton
-    url: https://wwnorton.com/SPQR/
-  - title: The Fall of the Roman Empire (2025)
-    type: book
-    year: 2025
-    authors:
-      - Heather P.
-    institution: Oxford University Press
-    url: https://global.oup.com/roman-fall/
-  - title: 'SPQR: A History of Ancient Rome'
-    authors:
-      - Beard, M.
-    type: book
-    year: 2015
-    institution: Liveright
-  - title: The History of Rome (Ab Urbe Condita)
-    authors:
-      - Livy
-    type: book
-    year: -27
-    institution: Classical Text
-secondary_sources:
-  - title: 'SPQR: A History of Ancient Rome'
-    type: book
-    year: 2015
-    url: https://www.liverightbooks.com/9781631492228
-    institution: Mary Beard, Liveright
-  - title: The Decline and Fall of the Roman Empire
-    type: book
-    year: 1776
-    url: https://www.britannica.com/topic/The-History-of-the-Decline-and-Fall-of-the-Roman-Empire
-    institution: Edward Gibbon
+  - title: "Britannica: Ancient Rome"
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/place/ancient-Rome
+    institution: Encyclopaedia Britannica
+  - title: "Britannica: Augustus"
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/biography/Augustus-Roman-emperor
+    institution: Encyclopaedia Britannica
+  - title: "Britannica: Pax Romana"
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/event/Pax-Romana
+    institution: Encyclopaedia Britannica
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
 ## TL;DR
 
-Ancient Rome (753 BC - 476 AD Western Empire, -1453 AD Eastern/Byzantine Empire) was one of history's greatest civilizations. From a small city-state to a Mediterranean-spanning empire. Contributions: Roman law (basis of European civil law), Latin language, republican government, engineering (aqueducts, roads, concrete).
+Ancient Rome moved from a city-centered republic into an imperial system associated with Augustus and the Pax Romana.
 
 ## Core Explanation
 
-Timeline: Roman Kingdom (753-509 BC), Republic (509-27 BC), Empire (27 BC-476 AD). Republic: Senate + Consuls + Tribunes — checks and balances. Julius Caesar crosses Rubicon (49 BC), civil war, assassinated (44 BC). Augustus becomes first emperor (27 BC). Pax Romana (27 BC-180 AD): 200 years of relative peace/prosperity. Fall of Western Empire (476 AD) due to internal decay + barbarian invasions.
+This repair removes broad future editions and keeps source-mapped facts about Rome, Augustus, and the Pax Romana from Britannica.
 
 ## Further Reading
 
-- [SPQR: A History of Ancient Rome (Mary Beard)](https://www.liverpooluniversitypress.co.uk/doi/book/10.3828/9781846319177)
-
-## Related Articles
-
-- [Ancient Greek Literature](../../arts/ancient-greek-literature.md)
-- [Ancient Egypt](../ancient-egypt.md)
-- [Ancient Egyptian Civilization: Pharaohs, Pyramids, and Afterlife](../ancient-egyptian-civilization.md)
+- [Britannica: Ancient Rome](https://www.britannica.com/place/ancient-Rome)
+- [Britannica: Augustus](https://www.britannica.com/biography/Augustus-Roman-emperor)
+- [Britannica: Pax Romana](https://www.britannica.com/event/Pax-Romana)

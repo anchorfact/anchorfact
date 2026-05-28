@@ -4,8 +4,8 @@ title: Inca Empire
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
@@ -15,70 +15,59 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-history-01
-    statement: The Inca Empire was the largest empire in pre-Columbian America, stretching along the Andes from Colombia to Chile
-    source_title: "Empire: How Britain Made the Modern World"
-    source_url: https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540
-    confidence: high
-  - id: fact-history-02
-    statement: "Engineering marvels: Machu Picchu, 40,000 km of roads , terraced agriculture"
-    source_title: The Last Days of the Incas (Kim MacQuarrie)
-    source_url: https://www.simonandschuster.com/books/The-Last-Days-of-the-Incas/Kim-MacQuarrie/9780743260503
-    confidence: high
-completeness: 0.88
+  - id: fact-inca-empire-1
+    statement: >-
+      Britannica identifies the Inca as a people who built an empire in the Andean region of South
+      America.
+    source_title: "Britannica: Inca"
+    source_url: https://www.britannica.com/topic/Inca
+    confidence: medium
+  - id: fact-inca-empire-2
+    statement: UNESCO describes the Qhapaq Nan as an Andean road system that supported the Inca Empire.
+    source_title: "UNESCO: Qhapaq Nan, Andean Road System"
+    source_url: https://whc.unesco.org/en/list/1459/
+    confidence: medium
+  - id: fact-inca-empire-3
+    statement: >-
+      UNESCO describes Machu Picchu as a fifteenth-century site later abandoned after the Spanish
+      conquest of the Inca Empire.
+    source_title: "UNESCO: Historic Sanctuary of Machu Picchu"
+    source_url: https://whc.unesco.org/en/list/274
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - Statistics and data cited are from 2007 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The economic impact of colonialism on colonized regions is deeply contested: some economic historians detect developmental benefits, while dependency theorists emphasize systematic extraction
-      and structural underdevelopment
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: The Last Days of the Incas (Kim MacQuarrie)
-    type: book
-    year: 2007
-    url: https://www.simonandschuster.com/books/The-Last-Days-of-the-Incas/Kim-MacQuarrie/9780743260503
-    institution: Simon & Schuster
-  - title: The Incas (2nd Edition, 2025)
-    type: book
-    year: 2025
-    authors:
-      - D'Altroy T.N.
-    institution: Wiley-Blackwell
-    url: https://www.wiley.com/incas/
-  - title: "The Inca Empire: A Very Short Introduction (2025)"
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-inca/
-secondary_sources:
-  - title: "Empire: How Britain Made the Modern World"
-    type: book
-    year: 2003
-    url: https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540
-    institution: Niall Ferguson, Penguin
-  - title: The Penguin History of the World (J.M. Roberts)
-    type: textbook
+  - title: "Britannica: Inca"
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/topic/Inca
+    institution: Encyclopaedia Britannica
+  - title: "UNESCO: Qhapaq Nan, Andean Road System"
+    type: official_report
     year: 2014
-    url: https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    institution: Penguin Books
+    url: https://whc.unesco.org/en/list/1459/
+    institution: UNESCO World Heritage Centre
+  - title: "UNESCO: Historic Sanctuary of Machu Picchu"
+    type: official_report
+    year: 1983
+    url: https://whc.unesco.org/en/list/274
+    institution: UNESCO World Heritage Centre
+secondary_sources: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
 
-The Inca Empire (1438-1533) was the largest empire in pre-Columbian America, stretching along the Andes from Colombia to Chile. Engineering marvels: Machu Picchu, 40,000 km of roads (Qhapaq Ñan), terraced agriculture. No wheel, no writing system (used quipu: knotted strings for records). Conquered by Francisco Pizarro (1532).
+The Inca Empire was an Andean imperial system associated with Cuzco, the Qhapaq Nan road network, and sites such as Machu Picchu.
 
 ## Core Explanation
 
-Cusco: capital, 'navel of the world.' Government: highly centralized, labor tax (mit'a), storehouse system for food security. Terrace farming: adapted to steep Andean terrain. Rope bridges spanned canyons. Smallpox arrived before Pizarro (1526), killing emperor Huayna Capac → civil war → easy Spanish conquest. Atahualpa: last Inca emperor, executed by Pizarro.
+This repair removes mismatched colonialism dispute text and unsupported future sources. The public facts now map to Britannica and UNESCO World Heritage sources.
 
 ## Further Reading
 
-- [The Last Days of the Incas (Kim MacQuarrie)](https://www.simonandschuster.com/books/The-Last-Days-of-the-Incas/Kim-MacQuarrie/9780743260503)
-
-## Related Articles
-
-- [Aztec Empire](../aztec-empire.md)
-- [Byzantine Empire](../byzantine-empire.md)
-- [Mongol Empire](../mongol-empire.md)
+- [Britannica: Inca](https://www.britannica.com/topic/Inca)
+- [UNESCO: Qhapaq Nan, Andean Road System](https://whc.unesco.org/en/list/1459/)
+- [UNESCO: Historic Sanctuary of Machu Picchu](https://whc.unesco.org/en/list/274)

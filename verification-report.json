@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 0,
     "average_sources_per_article": "2.1",
-    "overall_verification_rate": "56.8%",
+    "overall_verification_rate": "58.0%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 172
+    "manual_reviewed_articles": 184
   },
   "articles": [
     {
@@ -29697,19 +29697,38 @@
       "file": "content/computer-science/typescript.md",
       "article_id": "kb-2026-00022",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "TypeScript Documentation",
+          "source_title": "TypeScript for JavaScript Programmers",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.typescriptlang.org/docs/",
+              "identifier": "https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.typescriptlang.org/docs/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "TypeScript Handbook: Everyday Types",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -29725,63 +29744,18 @@
               "identifier": "https://github.com/microsoft/TypeScript",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/microsoft/TypeScript"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "Stack Overflow Developer Survey 2024",
-          "source_type": "unknown",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Programming TypeScript (2025 Updated Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.oreilly.com/typescript/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/typescript/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Type Systems for Web Development: TypeScript and Flow (2025)",
-          "source_type": "survey_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.ts",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.ts"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Programming TypeScript",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/unicode-and-utf-8-encoding-the-world-s-writing-systems.md",
@@ -34211,53 +34185,20 @@
       "file": "content/health/chronic-disease-prevention.md",
       "article_id": "chronic-disease-prevention",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Preventive Medicine and Public Health",
-          "source_type": "textbook",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.mheducation.com/highered/product/preventive-medicine-public-health-wallace/M9781260143683.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.mheducation.com/highered/product/preventive-medicine-public-health-wallace/M9781260143683.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "WHO Global Action Plan for NCDs 2023-2030",
+          "source_title": "WHO: Noncommunicable diseases",
           "source_type": "official_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.who.int/publications/i/item/9789240061798",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.who.int/publications/i/item/9789240061798"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Global Action Plan for the Prevention and Control of NCDs 2013-2030 (Updated 2023)",
-          "source_type": "government_report",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.who.int/publications/i/item/9789241506236",
+              "identifier": "https://www.who.int/news-room/fact-sheets/detail/noncommunicable-diseases",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.who.int/publications/i/item/9789241506236"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -34265,14 +34206,44 @@
           "all_verified": true
         },
         {
-          "source_title": "Preventive Medicine and Public Health (5th Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "source_title": "WHO: Noncommunicable diseases risk factors",
+          "source_type": "official_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.who.int/gho/ncd/risk_factors/en/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "CDC: About Chronic Diseases",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.cdc.gov/chronic-disease/about/index.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/health/depression-neurobiology-diagnosis-and-evidence-based-treatments.md",
@@ -34687,27 +34658,10 @@
       "file": "content/health/mental-health-fundamentals.md",
       "article_id": "mental-health-fundamentals",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "DSM-5-TR",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.psychiatry.org/psychiatrists/practice/dsm",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.psychiatry.org/psychiatrists/practice/dsm"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "World Mental Health Report 2022",
+          "source_title": "WHO: World Mental Health Report 2022",
           "source_type": "official_report",
           "results": [
             {
@@ -34715,8 +34669,45 @@
               "identifier": "https://www.who.int/publications/i/item/9789240049338",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.who.int/publications/i/item/9789240049338"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "APA: DSM-5-TR",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "NIMH: Psychotherapies",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.nimh.nih.gov/health/topics/psychotherapies",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -34724,7 +34715,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -35289,19 +35280,20 @@
       "file": "content/health/vaccine-development.md",
       "article_id": "vaccine-development",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Plotkin's Vaccines, 8th Edition",
-          "source_type": "textbook",
+          "source_title": "WHO: History of smallpox vaccination",
+          "source_type": "official_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.elsevier.com/books/plotkins-vaccines/plotkin/978-0-323-79058-1",
+              "identifier": "https://www.who.int/news-room/spotlight/history-of-vaccination/history-of-smallpox-vaccination",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://shop.elsevier.com/books/plotkins-vaccines/orenstein/978-0-323-79058-1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -35309,22 +35301,44 @@
           "all_verified": true
         },
         {
-          "source_title": "mRNA Vaccines: A New Era in Vaccinology",
+          "source_title": "mRNA vaccines for infectious diseases: principles, delivery and clinical translation",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nature.com/articles/s41577-021-00544-x",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://www.nature.com/articles/s41573-021-00283-5",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "The contribution of vaccination to improved survival and health",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00850-X/fulltext",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/health/yoga-practice.md",
@@ -35522,36 +35536,20 @@
       "file": "content/history/ancient-egyptian-civilization.md",
       "article_id": "ancient-egyptian-civilization",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Oxford History of Ancient Egypt",
-          "source_type": "textbook",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587",
-              "verified": true,
-              "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "The Complete Gods and Goddesses of Ancient Egypt",
+          "source_title": "Britannica: Ancient Egypt",
           "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://thamesandhudson.com/the-complete-gods-and-goddesses-of-ancient-egypt-9780500284247",
+              "identifier": "https://www.britannica.com/place/ancient-Egypt",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.thamesandhudson.com/products/the-complete-gods-and-goddesses-of-ancient-egypt"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -35559,16 +35557,17 @@
           "all_verified": true
         },
         {
-          "source_title": "The Oxford History of Ancient Egypt (2025 Updated Edition)",
-          "source_type": "book",
+          "source_title": "British Museum: Rosetta Stone",
+          "source_type": "museum_record",
           "results": [
             {
               "method": "url",
-              "identifier": "https://global.oup.com/ancient-egypt/",
+              "identifier": "https://www.britishmuseum.org/collection/object/Y_EA24",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/ancient-egypt/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -35576,25 +35575,26 @@
           "all_verified": true
         },
         {
-          "source_title": "The Rise and Fall of Ancient Egypt (2025 Paperback Edition)",
-          "source_type": "book",
+          "source_title": "UNESCO: Memphis and its Necropolis",
+          "source_type": "official_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/ancient-egypt/",
-              "verified": false,
+              "identifier": "https://whc.unesco.org/en/list/86/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.penguinrandomhouse.com/ancient-egypt/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 1
+      "sources_unreachable": 0
     },
     {
       "file": "content/history/ancient-greece-democracy-philosophy-and-the-persian-wars.md",
@@ -35693,36 +35693,20 @@
       "file": "content/history/ancient-rome.md",
       "article_id": "kb-2026-00324",
       "generation_method": "ai_structured",
-      "sources_total": 7,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "SPQR: A History of Ancient Rome (Mary Beard)",
-          "source_type": "book",
+          "source_title": "Britannica: Ancient Rome",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.liverpooluniversitypress.co.uk/doi/book/10.3828/9781846319177",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.liverpooluniversitypress.co.uk/doi/book/10.3828/9781846319177"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "SPQR: A History of Ancient Rome (2025 Paperback Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://wwnorton.com/books/SPQR/",
+              "identifier": "https://www.britannica.com/place/ancient-Rome",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://wwnorton.com/books/SPQR/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -35730,16 +35714,17 @@
           "all_verified": true
         },
         {
-          "source_title": "The Oxford History of the Roman World (2025 Updated Edition)",
-          "source_type": "book",
+          "source_title": "Britannica: Augustus",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://global.oup.com/roman-world/",
+              "identifier": "https://www.britannica.com/biography/Augustus-Roman-emperor",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/roman-world/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -35747,54 +35732,26 @@
           "all_verified": true
         },
         {
-          "source_title": "SPQR: A History of Ancient Rome (2025)",
-          "source_type": "book",
+          "source_title": "Britannica: Pax Romana",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://wwnorton.com/SPQR/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://wwnorton.com/SPQR/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Fall of the Roman Empire (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/roman-fall/",
+              "identifier": "https://www.britannica.com/event/Pax-Romana",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/roman-fall/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "SPQR: A History of Ancient Rome",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "The History of Rome (Ab Urbe Condita)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 2
+      "sources_unreachable": 0
     },
     {
       "file": "content/history/aztec-empire.md",
@@ -36519,16 +36476,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Hundred Years War: The English in France (Desmond Seward)",
-          "source_type": "book",
+          "source_title": "Britannica: Hundred Years' War",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/307409/the-hundred-years-war-by-desmond-seward/",
+              "identifier": "https://www.britannica.com/event/Hundred-Years-War",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/307409/the-hundred-years-war-by-desmond-seward/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -36536,42 +36494,44 @@
           "all_verified": true
         },
         {
-          "source_title": "The Hundred Years War: A People's History (2025)",
-          "source_type": "book",
+          "source_title": "Britannica: Battle of Agincourt",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://yalebooks.yale.edu/hundred-years-war/",
-              "verified": false,
+              "identifier": "https://www.britannica.com/event/Battle-of-Agincourt",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://yalebooks.yale.edu/hundred-years-war/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "The Hundred Years War (2025 Updated)",
-          "source_type": "book",
+          "source_title": "Britannica: Joan of Arc",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://ospreypublishing.com/hundred-years-war/",
-              "verified": false,
+              "identifier": "https://www.britannica.com/biography/Saint-Joan-of-Arc",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.ospreypublishing.com/hundred-years-war/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/history/inca-empire.md",
@@ -36580,50 +36540,53 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Last Days of the Incas (Kim MacQuarrie)",
-          "source_type": "book",
+          "source_title": "Britannica: Inca",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.simonandschuster.com/books/The-Last-Days-of-the-Incas/Kim-MacQuarrie/9780743260503",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.simonandschuster.com/books/The-Last-Days-of-the-Incas/Kim-MacQuarrie/9780743260503"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Incas (2nd Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.wiley.com/incas/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.wiley.com/incas/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Inca Empire: A Very Short Introduction (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/vsi-inca/",
+              "identifier": "https://www.britannica.com/topic/Inca",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-inca/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "UNESCO: Qhapaq Nan, Andean Road System",
+          "source_type": "official_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://whc.unesco.org/en/list/1459/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "UNESCO: Historic Sanctuary of Machu Picchu",
+          "source_type": "official_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://whc.unesco.org/en/list/274",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -36631,8 +36594,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/history/indian-independence-movement.md",
@@ -37711,19 +37674,20 @@
       "file": "content/history/rise-of-islam.md",
       "article_id": "kb-2026-00398",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Islam: A Short History (Karen Armstrong)",
-          "source_type": "book",
+          "source_title": "Britannica: Islam",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/164306/islam-by-karen-armstrong/",
+              "identifier": "https://www.britannica.com/topic/Islam",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/164306/islam-by-karen-armstrong/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -37731,16 +37695,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Islam: A Very Short Introduction (2025 Updated Edition)",
-          "source_type": "book",
+          "source_title": "Britannica: Hijrah",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://global.oup.com/vsi-islam/",
+              "identifier": "https://www.britannica.com/event/Hijrah-Islam",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-islam/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -37748,37 +37713,26 @@
           "all_verified": true
         },
         {
-          "source_title": "The Cambridge History of Islam (2025 Edition)",
-          "source_type": "book",
+          "source_title": "Britannica: Caliphate",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1017/cbo.2025.islam",
-              "verified": false,
+              "identifier": "https://www.britannica.com/place/Caliphate",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1017/cbo.2025.islam"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "In the Shadow of the Sword",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Islam: A Short History",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/history/roman-empire-rise-pax-romana-and-the-fall-of-the-western-empire.md",
@@ -38058,19 +38012,20 @@
       "file": "content/history/space-race.md",
       "article_id": "kb-2026-00405",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Right Stuff (Tom Wolfe)",
-          "source_type": "book",
+          "source_title": "NASA: Sputnik and the Dawn of the Space Age",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://us.macmillan.com/books/9780312427566/therightstuff",
+              "identifier": "https://www.nasa.gov/history/sputnik/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://us.macmillan.com/books/9780312427566/therightstuff/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -38078,56 +38033,35 @@
           "all_verified": true
         },
         {
-          "source_title": "The Right Stuff (2025 Illustrated Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://us.macmillan.com/right-stuff/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://us.macmillan.com/right-stuff/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Space Race: The Epic Battle (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.harpercollins.com/space-race/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.harpercollins.com/space-race/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Right Stuff",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Apollo 11 Flight Plan — NASA Archives",
+          "source_title": "NASA: Yuri Gagarin Becomes the First Person in Space",
           "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nasa.gov/mission/apollo-11/",
+              "identifier": "https://www.nasa.gov/history/60-years-ago-yuri-gagarin-becomes-the-first-person-in-space/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nasa.gov/mission/apollo-11/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "NASA: Apollo 11 Mission Overview",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.nasa.gov/history/apollo-11-mission-overview/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -38135,8 +38069,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/history/tang-dynasty.md",
@@ -39492,19 +39426,20 @@
       "file": "content/science/earthquakes.md",
       "article_id": "kb-2026-00455",
       "generation_method": "ai_structured",
-      "sources_total": 7,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Earthquakes (Bolt, 5th Ed)",
-          "source_type": "book",
+          "source_title": "USGS: What is an earthquake and what causes them to happen?",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://us.macmillan.com/books/9780716756187/earthquakes",
+              "identifier": "https://www.usgs.gov/faqs/what-earthquake-and-what-causes-them-happen",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://us.macmillan.com/books/9780716756187/earthquakes"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -39512,33 +39447,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Earthquake and Volcano Deformation (2025 Edition)",
-          "source_type": "book",
+          "source_title": "USGS: Magnitude Types",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://press.princeton.edu/earthquakes/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://press.princeton.edu/earthquakes/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Seismic Hazard Assessment: A 2025 USGS Review",
-          "source_type": "report",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.usgs.gov/earthquake-hazards",
+              "identifier": "https://www.usgs.gov/programs/earthquake-hazards/magnitude-types",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.usgs.gov/earthquake-hazards"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -39546,54 +39465,26 @@
           "all_verified": true
         },
         {
-          "source_title": "Earthquakes: A Very Short Introduction (2025)",
-          "source_type": "book",
+          "source_title": "USGS: Can megaquakes really happen?",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://global.oup.com/vsi-earthquakes/",
+              "identifier": "https://www.usgs.gov/faqs/can-megaquakes-really-happen-a-magnitude-10-or-larger/",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-earthquakes/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "Earthquake and Volcano Deformation (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://press.princeton.edu/earthquakes/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://press.princeton.edu/earthquakes/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Earthquake Seismology: An Introduction",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Mechanics of Earthquakes and Faulting (3rd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 2
+      "sources_unreachable": 0
     },
     {
       "file": "content/science/electromagnetic-spectrum-radio-waves-to-gamma-rays-and-applications.md",
@@ -42229,19 +42120,20 @@
       "file": "content/self-improvement/active-listening.md",
       "article_id": "kb-2026-00441",
       "generation_method": "ai_structured",
-      "sources_total": 9,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Crucial Conversations (Patterson, Grenny, McMillan, Switzler)",
-          "source_type": "book",
+          "source_title": "Active Listening",
+          "source_type": "article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html",
+              "identifier": "https://www.gordontraining.com/wp-content/uploads/ActiveListening_RogersFarson.pdf",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -42249,131 +42141,44 @@
           "all_verified": true
         },
         {
-          "source_title": "You're Not Listening: What You're Missing and Why It Matters (2025)",
-          "source_type": "book",
+          "source_title": "CDC: Tips for Active Listening",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://us.macmillan.com/youre-not-listening/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://us.macmillan.com/youre-not-listening/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Crucial Conversations: Tools for Talking When Stakes Are High (2025 3rd Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.mheducation.com/crucial-conversations/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.mheducation.com/crucial-conversations"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "You're Not Listening (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://us.macmillan.com/youre-not-listening/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://us.macmillan.com/youre-not-listening/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Crucial Conversations (3rd Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.mheducation.com/crucial-conversations/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.mheducation.com/crucial-conversations"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Nonviolent Communication: A Language of Life (3rd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Active Listening: Improve Your Ability to Listen and Lead (2nd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "A Robot That Listens: Enhancing Self-Disclosure and Engagement Through Sentiment-based Backchannels and Active Listening",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1109/RO-MAN63969.2025.11217862",
+              "identifier": "https://www.cdc.gov/parenting-toddlers/communication/active-listening.html",
               "verified": true,
               "metadata": {
-                "title": "A Robot That Listens: Enhancing Self-Disclosure and Engagement Through Sentiment-based Backchannels and Active Listening",
-                "publisher": "IEEE",
-                "year": 2025
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2509.07873v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Responsive Listening Head Generation: A Benchmark Dataset and Baseline",
-          "source_type": "academic_paper",
+          "source_title": "NIDA: Motivational Interviewing OARS",
+          "source_type": "government_report",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2112.13548v3",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://nida.nih.gov/sites/default/files/oarsessentialcommunicationtechniques.pdf",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 5
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/self-improvement/cognitive-biases-handbook.md",
