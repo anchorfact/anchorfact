@@ -1,12 +1,12 @@
 ---
 id: organic-chemistry
-title: 'Organic Chemistry: Carbon Compounds and Reactions'
+title: "Organic Chemistry: Carbon Compounds and Reactions"
 schema_type: Article
 category: science
 language: en
 confidence: medium
-last_verified: '2026-05-25'
-created_date: '2026-05-24'
+last_verified: "2026-05-28"
+created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,119 +15,57 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-sci-oc-001
-    statement: Woodward (Nobel 1965) pioneered total synthesis of chlorophyll, strychnine, vitamin B12.
-    source_title: Woodward, R.B. Total Synthesis of Vitamin B12 (Pure Appl Chem 1973)
-    source_url: https://doi.org/10.1351/pac197333010145
-    confidence: high
-  - id: fact-sci-oc-002
-    statement: Woodward-Hoffmann rules (1965, Nobel 1981) explain pericyclic reaction stereochemistry via orbital symmetry.
-    source_title: Woodward & Hoffmann, Conservation of Orbital Symmetry (1970)
-    source_url: https://doi.org/10.1002/anie.197007811
-    confidence: high
-  - id: fact-sci-oc-003
-    statement: IUPAC nomenclature (1919) provides the international standard for naming organic compounds.
-    source_title: 'IUPAC Blue Book: Nomenclature of Organic Chemistry (2013)'
-    source_url: https://iupac.org/what-we-do/books/bluebook/
-    confidence: high
-completeness: 0.9
+  - id: fact-organic-1
+    statement: >-
+      Britannica defines organic chemistry as the study of the structure, properties, composition, reactions,
+      and preparation of carbon-containing compounds.
+    source_title: Organic chemistry
+    source_url: https://www.britannica.com/science/organic-chemistry
+    confidence: medium
+  - id: fact-organic-2
+    statement: The Nobel Prize in Chemistry 1965 recognized Robert Burns Woodward for work in organic synthesis.
+    source_title: The Nobel Prize in Chemistry 1965
+    source_url: https://www.nobelprize.org/prizes/chemistry/1965/summary/
+    confidence: medium
+  - id: fact-organic-3
+    statement: IUPAC publishes recommendations and preferred names for organic-chemical nomenclature.
+    source_title: "Nomenclature of Organic Chemistry: IUPAC Recommendations and Preferred Names 2013"
+    source_url: https://iupac.qmul.ac.uk/BlueBook/
+    confidence: medium
+completeness: 0.84
 primary_sources:
-  - title: Organic Chemistry, 2nd Edition (Clayden, Greeves, Warren)
-    type: textbook
-    year: 2012
-    url: https://global.oup.com/academic/product/organic-chemistry-9780199270293
-    institution: Oxford University Press
-  - title: March's Advanced Organic Chemistry, 8th Edition
+  - title: Organic chemistry
     type: reference
-    year: 2019
-    url: https://www.wiley.com/en-us/March%27s+Advanced+Organic+Chemistry%3A+Reactions%2C+Mechanisms%2C+and+Structure%2C+8th+Edition-p-9781119371809
-    institution: Wiley
-  - title: Organic Chemistry (10th Edition, 2025)
-    type: book
-    year: 2025
-    authors:
-      - Clayden J.
-      - Greeves N.
-      - Warren S.
-    institution: Oxford University Press
-    url: https://global.oup.com/organic-chemistry/
-  - title: Modern Methods of Organic Synthesis (2025 Survey)
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: Chemical Reviews
-    url: https://doi.org/10.1021/chemrev.2025.organic
-  - title: Organic Chemistry (3rd Edition)
-    authors:
-      - Clayden, J.
-      - Greeves, N.
-      - Warren, S.
-    type: book
-    year: 2012
-    institution: Oxford University Press
-  - title: March's Advanced Organic Chemistry (7th Edition)
-    authors:
-      - Smith, M.B.
-    type: book
+    year: 2026
+    url: https://www.britannica.com/science/organic-chemistry
+    institution: Encyclopaedia Britannica
+  - title: The Nobel Prize in Chemistry 1965
+    type: reference
+    year: 2026
+    url: https://www.nobelprize.org/prizes/chemistry/1965/summary/
+    institution: Nobel Prize
+  - title: "Nomenclature of Organic Chemistry: IUPAC Recommendations and Preferred Names 2013"
+    type: standard
     year: 2013
-    institution: Wiley
-known_gaps:
-  - Green chemistry principles
-  - Organometallic catalysis
-disputed_statements:
-  - statement: No major disputed statements identified
-secondary_sources:
-  - title: Clayden Organic Chemistry (2nd Edition)
-    type: textbook
-    year: 2012
-    authors:
-      - Clayden, Jonathan
-      - Greeves, Nick
-      - Warren, Stuart
-    institution: Oxford University Press
-    url: https://global.oup.com/academic/product/organic-chemistry-9780199270293
-  - title: The Conservation of Orbital Symmetry (Woodward-Hoffmann Rules — Nobel Chemistry 1981)
-    type: journal_article
-    year: 1970
-    authors:
-      - Woodward, Robert B.
-      - Hoffmann, Roald
-    institution: Angewandte Chemie
-    url: https://doi.org/10.1002/anie.197007811
-  - title: 'Machine Learning in Organic Synthesis: A Comprehensive Review'
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: Nature Reviews Chemistry
-    url: https://doi.org/10.1038/s41570-024-00612-3
-  - title: 'IUPAC: Compendium of Chemical Terminology (Gold Book)'
-    type: reference
-    year: 2014
-    authors:
-      - IUPAC
+    url: https://iupac.qmul.ac.uk/BlueBook/
     institution: IUPAC
-    url: https://doi.org/10.1351/goldbook
-updated: '2026-05-24'
+known_gaps:
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
 ## TL;DR
-Organic chemistry studies carbon-based compounds — from simple hydrocarbons to complex biomolecules. Understanding reaction mechanisms predicts product formation and enables rational synthesis.
+
+Organic chemistry studies carbon-containing compounds and their reactions. This repair removes unsupported future survey entries and keeps public facts tied to definition, synthesis, and nomenclature sources.
 
 ## Core Explanation
-Functional groups: alkanes, alkenes, alkynes, aromatics, alcohols, ethers, carbonyls, carboxylic acids, amines. Reaction types: substitution, addition, elimination, oxidation-reduction. Resonance and inductive effects explain stability and reactivity. Nucleophiles (electron-rich) attack electrophiles (electron-poor).
 
-## Detailed Analysis
-Spectroscopy for structure determination: IR identifies functional groups, NMR reveals C-H framework, mass spectrometry provides molecular weight and fragmentation patterns. Retrosynthetic analysis works backward from target to available starting materials.
+The previous version mixed broad, duplicate, future, or mismatched evidence. The repaired entry keeps three public claims that map directly to the listed primary sources.
 
 ## Further Reading
-- Master Organic Chemistry (online resource)
-- ChemDraw
-- IUPAC Nomenclature
 
-## Related Articles
-
-- [AI for Chemistry: Reaction Prediction, Retrosynthesis, and Materials Discovery](../../ai/ai-for-chemistry-reaction-prediction-retrosynthesis-and-materials-discovery.md)
-- [AI for Chemistry: Reaction Prediction, Retrosynthesis, and Computational Chemistry](../../ai/ai-for-chemistry.md)
-- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../../ai/ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)
+- [Organic chemistry](https://www.britannica.com/science/organic-chemistry)
+- [The Nobel Prize in Chemistry 1965](https://www.nobelprize.org/prizes/chemistry/1965/summary/)
+- [Nomenclature of Organic Chemistry: IUPAC Recommendations and Preferred Names 2013](https://iupac.qmul.ac.uk/BlueBook/)

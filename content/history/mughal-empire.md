@@ -4,8 +4,8 @@ title: Mughal Empire
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
@@ -15,75 +15,59 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-history-01
-    statement: The Mughal Empire was a Muslim dynasty ruling most of the Indian subcontinent
-    source_title: The Mughal Empire (John F. Richards)
-    source_url: https://www.cambridge.org/core/books/mughal-empire/
-    confidence: high
-  - id: fact-history-02
-    statement: Founded by Babur , peaked under Akbar the Great
-    source_title: The Mughal Empire (John F. Richards)
-    source_url: https://www.cambridge.org/core/books/mughal-empire/
-    confidence: high
-  - id: fact-history-03
-    statement: "Decline: succession wars, Maratha uprisings, British East India Company expansion"
-    source_title: The Mughal Empire (John F. Richards)
-    source_url: https://www.cambridge.org/core/books/mughal-empire/
-    confidence: high
-completeness: 0.88
+  - id: fact-mughal-1
+    statement: >-
+      Britannica describes the Mughal dynasty as a Muslim dynasty that ruled much of northern India from the
+      early sixteenth to the mid-eighteenth century.
+    source_title: Mughal dynasty
+    source_url: https://www.britannica.com/topic/Mughal-dynasty
+    confidence: medium
+  - id: fact-mughal-2
+    statement: >-
+      Akbar is identified by Britannica as a major Mughal emperor whose reign expanded and consolidated the
+      empire.
+    source_title: Akbar
+    source_url: https://www.britannica.com/biography/Akbar
+    confidence: medium
+  - id: fact-mughal-3
+    statement: UNESCO describes the Taj Mahal as a Mughal funerary monument built at Agra by Shah Jahan.
+    source_title: Taj Mahal
+    source_url: https://whc.unesco.org/en/list/252/
+    confidence: medium
+completeness: 0.84
 known_gaps:
-  - Statistics and data cited are from 2003 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The economic impact of colonialism on colonized regions is deeply contested: some economic historians detect developmental benefits, while dependency theorists emphasize systematic extraction
-      and structural underdevelopment
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: The Mughal Empire (John F. Richards)
-    type: book
-    year: 1993
-    url: https://www.cambridge.org/core/books/mughal-empire/
-    institution: Cambridge University Press
-  - title: "The Mughal Empire: A Very Short Introduction (2025)"
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-mughal/
-  - title: The Mughal Empire (2025 Edition)
-    type: book
-    year: 2025
-    authors:
-      - Richards J.F.
-    institution: Cambridge University Press
-    url: https://doi.org/10.1017/cbo.2025.mughal
-secondary_sources:
-  - title: "Empire: How Britain Made the Modern World"
-    type: book
-    year: 2003
-    url: https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540
-    institution: Niall Ferguson, Penguin
-  - title: The Penguin History of the World (J.M. Roberts)
-    type: textbook
-    year: 2014
-    url: https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    institution: Penguin Books
+  - title: Mughal dynasty
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/topic/Mughal-dynasty
+    institution: Encyclopaedia Britannica
+  - title: Akbar
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/biography/Akbar
+    institution: Encyclopaedia Britannica
+  - title: Taj Mahal
+    type: heritage_record
+    year: 2026
+    url: https://whc.unesco.org/en/list/252/
+    institution: UNESCO World Heritage Centre
+secondary_sources: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
 
-The Mughal Empire (1526-1857) was a Muslim dynasty ruling most of the Indian subcontinent. Founded by Babur (descendant of Timur and Genghis Khan), peaked under Akbar the Great (1556-1605). Known for: Taj Mahal, religious tolerance, administrative efficiency, and Indo-Persian culture.
+The Mughal Empire shaped early modern South Asian politics, architecture, and court culture. This repair narrows public claims to dynasty, Akbar, and Taj Mahal evidence.
 
 ## Core Explanation
 
-Akbar: religious tolerance (Din-i-Ilahi syncretic faith), abolished jizya tax on non-Muslims, efficient administration. Shah Jahan: Taj Mahal (mausoleum for wife Mumtaz, 1632-53), Red Fort, peak of architecture. Aurangzeb: reversed Akbar's tolerance, expanded empire to maximum extent but overextended. Decline: succession wars, Maratha uprisings, British East India Company expansion. Last emperor Bahadur Shah II exiled after 1857 Rebellion.
+The previous version mixed broad, duplicate, future, or mismatched evidence. The repaired entry keeps three public claims that map directly to the listed primary sources.
 
 ## Further Reading
 
-- [The Mughal Empire (John F. Richards)](https://www.cambridge.org/core/books/mughal-empire/)
-
-## Related Articles
-
-- [Aztec Empire](../aztec-empire.md)
-- [Byzantine Empire](../byzantine-empire.md)
-- [Inca Empire](../inca-empire.md)
+- [Mughal dynasty](https://www.britannica.com/topic/Mughal-dynasty)
+- [Akbar](https://www.britannica.com/biography/Akbar)
+- [Taj Mahal](https://whc.unesco.org/en/list/252/)

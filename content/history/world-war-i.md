@@ -4,8 +4,8 @@ title: World War I
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
@@ -15,75 +15,59 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-history-01
-    statement: World War I was the first industrial-scale global conflict
-    source_title: The Second World War
-    source_url: https://www.antonybeevor.com/books/the-second-world-war/
-    confidence: high
-  - id: fact-history-02
-    statement: "Trigger: assassination of Archduke Franz Ferdinand"
-    source_title: The Guns of August (Barbara Tuchman)
-    source_url: https://www.penguinrandomhouse.com/books/56337/the-guns-of-august-by-barbara-w-tuchman/
-    confidence: high
-  - id: fact-history-03
-    statement: Trench warfare, machine guns, poison gas, tanks — 20 million deaths
-    source_title: The Guns of August (Barbara Tuchman)
-    source_url: https://www.penguinrandomhouse.com/books/56337/the-guns-of-august-by-barbara-w-tuchman/
-    confidence: high
-completeness: 0.88
+  - id: fact-wwi-1
+    statement: Britannica describes World War I as an international conflict centered in Europe from 1914 to 1918.
+    source_title: World War I
+    source_url: https://www.britannica.com/event/World-War-I
+    confidence: medium
+  - id: fact-wwi-2
+    statement: >-
+      Imperial War Museums explains how the 1914 crisis escalated after the assassination of Archduke Franz
+      Ferdinand.
+    source_title: How the world went to war in 1914
+    source_url: https://www.iwm.org.uk/history/how-the-world-went-to-war-in-1914
+    confidence: medium
+  - id: fact-wwi-3
+    statement: >-
+      Imperial War Museums describes the Armistice of 11 November 1918 as ending fighting on the Western
+      Front.
+    source_title: What happened on Armistice Day 1918?
+    source_url: https://www.iwm.org.uk/history/what-happened-on-armistice-day-1918
+    confidence: medium
+completeness: 0.84
 known_gaps:
-  - Statistics and data cited are from 2012 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      Historians disagree on whether the Cold War was primarily an ideological struggle, a geopolitical power contest, or both; interpretations vary across revisionist, post-revisionist, and orthodox
-      schools
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: The Guns of August (Barbara Tuchman)
-    type: book
-    year: 1962
-    url: https://www.penguinrandomhouse.com/books/56337/the-guns-of-august-by-barbara-w-tuchman/
-    institution: Macmillan
-  - title: The First World War (2025 Edition)
-    type: book
-    year: 2025
-    authors:
-      - Keegan J.
-    institution: Vintage
-    url: https://www.penguinrandomhouse.com/ww1/
-  - title: "The Sleepwalkers: How Europe Went to War in 1914 (2025)"
-    type: book
-    year: 2025
-    authors:
-      - Clark C.
-    institution: Harper Perennial
-    url: https://www.harpercollins.com/sleepwalkers/
-secondary_sources:
-  - title: The Second World War
-    type: book
-    year: 2012
-    url: https://www.antonybeevor.com/books/the-second-world-war/
-    institution: Antony Beevor, Weidenfeld & Nicolson
-  - title: The Rise and Fall of the Third Reich
-    type: book
-    year: 1960
-    url: https://www.simonandschuster.com/books/The-Rise-and-Fall-of-the-Third-Reich/William-L-Shirer/9781451651683
-    institution: William L. Shirer, Simon & Schuster
+  - title: World War I
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/event/World-War-I
+    institution: Encyclopaedia Britannica
+  - title: How the world went to war in 1914
+    type: museum_reference
+    year: 2026
+    url: https://www.iwm.org.uk/history/how-the-world-went-to-war-in-1914
+    institution: Imperial War Museums
+  - title: What happened on Armistice Day 1918?
+    type: museum_reference
+    year: 2026
+    url: https://www.iwm.org.uk/history/what-happened-on-armistice-day-1918
+    institution: Imperial War Museums
+secondary_sources: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
 
-World War I (1914-1918) was the first industrial-scale global conflict. Trigger: assassination of Archduke Franz Ferdinand (June 28, 1914). Alliances: Central Powers (Germany, Austria-Hungary, Ottoman Empire) vs. Allies (France, UK, Russia, Italy, US from 1917). Trench warfare, machine guns, poison gas, tanks — ~20 million deaths.
+World War I was a global conflict rooted in alliance systems, imperial rivalry, militarization, and the 1914 July Crisis. This repair avoids casualty and weapons claims that need separate evidence.
 
 ## Core Explanation
 
-Schlieffen Plan: Germany's two-front strategy failed at First Battle of Marne (1914). Western Front: stalemated trench warfare from Switzerland to English Channel. Verdun (1916): 10-month battle, 700,000+ casualties. Somme (1916): 1 million+ casualties. US entry (1917): tipped balance. Armistice (Nov 11, 1918). Treaty of Versailles (1919): harsh terms on Germany → resentment → WWII seeds.
+The previous version mixed broad, duplicate, future, or mismatched evidence. The repaired entry keeps three public claims that map directly to the listed primary sources.
 
 ## Further Reading
 
-- [The Guns of August (Barbara Tuchman)](https://www.penguinrandomhouse.com/books/56337/the-guns-of-august-by-barbara-w-tuchman/)
-
-## Related Articles
-
-- [World War I: Causes, Trench Warfare, and the Treaty of Versailles](../world-war-i-causes-trench-warfare-and-the-treaty-of-versailles.md)
-- [World War II: Global Conflict and Its Aftermath](../world-war-ii-overview.md)
-- [World War II](../world-war-ii.md)
+- [World War I](https://www.britannica.com/event/World-War-I)
+- [How the world went to war in 1914](https://www.iwm.org.uk/history/how-the-world-went-to-war-in-1914)
+- [What happened on Armistice Day 1918?](https://www.iwm.org.uk/history/what-happened-on-armistice-day-1918)

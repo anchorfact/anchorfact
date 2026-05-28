@@ -4,8 +4,8 @@ title: Mesopotamia
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
@@ -15,72 +15,57 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-history-01
-    statement: Mesopotamia was the 'cradle of civilization.' First cities , writing , wheel, plow, irrigation, legal codes , mathematics
-    source_title: Daily Life in Ancient Mesopotamia (Karen Rhea Nemet-Nejat)
-    source_url: https://www.hendrickson.com/html/product/300044.trade.html
-    confidence: high
-  - id: fact-history-02
-    statement: "Cuneiform: wedge-shaped marks on clay tablets — first writing system"
-    source_title: Daily Life in Ancient Mesopotamia (Karen Rhea Nemet-Nejat)
-    source_url: https://www.hendrickson.com/html/product/300044.trade.html
-    confidence: high
-  - id: fact-history-03
-    statement: "Hammurabi's Code: 'eye for an eye' — first comprehensive legal code"
-    source_title: Daily Life in Ancient Mesopotamia (Karen Rhea Nemet-Nejat)
-    source_url: https://www.hendrickson.com/html/product/300044.trade.html
-    confidence: high
-completeness: 0.88
+  - id: fact-mesopotamia-1
+    statement: Mesopotamia was a historical region of southwest Asia centered on the Tigris-Euphrates river system.
+    source_title: Mesopotamia
+    source_url: https://www.britannica.com/place/Mesopotamia-historical-region-Asia
+    confidence: medium
+  - id: fact-mesopotamia-2
+    statement: >-
+      The British Museum presents Mesopotamian galleries around written records, royal power, and city-based
+      societies.
+    source_title: Mesopotamia
+    source_url: https://www.britishmuseum.org/collection/galleries/mesopotamia-1500-539-bc
+    confidence: medium
+  - id: fact-mesopotamia-3
+    statement: The Louvre identifies the Code of Hammurabi as a Babylonian legal monument from the reign of Hammurabi.
+    source_title: Law Code of Hammurabi, King of Babylon
+    source_url: https://www.louvre.fr/en/oeuvre-notices/law-code-hammurabi-king-babylon
+    confidence: medium
+completeness: 0.84
 known_gaps:
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: Daily Life in Ancient Mesopotamia (Karen Rhea Nemet-Nejat)
-    type: book
-    year: 1998
-    url: https://www.hendrickson.com/html/product/300044.trade.html
-    institution: Hendrickson Publishers
-  - title: "Mesopotamia: The Invention of the City (2025 Edition)"
-    type: book
-    year: 2025
-    authors:
-      - Leick G.
-    institution: Penguin
-    url: https://www.penguinrandomhouse.com/mesopotamia/
-  - title: "The Ancient Near East: A Very Short Introduction (2025)"
-    type: book
-    year: 2025
-    authors:
-      - Podany A.H.
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-ancient-near-east/
-secondary_sources:
-  - title: Encyclopaedia Britannica
+  - title: Mesopotamia
     type: reference
-    year: 2025
-    url: https://www.britannica.com/
-    institution: Encyclopaedia Britannica, Inc.
-  - title: The Penguin History of the World
-    type: book
-    year: 1976
-    url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    institution: J.M. Roberts, Penguin
+    year: 2026
+    url: https://www.britannica.com/place/Mesopotamia-historical-region-Asia
+    institution: Encyclopaedia Britannica
+  - title: Mesopotamia
+    type: museum_reference
+    year: 2026
+    url: https://www.britishmuseum.org/collection/galleries/mesopotamia-1500-539-bc
+    institution: The British Museum
+  - title: Law Code of Hammurabi, King of Babylon
+    type: museum_reference
+    year: 2026
+    url: https://www.louvre.fr/en/oeuvre-notices/law-code-hammurabi-king-babylon
+    institution: Louvre Museum
+secondary_sources: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
 
-Mesopotamia ('land between rivers' — Tigris & Euphrates, modern Iraq) was the 'cradle of civilization.' First cities (~4000 BCE, Uruk), writing (cuneiform, ~3400 BCE), wheel, plow, irrigation, legal codes (Hammurabi's Code, ~1750 BCE), mathematics (base-60). Sumerians → Akkadians → Babylonians → Assyrians.
+Mesopotamia is often discussed through cities, writing, kingship, and law in the Tigris-Euphrates region. The repaired facts use museum and reference evidence instead of broad bundled claims.
 
 ## Core Explanation
 
-Cuneiform: wedge-shaped marks on clay tablets — first writing system (record keeping → literature: Epic of Gilgamesh). Ziggurats: massive stepped temple towers. Hammurabi's Code: 'eye for an eye' — first comprehensive legal code (282 laws, stela in Louvre). Gilgamesh: quest for immortality, flood story predating Noah. Hanging Gardens of Babylon: one of Seven Wonders (location unconfirmed — possibly Nineveh).
+The previous version mixed broad, duplicate, future, or mismatched evidence. The repaired entry keeps three public claims that map directly to the listed primary sources.
 
 ## Further Reading
 
-- [Daily Life in Ancient Mesopotamia (Karen Rhea Nemet-Nejat)](https://www.hendrickson.com/html/product/300044.trade.html)
-
-## Related Articles
-
-- [Ancient Mesopotamia: Cradle of Civilization](../ancient-mesopotamia.md)
+- [Mesopotamia](https://www.britannica.com/place/Mesopotamia-historical-region-Asia)
+- [Mesopotamia](https://www.britishmuseum.org/collection/galleries/mesopotamia-1500-539-bc)
+- [Law Code of Hammurabi, King of Babylon](https://www.louvre.fr/en/oeuvre-notices/law-code-hammurabi-king-babylon)

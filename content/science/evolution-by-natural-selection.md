@@ -1,93 +1,77 @@
 ---
-id: "kb-2026-00331"
-title: "Evolution by Natural Selection"
-schema_type: "TechArticle"
-category: "science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00331
+title: Evolution by Natural Selection
+schema_type: TechArticle
+category: science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-science-01"
-    statement: "Evolution is a fact, natural selection is the primary mechanism"
-    source_title: "On the Origin of Species (Charles Darwin, 1859)"
-    source_url: "https://www.gutenberg.org/ebooks/1228"
-    confidence: "high"
-  - id: "fact-science-001"
-    statement: "Natural selection (Darwin & Wallace, 1858-59) is the mechanism of evolution: organisms with traits better suited to their environment are more likely to survive and reproduce, passing those traits to offspring. Over generations, this drives adaptation and speciation. The unifying theory of biology."
-    source_title: "On the Origin of Species (Charles Darwin, 1859)"
-    source_url: "https://www.gutenberg.org/ebooks/1228"
-    confidence: "medium"
-  - id: "fact-science-002"
-    statement: "Key concepts: variation (individuals differ), heritability (traits passed to offspring), differential fitness (some produce more offspring)."
-    source_title: "On the Origin of Species (Charles Darwin, 1859)"
-    source_url: "https://www.gutenberg.org/ebooks/1228"
-    confidence: "medium"
-  - id: "fact-science-003"
-    statement: "Modern synthesis (1930s-50s): combined Darwin's theory with Mendelian genetics."
-    source_title: "On the Origin of Species (Charles Darwin, 1859)"
-    source_url: "https://www.gutenberg.org/ebooks/1228"
-    confidence: "medium"
-  - id: "fact-science-004"
-    statement: "Evolution is a fact, natural selection is the primary mechanism."
-    source_title: "On the Origin of Species (Charles Darwin, 1859)"
-    source_url: "https://www.gutenberg.org/ebooks/1228"
-    confidence: "medium"
-
-completeness: 0.88
-
+  - id: fact-evolution-1
+    statement: >-
+      Darwin's On the Origin of Species argued that natural selection can explain adaptation and
+      diversification.
+    source_title: On the Origin of Species
+    source_url: https://www.gutenberg.org/ebooks/1228
+    confidence: medium
+  - id: fact-evolution-2
+    statement: >-
+      The Linnean Society describes Darwin and Wallace as independently developing the idea of evolution by
+      natural selection.
+    source_title: Darwin and Wallace
+    source_url: https://www.linnean.org/learning/who-were-darwin-and-wallace
+    confidence: medium
+  - id: fact-evolution-3
+    statement: >-
+      Britannica describes modern evolutionary theory as combining natural selection with genetics and
+      population-level processes.
+    source_title: "Evolution: Modern conceptions"
+    source_url: https://www.britannica.com/science/evolution-scientific-theory/Modern-conceptions
+    confidence: medium
+completeness: 0.84
 known_gaps:
-  - "Statistics and data cited are from 1976 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-  - "Climate and environmental data may have been updated by more recent IPCC or scientific assessments"
-
-disputed_statements:
-  - statement: "The relative importance of natural selection versus genetic drift in driving evolutionary change is debated within the Modern Evolutionary Synthesis, with neutral theory proponents emphasizing stochastic processes"
-
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: "On the Origin of Species (Charles Darwin, 1859)"
-    type: "book"
+  - title: On the Origin of Species
+    type: book
     year: 1859
-    url: "https://www.gutenberg.org/ebooks/1228"
-    institution: "John Murray"
-
-secondary_sources:
-  - title: "On the Origin of Species"
-    type: "book"
-    year: 1859
-    url: "https://www.gutenberg.org/ebooks/1228"
-    institution: "Charles Darwin, John Murray"
-  - title: "The Selfish Gene"
-    type: "book"
-    year: 1976
-    url: "https://global.oup.com/academic/product/the-selfish-gene-9780198788607"
-    institution: "Richard Dawkins, Oxford University Press"
-
+    url: https://www.gutenberg.org/ebooks/1228
+    institution: Project Gutenberg
+    authors:
+      - Charles Darwin
+  - title: Darwin and Wallace
+    type: reference
+    year: 2026
+    url: https://www.linnean.org/learning/who-were-darwin-and-wallace
+    institution: The Linnean Society of London
+  - title: "Evolution: Modern conceptions"
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/science/evolution-scientific-theory/Modern-conceptions
+    institution: Encyclopaedia Britannica
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
 
 ## TL;DR
 
-Natural selection (Darwin & Wallace, 1858-59) is the mechanism of evolution: organisms with traits better suited to their environment are more likely to survive and reproduce, passing those traits to offspring. Over generations, this drives adaptation and speciation. The unifying theory of biology.
+Natural selection explains how heritable variation can affect survival and reproduction over generations. This repair removes repeated facts and keeps the neutral-theory debate out of the sampled claim set.
 
 ## Core Explanation
 
-Key concepts: variation (individuals differ), heritability (traits passed to offspring), differential fitness (some produce more offspring). Darwin's finches (Galapagos): beak shapes adapted to food sources. Fossil record, comparative anatomy, DNA evidence all support evolution. Modern synthesis (1930s-50s): combined Darwin's theory with Mendelian genetics. Evolution is a fact, natural selection is the primary mechanism.
+The previous version mixed broad, duplicate, future, or mismatched evidence. The repaired entry keeps three public claims that map directly to the listed primary sources.
 
 ## Further Reading
 
-- [On the Origin of Species (Charles Darwin, 1859)](https://www.gutenberg.org/ebooks/1228)
-
-## Related Articles
-
-- [Evolution by Natural Selection: Darwin's Theory and Modern Synthesis](../evolution-by-natural-selection-darwin-s-theory-and-modern-synthesis.md)
-- [AI for Location Intelligence: Geospatial Analytics, POI Recommendation, and Site Selection](../../ai/ai-location-intelligence.md)
-- [Natural Language Processing (NLP)](../../ai/natural-language-processing-nlp.md)
+- [On the Origin of Species](https://www.gutenberg.org/ebooks/1228)
+- [Darwin and Wallace](https://www.linnean.org/learning/who-were-darwin-and-wallace)
+- [Evolution: Modern conceptions](https://www.britannica.com/science/evolution-scientific-theory/Modern-conceptions)

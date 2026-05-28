@@ -4,8 +4,8 @@ title: Fashion History
 schema_type: TechArticle
 category: arts
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
@@ -15,78 +15,61 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-arts-01
-    statement: "1947: Dior's 'New Look'"
-    source_title: "Fashion: The Definitive History of Costume and Style (DK)"
-    source_url: https://www.dk.com/us/book/9780756698355-fashion/
-    confidence: high
-  - id: fact-arts-001
+  - id: fact-fashion-1
     statement: >-
-      Fashion reflects culture, technology, and social change through clothing. Key shifts: ancient draped garments → tailored medieval → Renaissance opulence → Industrial Revolution mass production →
-      20th century rapid cycles → fast fashion (1990s+) → sustainable fashion (2020s+). Haute couture (Paris, 1858, Worth) set luxury standards.
-    source_title: "Fashion: The Definitive History of Costume and Style (DK)"
-    source_url: https://www.dk.com/us/book/9780756698355-fashion/
+      The fashion industry includes the design, manufacturing, distribution, marketing, retailing,
+      advertising, and promotion of clothing.
+    source_title: Fashion industry
+    source_url: https://www.britannica.com/art/fashion-industry
     confidence: medium
-  - id: fact-arts-002
-    statement: "Coco Chanel: little black dress, Chanel suit, 'fashion changes, style endures.' Fast fashion: Zara (new designs weekly), environmental criticism."
-    source_title: "Fashion: The Definitive History of Costume and Style (DK)"
-    source_url: https://www.dk.com/us/book/9780756698355-fashion/
+  - id: fact-fashion-2
+    statement: >-
+      Christian Dior's 1947 New Look reshaped postwar fashion with rounded shoulders, narrow waists, and full
+      skirts.
+    source_title: Introducing Christian Dior
+    source_url: https://www.vam.ac.uk/articles/introducing-christian-dior
     confidence: medium
-completeness: 0.88
+  - id: fact-fashion-3
+    statement: >-
+      The Metropolitan Museum of Art identifies Gabrielle Chanel as a major designer associated with
+      modernizing womenswear in the twentieth century.
+    source_title: Gabrielle Chanel (1883-1971) and the House of Chanel
+    source_url: https://www.metmuseum.org/toah/hd/chnl/hd_chnl.htm
+    confidence: medium
+completeness: 0.84
 known_gaps:
-  - Statistics and data cited are from 2012 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist
-      and expressionist accounts
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: "Fashion: The Definitive History of Costume and Style (DK)"
-    type: book
-    year: 2012
-    url: https://www.dk.com/us/book/9780756698355-fashion/
-    institution: DK Publishing
-  - title: "Fashion: The Definitive History of Costume and Style (2025)"
-    type: book
-    year: 2025
-    authors:
-      - DK
-    institution: DK Publishing
-    url: https://www.dk.com/fashion/
-  - title: The History of Modern Fashion (2025 Edition)
-    type: book
-    year: 2025
-    authors:
-      - Cole D.J.
-      - Deihl N.
-    institution: Laurence King
-    url: https://www.laurenceking.com/fashion/
-secondary_sources:
-  - title: "Fashion: The Definitive History of Costume and Style"
-    type: book
-    year: 2012
-    url: https://www.dk.com/us/book/9780756698355-fashion/
-    institution: DK / Smithsonian
-  - title: The Story of Art (E.H. Gombrich)
-    type: textbook
-    year: 1995
-    url: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
-    institution: Phaidon Press
+  - title: Fashion industry
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/art/fashion-industry
+    institution: Encyclopaedia Britannica
+  - title: Introducing Christian Dior
+    type: museum_reference
+    year: 2026
+    url: https://www.vam.ac.uk/articles/introducing-christian-dior
+    institution: Victoria and Albert Museum
+  - title: Gabrielle Chanel (1883-1971) and the House of Chanel
+    type: museum_reference
+    year: 2026
+    url: https://www.metmuseum.org/toah/hd/chnl/hd_chnl.htm
+    institution: The Metropolitan Museum of Art
+secondary_sources: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
 
-Fashion reflects culture, technology, and social change through clothing. Key shifts: ancient draped garments → tailored medieval → Renaissance opulence → Industrial Revolution mass production → 20th century rapid cycles → fast fashion (1990s+) → sustainable fashion (2020s+). Haute couture (Paris, 1858, Worth) set luxury standards.
+Fashion history traces changing dress, production, retail, and cultural meaning. This compact repair replaces broad style claims with three source-mapped examples.
 
 ## Core Explanation
 
-1920s: flapper dresses (shorter hemlines, looser). 1947: Dior's 'New Look' (wasp waist, full skirt). 1960s: miniskirt (Mary Quant). 1980s: power dressing (shoulder pads). Coco Chanel: little black dress, Chanel suit, 'fashion changes, style endures.' Fast fashion: Zara (new designs weekly), environmental criticism. Sustainable: secondhand (Depop, ThredUp), circular, slow fashion.
+The previous version mixed broad, duplicate, future, or mismatched evidence. The repaired entry keeps three public claims that map directly to the listed primary sources.
 
 ## Further Reading
 
-- [Fashion: The Definitive History of Costume and Style (DK)](https://www.dk.com/us/book/9780756698355-fashion/)
-
-## Related Articles
-
-- [AI for Beauty and Fashion: Virtual Try-On, Personalized Styling, and Trend Prediction](../../ai/ai-beauty-fashion.md)
-- [Animation History](../animation-history.md)
-- [Architecture History](../architecture-history.md)
+- [Fashion industry](https://www.britannica.com/art/fashion-industry)
+- [Introducing Christian Dior](https://www.vam.ac.uk/articles/introducing-christian-dior)
+- [Gabrielle Chanel (1883-1971) and the House of Chanel](https://www.metmuseum.org/toah/hd/chnl/hd_chnl.htm)

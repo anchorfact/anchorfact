@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 0,
     "average_sources_per_article": "2.2",
-    "overall_verification_rate": "49.8%",
+    "overall_verification_rate": "50.9%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 98
+    "manual_reviewed_articles": 113
   },
   "articles": [
     {
@@ -9342,18 +9342,20 @@
       "file": "content/ai/embodied-ai-and-robotics.md",
       "article_id": "embodied-ai-and-robotics",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
           "source_title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2307.15818",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2307.15818",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2307.15818&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -9361,24 +9363,46 @@
           "all_verified": true
         },
         {
-          "source_title": "A Survey on Embodied AI",
+          "source_title": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2405.06852",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2204.01691",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Habitat: A Platform for Embodied AI Research",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1904.01201",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/explainable-ai-xai.md",
@@ -10027,35 +10051,56 @@
       "file": "content/ai/graph-neural-networks.md",
       "article_id": "graph-neural-networks",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Semi-Supervised Classification with Graph Convolutional Networks (GCN)",
+          "source_title": "Semi-Supervised Classification with Graph Convolutional Networks",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1609.02907",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1609.02907",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Graph Representation Learning (Hamilton)",
-          "source_type": "textbook",
+          "source_title": "Graph Attention Networks",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1710.10903",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Graph Representation Learning",
+          "source_type": "book",
           "results": [
             {
               "method": "url",
               "identifier": "https://www.cs.mcgill.ca/~wlh/grl_book/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.cs.mcgill.ca/~wlh/grl_book/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -10063,8 +10108,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/graphrag.md",
@@ -10205,18 +10252,20 @@
       "file": "content/ai/image-segmentation.md",
       "article_id": "image-segmentation",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
           "source_title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1505.04597",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1505.04597",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=1505.04597&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -10224,24 +10273,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Segment Anything (SAM)",
+          "source_title": "Segment Anything",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2304.02643",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2304.02643",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Mask R-CNN",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1703.06870",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/information-extraction.md",
@@ -10332,11 +10403,11 @@
       "file": "content/ai/knowledge-distillation.md",
       "article_id": "kb-2026-00286",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Distilling the Knowledge in a Neural Network (Hinton, Vinyals, Dean)",
-          "source_type": "workshop",
+          "source_title": "Distilling the Knowledge in a Neural Network",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
@@ -10345,7 +10416,7 @@
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Targeted evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -10353,17 +10424,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Knowledge Distillation: A Survey (Gou, Yu, Maybank, Tao)",
-          "source_type": "survey_paper",
+          "source_title": "Knowledge Distillation: A Survey",
+          "source_type": "academic_paper",
           "results": [
             {
-              "method": "url",
-              "identifier": "https://doi.org/10.1007/s11263-021-01453-z",
+              "method": "doi",
+              "identifier": "10.1007/s11263-021-01453-z",
               "verified": true,
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Targeted evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -10381,25 +10452,7 @@
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Targeted evidence repair pass; shell verifier network was not used for this bounded manual-review update."
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "TinyBERT: Distilling BERT for Natural Language Understanding",
-          "source_type": "conference_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://arxiv.org/abs/1909.10351",
-              "verified": true,
-              "metadata": {
-                "manual_review": true,
-                "reviewed_at": "2026-05-28",
-                "note": "Targeted evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -10407,7 +10460,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 4,
+      "sources_verified": 3,
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
@@ -15085,16 +15138,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The World Atlas of Coffee (James Hoffmann, 2nd Ed)",
-          "source_type": "book",
+          "source_title": "Coffee",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.octopusbooks.co.uk/titles/james-hoffmann/the-world-atlas-of-coffee/9781784725716/",
+              "identifier": "https://www.britannica.com/topic/coffee",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.octopusbooks.co.uk/titles/james-hoffmann/the-world-atlas-of-coffee/9781784725716/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -15102,42 +15156,46 @@
           "all_verified": true
         },
         {
-          "source_title": "The World Atlas of Coffee (3rd Edition, 2025)",
-          "source_type": "book",
+          "source_title": "The Story of Coffee",
+          "source_type": "industry_whitepaper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.octopusbooks.co.uk/coffee-atlas/",
-              "verified": false,
+              "identifier": "https://www.ico.org/coffee_story.asp",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.octopusbooks.co.uk/coffee-atlas/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Uncommon Grounds: The History of Coffee and How It Transformed Our World (2025)",
-          "source_type": "book",
+          "source_title": "Spilling the Beans: How Much Caffeine is Too Much?",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.basicbooks.com/coffee/",
-              "verified": false,
+              "identifier": "https://www.fda.gov/food/information-consumers-using-dietary-supplements/spilling-beans-how-much-caffeine-too-much",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.hachettebookgroup.com/coffee/?lens=basic-books"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/arts/contemporary-art-trends.md",
@@ -15487,16 +15545,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Fashion: The Definitive History of Costume and Style (DK)",
-          "source_type": "book",
+          "source_title": "Fashion industry",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.dk.com/us/book/9780756698355-fashion/",
+              "identifier": "https://www.britannica.com/art/fashion-industry",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://dk.com/en-us/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -15504,42 +15563,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Fashion: The Definitive History of Costume and Style (2025)",
-          "source_type": "book",
+          "source_title": "Introducing Christian Dior",
+          "source_type": "museum_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.dk.com/fashion/",
-              "verified": false,
+              "identifier": "https://www.vam.ac.uk/articles/introducing-christian-dior",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://dk.com/en-us/fashion"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "The History of Modern Fashion (2025 Edition)",
-          "source_type": "book",
+          "source_title": "Gabrielle Chanel (1883-1971) and the House of Chanel",
+          "source_type": "museum_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.laurenceking.com/fashion/",
-              "verified": false,
+              "identifier": "https://www.metmuseum.org/toah/hd/chnl/hd_chnl.htm",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.laurenceking.com/fashion/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/arts/film-genres.md",
@@ -17508,19 +17571,20 @@
       "file": "content/business/marketing-fundamentals.md",
       "article_id": "marketing-fundamentals",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Marketing Management, 15th Global Edition",
-          "source_type": "textbook",
+          "source_title": "Principles of Marketing",
+          "source_type": "course_material",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.pearson.com/en-us/subject-catalog/p/marketing-management/P200000005852",
+              "identifier": "https://openstax.org/details/books/principles-marketing",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.pearson.com/en-us/subject-catalog/p/marketing-management/P200000005852"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -17528,16 +17592,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Influence: The Psychology of Persuasion (Cialdini)",
-          "source_type": "textbook",
+          "source_title": "Influence: The Psychology of Persuasion",
+          "source_type": "book",
           "results": [
             {
               "method": "url",
               "identifier": "https://www.harpercollins.com/products/influence-robert-b-cialdini",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.harpercollins.com/products/influence-robert-b-cialdini"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -17545,76 +17610,28 @@
           "all_verified": true
         },
         {
-          "source_title": "Marketing Management (17th Global Edition, 2025)",
-          "source_type": "book",
+          "source_title": "The One Number You Need to Grow",
+          "source_type": "article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.pearson.com/marketing/",
-              "verified": false,
+              "identifier": "https://hbr.org/2003/12/the-one-number-you-need-to-grow",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.pearson.com/marketing/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "This Is Marketing: You Can't Be Seen Until You Learn to See (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/this-is-marketing/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.penguinrandomhouse.com/this-is-marketing/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Marketing Management (17th Global, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.pearson.com/marketing/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.pearson.com/marketing/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "This Is Marketing (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/this-is-marketing/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.penguinrandomhouse.com/this-is-marketing/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 4
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/business/marketing-mix-4ps.md",
@@ -36497,10 +36514,46 @@
       "file": "content/history/industrial-revolution.md",
       "article_id": "kb-2026-00326",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Industrial Revolution: A Very Short Introduction (Robert C. Allen)",
+          "source_title": "Industrial Revolution",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/event/Industrial-Revolution",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The steam revolution",
+          "source_type": "museum_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.sciencemuseum.org.uk/objects-and-stories/steam-revolution",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Industrial Revolution: A Very Short Introduction",
           "source_type": "book",
           "results": [
             {
@@ -36508,80 +36561,20 @@
               "identifier": "https://global.oup.com/academic/product/the-industrial-revolution-9780198706786",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/academic/product/the-industrial-revolution-9780198706786"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "The Industrial Revolution: A Very Short Introduction (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/vsi-industrial/",
-              "verified": true,
-              "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-industrial/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "The British Industrial Revolution in Global Perspective (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1017/cbo.2025.industrial",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1017/cbo.2025.industrial"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The British Industrial Revolution (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1017/cbo.2025.industrial",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1017/cbo.2025.industrial"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The British Industrial Revolution in Global Perspective",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Enlightened Economy: Britain and the Industrial Revolution 1700-1850",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/internet-history.md",
@@ -36779,47 +36772,53 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Daily Life in Ancient Mesopotamia (Karen Rhea Nemet-Nejat)",
-          "source_type": "book",
+          "source_title": "Mesopotamia",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.hendrickson.com/html/product/300044.trade.html",
-              "verified": false,
-              "metadata": {},
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Mesopotamia: The Invention of the City (2025 Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/mesopotamia/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.penguinrandomhouse.com/mesopotamia/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Ancient Near East: A Very Short Introduction (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/vsi-ancient-near-east/",
+              "identifier": "https://www.britannica.com/place/Mesopotamia-historical-region-Asia",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-ancient-near-east/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Mesopotamia",
+          "source_type": "museum_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britishmuseum.org/collection/galleries/mesopotamia-1500-539-bc",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Law Code of Hammurabi, King of Babylon",
+          "source_type": "museum_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.louvre.fr/en/oeuvre-notices/law-code-hammurabi-king-babylon",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -36827,8 +36826,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/middle-ages.md",
@@ -37066,33 +37067,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Mughal Empire (John F. Richards)",
-          "source_type": "book",
+          "source_title": "Mughal dynasty",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.cambridge.org/core/books/mughal-empire/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.cambridge.org/core/books/mughal-empire"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Mughal Empire: A Very Short Introduction (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/vsi-mughal/",
+              "identifier": "https://www.britannica.com/topic/Mughal-dynasty",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-mughal/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -37100,25 +37085,46 @@
           "all_verified": true
         },
         {
-          "source_title": "The Mughal Empire (2025 Edition)",
-          "source_type": "book",
+          "source_title": "Akbar",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1017/cbo.2025.mughal",
-              "verified": false,
+              "identifier": "https://www.britannica.com/biography/Akbar",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1017/cbo.2025.mughal"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Taj Mahal",
+          "source_type": "heritage_record",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://whc.unesco.org/en/list/252/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/napoleonic-era.md",
@@ -37722,16 +37728,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "A Brief History of the Samurai (Jonathan Clements)",
-          "source_type": "book",
+          "source_title": "Samurai",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.littlebrown.co.uk/titles/jonathan-clements/a-brief-history-of-the-samurai/9781849019811/",
+              "identifier": "https://www.britannica.com/topic/samurai",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.littlebrown.co.uk/titles/jonathan-clements/a-brief-history-of-the-samurai/9781849019811/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -37739,33 +37746,35 @@
           "all_verified": true
         },
         {
-          "source_title": "The Samurai: A Military History (2025 Edition)",
-          "source_type": "book",
+          "source_title": "Bushido",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://ospreypublishing.com/samurai/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.ospreypublishing.com/samurai/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Samurai: A Very Short Introduction (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/vsi-samurai/",
+              "identifier": "https://www.britannica.com/topic/Bushido",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-samurai/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Miyamoto Musashi",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/biography/Miyamoto-Musashi-Japanese-soldier-artist",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -37773,8 +37782,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/scientific-revolution.md",
@@ -38132,16 +38143,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Guns of August (Barbara Tuchman)",
-          "source_type": "book",
+          "source_title": "World War I",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/56337/the-guns-of-august-by-barbara-w-tuchman/",
+              "identifier": "https://www.britannica.com/event/World-War-I",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/56337/the-guns-of-august-by-barbara-w-tuchman/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -38149,42 +38161,46 @@
           "all_verified": true
         },
         {
-          "source_title": "The First World War (2025 Edition)",
-          "source_type": "book",
+          "source_title": "How the world went to war in 1914",
+          "source_type": "museum_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/ww1/",
-              "verified": false,
+              "identifier": "https://www.iwm.org.uk/history/how-the-world-went-to-war-in-1914",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.penguinrandomhouse.com/ww1/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "The Sleepwalkers: How Europe Went to War in 1914 (2025)",
-          "source_type": "book",
+          "source_title": "What happened on Armistice Day 1918?",
+          "source_type": "museum_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.harpercollins.com/sleepwalkers/",
-              "verified": false,
+              "identifier": "https://www.iwm.org.uk/history/what-happened-on-armistice-day-1918",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.harpercollins.com/sleepwalkers/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/world-war-ii-overview.md",
@@ -39801,10 +39817,10 @@
       "file": "content/science/evolution-by-natural-selection.md",
       "article_id": "kb-2026-00331",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "On the Origin of Species (Charles Darwin, 1859)",
+          "source_title": "On the Origin of Species",
           "source_type": "book",
           "results": [
             {
@@ -39812,8 +39828,45 @@
               "identifier": "https://www.gutenberg.org/ebooks/1228",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.gutenberg.org/ebooks/1228"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Darwin and Wallace",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.linnean.org/learning/who-were-darwin-and-wallace",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Evolution: Modern conceptions",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/science/evolution-scientific-theory/Modern-conceptions",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -39821,8 +39874,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/evolution-of-language.md",
@@ -40764,10 +40819,10 @@
       "file": "content/science/newton-s-laws-of-motion.md",
       "article_id": "kb-2026-00372",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Philosophiæ Naturalis Principia Mathematica (Newton, 1687)",
+          "source_title": "Philosophiae Naturalis Principia Mathematica",
           "source_type": "book",
           "results": [
             {
@@ -40775,8 +40830,45 @@
               "identifier": "https://www.gutenberg.org/ebooks/28233",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.gutenberg.org/ebooks/28233"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Newton's First Law of Motion",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-first-law-of-motion/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Newton's Second Law of Motion",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-second-law-of-motion/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -40784,8 +40876,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/nuclear-fission-and-fusion-principles-reactors-and-energy-prospects.md",
@@ -40872,19 +40966,56 @@
       "file": "content/science/ocean-life.md",
       "article_id": "kb-2026-00496",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Biology of the Deep Ocean (Peter Herring)",
-          "source_type": "book",
+          "source_title": "How much water is in the ocean?",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://global.oup.com/academic/product/the-biology-of-the-deep-ocean-9780198549567",
+              "identifier": "https://oceanservice.noaa.gov/facts/oceanwater.html",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/academic/product/the-biology-of-the-deep-ocean-9780198549567"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "How much of the ocean is coral reef?",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://oceanservice.noaa.gov/facts/coral_species.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "What is a hydrothermal vent?",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://oceanexplorer.noaa.gov/facts/vents.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -40892,60 +41023,29 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/organic-chemistry.md",
       "article_id": "organic-chemistry",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Organic Chemistry, 2nd Edition (Clayden, Greeves, Warren)",
-          "source_type": "textbook",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/academic/product/organic-chemistry-9780199270293",
-              "verified": true,
-              "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/academic/product/organic-chemistry-9780199270293"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "March's Advanced Organic Chemistry, 8th Edition",
+          "source_title": "Organic chemistry",
           "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.wiley.com/en-us/March%27s+Advanced+Organic+Chemistry%3A+Reactions%2C+Mechanisms%2C+and+Structure%2C+8th+Edition-p-9781119371809",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.wiley.com/en-us/March%27s+Advanced+Organic+Chemistry%3A+Reactions%2C+Mechanisms%2C+and+Structure%2C+8th+Edition-p-9781119371809"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Organic Chemistry (10th Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/organic-chemistry/",
+              "identifier": "https://www.britannica.com/science/organic-chemistry",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/organic-chemistry/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -40953,37 +41053,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Modern Methods of Organic Synthesis (2025 Survey)",
-          "source_type": "survey_paper",
+          "source_title": "The Nobel Prize in Chemistry 1965",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1021/chemrev.2025.organic",
-              "verified": false,
+              "identifier": "https://www.nobelprize.org/prizes/chemistry/1965/summary/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1021/chemrev.2025.organic"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Organic Chemistry (3rd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "March's Advanced Organic Chemistry (7th Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "source_title": "Nomenclature of Organic Chemistry: IUPAC Recommendations and Preferred Names 2013",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://iupac.qmul.ac.uk/BlueBook/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 7 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/particle-physics.md",

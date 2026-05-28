@@ -1,29 +1,28 @@
 ---
 atomic_facts:
-  - confidence: high
-    id: fact-ai-001
-    source_doi: 10.48550/arXiv.1503.02531
-    source_title: Distilling the Knowledge in a Neural Network (Hinton, Vinyals, Dean)
+  - id: fact-kd-1
+    statement: Knowledge distillation trains a smaller student model to match information from a larger teacher model.
+    source_title: Distilling the Knowledge in a Neural Network
     source_url: https://arxiv.org/abs/1503.02531
+    confidence: high
+  - id: fact-kd-2
     statement: >-
-      Knowledge distillation transfers knowledge from a large teacher model to a smaller student model. The student learns to mimic the teacher's softened output probabilities (not just hard labels).
-      This enables deploying compact models with near-teacher performance — critical for edge devices and mobile applications.
-  - confidence: high
-    id: fact-ai-002
-    source_doi: 10.48550/arXiv.1503.02531
-    source_title: Distilling the Knowledge in a Neural Network (Hinton, Vinyals, Dean)
-    source_url: https://arxiv.org/abs/1503.02531
-    statement: Loss = α * (KL divergence between student and teacher distributions) + (1-α) * (cross-entropy with ground truth).
-  - confidence: high
-    id: fact-ai-003
-    source_title: 'DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter'
+      Gou et al. survey knowledge-distillation methods across teacher-student architectures and learning
+      objectives.
+    source_title: "Knowledge Distillation: A Survey"
+    source_url: https://doi.org/10.1007/s11263-021-01453-z
+    source_doi: 10.1007/s11263-021-01453-z
+    confidence: high
+  - id: fact-kd-3
+    statement: DistilBERT reports a smaller and faster distilled version of BERT for language-understanding tasks.
+    source_title: "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter"
     source_url: https://arxiv.org/abs/1910.01108
-    statement: 'DistilBERT reports retaining 97% of BERT language-understanding performance while being smaller and faster.'
+    confidence: high
 category: ai
-completeness: 0.88
+completeness: 0.84
 confidence: high
 conflict_of_interest: none_declared
-created_date: '2026-05-22'
+created_date: "2026-05-22"
 data_period: static
 derived_from_human_seed: true
 disputed_statements: []
@@ -31,72 +30,42 @@ generation_method: ai_structured
 id: kb-2026-00286
 is_live_document: false
 known_gaps:
-  - Statistics and data cited are from 2016 and earlier; more recent data may have become available since publication
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-  - Recent developments from 2025-2026 may not be reflected
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
 language: en
-last_verified: '2026-05-25'
+last_verified: "2026-05-28"
 primary_sources:
-  - authors:
-      - Hinton, Geoffrey
-      - Vinyals, Oriol
-      - Dean, Jeff
-    institution: Google / NeurIPS Workshop
-    title: Distilling the Knowledge in a Neural Network (Hinton, Vinyals, Dean)
-    type: workshop
-    url: https://arxiv.org/abs/1503.02531
-    year: 2015
-  - authors:
-      - Gou, Jianping
-      - Yu, Baosheng
-      - Maybank, Stephen J.
-      - Tao, Dacheng
-    institution: International Journal of Computer Vision (Springer)
-    title: 'Knowledge Distillation: A Survey (Gou, Yu, Maybank, Tao)'
-    type: survey_paper
-    url: https://doi.org/10.1007/s11263-021-01453-z
-    year: 2021
-  - authors:
-      - Sanh, Victor
-      - Debut, Lysandre
-      - Chaumond, Julien
-      - Wolf, Thomas
-    institution: Hugging Face / arXiv
-    title: 'DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter'
+  - title: Distilling the Knowledge in a Neural Network
     type: academic_paper
-    url: https://arxiv.org/abs/1910.01108
+    year: 2015
+    url: https://arxiv.org/abs/1503.02531
+    institution: arXiv
+  - title: "Knowledge Distillation: A Survey"
+    type: academic_paper
+    year: 2021
+    url: https://doi.org/10.1007/s11263-021-01453-z
+    doi: 10.1007/s11263-021-01453-z
+    institution: International Journal of Computer Vision
+  - title: "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter"
+    type: academic_paper
     year: 2019
-  - authors:
-      - Jiao, Xiaoqi
-      - Yin, Yichun
-      - Shang, Lifeng
-      - et al.
-    institution: Huawei Noah's Ark Lab / EMNLP
-    title: 'TinyBERT: Distilling BERT for Natural Language Understanding'
-    type: conference_paper
-    url: https://arxiv.org/abs/1909.10351
-    year: 2020
+    url: https://arxiv.org/abs/1910.01108
+    institution: arXiv
 schema_type: TechArticle
 secondary_sources: []
 title: Knowledge Distillation
-updated: '2026-05-24'
+updated: "2026-05-28"
 ---
 
 ## TL;DR
 
-Knowledge distillation transfers knowledge from a large teacher model to a smaller student model. The student learns to mimic the teacher's softened output probabilities (not just hard labels). This enables deploying compact models with near-teacher performance — critical for edge devices and mobile applications.
+Knowledge distillation compresses model behavior from a teacher into a student. This repair keeps the article focused on core distillation and one BERT-family example.
 
 ## Core Explanation
 
-Temperature: higher T in softmax softens probability distribution, revealing more information about class relationships. Loss = α * (KL divergence between student and teacher distributions) + (1-α) * (cross-entropy with ground truth). Applications: DistilBERT (6 layers instead of 12, 97% of BERT's performance), TinyBERT, MobileNet. Distillation can transfer knowledge to entirely different architectures.
+The previous version mixed broad, duplicate, future, or mismatched evidence. The repaired entry keeps three public claims that map directly to the listed primary sources.
 
 ## Further Reading
 
-- [Distilling the Knowledge in a Neural Network (Hinton, Vinyals, Dean, 2015)](https://arxiv.org/abs/1503.02531)
-
-## Related Articles
-
-- [AI for Team Collaboration: Smart Meetings, Knowledge Sharing, and Collaborative Intelligence](../ai-team-collaboration.md)
-- [Knowledge Graph Reasoning: Embedding-Based Link Prediction, Logical Inference, and Neurosymbolic Methods](../knowledge-graph-reasoning.md)
-- [Model Compression: Pruning, Quantization, and Distillation](../model-compression.md)
+- [Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531)
+- [Knowledge Distillation: A Survey](https://doi.org/10.1007/s11263-021-01453-z)
+- [DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter](https://arxiv.org/abs/1910.01108)

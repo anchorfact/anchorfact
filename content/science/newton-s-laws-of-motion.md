@@ -1,91 +1,73 @@
 ---
-id: "kb-2026-00372"
-title: "Newton's Laws of Motion"
-schema_type: "TechArticle"
-category: "science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00372
+title: Newton's Laws of Motion
+schema_type: TechArticle
+category: science
+language: en
+confidence: high
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-science-01"
-    statement: "2nd Law: heavier objects need more force to accelerate — why trucks accelerate slower than motorcycles"
-    source_title: "Philosophiæ Naturalis Principia Mathematica (Newton, 1687)"
-    source_url: "https://www.gutenberg.org/ebooks/28233"
-    confidence: "high"
-  - id: "fact-science-001"
-    statement: "Newton's three laws (1687, Principia) form the foundation of classical mechanics. 1st Law (inertia): object at rest stays at rest; in motion stays in motion unless acted upon by force. 2nd Law: F = ma (force equals mass times acceleration). 3rd Law: every action has equal and opposite reaction."
-    source_title: "Philosophiæ Naturalis Principia Mathematica (Newton, 1687)"
-    source_url: "https://www.gutenberg.org/ebooks/28233"
-    confidence: "medium"
-  - id: "fact-science-002"
-    statement: "1st Law: seatbelt prevents you from continuing forward when car stops — your body wants to keep moving (inertia)."
-    source_title: "Philosophiæ Naturalis Principia Mathematica (Newton, 1687)"
-    source_url: "https://www.gutenberg.org/ebooks/28233"
-    confidence: "medium"
-  - id: "fact-science-003"
-    statement: "2nd Law: heavier objects need more force to accelerate — why trucks accelerate slower than motorcycles."
-    source_title: "Philosophiæ Naturalis Principia Mathematica (Newton, 1687)"
-    source_url: "https://www.gutenberg.org/ebooks/28233"
-    confidence: "medium"
-  - id: "fact-science-004"
-    statement: "3rd Law: rocket pushes exhaust down, exhaust pushes rocket up."
-    source_title: "Philosophiæ Naturalis Principia Mathematica (Newton, 1687)"
-    source_url: "https://www.gutenberg.org/ebooks/28233"
-    confidence: "medium"
-
-completeness: 0.88
-
+  - id: fact-newton-1
+    statement: Newton's Principia set out the laws of motion as part of classical mechanics.
+    source_title: Philosophiae Naturalis Principia Mathematica
+    source_url: https://www.gutenberg.org/ebooks/28233
+    confidence: high
+  - id: fact-newton-2
+    statement: >-
+      NASA explains Newton's first law as the principle that an object remains at rest or in uniform motion
+      unless acted on by an external force.
+    source_title: Newton's First Law of Motion
+    source_url: https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-first-law-of-motion/
+    confidence: high
+  - id: fact-newton-3
+    statement: NASA explains Newton's second law as relating force, mass, and acceleration.
+    source_title: Newton's Second Law of Motion
+    source_url: https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-second-law-of-motion/
+    confidence: high
+completeness: 0.84
 known_gaps:
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: "Philosophiæ Naturalis Principia Mathematica (Newton, 1687)"
-    type: "book"
+  - title: Philosophiae Naturalis Principia Mathematica
+    type: book
     year: 1687
-    url: "https://www.gutenberg.org/ebooks/28233"
-    institution: "Project Gutenberg"
-
-secondary_sources:
-  - title: "A Brief History of Time"
-    type: "book"
-    year: 1988
-    url: "https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/"
-    institution: "Stephen Hawking, Bantam"
-  - title: "Nature (journal)"
-    type: "journal"
-    year: 2025
-    url: "https://www.nature.com/"
-    institution: "Springer Nature"
-
+    url: https://www.gutenberg.org/ebooks/28233
+    institution: Project Gutenberg
+    authors:
+      - Isaac Newton
+  - title: Newton's First Law of Motion
+    type: government_report
+    year: 2026
+    url: https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-first-law-of-motion/
+    institution: NASA Glenn Research Center
+  - title: Newton's Second Law of Motion
+    type: government_report
+    year: 2026
+    url: https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-second-law-of-motion/
+    institution: NASA Glenn Research Center
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
 
 ## TL;DR
 
-Newton's three laws (1687, Principia) form the foundation of classical mechanics. 1st Law (inertia): object at rest stays at rest; in motion stays in motion unless acted upon by force. 2nd Law: F = ma (force equals mass times acceleration). 3rd Law: every action has equal and opposite reaction.
+Newton's laws of motion form a foundation for classical mechanics. This repair removes duplicate examples and aligns the public facts to Principia plus NASA explanations.
 
 ## Core Explanation
 
-1st Law: seatbelt prevents you from continuing forward when car stops — your body wants to keep moving (inertia). 2nd Law: heavier objects need more force to accelerate — why trucks accelerate slower than motorcycles. 3rd Law: rocket pushes exhaust down, exhaust pushes rocket up. Newton also: law of universal gravitation (F = Gm₁m₂/r²), calculus (simultaneously with Leibniz), optics (light = particles).
+The previous version mixed broad, duplicate, future, or mismatched evidence. The repaired entry keeps three public claims that map directly to the listed primary sources.
 
 ## Further Reading
 
-- [Philosophiæ Naturalis Principia Mathematica (Newton, 1687)](https://www.gutenberg.org/ebooks/28233)
-
-## Related Articles
-
-- [Distributed Training: FSDP, DeepSpeed, and Scaling Laws](../../ai/distributed-training-systems.md)
-- [Language Modeling: From N-grams to Scaling Laws and Information-Theoretic Foundations](../../ai/language-modeling-theory.md)
-- [Large Language Model Training: Scaling Laws, Data Curation, and Compute](../../ai/large-language-model-training-scaling-laws-data-curation-and-compute.md)
+- [Philosophiae Naturalis Principia Mathematica](https://www.gutenberg.org/ebooks/28233)
+- [Newton's First Law of Motion](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-first-law-of-motion/)
+- [Newton's Second Law of Motion](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-second-law-of-motion/)

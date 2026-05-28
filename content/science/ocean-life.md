@@ -1,91 +1,73 @@
 ---
-id: "kb-2026-00496"
-title: "Ocean Life"
-schema_type: "TechArticle"
-category: "science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00496
+title: Ocean Life
+schema_type: TechArticle
+category: science
+language: en
+confidence: high
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-science-01"
-    statement: "Deep ocean: largest ecosystem on Earth, largely unexplored"
-    source_title: "The Biology of the Deep Ocean (Peter Herring)"
-    source_url: "https://global.oup.com/academic/product/the-biology-of-the-deep-ocean-9780198549567"
-    confidence: "high"
-  - id: "fact-science-001"
-    statement: "Oceans cover 71% of Earth's surface and contain 97% of its water. Average depth: 3,688m. Zones: sunlight (0-200m, photosynthesis), twilight (200-1,000m), midnight (1,000-4,000m), abyssal, hadal (trenches, >6,000m). Deep ocean: largest ecosystem on Earth, largely unexplored. Marine life ranges from microscopic plankton to blue whales (largest animal"
-    source_title: "The Biology of the Deep Ocean (Peter Herring)"
-    source_url: "https://global.oup.com/academic/product/the-biology-of-the-deep-ocean-9780198549567"
-    confidence: "medium"
-  - id: "fact-science-002"
-    statement: "Coral reefs: biodiversity hotspots (25% of marine species in <0.1% of ocean)."
-    source_title: "The Biology of the Deep Ocean (Peter Herring)"
-    source_url: "https://global.oup.com/academic/product/the-biology-of-the-deep-ocean-9780198549567"
-    confidence: "medium"
-  - id: "fact-science-003"
-    statement: "Bioluminescence: 90% of deep-sea organisms produce light."
-    source_title: "The Biology of the Deep Ocean (Peter Herring)"
-    source_url: "https://global.oup.com/academic/product/the-biology-of-the-deep-ocean-9780198549567"
-    confidence: "medium"
-  - id: "fact-science-004"
-    statement: "Hydrothermal vents (1977 discovery): life powered by chemosynthesis (not sunlight)."
-    source_title: "The Biology of the Deep Ocean (Peter Herring)"
-    source_url: "https://global.oup.com/academic/product/the-biology-of-the-deep-ocean-9780198549567"
-    confidence: "medium"
-
+  - id: fact-ocean-life-1
+    statement: NOAA states that the ocean holds about 97 percent of Earth's water.
+    source_title: How much water is in the ocean?
+    source_url: https://oceanservice.noaa.gov/facts/oceanwater.html
+    confidence: high
+  - id: fact-ocean-life-2
+    statement: >-
+      NOAA describes coral reefs as supporting a large share of marine biodiversity despite occupying a small
+      area of the ocean.
+    source_title: How much of the ocean is coral reef?
+    source_url: https://oceanservice.noaa.gov/facts/coral_species.html
+    confidence: high
+  - id: fact-ocean-life-3
+    statement: >-
+      NOAA describes hydrothermal vents as seafloor springs where heated, mineral-rich water supports
+      distinctive ecosystems.
+    source_title: What is a hydrothermal vent?
+    source_url: https://oceanexplorer.noaa.gov/facts/vents.html
+    confidence: high
 known_gaps:
-  - "Statistics and data cited are from 2020 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-  - "Climate and environmental data may have been updated by more recent IPCC or scientific assessments"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: "The Biology of the Deep Ocean (Peter Herring)"
-    type: "book"
-    year: 2001
-    url: "https://global.oup.com/academic/product/the-biology-of-the-deep-ocean-9780198549567"
-    institution: "Oxford University Press"
-
-secondary_sources:
-  - title: "Biology (Campbell, 12th Edition)"
-    type: "textbook"
-    year: 2020
-    url: "https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058"
-    institution: "Pearson Education"
-  - title: "National Geographic: Science & Exploration"
-    type: "reference"
-    year: 2024
-    url: "https://www.nationalgeographic.com/science"
-    institution: "National Geographic Society"
-
+  - title: How much water is in the ocean?
+    type: government_report
+    year: 2026
+    url: https://oceanservice.noaa.gov/facts/oceanwater.html
+    institution: NOAA National Ocean Service
+  - title: How much of the ocean is coral reef?
+    type: government_report
+    year: 2026
+    url: https://oceanservice.noaa.gov/facts/coral_species.html
+    institution: NOAA National Ocean Service
+  - title: What is a hydrothermal vent?
+    type: government_report
+    year: 2026
+    url: https://oceanexplorer.noaa.gov/facts/vents.html
+    institution: NOAA Ocean Exploration
+secondary_sources: []
+completeness: 0.84
+updated: "2026-05-28"
 ---
-
-
 
 ## TL;DR
 
-Oceans cover 71% of Earth's surface and contain 97% of its water. Average depth: 3,688m. Zones: sunlight (0-200m, photosynthesis), twilight (200-1,000m), midnight (1,000-4,000m), abyssal, hadal (trenches, >6,000m). Deep ocean: largest ecosystem on Earth, largely unexplored. Marine life ranges from microscopic plankton to blue whales (largest animal ever, 30m, 200 tons).
+Ocean life spans surface waters, reefs, deep-sea habitats, and chemically powered ecosystems. This repair narrows public claims to three NOAA-backed statements.
 
 ## Core Explanation
 
-Phytoplankton: produce 50-80% of Earth's oxygen. Coral reefs: biodiversity hotspots (25% of marine species in <0.1% of ocean). Bioluminescence: 90% of deep-sea organisms produce light. Pressure: increases 1 atmosphere per 10m depth. Hydrothermal vents (1977 discovery): life powered by chemosynthesis (not sunlight). Top predator: orca (killer whale). Marine snow: organic material falling from surface — deep sea food source.
+The previous version mixed broad, duplicate, future, or mismatched evidence. The repaired entry keeps three public claims that map directly to the listed primary sources.
 
 ## Further Reading
 
-- [The Biology of the Deep Ocean (Peter Herring)](https://global.oup.com/academic/product/the-biology-of-the-deep-ocean-9780198549567)
-
-## Related Articles
-
-- [AI for Ocean Monitoring: Marine Life Detection, Plastic Pollution Tracking, and Oceanographic AI](../../ai/ai-for-ocean-monitoring.md)
-- [Software Development Life Cycle (SDLC)](../../computer-science/software-development-life-cycle-sdlc.md)
-- [Ocean Currents: The Global Conveyor Belt](../../geography/ocean-currents-the-global-conveyor-belt.md)
+- [How much water is in the ocean?](https://oceanservice.noaa.gov/facts/oceanwater.html)
+- [How much of the ocean is coral reef?](https://oceanservice.noaa.gov/facts/coral_species.html)
+- [What is a hydrothermal vent?](https://oceanexplorer.noaa.gov/facts/vents.html)

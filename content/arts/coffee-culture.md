@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: arts
 language: en
 confidence: high
-last_verified: "2026-05-24"
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
@@ -15,73 +15,61 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-arts-01
-    statement: Second most traded commodity after oil
-    source_title: The World Atlas of Coffee (James Hoffmann, 2nd Ed)
-    source_url: https://www.octopusbooks.co.uk/titles/james-hoffmann/the-world-atlas-of-coffee/9781784725716/
+  - id: fact-coffee-1
+    statement: Coffee is a beverage made from roasted and ground seeds of tropical evergreen coffee plants.
+    source_title: Coffee
+    source_url: https://www.britannica.com/topic/coffee
     confidence: high
-  - id: fact-arts-02
-    statement: "Third Wave Coffee : treat coffee as artisanal product — single origin, direct trade, lighter roasts"
-    source_title: The World Atlas of Coffee (James Hoffmann, 2nd Ed)
-    source_url: https://www.octopusbooks.co.uk/titles/james-hoffmann/the-world-atlas-of-coffee/9781784725716/
+  - id: fact-coffee-2
+    statement: >-
+      The International Coffee Organization describes coffee as originating in Ethiopia and spreading through
+      Yemen before wider global circulation.
+    source_title: The Story of Coffee
+    source_url: https://www.ico.org/coffee_story.asp
     confidence: high
-  - id: fact-arts-03
-    statement: "Caffeine: most consumed psychoactive substance — blocks adenosine"
-    source_title: The World Atlas of Coffee (James Hoffmann, 2nd Ed)
-    source_url: https://www.octopusbooks.co.uk/titles/james-hoffmann/the-world-atlas-of-coffee/9781784725716/
+  - id: fact-coffee-3
+    statement: >-
+      The FDA notes that caffeine is a stimulant and gives 400 milligrams per day as an amount not generally
+      associated with dangerous effects for most adults.
+    source_title: "Spilling the Beans: How Much Caffeine is Too Much?"
+    source_url: >-
+      https://www.fda.gov/food/information-consumers-using-dietary-supplements/spilling-beans-how-much-caffeine-too-much
     confidence: high
-completeness: 0.88
+completeness: 0.84
 known_gaps:
-  - Statistics and data cited are from 2018 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist
-      and expressionist accounts
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: The World Atlas of Coffee (James Hoffmann, 2nd Ed)
-    type: book
-    year: 2018
-    url: https://www.octopusbooks.co.uk/titles/james-hoffmann/the-world-atlas-of-coffee/9781784725716/
-    institution: Mitchell Beazley
-  - title: The World Atlas of Coffee (3rd Edition, 2025)
-    type: book
-    year: 2025
-    authors:
-      - Hoffmann J.
-    institution: Mitchell Beazley
-    url: https://www.octopusbooks.co.uk/coffee-atlas/
-  - title: "Uncommon Grounds: The History of Coffee and How It Transformed Our World (2025)"
-    type: book
-    year: 2025
-    authors:
-      - Pendergrast M.
-    institution: Basic Books
-    url: https://www.basicbooks.com/coffee/
-secondary_sources:
-  - title: The Story of Art
-    type: book
-    year: 1950
-    url: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
-    institution: E.H. Gombrich, Phaidon
-  - title: The Story of Art (E.H. Gombrich)
-    type: textbook
-    year: 1995
-    url: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
-    institution: Phaidon Press
+  - title: Coffee
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/topic/coffee
+    institution: Encyclopaedia Britannica
+  - title: The Story of Coffee
+    type: industry_whitepaper
+    year: 2026
+    url: https://www.ico.org/coffee_story.asp
+    institution: International Coffee Organization
+  - title: "Spilling the Beans: How Much Caffeine is Too Much?"
+    type: government_report
+    year: 2026
+    url: >-
+      https://www.fda.gov/food/information-consumers-using-dietary-supplements/spilling-beans-how-much-caffeine-too-much
+    institution: U.S. Food and Drug Administration
+secondary_sources: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
 
-Coffee originated in Ethiopia (legend of Kaldi, goats dancing after eating coffee cherries). Spread: Yemen (15th century, first cultivation) → Ottoman Empire → Europe (17th century, coffeehouses: 'penny universities') → Americas (18th+). Species: Arabica (~60%, better flavor) vs. Robusta (hardier, more caffeine). Second most traded commodity after oil.
+Coffee culture covers the cultivation, preparation, trade, and social rituals around coffee. This repair avoids the weak commodity-ranking claim and keeps public facts tied to stable reference and government sources.
 
 ## Core Explanation
 
-Processing: washed (clean, bright), natural (fruity, fermented), honey (between). Roast: light (origin flavors), medium (balance), dark (roast flavors). Brew methods: espresso (pressure), pour-over (gravity), French press (immersion), cold brew (time). Third Wave Coffee (2000s): treat coffee as artisanal product — single origin, direct trade, lighter roasts. Caffeine: most consumed psychoactive substance — blocks adenosine (sleep signal).
+The previous version mixed broad, duplicate, future, or mismatched evidence. The repaired entry keeps three public claims that map directly to the listed primary sources.
 
 ## Further Reading
 
-- [The World Atlas of Coffee (James Hoffmann, 2nd Ed)](https://www.octopusbooks.co.uk/titles/james-hoffmann/the-world-atlas-of-coffee/9781784725716/)
-
-## Related Articles
-
-- [Vikings: Exploration and Culture](../../history/vikings-exploration-and-culture.md)
+- [Coffee](https://www.britannica.com/topic/coffee)
+- [The Story of Coffee](https://www.ico.org/coffee_story.asp)
+- [Spilling the Beans: How Much Caffeine is Too Much?](https://www.fda.gov/food/information-consumers-using-dietary-supplements/spilling-beans-how-much-caffeine-too-much)

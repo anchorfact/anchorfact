@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T01:28:04.161Z
+Generated: 2026-05-28T01:55:22.380Z
 
-Snapshot: 555 public / 445 draft / 1532 claims.
+Snapshot: 555 public / 445 draft / 1524 claims.
 
 ## Summary
 
@@ -13,7 +13,7 @@ This is a risk-weighted audit sample of public AnchorFact articles. It is intend
 - Articles with at least one fail check: 0
 - High-confidence samples needing review: 0
 - Claim-evidence failures: 0
-- Recommendations: keep_public: 4, downgrade_confidence: 0, repair_sources: 16, move_to_draft: 0
+- Recommendations: keep_public: 6, downgrade_confidence: 0, repair_sources: 14, move_to_draft: 0
 
 ## Method
 
@@ -23,96 +23,51 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 
 | # | bucket | slug | confidence | coverage | claims | checks | recommendation |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | low_verified_coverage | `arts/coffee-culture` | low | 1/3 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 2 | low_verified_coverage | `arts/fashion-history` | low | 1/3 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 3 | low_verified_coverage | `business/marketing-fundamentals` | low | 2/6 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 4 | low_verified_coverage | `history/industrial-revolution` | low | 2/6 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 5 | low_verified_coverage | `history/mesopotamia` | low | 1/3 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 6 | low_verified_coverage | `history/mughal-empire` | low | 1/3 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 7 | low_verified_coverage | `history/world-war-i` | low | 1/3 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 8 | low_verified_coverage | `science/organic-chemistry` | low | 2/6 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 1 | low_verified_coverage | `sports/swimming-training` | medium | 2/6 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 2 | low_verified_coverage | `history/american-revolution` | low | 3/8 (37.5%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 3 | low_verified_coverage | `health/yoga-practice` | low | 2/5 (40.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 4 | low_verified_coverage | `history/world-war-ii` | low | 2/5 (40.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 5 | low_verified_coverage | `self-improvement/focus-techniques` | medium | 4/10 (40.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 6 | low_verified_coverage | `science/big-bang-theory` | medium | 3/7 (42.9%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 7 | low_verified_coverage | `science/data-science-fundamentals` | low | 3/7 (42.9%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 8 | low_verified_coverage | `self-improvement/communication-skills` | medium | 1/9 (11.1%) | 3 | source=weak; claim=pass; summary=pass | repair_sources |
 | 9 | high_confidence | `ai/gpt-models` | high | 4/4 (100.0%) | 6 | source=pass; claim=pass; summary=pass | keep_public |
 | 10 | high_confidence | `ai/agentic-ai` | high | 2/2 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | high_confidence | `ai/ai-in-healthcare` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 12 | high_confidence | `ai/ai-red-teaming-and-safety` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 13 | medium_capped_claims | `ai/embodied-ai-and-robotics` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 14 | medium_capped_claims | `ai/graph-neural-networks` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 15 | medium_capped_claims | `ai/image-segmentation` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 16 | medium_capped_claims | `ai/knowledge-distillation` | medium | 4/4 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 17 | low_confidence_public | `history/samurai-history` | low | 2/3 (66.7%) | 5 | source=weak; claim=weak; summary=pass | repair_sources |
-| 18 | low_confidence_public | `science/evolution-by-natural-selection` | low | 1/1 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
-| 19 | low_confidence_public | `science/newton-s-laws-of-motion` | low | 1/1 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
-| 20 | low_confidence_public | `science/ocean-life` | low | 1/1 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
+| 13 | medium_capped_claims | `ai/latent-diffusion-models` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 14 | medium_capped_claims | `ai/lora` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 15 | medium_capped_claims | `ai/loss-functions` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 16 | medium_capped_claims | `ai/multi-modal-learning` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 17 | low_confidence_public | `self-improvement/productivity-systems` | low | 2/2 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
+| 18 | low_confidence_public | `sports/marathon-running` | low | 1/1 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
+| 19 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 20 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 
 ## Article Findings
 
-### 1. Coffee Culture
+### 1. Swimming Training and Stroke Techniques
 
-- canonical slug: `arts/coffee-culture`
-- canonical URL: https://anchorfact.org/arts/coffee-culture/
+- canonical slug: `sports/swimming-training`
+- canonical URL: https://anchorfact.org/sports/swimming-training/
 - bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/3 (33.3%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 2. Fashion History
-
-- canonical slug: `arts/fashion-history`
-- canonical URL: https://anchorfact.org/arts/fashion-history/
-- bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/3 (33.3%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 3. Marketing: Strategy, Consumer Behavior, and Digital Channels
-
-- canonical slug: `business/marketing-fundamentals`
-- canonical URL: https://anchorfact.org/business/marketing-fundamentals/
-- bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
+- confidence: `medium` (verified_sources, score 0.705)
 - verified source coverage: 2/6 (33.3%)
 - claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification, low_verified_coverage
+- quality reasons: generic_source_homepage, claim_evidence_weak, partial_source_verification, low_verified_coverage
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
+- hygiene flags: claim_evidence_weak, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 4. Industrial Revolution
+### 2. American Revolution
 
-- canonical slug: `history/industrial-revolution`
-- canonical URL: https://anchorfact.org/history/industrial-revolution/
+- canonical slug: `history/american-revolution`
+- canonical URL: https://anchorfact.org/history/american-revolution/
 - bucket: `low_verified_coverage`
 - confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 2/6 (33.3%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 5. Mesopotamia
-
-- canonical slug: `history/mesopotamia`
-- canonical URL: https://anchorfact.org/history/mesopotamia/
-- bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/3 (33.3%)
+- verified source coverage: 3/8 (37.5%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
 - source-title match: `weak`
@@ -121,13 +76,28 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 6. Mughal Empire
+### 3. Yoga Practice
 
-- canonical slug: `history/mughal-empire`
-- canonical URL: https://anchorfact.org/history/mughal-empire/
+- canonical slug: `health/yoga-practice`
+- canonical URL: https://anchorfact.org/health/yoga-practice/
 - bucket: `low_verified_coverage`
 - confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/3 (33.3%)
+- verified source coverage: 2/5 (40.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 4. World War II
+
+- canonical slug: `history/world-war-ii`
+- canonical URL: https://anchorfact.org/history/world-war-ii/
+- bucket: `low_verified_coverage`
+- confidence: `low` (verified_sources, score 0.475)
+- verified source coverage: 2/5 (40.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: partial_source_verification, low_verified_coverage
 - source-title match: `weak`
@@ -136,34 +106,64 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 7. World War I
+### 5. Focus and Concentration Techniques
 
-- canonical slug: `history/world-war-i`
-- canonical URL: https://anchorfact.org/history/world-war-i/
+- canonical slug: `self-improvement/focus-techniques`
+- canonical URL: https://anchorfact.org/self-improvement/focus-techniques/
 - bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/3 (33.3%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 8. Organic Chemistry: Carbon Compounds and Reactions
-
-- canonical slug: `science/organic-chemistry`
-- canonical URL: https://anchorfact.org/science/organic-chemistry/
-- bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 2/6 (33.3%)
+- confidence: `medium` (verified_sources, score 0.705)
+- verified source coverage: 4/10 (40.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: claim_evidence_weak, partial_source_verification, low_verified_coverage
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
+
+### 6. Big Bang Theory
+
+- canonical slug: `science/big-bang-theory`
+- canonical URL: https://anchorfact.org/science/big-bang-theory/
+- bucket: `low_verified_coverage`
+- confidence: `medium` (verified_sources, score 0.87)
+- verified source coverage: 3/7 (42.9%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage, high_confidence_evidence_gap
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement, generic_source_homepage
+- recommendation: `repair_sources`
+
+### 7. Data Science: Methods, Tools, and Best Practices
+
+- canonical slug: `science/data-science-fundamentals`
+- canonical URL: https://anchorfact.org/science/data-science-fundamentals/
+- bucket: `low_verified_coverage`
+- confidence: `low` (verified_sources, score 0.475)
+- verified source coverage: 3/7 (42.9%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, claim_evidence_weak, partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak, generic_source_homepage
+- recommendation: `repair_sources`
+
+### 8. Communication Skills
+
+- canonical slug: `self-improvement/communication-skills`
+- canonical URL: https://anchorfact.org/self-improvement/communication-skills/
+- bucket: `low_verified_coverage`
+- confidence: `medium` (verified_sources, score 0.685)
+- verified source coverage: 1/9 (11.1%)
+- claims: 3 total, 0 capped, 0 missing evidence
+- quality reasons: partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
 ### 9. GPT (Generative Pre-trained Transformer) Model Family
@@ -226,42 +226,12 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 13. Embodied AI: Robots That Learn from the Physical World
+### 13. Diffusion Models in Depth: From DDPM to Stable Diffusion
 
-- canonical slug: `ai/embodied-ai-and-robotics`
-- canonical URL: https://anchorfact.org/ai/embodied-ai-and-robotics/
+- canonical slug: `ai/latent-diffusion-models`
+- canonical URL: https://anchorfact.org/ai/latent-diffusion-models/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.71)
-- verified source coverage: 1/2 (50.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 14. Graph Neural Networks: Message Passing and Applications
-
-- canonical slug: `ai/graph-neural-networks`
-- canonical URL: https://anchorfact.org/ai/graph-neural-networks/
-- bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.67)
-- verified source coverage: 1/2 (50.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
-- recommendation: `repair_sources`
-
-### 15. Image Segmentation: From U-Net to SAM
-
-- canonical slug: `ai/image-segmentation`
-- canonical URL: https://anchorfact.org/ai/image-segmentation/
-- bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.71)
+- confidence: `medium` (verified_sources, score 0.69)
 - verified source coverage: 1/2 (50.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: partial_source_verification
@@ -271,72 +241,72 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: duplicate_sources
 - recommendation: `repair_sources`
 
-### 16. Knowledge Distillation
+### 14. LoRA (Low-Rank Adaptation)
 
-- canonical slug: `ai/knowledge-distillation`
-- canonical URL: https://anchorfact.org/ai/knowledge-distillation/
+- canonical slug: `ai/lora`
+- canonical URL: https://anchorfact.org/ai/lora/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.8)
-- verified source coverage: 4/4 (100.0%)
+- confidence: `medium` (verified_sources, score 0.725)
+- verified source coverage: 1/2 (50.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 17. Samurai History
-
-- canonical slug: `history/samurai-history`
-- canonical URL: https://anchorfact.org/history/samurai-history/
-- bucket: `low_confidence_public`
-- confidence: `low` (verified_sources, score 0.55)
-- verified source coverage: 2/3 (66.7%)
-- claims: 5 total, 5 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification
+- quality reasons: partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement, generic_source_homepage
+- hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 18. Evolution by Natural Selection
+### 15. Loss Functions in Machine Learning
 
-- canonical slug: `science/evolution-by-natural-selection`
-- canonical URL: https://anchorfact.org/science/evolution-by-natural-selection/
-- bucket: `low_confidence_public`
-- confidence: `low` (verified_sources, score 0.43)
-- verified source coverage: 1/1 (100.0%)
-- claims: 5 total, 5 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
+- canonical slug: `ai/loss-functions`
+- canonical URL: https://anchorfact.org/ai/loss-functions/
+- bucket: `medium_capped_claims`
+- confidence: `medium` (verified_sources, score 0.67)
+- verified source coverage: 1/2 (50.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, claim_evidence_weak, partial_source_verification
+- source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: none
+- hygiene flags: claim_evidence_weak, duplicate_sources, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 19. Newton's Laws of Motion
+### 16. Multi-Modal Machine Learning
 
-- canonical slug: `science/newton-s-laws-of-motion`
-- canonical URL: https://anchorfact.org/science/newton-s-laws-of-motion/
+- canonical slug: `ai/multi-modal-learning`
+- canonical URL: https://anchorfact.org/ai/multi-modal-learning/
+- bucket: `medium_capped_claims`
+- confidence: `medium` (verified_sources, score 0.71)
+- verified source coverage: 1/2 (50.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
+
+### 17. Productivity Systems
+
+- canonical slug: `self-improvement/productivity-systems`
+- canonical URL: https://anchorfact.org/self-improvement/productivity-systems/
 - bucket: `low_confidence_public`
-- confidence: `low` (verified_sources, score 0.43)
-- verified source coverage: 1/1 (100.0%)
+- confidence: `low` (verified_sources, score 0.51)
+- verified source coverage: 2/2 (100.0%)
 - claims: 5 total, 5 capped, 0 missing evidence
 - quality reasons: generic_source_homepage
 - source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement, generic_source_homepage
+- hygiene flags: generic_source_homepage
 - recommendation: `repair_sources`
 
-### 20. Ocean Life
+### 18. Marathon Running
 
-- canonical slug: `science/ocean-life`
-- canonical URL: https://anchorfact.org/science/ocean-life/
+- canonical slug: `sports/marathon-running`
+- canonical URL: https://anchorfact.org/sports/marathon-running/
 - bucket: `low_confidence_public`
-- confidence: `low` (verified_sources, score 0.43)
+- confidence: `low` (verified_sources, score 0.45)
 - verified source coverage: 1/1 (100.0%)
 - claims: 5 total, 5 capped, 0 missing evidence
 - quality reasons: none
@@ -345,6 +315,36 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - title-summary accuracy: `pass`
 - hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
+
+### 19. Film Genres
+
+- canonical slug: `arts/film-genres`
+- canonical URL: https://anchorfact.org/arts/film-genres/
+- bucket: `low_confidence_public`
+- confidence: `low` (verified_sources, score 0.47)
+- verified source coverage: 1/1 (100.0%)
+- claims: 5 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
+
+### 20. World Literature
+
+- canonical slug: `arts/world-literature`
+- canonical URL: https://anchorfact.org/arts/world-literature/
+- bucket: `low_confidence_public`
+- confidence: `low` (verified_sources, score 0.58)
+- verified source coverage: 2/2 (100.0%)
+- claims: 5 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
 
 ## Rule Calibration
 

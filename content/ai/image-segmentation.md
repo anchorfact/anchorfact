@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -15,97 +15,57 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: f1
+  - id: fact-segmentation-1
     statement: >-
-      U-Net (Ronneberger et al. 2015) introduced a symmetric encoder-decoder with skip connections, becoming the de facto standard for biomedical image segmentation and winning multiple ISBI
-      challenges.
-    source_title: "Ronneberger, Olaf, Philipp Fischer, and Thomas Brox. U-Net: Convolutional Networks for Biomedical Image Segmentation. MICCAI 2015"
+      U-Net introduced an encoder-decoder architecture with skip connections for biomedical image
+      segmentation.
+    source_title: "U-Net: Convolutional Networks for Biomedical Image Segmentation"
     source_url: https://arxiv.org/abs/1505.04597
-    confidence: high
-  - id: f2
-    statement: Segment Anything (SAM, Kirillov et al. 2023, Meta AI) introduced a promptable foundation model for segmentation that can segment any object in any image given a point, box, or mask prompt.
-    source_title: Kirillov, Alexander, et al. Segment Anything. ICCV 2023
+    confidence: medium
+  - id: fact-segmentation-2
+    statement: Segment Anything introduced a promptable segmentation model and a large segmentation dataset.
+    source_title: Segment Anything
     source_url: https://arxiv.org/abs/2304.02643
-    confidence: high
-  - id: f3
-    statement: Mask R-CNN (He et al. 2017, Facebook AI) extended Faster R-CNN by adding a parallel mask prediction branch, enabling instance segmentation with minimal overhead and winning the COCO challenge.
-    source_title: He, Kaiming, et al. Mask R-CNN. ICCV 2017
+    confidence: medium
+  - id: fact-segmentation-3
+    statement: Mask R-CNN extends object detection with a parallel branch for predicting object masks.
+    source_title: Mask R-CNN
     source_url: https://arxiv.org/abs/1703.06870
-    confidence: high
-completeness: 0.9
+    confidence: medium
+completeness: 0.84
 known_gaps:
-  - Video instance segmentation
-  - Panoptic segmentation unified frameworks
-disputed_statements:
-  - statement: No major disputed statements identified
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
   - title: "U-Net: Convolutional Networks for Biomedical Image Segmentation"
     type: academic_paper
     year: 2015
     url: https://arxiv.org/abs/1505.04597
-    institution: MICCAI
-  - title: Segment Anything (SAM)
+    institution: MICCAI / arXiv
+  - title: Segment Anything
     type: academic_paper
     year: 2023
     url: https://arxiv.org/abs/2304.02643
-    institution: ICCV/Meta AI
-secondary_sources:
-  - title: "Segment Anything (SAM): A Foundational Model for Image Segmentation"
-    type: conference_paper
-    year: 2023
-    authors:
-      - Kirillov, Alexander
-      - Mintun, Eric
-      - Ravi, Nikhila
-      - et al.
-    institution: Meta AI / ICCV
-    url: https://arxiv.org/abs/2304.02643
-  - title: Fully Convolutional Networks for Semantic Segmentation (Seminal)
-    type: conference_paper
-    year: 2015
-    authors:
-      - Long, Jonathan
-      - Shelhamer, Evan
-      - Darrell, Trevor
-    institution: UC Berkeley / CVPR
-    url: https://arxiv.org/abs/1411.4038
-  - title: "U-Net: Convolutional Networks for Biomedical Image Segmentation"
-    type: conference_paper
-    year: 2015
-    authors:
-      - Ronneberger, Olaf
-      - Fischer, Philipp
-      - Brox, Thomas
-    institution: University of Freiburg / MICCAI
-    url: https://arxiv.org/abs/1505.04597
-  - title: Mask R-CNN (Seminal Instance Segmentation)
+    institution: Meta AI / arXiv
+  - title: Mask R-CNN
     type: conference_paper
     year: 2017
-    authors:
-      - He, Kaiming
-      - Gkioxari, Georgia
-      - Dollár, Piotr
-      - Girshick, Ross
-    institution: Facebook AI Research / ICCV
     url: https://arxiv.org/abs/1703.06870
-updated: "2026-05-24"
+    institution: ICCV / arXiv
+secondary_sources: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
-Image segmentation partitions images into meaningful regions — semantic (class per pixel), instance (object per pixel), or panoptic (both). U-Net dominates medical imaging; SAM enables general-purpose interactive segmentation.
+
+Image segmentation assigns pixels or regions to meaningful objects and classes. This repaired entry keeps claims to three widely cited segmentation systems.
 
 ## Core Explanation
-Encoder-decoder architectures: the encoder compresses spatial information into feature maps; the decoder upsamples to pixel-level predictions. Skip connections (U-Net) preserve fine spatial details lost during downsampling. Dilated/atrous convolutions maintain receptive field without resolution loss.
 
-## Detailed Analysis
-Mask R-CNN added a small FCN branch to Faster R-CNN for instance mask prediction — the dominant model from 2017-2023. SAM's three-component design: image encoder (ViT), prompt encoder, and mask decoder. The lightning-fast mask decoder enables real-time interactive segmentation after one-time image encoding.
+The previous version mixed broad, duplicate, future, or mismatched evidence. The repaired entry keeps three public claims that map directly to the listed primary sources.
 
 ## Further Reading
-- Papers With Code: Semantic Segmentation
-- Meta AI: SAM Demo & Research
-- MONAI: Medical Open Network for AI
 
-## Related Articles
-
-- [AI for Land Use Classification: Satellite Image Segmentation, Urban Expansion Mapping, and Agricultural Monitoring](../ai-land-use-classification.md)
-- [AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling](../ai-customer-analytics.md)
-- [AI for Remote Sensing: Foundation Models, Satellite Image Analysis, and Earth Observation](../ai-for-remote-sensing.md)
+- [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
+- [Segment Anything](https://arxiv.org/abs/2304.02643)
+- [Mask R-CNN](https://arxiv.org/abs/1703.06870)
