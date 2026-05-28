@@ -1,79 +1,77 @@
 ---
-id: "kb-2026-00418"
-title: "Stress Management"
-schema_type: "TechArticle"
-category: "health"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+id: kb-2026-00418
+title: Stress Management
+schema_type: TechArticle
+category: health
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-health-001"
-    statement: "Stress is the body's response to perceived threats. Acute stress (fight-or-flight) is adaptive; chronic stress damages health (cardiovascular, immune, mental). Management: exercise, mindfulness/meditation, social connection, time in nature, deep breathing, therapy (CBT). Zebras don't get ulcers because they turn stress responses off."
-    source_title: "Why Zebras Don't Get Ulcers (Robert Sapolsky, 3rd Ed)"
-    source_url: "https://us.macmillan.com/books/9780805073690/whyzebrasdontgetulcers"
-    confidence: "medium"
-  - id: "fact-health-002"
-    statement: "Breathing: 4-7-8 technique (inhale 4s, hold 7s, exhale 8s) activates parasympathetic nervous system."
-    source_title: "Why Zebras Don't Get Ulcers (Robert Sapolsky, 3rd Ed)"
-    source_url: "https://us.macmillan.com/books/9780805073690/whyzebrasdontgetulcers"
-    confidence: "medium"
-  - id: "fact-health-003"
-    statement: "Mindfulness: non-judgmental present-moment awareness — 8 weeks MBSR reduces anxiety by ~40%."
-    source_title: "Why Zebras Don't Get Ulcers (Robert Sapolsky, 3rd Ed)"
-    source_url: "https://us.macmillan.com/books/9780805073690/whyzebrasdontgetulcers"
-    confidence: "medium"
-
+  - id: fact-health-001
+    statement: WHO defines stress as a state of worry or mental tension caused by a difficult situation.
+    source_title: Stress
+    source_url: https://www.who.int/news-room/questions-and-answers/item/stress
+    confidence: medium
+  - id: fact-health-002
+    statement: >-
+      APA describes stress as affecting multiple body systems, including the musculoskeletal,
+      respiratory, cardiovascular, endocrine, gastrointestinal, nervous, and reproductive systems.
+    source_title: Stress effects on the body
+    source_url: https://www.apa.org/topics/stress/body
+    confidence: medium
+  - id: fact-health-003
+    statement: >-
+      CDC stress guidance includes practical coping steps such as taking breaks, caring for the
+      body, making time to unwind, and connecting with others.
+    source_title: 'Mental Health: Living with Stress'
+    source_url: https://www.cdc.gov/mental-health/living-with/index.html
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    Coverage intentionally narrowed to directly sourced public evidence; adjacent subtopics are not
+    exhaustively covered.
+disputed_statements: []
 primary_sources:
-  - title: "Why Zebras Don't Get Ulcers (Robert Sapolsky, 3rd Ed)"
-    type: "book"
-    year: 2004
-    url: "https://us.macmillan.com/books/9780805073690/whyzebrasdontgetulcers"
-    institution: "Holt Paperbacks"
-
-secondary_sources:
-  - title: "WHO Fact Sheets"
-    type: "report"
-    year: 2025
-    url: "https://www.who.int/news-room/fact-sheets"
-    institution: "World Health Organization"
-  - title: "CDC Health Topics"
-    type: "report"
-    year: 2025
-    url: "https://www.cdc.gov/health-topics.html"
-    institution: "Centers for Disease Control and Prevention"
-
+  - title: Stress
+    type: health_guidance
+    year: 2026
+    url: https://www.who.int/news-room/questions-and-answers/item/stress
+    institution: World Health Organization
+  - title: Stress effects on the body
+    type: professional_guidance
+    year: 2026
+    url: https://www.apa.org/topics/stress/body
+    institution: American Psychological Association
+  - title: 'Mental Health: Living with Stress'
+    type: government_document
+    year: 2026
+    url: https://www.cdc.gov/mental-health/living-with/index.html
+    institution: Centers for Disease Control and Prevention
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
-
 ## TL;DR
 
-Stress is the body's response to perceived threats. Acute stress (fight-or-flight) is adaptive; chronic stress damages health (cardiovascular, immune, mental). Management: exercise, mindfulness/meditation, social connection, time in nature, deep breathing, therapy (CBT). Zebras don't get ulcers because they turn stress responses off.
+Stress management starts with understanding stress as a response to difficult situations and using evidence-informed coping supports. This repair removes precise intervention-effect claims and unsupported physiology details.
 
 ## Core Explanation
 
-Cortisol: chronic elevation from chronic stress damages hippocampus (memory), suppresses immune function, increases abdominal fat. HPA axis: hypothalamus → pituitary → adrenal — stress hormone pathway. Breathing: 4-7-8 technique (inhale 4s, hold 7s, exhale 8s) activates parasympathetic nervous system. Mindfulness: non-judgmental present-moment awareness — 8 weeks MBSR reduces anxiety by ~40%.
+The repaired article uses WHO, APA, and CDC sources. It defines stress, notes that stress can affect multiple body systems, and points to general coping practices without giving clinical treatment promises.
 
 ## Further Reading
 
-- [Why Zebras Don't Get Ulcers (Robert Sapolsky, 3rd Ed)](https://us.macmillan.com/books/9780805073690/whyzebrasdontgetulcers)
+- [Stress](https://www.who.int/news-room/questions-and-answers/item/stress)
+- [Stress effects on the body](https://www.apa.org/topics/stress/body)
+- [Mental Health: Living with Stress](https://www.cdc.gov/mental-health/living-with/index.html)
 
 ## Related Articles
 

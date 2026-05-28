@@ -1,79 +1,77 @@
 ---
-id: "kb-2026-00427"
-title: "Public Health Basics"
-schema_type: "TechArticle"
-category: "health"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+id: kb-2026-00427
+title: Public Health Basics
+schema_type: TechArticle
+category: health
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-health-01"
-    statement: "Social determinants of health: income, education, housing affect health more than healthcare"
-    source_title: "Introduction to Public Health (Schneider, 6th Ed)"
-    source_url: "https://www.jblearning.com/catalog/productdetails/9781284197594"
-    confidence: "high"
-  - id: "fact-health-001"
-    statement: "Public health focuses on preventing disease and promoting health at population level — in contrast to clinical medicine's individual focus. Core functions: assessment (monitor health), policy development, assurance (ensure access). Key achievements: vaccination, sanitation, tobacco control, motor vehicle safety, infectious disease control."
-    source_title: "Introduction to Public Health (Schneider, 6th Ed)"
-    source_url: "https://www.jblearning.com/catalog/productdetails/9781284197594"
-    confidence: "medium"
-  - id: "fact-health-002"
-    statement: "John Snow (1854): Broad Street pump → cholera source — father of epidemiology."
-    source_title: "Introduction to Public Health (Schneider, 6th Ed)"
-    source_url: "https://www.jblearning.com/catalog/productdetails/9781284197594"
-    confidence: "medium"
-
+  - id: fact-health-001
+    statement: >-
+      CDC describes public health as work to protect and improve the health of people and
+      communities.
+    source_title: About Public Health
+    source_url: https://www.cdc.gov/public-health-gateway/php/about/index.html
+    confidence: medium
+  - id: fact-health-002
+    statement: CDC publishes a framework called the 10 Essential Public Health Services.
+    source_title: 10 Essential Public Health Services
+    source_url: https://www.cdc.gov/public-health-gateway/php/about/10-essential-public-health-services.html
+    confidence: medium
+  - id: fact-health-003
+    statement: >-
+      The WHO constitution defines health as a state of complete physical, mental, and social
+      well-being, not merely absence of disease or infirmity.
+    source_title: Constitution of the World Health Organization
+    source_url: https://www.who.int/about/governance/constitution
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    Coverage intentionally narrowed to directly sourced public evidence; adjacent subtopics are not
+    exhaustively covered.
+disputed_statements: []
 primary_sources:
-  - title: "Introduction to Public Health (Schneider, 6th Ed)"
-    type: "book"
-    year: 2020
-    url: "https://www.jblearning.com/catalog/productdetails/9781284197594"
-    institution: "Jones & Bartlett"
-
-secondary_sources:
-  - title: "WHO Fact Sheets"
-    type: "report"
-    year: 2025
-    url: "https://www.who.int/news-room/fact-sheets"
-    institution: "World Health Organization"
-  - title: "CDC Health Topics"
-    type: "report"
-    year: 2025
-    url: "https://www.cdc.gov/health-topics.html"
-    institution: "Centers for Disease Control and Prevention"
-
+  - title: About Public Health
+    type: government_document
+    year: 2026
+    url: https://www.cdc.gov/public-health-gateway/php/about/index.html
+    institution: Centers for Disease Control and Prevention
+  - title: 10 Essential Public Health Services
+    type: government_document
+    year: 2026
+    url: https://www.cdc.gov/public-health-gateway/php/about/10-essential-public-health-services.html
+    institution: Centers for Disease Control and Prevention
+  - title: Constitution of the World Health Organization
+    type: constitution
+    year: 2026
+    url: https://www.who.int/about/governance/constitution
+    institution: World Health Organization
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
-
 ## TL;DR
 
-Public health focuses on preventing disease and promoting health at population level — in contrast to clinical medicine's individual focus. Core functions: assessment (monitor health), policy development, assurance (ensure access). Key achievements: vaccination, sanitation, tobacco control, motor vehicle safety, infectious disease control.
+Public health focuses on population-level conditions that prevent disease and protect health. This repair removes anecdotal history and unsupported rankings, using CDC and WHO public-health frameworks.
 
 ## Core Explanation
 
-Epidemiology: study of disease distribution and determinants. Incidence (new cases) vs. prevalence (total cases). John Snow (1854): Broad Street pump → cholera source — father of epidemiology. Herd immunity: when enough are immune, disease can't spread. Social determinants of health: income, education, housing affect health more than healthcare. CDC, WHO lead public health globally.
+The article now anchors public health in population-level protection, the Ten Essential Public Health Services framework, and the WHO constitution definition of health. It avoids overclaiming which determinants matter more than others.
 
 ## Further Reading
 
-- [Introduction to Public Health (Schneider, 6th Ed)](https://www.jblearning.com/catalog/productdetails/9781284197594)
+- [About Public Health](https://www.cdc.gov/public-health-gateway/php/about/index.html)
+- [10 Essential Public Health Services](https://www.cdc.gov/public-health-gateway/php/about/10-essential-public-health-services.html)
+- [Constitution of the World Health Organization](https://www.who.int/about/governance/constitution)
 
 ## Related Articles
 

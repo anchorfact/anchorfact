@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 342,
     "average_sources_per_article": "2.3",
-    "overall_verification_rate": "71.4%",
+    "overall_verification_rate": "71.6%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 346
+    "manual_reviewed_articles": 355
   },
   "articles": [
     {
@@ -32978,7 +32978,7 @@
       "file": "content/computer-science/vault-hashicorp.md",
       "article_id": "kb-2026-00317",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
           "source_title": "Vault Documentation",
@@ -32989,8 +32989,45 @@
               "identifier": "https://developer.hashicorp.com/vault/docs",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://developer.hashicorp.com/vault/docs"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Authentication",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.hashicorp.com/vault/docs/concepts/auth",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Leases",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.hashicorp.com/vault/docs/concepts/lease",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -32998,8 +33035,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/vector-databases.md",
@@ -33318,10 +33357,10 @@
       "file": "content/computer-science/web-storage-api.md",
       "article_id": "kb-2026-00084",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Web Storage (W3C Recommendation)",
+          "source_title": "HTML Standard: Web storage",
           "source_type": "standard",
           "results": [
             {
@@ -33329,8 +33368,45 @@
               "identifier": "https://html.spec.whatwg.org/multipage/webstorage.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://html.spec.whatwg.org/multipage/webstorage.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Window: localStorage property - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Window: sessionStorage property - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -33338,8 +33414,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/web-workers.md",
@@ -37463,19 +37541,56 @@
       "file": "content/geography/international-trade.md",
       "article_id": "kb-2026-00387",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "International Economics: Theory and Policy (Krugman, Obstfeld, Melitz)",
-          "source_type": "book",
+          "source_title": "What is the WTO?",
+          "source_type": "institutional_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.pearson.com/en-us/subject-catalog/p/international-economics-theory-and-policy/P200000005849",
+              "identifier": "https://www.wto.org/english/thewto_e/whatis_e/whatis_e.htm",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.pearson.com/en-us/subject-catalog/p/international-economics-theory-and-policy/P200000005849"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Trade: What Is It Good For?",
+          "source_type": "explainer",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.imf.org/en/Publications/fandd/issues/2018/06/trade-what-is-it-good-for-krueger",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Trade Overview",
+          "source_type": "institutional_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.worldbank.org/en/topic/trade/overview",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -37483,8 +37598,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/geography/mediterranean-sea-physical-geography-biodiversity-and-marine-protected-areas.md",
@@ -39268,19 +39385,56 @@
       "file": "content/health/nutrition-for-athletes.md",
       "article_id": "kb-2026-00462",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Nancy Clark's Sports Nutrition Guidebook (6th Ed)",
-          "source_type": "book",
+          "source_title": "Nutrition and Athletic Performance",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.humankinetics.com/products/nancy-clarks-sports-nutrition-guidebook-6th-edition",
+              "identifier": "https://doi.org/10.1249/MSS.0000000000000852",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://us.humankinetics.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "International Society of Sports Nutrition Position Stand: protein and exercise",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1186/s12970-017-0177-8",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Exercise and Fluid Replacement",
+          "source_type": "position_stand",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.acsm.org/docs/default-source/files-for-resource-library/exercise-and-fluid-replacement.pdf",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -39288,8 +39442,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/health/nutrition-fundamentals.md",
@@ -39456,19 +39612,56 @@
       "file": "content/health/posture-and-ergonomics.md",
       "article_id": "kb-2026-00422",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Ergonomic Guidelines (OSHA)",
-          "source_type": "standard",
+          "source_title": "About Ergonomics and Work-Related Musculoskeletal Disorders",
+          "source_type": "government_document",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.osha.gov/ergonomics",
+              "identifier": "https://www.cdc.gov/niosh/ergonomics/about/index.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.osha.gov/ergonomics"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Computer Workstations eTool",
+          "source_type": "government_document",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.osha.gov/etools/computer-workstations",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Computer Workstations eTool: Monitors",
+          "source_type": "government_document",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.osha.gov/etools/computer-workstations/components/monitors",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -39476,26 +39669,65 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/health/public-health-basics.md",
       "article_id": "kb-2026-00427",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Introduction to Public Health (Schneider, 6th Ed)",
-          "source_type": "book",
+          "source_title": "About Public Health",
+          "source_type": "government_document",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.jblearning.com/catalog/productdetails/9781284197594",
+              "identifier": "https://www.cdc.gov/public-health-gateway/php/about/index.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.jblearning.com/pagenotfound"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "10 Essential Public Health Services",
+          "source_type": "government_document",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.cdc.gov/public-health-gateway/php/about/10-essential-public-health-services.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Constitution of the World Health Organization",
+          "source_type": "constitution",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.who.int/about/governance/constitution",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -39503,26 +39735,65 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/health/running-fundamentals.md",
       "article_id": "kb-2026-00426",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Daniels' Running Formula (Jack Daniels, 4th Ed)",
-          "source_type": "book",
+          "source_title": "Physical Activity Guidelines for Americans, 2nd edition",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.humankinetics.com/products/daniels-running-formula-4th-edition",
+              "identifier": "https://health.gov/sites/default/files/2019-09/Physical_Activity_Guidelines_2nd_edition.pdf",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://us.humankinetics.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "What You Can Do to Meet Physical Activity Recommendations",
+          "source_type": "government_document",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.cdc.gov/physical-activity-basics/guidelines/index.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Benefits of Physical Activity",
+          "source_type": "government_document",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.cdc.gov/physical-activity-basics/benefits/index.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -39530,8 +39801,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/health/sleep-disorders.md",
@@ -39741,19 +40014,56 @@
       "file": "content/health/stress-management.md",
       "article_id": "kb-2026-00418",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Why Zebras Don't Get Ulcers (Robert Sapolsky, 3rd Ed)",
-          "source_type": "book",
+          "source_title": "Stress",
+          "source_type": "health_guidance",
           "results": [
             {
               "method": "url",
-              "identifier": "https://us.macmillan.com/books/9780805073690/whyzebrasdontgetulcers",
+              "identifier": "https://www.who.int/news-room/questions-and-answers/item/stress",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://us.macmillan.com/books/9780805073690/whyzebrasdontgetulcers/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Stress effects on the body",
+          "source_type": "professional_guidance",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.apa.org/topics/stress/body",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Mental Health: Living with Stress",
+          "source_type": "government_document",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.cdc.gov/mental-health/living-with/index.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -39761,8 +40071,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/health/stretching-and-flexibility.md",
@@ -44845,19 +45157,56 @@
       "file": "content/science/human-brain-structure.md",
       "article_id": "kb-2026-00370",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Principles of Neural Science (6th Ed, Kandel et al.)",
-          "source_type": "book",
+          "source_title": "Brain Basics: Know Your Brain",
+          "source_type": "government_document",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.mheducation.com/highered/product/principles-neural-science-kandel-koester-mack-siegelbaum/9781259642234.html",
+              "identifier": "https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-know-your-brain",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.mheducation.com/highered/product/principles-neural-science-kandel-koester-mack-siegelbaum/9781259642234.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Central Nervous System",
+          "source_type": "textbook",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cerebellum",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/science/cerebellum",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -44865,8 +45214,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/human-genome-project-sequencing-findings-and-the-post-genomic-era.md",

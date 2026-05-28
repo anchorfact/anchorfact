@@ -1,78 +1,77 @@
 ---
-id: "kb-2026-00426"
-title: "Running Fundamentals"
-schema_type: "TechArticle"
-category: "health"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+id: kb-2026-00426
+title: Running Fundamentals
+schema_type: TechArticle
+category: health
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-health-01"
-    statement: "Running is one of the most accessible and effective forms of cardiovascular exercise"
-    source_title: "Daniels' Running Formula (Jack Daniels, 4th Ed)"
-    source_url: "https://www.humankinetics.com/products/daniels-running-formula-4th-edition"
-    confidence: "high"
-  - id: "fact-health-02"
-    statement: "Injuries: shin splints, runner's knee, plantar fasciitis — most from too much, too soon"
-    source_title: "Daniels' Running Formula (Jack Daniels, 4th Ed)"
-    source_url: "https://www.humankinetics.com/products/daniels-running-formula-4th-edition"
-    confidence: "high"
-  - id: "fact-health-03"
-    statement: "Shoes: replace every 500-800km"
-    source_title: "Daniels' Running Formula (Jack Daniels, 4th Ed)"
-    source_url: "https://www.humankinetics.com/products/daniels-running-formula-4th-edition"
-    confidence: "high"
-
+  - id: fact-health-001
+    statement: >-
+      The Physical Activity Guidelines for Americans include vigorous-intensity aerobic activity as
+      one way adults can meet activity recommendations.
+    source_title: Physical Activity Guidelines for Americans, 2nd edition
+    source_url: https://health.gov/sites/default/files/2019-09/Physical_Activity_Guidelines_2nd_edition.pdf
+    confidence: medium
+  - id: fact-health-002
+    statement: CDC guidance lists jogging or running as examples of vigorous-intensity aerobic activity.
+    source_title: What You Can Do to Meet Physical Activity Recommendations
+    source_url: https://www.cdc.gov/physical-activity-basics/guidelines/index.html
+    confidence: medium
+  - id: fact-health-003
+    statement: >-
+      CDC describes regular physical activity as beneficial for brain health, weight management,
+      disease risk reduction, and functional ability.
+    source_title: Benefits of Physical Activity
+    source_url: https://www.cdc.gov/physical-activity-basics/benefits/index.html
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    Coverage intentionally narrowed to directly sourced public evidence; adjacent subtopics are not
+    exhaustively covered.
+disputed_statements: []
 primary_sources:
-  - title: "Daniels' Running Formula (Jack Daniels, 4th Ed)"
-    type: "book"
-    year: 2021
-    url: "https://www.humankinetics.com/products/daniels-running-formula-4th-edition"
-    institution: "Human Kinetics"
-
-secondary_sources:
-  - title: "WHO Fact Sheets"
-    type: "report"
-    year: 2025
-    url: "https://www.who.int/news-room/fact-sheets"
-    institution: "World Health Organization"
-  - title: "CDC Health Topics"
-    type: "report"
-    year: 2025
-    url: "https://www.cdc.gov/health-topics.html"
-    institution: "Centers for Disease Control and Prevention"
-
+  - title: Physical Activity Guidelines for Americans, 2nd edition
+    type: government_report
+    year: 2018
+    url: https://health.gov/sites/default/files/2019-09/Physical_Activity_Guidelines_2nd_edition.pdf
+    institution: U.S. Department of Health and Human Services
+  - title: What You Can Do to Meet Physical Activity Recommendations
+    type: government_document
+    year: 2026
+    url: https://www.cdc.gov/physical-activity-basics/guidelines/index.html
+    institution: Centers for Disease Control and Prevention
+  - title: Benefits of Physical Activity
+    type: government_document
+    year: 2026
+    url: https://www.cdc.gov/physical-activity-basics/benefits/index.html
+    institution: Centers for Disease Control and Prevention
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
 ## TL;DR
 
-Running is one of the most accessible and effective forms of cardiovascular exercise. Training principles: build gradually (10% rule: don't increase weekly mileage by >10%), polarized training (80% easy, 20% hard), recovery weeks (every 3-4 weeks reduce mileage). Proper running form: midfoot strike, cadence 170-180 steps/min.
+Running is a vigorous aerobic activity that can contribute to adult physical-activity goals. This repair removes exact cadence, shoe-mileage, and injury-cause claims that were not source mapped.
 
 ## Core Explanation
 
-Couch to 5K (C25K): 9-week beginner program. Easy runs: conversational pace (Zone 2) — builds aerobic base. Tempo runs: comfortably hard — raises lactate threshold. Intervals: hard efforts with recovery — improves VO2max. Long run: weekly, 20-30% of weekly mileage. Injuries: shin splints, runner's knee, plantar fasciitis — most from too much, too soon. Shoes: replace every 500-800km.
+The article now stays at public-health level: running can count toward vigorous aerobic activity, adult guidelines include vigorous aerobic minutes as one route to meeting recommendations, and physical activity has broad health benefits.
 
 ## Further Reading
 
-- [Daniels' Running Formula (Jack Daniels, 4th Ed)](https://www.humankinetics.com/products/daniels-running-formula-4th-edition)
+- [Physical Activity Guidelines for Americans, 2nd edition](https://health.gov/sites/default/files/2019-09/Physical_Activity_Guidelines_2nd_edition.pdf)
+- [What You Can Do to Meet Physical Activity Recommendations](https://www.cdc.gov/physical-activity-basics/guidelines/index.html)
+- [Benefits of Physical Activity](https://www.cdc.gov/physical-activity-basics/benefits/index.html)
 
 ## Related Articles
 

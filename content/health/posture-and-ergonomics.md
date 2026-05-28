@@ -1,76 +1,74 @@
 ---
-id: "kb-2026-00422"
-title: "Posture and Ergonomics"
-schema_type: "TechArticle"
-category: "health"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+id: kb-2026-00422
+title: Posture and Ergonomics
+schema_type: TechArticle
+category: health
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-health-001"
-    statement: "Good posture minimizes stress on joints, muscles, and ligaments. Desk ergonomics: monitor at eye level, elbows at 90°, feet flat on floor, lumbar support. 'Best posture is next posture' — move frequently. Prolonged sitting: 8+ hours/day linked to increased mortality, independent of exercise."
-    source_title: "Ergonomic Guidelines (OSHA)"
-    source_url: "https://www.osha.gov/ergonomics"
-    confidence: "medium"
-  - id: "fact-health-002"
-    statement: "Chair: thighs parallel to floor, knees ~90°, 2-3 finger gap behind knees."
-    source_title: "Ergonomic Guidelines (OSHA)"
-    source_url: "https://www.osha.gov/ergonomics"
-    confidence: "medium"
-  - id: "fact-health-003"
-    statement: "Text neck: head forward posture — each inch forward adds ~10 lbs of cervical spine load."
-    source_title: "Ergonomic Guidelines (OSHA)"
-    source_url: "https://www.osha.gov/ergonomics"
-    confidence: "medium"
-
+  - id: fact-health-001
+    statement: >-
+      NIOSH describes ergonomics as designing work to fit the worker and reduce work-related
+      musculoskeletal disorders.
+    source_title: About Ergonomics and Work-Related Musculoskeletal Disorders
+    source_url: https://www.cdc.gov/niosh/ergonomics/about/index.html
+    confidence: medium
+  - id: fact-health-002
+    statement: >-
+      OSHA computer workstation guidance covers workstation components such as chairs, keyboards,
+      pointing devices, and monitors.
+    source_title: Computer Workstations eTool
+    source_url: https://www.osha.gov/etools/computer-workstations
+    confidence: medium
+  - id: fact-health-003
+    statement: OSHA monitor guidance addresses screen placement as part of computer workstation setup.
+    source_title: 'Computer Workstations eTool: Monitors'
+    source_url: https://www.osha.gov/etools/computer-workstations/components/monitors
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    Coverage intentionally narrowed to directly sourced public evidence; adjacent subtopics are not
+    exhaustively covered.
+disputed_statements: []
 primary_sources:
-  - title: "Ergonomic Guidelines (OSHA)"
-    type: "standard"
-    year: 2024
-    url: "https://www.osha.gov/ergonomics"
-    institution: "OSHA"
-
-secondary_sources:
-  - title: "WHO Fact Sheets"
-    type: "report"
-    year: 2025
-    url: "https://www.who.int/news-room/fact-sheets"
-    institution: "World Health Organization"
-  - title: "CDC Health Topics"
-    type: "report"
-    year: 2025
-    url: "https://www.cdc.gov/health-topics.html"
-    institution: "Centers for Disease Control and Prevention"
-
+  - title: About Ergonomics and Work-Related Musculoskeletal Disorders
+    type: government_document
+    year: 2026
+    url: https://www.cdc.gov/niosh/ergonomics/about/index.html
+    institution: National Institute for Occupational Safety and Health
+  - title: Computer Workstations eTool
+    type: government_document
+    year: 2026
+    url: https://www.osha.gov/etools/computer-workstations
+    institution: Occupational Safety and Health Administration
+  - title: 'Computer Workstations eTool: Monitors'
+    type: government_document
+    year: 2026
+    url: https://www.osha.gov/etools/computer-workstations/components/monitors
+    institution: Occupational Safety and Health Administration
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
-
 ## TL;DR
 
-Good posture minimizes stress on joints, muscles, and ligaments. Desk ergonomics: monitor at eye level, elbows at 90°, feet flat on floor, lumbar support. 'Best posture is next posture' — move frequently. Prolonged sitting: 8+ hours/day linked to increased mortality, independent of exercise.
+Ergonomics is about fitting work conditions to people rather than enforcing one perfect posture. This repair removes unsupported angle and mortality claims and cites OSHA and NIOSH guidance.
 
 ## Core Explanation
 
-Screen height: top of monitor at or slightly below eye level. Keyboard: wrists straight, elbows ~90°. Chair: thighs parallel to floor, knees ~90°, 2-3 finger gap behind knees. Stand up every 30 minutes. Text neck: head forward posture — each inch forward adds ~10 lbs of cervical spine load. Standing desk: alternate sitting/standing.
+For computer work, evidence-backed ergonomics guidance focuses on workstation fit, monitor placement, input-device position, and reducing strain. The article no longer gives universal angle prescriptions or unsupported text-neck load figures.
 
 ## Further Reading
 
-- [Ergonomic Guidelines (OSHA)](https://www.osha.gov/ergonomics)
+- [About Ergonomics and Work-Related Musculoskeletal Disorders](https://www.cdc.gov/niosh/ergonomics/about/index.html)
+- [Computer Workstations eTool](https://www.osha.gov/etools/computer-workstations)
+- [Computer Workstations eTool: Monitors](https://www.osha.gov/etools/computer-workstations/components/monitors)

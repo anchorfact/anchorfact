@@ -1,6 +1,6 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T11:52:56.337Z
+Generated: 2026-05-28T12:00:28.434Z
 
 Snapshot: 555 public / 445 draft / 1652 claims.
 
@@ -11,9 +11,9 @@ This is a risk-weighted audit sample of public AnchorFact articles. It is intend
 - Sample size: 20
 - Low verified coverage samples: 1
 - Articles with at least one fail check: 0
-- High-confidence samples needing review: 0
+- High-confidence samples needing review: 3
 - Claim-evidence failures: 0
-- Recommendations: keep_public: 11, downgrade_confidence: 0, repair_sources: 9, move_to_draft: 0
+- Recommendations: keep_public: 11, downgrade_confidence: 3, repair_sources: 6, move_to_draft: 0
 
 ## Method
 
@@ -33,16 +33,16 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 8 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 9 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 10 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 11 | risk_fallback | `computer-science/vault-hashicorp` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 12 | risk_fallback | `computer-science/web-storage-api` | medium | 1/1 (100.0%) | 3 | source=pass; claim=pass; summary=pass | repair_sources |
-| 13 | risk_fallback | `geography/international-trade` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 14 | risk_fallback | `health/nutrition-for-athletes` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 15 | risk_fallback | `health/posture-and-ergonomics` | medium | 1/1 (100.0%) | 3 | source=pass; claim=pass; summary=pass | repair_sources |
-| 16 | risk_fallback | `health/public-health-basics` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 17 | risk_fallback | `health/running-fundamentals` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 18 | risk_fallback | `health/stress-management` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 19 | risk_fallback | `science/climate-change` | medium | 4/5 (80.0%) | 3 | source=weak; claim=pass; summary=pass | keep_public |
-| 20 | risk_fallback | `science/human-brain-structure` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 11 | risk_fallback | `science/climate-change` | medium | 4/5 (80.0%) | 3 | source=weak; claim=pass; summary=pass | keep_public |
+| 12 | risk_fallback | `science/theory-of-relativity` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 13 | risk_fallback | `self-improvement/public-speaking` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 14 | risk_fallback | `sports/basketball-fundamentals` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 15 | risk_fallback | `ai/ai-for-materials-science` | high | 2/3 (66.7%) | 2 | source=weak; claim=pass; summary=pass | downgrade_confidence |
+| 16 | risk_fallback | `ai/ai-for-speech-emotion-recognition` | high | 2/3 (66.7%) | 2 | source=weak; claim=pass; summary=pass | downgrade_confidence |
+| 17 | risk_fallback | `ai/audio-source-separation` | high | 2/3 (66.7%) | 2 | source=weak; claim=pass; summary=pass | downgrade_confidence |
+| 18 | risk_fallback | `computer-science/broadcast-channel-api` | medium | 1/1 (100.0%) | 2 | source=pass; claim=pass; summary=pass | repair_sources |
+| 19 | risk_fallback | `computer-science/css-flexbox` | medium | 1/1 (100.0%) | 2 | source=pass; claim=pass; summary=pass | repair_sources |
+| 20 | risk_fallback | `computer-science/ethereum` | low | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
 
 ## Article Findings
 
@@ -196,127 +196,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 11. Vault (HashiCorp)
-
-- canonical slug: `computer-science/vault-hashicorp`
-- canonical URL: https://anchorfact.org/computer-science/vault-hashicorp/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 12. Web Storage API
-
-- canonical slug: `computer-science/web-storage-api`
-- canonical URL: https://anchorfact.org/computer-science/web-storage-api/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.715)
-- verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 13. International Trade
-
-- canonical slug: `geography/international-trade`
-- canonical URL: https://anchorfact.org/geography/international-trade/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.45)
-- verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 14. Nutrition for Athletes
-
-- canonical slug: `health/nutrition-for-athletes`
-- canonical URL: https://anchorfact.org/health/nutrition-for-athletes/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.45)
-- verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 15. Posture and Ergonomics
-
-- canonical slug: `health/posture-and-ergonomics`
-- canonical URL: https://anchorfact.org/health/posture-and-ergonomics/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.735)
-- verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 16. Public Health Basics
-
-- canonical slug: `health/public-health-basics`
-- canonical URL: https://anchorfact.org/health/public-health-basics/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.45)
-- verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 17. Running Fundamentals
-
-- canonical slug: `health/running-fundamentals`
-- canonical URL: https://anchorfact.org/health/running-fundamentals/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.47)
-- verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 18. Stress Management
-
-- canonical slug: `health/stress-management`
-- canonical URL: https://anchorfact.org/health/stress-management/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.43)
-- verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 19. Climate Change
+### 11. Climate Change
 
 - canonical slug: `science/climate-change`
 - canonical URL: https://anchorfact.org/science/climate-change/
@@ -331,14 +211,134 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 20. Human Brain Structure
+### 12. Theory of Relativity
 
-- canonical slug: `science/human-brain-structure`
-- canonical URL: https://anchorfact.org/science/human-brain-structure/
+- canonical slug: `science/theory-of-relativity`
+- canonical URL: https://anchorfact.org/science/theory-of-relativity/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.47)
+- confidence: `low` (verified_sources, score 0.43)
 - verified source coverage: 1/1 (100.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 13. Public Speaking
+
+- canonical slug: `self-improvement/public-speaking`
+- canonical URL: https://anchorfact.org/self-improvement/public-speaking/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.45)
+- verified source coverage: 1/1 (100.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 14. Basketball Fundamentals
+
+- canonical slug: `sports/basketball-fundamentals`
+- canonical URL: https://anchorfact.org/sports/basketball-fundamentals/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.45)
+- verified source coverage: 1/1 (100.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 15. AI for Materials Science: GNoME, Crystal Discovery, and Materials Informatics
+
+- canonical slug: `ai/ai-for-materials-science`
+- canonical URL: https://anchorfact.org/ai/ai-for-materials-science/
+- bucket: `risk_fallback`
+- confidence: `high` (verified_sources, score 0.88)
+- verified source coverage: 2/3 (66.7%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `downgrade_confidence`
+
+### 16. AI for Speech Emotion Recognition: Vocal Biomarkers, Mental Health Screening, and Affective Computing
+
+- canonical slug: `ai/ai-for-speech-emotion-recognition`
+- canonical URL: https://anchorfact.org/ai/ai-for-speech-emotion-recognition/
+- bucket: `risk_fallback`
+- confidence: `high` (verified_sources, score 0.88)
+- verified source coverage: 2/3 (66.7%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `downgrade_confidence`
+
+### 17. Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning
+
+- canonical slug: `ai/audio-source-separation`
+- canonical URL: https://anchorfact.org/ai/audio-source-separation/
+- bucket: `risk_fallback`
+- confidence: `high` (verified_sources, score 0.88)
+- verified source coverage: 2/3 (66.7%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `downgrade_confidence`
+
+### 18. Broadcast Channel API
+
+- canonical slug: `computer-science/broadcast-channel-api`
+- canonical URL: https://anchorfact.org/computer-science/broadcast-channel-api/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.745)
+- verified source coverage: 1/1 (100.0%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 19. CSS Flexbox
+
+- canonical slug: `computer-science/css-flexbox`
+- canonical URL: https://anchorfact.org/computer-science/css-flexbox/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.695)
+- verified source coverage: 1/1 (100.0%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 20. Ethereum
+
+- canonical slug: `computer-science/ethereum`
+- canonical URL: https://anchorfact.org/computer-science/ethereum/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.56)
+- verified source coverage: 2/2 (100.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: none
 - source-title match: `pass`
 - claim-evidence match: `weak`
@@ -349,7 +349,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 ## Rule Calibration
 
 - Keep `low_verified_coverage` as an audit marker until a larger sample confirms the failure rate.
-- Keep the current high-confidence rule, while continuing spot checks.
+- Require `high` confidence to have verified coverage >= 50% and at least 2 verified sources.
 - Keep exporting claims with confidence caps, but continue auditing weak evidence.
 
 ## Next Manual Review

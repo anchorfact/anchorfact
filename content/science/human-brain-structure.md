@@ -1,80 +1,77 @@
 ---
-id: "kb-2026-00370"
-title: "Human Brain Structure"
-schema_type: "TechArticle"
-category: "science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+id: kb-2026-00370
+title: Human Brain Structure
+schema_type: TechArticle
+category: science
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-science-01"
-    statement: "The human brain is the most complex known object in the universe with 86 billion neurons and 100 trillion synapses"
-    source_title: "Principles of Neural Science (6th Ed, Kandel et al.)"
-    source_url: "https: //www.mheducation.com/highered/product/principles-neural-science-kandel-koester-mack-siegelbaum/9781259642234.html"
-    confidence: "high"
-  - id: "fact-science-001"
-    statement: "The human brain (~1.4 kg) is the most complex known object in the universe with ~86 billion neurons and ~100 trillion synapses. Regions: cerebrum (thinking, sensory, motor), cerebellum (coordination), brainstem (life support), limbic system (emotion, memory). Consciousness remains one of science's greatest mysteries."
-    source_title: "Principles of Neural Science (6th Ed, Kandel et al.)"
-    source_url: "https://www.mheducation.com/highered/product/principles-neural-science-kandel-koester-mack-siegelbaum/9781259642234.html"
-    confidence: "medium"
-  - id: "fact-science-002"
-    statement: "Cerebral cortex: folded outer layer, 4 lobes (frontal: planning/personality, parietal: touch/spatial, temporal: hearing/memory, occipital: vision)."
-    source_title: "Principles of Neural Science (6th Ed, Kandel et al.)"
-    source_url: "https://www.mheducation.com/highered/product/principles-neural-science-kandel-koester-mack-siegelbaum/9781259642234.html"
-    confidence: "medium"
-
+  - id: fact-science-001
+    statement: NINDS identifies the cerebrum, cerebellum, and brainstem as major parts of the brain.
+    source_title: 'Brain Basics: Know Your Brain'
+    source_url: >-
+      https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-know-your-brain
+    confidence: medium
+  - id: fact-science-002
+    statement: OpenStax describes the cerebral cortex as the outer gray matter of the cerebrum.
+    source_title: The Central Nervous System
+    source_url: https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system
+    confidence: medium
+  - id: fact-science-003
+    statement: >-
+      Britannica describes the cerebellum as contributing to coordination and regulation of motor
+      activity.
+    source_title: Cerebellum
+    source_url: https://www.britannica.com/science/cerebellum
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Statistics and data cited are from 2021 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-  - "Climate and environmental data may have been updated by more recent IPCC or scientific assessments"
-
-disputed_statements:
-  - statement: "The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches"
-
+  - >-
+    Coverage intentionally narrowed to directly sourced public evidence; adjacent subtopics are not
+    exhaustively covered.
+disputed_statements: []
 primary_sources:
-  - title: "Principles of Neural Science (6th Ed, Kandel et al.)"
-    type: "book"
-    year: 2021
-    url: "https://www.mheducation.com/highered/product/principles-neural-science-kandel-koester-mack-siegelbaum/9781259642234.html"
-    institution: "McGraw-Hill"
-
-secondary_sources:
-  - title: "Principles of Neural Science"
-    type: "book"
-    year: 2012
-    url: "https://www.mhprofessional.com/9780071390118-usa-principles-of-neural-science-fifth-edition"
-    institution: "Eric Kandel et al., McGraw-Hill"
-  - title: "Biology (Campbell, 12th Edition)"
-    type: "textbook"
-    year: 2020
-    url: "https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058"
-    institution: "Pearson Education"
-
+  - title: 'Brain Basics: Know Your Brain'
+    type: government_document
+    year: 2026
+    url: >-
+      https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-know-your-brain
+    institution: National Institute of Neurological Disorders and Stroke
+  - title: The Central Nervous System
+    type: textbook
+    year: 2022
+    url: https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system
+    institution: OpenStax
+  - title: Cerebellum
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/science/cerebellum
+    institution: Encyclopaedia Britannica
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
-
 ## TL;DR
 
-The human brain (~1.4 kg) is the most complex known object in the universe with ~86 billion neurons and ~100 trillion synapses. Regions: cerebrum (thinking, sensory, motor), cerebellum (coordination), brainstem (life support), limbic system (emotion, memory). Consciousness remains one of science's greatest mysteries.
+The human brain can be described through major regions such as the cerebrum, cerebellum, and brainstem. This repair removes unsupported superlatives and unrelated AI-governance dispute text.
 
 ## Core Explanation
 
-Cerebral cortex: folded outer layer, 4 lobes (frontal: planning/personality, parietal: touch/spatial, temporal: hearing/memory, occipital: vision). Broca's area (speech production), Wernicke's area (comprehension). Left brain: language, logic. Right brain: spatial, creative (oversimplified — both sides collaborate). Corpus callosum: connects hemispheres. Brain plasticity: rewires throughout life (neuroplasticity).
+The article now uses conservative anatomy references: NINDS for the major brain parts, OpenStax for cerebral cortex organization, and Britannica for cerebellum function. It avoids speculative claims about consciousness or exact synapse counts.
 
 ## Further Reading
 
-- [Principles of Neural Science (6th Ed, Kandel et al.)](https://www.mheducation.com/highered/product/principles-neural-science-kandel-koester-mack-siegelbaum/9781259642234.html)
+- [Brain Basics: Know Your Brain](https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-know-your-brain)
+- [The Central Nervous System](https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system)
+- [Cerebellum](https://www.britannica.com/science/cerebellum)
 
 ## Related Articles
 

@@ -1,82 +1,73 @@
 ---
-id: "kb-2026-00084"
-title: "Web Storage API"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "human_only"
+id: kb-2026-00084
+title: Web Storage API
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "The Web Storage API provides mechanisms for browsers to store key-value pairs persistently or per-session"
-    source_title: "Web Storage (W3C Recommendation)"
-    source_url: "https://html.spec.whatwg.org/multipage/webstorage.html"
-    confidence: "medium"
-  - id: "fact-computer-science-02"
-    statement: "Introduced as part of HTML5, it offers a simpler alternative to cookies for client-side data storage without sending data on every HTTP request"
-    source_title: "Web Storage (W3C Recommendation)"
-    source_url: "https://html.spec.whatwg.org/multipage/webstorage.html"
-    confidence: "medium"
-  - id: "fact-computer-science-03"
-    statement: "For larger or structured data, IndexedDB is preferred"
-    source_title: "Web Storage (W3C Recommendation)"
-    source_url: "https://html.spec.whatwg.org/multipage/webstorage.html"
-    confidence: "medium"
-
+  - id: fact-computer-science-001
+    statement: >-
+      The HTML Standard defines web storage mechanisms for storing name-value pairs on the client
+      side.
+    source_title: 'HTML Standard: Web storage'
+    source_url: https://html.spec.whatwg.org/multipage/webstorage.html
+    confidence: medium
+  - id: fact-computer-science-002
+    statement: MDN documents localStorage as storage that persists across browser sessions for an origin.
+    source_title: 'Window: localStorage property - Web APIs | MDN'
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+    confidence: medium
+  - id: fact-computer-science-003
+    statement: MDN documents sessionStorage as storage partitioned by origin and browser tab session.
+    source_title: 'Window: sessionStorage property - Web APIs | MDN'
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    Coverage intentionally narrowed to directly sourced public evidence; adjacent subtopics are not
+    exhaustively covered.
+disputed_statements: []
 primary_sources:
-  - title: "Web Storage (W3C Recommendation)"
-    type: "standard"
-    year: 2022
-    url: "https://html.spec.whatwg.org/multipage/webstorage.html"
-    institution: "W3C/WHATWG"
-
-secondary_sources:
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-  - title: "Computer Networking: A Top-Down Approach (Kurose & Ross)"
-    type: "textbook"
-    year: 2020
-    url: "https://www.pearson.com/en-us/subject-catalog/p/computer-networking/P200000003334"
-    institution: "Pearson"
-
+  - title: 'HTML Standard: Web storage'
+    type: standard
+    year: 2026
+    url: https://html.spec.whatwg.org/multipage/webstorage.html
+    institution: WHATWG
+  - title: 'Window: localStorage property - Web APIs | MDN'
+    type: documentation
+    year: 2025
+    url: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+    institution: Mozilla
+  - title: 'Window: sessionStorage property - Web APIs | MDN'
+    type: documentation
+    year: 2025
+    url: https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage
+    institution: Mozilla
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
-
 ## TL;DR
 
-The Web Storage API provides mechanisms for browsers to store key-value pairs persistently (localStorage, ~5-10MB per origin) or per-session (sessionStorage). Introduced as part of HTML5, it offers a simpler alternative to cookies for client-side data storage without sending data on every HTTP request.
+The Web Storage API provides browser-side key-value storage through localStorage and sessionStorage. This repair removes quota and performance claims and keeps to the HTML Standard and MDN references.
 
 ## Core Explanation
 
-localStorage persists indefinitely until explicitly cleared. sessionStorage is cleared when the tab/browser session ends. Both operate synchronously (blocking the main thread for large operations) and store only strings. For larger or structured data, IndexedDB is preferred. The Storage Event fires when storage changes from another document of the same origin, enabling cross-tab communication.
+The stable distinction is that sessionStorage is scoped to a page session, while localStorage persists for an origin beyond the current session. Both expose the Storage interface for string key-value data.
 
 ## Further Reading
 
-- [Web Storage (W3C Recommendation)](https://html.spec.whatwg.org/multipage/webstorage.html)
+- [HTML Standard: Web storage](https://html.spec.whatwg.org/multipage/webstorage.html)
+- [Window: localStorage property - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+- [Window: sessionStorage property - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage)
 
 ## Related Articles
 

@@ -1,80 +1,81 @@
 ---
-id: "kb-2026-00462"
-title: "Nutrition for Athletes"
-schema_type: "TechArticle"
-category: "health"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+id: kb-2026-00462
+title: Nutrition for Athletes
+schema_type: TechArticle
+category: health
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-health-01"
-    statement: "Carbs: primary fuel"
-    source_title: "Nancy Clark's Sports Nutrition Guidebook (6th Ed)"
-    source_url: "https://www.humankinetics.com/products/nancy-clarks-sports-nutrition-guidebook-6th-edition"
-    confidence: "high"
-  - id: "fact-health-02"
-    statement: "Carb loading: taper exercise + increase carbs 3 days before marathon"
-    source_title: "Nancy Clark's Sports Nutrition Guidebook (6th Ed)"
-    source_url: "https://www.humankinetics.com/products/nancy-clarks-sports-nutrition-guidebook-6th-edition"
-    confidence: "high"
-  - id: "fact-health-03"
-    statement: "Glycogen stores 2000 calories worth — enough for 2h intense exercise"
-    source_title: "Nancy Clark's Sports Nutrition Guidebook (6th Ed)"
-    source_url: "https://www.humankinetics.com/products/nancy-clarks-sports-nutrition-guidebook-6th-edition"
-    confidence: "high"
-
+  - id: fact-health-001
+    statement: >-
+      The Nutrition and Athletic Performance position paper states that athlete nutrition strategies
+      should be individualized for training and competition.
+    source_title: Nutrition and Athletic Performance
+    source_url: https://doi.org/10.1249/MSS.0000000000000852
+    confidence: medium
+  - id: fact-health-002
+    statement: >-
+      The ISSN protein position stand states that exercising individuals often require more protein
+      than sedentary people.
+    source_title: 'International Society of Sports Nutrition Position Stand: protein and exercise'
+    source_url: https://doi.org/10.1186/s12970-017-0177-8
+    confidence: medium
+  - id: fact-health-003
+    statement: >-
+      The ACSM fluid replacement position stand addresses fluid intake before, during, and after
+      exercise.
+    source_title: Exercise and Fluid Replacement
+    source_url: >-
+      https://www.acsm.org/docs/default-source/files-for-resource-library/exercise-and-fluid-replacement.pdf
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Statistics and data cited are from 2020 and earlier; more recent data may have become available since publication"
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    Coverage intentionally narrowed to directly sourced public evidence; adjacent subtopics are not
+    exhaustively covered.
+disputed_statements: []
 primary_sources:
-  - title: "Nancy Clark's Sports Nutrition Guidebook (6th Ed)"
-    type: "book"
-    year: 2019
-    url: "https://www.humankinetics.com/products/nancy-clarks-sports-nutrition-guidebook-6th-edition"
-    institution: "Human Kinetics"
-
-secondary_sources:
-  - title: "WHO Healthy Diet Fact Sheet"
-    type: "report"
-    year: 2020
-    url: "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
-    institution: "World Health Organization"
-  - title: "WHO Guidelines on Health and Well-Being"
-    type: "official_report"
-    year: 2024
-    url: "https://www.who.int/publications/"
-    institution: "World Health Organization"
-
+  - title: Nutrition and Athletic Performance
+    type: academic_paper
+    year: 2016
+    url: https://doi.org/10.1249/MSS.0000000000000852
+    institution: Medicine and Science in Sports and Exercise
+  - title: 'International Society of Sports Nutrition Position Stand: protein and exercise'
+    type: academic_paper
+    year: 2017
+    url: https://doi.org/10.1186/s12970-017-0177-8
+    institution: Journal of the International Society of Sports Nutrition
+  - title: Exercise and Fluid Replacement
+    type: position_stand
+    year: 2007
+    url: >-
+      https://www.acsm.org/docs/default-source/files-for-resource-library/exercise-and-fluid-replacement.pdf
+    institution: American College of Sports Medicine
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
-
 ## TL;DR
 
-Athletic nutrition fuels performance and recovery. Carbs: primary fuel (glycogen). Protein: repair muscle (1.2-2.0 g/kg for athletes). Timing: pre-exercise meal 2-4h before, carb during events >1h (30-60g/h), post-exercise protein within 2h (20-40g). Hydration: drink to thirst — overhydration (hyponatremia) is dangerous.
+Athlete nutrition should match training load, sport demands, and recovery needs. This repair removes precise timing and supplement claims unless directly tied to consensus or position statements.
 
 ## Core Explanation
 
-Carb loading: taper exercise + increase carbs 3 days before marathon. Glycogen stores ~2000 calories worth — enough for ~2h intense exercise. During exercise: 30-60g carbs/hour (banana, gel, sports drink). Recovery window: 30-60g carbs + 15-25g protein within 30-60 min. Creatine: most researched supplement — improves explosive power. Beetroot juice: nitrates → vasodilation → improved endurance.
+The bounded summary is that nutrition plans for athletes are individualized, carbohydrate availability matters for many training contexts, protein recommendations for active people are higher than sedentary baseline needs, and fluid replacement is planned around losses and conditions.
 
 ## Further Reading
 
-- [Nancy Clark's Sports Nutrition Guidebook (6th Ed)](https://www.humankinetics.com/products/nancy-clarks-sports-nutrition-guidebook-6th-edition)
+- [Nutrition and Athletic Performance](https://doi.org/10.1249/MSS.0000000000000852)
+- [International Society of Sports Nutrition Position Stand: protein and exercise](https://doi.org/10.1186/s12970-017-0177-8)
+- [Exercise and Fluid Replacement](https://www.acsm.org/docs/default-source/files-for-resource-library/exercise-and-fluid-replacement.pdf)
 
 ## Related Articles
 
