@@ -3,6 +3,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { dirname, join, resolve } from 'path';
 import { pathToFileURL } from 'url';
 import { load as loadYaml } from 'js-yaml';
+import { slugifyPath } from '../src/lib/article-quality.js';
 import { collectContentHygieneFlags } from '../src/lib/content-hygiene.js';
 
 const DEFAULT_OUTPUT = 'docs/PUBLIC_CONTENT_AUDIT_2026-05-27.md';
@@ -60,12 +61,14 @@ function buildVerificationIndex(report = {}) {
   const index = new Map();
   for (const entry of report.articles || []) {
     const slug = clampSlugFromContentPath(entry.file || entry.article_id || '');
-    if (slug) index.set(slug, entry);
+    if (!slug) continue;
+    index.set(slug, entry);
+    index.set(slugifyPath(slug), entry);
   }
   return index;
 }
 
-function buildContentBySlug(manifest, contentDir, verificationReport) {
+export function buildContentBySlug(manifest, contentDir, verificationReport) {
   const verificationBySlug = buildVerificationIndex(verificationReport);
   const contentBySlug = new Map();
   for (const article of manifest.articles || []) {

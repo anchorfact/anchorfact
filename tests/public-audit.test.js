@@ -1,5 +1,9 @@
 #!/usr/bin/env node
+import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'fs';
+import { tmpdir } from 'os';
+import { join } from 'path';
 import {
+  buildContentBySlug,
   buildAuditRows,
   renderAuditReport,
   selectAuditSample
@@ -180,6 +184,72 @@ test('audit rows include field-level scores, hygiene flags, and recommendations'
   assert(row.hygiene_flags.includes('duplicate_sources'), 'should flag duplicate sources');
   assert(row.hygiene_flags.includes('generic_dispute_statement'), 'should flag generic disputes');
   assert(['repair_sources', 'move_to_draft'].includes(row.recommendation), 'should recommend action');
+});
+
+test('content loading maps slugified filenames from verification data', () => {
+  const root = mkdtempSync(join(tmpdir(), 'anchorfact-public-audit-'));
+  const contentDir = join(root, 'content');
+  const filePath = join(contentDir, 'computer-science', 'c++-language.md');
+  mkdirSync(join(contentDir, 'computer-science'), { recursive: true });
+  writeFileSync(filePath, `---
+title: C++ Programming Language
+atomic_facts: []
+primary_sources: []
+---
+## TL;DR
+C++ is an ISO-standardized programming language with classes and templates.
+`);
+
+  try {
+    const manifest = {
+      articles: [
+        article('computer-science/c-plus-plus-language', {
+          confidence_level: 'medium',
+          sources_verified: 1,
+          sources_total: 1,
+          claims: 1,
+          capped: false,
+          quality_reasons: []
+        })
+      ]
+    };
+    manifest.articles[0].title = 'C++ Programming Language';
+    const verificationReport = {
+      articles: [
+        {
+          file: filePath,
+          sources_total: 1,
+          sources_verified: 1,
+          verification_results: [
+            {
+              all_verified: true,
+              results: [{ verified: true, match: true }]
+            }
+          ]
+        }
+      ]
+    };
+    const contentBySlug = buildContentBySlug(manifest, contentDir, verificationReport);
+    const rows = buildAuditRows({
+      manifest,
+      claimsPayload: {
+        claims: [
+          {
+            article: manifest.articles[0].canonical_url,
+            statement: 'C++ is an ISO-standardized programming language.',
+            source_url: 'https://example.com/cpp'
+          }
+        ]
+      },
+      verificationReport,
+      contentBySlug
+    });
+
+    assert(contentBySlug.has('computer-science/c-plus-plus-language'), 'should load content by canonical slug');
+    assertEq(rows[0].title_summary_accuracy, 'pass');
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
 });
 
 test('renderAuditReport contains the required audit contract and rule calibration', () => {
