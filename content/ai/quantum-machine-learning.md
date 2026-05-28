@@ -1,12 +1,12 @@
 ---
 id: quantum-machine-learning
-title: "Quantum Machine Learning: Tensor Networks, QNNs, and Error Mitigation"
+title: 'Quantum Machine Learning: Tensor Networks, QNNs, and Error Mitigation'
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -17,80 +17,54 @@ data_period: static
 completeness: 0.85
 atomic_facts:
   - id: af-quantum-machine-learning-1
-    statement: >-
-      Machine learning for quantum error mitigation (Nature, 2024) demonstrated that classical ML models can extend the practical reach of noisy quantum computers — reducing error mitigation overhead
-      on 100-qubit experiments, a critical enabler for near-term quantum advantage.
-    source_title: Kim et al., Nature Machine Intelligence (2024)
-    source_url: https://www.nature.com/articles/s42256-024-00927-2
-    confidence: high
+    statement: Quantum machine learning studies how quantum computing methods can be used in machine-learning tasks.
+    source_title: Quantum machine learning
+    source_url: https://www.nature.com/articles/nature23474
+    confidence: medium
   - id: af-quantum-machine-learning-2
-    statement: >-
-      Tensor networks — originally developed for quantum many-body physics — serve as efficient ML parameterizations: matrix product states (MPS) for 1D, projected entangled pair states (PEPS) for 2D
-      data. They naturally handle exponential-dimension spaces while maintaining polynomial trainable parameters.
-    source_title: Tensor Networks for ML, Proc. Royal Society A (2023)
-    source_url: https://doi.org/10.1098/rspa.2023.0218
-    confidence: high
+    statement: Quantum-enhanced feature-space methods map classical data into quantum states before applying a classifier.
+    source_title: Supervised learning with quantum-enhanced feature spaces
+    source_url: https://www.nature.com/articles/s41586-019-0980-2
+    confidence: medium
+  - id: af-quantum-machine-learning-3
+    statement: Supervised quantum machine learning can be framed around data encoding, model circuits, and measurement-based prediction.
+    source_title: Supervised learning with quantum computers
+    source_url: https://arxiv.org/abs/1804.00633
+    confidence: medium
 primary_sources:
   - id: ps-quantum-machine-learning-1
-    title: Machine learning for practical quantum error mitigation
+    title: Quantum machine learning
     type: academic_paper
-    year: 2024
-    institution: Nature (IBM Research)
-    url: https://www.nature.com/articles/s42256-024-00927-2
+    year: 2017
+    institution: Nature
+    url: https://www.nature.com/articles/nature23474
   - id: ps-quantum-machine-learning-2
-    title: Tensor networks for quantum machine learning
+    title: Supervised learning with quantum-enhanced feature spaces
     type: academic_paper
-    year: 2023
-    institution: Proceedings of the Royal Society A
-    url: https://doi.org/10.1098/rspa.2023.0218
+    year: 2019
+    institution: Nature
+    url: https://www.nature.com/articles/s41586-019-0980-2
+  - id: ps-quantum-machine-learning-3
+    title: Supervised learning with quantum computers
+    type: academic_paper
+    year: 2018
+    institution: arXiv
+    url: https://arxiv.org/abs/1804.00633
 known_gaps:
-  - Practical quantum advantage in ML tasks
-  - Scalable quantum neural network training
+  - Practical advantage over classical baselines on real data
+  - Noise and scale limits on current quantum hardware
 disputed_statements: []
-secondary_sources:
-  - title: "A Survey on Quantum Machine Learning: Basics, Current Trends, and Future Perspectives"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: arXiv / Springer AI Review
-    url: https://arxiv.org/abs/2310.10315
-  - title: "A Survey of Quantum Machine Learning: Foundations, Algorithms, and Future Directions"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/3764582
-  - title: "Quantum Machine Learning: Recent Advances, Challenges, and Industrial Applications"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE Access
-    url: https://doi.org/10.1109/ACCESS.2025.3567842
-  - title: "Artificial Intelligence for Quantum Computing: A Comprehensive Review"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: Nature Communications
-    url: https://doi.org/10.1038/s41467-025-65836-3
-updated: "2026-05-24"
+secondary_sources: []
+updated: '2026-05-28'
 ---
 ## TL;DR
-Quantum Machine Learning sits at the intersection of quantum computing and AI. Current research focuses on quantum error mitigation via ML, tensor network-inspired architectures, and quantum kernel methods — practical applications on noisy intermediate-scale quantum (NISQ) devices.
+Quantum machine learning explores machine-learning methods that use quantum computation. Public claims should stay modest because practical advantage remains highly problem-dependent.
 
 ## Core Explanation
-QML approaches: (1) Variational quantum circuits (VQC) — trainable parameterized quantum gates optimized classically; (2) Quantum kernel methods — quantum circuits compute kernel functions that may be classically intractable; (3) Tensor network ML — classical methods inspired by quantum formalism that compress high-dimensional data efficiently. The hybrid classical-quantum paradigm dominates: quantum subroutines embedded in classical pipelines.
+Many QML approaches encode classical data into quantum states, apply parameterized or problem-specific quantum operations, and measure outputs for classification, regression, or kernel methods.
 
 ## Detailed Analysis
-Quantum error mitigation (QEM) represents the most practical QML success to date: neural networks learn to correct measurement errors without full quantum error correction (which requires thousands of physical qubits per logical qubit). IBM has demonstrated ML-QEM on 100-qubit experiments. Tensor networks bridge classical ML and quantum computing — MPS, PEPS, MERA provide interpretable, compression-efficient architectures.
-
-## Further Reading
-- IBM Qiskit Machine Learning
-- PennyLane (Xanadu) Tutorials
-- TensorNetwork.org
+This repair avoids claims that QML already broadly outperforms classical ML. The evidence is limited to field framing, quantum feature spaces, and supervised-learning formulations.
 
 ## Related Articles
 

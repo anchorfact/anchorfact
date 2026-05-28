@@ -15,56 +15,56 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-climate-zones-01
-    statement: The Koppen climate classification divides terrestrial climates into five major types represented by the letters A, B, C, D, and E.
-    source_title: Koppen climate classification - Britannica
+  - id: af-climate-zones-1
+    statement: The Koppen climate classification groups climates using temperature and precipitation patterns.
+    source_title: Koppen climate classification
     source_url: https://www.britannica.com/science/Koppen-climate-classification
     confidence: medium
-  - id: fact-climate-zones-02
-    statement: The Koppen-Geiger system classifies climate types using temperature and precipitation patterns.
-    source_title: World Map of the Koppen-Geiger Climate Classification
-    source_url: https://koeppen-geiger.vu-wien.ac.at/
+  - id: af-climate-zones-2
+    statement: Updated Koppen-Geiger maps classify world climates using long-term temperature and precipitation data.
+    source_title: World Map of the Koppen-Geiger climate classification updated
+    source_url: https://doi.org/10.1127/0941-2948/2006/0130
+    confidence: medium
+  - id: af-climate-zones-3
+    statement: National Geographic describes climate zones as regions with distinct long-term temperature and precipitation conditions.
+    source_title: Climate Zones
+    source_url: https://education.nationalgeographic.org/resource/climate-zones/
     confidence: medium
 completeness: 0.8
 known_gaps:
-  - Regional climate-change projections and local downscaled models are outside this compact article.
-disputed_statements:
-  - statement: Regional climate impact projections vary across models, so local future climate-zone shifts require specialized sources.
+  - Local microclimates and urban heat-island effects
+  - Climate-zone shifts under future warming scenarios
+disputed_statements: []
 primary_sources:
-  - title: Koppen climate classification - Britannica
-    type: reference
-    year: 2026
-    url: https://www.britannica.com/science/Koppen-climate-classification
+  - id: ps-climate-zones-1
+    title: Koppen climate classification
+    type: encyclopedia_entry
+    year: 2024
     institution: Encyclopaedia Britannica
-  - title: World Map of the Koppen-Geiger Climate Classification
-    type: research_dataset
+    url: https://www.britannica.com/science/Koppen-climate-classification
+  - id: ps-climate-zones-2
+    title: World Map of the Koppen-Geiger climate classification updated
+    type: academic_paper
     year: 2006
-    url: https://koeppen-geiger.vu-wien.ac.at/
-    institution: University of Veterinary Medicine Vienna
-secondary_sources:
-  - title: Updated World Map of the Koppen-Geiger Climate Classification
-    type: journal_article
-    year: 2007
-    url: https://hess.copernicus.org/articles/11/1633/2007/
-    institution: Hydrology and Earth System Sciences
+    institution: Meteorologische Zeitschrift
+    url: https://doi.org/10.1127/0941-2948/2006/0130
+  - id: ps-climate-zones-3
+    title: Climate Zones
+    type: education_resource
+    year: 2024
+    institution: National Geographic
+    url: https://education.nationalgeographic.org/resource/climate-zones/
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
 ## TL;DR
-
-Climate zones group places with similar temperature and precipitation patterns. The Koppen climate classification is a widely used empirical system with five major types: A, B, C, D, and E.
+Climate zones group regions by long-term temperature and precipitation patterns. The Koppen-Geiger system is a standard reference, but local climates can vary within broad zones.
 
 ## Core Explanation
+Climate classification helps compare ecosystems, agriculture, settlement patterns, and environmental risks. It summarizes long-term conditions rather than day-to-day weather.
 
-The system links climate categories to observed temperature and precipitation patterns rather than to political boundaries. It is commonly used in geography, ecology, and climatology as a compact way to describe broad climate regions.
-
-## Evidence Notes
-
-The previous version contained mojibake in "Koppen" names and used a duplicate legacy article id. This repair makes the article readable, assigns a stable slug-based id, and restores its verification-report entry.
-
-## Further Reading
-
-- [Koppen climate classification - Britannica](https://www.britannica.com/science/Koppen-climate-classification)
-- [World Map of the Koppen-Geiger Climate Classification](https://koeppen-geiger.vu-wien.ac.at/)
+## Detailed Analysis
+The repaired article replaces weak claim mapping with Britannica, a Koppen-Geiger mapping paper, and National Geographic educational material.
 
 ## Related Articles
 

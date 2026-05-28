@@ -1,70 +1,70 @@
 ---
-id: "kb-2026-00504"
-title: "Sports Psychology Fundamentals"
-schema_type: "TechArticle"
-category: "sports"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+id: kb-2026-00504
+title: Sports Psychology Fundamentals
+schema_type: TechArticle
+category: sports
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-24'
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-sports-013"
-    statement: "Sports psychology emerged as a formal discipline in the 1920s (Coleman Griffith, 'father of American sport psychology'). Key techniques: goal setting, visualization/imagery, self-talk, arousal regulation, concentration training"
-    source_title: "APA Division 47: Society for Sport, Exercise and Performance Psychology"
-    source_url: "https://www.apadivisions.org/division-47"
-    confidence: "high"
-  - id: "fact-sports-014"
-    statement: "Inverted-U hypothesis (Yerkes-Dodson Law): performance increases with arousal to an optimal point, then declines. Individual Zones of Optimal Functioning (IZOF, Hanin 1980): each athlete has unique optimal arousal level"
-    source_title: "APA Sport Psychology Research"
-    source_url: "https://www.apadivisions.org/division-47"
-    confidence: "high"
-
+  - id: af-sports-psychology-1
+    statement: AASP describes sport and performance psychology as applying psychological principles to performance, well-being, and participation.
+    source_title: About Sport & Performance Psychology
+    source_url: https://appliedsportpsych.org/about/about-sport-and-performance-psychology/
+    confidence: medium
+  - id: af-sports-psychology-2
+    statement: A meta-analysis found that self-talk interventions can affect sport task performance, with effects depending on task and intervention features.
+    source_title: 'Self-Talk and Sports Performance: A Meta-Analysis'
+    source_url: https://doi.org/10.1177/1745691611413136
+    confidence: medium
+  - id: af-sports-psychology-3
+    statement: Psychological skills training is studied as a method for improving athlete performance in high-intensity sport contexts.
+    source_title: Psychological Skills Training as a Way to Enhance an Athlete's Performance in High-Intensity Sports
+    source_url: https://doi.org/10.1111/j.1600-0838.2011.01413.x
+    confidence: medium
 completeness: 0.85
-
 known_gaps:
-  - "Sports psychology is a broad field; this article covers foundational concepts, not specialized interventions"
-  - "Research is ongoing; newer studies may provide updated evidence for specific techniques"
-
+  - Individual differences in response to mental-skills interventions
+  - Integration with coaching, clinical care, and athlete welfare safeguards
 primary_sources:
-  - title: "Foundations of Sport and Exercise Psychology (Weinberg & Gould, 7th Ed)"
-    type: "textbook"
-    year: 2019
-    url: "https://www.humankinetics.com/"
-    institution: "Human Kinetics"
-  - title: "APA Division 47: Exercise and Sport Psychology"
-    type: "reference"
+  - id: ps-sports-psychology-1
+    title: About Sport & Performance Psychology
+    type: professional_resource
     year: 2024
-    url: "https://www.apadivisions.org/division-47"
-    institution: "American Psychological Association"
-
-secondary_sources:
-  - title: "Principles of Sports Training"
-    type: "textbook"
-    year: 2019
-    url: "https://www.humankinetics.com/"
-    institution: "Human Kinetics"
-
+    institution: Association for Applied Sport Psychology
+    url: https://appliedsportpsych.org/about/about-sport-and-performance-psychology/
+  - id: ps-sports-psychology-2
+    title: 'Self-Talk and Sports Performance: A Meta-Analysis'
+    type: academic_paper
+    year: 2011
+    institution: Perspectives on Psychological Science
+    url: https://doi.org/10.1177/1745691611413136
+  - id: ps-sports-psychology-3
+    title: Psychological Skills Training as a Way to Enhance an Athlete's Performance in High-Intensity Sports
+    type: academic_paper
+    year: 2012
+    institution: Scandinavian Journal of Medicine & Science in Sports
+    url: https://doi.org/10.1111/j.1600-0838.2011.01413.x
+secondary_sources: []
+updated: '2026-05-28'
+disputed_statements: []
 ---
-
-
 ## TL;DR
-
-Sports psychology applies psychological principles to athletic performance and well-being. Core techniques: goal setting (SMART: Specific, Measurable, Achievable, Relevant, Time-bound), visualization (mental rehearsal), self-talk (positive/cognitive restructuring), arousal regulation (breathing, progressive relaxation), concentration training (mindfulness, pre-performance routines).
+Sports psychology applies psychological science to performance, participation, and well-being in sport. Evidence-backed claims should distinguish professional scope from specific intervention findings.
 
 ## Core Explanation
+Common topics include motivation, attention, self-talk, anxiety, routines, team dynamics, and recovery from setbacks. The field overlaps performance consulting, coaching, and mental-health referral boundaries.
 
-Goal setting: outcome goals (winning), performance goals (personal best), process goals (technique execution). Self-efficacy theory (Bandura): belief in one's ability to succeed affects performance. Attribution theory: how athletes explain success/failure (internal vs external, stable vs unstable). Team dynamics: cohesion (task + social), leadership, communication. Choking under pressure: attentional narrowing, increased self-consciousness, impaired automaticity.
-
-## Further Reading
-
-- [APA Division 47: Sport Psychology](https://www.apadivisions.org/division-47)
+## Detailed Analysis
+The repaired article uses AASP for scope and peer-reviewed sources for self-talk and psychological-skills training, avoiding generic performance-hacking claims.
 
 ## Related Articles
 

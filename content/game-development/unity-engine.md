@@ -1,89 +1,68 @@
 ---
-id: "kb-2026-00061"
-title: "Unity Game Engine"
-schema_type: "TechArticle"
-category: "game-development"
-language: "zh"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "human_only"
+id: kb-2026-00061
+title: Unity Game Engine
+schema_type: TechArticle
+category: game-development
+language: zh
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-game-development-01"
-    statement: "Unity 是 Unity Technologies 开发的跨平台游戏引擎，首次发布于 2005 年。支持 2D/3D 游戏开发，使用 C 作为脚本语言，构建目标覆盖 25+ 平台（Windows、macOS、iOS、Android、WebGL、主机等）。截至 2026 年，Unity 是全球使用量最大的游戏引擎，超过 50% 的手游使用 Unity 开发。Unity 2022 LTS 是当前推荐的生产版本，Unity 6（2024年发布）是最新一代。"
-    source_title: "Unity 2022 LTS Documentation"
-    source_url: "https://docs.unity3d.com/2022.3/Documentation/Manual/"
-    confidence: "medium"
-  - id: "fact-game-development-001"
-    statement: "Unity 是 Unity Technologies 开发的跨平台游戏引擎，首次发布于 2005 年。支持 2D/3D 游戏开发，使用 C# 作为脚本语言，构建目标覆盖 25+ 平台（Windows、macOS、iOS、Android、WebGL、主机等）。截至 2026 年，Unity 是全球使用量最大的游戏引擎，超过 50% 的手游使用 Unity 开发。Unity 2022 LTS 是当前推荐的生产版本，Unity 6（2024年发布）是最新一代。"
-    source_title: "Unity 2022 LTS Documentation"
-    source_url: "https://docs.unity3d.com/2022.3/Documentation/Manual/"
-    confidence: "medium"
-
+  - id: af-unity-engine-1
+    statement: Unity scenes are built from GameObjects.
+    source_title: GameObjects
+    source_url: https://docs.unity3d.com/Manual/GameObjects.html
+    confidence: medium
+  - id: af-unity-engine-2
+    statement: Unity uses scenes to organize game content and levels.
+    source_title: Scenes
+    source_url: https://docs.unity3d.com/Manual/CreatingScenes.html
+    confidence: medium
+  - id: af-unity-engine-3
+    statement: Unity scripting lets developers control GameObject behavior through code.
+    source_title: Scripting
+    source_url: https://docs.unity3d.com/Manual/ScriptingSection.html
+    confidence: medium
 completeness: 0.85
-
 known_gaps:
-  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
-
-disputed_statements:
-  - statement: "The choice between Unity and Unreal Engine involves tradeoffs that are hotly debated: Unity's accessibility and C# ecosystem vs. Unreal's graphical fidelity and C++ performance"
-
+  - Version-specific differences in rendering, input, and package workflows
+  - Licensing and platform pipeline considerations for commercial teams
+disputed_statements: []
 primary_sources:
-  - title: "Unity Documentation"
-    type: "documentation"
-    year: 2026
-    url: "https://docs.unity.com/"
-    institution: "Unity Technologies"
-  - title: "Unity 2022 LTS Documentation"
-    type: "documentation"
-    year: 2025
-    url: "https://docs.unity3d.com/2022.3/Documentation/Manual/"
-    institution: "Unity3d"
-
-secondary_sources:
-  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
-    type: "textbook"
-    year: 2018
-    url: "https://www.gameenginebook.com/"
-    institution: "CRC Press"
-  - title: "Game Programming Patterns (Robert Nystrom)"
-    type: "book"
-    year: 2014
-    url: "https://gameprogrammingpatterns.com/"
-    institution: "Genever Benning"
-
+  - id: ps-unity-engine-1
+    title: GameObjects
+    type: technical_documentation
+    year: 2024
+    institution: Unity Manual
+    url: https://docs.unity3d.com/Manual/GameObjects.html
+  - id: ps-unity-engine-2
+    title: Scenes
+    type: technical_documentation
+    year: 2024
+    institution: Unity Manual
+    url: https://docs.unity3d.com/Manual/CreatingScenes.html
+  - id: ps-unity-engine-3
+    title: Scripting
+    type: technical_documentation
+    year: 2024
+    institution: Unity Manual
+    url: https://docs.unity3d.com/Manual/ScriptingSection.html
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
-
-
 ## TL;DR
+Unity is a game engine organized around scenes, GameObjects, components, and scripts. Public claims should cite Unity documentation instead of relying on broad popularity statements.
 
-Unity 是 Unity Technologies 开发的跨平台游戏引擎，首次发布于 2005 年。支持 2D/3D 游戏开发，使用 C# 作为脚本语言，构建目标覆盖 25+ 平台（Windows、macOS、iOS、Android、WebGL、主机等）。截至 2026 年，Unity 是全球使用量最大的游戏引擎，超过 50% 的手游使用 Unity 开发。Unity 2022 LTS 是当前推荐的生产版本，Unity 6（2024年发布）是最新一代。
+## Core Explanation
+Developers assemble content into scenes, place GameObjects, and add behavior through scripts and components. That model supports many genres, but production choices depend on Unity version and target platform.
 
-## 核心概念
-
-- **GameObject + Component 架构**：基于组件的实体系统，每个对象由多个组件组成
-- **Scene 系统**：场景管理、异步加载、可寻址资源
-- **ECS (DOTS)**：面向数据的实体组件系统，实现高性能大批量实体处理
-- **渲染管线**：内置管线、URP（通用）、HDRP（高清）
-- **物理引擎**：内置 PhysX（3D）和 Box2D（2D）
-- **C# Job System + Burst Compiler**：多线程高性能计算
-- **Asset Store**：内置资源商店，大量第三方插件和美术资源
-
-## 收费模式变更（2023.9）
-
-2023 年 9 月，Unity 宣布基于安装量的 Runtime Fee 收费方案，引发开发者大规模抗议。随后 Unity 撤回该方案，现任 CEO Matthew Bromberg（2024 年上任）承诺恢复开发者信任。
-
-## Further Reading
-
-- [Unity 文档](https://docs.unity.com/): 官方文档
-- [Unity 2022 LTS](https://docs.unity3d.com/2022.3/Documentation/Manual/): 推荐生产版本
+## Detailed Analysis
+The repaired article keeps the facts to core documented concepts and removes weak claim-evidence mapping about adoption or capabilities.
 
 ## Related Articles
 

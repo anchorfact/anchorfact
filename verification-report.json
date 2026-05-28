@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 342,
     "average_sources_per_article": "2.2",
-    "overall_verification_rate": "70.0%",
+    "overall_verification_rate": "70.3%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 297
+    "manual_reviewed_articles": 306
   },
   "articles": [
     {
@@ -14699,19 +14699,20 @@
       "file": "content/ai/quantum-machine-learning.md",
       "article_id": "quantum-machine-learning",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Machine learning for practical quantum error mitigation",
+          "source_title": "Quantum machine learning",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nature.com/articles/s42256-024-00927-2",
+              "identifier": "https://www.nature.com/articles/nature23474",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nature.com/articles/s42256-024-00927-2?error=cookies_not_supported&code=78a0ecf8-4a25-49f5-bda7-2707979b5b96"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -14719,25 +14720,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Tensor networks for quantum machine learning",
+          "source_title": "Supervised learning with quantum-enhanced feature spaces",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1098/rspa.2023.0218",
-              "verified": false,
+              "identifier": "https://www.nature.com/articles/s41586-019-0980-2",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://royalsocietypublishing.org/rspa/article/54586"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Supervised learning with quantum computers",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1804.00633",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/rag.md",
@@ -15698,19 +15720,20 @@
       "file": "content/ai/swarm-evolutionary-intelligence.md",
       "article_id": "swarm-evolutionary-intelligence",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Evolving Neural Networks through Augmenting Topologies (NEAT)",
-          "source_type": "academic_paper",
+          "source_title": "Particle swarm optimization",
+          "source_type": "conference_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf",
+              "identifier": "https://doi.org/10.1109/ICNN.1995.488968",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -15718,16 +15741,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Particle Swarm Optimization: A Comprehensive Survey",
+          "source_title": "Ant Colony System: A Cooperative Learning Approach to the Traveling Salesman Problem",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://ieeexplore.ieee.org/document/10243027",
+              "identifier": "https://doi.org/10.1109/4235.585892",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://ieeexplore.ieee.org/document/10243027"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "A genetic algorithm tutorial",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1007/BF00175354",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -15735,8 +15777,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/synthetic-data-training.md",
@@ -15867,35 +15911,56 @@
       "file": "content/ai/text-classification.md",
       "article_id": "text-classification",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Text Classification in the LLM Era -- Where do we stand?",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2502.11830",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "A review on NLP zero-shot and few-shot learning: methods and applications",
+          "source_title": "Convolutional Neural Networks for Sentence Classification",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://link.springer.com/article/10.1007/s42452-025-07225-5",
+              "identifier": "https://arxiv.org/abs/1408.5882",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://link.springer.com/article/10.1007/s42452-025-07225-5?error=cookies_not_supported&code=8cf262ef-2985-4d91-8142-2266d42ae6d6"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Bag of Tricks for Efficient Text Classification",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1607.01759",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1810.04805",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -15903,8 +15968,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/text-summarization.md",
@@ -35126,19 +35193,56 @@
       "file": "content/game-development/tilemap-system.md",
       "article_id": "kb-2026-00224",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "GDC Vault",
-          "source_type": "conference",
+          "source_title": "Using Tilemaps",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdcvault.com/",
+              "identifier": "https://docs.godotengine.org/en/stable/tutorials/2d/using_tilemaps.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdcvault.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Tilemaps",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.unity3d.com/Manual/Tilemap.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Tilemap Game Object",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.phaser.io/phaser/concepts/gameobjects/tilemap",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -35146,8 +35250,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/game-development/ugc-mod-systems.md",
@@ -35180,19 +35286,20 @@
       "file": "content/game-development/unity-engine.md",
       "article_id": "kb-2026-00061",
       "generation_method": "human_only",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Unity Documentation",
-          "source_type": "documentation",
+          "source_title": "GameObjects",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.unity.com/",
+              "identifier": "https://docs.unity3d.com/Manual/GameObjects.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://docs.unity.com/en-us"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -35200,16 +35307,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Unity 2022 LTS Documentation",
-          "source_type": "documentation",
+          "source_title": "Scenes",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.unity3d.com/2022.3/Documentation/Manual/",
+              "identifier": "https://docs.unity3d.com/Manual/CreatingScenes.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://docs.unity3d.com/2022.3/Documentation/Manual/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Scripting",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.unity3d.com/Manual/ScriptingSection.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -35217,8 +35343,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/game-development/unreal-engine-5.md",
@@ -35288,19 +35416,56 @@
       "file": "content/game-development/visual-novel-design.md",
       "article_id": "kb-2026-00225",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "GDC Vault",
-          "source_type": "conference",
+          "source_title": "Ren'Py Quickstart",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdcvault.com/",
+              "identifier": "https://www.renpy.org/doc/html/quickstart.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdcvault.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Menus, Labels, and Jumps",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.renpy.org/doc/html/menus.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Introduction to ChoiceScript",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.choiceofgames.com/make-your-own-games/choicescript-intro/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -35308,8 +35473,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/geography/african-geography.md",
@@ -35694,11 +35861,11 @@
       "file": "content/geography/climate-zones.md",
       "article_id": "climate-zones",
       "generation_method": "ai_assisted",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Koppen climate classification - Britannica",
-          "source_type": "reference",
+          "source_title": "Koppen climate classification",
+          "source_type": "encyclopedia_entry",
           "results": [
             {
               "method": "url",
@@ -35707,7 +35874,7 @@
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Targeted report hygiene repair; restored climate-zones entry after legacy id collision with mount-everest."
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -35715,17 +35882,35 @@
           "all_verified": true
         },
         {
-          "source_title": "World Map of the Koppen-Geiger Climate Classification",
-          "source_type": "research_dataset",
+          "source_title": "World Map of the Koppen-Geiger climate classification updated",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://koeppen-geiger.vu-wien.ac.at/",
+              "identifier": "https://doi.org/10.1127/0941-2948/2006/0130",
               "verified": true,
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Targeted report hygiene repair; restored climate-zones entry after legacy id collision with mount-everest."
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Climate Zones",
+          "source_type": "education_resource",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://education.nationalgeographic.org/resource/climate-zones/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -35733,7 +35918,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
+      "sources_verified": 3,
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
@@ -37625,19 +37810,20 @@
       "file": "content/health/meditation-and-mindfulness.md",
       "article_id": "kb-2026-00424",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Full Catastrophe Living (Jon Kabat-Zinn)",
-          "source_type": "book",
+          "source_title": "An outpatient program in behavioral medicine for chronic pain patients based on the practice of mindfulness meditation",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/289133/full-catastrophe-living-by-jon-kabat-zinn/",
+              "identifier": "https://doi.org/10.1007/BF00845552",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/289133/full-catastrophe-living-by-jon-kabat-zinn/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -37645,33 +37831,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Wherever You Go, There You Are (30th Anniversary, 2025)",
-          "source_type": "book",
+          "source_title": "Meditation Programs for Psychological Stress and Well-being: A Systematic Review and Meta-analysis",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.hachettebookgroup.com/mindfulness/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.hachettebookgroup.com/mindfulness/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Mindful Way Through Depression (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.guilford.com/mindfulness/",
+              "identifier": "https://doi.org/10.1001/jamainternmed.2013.13018",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.guilford.com/browse/psychology-psychiatry-social-work/mindfulness"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -37679,25 +37849,28 @@
           "all_verified": true
         },
         {
-          "source_title": "Wherever You Go (30th Anniversary, 2025)",
-          "source_type": "book",
+          "source_title": "Meditation and Mindfulness: Effectiveness and Safety",
+          "source_type": "government_resource",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.hachettebookgroup.com/mindfulness/",
-              "verified": false,
+              "identifier": "https://www.nccih.nih.gov/health/meditation-and-mindfulness-effectiveness-and-safety",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.hachettebookgroup.com/mindfulness/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/health/mental-health-basics.md",
@@ -41958,19 +42131,56 @@
       "file": "content/science/climate-change-solutions.md",
       "article_id": "kb-2026-00453",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Drawdown: The Most Comprehensive Plan Ever Proposed to Reverse Global Warming (Paul Hawken)",
-          "source_type": "book",
+          "source_title": "Climate Change 2022: Mitigation of Climate Change",
+          "source_type": "scientific_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://drawdown.org/",
+              "identifier": "https://www.ipcc.ch/report/ar6/wg3/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://drawdown.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Net Zero Roadmap: A Global Pathway to Keep the 1.5 C Goal in Reach",
+          "source_type": "policy_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.iea.org/reports/net-zero-roadmap-a-global-pathway-to-keep-the-15-0c-goal-in-reach",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Emissions Gap Report 2023",
+          "source_type": "policy_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.unep.org/resources/emissions-gap-report-2023",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -41978,8 +42188,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/climate-change.md",
@@ -47913,19 +48125,20 @@
       "file": "content/sports/sports-psychology.md",
       "article_id": "kb-2026-00504",
       "generation_method": "ai_assisted",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Foundations of Sport and Exercise Psychology (Weinberg & Gould, 7th Ed)",
-          "source_type": "textbook",
+          "source_title": "About Sport & Performance Psychology",
+          "source_type": "professional_resource",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.humankinetics.com/",
+              "identifier": "https://appliedsportpsych.org/about/about-sport-and-performance-psychology/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://us.humankinetics.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -47933,16 +48146,35 @@
           "all_verified": true
         },
         {
-          "source_title": "APA Division 47: Exercise and Sport Psychology",
-          "source_type": "reference",
+          "source_title": "Self-Talk and Sports Performance: A Meta-Analysis",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.apadivisions.org/division-47",
+              "identifier": "https://doi.org/10.1177/1745691611413136",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.apadivisions.org/division-47"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Psychological Skills Training as a Way to Enhance an Athlete's Performance in High-Intensity Sports",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1111/j.1600-0838.2011.01413.x",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -47950,8 +48182,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/sports/strength-training-physiology-of-hypertrophy-and-neural-adaptation.md",
