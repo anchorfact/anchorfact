@@ -47,6 +47,16 @@ Production branch: main
 Node.js version: 20 or newer
 ```
 
+The canonical production project should also set:
+
+```txt
+ANCHORFACT_OFFICIAL_BUILD=true
+ANCHORFACT_CANONICAL_SITE=https://anchorfact.org
+ANCHORFACT_SOURCE_REPOSITORY=https://github.com/anchorfact/anchorfact
+```
+
+Forks should set these values to their own site and repository, or leave `ANCHORFACT_OFFICIAL_BUILD` unset.
+
 Do not run `npm run verify-full` inside the Cloudflare Pages build. Source verification is intentionally handled by GitHub Actions because it is slower and depends on external DOI, arXiv, and URL checks.
 
 The scheduled `Verification Snapshot` workflow runs weekly and can also be started manually from the GitHub Actions tab. It runs:
@@ -67,7 +77,7 @@ After a production deployment, run:
 EXPECTED_PUBLIC_ARTICLES=555 EXPECTED_DRAFT_ARTICLES=445 EXPECTED_CLAIMS=1685 npm run smoke:prod
 ```
 
-This checks the homepage, `/manifest.json`, `/llms.txt`, `/claims.json`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
+This checks the homepage, `/manifest.json`, `/llms.txt`, `/claims.json`, `/provenance.json`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
 
 ## Content Model
 
@@ -94,9 +104,12 @@ Only public articles contribute publishable facts to `/claims.json`.
 | `/llms.txt` | Public verified index for LLM crawlers. |
 | `/manifest.json` | Full public/draft index with quality reasons and verification metadata. |
 | `/claims.json` | Public verified atomic claims with evidence links. |
+| `/provenance.json` | Build identity, schema version, content counts, and artifact checksums. |
 | `/drafts.html` | Draft review index, marked `noindex`. |
 | `/{slug}/index.json` | JSON-LD article record with confidence and verification layer. |
 | `/{slug}/facts.json` | Per-article atomic facts, when present. |
+
+`dist/` is generated output and should not be committed. The published site exposes build provenance so consumers can distinguish the canonical `anchorfact.org` build from forks or stale mirrors.
 
 ## MCP and Local API
 
@@ -137,10 +150,11 @@ Public hygiene checks are shared by the compiler, quality gate, and audit script
 | `npm run pipeline` | Runs verify, quality, and build. |
 | `npm run smoke:prod` | Checks the live production machine-readable endpoints. |
 | `npm run audit-public-sample` | Regenerates the 20-article public content audit report. |
+| `npm run audit-public-full` | Fails if any public article has an actionable audit recommendation. |
 | `npm run repo:hygiene` | Checks for stale root snapshots, mojibake, old launch metrics, and tracked generated files. |
 
 Only the scripts above should be treated as production workflow entrypoints. Historical batch-generation and enrichment scripts live in `scripts/legacy/` for reference only; do not run them against `content/` without a separate review branch.
 
 ## License
 
-Content is CC-BY 4.0. Code is MIT.
+Content is CC-BY 4.0. Code is MIT. See `NOTICE.md` for attribution and official-build identity guidance.

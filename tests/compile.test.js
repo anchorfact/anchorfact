@@ -108,6 +108,11 @@ execFileSync('node', ['src/compile.js', contentDir, distDir, reportPath], { stdi
 
 test('manifest contains structured article entries and status counts', () => {
   const manifest = JSON.parse(readFileSync(join(distDir, 'manifest.json'), 'utf-8'));
+  assertEq(manifest.schema_version, 'anchorfact.manifest.v1');
+  assertEq(manifest.official_source_repository, 'https://github.com/anchorfact/anchorfact');
+  assertEq(manifest.official_site, 'https://anchorfact.org');
+  assertEq(manifest.provenance_url, 'https://anchorfact.org/provenance.json');
+  assert(manifest.build && typeof manifest.build === 'object', 'manifest.build should describe the build environment');
   assert(Array.isArray(manifest.articles), 'manifest.articles should be an array');
   assertEq(manifest.article_count, 2);
   assertEq(manifest.public_article_count, 1);
@@ -139,6 +144,8 @@ test('draft page is generated with noindex and draft status', () => {
 test('claims.json includes only public atomic facts with evidence', () => {
   assert(existsSync(join(distDir, 'claims.json')), 'claims.json missing');
   const claims = JSON.parse(readFileSync(join(distDir, 'claims.json'), 'utf-8'));
+  assertEq(claims.schema_version, 'anchorfact.claims.v1');
+  assertEq(claims.provenance_url, 'https://anchorfact.org/provenance.json');
   assertEq(claims.claim_count, 2);
   assertEq(claims.claims.length, 2);
   assertEq(claims.claims[0].statement, 'Public fixture claim.');
@@ -148,10 +155,30 @@ test('claims.json includes only public atomic facts with evidence', () => {
   assert(!claims.claims.some(claim => claim.id.endsWith('broken')), 'broken atomic facts should not be public claims');
 });
 
+test('provenance.json describes compiled artifacts', () => {
+  assert(existsSync(join(distDir, 'provenance.json')), 'provenance.json missing');
+  const provenance = JSON.parse(readFileSync(join(distDir, 'provenance.json'), 'utf-8'));
+  assertEq(provenance.schema_version, 'anchorfact.provenance.v1');
+  assertEq(provenance.official_site, 'https://anchorfact.org');
+  assertEq(provenance.content_counts, {
+    articles: 2,
+    public: 1,
+    draft: 1,
+    claims: 2
+  });
+  assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.manifest_json.sha256), 'manifest checksum should be sha256 hex');
+  assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.claims_json.sha256), 'claims checksum should be sha256 hex');
+  assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.llms_txt.sha256), 'llms checksum should be sha256 hex');
+  assert(provenance.artifacts.manifest_json.bytes > 0, 'manifest artifact should include byte size');
+  assert(provenance.artifacts.claims_json.bytes > 0, 'claims artifact should include byte size');
+  assert(provenance.artifacts.llms_txt.bytes > 0, 'llms artifact should include byte size');
+});
+
 test('_headers is generated for Cloudflare Pages static output', () => {
   const headers = readFileSync(join(distDir, '_headers'), 'utf-8');
   assert(headers.includes('/*\n  X-Content-Type-Options: nosniff'), '_headers should include global security headers');
   assert(headers.includes('/manifest.json\n  Access-Control-Allow-Origin: *'), '_headers should expose manifest CORS');
+  assert(headers.includes('/provenance.json\n  Access-Control-Allow-Origin: *'), '_headers should expose provenance CORS');
   assert(headers.includes('/*/index.json\n  Access-Control-Allow-Origin: *'), '_headers should expose article JSON-LD CORS');
   assert(headers.includes('/drafts\n  X-Robots-Tag: noindex, nofollow'), '_headers should noindex extensionless drafts route');
   assert(headers.includes('/drafts.html\n  X-Robots-Tag: noindex, nofollow'), '_headers should noindex drafts.html route');

@@ -3,6 +3,13 @@ import { join } from 'path';
 import { publicClaims } from './claims.js';
 import { escapeHtml } from './html.js';
 import { buildManifest, distribution } from './manifest.js';
+import {
+  CLAIMS_SCHEMA_VERSION,
+  PROVENANCE_PATH,
+  buildMetadataFromEnv,
+  buildProvenance,
+  publicUrl
+} from './build-metadata.js';
 
 function articleLink(result) {
   const slug = result._quality.canonicalSlug;
@@ -20,12 +27,14 @@ function writeManifest(distDir, results, publicResults, draftResults, claims, op
     publicResults,
     draftResults,
     claims,
-    generated: new Date().toISOString(),
+    generated: options.generated || new Date().toISOString(),
+    build: options.build,
     verificationTimestamp: options.verificationTimestamp,
     verificationCount: options.verificationCount || 0
   });
 
   writeFileSync(join(distDir, 'manifest.json'), JSON.stringify(manifest, null, 2));
+  return manifest;
 }
 
 function writeRootIndex(distDir, results, publicResults, draftResults, claims) {
@@ -69,6 +78,7 @@ function writeRootIndex(distDir, results, publicResults, draftResults, claims) {
     <a href="/llms.txt">llms.txt</a> &middot;
     <a href="/manifest.json">Manifest</a> &middot;
     <a href="/claims.json">Claims JSON</a> &middot;
+    <a href="/provenance.json">Provenance</a> &middot;
     <a href="/dashboard.html">Dashboard</a>
   </div>
   <div class="card">
@@ -136,6 +146,7 @@ ${entries || '_No public verified entries yet._'}
 
 - [Manifest](https://anchorfact.org/manifest.json): Full index with public/draft status.
 - [Claims](https://anchorfact.org/claims.json): Public verified atomic claims.
+- [Provenance](https://anchorfact.org/provenance.json): Build identity and artifact checksums.
 
 ## Policy
 
@@ -152,6 +163,7 @@ function writeSitemap(distDir, publicResults) {
     '<url><loc>https://anchorfact.org/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>',
     '<url><loc>https://anchorfact.org/llms.txt</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/claims.json</loc><changefreq>daily</changefreq><priority>0.8</priority></url>',
+    '<url><loc>https://anchorfact.org/provenance.json</loc><changefreq>daily</changefreq><priority>0.8</priority></url>',
     ...publicResults.flatMap(result => {
       const slug = result._quality.canonicalSlug;
       return [
@@ -208,6 +220,11 @@ function writeHeaders(distDir) {
   Content-Type: application/json; charset=utf-8
   Cache-Control: public, max-age=3600
 
+/provenance.json
+  Access-Control-Allow-Origin: *
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: public, max-age=3600
+
 /drafts
   X-Robots-Tag: noindex, nofollow
 
@@ -248,7 +265,7 @@ function writeDashboard(distDir, results, publicResults, draftResults, claims, v
       <p>High: ${publicDist.high} &middot; Medium: ${publicDist.medium} &middot; Low: ${publicDist.low}</p>
       <p>Verification report: ${verificationTimestamp || 'not available'}</p>
     </div>
-    <p><a href="/">Home</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/manifest.json">manifest.json</a> &middot; <a href="/claims.json">claims.json</a></p>
+    <p><a href="/">Home</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/manifest.json">manifest.json</a> &middot; <a href="/claims.json">claims.json</a> &middot; <a href="/provenance.json">provenance.json</a></p>
   </div>
 </body>
 </html>`;
@@ -264,12 +281,26 @@ export function writeStaticOutputs(distDir, results, options = {}) {
   const publicResults = results.filter(result => result._quality.publicEligible);
   const draftResults = results.filter(result => !result._quality.publicEligible);
   const claims = publicClaims(publicResults);
+  const generated = options.generated || new Date().toISOString();
+  const build = options.build || buildMetadataFromEnv();
+  const provenanceUrl = publicUrl(PROVENANCE_PATH, build.canonical_site);
+  const claimsPayload = {
+    schema_version: CLAIMS_SCHEMA_VERSION,
+    generated,
+    provenance_url: provenanceUrl,
+    claim_count: claims.length,
+    claims
+  };
 
   writeFileSync(
     join(distDir, 'claims.json'),
-    JSON.stringify({ generated: new Date().toISOString(), claim_count: claims.length, claims }, null, 2)
+    JSON.stringify(claimsPayload, null, 2)
   );
-  writeManifest(distDir, results, publicResults, draftResults, claims, options);
+  const manifest = writeManifest(distDir, results, publicResults, draftResults, claims, {
+    ...options,
+    generated,
+    build
+  });
   writeRootIndex(distDir, results, publicResults, draftResults, claims);
   writeDrafts(distDir, draftResults);
   writeLlmsTxt(distDir, publicResults, claims, options.verificationTimestamp);
@@ -278,4 +309,8 @@ export function writeStaticOutputs(distDir, results, options = {}) {
   writeHeaders(distDir);
   writeDashboard(distDir, results, publicResults, draftResults, claims, options.verificationTimestamp);
   writeFavicon(distDir);
+  writeFileSync(
+    join(distDir, 'provenance.json'),
+    JSON.stringify(buildProvenance({ manifest, claimsPayload, distDir, generated, build }), null, 2)
+  );
 }

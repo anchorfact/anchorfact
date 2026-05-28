@@ -1,3 +1,12 @@
+import {
+  COMPILER_VERSION,
+  MANIFEST_SCHEMA_VERSION,
+  OFFICIAL_SOURCE_REPOSITORY,
+  OFFICIAL_SITE,
+  PROVENANCE_PATH,
+  publicUrl
+} from './build-metadata.js';
+
 export function distribution(results) {
   return {
     high: results.filter(result => result._confidence?.level === 'high').length,
@@ -33,11 +42,20 @@ export function buildManifest({
   draftResults,
   claims,
   generated,
+  build,
   verificationTimestamp,
   verificationCount
 }) {
+  const buildInfo = build || null;
+  const officialSite = buildInfo?.canonical_site || OFFICIAL_SITE;
+
   return {
+    schema_version: MANIFEST_SCHEMA_VERSION,
     generated,
+    official_source_repository: OFFICIAL_SOURCE_REPOSITORY,
+    official_site: officialSite,
+    provenance_url: publicUrl(PROVENANCE_PATH, officialSite),
+    build: buildInfo,
     article_count: results.length,
     public_article_count: publicResults.length,
     draft_article_count: draftResults.length,
@@ -47,7 +65,7 @@ export function buildManifest({
     articles: results.map(manifestArticle),
     confidence_distribution: distribution(results),
     public_confidence_distribution: distribution(publicResults),
-    compiler_version: '0.3.0',
+    compiler_version: COMPILER_VERSION,
     verification_report: verificationTimestamp
       ? { timestamp: verificationTimestamp, articles_verified: verificationCount || 0 }
       : null

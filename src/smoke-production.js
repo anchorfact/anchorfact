@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { createHash } from 'crypto';
 
 const DEFAULT_BASE_URL = 'https://anchorfact.org/';
 
@@ -29,6 +30,10 @@ function countArticles(articles, predicate) {
     return 0;
   }
   return articles.filter(predicate).length;
+}
+
+function sha256Text(text) {
+  return createHash('sha256').update(Buffer.from(text, 'utf8')).digest('hex');
 }
 
 async function fetchRoute(baseUrl, route) {
@@ -74,7 +79,7 @@ async function main() {
   const expectedDraft = readExpectedInt('EXPECTED_DRAFT_ARTICLES');
   const expectedClaims = readExpectedInt('EXPECTED_CLAIMS');
 
-  const routes = ['/', '/manifest.json', '/llms.txt', '/claims.json', '/drafts.html'];
+  const routes = ['/', '/manifest.json', '/llms.txt', '/claims.json', '/provenance.json', '/drafts.html'];
   const results = {};
 
   for (const route of routes) {
@@ -84,6 +89,7 @@ async function main() {
 
   const manifest = JSON.parse(results['/manifest.json'].body);
   const claims = JSON.parse(results['/claims.json'].body);
+  const provenance = JSON.parse(results['/provenance.json'].body);
   const llmsText = results['/llms.txt'].body;
   const draftsHtml = results['/drafts.html'].body;
 
@@ -100,12 +106,25 @@ async function main() {
   assertOk(manifest.public_article_count === publicArticles, `manifest public_article_count ${manifest.public_article_count} does not match articles[] count ${publicArticles}`, failures);
   assertOk(manifest.draft_article_count === draftArticles, `manifest draft_article_count ${manifest.draft_article_count} does not match articles[] count ${draftArticles}`, failures);
   assertOk(manifest.claim_count === claimCount, `manifest claim_count ${manifest.claim_count} does not match claims.json count ${claimCount}`, failures);
+  assertOk(manifest.schema_version === 'anchorfact.manifest.v1', `manifest schema_version expected anchorfact.manifest.v1, got ${manifest.schema_version || '(missing)'}`, failures);
+  assertOk(manifest.provenance_url === new URL('/provenance.json', baseUrl).href, `manifest provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${manifest.provenance_url || '(missing)'}`, failures);
+  assertOk(claims.schema_version === 'anchorfact.claims.v1', `claims schema_version expected anchorfact.claims.v1, got ${claims.schema_version || '(missing)'}`, failures);
+  assertOk(claims.provenance_url === new URL('/provenance.json', baseUrl).href, `claims provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${claims.provenance_url || '(missing)'}`, failures);
+  assertOk(provenance.schema_version === 'anchorfact.provenance.v1', `provenance schema_version expected anchorfact.provenance.v1, got ${provenance.schema_version || '(missing)'}`, failures);
+  assertOk(provenance.content_counts?.public === manifest.public_article_count, 'provenance public count does not match manifest', failures);
+  assertOk(provenance.content_counts?.draft === manifest.draft_article_count, 'provenance draft count does not match manifest', failures);
+  assertOk(provenance.content_counts?.claims === claimCount, 'provenance claim count does not match claims.json', failures);
+  assertOk(provenance.artifacts?.manifest_json?.sha256 === sha256Text(results['/manifest.json'].body), 'provenance manifest hash does not match /manifest.json', failures);
+  assertOk(provenance.artifacts?.claims_json?.sha256 === sha256Text(results['/claims.json'].body), 'provenance claims hash does not match /claims.json', failures);
+  assertOk(provenance.artifacts?.llms_txt?.sha256 === sha256Text(results['/llms.txt'].body), 'provenance llms hash does not match /llms.txt', failures);
   assertOk(llmsText.trim().length > 0, '/llms.txt is empty', failures);
   assertOk(/noindex/i.test(draftsHtml), '/drafts.html is missing noindex', failures);
   headerIncludes(results['/'], 'X-Content-Type-Options', 'nosniff', failures);
   headerIncludes(results['/manifest.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/manifest.json'], 'Cache-Control', 'max-age=3600', failures);
   headerIncludes(results['/claims.json'], 'Access-Control-Allow-Origin', '*', failures);
+  headerIncludes(results['/provenance.json'], 'Access-Control-Allow-Origin', '*', failures);
+  headerIncludes(results['/provenance.json'], 'Cache-Control', 'max-age=3600', failures);
   headerIncludes(results['/drafts.html'], 'X-Robots-Tag', 'noindex', failures);
 
   const firstPublicArticle = Array.isArray(manifest.articles)
@@ -131,6 +150,8 @@ async function main() {
   console.log(`public_article_count=${manifest.public_article_count}`);
   console.log(`draft_article_count=${manifest.draft_article_count}`);
   console.log(`claim_count=${manifest.claim_count}`);
+  console.log(`provenance_builder=${provenance.build?.builder || 'unknown'}`);
+  console.log(`provenance_commit_sha=${provenance.build?.commit_sha || 'unknown'}`);
 
   if (failures.length > 0) {
     console.error('Smoke test failed:');
