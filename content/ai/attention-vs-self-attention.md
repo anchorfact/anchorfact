@@ -1,104 +1,93 @@
 ---
-atomic_facts:
-  - confidence: medium
-    id: fact-ai-001
-    source_title: Attention Is All You Need (Vaswani et al., 2017)
-    source_url: https://arxiv.org/abs/1706.03762
-    statement: >-
-      Attention (Bahdanau 2014) computes relevance between encoder and decoder states — cross-attention. Self-Attention (Vaswani 2017) computes relevance within a single sequence — each position
-      attends to all other positions. Self-attention enables the Transformer to capture long-range dependencies without recurrence.
-  - confidence: medium
-    id: fact-ai-002
-    source_title: Attention Is All You Need (Vaswani et al., 2017)
-    source_url: https://arxiv.org/abs/1706.03762
-    statement: "Scaled Dot-Product Attention: Attention(Q,K,V) = softmax(QK^T/√d_k)V."
-  - confidence: medium
-    id: fact-ai-003
-    source_title: Attention Is All You Need (Vaswani et al., 2017)
-    source_url: https://arxiv.org/abs/1706.03762
-    statement: "Multi-Head Attention: run attention h times in parallel, concatenate outputs — captures different relationship types."
-category: ai
-completeness: 0.88
-confidence: high
-conflict_of_interest: none_declared
-created_date: "2026-05-22"
-data_period: static
-derived_from_human_seed: true
-disputed_statements:
-  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
-generation_method: ai_structured
 id: kb-2026-00284
-is_live_document: false
-known_gaps:
-  - Statistics and data cited are from 2017 and earlier; more recent data may have become available since publication
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-  - Recent developments from 2025-2026 may not be reflected
-language: en
-last_verified: "2026-05-22"
-primary_sources:
-  - authors:
-      - Vaswani, Ashish
-      - Shazeer, Noam
-      - Parmar, Niki
-      - Uszkoreit, Jakob
-      - Jones, Llion
-      - Gomez, Aidan N.
-      - Kaiser, Łukasz
-      - Polosukhin, Illia
-    institution: Google Brain / NeurIPS
-    title: Attention Is All You Need (Transformer)
-    type: conference_paper
-    url: https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
-    year: 2017
-  - authors:
-      - Bahdanau, Dzmitry
-      - Cho, Kyunghyun
-      - Bengio, Yoshua
-    institution: University of Montreal / ICLR
-    title: Neural Machine Translation by Jointly Learning to Align and Translate (Bahdanau Attention)
-    type: conference_paper
-    url: https://arxiv.org/abs/1409.0473
-    year: 2015
-  - authors:
-      - Tay, Yi
-      - Dehghani, Mostafa
-      - Bahri, Dara
-      - Metzler, Donald
-    institution: Google Research / ACM Computing Surveys
-    title: "Efficient Transformers: A Comprehensive Survey (Tay et al. — Google)"
-    type: survey_paper
-    url: https://doi.org/10.1145/3530811
-    year: 2022
-schema_type: TechArticle
-secondary_sources:
-  - authors:
-      - Bahdanau
-      - Cho
-      - Bengio
-    doi: 10.48550/arXiv.1409.0473
-    institution: arXiv
-    title: Neural Machine Translation by Jointly Learning to Align and Translate
-    type: academic_paper
-    url: https://arxiv.org/abs/1409.0473
-    year: 2014
 title: Attention vs. Self-Attention
-updated: "2026-05-24"
+schema_type: TechArticle
+category: ai
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: ai_structured
+derived_from_human_seed: true
+conflict_of_interest: none_declared
+is_live_document: false
+data_period: static
+atomic_facts:
+  - id: fact-ai-attention-vs-self-attention-1
+    statement: >-
+      Bahdanau attention lets a neural machine translation model learn to align and translate by
+      searching for relevant source-sentence parts while generating a target word.
+    source_title: Neural Machine Translation by Jointly Learning to Align and Translate
+    source_url: https://arxiv.org/abs/1409.0473
+    confidence: medium
+  - id: fact-ai-attention-vs-self-attention-2
+    statement: >-
+      The Transformer replaces recurrence and convolution with attention mechanisms, including
+      self-attention over sequence positions.
+    source_title: Attention Is All You Need
+    source_url: https://arxiv.org/abs/1706.03762
+    confidence: medium
+  - id: fact-ai-attention-vs-self-attention-3
+    statement: >-
+      Efficient Transformers surveys Transformer variants that target computational and memory
+      efficiency limitations of attention.
+    source_title: 'Efficient Transformers: A Survey'
+    source_url: https://doi.org/10.1145/3530811
+    confidence: medium
+completeness: 0.82
+known_gaps:
+  - Specialized edge cases and implementation details are outside this source-mapped public slice.
+disputed_statements: []
+primary_sources:
+  - title: Neural Machine Translation by Jointly Learning to Align and Translate
+    authors:
+      - Dzmitry Bahdanau
+      - Kyunghyun Cho
+      - Yoshua Bengio
+    type: conference_paper
+    year: 2015
+    url: https://arxiv.org/abs/1409.0473
+    institution: arXiv
+  - title: Attention Is All You Need
+    authors:
+      - Ashish Vaswani
+      - Noam Shazeer
+      - Niki Parmar
+      - et al.
+    type: conference_paper
+    year: 2017
+    url: https://arxiv.org/abs/1706.03762
+    institution: arXiv
+  - title: 'Efficient Transformers: A Survey'
+    authors:
+      - Yi Tay
+      - Mostafa Dehghani
+      - Dara Bahri
+      - Donald Metzler
+    type: survey_paper
+    year: 2022
+    url: https://doi.org/10.1145/3530811
+    institution: ACM Computing Surveys
+secondary_sources: []
+updated: '2026-05-28'
 ---
+
 ## TL;DR
 
-Attention (Bahdanau 2014) computes relevance between encoder and decoder states — cross-attention. Self-Attention (Vaswani 2017) computes relevance within a single sequence — each position attends to all other positions. Self-attention enables the Transformer to capture long-range dependencies without recurrence.
+Attention mechanisms relate one set of sequence states to another, while self-attention relates positions within the same sequence.
 
 ## Core Explanation
 
-Scaled Dot-Product Attention: Attention(Q,K,V) = softmax(QK^T/√d_k)V. Q=query, K=key, V=value. d_k scaling prevents softmax saturation. Multi-Head Attention: run attention h times in parallel, concatenate outputs — captures different relationship types. Cross-attention: Q from decoder, K,V from encoder. Self-attention: Q,K,V all from same sequence. Causal/Masked self-attention prevents attending to future tokens.
+The key distinction is whether attention relates decoder state to encoder state, as in early neural machine translation, or relates positions inside the same sequence.
+
+## Source-Mapped Facts
+
+- Bahdanau attention lets a neural machine translation model learn to align and translate by searching for relevant source-sentence parts while generating a target word. ([source](https://arxiv.org/abs/1409.0473))
+- The Transformer replaces recurrence and convolution with attention mechanisms, including self-attention over sequence positions. ([source](https://arxiv.org/abs/1706.03762))
+- Efficient Transformers surveys Transformer variants that target computational and memory efficiency limitations of attention. ([source](https://doi.org/10.1145/3530811))
 
 ## Further Reading
 
-- [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762)
-
-## Related Articles
-
-- [Attention Mechanism](../attention-mechanism.md)
-- [Attention Mechanisms: Scaled Dot-Product to FlashAttention](../attention-mechanisms-deep-dive.md)
-- [Self-Supervised Learning: Learning Without Labels](../self-supervised-learning.md)
+- [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)
+- [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+- [Efficient Transformers: A Survey](https://doi.org/10.1145/3530811)

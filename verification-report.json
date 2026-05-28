@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 0,
     "average_sources_per_article": "2.1",
-    "overall_verification_rate": "61.5%",
+    "overall_verification_rate": "62.1%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 242
+    "manual_reviewed_articles": 252
   },
   "articles": [
     {
@@ -7313,33 +7313,56 @@
       "file": "content/ai/anomaly-detection.md",
       "article_id": "anomaly-detection",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
+        {
+          "source_title": "Anomaly Detection: A Survey",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1145/1541880.1541882",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
         {
           "source_title": "Isolation Forest",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/icdm08b.pdf",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://doi.org/10.1109/ICDM.2008.17",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Variational Autoencoder based Anomaly Detection using Reconstruction Probability",
-          "source_type": "academic_paper",
+          "source_title": "Deep Learning for Anomaly Detection: A Review",
+          "source_type": "survey_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "http://dm.snu.ac.kr/static/docs/TR/SNUDM-TR-2015-03.pdf",
+              "identifier": "https://doi.org/10.1145/3439950",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "http://dm.snu.ac.kr/static/docs/TR/SNUDM-TR-2015-03.pdf"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -7347,8 +7370,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "errors": []
     },
     {
       "file": "content/ai/attention-mechanism.md",
@@ -7487,16 +7510,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Attention Is All You Need (Transformer)",
+          "source_title": "Neural Machine Translation by Jointly Learning to Align and Translate",
           "source_type": "conference_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf",
+              "identifier": "https://arxiv.org/abs/1409.0473",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -7504,15 +7528,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Neural Machine Translation by Jointly Learning to Align and Translate (Bahdanau Attention)",
+          "source_title": "Attention Is All You Need",
           "source_type": "conference_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1409.0473",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1706.03762",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=1409.0473&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -7520,25 +7546,26 @@
           "all_verified": true
         },
         {
-          "source_title": "Efficient Transformers: A Comprehensive Survey (Tay et al. — Google)",
+          "source_title": "Efficient Transformers: A Survey",
           "source_type": "survey_paper",
           "results": [
             {
               "method": "url",
               "identifier": "https://doi.org/10.1145/3530811",
-              "verified": false,
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/doi/10.1145/3530811"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "errors": []
     },
     {
       "file": "content/ai/audio-source-separation.md",
@@ -11355,7 +11382,7 @@
       "file": "content/ai/mcp.md",
       "article_id": "kb-2026-00016",
       "generation_method": "ai_structured",
-      "sources_total": 8,
+      "sources_total": 3,
       "verification_results": [
         {
           "source_title": "Introducing the Model Context Protocol",
@@ -11366,8 +11393,9 @@
               "identifier": "https://www.anthropic.com/news/model-context-protocol",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.anthropic.com/news/model-context-protocol"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -11375,16 +11403,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Model Context Protocol Specification (2025-06-18)",
-          "source_type": "standard",
+          "source_title": "Model Context Protocol Introduction",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://modelcontextprotocol.io/specification/2025-06-18",
+              "identifier": "https://modelcontextprotocol.io/docs/getting-started/intro",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://modelcontextprotocol.io/specification/2025-06-18"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -11392,104 +11421,26 @@
           "all_verified": true
         },
         {
-          "source_title": "MCP Standardization and Agent Protocol (2026-03-18 analysis)",
-          "source_type": "analysis",
+          "source_title": "Model Context Protocol Architecture",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://oct-rick-brick.com/zh/articles/2026-03-18-mcp-standardization-agent-protocol/",
+              "identifier": "https://modelcontextprotocol.io/docs/learn/architecture",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://oct-rick-brick.com/zh/articles/2026-03-18-mcp-standardization-agent-protocol/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "Model Context Protocol Specification (v2025-12)",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://modelcontextprotocol.io/specification/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://modelcontextprotocol.io/specification/2025-11-25"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Model Context Protocol Specification (v1.0)",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://spec.modelcontextprotocol.io/",
-              "verified": false,
-              "metadata": {},
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "MCP: A Protocol for AI Tool and Data Integration",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2501.09842",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Model Context Protocol: A Standard for AI Tool Integration",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2503.12345",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Model Context Protocol: Standardizing AI Tool Integration",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2502.12345",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
         }
       ],
-      "sources_verified": 4,
-      "sources_unreachable": 4
+      "sources_verified": 3,
+      "errors": []
     },
     {
       "file": "content/ai/mechanistic-interpretability.md",
@@ -11877,34 +11828,56 @@
       "file": "content/ai/model-merging-and-ensembling.md",
       "article_id": "model-merging-and-ensembling",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Model Soups: Averaging Weights of Multiple Fine-Tuned Models Improves Accuracy",
+          "source_title": "Model Soups: Averaging Weights of Multiple Fine-Tuned Models Improves Accuracy Without Increasing Inference Time",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2203.05482",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "DeepSeek-V3 Technical Report",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2412.19437",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2203.05482",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2412.19437&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "TIES-Merging: Resolving Interference When Merging Models",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2306.01708",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Simple and Scalable Predictive Uncertainty Estimation Using Deep Ensembles",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1612.01474",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -11912,8 +11885,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "errors": []
     },
     {
       "file": "content/ai/multi-agent-reinforcement-learning.md",
@@ -16689,19 +16662,56 @@
       "file": "content/business/a-b-testing.md",
       "article_id": "kb-2026-00215",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Harvard Business Review",
-          "source_type": "journal",
+          "source_title": "Controlled Experiments on the Web: Survey and Practical Guide",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://hbr.org/",
+              "identifier": "https://doi.org/10.1007/s10618-008-0114-1",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://hbr.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Trustworthy Online Controlled Experiments",
+          "source_type": "book",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.cambridge.org/core/books/trustworthy-online-controlled-experiments/trustworthy-online-controlled-experiments/BFFD7CC0B7325B5DCEEFFB1DD9401F7E",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Online Experimentation at Microsoft",
+          "source_type": "research_page",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.microsoft.com/en-us/research/publication/online-experimentation-at-microsoft/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -16709,8 +16719,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "errors": []
     },
     {
       "file": "content/business/amazon-fba-fulfillment-by-amazon.md",
@@ -17024,19 +17034,56 @@
       "file": "content/business/dropshipping-model.md",
       "article_id": "kb-2026-00212",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Harvard Business Review",
-          "source_type": "journal",
+          "source_title": "Shopify Help Center: What Is Dropshipping?",
+          "source_type": "platform_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://hbr.org/",
+              "identifier": "https://help.shopify.com/en/manual/products/dropshipping/what-is-dropshipping",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://hbr.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon Seller Central: Dropshipping Policy",
+          "source_type": "marketplace_policy",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://sellercentral.amazon.com/help/hub/reference/G201808410",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "FTC Business Guide to the Mail, Internet, or Telephone Order Merchandise Rule",
+          "source_type": "regulatory_guidance",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.ftc.gov/business-guidance/resources/business-guide-ftcs-mail-internet-or-telephone-order-merchandise-rule",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -17044,8 +17091,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "errors": []
     },
     {
       "file": "content/business/e-commerce-fundamentals.md",
@@ -19785,71 +19832,20 @@
       "file": "content/computer-science/cap-theorem.md",
       "article_id": "kb-2026-00244",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "Towards Robust Distributed Systems",
+          "source_type": "conference_keynote",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Designing Data-Intensive Applications (2nd Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://dataintensive.net/",
+              "identifier": "https://doi.org/10.1145/343477.343502",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://dataintensive.net/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Distributed Systems Consistency: From CAP to CRDTs (2025 Survey)",
-          "source_type": "survey_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.consistency",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.consistency"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Towards Robust Distributed Systems (PODC Keynote)",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1145/343477.343502",
-              "verified": true,
-              "metadata": {
-                "title": "Towards robust distributed systems (abstract)",
-                "publisher": "ACM",
-                "year": 2003
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -19861,13 +19857,31 @@
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1145/564585.564601",
+              "method": "url",
+              "identifier": "https://doi.org/10.1145/564585.564601",
               "verified": true,
               "metadata": {
-                "title": "Brewer's conjecture and the feasibility of consistent, available, partition-tolerant web services",
-                "publisher": "Association for Computing Machinery (ACM)",
-                "year": 2004
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "CAP Twelve Years Later: How the Rules Have Changed",
+          "source_type": "academic_article",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1109/MC.2012.37",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -19876,7 +19890,7 @@
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 2
+      "errors": []
     },
     {
       "file": "content/computer-science/ci-cd-pipeline.md",
@@ -28820,36 +28834,20 @@
       "file": "content/computer-science/technical-debt.md",
       "article_id": "kb-2026-00236",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "The WyCash Portfolio Management System",
+          "source_type": "experience_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Managing Technical Debt: A Practical Guide (2025 Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.informit.com/techdebt/",
+              "identifier": "https://doi.org/10.1145/157709.157715",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.informit.com/store/managing-technical-debt-reducing-friction-in-software-9780135645932?utm_source=referral&utm_medium=author&utm_campaign=techdebt"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -28857,61 +28855,44 @@
           "all_verified": true
         },
         {
-          "source_title": "Technical Debt: A 2025 Systematic Mapping Study",
+          "source_title": "Technical Debt: From Metaphor to Theory and Practice",
+          "source_type": "academic_article",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1109/MS.2012.167",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "A Systematic Mapping Study on Technical Debt and Its Management",
           "source_type": "survey_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.techdebt",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.techdebt"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The WyCash Portfolio Management System (Experience Report)",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1145/157709.157715",
+              "identifier": "https://doi.org/10.1016/j.jss.2014.12.027",
               "verified": true,
               "metadata": {
-                "title": "The WyCash portfolio management system",
-                "publisher": "ACM Press",
-                "year": 2003
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Managing Technical Debt: Insights from Recent Empirical Evidence",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1109/MS.2015.88",
-              "verified": true,
-              "metadata": {
-                "title": "Table of Contents",
-                "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
-                "year": 2015
-              },
-              "match": false
             }
           ],
           "all_verified": true
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 2
+      "errors": []
     },
     {
       "file": "content/computer-science/terraform-state.md",
@@ -30119,36 +30100,56 @@
       "file": "content/computer-science/websocket.md",
       "article_id": "kb-2026-00063",
       "generation_method": "human_only",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "RFC 6455 — The WebSocket Protocol",
+          "source_title": "RFC 6455: The WebSocket Protocol",
           "source_type": "standard",
           "results": [
             {
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc6455",
-              "verified": false,
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc6455"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "WebSockets Standard (2026-03-15)",
-          "source_type": "standard",
+          "source_title": "MDN WebSocket API",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://websockets.spec.whatwg.org/",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/WebSocket",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://websockets.spec.whatwg.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MDN Writing WebSocket Client Applications",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -30156,8 +30157,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "errors": []
     },
     {
       "file": "content/computer-science/xmlhttprequest.md",
@@ -31882,7 +31883,7 @@
       "file": "content/game-development/procedural-generation.md",
       "article_id": "procedural-generation",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
           "source_title": "Procedural Content Generation in Games",
@@ -31893,8 +31894,9 @@
               "identifier": "https://link.springer.com/book/10.1007/978-3-319-42716-4",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://link.springer.com/book/10.1007/978-3-319-42716-4?error=cookies_not_supported&code=8d585686-20ee-4580-b2f9-7eb6bad11200"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -31903,24 +31905,43 @@
         },
         {
           "source_title": "An Image Synthesizer",
-          "source_type": "academic_paper",
+          "source_type": "conference_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/doi/10.1145/325165.325247",
-              "verified": false,
+              "identifier": "https://doi.org/10.1145/325334.325247",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/doi/10.1145/325165.325247"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Wave Function Collapse",
+          "source_type": "software_repository",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/mxgmn/WaveFunctionCollapse",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Eighteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "errors": []
     },
     {
       "file": "content/game-development/real-time-strategy-rts-game-design.md",

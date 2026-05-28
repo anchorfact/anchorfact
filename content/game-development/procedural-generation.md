@@ -4,87 +4,86 @@ title: Procedural Content Generation in Games
 schema_type: TechArticle
 category: game-development
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-24'
 generation_method: ai_structured
-ai_models:
-  - claude-opus
 derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-gd-pg-001
-    statement: Perlin noise (Perlin 1983, SIGGRAPH 1985) is foundational for procedural terrain generation (e.g., Minecraft).
-    source_title: Perlin, K. An Image Synthesizer (SIGGRAPH 1985)
+  - id: fact-game-development-procedural-generation-1
+    statement: >-
+      The Springer textbook Procedural Content Generation in Games surveys methods for automatic
+      generation of game content.
+    source_title: Procedural Content Generation in Games
+    source_url: https://link.springer.com/book/10.1007/978-3-319-42716-4
+    confidence: medium
+  - id: fact-game-development-procedural-generation-2
+    statement: >-
+      Ken Perlin presented an image synthesizer for procedural texture generation in the 1985
+      SIGGRAPH proceedings.
+    source_title: An Image Synthesizer
     source_url: https://doi.org/10.1145/325334.325247
-    confidence: high
-  - id: fact-gd-pg-002
-    statement: No Man's Sky (Hello Games 2016) generates 18 quintillion unique planets via deterministic procedural generation.
-    source_title: Murray, S. Building No Man's Sky Universe (GDC 2017)
-    source_url: https://www.gdcvault.com/play/1024265/Building-No-Man-s
-    confidence: high
-  - id: fact-gd-pg-003
-    statement: "Wave Function Collapse (Gumin 2016): constraint-based procedural generation for tile/city generation."
-    source_title: Gumin, M. Wave Function Collapse (GitHub 2016)
+    confidence: medium
+  - id: fact-game-development-procedural-generation-3
+    statement: >-
+      The Wave Function Collapse project describes a constraint-based algorithm that generates
+      outputs locally similar to an input bitmap or tile map.
+    source_title: Wave Function Collapse
     source_url: https://github.com/mxgmn/WaveFunctionCollapse
     confidence: medium
-completeness: 0.9
+completeness: 0.82
 known_gaps:
-  - Wave Function Collapse algorithm not covered
-  - Runtime performance optimization for mobile
-disputed_statements:
-  - statement: No major disputed statements identified
+  - Specialized edge cases and implementation details are outside this source-mapped public slice.
+disputed_statements: []
 primary_sources:
   - title: Procedural Content Generation in Games
+    authors:
+      - Noor Shaker
+      - Julian Togelius
+      - Mark J. Nelson
     type: textbook
     year: 2016
     url: https://link.springer.com/book/10.1007/978-3-319-42716-4
     institution: Springer
   - title: An Image Synthesizer
-    type: academic_paper
+    authors:
+      - Ken Perlin
+    type: conference_paper
     year: 1985
-    url: https://dl.acm.org/doi/10.1145/325165.325247
+    url: https://doi.org/10.1145/325334.325247
     institution: ACM SIGGRAPH
-secondary_sources:
-  - title: Minecraft Wiki — World Generation
-    type: reference
-    url: https://minecraft.wiki/w/World_generation
-    institution: Mojang
+  - title: Wave Function Collapse
+    authors:
+      - Maxim Gumin
+    type: software_repository
+    year: 2016
+    url: https://github.com/mxgmn/WaveFunctionCollapse
+    institution: GitHub
+secondary_sources: []
+updated: '2026-05-28'
+ai_models:
+  - claude-opus
 ---
+
 ## TL;DR
-Procedural content generation (PCG) uses algorithms to automatically create game content — terrain, levels, items, quests — replacing manual design with computational generation. It is fundamental to modern open-world and roguelike games.
 
-## Core Concepts
+Procedural content generation uses algorithms to produce game content such as levels, textures, terrain, or tile maps.
 
-### Noise-Based Generation
-Perlin noise and Simplex noise are the backbone of terrain generation. These functions produce natural-looking gradient noise that, when layered at multiple octaves, creates realistic mountains, valleys, and cave systems.
+## Core Explanation
 
-### L-Systems for Vegetation
-Lindenmayer systems (L-systems) use recursive production rules to model plant growth. Starting from an axiom string, rules like F → F[+F]F[-F]F generate branching structures that resemble trees and foliage.
+The evidence now covers the field-level textbook, a foundational noise paper, and a widely cited constraint-based generation implementation.
 
-### Wave Function Collapse (WFC)
-WFC treats content generation as a constraint satisfaction problem. Input examples are analyzed to extract adjacency rules, then the algorithm propagates constraints to fill a grid with compatible tiles — producing coherent dungeons, towns, and textures.
+## Source-Mapped Facts
 
-### Cellular Automata for Caves
-Conway's Game of Life rules adapted for cave generation: cells with too few neighbors die (open space), cells with enough neighbors survive (walls), creating organic cave networks.
+- The Springer textbook Procedural Content Generation in Games surveys methods for automatic generation of game content. ([source](https://link.springer.com/book/10.1007/978-3-319-42716-4))
+- Ken Perlin presented an image synthesizer for procedural texture generation in the 1985 SIGGRAPH proceedings. ([source](https://doi.org/10.1145/325334.325247))
+- The Wave Function Collapse project describes a constraint-based algorithm that generates outputs locally similar to an input bitmap or tile map. ([source](https://github.com/mxgmn/WaveFunctionCollapse))
 
-## Applications
-- **Roguelikes**: Random dungeon layouts, item placement, enemy spawning
-- **Open-world games**: Terrain, vegetation, weather systems
-- **Asset generation**: Texture synthesis, material creation
-- **Narrative**: Quest generation, dialogue variation via grammar-based systems
+## Further Reading
 
-## Performance Considerations
-Modern PCG must balance generation quality with runtime cost. Techniques include:
-- Pre-generation during loading screens
-- Chunk-based generation with LOD (level of detail)
-- GPU-accelerated noise computation
-- Seed-based determinism for reproducible worlds
-
-## Related Articles
-
-- [AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation](../../ai/ai-content-creation.md)
-- [AI for Virtual Reality: Immersive Content Generation, Intelligent NPCs, and Adaptive Environments](../../ai/ai-for-virtual-reality.md)
-- [AI in Gaming: NPCs, Procedural Content, and AlphaStar](../../ai/ai-in-gaming.md)
+- [Procedural Content Generation in Games](https://link.springer.com/book/10.1007/978-3-319-42716-4)
+- [An Image Synthesizer](https://doi.org/10.1145/325334.325247)
+- [Wave Function Collapse](https://github.com/mxgmn/WaveFunctionCollapse)

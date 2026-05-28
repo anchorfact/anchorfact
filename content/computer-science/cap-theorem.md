@@ -4,117 +4,89 @@ title: CAP Theorem
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: '2026-05-25'
+confidence: medium
+last_verified: '2026-05-28'
 created_date: '2026-05-22'
 generation_method: ai_structured
-ai_models:
-  - claude-opus
 derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-01
-    statement: 'The CAP theorem states: a distributed system can guarantee at most two of: Consistency , Availability , Partition Tolerance'
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
-    confidence: medium
-  - id: fact-computer-science-001
+  - id: fact-computer-science-cap-theorem-1
     statement: >-
-      The CAP theorem (Eric Brewer, 2000; formally proven by Gilbert & Lynch, 2002) states: a distributed system can guarantee at most two of: Consistency (all nodes see same data), Availability
-      (every request gets a response), Partition Tolerance (system works despite network partitions). Since partitions are inevitable, you must choose between C and A.
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+      Eric Brewer introduced the CAP tradeoff in the PODC keynote Towards Robust Distributed
+      Systems.
+    source_title: Towards Robust Distributed Systems
+    source_url: https://doi.org/10.1145/343477.343502
     confidence: medium
-completeness: 0.88
+  - id: fact-computer-science-cap-theorem-2
+    statement: >-
+      Gilbert and Lynch formalized Brewer's conjecture and proved the impossibility result for
+      consistent, available, partition-tolerant web services.
+    source_title: >-
+      Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web
+      Services
+    source_url: https://doi.org/10.1145/564585.564601
+    confidence: medium
+  - id: fact-computer-science-cap-theorem-3
+    statement: >-
+      Brewer later clarified that CAP tradeoffs are most relevant when partitions occur, rather than
+      a simple permanent choice of two out of three properties.
+    source_title: 'CAP Twelve Years Later: How the Rules Have Changed'
+    source_url: https://doi.org/10.1109/MC.2012.37
+    confidence: medium
+completeness: 0.82
 known_gaps:
-  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - Specialized edge cases and implementation details are outside this source-mapped public slice.
+disputed_statements: []
 primary_sources:
-  - title: ACM Digital Library
-    type: repository
-    year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: Designing Data-Intensive Applications (2nd Edition, 2025)
-    type: book
-    year: 2025
+  - title: Towards Robust Distributed Systems
     authors:
-      - Kleppmann M.
-    institution: O'Reilly Media
-    url: https://dataintensive.net/
-  - title: 'Distributed Systems Consistency: From CAP to CRDTs (2025 Survey)'
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.consistency
-  - title: Towards Robust Distributed Systems (PODC Keynote)
-    authors:
-      - Brewer, E.A.
-    type: academic_paper
+      - Eric Brewer
+    type: conference_keynote
     year: 2000
-    doi: 10.1145/343477.343502
-    institution: UC Berkeley / PODC
-  - title: Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services
+    url: https://doi.org/10.1145/343477.343502
+    institution: ACM PODC
+  - title: >-
+      Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web
+      Services
     authors:
-      - Gilbert, S.
-      - Lynch, N.
+      - Seth Gilbert
+      - Nancy Lynch
     type: academic_paper
     year: 2002
-    doi: 10.1145/564585.564601
-    institution: MIT
-secondary_sources:
-  - title: ACM Digital Library
-    type: repository
-    year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
-  - title: 'Distributed Consistency Models: From CAP to PACELC and Beyond (2025 Tutorial)'
-    type: article
-    year: 2025
+    url: https://doi.org/10.1145/564585.564601
+    institution: ACM SIGACT News
+  - title: 'CAP Twelve Years Later: How the Rules Have Changed'
     authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.consistency
-  - title: 'Eventual Consistency and CRDTs: A 2025 Survey of Theory and Practice'
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE TPDS
-    url: https://doi.org/10.1109/tpds.2025.crdt
+      - Eric Brewer
+    type: academic_article
+    year: 2012
+    url: https://doi.org/10.1109/MC.2012.37
+    institution: IEEE Computer
+secondary_sources: []
+updated: '2026-05-28'
+ai_models:
+  - claude-opus
 ---
 
 ## TL;DR
 
-The CAP theorem (Eric Brewer, 2000; formally proven by Gilbert & Lynch, 2002) states: a distributed system can guarantee at most two of: Consistency (all nodes see same data), Availability (every request gets a response), Partition Tolerance (system works despite network partitions). Since partitions are inevitable, you must choose between C and A.
+The CAP theorem describes a limit for distributed services under network partition: strong consistency and availability cannot both be guaranteed.
 
 ## Core Explanation
 
-CP systems (MongoDB, HBase, ZooKeeper): sacrifice availability during partition — some requests may timeout. AP systems (Cassandra, DynamoDB, CouchDB): sacrifice consistency — may serve stale data, resolve conflicts later. 'CA' systems are impossible in distributed context (partition is inevitable). PACELC extends CAP: if Partition, choose A or C; Else, choose Latency or Consistency.
+The strongest public treatment starts with Brewer's conjecture, follows the Gilbert-Lynch proof, and includes Brewer's later clarification of common oversimplifications.
+
+## Source-Mapped Facts
+
+- Eric Brewer introduced the CAP tradeoff in the PODC keynote Towards Robust Distributed Systems. ([source](https://doi.org/10.1145/343477.343502))
+- Gilbert and Lynch formalized Brewer's conjecture and proved the impossibility result for consistent, available, partition-tolerant web services. ([source](https://doi.org/10.1145/564585.564601))
+- Brewer later clarified that CAP tradeoffs are most relevant when partitions occur, rather than a simple permanent choice of two out of three properties. ([source](https://doi.org/10.1109/MC.2012.37))
 
 ## Further Reading
 
-- [Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services (Gilbert & Lynch, 2002)](undefined)
-
-## Related Articles
-
-- [CAP Theorem: Consistency, Availability, and Partition Tolerance](../cap-theorem-consistency-availability-and-partition-tolerance.md)
-- [CAP Theorem in Practice: Consistency, Availability, and Partition Tolerance Trade-offs](../cap-theorem-in-practice-consistency-availability-and-partition-tolerance-trade-offs.md)
-- [AI for Mathematical Reasoning: Theorem Proving, Symbolic Computation, and Autoformalization](../../ai/ai-for-mathematical-reasoning-theorem-proving-symbolic-computation-and-autoformalization.md)
+- [Towards Robust Distributed Systems](https://doi.org/10.1145/343477.343502)
+- [Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services](https://doi.org/10.1145/564585.564601)
+- [CAP Twelve Years Later: How the Rules Have Changed](https://doi.org/10.1109/MC.2012.37)
