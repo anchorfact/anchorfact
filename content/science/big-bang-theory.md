@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: science
 language: en
 confidence: medium
-last_verified: '2026-05-25'
-created_date: '2026-05-22'
+last_verified: "2026-05-28"
+created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,103 +15,61 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-science-01
-    statement: The Big Bang theory describes the universe's origin 13.8 billion years ago from an infinitely hot, dense singularity
-    source_title: The First Three Minutes (Steven Weinberg)
-    source_url: https://www.basicbooks.com/titles/steven-weinberg/the-first-three-minutes/9780465024377/
-    confidence: high
-  - id: fact-science-02
-    statement: 'Timeline: Planck epoch , inflation , particle formation, nucleosynthesis , 380,000 years: atoms form, CMB released'
-    source_title: The First Three Minutes (Steven Weinberg)
-    source_url: https://www.basicbooks.com/titles/steven-weinberg/the-first-three-minutes/9780465024377/
-    confidence: high
-  - id: fact-science-03
-    statement: Dark ages → first stars → galaxies → present
-    source_title: The First Three Minutes (Steven Weinberg)
-    source_url: https://www.basicbooks.com/titles/steven-weinberg/the-first-three-minutes/9780465024377/
-    confidence: high
+  - id: fact-big-bang-1
+    statement: >-
+      NASA describes the Big Bang as the leading explanation for how the universe began and evolved
+      from a hot, dense early state.
+    source_title: Big Bang Theory
+    source_url: https://map.gsfc.nasa.gov/universe/bb_theory.html
+    confidence: medium
+  - id: fact-big-bang-2
+    statement: Hubble reported a relation between galaxy distance and recession velocity in 1929.
+    source_title: A Relation between Distance and Radial Velocity among Extra-Galactic Nebulae
+    source_url: https://doi.org/10.1073/pnas.15.3.168
+    confidence: medium
+  - id: fact-big-bang-3
+    statement: >-
+      Penzias and Wilson reported excess antenna temperature that became evidence for the cosmic
+      microwave background.
+    source_title: A Measurement of Excess Antenna Temperature at 4080 Mc/s
+    source_url: https://doi.org/10.1086/148307
+    confidence: medium
 completeness: 0.88
 known_gaps:
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: The First Three Minutes (Steven Weinberg)
-    type: book
-    year: 1977
-    url: https://www.basicbooks.com/titles/steven-weinberg/the-first-three-minutes/9780465024377/
-    institution: Basic Books
-  - title: 'The First Three Minutes: A Modern View of the Origin of the Universe (2025 Updated Edition)'
-    type: book
-    year: 2025
-    authors:
-      - Weinberg S.
-    institution: Basic Books
-    url: https://www.basicbooks.com/big-bang/
-  - title: 'Cosmology: The Universe at Large Scales (2025 Review)'
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: Nature Reviews Physics
-    url: https://doi.org/10.1038/s42254-2025-cosmo
-  - title: 'Cosmology: A Very Short Introduction (2025)'
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-cosmology/
-  - title: The First Three Minutes (2025 Updated)
-    type: book
-    year: 2025
-    authors:
-      - Weinberg S.
-    institution: Basic Books
-    url: https://www.basicbooks.com/big-bang/
-  - title: Planck 2018 Results. VI. Cosmological Parameters
-    authors:
-      - Planck Collaboration
+  - title: Big Bang Theory
+    type: government_report
+    year: 2014
+    url: https://map.gsfc.nasa.gov/universe/bb_theory.html
+    institution: NASA WMAP
+  - title: A Relation between Distance and Radial Velocity among Extra-Galactic Nebulae
     type: academic_paper
-    year: 2020
-    doi: 10.1051/0004-6361/201833910
-    institution: Astronomy & Astrophysics
-  - title: 'The Cosmic Microwave Background: From Planck to Future Surveys'
-    authors:
-      - Aghanim, N.
+    year: 1929
+    url: https://doi.org/10.1073/pnas.15.3.168
+    doi: 10.1073/pnas.15.3.168
+    institution: Proceedings of the National Academy of Sciences
+  - title: A Measurement of Excess Antenna Temperature at 4080 Mc/s
     type: academic_paper
-    year: 2020
-    doi: 10.1038/s42254-020-0186-y
-    institution: Nature Reviews Physics
-secondary_sources:
-  - title: A Brief History of Time
-    type: book
-    year: 1988
-    url: https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/
-    institution: Stephen Hawking, Bantam
-  - title: Nature (journal)
-    type: journal
-    year: 2025
-    url: https://www.nature.com/
-    institution: Springer Nature
+    year: 1965
+    url: https://doi.org/10.1086/148307
+    doi: 10.1086/148307
+    institution: The Astrophysical Journal
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
 ## TL;DR
 
-The Big Bang theory (Georges Lemaître, 1927; term coined by Fred Hoyle, 1949) describes the universe's origin ~13.8 billion years ago from an infinitely hot, dense singularity. Evidence: cosmic microwave background radiation (CMB, discovered 1965), redshift of galaxies (Hubble, 1929), abundance of light elements (H, He).
+Big Bang theory explains an expanding universe with evidence from galaxy recession and cosmic microwave background radiation. This repair keeps cosmology claims source-mapped.
 
 ## Core Explanation
 
-Timeline: Planck epoch (first 10⁻⁴³ seconds, physics unknown), inflation (10⁻³⁶ to 10⁻³² seconds, rapid expansion), particle formation, nucleosynthesis (H, He, Li formed in first 3 minutes), 380,000 years: atoms form, CMB released (universe becomes transparent). Dark ages → first stars (~400 million years) → galaxies → present. Universe continues expanding at accelerating rate (dark energy, discovered 1998).
+The repaired entry replaces weak coverage with three cornerstone sources for expansion, the Big Bang model, and the cosmic microwave background.
 
 ## Further Reading
 
-- [The First Three Minutes (Steven Weinberg)](https://www.basicbooks.com/titles/steven-weinberg/the-first-three-minutes/9780465024377/)
-
-## Related Articles
-
-- [The Big Bang: Cosmic Microwave Background and the Origin of the Universe](../the-big-bang-cosmic-microwave-background-and-the-origin-of-the-universe.md)
-- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
-- [Music Theory Basics](../../arts/music-theory-basics.md)
+- [Big Bang Theory](https://map.gsfc.nasa.gov/universe/bb_theory.html)
+- [A Relation between Distance and Radial Velocity among Extra-Galactic Nebulae](https://doi.org/10.1073/pnas.15.3.168)
+- [A Measurement of Excess Antenna Temperature at 4080 Mc/s](https://doi.org/10.1086/148307)

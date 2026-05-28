@@ -1,95 +1,72 @@
 ---
 id: ""
-title: "Productivity Systems"
-schema_type: "TechArticle"
-category: "self-improvement"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+title: Productivity Systems
+schema_type: TechArticle
+category: self-improvement
+language: en
+confidence: low
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-self-improvement-001"
-    statement: "GTD (Getting Things Done, David Allen): capture everything → clarify → organize → review → engage."
-    source_title: "Getting Things Done (David Allen)"
-    source_url: "https://gettingthingsdone.com/"
-    confidence: "medium"
-  - id: "fact-self-improvement-002"
-    statement: "Pomodoro Technique (Cirillo): 25-min focused work + 5-min break."
-    source_title: "Deep Work: Rules for Focused Success in a Distracted World (Cal Newport)"
-    source_url: "https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/"
-    confidence: "medium"
-  - id: "fact-self-improvement-003"
-    statement: "Eisenhower Matrix: urgent/important quadrants."
-    source_title: "Getting Things Done (David Allen)"
-    source_url: "https://gettingthingsdone.com/"
-    confidence: "medium"
-  - id: "fact-self-improvement-004"
-    statement: "Time blocking: schedule specific tasks in calendar."
-    source_title: "Deep Work: Rules for Focused Success in a Distracted World (Cal Newport)"
-    source_url: "https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/"
-    confidence: "medium"
-  - id: "fact-self-improvement-005"
-    statement: "Two-minute rule: if task takes <2 minutes, do it now."
-    source_title: "Getting Things Done (David Allen)"
-    source_url: "https://gettingthingsdone.com/"
-    confidence: "medium"
-
+  - id: fact-productivity-systems-1
+    statement: Getting Things Done centers on capturing commitments into an external trusted system.
+    source_title: What is GTD?
+    source_url: https://gettingthingsdone.com/what-is-gtd/
+    confidence: low
+  - id: fact-productivity-systems-2
+    statement: The Bullet Journal method uses rapid logging to capture tasks, events, and notes.
+    source_title: Learn the Bullet Journal Method
+    source_url: https://bulletjournal.com/pages/learn
+    confidence: low
+  - id: fact-productivity-systems-3
+    statement: >-
+      Implementation intentions use if-then plans to connect situational cues with goal-directed
+      responses.
+    source_title: "Implementation intentions: Strong effects of simple plans"
+    source_url: https://doi.org/10.1037/0003-066X.54.7.493
+    confidence: low
 completeness: 0.85
-
 known_gaps:
-  - "Statistics and data cited are from 2024 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The effectiveness of time management and productivity techniques varies significantly by individual and context; no single system is universally optimal"
-
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: "Getting Things Done (David Allen)"
-    type: "book"
-    year: 2001
-    url: "https://gettingthingsdone.com/"
-    institution: "Penguin"
-  - title: "Deep Work: Rules for Focused Success in a Distracted World (Cal Newport)"
-    type: "book"
-    year: 2016
-    url: "https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/"
-    institution: "Grand Central Publishing"
-
-secondary_sources:
-  - title: "Atomic Habits (James Clear)"
-    type: "book"
-    year: 2018
-    url: "https://jamesclear.com/atomic-habits"
-    institution: "Avery, Penguin Random House"
-
+  - title: What is GTD?
+    type: blog_post
+    year: 2025
+    url: https://gettingthingsdone.com/what-is-gtd/
+    institution: David Allen Company
+  - title: Learn the Bullet Journal Method
+    type: blog_post
+    year: 2025
+    url: https://bulletjournal.com/pages/learn
+    institution: Bullet Journal
+  - title: "Implementation intentions: Strong effects of simple plans"
+    type: academic_paper
+    year: 1999
+    url: https://doi.org/10.1037/0003-066X.54.7.493
+    doi: 10.1037/0003-066X.54.7.493
+    institution: American Psychologist
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
-
-
-
 
 ## TL;DR
 
-Productivity systems organize tasks and time for maximum effectiveness. GTD (Getting Things Done, David Allen): capture everything → clarify → organize → review → engage. Pomodoro Technique (Cirillo): 25-min focused work + 5-min break. Eisenhower Matrix: urgent/important quadrants. Time blocking: schedule specific tasks in calendar.
+Productivity systems use capture, task organization, and implementation plans to reduce friction in daily work. This repair maps each public claim to a concrete system or research source.
 
 ## Core Explanation
 
-GTD: externalize all commitments to trusted system, reduce cognitive load. Two-minute rule: if task takes <2 minutes, do it now. Weekly review: process inbox, update projects, plan next week. Deep work (Cal Newport): distraction-free concentration on cognitively demanding tasks. Parkinson's Law: work expands to fill available time. 'Eat the frog' (Brian Tracy): do hardest task first.
+The prior public entry had too many broad claims for its evidence. The repaired version keeps three bounded facts about GTD, Bullet Journal, and implementation intentions.
 
 ## Further Reading
 
-- [Getting Things Done (David Allen)](https://gettingthingsdone.com/)
-
-## Related Articles
-
-- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../../ai/ai-blockchain.md)
-- [AI Content Moderation Platforms: Large-Scale Safety Systems, Policy Engines, and Multilingual Review](../../ai/ai-content-moderation-platforms.md)
-- [AI for Disaster Prediction: Earthquake Forecasting, Flood Detection, and Early Warning Systems](../../ai/ai-disaster-prediction.md)
+- [What is GTD?](https://gettingthingsdone.com/what-is-gtd/)
+- [Learn the Bullet Journal Method](https://bulletjournal.com/pages/learn)
+- [Implementation intentions: Strong effects of simple plans](https://doi.org/10.1037/0003-066X.54.7.493)

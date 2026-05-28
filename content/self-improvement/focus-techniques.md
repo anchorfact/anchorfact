@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: self-improvement
 language: en
 confidence: medium
-last_verified: '2026-05-26'
-created_date: '2026-05-24'
+last_verified: "2026-05-28"
+created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,125 +15,64 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-si-019
+  - id: fact-focus-techniques-1
     statement: >-
-      Deep work (Cal Newport, 2016): professional activities performed in a state of distraction-free concentration that push cognitive capabilities to their limit. These efforts create new value,
-      improve skills, and are hard to replicate
-    source_title: Deep Work (Cal Newport)
-    source_url: https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/
-    confidence: high
-  - id: fact-si-020
+      Implementation intentions are if-then plans that link a situational cue with a goal-directed
+      response.
+    source_title: "Implementation intentions: Strong effects of simple plans"
+    source_url: https://doi.org/10.1037/0003-066X.54.7.493
+    confidence: medium
+  - id: fact-focus-techniques-2
     statement: >-
-      Pomodoro Technique (Francesco Cirillo, 1980s): 25-minute focused work sessions separated by 5-minute breaks. After 4 pomodoros, take 15-30 minute break. Based on principle that frequent breaks
-      improve mental agility and sustained attention
-    source_title: The Pomodoro Technique (Cirillo)
-    source_url: https://francescocirillo.com/products/the-pomodoro-technique
-    confidence: high
-  - id: fact-si-021
+      Research on unfinished goals found that making concrete plans can reduce intrusive thoughts
+      about those goals.
+    source_title: Consider It Done! Plan Making Can Eliminate the Cognitive Effects of Unfulfilled Goals
+    source_url: https://doi.org/10.1037/a0024192
+    confidence: medium
+  - id: fact-focus-techniques-3
     statement: >-
-      Flow state (Csikszentmihalyi, 1990): optimal experience of complete absorption in an activity. Conditions: clear goals, immediate feedback, balance between challenge and skill. Characterized by
-      loss of self-consciousness, distorted time perception, intrinsic reward
-    source_title: Flow (Csikszentmihalyi)
-    source_url: https://www.harpercollins.com/products/flow-mihaly-csikszentmihalyi
-    confidence: high
+      Attention restoration theory describes how some environments can help recover directed
+      attention.
+    source_title: "The restorative benefits of nature: Toward an integrative framework"
+    source_url: https://doi.org/10.1080/01426399508706489
+    confidence: medium
 completeness: 0.88
 known_gaps:
-  - Attention research is rapidly evolving; this article covers established techniques, not cutting-edge neuroscience
-  - ADHD and other attention disorders may require different approaches beyond general techniques
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
 primary_sources:
-  - title: 'Deep Work: Rules for Focused Success in a Distracted World (Cal Newport)'
-    type: book
-    year: 2016
-    url: https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/
-    institution: Grand Central Publishing
-  - title: 'Flow: The Psychology of Optimal Experience (Csikszentmihalyi)'
-    type: book
-    year: 1990
-    url: https://www.harpercollins.com/products/flow-mihaly-csikszentmihalyi
-    institution: HarperCollins
-  - title: 'Deep Work: Rules for Focused Success in a Distracted World (2025 Edition)'
-    type: book
-    year: 2025
-    authors:
-      - Newport C.
-    institution: Grand Central
-    url: https://www.hachettebookgroup.com/deep-work/
-  - title: 'Indistractable: How to Control Your Attention (2025 Updated)'
-    type: book
-    year: 2025
-    authors:
-      - Eyal N.
-    institution: BenBella Books
-    url: https://www.benbellabooks.com/indistractable/
-  - title: Deep Work (2025)
-    type: book
-    year: 2025
-    authors:
-      - Newport C.
-    institution: Grand Central
-    url: https://www.hachettebookgroup.com/deep-work/
-  - title: Indistractable (2025 Updated)
-    type: book
-    year: 2025
-    authors:
-      - Eyal N.
-    institution: BenBella Books
-    url: https://www.benbellabooks.com/indistractable/
-  - title: 'Deep Work: Rules for Focused Success in a Distracted World'
-    authors:
-      - Newport, C.
-    type: book
-    year: 2016
-    institution: Grand Central
-  - title: 'Flow: The Psychology of Optimal Experience'
-    authors:
-      - Csikszentmihalyi, M.
-    type: book
-    year: 1990
-    institution: Harper & Row
-  - title: Concentration of the Langevin Algorithm's Stationary Distribution
-    authors:
-      - Jason M. Altschuler
-      - Kunal Talwar
-    year: 2022
-    url: https://arxiv.org/abs/2212.12629v2
+  - title: "Implementation intentions: Strong effects of simple plans"
     type: academic_paper
-    institution: arXiv
-  - title: 'Mapping dissolved carbon in space and time: An experimental technique for the measurement of pH and total carbon concentration in density driven convection of CO$_2$ dissolved in water'
-    authors:
-      - Hilmar Yngvi Birggison
-      - Yao Xu
-      - Marcel Moura
-      - Eirik Grude Flekkøy
-      - Knut Jørgen Måløy
-    year: 2024
-    url: https://arxiv.org/abs/2405.05682v1
+    year: 1999
+    url: https://doi.org/10.1037/0003-066X.54.7.493
+    doi: 10.1037/0003-066X.54.7.493
+    institution: American Psychologist
+  - title: Consider It Done! Plan Making Can Eliminate the Cognitive Effects of Unfulfilled Goals
     type: academic_paper
-    institution: arXiv
-secondary_sources:
-  - title: Atomic Habits (James Clear)
-    type: book
-    year: 2018
-    url: https://jamesclear.com/atomic-habits
-    institution: Avery, Penguin Random House
+    year: 2011
+    url: https://doi.org/10.1037/a0024192
+    doi: 10.1037/a0024192
+    institution: Journal of Personality and Social Psychology
+  - title: "The restorative benefits of nature: Toward an integrative framework"
+    type: academic_paper
+    year: 1995
+    url: https://doi.org/10.1080/01426399508706489
+    doi: 10.1080/01426399508706489
+    institution: Journal of Environmental Psychology
+secondary_sources: []
+disputed_statements: []
+updated: "2026-05-28"
 ---
-
 
 ## TL;DR
 
-Sustained concentration is a trainable skill eroded by modern distraction culture. Core techniques: Pomodoro (25min focus + 5min break), deep work blocks (2-4h uninterrupted sessions), flow state optimization (clear goals + challenge-skill balance). Environmental design: digital minimalism, dedicated workspace, single-tasking over multitasking. Attention is a finite resource requiring deliberate management.
+Focus techniques use planning, closure, and attention restoration to protect concentration. This repair keeps the public article to peer-reviewed cognitive and motivational sources.
 
 ## Core Explanation
 
-Deep work protocol: schedule blocks (minimum 90 minutes), eliminate shallow work during blocks, embrace boredom (avoid constant stimulation), quit social media (not essential). Pomodoro adaptation: adjust interval to task type (50/10 for deep work, 25/5 for routine). Flow triggers: clear immediate goals, immediate feedback, stretch (just beyond comfort zone), autonomy, focused attention. Attention restoration theory (Kaplan): nature exposure restores directed attention. Digital hygiene: notification discipline, single-screen focus, scheduled email/social media windows.
+The old evidence set mixed weak claims and broad self-help summaries. The repaired entry keeps three bounded claims about implementation intentions, unfinished goals, and restoration.
 
 ## Further Reading
 
-- [Deep Work](https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/)
-- [Flow (Csikszentmihalyi)](https://www.harpercollins.com/products/flow-mihaly-csikszentmihalyi)
-
-## Related Articles
-
-- [Dropout and Regularization Techniques](../../ai/dropout-and-regularization.md)
-- [Prompt Engineering: Techniques for LLM Interaction](../../ai/prompt-engineering.md)
-- [Conflict Resolution: Strategies and Techniques](../conflict-resolution-strategies-and-techniques.md)
+- [Implementation intentions: Strong effects of simple plans](https://doi.org/10.1037/0003-066X.54.7.493)
+- [Consider It Done! Plan Making Can Eliminate the Cognitive Effects of Unfulfilled Goals](https://doi.org/10.1037/a0024192)
+- [The restorative benefits of nature: Toward an integrative framework](https://doi.org/10.1080/01426399508706489)

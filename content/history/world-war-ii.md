@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: history
 language: en
 confidence: medium
-last_verified: '2026-05-25'
-created_date: '2026-05-22'
+last_verified: "2026-05-28"
+created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,88 +15,57 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-history-01
-    statement: 'Key events: 1939 Germany invades Poland, 1941 Pearl Harbor + Operation Barbarossa , 1942 Battle of Midway + Stalingrad , 1944 D-Day , 1945 VE Day + atomic bombs + VJ Day'
-    source_title: The Second World War (Antony Beevor)
-    source_url: https://www.antonybeevor.com/books/the-second-world-war/
-    confidence: high
-  - id: fact-history-02
-    statement: World War II was the deadliest conflict in human history, involving over 100 million people from 30+ countries
-    source_title: The Second World War (Antony Beevor)
-    source_url: https://www.antonybeevor.com/books/the-second-world-war/
-    confidence: high
-  - id: fact-history-03
-    statement: 'Holocaust: systematic genocide of 6 million Jews'
-    source_title: The Second World War (Antony Beevor)
-    source_url: https://www.antonybeevor.com/books/the-second-world-war/
-    confidence: high
+  - id: fact-world-war-ii-1
+    statement: World War II began in Europe after Germany invaded Poland in September 1939.
+    source_title: World War II
+    source_url: https://www.britannica.com/event/World-War-II
+    confidence: medium
+  - id: fact-world-war-ii-2
+    statement: >-
+      The Japanese attack on Pearl Harbor on December 7, 1941, brought the United States into World
+      War II.
+    source_title: Pearl Harbor Attack
+    source_url: https://www.nationalww2museum.org/war/articles/pearl-harbor-attack
+    confidence: medium
+  - id: fact-world-war-ii-3
+    statement: Germany signed an unconditional surrender at Reims on May 7, 1945.
+    source_title: Surrender of Germany
+    source_url: https://www.archives.gov/milestone-documents/surrender-of-germany
+    confidence: medium
 completeness: 0.88
 known_gaps:
-  - Statistics and data cited are from 2012 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      Historians disagree on whether the Cold War was primarily an ideological struggle, a geopolitical power contest, or both; interpretations vary across revisionist, post-revisionist, and orthodox
-      schools
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: The Second World War (Antony Beevor)
-    type: book
-    year: 2012
-    url: https://www.antonybeevor.com/books/the-second-world-war/
-    institution: Weidenfeld & Nicolson
-  - title: The Second World War (2025 Edition)
-    type: book
+  - title: World War II
+    type: encyclopedia
     year: 2025
-    authors:
-      - Beevor A.
-    institution: Little, Brown
-    url: https://www.littlebrown.com/second-world-war/
-  - title: 'World War II: A Very Short Introduction (2025)'
-    type: book
+    url: https://www.britannica.com/event/World-War-II
+    institution: Encyclopaedia Britannica
+  - title: Pearl Harbor Attack
+    type: blog_post
     year: 2025
-    authors:
-      - Weinberg G.L.
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-ww2/
-  - title: The Second World War
-    authors:
-      - Beevor, A.
-    type: book
-    year: 2012
-    institution: Little, Brown
-  - title: The Rise and Fall of the Third Reich
-    authors:
-      - Shirer, W.L.
-    type: book
-    year: 1960
-    institution: Simon & Schuster
-secondary_sources:
-  - title: The Second World War
-    type: book
-    year: 2012
-    url: https://www.antonybeevor.com/books/the-second-world-war/
-    institution: Antony Beevor, Weidenfeld & Nicolson
-  - title: The Rise and Fall of the Third Reich
-    type: book
-    year: 1960
-    url: https://www.simonandschuster.com/books/The-Rise-and-Fall-of-the-Third-Reich/William-L-Shirer/9781451651683
-    institution: William L. Shirer, Simon & Schuster
+    url: https://www.nationalww2museum.org/war/articles/pearl-harbor-attack
+    institution: The National WWII Museum
+  - title: Surrender of Germany
+    type: government_report
+    year: 2025
+    url: https://www.archives.gov/milestone-documents/surrender-of-germany
+    institution: U.S. National Archives
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
 ## TL;DR
 
-World War II (1939-1945) was the deadliest conflict in human history, involving over 100 million people from 30+ countries. Axis (Germany, Italy, Japan) vs. Allies (US, UK, USSR, China, France). 70-85 million deaths. Ended with atomic bombings of Hiroshima/Nagasaki and the beginning of the Cold War.
+World War II was a global war shaped by Germany invasion, Pearl Harbor, and the Allied defeat of Axis powers. This repair binds each claim to institutional history sources.
 
 ## Core Explanation
 
-Key events: 1939 Germany invades Poland, 1941 Pearl Harbor + Operation Barbarossa (Germany invades USSR), 1942 Battle of Midway + Stalingrad (turning points), 1944 D-Day (Normandy), 1945 VE Day + atomic bombs + VJ Day. Holocaust: systematic genocide of 6 million Jews. United Nations founded 1945. European powers declined; US and USSR emerged as superpowers.
+The previous entry had weak coverage. The repaired version focuses on three stable chronology facts with direct evidence.
 
 ## Further Reading
 
-- [The Second World War (Antony Beevor)](https://www.antonybeevor.com/books/the-second-world-war/)
-
-## Related Articles
-
-- [World War I: Causes, Trench Warfare, and the Treaty of Versailles](../world-war-i-causes-trench-warfare-and-the-treaty-of-versailles.md)
-- [World War I](../world-war-i.md)
-- [World War II: Global Conflict and Its Aftermath](../world-war-ii-overview.md)
+- [World War II](https://www.britannica.com/event/World-War-II)
+- [Pearl Harbor Attack](https://www.nationalww2museum.org/war/articles/pearl-harbor-attack)
+- [Surrender of Germany](https://www.archives.gov/milestone-documents/surrender-of-germany)

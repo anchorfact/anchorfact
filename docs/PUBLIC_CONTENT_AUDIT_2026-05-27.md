@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T01:55:22.380Z
+Generated: 2026-05-28T02:03:07.011Z
 
-Snapshot: 555 public / 445 draft / 1524 claims.
+Snapshot: 555 public / 445 draft / 1520 claims.
 
 ## Summary
 
@@ -13,7 +13,7 @@ This is a risk-weighted audit sample of public AnchorFact articles. It is intend
 - Articles with at least one fail check: 0
 - High-confidence samples needing review: 0
 - Claim-evidence failures: 0
-- Recommendations: keep_public: 6, downgrade_confidence: 0, repair_sources: 14, move_to_draft: 0
+- Recommendations: keep_public: 8, downgrade_confidence: 0, repair_sources: 12, move_to_draft: 0
 
 ## Method
 
@@ -23,82 +23,52 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 
 | # | bucket | slug | confidence | coverage | claims | checks | recommendation |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | low_verified_coverage | `sports/swimming-training` | medium | 2/6 (33.3%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 2 | low_verified_coverage | `history/american-revolution` | low | 3/8 (37.5%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 3 | low_verified_coverage | `health/yoga-practice` | low | 2/5 (40.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 4 | low_verified_coverage | `history/world-war-ii` | low | 2/5 (40.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 5 | low_verified_coverage | `self-improvement/focus-techniques` | medium | 4/10 (40.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 6 | low_verified_coverage | `science/big-bang-theory` | medium | 3/7 (42.9%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 7 | low_verified_coverage | `science/data-science-fundamentals` | low | 3/7 (42.9%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 8 | low_verified_coverage | `self-improvement/communication-skills` | medium | 1/9 (11.1%) | 3 | source=weak; claim=pass; summary=pass | repair_sources |
+| 1 | low_verified_coverage | `sports/chess-strategy` | medium | 3/7 (42.9%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 2 | low_verified_coverage | `history/mongol-empire` | low | 1/7 (14.3%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 3 | low_verified_coverage | `history/ottoman-empire` | low | 1/6 (16.7%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 4 | low_verified_coverage | `science/cell-structure` | low | 1/6 (16.7%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 5 | low_verified_coverage | `science/continental-drift` | low | 1/6 (16.7%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 6 | low_verified_coverage | `science/quantum-mechanics` | low | 1/6 (16.7%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 7 | low_verified_coverage | `business/negotiation-skills` | low | 1/5 (20.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 8 | low_verified_coverage | `computer-science/graph-bfs-dfs` | low | 1/5 (20.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
 | 9 | high_confidence | `ai/gpt-models` | high | 4/4 (100.0%) | 6 | source=pass; claim=pass; summary=pass | keep_public |
 | 10 | high_confidence | `ai/agentic-ai` | high | 2/2 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | high_confidence | `ai/ai-in-healthcare` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 12 | high_confidence | `ai/ai-red-teaming-and-safety` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 13 | medium_capped_claims | `ai/latent-diffusion-models` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 14 | medium_capped_claims | `ai/lora` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 15 | medium_capped_claims | `ai/loss-functions` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 16 | medium_capped_claims | `ai/multi-modal-learning` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 17 | low_confidence_public | `self-improvement/productivity-systems` | low | 2/2 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
-| 18 | low_confidence_public | `sports/marathon-running` | low | 1/1 (100.0%) | 5 | source=pass; claim=weak; summary=pass | repair_sources |
-| 19 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 20 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 13 | medium_capped_claims | `ai/neural-architecture-search` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 14 | medium_capped_claims | `ai/neural-rendering` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 15 | medium_capped_claims | `ai/neurosymbolic-ai` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 16 | medium_capped_claims | `ai/nlp-advanced-techniques` | medium | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 17 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 18 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 19 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 20 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 
 ## Article Findings
 
-### 1. Swimming Training and Stroke Techniques
+### 1. Chess Strategy
 
-- canonical slug: `sports/swimming-training`
-- canonical URL: https://anchorfact.org/sports/swimming-training/
+- canonical slug: `sports/chess-strategy`
+- canonical URL: https://anchorfact.org/sports/chess-strategy/
 - bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.705)
-- verified source coverage: 2/6 (33.3%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, claim_evidence_weak, partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 2. American Revolution
-
-- canonical slug: `history/american-revolution`
-- canonical URL: https://anchorfact.org/history/american-revolution/
-- bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 3/8 (37.5%)
-- claims: 3 total, 3 capped, 0 missing evidence
+- confidence: `medium` (verified_sources, score 0.72)
+- verified source coverage: 3/7 (42.9%)
+- claims: 3 total, 0 capped, 0 missing evidence
 - quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement, generic_source_homepage
+- hygiene flags: generic_source_homepage
 - recommendation: `repair_sources`
 
-### 3. Yoga Practice
+### 2. Mongol Empire
 
-- canonical slug: `health/yoga-practice`
-- canonical URL: https://anchorfact.org/health/yoga-practice/
+- canonical slug: `history/mongol-empire`
+- canonical URL: https://anchorfact.org/history/mongol-empire/
 - bucket: `low_verified_coverage`
 - confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 2/5 (40.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 4. World War II
-
-- canonical slug: `history/world-war-ii`
-- canonical URL: https://anchorfact.org/history/world-war-ii/
-- bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 2/5 (40.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
+- verified source coverage: 1/7 (14.3%)
+- claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: partial_source_verification, low_verified_coverage
 - source-title match: `weak`
 - claim-evidence match: `weak`
@@ -106,64 +76,94 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 5. Focus and Concentration Techniques
+### 3. Ottoman Empire
 
-- canonical slug: `self-improvement/focus-techniques`
-- canonical URL: https://anchorfact.org/self-improvement/focus-techniques/
+- canonical slug: `history/ottoman-empire`
+- canonical URL: https://anchorfact.org/history/ottoman-empire/
 - bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.705)
-- verified source coverage: 4/10 (40.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification, low_verified_coverage
+- confidence: `low` (verified_sources, score 0.475)
+- verified source coverage: 1/6 (16.7%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: partial_source_verification, low_verified_coverage
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
+- hygiene flags: none
 - recommendation: `repair_sources`
 
-### 6. Big Bang Theory
+### 4. Cell Structure
 
-- canonical slug: `science/big-bang-theory`
-- canonical URL: https://anchorfact.org/science/big-bang-theory/
+- canonical slug: `science/cell-structure`
+- canonical URL: https://anchorfact.org/science/cell-structure/
 - bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.87)
-- verified source coverage: 3/7 (42.9%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage, high_confidence_evidence_gap
+- confidence: `low` (verified_sources, score 0.475)
+- verified source coverage: 1/6 (16.7%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 7. Data Science: Methods, Tools, and Best Practices
+### 5. Continental Drift
 
-- canonical slug: `science/data-science-fundamentals`
-- canonical URL: https://anchorfact.org/science/data-science-fundamentals/
+- canonical slug: `science/continental-drift`
+- canonical URL: https://anchorfact.org/science/continental-drift/
 - bucket: `low_verified_coverage`
 - confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 3/7 (42.9%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, claim_evidence_weak, partial_source_verification, low_verified_coverage
+- verified source coverage: 1/6 (16.7%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak, generic_source_homepage
+- hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 8. Communication Skills
+### 6. Quantum Mechanics
 
-- canonical slug: `self-improvement/communication-skills`
-- canonical URL: https://anchorfact.org/self-improvement/communication-skills/
+- canonical slug: `science/quantum-mechanics`
+- canonical URL: https://anchorfact.org/science/quantum-mechanics/
 - bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.685)
-- verified source coverage: 1/9 (11.1%)
-- claims: 3 total, 0 capped, 0 missing evidence
+- confidence: `low` (verified_sources, score 0.475)
+- verified source coverage: 1/6 (16.7%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_source_homepage
+- recommendation: `repair_sources`
+
+### 7. Negotiation Skills
+
+- canonical slug: `business/negotiation-skills`
+- canonical URL: https://anchorfact.org/business/negotiation-skills/
+- bucket: `low_verified_coverage`
+- confidence: `low` (verified_sources, score 0.495)
+- verified source coverage: 1/5 (20.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: partial_source_verification, low_verified_coverage
 - source-title match: `weak`
-- claim-evidence match: `pass`
+- claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 8. Graph & BFS/DFS
+
+- canonical slug: `computer-science/graph-bfs-dfs`
+- canonical URL: https://anchorfact.org/computer-science/graph-bfs-dfs/
+- bucket: `low_verified_coverage`
+- confidence: `low` (verified_sources, score 0.475)
+- verified source coverage: 1/5 (20.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: duplicate_sources, generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
 ### 9. GPT (Generative Pre-trained Transformer) Model Family
@@ -226,57 +226,42 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 13. Diffusion Models in Depth: From DDPM to Stable Diffusion
+### 13. Neural Architecture Search: Automated Design of Deep Neural Networks
 
-- canonical slug: `ai/latent-diffusion-models`
-- canonical URL: https://anchorfact.org/ai/latent-diffusion-models/
+- canonical slug: `ai/neural-architecture-search`
+- canonical URL: https://anchorfact.org/ai/neural-architecture-search/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.69)
+- confidence: `medium` (verified_sources, score 0.74)
 - verified source coverage: 1/2 (50.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: duplicate_sources
+- hygiene flags: none
 - recommendation: `repair_sources`
 
-### 14. LoRA (Low-Rank Adaptation)
+### 14. Neural Rendering: NeRF, View Synthesis, and Implicit Scene Representations
 
-- canonical slug: `ai/lora`
-- canonical URL: https://anchorfact.org/ai/lora/
+- canonical slug: `ai/neural-rendering`
+- canonical URL: https://anchorfact.org/ai/neural-rendering/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.725)
+- confidence: `medium` (verified_sources, score 0.73)
 - verified source coverage: 1/2 (50.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: partial_source_verification
+- quality reasons: claim_evidence_weak, partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
+- hygiene flags: claim_evidence_weak, duplicate_sources
 - recommendation: `repair_sources`
 
-### 15. Loss Functions in Machine Learning
+### 15. Neuro-Symbolic AI: Bridging Learning and Reasoning
 
-- canonical slug: `ai/loss-functions`
-- canonical URL: https://anchorfact.org/ai/loss-functions/
+- canonical slug: `ai/neurosymbolic-ai`
+- canonical URL: https://anchorfact.org/ai/neurosymbolic-ai/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.67)
-- verified source coverage: 1/2 (50.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, claim_evidence_weak, partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak, duplicate_sources, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 16. Multi-Modal Machine Learning
-
-- canonical slug: `ai/multi-modal-learning`
-- canonical URL: https://anchorfact.org/ai/multi-modal-learning/
-- bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.71)
+- confidence: `medium` (verified_sources, score 0.73)
 - verified source coverage: 1/2 (50.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: claim_evidence_weak, partial_source_verification
@@ -286,37 +271,22 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: claim_evidence_weak
 - recommendation: `repair_sources`
 
-### 17. Productivity Systems
+### 16. Advanced NLP: Tokenization, Embeddings, and Decoding
 
-- canonical slug: `self-improvement/productivity-systems`
-- canonical URL: https://anchorfact.org/self-improvement/productivity-systems/
-- bucket: `low_confidence_public`
-- confidence: `low` (verified_sources, score 0.51)
+- canonical slug: `ai/nlp-advanced-techniques`
+- canonical URL: https://anchorfact.org/ai/nlp-advanced-techniques/
+- bucket: `medium_capped_claims`
+- confidence: `medium` (verified_sources, score 0.72)
 - verified source coverage: 2/2 (100.0%)
-- claims: 5 total, 5 capped, 0 missing evidence
-- quality reasons: generic_source_homepage
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak
 - source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: generic_source_homepage
+- hygiene flags: claim_evidence_weak
 - recommendation: `repair_sources`
 
-### 18. Marathon Running
-
-- canonical slug: `sports/marathon-running`
-- canonical URL: https://anchorfact.org/sports/marathon-running/
-- bucket: `low_confidence_public`
-- confidence: `low` (verified_sources, score 0.45)
-- verified source coverage: 1/1 (100.0%)
-- claims: 5 total, 5 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 19. Film Genres
+### 17. Film Genres
 
 - canonical slug: `arts/film-genres`
 - canonical URL: https://anchorfact.org/arts/film-genres/
@@ -331,13 +301,43 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 20. World Literature
+### 18. World Literature
 
 - canonical slug: `arts/world-literature`
 - canonical URL: https://anchorfact.org/arts/world-literature/
 - bucket: `low_confidence_public`
 - confidence: `low` (verified_sources, score 0.58)
 - verified source coverage: 2/2 (100.0%)
+- claims: 5 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
+
+### 19. Age of Exploration
+
+- canonical slug: `history/age-of-exploration`
+- canonical URL: https://anchorfact.org/history/age-of-exploration/
+- bucket: `low_confidence_public`
+- confidence: `low` (verified_sources, score 0.45)
+- verified source coverage: 1/1 (100.0%)
+- claims: 5 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
+
+### 20. Byzantine Empire
+
+- canonical slug: `history/byzantine-empire`
+- canonical URL: https://anchorfact.org/history/byzantine-empire/
+- bucket: `low_confidence_public`
+- confidence: `low` (verified_sources, score 0.45)
+- verified source coverage: 1/1 (100.0%)
 - claims: 5 total, 0 capped, 0 missing evidence
 - quality reasons: none
 - source-title match: `pass`

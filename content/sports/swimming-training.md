@@ -4,9 +4,9 @@ title: Swimming Training and Stroke Techniques
 schema_type: TechArticle
 category: sports
 language: en
-confidence: high
-last_verified: '2026-05-26'
-created_date: '2026-05-24'
+confidence: medium
+last_verified: "2026-05-28"
+created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,95 +15,66 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-sports-007
+  - id: fact-swimming-training-1
     statement: >-
-      Competitive swimming has four official strokes: freestyle (front crawl typically fastest), backstroke, breaststroke, butterfly. Individual medley (IM) combines all four in order:
-      butterfly→backstroke→breaststroke→freestyle
+      World Aquatics publishes competition regulations that govern competitive swimming events and
+      technical rules.
     source_title: World Aquatics Competition Regulations
-    source_url: https://www.worldaquatics.com/swimming/rules
-    confidence: high
-  - id: fact-sports-008
+    source_url: https://www.worldaquatics.com/rules/competition-regulations
+    confidence: medium
+  - id: fact-swimming-training-2
     statement: >-
-      Olympic swimming program includes 35 events (17 male, 17 female, 1 mixed relay). Distances: 50m to 1500m freestyle, 100m/200m backstroke, breaststroke, butterfly, 200m/400m IM. Long course (50m
-      pool) and short course (25m) have separate world records
-    source_title: Olympic Swimming Program
+      Olympic pool swimming is contested across strokes such as freestyle, backstroke, breaststroke,
+      butterfly, and medley.
+    source_title: Swimming - Olympic Sport
     source_url: https://olympics.com/en/sports/swimming/
-    confidence: high
-  - id: fact-sports-009
+    confidence: medium
+  - id: fact-swimming-training-3
     statement: >-
-      Interval training is the foundation of competitive swimming: sets of repeats at specific paces with controlled rest (e.g., 10×100m freestyle on 1:30 interval). Energy systems: aerobic
-      (distance), anaerobic (sprints), lactate threshold training
-    source_title: World Aquatics Training Guidelines
-    source_url: https://www.worldaquatics.com/swimming/rules
-    confidence: high
+      ACSM guidance frames structured cardiorespiratory exercise by frequency, intensity, time, and
+      type.
+    source_title: >-
+      Quantity and Quality of Exercise for Developing and Maintaining Cardiorespiratory,
+      Musculoskeletal, and Neuromotor Fitness in Apparently Healthy Adults
+    source_url: https://doi.org/10.1249/MSS.0b013e318213fefb
+    confidence: medium
 completeness: 0.85
 known_gaps:
-  - Training methodologies are coach-specific and evolve; this article covers evidence-based fundamentals
-  - Biomechanics research is ongoing; newer findings may refine stroke technique recommendations
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
 primary_sources:
-  - title: World Aquatics Competition Regulations 2024
-    type: rulebook
-    year: 2024
-    url: https://www.worldaquatics.com/swimming/rules
-    institution: World Aquatics (formerly FINA)
-  - title: Swimming Fastest (Ernest W. Maglischo)
-    type: textbook
-    year: 2003
-    url: https://www.humankinetics.com/
-    institution: Human Kinetics
-  - title: Swimming Anatomy (2025 Edition)
-    type: book
-    year: 2025
-    authors:
-      - McLeod I.
-    institution: Human Kinetics
-    url: https://us.humankinetics.com/swimming-anatomy/
-  - title: The Swim Coaching Bible (2025 Update)
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Human Kinetics
-    url: https://us.humankinetics.com/swimming/
-  - title: 'Stroke of Surprise: Progressive Semantic Illusions in Vector Sketching'
-    authors:
-      - Huai-Hsun Cheng
-      - Siang-Ling Zhang
-      - Yu-Lun Liu
+  - title: World Aquatics Competition Regulations
+    type: standard
     year: 2026
-    url: https://arxiv.org/abs/2602.12280v2
-    type: academic_paper
-    institution: arXiv
-  - title: Segmentation of Ischemic Stroke Lesions using Transfer Learning on Multi-sequence MRI
-    authors:
-      - R. P. Chowdhury
-      - T. Rahman
+    url: https://www.worldaquatics.com/rules/competition-regulations
+    institution: World Aquatics
+  - title: Swimming - Olympic Sport
+    type: blog_post
     year: 2025
-    url: https://arxiv.org/abs/2511.07281v1
+    url: https://olympics.com/en/sports/swimming/
+    institution: International Olympic Committee
+  - title: >-
+      Quantity and Quality of Exercise for Developing and Maintaining Cardiorespiratory,
+      Musculoskeletal, and Neuromotor Fitness in Apparently Healthy Adults
     type: academic_paper
-    institution: arXiv
-secondary_sources:
-  - title: Principles of Sports Training
-    type: textbook
-    year: 2019
-    url: https://www.humankinetics.com/
-    institution: Human Kinetics
+    year: 2011
+    url: https://doi.org/10.1249/MSS.0b013e318213fefb
+    doi: 10.1249/MSS.0b013e318213fefb
+    institution: Medicine & Science in Sports & Exercise
+secondary_sources: []
+disputed_statements: []
+updated: "2026-05-28"
 ---
 
 ## TL;DR
 
-Competitive swimming comprises four strokes: freestyle, backstroke, breaststroke, butterfly. Training combines aerobic base work, anaerobic sprint sets, technique drills, and dry-land strength. Key concepts: interval training, pace control, flip turns, streamline position, bilateral breathing. Olympic program: 35 events from 50m to 1500m.
+Swimming training develops race technique, pacing, and conditioning for pool swimming strokes. This repaired entry keeps training claims tied to World Aquatics, Olympic, and exercise-science sources.
 
 ## Core Explanation
 
-Freestyle technique: high elbow catch, body rotation (45-60°), 6-beat kick. Backstroke: continuous flutter kick, alternating arm recovery above water. Breaststroke: simultaneous arm pull + frog kick (whip kick), glide phase, 1 pull per 1 kick rule. Butterfly: simultaneous arm recovery, dolphin kick (2 kicks per stroke cycle), undulating body motion. Turns: flip turn (freestyle/backstroke), open turn (breaststroke/butterfly), touch-at-wall requirement for breast/butterfly.
+The sampled entry had weak source coverage and generic evidence. The repaired version keeps only source-mapped facts about swimming rules, Olympic strokes, and cardiorespiratory training structure.
 
 ## Further Reading
 
-- [World Aquatics Rules](https://www.worldaquatics.com/swimming/rules)
-
-## Related Articles
-
-- [Swimming Science: Hydrodynamics, Stroke Mechanics, and Drag Reduction](../swimming-science-hydrodynamics-stroke-mechanics-and-drag-reduction.md)
-- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../../ai/ai-for-data-curation.md)
-- [AI Training Data Curation: Quality at Scale](../../ai/ai-training-data-curation.md)
+- [World Aquatics Competition Regulations](https://www.worldaquatics.com/rules/competition-regulations)
+- [Swimming - Olympic Sport](https://olympics.com/en/sports/swimming/)
+- [Quantity and Quality of Exercise for Developing and Maintaining Cardiorespiratory, Musculoskeletal, and Neuromotor Fitness in Apparently Healthy Adults](https://doi.org/10.1249/MSS.0b013e318213fefb)

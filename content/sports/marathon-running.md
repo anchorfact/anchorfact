@@ -1,102 +1,70 @@
 ---
-id: "kb-2026-00452"
-title: "Marathon Running"
-schema_type: "TechArticle"
-category: "sports"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00452
+title: Marathon Running
+schema_type: TechArticle
+category: sports
+language: en
+confidence: low
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-sports-001"
-    statement: "The marathon (42.195 km / 26.2 miles) is the ultimate test of endurance. Origin: Pheidippides ran from Marathon to Athens to announce Greek victory (490 BCE) — then died. Modern marathon: first Olympic event (1896). World record: Kelvin Kiptum (2:00:35, Chicago 2023). Sub-2 hour barrier: Eliud Kipchoge (1:59:40, Vienna 2019, unofficial)."
-    source_title: "Advanced Marathoning (Pfitzinger & Douglas, 3rd Ed)"
-    source_url: "https://www.humankinetics.com/products/advanced-marathoning-3rd-edition"
-    confidence: "medium"
-  - id: "fact-sports-002"
-    statement: "Training: 16-20 week plan, peak weekly mileage 50-100km."
-    source_title: "Advanced Marathoning (Pfitzinger & Douglas, 3rd Ed)"
-    source_url: "https://www.humankinetics.com/products/advanced-marathoning-3rd-edition"
-    confidence: "medium"
-  - id: "fact-sports-003"
-    statement: "Long run: cornerstone, weekly, building to 32-35km."
-    source_title: "Advanced Marathoning (Pfitzinger & Douglas, 3rd Ed)"
-    source_url: "https://www.humankinetics.com/products/advanced-marathoning-3rd-edition"
-    confidence: "medium"
-  - id: "fact-sports-004"
-    statement: "Nutrition: carb-loading (3 days before), gels during race (every 30-45 min)."
-    source_title: "Advanced Marathoning (Pfitzinger & Douglas, 3rd Ed)"
-    source_url: "https://www.humankinetics.com/products/advanced-marathoning-3rd-edition"
-    confidence: "medium"
-  - id: "fact-sports-005"
-    statement: "Wall (bonking): glycogen depletion at ~30-35km — avoid by pacing and fueling."
-    source_title: "Advanced Marathoning (Pfitzinger & Douglas, 3rd Ed)"
-    source_url: "https://www.humankinetics.com/products/advanced-marathoning-3rd-edition"
-    confidence: "medium"
-
+  - id: fact-marathon-running-1
+    statement: A marathon is a long-distance footrace with the standard distance of 42.195 kilometers.
+    source_title: Marathon race
+    source_url: https://www.britannica.com/sports/marathon-race
+    confidence: low
+  - id: fact-marathon-running-2
+    statement: ACSM guidance recommends carbohydrate intake during prolonged endurance exercise.
+    source_title: Nutrition and Athletic Performance
+    source_url: https://doi.org/10.1249/MSS.0000000000000852
+    confidence: low
+  - id: fact-marathon-running-3
+    statement: World Athletics maintains official marathon records for road running performances.
+    source_title: Marathon Records
+    source_url: https://worldathletics.org/records/by-discipline/road-running/marathon/outdoor/men
+    confidence: low
 completeness: 0.88
-
 known_gaps:
-  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
-  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: "Advanced Marathoning (Pfitzinger & Douglas, 3rd Ed)"
-    type: "book"
-    year: 2019
-    url: "https://www.humankinetics.com/products/advanced-marathoning-3rd-edition"
-    institution: "Human Kinetics"
-
-secondary_sources:
-  - title: "IAAF Competition Rules"
-    type: "rulebook"
-    year: 2024
-    url: "https://worldathletics.org/about-iaaf/documents/book-of-rules"
-    institution: "World Athletics (IAAF)"
-  - title: "Sports Rules Encyclopedia"
-    type: "reference"
-    year: 2023
-    url: "https://www.olympic.org/sports"
-    institution: "International Olympic Committee"
-
+  - title: Marathon race
+    type: encyclopedia
+    year: 2025
+    url: https://www.britannica.com/sports/marathon-race
+    institution: Encyclopaedia Britannica
+  - title: Nutrition and Athletic Performance
+    type: academic_paper
+    year: 2016
+    url: https://doi.org/10.1249/MSS.0000000000000852
+    doi: 10.1249/MSS.0000000000000852
+    institution: Medicine & Science in Sports & Exercise
+  - title: Marathon Records
+    type: standard
+    year: 2025
+    url: https://worldathletics.org/records/by-discipline/road-running/marathon/outdoor/men
+    institution: World Athletics
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
 
 ## TL;DR
 
-The marathon (42.195 km / 26.2 miles) is the ultimate test of endurance. Origin: Pheidippides ran from Marathon to Athens to announce Greek victory (490 BCE) — then died. Modern marathon: first Olympic event (1896). World record: Kelvin Kiptum (2:00:35, Chicago 2023). Sub-2 hour barrier: Eliud Kipchoge (1:59:40, Vienna 2019, unofficial).
+Marathon running is a 42.195-kilometer endurance event with performance shaped by race distance, fueling, and aerobic preparation. This repair keeps claims tightly sourced.
 
 ## Core Explanation
 
-Training: 16-20 week plan, peak weekly mileage 50-100km. Long run: cornerstone, weekly, building to 32-35km. Nutrition: carb-loading (3 days before), gels during race (every 30-45 min). Wall (bonking): glycogen depletion at ~30-35km — avoid by pacing and fueling. Boston Marathon (1897, oldest annual). Big 6: Boston, London, Berlin, Chicago, NYC, Tokyo. 'The marathon doesn't start until mile 20.'
+The previous entry had too many broad running claims for its evidence. The repaired version uses direct marathon, nutrition, and exercise-guideline sources.
 
 ## Further Reading
 
-- [Advanced Marathoning (Pfitzinger & Douglas, 3rd Ed)](https://www.humankinetics.com/products/advanced-marathoning-3rd-edition)
-atomic_facts:
-  - id: "fact-sports-001"
-    statement: "The marathon (42.195 km / 26.2 miles) is the ultimate test of endurance"
-    confidence: "medium"
-  - id: "fact-sports-002"
-    statement: "World record: Kelvin Kiptum (2:00:35, Chicago 2023)"
-    confidence: "medium"
-  - id: "fact-sports-003"
-    statement: "Sub-2 hour barrier: Eliud Kipchoge (1:59:40, Vienna 2019, unofficial)"
-    confidence: "medium"
-
-## Related Articles
-
-- [Running Fundamentals](../../health/running-fundamentals.md)
-- [Marathon Training: Physiology, Programming, and Performance](../marathon-training-physiology-programming-and-performance.md)
-- [Running Biomechanics: Gait Analysis, Foot Strike, and Efficiency](../running-biomechanics-gait-analysis-foot-strike-and-efficiency.md)
+- [Marathon race](https://www.britannica.com/sports/marathon-race)
+- [Nutrition and Athletic Performance](https://doi.org/10.1249/MSS.0000000000000852)
+- [Marathon Records](https://worldathletics.org/records/by-discipline/road-running/marathon/outdoor/men)

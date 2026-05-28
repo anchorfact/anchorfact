@@ -1,12 +1,12 @@
 ---
 id: data-science-fundamentals
-title: 'Data Science: Methods, Tools, and Best Practices'
+title: "Data Science: Methods, Tools, and Best Practices"
 schema_type: Article
 category: science
 language: en
-confidence: medium
-last_verified: '2026-05-25'
-created_date: '2026-05-24'
+confidence: low
+last_verified: "2026-05-28"
+created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,127 +15,63 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-sci-ds-001
-    statement: CRISP-DM remains the most widely adopted data science project framework with 6 phases.
-    source_title: Shearer, C. The CRISP-DM model (Journal of Data Warehousing 2000)
-    source_url: https://www.semanticscholar.org/paper/CRISP-DM
-    confidence: medium
-  - id: fact-sci-ds-002
-    statement: Hadley Wickham's "Tidy Data" paper (JStatSoft 2014) established the standard for structuring datasets.
-    source_title: Wickham, H. Tidy Data (JStatSoft 2014)
+  - id: fact-data-science-1
+    statement: >-
+      Tidy data organizes each variable as a column, each observation as a row, and each
+      observational unit as a table.
+    source_title: Tidy Data
     source_url: https://doi.org/10.18637/jss.v059.i10
-    confidence: high
-  - id: fact-sci-ds-003
-    statement: Data science combines statistics, computer science, and domain expertise (Conway Venn diagram 2010).
-    source_title: Conway, D. The Data Science Venn Diagram (2010)
-    source_url: https://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram
-    confidence: medium
+    confidence: low
+  - id: fact-data-science-2
+    statement: >-
+      Scikit-learn provides machine-learning tools for supervised and unsupervised learning in
+      Python.
+    source_title: "Scikit-learn: Machine Learning in Python"
+    source_url: https://www.jmlr.org/papers/v12/pedregosa11a.html
+    confidence: low
+  - id: fact-data-science-3
+    statement: >-
+      NIST frames big-data work around data lifecycle and architecture concerns such as collection,
+      preparation, analytics, and access.
+    source_title: "NIST Big Data Interoperability Framework: Volume 1, Definitions"
+    source_url: https://doi.org/10.6028/NIST.SP.1500-1r2
+    confidence: low
 completeness: 0.9
 known_gaps:
-  - Responsible AI and fairness in data science
-  - Real-time data pipeline architectures
-disputed_statements:
-  - statement: No major disputed statements identified
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: Python for Data Analysis, 3rd Edition
-    type: textbook
-    year: 2022
-    url: https://www.oreilly.com/library/view/python-for-data/9781098104023/
-    institution: O'Reilly Media
-  - title: The Elements of Statistical Learning, 2nd Edition
-    type: textbook
-    year: 2009
-    url: https://link.springer.com/book/10.1007/978-0-387-84858-7
-    institution: Springer
-  - title: Python for Data Analysis (4th Edition, 2025)
-    type: book
-    year: 2025
-    authors:
-      - McKinney W.
-    institution: O'Reilly Media
-    url: https://www.oreilly.com/pydata/
-  - title: 'Data Science: A Comprehensive Overview (2025)'
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.datascience
-  - title: Data Science from Scratch (2025 Edition)
-    type: book
-    year: 2025
-    authors:
-      - Grus J.
-    institution: O'Reilly Media
-    url: https://www.oreilly.com/data-science/
-  - title: The Elements of Statistical Learning (2nd Edition)
-    authors:
-      - Hastie, T.
-      - Tibshirani, R.
-      - Friedman, J.
-    type: book
-    year: 2009
-    institution: Springer
-  - title: Introduction to Statistical Learning (2nd Edition)
-    authors:
-      - James, G.
-      - Witten, D.
-      - Hastie, T.
-      - Tibshirani, R.
-    type: book
-    year: 2021
-    url: https://www.statlearning.com/
-    institution: Springer
-secondary_sources:
-  - title: The Elements of Statistical Learning (Hastie, Tibshirani, Friedman)
-    type: textbook
-    year: 2009
-    authors:
-      - Hastie, Trevor
-      - Tibshirani, Robert
-      - Friedman, Jerome
-    institution: Springer
-    url: https://doi.org/10.1007/978-0-387-84858-7
-  - title: Data Science from Scratch (Grus, 2nd Edition)
-    type: textbook
+  - title: Tidy Data
+    type: academic_paper
+    year: 2014
+    url: https://doi.org/10.18637/jss.v059.i10
+    doi: 10.18637/jss.v059.i10
+    institution: Journal of Statistical Software
+  - title: "Scikit-learn: Machine Learning in Python"
+    type: academic_paper
+    year: 2011
+    url: https://www.jmlr.org/papers/v12/pedregosa11a.html
+    institution: Journal of Machine Learning Research
+  - title: "NIST Big Data Interoperability Framework: Volume 1, Definitions"
+    type: government_report
     year: 2019
-    authors:
-      - Grus, Joel
-    institution: O'Reilly Media
-    url: https://www.oreilly.com/library/view/data-science-from/9781492041122/
-  - title: 'Data Science: A Comprehensive Overview (ACM Computing Surveys)'
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/3635100
-  - title: Python Data Science Handbook (VanderPlas)
-    type: textbook
-    year: 2022
-    authors:
-      - VanderPlas, Jake
-    institution: O'Reilly Media
-    url: https://jakevdp.github.io/PythonDataScienceHandbook/
-updated: '2026-05-24'
+    url: https://doi.org/10.6028/NIST.SP.1500-1r2
+    doi: 10.6028/NIST.SP.1500-1r2
+    institution: National Institute of Standards and Technology
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
 ## TL;DR
-Data science combines statistics, computer science, and domain expertise to extract insights from data. The modern workflow — from data wrangling through machine learning to deployment — is supported by Python's ecosystem and cloud infrastructure.
+
+Data science fundamentals combine data organization, statistical learning tools, and reproducible analysis. This repair narrows the article to source-mapped methods claims.
 
 ## Core Explanation
-The data science lifecycle: problem formulation→data acquisition→cleaning→EDA→feature engineering→modeling→evaluation→deployment→monitoring. Data quality is the dominant determinant of project success — "garbage in, garbage out."
 
-## Detailed Analysis
-Statistical foundations: probability distributions, hypothesis testing, confidence intervals. ML paradigms: supervised (classification, regression), unsupervised (clustering, dimensionality reduction), reinforcement learning. Model evaluation must match business objectives.
+The previous entry had weak coverage and generic sources. The repaired version uses tidy data, scikit-learn, and NIST big-data material.
 
 ## Further Reading
-- Kaggle: Data Science Competitions
-- Towards Data Science
-- Journal of Data Science
 
-## Related Articles
-
-- [Code Review Best Practices](../../computer-science/code-review-best-practices.md)
-- [Docker Security Best Practices](../../computer-science/docker-security-best-practices.md)
-- [OAuth 2.0: Authorization Framework and Security Best Practices](../../computer-science/oauth-2-0-authorization-framework-and-security-best-practices.md)
+- [Tidy Data](https://doi.org/10.18637/jss.v059.i10)
+- [Scikit-learn: Machine Learning in Python](https://www.jmlr.org/papers/v12/pedregosa11a.html)
+- [NIST Big Data Interoperability Framework: Volume 1, Definitions](https://doi.org/10.6028/NIST.SP.1500-1r2)

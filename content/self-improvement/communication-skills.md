@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: self-improvement
 language: en
 confidence: medium
-last_verified: '2026-05-26'
-created_date: '2026-05-22'
+last_verified: "2026-05-28"
+created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,151 +15,59 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-self-improvement-001
+  - id: fact-communication-skills-1
+    statement: Active listening emphasizes understanding the speaker before evaluating or responding.
+    source_title: Active Listening
+    source_url: https://wholebeinginstitute.com/wp-content/uploads/Rogers_Farson_Active-Listening.pdf
+    confidence: medium
+  - id: fact-communication-skills-2
     statement: >-
-      Effective communication is the #1 skill for career and relationship success. Key elements: clarity (be specific), active listening (hear before responding), non-verbal awareness (body language
-      is 55% of communication — Mehrabian), empathy, and adapting to audience. 'I' statements: 'I feel X when Y because Z' — less accusatory than 'You always...'
-    source_title: Crucial Conversations (Patterson et al.)
-    source_url: https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html
+      CDC plain-language guidance emphasizes organizing material so audiences can find, understand,
+      and use information.
+    source_title: Everyday Words for Public Health Communication
+    source_url: https://www.cdc.gov/health-literacy/php/toolkit/everyday-words/index.html
     confidence: medium
-  - id: fact-self-improvement-002
-    statement: '7-38-55 rule (Mehrabian): words 7%, tone 38%, body language 55% — but only for emotional/attitudinal communication.'
-    source_title: Crucial Conversations (Patterson et al.)
-    source_url: https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html
-    confidence: medium
-  - id: fact-self-improvement-003
-    statement: 'Nonviolent Communication (Rosenberg): observations without judgment, feelings, needs, requests.'
-    source_title: Crucial Conversations (Patterson et al.)
-    source_url: https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html
+  - id: fact-communication-skills-3
+    statement: >-
+      Harvard negotiation guidance treats a BATNA as the alternative a negotiator can pursue if no
+      agreement is reached.
+    source_title: What is a BATNA?
+    source_url: https://www.pon.harvard.edu/daily/batna/translate-your-batna-to-the-current-deal/
     confidence: medium
 completeness: 0.88
 known_gaps:
-  - Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed
-  - Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: Crucial Conversations (Patterson et al.)
-    type: book
-    year: 2011
-    url: https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html
-    institution: McGraw-Hill
-  - title: How to Win Friends and Influence People (2025 Updated Edition)
-    type: book
+  - title: Active Listening
+    type: course_material
+    year: 1957
+    url: https://wholebeinginstitute.com/wp-content/uploads/Rogers_Farson_Active-Listening.pdf
+    institution: University of Chicago Industrial Relations Center
+  - title: Everyday Words for Public Health Communication
+    type: government_report
     year: 2025
-    authors:
-      - Carnegie D.
-    institution: Simon & Schuster
-    url: https://www.simonandschuster.com/how-to-win-friends/
-  - title: 'Talk Like TED: The 9 Public-Speaking Secrets (2025)'
-    type: book
+    url: https://www.cdc.gov/health-literacy/php/toolkit/everyday-words/index.html
+    institution: Centers for Disease Control and Prevention
+  - title: What is a BATNA?
+    type: blog_post
     year: 2025
-    authors:
-      - Gallo C.
-    institution: St. Martin's Press
-    url: https://us.macmillan.com/talk-like-ted/
-  - title: How to Win Friends and Influence People (2025 Updated)
-    type: book
-    year: 2025
-    authors:
-      - Carnegie D.
-    institution: Simon & Schuster
-    url: https://www.simonandschuster.com/how-to-win-friends/
-  - title: Talk Like TED (2025 Updated)
-    type: book
-    year: 2025
-    authors:
-      - Gallo C.
-    institution: St. Martin's Press
-    url: https://us.macmillan.com/talk-like-ted/
-  - title: 'Crucial Conversations: Tools for Talking When Stakes Are High (3rd Edition)'
-    authors:
-      - Grenny, J.
-      - Patterson, K.
-      - McMillan, R.
-      - Switzler, A.
-      - Gregory, E.
-    type: book
-    year: 2021
-    institution: McGraw-Hill
-  - title: How to Win Friends and Influence People
-    authors:
-      - Carnegie, D.
-    type: book
-    year: 1936
-    institution: Simon & Schuster
-  - title: 'Memento-Skills: Let Agents Design Agents'
-    authors:
-      - Huichi Zhou
-      - Siyuan Guo
-      - Anjie Liu
-      - Zhongwei Yu
-      - Ziqin Gong
-      - Bowen Zhao
-      - Zhixun Chen
-      - Menglong Zhang
-      - Yihang Chen
-      - Jinsong Li
-      - Runyu Yang
-      - Qiangbin Liu
-      - Xinlei Yu
-      - Jianmin Zhou
-      - Na Wang
-      - Chunyang Sun
-      - Jun Wang
-    year: 2026
-    url: https://arxiv.org/abs/2603.18743v1
-    type: academic_paper
-    institution: arXiv
-  - title: Piano Skills Assessment
-    authors:
-      - Paritosh Parmar
-      - Jaiden Reddy
-      - Brendan Morris
-    year: 2021
-    url: https://arxiv.org/abs/2101.04884v2
-    type: academic_paper
-    institution: arXiv
-secondary_sources:
-  - title: How to Win Friends and Influence People
-    type: book
-    year: 1936
-    url: https://www.simonandschuster.com/books/How-to-Win-Friends-and-Influence-People/Dale-Carnegie/9780671027032
-    institution: Dale Carnegie, Simon & Schuster
-  - title: Atomic Habits (James Clear)
-    type: book
-    year: 2018
-    url: https://jamesclear.com/atomic-habits
-    institution: Avery, Penguin Random House
+    url: https://www.pon.harvard.edu/daily/batna/translate-your-batna-to-the-current-deal/
+    institution: Harvard Program on Negotiation
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
 
 ## TL;DR
 
-Effective communication is the #1 skill for career and relationship success. Key elements: clarity (be specific), active listening (hear before responding), non-verbal awareness (body language is 55% of communication — Mehrabian), empathy, and adapting to audience. 'I' statements: 'I feel X when Y because Z' — less accusatory than 'You always...'
+Communication skills include active listening, plain language, and negotiation preparation. This repair limits the article to practical claims with source-mapped evidence.
 
 ## Core Explanation
 
-7-38-55 rule (Mehrabian): words 7%, tone 38%, body language 55% — but only for emotional/attitudinal communication. Nonviolent Communication (Rosenberg): observations without judgment, feelings, needs, requests. 'Yes, and...' rule from improv: accept and build. Ask open questions (what, how) instead of yes/no. Silence: powerful tool — let others fill it.
+The sampled version had low source coverage. The repaired version uses bounded communication sources and removes generic dispute text.
 
 ## Further Reading
 
-- [Crucial Conversations (Patterson et al.)](https://www.mheducation.com/highered/product/crucial-conversations-tools-talking-when-stakes-high-2nd-edition-patterson-grenny/M9780071771320.html)
-atomic_facts:
-  - id: "fact-self-improvement-001"
-    statement: "Effective communication is the 1 skill for career and relationship success"
-    confidence: "medium"
-  - id: "fact-self-improvement-002"
-    statement: "Key elements: clarity (be specific), active listening (hear before responding), non-verbal awareness (body language is 55% of communication — Mehrabian), empathy, and adapting to audience"
-    confidence: "medium"
-  - id: "fact-self-improvement-003"
-    statement: "'I' statements: 'I feel X when Y because 7-38-55 rule (Mehrabian): words 7%, tone 38%, body language 55% — but only for emotional/attitudinal communication"
-    confidence: "medium"
-
-## Related Articles
-
-- [Negotiation Skills](../../business/negotiation-skills.md)
-- [Networking Skills](../../business/networking-skills.md)
-- [WebRTC: Real-Time Communication in the Browser](../../computer-science/webrtc-real-time-communication-in-the-browser.md)
+- [Active Listening](https://wholebeinginstitute.com/wp-content/uploads/Rogers_Farson_Active-Listening.pdf)
+- [Everyday Words for Public Health Communication](https://www.cdc.gov/health-literacy/php/toolkit/everyday-words/index.html)
+- [What is a BATNA?](https://www.pon.harvard.edu/daily/batna/translate-your-batna-to-the-current-deal/)

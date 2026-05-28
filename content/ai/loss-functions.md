@@ -4,8 +4,8 @@ title: Loss Functions in Machine Learning
 schema_type: TechArticle
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -15,100 +15,62 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: f1
+  - id: fact-loss-functions-1
+    statement: Cross-entropy is a common classification loss connected to probabilistic modeling.
+    source_title: Deep Learning
+    source_url: https://www.deeplearningbook.org/contents/ml.html
+    confidence: medium
+  - id: fact-loss-functions-2
     statement: >-
-      Cross-entropy loss is the standard objective for classification, minimizing the negative log-likelihood of the true class. It provides strong gradient signals and is theoretically connected to
-      maximum likelihood estimation.
-    source_title: Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. Deep Learning (Chapter 6.2). MIT Press 2016
-    source_url: https://www.deeplearningbook.org/contents/mlp.html
-    confidence: high
-  - id: f2
-    statement: >-
-      Focal Loss (Lin et al. 2017, ICCV) down-weights easy examples and focuses training on hard negatives, addressing extreme class imbalance in object detection. It was key to RetinaNet achieving
-      state-of-the-art results.
-    source_title: Lin, Tsung-Yi, et al. Focal Loss for Dense Object Detection. ICCV 2017
+      Huber introduced a robust loss that is less sensitive to outliers than squared error for large
+      residuals.
+    source_title: Robust Estimation of a Location Parameter
+    source_url: https://doi.org/10.1214/aoms/1177703732
+    confidence: medium
+  - id: fact-loss-functions-3
+    statement: Focal loss was proposed to address class imbalance in dense object detection.
+    source_title: Focal Loss for Dense Object Detection
     source_url: https://arxiv.org/abs/1708.02002
-    confidence: high
-  - id: f3
-    statement: >-
-      Contrastive loss (InfoNCE, Oord et al. 2018, DeepMind) maximizes mutual information between positive pairs while pushing away negatives. It is the foundation of SimCLR, CLIP, and most
-      self-supervised learning methods.
-    source_title: van den Oord, Aaron, et al. Representation Learning with Contrastive Predictive Coding. 2018
-    source_url: https://arxiv.org/abs/1807.03748
-    confidence: high
+    confidence: medium
 completeness: 0.9
 known_gaps:
-  - Contrastive losses (InfoNCE, SimCLR)
-  - Perceptual losses for generative models
-disputed_statements:
-  - statement: No major disputed statements identified
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: Pattern Recognition and Machine Learning (Bishop)
-    type: textbook
-    year: 2006
-    url: https://link.springer.com/book/9780387310732
-    institution: Springer
+  - title: Deep Learning
+    type: book
+    year: 2016
+    url: https://www.deeplearningbook.org/contents/ml.html
+    institution: MIT Press
+    authors:
+      - Ian Goodfellow
+      - Yoshua Bengio
+      - Aaron Courville
+  - title: Robust Estimation of a Location Parameter
+    type: academic_paper
+    year: 1964
+    url: https://doi.org/10.1214/aoms/1177703732
+    doi: 10.1214/aoms/1177703732
+    institution: The Annals of Mathematical Statistics
   - title: Focal Loss for Dense Object Detection
     type: academic_paper
     year: 2017
     url: https://arxiv.org/abs/1708.02002
-    institution: ICCV
-secondary_sources:
-  - title: A Comprehensive Survey of Loss Functions in Machine Learning
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: Annals of Data Science (Springer)
-    url: https://doi.org/10.1007/s40745-024-00537-4
-  - title: Focal Loss for Dense Object Detection
-    type: conference_paper
-    year: 2017
-    authors:
-      - Lin, Tsung-Yi
-      - Goyal, Priya
-      - Girshick, Ross
-      - He, Kaiming
-      - Dollár, Piotr
-    institution: Facebook AI Research / ICCV
-    url: https://arxiv.org/abs/1708.02002
-  - title: "Deep Learning (Textbook) — Chapter 6.2.1: Loss Functions & MLE"
-    type: textbook
-    year: 2016
-    authors:
-      - Goodfellow, Ian
-      - Bengio, Yoshua
-      - Courville, Aaron
-    institution: MIT Press
-    url: https://www.deeplearningbook.org/
-  - title: A Simple Framework for Contrastive Learning of Visual Representations (SimCLR)
-    type: conference_paper
-    year: 2020
-    authors:
-      - Chen, Ting
-      - Kornblith, Simon
-      - Norouzi, Mohammad
-      - Hinton, Geoffrey
-    institution: Google Research / ICML
-    url: https://arxiv.org/abs/2002.05709
-updated: "2026-05-24"
+    institution: ICCV / arXiv
+secondary_sources: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
-Loss functions quantify the difference between model predictions and ground truth, guiding optimization. Cross-entropy dominates classification; MSE dominates regression; specialized losses handle imbalanced, structured, or adversarial tasks.
+
+Loss functions define optimization targets for machine learning, from cross-entropy to robust and class-imbalance losses. This repair keeps only source-backed examples.
 
 ## Core Explanation
-MSE (mean squared error) penalizes large errors quadratically — sensitive to outliers. MAE (mean absolute error) is more robust but has non-differentiable points. Huber loss combines both. For generative models, GAN losses (adversarial, Wasserstein) and diffusion losses (noise prediction) require task-specific formulations.
 
-## Detailed Analysis
-Triplet loss (FaceNet, Schroff et al., 2015) learns embeddings by ensuring anchor-positive distance is less than anchor-negative by a margin. CTC loss (Connectionist Temporal Classification) handles sequence alignment without explicit segmentation — fundamental to speech recognition.
+The previous entry had weak source matching. The repaired version maps core loss-function claims to textbook or paper evidence.
 
 ## Further Reading
-- PyTorch Loss Functions Documentation
-- Papers With Code: Loss Functions
-- Keras: Losses Guide
 
-## Related Articles
-
-- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../adversarial-machine-learning.md)
-- [AI for Drug Repurposing: Identifying New Uses for Existing Drugs Through Machine Learning](../ai-drug-repurposing.md)
-- [AI Democratization: Open-Source Models, Low-Code AI, and Accessible Machine Learning](../ai-for-democratization.md)
+- [Deep Learning](https://www.deeplearningbook.org/contents/ml.html)
+- [Robust Estimation of a Location Parameter](https://doi.org/10.1214/aoms/1177703732)
+- [Focal Loss for Dense Object Detection](https://arxiv.org/abs/1708.02002)
