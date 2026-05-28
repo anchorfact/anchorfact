@@ -2,13 +2,13 @@
   "summary": {
     "generated": "2026-05-27T14:00:00.000Z",
     "total_articles": 1000,
-    "total_with_errors": 0,
+    "total_with_errors": 348,
     "average_sources_per_article": "2.1",
-    "overall_verification_rate": "65.0%",
+    "overall_verification_rate": "65.7%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 188
+    "manual_reviewed_articles": 198
   },
   "articles": [
     {
@@ -3660,37 +3660,56 @@
       "file": "content/ai/ai-for-iot.md",
       "article_id": "ai-for-iot",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Federated learning and TinyML on IoT edge devices: Integration, challenges, and opportunities",
+          "source_title": "Federated Learning: Collaborative Machine Learning without Centralized Training Data",
+          "source_type": "technical_blog",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://research.google/blog/federated-learning-collaborative-machine-learning-without-centralized-training-data/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "TensorFlow Lite for Microcontrollers",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.tensorflow.org/lite/microcontrollers/overview",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.sciencedirect.com/science/article/pii/S2405959525000839",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.sciencedirect.com/science/article/pii/S2405959525000839"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "A framework reforming personalized Internet of Things with federated meta-learning",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1038/s41467-025-59217-z",
+              "identifier": "https://arxiv.org/abs/1704.04861",
               "verified": true,
               "metadata": {
-                "title": "A framework reforming personalized Internet of Things by federated meta-learning",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2025
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -3698,8 +3717,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-language-learning.md",
@@ -3751,35 +3772,56 @@
       "file": "content/ai/ai-for-legal.md",
       "article_id": "ai-for-legal",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "LexGLUE: A Benchmark Dataset for Legal Language Understanding",
+          "source_title": "LexGLUE: A Benchmark Dataset for Legal Language Understanding in English",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2110.00976",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2110.00976",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 503"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "EU AI Act: Regulation (EU) 2024/1689",
+          "source_title": "CUAD: An Expert-Annotated NLP Dataset for Legal Contract Review",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2103.06268",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Regulation (EU) 2024/1689: Artificial Intelligence Act",
           "source_type": "legislation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://eur-lex.europa.eu/eli/reg/2024/1689",
+              "identifier": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://eur-lex.europa.eu/eli/reg/2024/1689"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -3787,8 +3829,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-logistics.md",
@@ -3839,36 +3883,56 @@
       "file": "content/ai/ai-for-manufacturing.md",
       "article_id": "ai-for-manufacturing",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Enabling Intelligent Industrial Automation: A Comprehensive Review of Machine Learning Applications in Manufacturing",
+          "source_title": "MVTec AD: A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.mdpi.com/2673-4052/6/3/37",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.mdpi.com/2673-4052/6/3/37"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Generative and Predictive AI for Digital Twin Systems in Advanced Manufacturing",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1655470/full",
+              "identifier": "https://arxiv.org/abs/1904.07734",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1655470/full"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Artificial intelligence for fault diagnosis of rotating machinery: A review",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1016/j.ymssp.2018.02.016",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Digital Twins for Advanced Manufacturing",
+          "source_type": "government_project",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.nist.gov/programs-projects/digital-twins-advanced-manufacturing",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -3876,8 +3940,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-materials-science.md",
@@ -41249,19 +41315,56 @@
       "file": "content/science/human-anatomy.md",
       "article_id": "kb-2026-00341",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Gray's Anatomy (41st Edition)",
-          "source_type": "book",
+          "source_title": "Anatomy and Physiology 2e",
+          "source_type": "textbook",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.elsevier.com/books/grays-anatomy/standring/978-0-7020-5230-9",
+              "identifier": "https://openstax.org/details/books/anatomy-and-physiology-2e/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://shop.elsevier.com/books/grays-anatomy/standring/978-0-7020-5230-9"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Brain Basics: Know Your Brain",
+          "source_type": "government_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.ninds.nih.gov/health-information/patient-caregiver-education/brain-basics-know-your-brain",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Human skeleton",
+          "source_type": "encyclopedia",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/science/human-skeleton",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -41269,8 +41372,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/human-brain-structure-functional-regions-and-the-connectome.md",
@@ -42804,19 +42909,20 @@
       "file": "content/science/statistics-fundamentals.md",
       "article_id": "statistics-fundamentals",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Introduction to Probability and Statistics for Engineers and Scientists, 6th Edition",
+          "source_title": "Introductory Statistics 2e",
           "source_type": "textbook",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.elsevier.com/books/introduction-to-probability-and-statistics-for-engineers-and-scientists/ross/978-0-12-824346-6",
+              "identifier": "https://openstax.org/details/books/introductory-statistics-2e",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://shop.elsevier.com/books/introduction-to-probability-and-statistics-for-engineers-and-scientists/ross/978-0-12-824346-6"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -42824,16 +42930,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Bayesian Data Analysis, 3rd Edition",
-          "source_type": "textbook",
+          "source_title": "Bayes's theorem",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.routledge.com/Bayesian-Data-Analysis/Gelman-Carlin-Stern-Dunson-Vehtari-Rubin/p/book/9781439840955",
+              "identifier": "https://www.britannica.com/topic/Bayess-theorem",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.routledge.com/Bayesian-Data-Analysis/Gelman-Carlin-Stern-Dunson-Vehtari-Rubin/p/book/9781439840955"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -42841,42 +42948,28 @@
           "all_verified": true
         },
         {
-          "source_title": "Statistical Inference (3rd Edition, 2025)",
-          "source_type": "book",
+          "source_title": "ASA Statement on Statistical Significance and P-Values",
+          "source_type": "journal_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.routledge.com/statistical-inference/",
-              "verified": false,
+              "identifier": "https://doi.org/10.1080/00031305.2016.1154108",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.routledge.com/statistical-inference/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Modern Statistics: From Theory to Data Science (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1017/cbo.2025.stats",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1017/cbo.2025.stats"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/stem-cells-pluripotency-differentiation-and-regenerative-medicine.md",
@@ -43044,19 +43137,20 @@
       "file": "content/science/thermodynamics-fundamentals.md",
       "article_id": "thermodynamics-fundamentals",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Atkins' Physical Chemistry, 12th Edition",
+          "source_title": "University Physics Volume 2",
           "source_type": "textbook",
           "results": [
             {
               "method": "url",
-              "identifier": "https://global.oup.com/academic/product/atkins-physical-chemistry-9780198847816/",
+              "identifier": "https://openstax.org/details/books/university-physics-volume-2/",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/academic/product/atkins-physical-chemistry-9780198847816/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -43064,16 +43158,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Thermodynamics: An Engineering Approach, 10th Edition",
-          "source_type": "textbook",
+          "source_title": "The Feynman Lectures on Physics, Volume I, Chapter 44: The Laws of Thermodynamics",
+          "source_type": "textbook_chapter",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.mheducation.com/highered/product/thermodynamics-engineering-approach-cengel-boles/M9781266152115.html",
+              "identifier": "https://www.feynmanlectures.caltech.edu/I_44.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.mheducation.com/highered/product/thermodynamics-engineering-approach-cengel-boles/M9781266152115.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -43081,20 +43176,28 @@
           "all_verified": true
         },
         {
-          "source_title": "Thermodynamics and an Introduction to Thermostatistics (2nd Edition)",
+          "source_title": "Thermodynamics and an Introduction to Thermostatistics",
           "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Concepts in Thermal Physics (2nd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.wiley.com/en-us/Thermodynamics+and+an+Introduction+to+Thermostatistics%2C+2nd+Edition-p-9780471862567",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/vitamin-d-synthesis-metabolism-and-health-effects.md",
@@ -43245,19 +43348,20 @@
       "file": "content/self-improvement/cognitive-biases-handbook.md",
       "article_id": "cognitive-biases-handbook",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Art of Thinking Clearly",
-          "source_type": "textbook",
+          "source_title": "Judgment under Uncertainty: Heuristics and Biases",
+          "source_type": "journal_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.harpercollins.com/products/the-art-of-thinking-clearly-rolf-dobelli",
+              "identifier": "https://doi.org/10.1126/science.185.4157.1124",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.harpercollins.com/products/the-art-of-thinking-clearly-rolf-dobelli"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -43265,16 +43369,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Nudge: Improving Decisions About Health, Wealth, and Happiness",
-          "source_type": "textbook",
+          "source_title": "Confirmation Bias: A Ubiquitous Phenomenon in Many Guises",
+          "source_type": "journal_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://yalebooks.yale.edu/book/9780300122237/nudge/",
+              "identifier": "https://doi.org/10.1037/1089-2680.2.2.175",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://yalebooks.yale.edu/book/9780300122237/nudge/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -43282,42 +43387,28 @@
           "all_verified": true
         },
         {
-          "source_title": "Thinking, Fast and Slow (2025 Paperback Edition)",
-          "source_type": "book",
+          "source_title": "Prospect Theory: An Analysis of Decision under Risk",
+          "source_type": "journal_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://us.macmillan.com/thinking-fast-and-slow/",
-              "verified": false,
+              "identifier": "https://doi.org/10.2307/1914185",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://us.macmillan.com/thinking-fast-and-slow/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Predictably Irrational: The Hidden Forces That Shape Our Decisions (2025 Revised)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.harpercollins.com/predictably-irrational/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.harpercollins.com/predictably-irrational/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/self-improvement/cognitive-load-theory-optimizing-learning-and-decision-making.md",
@@ -43880,19 +43971,20 @@
       "file": "content/self-improvement/goal-setting.md",
       "article_id": "kb-2026-00505",
       "generation_method": "ai_structured",
-      "sources_total": 8,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Measure What Matters (John Doerr)",
-          "source_type": "book",
+          "source_title": "Building a practically useful theory of goal setting and task motivation: A 35-year odyssey",
+          "source_type": "journal_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/545839/measure-what-matters-by-john-doerr/",
+              "identifier": "https://doi.org/10.1037/0003-066X.57.9.705",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/545839/measure-what-matters-by-john-doerr/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -43900,16 +43992,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Atomic Habits (James Clear)",
-          "source_type": "book",
+          "source_title": "Implementation Intentions: Strong Effects of Simple Plans",
+          "source_type": "journal_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://jamesclear.com/atomic-habits",
+              "identifier": "https://doi.org/10.1037/0003-066X.54.7.493",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://jamesclear.com/atomic-habits"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -43917,88 +44010,28 @@
           "all_verified": true
         },
         {
-          "source_title": "Atomic Habits: An Easy & Proven Way to Build Good Habits (2025 Edition)",
+          "source_title": "Measure What Matters",
           "source_type": "book",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/atomic-habits/",
+              "identifier": "https://penguinrandomhousehighereducation.com/book/?isbn=9780525536222",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/543993/atomic-habits-by-james-clear/?ref=PRH1570A4573EDE&aid=40496&linkid=PRH1570A4573EDE"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "The 7 Habits of Highly Effective People (2025 35th Anniversary Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.simonandschuster.com/7-habits/",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.simonandschuster.com/7-habits/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Atomic Habits (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/atomic-habits/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/543993/atomic-habits-by-james-clear/?ref=PRH1570A4573EDE&aid=40496&linkid=PRH1570A4573EDE"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "The 7 Habits of Highly Effective People (35th Anniversary, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.simonandschuster.com/7-habits/",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.simonandschuster.com/7-habits/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Atomic Habits",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "The 7 Habits of Highly Effective People (30th Anniversary Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
         }
       ],
-      "sources_verified": 4,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/self-improvement/grit-the-power-of-passion-and-perseverance.md",
@@ -45187,19 +45220,20 @@
       "file": "content/sports/football-tactics.md",
       "article_id": "kb-2026-00501",
       "generation_method": "ai_assisted",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "FIFA Laws of the Game 2024/25",
+          "source_title": "IFAB Laws of the Game Documents",
           "source_type": "rulebook",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.theifab.com/laws-of-the-game-documents/",
+              "identifier": "https://www.theifab.com/laws-of-the-game-documents/?language=en",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.theifab.com/laws-of-the-game-documents/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -45207,22 +45241,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Inverting the Pyramid: The History of Football Tactics (Jonathan Wilson)",
+          "source_title": "Inverting the Pyramid: The History of Football Tactics",
           "source_type": "book",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.hatchettebookgroup.com/titles/jonathan-wilson/inverting-the-pyramid/",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://books.google.com/books/about/Inverting_the_Pyramid.html?id=qYSAhJn-srwC",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "EURO 2024 technical report",
+          "source_type": "technical_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.uefa.com/uefaeuro/history/news/0291-1bde164db7c4-e4b2f7db6f83-1000--euro-2024-technical-report/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/sports/hiit-high-intensity-interval-training-science.md",
@@ -45504,19 +45562,20 @@
       "file": "content/sports/sports-biomechanics.md",
       "article_id": "sports-biomechanics",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Biomechanics of Sport and Exercise, 4th Edition",
+          "source_title": "Biomechanics of Sport and Exercise, Fourth Edition",
           "source_type": "textbook",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.humankinetics.com/biomechanics-of-sport-and-exercise/",
+              "identifier": "https://us.humankinetics.com/products/biomechanics-of-sport-and-exercise-4th-edition-with-web-resource",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://us.humankinetics.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -45524,16 +45583,17 @@
           "all_verified": true
         },
         {
-          "source_title": "The Physics of Baseball, 3rd Edition",
-          "source_type": "textbook",
+          "source_title": "Stretch-shortening cycle: a powerful model to study normal and fatigued muscle",
+          "source_type": "journal_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.harpercollins.com/products/the-physics-of-baseball-robert-k-adair",
+              "identifier": "https://doi.org/10.1016/S0021-9290(00)00064-6",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.harpercollins.com/products/the-physics-of-baseball-robert-k-adair"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -45541,20 +45601,28 @@
           "all_verified": true
         },
         {
-          "source_title": "Biomechanics of Sport and Exercise (4th Edition)",
+          "source_title": "Biomechanics and Motor Control of Human Movement",
           "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Biomechanics and Motor Control of Human Movement (4th Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1002/9780470549148",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fifth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/sports/sports-exercise-physiology.md",

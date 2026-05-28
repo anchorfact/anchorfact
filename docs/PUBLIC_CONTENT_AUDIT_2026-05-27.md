@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T09:05:17.823Z
+Generated: 2026-05-28T09:20:47.331Z
 
-Snapshot: 555 public / 445 draft / 1582 claims.
+Snapshot: 555 public / 445 draft / 1585 claims.
 
 ## Summary
 
@@ -29,20 +29,20 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 4 | high_confidence | `ai/ai-in-healthcare` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 5 | high_confidence | `ai/ai-red-teaming-and-safety` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 6 | medium_capped_claims | `business/strategic-management-theory` | medium | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 7 | medium_capped_claims | `ai/ai-for-iot` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 8 | medium_capped_claims | `ai/ai-for-legal` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 9 | medium_capped_claims | `ai/ai-for-manufacturing` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 7 | medium_capped_claims | `ai/ai-for-medical-imaging` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 8 | medium_capped_claims | `ai/ai-for-network-security` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 9 | medium_capped_claims | `ai/ai-for-oil-gas-exploration` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
 | 10 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 12 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 13 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 14 | risk_fallback | `science/human-anatomy` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 15 | risk_fallback | `science/statistics-fundamentals` | low | 2/4 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 16 | risk_fallback | `science/thermodynamics-fundamentals` | low | 2/4 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 17 | risk_fallback | `self-improvement/cognitive-biases-handbook` | low | 2/4 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 18 | risk_fallback | `self-improvement/goal-setting` | low | 4/8 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 19 | risk_fallback | `sports/football-tactics` | low | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 20 | risk_fallback | `sports/sports-biomechanics` | low | 2/4 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 14 | risk_fallback | `ai/ai-smart-contract-audit` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 15 | risk_fallback | `ai/cognitive-architectures` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 16 | risk_fallback | `ai/convolutional-neural-networks-cnn` | medium | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 17 | risk_fallback | `ai/data-centric-ai` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 18 | risk_fallback | `ai/human-computer-interaction` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 19 | risk_fallback | `ai/semantic-web-ontology` | medium | 2/3 (66.7%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 20 | risk_fallback | `ai/transfer-learning` | medium | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
 
 ## Article Findings
 
@@ -136,45 +136,45 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 7. AI for the Internet of Things: Federated Learning, TinyML, and Intelligent Edge Devices
+### 7. AI for Medical Imaging: Radiology AI, Computer-Aided Diagnosis, and Clinical Deployment
 
-- canonical slug: `ai/ai-for-iot`
-- canonical URL: https://anchorfact.org/ai/ai-for-iot/
+- canonical slug: `ai/ai-for-medical-imaging`
+- canonical URL: https://anchorfact.org/ai/ai-for-medical-imaging/
+- bucket: `medium_capped_claims`
+- confidence: `medium` (verified_sources, score 0.765)
+- verified source coverage: 1/2 (50.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 8. AI for Network Security: Intelligent Firewalls, DDoS Mitigation, and Zero-Trust Architectures
+
+- canonical slug: `ai/ai-for-network-security`
+- canonical URL: https://anchorfact.org/ai/ai-for-network-security/
+- bucket: `medium_capped_claims`
+- confidence: `medium` (verified_sources, score 0.74)
+- verified source coverage: 1/2 (50.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
+
+### 9. AI for Oil and Gas Exploration: Seismic Interpretation, Reservoir Characterization, and Subsurface Intelligence
+
+- canonical slug: `ai/ai-for-oil-gas-exploration`
+- canonical URL: https://anchorfact.org/ai/ai-for-oil-gas-exploration/
 - bucket: `medium_capped_claims`
 - confidence: `medium` (verified_sources, score 0.85)
 - verified source coverage: 1/2 (50.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: partial_source_verification, high_confidence_evidence_gap
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 8. AI for Legal: Contract Analysis, Legal Reasoning, and Regulatory Compliance
-
-- canonical slug: `ai/ai-for-legal`
-- canonical URL: https://anchorfact.org/ai/ai-for-legal/
-- bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.73)
-- verified source coverage: 1/2 (50.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 9. AI for Manufacturing: Predictive Maintenance, Quality Control, and Digital Twins
-
-- canonical slug: `ai/ai-for-manufacturing`
-- canonical URL: https://anchorfact.org/ai/ai-for-manufacturing/
-- bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.74)
-- verified source coverage: 1/2 (50.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
@@ -241,14 +241,44 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 14. Human Anatomy
+### 14. AI Smart Contract Auditing: Vulnerability Detection, Formal Verification, and Blockchain Security
 
-- canonical slug: `science/human-anatomy`
-- canonical URL: https://anchorfact.org/science/human-anatomy/
+- canonical slug: `ai/ai-smart-contract-audit`
+- canonical URL: https://anchorfact.org/ai/ai-smart-contract-audit/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.43)
+- confidence: `medium` (verified_sources, score 0.74)
+- verified source coverage: 1/2 (50.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_source_homepage
+- recommendation: `repair_sources`
+
+### 15. Cognitive Architectures: ACT-R, Soar, and Computational Models of Human-Like Reasoning
+
+- canonical slug: `ai/cognitive-architectures`
+- canonical URL: https://anchorfact.org/ai/cognitive-architectures/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.74)
+- verified source coverage: 1/2 (50.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_source_homepage
+- recommendation: `repair_sources`
+
+### 16. Convolutional Neural Networks (CNN)
+
+- canonical slug: `ai/convolutional-neural-networks-cnn`
+- canonical URL: https://anchorfact.org/ai/convolutional-neural-networks-cnn/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.7)
 - verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
+- claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: generic_source_homepage
 - source-title match: `pass`
 - claim-evidence match: `weak`
@@ -256,74 +286,44 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 15. Statistics: Probability, Inference, and Modeling
+### 17. Data-Centric AI: The Systematic Engineering of Training Data
 
-- canonical slug: `science/statistics-fundamentals`
-- canonical URL: https://anchorfact.org/science/statistics-fundamentals/
+- canonical slug: `ai/data-centric-ai`
+- canonical URL: https://anchorfact.org/ai/data-centric-ai/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.55)
-- verified source coverage: 2/4 (50.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
-- recommendation: `repair_sources`
-
-### 16. Thermodynamics Fundamentals
-
-- canonical slug: `science/thermodynamics-fundamentals`
-- canonical URL: https://anchorfact.org/science/thermodynamics-fundamentals/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.54)
-- verified source coverage: 2/4 (50.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
-- recommendation: `repair_sources`
-
-### 17. Cognitive Biases: A Practical Guide to Clearer Thinking
-
-- canonical slug: `self-improvement/cognitive-biases-handbook`
-- canonical URL: https://anchorfact.org/self-improvement/cognitive-biases-handbook/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.55)
-- verified source coverage: 2/4 (50.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
-- recommendation: `repair_sources`
-
-### 18. Goal Setting Frameworks
-
-- canonical slug: `self-improvement/goal-setting`
-- canonical URL: https://anchorfact.org/self-improvement/goal-setting/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.55)
-- verified source coverage: 4/8 (50.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
-- recommendation: `repair_sources`
-
-### 19. Football (Soccer) Tactics and Formations
-
-- canonical slug: `sports/football-tactics`
-- canonical URL: https://anchorfact.org/sports/football-tactics/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
+- confidence: `medium` (verified_sources, score 0.74)
 - verified source coverage: 1/2 (50.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_source_homepage
+- recommendation: `repair_sources`
+
+### 18. Human-Computer Interaction: AI-Powered UX, Generative Interfaces, and Usability Testing
+
+- canonical slug: `ai/human-computer-interaction`
+- canonical URL: https://anchorfact.org/ai/human-computer-interaction/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.74)
+- verified source coverage: 1/2 (50.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_source_homepage
+- recommendation: `repair_sources`
+
+### 19. Semantic Web and Ontologies: Knowledge Representation, OWL Reasoning, and Linked Data
+
+- canonical slug: `ai/semantic-web-ontology`
+- canonical URL: https://anchorfact.org/ai/semantic-web-ontology/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.785)
+- verified source coverage: 2/3 (66.7%)
+- claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: claim_evidence_weak, partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
@@ -331,19 +331,19 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: claim_evidence_weak
 - recommendation: `repair_sources`
 
-### 20. Sports Biomechanics: The Physics of Human Movement
+### 20. Transfer Learning
 
-- canonical slug: `sports/sports-biomechanics`
-- canonical URL: https://anchorfact.org/sports/sports-biomechanics/
+- canonical slug: `ai/transfer-learning`
+- canonical URL: https://anchorfact.org/ai/transfer-learning/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 2/4 (50.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
-- source-title match: `weak`
+- confidence: `medium` (verified_sources, score 0.7)
+- verified source coverage: 1/1 (100.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: generic_source_homepage
+- source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
+- hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
 ## Rule Calibration

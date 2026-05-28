@@ -1,12 +1,12 @@
 ---
 id: sports-biomechanics
-title: 'Sports Biomechanics: The Physics of Human Movement'
+title: "Sports Biomechanics: The Physics of Human Movement"
 schema_type: Article
 category: sports
 language: en
 confidence: medium
-last_verified: '2026-05-25'
-created_date: '2026-05-24'
+last_verified: "2026-05-28"
+created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -16,94 +16,57 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-sp-bm-001
-    statement: 'Running GRF: 2-3x body weight moderate pace, up to 4x at sprint (McGinnis, Human Kinetics 2020).'
-    source_title: McGinnis, P.M. Biomechanics of Sport and Exercise 4th ed. (Human Kinetics 2020)
-    source_url: https://us.humankinetics.com/products/biomechanics-of-sport-and-exercise-4th-edition
-    confidence: high
+    statement: Sports biomechanics applies mechanics to human movement in sport and exercise contexts.
+    source_title: Biomechanics of Sport and Exercise, Fourth Edition
+    source_url: https://us.humankinetics.com/products/biomechanics-of-sport-and-exercise-4th-edition-with-web-resource
+    confidence: medium
   - id: fact-sp-bm-002
-    statement: 'Stretch-shortening cycle: elastic energy storage increases power 20-30% (Komi, MSSE 2000).'
-    source_title: Komi, P.V. Stretch-shortening cycle (Journal of Biomechanics 2000)
+    statement: The stretch-shortening cycle involves muscle action in which active stretch is followed by shortening.
+    source_title: "Stretch-shortening cycle: a powerful model to study normal and fatigued muscle"
     source_url: https://doi.org/10.1016/S0021-9290(00)00064-6
-    confidence: high
+    confidence: medium
   - id: fact-sp-bm-003
-    statement: FINA banned polyurethane suits (2010) after tech-suit era records; many stood for a decade.
-    source_title: World Aquatics Swimming Rules (2010, updated 2024)
-    source_url: https://www.worldaquatics.com/swimming/rules
-    confidence: high
+    statement: Human movement biomechanics commonly analyzes kinematics, kinetics, and motor control.
+    source_title: Biomechanics and Motor Control of Human Movement
+    source_url: https://doi.org/10.1002/9780470549148
+    confidence: medium
 completeness: 0.9
 primary_sources:
-  - title: Biomechanics of Sport and Exercise, 4th Edition
+  - title: Biomechanics of Sport and Exercise, Fourth Edition
     type: textbook
     year: 2020
-    url: https://www.humankinetics.com/biomechanics-of-sport-and-exercise/
     institution: Human Kinetics
-  - title: The Physics of Baseball, 3rd Edition
-    type: textbook
-    year: 2002
-    url: https://www.harpercollins.com/products/the-physics-of-baseball-robert-k-adair
-    institution: Harper Perennial
-  - title: Biomechanics of Sport and Exercise (4th Edition)
-    authors:
-      - McGinnis, P.M.
-    type: book
-    year: 2020
-    institution: Human Kinetics
-  - title: Biomechanics and Motor Control of Human Movement (4th Edition)
-    authors:
-      - Winter, D.A.
+    url: https://us.humankinetics.com/products/biomechanics-of-sport-and-exercise-4th-edition-with-web-resource
+  - title: "Stretch-shortening cycle: a powerful model to study normal and fatigued muscle"
+    type: journal_article
+    year: 2000
+    institution: Journal of Biomechanics
+    url: https://doi.org/10.1016/S0021-9290(00)00064-6
+  - title: Biomechanics and Motor Control of Human Movement
     type: book
     year: 2009
-    institution: Wiley
-known_gaps:
-  - Wearable sensor analytics in performance monitoring
-  - Injury mechanism biomechanics
-disputed_statements:
-  - statement: No major disputed statements identified
-secondary_sources:
-  - title: Biomechanics of Sport and Exercise (McGinnis, 4th Edition)
-    type: textbook
-    year: 2020
-    authors:
-      - McGinnis, Peter M.
-    institution: Human Kinetics
-    url: https://us.humankinetics.com/products/biomechanics-of-sport-and-exercise-4th-edition
-  - title: Biomechanics and Motor Control of Human Movement (Winter, 4th Edition)
-    type: textbook
-    year: 2009
-    authors:
-      - Winter, David A.
     institution: Wiley
     url: https://doi.org/10.1002/9780470549148
-  - title: 'AI in Sports Biomechanics: A Systematic Review of Deep Learning for Motion Analysis'
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: Sports Biomechanics (Taylor & Francis)
-    url: https://doi.org/10.1080/14763141.2024.2345678
-  - title: 'Nike Sport Research Lab: How AI and Biomechanics Redesign Performance Footwear'
-    type: report
-    year: 2024
-    authors:
-      - Nike Research
-    institution: Nike
-    url: https://www.nike.com/sustainability
-updated: '2026-05-24'
+known_gaps:
+  - Wearable sensor analytics in performance monitoring
+  - Sport-specific injury mechanisms and individualized technique assessment
+disputed_statements: []
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
 ## TL;DR
-Sports biomechanics applies physics and engineering principles to human movement — optimizing technique, preventing injury, and designing equipment.
+Sports biomechanics applies physics, engineering, and motor-control concepts to movement in sport and exercise. It helps analyze technique, performance, loading, equipment, and injury risk.
 
 ## Core Explanation
-Kinematics (describing motion): displacement, velocity, acceleration. Kinetics (forces causing motion): Newton's laws, torque, angular momentum. The stretch-shortening cycle (muscle-tendon unit) stores elastic energy during eccentric contraction for explosive concentric release.
+Kinematics describes motion: position, displacement, velocity, and acceleration. Kinetics studies the forces and torques that cause motion. Coaches, clinicians, and researchers use video, force plates, motion capture, inertial sensors, and modeling to understand how athletes move.
 
 ## Detailed Analysis
-Motion capture (optical markers, IMU sensors) generates 3D kinematic data. Inverse dynamics calculates joint forces from motion data. Fluid dynamics explains swimming propulsion and aerodynamic drag in cycling (drafting reduces energy expenditure by 15-30%).
+Biomechanical conclusions are sport- and athlete-specific. A claim about sprinting, jumping, throwing, swimming, or cycling should identify the movement, measurement method, and population. General principles are useful, but precise performance or injury claims need direct evidence.
 
 ## Further Reading
-- International Society of Biomechanics in Sports
-- Journal of Applied Biomechanics
-- Dartfish Video Analysis
+- Biomechanics of Sport and Exercise
+- Komi on the stretch-shortening cycle
+- Winter on biomechanics and motor control
 
 ## Related Articles
 

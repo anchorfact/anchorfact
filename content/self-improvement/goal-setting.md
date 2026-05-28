@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: self-improvement
 language: en
 confidence: medium
-last_verified: '2026-05-25'
-created_date: '2026-05-24'
+last_verified: "2026-05-28"
+created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -16,101 +16,59 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-si-011
-    statement: 'SMART goals framework (Doran 1981, Management Review): Specific, Measurable, Achievable, Relevant, Time-bound. Widely adopted in business, education, sports, and personal development'
-    source_title: Management Review (Doran, 1981)
-    source_url: https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher/
-    confidence: high
+    statement: >-
+      Goal-setting theory finds that specific and challenging goals tend to improve performance when people are
+      committed and receive feedback.
+    source_title: "Building a practically useful theory of goal setting and task motivation: A 35-year odyssey"
+    source_url: https://doi.org/10.1037/0003-066X.57.9.705
+    confidence: medium
   - id: fact-si-012
-    statement: >-
-      Locke & Latham's Goal Setting Theory (1990): specific, challenging goals lead to higher performance than vague or easy goals. Key moderators: commitment, feedback, task complexity, situational
-      constraints
-    source_title: A Theory of Goal Setting and Task Performance (Locke & Latham)
-    source_url: https://www.penguinrandomhouse.com/
-    confidence: high
+    statement: Implementation intentions are if-then plans that link a situational cue to a goal-directed response.
+    source_title: "Implementation Intentions: Strong Effects of Simple Plans"
+    source_url: https://doi.org/10.1037/0003-066X.54.7.493
+    confidence: medium
   - id: fact-si-013
-    statement: >-
-      OKRs (Objectives and Key Results) popularized by Intel (Andy Grove) and Google (John Doerr). Objective: qualitative, inspirational goal. Key Results: 3-5 measurable outcomes scored 0-1.0.
-      Grading: 0.7 (70%) considered success — too high means objectives weren't ambitious enough
-    source_title: Measure What Matters (John Doerr)
-    source_url: https://www.whatmatters.com/
-    confidence: high
+    statement: OKRs pair objectives with measurable key results that indicate progress toward the objective.
+    source_title: Measure What Matters
+    source_url: https://penguinrandomhousehighereducation.com/book/?isbn=9780525536222
+    confidence: medium
 completeness: 0.88
 known_gaps:
-  - Goal-setting effectiveness varies by individual and context; no framework works universally
-  - Research cited is primarily from organizational and sports psychology; personal development applications may differ
-disputed_statements:
-  - statement: The optimal difficulty level for goals (stretch vs achievable) is debated; Locke & Latham advocate challenging goals while others warn against demotivating stretch targets
+  - Individual differences in motivation and context
+  - Risks of goal conflict, gaming metrics, and unrealistic stretch goals
+disputed_statements: []
 primary_sources:
-  - title: Measure What Matters (John Doerr)
+  - title: "Building a practically useful theory of goal setting and task motivation: A 35-year odyssey"
+    type: journal_article
+    year: 2002
+    institution: American Psychologist
+    url: https://doi.org/10.1037/0003-066X.57.9.705
+  - title: "Implementation Intentions: Strong Effects of Simple Plans"
+    type: journal_article
+    year: 1999
+    institution: American Psychologist
+    url: https://doi.org/10.1037/0003-066X.54.7.493
+  - title: Measure What Matters
     type: book
     year: 2018
-    url: https://www.penguinrandomhouse.com/books/545839/measure-what-matters-by-john-doerr/
     institution: Penguin Random House
-  - title: Atomic Habits (James Clear)
-    type: book
-    year: 2018
-    url: https://jamesclear.com/atomic-habits
-    institution: Avery, Penguin Random House
-  - title: 'Atomic Habits: An Easy & Proven Way to Build Good Habits (2025 Edition)'
-    type: book
-    year: 2025
-    authors:
-      - Clear J.
-    institution: Avery
-    url: https://www.penguinrandomhouse.com/atomic-habits/
-  - title: The 7 Habits of Highly Effective People (2025 35th Anniversary Edition)
-    type: book
-    year: 2025
-    authors:
-      - Covey S.R.
-    institution: Simon & Schuster
-    url: https://www.simonandschuster.com/7-habits/
-  - title: Atomic Habits (2025)
-    type: book
-    year: 2025
-    authors:
-      - Clear J.
-    institution: Avery
-    url: https://www.penguinrandomhouse.com/atomic-habits/
-  - title: The 7 Habits of Highly Effective People (35th Anniversary, 2025)
-    type: book
-    year: 2025
-    authors:
-      - Covey S.R.
-    institution: Simon & Schuster
-    url: https://www.simonandschuster.com/7-habits/
-  - title: Atomic Habits
-    authors:
-      - Clear, J.
-    type: book
-    year: 2018
-    institution: Avery
-  - title: The 7 Habits of Highly Effective People (30th Anniversary Edition)
-    authors:
-      - Covey, S.R.
-    type: book
-    year: 2020
-    institution: Simon & Schuster
-secondary_sources:
-  - title: Thinking, Fast and Slow (Daniel Kahneman)
-    type: book
-    year: 2011
-    url: https://us.macmillan.com/books/9780374533557/thinkingfastandslow
-    institution: Farrar, Straus & Giroux
+    url: https://penguinrandomhousehighereducation.com/book/?isbn=9780525536222
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
 ## TL;DR
-
-Goal setting transforms vague aspirations into actionable plans. Key frameworks: SMART goals (Specific, Measurable, Achievable, Relevant, Time-bound), OKRs (Objectives and Key Results), Locke & Latham's Goal Setting Theory. Common techniques: implementation intentions (if-then plans), habit stacking (anchor new habits to existing ones), progress tracking with regular review cycles.
+Goal setting turns broad intentions into decisions about outcomes, behavior, feedback, and review. Strong frameworks clarify what matters, how progress will be seen, and when a plan should be adjusted.
 
 ## Core Explanation
+Research on goal setting emphasizes specificity, challenge, commitment, feedback, and task complexity. Implementation intentions add a planning layer by connecting a concrete cue with an intended action. OKRs separate an objective from measurable key results, making progress easier to discuss and review.
 
-SMART evolved from Doran 1981 into multiple variants (SMARTER adds Evaluate + Revise). Key distinction: outcome goals (results) vs process goals (behaviors) vs performance goals (personal standards). Feedback loops: weekly reviews, monthly retrospectives, quarterly OKR grading. Avoid goal conflict: ensure goals across life domains don't undermine each other. Write goals down: 42% more likely to achieve written goals (Dr. Gail Matthews, Dominican University study).
+## Detailed Analysis
+Goal systems can backfire when they encourage metric gaming, conflict between priorities, or unrealistic stretch targets without support. A careful plan includes both outcome measures and process behaviors, plus a review cadence for learning from progress rather than merely judging it.
 
 ## Further Reading
-
-- [Measure What Matters (OKRs)](https://www.whatmatters.com/)
-- [Atomic Habits](https://jamesclear.com/atomic-habits)
+- Locke and Latham on goal-setting theory
+- Gollwitzer on implementation intentions
+- John Doerr, Measure What Matters
 
 ## Related Articles
 

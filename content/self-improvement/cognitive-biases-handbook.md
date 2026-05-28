@@ -4,8 +4,8 @@ title: "Cognitive Biases: A Practical Guide to Clearer Thinking"
 schema_type: Article
 category: self-improvement
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -16,112 +16,61 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-si-cb-001
-    statement: "Kahneman (2011): System 1 (fast/intuitive) vs. System 2 (slow/deliberate) dual-process theory."
-    source_title: Kahneman, D. Thinking, Fast and Slow (FSG 2011)
-    source_url: https://us.macmillan.com/books/9780374533557/thinking-fast-and-slow
-    confidence: high
+    statement: >-
+      Tversky and Kahneman described representativeness, availability, and anchoring as heuristics used in judgment
+      under uncertainty.
+    source_title: "Judgment under Uncertainty: Heuristics and Biases"
+    source_url: https://doi.org/10.1126/science.185.4157.1124
+    confidence: medium
   - id: fact-si-cb-002
-    statement: "Confirmation bias: seeking confirmatory evidence (Wason 1960s; Nickerson, RGPS 1998)."
-    source_title: Nickerson, R.S. Confirmation Bias (Review of General Psychology 1998)
+    statement: >-
+      Nickerson reviewed confirmation bias as a tendency to seek or interpret evidence in ways partial to existing
+      beliefs or hypotheses.
+    source_title: "Confirmation Bias: A Ubiquitous Phenomenon in Many Guises"
     source_url: https://doi.org/10.1037/1089-2680.2.2.175
-    confidence: high
+    confidence: medium
   - id: fact-si-cb-003
-    statement: "Loss aversion (Kahneman & Tversky 1979): losses hurt ~2x more than equivalent gains feel good."
-    source_title: Kahneman & Tversky, Prospect Theory (Econometrica 1979)
+    statement: Prospect theory was proposed as a descriptive alternative to expected utility theory for decisions under risk.
+    source_title: "Prospect Theory: An Analysis of Decision under Risk"
     source_url: https://doi.org/10.2307/1914185
-    confidence: high
+    confidence: medium
 completeness: 0.9
 known_gaps:
-  - Cultural variation in bias expression
-  - AI-assisted debiasing tools
-disputed_statements:
-  - statement: No major disputed statements identified
+  - Replication limits and effect-size variation across bias studies
+  - Cultural and domain-specific variation in bias expression
+disputed_statements: []
 primary_sources:
-  - title: The Art of Thinking Clearly
-    type: textbook
-    year: 2013
-    url: https://www.harpercollins.com/products/the-art-of-thinking-clearly-rolf-dobelli
-    institution: Harper
-  - title: "Nudge: Improving Decisions About Health, Wealth, and Happiness"
-    type: textbook
-    year: 2009
-    url: https://yalebooks.yale.edu/book/9780300122237/nudge/
-    institution: Yale University Press
-  - title: Thinking, Fast and Slow (2025 Paperback Edition)
-    type: book
-    year: 2025
-    authors:
-      - Kahneman D.
-    institution: Farrar, Straus and Giroux
-    url: https://us.macmillan.com/thinking-fast-and-slow/
-  - title: "Predictably Irrational: The Hidden Forces That Shape Our Decisions (2025 Revised)"
-    type: book
-    year: 2025
-    authors:
-      - Ariely D.
-    institution: Harper Perennial
-    url: https://www.harpercollins.com/predictably-irrational/
-secondary_sources:
-  - title: Thinking, Fast and Slow (Kahneman — Nobel Economics 2002)
-    type: textbook
-    year: 2011
-    authors:
-      - Kahneman, Daniel
-    institution: Farrar, Straus and Giroux
-    url: https://us.macmillan.com/books/9780374533557/thinkingfastandslow
-  - title: "Nudge: Improving Decisions About Health, Wealth, and Happiness (Thaler & Sunstein — Nobel 2017)"
-    type: textbook
-    year: 2008
-    authors:
-      - Thaler, Richard H.
-      - Sunstein, Cass R.
-    institution: Yale University Press
-    url: https://yalebooks.yale.edu/book/9780300264658/nudge/
-  - title: Predictably Irrational (Ariely)
-    type: textbook
-    year: 2008
-    authors:
-      - Ariely, Dan
-    institution: HarperCollins
-    url: https://www.harpercollins.com/products/predictably-irrational-dan-ariely
-  - title: "Judgment Under Uncertainty: Heuristics and Biases (Tversky & Kahneman — Science 1974)"
+  - title: "Judgment under Uncertainty: Heuristics and Biases"
     type: journal_article
     year: 1974
-    authors:
-      - Tversky, Amos
-      - Kahneman, Daniel
     institution: Science
     url: https://doi.org/10.1126/science.185.4157.1124
-  - title: "Behavioral Economics in Practice: Nudging for Public Policy and Personal Decisions (2025 Update)"
-    type: book
-    year: 2025
-    authors:
-      - Thaler R.H.
-      - Sunstein C.R.
-    institution: Yale University Press
-    url: https://yalebooks.yale.edu/book/9780300262285/nudge/
-  - title: "Cognitive Biases in the Age of AI: How Algorithms Exploit and Counteract Human Biases (2025)"
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: Nature Human Behaviour
-    url: https://doi.org/10.1038/s41562-2025-biases
-updated: "2026-05-24"
+  - title: "Confirmation Bias: A Ubiquitous Phenomenon in Many Guises"
+    type: journal_article
+    year: 1998
+    institution: Review of General Psychology
+    url: https://doi.org/10.1037/1089-2680.2.2.175
+  - title: "Prospect Theory: An Analysis of Decision under Risk"
+    type: journal_article
+    year: 1979
+    institution: Econometrica
+    url: https://doi.org/10.2307/1914185
+secondary_sources: []
+updated: "2026-05-28"
 ---
 ## TL;DR
-Cognitive biases are systematic errors in thinking affecting judgment and decision making. Over 180 documented biases influence everything from medical diagnoses to investment choices.
+Cognitive biases are systematic patterns in judgment that can distort decisions under uncertainty. They are useful to study because they show where fast mental shortcuts can help, mislead, or require deliberate checking.
 
 ## Core Explanation
-Bias categories: information processing (anchoring, availability), belief formation (confirmation bias), social influence (bandwagon effect, groupthink), self-evaluation (overconfidence, self-serving bias).
+Classic work on heuristics and biases describes how people estimate probability, similarity, and risk with limited information. Examples include availability, anchoring, representativeness, confirmation bias, and framing effects. These patterns do not make people irrational in every case, but they do make some errors predictable.
 
 ## Detailed Analysis
-Debiasing: premortem (imagine future failure), red teaming (designated challenger role), blind analysis, reference class forecasting (use base rates from similar past cases).
+Practical debiasing starts by slowing down consequential decisions, naming assumptions, checking base rates, seeking disconfirming evidence, and separating evidence from preference. The evidence base is strongest when individual bias claims are tied to specific studies rather than broad lists of popularized effects.
 
 ## Further Reading
-- ClearerThinking.org (Spencer Greenberg)
-- Center for Applied Rationality
-- LessWrong Community Sequences
+- Tversky and Kahneman on heuristics and biases
+- Nickerson on confirmation bias
+- Kahneman and Tversky on prospect theory
 
 ## Related Articles
 
